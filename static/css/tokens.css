@@ -1,0 +1,18 @@
+:root {
+  --ink: #192126;
+  --ink-muted: #5c686f;
+  --paper: #ffffff;
+  --surface: #f3f5f4;
+  --line: #d8deda;
+  --line-strong: #bbc6c0;
+  --brand: #c63f2b;
+  --brand-dark: #8f2c1f;
+  --teal: #147d78;
+  --gold: #b48216;
+  --blue: #2f6f9f;
+  --focus: #1769aa;
+  --shadow: 0 12px 30px rgb(25 33 38 / 12%);
+  --header-height: 68px;
+  --radius: 6px;
+}
+

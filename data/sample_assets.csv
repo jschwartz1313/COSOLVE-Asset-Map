@@ -1,0 +1,3 @@
+name,record_type,short_description,unmanned_systems_relevance,city,state,latitude,longitude,region,strategic_categories,platform_domains,capabilities,missions,source_title,source_url
+Demo CSV Imported Test Site,facility,Representative import workflow record,Supports validation of asset data import workflows,Richmond,VA,37.540700,-77.436000,greater-richmond,test-and-operational-environments,unmanned-aircraft-systems,testing-evaluation-verification-and-validation,training-and-experimentation,Development fixture - no factual claim,
+

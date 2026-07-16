@@ -1,0 +1,17 @@
+{% extends "admin/base_site.html" %}
+{% block content %}
+<div id="content-main">
+  <h1>Import asset CSV</h1>
+  <p>Uploads are validated before any records are created. Imported records begin as internal drafts.</p>
+  <form method="post" enctype="multipart/form-data">{% csrf_token %}<input type="file" name="file" accept=".csv,text/csv" required> <button class="button" type="submit">Preview import</button></form>
+  {% if file_errors %}<ul class="errorlist">{% for error in file_errors %}<li>{{ error }}</li>{% endfor %}</ul>{% endif %}
+  {% if rows %}
+    <h2>Preview</h2>
+    <table><thead><tr><th>Row</th><th>Name</th><th>Type</th><th>Match</th><th>Validation</th></tr></thead><tbody>
+    {% for row in rows %}<tr><td>{{ row.number }}</td><td>{{ row.data.name }}</td><td>{{ row.data.record_type }}</td><td>{% if row.duplicate %}Existing record{% else %}New{% endif %}</td><td>{% if row.errors %}<ul class="errorlist">{% for error in row.errors %}<li>{{ error }}</li>{% endfor %}</ul>{% else %}Ready{% endif %}</td></tr>{% endfor %}
+    </tbody></table>
+    {% if can_commit %}<form method="post" action="{% url 'imports:commit' %}">{% csrf_token %}<button class="button default" type="submit">Import as drafts</button></form>{% endif %}
+  {% endif %}
+</div>
+{% endblock %}
+

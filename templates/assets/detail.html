@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}{{ asset.name }} | COSOLVE{% endblock %}
+{% block content %}
+<main id="main-content" class="detail-page">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="{% url 'core:directory' %}">Directory</a><span>/</span><span>{{ asset.name }}</span></nav>
+  <header class="detail-header">
+    <div>
+      <div class="card-meta"><span class="type-pill type-{{ asset.record_type }}">{{ asset.get_record_type_display }}</span><span>{{ asset.city }}{% if asset.city and asset.state %}, {% endif %}{{ asset.state }}</span></div>
+      <h1>{{ asset.name }}</h1>
+      <p class="lead">{{ asset.short_description }}</p>
+    </div>
+    <div class="verification-block"><span>Last verified</span><strong>{{ asset.last_verified_at|date:"M j, Y"|default:"Review pending" }}</strong><small>{{ asset.get_location_precision_display }} location</small></div>
+  </header>
+  <div class="detail-grid">
+    <article class="detail-main">
+      <section><span class="eyebrow">Unmanned systems relevance</span><h2>Why this asset matters</h2><p>{{ asset.unmanned_systems_relevance }}</p></section>
+      {% if asset.capabilities.exists %}<section><h2>Capabilities</h2><div class="tag-list large">{% for item in asset.capabilities.all %}<span>{{ item.name }}</span>{% endfor %}</div></section>{% endif %}
+      {% if asset.missions.exists %}<section><h2>Mission areas</h2><div class="tag-list large">{% for item in asset.missions.all %}<span>{{ item.name }}</span>{% endfor %}</div></section>{% endif %}
+      {% if relationships %}<section><h2>Related assets</h2><div class="relationship-list">{% for relationship in relationships %}<a href="{{ relationship.to_asset.get_absolute_url }}"><span>{{ relationship.get_relationship_type_display }}</span><strong>{{ relationship.to_asset.name }}</strong></a>{% endfor %}</div></section>{% endif %}
+      <section><h2>Sources</h2><div class="source-list">{% for source in asset.sources.all %}{% if source.is_public %}<div><strong>{% if source.url %}<a href="{{ source.url }}" rel="noopener noreferrer">{{ source.title }}</a>{% else %}{{ source.title }}{% endif %}</strong><span>{% if source.source_date %}Published {{ source.source_date|date:"M j, Y" }}{% endif %}{% if source.last_verified_at %} · Checked {{ source.last_verified_at|date:"M j, Y" }}{% endif %}</span></div>{% endif %}{% empty %}<p>No public sources are listed.</p>{% endfor %}</div></section>
+    </article>
+    <aside class="detail-sidebar">
+      <section><h2>Classification</h2><dl><dt>Strategic categories</dt><dd>{% for item in asset.strategic_categories.all %}<span>{{ item.name }}</span>{% endfor %}</dd><dt>Platform domains</dt><dd>{% for item in asset.platform_domains.all %}<span>{{ item.name }}</span>{% endfor %}</dd><dt>Region</dt><dd>{{ asset.region.name|default:"Not assigned" }}</dd></dl></section>
+      {% if asset.website_url %}<a class="button primary full" href="{{ asset.website_url }}" rel="noopener noreferrer">Visit website</a>{% endif %}
+    </aside>
+  </div>
+  <footer class="public-disclaimer">Informational ecosystem data only. Records may be incomplete and are not authoritative for operational use.</footer>
+</main>
+{% endblock %}
+

@@ -1,0 +1,55 @@
+.map-workspace { height: calc(100vh - var(--header-height)); display: grid; grid-template-columns: 278px minmax(360px, 1fr) 340px; overflow: hidden; background: var(--surface); }
+.filters-panel, .results-panel { min-height: 0; background: var(--paper); position: relative; z-index: 501; }
+.filters-panel { padding: 20px 18px; border-right: 1px solid var(--line); overflow-y: auto; }
+.panel-heading, .results-heading { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+.panel-heading { margin-bottom: 20px; }
+.panel-heading h1 { margin: 5px 0 0; font-size: 20px; }
+.icon-button { width: 34px; height: 34px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); cursor: pointer; font-size: 22px; }
+.filter-close { display: none; }
+#asset-filters { display: grid; gap: 16px; }
+.map-stage { min-width: 0; min-height: 0; position: relative; }
+#map { width: 100%; height: 100%; background: #e2e7e4; }
+.map-toolbar { position: absolute; z-index: 500; top: 12px; left: 12px; right: 12px; display: flex; justify-content: space-between; align-items: center; pointer-events: none; }
+.map-toolbar > * { pointer-events: auto; }
+.filter-open { display: none; }
+.location-key { padding: 8px 10px; border: 1px solid var(--line); background: rgb(255 255 255 / 94%); box-shadow: 0 2px 10px rgb(25 33 38 / 10%); font-size: 10px; font-weight: 700; }
+.location-key i { display: inline-block; width: 9px; height: 9px; margin-right: 5px; border: 2px solid white; border-radius: 50%; background: var(--teal); box-shadow: 0 0 0 1px var(--teal); }
+.map-status { position: absolute; z-index: 500; left: 50%; bottom: 18px; transform: translateX(-50%); max-width: calc(100% - 40px); padding: 10px 14px; background: var(--ink); color: white; border-radius: 3px; font-size: 12px; }
+.results-panel { border-left: 1px solid var(--line); display: grid; grid-template-rows: auto minmax(0, 1fr); }
+.results-heading { padding: 18px 18px 14px; border-bottom: 1px solid var(--line); }
+.results-heading h2 { margin: 4px 0 0; font-size: 18px; }
+.results-heading .text-link { font-size: 11px; }
+.result-list { min-height: 0; overflow-y: auto; }
+.result-row { display: block; width: 100%; padding: 17px 18px; text-align: left; color: var(--ink); background: var(--paper); border: 0; border-bottom: 1px solid var(--line); cursor: pointer; }
+.result-row:hover, .result-row.is-selected { background: #f5f8f6; }
+.result-row.is-selected { box-shadow: inset 3px 0 var(--brand); }
+.result-row h3 { margin: 9px 0 6px; font-size: 15px; line-height: 1.3; }
+.result-row p { margin-bottom: 8px; color: var(--ink-muted); font-size: 12px; line-height: 1.45; }
+.result-row .row-footer { display: flex; justify-content: space-between; gap: 10px; color: var(--ink-muted); font-size: 10px; }
+.map-popup { width: 230px; }
+.map-popup .type-pill { display: inline-block; }
+.map-popup h3 { margin: 9px 0 6px; font-size: 15px; }
+.map-popup p { color: var(--ink-muted); font-size: 12px; line-height: 1.4; }
+.map-popup a { color: var(--brand-dark); font-size: 12px; font-weight: 750; }
+.asset-marker { stroke: white; stroke-width: 3; }
+.leaflet-control-zoom a { color: var(--ink); }
+.leaflet-popup-content-wrapper { border-radius: var(--radius); box-shadow: var(--shadow); }
+.leaflet-popup-content { margin: 15px; }
+
+@media (max-width: 1100px) {
+  .map-workspace { grid-template-columns: 250px minmax(360px, 1fr) 300px; }
+}
+@media (max-width: 880px) {
+  .map-workspace { grid-template-columns: minmax(0, 1fr) 310px; }
+  .filters-panel { position: fixed; inset: var(--header-height) auto 0 0; z-index: 1100; width: min(330px, 92vw); transform: translateX(-105%); transition: transform 180ms ease; box-shadow: var(--shadow); }
+  .filters-panel.is-open { transform: translateX(0); }
+  .filter-close, .filter-open { display: inline-grid; place-items: center; }
+}
+@media (max-width: 650px) {
+  .map-workspace { height: auto; min-height: calc(100vh - var(--header-height)); display: grid; grid-template-columns: 1fr; grid-template-rows: minmax(52vh, 440px) auto; overflow: visible; }
+  .map-stage { grid-row: 1; }
+  .results-panel { grid-row: 2; border-left: 0; border-top: 1px solid var(--line); }
+  .result-list { overflow: visible; }
+  .location-key { display: none; }
+}
+

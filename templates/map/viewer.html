@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Map | COSOLVE{% endblock %}
+{% block extra_css %}
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}">
+{% endblock %}
+{% block content %}
+<main id="main-content" class="map-workspace" data-map-app
+      data-lat="{{ default_map_lat }}" data-lon="{{ default_map_lon }}" data-zoom="{{ default_map_zoom }}"
+      data-tile-url="{{ basemap_tile_url }}" data-attribution="{{ basemap_attribution }}">
+  <aside class="filters-panel" aria-label="Asset filters">
+    <div class="panel-heading">
+      <div><span class="eyebrow">Virginia ecosystem</span><h1>Asset intelligence</h1></div>
+      <button class="icon-button filter-close" type="button" aria-label="Close filters" title="Close filters">&times;</button>
+    </div>
+    <form id="asset-filters" autocomplete="off">
+      {% include "includes/filter_fields.html" %}
+      <div class="filter-actions">
+        <button class="button primary" type="submit">Apply filters</button>
+        <button class="button secondary" type="reset">Clear all</button>
+      </div>
+    </form>
+  </aside>
+
+  <section class="map-stage" aria-label="Asset map">
+    <div id="map" role="application" aria-label="Interactive map of published assets"></div>
+    <div class="map-toolbar">
+      <button class="button compact filter-open" type="button" aria-label="Open filters">Filters</button>
+      <span class="location-key"><i></i> Approximate public locations</span>
+    </div>
+    <div id="map-status" class="map-status" role="status" hidden></div>
+  </section>
+
+  <aside class="results-panel" aria-label="Filtered assets">
+    <div class="results-heading">
+      <div><span class="eyebrow">Published records</span><h2><strong id="result-count">{{ total_assets }}</strong> assets</h2></div>
+      <a class="text-link" id="directory-link" href="{% url 'core:directory' %}">Directory view</a>
+    </div>
+    <div id="result-list" class="result-list" aria-live="polite"></div>
+  </aside>
+</main>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script type="module" src="{% static 'js/map-viewer.js' %}"></script>
+{% endblock %}
+

@@ -1,0 +1,61 @@
+{% load query_helpers %}
+<label class="search-field">
+  <span>Search</span>
+  <input type="search" name="q" value="{{ request.GET.q }}" placeholder="Name, capability, city">
+</label>
+
+<label>
+  <span>Asset type</span>
+  <select name="record_type">
+    <option value="">All asset types</option>
+    {% for value, label in record_types %}
+      <option value="{{ value }}" {% if request.GET.record_type == value %}selected{% endif %}>{{ label }}</option>
+    {% endfor %}
+  </select>
+</label>
+
+<label>
+  <span>Region</span>
+  <select name="region">
+    <option value="">All Virginia regions</option>
+    {% for region in regions %}
+      <option value="{{ region.slug }}" {% if request.GET.region == region.slug %}selected{% endif %}>{{ region.name }}</option>
+    {% endfor %}
+  </select>
+</label>
+
+<fieldset>
+  <legend>Strategic category</legend>
+  <div class="check-list">
+    {% for category in categories %}
+      <label class="check-row"><input type="checkbox" name="category" value="{{ category.slug }}" {% if category.slug in request.GET|getlist:"category" %}checked{% endif %}><span>{{ category.name }}</span></label>
+    {% endfor %}
+  </div>
+</fieldset>
+
+<details>
+  <summary>Platform domains</summary>
+  <div class="check-list">
+    {% for domain in domains %}
+      <label class="check-row"><input type="checkbox" name="domain" value="{{ domain.slug }}" {% if domain.slug in request.GET|getlist:"domain" %}checked{% endif %}><span>{{ domain.name }}</span></label>
+    {% endfor %}
+  </div>
+</details>
+
+<details>
+  <summary>Capabilities</summary>
+  <div class="check-list">
+    {% for capability in capabilities %}
+      <label class="check-row"><input type="checkbox" name="capability" value="{{ capability.slug }}" {% if capability.slug in request.GET|getlist:"capability" %}checked{% endif %}><span>{{ capability.name }}</span></label>
+    {% endfor %}
+  </div>
+</details>
+
+<details>
+  <summary>Mission areas</summary>
+  <div class="check-list">
+    {% for mission in missions %}
+      <label class="check-row"><input type="checkbox" name="mission" value="{{ mission.slug }}" {% if mission.slug in request.GET|getlist:"mission" %}checked{% endif %}><span>{{ mission.name }}</span></label>
+    {% endfor %}
+  </div>
+</details>
