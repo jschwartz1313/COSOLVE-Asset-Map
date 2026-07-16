@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-07-16",
   "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, and a curated set of source-backed ecosystem records.",
-  "record_count": 176,
+  "record_count": 203,
   "records": [
     {
       "capabilities": [
@@ -44,6 +44,76 @@
         "Systems engineering and integration",
         "Operations, maintenance, and sustainment"
       ],
+      "city": "Hampton",
+      "latitude": 37.03,
+      "location_precision": "locality",
+      "longitude": -76.346,
+      "missions": [
+        "Infrastructure inspection",
+        "Logistics and contested logistics"
+      ],
+      "name": "Adaptive Aerospace Group",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "short_description": "Hampton aerospace engineering company providing uncrewed-aircraft-system design and technical services.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "Adaptive Aerospace Group",
+          "url": "https://adaptiveaero.com/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers"
+      ],
+      "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
+      "website_url": "https://adaptiveaero.com/"
+    },
+    {
+      "capabilities": [
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Hampton",
+      "latitude": 37.03,
+      "location_precision": "locality",
+      "longitude": -76.346,
+      "missions": [
+        "Infrastructure inspection",
+        "Logistics and contested logistics"
+      ],
+      "name": "Advanced Aircraft Company",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "short_description": "Hampton developer and manufacturer of long-endurance hybrid-electric unmanned aircraft systems.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "Advanced Aircraft Company",
+          "url": "https://advancedaircraftcompany.com/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers"
+      ],
+      "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
+      "website_url": "https://advancedaircraftcompany.com/"
+    },
+    {
+      "capabilities": [
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment"
+      ],
       "city": "Christiansburg",
       "latitude": 37.13,
       "location_precision": "locality",
@@ -73,6 +143,44 @@
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "city": "Arlington",
+      "latitude": 38.881,
+      "location_precision": "locality",
+      "longitude": -77.091,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "AeroVironment Corporate Headquarters",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Arlington headquarters of a multi-domain autonomous-systems, UAS, UGV, counter-UAS, and robotics company.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "AeroVironment",
+          "url": "https://www.avinc.com/domains/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain"
+      ],
+      "unmanned_systems_relevance": "Develops, integrates, manufactures, or supports documented autonomous and uncrewed systems across one or more operating domains.",
+      "website_url": "https://www.avinc.com/domains/"
     },
     {
       "capabilities": [
@@ -357,6 +465,41 @@
     },
     {
       "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Weyers Cave",
+      "latitude": 38.288,
+      "location_precision": "locality",
+      "longitude": -78.913,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Blue Ridge Community College Unmanned Systems Courses",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Shenandoah Valley",
+      "short_description": "Community-college UMS coursework covering small-UAS operations, mission planning, and autonomous flight.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "VCCS: Unmanned Systems Courses at Blue Ridge Community College",
+          "url": "https://courses.vccs.edu/colleges/brcc/courses/UMS-UnmannedSystems"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://courses.vccs.edu/colleges/brcc/courses/UMS-UnmannedSystems"
+    },
+    {
+      "capabilities": [
         "Operations, maintenance, and sustainment"
       ],
       "city": "Bridgewater",
@@ -390,6 +533,41 @@
       ],
       "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Chester",
+      "latitude": 37.356,
+      "location_precision": "locality",
+      "longitude": -77.442,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Brightpoint Community College Unmanned Systems Courses",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Greater Richmond",
+      "short_description": "Community-college small-UAS coursework supporting remote-pilot knowledge and operational skills.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "VCCS: Unmanned Systems Courses at Brightpoint Community College",
+          "url": "https://courses.vccs.edu/colleges/jtcc/courses/UMS-UnmannedSystems"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://courses.vccs.edu/colleges/jtcc/courses/UMS-UnmannedSystems"
     },
     {
       "capabilities": [
@@ -997,6 +1175,41 @@
     },
     {
       "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Danville",
+      "latitude": 36.586,
+      "location_precision": "locality",
+      "longitude": -79.395,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Danville Community College Unmanned Systems Courses",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Southside Virginia",
+      "short_description": "Community-college UMS coursework covering small-UAS platforms, operations, and mission support.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "VCCS: Unmanned Systems Courses at Danville Community College",
+          "url": "https://courses.vccs.edu/colleges/dcc/courses/UMS-UnmannedSystems"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://courses.vccs.edu/colleges/dcc/courses/UMS-UnmannedSystems"
+    },
+    {
+      "capabilities": [
         "Operations, maintenance, and sustainment"
       ],
       "city": "Danville",
@@ -1030,6 +1243,44 @@
       ],
       "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "city": "Sterling",
+      "latitude": 39.006,
+      "location_precision": "locality",
+      "longitude": -77.428,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Dedrone Washington-Area Headquarters",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Sterling headquarters for counter-drone sensing, identification, tracking, and airspace-security technology.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "Dedrone by Axon",
+          "url": "https://www.dedrone.com/about/contact-us"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain"
+      ],
+      "unmanned_systems_relevance": "Develops, integrates, manufactures, or supports documented autonomous and uncrewed systems across one or more operating domains.",
+      "website_url": "https://www.dedrone.com/about/contact-us"
     },
     {
       "capabilities": [
@@ -1237,6 +1488,41 @@
       ],
       "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Melfa",
+      "latitude": 37.649,
+      "location_precision": "locality",
+      "longitude": -75.741,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Eastern Shore Community College Unmanned Systems Courses",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Eastern Shore",
+      "short_description": "Community-college UMS coursework supporting small-UAS operations and applied technical skills.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "VCCS: Unmanned Systems Courses at Eastern Shore Community College",
+          "url": "https://courses.vccs.edu/colleges/escc/courses/UMS-UnmannedSystems"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://courses.vccs.edu/colleges/escc/courses/UMS-UnmannedSystems"
     },
     {
       "capabilities": [
@@ -1834,6 +2120,42 @@
     },
     {
       "capabilities": [
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "city": "Hampton",
+      "latitude": 37.03,
+      "location_precision": "locality",
+      "longitude": -76.346,
+      "missions": [
+        "Maritime domain awareness"
+      ],
+      "name": "HII Unmanned Systems Center of Excellence",
+      "platform_domains": [
+        "Maritime surface systems",
+        "Undersea systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Hampton Roads",
+      "short_description": "Digital manufacturing and engineering facility established for HII unmanned and autonomous systems.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "HII Unmanned Systems Center of Excellence",
+          "url": "https://www.hii.com/news/unmanned-systems-center-of-excellence"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain"
+      ],
+      "unmanned_systems_relevance": "Provides maritime engineering, shipbuilding, integration, or robotic-system capacity.",
+      "website_url": "https://www.hii.com/news/unmanned-systems-center-of-excellence"
+    },
+    {
+      "capabilities": [
         "Operations, maintenance, and sustainment"
       ],
       "city": "Saluda",
@@ -2255,6 +2577,41 @@
     },
     {
       "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Middletown",
+      "latitude": 39.027,
+      "location_precision": "locality",
+      "longitude": -78.28,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Laurel Ridge Community College Unmanned Systems Courses",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Shenandoah Valley",
+      "short_description": "Community-college UMS coursework including remote-pilot ground school and small-UAS operations.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "VCCS: Unmanned Systems Courses at Laurel Ridge Community College",
+          "url": "https://courses.vccs.edu/colleges/lfcc/courses/UMS-UnmannedSystems"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://courses.vccs.edu/colleges/lfcc/courses/UMS-UnmannedSystems"
+    },
+    {
+      "capabilities": [
         "Operations, maintenance, and sustainment"
       ],
       "city": "Jonesville",
@@ -2501,6 +2858,43 @@
       ],
       "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "capabilities": [
+        "Testing, evaluation, verification, and validation",
+        "Systems engineering and integration"
+      ],
+      "city": "Hampton",
+      "latitude": 37.03,
+      "location_precision": "locality",
+      "longitude": -76.346,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Longbow Unmanned Systems Research and Test Center",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Maritime surface systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "operating-environment",
+      "region": "Hampton Roads",
+      "short_description": "Fort Monroe center supporting urban air, ground, and maritime unmanned-system research, testing, and validation.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "City of Hampton: Hampton Roads Autonomy Demonstrations",
+          "url": "https://www.hampton.gov/CivicAlerts.aspx?AID=4973&ARC=10333"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Test and operational environments",
+        "Companies and solution providers"
+      ],
+      "unmanned_systems_relevance": "Provides a publicly documented environment for unmanned-system testing, training, demonstration, validation, or operational integration.",
+      "website_url": "https://www.hampton.gov/CivicAlerts.aspx?AID=4973&ARC=10333"
     },
     {
       "capabilities": [
@@ -2965,6 +3359,41 @@
       ],
       "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Clifton Forge",
+      "latitude": 37.817,
+      "location_precision": "locality",
+      "longitude": -79.824,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Mountain Gateway Community College Unmanned Systems Courses",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Shenandoah Valley",
+      "short_description": "Community-college UMS coursework covering remote-pilot preparation and advanced UAS operations.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "VCCS: Unmanned Systems Courses at Mountain Gateway Community College",
+          "url": "https://courses.vccs.edu/colleges/dslcc/courses/UMS-UnmannedSystems"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://courses.vccs.edu/colleges/dslcc/courses/UMS-UnmannedSystems"
     },
     {
       "capabilities": [
@@ -4013,6 +4442,44 @@
     },
     {
       "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "city": "Lorton",
+      "latitude": 38.704,
+      "location_precision": "locality",
+      "longitude": -77.228,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "QinetiQ US Headquarters",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Lorton headquarters of a company providing multi-domain autonomous systems and unmanned robotic platforms.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "QinetiQ US",
+          "url": "https://www.qinetiq.com/en-us/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain"
+      ],
+      "unmanned_systems_relevance": "Develops, integrates, manufactures, or supports documented autonomous and uncrewed systems across one or more operating domains.",
+      "website_url": "https://www.qinetiq.com/en-us/"
+    },
+    {
+      "capabilities": [
         "Systems engineering and integration"
       ],
       "city": "Radford",
@@ -4043,6 +4510,41 @@
       ],
       "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    },
+    {
+      "capabilities": [
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Manassas",
+      "latitude": 38.751,
+      "location_precision": "locality",
+      "longitude": -77.475,
+      "missions": [
+        "Infrastructure inspection",
+        "Logistics and contested logistics"
+      ],
+      "name": "RapidFlight UAS Manufacturing Headquarters",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Northern Virginia",
+      "short_description": "Manassas headquarters and digital manufacturing facility for rapidly produced unmanned aircraft systems.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "RapidFlight Manassas UAS Manufacturing Headquarters",
+          "url": "https://www.prnewswire.com/news-releases/rapidflight-celebrates-grand-opening-of-uas-3d-manufacturing-headquarters-in-manassas-virginia-301884344.html"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers"
+      ],
+      "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
+      "website_url": "https://www.prnewswire.com/news-releases/rapidflight-celebrates-grand-opening-of-uas-3d-manufacturing-headquarters-in-manassas-virginia-301884344.html"
     },
     {
       "capabilities": [
@@ -4610,6 +5112,41 @@
     },
     {
       "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Chesapeake",
+      "latitude": 36.768,
+      "location_precision": "locality",
+      "longitude": -76.288,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Tidewater Community College Unmanned Systems Courses",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Hampton Roads",
+      "short_description": "Community-college UMS coursework covering remote-pilot knowledge and small-UAS operations.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "VCCS: Unmanned Systems Courses at Tidewater Community College",
+          "url": "https://courses.vccs.edu/colleges/tcc/courses/UMS-UnmannedSystems"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://courses.vccs.edu/colleges/tcc/courses/UMS-UnmannedSystems"
+    },
+    {
+      "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration"
       ],
@@ -5072,6 +5609,40 @@
     },
     {
       "capabilities": [
+        "Safety, policy, regulatory, and airspace integration"
+      ],
+      "city": "Richmond",
+      "latitude": 37.541,
+      "location_precision": "locality",
+      "longitude": -77.436,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Virginia Advanced Air Mobility Program",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Greater Richmond",
+      "short_description": "Commonwealth aviation program covering automated small uncrewed systems, remotely controlled aircraft, and aviation automation.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "Virginia Department of Aviation Advanced Air Mobility",
+          "url": "https://doav.virginia.gov/advanced_air_mobility/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "State strategy and coordination",
+        "Programs and initiatives"
+      ],
+      "unmanned_systems_relevance": "Coordinates, funds, regulates, or accelerates Virginia's unmanned-systems ecosystem.",
+      "website_url": "https://doav.virginia.gov/advanced_air_mobility/"
+    },
+    {
+      "capabilities": [
         "Autonomy and artificial intelligence",
         "Perception, sensing, and sensor fusion"
       ],
@@ -5105,6 +5676,78 @@
       ],
       "unmanned_systems_relevance": "Develops robotics, perception, planning, control, or connected-vehicle capabilities that support autonomous ground and cross-domain systems.",
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Richmond",
+      "latitude": 37.541,
+      "location_precision": "locality",
+      "longitude": -77.436,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Virginia Community College System Unmanned Systems Curriculum",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Greater Richmond",
+      "short_description": "Statewide community-college UMS curriculum spanning remote-pilot ground school, operations, maintenance, imaging, and internships.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "Virginia Community College System Unmanned Systems Courses",
+          "url": "https://courses.vccs.edu/courses/UMS-UnmannedSystems"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://courses.vccs.edu/courses/UMS-UnmannedSystems"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Henrico",
+      "latitude": 37.632,
+      "location_precision": "locality",
+      "longitude": -77.515,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Virginia Conservation Police UAS Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Greater Richmond",
+      "short_description": "Department of Wildlife Resources program using UAS for conservation-police and public-safety missions.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "Virginia Conservation Police 2024 Annual Report",
+          "url": "https://dwr.virginia.gov/wp-content/uploads/media/Virginia-Conservation-Police-Annual-Report-2024.pdf"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://dwr.virginia.gov/wp-content/uploads/media/Virginia-Conservation-Police-Annual-Report-2024.pdf"
     },
     {
       "capabilities": [
@@ -5142,6 +5785,43 @@
     },
     {
       "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Charlottesville",
+      "latitude": 38.035,
+      "location_precision": "locality",
+      "longitude": -78.503,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Virginia Department of Forestry UAV Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Central Virginia",
+      "short_description": "State forestry drone program supporting wildfire response, incident management, mapping, and natural-resource missions.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "Virginia Department of Forestry Drone Program",
+          "url": "https://dof.virginia.gov/user_directory/jason-a-braunstein/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://dof.virginia.gov/user_directory/jason-a-braunstein/"
+    },
+    {
+      "capabilities": [
         "Safety, policy, regulatory, and airspace integration"
       ],
       "city": "Richmond",
@@ -5173,6 +5853,43 @@
       ],
       "unmanned_systems_relevance": "Coordinates, funds, regulates, or accelerates Virginia's unmanned-systems ecosystem.",
       "website_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Richmond",
+      "latitude": 37.541,
+      "location_precision": "locality",
+      "longitude": -77.436,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Virginia First Responder Unmanned Aircraft Trade and Replace Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Greater Richmond",
+      "short_description": "DCJS grant program supporting Virginia first responders replacing qualifying unmanned aircraft with compliant systems.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "DCJS Unmanned Aircraft Trade and Replace Program",
+          "url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
     },
     {
       "capabilities": [
@@ -5243,6 +5960,41 @@
       ],
       "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Abingdon",
+      "latitude": 36.71,
+      "location_precision": "locality",
+      "longitude": -81.975,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Virginia Highlands Community College Small UAS Certificate",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Southwest Virginia",
+      "short_description": "Career Studies Certificate preparing students to integrate remote-pilot technologies and pursue Part 107 certification.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "Virginia Highlands Community College Small UAS Certificate",
+          "url": "https://www.vhcc.edu/small-unmanned-aerial-systems-suas"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://www.vhcc.edu/small-unmanned-aerial-systems-suas"
     },
     {
       "capabilities": [
@@ -5500,6 +6252,41 @@
     },
     {
       "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Hampton",
+      "latitude": 37.03,
+      "location_precision": "locality",
+      "longitude": -76.346,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Virginia Peninsula Community College Drone Flight Technician Certificate",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Hampton Roads",
+      "short_description": "Career Studies Certificate covering drone operation, autonomous flight, construction, maintenance, and Part 107 preparation.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "Virginia Peninsula Community College Drone Flight Technician",
+          "url": "https://www.vpcc.edu/program/small-unmanned-aircraft-systems-drone-flight-technician/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://www.vpcc.edu/program/small-unmanned-aircraft-systems-drone-flight-technician/"
+    },
+    {
+      "capabilities": [
         "Safety, policy, regulatory, and airspace integration"
       ],
       "city": "Richmond",
@@ -5567,6 +6354,43 @@
       ],
       "unmanned_systems_relevance": "Develops robotics, perception, planning, control, or connected-vehicle capabilities that support autonomous ground and cross-domain systems.",
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Richmond",
+      "latitude": 37.541,
+      "location_precision": "locality",
+      "longitude": -77.436,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Virginia State Police UAS Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Greater Richmond",
+      "short_description": "State police drone program supporting crash and crime-scene mapping, searches, inspection, and specialized operations.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "Virginia State Police Department History",
+          "url": "https://vsp.virginia.gov/about-us/department-history/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://vsp.virginia.gov/about-us/department-history/"
     },
     {
       "capabilities": [
@@ -5752,6 +6576,78 @@
     },
     {
       "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "city": "Melfa",
+      "latitude": 37.649,
+      "location_precision": "locality",
+      "longitude": -75.741,
+      "missions": [
+        "Agriculture and natural resources",
+        "Environmental monitoring"
+      ],
+      "name": "Virginia Tech Eastern Shore AREC Drone Application Research",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Eastern Shore",
+      "short_description": "Eastern Shore field research and outreach on agricultural drone sensing and spray-drone applications.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "Virginia Tech Eastern Shore AREC Drone Research",
+          "url": "https://www.arec.vaes.vt.edu/content/dam/arec_vaes_vt_edu/eastern-shore/newsletter/The%20Stalk%20-%20July%202024.pdf"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Programs and initiatives"
+      ],
+      "unmanned_systems_relevance": "Conducts documented drone-based sensing, imaging, analysis, or field research for agriculture, natural resources, or environmental monitoring.",
+      "website_url": "https://www.arec.vaes.vt.edu/content/dam/arec_vaes_vt_edu/eastern-shore/newsletter/The%20Stalk%20-%20July%202024.pdf"
+    },
+    {
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "city": "Blacksburg",
+      "latitude": 37.229,
+      "location_precision": "locality",
+      "longitude": -80.414,
+      "missions": [
+        "Agriculture and natural resources",
+        "Environmental monitoring"
+      ],
+      "name": "Virginia Tech Grain Crop Drone Research Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "New River Valley",
+      "short_description": "Research program applying UAV imagery and analytics to crop health, nutrient response, biomass, and yield estimation.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "Virginia Tech Grain Crop Drone Research",
+          "url": "https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/spes-747.html"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Programs and initiatives"
+      ],
+      "unmanned_systems_relevance": "Conducts documented drone-based sensing, imaging, analysis, or field research for agriculture, natural resources, or environmental monitoring.",
+      "website_url": "https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/spes-747.html"
+    },
+    {
+      "capabilities": [
         "Manufacturing, materials, and prototyping",
         "Systems engineering and integration"
       ],
@@ -5891,6 +6787,41 @@
       ],
       "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "capabilities": [
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Glen Allen",
+      "latitude": 37.666,
+      "location_precision": "locality",
+      "longitude": -77.506,
+      "missions": [
+        "Infrastructure inspection",
+        "Logistics and contested logistics"
+      ],
+      "name": "Virginia UAS",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Greater Richmond",
+      "short_description": "Virginia small-UAS training, safety, operational integration, and consulting provider.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "Virginia UAS",
+          "url": "https://virginiauas.com/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers"
+      ],
+      "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
+      "website_url": "https://virginiauas.com/"
     },
     {
       "capabilities": [
@@ -6210,6 +7141,43 @@
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
+    },
+    {
+      "capabilities": [
+        "Testing, evaluation, verification, and validation",
+        "Systems engineering and integration"
+      ],
+      "city": "Leesburg",
+      "latitude": 39.116,
+      "location_precision": "locality",
+      "longitude": -77.564,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Xelevate Leesburg Unmanned Systems Facility",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Maritime surface systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "operating-environment",
+      "region": "Northern Virginia",
+      "short_description": "Dedicated Loudoun County facility for unmanned-systems testing, development, training, and demonstrations.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-16",
+          "title": "Xelevate Leesburg Unmanned Systems Facility",
+          "url": "https://xelevateus.com/leesburg-virginia/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Test and operational environments",
+        "Companies and solution providers"
+      ],
+      "unmanned_systems_relevance": "Provides a publicly documented environment for unmanned-system testing, training, demonstration, validation, or operational integration.",
+      "website_url": "https://xelevateus.com/leesburg-virginia/"
     }
   ]
 }

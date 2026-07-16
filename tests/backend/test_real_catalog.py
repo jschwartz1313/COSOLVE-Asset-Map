@@ -13,10 +13,10 @@ class RealCatalogFileTests(TestCase):
         path = settings.BASE_DIR / "data" / "virginia_real_assets.json"
         return json.loads(path.read_text())
 
-    def test_catalog_has_at_least_150_real_source_backed_records(self):
+    def test_catalog_has_at_least_200_real_source_backed_records(self):
         catalog = self.load_catalog()
         records = catalog["records"]
-        self.assertGreaterEqual(len(records), 150)
+        self.assertGreaterEqual(len(records), 200)
         self.assertEqual(catalog["record_count"], len(records))
         self.assertFalse(any(record["name"].startswith("Demo ") for record in records))
         self.assertTrue(

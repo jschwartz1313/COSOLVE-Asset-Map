@@ -1,5 +1,7 @@
 # COSOLVE Unmanned Systems Asset Map Viewer
 
+[![CI](https://github.com/jschwartz1313/COSOLVE-Asset-Map/actions/workflows/ci.yml/badge.svg)](https://github.com/jschwartz1313/COSOLVE-Asset-Map/actions/workflows/ci.yml)
+
 A standalone Django and Leaflet application for maintaining and exploring publicly releasable unmanned-systems ecosystem assets. This repository implements Phases 0 through 2 of the controlling technical specification.
 
 The checked-in catalog contains source-backed, publicly documented Virginia records. Military and federal locations are deliberately generalized and exclude operational detail. A separate demo-seed command remains available only for test and interface development.
@@ -13,7 +15,7 @@ The checked-in catalog contains source-backed, publicly documented Virginia reco
 - Synchronized Leaflet map and result directory with URL-backed state
 - Accessible non-map directory and public asset profiles
 - CSV validation preview, draft import, and filtered export
-- 176 source-backed Virginia records spanning public-use airports, research, workforce, companies, infrastructure, programs, and generalized defense assets
+- 203 source-backed Virginia records spanning public-use airports, research, workforce, companies, infrastructure, programs, and generalized defense assets
 - Backend, frontend state, security-boundary, and import tests
 
 ## Local setup
