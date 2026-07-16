@@ -1,0 +1,1207 @@
+#!/usr/bin/env python3
+"""Build the checked-in Virginia real-asset catalog from public sources."""
+
+import json
+import urllib.parse
+import urllib.request
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+OUTPUT = ROOT / "data" / "virginia_real_assets.json"
+VERIFIED_DATE = "2026-07-16"
+
+FAA_LAYER = (
+    "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
+)
+DOAV_DIRECTORY = "https://doav.virginia.gov/airport-directory/"
+FACTBOOK = (
+    "https://www.vada.virginia.gov/media/governorvirginiagov/"
+    "secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+)
+VEDP_UXS = "https://www.vedp.org/industry/unmanned-systems"
+VEDP_COMPANIES = "https://www.vedp.org/news/home-business-more-400-years"
+VIPC_CENTER = "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
+VIPC_TEST = (
+    "https://vipc.org/virginia-launches-advanced-air-mobility-and-unmanned-"
+    "systems-test-site-program/"
+)
+PORT_CAPABILITIES = "https://www.portofvirginia.com/gateway/capabilities/"
+
+SOURCES = {
+    "vedp": ("VEDP: Unmanned Systems in Virginia", VEDP_UXS),
+    "vedp_companies": ("VEDP: Virginia Unmanned Systems Companies", VEDP_COMPANIES),
+    "vipc": ("Virginia Unmanned Systems Center", VIPC_CENTER),
+    "vipc_test": ("Virginia AAM and Unmanned Systems Test Site Program", VIPC_TEST),
+    "port": ("Port of Virginia Capabilities", PORT_CAPABILITIES),
+    "vt_keas": (
+        "Virginia Tech Kentland Experimental Aerial Systems Laboratory",
+        "https://autonomyandrobotics.centers.vt.edu/groups/keas.html",
+    ),
+    "vt_acsl": (
+        "Virginia Tech Advanced Control Systems Lab",
+        "https://www.ise.vt.edu/research/labs/advanced-control-systems-lab.html",
+    ),
+    "vt_marine": (
+        "Virginia Tech Center for Marine Autonomy and Robotics",
+        "https://marinerobotics.centers.vt.edu/index.html",
+    ),
+    "vt_autoboat": ("AutoBoat at Virginia Tech", "https://autoboat.aoe.vt.edu/"),
+    "uva_robotics": (
+        "UVA Robotics and Autonomous Systems",
+        "https://www.engineering.virginia.edu/labs-groups/link-lab/research/"
+        "robotics-and-autonomous-systems",
+    ),
+    "uva_maye": (
+        "UVA Robotics, Dynamics, and Autonomous Systems",
+        "https://engineering.virginia.edu/department/mechanical-and-aerospace-"
+        "engineering/research/robotics-dynamics-and-autonomous-systems",
+    ),
+    "uva_ece": (
+        "UVA Robotics and Embedded Systems",
+        "https://engineering.virginia.edu/department/electrical-and-computer-"
+        "engineering/robotics-and-embedded-systems",
+    ),
+    "vcu_arvl": ("VCU Autonomous Robots and Vehicles Laboratory", "https://arvl.lab.vcu.edu/"),
+    "vt_made": (
+        "Virginia Tech Robotics and Autonomy",
+        "https://made.vt.edu/robotics-autonomy.html",
+    ),
+    "nasa_certain": (
+        "NASA Langley Drone Flying Site",
+        "https://www.nasa.gov/centers-and-facilities/langley/"
+        "nasa-langley-drone-flying-site-open-for-testing/",
+    ),
+}
+
+PROFILES = {
+    "research_air": {
+        "categories": ["Research and technical depth", "Test and operational environments"],
+        "domains": ["Unmanned aircraft systems", "Cross-domain autonomy"],
+        "capabilities": [
+            "Autonomy and artificial intelligence",
+            "Testing, evaluation, verification, and validation",
+        ],
+        "missions": ["Training and experimentation"],
+        "relevance": (
+            "Provides documented research, engineering, or test capacity for aerial and "
+            "cross-domain autonomous systems."
+        ),
+    },
+    "research_ground": {
+        "categories": ["Research and technical depth", "Multi-domain missions"],
+        "domains": ["Ground vehicles and robotics", "Cross-domain autonomy"],
+        "capabilities": [
+            "Autonomy and artificial intelligence",
+            "Perception, sensing, and sensor fusion",
+        ],
+        "missions": ["Training and experimentation"],
+        "relevance": (
+            "Develops robotics, perception, planning, control, or connected-vehicle capabilities "
+            "that support autonomous ground and cross-domain systems."
+        ),
+    },
+    "research_marine": {
+        "categories": ["Research and technical depth", "Test and operational environments"],
+        "domains": ["Maritime surface systems", "Undersea systems"],
+        "capabilities": [
+            "Autonomy and artificial intelligence",
+            "Navigation and positioning",
+            "Perception, sensing, and sensor fusion",
+        ],
+        "missions": ["Maritime domain awareness", "Environmental monitoring"],
+        "relevance": (
+            "Provides documented marine robotics, autonomy, sensing, navigation, or field-test "
+            "capacity for surface and undersea systems."
+        ),
+    },
+    "workforce": {
+        "categories": ["Workforce and talent"],
+        "domains": ["Unmanned aircraft systems", "Cross-domain autonomy"],
+        "capabilities": [
+            "Operations, maintenance, and sustainment",
+            "Systems engineering and integration",
+        ],
+        "missions": ["Training and experimentation"],
+        "relevance": (
+            "Builds a documented education or credential pathway for unmanned-systems operators, "
+            "maintainers, engineers, or technicians."
+        ),
+    },
+    "company_air": {
+        "categories": ["Companies and solution providers"],
+        "domains": ["Unmanned aircraft systems"],
+        "capabilities": [
+            "Systems engineering and integration",
+            "Operations, maintenance, and sustainment",
+        ],
+        "missions": ["Infrastructure inspection", "Logistics and contested logistics"],
+        "relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
+    },
+    "company_ground": {
+        "categories": ["Companies and solution providers"],
+        "domains": ["Ground vehicles and robotics"],
+        "capabilities": [
+            "Autonomy and artificial intelligence",
+            "Systems engineering and integration",
+        ],
+        "missions": ["Logistics and contested logistics"],
+        "relevance": "Develops or integrates documented autonomous-ground-vehicle technology.",
+    },
+    "company_marine": {
+        "categories": ["Companies and solution providers", "Manufacturing and supply chain"],
+        "domains": ["Maritime surface systems", "Undersea systems"],
+        "capabilities": [
+            "Systems engineering and integration",
+            "Manufacturing, materials, and prototyping",
+        ],
+        "missions": ["Maritime domain awareness"],
+        "relevance": "Provides maritime engineering, shipbuilding, integration, or robotic-system capacity.",
+    },
+    "state": {
+        "categories": ["State strategy and coordination", "Programs and initiatives"],
+        "domains": ["Cross-domain autonomy"],
+        "capabilities": ["Safety, policy, regulatory, and airspace integration"],
+        "missions": ["Training and experimentation"],
+        "relevance": "Coordinates, funds, regulates, or accelerates Virginia's unmanned-systems ecosystem.",
+    },
+    "port": {
+        "categories": ["Physical infrastructure and logistics"],
+        "domains": ["Maritime surface systems", "Cross-domain autonomy"],
+        "capabilities": [
+            "Operations, maintenance, and sustainment",
+            "Data engineering, analytics, and edge computing",
+        ],
+        "missions": ["Logistics and contested logistics", "Infrastructure inspection"],
+        "relevance": (
+            "Provides port, intermodal, staging, or semi-automated logistics infrastructure relevant "
+            "to maritime autonomy, inspection, and deployment."
+        ),
+    },
+    "enabling": {
+        "categories": ["Research and technical depth", "Manufacturing and supply chain"],
+        "domains": ["Cross-domain autonomy"],
+        "capabilities": [
+            "Manufacturing, materials, and prototyping",
+            "Systems engineering and integration",
+        ],
+        "missions": ["Training and experimentation"],
+        "relevance": (
+            "Provides advanced manufacturing, modeling, sensing, communications, or prototyping "
+            "capacity that enables unmanned-system development and scale-up."
+        ),
+    },
+}
+
+PLACES = {
+    "Abingdon": (36.710, -81.975),
+    "Arlington": (38.881, -77.091),
+    "Blackstone": (37.080, -77.997),
+    "Blacksburg": (37.229, -80.414),
+    "Bowling Green": (38.050, -77.347),
+    "Charlottesville": (38.035, -78.503),
+    "Christiansburg": (37.130, -80.409),
+    "Danville": (36.586, -79.395),
+    "Dahlgren": (38.333, -77.031),
+    "Fairfax": (38.846, -77.307),
+    "Front Royal": (38.918, -78.194),
+    "Hampton": (37.030, -76.346),
+    "Harrisonburg": (38.449, -78.869),
+    "Lynchburg": (37.414, -79.142),
+    "Manassas": (38.751, -77.475),
+    "Melfa": (37.649, -75.741),
+    "Newport News": (37.087, -76.473),
+    "Norfolk": (36.851, -76.286),
+    "Portsmouth": (36.836, -76.298),
+    "Prince George": (37.221, -77.289),
+    "Quantico": (38.522, -77.290),
+    "Radford": (37.132, -80.576),
+    "Reston": (38.959, -77.357),
+    "Richmond": (37.541, -77.436),
+    "Roanoke": (37.271, -79.941),
+    "Springfield": (38.789, -77.187),
+    "Sterling": (39.006, -77.428),
+    "Suffolk": (36.728, -76.584),
+    "Virginia Beach": (36.853, -75.978),
+    "Wallops Island": (37.940, -75.467),
+    "Williamsburg": (37.271, -76.707),
+    "Wise": (36.975, -82.576),
+    "Yorktown": (37.239, -76.510),
+}
+
+DEFENSE_INSTALLATIONS = [
+    ("The Pentagon", "Arlington", "Northern Virginia"),
+    ("Joint Base Myer-Henderson Hall", "Arlington", "Northern Virginia"),
+    ("Army National Guard Readiness Center", "Arlington", "Northern Virginia"),
+    ("Defense Advanced Research Projects Agency", "Arlington", "Northern Virginia"),
+    ("Fort Belvoir", "Springfield", "Northern Virginia"),
+    ("National Geospatial-Intelligence Agency Springfield", "Springfield", "Northern Virginia"),
+    ("Marine Corps Base Quantico", "Quantico", "Northern Virginia"),
+    ("Fort A.P. Hill", "Bowling Green", "Fredericksburg Region"),
+    ("Naval Support Facility Dahlgren", "Dahlgren", "Fredericksburg Region"),
+    ("Defense Supply Center Richmond", "Richmond", "Greater Richmond"),
+    ("Fort Lee", "Prince George", "Greater Richmond"),
+    ("Naval Weapons Station Yorktown", "Yorktown", "Hampton Roads"),
+    ("Fort Eustis - Joint Base Langley-Eustis", "Newport News", "Hampton Roads"),
+    ("Langley Air Force Base - Joint Base Langley-Eustis", "Hampton", "Hampton Roads"),
+    ("Naval Station Norfolk", "Norfolk", "Hampton Roads"),
+    ("Norfolk District, U.S. Army Corps of Engineers", "Norfolk", "Hampton Roads"),
+    ("Naval Support Activity Hampton Roads", "Norfolk", "Hampton Roads"),
+    ("Coast Guard Atlantic Area and Fifth Coast Guard District", "Portsmouth", "Hampton Roads"),
+    ("Norfolk Naval Shipyard", "Portsmouth", "Hampton Roads"),
+    ("Naval Medical Center Portsmouth", "Portsmouth", "Hampton Roads"),
+    ("U.S. Coast Guard Base Portsmouth", "Portsmouth", "Hampton Roads"),
+    ("Joint Expeditionary Base Little Creek-Fort Story", "Virginia Beach", "Hampton Roads"),
+    ("Naval Air Station Oceana", "Virginia Beach", "Hampton Roads"),
+    ("Dam Neck Annex", "Virginia Beach", "Hampton Roads"),
+    ("Naval Support Activity Northwest Annex", "Virginia Beach", "Hampton Roads"),
+    ("Surface Combat Systems Center Wallops Island", "Wallops Island", "Eastern Shore"),
+    ("Fort Pickett", "Blackstone", "Southside Virginia"),
+    ("Rivanna Station", "Charlottesville", "Central Virginia"),
+    ("The Judge Advocate General's Legal Center and School", "Charlottesville", "Central Virginia"),
+    ("Radford Army Ammunition Plant", "Radford", "New River Valley"),
+]
+
+CURATED_ASSETS = [
+    # Virginia Tech and New River Valley research/test assets.
+    (
+        "Mid-Atlantic Aviation Partnership",
+        "organization",
+        "Blacksburg",
+        "New River Valley",
+        "research_air",
+        "FAA-designated UAS test-site organization managed by Virginia Tech.",
+        "vedp",
+    ),
+    (
+        "Virginia Tech Drone Park",
+        "facility",
+        "Blacksburg",
+        "New River Valley",
+        "research_air",
+        "Netted flight facility supporting university UAS instruction, research, and operations.",
+        "vedp",
+    ),
+    (
+        "Kentland Experimental Aerial Systems Laboratory",
+        "facility",
+        "Blacksburg",
+        "New River Valley",
+        "research_air",
+        "Virginia Tech field laboratory for UAS flight dynamics, control, research, and instruction.",
+        "vt_keas",
+    ),
+    (
+        "Virginia Tech Advanced Control Systems Lab",
+        "facility",
+        "Blacksburg",
+        "New River Valley",
+        "research_air",
+        "Indoor research hangar for autonomous aerial and ground robot control experiments.",
+        "vt_acsl",
+    ),
+    (
+        "Center for Unmanned Aircraft Systems at Virginia Tech",
+        "organization",
+        "Blacksburg",
+        "New River Valley",
+        "research_air",
+        "University research center focused on unmanned-aircraft-system technologies and applications.",
+        "vedp",
+    ),
+    (
+        "Virginia Tech Autonomous Systems and Control Laboratory",
+        "facility",
+        "Blacksburg",
+        "New River Valley",
+        "research_air",
+        "Research laboratory for control, estimation, and autonomous-system design.",
+        "vedp",
+    ),
+    (
+        "Virginia Tech Transportation Institute",
+        "organization",
+        "Blacksburg",
+        "New River Valley",
+        "research_ground",
+        "Transportation research institute operating connected and automated vehicle research programs.",
+        "vedp",
+    ),
+    (
+        "Virginia Smart Road",
+        "operating-environment",
+        "Blacksburg",
+        "New River Valley",
+        "research_ground",
+        "Controlled transportation test facility used for connected and automated vehicle research.",
+        "vedp",
+    ),
+    (
+        "Virginia Automated Corridors",
+        "operating-environment",
+        "Fairfax",
+        "Northern Virginia",
+        "research_ground",
+        "Northern Virginia road network and test environments supporting automated-vehicle development.",
+        "vedp",
+    ),
+    (
+        "Virginia Tech Center for Marine Autonomy and Robotics",
+        "organization",
+        "Blacksburg",
+        "New River Valley",
+        "research_marine",
+        "Interdisciplinary center developing autonomous marine vehicles, navigation, control, and multi-agent systems.",
+        "vt_marine",
+    ),
+    (
+        "AutoBoat at Virginia Tech",
+        "program",
+        "Blacksburg",
+        "New River Valley",
+        "research_marine",
+        "Student engineering team designing fully autonomous robotic sailboats and electric motorboats.",
+        "vt_autoboat",
+    ),
+    (
+        "Virginia Tech Autonomy and Robotics",
+        "organization",
+        "Blacksburg",
+        "New River Valley",
+        "research_ground",
+        "University-wide network connecting autonomous-systems and robotics research groups.",
+        "vedp",
+    ),
+    # University of Virginia.
+    (
+        "UVA Link Lab",
+        "organization",
+        "Charlottesville",
+        "Central Virginia",
+        "research_ground",
+        "Cyber-physical systems research center with robotics, autonomy, sensing, and smart-systems programs.",
+        "uva_robotics",
+    ),
+    (
+        "UVA Robotics and Autonomous Systems Research",
+        "program",
+        "Charlottesville",
+        "Central Virginia",
+        "research_ground",
+        "Research program spanning autonomous vehicles, drones, multi-robot systems, and human-robot interaction.",
+        "uva_robotics",
+    ),
+    (
+        "UVA Robotics, Dynamics, and Autonomous Systems",
+        "program",
+        "Charlottesville",
+        "Central Virginia",
+        "research_ground",
+        "Mechanical and aerospace research area covering aerial, underwater, ground, and space autonomy.",
+        "uva_maye",
+    ),
+    (
+        "Cavalier Autonomous Racing",
+        "program",
+        "Charlottesville",
+        "Central Virginia",
+        "research_ground",
+        "UVA autonomous-racing research and student team developing perception, planning, and control systems.",
+        "uva_robotics",
+    ),
+    (
+        "UVA Bio-Inspired Engineering Research Laboratory",
+        "facility",
+        "Charlottesville",
+        "Central Virginia",
+        "research_marine",
+        "Research laboratory developing bio-inspired structures, controls, and aquatic robotic concepts.",
+        "uva_maye",
+    ),
+    (
+        "UVA Robotics and Embedded Systems Focus Path",
+        "program",
+        "Charlottesville",
+        "Central Virginia",
+        "workforce",
+        "Engineering education path covering embedded systems, drones, robotics, communications, and cyber-physical systems.",
+        "uva_ece",
+    ),
+    # VCU, ODU, CNU, GMU, and JMU.
+    (
+        "VCU Autonomous Robots and Vehicles Laboratory",
+        "facility",
+        "Richmond",
+        "Greater Richmond",
+        "research_ground",
+        "Research laboratory for autonomous vehicles, coordinated robotics, sensing, control, and AI.",
+        "vcu_arvl",
+    ),
+    (
+        "VCU Robotics and Autonomous Systems Group",
+        "organization",
+        "Richmond",
+        "Greater Richmond",
+        "research_ground",
+        "VCU engineering research group connecting robotics and autonomous-systems faculty and laboratories.",
+        "vcu_arvl",
+    ),
+    (
+        "VCU UAV Research Laboratory",
+        "facility",
+        "Richmond",
+        "Greater Richmond",
+        "research_air",
+        "University UAV research capability documented for flight-control and payload-system research.",
+        "vedp",
+    ),
+    (
+        "ODU Unmanned and Autonomous Vehicle Laboratory",
+        "facility",
+        "Norfolk",
+        "Hampton Roads",
+        "research_air",
+        "Old Dominion University laboratory supporting ground and flight autonomous-vehicle design.",
+        "vedp",
+    ),
+    (
+        "Virginia Modeling, Analysis and Simulation Center",
+        "organization",
+        "Suffolk",
+        "Hampton Roads",
+        "research_marine",
+        "ODU research center with virtual-environment, robotics, and unmanned-surface-vehicle work.",
+        "vedp",
+    ),
+    (
+        "Virginia Institute for Spaceflight and Autonomy",
+        "organization",
+        "Norfolk",
+        "Hampton Roads",
+        "research_air",
+        "ODU institute coordinating spaceflight, autonomous-systems research, education, and commercialization.",
+        "vedp",
+    ),
+    (
+        "CNU Autonomous Systems and Drone Lab",
+        "facility",
+        "Newport News",
+        "Hampton Roads",
+        "research_air",
+        "Christopher Newport University lab researching safe control and planning for aerial and ground vehicles.",
+        "vedp",
+    ),
+    (
+        "CNU Capable Humanitarian Robotics and Intelligent Systems Lab",
+        "facility",
+        "Newport News",
+        "Hampton Roads",
+        "research_ground",
+        "CNU lab developing verifiable autonomous robotic behaviors for human-support applications.",
+        "vedp",
+    ),
+    (
+        "George Mason Autonomous Robotics Laboratory",
+        "facility",
+        "Fairfax",
+        "Northern Virginia",
+        "research_ground",
+        "Collaborative robotics research laboratory spanning computer vision, networks, and autonomous systems.",
+        "vedp",
+    ),
+    (
+        "George Mason Center for Air Transportation Systems Research",
+        "organization",
+        "Fairfax",
+        "Northern Virginia",
+        "research_air",
+        "Research center focused on air transportation systems, operations, modeling, and analysis.",
+        "vedp",
+    ),
+    (
+        "JMU X-Labs",
+        "facility",
+        "Harrisonburg",
+        "Shenandoah Valley",
+        "research_air",
+        "Collaborative facility for interdisciplinary emerging-technology work, including drone courses and projects.",
+        "vedp",
+    ),
+    (
+        "JMU Drone Challenge",
+        "program",
+        "Harrisonburg",
+        "Shenandoah Valley",
+        "research_air",
+        "Documented interdisciplinary project applying drone technology to complex public-interest problems.",
+        "vedp",
+    ),
+    # NASA, Wallops, and statewide test infrastructure.
+    (
+        "NASA Langley Research Center",
+        "organization",
+        "Hampton",
+        "Hampton Roads",
+        "research_air",
+        "NASA research center conducting autonomy, UAS airspace integration, sensing, and flight research.",
+        "vedp",
+    ),
+    (
+        "NASA Langley CERTAIN",
+        "operating-environment",
+        "Hampton",
+        "Hampton Roads",
+        "research_air",
+        "City Environment for Range Testing of Autonomous Integrated Navigation at NASA Langley.",
+        "nasa_certain",
+    ),
+    (
+        "NASA Langley Autonomy Incubator",
+        "organization",
+        "Hampton",
+        "Hampton Roads",
+        "research_ground",
+        "Multidisciplinary NASA group researching autonomy skills and reusable autonomous-system capabilities.",
+        "vedp",
+    ),
+    (
+        "NASA Wallops Flight Facility",
+        "facility",
+        "Wallops Island",
+        "Eastern Shore",
+        "research_air",
+        "NASA flight facility supporting atmospheric, aerospace, UAS, and range operations.",
+        "vedp",
+    ),
+    (
+        "Mid-Atlantic Regional Spaceport",
+        "facility",
+        "Wallops Island",
+        "Eastern Shore",
+        "research_air",
+        "Virginia spaceport providing launch, range, integration, and advanced-aerospace infrastructure.",
+        "vedp",
+    ),
+    (
+        "MARS Unmanned Aircraft Systems Airfield",
+        "facility",
+        "Wallops Island",
+        "Eastern Shore",
+        "research_air",
+        "Purpose-built UAS airfield and VTOL test infrastructure at the Mid-Atlantic Regional Spaceport.",
+        "vedp",
+    ),
+    (
+        "Virginia International Raceway Automated Vehicle Test Environment",
+        "operating-environment",
+        "Danville",
+        "Southside Virginia",
+        "research_ground",
+        "Road-course test environment identified by VEDP as part of Virginia's automated-vehicle ecosystem.",
+        "vedp",
+    ),
+    # Workforce programs specifically documented by VEDP.
+    (
+        "Liberty University School of Aeronautics",
+        "organization",
+        "Lynchburg",
+        "Lynchburg Region",
+        "workforce",
+        "Aeronautics school offering unmanned-aircraft education, operations, and maintenance pathways.",
+        "vedp",
+    ),
+    (
+        "Liberty University Aeronautics: Unmanned Aerial Systems BS",
+        "program",
+        "Lynchburg",
+        "Lynchburg Region",
+        "workforce",
+        "Bachelor's degree pathway preparing students for UAS operations and aviation careers.",
+        "vedp",
+    ),
+    (
+        "Liberty University Aviation Maintenance: Unmanned Aerial Systems BS",
+        "program",
+        "Lynchburg",
+        "Lynchburg Region",
+        "workforce",
+        "Bachelor's degree pathway focused on maintenance of unmanned aircraft systems.",
+        "vedp",
+    ),
+    (
+        "Mountain Empire Community College UAS Program",
+        "program",
+        "Wise",
+        "Southwest Virginia",
+        "workforce",
+        "Community-college coursework and degree development in unmanned aircraft operations.",
+        "vedp",
+    ),
+    (
+        "New River Community College sUAS Remote Pilot Ground School",
+        "program",
+        "Christiansburg",
+        "New River Valley",
+        "workforce",
+        "Ground-school course supporting small-UAS remote-pilot knowledge and certification preparation.",
+        "vedp",
+    ),
+    (
+        "Piedmont Virginia Community College sUAS Public Safety Courses",
+        "program",
+        "Charlottesville",
+        "Central Virginia",
+        "workforce",
+        "Small-UAS coursework designed for emergency-services and public-safety applications.",
+        "vedp",
+    ),
+    (
+        "Germanna Community College Drone-UAV FAA Pilot Class",
+        "program",
+        "Dahlgren",
+        "Fredericksburg Region",
+        "workforce",
+        "Community-college class supporting FAA remote-pilot knowledge for drone operations.",
+        "vedp",
+    ),
+    # Virginia unmanned-systems companies and documented programs.
+    (
+        "DroneUp",
+        "organization",
+        "Virginia Beach",
+        "Hampton Roads",
+        "company_air",
+        "Virginia Beach-founded drone services, operations, software, training, and delivery company.",
+        "vedp_companies",
+    ),
+    (
+        "HUSH Aerospace",
+        "organization",
+        "Virginia Beach",
+        "Hampton Roads",
+        "company_air",
+        "Virginia company providing UAS product design, prototyping, analysis, and manufacturing.",
+        "vedp_companies",
+    ),
+    (
+        "Perrone Robotics",
+        "organization",
+        "Charlottesville",
+        "Central Virginia",
+        "company_ground",
+        "Developer of autonomous retrofit systems for transit and other vehicle platforms.",
+        "vedp_companies",
+    ),
+    (
+        "Torc Robotics",
+        "organization",
+        "Blacksburg",
+        "New River Valley",
+        "company_ground",
+        "Autonomous-trucking technology company founded in Blacksburg and part of Daimler Truck.",
+        "vedp",
+    ),
+    (
+        "Aurora Flight Sciences",
+        "organization",
+        "Manassas",
+        "Northern Virginia",
+        "company_air",
+        "Aerospace company developing advanced aircraft and autonomous flight technologies in Manassas.",
+        "vedp",
+    ),
+    (
+        "Aeroprobe",
+        "organization",
+        "Christiansburg",
+        "New River Valley",
+        "company_air",
+        "Christiansburg aerospace company providing airflow measurement and advanced flight-test instrumentation.",
+        "vedp",
+    ),
+    (
+        "Dynamic Aviation",
+        "organization",
+        "Harrisonburg",
+        "Shenandoah Valley",
+        "company_air",
+        "Virginia aviation operator and integrator with aircraft modification, mission, and fleet capabilities.",
+        "vedp",
+    ),
+    (
+        "Volvo Trucks New River Valley Plant",
+        "facility",
+        "Christiansburg",
+        "New River Valley",
+        "company_ground",
+        "Truck manufacturing facility connected to Volvo autonomous-truck development documented by VEDP.",
+        "vedp",
+    ),
+    (
+        "ATA Aviation",
+        "organization",
+        "Fairfax",
+        "Northern Virginia",
+        "company_air",
+        "Aviation systems and integration company leading work in Virginia's AAM test-site initiative.",
+        "vipc_test",
+    ),
+    (
+        "Dominion Energy UAS Program",
+        "program",
+        "Richmond",
+        "Greater Richmond",
+        "company_air",
+        "Utility UAS activity supporting infrastructure inspection and Virginia advanced-flight demonstrations.",
+        "vedp",
+    ),
+    (
+        "Wing Christiansburg Drone Delivery Program",
+        "program",
+        "Christiansburg",
+        "New River Valley",
+        "company_air",
+        "Documented commercial drone-delivery program launched in Christiansburg in 2019.",
+        "vedp",
+    ),
+    (
+        "Newport News Shipbuilding",
+        "facility",
+        "Newport News",
+        "Hampton Roads",
+        "company_marine",
+        "Major Virginia shipyard providing naval engineering, digital shipbuilding, manufacturing, and integration capacity.",
+        "vedp",
+    ),
+    (
+        "Lockheed Martin Rotary and Mission Systems - Manassas",
+        "facility",
+        "Manassas",
+        "Northern Virginia",
+        "company_marine",
+        "Virginia engineering site supporting maritime, undersea, sensing, and mission-system technologies.",
+        "vedp",
+    ),
+    # State coordination and industry organizations.
+    (
+        "Virginia Unmanned Systems Center",
+        "organization",
+        "Richmond",
+        "Greater Richmond",
+        "state",
+        "Statewide nexus for Virginia activity across land, air, sea, space, and advanced air mobility.",
+        "vipc",
+    ),
+    (
+        "Virginia Innovation Partnership Corporation",
+        "organization",
+        "Richmond",
+        "Greater Richmond",
+        "state",
+        "Commonwealth innovation organization supporting grants, partnerships, commercialization, and seed funding.",
+        "vipc",
+    ),
+    (
+        "Virginia Advanced Air Mobility Alliance",
+        "organization",
+        "Richmond",
+        "Greater Richmond",
+        "state",
+        "Statewide alliance convening advanced-air-mobility and unmanned-systems stakeholders.",
+        "vipc",
+    ),
+    (
+        "Virginia Public Safety Innovation Center",
+        "organization",
+        "Richmond",
+        "Greater Richmond",
+        "state",
+        "VIPC center connecting public-safety users with emerging technology, demonstrations, and research.",
+        "vipc",
+    ),
+    (
+        "Virginia Department of Aviation",
+        "organization",
+        "Richmond",
+        "Greater Richmond",
+        "state",
+        "Commonwealth aviation agency leading aviation planning and advanced-air-mobility initiatives.",
+        "vipc_test",
+    ),
+    (
+        "Virginia Department of Transportation UAS Program",
+        "program",
+        "Richmond",
+        "Greater Richmond",
+        "state",
+        "State transportation program governing and supporting UAS use for transportation missions.",
+        "vipc",
+    ),
+    (
+        "Virginia Flight Information Exchange",
+        "program",
+        "Blacksburg",
+        "New River Valley",
+        "state",
+        "Statewide information-sharing capability supporting safe and informed UAS operations.",
+        "vipc",
+    ),
+    (
+        "FAA BEYOND Virginia Team",
+        "program",
+        "Blacksburg",
+        "New River Valley",
+        "state",
+        "Virginia team advancing scalable beyond-visual-line-of-sight UAS operations and safety cases.",
+        "vedp",
+    ),
+    (
+        "Association for Uncrewed Vehicle Systems International",
+        "organization",
+        "Arlington",
+        "Northern Virginia",
+        "state",
+        "International unmanned-systems industry association headquartered in Arlington.",
+        "vedp",
+    ),
+    (
+        "AUVSI Hampton Roads Chapter",
+        "organization",
+        "Norfolk",
+        "Hampton Roads",
+        "state",
+        "Regional industry chapter connecting unmanned-systems stakeholders in Hampton Roads.",
+        "vedp",
+    ),
+    # Port and intermodal infrastructure.
+    (
+        "The Port of Virginia",
+        "organization",
+        "Norfolk",
+        "Hampton Roads",
+        "port",
+        "Virginia port authority and terminal network supporting maritime and intermodal logistics.",
+        "port",
+    ),
+    (
+        "Norfolk International Terminals",
+        "infrastructure",
+        "Norfolk",
+        "Hampton Roads",
+        "port",
+        "Large semi-automated container terminal with on-dock rail and interstate access.",
+        "port",
+    ),
+    (
+        "Virginia International Gateway",
+        "infrastructure",
+        "Portsmouth",
+        "Hampton Roads",
+        "port",
+        "Semi-automated container terminal with rail, highway, and deep-water access.",
+        "port",
+    ),
+    (
+        "Portsmouth Marine Terminal",
+        "infrastructure",
+        "Portsmouth",
+        "Hampton Roads",
+        "port",
+        "Marine terminal being used as an offshore-wind logistics and staging hub.",
+        "port",
+    ),
+    (
+        "Newport News Marine Terminal",
+        "infrastructure",
+        "Newport News",
+        "Hampton Roads",
+        "port",
+        "Breakbulk, roll-on/roll-off, warehouse, rail, and heavy-lift marine terminal.",
+        "port",
+    ),
+    (
+        "Richmond Marine Terminal",
+        "infrastructure",
+        "Richmond",
+        "Greater Richmond",
+        "port",
+        "James River terminal providing barge, warehouse, road, and rail logistics connections.",
+        "port",
+    ),
+    (
+        "Virginia Inland Port",
+        "infrastructure",
+        "Front Royal",
+        "Shenandoah Valley",
+        "port",
+        "Intermodal rail terminal connecting inland markets to Hampton Roads container terminals.",
+        "port",
+    ),
+    (
+        "Craney Island Marine Terminal Project",
+        "infrastructure",
+        "Portsmouth",
+        "Hampton Roads",
+        "port",
+        "Long-term port expansion and logistics infrastructure project in Hampton Roads.",
+        "port",
+    ),
+    # Enabling research, manufacturing, communications, and commercialization capacity.
+    (
+        "Commonwealth Center for Advanced Manufacturing",
+        "organization",
+        "Prince George",
+        "Greater Richmond",
+        "enabling",
+        "Applied research center for advanced manufacturing, automation, materials, and production systems.",
+        "vedp",
+    ),
+    (
+        "Institute for Advanced Learning and Research",
+        "organization",
+        "Danville",
+        "Southside Virginia",
+        "enabling",
+        "Regional applied-research and workforce organization with advanced manufacturing and automation capacity.",
+        "vedp",
+    ),
+    (
+        "National Institute of Aerospace",
+        "organization",
+        "Hampton",
+        "Hampton Roads",
+        "enabling",
+        "Research and graduate-education institute supporting aerospace engineering and NASA Langley collaborations.",
+        "vedp",
+    ),
+    (
+        "Virginia Tech Hume Center for National Security and Technology",
+        "organization",
+        "Blacksburg",
+        "New River Valley",
+        "enabling",
+        "Research center for sensing, communications, autonomy, cybersecurity, and national-security technology.",
+        "vedp",
+    ),
+    (
+        "Virginia Tech MADE",
+        "organization",
+        "Blacksburg",
+        "New River Valley",
+        "enabling",
+        "University advanced-manufacturing initiative including robotics, autonomous assembly, and field robotics.",
+        "vt_made",
+    ),
+    (
+        "Commonwealth Cyber Initiative",
+        "organization",
+        "Blacksburg",
+        "New River Valley",
+        "enabling",
+        "Statewide research network for secure communications, cyber-physical systems, and next-generation networks.",
+        "vedp",
+    ),
+    (
+        "Virginia Institute of Marine Science",
+        "organization",
+        "Williamsburg",
+        "Hampton Roads",
+        "research_marine",
+        "Marine science institute providing coastal research, field operations, sensing, and autonomous-platform context.",
+        "vedp",
+    ),
+]
+
+
+def source(key):
+    title, url = SOURCES[key]
+    return {"title": title, "url": url, "last_verified_at": VERIFIED_DATE}
+
+
+def region_for(latitude, longitude):
+    if longitude > -75.55:
+        return "Eastern Shore"
+    if latitude > 38.45 and longitude > -78.35:
+        return "Northern Virginia"
+    if longitude < -81.0:
+        return "Southwest Virginia"
+    if latitude < 37.25 and longitude < -79.55:
+        return "New River Valley"
+    if latitude < 37.35 and longitude < -77.0:
+        return "Southside Virginia"
+    if longitude < -79.3 and latitude < 38.0:
+        return "Roanoke Valley"
+    if longitude < -78.15 and latitude > 37.65:
+        return "Shenandoah Valley"
+    if longitude > -77.15 and latitude < 37.55:
+        return "Hampton Roads"
+    if -77.9 < longitude < -76.8 and 37.2 < latitude < 38.15:
+        return "Greater Richmond"
+    return "Central Virginia"
+
+
+def fetch_public_airports():
+    params = urllib.parse.urlencode(
+        {
+            "where": "STATE='VA' AND PRIVATEUSE=0 AND OPERSTATUS='OPERATIONAL' AND TYPE_CODE IN ('AD','SP')",
+            "outFields": "IDENT,NAME,SERVCITY,TYPE_CODE",
+            "returnGeometry": "true",
+            "outSR": "4326",
+            "f": "geojson",
+        }
+    )
+    request = urllib.request.Request(
+        f"{FAA_LAYER}/query?{params}", headers={"User-Agent": "cosolve-uxs-map-catalog/1.0"}
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:  # noqa: S310
+        return json.load(response)["features"]
+
+
+def airport_records():
+    records = []
+    faa_source = {
+        "title": "FAA Airports Feature Service",
+        "url": FAA_LAYER,
+        "last_verified_at": VERIFIED_DATE,
+    }
+    doav_source = {
+        "title": "Virginia Public-use Airport Directory",
+        "url": DOAV_DIRECTORY,
+        "last_verified_at": VERIFIED_DATE,
+    }
+    for feature in fetch_public_airports():
+        properties = feature["properties"]
+        longitude, latitude = feature["geometry"]["coordinates"][:2]
+        name = properties["NAME"].strip()
+        city = properties["SERVCITY"].replace("/", " / ").title()
+        identifier = properties["IDENT"]
+        records.append(
+            {
+                "name": name,
+                "record_type": "infrastructure",
+                "short_description": (
+                    f"Operational public-use Virginia aviation facility (FAA identifier {identifier})."
+                ),
+                "unmanned_systems_relevance": (
+                    "Part of Virginia's public-use aviation network, providing regional aviation, "
+                    "access, staging, workforce, and logistics context for the UAS ecosystem. Any "
+                    "UAS activity remains subject to operator, airport, and airspace authorization."
+                ),
+                "city": city,
+                "state": "VA",
+                "latitude": round(latitude, 6),
+                "longitude": round(longitude, 6),
+                "location_precision": "exact",
+                "region": region_for(latitude, longitude),
+                "strategic_categories": ["Physical infrastructure and logistics"],
+                "platform_domains": ["Unmanned aircraft systems"],
+                "capabilities": ["Operations, maintenance, and sustainment"],
+                "missions": [],
+                "website_url": DOAV_DIRECTORY,
+                "sources": [faa_source, doav_source],
+                "provenance": "faa-public-airport",
+            }
+        )
+    return records
+
+
+def defense_records():
+    records = []
+    factbook_source = {
+        "title": "Virginia Military Factbook",
+        "url": FACTBOOK,
+        "last_verified_at": VERIFIED_DATE,
+    }
+    for name, place, region in DEFENSE_INSTALLATIONS:
+        latitude, longitude = PLACES[place]
+        records.append(
+            {
+                "name": name,
+                "record_type": "organization",
+                "short_description": "Publicly documented Virginia military or federal installation.",
+                "unmanned_systems_relevance": (
+                    "Represents publicly documented defense customer, mission-owner, research, "
+                    "training, logistics, or acquisition access within Virginia. The map uses a "
+                    "generalized public location and intentionally omits operational detail."
+                ),
+                "city": place,
+                "state": "VA",
+                "latitude": latitude,
+                "longitude": longitude,
+                "location_precision": "locality",
+                "region": region,
+                "strategic_categories": ["Federal and defense customer access"],
+                "platform_domains": ["Cross-domain autonomy"],
+                "capabilities": ["Systems engineering and integration"],
+                "missions": ["Force protection and installation security"],
+                "website_url": FACTBOOK,
+                "sources": [factbook_source],
+                "provenance": "virginia-military-factbook",
+            }
+        )
+    return records
+
+
+def curated_records():
+    records = []
+    for name, record_type, place, region, profile_key, description, source_key in CURATED_ASSETS:
+        latitude, longitude = PLACES[place]
+        profile = PROFILES[profile_key]
+        record_source = source(source_key)
+        records.append(
+            {
+                "name": name,
+                "record_type": record_type,
+                "short_description": description,
+                "unmanned_systems_relevance": profile["relevance"],
+                "city": place,
+                "state": "VA",
+                "latitude": latitude,
+                "longitude": longitude,
+                "location_precision": "locality",
+                "region": region,
+                "strategic_categories": profile["categories"],
+                "platform_domains": profile["domains"],
+                "capabilities": profile["capabilities"],
+                "missions": profile["missions"],
+                "website_url": record_source["url"],
+                "sources": [record_source],
+                "provenance": "curated-public-source",
+            }
+        )
+    return records
+
+
+def validate(records):
+    names = set()
+    for record in records:
+        if record["name"] in names:
+            raise ValueError(f"Duplicate asset name: {record['name']}")
+        names.add(record["name"])
+        if not record["sources"] or not all(item.get("url") for item in record["sources"]):
+            raise ValueError(f"Missing source URL: {record['name']}")
+        if not (-90 <= record["latitude"] <= 90 and -180 <= record["longitude"] <= 180):
+            raise ValueError(f"Invalid coordinates: {record['name']}")
+        if len(record["short_description"]) > 320:
+            raise ValueError(f"Description too long: {record['name']}")
+
+
+def main():
+    records = airport_records() + defense_records() + curated_records()
+    records.sort(key=lambda item: item["name"].casefold())
+    validate(records)
+    payload = {
+        "generated_at": VERIFIED_DATE,
+        "record_count": len(records),
+        "methodology": (
+            "Current operational public-use aviation facilities from the FAA feature service, "
+            "publicly listed installations from the Virginia Military Factbook, and a curated "
+            "set of source-backed ecosystem records."
+        ),
+        "records": records,
+    }
+    OUTPUT.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")
+    print(f"Wrote {len(records)} real Virginia assets to {OUTPUT}")
+
+
+if __name__ == "__main__":
+    main()
