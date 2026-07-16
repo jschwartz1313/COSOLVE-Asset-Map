@@ -9,11 +9,10 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .skip-link:focus { top: 10px; }
 
 .site-header { height: var(--header-height); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; background: var(--paper); border-bottom: 1px solid var(--line); position: relative; z-index: 1001; }
-.brand { display: flex; align-items: center; gap: 11px; text-decoration: none; min-width: 0; }
-.brand-mark { width: 36px; height: 36px; display: grid; place-items: center; color: white; background: var(--brand); font-weight: 900; font-size: 21px; }
-.brand strong, .brand small { display: block; letter-spacing: 0; }
-.brand strong { font-size: 15px; line-height: 1.05; }
-.brand small { margin-top: 4px; color: var(--ink-muted); font-size: 11px; }
+.brand { display: flex; align-items: center; gap: 13px; min-width: 0; text-decoration: none; }
+.brand-logo { position: relative; flex: 0 0 120px; width: 120px; height: 42px; overflow: hidden; }
+.brand-logo img { position: absolute; left: 50%; top: 50%; width: 200px; max-width: none; height: auto; transform: translate(-50%, -50%); }
+.brand small { display: block; color: var(--ink-muted); font-size: 11px; letter-spacing: 0; }
 .primary-nav { display: flex; align-items: stretch; height: 100%; gap: 26px; }
 .primary-nav a { display: grid; place-items: center; position: relative; color: var(--ink-muted); text-decoration: none; font-size: 14px; font-weight: 700; }
 .primary-nav a[aria-current="page"] { color: var(--ink); }
@@ -103,6 +102,8 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
   :root { --header-height: 60px; }
   .site-header { padding: 0 14px; }
   .brand small { display: none; }
+  .brand-logo { flex-basis: 104px; width: 104px; height: 38px; }
+  .brand-logo img { width: 178px; }
   .primary-nav { gap: 16px; }
   .directory-layout { display: block; }
   .directory-filters { border-right: 0; border-bottom: 1px solid var(--line); padding: 24px 18px; }
@@ -116,4 +117,3 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
   .detail-grid { grid-template-columns: 1fr; gap: 24px; }
   .detail-sidebar { order: -1; }
 }
-

@@ -15,8 +15,10 @@
   <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="{% url 'core:map' %}" aria-label="COSOLVE asset map home">
-      <span class="brand-mark" aria-hidden="true">C</span>
-      <span><strong>COSOLVE</strong><small>Unmanned Systems Asset Map</small></span>
+      <span class="brand-logo" aria-hidden="true">
+        <img src="{% static 'img/cosolve-logo-black.png' %}" alt="">
+      </span>
+      <small>Unmanned Systems Asset Map</small>
     </a>
     <nav class="primary-nav" aria-label="Primary navigation">
       <a href="{% url 'core:map' %}" {% if request.resolver_match.url_name == 'map' or request.resolver_match.url_name == 'home' %}aria-current="page"{% endif %}>Map</a>
@@ -32,4 +34,3 @@
   {% block content %}{% endblock %}
 </body>
 </html>
-
