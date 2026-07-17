@@ -201,6 +201,30 @@ SOURCES = {
     "heven": ("Heven AeroTech", "https://hevenaerotech.com/"),
     "agricision": ("Agricision", "https://www.agricisioninc.com/"),
     "blue_ridge_defense": ("Blue Ridge Defense Works", "https://blueridgedefense.com/"),
+    "zenith": (
+        "Zenith Aerotech",
+        "https://zenithaerotech.com/about-us-tethered-drone/",
+    ),
+    "odu_uas": (
+        "Old Dominion University UAS/Drone Operation",
+        "https://www.odu.edu/risk-management/advisories/uas-drones",
+    ),
+    "vsu_uas": (
+        "Virginia State University Use of Unmanned Aerial Systems Policy",
+        "https://www.vsu.edu/files/docs/policies/8000/use-unmanned-aerial-systems-drones.pdf",
+    ),
+    "prince_edward_uas": (
+        "Prince Edward County Drone Program",
+        "https://www.co.prince-edward.va.us/News-Article/Pyle-Named-County-Emergency-Management-Coordinator",
+    ),
+    "accomack_uas": (
+        "Accomack County Emergency Management Drone Program",
+        "https://www.co.accomack.va.us/Home/Components/News/News/381/18",
+    ),
+    "campbell_uas": (
+        "Campbell County Sheriff's Office 2024 Annual Report",
+        "https://www.co.campbell.va.us/DocumentCenter/View/15215/2024-CCSO-Annual-Report",
+    ),
 }
 
 PROFILES = {
@@ -412,7 +436,9 @@ PROFILES = {
 }
 
 PLACES = {
+    "Accomac": (37.720, -75.665),
     "Abingdon": (36.710, -81.975),
+    "Afton": (38.029, -78.835),
     "Arlington": (38.881, -77.091),
     "Blackstone": (37.080, -77.997),
     "Blacksburg": (37.229, -80.414),
@@ -426,6 +452,7 @@ PLACES = {
     "Dahlgren": (38.333, -77.031),
     "Dulles": (38.955, -77.448),
     "Eastville": (37.352, -75.946),
+    "Farmville": (37.302, -78.391),
     "Fairfax": (38.846, -77.307),
     "Fredericksburg": (38.303, -77.461),
     "Front Royal": (38.918, -78.194),
@@ -442,12 +469,14 @@ PLACES = {
     "Newport News": (37.087, -76.473),
     "Norfolk": (36.851, -76.286),
     "Portsmouth": (36.836, -76.298),
+    "Petersburg": (37.227, -77.402),
     "Prince George": (37.221, -77.289),
     "Quantico": (38.522, -77.290),
     "Radford": (37.132, -80.576),
     "Reston": (38.959, -77.357),
     "Richmond": (37.541, -77.436),
     "Roanoke": (37.271, -79.941),
+    "Rustburg": (37.276, -79.100),
     "Springfield": (38.789, -77.187),
     "Sterling": (39.006, -77.428),
     "Sedley": (36.790, -76.590),
@@ -1601,6 +1630,60 @@ CURATED_ASSETS = [
         "company_counter_uas",
         "Virginia counter-UAS company developing interceptor systems for defense applications.",
         "blue_ridge_defense",
+    ),
+    (
+        "Zenith Aerotech",
+        "organization",
+        "Afton",
+        "Central Virginia",
+        "company_air",
+        "Virginia manufacturer of tethered unmanned aircraft systems for public-safety, defense, and industrial applications.",
+        "zenith",
+    ),
+    (
+        "Old Dominion University UAS Operations Program",
+        "program",
+        "Norfolk",
+        "Hampton Roads",
+        "institutional_uas",
+        "University operator-permit and flight-request program for UAS activity on university property.",
+        "odu_uas",
+    ),
+    (
+        "Virginia State University UAS Operations Program",
+        "program",
+        "Petersburg",
+        "Greater Richmond",
+        "institutional_uas",
+        "University UAS oversight process for approved research, university-program, and campus flight activity.",
+        "vsu_uas",
+    ),
+    (
+        "Prince Edward County Emergency Management Drone Program",
+        "program",
+        "Farmville",
+        "Central Virginia",
+        "public_safety",
+        "County emergency-management drone program maintained for documented public-safety operations.",
+        "prince_edward_uas",
+    ),
+    (
+        "Accomack County Emergency Management Drone Program",
+        "program",
+        "Accomac",
+        "Eastern Shore",
+        "public_safety",
+        "County emergency-management drone program publicly presented through the Department of Public Safety.",
+        "accomack_uas",
+    ),
+    (
+        "Campbell County Sheriff's Office Drone Program",
+        "program",
+        "Rustburg",
+        "Lynchburg Region",
+        "public_safety",
+        "Sheriff's Office drone program documented in the county's 2024 annual report.",
+        "campbell_uas",
     ),
 ]
 

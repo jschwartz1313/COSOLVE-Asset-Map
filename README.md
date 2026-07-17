@@ -15,7 +15,7 @@ The checked-in catalog contains source-backed, publicly documented Virginia reco
 - Synchronized Leaflet map and result directory with URL-backed state
 - Accessible non-map directory and public asset profiles
 - CSV validation preview, draft import, and filtered export
-- 216 source-backed Virginia records spanning public-use airports, research, workforce, companies, infrastructure, programs, and generalized defense assets
+- 222 source-backed Virginia records spanning public-use airports, research, workforce, companies, infrastructure, programs, and generalized defense assets
 - Backend, frontend state, security-boundary, and import tests
 
 ## Local setup

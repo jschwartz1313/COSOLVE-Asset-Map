@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-07-17",
   "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, and a curated set of source-backed ecosystem records.",
-  "record_count": 216,
+  "record_count": 222,
   "records": [
     {
       "capabilities": [
@@ -38,6 +38,43 @@
       ],
       "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Accomac",
+      "latitude": 37.72,
+      "location_precision": "locality",
+      "longitude": -75.665,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Accomack County Emergency Management Drone Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Eastern Shore",
+      "short_description": "County emergency-management drone program publicly presented through the Department of Public Safety.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-17",
+          "title": "Accomack County Emergency Management Drone Program",
+          "url": "https://www.co.accomack.va.us/Home/Components/News/News/381/18"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.co.accomack.va.us/Home/Components/News/News/381/18"
     },
     {
       "capabilities": [
@@ -712,6 +749,43 @@
       ],
       "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Rustburg",
+      "latitude": 37.276,
+      "location_precision": "locality",
+      "longitude": -79.1,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Campbell County Sheriff's Office Drone Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Lynchburg Region",
+      "short_description": "Sheriff's Office drone program documented in the county's 2024 annual report.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-17",
+          "title": "Campbell County Sheriff's Office 2024 Annual Report",
+          "url": "https://www.co.campbell.va.us/DocumentCenter/View/15215/2024-CCSO-Annual-Report"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.co.campbell.va.us/DocumentCenter/View/15215/2024-CCSO-Annual-Report"
     },
     {
       "capabilities": [
@@ -4556,6 +4630,41 @@
     },
     {
       "capabilities": [
+        "Safety, policy, regulatory, and airspace integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Norfolk",
+      "latitude": 36.851,
+      "location_precision": "locality",
+      "longitude": -76.286,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Old Dominion University UAS Operations Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Hampton Roads",
+      "short_description": "University operator-permit and flight-request program for UAS activity on university property.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-17",
+          "title": "Old Dominion University UAS/Drone Operation",
+          "url": "https://www.odu.edu/risk-management/advisories/uas-drones"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Programs and initiatives"
+      ],
+      "unmanned_systems_relevance": "Operates a documented institutional UAS program supporting research, instruction, and compliant flight operations.",
+      "website_url": "https://www.odu.edu/risk-management/advisories/uas-drones"
+    },
+    {
+      "capabilities": [
         "Operations, maintenance, and sustainment"
       ],
       "city": "Orange",
@@ -4694,6 +4803,43 @@
       ],
       "unmanned_systems_relevance": "Provides port, intermodal, staging, or semi-automated logistics infrastructure relevant to maritime autonomy, inspection, and deployment.",
       "website_url": "https://www.portofvirginia.com/gateway/capabilities/"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Farmville",
+      "latitude": 37.302,
+      "location_precision": "locality",
+      "longitude": -78.391,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Prince Edward County Emergency Management Drone Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Central Virginia",
+      "short_description": "County emergency-management drone program maintained for documented public-safety operations.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-17",
+          "title": "Prince Edward County Drone Program",
+          "url": "https://www.co.prince-edward.va.us/News-Article/Pyle-Named-County-Emergency-Management-Coordinator"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.co.prince-edward.va.us/News-Article/Pyle-Named-County-Emergency-Management-Coordinator"
     },
     {
       "capabilities": [
@@ -6792,6 +6938,41 @@
     },
     {
       "capabilities": [
+        "Safety, policy, regulatory, and airspace integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Petersburg",
+      "latitude": 37.227,
+      "location_precision": "locality",
+      "longitude": -77.402,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Virginia State University UAS Operations Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Greater Richmond",
+      "short_description": "University UAS oversight process for approved research, university-program, and campus flight activity.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-17",
+          "title": "Virginia State University Use of Unmanned Aerial Systems Policy",
+          "url": "https://www.vsu.edu/files/docs/policies/8000/use-unmanned-aerial-systems-drones.pdf"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Programs and initiatives"
+      ],
+      "unmanned_systems_relevance": "Operates a documented institutional UAS program supporting research, instruction, and compliant flight operations.",
+      "website_url": "https://www.vsu.edu/files/docs/policies/8000/use-unmanned-aerial-systems-drones.pdf"
+    },
+    {
+      "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
       ],
@@ -7649,6 +7830,41 @@
       ],
       "unmanned_systems_relevance": "Provides a publicly documented environment for unmanned-system testing, training, demonstration, validation, or operational integration.",
       "website_url": "https://xelevateus.com/leesburg-virginia/"
+    },
+    {
+      "capabilities": [
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Afton",
+      "latitude": 38.029,
+      "location_precision": "locality",
+      "longitude": -78.835,
+      "missions": [
+        "Infrastructure inspection",
+        "Logistics and contested logistics"
+      ],
+      "name": "Zenith Aerotech",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Central Virginia",
+      "short_description": "Virginia manufacturer of tethered unmanned aircraft systems for public-safety, defense, and industrial applications.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-17",
+          "title": "Zenith Aerotech",
+          "url": "https://zenithaerotech.com/about-us-tethered-drone/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers"
+      ],
+      "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
+      "website_url": "https://zenithaerotech.com/about-us-tethered-drone/"
     }
   ]
 }
