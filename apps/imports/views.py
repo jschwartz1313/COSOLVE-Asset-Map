@@ -1,11 +1,15 @@
 import csv
+from datetime import timedelta
 
+from django.conf import settings
 from django.contrib import messages
 from django.contrib.admin.views.decorators import staff_member_required
 from django.contrib.auth.decorators import permission_required
 from django.db import transaction
+from django.db.models import Count, Q
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
+from django.utils import timezone
 from django.views.decorators.http import require_http_methods, require_POST
 
 from apps.api.query import filter_public_assets
@@ -117,3 +121,43 @@ def export_assets(request):
             ]
         )
     return response
+
+
+@staff_member_required
+@permission_required("assets.view_asset", raise_exception=True)
+def data_quality(request):
+    active_assets = Asset.objects.exclude(status=Asset.Status.ARCHIVED)
+    stale_cutoff = timezone.localdate() - timedelta(days=settings.STALE_VERIFICATION_DAYS)
+    stale = active_assets.filter(
+        Q(last_verified_at__lt=stale_cutoff) | Q(last_verified_at__isnull=True)
+    ).order_by("last_verified_at", "name")
+    missing_sources = (
+        active_assets.annotate(
+            public_source_count=Count(
+                "sources", filter=Q(sources__is_public=True), distinct=True
+            )
+        )
+        .filter(public_source_count=0)
+        .order_by("name")
+    )
+    missing_coordinates = active_assets.filter(
+        Q(latitude__isnull=True) | Q(longitude__isnull=True)
+    ).order_by("name")
+    needs_review = active_assets.filter(
+        status__in=[Asset.Status.DRAFT, Asset.Status.NEEDS_REVIEW]
+    ).order_by("status", "name")
+    return render(
+        request,
+        "imports/data_quality.html",
+        {
+            "stale_cutoff": stale_cutoff,
+            "stale": stale[:100],
+            "stale_count": stale.count(),
+            "missing_sources": missing_sources[:100],
+            "missing_sources_count": missing_sources.count(),
+            "missing_coordinates": missing_coordinates[:100],
+            "missing_coordinates_count": missing_coordinates.count(),
+            "needs_review": needs_review[:100],
+            "needs_review_count": needs_review.count(),
+        },
+    )

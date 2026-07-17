@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/jschwartz1313/COSOLVE-Asset-Map/actions/workflows/ci.yml/badge.svg)](https://github.com/jschwartz1313/COSOLVE-Asset-Map/actions/workflows/ci.yml)
 
-A standalone Django and Leaflet application for maintaining and exploring publicly releasable unmanned-systems ecosystem assets. This repository implements Phases 0 through 2 of the controlling technical specification.
+A standalone Django and Leaflet application for maintaining, comparing, and exploring publicly releasable unmanned-systems ecosystem assets. The repository implements the database-backed MVP plus selected Phase 3 and Phase 4 capabilities from the controlling technical specification.
 
 The checked-in catalog contains source-backed, publicly documented Virginia records. Military and federal locations are deliberately generalized and exclude operational detail. A separate demo-seed command remains available only for test and interface development.
 
@@ -15,6 +15,9 @@ The checked-in catalog contains source-backed, publicly documented Virginia reco
 - Synchronized Leaflet map and result directory with URL-backed state
 - Accessible non-map directory and public asset profiles
 - CSV validation preview, draft import, and filtered export
+- Regional comparison, public data methodology, and source-verification views
+- Source-backed relationships connecting organizations, facilities, and programs
+- Staff data-quality dashboard for stale, unsourced, unlocated, and unreviewed records
 - 222 source-backed Virginia records spanning public-use airports, research, workforce, companies, infrastructure, programs, and generalized defense assets
 - Backend, frontend state, security-boundary, and import tests
 
@@ -34,7 +37,7 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-Open `http://127.0.0.1:8000/`. Staff administration is at `http://127.0.0.1:8000/admin/` and CSV import is at `http://127.0.0.1:8000/admin/imports/preview/`.
+Open `http://127.0.0.1:8000/`. Staff administration is at `http://127.0.0.1:8000/admin/`, CSV import is at `http://127.0.0.1:8000/admin/imports/preview/`, and the staff data-quality dashboard is at `http://127.0.0.1:8000/admin/imports/data-quality/`.
 
 SQLite is the no-setup local default. Set `DATABASE_URL` to a PostgreSQL URL to use PostgreSQL. The current MVP stores WGS84 latitude and longitude in portable decimal columns; Phase 4 introduces PostGIS geometry and spatial indexes.
 

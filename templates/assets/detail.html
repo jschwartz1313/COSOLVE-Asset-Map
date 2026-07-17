@@ -17,6 +17,7 @@
       {% if asset.capabilities.exists %}<section><h2>Capabilities</h2><div class="tag-list large">{% for item in asset.capabilities.all %}<span>{{ item.name }}</span>{% endfor %}</div></section>{% endif %}
       {% if asset.missions.exists %}<section><h2>Mission areas</h2><div class="tag-list large">{% for item in asset.missions.all %}<span>{{ item.name }}</span>{% endfor %}</div></section>{% endif %}
       {% if relationships %}<section><h2>Related assets</h2><div class="relationship-list">{% for relationship in relationships %}<a href="{{ relationship.to_asset.get_absolute_url }}"><span>{{ relationship.get_relationship_type_display }}</span><strong>{{ relationship.to_asset.name }}</strong></a>{% endfor %}</div></section>{% endif %}
+      {% if incoming_relationships %}<section><h2>Connected organizations and programs</h2><div class="relationship-list">{% for relationship in incoming_relationships %}<a href="{{ relationship.from_asset.get_absolute_url }}"><span>{{ relationship.get_relationship_type_display }}</span><strong>{{ relationship.from_asset.name }}</strong></a>{% endfor %}</div></section>{% endif %}
       <section><h2>Sources</h2><div class="source-list">{% for source in asset.sources.all %}{% if source.is_public %}<div><strong>{% if source.url %}<a href="{{ source.url }}" rel="noopener noreferrer">{{ source.title }}</a>{% else %}{{ source.title }}{% endif %}</strong><span>{% if source.source_date %}Published {{ source.source_date|date:"M j, Y" }}{% endif %}{% if source.last_verified_at %} · Checked {{ source.last_verified_at|date:"M j, Y" }}{% endif %}</span></div>{% endif %}{% empty %}<p>No public sources are listed.</p>{% endfor %}</div></section>
     </article>
     <aside class="detail-sidebar">
@@ -27,4 +28,3 @@
   <footer class="public-disclaimer">Informational ecosystem data only. Records may be incomplete and are not authoritative for operational use.</footer>
 </main>
 {% endblock %}
-

@@ -1,14 +1,19 @@
 const FACETS = ["q", "record_type", "region", "category", "domain", "capability", "mission"];
 
-export function paramsFromForm(form) {
+export function paramsFromEntries(entries) {
   const params = new URLSearchParams();
-  const formData = new FormData(form);
+  const values = [...entries];
   for (const facet of FACETS) {
-    for (const value of formData.getAll(facet)) {
+    for (const [name, value] of values) {
+      if (name !== facet) continue;
       if (String(value).trim()) params.append(facet, String(value).trim());
     }
   }
   return params;
+}
+
+export function paramsFromForm(form) {
+  return paramsFromEntries(new FormData(form).entries());
 }
 
 export function hydrateForm(form, params = new URLSearchParams(window.location.search)) {
@@ -24,4 +29,3 @@ export function updateUrl(params, { replace = false } = {}) {
   const url = params.toString() ? `${window.location.pathname}?${params}` : window.location.pathname;
   window.history[replace ? "replaceState" : "pushState"]({}, "", url);
 }
-

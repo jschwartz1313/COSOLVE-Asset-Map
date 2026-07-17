@@ -1,4 +1,4 @@
-import { buildPopup } from "./popups.js";
+import { buildPopup } from "./popups.js?v=20260717";
 
 const COLORS = {
   organization: "#2f6f9f",
@@ -9,9 +9,11 @@ const COLORS = {
 };
 
 export function createMap(root) {
+  const defaultView = [Number(root.dataset.lat), Number(root.dataset.lon)];
+  const defaultZoom = Number(root.dataset.zoom);
   const map = window.L.map("map", { zoomControl: false }).setView(
-    [Number(root.dataset.lat), Number(root.dataset.lon)],
-    Number(root.dataset.zoom),
+    defaultView,
+    defaultZoom,
   );
   window.L.control.zoom({ position: "bottomright" }).addTo(map);
   window.L.tileLayer(root.dataset.tileUrl, {
@@ -56,6 +58,9 @@ export function createMap(root) {
     else marker.openPopup();
   }
 
-  return { map, draw, select };
-}
+  function reset() {
+    map.setView(defaultView, defaultZoom);
+  }
 
+  return { map, draw, reset, select };
+}

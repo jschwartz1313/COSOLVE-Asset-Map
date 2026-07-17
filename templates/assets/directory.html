@@ -16,7 +16,10 @@
   <section class="directory-results">
     <div class="directory-heading">
       <div><span class="eyebrow">Virginia ecosystem</span><h2>{{ result_count }} matching asset{{ result_count|pluralize }}</h2></div>
-      <a class="button secondary" href="{% url 'core:map' %}?{{ request.GET.urlencode }}">View on map</a>
+      <div class="heading-actions">
+        {% if user.is_staff %}<a class="button secondary" href="{% url 'imports:export' %}?{{ request.GET.urlencode }}">Export CSV</a>{% endif %}
+        <a class="button secondary" href="{% url 'core:map' %}?{{ request.GET.urlencode }}">View on map</a>
+      </div>
     </div>
     <div class="directory-grid">
       {% for asset in page_obj %}

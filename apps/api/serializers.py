@@ -2,6 +2,34 @@ def names(items):
     return [{"name": item.name, "slug": item.slug} for item in items.all()]
 
 
+def public_relationships(asset):
+    related = [
+        {
+            "name": relationship.to_asset.name,
+            "relationship": relationship.get_relationship_type_display(),
+            "direction": "outgoing",
+            "url": relationship.to_asset.get_absolute_url(),
+        }
+        for relationship in asset.outgoing_relationships.select_related("to_asset")
+        if relationship.is_public
+        and relationship.to_asset.status == asset.Status.PUBLISHED
+        and relationship.to_asset.visibility == asset.Visibility.PUBLIC
+    ]
+    related.extend(
+        {
+            "name": relationship.from_asset.name,
+            "relationship": relationship.get_relationship_type_display(),
+            "direction": "incoming",
+            "url": relationship.from_asset.get_absolute_url(),
+        }
+        for relationship in asset.incoming_relationships.select_related("from_asset")
+        if relationship.is_public
+        and relationship.from_asset.status == asset.Status.PUBLISHED
+        and relationship.from_asset.visibility == asset.Visibility.PUBLIC
+    )
+    return related
+
+
 def public_asset_dict(asset, include_detail=True):
     data = {
         "id": str(asset.pk),
@@ -43,17 +71,7 @@ def public_asset_dict(asset, include_detail=True):
                     for source in asset.sources.all()
                     if source.is_public
                 ],
-                "related_entities": [
-                    {
-                        "name": relationship.to_asset.name,
-                        "relationship": relationship.get_relationship_type_display(),
-                        "url": relationship.to_asset.get_absolute_url(),
-                    }
-                    for relationship in asset.outgoing_relationships.select_related("to_asset")
-                    if relationship.is_public
-                    and relationship.to_asset.status == asset.Status.PUBLISHED
-                    and relationship.to_asset.visibility == asset.Visibility.PUBLIC
-                ],
+                "related_entities": public_relationships(asset),
             }
         )
     return data

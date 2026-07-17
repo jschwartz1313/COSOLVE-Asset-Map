@@ -74,7 +74,9 @@ def filter_values(request):
 @require_GET
 def region_summary(request, slug):
     region = get_object_or_404(Region, slug=slug, is_active=True)
-    queryset = Asset.public.filter(region=region)
+    params = request.GET.copy()
+    params.pop("region", None)
+    queryset = filter_public_assets(params).filter(region=region)
     by_type = {
         value: queryset.filter(record_type=value).count()
         for value, _label in Asset.RecordType.choices
@@ -89,5 +91,6 @@ def region_summary(request, slug):
             "total": queryset.count(),
             "by_type": by_type,
             "by_category": by_category,
+            "active_filters": active_filters(params),
         }
     )

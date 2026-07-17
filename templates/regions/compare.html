@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Regional comparison | COSOLVE{% endblock %}
+{% block content %}
+<main id="main-content" class="compare-page">
+  <header class="page-heading">
+    <span class="eyebrow">Virginia ecosystem</span>
+    <h1>Regional comparison</h1>
+    <p>Compare the documented asset mix, technical domains, and strategic strengths of two Virginia regions.</p>
+  </header>
+  <form class="compare-controls" method="get">
+    <label><span>First region</span><select name="region_a">{% for region in regions %}<option value="{{ region.slug }}" {% if region == first.region %}selected{% endif %}>{{ region.name }}</option>{% endfor %}</select></label>
+    <label><span>Second region</span><select name="region_b">{% for region in regions %}<option value="{{ region.slug }}" {% if region == second.region %}selected{% endif %}>{{ region.name }}</option>{% endfor %}</select></label>
+    <button class="button primary" type="submit">Compare regions</button>
+  </form>
+  <div class="comparison-grid">
+    {% for item in comparisons %}
+      <section class="region-column">
+        <div class="region-total"><span>{{ item.region.name }}</span><strong>{{ item.total }}</strong><small>published assets</small></div>
+        <div class="metrics-section"><h2>Asset mix</h2>{% for metric in item.record_types %}<div class="metric-row"><span>{{ metric.name }}</span><strong>{{ metric.count }}</strong></div>{% endfor %}</div>
+        <div class="metrics-section"><h2>Leading strategic categories</h2>{% for category in item.categories %}<div class="metric-row"><span>{{ category.name }}</span><strong>{{ category.asset_count }}</strong></div>{% empty %}<p>No category data.</p>{% endfor %}</div>
+        <div class="metrics-section"><h2>Platform domains</h2>{% for domain in item.domains %}<div class="metric-row"><span>{{ domain.name }}</span><strong>{{ domain.asset_count }}</strong></div>{% empty %}<p>No domain data.</p>{% endfor %}</div>
+        <a class="button secondary full" href="{% url 'core:map' %}?region={{ item.region.slug }}">Explore on map</a>
+      </section>
+    {% endfor %}
+  </div>
+</main>
+{% endblock %}

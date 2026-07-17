@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}About the data | COSOLVE{% endblock %}
+{% block content %}
+<main id="main-content" class="about-page">
+  <header class="page-heading">
+    <span class="eyebrow">Evidence and methodology</span>
+    <h1>About the data</h1>
+    <p>This map is a curated, public-source view of Virginia's unmanned-systems ecosystem. It is designed for ecosystem navigation and planning, not operational use.</p>
+  </header>
+  <section class="data-stats" aria-label="Catalog summary">
+    <div><strong>{{ asset_count }}</strong><span>published assets</span></div>
+    <div><strong>{{ source_count }}</strong><span>distinct public sources</span></div>
+    <div><strong>{{ region_count }}</strong><span>Virginia regions</span></div>
+  </section>
+  <div class="about-grid">
+    <article>
+      <section><h2>What is included</h2><p>Records cover companies, research groups, facilities, infrastructure, workforce programs, public initiatives, operating environments, and generalized defense assets with documented relevance to unmanned or autonomous systems.</p></section>
+      <section><h2>Evidence standard</h2><p>Every published record requires a public source and an explanation of its unmanned-systems relevance. Sources are reviewed before publication and profiles identify when their evidence was last checked.</p></section>
+      <section><h2>Location precision</h2><p>Airport reference points may use published coordinates. Most organizations, programs, and security-sensitive assets use generalized campus or locality coordinates. A map point does not represent permission to operate an unmanned system.</p></section>
+    </article>
+    <aside class="methodology-panel">
+      <h2>Current snapshot</h2>
+      <dl><dt>Verification range</dt><dd>{{ verification.earliest|date:"M j, Y" }} to {{ verification.latest|date:"M j, Y" }}</dd><dt>Geographic focus</dt><dd>Commonwealth of Virginia</dd><dt>Publication boundary</dt><dd>Publicly releasable information only</dd></dl>
+      <a class="button primary full" href="{% url 'core:directory' %}">Browse the directory</a>
+    </aside>
+  </div>
+  <footer class="public-disclaimer">Records may be incomplete or change over time. Do not use this map for navigation, airspace authorization, security planning, or operational decision-making.</footer>
+</main>
+{% endblock %}

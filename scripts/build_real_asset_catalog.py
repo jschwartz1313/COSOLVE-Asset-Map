@@ -1687,6 +1687,107 @@ CURATED_ASSETS = [
     ),
 ]
 
+CATALOG_RELATIONSHIPS = [
+    ("Mid-Atlantic Aviation Partnership", "operates", "Virginia Tech Drone Park"),
+    ("Mid-Atlantic Aviation Partnership", "operates", "MARS Unmanned Aircraft Systems Airfield"),
+    ("Mid-Atlantic Aviation Partnership", "supports", "FAA BEYOND Virginia Team"),
+    (
+        "Mid-Atlantic Aviation Partnership",
+        "supports",
+        "Virginia Tech Counter UAS Research and Testing Center",
+    ),
+    ("Virginia Tech Autonomy and Robotics", "supports", "Virginia Tech Drone Park"),
+    (
+        "Virginia Tech Autonomy and Robotics",
+        "supports",
+        "Virginia Tech Center for Marine Autonomy and Robotics",
+    ),
+    (
+        "Virginia Tech Autonomy and Robotics",
+        "supports",
+        "Virginia Tech Uncrewed Systems Laboratory",
+    ),
+    (
+        "Virginia Tech Center for Marine Autonomy and Robotics",
+        "supports",
+        "AutoBoat at Virginia Tech",
+    ),
+    (
+        "Virginia Innovation Partnership Corporation",
+        "supports",
+        "Virginia Unmanned Systems Center",
+    ),
+    (
+        "Virginia Innovation Partnership Corporation",
+        "supports",
+        "Virginia Public Safety Innovation Center",
+    ),
+    (
+        "Virginia Unmanned Systems Center",
+        "supports",
+        "Virginia Advanced Air Mobility Program",
+    ),
+    (
+        "Virginia Unmanned Systems Center",
+        "supports",
+        "Virginia Advanced Air Mobility Alliance",
+    ),
+    (
+        "Virginia Department of Aviation",
+        "supports",
+        "Virginia Advanced Air Mobility Program",
+    ),
+    ("The Port of Virginia", "operates", "Norfolk International Terminals"),
+    ("The Port of Virginia", "operates", "Virginia International Gateway"),
+    ("The Port of Virginia", "operates", "Portsmouth Marine Terminal"),
+    ("The Port of Virginia", "operates", "Newport News Marine Terminal"),
+    ("The Port of Virginia", "operates", "Richmond Marine Terminal"),
+    ("The Port of Virginia", "operates", "Virginia Inland Port"),
+    ("The Port of Virginia", "operates", "Craney Island Marine Terminal Project"),
+    (
+        "Virginia Space Grant Consortium Drone Academies",
+        "partners-with",
+        "Virginia Peninsula Community College Drone Flight Technician Certificate",
+    ),
+    (
+        "Virginia Space Grant Consortium Drone Academies",
+        "partners-with",
+        "Tidewater Community College Unmanned Systems Courses",
+    ),
+    (
+        "Virginia Community College System Unmanned Systems Curriculum",
+        "supports",
+        "Blue Ridge Community College Unmanned Systems Courses",
+    ),
+    (
+        "Virginia Community College System Unmanned Systems Curriculum",
+        "supports",
+        "Danville Community College Unmanned Systems Courses",
+    ),
+    (
+        "Virginia Community College System Unmanned Systems Curriculum",
+        "supports",
+        "Eastern Shore Community College Unmanned Systems Courses",
+    ),
+    (
+        "Old Dominion University UAS Operations Program",
+        "supports",
+        "ODU Unmanned and Autonomous Vehicle Laboratory",
+    ),
+    (
+        "University of Virginia UAS Operations Program",
+        "supports",
+        "UVA Robotics and Autonomous Systems Research",
+    ),
+    (
+        "Virginia Commonwealth University UAS Operations Program",
+        "supports",
+        "VCU Autonomous Robots and Vehicles Laboratory",
+    ),
+    ("NASA Langley Research Center", "supports", "NASA Langley Autonomy Incubator"),
+    ("NASA Wallops Flight Facility", "supports", "Mid-Atlantic Regional Spaceport"),
+]
+
 
 def source(key):
     title, url = SOURCES[key]
@@ -1860,6 +1961,13 @@ def validate(records):
         if len(record["short_description"]) > 320:
             raise ValueError(f"Description too long: {record['name']}")
 
+    relationship_assets = {
+        asset_name for relationship in CATALOG_RELATIONSHIPS for asset_name in (relationship[0], relationship[2])
+    }
+    unknown_assets = relationship_assets - names
+    if unknown_assets:
+        raise ValueError(f"Unknown relationship assets: {', '.join(sorted(unknown_assets))}")
+
 
 def main():
     records = airport_records() + defense_records() + curated_records()
@@ -1873,6 +1981,10 @@ def main():
             "publicly listed installations from the Virginia Military Factbook, and a curated "
             "set of source-backed ecosystem records."
         ),
+        "relationships": [
+            {"from": from_name, "type": relationship_type, "to": to_name}
+            for from_name, relationship_type, to_name in CATALOG_RELATIONSHIPS
+        ],
         "records": records,
     }
     OUTPUT.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")

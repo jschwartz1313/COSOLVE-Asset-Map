@@ -34,7 +34,7 @@
 </fieldset>
 
 <details>
-  <summary>Platform domains</summary>
+  <summary>Platform domains <span class="summary-count" data-filter-count-for="domain" hidden></span></summary>
   <div class="check-list">
     {% for domain in domains %}
       <label class="check-row"><input type="checkbox" name="domain" value="{{ domain.slug }}" {% if domain.slug in request.GET|getlist:"domain" %}checked{% endif %}><span>{{ domain.name }}</span></label>
@@ -43,7 +43,7 @@
 </details>
 
 <details>
-  <summary>Capabilities</summary>
+  <summary>Capabilities <span class="summary-count" data-filter-count-for="capability" hidden></span></summary>
   <div class="check-list">
     {% for capability in capabilities %}
       <label class="check-row"><input type="checkbox" name="capability" value="{{ capability.slug }}" {% if capability.slug in request.GET|getlist:"capability" %}checked{% endif %}><span>{{ capability.name }}</span></label>
@@ -52,7 +52,7 @@
 </details>
 
 <details>
-  <summary>Mission areas</summary>
+  <summary>Mission areas <span class="summary-count" data-filter-count-for="mission" hidden></span></summary>
   <div class="check-list">
     {% for mission in missions %}
       <label class="check-row"><input type="checkbox" name="mission" value="{{ mission.slug }}" {% if mission.slug in request.GET|getlist:"mission" %}checked{% endif %}><span>{{ mission.name }}</span></label>

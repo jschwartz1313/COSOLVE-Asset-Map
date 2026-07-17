@@ -7,7 +7,7 @@ from django.core.management.base import BaseCommand
 from django.db import transaction
 from django.db.models import Q
 
-from apps.assets.models import Asset
+from apps.assets.models import Asset, Relationship
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 from apps.sources.models import Source
 
@@ -108,6 +108,18 @@ class Command(BaseCommand):
             created += int(was_created)
             updated += int(not was_created)
 
+        relationships_created = 0
+        for relationship_data in catalog.get("relationships", []):
+            from_asset = Asset.objects.get(name=relationship_data["from"])
+            to_asset = Asset.objects.get(name=relationship_data["to"])
+            _relationship, was_created = Relationship.objects.update_or_create(
+                from_asset=from_asset,
+                to_asset=to_asset,
+                relationship_type=relationship_data["type"],
+                defaults={"is_public": True},
+            )
+            relationships_created += int(was_created)
+
         pruned = 0
         if options["prune"]:
             stale_ids = [
@@ -121,6 +133,7 @@ class Command(BaseCommand):
         self.stdout.write(
             self.style.SUCCESS(
                 f"Loaded {len(records)} real assets ({created} created, {updated} updated); "
-                f"removed {deleted} demo-related and {pruned} stale catalog database objects."
+                f"created {relationships_created} relationships; removed {deleted} demo-related "
+                f"and {pruned} stale catalog database objects."
             )
         )

@@ -7866,5 +7866,157 @@
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
       "website_url": "https://zenithaerotech.com/about-us-tethered-drone/"
     }
+  ],
+  "relationships": [
+    {
+      "from": "Mid-Atlantic Aviation Partnership",
+      "to": "Virginia Tech Drone Park",
+      "type": "operates"
+    },
+    {
+      "from": "Mid-Atlantic Aviation Partnership",
+      "to": "MARS Unmanned Aircraft Systems Airfield",
+      "type": "operates"
+    },
+    {
+      "from": "Mid-Atlantic Aviation Partnership",
+      "to": "FAA BEYOND Virginia Team",
+      "type": "supports"
+    },
+    {
+      "from": "Mid-Atlantic Aviation Partnership",
+      "to": "Virginia Tech Counter UAS Research and Testing Center",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech Autonomy and Robotics",
+      "to": "Virginia Tech Drone Park",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech Autonomy and Robotics",
+      "to": "Virginia Tech Center for Marine Autonomy and Robotics",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech Autonomy and Robotics",
+      "to": "Virginia Tech Uncrewed Systems Laboratory",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech Center for Marine Autonomy and Robotics",
+      "to": "AutoBoat at Virginia Tech",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Innovation Partnership Corporation",
+      "to": "Virginia Unmanned Systems Center",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Innovation Partnership Corporation",
+      "to": "Virginia Public Safety Innovation Center",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Unmanned Systems Center",
+      "to": "Virginia Advanced Air Mobility Program",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Unmanned Systems Center",
+      "to": "Virginia Advanced Air Mobility Alliance",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Virginia Advanced Air Mobility Program",
+      "type": "supports"
+    },
+    {
+      "from": "The Port of Virginia",
+      "to": "Norfolk International Terminals",
+      "type": "operates"
+    },
+    {
+      "from": "The Port of Virginia",
+      "to": "Virginia International Gateway",
+      "type": "operates"
+    },
+    {
+      "from": "The Port of Virginia",
+      "to": "Portsmouth Marine Terminal",
+      "type": "operates"
+    },
+    {
+      "from": "The Port of Virginia",
+      "to": "Newport News Marine Terminal",
+      "type": "operates"
+    },
+    {
+      "from": "The Port of Virginia",
+      "to": "Richmond Marine Terminal",
+      "type": "operates"
+    },
+    {
+      "from": "The Port of Virginia",
+      "to": "Virginia Inland Port",
+      "type": "operates"
+    },
+    {
+      "from": "The Port of Virginia",
+      "to": "Craney Island Marine Terminal Project",
+      "type": "operates"
+    },
+    {
+      "from": "Virginia Space Grant Consortium Drone Academies",
+      "to": "Virginia Peninsula Community College Drone Flight Technician Certificate",
+      "type": "partners-with"
+    },
+    {
+      "from": "Virginia Space Grant Consortium Drone Academies",
+      "to": "Tidewater Community College Unmanned Systems Courses",
+      "type": "partners-with"
+    },
+    {
+      "from": "Virginia Community College System Unmanned Systems Curriculum",
+      "to": "Blue Ridge Community College Unmanned Systems Courses",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Community College System Unmanned Systems Curriculum",
+      "to": "Danville Community College Unmanned Systems Courses",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Community College System Unmanned Systems Curriculum",
+      "to": "Eastern Shore Community College Unmanned Systems Courses",
+      "type": "supports"
+    },
+    {
+      "from": "Old Dominion University UAS Operations Program",
+      "to": "ODU Unmanned and Autonomous Vehicle Laboratory",
+      "type": "supports"
+    },
+    {
+      "from": "University of Virginia UAS Operations Program",
+      "to": "UVA Robotics and Autonomous Systems Research",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Commonwealth University UAS Operations Program",
+      "to": "VCU Autonomous Robots and Vehicles Laboratory",
+      "type": "supports"
+    },
+    {
+      "from": "NASA Langley Research Center",
+      "to": "NASA Langley Autonomy Incubator",
+      "type": "supports"
+    },
+    {
+      "from": "NASA Wallops Flight Facility",
+      "to": "Mid-Atlantic Regional Spaceport",
+      "type": "supports"
+    }
   ]
 }

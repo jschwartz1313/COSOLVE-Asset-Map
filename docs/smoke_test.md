@@ -10,4 +10,8 @@
 8. Load `/directory/` with JavaScript disabled and verify filtering and profiles still work.
 9. At mobile width, open and close the filter drawer and inspect text for clipping or overlap.
 10. As staff, import the sample CSV, review the draft, add evidence, verify, publish, and archive it.
-
+11. Open `/regions/compare/`, change both regions, and confirm counts and map links update.
+12. Open `/about-data/` and confirm the catalog, source, region, and verification summaries render.
+13. Open a profile with related assets and confirm outgoing and incoming connections link correctly.
+14. As staff, export a filtered CSV and review `/admin/imports/data-quality/`.
+15. Confirm the legend, reset-view control, active-filter count, and collapsed-section counts work.

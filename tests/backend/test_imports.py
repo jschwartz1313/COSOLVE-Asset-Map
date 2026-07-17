@@ -49,3 +49,25 @@ class ImportWorkflowTests(TestCase):
         self.assertContains(response, "Unknown strategic_categories")
         self.client.post(reverse("imports:commit"))
         self.assertFalse(Asset.objects.exists())
+
+    def test_data_quality_dashboard_requires_staff(self):
+        self.client.logout()
+        response = self.client.get(reverse("imports:data-quality"))
+        self.assertEqual(response.status_code, 302)
+
+    def test_data_quality_dashboard_reports_missing_fields(self):
+        Asset.objects.create(
+            name="Needs Review",
+            record_type=Asset.RecordType.FACILITY,
+            short_description="Fixture",
+            unmanned_systems_relevance="Supports testing",
+            status=Asset.Status.NEEDS_REVIEW,
+        )
+        response = self.client.get(reverse("imports:data-quality"))
+        self.assertContains(response, "Needs Review")
+        self.assertContains(response, "missing public sources")
+
+    def test_export_requires_staff(self):
+        self.client.logout()
+        response = self.client.get(reverse("imports:export"))
+        self.assertEqual(response.status_code, 302)

@@ -7,4 +7,5 @@ urlpatterns = [
     path("preview/", views.preview, name="preview"),
     path("commit/", views.commit, name="commit"),
     path("export/", views.export_assets, name="export"),
+    path("data-quality/", views.data_quality, name="data-quality"),
 ]
