@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "virginia_real_assets.json"
-VERIFIED_DATE = "2026-07-16"
+VERIFIED_DATE = "2026-07-17"
 
 FAA_LAYER = (
     "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
@@ -158,6 +158,49 @@ SOURCES = {
         "Virginia Tech Eastern Shore AREC Drone Research",
         "https://www.arec.vaes.vt.edu/content/dam/arec_vaes_vt_edu/eastern-shore/newsletter/The%20Stalk%20-%20July%202024.pdf",
     ),
+    "vt_counter_uas": (
+        "Virginia Tech Counter UAS Research and Testing Center",
+        "https://news.vt.edu/articles/2025/04/research-counteruascenter.html",
+    ),
+    "vt_usl": (
+        "Virginia Tech Uncrewed Systems Laboratory",
+        "https://usl.me.vt.edu/projects.html",
+    ),
+    "fairfax_county_uas": (
+        "Fairfax County Unmanned Aircraft Systems",
+        "https://www.fairfaxcounty.gov/uas/",
+    ),
+    "gmu_police_uas": (
+        "George Mason University Police UAS Flight Log",
+        "https://police.gmu.edu/records-and-reporting/uas-drone-flight-log/",
+    ),
+    "virginia_beach_uas": (
+        "CISA: City of Virginia Beach UAS Emergency Operations Program",
+        "https://www.cisa.gov/sites/default/files/2024-08/24_0826_necp_spotlight_implementing_uas_programs_to_support_emergency_operations_final_508C.pdf",
+    ),
+    "fairfax_city_uas": (
+        "City of Fairfax Police Annual Report",
+        "https://www.fairfaxva.gov/files/assets/city/v/1/police/documents/annual-reports/fy2023-ffx-pd-annual-report.pdf",
+    ),
+    "vsgc_drone_academies": (
+        "Virginia Space Grant Consortium GeoTED-UAS Drone Academies",
+        "https://vsgc.odu.edu/geoted-uas/",
+    ),
+    "vcu_uas": (
+        "Virginia Commonwealth University Unmanned Aircraft System",
+        "https://healthsafety.vcu.edu/operational-risk/unmanned-aircraft-system/",
+    ),
+    "uva_uas": (
+        "University of Virginia Unmanned Aircraft Systems Operations",
+        "https://uvaemergency.virginia.edu/unmanned-aircraft-uas/operating-uas-uva",
+    ),
+    "uva_crc_uas": (
+        "UVA Coastal Research Center Drone Pilot Compliance Checklist",
+        "https://abcrc.virginia.edu/files/abcrc/files/coastal_research_center___drone_pilot_compliance_checklist.pdf",
+    ),
+    "heven": ("Heven AeroTech", "https://hevenaerotech.com/"),
+    "agricision": ("Agricision", "https://www.agricisioninc.com/"),
+    "blue_ridge_defense": ("Blue Ridge Defense Works", "https://blueridgedefense.com/"),
 }
 
 PROFILES = {
@@ -321,6 +364,51 @@ PROFILES = {
             "agriculture, natural resources, or environmental monitoring."
         ),
     },
+    "institutional_uas": {
+        "categories": ["Research and technical depth", "Programs and initiatives"],
+        "domains": ["Unmanned aircraft systems"],
+        "capabilities": [
+            "Safety, policy, regulatory, and airspace integration",
+            "Operations, maintenance, and sustainment",
+        ],
+        "missions": ["Training and experimentation"],
+        "relevance": (
+            "Operates a documented institutional UAS program supporting research, instruction, "
+            "and compliant flight operations."
+        ),
+    },
+    "counter_uas_research": {
+        "categories": ["Research and technical depth", "Test and operational environments"],
+        "domains": ["Counter-UAS", "Unmanned aircraft systems"],
+        "capabilities": [
+            "Perception, sensing, and sensor fusion",
+            "Testing, evaluation, verification, and validation",
+        ],
+        "missions": ["Counter-UAS", "Force protection and installation security"],
+        "relevance": (
+            "Provides documented counter-UAS research, testing, and evaluation capabilities."
+        ),
+    },
+    "company_counter_uas": {
+        "categories": ["Companies and solution providers", "Manufacturing and supply chain"],
+        "domains": ["Counter-UAS", "Unmanned aircraft systems"],
+        "capabilities": [
+            "Systems engineering and integration",
+            "Manufacturing, materials, and prototyping",
+        ],
+        "missions": ["Counter-UAS", "Force protection and installation security"],
+        "relevance": "Develops documented counter-UAS systems, components, or production capacity.",
+    },
+    "company_agriculture": {
+        "categories": ["Companies and solution providers", "Manufacturing and supply chain"],
+        "domains": ["Unmanned aircraft systems"],
+        "capabilities": [
+            "Perception, sensing, and sensor fusion",
+            "Manufacturing, materials, and prototyping",
+        ],
+        "missions": ["Agriculture and natural resources"],
+        "relevance": "Provides documented agricultural UAS platforms, software, or related services.",
+    },
 }
 
 PLACES = {
@@ -336,6 +424,8 @@ PLACES = {
     "Clifton Forge": (37.817, -79.824),
     "Danville": (36.586, -79.395),
     "Dahlgren": (38.333, -77.031),
+    "Dulles": (38.955, -77.448),
+    "Eastville": (37.352, -75.946),
     "Fairfax": (38.846, -77.307),
     "Fredericksburg": (38.303, -77.461),
     "Front Royal": (38.918, -78.194),
@@ -360,12 +450,14 @@ PLACES = {
     "Roanoke": (37.271, -79.941),
     "Springfield": (38.789, -77.187),
     "Sterling": (39.006, -77.428),
+    "Sedley": (36.790, -76.590),
     "Suffolk": (36.728, -76.584),
     "Virginia Beach": (36.853, -75.978),
     "Wallops Island": (37.940, -75.467),
     "Williamsburg": (37.271, -76.707),
     "Weyers Cave": (38.288, -78.913),
     "Wise": (36.975, -82.576),
+    "Winchester": (39.185, -78.163),
     "Yorktown": (37.239, -76.510),
 }
 
@@ -1392,6 +1484,123 @@ CURATED_ASSETS = [
         "agriculture",
         "Eastern Shore field research and outreach on agricultural drone sensing and spray-drone applications.",
         "vt_esarec_drones",
+    ),
+    (
+        "Virginia Tech Counter UAS Research and Testing Center",
+        "facility",
+        "Blacksburg",
+        "New River Valley",
+        "counter_uas_research",
+        "Research and testing center with outdoor, indoor, and virtual counter-UAS laboratories.",
+        "vt_counter_uas",
+    ),
+    (
+        "Virginia Tech Uncrewed Systems Laboratory",
+        "facility",
+        "Blacksburg",
+        "New River Valley",
+        "research_air",
+        "University laboratory conducting uncrewed-system research, including autonomous aerial search applications.",
+        "vt_usl",
+    ),
+    (
+        "Fairfax County Unmanned Aircraft Systems Program",
+        "program",
+        "Fairfax",
+        "Northern Virginia",
+        "public_safety",
+        "County program supporting public-safety missions including search and rescue, fire, hazmat, and damage assessment.",
+        "fairfax_county_uas",
+    ),
+    (
+        "George Mason University Police UAS Team",
+        "program",
+        "Fairfax",
+        "Northern Virginia",
+        "public_safety",
+        "University police UAS team with publicly posted operational flight logs.",
+        "gmu_police_uas",
+    ),
+    (
+        "City of Virginia Beach UAS Program",
+        "program",
+        "Virginia Beach",
+        "Hampton Roads",
+        "public_safety",
+        "Cross-department municipal UAS program supporting emergency operations and public-safety response.",
+        "virginia_beach_uas",
+    ),
+    (
+        "City of Fairfax Regional UAS Unit",
+        "program",
+        "Fairfax",
+        "Northern Virginia",
+        "public_safety",
+        "Police participation in a regional UAS unit supporting documented public-safety operations.",
+        "fairfax_city_uas",
+    ),
+    (
+        "Virginia Space Grant Consortium Drone Academies",
+        "program",
+        "Hampton",
+        "Hampton Roads",
+        "workforce",
+        "Drone-academy program delivering unmanned-systems education with Virginia community-college partners.",
+        "vsgc_drone_academies",
+    ),
+    (
+        "Virginia Commonwealth University UAS Operations Program",
+        "program",
+        "Richmond",
+        "Greater Richmond",
+        "institutional_uas",
+        "Institutional UAS program governing and supporting research, instructional, and operational flights.",
+        "vcu_uas",
+    ),
+    (
+        "University of Virginia UAS Operations Program",
+        "program",
+        "Charlottesville",
+        "Central Virginia",
+        "institutional_uas",
+        "University UAS operations program supporting compliant research, instruction, and approved flight activity.",
+        "uva_uas",
+    ),
+    (
+        "UVA Coastal Research Center UAS Operations",
+        "facility",
+        "Eastville",
+        "Eastern Shore",
+        "research_marine",
+        "Coastal research-center UAS operations for compliant flights from the center's property and vessels.",
+        "uva_crc_uas",
+    ),
+    (
+        "Heven AeroTech Headquarters",
+        "organization",
+        "Dulles",
+        "Northern Virginia",
+        "company_air",
+        "Virginia headquarters for a developer of hydrogen-powered and other unmanned aerial systems.",
+        "heven",
+    ),
+    (
+        "Agricision",
+        "organization",
+        "Sedley",
+        "Hampton Roads",
+        "company_agriculture",
+        "Virginia agricultural-drone manufacturer providing scouting and spray drone platforms and software.",
+        "agricision",
+    ),
+    (
+        "Blue Ridge Defense Works",
+        "organization",
+        "Winchester",
+        "Northern Virginia",
+        "company_counter_uas",
+        "Virginia counter-UAS company developing interceptor systems for defense applications.",
+        "blue_ridge_defense",
     ),
 ]
 

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-16",
+  "generated_at": "2026-07-17",
   "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, and a curated set of source-backed ecosystem records.",
-  "record_count": 203,
+  "record_count": 216,
   "records": [
     {
       "capabilities": [
@@ -22,12 +22,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier MFV).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -62,7 +62,7 @@
       "short_description": "Hampton aerospace engineering company providing uncrewed-aircraft-system design and technical services.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Adaptive Aerospace Group",
           "url": "https://adaptiveaero.com/"
         }
@@ -97,7 +97,7 @@
       "short_description": "Hampton developer and manufacturer of long-endurance hybrid-electric unmanned aircraft systems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Advanced Aircraft Company",
           "url": "https://advancedaircraftcompany.com/"
         }
@@ -132,7 +132,7 @@
       "short_description": "Christiansburg aerospace company providing airflow measurement and advanced flight-test instrumentation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -169,7 +169,7 @@
       "short_description": "Arlington headquarters of a multi-domain autonomous-systems, UAS, UGV, counter-UAS, and robotics company.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "AeroVironment",
           "url": "https://www.avinc.com/domains/"
         }
@@ -181,6 +181,41 @@
       ],
       "unmanned_systems_relevance": "Develops, integrates, manufactures, or supports documented autonomous and uncrewed systems across one or more operating domains.",
       "website_url": "https://www.avinc.com/domains/"
+    },
+    {
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "city": "Sedley",
+      "latitude": 36.79,
+      "location_precision": "locality",
+      "longitude": -76.59,
+      "missions": [
+        "Agriculture and natural resources"
+      ],
+      "name": "Agricision",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "short_description": "Virginia agricultural-drone manufacturer providing scouting and spray drone platforms and software.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-17",
+          "title": "Agricision",
+          "url": "https://www.agricisioninc.com/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain"
+      ],
+      "unmanned_systems_relevance": "Provides documented agricultural UAS platforms, software, or related services.",
+      "website_url": "https://www.agricisioninc.com/"
     },
     {
       "capabilities": [
@@ -201,12 +236,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier BKT).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -239,7 +274,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -272,7 +307,7 @@
       "short_description": "International unmanned-systems industry association headquartered in Arlington.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -308,7 +343,7 @@
       "short_description": "Aviation systems and integration company leading work in Virginia's AAM test-site initiative.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia AAM and Unmanned Systems Test Site Program",
           "url": "https://vipc.org/virginia-launches-advanced-air-mobility-and-unmanned-systems-test-site-program/"
         }
@@ -343,7 +378,7 @@
       "short_description": "Aerospace company developing advanced aircraft and autonomous flight technologies in Manassas.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -380,7 +415,7 @@
       "short_description": "Student engineering team designing fully autonomous robotic sailboats and electric motorboats.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "AutoBoat at Virginia Tech",
           "url": "https://autoboat.aoe.vt.edu/"
         }
@@ -414,7 +449,7 @@
       "short_description": "Regional industry chapter connecting unmanned-systems stakeholders in Hampton Roads.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -446,12 +481,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier MTV).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -486,7 +521,7 @@
       "short_description": "Community-college UMS coursework covering small-UAS operations, mission planning, and autonomous flight.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VCCS: Unmanned Systems Courses at Blue Ridge Community College",
           "url": "https://courses.vccs.edu/colleges/brcc/courses/UMS-UnmannedSystems"
         }
@@ -497,6 +532,43 @@
       ],
       "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
       "website_url": "https://courses.vccs.edu/colleges/brcc/courses/UMS-UnmannedSystems"
+    },
+    {
+      "capabilities": [
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "city": "Winchester",
+      "latitude": 39.185,
+      "location_precision": "locality",
+      "longitude": -78.163,
+      "missions": [
+        "Counter-UAS",
+        "Force protection and installation security"
+      ],
+      "name": "Blue Ridge Defense Works",
+      "platform_domains": [
+        "Counter-UAS",
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Virginia counter-UAS company developing interceptor systems for defense applications.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-17",
+          "title": "Blue Ridge Defense Works",
+          "url": "https://blueridgedefense.com/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain"
+      ],
+      "unmanned_systems_relevance": "Develops documented counter-UAS systems, components, or production capacity.",
+      "website_url": "https://blueridgedefense.com/"
     },
     {
       "capabilities": [
@@ -517,12 +589,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier VBW).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -557,7 +629,7 @@
       "short_description": "Community-college small-UAS coursework supporting remote-pilot knowledge and operational skills.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VCCS: Unmanned Systems Courses at Brightpoint Community College",
           "url": "https://courses.vccs.edu/colleges/jtcc/courses/UMS-UnmannedSystems"
         }
@@ -588,12 +660,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier 0V4).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -624,12 +696,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier LVL).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -660,12 +732,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier 9VG).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -700,7 +772,7 @@
       "short_description": "UVA autonomous-racing research and student team developing perception, planning, and control systems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "UVA Robotics and Autonomous Systems",
           "url": "https://www.engineering.virginia.edu/labs-groups/link-lab/research/robotics-and-autonomous-systems"
         }
@@ -736,7 +808,7 @@
       "short_description": "University research center focused on unmanned-aircraft-system technologies and applications.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -768,12 +840,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier CHO).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -804,12 +876,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier CXE).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -840,12 +912,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier CPK).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -856,6 +928,80 @@
       ],
       "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Fairfax",
+      "latitude": 38.846,
+      "location_precision": "locality",
+      "longitude": -77.307,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "City of Fairfax Regional UAS Unit",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Northern Virginia",
+      "short_description": "Police participation in a regional UAS unit supporting documented public-safety operations.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-17",
+          "title": "City of Fairfax Police Annual Report",
+          "url": "https://www.fairfaxva.gov/files/assets/city/v/1/police/documents/annual-reports/fy2023-ffx-pd-annual-report.pdf"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.fairfaxva.gov/files/assets/city/v/1/police/documents/annual-reports/fy2023-ffx-pd-annual-report.pdf"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Virginia Beach",
+      "latitude": 36.853,
+      "location_precision": "locality",
+      "longitude": -75.978,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "City of Virginia Beach UAS Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Hampton Roads",
+      "short_description": "Cross-department municipal UAS program supporting emergency operations and public-safety response.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-17",
+          "title": "CISA: City of Virginia Beach UAS Emergency Operations Program",
+          "url": "https://www.cisa.gov/sites/default/files/2024-08/24_0826_necp_spotlight_implementing_uas_programs_to_support_emergency_operations_final_508C.pdf"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.cisa.gov/sites/default/files/2024-08/24_0826_necp_spotlight_implementing_uas_programs_to_support_emergency_operations_final_508C.pdf"
     },
     {
       "capabilities": [
@@ -880,7 +1026,7 @@
       "short_description": "Christopher Newport University lab researching safe control and planning for aerial and ground vehicles.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -916,7 +1062,7 @@
       "short_description": "CNU lab developing verifiable autonomous robotic behaviors for human-support applications.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -950,7 +1096,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -984,7 +1130,7 @@
       "short_description": "Applied research center for advanced manufacturing, automation, materials, and production systems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -1019,7 +1165,7 @@
       "short_description": "Statewide research network for secure communications, cyber-physical systems, and next-generation networks.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -1056,7 +1202,7 @@
       "short_description": "Long-term port expansion and logistics infrastructure project in Hampton Roads.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
         }
@@ -1087,12 +1233,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W81).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -1123,12 +1269,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier CJR).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -1161,7 +1307,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -1196,7 +1342,7 @@
       "short_description": "Community-college UMS coursework covering small-UAS platforms, operations, and mission support.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VCCS: Unmanned Systems Courses at Danville Community College",
           "url": "https://courses.vccs.edu/colleges/dcc/courses/UMS-UnmannedSystems"
         }
@@ -1227,12 +1373,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier DAN).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -1269,7 +1415,7 @@
       "short_description": "Sterling headquarters for counter-drone sensing, identification, tracking, and airspace-security technology.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Dedrone by Axon",
           "url": "https://www.dedrone.com/about/contact-us"
         }
@@ -1303,7 +1449,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -1336,7 +1482,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -1371,7 +1517,7 @@
       "short_description": "Utility UAS activity supporting infrastructure inspection and Virginia advanced-flight demonstrations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -1406,7 +1552,7 @@
       "short_description": "Virginia Beach-founded drone services, operations, software, training, and delivery company.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Virginia Unmanned Systems Companies",
           "url": "https://www.vedp.org/news/home-business-more-400-years"
         }
@@ -1441,7 +1587,7 @@
       "short_description": "Virginia aviation operator and integrator with aircraft modification, mission, and fleet capabilities.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -1472,12 +1618,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W13).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -1512,7 +1658,7 @@
       "short_description": "Community-college UMS coursework supporting small-UAS operations and applied technical skills.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VCCS: Unmanned Systems Courses at Eastern Shore Community College",
           "url": "https://courses.vccs.edu/colleges/escc/courses/UMS-UnmannedSystems"
         }
@@ -1543,12 +1689,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier EMV).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -1581,7 +1727,7 @@
       "short_description": "Virginia team advancing scalable beyond-visual-line-of-sight UAS operations and safety cases.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -1593,6 +1739,43 @@
       ],
       "unmanned_systems_relevance": "Coordinates, funds, regulates, or accelerates Virginia's unmanned-systems ecosystem.",
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Fairfax",
+      "latitude": 38.846,
+      "location_precision": "locality",
+      "longitude": -77.307,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Fairfax County Unmanned Aircraft Systems Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Northern Virginia",
+      "short_description": "County program supporting public-safety missions including search and rescue, fire, hazmat, and damage assessment.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-17",
+          "title": "Fairfax County Unmanned Aircraft Systems",
+          "url": "https://www.fairfaxcounty.gov/uas/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.fairfaxcounty.gov/uas/"
     },
     {
       "capabilities": [
@@ -1613,12 +1796,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W24).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -1649,12 +1832,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier FVX).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -1687,7 +1870,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -1720,7 +1903,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -1753,7 +1936,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -1786,7 +1969,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -1819,7 +2002,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -1850,12 +2033,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier FKN).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -1886,12 +2069,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier FRR).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -1926,7 +2109,7 @@
       "short_description": "Collaborative robotics research laboratory spanning computer vision, networks, and autonomous systems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -1962,7 +2145,7 @@
       "short_description": "Research center focused on air transportation systems, operations, modeling, and analysis.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -1974,6 +2157,43 @@
       ],
       "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Fairfax",
+      "latitude": 38.846,
+      "location_precision": "locality",
+      "longitude": -77.307,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "George Mason University Police UAS Team",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Northern Virginia",
+      "short_description": "University police UAS team with publicly posted operational flight logs.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-17",
+          "title": "George Mason University Police UAS Flight Log",
+          "url": "https://police.gmu.edu/records-and-reporting/uas-drone-flight-log/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://police.gmu.edu/records-and-reporting/uas-drone-flight-log/"
     },
     {
       "capabilities": [
@@ -1998,7 +2218,7 @@
       "short_description": "Community-college class supporting FAA remote-pilot knowledge for drone operations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -2029,12 +2249,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier GVE).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -2065,12 +2285,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier PVG).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -2101,12 +2321,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier OFP).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -2117,6 +2337,41 @@
       ],
       "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "capabilities": [
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Dulles",
+      "latitude": 38.955,
+      "location_precision": "locality",
+      "longitude": -77.448,
+      "missions": [
+        "Infrastructure inspection",
+        "Logistics and contested logistics"
+      ],
+      "name": "Heven AeroTech Headquarters",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Virginia headquarters for a developer of hydrogen-powered and other unmanned aerial systems.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-17",
+          "title": "Heven AeroTech",
+          "url": "https://hevenaerotech.com/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers"
+      ],
+      "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
+      "website_url": "https://hevenaerotech.com/"
     },
     {
       "capabilities": [
@@ -2141,7 +2396,7 @@
       "short_description": "Digital manufacturing and engineering facility established for HII unmanned and autonomous systems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "HII Unmanned Systems Center of Excellence",
           "url": "https://www.hii.com/news/unmanned-systems-center-of-excellence"
         }
@@ -2173,12 +2428,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W75).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -2213,7 +2468,7 @@
       "short_description": "Virginia company providing UAS product design, prototyping, analysis, and manufacturing.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Virginia Unmanned Systems Companies",
           "url": "https://www.vedp.org/news/home-business-more-400-years"
         }
@@ -2244,12 +2499,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier HSP).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -2283,7 +2538,7 @@
       "short_description": "Regional applied-research and workforce organization with advanced manufacturing and automation capacity.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -2319,7 +2574,7 @@
       "short_description": "Documented interdisciplinary project applying drone technology to complex public-interest problems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -2355,7 +2610,7 @@
       "short_description": "Collaborative facility for interdisciplinary emerging-technology work, including drone courses and projects.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -2389,7 +2644,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -2422,7 +2677,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -2457,7 +2712,7 @@
       "short_description": "Virginia Tech field laboratory for UAS flight dynamics, control, research, and instruction.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Tech Kentland Experimental Aerial Systems Laboratory",
           "url": "https://autonomyandrobotics.centers.vt.edu/groups/keas.html"
         }
@@ -2489,12 +2744,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier 7W4).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -2525,12 +2780,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W63).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -2563,7 +2818,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -2598,7 +2853,7 @@
       "short_description": "Community-college UMS coursework including remote-pilot ground school and small-UAS operations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VCCS: Unmanned Systems Courses at Laurel Ridge Community College",
           "url": "https://courses.vccs.edu/colleges/lfcc/courses/UMS-UnmannedSystems"
         }
@@ -2629,12 +2884,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier 0VG).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -2665,12 +2920,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier JYO).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -2705,7 +2960,7 @@
       "short_description": "Bachelor's degree pathway preparing students for UAS operations and aviation careers.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -2740,7 +2995,7 @@
       "short_description": "Bachelor's degree pathway focused on maintenance of unmanned aircraft systems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -2775,7 +3030,7 @@
       "short_description": "Aeronautics school offering unmanned-aircraft education, operations, and maintenance pathways.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -2810,7 +3065,7 @@
       "short_description": "Virginia engineering site supporting maritime, undersea, sensing, and mission-system technologies.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -2842,12 +3097,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier LNP).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -2883,7 +3138,7 @@
       "short_description": "Fort Monroe center supporting urban air, ground, and maritime unmanned-system research, testing, and validation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "City of Hampton: Hampton Roads Autonomy Demonstrations",
           "url": "https://www.hampton.gov/CivicAlerts.aspx?AID=4973&ARC=10333"
         }
@@ -2915,12 +3170,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier LKU).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -2951,12 +3206,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W31).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -2987,12 +3242,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier LUA).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -3023,12 +3278,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier LYH).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -3061,7 +3316,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -3096,7 +3351,7 @@
       "short_description": "Purpose-built UAS airfield and VTOL test infrastructure at the Mid-Atlantic Regional Spaceport.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -3128,12 +3383,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier 2G6).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -3164,12 +3419,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier AVC).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -3204,7 +3459,7 @@
       "short_description": "FAA-designated UAS test-site organization managed by Virginia Tech.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -3240,7 +3495,7 @@
       "short_description": "Virginia spaceport providing launch, range, integration, and advanced-aerospace infrastructure.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -3272,12 +3527,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier FYJ).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -3308,12 +3563,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier MKJ).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -3348,7 +3603,7 @@
       "short_description": "Community-college coursework and degree development in unmanned aircraft operations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -3383,7 +3638,7 @@
       "short_description": "Community-college UMS coursework covering remote-pilot preparation and advanced UAS operations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VCCS: Unmanned Systems Courses at Mountain Gateway Community College",
           "url": "https://courses.vccs.edu/colleges/dslcc/courses/UMS-UnmannedSystems"
         }
@@ -3418,7 +3673,7 @@
       "short_description": "Multidisciplinary NASA group researching autonomy skills and reusable autonomous-system capabilities.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -3454,7 +3709,7 @@
       "short_description": "City Environment for Range Testing of Autonomous Integrated Navigation at NASA Langley.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "NASA Langley Drone Flying Site",
           "url": "https://www.nasa.gov/centers-and-facilities/langley/nasa-langley-drone-flying-site-open-for-testing/"
         }
@@ -3490,7 +3745,7 @@
       "short_description": "NASA research center conducting autonomy, UAS airspace integration, sensing, and flight research.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -3526,7 +3781,7 @@
       "short_description": "NASA flight facility supporting atmospheric, aerospace, UAS, and range operations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -3560,7 +3815,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -3594,7 +3849,7 @@
       "short_description": "Research and graduate-education institute supporting aerospace engineering and NASA Langley collaborations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -3628,7 +3883,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -3661,7 +3916,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -3694,7 +3949,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -3727,7 +3982,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -3760,7 +4015,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -3793,7 +4048,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -3826,7 +4081,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -3857,12 +4112,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W96).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -3893,12 +4148,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W90).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -3929,12 +4184,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier 8W2).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -3969,7 +4224,7 @@
       "short_description": "Ground-school course supporting small-UAS remote-pilot knowledge and certification preparation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -4000,12 +4255,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier PSK).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -4041,7 +4296,7 @@
       "short_description": "Breakbulk, roll-on/roll-off, warehouse, rail, and heavy-lift marine terminal.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
         }
@@ -4076,7 +4331,7 @@
       "short_description": "Major Virginia shipyard providing naval engineering, digital shipbuilding, manufacturing, and integration capacity.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -4108,12 +4363,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier PHF).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -4146,7 +4401,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -4182,7 +4437,7 @@
       "short_description": "Large semi-automated container terminal with on-dock rail and interstate access.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
         }
@@ -4213,12 +4468,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier ORF).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -4251,7 +4506,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -4286,7 +4541,7 @@
       "short_description": "Old Dominion University laboratory supporting ground and flight autonomous-vehicle design.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -4318,12 +4573,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier OMH).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -4357,7 +4612,7 @@
       "short_description": "Developer of autonomous retrofit systems for transit and other vehicle platforms.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Virginia Unmanned Systems Companies",
           "url": "https://www.vedp.org/news/home-business-more-400-years"
         }
@@ -4392,7 +4647,7 @@
       "short_description": "Small-UAS coursework designed for emergency-services and public-safety applications.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -4428,7 +4683,7 @@
       "short_description": "Marine terminal being used as an offshore-wind logistics and staging hub.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
         }
@@ -4465,7 +4720,7 @@
       "short_description": "Lorton headquarters of a company providing multi-domain autonomous systems and unmanned robotic platforms.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "QinetiQ US",
           "url": "https://www.qinetiq.com/en-us/"
         }
@@ -4499,7 +4754,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -4534,7 +4789,7 @@
       "short_description": "Manassas headquarters and digital manufacturing facility for rapidly produced unmanned aircraft systems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "RapidFlight Manassas UAS Manufacturing Headquarters",
           "url": "https://www.prnewswire.com/news-releases/rapidflight-celebrates-grand-opening-of-uas-3d-manufacturing-headquarters-in-manassas-virginia-301884344.html"
         }
@@ -4565,12 +4820,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier FCI).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -4601,12 +4856,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier RIC).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -4642,7 +4897,7 @@
       "short_description": "James River terminal providing barge, warehouse, road, and rail logistics connections.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
         }
@@ -4675,7 +4930,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -4706,12 +4961,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier ROA).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -4742,12 +4997,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier EZF).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -4778,12 +5033,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier SHD).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -4814,12 +5069,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W91).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -4850,12 +5105,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier SFQ).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -4888,7 +5143,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -4919,12 +5174,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier TGI).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -4955,12 +5210,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier XSA).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -4991,12 +5246,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier JFZ).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -5029,7 +5284,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -5062,7 +5317,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -5098,7 +5353,7 @@
       "short_description": "Virginia port authority and terminal network supporting maritime and intermodal logistics.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
         }
@@ -5133,7 +5388,7 @@
       "short_description": "Community-college UMS coursework covering remote-pilot knowledge and small-UAS operations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VCCS: Unmanned Systems Courses at Tidewater Community College",
           "url": "https://courses.vccs.edu/colleges/tcc/courses/UMS-UnmannedSystems"
         }
@@ -5167,7 +5422,7 @@
       "short_description": "Autonomous-trucking technology company founded in Blacksburg and part of Daimler Truck.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -5198,12 +5453,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier PTB).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -5234,12 +5489,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier HLX).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -5272,7 +5527,7 @@
       "short_description": "Publicly documented Virginia military or federal installation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -5283,6 +5538,41 @@
       ],
       "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    },
+    {
+      "capabilities": [
+        "Safety, policy, regulatory, and airspace integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Charlottesville",
+      "latitude": 38.035,
+      "location_precision": "locality",
+      "longitude": -78.503,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "University of Virginia UAS Operations Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Central Virginia",
+      "short_description": "University UAS operations program supporting compliant research, instruction, and approved flight activity.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-17",
+          "title": "University of Virginia Unmanned Aircraft Systems Operations",
+          "url": "https://uvaemergency.virginia.edu/unmanned-aircraft-uas/operating-uas-uva"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Programs and initiatives"
+      ],
+      "unmanned_systems_relevance": "Operates a documented institutional UAS program supporting research, instruction, and compliant flight operations.",
+      "website_url": "https://uvaemergency.virginia.edu/unmanned-aircraft-uas/operating-uas-uva"
     },
     {
       "capabilities": [
@@ -5309,7 +5599,7 @@
       "short_description": "Research laboratory developing bio-inspired structures, controls, and aquatic robotic concepts.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "UVA Robotics, Dynamics, and Autonomous Systems",
           "url": "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/research/robotics-dynamics-and-autonomous-systems"
         }
@@ -5321,6 +5611,44 @@
       ],
       "unmanned_systems_relevance": "Provides documented marine robotics, autonomy, sensing, navigation, or field-test capacity for surface and undersea systems.",
       "website_url": "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/research/robotics-dynamics-and-autonomous-systems"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Navigation and positioning",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Eastville",
+      "latitude": 37.352,
+      "location_precision": "locality",
+      "longitude": -75.946,
+      "missions": [
+        "Maritime domain awareness",
+        "Environmental monitoring"
+      ],
+      "name": "UVA Coastal Research Center UAS Operations",
+      "platform_domains": [
+        "Maritime surface systems",
+        "Undersea systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Eastern Shore",
+      "short_description": "Coastal research-center UAS operations for compliant flights from the center's property and vessels.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-17",
+          "title": "UVA Coastal Research Center Drone Pilot Compliance Checklist",
+          "url": "https://abcrc.virginia.edu/files/abcrc/files/coastal_research_center___drone_pilot_compliance_checklist.pdf"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Test and operational environments"
+      ],
+      "unmanned_systems_relevance": "Provides documented marine robotics, autonomy, sensing, navigation, or field-test capacity for surface and undersea systems.",
+      "website_url": "https://abcrc.virginia.edu/files/abcrc/files/coastal_research_center___drone_pilot_compliance_checklist.pdf"
     },
     {
       "capabilities": [
@@ -5345,7 +5673,7 @@
       "short_description": "Cyber-physical systems research center with robotics, autonomy, sensing, and smart-systems programs.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "UVA Robotics and Autonomous Systems",
           "url": "https://www.engineering.virginia.edu/labs-groups/link-lab/research/robotics-and-autonomous-systems"
         }
@@ -5381,7 +5709,7 @@
       "short_description": "Research program spanning autonomous vehicles, drones, multi-robot systems, and human-robot interaction.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "UVA Robotics and Autonomous Systems",
           "url": "https://www.engineering.virginia.edu/labs-groups/link-lab/research/robotics-and-autonomous-systems"
         }
@@ -5417,7 +5745,7 @@
       "short_description": "Engineering education path covering embedded systems, drones, robotics, communications, and cyber-physical systems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "UVA Robotics and Embedded Systems",
           "url": "https://engineering.virginia.edu/department/electrical-and-computer-engineering/robotics-and-embedded-systems"
         }
@@ -5452,7 +5780,7 @@
       "short_description": "Mechanical and aerospace research area covering aerial, underwater, ground, and space autonomy.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "UVA Robotics, Dynamics, and Autonomous Systems",
           "url": "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/research/robotics-dynamics-and-autonomous-systems"
         }
@@ -5488,7 +5816,7 @@
       "short_description": "Research laboratory for autonomous vehicles, coordinated robotics, sensing, control, and AI.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VCU Autonomous Robots and Vehicles Laboratory",
           "url": "https://arvl.lab.vcu.edu/"
         }
@@ -5524,7 +5852,7 @@
       "short_description": "VCU engineering research group connecting robotics and autonomous-systems faculty and laboratories.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VCU Autonomous Robots and Vehicles Laboratory",
           "url": "https://arvl.lab.vcu.edu/"
         }
@@ -5560,7 +5888,7 @@
       "short_description": "University UAV research capability documented for flight-control and payload-system research.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -5594,7 +5922,7 @@
       "short_description": "Statewide alliance convening advanced-air-mobility and unmanned-systems stakeholders.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Unmanned Systems Center",
           "url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
         }
@@ -5628,7 +5956,7 @@
       "short_description": "Commonwealth aviation program covering automated small uncrewed systems, remotely controlled aircraft, and aviation automation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Department of Aviation Advanced Air Mobility",
           "url": "https://doav.virginia.gov/advanced_air_mobility/"
         }
@@ -5664,7 +5992,7 @@
       "short_description": "Northern Virginia road network and test environments supporting automated-vehicle development.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -5676,6 +6004,41 @@
       ],
       "unmanned_systems_relevance": "Develops robotics, perception, planning, control, or connected-vehicle capabilities that support autonomous ground and cross-domain systems.",
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
+    },
+    {
+      "capabilities": [
+        "Safety, policy, regulatory, and airspace integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Richmond",
+      "latitude": 37.541,
+      "location_precision": "locality",
+      "longitude": -77.436,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Virginia Commonwealth University UAS Operations Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Greater Richmond",
+      "short_description": "Institutional UAS program governing and supporting research, instructional, and operational flights.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-17",
+          "title": "Virginia Commonwealth University Unmanned Aircraft System",
+          "url": "https://healthsafety.vcu.edu/operational-risk/unmanned-aircraft-system/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Programs and initiatives"
+      ],
+      "unmanned_systems_relevance": "Operates a documented institutional UAS program supporting research, instruction, and compliant flight operations.",
+      "website_url": "https://healthsafety.vcu.edu/operational-risk/unmanned-aircraft-system/"
     },
     {
       "capabilities": [
@@ -5700,7 +6063,7 @@
       "short_description": "Statewide community-college UMS curriculum spanning remote-pilot ground school, operations, maintenance, imaging, and internships.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Community College System Unmanned Systems Courses",
           "url": "https://courses.vccs.edu/courses/UMS-UnmannedSystems"
         }
@@ -5736,7 +6099,7 @@
       "short_description": "Department of Wildlife Resources program using UAS for conservation-police and public-safety missions.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Conservation Police 2024 Annual Report",
           "url": "https://dwr.virginia.gov/wp-content/uploads/media/Virginia-Conservation-Police-Annual-Report-2024.pdf"
         }
@@ -5770,7 +6133,7 @@
       "short_description": "Commonwealth aviation agency leading aviation planning and advanced-air-mobility initiatives.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia AAM and Unmanned Systems Test Site Program",
           "url": "https://vipc.org/virginia-launches-advanced-air-mobility-and-unmanned-systems-test-site-program/"
         }
@@ -5807,7 +6170,7 @@
       "short_description": "State forestry drone program supporting wildfire response, incident management, mapping, and natural-resource missions.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Department of Forestry Drone Program",
           "url": "https://dof.virginia.gov/user_directory/jason-a-braunstein/"
         }
@@ -5841,7 +6204,7 @@
       "short_description": "State transportation program governing and supporting UAS use for transportation missions.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Unmanned Systems Center",
           "url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
         }
@@ -5878,7 +6241,7 @@
       "short_description": "DCJS grant program supporting Virginia first responders replacing qualifying unmanned aircraft with compliant systems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "DCJS Unmanned Aircraft Trade and Replace Program",
           "url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
         }
@@ -5912,7 +6275,7 @@
       "short_description": "Statewide information-sharing capability supporting safe and informed UAS operations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Unmanned Systems Center",
           "url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
         }
@@ -5944,12 +6307,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier VJI).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -5984,7 +6347,7 @@
       "short_description": "Career Studies Certificate preparing students to integrate remote-pilot technologies and pursue Part 107 certification.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Highlands Community College Small UAS Certificate",
           "url": "https://www.vhcc.edu/small-unmanned-aerial-systems-suas"
         }
@@ -6020,7 +6383,7 @@
       "short_description": "Intermodal rail terminal connecting inland markets to Hampton Roads container terminals.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
         }
@@ -6053,7 +6416,7 @@
       "short_description": "Commonwealth innovation organization supporting grants, partnerships, commercialization, and seed funding.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Unmanned Systems Center",
           "url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
         }
@@ -6089,7 +6452,7 @@
       "short_description": "ODU institute coordinating spaceflight, autonomous-systems research, education, and commercialization.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -6127,7 +6490,7 @@
       "short_description": "Marine science institute providing coastal research, field operations, sensing, and autonomous-platform context.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -6164,7 +6527,7 @@
       "short_description": "Semi-automated container terminal with rail, highway, and deep-water access.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
         }
@@ -6199,7 +6562,7 @@
       "short_description": "Road-course test environment identified by VEDP as part of Virginia's automated-vehicle ecosystem.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -6237,7 +6600,7 @@
       "short_description": "ODU research center with virtual-environment, robotics, and unmanned-surface-vehicle work.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -6273,7 +6636,7 @@
       "short_description": "Career Studies Certificate covering drone operation, autonomous flight, construction, maintenance, and Part 107 preparation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Peninsula Community College Drone Flight Technician",
           "url": "https://www.vpcc.edu/program/small-unmanned-aircraft-systems-drone-flight-technician/"
         }
@@ -6306,7 +6669,7 @@
       "short_description": "VIPC center connecting public-safety users with emerging technology, demonstrations, and research.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Unmanned Systems Center",
           "url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
         }
@@ -6342,7 +6705,7 @@
       "short_description": "Controlled transportation test facility used for connected and automated vehicle research.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -6354,6 +6717,41 @@
       ],
       "unmanned_systems_relevance": "Develops robotics, perception, planning, control, or connected-vehicle capabilities that support autonomous ground and cross-domain systems.",
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Hampton",
+      "latitude": 37.03,
+      "location_precision": "locality",
+      "longitude": -76.346,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Virginia Space Grant Consortium Drone Academies",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Hampton Roads",
+      "short_description": "Drone-academy program delivering unmanned-systems education with Virginia community-college partners.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-17",
+          "title": "Virginia Space Grant Consortium GeoTED-UAS Drone Academies",
+          "url": "https://vsgc.odu.edu/geoted-uas/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://vsgc.odu.edu/geoted-uas/"
     },
     {
       "capabilities": [
@@ -6379,7 +6777,7 @@
       "short_description": "State police drone program supporting crash and crime-scene mapping, searches, inspection, and specialized operations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia State Police Department History",
           "url": "https://vsp.virginia.gov/about-us/department-history/"
         }
@@ -6415,7 +6813,7 @@
       "short_description": "Indoor research hangar for autonomous aerial and ground robot control experiments.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Tech Advanced Control Systems Lab",
           "url": "https://www.ise.vt.edu/research/labs/advanced-control-systems-lab.html"
         }
@@ -6451,7 +6849,7 @@
       "short_description": "Research laboratory for control, estimation, and autonomous-system design.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -6487,7 +6885,7 @@
       "short_description": "University-wide network connecting autonomous-systems and robotics research groups.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -6525,7 +6923,7 @@
       "short_description": "Interdisciplinary center developing autonomous marine vehicles, navigation, control, and multi-agent systems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Tech Center for Marine Autonomy and Robotics",
           "url": "https://marinerobotics.centers.vt.edu/index.html"
         }
@@ -6537,6 +6935,43 @@
       ],
       "unmanned_systems_relevance": "Provides documented marine robotics, autonomy, sensing, navigation, or field-test capacity for surface and undersea systems.",
       "website_url": "https://marinerobotics.centers.vt.edu/index.html"
+    },
+    {
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Blacksburg",
+      "latitude": 37.229,
+      "location_precision": "locality",
+      "longitude": -80.414,
+      "missions": [
+        "Counter-UAS",
+        "Force protection and installation security"
+      ],
+      "name": "Virginia Tech Counter UAS Research and Testing Center",
+      "platform_domains": [
+        "Counter-UAS",
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "New River Valley",
+      "short_description": "Research and testing center with outdoor, indoor, and virtual counter-UAS laboratories.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-17",
+          "title": "Virginia Tech Counter UAS Research and Testing Center",
+          "url": "https://news.vt.edu/articles/2025/04/research-counteruascenter.html"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Test and operational environments"
+      ],
+      "unmanned_systems_relevance": "Provides documented counter-UAS research, testing, and evaluation capabilities.",
+      "website_url": "https://news.vt.edu/articles/2025/04/research-counteruascenter.html"
     },
     {
       "capabilities": [
@@ -6561,7 +6996,7 @@
       "short_description": "Netted flight facility supporting university UAS instruction, research, and operations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -6597,7 +7032,7 @@
       "short_description": "Eastern Shore field research and outreach on agricultural drone sensing and spray-drone applications.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Tech Eastern Shore AREC Drone Research",
           "url": "https://www.arec.vaes.vt.edu/content/dam/arec_vaes_vt_edu/eastern-shore/newsletter/The%20Stalk%20-%20July%202024.pdf"
         }
@@ -6633,7 +7068,7 @@
       "short_description": "Research program applying UAV imagery and analytics to crop health, nutrient response, biomass, and yield estimation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Tech Grain Crop Drone Research",
           "url": "https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/spes-747.html"
         }
@@ -6668,7 +7103,7 @@
       "short_description": "Research center for sensing, communications, autonomy, cybersecurity, and national-security technology.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -6703,7 +7138,7 @@
       "short_description": "University advanced-manufacturing initiative including robotics, autonomous assembly, and field robotics.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Tech Robotics and Autonomy",
           "url": "https://made.vt.edu/robotics-autonomy.html"
         }
@@ -6739,7 +7174,7 @@
       "short_description": "Transportation research institute operating connected and automated vehicle research programs.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -6751,6 +7186,42 @@
       ],
       "unmanned_systems_relevance": "Develops robotics, perception, planning, control, or connected-vehicle capabilities that support autonomous ground and cross-domain systems.",
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Blacksburg",
+      "latitude": 37.229,
+      "location_precision": "locality",
+      "longitude": -80.414,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Virginia Tech Uncrewed Systems Laboratory",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "New River Valley",
+      "short_description": "University laboratory conducting uncrewed-system research, including autonomous aerial search applications.",
+      "sources": [
+        {
+          "last_verified_at": "2026-07-17",
+          "title": "Virginia Tech Uncrewed Systems Laboratory",
+          "url": "https://usl.me.vt.edu/projects.html"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Test and operational environments"
+      ],
+      "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
+      "website_url": "https://usl.me.vt.edu/projects.html"
     },
     {
       "capabilities": [
@@ -6771,12 +7242,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier BCB).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -6811,7 +7282,7 @@
       "short_description": "Virginia small-UAS training, safety, operational integration, and consulting provider.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia UAS",
           "url": "https://virginiauas.com/"
         }
@@ -6844,7 +7315,7 @@
       "short_description": "Statewide nexus for Virginia activity across land, air, sea, space, and advanced air mobility.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Unmanned Systems Center",
           "url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
         }
@@ -6879,7 +7350,7 @@
       "short_description": "Truck manufacturing facility connected to Volvo autonomous-truck development documented by VEDP.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -6910,12 +7381,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier AKQ).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -6946,12 +7417,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier JGG).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -6982,12 +7453,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier HWY).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -7018,12 +7489,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier RMN).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -7054,12 +7525,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W78).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -7090,12 +7561,12 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier OKV).",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -7130,7 +7601,7 @@
       "short_description": "Documented commercial drone-delivery program launched in Christiansburg in 2019.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -7166,7 +7637,7 @@
       "short_description": "Dedicated Loudoun County facility for unmanned-systems testing, development, training, and demonstrations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-16",
+          "last_verified_at": "2026-07-17",
           "title": "Xelevate Leesburg Unmanned Systems Facility",
           "url": "https://xelevateus.com/leesburg-virginia/"
         }
