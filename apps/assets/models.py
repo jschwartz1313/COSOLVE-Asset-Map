@@ -1,6 +1,7 @@
 import uuid
 from decimal import Decimal
 
+from django.conf import settings
 from django.core.exceptions import ValidationError
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
@@ -92,6 +93,15 @@ class Asset(models.Model):
         max_length=12, choices=Visibility.choices, default=Visibility.INTERNAL
     )
     last_verified_at = models.DateField(null=True, blank=True)
+    reviewed_at = models.DateTimeField(null=True, blank=True)
+    reviewed_by = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name="reviewed_assets",
+    )
+    review_notes = models.TextField(blank=True)
     published_at = models.DateTimeField(null=True, blank=True)
     internal_notes = models.TextField(blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -102,6 +112,11 @@ class Asset(models.Model):
 
     class Meta:
         ordering = ("name",)
+        permissions = [
+            ("can_verify_asset", "Can verify asset records"),
+            ("can_publish_asset", "Can publish or archive asset records"),
+            ("can_export_asset", "Can export asset records"),
+        ]
         constraints = [
             models.UniqueConstraint(fields=("name", "city"), name="unique_asset_name_city")
         ]
@@ -147,6 +162,16 @@ class Asset(models.Model):
 
     def get_absolute_url(self):
         return reverse("core:asset-detail", kwargs={"slug": self.slug})
+
+    @property
+    def is_editorially_reviewed(self):
+        return self.reviewed_at is not None and self.last_verified_at is not None
+
+    @property
+    def verification_label(self):
+        if self.is_editorially_reviewed:
+            return "Editorially reviewed"
+        return "Source-backed; editorial review pending"
 
     @property
     def has_public_coordinates(self):

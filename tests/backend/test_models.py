@@ -39,6 +39,12 @@ class AssetModelTests(TestCase):
         self.make_asset(name="Internal", visibility=Asset.Visibility.INTERNAL).save()
         self.assertQuerySetEqual(Asset.public.all(), [public])
 
+    def test_source_backed_record_is_not_labeled_editorially_reviewed(self):
+        asset = self.make_asset(status=Asset.Status.PUBLISHED, visibility=Asset.Visibility.PUBLIC)
+        asset.save()
+        self.assertFalse(asset.is_editorially_reviewed)
+        self.assertIn("review pending", asset.verification_label)
+
     def test_relationship_cannot_target_itself(self):
         asset = self.make_asset()
         asset.save()

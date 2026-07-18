@@ -41,3 +41,8 @@ python manage.py test tests.backend.test_real_catalog
 ```
 
 Review generated changes before seeding. The `--prune` option removes only catalog-managed records absent from the new snapshot; it does not remove manually curated records without the catalog provenance marker.
+## Geographic reference layers
+
+Virginia county and independent-city boundaries are derived from the U.S. Census Bureau
+TIGERweb State and County service, January 1, 2025 vintage. The locally stored GeoJSON is
+simplified for web display and should not be used for surveying or legal boundary decisions.

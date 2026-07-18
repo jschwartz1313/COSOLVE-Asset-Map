@@ -13,17 +13,24 @@ def taxonomy_values(model):
     return list(model.objects.filter(is_active=True).values("name", "slug"))
 
 
+def requested_limit(request, default, maximum):
+    try:
+        return min(max(int(request.GET.get("limit", str(default))), 1), maximum)
+    except ValueError:
+        return default
+
+
 @require_GET
 def asset_list(request):
     queryset = filter_public_assets(request.GET)
-    try:
-        limit = min(max(int(request.GET.get("limit", "100")), 1), 500)
-    except ValueError:
-        limit = 100
+    limit = requested_limit(request, 100, 500)
     records = [public_asset_dict(asset, include_detail=False) for asset in queryset[:limit]]
+    result_count = queryset.count()
     return JsonResponse(
         {
-            "result_count": queryset.count(),
+            "result_count": result_count,
+            "returned_count": len(records),
+            "truncated": result_count > len(records),
             "active_filters": active_filters(request.GET),
             "results": records,
         }
@@ -33,11 +40,15 @@ def asset_list(request):
 @require_GET
 def asset_geojson(request):
     queryset = filter_public_assets(request.GET)
-    features = [asset_feature(asset) for asset in queryset[:1000]]
+    limit = requested_limit(request, 2000, 5000)
+    features = [asset_feature(asset) for asset in queryset[:limit]]
+    result_count = queryset.count()
     return JsonResponse(
         {
             "type": "FeatureCollection",
-            "result_count": queryset.count(),
+            "result_count": result_count,
+            "returned_count": len(features),
+            "truncated": result_count > len(features),
             "active_filters": active_filters(request.GET),
             "features": features,
         }

@@ -2,6 +2,8 @@
 
 Deploy with Python 3.12+, PostgreSQL, Gunicorn, and a reverse proxy or managed Django platform. Configure all values from `.env.example`; do not place credentials in the repository.
 
+The checked-in `render.yaml` and `build.sh` define a Render web service and PostgreSQL database. Create a Blueprint from the repository to provision both. Set `REQUIRE_SITE_LOGIN=true` before deployment when the entire site should require an account.
+
 ```bash
 export DJANGO_SETTINGS_MODULE=config.settings.production
 python manage.py migrate

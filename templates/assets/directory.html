@@ -21,14 +21,19 @@
         <a class="button secondary" href="{% url 'core:map' %}?{{ request.GET.urlencode }}">View on map</a>
       </div>
     </div>
-    <div class="directory-grid">
+    <div class="directory-columns" aria-hidden="true"><span>Asset</span><span>Classification</span><span>Location</span></div>
+    <div class="directory-list">
       {% for asset in page_obj %}
-        <article class="asset-card">
-          <div class="card-meta"><span class="type-pill type-{{ asset.record_type }}">{{ asset.get_record_type_display }}</span><span>{{ asset.city }}{% if asset.city and asset.state %}, {% endif %}{{ asset.state }}</span></div>
-          <h3><a href="{{ asset.get_absolute_url }}">{{ asset.name }}</a></h3>
-          <p>{{ asset.short_description }}</p>
-          <div class="tag-list">{% for tag in asset.strategic_categories.all|slice:":2" %}<span>{{ tag.name }}</span>{% endfor %}</div>
-          <a class="card-link" href="{{ asset.get_absolute_url }}">View asset <span aria-hidden="true">&rarr;</span></a>
+        <article class="directory-row">
+          <div class="directory-row-main">
+            <h3><a href="{{ asset.get_absolute_url }}">{{ asset.name }}</a></h3>
+            <p>{{ asset.short_description }}</p>
+          </div>
+          <div class="directory-classification">
+            <span class="type-pill type-{{ asset.record_type }}">{{ asset.get_record_type_display }}</span>
+            {% with category=asset.strategic_categories.all|first %}{% if category %}<small>{{ category.name }}</small>{% endif %}{% endwith %}
+          </div>
+          <div class="directory-location"><strong>{{ asset.city|default:"Virginia" }}</strong>{% if asset.city and asset.state %}<span>{{ asset.state }}</span>{% endif %}</div>
         </article>
       {% empty %}
         <div class="empty-state"><h3>No matching assets</h3><p>Adjust the active filters or search terms.</p></div>

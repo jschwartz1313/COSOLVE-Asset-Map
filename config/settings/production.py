@@ -1,4 +1,15 @@
+import os
+
+from django.core.exceptions import ImproperlyConfigured
+
 from .base import *  # noqa: F403
+
+if SECRET_KEY == "local-development-only":  # noqa: F405
+    raise ImproperlyConfigured("DJANGO_SECRET_KEY must be set in production.")
+if not os.getenv("DATABASE_URL"):
+    raise ImproperlyConfigured("DATABASE_URL must be set in production.")
+if not ALLOWED_HOSTS or set(ALLOWED_HOSTS) <= {"localhost", "127.0.0.1"}:  # noqa: F405
+    raise ImproperlyConfigured("DJANGO_ALLOWED_HOSTS must name the production host.")
 
 DEBUG = False
 STORAGES["staticfiles"] = {  # noqa: F405
@@ -11,3 +22,15 @@ SECURE_HSTS_SECONDS = 31_536_000
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "handlers": {"console": {"class": "logging.StreamHandler"}},
+    "root": {"handlers": ["console"], "level": os.getenv("LOG_LEVEL", "INFO")},
+}
+
+if os.getenv("SENTRY_DSN"):
+    import sentry_sdk
+
+    sentry_sdk.init(dsn=os.environ["SENTRY_DSN"], traces_sample_rate=0.1)

@@ -35,6 +35,7 @@ MIDDLEWARE = [
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "apps.core.middleware.OptionalSiteLoginMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
@@ -96,6 +97,10 @@ DEFAULT_MAP_LON = float(os.getenv("DEFAULT_MAP_LON", "-78.7"))
 DEFAULT_MAP_ZOOM = int(os.getenv("DEFAULT_MAP_ZOOM", "7"))
 PUBLIC_SITE_URL = os.getenv("PUBLIC_SITE_URL", "http://127.0.0.1:8000")
 STALE_VERIFICATION_DAYS = int(os.getenv("STALE_VERIFICATION_DAYS", "180"))
+REQUIRE_SITE_LOGIN = os.getenv("REQUIRE_SITE_LOGIN", "false").lower() == "true"
+LOGIN_URL = "/accounts/login/"
+LOGIN_REDIRECT_URL = "/map/"
+LOGOUT_REDIRECT_URL = "/accounts/login/"
 
 SECURE_CONTENT_TYPE_NOSNIFF = True
 X_FRAME_OPTIONS = "DENY"

@@ -45,16 +45,36 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
 
 .messages { position: fixed; z-index: 2000; right: 16px; top: 82px; display: grid; gap: 8px; }
 .message { background: var(--ink); color: white; padding: 11px 14px; border-radius: var(--radius); box-shadow: var(--shadow); }
+.login-page { min-height: calc(100vh - var(--header-height)); display: grid; place-items: center; padding: 30px 18px; }
+.login-form { width: min(380px, 100%); display: grid; gap: 16px; padding: 26px; border: 1px solid var(--line); background: var(--paper); }
+.login-form h1 { margin: 0; font-size: 26px; }
+.login-form input { width: 100%; height: 42px; padding: 0 11px; border: 1px solid var(--line-strong); border-radius: 4px; }
+.form-error { margin: 0; color: var(--brand-dark); font-size: 12px; }
 
 .directory-layout { width: min(1440px, 100%); margin: 0 auto; display: grid; grid-template-columns: 300px minmax(0, 1fr); min-height: calc(100vh - var(--header-height)); }
-.directory-filters { padding: 36px 24px; background: var(--paper); border-right: 1px solid var(--line); }
-.directory-filters h1 { font-size: 25px; margin: 7px 0 24px; }
-.directory-filters form { display: grid; gap: 18px; }
-.directory-results { padding: 36px clamp(24px, 4vw, 58px) 60px; }
-.directory-heading { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 24px; }
-.directory-heading h2 { margin: 6px 0 0; font-size: 24px; }
+.directory-filters { padding: 24px 20px; background: var(--paper); border-right: 1px solid var(--line); }
+.directory-filters h1 { font-size: 23px; margin: 6px 0 18px; }
+.directory-filters form { display: grid; gap: 14px; }
+.directory-results { padding: 24px clamp(22px, 3vw, 42px) 42px; }
+.directory-heading { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 18px; }
+.directory-heading h2 { margin: 5px 0 0; font-size: 22px; }
 .heading-actions { display: flex; gap: 8px; }
-.directory-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.directory-columns, .directory-row { display: grid; grid-template-columns: minmax(0, 1fr) 190px 120px; gap: 24px; }
+.directory-columns { padding: 0 14px 8px; color: var(--ink-muted); border-bottom: 1px solid var(--line-strong); font-size: 10px; font-weight: 800; text-transform: uppercase; }
+.directory-list { background: var(--paper); border-bottom: 1px solid var(--line-strong); }
+.directory-row { min-width: 0; align-items: center; padding: 14px; border-bottom: 1px solid var(--line); }
+.directory-row:last-child { border-bottom: 0; }
+.directory-row:hover { background: #f5f8f6; }
+.directory-row-main { min-width: 0; }
+.directory-row-main h3 { margin: 0 0 5px; font-size: 15px; line-height: 1.25; }
+.directory-row-main h3 a { color: var(--ink); text-decoration-color: transparent; text-underline-offset: 3px; }
+.directory-row-main h3 a:hover { color: var(--brand-dark); text-decoration-color: currentColor; }
+.directory-row-main p { margin: 0; overflow: hidden; color: var(--ink-muted); font-size: 12px; line-height: 1.4; text-overflow: ellipsis; white-space: nowrap; }
+.directory-classification { min-width: 0; display: grid; justify-items: start; gap: 5px; }
+.directory-classification small { max-width: 100%; overflow: hidden; color: var(--ink-muted); font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+.directory-location { min-width: 0; display: grid; gap: 2px; font-size: 12px; }
+.directory-location strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.directory-location span { color: var(--ink-muted); font-size: 10px; }
 .asset-card { min-width: 0; min-height: 250px; padding: 20px; display: flex; flex-direction: column; background: var(--paper); border: 1px solid var(--line); border-top: 3px solid var(--line-strong); border-radius: var(--radius); }
 .asset-card:hover { border-top-color: var(--brand); box-shadow: 0 8px 24px rgb(25 33 38 / 8%); }
 .asset-card h3 { margin: 14px 0 9px; font-size: 18px; line-height: 1.25; }
@@ -94,6 +114,7 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
 .detail-sidebar dd { margin: 6px 0 0; display: grid; gap: 4px; font-size: 13px; }
 .detail-sidebar .button { margin-top: 12px; }
 .source-list, .relationship-list { display: grid; gap: 9px; }
+.section-note { margin: 10px 0 0; color: var(--ink-muted); font-size: 12px; }
 .source-list > div, .relationship-list a { padding: 12px 0; display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--line); }
 .source-list span, .relationship-list span { color: var(--ink-muted); font-size: 12px; }
 .relationship-list a { text-decoration: none; }
@@ -127,7 +148,7 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
 .methodology-panel dl { margin: 0; }.methodology-panel dt { margin-top: 18px; color: var(--ink-muted); font-size: 11px; font-weight: 800; text-transform: uppercase; }.methodology-panel dd { margin: 5px 0; font-size: 13px; }
 
 @media (max-width: 1050px) {
-  .directory-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .directory-columns, .directory-row { grid-template-columns: minmax(0, 1fr) 170px 100px; gap: 16px; }
 }
 @media (max-width: 760px) {
   :root { --header-height: 60px; }
@@ -141,8 +162,13 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
   .directory-filters { border-right: 0; border-bottom: 1px solid var(--line); padding: 24px 18px; }
   .directory-results { padding: 24px 18px 40px; }
   .directory-heading { align-items: start; }
-  .directory-grid { grid-template-columns: 1fr; }
-  .asset-card { min-height: 220px; }
+  .directory-columns { display: none; }
+  .directory-row { grid-template-columns: minmax(0, 1fr) auto; gap: 8px 14px; padding: 14px 0; }
+  .directory-row-main { grid-column: 1 / -1; }
+  .directory-row-main p { white-space: normal; }
+  .directory-classification { display: flex; align-items: center; }
+  .directory-classification small { max-width: 45vw; }
+  .directory-location { justify-items: end; }
   .detail-page { width: min(100% - 28px, 1180px); }
   .detail-header { grid-template-columns: 1fr; gap: 24px; }
   .detail-header h1 { font-size: 36px; }

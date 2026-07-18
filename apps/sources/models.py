@@ -19,6 +19,9 @@ class Source(models.Model):
     )
     notes = models.TextField(blank=True)
     is_public = models.BooleanField(default=True)
+    last_checked_at = models.DateTimeField(null=True, blank=True)
+    http_status = models.PositiveSmallIntegerField(null=True, blank=True)
+    check_error = models.CharField(max_length=240, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:

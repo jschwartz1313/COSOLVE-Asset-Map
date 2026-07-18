@@ -71,6 +71,14 @@ class PublicApiTests(TestCase):
             if feature["properties"]["name"] == self.public.name
         )
         self.assertEqual(public_feature["geometry"]["type"], "Point")
+        self.assertFalse(body["truncated"])
+        self.assertEqual(body["returned_count"], 2)
+
+    def test_geojson_reports_when_limit_truncates_results(self):
+        body = self.client.get(reverse("api:asset-geojson"), {"limit": 1}).json()
+        self.assertEqual(body["result_count"], 2)
+        self.assertEqual(body["returned_count"], 1)
+        self.assertTrue(body["truncated"])
 
     def test_detail_excludes_internal_fields(self):
         response = self.client.get(reverse("api:asset-detail", args=[self.public.slug]))

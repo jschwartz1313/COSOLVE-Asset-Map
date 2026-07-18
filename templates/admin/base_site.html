@@ -1,0 +1,22 @@
+{% extends "admin/base.html" %}
+{% load i18n static %}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | {{ site_title|default:_('COSOLVE Admin') }}{% endblock %}
+
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" href="{% static 'css/admin.css' %}">{% endblock %}
+
+{% block branding %}
+<div id="site-name"><a href="{% url 'admin:index' %}">COSOLVE Asset Map</a></div>
+{% if user.is_anonymous %}{% include "admin/color_theme_toggle.html" %}{% endif %}
+{% endblock %}
+
+{% block nav-global %}
+{% if user.is_staff %}
+<nav class="cosolve-admin-nav" aria-label="Admin tools">
+  <a href="{% url 'admin:assets_asset_changelist' %}">Assets</a>
+  <a href="{% url 'imports:data-quality' %}">Data quality</a>
+  {% if perms.assets.add_asset %}<a href="{% url 'imports:preview' %}">Import CSV</a>{% endif %}
+  <a href="{% url 'core:map' %}">View site</a>
+</nav>
+{% endif %}
+{% endblock %}

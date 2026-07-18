@@ -1,5 +1,4 @@
 import json
-from datetime import date
 from pathlib import Path
 
 from django.conf import settings
@@ -59,52 +58,55 @@ class Command(BaseCommand):
             region, _ = Region.objects.get_or_create(
                 name=record["region"], defaults={"region_type": "Virginia ecosystem region"}
             )
-            verified_at = date.fromisoformat(
-                max(
-                    source.get("last_verified_at", catalog["generated_at"])
-                    for source in record["sources"]
-                )
-            )
-            asset, was_created = Asset.objects.update_or_create(
+            asset, was_created = Asset.objects.get_or_create(
                 name=record["name"],
                 city=record["city"],
                 defaults={
                     "record_type": record["record_type"],
                     "short_description": record["short_description"],
                     "unmanned_systems_relevance": record["unmanned_systems_relevance"],
-                    "website_url": record.get("website_url", ""),
-                    "state": record.get("state", "VA"),
                     "latitude": record["latitude"],
                     "longitude": record["longitude"],
                     "location_precision": record["location_precision"],
                     "region": region,
                     "status": Asset.Status.PUBLISHED,
                     "visibility": Asset.Visibility.PUBLIC,
-                    "last_verified_at": verified_at,
-                    "internal_notes": (
-                        f"Catalog provenance: {record['provenance']}. "
-                        f"Source snapshot verified {verified_at.isoformat()}."
-                    ),
                 },
             )
+            for field in (
+                "record_type",
+                "short_description",
+                "unmanned_systems_relevance",
+                "latitude",
+                "longitude",
+                "location_precision",
+            ):
+                setattr(asset, field, record[field])
+            asset.website_url = record.get("website_url", "")
+            asset.state = record.get("state", "VA")
+            asset.region = region
+            asset.internal_notes = f"Catalog provenance: {record['provenance']}."
+            asset.save()
             for field, model in TAXONOMY_FIELDS.items():
                 values = [model.objects.get_or_create(name=name)[0] for name in record[field]]
                 getattr(asset, field).set(values)
 
+            source_titles = {source_data["title"] for source_data in record["sources"]}
+            asset.sources.filter(notes__startswith="Catalog provenance:").exclude(
+                title__in=source_titles
+            ).delete()
             for source_data in record["sources"]:
-                Source.objects.update_or_create(
+                source, source_created = Source.objects.get_or_create(
                     asset=asset,
                     title=source_data["title"],
-                    defaults={
-                        "url": source_data["url"],
-                        "last_verified_at": date.fromisoformat(
-                            source_data.get("last_verified_at", catalog["generated_at"])
-                        ),
-                        "verification_status": "verified",
-                        "notes": f"Catalog provenance: {record['provenance']}",
-                        "is_public": True,
-                    },
                 )
+                source.url = source_data["url"]
+                source.notes = f"Catalog provenance: {record['provenance']}"
+                source.is_public = True
+                if source_created:
+                    source.verification_status = "unreviewed"
+                    source.last_verified_at = None
+                source.save()
             created += int(was_created)
             updated += int(not was_created)
 

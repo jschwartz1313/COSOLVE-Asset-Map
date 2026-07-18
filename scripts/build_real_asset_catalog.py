@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "virginia_real_assets.json"
-VERIFIED_DATE = "2026-07-17"
+CATALOG_DATE = "2026-07-17"
 
 FAA_LAYER = (
     "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
@@ -148,7 +148,7 @@ SOURCES = {
     "xelevate": ("Xelevate Leesburg Unmanned Systems Facility", "https://xelevateus.com/leesburg-virginia/"),
     "virginia_uas": ("Virginia UAS", "https://virginiauas.com/"),
     "aerovironment": ("AeroVironment", "https://www.avinc.com/domains/"),
-    "qinetiq": ("QinetiQ US", "https://www.qinetiq.com/en-us/"),
+    "qinetiq": ("QinetiQ US locations", "https://www.qinetiq.com/en-us/who-we-are/our-locations"),
     "dedrone": ("Dedrone by Axon", "https://www.dedrone.com/about/contact-us"),
     "vt_grain_drones": (
         "Virginia Tech Grain Crop Drone Research",
@@ -219,11 +219,11 @@ SOURCES = {
     ),
     "accomack_uas": (
         "Accomack County Emergency Management Drone Program",
-        "https://www.co.accomack.va.us/Home/Components/News/News/381/18",
+        "https://www.co.accomack.va.us/home/showpublisheddocument/19584/638920698825370000",
     ),
     "campbell_uas": (
         "Campbell County Sheriff's Office 2024 Annual Report",
-        "https://www.co.campbell.va.us/DocumentCenter/View/15215/2024-CCSO-Annual-Report",
+        "https://www.campbellcountyva.gov/324/Annual-Reports",
     ),
 }
 
@@ -1791,7 +1791,7 @@ CATALOG_RELATIONSHIPS = [
 
 def source(key):
     title, url = SOURCES[key]
-    return {"title": title, "url": url, "last_verified_at": VERIFIED_DATE}
+    return {"title": title, "url": url}
 
 
 def region_for(latitude, longitude):
@@ -1838,12 +1838,10 @@ def airport_records():
     faa_source = {
         "title": "FAA Airports Feature Service",
         "url": FAA_LAYER,
-        "last_verified_at": VERIFIED_DATE,
     }
     doav_source = {
         "title": "Virginia Public-use Airport Directory",
         "url": DOAV_DIRECTORY,
-        "last_verified_at": VERIFIED_DATE,
     }
     for feature in fetch_public_airports():
         properties = feature["properties"]
@@ -1859,9 +1857,9 @@ def airport_records():
                     f"Operational public-use Virginia aviation facility (FAA identifier {identifier})."
                 ),
                 "unmanned_systems_relevance": (
-                    "Part of Virginia's public-use aviation network, providing regional aviation, "
-                    "access, staging, workforce, and logistics context for the UAS ecosystem. Any "
-                    "UAS activity remains subject to operator, airport, and airspace authorization."
+                    f"{name} is included as public aviation infrastructure serving {city}. "
+                    "Its inclusion does not imply authorization for unmanned-aircraft operations; "
+                    "airport, operator, and airspace approvals still apply."
                 ),
                 "city": city,
                 "state": "VA",
@@ -1886,7 +1884,6 @@ def defense_records():
     factbook_source = {
         "title": "Virginia Military Factbook",
         "url": FACTBOOK,
-        "last_verified_at": VERIFIED_DATE,
     }
     for name, place, region in DEFENSE_INSTALLATIONS:
         latitude, longitude = PLACES[place]
@@ -1894,11 +1891,12 @@ def defense_records():
             {
                 "name": name,
                 "record_type": "organization",
-                "short_description": "Publicly documented Virginia military or federal installation.",
+                "short_description": (
+                    f"{name}, a publicly documented military or federal installation in {place}."
+                ),
                 "unmanned_systems_relevance": (
-                    "Represents publicly documented defense customer, mission-owner, research, "
-                    "training, logistics, or acquisition access within Virginia. The map uses a "
-                    "generalized public location and intentionally omits operational detail."
+                    f"{name} is included as documented federal or defense ecosystem presence in "
+                    f"{place}. Its map point is generalized and omits operational detail."
                 ),
                 "city": place,
                 "state": "VA",
@@ -1973,8 +1971,14 @@ def main():
     records = airport_records() + defense_records() + curated_records()
     records.sort(key=lambda item: item["name"].casefold())
     validate(records)
+    relationships = list(CATALOG_RELATIONSHIPS)
+    relationships.extend(
+        ("Virginia Department of Aviation", "supports", record["name"])
+        for record in records
+        if record["provenance"] == "faa-public-airport"
+    )
     payload = {
-        "generated_at": VERIFIED_DATE,
+        "generated_at": CATALOG_DATE,
         "record_count": len(records),
         "methodology": (
             "Current operational public-use aviation facilities from the FAA feature service, "
@@ -1983,7 +1987,7 @@ def main():
         ),
         "relationships": [
             {"from": from_name, "type": relationship_type, "to": to_name}
-            for from_name, relationship_type, to_name in CATALOG_RELATIONSHIPS
+            for from_name, relationship_type, to_name in relationships
         ],
         "records": records,
     }

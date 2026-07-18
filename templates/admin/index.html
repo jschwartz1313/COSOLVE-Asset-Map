@@ -1,0 +1,46 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static %}
+
+{% block extrastyle %}{{ block.super }}<link rel="stylesheet" href="{% static 'admin/css/dashboard.css' %}">{% endblock %}
+{% block coltype %}colMS{% endblock %}
+{% block bodyclass %}{{ block.super }} dashboard{% endblock %}
+{% block nav-breadcrumbs %}{% endblock %}
+{% block nav-sidebar %}{% endblock %}
+{% block content_title %}{% endblock %}
+
+{% block content %}
+<div id="content-main">
+  <section class="admin-workspace" aria-labelledby="workspace-heading">
+    <h1 id="workspace-heading">Ecosystem data maintenance</h1>
+    <div class="admin-tool-grid">
+      {% if perms.assets.view_asset %}<a class="admin-tool" href="{% url 'admin:assets_asset_changelist' %}"><strong>Asset records</strong><span>Search, filter, edit, review, and publish records.</span></a>{% endif %}
+      {% if perms.assets.add_asset %}<a class="admin-tool" href="{% url 'admin:assets_asset_add' %}"><strong>Add an asset</strong><span>Create one organization, facility, program, or environment.</span></a>{% endif %}
+      {% if perms.sources.view_source %}<a class="admin-tool" href="{% url 'admin:sources_source_changelist' %}"><strong>Sources</strong><span>Maintain citations, dates, and verification status.</span></a>{% endif %}
+      {% if perms.assets.view_relationship %}<a class="admin-tool" href="{% url 'admin:assets_relationship_changelist' %}"><strong>Relationships</strong><span>Connect organizations, facilities, programs, and partners.</span></a>{% endif %}
+      {% if perms.assets.add_asset %}<a class="admin-tool" href="{% url 'imports:preview' %}"><strong>Import CSV</strong><span>Validate a spreadsheet and create internal drafts in bulk.</span></a>{% endif %}
+      {% if perms.assets.can_export_asset %}<a class="admin-tool" href="{% url 'imports:export' %}"><strong>Export public data</strong><span>Download the current public catalog as CSV.</span></a>{% endif %}
+      {% if perms.assets.view_asset %}<a class="admin-tool" href="{% url 'imports:data-quality' %}"><strong>Data quality</strong><span>Find stale, unsourced, unlocated, and unreviewed records.</span></a>{% endif %}
+      {% if perms.auth.view_user %}<a class="admin-tool" href="{% url 'admin:auth_user_changelist' %}"><strong>Users and roles</strong><span>Manage staff accounts and assign COSOLVE permission groups.</span></a>{% endif %}
+    </div>
+  </section>
+  {% include "admin/app_list.html" with app_list=app_list show_changelinks=True %}
+</div>
+{% endblock %}
+
+{% block sidebar %}
+<div id="content-related">
+  <div class="module" id="recent-actions-module">
+    <h2>{% translate 'Recent actions' %}</h2>
+    <h3>{% translate 'My actions' %}</h3>
+    {% load log %}{% get_admin_log 10 as admin_log for_user user %}
+    {% if not admin_log %}<p>{% translate 'None available' %}</p>{% else %}
+    <ul class="actionlist">
+      {% for entry in admin_log %}<li class="{% if entry.is_addition %}addlink{% endif %}{% if entry.is_change %}changelink{% endif %}{% if entry.is_deletion %}deletelink{% endif %}">
+        {% if entry.is_deletion or not entry.get_admin_url %}{{ entry.object_repr }}{% else %}<a href="{{ entry.get_admin_url }}">{{ entry.object_repr }}</a>{% endif %}<br>
+        {% if entry.content_type %}<span class="mini quiet">{{ entry.content_type.name|capfirst }}</span>{% endif %}
+      </li>{% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

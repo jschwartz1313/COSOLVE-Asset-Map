@@ -18,7 +18,7 @@ class RealCatalogFileTests(TestCase):
         records = catalog["records"]
         self.assertGreaterEqual(len(records), 222)
         self.assertEqual(catalog["record_count"], len(records))
-        self.assertGreaterEqual(len(catalog["relationships"]), 30)
+        self.assertGreaterEqual(len(catalog["relationships"]), 90)
         self.assertFalse(any(record["name"].startswith("Demo ") for record in records))
         self.assertTrue(
             all(record["sources"] and record["unmanned_systems_relevance"] for record in records)
@@ -38,4 +38,6 @@ class RealCatalogFileTests(TestCase):
         self.assertEqual(Asset.public.count(), catalog["record_count"])
         self.assertEqual(Relationship.objects.count(), len(catalog["relationships"]))
         self.assertGreaterEqual(Source.objects.count(), catalog["record_count"])
+        self.assertFalse(Source.objects.exclude(verification_status="unreviewed").exists())
+        self.assertFalse(Source.objects.filter(last_verified_at__isnull=False).exists())
         self.assertFalse(Asset.objects.filter(name__startswith="Demo ").exists())

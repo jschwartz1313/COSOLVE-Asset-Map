@@ -5,12 +5,14 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260717">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260717-6">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
       data-lat="{{ default_map_lat }}" data-lon="{{ default_map_lon }}" data-zoom="{{ default_map_zoom }}"
-      data-tile-url="{{ basemap_tile_url }}" data-attribution="{{ basemap_attribution }}">
+      data-tile-url="{{ basemap_tile_url }}" data-attribution="{{ basemap_attribution }}"
+      data-counties-url="{% static 'data/virginia-counties.geojson' %}?v=2025"
+      data-state-boundary-url="{% static 'data/virginia-state-boundary.geojson' %}?v=2025">
   <aside class="filters-panel" aria-label="Asset filters">
     <div class="panel-heading">
       <div><span class="eyebrow">Virginia ecosystem</span><h1>Asset intelligence</h1></div>
@@ -31,6 +33,13 @@
       <div class="map-tools">
         <button class="button compact filter-open" type="button" aria-label="Open filters">Filters</button>
         <button class="button compact" id="reset-view" type="button">Reset view</button>
+        <details class="map-layers">
+          <summary>Layers</summary>
+          <div class="map-layer-options">
+            <label title="Show the Virginia state boundary"><input id="state-boundary-toggle" type="checkbox" checked><span>Virginia boundary</span></label>
+            <label title="Show Virginia county and independent-city boundaries"><input id="county-layer-toggle" type="checkbox"><span>County boundaries</span></label>
+          </div>
+        </details>
       </div>
       <details class="map-legend">
         <summary>Legend</summary>
@@ -40,6 +49,7 @@
           <span><i class="legend-dot program"></i>Program</span>
           <span><i class="legend-dot infrastructure"></i>Infrastructure</span>
           <span><i class="legend-dot operating-environment"></i>Operating environment</span>
+          <span><i class="legend-line state-boundary"></i>Virginia boundary</span>
           <small>Points may represent exact, approximate, or generalized locality locations.</small>
         </div>
       </details>
@@ -60,5 +70,5 @@
 </main>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-<script type="module" src="{% static 'js/map-viewer.js' %}?v=20260717"></script>
+<script type="module" src="{% static 'js/map-viewer.js' %}?v=20260718"></script>
 {% endblock %}

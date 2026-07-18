@@ -9,3 +9,5 @@ staticfiles/
 .pytest_cache/
 .ruff_cache/
 node_modules/
+playwright-report/
+test-results/

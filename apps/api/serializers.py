@@ -50,6 +50,10 @@ def public_asset_dict(asset, include_detail=True):
         "capabilities": names(asset.capabilities),
         "missions": names(asset.missions),
         "last_verified_at": asset.last_verified_at.isoformat() if asset.last_verified_at else None,
+        "review_status": "editorially-reviewed"
+        if asset.is_editorially_reviewed
+        else "source-backed",
+        "review_status_label": asset.verification_label,
         "detail_url": asset.get_absolute_url(),
     }
     if include_detail:
@@ -67,6 +71,7 @@ def public_asset_dict(asset, include_detail=True):
                         "last_verified_at": (
                             source.last_verified_at.isoformat() if source.last_verified_at else None
                         ),
+                        "verification_status": source.verification_status,
                     }
                     for source in asset.sources.all()
                     if source.is_public

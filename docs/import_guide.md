@@ -11,7 +11,6 @@ The upload limit is 2 MB and encoding must be UTF-8. Required columns are:
 
 Optional columns include `city`, `state`, `latitude`, `longitude`, `region`, `strategic_categories`, `platform_domains`, `capabilities`, `missions`, `source_title`, and `source_url`.
 
-Use taxonomy slugs, not display names. Separate multiple slugs with `|`. Latitude and longitude must be provided together. Records are matched by case-insensitive name and city; duplicate matches are reported and skipped during commit.
+Use taxonomy slugs, not display names. Separate multiple slugs with `|`. Latitude and longitude must be provided together. Records are matched by case-insensitive name and city. By default, matches are counted and skipped. Staff may explicitly update matches; updated records become internal and return to editorial review.
 
 Use [sample_assets.csv](../data/sample_assets.csv) as a column template. Review every imported draft, confirm its evidence, set its verification date, then publish through the guarded admin action.
-

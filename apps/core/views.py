@@ -54,13 +54,27 @@ def asset_detail(request, slug):
         from_asset__status=Asset.Status.PUBLISHED,
         from_asset__visibility=Asset.Visibility.PUBLIC,
     ).select_related("from_asset")
+    related_ids = list(relationships.values_list("to_asset_id", flat=True)) + list(
+        incoming_relationships.values_list("from_asset_id", flat=True)
+    )
+    similar_assets = (
+        Asset.public.exclude(pk=asset.pk)
+        .exclude(pk__in=related_ids)
+        .filter(strategic_categories__in=asset.strategic_categories.all())
+        .annotate(shared_categories=Count("strategic_categories", distinct=True))
+        .select_related("region")
+        .order_by("-shared_categories", "name")[:6]
+    )
     return render(
         request,
         "assets/detail.html",
         {
             "asset": asset,
             "relationships": relationships,
+            "relationship_count": relationships.count(),
             "incoming_relationships": incoming_relationships,
+            "incoming_relationship_count": incoming_relationships.count(),
+            "similar_assets": similar_assets,
         },
     )
 

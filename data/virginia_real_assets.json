@@ -22,12 +22,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier MFV).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -36,7 +34,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Accomack County is included as public aviation infrastructure serving Melfa. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -63,9 +61,8 @@
       "short_description": "County emergency-management drone program publicly presented through the Department of Public Safety.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Accomack County Emergency Management Drone Program",
-          "url": "https://www.co.accomack.va.us/Home/Components/News/News/381/18"
+          "url": "https://www.co.accomack.va.us/home/showpublisheddocument/19584/638920698825370000"
         }
       ],
       "state": "VA",
@@ -74,7 +71,7 @@
         "Multi-domain missions"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.co.accomack.va.us/Home/Components/News/News/381/18"
+      "website_url": "https://www.co.accomack.va.us/home/showpublisheddocument/19584/638920698825370000"
     },
     {
       "capabilities": [
@@ -99,7 +96,6 @@
       "short_description": "Hampton aerospace engineering company providing uncrewed-aircraft-system design and technical services.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Adaptive Aerospace Group",
           "url": "https://adaptiveaero.com/"
         }
@@ -134,7 +130,6 @@
       "short_description": "Hampton developer and manufacturer of long-endurance hybrid-electric unmanned aircraft systems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Advanced Aircraft Company",
           "url": "https://advancedaircraftcompany.com/"
         }
@@ -169,7 +164,6 @@
       "short_description": "Christiansburg aerospace company providing airflow measurement and advanced flight-test instrumentation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -206,7 +200,6 @@
       "short_description": "Arlington headquarters of a multi-domain autonomous-systems, UAS, UGV, counter-UAS, and robotics company.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "AeroVironment",
           "url": "https://www.avinc.com/domains/"
         }
@@ -241,7 +234,6 @@
       "short_description": "Virginia agricultural-drone manufacturer providing scouting and spray drone platforms and software.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Agricision",
           "url": "https://www.agricisioninc.com/"
         }
@@ -273,12 +265,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier BKT).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -287,7 +277,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Allan C Perkinson/Blackstone AAF is included as public aviation infrastructure serving Blackstone. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -308,10 +298,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Northern Virginia",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Army National Guard Readiness Center, a publicly documented military or federal installation in Arlington.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -320,7 +309,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Army National Guard Readiness Center is included as documented federal or defense ecosystem presence in Arlington. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -344,7 +333,6 @@
       "short_description": "International unmanned-systems industry association headquartered in Arlington.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -380,7 +368,6 @@
       "short_description": "Aviation systems and integration company leading work in Virginia's AAM test-site initiative.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia AAM and Unmanned Systems Test Site Program",
           "url": "https://vipc.org/virginia-launches-advanced-air-mobility-and-unmanned-systems-test-site-program/"
         }
@@ -415,7 +402,6 @@
       "short_description": "Aerospace company developing advanced aircraft and autonomous flight technologies in Manassas.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -452,7 +438,6 @@
       "short_description": "Student engineering team designing fully autonomous robotic sailboats and electric motorboats.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "AutoBoat at Virginia Tech",
           "url": "https://autoboat.aoe.vt.edu/"
         }
@@ -486,7 +471,6 @@
       "short_description": "Regional industry chapter connecting unmanned-systems stakeholders in Hampton Roads.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -518,12 +502,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier MTV).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -532,7 +514,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Blue Ridge is included as public aviation infrastructure serving Martinsville. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -558,7 +540,6 @@
       "short_description": "Community-college UMS coursework covering small-UAS operations, mission planning, and autonomous flight.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VCCS: Unmanned Systems Courses at Blue Ridge Community College",
           "url": "https://courses.vccs.edu/colleges/brcc/courses/UMS-UnmannedSystems"
         }
@@ -594,7 +575,6 @@
       "short_description": "Virginia counter-UAS company developing interceptor systems for defense applications.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Blue Ridge Defense Works",
           "url": "https://blueridgedefense.com/"
         }
@@ -626,12 +606,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier VBW).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -640,7 +618,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Bridgewater Air Park is included as public aviation infrastructure serving Bridgewater. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -666,7 +644,6 @@
       "short_description": "Community-college small-UAS coursework supporting remote-pilot knowledge and operational skills.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VCCS: Unmanned Systems Courses at Brightpoint Community College",
           "url": "https://courses.vccs.edu/colleges/jtcc/courses/UMS-UnmannedSystems"
         }
@@ -697,12 +674,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier 0V4).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -711,7 +686,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Brookneal/Campbell County is included as public aviation infrastructure serving Brookneal. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -733,12 +708,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier LVL).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -747,7 +720,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Brunswick County is included as public aviation infrastructure serving Lawrenceville. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -774,9 +747,8 @@
       "short_description": "Sheriff's Office drone program documented in the county's 2024 annual report.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Campbell County Sheriff's Office 2024 Annual Report",
-          "url": "https://www.co.campbell.va.us/DocumentCenter/View/15215/2024-CCSO-Annual-Report"
+          "url": "https://www.campbellcountyva.gov/324/Annual-Reports"
         }
       ],
       "state": "VA",
@@ -785,7 +757,7 @@
         "Multi-domain missions"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.co.campbell.va.us/DocumentCenter/View/15215/2024-CCSO-Annual-Report"
+      "website_url": "https://www.campbellcountyva.gov/324/Annual-Reports"
     },
     {
       "capabilities": [
@@ -806,12 +778,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier 9VG).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -820,7 +790,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Campbell Fld is included as public aviation infrastructure serving Weirwood. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -846,7 +816,6 @@
       "short_description": "UVA autonomous-racing research and student team developing perception, planning, and control systems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "UVA Robotics and Autonomous Systems",
           "url": "https://www.engineering.virginia.edu/labs-groups/link-lab/research/robotics-and-autonomous-systems"
         }
@@ -882,7 +851,6 @@
       "short_description": "University research center focused on unmanned-aircraft-system technologies and applications.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -914,12 +882,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier CHO).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -928,7 +894,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Charlottesville-Albemarle is included as public aviation infrastructure serving Charlottesville. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -950,12 +916,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier CXE).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -964,7 +928,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Chase City Muni is included as public aviation infrastructure serving Chase City. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -986,12 +950,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier CPK).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -1000,7 +962,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Chesapeake Rgnl is included as public aviation infrastructure serving Norfolk. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -1027,7 +989,6 @@
       "short_description": "Police participation in a regional UAS unit supporting documented public-safety operations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "City of Fairfax Police Annual Report",
           "url": "https://www.fairfaxva.gov/files/assets/city/v/1/police/documents/annual-reports/fy2023-ffx-pd-annual-report.pdf"
         }
@@ -1064,7 +1025,6 @@
       "short_description": "Cross-department municipal UAS program supporting emergency operations and public-safety response.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "CISA: City of Virginia Beach UAS Emergency Operations Program",
           "url": "https://www.cisa.gov/sites/default/files/2024-08/24_0826_necp_spotlight_implementing_uas_programs_to_support_emergency_operations_final_508C.pdf"
         }
@@ -1100,7 +1060,6 @@
       "short_description": "Christopher Newport University lab researching safe control and planning for aerial and ground vehicles.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -1136,7 +1095,6 @@
       "short_description": "CNU lab developing verifiable autonomous robotic behaviors for human-support applications.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -1167,10 +1125,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Coast Guard Atlantic Area and Fifth Coast Guard District, a publicly documented military or federal installation in Portsmouth.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -1179,7 +1136,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Coast Guard Atlantic Area and Fifth Coast Guard District is included as documented federal or defense ecosystem presence in Portsmouth. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -1204,7 +1161,6 @@
       "short_description": "Applied research center for advanced manufacturing, automation, materials, and production systems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -1239,7 +1195,6 @@
       "short_description": "Statewide research network for secure communications, cyber-physical systems, and next-generation networks.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -1276,7 +1231,6 @@
       "short_description": "Long-term port expansion and logistics infrastructure project in Hampton Roads.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
         }
@@ -1307,12 +1261,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W81).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -1321,7 +1273,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Crewe Muni is included as public aviation infrastructure serving Crewe. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -1343,12 +1295,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier CJR).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -1357,7 +1307,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Culpeper Rgnl is included as public aviation infrastructure serving Culpeper. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -1378,10 +1328,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Dam Neck Annex, a publicly documented military or federal installation in Virginia Beach.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -1390,7 +1339,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Dam Neck Annex is included as documented federal or defense ecosystem presence in Virginia Beach. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -1416,7 +1365,6 @@
       "short_description": "Community-college UMS coursework covering small-UAS platforms, operations, and mission support.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VCCS: Unmanned Systems Courses at Danville Community College",
           "url": "https://courses.vccs.edu/colleges/dcc/courses/UMS-UnmannedSystems"
         }
@@ -1447,12 +1395,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier DAN).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -1461,7 +1407,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Danville Rgnl is included as public aviation infrastructure serving Danville. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -1489,7 +1435,6 @@
       "short_description": "Sterling headquarters for counter-drone sensing, identification, tracking, and airspace-security technology.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Dedrone by Axon",
           "url": "https://www.dedrone.com/about/contact-us"
         }
@@ -1520,10 +1465,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Northern Virginia",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Defense Advanced Research Projects Agency, a publicly documented military or federal installation in Arlington.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -1532,7 +1476,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Defense Advanced Research Projects Agency is included as documented federal or defense ecosystem presence in Arlington. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -1553,10 +1497,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Greater Richmond",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Defense Supply Center Richmond, a publicly documented military or federal installation in Richmond.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -1565,7 +1508,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Defense Supply Center Richmond is included as documented federal or defense ecosystem presence in Richmond. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -1591,7 +1534,6 @@
       "short_description": "Utility UAS activity supporting infrastructure inspection and Virginia advanced-flight demonstrations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -1626,7 +1568,6 @@
       "short_description": "Virginia Beach-founded drone services, operations, software, training, and delivery company.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Virginia Unmanned Systems Companies",
           "url": "https://www.vedp.org/news/home-business-more-400-years"
         }
@@ -1661,7 +1602,6 @@
       "short_description": "Virginia aviation operator and integrator with aircraft modification, mission, and fleet capabilities.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -1692,12 +1632,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W13).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -1706,7 +1644,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Eagle's Nest is included as public aviation infrastructure serving Waynesboro. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -1732,7 +1670,6 @@
       "short_description": "Community-college UMS coursework supporting small-UAS operations and applied technical skills.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VCCS: Unmanned Systems Courses at Eastern Shore Community College",
           "url": "https://courses.vccs.edu/colleges/escc/courses/UMS-UnmannedSystems"
         }
@@ -1763,12 +1700,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier EMV).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -1777,7 +1712,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Emporia-Greensville Rgnl is included as public aviation infrastructure serving Emporia. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -1801,7 +1736,6 @@
       "short_description": "Virginia team advancing scalable beyond-visual-line-of-sight UAS operations and safety cases.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -1838,7 +1772,6 @@
       "short_description": "County program supporting public-safety missions including search and rescue, fire, hazmat, and damage assessment.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Fairfax County Unmanned Aircraft Systems",
           "url": "https://www.fairfaxcounty.gov/uas/"
         }
@@ -1870,12 +1803,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W24).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -1884,7 +1815,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Falwell is included as public aviation infrastructure serving Lynchburg. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -1906,12 +1837,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier FVX).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -1920,7 +1849,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Farmville Rgnl is included as public aviation infrastructure serving Farmville. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -1941,10 +1870,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Fredericksburg Region",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Fort A.P. Hill, a publicly documented military or federal installation in Bowling Green.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -1953,7 +1881,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Fort A.P. Hill is included as documented federal or defense ecosystem presence in Bowling Green. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -1974,10 +1902,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Northern Virginia",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Fort Belvoir, a publicly documented military or federal installation in Springfield.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -1986,7 +1913,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Fort Belvoir is included as documented federal or defense ecosystem presence in Springfield. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -2007,10 +1934,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Fort Eustis - Joint Base Langley-Eustis, a publicly documented military or federal installation in Newport News.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -2019,7 +1945,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Fort Eustis - Joint Base Langley-Eustis is included as documented federal or defense ecosystem presence in Newport News. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -2040,10 +1966,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Greater Richmond",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Fort Lee, a publicly documented military or federal installation in Prince George.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -2052,7 +1977,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Fort Lee is included as documented federal or defense ecosystem presence in Prince George. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -2073,10 +1998,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Southside Virginia",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Fort Pickett, a publicly documented military or federal installation in Blackstone.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -2085,7 +2009,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Fort Pickett is included as documented federal or defense ecosystem presence in Blackstone. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -2107,12 +2031,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier FKN).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -2121,7 +2043,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Franklin Rgnl is included as public aviation infrastructure serving Franklin. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -2143,12 +2065,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier FRR).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -2157,7 +2077,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Front Royal-Warren County is included as public aviation infrastructure serving Front Royal. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -2183,7 +2103,6 @@
       "short_description": "Collaborative robotics research laboratory spanning computer vision, networks, and autonomous systems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -2219,7 +2138,6 @@
       "short_description": "Research center focused on air transportation systems, operations, modeling, and analysis.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -2256,7 +2174,6 @@
       "short_description": "University police UAS team with publicly posted operational flight logs.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "George Mason University Police UAS Flight Log",
           "url": "https://police.gmu.edu/records-and-reporting/uas-drone-flight-log/"
         }
@@ -2292,7 +2209,6 @@
       "short_description": "Community-college class supporting FAA remote-pilot knowledge for drone operations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -2323,12 +2239,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier GVE).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -2337,7 +2251,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Gordonsville Muni is included as public aviation infrastructure serving Gordonsville. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -2359,12 +2273,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier PVG).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -2373,7 +2285,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Hampton Roads Exec is included as public aviation infrastructure serving Norfolk. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -2395,12 +2307,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier OFP).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -2409,7 +2319,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Hanover County Muni is included as public aviation infrastructure serving Richmond / Ashland. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -2435,7 +2345,6 @@
       "short_description": "Virginia headquarters for a developer of hydrogen-powered and other unmanned aerial systems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Heven AeroTech",
           "url": "https://hevenaerotech.com/"
         }
@@ -2470,7 +2379,6 @@
       "short_description": "Digital manufacturing and engineering facility established for HII unmanned and autonomous systems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "HII Unmanned Systems Center of Excellence",
           "url": "https://www.hii.com/news/unmanned-systems-center-of-excellence"
         }
@@ -2502,12 +2410,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W75).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -2516,7 +2422,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Hummel Fld is included as public aviation infrastructure serving Saluda. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -2542,7 +2448,6 @@
       "short_description": "Virginia company providing UAS product design, prototyping, analysis, and manufacturing.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Virginia Unmanned Systems Companies",
           "url": "https://www.vedp.org/news/home-business-more-400-years"
         }
@@ -2573,12 +2478,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier HSP).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -2587,7 +2490,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Ingalls Fld is included as public aviation infrastructure serving Hot Springs. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -2612,7 +2515,6 @@
       "short_description": "Regional applied-research and workforce organization with advanced manufacturing and automation capacity.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -2648,7 +2550,6 @@
       "short_description": "Documented interdisciplinary project applying drone technology to complex public-interest problems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -2684,7 +2585,6 @@
       "short_description": "Collaborative facility for interdisciplinary emerging-technology work, including drone courses and projects.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -2715,10 +2615,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Northern Virginia",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Joint Base Myer-Henderson Hall, a publicly documented military or federal installation in Arlington.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -2727,7 +2626,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Joint Base Myer-Henderson Hall is included as documented federal or defense ecosystem presence in Arlington. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -2748,10 +2647,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Joint Expeditionary Base Little Creek-Fort Story, a publicly documented military or federal installation in Virginia Beach.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -2760,7 +2658,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Joint Expeditionary Base Little Creek-Fort Story is included as documented federal or defense ecosystem presence in Virginia Beach. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -2786,7 +2684,6 @@
       "short_description": "Virginia Tech field laboratory for UAS flight dynamics, control, research, and instruction.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Tech Kentland Experimental Aerial Systems Laboratory",
           "url": "https://autonomyandrobotics.centers.vt.edu/groups/keas.html"
         }
@@ -2818,12 +2715,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier 7W4).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -2832,7 +2727,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Lake Anna is included as public aviation infrastructure serving Bumpass. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -2854,12 +2749,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W63).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -2868,7 +2761,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Lake Country Rgnl is included as public aviation infrastructure serving Clarksville. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -2889,10 +2782,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Langley Air Force Base - Joint Base Langley-Eustis, a publicly documented military or federal installation in Hampton.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -2901,7 +2793,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Langley Air Force Base - Joint Base Langley-Eustis is included as documented federal or defense ecosystem presence in Hampton. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -2927,7 +2819,6 @@
       "short_description": "Community-college UMS coursework including remote-pilot ground school and small-UAS operations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VCCS: Unmanned Systems Courses at Laurel Ridge Community College",
           "url": "https://courses.vccs.edu/colleges/lfcc/courses/UMS-UnmannedSystems"
         }
@@ -2958,12 +2849,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier 0VG).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -2972,7 +2861,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Lee County is included as public aviation infrastructure serving Jonesville. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -2994,12 +2883,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier JYO).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -3008,7 +2895,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Leesburg Exec is included as public aviation infrastructure serving Leesburg. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -3034,7 +2921,6 @@
       "short_description": "Bachelor's degree pathway preparing students for UAS operations and aviation careers.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -3069,7 +2955,6 @@
       "short_description": "Bachelor's degree pathway focused on maintenance of unmanned aircraft systems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -3104,7 +2989,6 @@
       "short_description": "Aeronautics school offering unmanned-aircraft education, operations, and maintenance pathways.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -3139,7 +3023,6 @@
       "short_description": "Virginia engineering site supporting maritime, undersea, sensing, and mission-system technologies.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -3171,12 +3054,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier LNP).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -3185,7 +3066,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Lonesome Pine is included as public aviation infrastructure serving Wise. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -3212,7 +3093,6 @@
       "short_description": "Fort Monroe center supporting urban air, ground, and maritime unmanned-system research, testing, and validation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "City of Hampton: Hampton Roads Autonomy Demonstrations",
           "url": "https://www.hampton.gov/CivicAlerts.aspx?AID=4973&ARC=10333"
         }
@@ -3244,12 +3124,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier LKU).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -3258,7 +3136,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Louisa County/Freeman Fld is included as public aviation infrastructure serving Louisa. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -3280,12 +3158,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W31).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -3294,7 +3170,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Lunenburg County is included as public aviation infrastructure serving Kenbridge. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -3316,12 +3192,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier LUA).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -3330,7 +3204,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Luray Caverns is included as public aviation infrastructure serving Luray. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -3352,12 +3226,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier LYH).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -3366,7 +3238,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Lynchburg Rgnl/Preston Glenn Fld is included as public aviation infrastructure serving Lynchburg. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -3387,10 +3259,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Northern Virginia",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Marine Corps Base Quantico, a publicly documented military or federal installation in Quantico.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -3399,7 +3270,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Marine Corps Base Quantico is included as documented federal or defense ecosystem presence in Quantico. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -3425,7 +3296,6 @@
       "short_description": "Purpose-built UAS airfield and VTOL test infrastructure at the Mid-Atlantic Regional Spaceport.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -3457,12 +3327,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier 2G6).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -3471,7 +3339,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Mc Laughlin is included as public aviation infrastructure serving Chester. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -3493,12 +3361,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier AVC).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -3507,7 +3373,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Mecklenburg-Brunswick Rgnl is included as public aviation infrastructure serving South Hill. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -3533,7 +3399,6 @@
       "short_description": "FAA-designated UAS test-site organization managed by Virginia Tech.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -3569,7 +3434,6 @@
       "short_description": "Virginia spaceport providing launch, range, integration, and advanced-aerospace infrastructure.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -3601,12 +3465,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier FYJ).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -3615,7 +3477,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Middle Peninsula Rgnl is included as public aviation infrastructure serving West Point. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -3637,12 +3499,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier MKJ).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -3651,7 +3511,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Mountain Empire is included as public aviation infrastructure serving Marion / Wytheville. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -3677,7 +3537,6 @@
       "short_description": "Community-college coursework and degree development in unmanned aircraft operations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -3712,7 +3571,6 @@
       "short_description": "Community-college UMS coursework covering remote-pilot preparation and advanced UAS operations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VCCS: Unmanned Systems Courses at Mountain Gateway Community College",
           "url": "https://courses.vccs.edu/colleges/dslcc/courses/UMS-UnmannedSystems"
         }
@@ -3747,7 +3605,6 @@
       "short_description": "Multidisciplinary NASA group researching autonomy skills and reusable autonomous-system capabilities.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -3783,7 +3640,6 @@
       "short_description": "City Environment for Range Testing of Autonomous Integrated Navigation at NASA Langley.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "NASA Langley Drone Flying Site",
           "url": "https://www.nasa.gov/centers-and-facilities/langley/nasa-langley-drone-flying-site-open-for-testing/"
         }
@@ -3819,7 +3675,6 @@
       "short_description": "NASA research center conducting autonomy, UAS airspace integration, sensing, and flight research.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -3855,7 +3710,6 @@
       "short_description": "NASA flight facility supporting atmospheric, aerospace, UAS, and range operations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -3886,10 +3740,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Northern Virginia",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "National Geospatial-Intelligence Agency Springfield, a publicly documented military or federal installation in Springfield.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -3898,7 +3751,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "National Geospatial-Intelligence Agency Springfield is included as documented federal or defense ecosystem presence in Springfield. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -3923,7 +3776,6 @@
       "short_description": "Research and graduate-education institute supporting aerospace engineering and NASA Langley collaborations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -3954,10 +3806,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Naval Air Station Oceana, a publicly documented military or federal installation in Virginia Beach.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -3966,7 +3817,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Naval Air Station Oceana is included as documented federal or defense ecosystem presence in Virginia Beach. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -3987,10 +3838,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Naval Medical Center Portsmouth, a publicly documented military or federal installation in Portsmouth.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -3999,7 +3849,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Naval Medical Center Portsmouth is included as documented federal or defense ecosystem presence in Portsmouth. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -4020,10 +3870,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Naval Station Norfolk, a publicly documented military or federal installation in Norfolk.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -4032,7 +3881,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Naval Station Norfolk is included as documented federal or defense ecosystem presence in Norfolk. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -4053,10 +3902,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Naval Support Activity Hampton Roads, a publicly documented military or federal installation in Norfolk.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -4065,7 +3913,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Naval Support Activity Hampton Roads is included as documented federal or defense ecosystem presence in Norfolk. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -4086,10 +3934,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Naval Support Activity Northwest Annex, a publicly documented military or federal installation in Virginia Beach.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -4098,7 +3945,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Naval Support Activity Northwest Annex is included as documented federal or defense ecosystem presence in Virginia Beach. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -4119,10 +3966,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Fredericksburg Region",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Naval Support Facility Dahlgren, a publicly documented military or federal installation in Dahlgren.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -4131,7 +3977,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Naval Support Facility Dahlgren is included as documented federal or defense ecosystem presence in Dahlgren. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -4152,10 +3998,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Naval Weapons Station Yorktown, a publicly documented military or federal installation in Yorktown.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -4164,7 +4009,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Naval Weapons Station Yorktown is included as documented federal or defense ecosystem presence in Yorktown. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -4186,12 +4031,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W96).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -4200,7 +4043,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "New Kent County is included as public aviation infrastructure serving Quinton. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -4222,12 +4065,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W90).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -4236,7 +4077,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "New London is included as public aviation infrastructure serving Forest. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -4258,12 +4099,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier 8W2).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -4272,7 +4111,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "New Market is included as public aviation infrastructure serving New Market. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -4298,7 +4137,6 @@
       "short_description": "Ground-school course supporting small-UAS remote-pilot knowledge and certification preparation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -4329,12 +4167,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier PSK).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -4343,7 +4179,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "New River Valley is included as public aviation infrastructure serving Dublin. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -4370,7 +4206,6 @@
       "short_description": "Breakbulk, roll-on/roll-off, warehouse, rail, and heavy-lift marine terminal.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
         }
@@ -4405,7 +4240,6 @@
       "short_description": "Major Virginia shipyard providing naval engineering, digital shipbuilding, manufacturing, and integration capacity.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -4437,12 +4271,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier PHF).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -4451,7 +4283,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Newport News/Williamsburg Intl is included as public aviation infrastructure serving Newport News. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -4472,10 +4304,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Norfolk District, U.S. Army Corps of Engineers, a publicly documented military or federal installation in Norfolk.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -4484,7 +4315,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Norfolk District, U.S. Army Corps of Engineers is included as documented federal or defense ecosystem presence in Norfolk. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -4511,7 +4342,6 @@
       "short_description": "Large semi-automated container terminal with on-dock rail and interstate access.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
         }
@@ -4542,12 +4372,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier ORF).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -4556,7 +4384,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Norfolk Intl is included as public aviation infrastructure serving Norfolk. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -4577,10 +4405,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Norfolk Naval Shipyard, a publicly documented military or federal installation in Portsmouth.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -4589,7 +4416,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Norfolk Naval Shipyard is included as documented federal or defense ecosystem presence in Portsmouth. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -4615,7 +4442,6 @@
       "short_description": "Old Dominion University laboratory supporting ground and flight autonomous-vehicle design.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -4650,7 +4476,6 @@
       "short_description": "University operator-permit and flight-request program for UAS activity on university property.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Old Dominion University UAS/Drone Operation",
           "url": "https://www.odu.edu/risk-management/advisories/uas-drones"
         }
@@ -4682,12 +4507,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier OMH).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -4696,7 +4519,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Orange County is included as public aviation infrastructure serving Orange. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -4721,7 +4544,6 @@
       "short_description": "Developer of autonomous retrofit systems for transit and other vehicle platforms.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Virginia Unmanned Systems Companies",
           "url": "https://www.vedp.org/news/home-business-more-400-years"
         }
@@ -4756,7 +4578,6 @@
       "short_description": "Small-UAS coursework designed for emergency-services and public-safety applications.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -4792,7 +4613,6 @@
       "short_description": "Marine terminal being used as an offshore-wind logistics and staging hub.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
         }
@@ -4828,7 +4648,6 @@
       "short_description": "County emergency-management drone program maintained for documented public-safety operations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Prince Edward County Drone Program",
           "url": "https://www.co.prince-edward.va.us/News-Article/Pyle-Named-County-Emergency-Management-Coordinator"
         }
@@ -4866,9 +4685,8 @@
       "short_description": "Lorton headquarters of a company providing multi-domain autonomous systems and unmanned robotic platforms.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
-          "title": "QinetiQ US",
-          "url": "https://www.qinetiq.com/en-us/"
+          "title": "QinetiQ US locations",
+          "url": "https://www.qinetiq.com/en-us/who-we-are/our-locations"
         }
       ],
       "state": "VA",
@@ -4877,7 +4695,7 @@
         "Manufacturing and supply chain"
       ],
       "unmanned_systems_relevance": "Develops, integrates, manufactures, or supports documented autonomous and uncrewed systems across one or more operating domains.",
-      "website_url": "https://www.qinetiq.com/en-us/"
+      "website_url": "https://www.qinetiq.com/en-us/who-we-are/our-locations"
     },
     {
       "capabilities": [
@@ -4897,10 +4715,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "New River Valley",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Radford Army Ammunition Plant, a publicly documented military or federal installation in Radford.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -4909,7 +4726,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Radford Army Ammunition Plant is included as documented federal or defense ecosystem presence in Radford. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -4935,7 +4752,6 @@
       "short_description": "Manassas headquarters and digital manufacturing facility for rapidly produced unmanned aircraft systems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "RapidFlight Manassas UAS Manufacturing Headquarters",
           "url": "https://www.prnewswire.com/news-releases/rapidflight-celebrates-grand-opening-of-uas-3d-manufacturing-headquarters-in-manassas-virginia-301884344.html"
         }
@@ -4966,12 +4782,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier FCI).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -4980,7 +4794,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Richmond Exec/Chesterfield County is included as public aviation infrastructure serving Richmond. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -5002,12 +4816,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier RIC).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -5016,7 +4828,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Richmond Intl is included as public aviation infrastructure serving Richmond. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -5043,7 +4855,6 @@
       "short_description": "James River terminal providing barge, warehouse, road, and rail logistics connections.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
         }
@@ -5073,10 +4884,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Central Virginia",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Rivanna Station, a publicly documented military or federal installation in Charlottesville.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -5085,7 +4895,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Rivanna Station is included as documented federal or defense ecosystem presence in Charlottesville. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -5107,12 +4917,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier ROA).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -5121,7 +4929,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Roanoke/Blacksburg Rgnl (Woodrum Fld) is included as public aviation infrastructure serving Roanoke. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -5143,12 +4951,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier EZF).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -5157,7 +4963,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Shannon is included as public aviation infrastructure serving Fredericksburg. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -5179,12 +4985,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier SHD).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -5193,7 +4997,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Shenandoah Valley Rgnl is included as public aviation infrastructure serving Staunton / Waynesboro / Harrisonburg. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -5215,12 +5019,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W91).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -5229,7 +5031,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Smith Mountain Lake is included as public aviation infrastructure serving Moneta. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -5251,12 +5053,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier SFQ).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -5265,7 +5065,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Suffolk Exec is included as public aviation infrastructure serving Suffolk. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -5286,10 +5086,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Eastern Shore",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "Surface Combat Systems Center Wallops Island, a publicly documented military or federal installation in Wallops Island.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -5298,7 +5097,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "Surface Combat Systems Center Wallops Island is included as documented federal or defense ecosystem presence in Wallops Island. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -5320,12 +5119,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier TGI).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -5334,7 +5131,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Tangier Island is included as public aviation infrastructure serving Tangier. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -5356,12 +5153,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier XSA).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -5370,7 +5165,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Tappahannock/Essex County is included as public aviation infrastructure serving Tappahannock. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -5392,12 +5187,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier JFZ).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -5406,7 +5199,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Tazewell County is included as public aviation infrastructure serving Richlands. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -5427,10 +5220,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Central Virginia",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "The Judge Advocate General's Legal Center and School, a publicly documented military or federal installation in Charlottesville.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -5439,7 +5231,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "The Judge Advocate General's Legal Center and School is included as documented federal or defense ecosystem presence in Charlottesville. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -5460,10 +5252,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Northern Virginia",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "The Pentagon, a publicly documented military or federal installation in Arlington.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -5472,7 +5263,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "The Pentagon is included as documented federal or defense ecosystem presence in Arlington. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -5499,7 +5290,6 @@
       "short_description": "Virginia port authority and terminal network supporting maritime and intermodal logistics.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
         }
@@ -5534,7 +5324,6 @@
       "short_description": "Community-college UMS coursework covering remote-pilot knowledge and small-UAS operations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VCCS: Unmanned Systems Courses at Tidewater Community College",
           "url": "https://courses.vccs.edu/colleges/tcc/courses/UMS-UnmannedSystems"
         }
@@ -5568,7 +5357,6 @@
       "short_description": "Autonomous-trucking technology company founded in Blacksburg and part of Daimler Truck.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -5599,12 +5387,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier PTB).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -5613,7 +5399,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Tri Cities Exec/Dinwiddie County is included as public aviation infrastructure serving Petersburg. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -5635,12 +5421,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier HLX).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -5649,7 +5433,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Twin County is included as public aviation infrastructure serving Galax Hillsville. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -5670,10 +5454,9 @@
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
-      "short_description": "Publicly documented Virginia military or federal installation.",
+      "short_description": "U.S. Coast Guard Base Portsmouth, a publicly documented military or federal installation in Portsmouth.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         }
@@ -5682,7 +5465,7 @@
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Represents publicly documented defense customer, mission-owner, research, training, logistics, or acquisition access within Virginia. The map uses a generalized public location and intentionally omits operational detail.",
+      "unmanned_systems_relevance": "U.S. Coast Guard Base Portsmouth is included as documented federal or defense ecosystem presence in Portsmouth. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -5707,7 +5490,6 @@
       "short_description": "University UAS operations program supporting compliant research, instruction, and approved flight activity.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "University of Virginia Unmanned Aircraft Systems Operations",
           "url": "https://uvaemergency.virginia.edu/unmanned-aircraft-uas/operating-uas-uva"
         }
@@ -5745,7 +5527,6 @@
       "short_description": "Research laboratory developing bio-inspired structures, controls, and aquatic robotic concepts.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "UVA Robotics, Dynamics, and Autonomous Systems",
           "url": "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/research/robotics-dynamics-and-autonomous-systems"
         }
@@ -5783,7 +5564,6 @@
       "short_description": "Coastal research-center UAS operations for compliant flights from the center's property and vessels.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "UVA Coastal Research Center Drone Pilot Compliance Checklist",
           "url": "https://abcrc.virginia.edu/files/abcrc/files/coastal_research_center___drone_pilot_compliance_checklist.pdf"
         }
@@ -5819,7 +5599,6 @@
       "short_description": "Cyber-physical systems research center with robotics, autonomy, sensing, and smart-systems programs.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "UVA Robotics and Autonomous Systems",
           "url": "https://www.engineering.virginia.edu/labs-groups/link-lab/research/robotics-and-autonomous-systems"
         }
@@ -5855,7 +5634,6 @@
       "short_description": "Research program spanning autonomous vehicles, drones, multi-robot systems, and human-robot interaction.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "UVA Robotics and Autonomous Systems",
           "url": "https://www.engineering.virginia.edu/labs-groups/link-lab/research/robotics-and-autonomous-systems"
         }
@@ -5891,7 +5669,6 @@
       "short_description": "Engineering education path covering embedded systems, drones, robotics, communications, and cyber-physical systems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "UVA Robotics and Embedded Systems",
           "url": "https://engineering.virginia.edu/department/electrical-and-computer-engineering/robotics-and-embedded-systems"
         }
@@ -5926,7 +5703,6 @@
       "short_description": "Mechanical and aerospace research area covering aerial, underwater, ground, and space autonomy.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "UVA Robotics, Dynamics, and Autonomous Systems",
           "url": "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/research/robotics-dynamics-and-autonomous-systems"
         }
@@ -5962,7 +5738,6 @@
       "short_description": "Research laboratory for autonomous vehicles, coordinated robotics, sensing, control, and AI.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VCU Autonomous Robots and Vehicles Laboratory",
           "url": "https://arvl.lab.vcu.edu/"
         }
@@ -5998,7 +5773,6 @@
       "short_description": "VCU engineering research group connecting robotics and autonomous-systems faculty and laboratories.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VCU Autonomous Robots and Vehicles Laboratory",
           "url": "https://arvl.lab.vcu.edu/"
         }
@@ -6034,7 +5808,6 @@
       "short_description": "University UAV research capability documented for flight-control and payload-system research.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -6068,7 +5841,6 @@
       "short_description": "Statewide alliance convening advanced-air-mobility and unmanned-systems stakeholders.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Unmanned Systems Center",
           "url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
         }
@@ -6102,7 +5874,6 @@
       "short_description": "Commonwealth aviation program covering automated small uncrewed systems, remotely controlled aircraft, and aviation automation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Department of Aviation Advanced Air Mobility",
           "url": "https://doav.virginia.gov/advanced_air_mobility/"
         }
@@ -6138,7 +5909,6 @@
       "short_description": "Northern Virginia road network and test environments supporting automated-vehicle development.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -6173,7 +5943,6 @@
       "short_description": "Institutional UAS program governing and supporting research, instructional, and operational flights.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Commonwealth University Unmanned Aircraft System",
           "url": "https://healthsafety.vcu.edu/operational-risk/unmanned-aircraft-system/"
         }
@@ -6209,7 +5978,6 @@
       "short_description": "Statewide community-college UMS curriculum spanning remote-pilot ground school, operations, maintenance, imaging, and internships.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Community College System Unmanned Systems Courses",
           "url": "https://courses.vccs.edu/courses/UMS-UnmannedSystems"
         }
@@ -6245,7 +6013,6 @@
       "short_description": "Department of Wildlife Resources program using UAS for conservation-police and public-safety missions.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Conservation Police 2024 Annual Report",
           "url": "https://dwr.virginia.gov/wp-content/uploads/media/Virginia-Conservation-Police-Annual-Report-2024.pdf"
         }
@@ -6279,7 +6046,6 @@
       "short_description": "Commonwealth aviation agency leading aviation planning and advanced-air-mobility initiatives.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia AAM and Unmanned Systems Test Site Program",
           "url": "https://vipc.org/virginia-launches-advanced-air-mobility-and-unmanned-systems-test-site-program/"
         }
@@ -6316,7 +6082,6 @@
       "short_description": "State forestry drone program supporting wildfire response, incident management, mapping, and natural-resource missions.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Department of Forestry Drone Program",
           "url": "https://dof.virginia.gov/user_directory/jason-a-braunstein/"
         }
@@ -6350,7 +6115,6 @@
       "short_description": "State transportation program governing and supporting UAS use for transportation missions.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Unmanned Systems Center",
           "url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
         }
@@ -6387,7 +6151,6 @@
       "short_description": "DCJS grant program supporting Virginia first responders replacing qualifying unmanned aircraft with compliant systems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "DCJS Unmanned Aircraft Trade and Replace Program",
           "url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
         }
@@ -6421,7 +6184,6 @@
       "short_description": "Statewide information-sharing capability supporting safe and informed UAS operations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Unmanned Systems Center",
           "url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
         }
@@ -6453,12 +6215,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier VJI).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -6467,7 +6227,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Virginia Highlands is included as public aviation infrastructure serving Abingdon. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -6493,7 +6253,6 @@
       "short_description": "Career Studies Certificate preparing students to integrate remote-pilot technologies and pursue Part 107 certification.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Highlands Community College Small UAS Certificate",
           "url": "https://www.vhcc.edu/small-unmanned-aerial-systems-suas"
         }
@@ -6529,7 +6288,6 @@
       "short_description": "Intermodal rail terminal connecting inland markets to Hampton Roads container terminals.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
         }
@@ -6562,7 +6320,6 @@
       "short_description": "Commonwealth innovation organization supporting grants, partnerships, commercialization, and seed funding.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Unmanned Systems Center",
           "url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
         }
@@ -6598,7 +6355,6 @@
       "short_description": "ODU institute coordinating spaceflight, autonomous-systems research, education, and commercialization.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -6636,7 +6392,6 @@
       "short_description": "Marine science institute providing coastal research, field operations, sensing, and autonomous-platform context.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -6673,7 +6428,6 @@
       "short_description": "Semi-automated container terminal with rail, highway, and deep-water access.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
         }
@@ -6708,7 +6462,6 @@
       "short_description": "Road-course test environment identified by VEDP as part of Virginia's automated-vehicle ecosystem.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -6746,7 +6499,6 @@
       "short_description": "ODU research center with virtual-environment, robotics, and unmanned-surface-vehicle work.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -6782,7 +6534,6 @@
       "short_description": "Career Studies Certificate covering drone operation, autonomous flight, construction, maintenance, and Part 107 preparation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Peninsula Community College Drone Flight Technician",
           "url": "https://www.vpcc.edu/program/small-unmanned-aircraft-systems-drone-flight-technician/"
         }
@@ -6815,7 +6566,6 @@
       "short_description": "VIPC center connecting public-safety users with emerging technology, demonstrations, and research.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Unmanned Systems Center",
           "url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
         }
@@ -6851,7 +6601,6 @@
       "short_description": "Controlled transportation test facility used for connected and automated vehicle research.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -6887,7 +6636,6 @@
       "short_description": "Drone-academy program delivering unmanned-systems education with Virginia community-college partners.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Space Grant Consortium GeoTED-UAS Drone Academies",
           "url": "https://vsgc.odu.edu/geoted-uas/"
         }
@@ -6923,7 +6671,6 @@
       "short_description": "State police drone program supporting crash and crime-scene mapping, searches, inspection, and specialized operations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia State Police Department History",
           "url": "https://vsp.virginia.gov/about-us/department-history/"
         }
@@ -6958,7 +6705,6 @@
       "short_description": "University UAS oversight process for approved research, university-program, and campus flight activity.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia State University Use of Unmanned Aerial Systems Policy",
           "url": "https://www.vsu.edu/files/docs/policies/8000/use-unmanned-aerial-systems-drones.pdf"
         }
@@ -6994,7 +6740,6 @@
       "short_description": "Indoor research hangar for autonomous aerial and ground robot control experiments.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Tech Advanced Control Systems Lab",
           "url": "https://www.ise.vt.edu/research/labs/advanced-control-systems-lab.html"
         }
@@ -7030,7 +6775,6 @@
       "short_description": "Research laboratory for control, estimation, and autonomous-system design.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -7066,7 +6810,6 @@
       "short_description": "University-wide network connecting autonomous-systems and robotics research groups.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -7104,7 +6847,6 @@
       "short_description": "Interdisciplinary center developing autonomous marine vehicles, navigation, control, and multi-agent systems.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Tech Center for Marine Autonomy and Robotics",
           "url": "https://marinerobotics.centers.vt.edu/index.html"
         }
@@ -7141,7 +6883,6 @@
       "short_description": "Research and testing center with outdoor, indoor, and virtual counter-UAS laboratories.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Tech Counter UAS Research and Testing Center",
           "url": "https://news.vt.edu/articles/2025/04/research-counteruascenter.html"
         }
@@ -7177,7 +6918,6 @@
       "short_description": "Netted flight facility supporting university UAS instruction, research, and operations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -7213,7 +6953,6 @@
       "short_description": "Eastern Shore field research and outreach on agricultural drone sensing and spray-drone applications.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Tech Eastern Shore AREC Drone Research",
           "url": "https://www.arec.vaes.vt.edu/content/dam/arec_vaes_vt_edu/eastern-shore/newsletter/The%20Stalk%20-%20July%202024.pdf"
         }
@@ -7249,7 +6988,6 @@
       "short_description": "Research program applying UAV imagery and analytics to crop health, nutrient response, biomass, and yield estimation.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Tech Grain Crop Drone Research",
           "url": "https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/spes-747.html"
         }
@@ -7284,7 +7022,6 @@
       "short_description": "Research center for sensing, communications, autonomy, cybersecurity, and national-security technology.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -7319,7 +7056,6 @@
       "short_description": "University advanced-manufacturing initiative including robotics, autonomous assembly, and field robotics.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Tech Robotics and Autonomy",
           "url": "https://made.vt.edu/robotics-autonomy.html"
         }
@@ -7355,7 +7091,6 @@
       "short_description": "Transportation research institute operating connected and automated vehicle research programs.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -7391,7 +7126,6 @@
       "short_description": "University laboratory conducting uncrewed-system research, including autonomous aerial search applications.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Tech Uncrewed Systems Laboratory",
           "url": "https://usl.me.vt.edu/projects.html"
         }
@@ -7423,12 +7157,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier BCB).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -7437,7 +7169,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Virginia Tech/Montgomery Exec is included as public aviation infrastructure serving Blacksburg. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -7463,7 +7195,6 @@
       "short_description": "Virginia small-UAS training, safety, operational integration, and consulting provider.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia UAS",
           "url": "https://virginiauas.com/"
         }
@@ -7496,7 +7227,6 @@
       "short_description": "Statewide nexus for Virginia activity across land, air, sea, space, and advanced air mobility.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Unmanned Systems Center",
           "url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
         }
@@ -7531,7 +7261,6 @@
       "short_description": "Truck manufacturing facility connected to Volvo autonomous-truck development documented by VEDP.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -7562,12 +7291,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier AKQ).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -7576,7 +7303,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Wakefield Muni is included as public aviation infrastructure serving Wakefield. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -7598,12 +7325,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier JGG).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -7612,7 +7337,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Waltrip Williamsburg Exec Airport is included as public aviation infrastructure serving Williamsburg. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -7634,12 +7359,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier HWY).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -7648,7 +7371,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Warrenton/Fauquier is included as public aviation infrastructure serving Warrenton. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -7670,12 +7393,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier RMN).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -7684,7 +7405,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Washington Exec/Stafford Rgnl is included as public aviation infrastructure serving Stafford. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -7706,12 +7427,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W78).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -7720,7 +7439,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "William M Tuck is included as public aviation infrastructure serving South Boston. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -7742,12 +7461,10 @@
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier OKV).",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
         {
-          "last_verified_at": "2026-07-17",
           "title": "Virginia Public-use Airport Directory",
           "url": "https://doav.virginia.gov/airport-directory/"
         }
@@ -7756,7 +7473,7 @@
       "strategic_categories": [
         "Physical infrastructure and logistics"
       ],
-      "unmanned_systems_relevance": "Part of Virginia's public-use aviation network, providing regional aviation, access, staging, workforce, and logistics context for the UAS ecosystem. Any UAS activity remains subject to operator, airport, and airspace authorization.",
+      "unmanned_systems_relevance": "Winchester Rgnl is included as public aviation infrastructure serving Winchester. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
@@ -7782,7 +7499,6 @@
       "short_description": "Documented commercial drone-delivery program launched in Christiansburg in 2019.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
         }
@@ -7818,7 +7534,6 @@
       "short_description": "Dedicated Loudoun County facility for unmanned-systems testing, development, training, and demonstrations.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Xelevate Leesburg Unmanned Systems Facility",
           "url": "https://xelevateus.com/leesburg-virginia/"
         }
@@ -7854,7 +7569,6 @@
       "short_description": "Virginia manufacturer of tethered unmanned aircraft systems for public-safety, defense, and industrial applications.",
       "sources": [
         {
-          "last_verified_at": "2026-07-17",
           "title": "Zenith Aerotech",
           "url": "https://zenithaerotech.com/about-us-tethered-drone/"
         }
@@ -8016,6 +7730,326 @@
     {
       "from": "NASA Wallops Flight Facility",
       "to": "Mid-Atlantic Regional Spaceport",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Accomack County",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Allan C Perkinson/Blackstone AAF",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Blue Ridge",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Bridgewater Air Park",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Brookneal/Campbell County",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Brunswick County",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Campbell Fld",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Charlottesville-Albemarle",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Chase City Muni",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Chesapeake Rgnl",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Crewe Muni",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Culpeper Rgnl",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Danville Rgnl",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Eagle's Nest",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Emporia-Greensville Rgnl",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Falwell",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Farmville Rgnl",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Franklin Rgnl",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Front Royal-Warren County",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Gordonsville Muni",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Hampton Roads Exec",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Hanover County Muni",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Hummel Fld",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Ingalls Fld",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Lake Anna",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Lake Country Rgnl",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Lee County",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Leesburg Exec",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Lonesome Pine",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Louisa County/Freeman Fld",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Lunenburg County",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Luray Caverns",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Lynchburg Rgnl/Preston Glenn Fld",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Mc Laughlin",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Mecklenburg-Brunswick Rgnl",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Middle Peninsula Rgnl",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Mountain Empire",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "New Kent County",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "New London",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "New Market",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "New River Valley",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Newport News/Williamsburg Intl",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Norfolk Intl",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Orange County",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Richmond Exec/Chesterfield County",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Richmond Intl",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Roanoke/Blacksburg Rgnl (Woodrum Fld)",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Shannon",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Shenandoah Valley Rgnl",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Smith Mountain Lake",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Suffolk Exec",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Tangier Island",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Tappahannock/Essex County",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Tazewell County",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Tri Cities Exec/Dinwiddie County",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Twin County",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Virginia Highlands",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Virginia Tech/Montgomery Exec",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Wakefield Muni",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Waltrip Williamsburg Exec Airport",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Warrenton/Fauquier",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Washington Exec/Stafford Rgnl",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "William M Tuck",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Winchester Rgnl",
       "type": "supports"
     }
   ]
