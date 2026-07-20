@@ -13,16 +13,18 @@ class RealCatalogFileTests(TestCase):
         path = settings.BASE_DIR / "data" / "virginia_real_assets.json"
         return json.loads(path.read_text())
 
-    def test_catalog_has_at_least_222_real_source_backed_records(self):
+    def test_catalog_has_at_least_232_real_source_backed_records(self):
         catalog = self.load_catalog()
         records = catalog["records"]
-        self.assertGreaterEqual(len(records), 222)
+        self.assertGreaterEqual(len(records), 232)
         self.assertEqual(catalog["record_count"], len(records))
         self.assertGreaterEqual(len(catalog["relationships"]), 90)
         self.assertFalse(any(record["name"].startswith("Demo ") for record in records))
         self.assertTrue(
             all(record["sources"] and record["unmanned_systems_relevance"] for record in records)
         )
+        universities = [record for record in records if record["record_type"] == "university"]
+        self.assertEqual(len(universities), 10)
         self.assertTrue(
             all(
                 source.get("url", "").startswith("https://")
@@ -41,3 +43,10 @@ class RealCatalogFileTests(TestCase):
         self.assertFalse(Source.objects.exclude(verification_status="unreviewed").exists())
         self.assertFalse(Source.objects.filter(last_verified_at__isnull=False).exists())
         self.assertFalse(Asset.objects.filter(name__startswith="Demo ").exists())
+        self.assertEqual(Asset.public.filter(record_type=Asset.RecordType.UNIVERSITY).count(), 10)
+        self.assertTrue(
+            Relationship.objects.filter(
+                from_asset__record_type=Asset.RecordType.UNIVERSITY,
+                relationship_type=Relationship.RelationshipType.SUPPORTS,
+            ).exists()
+        )

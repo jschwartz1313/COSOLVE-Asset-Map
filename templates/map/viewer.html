@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260717-6">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260720">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
@@ -19,7 +19,9 @@
       <button class="icon-button filter-close" type="button" aria-label="Close filters" title="Close filters">&times;</button>
     </div>
     <form id="asset-filters" autocomplete="off">
-      {% include "includes/filter_fields.html" %}
+      <div class="filter-fields-scroll">
+        {% include "includes/filter_fields.html" %}
+      </div>
       <div class="filter-actions">
         <button class="button primary" type="submit">Apply filters <span class="filter-count" data-active-filter-count hidden></span></button>
         <button class="button secondary" type="reset">Clear all</button>
@@ -44,6 +46,7 @@
       <details class="map-legend">
         <summary>Legend</summary>
         <div class="legend-content">
+          <span><i class="legend-dot university"></i>University</span>
           <span><i class="legend-dot organization"></i>Organization</span>
           <span><i class="legend-dot facility"></i>Facility</span>
           <span><i class="legend-dot program"></i>Program</span>
@@ -70,5 +73,5 @@
 </main>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-<script type="module" src="{% static 'js/map-viewer.js' %}?v=20260718"></script>
+<script type="module" src="{% static 'js/map-viewer.js' %}?v=20260720"></script>
 {% endblock %}

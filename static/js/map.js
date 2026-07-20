@@ -1,6 +1,7 @@
 import { buildPopup } from "./popups.js?v=20260717";
 
 const COLORS = {
+  university: "#8b3f56",
   organization: "#2f6f9f",
   facility: "#147d78",
   program: "#b48216",

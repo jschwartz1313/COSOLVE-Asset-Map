@@ -23,6 +23,7 @@ class PublicAssetManager(models.Manager):
 
 class Asset(models.Model):
     class RecordType(models.TextChoices):
+        UNIVERSITY = "university", "University"
         ORGANIZATION = "organization", "Organization"
         FACILITY = "facility", "Facility"
         PROGRAM = "program", "Program"

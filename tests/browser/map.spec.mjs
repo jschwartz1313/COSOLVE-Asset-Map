@@ -25,12 +25,13 @@ test("map layers toggle without moving the reset control", async ({ page }) => {
 test("empty filters preserve the complete map result set", async ({ page }) => {
   await page.goto("/map/");
   const count = page.locator("#result-count");
-  await expect(count).toHaveText("222");
+  const initialCount = await count.textContent();
+  expect(Number(initialCount)).toBeGreaterThan(0);
   if (await page.locator(".filter-open").isVisible()) {
     await page.locator(".filter-open").click();
   }
   await page.locator("#asset-filters button[type=submit]").click();
-  await expect(count).toHaveText("222");
+  await expect(count).toHaveText(initialCount);
 });
 
 test("directory remains within the viewport", async ({ page }) => {

@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "virginia_real_assets.json"
-CATALOG_DATE = "2026-07-17"
+CATALOG_DATE = "2026-07-20"
 
 FAA_LAYER = (
     "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
@@ -225,6 +225,16 @@ SOURCES = {
         "Campbell County Sheriff's Office 2024 Annual Report",
         "https://www.campbellcountyva.gov/324/Annual-Reports",
     ),
+    "university_vt": ("Virginia Tech: About", "https://www.vt.edu/about.html"),
+    "university_uva": ("University of Virginia: About UVA", "https://www.virginia.edu/about-uva/"),
+    "university_vcu": ("Virginia Commonwealth University: About", "https://www.vcu.edu/about-vcu/"),
+    "university_odu": ("Old Dominion University: About", "https://www.odu.edu/about"),
+    "university_cnu": ("Christopher Newport University", "https://cnu.edu/"),
+    "university_gmu": ("George Mason University: Key Facts", "https://www.gmu.edu/about/key-facts"),
+    "university_jmu": ("James Madison University: About", "https://www.jmu.edu/about/index.shtml"),
+    "university_liberty": ("Liberty University: About", "https://www.liberty.edu/about/"),
+    "university_vsu": ("Virginia State University: About", "https://www.vsu.edu/about/"),
+    "university_wm": ("William & Mary: About", "https://www.wm.edu/about/"),
 }
 
 PROFILES = {
@@ -521,6 +531,140 @@ DEFENSE_INSTALLATIONS = [
     ("Rivanna Station", "Charlottesville", "Central Virginia"),
     ("The Judge Advocate General's Legal Center and School", "Charlottesville", "Central Virginia"),
     ("Radford Army Ammunition Plant", "Radford", "New River Valley"),
+]
+
+UNIVERSITY_ASSETS = [
+    (
+        "Virginia Tech",
+        "Blacksburg",
+        "New River Valley",
+        "Public research university and institutional home of Virginia's FAA-designated UAS test-site team and a broad autonomy research network.",
+        "university_vt",
+        [
+            "Mid-Atlantic Aviation Partnership",
+            "Virginia Tech Drone Park",
+            "Kentland Experimental Aerial Systems Laboratory",
+            "Virginia Tech Advanced Control Systems Lab",
+            "Center for Unmanned Aircraft Systems at Virginia Tech",
+            "Virginia Tech Autonomous Systems and Control Laboratory",
+            "Virginia Tech Transportation Institute",
+            "Virginia Smart Road",
+            "Virginia Automated Corridors",
+            "Virginia Tech Center for Marine Autonomy and Robotics",
+            "AutoBoat at Virginia Tech",
+            "Virginia Tech Autonomy and Robotics",
+            "Virginia Tech Hume Center for National Security and Technology",
+            "Virginia Tech MADE",
+            "Commonwealth Cyber Initiative",
+            "Virginia Tech Grain Crop Drone Research Program",
+            "Virginia Tech Eastern Shore AREC Drone Application Research",
+            "Virginia Tech Counter UAS Research and Testing Center",
+            "Virginia Tech Uncrewed Systems Laboratory",
+        ],
+    ),
+    (
+        "University of Virginia",
+        "Charlottesville",
+        "Central Virginia",
+        "Public research university represented by mapped robotics, autonomous-systems, embedded-systems, and institutional UAS activities.",
+        "university_uva",
+        [
+            "UVA Link Lab",
+            "UVA Robotics and Autonomous Systems Research",
+            "UVA Robotics, Dynamics, and Autonomous Systems",
+            "Cavalier Autonomous Racing",
+            "UVA Bio-Inspired Engineering Research Laboratory",
+            "UVA Robotics and Embedded Systems Focus Path",
+            "University of Virginia UAS Operations Program",
+            "UVA Coastal Research Center UAS Operations",
+        ],
+    ),
+    (
+        "Virginia Commonwealth University",
+        "Richmond",
+        "Greater Richmond",
+        "Public research university represented by autonomous-vehicle, robotics, UAV research, and institutional flight-operations records.",
+        "university_vcu",
+        [
+            "VCU Autonomous Robots and Vehicles Laboratory",
+            "VCU Robotics and Autonomous Systems Group",
+            "VCU UAV Research Laboratory",
+            "Virginia Commonwealth University UAS Operations Program",
+        ],
+    ),
+    (
+        "Old Dominion University",
+        "Norfolk",
+        "Hampton Roads",
+        "Public research university with mapped autonomy, modeling and simulation, spaceflight, education, and UAS operations capabilities.",
+        "university_odu",
+        [
+            "ODU Unmanned and Autonomous Vehicle Laboratory",
+            "Virginia Modeling, Analysis and Simulation Center",
+            "Virginia Institute for Spaceflight and Autonomy",
+            "Virginia Space Grant Consortium Drone Academies",
+            "Old Dominion University UAS Operations Program",
+        ],
+    ),
+    (
+        "Christopher Newport University",
+        "Newport News",
+        "Hampton Roads",
+        "Public university represented by mapped research laboratories for autonomous aerial and ground systems and humanitarian robotics.",
+        "university_cnu",
+        [
+            "CNU Autonomous Systems and Drone Lab",
+            "CNU Capable Humanitarian Robotics and Intelligent Systems Lab",
+        ],
+    ),
+    (
+        "George Mason University",
+        "Fairfax",
+        "Northern Virginia",
+        "Public research university represented by mapped robotics, air-transportation systems, and public-safety UAS activities.",
+        "university_gmu",
+        [
+            "George Mason Autonomous Robotics Laboratory",
+            "George Mason Center for Air Transportation Systems Research",
+            "George Mason University Police UAS Team",
+        ],
+    ),
+    (
+        "James Madison University",
+        "Harrisonburg",
+        "Shenandoah Valley",
+        "Public university represented by mapped interdisciplinary facilities and project-based drone education.",
+        "university_jmu",
+        ["JMU X-Labs", "JMU Drone Challenge"],
+    ),
+    (
+        "Liberty University",
+        "Lynchburg",
+        "Lynchburg Region",
+        "Private university represented by mapped aeronautics programs in unmanned-aircraft operations and maintenance.",
+        "university_liberty",
+        [
+            "Liberty University School of Aeronautics",
+            "Liberty University Aeronautics: Unmanned Aerial Systems BS",
+            "Liberty University Aviation Maintenance: Unmanned Aerial Systems BS",
+        ],
+    ),
+    (
+        "Virginia State University",
+        "Petersburg",
+        "Greater Richmond",
+        "Public university represented by a mapped institutional process for approved unmanned-aircraft research and operations.",
+        "university_vsu",
+        ["Virginia State University UAS Operations Program"],
+    ),
+    (
+        "William & Mary",
+        "Williamsburg",
+        "Hampton Roads",
+        "Public research university and institutional home of the Virginia Institute of Marine Science and its coastal research capabilities.",
+        "university_wm",
+        ["Virginia Institute of Marine Science"],
+    ),
 ]
 
 CURATED_ASSETS = [
@@ -1916,6 +2060,49 @@ def defense_records():
     return records
 
 
+def university_records():
+    records = []
+    for name, place, region, description, source_key, _children in UNIVERSITY_ASSETS:
+        latitude, longitude = PLACES[place]
+        record_source = source(source_key)
+        records.append(
+            {
+                "name": name,
+                "record_type": "university",
+                "short_description": description,
+                "unmanned_systems_relevance": (
+                    f"{name} is mapped at the institution level to connect its source-backed "
+                    "unmanned-systems research, education, operations, facilities, and programs."
+                ),
+                "city": place,
+                "state": "VA",
+                "latitude": latitude,
+                "longitude": longitude,
+                "location_precision": "locality",
+                "region": region,
+                "strategic_categories": ["Research and technical depth", "Workforce and talent"],
+                "platform_domains": ["Cross-domain autonomy"],
+                "capabilities": [
+                    "Autonomy and artificial intelligence",
+                    "Systems engineering and integration",
+                ],
+                "missions": ["Training and experimentation"],
+                "website_url": record_source["url"],
+                "sources": [record_source],
+                "provenance": "university-institution",
+            }
+        )
+    return records
+
+
+def university_relationships():
+    return [
+        (university_name, "supports", child_name)
+        for university_name, _place, _region, _description, _source_key, children in UNIVERSITY_ASSETS
+        for child_name in children
+    ]
+
+
 def curated_records():
     records = []
     for name, record_type, place, region, profile_key, description, source_key in CURATED_ASSETS:
@@ -1946,7 +2133,7 @@ def curated_records():
     return records
 
 
-def validate(records):
+def validate(records, relationships):
     names = set()
     for record in records:
         if record["name"] in names:
@@ -1960,7 +2147,7 @@ def validate(records):
             raise ValueError(f"Description too long: {record['name']}")
 
     relationship_assets = {
-        asset_name for relationship in CATALOG_RELATIONSHIPS for asset_name in (relationship[0], relationship[2])
+        asset_name for relationship in relationships for asset_name in (relationship[0], relationship[2])
     }
     unknown_assets = relationship_assets - names
     if unknown_assets:
@@ -1968,15 +2155,15 @@ def validate(records):
 
 
 def main():
-    records = airport_records() + defense_records() + curated_records()
+    records = airport_records() + defense_records() + university_records() + curated_records()
     records.sort(key=lambda item: item["name"].casefold())
-    validate(records)
-    relationships = list(CATALOG_RELATIONSHIPS)
+    relationships = list(CATALOG_RELATIONSHIPS) + university_relationships()
     relationships.extend(
         ("Virginia Department of Aviation", "supports", record["name"])
         for record in records
         if record["provenance"] == "faa-public-airport"
     )
+    validate(records, relationships)
     payload = {
         "generated_at": CATALOG_DATE,
         "record_count": len(records),

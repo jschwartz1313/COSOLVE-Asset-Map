@@ -1,6 +1,6 @@
 import { fetchAssets } from "./api.js?v=20260717";
 import { bindFilterDrawer, bindFilterIndicators } from "./filters.js?v=20260717";
-import { createMap } from "./map.js?v=20260717-5";
+import { createMap } from "./map.js?v=20260720";
 import { renderResults, selectResult } from "./results.js?v=20260717";
 import { hydrateForm, paramsFromForm, updateUrl } from "./state.js?v=20260717";
 

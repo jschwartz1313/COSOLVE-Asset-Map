@@ -82,6 +82,7 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
 .asset-card p { color: var(--ink-muted); font-size: 13px; line-height: 1.55; }
 .card-meta { min-width: 0; display: flex; align-items: center; justify-content: space-between; gap: 8px; color: var(--ink-muted); font-size: 11px; }
 .type-pill { max-width: 65%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding: 4px 7px; border-radius: 3px; color: #234; background: #e7ece9; font-size: 10px; font-weight: 800; text-transform: uppercase; }
+.type-university { background: #f1dfe5; color: #743247; }
 .type-facility { background: #dceeee; color: #0c625e; }
 .type-organization { background: #e2eaf1; color: #24597f; }
 .type-program { background: #f4e9cb; color: #78570d; }

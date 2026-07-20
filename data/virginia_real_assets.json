@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-17",
+  "generated_at": "2026-07-20",
   "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, and a curated set of source-backed ecosystem records.",
-  "record_count": 222,
+  "record_count": 232,
   "records": [
     {
       "capabilities": [
@@ -964,6 +964,40 @@
       ],
       "unmanned_systems_relevance": "Chesapeake Rgnl is included as public aviation infrastructure serving Norfolk. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "city": "Newport News",
+      "latitude": 37.087,
+      "location_precision": "locality",
+      "longitude": -76.473,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Christopher Newport University",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "provenance": "university-institution",
+      "record_type": "university",
+      "region": "Hampton Roads",
+      "short_description": "Public university represented by mapped research laboratories for autonomous aerial and ground systems and humanitarian robotics.",
+      "sources": [
+        {
+          "title": "Christopher Newport University",
+          "url": "https://cnu.edu/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Christopher Newport University is mapped at the institution level to connect its source-backed unmanned-systems research, education, operations, facilities, and programs.",
+      "website_url": "https://cnu.edu/"
     },
     {
       "capabilities": [
@@ -2152,6 +2186,40 @@
     },
     {
       "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "city": "Fairfax",
+      "latitude": 38.846,
+      "location_precision": "locality",
+      "longitude": -77.307,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "George Mason University",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "provenance": "university-institution",
+      "record_type": "university",
+      "region": "Northern Virginia",
+      "short_description": "Public research university represented by mapped robotics, air-transportation systems, and public-safety UAS activities.",
+      "sources": [
+        {
+          "title": "George Mason University: Key Facts",
+          "url": "https://www.gmu.edu/about/key-facts"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "George Mason University is mapped at the institution level to connect its source-backed unmanned-systems research, education, operations, facilities, and programs.",
+      "website_url": "https://www.gmu.edu/about/key-facts"
+    },
+    {
+      "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
       ],
@@ -2530,6 +2598,40 @@
     {
       "capabilities": [
         "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "city": "Harrisonburg",
+      "latitude": 38.449,
+      "location_precision": "locality",
+      "longitude": -78.869,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "James Madison University",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "provenance": "university-institution",
+      "record_type": "university",
+      "region": "Shenandoah Valley",
+      "short_description": "Public university represented by mapped interdisciplinary facilities and project-based drone education.",
+      "sources": [
+        {
+          "title": "James Madison University: About",
+          "url": "https://www.jmu.edu/about/index.shtml"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "James Madison University is mapped at the institution level to connect its source-backed unmanned-systems research, education, operations, facilities, and programs.",
+      "website_url": "https://www.jmu.edu/about/index.shtml"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
       ],
       "city": "Harrisonburg",
@@ -2897,6 +2999,40 @@
       ],
       "unmanned_systems_relevance": "Leesburg Exec is included as public aviation infrastructure serving Leesburg. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "city": "Lynchburg",
+      "latitude": 37.414,
+      "location_precision": "locality",
+      "longitude": -79.142,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Liberty University",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "provenance": "university-institution",
+      "record_type": "university",
+      "region": "Lynchburg Region",
+      "short_description": "Private university represented by mapped aeronautics programs in unmanned-aircraft operations and maintenance.",
+      "sources": [
+        {
+          "title": "Liberty University: About",
+          "url": "https://www.liberty.edu/about/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Liberty University is mapped at the institution level to connect its source-backed unmanned-systems research, education, operations, facilities, and programs.",
+      "website_url": "https://www.liberty.edu/about/"
     },
     {
       "capabilities": [
@@ -4456,6 +4592,40 @@
     },
     {
       "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "city": "Norfolk",
+      "latitude": 36.851,
+      "location_precision": "locality",
+      "longitude": -76.286,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Old Dominion University",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "provenance": "university-institution",
+      "record_type": "university",
+      "region": "Hampton Roads",
+      "short_description": "Public research university with mapped autonomy, modeling and simulation, spaceflight, education, and UAS operations capabilities.",
+      "sources": [
+        {
+          "title": "Old Dominion University: About",
+          "url": "https://www.odu.edu/about"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Old Dominion University is mapped at the institution level to connect its source-backed unmanned-systems research, education, operations, facilities, and programs.",
+      "website_url": "https://www.odu.edu/about"
+    },
+    {
+      "capabilities": [
         "Safety, policy, regulatory, and airspace integration",
         "Operations, maintenance, and sustainment"
       ],
@@ -5470,6 +5640,40 @@
     },
     {
       "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "city": "Charlottesville",
+      "latitude": 38.035,
+      "location_precision": "locality",
+      "longitude": -78.503,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "University of Virginia",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "provenance": "university-institution",
+      "record_type": "university",
+      "region": "Central Virginia",
+      "short_description": "Public research university represented by mapped robotics, autonomous-systems, embedded-systems, and institutional UAS activities.",
+      "sources": [
+        {
+          "title": "University of Virginia: About UVA",
+          "url": "https://www.virginia.edu/about-uva/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "University of Virginia is mapped at the institution level to connect its source-backed unmanned-systems research, education, operations, facilities, and programs.",
+      "website_url": "https://www.virginia.edu/about-uva/"
+    },
+    {
+      "capabilities": [
         "Safety, policy, regulatory, and airspace integration",
         "Operations, maintenance, and sustainment"
       ],
@@ -5920,6 +6124,40 @@
       ],
       "unmanned_systems_relevance": "Develops robotics, perception, planning, control, or connected-vehicle capabilities that support autonomous ground and cross-domain systems.",
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "city": "Richmond",
+      "latitude": 37.541,
+      "location_precision": "locality",
+      "longitude": -77.436,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Virginia Commonwealth University",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "provenance": "university-institution",
+      "record_type": "university",
+      "region": "Greater Richmond",
+      "short_description": "Public research university represented by autonomous-vehicle, robotics, UAV research, and institutional flight-operations records.",
+      "sources": [
+        {
+          "title": "Virginia Commonwealth University: About",
+          "url": "https://www.vcu.edu/about-vcu/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Virginia Commonwealth University is mapped at the institution level to connect its source-backed unmanned-systems research, education, operations, facilities, and programs.",
+      "website_url": "https://www.vcu.edu/about-vcu/"
     },
     {
       "capabilities": [
@@ -6685,6 +6923,40 @@
     },
     {
       "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "city": "Petersburg",
+      "latitude": 37.227,
+      "location_precision": "locality",
+      "longitude": -77.402,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Virginia State University",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "provenance": "university-institution",
+      "record_type": "university",
+      "region": "Greater Richmond",
+      "short_description": "Public university represented by a mapped institutional process for approved unmanned-aircraft research and operations.",
+      "sources": [
+        {
+          "title": "Virginia State University: About",
+          "url": "https://www.vsu.edu/about/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Virginia State University is mapped at the institution level to connect its source-backed unmanned-systems research, education, operations, facilities, and programs.",
+      "website_url": "https://www.vsu.edu/about/"
+    },
+    {
+      "capabilities": [
         "Safety, policy, regulatory, and airspace integration",
         "Operations, maintenance, and sustainment"
       ],
@@ -6716,6 +6988,40 @@
       ],
       "unmanned_systems_relevance": "Operates a documented institutional UAS program supporting research, instruction, and compliant flight operations.",
       "website_url": "https://www.vsu.edu/files/docs/policies/8000/use-unmanned-aerial-systems-drones.pdf"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "city": "Blacksburg",
+      "latitude": 37.229,
+      "location_precision": "locality",
+      "longitude": -80.414,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Virginia Tech",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "provenance": "university-institution",
+      "record_type": "university",
+      "region": "New River Valley",
+      "short_description": "Public research university and institutional home of Virginia's FAA-designated UAS test-site team and a broad autonomy research network.",
+      "sources": [
+        {
+          "title": "Virginia Tech: About",
+          "url": "https://www.vt.edu/about.html"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Virginia Tech is mapped at the institution level to connect its source-backed unmanned-systems research, education, operations, facilities, and programs.",
+      "website_url": "https://www.vt.edu/about.html"
     },
     {
       "capabilities": [
@@ -7410,6 +7716,40 @@
     },
     {
       "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "city": "Williamsburg",
+      "latitude": 37.271,
+      "location_precision": "locality",
+      "longitude": -76.707,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "William & Mary",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "provenance": "university-institution",
+      "record_type": "university",
+      "region": "Hampton Roads",
+      "short_description": "Public research university and institutional home of the Virginia Institute of Marine Science and its coastal research capabilities.",
+      "sources": [
+        {
+          "title": "William & Mary: About",
+          "url": "https://www.wm.edu/about/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "William & Mary is mapped at the institution level to connect its source-backed unmanned-systems research, education, operations, facilities, and programs.",
+      "website_url": "https://www.wm.edu/about/"
+    },
+    {
+      "capabilities": [
         "Operations, maintenance, and sustainment"
       ],
       "city": "South Boston",
@@ -7730,6 +8070,246 @@
     {
       "from": "NASA Wallops Flight Facility",
       "to": "Mid-Atlantic Regional Spaceport",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "Mid-Atlantic Aviation Partnership",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "Virginia Tech Drone Park",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "Kentland Experimental Aerial Systems Laboratory",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "Virginia Tech Advanced Control Systems Lab",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "Center for Unmanned Aircraft Systems at Virginia Tech",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "Virginia Tech Autonomous Systems and Control Laboratory",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "Virginia Tech Transportation Institute",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "Virginia Smart Road",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "Virginia Automated Corridors",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "Virginia Tech Center for Marine Autonomy and Robotics",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "AutoBoat at Virginia Tech",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "Virginia Tech Autonomy and Robotics",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "Virginia Tech Hume Center for National Security and Technology",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "Virginia Tech MADE",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "Commonwealth Cyber Initiative",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "Virginia Tech Grain Crop Drone Research Program",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "Virginia Tech Eastern Shore AREC Drone Application Research",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "Virginia Tech Counter UAS Research and Testing Center",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "Virginia Tech Uncrewed Systems Laboratory",
+      "type": "supports"
+    },
+    {
+      "from": "University of Virginia",
+      "to": "UVA Link Lab",
+      "type": "supports"
+    },
+    {
+      "from": "University of Virginia",
+      "to": "UVA Robotics and Autonomous Systems Research",
+      "type": "supports"
+    },
+    {
+      "from": "University of Virginia",
+      "to": "UVA Robotics, Dynamics, and Autonomous Systems",
+      "type": "supports"
+    },
+    {
+      "from": "University of Virginia",
+      "to": "Cavalier Autonomous Racing",
+      "type": "supports"
+    },
+    {
+      "from": "University of Virginia",
+      "to": "UVA Bio-Inspired Engineering Research Laboratory",
+      "type": "supports"
+    },
+    {
+      "from": "University of Virginia",
+      "to": "UVA Robotics and Embedded Systems Focus Path",
+      "type": "supports"
+    },
+    {
+      "from": "University of Virginia",
+      "to": "University of Virginia UAS Operations Program",
+      "type": "supports"
+    },
+    {
+      "from": "University of Virginia",
+      "to": "UVA Coastal Research Center UAS Operations",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Commonwealth University",
+      "to": "VCU Autonomous Robots and Vehicles Laboratory",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Commonwealth University",
+      "to": "VCU Robotics and Autonomous Systems Group",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Commonwealth University",
+      "to": "VCU UAV Research Laboratory",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Commonwealth University",
+      "to": "Virginia Commonwealth University UAS Operations Program",
+      "type": "supports"
+    },
+    {
+      "from": "Old Dominion University",
+      "to": "ODU Unmanned and Autonomous Vehicle Laboratory",
+      "type": "supports"
+    },
+    {
+      "from": "Old Dominion University",
+      "to": "Virginia Modeling, Analysis and Simulation Center",
+      "type": "supports"
+    },
+    {
+      "from": "Old Dominion University",
+      "to": "Virginia Institute for Spaceflight and Autonomy",
+      "type": "supports"
+    },
+    {
+      "from": "Old Dominion University",
+      "to": "Virginia Space Grant Consortium Drone Academies",
+      "type": "supports"
+    },
+    {
+      "from": "Old Dominion University",
+      "to": "Old Dominion University UAS Operations Program",
+      "type": "supports"
+    },
+    {
+      "from": "Christopher Newport University",
+      "to": "CNU Autonomous Systems and Drone Lab",
+      "type": "supports"
+    },
+    {
+      "from": "Christopher Newport University",
+      "to": "CNU Capable Humanitarian Robotics and Intelligent Systems Lab",
+      "type": "supports"
+    },
+    {
+      "from": "George Mason University",
+      "to": "George Mason Autonomous Robotics Laboratory",
+      "type": "supports"
+    },
+    {
+      "from": "George Mason University",
+      "to": "George Mason Center for Air Transportation Systems Research",
+      "type": "supports"
+    },
+    {
+      "from": "George Mason University",
+      "to": "George Mason University Police UAS Team",
+      "type": "supports"
+    },
+    {
+      "from": "James Madison University",
+      "to": "JMU X-Labs",
+      "type": "supports"
+    },
+    {
+      "from": "James Madison University",
+      "to": "JMU Drone Challenge",
+      "type": "supports"
+    },
+    {
+      "from": "Liberty University",
+      "to": "Liberty University School of Aeronautics",
+      "type": "supports"
+    },
+    {
+      "from": "Liberty University",
+      "to": "Liberty University Aeronautics: Unmanned Aerial Systems BS",
+      "type": "supports"
+    },
+    {
+      "from": "Liberty University",
+      "to": "Liberty University Aviation Maintenance: Unmanned Aerial Systems BS",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia State University",
+      "to": "Virginia State University UAS Operations Program",
+      "type": "supports"
+    },
+    {
+      "from": "William & Mary",
+      "to": "Virginia Institute of Marine Science",
       "type": "supports"
     },
     {
