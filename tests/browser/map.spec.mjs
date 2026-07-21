@@ -42,3 +42,12 @@ test("directory remains within the viewport", async ({ page }) => {
     await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
   ).toBe(true);
 });
+
+test("asset detail pages stay compact and within the viewport", async ({ page }) => {
+  await page.goto("/assets/ata-aviation/");
+  await expect(page.getByRole("heading", { name: "ATA Aviation" })).toBeVisible();
+  expect(
+    await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
+  ).toBe(true);
+  expect(await page.locator(".detail-main section").first().evaluate((element) => element.getBoundingClientRect().height)).toBeLessThan(140);
+});
