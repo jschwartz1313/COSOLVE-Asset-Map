@@ -6,7 +6,7 @@
     <span class="eyebrow">Published records</span>
     <h1>Asset directory</h1>
     <form method="get">
-      {% include "includes/filter_fields.html" %}
+      {% include "includes/filter_fields.html" with collapse_categories=True %}
       <div class="filter-actions">
         <button class="button primary" type="submit">Apply filters</button>
         <a class="button secondary" href="{% url 'core:directory' %}">Clear all</a>

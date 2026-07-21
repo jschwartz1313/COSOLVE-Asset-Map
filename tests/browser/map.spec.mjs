@@ -37,6 +37,7 @@ test("empty filters preserve the complete map result set", async ({ page }) => {
 test("directory remains within the viewport", async ({ page }) => {
   await page.goto("/directory/");
   await expect(page.locator(".directory-row").first()).toBeVisible();
+  await expect(page.locator(".directory-filters .category-filter")).not.toHaveAttribute("open", "");
   expect(
     await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
   ).toBe(true);

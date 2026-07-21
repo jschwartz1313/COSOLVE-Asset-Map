@@ -24,16 +24,25 @@
   </select>
 </label>
 
+{% if collapse_categories %}
+<details class="category-filter" {% if request.GET|getlist:"category" %}open{% endif %}>
+  <summary>Strategic category</summary>
+{% else %}
 <fieldset>
   <legend>Strategic category</legend>
+{% endif %}
   <div class="check-list">
     {% for category in categories %}
       <label class="check-row"><input type="checkbox" name="category" value="{{ category.slug }}" {% if category.slug in request.GET|getlist:"category" %}checked{% endif %}><span>{{ category.name }}</span></label>
     {% endfor %}
   </div>
+{% if collapse_categories %}
+</details>
+{% else %}
 </fieldset>
+{% endif %}
 
-<details>
+<details {% if request.GET|getlist:"domain" %}open{% endif %}>
   <summary>Platform domains <span class="summary-count" data-filter-count-for="domain" hidden></span></summary>
   <div class="check-list">
     {% for domain in domains %}
@@ -42,7 +51,7 @@
   </div>
 </details>
 
-<details>
+<details {% if request.GET|getlist:"capability" %}open{% endif %}>
   <summary>Capabilities <span class="summary-count" data-filter-count-for="capability" hidden></span></summary>
   <div class="check-list">
     {% for capability in capabilities %}
@@ -51,7 +60,7 @@
   </div>
 </details>
 
-<details>
+<details {% if request.GET|getlist:"mission" %}open{% endif %}>
   <summary>Mission areas <span class="summary-count" data-filter-count-for="mission" hidden></span></summary>
   <div class="check-list">
     {% for mission in missions %}
