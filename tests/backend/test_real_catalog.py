@@ -1,5 +1,6 @@
 import json
 from datetime import date
+from io import StringIO
 
 from django.conf import settings
 from django.core.management import call_command
@@ -76,3 +77,32 @@ class RealCatalogFileTests(TestCase):
                 relationship_type=Relationship.RelationshipType.SUPPORTS,
             ).exists()
         )
+
+    def test_only_if_empty_preserves_existing_database_edits(self):
+        call_command("seed_real_data", verbosity=0)
+        asset = Asset.objects.order_by("pk").first()
+        asset.short_description = "Reviewed and corrected by a staff member."
+        asset.save(update_fields=["short_description"])
+        output = StringIO()
+
+        call_command(
+            "seed_real_data",
+            prune=True,
+            only_if_empty=True,
+            stdout=output,
+            verbosity=0,
+        )
+
+        asset.refresh_from_db()
+        self.assertEqual(
+            asset.short_description,
+            "Reviewed and corrected by a staff member.",
+        )
+        self.assertIn("Skipped catalog initialization", output.getvalue())
+
+    def test_only_if_empty_loads_a_new_database(self):
+        catalog = self.load_catalog()
+
+        call_command("seed_real_data", only_if_empty=True, verbosity=0)
+
+        self.assertEqual(Asset.public.count(), catalog["record_count"])

@@ -38,9 +38,22 @@ class Command(BaseCommand):
             action="store_true",
             help="Delete catalog-managed records that are no longer in the current catalog.",
         )
+        parser.add_argument(
+            "--only-if-empty",
+            action="store_true",
+            help="Load the catalog only when the database contains no assets.",
+        )
 
     @transaction.atomic
     def handle(self, *args, **options):
+        if options["only_if_empty"] and Asset.objects.exists():
+            self.stdout.write(
+                self.style.WARNING(
+                    "Skipped catalog initialization because the database already contains assets."
+                )
+            )
+            return
+
         catalog = json.loads(options["catalog"].read_text())
         records = catalog["records"]
 

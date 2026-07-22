@@ -1,5 +1,6 @@
 databases:
   - name: cosolve-asset-map-db
+    # Evaluation only: Render free PostgreSQL expires after 30 days and has no backups.
     plan: free
     databaseName: cosolve_asset_map
     user: cosolve_asset_map
@@ -24,6 +25,12 @@ services:
           name: cosolve-asset-map-db
           property: connectionString
       - key: REQUIRE_SITE_LOGIN
-        value: "false"
+        value: "true"
+      - key: DJANGO_SUPERUSER_USERNAME
+        sync: false
+      - key: DJANGO_SUPERUSER_EMAIL
+        sync: false
+      - key: DJANGO_SUPERUSER_PASSWORD
+        sync: false
       - key: PYTHON_VERSION
         value: 3.12.7

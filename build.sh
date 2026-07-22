@@ -5,4 +5,5 @@ python -m pip install -e .
 python manage.py collectstatic --noinput
 python manage.py migrate
 python manage.py setup_staff_roles
-python manage.py seed_real_data --prune
+python manage.py seed_real_data --prune --only-if-empty
+python manage.py ensure_admin_user

@@ -4,6 +4,11 @@ from django.core.exceptions import ImproperlyConfigured
 
 from .base import *  # noqa: F403
 
+for platform_host_variable in ("RENDER_EXTERNAL_HOSTNAME", "RAILWAY_PUBLIC_DOMAIN"):
+    platform_host = os.getenv(platform_host_variable, "").strip()
+    if platform_host and platform_host not in ALLOWED_HOSTS:  # noqa: F405
+        ALLOWED_HOSTS.append(platform_host)  # noqa: F405
+
 if SECRET_KEY == "local-development-only":  # noqa: F405
     raise ImproperlyConfigured("DJANGO_SECRET_KEY must be set in production.")
 if not os.getenv("DATABASE_URL"):
