@@ -32,6 +32,12 @@ test("empty filters preserve the complete map result set", async ({ page }) => {
   }
   await page.locator("#asset-filters button[type=submit]").click();
   await expect(count).toHaveText(initialCount);
+  if (page.viewportSize().width <= 650) {
+    expect(await page.evaluate(() => document.documentElement.scrollHeight)).toBeLessThan(1800);
+    expect(
+      await page.locator("#result-list").evaluate((element) => getComputedStyle(element).overflowY),
+    ).toBe("auto");
+  }
 });
 
 test("directory remains within the viewport", async ({ page }) => {
@@ -46,8 +52,15 @@ test("directory remains within the viewport", async ({ page }) => {
 test("asset detail pages stay compact and within the viewport", async ({ page }) => {
   await page.goto("/assets/ata-aviation/");
   await expect(page.getByRole("heading", { name: "ATA Aviation" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Documented relevance" })).toBeVisible();
   expect(
     await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
   ).toBe(true);
   expect(await page.locator(".detail-main section").first().evaluate((element) => element.getBoundingClientRect().height)).toBeLessThan(140);
+});
+
+test("about page reports review status without an empty date range", async ({ page }) => {
+  await page.goto("/about-data/");
+  await expect(page.getByText("Editorial review", { exact: true })).toBeVisible();
+  await expect(page.getByText("Verification range", { exact: true })).toHaveCount(0);
 });

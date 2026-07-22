@@ -31,6 +31,8 @@ class CoreViewTests(TestCase):
     def test_about_data_renders(self):
         response = self.client.get(reverse("core:about-data"))
         self.assertContains(response, "About the data")
+        self.assertContains(response, "Editorial review")
+        self.assertNotContains(response, "Verification range")
 
 
 @override_settings(REQUIRE_SITE_LOGIN=True)

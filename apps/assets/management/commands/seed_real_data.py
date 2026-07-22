@@ -100,12 +100,16 @@ class Command(BaseCommand):
                     asset=asset,
                     title=source_data["title"],
                 )
+                url_changed = source.url != source_data["url"]
                 source.url = source_data["url"]
                 source.notes = f"Catalog provenance: {record['provenance']}"
                 source.is_public = True
-                if source_created:
+                if source_created or url_changed:
                     source.verification_status = "unreviewed"
                     source.last_verified_at = None
+                    source.last_checked_at = None
+                    source.http_status = None
+                    source.check_error = ""
                 source.save()
             created += int(was_created)
             updated += int(not was_created)

@@ -1,4 +1,5 @@
 {% extends "admin/base_site.html" %}
+{% block title %}Data quality | COSOLVE Admin{% endblock %}
 {% block content %}
 <div id="content-main">
   <h1>Data quality dashboard</h1>
@@ -16,28 +17,28 @@
     <div><strong>{{ outside_virginia_count }}</strong><span>location outliers</span></div>
     <div><strong>{{ undated_sources_count }}</strong><span>undated sources</span></div>
   </div>
-  <section class="quality-section"><h2>Stale or unverified assets</h2>{% include "imports/quality_table.html" with assets=stale empty_message="No stale records." %}</section>
-  <section class="quality-section"><h2>Missing public sources</h2>{% include "imports/quality_table.html" with assets=missing_sources empty_message="Every active record has a public source." %}</section>
-  <section class="quality-section"><h2>Missing coordinates</h2>{% include "imports/quality_table.html" with assets=missing_coordinates empty_message="Every active record has coordinates." %}</section>
-  <section class="quality-section"><h2>Editorial review pending</h2>{% include "imports/quality_table.html" with assets=needs_review empty_message="Every record has completed editorial review." %}</section>
-  <section class="quality-section"><h2>Repeated relevance copy</h2>{% include "imports/quality_table.html" with assets=repeated_copy empty_message="No repeated relevance statements." %}</section>
-  <section class="quality-section"><h2>Incomplete taxonomy</h2>{% include "imports/quality_table.html" with assets=missing_taxonomy empty_message="Every active record has core taxonomy." %}</section>
-  <section class="quality-section"><h2>Assets without relationships</h2>{% include "imports/quality_table.html" with assets=disconnected empty_message="Every active record has a documented relationship." %}</section>
-  <section class="quality-section"><h2>Location outliers</h2>{% include "imports/quality_table.html" with assets=outside_virginia empty_message="No coordinates fall outside the Virginia review bounds." %}</section>
-  <section class="quality-section"><h2>Source link checks needing attention</h2>
-    {% if broken_sources %}<table><thead><tr><th>Source</th><th>Asset</th><th>HTTP status</th><th>Error</th></tr></thead><tbody>
+  <details class="quality-section"><summary><span>Stale or unverified assets</span><strong>{{ stale_count }}</strong></summary>{% include "imports/quality_table.html" with assets=stale empty_message="No stale records." %}</details>
+  <details class="quality-section"><summary><span>Missing public sources</span><strong>{{ missing_sources_count }}</strong></summary>{% include "imports/quality_table.html" with assets=missing_sources empty_message="Every active record has a public source." %}</details>
+  <details class="quality-section"><summary><span>Missing coordinates</span><strong>{{ missing_coordinates_count }}</strong></summary>{% include "imports/quality_table.html" with assets=missing_coordinates empty_message="Every active record has coordinates." %}</details>
+  <details class="quality-section"><summary><span>Editorial review pending</span><strong>{{ needs_review_count }}</strong></summary>{% include "imports/quality_table.html" with assets=needs_review empty_message="Every record has completed editorial review." %}</details>
+  <details class="quality-section"><summary><span>Repeated relevance copy</span><strong>{{ repeated_copy_count }}</strong></summary>{% include "imports/quality_table.html" with assets=repeated_copy empty_message="No repeated relevance statements." %}</details>
+  <details class="quality-section"><summary><span>Incomplete taxonomy</span><strong>{{ missing_taxonomy_count }}</strong></summary>{% include "imports/quality_table.html" with assets=missing_taxonomy empty_message="Every active record has core taxonomy." %}</details>
+  <details class="quality-section"><summary><span>Assets without relationships</span><strong>{{ disconnected_count }}</strong></summary>{% include "imports/quality_table.html" with assets=disconnected empty_message="Every active record has a documented relationship." %}</details>
+  <details class="quality-section"><summary><span>Location outliers</span><strong>{{ outside_virginia_count }}</strong></summary>{% include "imports/quality_table.html" with assets=outside_virginia empty_message="No coordinates fall outside the Virginia review bounds." %}</details>
+  <details class="quality-section" {% if broken_sources_count %}open{% endif %}><summary><span>Source link checks needing attention</span><strong>{{ broken_sources_count }}</strong></summary>
+    {% if broken_sources %}<div class="quality-table-wrap"><table><thead><tr><th>Source</th><th>Asset</th><th>HTTP status</th><th>Error</th></tr></thead><tbody>
     {% for source in broken_sources %}<tr><th><a href="{% url 'admin:sources_source_change' source.pk %}">{{ source.title }}</a></th><td><a href="{% url 'admin:assets_asset_change' source.asset.pk %}">{{ source.asset.name }}</a></td><td>{{ source.http_status|default:"No response" }}</td><td>{{ source.check_error|default:"HTTP failure" }}</td></tr>{% endfor %}
-    </tbody></table>{% else %}<p>No checked source links need attention. Run <code>python manage.py check_source_links --all</code> to refresh this check.</p>{% endif %}
-  </section>
-  <section class="quality-section"><h2>Sources without publication dates</h2>
-    {% if undated_sources %}<table><thead><tr><th>Source</th><th>Asset</th><th>Status</th></tr></thead><tbody>
+    </tbody></table></div>{% else %}<p>No checked source links need attention. Run <code>python manage.py check_source_links --all</code> to refresh this check.</p>{% endif %}
+  </details>
+  <details class="quality-section"><summary><span>Sources without publication dates</span><strong>{{ undated_sources_count }}</strong></summary>
+    {% if undated_sources %}<div class="quality-table-wrap"><table><thead><tr><th>Source</th><th>Asset</th><th>Status</th></tr></thead><tbody>
     {% for source in undated_sources %}<tr><th><a href="{% url 'admin:sources_source_change' source.pk %}">{{ source.title }}</a></th><td><a href="{% url 'admin:assets_asset_change' source.asset.pk %}">{{ source.asset.name }}</a></td><td>{{ source.get_verification_status_display }}</td></tr>{% endfor %}
-    </tbody></table>{% else %}<p>Every public source has a publication date.</p>{% endif %}
-  </section>
-  <section class="quality-section"><h2>Sources needing attention</h2>
-    {% if source_issues %}<table><thead><tr><th>Source</th><th>Asset</th><th>Status</th><th>Last verified</th></tr></thead><tbody>
+    </tbody></table></div>{% else %}<p>Every public source has a publication date.</p>{% endif %}
+  </details>
+  <details class="quality-section"><summary><span>Sources needing attention</span><strong>{{ source_issues_count }}</strong></summary>
+    {% if source_issues %}<div class="quality-table-wrap"><table><thead><tr><th>Source</th><th>Asset</th><th>Status</th><th>Last verified</th></tr></thead><tbody>
     {% for source in source_issues %}<tr><th><a href="{% url 'admin:sources_source_change' source.pk %}">{{ source.title }}</a></th><td><a href="{% url 'admin:assets_asset_change' source.asset.pk %}">{{ source.asset.name }}</a></td><td>{{ source.get_verification_status_display }}</td><td>{{ source.last_verified_at|date:"M j, Y"|default:"Never" }}</td></tr>{% endfor %}
-    </tbody></table>{% else %}<p>Every source is current and verified.</p>{% endif %}
-  </section>
+    </tbody></table></div>{% else %}<p>Every source is current and verified.</p>{% endif %}
+  </details>
 </div>
 {% endblock %}

@@ -5,7 +5,7 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260720">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260722">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
@@ -34,7 +34,7 @@
     <div class="map-toolbar">
       <div class="map-tools">
         <button class="button compact filter-open" type="button" aria-label="Open filters">Filters</button>
-        <button class="button compact" id="reset-view" type="button">Reset view</button>
+        <button class="button compact" id="reset-view" type="button" aria-label="Reset map view">Reset</button>
         <details class="map-layers">
           <summary>Layers</summary>
           <div class="map-layer-options">

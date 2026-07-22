@@ -109,6 +109,7 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
 .detail-main section { padding: 0 0 18px; margin-bottom: 18px; border-bottom: 1px solid var(--line); }
 .detail-main h2, .detail-sidebar h2 { font-size: 19px; margin: 0 0 10px; }
 .detail-main p { line-height: 1.75; }
+.relevance-section p { margin-bottom: 0; color: var(--ink-muted); font-size: 15px; line-height: 1.65; }
 .detail-sidebar section { padding: 16px; background: var(--paper); border: 1px solid var(--line); }
 .detail-sidebar dl { margin: 0; }
 .detail-sidebar dt { margin-top: 12px; color: var(--ink-muted); font-size: 11px; font-weight: 800; text-transform: uppercase; }
@@ -178,21 +179,22 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
   .detail-grid { grid-template-columns: minmax(0, 1fr) 220px; gap: 24px; }
   .compare-controls, .comparison-grid, .about-grid { grid-template-columns: 1fr; }
   .comparison-grid { gap: 48px; }
-  .data-stats { grid-template-columns: 1fr; }
-  .data-stats div { border-right: 0; border-bottom: 1px solid var(--line); }
-  .data-stats div:last-child { border-bottom: 0; }
+  .data-stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .heading-actions { flex-wrap: wrap; }
 }
 @media (max-width: 520px) {
   :root { --header-height: 104px; }
   .site-header { display: grid; grid-template-columns: 1fr; grid-template-rows: 52px 52px; padding: 0 12px; }
   .brand { grid-row: 1; }
-  .primary-nav { grid-row: 2; width: 100%; gap: 20px; overflow-x: auto; border-top: 1px solid var(--line); }
-  .primary-nav a { flex: 0 0 auto; }
+  .primary-nav { grid-row: 2; width: 100%; justify-content: space-between; gap: 14px; overflow-x: auto; border-top: 1px solid var(--line); }
+  .primary-nav a { flex: 0 0 auto; font-size: 11px; }
   .directory-filters form { grid-template-columns: 1fr; }
   .directory-filters form > .search-field, .directory-filters form > .filter-actions { grid-column: auto; }
   .detail-header, .detail-grid { grid-template-columns: 1fr; }
   .detail-header { gap: 16px; }
   .detail-grid { gap: 18px; }
+  .data-stats div { padding: 16px 9px; }
+  .data-stats strong { font-size: 27px; }
+  .data-stats span { font-size: 10px; }
   .page-heading h1 { font-size: 34px; }
 }

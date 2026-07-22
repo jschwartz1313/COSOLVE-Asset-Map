@@ -15,12 +15,17 @@
   <div class="about-grid">
     <article>
       <section><h2>What is included</h2><p>Records cover companies, research groups, facilities, infrastructure, workforce programs, public initiatives, operating environments, and generalized defense assets with documented relevance to unmanned or autonomous systems.</p></section>
-      <section><h2>Evidence standard</h2><p>Every published record requires a public source and an explanation of its unmanned-systems relevance. Sources are reviewed before publication and profiles identify when their evidence was last checked.</p></section>
+      <section><h2>Evidence standard</h2><p>Every published record includes at least one public source and an explanation of its unmanned-systems relevance. Source-backed records remain clearly marked as pending until a publisher completes editorial review.</p></section>
       <section><h2>Location precision</h2><p>Airport reference points may use published coordinates. Most organizations, programs, and security-sensitive assets use generalized campus or locality coordinates. A map point does not represent permission to operate an unmanned system.</p></section>
     </article>
     <aside class="methodology-panel">
       <h2>Current snapshot</h2>
-      <dl><dt>Verification range</dt><dd>{{ verification.earliest|date:"M j, Y" }} to {{ verification.latest|date:"M j, Y" }}</dd><dt>Geographic focus</dt><dd>Commonwealth of Virginia</dd><dt>Publication boundary</dt><dd>Publicly releasable information only</dd></dl>
+      <dl>
+        <dt>Editorial review</dt><dd>{% if not asset_count %}No published records{% elif pending_review_count %}{{ pending_review_count }} records pending{% else %}All {{ reviewed_count }} records reviewed{% endif %}</dd>
+        <dt>Latest source-link check</dt><dd>{{ latest_source_check|date:"M j, Y"|default:"Not yet run" }}</dd>
+        <dt>Geographic focus</dt><dd>Commonwealth of Virginia</dd>
+        <dt>Publication boundary</dt><dd>Publicly releasable information only</dd>
+      </dl>
       <a class="button primary full" href="{% url 'core:directory' %}">Browse the directory</a>
     </aside>
   </div>

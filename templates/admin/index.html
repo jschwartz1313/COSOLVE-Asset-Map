@@ -14,7 +14,7 @@
     <h1 id="workspace-heading">Ecosystem data maintenance</h1>
     <div class="admin-tool-grid">
       {% if perms.assets.view_asset %}<a class="admin-tool" href="{% url 'admin:assets_asset_changelist' %}"><strong>Asset records</strong><span>Search, filter, edit, review, and publish records.</span></a>{% endif %}
-      {% if perms.assets.add_asset %}<a class="admin-tool" href="{% url 'admin:assets_asset_add' %}"><strong>Add an asset</strong><span>Create one organization, facility, program, or environment.</span></a>{% endif %}
+      {% if perms.assets.add_asset %}<a class="admin-tool" href="{% url 'admin:assets_asset_add' %}"><strong>Add an asset</strong><span>Create a university, organization, facility, program, infrastructure, or operating environment record.</span></a>{% endif %}
       {% if perms.sources.view_source %}<a class="admin-tool" href="{% url 'admin:sources_source_changelist' %}"><strong>Sources</strong><span>Maintain citations, dates, and verification status.</span></a>{% endif %}
       {% if perms.assets.view_relationship %}<a class="admin-tool" href="{% url 'admin:assets_relationship_changelist' %}"><strong>Relationships</strong><span>Connect organizations, facilities, programs, and partners.</span></a>{% endif %}
       {% if perms.assets.add_asset %}<a class="admin-tool" href="{% url 'imports:preview' %}"><strong>Import CSV</strong><span>Validate a spreadsheet and create internal drafts in bulk.</span></a>{% endif %}

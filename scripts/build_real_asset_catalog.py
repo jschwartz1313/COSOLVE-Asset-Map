@@ -218,8 +218,8 @@ SOURCES = {
         "https://www.co.prince-edward.va.us/News-Article/Pyle-Named-County-Emergency-Management-Coordinator",
     ),
     "accomack_uas": (
-        "Accomack County Emergency Management Drone Program",
-        "https://www.co.accomack.va.us/home/showpublisheddocument/19584/638920698825370000",
+        "Accomack County DPS Safety Education Day",
+        "https://www.co.accomack.va.us/Home/Components/News/News/381/18",
     ),
     "campbell_uas": (
         "Campbell County Sheriff's Office 2024 Annual Report",
@@ -498,6 +498,25 @@ PLACES = {
     "Wise": (36.975, -82.576),
     "Winchester": (39.185, -78.163),
     "Yorktown": (37.239, -76.510),
+}
+
+# The coordinate fallback is intentionally broad. These airport overrides keep
+# well-known locality assignments from crossing adjacent ecosystem regions.
+AIRPORT_REGION_OVERRIDES = {
+    "2G6": "Greater Richmond",
+    "CHO": "Central Virginia",
+    "EZF": "Fredericksburg Region",
+    "FRR": "Shenandoah Valley",
+    "HSP": "Shenandoah Valley",
+    "LYH": "Lynchburg Region",
+    "MFV": "Eastern Shore",
+    "MTV": "Southside Virginia",
+    "RMN": "Fredericksburg Region",
+    "ROA": "Roanoke Valley",
+    "TGI": "Eastern Shore",
+    "W24": "Lynchburg Region",
+    "W90": "Lynchburg Region",
+    "W91": "Roanoke Valley",
 }
 
 DEFENSE_INSTALLATIONS = [
@@ -2010,7 +2029,9 @@ def airport_records():
                 "latitude": round(latitude, 6),
                 "longitude": round(longitude, 6),
                 "location_precision": "exact",
-                "region": region_for(latitude, longitude),
+                "region": AIRPORT_REGION_OVERRIDES.get(
+                    identifier, region_for(latitude, longitude)
+                ),
                 "strategic_categories": ["Physical infrastructure and logistics"],
                 "platform_domains": ["Unmanned aircraft systems"],
                 "capabilities": ["Operations, maintenance, and sustainment"],

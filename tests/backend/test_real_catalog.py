@@ -1,4 +1,5 @@
 import json
+from datetime import date
 
 from django.conf import settings
 from django.core.management import call_command
@@ -23,6 +24,14 @@ class RealCatalogFileTests(TestCase):
         self.assertTrue(
             all(record["sources"] and record["unmanned_systems_relevance"] for record in records)
         )
+        airport_regions = {
+            record["name"]: record["region"]
+            for record in records
+            if record["provenance"] == "faa-public-airport"
+        }
+        self.assertEqual(airport_regions["Accomack County"], "Eastern Shore")
+        self.assertEqual(airport_regions["Lynchburg Rgnl/Preston Glenn Fld"], "Lynchburg Region")
+        self.assertEqual(airport_regions["Roanoke/Blacksburg Rgnl (Woodrum Fld)"], "Roanoke Valley")
         universities = [record for record in records if record["record_type"] == "university"]
         self.assertEqual(len(universities), 10)
         self.assertTrue(
@@ -36,12 +45,29 @@ class RealCatalogFileTests(TestCase):
     def test_catalog_seed_is_idempotent(self):
         catalog = self.load_catalog()
         call_command("seed_real_data", verbosity=0)
+        first_record = catalog["records"][0]
+        first_source = first_record["sources"][0]
+        source = Source.objects.get(
+            asset__name=first_record["name"],
+            asset__city=first_record["city"],
+            title=first_source["title"],
+        )
+        source.url = "https://example.test/obsolete"
+        source.verification_status = "verified"
+        source.last_verified_at = date(2026, 1, 1)
+        source.http_status = 404
+        source.check_error = "Old result"
+        source.save()
         call_command("seed_real_data", verbosity=0)
         self.assertEqual(Asset.public.count(), catalog["record_count"])
         self.assertEqual(Relationship.objects.count(), len(catalog["relationships"]))
         self.assertGreaterEqual(Source.objects.count(), catalog["record_count"])
         self.assertFalse(Source.objects.exclude(verification_status="unreviewed").exists())
         self.assertFalse(Source.objects.filter(last_verified_at__isnull=False).exists())
+        source.refresh_from_db()
+        self.assertEqual(source.url, first_source["url"])
+        self.assertIsNone(source.http_status)
+        self.assertEqual(source.check_error, "")
         self.assertFalse(Asset.objects.filter(name__startswith="Demo ").exists())
         self.assertEqual(Asset.public.filter(record_type=Asset.RecordType.UNIVERSITY).count(), 10)
         self.assertTrue(

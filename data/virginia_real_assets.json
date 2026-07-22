@@ -18,7 +18,7 @@
       ],
       "provenance": "faa-public-airport",
       "record_type": "infrastructure",
-      "region": "Central Virginia",
+      "region": "Eastern Shore",
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier MFV).",
       "sources": [
         {
@@ -61,8 +61,8 @@
       "short_description": "County emergency-management drone program publicly presented through the Department of Public Safety.",
       "sources": [
         {
-          "title": "Accomack County Emergency Management Drone Program",
-          "url": "https://www.co.accomack.va.us/home/showpublisheddocument/19584/638920698825370000"
+          "title": "Accomack County DPS Safety Education Day",
+          "url": "https://www.co.accomack.va.us/Home/Components/News/News/381/18"
         }
       ],
       "state": "VA",
@@ -71,7 +71,7 @@
         "Multi-domain missions"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.co.accomack.va.us/home/showpublisheddocument/19584/638920698825370000"
+      "website_url": "https://www.co.accomack.va.us/Home/Components/News/News/381/18"
     },
     {
       "capabilities": [
@@ -498,7 +498,7 @@
       ],
       "provenance": "faa-public-airport",
       "record_type": "infrastructure",
-      "region": "New River Valley",
+      "region": "Southside Virginia",
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier MTV).",
       "sources": [
         {
@@ -878,7 +878,7 @@
       ],
       "provenance": "faa-public-airport",
       "record_type": "infrastructure",
-      "region": "Shenandoah Valley",
+      "region": "Central Virginia",
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier CHO).",
       "sources": [
         {
@@ -1833,7 +1833,7 @@
       ],
       "provenance": "faa-public-airport",
       "record_type": "infrastructure",
-      "region": "Central Virginia",
+      "region": "Lynchburg Region",
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W24).",
       "sources": [
         {
@@ -2095,7 +2095,7 @@
       ],
       "provenance": "faa-public-airport",
       "record_type": "infrastructure",
-      "region": "Northern Virginia",
+      "region": "Shenandoah Valley",
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier FRR).",
       "sources": [
         {
@@ -2542,7 +2542,7 @@
       ],
       "provenance": "faa-public-airport",
       "record_type": "infrastructure",
-      "region": "Roanoke Valley",
+      "region": "Shenandoah Valley",
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier HSP).",
       "sources": [
         {
@@ -3358,7 +3358,7 @@
       ],
       "provenance": "faa-public-airport",
       "record_type": "infrastructure",
-      "region": "Southside Virginia",
+      "region": "Lynchburg Region",
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier LYH).",
       "sources": [
         {
@@ -3459,7 +3459,7 @@
       ],
       "provenance": "faa-public-airport",
       "record_type": "infrastructure",
-      "region": "Southside Virginia",
+      "region": "Greater Richmond",
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier 2G6).",
       "sources": [
         {
@@ -4197,7 +4197,7 @@
       ],
       "provenance": "faa-public-airport",
       "record_type": "infrastructure",
-      "region": "Southside Virginia",
+      "region": "Lynchburg Region",
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W90).",
       "sources": [
         {
@@ -5083,7 +5083,7 @@
       ],
       "provenance": "faa-public-airport",
       "record_type": "infrastructure",
-      "region": "Southside Virginia",
+      "region": "Roanoke Valley",
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier ROA).",
       "sources": [
         {
@@ -5117,7 +5117,7 @@
       ],
       "provenance": "faa-public-airport",
       "record_type": "infrastructure",
-      "region": "Central Virginia",
+      "region": "Fredericksburg Region",
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier EZF).",
       "sources": [
         {
@@ -5185,7 +5185,7 @@
       ],
       "provenance": "faa-public-airport",
       "record_type": "infrastructure",
-      "region": "New River Valley",
+      "region": "Roanoke Valley",
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier W91).",
       "sources": [
         {
@@ -5285,7 +5285,7 @@
       ],
       "provenance": "faa-public-airport",
       "record_type": "infrastructure",
-      "region": "Central Virginia",
+      "region": "Eastern Shore",
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier TGI).",
       "sources": [
         {
@@ -7695,7 +7695,7 @@
       ],
       "provenance": "faa-public-airport",
       "record_type": "infrastructure",
-      "region": "Central Virginia",
+      "region": "Fredericksburg Region",
       "short_description": "Operational public-use Virginia aviation facility (FAA identifier RMN).",
       "sources": [
         {

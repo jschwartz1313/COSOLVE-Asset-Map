@@ -13,6 +13,7 @@
   </header>
   <div class="detail-grid">
     <article class="detail-main">
+      <section class="relevance-section"><h2>Documented relevance</h2><p>{{ asset.unmanned_systems_relevance }}</p></section>
       {% if asset.capabilities.exists %}<section><h2>Capabilities</h2><div class="tag-list large">{% for item in asset.capabilities.all %}<span>{{ item.name }}</span>{% endfor %}</div></section>{% endif %}
       {% if asset.missions.exists %}<section><h2>Mission areas</h2><div class="tag-list large">{% for item in asset.missions.all %}<span>{{ item.name }}</span>{% endfor %}</div></section>{% endif %}
       {% if relationships %}<section><h2>Related assets</h2><div class="relationship-list">{% for relationship in relationships|slice:":12" %}<a href="{{ relationship.to_asset.get_absolute_url }}"><span>{{ relationship.get_relationship_type_display }}</span><strong>{{ relationship.to_asset.name }}</strong></a>{% endfor %}</div>{% if relationship_count > 12 %}<p class="section-note">Showing 12 of {{ relationship_count }} documented connections.</p>{% endif %}</section>{% endif %}

@@ -64,9 +64,12 @@
 @media (max-width: 650px) {
   .map-workspace { height: auto; min-height: calc(100vh - var(--header-height)); display: grid; grid-template-columns: 1fr; grid-template-rows: minmax(52vh, 440px) auto; overflow: visible; }
   .map-stage { grid-row: 1; }
-  .results-panel { grid-row: 2; border-left: 0; border-top: 1px solid var(--line); }
-  .result-list { overflow: visible; }
-  .map-legend { width: 120px; }
+  .results-panel { grid-row: 2; height: min(68vh, 620px); min-height: 420px; border-left: 0; border-top: 1px solid var(--line); }
+  .result-list { overflow-y: auto; overscroll-behavior: contain; }
+  .map-toolbar { left: 8px; right: 8px; gap: 5px; }
+  .map-tools { gap: 5px; }
+  .map-toolbar .button.compact { padding-inline: 9px; font-size: 12px; }
+  .map-legend { width: 88px; }
   .legend-content span { font-size: 9px; }
-  .map-layers { width: 120px; }
+  .map-layers { width: 88px; }
 }

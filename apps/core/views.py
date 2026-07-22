@@ -1,6 +1,6 @@
 from django.core.paginator import Paginator
 from django.db import connection
-from django.db.models import Count, Max, Min
+from django.db.models import Count, Max
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404, render
 
@@ -127,20 +127,25 @@ def region_compare(request):
 
 
 def about_data(request):
-    verification = Asset.public.aggregate(
-        earliest=Min("last_verified_at"), latest=Max("last_verified_at")
-    )
+    public_assets = Asset.public.all()
+    reviewed_count = public_assets.filter(
+        reviewed_at__isnull=False, last_verified_at__isnull=False
+    ).count()
     return render(
         request,
         "core/about_data.html",
         {
-            "asset_count": Asset.public.count(),
-            "source_count": Source.objects.filter(asset__in=Asset.public.all(), is_public=True)
+            "asset_count": public_assets.count(),
+            "source_count": Source.objects.filter(asset__in=public_assets, is_public=True)
             .values("url")
             .distinct()
             .count(),
-            "region_count": Region.objects.filter(assets__in=Asset.public.all()).distinct().count(),
-            "verification": verification,
+            "region_count": Region.objects.filter(assets__in=public_assets).distinct().count(),
+            "reviewed_count": reviewed_count,
+            "pending_review_count": public_assets.count() - reviewed_count,
+            "latest_source_check": Source.objects.filter(
+                asset__in=public_assets, is_public=True
+            ).aggregate(latest=Max("last_checked_at"))["latest"],
         },
     )
 
