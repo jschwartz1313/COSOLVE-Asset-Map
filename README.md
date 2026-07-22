@@ -41,7 +41,7 @@ python manage.py runserver
 
 Open `http://127.0.0.1:8000/`. Staff administration is at `http://127.0.0.1:8000/admin/`, CSV import is at `http://127.0.0.1:8000/admin/imports/preview/`, and the staff data-quality dashboard is at `http://127.0.0.1:8000/admin/imports/data-quality/`.
 
-The role command creates cumulative `COSOLVE Viewer`, `COSOLVE Editor`, and `COSOLVE Publisher` groups. Create staff accounts under **Users and roles**, enable staff status, and assign the narrowest appropriate group. Editors can maintain and import records and review public update submissions; Publishers can additionally verify, publish, and archive records. Update-submission contact details are not exposed to the read-only Viewer role.
+The role command creates cumulative `COSOLVE Viewer`, `COSOLVE Reviewer`, `COSOLVE Editor`, and `COSOLVE Publisher` groups. Create staff accounts under **Users and roles**, enable staff status, and assign the narrowest appropriate group. Reviewers can correct and verify existing assets and sources without adding, importing, exporting, publishing, or managing users. Editors can additionally maintain the catalog structure, import records, and review public update submissions; Publishers can publish and archive records. Update-submission contact details are not exposed to Viewer or Reviewer roles.
 
 SQLite is the no-setup local default. Set `DATABASE_URL` to a PostgreSQL URL to use PostgreSQL. The current MVP stores WGS84 latitude and longitude in portable decimal columns; Phase 4 introduces PostGIS geometry and spatial indexes.
 

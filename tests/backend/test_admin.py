@@ -4,6 +4,7 @@ from django.contrib.auth.models import Group
 from django.contrib.messages.storage.cookie import CookieStorage
 from django.core.management import call_command
 from django.test import RequestFactory, TestCase
+from django.urls import reverse
 from django.utils import timezone
 
 from apps.assets.admin import AssetAdmin, UpdateSubmissionAdmin, mark_verified, publish_eligible
@@ -95,18 +96,66 @@ class StaffRoleCommandTests(TestCase):
         call_command("setup_staff_roles", verbosity=0)
 
         viewer = Group.objects.get(name="COSOLVE Viewer")
+        reviewer = Group.objects.get(name="COSOLVE Reviewer")
         editor = Group.objects.get(name="COSOLVE Editor")
         publisher = Group.objects.get(name="COSOLVE Publisher")
         viewer_permissions = set(viewer.permissions.values_list("codename", flat=True))
+        reviewer_permissions = set(reviewer.permissions.values_list("codename", flat=True))
         editor_permissions = set(editor.permissions.values_list("codename", flat=True))
         publisher_permissions = set(publisher.permissions.values_list("codename", flat=True))
 
         self.assertIn("view_asset", viewer_permissions)
-        self.assertTrue(viewer_permissions < editor_permissions)
+        self.assertTrue(viewer_permissions < reviewer_permissions)
+        self.assertTrue(reviewer_permissions < editor_permissions)
         self.assertTrue(editor_permissions < publisher_permissions)
+        self.assertIn("change_asset", reviewer_permissions)
+        self.assertIn("change_source", reviewer_permissions)
+        self.assertIn("can_verify_asset", reviewer_permissions)
+        self.assertNotIn("add_asset", reviewer_permissions)
+        self.assertNotIn("add_source", reviewer_permissions)
+        self.assertNotIn("can_publish_asset", reviewer_permissions)
+        self.assertNotIn("view_updatesubmission", reviewer_permissions)
         self.assertIn("can_export_asset", editor_permissions)
         self.assertNotIn("view_updatesubmission", viewer_permissions)
         self.assertIn("view_updatesubmission", editor_permissions)
         self.assertIn("change_updatesubmission", editor_permissions)
         self.assertIn("can_verify_asset", publisher_permissions)
         self.assertIn("can_publish_asset", publisher_permissions)
+
+    def test_reviewer_admin_is_limited_to_existing_data_and_verification(self):
+        call_command("setup_staff_roles", verbosity=0)
+        reviewer = get_user_model().objects.create_user(
+            "reviewer", password="reviewer-password", is_staff=True
+        )
+        reviewer.groups.add(Group.objects.get(name="COSOLVE Reviewer"))
+        self.client.force_login(reviewer)
+        Asset.objects.create(
+            name="Reviewer Test Asset",
+            record_type=Asset.RecordType.ORGANIZATION,
+            short_description="A record available for reviewer workflow testing.",
+            unmanned_systems_relevance="Supports autonomous systems review workflows.",
+        )
+
+        dashboard = self.client.get(reverse("admin:index"))
+        self.assertContains(dashboard, "Asset records")
+        self.assertContains(dashboard, "Sources")
+        self.assertContains(dashboard, "Data quality")
+        self.assertNotContains(dashboard, "Add an asset")
+        self.assertNotContains(dashboard, "Import CSV")
+        self.assertNotContains(dashboard, "Update submissions")
+        self.assertNotContains(dashboard, "Users and roles")
+
+        asset_list = self.client.get(reverse("admin:assets_asset_changelist"))
+        self.assertEqual(asset_list.status_code, 200)
+        self.assertContains(asset_list, 'value="mark_verified"')
+        self.assertNotContains(asset_list, 'value="publish_eligible"')
+        self.assertNotContains(asset_list, 'value="export_selected"')
+        self.assertEqual(
+            self.client.get(reverse("admin:sources_source_changelist")).status_code,
+            200,
+        )
+        self.assertEqual(self.client.get(reverse("admin:assets_asset_add")).status_code, 403)
+        self.assertEqual(
+            self.client.get(reverse("admin:assets_updatesubmission_changelist")).status_code,
+            403,
+        )

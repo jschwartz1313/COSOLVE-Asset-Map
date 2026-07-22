@@ -12,6 +12,11 @@ ROLE_PERMISSIONS = {
         "catalog.view_region",
         "catalog.view_strategiccategory",
     },
+    "COSOLVE Reviewer": {
+        "assets.change_asset",
+        "assets.can_verify_asset",
+        "sources.change_source",
+    },
     "COSOLVE Editor": {
         "assets.add_asset",
         "assets.change_asset",
@@ -34,7 +39,6 @@ ROLE_PERMISSIONS = {
         "catalog.change_strategiccategory",
     },
     "COSOLVE Publisher": {
-        "assets.can_verify_asset",
         "assets.can_publish_asset",
     },
 }

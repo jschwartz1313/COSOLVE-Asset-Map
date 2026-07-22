@@ -13,7 +13,7 @@
   <section class="admin-workspace" aria-labelledby="workspace-heading">
     <h1 id="workspace-heading">Ecosystem data maintenance</h1>
     <div class="admin-tool-grid">
-      {% if perms.assets.view_asset %}<a class="admin-tool" href="{% url 'admin:assets_asset_changelist' %}"><strong>Asset records</strong><span>Search, filter, edit, review, and publish records.</span></a>{% endif %}
+      {% if perms.assets.view_asset %}<a class="admin-tool" href="{% url 'admin:assets_asset_changelist' %}"><strong>Asset records</strong><span>{% if perms.assets.change_asset %}Search, edit, and verify ecosystem records.{% else %}Search and inspect ecosystem records.{% endif %}</span></a>{% endif %}
       {% if perms.assets.add_asset %}<a class="admin-tool" href="{% url 'admin:assets_asset_add' %}"><strong>Add an asset</strong><span>Create a university, organization, facility, program, infrastructure, or operating environment record.</span></a>{% endif %}
       {% if perms.assets.view_updatesubmission %}<a class="admin-tool" href="{% url 'admin:assets_updatesubmission_changelist' %}"><strong>Update submissions</strong><span>Review corrections, additions, and other public feedback.</span></a>{% endif %}
       {% if perms.sources.view_source %}<a class="admin-tool" href="{% url 'admin:sources_source_changelist' %}"><strong>Sources</strong><span>Maintain citations, dates, and verification status.</span></a>{% endif %}
