@@ -4,11 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="COSOLVE unmanned systems ecosystem map and directory">
+  <meta name="description" content="{% block meta_description %}Explore Virginia's unmanned and autonomous systems ecosystem through the COSOLVE asset map and directory.{% endblock %}">
+  <meta name="theme-color" content="#ffffff">
   <title>{% block title %}COSOLVE Asset Map{% endblock %}</title>
+  <link rel="icon" type="image/png" href="{% static 'img/cosolve-logo-black.png' %}">
+  <link rel="apple-touch-icon" href="{% static 'img/cosolve-logo-black.png' %}">
   <link rel="preconnect" href="https://unpkg.com">
   <link rel="stylesheet" href="{% static 'css/tokens.css' %}?v=20260717">
-  <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20260722">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20260722-2">
   {% block extra_css %}{% endblock %}
 </head>
 <body>
@@ -22,7 +25,7 @@
     </a>
     <nav class="primary-nav" aria-label="Primary navigation">
       <a href="{% url 'core:map' %}" {% if request.resolver_match.url_name == 'map' or request.resolver_match.url_name == 'home' %}aria-current="page"{% endif %}>Map</a>
-      <a href="{% url 'core:directory' %}" {% if request.resolver_match.url_name == 'directory' %}aria-current="page"{% endif %}>Directory</a>
+      <a href="{% url 'core:directory' %}" {% if request.resolver_match.url_name == 'directory' or request.resolver_match.url_name == 'asset-detail' or request.resolver_match.url_name == 'asset-suggest-update' %}aria-current="page"{% endif %}>Directory</a>
       <a href="{% url 'core:region-compare' %}" {% if request.resolver_match.url_name == 'region-compare' %}aria-current="page"{% endif %}>Regions</a>
       <a href="{% url 'core:about-data' %}" {% if request.resolver_match.url_name == 'about-data' %}aria-current="page"{% endif %}>About data</a>
       {% if user.is_staff %}<a href="{% url 'admin:index' %}">Admin</a>{% endif %}
@@ -34,5 +37,24 @@
     </div>
   {% endif %}
   {% block content %}{% endblock %}
+  {% block site_footer %}
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="footer-identity">
+        <strong>COSOLVE Unmanned Systems Asset Map</strong>
+        <span>Public-source ecosystem intelligence for Virginia.</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="{% url 'core:about-data' %}">Data methodology</a>
+        <a href="{% url 'core:suggest-update' %}">Suggest an update</a>
+        <a href="{% url 'core:directory' %}">Asset directory</a>
+      </nav>
+      <div class="footer-meta">
+        {% if catalog_last_updated %}<span>Catalog updated {{ catalog_last_updated|date:"M j, Y" }}</span>{% endif %}
+        <span>Not for operational use</span>
+      </div>
+    </div>
+  </footer>
+  {% endblock %}
 </body>
 </html>

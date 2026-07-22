@@ -6,8 +6,8 @@ from django.core.management import call_command
 from django.test import RequestFactory, TestCase
 from django.utils import timezone
 
-from apps.assets.admin import AssetAdmin, mark_verified, publish_eligible
-from apps.assets.models import Asset
+from apps.assets.admin import AssetAdmin, UpdateSubmissionAdmin, mark_verified, publish_eligible
+from apps.assets.models import Asset, UpdateSubmission
 from apps.sources.models import Source
 
 
@@ -72,9 +72,22 @@ class AdminWorkflowTests(TestCase):
 
     def test_lifecycle_fields_are_read_only_in_asset_form(self):
         readonly = set(self.admin.get_readonly_fields(self.request))
-        self.assertTrue(
-            {"status", "visibility", "last_verified_at", "published_at"} <= readonly
+        self.assertTrue({"status", "visibility", "last_verified_at", "published_at"} <= readonly)
+
+    def test_update_submissions_can_move_through_review_queue(self):
+        submission = UpdateSubmission.objects.create(
+            kind=UpdateSubmission.Kind.GENERAL,
+            subject="Workflow question",
+            details="A sufficiently detailed question for the editorial team.",
+            submitter_name="Taylor Morgan",
+            submitter_email="taylor@example.org",
         )
+        submission_admin = UpdateSubmissionAdmin(UpdateSubmission, admin.site)
+        submission_admin.mark_in_review(
+            self.request, UpdateSubmission.objects.filter(pk=submission.pk)
+        )
+        submission.refresh_from_db()
+        self.assertEqual(submission.status, UpdateSubmission.Status.IN_REVIEW)
 
 
 class StaffRoleCommandTests(TestCase):
@@ -92,5 +105,8 @@ class StaffRoleCommandTests(TestCase):
         self.assertTrue(viewer_permissions < editor_permissions)
         self.assertTrue(editor_permissions < publisher_permissions)
         self.assertIn("can_export_asset", editor_permissions)
+        self.assertNotIn("view_updatesubmission", viewer_permissions)
+        self.assertIn("view_updatesubmission", editor_permissions)
+        self.assertIn("change_updatesubmission", editor_permissions)
         self.assertIn("can_verify_asset", publisher_permissions)
         self.assertIn("can_publish_asset", publisher_permissions)

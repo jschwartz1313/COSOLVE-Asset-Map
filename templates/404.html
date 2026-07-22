@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Page not found | COSOLVE{% endblock %}
+{% block meta_description %}The requested COSOLVE Asset Map page could not be found.{% endblock %}
+{% block content %}
+<main id="main-content" class="error-page">
+  <span class="error-code">404</span>
+  <h1>Page not found</h1>
+  <p>The page may have moved, or the address may be incorrect.</p>
+  <div class="error-actions"><a class="button primary" href="{% url 'core:map' %}">Open the map</a><a class="button secondary" href="{% url 'core:directory' %}">Browse the directory</a></div>
+</main>
+{% endblock %}

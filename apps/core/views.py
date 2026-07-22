@@ -2,12 +2,25 @@ from django.core.paginator import Paginator
 from django.db import connection
 from django.db.models import Count, Max
 from django.http import JsonResponse
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, redirect, render
 
 from apps.api.query import filter_public_assets
 from apps.assets.models import Asset
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 from apps.sources.models import Source
+
+from .forms import UpdateSubmissionForm
+
+DIRECTORY_SORTS = (
+    ("name", "Name A-Z"),
+    ("region", "Region"),
+    ("type", "Asset type"),
+)
+DIRECTORY_ORDERING = {
+    "name": ("name",),
+    "region": ("region__name", "name"),
+    "type": ("record_type", "name"),
+}
 
 
 def filter_context():
@@ -29,10 +42,19 @@ def map_view(request):
 
 def directory_view(request):
     queryset = filter_public_assets(request.GET)
+    sort_key = request.GET.get("sort", "name")
+    if sort_key not in DIRECTORY_ORDERING:
+        sort_key = "name"
+    queryset = queryset.order_by(*DIRECTORY_ORDERING[sort_key])
     paginator = Paginator(queryset, 12)
     context = filter_context()
     context.update(
-        {"page_obj": paginator.get_page(request.GET.get("page")), "result_count": queryset.count()}
+        {
+            "page_obj": paginator.get_page(request.GET.get("page")),
+            "result_count": queryset.count(),
+            "sort_key": sort_key,
+            "sort_options": DIRECTORY_SORTS,
+        }
     )
     return render(request, "assets/directory.html", context)
 
@@ -148,6 +170,32 @@ def about_data(request):
             ).aggregate(latest=Max("last_checked_at"))["latest"],
         },
     )
+
+
+def suggest_update(request, slug=None):
+    asset = get_object_or_404(Asset.public, slug=slug) if slug else None
+    form = UpdateSubmissionForm(request.POST or None, asset=asset)
+    if request.method == "POST" and form.is_valid():
+        submission = form.save(commit=False)
+        if asset:
+            submission.asset = asset
+            submission.kind = submission.Kind.CORRECTION
+            submission.subject = asset.name
+        submission.save()
+        return redirect("core:update-thanks")
+    return render(request, "core/suggest_update.html", {"form": form, "asset": asset})
+
+
+def update_thanks(request):
+    return render(request, "core/update_thanks.html")
+
+
+def page_not_found(request, exception):
+    return render(request, "404.html", status=404)
+
+
+def server_error(request):
+    return render(request, "500.html", status=500)
 
 
 def health(request):

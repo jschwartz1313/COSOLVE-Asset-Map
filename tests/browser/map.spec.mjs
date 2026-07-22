@@ -64,3 +64,30 @@ test("about page reports review status without an empty date range", async ({ pa
   await expect(page.getByText("Editorial review", { exact: true })).toBeVisible();
   await expect(page.getByText("Verification range", { exact: true })).toHaveCount(0);
 });
+
+test("update workflow and institutional footer remain within the viewport", async ({ page }) => {
+  await page.goto("/suggest-update/");
+  await expect(page.getByRole("heading", { name: "Suggest an update" })).toBeVisible();
+  await expect(page.getByLabel("Request type")).toBeVisible();
+  await expect(page.getByRole("contentinfo")).toContainText("Catalog updated");
+  expect(
+    await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
+  ).toBe(true);
+});
+
+test("mobile filter drawer exposes an accessible open and close state", async ({ page }) => {
+  test.skip(page.viewportSize().width > 880, "Compact drawer behavior only applies below 880px.");
+  await page.goto("/map/");
+  const openButton = page.getByRole("button", { name: "Open filters" });
+  const panel = page.locator("#asset-filters-panel");
+  await expect(openButton).toHaveAttribute("aria-expanded", "false");
+  await expect(panel).toHaveAttribute("aria-hidden", "true");
+  await expect(panel).toHaveAttribute("inert", "");
+  await openButton.click();
+  await expect(openButton).toHaveAttribute("aria-expanded", "true");
+  await expect(panel).toHaveAttribute("aria-hidden", "false");
+  await expect(panel).not.toHaveAttribute("inert", "");
+  await page.keyboard.press("Escape");
+  await expect(openButton).toHaveAttribute("aria-expanded", "false");
+  await expect(openButton).toBeFocused();
+});

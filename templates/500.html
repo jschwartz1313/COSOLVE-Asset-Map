@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Service interruption | COSOLVE{% endblock %}
+{% block meta_description %}The COSOLVE Asset Map encountered an unexpected service interruption.{% endblock %}
+{% block content %}
+<main id="main-content" class="error-page">
+  <span class="error-code">500</span>
+  <h1>Something went wrong</h1>
+  <p>The request could not be completed. Try again, or return to the map.</p>
+  <div class="error-actions"><a class="button primary" href="{% url 'core:map' %}">Return to the map</a></div>
+</main>
+{% endblock %}

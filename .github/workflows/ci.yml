@@ -50,6 +50,11 @@ jobs:
       - name: Run frontend tests
         run: node --test tests/frontend/*.test.mjs
 
+      - name: Prepare browser test database
+        run: |
+          python manage.py migrate
+          python manage.py seed_real_data --replace-demo --prune
+
       - name: Run browser tests
         run: npx playwright test
 

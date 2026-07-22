@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block title %}About the data | COSOLVE{% endblock %}
+{% block meta_description %}Learn what the COSOLVE Virginia unmanned-systems asset map includes, how records are sourced, and how location and review status are represented.{% endblock %}
 {% block content %}
 <main id="main-content" class="about-page">
   <header class="page-heading">
@@ -17,12 +18,14 @@
       <section><h2>What is included</h2><p>Records cover companies, research groups, facilities, infrastructure, workforce programs, public initiatives, operating environments, and generalized defense assets with documented relevance to unmanned or autonomous systems.</p></section>
       <section><h2>Evidence standard</h2><p>Every published record includes at least one public source and an explanation of its unmanned-systems relevance. Source-backed records remain clearly marked as pending until a publisher completes editorial review.</p></section>
       <section><h2>Location precision</h2><p>Airport reference points may use published coordinates. Most organizations, programs, and security-sensitive assets use generalized campus or locality coordinates. A map point does not represent permission to operate an unmanned system.</p></section>
+      <section><h2>Corrections and additions</h2><p>Organizations and community members can flag an inaccurate record or suggest a missing asset. Submissions are held for staff review and do not change published records automatically.</p><a class="text-link" href="{% url 'core:suggest-update' %}">Suggest an update</a></section>
     </article>
     <aside class="methodology-panel">
       <h2>Current snapshot</h2>
       <dl>
         <dt>Editorial review</dt><dd>{% if not asset_count %}No published records{% elif pending_review_count %}{{ pending_review_count }} records pending{% else %}All {{ reviewed_count }} records reviewed{% endif %}</dd>
         <dt>Latest source-link check</dt><dd>{{ latest_source_check|date:"M j, Y"|default:"Not yet run" }}</dd>
+        <dt>Catalog updated</dt><dd>{{ catalog_last_updated|date:"M j, Y"|default:"Not available" }}</dd>
         <dt>Geographic focus</dt><dd>Commonwealth of Virginia</dd>
         <dt>Publication boundary</dt><dd>Publicly releasable information only</dd>
       </dl>

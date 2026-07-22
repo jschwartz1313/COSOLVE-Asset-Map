@@ -6,7 +6,7 @@ from django.utils import timezone
 
 from apps.sources.models import Source
 
-from .models import Asset, Relationship
+from .models import Asset, Relationship, UpdateSubmission
 
 
 class SourceInline(admin.TabularInline):
@@ -212,6 +212,56 @@ class RelationshipAdmin(admin.ModelAdmin):
     list_filter = ("relationship_type", "is_public")
     search_fields = ("from_asset__name", "to_asset__name", "description")
     autocomplete_fields = ("from_asset", "to_asset")
+
+
+@admin.register(UpdateSubmission)
+class UpdateSubmissionAdmin(admin.ModelAdmin):
+    list_display = (
+        "created_at",
+        "subject",
+        "asset",
+        "kind",
+        "status",
+        "submitter_organization",
+    )
+    list_filter = ("status", "kind", "created_at")
+    search_fields = (
+        "subject",
+        "details",
+        "submitter_name",
+        "submitter_organization",
+        "submitter_email",
+    )
+    autocomplete_fields = ("asset",)
+    readonly_fields = ("created_at", "updated_at")
+    list_select_related = ("asset",)
+    date_hierarchy = "created_at"
+    actions = ("mark_in_review", "mark_resolved")
+    fieldsets = (
+        ("Request", {"fields": ("status", "kind", "asset", "subject", "details", "source_url")}),
+        (
+            "Submitter",
+            {
+                "fields": (
+                    "submitter_name",
+                    "submitter_organization",
+                    "submitter_email",
+                )
+            },
+        ),
+        ("Internal review", {"fields": ("internal_notes",)}),
+        ("Audit", {"fields": ("created_at", "updated_at"), "classes": ("collapse",)}),
+    )
+
+    @admin.action(description="Mark selected submissions in review")
+    def mark_in_review(self, request, queryset):
+        updated = queryset.update(status=UpdateSubmission.Status.IN_REVIEW)
+        messages.success(request, f"Marked {updated} submission(s) in review.")
+
+    @admin.action(description="Mark selected submissions resolved")
+    def mark_resolved(self, request, queryset):
+        updated = queryset.update(status=UpdateSubmission.Status.RESOLVED)
+        messages.success(request, f"Marked {updated} submission(s) resolved.")
 
 
 admin.site.site_header = "COSOLVE Asset Map Administration"

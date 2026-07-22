@@ -2,6 +2,9 @@ from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from django.urls import include, path
 
+handler404 = "apps.core.views.page_not_found"
+handler500 = "apps.core.views.server_error"
+
 urlpatterns = [
     path(
         "accounts/login/",

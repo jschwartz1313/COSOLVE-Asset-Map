@@ -1,8 +1,44 @@
 export function bindFilterDrawer(root) {
   const panel = root.querySelector(".filters-panel");
-  root.querySelector(".filter-open")?.addEventListener("click", () => panel.classList.add("is-open"));
-  root.querySelector(".filter-close")?.addEventListener("click", () => panel.classList.remove("is-open"));
-  return () => panel.classList.remove("is-open");
+  const openButton = root.querySelector(".filter-open");
+  const closeButton = root.querySelector(".filter-close");
+  const compactLayout = window.matchMedia("(max-width: 880px)");
+  let isOpen = false;
+
+  function syncAccessibility() {
+    openButton?.setAttribute("aria-expanded", String(isOpen));
+    if (compactLayout.matches) {
+      if (isOpen) panel.removeAttribute("inert");
+      else panel.setAttribute("inert", "");
+      panel.setAttribute("aria-hidden", String(!isOpen));
+    } else {
+      panel.removeAttribute("inert");
+      panel.removeAttribute("aria-hidden");
+    }
+  }
+
+  function openDrawer() {
+    isOpen = true;
+    panel.classList.add("is-open");
+    syncAccessibility();
+    closeButton?.focus();
+  }
+
+  function closeDrawer({ restoreFocus = false } = {}) {
+    isOpen = false;
+    panel.classList.remove("is-open");
+    syncAccessibility();
+    if (restoreFocus && compactLayout.matches) openButton?.focus();
+  }
+
+  openButton?.addEventListener("click", openDrawer);
+  closeButton?.addEventListener("click", () => closeDrawer({ restoreFocus: true }));
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && isOpen) closeDrawer({ restoreFocus: true });
+  });
+  compactLayout.addEventListener("change", syncAccessibility);
+  syncAccessibility();
+  return closeDrawer;
 }
 
 export function bindFilterIndicators(form) {

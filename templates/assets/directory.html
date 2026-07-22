@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block title %}Directory | COSOLVE{% endblock %}
+{% block meta_description %}Browse and filter COSOLVE's public directory of Virginia unmanned and autonomous systems assets.{% endblock %}
 {% block content %}
 <main id="main-content" class="directory-layout">
   <aside class="directory-filters">
@@ -7,6 +8,7 @@
     <h1>Asset directory</h1>
     <form method="get">
       {% include "includes/filter_fields.html" with collapse_categories=True %}
+      <label><span>Sort results</span><select name="sort">{% for value, label in sort_options %}<option value="{{ value }}" {% if sort_key == value %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label>
       <div class="filter-actions">
         <button class="button primary" type="submit">Apply filters</button>
         <a class="button secondary" href="{% url 'core:directory' %}">Clear all</a>

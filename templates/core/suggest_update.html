@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Suggest an update | COSOLVE{% endblock %}
+{% block meta_description %}Submit a correction, addition, or other feedback for the COSOLVE Virginia unmanned-systems asset map.{% endblock %}
+{% block content %}
+<main id="main-content" class="update-page">
+  <header class="page-heading">
+    <span class="eyebrow">Catalog feedback</span>
+    <h1>Suggest an update</h1>
+    <p>Flag inaccurate information, provide a supporting source, or suggest an asset that should be considered for the directory.</p>
+  </header>
+  <div class="update-layout">
+    <form method="post" class="update-form">
+      {% csrf_token %}
+      {% if form.non_field_errors %}<div class="form-alert" role="alert">{{ form.non_field_errors }}</div>{% endif %}
+      {% if asset %}
+        <div class="submission-context">
+          <span>Update requested for</span>
+          <strong>{{ asset.name }}</strong>
+          <a href="{{ asset.get_absolute_url }}">Return to record</a>
+        </div>
+        {{ form.kind.as_hidden }}
+        {{ form.subject.as_hidden }}
+      {% else %}
+        <label for="{{ form.kind.id_for_label }}"><span>{{ form.kind.label }}</span>{{ form.kind }}{% for error in form.kind.errors %}<small class="field-error">{{ error }}</small>{% endfor %}</label>
+        <label for="{{ form.subject.id_for_label }}"><span>{{ form.subject.label }}</span>{{ form.subject }}{% for error in form.subject.errors %}<small class="field-error">{{ error }}</small>{% endfor %}</label>
+      {% endif %}
+      <label for="{{ form.details.id_for_label }}"><span>{{ form.details.label }}</span>{{ form.details }}{% for error in form.details.errors %}<small class="field-error">{{ error }}</small>{% endfor %}</label>
+      <label for="{{ form.source_url.id_for_label }}"><span>{{ form.source_url.label }}</span>{{ form.source_url }}<small class="field-help">{{ form.source_url.help_text }}</small>{% for error in form.source_url.errors %}<small class="field-error">{{ error }}</small>{% endfor %}</label>
+      <div class="form-pair">
+        <label for="{{ form.submitter_name.id_for_label }}"><span>{{ form.submitter_name.label }}</span>{{ form.submitter_name }}{% for error in form.submitter_name.errors %}<small class="field-error">{{ error }}</small>{% endfor %}</label>
+        <label for="{{ form.submitter_organization.id_for_label }}"><span>{{ form.submitter_organization.label }}</span>{{ form.submitter_organization }}{% for error in form.submitter_organization.errors %}<small class="field-error">{{ error }}</small>{% endfor %}</label>
+      </div>
+      <label for="{{ form.submitter_email.id_for_label }}"><span>{{ form.submitter_email.label }}</span>{{ form.submitter_email }}<small class="field-help">{{ form.submitter_email.help_text }}</small>{% for error in form.submitter_email.errors %}<small class="field-error">{{ error }}</small>{% endfor %}</label>
+      <div class="form-trap" aria-hidden="true">{{ form.confirmation.label_tag }}{{ form.confirmation }}</div>
+      <div class="update-actions">
+        <button class="button primary" type="submit">Submit for review</button>
+        <a class="button secondary" href="{% if asset %}{{ asset.get_absolute_url }}{% else %}{% url 'core:directory' %}{% endif %}">Cancel</a>
+      </div>
+    </form>
+    <aside class="update-process">
+      <h2>Editorial process</h2>
+      <ol>
+        <li><strong>Staff review</strong><span>The submission is checked for clarity and relevance.</span></li>
+        <li><strong>Source review</strong><span>Supporting information is compared with public evidence.</span></li>
+        <li><strong>Catalog decision</strong><span>Accepted changes enter the normal review and publishing workflow.</span></li>
+      </ol>
+      <p>Submitting a request does not guarantee publication. Contact details are used only for follow-up about the request.</p>
+    </aside>
+  </div>
+</main>
+{% endblock %}

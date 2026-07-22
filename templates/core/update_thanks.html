@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Update received | COSOLVE{% endblock %}
+{% block meta_description %}Confirmation that catalog feedback was submitted to the COSOLVE Asset Map editorial team.{% endblock %}
+{% block content %}
+<main id="main-content" class="confirmation-page">
+  <div class="confirmation-mark" aria-hidden="true">&#10003;</div>
+  <span class="eyebrow">Submission received</span>
+  <h1>Thank you for the update</h1>
+  <p>The request has been added to the staff review queue. Published records will remain unchanged until the information is evaluated.</p>
+  <div class="confirmation-actions">
+    <a class="button primary" href="{% url 'core:directory' %}">Return to directory</a>
+    <a class="button secondary" href="{% url 'core:suggest-update' %}">Submit another update</a>
+  </div>
+</main>
+{% endblock %}

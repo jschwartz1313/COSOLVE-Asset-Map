@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block title %}{{ asset.name }} | COSOLVE{% endblock %}
+{% block meta_description %}{{ asset.short_description }}{% endblock %}
 {% block content %}
 <main id="main-content" class="detail-page">
   <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="{% url 'core:directory' %}">Directory</a><span>/</span><span>{{ asset.name }}</span></nav>
@@ -9,7 +10,7 @@
       <h1>{{ asset.name }}</h1>
       <p class="lead">{{ asset.short_description }}</p>
     </div>
-    <div class="verification-block"><span>Review status</span><strong>{{ asset.verification_label }}</strong><small>{% if asset.is_editorially_reviewed %}Reviewed {{ asset.last_verified_at|date:"M j, Y" }} · {% endif %}{{ asset.get_location_precision_display }} location</small></div>
+    <div class="verification-block"><span>Review status</span><strong>{{ asset.verification_label }}</strong><small>{% if asset.is_editorially_reviewed %}Reviewed {{ asset.last_verified_at|date:"M j, Y" }} · {% endif %}{{ asset.get_location_precision_display }} location</small><small>Record updated {{ asset.updated_at|date:"M j, Y" }}</small></div>
   </header>
   <div class="detail-grid">
     <article class="detail-main">
@@ -24,6 +25,7 @@
     <aside class="detail-sidebar">
       <section><h2>Classification</h2><dl><dt>Strategic categories</dt><dd>{% for item in asset.strategic_categories.all %}<span>{{ item.name }}</span>{% endfor %}</dd><dt>Platform domains</dt><dd>{% for item in asset.platform_domains.all %}<span>{{ item.name }}</span>{% endfor %}</dd><dt>Region</dt><dd>{{ asset.region.name|default:"Not assigned" }}</dd></dl></section>
       {% if asset.website_url %}<a class="button primary full" href="{{ asset.website_url }}" rel="noopener noreferrer">Visit website</a>{% endif %}
+      <a class="button secondary full" href="{% url 'core:asset-suggest-update' asset.slug %}">Suggest an update</a>
     </aside>
   </div>
   <footer class="public-disclaimer">Informational ecosystem data only. Records may be incomplete and are not authoritative for operational use.</footer>

@@ -217,3 +217,41 @@ class Relationship(models.Model):
 
     def __str__(self):
         return f"{self.from_asset} {self.get_relationship_type_display()} {self.to_asset}"
+
+
+class UpdateSubmission(models.Model):
+    class Kind(models.TextChoices):
+        CORRECTION = "correction", "Correct an existing record"
+        ADDITION = "addition", "Suggest a new asset"
+        GENERAL = "general", "General feedback"
+
+    class Status(models.TextChoices):
+        NEW = "new", "New"
+        IN_REVIEW = "in-review", "In review"
+        RESOLVED = "resolved", "Resolved"
+        DISMISSED = "dismissed", "Dismissed"
+
+    asset = models.ForeignKey(
+        Asset,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name="update_submissions",
+    )
+    kind = models.CharField(max_length=16, choices=Kind.choices)
+    subject = models.CharField(max_length=220)
+    details = models.TextField(max_length=5000)
+    source_url = models.URLField(blank=True)
+    submitter_name = models.CharField(max_length=120)
+    submitter_organization = models.CharField(max_length=180, blank=True)
+    submitter_email = models.EmailField()
+    status = models.CharField(max_length=16, choices=Status.choices, default=Status.NEW)
+    internal_notes = models.TextField(blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ("-created_at",)
+
+    def __str__(self):
+        return self.subject

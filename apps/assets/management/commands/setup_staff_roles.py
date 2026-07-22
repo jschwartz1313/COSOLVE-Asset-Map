@@ -18,6 +18,8 @@ ROLE_PERMISSIONS = {
         "assets.add_relationship",
         "assets.change_relationship",
         "assets.can_export_asset",
+        "assets.view_updatesubmission",
+        "assets.change_updatesubmission",
         "sources.add_source",
         "sources.change_source",
         "catalog.add_capability",
