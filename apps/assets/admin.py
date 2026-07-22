@@ -1,6 +1,9 @@
 import csv
 
 from django.contrib import admin, messages
+from django.contrib.auth import get_user_model
+from django.contrib.auth.admin import UserAdmin as DjangoUserAdmin
+from django.core.exceptions import PermissionDenied
 from django.http import HttpResponse
 from django.utils import timezone
 
@@ -267,3 +270,43 @@ class UpdateSubmissionAdmin(admin.ModelAdmin):
 admin.site.site_header = "COSOLVE Asset Map Administration"
 admin.site.site_title = "COSOLVE Admin"
 admin.site.index_title = "Ecosystem data maintenance"
+
+
+User = get_user_model()
+admin.site.unregister(User)
+
+
+@admin.register(User)
+class RestrictedUserAdmin(DjangoUserAdmin):
+    restricted_fields = {"is_superuser", "user_permissions"}
+
+    def get_fieldsets(self, request, obj=None):
+        fieldsets = super().get_fieldsets(request, obj)
+        if request.user.is_superuser or obj is None:
+            return fieldsets
+        restricted_fieldsets = []
+        for name, options in fieldsets:
+            fields = tuple(
+                field for field in options.get("fields", ()) if field not in self.restricted_fields
+            )
+            restricted_fieldsets.append((name, {**options, "fields": fields}))
+        return tuple(restricted_fieldsets)
+
+    def has_change_permission(self, request, obj=None):
+        if obj is not None and obj.is_superuser and not request.user.is_superuser:
+            return False
+        return super().has_change_permission(request, obj)
+
+    def get_queryset(self, request):
+        queryset = super().get_queryset(request)
+        if request.user.is_superuser:
+            return queryset
+        return queryset.filter(is_superuser=False)
+
+    def change_view(self, request, object_id, form_url="", extra_context=None):
+        if (
+            not request.user.is_superuser
+            and User._default_manager.filter(pk=object_id, is_superuser=True).exists()
+        ):
+            raise PermissionDenied
+        return super().change_view(request, object_id, form_url, extra_context)

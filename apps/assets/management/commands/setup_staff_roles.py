@@ -41,6 +41,12 @@ ROLE_PERMISSIONS = {
     "COSOLVE Publisher": {
         "assets.can_publish_asset",
     },
+    "COSOLVE Administrator": {
+        "auth.add_user",
+        "auth.change_user",
+        "auth.view_user",
+        "auth.view_group",
+    },
 }
 
 

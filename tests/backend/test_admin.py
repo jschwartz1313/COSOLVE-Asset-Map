@@ -99,15 +99,20 @@ class StaffRoleCommandTests(TestCase):
         reviewer = Group.objects.get(name="COSOLVE Reviewer")
         editor = Group.objects.get(name="COSOLVE Editor")
         publisher = Group.objects.get(name="COSOLVE Publisher")
+        administrator = Group.objects.get(name="COSOLVE Administrator")
         viewer_permissions = set(viewer.permissions.values_list("codename", flat=True))
         reviewer_permissions = set(reviewer.permissions.values_list("codename", flat=True))
         editor_permissions = set(editor.permissions.values_list("codename", flat=True))
         publisher_permissions = set(publisher.permissions.values_list("codename", flat=True))
+        administrator_permissions = set(
+            administrator.permissions.values_list("codename", flat=True)
+        )
 
         self.assertIn("view_asset", viewer_permissions)
         self.assertTrue(viewer_permissions < reviewer_permissions)
         self.assertTrue(reviewer_permissions < editor_permissions)
         self.assertTrue(editor_permissions < publisher_permissions)
+        self.assertTrue(publisher_permissions < administrator_permissions)
         self.assertIn("change_asset", reviewer_permissions)
         self.assertIn("change_source", reviewer_permissions)
         self.assertIn("can_verify_asset", reviewer_permissions)
@@ -121,6 +126,10 @@ class StaffRoleCommandTests(TestCase):
         self.assertIn("change_updatesubmission", editor_permissions)
         self.assertIn("can_verify_asset", publisher_permissions)
         self.assertIn("can_publish_asset", publisher_permissions)
+        self.assertIn("add_user", administrator_permissions)
+        self.assertIn("change_user", administrator_permissions)
+        self.assertIn("view_user", administrator_permissions)
+        self.assertNotIn("delete_user", administrator_permissions)
 
     def test_reviewer_admin_is_limited_to_existing_data_and_verification(self):
         call_command("setup_staff_roles", verbosity=0)
@@ -159,3 +168,30 @@ class StaffRoleCommandTests(TestCase):
             self.client.get(reverse("admin:assets_updatesubmission_changelist")).status_code,
             403,
         )
+
+    def test_administrator_can_manage_site_data_and_users_without_superuser_status(self):
+        call_command("setup_staff_roles", verbosity=0)
+        administrator = get_user_model().objects.create_user(
+            "administrator", password="administrator-password", is_staff=True
+        )
+        administrator.groups.add(Group.objects.get(name="COSOLVE Administrator"))
+        self.client.force_login(administrator)
+
+        dashboard = self.client.get(reverse("admin:index"))
+        self.assertContains(dashboard, "Add an asset")
+        self.assertContains(dashboard, "Import CSV")
+        self.assertContains(dashboard, "Export public data")
+        self.assertContains(dashboard, "Update submissions")
+        self.assertContains(dashboard, "Users and roles")
+        self.assertEqual(self.client.get(reverse("admin:auth_user_add")).status_code, 200)
+        account_page = self.client.get(reverse("admin:auth_user_change", args=[administrator.pk]))
+        self.assertNotContains(account_page, 'id="id_is_superuser"')
+        self.assertNotContains(account_page, 'id="id_user_permissions"')
+        superuser = get_user_model().objects.create_superuser(
+            "protected-superuser", password="protected-password"
+        )
+        self.assertEqual(
+            self.client.get(reverse("admin:auth_user_change", args=[superuser.pk])).status_code,
+            403,
+        )
+        self.assertFalse(administrator.is_superuser)
