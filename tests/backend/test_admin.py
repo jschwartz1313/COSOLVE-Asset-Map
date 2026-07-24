@@ -23,12 +23,23 @@ class AdminWorkflowTests(TestCase):
         self.admin = AssetAdmin(Asset, admin.site)
 
     def make_asset(self, name, status=Asset.Status.DRAFT):
+        values = {
+            "name": name,
+            "record_type": Asset.RecordType.FACILITY,
+            "short_description": "Fixture",
+            "unmanned_systems_relevance": "Supports testing",
+            "status": status,
+        }
+        if status == Asset.Status.VERIFIED:
+            values.update(
+                {
+                    "last_verified_at": timezone.localdate(),
+                    "reviewed_at": timezone.now(),
+                    "reviewed_by": self.user,
+                }
+            )
         return Asset.objects.create(
-            name=name,
-            record_type=Asset.RecordType.FACILITY,
-            short_description="Fixture",
-            unmanned_systems_relevance="Supports testing",
-            status=status,
+            **values
         )
 
     def test_verification_requires_verified_public_source(self):
@@ -37,10 +48,17 @@ class AdminWorkflowTests(TestCase):
         Source.objects.create(
             asset=eligible,
             title="Verified source",
+            url="https://example.org/eligible",
             verification_status="verified",
+            last_verified_at=timezone.localdate(),
             is_public=True,
         )
-        Source.objects.create(asset=ineligible, title="Unreviewed source", is_public=True)
+        Source.objects.create(
+            asset=ineligible,
+            title="Unreviewed source",
+            url="https://example.org/ineligible",
+            is_public=True,
+        )
 
         mark_verified(self.admin, self.request, Asset.objects.all())
 
@@ -59,7 +77,9 @@ class AdminWorkflowTests(TestCase):
             Source.objects.create(
                 asset=asset,
                 title=f"{asset.name} source",
+                url=f"https://example.org/{asset.slug}",
                 verification_status="verified",
+                last_verified_at=timezone.localdate(),
                 is_public=True,
             )
 
@@ -180,7 +200,7 @@ class StaffRoleCommandTests(TestCase):
         dashboard = self.client.get(reverse("admin:index"))
         self.assertContains(dashboard, "Add an asset")
         self.assertContains(dashboard, "Import CSV")
-        self.assertContains(dashboard, "Export public data")
+        self.assertContains(dashboard, "Export working data")
         self.assertContains(dashboard, "Update submissions")
         self.assertContains(dashboard, "Users and roles")
         self.assertEqual(self.client.get(reverse("admin:auth_user_add")).status_code, 200)

@@ -19,10 +19,12 @@ def requested_values(params, key):
     return values
 
 
-def filter_public_assets(params):
-    queryset = Asset.public.select_related("region").prefetch_related(
-        "strategic_categories", "platform_domains", "capabilities", "missions", "sources"
-    )
+def filter_public_assets(params, include_related=True):
+    queryset = Asset.public.select_related("region")
+    if include_related:
+        queryset = queryset.prefetch_related(
+            "strategic_categories", "platform_domains", "capabilities", "missions", "sources"
+        )
     for parameter, field in FACETS.items():
         values = requested_values(params, parameter)
         if values:

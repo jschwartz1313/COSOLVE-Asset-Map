@@ -365,7 +365,7 @@ class Command(BaseCommand):
                     "longitude": longitude,
                     "location_precision": Asset.LocationPrecision.APPROXIMATE,
                     "region": region_objects[region_name],
-                    "status": Asset.Status.PUBLISHED,
+                    "status": Asset.Status.SOURCE_BACKED,
                     "visibility": Asset.Visibility.PUBLIC,
                     "last_verified_at": date(2026, 7, 1),
                     "internal_notes": (

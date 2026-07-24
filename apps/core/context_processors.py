@@ -18,3 +18,7 @@ def map_settings(request):
     except (OperationalError, ProgrammingError):
         context["catalog_last_updated"] = None
     return context
+
+
+def account_settings(request):
+    return {"oidc_enabled": settings.OIDC_ENABLED}

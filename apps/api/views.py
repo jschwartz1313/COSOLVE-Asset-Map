@@ -39,7 +39,7 @@ def asset_list(request):
 
 @require_GET
 def asset_geojson(request):
-    queryset = filter_public_assets(request.GET)
+    queryset = filter_public_assets(request.GET, include_related=False)
     limit = requested_limit(request, 2000, 5000)
     features = [asset_feature(asset) for asset in queryset[:limit]]
     result_count = queryset.count()

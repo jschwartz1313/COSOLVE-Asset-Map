@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Confirm access | COSOLVE{% endblock %}
+{% block content %}
+<main id="main-content" class="account-page">
+  <section class="account-panel">
+    <span class="eyebrow">Protected action</span>
+    <h1>Confirm access</h1>
+    <p>Enter the current code from your authenticator app.</p>
+    <form method="post" action="{% url 'mfa_reauthenticate' %}" class="stacked-form">
+      {% csrf_token %}{{ form.non_field_errors }}
+      {% for field in form %}<label><span>{{ field.label }}</span>{{ field }}{{ field.errors }}</label>{% endfor %}
+      {{ redirect_field }}
+      <button class="button primary full" type="submit">Confirm</button>
+    </form>
+  </section>
+</main>
+{% endblock %}

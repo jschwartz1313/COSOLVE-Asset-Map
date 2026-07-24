@@ -2,7 +2,7 @@
 
 {% block object-tools-items %}
   {% if perms.assets.view_asset %}<li><a href="{% url 'imports:data-quality' %}">Data quality</a></li>{% endif %}
-  {% if perms.assets.can_export_asset %}<li><a href="{% url 'imports:export' %}">Export public CSV</a></li>{% endif %}
+  {% if perms.assets.can_export_asset %}<li><a href="{% url 'imports:export' %}?scope=all">Export complete working CSV</a></li>{% endif %}
   {% if perms.assets.add_asset %}<li><a href="{% url 'imports:preview' %}">Import CSV</a></li>{% endif %}
   {{ block.super }}
 {% endblock %}

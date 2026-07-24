@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Account security | COSOLVE{% endblock %}
+{% block content %}
+<main id="main-content" class="content-page account-security-page">
+  <header class="page-heading">
+    <span class="eyebrow">Your account</span>
+    <h1>Account security</h1>
+    <p>Add a second sign-in step and keep recovery codes somewhere separate from this account.</p>
+  </header>
+  <div class="security-list">
+    <section>
+      <div><h2>Authenticator app</h2><p>{% if authenticators.totp %}Active on this account{% else %}Not configured{% endif %}</p></div>
+      {% if authenticators.totp %}<a class="button secondary" href="{% url 'mfa_deactivate_totp' %}">Deactivate</a>{% else %}<a class="button primary" href="{% url 'mfa_activate_totp' %}">Set up</a>{% endif %}
+    </section>
+    <section>
+      <div><h2>Recovery codes</h2><p>Single-use codes for regaining access when your authenticator is unavailable.</p></div>
+      {% if is_mfa_enabled %}
+        {% if authenticators.recovery_codes %}<a class="button secondary" href="{% url 'mfa_view_recovery_codes' %}">View codes</a>{% else %}<a class="button secondary" href="{% url 'mfa_generate_recovery_codes' %}">Generate</a>{% endif %}
+      {% else %}<span class="security-status">Set up an authenticator first</span>{% endif %}
+    </section>
+    <section>
+      <div><h2>Password</h2><p>Update the password used for direct sign-in.</p></div>
+      <a class="button secondary" href="{% url 'account_change_password' %}">Change password</a>
+    </section>
+  </div>
+</main>
+{% endblock %}

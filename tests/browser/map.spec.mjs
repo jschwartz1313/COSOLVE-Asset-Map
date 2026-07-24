@@ -40,6 +40,13 @@ test("empty filters preserve the complete map result set", async ({ page }) => {
   }
 });
 
+test("large map results render in responsive batches", async ({ page }) => {
+  await page.goto("/map/");
+  await expect(page.locator("#result-count")).toHaveText("232");
+  await expect(page.locator(".result-row")).toHaveCount(50);
+  await expect(page.getByRole("button", { name: "Show 50 more" })).toBeVisible();
+});
+
 test("directory remains within the viewport", async ({ page }) => {
   await page.goto("/directory/");
   await expect(page.locator(".directory-row").first()).toBeVisible();
@@ -63,6 +70,29 @@ test("about page reports review status without an empty date range", async ({ pa
   await page.goto("/about-data/");
   await expect(page.getByText("Editorial review", { exact: true })).toBeVisible();
   await expect(page.getByText("Verification range", { exact: true })).toHaveCount(0);
+});
+
+test("relationship network renders inside a stable canvas", async ({ page }) => {
+  const errors = [];
+  page.on("pageerror", (error) => errors.push(error.message));
+  await page.goto("/relationships/");
+  await expect(page.locator(".network-node").first()).toBeVisible();
+  expect(await page.locator(".network-node").count()).toBeGreaterThan(1);
+  expect(
+    await page.locator(".network-canvas").evaluate((element) => element.clientHeight),
+  ).toBeLessThanOrEqual(650);
+  expect(
+    await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
+  ).toBe(true);
+  expect(errors).toEqual([]);
+});
+
+test("account recovery is available from the sign-in page", async ({ page }) => {
+  await page.goto("/accounts/login/");
+  await expect(page.getByRole("heading", { name: "Sign in" })).toBeVisible();
+  await page.getByRole("link", { name: "Forgot your password?" }).click();
+  await expect(page.getByRole("heading", { name: "Reset your password" })).toBeVisible();
+  await expect(page.getByLabel("Email address")).toBeVisible();
 });
 
 test("update workflow and institutional footer remain within the viewport", async ({ page }) => {

@@ -1,7 +1,7 @@
 from django import forms
 from django.core.exceptions import ValidationError
 
-from apps.assets.models import UpdateSubmission
+from apps.assets.models import SavedView, UpdateSubmission
 
 
 class UpdateSubmissionForm(forms.ModelForm):
@@ -67,3 +67,11 @@ class UpdateSubmissionForm(forms.ModelForm):
         if self.cleaned_data["confirmation"]:
             raise ValidationError("The submission could not be accepted.")
         return ""
+
+
+class SavedViewForm(forms.ModelForm):
+    class Meta:
+        model = SavedView
+        fields = ("name", "view_type", "query_string", "is_shared")
+        widgets = {"query_string": forms.HiddenInput()}
+        labels = {"is_shared": "Allow anyone with the link to open this view"}

@@ -1,0 +1,78 @@
+databases:
+  - name: cosolve-asset-map-production-db
+    plan: basic-256mb
+    databaseName: cosolve_asset_map
+    user: cosolve_asset_map
+
+services:
+  - type: web
+    name: cosolve-asset-map-production
+    runtime: python
+    plan: starter
+    buildCommand: ./build.sh
+    startCommand: gunicorn config.wsgi:application --bind 0.0.0.0:$PORT
+    healthCheckPath: /health/
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: config.settings.production
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DJANGO_ALLOWED_HOSTS
+        value: .onrender.com
+      - key: DATABASE_URL
+        fromDatabase:
+          name: cosolve-asset-map-production-db
+          property: connectionString
+      - key: REQUIRE_SITE_LOGIN
+        value: "true"
+      - key: BASEMAP_TILE_URL
+        sync: false
+      - key: BASEMAP_ATTRIBUTION
+        sync: false
+      - key: DEFAULT_FROM_EMAIL
+        sync: false
+      - key: EMAIL_HOST
+        sync: false
+      - key: EMAIL_PORT
+        value: "587"
+      - key: EMAIL_HOST_USER
+        sync: false
+      - key: EMAIL_HOST_PASSWORD
+        sync: false
+      - key: EMAIL_USE_TLS
+        value: "true"
+      - key: OIDC_PROVIDER_NAME
+        value: Organization sign in
+      - key: OIDC_SERVER_URL
+        sync: false
+      - key: OIDC_CLIENT_ID
+        sync: false
+      - key: OIDC_CLIENT_SECRET
+        sync: false
+      - key: DJANGO_SUPERUSER_USERNAME
+        sync: false
+      - key: DJANGO_SUPERUSER_EMAIL
+        sync: false
+      - key: DJANGO_SUPERUSER_PASSWORD
+        sync: false
+      - key: PYTHON_VERSION
+        value: 3.12.7
+
+  - type: cron
+    name: cosolve-source-monitor
+    runtime: python
+    plan: starter
+    schedule: "0 11 * * *"
+    buildCommand: python -m pip install -e .
+    startCommand: python manage.py check_source_links --all --workers 8
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: config.settings.production
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DJANGO_ALLOWED_HOSTS
+        value: .onrender.com
+      - key: DATABASE_URL
+        fromDatabase:
+          name: cosolve-asset-map-production-db
+          property: connectionString

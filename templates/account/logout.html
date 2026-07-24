@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Sign out | COSOLVE{% endblock %}
+{% block content %}
+<main id="main-content" class="account-page">
+  <section class="account-panel">
+    <span class="eyebrow">Account</span>
+    <h1>Sign out?</h1>
+    <p>You will need to sign in again to access restricted pages.</p>
+    <form method="post" action="{% url 'account_logout' %}">
+      {% csrf_token %}<button class="button primary full" type="submit">Sign out</button>
+    </form>
+  </section>
+</main>
+{% endblock %}

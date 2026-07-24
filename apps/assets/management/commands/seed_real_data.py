@@ -82,7 +82,7 @@ class Command(BaseCommand):
                     "longitude": record["longitude"],
                     "location_precision": record["location_precision"],
                     "region": region,
-                    "status": Asset.Status.PUBLISHED,
+                    "status": Asset.Status.SOURCE_BACKED,
                     "visibility": Asset.Visibility.PUBLIC,
                 },
             )
@@ -112,6 +112,11 @@ class Command(BaseCommand):
                 source, source_created = Source.objects.get_or_create(
                     asset=asset,
                     title=source_data["title"],
+                    defaults={
+                        "url": source_data["url"],
+                        "notes": f"Catalog provenance: {record['provenance']}",
+                        "is_public": True,
+                    },
                 )
                 url_changed = source.url != source_data["url"]
                 source.url = source_data["url"]

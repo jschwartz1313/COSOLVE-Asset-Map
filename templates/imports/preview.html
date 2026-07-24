@@ -2,7 +2,7 @@
 {% block content %}
 <div id="content-main">
   <h1>Import asset CSV</h1>
-  <p>Uploads are validated before any records are created. Imported records begin as internal drafts.</p>
+  <p>Uploads are validated before any records are created. New records begin as internal drafts; updated records return to review. Complete working exports can be edited and imported back without dropping taxonomy, coordinates, or sources.</p>
   <form method="post" enctype="multipart/form-data">{% csrf_token %}<input type="file" name="file" accept=".csv,text/csv" required> <button class="button" type="submit">Preview import</button></form>
   {% if file_errors %}<ul class="errorlist">{% for error in file_errors %}<li>{{ error }}</li>{% endfor %}</ul>{% endif %}
   {% if rows %}

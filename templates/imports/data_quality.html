@@ -4,6 +4,11 @@
 <div id="content-main">
   <h1>Data quality dashboard</h1>
   <p>Records older than {{ stale_cutoff|date:"M j, Y" }} are stale. Source-backed records remain pending until a publisher completes an editorial review.</p>
+  <div class="quality-actions">
+    {% if perms.assets.can_export_asset %}<a class="button" href="{% url 'imports:export' %}?scope=all">Export complete working CSV</a>{% endif %}
+    {% if perms.assets.add_asset %}<a class="button" href="{% url 'imports:preview' %}">Import reviewed CSV</a>{% endif %}
+    <span>Latest automated source check: {{ last_source_check|date:"M j, Y g:i A"|default:"Not run yet" }}</span>
+  </div>
   <div class="quality-summary">
     <div><strong>{{ stale_count }}</strong><span>stale or unverified</span></div>
     <div><strong>{{ missing_sources_count }}</strong><span>missing public sources</span></div>
@@ -17,6 +22,22 @@
     <div><strong>{{ outside_virginia_count }}</strong><span>location outliers</span></div>
     <div><strong>{{ undated_sources_count }}</strong><span>undated sources</span></div>
   </div>
+  <div class="coverage-grid">
+    <section>
+      <h2>Coverage by region</h2>
+      <div class="quality-table-wrap"><table class="coverage-table">
+        <thead><tr><th>Region</th><th>Assets</th><th>Reviewed</th><th>Verified source</th><th>Located</th></tr></thead>
+        <tbody>{% for row in region_coverage %}<tr><th>{{ row.region__name|default:"Unassigned" }}</th><td>{{ row.total }}</td><td>{{ row.review_rate }}%</td><td>{{ row.source_rate }}%</td><td>{{ row.location_rate }}%</td></tr>{% endfor %}</tbody>
+      </table></div>
+    </section>
+    <section>
+      <h2>Coverage by asset type</h2>
+      <div class="quality-table-wrap"><table class="coverage-table">
+        <thead><tr><th>Type</th><th>Assets</th><th>Reviewed</th><th>Verified source</th><th>Located</th></tr></thead>
+        <tbody>{% for row in type_coverage %}<tr><th>{{ row.label }}</th><td>{{ row.total }}</td><td>{{ row.review_rate }}%</td><td>{{ row.source_rate }}%</td><td>{{ row.location_rate }}%</td></tr>{% endfor %}</tbody>
+      </table></div>
+    </section>
+  </div>
   <details class="quality-section"><summary><span>Stale or unverified assets</span><strong>{{ stale_count }}</strong></summary>{% include "imports/quality_table.html" with assets=stale empty_message="No stale records." %}</details>
   <details class="quality-section"><summary><span>Missing public sources</span><strong>{{ missing_sources_count }}</strong></summary>{% include "imports/quality_table.html" with assets=missing_sources empty_message="Every active record has a public source." %}</details>
   <details class="quality-section"><summary><span>Missing coordinates</span><strong>{{ missing_coordinates_count }}</strong></summary>{% include "imports/quality_table.html" with assets=missing_coordinates empty_message="Every active record has coordinates." %}</details>
@@ -27,7 +48,7 @@
   <details class="quality-section"><summary><span>Location outliers</span><strong>{{ outside_virginia_count }}</strong></summary>{% include "imports/quality_table.html" with assets=outside_virginia empty_message="No coordinates fall outside the Virginia review bounds." %}</details>
   <details class="quality-section" {% if broken_sources_count %}open{% endif %}><summary><span>Source link checks needing attention</span><strong>{{ broken_sources_count }}</strong></summary>
     {% if broken_sources %}<div class="quality-table-wrap"><table><thead><tr><th>Source</th><th>Asset</th><th>HTTP status</th><th>Error</th></tr></thead><tbody>
-    {% for source in broken_sources %}<tr><th><a href="{% url 'admin:sources_source_change' source.pk %}">{{ source.title }}</a></th><td><a href="{% url 'admin:assets_asset_change' source.asset.pk %}">{{ source.asset.name }}</a></td><td>{{ source.http_status|default:"No response" }}</td><td>{{ source.check_error|default:"HTTP failure" }}</td></tr>{% endfor %}
+    {% for source in broken_sources %}<tr><th><a href="{% url 'admin:sources_source_change' source.pk %}">{{ source.title }}</a></th><td><a href="{% url 'admin:assets_asset_change' source.asset.pk %}">{{ source.asset.name }}</a></td><td>{{ source.http_status|default:"No response" }}</td><td>{{ source.check_error|default:source.get_link_review_status_display }}</td></tr>{% endfor %}
     </tbody></table></div>{% else %}<p>No checked source links need attention. Run <code>python manage.py check_source_links --all</code> to refresh this check.</p>{% endif %}
   </details>
   <details class="quality-section"><summary><span>Sources without publication dates</span><strong>{{ undated_sources_count }}</strong></summary>

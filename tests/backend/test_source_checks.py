@@ -4,10 +4,16 @@ from django.core.management import call_command
 from django.test import TestCase
 
 from apps.assets.models import Asset
+from apps.sources.management.commands.check_source_links import check_url
 from apps.sources.models import Source
 
 
 class SourceLinkCheckTests(TestCase):
+    def test_internal_network_urls_are_blocked_before_request(self):
+        status, error = check_url("http://127.0.0.1/admin/")
+        self.assertIsNone(status)
+        self.assertIn("blocked", error)
+
     def test_command_records_latest_link_status(self):
         asset = Asset.objects.create(
             name="Source Check Asset",

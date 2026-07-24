@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Set up authenticator | COSOLVE{% endblock %}
+{% block content %}
+<main id="main-content" class="content-page totp-page">
+  <header class="page-heading">
+    <span class="eyebrow">Account security</span>
+    <h1>Set up an authenticator</h1>
+    <p>Scan the QR code, then enter the code shown by your authenticator app.</p>
+  </header>
+  <div class="totp-setup">
+    <img src="{{ totp_svg_data_uri }}" alt="Authenticator QR code">
+    <form method="post" action="{% url 'mfa_activate_totp' %}" class="stacked-form">
+      {% csrf_token %}
+      <label><span>Manual setup key</span><input type="text" value="{{ form.secret }}" readonly></label>
+      {% for field in form.visible_fields %}<label><span>{{ field.label }}</span>{{ field }}{{ field.errors }}</label>{% endfor %}
+      {% for field in form.hidden_fields %}{{ field }}{% endfor %}
+      <button class="button primary" type="submit">Activate</button>
+    </form>
+  </div>
+</main>
+{% endblock %}

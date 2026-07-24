@@ -26,7 +26,7 @@ class PublicApiTests(TestCase):
             latitude=36.850000,
             longitude=-76.280000,
             region=cls.region,
-            status=Asset.Status.PUBLISHED,
+            status=Asset.Status.SOURCE_BACKED,
             visibility=Asset.Visibility.PUBLIC,
             last_verified_at=date(2026, 7, 1),
             internal_notes="Never serialize this value.",
@@ -34,7 +34,12 @@ class PublicApiTests(TestCase):
         cls.public.strategic_categories.add(cls.test_category)
         cls.public.platform_domains.add(cls.maritime)
         cls.public.missions.add(cls.survey)
-        Source.objects.create(asset=cls.public, title="Fixture source", notes="Private source note")
+        Source.objects.create(
+            asset=cls.public,
+            title="Fixture source",
+            url="https://example.org/source",
+            notes="Private source note",
+        )
         cls.internal = Asset.objects.create(
             name="Restricted Asset",
             record_type=Asset.RecordType.FACILITY,
@@ -51,7 +56,7 @@ class PublicApiTests(TestCase):
             unmanned_systems_relevance="Supports test activity.",
             city="Norfolk",
             region=cls.region,
-            status=Asset.Status.PUBLISHED,
+            status=Asset.Status.SOURCE_BACKED,
             visibility=Asset.Visibility.PUBLIC,
         )
         Relationship.objects.create(

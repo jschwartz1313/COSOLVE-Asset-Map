@@ -1,12 +1,12 @@
 import csv
-from datetime import timedelta
+from datetime import date, timedelta
 
 from django.conf import settings
 from django.contrib import messages
 from django.contrib.admin.views.decorators import staff_member_required
 from django.contrib.auth.decorators import permission_required
 from django.db import transaction
-from django.db.models import Count, Q
+from django.db.models import Count, Max, Q
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
 from django.utils import timezone
@@ -17,7 +17,13 @@ from apps.assets.models import Asset
 from apps.catalog.models import Region
 from apps.sources.models import Source
 
-from .services import TAXONOMY_COLUMNS, parse_csv, split_values
+from .services import (
+    CSV_COLUMNS,
+    TAXONOMY_COLUMNS,
+    asset_csv_row,
+    parse_csv,
+    split_values,
+)
 
 
 @staff_member_required
@@ -59,9 +65,7 @@ def commit(request):
     for row in rows:
         data = row["data"]
         region = Region.objects.filter(slug=data.get("region", "")).first()
-        asset = Asset.objects.filter(
-            name__iexact=data["name"], city__iexact=data.get("city", "")
-        ).first()
+        asset = Asset.objects.filter(pk=row["asset_id"]).first() if row["asset_id"] else None
         was_created = asset is None
         if asset and not update_existing:
             skipped += 1
@@ -71,10 +75,20 @@ def commit(request):
         asset.record_type = data["record_type"]
         asset.short_description = data["short_description"]
         asset.unmanned_systems_relevance = data["unmanned_systems_relevance"]
+        asset.website_url = data.get("website_url", "")
+        asset.contact_text = data.get("contact_text", "")
+        asset.address_line = data.get("address_line", "")
+        asset.city = data.get("city", "")
         asset.state = data.get("state", "VA") or "VA"
+        asset.postal_code = data.get("postal_code", "")
         asset.latitude = data.get("latitude") or None
         asset.longitude = data.get("longitude") or None
+        asset.location_precision = (
+            data.get("location_precision") or Asset.LocationPrecision.APPROXIMATE
+        )
         asset.region = region
+        if "internal_notes" in data:
+            asset.internal_notes = data["internal_notes"]
         asset.status = Asset.Status.DRAFT if was_created else Asset.Status.NEEDS_REVIEW
         asset.visibility = Asset.Visibility.INTERNAL
         asset.last_verified_at = None
@@ -86,15 +100,22 @@ def commit(request):
             getattr(asset, column).set(
                 model.objects.filter(slug__in=split_values(data.get(column, "")))
             )
-        if data.get("source_title"):
+        for source_data in row["sources"]:
             Source.objects.update_or_create(
                 asset=asset,
-                title=data["source_title"],
+                title=source_data["title"],
                 defaults={
-                    "url": data.get("source_url", ""),
+                    "url": source_data["url"],
+                    "source_date": (
+                        date.fromisoformat(source_data["source_date"])
+                        if source_data["source_date"]
+                        else None
+                    ),
                     "verification_status": "unreviewed",
                     "last_verified_at": None,
                     "is_public": True,
+                    "link_review_status": Source.LinkReviewStatus.AUTOMATIC,
+                    "link_review_notes": "",
                 },
             )
         created += int(was_created)
@@ -111,32 +132,25 @@ def commit(request):
 def export_assets(request):
     response = HttpResponse(content_type="text/csv")
     response["Content-Disposition"] = 'attachment; filename="cosolve-assets.csv"'
-    writer = csv.writer(response)
-    writer.writerow(
-        [
-            "name",
-            "record_type",
-            "short_description",
-            "city",
-            "state",
-            "region",
-            "status",
-            "last_verified_at",
-        ]
-    )
-    for asset in filter_public_assets(request.GET):
-        writer.writerow(
-            [
-                asset.name,
-                asset.record_type,
-                asset.short_description,
-                asset.city,
-                asset.state,
-                asset.region.slug if asset.region else "",
-                asset.status,
-                asset.last_verified_at or "",
-            ]
+    writer = csv.DictWriter(response, fieldnames=CSV_COLUMNS)
+    writer.writeheader()
+    include_internal = request.GET.get("scope") == "all"
+    if include_internal:
+        queryset = (
+            Asset.objects.select_related("region")
+            .prefetch_related(
+                "strategic_categories",
+                "platform_domains",
+                "capabilities",
+                "missions",
+                "sources",
+            )
+            .order_by("name")
         )
+    else:
+        queryset = filter_public_assets(request.GET)
+    for asset in queryset:
+        writer.writerow(asset_csv_row(asset, include_internal=include_internal))
     return response
 
 
@@ -169,9 +183,17 @@ def data_quality(request):
         | Q(last_verified_at__lt=stale_cutoff)
         | Q(last_verified_at__isnull=True)
     ).select_related("asset").order_by("verification_status", "asset__name")
-    broken_sources = Source.objects.filter(is_public=True).filter(
-        Q(check_error__gt="") | Q(http_status__gte=400)
-    ).select_related("asset").order_by("asset__name", "title")
+    broken_sources = (
+        Source.objects.filter(is_public=True)
+        .exclude(link_review_status=Source.LinkReviewStatus.ACCEPTED)
+        .filter(
+            Q(link_review_status=Source.LinkReviewStatus.NEEDS_REPLACEMENT)
+            | Q(check_error__gt="")
+            | Q(http_status__gte=400)
+        )
+        .select_related("asset")
+        .order_by("asset__name", "title")
+    )
     undated_sources = (
         Source.objects.filter(is_public=True, source_date__isnull=True)
         .select_related("asset")
@@ -200,6 +222,49 @@ def data_quality(request):
         .values_list("unmanned_systems_relevance", flat=True)
     )
     repeated_copy = active_assets.filter(unmanned_systems_relevance__in=repeated_values)
+
+    def coverage_rows(group_field):
+        rows = list(
+            active_assets.values(group_field)
+            .annotate(
+                total=Count("id", distinct=True),
+                reviewed=Count(
+                    "id",
+                    filter=Q(reviewed_at__isnull=False, last_verified_at__isnull=False),
+                    distinct=True,
+                ),
+                verified_source=Count(
+                    "id",
+                    filter=Q(
+                        sources__is_public=True,
+                        sources__verification_status="verified",
+                        sources__last_verified_at__isnull=False,
+                    ),
+                    distinct=True,
+                ),
+                located=Count(
+                    "id",
+                    filter=Q(latitude__isnull=False, longitude__isnull=False),
+                    distinct=True,
+                ),
+            )
+            .order_by(group_field)
+        )
+        for row in rows:
+            total = row["total"] or 1
+            row["review_rate"] = round(row["reviewed"] * 100 / total)
+            row["source_rate"] = round(row["verified_source"] * 100 / total)
+            row["location_rate"] = round(row["located"] * 100 / total)
+        return rows
+
+    region_coverage = coverage_rows("region__name")
+    type_coverage = coverage_rows("record_type")
+    record_type_labels = dict(Asset.RecordType.choices)
+    for row in type_coverage:
+        row["label"] = record_type_labels.get(row["record_type"], row["record_type"])
+    last_source_check = Source.objects.filter(is_public=True).aggregate(
+        latest=Max("last_checked_at")
+    )["latest"]
     return render(
         request,
         "imports/data_quality.html",
@@ -227,5 +292,8 @@ def data_quality(request):
             "outside_virginia_count": outside_virginia.count(),
             "repeated_copy": repeated_copy[:100],
             "repeated_copy_count": repeated_copy.count(),
+            "region_coverage": region_coverage,
+            "type_coverage": type_coverage,
+            "last_source_check": last_source_check,
         },
     )

@@ -1,5 +1,6 @@
 import uuid
 from decimal import Decimal
+from urllib.parse import parse_qsl
 
 from django.conf import settings
 from django.core.exceptions import ValidationError
@@ -8,6 +9,7 @@ from django.db import models
 from django.urls import reverse
 from django.utils import timezone
 from django.utils.text import slugify
+from simple_history.models import HistoricalRecords
 
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 
@@ -17,7 +19,7 @@ class PublicAssetManager(models.Manager):
         return (
             super()
             .get_queryset()
-            .filter(status=Asset.Status.PUBLISHED, visibility=Asset.Visibility.PUBLIC)
+            .filter(status__in=Asset.public_status_values(), visibility=Asset.Visibility.PUBLIC)
         )
 
 
@@ -33,6 +35,7 @@ class Asset(models.Model):
     class Status(models.TextChoices):
         DRAFT = "draft", "Draft"
         NEEDS_REVIEW = "needs-review", "Needs source review"
+        SOURCE_BACKED = "source-backed", "Source-backed listing"
         VERIFIED = "verified", "Verified"
         PUBLISHED = "published", "Published"
         ARCHIVED = "archived", "Archived"
@@ -110,6 +113,9 @@ class Asset(models.Model):
 
     objects = models.Manager()
     public = PublicAssetManager()
+    history = HistoricalRecords(
+        m2m_fields=["strategic_categories", "platform_domains", "capabilities", "missions"]
+    )
 
     class Meta:
         ordering = ("name",)
@@ -129,6 +135,10 @@ class Asset(models.Model):
     def __str__(self):
         return self.name
 
+    @classmethod
+    def public_status_values(cls):
+        return (cls.Status.SOURCE_BACKED, cls.Status.PUBLISHED)
+
     def clean(self):
         errors = {}
         if bool(self.latitude is None) != bool(self.longitude is None):
@@ -140,6 +150,8 @@ class Asset(models.Model):
             errors["location_precision"] = "Public records cannot expose a hidden location."
         if self.status == self.Status.PUBLISHED and self.visibility != self.Visibility.PUBLIC:
             errors["visibility"] = "Published records must use public visibility."
+        if self.status == self.Status.PUBLISHED and not self.is_editorially_reviewed:
+            errors["status"] = "Published records require a completed editorial review."
         if errors:
             raise ValidationError(errors)
 
@@ -201,6 +213,7 @@ class Relationship(models.Model):
     relationship_type = models.CharField(max_length=24, choices=RelationshipType.choices)
     description = models.CharField(max_length=320, blank=True)
     is_public = models.BooleanField(default=True)
+    history = HistoricalRecords()
 
     class Meta:
         ordering = ("relationship_type", "to_asset__name")
@@ -249,9 +262,65 @@ class UpdateSubmission(models.Model):
     internal_notes = models.TextField(blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    history = HistoricalRecords()
 
     class Meta:
         ordering = ("-created_at",)
 
     def __str__(self):
         return self.subject
+
+
+class SavedView(models.Model):
+    class ViewType(models.TextChoices):
+        MAP = "map", "Map"
+        DIRECTORY = "directory", "Directory"
+
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    owner = models.ForeignKey(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="saved_asset_views"
+    )
+    name = models.CharField(max_length=120)
+    view_type = models.CharField(max_length=12, choices=ViewType.choices)
+    query_string = models.CharField(max_length=1200, blank=True)
+    is_shared = models.BooleanField(default=False)
+    share_token = models.UUIDField(default=uuid.uuid4, unique=True, editable=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    history = HistoricalRecords()
+
+    class Meta:
+        ordering = ("-updated_at", "name")
+        constraints = [
+            models.UniqueConstraint(
+                fields=("owner", "name", "view_type"), name="unique_saved_view_name"
+            )
+        ]
+
+    def __str__(self):
+        return f"{self.name} ({self.get_view_type_display()})"
+
+    def clean(self):
+        allowed = {
+            "q",
+            "record_type",
+            "category",
+            "domain",
+            "capability",
+            "mission",
+            "region",
+            "sort",
+            "page",
+        }
+        unexpected = {key for key, _value in parse_qsl(self.query_string)} - allowed
+        if unexpected:
+            raise ValidationError(
+                {"query_string": f"Unsupported filter(s): {', '.join(sorted(unexpected))}"}
+            )
+
+    def save(self, *args, **kwargs):
+        self.full_clean()
+        super().save(*args, **kwargs)
+
+    def destination_url_name(self):
+        return "core:map" if self.view_type == self.ViewType.MAP else "core:directory"

@@ -2,7 +2,7 @@ from django.contrib.auth import get_user_model
 from django.test import TestCase, override_settings
 from django.urls import reverse
 
-from apps.assets.models import Asset, UpdateSubmission
+from apps.assets.models import Asset, Relationship, SavedView, UpdateSubmission
 from apps.catalog.models import Region
 
 
@@ -29,7 +29,7 @@ class CoreViewTests(TestCase):
             record_type=Asset.RecordType.UNIVERSITY,
             short_description="A published university record.",
             unmanned_systems_relevance="Supports autonomous systems education.",
-            status=Asset.Status.PUBLISHED,
+            status=Asset.Status.SOURCE_BACKED,
             visibility=Asset.Visibility.PUBLIC,
         )
         Asset.objects.create(
@@ -37,7 +37,7 @@ class CoreViewTests(TestCase):
             record_type=Asset.RecordType.ORGANIZATION,
             short_description="A published organization record.",
             unmanned_systems_relevance="Supports autonomous systems development.",
-            status=Asset.Status.PUBLISHED,
+            status=Asset.Status.SOURCE_BACKED,
             visibility=Asset.Visibility.PUBLIC,
         )
         response = self.client.get(reverse("core:directory"), {"sort": "type"})
@@ -48,6 +48,49 @@ class CoreViewTests(TestCase):
         self.assertContains(
             response, '<option value="type" selected>Asset type</option>', html=True
         )
+
+    def test_directory_pagination_uses_a_valid_query_string(self):
+        for index in range(13):
+            Asset.objects.create(
+                name=f"Pagination Asset {index:02}",
+                record_type=Asset.RecordType.ORGANIZATION,
+                short_description="A public listing used to verify pagination.",
+                unmanned_systems_relevance="Supports autonomous systems.",
+                status=Asset.Status.SOURCE_BACKED,
+                visibility=Asset.Visibility.PUBLIC,
+            )
+        response = self.client.get(reverse("core:directory"))
+        self.assertContains(response, 'href="?page=2"')
+        self.assertNotContains(response, "??page=2")
+
+    def test_relationship_explorer_includes_public_connection(self):
+        first = Asset.objects.create(
+            name="Network Center",
+            record_type=Asset.RecordType.ORGANIZATION,
+            short_description="Center node.",
+            unmanned_systems_relevance="Supports autonomous systems.",
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        )
+        second = Asset.objects.create(
+            name="Network Partner",
+            record_type=Asset.RecordType.UNIVERSITY,
+            short_description="Partner node.",
+            unmanned_systems_relevance="Supports autonomous systems.",
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        )
+        Relationship.objects.create(
+            from_asset=first,
+            to_asset=second,
+            relationship_type=Relationship.RelationshipType.PARTNERS_WITH,
+        )
+        response = self.client.get(
+            reverse("core:relationships"), {"asset": first.slug}
+        )
+        self.assertContains(response, first.name)
+        self.assertContains(response, second.name)
+        self.assertContains(response, '"edges"')
 
     def test_regional_comparison_renders(self):
         Region.objects.create(name="Hampton Roads")
@@ -89,7 +132,7 @@ class CoreViewTests(TestCase):
             short_description="A published test record.",
             unmanned_systems_relevance="Supports autonomous systems development.",
             city="Richmond",
-            status=Asset.Status.PUBLISHED,
+            status=Asset.Status.SOURCE_BACKED,
             visibility=Asset.Visibility.PUBLIC,
         )
         response = self.client.post(
@@ -148,3 +191,39 @@ class PrivateSiteTests(TestCase):
         user = get_user_model().objects.create_user("member", password="test-password")
         self.client.force_login(user)
         self.assertEqual(self.client.get(reverse("core:map")).status_code, 200)
+
+
+class SavedViewTests(TestCase):
+    def setUp(self):
+        self.owner = get_user_model().objects.create_user("owner", password="test-password")
+        self.other = get_user_model().objects.create_user("other", password="test-password")
+
+    def test_saved_view_is_private_until_sharing_is_enabled(self):
+        self.client.force_login(self.owner)
+        response = self.client.post(
+            reverse("core:saved-views"),
+            {
+                "name": "Hampton Roads universities",
+                "view_type": SavedView.ViewType.DIRECTORY,
+                "query_string": "region=hampton-roads&record_type=university",
+            },
+        )
+        self.assertRedirects(response, reverse("core:saved-views"))
+        saved_view = SavedView.objects.get(owner=self.owner)
+
+        self.client.force_login(self.other)
+        private_response = self.client.get(
+            reverse("core:open-saved-view", args=[saved_view.share_token])
+        )
+        self.assertEqual(private_response.status_code, 403)
+
+        saved_view.is_shared = True
+        saved_view.save()
+        shared_response = self.client.get(
+            reverse("core:open-saved-view", args=[saved_view.share_token])
+        )
+        self.assertRedirects(
+            shared_response,
+            "/directory/?region=hampton-roads&record_type=university",
+            fetch_redirect_response=False,
+        )

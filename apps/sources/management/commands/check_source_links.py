@@ -1,7 +1,10 @@
+import ipaddress
+import socket
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import timedelta
 from urllib.error import HTTPError, URLError
-from urllib.request import Request, urlopen
+from urllib.parse import urlsplit
+from urllib.request import HTTPRedirectHandler, Request, build_opener
 
 from django.core.management.base import BaseCommand
 from django.db.models import Q
@@ -10,11 +13,49 @@ from django.utils import timezone
 from apps.sources.models import Source
 
 
+class UnsafeSourceURL(ValueError):
+    pass
+
+
+def validate_public_url(url):
+    parsed = urlsplit(url)
+    if parsed.scheme not in {"http", "https"} or not parsed.hostname:
+        raise UnsafeSourceURL("Only public HTTP and HTTPS URLs can be checked.")
+    if parsed.username or parsed.password:
+        raise UnsafeSourceURL("URLs containing credentials cannot be checked.")
+    try:
+        port = parsed.port or (443 if parsed.scheme == "https" else 80)
+    except ValueError as error:
+        raise UnsafeSourceURL("The URL contains an invalid port.") from error
+    if port not in {80, 443}:
+        raise UnsafeSourceURL("Only standard HTTP and HTTPS ports can be checked.")
+    try:
+        addresses = {
+            item[4][0]
+            for item in socket.getaddrinfo(parsed.hostname, port, type=socket.SOCK_STREAM)
+        }
+    except socket.gaierror as error:
+        raise UnsafeSourceURL("The source hostname could not be resolved.") from error
+    if not addresses or any(not ipaddress.ip_address(address).is_global for address in addresses):
+        raise UnsafeSourceURL("Private, local, or reserved source addresses are blocked.")
+
+
+class PublicOnlyRedirectHandler(HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        validate_public_url(newurl)
+        return super().redirect_request(req, fp, code, msg, headers, newurl)
+
+
 def check_url(url):
     headers = {"User-Agent": "COSOLVE-Asset-Map/1.0 source-maintenance"}
     try:
+        validate_public_url(url)
+    except UnsafeSourceURL as error:
+        return None, str(error)[:240]
+    opener = build_opener(PublicOnlyRedirectHandler)
+    try:
         request = Request(url, headers=headers, method="HEAD")
-        with urlopen(request, timeout=12) as response:  # noqa: S310
+        with opener.open(request, timeout=12) as response:  # noqa: S310
             return response.status, ""
     except HTTPError as error:
         if error.code not in {403, 405}:
@@ -24,7 +65,7 @@ def check_url(url):
 
     try:
         request = Request(url, headers={**headers, "Range": "bytes=0-0"})
-        with urlopen(request, timeout=15) as response:  # noqa: S310
+        with opener.open(request, timeout=15) as response:  # noqa: S310
             return response.status, ""
     except HTTPError as error:
         return error.code, ""
@@ -68,5 +109,5 @@ class Command(BaseCommand):
             source.check_error = error
             source.last_checked_at = checked_at
             source.save(update_fields=("http_status", "check_error", "last_checked_at"))
-            failures += int(bool(error) or (status is not None and status >= 400))
+            failures += int(source.has_link_issue)
         self.stdout.write(f"Checked {len(sources)} source URL(s); {failures} need attention.")

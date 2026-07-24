@@ -1,15 +1,21 @@
+from urllib.parse import urlencode
+
+from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
 from django.db import connection
-from django.db.models import Count, Max
+from django.db.models import Count, Max, Q
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render
+from django.urls import reverse
+from django.views.decorators.http import require_POST
 
 from apps.api.query import filter_public_assets
-from apps.assets.models import Asset
+from apps.assets.models import Asset, SavedView
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 from apps.sources.models import Source
 
-from .forms import UpdateSubmissionForm
+from .forms import SavedViewForm, UpdateSubmissionForm
 
 DIRECTORY_SORTS = (
     ("name", "Name A-Z"),
@@ -68,12 +74,12 @@ def asset_detail(request, slug):
     )
     relationships = asset.outgoing_relationships.filter(
         is_public=True,
-        to_asset__status=Asset.Status.PUBLISHED,
+        to_asset__status__in=Asset.public_status_values(),
         to_asset__visibility=Asset.Visibility.PUBLIC,
     ).select_related("to_asset")
     incoming_relationships = asset.incoming_relationships.filter(
         is_public=True,
-        from_asset__status=Asset.Status.PUBLISHED,
+        from_asset__status__in=Asset.public_status_values(),
         from_asset__visibility=Asset.Visibility.PUBLIC,
     ).select_related("from_asset")
     related_ids = list(relationships.values_list("to_asset_id", flat=True)) + list(
@@ -99,6 +105,141 @@ def asset_detail(request, slug):
             "similar_assets": similar_assets,
         },
     )
+
+
+def relationship_explorer(request):
+    assets = (
+        Asset.public.annotate(
+            connection_count=Count(
+                "outgoing_relationships",
+                filter=Q(
+                    outgoing_relationships__is_public=True,
+                    outgoing_relationships__to_asset__status__in=Asset.public_status_values(),
+                    outgoing_relationships__to_asset__visibility=Asset.Visibility.PUBLIC,
+                ),
+                distinct=True,
+            )
+            + Count(
+                "incoming_relationships",
+                filter=Q(
+                    incoming_relationships__is_public=True,
+                    incoming_relationships__from_asset__status__in=Asset.public_status_values(),
+                    incoming_relationships__from_asset__visibility=Asset.Visibility.PUBLIC,
+                ),
+                distinct=True,
+            )
+        )
+        .order_by("-connection_count", "name")
+    )
+    selected_slug = request.GET.get("asset", "")
+    center = assets.filter(slug=selected_slug).first() if selected_slug else assets.first()
+    nodes = []
+    edges = []
+    if center:
+        node_assets = {center.pk: center}
+        outgoing = list(
+            center.outgoing_relationships.filter(
+                is_public=True,
+                to_asset__status__in=Asset.public_status_values(),
+                to_asset__visibility=Asset.Visibility.PUBLIC,
+            ).select_related("to_asset")[:30]
+        )
+        remaining_slots = 30 - len(outgoing)
+        incoming = list(
+            center.incoming_relationships.filter(
+                is_public=True,
+                from_asset__status__in=Asset.public_status_values(),
+                from_asset__visibility=Asset.Visibility.PUBLIC,
+            ).select_related("from_asset")[:remaining_slots]
+        )
+        for relationship in outgoing:
+            node_assets[relationship.to_asset_id] = relationship.to_asset
+            edges.append(
+                {
+                    "source": str(center.pk),
+                    "target": str(relationship.to_asset_id),
+                    "label": relationship.get_relationship_type_display(),
+                }
+            )
+        for relationship in incoming:
+            node_assets[relationship.from_asset_id] = relationship.from_asset
+            edges.append(
+                {
+                    "source": str(relationship.from_asset_id),
+                    "target": str(center.pk),
+                    "label": relationship.get_relationship_type_display(),
+                }
+            )
+        nodes = [
+            {
+                "id": str(asset.pk),
+                "name": asset.name,
+                "type": asset.record_type,
+                "type_label": asset.get_record_type_display(),
+                "url": asset.get_absolute_url(),
+                "is_center": asset.pk == center.pk,
+            }
+            for asset in node_assets.values()
+        ]
+    return render(
+        request,
+        "relationships/explorer.html",
+        {
+            "assets": assets,
+            "center": center,
+            "network_data": {"nodes": nodes, "edges": edges},
+            "connection_count": len(edges),
+            "total_connection_count": center.connection_count if center else 0,
+        },
+    )
+
+
+@login_required
+def saved_views(request):
+    initial = {
+        "view_type": request.GET.get("view_type", SavedView.ViewType.MAP),
+        "query_string": request.GET.get("query", "")[:1200],
+    }
+    form = SavedViewForm(request.POST or None, initial=initial)
+    if request.method == "POST" and form.is_valid():
+        duplicate = request.user.saved_asset_views.filter(
+            name=form.cleaned_data["name"], view_type=form.cleaned_data["view_type"]
+        ).exists()
+        if duplicate:
+            form.add_error("name", "You already have a saved view with this name and type.")
+        else:
+            saved_view = form.save(commit=False)
+            saved_view.owner = request.user
+            saved_view.save()
+            messages.success(request, f'Saved "{saved_view.name}".')
+            return redirect("core:saved-views")
+    return render(
+        request,
+        "saved_views/list.html",
+        {"form": form, "saved_views": request.user.saved_asset_views.all()},
+    )
+
+
+def open_saved_view(request, token):
+    saved_view = get_object_or_404(SavedView, share_token=token)
+    if saved_view.owner_id != request.user.pk and not saved_view.is_shared:
+        if not request.user.is_authenticated:
+            return redirect(f"{reverse('account_login')}?{urlencode({'next': request.path})}")
+        return render(request, "403.html", status=403)
+    destination = reverse(saved_view.destination_url_name())
+    if saved_view.query_string:
+        destination = f"{destination}?{saved_view.query_string}"
+    return redirect(destination)
+
+
+@login_required
+@require_POST
+def delete_saved_view(request, pk):
+    saved_view = get_object_or_404(SavedView, pk=pk, owner=request.user)
+    name = saved_view.name
+    saved_view.delete()
+    messages.success(request, f'Deleted "{name}".')
+    return redirect("core:saved-views")
 
 
 def region_metrics(region):

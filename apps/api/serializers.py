@@ -12,7 +12,7 @@ def public_relationships(asset):
         }
         for relationship in asset.outgoing_relationships.select_related("to_asset")
         if relationship.is_public
-        and relationship.to_asset.status == asset.Status.PUBLISHED
+        and relationship.to_asset.status in asset.public_status_values()
         and relationship.to_asset.visibility == asset.Visibility.PUBLIC
     ]
     related.extend(
@@ -24,7 +24,7 @@ def public_relationships(asset):
         }
         for relationship in asset.incoming_relationships.select_related("from_asset")
         if relationship.is_public
-        and relationship.from_asset.status == asset.Status.PUBLISHED
+        and relationship.from_asset.status in asset.public_status_values()
         and relationship.from_asset.visibility == asset.Visibility.PUBLIC
     )
     return related
@@ -90,9 +90,18 @@ def asset_feature(asset):
             "type": "Point",
             "coordinates": [float(asset.longitude), float(asset.latitude)],
         }
-    properties = public_asset_dict(asset, include_detail=False)
-    properties["categories"] = [item["slug"] for item in properties.pop("strategic_categories")]
-    properties["platform_domains"] = [item["slug"] for item in properties["platform_domains"]]
-    properties["capabilities"] = [item["slug"] for item in properties["capabilities"]]
-    properties["missions"] = [item["slug"] for item in properties["missions"]]
+    properties = {
+        "name": asset.name,
+        "slug": asset.slug,
+        "record_type": asset.record_type,
+        "record_type_label": asset.get_record_type_display(),
+        "short_description": asset.short_description,
+        "location": {
+            "city": asset.city,
+            "state": asset.state,
+            "precision": asset.location_precision,
+            "region": asset.region.name if asset.region else None,
+        },
+        "detail_url": asset.get_absolute_url(),
+    }
     return {"type": "Feature", "id": str(asset.pk), "geometry": geometry, "properties": properties}

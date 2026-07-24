@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Deactivate authenticator | COSOLVE{% endblock %}
+{% block content %}
+<main id="main-content" class="account-page">
+  <section class="account-panel">
+    <span class="eyebrow">Account security</span>
+    <h1>Deactivate authenticator?</h1>
+    <p>Your account will no longer require a second sign-in step.</p>
+    <form method="post" action="{% url 'mfa_deactivate_totp' %}">
+      {% csrf_token %}{{ form.as_p }}<button class="button text-danger full" type="submit">Deactivate</button>
+    </form>
+  </section>
+</main>
+{% endblock %}

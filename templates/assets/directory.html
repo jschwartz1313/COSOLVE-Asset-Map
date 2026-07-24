@@ -4,7 +4,7 @@
 {% block content %}
 <main id="main-content" class="directory-layout">
   <aside class="directory-filters">
-    <span class="eyebrow">Published records</span>
+    <span class="eyebrow">Public listings</span>
     <h1>Asset directory</h1>
     <form method="get">
       {% include "includes/filter_fields.html" with collapse_categories=True %}
@@ -20,6 +20,7 @@
       <div><span class="eyebrow">Virginia ecosystem</span><h2>{{ result_count }} matching asset{{ result_count|pluralize }}</h2></div>
       <div class="heading-actions">
         {% if user.is_staff %}<a class="button secondary" href="{% url 'imports:export' %}?{{ request.GET.urlencode }}">Export CSV</a>{% endif %}
+        {% if user.is_authenticated %}<a class="button secondary" href="{% url 'core:saved-views' %}?view_type=directory&amp;query={{ request.GET.urlencode|urlencode }}">Save view</a>{% endif %}
         <a class="button secondary" href="{% url 'core:map' %}?{{ request.GET.urlencode }}">View on map</a>
       </div>
     </div>
@@ -43,9 +44,9 @@
     </div>
     {% if page_obj.paginator.num_pages > 1 %}
       <nav class="pagination" aria-label="Directory pages">
-        {% if page_obj.has_previous %}<a href="?{% querystring page=page_obj.previous_page_number %}">Previous</a>{% endif %}
+        {% if page_obj.has_previous %}<a href="{% querystring page=page_obj.previous_page_number %}">Previous</a>{% endif %}
         <span>Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>
-        {% if page_obj.has_next %}<a href="?{% querystring page=page_obj.next_page_number %}">Next</a>{% endif %}
+        {% if page_obj.has_next %}<a href="{% querystring page=page_obj.next_page_number %}">Next</a>{% endif %}
       </nav>
     {% endif %}
   </section>

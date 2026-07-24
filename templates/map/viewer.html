@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
 {% block title %}Map | COSOLVE{% endblock %}
-{% block meta_description %}Explore published Virginia unmanned-systems organizations, universities, facilities, programs, infrastructure, and operating environments on an interactive map.{% endblock %}
+{% block meta_description %}Explore publicly listed Virginia unmanned-systems organizations, universities, facilities, programs, infrastructure, and operating environments on an interactive map.{% endblock %}
 {% block extra_css %}
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+  <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
   <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260722">
 {% endblock %}
 {% block content %}
@@ -32,7 +32,7 @@
 
   <section class="map-stage" aria-label="Asset map">
     <p class="visually-hidden" id="map-accessibility-note">Use the adjacent results list or directory for a text-based view of every mapped asset.</p>
-    <div id="map" role="region" tabindex="0" aria-label="Interactive map of published assets" aria-describedby="map-accessibility-note"></div>
+    <div id="map" role="region" tabindex="0" aria-label="Interactive map of public asset listings" aria-describedby="map-accessibility-note"></div>
     <div class="map-toolbar">
       <div class="map-tools">
         <button class="button compact filter-open" type="button" aria-label="Open filters" aria-controls="asset-filters-panel" aria-expanded="false">Filters</button>
@@ -64,17 +64,18 @@
 
   <aside class="results-panel" aria-label="Filtered assets">
     <div class="results-heading">
-      <div><span class="eyebrow">Published records</span><h2 aria-live="polite" aria-atomic="true"><strong id="result-count">{{ total_assets }}</strong> assets</h2></div>
+      <div><span class="eyebrow">Public listings</span><h2 aria-live="polite" aria-atomic="true"><strong id="result-count">{{ total_assets }}</strong> assets</h2></div>
       <div class="results-actions">
         {% if user.is_staff %}<a class="text-link" id="export-link" href="{% url 'imports:export' %}">Export CSV</a>{% endif %}
+        {% if user.is_authenticated %}<a class="text-link" id="save-view-link" href="{% url 'core:saved-views' %}?view_type=map">Save view</a>{% endif %}
         <a class="text-link" id="directory-link" href="{% url 'core:directory' %}">Directory view</a>
       </div>
     </div>
     <div id="result-list" class="result-list"></div>
   </aside>
 </main>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
-<script type="module" src="{% static 'js/map-viewer.js' %}?v=20260722-3"></script>
+<script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
+<script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
+<script type="module" src="{% static 'js/map-viewer.js' %}?v=20260724"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}

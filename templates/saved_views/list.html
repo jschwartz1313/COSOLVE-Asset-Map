@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% block title %}Saved views | COSOLVE{% endblock %}
+{% block content %}
+<main id="main-content" class="content-page saved-views-page">
+  <header class="page-heading">
+    <span class="eyebrow">Your workspace</span>
+    <h1>Saved views</h1>
+    <p>Keep a filter set for repeated analysis or create a stable link for a coworker.</p>
+  </header>
+  <div class="saved-views-layout">
+    <section class="form-panel">
+      <h2>Save the current view</h2>
+      <form method="post" class="stacked-form">
+        {% csrf_token %}
+        {{ form.non_field_errors }}
+        {% for field in form %}
+          {% if field.is_hidden %}{{ field }}{% else %}
+            <label><span>{{ field.label }}</span>{{ field }}{{ field.errors }}</label>
+          {% endif %}
+        {% endfor %}
+        <button class="button primary" type="submit">Save view</button>
+      </form>
+    </section>
+    <section>
+      <div class="section-heading"><h2>Your views</h2><span>{{ saved_views|length }} saved</span></div>
+      <div class="saved-view-list">
+        {% for item in saved_views %}
+          <article class="saved-view-row">
+            <div>
+              <span class="type-pill">{{ item.get_view_type_display }}</span>
+              <h3>{{ item.name }}</h3>
+              <p>{% if item.is_shared %}Share link enabled{% else %}Private to your account{% endif %}</p>
+              {% if item.is_shared %}
+                <div class="share-link">
+                  <input type="text" readonly value="{{ request.scheme }}://{{ request.get_host }}{% url 'core:open-saved-view' item.share_token %}" aria-label="Share link for {{ item.name }}">
+                  <button class="button secondary" type="button" data-copy-link>Copy link</button>
+                </div>
+              {% endif %}
+            </div>
+            <div class="row-actions">
+              <a class="button secondary" href="{% url 'core:open-saved-view' item.share_token %}">Open</a>
+              <form method="post" action="{% url 'core:delete-saved-view' item.pk %}">
+                {% csrf_token %}<button class="button text-danger" type="submit">Delete</button>
+              </form>
+            </div>
+          </article>
+        {% empty %}
+          <div class="empty-state"><h3>No saved views yet</h3><p>Open the map or directory, apply filters, and choose Save view.</p></div>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+</main>
+{% load static %}<script type="module" src="{% static 'js/saved-views.js' %}?v=20260724"></script>
+{% endblock %}

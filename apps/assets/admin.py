@@ -1,12 +1,15 @@
 import csv
 
+from allauth.account.forms import ResetPasswordForm
 from django.contrib import admin, messages
 from django.contrib.auth import get_user_model
 from django.contrib.auth.admin import UserAdmin as DjangoUserAdmin
 from django.core.exceptions import PermissionDenied
 from django.http import HttpResponse
 from django.utils import timezone
+from simple_history.admin import SimpleHistoryAdmin
 
+from apps.imports.services import CSV_COLUMNS, asset_csv_row
 from apps.sources.models import Source
 
 from .models import Asset, Relationship, UpdateSubmission
@@ -22,6 +25,8 @@ class SourceInline(admin.TabularInline):
         "verification_status",
         "last_verified_at",
         "is_public",
+        "link_review_status",
+        "link_review_notes",
         "notes",
     )
 
@@ -34,13 +39,17 @@ class OutgoingRelationshipInline(admin.TabularInline):
 
 @admin.action(permissions=["change"], description="Send selected records to source review")
 def send_for_review(modeladmin, request, queryset):
-    updated = queryset.exclude(status=Asset.Status.ARCHIVED).update(
-        status=Asset.Status.NEEDS_REVIEW,
-        last_verified_at=None,
-        reviewed_at=None,
-        reviewed_by=None,
-        published_at=None,
-    )
+    updated = 0
+    for asset in queryset.exclude(status=Asset.Status.ARCHIVED):
+        asset.status = Asset.Status.NEEDS_REVIEW
+        asset.last_verified_at = None
+        asset.reviewed_at = None
+        asset.reviewed_by = None
+        asset.published_at = None
+        asset._history_user = request.user
+        asset._change_reason = "Sent to source review from the admin action."
+        asset.save()
+        updated += 1
     messages.success(request, f"Sent {updated} record(s) to source review.")
 
 
@@ -49,14 +58,20 @@ def mark_verified(modeladmin, request, queryset):
     eligible = queryset.filter(
         sources__is_public=True,
         sources__verification_status="verified",
+        sources__last_verified_at__isnull=False,
     ).distinct()
-    updated = eligible.update(
-        status=Asset.Status.VERIFIED,
-        last_verified_at=timezone.localdate(),
-        reviewed_at=timezone.now(),
-        reviewed_by=request.user,
-        published_at=None,
-    )
+    eligible = eligible.exclude(sources__url="")
+    updated = 0
+    for asset in eligible:
+        asset.status = Asset.Status.VERIFIED
+        asset.last_verified_at = timezone.localdate()
+        asset.reviewed_at = timezone.now()
+        asset.reviewed_by = request.user
+        asset.published_at = None
+        asset._history_user = request.user
+        asset._change_reason = "Editorial verification completed from the admin action."
+        asset.save()
+        updated += 1
     skipped = queryset.count() - updated
     messages.success(request, f"Verified {updated} record(s).")
     if skipped:
@@ -69,12 +84,18 @@ def publish_eligible(modeladmin, request, queryset):
         status=Asset.Status.VERIFIED,
         sources__is_public=True,
         sources__verification_status="verified",
+        sources__last_verified_at__isnull=False,
     ).distinct()
-    updated = eligible.update(
-        status=Asset.Status.PUBLISHED,
-        visibility=Asset.Visibility.PUBLIC,
-        published_at=timezone.now(),
-    )
+    eligible = eligible.exclude(sources__url="")
+    updated = 0
+    for asset in eligible:
+        asset.status = Asset.Status.PUBLISHED
+        asset.visibility = Asset.Visibility.PUBLIC
+        asset.published_at = timezone.now()
+        asset._history_user = request.user
+        asset._change_reason = "Published after editorial verification."
+        asset.save()
+        updated += 1
     skipped = queryset.count() - updated
     if skipped:
         messages.warning(
@@ -86,7 +107,14 @@ def publish_eligible(modeladmin, request, queryset):
 
 @admin.action(permissions=["publish"], description="Archive selected records")
 def archive_records(modeladmin, request, queryset):
-    updated = queryset.update(status=Asset.Status.ARCHIVED, published_at=None)
+    updated = 0
+    for asset in queryset:
+        asset.status = Asset.Status.ARCHIVED
+        asset.published_at = None
+        asset._history_user = request.user
+        asset._change_reason = "Archived from the admin action."
+        asset.save()
+        updated += 1
     messages.success(request, f"Archived {updated} record(s).")
 
 
@@ -94,39 +122,22 @@ def archive_records(modeladmin, request, queryset):
 def export_selected(modeladmin, request, queryset):
     response = HttpResponse(content_type="text/csv")
     response["Content-Disposition"] = 'attachment; filename="cosolve-selected-assets.csv"'
-    writer = csv.writer(response)
-    writer.writerow(
-        [
-            "name",
-            "record_type",
-            "short_description",
-            "city",
-            "state",
-            "region",
-            "status",
-            "visibility",
-            "last_verified_at",
-        ]
+    writer = csv.DictWriter(response, fieldnames=CSV_COLUMNS)
+    writer.writeheader()
+    assets = queryset.select_related("region").prefetch_related(
+        "strategic_categories",
+        "platform_domains",
+        "capabilities",
+        "missions",
+        "sources",
     )
-    for asset in queryset.select_related("region").order_by("name"):
-        writer.writerow(
-            [
-                asset.name,
-                asset.record_type,
-                asset.short_description,
-                asset.city,
-                asset.state,
-                asset.region.slug if asset.region else "",
-                asset.status,
-                asset.visibility,
-                asset.last_verified_at or "",
-            ]
-        )
+    for asset in assets.order_by("name"):
+        writer.writerow(asset_csv_row(asset, include_internal=True))
     return response
 
 
 @admin.register(Asset)
-class AssetAdmin(admin.ModelAdmin):
+class AssetAdmin(SimpleHistoryAdmin):
     list_display = (
         "name",
         "record_type",
@@ -210,7 +221,7 @@ class AssetAdmin(admin.ModelAdmin):
 
 
 @admin.register(Relationship)
-class RelationshipAdmin(admin.ModelAdmin):
+class RelationshipAdmin(SimpleHistoryAdmin):
     list_display = ("from_asset", "relationship_type", "to_asset", "is_public")
     list_filter = ("relationship_type", "is_public")
     search_fields = ("from_asset__name", "to_asset__name", "description")
@@ -218,7 +229,7 @@ class RelationshipAdmin(admin.ModelAdmin):
 
 
 @admin.register(UpdateSubmission)
-class UpdateSubmissionAdmin(admin.ModelAdmin):
+class UpdateSubmissionAdmin(SimpleHistoryAdmin):
     list_display = (
         "created_at",
         "subject",
@@ -258,13 +269,28 @@ class UpdateSubmissionAdmin(admin.ModelAdmin):
 
     @admin.action(description="Mark selected submissions in review")
     def mark_in_review(self, request, queryset):
-        updated = queryset.update(status=UpdateSubmission.Status.IN_REVIEW)
+        updated = self._set_status(
+            request, queryset, UpdateSubmission.Status.IN_REVIEW, "Marked in review."
+        )
         messages.success(request, f"Marked {updated} submission(s) in review.")
 
     @admin.action(description="Mark selected submissions resolved")
     def mark_resolved(self, request, queryset):
-        updated = queryset.update(status=UpdateSubmission.Status.RESOLVED)
+        updated = self._set_status(
+            request, queryset, UpdateSubmission.Status.RESOLVED, "Marked resolved."
+        )
         messages.success(request, f"Marked {updated} submission(s) resolved.")
+
+    @staticmethod
+    def _set_status(request, queryset, status, reason):
+        updated = 0
+        for submission in queryset:
+            submission.status = status
+            submission._history_user = request.user
+            submission._change_reason = reason
+            submission.save()
+            updated += 1
+        return updated
 
 
 admin.site.site_header = "COSOLVE Asset Map Administration"
@@ -279,6 +305,25 @@ admin.site.unregister(User)
 @admin.register(User)
 class RestrictedUserAdmin(DjangoUserAdmin):
     restricted_fields = {"is_superuser", "user_permissions"}
+    actions = ("send_account_setup_email",)
+
+    @admin.action(description="Send password setup or reset email")
+    def send_account_setup_email(self, request, queryset):
+        sent = 0
+        skipped = 0
+        for user in queryset.filter(is_active=True):
+            if not user.email:
+                skipped += 1
+                continue
+            form = ResetPasswordForm({"email": user.email})
+            if form.is_valid():
+                form.save(request)
+                sent += 1
+            else:
+                skipped += 1
+        messages.success(request, f"Sent {sent} account setup email(s).")
+        if skipped:
+            messages.warning(request, f"Skipped {skipped} account(s) without a usable email.")
 
     def get_fieldsets(self, request, obj=None):
         fieldsets = super().get_fieldsets(request, obj)

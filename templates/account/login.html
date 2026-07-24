@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load socialaccount %}
+{% block title %}Sign in | COSOLVE{% endblock %}
+{% block content %}
+<main id="main-content" class="account-page">
+  <section class="account-panel">
+    <span class="eyebrow">Restricted workspace</span>
+    <h1>Sign in</h1>
+    <p>Use the account provided by a COSOLVE administrator.</p>
+    <form method="post" action="{% url 'account_login' %}" class="stacked-form">
+      {% csrf_token %}
+      {% if form.non_field_errors %}<div class="form-alert">{{ form.non_field_errors }}</div>{% endif %}
+      <label><span>Username or email</span>{{ form.login }}{{ form.login.errors }}</label>
+      <label><span>Password</span>{{ form.password }}{{ form.password.errors }}</label>
+      {% if form.remember %}
+        <label class="checkbox-field">{{ form.remember }}<span>Keep me signed in</span></label>
+      {% endif %}
+      {{ redirect_field }}
+      <button class="button primary full" type="submit">Sign in</button>
+    </form>
+    {% if oidc_enabled %}
+      <div class="account-divider"><span>or</span></div>
+      <a class="button secondary full" href="{% provider_login_url 'openid_connect' provider_id='cosolve-sso' process='login' %}">Sign in with your organization</a>
+    {% endif %}
+    <div class="account-links">
+      <a href="{% url 'account_reset_password' %}">Forgot your password?</a>
+    </div>
+  </section>
+</main>
+{% endblock %}

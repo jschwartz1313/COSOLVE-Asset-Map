@@ -77,6 +77,40 @@
   font-size: 28px;
 }
 
+.quality-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.quality-actions span {
+  color: var(--body-quiet-color);
+  font-size: 12px;
+  margin-left: auto;
+}
+
+.coverage-grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: 1fr 1fr;
+  margin: 26px 0;
+}
+
+.coverage-grid section {
+  min-width: 0;
+}
+
+.coverage-grid h2 {
+  margin: 0 0 9px;
+}
+
+.coverage-table th,
+.coverage-table td {
+  white-space: nowrap;
+}
+
 .quality-section {
   border: 1px solid var(--hairline-color);
   border-radius: 4px;
@@ -134,5 +168,14 @@
 
   .quality-summary div {
     padding: 12px;
+  }
+
+  .coverage-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .quality-actions span {
+    margin-left: 0;
+    width: 100%;
   }
 }

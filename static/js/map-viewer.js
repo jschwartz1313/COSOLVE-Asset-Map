@@ -1,7 +1,7 @@
 import { fetchAssets } from "./api.js?v=20260717";
 import { bindFilterDrawer, bindFilterIndicators } from "./filters.js?v=20260722-3";
 import { createMap } from "./map.js?v=20260720";
-import { renderResults, selectResult } from "./results.js?v=20260717";
+import { renderResults, selectResult } from "./results.js?v=20260724";
 import { hydrateForm, paramsFromForm, updateUrl } from "./state.js?v=20260717";
 
 const root = document.querySelector("[data-map-app]");
@@ -11,6 +11,7 @@ const count = document.querySelector("#result-count");
 const status = document.querySelector("#map-status");
 const directoryLink = document.querySelector("#directory-link");
 const exportLink = document.querySelector("#export-link");
+const saveViewLink = document.querySelector("#save-view-link");
 const countyLayerToggle = document.querySelector("#county-layer-toggle");
 const stateBoundaryToggle = document.querySelector("#state-boundary-toggle");
 const mapController = createMap(root);
@@ -40,7 +41,7 @@ function showStatus(message) {
 }
 
 async function load(params, { changeUrl = true } = {}) {
-  showStatus("Loading published assets...");
+  showStatus("Loading public asset listings...");
   try {
     const data = await fetchAssets(params);
     const selectOnMap = (id) => {
@@ -55,6 +56,10 @@ async function load(params, { changeUrl = true } = {}) {
       exportLink.href = params.toString()
         ? `/admin/imports/export/?${params}`
         : "/admin/imports/export/";
+    }
+    if (saveViewLink) {
+      const query = encodeURIComponent(params.toString());
+      saveViewLink.href = `/saved-views/?view_type=map&query=${query}`;
     }
     showStatus(
       data.truncated

@@ -91,7 +91,11 @@ class ImportWorkflowTests(TestCase):
             unmanned_systems_relevance="Supports testing",
             status=Asset.Status.NEEDS_REVIEW,
         )
-        Source.objects.create(asset=asset, title="Unreviewed source")
+        Source.objects.create(
+            asset=asset,
+            title="Unreviewed source",
+            url="https://example.org/unreviewed",
+        )
         response = self.client.get(reverse("imports:data-quality"))
         self.assertContains(response, "Needs Review")
         self.assertContains(response, "missing public sources")
@@ -111,3 +115,41 @@ class ImportWorkflowTests(TestCase):
         self.client.force_login(user)
         response = self.client.get(reverse("imports:export"))
         self.assertEqual(response.status_code, 403)
+
+    def test_complete_export_can_be_imported_without_losing_data(self):
+        asset = Asset.objects.create(
+            name="Round Trip Asset",
+            record_type=Asset.RecordType.FACILITY,
+            short_description="Complete working export fixture.",
+            unmanned_systems_relevance="Supports round-trip spreadsheet review.",
+            website_url="https://example.org/asset",
+            address_line="100 Test Way",
+            city="Norfolk",
+            state="VA",
+            postal_code="23510",
+            latitude="36.850000",
+            longitude="-76.280000",
+            region=self.region,
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+            internal_notes="Preserve this staff note.",
+        )
+        asset.strategic_categories.add(self.category)
+        Source.objects.create(
+            asset=asset,
+            title="Round trip source",
+            url="https://example.org/source",
+        )
+        exported = self.client.get(reverse("imports:export"), {"scope": "all"})
+        upload = SimpleUploadedFile(
+            "round-trip.csv", exported.content, content_type="text/csv"
+        )
+        preview = self.client.post(reverse("imports:preview"), {"file": upload})
+        self.assertContains(preview, "Ready")
+        self.client.post(reverse("imports:commit"), {"update_existing": "1"})
+
+        asset.refresh_from_db()
+        self.assertEqual(asset.status, Asset.Status.NEEDS_REVIEW)
+        self.assertEqual(asset.internal_notes, "Preserve this staff note.")
+        self.assertEqual(list(asset.strategic_categories.all()), [self.category])
+        self.assertEqual(asset.sources.get().url, "https://example.org/source")
