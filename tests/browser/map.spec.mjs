@@ -40,6 +40,29 @@ test("empty filters preserve the complete map result set", async ({ page }) => {
   }
 });
 
+test("Hampton Roads coverage filter applies across map and directory", async ({ page }) => {
+  await page.goto("/map/");
+  const statewideCount = Number(await page.locator("#result-count").textContent());
+  const hamptonRoadsFilter = page.locator('[data-region-quick-filter="hampton-roads"]');
+  await expect(hamptonRoadsFilter).toBeVisible();
+  await hamptonRoadsFilter.click();
+  await expect(page).toHaveURL(/region=hampton-roads/);
+  await expect(hamptonRoadsFilter).toHaveAttribute("aria-current", "true");
+
+  const regionalCount = Number(await page.locator("#result-count").textContent());
+  expect(regionalCount).toBeGreaterThan(0);
+  expect(regionalCount).toBeLessThan(statewideCount);
+  await expect(page.locator('select[name="region"]')).toHaveValue("hampton-roads");
+
+  await page.locator("#directory-link").click();
+  await expect(page).toHaveURL(/\/directory\/\?region=hampton-roads/);
+  await expect(page.locator('[data-region-quick-filter="hampton-roads"]')).toHaveAttribute(
+    "aria-current",
+    "true",
+  );
+  await expect(page.locator(".directory-heading h2")).toContainText(`${regionalCount} matching`);
+});
+
 test("large map results render in responsive batches", async ({ page }) => {
   await page.goto("/map/");
   await expect(page.locator("#result-count")).toHaveText("232");

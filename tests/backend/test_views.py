@@ -14,6 +14,7 @@ class CoreViewTests(TestCase):
         self.assertContains(response, 'id="county-layer-toggle"')
         self.assertContains(response, 'id="state-boundary-toggle"')
         self.assertContains(response, "data-state-boundary-url=")
+        self.assertContains(response, 'data-region-quick-filter="hampton-roads"')
 
     def test_health_endpoint(self):
         self.assertEqual(self.client.get(reverse("core:health")).json(), {"status": "ok"})
@@ -22,6 +23,42 @@ class CoreViewTests(TestCase):
         response = self.client.get(reverse("core:directory"), {"q": "test"})
         self.assertContains(response, "Asset directory")
         self.assertContains(response, 'class="directory-list"')
+        self.assertContains(response, 'data-region-quick-filter="hampton-roads"')
+
+    def test_hampton_roads_filter_limits_directory_results(self):
+        hampton_roads = Region.objects.create(name="Hampton Roads")
+        greater_richmond = Region.objects.create(name="Greater Richmond")
+        Asset.objects.create(
+            name="Hampton Roads Test Asset",
+            record_type=Asset.RecordType.ORGANIZATION,
+            short_description="A Hampton Roads public listing.",
+            unmanned_systems_relevance="Supports autonomous systems.",
+            region=hampton_roads,
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        )
+        Asset.objects.create(
+            name="Richmond Test Asset",
+            record_type=Asset.RecordType.ORGANIZATION,
+            short_description="A Richmond public listing.",
+            unmanned_systems_relevance="Supports autonomous systems.",
+            region=greater_richmond,
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        )
+
+        response = self.client.get(
+            reverse("core:directory"), {"region": "hampton-roads"}
+        )
+
+        self.assertContains(response, "Hampton Roads Test Asset")
+        self.assertNotContains(response, "Richmond Test Asset")
+        self.assertContains(response, 'aria-current="true">Hampton Roads</a>')
+        self.assertContains(response, 'href="/directory/"')
+        self.assertContains(
+            response,
+            'href="/directory/?region=hampton-roads"',
+        )
 
     def test_directory_supports_predictable_sorting(self):
         Asset.objects.create(
