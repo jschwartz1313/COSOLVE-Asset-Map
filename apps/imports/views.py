@@ -164,25 +164,34 @@ def data_quality(request):
     ).order_by("last_verified_at", "name")
     missing_sources = (
         active_assets.annotate(
-            public_source_count=Count(
-                "sources", filter=Q(sources__is_public=True), distinct=True
-            )
+            public_source_count=Count("sources", filter=Q(sources__is_public=True), distinct=True)
         )
         .filter(public_source_count=0)
         .order_by("name")
     )
-    missing_coordinates = active_assets.filter(
-        Q(latitude__isnull=True) | Q(longitude__isnull=True)
-    ).order_by("name")
+    missing_coordinates = (
+        active_assets.filter(Q(latitude__isnull=True) | Q(longitude__isnull=True))
+        .exclude(location_precision=Asset.LocationPrecision.REGIONAL)
+        .order_by("name")
+    )
+    generalized_locations = active_assets.filter(
+        location_precision__in=[
+            Asset.LocationPrecision.APPROXIMATE,
+            Asset.LocationPrecision.LOCALITY,
+        ]
+    ).order_by("region__name", "name")
     needs_review = active_assets.filter(
-        Q(reviewed_at__isnull=True)
-        | Q(status__in=[Asset.Status.DRAFT, Asset.Status.NEEDS_REVIEW])
+        Q(reviewed_at__isnull=True) | Q(status__in=[Asset.Status.DRAFT, Asset.Status.NEEDS_REVIEW])
     ).order_by("status", "name")
-    source_issues = Source.objects.filter(
-        Q(verification_status__in=["unreviewed", "stale", "rejected"])
-        | Q(last_verified_at__lt=stale_cutoff)
-        | Q(last_verified_at__isnull=True)
-    ).select_related("asset").order_by("verification_status", "asset__name")
+    source_issues = (
+        Source.objects.filter(
+            Q(verification_status__in=["unreviewed", "stale", "rejected"])
+            | Q(last_verified_at__lt=stale_cutoff)
+            | Q(last_verified_at__isnull=True)
+        )
+        .select_related("asset")
+        .order_by("verification_status", "asset__name")
+    )
     broken_sources = (
         Source.objects.filter(is_public=True)
         .exclude(link_review_status=Source.LinkReviewStatus.ACCEPTED)
@@ -244,7 +253,12 @@ def data_quality(request):
                 ),
                 located=Count(
                     "id",
-                    filter=Q(latitude__isnull=False, longitude__isnull=False),
+                    filter=Q(
+                        location_precision__in=[
+                            Asset.LocationPrecision.EXACT,
+                            Asset.LocationPrecision.SITE,
+                        ]
+                    ),
                     distinct=True,
                 ),
             )
@@ -276,6 +290,8 @@ def data_quality(request):
             "missing_sources_count": missing_sources.count(),
             "missing_coordinates": missing_coordinates[:100],
             "missing_coordinates_count": missing_coordinates.count(),
+            "generalized_locations": generalized_locations[:100],
+            "generalized_locations_count": generalized_locations.count(),
             "needs_review": needs_review[:100],
             "needs_review_count": needs_review.count(),
             "source_issues": source_issues[:100],

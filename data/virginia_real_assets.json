@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-20",
-  "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, and a curated set of source-backed ecosystem records.",
+  "generated_at": "2026-07-27",
+  "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, and a curated set of source-backed ecosystem records. Hampton Roads street and site locations are anchored to official public address sources and geocoded against the U.S. Census address ranges; named-site centroids are used when no public street point is available.",
   "record_count": 232,
   "records": [
     {
@@ -74,14 +74,15 @@
       "website_url": "https://www.co.accomack.va.us/Home/Components/News/News/381/18"
     },
     {
+      "address_line": "22 Enterprise Parkway, Suite 320",
       "capabilities": [
         "Systems engineering and integration",
         "Operations, maintenance, and sustainment"
       ],
       "city": "Hampton",
-      "latitude": 37.03,
-      "location_precision": "locality",
-      "longitude": -76.346,
+      "latitude": 37.056391,
+      "location_precision": "site",
+      "longitude": -76.4067,
       "missions": [
         "Infrastructure inspection",
         "Logistics and contested logistics"
@@ -90,6 +91,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23666",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -108,14 +110,15 @@
       "website_url": "https://adaptiveaero.com/"
     },
     {
+      "address_line": "1100 Exploration Way",
       "capabilities": [
         "Systems engineering and integration",
         "Operations, maintenance, and sustainment"
       ],
       "city": "Hampton",
-      "latitude": 37.03,
-      "location_precision": "locality",
-      "longitude": -76.346,
+      "latitude": 37.082521,
+      "location_precision": "site",
+      "longitude": -76.399763,
       "missions": [
         "Infrastructure inspection",
         "Logistics and contested logistics"
@@ -124,6 +127,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23666",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -132,6 +136,10 @@
         {
           "title": "Advanced Aircraft Company",
           "url": "https://advancedaircraftcompany.com/"
+        },
+        {
+          "title": "Advanced Aircraft Company contact information",
+          "url": "https://advancedaircraftcompany.com/contact/"
         }
       ],
       "state": "VA",
@@ -213,14 +221,15 @@
       "website_url": "https://www.avinc.com/domains/"
     },
     {
+      "address_line": "13199 Wakefield Road",
       "capabilities": [
         "Perception, sensing, and sensor fusion",
         "Manufacturing, materials, and prototyping"
       ],
       "city": "Sedley",
-      "latitude": 36.79,
-      "location_precision": "locality",
-      "longitude": -76.59,
+      "latitude": 36.841546,
+      "location_precision": "site",
+      "longitude": -77.057713,
       "missions": [
         "Agriculture and natural resources"
       ],
@@ -228,6 +237,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23878",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -236,6 +246,10 @@
         {
           "title": "Agricision",
           "url": "https://www.agricisioninc.com/"
+        },
+        {
+          "title": "Agricision contact information",
+          "url": "https://www.agricisioninc.com/contact"
         }
       ],
       "state": "VA",
@@ -454,10 +468,10 @@
       "capabilities": [
         "Safety, policy, regulatory, and airspace integration"
       ],
-      "city": "Norfolk",
-      "latitude": 36.851,
-      "location_precision": "locality",
-      "longitude": -76.286,
+      "city": "",
+      "latitude": null,
+      "location_precision": "regional",
+      "longitude": null,
       "missions": [
         "Training and experimentation"
       ],
@@ -966,14 +980,15 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "1 Avenue of the Arts",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration"
       ],
       "city": "Newport News",
-      "latitude": 37.087,
-      "location_precision": "locality",
-      "longitude": -76.473,
+      "latitude": 37.059929,
+      "location_precision": "site",
+      "longitude": -76.488306,
       "missions": [
         "Training and experimentation"
       ],
@@ -981,6 +996,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23606",
       "provenance": "university-institution",
       "record_type": "university",
       "region": "Hampton Roads",
@@ -989,6 +1005,10 @@
         {
           "title": "Christopher Newport University",
           "url": "https://cnu.edu/"
+        },
+        {
+          "title": "Christopher Newport University contact information",
+          "url": "https://cnu.edu/whoweare/contactus/"
         }
       ],
       "state": "VA",
@@ -1036,14 +1056,15 @@
       "website_url": "https://www.fairfaxva.gov/files/assets/city/v/1/police/documents/annual-reports/fy2023-ffx-pd-annual-report.pdf"
     },
     {
+      "address_line": "2401 Courthouse Drive",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
       ],
       "city": "Virginia Beach",
-      "latitude": 36.853,
-      "location_precision": "locality",
-      "longitude": -75.978,
+      "latitude": 36.750163,
+      "location_precision": "site",
+      "longitude": -76.054885,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -1053,6 +1074,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23456",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Hampton Roads",
@@ -1061,6 +1083,10 @@
         {
           "title": "CISA: City of Virginia Beach UAS Emergency Operations Program",
           "url": "https://www.cisa.gov/sites/default/files/2024-08/24_0826_necp_spotlight_implementing_uas_programs_to_support_emergency_operations_final_508C.pdf"
+        },
+        {
+          "title": "City of Virginia Beach",
+          "url": "https://virginiabeach.gov/"
         }
       ],
       "state": "VA",
@@ -1072,14 +1098,15 @@
       "website_url": "https://www.cisa.gov/sites/default/files/2024-08/24_0826_necp_spotlight_implementing_uas_programs_to_support_emergency_operations_final_508C.pdf"
     },
     {
+      "address_line": "1 Avenue of the Arts",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
       ],
       "city": "Newport News",
-      "latitude": 37.087,
-      "location_precision": "locality",
-      "longitude": -76.473,
+      "latitude": 37.059929,
+      "location_precision": "site",
+      "longitude": -76.488306,
       "missions": [
         "Training and experimentation"
       ],
@@ -1088,6 +1115,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23606",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "Hampton Roads",
@@ -1096,6 +1124,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "CNU Science and Engineering Research Center drone lab",
+          "url": "https://cnu.edu/news/2026/02/19-cnu-serc-drone-lab/"
         }
       ],
       "state": "VA",
@@ -1107,14 +1139,15 @@
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
     },
     {
+      "address_line": "1 Avenue of the Arts",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Perception, sensing, and sensor fusion"
       ],
       "city": "Newport News",
-      "latitude": 37.087,
-      "location_precision": "locality",
-      "longitude": -76.473,
+      "latitude": 37.059929,
+      "location_precision": "site",
+      "longitude": -76.488306,
       "missions": [
         "Training and experimentation"
       ],
@@ -1123,6 +1156,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23606",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "Hampton Roads",
@@ -1131,6 +1165,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "Christopher Newport University contact information",
+          "url": "https://cnu.edu/whoweare/contactus/"
         }
       ],
       "state": "VA",
@@ -1142,13 +1180,14 @@
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
     },
     {
+      "address_line": "431 Crawford Street",
       "capabilities": [
         "Systems engineering and integration"
       ],
       "city": "Portsmouth",
-      "latitude": 36.836,
-      "location_precision": "locality",
-      "longitude": -76.298,
+      "latitude": 36.836893,
+      "location_precision": "site",
+      "longitude": -76.297851,
       "missions": [
         "Force protection and installation security"
       ],
@@ -1156,6 +1195,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23704",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -1164,6 +1204,10 @@
         {
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        },
+        {
+          "title": "U.S. Coast Guard Fifth District",
+          "url": "https://www.uscg.mil/Our-Organization/D5/"
         }
       ],
       "state": "VA",
@@ -1242,14 +1286,15 @@
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
     },
     {
+      "address_line": "Craney Island",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Data engineering, analytics, and edge computing"
       ],
       "city": "Portsmouth",
-      "latitude": 36.836,
-      "location_precision": "locality",
-      "longitude": -76.298,
+      "latitude": 36.89237,
+      "location_precision": "site",
+      "longitude": -76.359388,
       "missions": [
         "Logistics and contested logistics",
         "Infrastructure inspection"
@@ -1259,6 +1304,7 @@
         "Maritime surface systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23703",
       "provenance": "curated-public-source",
       "record_type": "infrastructure",
       "region": "Hampton Roads",
@@ -1267,6 +1313,10 @@
         {
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
+        },
+        {
+          "title": "Craney Island Eastward Expansion project",
+          "url": "https://www.nao.usace.army.mil/Missions/Civil-Works/Craney-Island/"
         }
       ],
       "state": "VA",
@@ -1345,13 +1395,14 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "1912 Regulus Avenue",
       "capabilities": [
         "Systems engineering and integration"
       ],
       "city": "Virginia Beach",
-      "latitude": 36.853,
-      "location_precision": "locality",
-      "longitude": -75.978,
+      "latitude": 36.776959,
+      "location_precision": "site",
+      "longitude": -75.957393,
       "missions": [
         "Force protection and installation security"
       ],
@@ -1359,6 +1410,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23461",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -1367,6 +1419,10 @@
         {
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        },
+        {
+          "title": "Naval Air Station Oceana and Dam Neck Annex installation guide",
+          "url": "https://cnrma.cnic.navy.mil/Installations/NAS-Oceana/"
         }
       ],
       "state": "VA",
@@ -1580,14 +1636,15 @@
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
     },
     {
+      "address_line": "160 Newtown Road, Suite 302",
       "capabilities": [
         "Systems engineering and integration",
         "Operations, maintenance, and sustainment"
       ],
       "city": "Virginia Beach",
-      "latitude": 36.853,
-      "location_precision": "locality",
-      "longitude": -75.978,
+      "latitude": 36.842642,
+      "location_precision": "site",
+      "longitude": -76.186071,
       "missions": [
         "Infrastructure inspection",
         "Logistics and contested logistics"
@@ -1596,6 +1653,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23462",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -1604,6 +1662,10 @@
         {
           "title": "VEDP: Virginia Unmanned Systems Companies",
           "url": "https://www.vedp.org/news/home-business-more-400-years"
+        },
+        {
+          "title": "DroneUp privacy policy and contact information",
+          "url": "https://www.droneup.com/privacy-policy"
         }
       ],
       "state": "VA",
@@ -1951,13 +2013,14 @@
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
+      "address_line": "705 Washington Boulevard",
       "capabilities": [
         "Systems engineering and integration"
       ],
       "city": "Newport News",
-      "latitude": 37.087,
-      "location_precision": "locality",
-      "longitude": -76.473,
+      "latitude": 37.161782,
+      "location_precision": "site",
+      "longitude": -76.577685,
       "missions": [
         "Force protection and installation security"
       ],
@@ -1965,6 +2028,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23604",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -1973,6 +2037,10 @@
         {
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        },
+        {
+          "title": "Joint Base Langley-Eustis contact information",
+          "url": "https://www.jble.af.mil/Home/Contact/"
         }
       ],
       "state": "VA",
@@ -2425,14 +2493,15 @@
       "website_url": "https://hevenaerotech.com/"
     },
     {
+      "address_line": "North Campus Parkway at Commander Shepard Boulevard",
       "capabilities": [
         "Systems engineering and integration",
         "Manufacturing, materials, and prototyping"
       ],
       "city": "Hampton",
-      "latitude": 37.03,
-      "location_precision": "locality",
-      "longitude": -76.346,
+      "latitude": 37.074905,
+      "location_precision": "site",
+      "longitude": -76.402317,
       "missions": [
         "Maritime domain awareness"
       ],
@@ -2441,6 +2510,7 @@
         "Maritime surface systems",
         "Undersea systems"
       ],
+      "postal_code": "23666",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "Hampton Roads",
@@ -2449,6 +2519,10 @@
         {
           "title": "HII Unmanned Systems Center of Excellence",
           "url": "https://www.hii.com/news/unmanned-systems-center-of-excellence"
+        },
+        {
+          "title": "City of Hampton: HII Unmanned Systems Center site",
+          "url": "https://www.hampton.gov/CivicAlerts.aspx?AID=4656&ARC=9365"
         }
       ],
       "state": "VA",
@@ -2494,14 +2568,15 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "2873 Crusader Circle",
       "capabilities": [
         "Systems engineering and integration",
         "Operations, maintenance, and sustainment"
       ],
       "city": "Virginia Beach",
-      "latitude": 36.853,
-      "location_precision": "locality",
-      "longitude": -75.978,
+      "latitude": 36.800894,
+      "location_precision": "site",
+      "longitude": -76.06609,
       "missions": [
         "Infrastructure inspection",
         "Logistics and contested logistics"
@@ -2510,6 +2585,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23453",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -2518,6 +2594,10 @@
         {
           "title": "VEDP: Virginia Unmanned Systems Companies",
           "url": "https://www.vedp.org/news/home-business-more-400-years"
+        },
+        {
+          "title": "HUSH Aerospace contact information",
+          "url": "https://www.hush.aero/contact-hush"
         }
       ],
       "state": "VA",
@@ -2732,13 +2812,14 @@
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
+      "address_line": "1815 Seabee Road",
       "capabilities": [
         "Systems engineering and integration"
       ],
       "city": "Virginia Beach",
-      "latitude": 36.853,
-      "location_precision": "locality",
-      "longitude": -75.978,
+      "latitude": 36.918239,
+      "location_precision": "site",
+      "longitude": -76.156529,
       "missions": [
         "Force protection and installation security"
       ],
@@ -2746,6 +2827,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23459",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -2754,6 +2836,10 @@
         {
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        },
+        {
+          "title": "Joint Expeditionary Base Little Creek-Fort Story contact information",
+          "url": "https://cnrma.cnic.navy.mil/Installations/JEB-Little-Creek-Fort-Story/Contact-Us/"
         }
       ],
       "state": "VA",
@@ -2867,13 +2953,14 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "230 East Flight Line Road",
       "capabilities": [
         "Systems engineering and integration"
       ],
       "city": "Hampton",
-      "latitude": 37.03,
-      "location_precision": "locality",
-      "longitude": -76.346,
+      "latitude": 37.079979,
+      "location_precision": "site",
+      "longitude": -76.351484,
       "missions": [
         "Force protection and installation security"
       ],
@@ -2881,6 +2968,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23665",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -2889,6 +2977,10 @@
         {
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        },
+        {
+          "title": "Joint Base Langley-Eustis contact information",
+          "url": "https://www.jble.af.mil/Home/Contact/"
         }
       ],
       "state": "VA",
@@ -3206,14 +3298,15 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "96 Stilwell Road",
       "capabilities": [
         "Testing, evaluation, verification, and validation",
         "Systems engineering and integration"
       ],
       "city": "Hampton",
-      "latitude": 37.03,
-      "location_precision": "locality",
-      "longitude": -76.346,
+      "latitude": 37.010449,
+      "location_precision": "site",
+      "longitude": -76.312444,
       "missions": [
         "Training and experimentation"
       ],
@@ -3223,6 +3316,7 @@
         "Ground vehicles and robotics",
         "Maritime surface systems"
       ],
+      "postal_code": "23651",
       "provenance": "curated-public-source",
       "record_type": "operating-environment",
       "region": "Hampton Roads",
@@ -3231,6 +3325,10 @@
         {
           "title": "City of Hampton: Hampton Roads Autonomy Demonstrations",
           "url": "https://www.hampton.gov/CivicAlerts.aspx?AID=4973&ARC=10333"
+        },
+        {
+          "title": "Unmanned Systems Research and Technology Center",
+          "url": "https://www.usrtc.org/about-us"
         }
       ],
       "state": "VA",
@@ -3719,14 +3817,15 @@
       "website_url": "https://courses.vccs.edu/colleges/dslcc/courses/UMS-UnmannedSystems"
     },
     {
+      "address_line": "2 Langley Boulevard",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Perception, sensing, and sensor fusion"
       ],
       "city": "Hampton",
-      "latitude": 37.03,
-      "location_precision": "locality",
-      "longitude": -76.346,
+      "latitude": 37.085639,
+      "location_precision": "site",
+      "longitude": -76.380667,
       "missions": [
         "Training and experimentation"
       ],
@@ -3735,6 +3834,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23681",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -3743,6 +3843,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "NASA Langley maps and directions",
+          "url": "https://www.nasa.gov/centers-and-facilities/langley/maps-directions/"
         }
       ],
       "state": "VA",
@@ -3754,14 +3858,15 @@
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
     },
     {
+      "address_line": "2 Langley Boulevard",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
       ],
       "city": "Hampton",
-      "latitude": 37.03,
-      "location_precision": "locality",
-      "longitude": -76.346,
+      "latitude": 37.085639,
+      "location_precision": "site",
+      "longitude": -76.380667,
       "missions": [
         "Training and experimentation"
       ],
@@ -3770,6 +3875,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23681",
       "provenance": "curated-public-source",
       "record_type": "operating-environment",
       "region": "Hampton Roads",
@@ -3778,6 +3884,10 @@
         {
           "title": "NASA Langley Drone Flying Site",
           "url": "https://www.nasa.gov/centers-and-facilities/langley/nasa-langley-drone-flying-site-open-for-testing/"
+        },
+        {
+          "title": "NASA Langley maps and directions",
+          "url": "https://www.nasa.gov/centers-and-facilities/langley/maps-directions/"
         }
       ],
       "state": "VA",
@@ -3789,14 +3899,15 @@
       "website_url": "https://www.nasa.gov/centers-and-facilities/langley/nasa-langley-drone-flying-site-open-for-testing/"
     },
     {
+      "address_line": "2 Langley Boulevard",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
       ],
       "city": "Hampton",
-      "latitude": 37.03,
-      "location_precision": "locality",
-      "longitude": -76.346,
+      "latitude": 37.085639,
+      "location_precision": "site",
+      "longitude": -76.380667,
       "missions": [
         "Training and experimentation"
       ],
@@ -3805,6 +3916,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23681",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -3813,6 +3925,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "NASA Langley maps and directions",
+          "url": "https://www.nasa.gov/centers-and-facilities/langley/maps-directions/"
         }
       ],
       "state": "VA",
@@ -3891,14 +4007,15 @@
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
+      "address_line": "1100 Exploration Way",
       "capabilities": [
         "Manufacturing, materials, and prototyping",
         "Systems engineering and integration"
       ],
       "city": "Hampton",
-      "latitude": 37.03,
-      "location_precision": "locality",
-      "longitude": -76.346,
+      "latitude": 37.082521,
+      "location_precision": "site",
+      "longitude": -76.399763,
       "missions": [
         "Training and experimentation"
       ],
@@ -3906,6 +4023,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23666",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -3914,6 +4032,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "National Institute of Aerospace contact information",
+          "url": "https://www.nianet.org/contact/"
         }
       ],
       "state": "VA",
@@ -3925,13 +4047,14 @@
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
     },
     {
+      "address_line": "1750 Tomcat Boulevard",
       "capabilities": [
         "Systems engineering and integration"
       ],
       "city": "Virginia Beach",
-      "latitude": 36.853,
-      "location_precision": "locality",
-      "longitude": -75.978,
+      "latitude": 36.814477,
+      "location_precision": "site",
+      "longitude": -76.029021,
       "missions": [
         "Force protection and installation security"
       ],
@@ -3939,6 +4062,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23460",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -3947,6 +4071,10 @@
         {
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        },
+        {
+          "title": "Naval Air Station Oceana contact information",
+          "url": "https://cnrma.cnic.navy.mil/Installations/NAS-Oceana/Contact-Us/"
         }
       ],
       "state": "VA",
@@ -3957,13 +4085,14 @@
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
+      "address_line": "620 John Paul Jones Circle",
       "capabilities": [
         "Systems engineering and integration"
       ],
       "city": "Portsmouth",
-      "latitude": 36.836,
-      "location_precision": "locality",
-      "longitude": -76.298,
+      "latitude": 36.843389,
+      "location_precision": "site",
+      "longitude": -76.305001,
       "missions": [
         "Force protection and installation security"
       ],
@@ -3971,6 +4100,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23708",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -3979,6 +4109,10 @@
         {
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        },
+        {
+          "title": "Naval Medical Center Portsmouth directory",
+          "url": "https://portsmouth.tricare.mil/About-Us/Phone-Directory"
         }
       ],
       "state": "VA",
@@ -3989,13 +4123,14 @@
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
+      "address_line": "1530 Gilbert Street",
       "capabilities": [
         "Systems engineering and integration"
       ],
       "city": "Norfolk",
-      "latitude": 36.851,
-      "location_precision": "locality",
-      "longitude": -76.286,
+      "latitude": 36.948171,
+      "location_precision": "site",
+      "longitude": -76.302661,
       "missions": [
         "Force protection and installation security"
       ],
@@ -4003,6 +4138,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23511",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -4011,6 +4147,10 @@
         {
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        },
+        {
+          "title": "Naval Station Norfolk contact information",
+          "url": "https://cnrma.cnic.navy.mil/Installations/NAVSTA-Norfolk/Contact-Us/"
         }
       ],
       "state": "VA",
@@ -4021,13 +4161,14 @@
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
+      "address_line": "7918 Blandy Road",
       "capabilities": [
         "Systems engineering and integration"
       ],
       "city": "Norfolk",
-      "latitude": 36.851,
-      "location_precision": "locality",
-      "longitude": -76.286,
+      "latitude": 36.922618,
+      "location_precision": "site",
+      "longitude": -76.302013,
       "missions": [
         "Force protection and installation security"
       ],
@@ -4035,6 +4176,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23511",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -4043,6 +4185,10 @@
         {
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        },
+        {
+          "title": "Naval Support Activity Hampton Roads contact information",
+          "url": "https://cnrma.cnic.navy.mil/About/Contact-Us/"
         }
       ],
       "state": "VA",
@@ -4053,13 +4199,14 @@
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
+      "address_line": "1320 Northwest Boulevard",
       "capabilities": [
         "Systems engineering and integration"
       ],
-      "city": "Virginia Beach",
-      "latitude": 36.853,
-      "location_precision": "locality",
-      "longitude": -75.978,
+      "city": "Chesapeake",
+      "latitude": 36.566582,
+      "location_precision": "site",
+      "longitude": -76.247058,
       "missions": [
         "Force protection and installation security"
       ],
@@ -4067,21 +4214,26 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23322",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
-      "short_description": "Naval Support Activity Northwest Annex, a publicly documented military or federal installation in Virginia Beach.",
+      "short_description": "Naval Support Activity Northwest Annex, a publicly documented military or federal installation in Chesapeake.",
       "sources": [
         {
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        },
+        {
+          "title": "Naval Support Activity Hampton Roads Northwest Annex",
+          "url": "https://cnrma.cnic.navy.mil/Installations/NSA-Hampton-Roads/"
         }
       ],
       "state": "VA",
       "strategic_categories": [
         "Federal and defense customer access"
       ],
-      "unmanned_systems_relevance": "Naval Support Activity Northwest Annex is included as documented federal or defense ecosystem presence in Virginia Beach. Its map point is generalized and omits operational detail.",
+      "unmanned_systems_relevance": "Naval Support Activity Northwest Annex is included as documented federal or defense ecosystem presence in Chesapeake. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
@@ -4117,13 +4269,14 @@
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
+      "address_line": "160 Main Road",
       "capabilities": [
         "Systems engineering and integration"
       ],
       "city": "Yorktown",
-      "latitude": 37.239,
-      "location_precision": "locality",
-      "longitude": -76.51,
+      "latitude": 37.232649,
+      "location_precision": "site",
+      "longitude": -76.548122,
       "missions": [
         "Force protection and installation security"
       ],
@@ -4131,6 +4284,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23691",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -4139,6 +4293,10 @@
         {
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        },
+        {
+          "title": "Naval Weapons Station Yorktown contact information",
+          "url": "https://cnrma.cnic.navy.mil/Installations/WPNSTA-Yorktown/Contact-Us/"
         }
       ],
       "state": "VA",
@@ -4319,14 +4477,15 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "25th Street at Warwick Boulevard",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Data engineering, analytics, and edge computing"
       ],
       "city": "Newport News",
-      "latitude": 37.087,
-      "location_precision": "locality",
-      "longitude": -76.473,
+      "latitude": 36.9858,
+      "location_precision": "site",
+      "longitude": -76.4347,
       "missions": [
         "Logistics and contested logistics",
         "Infrastructure inspection"
@@ -4336,6 +4495,7 @@
         "Maritime surface systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23607",
       "provenance": "curated-public-source",
       "record_type": "infrastructure",
       "region": "Hampton Roads",
@@ -4344,6 +4504,10 @@
         {
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
+        },
+        {
+          "title": "Port of Virginia terminal directions",
+          "url": "https://operations.portofvirginia.com/terminal-directions/"
         }
       ],
       "state": "VA",
@@ -4354,14 +4518,15 @@
       "website_url": "https://www.portofvirginia.com/gateway/capabilities/"
     },
     {
+      "address_line": "4101 Washington Avenue",
       "capabilities": [
         "Systems engineering and integration",
         "Manufacturing, materials, and prototyping"
       ],
       "city": "Newport News",
-      "latitude": 37.087,
-      "location_precision": "locality",
-      "longitude": -76.473,
+      "latitude": 36.986329,
+      "location_precision": "site",
+      "longitude": -76.435738,
       "missions": [
         "Maritime domain awareness"
       ],
@@ -4370,6 +4535,7 @@
         "Maritime surface systems",
         "Undersea systems"
       ],
+      "postal_code": "23607",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "Hampton Roads",
@@ -4378,6 +4544,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "HII company locations",
+          "url": "https://www.hii.com/company-overview"
         }
       ],
       "state": "VA",
@@ -4423,13 +4593,14 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "803 Front Street",
       "capabilities": [
         "Systems engineering and integration"
       ],
       "city": "Norfolk",
-      "latitude": 36.851,
-      "location_precision": "locality",
-      "longitude": -76.286,
+      "latitude": 36.855907,
+      "location_precision": "site",
+      "longitude": -76.304776,
       "missions": [
         "Force protection and installation security"
       ],
@@ -4437,6 +4608,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23510",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -4445,6 +4617,10 @@
         {
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        },
+        {
+          "title": "U.S. Army Corps of Engineers Norfolk District",
+          "url": "https://www.nao.usace.army.mil/"
         }
       ],
       "state": "VA",
@@ -4455,14 +4631,15 @@
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
+      "address_line": "7737 Hampton Boulevard",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Data engineering, analytics, and edge computing"
       ],
       "city": "Norfolk",
-      "latitude": 36.851,
-      "location_precision": "locality",
-      "longitude": -76.286,
+      "latitude": 36.915927,
+      "location_precision": "site",
+      "longitude": -76.308572,
       "missions": [
         "Logistics and contested logistics",
         "Infrastructure inspection"
@@ -4472,6 +4649,7 @@
         "Maritime surface systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23505",
       "provenance": "curated-public-source",
       "record_type": "infrastructure",
       "region": "Hampton Roads",
@@ -4480,6 +4658,10 @@
         {
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
+        },
+        {
+          "title": "Port of Virginia terminal directions",
+          "url": "https://operations.portofvirginia.com/terminal-directions/"
         }
       ],
       "state": "VA",
@@ -4524,13 +4706,14 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "1 Maple Avenue",
       "capabilities": [
         "Systems engineering and integration"
       ],
       "city": "Portsmouth",
-      "latitude": 36.836,
-      "location_precision": "locality",
-      "longitude": -76.298,
+      "latitude": 36.819272,
+      "location_precision": "site",
+      "longitude": -76.297312,
       "missions": [
         "Force protection and installation security"
       ],
@@ -4538,6 +4721,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23709",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -4546,6 +4730,10 @@
         {
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        },
+        {
+          "title": "Norfolk Naval Shipyard",
+          "url": "https://www.navsea.navy.mil/Home/Shipyards/Norfolk/"
         }
       ],
       "state": "VA",
@@ -4556,14 +4744,15 @@
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
+      "address_line": "5115 Hampton Boulevard",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
       ],
       "city": "Norfolk",
-      "latitude": 36.851,
-      "location_precision": "locality",
-      "longitude": -76.286,
+      "latitude": 36.88928,
+      "location_precision": "site",
+      "longitude": -76.303179,
       "missions": [
         "Training and experimentation"
       ],
@@ -4572,6 +4761,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23529",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "Hampton Roads",
@@ -4580,6 +4770,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "Old Dominion University contact information",
+          "url": "https://www.odu.edu/about/contact"
         }
       ],
       "state": "VA",
@@ -4591,14 +4785,15 @@
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
     },
     {
+      "address_line": "5115 Hampton Boulevard",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration"
       ],
       "city": "Norfolk",
-      "latitude": 36.851,
-      "location_precision": "locality",
-      "longitude": -76.286,
+      "latitude": 36.88928,
+      "location_precision": "site",
+      "longitude": -76.303179,
       "missions": [
         "Training and experimentation"
       ],
@@ -4606,6 +4801,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23529",
       "provenance": "university-institution",
       "record_type": "university",
       "region": "Hampton Roads",
@@ -4614,6 +4810,10 @@
         {
           "title": "Old Dominion University: About",
           "url": "https://www.odu.edu/about"
+        },
+        {
+          "title": "Old Dominion University contact information",
+          "url": "https://www.odu.edu/about/contact"
         }
       ],
       "state": "VA",
@@ -4625,14 +4825,15 @@
       "website_url": "https://www.odu.edu/about"
     },
     {
+      "address_line": "5115 Hampton Boulevard",
       "capabilities": [
         "Safety, policy, regulatory, and airspace integration",
         "Operations, maintenance, and sustainment"
       ],
       "city": "Norfolk",
-      "latitude": 36.851,
-      "location_precision": "locality",
-      "longitude": -76.286,
+      "latitude": 36.88928,
+      "location_precision": "site",
+      "longitude": -76.303179,
       "missions": [
         "Training and experimentation"
       ],
@@ -4640,6 +4841,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23529",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Hampton Roads",
@@ -4648,6 +4850,10 @@
         {
           "title": "Old Dominion University UAS/Drone Operation",
           "url": "https://www.odu.edu/risk-management/advisories/uas-drones"
+        },
+        {
+          "title": "Old Dominion University contact information",
+          "url": "https://www.odu.edu/about/contact"
         }
       ],
       "state": "VA",
@@ -4760,14 +4966,15 @@
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
     },
     {
+      "address_line": "2000 Seaboard Avenue",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Data engineering, analytics, and edge computing"
       ],
       "city": "Portsmouth",
-      "latitude": 36.836,
-      "location_precision": "locality",
-      "longitude": -76.298,
+      "latitude": 36.854497,
+      "location_precision": "site",
+      "longitude": -76.324844,
       "missions": [
         "Logistics and contested logistics",
         "Infrastructure inspection"
@@ -4777,6 +4984,7 @@
         "Maritime surface systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23707",
       "provenance": "curated-public-source",
       "record_type": "infrastructure",
       "region": "Hampton Roads",
@@ -4785,6 +4993,10 @@
         {
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
+        },
+        {
+          "title": "Port of Virginia terminal directions",
+          "url": "https://operations.portofvirginia.com/terminal-directions/"
         }
       ],
       "state": "VA",
@@ -5437,14 +5649,15 @@
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
+      "address_line": "101 West Main Street, Suite 600",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Data engineering, analytics, and edge computing"
       ],
       "city": "Norfolk",
-      "latitude": 36.851,
-      "location_precision": "locality",
-      "longitude": -76.286,
+      "latitude": 36.84614,
+      "location_precision": "site",
+      "longitude": -76.29332,
       "missions": [
         "Logistics and contested logistics",
         "Infrastructure inspection"
@@ -5454,6 +5667,7 @@
         "Maritime surface systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23510",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -5462,6 +5676,10 @@
         {
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
+        },
+        {
+          "title": "Port of Virginia contact information",
+          "url": "https://www.portofvirginia.com/contact/"
         }
       ],
       "state": "VA",
@@ -5472,14 +5690,15 @@
       "website_url": "https://www.portofvirginia.com/gateway/capabilities/"
     },
     {
+      "address_line": "1428 Cedar Road",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
       ],
       "city": "Chesapeake",
-      "latitude": 36.768,
-      "location_precision": "locality",
-      "longitude": -76.288,
+      "latitude": 36.724948,
+      "location_precision": "site",
+      "longitude": -76.295519,
       "missions": [
         "Training and experimentation"
       ],
@@ -5488,6 +5707,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23322",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Hampton Roads",
@@ -5496,6 +5716,10 @@
         {
           "title": "VCCS: Unmanned Systems Courses at Tidewater Community College",
           "url": "https://courses.vccs.edu/colleges/tcc/courses/UMS-UnmannedSystems"
+        },
+        {
+          "title": "Tidewater Community College Chesapeake Campus",
+          "url": "https://www.tcc.edu/come-to-tcc/chesapeake-campus/"
         }
       ],
       "state": "VA",
@@ -5607,13 +5831,14 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "4000 Coast Guard Boulevard",
       "capabilities": [
         "Systems engineering and integration"
       ],
       "city": "Portsmouth",
-      "latitude": 36.836,
-      "location_precision": "locality",
-      "longitude": -76.298,
+      "latitude": 36.873685,
+      "location_precision": "site",
+      "longitude": -76.377469,
       "missions": [
         "Force protection and installation security"
       ],
@@ -5621,6 +5846,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23703",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -5629,6 +5855,10 @@
         {
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        },
+        {
+          "title": "U.S. Coast Guard Sector Virginia",
+          "url": "https://www.atlanticarea.uscg.mil/Our-Organization/District-Units/East-District/Sector-Virginia/"
         }
       ],
       "state": "VA",
@@ -6571,14 +6801,15 @@
       "website_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
     },
     {
+      "address_line": "4111 Monarch Way",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
       ],
       "city": "Norfolk",
-      "latitude": 36.851,
-      "location_precision": "locality",
-      "longitude": -76.286,
+      "latitude": 36.882436,
+      "location_precision": "site",
+      "longitude": -76.300479,
       "missions": [
         "Training and experimentation"
       ],
@@ -6587,6 +6818,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23508",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -6595,6 +6827,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "ODU Enterprise Research and Innovation",
+          "url": "https://www.odu.edu/research/enterprise-research-and-innovation"
         }
       ],
       "state": "VA",
@@ -6606,15 +6842,16 @@
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
     },
     {
+      "address_line": "1375 Greate Road",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Navigation and positioning",
         "Perception, sensing, and sensor fusion"
       ],
-      "city": "Williamsburg",
-      "latitude": 37.271,
-      "location_precision": "locality",
-      "longitude": -76.707,
+      "city": "Gloucester Point",
+      "latitude": 37.249323,
+      "location_precision": "site",
+      "longitude": -76.5,
       "missions": [
         "Maritime domain awareness",
         "Environmental monitoring"
@@ -6624,6 +6861,7 @@
         "Maritime surface systems",
         "Undersea systems"
       ],
+      "postal_code": "23062",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -6632,6 +6870,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "Virginia Institute of Marine Science street addresses",
+          "url": "https://www.vims.edu/intranet/street_addresses/"
         }
       ],
       "state": "VA",
@@ -6643,14 +6885,15 @@
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
     },
     {
+      "address_line": "1000 Virginia International Gateway Boulevard",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Data engineering, analytics, and edge computing"
       ],
       "city": "Portsmouth",
-      "latitude": 36.836,
-      "location_precision": "locality",
-      "longitude": -76.298,
+      "latitude": 36.872573,
+      "location_precision": "site",
+      "longitude": -76.358894,
       "missions": [
         "Logistics and contested logistics",
         "Infrastructure inspection"
@@ -6660,6 +6903,7 @@
         "Maritime surface systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23703",
       "provenance": "curated-public-source",
       "record_type": "infrastructure",
       "region": "Hampton Roads",
@@ -6668,6 +6912,10 @@
         {
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
+        },
+        {
+          "title": "Port of Virginia terminal directions",
+          "url": "https://operations.portofvirginia.com/terminal-directions/"
         }
       ],
       "state": "VA",
@@ -6713,15 +6961,16 @@
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
     },
     {
+      "address_line": "1030 University Boulevard",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Navigation and positioning",
         "Perception, sensing, and sensor fusion"
       ],
       "city": "Suffolk",
-      "latitude": 36.728,
-      "location_precision": "locality",
-      "longitude": -76.584,
+      "latitude": 36.869656,
+      "location_precision": "site",
+      "longitude": -76.418307,
       "missions": [
         "Maritime domain awareness",
         "Environmental monitoring"
@@ -6731,6 +6980,7 @@
         "Maritime surface systems",
         "Undersea systems"
       ],
+      "postal_code": "23435",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -6739,6 +6989,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "Old Dominion University VMASC location",
+          "url": "https://www.odu.edu/sites/default/files/documents/nutrient-management-plan.pdf"
         }
       ],
       "state": "VA",
@@ -6750,14 +7004,15 @@
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
     },
     {
+      "address_line": "99 Thomas Nelson Drive",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
       ],
       "city": "Hampton",
-      "latitude": 37.03,
-      "location_precision": "locality",
-      "longitude": -76.346,
+      "latitude": 37.064091,
+      "location_precision": "site",
+      "longitude": -76.424002,
       "missions": [
         "Training and experimentation"
       ],
@@ -6766,6 +7021,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23666",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Hampton Roads",
@@ -6774,6 +7030,10 @@
         {
           "title": "Virginia Peninsula Community College Drone Flight Technician",
           "url": "https://www.vpcc.edu/program/small-unmanned-aircraft-systems-drone-flight-technician/"
+        },
+        {
+          "title": "Virginia Peninsula Community College Hampton Campus",
+          "url": "https://www.vpcc.edu/about/locations/hampton-campus/"
         }
       ],
       "state": "VA",
@@ -6852,14 +7112,15 @@
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
     },
     {
+      "address_line": "600 Butler Farm Road",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
       ],
       "city": "Hampton",
-      "latitude": 37.03,
-      "location_precision": "locality",
-      "longitude": -76.346,
+      "latitude": 37.062071,
+      "location_precision": "site",
+      "longitude": -76.414915,
       "missions": [
         "Training and experimentation"
       ],
@@ -6868,6 +7129,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23666",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Hampton Roads",
@@ -6876,6 +7138,10 @@
         {
           "title": "Virginia Space Grant Consortium GeoTED-UAS Drone Academies",
           "url": "https://vsgc.odu.edu/geoted-uas/"
+        },
+        {
+          "title": "NASA Virginia Space Grant Consortium directory",
+          "url": "https://www.nasa.gov/learning-resources/national-space-grant-college-and-fellowship-project/consortium-directors/"
         }
       ],
       "state": "VA",
@@ -7715,14 +7981,15 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "116 Jamestown Road",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration"
       ],
       "city": "Williamsburg",
-      "latitude": 37.271,
-      "location_precision": "locality",
-      "longitude": -76.707,
+      "latitude": 37.270259,
+      "location_precision": "site",
+      "longitude": -76.708061,
       "missions": [
         "Training and experimentation"
       ],
@@ -7730,6 +7997,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23185",
       "provenance": "university-institution",
       "record_type": "university",
       "region": "Hampton Roads",
@@ -7738,6 +8006,10 @@
         {
           "title": "William & Mary: About",
           "url": "https://www.wm.edu/about/"
+        },
+        {
+          "title": "William & Mary contact information",
+          "url": "https://www.wm.edu/admission/undergraduateadmission/contactus/"
         }
       ],
       "state": "VA",

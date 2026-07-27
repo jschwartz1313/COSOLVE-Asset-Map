@@ -35,6 +35,27 @@ class RealCatalogFileTests(TestCase):
         self.assertEqual(airport_regions["Roanoke/Blacksburg Rgnl (Woodrum Fld)"], "Roanoke Valley")
         universities = [record for record in records if record["record_type"] == "university"]
         self.assertEqual(len(universities), 10)
+        hampton_roads = [record for record in records if record["region"] == "Hampton Roads"]
+        self.assertEqual(len(hampton_roads), 57)
+        self.assertFalse(
+            any(
+                record["location_precision"] in {"approximate", "locality"}
+                for record in hampton_roads
+            )
+        )
+        self.assertTrue(
+            all(
+                record.get("address_line")
+                for record in hampton_roads
+                if record["location_precision"] == "site"
+            )
+        )
+        regional = [
+            record for record in hampton_roads if record["location_precision"] == "regional"
+        ]
+        self.assertEqual([record["name"] for record in regional], ["AUVSI Hampton Roads Chapter"])
+        self.assertIsNone(regional[0]["latitude"])
+        self.assertIsNone(regional[0]["longitude"])
         self.assertTrue(
             all(
                 source.get("url", "").startswith("https://")
@@ -77,6 +98,16 @@ class RealCatalogFileTests(TestCase):
                 relationship_type=Relationship.RelationshipType.SUPPORTS,
             ).exists()
         )
+        nasa = Asset.objects.get(name="NASA Langley Research Center")
+        self.assertEqual(nasa.address_line, "2 Langley Boulevard")
+        self.assertEqual(nasa.location_precision, Asset.LocationPrecision.SITE)
+        self.assertEqual(str(nasa.latitude), "37.085639")
+        northwest_annex = Asset.objects.get(name="Naval Support Activity Northwest Annex")
+        self.assertEqual(northwest_annex.city, "Chesapeake")
+        self.assertEqual(northwest_annex.postal_code, "23322")
+        regional = Asset.objects.get(name="AUVSI Hampton Roads Chapter")
+        self.assertIsNone(regional.latitude)
+        self.assertEqual(regional.location_precision, Asset.LocationPrecision.REGIONAL)
 
     def test_only_if_empty_preserves_existing_database_edits(self):
         call_command("seed_real_data", verbosity=0)

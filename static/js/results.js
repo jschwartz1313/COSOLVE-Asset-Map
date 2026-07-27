@@ -18,14 +18,11 @@ function resultRow(feature, container, onSelect) {
   button.append(textElement("h3", "", props.name));
   button.append(textElement("p", "", props.short_description));
   const footer = textElement("div", "row-footer", "");
-  footer.append(
-    textElement(
-      "span",
-      "",
-      [props.location.city, props.location.state].filter(Boolean).join(", "),
-    ),
-  );
-  footer.append(textElement("span", "", props.location.precision || ""));
+  const locality = props.location.city
+    ? [props.location.city, props.location.state].filter(Boolean).join(", ")
+    : props.location.region || props.location.state;
+  footer.append(textElement("span", "", locality));
+  footer.append(textElement("span", "", props.location.precision_label || ""));
   button.append(footer);
   button.addEventListener("click", () => {
     for (const row of container.querySelectorAll(".result-row")) {

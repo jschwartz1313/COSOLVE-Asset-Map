@@ -66,6 +66,24 @@ test("Hampton Roads coverage filter applies across map and directory", async ({ 
   await expect(page.locator(".directory-heading h2")).toContainText(`${regionalCount} matching`);
 });
 
+test("Hampton Roads records expose site-level location quality", async ({ page }) => {
+  await page.goto("/map/?region=hampton-roads");
+  const adaptive = page.locator(".result-row").filter({ hasText: "Adaptive Aerospace Group" });
+  await expect(adaptive.locator(".row-footer")).toContainText("Site or campus");
+  await adaptive.click();
+  await expect(page.locator(".leaflet-popup-content")).toContainText(
+    "22 Enterprise Parkway, Suite 320",
+  );
+
+  const response = await page.request.get("/api/assets.geojson?region=hampton-roads");
+  const body = await response.json();
+  const regionalChapter = body.features.find(
+    (feature) => feature.properties.name === "AUVSI Hampton Roads Chapter",
+  );
+  expect(regionalChapter.geometry).toBeNull();
+  expect(regionalChapter.properties.location.precision_label).toBe("Regional; no single site");
+});
+
 test("large map results render in responsive batches", async ({ page }) => {
   await page.goto("/map/");
   await expect(page.locator("#result-count")).toHaveText("232");

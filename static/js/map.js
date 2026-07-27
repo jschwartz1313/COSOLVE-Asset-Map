@@ -1,4 +1,4 @@
-import { buildPopup } from "./popups.js?v=20260717";
+import { buildPopup } from "./popups.js?v=20260727";
 
 const COLORS = {
   university: "#8b3f56",

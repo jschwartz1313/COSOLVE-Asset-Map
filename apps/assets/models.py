@@ -50,8 +50,10 @@ class Asset(models.Model):
 
     class LocationPrecision(models.TextChoices):
         EXACT = "exact", "Exact"
+        SITE = "site", "Site or campus"
         APPROXIMATE = "approximate", "Approximate"
         LOCALITY = "locality", "Locality only"
+        REGIONAL = "regional", "Regional; no single site"
         HIDDEN = "hidden", "Hidden"
 
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)

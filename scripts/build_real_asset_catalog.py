@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "virginia_real_assets.json"
-CATALOG_DATE = "2026-07-20"
+CATALOG_DATE = "2026-07-27"
 
 FAA_LAYER = (
     "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
@@ -145,7 +145,10 @@ SOURCES = {
         "RapidFlight Manassas UAS Manufacturing Headquarters",
         "https://www.prnewswire.com/news-releases/rapidflight-celebrates-grand-opening-of-uas-3d-manufacturing-headquarters-in-manassas-virginia-301884344.html",
     ),
-    "xelevate": ("Xelevate Leesburg Unmanned Systems Facility", "https://xelevateus.com/leesburg-virginia/"),
+    "xelevate": (
+        "Xelevate Leesburg Unmanned Systems Facility",
+        "https://xelevateus.com/leesburg-virginia/",
+    ),
     "virginia_uas": ("Virginia UAS", "https://virginiauas.com/"),
     "aerovironment": ("AeroVironment", "https://www.avinc.com/domains/"),
     "qinetiq": ("QinetiQ US locations", "https://www.qinetiq.com/en-us/who-we-are/our-locations"),
@@ -356,7 +359,11 @@ PROFILES = {
     },
     "company_cross": {
         "categories": ["Companies and solution providers", "Manufacturing and supply chain"],
-        "domains": ["Unmanned aircraft systems", "Ground vehicles and robotics", "Cross-domain autonomy"],
+        "domains": [
+            "Unmanned aircraft systems",
+            "Ground vehicles and robotics",
+            "Cross-domain autonomy",
+        ],
         "capabilities": [
             "Autonomy and artificial intelligence",
             "Systems engineering and integration",
@@ -370,8 +377,15 @@ PROFILES = {
     },
     "test_multi": {
         "categories": ["Test and operational environments", "Companies and solution providers"],
-        "domains": ["Unmanned aircraft systems", "Ground vehicles and robotics", "Maritime surface systems"],
-        "capabilities": ["Testing, evaluation, verification, and validation", "Systems engineering and integration"],
+        "domains": [
+            "Unmanned aircraft systems",
+            "Ground vehicles and robotics",
+            "Maritime surface systems",
+        ],
+        "capabilities": [
+            "Testing, evaluation, verification, and validation",
+            "Systems engineering and integration",
+        ],
         "missions": ["Training and experimentation"],
         "relevance": (
             "Provides a publicly documented environment for unmanned-system testing, training, "
@@ -381,8 +395,15 @@ PROFILES = {
     "public_safety": {
         "categories": ["Programs and initiatives", "Multi-domain missions"],
         "domains": ["Unmanned aircraft systems"],
-        "capabilities": ["Operations, maintenance, and sustainment", "Perception, sensing, and sensor fusion"],
-        "missions": ["Public safety and emergency response", "Search and rescue", "Surveying and mapping"],
+        "capabilities": [
+            "Operations, maintenance, and sustainment",
+            "Perception, sensing, and sensor fusion",
+        ],
+        "missions": [
+            "Public safety and emergency response",
+            "Search and rescue",
+            "Surveying and mapping",
+        ],
         "relevance": (
             "Operates, coordinates, or funds a documented public-sector UAS capability for "
             "emergency response, mapping, inspection, conservation, or public safety."
@@ -391,7 +412,10 @@ PROFILES = {
     "agriculture": {
         "categories": ["Research and technical depth", "Programs and initiatives"],
         "domains": ["Unmanned aircraft systems"],
-        "capabilities": ["Perception, sensing, and sensor fusion", "Data engineering, analytics, and edge computing"],
+        "capabilities": [
+            "Perception, sensing, and sensor fusion",
+            "Data engineering, analytics, and edge computing",
+        ],
         "missions": ["Agriculture and natural resources", "Environmental monitoring"],
         "relevance": (
             "Conducts documented drone-based sensing, imaging, analysis, or field research for "
@@ -500,6 +524,462 @@ PLACES = {
     "Yorktown": (37.239, -76.510),
 }
 
+# Hampton Roads locations are anchored to public addresses, campuses, terminal
+# entrances, or installation administrative points. "Site" does not claim an
+# operationally exact location within a large or access-controlled property.
+HAMPTON_ROADS_LOCATIONS = {
+    "Adaptive Aerospace Group": {
+        "address_line": "22 Enterprise Parkway, Suite 320",
+        "postal_code": "23666",
+        "latitude": 37.056391,
+        "longitude": -76.406700,
+        "source": (
+            "Adaptive Aerospace Group contact information",
+            "https://adaptiveaero.com/",
+        ),
+    },
+    "Advanced Aircraft Company": {
+        "address_line": "1100 Exploration Way",
+        "postal_code": "23666",
+        "latitude": 37.082521,
+        "longitude": -76.399763,
+        "source": (
+            "Advanced Aircraft Company contact information",
+            "https://advancedaircraftcompany.com/contact/",
+        ),
+    },
+    "Agricision": {
+        "address_line": "13199 Wakefield Road",
+        "postal_code": "23878",
+        "latitude": 36.841546,
+        "longitude": -77.057713,
+        "source": ("Agricision contact information", "https://www.agricisioninc.com/contact"),
+    },
+    "AUVSI Hampton Roads Chapter": {
+        "city": "",
+        "latitude": None,
+        "longitude": None,
+        "location_precision": "regional",
+    },
+    "Christopher Newport University": {
+        "address_line": "1 Avenue of the Arts",
+        "postal_code": "23606",
+        "latitude": 37.059929,
+        "longitude": -76.488306,
+        "source": (
+            "Christopher Newport University contact information",
+            "https://cnu.edu/whoweare/contactus/",
+        ),
+    },
+    "City of Virginia Beach UAS Program": {
+        "address_line": "2401 Courthouse Drive",
+        "postal_code": "23456",
+        "latitude": 36.750163,
+        "longitude": -76.054885,
+        "source": ("City of Virginia Beach", "https://virginiabeach.gov/"),
+    },
+    "CNU Autonomous Systems and Drone Lab": {
+        "address_line": "1 Avenue of the Arts",
+        "postal_code": "23606",
+        "latitude": 37.059929,
+        "longitude": -76.488306,
+        "source": (
+            "CNU Science and Engineering Research Center drone lab",
+            "https://cnu.edu/news/2026/02/19-cnu-serc-drone-lab/",
+        ),
+    },
+    "CNU Capable Humanitarian Robotics and Intelligent Systems Lab": {
+        "address_line": "1 Avenue of the Arts",
+        "postal_code": "23606",
+        "latitude": 37.059929,
+        "longitude": -76.488306,
+        "source": (
+            "Christopher Newport University contact information",
+            "https://cnu.edu/whoweare/contactus/",
+        ),
+    },
+    "Coast Guard Atlantic Area and Fifth Coast Guard District": {
+        "address_line": "431 Crawford Street",
+        "postal_code": "23704",
+        "latitude": 36.836893,
+        "longitude": -76.297851,
+        "source": ("U.S. Coast Guard Fifth District", "https://www.uscg.mil/Our-Organization/D5/"),
+    },
+    "Craney Island Marine Terminal Project": {
+        "address_line": "Craney Island",
+        "postal_code": "23703",
+        "latitude": 36.892370,
+        "longitude": -76.359388,
+        "source": (
+            "Craney Island Eastward Expansion project",
+            "https://www.nao.usace.army.mil/Missions/Civil-Works/Craney-Island/",
+        ),
+    },
+    "Dam Neck Annex": {
+        "address_line": "1912 Regulus Avenue",
+        "postal_code": "23461",
+        "latitude": 36.776959,
+        "longitude": -75.957393,
+        "source": (
+            "Naval Air Station Oceana and Dam Neck Annex installation guide",
+            "https://cnrma.cnic.navy.mil/Installations/NAS-Oceana/",
+        ),
+    },
+    "DroneUp": {
+        "address_line": "160 Newtown Road, Suite 302",
+        "postal_code": "23462",
+        "latitude": 36.842642,
+        "longitude": -76.186071,
+        "source": (
+            "DroneUp privacy policy and contact information",
+            "https://www.droneup.com/privacy-policy",
+        ),
+    },
+    "Fort Eustis - Joint Base Langley-Eustis": {
+        "address_line": "705 Washington Boulevard",
+        "postal_code": "23604",
+        "latitude": 37.161782,
+        "longitude": -76.577685,
+        "source": (
+            "Joint Base Langley-Eustis contact information",
+            "https://www.jble.af.mil/Home/Contact/",
+        ),
+    },
+    "HII Unmanned Systems Center of Excellence": {
+        "address_line": "North Campus Parkway at Commander Shepard Boulevard",
+        "postal_code": "23666",
+        "latitude": 37.074905,
+        "longitude": -76.402317,
+        "source": (
+            "City of Hampton: HII Unmanned Systems Center site",
+            "https://www.hampton.gov/CivicAlerts.aspx?AID=4656&ARC=9365",
+        ),
+    },
+    "HUSH Aerospace": {
+        "address_line": "2873 Crusader Circle",
+        "postal_code": "23453",
+        "latitude": 36.800894,
+        "longitude": -76.066090,
+        "source": ("HUSH Aerospace contact information", "https://www.hush.aero/contact-hush"),
+    },
+    "Joint Expeditionary Base Little Creek-Fort Story": {
+        "address_line": "1815 Seabee Road",
+        "postal_code": "23459",
+        "latitude": 36.918239,
+        "longitude": -76.156529,
+        "source": (
+            "Joint Expeditionary Base Little Creek-Fort Story contact information",
+            "https://cnrma.cnic.navy.mil/Installations/JEB-Little-Creek-Fort-Story/Contact-Us/",
+        ),
+    },
+    "Langley Air Force Base - Joint Base Langley-Eustis": {
+        "address_line": "230 East Flight Line Road",
+        "postal_code": "23665",
+        "latitude": 37.079979,
+        "longitude": -76.351484,
+        "source": (
+            "Joint Base Langley-Eustis contact information",
+            "https://www.jble.af.mil/Home/Contact/",
+        ),
+    },
+    "Longbow Unmanned Systems Research and Test Center": {
+        "address_line": "96 Stilwell Road",
+        "postal_code": "23651",
+        "latitude": 37.010449,
+        "longitude": -76.312444,
+        "source": (
+            "Unmanned Systems Research and Technology Center",
+            "https://www.usrtc.org/about-us",
+        ),
+    },
+    "NASA Langley Autonomy Incubator": {
+        "address_line": "2 Langley Boulevard",
+        "postal_code": "23681",
+        "latitude": 37.085639,
+        "longitude": -76.380667,
+        "source": (
+            "NASA Langley maps and directions",
+            "https://www.nasa.gov/centers-and-facilities/langley/maps-directions/",
+        ),
+    },
+    "NASA Langley CERTAIN": {
+        "address_line": "2 Langley Boulevard",
+        "postal_code": "23681",
+        "latitude": 37.085639,
+        "longitude": -76.380667,
+        "source": (
+            "NASA Langley maps and directions",
+            "https://www.nasa.gov/centers-and-facilities/langley/maps-directions/",
+        ),
+    },
+    "NASA Langley Research Center": {
+        "address_line": "2 Langley Boulevard",
+        "postal_code": "23681",
+        "latitude": 37.085639,
+        "longitude": -76.380667,
+        "source": (
+            "NASA Langley maps and directions",
+            "https://www.nasa.gov/centers-and-facilities/langley/maps-directions/",
+        ),
+    },
+    "National Institute of Aerospace": {
+        "address_line": "1100 Exploration Way",
+        "postal_code": "23666",
+        "latitude": 37.082521,
+        "longitude": -76.399763,
+        "source": (
+            "National Institute of Aerospace contact information",
+            "https://www.nianet.org/contact/",
+        ),
+    },
+    "Naval Air Station Oceana": {
+        "address_line": "1750 Tomcat Boulevard",
+        "postal_code": "23460",
+        "latitude": 36.814477,
+        "longitude": -76.029021,
+        "source": (
+            "Naval Air Station Oceana contact information",
+            "https://cnrma.cnic.navy.mil/Installations/NAS-Oceana/Contact-Us/",
+        ),
+    },
+    "Naval Medical Center Portsmouth": {
+        "address_line": "620 John Paul Jones Circle",
+        "postal_code": "23708",
+        "latitude": 36.843389,
+        "longitude": -76.305001,
+        "source": (
+            "Naval Medical Center Portsmouth directory",
+            "https://portsmouth.tricare.mil/About-Us/Phone-Directory",
+        ),
+    },
+    "Naval Station Norfolk": {
+        "address_line": "1530 Gilbert Street",
+        "postal_code": "23511",
+        "latitude": 36.948171,
+        "longitude": -76.302661,
+        "source": (
+            "Naval Station Norfolk contact information",
+            "https://cnrma.cnic.navy.mil/Installations/NAVSTA-Norfolk/Contact-Us/",
+        ),
+    },
+    "Naval Support Activity Hampton Roads": {
+        "address_line": "7918 Blandy Road",
+        "postal_code": "23511",
+        "latitude": 36.922618,
+        "longitude": -76.302013,
+        "source": (
+            "Naval Support Activity Hampton Roads contact information",
+            "https://cnrma.cnic.navy.mil/About/Contact-Us/",
+        ),
+    },
+    "Naval Support Activity Northwest Annex": {
+        "address_line": "1320 Northwest Boulevard",
+        "city": "Chesapeake",
+        "postal_code": "23322",
+        "latitude": 36.566582,
+        "longitude": -76.247058,
+        "source": (
+            "Naval Support Activity Hampton Roads Northwest Annex",
+            "https://cnrma.cnic.navy.mil/Installations/NSA-Hampton-Roads/",
+        ),
+    },
+    "Naval Weapons Station Yorktown": {
+        "address_line": "160 Main Road",
+        "postal_code": "23691",
+        "latitude": 37.232649,
+        "longitude": -76.548122,
+        "source": (
+            "Naval Weapons Station Yorktown contact information",
+            "https://cnrma.cnic.navy.mil/Installations/WPNSTA-Yorktown/Contact-Us/",
+        ),
+    },
+    "Newport News Marine Terminal": {
+        "address_line": "25th Street at Warwick Boulevard",
+        "postal_code": "23607",
+        "latitude": 36.985800,
+        "longitude": -76.434700,
+        "source": (
+            "Port of Virginia terminal directions",
+            "https://operations.portofvirginia.com/terminal-directions/",
+        ),
+    },
+    "Newport News Shipbuilding": {
+        "address_line": "4101 Washington Avenue",
+        "postal_code": "23607",
+        "latitude": 36.986329,
+        "longitude": -76.435738,
+        "source": ("HII company locations", "https://www.hii.com/company-overview"),
+    },
+    "Norfolk District, U.S. Army Corps of Engineers": {
+        "address_line": "803 Front Street",
+        "postal_code": "23510",
+        "latitude": 36.855907,
+        "longitude": -76.304776,
+        "source": (
+            "U.S. Army Corps of Engineers Norfolk District",
+            "https://www.nao.usace.army.mil/",
+        ),
+    },
+    "Norfolk International Terminals": {
+        "address_line": "7737 Hampton Boulevard",
+        "postal_code": "23505",
+        "latitude": 36.915927,
+        "longitude": -76.308572,
+        "source": (
+            "Port of Virginia terminal directions",
+            "https://operations.portofvirginia.com/terminal-directions/",
+        ),
+    },
+    "Norfolk Naval Shipyard": {
+        "address_line": "1 Maple Avenue",
+        "postal_code": "23709",
+        "latitude": 36.819272,
+        "longitude": -76.297312,
+        "source": ("Norfolk Naval Shipyard", "https://www.navsea.navy.mil/Home/Shipyards/Norfolk/"),
+    },
+    "ODU Unmanned and Autonomous Vehicle Laboratory": {
+        "address_line": "5115 Hampton Boulevard",
+        "postal_code": "23529",
+        "latitude": 36.889280,
+        "longitude": -76.303179,
+        "source": (
+            "Old Dominion University contact information",
+            "https://www.odu.edu/about/contact",
+        ),
+    },
+    "Old Dominion University": {
+        "address_line": "5115 Hampton Boulevard",
+        "postal_code": "23529",
+        "latitude": 36.889280,
+        "longitude": -76.303179,
+        "source": (
+            "Old Dominion University contact information",
+            "https://www.odu.edu/about/contact",
+        ),
+    },
+    "Old Dominion University UAS Operations Program": {
+        "address_line": "5115 Hampton Boulevard",
+        "postal_code": "23529",
+        "latitude": 36.889280,
+        "longitude": -76.303179,
+        "source": (
+            "Old Dominion University contact information",
+            "https://www.odu.edu/about/contact",
+        ),
+    },
+    "Portsmouth Marine Terminal": {
+        "address_line": "2000 Seaboard Avenue",
+        "postal_code": "23707",
+        "latitude": 36.854497,
+        "longitude": -76.324844,
+        "source": (
+            "Port of Virginia terminal directions",
+            "https://operations.portofvirginia.com/terminal-directions/",
+        ),
+    },
+    "The Port of Virginia": {
+        "address_line": "101 West Main Street, Suite 600",
+        "postal_code": "23510",
+        "latitude": 36.846140,
+        "longitude": -76.293320,
+        "source": (
+            "Port of Virginia contact information",
+            "https://www.portofvirginia.com/contact/",
+        ),
+    },
+    "Tidewater Community College Unmanned Systems Courses": {
+        "address_line": "1428 Cedar Road",
+        "postal_code": "23322",
+        "latitude": 36.724948,
+        "longitude": -76.295519,
+        "source": (
+            "Tidewater Community College Chesapeake Campus",
+            "https://www.tcc.edu/come-to-tcc/chesapeake-campus/",
+        ),
+    },
+    "U.S. Coast Guard Base Portsmouth": {
+        "address_line": "4000 Coast Guard Boulevard",
+        "postal_code": "23703",
+        "latitude": 36.873685,
+        "longitude": -76.377469,
+        "source": (
+            "U.S. Coast Guard Sector Virginia",
+            "https://www.atlanticarea.uscg.mil/Our-Organization/District-Units/East-District/Sector-Virginia/",
+        ),
+    },
+    "Virginia Institute for Spaceflight and Autonomy": {
+        "address_line": "4111 Monarch Way",
+        "postal_code": "23508",
+        "latitude": 36.882436,
+        "longitude": -76.300479,
+        "source": (
+            "ODU Enterprise Research and Innovation",
+            "https://www.odu.edu/research/enterprise-research-and-innovation",
+        ),
+    },
+    "Virginia Institute of Marine Science": {
+        "address_line": "1375 Greate Road",
+        "city": "Gloucester Point",
+        "postal_code": "23062",
+        "latitude": 37.249323,
+        "longitude": -76.500000,
+        "source": (
+            "Virginia Institute of Marine Science street addresses",
+            "https://www.vims.edu/intranet/street_addresses/",
+        ),
+    },
+    "Virginia International Gateway": {
+        "address_line": "1000 Virginia International Gateway Boulevard",
+        "postal_code": "23703",
+        "latitude": 36.872573,
+        "longitude": -76.358894,
+        "source": (
+            "Port of Virginia terminal directions",
+            "https://operations.portofvirginia.com/terminal-directions/",
+        ),
+    },
+    "Virginia Modeling, Analysis and Simulation Center": {
+        "address_line": "1030 University Boulevard",
+        "postal_code": "23435",
+        "latitude": 36.869656,
+        "longitude": -76.418307,
+        "source": (
+            "Old Dominion University VMASC location",
+            "https://www.odu.edu/sites/default/files/documents/nutrient-management-plan.pdf",
+        ),
+    },
+    "Virginia Peninsula Community College Drone Flight Technician Certificate": {
+        "address_line": "99 Thomas Nelson Drive",
+        "postal_code": "23666",
+        "latitude": 37.064091,
+        "longitude": -76.424002,
+        "source": (
+            "Virginia Peninsula Community College Hampton Campus",
+            "https://www.vpcc.edu/about/locations/hampton-campus/",
+        ),
+    },
+    "Virginia Space Grant Consortium Drone Academies": {
+        "address_line": "600 Butler Farm Road",
+        "postal_code": "23666",
+        "latitude": 37.062071,
+        "longitude": -76.414915,
+        "source": (
+            "NASA Virginia Space Grant Consortium directory",
+            "https://www.nasa.gov/learning-resources/national-space-grant-college-and-fellowship-project/consortium-directors/",
+        ),
+    },
+    "William & Mary": {
+        "address_line": "116 Jamestown Road",
+        "postal_code": "23185",
+        "latitude": 37.270259,
+        "longitude": -76.708061,
+        "source": (
+            "William & Mary contact information",
+            "https://www.wm.edu/admission/undergraduateadmission/contactus/",
+        ),
+    },
+}
+
 # The coordinate fallback is intentionally broad. These airport overrides keep
 # well-known locality assignments from crossing adjacent ecosystem regions.
 AIRPORT_REGION_OVERRIDES = {
@@ -544,7 +1024,7 @@ DEFENSE_INSTALLATIONS = [
     ("Joint Expeditionary Base Little Creek-Fort Story", "Virginia Beach", "Hampton Roads"),
     ("Naval Air Station Oceana", "Virginia Beach", "Hampton Roads"),
     ("Dam Neck Annex", "Virginia Beach", "Hampton Roads"),
-    ("Naval Support Activity Northwest Annex", "Virginia Beach", "Hampton Roads"),
+    ("Naval Support Activity Northwest Annex", "Chesapeake", "Hampton Roads"),
     ("Surface Combat Systems Center Wallops Island", "Wallops Island", "Eastern Shore"),
     ("Fort Pickett", "Blackstone", "Southside Virginia"),
     ("Rivanna Station", "Charlottesville", "Central Virginia"),
@@ -1957,6 +2437,31 @@ def source(key):
     return {"title": title, "url": url}
 
 
+def apply_location_override(record):
+    override = HAMPTON_ROADS_LOCATIONS.get(record["name"])
+    if not override:
+        return record
+
+    for field in (
+        "address_line",
+        "city",
+        "postal_code",
+        "latitude",
+        "longitude",
+        "location_precision",
+    ):
+        if field in override:
+            record[field] = override[field]
+    record["location_precision"] = override.get("location_precision", "site")
+
+    location_source = override.get("source")
+    if location_source:
+        title, url = location_source
+        if not any(item["url"] == url for item in record["sources"]):
+            record["sources"].append({"title": title, "url": url})
+    return record
+
+
 def region_for(latitude, longitude):
     if longitude > -75.55:
         return "Eastern Shore"
@@ -2029,9 +2534,7 @@ def airport_records():
                 "latitude": round(latitude, 6),
                 "longitude": round(longitude, 6),
                 "location_precision": "exact",
-                "region": AIRPORT_REGION_OVERRIDES.get(
-                    identifier, region_for(latitude, longitude)
-                ),
+                "region": AIRPORT_REGION_OVERRIDES.get(identifier, region_for(latitude, longitude)),
                 "strategic_categories": ["Physical infrastructure and logistics"],
                 "platform_domains": ["Unmanned aircraft systems"],
                 "capabilities": ["Operations, maintenance, and sustainment"],
@@ -2053,30 +2556,32 @@ def defense_records():
     for name, place, region in DEFENSE_INSTALLATIONS:
         latitude, longitude = PLACES[place]
         records.append(
-            {
-                "name": name,
-                "record_type": "organization",
-                "short_description": (
-                    f"{name}, a publicly documented military or federal installation in {place}."
-                ),
-                "unmanned_systems_relevance": (
-                    f"{name} is included as documented federal or defense ecosystem presence in "
-                    f"{place}. Its map point is generalized and omits operational detail."
-                ),
-                "city": place,
-                "state": "VA",
-                "latitude": latitude,
-                "longitude": longitude,
-                "location_precision": "locality",
-                "region": region,
-                "strategic_categories": ["Federal and defense customer access"],
-                "platform_domains": ["Cross-domain autonomy"],
-                "capabilities": ["Systems engineering and integration"],
-                "missions": ["Force protection and installation security"],
-                "website_url": FACTBOOK,
-                "sources": [factbook_source],
-                "provenance": "virginia-military-factbook",
-            }
+            apply_location_override(
+                {
+                    "name": name,
+                    "record_type": "organization",
+                    "short_description": (
+                        f"{name}, a publicly documented military or federal installation in {place}."
+                    ),
+                    "unmanned_systems_relevance": (
+                        f"{name} is included as documented federal or defense ecosystem presence in "
+                        f"{place}. Its map point is generalized and omits operational detail."
+                    ),
+                    "city": place,
+                    "state": "VA",
+                    "latitude": latitude,
+                    "longitude": longitude,
+                    "location_precision": "locality",
+                    "region": region,
+                    "strategic_categories": ["Federal and defense customer access"],
+                    "platform_domains": ["Cross-domain autonomy"],
+                    "capabilities": ["Systems engineering and integration"],
+                    "missions": ["Force protection and installation security"],
+                    "website_url": FACTBOOK,
+                    "sources": [factbook_source],
+                    "provenance": "virginia-military-factbook",
+                }
+            )
         )
     return records
 
@@ -2087,31 +2592,36 @@ def university_records():
         latitude, longitude = PLACES[place]
         record_source = source(source_key)
         records.append(
-            {
-                "name": name,
-                "record_type": "university",
-                "short_description": description,
-                "unmanned_systems_relevance": (
-                    f"{name} is mapped at the institution level to connect its source-backed "
-                    "unmanned-systems research, education, operations, facilities, and programs."
-                ),
-                "city": place,
-                "state": "VA",
-                "latitude": latitude,
-                "longitude": longitude,
-                "location_precision": "locality",
-                "region": region,
-                "strategic_categories": ["Research and technical depth", "Workforce and talent"],
-                "platform_domains": ["Cross-domain autonomy"],
-                "capabilities": [
-                    "Autonomy and artificial intelligence",
-                    "Systems engineering and integration",
-                ],
-                "missions": ["Training and experimentation"],
-                "website_url": record_source["url"],
-                "sources": [record_source],
-                "provenance": "university-institution",
-            }
+            apply_location_override(
+                {
+                    "name": name,
+                    "record_type": "university",
+                    "short_description": description,
+                    "unmanned_systems_relevance": (
+                        f"{name} is mapped at the institution level to connect its source-backed "
+                        "unmanned-systems research, education, operations, facilities, and programs."
+                    ),
+                    "city": place,
+                    "state": "VA",
+                    "latitude": latitude,
+                    "longitude": longitude,
+                    "location_precision": "locality",
+                    "region": region,
+                    "strategic_categories": [
+                        "Research and technical depth",
+                        "Workforce and talent",
+                    ],
+                    "platform_domains": ["Cross-domain autonomy"],
+                    "capabilities": [
+                        "Autonomy and artificial intelligence",
+                        "Systems engineering and integration",
+                    ],
+                    "missions": ["Training and experimentation"],
+                    "website_url": record_source["url"],
+                    "sources": [record_source],
+                    "provenance": "university-institution",
+                }
+            )
         )
     return records
 
@@ -2131,25 +2641,27 @@ def curated_records():
         profile = PROFILES[profile_key]
         record_source = source(source_key)
         records.append(
-            {
-                "name": name,
-                "record_type": record_type,
-                "short_description": description,
-                "unmanned_systems_relevance": profile["relevance"],
-                "city": place,
-                "state": "VA",
-                "latitude": latitude,
-                "longitude": longitude,
-                "location_precision": "locality",
-                "region": region,
-                "strategic_categories": profile["categories"],
-                "platform_domains": profile["domains"],
-                "capabilities": profile["capabilities"],
-                "missions": profile["missions"],
-                "website_url": record_source["url"],
-                "sources": [record_source],
-                "provenance": "curated-public-source",
-            }
+            apply_location_override(
+                {
+                    "name": name,
+                    "record_type": record_type,
+                    "short_description": description,
+                    "unmanned_systems_relevance": profile["relevance"],
+                    "city": place,
+                    "state": "VA",
+                    "latitude": latitude,
+                    "longitude": longitude,
+                    "location_precision": "locality",
+                    "region": region,
+                    "strategic_categories": profile["categories"],
+                    "platform_domains": profile["domains"],
+                    "capabilities": profile["capabilities"],
+                    "missions": profile["missions"],
+                    "website_url": record_source["url"],
+                    "sources": [record_source],
+                    "provenance": "curated-public-source",
+                }
+            )
         )
     return records
 
@@ -2162,13 +2674,24 @@ def validate(records, relationships):
         names.add(record["name"])
         if not record["sources"] or not all(item.get("url") for item in record["sources"]):
             raise ValueError(f"Missing source URL: {record['name']}")
-        if not (-90 <= record["latitude"] <= 90 and -180 <= record["longitude"] <= 180):
+        latitude = record["latitude"]
+        longitude = record["longitude"]
+        if (latitude is None) != (longitude is None):
+            raise ValueError(f"Incomplete coordinates: {record['name']}")
+        if latitude is not None and not (-90 <= latitude <= 90 and -180 <= longitude <= 180):
             raise ValueError(f"Invalid coordinates: {record['name']}")
+        if record["location_precision"] in {"exact", "site"} and not record.get("address_line"):
+            if record["provenance"] != "faa-public-airport":
+                raise ValueError(f"Specific location is missing an address: {record['name']}")
+        if record["location_precision"] == "regional" and latitude is not None:
+            raise ValueError(f"Regional record must not expose a point: {record['name']}")
         if len(record["short_description"]) > 320:
             raise ValueError(f"Description too long: {record['name']}")
 
     relationship_assets = {
-        asset_name for relationship in relationships for asset_name in (relationship[0], relationship[2])
+        asset_name
+        for relationship in relationships
+        for asset_name in (relationship[0], relationship[2])
     }
     unknown_assets = relationship_assets - names
     if unknown_assets:
@@ -2191,7 +2714,10 @@ def main():
         "methodology": (
             "Current operational public-use aviation facilities from the FAA feature service, "
             "publicly listed installations from the Virginia Military Factbook, and a curated "
-            "set of source-backed ecosystem records."
+            "set of source-backed ecosystem records. Hampton Roads street and site locations "
+            "are anchored to official public address sources and geocoded against the U.S. "
+            "Census address ranges; named-site centroids are used when no public street point "
+            "is available."
         ),
         "relationships": [
             {"from": from_name, "type": relationship_type, "to": to_name}

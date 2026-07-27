@@ -66,35 +66,32 @@ class Command(BaseCommand):
 
         created = 0
         updated = 0
-        catalog_keys = {(record["name"], record["city"]) for record in records}
+        catalog_names = {record["name"] for record in records}
         for record in records:
             region, _ = Region.objects.get_or_create(
                 name=record["region"], defaults={"region_type": "Virginia ecosystem region"}
             )
-            asset, was_created = Asset.objects.get_or_create(
-                name=record["name"],
-                city=record["city"],
-                defaults={
-                    "record_type": record["record_type"],
-                    "short_description": record["short_description"],
-                    "unmanned_systems_relevance": record["unmanned_systems_relevance"],
-                    "latitude": record["latitude"],
-                    "longitude": record["longitude"],
-                    "location_precision": record["location_precision"],
-                    "region": region,
-                    "status": Asset.Status.SOURCE_BACKED,
-                    "visibility": Asset.Visibility.PUBLIC,
-                },
-            )
+            asset = Asset.objects.filter(name=record["name"]).first()
+            was_created = asset is None
+            if was_created:
+                asset = Asset(
+                    name=record["name"],
+                    record_type=record["record_type"],
+                    status=Asset.Status.SOURCE_BACKED,
+                    visibility=Asset.Visibility.PUBLIC,
+                )
             for field in (
                 "record_type",
                 "short_description",
                 "unmanned_systems_relevance",
+                "address_line",
+                "city",
+                "postal_code",
                 "latitude",
                 "longitude",
                 "location_precision",
             ):
-                setattr(asset, field, record[field])
+                setattr(asset, field, record.get(field, ""))
             asset.website_url = record.get("website_url", "")
             asset.state = record.get("state", "VA")
             asset.region = region
@@ -149,7 +146,7 @@ class Command(BaseCommand):
             stale_ids = [
                 asset.pk
                 for asset in Asset.objects.filter(internal_notes__startswith="Catalog provenance:")
-                if (asset.name, asset.city) not in catalog_keys
+                if asset.name not in catalog_names
             ]
             if stale_ids:
                 pruned, _details = Asset.objects.filter(pk__in=stale_ids).delete()

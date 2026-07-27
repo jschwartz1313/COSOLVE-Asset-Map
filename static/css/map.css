@@ -46,6 +46,8 @@
 .map-popup .type-pill { display: inline-block; }
 .map-popup h3 { margin: 9px 0 6px; font-size: 15px; }
 .map-popup p { color: var(--ink-muted); font-size: 12px; line-height: 1.4; }
+.map-popup .popup-location { margin: 0 0 3px; color: var(--ink); font-size: 11px; }
+.map-popup .popup-precision { display: block; color: var(--ink-muted); font-size: 10px; }
 .map-popup a { color: var(--brand-dark); font-size: 12px; font-weight: 750; }
 .asset-marker { stroke: white; stroke-width: 3; }
 .leaflet-control-zoom a { color: var(--ink); }

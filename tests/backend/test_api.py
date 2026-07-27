@@ -23,8 +23,11 @@ class PublicApiTests(TestCase):
             short_description="A representative public range.",
             unmanned_systems_relevance="Supports maritime test activity.",
             city="Norfolk",
+            address_line="100 Range Road",
+            postal_code="23510",
             latitude=36.850000,
             longitude=-76.280000,
+            location_precision=Asset.LocationPrecision.SITE,
             region=cls.region,
             status=Asset.Status.SOURCE_BACKED,
             visibility=Asset.Visibility.PUBLIC,
@@ -76,6 +79,14 @@ class PublicApiTests(TestCase):
             if feature["properties"]["name"] == self.public.name
         )
         self.assertEqual(public_feature["geometry"]["type"], "Point")
+        self.assertEqual(
+            public_feature["properties"]["location"]["address_line"],
+            "100 Range Road",
+        )
+        self.assertEqual(
+            public_feature["properties"]["location"]["precision_label"],
+            "Site or campus",
+        )
         self.assertFalse(body["truncated"])
         self.assertEqual(body["returned_count"], 2)
 
@@ -217,9 +228,9 @@ class ScopedPublicApiTests(TestCase):
         )
 
     def test_detail_relationships_exclude_out_of_scope_assets(self):
-        related = self.client.get(
-            reverse("api:asset-detail", args=[self.center.slug])
-        ).json()["related_entities"]
+        related = self.client.get(reverse("api:asset-detail", args=[self.center.slug])).json()[
+            "related_entities"
+        ]
         names = [item["name"] for item in related]
         self.assertIn(self.regional_partner.name, names)
         self.assertNotIn(self.outside.name, names)

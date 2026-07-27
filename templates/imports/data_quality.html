@@ -13,6 +13,7 @@
     <div><strong>{{ stale_count }}</strong><span>stale or unverified</span></div>
     <div><strong>{{ missing_sources_count }}</strong><span>missing public sources</span></div>
     <div><strong>{{ missing_coordinates_count }}</strong><span>missing coordinates</span></div>
+    <div><strong>{{ generalized_locations_count }}</strong><span>generalized locations</span></div>
     <div><strong>{{ needs_review_count }}</strong><span>editorial review pending</span></div>
     <div><strong>{{ source_issues_count }}</strong><span>source issues</span></div>
     <div><strong>{{ broken_sources_count }}</strong><span>link checks needing attention</span></div>
@@ -26,21 +27,22 @@
     <section>
       <h2>Coverage by region</h2>
       <div class="quality-table-wrap"><table class="coverage-table">
-        <thead><tr><th>Region</th><th>Assets</th><th>Reviewed</th><th>Verified source</th><th>Located</th></tr></thead>
+        <thead><tr><th>Region</th><th>Assets</th><th>Reviewed</th><th>Verified source</th><th>Site-level</th></tr></thead>
         <tbody>{% for row in region_coverage %}<tr><th>{{ row.region__name|default:"Unassigned" }}</th><td>{{ row.total }}</td><td>{{ row.review_rate }}%</td><td>{{ row.source_rate }}%</td><td>{{ row.location_rate }}%</td></tr>{% endfor %}</tbody>
       </table></div>
     </section>
     <section>
       <h2>Coverage by asset type</h2>
       <div class="quality-table-wrap"><table class="coverage-table">
-        <thead><tr><th>Type</th><th>Assets</th><th>Reviewed</th><th>Verified source</th><th>Located</th></tr></thead>
+        <thead><tr><th>Type</th><th>Assets</th><th>Reviewed</th><th>Verified source</th><th>Site-level</th></tr></thead>
         <tbody>{% for row in type_coverage %}<tr><th>{{ row.label }}</th><td>{{ row.total }}</td><td>{{ row.review_rate }}%</td><td>{{ row.source_rate }}%</td><td>{{ row.location_rate }}%</td></tr>{% endfor %}</tbody>
       </table></div>
     </section>
   </div>
   <details class="quality-section"><summary><span>Stale or unverified assets</span><strong>{{ stale_count }}</strong></summary>{% include "imports/quality_table.html" with assets=stale empty_message="No stale records." %}</details>
   <details class="quality-section"><summary><span>Missing public sources</span><strong>{{ missing_sources_count }}</strong></summary>{% include "imports/quality_table.html" with assets=missing_sources empty_message="Every active record has a public source." %}</details>
-  <details class="quality-section"><summary><span>Missing coordinates</span><strong>{{ missing_coordinates_count }}</strong></summary>{% include "imports/quality_table.html" with assets=missing_coordinates empty_message="Every active record has coordinates." %}</details>
+  <details class="quality-section"><summary><span>Missing coordinates</span><strong>{{ missing_coordinates_count }}</strong></summary>{% include "imports/quality_table.html" with assets=missing_coordinates empty_message="Every active record that represents a single site has coordinates." %}</details>
+  <details class="quality-section" {% if generalized_locations_count %}open{% endif %}><summary><span>Generalized locations needing research</span><strong>{{ generalized_locations_count }}</strong></summary>{% include "imports/quality_table.html" with assets=generalized_locations empty_message="Every point is tied to an exact or documented site-level location." %}</details>
   <details class="quality-section"><summary><span>Editorial review pending</span><strong>{{ needs_review_count }}</strong></summary>{% include "imports/quality_table.html" with assets=needs_review empty_message="Every record has completed editorial review." %}</details>
   <details class="quality-section"><summary><span>Repeated relevance copy</span><strong>{{ repeated_copy_count }}</strong></summary>{% include "imports/quality_table.html" with assets=repeated_copy empty_message="No repeated relevance statements." %}</details>
   <details class="quality-section"><summary><span>Incomplete taxonomy</span><strong>{{ missing_taxonomy_count }}</strong></summary>{% include "imports/quality_table.html" with assets=missing_taxonomy empty_message="Every active record has core taxonomy." %}</details>
