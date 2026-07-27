@@ -1,6 +1,6 @@
 from datetime import date
 
-from django.test import TestCase
+from django.test import TestCase, override_settings
 from django.urls import reverse
 
 from apps.assets.models import Asset, Relationship
@@ -144,3 +144,86 @@ class PublicApiTests(TestCase):
     def test_internal_detail_is_not_found(self):
         response = self.client.get(reverse("api:asset-detail", args=[self.internal.slug]))
         self.assertEqual(response.status_code, 404)
+
+
+@override_settings(PUBLIC_REGION_SLUG="hampton-roads", PUBLIC_SCOPE_NAME="Hampton Roads")
+class ScopedPublicApiTests(TestCase):
+    @classmethod
+    def setUpTestData(cls):
+        cls.hampton_roads = Region.objects.create(name="Hampton Roads")
+        cls.greater_richmond = Region.objects.create(name="Greater Richmond")
+        cls.center = Asset.objects.create(
+            name="Scoped Center",
+            record_type=Asset.RecordType.ORGANIZATION,
+            short_description="A scoped public center.",
+            unmanned_systems_relevance="Supports autonomous systems.",
+            region=cls.hampton_roads,
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        )
+        cls.regional_partner = Asset.objects.create(
+            name="Scoped Regional Partner",
+            record_type=Asset.RecordType.UNIVERSITY,
+            short_description="A scoped public partner.",
+            unmanned_systems_relevance="Supports autonomous systems.",
+            region=cls.hampton_roads,
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        )
+        cls.outside = Asset.objects.create(
+            name="Outside Regional Partner",
+            record_type=Asset.RecordType.ORGANIZATION,
+            short_description="An out-of-scope public partner.",
+            unmanned_systems_relevance="Supports autonomous systems.",
+            region=cls.greater_richmond,
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        )
+        Relationship.objects.create(
+            from_asset=cls.regional_partner,
+            to_asset=cls.center,
+            relationship_type=Relationship.RelationshipType.SUPPORTS,
+        )
+        Relationship.objects.create(
+            from_asset=cls.center,
+            to_asset=cls.outside,
+            relationship_type=Relationship.RelationshipType.PARTNERS_WITH,
+        )
+
+    def test_region_query_cannot_override_deployment_scope(self):
+        response = self.client.get(
+            reverse("api:asset-geojson"),
+            {"region": self.greater_richmond.slug},
+        )
+
+        body = response.json()
+        self.assertEqual(body["result_count"], 2)
+        self.assertNotIn("region", body["active_filters"])
+        self.assertNotIn(
+            self.outside.name,
+            [feature["properties"]["name"] for feature in body["features"]],
+        )
+
+    def test_out_of_scope_detail_and_region_summary_are_not_found(self):
+        self.assertEqual(
+            self.client.get(reverse("api:asset-detail", args=[self.outside.slug])).status_code,
+            404,
+        )
+        self.assertEqual(
+            self.client.get(
+                reverse("api:region-summary", args=[self.greater_richmond.slug])
+            ).status_code,
+            404,
+        )
+
+    def test_detail_relationships_exclude_out_of_scope_assets(self):
+        related = self.client.get(
+            reverse("api:asset-detail", args=[self.center.slug])
+        ).json()["related_entities"]
+        names = [item["name"] for item in related]
+        self.assertIn(self.regional_partner.name, names)
+        self.assertNotIn(self.outside.name, names)
+
+    def test_filter_metadata_only_advertises_active_region(self):
+        regions = self.client.get(reverse("api:filter-values")).json()["regions"]
+        self.assertEqual(regions, [{"name": "Hampton Roads", "slug": "hampton-roads"}])

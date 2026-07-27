@@ -211,6 +211,74 @@ class CoreViewTests(TestCase):
         self.assertContains(response, "Page not found", status_code=404)
 
 
+@override_settings(PUBLIC_REGION_SLUG="hampton-roads", PUBLIC_SCOPE_NAME="Hampton Roads")
+class ScopedPublicSiteTests(TestCase):
+    def setUp(self):
+        self.hampton_roads = Region.objects.create(name="Hampton Roads")
+        self.greater_richmond = Region.objects.create(name="Greater Richmond")
+        self.regional = Asset.objects.create(
+            name="Public Hampton Roads Asset",
+            record_type=Asset.RecordType.ORGANIZATION,
+            short_description="A Hampton Roads public listing.",
+            unmanned_systems_relevance="Supports autonomous systems.",
+            region=self.hampton_roads,
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        )
+        self.outside = Asset.objects.create(
+            name="Private Statewide Working Asset",
+            record_type=Asset.RecordType.FACILITY,
+            short_description="A statewide working listing.",
+            unmanned_systems_relevance="Supports autonomous systems.",
+            region=self.greater_richmond,
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        )
+
+    def test_public_map_and_directory_are_region_scoped(self):
+        map_response = self.client.get(reverse("core:map"))
+        self.assertEqual(map_response.context["total_assets"], 1)
+        self.assertContains(map_response, "Hampton Roads ecosystem")
+        self.assertContains(map_response, "Hampton Roads Asset Map")
+        self.assertNotContains(map_response, 'data-region-quick-filter="hampton-roads"')
+        self.assertNotContains(map_response, 'name="region"')
+        self.assertNotContains(map_response, ">Regions</a>")
+
+        directory_response = self.client.get(
+            reverse("core:directory"), {"region": self.greater_richmond.slug}
+        )
+        self.assertContains(directory_response, self.regional.name)
+        self.assertNotContains(directory_response, self.outside.name)
+        self.assertEqual(directory_response.context["result_count"], 1)
+
+    def test_out_of_scope_public_pages_are_not_found(self):
+        self.assertEqual(
+            self.client.get(
+                reverse("core:asset-detail", args=[self.outside.slug])
+            ).status_code,
+            404,
+        )
+        self.assertEqual(self.client.get(reverse("core:region-compare")).status_code, 404)
+
+    def test_about_page_describes_regional_release(self):
+        response = self.client.get(reverse("core:about-data"))
+        self.assertContains(response, "Hampton Roads unmanned-systems ecosystem")
+        self.assertContains(response, "<dd>Hampton Roads</dd>", html=True)
+        self.assertContains(response, "<span>covered region</span>", html=True)
+
+    def test_staff_admin_retains_statewide_working_records(self):
+        user = get_user_model().objects.create_superuser(
+            "regional-admin", "admin@example.org", "test-password"
+        )
+        self.client.force_login(user)
+        response = self.client.get(reverse("admin:assets_asset_changelist"))
+
+        self.assertContains(response, self.regional.name)
+        self.assertContains(response, self.outside.name)
+        self.assertEqual(Asset.objects.count(), 2)
+        self.assertEqual(Asset.public.count(), 1)
+
+
 @override_settings(REQUIRE_SITE_LOGIN=True)
 class PrivateSiteTests(TestCase):
     def test_anonymous_users_are_redirected_to_login(self):

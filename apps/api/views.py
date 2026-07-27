@@ -1,4 +1,5 @@
-from django.http import JsonResponse
+from django.conf import settings
+from django.http import Http404, JsonResponse
 from django.shortcuts import get_object_or_404
 from django.views.decorators.http import require_GET
 
@@ -10,7 +11,10 @@ from .serializers import asset_feature, public_asset_dict
 
 
 def taxonomy_values(model):
-    return list(model.objects.filter(is_active=True).values("name", "slug"))
+    queryset = model.objects.filter(is_active=True)
+    if model is Region and settings.PUBLIC_REGION_SLUG:
+        queryset = queryset.filter(slug=settings.PUBLIC_REGION_SLUG)
+    return list(queryset.values("name", "slug"))
 
 
 def requested_limit(request, default, maximum):
@@ -84,6 +88,8 @@ def filter_values(request):
 
 @require_GET
 def region_summary(request, slug):
+    if settings.PUBLIC_REGION_SLUG and slug != settings.PUBLIC_REGION_SLUG:
+        raise Http404
     region = get_object_or_404(Region, slug=slug, is_active=True)
     params = request.GET.copy()
     params.pop("region", None)

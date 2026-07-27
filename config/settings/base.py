@@ -107,6 +107,10 @@ DEFAULT_MAP_ZOOM = int(os.getenv("DEFAULT_MAP_ZOOM", "7"))
 PUBLIC_SITE_URL = os.getenv("PUBLIC_SITE_URL", "http://127.0.0.1:8000")
 STALE_VERIFICATION_DAYS = int(os.getenv("STALE_VERIFICATION_DAYS", "180"))
 REQUIRE_SITE_LOGIN = os.getenv("REQUIRE_SITE_LOGIN", "false").lower() == "true"
+PUBLIC_REGION_SLUG = os.getenv("PUBLIC_REGION_SLUG", "").strip()
+PUBLIC_SCOPE_NAME = os.getenv("PUBLIC_SCOPE_NAME", "").strip() or (
+    PUBLIC_REGION_SLUG.replace("-", " ").title() if PUBLIC_REGION_SLUG else "Virginia"
+)
 LOGIN_URL = "/accounts/login/"
 LOGIN_REDIRECT_URL = "/map/"
 LOGOUT_REDIRECT_URL = "/accounts/login/"

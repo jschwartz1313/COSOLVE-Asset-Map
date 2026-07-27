@@ -24,7 +24,17 @@ services:
           name: cosolve-asset-map-production-db
           property: connectionString
       - key: REQUIRE_SITE_LOGIN
-        value: "true"
+        value: "false"
+      - key: PUBLIC_REGION_SLUG
+        value: hampton-roads
+      - key: PUBLIC_SCOPE_NAME
+        value: Hampton Roads
+      - key: DEFAULT_MAP_LAT
+        value: "36.95"
+      - key: DEFAULT_MAP_LON
+        value: "-76.35"
+      - key: DEFAULT_MAP_ZOOM
+        value: "9"
       - key: BASEMAP_TILE_URL
         sync: false
       - key: BASEMAP_ATTRIBUTION

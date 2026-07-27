@@ -6,7 +6,24 @@ The checked-in `render.yaml` and `build.sh` define a free Render evaluation envi
 
 The Blueprint uses Render's free service and database plans for evaluation. The free PostgreSQL database expires after 30 days and has no backups. Upgrade or replace the database before coworkers perform work that must be retained; the repository intentionally does not select a paid plan automatically.
 
-For durable use, create the Blueprint from `render.production.yaml`. It selects a paid web service and non-expiring database, prompts for a production basemap and SMTP configuration, and adds a daily source-monitor cron job. Render cron jobs are billed separately with a minimum monthly charge. Add a scheduled database export or other tested backup before making the hosted database the system of record.
+For durable use, create the Blueprint from `render.production.yaml`. It selects a paid web service and non-expiring database, prompts for a production basemap and SMTP configuration, and adds a daily source-monitor cron job. The production viewer is public, but staff and administrative routes remain authenticated. Render cron jobs are billed separately with a minimum monthly charge. Add a scheduled database export or other tested backup before making the hosted database the system of record.
+
+## Hampton Roads release boundary
+
+Both Blueprints initially set `PUBLIC_REGION_SLUG=hampton-roads` and `PUBLIC_SCOPE_NAME=Hampton Roads`. This is a server-side publication boundary, not a default filter. Public map, directory, detail, relationship, export, and API queries cannot return records assigned to another region. Statewide records remain in the same database and remain available through authenticated staff administration, imports, complete working exports, history, and data-quality workflows.
+
+The regional deployment also hides the statewide coverage selector and regional comparison page. Attempts to open an out-of-scope asset or region summary return `404`.
+
+For the February statewide release:
+
+1. Back up the production database.
+2. Complete the statewide data and publication review.
+3. Remove `PUBLIC_REGION_SLUG`.
+4. Set `PUBLIC_SCOPE_NAME=Virginia`.
+5. Set `DEFAULT_MAP_LAT=37.5`, `DEFAULT_MAP_LON=-78.7`, and `DEFAULT_MAP_ZOOM=7`.
+6. Deploy and run the public API and browser smoke tests before announcing the release.
+
+Setting `PUBLIC_REGION_SLUG` to another active region creates a different regional release without copying the application or database. A separate database is needed only when contractual or confidentiality requirements prohibit storing statewide working records in the same environment.
 
 The build initializes the source-backed catalog only if the asset table is empty, creates baseline history for existing rows, and leaves later revisions intact. Normal redeployments therefore preserve every staff edit. To intentionally refresh records from the checked-in catalog, back up the database, review the catalog diff, and run `python manage.py seed_real_data --prune` manually.
 

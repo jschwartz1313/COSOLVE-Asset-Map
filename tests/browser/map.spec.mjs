@@ -43,6 +43,9 @@ test("empty filters preserve the complete map result set", async ({ page }) => {
 test("Hampton Roads coverage filter applies across map and directory", async ({ page }) => {
   await page.goto("/map/");
   const statewideCount = Number(await page.locator("#result-count").textContent());
+  if (await page.locator(".filter-open").isVisible()) {
+    await page.locator(".filter-open").click();
+  }
   const hamptonRoadsFilter = page.locator('[data-region-quick-filter="hampton-roads"]');
   await expect(hamptonRoadsFilter).toBeVisible();
   await hamptonRoadsFilter.click();

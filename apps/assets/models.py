@@ -13,14 +13,17 @@ from simple_history.models import HistoricalRecords
 
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 
+from .scoping import apply_public_scope
+
 
 class PublicAssetManager(models.Manager):
     def get_queryset(self):
-        return (
+        queryset = (
             super()
             .get_queryset()
             .filter(status__in=Asset.public_status_values(), visibility=Asset.Visibility.PUBLIC)
         )
+        return apply_public_scope(queryset)
 
 
 class Asset(models.Model):

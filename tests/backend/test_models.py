@@ -1,10 +1,11 @@
 from decimal import Decimal
 
 from django.core.exceptions import ValidationError
-from django.test import TestCase
+from django.test import TestCase, override_settings
 from django.utils import timezone
 
 from apps.assets.models import Asset, Relationship
+from apps.catalog.models import Region
 
 
 class AssetModelTests(TestCase):
@@ -39,6 +40,27 @@ class AssetModelTests(TestCase):
         self.make_asset(name="Draft").save()
         self.make_asset(name="Internal", visibility=Asset.Visibility.INTERNAL).save()
         self.assertQuerySetEqual(Asset.public.all(), [public])
+
+    @override_settings(PUBLIC_REGION_SLUG="hampton-roads")
+    def test_public_manager_enforces_deployment_region(self):
+        hampton_roads = Region.objects.create(name="Hampton Roads")
+        greater_richmond = Region.objects.create(name="Greater Richmond")
+        regional = self.make_asset(
+            name="Regional Public",
+            region=hampton_roads,
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        )
+        regional.save()
+        self.make_asset(
+            name="Out of Scope Public",
+            region=greater_richmond,
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        ).save()
+
+        self.assertQuerySetEqual(Asset.public.all(), [regional])
+        self.assertEqual(Asset.objects.count(), 2)
 
     def test_source_backed_record_is_not_labeled_editorially_reviewed(self):
         asset = self.make_asset(

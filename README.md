@@ -13,6 +13,7 @@ The checked-in catalog contains source-backed, publicly documented Virginia reco
 - Field-level revision history and staff rollback for assets, sources, and relationships
 - Staff administration with guarded bulk publish and archive actions
 - Public-safe JSON and GeoJSON APIs with server-side filtering
+- Deployment-level regional scoping that can publish Hampton Roads while retaining statewide staff data
 - Synchronized Leaflet map and result directory with URL-backed state
 - Accessible non-map directory and public asset profiles
 - Round-trip CSV review workflow with complete editable fields and multiple sources
@@ -48,9 +49,13 @@ The role command creates cumulative `COSOLVE Viewer`, `COSOLVE Reviewer`, `COSOL
 
 SQLite is the no-setup local default. Set `DATABASE_URL` to a PostgreSQL URL to use PostgreSQL. The current MVP stores WGS84 latitude and longitude in portable decimal columns; Phase 4 introduces PostGIS geometry and spatial indexes.
 
-For Render, the repository includes a Blueprint and build script that provision PostgreSQL, apply migrations, collect static files, configure staff roles, and initialize the source-backed catalog only when the database is empty. Later deployments preserve changes made by staff. The Blueprint enables private site access and prompts for the initial administrator username, email, and password. Production startup fails if its database, host, secret key, or initial administrator settings are missing.
+For Render, the repository includes a Blueprint and build script that provision PostgreSQL, apply migrations, collect static files, configure staff roles, and initialize the source-backed catalog only when the database is empty. Later deployments preserve changes made by staff. The Blueprint prompts for the initial administrator username, email, and password. Production startup fails if its database, host, secret key, or initial administrator settings are missing.
 
-The default `render.yaml` is an evaluation environment. Its free PostgreSQL database expires after 30 days and has no backups. Use `render.production.yaml` for durable coworker use; it selects paid web and database services and adds a daily source-monitoring job. Cron jobs on Render have a minimum monthly charge. Configure database exports or another backup destination before treating the hosted database as the system of record.
+Both Render Blueprints are initially configured as Hampton Roads releases. Public pages and APIs expose only Hampton Roads records, while authenticated staff administration continues to include the complete statewide working catalog. The evaluation Blueprint remains login-protected. The production Blueprint makes the public viewer available without a site-wide login while keeping `/admin/` protected.
+
+The default `render.yaml` is an evaluation environment. Its free PostgreSQL database expires after 30 days and has no backups. Use `render.production.yaml` for the public Hampton Roads launch and durable coworker use; it selects paid web and database services and adds a daily source-monitoring job. Cron jobs on Render have a minimum monthly charge. Configure database exports or another backup destination before treating the hosted database as the system of record.
+
+`PUBLIC_REGION_SLUG=hampton-roads` enforces the release boundary in server-side queries, public APIs, detail pages, relationships, and navigation. Remove `PUBLIC_REGION_SLUG`, set `PUBLIC_SCOPE_NAME=Virginia`, and restore the statewide map defaults when the statewide viewer is ready for release.
 
 Password recovery requires SMTP settings. Organization sign-in is enabled only when all three OIDC settings are present, and it accepts only active users that an administrator has already created. TOTP and recovery codes are available under **Account security**. In **Users and roles**, the **Send password setup or reset email** action provides the normal invitation workflow.
 

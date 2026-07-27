@@ -26,6 +26,16 @@ services:
           property: connectionString
       - key: REQUIRE_SITE_LOGIN
         value: "true"
+      - key: PUBLIC_REGION_SLUG
+        value: hampton-roads
+      - key: PUBLIC_SCOPE_NAME
+        value: Hampton Roads
+      - key: DEFAULT_MAP_LAT
+        value: "36.95"
+      - key: DEFAULT_MAP_LON
+        value: "-76.35"
+      - key: DEFAULT_MAP_ZOOM
+        value: "9"
       - key: DJANGO_SUPERUSER_USERNAME
         sync: false
       - key: DJANGO_SUPERUSER_EMAIL

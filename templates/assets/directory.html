@@ -1,6 +1,6 @@
 {% extends "base.html" %}
-{% block title %}Directory | COSOLVE{% endblock %}
-{% block meta_description %}Browse and filter COSOLVE's public directory of Virginia unmanned and autonomous systems assets.{% endblock %}
+{% block title %}{{ public_scope_name }} Directory | COSOLVE{% endblock %}
+{% block meta_description %}Browse and filter COSOLVE's public directory of {{ public_scope_name }} unmanned and autonomous systems assets.{% endblock %}
 {% block content %}
 <main id="main-content" class="directory-layout">
   <aside class="directory-filters">
@@ -17,7 +17,7 @@
   </aside>
   <section class="directory-results">
     <div class="directory-heading">
-      <div><span class="eyebrow">Virginia ecosystem</span><h2>{{ result_count }} matching asset{{ result_count|pluralize }}</h2></div>
+      <div><span class="eyebrow">{{ public_scope_eyebrow }}</span><h2>{{ result_count }} matching asset{{ result_count|pluralize }}</h2></div>
       <div class="heading-actions">
         {% if user.is_staff %}<a class="button secondary" href="{% url 'imports:export' %}?{{ request.GET.urlencode }}">Export CSV</a>{% endif %}
         {% if user.is_authenticated %}<a class="button secondary" href="{% url 'core:saved-views' %}?view_type=directory&amp;query={{ request.GET.urlencode|urlencode }}">Save view</a>{% endif %}

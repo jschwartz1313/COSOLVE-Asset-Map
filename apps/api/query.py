@@ -1,6 +1,7 @@
 from django.db.models import Q
 
 from apps.assets.models import Asset
+from apps.assets.scoping import public_region_slug
 
 FACETS = {
     "record_type": "record_type",
@@ -26,6 +27,8 @@ def filter_public_assets(params, include_related=True):
             "strategic_categories", "platform_domains", "capabilities", "missions", "sources"
         )
     for parameter, field in FACETS.items():
+        if parameter == "region" and public_region_slug():
+            continue
         values = requested_values(params, parameter)
         if values:
             queryset = queryset.filter(**{f"{field}__in": values})
@@ -49,7 +52,11 @@ def filter_public_assets(params, include_related=True):
 
 
 def active_filters(params):
-    filters = {key: requested_values(params, key) for key in FACETS}
+    filters = {
+        key: requested_values(params, key)
+        for key in FACETS
+        if key != "region" or not public_region_slug()
+    }
     if params.get("q"):
         filters["q"] = params["q"]
     return {key: value for key, value in filters.items() if value}

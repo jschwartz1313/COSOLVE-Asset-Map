@@ -1,17 +1,19 @@
 from urllib.parse import urlencode
 
+from django.conf import settings
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
 from django.db import connection
 from django.db.models import Count, Max, Q
-from django.http import JsonResponse
+from django.http import Http404, JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.views.decorators.http import require_POST
 
 from apps.api.query import filter_public_assets
 from apps.assets.models import Asset, SavedView
+from apps.assets.scoping import public_scope_q
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 from apps.sources.models import Source
 
@@ -30,13 +32,16 @@ DIRECTORY_ORDERING = {
 
 
 def filter_context():
+    regions = Region.objects.filter(is_active=True)
+    if settings.PUBLIC_REGION_SLUG:
+        regions = regions.filter(slug=settings.PUBLIC_REGION_SLUG)
     return {
         "record_types": Asset.RecordType.choices,
         "categories": StrategicCategory.objects.filter(is_active=True),
         "domains": PlatformDomain.objects.filter(is_active=True),
         "capabilities": Capability.objects.filter(is_active=True),
         "missions": MissionArea.objects.filter(is_active=True),
-        "regions": Region.objects.filter(is_active=True),
+        "regions": regions,
     }
 
 
@@ -66,8 +71,9 @@ def directory_view(request):
 
 
 def asset_detail(request, slug):
+    public_assets = Asset.public.all()
     asset = get_object_or_404(
-        Asset.public.select_related("region").prefetch_related(
+        public_assets.select_related("region").prefetch_related(
             "strategic_categories", "platform_domains", "capabilities", "missions", "sources"
         ),
         slug=slug,
@@ -76,11 +82,13 @@ def asset_detail(request, slug):
         is_public=True,
         to_asset__status__in=Asset.public_status_values(),
         to_asset__visibility=Asset.Visibility.PUBLIC,
+        to_asset__in=public_assets,
     ).select_related("to_asset")
     incoming_relationships = asset.incoming_relationships.filter(
         is_public=True,
         from_asset__status__in=Asset.public_status_values(),
         from_asset__visibility=Asset.Visibility.PUBLIC,
+        from_asset__in=public_assets,
     ).select_related("from_asset")
     related_ids = list(relationships.values_list("to_asset_id", flat=True)) + list(
         incoming_relationships.values_list("from_asset_id", flat=True)
@@ -108,6 +116,8 @@ def asset_detail(request, slug):
 
 
 def relationship_explorer(request):
+    outgoing_scope = public_scope_q("outgoing_relationships__to_asset__")
+    incoming_scope = public_scope_q("incoming_relationships__from_asset__")
     assets = (
         Asset.public.annotate(
             connection_count=Count(
@@ -116,7 +126,8 @@ def relationship_explorer(request):
                     outgoing_relationships__is_public=True,
                     outgoing_relationships__to_asset__status__in=Asset.public_status_values(),
                     outgoing_relationships__to_asset__visibility=Asset.Visibility.PUBLIC,
-                ),
+                )
+                & outgoing_scope,
                 distinct=True,
             )
             + Count(
@@ -125,7 +136,8 @@ def relationship_explorer(request):
                     incoming_relationships__is_public=True,
                     incoming_relationships__from_asset__status__in=Asset.public_status_values(),
                     incoming_relationships__from_asset__visibility=Asset.Visibility.PUBLIC,
-                ),
+                )
+                & incoming_scope,
                 distinct=True,
             )
         )
@@ -136,12 +148,14 @@ def relationship_explorer(request):
     nodes = []
     edges = []
     if center:
+        public_assets = Asset.public.all()
         node_assets = {center.pk: center}
         outgoing = list(
             center.outgoing_relationships.filter(
                 is_public=True,
                 to_asset__status__in=Asset.public_status_values(),
                 to_asset__visibility=Asset.Visibility.PUBLIC,
+                to_asset__in=public_assets,
             ).select_related("to_asset")[:30]
         )
         remaining_slots = 30 - len(outgoing)
@@ -150,6 +164,7 @@ def relationship_explorer(request):
                 is_public=True,
                 from_asset__status__in=Asset.public_status_values(),
                 from_asset__visibility=Asset.Visibility.PUBLIC,
+                from_asset__in=public_assets,
             ).select_related("from_asset")[:remaining_slots]
         )
         for relationship in outgoing:
@@ -264,6 +279,8 @@ def region_metrics(region):
 
 
 def region_compare(request):
+    if settings.PUBLIC_REGION_SLUG:
+        raise Http404
     regions = list(Region.objects.filter(is_active=True))
     if not regions:
         return render(

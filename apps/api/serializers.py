@@ -1,3 +1,6 @@
+from apps.assets.scoping import asset_is_in_public_scope
+
+
 def names(items):
     return [{"name": item.name, "slug": item.slug} for item in items.all()]
 
@@ -14,6 +17,7 @@ def public_relationships(asset):
         if relationship.is_public
         and relationship.to_asset.status in asset.public_status_values()
         and relationship.to_asset.visibility == asset.Visibility.PUBLIC
+        and asset_is_in_public_scope(relationship.to_asset)
     ]
     related.extend(
         {
@@ -26,6 +30,7 @@ def public_relationships(asset):
         if relationship.is_public
         and relationship.from_asset.status in asset.public_status_values()
         and relationship.from_asset.visibility == asset.Visibility.PUBLIC
+        and asset_is_in_public_scope(relationship.from_asset)
     )
     return related
 
