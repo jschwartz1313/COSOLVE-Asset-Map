@@ -20,7 +20,7 @@
       <span class="brand-logo" aria-hidden="true">
         <img src="{% static 'img/cosolve-logo-black.png' %}" alt="">
       </span>
-      <small>{% if public_scope_is_regional %}{{ public_scope_name }} Asset Map{% else %}Unmanned Systems Asset Map{% endif %}</small>
+      <small>{{ public_scope_name }} Asset Map</small>
     </a>
     <nav class="primary-nav" aria-label="Primary navigation">
       <a href="{% url 'core:map' %}" {% if request.resolver_match.url_name == 'map' or request.resolver_match.url_name == 'home' %}aria-current="page"{% endif %}>Map</a>

@@ -9,6 +9,7 @@ from apps.catalog.models import Region
 class CoreViewTests(TestCase):
     def test_map_shell_renders(self):
         response = self.client.get(reverse("core:map"))
+        self.assertContains(response, "Virginia Asset Map")
         self.assertContains(response, "Asset intelligence")
         self.assertContains(response, 'id="map"')
         self.assertContains(response, 'id="county-layer-toggle"')
