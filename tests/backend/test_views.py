@@ -15,7 +15,7 @@ class CoreViewTests(TestCase):
         self.assertContains(response, 'id="county-layer-toggle"')
         self.assertContains(response, 'id="state-boundary-toggle"')
         self.assertContains(response, "data-state-boundary-url=")
-        self.assertContains(response, 'data-region-quick-filter="hampton-roads"')
+        self.assertNotContains(response, 'data-region-quick-filter="hampton-roads"')
 
     def test_health_endpoint(self):
         self.assertEqual(self.client.get(reverse("core:health")).json(), {"status": "ok"})
@@ -24,7 +24,7 @@ class CoreViewTests(TestCase):
         response = self.client.get(reverse("core:directory"), {"q": "test"})
         self.assertContains(response, "Asset directory")
         self.assertContains(response, 'class="directory-list"')
-        self.assertContains(response, 'data-region-quick-filter="hampton-roads"')
+        self.assertNotContains(response, 'data-region-quick-filter="hampton-roads"')
 
     def test_hampton_roads_filter_limits_directory_results(self):
         hampton_roads = Region.objects.create(name="Hampton Roads")
@@ -54,11 +54,11 @@ class CoreViewTests(TestCase):
 
         self.assertContains(response, "Hampton Roads Test Asset")
         self.assertNotContains(response, "Richmond Test Asset")
-        self.assertContains(response, 'aria-current="true">Hampton Roads</a>')
         self.assertContains(response, 'href="/directory/"')
         self.assertContains(
             response,
-            'href="/directory/?region=hampton-roads"',
+            '<option value="hampton-roads" selected>Hampton Roads</option>',
+            html=True,
         )
 
     def test_directory_supports_predictable_sorting(self):

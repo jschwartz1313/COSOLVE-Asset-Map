@@ -4,19 +4,6 @@
   <input type="search" name="q" value="{{ request.GET.q }}" placeholder="Name, capability, city">
 </label>
 
-{% if not public_scope_is_regional %}
-  <fieldset class="coverage-filter">
-    <legend>Coverage</legend>
-    <div class="segmented-control" aria-label="Geographic coverage">
-      <a href="{% filter_url region=None page=None %}"
-         {% if not request.GET.region %}aria-current="true"{% endif %}>All Virginia</a>
-      <a href="{% filter_url region='hampton-roads' page=None %}"
-         data-region-quick-filter="hampton-roads"
-         {% if request.GET.region == "hampton-roads" %}aria-current="true"{% endif %}>Hampton Roads</a>
-    </div>
-  </fieldset>
-{% endif %}
-
 <label>
   <span>Asset type</span>
   <select name="record_type">
