@@ -14,20 +14,16 @@ The Blueprint uses Render's free service and database plans for evaluation. The 
 
 For durable use, create the Blueprint from `render.production.yaml`. It selects a paid web service and non-expiring database, prompts for a production basemap and SMTP configuration, and adds a daily source-monitor cron job. The production viewer is public, but staff and administrative routes remain authenticated. Render cron jobs are billed separately with a minimum monthly charge. Add a scheduled database export or other tested backup before making the hosted database the system of record.
 
-## Hampton Roads release boundary
+## Statewide release scope
 
-Both Blueprints initially set `PUBLIC_REGION_SLUG=hampton-roads` and `PUBLIC_SCOPE_NAME=Hampton Roads`. This is a server-side publication boundary, not a default filter. Public map, directory, detail, relationship, export, and API queries cannot return records assigned to another region. Statewide records remain in the same database and remain available through authenticated staff administration, imports, complete working exports, history, and data-quality workflows.
+Both Blueprints leave `PUBLIC_REGION_SLUG` empty and set `PUBLIC_SCOPE_NAME=Virginia`. Public map, directory, detail, relationship, export, and API queries can therefore return published records across the Commonwealth. The default map center and zoom frame the complete state.
 
-The regional deployment also hides the statewide coverage selector and regional comparison page. Attempts to open an out-of-scope asset or region summary return `404`.
+To create a Hampton Roads-only release:
 
-For the February statewide release:
-
-1. Back up the production database.
-2. Complete the statewide data and publication review.
-3. Remove `PUBLIC_REGION_SLUG`.
-4. Set `PUBLIC_SCOPE_NAME=Virginia`.
-5. Set `DEFAULT_MAP_LAT=37.5`, `DEFAULT_MAP_LON=-78.7`, and `DEFAULT_MAP_ZOOM=7`.
-6. Deploy and run the public API and browser smoke tests before announcing the release.
+1. Set `PUBLIC_REGION_SLUG=hampton-roads`.
+2. Set `PUBLIC_SCOPE_NAME=Hampton Roads`.
+3. Set `DEFAULT_MAP_LAT=36.95`, `DEFAULT_MAP_LON=-76.35`, and `DEFAULT_MAP_ZOOM=9`.
+4. Deploy and run the public API and browser smoke tests.
 
 Setting `PUBLIC_REGION_SLUG` to another active region creates a different regional release without copying the application or database. A separate database is needed only when contractual or confidentiality requirements prohibit storing statewide working records in the same environment.
 

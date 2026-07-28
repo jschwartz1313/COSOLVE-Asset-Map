@@ -27,15 +27,15 @@ services:
       - key: REQUIRE_SITE_LOGIN
         value: "true"
       - key: PUBLIC_REGION_SLUG
-        value: hampton-roads
+        value: ""
       - key: PUBLIC_SCOPE_NAME
-        value: Hampton Roads
+        value: Virginia
       - key: DEFAULT_MAP_LAT
-        value: "36.95"
+        value: "37.5"
       - key: DEFAULT_MAP_LON
-        value: "-76.35"
+        value: "-78.7"
       - key: DEFAULT_MAP_ZOOM
-        value: "9"
+        value: "7"
       - key: DJANGO_SUPERUSER_USERNAME
         sync: false
       - key: DJANGO_SUPERUSER_EMAIL
