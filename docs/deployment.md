@@ -4,6 +4,12 @@ Deploy with Python 3.12+, PostgreSQL, Gunicorn, and a reverse proxy or managed D
 
 The checked-in `render.yaml` and `build.sh` define a free Render evaluation environment. Create a Blueprint from the repository to provision it. The Blueprint keeps the site behind login and prompts for `DJANGO_SUPERUSER_USERNAME`, `DJANGO_SUPERUSER_EMAIL`, and `DJANGO_SUPERUSER_PASSWORD`. These values create the first administrator only; later builds never reset an existing account or password.
 
+If the initial administrator credentials are lost on a free service without shell access,
+set the three administrator variables to the desired recovery credentials, add
+`DJANGO_SUPERUSER_RESET=true`, and choose **Save, rebuild, and deploy**. After confirming
+the recovered account can sign in, remove `DJANGO_SUPERUSER_RESET` and deploy again.
+Never leave the recovery switch enabled during normal operation.
+
 The Blueprint uses Render's free service and database plans for evaluation. The free PostgreSQL database expires after 30 days and has no backups. Upgrade or replace the database before coworkers perform work that must be retained; the repository intentionally does not select a paid plan automatically.
 
 For durable use, create the Blueprint from `render.production.yaml`. It selects a paid web service and non-expiring database, prompts for a production basemap and SMTP configuration, and adds a daily source-monitor cron job. The production viewer is public, but staff and administrative routes remain authenticated. Render cron jobs are billed separately with a minimum monthly charge. Add a scheduled database export or other tested backup before making the hosted database the system of record.

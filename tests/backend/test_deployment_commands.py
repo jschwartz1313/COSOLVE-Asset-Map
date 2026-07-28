@@ -44,6 +44,34 @@ class EnsureAdminUserTests(TestCase):
         self.assertFalse(get_user_model().objects.filter(username="replacement-admin").exists())
         self.assertIn("no account changes", output.getvalue())
 
+    def test_explicit_recovery_renames_and_resets_the_existing_administrator(self):
+        get_user_model().objects.create_superuser(
+            username="forgotten-admin",
+            email="old@example.com",
+            password="forgotten-password",
+        )
+        environment = {
+            "DJANGO_SUPERUSER_USERNAME": "recovered-admin",
+            "DJANGO_SUPERUSER_EMAIL": "new@example.com",
+            "DJANGO_SUPERUSER_PASSWORD": "new-strong-password",
+            "DJANGO_SUPERUSER_RESET": "true",
+        }
+        output = StringIO()
+
+        with patch.dict("os.environ", environment, clear=False):
+            call_command("ensure_admin_user", stdout=output, verbosity=0)
+
+        user = get_user_model().objects.get(username="recovered-admin")
+        self.assertTrue(user.is_active)
+        self.assertTrue(user.is_staff)
+        self.assertTrue(user.is_superuser)
+        self.assertEqual(user.email, "new@example.com")
+        self.assertTrue(user.check_password("new-strong-password"))
+        self.assertFalse(
+            get_user_model().objects.filter(username="forgotten-admin").exists()
+        )
+        self.assertIn("Remove DJANGO_SUPERUSER_RESET", output.getvalue())
+
     def test_missing_initial_credentials_fails_instead_of_deploying_locked_site(self):
         with patch.dict(
             "os.environ",
