@@ -111,9 +111,9 @@ PUBLIC_REGION_SLUG = os.getenv("PUBLIC_REGION_SLUG", "").strip()
 PUBLIC_SCOPE_NAME = os.getenv("PUBLIC_SCOPE_NAME", "").strip() or (
     PUBLIC_REGION_SLUG.replace("-", " ").title() if PUBLIC_REGION_SLUG else "Virginia"
 )
-LOGIN_URL = "/accounts/login/"
+LOGIN_URL = "/login/"
 LOGIN_REDIRECT_URL = "/map/"
-LOGOUT_REDIRECT_URL = "/accounts/login/"
+LOGOUT_REDIRECT_URL = "/login/"
 
 AUTHENTICATION_BACKENDS = (
     "django.contrib.auth.backends.ModelBackend",

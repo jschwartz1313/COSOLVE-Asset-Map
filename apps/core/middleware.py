@@ -5,7 +5,14 @@ from django.shortcuts import redirect
 
 
 class OptionalSiteLoginMiddleware:
-    public_prefixes = ("/accounts/", "/admin/login/", "/static/", "/health/")
+    public_prefixes = (
+        "/login/",
+        "/logout/",
+        "/auth/",
+        "/admin/login/",
+        "/static/",
+        "/health/",
+    )
 
     def __init__(self, get_response):
         self.get_response = get_response

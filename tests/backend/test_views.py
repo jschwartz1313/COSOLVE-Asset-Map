@@ -289,6 +289,16 @@ class PrivateSiteTests(TestCase):
             fetch_redirect_response=False,
         )
 
+    def test_login_redirect_target_is_available(self):
+        response = self.client.get(reverse("core:map"), follow=True)
+
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(
+            response.redirect_chain,
+            [(f"{reverse('login')}?next=%2Fmap%2F", 302)],
+        )
+        self.assertContains(response, "Sign in")
+
     def test_health_check_remains_public(self):
         self.assertEqual(self.client.get(reverse("core:health")).status_code, 200)
 

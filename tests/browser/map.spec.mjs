@@ -132,7 +132,7 @@ test("relationship network renders inside a stable canvas", async ({ page }) => 
 });
 
 test("account recovery is available from the sign-in page", async ({ page }) => {
-  await page.goto("/accounts/login/");
+  await page.goto("/login/");
   await expect(page.getByRole("heading", { name: "Sign in" })).toBeVisible();
   await page.getByRole("link", { name: "Forgot your password?" }).click();
   await expect(page.getByRole("heading", { name: "Reset your password" })).toBeVisible();
