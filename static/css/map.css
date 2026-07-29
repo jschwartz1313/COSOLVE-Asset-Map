@@ -28,6 +28,7 @@
 .legend-content small { padding-top: 6px; color: var(--ink-muted); border-top: 1px solid var(--line); font-size: 9px; line-height: 1.4; }
 .legend-dot { width: 10px; height: 10px; flex: 0 0 10px; border: 2px solid white; border-radius: 50%; box-shadow: 0 0 0 1px var(--line-strong); }
 .legend-line { width: 13px; height: 0; flex: 0 0 13px; border-top: 2px solid #5c686f; box-shadow: 0 -1px 0 white, 0 1px 0 white; }
+.legend-line.county-boundary { border-top-color: #56645d; border-top-style: dashed; box-shadow: none; opacity: 0.85; }
 .legend-region-fill { width: 13px; height: 10px; flex: 0 0 13px; border: 1px solid #3978a8; background: rgb(57 120 168 / 28%); }
 .legend-mpz-fill { width: 13px; height: 10px; flex: 0 0 13px; border: 1px dashed #8a5a12; background: rgb(213 155 53 / 32%); }
 .legend-dot.university { background: #8b3f56; }.legend-dot.organization { background: #2f6f9f; }.legend-dot.facility { background: #147d78; }.legend-dot.program { background: #b48216; }.legend-dot.infrastructure { background: #c63f2b; }.legend-dot.operating-environment { background: #6b5d95; }

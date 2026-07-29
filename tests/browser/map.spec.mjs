@@ -8,6 +8,8 @@ test("map layers toggle without moving the reset control", async ({ page }) => {
   const initialTop = (await reset.boundingBox()).y;
   await page.locator(".map-legend summary").click();
   expect((await reset.boundingBox()).y).toBe(initialTop);
+  await expect(page.locator(".legend-line.county-boundary")).toBeVisible();
+  await expect(page.locator(".legend-content")).toContainText("County boundary");
   await page.locator(".map-legend summary").click();
   await page.locator(".map-layers summary").click();
 

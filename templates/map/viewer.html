@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260729-2">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260729-3">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
@@ -59,6 +59,7 @@
           <span><i class="legend-dot infrastructure"></i>Infrastructure</span>
           <span><i class="legend-dot operating-environment"></i>Operating environment</span>
           <span><i class="legend-line state-boundary"></i>Virginia boundary</span>
+          <span><i class="legend-line county-boundary"></i>County boundary</span>
           <span><i class="legend-region-fill"></i>Ecosystem region</span>
           <span><i class="legend-mpz-fill"></i>Potential MPZ tract</span>
           <small>Regions are COSOLVE working groupings. Potential MPZ tracts are planning candidates based on documented maritime facilities; none are federally designated. Points may represent exact, approximate, or generalized locations.</small>
