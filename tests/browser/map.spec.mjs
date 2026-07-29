@@ -95,6 +95,20 @@ test("print view opens the browser print or PDF workflow", async ({ page }) => {
   await expect(page.locator("html")).toHaveAttribute("data-print-requested", "true");
 });
 
+test("print view preserves asset marker and legend colors", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("/map/?q=Adaptive%20Aerospace%20Group");
+  await expect(page.locator(".asset-marker.organization")).toHaveCount(1);
+  await page.emulateMedia({ media: "print" });
+
+  const marker = page.locator(".asset-marker.organization");
+  const legendDot = page.locator(".legend-dot.organization");
+  await expect(marker).toHaveCSS("background-color", "rgb(47, 111, 159)");
+  await expect(legendDot).toHaveCSS("background-color", "rgb(47, 111, 159)");
+  await expect(marker).toHaveCSS("print-color-adjust", "exact");
+  await expect(legendDot).toHaveCSS("print-color-adjust", "exact");
+});
+
 test("empty filters preserve the complete map result set", async ({ page }) => {
   await page.goto("/map/");
   const count = page.locator("#result-count");

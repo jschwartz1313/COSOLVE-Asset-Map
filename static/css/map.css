@@ -111,6 +111,10 @@
 
 @media print {
   @page { size: landscape; margin: .35in; }
+  #map, #map *, .map-legend, .map-legend *, .print-map-heading {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
   .site-header, .filters-panel, .results-panel, .map-tools, .map-status,
   .leaflet-control-zoom { display: none !important; }
   body, .map-workspace { min-width: 0; background: white; }
