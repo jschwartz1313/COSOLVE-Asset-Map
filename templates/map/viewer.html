@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260729-4">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260729-5">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
@@ -65,12 +65,12 @@
       <details class="map-legend">
         <summary>Legend</summary>
         <div class="legend-content">
-          <span><i class="legend-dot university"></i>University</span>
-          <span><i class="legend-dot organization"></i>Organization</span>
-          <span><i class="legend-dot facility"></i>Facility</span>
-          <span><i class="legend-dot program"></i>Program</span>
-          <span><i class="legend-dot infrastructure"></i>Infrastructure</span>
-          <span><i class="legend-dot operating-environment"></i>Operating environment</span>
+          <span><i class="legend-dot university" aria-hidden="true"><img src="{% static 'img/icons/legend/university.svg' %}" alt=""></i>University</span>
+          <span><i class="legend-dot organization" aria-hidden="true"><img src="{% static 'img/icons/legend/building-2.svg' %}" alt=""></i>Organization</span>
+          <span><i class="legend-dot facility" aria-hidden="true"><img src="{% static 'img/icons/legend/factory.svg' %}" alt=""></i>Facility</span>
+          <span><i class="legend-dot program" aria-hidden="true"><img src="{% static 'img/icons/legend/clipboard-list.svg' %}" alt=""></i>Program</span>
+          <span><i class="legend-dot infrastructure" aria-hidden="true"><img src="{% static 'img/icons/legend/construction.svg' %}" alt=""></i>Infrastructure</span>
+          <span><i class="legend-dot operating-environment" aria-hidden="true"><img src="{% static 'img/icons/legend/radar.svg' %}" alt=""></i>Operating environment</span>
           <span><i class="legend-line state-boundary"></i>Virginia boundary</span>
           <span><i class="legend-line county-boundary"></i>County boundary</span>
           <span><i class="legend-region-fill"></i>Ecosystem region</span>

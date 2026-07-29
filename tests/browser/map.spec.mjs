@@ -10,6 +10,11 @@ test("map layers toggle without moving the reset control", async ({ page }) => {
   expect((await reset.boundingBox()).y).toBe(initialTop);
   await expect(page.locator(".legend-line.county-boundary")).toBeVisible();
   await expect(page.locator(".legend-content")).toContainText("County boundary");
+  await expect(page.locator(".legend-dot img")).toHaveCount(6);
+  await expect(page.locator(".legend-dot.university img")).toHaveAttribute(
+    "src",
+    /university\.svg$/,
+  );
   await page.locator(".map-legend summary").click();
   await page.locator(".map-layers summary").click();
 
