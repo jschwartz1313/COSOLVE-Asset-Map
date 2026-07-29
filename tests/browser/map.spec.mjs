@@ -61,6 +61,35 @@ test("empty filters preserve the complete map result set", async ({ page }) => {
   }
 });
 
+test("text search labels matching map points by name", async ({ page }) => {
+  await page.goto("/map/");
+  if (await page.locator(".filter-open").isVisible()) {
+    await page.locator(".filter-open").click();
+  }
+
+  await page.locator('input[name="q"]').fill("Adaptive Aerospace Group");
+  await page.locator("#asset-filters button[type=submit]").click();
+  const marker = page.locator(".asset-marker");
+  const label = page.locator(".asset-search-label");
+  await expect(page.locator("#result-count")).toHaveText("1");
+  await expect(marker).toHaveCount(1);
+  await expect(label).toHaveText("Adaptive Aerospace Group");
+
+  await expect
+    .poll(async () => {
+      const markerBox = await marker.boundingBox();
+      const labelBox = await label.boundingBox();
+      return labelBox.y + labelBox.height <= markerBox.y + 2;
+    })
+    .toBe(true);
+
+  if (await page.locator(".filter-open").isVisible()) {
+    await page.locator(".filter-open").click();
+  }
+  await page.locator("#asset-filters button[type=reset]").click();
+  await expect(page.locator(".asset-search-label")).toHaveCount(0);
+});
+
 test("region selector applies across map and directory without a special coverage control", async ({
   page,
 }) => {

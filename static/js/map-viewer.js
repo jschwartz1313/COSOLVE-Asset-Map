@@ -1,6 +1,6 @@
 import { fetchAssets } from "./api.js?v=20260727";
 import { bindFilterDrawer, bindFilterIndicators } from "./filters.js?v=20260722-3";
-import { createMap } from "./map.js?v=20260729-1";
+import { createMap } from "./map.js?v=20260729-2";
 import { renderResults, selectResult } from "./results.js?v=20260727-2";
 import { hydrateForm, paramsFromForm, updateUrl } from "./state.js?v=20260717";
 
@@ -79,7 +79,9 @@ async function load(params, { changeUrl = true } = {}) {
       mapController.select(id);
       selectResult(list, id);
     };
-    mapController.draw(data.features, (id) => selectResult(list, id));
+    mapController.draw(data.features, (id) => selectResult(list, id), {
+      showLabels: Boolean(params.get("q")?.trim()),
+    });
     renderResults(list, data.features, selectOnMap);
     count.textContent = String(data.result_count);
     directoryLink.href = params.toString() ? `/directory/?${params}` : "/directory/";

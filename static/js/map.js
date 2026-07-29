@@ -207,7 +207,7 @@ export function createMap(root) {
   layer.addTo(map);
   const markers = new Map();
 
-  function draw(features, onSelect) {
+  function draw(features, onSelect, { showLabels = false } = {}) {
     layer.clearLayers();
     markers.clear();
     const bounds = [];
@@ -223,6 +223,15 @@ export function createMap(root) {
         className: "asset-marker",
       });
       marker.bindPopup(buildPopup(feature));
+      if (showLabels) {
+        marker.bindTooltip(feature.properties.name, {
+          className: "asset-search-label",
+          direction: "top",
+          offset: [0, -7],
+          opacity: 1,
+          permanent: true,
+        });
+      }
       marker.on("click", () => onSelect(feature.id));
       layer.addLayer(marker);
       markers.set(feature.id, marker);
