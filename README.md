@@ -21,6 +21,8 @@ The checked-in catalog contains source-backed, publicly documented Virginia reco
 - Source-backed relationships connecting organizations, facilities, and programs
 - Staff data-quality dashboard for stale, unsourced, unlocated, and unreviewed records
 - Coverage metrics by region and asset type, saved views, and relationship explorer
+- Optional planning layer for potential Maritime Prosperity Zone census tracts, explicitly
+  distinguished from any future federal designations
 - Password recovery, login throttling, optional TOTP MFA, and optional OIDC organization sign-in
 - Public correction and addition submissions routed to an editor-only review queue
 - 232 source-backed Virginia records spanning public-use airports, research, workforce, companies, infrastructure, programs, and generalized defense assets

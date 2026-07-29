@@ -27,6 +27,9 @@ export function createMap(root) {
   map.attributionControl.addAttribution(
     "Ecosystem regions: COSOLVE working analytical groupings",
   );
+  map.attributionControl.addAttribution(
+    "Potential MPZ tracts: U.S. Census Bureau; MARAD, Port of Virginia, U.S. Navy",
+  );
   map.createPane("ecosystem-regions");
   map.getPane("ecosystem-regions").style.zIndex = 340;
   const regionLayer = window.L.geoJSON(null, {
@@ -67,6 +70,78 @@ export function createMap(root) {
   });
   let regionLayerLoaded = false;
   let regionLayerVisible = false;
+  map.createPane("maritime-prosperity-zones");
+  map.getPane("maritime-prosperity-zones").style.zIndex = 345;
+  const mpzLayer = window.L.geoJSON(null, {
+    pane: "maritime-prosperity-zones",
+    style: {
+      color: "#8a5a12",
+      dashArray: "5 3",
+      fillColor: "#d59b35",
+      fillOpacity: 0.32,
+      opacity: 0.95,
+      weight: 2,
+    },
+    onEachFeature(feature, boundary) {
+      const properties = feature.properties;
+      const tooltip = document.createElement("span");
+      tooltip.textContent = `Potential MPZ tract: ${properties.tract_name}`;
+      boundary.bindTooltip(tooltip, { direction: "top", opacity: 0.96, sticky: true });
+
+      const popup = document.createElement("section");
+      popup.className = "mpz-popup";
+      const eyebrow = document.createElement("span");
+      eyebrow.className = "mpz-popup-status";
+      eyebrow.textContent = properties.designation_status;
+      const heading = document.createElement("h3");
+      heading.textContent = `Potential MPZ tract ${properties.tract_name.replace("Census Tract ", "")}`;
+      const basis = document.createElement("p");
+      basis.textContent = properties.candidate_basis;
+      const listHeading = document.createElement("strong");
+      listHeading.textContent = `Documented facilities (${properties.facility_count})`;
+      const list = document.createElement("ul");
+      for (const facility of properties.facilities) {
+        const item = document.createElement("li");
+        item.textContent = `${facility.name} (${facility.type})`;
+        list.append(item);
+      }
+      const sources = document.createElement("p");
+      sources.className = "mpz-popup-sources";
+      sources.append("Basis sources: ");
+      properties.sources.forEach((source, index) => {
+        if (index) sources.append(", ");
+        const link = document.createElement("a");
+        link.href = source.url;
+        link.target = "_blank";
+        link.rel = "noopener";
+        link.textContent = source.label;
+        sources.append(link);
+      });
+      const geoid = document.createElement("small");
+      geoid.textContent = `2020 Census tract GEOID ${properties.geoid}`;
+      popup.append(eyebrow, heading, basis, listHeading, list, sources, geoid);
+      boundary.bindPopup(popup, { maxWidth: 330 });
+      boundary.on({
+        mouseover() {
+          boundary.setStyle({ fillOpacity: 0.44, weight: 2.6 });
+        },
+        mouseout() {
+          mpzLayer.resetStyle(boundary);
+        },
+        add() {
+          const path = boundary.getElement();
+          if (path) {
+            path.setAttribute(
+              "aria-label",
+              `${properties.tract_name}, potential Maritime Prosperity Zone planning candidate`,
+            );
+          }
+        },
+      });
+    },
+  });
+  let mpzLayerLoaded = false;
+  let mpzLayerVisible = false;
   map.createPane("state-boundary-casing");
   map.getPane("state-boundary-casing").style.zIndex = 352;
   map.getPane("state-boundary-casing").style.pointerEvents = "none";
@@ -212,12 +287,32 @@ export function createMap(root) {
     if (regionLayerVisible) regionLayer.addTo(map);
   }
 
+  async function setMpzLayerVisible(visible) {
+    mpzLayerVisible = visible;
+    if (!visible) {
+      mpzLayer.removeFrom(map);
+      return;
+    }
+    if (!mpzLayerLoaded) {
+      const response = await fetch(root.dataset.mpzCandidatesUrl, {
+        headers: { Accept: "application/geo+json, application/json" },
+      });
+      if (!response.ok) {
+        throw new Error(`Potential MPZ tract request failed: ${response.status}`);
+      }
+      mpzLayer.addData(await response.json());
+      mpzLayerLoaded = true;
+    }
+    if (mpzLayerVisible) mpzLayer.addTo(map);
+  }
+
   return {
     map,
     draw,
     reset,
     select,
     setCountyLayerVisible,
+    setMpzLayerVisible,
     setRegionLayerVisible,
     setStateBoundaryVisible,
   };

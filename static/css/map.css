@@ -29,9 +29,19 @@
 .legend-dot { width: 10px; height: 10px; flex: 0 0 10px; border: 2px solid white; border-radius: 50%; box-shadow: 0 0 0 1px var(--line-strong); }
 .legend-line { width: 13px; height: 0; flex: 0 0 13px; border-top: 2px solid #5c686f; box-shadow: 0 -1px 0 white, 0 1px 0 white; }
 .legend-region-fill { width: 13px; height: 10px; flex: 0 0 13px; border: 1px solid #3978a8; background: rgb(57 120 168 / 28%); }
+.legend-mpz-fill { width: 13px; height: 10px; flex: 0 0 13px; border: 1px dashed #8a5a12; background: rgb(213 155 53 / 32%); }
 .legend-dot.university { background: #8b3f56; }.legend-dot.organization { background: #2f6f9f; }.legend-dot.facility { background: #147d78; }.legend-dot.program { background: #b48216; }.legend-dot.infrastructure { background: #c63f2b; }.legend-dot.operating-environment { background: #6b5d95; }
 .region-map-label { max-width: 112px; padding: 2px 5px; color: #243038; background: rgb(255 255 255 / 86%); border: 1px solid rgb(91 104 111 / 38%); border-radius: 2px; box-shadow: 0 1px 4px rgb(25 33 38 / 16%); font-size: 9px; font-weight: 800; line-height: 1.15; text-align: center; white-space: normal; pointer-events: none; }
 .region-map-label::before { display: none; }
+.mpz-popup { width: min(280px, 72vw); }
+.mpz-popup-status { display: block; margin-bottom: 5px; color: #8a3b2a; font-size: 9px; font-weight: 800; text-transform: uppercase; }
+.mpz-popup h3 { margin: 0 0 7px; font-size: 15px; }
+.mpz-popup p { margin: 0 0 9px; color: var(--ink-muted); font-size: 11px; line-height: 1.4; }
+.mpz-popup strong { font-size: 11px; }
+.mpz-popup ul { margin: 5px 0 9px; padding-left: 18px; font-size: 10px; line-height: 1.45; }
+.mpz-popup .mpz-popup-sources { margin-bottom: 8px; font-size: 9px; }
+.mpz-popup-sources a { font-size: inherit; }
+.mpz-popup small { display: block; padding-top: 7px; color: var(--ink-muted); border-top: 1px solid var(--line); font-size: 9px; }
 .map-status { position: absolute; z-index: 500; left: 50%; bottom: 18px; transform: translateX(-50%); max-width: calc(100% - 40px); padding: 10px 14px; background: var(--ink); color: white; border-radius: 3px; font-size: 12px; }
 .results-panel { border-left: 1px solid var(--line); display: grid; grid-template-rows: auto minmax(0, 1fr); }
 .results-heading { padding: 18px 18px 14px; border-bottom: 1px solid var(--line); }

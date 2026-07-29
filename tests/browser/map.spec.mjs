@@ -26,6 +26,19 @@ test("map layers toggle without moving the reset control", async ({ page }) => {
   await regionToggle.check();
   await expect(page.locator(".leaflet-ecosystem-regions-pane path")).toHaveCount(12);
 
+  const mpzToggle = page.locator("#mpz-layer-toggle");
+  await expect(mpzToggle).not.toBeChecked();
+  await mpzToggle.check();
+  await expect(page.locator(".leaflet-maritime-prosperity-zones-pane path")).toHaveCount(11);
+  await page
+    .locator(".leaflet-maritime-prosperity-zones-pane path")
+    .first()
+    .dispatchEvent("click");
+  await expect(page.locator(".mpz-popup")).toContainText(
+    "Planning candidate only; not federally designated",
+  );
+  await expect(page.locator(".mpz-popup-sources a").first()).toHaveAttribute("href", /^https:/);
+
   await page.locator("#county-layer-toggle").check();
   await expect(page.locator(".leaflet-county-boundaries-pane path")).not.toHaveCount(0);
 });
