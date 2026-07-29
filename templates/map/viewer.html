@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260729-3">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260729-4">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
@@ -33,12 +33,25 @@
   </aside>
 
   <section class="map-stage" aria-label="Asset map">
+    <header class="print-map-heading">
+      <div><span class="eyebrow">COSOLVE asset intelligence</span><h1>{{ public_scope_name }} Asset Map</h1></div>
+      <p id="print-map-summary"></p>
+    </header>
     <p class="visually-hidden" id="map-accessibility-note">Use the adjacent results list or directory for a text-based view of every mapped asset.</p>
     <div id="map" role="region" tabindex="0" aria-label="Interactive map of public asset listings" aria-describedby="map-accessibility-note"></div>
     <div class="map-toolbar">
       <div class="map-tools">
         <button class="button compact filter-open" type="button" aria-label="Open filters" aria-controls="asset-filters-panel" aria-expanded="false">Filters</button>
         <button class="button compact" id="reset-view" type="button" aria-label="Reset map view">Reset</button>
+        <details class="map-actions">
+          <summary>Save / export</summary>
+          <div class="map-action-options">
+            {% if user.is_authenticated %}<a id="save-view-link" href="{% url 'core:saved-views' %}?view_type=map">Save to my views</a>{% endif %}
+            <button id="copy-view-link" type="button">Copy view link</button>
+            <button id="print-view" type="button">Print / save PDF</button>
+            <span class="visually-hidden" id="view-action-status" role="status" aria-live="polite"></span>
+          </div>
+        </details>
         <details class="map-layers">
           <summary>Layers</summary>
           <div class="map-layer-options">
@@ -74,7 +87,6 @@
       <div><span class="eyebrow">Public listings</span><h2 aria-live="polite" aria-atomic="true"><strong id="result-count">{{ total_assets }}</strong> assets</h2></div>
       <div class="results-actions">
         {% if user.is_staff %}<a class="text-link" id="export-link" href="{% url 'imports:export' %}">Export CSV</a>{% endif %}
-        {% if user.is_authenticated %}<a class="text-link" id="save-view-link" href="{% url 'core:saved-views' %}?view_type=map">Save view</a>{% endif %}
         <a class="text-link" id="directory-link" href="{% url 'core:directory' %}">Directory view</a>
       </div>
     </div>
@@ -83,6 +95,6 @@
 </main>
 <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
 <script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
-<script type="module" src="{% static 'js/map-viewer.js' %}?v=20260729-2"></script>
+<script type="module" src="{% static 'js/map-viewer.js' %}?v=20260729-3"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}

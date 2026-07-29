@@ -45,6 +45,51 @@ test("map layers toggle without moving the reset control", async ({ page }) => {
   await expect(page.locator(".leaflet-county-boundaries-pane path")).not.toHaveCount(0);
 });
 
+test("copy view link preserves the map position, filters, and layers", async ({
+  context,
+  page,
+}) => {
+  await context.grantPermissions(["clipboard-read", "clipboard-write"]);
+  await page.goto("/map/?region=hampton-roads");
+  await expect(page.locator(".result-row").first()).toBeVisible();
+
+  await page.locator(".leaflet-control-zoom-in").click();
+  await page.locator(".map-layers summary").click();
+  await page.locator("#county-layer-toggle").check();
+  await page.locator("#mpz-layer-toggle").check();
+  await page.locator(".map-actions summary").click();
+  await page.locator("#copy-view-link").click();
+  await expect(page.locator("#copy-view-link")).toHaveText("Link copied");
+
+  const copiedUrl = await page.evaluate(() => navigator.clipboard.readText());
+  const copied = new URL(copiedUrl);
+  expect(copied.searchParams.get("region")).toBe("hampton-roads");
+  expect(copied.searchParams.get("map_lat")).toBeTruthy();
+  expect(copied.searchParams.get("map_lon")).toBeTruthy();
+  expect(copied.searchParams.get("map_zoom")).toBeTruthy();
+  expect(copied.searchParams.get("map_layers")).toContain("counties");
+  expect(copied.searchParams.get("map_layers")).toContain("mpz");
+
+  await page.goto(copiedUrl);
+  await expect(page.locator("#county-layer-toggle")).toBeChecked();
+  await expect(page.locator("#mpz-layer-toggle")).toBeChecked();
+  await expect(page.locator(".leaflet-county-boundaries-pane path")).not.toHaveCount(0);
+  await expect(page.locator(".leaflet-maritime-prosperity-zones-pane path")).toHaveCount(11);
+});
+
+test("print view opens the browser print or PDF workflow", async ({ page }) => {
+  await page.addInitScript(() => {
+    window.print = () => {
+      document.documentElement.dataset.printRequested = "true";
+    };
+  });
+  await page.goto("/map/");
+  await expect(page.locator(".result-row").first()).toBeVisible();
+  await page.locator(".map-actions summary").click();
+  await page.locator("#print-view").click();
+  await expect(page.locator("html")).toHaveAttribute("data-print-requested", "true");
+});
+
 test("empty filters preserve the complete map result set", async ({ page }) => {
   await page.goto("/map/");
   const count = page.locator("#result-count");

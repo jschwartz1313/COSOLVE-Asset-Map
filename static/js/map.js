@@ -237,8 +237,11 @@ export function createMap(root) {
       markers.set(feature.id, marker);
       bounds.push([latitude, longitude]);
     }
-    if (bounds.length > 1) map.fitBounds(bounds, { padding: [35, 35], maxZoom: 11 });
-    else if (bounds.length === 1) map.setView(bounds[0], 10);
+    if (bounds.length > 1) {
+      map.fitBounds(bounds, { animate: false, padding: [35, 35], maxZoom: 11 });
+    } else if (bounds.length === 1) {
+      map.setView(bounds[0], 10, { animate: false });
+    }
   }
 
   function select(id) {
@@ -250,6 +253,28 @@ export function createMap(root) {
 
   function reset() {
     map.setView(defaultView, defaultZoom);
+  }
+
+  function getViewState() {
+    const center = map.getCenter();
+    return {
+      latitude: center.lat,
+      longitude: center.lng,
+      zoom: map.getZoom(),
+    };
+  }
+
+  function setViewState(state) {
+    if (!state?.hasValidCenter) return;
+    map.setView([state.latitude, state.longitude], state.zoom, { animate: false });
+  }
+
+  function onViewChange(callback) {
+    map.on("moveend zoomend", callback);
+  }
+
+  function refresh() {
+    map.invalidateSize({ animate: false });
   }
 
   function setStateBoundaryVisible(visible) {
@@ -318,8 +343,12 @@ export function createMap(root) {
   return {
     map,
     draw,
+    getViewState,
+    onViewChange,
+    refresh,
     reset,
     select,
+    setViewState,
     setCountyLayerVisible,
     setMpzLayerVisible,
     setRegionLayerVisible,

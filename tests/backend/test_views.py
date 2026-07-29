@@ -345,3 +345,30 @@ class SavedViewTests(TestCase):
             "/directory/?region=hampton-roads&record_type=university",
             fetch_redirect_response=False,
         )
+
+    def test_saved_map_view_reopens_with_position_zoom_and_layers(self):
+        self.client.force_login(self.owner)
+        query_string = (
+            "region=hampton-roads&record_type=university"
+            "&map_lat=36.91235&map_lon=-76.30123&map_zoom=11"
+            "&map_layers=state%2Cmpz%2Ccounties"
+        )
+        response = self.client.post(
+            reverse("core:saved-views"),
+            {
+                "name": "Hampton Roads university map",
+                "view_type": SavedView.ViewType.MAP,
+                "query_string": query_string,
+            },
+        )
+        self.assertRedirects(response, reverse("core:saved-views"))
+        saved_view = SavedView.objects.get(owner=self.owner)
+
+        response = self.client.get(
+            reverse("core:open-saved-view", args=[saved_view.share_token])
+        )
+        self.assertRedirects(
+            response,
+            f"/map/?{query_string}",
+            fetch_redirect_response=False,
+        )

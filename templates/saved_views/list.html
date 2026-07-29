@@ -5,7 +5,7 @@
   <header class="page-heading">
     <span class="eyebrow">Your workspace</span>
     <h1>Saved views</h1>
-    <p>Keep a filter set for repeated analysis or create a stable link for a coworker.</p>
+    <p>Reopen a map exactly as you left it, or create a stable link for repeated analysis and sharing.</p>
   </header>
   <div class="saved-views-layout">
     <section class="form-panel">
@@ -29,16 +29,17 @@
             <div>
               <span class="type-pill">{{ item.get_view_type_display }}</span>
               <h3>{{ item.name }}</h3>
-              <p>{% if item.is_shared %}Share link enabled{% else %}Private to your account{% endif %}</p>
-              {% if item.is_shared %}
-                <div class="share-link">
-                  <input type="text" readonly value="{{ request.scheme }}://{{ request.get_host }}{% url 'core:open-saved-view' item.share_token %}" aria-label="Share link for {{ item.name }}">
-                  <button class="button secondary" type="button" data-copy-link>Copy link</button>
-                </div>
-              {% endif %}
+              <p>
+                {% if item.view_type == "map" %}Map position, zoom, filters, and layers saved. {% endif %}
+                {% if item.is_shared %}Sharing enabled.{% else %}Private to your account.{% endif %}
+              </p>
+              <div class="share-link">
+                <input type="text" readonly value="{{ request.scheme }}://{{ request.get_host }}{% url 'core:open-saved-view' item.share_token %}" aria-label="Link for {{ item.name }}">
+                <button class="button secondary" type="button" data-copy-link>Copy link</button>
+              </div>
             </div>
             <div class="row-actions">
-              <a class="button secondary" href="{% url 'core:open-saved-view' item.share_token %}">Open</a>
+              <a class="button secondary" href="{% url 'core:open-saved-view' item.share_token %}">Open {{ item.view_type }}</a>
               <form method="post" action="{% url 'core:delete-saved-view' item.pk %}">
                 {% csrf_token %}<button class="button text-danger" type="submit">Delete</button>
               </form>

@@ -1,5 +1,6 @@
 import uuid
 from decimal import Decimal
+from math import isfinite
 from urllib.parse import parse_qsl
 
 from django.conf import settings
@@ -316,12 +317,37 @@ class SavedView(models.Model):
             "region",
             "sort",
             "page",
+            "map_lat",
+            "map_lon",
+            "map_zoom",
+            "map_layers",
         }
-        unexpected = {key for key, _value in parse_qsl(self.query_string)} - allowed
+        pairs = parse_qsl(self.query_string, keep_blank_values=True)
+        unexpected = {key for key, _value in pairs} - allowed
         if unexpected:
             raise ValidationError(
                 {"query_string": f"Unsupported filter(s): {', '.join(sorted(unexpected))}"}
             )
+        params = dict(pairs)
+        numeric_map_values = {
+            "map_lat": (-90, 90),
+            "map_lon": (-180, 180),
+            "map_zoom": (1, 19),
+        }
+        for key, (minimum, maximum) in numeric_map_values.items():
+            if key not in params:
+                continue
+            try:
+                value = float(params[key])
+            except ValueError as error:
+                raise ValidationError({"query_string": f"Invalid {key} value."}) from error
+            if not isfinite(value) or value < minimum or value > maximum:
+                raise ValidationError({"query_string": f"Invalid {key} value."})
+        if "map_layers" in params:
+            allowed_layers = {"state", "regions", "mpz", "counties"}
+            layers = {value for value in params["map_layers"].split(",") if value}
+            if layers - allowed_layers:
+                raise ValidationError({"query_string": "Unsupported map layer selection."})
 
     def save(self, *args, **kwargs):
         self.full_clean()

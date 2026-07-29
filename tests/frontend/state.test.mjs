@@ -1,6 +1,11 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
+import {
+  filterParamsFromMapUrl,
+  mapStateFromParams,
+  paramsWithMapState,
+} from "../../static/js/map-state.js";
 import { hydrateForm, paramsFromEntries } from "../../static/js/state.js";
 
 test("URLSearchParams preserves repeated facet values", () => {
@@ -56,4 +61,37 @@ test("hydrateForm restores text, select, and checkbox state", () => {
   assert.equal(elements[1].value, "hampton-roads");
   assert.equal(elements[2].checked, true);
   assert.equal(elements[3].checked, false);
+});
+
+test("saved map state preserves filters, center, zoom, and layers", () => {
+  const params = paramsWithMapState(
+    new URLSearchParams("region=hampton-roads&record_type=university"),
+    {
+      latitude: 36.912345,
+      longitude: -76.301234,
+      zoom: 11,
+      layers: ["state", "mpz", "counties"],
+    },
+  );
+  const state = mapStateFromParams(params);
+
+  assert.equal(
+    filterParamsFromMapUrl(params).toString(),
+    "region=hampton-roads&record_type=university",
+  );
+  assert.deepEqual(state, {
+    latitude: 36.91235,
+    longitude: -76.30123,
+    zoom: 11,
+    layers: ["state", "mpz", "counties"],
+    hasValidCenter: true,
+  });
+});
+
+test("invalid saved map coordinates are ignored safely", () => {
+  const state = mapStateFromParams(
+    new URLSearchParams("map_lat=200&map_lon=-76&map_zoom=8&map_layers=regions,unknown"),
+  );
+  assert.equal(state.hasValidCenter, false);
+  assert.deepEqual(state.layers, ["regions"]);
 });
