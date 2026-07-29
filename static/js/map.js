@@ -1,12 +1,12 @@
 import { buildPopup } from "./popups.js?v=20260727";
 
-const COLORS = {
-  university: "#8b3f56",
-  organization: "#2f6f9f",
-  facility: "#147d78",
-  program: "#b48216",
-  infrastructure: "#c63f2b",
-  "operating-environment": "#6b5d95",
+const ICON_FILES = {
+  university: "university.svg",
+  organization: "building-2.svg",
+  facility: "factory.svg",
+  program: "clipboard-list.svg",
+  infrastructure: "construction.svg",
+  "operating-environment": "radar.svg",
 };
 
 export function createMap(root) {
@@ -207,6 +207,24 @@ export function createMap(root) {
   layer.addTo(map);
   const markers = new Map();
 
+  function buildMarkerIcon(recordType) {
+    const visual = document.createElement("span");
+    visual.className = `asset-marker ${recordType}`;
+    const image = document.createElement("img");
+    image.src = `${root.dataset.iconBaseUrl}${ICON_FILES[recordType] || ICON_FILES["operating-environment"]}`;
+    image.alt = "";
+    image.setAttribute("aria-hidden", "true");
+    visual.append(image);
+    return window.L.divIcon({
+      className: "asset-marker-shell",
+      html: visual,
+      iconAnchor: [12, 12],
+      iconSize: [24, 24],
+      popupAnchor: [0, -12],
+      tooltipAnchor: [0, -12],
+    });
+  }
+
   function draw(features, onSelect, { showLabels = false } = {}) {
     layer.clearLayers();
     markers.clear();
@@ -214,20 +232,19 @@ export function createMap(root) {
     for (const feature of features) {
       if (!feature.geometry) continue;
       const [longitude, latitude] = feature.geometry.coordinates;
-      const marker = window.L.circleMarker([latitude, longitude], {
-        radius: 8,
-        color: "#ffffff",
-        weight: 3,
-        fillColor: COLORS[feature.properties.record_type] || "#5c686f",
-        fillOpacity: 1,
-        className: "asset-marker",
+      const marker = window.L.marker([latitude, longitude], {
+        alt: `${feature.properties.name} asset marker`,
+        icon: buildMarkerIcon(feature.properties.record_type),
+        keyboard: true,
+        riseOnHover: true,
+        title: feature.properties.name,
       });
       marker.bindPopup(buildPopup(feature));
       if (showLabels) {
         marker.bindTooltip(feature.properties.name, {
           className: "asset-search-label",
           direction: "top",
-          offset: [0, -7],
+          offset: [0, -12],
           opacity: 1,
           permanent: true,
         });

@@ -1,6 +1,6 @@
 import { fetchAssets } from "./api.js?v=20260727";
 import { bindFilterDrawer, bindFilterIndicators } from "./filters.js?v=20260722-3";
-import { createMap } from "./map.js?v=20260729-4";
+import { createMap } from "./map.js?v=20260729-5";
 import {
   filterParamsFromMapUrl,
   mapStateFromParams,

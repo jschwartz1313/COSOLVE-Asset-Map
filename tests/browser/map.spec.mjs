@@ -142,6 +142,7 @@ test("text search labels matching map points by name", async ({ page }) => {
   const label = page.locator(".asset-search-label");
   await expect(page.locator("#result-count")).toHaveText("1");
   await expect(marker).toHaveCount(1);
+  await expect(marker.locator("img")).toHaveAttribute("src", /building-2\.svg$/);
   await expect(label).toHaveText("Adaptive Aerospace Group");
 
   await expect
