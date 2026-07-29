@@ -15,6 +15,28 @@ class RealCatalogFileTests(TestCase):
         path = settings.BASE_DIR / "data" / "virginia_real_assets.json"
         return json.loads(path.read_text())
 
+    def test_region_boundary_layer_covers_all_virginia_localities(self):
+        path = settings.BASE_DIR / "static" / "data" / "virginia-regions.geojson"
+        regions = json.loads(path.read_text())
+        features = regions["features"]
+
+        self.assertEqual(len(features), 12)
+        self.assertEqual(
+            sum(feature["properties"]["locality_count"] for feature in features),
+            133,
+        )
+        self.assertEqual(
+            len({feature["properties"]["region_slug"] for feature in features}),
+            12,
+        )
+        self.assertTrue(
+            all(
+                feature["properties"]["region_color"].startswith("#")
+                and feature["geometry"]["type"] in {"Polygon", "MultiPolygon"}
+                for feature in features
+            )
+        )
+
     def test_catalog_has_at_least_232_real_source_backed_records(self):
         catalog = self.load_catalog()
         records = catalog["records"]

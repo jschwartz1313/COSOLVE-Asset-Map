@@ -6,13 +6,14 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260727">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260728-1">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
       data-lat="{{ default_map_lat }}" data-lon="{{ default_map_lon }}" data-zoom="{{ default_map_zoom }}"
       data-tile-url="{{ basemap_tile_url }}" data-attribution="{{ basemap_attribution }}"
       data-counties-url="{% static 'data/virginia-counties.geojson' %}?v=2025"
+      data-regions-url="{% static 'data/virginia-regions.geojson' %}?v=20260728"
       data-state-boundary-url="{% static 'data/virginia-state-boundary.geojson' %}?v=2025">
   <aside class="filters-panel" id="asset-filters-panel" aria-label="Asset filters">
     <div class="panel-heading">
@@ -41,6 +42,7 @@
           <summary>Layers</summary>
           <div class="map-layer-options">
             <label title="Show the Virginia state boundary"><input id="state-boundary-toggle" type="checkbox" checked><span>Virginia boundary</span></label>
+            <label title="Shade COSOLVE's working Virginia ecosystem regions"><input id="region-layer-toggle" type="checkbox" checked><span>Ecosystem regions</span></label>
             <label title="Show Virginia county and independent-city boundaries"><input id="county-layer-toggle" type="checkbox"><span>County boundaries</span></label>
           </div>
         </details>
@@ -55,7 +57,8 @@
           <span><i class="legend-dot infrastructure"></i>Infrastructure</span>
           <span><i class="legend-dot operating-environment"></i>Operating environment</span>
           <span><i class="legend-line state-boundary"></i>Virginia boundary</span>
-          <small>Points may represent exact, approximate, or generalized locality locations.</small>
+          <span><i class="legend-region-fill"></i>Ecosystem region</span>
+          <small>Region colors are working analytical groupings, not legal or official planning-district boundaries. Points may represent exact, approximate, or generalized locality locations.</small>
         </div>
       </details>
     </div>
@@ -76,6 +79,6 @@
 </main>
 <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
 <script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
-<script type="module" src="{% static 'js/map-viewer.js' %}?v=20260727-3"></script>
+<script type="module" src="{% static 'js/map-viewer.js' %}?v=20260728-1"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}

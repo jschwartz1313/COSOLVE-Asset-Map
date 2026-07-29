@@ -15,7 +15,7 @@
 .map-toolbar > * { pointer-events: auto; }
 .map-tools { display: flex; align-items: flex-start; gap: 7px; }
 .filter-open { display: none; }
-.map-layers { width: 178px; padding: 0; border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--paper); box-shadow: 0 2px 10px rgb(25 33 38 / 10%); }
+.map-layers { width: 190px; padding: 0; border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--paper); box-shadow: 0 2px 10px rgb(25 33 38 / 10%); }
 .map-layers summary { min-height: 34px; margin: 0; padding: 9px 11px; color: var(--ink); }
 .map-layer-options { display: grid; padding: 2px 10px 9px; }
 .map-layer-options label { min-height: 34px; display: grid; grid-template-columns: 15px minmax(0, 1fr); align-items: center; gap: 8px; color: var(--ink); cursor: pointer; font-size: 11px; font-weight: 700; }
@@ -28,7 +28,10 @@
 .legend-content small { padding-top: 6px; color: var(--ink-muted); border-top: 1px solid var(--line); font-size: 9px; line-height: 1.4; }
 .legend-dot { width: 10px; height: 10px; flex: 0 0 10px; border: 2px solid white; border-radius: 50%; box-shadow: 0 0 0 1px var(--line-strong); }
 .legend-line { width: 13px; height: 0; flex: 0 0 13px; border-top: 2px solid #5c686f; box-shadow: 0 -1px 0 white, 0 1px 0 white; }
+.legend-region-fill { width: 13px; height: 10px; flex: 0 0 13px; border: 1px solid #3978a8; background: rgb(57 120 168 / 28%); }
 .legend-dot.university { background: #8b3f56; }.legend-dot.organization { background: #2f6f9f; }.legend-dot.facility { background: #147d78; }.legend-dot.program { background: #b48216; }.legend-dot.infrastructure { background: #c63f2b; }.legend-dot.operating-environment { background: #6b5d95; }
+.region-map-label { max-width: 112px; padding: 2px 5px; color: #243038; background: rgb(255 255 255 / 86%); border: 1px solid rgb(91 104 111 / 38%); border-radius: 2px; box-shadow: 0 1px 4px rgb(25 33 38 / 16%); font-size: 9px; font-weight: 800; line-height: 1.15; text-align: center; white-space: normal; pointer-events: none; }
+.region-map-label::before { display: none; }
 .map-status { position: absolute; z-index: 500; left: 50%; bottom: 18px; transform: translateX(-50%); max-width: calc(100% - 40px); padding: 10px 14px; background: var(--ink); color: white; border-radius: 3px; font-size: 12px; }
 .results-panel { border-left: 1px solid var(--line); display: grid; grid-template-rows: auto minmax(0, 1fr); }
 .results-heading { padding: 18px 18px 14px; border-bottom: 1px solid var(--line); }
@@ -74,4 +77,5 @@
   .map-legend { width: 88px; }
   .legend-content span { font-size: 9px; }
   .map-layers { width: 88px; }
+  .region-map-label { display: none; }
 }

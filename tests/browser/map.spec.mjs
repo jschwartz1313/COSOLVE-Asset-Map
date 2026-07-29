@@ -18,6 +18,14 @@ test("map layers toggle without moving the reset control", async ({ page }) => {
   await stateToggle.check();
   await expect(page.locator(".leaflet-state-boundary-pane path")).not.toHaveCount(0);
 
+  const regionToggle = page.locator("#region-layer-toggle");
+  await expect(page.locator(".leaflet-ecosystem-regions-pane path")).toHaveCount(12);
+  await expect(page.locator(".region-map-label")).toHaveCount(12);
+  await regionToggle.uncheck();
+  await expect(page.locator(".leaflet-ecosystem-regions-pane path")).toHaveCount(0);
+  await regionToggle.check();
+  await expect(page.locator(".leaflet-ecosystem-regions-pane path")).toHaveCount(12);
+
   await page.locator("#county-layer-toggle").check();
   await expect(page.locator(".leaflet-county-boundaries-pane path")).not.toHaveCount(0);
 });

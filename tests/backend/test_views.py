@@ -13,7 +13,9 @@ class CoreViewTests(TestCase):
         self.assertContains(response, "Asset intelligence")
         self.assertContains(response, 'id="map"')
         self.assertContains(response, 'id="county-layer-toggle"')
+        self.assertContains(response, 'id="region-layer-toggle"')
         self.assertContains(response, 'id="state-boundary-toggle"')
+        self.assertContains(response, "data-regions-url=")
         self.assertContains(response, "data-state-boundary-url=")
         self.assertNotContains(response, 'data-region-quick-filter="hampton-roads"')
 

@@ -24,6 +24,49 @@ export function createMap(root) {
   map.attributionControl.addAttribution(
     "County boundaries: U.S. Census Bureau TIGERweb (2025)",
   );
+  map.attributionControl.addAttribution(
+    "Ecosystem regions: COSOLVE working analytical groupings",
+  );
+  map.createPane("ecosystem-regions");
+  map.getPane("ecosystem-regions").style.zIndex = 340;
+  const regionLayer = window.L.geoJSON(null, {
+    pane: "ecosystem-regions",
+    style(feature) {
+      const color = feature.properties.region_color || "#66757d";
+      return {
+        color,
+        fillColor: color,
+        fillOpacity: 0.24,
+        opacity: 0.9,
+        weight: 1.8,
+      };
+    },
+    onEachFeature(feature, boundary) {
+      const name = feature.properties.region_name;
+      const label = document.createElement("span");
+      label.textContent = name;
+      boundary.bindTooltip(label, {
+        className: "region-map-label",
+        direction: "center",
+        opacity: 0.96,
+        permanent: true,
+      });
+      boundary.on({
+        mouseover() {
+          boundary.setStyle({ fillOpacity: 0.34, weight: 2.4 });
+        },
+        mouseout() {
+          regionLayer.resetStyle(boundary);
+        },
+        add() {
+          const path = boundary.getElement();
+          if (path) path.setAttribute("aria-label", `${name} ecosystem region`);
+        },
+      });
+    },
+  });
+  let regionLayerLoaded = false;
+  let regionLayerVisible = false;
   map.createPane("state-boundary-casing");
   map.getPane("state-boundary-casing").style.zIndex = 352;
   map.getPane("state-boundary-casing").style.pointerEvents = "none";
@@ -152,5 +195,30 @@ export function createMap(root) {
     if (countyLayerVisible) countyLayer.addTo(map);
   }
 
-  return { map, draw, reset, select, setCountyLayerVisible, setStateBoundaryVisible };
+  async function setRegionLayerVisible(visible) {
+    regionLayerVisible = visible;
+    if (!visible) {
+      regionLayer.removeFrom(map);
+      return;
+    }
+    if (!regionLayerLoaded) {
+      const response = await fetch(root.dataset.regionsUrl, {
+        headers: { Accept: "application/geo+json, application/json" },
+      });
+      if (!response.ok) throw new Error(`Region boundary request failed: ${response.status}`);
+      regionLayer.addData(await response.json());
+      regionLayerLoaded = true;
+    }
+    if (regionLayerVisible) regionLayer.addTo(map);
+  }
+
+  return {
+    map,
+    draw,
+    reset,
+    select,
+    setCountyLayerVisible,
+    setRegionLayerVisible,
+    setStateBoundaryVisible,
+  };
 }

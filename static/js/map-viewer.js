@@ -1,6 +1,6 @@
 import { fetchAssets } from "./api.js?v=20260727";
 import { bindFilterDrawer, bindFilterIndicators } from "./filters.js?v=20260722-3";
-import { createMap } from "./map.js?v=20260727";
+import { createMap } from "./map.js?v=20260728-1";
 import { renderResults, selectResult } from "./results.js?v=20260727-2";
 import { hydrateForm, paramsFromForm, updateUrl } from "./state.js?v=20260717";
 
@@ -13,6 +13,7 @@ const directoryLink = document.querySelector("#directory-link");
 const exportLink = document.querySelector("#export-link");
 const saveViewLink = document.querySelector("#save-view-link");
 const countyLayerToggle = document.querySelector("#county-layer-toggle");
+const regionLayerToggle = document.querySelector("#region-layer-toggle");
 const stateBoundaryToggle = document.querySelector("#state-boundary-toggle");
 const mapController = createMap(root);
 const closeDrawer = bindFilterDrawer(root);
@@ -34,6 +35,22 @@ countyLayerToggle.addEventListener("change", async () => {
     countyLayerToggle.disabled = false;
   }
 });
+
+async function updateRegionLayer() {
+  regionLayerToggle.disabled = true;
+  try {
+    await mapController.setRegionLayerVisible(regionLayerToggle.checked);
+  } catch (error) {
+    regionLayerToggle.checked = false;
+    showStatus("Ecosystem region shading could not be loaded.");
+    console.error(error);
+  } finally {
+    regionLayerToggle.disabled = false;
+  }
+}
+
+regionLayerToggle.addEventListener("change", updateRegionLayer);
+updateRegionLayer();
 
 function showStatus(message) {
   status.textContent = message;
