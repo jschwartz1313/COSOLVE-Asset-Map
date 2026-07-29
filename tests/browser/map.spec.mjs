@@ -18,7 +18,16 @@ test("map layers toggle without moving the reset control", async ({ page }) => {
   await page.locator(".map-legend summary").click();
   await page.locator(".map-layers summary").click();
 
+  const assetToggle = page.locator("#asset-layer-toggle");
+  await expect(assetToggle).toBeChecked();
+  await expect(page.locator(".asset-marker-shell, .marker-cluster")).not.toHaveCount(0);
+  await assetToggle.uncheck();
+  await expect(page.locator(".asset-marker-shell, .marker-cluster")).toHaveCount(0);
+  await assetToggle.check();
+  await expect(page.locator(".asset-marker-shell, .marker-cluster")).not.toHaveCount(0);
+
   const stateToggle = page.locator("#state-boundary-toggle");
+  await expect(stateToggle).toBeChecked();
   await expect(page.locator(".leaflet-state-boundary-pane path")).not.toHaveCount(0);
   await stateToggle.uncheck();
   await expect(page.locator(".leaflet-state-boundary-pane path")).toHaveCount(0);
@@ -26,12 +35,13 @@ test("map layers toggle without moving the reset control", async ({ page }) => {
   await expect(page.locator(".leaflet-state-boundary-pane path")).not.toHaveCount(0);
 
   const regionToggle = page.locator("#region-layer-toggle");
+  await expect(regionToggle).not.toBeChecked();
+  await expect(page.locator(".leaflet-ecosystem-regions-pane path")).toHaveCount(0);
+  await regionToggle.check();
   await expect(page.locator(".leaflet-ecosystem-regions-pane path")).toHaveCount(12);
   await expect(page.locator(".region-map-label")).toHaveCount(12);
   await regionToggle.uncheck();
   await expect(page.locator(".leaflet-ecosystem-regions-pane path")).toHaveCount(0);
-  await regionToggle.check();
-  await expect(page.locator(".leaflet-ecosystem-regions-pane path")).toHaveCount(12);
 
   const mpzToggle = page.locator("#mpz-layer-toggle");
   await expect(mpzToggle).not.toBeChecked();
@@ -72,10 +82,13 @@ test("copy view link preserves the map position, filters, and layers", async ({
   expect(copied.searchParams.get("map_lat")).toBeTruthy();
   expect(copied.searchParams.get("map_lon")).toBeTruthy();
   expect(copied.searchParams.get("map_zoom")).toBeTruthy();
+  expect(copied.searchParams.get("map_layers")).toContain("assets");
   expect(copied.searchParams.get("map_layers")).toContain("counties");
   expect(copied.searchParams.get("map_layers")).toContain("mpz");
+  expect(copied.searchParams.get("map_layers_v")).toBe("2");
 
   await page.goto(copiedUrl);
+  await expect(page.locator("#asset-layer-toggle")).toBeChecked();
   await expect(page.locator("#county-layer-toggle")).toBeChecked();
   await expect(page.locator("#mpz-layer-toggle")).toBeChecked();
   await expect(page.locator(".leaflet-county-boundaries-pane path")).not.toHaveCount(0);

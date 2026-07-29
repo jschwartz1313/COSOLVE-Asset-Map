@@ -70,7 +70,7 @@ test("saved map state preserves filters, center, zoom, and layers", () => {
       latitude: 36.912345,
       longitude: -76.301234,
       zoom: 11,
-      layers: ["state", "mpz", "counties"],
+      layers: ["assets", "state", "mpz", "counties"],
     },
   );
   const state = mapStateFromParams(params);
@@ -83,15 +83,31 @@ test("saved map state preserves filters, center, zoom, and layers", () => {
     latitude: 36.91235,
     longitude: -76.30123,
     zoom: 11,
-    layers: ["state", "mpz", "counties"],
+    layers: ["assets", "state", "mpz", "counties"],
     hasValidCenter: true,
   });
 });
 
+test("legacy saved map layers retain asset points", () => {
+  const state = mapStateFromParams(
+    new URLSearchParams("map_layers=regions,unknown"),
+  );
+  assert.deepEqual(state.layers, ["assets", "regions"]);
+});
+
 test("invalid saved map coordinates are ignored safely", () => {
   const state = mapStateFromParams(
-    new URLSearchParams("map_lat=200&map_lon=-76&map_zoom=8&map_layers=regions,unknown"),
+    new URLSearchParams(
+      "map_lat=200&map_lon=-76&map_zoom=8&map_layers=regions&map_layers_v=2",
+    ),
   );
   assert.equal(state.hasValidCenter, false);
   assert.deepEqual(state.layers, ["regions"]);
+});
+
+test("versioned saved map state can hide asset points", () => {
+  const state = mapStateFromParams(
+    new URLSearchParams("map_layers=state&map_layers_v=2"),
+  );
+  assert.deepEqual(state.layers, ["state"]);
 });

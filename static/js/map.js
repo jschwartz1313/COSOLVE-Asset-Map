@@ -205,6 +205,7 @@ export function createMap(root) {
     ? window.L.markerClusterGroup({ showCoverageOnHover: false, maxClusterRadius: 48 })
     : window.L.layerGroup();
   layer.addTo(map);
+  let assetLayerVisible = true;
   const markers = new Map();
 
   function buildMarkerIcon(recordType) {
@@ -263,7 +264,7 @@ export function createMap(root) {
 
   function select(id) {
     const marker = markers.get(id);
-    if (!marker) return;
+    if (!marker || !assetLayerVisible) return;
     if (layer.zoomToShowLayer) layer.zoomToShowLayer(marker, () => marker.openPopup());
     else marker.openPopup();
   }
@@ -302,6 +303,12 @@ export function createMap(root) {
       stateBoundaryCasing.removeFrom(map);
       stateBoundaryLayer.removeFrom(map);
     }
+  }
+
+  function setAssetLayerVisible(visible) {
+    assetLayerVisible = visible;
+    if (visible) layer.addTo(map);
+    else layer.removeFrom(map);
   }
 
   async function setCountyLayerVisible(visible) {
@@ -365,6 +372,7 @@ export function createMap(root) {
     refresh,
     reset,
     select,
+    setAssetLayerVisible,
     setViewState,
     setCountyLayerVisible,
     setMpzLayerVisible,

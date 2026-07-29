@@ -56,8 +56,9 @@
         <details class="map-layers">
           <summary>Layers</summary>
           <div class="map-layer-options">
+            <label title="Show mapped asset points"><input id="asset-layer-toggle" type="checkbox" checked><span>Asset points</span></label>
             <label title="Show the Virginia state boundary"><input id="state-boundary-toggle" type="checkbox" checked><span>Virginia boundary</span></label>
-            <label title="Shade COSOLVE's working Virginia ecosystem regions"><input id="region-layer-toggle" type="checkbox" checked><span>Ecosystem regions</span></label>
+            <label title="Shade COSOLVE's working Virginia ecosystem regions"><input id="region-layer-toggle" type="checkbox"><span>Ecosystem regions</span></label>
             <label title="Show planning-candidate census tracts for the proposed federal Maritime Prosperity Zone program"><input id="mpz-layer-toggle" type="checkbox"><span>Potential MPZ tracts</span></label>
             <label title="Show Virginia county and independent-city boundaries"><input id="county-layer-toggle" type="checkbox"><span>County boundaries</span></label>
           </div>
@@ -96,6 +97,6 @@
 </main>
 <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
 <script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
-<script type="module" src="{% static 'js/map-viewer.js' %}?v=20260729-4"></script>
+<script type="module" src="{% static 'js/map-viewer.js' %}?v=20260729-6"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}

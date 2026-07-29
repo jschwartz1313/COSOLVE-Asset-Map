@@ -1,11 +1,11 @@
 import { fetchAssets } from "./api.js?v=20260727";
 import { bindFilterDrawer, bindFilterIndicators } from "./filters.js?v=20260722-3";
-import { createMap } from "./map.js?v=20260729-5";
+import { createMap } from "./map.js?v=20260729-6";
 import {
   filterParamsFromMapUrl,
   mapStateFromParams,
   paramsWithMapState,
-} from "./map-state.js?v=20260729";
+} from "./map-state.js?v=20260729-2";
 import { renderResults, selectResult } from "./results.js?v=20260727-2";
 import { hydrateForm, paramsFromForm, updateUrl } from "./state.js?v=20260717";
 
@@ -21,6 +21,7 @@ const copyViewButton = document.querySelector("#copy-view-link");
 const printViewButton = document.querySelector("#print-view");
 const viewActionStatus = document.querySelector("#view-action-status");
 const printMapSummary = document.querySelector("#print-map-summary");
+const assetLayerToggle = document.querySelector("#asset-layer-toggle");
 const countyLayerToggle = document.querySelector("#county-layer-toggle");
 const regionLayerToggle = document.querySelector("#region-layer-toggle");
 const mpzLayerToggle = document.querySelector("#mpz-layer-toggle");
@@ -28,13 +29,15 @@ const stateBoundaryToggle = document.querySelector("#state-boundary-toggle");
 const initialPageParams = new URLSearchParams(window.location.search);
 const initialMapState = mapStateFromParams(initialPageParams);
 const initialFilterParams = filterParamsFromMapUrl(initialPageParams);
+const defaultVisibleLayers = ["assets", "state"];
 
 function applyLayerToggleState(state) {
-  if (!state?.layers) return;
-  stateBoundaryToggle.checked = state.layers.includes("state");
-  regionLayerToggle.checked = state.layers.includes("regions");
-  mpzLayerToggle.checked = state.layers.includes("mpz");
-  countyLayerToggle.checked = state.layers.includes("counties");
+  const layers = state?.layers || defaultVisibleLayers;
+  assetLayerToggle.checked = layers.includes("assets");
+  stateBoundaryToggle.checked = layers.includes("state");
+  regionLayerToggle.checked = layers.includes("regions");
+  mpzLayerToggle.checked = layers.includes("mpz");
+  countyLayerToggle.checked = layers.includes("counties");
 }
 
 applyLayerToggleState(initialMapState);
@@ -43,6 +46,10 @@ const closeDrawer = bindFilterDrawer(root);
 const updateFilterIndicators = bindFilterIndicators(form);
 let activeFilterParams = initialFilterParams;
 document.querySelector("#reset-view").addEventListener("click", () => mapController.reset());
+assetLayerToggle.addEventListener("change", () => {
+  mapController.setAssetLayerVisible(assetLayerToggle.checked);
+  updateViewActions();
+});
 stateBoundaryToggle.addEventListener("change", () => {
   mapController.setStateBoundaryVisible(stateBoundaryToggle.checked);
   updateViewActions();
@@ -104,6 +111,7 @@ function showStatus(message) {
 function currentMapParams() {
   const center = mapController.getViewState();
   const layers = [];
+  if (assetLayerToggle.checked) layers.push("assets");
   if (stateBoundaryToggle.checked) layers.push("state");
   if (regionLayerToggle.checked) layers.push("regions");
   if (mpzLayerToggle.checked) layers.push("mpz");
@@ -159,6 +167,7 @@ window.addEventListener("beforeprint", () => {
 mapController.onViewChange(updateViewActions);
 
 async function syncLayerVisibility() {
+  mapController.setAssetLayerVisible(assetLayerToggle.checked);
   mapController.setStateBoundaryVisible(stateBoundaryToggle.checked);
   await Promise.all([updateRegionLayer(), updateMpzLayer(), updateCountyLayer()]);
 }

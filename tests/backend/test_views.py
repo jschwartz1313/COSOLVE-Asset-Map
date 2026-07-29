@@ -12,6 +12,7 @@ class CoreViewTests(TestCase):
         self.assertContains(response, "Virginia Asset Map")
         self.assertContains(response, "Asset intelligence")
         self.assertContains(response, 'id="map"')
+        self.assertContains(response, 'id="asset-layer-toggle"')
         self.assertContains(response, 'id="county-layer-toggle"')
         self.assertContains(response, 'id="region-layer-toggle"')
         self.assertContains(response, 'id="state-boundary-toggle"')
