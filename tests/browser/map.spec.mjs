@@ -61,6 +61,23 @@ test("empty filters preserve the complete map result set", async ({ page }) => {
   }
 });
 
+test("strategic categories use the same collapsible filter control", async ({ page }) => {
+  await page.goto("/map/");
+  if (await page.locator(".filter-open").isVisible()) {
+    await page.locator(".filter-open").click();
+  }
+
+  const categoryFilter = page.locator("#asset-filters .category-filter");
+  await expect(categoryFilter).not.toHaveAttribute("open", "");
+  await categoryFilter.locator("summary").click();
+  await categoryFilter.locator('input[name="category"]').first().check();
+  await expect(categoryFilter).toHaveAttribute("open", "");
+  await expect(categoryFilter.locator('[data-filter-count-for="category"]')).toHaveText("1");
+
+  await page.goto("/directory/");
+  await expect(page.locator(".directory-filters .category-filter")).not.toHaveAttribute("open", "");
+});
+
 test("text search labels matching map points by name", async ({ page }) => {
   await page.goto("/map/");
   if (await page.locator(".filter-open").isVisible()) {

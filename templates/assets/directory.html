@@ -7,7 +7,7 @@
     <span class="eyebrow">Public listings</span>
     <h1>Asset directory</h1>
     <form method="get">
-      {% include "includes/filter_fields.html" with collapse_categories=True %}
+      {% include "includes/filter_fields.html" %}
       <label><span>Sort results</span><select name="sort">{% for value, label in sort_options %}<option value="{{ value }}" {% if sort_key == value %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label>
       <div class="filter-actions">
         <button class="button primary" type="submit">Apply filters</button>
