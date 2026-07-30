@@ -146,6 +146,24 @@ test("empty filters preserve the complete map result set", async ({ page }) => {
   }
 });
 
+test("clear all removes filters inherited from a filtered URL", async ({ page }) => {
+  await page.goto("/map/?record_type=university");
+  if (await page.locator(".filter-open").isVisible()) {
+    await page.locator(".filter-open").click();
+  }
+  const form = page.locator("#asset-filters");
+  const activeBadge = form.locator("[data-active-filter-count]");
+  await expect(form.locator('select[name="record_type"]')).toHaveValue("university");
+  await expect(activeBadge).toHaveText("1");
+
+  await form.locator('button[type="reset"]').click();
+
+  await expect(form.locator('select[name="record_type"]')).toHaveValue("");
+  await expect(activeBadge).toBeHidden();
+  await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
+  await expect(page).toHaveURL(/\/map\/$/);
+});
+
 test("desktop filter panel uses comfortable spacing without overflow", async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 720 });
   await page.goto("/map/");

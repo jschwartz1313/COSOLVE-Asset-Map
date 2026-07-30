@@ -491,11 +491,13 @@ form.addEventListener("submit", (event) => {
   event.preventDefault();
   load(paramsFromForm(form));
 });
-form.addEventListener("reset", () => {
-  window.setTimeout(() => {
-    updateFilterIndicators();
-    load(new URLSearchParams());
-  }, 0);
+form.addEventListener("reset", (event) => {
+  event.preventDefault();
+  const emptyFilters = new URLSearchParams();
+  hydrateForm(form, emptyFilters);
+  for (const details of form.querySelectorAll("details")) details.open = false;
+  updateFilterIndicators();
+  load(emptyFilters);
 });
 window.addEventListener("popstate", () => {
   const pageParams = new URLSearchParams(window.location.search);
