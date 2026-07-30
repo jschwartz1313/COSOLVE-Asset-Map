@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-07-30",
   "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, and a curated set of source-backed ecosystem records. Hampton Roads street and site locations are anchored to official public address sources and geocoded against the U.S. Census address ranges; named-site centroids are used when no public street point is available.",
-  "record_count": 300,
+  "record_count": 319,
   "records": [
     {
       "capabilities": [
@@ -681,6 +681,41 @@
     },
     {
       "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Blacksburg",
+      "latitude": 37.229,
+      "location_precision": "locality",
+      "longitude": -80.414,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Autonomous Aerial Vehicles at Virginia Tech",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "New River Valley",
+      "short_description": "Student engineering team developing autonomous aircraft for payload delivery, obstacle avoidance, mapping, and search and rescue.",
+      "sources": [
+        {
+          "title": "Autonomous Aerial Vehicles at Virginia Tech",
+          "url": "https://www.vtaav.org/our-team"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Test and operational environments"
+      ],
+      "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
+      "website_url": "https://www.vtaav.org/our-team"
+    },
+    {
+      "capabilities": [
         "Systems engineering and integration",
         "Operations, maintenance, and sustainment"
       ],
@@ -745,6 +780,39 @@
       ],
       "unmanned_systems_relevance": "Coordinates, funds, regulates, or accelerates Virginia's unmanned-systems ecosystem.",
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
+    },
+    {
+      "capabilities": [
+        "Safety, policy, regulatory, and airspace integration"
+      ],
+      "city": "Blacksburg",
+      "latitude": 37.229,
+      "location_precision": "locality",
+      "longitude": -80.414,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "AUVSI Ridge and Valley Chapter",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "New River Valley",
+      "short_description": "Regional AUVSI chapter connecting uncrewed-systems research, testing, manufacturing, and industry stakeholders.",
+      "sources": [
+        {
+          "title": "AUVSI Ridge and Valley Chapter",
+          "url": "https://www.auvsiridgeandvalley.org/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "State strategy and coordination",
+        "Programs and initiatives"
+      ],
+      "unmanned_systems_relevance": "Coordinates, funds, regulates, or accelerates Virginia's unmanned-systems ecosystem.",
+      "website_url": "https://www.auvsiridgeandvalley.org/"
     },
     {
       "capabilities": [
@@ -1786,6 +1854,42 @@
       ],
       "unmanned_systems_relevance": "Crewe Muni is included as public aviation infrastructure serving Crewe. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Culpeper",
+      "latitude": 38.473,
+      "location_precision": "locality",
+      "longitude": -77.996,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Culpeper Police Department Drone Team",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Central Virginia",
+      "short_description": "Municipal police drone team supporting searches, fire response, tactical incidents, investigations, and regional mutual aid.",
+      "sources": [
+        {
+          "title": "Culpeper Police Department FY2025 Annual Report",
+          "url": "https://files.culpeperva.gov/FY25%20TOC%20Annual%20Report.pdf"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://files.culpeperva.gov/FY25%20TOC%20Annual%20Report.pdf"
     },
     {
       "capabilities": [
@@ -2965,6 +3069,181 @@
     {
       "capabilities": [
         "Autonomy and artificial intelligence",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Fairfax",
+      "latitude": 38.846,
+      "location_precision": "locality",
+      "longitude": -77.307,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "George Mason MICO Laboratory",
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Northern Virginia",
+      "short_description": "Laboratory researching control, optimization, and learning for multi-robot systems, autonomous driving, and human-robot teams.",
+      "sources": [
+        {
+          "title": "George Mason Multi-agent Intelligence, Control, and Optimization Lab",
+          "url": "https://mason.gmu.edu/~xwang64/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Develops robotics, perception, planning, control, or connected-vehicle capabilities that support autonomous ground and cross-domain systems.",
+      "website_url": "https://mason.gmu.edu/~xwang64/"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Fairfax",
+      "latitude": 38.846,
+      "location_precision": "locality",
+      "longitude": -77.307,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "George Mason Northern Virginia DFR Planning Study",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Northern Virginia",
+      "short_description": "Regional simulation and optimization study evaluating drone-as-first-responder coverage and base locations across Northern Virginia.",
+      "sources": [
+        {
+          "title": "George Mason C5I Northern Virginia DFR Study",
+          "url": "https://c5i.gmu.edu/2025/10/c5i-center-leads-drone-as-a-first-responder-study-for-northern-virginia/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Test and operational environments"
+      ],
+      "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
+      "website_url": "https://c5i.gmu.edu/2025/10/c5i-center-leads-drone-as-a-first-responder-study-for-northern-virginia/"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Fairfax",
+      "latitude": 38.846,
+      "location_precision": "locality",
+      "longitude": -77.307,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "George Mason RobotiXX Laboratory",
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Northern Virginia",
+      "short_description": "Field-robotics laboratory developing motion-planning and machine-learning methods for robust mobile autonomy.",
+      "sources": [
+        {
+          "title": "George Mason RobotiXX Laboratory",
+          "url": "https://robotixx.cs.gmu.edu/index.html"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Develops robotics, perception, planning, control, or connected-vehicle capabilities that support autonomous ground and cross-domain systems.",
+      "website_url": "https://robotixx.cs.gmu.edu/index.html"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Fairfax",
+      "latitude": 38.846,
+      "location_precision": "locality",
+      "longitude": -77.307,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "George Mason SPARX",
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Northern Virginia",
+      "short_description": "Swarming Platform for Autonomous Robots X research program developing and testing coordinated low-cost robot teams.",
+      "sources": [
+        {
+          "title": "George Mason Controls and Robotics Research",
+          "url": "https://electrical.gmu.edu/research/controls-and-robotics"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Develops robotics, perception, planning, control, or connected-vehicle capabilities that support autonomous ground and cross-domain systems.",
+      "website_url": "https://electrical.gmu.edu/research/controls-and-robotics"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Fairfax",
+      "latitude": 38.846,
+      "location_precision": "locality",
+      "longitude": -77.307,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "George Mason Starship Autonomous Delivery Fleet",
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Northern Virginia",
+      "short_description": "Operational campus fleet of autonomous sidewalk robots providing recurring food-delivery service at George Mason.",
+      "sources": [
+        {
+          "title": "George Mason Starship Robot Delivery Service",
+          "url": "https://abs.gmu.edu/services/dining/transition-updates/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Develops robotics, perception, planning, control, or connected-vehicle capabilities that support autonomous ground and cross-domain systems.",
+      "website_url": "https://abs.gmu.edu/services/dining/transition-updates/"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
         "Systems engineering and integration"
       ],
       "city": "Fairfax",
@@ -3281,6 +3560,42 @@
       ],
       "unmanned_systems_relevance": "Hanover County Muni is included as public aviation infrastructure serving Richmond / Ashland. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Hanover",
+      "latitude": 37.766,
+      "location_precision": "locality",
+      "longitude": -77.37,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Hanover County Sheriff's Office sUAS Team",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Greater Richmond",
+      "short_description": "Sheriff's Office team supporting missing-person searches, crash documentation, situational awareness, and high-risk missions.",
+      "sources": [
+        {
+          "title": "Hanover County Sheriff's Office sUAS Team",
+          "url": "https://www.hanoversheriff.com/412/sUAS-Team"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.hanoversheriff.com/412/sUAS-Team"
     },
     {
       "capabilities": [
@@ -3688,6 +4003,44 @@
       ],
       "unmanned_systems_relevance": "Provides advanced manufacturing, modeling, sensing, communications, or prototyping capacity that enables unmanned-system development and scale-up.",
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
+    },
+    {
+      "address_line": "4600 Opportunity Way",
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Williamsburg",
+      "latitude": 37.337991,
+      "location_precision": "site",
+      "longitude": -76.757712,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "James City County Police Drone as First Responder Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "23188",
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Hampton Roads",
+      "short_description": "Police DFR test and operations program providing incident-based aerial awareness and supporting research into drone-delivered AEDs.",
+      "sources": [
+        {
+          "title": "James City County Police Drone as First Responder Program",
+          "url": "https://www.jamescitycountyva.gov/m/newsflash/Home/Detail/6334"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.jamescitycountyva.gov/m/newsflash/Home/Detail/6334"
     },
     {
       "capabilities": [
@@ -4878,6 +5231,42 @@
       ],
       "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "city": "Fairfax",
+      "latitude": 38.846,
+      "location_precision": "locality",
+      "longitude": -77.307,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Mason Innovation Exchange Autonomous Systems Short Courses",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Northern Virginia",
+      "short_description": "Hands-on short courses in drone prototyping, autonomous robotics, sensor integration, and lighter-than-air uncrewed vehicles.",
+      "sources": [
+        {
+          "title": "Mason Innovation Exchange Short Course Programs",
+          "url": "https://www.mix.gmu.edu/mix-short-course-programs"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or experiential-learning pathway in autonomous vehicles, robotics, uncrewed aircraft, sensing, integration, or prototyping.",
+      "website_url": "https://www.mix.gmu.edu/mix-short-course-programs"
     },
     {
       "capabilities": [
@@ -6704,6 +7093,42 @@
     },
     {
       "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Orange",
+      "latitude": 38.245,
+      "location_precision": "locality",
+      "longitude": -78.013,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Orange County Sheriff's Office Drone Team",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Central Virginia",
+      "short_description": "Sheriff's Office drone team documented in a 2026 regional deployment supporting a search for fleeing armed subjects.",
+      "sources": [
+        {
+          "title": "Louisa County: Orange County Drone Team Deployment",
+          "url": "https://www.louisacounty.gov/m/newsflash?cat=22%2C1"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.louisacounty.gov/m/newsflash?cat=22%2C1"
+    },
+    {
+      "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration"
       ],
@@ -8237,6 +8662,40 @@
     {
       "capabilities": [
         "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "city": "Wise",
+      "latitude": 36.975,
+      "location_precision": "locality",
+      "longitude": -82.576,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "University of Virginia's College at Wise",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "provenance": "university-institution",
+      "record_type": "university",
+      "region": "Southwest Virginia",
+      "short_description": "Public liberal-arts college represented by a regional robotics, drone, coding, and autonomous-systems outreach program.",
+      "sources": [
+        {
+          "title": "University of Virginia's College at Wise",
+          "url": "https://www.uvawise.edu/about"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "University of Virginia's College at Wise is mapped at the institution level to connect its source-backed unmanned-systems research, education, operations, facilities, and programs.",
+      "website_url": "https://www.uvawise.edu/about"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
         "Navigation and positioning",
         "Perception, sensing, and sensor fusion"
       ],
@@ -8446,6 +8905,42 @@
       ],
       "unmanned_systems_relevance": "Develops robotics, perception, planning, control, or connected-vehicle capabilities that support autonomous ground and cross-domain systems.",
       "website_url": "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/research/robotics-dynamics-and-autonomous-systems"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "city": "Wise",
+      "latitude": 36.975,
+      "location_precision": "locality",
+      "longitude": -82.576,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "UVA Wise STREAMWISE Robot Drone League",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Southwest Virginia",
+      "short_description": "Regional workforce-outreach program using drones, robots, coding, competitions, and a campus learning hub to build autonomous-systems skills.",
+      "sources": [
+        {
+          "title": "UVA Wise STREAMWISE Robotics and Drone Programs",
+          "url": "https://www.uvawise.edu/news/2025/10/empowering-next-generation-innovators-through-streamwise"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or experiential-learning pathway in autonomous vehicles, robotics, uncrewed aircraft, sensing, integration, or prototyping.",
+      "website_url": "https://www.uvawise.edu/news/2025/10/empowering-next-generation-innovators-through-streamwise"
     },
     {
       "capabilities": [
@@ -9905,6 +10400,41 @@
     },
     {
       "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Blacksburg",
+      "latitude": 37.229,
+      "location_precision": "locality",
+      "longitude": -80.414,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Virginia Tech GobbleBot Autonomous Delivery Robot",
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "New River Valley",
+      "short_description": "Student project developing an autonomous food-delivery robot and the supporting engineering and commercialization pathway.",
+      "sources": [
+        {
+          "title": "Virginia Tech IDPro Projects",
+          "url": "https://idpro.icat.vt.edu/projects.html"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Develops robotics, perception, planning, control, or connected-vehicle capabilities that support autonomous ground and cross-domain systems.",
+      "website_url": "https://idpro.icat.vt.edu/projects.html"
+    },
+    {
+      "capabilities": [
         "Perception, sensing, and sensor fusion",
         "Data engineering, analytics, and edge computing"
       ],
@@ -10005,6 +10535,111 @@
       ],
       "unmanned_systems_relevance": "Provides advanced manufacturing, modeling, sensing, communications, or prototyping capacity that enables unmanned-system development and scale-up.",
       "website_url": "https://made.vt.edu/robotics-autonomy.html"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Blacksburg",
+      "latitude": 37.229,
+      "location_precision": "locality",
+      "longitude": -80.414,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Virginia Tech Mission Systems Division",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "New River Valley",
+      "short_description": "National-security research division developing autonomous platforms, resilient control, maritime sensing, and airborne and spaceborne systems.",
+      "sources": [
+        {
+          "title": "Virginia Tech Mission Systems Division",
+          "url": "https://nationalsecurity.vt.edu/research/mission-systems-division.html"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Test and operational environments"
+      ],
+      "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
+      "website_url": "https://nationalsecurity.vt.edu/research/mission-systems-division.html"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Blacksburg",
+      "latitude": 37.229,
+      "location_precision": "locality",
+      "longitude": -80.414,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Virginia Tech RoboGrinder",
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "New River Valley",
+      "short_description": "Student design team building terrestrial and aerial robots for tele-operated and fully autonomous RoboMaster competition missions.",
+      "sources": [
+        {
+          "title": "Virginia Tech IDPro Projects",
+          "url": "https://idpro.icat.vt.edu/projects.html"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Develops robotics, perception, planning, control, or connected-vehicle capabilities that support autonomous ground and cross-domain systems.",
+      "website_url": "https://idpro.icat.vt.edu/projects.html"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Blacksburg",
+      "latitude": 37.229,
+      "location_precision": "locality",
+      "longitude": -80.414,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Virginia Tech SpaceDrones Laboratory",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "New River Valley",
+      "short_description": "Collaborative hardware and software laboratory for autonomous space applications, distributed UAS, and vision-based tracking.",
+      "sources": [
+        {
+          "title": "Virginia Tech SpaceDrones Laboratory",
+          "url": "https://spacedrones.aoe.vt.edu/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Test and operational environments"
+      ],
+      "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
+      "website_url": "https://spacedrones.aoe.vt.edu/"
     },
     {
       "capabilities": [
@@ -10176,6 +10811,42 @@
       ],
       "unmanned_systems_relevance": "Coordinates, funds, regulates, or accelerates Virginia's unmanned-systems ecosystem.",
       "website_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "city": "Roanoke",
+      "latitude": 37.271,
+      "location_precision": "locality",
+      "longitude": -79.941,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Virginia Western Autonomous Vehicle Technology Certificate",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Roanoke Valley",
+      "short_description": "Career Studies Certificate combining mechatronics with autonomous-vehicle operation, troubleshooting, robotics, and industry credentials.",
+      "sources": [
+        {
+          "title": "Virginia Western Autonomous Vehicle Technology",
+          "url": "https://www.virginiawestern.edu/academics/mechatronics/autonomous-vehicle-technology/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or experiential-learning pathway in autonomous vehicles, robotics, uncrewed aircraft, sensing, integration, or prototyping.",
+      "website_url": "https://www.virginiawestern.edu/academics/mechatronics/autonomous-vehicle-technology/"
     },
     {
       "capabilities": [
@@ -10971,6 +11642,31 @@
       "type": "supports"
     },
     {
+      "from": "Virginia Tech",
+      "to": "Autonomous Aerial Vehicles at Virginia Tech",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "Virginia Tech SpaceDrones Laboratory",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "Virginia Tech Mission Systems Division",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "Virginia Tech RoboGrinder",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Tech",
+      "to": "Virginia Tech GobbleBot Autonomous Delivery Robot",
+      "type": "supports"
+    },
+    {
       "from": "University of Virginia",
       "to": "UVA Link Lab",
       "type": "supports"
@@ -11086,6 +11782,36 @@
       "type": "supports"
     },
     {
+      "from": "George Mason University",
+      "to": "George Mason Starship Autonomous Delivery Fleet",
+      "type": "supports"
+    },
+    {
+      "from": "George Mason University",
+      "to": "George Mason SPARX",
+      "type": "supports"
+    },
+    {
+      "from": "George Mason University",
+      "to": "George Mason MICO Laboratory",
+      "type": "supports"
+    },
+    {
+      "from": "George Mason University",
+      "to": "George Mason RobotiXX Laboratory",
+      "type": "supports"
+    },
+    {
+      "from": "George Mason University",
+      "to": "Mason Innovation Exchange Autonomous Systems Short Courses",
+      "type": "supports"
+    },
+    {
+      "from": "George Mason University",
+      "to": "George Mason Northern Virginia DFR Planning Study",
+      "type": "supports"
+    },
+    {
       "from": "James Madison University",
       "to": "JMU X-Labs",
       "type": "supports"
@@ -11178,6 +11904,11 @@
     {
       "from": "Richard Bland College",
       "to": "Energy-Centric UAS Center for Critical Infrastructure",
+      "type": "supports"
+    },
+    {
+      "from": "University of Virginia's College at Wise",
+      "to": "UVA Wise STREAMWISE Robot Drone League",
       "type": "supports"
     },
     {

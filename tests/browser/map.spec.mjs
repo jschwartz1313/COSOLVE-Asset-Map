@@ -1,4 +1,9 @@
 import { expect, test } from "@playwright/test";
+import { readFileSync } from "node:fs";
+
+const catalog = JSON.parse(
+  readFileSync(new URL("../../data/virginia_real_assets.json", import.meta.url), "utf8"),
+);
 
 test("map layers toggle without moving the reset control", async ({ page }) => {
   await page.goto("/map/");
@@ -367,7 +372,7 @@ test("Hampton Roads records expose site-level location quality", async ({ page }
 
 test("large map results render in responsive batches", async ({ page }) => {
   await page.goto("/map/");
-  await expect(page.locator("#result-count")).toHaveText("232");
+  await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
   await expect(page.locator(".result-row")).toHaveCount(50);
   await expect(page.getByRole("button", { name: "Show 50 more" })).toBeVisible();
 });

@@ -66,6 +66,22 @@ SOURCES = {
         "Virginia Tech Robotics and Autonomy",
         "https://made.vt.edu/robotics-autonomy.html",
     ),
+    "vt_aav": (
+        "Autonomous Aerial Vehicles at Virginia Tech",
+        "https://www.vtaav.org/our-team",
+    ),
+    "vt_spacedrones": (
+        "Virginia Tech SpaceDrones Laboratory",
+        "https://spacedrones.aoe.vt.edu/",
+    ),
+    "vt_mission_systems": (
+        "Virginia Tech Mission Systems Division",
+        "https://nationalsecurity.vt.edu/research/mission-systems-division.html",
+    ),
+    "vt_idpro": (
+        "Virginia Tech IDPro Projects",
+        "https://idpro.icat.vt.edu/projects.html",
+    ),
     "nasa_certain": (
         "NASA Langley Drone Flying Site",
         "https://www.nasa.gov/centers-and-facilities/langley/"
@@ -110,6 +126,10 @@ SOURCES = {
     "vccs_system": (
         "Virginia Community College System Unmanned Systems Courses",
         "https://courses.vccs.edu/courses/UMS-UnmannedSystems",
+    ),
+    "vwcc_autonomous": (
+        "Virginia Western Autonomous Vehicle Technology",
+        "https://www.virginiawestern.edu/academics/mechatronics/autonomous-vehicle-technology/",
     ),
     "vsp_uas": (
         "Virginia State Police Department History",
@@ -176,6 +196,30 @@ SOURCES = {
     "gmu_police_uas": (
         "George Mason University Police UAS Flight Log",
         "https://police.gmu.edu/records-and-reporting/uas-drone-flight-log/",
+    ),
+    "gmu_starship": (
+        "George Mason Starship Robot Delivery Service",
+        "https://abs.gmu.edu/services/dining/transition-updates/",
+    ),
+    "gmu_sparx": (
+        "George Mason Controls and Robotics Research",
+        "https://electrical.gmu.edu/research/controls-and-robotics",
+    ),
+    "gmu_mico": (
+        "George Mason Multi-agent Intelligence, Control, and Optimization Lab",
+        "https://mason.gmu.edu/~xwang64/",
+    ),
+    "gmu_robotixx": (
+        "George Mason RobotiXX Laboratory",
+        "https://robotixx.cs.gmu.edu/index.html",
+    ),
+    "gmu_mix": (
+        "Mason Innovation Exchange Short Course Programs",
+        "https://www.mix.gmu.edu/mix-short-course-programs",
+    ),
+    "gmu_c5i_dfr": (
+        "George Mason C5I Northern Virginia DFR Study",
+        "https://c5i.gmu.edu/2025/10/c5i-center-leads-drone-as-a-first-responder-study-for-northern-virginia/",
     ),
     "virginia_beach_uas": (
         "CISA: City of Virginia Beach UAS Emergency Operations Program",
@@ -275,6 +319,14 @@ SOURCES = {
     "university_ehc": ("Emory & Henry University: About", "https://www.ehc.edu/about/"),
     "ehc_drone": ("Emory & Henry Drone Pilot Test Preparation", "https://catalog.ehc.edu/envs-330"),
     "university_rbc": ("Richard Bland College", "https://www.rbc.edu/"),
+    "university_uvawise": (
+        "University of Virginia's College at Wise",
+        "https://www.uvawise.edu/about",
+    ),
+    "uvawise_streamwise": (
+        "UVA Wise STREAMWISE Robotics and Drone Programs",
+        "https://www.uvawise.edu/news/2025/10/empowering-next-generation-innovators-through-streamwise",
+    ),
     "rbc_uas_certificate": (
         "Richard Bland College Programs and Degrees",
         "https://www.rbc.edu/academics/programs-degree/",
@@ -452,6 +504,26 @@ SOURCES = {
         "Richmond Police Small Unmanned Aerial Vehicle Policy",
         "https://rva.gov/sites/default/files/2024-02/GO%2006-32%20Unmanned%20Aerial%20Vehicle.pdf",
     ),
+    "james_city_dfr": (
+        "James City County Police Drone as First Responder Program",
+        "https://www.jamescitycountyva.gov/m/newsflash/Home/Detail/6334",
+    ),
+    "hanover_uas": (
+        "Hanover County Sheriff's Office sUAS Team",
+        "https://www.hanoversheriff.com/412/sUAS-Team",
+    ),
+    "culpeper_uas": (
+        "Culpeper Police Department FY2025 Annual Report",
+        "https://files.culpeperva.gov/FY25%20TOC%20Annual%20Report.pdf",
+    ),
+    "orange_uas": (
+        "Louisa County: Orange County Drone Team Deployment",
+        "https://www.louisacounty.gov/m/newsflash?cat=22%2C1",
+    ),
+    "auvsi_ridge": (
+        "AUVSI Ridge and Valley Chapter",
+        "https://www.auvsiridgeandvalley.org/",
+    ),
     "nswc_dahlgren": (
         "NSWC Dahlgren Division: What We Do",
         "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/What-We-Do/",
@@ -522,6 +594,24 @@ PROFILES = {
         "relevance": (
             "Builds a documented education or credential pathway for unmanned-systems operators, "
             "maintainers, engineers, or technicians."
+        ),
+    },
+    "workforce_robotics": {
+        "categories": ["Workforce and talent"],
+        "domains": [
+            "Unmanned aircraft systems",
+            "Ground vehicles and robotics",
+            "Cross-domain autonomy",
+        ],
+        "capabilities": [
+            "Autonomy and artificial intelligence",
+            "Systems engineering and integration",
+            "Manufacturing, materials, and prototyping",
+        ],
+        "missions": ["Training and experimentation"],
+        "relevance": (
+            "Builds a documented education or experiential-learning pathway in autonomous "
+            "vehicles, robotics, uncrewed aircraft, sensing, integration, or prototyping."
         ),
     },
     "company_air": {
@@ -738,6 +828,7 @@ PLACES = {
     "Chester": (37.356, -77.442),
     "Christiansburg": (37.130, -80.409),
     "Clifton Forge": (37.817, -79.824),
+    "Culpeper": (38.473, -77.996),
     "Danville": (36.586, -79.395),
     "Dahlgren": (38.333, -77.031),
     "Dulles": (38.955, -77.448),
@@ -749,6 +840,7 @@ PLACES = {
     "Front Royal": (38.918, -78.194),
     "Glen Allen": (37.666, -77.506),
     "Hampton": (37.030, -76.346),
+    "Hanover": (37.766, -77.370),
     "Harrisonburg": (38.449, -78.869),
     "Henrico": (37.632, -77.515),
     "Lynchburg": (37.414, -79.142),
@@ -762,6 +854,7 @@ PLACES = {
     "Middletown": (39.027, -78.280),
     "Newport News": (37.087, -76.473),
     "Norfolk": (36.851, -76.286),
+    "Orange": (38.245, -78.013),
     "Portsmouth": (36.836, -76.298),
     "Petersburg": (37.227, -77.402),
     "Prince George": (37.221, -77.289),
@@ -825,6 +918,16 @@ HAMPTON_ROADS_LOCATIONS = {
         "latitude": None,
         "longitude": None,
         "location_precision": "regional",
+    },
+    "James City County Police Drone as First Responder Program": {
+        "address_line": "4600 Opportunity Way",
+        "postal_code": "23188",
+        "latitude": 37.337991,
+        "longitude": -76.757712,
+        "source": (
+            "James City County DFR test-flight location",
+            "https://www.jamescitycountyva.gov/m/newsflash/Home/Detail/6334",
+        ),
     },
     "Christopher Newport University": {
         "address_line": "1 Avenue of the Arts",
@@ -1451,6 +1554,11 @@ UNIVERSITY_ASSETS = [
             "Virginia Tech Eastern Shore AREC Drone Application Research",
             "Virginia Tech Counter UAS Research and Testing Center",
             "Virginia Tech Uncrewed Systems Laboratory",
+            "Autonomous Aerial Vehicles at Virginia Tech",
+            "Virginia Tech SpaceDrones Laboratory",
+            "Virginia Tech Mission Systems Division",
+            "Virginia Tech RoboGrinder",
+            "Virginia Tech GobbleBot Autonomous Delivery Robot",
         ],
     ),
     (
@@ -1519,6 +1627,12 @@ UNIVERSITY_ASSETS = [
             "George Mason Autonomous Robotics Laboratory",
             "George Mason Center for Air Transportation Systems Research",
             "George Mason University Police UAS Team",
+            "George Mason Starship Autonomous Delivery Fleet",
+            "George Mason SPARX",
+            "George Mason MICO Laboratory",
+            "George Mason RobotiXX Laboratory",
+            "Mason Innovation Exchange Autonomous Systems Short Courses",
+            "George Mason Northern Virginia DFR Planning Study",
         ],
     ),
     (
@@ -1628,6 +1742,14 @@ UNIVERSITY_ASSETS = [
             "Richard Bland College Uncrewed Aerial Systems Certificate",
             "Energy-Centric UAS Center for Critical Infrastructure",
         ],
+    ),
+    (
+        "University of Virginia's College at Wise",
+        "Wise",
+        "Southwest Virginia",
+        "Public liberal-arts college represented by a regional robotics, drone, coding, and autonomous-systems outreach program.",
+        "university_uvawise",
+        ["UVA Wise STREAMWISE Robot Drone League"],
     ),
 ]
 
@@ -1740,6 +1862,51 @@ CURATED_ASSETS = [
         "research_ground",
         "University-wide network connecting autonomous-systems and robotics research groups.",
         "vedp",
+    ),
+    (
+        "Autonomous Aerial Vehicles at Virginia Tech",
+        "program",
+        "Blacksburg",
+        "New River Valley",
+        "research_air",
+        "Student engineering team developing autonomous aircraft for payload delivery, obstacle avoidance, mapping, and search and rescue.",
+        "vt_aav",
+    ),
+    (
+        "Virginia Tech SpaceDrones Laboratory",
+        "facility",
+        "Blacksburg",
+        "New River Valley",
+        "research_air",
+        "Collaborative hardware and software laboratory for autonomous space applications, distributed UAS, and vision-based tracking.",
+        "vt_spacedrones",
+    ),
+    (
+        "Virginia Tech Mission Systems Division",
+        "organization",
+        "Blacksburg",
+        "New River Valley",
+        "research_air",
+        "National-security research division developing autonomous platforms, resilient control, maritime sensing, and airborne and spaceborne systems.",
+        "vt_mission_systems",
+    ),
+    (
+        "Virginia Tech RoboGrinder",
+        "program",
+        "Blacksburg",
+        "New River Valley",
+        "research_ground",
+        "Student design team building terrestrial and aerial robots for tele-operated and fully autonomous RoboMaster competition missions.",
+        "vt_idpro",
+    ),
+    (
+        "Virginia Tech GobbleBot Autonomous Delivery Robot",
+        "program",
+        "Blacksburg",
+        "New River Valley",
+        "research_ground",
+        "Student project developing an autonomous food-delivery robot and the supporting engineering and commercialization pathway.",
+        "vt_idpro",
     ),
     # University of Virginia.
     (
@@ -1886,6 +2053,60 @@ CURATED_ASSETS = [
         "research_air",
         "Research center focused on air transportation systems, operations, modeling, and analysis.",
         "vedp",
+    ),
+    (
+        "George Mason Starship Autonomous Delivery Fleet",
+        "program",
+        "Fairfax",
+        "Northern Virginia",
+        "research_ground",
+        "Operational campus fleet of autonomous sidewalk robots providing recurring food-delivery service at George Mason.",
+        "gmu_starship",
+    ),
+    (
+        "George Mason SPARX",
+        "program",
+        "Fairfax",
+        "Northern Virginia",
+        "research_ground",
+        "Swarming Platform for Autonomous Robots X research program developing and testing coordinated low-cost robot teams.",
+        "gmu_sparx",
+    ),
+    (
+        "George Mason MICO Laboratory",
+        "facility",
+        "Fairfax",
+        "Northern Virginia",
+        "research_ground",
+        "Laboratory researching control, optimization, and learning for multi-robot systems, autonomous driving, and human-robot teams.",
+        "gmu_mico",
+    ),
+    (
+        "George Mason RobotiXX Laboratory",
+        "facility",
+        "Fairfax",
+        "Northern Virginia",
+        "research_ground",
+        "Field-robotics laboratory developing motion-planning and machine-learning methods for robust mobile autonomy.",
+        "gmu_robotixx",
+    ),
+    (
+        "Mason Innovation Exchange Autonomous Systems Short Courses",
+        "program",
+        "Fairfax",
+        "Northern Virginia",
+        "workforce_robotics",
+        "Hands-on short courses in drone prototyping, autonomous robotics, sensor integration, and lighter-than-air uncrewed vehicles.",
+        "gmu_mix",
+    ),
+    (
+        "George Mason Northern Virginia DFR Planning Study",
+        "program",
+        "Fairfax",
+        "Northern Virginia",
+        "research_air",
+        "Regional simulation and optimization study evaluating drone-as-first-responder coverage and base locations across Northern Virginia.",
+        "gmu_c5i_dfr",
     ),
     (
         "JMU X-Labs",
@@ -2122,6 +2343,24 @@ CURATED_ASSETS = [
         "workforce",
         "Statewide community-college UMS curriculum spanning remote-pilot ground school, operations, maintenance, imaging, and internships.",
         "vccs_system",
+    ),
+    (
+        "Virginia Western Autonomous Vehicle Technology Certificate",
+        "program",
+        "Roanoke",
+        "Roanoke Valley",
+        "workforce_robotics",
+        "Career Studies Certificate combining mechatronics with autonomous-vehicle operation, troubleshooting, robotics, and industry credentials.",
+        "vwcc_autonomous",
+    ),
+    (
+        "UVA Wise STREAMWISE Robot Drone League",
+        "program",
+        "Wise",
+        "Southwest Virginia",
+        "workforce_robotics",
+        "Regional workforce-outreach program using drones, robots, coding, competitions, and a campus learning hub to build autonomous-systems skills.",
+        "uvawise_streamwise",
     ),
     # Virginia unmanned-systems companies and documented programs.
     (
@@ -2466,6 +2705,15 @@ CURATED_ASSETS = [
         "state",
         "Regional industry chapter connecting unmanned-systems stakeholders in Hampton Roads.",
         "vedp",
+    ),
+    (
+        "AUVSI Ridge and Valley Chapter",
+        "organization",
+        "Blacksburg",
+        "New River Valley",
+        "state",
+        "Regional AUVSI chapter connecting uncrewed-systems research, testing, manufacturing, and industry stakeholders.",
+        "auvsi_ridge",
     ),
     # Port and intermodal infrastructure.
     (
@@ -3299,6 +3547,42 @@ CURATED_ASSETS = [
         "public_safety",
         "Police small-UAV program governed for emergency and exigent public-safety deployments.",
         "richmond_police_uas",
+    ),
+    (
+        "James City County Police Drone as First Responder Program",
+        "program",
+        "Williamsburg",
+        "Hampton Roads",
+        "public_safety",
+        "Police DFR test and operations program providing incident-based aerial awareness and supporting research into drone-delivered AEDs.",
+        "james_city_dfr",
+    ),
+    (
+        "Hanover County Sheriff's Office sUAS Team",
+        "program",
+        "Hanover",
+        "Greater Richmond",
+        "public_safety",
+        "Sheriff's Office team supporting missing-person searches, crash documentation, situational awareness, and high-risk missions.",
+        "hanover_uas",
+    ),
+    (
+        "Culpeper Police Department Drone Team",
+        "program",
+        "Culpeper",
+        "Central Virginia",
+        "public_safety",
+        "Municipal police drone team supporting searches, fire response, tactical incidents, investigations, and regional mutual aid.",
+        "culpeper_uas",
+    ),
+    (
+        "Orange County Sheriff's Office Drone Team",
+        "program",
+        "Orange",
+        "Central Virginia",
+        "public_safety",
+        "Sheriff's Office drone team documented in a 2026 regional deployment supporting a search for fleeing armed subjects.",
+        "orange_uas",
     ),
     # Federal autonomy research and engineering facilities.
     (
