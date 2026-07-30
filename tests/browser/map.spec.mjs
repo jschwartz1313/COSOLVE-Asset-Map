@@ -151,6 +151,13 @@ test("print view preserves asset marker and legend colors", async ({ page }) => 
   await expect(legendDot).toHaveCSS("background-color", "rgb(47, 111, 159)");
   await expect(marker).toHaveCSS("print-color-adjust", "exact");
   await expect(legendDot).toHaveCSS("print-color-adjust", "exact");
+
+  const mapBox = await page.locator("#map").boundingBox();
+  const headingBox = await page.locator(".print-map-heading").boundingBox();
+  const legendBox = await page.locator(".map-legend").boundingBox();
+  expect(legendBox.y).toBeGreaterThanOrEqual(mapBox.y + 8);
+  expect(legendBox.y).toBeGreaterThanOrEqual(headingBox.y + headingBox.height);
+  expect(legendBox.y + legendBox.height).toBeLessThanOrEqual(mapBox.y + mapBox.height);
 });
 
 test("empty filters preserve the complete map result set", async ({ page }) => {
