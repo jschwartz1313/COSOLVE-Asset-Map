@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260730-6">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260730-7">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
@@ -43,6 +43,11 @@
     </header>
     <p class="visually-hidden" id="map-accessibility-note">Use the adjacent results list or directory for a text-based view of every mapped asset.</p>
     <div id="map" role="region" tabindex="0" aria-label="Interactive map of public asset listings" aria-describedby="map-accessibility-note"></div>
+    <section class="print-analysis-report" aria-label="Printable asset register">
+      <header><span class="eyebrow">COSOLVE geographic asset intelligence</span><h2 id="print-report-title">Current map asset report</h2><p id="print-report-context"></p></header>
+      <table><thead><tr><th>Asset</th><th>Type</th><th>Region</th><th>Location precision</th><th>Review status</th></tr></thead><tbody id="print-report-rows"></tbody></table>
+      <p class="print-methodology">This report represents the documented public-source inventory and map selection as of the generated date. Counts indicate catalog coverage and should not be interpreted as proof that an undocumented capability is absent.</p>
+    </section>
     <button class="button compact presentation-exit" id="exit-presentation" type="button" hidden>Exit presentation</button>
     <div class="map-toolbar">
       <div class="map-tools">
@@ -161,6 +166,6 @@
 </main>
 <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
 <script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
-<script type="module" src="{% static 'js/map-viewer.js' %}?v=20260730-6"></script>
+  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260730-7"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}

@@ -15,6 +15,11 @@ ROLE_PERMISSIONS = {
     "COSOLVE Reviewer": {
         "assets.change_asset",
         "assets.can_verify_asset",
+        "assets.view_assetreviewcomment",
+        "assets.add_assetreviewcomment",
+        "assets.change_assetreviewcomment",
+        "assets.view_duplicatecandidate",
+        "assets.change_duplicatecandidate",
         "sources.change_source",
     },
     "COSOLVE Editor": {

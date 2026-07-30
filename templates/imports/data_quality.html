@@ -7,9 +7,15 @@
   <div class="quality-actions">
     {% if perms.assets.can_export_asset %}<a class="button" href="{% url 'imports:export' %}?scope=all">Export complete working CSV</a>{% endif %}
     {% if perms.assets.add_asset %}<a class="button" href="{% url 'imports:preview' %}">Import reviewed CSV</a>{% endif %}
+    <a class="button" href="{% url 'imports:audit-log' %}">Open audit log</a>
+    {% if perms.assets.change_duplicatecandidate %}<form method="post" action="{% url 'imports:scan-duplicates' %}">{% csrf_token %}<button class="button" type="submit">Refresh duplicate scan</button></form>{% endif %}
     <span>Latest automated source check: {{ last_source_check|date:"M j, Y g:i A"|default:"Not run yet" }}</span>
   </div>
   <div class="quality-summary">
+    <div><strong>{{ my_review_queue_count }}</strong><span>assigned to me</span></div>
+    <div><strong>{{ overdue_review_count }}</strong><span>reviews overdue</span></div>
+    <div><strong>{{ unassigned_review_count }}</strong><span>reviews unassigned</span></div>
+    <div><strong>{{ open_duplicate_count }}</strong><span>duplicate pairs open</span></div>
     <div><strong>{{ stale_count }}</strong><span>stale or unverified</span></div>
     <div><strong>{{ missing_sources_count }}</strong><span>missing public sources</span></div>
     <div><strong>{{ missing_coordinates_count }}</strong><span>missing coordinates</span></div>
@@ -23,6 +29,45 @@
     <div><strong>{{ outside_virginia_count }}</strong><span>location outliers</span></div>
     <div><strong>{{ undated_sources_count }}</strong><span>undated sources</span></div>
   </div>
+  <section class="quality-workspace">
+    <div class="section-heading">
+      <div><h2>Verification work queue</h2><p>Assignments, due dates, and internal comments are maintained on each asset record.</p></div>
+      <a class="button" href="{% url 'admin:assets_asset_changelist' %}?status__exact=needs-review">Open bulk review tools</a>
+    </div>
+    <div class="coverage-grid">
+      <div>
+        <h3>Reviewer workload</h3>
+        <div class="quality-table-wrap"><table><thead><tr><th>Reviewer</th><th>Open</th><th>Overdue</th></tr></thead><tbody>
+          {% for row in reviewer_workload %}<tr><th>{% if row.review_assignee_id %}{{ row.review_assignee__first_name }} {{ row.review_assignee__last_name }}{% if not row.review_assignee__first_name %}{{ row.review_assignee__username }}{% endif %}{% else %}Unassigned{% endif %}</th><td>{{ row.total }}</td><td>{{ row.overdue }}</td></tr>{% empty %}<tr><td colspan="3">No records are awaiting review.</td></tr>{% endfor %}
+        </tbody></table></div>
+      </div>
+      <div>
+        <h3>Source monitor</h3>
+        <dl class="source-health">
+          <div><dt>Public sources</dt><dd>{{ public_source_count }}</dd></div>
+          <div><dt>Healthy checks in the last 7 days</dt><dd>{{ healthy_source_count }}</dd></div>
+          <div><dt>Not checked in the last 7 days</dt><dd>{{ unchecked_source_count }}</dd></div>
+          <div><dt>Links needing attention</dt><dd>{{ broken_sources_count }}</dd></div>
+        </dl>
+        <p class="help">The production Blueprint runs the source-link monitor daily. Manual decisions and notes remain attached to each source.</p>
+      </div>
+    </div>
+  </section>
+  <details class="quality-section" {% if my_review_queue_count %}open{% endif %}><summary><span>Assigned to me</span><strong>{{ my_review_queue_count }}</strong></summary>{% include "imports/quality_table.html" with assets=my_review_queue empty_message="No open reviews are assigned to you." %}</details>
+  <details class="quality-section" {% if overdue_review_count %}open{% endif %}><summary><span>Overdue reviews</span><strong>{{ overdue_review_count }}</strong></summary>{% include "imports/quality_table.html" with assets=overdue_reviews empty_message="No reviews are overdue." %}</details>
+  <details class="quality-section"><summary><span>Unassigned reviews</span><strong>{{ unassigned_review_count }}</strong></summary>{% include "imports/quality_table.html" with assets=unassigned_reviews empty_message="Every open review has an owner." %}</details>
+  <section class="quality-workspace">
+    <h2>Documented coverage gaps</h2>
+    <p>These cells describe gaps in the current catalog, not proof that a capability is absent from a region. Zero records are marked missing; one or two records are marked sparse.</p>
+    <div class="quality-table-wrap"><table class="gap-matrix"><thead><tr><th>Region</th>{% for value, label in record_type_choices %}<th>{{ label }}</th>{% endfor %}<th>Gaps</th></tr></thead><tbody>
+      {% for row in gap_rows %}<tr><th>{{ row.region.name }}</th>{% for cell in row.cells %}<td class="gap-{{ cell.status }}" title="{{ cell.label }}: {{ cell.count }} documented">{{ cell.count }}</td>{% endfor %}<td><strong>{{ row.gap_count }}</strong></td></tr>{% endfor %}
+    </tbody></table></div>
+  </section>
+  <details class="quality-section" {% if open_duplicate_count %}open{% endif %}><summary><span>Likely duplicate records</span><strong>{{ open_duplicate_count }}</strong></summary>
+    {% if open_duplicates %}<div class="quality-table-wrap"><table><thead><tr><th>First record</th><th>Second record</th><th>Confidence</th><th>Signals</th><th>Decision</th></tr></thead><tbody>
+      {% for candidate in open_duplicates %}<tr><th><a href="{% url 'admin:assets_asset_change' candidate.left_asset.pk %}">{{ candidate.left_asset.name }}</a></th><td><a href="{% url 'admin:assets_asset_change' candidate.right_asset.pk %}">{{ candidate.right_asset.name }}</a></td><td>{{ candidate.score }}%</td><td>{{ candidate.match_reasons|join:", " }}</td><td><a href="{% url 'admin:assets_duplicatecandidate_change' candidate.pk %}">Review pair</a></td></tr>{% endfor %}
+    </tbody></table></div>{% else %}<p>No unresolved duplicate candidates.</p>{% endif %}
+  </details>
   <div class="coverage-grid">
     <section>
       <h2>Coverage by region</h2>
@@ -42,7 +87,7 @@
   <details class="quality-section"><summary><span>Stale or unverified assets</span><strong>{{ stale_count }}</strong></summary>{% include "imports/quality_table.html" with assets=stale empty_message="No stale records." %}</details>
   <details class="quality-section"><summary><span>Missing public sources</span><strong>{{ missing_sources_count }}</strong></summary>{% include "imports/quality_table.html" with assets=missing_sources empty_message="Every active record has a public source." %}</details>
   <details class="quality-section"><summary><span>Missing coordinates</span><strong>{{ missing_coordinates_count }}</strong></summary>{% include "imports/quality_table.html" with assets=missing_coordinates empty_message="Every active record that represents a single site has coordinates." %}</details>
-  <details class="quality-section" {% if generalized_locations_count %}open{% endif %}><summary><span>Generalized locations needing research</span><strong>{{ generalized_locations_count }}</strong></summary>{% include "imports/quality_table.html" with assets=generalized_locations empty_message="Every point is tied to an exact or documented site-level location." %}</details>
+  <details class="quality-section"><summary><span>Generalized locations needing research</span><strong>{{ generalized_locations_count }}</strong></summary>{% include "imports/quality_table.html" with assets=generalized_locations empty_message="Every point is tied to an exact or documented site-level location." %}</details>
   <details class="quality-section"><summary><span>Editorial review pending</span><strong>{{ needs_review_count }}</strong></summary>{% include "imports/quality_table.html" with assets=needs_review empty_message="Every record has completed editorial review." %}</details>
   <details class="quality-section"><summary><span>Repeated relevance copy</span><strong>{{ repeated_copy_count }}</strong></summary>{% include "imports/quality_table.html" with assets=repeated_copy empty_message="No repeated relevance statements." %}</details>
   <details class="quality-section"><summary><span>Incomplete taxonomy</span><strong>{{ missing_taxonomy_count }}</strong></summary>{% include "imports/quality_table.html" with assets=missing_taxonomy empty_message="Every active record has core taxonomy." %}</details>

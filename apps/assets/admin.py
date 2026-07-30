@@ -1,4 +1,5 @@
 import csv
+from datetime import timedelta
 
 from allauth.account.forms import ResetPasswordForm
 from django.contrib import admin, messages
@@ -12,7 +13,13 @@ from simple_history.admin import SimpleHistoryAdmin
 from apps.imports.services import CSV_COLUMNS, asset_csv_row
 from apps.sources.models import Source
 
-from .models import Asset, Relationship, UpdateSubmission
+from .models import (
+    Asset,
+    AssetReviewComment,
+    DuplicateCandidate,
+    Relationship,
+    UpdateSubmission,
+)
 
 
 class SourceInline(admin.TabularInline):
@@ -37,6 +44,15 @@ class OutgoingRelationshipInline(admin.TabularInline):
     extra = 0
 
 
+class AssetReviewCommentInline(admin.TabularInline):
+    model = AssetReviewComment
+    extra = 1
+    fields = ("body", "author", "created_at")
+    readonly_fields = ("author", "created_at")
+    verbose_name = "Internal review comment"
+    verbose_name_plural = "Internal review comments"
+
+
 @admin.action(permissions=["change"], description="Send selected records to source review")
 def send_for_review(modeladmin, request, queryset):
     updated = 0
@@ -53,6 +69,46 @@ def send_for_review(modeladmin, request, queryset):
     messages.success(request, f"Sent {updated} record(s) to source review.")
 
 
+@admin.action(permissions=["change"], description="Assign selected records to me")
+def assign_to_me(modeladmin, request, queryset):
+    updated = 0
+    for asset in queryset.exclude(status=Asset.Status.ARCHIVED):
+        asset.review_assignee = request.user
+        asset._history_user = request.user
+        asset._change_reason = "Review assigned from the admin action."
+        asset.save()
+        updated += 1
+    messages.success(request, f"Assigned {updated} record(s) to {request.user.get_username()}.")
+
+
+@admin.action(permissions=["change"], description="Set review due in 14 days")
+def set_review_due(modeladmin, request, queryset):
+    due_at = timezone.localdate() + timedelta(days=14)
+    updated = 0
+    for asset in queryset.exclude(status=Asset.Status.ARCHIVED):
+        asset.review_due_at = due_at
+        if asset.review_assignee_id is None:
+            asset.review_assignee = request.user
+        asset._history_user = request.user
+        asset._change_reason = "Review due date set from the admin action."
+        asset.save()
+        updated += 1
+    messages.success(request, f"Set {updated} review(s) due by {due_at:%b %-d, %Y}.")
+
+
+@admin.action(permissions=["change"], description="Clear selected review assignments")
+def clear_review_assignment(modeladmin, request, queryset):
+    updated = 0
+    for asset in queryset:
+        asset.review_assignee = None
+        asset.review_due_at = None
+        asset._history_user = request.user
+        asset._change_reason = "Review assignment cleared from the admin action."
+        asset.save()
+        updated += 1
+    messages.success(request, f"Cleared {updated} review assignment(s).")
+
+
 @admin.action(permissions=["verify"], description="Mark eligible records verified")
 def mark_verified(modeladmin, request, queryset):
     eligible = queryset.filter(
@@ -67,6 +123,8 @@ def mark_verified(modeladmin, request, queryset):
         asset.last_verified_at = timezone.localdate()
         asset.reviewed_at = timezone.now()
         asset.reviewed_by = request.user
+        asset.review_assignee = None
+        asset.review_due_at = None
         asset.published_at = None
         asset._history_user = request.user
         asset._change_reason = "Editorial verification completed from the admin action."
@@ -144,10 +202,22 @@ class AssetAdmin(SimpleHistoryAdmin):
         "region",
         "status",
         "visibility",
+        "review_priority",
+        "review_assignee",
+        "review_due_at",
         "last_verified_at",
         "updated_at",
     )
-    list_filter = ("record_type", "region", "status", "visibility", "last_verified_at")
+    list_filter = (
+        "record_type",
+        "region",
+        "status",
+        "visibility",
+        "review_priority",
+        "review_assignee",
+        "review_due_at",
+        "last_verified_at",
+    )
     search_fields = ("name", "short_description", "unmanned_systems_relevance", "city")
     prepopulated_fields = {"slug": ("name",)}
     filter_horizontal = ("strategic_categories", "platform_domains", "capabilities", "missions")
@@ -161,8 +231,11 @@ class AssetAdmin(SimpleHistoryAdmin):
         "created_at",
         "updated_at",
     )
-    inlines = (SourceInline, OutgoingRelationshipInline)
+    inlines = (AssetReviewCommentInline, SourceInline, OutgoingRelationshipInline)
     actions = (
+        assign_to_me,
+        set_review_due,
+        clear_review_assignment,
         send_for_review,
         mark_verified,
         publish_eligible,
@@ -188,6 +261,16 @@ class AssetAdmin(SimpleHistoryAdmin):
                     "longitude",
                     "location_precision",
                     "region",
+                )
+            },
+        ),
+        (
+            "Review workflow",
+            {
+                "fields": (
+                    "review_assignee",
+                    "review_priority",
+                    "review_due_at",
                 )
             },
         ),
@@ -219,6 +302,19 @@ class AssetAdmin(SimpleHistoryAdmin):
     def has_export_permission(self, request):
         return request.user.has_perm("assets.can_export_asset")
 
+    def save_formset(self, request, form, formset, change):
+        instances = formset.save(commit=False)
+        for instance in instances:
+            if isinstance(instance, AssetReviewComment) and instance.author_id is None:
+                instance.author = request.user
+                instance._history_user = request.user
+            instance.save()
+        for deleted in formset.deleted_objects:
+            if isinstance(deleted, AssetReviewComment):
+                deleted._history_user = request.user
+            deleted.delete()
+        formset.save_m2m()
+
 
 @admin.register(Relationship)
 class RelationshipAdmin(SimpleHistoryAdmin):
@@ -226,6 +322,80 @@ class RelationshipAdmin(SimpleHistoryAdmin):
     list_filter = ("relationship_type", "is_public")
     search_fields = ("from_asset__name", "to_asset__name", "description")
     autocomplete_fields = ("from_asset", "to_asset")
+
+
+@admin.register(AssetReviewComment)
+class AssetReviewCommentAdmin(SimpleHistoryAdmin):
+    list_display = ("asset", "author", "created_at", "comment_preview")
+    list_filter = ("created_at", "author")
+    search_fields = ("asset__name", "body", "author__username", "author__email")
+    autocomplete_fields = ("asset", "author")
+    readonly_fields = ("created_at", "updated_at")
+
+    @admin.display(description="Comment")
+    def comment_preview(self, obj):
+        return obj.body[:120]
+
+    def save_model(self, request, obj, form, change):
+        if obj.author_id is None:
+            obj.author = request.user
+        obj._history_user = request.user
+        super().save_model(request, obj, form, change)
+
+
+@admin.register(DuplicateCandidate)
+class DuplicateCandidateAdmin(SimpleHistoryAdmin):
+    list_display = (
+        "left_asset",
+        "right_asset",
+        "score",
+        "status",
+        "reviewed_by",
+        "updated_at",
+    )
+    list_filter = ("status", "score", "reviewed_by", "updated_at")
+    search_fields = ("left_asset__name", "right_asset__name", "notes")
+    autocomplete_fields = ("left_asset", "right_asset", "reviewed_by")
+    readonly_fields = ("score", "match_reasons", "detected_at", "updated_at")
+    actions = ("mark_distinct", "reopen_candidates", "mark_merged")
+
+    def save_model(self, request, obj, form, change):
+        if "status" in form.changed_data:
+            if obj.status == DuplicateCandidate.Status.OPEN:
+                obj.reviewed_by = None
+                obj.reviewed_at = None
+            else:
+                obj.reviewed_by = request.user
+                obj.reviewed_at = timezone.now()
+        obj._history_user = request.user
+        super().save_model(request, obj, form, change)
+
+    @admin.action(description="Confirm selected pairs are distinct")
+    def mark_distinct(self, request, queryset):
+        self._resolve(request, queryset, DuplicateCandidate.Status.NOT_DUPLICATE)
+
+    @admin.action(description="Mark selected pairs merged or archived")
+    def mark_merged(self, request, queryset):
+        self._resolve(request, queryset, DuplicateCandidate.Status.MERGED)
+
+    @admin.action(description="Reopen selected duplicate candidates")
+    def reopen_candidates(self, request, queryset):
+        self._resolve(request, queryset, DuplicateCandidate.Status.OPEN)
+
+    @staticmethod
+    def _resolve(request, queryset, status):
+        for candidate in queryset:
+            candidate.status = status
+            candidate.reviewed_by = (
+                None if status == DuplicateCandidate.Status.OPEN else request.user
+            )
+            candidate.reviewed_at = (
+                None if status == DuplicateCandidate.Status.OPEN else timezone.now()
+            )
+            candidate._history_user = request.user
+            candidate._change_reason = f"Duplicate candidate marked {status}."
+            candidate.save()
+        messages.success(request, f"Updated {queryset.count()} duplicate candidate(s).")
 
 
 @admin.register(UpdateSubmission)

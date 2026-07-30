@@ -6,7 +6,7 @@
   <header class="page-heading">
     <span class="eyebrow">Virginia ecosystem</span>
     <h1>Regional comparison</h1>
-    <p>Compare the documented asset mix, technical domains, and strategic strengths of two Virginia regions.</p>
+    <p>Compare documented inventory coverage, asset mix, technical domains, and data confidence for two Virginia regions.</p>
   </header>
   <form class="compare-controls" method="get">
     <label><span>First region</span><select name="region_a">{% for region in regions %}<option value="{{ region.slug }}" {% if region == first.region %}selected{% endif %}>{{ region.name }}</option>{% endfor %}</select></label>
@@ -17,12 +17,15 @@
     {% for item in comparisons %}
       <section class="region-column">
         <div class="region-total"><span>{{ item.region.name }}</span><strong>{{ item.total }}</strong><small>published assets</small></div>
+        <div class="metrics-section"><h2>Data confidence</h2>{% for metric in item.quality_metrics %}<div class="metric-row metric-with-rate"><span>{{ metric.name }}<small>{{ metric.count }} records</small></span><strong>{{ metric.rate }}%</strong></div>{% endfor %}</div>
         <div class="metrics-section"><h2>Asset mix</h2>{% for metric in item.record_types %}<div class="metric-row"><span>{{ metric.name }}</span><strong>{{ metric.count }}</strong></div>{% endfor %}</div>
         <div class="metrics-section"><h2>Leading strategic categories</h2>{% for category in item.categories %}<div class="metric-row"><span>{{ category.name }}</span><strong>{{ category.asset_count }}</strong></div>{% empty %}<p>No category data.</p>{% endfor %}</div>
         <div class="metrics-section"><h2>Platform domains</h2>{% for domain in item.domains %}<div class="metric-row"><span>{{ domain.name }}</span><strong>{{ domain.asset_count }}</strong></div>{% empty %}<p>No domain data.</p>{% endfor %}</div>
+        <div class="metrics-section"><h2>Leading capabilities</h2>{% for capability in item.capabilities %}<div class="metric-row"><span>{{ capability.name }}</span><strong>{{ capability.asset_count }}</strong></div>{% empty %}<p>No capability data.</p>{% endfor %}</div>
         <a class="button secondary full" href="{% url 'core:map' %}?region={{ item.region.slug }}">Explore on map</a>
       </section>
     {% endfor %}
   </div>
+  <p class="comparison-note">Counts reflect the current documented inventory and its review state. A low count indicates a catalog coverage gap or a smaller documented footprint; it does not establish that a real-world capability is absent.</p>
 </main>
 {% endblock %}

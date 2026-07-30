@@ -1,0 +1,23 @@
+{% extends "admin/base_site.html" %}
+{% block title %}Audit log | COSOLVE Admin{% endblock %}
+{% block content %}
+<div id="content-main">
+  <div class="section-heading">
+    <div><h1>Data audit log</h1><p>Recent asset, source, review-comment, and duplicate-decision activity.</p></div>
+    <a class="button" href="{% url 'imports:data-quality' %}">Back to data quality</a>
+  </div>
+  <div class="quality-table-wrap"><table class="audit-table">
+    <thead><tr><th>Date</th><th>Action</th><th>Record</th><th>Editor</th><th>Changed fields</th><th>Reason</th></tr></thead>
+    <tbody>
+      {% for event in events %}<tr>
+        <td><time datetime="{{ event.date|date:'c' }}">{{ event.date|date:"M j, Y g:i A" }}</time></td>
+        <td>{{ event.action }}</td>
+        <th><span>{{ event.object_type }}</span>{{ event.object_label|truncatechars:90 }}</th>
+        <td>{% if event.editor %}{{ event.editor.get_full_name|default:event.editor.get_username }}{% else %}System{% endif %}</td>
+        <td>{{ event.changed_fields|join:", "|default:"-" }}</td>
+        <td>{{ event.reason|default:"-" }}</td>
+      </tr>{% empty %}<tr><td colspan="6">No audited activity is available.</td></tr>{% endfor %}
+    </tbody>
+  </table></div>
+</div>
+{% endblock %}

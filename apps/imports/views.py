@@ -6,14 +6,15 @@ from django.contrib import messages
 from django.contrib.admin.views.decorators import staff_member_required
 from django.contrib.auth.decorators import permission_required
 from django.db import transaction
-from django.db.models import Count, Max, Q
+from django.db.models import Case, Count, IntegerField, Max, Q, When
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
 from django.utils import timezone
 from django.views.decorators.http import require_http_methods, require_POST
 
 from apps.api.query import filter_public_assets
-from apps.assets.models import Asset
+from apps.assets.models import Asset, AssetReviewComment, DuplicateCandidate
+from apps.assets.quality import sync_duplicate_candidates
 from apps.catalog.models import Region
 from apps.sources.models import Source
 
@@ -231,6 +232,35 @@ def data_quality(request):
         .values_list("unmanned_systems_relevance", flat=True)
     )
     repeated_copy = active_assets.filter(unmanned_systems_relevance__in=repeated_values)
+    today = timezone.localdate()
+    priority_order = Case(
+        When(review_priority=Asset.ReviewPriority.URGENT, then=0),
+        When(review_priority=Asset.ReviewPriority.HIGH, then=1),
+        When(review_priority=Asset.ReviewPriority.NORMAL, then=2),
+        default=3,
+        output_field=IntegerField(),
+    )
+    review_queue = (
+        needs_review.select_related("review_assignee", "region")
+        .annotate(priority_order=priority_order)
+        .order_by("priority_order", "review_due_at", "name")
+    )
+    my_review_queue = review_queue.filter(review_assignee=request.user)
+    overdue_reviews = review_queue.filter(review_due_at__lt=today)
+    unassigned_reviews = review_queue.filter(review_assignee__isnull=True)
+    reviewer_workload = list(
+        review_queue.values(
+            "review_assignee_id",
+            "review_assignee__username",
+            "review_assignee__first_name",
+            "review_assignee__last_name",
+        )
+        .annotate(
+            total=Count("id"),
+            overdue=Count("id", filter=Q(review_due_at__lt=today)),
+        )
+        .order_by("-total", "review_assignee__username")
+    )
 
     def coverage_rows(group_field):
         rows = list(
@@ -279,6 +309,45 @@ def data_quality(request):
     last_source_check = Source.objects.filter(is_public=True).aggregate(
         latest=Max("last_checked_at")
     )["latest"]
+    coverage_counts = {
+        (row["region_id"], row["record_type"]): row["total"]
+        for row in active_assets.values("region_id", "record_type").annotate(
+            total=Count("id", distinct=True)
+        )
+    }
+    gap_rows = []
+    for region in Region.objects.filter(is_active=True):
+        cells = []
+        for record_type, label in Asset.RecordType.choices:
+            count = coverage_counts.get((region.pk, record_type), 0)
+            status = "missing" if count == 0 else "sparse" if count <= 2 else "documented"
+            cells.append(
+                {
+                    "record_type": record_type,
+                    "label": label,
+                    "count": count,
+                    "status": status,
+                }
+            )
+        gap_rows.append(
+            {
+                "region": region,
+                "cells": cells,
+                "gap_count": sum(cell["status"] != "documented" for cell in cells),
+            }
+        )
+    open_duplicates = DuplicateCandidate.objects.filter(
+        status=DuplicateCandidate.Status.OPEN
+    ).select_related("left_asset", "right_asset")
+    public_sources = Source.objects.filter(is_public=True)
+    source_check_cutoff = timezone.now() - timedelta(days=7)
+    recently_checked_sources = public_sources.filter(last_checked_at__gte=source_check_cutoff)
+    healthy_sources = recently_checked_sources.exclude(
+        Q(check_error__gt="") | Q(http_status__gte=400)
+    ).exclude(link_review_status=Source.LinkReviewStatus.NEEDS_REPLACEMENT)
+    unchecked_sources = public_sources.filter(
+        Q(last_checked_at__lt=source_check_cutoff) | Q(last_checked_at__isnull=True)
+    )
     return render(
         request,
         "imports/data_quality.html",
@@ -294,6 +363,13 @@ def data_quality(request):
             "generalized_locations_count": generalized_locations.count(),
             "needs_review": needs_review[:100],
             "needs_review_count": needs_review.count(),
+            "my_review_queue": my_review_queue[:100],
+            "my_review_queue_count": my_review_queue.count(),
+            "overdue_reviews": overdue_reviews[:100],
+            "overdue_review_count": overdue_reviews.count(),
+            "unassigned_reviews": unassigned_reviews[:100],
+            "unassigned_review_count": unassigned_reviews.count(),
+            "reviewer_workload": reviewer_workload,
             "source_issues": source_issues[:100],
             "source_issues_count": source_issues.count(),
             "broken_sources": broken_sources[:100],
@@ -310,6 +386,97 @@ def data_quality(request):
             "repeated_copy_count": repeated_copy.count(),
             "region_coverage": region_coverage,
             "type_coverage": type_coverage,
+            "gap_rows": gap_rows,
+            "record_type_choices": Asset.RecordType.choices,
+            "open_duplicates": open_duplicates[:100],
+            "open_duplicate_count": open_duplicates.count(),
+            "public_source_count": public_sources.count(),
+            "healthy_source_count": healthy_sources.count(),
+            "unchecked_source_count": unchecked_sources.count(),
             "last_source_check": last_source_check,
         },
     )
+
+
+@staff_member_required
+@permission_required("assets.change_duplicatecandidate", raise_exception=True)
+@require_POST
+def scan_duplicates(request):
+    result = sync_duplicate_candidates()
+    messages.success(
+        request,
+        "Duplicate scan complete: "
+        f"{result['detected']} candidates detected, "
+        f"{result['created']} created, "
+        f"{result['updated']} refreshed.",
+    )
+    return redirect("imports:data-quality")
+
+
+def _history_events(
+    history_manager,
+    object_type,
+    label_field,
+    limit=75,
+    related_fields=(),
+):
+    events = []
+    records = history_manager.select_related(
+        "history_user", *related_fields
+    ).order_by("-history_date")[:limit]
+    for record in records:
+        changed_fields = []
+        if record.history_type == "~":
+            previous = record.prev_record
+            if previous:
+                changed_fields = [
+                    change.field.replace("_", " ").title()
+                    for change in record.diff_against(previous).changes
+                ]
+        events.append(
+            {
+                "date": record.history_date,
+                "action": {"+": "Created", "~": "Updated", "-": "Deleted"}[
+                    record.history_type
+                ],
+                "object_type": object_type,
+                "object_label": (
+                    label_field(record)
+                    if callable(label_field)
+                    else getattr(record, label_field, str(record))
+                ),
+                "editor": record.history_user,
+                "reason": record.history_change_reason,
+                "changed_fields": changed_fields,
+            }
+        )
+    return events
+
+
+@staff_member_required
+@permission_required("assets.view_asset", raise_exception=True)
+def audit_log(request):
+    duplicate_decisions = DuplicateCandidate.history.exclude(
+        history_user__isnull=True,
+        status=DuplicateCandidate.Status.OPEN,
+    )
+
+    def duplicate_label(record):
+        left = getattr(record.left_asset, "name", None) or str(record.left_asset_id)
+        right = getattr(record.right_asset, "name", None) or str(record.right_asset_id)
+        return f"{left} / {right}"
+
+    events = [
+        *_history_events(Asset.history, "Asset", "name"),
+        *_history_events(Source.history, "Source", "title"),
+        *_history_events(AssetReviewComment.history, "Review comment", "body", limit=40),
+        *_history_events(
+            duplicate_decisions,
+            "Duplicate review",
+            duplicate_label,
+            limit=40,
+            related_fields=("left_asset", "right_asset"),
+        ),
+    ]
+    events.sort(key=lambda event: event["date"], reverse=True)
+    return render(request, "imports/audit_log.html", {"events": events[:200]})

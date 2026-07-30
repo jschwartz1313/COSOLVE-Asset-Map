@@ -2,9 +2,12 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import {
+  analysisStateFromParams,
   filterParamsFromMapUrl,
   mapStateFromParams,
   paramsWithMapState,
+  serializePolygonAnalysis,
+  serializeRectangleAnalysis,
 } from "../../static/js/map-state.js";
 import { hydrateForm, paramsFromEntries } from "../../static/js/state.js";
 
@@ -129,4 +132,52 @@ test("saved map state restores imagery and analytical layers", () => {
     "relationships",
   ]);
   assert.equal(state.basemap, "imagery");
+});
+
+test("saved map state preserves and restores rectangle analysis geometry", () => {
+  const serialized = serializeRectangleAnalysis({
+    south: 36.7,
+    west: -76.5,
+    north: 37.1,
+    east: -76.1,
+  });
+  const params = paramsWithMapState(new URLSearchParams("region=hampton-roads"), {
+    latitude: 36.9,
+    longitude: -76.3,
+    zoom: 9,
+    layers: ["assets", "state"],
+    basemap: "street",
+    analysis: serialized,
+  });
+
+  assert.deepEqual(analysisStateFromParams(params), {
+    type: "rectangle",
+    bounds: { south: 36.7, west: -76.5, north: 37.1, east: -76.1 },
+  });
+  assert.equal(filterParamsFromMapUrl(params).toString(), "region=hampton-roads");
+});
+
+test("saved polygon geometry validates coordinates and rejects malformed state", () => {
+  const serialized = serializePolygonAnalysis([
+    { lat: 36.8, lng: -76.4 },
+    { lat: 36.8, lng: -76.2 },
+    { lat: 37, lng: -76.3 },
+  ]);
+  assert.deepEqual(
+    analysisStateFromParams(new URLSearchParams({ map_analysis: serialized })),
+    {
+      type: "polygon",
+      vertices: [
+        { lat: 36.8, lng: -76.4 },
+        { lat: 36.8, lng: -76.2 },
+        { lat: 37, lng: -76.3 },
+      ],
+    },
+  );
+  assert.equal(
+    analysisStateFromParams(
+      new URLSearchParams({ map_analysis: "polygon|36.8,-76.4;invalid" }),
+    ),
+    null,
+  );
 });

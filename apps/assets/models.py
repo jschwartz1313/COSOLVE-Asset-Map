@@ -58,6 +58,12 @@ class Asset(models.Model):
         REGIONAL = "regional", "Regional; no single site"
         HIDDEN = "hidden", "Hidden"
 
+    class ReviewPriority(models.TextChoices):
+        LOW = "low", "Low"
+        NORMAL = "normal", "Normal"
+        HIGH = "high", "High"
+        URGENT = "urgent", "Urgent"
+
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(max_length=220)
     slug = models.SlugField(max_length=240, unique=True, blank=True)
@@ -111,6 +117,19 @@ class Asset(models.Model):
         null=True,
         blank=True,
         related_name="reviewed_assets",
+    )
+    review_assignee = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name="assigned_asset_reviews",
+    )
+    review_due_at = models.DateField(null=True, blank=True)
+    review_priority = models.CharField(
+        max_length=12,
+        choices=ReviewPriority.choices,
+        default=ReviewPriority.NORMAL,
     )
     review_notes = models.TextField(blank=True)
     published_at = models.DateTimeField(null=True, blank=True)
@@ -256,6 +275,83 @@ class Relationship(models.Model):
         return f"{self.from_asset} {self.get_relationship_type_display()} {self.to_asset}"
 
 
+class AssetReviewComment(models.Model):
+    asset = models.ForeignKey(Asset, on_delete=models.CASCADE, related_name="review_comments")
+    author = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.SET_NULL,
+        null=True,
+        related_name="asset_review_comments",
+    )
+    body = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    history = HistoricalRecords()
+
+    class Meta:
+        ordering = ("-created_at",)
+
+    def __str__(self):
+        return f"Comment on {self.asset}"
+
+
+class DuplicateCandidate(models.Model):
+    class Status(models.TextChoices):
+        OPEN = "open", "Needs review"
+        NOT_DUPLICATE = "not-duplicate", "Confirmed distinct"
+        MERGED = "merged", "Merged or archived"
+
+    left_asset = models.ForeignKey(
+        Asset, on_delete=models.CASCADE, related_name="duplicate_candidates_left"
+    )
+    right_asset = models.ForeignKey(
+        Asset, on_delete=models.CASCADE, related_name="duplicate_candidates_right"
+    )
+    score = models.PositiveSmallIntegerField(
+        validators=[MinValueValidator(0), MaxValueValidator(100)]
+    )
+    match_reasons = models.JSONField(default=list)
+    status = models.CharField(max_length=16, choices=Status.choices, default=Status.OPEN)
+    notes = models.TextField(blank=True)
+    reviewed_by = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        related_name="reviewed_duplicate_candidates",
+    )
+    reviewed_at = models.DateTimeField(null=True, blank=True)
+    detected_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    history = HistoricalRecords()
+
+    class Meta:
+        ordering = ("-score", "left_asset__name", "right_asset__name")
+        constraints = [
+            models.UniqueConstraint(
+                fields=("left_asset", "right_asset"),
+                name="unique_asset_duplicate_candidate",
+            )
+        ]
+
+    def clean(self):
+        if self.left_asset_id == self.right_asset_id:
+            raise ValidationError("A record cannot be a duplicate of itself.")
+
+    def save(self, *args, **kwargs):
+        if (
+            self.left_asset_id
+            and self.right_asset_id
+            and str(self.left_asset_id) > str(self.right_asset_id)
+        ):
+            self.left_asset_id, self.right_asset_id = self.right_asset_id, self.left_asset_id
+        self.full_clean()
+        super().save(*args, **kwargs)
+
+    def __str__(self):
+        return f"{self.left_asset} / {self.right_asset}"
+
+
 class UpdateSubmission(models.Model):
     class Kind(models.TextChoices):
         CORRECTION = "correction", "Correct an existing record"
@@ -306,7 +402,7 @@ class SavedView(models.Model):
     )
     name = models.CharField(max_length=120)
     view_type = models.CharField(max_length=12, choices=ViewType.choices)
-    query_string = models.CharField(max_length=1200, blank=True)
+    query_string = models.CharField(max_length=4000, blank=True)
     is_shared = models.BooleanField(default=False)
     share_token = models.UUIDField(default=uuid.uuid4, unique=True, editable=False)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -341,6 +437,7 @@ class SavedView(models.Model):
             "map_layers",
             "map_layers_v",
             "map_basemap",
+            "map_analysis",
         }
         pairs = parse_qsl(self.query_string, keep_blank_values=True)
         unexpected = {key for key, _value in pairs} - allowed
@@ -379,6 +476,33 @@ class SavedView(models.Model):
                 raise ValidationError({"query_string": "Unsupported map layer selection."})
         if params.get("map_basemap", "street") not in {"street", "light", "imagery"}:
             raise ValidationError({"query_string": "Unsupported map basemap selection."})
+        if "map_analysis" in params:
+            analysis_type, separator, payload = params["map_analysis"].partition("|")
+            try:
+                if analysis_type == "rectangle" and separator:
+                    values = [float(value) for value in payload.split(",")]
+                    valid = (
+                        len(values) == 4
+                        and -90 <= values[0] <= values[2] <= 90
+                        and -180 <= values[1] <= values[3] <= 180
+                    )
+                elif analysis_type == "polygon" and separator:
+                    vertices = [
+                        [float(value) for value in vertex.split(",")]
+                        for vertex in payload.split(";")
+                    ]
+                    valid = len(vertices) >= 3 and all(
+                        len(vertex) == 2
+                        and -90 <= vertex[0] <= 90
+                        and -180 <= vertex[1] <= 180
+                        for vertex in vertices
+                    )
+                else:
+                    valid = False
+            except ValueError:
+                valid = False
+            if not valid:
+                raise ValidationError({"query_string": "Invalid saved map analysis."})
 
     def save(self, *args, **kwargs):
         self.full_clean()

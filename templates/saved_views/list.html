@@ -14,7 +14,7 @@
         {% csrf_token %}
         {{ form.non_field_errors }}
         {% for field in form %}
-          {% if field.is_hidden %}{{ field }}{% else %}
+          {% if field.is_hidden %}{{ field }}{{ field.errors }}{% else %}
             <label><span>{{ field.label }}</span>{{ field }}{{ field.errors }}</label>
           {% endif %}
         {% endfor %}

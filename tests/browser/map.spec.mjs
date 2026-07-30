@@ -112,6 +112,11 @@ test("print view opens the browser print or PDF workflow", async ({ page }) => {
   await page.locator(".map-actions summary").click();
   await page.locator("#print-view").click();
   await expect(page.locator("html")).toHaveAttribute("data-print-requested", "true");
+  await expect(page.locator("#print-report-title")).toHaveText("Current map asset report");
+  await expect(page.locator("#print-report-rows tr")).toHaveCount(
+    Number(await page.locator("#result-count").textContent()),
+  );
+  await expect(page.locator("#print-report-context")).toContainText("Generated");
 });
 
 test("print view preserves asset marker and legend colors", async ({ page }) => {
@@ -335,9 +340,11 @@ test("drawn area selection filters assets and enables export", async ({ page }) 
   const download = await downloadPromise;
   const csv = readFileSync(await download.path(), "utf8").trim().split("\n");
   expect(csv).toHaveLength(selectedCount + 1);
+
 });
 
-test("drawn polygon selects and exports only enclosed assets", async ({ page }) => {
+test("drawn polygon selects and exports only enclosed assets", async ({ context, page }) => {
+  await context.grantPermissions(["clipboard-read", "clipboard-write"]);
   await page.goto("/map/?region=hampton-roads");
   const regionalTotal = Number(await page.locator("#result-count").textContent());
 
@@ -387,6 +394,16 @@ test("drawn polygon selects and exports only enclosed assets", async ({ page }) 
   const download = await downloadPromise;
   const csv = readFileSync(await download.path(), "utf8").trim().split("\n");
   expect(csv).toHaveLength(selectedCount + 1);
+
+  await page.locator(".map-actions summary").click();
+  await page.locator("#copy-view-link").click();
+  const copiedUrl = await page.evaluate(() => navigator.clipboard.readText());
+  expect(new URL(copiedUrl).searchParams.get("map_analysis")).toMatch(/^polygon\|/);
+
+  await page.goto(copiedUrl);
+  await expect(page.locator(".analysis-selection-polygon")).toHaveCount(1);
+  await expect(page.locator("#analysis-status")).toContainText("assets selected");
+  await expect(page.locator("#result-count")).toHaveText(String(selectedCount));
 });
 
 test("nearby search filters from the current map center and can be cleared", async ({ page }) => {

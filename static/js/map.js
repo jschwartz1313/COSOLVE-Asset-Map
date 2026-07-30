@@ -617,6 +617,9 @@ export function createMap(root) {
 
   function beginAreaSelection(callback) {
     stopSelecting();
+    if (selectionRectangle) selectionRectangle.removeFrom(map);
+    removePolygonSelection();
+    selectionRectangle = null;
     selectionCallback = callback;
     selecting = true;
     selectionMode = "rectangle";
@@ -678,6 +681,23 @@ export function createMap(root) {
     map.getContainer().classList.add("is-selecting-polygon");
   }
 
+  function showPolygonSelection(vertices) {
+    stopSelecting();
+    if (selectionRectangle) selectionRectangle.removeFrom(map);
+    selectionRectangle = null;
+    removePolygonSelection();
+    selectionVertices = vertices.map((vertex) => window.L.latLng(vertex.lat, vertex.lng));
+    selectionPolygon = window.L.polygon(selectionVertices, {
+      pane: "analysis-selection",
+      className: "analysis-selection-polygon",
+      color: "#c83d2c",
+      fillColor: "#c83d2c",
+      fillOpacity: 0.09,
+      interactive: false,
+      weight: 2,
+    }).addTo(map);
+  }
+
   function finishPolygonSelection() {
     if (!selecting || selectionMode !== "polygon" || selectionVertices.length < 3) {
       return false;
@@ -723,17 +743,32 @@ export function createMap(root) {
   }, true);
 
   function selectVisibleExtent(callback) {
+    showAreaSelection({
+      south: map.getBounds().getSouth(),
+      west: map.getBounds().getWest(),
+      north: map.getBounds().getNorth(),
+      east: map.getBounds().getEast(),
+    });
+    callback(selectionBounds());
+  }
+
+  function showAreaSelection(bounds) {
     stopSelecting();
     if (selectionRectangle) selectionRectangle.removeFrom(map);
     removePolygonSelection();
-    selectionRectangle = window.L.rectangle(map.getBounds(), {
-      pane: "analysis-selection",
-      color: "#c83d2c",
-      fillColor: "#c83d2c",
-      fillOpacity: 0.09,
-      weight: 2,
-    }).addTo(map);
-    callback(selectionBounds());
+    selectionRectangle = window.L.rectangle(
+      [
+        [bounds.south, bounds.west],
+        [bounds.north, bounds.east],
+      ],
+      {
+        pane: "analysis-selection",
+        color: "#c83d2c",
+        fillColor: "#c83d2c",
+        fillOpacity: 0.09,
+        weight: 2,
+      },
+    ).addTo(map);
   }
 
   function showNearbyRadius(radiusMiles) {
@@ -785,6 +820,8 @@ export function createMap(root) {
     setStateBoundaryVisible,
     setVerificationLayerVisible,
     setViewState,
+    showAreaSelection,
     showNearbyRadius,
+    showPolygonSelection,
   };
 }

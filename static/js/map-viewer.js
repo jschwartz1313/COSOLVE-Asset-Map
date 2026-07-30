@@ -9,10 +9,13 @@ import {
 } from "./map-analysis.js?v=20260730-2";
 import { createMap } from "./map.js?v=20260730-3";
 import {
+  analysisStateFromParams,
   filterParamsFromMapUrl,
   mapStateFromParams,
   paramsWithMapState,
-} from "./map-state.js?v=20260730";
+  serializePolygonAnalysis,
+  serializeRectangleAnalysis,
+} from "./map-state.js?v=20260730-2";
 import { renderResults, selectResult } from "./results.js?v=20260727-2";
 import { hydrateForm, paramsFromForm, updateUrl } from "./state.js?v=20260717";
 
@@ -30,6 +33,9 @@ const presentationButton = document.querySelector("#presentation-view");
 const exitPresentationButton = document.querySelector("#exit-presentation");
 const viewActionStatus = document.querySelector("#view-action-status");
 const printMapSummary = document.querySelector("#print-map-summary");
+const printReportTitle = document.querySelector("#print-report-title");
+const printReportContext = document.querySelector("#print-report-context");
+const printReportRows = document.querySelector("#print-report-rows");
 const assetLayerToggle = document.querySelector("#asset-layer-toggle");
 const countyLayerToggle = document.querySelector("#county-layer-toggle");
 const regionLayerToggle = document.querySelector("#region-layer-toggle");
@@ -63,6 +69,7 @@ const insightContent = document.querySelector("#map-insight-content");
 const closeInsightButton = document.querySelector("#close-map-insight");
 const initialPageParams = new URLSearchParams(window.location.search);
 const initialMapState = mapStateFromParams(initialPageParams);
+const initialAnalysisState = analysisStateFromParams(initialPageParams);
 const initialFilterParams = filterParamsFromMapUrl(initialPageParams);
 const defaultVisibleLayers = ["assets", "state"];
 
@@ -93,6 +100,7 @@ let allFeatures = [];
 let fullResultCount = 0;
 let analysisFeatures = [];
 let analysisActive = false;
+let analysisDefinition = null;
 let polygonDrawing = false;
 let relationshipDataLoaded = false;
 let loadRequestId = 0;
@@ -130,6 +138,7 @@ function currentMapParams() {
     ...center,
     basemap: selectedBasemap(),
     layers: currentLayers(),
+    analysis: analysisDefinition?.serialized || "",
   });
 }
 
@@ -197,6 +206,7 @@ function clearAnalysis({ render = true } = {}) {
   mapController.clearAnalysisGraphics();
   analysisFeatures = [];
   analysisActive = false;
+  analysisDefinition = null;
   setPolygonDrawing(false);
   exportAreaButton.disabled = true;
   clearAnalysisButton.hidden = true;
@@ -211,9 +221,10 @@ function clearAnalysis({ render = true } = {}) {
   }
 }
 
-function applyAnalysisSelection(features) {
+function applyAnalysisSelection(features, definition = null) {
   analysisFeatures = features;
   analysisActive = true;
+  analysisDefinition = definition;
   renderFeatureCollection(analysisFeatures);
   exportAreaButton.disabled = analysisFeatures.length === 0;
   clearAnalysisButton.hidden = false;
@@ -221,13 +232,81 @@ function applyAnalysisSelection(features) {
 }
 
 function applyAreaSelection(bounds) {
-  applyAnalysisSelection(featuresWithinBounds(allFeatures, bounds));
+  applyAnalysisSelection(featuresWithinBounds(allFeatures, bounds), {
+    type: "rectangle",
+    label: "Drawn rectangle",
+    serialized: serializeRectangleAnalysis(bounds),
+  });
 }
 
 function applyPolygonSelection(vertices) {
   setPolygonDrawing(false);
   mapAnalysisDetails.open = false;
-  applyAnalysisSelection(featuresWithinPolygon(allFeatures, vertices));
+  applyAnalysisSelection(featuresWithinPolygon(allFeatures, vertices), {
+    type: "polygon",
+    label: "Drawn polygon",
+    serialized: serializePolygonAnalysis(vertices),
+  });
+}
+
+function restoreAnalysis(state) {
+  if (state?.type === "rectangle") {
+    mapController.showAreaSelection(state.bounds);
+    applyAnalysisSelection(featuresWithinBounds(allFeatures, state.bounds), {
+      type: state.type,
+      label: "Saved rectangle",
+      serialized: serializeRectangleAnalysis(state.bounds),
+    });
+  } else if (state?.type === "polygon") {
+    mapController.showPolygonSelection(state.vertices);
+    applyAnalysisSelection(featuresWithinPolygon(allFeatures, state.vertices), {
+      type: state.type,
+      label: "Saved polygon",
+      serialized: serializePolygonAnalysis(state.vertices),
+    });
+  }
+}
+
+function selectedFilterSummary() {
+  if (!activeFilterParams.toString()) return "No catalog filters applied";
+  const labels = [];
+  for (const [key, value] of activeFilterParams) {
+    const field = form.querySelector(`[name="${CSS.escape(key)}"]`);
+    const label = field?.closest("label")?.textContent?.trim() || key.replaceAll("_", " ");
+    let displayValue = value;
+    if (field?.tagName === "SELECT") {
+      displayValue =
+        [...field.options].find((option) => option.value === value)?.textContent || value;
+    } else if (field?.type === "checkbox" || field?.type === "radio") {
+      displayValue = field.closest("label")?.textContent?.trim() || value;
+    }
+    labels.push(`${label}: ${displayValue}`);
+  }
+  return labels.join(" · ");
+}
+
+function populatePrintReport() {
+  const features = analysisActive ? analysisFeatures : allFeatures;
+  printReportTitle.textContent = analysisActive
+    ? `${analysisDefinition?.label || "Selected area"} asset report`
+    : "Current map asset report";
+  printReportContext.textContent = `${selectedFilterSummary()} · ${features.length} assets · Generated ${new Date().toLocaleString()}`;
+  printReportRows.replaceChildren();
+  for (const feature of features) {
+    const row = document.createElement("tr");
+    for (const value of [
+      feature.properties.name,
+      feature.properties.record_type_label,
+      feature.properties.location.region || "Unassigned",
+      feature.properties.location.precision_label,
+      feature.properties.verification_state_label,
+    ]) {
+      const cell = document.createElement("td");
+      cell.textContent = value;
+      row.append(cell);
+    }
+    printReportRows.append(row);
+  }
 }
 
 function renderRegionSummary(regionSlug, regionName) {
@@ -412,10 +491,14 @@ function setPresentationMode(enabled) {
 }
 
 copyViewButton.addEventListener("click", copyCurrentView);
-printViewButton.addEventListener("click", () => window.print());
+printViewButton.addEventListener("click", () => {
+  populatePrintReport();
+  window.print();
+});
 presentationButton.addEventListener("click", () => setPresentationMode(true));
 exitPresentationButton.addEventListener("click", () => setPresentationMode(false));
 window.addEventListener("beforeprint", () => {
+  populatePrintReport();
   document.querySelector(".map-legend").open = true;
   mapController.refresh();
 });
@@ -428,6 +511,11 @@ nearbySearchButton.addEventListener("click", () => {
   const nearbyFeatures = featuresWithinRadius(allFeatures, center, radius);
   analysisFeatures = nearbyFeatures;
   analysisActive = true;
+  analysisDefinition = {
+    type: "radius",
+    label: `${radius}-mile radius from map center`,
+    serialized: "",
+  };
   mapController.showNearbyRadius(radius);
   renderFeatureCollection(nearbyFeatures);
   exportAreaButton.disabled = nearbyFeatures.length === 0;
@@ -517,7 +605,10 @@ async function syncLayerVisibility() {
   ]);
 }
 
-async function load(params, { changeUrl = true, viewState = null } = {}) {
+async function load(
+  params,
+  { changeUrl = true, viewState = null, analysisState = null } = {},
+) {
   const requestId = ++loadRequestId;
   const requestedFilterParams = filterParamsFromMapUrl(params);
   activeFilterParams = requestedFilterParams;
@@ -535,6 +626,7 @@ async function load(params, { changeUrl = true, viewState = null } = {}) {
       showSearchLabels: Boolean(requestedFilterParams.get("q")?.trim()),
     });
     mapController.setViewState(viewState);
+    restoreAnalysis(analysisState);
     directoryLink.href = requestedFilterParams.toString()
       ? `/directory/?${requestedFilterParams}`
       : "/directory/";
@@ -558,7 +650,11 @@ async function load(params, { changeUrl = true, viewState = null } = {}) {
 hydrateForm(form, initialFilterParams);
 updateFilterIndicators();
 syncLayerVisibility();
-load(initialFilterParams, { changeUrl: false, viewState: initialMapState });
+load(initialFilterParams, {
+  changeUrl: false,
+  viewState: initialMapState,
+  analysisState: initialAnalysisState,
+});
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -576,9 +672,10 @@ window.addEventListener("popstate", () => {
   const pageParams = new URLSearchParams(window.location.search);
   const filters = filterParamsFromMapUrl(pageParams);
   const viewState = mapStateFromParams(pageParams);
+  const analysisState = analysisStateFromParams(pageParams);
   applyLayerToggleState(viewState);
   syncLayerVisibility();
   hydrateForm(form, filters);
   updateFilterIndicators();
-  load(filters, { changeUrl: false, viewState });
+  load(filters, { changeUrl: false, viewState, analysisState });
 });

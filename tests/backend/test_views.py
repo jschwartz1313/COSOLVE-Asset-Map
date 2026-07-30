@@ -144,6 +144,9 @@ class CoreViewTests(TestCase):
         Region.objects.create(name="Northern Virginia")
         response = self.client.get(reverse("core:region-compare"))
         self.assertContains(response, "Regional comparison")
+        self.assertContains(response, "Data confidence")
+        self.assertContains(response, "Leading capabilities")
+        self.assertContains(response, "documented inventory")
 
     def test_about_data_renders(self):
         response = self.client.get(reverse("core:about-data"))
@@ -398,3 +401,43 @@ class SavedViewTests(TestCase):
             f"/map/?{query_string}",
             fetch_redirect_response=False,
         )
+
+    def test_saved_map_view_reopens_with_polygon_analysis(self):
+        self.client.force_login(self.owner)
+        query_string = (
+            "region=hampton-roads&map_lat=36.9&map_lon=-76.3&map_zoom=9"
+            "&map_layers=assets%2Cstate&map_layers_v=3&map_basemap=street"
+            "&map_analysis=polygon%7C36.8%2C-76.4%3B36.8%2C-76.2%3B37.0%2C-76.3"
+        )
+        response = self.client.post(
+            reverse("core:saved-views"),
+            {
+                "name": "Saved polygon",
+                "view_type": SavedView.ViewType.MAP,
+                "query_string": query_string,
+            },
+        )
+        self.assertRedirects(response, reverse("core:saved-views"))
+        saved_view = SavedView.objects.get(owner=self.owner)
+        response = self.client.get(
+            reverse("core:open-saved-view", args=[saved_view.share_token])
+        )
+        self.assertRedirects(
+            response,
+            f"/map/?{query_string}",
+            fetch_redirect_response=False,
+        )
+
+    def test_saved_map_view_rejects_invalid_analysis_geometry(self):
+        self.client.force_login(self.owner)
+        response = self.client.post(
+            reverse("core:saved-views"),
+            {
+                "name": "Invalid polygon",
+                "view_type": SavedView.ViewType.MAP,
+                "query_string": "map_analysis=polygon%7C36.8%2C-76.4%3Binvalid",
+            },
+        )
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "Invalid saved map analysis")
+        self.assertFalse(SavedView.objects.exists())

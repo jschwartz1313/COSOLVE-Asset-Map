@@ -6,6 +6,7 @@ const MAP_STATE_KEYS = [
   "map_layers",
   "map_layers_v",
   "map_basemap",
+  "map_analysis",
 ];
 export const MAP_LAYER_ORDER = [
   "assets",
@@ -64,6 +65,70 @@ export function mapStateFromParams(params) {
   };
 }
 
+function coordinatePair(value) {
+  const [latitudeValue, longitudeValue, extra] = value.split(",");
+  if (extra !== undefined) return null;
+  const lat = validNumber(latitudeValue, -90, 90);
+  const lng = validNumber(longitudeValue, -180, 180);
+  return lat === null || lng === null ? null : { lat, lng };
+}
+
+export function analysisStateFromParams(params) {
+  const raw = params.get("map_analysis");
+  if (!raw) return null;
+  const separator = raw.indexOf("|");
+  if (separator === -1) return null;
+  const type = raw.slice(0, separator);
+  const payload = raw.slice(separator + 1);
+  if (type === "rectangle") {
+    const values = payload.split(",").map(Number);
+    if (
+      values.length !== 4 ||
+      values.some((value) => !Number.isFinite(value)) ||
+      values[0] < -90 ||
+      values[2] > 90 ||
+      values[1] < -180 ||
+      values[3] > 180 ||
+      values[0] > values[2] ||
+      values[1] > values[3]
+    ) {
+      return null;
+    }
+    return {
+      type,
+      bounds: {
+        south: values[0],
+        west: values[1],
+        north: values[2],
+        east: values[3],
+      },
+    };
+  }
+  if (type === "polygon") {
+    const vertices = payload.split(";").map(coordinatePair);
+    if (vertices.length < 3 || vertices.some((vertex) => vertex === null)) return null;
+    return { type, vertices };
+  }
+  return null;
+}
+
+export function serializeRectangleAnalysis(bounds) {
+  return `rectangle|${[
+    bounds.south,
+    bounds.west,
+    bounds.north,
+    bounds.east,
+  ]
+    .map((value) => Number(value).toFixed(5))
+    .join(",")}`;
+}
+
+export function serializePolygonAnalysis(vertices) {
+  return `polygon|${vertices
+    .map((vertex) => `${Number(vertex.lat).toFixed(5)},${Number(vertex.lng).toFixed(5)}`)
+    .join(";")}`;
+}
+
 export function paramsWithMapState(filters, state) {
   const params = filterParamsFromMapUrl(filters);
   params.set("map_lat", Number(state.latitude).toFixed(5));
@@ -78,5 +143,6 @@ export function paramsWithMapState(filters, state) {
     "map_basemap",
     MAP_BASEMAPS.includes(state.basemap) ? state.basemap : "street",
   );
+  if (state.analysis) params.set("map_analysis", state.analysis);
   return params;
 }

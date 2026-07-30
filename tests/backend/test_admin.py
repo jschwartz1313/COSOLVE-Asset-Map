@@ -1,3 +1,6 @@
+from datetime import timedelta
+from types import SimpleNamespace
+
 from django.contrib import admin
 from django.contrib.auth import get_user_model
 from django.contrib.auth.models import Group
@@ -7,8 +10,17 @@ from django.test import RequestFactory, TestCase
 from django.urls import reverse
 from django.utils import timezone
 
-from apps.assets.admin import AssetAdmin, UpdateSubmissionAdmin, mark_verified, publish_eligible
-from apps.assets.models import Asset, UpdateSubmission
+from apps.assets.admin import (
+    AssetAdmin,
+    DuplicateCandidateAdmin,
+    UpdateSubmissionAdmin,
+    assign_to_me,
+    clear_review_assignment,
+    mark_verified,
+    publish_eligible,
+    set_review_due,
+)
+from apps.assets.models import Asset, DuplicateCandidate, UpdateSubmission
 from apps.sources.models import Source
 
 
@@ -95,6 +107,44 @@ class AdminWorkflowTests(TestCase):
         readonly = set(self.admin.get_readonly_fields(self.request))
         self.assertTrue({"status", "visibility", "last_verified_at", "published_at"} <= readonly)
 
+    def test_bulk_review_actions_assign_schedule_and_clear_records(self):
+        asset = self.make_asset("Bulk Review")
+        queryset = Asset.objects.filter(pk=asset.pk)
+
+        assign_to_me(self.admin, self.request, queryset)
+        set_review_due(self.admin, self.request, queryset)
+        asset.refresh_from_db()
+        self.assertEqual(asset.review_assignee, self.user)
+        self.assertEqual(asset.review_due_at, timezone.localdate() + timedelta(days=14))
+
+        clear_review_assignment(self.admin, self.request, queryset)
+        asset.refresh_from_db()
+        self.assertIsNone(asset.review_assignee)
+        self.assertIsNone(asset.review_due_at)
+
+    def test_individual_duplicate_decision_records_reviewer_and_timestamp(self):
+        first = self.make_asset("First duplicate")
+        second = self.make_asset("Second duplicate")
+        candidate = DuplicateCandidate.objects.create(
+            left_asset=first,
+            right_asset=second,
+            score=92,
+            match_reasons=["Fixture match"],
+            status=DuplicateCandidate.Status.NOT_DUPLICATE,
+        )
+        duplicate_admin = DuplicateCandidateAdmin(DuplicateCandidate, admin.site)
+
+        duplicate_admin.save_model(
+            self.request,
+            candidate,
+            SimpleNamespace(changed_data=["status"]),
+            change=True,
+        )
+
+        candidate.refresh_from_db()
+        self.assertEqual(candidate.reviewed_by, self.user)
+        self.assertIsNotNone(candidate.reviewed_at)
+
     def test_update_submissions_can_move_through_review_queue(self):
         submission = UpdateSubmission.objects.create(
             kind=UpdateSubmission.Kind.GENERAL,
@@ -136,6 +186,8 @@ class StaffRoleCommandTests(TestCase):
         self.assertIn("change_asset", reviewer_permissions)
         self.assertIn("change_source", reviewer_permissions)
         self.assertIn("can_verify_asset", reviewer_permissions)
+        self.assertIn("add_assetreviewcomment", reviewer_permissions)
+        self.assertIn("change_duplicatecandidate", reviewer_permissions)
         self.assertNotIn("add_asset", reviewer_permissions)
         self.assertNotIn("add_source", reviewer_permissions)
         self.assertNotIn("can_publish_asset", reviewer_permissions)

@@ -261,7 +261,7 @@ def relationship_explorer(request):
 def saved_views(request):
     initial = {
         "view_type": request.GET.get("view_type", SavedView.ViewType.MAP),
-        "query_string": request.GET.get("query", "")[:1200],
+        "query_string": request.GET.get("query", "")[:4000],
     }
     form = SavedViewForm(request.POST or None, initial=initial)
     if request.method == "POST" and form.is_valid():
@@ -307,9 +307,41 @@ def delete_saved_view(request, pk):
 
 def region_metrics(region):
     queryset = Asset.public.filter(region=region)
+    total = queryset.count()
+    reviewed = queryset.filter(
+        reviewed_at__isnull=False, last_verified_at__isnull=False
+    ).count()
+    verified_source = (
+        queryset.filter(
+            sources__is_public=True,
+            sources__verification_status="verified",
+            sources__last_verified_at__isnull=False,
+        )
+        .distinct()
+        .count()
+    )
+    site_level = queryset.filter(
+        location_precision__in=[
+            Asset.LocationPrecision.EXACT,
+            Asset.LocationPrecision.SITE,
+        ]
+    ).count()
+
+    def rate(value):
+        return round(value * 100 / total) if total else 0
+
     return {
         "region": region,
-        "total": queryset.count(),
+        "total": total,
+        "quality_metrics": [
+            {"name": "Editorially reviewed", "count": reviewed, "rate": rate(reviewed)},
+            {
+                "name": "Verified public source",
+                "count": verified_source,
+                "rate": rate(verified_source),
+            },
+            {"name": "Exact or site-level location", "count": site_level, "rate": rate(site_level)},
+        ],
         "record_types": [
             {
                 "name": label,
@@ -323,6 +355,9 @@ def region_metrics(region):
         "domains": PlatformDomain.objects.filter(assets__in=queryset)
         .annotate(asset_count=Count("assets", distinct=True))
         .order_by("-asset_count", "name")[:6],
+        "capabilities": Capability.objects.filter(assets__in=queryset)
+        .annotate(asset_count=Count("assets", distinct=True))
+        .order_by("-asset_count", "name")[:8],
     }
 
 

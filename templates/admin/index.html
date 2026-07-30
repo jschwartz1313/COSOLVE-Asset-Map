@@ -20,7 +20,8 @@
       {% if perms.assets.view_relationship %}<a class="admin-tool" href="{% url 'admin:assets_relationship_changelist' %}"><strong>Relationships</strong><span>Connect organizations, facilities, programs, and partners.</span></a>{% endif %}
       {% if perms.assets.add_asset %}<a class="admin-tool" href="{% url 'imports:preview' %}"><strong>Import CSV</strong><span>Validate a spreadsheet and create internal drafts in bulk.</span></a>{% endif %}
       {% if perms.assets.can_export_asset %}<a class="admin-tool" href="{% url 'imports:export' %}?scope=all"><strong>Export working data</strong><span>Download all editable fields, taxonomy, coordinates, and sources.</span></a>{% endif %}
-      {% if perms.assets.view_asset %}<a class="admin-tool" href="{% url 'imports:data-quality' %}"><strong>Data quality</strong><span>Find stale, unsourced, unlocated, and unreviewed records.</span></a>{% endif %}
+      {% if perms.assets.view_asset %}<a class="admin-tool" href="{% url 'imports:data-quality' %}"><strong>Data quality and review</strong><span>Work assignments, coverage gaps, duplicate candidates, and source health.</span></a>{% endif %}
+      {% if perms.assets.view_asset %}<a class="admin-tool" href="{% url 'imports:audit-log' %}"><strong>Audit log</strong><span>Trace recent changes to assets, sources, comments, and review decisions.</span></a>{% endif %}
       {% if perms.auth.view_user %}<a class="admin-tool" href="{% url 'admin:auth_user_changelist' %}"><strong>Users and roles</strong><span>Manage staff accounts and assign COSOLVE permission groups.</span></a>{% endif %}
     </div>
   </section>
