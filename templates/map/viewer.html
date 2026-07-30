@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260730-4">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260730-6">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
@@ -69,7 +69,10 @@
             <fieldset>
               <legend>Area selection</legend>
               <button id="select-area" type="button">Draw rectangle</button>
+              <button id="select-polygon" type="button" title="Add points on the map, then finish the polygon">Draw polygon</button>
               <button id="select-extent" type="button">Use visible extent</button>
+              <button id="finish-polygon" type="button" hidden>Finish polygon</button>
+              <button id="cancel-polygon" type="button" hidden>Cancel drawing</button>
               <button id="export-area" type="button" disabled>Export selected CSV</button>
             </fieldset>
             <fieldset>
@@ -158,6 +161,6 @@
 </main>
 <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
 <script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
-<script type="module" src="{% static 'js/map-viewer.js' %}?v=20260730-5"></script>
+<script type="module" src="{% static 'js/map-viewer.js' %}?v=20260730-6"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}

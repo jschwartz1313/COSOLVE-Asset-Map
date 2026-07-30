@@ -3,10 +3,11 @@ import { bindFilterDrawer, bindFilterIndicators } from "./filters.js?v=20260722-
 import {
   downloadFeatureCsv,
   featuresWithinBounds,
+  featuresWithinPolygon,
   featuresWithinRadius,
   summarizeRegion,
-} from "./map-analysis.js?v=20260730";
-import { createMap } from "./map.js?v=20260730-2";
+} from "./map-analysis.js?v=20260730-2";
+import { createMap } from "./map.js?v=20260730-3";
 import {
   filterParamsFromMapUrl,
   mapStateFromParams,
@@ -43,6 +44,9 @@ const precisionLegend = document.querySelector("[data-precision-legend]");
 const nearbyRadius = document.querySelector("#nearby-radius");
 const nearbySearchButton = document.querySelector("#nearby-search");
 const selectAreaButton = document.querySelector("#select-area");
+const selectPolygonButton = document.querySelector("#select-polygon");
+const finishPolygonButton = document.querySelector("#finish-polygon");
+const cancelPolygonButton = document.querySelector("#cancel-polygon");
 const selectExtentButton = document.querySelector("#select-extent");
 const exportAreaButton = document.querySelector("#export-area");
 const clearAnalysisButton = document.querySelector("#clear-analysis");
@@ -89,12 +93,22 @@ let allFeatures = [];
 let fullResultCount = 0;
 let analysisFeatures = [];
 let analysisActive = false;
+let polygonDrawing = false;
 let relationshipDataLoaded = false;
 let loadRequestId = 0;
 
 function showStatus(message) {
   status.textContent = message;
   status.hidden = !message;
+}
+
+function setPolygonDrawing(active) {
+  polygonDrawing = active;
+  finishPolygonButton.hidden = !active;
+  cancelPolygonButton.hidden = !active;
+  selectAreaButton.hidden = active;
+  selectPolygonButton.hidden = active;
+  selectExtentButton.hidden = active;
 }
 
 function currentLayers() {
@@ -183,6 +197,7 @@ function clearAnalysis({ render = true } = {}) {
   mapController.clearAnalysisGraphics();
   analysisFeatures = [];
   analysisActive = false;
+  setPolygonDrawing(false);
   exportAreaButton.disabled = true;
   clearAnalysisButton.hidden = true;
   analysisStatus.textContent = "";
@@ -196,13 +211,23 @@ function clearAnalysis({ render = true } = {}) {
   }
 }
 
-function applyAreaSelection(bounds) {
-  analysisFeatures = featuresWithinBounds(allFeatures, bounds);
+function applyAnalysisSelection(features) {
+  analysisFeatures = features;
   analysisActive = true;
   renderFeatureCollection(analysisFeatures);
   exportAreaButton.disabled = analysisFeatures.length === 0;
   clearAnalysisButton.hidden = false;
   analysisStatus.textContent = `${analysisFeatures.length} assets selected`;
+}
+
+function applyAreaSelection(bounds) {
+  applyAnalysisSelection(featuresWithinBounds(allFeatures, bounds));
+}
+
+function applyPolygonSelection(vertices) {
+  setPolygonDrawing(false);
+  mapAnalysisDetails.open = false;
+  applyAnalysisSelection(featuresWithinPolygon(allFeatures, vertices));
 }
 
 function renderRegionSummary(regionSlug, regionName) {
@@ -417,6 +442,24 @@ selectAreaButton.addEventListener("click", () => {
   mapController.beginAreaSelection(applyAreaSelection);
 });
 
+selectPolygonButton.addEventListener("click", () => {
+  clearAnalysis();
+  setPolygonDrawing(true);
+  analysisStatus.textContent = "Drawing polygon";
+  mapController.beginPolygonSelection(applyPolygonSelection);
+});
+
+finishPolygonButton.addEventListener("click", () => {
+  if (!mapController.finishPolygonSelection()) {
+    analysisStatus.textContent = "Polygon needs at least 3 points";
+  }
+});
+
+cancelPolygonButton.addEventListener("click", () => {
+  mapController.cancelSelection();
+  clearAnalysis();
+});
+
 selectExtentButton.addEventListener("click", () => {
   clearAnalysis();
   mapController.selectVisibleExtent(applyAreaSelection);
@@ -448,7 +491,10 @@ closeInsightButton.addEventListener("click", () => {
 
 document.addEventListener("keydown", (event) => {
   if (event.key !== "Escape") return;
-  if (document.body.classList.contains("presentation-mode")) {
+  if (polygonDrawing) {
+    mapController.cancelSelection();
+    clearAnalysis();
+  } else if (document.body.classList.contains("presentation-mode")) {
     setPresentationMode(false);
   } else if (!insightPanel.hidden) {
     showAssetResults({ focus: true });

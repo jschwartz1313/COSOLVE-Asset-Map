@@ -43,6 +43,50 @@ export function featuresWithinBounds(features, bounds) {
   });
 }
 
+function pointOnSegment(point, start, end) {
+  const crossProduct =
+    (point.lng - start.lng) * (end.lat - start.lat) -
+    (point.lat - start.lat) * (end.lng - start.lng);
+  if (Math.abs(crossProduct) > 1e-10) return false;
+  const dotProduct =
+    (point.lng - start.lng) * (end.lng - start.lng) +
+    (point.lat - start.lat) * (end.lat - start.lat);
+  if (dotProduct < 0) return false;
+  const squaredLength =
+    (end.lng - start.lng) ** 2 + (end.lat - start.lat) ** 2;
+  return dotProduct <= squaredLength;
+}
+
+function pointWithinPolygon(point, vertices) {
+  let inside = false;
+  for (
+    let index = 0, previous = vertices.length - 1;
+    index < vertices.length;
+    previous = index++
+  ) {
+    const start = vertices[previous];
+    const end = vertices[index];
+    if (pointOnSegment(point, start, end)) return true;
+    const crossesLatitude = start.lat > point.lat !== end.lat > point.lat;
+    if (crossesLatitude) {
+      const intersectionLongitude =
+        ((end.lng - start.lng) * (point.lat - start.lat)) /
+          (end.lat - start.lat) +
+        start.lng;
+      if (point.lng < intersectionLongitude) inside = !inside;
+    }
+  }
+  return inside;
+}
+
+export function featuresWithinPolygon(features, vertices) {
+  if (vertices.length < 3) return [];
+  return features.filter((feature) => {
+    const coordinates = featureCoordinates(feature);
+    return coordinates && pointWithinPolygon(coordinates, vertices);
+  });
+}
+
 export function summarizeRegion(features, regionSlug) {
   const regional = features.filter(
     (feature) => feature.properties.location.region_slug === regionSlug,

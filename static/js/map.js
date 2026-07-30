@@ -544,10 +544,14 @@ export function createMap(root) {
   map.createPane("analysis-selection");
   map.getPane("analysis-selection").style.zIndex = 390;
   let selectionRectangle = null;
+  let selectionPolygon = null;
+  let selectionVertices = [];
+  let selectionVertexLayer = null;
   let selectionStart = null;
   let selectionCallback = null;
   let nearbyCircle = null;
   let selecting = false;
+  let selectionMode = null;
 
   function selectionBounds() {
     if (!selectionRectangle) return null;
@@ -564,13 +568,16 @@ export function createMap(root) {
     if (!selecting) return;
     selecting = false;
     selectionStart = null;
+    selectionMode = null;
     map.dragging.enable();
+    map.doubleClickZoom.enable();
     map.getContainer().classList.remove("is-selecting-area");
+    map.getContainer().classList.remove("is-selecting-polygon");
   }
 
   const mapContainer = map.getContainer();
   mapContainer.addEventListener("mousedown", (event) => {
-    if (!selecting || event.button !== 0) return;
+    if (!selecting || selectionMode !== "rectangle" || event.button !== 0) return;
     event.preventDefault();
     selectionStart = map.mouseEventToLatLng(event);
     if (selectionRectangle) selectionRectangle.removeFrom(map);
@@ -583,12 +590,26 @@ export function createMap(root) {
     }).addTo(map);
   });
   document.addEventListener("mousemove", (event) => {
-    if (!selecting || !selectionStart || !selectionRectangle) return;
+    if (
+      !selecting ||
+      selectionMode !== "rectangle" ||
+      !selectionStart ||
+      !selectionRectangle
+    ) {
+      return;
+    }
     const current = map.mouseEventToLatLng(event);
     selectionRectangle.setBounds(window.L.latLngBounds(selectionStart, current));
   });
   document.addEventListener("mouseup", () => {
-    if (!selecting || !selectionStart || !selectionRectangle) return;
+    if (
+      !selecting ||
+      selectionMode !== "rectangle" ||
+      !selectionStart ||
+      !selectionRectangle
+    ) {
+      return;
+    }
     const callback = selectionCallback;
     stopSelecting();
     callback?.(selectionBounds());
@@ -598,14 +619,113 @@ export function createMap(root) {
     stopSelecting();
     selectionCallback = callback;
     selecting = true;
+    selectionMode = "rectangle";
     map.dragging.disable();
     map.closePopup();
     map.getContainer().classList.add("is-selecting-area");
   }
 
+  function removePolygonSelection() {
+    if (selectionPolygon) selectionPolygon.removeFrom(map);
+    if (selectionVertexLayer) selectionVertexLayer.removeFrom(map);
+    selectionPolygon = null;
+    selectionVertexLayer = null;
+    selectionVertices = [];
+  }
+
+  function addPolygonVertex(latlng) {
+    const previous = selectionVertices.at(-1);
+    if (previous) {
+      const previousPoint = map.latLngToContainerPoint(previous);
+      const currentPoint = map.latLngToContainerPoint(latlng);
+      if (previousPoint.distanceTo(currentPoint) < 5) return;
+    }
+    selectionVertices.push(latlng);
+    selectionPolygon.setLatLngs(selectionVertices);
+    window.L.circleMarker(latlng, {
+      pane: "analysis-selection",
+      className: "analysis-selection-vertex",
+      color: "#ffffff",
+      fillColor: "#c83d2c",
+      fillOpacity: 1,
+      interactive: false,
+      radius: 4,
+      weight: 1.5,
+    }).addTo(selectionVertexLayer);
+  }
+
+  function beginPolygonSelection(callback) {
+    stopSelecting();
+    if (selectionRectangle) selectionRectangle.removeFrom(map);
+    selectionRectangle = null;
+    removePolygonSelection();
+    selectionCallback = callback;
+    selecting = true;
+    selectionMode = "polygon";
+    map.dragging.disable();
+    map.doubleClickZoom.disable();
+    map.closePopup();
+    selectionPolygon = window.L.polygon([], {
+      pane: "analysis-selection",
+      className: "analysis-selection-polygon",
+      color: "#c83d2c",
+      fillColor: "#c83d2c",
+      fillOpacity: 0.09,
+      interactive: false,
+      weight: 2,
+    }).addTo(map);
+    selectionVertexLayer = window.L.layerGroup().addTo(map);
+    map.getContainer().classList.add("is-selecting-polygon");
+  }
+
+  function finishPolygonSelection() {
+    if (!selecting || selectionMode !== "polygon" || selectionVertices.length < 3) {
+      return false;
+    }
+    const callback = selectionCallback;
+    const vertices = selectionVertices.map((vertex) => ({
+      lat: vertex.lat,
+      lng: vertex.lng,
+    }));
+    selectionPolygon.setLatLngs(selectionVertices);
+    stopSelecting();
+    callback?.(vertices);
+    return true;
+  }
+
+  function cancelSelection() {
+    if (!selecting) return;
+    const cancelledMode = selectionMode;
+    stopSelecting();
+    if (cancelledMode === "polygon") removePolygonSelection();
+    if (cancelledMode === "rectangle" && selectionRectangle) {
+      selectionRectangle.removeFrom(map);
+      selectionRectangle = null;
+    }
+  }
+
+  mapContainer.addEventListener("pointerdown", (event) => {
+    if (!selecting || selectionMode !== "polygon") return;
+    event.preventDefault();
+    event.stopPropagation();
+    addPolygonVertex(map.mouseEventToLatLng(event));
+  }, true);
+  mapContainer.addEventListener("click", (event) => {
+    if (!selecting || selectionMode !== "polygon") return;
+    event.preventDefault();
+    event.stopPropagation();
+  }, true);
+  mapContainer.addEventListener("dblclick", (event) => {
+    if (!selecting || selectionMode !== "polygon") return;
+    event.preventDefault();
+    event.stopPropagation();
+    finishPolygonSelection();
+  }, true);
+
   function selectVisibleExtent(callback) {
     stopSelecting();
     if (selectionRectangle) selectionRectangle.removeFrom(map);
+    removePolygonSelection();
     selectionRectangle = window.L.rectangle(map.getBounds(), {
       pane: "analysis-selection",
       color: "#c83d2c",
@@ -631,6 +751,7 @@ export function createMap(root) {
   function clearAnalysisGraphics() {
     stopSelecting();
     if (selectionRectangle) selectionRectangle.removeFrom(map);
+    removePolygonSelection();
     if (nearbyCircle) nearbyCircle.removeFrom(map);
     selectionRectangle = null;
     nearbyCircle = null;
@@ -639,8 +760,11 @@ export function createMap(root) {
   return {
     map,
     beginAreaSelection,
+    beginPolygonSelection,
+    cancelSelection,
     clearAnalysisGraphics,
     draw,
+    finishPolygonSelection,
     getViewState,
     onRegionSelect(callback) {
       regionSelectCallback = callback;

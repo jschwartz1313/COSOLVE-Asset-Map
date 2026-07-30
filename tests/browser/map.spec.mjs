@@ -337,6 +337,58 @@ test("drawn area selection filters assets and enables export", async ({ page }) 
   expect(csv).toHaveLength(selectedCount + 1);
 });
 
+test("drawn polygon selects and exports only enclosed assets", async ({ page }) => {
+  await page.goto("/map/?region=hampton-roads");
+  const regionalTotal = Number(await page.locator("#result-count").textContent());
+
+  await page.locator(".map-analysis summary").click();
+  await page.locator("#select-polygon").click();
+  const mapBox = await page.locator("#map").boundingBox();
+  if (!mapBox) throw new Error("Map did not render");
+  const mobile = page.viewportSize().width <= 650;
+  const vertices = mobile
+    ? [
+        [0.58, 0.55],
+        [0.86, 0.55],
+        [0.86, 0.78],
+        [0.58, 0.78],
+      ]
+    : [
+        [0.4, 0.25],
+        [0.85, 0.35],
+        [0.75, 0.85],
+        [0.4, 0.75],
+      ];
+  for (const [x, y] of vertices) {
+    const point = {
+      x: mapBox.x + mapBox.width * x,
+      y: mapBox.y + mapBox.height * y,
+    };
+    if (mobile) {
+      await page.touchscreen.tap(point.x, point.y);
+    } else {
+      await page.mouse.click(point.x, point.y);
+    }
+    await page.waitForTimeout(150);
+  }
+  if (await page.locator("#finish-polygon").isVisible()) {
+    await page.locator("#finish-polygon").click();
+  }
+
+  await expect(page.locator("#analysis-status")).toContainText("assets selected");
+  await expect(page.locator(".analysis-selection-polygon")).toHaveCount(1);
+  const selectedCount = Number(await page.locator("#result-count").textContent());
+  expect(selectedCount).toBeGreaterThan(0);
+  expect(selectedCount).toBeLessThan(regionalTotal);
+  await expect(page.locator("#export-area")).toBeEnabled();
+  await page.locator(".map-analysis summary").click();
+  const downloadPromise = page.waitForEvent("download");
+  await page.locator("#export-area").click();
+  const download = await downloadPromise;
+  const csv = readFileSync(await download.path(), "utf8").trim().split("\n");
+  expect(csv).toHaveLength(selectedCount + 1);
+});
+
 test("nearby search filters from the current map center and can be cleared", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto("/map/?q=Adaptive%20Aerospace%20Group");

@@ -5,6 +5,7 @@ import {
   distanceMiles,
   featureCsv,
   featuresWithinBounds,
+  featuresWithinPolygon,
   featuresWithinRadius,
   summarizeRegion,
 } from "../../static/js/map-analysis.js";
@@ -63,6 +64,26 @@ test("bounds filtering excludes unmapped and out-of-area records", () => {
     }).map((item) => item.id),
     ["inside"],
   );
+});
+
+test("polygon filtering includes interior and boundary points", () => {
+  const features = [
+    feature("inside", 36.85, -76.25),
+    feature("boundary", 36.8, -76.2),
+    feature("outside", 37.1, -76.25),
+    feature("unmapped", null, null),
+  ];
+  const vertices = [
+    { lat: 36.8, lng: -76.4 },
+    { lat: 36.8, lng: -76.2 },
+    { lat: 37, lng: -76.3 },
+  ];
+
+  assert.deepEqual(
+    featuresWithinPolygon(features, vertices).map((item) => item.id),
+    ["inside", "boundary"],
+  );
+  assert.deepEqual(featuresWithinPolygon(features, vertices.slice(0, 2)), []);
 });
 
 test("regional summaries report mix, precision, review, and capabilities", () => {
