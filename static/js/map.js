@@ -18,6 +18,15 @@ const TYPE_ORDER = [
   "operating-environment",
 ];
 
+const CLUSTER_TYPE_LABELS = {
+  university: "Univ.",
+  organization: "Org.",
+  facility: "Facility",
+  program: "Program",
+  infrastructure: "Infra.",
+  "operating-environment": "Ops env.",
+};
+
 function clusterComposition(cluster) {
   const counts = new Map();
   for (const marker of cluster.getAllChildMarkers()) {
@@ -27,9 +36,7 @@ function clusterComposition(cluster) {
   return TYPE_ORDER.filter((type) => counts.has(type)).map((type) => ({
     type,
     count: counts.get(type),
-    label: cluster
-      .getAllChildMarkers()
-      .find((marker) => marker.options.recordType === type).options.recordTypeLabel,
+    label: CLUSTER_TYPE_LABELS[type],
   }));
 }
 
@@ -50,8 +57,11 @@ function buildClusterIcon(cluster) {
 
 function clusterTooltip(cluster) {
   return clusterComposition(cluster)
-    .map((item) => `${item.count} ${item.label}`)
-    .join(" · ");
+    .map(
+      (item) =>
+        `<span class="cluster-composition-row"><span>${item.label}</span><strong>${item.count}</strong></span>`,
+    )
+    .join("");
 }
 
 export function createMap(root) {

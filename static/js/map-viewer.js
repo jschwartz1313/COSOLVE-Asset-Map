@@ -6,7 +6,7 @@ import {
   featuresWithinRadius,
   summarizeRegion,
 } from "./map-analysis.js?v=20260730";
-import { createMap } from "./map.js?v=20260730-1";
+import { createMap } from "./map.js?v=20260730-2";
 import {
   filterParamsFromMapUrl,
   mapStateFromParams,

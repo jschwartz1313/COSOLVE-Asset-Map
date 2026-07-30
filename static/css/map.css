@@ -143,7 +143,9 @@
 .cluster-segment.program { background: #b48216; }
 .cluster-segment.infrastructure { background: #c63f2b; }
 .cluster-segment.operating-environment { background: #6b5d95; }
-.cluster-composition-tooltip { max-width: 240px; white-space: normal; font-size: 10px; font-weight: 750; text-align: center; }
+.cluster-composition-tooltip { min-width: 90px; display: grid; gap: 2px; font-size: 10px; font-weight: 750; }
+.cluster-composition-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; white-space: nowrap; }
+.cluster-composition-row strong { font-size: inherit; }
 #map.is-selecting-area, #map.is-selecting-area * { cursor: crosshair !important; }
 .leaflet-control-zoom a { color: var(--ink); }
 .leaflet-popup-content-wrapper { border-radius: var(--radius); box-shadow: var(--shadow); }

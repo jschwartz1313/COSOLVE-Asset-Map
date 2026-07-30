@@ -207,6 +207,15 @@ test("analytical map tools expose quality, relationships, summaries, and saved b
   await page.goto("/map/");
   await expect(page.locator(".composition-cluster").first()).toBeVisible();
   await expect(page.locator(".composition-cluster .cluster-segment").first()).toBeVisible();
+  await page.locator(".composition-cluster").first().hover();
+  const clusterRows = page.locator(".cluster-composition-tooltip .cluster-composition-row");
+  await expect(clusterRows.first()).toBeVisible();
+  await expect(clusterRows.first()).toHaveCSS("white-space", "nowrap");
+  await expect(clusterRows.first()).toContainText(/\b\d+$/);
+  const clusterTooltip = page.locator(".cluster-composition-tooltip");
+  await expect(clusterTooltip).not.toContainText("Organization");
+  await expect(clusterTooltip).not.toContainText("Infrastructure");
+  await expect(clusterTooltip).not.toContainText("Operating environment");
 
   await page.locator(".map-layers summary").click();
   await page.locator("#relationship-layer-toggle").check();
