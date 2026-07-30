@@ -6,12 +6,15 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260729-8">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260730-1">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
       data-lat="{{ default_map_lat }}" data-lon="{{ default_map_lon }}" data-zoom="{{ default_map_zoom }}"
-      data-tile-url="{{ basemap_tile_url }}" data-attribution="{{ basemap_attribution }}"
+      data-basemap-street-url="{{ basemap_tile_url }}" data-basemap-street-attribution="{{ basemap_attribution }}"
+      data-basemap-light-url="{{ light_basemap_tile_url }}" data-basemap-light-attribution="{{ light_basemap_attribution }}"
+      data-basemap-imagery-url="{{ imagery_basemap_tile_url }}" data-basemap-imagery-attribution="{{ imagery_basemap_attribution }}"
+      data-relationships-url="{% url 'api:relationship-geojson' %}"
       data-counties-url="{% static 'data/virginia-counties.geojson' %}?v=2025"
       data-regions-url="{% static 'data/virginia-regions.geojson' %}?v=20260728"
       data-mpz-candidates-url="{% static 'data/virginia-maritime-prosperity-candidates.geojson' %}?v=20260729"
@@ -40,6 +43,7 @@
     </header>
     <p class="visually-hidden" id="map-accessibility-note">Use the adjacent results list or directory for a text-based view of every mapped asset.</p>
     <div id="map" role="region" tabindex="0" aria-label="Interactive map of public asset listings" aria-describedby="map-accessibility-note"></div>
+    <button class="button compact presentation-exit" id="exit-presentation" type="button" hidden>Exit presentation</button>
     <div class="map-toolbar">
       <div class="map-tools">
         <button class="button compact filter-open" type="button" aria-label="Open filters" aria-controls="asset-filters-panel" aria-expanded="false">Filters</button>
@@ -50,17 +54,52 @@
             {% if user.is_authenticated %}<a id="save-view-link" href="{% url 'core:saved-views' %}?view_type=map">Save to my views</a>{% endif %}
             <button id="copy-view-link" type="button">Copy view link</button>
             <button id="print-view" type="button">Print / save PDF</button>
+            <button id="presentation-view" type="button">Presentation mode</button>
             <span class="visually-hidden" id="view-action-status" role="status" aria-live="polite"></span>
+          </div>
+        </details>
+        <details class="map-analysis">
+          <summary>Analyze</summary>
+          <div class="map-analysis-options">
+            <fieldset>
+              <legend>Nearby assets</legend>
+              <label><span>Radius</span><select id="nearby-radius"><option value="10">10 miles</option><option value="25" selected>25 miles</option><option value="50">50 miles</option><option value="100">100 miles</option></select></label>
+              <button id="nearby-search" type="button">Near map center</button>
+            </fieldset>
+            <fieldset>
+              <legend>Area selection</legend>
+              <button id="select-area" type="button">Draw rectangle</button>
+              <button id="select-extent" type="button">Use visible extent</button>
+              <button id="export-area" type="button" disabled>Export selected CSV</button>
+            </fieldset>
+            <fieldset>
+              <legend>Regional summary</legend>
+              <label><span>Region</span><select id="summary-region">{% for region in regions %}<option value="{{ region.slug }}">{{ region.name }}</option>{% endfor %}</select></label>
+              <button id="show-region-summary" type="button">Open summary</button>
+            </fieldset>
+            <button id="clear-analysis" class="analysis-clear" type="button" hidden>Clear analysis</button>
+            <small id="analysis-status" aria-live="polite"></small>
           </div>
         </details>
         <details class="map-layers">
           <summary>Layers</summary>
           <div class="map-layer-options">
+            <strong>Map data</strong>
             <label title="Show mapped asset points"><input id="asset-layer-toggle" type="checkbox" checked><span>Asset points</span></label>
             <label title="Show the Virginia state boundary"><input id="state-boundary-toggle" type="checkbox" checked><span>Virginia boundary</span></label>
             <label title="Shade COSOLVE's working Virginia ecosystem regions"><input id="region-layer-toggle" type="checkbox"><span>Ecosystem regions</span></label>
             <label title="Show planning-candidate census tracts for the proposed federal Maritime Prosperity Zone program"><input id="mpz-layer-toggle" type="checkbox"><span>Potential MPZ tracts</span></label>
             <label title="Show Virginia county and independent-city boundaries"><input id="county-layer-toggle" type="checkbox"><span>County boundaries</span></label>
+            <label title="Draw documented public relationships between visible assets"><input id="relationship-layer-toggle" type="checkbox"><span>Asset relationships</span></label>
+            <strong>Point analysis</strong>
+            <label title="Outline points by editorial review state"><input id="verification-layer-toggle" type="checkbox"><span>Verification status</span></label>
+            <label title="Differentiate points by coordinate precision"><input id="precision-layer-toggle" type="checkbox"><span>Location precision</span></label>
+            <fieldset class="basemap-options">
+              <legend>Basemap</legend>
+              <label><input type="radio" name="map-basemap" value="street" checked><span>Street</span></label>
+              <label><input type="radio" name="map-basemap" value="light"><span>Light</span></label>
+              <label><input type="radio" name="map-basemap" value="imagery"><span>Imagery</span></label>
+            </fieldset>
           </div>
         </details>
       </div>
@@ -77,10 +116,29 @@
           <span><i class="legend-line county-boundary"></i>County boundary</span>
           <span><i class="legend-region-fill"></i>Ecosystem region</span>
           <span><i class="legend-mpz-fill"></i>Potential MPZ tract</span>
+          <span><i class="legend-line relationship-line"></i>Asset relationship</span>
+          <div class="legend-analysis-group" data-verification-legend hidden>
+            <strong>Verification</strong>
+            <span><i class="legend-ring reviewed"></i>Reviewed</span>
+            <span><i class="legend-ring source-backed"></i>Review pending</span>
+            <span><i class="legend-ring stale"></i>Review out of date</span>
+          </div>
+          <div class="legend-analysis-group" data-precision-legend hidden>
+            <strong>Location precision</strong>
+            <span><i class="legend-precision site"></i>Exact or site-level</span>
+            <span><i class="legend-precision approximate"></i>Approximate</span>
+            <span><i class="legend-precision locality"></i>Locality only</span>
+          </div>
           <small>Regions are COSOLVE working groupings. Potential MPZ tracts are planning candidates based on documented maritime facilities; none are federally designated. Points may represent exact, approximate, or generalized locations.</small>
         </div>
       </details>
     </div>
+    <aside class="map-insight-panel" id="map-insight-panel" aria-labelledby="map-insight-title" hidden>
+      <button class="icon-button" id="close-map-insight" type="button" aria-label="Close regional summary" title="Close">&times;</button>
+      <span class="eyebrow">Regional summary</span>
+      <h2 id="map-insight-title"></h2>
+      <div id="map-insight-content"></div>
+    </aside>
     <div id="map-status" class="map-status" role="status" hidden></div>
   </section>
 
@@ -97,6 +155,6 @@
 </main>
 <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
 <script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
-<script type="module" src="{% static 'js/map-viewer.js' %}?v=20260729-6"></script>
+<script type="module" src="{% static 'js/map-viewer.js' %}?v=20260730-1"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}

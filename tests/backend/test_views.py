@@ -16,8 +16,14 @@ class CoreViewTests(TestCase):
         self.assertContains(response, 'id="county-layer-toggle"')
         self.assertContains(response, 'id="region-layer-toggle"')
         self.assertContains(response, 'id="state-boundary-toggle"')
+        self.assertContains(response, 'id="relationship-layer-toggle"')
+        self.assertContains(response, 'id="verification-layer-toggle"')
+        self.assertContains(response, 'id="precision-layer-toggle"')
+        self.assertContains(response, 'id="nearby-search"')
+        self.assertContains(response, 'id="presentation-view"')
         self.assertContains(response, "data-regions-url=")
         self.assertContains(response, "data-state-boundary-url=")
+        self.assertContains(response, "data-relationships-url=")
         self.assertNotContains(response, 'data-region-quick-filter="hampton-roads"')
 
     def test_health_endpoint(self):
@@ -145,6 +151,24 @@ class CoreViewTests(TestCase):
         self.assertContains(response, "Editorial review")
         self.assertContains(response, "Suggest an update")
         self.assertNotContains(response, "Verification range")
+
+    def test_asset_detail_includes_public_record_history(self):
+        asset = Asset.objects.create(
+            name="History Test Asset",
+            record_type=Asset.RecordType.FACILITY,
+            short_description="A public history test.",
+            unmanned_systems_relevance="Supports autonomous systems testing.",
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        )
+        asset.short_description = "An updated public history test."
+        asset.save()
+
+        response = self.client.get(reverse("core:asset-detail", args=[asset.slug]))
+
+        self.assertContains(response, "Record history")
+        self.assertContains(response, "Record added")
+        self.assertContains(response, "Short Description")
 
     def test_general_update_submission_enters_staff_queue(self):
         response = self.client.post(
@@ -352,7 +376,8 @@ class SavedViewTests(TestCase):
         query_string = (
             "region=hampton-roads&record_type=university"
             "&map_lat=36.91235&map_lon=-76.30123&map_zoom=11"
-            "&map_layers=state%2Cmpz%2Ccounties"
+            "&map_layers=assets%2Cstate%2Cmpz%2Ccounties%2Cverification"
+            "&map_layers_v=3&map_basemap=light"
         )
         response = self.client.post(
             reverse("core:saved-views"),

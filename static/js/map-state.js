@@ -1,12 +1,23 @@
-const MAP_LAYER_STATE_VERSION = "2";
+const MAP_LAYER_STATE_VERSION = "3";
 const MAP_STATE_KEYS = [
   "map_lat",
   "map_lon",
   "map_zoom",
   "map_layers",
   "map_layers_v",
+  "map_basemap",
 ];
-export const MAP_LAYER_ORDER = ["assets", "state", "regions", "mpz", "counties"];
+export const MAP_LAYER_ORDER = [
+  "assets",
+  "state",
+  "regions",
+  "mpz",
+  "counties",
+  "verification",
+  "precision",
+  "relationships",
+];
+export const MAP_BASEMAPS = ["street", "light", "imagery"];
 
 function validNumber(value, minimum, maximum) {
   const number = Number(value);
@@ -24,7 +35,8 @@ export function filterParamsFromMapUrl(params) {
 export function mapStateFromParams(params) {
   const hasCenter = ["map_lat", "map_lon", "map_zoom"].every((key) => params.has(key));
   const hasLayers = params.has("map_layers");
-  if (!hasCenter && !hasLayers) return null;
+  const hasBasemap = params.has("map_basemap");
+  if (!hasCenter && !hasLayers && !hasBasemap) return null;
 
   const latitude = hasCenter ? validNumber(params.get("map_lat"), -90, 90) : null;
   const longitude = hasCenter ? validNumber(params.get("map_lon"), -180, 180) : null;
@@ -35,19 +47,19 @@ export function mapStateFromParams(params) {
         .split(",")
         .filter((layer) => MAP_LAYER_ORDER.includes(layer))
     : null;
-  if (
-    layers &&
-    params.get("map_layers_v") !== MAP_LAYER_STATE_VERSION &&
-    !layers.includes("assets")
-  ) {
+  const layerVersion = Number(params.get("map_layers_v") || "1");
+  if (layers && layerVersion < 2 && !layers.includes("assets")) {
     layers = ["assets", ...layers];
   }
+  const requestedBasemap = params.get("map_basemap");
+  const basemap = MAP_BASEMAPS.includes(requestedBasemap) ? requestedBasemap : "street";
 
   return {
     latitude,
     longitude,
     zoom,
     layers,
+    basemap,
     hasValidCenter: latitude !== null && longitude !== null && zoom !== null,
   };
 }
@@ -62,5 +74,9 @@ export function paramsWithMapState(filters, state) {
     MAP_LAYER_ORDER.filter((layer) => state.layers.includes(layer)).join(","),
   );
   params.set("map_layers_v", MAP_LAYER_STATE_VERSION);
+  params.set(
+    "map_basemap",
+    MAP_BASEMAPS.includes(state.basemap) ? state.basemap : "street",
+  );
   return params;
 }

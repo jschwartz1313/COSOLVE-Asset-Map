@@ -139,6 +139,12 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
 .source-list > div, .relationship-list a { padding: 9px 0; display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--line); }
 .source-list span, .relationship-list span { color: var(--ink-muted); font-size: 12px; }
 .relationship-list a { text-decoration: none; }
+.record-history { display: grid; }
+.record-history > div { display: grid; grid-template-columns: 94px minmax(0, 1fr); gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.record-history time { color: var(--ink-muted); font-size: 11px; }
+.record-history p { margin: 0; line-height: 1.35; }
+.record-history strong, .record-history span, .record-history small { display: block; }
+.record-history span, .record-history small { margin-top: 3px; color: var(--ink-muted); font-size: 11px; }
 .public-disclaimer { margin-top: 24px; padding: 13px 0; color: var(--ink-muted); border-top: 1px solid var(--line); font-size: 11px; }
 
 .page-heading { max-width: 760px; margin-bottom: 30px; }

@@ -71,6 +71,7 @@ test("saved map state preserves filters, center, zoom, and layers", () => {
       longitude: -76.301234,
       zoom: 11,
       layers: ["assets", "state", "mpz", "counties"],
+      basemap: "light",
     },
   );
   const state = mapStateFromParams(params);
@@ -84,6 +85,7 @@ test("saved map state preserves filters, center, zoom, and layers", () => {
     longitude: -76.30123,
     zoom: 11,
     layers: ["assets", "state", "mpz", "counties"],
+    basemap: "light",
     hasValidCenter: true,
   });
 });
@@ -93,6 +95,7 @@ test("legacy saved map layers retain asset points", () => {
     new URLSearchParams("map_layers=regions,unknown"),
   );
   assert.deepEqual(state.layers, ["assets", "regions"]);
+  assert.equal(state.basemap, "street");
 });
 
 test("invalid saved map coordinates are ignored safely", () => {
@@ -103,6 +106,7 @@ test("invalid saved map coordinates are ignored safely", () => {
   );
   assert.equal(state.hasValidCenter, false);
   assert.deepEqual(state.layers, ["regions"]);
+  assert.equal(state.basemap, "street");
 });
 
 test("versioned saved map state can hide asset points", () => {
@@ -110,4 +114,19 @@ test("versioned saved map state can hide asset points", () => {
     new URLSearchParams("map_layers=state&map_layers_v=2"),
   );
   assert.deepEqual(state.layers, ["state"]);
+});
+
+test("saved map state restores imagery and analytical layers", () => {
+  const state = mapStateFromParams(
+    new URLSearchParams(
+      "map_layers=assets,verification,precision,relationships&map_layers_v=3&map_basemap=imagery",
+    ),
+  );
+  assert.deepEqual(state.layers, [
+    "assets",
+    "verification",
+    "precision",
+    "relationships",
+  ]);
+  assert.equal(state.basemap, "imagery");
 });

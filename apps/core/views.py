@@ -29,6 +29,53 @@ DIRECTORY_ORDERING = {
     "region": ("region__name", "name"),
     "type": ("record_type", "name"),
 }
+PUBLIC_HISTORY_FIELDS = {
+    "name",
+    "record_type",
+    "short_description",
+    "unmanned_systems_relevance",
+    "website_url",
+    "contact_text",
+    "address_line",
+    "city",
+    "state",
+    "postal_code",
+    "latitude",
+    "longitude",
+    "location_precision",
+    "region",
+    "status",
+    "last_verified_at",
+    "published_at",
+}
+
+
+def asset_history_entries(asset, include_editor=False):
+    records = list(asset.history.select_related("history_user").order_by("-history_date")[:12])
+    entries = []
+    for index, record in enumerate(records):
+        changed_fields = []
+        if record.history_type == "+":
+            label = "Record added"
+        else:
+            label = "Record updated"
+            if index + 1 < len(records):
+                delta = record.diff_against(records[index + 1])
+                changed_fields = [
+                    change.field.replace("_", " ").title()
+                    for change in delta.changes
+                    if change.field in PUBLIC_HISTORY_FIELDS
+                ]
+        entries.append(
+            {
+                "date": record.history_date,
+                "label": label,
+                "changed_fields": changed_fields,
+                "editor": record.history_user if include_editor else None,
+                "reason": record.history_change_reason if include_editor else "",
+            }
+        )
+    return entries
 
 
 def filter_context():
@@ -111,6 +158,7 @@ def asset_detail(request, slug):
             "incoming_relationships": incoming_relationships,
             "incoming_relationship_count": incoming_relationships.count(),
             "similar_assets": similar_assets,
+            "history_entries": asset_history_entries(asset, request.user.is_staff),
         },
     )
 

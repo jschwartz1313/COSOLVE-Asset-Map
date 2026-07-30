@@ -98,9 +98,30 @@ STORAGES = {
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 BASEMAP_TILE_URL = os.getenv(
-    "BASEMAP_TILE_URL", "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+    "BASEMAP_TILE_URL", "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
 )
-BASEMAP_ATTRIBUTION = os.getenv("BASEMAP_ATTRIBUTION", "&copy; OpenStreetMap contributors")
+BASEMAP_ATTRIBUTION = os.getenv(
+    "BASEMAP_ATTRIBUTION",
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+)
+LIGHT_BASEMAP_TILE_URL = os.getenv(
+    "LIGHT_BASEMAP_TILE_URL",
+    "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+)
+LIGHT_BASEMAP_ATTRIBUTION = os.getenv(
+    "LIGHT_BASEMAP_ATTRIBUTION",
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, '
+    '&copy; <a href="https://carto.com/attributions">CARTO</a>',
+)
+IMAGERY_BASEMAP_TILE_URL = os.getenv(
+    "IMAGERY_BASEMAP_TILE_URL",
+    "https://basemap.nationalmap.gov/arcgis/rest/services/"
+    "USGSImageryOnly/MapServer/tile/{z}/{y}/{x}",
+)
+IMAGERY_BASEMAP_ATTRIBUTION = os.getenv(
+    "IMAGERY_BASEMAP_ATTRIBUTION",
+    "USDA, USGS The National Map: Orthoimagery",
+)
 DEFAULT_MAP_LAT = float(os.getenv("DEFAULT_MAP_LAT", "37.5"))
 DEFAULT_MAP_LON = float(os.getenv("DEFAULT_MAP_LON", "-78.7"))
 DEFAULT_MAP_ZOOM = int(os.getenv("DEFAULT_MAP_ZOOM", "7"))

@@ -10,6 +10,10 @@ def map_settings(request):
     context = {
         "basemap_tile_url": settings.BASEMAP_TILE_URL,
         "basemap_attribution": settings.BASEMAP_ATTRIBUTION,
+        "light_basemap_tile_url": settings.LIGHT_BASEMAP_TILE_URL,
+        "light_basemap_attribution": settings.LIGHT_BASEMAP_ATTRIBUTION,
+        "imagery_basemap_tile_url": settings.IMAGERY_BASEMAP_TILE_URL,
+        "imagery_basemap_attribution": settings.IMAGERY_BASEMAP_ATTRIBUTION,
         "default_map_lat": settings.DEFAULT_MAP_LAT,
         "default_map_lon": settings.DEFAULT_MAP_LON,
         "default_map_zoom": settings.DEFAULT_MAP_ZOOM,

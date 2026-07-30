@@ -1,3 +1,4 @@
+from datetime import timedelta
 from decimal import Decimal
 
 from django.core.exceptions import ValidationError
@@ -80,6 +81,19 @@ class AssetModelTests(TestCase):
         asset.reviewed_at = timezone.now()
         asset.save()
         self.assertTrue(asset.is_editorially_reviewed)
+        self.assertEqual(asset.verification_state, "reviewed")
+
+    @override_settings(STALE_VERIFICATION_DAYS=180)
+    def test_review_state_identifies_out_of_date_verification(self):
+        asset = self.make_asset(
+            status=Asset.Status.PUBLISHED,
+            visibility=Asset.Visibility.PUBLIC,
+            last_verified_at=timezone.localdate() - timedelta(days=181),
+            reviewed_at=timezone.now() - timedelta(days=181),
+        )
+        asset.save()
+        self.assertEqual(asset.verification_state, "stale")
+        self.assertIn("out of date", asset.verification_state_label)
 
     def test_asset_edits_create_field_level_history(self):
         asset = self.make_asset()

@@ -104,6 +104,11 @@ def asset_feature(asset):
         "record_type": asset.record_type,
         "record_type_label": asset.get_record_type_display(),
         "short_description": asset.short_description,
+        "verification_state": asset.verification_state,
+        "verification_state_label": asset.verification_state_label,
+        "last_verified_at": asset.last_verified_at.isoformat()
+        if asset.last_verified_at
+        else None,
         "location": {
             "address_line": asset.address_line,
             "city": asset.city,
@@ -112,7 +117,36 @@ def asset_feature(asset):
             "precision": asset.location_precision,
             "precision_label": asset.get_location_precision_display(),
             "region": asset.region.name if asset.region else None,
+            "region_slug": asset.region.slug if asset.region else None,
         },
+        "strategic_categories": names(asset.strategic_categories),
+        "platform_domains": names(asset.platform_domains),
+        "capabilities": names(asset.capabilities),
+        "missions": names(asset.missions),
         "detail_url": asset.get_absolute_url(),
     }
     return {"type": "Feature", "id": str(asset.pk), "geometry": geometry, "properties": properties}
+
+
+def relationship_feature(relationship):
+    from_asset = relationship.from_asset
+    to_asset = relationship.to_asset
+    return {
+        "type": "Feature",
+        "id": str(relationship.pk),
+        "geometry": {
+            "type": "LineString",
+            "coordinates": [
+                [float(from_asset.longitude), float(from_asset.latitude)],
+                [float(to_asset.longitude), float(to_asset.latitude)],
+            ],
+        },
+        "properties": {
+            "from_id": str(from_asset.pk),
+            "from_name": from_asset.name,
+            "to_id": str(to_asset.pk),
+            "to_name": to_asset.name,
+            "relationship_type": relationship.relationship_type,
+            "relationship_label": relationship.get_relationship_type_display(),
+        },
+    }

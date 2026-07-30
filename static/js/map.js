@@ -1,4 +1,4 @@
-import { buildPopup } from "./popups.js?v=20260727";
+import { buildPopup } from "./popups.js?v=20260730";
 
 const ICON_FILES = {
   university: "university.svg",
@@ -9,18 +9,86 @@ const ICON_FILES = {
   "operating-environment": "radar.svg",
 };
 
+const TYPE_ORDER = [
+  "university",
+  "organization",
+  "facility",
+  "program",
+  "infrastructure",
+  "operating-environment",
+];
+
+function clusterComposition(cluster) {
+  const counts = new Map();
+  for (const marker of cluster.getAllChildMarkers()) {
+    const type = marker.options.recordType;
+    counts.set(type, (counts.get(type) || 0) + 1);
+  }
+  return TYPE_ORDER.filter((type) => counts.has(type)).map((type) => ({
+    type,
+    count: counts.get(type),
+    label: cluster
+      .getAllChildMarkers()
+      .find((marker) => marker.options.recordType === type).options.recordTypeLabel,
+  }));
+}
+
+function buildClusterIcon(cluster) {
+  const composition = clusterComposition(cluster);
+  const bars = composition
+    .map(
+      (item) =>
+        `<i class="cluster-segment ${item.type}" style="flex:${item.count}" aria-hidden="true"></i>`,
+    )
+    .join("");
+  return window.L.divIcon({
+    className: "marker-cluster composition-cluster-shell",
+    html: `<span class="composition-cluster"><strong>${cluster.getChildCount()}</strong><span>${bars}</span></span>`,
+    iconSize: [40, 40],
+  });
+}
+
+function clusterTooltip(cluster) {
+  return clusterComposition(cluster)
+    .map((item) => `${item.count} ${item.label}`)
+    .join(" · ");
+}
+
 export function createMap(root) {
   const defaultView = [Number(root.dataset.lat), Number(root.dataset.lon)];
   const defaultZoom = Number(root.dataset.zoom);
-  const map = window.L.map("map", { zoomControl: false }).setView(
-    defaultView,
-    defaultZoom,
-  );
+  const map = window.L.map("map", { zoomControl: false }).setView(defaultView, defaultZoom);
   window.L.control.zoom({ position: "bottomright" }).addTo(map);
-  window.L.tileLayer(root.dataset.tileUrl, {
-    attribution: root.dataset.attribution,
-    maxZoom: 19,
-  }).addTo(map);
+
+  const basemaps = {
+    street: {
+      url: root.dataset.basemapStreetUrl,
+      attribution: root.dataset.basemapStreetAttribution,
+      maxZoom: 19,
+    },
+    light: {
+      url: root.dataset.basemapLightUrl,
+      attribution: root.dataset.basemapLightAttribution,
+      maxZoom: 20,
+      subdomains: "abcd",
+    },
+    imagery: {
+      url: root.dataset.basemapImageryUrl,
+      attribution: root.dataset.basemapImageryAttribution,
+      maxZoom: 16,
+    },
+  };
+  let activeBasemap = "street";
+  let basemapLayer = window.L.tileLayer(basemaps.street.url, basemaps.street).addTo(map);
+
+  function setBasemap(name) {
+    if (!basemaps[name] || name === activeBasemap) return;
+    basemapLayer.removeFrom(map);
+    basemapLayer = window.L.tileLayer(basemaps[name].url, basemaps[name]).addTo(map);
+    basemapLayer.bringToBack();
+    activeBasemap = name;
+  }
+
   map.attributionControl.addAttribution(
     "County boundaries: U.S. Census Bureau TIGERweb (2025)",
   );
@@ -30,6 +98,8 @@ export function createMap(root) {
   map.attributionControl.addAttribution(
     "Potential MPZ tracts: U.S. Census Bureau; MARAD, Port of Virginia, U.S. Navy",
   );
+
+  let regionSelectCallback = () => {};
   map.createPane("ecosystem-regions");
   map.getPane("ecosystem-regions").style.zIndex = 340;
   const regionLayer = window.L.geoJSON(null, {
@@ -55,6 +125,9 @@ export function createMap(root) {
         permanent: true,
       });
       boundary.on({
+        click() {
+          regionSelectCallback(feature.properties);
+        },
         mouseover() {
           boundary.setStyle({ fillOpacity: 0.34, weight: 2.4 });
         },
@@ -70,6 +143,7 @@ export function createMap(root) {
   });
   let regionLayerLoaded = false;
   let regionLayerVisible = false;
+
   map.createPane("maritime-prosperity-zones");
   map.getPane("maritime-prosperity-zones").style.zIndex = 345;
   const mpzLayer = window.L.geoJSON(null, {
@@ -142,18 +216,14 @@ export function createMap(root) {
   });
   let mpzLayerLoaded = false;
   let mpzLayerVisible = false;
+
   map.createPane("state-boundary-casing");
   map.getPane("state-boundary-casing").style.zIndex = 352;
   map.getPane("state-boundary-casing").style.pointerEvents = "none";
   const stateBoundaryCasing = window.L.geoJSON(null, {
     pane: "state-boundary-casing",
     interactive: false,
-    style: {
-      color: "#ffffff",
-      fill: false,
-      opacity: 0.9,
-      weight: 4,
-    },
+    style: { color: "#ffffff", fill: false, opacity: 0.9, weight: 4 },
   }).addTo(map);
   map.createPane("state-boundary");
   map.getPane("state-boundary").style.zIndex = 353;
@@ -161,12 +231,7 @@ export function createMap(root) {
   const stateBoundaryLayer = window.L.geoJSON(null, {
     pane: "state-boundary",
     interactive: false,
-    style: {
-      color: "#5c686f",
-      fill: false,
-      opacity: 0.95,
-      weight: 2,
-    },
+    style: { color: "#5c686f", fill: false, opacity: 0.95, weight: 2 },
   }).addTo(map);
   fetch(root.dataset.stateBoundaryUrl, {
     headers: { Accept: "application/geo+json, application/json" },
@@ -180,6 +245,7 @@ export function createMap(root) {
       stateBoundaryLayer.addData(data);
     })
     .catch((error) => console.error(error));
+
   map.createPane("county-boundaries");
   map.getPane("county-boundaries").style.zIndex = 350;
   const countyLayer = window.L.geoJSON(null, {
@@ -201,18 +267,79 @@ export function createMap(root) {
   });
   let countyLayerLoaded = false;
   let countyLayerVisible = false;
+
+  map.createPane("relationships");
+  map.getPane("relationships").style.zIndex = 360;
+  const relationshipLayer = window.L.geoJSON(null, {
+    pane: "relationships",
+    style: {
+      color: "#59666c",
+      opacity: 0.48,
+      weight: 1.4,
+    },
+    onEachFeature(feature, line) {
+      const properties = feature.properties;
+      line.bindTooltip(
+        `${properties.from_name} ${properties.relationship_label.toLowerCase()} ${properties.to_name}`,
+        { sticky: true },
+      );
+    },
+  });
+  let relationshipFeatures = [];
+  let relationshipLayerVisible = false;
+  let visibleAssetIds = new Set();
+
+  function redrawRelationships() {
+    relationshipLayer.clearLayers();
+    if (!relationshipLayerVisible) return;
+    relationshipLayer.addData(
+      relationshipFeatures.filter((feature) => {
+        const properties = feature.properties;
+        return visibleAssetIds.has(properties.from_id) && visibleAssetIds.has(properties.to_id);
+      }),
+    );
+  }
+
   const layer = window.L.markerClusterGroup
-    ? window.L.markerClusterGroup({ showCoverageOnHover: false, maxClusterRadius: 48 })
+    ? window.L.markerClusterGroup({
+        showCoverageOnHover: false,
+        maxClusterRadius: 48,
+        iconCreateFunction: buildClusterIcon,
+      })
     : window.L.layerGroup();
+  if (layer.on) {
+    layer.on("clustermouseover", (event) => {
+      event.layer
+        .bindTooltip(clusterTooltip(event.layer), {
+          className: "cluster-composition-tooltip",
+          direction: "top",
+          opacity: 0.98,
+        })
+        .openTooltip();
+    });
+    layer.on("clustermouseout", (event) => event.layer.closeTooltip());
+  }
   layer.addTo(map);
   let assetLayerVisible = true;
+  let verificationLayerVisible = false;
+  let precisionLayerVisible = false;
   const markers = new Map();
 
-  function buildMarkerIcon(recordType) {
+  function buildMarkerIcon(feature) {
+    const properties = feature.properties;
     const visual = document.createElement("span");
-    visual.className = `asset-marker ${recordType}`;
+    const classes = ["asset-marker", properties.record_type];
+    if (verificationLayerVisible) {
+      classes.push("show-verification", `verification-${properties.verification_state}`);
+    }
+    if (precisionLayerVisible) {
+      classes.push("show-precision", `precision-${properties.location.precision}`);
+    }
+    visual.className = classes.join(" ");
     const image = document.createElement("img");
-    image.src = `${root.dataset.iconBaseUrl}${ICON_FILES[recordType] || ICON_FILES["operating-environment"]}`;
+    image.src = `${root.dataset.iconBaseUrl}${
+      ICON_FILES[properties.record_type] || ICON_FILES["operating-environment"]
+    }`;
     image.alt = "";
     image.setAttribute("aria-hidden", "true");
     visual.append(image);
@@ -226,17 +353,29 @@ export function createMap(root) {
     });
   }
 
-  function draw(features, onSelect, { showLabels = false } = {}) {
+  function refreshMarkerIcons() {
+    for (const [id, marker] of markers) {
+      marker.setIcon(buildMarkerIcon(marker.options.assetFeature));
+      markers.set(id, marker);
+    }
+    if (layer.refreshClusters) layer.refreshClusters();
+  }
+
+  function draw(features, onSelect, { showLabels = false, fit = true } = {}) {
     layer.clearLayers();
     markers.clear();
+    visibleAssetIds = new Set(features.map((feature) => feature.id));
     const bounds = [];
     for (const feature of features) {
       if (!feature.geometry) continue;
       const [longitude, latitude] = feature.geometry.coordinates;
       const marker = window.L.marker([latitude, longitude], {
         alt: `${feature.properties.name} asset marker`,
-        icon: buildMarkerIcon(feature.properties.record_type),
+        assetFeature: feature,
+        icon: buildMarkerIcon(feature),
         keyboard: true,
+        recordType: feature.properties.record_type,
+        recordTypeLabel: feature.properties.record_type_label,
         riseOnHover: true,
         title: feature.properties.name,
       });
@@ -255,6 +394,8 @@ export function createMap(root) {
       markers.set(feature.id, marker);
       bounds.push([latitude, longitude]);
     }
+    redrawRelationships();
+    if (!fit) return;
     if (bounds.length > 1) {
       map.fitBounds(bounds, { animate: false, padding: [35, 35], maxZoom: 11 });
     } else if (bounds.length === 1) {
@@ -279,6 +420,7 @@ export function createMap(root) {
       latitude: center.lat,
       longitude: center.lng,
       zoom: map.getZoom(),
+      basemap: activeBasemap,
     };
   }
 
@@ -309,6 +451,31 @@ export function createMap(root) {
     assetLayerVisible = visible;
     if (visible) layer.addTo(map);
     else layer.removeFrom(map);
+  }
+
+  function setVerificationLayerVisible(visible) {
+    verificationLayerVisible = visible;
+    refreshMarkerIcons();
+  }
+
+  function setPrecisionLayerVisible(visible) {
+    precisionLayerVisible = visible;
+    refreshMarkerIcons();
+  }
+
+  function setRelationshipFeatures(features) {
+    relationshipFeatures = features;
+    redrawRelationships();
+  }
+
+  function setRelationshipLayerVisible(visible) {
+    relationshipLayerVisible = visible;
+    if (visible) {
+      relationshipLayer.addTo(map);
+      redrawRelationships();
+    } else {
+      relationshipLayer.removeFrom(map);
+    }
   }
 
   async function setCountyLayerVisible(visible) {
@@ -364,19 +531,126 @@ export function createMap(root) {
     if (mpzLayerVisible) mpzLayer.addTo(map);
   }
 
+  map.createPane("analysis-selection");
+  map.getPane("analysis-selection").style.zIndex = 390;
+  let selectionRectangle = null;
+  let selectionStart = null;
+  let selectionCallback = null;
+  let nearbyCircle = null;
+  let selecting = false;
+
+  function selectionBounds() {
+    if (!selectionRectangle) return null;
+    const bounds = selectionRectangle.getBounds();
+    return {
+      south: bounds.getSouth(),
+      west: bounds.getWest(),
+      north: bounds.getNorth(),
+      east: bounds.getEast(),
+    };
+  }
+
+  function stopSelecting() {
+    if (!selecting) return;
+    selecting = false;
+    selectionStart = null;
+    map.dragging.enable();
+    map.getContainer().classList.remove("is-selecting-area");
+  }
+
+  const mapContainer = map.getContainer();
+  mapContainer.addEventListener("mousedown", (event) => {
+    if (!selecting || event.button !== 0) return;
+    event.preventDefault();
+    selectionStart = map.mouseEventToLatLng(event);
+    if (selectionRectangle) selectionRectangle.removeFrom(map);
+    selectionRectangle = window.L.rectangle([selectionStart, selectionStart], {
+      pane: "analysis-selection",
+      color: "#c83d2c",
+      fillColor: "#c83d2c",
+      fillOpacity: 0.09,
+      weight: 2,
+    }).addTo(map);
+  });
+  document.addEventListener("mousemove", (event) => {
+    if (!selecting || !selectionStart || !selectionRectangle) return;
+    const current = map.mouseEventToLatLng(event);
+    selectionRectangle.setBounds(window.L.latLngBounds(selectionStart, current));
+  });
+  document.addEventListener("mouseup", () => {
+    if (!selecting || !selectionStart || !selectionRectangle) return;
+    const callback = selectionCallback;
+    stopSelecting();
+    callback?.(selectionBounds());
+  });
+
+  function beginAreaSelection(callback) {
+    stopSelecting();
+    selectionCallback = callback;
+    selecting = true;
+    map.dragging.disable();
+    map.closePopup();
+    map.getContainer().classList.add("is-selecting-area");
+  }
+
+  function selectVisibleExtent(callback) {
+    stopSelecting();
+    if (selectionRectangle) selectionRectangle.removeFrom(map);
+    selectionRectangle = window.L.rectangle(map.getBounds(), {
+      pane: "analysis-selection",
+      color: "#c83d2c",
+      fillColor: "#c83d2c",
+      fillOpacity: 0.09,
+      weight: 2,
+    }).addTo(map);
+    callback(selectionBounds());
+  }
+
+  function showNearbyRadius(radiusMiles) {
+    if (nearbyCircle) nearbyCircle.removeFrom(map);
+    nearbyCircle = window.L.circle(map.getCenter(), {
+      pane: "analysis-selection",
+      color: "#147d78",
+      fillColor: "#147d78",
+      fillOpacity: 0.07,
+      radius: radiusMiles * 1609.344,
+      weight: 2,
+    }).addTo(map);
+  }
+
+  function clearAnalysisGraphics() {
+    stopSelecting();
+    if (selectionRectangle) selectionRectangle.removeFrom(map);
+    if (nearbyCircle) nearbyCircle.removeFrom(map);
+    selectionRectangle = null;
+    nearbyCircle = null;
+  }
+
   return {
     map,
+    beginAreaSelection,
+    clearAnalysisGraphics,
     draw,
     getViewState,
+    onRegionSelect(callback) {
+      regionSelectCallback = callback;
+    },
     onViewChange,
     refresh,
     reset,
     select,
+    selectVisibleExtent,
     setAssetLayerVisible,
-    setViewState,
+    setBasemap,
     setCountyLayerVisible,
     setMpzLayerVisible,
+    setPrecisionLayerVisible,
     setRegionLayerVisible,
+    setRelationshipFeatures,
+    setRelationshipLayerVisible,
     setStateBoundaryVisible,
+    setVerificationLayerVisible,
+    setViewState,
+    showNearbyRadius,
   };
 }

@@ -85,7 +85,8 @@ test("copy view link preserves the map position, filters, and layers", async ({
   expect(copied.searchParams.get("map_layers")).toContain("assets");
   expect(copied.searchParams.get("map_layers")).toContain("counties");
   expect(copied.searchParams.get("map_layers")).toContain("mpz");
-  expect(copied.searchParams.get("map_layers_v")).toBe("2");
+  expect(copied.searchParams.get("map_layers_v")).toBe("3");
+  expect(copied.searchParams.get("map_basemap")).toBe("street");
 
   await page.goto(copiedUrl);
   await expect(page.locator("#asset-layer-toggle")).toBeChecked();
@@ -169,6 +170,7 @@ test("strategic categories use the same collapsible filter control", async ({ pa
 });
 
 test("text search labels matching map points by name", async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 720 });
   await page.goto("/map/");
   if (await page.locator(".filter-open").isVisible()) {
     await page.locator(".filter-open").click();
@@ -196,6 +198,103 @@ test("text search labels matching map points by name", async ({ page }) => {
   }
   await page.locator("#asset-filters button[type=reset]").click();
   await expect(page.locator(".asset-search-label")).toHaveCount(0);
+});
+
+test("analytical map tools expose quality, relationships, summaries, and saved basemaps", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("/map/");
+  await expect(page.locator(".composition-cluster").first()).toBeVisible();
+  await expect(page.locator(".composition-cluster .cluster-segment").first()).toBeVisible();
+
+  await page.locator(".map-layers summary").click();
+  await page.locator("#relationship-layer-toggle").check();
+  await expect(page.locator(".leaflet-relationships-pane path").first()).toBeVisible();
+  await page.locator('input[name="map-basemap"][value="light"]').check();
+  await expect
+    .poll(async () =>
+      page
+        .locator(".leaflet-tile-pane img")
+        .first()
+        .getAttribute("src"),
+    )
+    .toContain("basemaps.cartocdn.com");
+  await page.locator('input[name="map-basemap"][value="imagery"]').check();
+  await expect
+    .poll(async () =>
+      page
+        .locator(".leaflet-tile-pane img")
+        .first()
+        .getAttribute("src"),
+    )
+    .toContain("basemap.nationalmap.gov");
+
+  await page.locator("#verification-layer-toggle").check();
+  await page.locator("#precision-layer-toggle").check();
+  await page.locator(".map-legend summary").click();
+  await expect(page.locator("[data-verification-legend]")).toBeVisible();
+  await expect(page.locator("[data-precision-legend]")).toBeVisible();
+
+  await page.locator(".map-analysis summary").click();
+  await page.locator("#summary-region").selectOption("hampton-roads");
+  await page.locator("#show-region-summary").click();
+  await expect(page.locator("#map-insight-panel")).toBeVisible();
+  await expect(page.locator("#map-insight-title")).toHaveText("Hampton Roads");
+  await expect(page.locator(".insight-metrics")).toContainText("Assets");
+
+  await page.locator(".map-analysis summary").click();
+  await page.locator("#select-extent").click();
+  await expect(page.locator("#analysis-status")).toContainText("assets selected");
+  await expect(page.locator("#export-area")).toBeEnabled();
+  await page.locator("#clear-analysis").click();
+  await expect(page.locator("#result-count")).toHaveText("232");
+
+  await page.locator(".map-actions summary").click();
+  await page.locator("#presentation-view").click();
+  await expect(page.locator("body")).toHaveClass(/presentation-mode/);
+  await expect(page.locator("#exit-presentation")).toBeVisible();
+  await page.keyboard.press("Escape");
+  await expect(page.locator("body")).not.toHaveClass(/presentation-mode/);
+});
+
+test("drawn area selection filters assets and enables export", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("/map/?region=hampton-roads");
+  await expect(page.locator("#result-count")).not.toHaveText("0");
+  const regionalTotal = Number(await page.locator("#result-count").textContent());
+
+  await page.locator(".map-analysis summary").click();
+  await page.locator("#select-area").click();
+  const mapBox = await page.locator("#map").boundingBox();
+  if (!mapBox) throw new Error("Map did not render");
+  await page.mouse.move(mapBox.x + mapBox.width * 0.15, mapBox.y + mapBox.height * 0.15);
+  await page.mouse.down();
+  await page.mouse.move(mapBox.x + mapBox.width * 0.85, mapBox.y + mapBox.height * 0.85, {
+    steps: 10,
+  });
+  await page.mouse.up();
+
+  await expect(page.locator("#analysis-status")).toContainText("assets selected");
+  await expect(page.locator(".leaflet-analysis-selection-pane path")).toHaveCount(1);
+  const selectedCount = Number(await page.locator("#result-count").textContent());
+  expect(selectedCount).toBeGreaterThan(0);
+  expect(selectedCount).toBeLessThanOrEqual(regionalTotal);
+  await expect(page.locator("#export-area")).toBeEnabled();
+});
+
+test("nearby search filters from the current map center and can be cleared", async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("/map/?q=Adaptive%20Aerospace%20Group");
+  await expect(page.locator(".asset-marker")).toHaveCount(1);
+
+  await page.locator(".map-analysis summary").click();
+  await page.locator("#nearby-radius").selectOption("25");
+  await page.locator("#nearby-search").click();
+  await expect(page.locator("#analysis-status")).toContainText("within 25 miles");
+  await expect(page.locator(".leaflet-analysis-selection-pane path")).toHaveCount(1);
+  await page.locator("#clear-analysis").click();
+  await expect(page.locator("#result-count")).toHaveText("1");
 });
 
 test("region selector applies across map and directory without a special coverage control", async ({

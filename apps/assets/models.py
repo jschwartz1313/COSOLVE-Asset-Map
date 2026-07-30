@@ -1,4 +1,5 @@
 import uuid
+from datetime import timedelta
 from decimal import Decimal
 from math import isfinite
 from urllib.parse import parse_qsl
@@ -193,6 +194,23 @@ class Asset(models.Model):
         return "Source-backed; editorial review pending"
 
     @property
+    def verification_state(self):
+        if not self.is_editorially_reviewed:
+            return "source-backed"
+        stale_after = timezone.localdate() - timedelta(days=settings.STALE_VERIFICATION_DAYS)
+        if self.last_verified_at < stale_after:
+            return "stale"
+        return "reviewed"
+
+    @property
+    def verification_state_label(self):
+        return {
+            "reviewed": "Editorially reviewed",
+            "stale": "Review is out of date",
+            "source-backed": "Source-backed; review pending",
+        }[self.verification_state]
+
+    @property
     def has_public_coordinates(self):
         return (
             self.latitude is not None
@@ -321,6 +339,8 @@ class SavedView(models.Model):
             "map_lon",
             "map_zoom",
             "map_layers",
+            "map_layers_v",
+            "map_basemap",
         }
         pairs = parse_qsl(self.query_string, keep_blank_values=True)
         unexpected = {key for key, _value in pairs} - allowed
@@ -344,10 +364,21 @@ class SavedView(models.Model):
             if not isfinite(value) or value < minimum or value > maximum:
                 raise ValidationError({"query_string": f"Invalid {key} value."})
         if "map_layers" in params:
-            allowed_layers = {"state", "regions", "mpz", "counties"}
+            allowed_layers = {
+                "assets",
+                "state",
+                "regions",
+                "mpz",
+                "counties",
+                "verification",
+                "precision",
+                "relationships",
+            }
             layers = {value for value in params["map_layers"].split(",") if value}
             if layers - allowed_layers:
                 raise ValidationError({"query_string": "Unsupported map layer selection."})
+        if params.get("map_basemap", "street") not in {"street", "light", "imagery"}:
+            raise ValidationError({"query_string": "Unsupported map basemap selection."})
 
     def save(self, *args, **kwargs):
         self.full_clean()
