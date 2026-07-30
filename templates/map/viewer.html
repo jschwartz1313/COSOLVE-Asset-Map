@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260730-3">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260730-4">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
@@ -133,28 +133,31 @@
         </div>
       </details>
     </div>
-    <aside class="map-insight-panel" id="map-insight-panel" aria-labelledby="map-insight-title" hidden>
-      <button class="icon-button" id="close-map-insight" type="button" aria-label="Close regional summary" title="Close">&times;</button>
-      <span class="eyebrow">Regional summary</span>
-      <h2 id="map-insight-title"></h2>
-      <div id="map-insight-content"></div>
-    </aside>
     <div id="map-status" class="map-status" role="status" hidden></div>
   </section>
 
-  <aside class="results-panel" aria-label="Filtered assets">
-    <div class="results-heading">
-      <div><span class="eyebrow">Public listings</span><h2 aria-live="polite" aria-atomic="true"><strong id="result-count">{{ total_assets }}</strong> assets</h2></div>
-      <div class="results-actions">
-        {% if user.is_staff %}<a class="text-link" id="export-link" href="{% url 'imports:export' %}">Export CSV</a>{% endif %}
-        <a class="text-link" id="directory-link" href="{% url 'core:directory' %}">Directory view</a>
+  <aside class="results-panel" id="map-results-panel" aria-label="Filtered assets">
+    <section class="results-view asset-results-view" id="asset-results-view">
+      <div class="results-heading">
+        <div><span class="eyebrow">Public listings</span><h2 id="asset-results-title" tabindex="-1" aria-live="polite" aria-atomic="true"><strong id="result-count">{{ total_assets }}</strong> assets</h2></div>
+        <div class="results-actions">
+          {% if user.is_staff %}<a class="text-link" id="export-link" href="{% url 'imports:export' %}">Export CSV</a>{% endif %}
+          <a class="text-link" id="directory-link" href="{% url 'core:directory' %}">Directory view</a>
+        </div>
       </div>
-    </div>
-    <div id="result-list" class="result-list"></div>
+      <div id="result-list" class="result-list"></div>
+    </section>
+    <section class="results-view map-insight-panel" id="map-insight-panel" aria-labelledby="map-insight-title" hidden>
+      <div class="results-heading insight-heading">
+        <div><span class="eyebrow">Regional summary</span><h2 id="map-insight-title"></h2></div>
+        <button class="icon-button" id="close-map-insight" type="button" aria-label="Return to asset list" title="Return to asset list">&times;</button>
+      </div>
+      <div class="map-insight-content" id="map-insight-content"></div>
+    </section>
   </aside>
 </main>
 <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
 <script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
-<script type="module" src="{% static 'js/map-viewer.js' %}?v=20260730-2"></script>
+<script type="module" src="{% static 'js/map-viewer.js' %}?v=20260730-3"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}

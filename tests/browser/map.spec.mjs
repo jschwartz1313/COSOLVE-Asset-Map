@@ -207,6 +207,7 @@ test("analytical map tools expose quality, relationships, summaries, and saved b
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto("/map/");
   await expect(page.locator(".composition-cluster").first()).toBeVisible();
+  const fullResultCount = await page.locator("#result-count").textContent();
   await expect(page.locator(".composition-cluster .cluster-segment").first()).toBeVisible();
   await page.locator(".composition-cluster").first().hover();
   const clusterRows = page.locator(".cluster-composition-tooltip .cluster-composition-row");
@@ -220,7 +221,16 @@ test("analytical map tools expose quality, relationships, summaries, and saved b
 
   await page.locator(".map-layers summary").click();
   await page.locator("#relationship-layer-toggle").check();
-  await expect(page.locator(".leaflet-relationships-pane path").first()).toBeVisible();
+  await expect
+    .poll(async () =>
+      page.locator(".leaflet-relationships-pane path").evaluateAll((paths) =>
+        paths.some((path) => {
+          const box = path.getBoundingClientRect();
+          return box.width > 0 || box.height > 0;
+        }),
+      ),
+    )
+    .toBe(true);
   await page.locator('input[name="map-basemap"][value="light"]').check();
   await expect
     .poll(async () =>
@@ -250,15 +260,20 @@ test("analytical map tools expose quality, relationships, summaries, and saved b
   await page.locator("#summary-region").selectOption("hampton-roads");
   await page.locator("#show-region-summary").click();
   await expect(page.locator("#map-insight-panel")).toBeVisible();
+  await expect(page.locator("#asset-results-view")).toBeHidden();
   await expect(page.locator("#map-insight-title")).toHaveText("Hampton Roads");
   await expect(page.locator(".insight-metrics")).toContainText("Assets");
+  await expect(page.locator("#map-insight-panel")).toHaveCSS("position", "static");
+  await page.locator("#close-map-insight").click();
+  await expect(page.locator("#asset-results-view")).toBeVisible();
+  await expect(page.locator("#map-insight-panel")).toBeHidden();
 
   await page.locator(".map-analysis summary").click();
   await page.locator("#select-extent").click();
   await expect(page.locator("#analysis-status")).toContainText("assets selected");
   await expect(page.locator("#export-area")).toBeEnabled();
   await page.locator("#clear-analysis").click();
-  await expect(page.locator("#result-count")).toHaveText("232");
+  await expect(page.locator("#result-count")).toHaveText(fullResultCount);
 
   await page.locator(".map-actions summary").click();
   await page.locator("#presentation-view").click();

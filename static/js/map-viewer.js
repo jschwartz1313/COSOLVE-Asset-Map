@@ -50,6 +50,9 @@ const analysisStatus = document.querySelector("#analysis-status");
 const summaryRegion = document.querySelector("#summary-region");
 const showRegionSummaryButton = document.querySelector("#show-region-summary");
 const mapAnalysisDetails = document.querySelector(".map-analysis");
+const resultsPanel = document.querySelector("#map-results-panel");
+const assetResultsView = document.querySelector("#asset-results-view");
+const assetResultsTitle = document.querySelector("#asset-results-title");
 const insightPanel = document.querySelector("#map-insight-panel");
 const insightTitle = document.querySelector("#map-insight-title");
 const insightContent = document.querySelector("#map-insight-content");
@@ -132,10 +135,18 @@ function updateViewActions() {
   }
 }
 
+function showAssetResults({ focus = false } = {}) {
+  assetResultsView.hidden = false;
+  insightPanel.hidden = true;
+  resultsPanel.setAttribute("aria-label", "Filtered assets");
+  if (focus) assetResultsTitle.focus();
+}
+
 function renderFeatureCollection(
   features,
   { fit = false, resultCount = features.length, showSearchLabels = false } = {},
 ) {
+  showAssetResults();
   const selectOnMap = (id) => {
     mapController.select(id);
     selectResult(list, id);
@@ -216,7 +227,11 @@ function renderRegionSummary(regionSlug, regionName) {
     }
     insightContent.append(heading, listNode);
   }
+  assetResultsView.hidden = true;
   insightPanel.hidden = false;
+  resultsPanel.setAttribute("aria-label", `${regionName} regional summary`);
+  insightContent.scrollTop = 0;
+  closeInsightButton.focus();
 }
 
 document.querySelector("#reset-view").addEventListener("click", () => mapController.reset());
@@ -396,13 +411,15 @@ mapController.onRegionSelect((properties) => {
   renderRegionSummary(properties.region_slug, properties.region_name);
 });
 closeInsightButton.addEventListener("click", () => {
-  insightPanel.hidden = true;
+  showAssetResults({ focus: true });
 });
 
 document.addEventListener("keydown", (event) => {
   if (event.key !== "Escape") return;
   if (document.body.classList.contains("presentation-mode")) {
     setPresentationMode(false);
+  } else if (!insightPanel.hidden) {
+    showAssetResults({ focus: true });
   }
 });
 
@@ -427,7 +444,7 @@ async function load(params, { changeUrl = true, viewState = null } = {}) {
   const requestedFilterParams = filterParamsFromMapUrl(params);
   activeFilterParams = requestedFilterParams;
   clearAnalysis({ render: false });
-  insightPanel.hidden = true;
+  showAssetResults();
   showStatus("Loading public asset listings...");
   try {
     const data = await fetchAssets(requestedFilterParams);
