@@ -37,10 +37,10 @@ class RealCatalogFileTests(TestCase):
             )
         )
 
-    def test_catalog_has_at_least_232_real_source_backed_records(self):
+    def test_catalog_has_at_least_300_real_source_backed_records(self):
         catalog = self.load_catalog()
         records = catalog["records"]
-        self.assertGreaterEqual(len(records), 232)
+        self.assertGreaterEqual(len(records), 300)
         self.assertEqual(catalog["record_count"], len(records))
         self.assertGreaterEqual(len(catalog["relationships"]), 90)
         self.assertFalse(any(record["name"].startswith("Demo ") for record in records))
@@ -56,9 +56,9 @@ class RealCatalogFileTests(TestCase):
         self.assertEqual(airport_regions["Lynchburg Rgnl/Preston Glenn Fld"], "Lynchburg Region")
         self.assertEqual(airport_regions["Roanoke/Blacksburg Rgnl (Woodrum Fld)"], "Roanoke Valley")
         universities = [record for record in records if record["record_type"] == "university"]
-        self.assertEqual(len(universities), 10)
+        self.assertGreaterEqual(len(universities), 18)
         hampton_roads = [record for record in records if record["region"] == "Hampton Roads"]
-        self.assertEqual(len(hampton_roads), 57)
+        self.assertGreaterEqual(len(hampton_roads), 69)
         self.assertFalse(
             any(
                 record["location_precision"] in {"approximate", "locality"}
@@ -113,7 +113,10 @@ class RealCatalogFileTests(TestCase):
         self.assertIsNone(source.http_status)
         self.assertEqual(source.check_error, "")
         self.assertFalse(Asset.objects.filter(name__startswith="Demo ").exists())
-        self.assertEqual(Asset.public.filter(record_type=Asset.RecordType.UNIVERSITY).count(), 10)
+        self.assertGreaterEqual(
+            Asset.public.filter(record_type=Asset.RecordType.UNIVERSITY).count(),
+            18,
+        )
         self.assertTrue(
             Relationship.objects.filter(
                 from_asset__record_type=Asset.RecordType.UNIVERSITY,
@@ -158,4 +161,31 @@ class RealCatalogFileTests(TestCase):
 
         call_command("seed_real_data", only_if_empty=True, verbosity=0)
 
+        self.assertEqual(Asset.public.count(), catalog["record_count"])
+
+    def test_add_missing_preserves_reviewed_records_and_restores_catalog_gaps(self):
+        catalog = self.load_catalog()
+        call_command("seed_real_data", verbosity=0)
+        reviewed = Asset.objects.get(name="NASA Langley Research Center")
+        reviewed.short_description = "Reviewed and corrected by a staff member."
+        reviewed.save(update_fields=["short_description"])
+        Asset.objects.get(name="Harrowgate Drone Park").delete()
+        manual = Asset.objects.create(
+            name="Staff-created research lead",
+            record_type=Asset.RecordType.ORGANIZATION,
+            short_description="A manually entered lead awaiting staff review.",
+            unmanned_systems_relevance="Potential ecosystem record pending source review.",
+            status=Asset.Status.NEEDS_REVIEW,
+            visibility=Asset.Visibility.INTERNAL,
+        )
+
+        call_command("seed_real_data", add_missing=True, verbosity=0)
+
+        reviewed.refresh_from_db()
+        self.assertEqual(
+            reviewed.short_description,
+            "Reviewed and corrected by a staff member.",
+        )
+        self.assertTrue(Asset.objects.filter(name="Harrowgate Drone Park").exists())
+        self.assertTrue(Asset.objects.filter(pk=manual.pk).exists())
         self.assertEqual(Asset.public.count(), catalog["record_count"])

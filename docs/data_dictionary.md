@@ -6,7 +6,7 @@ The public-facing ecosystem record. `record_type` distinguishes organizations, f
 
 Lifecycle values are `draft`, `needs-review`, `verified`, `published`, and `archived`. Visibility values are `public`, `partner`, and `internal`. Unauthenticated queries require both `published` status and `public` visibility.
 
-Location uses WGS84 decimal latitude and longitude. `location_precision` is `exact`, `approximate`, `locality`, or `hidden`. The MVP public API suppresses geometry when coordinates are absent. Hidden locations cannot be public.
+Location uses WGS84 decimal latitude and longitude. `location_precision` is `exact`, `site`, `approximate`, `locality`, `regional`, or `hidden`. The public API suppresses geometry when coordinates are absent. Regional records identify a service area without asserting a point; hidden locations cannot be public.
 
 Internal-only fields such as `internal_notes`, workflow status, and source notes are never emitted by public serializers.
 

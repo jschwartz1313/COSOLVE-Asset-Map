@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-27",
+  "generated_at": "2026-07-30",
   "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, and a curated set of source-backed ecosystem records. Hampton Roads street and site locations are anchored to official public address sources and geocoded against the U.S. Census address ranges; named-site centroids are used when no public street point is available.",
-  "record_count": 232,
+  "record_count": 300,
   "records": [
     {
       "capabilities": [
@@ -262,6 +262,78 @@
     },
     {
       "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Charlottesville",
+      "latitude": 38.035,
+      "location_precision": "locality",
+      "longitude": -78.503,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Albemarle County Fire Rescue UAS Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Central Virginia",
+      "short_description": "County fire-rescue UAS capability documented for fire investigation and emergency operations.",
+      "sources": [
+        {
+          "title": "Albemarle County Fire Rescue Staffing Study",
+          "url": "https://www.albemarle.org/home/showpublisheddocument/27911/638961259487630000"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.albemarle.org/home/showpublisheddocument/27911/638961259487630000"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Charlottesville",
+      "latitude": 38.035,
+      "location_precision": "locality",
+      "longitude": -78.503,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Albemarle County Police UAS Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Central Virginia",
+      "short_description": "County police drone capability documented for public-safety response and operations.",
+      "sources": [
+        {
+          "title": "Albemarle County Adopted Budget",
+          "url": "https://www.albemarle.org/home/showpublisheddocument/26848/638869823368570000"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.albemarle.org/home/showpublisheddocument/26848/638869823368570000"
+    },
+    {
+      "capabilities": [
         "Operations, maintenance, and sustainment"
       ],
       "city": "Blackstone",
@@ -293,6 +365,76 @@
       ],
       "unmanned_systems_relevance": "Allan C Perkinson/Blackstone AAF is included as public aviation infrastructure serving Blackstone. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "capabilities": [
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Reston",
+      "latitude": 38.959,
+      "location_precision": "locality",
+      "longitude": -77.357,
+      "missions": [
+        "Infrastructure inspection",
+        "Logistics and contested logistics"
+      ],
+      "name": "ANRA Technologies",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Virginia-based developer of uncrewed traffic management, fleet operations, and airspace services.",
+      "sources": [
+        {
+          "title": "VEDP: Organizing the Skies",
+          "url": "https://www.vedp.org/news/organizing-skies"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers"
+      ],
+      "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
+      "website_url": "https://www.vedp.org/news/organizing-skies"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Arlington",
+      "latitude": 38.881,
+      "location_precision": "locality",
+      "longitude": -77.091,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Arlington Joint Public Safety UAS Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Northern Virginia",
+      "short_description": "Joint county police, fire, and emergency-management UAS capability for approved public-safety missions.",
+      "sources": [
+        {
+          "title": "Arlington Joint Public Safety UAS Program",
+          "url": "https://www.arlingtonva.us/Government/Departments/PSCEM/Unmanned-Aircraft-Systems"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.arlingtonva.us/Government/Departments/PSCEM/Unmanned-Aircraft-Systems"
     },
     {
       "capabilities": [
@@ -395,6 +537,42 @@
     },
     {
       "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Staunton",
+      "latitude": 38.15,
+      "location_precision": "locality",
+      "longitude": -79.072,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Augusta County Sheriff's Office Drone Team",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Shenandoah Valley",
+      "short_description": "Sheriff's Office drone team supporting searches, investigations, and regional incident response.",
+      "sources": [
+        {
+          "title": "Augusta County Sheriff's Office Drone Team",
+          "url": "https://www.co.augusta.va.us/home/showpublisheddocument/20491/639101430011700000"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.co.augusta.va.us/home/showpublisheddocument/20491/639101430011700000"
+    },
+    {
+      "capabilities": [
         "Systems engineering and integration",
         "Operations, maintenance, and sustainment"
       ],
@@ -426,6 +604,43 @@
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "city": "Arlington",
+      "latitude": 38.881,
+      "location_precision": "locality",
+      "longitude": -77.091,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Auterion U.S. Headquarters",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Arlington headquarters for an open autonomous-systems software and mission-computing company.",
+      "sources": [
+        {
+          "title": "Auterion Moves Corporate Headquarters to Arlington",
+          "url": "https://auterion.com/auterion-moves-corporate-headquarters-to-arlington-virginia/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain"
+      ],
+      "unmanned_systems_relevance": "Develops, integrates, manufactures, or supports documented autonomous and uncrewed systems across one or more operating domains.",
+      "website_url": "https://auterion.com/auterion-moves-corporate-headquarters-to-arlington-virginia/"
     },
     {
       "capabilities": [
@@ -466,6 +681,40 @@
     },
     {
       "capabilities": [
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Roanoke",
+      "latitude": 37.271,
+      "location_precision": "locality",
+      "longitude": -79.941,
+      "missions": [
+        "Infrastructure inspection",
+        "Logistics and contested logistics"
+      ],
+      "name": "Autonomous Flight Technologies",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Roanoke Valley",
+      "short_description": "Roanoke-based developer of unmanned aircraft, avionics, and autonomous-flight technologies.",
+      "sources": [
+        {
+          "title": "Autonomous Flight Technologies",
+          "url": "https://www.autonomousflight.us/company"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers"
+      ],
+      "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
+      "website_url": "https://www.autonomousflight.us/company"
+    },
+    {
+      "capabilities": [
         "Safety, policy, regulatory, and airspace integration"
       ],
       "city": "",
@@ -496,6 +745,42 @@
       ],
       "unmanned_systems_relevance": "Coordinates, funds, regulates, or accelerates Virginia's unmanned-systems ecosystem.",
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Bedford",
+      "latitude": 37.334,
+      "location_precision": "locality",
+      "longitude": -79.523,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Bedford County Sheriff's Office Drone Team",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Lynchburg Region",
+      "short_description": "Sheriff's Office drone team documented for search and public-safety operations.",
+      "sources": [
+        {
+          "title": "Bedford County Sheriff's Office Drone Team",
+          "url": "https://sheriff.bedfordcountyva.gov/Home/Components/News/News/1947/3987?arch=1&npage=2"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://sheriff.bedfordcountyva.gov/Home/Components/News/News/1947/3987?arch=1&npage=2"
     },
     {
       "capabilities": [
@@ -879,6 +1164,42 @@
     },
     {
       "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Charlottesville",
+      "latitude": 38.035,
+      "location_precision": "locality",
+      "longitude": -78.503,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Charlottesville Police UAS Team",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Central Virginia",
+      "short_description": "Police emergency-services UAS team supporting high-risk incidents and public-safety response.",
+      "sources": [
+        {
+          "title": "Charlottesville Police Emergency Services Unit",
+          "url": "https://www.charlottesville.gov/1697/Emergency-Services-Unit"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.charlottesville.gov/1697/Emergency-Services-Unit"
+    },
+    {
+      "capabilities": [
         "Operations, maintenance, and sustainment"
       ],
       "city": "Charlottesville",
@@ -978,6 +1299,78 @@
       ],
       "unmanned_systems_relevance": "Chesapeake Rgnl is included as public aviation infrastructure serving Norfolk. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Chester",
+      "latitude": 37.356,
+      "location_precision": "locality",
+      "longitude": -77.442,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Chesterfield Fire and EMS sUAS Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Greater Richmond",
+      "short_description": "Fire and EMS small-UAS program supporting incident command, search, hazard, and damage assessment.",
+      "sources": [
+        {
+          "title": "Chesterfield Fire and EMS Community Risk Assessment",
+          "url": "https://www.chesterfield.gov/DocumentCenter/View/46569/Chesterfield-Fire-and-EMS-Community-Risk-Assessment-and-Standards-of-Cover-PDF"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.chesterfield.gov/DocumentCenter/View/46569/Chesterfield-Fire-and-EMS-Community-Risk-Assessment-and-Standards-of-Cover-PDF"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Chester",
+      "latitude": 37.356,
+      "location_precision": "locality",
+      "longitude": -77.442,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Chesterfield Police Drone as First Responder Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Greater Richmond",
+      "short_description": "Police drone-as-first-responder capability supporting remote incident assessment and response.",
+      "sources": [
+        {
+          "title": "Chesterfield County Police",
+          "url": "https://www.chesterfield.gov/941/Police"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.chesterfield.gov/941/Police"
     },
     {
       "address_line": "1 Avenue of the Arts",
@@ -1216,6 +1609,40 @@
       ],
       "unmanned_systems_relevance": "Coast Guard Atlantic Area and Fifth Coast Guard District is included as documented federal or defense ecosystem presence in Portsmouth. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    },
+    {
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "city": "Richmond",
+      "latitude": 37.541,
+      "location_precision": "locality",
+      "longitude": -77.436,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Commonwealth Center for Advanced Logistics Systems",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Greater Richmond",
+      "short_description": "Virginia applied-research center leading UAS work for energy and critical-infrastructure use cases.",
+      "sources": [
+        {
+          "title": "Commonwealth Center for Advanced Logistics Systems",
+          "url": "https://www.ccals.com/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Manufacturing and supply chain"
+      ],
+      "unmanned_systems_relevance": "Provides advanced manufacturing, modeling, sensing, communications, or prototyping capacity that enables unmanned-system development and scale-up.",
+      "website_url": "https://www.ccals.com/"
     },
     {
       "capabilities": [
@@ -1465,6 +1892,42 @@
       ],
       "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
       "website_url": "https://courses.vccs.edu/colleges/dcc/courses/UMS-UnmannedSystems"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Danville",
+      "latitude": 36.586,
+      "location_precision": "locality",
+      "longitude": -79.395,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Danville Life Saving Crew Drone Team",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Southside Virginia",
+      "short_description": "Volunteer rescue drone team supporting documented searches and emergency incidents in the Danville area.",
+      "sources": [
+        {
+          "title": "Danville Life Saving Crew Drone Operations",
+          "url": "https://www.dlsc.org/drones"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.dlsc.org/drones"
     },
     {
       "capabilities": [
@@ -1779,6 +2242,74 @@
     },
     {
       "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Emory",
+      "latitude": 36.772,
+      "location_precision": "locality",
+      "longitude": -81.831,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Emory & Henry Drone Pilot Test Preparation",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Southwest Virginia",
+      "short_description": "Environmental-studies course covering drone operation and preparation for the FAA remote-pilot exam.",
+      "sources": [
+        {
+          "title": "Emory & Henry Drone Pilot Test Preparation",
+          "url": "https://catalog.ehc.edu/envs-330"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://catalog.ehc.edu/envs-330"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "city": "Emory",
+      "latitude": 36.772,
+      "location_precision": "locality",
+      "longitude": -81.831,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Emory & Henry University",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "provenance": "university-institution",
+      "record_type": "university",
+      "region": "Southwest Virginia",
+      "short_description": "Private university offering documented drone operations and FAA remote-pilot test preparation coursework.",
+      "sources": [
+        {
+          "title": "Emory & Henry University: About",
+          "url": "https://www.ehc.edu/about/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Emory & Henry University is mapped at the institution level to connect its source-backed unmanned-systems research, education, operations, facilities, and programs.",
+      "website_url": "https://www.ehc.edu/about/"
+    },
+    {
+      "capabilities": [
         "Operations, maintenance, and sustainment"
       ],
       "city": "Emporia",
@@ -1810,6 +2341,42 @@
       ],
       "unmanned_systems_relevance": "Emporia-Greensville Rgnl is included as public aviation infrastructure serving Emporia. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "capabilities": [
+        "Testing, evaluation, verification, and validation",
+        "Systems engineering and integration"
+      ],
+      "city": "South Prince George",
+      "latitude": 37.158,
+      "location_precision": "locality",
+      "longitude": -77.387,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Energy-Centric UAS Center for Critical Infrastructure",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Maritime surface systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Greater Richmond",
+      "short_description": "Applied UAS center led by CCALS for energy and critical-infrastructure operations, training, and testing.",
+      "sources": [
+        {
+          "title": "Richard Bland College Energy-Centric UAS Center",
+          "url": "https://www.rbc.edu/news-releases/rbc-will-serve-as-operations-site-for-uas-center/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Test and operational environments",
+        "Companies and solution providers"
+      ],
+      "unmanned_systems_relevance": "Provides a publicly documented environment for unmanned-system testing, training, demonstration, validation, or operational integration.",
+      "website_url": "https://www.rbc.edu/news-releases/rbc-will-serve-as-operations-site-for-uas-center/"
     },
     {
       "capabilities": [
@@ -1947,6 +2514,41 @@
       ],
       "unmanned_systems_relevance": "Farmville Rgnl is included as public aviation infrastructure serving Farmville. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "capabilities": [
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "city": "Leesburg",
+      "latitude": 39.116,
+      "location_precision": "locality",
+      "longitude": -77.564,
+      "missions": [
+        "Maritime domain awareness"
+      ],
+      "name": "Flying Ship Company",
+      "platform_domains": [
+        "Maritime surface systems",
+        "Undersea systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Virginia developer of autonomous wing-in-ground-effect maritime cargo vehicles.",
+      "sources": [
+        {
+          "title": "Flying Ship Company",
+          "url": "https://www.flyingship.co/contact"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain"
+      ],
+      "unmanned_systems_relevance": "Provides maritime engineering, shipbuilding, integration, or robotic-system capacity.",
+      "website_url": "https://www.flyingship.co/contact"
     },
     {
       "capabilities": [
@@ -2150,6 +2752,78 @@
     },
     {
       "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Fredericksburg",
+      "latitude": 38.303,
+      "location_precision": "locality",
+      "longitude": -77.461,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Fredericksburg Drone as First Responder Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Fredericksburg Region",
+      "short_description": "Documented drone-as-first-responder program providing remote aerial awareness for selected calls.",
+      "sources": [
+        {
+          "title": "Fredericksburg Drone as First Responder Program",
+          "url": "https://www.fredericksburgva.gov/2066/Drone-as-First-Responder-DFR-Program"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.fredericksburgva.gov/2066/Drone-as-First-Responder-DFR-Program"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Fredericksburg",
+      "latitude": 38.303,
+      "location_precision": "locality",
+      "longitude": -77.461,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Fredericksburg Police UAS Team",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Fredericksburg Region",
+      "short_description": "Police UAS team supporting emergency response, searches, investigations, and public safety.",
+      "sources": [
+        {
+          "title": "Fredericksburg Police Unmanned Aircraft System Team",
+          "url": "https://www.fredericksburgva.gov/1529/Unmanned-Aircraft-System-Team"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.fredericksburgva.gov/1529/Unmanned-Aircraft-System-Team"
+    },
+    {
+      "capabilities": [
         "Operations, maintenance, and sustainment"
       ],
       "city": "Front Royal",
@@ -2181,6 +2855,42 @@
       ],
       "unmanned_systems_relevance": "Front Royal-Warren County is included as public aviation infrastructure serving Front Royal. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "address_line": "1776 Patriot Way",
+      "capabilities": [
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Mattaponi",
+      "latitude": 37.523935,
+      "location_precision": "site",
+      "longitude": -76.756529,
+      "missions": [
+        "Infrastructure inspection",
+        "Logistics and contested logistics"
+      ],
+      "name": "Fulcrum Concepts",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "23110",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Greater Richmond",
+      "short_description": "Virginia UAS engineering, integration, fabrication, flight-test, and training company.",
+      "sources": [
+        {
+          "title": "Fulcrum Concepts Contact",
+          "url": "https://fulcrumconceptsllc.com/contact/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers"
+      ],
+      "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
+      "website_url": "https://fulcrumconceptsllc.com/contact/"
     },
     {
       "capabilities": [
@@ -2358,6 +3068,40 @@
     },
     {
       "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Danville",
+      "latitude": 36.586,
+      "location_precision": "locality",
+      "longitude": -79.395,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "GO TEC Automation and Robotics Talent Pathway",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Southside Virginia",
+      "short_description": "Statewide middle-school talent pathway providing hands-on automation, robotics, manufacturing, and precision-agriculture modules.",
+      "sources": [
+        {
+          "title": "Institute for Advanced Learning and Research GO TEC",
+          "url": "https://www.ialr.org/go-tec/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://www.ialr.org/go-tec/"
+    },
+    {
+      "capabilities": [
         "Operations, maintenance, and sustainment"
       ],
       "city": "Gordonsville",
@@ -2425,6 +3169,86 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "100 East Queen Street",
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "city": "Hampton",
+      "latitude": 37.023632,
+      "location_precision": "site",
+      "longitude": -76.338129,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Hampton University",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "postal_code": "23668",
+      "provenance": "university-institution",
+      "record_type": "university",
+      "region": "Hampton Roads",
+      "short_description": "Private university with a documented UAS degree concentration, pilot training, applied operations, and autonomy research.",
+      "sources": [
+        {
+          "title": "Hampton University",
+          "url": "https://home.hamptonu.edu/"
+        },
+        {
+          "title": "Hampton University contact information",
+          "url": "https://home.hamptonu.edu/about/contact-hu/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Hampton University is mapped at the institution level to connect its source-backed unmanned-systems research, education, operations, facilities, and programs.",
+      "website_url": "https://home.hamptonu.edu/"
+    },
+    {
+      "address_line": "100 East Queen Street",
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Hampton",
+      "latitude": 37.023632,
+      "location_precision": "site",
+      "longitude": -76.338129,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Hampton University Uncrewed Aircraft Systems Program",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "postal_code": "23668",
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Hampton Roads",
+      "short_description": "Degree concentration, remote-pilot preparation, flight training, data services, and applied UAS research.",
+      "sources": [
+        {
+          "title": "Hampton University Uncrewed Aircraft Systems",
+          "url": "https://home.hamptonu.edu/engineering/uas/"
+        },
+        {
+          "title": "Hampton University contact information",
+          "url": "https://home.hamptonu.edu/about/contact-hu/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://home.hamptonu.edu/engineering/uas/"
+    },
+    {
       "capabilities": [
         "Operations, maintenance, and sustainment"
       ],
@@ -2457,6 +3281,120 @@
       ],
       "unmanned_systems_relevance": "Hanover County Muni is included as public aviation infrastructure serving Richmond / Ashland. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Harrisonburg",
+      "latitude": 38.449,
+      "location_precision": "locality",
+      "longitude": -78.869,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Harrisonburg Police and Fire Drone and Robot Unit",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Shenandoah Valley",
+      "short_description": "Joint police and fire unit operating drones and robots for law enforcement, fire, rescue, hazmat, and regional support.",
+      "sources": [
+        {
+          "title": "Harrisonburg Police Special Weapons and Tactics Team",
+          "url": "https://www.harrisonburgva.gov/SWAT"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.harrisonburgva.gov/SWAT"
+    },
+    {
+      "address_line": "15501 Harrowgate Road",
+      "capabilities": [
+        "Testing, evaluation, verification, and validation",
+        "Systems engineering and integration"
+      ],
+      "city": "Chester",
+      "latitude": 37.306145,
+      "location_precision": "site",
+      "longitude": -77.427338,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Harrowgate Drone Park",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Maritime surface systems"
+      ],
+      "postal_code": "23831",
+      "provenance": "curated-public-source",
+      "record_type": "operating-environment",
+      "region": "Greater Richmond",
+      "short_description": "County-designated outdoor flying area for recreational drones and radio-controlled aircraft.",
+      "sources": [
+        {
+          "title": "Chesterfield County Parks and Facilities",
+          "url": "https://www.chesterfield.gov/163/Parks-and-Facilities"
+        },
+        {
+          "title": "Chesterfield County Drone Park dedication",
+          "url": "https://www.chesterfield.gov/Calendar.aspx?EID=4094"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Test and operational environments",
+        "Companies and solution providers"
+      ],
+      "unmanned_systems_relevance": "Provides a publicly documented environment for unmanned-system testing, training, demonstration, validation, or operational integration.",
+      "website_url": "https://www.chesterfield.gov/163/Parks-and-Facilities"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Henrico",
+      "latitude": 37.632,
+      "location_precision": "locality",
+      "longitude": -77.515,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Henrico Fire Robotics Response Team",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Greater Richmond",
+      "short_description": "Fire specialty team using aerial and ground robotic systems for hazardous and complex incidents.",
+      "sources": [
+        {
+          "title": "Henrico Fire Specialty Teams",
+          "url": "https://henrico.gov/fire/about-us/specialty-teams/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://henrico.gov/fire/about-us/specialty-teams/"
     },
     {
       "capabilities": [
@@ -2606,6 +3544,82 @@
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
       "website_url": "https://www.vedp.org/news/home-business-more-400-years"
+    },
+    {
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "city": "Danville",
+      "latitude": 36.586,
+      "location_precision": "locality",
+      "longitude": -79.395,
+      "missions": [
+        "Agriculture and natural resources",
+        "Environmental monitoring"
+      ],
+      "name": "IALR AgBOT Precision Agriculture Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Southside Virginia",
+      "short_description": "Autonomous thermal and multispectral drone program supporting precision-agriculture field analysis.",
+      "sources": [
+        {
+          "title": "IALR Precision Agriculture Areas of Focus",
+          "url": "https://www.ialr.org/plant-endophyte-research-center/areas-of-focus/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Programs and initiatives"
+      ],
+      "unmanned_systems_relevance": "Conducts documented drone-based sensing, imaging, analysis, or field research for agriculture, natural resources, or environmental monitoring.",
+      "website_url": "https://www.ialr.org/plant-endophyte-research-center/areas-of-focus/"
+    },
+    {
+      "address_line": "500 Viking Drive, Suite 400",
+      "capabilities": [
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "city": "Virginia Beach",
+      "latitude": 36.829671,
+      "location_precision": "site",
+      "longitude": -76.067127,
+      "missions": [
+        "Maritime domain awareness"
+      ],
+      "name": "ICI Services",
+      "platform_domains": [
+        "Maritime surface systems",
+        "Undersea systems"
+      ],
+      "postal_code": "23452",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "short_description": "Virginia Beach engineering company supporting Navy unmanned-surface-vehicle development and integration.",
+      "sources": [
+        {
+          "title": "ICI Services Unmanned Surface Vehicle Development",
+          "url": "https://icisrvcs.com/news/2020/2/5/236/ici-services-to-support-navy-unmanned-surface-vehicle-development/index.html"
+        },
+        {
+          "title": "ICI Services",
+          "url": "https://www.icisrvcs.com/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain"
+      ],
+      "unmanned_systems_relevance": "Provides maritime engineering, shipbuilding, integration, or robotic-system capacity.",
+      "website_url": "https://icisrvcs.com/news/2020/2/5/236/ici-services-to-support-navy-unmanned-surface-vehicle-development/index.html"
     },
     {
       "capabilities": [
@@ -3094,6 +4108,42 @@
     },
     {
       "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Leesburg",
+      "latitude": 39.116,
+      "location_precision": "locality",
+      "longitude": -77.564,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Leesburg Police UAS Team",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Northern Virginia",
+      "short_description": "Police UAS team supporting searches, tactical response, crash documentation, and incident awareness.",
+      "sources": [
+        {
+          "title": "Leesburg Police Unmanned Aircraft Systems Team",
+          "url": "https://www.leesburgva.gov/departments/police/about-the-lpd/investigations-operational-support-bureau/specialty-units/unmaned-aircraft-systems-uas-team"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.leesburgva.gov/departments/police/about-the-lpd/investigations-operational-support-bureau/specialty-units/unmaned-aircraft-systems-uas-team"
+    },
+    {
+      "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration"
       ],
@@ -3206,6 +4256,40 @@
       "missions": [
         "Training and experimentation"
       ],
+      "name": "Liberty University Medium Unmanned Aerial Systems Certificate",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Lynchburg Region",
+      "short_description": "Professional certificate pathway for medium UAS ground and flight operations.",
+      "sources": [
+        {
+          "title": "Liberty University Medium UAS Certificate",
+          "url": "https://www.liberty.edu/aeronautics/certificates/medium-unmanned-aerial-systems/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://www.liberty.edu/aeronautics/certificates/medium-unmanned-aerial-systems/"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Lynchburg",
+      "latitude": 37.414,
+      "location_precision": "locality",
+      "longitude": -79.142,
+      "missions": [
+        "Training and experimentation"
+      ],
       "name": "Liberty University School of Aeronautics",
       "platform_domains": [
         "Unmanned aircraft systems",
@@ -3227,6 +4311,40 @@
       ],
       "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Lynchburg",
+      "latitude": 37.414,
+      "location_precision": "locality",
+      "longitude": -79.142,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Liberty University UAS Operational Experience",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Lynchburg Region",
+      "short_description": "Applied flight and mission experience for students in Liberty's unmanned-aircraft programs.",
+      "sources": [
+        {
+          "title": "Liberty University UAS Operational Experience",
+          "url": "https://www.liberty.edu/aeronautics/uas-operational-experience/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://www.liberty.edu/aeronautics/uas-operational-experience/"
     },
     {
       "capabilities": [
@@ -3341,6 +4459,113 @@
     },
     {
       "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Navigation and positioning",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Farmville",
+      "latitude": 37.302,
+      "location_precision": "locality",
+      "longitude": -78.391,
+      "missions": [
+        "Maritime domain awareness",
+        "Environmental monitoring"
+      ],
+      "name": "Longwood SEED Autonomous Marine Project",
+      "platform_domains": [
+        "Maritime surface systems",
+        "Undersea systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Central Virginia",
+      "short_description": "Student entrepreneurship project developing an autonomous marine craft and related field capabilities.",
+      "sources": [
+        {
+          "title": "Longwood SEED Autonomous Marine Project",
+          "url": "https://www.longwood.edu/news/2026/seed-entrepreneurship-experience/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Test and operational environments"
+      ],
+      "unmanned_systems_relevance": "Provides documented marine robotics, autonomy, sensing, navigation, or field-test capacity for surface and undersea systems.",
+      "website_url": "https://www.longwood.edu/news/2026/seed-entrepreneurship-experience/"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "city": "Farmville",
+      "latitude": 37.302,
+      "location_precision": "locality",
+      "longitude": -78.391,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Longwood University",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "provenance": "university-institution",
+      "record_type": "university",
+      "region": "Central Virginia",
+      "short_description": "Public university represented by a documented autonomous-marine entrepreneurship and prototyping project.",
+      "sources": [
+        {
+          "title": "Longwood University: About",
+          "url": "https://www.longwood.edu/about/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Longwood University is mapped at the institution level to connect its source-backed unmanned-systems research, education, operations, facilities, and programs.",
+      "website_url": "https://www.longwood.edu/about/"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Leesburg",
+      "latitude": 39.116,
+      "location_precision": "locality",
+      "longitude": -77.564,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Loudoun County Sheriff's Office Drone Unit",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Northern Virginia",
+      "short_description": "Sheriff's Office drone unit supporting searches, Project Lifesaver, and public-safety response.",
+      "sources": [
+        {
+          "title": "Loudoun County Sheriff's Office Drone Capability",
+          "url": "https://sheriff.loudoun.gov/m/newsflash/home/detail/9418"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://sheriff.loudoun.gov/m/newsflash/home/detail/9418"
+    },
+    {
+      "capabilities": [
         "Operations, maintenance, and sustainment"
       ],
       "city": "Louisa",
@@ -3443,6 +4668,78 @@
     },
     {
       "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Lynchburg",
+      "latitude": 37.414,
+      "location_precision": "locality",
+      "longitude": -79.142,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Lynchburg Fire Department UAV Team",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Lynchburg Region",
+      "short_description": "Fire department UAV team with thermal imaging for fire, hazmat, search, and technical-rescue calls.",
+      "sources": [
+        {
+          "title": "Lynchburg Fire Department Annual Report",
+          "url": "https://www.lynchburgva.gov/ArchiveCenter/ViewFile/Item/64"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.lynchburgva.gov/ArchiveCenter/ViewFile/Item/64"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Lynchburg",
+      "latitude": 37.414,
+      "location_precision": "locality",
+      "longitude": -79.142,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Lynchburg Police Drone Unit",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Lynchburg Region",
+      "short_description": "Police drone unit documented for municipal law-enforcement and incident-response operations.",
+      "sources": [
+        {
+          "title": "Lynchburg Police Drone Unit",
+          "url": "https://lynchburgva.gov/DocumentCenter/View/4331"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://lynchburgva.gov/DocumentCenter/View/4331"
+    },
+    {
+      "capabilities": [
         "Operations, maintenance, and sustainment"
       ],
       "city": "Lynchburg",
@@ -3506,6 +4803,46 @@
       ],
       "unmanned_systems_relevance": "Marine Corps Base Quantico is included as documented federal or defense ecosystem presence in Quantico. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Quantico",
+      "latitude": 38.522,
+      "location_precision": "locality",
+      "longitude": -77.29,
+      "missions": [
+        "Training and experimentation",
+        "Force protection and installation security"
+      ],
+      "name": "Marine Corps Warfighting Laboratory",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Maritime surface systems",
+        "Undersea systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Marine Corps experimentation organization with documented autonomous reconnaissance and unmanned-systems activities.",
+      "sources": [
+        {
+          "title": "Marine Corps Warfighting Laboratory Autonomous Reconnaissance",
+          "url": "https://www.marines.mil/News/News-Display/Article/746745/marine-corps-warfighting-lab-tests-autonomous-reconnaissance/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Federal and defense customer access",
+        "Test and operational environments",
+        "Research and technical depth"
+      ],
+      "unmanned_systems_relevance": "Provides publicly documented federal research, experimentation, engineering, or test capacity for autonomous and uncrewed systems.",
+      "website_url": "https://www.marines.mil/News/News-Display/Article/746745/marine-corps-warfighting-lab-tests-autonomous-reconnaissance/"
     },
     {
       "capabilities": [
@@ -3575,6 +4912,42 @@
       ],
       "unmanned_systems_relevance": "Mc Laughlin is included as public aviation infrastructure serving Chester. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Boydton",
+      "latitude": 36.667,
+      "location_precision": "locality",
+      "longitude": -78.387,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Mecklenburg County Sheriff's Office Drone Team",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Southside Virginia",
+      "short_description": "Sheriff's Office drone capability documented for county law-enforcement operations.",
+      "sources": [
+        {
+          "title": "Mecklenburg County Sheriff's Office",
+          "url": "https://www.mecklenburgva.com/194/Sheriffs-Office"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.mecklenburgva.com/194/Sheriffs-Office"
     },
     {
       "capabilities": [
@@ -3713,6 +5086,42 @@
       ],
       "unmanned_systems_relevance": "Middle Peninsula Rgnl is included as public aviation infrastructure serving West Point. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Christiansburg",
+      "latitude": 37.13,
+      "location_precision": "locality",
+      "longitude": -80.409,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Montgomery County Sheriff's Office UAS Team",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "New River Valley",
+      "short_description": "Sheriff's Office UAS team supporting searches, incident awareness, and regional public-safety response.",
+      "sources": [
+        {
+          "title": "Montgomery County Sheriff's Office Support Services",
+          "url": "https://www.montgomerycountyva.gov/1/departments-services/sheriffs-office/support-services"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.montgomerycountyva.gov/1/departments-services/sheriffs-office/support-services"
     },
     {
       "capabilities": [
@@ -4269,6 +5678,46 @@
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Dahlgren",
+      "latitude": 38.333,
+      "location_precision": "locality",
+      "longitude": -77.031,
+      "missions": [
+        "Training and experimentation",
+        "Force protection and installation security"
+      ],
+      "name": "Naval Surface Warfare Center Dahlgren Division",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Maritime surface systems",
+        "Undersea systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Fredericksburg Region",
+      "short_description": "Navy warfare center with publicly documented unmanned-systems research, engineering, ranges, and test facilities.",
+      "sources": [
+        {
+          "title": "NSWC Dahlgren Division: What We Do",
+          "url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/What-We-Do/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Federal and defense customer access",
+        "Test and operational environments",
+        "Research and technical depth"
+      ],
+      "unmanned_systems_relevance": "Provides publicly documented federal research, experimentation, engineering, or test capacity for autonomous and uncrewed systems.",
+      "website_url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/What-We-Do/"
+    },
+    {
       "address_line": "160 Main Road",
       "capabilities": [
         "Systems engineering and integration"
@@ -4305,6 +5754,40 @@
       ],
       "unmanned_systems_relevance": "Naval Weapons Station Yorktown is included as documented federal or defense ecosystem presence in Yorktown. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Martinsville",
+      "latitude": 36.691,
+      "location_precision": "locality",
+      "longitude": -79.873,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "New College Institute",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Southside Virginia",
+      "short_description": "State-supported higher-education center with documented drone education and robotics workforce programs.",
+      "sources": [
+        {
+          "title": "New College Institute",
+          "url": "https://newcollegeinstitute.org/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://newcollegeinstitute.org/"
     },
     {
       "capabilities": [
@@ -4518,6 +6001,44 @@
       "website_url": "https://www.portofvirginia.com/gateway/capabilities/"
     },
     {
+      "address_line": "9710 Jefferson Avenue",
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Newport News",
+      "latitude": 37.029425,
+      "location_precision": "site",
+      "longitude": -76.450613,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Newport News Police and Fire Drone Unit",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "23605",
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Hampton Roads",
+      "short_description": "Joint public-safety drone unit supporting police, fire, search, assessment, and emergency operations.",
+      "sources": [
+        {
+          "title": "Newport News Police and Fire Drone Unit",
+          "url": "https://www.nnva.gov/2394/Drone-Unit"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.nnva.gov/2394/Drone-Unit"
+    },
+    {
       "address_line": "4101 Washington Avenue",
       "capabilities": [
         "Systems engineering and integration",
@@ -4631,6 +6152,44 @@
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     },
     {
+      "address_line": "100 Brooke Avenue",
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Norfolk",
+      "latitude": 36.848642,
+      "location_precision": "site",
+      "longitude": -76.291219,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Norfolk Harbor Patrol Drone Capability",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "23510",
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Hampton Roads",
+      "short_description": "Harbor Patrol aerial-drone capability for search, recovery, maritime safety, and environmental monitoring.",
+      "sources": [
+        {
+          "title": "Norfolk Harbor Patrol Unit",
+          "url": "https://www.norfolk.gov/6644/Harbor-Patrol-Unit"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.norfolk.gov/6644/Harbor-Patrol-Unit"
+    },
+    {
       "address_line": "7737 Hampton Boulevard",
       "capabilities": [
         "Operations, maintenance, and sustainment",
@@ -4742,6 +6301,251 @@
       ],
       "unmanned_systems_relevance": "Norfolk Naval Shipyard is included as documented federal or defense ecosystem presence in Portsmouth. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    },
+    {
+      "address_line": "100 Brooke Avenue",
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Norfolk",
+      "latitude": 36.848642,
+      "location_precision": "site",
+      "longitude": -76.291219,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Norfolk Police UAS Team",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "23510",
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Hampton Roads",
+      "short_description": "Police UAS team supporting documented public-safety and crime-reduction operations.",
+      "sources": [
+        {
+          "title": "Norfolk Crime Reduction Strategies Report",
+          "url": "https://www.norfolk.gov/DocumentCenter/View/73566/CMO-Crime-Reduction-Strategies-Report_Final-Draft?bidId="
+        },
+        {
+          "title": "Norfolk Police contact information",
+          "url": "https://www.norfolk.gov/5729/About-Us"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.norfolk.gov/DocumentCenter/View/73566/CMO-Crime-Reduction-Strategies-Report_Final-Draft?bidId="
+    },
+    {
+      "address_line": "700 Park Avenue",
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Norfolk",
+      "latitude": 36.849182,
+      "location_precision": "site",
+      "longitude": -76.267977,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Norfolk State Drone Photography Course",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "postal_code": "23504",
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Hampton Roads",
+      "short_description": "Documented university course covering aerial image capture, drone operation, safety, and visual applications.",
+      "sources": [
+        {
+          "title": "Norfolk State University Drone Photography Course",
+          "url": "https://catalog.nsu.edu/undergraduate/course-descriptions/fia/fia.pdf"
+        },
+        {
+          "title": "Norfolk State University",
+          "url": "https://www.nsu.edu/About"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://catalog.nsu.edu/undergraduate/course-descriptions/fia/fia.pdf"
+    },
+    {
+      "address_line": "700 Park Avenue",
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Norfolk",
+      "latitude": 36.849182,
+      "location_precision": "site",
+      "longitude": -76.267977,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Norfolk State Tactical Autonomy Research Program",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "postal_code": "23504",
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Hampton Roads",
+      "short_description": "Federally funded research program developing artificial intelligence and autonomy for tactical systems.",
+      "sources": [
+        {
+          "title": "Norfolk State Tactical Autonomy Research Program",
+          "url": "https://www.nsu.edu/News/2023/February/CSET-Good-News-Report-Jan-2023"
+        },
+        {
+          "title": "Norfolk State University",
+          "url": "https://www.nsu.edu/About"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Test and operational environments"
+      ],
+      "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
+      "website_url": "https://www.nsu.edu/News/2023/February/CSET-Good-News-Report-Jan-2023"
+    },
+    {
+      "address_line": "700 Park Avenue",
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "city": "Norfolk",
+      "latitude": 36.849182,
+      "location_precision": "site",
+      "longitude": -76.267977,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Norfolk State University",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "postal_code": "23504",
+      "provenance": "university-institution",
+      "record_type": "university",
+      "region": "Hampton Roads",
+      "short_description": "Public research university with documented tactical-autonomy research and applied drone coursework.",
+      "sources": [
+        {
+          "title": "Norfolk State University",
+          "url": "https://www.nsu.edu/About"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Norfolk State University is mapped at the institution level to connect its source-backed unmanned-systems research, education, operations, facilities, and programs.",
+      "website_url": "https://www.nsu.edu/About"
+    },
+    {
+      "address_line": "1815 Seabee Road",
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Virginia Beach",
+      "latitude": 36.918239,
+      "location_precision": "site",
+      "longitude": -76.156529,
+      "missions": [
+        "Training and experimentation",
+        "Force protection and installation security"
+      ],
+      "name": "NSWC Carderock Combatant Craft Division",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Maritime surface systems",
+        "Undersea systems"
+      ],
+      "postal_code": "23459",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "short_description": "Navy center for combatant-craft and unmanned-surface-vehicle engineering, design, integration, and evaluation.",
+      "sources": [
+        {
+          "title": "NSWC Carderock Combatant Craft Division",
+          "url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Carderock/Who-We-Are/Norfolk-Virginia/"
+        },
+        {
+          "title": "Joint Expeditionary Base Little Creek-Fort Story contact information",
+          "url": "https://cnrma.cnic.navy.mil/Installations/JEB-Little-Creek-Fort-Story/Contact-Us/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Federal and defense customer access",
+        "Test and operational environments",
+        "Research and technical depth"
+      ],
+      "unmanned_systems_relevance": "Provides publicly documented federal research, experimentation, engineering, or test capacity for autonomous and uncrewed systems.",
+      "website_url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Carderock/Who-We-Are/Norfolk-Virginia/"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Dahlgren",
+      "latitude": 38.333,
+      "location_precision": "locality",
+      "longitude": -77.031,
+      "missions": [
+        "Training and experimentation",
+        "Force protection and installation security"
+      ],
+      "name": "NSWC Dahlgren Outdoor Autonomy Laboratory",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Maritime surface systems",
+        "Undersea systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Fredericksburg Region",
+      "short_description": "Outdoor laboratory for ground, surface, undersea, radio-frequency, and cross-domain autonomy experimentation.",
+      "sources": [
+        {
+          "title": "NSWC Dahlgren Outdoor Autonomy Laboratory",
+          "url": "https://www.navsea.navy.mil/Media/News/Article-View/Article/3886620/maximizing-resources-building-a-competitive-outdoor-autonomy-lab-environment/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Federal and defense customer access",
+        "Test and operational environments",
+        "Research and technical depth"
+      ],
+      "unmanned_systems_relevance": "Provides publicly documented federal research, experimentation, engineering, or test capacity for autonomous and uncrewed systems.",
+      "website_url": "https://www.navsea.navy.mil/Media/News/Article-View/Article/3886620/maximizing-resources-building-a-competitive-outdoor-autonomy-lab-environment/"
     },
     {
       "address_line": "5115 Hampton Boulevard",
@@ -5044,6 +6848,42 @@
     },
     {
       "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Manassas",
+      "latitude": 38.751,
+      "location_precision": "locality",
+      "longitude": -77.475,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Prince William County Police sUAS Team",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Northern Virginia",
+      "short_description": "Police small-UAS team supporting searches, tactical response, crash scenes, and public-safety missions.",
+      "sources": [
+        {
+          "title": "Prince William County Police sUAS Team",
+          "url": "https://www.pwcva.gov/news/pwcpd-spotlight-departments-suas-team-serving-sky/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.pwcva.gov/news/pwcpd-spotlight-departments-suas-team-serving-sky/"
+    },
+    {
+      "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration",
         "Manufacturing, materials, and prototyping"
@@ -5113,6 +6953,74 @@
     },
     {
       "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "city": "Radford",
+      "latitude": 37.132,
+      "location_precision": "locality",
+      "longitude": -80.576,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Radford University",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "provenance": "university-institution",
+      "record_type": "university",
+      "region": "New River Valley",
+      "short_description": "Public university with a documented interdisciplinary minor and coursework in unmanned aerial systems.",
+      "sources": [
+        {
+          "title": "Radford University: About",
+          "url": "https://www.radford.edu/about/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Radford University is mapped at the institution level to connect its source-backed unmanned-systems research, education, operations, facilities, and programs.",
+      "website_url": "https://www.radford.edu/about/"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Radford",
+      "latitude": 37.132,
+      "location_precision": "locality",
+      "longitude": -80.576,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Radford University Unmanned Aerial Systems Minor",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "New River Valley",
+      "short_description": "Interdisciplinary minor covering UAS platforms, flight, applications, regulations, and data collection.",
+      "sources": [
+        {
+          "title": "Radford University Unmanned Aerial Systems Courses",
+          "url": "https://www.radford.edu/registrar/course-descriptions/unmanned-aerial-systems/index.html"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://www.radford.edu/registrar/course-descriptions/unmanned-aerial-systems/index.html"
+    },
+    {
+      "capabilities": [
         "Systems engineering and integration",
         "Operations, maintenance, and sustainment"
       ],
@@ -5144,6 +7052,74 @@
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
       "website_url": "https://www.prnewswire.com/news-releases/rapidflight-celebrates-grand-opening-of-uas-3d-manufacturing-headquarters-in-manassas-virginia-301884344.html"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "city": "South Prince George",
+      "latitude": 37.158,
+      "location_precision": "locality",
+      "longitude": -77.387,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Richard Bland College",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "provenance": "university-institution",
+      "record_type": "university",
+      "region": "Greater Richmond",
+      "short_description": "Public college with a documented UAS certificate and an applied critical-infrastructure autonomy center.",
+      "sources": [
+        {
+          "title": "Richard Bland College",
+          "url": "https://www.rbc.edu/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Richard Bland College is mapped at the institution level to connect its source-backed unmanned-systems research, education, operations, facilities, and programs.",
+      "website_url": "https://www.rbc.edu/"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "South Prince George",
+      "latitude": 37.158,
+      "location_precision": "locality",
+      "longitude": -77.387,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Richard Bland College Uncrewed Aerial Systems Certificate",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Greater Richmond",
+      "short_description": "College certificate pathway in uncrewed aerial systems operations and applied skills.",
+      "sources": [
+        {
+          "title": "Richard Bland College Programs and Degrees",
+          "url": "https://www.rbc.edu/academics/programs-degree/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://www.rbc.edu/academics/programs-degree/"
     },
     {
       "capabilities": [
@@ -5250,6 +7226,42 @@
     },
     {
       "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Richmond",
+      "latitude": 37.541,
+      "location_precision": "locality",
+      "longitude": -77.436,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Richmond Police sUAV Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Greater Richmond",
+      "short_description": "Police small-UAV program governed for emergency and exigent public-safety deployments.",
+      "sources": [
+        {
+          "title": "Richmond Police Small Unmanned Aerial Vehicle Policy",
+          "url": "https://rva.gov/sites/default/files/2024-02/GO%2006-32%20Unmanned%20Aerial%20Vehicle.pdf"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://rva.gov/sites/default/files/2024-02/GO%2006-32%20Unmanned%20Aerial%20Vehicle.pdf"
+    },
+    {
+      "capabilities": [
         "Systems engineering and integration"
       ],
       "city": "Charlottesville",
@@ -5279,6 +7291,78 @@
       ],
       "unmanned_systems_relevance": "Rivanna Station is included as documented federal or defense ecosystem presence in Charlottesville. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Roanoke",
+      "latitude": 37.271,
+      "location_precision": "locality",
+      "longitude": -79.941,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Roanoke County Fire and Rescue Drone Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Roanoke Valley",
+      "short_description": "Fire and rescue drone capability supporting emergency assessment and response.",
+      "sources": [
+        {
+          "title": "Roanoke County Community Strategic Plan Annual Report",
+          "url": "https://www.roanokecountyva.gov/DocumentCenter/View/22361/2021-Community-Strategic-Plan-Annual-Report"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.roanokecountyva.gov/DocumentCenter/View/22361/2021-Community-Strategic-Plan-Annual-Report"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Roanoke",
+      "latitude": 37.271,
+      "location_precision": "locality",
+      "longitude": -79.941,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Roanoke County Police UAV Team",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Roanoke Valley",
+      "short_description": "Police unmanned-aircraft team supporting special operations and incident response.",
+      "sources": [
+        {
+          "title": "Roanoke County Police Department Special Operations",
+          "url": "https://www.roanokecountyva.gov/DocumentCenter/View/1061/Agenda-with-Reports"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.roanokecountyva.gov/DocumentCenter/View/1061/Agenda-with-Reports"
     },
     {
       "capabilities": [
@@ -5316,6 +7400,40 @@
     },
     {
       "capabilities": [
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Wallops Island",
+      "latitude": 37.94,
+      "location_precision": "locality",
+      "longitude": -75.467,
+      "missions": [
+        "Infrastructure inspection",
+        "Logistics and contested logistics"
+      ],
+      "name": "Sentinel Robotic Solutions",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Eastern Shore",
+      "short_description": "Wallops-based small business supporting UAS engineering, operations, training, and test activities.",
+      "sources": [
+        {
+          "title": "NAVAIR Small Business Profile: Sentinel Robotic Solutions",
+          "url": "https://www.navair.navy.mil/osbp/node/11301"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers"
+      ],
+      "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
+      "website_url": "https://www.navair.navy.mil/osbp/node/11301"
+    },
+    {
+      "capabilities": [
         "Operations, maintenance, and sustainment"
       ],
       "city": "Fredericksburg",
@@ -5347,6 +7465,74 @@
       ],
       "unmanned_systems_relevance": "Shannon is included as public aviation infrastructure serving Fredericksburg. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Winchester",
+      "latitude": 39.185,
+      "location_precision": "locality",
+      "longitude": -78.163,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Shenandoah Drone Assembly VR Training",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Shenandoah Valley",
+      "short_description": "Immersive training project that teaches drone assembly and technical procedures in virtual reality.",
+      "sources": [
+        {
+          "title": "Shenandoah Drone Assembly Virtual-Reality Training",
+          "url": "https://www.su.edu/blog/2023/06/12/shenandoah-vr-faculty-students-creating-drone-assembly-training-program/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://www.su.edu/blog/2023/06/12/shenandoah-vr-faculty-students-creating-drone-assembly-training-program/"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "city": "Winchester",
+      "latitude": 39.185,
+      "location_precision": "locality",
+      "longitude": -78.163,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Shenandoah University",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "provenance": "university-institution",
+      "record_type": "university",
+      "region": "Shenandoah Valley",
+      "short_description": "Private university represented by a documented immersive drone-assembly training project.",
+      "sources": [
+        {
+          "title": "Shenandoah University: About",
+          "url": "https://www.su.edu/about/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Shenandoah University is mapped at the institution level to connect its source-backed unmanned-systems research, education, operations, facilities, and programs.",
+      "website_url": "https://www.su.edu/about/"
     },
     {
       "capabilities": [
@@ -5418,6 +7604,76 @@
     },
     {
       "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Abingdon",
+      "latitude": 36.71,
+      "location_precision": "locality",
+      "longitude": -81.975,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Southwest Virginia Drone Soccer Program",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Southwest Virginia",
+      "short_description": "Regional education program using drone soccer to develop technical, teamwork, and career-readiness skills.",
+      "sources": [
+        {
+          "title": "Southwest Virginia Higher Education Center Board Minutes",
+          "url": "https://www.swcenter.edu/wp-content/uploads/2025/07/2024Dec12_Minutes_FINAL.pdf"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://www.swcenter.edu/wp-content/uploads/2025/07/2024Dec12_Minutes_FINAL.pdf"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Spotsylvania",
+      "latitude": 38.2,
+      "location_precision": "locality",
+      "longitude": -77.589,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Spotsylvania Regional Public Safety UAS Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Fredericksburg Region",
+      "short_description": "Regional public-safety UAS capability supporting emergency response and participating agencies.",
+      "sources": [
+        {
+          "title": "Spotsylvania Regional Public Safety UAS Program",
+          "url": "https://www.spotsylvania.va.us/DocumentCenter/View/20535/May-19-2022---No-Quorum"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.spotsylvania.va.us/DocumentCenter/View/20535/May-19-2022---No-Quorum"
+    },
+    {
+      "capabilities": [
         "Operations, maintenance, and sustainment"
       ],
       "city": "Suffolk",
@@ -5449,6 +7705,48 @@
       ],
       "unmanned_systems_relevance": "Suffolk Exec is included as public aviation infrastructure serving Suffolk. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "address_line": "111 Henley Place",
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Suffolk",
+      "latitude": 36.73007,
+      "location_precision": "site",
+      "longitude": -76.590253,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Suffolk Police UAS Unit",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "23434",
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Hampton Roads",
+      "short_description": "Police UAS unit supporting documented law-enforcement and public-safety operations.",
+      "sources": [
+        {
+          "title": "Suffolk Police UAS Unit",
+          "url": "https://www.suffolkva.us/directory.aspx?EID=60"
+        },
+        {
+          "title": "Suffolk Police Department directory",
+          "url": "https://www.suffolkva.us/Directory.aspx?did=28"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.suffolkva.us/directory.aspx?EID=60"
     },
     {
       "capabilities": [
@@ -6183,6 +8481,40 @@
       ],
       "unmanned_systems_relevance": "Develops robotics, perception, planning, control, or connected-vehicle capabilities that support autonomous ground and cross-domain systems.",
       "website_url": "https://arvl.lab.vcu.edu/"
+    },
+    {
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Richmond",
+      "latitude": 37.541,
+      "location_precision": "locality",
+      "longitude": -77.436,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "VCU Robotics and Autonomous Systems Engineering BS",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Greater Richmond",
+      "short_description": "Undergraduate engineering degree integrating robotics, artificial intelligence, controls, and autonomous systems.",
+      "sources": [
+        {
+          "title": "VCU Robotics and Autonomous Systems Engineering Degree",
+          "url": "https://news.vcu.edu/article/vcu-to-offer-new-undergraduate-degree-in-robotics-and-autonomous-systems-engineering"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
+      "website_url": "https://news.vcu.edu/article/vcu-to-offer-new-undergraduate-degree-in-robotics-and-autonomous-systems-engineering"
     },
     {
       "capabilities": [
@@ -6959,6 +9291,40 @@
       ],
       "unmanned_systems_relevance": "Develops robotics, perception, planning, control, or connected-vehicle capabilities that support autonomous ground and cross-domain systems.",
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
+    },
+    {
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "city": "Lexington",
+      "latitude": 37.785,
+      "location_precision": "locality",
+      "longitude": -79.442,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Virginia Military Institute",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "provenance": "university-institution",
+      "record_type": "university",
+      "region": "Shenandoah Valley",
+      "short_description": "Public military college represented by documented cadet research in drone detection and counter-UAS sensing.",
+      "sources": [
+        {
+          "title": "Virginia Military Institute: About",
+          "url": "https://www.vmi.edu/about/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Workforce and talent"
+      ],
+      "unmanned_systems_relevance": "Virginia Military Institute is mapped at the institution level to connect its source-backed unmanned-systems research, education, operations, facilities, and programs.",
+      "website_url": "https://www.vmi.edu/about/"
     },
     {
       "address_line": "1030 University Boulevard",
@@ -7813,6 +10179,42 @@
     },
     {
       "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Lexington",
+      "latitude": 37.785,
+      "location_precision": "locality",
+      "longitude": -79.442,
+      "missions": [
+        "Counter-UAS",
+        "Force protection and installation security"
+      ],
+      "name": "VMI Drone Detection and Counter-UAS Research",
+      "platform_domains": [
+        "Counter-UAS",
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Shenandoah Valley",
+      "short_description": "Cadet research applying distributed acoustic sensing and machine learning to drone detection.",
+      "sources": [
+        {
+          "title": "VMI Cadet Drone Detection Research",
+          "url": "https://www.vmi.edu/news/headlines/2025-2026/drone-detection-focus-of-cadet-research.php"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Test and operational environments"
+      ],
+      "unmanned_systems_relevance": "Provides documented counter-UAS research, testing, and evaluation capabilities.",
+      "website_url": "https://www.vmi.edu/news/headlines/2025-2026/drone-detection-focus-of-cadet-research.php"
+    },
+    {
+      "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration"
       ],
@@ -8056,6 +10458,42 @@
     },
     {
       "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Winchester",
+      "latitude": 39.185,
+      "location_precision": "locality",
+      "longitude": -78.163,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Winchester Emergency Management sUAS Program",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Shenandoah Valley",
+      "short_description": "City emergency-management small UAS capability documented in the municipal budget.",
+      "sources": [
+        {
+          "title": "Winchester Emergency Management UAS Program",
+          "url": "https://www.winchesterva.gov/files/assets/public/v/1/finance/fy23_budget_book.pdf"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.winchesterva.gov/files/assets/public/v/1/finance/fy23_budget_book.pdf"
+    },
+    {
+      "capabilities": [
         "Operations, maintenance, and sustainment"
       ],
       "city": "Winchester",
@@ -8157,6 +10595,44 @@
       ],
       "unmanned_systems_relevance": "Provides a publicly documented environment for unmanned-system testing, training, demonstration, validation, or operational integration.",
       "website_url": "https://xelevateus.com/leesburg-virginia/"
+    },
+    {
+      "address_line": "224 Ballard Street",
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Yorktown",
+      "latitude": 37.235331,
+      "location_precision": "site",
+      "longitude": -76.509799,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "York County ROVER Team",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "23690",
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Hampton Roads",
+      "short_description": "Joint fire and sheriff sUAS team supporting search, hazmat, tactical, storm, and emergency missions.",
+      "sources": [
+        {
+          "title": "York County ROVER Team",
+          "url": "https://www.yorkcounty.gov/1874/The-ROVER-Team"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.yorkcounty.gov/1874/The-ROVER-Team"
     },
     {
       "capabilities": [
@@ -8345,6 +10821,61 @@
       "type": "supports"
     },
     {
+      "from": "Institute for Advanced Learning and Research",
+      "to": "IALR AgBOT Precision Agriculture Program",
+      "type": "supports"
+    },
+    {
+      "from": "Institute for Advanced Learning and Research",
+      "to": "GO TEC Automation and Robotics Talent Pathway",
+      "type": "supports"
+    },
+    {
+      "from": "Commonwealth Center for Advanced Logistics Systems",
+      "to": "Energy-Centric UAS Center for Critical Infrastructure",
+      "type": "operates"
+    },
+    {
+      "from": "Energy-Centric UAS Center for Critical Infrastructure",
+      "to": "Richard Bland College",
+      "type": "located-at"
+    },
+    {
+      "from": "Energy-Centric UAS Center for Critical Infrastructure",
+      "to": "Tri Cities Exec/Dinwiddie County",
+      "type": "supports"
+    },
+    {
+      "from": "Energy-Centric UAS Center for Critical Infrastructure",
+      "to": "Danville Rgnl",
+      "type": "supports"
+    },
+    {
+      "from": "Energy-Centric UAS Center for Critical Infrastructure",
+      "to": "Lonesome Pine",
+      "type": "supports"
+    },
+    {
+      "from": "Naval Surface Warfare Center Dahlgren Division",
+      "to": "NSWC Dahlgren Outdoor Autonomy Laboratory",
+      "type": "operates"
+    },
+    {
+      "from": "Naval Support Facility Dahlgren",
+      "to": "Naval Surface Warfare Center Dahlgren Division",
+      "type": "supports"
+    },
+    {
+      "from": "Joint Expeditionary Base Little Creek-Fort Story",
+      "to": "NSWC Carderock Combatant Craft Division",
+      "type": "supports"
+    },
+    {
+      "from": "Marine Corps Base Quantico",
+      "to": "Marine Corps Warfighting Laboratory",
+      "type": "supports"
+    },
+    {
       "from": "Virginia Tech",
       "to": "Mid-Atlantic Aviation Partnership",
       "type": "supports"
@@ -8500,6 +11031,11 @@
       "type": "supports"
     },
     {
+      "from": "Virginia Commonwealth University",
+      "to": "VCU Robotics and Autonomous Systems Engineering BS",
+      "type": "supports"
+    },
+    {
       "from": "Old Dominion University",
       "to": "ODU Unmanned and Autonomous Vehicle Laboratory",
       "type": "supports"
@@ -8575,6 +11111,16 @@
       "type": "supports"
     },
     {
+      "from": "Liberty University",
+      "to": "Liberty University Medium Unmanned Aerial Systems Certificate",
+      "type": "supports"
+    },
+    {
+      "from": "Liberty University",
+      "to": "Liberty University UAS Operational Experience",
+      "type": "supports"
+    },
+    {
       "from": "Virginia State University",
       "to": "Virginia State University UAS Operations Program",
       "type": "supports"
@@ -8582,6 +11128,56 @@
     {
       "from": "William & Mary",
       "to": "Virginia Institute of Marine Science",
+      "type": "supports"
+    },
+    {
+      "from": "Hampton University",
+      "to": "Hampton University Uncrewed Aircraft Systems Program",
+      "type": "supports"
+    },
+    {
+      "from": "Radford University",
+      "to": "Radford University Unmanned Aerial Systems Minor",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Military Institute",
+      "to": "VMI Drone Detection and Counter-UAS Research",
+      "type": "supports"
+    },
+    {
+      "from": "Norfolk State University",
+      "to": "Norfolk State Tactical Autonomy Research Program",
+      "type": "supports"
+    },
+    {
+      "from": "Norfolk State University",
+      "to": "Norfolk State Drone Photography Course",
+      "type": "supports"
+    },
+    {
+      "from": "Shenandoah University",
+      "to": "Shenandoah Drone Assembly VR Training",
+      "type": "supports"
+    },
+    {
+      "from": "Longwood University",
+      "to": "Longwood SEED Autonomous Marine Project",
+      "type": "supports"
+    },
+    {
+      "from": "Emory & Henry University",
+      "to": "Emory & Henry Drone Pilot Test Preparation",
+      "type": "supports"
+    },
+    {
+      "from": "Richard Bland College",
+      "to": "Richard Bland College Uncrewed Aerial Systems Certificate",
+      "type": "supports"
+    },
+    {
+      "from": "Richard Bland College",
+      "to": "Energy-Centric UAS Center for Critical Infrastructure",
       "type": "supports"
     },
     {

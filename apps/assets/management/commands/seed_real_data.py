@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 from django.conf import settings
-from django.core.management.base import BaseCommand
+from django.core.management.base import BaseCommand, CommandError
 from django.db import transaction
 from django.db.models import Q
 
@@ -43,9 +43,17 @@ class Command(BaseCommand):
             action="store_true",
             help="Load the catalog only when the database contains no assets.",
         )
+        parser.add_argument(
+            "--add-missing",
+            action="store_true",
+            help="Create missing catalog records without changing existing assets or sources.",
+        )
 
     @transaction.atomic
     def handle(self, *args, **options):
+        if options["add_missing"] and options["prune"]:
+            raise CommandError("--add-missing cannot be combined with --prune.")
+
         if options["only_if_empty"] and Asset.objects.exists():
             self.stdout.write(
                 self.style.WARNING(
@@ -66,12 +74,17 @@ class Command(BaseCommand):
 
         created = 0
         updated = 0
+        skipped = 0
         catalog_names = {record["name"] for record in records}
         for record in records:
+            asset = Asset.objects.filter(name=record["name"]).first()
+            if options["add_missing"] and asset is not None:
+                skipped += 1
+                continue
+
             region, _ = Region.objects.get_or_create(
                 name=record["region"], defaults={"region_type": "Virginia ecosystem region"}
             )
-            asset = Asset.objects.filter(name=record["name"]).first()
             was_created = asset is None
             if was_created:
                 asset = Asset(
@@ -153,7 +166,8 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.SUCCESS(
-                f"Loaded {len(records)} real assets ({created} created, {updated} updated); "
+                f"Loaded {len(records)} real assets ({created} created, {updated} updated, "
+                f"{skipped} preserved); "
                 f"created {relationships_created} relationships; removed {deleted} demo-related "
                 f"and {pruned} stale catalog database objects."
             )
