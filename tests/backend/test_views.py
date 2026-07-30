@@ -336,7 +336,13 @@ class PrivateSiteTests(TestCase):
     def test_authenticated_user_can_open_site(self):
         user = get_user_model().objects.create_user("member", password="test-password")
         self.client.force_login(user)
-        self.assertEqual(self.client.get(reverse("core:map")).status_code, 200)
+        response = self.client.get(reverse("core:map"))
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(
+            response,
+            f'<form method="post" action="{reverse("logout")}" class="nav-logout">',
+        )
+        self.assertContains(response, "Sign out")
 
 
 class SavedViewTests(TestCase):

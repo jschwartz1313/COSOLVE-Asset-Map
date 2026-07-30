@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="{% static 'img/cosolve-logo-black.png' %}">
   <link rel="apple-touch-icon" href="{% static 'img/cosolve-logo-black.png' %}">
   <link rel="stylesheet" href="{% static 'css/tokens.css' %}?v=20260717">
-  <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20260730-2">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20260730-3">
   {% block extra_css %}{% endblock %}
 </head>
 <body>
@@ -29,6 +29,12 @@
       {% if not public_scope_is_regional %}<a href="{% url 'core:region-compare' %}" {% if request.resolver_match.url_name == 'region-compare' %}aria-current="page"{% endif %}>Regions</a>{% endif %}
       <a href="{% url 'core:about-data' %}" {% if request.resolver_match.url_name == 'about-data' %}aria-current="page"{% endif %}>About data</a>
       {% if user.is_staff %}<a href="{% url 'admin:index' %}">Admin</a>{% endif %}
+      {% if user.is_authenticated %}
+        <form method="post" action="{% url 'logout' %}" class="nav-logout">
+          {% csrf_token %}
+          <button type="submit">Sign out</button>
+        </form>
+      {% endif %}
     </nav>
   </header>
   {% if messages %}

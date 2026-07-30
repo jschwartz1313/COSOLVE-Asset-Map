@@ -18,6 +18,9 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .primary-nav a { display: grid; place-items: center; position: relative; color: var(--ink-muted); text-decoration: none; font-size: 14px; font-weight: 700; }
 .primary-nav a[aria-current="page"] { color: var(--ink); }
 .primary-nav a[aria-current="page"]::after { content: ""; position: absolute; height: 3px; left: 0; right: 0; bottom: 0; background: var(--brand); }
+.nav-logout { display: flex; height: 100%; margin: 0; }
+.nav-logout button { padding: 0; border: 0; background: transparent; color: var(--ink-muted); font-size: 14px; font-weight: 700; cursor: pointer; }
+.nav-logout button:hover { color: var(--ink); }
 
 .eyebrow { display: block; color: var(--brand); font-size: 11px; line-height: 1.2; font-weight: 800; text-transform: uppercase; }
 h1, h2, h3, p { margin-top: 0; }
@@ -254,7 +257,7 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
   .brand-logo { flex-basis: 104px; width: 104px; height: 38px; }
   .brand-logo img { width: 178px; }
   .primary-nav { gap: 16px; }
-  .primary-nav a { font-size: 12px; }
+  .primary-nav a, .nav-logout button { font-size: 12px; }
   .directory-layout { display: block; }
   .directory-filters { min-height: 0; border-right: 0; border-bottom: 1px solid var(--line); padding: 18px; }
   .directory-filters form { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -287,7 +290,8 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
   .site-header { display: grid; grid-template-columns: 1fr; grid-template-rows: 52px 52px; padding: 0 12px; }
   .brand { grid-row: 1; }
   .primary-nav { grid-row: 2; width: 100%; justify-content: space-between; gap: 14px; overflow-x: auto; border-top: 1px solid var(--line); }
-  .primary-nav a { flex: 0 0 auto; font-size: 11px; }
+  .primary-nav a, .nav-logout { flex: 0 0 auto; }
+  .primary-nav a, .nav-logout button { font-size: 11px; }
   .directory-filters form { grid-template-columns: 1fr; }
   .directory-filters form > .search-field, .directory-filters form > .filter-actions { grid-column: auto; }
   .detail-header, .detail-grid { grid-template-columns: 1fr; }
