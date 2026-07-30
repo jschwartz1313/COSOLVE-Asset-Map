@@ -329,6 +329,12 @@ test("drawn area selection filters assets and enables export", async ({ page }) 
   expect(selectedCount).toBeGreaterThan(0);
   expect(selectedCount).toBeLessThanOrEqual(regionalTotal);
   await expect(page.locator("#export-area")).toBeEnabled();
+  await page.locator(".map-analysis summary").click();
+  const downloadPromise = page.waitForEvent("download");
+  await page.locator("#export-area").click();
+  const download = await downloadPromise;
+  const csv = readFileSync(await download.path(), "utf8").trim().split("\n");
+  expect(csv).toHaveLength(selectedCount + 1);
 });
 
 test("nearby search filters from the current map center and can be cleared", async ({ page }) => {
@@ -341,6 +347,7 @@ test("nearby search filters from the current map center and can be cleared", asy
   await page.locator("#nearby-search").click();
   await expect(page.locator("#analysis-status")).toContainText("within 25 miles");
   await expect(page.locator(".leaflet-analysis-selection-pane path")).toHaveCount(1);
+  await expect(page.locator("#export-area")).toBeEnabled();
   await page.locator("#clear-analysis").click();
   await expect(page.locator("#result-count")).toHaveText("1");
 });

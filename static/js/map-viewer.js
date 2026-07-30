@@ -87,7 +87,8 @@ const updateFilterIndicators = bindFilterIndicators(form);
 let activeFilterParams = initialFilterParams;
 let allFeatures = [];
 let fullResultCount = 0;
-let selectedAreaFeatures = [];
+let analysisFeatures = [];
+let analysisActive = false;
 let relationshipDataLoaded = false;
 let loadRequestId = 0;
 
@@ -129,6 +130,24 @@ function updateViewActions() {
   if (saveViewLink) {
     saveViewLink.href = `/saved-views/?view_type=map&query=${encodeURIComponent(params)}`;
   }
+  if (exportLink) {
+    if (analysisActive) {
+      exportLink.href = "#";
+      exportLink.textContent = `Export ${analysisFeatures.length} selected`;
+      exportLink.setAttribute(
+        "aria-label",
+        `Export ${analysisFeatures.length} selected assets as CSV`,
+      );
+      exportLink.setAttribute("aria-disabled", String(analysisFeatures.length === 0));
+    } else {
+      exportLink.href = activeFilterParams.toString()
+        ? `/admin/imports/export/?${activeFilterParams}`
+        : "/admin/imports/export/";
+      exportLink.textContent = "Export CSV";
+      exportLink.removeAttribute("aria-label");
+      exportLink.removeAttribute("aria-disabled");
+    }
+  }
   if (printMapSummary) {
     const filterState = activeFilterParams.toString() ? "Filtered view" : "Statewide view";
     printMapSummary.textContent = `${filterState} · ${count.textContent || "0"} assets · ${new Date().toLocaleDateString()}`;
@@ -162,7 +181,8 @@ function renderFeatureCollection(
 
 function clearAnalysis({ render = true } = {}) {
   mapController.clearAnalysisGraphics();
-  selectedAreaFeatures = [];
+  analysisFeatures = [];
+  analysisActive = false;
   exportAreaButton.disabled = true;
   clearAnalysisButton.hidden = true;
   analysisStatus.textContent = "";
@@ -171,15 +191,18 @@ function clearAnalysis({ render = true } = {}) {
       resultCount: fullResultCount,
       showSearchLabels: Boolean(activeFilterParams.get("q")?.trim()),
     });
+  } else {
+    updateViewActions();
   }
 }
 
 function applyAreaSelection(bounds) {
-  selectedAreaFeatures = featuresWithinBounds(allFeatures, bounds);
-  renderFeatureCollection(selectedAreaFeatures);
-  exportAreaButton.disabled = selectedAreaFeatures.length === 0;
+  analysisFeatures = featuresWithinBounds(allFeatures, bounds);
+  analysisActive = true;
+  renderFeatureCollection(analysisFeatures);
+  exportAreaButton.disabled = analysisFeatures.length === 0;
   clearAnalysisButton.hidden = false;
-  analysisStatus.textContent = `${selectedAreaFeatures.length} assets selected`;
+  analysisStatus.textContent = `${analysisFeatures.length} assets selected`;
 }
 
 function renderRegionSummary(regionSlug, regionName) {
@@ -378,8 +401,11 @@ nearbySearchButton.addEventListener("click", () => {
   const radius = Number(nearbyRadius.value);
   const center = mapController.map.getCenter();
   const nearbyFeatures = featuresWithinRadius(allFeatures, center, radius);
+  analysisFeatures = nearbyFeatures;
+  analysisActive = true;
   mapController.showNearbyRadius(radius);
   renderFeatureCollection(nearbyFeatures);
+  exportAreaButton.disabled = nearbyFeatures.length === 0;
   clearAnalysisButton.hidden = false;
   analysisStatus.textContent = `${nearbyFeatures.length} assets within ${radius} miles`;
 });
@@ -397,8 +423,14 @@ selectExtentButton.addEventListener("click", () => {
 });
 
 exportAreaButton.addEventListener("click", () => {
-  if (!selectedAreaFeatures.length) return;
-  downloadFeatureCsv(selectedAreaFeatures, "cosolve-selected-assets.csv");
+  if (!analysisFeatures.length) return;
+  downloadFeatureCsv(analysisFeatures, "cosolve-selected-assets.csv");
+});
+exportLink?.addEventListener("click", (event) => {
+  if (!analysisActive) return;
+  event.preventDefault();
+  if (!analysisFeatures.length) return;
+  downloadFeatureCsv(analysisFeatures, "cosolve-selected-assets.csv");
 });
 
 clearAnalysisButton.addEventListener("click", () => clearAnalysis());
@@ -460,11 +492,6 @@ async function load(params, { changeUrl = true, viewState = null } = {}) {
     directoryLink.href = requestedFilterParams.toString()
       ? `/directory/?${requestedFilterParams}`
       : "/directory/";
-    if (exportLink) {
-      exportLink.href = requestedFilterParams.toString()
-        ? `/admin/imports/export/?${requestedFilterParams}`
-        : "/admin/imports/export/";
-    }
     showStatus(
       data.truncated
         ? `Showing ${data.returned_count} of ${data.result_count} matching assets. Narrow the filters to see every result.`

@@ -116,6 +116,33 @@ class ImportWorkflowTests(TestCase):
         response = self.client.get(reverse("imports:export"))
         self.assertEqual(response.status_code, 403)
 
+    def test_export_honors_active_asset_filters(self):
+        matching = Asset.objects.create(
+            name="Matching Facility",
+            record_type=Asset.RecordType.FACILITY,
+            short_description="Matching export fixture.",
+            unmanned_systems_relevance="Supports filtered export testing.",
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        )
+        excluded = Asset.objects.create(
+            name="Excluded University",
+            record_type=Asset.RecordType.UNIVERSITY,
+            short_description="Excluded export fixture.",
+            unmanned_systems_relevance="Supports filtered export testing.",
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        )
+
+        response = self.client.get(
+            reverse("imports:export"),
+            {"record_type": Asset.RecordType.FACILITY},
+        )
+
+        content = response.content.decode()
+        self.assertContains(response, matching.name)
+        self.assertNotIn(excluded.name, content)
+
     def test_complete_export_can_be_imported_without_losing_data(self):
         asset = Asset.objects.create(
             name="Round Trip Asset",
