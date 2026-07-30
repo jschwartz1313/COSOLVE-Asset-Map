@@ -3121,7 +3121,7 @@
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Northern Virginia",
-      "short_description": "Regional simulation and optimization study evaluating drone-as-first-responder coverage and base locations across Northern Virginia.",
+      "short_description": "2025-26 regional simulation and optimization study evaluating drone-as-first-responder coverage and base locations across Northern Virginia.",
       "sources": [
         {
           "title": "George Mason C5I Northern Virginia DFR Study",
@@ -3141,10 +3141,10 @@
         "Autonomy and artificial intelligence",
         "Perception, sensing, and sensor fusion"
       ],
-      "city": "Fairfax",
-      "latitude": 38.846,
+      "city": "Arlington",
+      "latitude": 38.881,
       "location_precision": "locality",
-      "longitude": -77.307,
+      "longitude": -77.091,
       "missions": [
         "Training and experimentation"
       ],
@@ -3160,7 +3160,7 @@
       "sources": [
         {
           "title": "George Mason RobotiXX Laboratory",
-          "url": "https://robotixx.cs.gmu.edu/index.html"
+          "url": "https://people.cs.gmu.edu/~xxiao2/index.html"
         }
       ],
       "state": "VA",
@@ -3169,7 +3169,7 @@
         "Multi-domain missions"
       ],
       "unmanned_systems_relevance": "Develops robotics, perception, planning, control, or connected-vehicle capabilities that support autonomous ground and cross-domain systems.",
-      "website_url": "https://robotixx.cs.gmu.edu/index.html"
+      "website_url": "https://people.cs.gmu.edu/~xxiao2/index.html"
     },
     {
       "capabilities": [

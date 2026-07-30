@@ -211,7 +211,7 @@ SOURCES = {
     ),
     "gmu_robotixx": (
         "George Mason RobotiXX Laboratory",
-        "https://robotixx.cs.gmu.edu/index.html",
+        "https://people.cs.gmu.edu/~xxiao2/index.html",
     ),
     "gmu_mix": (
         "Mason Innovation Exchange Short Course Programs",
@@ -2084,7 +2084,7 @@ CURATED_ASSETS = [
     (
         "George Mason RobotiXX Laboratory",
         "facility",
-        "Fairfax",
+        "Arlington",
         "Northern Virginia",
         "research_ground",
         "Field-robotics laboratory developing motion-planning and machine-learning methods for robust mobile autonomy.",
@@ -2105,7 +2105,7 @@ CURATED_ASSETS = [
         "Fairfax",
         "Northern Virginia",
         "research_air",
-        "Regional simulation and optimization study evaluating drone-as-first-responder coverage and base locations across Northern Virginia.",
+        "2025-26 regional simulation and optimization study evaluating drone-as-first-responder coverage and base locations across Northern Virginia.",
         "gmu_c5i_dfr",
     ),
     (
