@@ -141,15 +141,16 @@ test("empty filters preserve the complete map result set", async ({ page }) => {
   }
 });
 
-test("desktop filter panel uses compact content-sized spacing", async ({ page }) => {
+test("desktop filter panel uses comfortable spacing without overflow", async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 720 });
   await page.goto("/map/");
   await expect(page.locator(".result-row").first()).toBeVisible();
 
-  await expect(page.locator(".filters-panel")).toHaveCSS("width", "252px");
+  await expect(page.locator(".filters-panel")).toHaveCSS("width", "276px");
   await expect(page.locator(".filter-fields-scroll")).toHaveCSS("align-content", "start");
-  await expect(page.locator(".filter-fields-scroll")).toHaveCSS("gap", "10px");
-  await expect(page.locator("#asset-filters input[type=search]")).toHaveCSS("height", "38px");
+  await expect(page.locator(".filter-fields-scroll")).toHaveCSS("gap", "13px");
+  await expect(page.locator("#asset-filters input[type=search]")).toHaveCSS("height", "40px");
+  await expect(page.locator("#asset-filters button[type=submit]")).toBeVisible();
 });
 
 test("strategic categories use the same collapsible filter control", async ({ page }) => {
