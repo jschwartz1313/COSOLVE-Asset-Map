@@ -154,6 +154,23 @@
 #map.is-selecting-area, #map.is-selecting-area *,
 #map.is-selecting-polygon, #map.is-selecting-polygon * { cursor: crosshair !important; }
 .leaflet-control-zoom a { color: var(--ink); }
+.leaflet-control-attribution {
+  max-width: min(240px, calc(100vw - 130px));
+  padding: 2px 5px;
+  overflow: hidden;
+  color: var(--ink-muted);
+  background: rgb(255 255 255 / 88%);
+  font-size: 8px;
+  line-height: 1.25;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.map-source-disclosure { position: absolute; z-index: 600; bottom: 8px; left: 8px; width: 88px; margin: 0; color: var(--ink); background: rgb(255 255 255 / 94%); border: 1px solid var(--line); box-shadow: 0 1px 5px rgb(25 33 38 / 10%); }
+.map-source-disclosure[open] { width: min(300px, calc(100% - 132px)); }
+.map-source-disclosure summary { margin: 0; padding: 5px 8px; font-size: 9px; line-height: 1.2; }
+.map-source-content { max-height: 210px; padding: 2px 9px 9px; overflow-y: auto; border-top: 1px solid var(--line); }
+.map-source-content p { margin: 7px 0 0; color: var(--ink-muted); font-size: 9px; line-height: 1.4; }
+.map-source-content strong { color: var(--ink); }
 .leaflet-popup-content-wrapper { border-radius: var(--radius); box-shadow: var(--shadow); }
 .leaflet-popup-content { margin: 15px; }
 
@@ -203,7 +220,8 @@ body.presentation-mode .map-legend { width: 172px; }
     print-color-adjust: exact !important;
   }
   .site-header, .filters-panel, .results-panel, .map-tools, .map-status,
-  .leaflet-control-zoom, .map-insight-panel, .presentation-exit { display: none !important; }
+  .leaflet-control-zoom, .map-source-disclosure, .map-insight-panel,
+  .presentation-exit { display: none !important; }
   body, .map-workspace { min-width: 0; background: white; }
   .map-workspace { height: auto; display: block; overflow: visible; }
   .map-stage { height: auto; display: grid; grid-template-rows: auto 7in; }

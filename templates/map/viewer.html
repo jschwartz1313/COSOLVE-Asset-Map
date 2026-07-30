@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260730-7">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260730-8">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
@@ -43,6 +43,15 @@
     </header>
     <p class="visually-hidden" id="map-accessibility-note">Use the adjacent results list or directory for a text-based view of every mapped asset.</p>
     <div id="map" role="region" tabindex="0" aria-label="Interactive map of public asset listings" aria-describedby="map-accessibility-note"></div>
+    <details class="map-source-disclosure">
+      <summary>Map sources</summary>
+      <div class="map-source-content">
+        <p><strong>Boundaries:</strong> U.S. Census Bureau TIGERweb (2025).</p>
+        <p><strong>Ecosystem regions:</strong> COSOLVE working analytical groupings derived from Virginia regional organizations.</p>
+        <p><strong>Potential MPZ tracts:</strong> U.S. Census Bureau geography cross-referenced with public information from MARAD, the Port of Virginia, and the U.S. Navy. These are planning candidates, not federal designations.</p>
+        <p><strong>Asset points:</strong> Public institutional and government sources listed on each asset profile. Locations may be exact, approximate, or generalized.</p>
+      </div>
+    </details>
     <section class="print-analysis-report" aria-label="Printable asset register">
       <header><span class="eyebrow">COSOLVE geographic asset intelligence</span><h2 id="print-report-title">Current map asset report</h2><p id="print-report-context"></p></header>
       <table><thead><tr><th>Asset</th><th>Type</th><th>Region</th><th>Location precision</th><th>Review status</th></tr></thead><tbody id="print-report-rows"></tbody></table>
@@ -166,6 +175,6 @@
 </main>
 <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
 <script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
-  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260730-7"></script>
+  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260730-8"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}

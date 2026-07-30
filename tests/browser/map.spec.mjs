@@ -65,6 +65,26 @@ test("map layers toggle without moving the reset control", async ({ page }) => {
   await expect(page.locator(".leaflet-county-boundaries-pane path")).not.toHaveCount(0);
 });
 
+test("map credits stay compact while full source notes remain available", async ({
+  page,
+}) => {
+  await page.goto("/map/");
+  await expect(page.locator(".result-row").first()).toBeVisible();
+
+  const attribution = page.locator(".leaflet-control-attribution");
+  await expect(attribution).toContainText("OpenStreetMap");
+  await expect(attribution).not.toContainText("County boundaries");
+  await expect(attribution).not.toContainText("Leaflet");
+  await expect(attribution).toHaveCSS("white-space", "nowrap");
+
+  const sources = page.locator(".map-source-disclosure");
+  await expect(sources).not.toHaveAttribute("open", "");
+  await sources.locator("summary").click();
+  await expect(sources).toHaveAttribute("open", "");
+  await expect(sources).toContainText("U.S. Census Bureau TIGERweb");
+  await expect(sources).toContainText("planning candidates, not federal designations");
+});
+
 test("copy view link preserves the map position, filters, and layers", async ({
   context,
   page,

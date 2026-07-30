@@ -68,6 +68,7 @@ export function createMap(root) {
   const defaultView = [Number(root.dataset.lat), Number(root.dataset.lon)];
   const defaultZoom = Number(root.dataset.zoom);
   const map = window.L.map("map", { zoomControl: false }).setView(defaultView, defaultZoom);
+  map.attributionControl.setPrefix(false);
   window.L.control.zoom({ position: "bottomright" }).addTo(map);
 
   const basemaps = {
@@ -98,16 +99,6 @@ export function createMap(root) {
     basemapLayer.bringToBack();
     activeBasemap = name;
   }
-
-  map.attributionControl.addAttribution(
-    "County boundaries: U.S. Census Bureau TIGERweb (2025)",
-  );
-  map.attributionControl.addAttribution(
-    "Ecosystem regions: COSOLVE working analytical groupings",
-  );
-  map.attributionControl.addAttribution(
-    "Potential MPZ tracts: U.S. Census Bureau; MARAD, Port of Virginia, U.S. Navy",
-  );
 
   let regionSelectCallback = () => {};
   map.createPane("ecosystem-regions");
