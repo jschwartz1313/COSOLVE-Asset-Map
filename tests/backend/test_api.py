@@ -101,15 +101,8 @@ class PublicApiTests(TestCase):
         self.assertFalse(body["truncated"])
         self.assertEqual(body["returned_count"], 2)
 
-    def test_relationship_geojson_connects_public_mapped_assets(self):
-        response = self.client.get(reverse("api:relationship-geojson"))
-        self.assertEqual(response.status_code, 200)
-        body = response.json()
-        self.assertEqual(body["result_count"], 1)
-        feature = body["features"][0]
-        self.assertEqual(feature["geometry"]["type"], "LineString")
-        self.assertEqual(feature["properties"]["from_name"], self.partner.name)
-        self.assertEqual(feature["properties"]["to_name"], self.public.name)
+    def test_relationship_layer_endpoint_is_not_public(self):
+        self.assertEqual(self.client.get("/api/relationships.geojson").status_code, 404)
 
     def test_geojson_reports_when_limit_truncates_results(self):
         body = self.client.get(reverse("api:asset-geojson"), {"limit": 1}).json()
@@ -254,14 +247,6 @@ class ScopedPublicApiTests(TestCase):
         ]
         names = [item["name"] for item in related]
         self.assertIn(self.regional_partner.name, names)
-        self.assertNotIn(self.outside.name, names)
-
-    def test_relationship_layer_excludes_out_of_scope_assets(self):
-        response = self.client.get(reverse("api:relationship-geojson"))
-        names = {
-            feature["properties"]["to_name"]
-            for feature in response.json()["features"]
-        }
         self.assertNotIn(self.outside.name, names)
 
     def test_filter_metadata_only_advertises_active_region(self):

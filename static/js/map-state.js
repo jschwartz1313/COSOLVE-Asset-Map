@@ -16,7 +16,6 @@ export const MAP_LAYER_ORDER = [
   "counties",
   "verification",
   "precision",
-  "relationships",
 ];
 export const MAP_BASEMAPS = ["street", "light", "imagery"];
 

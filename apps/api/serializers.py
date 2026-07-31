@@ -126,27 +126,3 @@ def asset_feature(asset):
         "detail_url": asset.get_absolute_url(),
     }
     return {"type": "Feature", "id": str(asset.pk), "geometry": geometry, "properties": properties}
-
-
-def relationship_feature(relationship):
-    from_asset = relationship.from_asset
-    to_asset = relationship.to_asset
-    return {
-        "type": "Feature",
-        "id": str(relationship.pk),
-        "geometry": {
-            "type": "LineString",
-            "coordinates": [
-                [float(from_asset.longitude), float(from_asset.latitude)],
-                [float(to_asset.longitude), float(to_asset.latitude)],
-            ],
-        },
-        "properties": {
-            "from_id": str(from_asset.pk),
-            "from_name": from_asset.name,
-            "to_id": str(to_asset.pk),
-            "to_name": to_asset.name,
-            "relationship_type": relationship.relationship_type,
-            "relationship_label": relationship.get_relationship_type_display(),
-        },
-    }

@@ -3,11 +3,11 @@ from django.http import Http404, JsonResponse
 from django.shortcuts import get_object_or_404
 from django.views.decorators.http import require_GET
 
-from apps.assets.models import Asset, Relationship
+from apps.assets.models import Asset
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 
 from .query import active_filters, filter_public_assets
-from .serializers import asset_feature, public_asset_dict, relationship_feature
+from .serializers import asset_feature, public_asset_dict
 
 
 def taxonomy_values(model):
@@ -55,26 +55,6 @@ def asset_geojson(request):
             "truncated": result_count > len(features),
             "active_filters": active_filters(request.GET),
             "features": features,
-        }
-    )
-
-
-@require_GET
-def relationship_geojson(request):
-    public_assets = Asset.public.filter(
-        latitude__isnull=False,
-        longitude__isnull=False,
-    ).exclude(location_precision=Asset.LocationPrecision.HIDDEN)
-    relationships = Relationship.objects.filter(
-        is_public=True,
-        from_asset__in=public_assets,
-        to_asset__in=public_assets,
-    ).select_related("from_asset", "to_asset")
-    return JsonResponse(
-        {
-            "type": "FeatureCollection",
-            "result_count": relationships.count(),
-            "features": [relationship_feature(item) for item in relationships],
         }
     )
 

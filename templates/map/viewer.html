@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260731-1">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260731-2">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
@@ -14,7 +14,6 @@
       data-basemap-street-url="{{ basemap_tile_url }}" data-basemap-street-attribution="{{ basemap_attribution }}"
       data-basemap-light-url="{{ light_basemap_tile_url }}" data-basemap-light-attribution="{{ light_basemap_attribution }}"
       data-basemap-imagery-url="{{ imagery_basemap_tile_url }}" data-basemap-imagery-attribution="{{ imagery_basemap_attribution }}"
-      data-relationships-url="{% url 'api:relationship-geojson' %}"
       data-counties-url="{% static 'data/virginia-counties.geojson' %}?v=2025"
       data-regions-url="{% static 'data/virginia-regions.geojson' %}?v=20260728"
       data-mpz-candidates-url="{% static 'data/virginia-maritime-prosperity-candidates.geojson' %}?v=20260729"
@@ -107,7 +106,6 @@
             <label title="Shade COSOLVE's working Virginia ecosystem regions"><input id="region-layer-toggle" type="checkbox"><span>Ecosystem regions</span></label>
             <label title="Show planning-candidate census tracts for the proposed federal Maritime Prosperity Zone program"><input id="mpz-layer-toggle" type="checkbox"><span>Potential MPZ tracts</span></label>
             <label title="Show Virginia county and independent-city boundaries"><input id="county-layer-toggle" type="checkbox"><span>County boundaries</span></label>
-            <label title="Draw documented public relationships between visible assets"><input id="relationship-layer-toggle" type="checkbox"><span>Asset relationships</span></label>
             <strong>Point analysis</strong>
             <label title="Outline points by editorial review state"><input id="verification-layer-toggle" type="checkbox"><span>Verification status</span></label>
             <label title="Differentiate points by coordinate precision"><input id="precision-layer-toggle" type="checkbox"><span>Location precision</span></label>
@@ -133,7 +131,6 @@
           <span><i class="legend-line county-boundary"></i>County boundary</span>
           <span><i class="legend-region-fill"></i>Ecosystem region</span>
           <span><i class="legend-mpz-fill"></i>Potential MPZ tract</span>
-          <span><i class="legend-line relationship-line"></i>Asset relationship</span>
           <div class="legend-analysis-group" data-verification-legend hidden>
             <strong>Verification</strong>
             <span><i class="legend-ring reviewed"></i>Reviewed</span>
@@ -175,6 +172,6 @@
 </main>
 <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
 <script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
-  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260730-8"></script>
+  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260731-1"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}

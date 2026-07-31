@@ -258,7 +258,7 @@ test("text search labels matching map points by name", async ({ page }) => {
   await expect(page.locator(".asset-search-label")).toHaveCount(0);
 });
 
-test("analytical map tools expose quality, relationships, summaries, and saved basemaps", async ({
+test("analytical map tools expose quality, summaries, and saved basemaps", async ({
   page,
 }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
@@ -277,17 +277,6 @@ test("analytical map tools expose quality, relationships, summaries, and saved b
   await expect(clusterTooltip).not.toContainText("Operating environment");
 
   await page.locator(".map-layers summary").click();
-  await page.locator("#relationship-layer-toggle").check();
-  await expect
-    .poll(async () =>
-      page.locator(".leaflet-relationships-pane path").evaluateAll((paths) =>
-        paths.some((path) => {
-          const box = path.getBoundingClientRect();
-          return box.width > 0 || box.height > 0;
-        }),
-      ),
-    )
-    .toBe(true);
   await page.locator('input[name="map-basemap"][value="light"]').check();
   await expect
     .poll(async () =>

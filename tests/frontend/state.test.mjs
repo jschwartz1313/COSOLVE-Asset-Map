@@ -129,7 +129,6 @@ test("saved map state restores imagery and analytical layers", () => {
     "assets",
     "verification",
     "precision",
-    "relationships",
   ]);
   assert.equal(state.basemap, "imagery");
 });

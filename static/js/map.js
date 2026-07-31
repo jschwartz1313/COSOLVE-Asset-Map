@@ -269,38 +269,6 @@ export function createMap(root) {
   let countyLayerLoaded = false;
   let countyLayerVisible = false;
 
-  map.createPane("relationships");
-  map.getPane("relationships").style.zIndex = 360;
-  const relationshipLayer = window.L.geoJSON(null, {
-    pane: "relationships",
-    style: {
-      color: "#59666c",
-      opacity: 0.48,
-      weight: 1.4,
-    },
-    onEachFeature(feature, line) {
-      const properties = feature.properties;
-      line.bindTooltip(
-        `${properties.from_name} ${properties.relationship_label.toLowerCase()} ${properties.to_name}`,
-        { sticky: true },
-      );
-    },
-  });
-  let relationshipFeatures = [];
-  let relationshipLayerVisible = false;
-  let visibleAssetIds = new Set();
-
-  function redrawRelationships() {
-    relationshipLayer.clearLayers();
-    if (!relationshipLayerVisible) return;
-    relationshipLayer.addData(
-      relationshipFeatures.filter((feature) => {
-        const properties = feature.properties;
-        return visibleAssetIds.has(properties.from_id) && visibleAssetIds.has(properties.to_id);
-      }),
-    );
-  }
-
   const layer = window.L.markerClusterGroup
     ? window.L.markerClusterGroup({
         showCoverageOnHover: false,
@@ -365,7 +333,6 @@ export function createMap(root) {
   function draw(features, onSelect, { showLabels = false, fit = true } = {}) {
     layer.clearLayers();
     markers.clear();
-    visibleAssetIds = new Set(features.map((feature) => feature.id));
     const bounds = [];
     for (const feature of features) {
       if (!feature.geometry) continue;
@@ -395,7 +362,6 @@ export function createMap(root) {
       markers.set(feature.id, marker);
       bounds.push([latitude, longitude]);
     }
-    redrawRelationships();
     if (!fit) return;
     if (bounds.length > 1) {
       map.fitBounds(bounds, { animate: false, padding: [35, 35], maxZoom: 11 });
@@ -462,21 +428,6 @@ export function createMap(root) {
   function setPrecisionLayerVisible(visible) {
     precisionLayerVisible = visible;
     refreshMarkerIcons();
-  }
-
-  function setRelationshipFeatures(features) {
-    relationshipFeatures = features;
-    redrawRelationships();
-  }
-
-  function setRelationshipLayerVisible(visible) {
-    relationshipLayerVisible = visible;
-    if (visible) {
-      relationshipLayer.addTo(map);
-      redrawRelationships();
-    } else {
-      relationshipLayer.removeFrom(map);
-    }
   }
 
   async function setCountyLayerVisible(visible) {
@@ -806,8 +757,6 @@ export function createMap(root) {
     setMpzLayerVisible,
     setPrecisionLayerVisible,
     setRegionLayerVisible,
-    setRelationshipFeatures,
-    setRelationshipLayerVisible,
     setStateBoundaryVisible,
     setVerificationLayerVisible,
     setViewState,

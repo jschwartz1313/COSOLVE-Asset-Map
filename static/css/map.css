@@ -63,7 +63,6 @@
 .legend-dot img { width: 12px; height: 12px; filter: brightness(0) invert(1); }
 .legend-line { width: 13px; height: 0; flex: 0 0 13px; border-top: 2px solid #5c686f; box-shadow: 0 -1px 0 white, 0 1px 0 white; }
 .legend-line.county-boundary { border-top-color: #56645d; border-top-style: dashed; box-shadow: none; opacity: 0.85; }
-.legend-line.relationship-line { border-top-color: #59666c; border-top-width: 1px; box-shadow: none; opacity: .65; }
 .legend-region-fill { width: 13px; height: 10px; flex: 0 0 13px; border: 1px solid #3978a8; background: rgb(57 120 168 / 28%); }
 .legend-mpz-fill { width: 13px; height: 10px; flex: 0 0 13px; border: 1px dashed #8a5a12; background: rgb(213 155 53 / 32%); }
 .legend-ring, .legend-precision { width: 14px; height: 14px; flex: 0 0 14px; border: 2px solid; border-radius: 50%; }

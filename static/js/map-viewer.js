@@ -1,4 +1,4 @@
-import { fetchAssets, fetchRelationships } from "./api.js?v=20260730";
+import { fetchAssets } from "./api.js?v=20260731";
 import { bindFilterDrawer, bindFilterIndicators } from "./filters.js?v=20260722-3";
 import {
   downloadFeatureCsv,
@@ -7,7 +7,7 @@ import {
   featuresWithinRadius,
   summarizeRegion,
 } from "./map-analysis.js?v=20260730-2";
-import { createMap } from "./map.js?v=20260730-4";
+import { createMap } from "./map.js?v=20260731-1";
 import {
   analysisStateFromParams,
   filterParamsFromMapUrl,
@@ -15,7 +15,7 @@ import {
   paramsWithMapState,
   serializePolygonAnalysis,
   serializeRectangleAnalysis,
-} from "./map-state.js?v=20260730-2";
+} from "./map-state.js?v=20260731-1";
 import { renderResults, selectResult } from "./results.js?v=20260727-2";
 import { hydrateForm, paramsFromForm, updateUrl } from "./state.js?v=20260717";
 
@@ -41,7 +41,6 @@ const countyLayerToggle = document.querySelector("#county-layer-toggle");
 const regionLayerToggle = document.querySelector("#region-layer-toggle");
 const mpzLayerToggle = document.querySelector("#mpz-layer-toggle");
 const stateBoundaryToggle = document.querySelector("#state-boundary-toggle");
-const relationshipLayerToggle = document.querySelector("#relationship-layer-toggle");
 const verificationLayerToggle = document.querySelector("#verification-layer-toggle");
 const precisionLayerToggle = document.querySelector("#precision-layer-toggle");
 const basemapInputs = [...document.querySelectorAll('input[name="map-basemap"]')];
@@ -84,7 +83,6 @@ function applyLayerToggleState(state) {
   regionLayerToggle.checked = layers.includes("regions");
   mpzLayerToggle.checked = layers.includes("mpz");
   countyLayerToggle.checked = layers.includes("counties");
-  relationshipLayerToggle.checked = layers.includes("relationships");
   verificationLayerToggle.checked = layers.includes("verification");
   precisionLayerToggle.checked = layers.includes("precision");
   const basemap = state?.basemap || "street";
@@ -102,7 +100,6 @@ let analysisFeatures = [];
 let analysisActive = false;
 let analysisDefinition = null;
 let polygonDrawing = false;
-let relationshipDataLoaded = false;
 let loadRequestId = 0;
 
 function showStatus(message) {
@@ -128,7 +125,6 @@ function currentLayers() {
   if (countyLayerToggle.checked) layers.push("counties");
   if (verificationLayerToggle.checked) layers.push("verification");
   if (precisionLayerToggle.checked) layers.push("precision");
-  if (relationshipLayerToggle.checked) layers.push("relationships");
   return layers;
 }
 
@@ -435,28 +431,6 @@ async function updateMpzLayer() {
 }
 
 mpzLayerToggle.addEventListener("change", updateMpzLayer);
-
-async function updateRelationshipLayer() {
-  relationshipLayerToggle.disabled = true;
-  try {
-    if (relationshipLayerToggle.checked && !relationshipDataLoaded) {
-      const data = await fetchRelationships(root.dataset.relationshipsUrl);
-      mapController.setRelationshipFeatures(data.features);
-      relationshipDataLoaded = true;
-    }
-    mapController.setRelationshipLayerVisible(relationshipLayerToggle.checked);
-  } catch (error) {
-    relationshipLayerToggle.checked = false;
-    mapController.setRelationshipLayerVisible(false);
-    showStatus("Asset relationships could not be loaded.");
-    console.error(error);
-  } finally {
-    relationshipLayerToggle.disabled = false;
-    updateViewActions();
-  }
-}
-
-relationshipLayerToggle.addEventListener("change", updateRelationshipLayer);
 
 async function copyCurrentView() {
   const url = currentMapUrl();
