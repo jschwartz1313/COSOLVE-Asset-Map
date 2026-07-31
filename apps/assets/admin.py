@@ -136,6 +136,29 @@ def mark_verified(modeladmin, request, queryset):
         messages.warning(request, f"Skipped {skipped} record(s) without a verified public source.")
 
 
+@admin.action(
+    permissions=["change"],
+    description="Mark selected records unverified (keep source-backed listing)",
+)
+def mark_unverified(modeladmin, request, queryset):
+    eligible = queryset.filter(status__in=(Asset.Status.VERIFIED, Asset.Status.PUBLISHED))
+    updated = 0
+    for asset in eligible:
+        asset.status = Asset.Status.SOURCE_BACKED
+        asset.last_verified_at = None
+        asset.reviewed_at = None
+        asset.reviewed_by = None
+        asset.published_at = None
+        asset._history_user = request.user
+        asset._change_reason = "Editorial verification reversed from the admin action."
+        asset.save()
+        updated += 1
+    skipped = queryset.count() - updated
+    messages.success(request, f"Marked {updated} record(s) unverified and review pending.")
+    if skipped:
+        messages.warning(request, f"Skipped {skipped} record(s) that were not verified.")
+
+
 @admin.action(permissions=["publish"], description="Publish eligible verified records")
 def publish_eligible(modeladmin, request, queryset):
     eligible = queryset.filter(
@@ -238,6 +261,7 @@ class AssetAdmin(SimpleHistoryAdmin):
         clear_review_assignment,
         send_for_review,
         mark_verified,
+        mark_unverified,
         publish_eligible,
         archive_records,
         export_selected,

@@ -16,6 +16,7 @@ from apps.assets.admin import (
     UpdateSubmissionAdmin,
     assign_to_me,
     clear_review_assignment,
+    mark_unverified,
     mark_verified,
     publish_eligible,
     set_review_due,
@@ -81,6 +82,38 @@ class AdminWorkflowTests(TestCase):
         self.assertEqual(eligible.reviewed_by, self.user)
         self.assertIsNotNone(eligible.reviewed_at)
         self.assertEqual(ineligible.status, Asset.Status.DRAFT)
+
+    def test_unverify_restores_source_backed_status_and_preserves_source_review(self):
+        asset = self.make_asset("Accidental verification", Asset.Status.VERIFIED)
+        asset.visibility = Asset.Visibility.PUBLIC
+        asset.published_at = timezone.now()
+        asset.save()
+        source = Source.objects.create(
+            asset=asset,
+            title="Verified source",
+            url="https://example.org/verified-source",
+            verification_status="verified",
+            last_verified_at=timezone.localdate(),
+            is_public=True,
+        )
+
+        mark_unverified(self.admin, self.request, Asset.objects.filter(pk=asset.pk))
+
+        asset.refresh_from_db()
+        source.refresh_from_db()
+        self.assertEqual(asset.status, Asset.Status.SOURCE_BACKED)
+        self.assertEqual(asset.visibility, Asset.Visibility.PUBLIC)
+        self.assertIsNone(asset.last_verified_at)
+        self.assertIsNone(asset.reviewed_at)
+        self.assertIsNone(asset.reviewed_by)
+        self.assertIsNone(asset.published_at)
+        self.assertEqual(source.verification_status, "verified")
+        latest_history = asset.history.latest("history_date")
+        self.assertEqual(latest_history.history_user, self.user)
+        self.assertEqual(
+            latest_history.history_change_reason,
+            "Editorial verification reversed from the admin action.",
+        )
 
     def test_publication_requires_verified_status_and_source(self):
         eligible = self.make_asset("Eligible", Asset.Status.VERIFIED)
@@ -229,6 +262,7 @@ class StaffRoleCommandTests(TestCase):
         asset_list = self.client.get(reverse("admin:assets_asset_changelist"))
         self.assertEqual(asset_list.status_code, 200)
         self.assertContains(asset_list, 'value="mark_verified"')
+        self.assertContains(asset_list, 'value="mark_unverified"')
         self.assertNotContains(asset_list, 'value="publish_eligible"')
         self.assertNotContains(asset_list, 'value="export_selected"')
         self.assertEqual(
