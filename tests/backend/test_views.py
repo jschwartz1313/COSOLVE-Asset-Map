@@ -2,7 +2,7 @@ from django.contrib.auth import get_user_model
 from django.test import TestCase, override_settings
 from django.urls import reverse
 
-from apps.assets.models import Asset, Relationship, SavedView, UpdateSubmission
+from apps.assets.models import Asset, SavedView, UpdateSubmission
 from apps.catalog.models import Region
 
 
@@ -25,6 +25,10 @@ class CoreViewTests(TestCase):
         self.assertContains(response, "data-state-boundary-url=")
         self.assertContains(response, "data-relationships-url=")
         self.assertNotContains(response, 'data-region-quick-filter="hampton-roads"')
+        self.assertNotContains(response, ">Network</a>")
+
+    def test_relationship_network_page_is_not_public(self):
+        self.assertEqual(self.client.get("/relationships/").status_code, 404)
 
     def test_health_endpoint(self):
         self.assertEqual(self.client.get(reverse("core:health")).json(), {"status": "ok"})
@@ -109,35 +113,6 @@ class CoreViewTests(TestCase):
         response = self.client.get(reverse("core:directory"))
         self.assertContains(response, 'href="?page=2"')
         self.assertNotContains(response, "??page=2")
-
-    def test_relationship_explorer_includes_public_connection(self):
-        first = Asset.objects.create(
-            name="Network Center",
-            record_type=Asset.RecordType.ORGANIZATION,
-            short_description="Center node.",
-            unmanned_systems_relevance="Supports autonomous systems.",
-            status=Asset.Status.SOURCE_BACKED,
-            visibility=Asset.Visibility.PUBLIC,
-        )
-        second = Asset.objects.create(
-            name="Network Partner",
-            record_type=Asset.RecordType.UNIVERSITY,
-            short_description="Partner node.",
-            unmanned_systems_relevance="Supports autonomous systems.",
-            status=Asset.Status.SOURCE_BACKED,
-            visibility=Asset.Visibility.PUBLIC,
-        )
-        Relationship.objects.create(
-            from_asset=first,
-            to_asset=second,
-            relationship_type=Relationship.RelationshipType.PARTNERS_WITH,
-        )
-        response = self.client.get(
-            reverse("core:relationships"), {"asset": first.slug}
-        )
-        self.assertContains(response, first.name)
-        self.assertContains(response, second.name)
-        self.assertContains(response, '"edges"')
 
     def test_regional_comparison_renders(self):
         Region.objects.create(name="Hampton Roads")

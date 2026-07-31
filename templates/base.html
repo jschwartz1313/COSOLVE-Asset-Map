@@ -25,7 +25,6 @@
     <nav class="primary-nav" aria-label="Primary navigation">
       <a href="{% url 'core:map' %}" {% if request.resolver_match.url_name == 'map' or request.resolver_match.url_name == 'home' %}aria-current="page"{% endif %}>Map</a>
       <a href="{% url 'core:directory' %}" {% if request.resolver_match.url_name == 'directory' or request.resolver_match.url_name == 'asset-detail' or request.resolver_match.url_name == 'asset-suggest-update' %}aria-current="page"{% endif %}>Directory</a>
-      <a href="{% url 'core:relationships' %}" {% if request.resolver_match.url_name == 'relationships' %}aria-current="page"{% endif %}>Network</a>
       {% if not public_scope_is_regional %}<a href="{% url 'core:region-compare' %}" {% if request.resolver_match.url_name == 'region-compare' %}aria-current="page"{% endif %}>Regions</a>{% endif %}
       <a href="{% url 'core:about-data' %}" {% if request.resolver_match.url_name == 'about-data' %}aria-current="page"{% endif %}>About data</a>
       {% if user.is_staff %}<a href="{% url 'admin:index' %}">Admin</a>{% endif %}

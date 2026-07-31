@@ -5,7 +5,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
 from django.db import connection
-from django.db.models import Count, Max, Q
+from django.db.models import Count, Max
 from django.http import Http404, JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
@@ -13,7 +13,6 @@ from django.views.decorators.http import require_POST
 
 from apps.api.query import filter_public_assets
 from apps.assets.models import Asset, SavedView
-from apps.assets.scoping import public_scope_q
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 from apps.sources.models import Source
 
@@ -159,100 +158,6 @@ def asset_detail(request, slug):
             "incoming_relationship_count": incoming_relationships.count(),
             "similar_assets": similar_assets,
             "history_entries": asset_history_entries(asset, request.user.is_staff),
-        },
-    )
-
-
-def relationship_explorer(request):
-    outgoing_scope = public_scope_q("outgoing_relationships__to_asset__")
-    incoming_scope = public_scope_q("incoming_relationships__from_asset__")
-    assets = (
-        Asset.public.annotate(
-            connection_count=Count(
-                "outgoing_relationships",
-                filter=Q(
-                    outgoing_relationships__is_public=True,
-                    outgoing_relationships__to_asset__status__in=Asset.public_status_values(),
-                    outgoing_relationships__to_asset__visibility=Asset.Visibility.PUBLIC,
-                )
-                & outgoing_scope,
-                distinct=True,
-            )
-            + Count(
-                "incoming_relationships",
-                filter=Q(
-                    incoming_relationships__is_public=True,
-                    incoming_relationships__from_asset__status__in=Asset.public_status_values(),
-                    incoming_relationships__from_asset__visibility=Asset.Visibility.PUBLIC,
-                )
-                & incoming_scope,
-                distinct=True,
-            )
-        )
-        .order_by("-connection_count", "name")
-    )
-    selected_slug = request.GET.get("asset", "")
-    center = assets.filter(slug=selected_slug).first() if selected_slug else assets.first()
-    nodes = []
-    edges = []
-    if center:
-        public_assets = Asset.public.all()
-        node_assets = {center.pk: center}
-        outgoing = list(
-            center.outgoing_relationships.filter(
-                is_public=True,
-                to_asset__status__in=Asset.public_status_values(),
-                to_asset__visibility=Asset.Visibility.PUBLIC,
-                to_asset__in=public_assets,
-            ).select_related("to_asset")[:30]
-        )
-        remaining_slots = 30 - len(outgoing)
-        incoming = list(
-            center.incoming_relationships.filter(
-                is_public=True,
-                from_asset__status__in=Asset.public_status_values(),
-                from_asset__visibility=Asset.Visibility.PUBLIC,
-                from_asset__in=public_assets,
-            ).select_related("from_asset")[:remaining_slots]
-        )
-        for relationship in outgoing:
-            node_assets[relationship.to_asset_id] = relationship.to_asset
-            edges.append(
-                {
-                    "source": str(center.pk),
-                    "target": str(relationship.to_asset_id),
-                    "label": relationship.get_relationship_type_display(),
-                }
-            )
-        for relationship in incoming:
-            node_assets[relationship.from_asset_id] = relationship.from_asset
-            edges.append(
-                {
-                    "source": str(relationship.from_asset_id),
-                    "target": str(center.pk),
-                    "label": relationship.get_relationship_type_display(),
-                }
-            )
-        nodes = [
-            {
-                "id": str(asset.pk),
-                "name": asset.name,
-                "type": asset.record_type,
-                "type_label": asset.get_record_type_display(),
-                "url": asset.get_absolute_url(),
-                "is_center": asset.pk == center.pk,
-            }
-            for asset in node_assets.values()
-        ]
-    return render(
-        request,
-        "relationships/explorer.html",
-        {
-            "assets": assets,
-            "center": center,
-            "network_data": {"nodes": nodes, "edges": edges},
-            "connection_count": len(edges),
-            "total_connection_count": center.connection_count if center else 0,
         },
     )
 

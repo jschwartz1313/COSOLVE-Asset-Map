@@ -525,21 +525,6 @@ test("about page reports review status without an empty date range", async ({ pa
   await expect(page.getByText("Verification range", { exact: true })).toHaveCount(0);
 });
 
-test("relationship network renders inside a stable canvas", async ({ page }) => {
-  const errors = [];
-  page.on("pageerror", (error) => errors.push(error.message));
-  await page.goto("/relationships/");
-  await expect(page.locator(".network-node").first()).toBeVisible();
-  expect(await page.locator(".network-node").count()).toBeGreaterThan(1);
-  expect(
-    await page.locator(".network-canvas").evaluate((element) => element.clientHeight),
-  ).toBeLessThanOrEqual(650);
-  expect(
-    await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
-  ).toBe(true);
-  expect(errors).toEqual([]);
-});
-
 test("account recovery is available from the sign-in page", async ({ page }) => {
   await page.goto("/login/");
   await expect(page.getByRole("heading", { name: "Sign in" })).toBeVisible();
