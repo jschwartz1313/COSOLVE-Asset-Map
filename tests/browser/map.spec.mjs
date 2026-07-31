@@ -79,6 +79,7 @@ test("map credits stay compact while full source notes remain available", async 
 
   const sources = page.locator(".map-source-disclosure");
   await expect(sources).not.toHaveAttribute("open", "");
+  await expect(sources).toHaveCSS("padding-top", "0px");
   await sources.locator("summary").click();
   await expect(sources).toHaveAttribute("open", "");
   await expect(sources).toContainText("U.S. Census Bureau TIGERweb");
