@@ -147,6 +147,7 @@ test("print view preserves asset marker and legend colors", async ({ page }) => 
 
   const marker = page.locator(".asset-marker.organization");
   const legendDot = page.locator(".legend-dot.organization");
+  await expect(page.locator(".skip-link")).toBeHidden();
   await expect(marker).toHaveCSS("background-color", "rgb(47, 111, 159)");
   await expect(legendDot).toHaveCSS("background-color", "rgb(47, 111, 159)");
   await expect(marker).toHaveCSS("print-color-adjust", "exact");

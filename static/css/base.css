@@ -314,7 +314,7 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
 }
 
 @media print {
-  .site-header, .site-footer, .breadcrumbs, .detail-sidebar .button, .public-disclaimer { display: none !important; }
+  .skip-link, .site-header, .site-footer, .breadcrumbs, .detail-sidebar .button, .public-disclaimer { display: none !important; }
   body { color: black; background: white; }
   .detail-page { width: 100%; padding: 0; }
   .detail-grid { grid-template-columns: minmax(0, 1fr) 240px; }
