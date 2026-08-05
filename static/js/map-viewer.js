@@ -62,7 +62,7 @@ const clearAnalysisButton = document.querySelector("#clear-analysis");
 const analysisStatus = document.querySelector("#analysis-status");
 const summaryRegion = document.querySelector("#summary-region");
 const showRegionSummaryButton = document.querySelector("#show-region-summary");
-const mapControlsDetails = document.querySelector(".map-controls");
+const mapAnalysisDetails = document.querySelector(".map-analysis");
 const activeFilterBar = document.querySelector("[data-active-filter-bar]");
 const activeFilterChips = document.querySelector("[data-active-filter-chips]");
 const activeFilterCount = document.querySelector("[data-applied-filter-count]");
@@ -246,7 +246,7 @@ function applyAreaSelection(bounds) {
 
 function applyPolygonSelection(vertices) {
   setPolygonDrawing(false);
-  mapControlsDetails.open = false;
+  mapAnalysisDetails.open = false;
   applyAnalysisSelection(featuresWithinPolygon(allFeatures, vertices), {
     type: "polygon",
     label: "Drawn polygon",
@@ -356,7 +356,7 @@ function populatePrintReport() {
 
 function renderRegionSummary(regionSlug, regionName) {
   const summary = summarizeRegion(allFeatures, regionSlug);
-  mapControlsDetails.open = false;
+  mapAnalysisDetails.open = false;
   insightTitle.textContent = regionName;
   insightContent.replaceChildren();
 
@@ -549,7 +549,7 @@ nearbySearchButton.addEventListener("click", () => {
 selectAreaButton.addEventListener("click", () => {
   clearAnalysis();
   analysisStatus.textContent = "Drawing selection";
-  mapControlsDetails.open = false;
+  mapAnalysisDetails.open = false;
   mapController.beginAreaSelection(applyAreaSelection);
 });
 
@@ -557,7 +557,6 @@ selectPolygonButton.addEventListener("click", () => {
   clearAnalysis();
   setPolygonDrawing(true);
   analysisStatus.textContent = "Drawing polygon";
-  mapControlsDetails.open = false;
   mapController.beginPolygonSelection(applyPolygonSelection);
 });
 

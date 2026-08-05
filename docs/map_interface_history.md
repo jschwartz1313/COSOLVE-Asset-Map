@@ -1,8 +1,8 @@
 # Map interface history
 
-This note preserves the map control and filter presentation that existed before the
-August 5, 2026 interface simplification. The exact prior implementation remains in
-Git commit `39e8b95`.
+This note records the map control and filter presentation changes made on August 5,
+2026. The exact original implementation remains in Git commit `39e8b95`, and the
+short-lived consolidated-control version remains in commit `55924b6`.
 
 ## Previous interface
 
@@ -14,11 +14,17 @@ Git commit `39e8b95`.
   the filter panel. Once that panel was closed, the map did not show which filters
   were active or offer a way to remove one filter directly.
 
-## Current interface
+## Consolidated-control trial
 
 - **Layers**, **Analyze**, and **Save and share** are grouped under one **Map tools**
   menu. **Filters**, **Reset**, and **Legend** remain directly accessible.
 - Applied filters appear in a persistent strip over the map as labeled chips.
-  Each chip can remove its individual filter, and **Clear all** removes the complete
+
+## Current interface
+
+- The separate **Save / export**, **Analyze**, and **Layers** controls are restored.
+- Applied filters appear above the asset records in the **Public listings** panel,
+  keeping the map itself unobstructed.
+- Each chip can remove its individual filter, and **Clear all** removes the complete
   applied filter set.
 - The compact-screen **Filters** button also displays the number of applied filters.

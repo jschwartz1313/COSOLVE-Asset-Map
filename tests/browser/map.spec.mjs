@@ -5,13 +5,6 @@ const catalog = JSON.parse(
   readFileSync(new URL("../../data/virginia_real_assets.json", import.meta.url), "utf8"),
 );
 
-async function openMapTools(page) {
-  const controls = page.locator(".map-controls");
-  if ((await controls.getAttribute("open")) === null) {
-    await controls.locator(":scope > summary").click();
-  }
-}
-
 test("map layers toggle without moving the reset control", async ({ page }) => {
   await page.goto("/map/");
   await expect(page.locator(".result-row").first()).toBeVisible();
@@ -28,7 +21,7 @@ test("map layers toggle without moving the reset control", async ({ page }) => {
     /university\.svg$/,
   );
   await page.locator(".map-legend summary").click();
-  await page.locator(".map-controls summary").click();
+  await page.locator(".map-layers summary").click();
 
   const assetToggle = page.locator("#asset-layer-toggle");
   await expect(assetToggle).toBeChecked();
@@ -102,9 +95,10 @@ test("copy view link preserves the map position, filters, and layers", async ({
   await expect(page.locator(".result-row").first()).toBeVisible();
 
   await page.locator(".leaflet-control-zoom-in").click();
-  await page.locator(".map-controls summary").click();
+  await page.locator(".map-layers summary").click();
   await page.locator("#county-layer-toggle").check();
   await page.locator("#mpz-layer-toggle").check();
+  await page.locator(".map-actions summary").click();
   await page.locator("#copy-view-link").click();
   await expect(page.locator("#copy-view-link")).toHaveText("Link copied");
 
@@ -136,7 +130,7 @@ test("print view opens the browser print or PDF workflow", async ({ page }) => {
   });
   await page.goto("/map/");
   await expect(page.locator(".result-row").first()).toBeVisible();
-  await page.locator(".map-controls summary").click();
+  await page.locator(".map-actions summary").click();
   await page.locator("#print-view").click();
   await expect(page.locator("html")).toHaveAttribute("data-print-requested", "true");
   await expect(page.locator("#print-report-title")).toHaveText("Current map asset report");
@@ -212,6 +206,8 @@ test("active filters remain visible on the map and can be removed individually",
 
   const filterBar = page.locator("[data-active-filter-bar]");
   await expect(filterBar).toBeVisible();
+  await expect(page.locator("#asset-results-view > [data-active-filter-bar]")).toHaveCount(1);
+  await expect(page.locator(".map-stage [data-active-filter-bar]")).toHaveCount(0);
   await expect(filterBar.locator("[data-applied-filter-count]")).toHaveText("2");
   await expect(filterBar.locator(".active-filter-chip")).toHaveCount(2);
   await expect(filterBar).toContainText("Asset type: University");
@@ -306,7 +302,7 @@ test("analytical map tools expose quality, summaries, and saved basemaps", async
   await expect(clusterTooltip).not.toContainText("Infrastructure");
   await expect(clusterTooltip).not.toContainText("Operating environment");
 
-  await openMapTools(page);
+  await page.locator(".map-layers summary").click();
   await page.locator('input[name="map-basemap"][value="light"]').check();
   await expect
     .poll(async () =>
@@ -332,7 +328,7 @@ test("analytical map tools expose quality, summaries, and saved basemaps", async
   await expect(page.locator("[data-verification-legend]")).toBeVisible();
   await expect(page.locator("[data-precision-legend]")).toBeVisible();
 
-  await openMapTools(page);
+  await page.locator(".map-analysis summary").click();
   await page.locator("#summary-region").selectOption("hampton-roads");
   await page.locator("#show-region-summary").click();
   await expect(page.locator("#map-insight-panel")).toBeVisible();
@@ -344,14 +340,14 @@ test("analytical map tools expose quality, summaries, and saved basemaps", async
   await expect(page.locator("#asset-results-view")).toBeVisible();
   await expect(page.locator("#map-insight-panel")).toBeHidden();
 
-  await openMapTools(page);
+  await page.locator(".map-analysis summary").click();
   await page.locator("#select-extent").click();
   await expect(page.locator("#analysis-status")).toContainText("assets selected");
   await expect(page.locator("#export-area")).toBeEnabled();
   await page.locator("#clear-analysis").click();
   await expect(page.locator("#result-count")).toHaveText(fullResultCount);
 
-  await openMapTools(page);
+  await page.locator(".map-actions summary").click();
   await page.locator("#presentation-view").click();
   await expect(page.locator("body")).toHaveClass(/presentation-mode/);
   await expect(page.locator("#exit-presentation")).toBeVisible();
@@ -365,7 +361,7 @@ test("drawn area selection filters assets and enables export", async ({ page }) 
   await expect(page.locator(".result-row").first()).toBeVisible();
   const regionalTotal = Number(await page.locator("#result-count").textContent());
 
-  await openMapTools(page);
+  await page.locator(".map-analysis summary").click();
   await page.locator("#select-area").click();
   const mapBox = await page.locator("#map").boundingBox();
   if (!mapBox) throw new Error("Map did not render");
@@ -382,7 +378,7 @@ test("drawn area selection filters assets and enables export", async ({ page }) 
   expect(selectedCount).toBeGreaterThan(0);
   expect(selectedCount).toBeLessThanOrEqual(regionalTotal);
   await expect(page.locator("#export-area")).toBeEnabled();
-  await openMapTools(page);
+  await page.locator(".map-analysis summary").click();
   const downloadPromise = page.waitForEvent("download");
   await page.locator("#export-area").click();
   const download = await downloadPromise;
@@ -397,7 +393,7 @@ test("drawn polygon selects and exports only enclosed assets", async ({ context,
   await expect(page.locator(".result-row").first()).toBeVisible();
   const regionalTotal = Number(await page.locator("#result-count").textContent());
 
-  await openMapTools(page);
+  await page.locator(".map-analysis summary").click();
   await page.locator("#select-polygon").click();
   const mapBox = await page.locator("#map").boundingBox();
   if (!mapBox) throw new Error("Map did not render");
@@ -427,7 +423,6 @@ test("drawn polygon selects and exports only enclosed assets", async ({ context,
     }
     await page.waitForTimeout(150);
   }
-  await openMapTools(page);
   if (await page.locator("#finish-polygon").isVisible()) {
     await page.locator("#finish-polygon").click();
   }
@@ -438,14 +433,14 @@ test("drawn polygon selects and exports only enclosed assets", async ({ context,
   expect(selectedCount).toBeGreaterThan(0);
   expect(selectedCount).toBeLessThan(regionalTotal);
   await expect(page.locator("#export-area")).toBeEnabled();
-  await openMapTools(page);
+  await page.locator(".map-analysis summary").click();
   const downloadPromise = page.waitForEvent("download");
   await page.locator("#export-area").click();
   const download = await downloadPromise;
   const csv = readFileSync(await download.path(), "utf8").trim().split("\n");
   expect(csv).toHaveLength(selectedCount + 1);
 
-  await openMapTools(page);
+  await page.locator(".map-actions summary").click();
   await page.locator("#copy-view-link").click();
   const copiedUrl = await page.evaluate(() => navigator.clipboard.readText());
   expect(new URL(copiedUrl).searchParams.get("map_analysis")).toMatch(/^polygon\|/);
@@ -461,7 +456,7 @@ test("nearby search filters from the current map center and can be cleared", asy
   await page.goto("/map/?q=Adaptive%20Aerospace%20Group");
   await expect(page.locator(".asset-marker")).toHaveCount(1);
 
-  await openMapTools(page);
+  await page.locator(".map-analysis summary").click();
   await page.locator("#nearby-radius").selectOption("25");
   await page.locator("#nearby-search").click();
   await expect(page.locator("#analysis-status")).toContainText("within 25 miles");
