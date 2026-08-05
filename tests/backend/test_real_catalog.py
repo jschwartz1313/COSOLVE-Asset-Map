@@ -37,10 +37,10 @@ class RealCatalogFileTests(TestCase):
             )
         )
 
-    def test_catalog_has_at_least_300_real_source_backed_records(self):
+    def test_catalog_has_at_least_400_real_source_backed_records(self):
         catalog = self.load_catalog()
         records = catalog["records"]
-        self.assertGreaterEqual(len(records), 300)
+        self.assertGreaterEqual(len(records), 400)
         self.assertEqual(catalog["record_count"], len(records))
         self.assertGreaterEqual(len(catalog["relationships"]), 90)
         self.assertFalse(any(record["name"].startswith("Demo ") for record in records))
@@ -56,7 +56,42 @@ class RealCatalogFileTests(TestCase):
         self.assertEqual(airport_regions["Lynchburg Rgnl/Preston Glenn Fld"], "Lynchburg Region")
         self.assertEqual(airport_regions["Roanoke/Blacksburg Rgnl (Woodrum Fld)"], "Roanoke Valley")
         universities = [record for record in records if record["record_type"] == "university"]
-        self.assertGreaterEqual(len(universities), 18)
+        self.assertEqual(len(universities), 82)
+        self.assertTrue(
+            {
+                "Blue Ridge Community College",
+                "University of Mary Washington",
+                "Washington and Lee University",
+            }.issubset({record["name"] for record in universities})
+        )
+        self.assertTrue(
+            all(
+                record["location_precision"] == "site"
+                and record.get("address_line")
+                and record["latitude"] is not None
+                and record["longitude"] is not None
+                for record in universities
+            )
+        )
+        self.assertTrue(
+            all(
+                any("nces.ed.gov/ipeds" in item["url"] for item in record["sources"])
+                for record in universities
+            )
+        )
+        general_institutions = [
+            record
+            for record in universities
+            if record["provenance"] == "nces-ipeds-higher-education"
+        ]
+        self.assertEqual(len(general_institutions), 63)
+        self.assertTrue(
+            all(
+                "does not by itself indicate a documented unmanned-systems program"
+                in record["unmanned_systems_relevance"]
+                for record in general_institutions
+            )
+        )
         hampton_roads = [record for record in records if record["region"] == "Hampton Roads"]
         self.assertGreaterEqual(len(hampton_roads), 69)
         self.assertFalse(
@@ -115,7 +150,7 @@ class RealCatalogFileTests(TestCase):
         self.assertFalse(Asset.objects.filter(name__startswith="Demo ").exists())
         self.assertGreaterEqual(
             Asset.public.filter(record_type=Asset.RecordType.UNIVERSITY).count(),
-            18,
+            82,
         )
         self.assertTrue(
             Relationship.objects.filter(

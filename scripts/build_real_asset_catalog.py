@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """Build the checked-in Virginia real-asset catalog from public sources."""
 
+import csv
+import io
 import json
 import urllib.parse
 import urllib.request
+import zipfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -26,6 +29,15 @@ VIPC_TEST = (
     "systems-test-site-program/"
 )
 PORT_CAPABILITIES = "https://www.portofvirginia.com/gateway/capabilities/"
+IPEDS_DIRECTORY_ZIP = "https://nces.ed.gov/ipeds/datacenter/data/HD2024.zip"
+IPEDS_DIRECTORY_PAGE = "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+REGION_BOUNDARIES = ROOT / "static" / "data" / "virginia-regions.geojson"
+
+IPEDS_NAME_ALIASES = {
+    "University of Virginia-Main Campus": "University of Virginia",
+    "Virginia Polytechnic Institute and State University": "Virginia Tech",
+}
+REGION_FEATURES = json.loads(REGION_BOUNDARIES.read_text())["features"]
 
 SOURCES = {
     "vedp": ("VEDP: Unmanned Systems in Virginia", VEDP_UXS),
@@ -1510,6 +1522,16 @@ LOCATION_OVERRIDES = {
         "latitude": 36.849182,
         "longitude": -76.267977,
         "source": ("Norfolk State University", "https://www.nsu.edu/About"),
+    },
+    "Virginia Military Institute": {
+        "address_line": "319 Letcher Avenue",
+        "postal_code": "24450",
+        "latitude": 37.789600,
+        "longitude": -79.437067,
+        "source": (
+            "Virginia Military Institute map and directions",
+            "https://www.vmi.edu/about/our-location/map-and-directions/",
+        ),
     },
     "Norfolk State Tactical Autonomy Research Program": {
         "address_line": "700 Park Avenue",
@@ -4429,7 +4451,38 @@ def apply_location_override(record):
     return record
 
 
+def point_in_ring(longitude, latitude, ring):
+    inside = False
+    previous_x, previous_y = ring[-1]
+    for current_x, current_y in ring:
+        if (current_y > latitude) != (previous_y > latitude):
+            boundary_x = (previous_x - current_x) * (latitude - current_y) / (
+                previous_y - current_y
+            ) + current_x
+            if longitude < boundary_x:
+                inside = not inside
+        previous_x, previous_y = current_x, current_y
+    return inside
+
+
+def point_in_geometry(longitude, latitude, geometry):
+    polygons = (
+        [geometry["coordinates"]]
+        if geometry["type"] == "Polygon"
+        else geometry["coordinates"]
+    )
+    return any(
+        point_in_ring(longitude, latitude, polygon[0])
+        and not any(point_in_ring(longitude, latitude, hole) for hole in polygon[1:])
+        for polygon in polygons
+    )
+
+
 def region_for(latitude, longitude):
+    for feature in REGION_FEATURES:
+        if point_in_geometry(longitude, latitude, feature["geometry"]):
+            return feature["properties"]["region_name"]
+
     if longitude > -75.55:
         return "Eastern Shore"
     if latitude > 38.45 and longitude > -78.35:
@@ -4553,40 +4606,126 @@ def defense_records():
     return records
 
 
+def normalize_public_url(value):
+    value = value.strip()
+    if value.startswith("http://"):
+        return "https://" + value.removeprefix("http://")
+    if value.startswith("https://"):
+        return value
+    return "https://" + value
+
+
+def fetch_ipeds_directory():
+    request = urllib.request.Request(
+        IPEDS_DIRECTORY_ZIP,
+        headers={"User-Agent": "cosolve-uxs-map-catalog/1.0"},
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:  # noqa: S310
+        archive_bytes = response.read()
+    with zipfile.ZipFile(io.BytesIO(archive_bytes)) as archive:
+        csv_name = next(name for name in archive.namelist() if name.lower().endswith(".csv"))
+        with archive.open(csv_name) as raw_file:
+            text_file = io.TextIOWrapper(raw_file, encoding="utf-8-sig", newline="")
+            return list(csv.DictReader(text_file))
+
+
+def eligible_virginia_institutions():
+    institutions = []
+    for row in fetch_ipeds_directory():
+        if not (
+            row["STABBR"] == "VA"
+            and row["CYACTIVE"] == "1"
+            and row["DEGGRANT"] == "1"
+        ):
+            continue
+
+        name = IPEDS_NAME_ALIASES.get(row["INSTNM"], row["INSTNM"])
+        included_sector = row["CONTROL"] in {"1", "2"} or name == "ECPI University"
+        if not included_sector or name == "Eastern Virginia Medical School":
+            continue
+
+        row["catalog_name"] = name
+        institutions.append(row)
+    return institutions
+
+
+def institution_description(row):
+    if row["CONTROL"] == "1" and row["ICLEVEL"] == "2":
+        return "Public degree-granting community college serving Virginia students and employers."
+    if row["CONTROL"] == "1":
+        return "Public degree-granting college or university in Virginia."
+    if row["CONTROL"] == "2":
+        return "Private nonprofit degree-granting college or university in Virginia."
+    return "Private degree-granting university included in SCHEV statewide completion reporting."
+
+
 def university_records():
+    detailed_assets = {item[0]: item for item in UNIVERSITY_ASSETS}
     records = []
-    for name, place, region, description, source_key, _children in UNIVERSITY_ASSETS:
-        latitude, longitude = PLACES[place]
-        record_source = source(source_key)
+    for row in eligible_virginia_institutions():
+        name = row["catalog_name"]
+        detailed_asset = detailed_assets.get(name)
+        latitude = round(float(row["LATITUDE"]), 6)
+        longitude = round(float(row["LONGITUD"]), 6)
+        website_url = normalize_public_url(row["WEBADDR"])
+        ipeds_source = {
+            "title": "NCES IPEDS 2024 institutional directory",
+            "url": IPEDS_DIRECTORY_PAGE,
+        }
+        if detailed_asset:
+            _name, _place, _region, description, source_key, _children = detailed_asset
+            institution_source = source(source_key)
+            relevance = (
+                f"{name} is mapped at the institution level to connect its source-backed "
+                "unmanned-systems research, education, operations, facilities, and programs."
+            )
+            categories = ["Research and technical depth", "Workforce and talent"]
+            domains = ["Cross-domain autonomy"]
+            capabilities = [
+                "Autonomy and artificial intelligence",
+                "Systems engineering and integration",
+            ]
+            missions = ["Training and experimentation"]
+            provenance = "university-institution"
+        else:
+            description = institution_description(row)
+            institution_source = {
+                "title": f"{name} official website",
+                "url": website_url,
+            }
+            relevance = (
+                f"{name} is included as statewide higher-education and workforce infrastructure. "
+                "Inclusion identifies institutional capacity and does not by itself indicate a "
+                "documented unmanned-systems program."
+            )
+            categories = ["Workforce and talent"]
+            domains = []
+            capabilities = []
+            missions = []
+            provenance = "nces-ipeds-higher-education"
+
         records.append(
             apply_location_override(
                 {
                     "name": name,
                     "record_type": "university",
                     "short_description": description,
-                    "unmanned_systems_relevance": (
-                        f"{name} is mapped at the institution level to connect its source-backed "
-                        "unmanned-systems research, education, operations, facilities, and programs."
-                    ),
-                    "city": place,
+                    "unmanned_systems_relevance": relevance,
+                    "address_line": " ".join(row["ADDR"].split()),
+                    "city": row["CITY"].strip(),
                     "state": "VA",
                     "latitude": latitude,
                     "longitude": longitude,
-                    "location_precision": "locality",
-                    "region": region,
-                    "strategic_categories": [
-                        "Research and technical depth",
-                        "Workforce and talent",
-                    ],
-                    "platform_domains": ["Cross-domain autonomy"],
-                    "capabilities": [
-                        "Autonomy and artificial intelligence",
-                        "Systems engineering and integration",
-                    ],
-                    "missions": ["Training and experimentation"],
-                    "website_url": record_source["url"],
-                    "sources": [record_source],
-                    "provenance": "university-institution",
+                    "postal_code": row["ZIP"].strip(),
+                    "location_precision": "site",
+                    "region": region_for(latitude, longitude),
+                    "strategic_categories": categories,
+                    "platform_domains": domains,
+                    "capabilities": capabilities,
+                    "missions": missions,
+                    "website_url": website_url,
+                    "sources": [institution_source, ipeds_source],
+                    "provenance": provenance,
                 }
             )
         )
@@ -4681,8 +4820,10 @@ def main():
         "record_count": len(records),
         "methodology": (
             "Current operational public-use aviation facilities from the FAA feature service, "
-            "publicly listed installations from the Virginia Military Factbook, and a curated "
-            "set of source-backed ecosystem records. Specific street and site locations are "
+            "publicly listed installations from the Virginia Military Factbook, active Virginia "
+            "public and private nonprofit degree-granting institutions from the NCES IPEDS 2024 "
+            "directory (plus ECPI University), and a curated set of source-backed ecosystem "
+            "records. Specific street and site locations are "
             "anchored to official public address sources and geocoded against the U.S. Census "
             "address ranges or named-site map data; locality points are retained when the public "
             "record does not identify the operating department or facility."
