@@ -1,0 +1,498 @@
+/* Shared presentation-mode controls. The classic mode intentionally inherits the base UI. */
+.site-header {
+  display: grid;
+  grid-template-columns: minmax(210px, 1fr) auto minmax(430px, 1fr);
+  gap: 20px;
+}
+
+.primary-nav { justify-self: end; gap: 20px; }
+
+.appearance-switcher {
+  height: 36px;
+  padding: 3px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: stretch;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--surface);
+}
+
+.appearance-switcher button {
+  min-width: 60px;
+  padding: 0 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: var(--ink-muted);
+  background: transparent;
+  border: 0;
+  border-right: 1px solid var(--line);
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.appearance-switcher button:last-of-type { border-right: 0; }
+.appearance-switcher button:hover { color: var(--ink); }
+.appearance-switcher button[aria-pressed="true"] {
+  color: var(--ink);
+  background: var(--paper);
+  box-shadow: 0 1px 4px rgb(25 33 38 / 14%);
+}
+
+.theme-swatch {
+  width: 11px;
+  height: 11px;
+  flex: 0 0 11px;
+  border: 1px solid rgb(25 33 38 / 28%);
+  border-radius: 50%;
+}
+
+.swatch-classic { background: #fff; }
+.swatch-dark { background: #172127; }
+.swatch-color { background: #ef533f; box-shadow: 4px 0 0 #1e8ca7, -4px 0 0 #f1b72e; }
+.swatch-showcase { background: #0b4663; box-shadow: 0 0 0 2px #f17b50; }
+
+.theme-page-visual, .showcase-cover[hidden] { display: none; }
+
+/* Dark: a direct tonal counterpart to the current interface. */
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #eef2f0;
+  --ink-muted: #a9b3b0;
+  --paper: #151c20;
+  --surface: #0d1316;
+  --line: #303a3d;
+  --line-strong: #526065;
+  --brand: #f2664f;
+  --brand-dark: #ff927e;
+  --teal: #3db5ad;
+  --gold: #e0b44e;
+  --blue: #68a8d6;
+  --focus: #7cc5f5;
+  --shadow: 0 14px 34px rgb(0 0 0 / 38%);
+}
+
+html[data-theme="dark"] body,
+html[data-theme="dark"] .map-workspace { background: var(--surface); }
+html[data-theme="dark"] .brand-logo img { filter: invert(1) brightness(1.4); }
+html[data-theme="dark"] .appearance-switcher { background: #0a1013; }
+html[data-theme="dark"] .appearance-switcher button[aria-pressed="true"] { background: #273136; }
+html[data-theme="dark"] input,
+html[data-theme="dark"] select,
+html[data-theme="dark"] textarea { color-scheme: dark; }
+html[data-theme="dark"] .button.primary { color: #101619; }
+html[data-theme="dark"] .directory-row:hover,
+html[data-theme="dark"] .result-row:hover,
+html[data-theme="dark"] .result-row.is-selected,
+html[data-theme="dark"] .active-filter-chip:hover { background: #20292d; }
+html[data-theme="dark"] .active-filter-bar,
+html[data-theme="dark"] .map-analysis-options button { background: #10171a; }
+html[data-theme="dark"] .form-alert { color: #ffc0b4; background: #321b18; }
+html[data-theme="dark"] .type-pill { filter: saturate(.86) brightness(.92); }
+html[data-theme="dark"] .tag-list span { background: #10171a; }
+html[data-theme="dark"] #map { background: #131d22; }
+html[data-theme="dark"] #map .leaflet-tile-pane {
+  filter: invert(.88) hue-rotate(175deg) brightness(.72) contrast(.92) saturate(.7);
+}
+html[data-theme="dark"] .map-layers,
+html[data-theme="dark"] .map-actions,
+html[data-theme="dark"] .map-analysis,
+html[data-theme="dark"] .map-legend,
+html[data-theme="dark"] .map-source-disclosure,
+html[data-theme="dark"] .leaflet-control-zoom a,
+html[data-theme="dark"] .leaflet-popup-content-wrapper,
+html[data-theme="dark"] .leaflet-popup-tip { color: var(--ink); background: rgb(21 28 32 / 97%); }
+html[data-theme="dark"] .leaflet-control-attribution { color: #b5c0bd; background: rgb(14 20 23 / 90%); }
+html[data-theme="dark"] .leaflet-control-attribution a { color: #d8e1de; }
+html[data-theme="dark"] .composition-cluster { color: var(--ink); background: #182126; border-color: #9ba8ac; }
+html[data-theme="dark"] .region-map-label,
+html[data-theme="dark"] .asset-search-label { color: var(--ink); background: rgb(20 28 32 / 94%); }
+html[data-theme="dark"] .site-footer { background: #0a1013; }
+
+/* Color: energetic atlas styling while preserving the same information architecture. */
+html[data-theme="color"] {
+  --ink: #17233b;
+  --ink-muted: #57627a;
+  --paper: #ffffff;
+  --surface: #eef3fa;
+  --line: #ccd6e6;
+  --line-strong: #91a3bb;
+  --brand: #e64f3a;
+  --brand-dark: #a92e26;
+  --teal: #078b8f;
+  --gold: #c98b00;
+  --blue: #2459bd;
+  --focus: #164fc0;
+  --shadow: 0 14px 34px rgb(31 60 104 / 18%);
+}
+
+html[data-theme="color"] .site-header { border-bottom: 4px solid #e64f3a; }
+html[data-theme="color"] .site-header::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  right: 50%;
+  bottom: -4px;
+  height: 4px;
+  background: #f2b72b;
+  box-shadow: 25vw 0 #188ead, 50vw 0 #3f8154;
+  pointer-events: none;
+}
+html[data-theme="color"] .appearance-switcher { background: #edf2fa; border-color: #aebed2; }
+html[data-theme="color"] .appearance-switcher button[aria-pressed="true"] { box-shadow: inset 0 -3px #e64f3a; }
+html[data-theme="color"] .theme-page-visual {
+  height: 112px;
+  display: block;
+  background-color: #e9f1f6;
+  background-image: url("../img/themes/color-virginia-atlas.webp");
+  background-position: center 46%;
+  background-size: cover;
+  border-bottom: 6px solid #f2b72b;
+}
+html[data-theme="color"] body.map-page .theme-page-visual { display: none; }
+html[data-theme="color"] .eyebrow { color: #d84633; }
+html[data-theme="color"] .button.primary { box-shadow: 4px 4px 0 #17233b; }
+html[data-theme="color"] .button.primary:hover { transform: translate(-1px, -1px); box-shadow: 5px 5px 0 #17233b; }
+html[data-theme="color"] .directory-filters { background: #fff8d9; border-right: 5px solid #f2b72b; }
+html[data-theme="color"] .directory-list { border-top: 4px solid #2459bd; }
+html[data-theme="color"] .directory-row { border-left: 4px solid transparent; }
+html[data-theme="color"] .directory-row:has(.type-university) { border-left-color: #b24368; }
+html[data-theme="color"] .directory-row:has(.type-organization) { border-left-color: #2459bd; }
+html[data-theme="color"] .directory-row:has(.type-facility) { border-left-color: #078b8f; }
+html[data-theme="color"] .directory-row:has(.type-program) { border-left-color: #d69b11; }
+html[data-theme="color"] .directory-row:has(.type-infrastructure) { border-left-color: #e64f3a; }
+html[data-theme="color"] .directory-row:has(.type-operating-environment) { border-left-color: #7354a3; }
+html[data-theme="color"] .directory-row:hover { background: #f1f7ff; }
+html[data-theme="color"] .filters-panel { background: #fff9e8; border-right: 4px solid #f2b72b; }
+html[data-theme="color"] .panel-heading {
+  margin: -18px -16px 17px;
+  padding: 17px 16px 15px;
+  color: white;
+  background-color: #2459bd;
+  background-image: url("../img/themes/color-virginia-atlas.webp");
+  background-position: 18% 52%;
+  background-size: 620px auto;
+  text-shadow: 0 1px 2px rgb(23 35 59 / 65%);
+}
+html[data-theme="color"] .panel-heading .eyebrow { color: #ffe47a; }
+html[data-theme="color"] .results-panel { border-left: 4px solid #188ead; }
+html[data-theme="color"] .results-heading {
+  color: white;
+  background-color: #164a67;
+  background-image: url("../img/themes/color-virginia-atlas.webp");
+  background-position: 92% 58%;
+  background-size: 720px auto;
+  border-bottom: 4px solid #188ead;
+  text-shadow: 0 1px 2px rgb(23 35 59 / 70%);
+}
+html[data-theme="color"] .results-heading .eyebrow { color: #ffe267; }
+html[data-theme="color"] .results-heading .text-link { color: white; }
+html[data-theme="color"] .active-filter-bar { background: #e7f6f8; }
+html[data-theme="color"] .active-filter-chip { border-color: #70b7c3; box-shadow: 2px 2px 0 #70b7c3; }
+html[data-theme="color"] .result-row { border-left: 4px solid transparent; }
+html[data-theme="color"] .result-row:has(.type-university) { border-left-color: #b24368; }
+html[data-theme="color"] .result-row:has(.type-organization) { border-left-color: #2459bd; }
+html[data-theme="color"] .result-row:has(.type-facility) { border-left-color: #078b8f; }
+html[data-theme="color"] .result-row:has(.type-program) { border-left-color: #d69b11; }
+html[data-theme="color"] .result-row:has(.type-infrastructure) { border-left-color: #e64f3a; }
+html[data-theme="color"] .result-row:has(.type-operating-environment) { border-left-color: #7354a3; }
+html[data-theme="color"] .result-row:hover,
+html[data-theme="color"] .result-row.is-selected { background: #edf6ff; }
+html[data-theme="color"] .map-layers,
+html[data-theme="color"] .map-actions,
+html[data-theme="color"] .map-analysis { border-top: 4px solid #f2b72b; }
+html[data-theme="color"] .map-legend { border-top: 4px solid #e64f3a; }
+html[data-theme="color"] #map .leaflet-tile-pane { filter: saturate(1.08) contrast(1.02); }
+html[data-theme="color"] .composition-cluster { border-color: #17233b; box-shadow: 4px 4px 0 rgb(23 35 59 / 30%); }
+html[data-theme="color"] .detail-header { border-bottom: 5px solid #2459bd; }
+html[data-theme="color"] .verification-block { border-left-color: #f2b72b; }
+html[data-theme="color"] .detail-sidebar section { border-top: 5px solid #188ead; }
+html[data-theme="color"] .data-stats div:nth-child(1) { background: #ffe7df; }
+html[data-theme="color"] .data-stats div:nth-child(2) { background: #ddf3f5; }
+html[data-theme="color"] .data-stats div:nth-child(3) { background: #fff1bf; }
+html[data-theme="color"] .region-column:first-child { border-top-color: #e64f3a; }
+html[data-theme="color"] .region-column:last-child { border-top-color: #188ead; }
+html[data-theme="color"] .site-footer { border-top: 5px solid #2459bd; }
+
+/* Showcase: cinematic cover, editorial imagery, stronger motion, same functional data UI. */
+html[data-theme="showcase"] {
+  color-scheme: dark;
+  --ink: #f4f7f5;
+  --ink-muted: #afc0c5;
+  --paper: #0d202a;
+  --surface: #07151c;
+  --line: #29434e;
+  --line-strong: #50707d;
+  --brand: #ff6b4a;
+  --brand-dark: #ff9c83;
+  --teal: #33d0c8;
+  --gold: #ffd05b;
+  --blue: #69b8ee;
+  --focus: #78dff6;
+  --shadow: 0 20px 50px rgb(0 0 0 / 46%);
+}
+
+html[data-theme="showcase"] body { background: #07151c; }
+html[data-theme="showcase"] .site-header {
+  color: white;
+  background-color: #071823;
+  background-image: url("../img/themes/showcase-virginia-autonomy.webp");
+  background-position: center 43%;
+  background-size: cover;
+  background-blend-mode: multiply;
+  border-bottom: 2px solid #ff6b4a;
+}
+html[data-theme="showcase"] .brand-logo img { filter: invert(1) brightness(1.5); }
+html[data-theme="showcase"] .brand small,
+html[data-theme="showcase"] .primary-nav a,
+html[data-theme="showcase"] .nav-logout button { color: #d4e1e4; }
+html[data-theme="showcase"] .primary-nav a[aria-current="page"] { color: white; }
+html[data-theme="showcase"] .appearance-switcher { background: rgb(5 19 26 / 78%); border-color: #476a79; }
+html[data-theme="showcase"] .appearance-switcher button { color: #c8d8dc; border-color: #34515d; }
+html[data-theme="showcase"] .appearance-switcher button[aria-pressed="true"] { color: white; background: #174155; box-shadow: inset 0 -3px #ff6b4a; }
+html[data-theme="showcase"] .theme-page-visual {
+  height: 220px;
+  display: block;
+  background-color: #0a2432;
+  background-image: url("../img/themes/showcase-virginia-autonomy.webp");
+  background-position: center 52%;
+  background-size: cover;
+  border-bottom: 5px solid #ff6b4a;
+  animation: showcaseBandIn 600ms ease-out both;
+}
+html[data-theme="showcase"] body.map-page .theme-page-visual,
+html[data-theme="showcase"] body.asset-detail-page .theme-page-visual { display: none; }
+html[data-theme="showcase"] input,
+html[data-theme="showcase"] select,
+html[data-theme="showcase"] textarea { color-scheme: dark; }
+html[data-theme="showcase"] .button.primary { color: #07151c; box-shadow: 4px 4px 0 #33d0c8; }
+html[data-theme="showcase"] .button.secondary { background: #132c37; }
+html[data-theme="showcase"] .eyebrow { color: #ff8a6f; }
+html[data-theme="showcase"] .site-footer { background: #041015; border-top: 4px solid #33d0c8; }
+
+.showcase-cover {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  min-width: 320px;
+  min-height: 100vh;
+  padding: 80px clamp(28px, 7vw, 120px) 38px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  color: white;
+  background-color: #071823;
+  background-image: url("../img/themes/showcase-virginia-autonomy.webp");
+  background-position: center;
+  background-size: cover;
+  isolation: isolate;
+}
+.showcase-cover::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  z-index: -1;
+  width: 7px;
+  background: #ff6b4a;
+  box-shadow: 7px 0 #ffd05b, 14px 0 #33d0c8;
+}
+.showcase-cover-copy { width: min(720px, 58vw); align-self: center; animation: showcaseCopyIn 700ms 120ms ease-out both; }
+.showcase-kicker { display: block; margin-bottom: 20px; color: #91e7e2; font-size: 13px; font-weight: 850; text-transform: uppercase; }
+.showcase-cover h1 { max-width: 680px; margin: 0 0 24px; font-size: 72px; line-height: .98; }
+.showcase-cover-copy > p { display: flex; align-items: center; gap: 13px; margin-bottom: 34px; color: #e4ecee; font-size: 14px; font-weight: 800; text-transform: uppercase; }
+.showcase-cover-copy > p i { width: 5px; height: 5px; background: #ff6b4a; transform: rotate(45deg); }
+.showcase-enter { min-height: 48px; padding: 11px 20px; color: #06141b; background: #ffd05b; border: 0; border-left: 6px solid #ff6b4a; cursor: pointer; font-weight: 850; }
+.showcase-enter:hover { color: white; background: #174c62; }
+.showcase-domain-rail { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid rgb(255 255 255 / 45%); animation: showcaseCopyIn 700ms 280ms ease-out both; }
+.showcase-domain-rail span { padding: 18px 18px 0 0; display: flex; gap: 10px; color: #e7eff1; font-size: 12px; font-weight: 750; text-transform: uppercase; }
+.showcase-domain-rail b { color: #ffd05b; }
+body.showcase-cover-open { overflow: hidden; }
+
+html[data-theme="showcase"] .map-workspace { grid-template-columns: 292px minmax(360px, 1fr) 338px; background: #07151c; }
+html[data-theme="showcase"] .filters-panel,
+html[data-theme="showcase"] .results-panel { background: rgb(9 28 37 / 97%); }
+html[data-theme="showcase"] .filters-panel { border-right: 3px solid #33d0c8; }
+html[data-theme="showcase"] .panel-heading {
+  min-height: 112px;
+  margin: -18px -16px 17px;
+  padding: 45px 16px 14px;
+  align-items: end;
+  color: white;
+  background-color: #0d3244;
+  background-image: url("../img/themes/color-virginia-atlas.webp");
+  background-position: 28% 72%;
+  background-size: 760px auto;
+  background-blend-mode: multiply;
+  border-bottom: 4px solid #ffd05b;
+}
+html[data-theme="showcase"] .panel-heading .eyebrow { color: #ffd05b; }
+html[data-theme="showcase"] #asset-filters .filter-actions { background: #091c25; }
+html[data-theme="showcase"] .results-panel { border-left: 3px solid #ff6b4a; }
+html[data-theme="showcase"] .results-heading {
+  min-height: 94px;
+  align-items: end;
+  color: white;
+  background-color: #092837;
+  background-image: url("../img/themes/showcase-virginia-autonomy.webp");
+  background-position: 72% 56%;
+  background-size: 700px auto;
+  background-blend-mode: multiply;
+  border-bottom: 4px solid #ff6b4a;
+}
+html[data-theme="showcase"] .active-filter-bar { background: #0d2631; }
+html[data-theme="showcase"] .active-filter-chip { background: #143641; border-color: #3d6979; }
+html[data-theme="showcase"] .result-row { background: #0d202a; border-left: 4px solid transparent; }
+html[data-theme="showcase"] .result-row:has(.type-university) { border-left-color: #d75a83; }
+html[data-theme="showcase"] .result-row:has(.type-organization) { border-left-color: #69b8ee; }
+html[data-theme="showcase"] .result-row:has(.type-facility) { border-left-color: #33d0c8; }
+html[data-theme="showcase"] .result-row:has(.type-program) { border-left-color: #ffd05b; }
+html[data-theme="showcase"] .result-row:has(.type-infrastructure) { border-left-color: #ff6b4a; }
+html[data-theme="showcase"] .result-row:has(.type-operating-environment) { border-left-color: #a58ae3; }
+html[data-theme="showcase"] .result-row:hover,
+html[data-theme="showcase"] .result-row.is-selected { background: #17313c; }
+html[data-theme="showcase"] #map { background: #0a202a; }
+html[data-theme="showcase"] #map .leaflet-tile-pane { filter: saturate(1.26) contrast(1.06) brightness(.84); }
+html[data-theme="showcase"] .map-layers,
+html[data-theme="showcase"] .map-actions,
+html[data-theme="showcase"] .map-analysis,
+html[data-theme="showcase"] .map-legend,
+html[data-theme="showcase"] .map-source-disclosure {
+  color: var(--ink);
+  background: rgb(8 28 37 / 94%);
+  border-color: #426573;
+  box-shadow: 0 10px 28px rgb(0 0 0 / 30%);
+  backdrop-filter: blur(8px);
+}
+html[data-theme="showcase"] .map-layers { border-top: 3px solid #33d0c8; }
+html[data-theme="showcase"] .map-actions { border-top: 3px solid #ff6b4a; }
+html[data-theme="showcase"] .map-analysis { border-top: 3px solid #ffd05b; }
+html[data-theme="showcase"] .map-legend { border-top: 3px solid #69b8ee; }
+html[data-theme="showcase"] .map-analysis-options button { color: #bfe8f3; background: #0c2631; }
+html[data-theme="showcase"] .leaflet-control-zoom a,
+html[data-theme="showcase"] .leaflet-popup-content-wrapper,
+html[data-theme="showcase"] .leaflet-popup-tip { color: var(--ink); background: #0c232d; }
+html[data-theme="showcase"] .leaflet-control-attribution { color: #c8d7db; background: rgb(5 18 24 / 86%); }
+html[data-theme="showcase"] .leaflet-control-attribution a { color: white; }
+html[data-theme="showcase"] .composition-cluster { color: white; background: #0a2835; border-color: #ffd05b; box-shadow: 0 0 0 3px rgb(51 208 200 / 28%), 0 4px 13px rgb(0 0 0 / 44%); }
+html[data-theme="showcase"] .asset-marker { border-color: #061820; box-shadow: 0 0 0 2px rgb(255 255 255 / 84%), 0 4px 12px rgb(0 0 0 / 52%); }
+html[data-theme="showcase"] .asset-marker-shell:hover .asset-marker { transform: scale(1.24) rotate(3deg); }
+html[data-theme="showcase"] .region-map-label,
+html[data-theme="showcase"] .asset-search-label { color: white; background: rgb(6 28 38 / 93%); border-color: #5f8390; }
+
+html[data-theme="showcase"] .directory-filters { background: #091c25; border-right: 4px solid #33d0c8; }
+html[data-theme="showcase"] .directory-list { border-top: 4px solid #ff6b4a; }
+html[data-theme="showcase"] .directory-row { border-left: 3px solid transparent; }
+html[data-theme="showcase"] .directory-row:hover { background: #132d38; }
+html[data-theme="showcase"] .asset-detail-page .detail-page { width: min(1280px, calc(100% - 40px)); }
+html[data-theme="showcase"] .asset-detail-page .detail-header {
+  min-height: 390px;
+  padding: 150px 36px 34px;
+  align-items: end;
+  color: white;
+  background-color: #092431;
+  background-image: url("../img/themes/showcase-virginia-autonomy.webp");
+  background-position: center;
+  background-size: cover;
+  border: 0;
+  border-bottom: 7px solid #ff6b4a;
+  animation: showcaseBandIn 600ms ease-out both;
+}
+html[data-theme="showcase"] .asset-detail-page .detail-header .lead,
+html[data-theme="showcase"] .asset-detail-page .verification-block span,
+html[data-theme="showcase"] .asset-detail-page .verification-block small { color: #e4edef; }
+html[data-theme="showcase"] .asset-detail-page .verification-block { padding: 16px; background: rgb(4 19 26 / 78%); border-left-color: #ffd05b; }
+html[data-theme="showcase"] .detail-sidebar section,
+html[data-theme="showcase"] .methodology-panel { background: #0d202a; border-color: #36525e; border-top: 4px solid #33d0c8; }
+html[data-theme="showcase"] .tag-list span { color: #d8e7ea; background: #102c37; border-color: #36525e; }
+html[data-theme="showcase"] .data-stats { background: #0a202a; border-block: 4px solid #33d0c8; }
+html[data-theme="showcase"] .data-stats div:nth-child(2) { background: #102e3a; }
+html[data-theme="showcase"] .page-heading h1 { font-size: 52px; }
+html[data-theme="showcase"] .region-column:first-child { border-top-color: #33d0c8; }
+html[data-theme="showcase"] .region-column:last-child { border-top-color: #ff6b4a; }
+
+@keyframes showcaseCopyIn {
+  from { opacity: 0; transform: translateY(26px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes showcaseBandIn {
+  from { opacity: .35; background-position-y: 66%; }
+  to { opacity: 1; background-position-y: 52%; }
+}
+
+@media (max-width: 1180px) {
+  .site-header { grid-template-columns: minmax(150px, 1fr) auto minmax(360px, 1fr); gap: 12px; }
+  .primary-nav { gap: 14px; }
+  .appearance-switcher button { min-width: 38px; padding-inline: 7px; }
+  .appearance-switcher button > span:last-child { display: none; }
+  html[data-theme="showcase"] .map-workspace { grid-template-columns: 260px minmax(340px, 1fr) 304px; }
+}
+
+@media (max-width: 900px) {
+  .site-header { display: flex; gap: 14px; }
+  .appearance-switcher button { min-width: 48px; }
+  .primary-nav { margin-left: auto; }
+  html[data-theme="showcase"] .map-workspace { grid-template-columns: minmax(0, 1fr) 310px; }
+  .showcase-cover { padding: 62px 34px 30px; background-position: 58% center; }
+  .showcase-cover-copy { width: min(640px, 76vw); }
+  .showcase-cover h1 { font-size: 54px; }
+}
+
+@media (max-width: 650px) {
+  :root { --header-height: 146px; }
+  .site-header {
+    height: var(--header-height);
+    padding: 0 12px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 48px 46px 52px;
+    gap: 0;
+  }
+  .brand { grid-row: 1; }
+  .appearance-switcher {
+    grid-row: 2;
+    width: min(100%, 340px);
+    height: 38px;
+    justify-self: center;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .appearance-switcher button { min-width: 0; }
+  .appearance-switcher button > span:last-child { display: inline; }
+  .primary-nav {
+    grid-row: 3;
+    width: 100%;
+    margin-left: 0;
+    justify-content: space-between;
+    gap: 14px;
+    overflow-x: auto;
+    border-top: 1px solid var(--line);
+  }
+  .primary-nav a, .nav-logout { flex: 0 0 auto; }
+  .primary-nav a, .nav-logout button { font-size: 11px; }
+  html[data-theme="color"] .theme-page-visual { height: 82px; }
+  html[data-theme="showcase"] .theme-page-visual { height: 130px; }
+  .showcase-cover { padding: 48px 24px 24px; background-position: 63% center; }
+  .showcase-cover-copy { width: 92%; align-self: end; margin-bottom: 46px; }
+  .showcase-cover h1 { font-size: 42px; }
+  .showcase-kicker { font-size: 11px; }
+  .showcase-cover-copy > p { flex-wrap: wrap; gap: 9px; font-size: 11px; }
+  .showcase-domain-rail { grid-template-columns: 1fr 1fr; }
+  .showcase-domain-rail span { padding-top: 10px; font-size: 9px; }
+  html[data-theme="showcase"] .map-workspace { grid-template-columns: 1fr; }
+  html[data-theme="showcase"] .asset-detail-page .detail-header { min-height: 360px; padding: 130px 20px 24px; }
+  html[data-theme="showcase"] .page-heading h1 { font-size: 38px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .showcase-cover-copy, .showcase-domain-rail,
+  html[data-theme="showcase"] .theme-page-visual,
+  html[data-theme="showcase"] .asset-detail-page .detail-header { animation: none; }
+}
+
+@media print {
+  .appearance-switcher, .theme-page-visual, .showcase-cover { display: none !important; }
+  html[data-theme] { color-scheme: light; --ink: #192126; --ink-muted: #5c686f; --paper: #fff; --surface: #f3f5f4; --line: #d8deda; --line-strong: #bbc6c0; }
+  html[data-theme] #map .leaflet-tile-pane { filter: none; }
+}

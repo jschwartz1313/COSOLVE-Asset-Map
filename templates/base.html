@@ -1,19 +1,32 @@
 {% load static %}
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="classic">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{% block meta_description %}Explore the unmanned and autonomous systems ecosystem in {{ public_scope_name }} through the COSOLVE asset map and directory.{% endblock %}">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#ffffff" id="theme-color-meta">
   <title>{% block title %}COSOLVE Asset Map{% endblock %}</title>
+  <script>
+    (() => {
+      const allowedThemes = ["classic", "dark", "color", "showcase"];
+      try {
+        const savedTheme = localStorage.getItem("cosolve-display-mode");
+        if (allowedThemes.includes(savedTheme)) document.documentElement.dataset.theme = savedTheme;
+      } catch (error) {
+        document.documentElement.dataset.theme = "classic";
+      }
+    })();
+  </script>
   <link rel="icon" type="image/png" href="{% static 'img/cosolve-logo-black.png' %}">
   <link rel="apple-touch-icon" href="{% static 'img/cosolve-logo-black.png' %}">
   <link rel="stylesheet" href="{% static 'css/tokens.css' %}?v=20260717">
   <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20260731-1">
   {% block extra_css %}{% endblock %}
+  <link rel="stylesheet" href="{% static 'css/themes.css' %}?v=20260805-1">
+  <script type="module" src="{% static 'js/theme-switcher.js' %}?v=20260805-1"></script>
 </head>
-<body>
+<body class="{% block body_class %}{% endblock %}">
   <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="{% url 'core:map' %}" aria-label="COSOLVE asset map home">
@@ -22,6 +35,21 @@
       </span>
       <small>{{ public_scope_name }} Asset Map</small>
     </a>
+    <div class="appearance-switcher" role="group" aria-label="Site appearance">
+      <button type="button" data-theme-choice="classic" aria-pressed="true" title="Current view">
+        <span class="theme-swatch swatch-classic" aria-hidden="true"></span><span>Current</span>
+      </button>
+      <button type="button" data-theme-choice="dark" aria-pressed="false" title="Dark view">
+        <span class="theme-swatch swatch-dark" aria-hidden="true"></span><span>Dark</span>
+      </button>
+      <button type="button" data-theme-choice="color" aria-pressed="false" title="Color view">
+        <span class="theme-swatch swatch-color" aria-hidden="true"></span><span>Color</span>
+      </button>
+      <button type="button" data-theme-choice="showcase" aria-pressed="false" title="Showcase view">
+        <span class="theme-swatch swatch-showcase" aria-hidden="true"></span><span>Showcase</span>
+      </button>
+      <span class="visually-hidden" data-theme-status role="status" aria-live="polite"></span>
+    </div>
     <nav class="primary-nav" aria-label="Primary navigation">
       <a href="{% url 'core:map' %}" {% if request.resolver_match.url_name == 'map' or request.resolver_match.url_name == 'home' %}aria-current="page"{% endif %}>Map</a>
       <a href="{% url 'core:directory' %}" {% if request.resolver_match.url_name == 'directory' or request.resolver_match.url_name == 'asset-detail' or request.resolver_match.url_name == 'asset-suggest-update' %}aria-current="page"{% endif %}>Directory</a>
@@ -36,6 +64,21 @@
       {% endif %}
     </nav>
   </header>
+  <div class="theme-page-visual" aria-hidden="true"></div>
+  <section class="showcase-cover" data-showcase-cover role="dialog" aria-modal="true" aria-labelledby="showcase-cover-title" hidden>
+    <div class="showcase-cover-copy">
+      <span class="showcase-kicker">COSOLVE Geographic Asset Intelligence</span>
+      <h1 id="showcase-cover-title">Virginia Unmanned Systems Asset Map</h1>
+      <p>Air <i></i> Land <i></i> Maritime <i></i> Space</p>
+      <button class="showcase-enter" type="button" data-showcase-enter>Enter the asset map</button>
+    </div>
+    <div class="showcase-domain-rail" aria-hidden="true">
+      <span><b>01</b> Air systems</span>
+      <span><b>02</b> Ground autonomy</span>
+      <span><b>03</b> Maritime systems</span>
+      <span><b>04</b> Space infrastructure</span>
+    </div>
+  </section>
   {% if messages %}
     <div class="messages" aria-live="polite">
       {% for message in messages %}<div class="message {{ message.tags }}">{{ message }}</div>{% endfor %}
