@@ -1,5 +1,9 @@
 import { fetchAssets } from "./api.js?v=20260731";
-import { bindFilterDrawer, bindFilterIndicators } from "./filters.js?v=20260722-3";
+import {
+  bindFilterDrawer,
+  bindFilterIndicators,
+  withoutFilterValue,
+} from "./filters.js?v=20260805-1";
 import {
   downloadFeatureCsv,
   featuresWithinBounds,
@@ -58,7 +62,12 @@ const clearAnalysisButton = document.querySelector("#clear-analysis");
 const analysisStatus = document.querySelector("#analysis-status");
 const summaryRegion = document.querySelector("#summary-region");
 const showRegionSummaryButton = document.querySelector("#show-region-summary");
-const mapAnalysisDetails = document.querySelector(".map-analysis");
+const mapControlsDetails = document.querySelector(".map-controls");
+const activeFilterBar = document.querySelector("[data-active-filter-bar]");
+const activeFilterChips = document.querySelector("[data-active-filter-chips]");
+const activeFilterCount = document.querySelector("[data-applied-filter-count]");
+const toolbarFilterCount = document.querySelector("[data-toolbar-filter-count]");
+const clearActiveFiltersButton = document.querySelector("[data-clear-active-filters]");
 const resultsPanel = document.querySelector("#map-results-panel");
 const assetResultsView = document.querySelector("#asset-results-view");
 const assetResultsTitle = document.querySelector("#asset-results-title");
@@ -237,7 +246,7 @@ function applyAreaSelection(bounds) {
 
 function applyPolygonSelection(vertices) {
   setPolygonDrawing(false);
-  mapAnalysisDetails.open = false;
+  mapControlsDetails.open = false;
   applyAnalysisSelection(featuresWithinPolygon(allFeatures, vertices), {
     type: "polygon",
     label: "Drawn polygon",
@@ -263,22 +272,62 @@ function restoreAnalysis(state) {
   }
 }
 
+function filterDescription(key, value) {
+  const fields = [...form.querySelectorAll(`[name="${CSS.escape(key)}"]`)];
+  const field = fields.find((candidate) => candidate.value === value) || fields[0];
+  const fallbackLabel = key.replaceAll("_", " ");
+  if (!field) return `${fallbackLabel}: ${value}`;
+
+  if (field.type === "checkbox" || field.type === "radio") {
+    const details = field.closest("details");
+    const summary = details?.querySelector(":scope > summary");
+    const groupLabel = summary?.childNodes[0]?.textContent?.trim() || fallbackLabel;
+    const valueLabel = field.closest("label")?.querySelector("span")?.textContent?.trim() || value;
+    return `${groupLabel}: ${valueLabel}`;
+  }
+
+  const groupLabel = field.closest("label")?.querySelector(":scope > span")?.textContent?.trim()
+    || fallbackLabel;
+  const displayValue = field.tagName === "SELECT"
+    ? [...field.options].find((option) => option.value === value)?.textContent || value
+    : value;
+  return `${groupLabel}: ${displayValue}`;
+}
+
+function renderActiveFilters() {
+  const entries = [...activeFilterParams];
+  activeFilterBar.hidden = entries.length === 0;
+  activeFilterCount.textContent = String(entries.length);
+  toolbarFilterCount.textContent = String(entries.length);
+  toolbarFilterCount.hidden = entries.length === 0;
+  activeFilterChips.replaceChildren();
+
+  for (const [key, value] of entries) {
+    const description = filterDescription(key, value);
+    const chip = document.createElement("button");
+    chip.type = "button";
+    chip.className = "active-filter-chip";
+    chip.setAttribute("aria-label", `Remove ${description} filter`);
+    chip.append(document.createTextNode(description));
+    const removeIcon = document.createElement("span");
+    removeIcon.setAttribute("aria-hidden", "true");
+    removeIcon.textContent = "×";
+    chip.append(removeIcon);
+    chip.addEventListener("click", () => {
+      const next = withoutFilterValue(activeFilterParams, key, value);
+      hydrateForm(form, next);
+      updateFilterIndicators();
+      load(next);
+    });
+    activeFilterChips.append(chip);
+  }
+}
+
 function selectedFilterSummary() {
   if (!activeFilterParams.toString()) return "No catalog filters applied";
-  const labels = [];
-  for (const [key, value] of activeFilterParams) {
-    const field = form.querySelector(`[name="${CSS.escape(key)}"]`);
-    const label = field?.closest("label")?.textContent?.trim() || key.replaceAll("_", " ");
-    let displayValue = value;
-    if (field?.tagName === "SELECT") {
-      displayValue =
-        [...field.options].find((option) => option.value === value)?.textContent || value;
-    } else if (field?.type === "checkbox" || field?.type === "radio") {
-      displayValue = field.closest("label")?.textContent?.trim() || value;
-    }
-    labels.push(`${label}: ${displayValue}`);
-  }
-  return labels.join(" · ");
+  return [...activeFilterParams]
+    .map(([key, value]) => filterDescription(key, value))
+    .join(" · ");
 }
 
 function populatePrintReport() {
@@ -307,7 +356,7 @@ function populatePrintReport() {
 
 function renderRegionSummary(regionSlug, regionName) {
   const summary = summarizeRegion(allFeatures, regionSlug);
-  mapAnalysisDetails.open = false;
+  mapControlsDetails.open = false;
   insightTitle.textContent = regionName;
   insightContent.replaceChildren();
 
@@ -500,7 +549,7 @@ nearbySearchButton.addEventListener("click", () => {
 selectAreaButton.addEventListener("click", () => {
   clearAnalysis();
   analysisStatus.textContent = "Drawing selection";
-  mapAnalysisDetails.open = false;
+  mapControlsDetails.open = false;
   mapController.beginAreaSelection(applyAreaSelection);
 });
 
@@ -508,6 +557,7 @@ selectPolygonButton.addEventListener("click", () => {
   clearAnalysis();
   setPolygonDrawing(true);
   analysisStatus.textContent = "Drawing polygon";
+  mapControlsDetails.open = false;
   mapController.beginPolygonSelection(applyPolygonSelection);
 });
 
@@ -575,7 +625,6 @@ async function syncLayerVisibility() {
     updateRegionLayer(),
     updateMpzLayer(),
     updateCountyLayer(),
-    updateRelationshipLayer(),
   ]);
 }
 
@@ -586,6 +635,7 @@ async function load(
   const requestId = ++loadRequestId;
   const requestedFilterParams = filterParamsFromMapUrl(params);
   activeFilterParams = requestedFilterParams;
+  renderActiveFilters();
   clearAnalysis({ render: false });
   showAssetResults();
   showStatus("Loading public asset listings...");
@@ -636,6 +686,13 @@ form.addEventListener("submit", (event) => {
 });
 form.addEventListener("reset", (event) => {
   event.preventDefault();
+  const emptyFilters = new URLSearchParams();
+  hydrateForm(form, emptyFilters);
+  for (const details of form.querySelectorAll("details")) details.open = false;
+  updateFilterIndicators();
+  load(emptyFilters);
+});
+clearActiveFiltersButton.addEventListener("click", () => {
   const emptyFilters = new URLSearchParams();
   hydrateForm(form, emptyFilters);
   for (const details of form.querySelectorAll("details")) details.open = false;

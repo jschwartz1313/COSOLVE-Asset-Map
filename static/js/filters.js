@@ -68,3 +68,12 @@ export function bindFilterIndicators(form) {
   update();
   return update;
 }
+
+export function withoutFilterValue(params, name, value) {
+  const next = new URLSearchParams();
+  for (const [entryName, entryValue] of params) {
+    if (entryName === name && entryValue === value) continue;
+    next.append(entryName, entryValue);
+  }
+  return next;
+}
