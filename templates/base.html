@@ -9,7 +9,7 @@
   <title>{% block title %}COSOLVE Asset Map{% endblock %}</title>
   <script>
     (() => {
-      const allowedThemes = ["classic", "dark", "color", "showcase"];
+      const allowedThemes = ["classic", "dark", "color", "showcase", "showcase-light"];
       try {
         const savedTheme = localStorage.getItem("cosolve-display-mode");
         if (allowedThemes.includes(savedTheme)) document.documentElement.dataset.theme = savedTheme;
@@ -23,8 +23,8 @@
   <link rel="stylesheet" href="{% static 'css/tokens.css' %}?v=20260717">
   <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20260731-1">
   {% block extra_css %}{% endblock %}
-  <link rel="stylesheet" href="{% static 'css/themes.css' %}?v=20260805-2">
-  <script type="module" src="{% static 'js/theme-switcher.js' %}?v=20260805-2"></script>
+  <link rel="stylesheet" href="{% static 'css/themes.css' %}?v=20260805-3">
+  <script type="module" src="{% static 'js/theme-switcher.js' %}?v=20260805-3"></script>
 </head>
 <body class="{% block body_class %}{% endblock %}">
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -36,17 +36,20 @@
       <small>{{ public_scope_name }} Asset Map</small>
     </a>
     <div class="appearance-switcher" role="group" aria-label="Site appearance">
-      <button type="button" data-theme-choice="classic" aria-pressed="true" title="Current view">
+      <button type="button" data-theme-choice="classic" data-mobile-label="Current" aria-pressed="true" title="Current view">
         <span class="theme-swatch swatch-classic" aria-hidden="true"></span><span>Current</span>
       </button>
-      <button type="button" data-theme-choice="dark" aria-pressed="false" title="Dark view">
+      <button type="button" data-theme-choice="dark" data-mobile-label="Dark" aria-pressed="false" title="Dark view">
         <span class="theme-swatch swatch-dark" aria-hidden="true"></span><span>Dark</span>
       </button>
-      <button type="button" data-theme-choice="color" aria-pressed="false" title="Color view">
+      <button type="button" data-theme-choice="color" data-mobile-label="Color" aria-pressed="false" title="Color view">
         <span class="theme-swatch swatch-color" aria-hidden="true"></span><span>Color</span>
       </button>
-      <button type="button" data-theme-choice="showcase" aria-pressed="false" title="Showcase view">
+      <button type="button" data-theme-choice="showcase" data-mobile-label="Show" aria-pressed="false" title="Showcase view">
         <span class="theme-swatch swatch-showcase" aria-hidden="true"></span><span>Showcase</span>
+      </button>
+      <button type="button" data-theme-choice="showcase-light" data-mobile-label="Light" aria-pressed="false" title="Showcase Light view">
+        <span class="theme-swatch swatch-showcase-light" aria-hidden="true"></span><span>Showcase Light</span>
       </button>
       <span class="visually-hidden" data-theme-status role="status" aria-live="polite"></span>
     </div>

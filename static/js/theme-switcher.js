@@ -1,11 +1,14 @@
-export const THEMES = ["classic", "dark", "color", "showcase"];
+export const THEMES = ["classic", "dark", "color", "showcase", "showcase-light"];
 
 export const THEME_LABELS = {
   classic: "Current",
   dark: "Dark",
   color: "Color",
   showcase: "Showcase",
+  "showcase-light": "Showcase Light",
 };
+
+const SHOWCASE_THEMES = new Set(["showcase", "showcase-light"]);
 
 export function normalizeTheme(value) {
   return THEMES.includes(value) ? value : "classic";
@@ -42,10 +45,18 @@ export function initializeThemeSwitcher(doc = document, win = window) {
     dark: "#11171a",
     color: "#ffffff",
     showcase: "#071823",
+    "showcase-light": "#ffffff",
   };
   const reducedMotion = win.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
   let revealObserver;
   let leaveTimer;
+  let activeCoverTheme = "showcase";
+
+  function coverSeenKey(theme) {
+    return theme === "showcase-light"
+      ? "cosolve-showcase-light-cover-seen"
+      : "cosolve-showcase-cover-seen";
+  }
 
   function updateShowcaseProgress() {
     if (!cover || !coverScroll) return;
@@ -84,11 +95,12 @@ export function initializeThemeSwitcher(doc = document, win = window) {
     cover.hidden = true;
     cover.classList.remove("is-ready", "is-leaving");
     doc.body.classList.remove("showcase-cover-open");
-    if (remember) saveValue(win.sessionStorage, "cosolve-showcase-cover-seen", "true");
+    if (remember) saveValue(win.sessionStorage, coverSeenKey(activeCoverTheme), "true");
   }
 
-  function showCover({ focus = false } = {}) {
+  function showCover({ focus = false, theme = "showcase" } = {}) {
     if (!cover) return;
+    activeCoverTheme = theme;
     win.clearTimeout(leaveTimer);
     cover.hidden = false;
     cover.classList.remove("is-leaving");
@@ -126,9 +138,9 @@ export function initializeThemeSwitcher(doc = document, win = window) {
     }
     if (themeMeta) themeMeta.content = themeColors[theme];
 
-    if (theme === "showcase") {
-      const seen = storageValue(win.sessionStorage, "cosolve-showcase-cover-seen") === "true";
-      if (showIntro || !seen) showCover({ focus: showIntro });
+    if (SHOWCASE_THEMES.has(theme)) {
+      const seen = storageValue(win.sessionStorage, coverSeenKey(theme)) === "true";
+      if (showIntro || !seen) showCover({ focus: showIntro, theme });
     } else {
       hideCover({ remember: false });
     }
@@ -171,7 +183,7 @@ export function initializeThemeSwitcher(doc = document, win = window) {
     if (!cover || cover.hidden) return;
     if (event.key === "Escape") {
       hideCover();
-      buttons.find((button) => button.dataset.themeChoice === "showcase")?.focus();
+      buttons.find((button) => button.dataset.themeChoice === activeCoverTheme)?.focus();
       return;
     }
     if (event.key !== "Tab") return;

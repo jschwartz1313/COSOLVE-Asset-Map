@@ -11,7 +11,7 @@
   height: 36px;
   padding: 3px;
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(5, auto);
   align-items: stretch;
   border: 1px solid var(--line);
   border-radius: 5px;
@@ -54,6 +54,7 @@
 .swatch-dark { background: #172127; }
 .swatch-color { background: #77364a; box-shadow: 4px 0 0 #39746b, -4px 0 0 #d5dfda; }
 .swatch-showcase { background: #111a1c; box-shadow: 0 0 0 2px #87bcb5; }
+.swatch-showcase-light { background: #fff; box-shadow: 0 0 0 2px #c63f2b; }
 
 .theme-page-visual, .showcase-cover[hidden] { display: none; }
 
@@ -488,6 +489,179 @@ html[data-theme="showcase"] .page-heading h1 { font-size: 52px; }
 html[data-theme="showcase"] .region-column:first-child,
 html[data-theme="showcase"] .region-column:last-child { border-top-color: #58716f; }
 
+/* Showcase Light: the full photographic experience in the established COSOLVE palette. */
+html[data-theme="showcase-light"] {
+  color-scheme: light;
+  --ink: #192126;
+  --ink-muted: #5c686f;
+  --paper: #ffffff;
+  --surface: #f3f5f4;
+  --line: #d8deda;
+  --line-strong: #bbc6c0;
+  --brand: #c63f2b;
+  --brand-dark: #8f2c1f;
+  --teal: #147d78;
+  --gold: #b48216;
+  --blue: #2f6f9f;
+  --focus: #1769aa;
+  --shadow: 0 18px 44px rgb(25 33 38 / 16%);
+}
+
+html[data-theme="showcase-light"] body { background: var(--surface); }
+html[data-theme="showcase-light"] .site-header {
+  color: var(--ink);
+  background-color: white;
+  background-image: linear-gradient(rgb(255 255 255 / 91%), rgb(255 255 255 / 91%)), url("../img/themes/nasa-langley-autonomous-drone.webp");
+  background-position: center 52%;
+  background-size: cover;
+  border-bottom: 2px solid var(--line-strong);
+}
+html[data-theme="showcase-light"] .appearance-switcher { background: rgb(243 245 244 / 90%); border-color: var(--line-strong); }
+html[data-theme="showcase-light"] .appearance-switcher button[aria-pressed="true"] { box-shadow: inset 0 -3px var(--brand); }
+html[data-theme="showcase-light"] .theme-page-visual {
+  height: 220px;
+  display: block;
+  background-color: #eef1ef;
+  background-image: linear-gradient(rgb(255 255 255 / 30%), rgb(255 255 255 / 72%)), url("../img/themes/norfolk-international-terminal.webp");
+  background-position: center 48%;
+  background-size: cover;
+  border-bottom: 4px solid var(--brand);
+  animation: showcaseBandIn 600ms ease-out both;
+}
+html[data-theme="showcase-light"] body.map-page .theme-page-visual,
+html[data-theme="showcase-light"] body.asset-detail-page .theme-page-visual { display: none; }
+html[data-theme="showcase-light"] .button.primary { box-shadow: 4px 4px 0 #5c686f; }
+html[data-theme="showcase-light"] .site-footer { background: #edf1ef; border-top: 3px solid var(--line-strong); }
+
+html[data-theme="showcase-light"] .showcase-cover { color: var(--ink); background: white; }
+html[data-theme="showcase-light"] .showcase-progress { background: rgb(25 33 38 / 13%); }
+html[data-theme="showcase-light"] .showcase-progress span { background: var(--brand); }
+html[data-theme="showcase-light"] .showcase-topbar { background: linear-gradient(rgb(255 255 255 / 96%), rgb(255 255 255 / 76%), transparent); }
+html[data-theme="showcase-light"] .showcase-wordmark img { filter: none; }
+html[data-theme="showcase-light"] .showcase-wordmark span { color: var(--ink-muted); border-left-color: rgb(25 33 38 / 25%); }
+html[data-theme="showcase-light"] .showcase-hero-shade {
+  background: linear-gradient(90deg, rgb(255 255 255 / 96%) 0%, rgb(255 255 255 / 84%) 42%, rgb(255 255 255 / 16%) 75%), linear-gradient(0deg, rgb(255 255 255 / 88%), transparent 54%);
+}
+html[data-theme="showcase-light"] .showcase-kicker,
+html[data-theme="showcase-light"] .showcase-section-index { color: var(--brand-dark); }
+html[data-theme="showcase-light"] .showcase-cover-copy > p { color: #3f494f; }
+html[data-theme="showcase-light"] .showcase-enter {
+  color: white;
+  background: var(--brand);
+  border-color: var(--brand);
+}
+html[data-theme="showcase-light"] .showcase-enter:hover { color: white; background: var(--brand-dark); }
+html[data-theme="showcase-light"] .showcase-enter-quiet { color: var(--brand-dark); background: rgb(255 255 255 / 86%); }
+html[data-theme="showcase-light"] .showcase-enter-quiet:hover { color: white; background: var(--brand-dark); }
+html[data-theme="showcase-light"] .showcase-photo-credit { padding: 4px 6px; color: #354046; background: rgb(255 255 255 / 76%); }
+html[data-theme="showcase-light"] .showcase-statement { color: var(--ink); background: white; border-top-color: var(--line); }
+html[data-theme="showcase-light"] .showcase-statement p { color: var(--ink-muted); }
+html[data-theme="showcase-light"] .showcase-photo { background: #e7ebe9; }
+html[data-theme="showcase-light"] .showcase-photo figcaption { color: white; }
+html[data-theme="showcase-light"] .showcase-photo figcaption span { color: #dbeae7; }
+html[data-theme="showcase-light"] .showcase-photo figcaption small { color: #d7dfdc; }
+html[data-theme="showcase-light"] .showcase-domains { color: var(--ink); background: var(--surface); }
+html[data-theme="showcase-light"] .showcase-domain-list { border-top-color: var(--line-strong); }
+html[data-theme="showcase-light"] .showcase-domain-list div { border-bottom-color: var(--line); }
+html[data-theme="showcase-light"] .showcase-domain-list span { color: var(--brand-dark); }
+html[data-theme="showcase-light"] .showcase-domain-list small { color: var(--ink-muted); }
+html[data-theme="showcase-light"] .showcase-final { color: var(--ink); }
+html[data-theme="showcase-light"] .showcase-final > img { filter: saturate(.7) contrast(1.02); }
+html[data-theme="showcase-light"] .showcase-final::after {
+  background: linear-gradient(90deg, rgb(255 255 255 / 97%), rgb(255 255 255 / 76%) 58%, rgb(255 255 255 / 18%) 82%), linear-gradient(0deg, rgb(255 255 255 / 86%), transparent 55%);
+}
+html[data-theme="showcase-light"] .showcase-credits { color: var(--ink-muted); background: white; border-top-color: var(--line); }
+html[data-theme="showcase-light"] .showcase-credits summary { color: var(--ink); }
+html[data-theme="showcase-light"] .showcase-credits a { color: var(--brand-dark); }
+
+html[data-theme="showcase-light"] .map-workspace { grid-template-columns: 292px minmax(360px, 1fr) 338px; background: var(--surface); }
+html[data-theme="showcase-light"] .filters-panel,
+html[data-theme="showcase-light"] .results-panel { background: rgb(255 255 255 / 97%); }
+html[data-theme="showcase-light"] .filters-panel { border-right: 2px solid var(--line-strong); }
+html[data-theme="showcase-light"] .panel-heading {
+  min-height: 112px;
+  margin: -18px -16px 17px;
+  padding: 45px 16px 14px;
+  align-items: end;
+  color: var(--ink);
+  background-color: #eef1ef;
+  background-image: linear-gradient(rgb(255 255 255 / 79%), rgb(255 255 255 / 90%)), url("../img/themes/nasa-langley-autonomous-drone.webp");
+  background-position: 42% 52%;
+  background-size: cover;
+  border-bottom: 3px solid var(--brand);
+}
+html[data-theme="showcase-light"] #asset-filters .filter-actions { background: #f7f8f7; }
+html[data-theme="showcase-light"] .results-panel { border-left: 2px solid var(--line-strong); }
+html[data-theme="showcase-light"] .results-heading {
+  min-height: 94px;
+  align-items: end;
+  color: var(--ink);
+  background-color: #eef1ef;
+  background-image: linear-gradient(rgb(255 255 255 / 82%), rgb(255 255 255 / 92%)), url("../img/themes/norfolk-international-terminal.webp");
+  background-position: 72% 52%;
+  background-size: cover;
+  border-bottom: 3px solid var(--brand);
+}
+html[data-theme="showcase-light"] .active-filter-bar { background: #f3f5f4; }
+html[data-theme="showcase-light"] .active-filter-chip { background: white; border-color: var(--line-strong); }
+html[data-theme="showcase-light"] .result-row { background: white; border-left: 3px solid transparent; }
+html[data-theme="showcase-light"] .result-row:nth-child(odd) { border-left-color: var(--line-strong); }
+html[data-theme="showcase-light"] .result-row:hover,
+html[data-theme="showcase-light"] .result-row.is-selected { background: #f3f5f4; }
+html[data-theme="showcase-light"] #map { background: #e8eeeb; }
+html[data-theme="showcase-light"] .map-layers,
+html[data-theme="showcase-light"] .map-actions,
+html[data-theme="showcase-light"] .map-analysis,
+html[data-theme="showcase-light"] .map-legend,
+html[data-theme="showcase-light"] .map-source-disclosure {
+  color: var(--ink);
+  background: rgb(255 255 255 / 95%);
+  border-color: var(--line-strong);
+  box-shadow: 0 10px 28px rgb(25 33 38 / 18%);
+  backdrop-filter: blur(8px);
+}
+html[data-theme="showcase-light"] .map-layers,
+html[data-theme="showcase-light"] .map-actions,
+html[data-theme="showcase-light"] .map-analysis,
+html[data-theme="showcase-light"] .map-legend { border-top: 2px solid var(--brand); }
+html[data-theme="showcase-light"] .map-analysis-options button { color: var(--ink); background: #f3f5f4; }
+html[data-theme="showcase-light"] .leaflet-control-zoom a,
+html[data-theme="showcase-light"] .leaflet-popup-content-wrapper,
+html[data-theme="showcase-light"] .leaflet-popup-tip { color: var(--ink); background: white; }
+html[data-theme="showcase-light"] .composition-cluster { color: var(--ink); background: white; border-color: var(--ink-muted); box-shadow: 0 0 0 3px rgb(198 63 43 / 14%), 0 4px 13px rgb(25 33 38 / 24%); }
+html[data-theme="showcase-light"] .asset-marker { border-color: white; box-shadow: 0 0 0 2px rgb(25 33 38 / 65%), 0 4px 12px rgb(25 33 38 / 30%); }
+html[data-theme="showcase-light"] .asset-marker-shell:hover .asset-marker { transform: scale(1.24) rotate(3deg); }
+html[data-theme="showcase-light"] .region-map-label,
+html[data-theme="showcase-light"] .asset-search-label { color: var(--ink); background: rgb(255 255 255 / 95%); border-color: var(--line-strong); }
+
+html[data-theme="showcase-light"] .directory-filters { background: #f7f8f7; border-right: 3px solid var(--brand); }
+html[data-theme="showcase-light"] .directory-list { border-top: 3px solid var(--brand); }
+html[data-theme="showcase-light"] .directory-row { border-left: 3px solid transparent; }
+html[data-theme="showcase-light"] .directory-row:hover { background: #f3f5f4; }
+html[data-theme="showcase-light"] .asset-detail-page .detail-page { width: min(1280px, calc(100% - 40px)); }
+html[data-theme="showcase-light"] .asset-detail-page .detail-header {
+  min-height: 390px;
+  padding: 150px 36px 34px;
+  align-items: end;
+  color: var(--ink);
+  background-color: #eef1ef;
+  background-image: linear-gradient(90deg, rgb(255 255 255 / 96%), rgb(255 255 255 / 75%) 62%, rgb(255 255 255 / 24%)), url("../img/themes/nasa-langley-autonomous-drone.webp");
+  background-position: center;
+  background-size: cover;
+  border: 0;
+  border-bottom: 5px solid var(--brand);
+  animation: showcaseBandIn 600ms ease-out both;
+}
+html[data-theme="showcase-light"] .asset-detail-page .verification-block { padding: 16px; background: rgb(255 255 255 / 84%); border-left-color: var(--brand); }
+html[data-theme="showcase-light"] .detail-sidebar section,
+html[data-theme="showcase-light"] .methodology-panel { background: white; border-color: var(--line); border-top: 3px solid var(--brand); }
+html[data-theme="showcase-light"] .tag-list span { color: var(--ink); background: var(--surface); border-color: var(--line); }
+html[data-theme="showcase-light"] .data-stats { background: white; border-block: 3px solid var(--brand); }
+html[data-theme="showcase-light"] .data-stats div:nth-child(2) { background: var(--surface); }
+html[data-theme="showcase-light"] .page-heading h1 { font-size: 52px; }
+html[data-theme="showcase-light"] .region-column:first-child,
+html[data-theme="showcase-light"] .region-column:last-child { border-top-color: var(--brand); }
+
 @keyframes showcaseCopyIn {
   from { opacity: 0; transform: translateY(26px); }
   to { opacity: 1; transform: translateY(0); }
@@ -520,7 +694,8 @@ body.showcase-arrival .map-workspace { animation: showcaseWorkspaceArrival 760ms
   .primary-nav { gap: 14px; }
   .appearance-switcher button { min-width: 38px; padding-inline: 7px; }
   .appearance-switcher button > span:last-child { display: none; }
-  html[data-theme="showcase"] .map-workspace { grid-template-columns: 260px minmax(340px, 1fr) 304px; }
+  html[data-theme="showcase"] .map-workspace,
+  html[data-theme="showcase-light"] .map-workspace { grid-template-columns: 260px minmax(340px, 1fr) 304px; }
   .showcase-photo-grid { width: calc(100% - 48px); }
 }
 
@@ -528,7 +703,8 @@ body.showcase-arrival .map-workspace { animation: showcaseWorkspaceArrival 760ms
   .site-header { display: flex; gap: 14px; }
   .appearance-switcher button { min-width: 48px; }
   .primary-nav { margin-left: auto; }
-  html[data-theme="showcase"] .map-workspace { grid-template-columns: minmax(0, 1fr) 310px; }
+  html[data-theme="showcase"] .map-workspace,
+  html[data-theme="showcase-light"] .map-workspace { grid-template-columns: minmax(0, 1fr) 310px; }
   .showcase-topbar { padding-inline: 28px; }
   .showcase-hero { padding: 102px 40px 64px; }
   .showcase-cover-copy { width: min(640px, 78vw); }
@@ -561,10 +737,16 @@ body.showcase-arrival .map-workspace { animation: showcaseWorkspaceArrival 760ms
     width: min(100%, 340px);
     height: 38px;
     justify-self: center;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
   .appearance-switcher button { min-width: 0; }
-  .appearance-switcher button > span:last-child { display: inline; }
+  .appearance-switcher button > span:last-child { display: none; }
+  .appearance-switcher button .theme-swatch { display: none; }
+  .appearance-switcher button::after {
+    content: attr(data-mobile-label);
+    font-size: 9px;
+    font-weight: 850;
+  }
   .primary-nav {
     grid-row: 3;
     width: 100%;
@@ -577,7 +759,8 @@ body.showcase-arrival .map-workspace { animation: showcaseWorkspaceArrival 760ms
   .primary-nav a, .nav-logout { flex: 0 0 auto; }
   .primary-nav a, .nav-logout button { font-size: 11px; }
   html[data-theme="color"] .theme-page-visual { height: 82px; }
-  html[data-theme="showcase"] .theme-page-visual { height: 130px; }
+  html[data-theme="showcase"] .theme-page-visual,
+  html[data-theme="showcase-light"] .theme-page-visual { height: 130px; }
   .showcase-topbar { min-height: 60px; padding-inline: 16px; }
   .showcase-wordmark img { width: 90px; }
   .showcase-wordmark span { display: none; }
@@ -607,9 +790,12 @@ body.showcase-arrival .map-workspace { animation: showcaseWorkspaceArrival 760ms
   .showcase-final { min-height: 78dvh; padding: 78px 20px; }
   .showcase-credits { padding: 24px 20px 42px; }
   .showcase-credits p { display: grid; }
-  html[data-theme="showcase"] .map-workspace { grid-template-columns: 1fr; }
-  html[data-theme="showcase"] .asset-detail-page .detail-header { min-height: 360px; padding: 130px 20px 24px; }
-  html[data-theme="showcase"] .page-heading h1 { font-size: 38px; }
+  html[data-theme="showcase"] .map-workspace,
+  html[data-theme="showcase-light"] .map-workspace { grid-template-columns: 1fr; }
+  html[data-theme="showcase"] .asset-detail-page .detail-header,
+  html[data-theme="showcase-light"] .asset-detail-page .detail-header { min-height: 360px; padding: 130px 20px 24px; }
+  html[data-theme="showcase"] .page-heading h1,
+  html[data-theme="showcase-light"] .page-heading h1 { font-size: 38px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -620,7 +806,9 @@ body.showcase-arrival .map-workspace { animation: showcaseWorkspaceArrival 760ms
   [data-showcase-reveal],
   body.showcase-arrival .map-workspace,
   html[data-theme="showcase"] .theme-page-visual,
-  html[data-theme="showcase"] .asset-detail-page .detail-header { animation: none; }
+  html[data-theme="showcase"] .asset-detail-page .detail-header,
+  html[data-theme="showcase-light"] .theme-page-visual,
+  html[data-theme="showcase-light"] .asset-detail-page .detail-header { animation: none; }
   .showcase-cover,
   [data-showcase-reveal] { opacity: 1; transform: none; transition: none; }
   .showcase-scroll { scroll-behavior: auto; }

@@ -1,6 +1,6 @@
 # Presentation modes
 
-The public interface provides four browser-side presentation modes. They all use the same Django views, asset records, filters, saved views, and exports.
+The public interface provides five browser-side presentation modes. They all use the same Django views, asset records, filters, saved views, and exports.
 
 | Mode | Purpose |
 | --- | --- |
@@ -8,6 +8,7 @@ The public interface provides four browser-side presentation modes. They all use
 | Dark | The same layout and controls with a dark palette. |
 | Color | A restrained editorial atlas treatment using burgundy and green accents. |
 | Showcase | A presentation-focused dark treatment with a cinematic, multi-section entrance and real Virginia photography. |
+| Showcase Light | The full Showcase entrance, imagery, motion, and expanded layouts using the established light COSOLVE palette. |
 
 The selected mode is stored in the browser under `cosolve-display-mode`. It does not modify filter URLs, saved views, or any underlying data.
 
@@ -15,7 +16,7 @@ Print and PDF output suppresses the decorative presentation layers and uses a ne
 
 ## Showcase photography
 
-The Showcase entrance uses downloaded, locally optimized copies of these source images:
+Both Showcase entrances use downloaded, locally optimized copies of these source images:
 
 - NASA Langley autonomous flight research, Hampton, Virginia: NASA / Bowman, [NASA source](https://www.nasa.gov/aeronautics/nasa-flies-autonomous-drones/)
 - Autonomous surface vessel demonstration, Fort Monroe, Virginia: U.S. Navy public-domain image, [DVIDS source](https://www.dvidshub.net/image/144663/autonomous-unmanned-surface-vehicle-demonstration)

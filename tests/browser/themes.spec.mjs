@@ -5,7 +5,7 @@ const catalog = JSON.parse(
   readFileSync(new URL("../../data/virginia_real_assets.json", import.meta.url), "utf8"),
 );
 
-test("four presentation modes preserve the same map data and controls", async ({ page }) => {
+test("five presentation modes preserve the same map data and controls", async ({ page }) => {
   await page.goto("/map/");
   await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
 
@@ -39,6 +39,21 @@ test("four presentation modes preserve the same map data and controls", async ({
   await expect(page.locator("html")).toHaveAttribute("data-theme", "showcase");
   await expect(page.locator("[data-showcase-cover]")).toBeHidden();
 
+  await page.locator('[data-theme-choice="showcase-light"]').click();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "showcase-light");
+  await expect(page.locator('[data-theme-choice="showcase-light"]')).toHaveAttribute(
+    "aria-pressed",
+    "true",
+  );
+  await expect(page.locator("[data-showcase-cover]")).toBeVisible();
+  await page.locator("[data-showcase-enter]").first().click();
+  await expect(page.locator("[data-showcase-cover]")).toBeHidden();
+  await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
+
+  await page.reload();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "showcase-light");
+  await expect(page.locator("[data-showcase-cover]")).toBeHidden();
+
   await page.locator('[data-theme-choice="classic"]').click();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "classic");
 });
@@ -56,25 +71,52 @@ test("color and showcase imagery appears on supporting pages", async ({ page }) 
   await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
 });
 
-test("the four-mode switch remains usable on mobile", async ({ page }) => {
+test("the five-mode switch remains usable on mobile", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/map/");
   const switcher = page.locator(".appearance-switcher");
   await expect(switcher).toBeVisible();
-  await expect(switcher.locator("button")).toHaveCount(4);
+  await expect(switcher.locator("button")).toHaveCount(5);
+  expect(
+    await switcher.locator("button").evaluateAll((buttons) =>
+      buttons.map((button) => getComputedStyle(button, "::after").content.replaceAll('"', "")),
+    ),
+  ).toEqual(["Current", "Dark", "Color", "Show", "Light"]);
 
   const switchBox = await switcher.boundingBox();
   expect(switchBox.x).toBeGreaterThanOrEqual(0);
   expect(switchBox.x + switchBox.width).toBeLessThanOrEqual(390);
   expect(switchBox.y + switchBox.height).toBeLessThanOrEqual(844);
 
-  await page.locator('[data-theme-choice="showcase"]').click();
+  await page.locator('[data-theme-choice="showcase-light"]').click();
   await expect(page.locator("[data-showcase-cover]")).toBeVisible();
   const coverBox = await page.locator("[data-showcase-cover]").boundingBox();
   expect(coverBox.width).toBe(390);
   expect(coverBox.height).toBeGreaterThanOrEqual(844);
   await expect(page.locator(".showcase-topbar")).toBeVisible();
   await expect(page.locator(".showcase-hero h1")).toBeVisible();
+});
+
+test("showcase light keeps the cinematic experience in the current light palette", async ({ page }) => {
+  await page.goto("/map/");
+  await page.locator('[data-theme-choice="showcase-light"]').click();
+
+  const cover = page.locator("[data-showcase-cover]");
+  await expect(cover).toBeVisible();
+  await expect(cover).toHaveCSS("background-color", "rgb(255, 255, 255)");
+  await expect(cover.locator(".showcase-statement")).toHaveCSS(
+    "background-color",
+    "rgb(255, 255, 255)",
+  );
+  await expect(cover.locator('img[src*="nasa-langley-autonomous-drone"]')).toBeVisible();
+
+  await cover.locator("[data-showcase-enter]").first().click();
+  await expect(cover).toBeHidden();
+  await expect(page.locator(".filters-panel")).toHaveCSS(
+    "background-color",
+    "rgba(255, 255, 255, 0.97)",
+  );
+  await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
 });
 
 test("showcase entrance scrolls through real Virginia imagery and returns to the map", async ({ page }) => {
