@@ -23,8 +23,8 @@
   <link rel="stylesheet" href="{% static 'css/tokens.css' %}?v=20260717">
   <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20260731-1">
   {% block extra_css %}{% endblock %}
-  <link rel="stylesheet" href="{% static 'css/themes.css' %}?v=20260805-1">
-  <script type="module" src="{% static 'js/theme-switcher.js' %}?v=20260805-1"></script>
+  <link rel="stylesheet" href="{% static 'css/themes.css' %}?v=20260805-2">
+  <script type="module" src="{% static 'js/theme-switcher.js' %}?v=20260805-2"></script>
 </head>
 <body class="{% block body_class %}{% endblock %}">
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -66,17 +66,85 @@
   </header>
   <div class="theme-page-visual" aria-hidden="true"></div>
   <section class="showcase-cover" data-showcase-cover role="dialog" aria-modal="true" aria-labelledby="showcase-cover-title" hidden>
-    <div class="showcase-cover-copy">
-      <span class="showcase-kicker">COSOLVE Geographic Asset Intelligence</span>
-      <h1 id="showcase-cover-title">Virginia Unmanned Systems Asset Map</h1>
-      <p>Air <i></i> Land <i></i> Maritime <i></i> Space</p>
-      <button class="showcase-enter" type="button" data-showcase-enter>Enter the asset map</button>
+    <div class="showcase-progress" aria-hidden="true"><span></span></div>
+    <div class="showcase-topbar">
+      <div class="showcase-wordmark">
+        <img src="{% static 'img/cosolve-logo-black.png' %}" alt="">
+        <span>Virginia UxS intelligence</span>
+      </div>
+      <button class="showcase-enter showcase-enter-quiet" type="button" data-showcase-enter>
+        Open asset map <span aria-hidden="true">&rarr;</span>
+      </button>
     </div>
-    <div class="showcase-domain-rail" aria-hidden="true">
-      <span><b>01</b> Air systems</span>
-      <span><b>02</b> Ground autonomy</span>
-      <span><b>03</b> Maritime systems</span>
-      <span><b>04</b> Space infrastructure</span>
+    <div class="showcase-scroll" data-showcase-scroll>
+      <section class="showcase-hero">
+        <img class="showcase-hero-image" src="{% static 'img/themes/nasa-langley-autonomous-drone.webp' %}" alt="An autonomous NASA test drone flying above NASA Langley Research Center in Hampton, Virginia">
+        <div class="showcase-hero-shade" aria-hidden="true"></div>
+        <div class="showcase-cover-copy">
+          <span class="showcase-kicker">COSOLVE Geographic Asset Intelligence</span>
+          <h1 id="showcase-cover-title">See Virginia's autonomy ecosystem as a system.</h1>
+          <p>Research. Infrastructure. Industry. Missions.</p>
+          <button class="showcase-enter" type="button" data-showcase-scroll-story>
+            Explore the landscape <span aria-hidden="true">&darr;</span>
+          </button>
+        </div>
+        <div class="showcase-photo-credit">NASA Langley Research Center, Hampton | NASA / Bowman</div>
+      </section>
+
+      <section class="showcase-statement" data-showcase-reveal>
+        <span class="showcase-section-index">01 / The connected field</span>
+        <div>
+          <h2>Virginia's advantage lives between the assets.</h2>
+          <p>Test ranges connect to researchers. Ports connect to maritime missions. Universities connect talent to industry. The map makes those relationships visible across the Commonwealth.</p>
+        </div>
+      </section>
+
+      <section class="showcase-photo-grid" aria-label="Virginia autonomy ecosystem photography">
+        <figure class="showcase-photo showcase-photo-wide" data-showcase-reveal>
+          <img src="{% static 'img/themes/fort-monroe-autonomous-usv.webp' %}" alt="Two U.S. Navy autonomous test craft operating near Fort Monroe, Virginia" loading="lazy">
+          <figcaption><span>Maritime autonomy</span><strong>Fort Monroe, Virginia</strong><small>U.S. Navy public-domain photo</small></figcaption>
+        </figure>
+        <figure class="showcase-photo" data-showcase-reveal>
+          <img src="{% static 'img/themes/virginia-beach-uas-survey.webp' %}" alt="A U.S. Army Corps of Engineers operator conducting an unmanned aerial survey at Sandbridge Beach" loading="lazy">
+          <figcaption><span>Applied operations</span><strong>Virginia Beach</strong><small>U.S. Army photo / Patrick Bloodgood</small></figcaption>
+        </figure>
+        <figure class="showcase-photo" data-showcase-reveal>
+          <img src="{% static 'img/themes/norfolk-international-terminal.webp' %}" alt="A U.S. Army Corps survey vessel passing cranes at Norfolk International Terminal" loading="lazy">
+          <figcaption><span>Strategic infrastructure</span><strong>Port of Virginia</strong><small>U.S. Army photo / Patrick Bloodgood</small></figcaption>
+        </figure>
+      </section>
+
+      <section class="showcase-domains" data-showcase-reveal>
+        <span class="showcase-section-index">02 / One statewide view</span>
+        <h2>From research bench to operating environment.</h2>
+        <div class="showcase-domain-list">
+          <div><span>01</span><strong>Air</strong><small>Flight research, smart airspace, airports, and test ranges</small></div>
+          <div><span>02</span><strong>Land</strong><small>Robotics, autonomy software, manufacturing, and field operations</small></div>
+          <div><span>03</span><strong>Maritime</strong><small>Ports, shipyards, offshore missions, and autonomous vessels</small></div>
+          <div><span>04</span><strong>Space</strong><small>Launch, sensing, communications, and supporting infrastructure</small></div>
+        </div>
+      </section>
+
+      <section class="showcase-final" data-showcase-reveal>
+        <img src="{% static 'img/themes/norfolk-international-terminal.webp' %}" alt="" loading="lazy">
+        <div>
+          <span class="showcase-section-index">03 / Explore the evidence</span>
+          <h2>Move from the statewide picture to the individual asset.</h2>
+          <button class="showcase-enter" type="button" data-showcase-enter>
+            Enter the asset map <span aria-hidden="true">&rarr;</span>
+          </button>
+        </div>
+      </section>
+
+      <details class="showcase-credits">
+        <summary>Photography sources</summary>
+        <p>
+          <a href="https://www.nasa.gov/aeronautics/nasa-flies-autonomous-drones/" target="_blank" rel="noopener">NASA Langley autonomous flight research</a>
+          <a href="https://www.dvidshub.net/image/144663/autonomous-unmanned-surface-vehicle-demonstration" target="_blank" rel="noopener">U.S. Navy autonomous surface vessel demonstration</a>
+          <a href="https://www.dvidshub.net/image/5738169/flying-uas" target="_blank" rel="noopener">U.S. Army Corps UAS survey</a>
+          <a href="https://www.dvidshub.net/image/5052532/usace-port-virginia-ramp-up-norfolk-harbor-deepening-efforts" target="_blank" rel="noopener">Norfolk International Terminal</a>
+        </p>
+      </details>
     </div>
   </section>
   {% if messages %}

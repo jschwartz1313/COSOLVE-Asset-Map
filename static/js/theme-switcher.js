@@ -31,7 +31,10 @@ export function initializeThemeSwitcher(doc = document, win = window) {
   const root = doc.documentElement;
   const buttons = [...doc.querySelectorAll("[data-theme-choice]")];
   const cover = doc.querySelector("[data-showcase-cover]");
-  const enterButton = doc.querySelector("[data-showcase-enter]");
+  const coverScroll = doc.querySelector("[data-showcase-scroll]");
+  const enterButtons = [...doc.querySelectorAll("[data-showcase-enter]")];
+  const storyButton = doc.querySelector("[data-showcase-scroll-story]");
+  const revealItems = [...doc.querySelectorAll("[data-showcase-reveal]")];
   const status = doc.querySelector("[data-theme-status]");
   const themeMeta = doc.querySelector("#theme-color-meta");
   const themeColors = {
@@ -40,19 +43,78 @@ export function initializeThemeSwitcher(doc = document, win = window) {
     color: "#ffffff",
     showcase: "#071823",
   };
+  const reducedMotion = win.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+  let revealObserver;
+  let leaveTimer;
+
+  function updateShowcaseProgress() {
+    if (!cover || !coverScroll) return;
+    const available = coverScroll.scrollHeight - coverScroll.clientHeight;
+    const progress = available > 0 ? coverScroll.scrollTop / available : 0;
+    cover.style.setProperty("--showcase-progress", String(progress));
+    cover.style.setProperty(
+      "--showcase-shift",
+      `${Math.min(coverScroll.scrollTop * 0.08, 72)}px`,
+    );
+  }
+
+  function prepareRevealItems() {
+    revealObserver?.disconnect();
+    if (reducedMotion || !("IntersectionObserver" in win)) {
+      revealItems.forEach((item) => item.classList.add("is-visible"));
+      return;
+    }
+    revealItems.forEach((item) => item.classList.remove("is-visible"));
+    revealObserver = new win.IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          entry.target.classList.add("is-visible");
+          revealObserver.unobserve(entry.target);
+        }
+      },
+      { root: coverScroll, rootMargin: "0px 0px -12%", threshold: 0.16 },
+    );
+    revealItems.forEach((item) => revealObserver.observe(item));
+  }
 
   function hideCover({ remember = true } = {}) {
     if (!cover) return;
+    win.clearTimeout(leaveTimer);
     cover.hidden = true;
+    cover.classList.remove("is-ready", "is-leaving");
     doc.body.classList.remove("showcase-cover-open");
     if (remember) saveValue(win.sessionStorage, "cosolve-showcase-cover-seen", "true");
   }
 
   function showCover({ focus = false } = {}) {
     if (!cover) return;
+    win.clearTimeout(leaveTimer);
     cover.hidden = false;
+    cover.classList.remove("is-leaving");
     doc.body.classList.add("showcase-cover-open");
-    if (focus) enterButton?.focus();
+    if (coverScroll) coverScroll.scrollTop = 0;
+    updateShowcaseProgress();
+    prepareRevealItems();
+    win.requestAnimationFrame(() => cover.classList.add("is-ready"));
+    if (focus) enterButtons[0]?.focus();
+  }
+
+  function enterSite() {
+    if (!cover || cover.hidden) return;
+    cover.classList.add("is-leaving");
+    const delay = reducedMotion ? 0 : 440;
+    leaveTimer = win.setTimeout(() => {
+      hideCover();
+      if (!doc.body.classList.contains("map-page")) {
+        const mapUrl = doc.querySelector(".brand")?.href;
+        if (mapUrl) win.location.assign(mapUrl);
+        return;
+      }
+      doc.body.classList.add("showcase-arrival");
+      win.setTimeout(() => doc.body.classList.remove("showcase-arrival"), 900);
+      doc.querySelector("#main-content")?.focus({ preventScroll: true });
+    }, delay);
   }
 
   function applyTheme(value, { announce = false, showIntro = false } = {}) {
@@ -96,18 +158,35 @@ export function initializeThemeSwitcher(doc = document, win = window) {
     });
   }
 
-  enterButton?.addEventListener("click", () => {
-    hideCover();
-    if (!doc.body.classList.contains("map-page")) {
-      const mapUrl = doc.querySelector(".brand")?.href;
-      if (mapUrl) win.location.assign(mapUrl);
-      return;
-    }
-    doc.querySelector("#main-content")?.focus({ preventScroll: true });
+  enterButtons.forEach((button) => button.addEventListener("click", enterSite));
+  storyButton?.addEventListener("click", () => {
+    coverScroll?.querySelector(".showcase-statement")?.scrollIntoView({
+      behavior: reducedMotion ? "auto" : "smooth",
+      block: "start",
+    });
   });
+  coverScroll?.addEventListener("scroll", updateShowcaseProgress, { passive: true });
 
   doc.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && cover && !cover.hidden) hideCover();
+    if (!cover || cover.hidden) return;
+    if (event.key === "Escape") {
+      hideCover();
+      buttons.find((button) => button.dataset.themeChoice === "showcase")?.focus();
+      return;
+    }
+    if (event.key !== "Tab") return;
+    const focusable = [...cover.querySelectorAll("button, summary, a[href]")]
+      .filter((element) => !element.hasAttribute("disabled"));
+    if (!focusable.length) return;
+    const first = focusable[0];
+    const last = focusable.at(-1);
+    if (event.shiftKey && doc.activeElement === first) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && doc.activeElement === last) {
+      event.preventDefault();
+      first.focus();
+    }
   });
 
   return applyTheme(root.dataset.theme);

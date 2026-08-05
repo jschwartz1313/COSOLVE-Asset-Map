@@ -30,7 +30,8 @@ test("four presentation modes preserve the same map data and controls", async ({
   await page.locator('[data-theme-choice="showcase"]').click();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "showcase");
   await expect(page.locator("[data-showcase-cover]")).toBeVisible();
-  await page.locator("[data-showcase-enter]").click();
+  await expect(page.locator(".showcase-photo")).toHaveCount(3);
+  await page.locator("[data-showcase-enter]").first().click();
   await expect(page.locator("[data-showcase-cover]")).toBeHidden();
   await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
 
@@ -50,7 +51,7 @@ test("color and showcase imagery appears on supporting pages", async ({ page }) 
 
   await page.locator('[data-theme-choice="showcase"]').click();
   await expect(page.locator("[data-showcase-cover]")).toBeVisible();
-  await page.locator("[data-showcase-enter]").click();
+  await page.locator("[data-showcase-enter]").first().click();
   await expect(page).toHaveURL(/\/map\/$/);
   await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
 });
@@ -72,4 +73,23 @@ test("the four-mode switch remains usable on mobile", async ({ page }) => {
   const coverBox = await page.locator("[data-showcase-cover]").boundingBox();
   expect(coverBox.width).toBe(390);
   expect(coverBox.height).toBeGreaterThanOrEqual(844);
+  await expect(page.locator(".showcase-topbar")).toBeVisible();
+  await expect(page.locator(".showcase-hero h1")).toBeVisible();
+});
+
+test("showcase entrance scrolls through real Virginia imagery and returns to the map", async ({ page }) => {
+  await page.goto("/map/");
+  await page.locator('[data-theme-choice="showcase"]').click();
+  const cover = page.locator("[data-showcase-cover]");
+  await expect(cover).toBeVisible();
+  await expect(cover.locator('img[src*="nasa-langley-autonomous-drone"]')).toBeVisible();
+
+  await cover.locator("[data-showcase-scroll-story]").click();
+  await expect(cover.locator(".showcase-statement")).toBeInViewport();
+  await cover.locator(".showcase-final").scrollIntoViewIfNeeded();
+  await expect(cover.locator(".showcase-final")).toBeInViewport();
+  await cover.locator(".showcase-final [data-showcase-enter]").click();
+
+  await expect(cover).toBeHidden();
+  await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
 });
