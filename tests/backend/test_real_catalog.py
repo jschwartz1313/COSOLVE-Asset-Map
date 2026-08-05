@@ -169,6 +169,65 @@ class RealCatalogFileTests(TestCase):
         self.assertIsNone(regional.latitude)
         self.assertEqual(regional.location_precision, Asset.LocationPrecision.REGIONAL)
 
+    def test_august_2026_expansion_is_source_backed_and_located(self):
+        catalog = self.load_catalog()
+        records_by_name = {record["name"]: record for record in catalog["records"]}
+        expanded_assets = {
+            "Bedford Fire Department UAS Program",
+            "CACI International",
+            "Charles City County Sheriff's Office Drone Operations Team",
+            "DZYNE Technologies",
+            "Eagle Aviation Technologies",
+            "ENSCO",
+            "Fairfax County Police Drone as First Responder Program",
+            "Inertial Labs",
+            "Leidos",
+            "MAG Aerospace",
+            "Marine Corps Counter-Drone Team",
+            "NASA Langley ROAM UAS Operations Center",
+            "NASA Langley UAS Test Range",
+            "Navy TALSA East Small UAS Training Facility",
+            "Newport News AirCommerce Park",
+            "NSWC Dahlgren UAV Test Runway",
+            "NSWCDD Dam Neck Activity",
+            "Parsons",
+            "Radford University First Responder UAS Capability",
+            "Scout Space",
+            "Universal Solutions International",
+            "Wallops Research Park",
+        }
+
+        self.assertTrue(expanded_assets.issubset(records_by_name))
+        for name in expanded_assets:
+            record = records_by_name[name]
+            self.assertIn(record["location_precision"], {"site", "exact"})
+            self.assertTrue(record["address_line"])
+            self.assertTrue(record["sources"])
+            self.assertTrue(
+                all(source["url"].startswith("https://") for source in record["sources"])
+            )
+
+        relationships = {
+            (relationship["from"], relationship["type"], relationship["to"])
+            for relationship in catalog["relationships"]
+        }
+        self.assertIn(
+            (
+                "NASA Langley Research Center",
+                "operates",
+                "NASA Langley ROAM UAS Operations Center",
+            ),
+            relationships,
+        )
+        self.assertIn(
+            (
+                "Joint Expeditionary Base Little Creek-Fort Story",
+                "hosts",
+                "Navy TALSA East Small UAS Training Facility",
+            ),
+            relationships,
+        )
+
     def test_only_if_empty_preserves_existing_database_edits(self):
         call_command("seed_real_data", verbosity=0)
         asset = Asset.objects.order_by("pk").first()

@@ -648,6 +648,114 @@ SOURCES = {
         "Virginia Spaceport Authority Facilities",
         "https://www.vaspace.org/our-facilities",
     ),
+    "nasa_roam": (
+        "NASA Langley ROAM UAS Operations Center",
+        "https://csaob.larc.nasa.gov/roam/",
+    ),
+    "wallops_research_park": (
+        "Accomack County: Wallops Research Park Background and Timeline",
+        "https://www.accomack.gov/614/Background-Timeline",
+    ),
+    "wallops_research_park_location": (
+        "NASA Wallops Research Park Environmental Assessment",
+        "https://www.nasa.gov/wp-content/uploads/2024/10/wallops-research-park-fea-fonsi.pdf",
+    ),
+    "dam_neck_activity": (
+        "NSWCDD Dam Neck Activity",
+        "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Dam-Neck/",
+    ),
+    "talsa_east": (
+        "NAVAIR: Navy TALSA East Small UAS Training Facility",
+        "https://www.navair.navy.mil/news/Navy-opens-doors-first-small-unmanned-aircraft-systems-training-facility/Tue-08022022-0923",
+    ),
+    "marine_counter_drone_team": (
+        "Marine Corps Counter-Drone Team",
+        "https://www.tecom.marines.mil/In-the-News/Stories/News-Article-Display/Article/4538355/tecom-establishes-marine-corps-robotics-integration-group-and-counter-drone-team/",
+    ),
+    "fairfax_dfr": (
+        "Fairfax County Police DFR Transparency",
+        "https://www.fairfaxcounty.gov/police/real-time-crime-center-transparency",
+    ),
+    "charles_city_uas": (
+        "Virginia Sheriffs' Association: Charles City Drone Operations Team",
+        "https://vasheriff.org/2025/03/05/charles-city-county-sheriffs-office-announces-formation-of-drone-operations-team/",
+    ),
+    "bedford_fire_uas": (
+        "Bedford Fire Department 2018 Annual Report",
+        "https://bedfordva.gov/DocumentCenter/View/1970/BFD-Annual-Report-2018-PDF",
+    ),
+    "bedford_fire_drone_replacement": (
+        "Bedford Town Council 2022 Drone Replacement Minutes",
+        "https://www.bedfordva.gov/AgendaCenter/ViewFile/Minutes/_08232022-258",
+    ),
+    "mag_aerospace": (
+        "MAG Aerospace Corporate Headquarters",
+        "https://www.magaero.com/connect/",
+    ),
+    "inertial_labs": (
+        "Inertial Labs Headquarters and R&D",
+        "https://inertiallabs.com/inertial-labs-inc/",
+    ),
+    "dzyne": (
+        "DZYNE Technologies",
+        "https://dzyne.com/about/",
+    ),
+    "dzyne_location": (
+        "U.S. SBIR Portfolio: DZYNE Technologies",
+        "https://www.sbir.gov/portfolio/406214",
+    ),
+    "ensco": (
+        "ENSCO Capabilities",
+        "https://www.ensco.com/capabilities",
+    ),
+    "ensco_location": (
+        "ENSCO Locations",
+        "https://www.ensco.com/contact/locations",
+    ),
+    "scout_space": (
+        "Scout Space",
+        "https://www.scout.space/",
+    ),
+    "scout_space_location": (
+        "U.S. SBIR Portfolio: Scout Space",
+        "https://www.sbir.gov/portfolio/1543541",
+    ),
+    "usi": (
+        "Universal Solutions International",
+        "https://usi-inc.com/",
+    ),
+    "leidos_autonomy": (
+        "Leidos Multi-Domain Autonomy",
+        "https://investors.leidos.com/node/35791/pdf",
+    ),
+    "leidos_location": (
+        "Leidos Investor FAQs",
+        "https://investors.leidos.com/stockholder-resources/investor-faqs",
+    ),
+    "caci_counter_uas": (
+        "CACI Counter-UAS",
+        "https://www.caci.com/",
+    ),
+    "parsons_counter_uas": (
+        "Parsons Counter-UAS Solutions",
+        "https://www.parsons.com/2026/06/parsons-cuas-solutions-strengthen-national-security-and-protect-critical-infrastructure/",
+    ),
+    "parsons_location": (
+        "Parsons Corporate Office Locations",
+        "https://www.parsons.com/contact-us/",
+    ),
+    "eagle_aviation": (
+        "Eagle Aviation Technologies",
+        "https://eagleaviationtech.com/about-us-1",
+    ),
+    "aircommerce_park": (
+        "Newport News EDA: Patrick Henry Corridor and AirCommerce Park",
+        "https://newportnewsva.com/business-neighborhoods/patrick-henry-corridor/",
+    ),
+    "aircommerce_uas": (
+        "Newport News Aerospace and Aviation Assets",
+        "https://newportnewsva.com/wp-content/uploads/2022/07/NNEDA-Aerospace-Aviation-Flyer.pdf",
+    ),
 }
 
 PROFILES = {
@@ -941,6 +1049,49 @@ PROFILES = {
             "test capacity for autonomous and uncrewed systems."
         ),
     },
+    "federal_training_air": {
+        "categories": ["Federal and defense customer access", "Workforce and talent"],
+        "domains": ["Unmanned aircraft systems"],
+        "capabilities": [
+            "Operations, maintenance, and sustainment",
+            "Systems engineering and integration",
+        ],
+        "missions": ["Training and experimentation", "Force protection and installation security"],
+        "relevance": (
+            "Provides documented federal training, qualification, logistics, or sustainment "
+            "capacity for uncrewed-aircraft operators and systems."
+        ),
+    },
+    "federal_counter_uas": {
+        "categories": [
+            "Federal and defense customer access",
+            "Programs and initiatives",
+            "Research and technical depth",
+        ],
+        "domains": ["Counter-UAS", "Unmanned aircraft systems"],
+        "capabilities": [
+            "Testing, evaluation, verification, and validation",
+            "Operations, maintenance, and sustainment",
+        ],
+        "missions": ["Counter-UAS", "Force protection and installation security"],
+        "relevance": (
+            "Provides documented federal counter-UAS training, capability development, "
+            "experimentation, or operational integration."
+        ),
+    },
+    "aviation_site": {
+        "categories": ["Physical infrastructure and logistics", "Manufacturing and supply chain"],
+        "domains": ["Unmanned aircraft systems"],
+        "capabilities": [
+            "Manufacturing, materials, and prototyping",
+            "Operations, maintenance, and sustainment",
+        ],
+        "missions": ["Training and experimentation", "Logistics and contested logistics"],
+        "relevance": (
+            "Provides documented aviation-accessible land, facilities, or development capacity "
+            "relevant to uncrewed-aircraft research, production, training, and operations."
+        ),
+    },
 }
 
 PLACES = {
@@ -960,6 +1111,8 @@ PLACES = {
     "Chilhowie": (36.798, -81.683),
     "Chincoteague": (37.934, -75.378),
     "Christiansburg": (37.130, -80.409),
+    "Chantilly": (38.875, -77.442),
+    "Charles City": (37.342, -77.073),
     "Clifton Forge": (37.817, -79.824),
     "Colonial Heights": (37.244, -77.410),
     "Courtland": (36.716, -77.068),
@@ -1002,6 +1155,7 @@ PLACES = {
     "Portsmouth": (36.836, -76.298),
     "Powhatan": (37.542, -77.919),
     "Petersburg": (37.227, -77.402),
+    "Paeonian Springs": (39.149, -77.620),
     "Prince George": (37.221, -77.289),
     "South Prince George": (37.158, -77.387),
     "Quantico": (38.522, -77.290),
@@ -1022,6 +1176,7 @@ PLACES = {
     "Boydton": (36.667, -78.387),
     "Spotsylvania": (38.200, -77.589),
     "Virginia Beach": (36.853, -75.978),
+    "Vienna": (38.883, -77.225),
     "Wallops Island": (37.940, -75.467),
     "Warm Springs": (38.052, -79.781),
     "Williamsburg": (37.271, -76.707),
@@ -1805,6 +1960,224 @@ LOCATION_OVERRIDES = {
         "source": (
             "Frederick County Sheriff's Office Special Operations",
             "https://www.fcva.us/departments/sheriff-s-office/divisions/special-operations",
+        ),
+    },
+    "NASA Langley ROAM UAS Operations Center": {
+        "address_line": "Building Complex 1268, 2 Langley Boulevard",
+        "postal_code": "23681",
+        "latitude": 37.085639,
+        "longitude": -76.380667,
+        "source": (
+            "NASA Langley maps and directions",
+            "https://www.nasa.gov/centers-and-facilities/langley/maps-directions/",
+        ),
+    },
+    "NASA Langley UAS Test Range": {
+        "address_line": "NASA Langley Research Center, 2 Langley Boulevard",
+        "postal_code": "23681",
+        "latitude": 37.085639,
+        "longitude": -76.380667,
+        "source": (
+            "NASA Langley maps and directions",
+            "https://www.nasa.gov/centers-and-facilities/langley/maps-directions/",
+        ),
+    },
+    "Wallops Research Park": {
+        "address_line": "Aerospace Gateway at Mill Dam Road",
+        "postal_code": "23337",
+        "latitude": 37.934186,
+        "longitude": -75.484632,
+        "source": (
+            "Accomack County Wallops Research Park",
+            "https://www.accomack.gov/614/Background-Timeline",
+        ),
+    },
+    "NSWC Dahlgren UAV Test Runway": {
+        "address_line": "Runway 16/34, Naval Support Facility Dahlgren",
+        "postal_code": "22448",
+        "latitude": 38.333027,
+        "longitude": -77.037130,
+        "source": (
+            "OpenStreetMap named-site map data",
+            "https://www.openstreetmap.org/copyright",
+        ),
+    },
+    "NSWCDD Dam Neck Activity": {
+        "address_line": "1922 Regulus Avenue",
+        "postal_code": "23461",
+        "latitude": 36.776826,
+        "longitude": -75.957372,
+        "source": (
+            "NSWCDD Dam Neck Activity visitor information",
+            "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Dam-Neck/",
+        ),
+    },
+    "Navy TALSA East Small UAS Training Facility": {
+        "address_line": "Joint Expeditionary Base Little Creek-Fort Story, 1815 Seabee Road",
+        "postal_code": "23459",
+        "latitude": 36.918239,
+        "longitude": -76.156529,
+        "source": (
+            "Joint Expeditionary Base Little Creek-Fort Story contact information",
+            "https://cnrma.cnic.navy.mil/Installations/JEB-Little-Creek-Fort-Story/Contact-Us/",
+        ),
+    },
+    "Marine Corps Counter-Drone Team": {
+        "address_line": "Weapons Training Battalion, 27211 Garand Road",
+        "postal_code": "22134",
+        "latitude": 38.531927,
+        "longitude": -77.431232,
+        "source": (
+            "Weapons Training Battalion contact information",
+            "https://www.trngcmd.marines.mil/Units/Weapons-Training-Battalion/Contact-Us/",
+        ),
+    },
+    "Fairfax County Police Drone as First Responder Program": {
+        "address_line": "12099 Government Center Parkway",
+        "postal_code": "22035",
+        "latitude": 38.857284,
+        "longitude": -77.360811,
+        "source": (
+            "Fairfax County Police headquarters",
+            "https://www.fairfaxcounty.gov/police/",
+        ),
+    },
+    "Charles City County Sheriff's Office Drone Operations Team": {
+        "address_line": "10780 Courthouse Road",
+        "postal_code": "23030",
+        "latitude": 37.341750,
+        "longitude": -77.072764,
+        "source": (
+            "Charles City County Sheriff's Office directory",
+            "https://www.charlescityva.us/directory.aspx?did=20",
+        ),
+    },
+    "Bedford Fire Department UAS Program": {
+        "address_line": "315 Bedford Avenue",
+        "postal_code": "24523",
+        "latitude": 37.336652,
+        "longitude": -79.523684,
+        "source": (
+            "Bedford Fire Department contact information",
+            "https://www.bedfordva.gov/154/Fire-Department",
+        ),
+    },
+    "Radford University First Responder UAS Capability": {
+        "address_line": "801 East Main Street",
+        "postal_code": "24142",
+        "latitude": 37.138524,
+        "longitude": -80.547221,
+        "source": (
+            "Radford University contact information",
+            "https://www.radford.edu/admissions/contact/index.html",
+        ),
+    },
+    "MAG Aerospace": {
+        "address_line": "12730 Fair Lakes Circle, Suite 600",
+        "postal_code": "22033",
+        "latitude": 38.858248,
+        "longitude": -77.385442,
+        "location_precision": "exact",
+        "source": ("MAG Aerospace contact information", "https://www.magaero.com/connect/"),
+    },
+    "Inertial Labs": {
+        "address_line": "39959 Catoctin Ridge Street",
+        "postal_code": "20129",
+        "latitude": 39.148926,
+        "longitude": -77.620274,
+        "location_precision": "exact",
+        "source": (
+            "Inertial Labs headquarters and R&D address",
+            "https://inertiallabs.com/inertial-labs-inc/",
+        ),
+    },
+    "DZYNE Technologies": {
+        "address_line": "8280 Willow Oaks Corporate Drive, Suite 200",
+        "postal_code": "22031",
+        "latitude": 38.863831,
+        "longitude": -77.230173,
+        "location_precision": "exact",
+        "source": (
+            "U.S. SBIR portfolio company address",
+            "https://www.sbir.gov/portfolio/406214",
+        ),
+    },
+    "ENSCO": {
+        "address_line": "2600 Park Tower Drive, Suite 400",
+        "postal_code": "22180",
+        "latitude": 38.882696,
+        "longitude": -77.225255,
+        "location_precision": "exact",
+        "source": ("ENSCO locations", "https://www.ensco.com/contact/locations"),
+    },
+    "Scout Space": {
+        "address_line": "2002 Edmund Halley Drive",
+        "postal_code": "20191",
+        "latitude": 38.951004,
+        "longitude": -77.361571,
+        "location_precision": "exact",
+        "source": (
+            "U.S. SBIR portfolio company address",
+            "https://www.sbir.gov/portfolio/1543541",
+        ),
+    },
+    "Universal Solutions International": {
+        "address_line": "11827 Canon Boulevard, Suite 203",
+        "postal_code": "23606",
+        "latitude": 37.088151,
+        "longitude": -76.470619,
+        "location_precision": "exact",
+        "source": ("Universal Solutions International", "https://usi-inc.com/"),
+    },
+    "Leidos": {
+        "address_line": "1750 Presidents Street",
+        "postal_code": "20190",
+        "latitude": 38.958937,
+        "longitude": -77.355528,
+        "location_precision": "exact",
+        "source": (
+            "Leidos corporate headquarters",
+            "https://investors.leidos.com/stockholder-resources/investor-faqs",
+        ),
+    },
+    "CACI International": {
+        "address_line": "12021 Sunset Hills Road",
+        "postal_code": "20190",
+        "latitude": 38.955088,
+        "longitude": -77.357265,
+        "location_precision": "exact",
+        "source": (
+            "CACI maritime and counter-UAS capability statement",
+            "https://www.caci.com/sites/default/files/2022-11/F614_2210_Maritime_cUAS.pdf",
+        ),
+    },
+    "Parsons": {
+        "address_line": "14291 Park Meadow Drive, Suite 100",
+        "postal_code": "20151",
+        "latitude": 38.875067,
+        "longitude": -77.441846,
+        "location_precision": "exact",
+        "source": ("Parsons office locations", "https://www.parsons.com/contact-us/"),
+    },
+    "Eagle Aviation Technologies": {
+        "address_line": "7505 Warwick Boulevard",
+        "postal_code": "23607",
+        "latitude": 37.014492,
+        "longitude": -76.448543,
+        "location_precision": "exact",
+        "source": (
+            "Eagle Aviation Technologies contact information",
+            "https://eagleaviationtech.com/contact-us",
+        ),
+    },
+    "Newport News AirCommerce Park": {
+        "address_line": "Newport News-Williamsburg International Airport, 900 Bland Boulevard",
+        "postal_code": "23602",
+        "latitude": 37.132177,
+        "longitude": -76.502792,
+        "source": (
+            "Newport News EDA AirCommerce Park",
+            "https://newportnewsva.com/business-neighborhoods/patrick-henry-corridor/",
         ),
     },
 }
@@ -4172,6 +4545,211 @@ CURATED_ASSETS.extend(
     ]
 )
 
+# Facilities and operating organizations added in the August 2026 statewide expansion.
+# Each entry is distinct from its parent campus, installation, or countywide program.
+CURATED_ASSETS.extend(
+    [
+        (
+            "NASA Langley ROAM UAS Operations Center",
+            "facility",
+            "Hampton",
+            "Hampton Roads",
+            "research_air",
+            "Building 1268 operations center for BVLOS research, live-virtual-constructive flight operations, and human-autonomy teaming with multiple vehicles.",
+            "nasa_roam",
+        ),
+        (
+            "NASA Langley UAS Test Range",
+            "operating-environment",
+            "Hampton",
+            "Hampton Roads",
+            "research_air",
+            "NASA-operated 100-acre small-UAS flight range supporting research flights and testing near the CERTAIN city environment.",
+            "nasa_certain",
+        ),
+        (
+            "Wallops Research Park",
+            "operating-environment",
+            "Wallops Island",
+            "Eastern Shore",
+            "test_multi",
+            "Publicly documented aerospace and science research park adjoining NASA Wallops, with land planned for research, education, aircraft, and industrial activity.",
+            ("wallops_research_park", "wallops_research_park_location"),
+        ),
+        (
+            "NSWC Dahlgren UAV Test Runway",
+            "operating-environment",
+            "Dahlgren",
+            "Fredericksburg Region",
+            "federal_autonomy",
+            "Dedicated Navy runway identified for in-house research, development, and testing of UAV sensors, payloads, and weapons.",
+            "nswc_dahlgren",
+        ),
+        (
+            "NSWCDD Dam Neck Activity",
+            "organization",
+            "Virginia Beach",
+            "Hampton Roads",
+            "federal_autonomy",
+            "Dahlgren Division activity developing warfare-system capabilities that include intelligent automation, autonomy, AI, and unmanned systems.",
+            "dam_neck_activity",
+        ),
+        (
+            "Navy TALSA East Small UAS Training Facility",
+            "facility",
+            "Virginia Beach",
+            "Hampton Roads",
+            "federal_training_air",
+            "Navy training and logistics facility providing entry-level small-UAS qualification, system storage, supply, and maintenance support.",
+            "talsa_east",
+        ),
+        (
+            "Marine Corps Counter-Drone Team",
+            "organization",
+            "Quantico",
+            "Fredericksburg Region",
+            "federal_counter_uas",
+            "Weapons Training Battalion element responsible for counter-drone training development, integration, and support to Marine Corps units.",
+            "marine_counter_drone_team",
+        ),
+        (
+            "Fairfax County Police Drone as First Responder Program",
+            "program",
+            "Fairfax",
+            "Northern Virginia",
+            "public_safety",
+            "Operational DFR program using remotely piloted docking-station aircraft and Real Time Crime Center staff for rapid incident awareness.",
+            ("fairfax_dfr", "fairfax_county_uas"),
+        ),
+        (
+            "Charles City County Sheriff's Office Drone Operations Team",
+            "program",
+            "Charles City",
+            "Greater Richmond",
+            "public_safety",
+            "Joint sheriff and fire-EMS drone team formed for search and rescue, disaster response, scene analysis, and emergency operations.",
+            "charles_city_uas",
+        ),
+        (
+            "Bedford Fire Department UAS Program",
+            "program",
+            "Bedford",
+            "Lynchburg Region",
+            "public_safety",
+            "Municipal fire-department drone capability documented through program reporting and a later aircraft-replacement authorization.",
+            ("bedford_fire_uas", "bedford_fire_drone_replacement"),
+        ),
+        (
+            "Radford University First Responder UAS Capability",
+            "program",
+            "Radford",
+            "New River Valley",
+            "public_safety",
+            "A CY 2026 Virginia award documents an unmanned aircraft already used by an eligible university first-responder agency; the public chart does not identify the operator.",
+            ("dcjs_awards", "dcjs_drone"),
+        ),
+        (
+            "MAG Aerospace",
+            "organization",
+            "Fairfax",
+            "Northern Virginia",
+            "company_cross",
+            "Virginia-headquartered aerospace company operating and integrating manned and unmanned aircraft, sensors, and mission systems worldwide.",
+            "mag_aerospace",
+        ),
+        (
+            "Inertial Labs",
+            "organization",
+            "Paeonian Springs",
+            "Northern Virginia",
+            "enabling",
+            "Virginia headquarters and R&D operation developing inertial navigation, positioning, and sensor-fusion systems for UAV, UGV, and marine platforms.",
+            "inertial_labs",
+        ),
+        (
+            "DZYNE Technologies",
+            "organization",
+            "Fairfax",
+            "Northern Virginia",
+            "company_counter_uas",
+            "Fairfax office of an autonomous-systems company developing long-endurance unmanned aircraft, autonomy software, and counter-unmanned capabilities.",
+            ("dzyne", "dzyne_location"),
+        ),
+        (
+            "ENSCO",
+            "organization",
+            "Vienna",
+            "Northern Virginia",
+            "company_cross",
+            "Virginia-headquartered engineering company providing autonomous-system, machine-vision, vehicle-monitoring, and resilient positioning capabilities.",
+            ("ensco", "ensco_location"),
+        ),
+        (
+            "Scout Space",
+            "organization",
+            "Reston",
+            "Northern Virginia",
+            "company_cross",
+            "Reston space-technology company developing autonomous sensing and navigation software for spacecraft inspection and space-domain awareness.",
+            ("scout_space", "scout_space_location"),
+        ),
+        (
+            "Universal Solutions International",
+            "organization",
+            "Newport News",
+            "Hampton Roads",
+            "company_air",
+            "Newport News engineering and professional-services company supporting Army aviation and manned and unmanned aircraft systems.",
+            "usi",
+        ),
+        (
+            "Leidos",
+            "organization",
+            "Reston",
+            "Northern Virginia",
+            "company_cross",
+            "Reston-headquartered technology company with documented multi-domain autonomy, autonomous aerial logistics, maritime autonomy, and uncrewed-systems work.",
+            ("leidos_autonomy", "leidos_location"),
+        ),
+        (
+            "CACI International",
+            "organization",
+            "Reston",
+            "Northern Virginia",
+            "company_counter_uas",
+            "Reston-headquartered defense-technology company providing counter-UAS sensing, electronic warfare, command-and-control, and systems integration.",
+            "caci_counter_uas",
+        ),
+        (
+            "Parsons",
+            "organization",
+            "Chantilly",
+            "Northern Virginia",
+            "company_counter_uas",
+            "Chantilly-headquartered technology company with documented counter-UAS detection, tracking, command-and-control, and defeat solutions.",
+            ("parsons_counter_uas", "parsons_location"),
+        ),
+        (
+            "Eagle Aviation Technologies",
+            "organization",
+            "Newport News",
+            "Hampton Roads",
+            "company_air",
+            "Newport News aerospace design, manufacturing, and test company supporting manned and unmanned platforms and prototype aircraft systems.",
+            "eagle_aviation",
+        ),
+        (
+            "Newport News AirCommerce Park",
+            "infrastructure",
+            "Newport News",
+            "Hampton Roads",
+            "aviation_site",
+            "Airport-property business park with corporate hangars, specialized military training facilities, and development capacity for aviation and UAS activity.",
+            ("aircommerce_park", "aircommerce_uas"),
+        ),
+    ]
+)
+
 DCJS_JURISDICTION_UAS_ASSETS = [
     ("Amherst County", "Amherst", "Lynchburg Region"),
     ("Town of Ashland", "Ashland", "Greater Richmond"),
@@ -4365,6 +4943,49 @@ CATALOG_RELATIONSHIPS = [
         "Marine Corps Base Quantico",
         "supports",
         "Marine Corps Warfighting Laboratory",
+    ),
+    (
+        "NASA Langley Research Center",
+        "operates",
+        "NASA Langley ROAM UAS Operations Center",
+    ),
+    (
+        "NASA Langley Research Center",
+        "operates",
+        "NASA Langley UAS Test Range",
+    ),
+    (
+        "NASA Langley ROAM UAS Operations Center",
+        "supports",
+        "NASA Langley CERTAIN",
+    ),
+    ("NASA Wallops Flight Facility", "partners-with", "Wallops Research Park"),
+    (
+        "Naval Surface Warfare Center Dahlgren Division",
+        "operates",
+        "NSWC Dahlgren UAV Test Runway",
+    ),
+    ("Dam Neck Annex", "hosts", "NSWCDD Dam Neck Activity"),
+    (
+        "Joint Expeditionary Base Little Creek-Fort Story",
+        "hosts",
+        "Navy TALSA East Small UAS Training Facility",
+    ),
+    ("Marine Corps Base Quantico", "hosts", "Marine Corps Counter-Drone Team"),
+    (
+        "Fairfax County Unmanned Aircraft Systems Program",
+        "supports",
+        "Fairfax County Police Drone as First Responder Program",
+    ),
+    (
+        "Radford University",
+        "supports",
+        "Radford University First Responder UAS Capability",
+    ),
+    (
+        "Newport News AirCommerce Park",
+        "located-at",
+        "Newport News/Williamsburg Intl",
     ),
 ]
 
