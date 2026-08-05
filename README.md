@@ -28,7 +28,7 @@ The checked-in catalog contains source-backed, publicly documented Virginia reco
   distinguished from any future federal designations
 - Password recovery, login throttling, optional TOTP MFA, and optional OIDC organization sign-in
 - Public correction and addition submissions routed to an editor-only review queue
-- 319 source-backed Virginia records spanning public-use airports, research, workforce, companies, infrastructure, programs, and generalized defense assets
+- 362 source-backed Virginia records spanning public-use airports, research, workforce, companies, infrastructure, programs, and generalized defense assets
 - Backend, frontend state, security-boundary, and import tests
 
 ## Local setup

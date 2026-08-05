@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "virginia_real_assets.json"
-CATALOG_DATE = "2026-07-30"
+CATALOG_DATE = "2026-08-05"
 
 FAA_LAYER = (
     "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
@@ -540,6 +540,102 @@ SOURCES = {
         "Marine Corps Warfighting Laboratory Autonomous Reconnaissance",
         "https://www.marines.mil/News/News-Display/Article/746745/marine-corps-warfighting-lab-tests-autonomous-reconnaissance/",
     ),
+    "dcjs_awards": (
+        "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
+        "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+    ),
+    "caroline_uas": (
+        "Caroline County Fire and Rescue UAS Grant Authorization",
+        "https://co.caroline.va.us/AgendaCenter/ViewFile/Item/7378?fileID=11595",
+    ),
+    "gloucester_uas": (
+        "Gloucester County Sheriff's Office UAS Grant Award",
+        "https://pub-gloucesterva.escribemeetings.com/filestream.ashx?DocumentId=24451",
+    ),
+    "colonial_heights_uas": (
+        "Colonial Heights FY2026 Drone Replacement Appropriation",
+        "https://colonialheightsva.gov/AgendaCenter/ViewFile/Agenda/_02102026-750?packet=true",
+    ),
+    "hampton_joint_uas": (
+        "Hampton Police and Fire UAS Policy",
+        "https://www.hampton.gov/DocumentCenter/View/37936/557-UAS-Unmanned-Aerial-System-PDF",
+    ),
+    "henry_uas": (
+        "Henry County Sheriff's Office Drone Replacement Grant",
+        "https://www.henrycountyva.gov/AgendaCenter/ViewFile/Agenda/_01272026-344",
+    ),
+    "hopewell_uas": (
+        "Hopewell Fire and EMS Operations",
+        "https://www.hopewellva.gov/510/Operations",
+    ),
+    "king_george_uas": (
+        "King George County Public Safety Drone Program",
+        "https://www.kinggeorgecountyva.gov/AgendaCenter/ViewFile/Minutes/_02032026-1454",
+    ),
+    "stafford_uas": (
+        "Stafford County Sheriff's Office Field Operations",
+        "https://www.staffordsheriff.com/content/about/fieldoperations.cfm",
+    ),
+    "frederick_uas": (
+        "Frederick County Sheriff's Office Special Operations",
+        "https://www.fcva.us/departments/sheriff-s-office/divisions/special-operations",
+    ),
+    "powhatan_uas": (
+        "Powhatan County Emergency Operations Plan",
+        "https://www.powhatanva.gov/DocumentCenter/View/8410/Emergency-Operations-Plan-2024",
+    ),
+    "chesapeake_uas": (
+        "Chesapeake Police Operations Bureau",
+        "https://www.cityofchesapeake.net/921/Operations-Bureau",
+    ),
+    "newport_news_dfr": (
+        "Newport News Drones as First Responders",
+        "https://www.nnva.gov/3269/Drones-as-First-Responders",
+    ),
+    "odu_iacs": (
+        "ODU Institute for Autonomous and Connected Systems",
+        "https://www.odu.edu/iacs",
+    ),
+    "odu_minor": (
+        "ODU Uncrewed Systems Design and Development Minor",
+        "https://www.odu.edu/academics/programs/minor/uncrewed-systems-design-development",
+    ),
+    "odu_masts": (
+        "ODU Maritime Autonomous Systems Test Site",
+        "https://www.odu.edu/article/beyond-boats-and-submarines-odu-city-of-norfolk-celebrate-the-opening-of-the-maritime",
+    ),
+    "vims_c4po": (
+        "VIMS Collaboratory for Physical Oceanography",
+        "https://www.vims.edu/research/units/labgroups/c4po/",
+    ),
+    "vims_asl": (
+        "VIMS Autonomous Systems Laboratory",
+        "https://www.vims.edu/people/patterson_mr/",
+    ),
+    "vims_hab": (
+        "VIMS Harmful Algal Bloom Technology",
+        "https://www.vims.edu/bayinfo/habs/tech/",
+    ),
+    "blue_vigil": (
+        "Blue Vigil Autonomous Aerial Lighting",
+        "https://www.bluevigil.com/about",
+    ),
+    "p1_technologies": (
+        "P1 Technologies Roanoke Manufacturing",
+        "https://www.p1tec.com/",
+    ),
+    "vedp_keltech": (
+        "VEDP: Blue Vigil Tether Manufacturing in Roanoke County",
+        "https://www.vedp.org/news/industries-future-unmanned-systems",
+    ),
+    "smart_testbed": (
+        "Virginia Smart Community Testbed Projects",
+        "https://vatestbed.com/projects",
+    ),
+    "space_authority": (
+        "Virginia Spaceport Authority Facilities",
+        "https://www.vaspace.org/our-facilities",
+    ),
 }
 
 PROFILES = {
@@ -581,6 +677,26 @@ PROFILES = {
         "relevance": (
             "Provides documented marine robotics, autonomy, sensing, navigation, or field-test "
             "capacity for surface and undersea systems."
+        ),
+    },
+    "research_cross": {
+        "categories": ["Research and technical depth", "Test and operational environments"],
+        "domains": [
+            "Unmanned aircraft systems",
+            "Ground vehicles and robotics",
+            "Maritime surface systems",
+            "Undersea systems",
+            "Cross-domain autonomy",
+        ],
+        "capabilities": [
+            "Autonomy and artificial intelligence",
+            "Systems engineering and integration",
+            "Testing, evaluation, verification, and validation",
+        ],
+        "missions": ["Training and experimentation"],
+        "relevance": (
+            "Provides documented cross-domain autonomy research, engineering, prototyping, "
+            "simulation, or field-test capacity."
         ),
     },
     "workforce": {
@@ -819,15 +935,22 @@ PLACES = {
     "Accomac": (37.720, -75.665),
     "Abingdon": (36.710, -81.975),
     "Afton": (38.029, -78.835),
+    "Amherst": (37.585, -79.052),
     "Arlington": (38.881, -77.091),
+    "Ashland": (37.759, -77.480),
     "Blackstone": (37.080, -77.997),
     "Blacksburg": (37.229, -80.414),
     "Bowling Green": (38.050, -77.347),
+    "Chatham": (36.826, -79.398),
     "Charlottesville": (38.035, -78.503),
     "Chesapeake": (36.768, -76.288),
     "Chester": (37.356, -77.442),
+    "Chilhowie": (36.798, -81.683),
+    "Chincoteague": (37.934, -75.378),
     "Christiansburg": (37.130, -80.409),
     "Clifton Forge": (37.817, -79.824),
+    "Colonial Heights": (37.244, -77.410),
+    "Courtland": (36.716, -77.068),
     "Culpeper": (38.473, -77.996),
     "Danville": (36.586, -79.395),
     "Dahlgren": (38.333, -77.031),
@@ -839,23 +962,33 @@ PLACES = {
     "Fredericksburg": (38.303, -77.461),
     "Front Royal": (38.918, -78.194),
     "Glen Allen": (37.666, -77.506),
+    "Gloucester": (37.414, -76.526),
+    "Grundy": (37.278, -82.100),
     "Hampton": (37.030, -76.346),
     "Hanover": (37.766, -77.370),
     "Harrisonburg": (38.449, -78.869),
+    "Haymarket": (38.812, -77.636),
     "Henrico": (37.632, -77.515),
+    "Hopewell": (37.305, -77.287),
+    "King George": (38.269, -77.184),
     "Lynchburg": (37.414, -79.142),
     "Leesburg": (39.116, -77.564),
     "Lexington": (37.785, -79.442),
     "Lorton": (38.704, -77.228),
     "Manassas": (38.751, -77.475),
+    "Madison": (38.380, -78.258),
+    "Marion": (36.834, -81.514),
     "Martinsville": (36.691, -79.873),
     "Mattaponi": (37.529, -76.765),
     "Melfa": (37.649, -75.741),
     "Middletown": (39.027, -78.280),
+    "New Market": (38.647, -78.671),
     "Newport News": (37.087, -76.473),
     "Norfolk": (36.851, -76.286),
+    "Occoquan": (38.681, -77.260),
     "Orange": (38.245, -78.013),
     "Portsmouth": (36.836, -76.298),
+    "Powhatan": (37.542, -77.919),
     "Petersburg": (37.227, -77.402),
     "Prince George": (37.221, -77.289),
     "South Prince George": (37.158, -77.387),
@@ -864,8 +997,11 @@ PLACES = {
     "Reston": (38.959, -77.357),
     "Richmond": (37.541, -77.436),
     "Roanoke": (37.271, -79.941),
+    "Rocky Mount": (36.997, -79.892),
     "Rustburg": (37.276, -79.100),
+    "Scottsville": (37.798, -78.495),
     "Springfield": (38.789, -77.187),
+    "Stafford": (38.422, -77.408),
     "Sterling": (39.006, -77.428),
     "Staunton": (38.150, -79.072),
     "Sedley": (36.790, -76.590),
@@ -875,17 +1011,19 @@ PLACES = {
     "Spotsylvania": (38.200, -77.589),
     "Virginia Beach": (36.853, -75.978),
     "Wallops Island": (37.940, -75.467),
+    "Warm Springs": (38.052, -79.781),
     "Williamsburg": (37.271, -76.707),
     "Weyers Cave": (38.288, -78.913),
     "Wise": (36.975, -82.576),
     "Winchester": (39.185, -78.163),
+    "Wytheville": (36.949, -81.084),
     "Yorktown": (37.239, -76.510),
 }
 
-# Hampton Roads locations are anchored to public addresses, campuses, terminal
-# entrances, or installation administrative points. "Site" does not claim an
-# operationally exact location within a large or access-controlled property.
-HAMPTON_ROADS_LOCATIONS = {
+# Specific locations are anchored to public addresses, campuses, terminal entrances,
+# or installation administrative points. "Site" does not claim an operationally exact
+# location within a large or access-controlled property.
+LOCATION_OVERRIDES = {
     "Adaptive Aerospace Group": {
         "address_line": "22 Enterprise Parkway, Suite 320",
         "postal_code": "23666",
@@ -1471,6 +1609,180 @@ HAMPTON_ROADS_LOCATIONS = {
         "source": (
             "Chesterfield County Drone Park dedication",
             "https://www.chesterfield.gov/Calendar.aspx?EID=4094",
+        ),
+    },
+    "Blue Vigil": {
+        "address_line": "45449 Severn Way, Suite 169",
+        "postal_code": "20166",
+        "latitude": 39.020680,
+        "longitude": -77.426677,
+        "source": ("Blue Vigil contact information", "https://www.bluevigil.com/"),
+    },
+    "P1 Technologies Keltech Division": {
+        "address_line": "6591 Merriman Road",
+        "postal_code": "24018",
+        "latitude": 37.197351,
+        "longitude": -79.999510,
+        "source": (
+            "P1 Technologies contact information",
+            "https://www.p1tec.com/contact-us",
+        ),
+    },
+    "Virginia Smart Community Testbed": {
+        "address_line": "2143 Richmond Highway",
+        "postal_code": "22554",
+        "latitude": 38.423823,
+        "longitude": -77.408604,
+        "source": ("Virginia Smart Community Testbed", "https://vatestbed.com/"),
+    },
+    "Virginia Spaceport Authority": {
+        "address_line": "101 West Main Street, Suite 602",
+        "city": "Norfolk",
+        "postal_code": "23510",
+        "latitude": 36.846140,
+        "longitude": -76.293320,
+        "source": (
+            "Virginia Spaceport Authority contact information",
+            "https://www.vaspace.org/contact-us",
+        ),
+    },
+    "ODU Institute for Autonomous and Connected Systems": {
+        "address_line": "5115 Hampton Boulevard",
+        "postal_code": "23529",
+        "latitude": 36.889280,
+        "longitude": -76.303179,
+        "source": ("Old Dominion University contact information", "https://www.odu.edu/about/contact"),
+    },
+    "ODU Uncrewed Systems Design and Development Minor": {
+        "address_line": "5115 Hampton Boulevard",
+        "postal_code": "23529",
+        "latitude": 36.889280,
+        "longitude": -76.303179,
+        "source": ("Old Dominion University contact information", "https://www.odu.edu/about/contact"),
+    },
+    "ODU Drone Certificate Program": {
+        "address_line": "5115 Hampton Boulevard",
+        "postal_code": "23529",
+        "latitude": 36.889280,
+        "longitude": -76.303179,
+        "source": ("Old Dominion University contact information", "https://www.odu.edu/about/contact"),
+    },
+    "ODU Maritime Autonomous Systems Test Site": {
+        "address_line": "1311 Bayville Street",
+        "postal_code": "23503",
+        "latitude": 36.964814,
+        "longitude": -76.288880,
+        "source": (
+            "City of Norfolk Willoughby Boat Ramp",
+            "https://www.norfolk.gov/Facilities/Facility/Details/Willoughby-Boat-Ramp-211",
+        ),
+    },
+    "VIMS Collaboratory for Physical Oceanography": {
+        "address_line": "1375 Greate Road",
+        "city": "Gloucester Point",
+        "postal_code": "23062",
+        "latitude": 37.249323,
+        "longitude": -76.500000,
+        "source": (
+            "Virginia Institute of Marine Science street addresses",
+            "https://www.vims.edu/intranet/street_addresses/",
+        ),
+    },
+    "VIMS Autonomous Systems Laboratory": {
+        "address_line": "1375 Greate Road",
+        "city": "Gloucester Point",
+        "postal_code": "23062",
+        "latitude": 37.249323,
+        "longitude": -76.500000,
+        "source": (
+            "Virginia Institute of Marine Science street addresses",
+            "https://www.vims.edu/intranet/street_addresses/",
+        ),
+    },
+    "VIMS Harmful Algal Bloom Drone Monitoring": {
+        "address_line": "1375 Greate Road",
+        "city": "Gloucester Point",
+        "postal_code": "23062",
+        "latitude": 37.249323,
+        "longitude": -76.500000,
+        "source": (
+            "Virginia Institute of Marine Science street addresses",
+            "https://www.vims.edu/intranet/street_addresses/",
+        ),
+    },
+    "Caroline County Fire and Rescue UAS Program": {
+        "address_line": "233 West Broaddus Avenue",
+        "postal_code": "22427",
+        "latitude": 38.049079,
+        "longitude": -77.356210,
+        "source": (
+            "Caroline County Fire and Rescue contact information",
+            "https://www.co.caroline.va.us/230/Fire-Rescue",
+        ),
+    },
+    "Gloucester County Sheriff's Office UAS Program": {
+        "address_line": "7502 Justice Drive",
+        "postal_code": "23061",
+        "latitude": 37.417783,
+        "longitude": -76.528513,
+        "source": ("Gloucester County Sheriff's Office", "https://gloucesterva.gov/sheriff"),
+    },
+    "Hampton Joint Police and Fire UAS Unit": {
+        "address_line": "22 Lincoln Street",
+        "postal_code": "23669",
+        "latitude": 37.028113,
+        "longitude": -76.343479,
+        "source": ("Hampton Division of Fire and Rescue", "https://www.hampton.gov/244/Fire-Rescue"),
+    },
+    "Chesapeake Police UAS Team": {
+        "address_line": "304 Albemarle Drive",
+        "postal_code": "23322",
+        "latitude": 36.717383,
+        "longitude": -76.247114,
+        "source": ("Chesapeake Police Department", "https://www.cityofchesapeake.net/727/Police-Department"),
+    },
+    "Newport News Drones as First Responders Program": {
+        "address_line": "9710 Jefferson Avenue",
+        "postal_code": "23605",
+        "latitude": 37.029425,
+        "longitude": -76.450613,
+        "source": ("Newport News Drone Unit", "https://www.nnva.gov/2394/Drone-Unit"),
+    },
+    "Colonial Heights Police Drone Program": {
+        "address_line": "100 Highland Avenue",
+        "postal_code": "23834",
+        "latitude": 37.253604,
+        "longitude": -77.410993,
+        "source": (
+            "Colonial Heights Police Department",
+            "https://www.colonialheightsva.gov/156/Police",
+        ),
+    },
+    "Hopewell Fire and EMS Drone Program": {
+        "address_line": "200 South Hopewell Street",
+        "postal_code": "23860",
+        "latitude": 37.304522,
+        "longitude": -77.283966,
+        "source": ("Hopewell Fire and EMS", "https://hopewellva.gov/192/Fire-EMS"),
+    },
+    "Stafford County Sheriff's Office UAS Team": {
+        "address_line": "1225 Courthouse Road",
+        "postal_code": "22554",
+        "latitude": 38.421101,
+        "longitude": -77.413045,
+        "source": (
+            "Stafford County Sheriff's Office",
+            "https://www.staffordsheriff.com/content/about/fieldoperations.cfm",
+        ),
+    },
+    "Frederick County Sheriff's Office sUAS Program": {
+        "address_line": "107 North Kent Street",
+        "postal_code": "22601",
+        "latitude": 39.184242,
+        "longitude": -78.162454,
+        "source": (
+            "Frederick County Sheriff's Office Special Operations",
+            "https://www.fcva.us/departments/sheriff-s-office/divisions/special-operations",
         ),
     },
 }
@@ -3623,6 +3935,261 @@ CURATED_ASSETS = [
     ),
 ]
 
+# Additional current assets verified against agency, university, company, or grant
+# records. Multi-source entries retain both the operational source and the statewide
+# award or ecosystem source that independently supports the record.
+CURATED_ASSETS.extend(
+    [
+        (
+            "Caroline County Fire and Rescue UAS Program",
+            "program",
+            "Bowling Green",
+            "Fredericksburg Region",
+            "public_safety",
+            "County fire-rescue program operating a drone for search and rescue, damage assessment, situational awareness, and emergency response.",
+            ("caroline_uas", "dcjs_awards"),
+        ),
+        (
+            "Gloucester County Sheriff's Office UAS Program",
+            "program",
+            "Gloucester",
+            "Hampton Roads",
+            "public_safety",
+            "Sheriff's Office UAS capability documented by a CY 2026 replacement award naming the project director at the Sheriff's Office.",
+            ("gloucester_uas", "dcjs_awards"),
+        ),
+        (
+            "Colonial Heights Police Drone Program",
+            "program",
+            "Colonial Heights",
+            "Greater Richmond",
+            "public_safety",
+            "Police drone program documented through a current municipal replacement appropriation and statewide award record.",
+            ("colonial_heights_uas", "dcjs_awards"),
+        ),
+        (
+            "Hampton Joint Police and Fire UAS Unit",
+            "program",
+            "Hampton",
+            "Hampton Roads",
+            "public_safety",
+            "Joint city UAS capability governed for police, fire, rescue, emergency-management, and public-safety missions.",
+            ("hampton_joint_uas", "dcjs_awards"),
+        ),
+        (
+            "Henry County Sheriff's Office Drone Program",
+            "program",
+            "Martinsville",
+            "Southside Virginia",
+            "public_safety",
+            "Sheriff's Office drone program documented through the county's CY 2026 replacement-grant authorization.",
+            ("henry_uas", "dcjs_awards"),
+        ),
+        (
+            "Hopewell Fire and EMS Drone Program",
+            "program",
+            "Hopewell",
+            "Greater Richmond",
+            "public_safety",
+            "Fire and EMS emergency-management drone program supporting fire, hazmat, search-and-rescue, and incident-awareness missions.",
+            ("hopewell_uas", "dcjs_awards"),
+        ),
+        (
+            "King George County Public Safety Drone Program",
+            "program",
+            "King George",
+            "Fredericksburg Region",
+            "public_safety",
+            "County public-safety drone capability documented for fire-scene work, thermal training, and missing-person response.",
+            ("king_george_uas", "dcjs_awards"),
+        ),
+        (
+            "Stafford County Sheriff's Office UAS Team",
+            "program",
+            "Stafford",
+            "Fredericksburg Region",
+            "public_safety",
+            "Sheriff's Office UAS team operating since 2016 for searches, incident response, crash documentation, and law-enforcement support.",
+            ("stafford_uas", "dcjs_awards"),
+        ),
+        (
+            "Frederick County Sheriff's Office sUAS Program",
+            "program",
+            "Winchester",
+            "Shenandoah Valley",
+            "public_safety",
+            "Special Operations small-UAS program supporting search and rescue, crash and crime-scene documentation, and public safety.",
+            "frederick_uas",
+        ),
+        (
+            "Powhatan County Emergency Management UAS Program",
+            "program",
+            "Powhatan",
+            "Greater Richmond",
+            "public_safety",
+            "County emergency-management UAS program listed as an active specialty plan with dedicated equipment procedures.",
+            "powhatan_uas",
+        ),
+        (
+            "Chesapeake Police UAS Team",
+            "program",
+            "Chesapeake",
+            "Hampton Roads",
+            "public_safety",
+            "Police Special Operations UAS team supporting city law-enforcement and public-safety response.",
+            "chesapeake_uas",
+        ),
+        (
+            "Newport News Drones as First Responders Program",
+            "program",
+            "Newport News",
+            "Hampton Roads",
+            "public_safety",
+            "City incident-based DFR program integrating police, fire, and EMS with logged flights and public oversight controls.",
+            "newport_news_dfr",
+        ),
+        (
+            "ODU Institute for Autonomous and Connected Systems",
+            "organization",
+            "Norfolk",
+            "Hampton Roads",
+            "research_cross",
+            "Interdisciplinary institute researching uncrewed aerial, surface, and underwater vehicles, robotics, connected mobility, sensing, and AI.",
+            "odu_iacs",
+        ),
+        (
+            "ODU Uncrewed Systems Design and Development Minor",
+            "program",
+            "Norfolk",
+            "Hampton Roads",
+            "workforce_robotics",
+            "Twelve-credit undergraduate minor covering design and operation of uncrewed aerial, surface, and underwater systems.",
+            "odu_minor",
+        ),
+        (
+            "ODU Drone Certificate Program",
+            "program",
+            "Norfolk",
+            "Hampton Roads",
+            "workforce",
+            "Hands-on certificate program identified by ODU's autonomy institute as preparation for engineers, scientists, and drone innovators.",
+            "odu_iacs",
+        ),
+        (
+            "ODU Maritime Autonomous Systems Test Site",
+            "facility",
+            "Norfolk",
+            "Hampton Roads",
+            "research_marine",
+            "Willoughby Bay waterfront test site with a floating dock, crane, covered workspace, utilities, and chase boat for autonomous surface and underwater systems.",
+            "odu_masts",
+        ),
+        (
+            "VIMS Collaboratory for Physical Oceanography",
+            "organization",
+            "Williamsburg",
+            "Hampton Roads",
+            "research_marine",
+            "Marine research group using autonomous underwater gliders, floats, drifters, radar, satellites, moorings, and ships for coastal observations.",
+            "vims_c4po",
+        ),
+        (
+            "VIMS Autonomous Systems Laboratory",
+            "organization",
+            "Williamsburg",
+            "Hampton Roads",
+            "research_marine",
+            "Laboratory designing and building free-swimming autonomous underwater vehicles for oceanographic sensing and field research.",
+            "vims_asl",
+        ),
+        (
+            "VIMS Harmful Algal Bloom Drone Monitoring",
+            "program",
+            "Williamsburg",
+            "Hampton Roads",
+            "agriculture",
+            "Aerial-drone monitoring program capturing high-definition imagery to locate and track harmful algal blooms in the lower Chesapeake Bay.",
+            "vims_hab",
+        ),
+        (
+            "Blue Vigil",
+            "organization",
+            "Sterling",
+            "Northern Virginia",
+            "company_air",
+            "Virginia company developing tethered-drone power systems and autonomous aerial lighting for construction, public safety, utilities, and emergency scenes.",
+            ("blue_vigil", "vedp_keltech"),
+        ),
+        (
+            "P1 Technologies Keltech Division",
+            "organization",
+            "Roanoke",
+            "Roanoke Valley",
+            "enabling",
+            "Roanoke manufacturing operation documented by VEDP as the producer of Blue Vigil's tethered-drone systems.",
+            ("p1_technologies", "vedp_keltech"),
+        ),
+        (
+            "Virginia Smart Community Testbed",
+            "operating-environment",
+            "Stafford",
+            "Fredericksburg Region",
+            "test_multi",
+            "Stafford living laboratory for emerging technologies with a documented 5G public-safety drone pilot and autonomous-equipment demonstrations.",
+            "smart_testbed",
+        ),
+        (
+            "Virginia Spaceport Authority",
+            "organization",
+            "Norfolk",
+            "Hampton Roads",
+            "state",
+            "State authority that owns and operates MARS and its dedicated UAS airfield, restricted-airspace access, runway, VTOL pad, and hangar.",
+            "space_authority",
+        ),
+    ]
+)
+
+DCJS_JURISDICTION_UAS_ASSETS = [
+    ("Amherst County", "Amherst", "Lynchburg Region"),
+    ("Town of Ashland", "Ashland", "Greater Richmond"),
+    ("Bath County", "Warm Springs", "Shenandoah Valley"),
+    ("Buchanan County", "Grundy", "Southwest Virginia"),
+    ("Town of Chilhowie", "Chilhowie", "Southwest Virginia"),
+    ("Town of Chincoteague", "Chincoteague", "Eastern Shore"),
+    ("Town of Haymarket", "Haymarket", "Northern Virginia"),
+    ("Madison County", "Madison", "Central Virginia"),
+    ("City of Manassas", "Manassas", "Northern Virginia"),
+    ("Town of New Market", "New Market", "Shenandoah Valley"),
+    ("Town of Occoquan", "Occoquan", "Northern Virginia"),
+    ("Pittsylvania County", "Chatham", "Southside Virginia"),
+    ("City of Radford", "Radford", "New River Valley"),
+    ("Town of Rocky Mount", "Rocky Mount", "Roanoke Valley"),
+    ("Town of Scottsville", "Scottsville", "Central Virginia"),
+    ("Smyth County", "Marion", "Southwest Virginia"),
+    ("Southampton County", "Courtland", "Southside Virginia"),
+    ("City of Staunton", "Staunton", "Shenandoah Valley"),
+    ("Wise County", "Wise", "Southwest Virginia"),
+    ("Wythe County", "Wytheville", "Southwest Virginia"),
+]
+
+CURATED_ASSETS.extend(
+    (
+        f"{jurisdiction} First Responder UAS Capability",
+        "program",
+        place,
+        region,
+        "public_safety",
+        (
+            f"A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by "
+            f"an eligible local first responder agency in {jurisdiction}; the public award "
+            "record does not identify the operating department."
+        ),
+        ("dcjs_awards", "dcjs_drone"),
+    )
+    for jurisdiction, place, region in DCJS_JURISDICTION_UAS_ASSETS
+)
+
 CATALOG_RELATIONSHIPS = [
     ("Mid-Atlantic Aviation Partnership", "operates", "Virginia Tech Drone Park"),
     ("Mid-Atlantic Aviation Partnership", "operates", "MARS Unmanned Aircraft Systems Airfield"),
@@ -3779,6 +4346,58 @@ CATALOG_RELATIONSHIPS = [
     ),
 ]
 
+CATALOG_RELATIONSHIPS.extend(
+    [
+        (
+            "ODU Institute for Autonomous and Connected Systems",
+            "supports",
+            "ODU Uncrewed Systems Design and Development Minor",
+        ),
+        (
+            "ODU Institute for Autonomous and Connected Systems",
+            "supports",
+            "ODU Drone Certificate Program",
+        ),
+        (
+            "ODU Institute for Autonomous and Connected Systems",
+            "supports",
+            "ODU Maritime Autonomous Systems Test Site",
+        ),
+        (
+            "Virginia Institute of Marine Science",
+            "supports",
+            "VIMS Collaboratory for Physical Oceanography",
+        ),
+        (
+            "Virginia Institute of Marine Science",
+            "supports",
+            "VIMS Autonomous Systems Laboratory",
+        ),
+        (
+            "Virginia Institute of Marine Science",
+            "supports",
+            "VIMS Harmful Algal Bloom Drone Monitoring",
+        ),
+        ("Virginia Spaceport Authority", "operates", "Mid-Atlantic Regional Spaceport"),
+        (
+            "Virginia Spaceport Authority",
+            "operates",
+            "MARS Unmanned Aircraft Systems Airfield",
+        ),
+        ("P1 Technologies Keltech Division", "manufactures-for", "Blue Vigil"),
+        (
+            "Virginia Innovation Partnership Corporation",
+            "supports",
+            "Virginia Smart Community Testbed",
+        ),
+        (
+            "Newport News Police and Fire Drone Unit",
+            "supports",
+            "Newport News Drones as First Responders Program",
+        ),
+    ]
+)
+
 
 def source(key):
     title, url = SOURCES[key]
@@ -3786,7 +4405,7 @@ def source(key):
 
 
 def apply_location_override(record):
-    override = HAMPTON_ROADS_LOCATIONS.get(record["name"])
+    override = LOCATION_OVERRIDES.get(record["name"])
     if not override:
         return record
 
@@ -3987,7 +4606,8 @@ def curated_records():
     for name, record_type, place, region, profile_key, description, source_key in CURATED_ASSETS:
         latitude, longitude = PLACES[place]
         profile = PROFILES[profile_key]
-        record_source = source(source_key)
+        source_keys = (source_key,) if isinstance(source_key, str) else source_key
+        record_sources = [source(key) for key in source_keys]
         records.append(
             apply_location_override(
                 {
@@ -4005,8 +4625,8 @@ def curated_records():
                     "platform_domains": profile["domains"],
                     "capabilities": profile["capabilities"],
                     "missions": profile["missions"],
-                    "website_url": record_source["url"],
-                    "sources": [record_source],
+                    "website_url": record_sources[0]["url"],
+                    "sources": record_sources,
                     "provenance": "curated-public-source",
                 }
             )
@@ -4062,10 +4682,10 @@ def main():
         "methodology": (
             "Current operational public-use aviation facilities from the FAA feature service, "
             "publicly listed installations from the Virginia Military Factbook, and a curated "
-            "set of source-backed ecosystem records. Hampton Roads street and site locations "
-            "are anchored to official public address sources and geocoded against the U.S. "
-            "Census address ranges; named-site centroids are used when no public street point "
-            "is available."
+            "set of source-backed ecosystem records. Specific street and site locations are "
+            "anchored to official public address sources and geocoded against the U.S. Census "
+            "address ranges or named-site map data; locality points are retained when the public "
+            "record does not identify the operating department or facility."
         ),
         "relationships": [
             {"from": from_name, "type": relationship_type, "to": to_name}
