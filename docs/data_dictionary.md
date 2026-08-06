@@ -22,6 +22,8 @@ Catalog-loaded records include an internal provenance marker. The public source 
 
 `StrategicCategory`, `PlatformDomain`, `Capability`, and `MissionArea` are independent many-to-many dimensions. Each has a stable slug, display order, active flag, and optional description. `Region` is a geographic grouping and a direct asset relationship for the MVP.
 
+Every catalog record has exactly one ecosystem-role strategic category. `Core unmanned-systems asset` means the named record has direct, publicly documented unmanned-systems research, products, operations, training, testing, or program activity. `Supporting ecosystem asset` means the record provides broader enabling capacity, such as an institution-level university, public-use airport, general installation, port, economic-development organization, or development site. The role is a scope classification, not a quality score, verification status, funding priority, or judgment about an organization's importance. A university may therefore be supporting at the institution level while a separately documented autonomy laboratory at that university is core.
+
 `Advanced Air Mobility` is a platform domain applied only where a public source documents AAM, eVTOL, enabling airspace integration, or an AAM-specific program. It is not applied automatically to every airport or UAS record.
 
 ## Source

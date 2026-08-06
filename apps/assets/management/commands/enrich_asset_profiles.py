@@ -7,7 +7,7 @@ from django.core.management.base import BaseCommand
 from django.db import transaction
 
 from apps.assets.models import Asset
-from apps.catalog.models import PlatformDomain, Region
+from apps.catalog.models import PlatformDomain, Region, StrategicCategory
 from apps.sources.models import Source
 
 PROFILE_FIELDS = (
@@ -41,6 +41,42 @@ LEGACY_DESCRIPTIONS = {
     "Private nonprofit degree-granting college or university in Virginia.",
     "Private degree-granting university included in SCHEV statewide completion reporting.",
 }
+ECOSYSTEM_ROLE_CATEGORIES = {
+    "Core unmanned-systems asset",
+    "Supporting ecosystem asset",
+}
+TARGET_LOCATION_UPGRADES = {
+    "ANRA Technologies",
+    "AeroVironment Corporate Headquarters",
+    "Aurora Flight Sciences",
+    "Virginia Tech Drone Park",
+    "Virginia Unmanned Systems Center",
+}
+TARGET_CONTACT_UPGRADES = {
+    "ANRA Technologies",
+    "Advanced Aircraft Company",
+    "AeroVironment Corporate Headquarters",
+    "Aurora Flight Sciences",
+    "Longbow Unmanned Systems Research and Test Center",
+    "Mid-Atlantic Aviation Partnership",
+    "ODU Institute for Autonomous and Connected Systems",
+    "ODU Maritime Autonomous Systems Test Site",
+    "Virginia Tech Drone Park",
+    "Virginia Unmanned Systems Center",
+    "Wallops Research Park",
+}
+GENERATED_CONTACT_SCOPES = {
+    "Facility or operator public information",
+    "Organization public information and inquiries",
+    "Public information route; a direct asset contact is not published in the catalog",
+    "Site operator or program information",
+}
+STALE_CATALOG_SOURCE_URLS = {
+    "HII Unmanned Systems Center of Excellence": {
+        "https://www.hampton.gov/CivicAlerts.aspx?AID=4656&ARC=9365",
+        "https://www.hampton.gov/CivicAlerts.aspx?AID=4759&ARC=9695",
+    },
+}
 
 
 class Command(BaseCommand):
@@ -59,6 +95,7 @@ class Command(BaseCommand):
         records = json.loads(options["catalog"].read_text())["records"]
         updated_assets = 0
         added_sources = 0
+        removed_stale_sources = 0
         for record in records:
             asset = Asset.objects.filter(name=record["name"]).first()
             if asset is None:
@@ -80,6 +117,29 @@ class Command(BaseCommand):
                 if not asset.platform_domains.filter(pk=aam_domain.pk).exists():
                     asset.platform_domains.add(aam_domain)
 
+            for category_name in ECOSYSTEM_ROLE_CATEGORIES.intersection(
+                record.get("strategic_categories", [])
+            ):
+                role_category, _created = StrategicCategory.objects.get_or_create(
+                    name=category_name
+                )
+                if not asset.strategic_categories.filter(pk=role_category.pk).exists():
+                    asset.strategic_categories.add(role_category)
+
+            if (
+                record["name"] in TARGET_CONTACT_UPGRADES
+                and asset.contact_text in GENERATED_CONTACT_SCOPES
+            ):
+                for field in (
+                    "contact_text",
+                    "contact_phone",
+                    "contact_email",
+                    "contact_url",
+                ):
+                    if record.get(field):
+                        setattr(asset, field, record[field])
+                        changed_fields.append(field)
+
             legacy_airport_description = asset.short_description.startswith(
                 "Operational public-use Virginia aviation facility (FAA identifier "
             )
@@ -92,6 +152,35 @@ class Command(BaseCommand):
                     if not getattr(asset, field) and record.get(field):
                         setattr(asset, field, record[field])
                         changed_fields.append(field)
+
+            if (
+                record["name"] in TARGET_LOCATION_UPGRADES
+                and asset.location_precision
+                in {
+                    Asset.LocationPrecision.APPROXIMATE,
+                    Asset.LocationPrecision.LOCALITY,
+                }
+                and record.get("location_precision")
+                in {
+                    Asset.LocationPrecision.EXACT,
+                    Asset.LocationPrecision.SITE,
+                }
+            ):
+                for field in (
+                    "address_line",
+                    "city",
+                    "postal_code",
+                    "latitude",
+                    "longitude",
+                    "location_precision",
+                ):
+                    setattr(asset, field, record.get(field))
+                    changed_fields.append(field)
+                asset.region, _created = Region.objects.get_or_create(
+                    name=record["region"],
+                    defaults={"region_type": "Virginia ecosystem region"},
+                )
+                changed_fields.append("region")
 
             legacy_city = LOCATION_CORRECTION_LEGACY_CITIES.get(record["name"])
             if (
@@ -137,9 +226,20 @@ class Command(BaseCommand):
                 existing_urls.add(source_data["url"])
                 added_sources += 1
 
+            stale_urls = STALE_CATALOG_SOURCE_URLS.get(record["name"], set())
+            if stale_urls:
+                deleted_count, _details = asset.sources.filter(
+                    url__in=stale_urls,
+                    notes__startswith="Catalog provenance:",
+                    verification_status="unreviewed",
+                    link_review_status=Source.LinkReviewStatus.AUTOMATIC,
+                ).delete()
+                removed_stale_sources += deleted_count
+
         self.stdout.write(
             self.style.SUCCESS(
                 f"Enriched {updated_assets} existing assets and added "
-                f"{added_sources} public sources."
+                f"{added_sources} public sources; removed "
+                f"{removed_stale_sources} obsolete catalog sources."
             )
         )

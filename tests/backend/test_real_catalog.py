@@ -308,6 +308,102 @@ class RealCatalogFileTests(TestCase):
         self.assertEqual(virginia_fix["location_precision"], "regional")
         self.assertIsNone(virginia_fix["latitude"])
 
+    def test_priority_asset_profiles_use_current_official_evidence(self):
+        catalog = self.load_catalog()
+        records_by_name = {record["name"]: record for record in catalog["records"]}
+        priority_assets = {
+            "Advanced Aircraft Company",
+            "AeroVironment Corporate Headquarters",
+            "ANRA Technologies",
+            "Aurora Flight Sciences",
+            "HII Unmanned Systems Center of Excellence",
+            "Longbow Unmanned Systems Research and Test Center",
+            "Mid-Atlantic Aviation Partnership",
+            "Newport News AirCommerce Park",
+            "ODU Institute for Autonomous and Connected Systems",
+            "ODU Maritime Autonomous Systems Test Site",
+            "Virginia Tech Drone Park",
+            "Virginia Unmanned Systems Center",
+            "Wallops Research Park",
+        }
+
+        self.assertTrue(priority_assets.issubset(records_by_name))
+        for name in priority_assets:
+            record = records_by_name[name]
+            source_urls = {source["url"] for source in record["sources"]}
+            self.assertTrue(record["activity_status"], name)
+            self.assertTrue(record["current_activity"], name)
+            self.assertTrue(record["partnership_opportunities"], name)
+            self.assertEqual(record["activity_last_verified_at"], "2026-08-06")
+            self.assertIn(record["activity_source_url"], source_urls)
+            self.assertIn(record["contact_url"], source_urls)
+
+        precise_assets = {
+            "ANRA Technologies",
+            "AeroVironment Corporate Headquarters",
+            "Aurora Flight Sciences",
+            "Virginia Tech Drone Park",
+            "Virginia Unmanned Systems Center",
+        }
+        for name in precise_assets:
+            record = records_by_name[name]
+            self.assertEqual(record["location_precision"], "site", name)
+            self.assertTrue(record["address_line"], name)
+            self.assertIsNotNone(record["latitude"], name)
+            self.assertIsNotNone(record["longitude"], name)
+
+        self.assertEqual(
+            records_by_name["Newport News AirCommerce Park"]["available_acreage"],
+            280,
+        )
+        for name in {
+            "HII Unmanned Systems Center of Excellence",
+            "ODU Maritime Autonomous Systems Test Site",
+            "Virginia Tech Drone Park",
+            "Wallops Research Park",
+        }:
+            record = records_by_name[name]
+            self.assertTrue(record["development_status"], name)
+            self.assertIsNone(record.get("available_acreage"), name)
+            self.assertIn(
+                record["development_source_url"],
+                {source["url"] for source in record["sources"]},
+            )
+
+    def test_every_asset_has_one_documented_ecosystem_role(self):
+        catalog = self.load_catalog()
+        records_by_name = {record["name"]: record for record in catalog["records"]}
+        role_categories = {
+            "Core unmanned-systems asset",
+            "Supporting ecosystem asset",
+        }
+
+        for record in catalog["records"]:
+            self.assertEqual(
+                len(role_categories.intersection(record["strategic_categories"])),
+                1,
+                record["name"],
+            )
+
+        for name in {
+            "Mid-Atlantic Aviation Partnership",
+            "ODU Maritime Autonomous Systems Test Site",
+            "Virginia Tech Drone Park",
+        }:
+            self.assertIn(
+                "Core unmanned-systems asset",
+                records_by_name[name]["strategic_categories"],
+            )
+        for name in {
+            "Accomack County",
+            "Newport News AirCommerce Park",
+            "University of Virginia",
+        }:
+            self.assertIn(
+                "Supporting ecosystem asset",
+                records_by_name[name]["strategic_categories"],
+            )
+
     def test_only_if_empty_preserves_existing_database_edits(self):
         call_command("seed_real_data", verbosity=0)
         asset = Asset.objects.order_by("pk").first()
@@ -356,6 +452,67 @@ class RealCatalogFileTests(TestCase):
         self.assertTrue(asset.overview)
         self.assertEqual(asset.contact_url, "https://www.nasa.gov/contact/")
         self.assertTrue(asset.sources.filter(url=asset.contact_url, is_public=True).exists())
+        self.assertTrue(
+            asset.strategic_categories.filter(name="Core unmanned-systems asset").exists()
+        )
+
+    def test_profile_enrichment_upgrades_only_coarse_priority_locations(self):
+        coarse = Asset.objects.create(
+            name="Virginia Unmanned Systems Center",
+            record_type=Asset.RecordType.ORGANIZATION,
+            short_description="Statewide UxS coordination.",
+            unmanned_systems_relevance="Coordinates the Commonwealth's UxS ecosystem.",
+            city="Richmond",
+            latitude="37.541000",
+            longitude="-77.436000",
+            location_precision=Asset.LocationPrecision.LOCALITY,
+            contact_text=(
+                "Public information route; a direct asset contact is not published in the catalog"
+            ),
+            contact_url="https://vipc.org/initiatives/virginia-unmanned-systems-center/",
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        )
+        hii = Asset.objects.create(
+            name="HII Unmanned Systems Center of Excellence",
+            record_type=Asset.RecordType.FACILITY,
+            short_description="HII unmanned-systems facility.",
+            unmanned_systems_relevance="Supports unmanned-systems production and testing.",
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        )
+        Source.objects.create(
+            asset=hii,
+            title="Obsolete catalog location source",
+            url="https://www.hampton.gov/CivicAlerts.aspx?AID=4656&ARC=9365",
+            notes="Catalog provenance: curated-public-source",
+        )
+
+        call_command("enrich_asset_profiles", verbosity=0)
+
+        coarse.refresh_from_db()
+        self.assertEqual(coarse.address_line, "313 East Broad Street")
+        self.assertEqual(coarse.location_precision, Asset.LocationPrecision.SITE)
+        self.assertEqual(str(coarse.latitude), "37.543832")
+        self.assertTrue(coarse.current_activity)
+        self.assertEqual(
+            coarse.contact_text,
+            "Virginia Unmanned Systems Center and VIPC program inquiries",
+        )
+        self.assertEqual(coarse.contact_url, "https://vipc.org/contact-us/")
+        self.assertTrue(
+            coarse.strategic_categories.filter(name="Core unmanned-systems asset").exists()
+        )
+        self.assertFalse(
+            hii.sources.filter(
+                url="https://www.hampton.gov/CivicAlerts.aspx?AID=4656&ARC=9365"
+            ).exists()
+        )
+        self.assertTrue(
+            hii.sources.filter(
+                url="https://www.hii.com/news/first-quarter-2021-earnings"
+            ).exists()
+        )
 
     def test_add_missing_preserves_reviewed_records_and_restores_catalog_gaps(self):
         catalog = self.load_catalog()

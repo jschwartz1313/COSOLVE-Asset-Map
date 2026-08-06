@@ -55,6 +55,10 @@ SOURCES = {
     ),
     "vedp_companies": ("VEDP: Virginia Unmanned Systems Companies", VEDP_COMPANIES),
     "vipc": ("Virginia Unmanned Systems Center", VIPC_CENTER),
+    "vipc_contact": (
+        "Virginia Innovation Partnership Corporation contact information",
+        "https://vipc.org/contact-us/",
+    ),
     "vipc_test": ("Virginia AAM and Unmanned Systems Test Site Program", VIPC_TEST),
     "port": ("Port of Virginia Capabilities", PORT_CAPABILITIES),
     "vt_keas": (
@@ -210,11 +214,27 @@ SOURCES = {
         "HII Unmanned Systems Center of Excellence",
         "https://www.hii.com/news/unmanned-systems-center-of-excellence",
     ),
+    "hii_center_completion": (
+        "HII: first Unmanned Systems Center phase completed",
+        "https://www.hii.com/news/first-quarter-2021-earnings",
+    ),
+    "hii_mission_technologies": (
+        "HII Mission Technologies uncrewed systems capabilities",
+        "https://www.hii.com/mission-technologies",
+    ),
     "longbow": (
         "City of Hampton: Hampton Roads Autonomy Demonstrations",
         "https://www.hampton.gov/CivicAlerts.aspx?AID=4973&ARC=10333",
     ),
+    "longbow_current": (
+        "Unmanned Systems Research and Technology Center",
+        "https://www.usrtc.org/",
+    ),
     "aac": ("Advanced Aircraft Company", "https://advancedaircraftcompany.com/"),
+    "aac_products": (
+        "Advanced Aircraft Company UAS products and public contact information",
+        "https://advancedaircraftcompany.com/uas-products/",
+    ),
     "adaptive": ("Adaptive Aerospace Group", "https://adaptiveaero.com/"),
     "rapidflight": (
         "RapidFlight Manassas UAS Manufacturing Headquarters",
@@ -226,6 +246,50 @@ SOURCES = {
     ),
     "virginia_uas": ("Virginia UAS", "https://virginiauas.com/"),
     "aerovironment": ("AeroVironment", "https://www.avinc.com/domains/"),
+    "aerovironment_contact": (
+        "AeroVironment contact information",
+        "https://www.avinc.com/contact/",
+    ),
+    "aerovironment_partners": (
+        "AeroVironment MacCready Works partnerships",
+        "https://www.avinc.com/about/maccready-works/",
+    ),
+    "aurora_contact": (
+        "Aurora Flight Sciences contact information",
+        "https://www.aurora.aero/contact-us/",
+    ),
+    "anra_home": (
+        "ANRA Technologies airspace and mission management",
+        "https://www.anratechnologies.com/home/",
+    ),
+    "anra_location": (
+        "ANRA Technologies Reston location",
+        "https://www.anratechnologies.com/home/system-architect/",
+    ),
+    "anra_current": (
+        "ANRA Technologies current airspace-management deployment",
+        "https://www.anratechnologies.com/home/2026/06/24/building-michigans-digital-airspace-integrating-commercial-drone-operations-and-airspace-security/",
+    ),
+    "anra_partnership": (
+        "ANRA Technologies airspace-management consultation",
+        "https://www.anratechnologies.com/home/airspace-management/",
+    ),
+    "maap_about": (
+        "Mid-Atlantic Aviation Partnership overview",
+        "https://maap.ictas.vt.edu/About/about-us.html",
+    ),
+    "maap_contact": (
+        "Mid-Atlantic Aviation Partnership contact information",
+        "https://maap.ictas.vt.edu/Contact.html",
+    ),
+    "maap_beyond": (
+        "Virginia FAA BEYOND partnership",
+        "https://maap.ictas.vt.edu/BEYOND/aboutBEYOND.html",
+    ),
+    "vt_drone_park": (
+        "Virginia Tech Drone Park facility and scheduling information",
+        "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
+    ),
     "qinetiq": ("QinetiQ US locations", "https://www.qinetiq.com/en-us/who-we-are/our-locations"),
     "dedrone": ("Dedrone by Axon", "https://www.dedrone.com/about/contact-us"),
     "vt_grain_drones": (
@@ -651,6 +715,18 @@ SOURCES = {
         "ODU Institute for Autonomous and Connected Systems",
         "https://www.odu.edu/iacs",
     ),
+    "odu_nsi": (
+        "ODU National Security Institute",
+        "https://www.odu.edu/national-security",
+    ),
+    "odu_nsi_facilities": (
+        "ODU National Security Institute facilities and test environments",
+        "https://www.odu.edu/national-security/facilities-test-environments",
+    ),
+    "odu_maritime_conference": (
+        "ODU 2026 Maritime and Autonomous Systems Conference facility overview",
+        "https://www.odu.edu/sites/default/files/2026/documents/maritime-conference.pdf",
+    ),
     "odu_minor": (
         "ODU Uncrewed Systems Design and Development Minor",
         "https://www.odu.edu/academics/programs/minor/uncrewed-systems-design-development",
@@ -698,6 +774,10 @@ SOURCES = {
     "wallops_research_park": (
         "Accomack County: Wallops Research Park Background and Timeline",
         "https://www.accomack.gov/614/Background-Timeline",
+    ),
+    "wallops_aerospace": (
+        "Accomack County aerospace assets",
+        "https://www.accomack.gov/692/Aerospace",
     ),
     "wallops_research_park_location": (
         "NASA Wallops Research Park Environmental Assessment",
@@ -794,6 +874,10 @@ SOURCES = {
     "aircommerce_park": (
         "Newport News EDA: Patrick Henry Corridor and AirCommerce Park",
         "https://newportnewsva.com/business-neighborhoods/patrick-henry-corridor/",
+    ),
+    "aircommerce_growth": (
+        "Newport News EDA aviation manufacturing and site-readiness projects",
+        "https://newportnewsva.com/manufacturing-growth/",
     ),
     "aircommerce_uas": (
         "Newport News Aerospace and Aviation Assets",
@@ -1212,7 +1296,326 @@ PROFILES = {
     },
 }
 
+CORE_ASSET_CATEGORY = "Core unmanned-systems asset"
+SUPPORTING_ASSET_CATEGORY = "Supporting ecosystem asset"
+SUPPORTING_PROFILE_KEYS = {
+    "aviation_site",
+    "economic_development",
+    "enabling",
+    "port",
+}
+
+
+def ecosystem_role_categories(categories, *, core):
+    role = CORE_ASSET_CATEGORY if core else SUPPORTING_ASSET_CATEGORY
+    return [*categories, role]
+
+
+ASSET_DETAIL_SOURCE_KEYS = {
+    "Advanced Aircraft Company": ("aac_products",),
+    "AeroVironment Corporate Headquarters": (
+        "aerovironment_contact",
+        "aerovironment_partners",
+    ),
+    "ANRA Technologies": (
+        "anra_home",
+        "anra_location",
+        "anra_current",
+        "anra_partnership",
+    ),
+    "Aurora Flight Sciences": ("aurora_contact",),
+    "HII Unmanned Systems Center of Excellence": (
+        "hii_center_completion",
+        "hii_mission_technologies",
+    ),
+    "Longbow Unmanned Systems Research and Test Center": ("longbow_current",),
+    "Mid-Atlantic Aviation Partnership": ("maap_about", "maap_contact", "maap_beyond"),
+    "Newport News AirCommerce Park": ("aircommerce_growth",),
+    "ODU Institute for Autonomous and Connected Systems": ("odu_nsi",),
+    "ODU Maritime Autonomous Systems Test Site": (
+        "odu_nsi",
+        "odu_nsi_facilities",
+        "odu_maritime_conference",
+    ),
+    "Virginia Tech Drone Park": ("vt_drone_park",),
+    "Virginia Unmanned Systems Center": ("vipc_contact",),
+    "Wallops Research Park": ("wallops_aerospace",),
+}
+
 ASSET_DETAIL_ENRICHMENT = {
+    "Virginia Unmanned Systems Center": {
+        "activity_status": "active",
+        "current_activity": (
+            "VIPC operates the center as a statewide nexus for uncrewed systems across land, "
+            "air, sea, and space, with public resources, studies, grants, partnerships, and "
+            "advanced-air-mobility coordination."
+        ),
+        "partnership_opportunities": (
+            "Organizations can use VIPC's public contact route for statewide UxS resources, "
+            "program coordination, grants, partnerships, and investment questions."
+        ),
+        "activity_source_url": SOURCES["vipc"][1],
+        "activity_last_verified_at": CATALOG_DATE,
+        "contact_text": "Virginia Unmanned Systems Center and VIPC program inquiries",
+        "contact_url": SOURCES["vipc_contact"][1],
+    },
+    "Mid-Atlantic Aviation Partnership": {
+        "activity_status": "active",
+        "current_activity": (
+            "MAAP remains an FAA-designated UAS test site supporting research, flight testing, "
+            "evaluation, operational approvals, and safety-case development."
+        ),
+        "partnership_opportunities": (
+            "Government, industry, and research organizations can contact MAAP about flight "
+            "testing, evaluations, operational concepts, and Virginia FAA BEYOND activities."
+        ),
+        "activity_source_url": SOURCES["maap_about"][1],
+        "activity_last_verified_at": CATALOG_DATE,
+        "contact_text": "MAAP research, testing, and partnership inquiries",
+        "contact_phone": "540-231-9416",
+        "contact_email": "maapinfo@vt.edu",
+        "contact_url": SOURCES["maap_contact"][1],
+    },
+    "Virginia Tech Drone Park": {
+        "activity_status": "active",
+        "current_activity": (
+            "Virginia Tech operates the netted Drone Park for instruction, research, and "
+            "controlled flight work, with adjacent laboratory and classroom support."
+        ),
+        "partnership_opportunities": (
+            "University and external users can request scheduling; the facility notes that "
+            "commercial and other third-party use may require additional arrangements."
+        ),
+        "activity_source_url": SOURCES["vt_drone_park"][1],
+        "activity_last_verified_at": CATALOG_DATE,
+        "contact_text": "Virginia Tech Drone Park scheduling and facility inquiries",
+        "contact_phone": "540-231-7303",
+        "contact_email": "VTDronePark@vt.edu",
+        "contact_url": SOURCES["vt_drone_park"][1],
+        "owner_operator": (
+            "Virginia Tech Institute for Critical Technology and Applied Science"
+        ),
+        "development_status": "operational",
+        "development_notes": (
+            "The published facility is an operating research and teaching site. No claim is "
+            "made that land or facility space is generally available for development."
+        ),
+        "infrastructure_access": (
+            "Approximately 300-by-120-by-85-foot netted flight enclosure with adjacent "
+            "laboratory, classroom, work, and observation space."
+        ),
+        "development_source_url": SOURCES["vt_drone_park"][1],
+        "development_last_verified_at": CATALOG_DATE,
+    },
+    "ODU Institute for Autonomous and Connected Systems": {
+        "activity_status": "active",
+        "current_activity": (
+            "IACS coordinates cross-domain work in uncrewed aerial, surface, and underwater "
+            "vehicles, robotics, connected transportation, sensing, and artificial intelligence."
+        ),
+        "partnership_opportunities": (
+            "The institute invites engagement with industry, government, and community "
+            "partners through its published institute contact."
+        ),
+        "activity_source_url": SOURCES["odu_iacs"][1],
+        "activity_last_verified_at": CATALOG_DATE,
+        "contact_text": "IACS research and partnership inquiries",
+        "contact_phone": "757-683-3470",
+        "contact_email": "hchaoui@odu.edu",
+        "contact_url": SOURCES["odu_iacs"][1],
+    },
+    "ODU Maritime Autonomous Systems Test Site": {
+        "activity_status": "active",
+        "current_activity": (
+            "ODU and the City of Norfolk operate the Willoughby Bay site for maritime autonomy "
+            "research and testing with direct access to regional waterways."
+        ),
+        "partnership_opportunities": (
+            "Research and external-partnership questions can be routed through ODU's National "
+            "Security Institute."
+        ),
+        "activity_source_url": SOURCES["odu_masts"][1],
+        "activity_last_verified_at": CATALOG_DATE,
+        "contact_text": "ODU National Security Institute research and partnership inquiries",
+        "contact_email": "research@odu.edu",
+        "contact_url": SOURCES["odu_nsi"][1],
+        "owner_operator": "Old Dominion University and the City of Norfolk",
+        "development_status": "operational",
+        "development_notes": (
+            "The site opened in 2025 as an operating research and test facility. Published "
+            "materials do not describe generally available land or commercial space."
+        ),
+        "infrastructure_access": (
+            "Floating dock, half-ton crane, covered workspace, utilities, and an 18-foot chase "
+            "boat, with water access from Willoughby Bay to the Chesapeake Bay and Atlantic."
+        ),
+        "development_source_url": SOURCES["odu_maritime_conference"][1],
+        "development_last_verified_at": CATALOG_DATE,
+    },
+    "HII Unmanned Systems Center of Excellence": {
+        "activity_status": "active",
+        "current_activity": (
+            "HII maintains an Uncrewed Systems business spanning unmanned undersea and surface "
+            "platforms and autonomy software; the Hampton center is its publicly documented "
+            "purpose-built production and test campus."
+        ),
+        "partnership_opportunities": (
+            "Business and supplier inquiries can be routed through HII's public corporate "
+            "contact channel."
+        ),
+        "activity_source_url": SOURCES["hii_mission_technologies"][1],
+        "activity_last_verified_at": CATALOG_DATE,
+        "owner_operator": "HII",
+        "development_status": "operational",
+        "development_notes": (
+            "HII described a 20-acre campus and Hampton documented completion and occupancy of "
+            "the first 22,000-square-foot building. Campus size is not presented as available "
+            "acreage."
+        ),
+        "infrastructure_access": (
+            "Purpose-built prototyping, production, testing, and digital-manufacturing campus "
+            "for uncrewed systems."
+        ),
+        "development_source_url": SOURCES["hii_center_completion"][1],
+        "development_last_verified_at": CATALOG_DATE,
+    },
+    "Longbow Unmanned Systems Research and Test Center": {
+        "activity_status": "active",
+        "current_activity": (
+            "The center publicly describes ongoing support for research, validation, and "
+            "demonstration work across air, land, and maritime uncrewed systems."
+        ),
+        "partnership_opportunities": (
+            "The center states that it is seeking partnerships and provides a public inquiry "
+            "form for prospective users and collaborators."
+        ),
+        "activity_source_url": SOURCES["longbow_current"][1],
+        "activity_last_verified_at": CATALOG_DATE,
+        "contact_text": "Research, testing, and partnership inquiries",
+        "contact_url": SOURCES["longbow_current"][1],
+    },
+    "Wallops Research Park": {
+        "activity_status": "developing",
+        "current_activity": (
+            "Accomack County markets the park for private aerospace, UAS, launch, research, and "
+            "education development adjoining the Wallops federal and commercial space cluster."
+        ),
+        "partnership_opportunities": (
+            "Prospective developers and aerospace organizations can use the county's public "
+            "economic-development route to discuss current parcels and project requirements."
+        ),
+        "activity_source_url": SOURCES["wallops_research_park"][1],
+        "activity_last_verified_at": CATALOG_DATE,
+        "contact_text": "Accomack County economic-development and site inquiries",
+        "contact_phone": "757-787-5700",
+        "contact_url": SOURCES["wallops_research_park"][1],
+        "development_status": "development-ready",
+        "development_notes": (
+            "The county describes the park as ready for private development. No acreage is "
+            "reported here because the reviewed page does not identify a current available-acre "
+            "figure."
+        ),
+        "infrastructure_access": (
+            "Completed roads and utilities, a 1,200-foot taxiway connection, and proximity to "
+            "Wallops runways, restricted airspace, payload processing, and UAS test activity."
+        ),
+        "development_source_url": SOURCES["wallops_research_park"][1],
+        "development_last_verified_at": CATALOG_DATE,
+    },
+    "Newport News AirCommerce Park": {
+        "activity_status": "developing",
+        "current_activity": (
+            "Newport News and the Peninsula Airport Commission are advancing site-readiness "
+            "work for aviation and aerospace development around the airport."
+        ),
+        "partnership_opportunities": (
+            "Aviation, aerospace, and UAS companies can contact Newport News Economic "
+            "Development for current site information and project assistance."
+        ),
+        "activity_source_url": SOURCES["aircommerce_growth"][1],
+        "activity_last_verified_at": CATALOG_DATE,
+        "owner_operator": (
+            "Peninsula Airport Commission (property owner); Newport News Economic Development "
+            "Authority (site-readiness partner)"
+        ),
+        "available_acreage": 280,
+        "development_status": "in-development",
+        "development_notes": (
+            "The reviewed EDA page describes 280 available acres at AirCommerce Park West and "
+            "50 additional undeveloped acres at AirCommerce Park East. Only the 280 acres "
+            "explicitly described as available are stored in the acreage field."
+        ),
+        "infrastructure_access": (
+            "Airport-adjacent development land with runway access potential, corporate hangars, "
+            "and planned site-readiness improvements."
+        ),
+        "development_source_url": SOURCES["aircommerce_growth"][1],
+        "development_last_verified_at": CATALOG_DATE,
+    },
+    "AeroVironment Corporate Headquarters": {
+        "activity_status": "active",
+        "current_activity": (
+            "AeroVironment develops autonomous systems and related capabilities across air, "
+            "land, sea, space, and cyber domains from its Arlington headquarters."
+        ),
+        "partnership_opportunities": (
+            "AeroVironment's MacCready Works page identifies collaboration with defense, "
+            "research, and technology organizations and provides a public partnership route."
+        ),
+        "activity_source_url": SOURCES["aerovironment_partners"][1],
+        "activity_last_verified_at": CATALOG_DATE,
+        "contact_text": "Corporate and business inquiries",
+        "contact_phone": "703-418-2828",
+        "contact_url": SOURCES["aerovironment_contact"][1],
+    },
+    "Aurora Flight Sciences": {
+        "activity_status": "active",
+        "current_activity": (
+            "Aurora, a Boeing company, develops advanced aircraft and autonomy technologies from "
+            "its Manassas headquarters and other facilities."
+        ),
+        "partnership_opportunities": (
+            "Product, business-development, and general inquiries can use Aurora's published "
+            "sales and headquarters contacts."
+        ),
+        "activity_source_url": SOURCES["aurora_contact"][1],
+        "activity_last_verified_at": CATALOG_DATE,
+        "contact_text": "Product and business-development inquiries",
+        "contact_phone": "703-369-3633",
+        "contact_email": "sales@aurora.aero",
+        "contact_url": SOURCES["aurora_contact"][1],
+    },
+    "ANRA Technologies": {
+        "activity_status": "active",
+        "current_activity": (
+            "ANRA continues to deploy airspace and mission-management technology for commercial "
+            "drone operations, UTM, UAM, and airspace-security integration."
+        ),
+        "partnership_opportunities": (
+            "Organizations can request a consultation through ANRA's airspace-management page."
+        ),
+        "activity_source_url": SOURCES["anra_current"][1],
+        "activity_last_verified_at": CATALOG_DATE,
+        "contact_text": "Airspace-management consultation and business inquiries",
+        "contact_url": SOURCES["anra_partnership"][1],
+    },
+    "Advanced Aircraft Company": {
+        "activity_status": "active",
+        "current_activity": (
+            "Advanced Aircraft Company publishes its HAMR hybrid multirotor UAS product and "
+            "Virginia engineering and manufacturing contact information."
+        ),
+        "partnership_opportunities": (
+            "Product, engineering, and business inquiries can use the company's published "
+            "Hampton contact information."
+        ),
+        "activity_source_url": SOURCES["aac_products"][1],
+        "activity_last_verified_at": CATALOG_DATE,
+        "contact_text": "Product, engineering, and business inquiries",
+        "contact_phone": "757-325-6712",
+        "contact_email": "info@flyaac.com",
+        "contact_url": SOURCES["aac_products"][1],
+    },
     "MITRE National Range": {
         "activity_status": "active",
         "current_activity": (
@@ -1497,6 +1900,56 @@ LOCATION_OVERRIDES = {
             "https://adaptiveaero.com/",
         ),
     },
+    "Virginia Unmanned Systems Center": {
+        "address_line": "313 East Broad Street",
+        "postal_code": "23219",
+        "latitude": 37.543832,
+        "longitude": -77.439186,
+        "source": (
+            "Virginia Innovation Partnership Corporation contact information",
+            SOURCES["vipc_contact"][1],
+        ),
+    },
+    "Virginia Tech Drone Park": {
+        "address_line": "2143 Oak Lane",
+        "postal_code": "24061",
+        "latitude": 37.224100,
+        "longitude": -80.428600,
+        "source": (
+            "Virginia Tech Drone Park facility and scheduling information",
+            SOURCES["vt_drone_park"][1],
+        ),
+    },
+    "AeroVironment Corporate Headquarters": {
+        "address_line": "241 18th Street South, Suite 650",
+        "postal_code": "22202",
+        "latitude": 38.857634,
+        "longitude": -77.050002,
+        "source": (
+            "AeroVironment contact information",
+            SOURCES["aerovironment_contact"][1],
+        ),
+    },
+    "Aurora Flight Sciences": {
+        "address_line": "9950 Wakeman Drive",
+        "postal_code": "20110",
+        "latitude": 38.728261,
+        "longitude": -77.512034,
+        "source": (
+            "Aurora Flight Sciences contact information",
+            SOURCES["aurora_contact"][1],
+        ),
+    },
+    "ANRA Technologies": {
+        "address_line": "11710 Plaza America Drive, Suite 200",
+        "postal_code": "20190",
+        "latitude": 38.951363,
+        "longitude": -77.347340,
+        "source": (
+            "ANRA Technologies Reston location",
+            SOURCES["anra_location"][1],
+        ),
+    },
     "Virginia Department of Aviation": {
         "address_line": "5702 Gulfstream Road",
         "postal_code": "23250",
@@ -1532,13 +1985,13 @@ LOCATION_OVERRIDES = {
         ),
     },
     "Advanced Aircraft Company": {
-        "address_line": "1100 Exploration Way",
+        "address_line": "1100 Exploration Way, Suite 316M",
         "postal_code": "23666",
         "latitude": 37.082521,
         "longitude": -76.399763,
         "source": (
-            "Advanced Aircraft Company contact information",
-            "https://advancedaircraftcompany.com/contact/",
+            "Advanced Aircraft Company UAS products and public contact information",
+            SOURCES["aac_products"][1],
         ),
     },
     "Agricision": {
@@ -1649,13 +2102,13 @@ LOCATION_OVERRIDES = {
         ),
     },
     "HII Unmanned Systems Center of Excellence": {
-        "address_line": "North Campus Parkway at Commander Shepard Boulevard",
+        "address_line": "Hampton Roads Center - North Campus",
         "postal_code": "23666",
         "latitude": 37.074905,
         "longitude": -76.402317,
         "source": (
-            "City of Hampton: HII Unmanned Systems Center site",
-            "https://www.hampton.gov/CivicAlerts.aspx?AID=4656&ARC=9365",
+            "HII Unmanned Systems Center of Excellence",
+            SOURCES["hii_uxs"][1],
         ),
     },
     "HUSH Aerospace": {
@@ -5573,7 +6026,12 @@ def default_overview(record):
 
 
 def finalize_record(record):
-    record.update(ASSET_DETAIL_ENRICHMENT.get(record["name"], {}))
+    detail = ASSET_DETAIL_ENRICHMENT.get(record["name"], {})
+    for source_key in ASSET_DETAIL_SOURCE_KEYS.get(record["name"], ()):
+        detail_source = source(source_key)
+        if not any(item["url"] == detail_source["url"] for item in record["sources"]):
+            record["sources"].append(detail_source)
+    record.update(detail)
     record.setdefault("overview", default_overview(record))
     record.setdefault("contact_phone", "")
     record.setdefault("contact_email", "")
@@ -5597,9 +6055,10 @@ def finalize_record(record):
     contact_override = CONTACT_ENRICHMENT.get(record["name"])
     if contact_override:
         for field in ("contact_phone", "contact_email", "contact_url"):
-            if contact_override.get(field):
+            if contact_override.get(field) and field not in detail:
                 record[field] = contact_override[field]
-        record["contact_text"] = contact_scope(record)
+        if "contact_text" not in detail:
+            record["contact_text"] = contact_scope(record)
         source_url = contact_override["source_url"]
         if not any(item["url"] == source_url for item in record["sources"]):
             record["sources"].append(
@@ -5845,7 +6304,9 @@ def airport_records():
                 "longitude": round(longitude, 6),
                 "location_precision": "exact",
                 "region": AIRPORT_REGION_OVERRIDES.get(identifier, region_for(latitude, longitude)),
-                "strategic_categories": ["Physical infrastructure and logistics"],
+                "strategic_categories": ecosystem_role_categories(
+                    ["Physical infrastructure and logistics"], core=False
+                ),
                 "platform_domains": ["Unmanned aircraft systems"],
                 "capabilities": ["Operations, maintenance, and sustainment"],
                 "missions": [],
@@ -5891,7 +6352,9 @@ def defense_records():
                     "longitude": longitude,
                     "location_precision": "locality",
                     "region": region,
-                    "strategic_categories": ["Federal and defense customer access"],
+                    "strategic_categories": ecosystem_role_categories(
+                        ["Federal and defense customer access"], core=False
+                    ),
                     "platform_domains": ["Cross-domain autonomy"],
                     "capabilities": ["Systems engineering and integration"],
                     "missions": ["Force protection and installation security"],
@@ -6043,7 +6506,7 @@ def university_records():
                     "postal_code": row["ZIP"].strip(),
                     "location_precision": "site",
                     "region": region_for(latitude, longitude),
-                    "strategic_categories": categories,
+                    "strategic_categories": ecosystem_role_categories(categories, core=False),
                     "platform_domains": domains,
                     "capabilities": capabilities,
                     "missions": missions,
@@ -6088,7 +6551,10 @@ def curated_records():
                     "longitude": longitude,
                     "location_precision": "locality",
                     "region": region,
-                    "strategic_categories": profile["categories"],
+                    "strategic_categories": ecosystem_role_categories(
+                        profile["categories"],
+                        core=profile_key not in SUPPORTING_PROFILE_KEYS,
+                    ),
                     "platform_domains": profile["domains"],
                     "capabilities": profile["capabilities"],
                     "missions": profile["missions"],
@@ -6163,6 +6629,12 @@ def validate(records, relationships):
             raise ValueError(f"Regional record must not expose a point: {record['name']}")
         if len(record["short_description"]) > 320:
             raise ValueError(f"Description too long: {record['name']}")
+        role_categories = {
+            CORE_ASSET_CATEGORY,
+            SUPPORTING_ASSET_CATEGORY,
+        }.intersection(record["strategic_categories"])
+        if len(role_categories) != 1:
+            raise ValueError(f"Invalid ecosystem role classification: {record['name']}")
 
     relationship_assets = {
         asset_name
@@ -6196,7 +6668,9 @@ def main():
             "records. Specific street and site locations are "
             "anchored to official public address sources and geocoded against the U.S. Census "
             "address ranges or named-site map data; locality points are retained when the public "
-            "record does not identify the operating department or facility."
+            "record does not identify the operating department or facility. Every record is also "
+            "classified as either a core unmanned-systems asset with direct documented activity "
+            "or a supporting ecosystem asset with a broader enabling role."
         ),
         "relationships": [
             {"from": from_name, "type": relationship_type, "to": to_name}

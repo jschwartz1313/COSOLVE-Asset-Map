@@ -11,7 +11,9 @@ The checked-in catalog contains 453 real, publicly documented Virginia ecosystem
 | Virginia public and private nonprofit degree-granting institutions, plus ECPI University | 82 | NCES IPEDS campus addresses and coordinates |
 | Curated research, workforce, company, public-safety, federal, program, and infrastructure assets | 277 | Official public addresses, named sites, or generalized locality coordinates |
 
-The catalog currently covers 12 Virginia ecosystem regions and six record types. Every record has a fuller overview, an unmanned-systems relevance statement, a labeled public contact route, at least one public evidence URL, a catalog review date, and normalized taxonomy values. Selected records also carry source-dated current activity, collaboration, and site-readiness details. Source verification status is tracked separately so staff can record human review and later rechecks.
+The catalog currently covers 12 Virginia ecosystem regions and six record types. Every record has a fuller overview, an unmanned-systems relevance statement, a labeled public contact route, at least one public evidence URL, a catalog review date, and normalized taxonomy values. It classifies 255 records as core unmanned-systems assets and 198 as supporting ecosystem assets using the documented rule in the data dictionary. Selected records also carry source-dated current activity, collaboration, and site-readiness details. Source verification status is tracked separately so staff can record human review and later rechecks.
+
+The August 6 enrichment pass added current activity and partnership details for 13 high-priority organizations and sites, bringing source-dated activity coverage to 22 records. It added five official-address site locations, bringing exact or site-level coverage to 256 records, and increased records with a published phone or email to 194. Seven records now have documented site-readiness or operational-facility details. Acreage is populated only when an official source describes land as available; campus size, accessible land, and planned buildout are retained in notes instead of being treated as available acreage.
 
 Institution phone numbers and admissions routes come from the NCES IPEDS 2024 directory. Airport manager, sponsor, phone, email, role, and address data come from the Virginia Department of Aviation sponsor directory. For other records, `scripts/build_contact_enrichment.py` conservatively follows same-host contact, directory, or staff links from checked-in official source pages. A phone or email is stored only when the selected public page explicitly publishes it as a telephone or email link. When no direct contact is available, the profile says so and links to the most relevant public information source rather than inventing a contact.
 
@@ -19,11 +21,13 @@ Institution phone numbers and admissions routes come from the NCES IPEDS 2024 di
 
 - The named organization, facility, program, or infrastructure asset must be real and publicly documented.
 - The record must have direct unmanned-systems relevance or a clear enabling role defined by the project specification, such as aviation infrastructure, defense customer access, workforce, ports, advanced manufacturing, or test logistics.
+- Core records require direct public documentation of unmanned-systems activity. Broader enabling records are labeled as supporting ecosystem assets so users can distinguish them without removing useful context.
 - Higher-education coverage includes active Virginia public and private nonprofit degree-granting institutions in the NCES IPEDS 2024 directory, plus ECPI University in alignment with SCHEV statewide completion reporting. Institution-level inclusion identifies potential workforce capacity; it does not by itself claim a documented unmanned-systems program.
 - Eastern Virginia Medical School is not represented as a separate institution because it became the Macon & Joan Brock Virginia Health Sciences at Old Dominion University in 2024.
 - Public descriptions must not include classified, controlled, live-operational, vulnerability, or security-procedure information.
 - Military and federal records identify only publicly documented installations and use generalized points.
 - Airport inclusion does not imply permission to fly UAS there. Operators remain responsible for all airport, airspace, and regulatory authorization.
+- Current activity, partnership routes, site-readiness details, ownership, and available acreage remain blank when the reviewed official sources do not support a specific claim.
 
 ## Principal sources
 
