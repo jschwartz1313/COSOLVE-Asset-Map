@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260805-2">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260806-1">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
@@ -18,6 +18,7 @@
       data-counties-url="{% static 'data/virginia-counties.geojson' %}?v=2025"
       data-regions-url="{% static 'data/virginia-regions.geojson' %}?v=20260728"
       data-mpz-candidates-url="{% static 'data/virginia-maritime-prosperity-candidates.geojson' %}?v=20260729"
+      data-heliports-url="{% static 'data/virginia-heliports.geojson' %}?v=20260806"
       data-state-boundary-url="{% static 'data/virginia-state-boundary.geojson' %}?v=2025"
       data-icon-base-url="{% static 'img/icons/legend/' %}">
   <aside class="filters-panel" id="asset-filters-panel" aria-label="Asset filters">
@@ -50,6 +51,7 @@
         <p><strong>Ecosystem regions:</strong> COSOLVE working analytical groupings derived from Virginia regional organizations.</p>
         <p><strong>Potential MPZ tracts:</strong> U.S. Census Bureau geography cross-referenced with public information from MARAD, the Port of Virginia, and the U.S. Navy. These are planning candidates, not federal designations.</p>
         <p><strong>Asset points:</strong> Public institutional and government sources listed on each asset profile. Locations may be exact, approximate, or generalized.</p>
+        <p><strong>Heliports:</strong> FAA Airports Feature Service. The optional layer shows FAA-recorded operational private-use heliports for planning reference only. Inclusion does not imply public access, landing permission, operational availability, or flight authorization.</p>
       </div>
     </details>
     <section class="print-analysis-report" aria-label="Printable asset register">
@@ -107,6 +109,7 @@
             <label title="Shade COSOLVE's working Virginia ecosystem regions"><input id="region-layer-toggle" type="checkbox"><span>Ecosystem regions</span></label>
             <label title="Show planning-candidate census tracts for the proposed federal Maritime Prosperity Zone program"><input id="mpz-layer-toggle" type="checkbox"><span>Potential MPZ tracts</span></label>
             <label title="Show Virginia county and independent-city boundaries"><input id="county-layer-toggle" type="checkbox"><span>County boundaries</span></label>
+            <label title="Show FAA-recorded operational private-use heliports for reference"><input id="heliport-layer-toggle" type="checkbox"><span>FAA heliports</span></label>
             <strong>Point analysis</strong>
             <label title="Outline points by editorial review state"><input id="verification-layer-toggle" type="checkbox"><span>Verification status</span></label>
             <label title="Differentiate points by coordinate precision"><input id="precision-layer-toggle" type="checkbox"><span>Location precision</span></label>
@@ -132,6 +135,7 @@
             <span><i class="legend-line county-boundary"></i>County boundary</span>
             <span><i class="legend-region-fill"></i>Ecosystem region</span>
             <span><i class="legend-mpz-fill"></i>Potential MPZ tract</span>
+            <span><i class="legend-heliport" aria-hidden="true">H</i>FAA heliport</span>
             <div class="legend-analysis-group" data-verification-legend hidden>
               <strong>Verification</strong>
               <span><i class="legend-ring reviewed"></i>Reviewed</span>
@@ -144,7 +148,7 @@
               <span><i class="legend-precision approximate"></i>Approximate</span>
               <span><i class="legend-precision locality"></i>Locality only</span>
             </div>
-            <small>Regions are COSOLVE working groupings. Potential MPZ tracts are planning candidates based on documented maritime facilities; none are federally designated. Points may represent exact, approximate, or generalized locations.</small>
+            <small>Regions are COSOLVE working groupings. Potential MPZ tracts are planning candidates based on documented maritime facilities; none are federally designated. Heliports are private-use FAA reference points and do not imply access or flight authorization. Asset points may represent exact, approximate, or generalized locations.</small>
           </div>
       </details>
     </div>
@@ -178,6 +182,6 @@
 </main>
 <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
 <script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
-  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260805-2"></script>
+  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260806-1"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}

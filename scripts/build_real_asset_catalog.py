@@ -49,6 +49,10 @@ CONTACT_ENRICHMENT = (
 
 SOURCES = {
     "vedp": ("VEDP: Unmanned Systems in Virginia", VEDP_UXS),
+    "vedp_contact": (
+        "Virginia Economic Development Partnership contact information",
+        "https://www.vedp.org/contact-us",
+    ),
     "vedp_companies": ("VEDP: Virginia Unmanned Systems Companies", VEDP_COMPANIES),
     "vipc": ("Virginia Unmanned Systems Center", VIPC_CENTER),
     "vipc_test": ("Virginia AAM and Unmanned Systems Test Site Program", VIPC_TEST),
@@ -170,6 +174,37 @@ SOURCES = {
     "doav_aam": (
         "Virginia Department of Aviation Advanced Air Mobility",
         "https://doav.virginia.gov/advanced_air_mobility/",
+    ),
+    "virginia_fix": (
+        "Virginia Department of Aviation Flight Information Exchange",
+        "https://doav.virginia.gov/aviation_programs_resources/",
+    ),
+    "stafford_aam": (
+        "Stafford-Warrenton-Winchester AAM Integration Project",
+        "https://doav.virginia.gov/wp-content/uploads/Files/DocumentLibrary/"
+        "Stafford_Warrenton_Winchester_Project.pdf",
+    ),
+    "mitre_range": (
+        "MITRE National Range",
+        "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range",
+    ),
+    "go_virginia": (
+        "GO Virginia",
+        "https://www.dhcd.virginia.gov/gova",
+    ),
+    "hampton_roads_alliance": (
+        "Hampton Roads Alliance autonomous-systems opportunity assessment",
+        "https://hamptonroadsalliance.com/wp-content/uploads/2025/01/"
+        "Alliance-Board-Deck-September.pdf",
+    ),
+    "shd_tech_park": (
+        "Shenandoah Valley Aviation Technology Park",
+        "https://cspdc.org/2023/11/27/shd-aviation-tech-park-holds-ribbon-cutting/",
+    ),
+    "shd_tech_park_site": (
+        "Shenandoah Valley Aviation Technology Park site development",
+        "https://cspdc.org/2023/06/07/"
+        "shenandoah-valley-aviation-technology-park-hangars-near-completion/",
     ),
     "hii_uxs": (
         "HII Unmanned Systems Center of Excellence",
@@ -895,6 +930,37 @@ PROFILES = {
         "missions": ["Training and experimentation"],
         "relevance": "Coordinates, funds, regulates, or accelerates Virginia's unmanned-systems ecosystem.",
     },
+    "aam_program": {
+        "categories": ["State strategy and coordination", "Programs and initiatives"],
+        "domains": ["Advanced Air Mobility", "Unmanned aircraft systems"],
+        "capabilities": [
+            "Safety, policy, regulatory, and airspace integration",
+            "Data engineering, analytics, and edge computing",
+        ],
+        "missions": ["Logistics and contested logistics", "Training and experimentation"],
+        "relevance": (
+            "Supports documented planning, infrastructure integration, information exchange, "
+            "or operational enablement for advanced air mobility and uncrewed aviation."
+        ),
+    },
+    "economic_development": {
+        "categories": [
+            "State strategy and coordination",
+            "Programs and initiatives",
+            "Manufacturing and supply chain",
+        ],
+        "domains": ["Cross-domain autonomy"],
+        "capabilities": [
+            "Systems engineering and integration",
+            "Manufacturing, materials, and prototyping",
+        ],
+        "missions": ["Training and experimentation"],
+        "relevance": (
+            "Provides documented economic-development coordination, business attraction, "
+            "funding, site support, or partnership development relevant to Virginia's autonomy "
+            "ecosystem."
+        ),
+    },
     "port": {
         "categories": ["Physical infrastructure and logistics"],
         "domains": ["Maritime surface systems", "Cross-domain autonomy"],
@@ -954,6 +1020,50 @@ PROFILES = {
         "relevance": (
             "Provides a publicly documented environment for unmanned-system testing, training, "
             "demonstration, validation, or operational integration."
+        ),
+    },
+    "national_range": {
+        "categories": [
+            "Test and operational environments",
+            "Research and technical depth",
+            "Federal and defense customer access",
+        ],
+        "domains": [
+            "Unmanned aircraft systems",
+            "Counter-UAS",
+            "Ground vehicles and robotics",
+        ],
+        "capabilities": [
+            "Testing, evaluation, verification, and validation",
+            "Systems engineering and integration",
+            "Navigation and positioning",
+        ],
+        "missions": [
+            "Training and experimentation",
+            "Public safety and emergency response",
+            "Counter-UAS",
+        ],
+        "relevance": (
+            "Provides a documented controlled environment for testing, evaluating, and "
+            "prototyping uncrewed aircraft, counter-UAS, ground systems, and communications."
+        ),
+    },
+    "aam_test": {
+        "categories": [
+            "Test and operational environments",
+            "Physical infrastructure and logistics",
+            "Programs and initiatives",
+        ],
+        "domains": ["Advanced Air Mobility", "Unmanned aircraft systems"],
+        "capabilities": [
+            "Testing, evaluation, verification, and validation",
+            "Safety, policy, regulatory, and airspace integration",
+            "Operations, maintenance, and sustainment",
+        ],
+        "missions": ["Training and experimentation", "Logistics and contested logistics"],
+        "relevance": (
+            "Supports documented testing or operational integration of uncrewed aviation and "
+            "advanced-air-mobility concepts in the National Airspace System."
         ),
     },
     "public_safety": {
@@ -1102,6 +1212,184 @@ PROFILES = {
     },
 }
 
+ASSET_DETAIL_ENRICHMENT = {
+    "MITRE National Range": {
+        "activity_status": "active",
+        "current_activity": (
+            "MITRE operates the Orange County range for controlled testing, evaluation, and "
+            "prototyping of UAS, counter-UAS, ground systems, communications, and related "
+            "technologies."
+        ),
+        "partnership_opportunities": (
+            "MITRE states that government, academic, and industry partners can discuss range "
+            "use for prototyping, testing, training, demonstrations, and independent validation."
+        ),
+        "activity_source_url": SOURCES["mitre_range"][1],
+        "activity_last_verified_at": CATALOG_DATE,
+        "owner_operator": "MITRE",
+        "development_status": "operational",
+        "development_notes": (
+            "The public fact sheet describes 16 acres of dedicated airspace, hundreds of acres "
+            "of accessible land, and thousands of acres of aerial access; it does not describe "
+            "that acreage as generally available development land."
+        ),
+        "infrastructure_access": (
+            "Powered operations center, offices and work areas, storage, 5G connectivity, "
+            "outdoor charging, internet, training space, and testing support."
+        ),
+        "development_source_url": SOURCES["mitre_range"][1],
+        "development_last_verified_at": CATALOG_DATE,
+    },
+    "Virginia Economic Development Partnership": {
+        "activity_status": "active",
+        "current_activity": (
+            "VEDP markets Virginia's unmanned-systems sector and provides companies with "
+            "business intelligence, site-selection guidance, incentive support, and talent "
+            "solutions."
+        ),
+        "partnership_opportunities": (
+            "Domestic and international companies considering a Virginia location can use the "
+            "industry-page contacts for confidential business-development assistance."
+        ),
+        "activity_source_url": VEDP_UXS,
+        "activity_last_verified_at": CATALOG_DATE,
+        "contact_text": "Unmanned-systems business attraction and site-selection inquiries",
+        "contact_phone": "804-489-4391",
+        "contact_email": "sburnette@vedp.org",
+        "contact_url": VEDP_UXS,
+    },
+    "Hampton Roads Alliance": {
+        "activity_status": "active",
+        "current_activity": (
+            "The Alliance provides regional business development, business intelligence, real "
+            "estate solutions, and marketing; its technology assessment identifies autonomous "
+            "systems as a Hampton Roads opportunity area."
+        ),
+        "partnership_opportunities": (
+            "Companies considering a Hampton Roads expansion or relocation can contact the "
+            "Alliance for regional economic-development and site support."
+        ),
+        "activity_source_url": SOURCES["hampton_roads_alliance"][1],
+        "activity_last_verified_at": CATALOG_DATE,
+        "contact_text": "Regional business attraction and economic-development inquiries",
+        "contact_phone": "757-627-2315",
+        "contact_email": "info@757alliance.com",
+        "contact_url": "https://hamptonroadsalliance.com/",
+    },
+    "GO Virginia": {
+        "activity_status": "active",
+        "current_activity": (
+            "GO Virginia supports collaborative economic-development projects through nine "
+            "regional councils and publishes current projects and program performance resources."
+        ),
+        "partnership_opportunities": (
+            "Potential project partners can review the current program manual and work through "
+            "the applicable regional council on collaborative, traded-sector proposals."
+        ),
+        "activity_source_url": SOURCES["go_virginia"][1],
+        "activity_last_verified_at": CATALOG_DATE,
+        "contact_text": "GO Virginia program and regional-council information",
+        "contact_phone": "804-371-7000",
+        "contact_url": SOURCES["go_virginia"][1],
+    },
+    "Shenandoah Valley Aviation Technology Park": {
+        "activity_status": "developing",
+        "current_activity": (
+            "Two 14,000-square-foot corporate hangars are complete, and publicly funded utility "
+            "work supports later phases of the Aviation Technology Park."
+        ),
+        "partnership_opportunities": (
+            "The airport describes the park as a site for aviation-related business growth; "
+            "current space and project availability must be confirmed with the airport."
+        ),
+        "activity_source_url": SOURCES["shd_tech_park"][1],
+        "activity_last_verified_at": CATALOG_DATE,
+        "owner_operator": "Shenandoah Valley Regional Airport Commission",
+        "available_acreage": 58,
+        "development_status": "in-development",
+        "development_notes": (
+            "The 58-acre park has two completed hangars. Its master plan identifies capacity "
+            "for up to five additional hangars; this figure is a published site total, not a "
+            "claim that all acreage is currently available."
+        ),
+        "infrastructure_access": (
+            "Road and taxiway access, parking, completed site work, and water and sewer utility "
+            "relocation supporting future hangars."
+        ),
+        "development_source_url": SOURCES["shd_tech_park_site"][1],
+        "development_last_verified_at": CATALOG_DATE,
+    },
+    "Stafford Regional Airport AAM Integration Project Site": {
+        "activity_status": "pilot",
+        "current_activity": (
+            "Stafford Regional Airport is one of the three airport sites shown in the "
+            "Stafford-Warrenton-Winchester project, which focuses on integrating drone "
+            "operations into the National Airspace System."
+        ),
+        "partnership_opportunities": (
+            "Program and participation questions can be directed to the Virginia Department of "
+            "Aviation Advanced Air Mobility Program Manager."
+        ),
+        "activity_source_url": SOURCES["doav_aam"][1],
+        "activity_last_verified_at": CATALOG_DATE,
+        "contact_text": "Virginia Advanced Air Mobility Program Manager, Scott Denny",
+        "contact_phone": "804-236-3638",
+        "contact_email": "scott.denny@doav.virginia.gov",
+        "contact_url": SOURCES["doav_aam"][1],
+    },
+    "Virginia Advanced Air Mobility Program": {
+        "activity_status": "active",
+        "current_activity": (
+            "DOAV lists active work on multistate collaboration, smart airspace, electric "
+            "aircraft demonstrations, the Stafford-Warrenton-Winchester project, statewide "
+            "planning, community outreach, and airport integration."
+        ),
+        "partnership_opportunities": (
+            "Statewide AAM program questions and stakeholder coordination are routed through "
+            "the DOAV Advanced Air Mobility Program Manager."
+        ),
+        "activity_source_url": SOURCES["doav_aam"][1],
+        "activity_last_verified_at": CATALOG_DATE,
+        "contact_text": "Virginia Advanced Air Mobility Program Manager, Scott Denny",
+        "contact_phone": "804-236-3638",
+        "contact_email": "scott.denny@doav.virginia.gov",
+        "contact_url": SOURCES["doav_aam"][1],
+    },
+    "Virginia Department of Aviation": {
+        "activity_status": "active",
+        "current_activity": (
+            "DOAV leads statewide aviation programs and publishes current advanced-air-mobility "
+            "goals, projects, resources, and airport-integration work."
+        ),
+        "partnership_opportunities": (
+            "AAM program inquiries are routed through the department's named program manager; "
+            "airport-development inquiries use the applicable agency program contact."
+        ),
+        "activity_source_url": SOURCES["doav_aam"][1],
+        "activity_last_verified_at": CATALOG_DATE,
+        "contact_text": "Virginia Department of Aviation public information",
+        "contact_phone": "804-236-3624",
+        "contact_url": SOURCES["doav_aam"][1],
+    },
+    "Virginia Flight Information Exchange": {
+        "activity_status": "active",
+        "current_activity": (
+            "Virginia FIX provides an information-sharing capability for state and local "
+            "governments and UAS stakeholders to address safety and policy concerns while "
+            "supporting integrated airspace."
+        ),
+        "partnership_opportunities": (
+            "The DOAV program page provides the public Virginia FIX site, concept-of-operations "
+            "materials, and agency contact route."
+        ),
+        "activity_source_url": SOURCES["virginia_fix"][1],
+        "activity_last_verified_at": CATALOG_DATE,
+        "contact_text": "Virginia Department of Aviation program information",
+        "contact_phone": "804-236-3624",
+        "contact_url": SOURCES["virginia_fix"][1],
+    },
+}
+
 PLACES = {
     "Accomac": (37.720, -75.665),
     "Abingdon": (36.710, -81.975),
@@ -1207,6 +1495,40 @@ LOCATION_OVERRIDES = {
         "source": (
             "Adaptive Aerospace Group contact information",
             "https://adaptiveaero.com/",
+        ),
+    },
+    "Virginia Department of Aviation": {
+        "address_line": "5702 Gulfstream Road",
+        "postal_code": "23250",
+        "latitude": 37.512142,
+        "longitude": -77.332758,
+        "location_precision": "exact",
+        "source": (
+            "Virginia Department of Aviation Advanced Air Mobility",
+            SOURCES["doav_aam"][1],
+        ),
+    },
+    "Virginia Advanced Air Mobility Program": {
+        "address_line": "5702 Gulfstream Road",
+        "postal_code": "23250",
+        "latitude": 37.512142,
+        "longitude": -77.332758,
+        "location_precision": "site",
+        "source": (
+            "Virginia Department of Aviation Advanced Air Mobility",
+            SOURCES["doav_aam"][1],
+        ),
+    },
+    "Virginia Flight Information Exchange": {
+        "address_line": "",
+        "city": "",
+        "postal_code": "",
+        "latitude": None,
+        "longitude": None,
+        "location_precision": "regional",
+        "source": (
+            "Virginia Department of Aviation Flight Information Exchange",
+            SOURCES["virginia_fix"][1],
         ),
     },
     "Advanced Aircraft Company": {
@@ -2176,6 +2498,59 @@ LOCATION_OVERRIDES = {
         "source": (
             "Eagle Aviation Technologies contact information",
             "https://eagleaviationtech.com/contact-us",
+        ),
+    },
+    "Virginia Economic Development Partnership": {
+        "address_line": "901 East Cary Street",
+        "postal_code": "23219",
+        "latitude": 37.537283,
+        "longitude": -77.437109,
+        "location_precision": "exact",
+        "source": (
+            "Virginia Economic Development Partnership contact information",
+            "https://www.vedp.org/contact-us",
+        ),
+    },
+    "Hampton Roads Alliance": {
+        "address_line": "3 Commercial Place, Suite 1320",
+        "postal_code": "23510",
+        "latitude": 36.845260,
+        "longitude": -76.288798,
+        "location_precision": "site",
+        "source": (
+            "Hampton Roads Alliance board meeting information",
+            "https://hamptonroadsalliance.com/wp-content/uploads/2025/01/"
+            "Minutes_Board-Meeting_April-19-2024.pdf",
+        ),
+    },
+    "GO Virginia": {
+        "address_line": "600 East Main Street, Suite 300",
+        "postal_code": "23219",
+        "latitude": 37.539841,
+        "longitude": -77.438898,
+        "location_precision": "exact",
+        "source": ("GO Virginia", "https://www.dhcd.virginia.gov/gova"),
+    },
+    "Shenandoah Valley Aviation Technology Park": {
+        "address_line": "77 Aviation Circle",
+        "postal_code": "24486",
+        "latitude": 38.263841,
+        "longitude": -78.896447,
+        "location_precision": "site",
+        "source": (
+            "Shenandoah Valley Aviation Technology Park site development",
+            SOURCES["shd_tech_park_site"][1],
+        ),
+    },
+    "Stafford Regional Airport AAM Integration Project Site": {
+        "address_line": "95 Aviation Way",
+        "postal_code": "22406",
+        "latitude": 38.399142,
+        "longitude": -77.456610,
+        "location_precision": "site",
+        "source": (
+            "Virginia Airport Sponsor and Manager Directory",
+            DOAV_SPONSOR_DIRECTORY,
         ),
     },
     "Newport News AirCommerce Park": {
@@ -3309,7 +3684,7 @@ CURATED_ASSETS = [
         "organization",
         "Richmond",
         "Greater Richmond",
-        "state",
+        "aam_program",
         "Statewide alliance convening advanced-air-mobility and unmanned-systems stakeholders.",
         "vipc",
     ),
@@ -3327,7 +3702,7 @@ CURATED_ASSETS = [
         "organization",
         "Richmond",
         "Greater Richmond",
-        "state",
+        "aam_program",
         "Commonwealth aviation agency leading aviation planning and advanced-air-mobility initiatives.",
         "vipc_test",
     ),
@@ -3381,18 +3756,18 @@ CURATED_ASSETS = [
         "program",
         "Richmond",
         "Greater Richmond",
-        "state",
+        "aam_program",
         "Commonwealth aviation program covering automated small uncrewed systems, remotely controlled aircraft, and aviation automation.",
         "doav_aam",
     ),
     (
         "Virginia Flight Information Exchange",
         "program",
-        "Blacksburg",
-        "New River Valley",
-        "state",
+        "Richmond",
+        "Greater Richmond",
+        "aam_program",
         "Statewide information-sharing capability supporting safe and informed UAS operations.",
-        "vipc",
+        "virginia_fix",
     ),
     (
         "FAA BEYOND Virginia Team",
@@ -4798,6 +5173,65 @@ CURATED_ASSETS.extend(
     for jurisdiction, place, region in DCJS_JURISDICTION_UAS_ASSETS
 )
 
+CURATED_ASSETS.extend(
+    [
+        (
+            "MITRE National Range",
+            "operating-environment",
+            "Orange",
+            "Central Virginia",
+            "national_range",
+            "Controlled Orange County proving ground for UAS, counter-UAS, ground robotics, communications, prototyping, and independent evaluation.",
+            "mitre_range",
+        ),
+        (
+            "Virginia Economic Development Partnership",
+            "organization",
+            "Richmond",
+            "Greater Richmond",
+            "economic_development",
+            "Commonwealth economic-development authority providing business attraction, site selection, incentives, talent, and industry support for unmanned systems.",
+            ("vedp", "vedp_contact"),
+        ),
+        (
+            "Hampton Roads Alliance",
+            "organization",
+            "Norfolk",
+            "Hampton Roads",
+            "economic_development",
+            "Regional economic-development organization supporting business attraction, intelligence, site solutions, and autonomous-systems opportunities in Hampton Roads.",
+            "hampton_roads_alliance",
+        ),
+        (
+            "GO Virginia",
+            "program",
+            "Richmond",
+            "Greater Richmond",
+            "economic_development",
+            "Statewide economic-development initiative funding collaborative regional projects involving industry, higher education, local government, and workforce partners.",
+            "go_virginia",
+        ),
+        (
+            "Shenandoah Valley Aviation Technology Park",
+            "infrastructure",
+            "Weyers Cave",
+            "Shenandoah Valley",
+            "aviation_site",
+            "Aviation business and technology site at Shenandoah Valley Regional Airport with completed hangars and publicly documented expansion infrastructure.",
+            ("shd_tech_park", "shd_tech_park_site"),
+        ),
+        (
+            "Stafford Regional Airport AAM Integration Project Site",
+            "operating-environment",
+            "Fredericksburg",
+            "Fredericksburg Region",
+            "aam_test",
+            "Stafford Regional Airport site within the Stafford-Warrenton-Winchester project for integrating drone operations into the National Airspace System.",
+            ("doav_aam", "stafford_aam"),
+        ),
+    ]
+)
+
 CATALOG_RELATIONSHIPS = [
     ("Mid-Atlantic Aviation Partnership", "operates", "Virginia Tech Drone Park"),
     ("Mid-Atlantic Aviation Partnership", "operates", "MARS Unmanned Aircraft Systems Airfield"),
@@ -4847,6 +5281,31 @@ CATALOG_RELATIONSHIPS = [
         "Virginia Department of Aviation",
         "supports",
         "Virginia Advanced Air Mobility Program",
+    ),
+    (
+        "Virginia Department of Aviation",
+        "supports",
+        "Virginia Flight Information Exchange",
+    ),
+    (
+        "Virginia Department of Aviation",
+        "supports",
+        "Stafford Regional Airport AAM Integration Project Site",
+    ),
+    (
+        "Washington Exec/Stafford Rgnl",
+        "supports",
+        "Stafford Regional Airport AAM Integration Project Site",
+    ),
+    (
+        "Shenandoah Valley Rgnl",
+        "operates",
+        "Shenandoah Valley Aviation Technology Park",
+    ),
+    (
+        "GO Virginia",
+        "supports",
+        "Shenandoah Valley Aviation Technology Park",
     ),
     ("The Port of Virginia", "operates", "Norfolk International Terminals"),
     ("The Port of Virginia", "operates", "Virginia International Gateway"),
@@ -5114,6 +5573,7 @@ def default_overview(record):
 
 
 def finalize_record(record):
+    record.update(ASSET_DETAIL_ENRICHMENT.get(record["name"], {}))
     record.setdefault("overview", default_overview(record))
     record.setdefault("contact_phone", "")
     record.setdefault("contact_email", "")
@@ -5657,6 +6117,39 @@ def validate(records, relationships):
             raise ValueError(f"Invalid public contact URL: {record['name']}")
         if not any(item["url"] == record["contact_url"] for item in record["sources"]):
             raise ValueError(f"Contact route is not source-backed: {record['name']}")
+        activity_claims = (
+            record.get("activity_status"),
+            record.get("current_activity"),
+            record.get("partnership_opportunities"),
+        )
+        if any(activity_claims):
+            if not record.get("activity_source_url") or not record.get(
+                "activity_last_verified_at"
+            ):
+                raise ValueError(f"Unverified activity details: {record['name']}")
+            if not any(
+                item["url"] == record["activity_source_url"] for item in record["sources"]
+            ):
+                raise ValueError(f"Activity source is not attached: {record['name']}")
+        development_claims = (
+            record.get("owner_operator"),
+            record.get("available_acreage"),
+            record.get("development_status"),
+            record.get("development_notes"),
+            record.get("infrastructure_access"),
+        )
+        if any(value not in (None, "") for value in development_claims):
+            if not record.get("development_source_url") or not record.get(
+                "development_last_verified_at"
+            ):
+                raise ValueError(f"Unverified development details: {record['name']}")
+            if not any(
+                item["url"] == record["development_source_url"]
+                for item in record["sources"]
+            ):
+                raise ValueError(f"Development source is not attached: {record['name']}")
+        if record.get("available_acreage", 0) < 0:
+            raise ValueError(f"Negative acreage: {record['name']}")
         latitude = record["latitude"]
         longitude = record["longitude"]
         if (latitude is None) != (longitude is None):

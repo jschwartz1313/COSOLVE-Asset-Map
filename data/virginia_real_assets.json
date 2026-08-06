@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-08-06",
   "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, active Virginia public and private nonprofit degree-granting institutions from the NCES IPEDS 2024 directory (plus ECPI University), and a curated set of source-backed ecosystem records. Specific street and site locations are anchored to official public address sources and geocoded against the U.S. Census address ranges or named-site map data; locality points are retained when the public record does not identify the operating department or facility.",
-  "record_count": 447,
+  "record_count": 453,
   "records": [
     {
       "address_line": "29194 Parkway North",
@@ -5898,6 +5898,53 @@
       "website_url": "https://www.ialr.org/go-tec/"
     },
     {
+      "activity_last_verified_at": "2026-08-06",
+      "activity_source_url": "https://www.dhcd.virginia.gov/gova",
+      "activity_status": "active",
+      "address_line": "600 East Main Street, Suite 300",
+      "capabilities": [
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "city": "Richmond",
+      "contact_email": "",
+      "contact_phone": "804-371-7000",
+      "contact_text": "GO Virginia program and regional-council information",
+      "contact_url": "https://www.dhcd.virginia.gov/gova",
+      "current_activity": "GO Virginia supports collaborative economic-development projects through nine regional councils and publishes current projects and program performance resources.",
+      "latitude": 37.539841,
+      "location_precision": "exact",
+      "longitude": -77.438898,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "GO Virginia",
+      "overview": "Statewide economic-development initiative funding collaborative regional projects involving industry, higher education, local government, and workforce partners. Public sources support its classification as a Virginia program. Documented capabilities include Systems engineering and integration and Manufacturing, materials, and prototyping. Relevant mission areas include Training and experimentation.",
+      "partnership_opportunities": "Potential project partners can review the current program manual and work through the applicable regional council on collaborative, traded-sector proposals.",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "postal_code": "23219",
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Greater Richmond",
+      "short_description": "Statewide economic-development initiative funding collaborative regional projects involving industry, higher education, local government, and workforce partners.",
+      "sources": [
+        {
+          "title": "GO Virginia",
+          "url": "https://www.dhcd.virginia.gov/gova"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "State strategy and coordination",
+        "Programs and initiatives",
+        "Manufacturing and supply chain"
+      ],
+      "unmanned_systems_relevance": "Provides documented economic-development coordination, business attraction, funding, site support, or partnership development relevant to Virginia's autonomy ecosystem.",
+      "website_url": "https://www.dhcd.virginia.gov/gova"
+    },
+    {
       "address_line": "18082 Airport Road",
       "capabilities": [
         "Operations, maintenance, and sustainment"
@@ -6037,6 +6084,61 @@
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
       "website_url": "https://www.hampton.gov/DocumentCenter/View/37936/557-UAS-Unmanned-Aerial-System-PDF"
+    },
+    {
+      "activity_last_verified_at": "2026-08-06",
+      "activity_source_url": "https://hamptonroadsalliance.com/wp-content/uploads/2025/01/Alliance-Board-Deck-September.pdf",
+      "activity_status": "active",
+      "address_line": "3 Commercial Place, Suite 1320",
+      "capabilities": [
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "city": "Norfolk",
+      "contact_email": "info@757alliance.com",
+      "contact_phone": "757-627-2315",
+      "contact_text": "Regional business attraction and economic-development inquiries",
+      "contact_url": "https://hamptonroadsalliance.com/",
+      "current_activity": "The Alliance provides regional business development, business intelligence, real estate solutions, and marketing; its technology assessment identifies autonomous systems as a Hampton Roads opportunity area.",
+      "latitude": 36.84526,
+      "location_precision": "site",
+      "longitude": -76.288798,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Hampton Roads Alliance",
+      "overview": "Regional economic-development organization supporting business attraction, intelligence, site solutions, and autonomous-systems opportunities in Hampton Roads. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Manufacturing, materials, and prototyping. Relevant mission areas include Training and experimentation.",
+      "partnership_opportunities": "Companies considering a Hampton Roads expansion or relocation can contact the Alliance for regional economic-development and site support.",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "postal_code": "23510",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "short_description": "Regional economic-development organization supporting business attraction, intelligence, site solutions, and autonomous-systems opportunities in Hampton Roads.",
+      "sources": [
+        {
+          "title": "Hampton Roads Alliance autonomous-systems opportunity assessment",
+          "url": "https://hamptonroadsalliance.com/wp-content/uploads/2025/01/Alliance-Board-Deck-September.pdf"
+        },
+        {
+          "title": "Hampton Roads Alliance board meeting information",
+          "url": "https://hamptonroadsalliance.com/wp-content/uploads/2025/01/Minutes_Board-Meeting_April-19-2024.pdf"
+        },
+        {
+          "title": "Hampton Roads Alliance public contact information",
+          "url": "https://hamptonroadsalliance.com/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "State strategy and coordination",
+        "Programs and initiatives",
+        "Manufacturing and supply chain"
+      ],
+      "unmanned_systems_relevance": "Provides documented economic-development coordination, business attraction, funding, site support, or partnership development relevant to Virginia's autonomy ecosystem.",
+      "website_url": "https://hamptonroadsalliance.com/wp-content/uploads/2025/01/Alliance-Board-Deck-September.pdf"
     },
     {
       "address_line": "5172 West Military Highway",
@@ -9156,6 +9258,62 @@
       ],
       "unmanned_systems_relevance": "Middle Peninsula Rgnl is included as public aviation infrastructure serving West Point. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "activity_last_verified_at": "2026-08-06",
+      "activity_source_url": "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range",
+      "activity_status": "active",
+      "capabilities": [
+        "Testing, evaluation, verification, and validation",
+        "Systems engineering and integration",
+        "Navigation and positioning"
+      ],
+      "city": "Orange",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
+      "contact_url": "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range",
+      "current_activity": "MITRE operates the Orange County range for controlled testing, evaluation, and prototyping of UAS, counter-UAS, ground systems, communications, and related technologies.",
+      "development_last_verified_at": "2026-08-06",
+      "development_notes": "The public fact sheet describes 16 acres of dedicated airspace, hundreds of acres of accessible land, and thousands of acres of aerial access; it does not describe that acreage as generally available development land.",
+      "development_source_url": "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range",
+      "development_status": "operational",
+      "infrastructure_access": "Powered operations center, offices and work areas, storage, 5G connectivity, outdoor charging, internet, training space, and testing support.",
+      "latitude": 38.245,
+      "location_precision": "locality",
+      "longitude": -78.013,
+      "missions": [
+        "Training and experimentation",
+        "Public safety and emergency response",
+        "Counter-UAS"
+      ],
+      "name": "MITRE National Range",
+      "overview": "Controlled Orange County proving ground for UAS, counter-UAS, ground robotics, communications, prototyping, and independent evaluation. Public sources support its classification as a Virginia operating environment. Documented capabilities include Testing, evaluation, verification, and validation, Systems engineering and integration, and Navigation and positioning. Relevant mission areas include Training and experimentation and Public safety and emergency response.",
+      "owner_operator": "MITRE",
+      "partnership_opportunities": "MITRE states that government, academic, and industry partners can discuss range use for prototyping, testing, training, demonstrations, and independent validation.",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Counter-UAS",
+        "Ground vehicles and robotics"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "operating-environment",
+      "region": "Central Virginia",
+      "short_description": "Controlled Orange County proving ground for UAS, counter-UAS, ground robotics, communications, prototyping, and independent evaluation.",
+      "sources": [
+        {
+          "title": "MITRE National Range",
+          "url": "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Test and operational environments",
+        "Research and technical depth",
+        "Federal and defense customer access"
+      ],
+      "unmanned_systems_relevance": "Provides a documented controlled environment for testing, evaluating, and prototyping uncrewed aircraft, counter-UAS, ground systems, and communications.",
+      "website_url": "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range"
     },
     {
       "capabilities": [
@@ -13606,6 +13764,64 @@
       "website_url": "https://www.su.edu/"
     },
     {
+      "activity_last_verified_at": "2026-08-06",
+      "activity_source_url": "https://cspdc.org/2023/11/27/shd-aviation-tech-park-holds-ribbon-cutting/",
+      "activity_status": "developing",
+      "address_line": "77 Aviation Circle",
+      "available_acreage": 58,
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Weyers Cave",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
+      "contact_url": "https://cspdc.org/2023/11/27/shd-aviation-tech-park-holds-ribbon-cutting/",
+      "current_activity": "Two 14,000-square-foot corporate hangars are complete, and publicly funded utility work supports later phases of the Aviation Technology Park.",
+      "development_last_verified_at": "2026-08-06",
+      "development_notes": "The 58-acre park has two completed hangars. Its master plan identifies capacity for up to five additional hangars; this figure is a published site total, not a claim that all acreage is currently available.",
+      "development_source_url": "https://cspdc.org/2023/06/07/shenandoah-valley-aviation-technology-park-hangars-near-completion/",
+      "development_status": "in-development",
+      "infrastructure_access": "Road and taxiway access, parking, completed site work, and water and sewer utility relocation supporting future hangars.",
+      "latitude": 38.263841,
+      "location_precision": "site",
+      "longitude": -78.896447,
+      "missions": [
+        "Training and experimentation",
+        "Logistics and contested logistics"
+      ],
+      "name": "Shenandoah Valley Aviation Technology Park",
+      "overview": "Aviation business and technology site at Shenandoah Valley Regional Airport with completed hangars and publicly documented expansion infrastructure. Public sources support its classification as a Virginia infrastructure. Documented capabilities include Manufacturing, materials, and prototyping and Operations, maintenance, and sustainment. Relevant mission areas include Training and experimentation and Logistics and contested logistics.",
+      "owner_operator": "Shenandoah Valley Regional Airport Commission",
+      "partnership_opportunities": "The airport describes the park as a site for aviation-related business growth; current space and project availability must be confirmed with the airport.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "24486",
+      "provenance": "curated-public-source",
+      "record_type": "infrastructure",
+      "region": "Shenandoah Valley",
+      "short_description": "Aviation business and technology site at Shenandoah Valley Regional Airport with completed hangars and publicly documented expansion infrastructure.",
+      "sources": [
+        {
+          "title": "Shenandoah Valley Aviation Technology Park",
+          "url": "https://cspdc.org/2023/11/27/shd-aviation-tech-park-holds-ribbon-cutting/"
+        },
+        {
+          "title": "Shenandoah Valley Aviation Technology Park site development",
+          "url": "https://cspdc.org/2023/06/07/shenandoah-valley-aviation-technology-park-hangars-near-completion/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Physical infrastructure and logistics",
+        "Manufacturing and supply chain"
+      ],
+      "unmanned_systems_relevance": "Provides documented aviation-accessible land, facilities, or development capacity relevant to uncrewed-aircraft research, production, training, and operations.",
+      "website_url": "https://cspdc.org/2023/11/27/shd-aviation-tech-park-holds-ribbon-cutting/"
+    },
+    {
       "address_line": "77 Aviation Circle",
       "capabilities": [
         "Operations, maintenance, and sustainment"
@@ -14075,6 +14291,64 @@
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
       "website_url": "https://www.staffordsheriff.com/content/about/fieldoperations.cfm"
+    },
+    {
+      "activity_last_verified_at": "2026-08-06",
+      "activity_source_url": "https://doav.virginia.gov/advanced_air_mobility/",
+      "activity_status": "pilot",
+      "address_line": "95 Aviation Way",
+      "capabilities": [
+        "Testing, evaluation, verification, and validation",
+        "Safety, policy, regulatory, and airspace integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Fredericksburg",
+      "contact_email": "scott.denny@doav.virginia.gov",
+      "contact_phone": "804-236-3638",
+      "contact_text": "Virginia Advanced Air Mobility Program Manager, Scott Denny",
+      "contact_url": "https://doav.virginia.gov/advanced_air_mobility/",
+      "current_activity": "Stafford Regional Airport is one of the three airport sites shown in the Stafford-Warrenton-Winchester project, which focuses on integrating drone operations into the National Airspace System.",
+      "latitude": 38.399142,
+      "location_precision": "site",
+      "longitude": -77.45661,
+      "missions": [
+        "Training and experimentation",
+        "Logistics and contested logistics"
+      ],
+      "name": "Stafford Regional Airport AAM Integration Project Site",
+      "overview": "Stafford Regional Airport site within the Stafford-Warrenton-Winchester project for integrating drone operations into the National Airspace System. Public sources support its classification as a Virginia operating environment. Documented capabilities include Testing, evaluation, verification, and validation, Safety, policy, regulatory, and airspace integration, and Operations, maintenance, and sustainment. Relevant mission areas include Training and experimentation and Logistics and contested logistics.",
+      "partnership_opportunities": "Program and participation questions can be directed to the Virginia Department of Aviation Advanced Air Mobility Program Manager.",
+      "platform_domains": [
+        "Advanced Air Mobility",
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "22406",
+      "provenance": "curated-public-source",
+      "record_type": "operating-environment",
+      "region": "Fredericksburg Region",
+      "short_description": "Stafford Regional Airport site within the Stafford-Warrenton-Winchester project for integrating drone operations into the National Airspace System.",
+      "sources": [
+        {
+          "title": "Virginia Department of Aviation Advanced Air Mobility",
+          "url": "https://doav.virginia.gov/advanced_air_mobility/"
+        },
+        {
+          "title": "Stafford-Warrenton-Winchester AAM Integration Project",
+          "url": "https://doav.virginia.gov/wp-content/uploads/Files/DocumentLibrary/Stafford_Warrenton_Winchester_Project.pdf"
+        },
+        {
+          "title": "Virginia Airport Sponsor and Manager Directory",
+          "url": "https://doav.virginia.gov/airport_sponsors/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Test and operational environments",
+        "Physical infrastructure and logistics",
+        "Programs and initiatives"
+      ],
+      "unmanned_systems_relevance": "Supports documented testing or operational integration of uncrewed aviation and advanced-air-mobility concepts in the National Airspace System.",
+      "website_url": "https://doav.virginia.gov/advanced_air_mobility/"
     },
     {
       "address_line": "1200 Gene Bolton Drive",
@@ -16091,7 +16365,8 @@
     },
     {
       "capabilities": [
-        "Safety, policy, regulatory, and airspace integration"
+        "Safety, policy, regulatory, and airspace integration",
+        "Data engineering, analytics, and edge computing"
       ],
       "city": "Richmond",
       "contact_email": "",
@@ -16102,12 +16377,14 @@
       "location_precision": "locality",
       "longitude": -77.436,
       "missions": [
+        "Logistics and contested logistics",
         "Training and experimentation"
       ],
       "name": "Virginia Advanced Air Mobility Alliance",
-      "overview": "Statewide alliance convening advanced-air-mobility and unmanned-systems stakeholders. Public sources support its classification as a Virginia organization. Documented capabilities include Safety, policy, regulatory, and airspace integration. Relevant mission areas include Training and experimentation.",
+      "overview": "Statewide alliance convening advanced-air-mobility and unmanned-systems stakeholders. Public sources support its classification as a Virginia organization. Documented capabilities include Safety, policy, regulatory, and airspace integration and Data engineering, analytics, and edge computing. Relevant mission areas include Logistics and contested logistics and Training and experimentation.",
       "platform_domains": [
-        "Cross-domain autonomy"
+        "Advanced Air Mobility",
+        "Unmanned aircraft systems"
       ],
       "provenance": "curated-public-source",
       "record_type": "organization",
@@ -16124,29 +16401,39 @@
         "State strategy and coordination",
         "Programs and initiatives"
       ],
-      "unmanned_systems_relevance": "Coordinates, funds, regulates, or accelerates Virginia's unmanned-systems ecosystem.",
+      "unmanned_systems_relevance": "Supports documented planning, infrastructure integration, information exchange, or operational enablement for advanced air mobility and uncrewed aviation.",
       "website_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
     },
     {
+      "activity_last_verified_at": "2026-08-06",
+      "activity_source_url": "https://doav.virginia.gov/advanced_air_mobility/",
+      "activity_status": "active",
+      "address_line": "5702 Gulfstream Road",
       "capabilities": [
-        "Safety, policy, regulatory, and airspace integration"
+        "Safety, policy, regulatory, and airspace integration",
+        "Data engineering, analytics, and edge computing"
       ],
       "city": "Richmond",
-      "contact_email": "",
-      "contact_phone": "",
+      "contact_email": "scott.denny@doav.virginia.gov",
+      "contact_phone": "804-236-3638",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://doav.virginia.gov/agency-directory/",
-      "latitude": 37.541,
-      "location_precision": "locality",
-      "longitude": -77.436,
+      "current_activity": "DOAV lists active work on multistate collaboration, smart airspace, electric aircraft demonstrations, the Stafford-Warrenton-Winchester project, statewide planning, community outreach, and airport integration.",
+      "latitude": 37.512142,
+      "location_precision": "site",
+      "longitude": -77.332758,
       "missions": [
+        "Logistics and contested logistics",
         "Training and experimentation"
       ],
       "name": "Virginia Advanced Air Mobility Program",
-      "overview": "Commonwealth aviation program covering automated small uncrewed systems, remotely controlled aircraft, and aviation automation. Public sources support its classification as a Virginia program. Documented capabilities include Safety, policy, regulatory, and airspace integration. Relevant mission areas include Training and experimentation.",
+      "overview": "Commonwealth aviation program covering automated small uncrewed systems, remotely controlled aircraft, and aviation automation. Public sources support its classification as a Virginia program. Documented capabilities include Safety, policy, regulatory, and airspace integration and Data engineering, analytics, and edge computing. Relevant mission areas include Logistics and contested logistics and Training and experimentation.",
+      "partnership_opportunities": "Statewide AAM program questions and stakeholder coordination are routed through the DOAV Advanced Air Mobility Program Manager.",
       "platform_domains": [
-        "Cross-domain autonomy"
+        "Advanced Air Mobility",
+        "Unmanned aircraft systems"
       ],
+      "postal_code": "23250",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Greater Richmond",
@@ -16166,7 +16453,7 @@
         "State strategy and coordination",
         "Programs and initiatives"
       ],
-      "unmanned_systems_relevance": "Coordinates, funds, regulates, or accelerates Virginia's unmanned-systems ecosystem.",
+      "unmanned_systems_relevance": "Supports documented planning, infrastructure integration, information exchange, or operational enablement for advanced air mobility and uncrewed aviation.",
       "website_url": "https://doav.virginia.gov/advanced_air_mobility/"
     },
     {
@@ -16419,25 +16706,35 @@
       "website_url": "https://dwr.virginia.gov/wp-content/uploads/media/Virginia-Conservation-Police-Annual-Report-2024.pdf"
     },
     {
+      "activity_last_verified_at": "2026-08-06",
+      "activity_source_url": "https://doav.virginia.gov/advanced_air_mobility/",
+      "activity_status": "active",
+      "address_line": "5702 Gulfstream Road",
       "capabilities": [
-        "Safety, policy, regulatory, and airspace integration"
+        "Safety, policy, regulatory, and airspace integration",
+        "Data engineering, analytics, and edge computing"
       ],
       "city": "Richmond",
       "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://vipc.org/virginia-launches-advanced-air-mobility-and-unmanned-systems-test-site-program/",
-      "latitude": 37.541,
-      "location_precision": "locality",
-      "longitude": -77.436,
+      "contact_phone": "804-236-3624",
+      "contact_text": "Virginia Department of Aviation public information",
+      "contact_url": "https://doav.virginia.gov/advanced_air_mobility/",
+      "current_activity": "DOAV leads statewide aviation programs and publishes current advanced-air-mobility goals, projects, resources, and airport-integration work.",
+      "latitude": 37.512142,
+      "location_precision": "exact",
+      "longitude": -77.332758,
       "missions": [
+        "Logistics and contested logistics",
         "Training and experimentation"
       ],
       "name": "Virginia Department of Aviation",
-      "overview": "Commonwealth aviation agency leading aviation planning and advanced-air-mobility initiatives. Public sources support its classification as a Virginia organization. Documented capabilities include Safety, policy, regulatory, and airspace integration. Relevant mission areas include Training and experimentation.",
+      "overview": "Commonwealth aviation agency leading aviation planning and advanced-air-mobility initiatives. Public sources support its classification as a Virginia organization. Documented capabilities include Safety, policy, regulatory, and airspace integration and Data engineering, analytics, and edge computing. Relevant mission areas include Logistics and contested logistics and Training and experimentation.",
+      "partnership_opportunities": "AAM program inquiries are routed through the department's named program manager; airport-development inquiries use the applicable agency program contact.",
       "platform_domains": [
-        "Cross-domain autonomy"
+        "Advanced Air Mobility",
+        "Unmanned aircraft systems"
       ],
+      "postal_code": "23250",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Greater Richmond",
@@ -16446,6 +16743,10 @@
         {
           "title": "Virginia AAM and Unmanned Systems Test Site Program",
           "url": "https://vipc.org/virginia-launches-advanced-air-mobility-and-unmanned-systems-test-site-program/"
+        },
+        {
+          "title": "Virginia Department of Aviation Advanced Air Mobility",
+          "url": "https://doav.virginia.gov/advanced_air_mobility/"
         }
       ],
       "state": "VA",
@@ -16453,7 +16754,7 @@
         "State strategy and coordination",
         "Programs and initiatives"
       ],
-      "unmanned_systems_relevance": "Coordinates, funds, regulates, or accelerates Virginia's unmanned-systems ecosystem.",
+      "unmanned_systems_relevance": "Supports documented planning, infrastructure integration, information exchange, or operational enablement for advanced air mobility and uncrewed aviation.",
       "website_url": "https://vipc.org/virginia-launches-advanced-air-mobility-and-unmanned-systems-test-site-program/"
     },
     {
@@ -16536,6 +16837,57 @@
       "website_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
     },
     {
+      "activity_last_verified_at": "2026-08-06",
+      "activity_source_url": "https://www.vedp.org/industry/unmanned-systems",
+      "activity_status": "active",
+      "address_line": "901 East Cary Street",
+      "capabilities": [
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "city": "Richmond",
+      "contact_email": "sburnette@vedp.org",
+      "contact_phone": "804-489-4391",
+      "contact_text": "Unmanned-systems business attraction and site-selection inquiries",
+      "contact_url": "https://www.vedp.org/industry/unmanned-systems",
+      "current_activity": "VEDP markets Virginia's unmanned-systems sector and provides companies with business intelligence, site-selection guidance, incentive support, and talent solutions.",
+      "latitude": 37.537283,
+      "location_precision": "exact",
+      "longitude": -77.437109,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Virginia Economic Development Partnership",
+      "overview": "Commonwealth economic-development authority providing business attraction, site selection, incentives, talent, and industry support for unmanned systems. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Manufacturing, materials, and prototyping. Relevant mission areas include Training and experimentation.",
+      "partnership_opportunities": "Domestic and international companies considering a Virginia location can use the industry-page contacts for confidential business-development assistance.",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "postal_code": "23219",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Greater Richmond",
+      "short_description": "Commonwealth economic-development authority providing business attraction, site selection, incentives, talent, and industry support for unmanned systems.",
+      "sources": [
+        {
+          "title": "VEDP: Unmanned Systems in Virginia",
+          "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "Virginia Economic Development Partnership contact information",
+          "url": "https://www.vedp.org/contact-us"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "State strategy and coordination",
+        "Programs and initiatives",
+        "Manufacturing and supply chain"
+      ],
+      "unmanned_systems_relevance": "Provides documented economic-development coordination, business attraction, funding, site support, or partnership development relevant to Virginia's autonomy ecosystem.",
+      "website_url": "https://www.vedp.org/industry/unmanned-systems"
+    },
+    {
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -16581,33 +16933,43 @@
       "website_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
     },
     {
+      "activity_last_verified_at": "2026-08-06",
+      "activity_source_url": "https://doav.virginia.gov/aviation_programs_resources/",
+      "activity_status": "active",
+      "address_line": "",
       "capabilities": [
-        "Safety, policy, regulatory, and airspace integration"
+        "Safety, policy, regulatory, and airspace integration",
+        "Data engineering, analytics, and edge computing"
       ],
-      "city": "Blacksburg",
+      "city": "",
       "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "contact_phone": "804-236-3624",
+      "contact_text": "Virginia Department of Aviation program information",
+      "contact_url": "https://doav.virginia.gov/aviation_programs_resources/",
+      "current_activity": "Virginia FIX provides an information-sharing capability for state and local governments and UAS stakeholders to address safety and policy concerns while supporting integrated airspace.",
+      "latitude": null,
+      "location_precision": "regional",
+      "longitude": null,
       "missions": [
+        "Logistics and contested logistics",
         "Training and experimentation"
       ],
       "name": "Virginia Flight Information Exchange",
-      "overview": "Statewide information-sharing capability supporting safe and informed UAS operations. Public sources support its classification as a Virginia program. Documented capabilities include Safety, policy, regulatory, and airspace integration. Relevant mission areas include Training and experimentation.",
+      "overview": "Statewide information-sharing capability supporting safe and informed UAS operations. Public sources support its classification as a Virginia program. Documented capabilities include Safety, policy, regulatory, and airspace integration and Data engineering, analytics, and edge computing. Relevant mission areas include Logistics and contested logistics and Training and experimentation.",
+      "partnership_opportunities": "The DOAV program page provides the public Virginia FIX site, concept-of-operations materials, and agency contact route.",
       "platform_domains": [
-        "Cross-domain autonomy"
+        "Advanced Air Mobility",
+        "Unmanned aircraft systems"
       ],
+      "postal_code": "",
       "provenance": "curated-public-source",
       "record_type": "program",
-      "region": "New River Valley",
+      "region": "Greater Richmond",
       "short_description": "Statewide information-sharing capability supporting safe and informed UAS operations.",
       "sources": [
         {
-          "title": "Virginia Unmanned Systems Center",
-          "url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
+          "title": "Virginia Department of Aviation Flight Information Exchange",
+          "url": "https://doav.virginia.gov/aviation_programs_resources/"
         }
       ],
       "state": "VA",
@@ -16615,8 +16977,8 @@
         "State strategy and coordination",
         "Programs and initiatives"
       ],
-      "unmanned_systems_relevance": "Coordinates, funds, regulates, or accelerates Virginia's unmanned-systems ecosystem.",
-      "website_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
+      "unmanned_systems_relevance": "Supports documented planning, infrastructure integration, information exchange, or operational enablement for advanced air mobility and uncrewed aviation.",
+      "website_url": "https://doav.virginia.gov/aviation_programs_resources/"
     },
     {
       "address_line": "18521 Lee Highway",
@@ -19518,6 +19880,31 @@
     {
       "from": "Virginia Department of Aviation",
       "to": "Virginia Advanced Air Mobility Program",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Virginia Flight Information Exchange",
+      "type": "supports"
+    },
+    {
+      "from": "Virginia Department of Aviation",
+      "to": "Stafford Regional Airport AAM Integration Project Site",
+      "type": "supports"
+    },
+    {
+      "from": "Washington Exec/Stafford Rgnl",
+      "to": "Stafford Regional Airport AAM Integration Project Site",
+      "type": "supports"
+    },
+    {
+      "from": "Shenandoah Valley Rgnl",
+      "to": "Shenandoah Valley Aviation Technology Park",
+      "type": "operates"
+    },
+    {
+      "from": "GO Virginia",
+      "to": "Shenandoah Valley Aviation Technology Park",
       "type": "supports"
     },
     {

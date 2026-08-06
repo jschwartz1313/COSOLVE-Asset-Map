@@ -28,6 +28,18 @@ CSV_COLUMNS = [
     "contact_phone",
     "contact_email",
     "contact_url",
+    "activity_status",
+    "current_activity",
+    "partnership_opportunities",
+    "activity_source_url",
+    "activity_last_verified_at",
+    "owner_operator",
+    "available_acreage",
+    "development_status",
+    "development_notes",
+    "infrastructure_access",
+    "development_source_url",
+    "development_last_verified_at",
     "address_line",
     "city",
     "state",
@@ -76,6 +88,28 @@ def asset_csv_row(asset, include_internal=False):
         "contact_phone": asset.contact_phone,
         "contact_email": asset.contact_email,
         "contact_url": asset.contact_url,
+        "activity_status": asset.activity_status,
+        "current_activity": asset.current_activity,
+        "partnership_opportunities": asset.partnership_opportunities,
+        "activity_source_url": asset.activity_source_url,
+        "activity_last_verified_at": (
+            asset.activity_last_verified_at.isoformat()
+            if asset.activity_last_verified_at
+            else ""
+        ),
+        "owner_operator": asset.owner_operator,
+        "available_acreage": (
+            asset.available_acreage if asset.available_acreage is not None else ""
+        ),
+        "development_status": asset.development_status,
+        "development_notes": asset.development_notes,
+        "infrastructure_access": asset.infrastructure_access,
+        "development_source_url": asset.development_source_url,
+        "development_last_verified_at": (
+            asset.development_last_verified_at.isoformat()
+            if asset.development_last_verified_at
+            else ""
+        ),
         "address_line": asset.address_line,
         "city": asset.city,
         "state": asset.state,
@@ -170,6 +204,8 @@ def parse_csv(upload):
     file_errors = []
     valid_record_types = {value for value, _label in Asset.RecordType.choices}
     valid_location_precisions = {value for value, _label in Asset.LocationPrecision.choices}
+    valid_activity_statuses = {value for value, _label in Asset.ActivityStatus.choices}
+    valid_development_statuses = {value for value, _label in Asset.DevelopmentStatus.choices}
     for number, raw in enumerate(reader, start=2):
         row = {key: (value or "").strip() for key, value in raw.items() if key is not None}
         errors = []
@@ -198,6 +234,57 @@ def parse_csv(upload):
             errors.append("Latitude and longitude must be provided together.")
         validate_url(row.get("website_url", ""), "Website URL", errors)
         validate_url(row.get("contact_url", ""), "Contact URL", errors)
+        validate_url(row.get("activity_source_url", ""), "Activity source URL", errors)
+        validate_url(
+            row.get("development_source_url", ""), "Development source URL", errors
+        )
+        if (
+            row.get("activity_status")
+            and row["activity_status"] not in valid_activity_statuses
+        ):
+            errors.append("Activity status is invalid.")
+        if (
+            row.get("development_status")
+            and row["development_status"] not in valid_development_statuses
+        ):
+            errors.append("Development status is invalid.")
+        if row.get("available_acreage"):
+            try:
+                acreage = Decimal(row["available_acreage"])
+                if acreage < 0:
+                    errors.append("Available acreage cannot be negative.")
+            except InvalidOperation:
+                errors.append("Available acreage must be numeric.")
+        activity_claims = (
+            row.get("activity_status"),
+            row.get("current_activity"),
+            row.get("partnership_opportunities"),
+        )
+        if any(activity_claims):
+            if not row.get("activity_source_url"):
+                errors.append("Activity details require an activity source URL.")
+            if not row.get("activity_last_verified_at"):
+                errors.append("Activity details require an activity review date.")
+        development_claims = (
+            row.get("owner_operator"),
+            row.get("available_acreage"),
+            row.get("development_status"),
+            row.get("development_notes"),
+            row.get("infrastructure_access"),
+        )
+        if any(development_claims):
+            if not row.get("development_source_url"):
+                errors.append("Development details require a development source URL.")
+            if not row.get("development_last_verified_at"):
+                errors.append("Development details require a development review date.")
+        parse_iso_date(
+            row.get("activity_last_verified_at", ""), "Activity review date", errors
+        )
+        parse_iso_date(
+            row.get("development_last_verified_at", ""),
+            "Development review date",
+            errors,
+        )
         if row.get("contact_email"):
             try:
                 EmailValidator()(row["contact_email"])

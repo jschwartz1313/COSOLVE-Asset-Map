@@ -18,6 +18,7 @@ The checked-in catalog contains source-backed, publicly documented Virginia reco
 - Five persistent presentation modes: the current interface, a geometry-matched dark mode, a colorful atlas mode, and dark or light image-led showcase modes
 - Saved rectangle and polygon analyses that reopen with the same geometry and selected records
 - Accessible non-map directory and public asset profiles
+- Source-dated current activity, collaboration routes, and economic-development site-readiness fields
 - Round-trip CSV review workflow with complete editable fields and multiple sources
 - Regional comparison with inventory mix, leading capabilities, and data-confidence measures
 - Source-backed relationships connecting organizations, facilities, and programs
@@ -27,9 +28,10 @@ The checked-in catalog contains source-backed, publicly documented Virginia reco
 - Coverage metrics by region and asset type, saved views, and relationship explorer
 - Optional planning layer for potential Maritime Prosperity Zone census tracts, explicitly
   distinguished from any future federal designations
+- Optional FAA-recorded private-use heliport reference layer with access and authorization warnings
 - Password recovery, login throttling, optional TOTP MFA, and optional OIDC organization sign-in
 - Public correction and addition submissions routed to an editor-only review queue
-- 447 source-backed Virginia records spanning public-use airports, higher education, research, workforce, companies, infrastructure, programs, and generalized defense assets
+- 453 source-backed Virginia records spanning public-use airports, higher education, research, workforce, companies, infrastructure, programs, and generalized defense assets
 - Backend, frontend state, security-boundary, and import tests
 
 ## Local setup

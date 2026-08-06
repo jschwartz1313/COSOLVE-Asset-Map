@@ -27,6 +27,18 @@ class PublicApiTests(TestCase):
             contact_phone="757-555-0100",
             contact_email="range@example.org",
             contact_url="https://example.org/range/contact",
+            activity_status=Asset.ActivityStatus.ACTIVE,
+            current_activity="Current source-backed testing is underway.",
+            partnership_opportunities="Public test inquiries are accepted.",
+            activity_source_url="https://example.org/activity",
+            activity_last_verified_at=date(2026, 7, 1),
+            owner_operator="Example range operator",
+            available_acreage="20.00",
+            development_status=Asset.DevelopmentStatus.OPERATIONAL,
+            development_notes="The documented test site is operational.",
+            infrastructure_access="Road, power, and test-area access.",
+            development_source_url="https://example.org/development",
+            development_last_verified_at=date(2026, 7, 1),
             city="Norfolk",
             address_line="100 Range Road",
             postal_code="23510",
@@ -126,6 +138,13 @@ class PublicApiTests(TestCase):
         self.assertEqual(body["contact_phone"], "757-555-0100")
         self.assertEqual(body["contact_email"], "range@example.org")
         self.assertEqual(body["contact_url"], "https://example.org/range/contact")
+        self.assertEqual(body["activity"]["status"], "active")
+        self.assertEqual(
+            body["activity"]["current_activity"],
+            "Current source-backed testing is underway.",
+        )
+        self.assertEqual(body["development_readiness"]["available_acreage"], 20.0)
+        self.assertEqual(body["development_readiness"]["status"], "operational")
 
     def test_detail_includes_public_incoming_relationships(self):
         response = self.client.get(reverse("api:asset-detail", args=[self.public.slug]))

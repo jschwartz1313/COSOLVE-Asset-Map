@@ -1,4 +1,5 @@
 import json
+from datetime import date
 from pathlib import Path
 
 from django.conf import settings
@@ -98,6 +99,15 @@ class Command(BaseCommand):
                 "short_description",
                 "overview",
                 "unmanned_systems_relevance",
+                "activity_status",
+                "current_activity",
+                "partnership_opportunities",
+                "activity_source_url",
+                "owner_operator",
+                "development_status",
+                "development_notes",
+                "infrastructure_access",
+                "development_source_url",
                 "address_line",
                 "city",
                 "postal_code",
@@ -106,6 +116,17 @@ class Command(BaseCommand):
                 "location_precision",
             ):
                 setattr(asset, field, record.get(field, ""))
+            asset.activity_last_verified_at = (
+                date.fromisoformat(record["activity_last_verified_at"])
+                if record.get("activity_last_verified_at")
+                else None
+            )
+            asset.available_acreage = record.get("available_acreage")
+            asset.development_last_verified_at = (
+                date.fromisoformat(record["development_last_verified_at"])
+                if record.get("development_last_verified_at")
+                else None
+            )
             asset.website_url = record.get("website_url", "")
             asset.contact_text = record.get("contact_text", "")
             asset.contact_phone = record.get("contact_phone", "")

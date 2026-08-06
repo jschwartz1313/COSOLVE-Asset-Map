@@ -11,7 +11,7 @@ import {
   featuresWithinRadius,
   summarizeRegion,
 } from "./map-analysis.js?v=20260730-2";
-import { createMap } from "./map.js?v=20260731-1";
+import { createMap } from "./map.js?v=20260806-1";
 import {
   analysisStateFromParams,
   filterParamsFromMapUrl,
@@ -19,7 +19,7 @@ import {
   paramsWithMapState,
   serializePolygonAnalysis,
   serializeRectangleAnalysis,
-} from "./map-state.js?v=20260731-1";
+} from "./map-state.js?v=20260806-1";
 import { renderResults, selectResult } from "./results.js?v=20260727-2";
 import { hydrateForm, paramsFromForm, updateUrl } from "./state.js?v=20260717";
 
@@ -44,6 +44,7 @@ const assetLayerToggle = document.querySelector("#asset-layer-toggle");
 const countyLayerToggle = document.querySelector("#county-layer-toggle");
 const regionLayerToggle = document.querySelector("#region-layer-toggle");
 const mpzLayerToggle = document.querySelector("#mpz-layer-toggle");
+const heliportLayerToggle = document.querySelector("#heliport-layer-toggle");
 const stateBoundaryToggle = document.querySelector("#state-boundary-toggle");
 const verificationLayerToggle = document.querySelector("#verification-layer-toggle");
 const precisionLayerToggle = document.querySelector("#precision-layer-toggle");
@@ -92,6 +93,7 @@ function applyLayerToggleState(state) {
   regionLayerToggle.checked = layers.includes("regions");
   mpzLayerToggle.checked = layers.includes("mpz");
   countyLayerToggle.checked = layers.includes("counties");
+  heliportLayerToggle.checked = layers.includes("heliports");
   verificationLayerToggle.checked = layers.includes("verification");
   precisionLayerToggle.checked = layers.includes("precision");
   const basemap = state?.basemap || "street";
@@ -132,6 +134,7 @@ function currentLayers() {
   if (regionLayerToggle.checked) layers.push("regions");
   if (mpzLayerToggle.checked) layers.push("mpz");
   if (countyLayerToggle.checked) layers.push("counties");
+  if (heliportLayerToggle.checked) layers.push("heliports");
   if (verificationLayerToggle.checked) layers.push("verification");
   if (precisionLayerToggle.checked) layers.push("precision");
   return layers;
@@ -481,6 +484,22 @@ async function updateMpzLayer() {
 
 mpzLayerToggle.addEventListener("change", updateMpzLayer);
 
+async function updateHeliportLayer() {
+  heliportLayerToggle.disabled = true;
+  try {
+    await mapController.setHeliportLayerVisible(heliportLayerToggle.checked);
+  } catch (error) {
+    heliportLayerToggle.checked = false;
+    showStatus("FAA heliport reference points could not be loaded.");
+    console.error(error);
+  } finally {
+    heliportLayerToggle.disabled = false;
+    updateViewActions();
+  }
+}
+
+heliportLayerToggle.addEventListener("change", updateHeliportLayer);
+
 async function copyCurrentView() {
   const url = currentMapUrl();
   try {
@@ -624,6 +643,7 @@ async function syncLayerVisibility() {
     updateRegionLayer(),
     updateMpzLayer(),
     updateCountyLayer(),
+    updateHeliportLayer(),
   ]);
 }
 

@@ -73,6 +73,34 @@ def public_asset_dict(asset, include_detail=True):
                 "contact_phone": asset.contact_phone,
                 "contact_email": asset.contact_email,
                 "contact_url": asset.contact_url,
+                "activity": {
+                    "status": asset.activity_status,
+                    "status_label": asset.get_activity_status_display()
+                    if asset.activity_status
+                    else "",
+                    "current_activity": asset.current_activity,
+                    "partnership_opportunities": asset.partnership_opportunities,
+                    "source_url": asset.activity_source_url,
+                    "last_verified_at": asset.activity_last_verified_at.isoformat()
+                    if asset.activity_last_verified_at
+                    else None,
+                },
+                "development_readiness": {
+                    "owner_operator": asset.owner_operator,
+                    "available_acreage": float(asset.available_acreage)
+                    if asset.available_acreage is not None
+                    else None,
+                    "status": asset.development_status,
+                    "status_label": asset.get_development_status_display()
+                    if asset.development_status
+                    else "",
+                    "notes": asset.development_notes,
+                    "infrastructure_access": asset.infrastructure_access,
+                    "source_url": asset.development_source_url,
+                    "last_verified_at": asset.development_last_verified_at.isoformat()
+                    if asset.development_last_verified_at
+                    else None,
+                },
                 "sources": [
                     {
                         "title": source.title,

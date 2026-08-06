@@ -63,6 +63,18 @@ test("map layers toggle without moving the reset control", async ({ page }) => {
 
   await page.locator("#county-layer-toggle").check();
   await expect(page.locator(".leaflet-county-boundaries-pane path")).not.toHaveCount(0);
+
+  const heliportToggle = page.locator("#heliport-layer-toggle");
+  await expect(heliportToggle).not.toBeChecked();
+  await expect(page.locator(".leaflet-heliports-pane .heliport-reference-shell")).toHaveCount(0);
+  await heliportToggle.check();
+  await expect(page.locator(".leaflet-heliports-pane .heliport-reference-shell")).toHaveCount(127);
+  await page
+    .locator(".leaflet-heliports-pane .heliport-reference-shell")
+    .first()
+    .dispatchEvent("click");
+  await expect(page.locator(".heliport-popup")).toContainText("Private use");
+  await expect(page.locator(".heliport-popup")).toContainText("does not indicate public access");
 });
 
 test("map credits stay compact while full source notes remain available", async ({
@@ -84,6 +96,7 @@ test("map credits stay compact while full source notes remain available", async 
   await expect(sources).toHaveAttribute("open", "");
   await expect(sources).toContainText("U.S. Census Bureau TIGERweb");
   await expect(sources).toContainText("planning candidates, not federal designations");
+  await expect(sources).toContainText("FAA-recorded operational private-use heliports");
 });
 
 test("copy view link preserves the map position, filters, and layers", async ({
@@ -98,6 +111,7 @@ test("copy view link preserves the map position, filters, and layers", async ({
   await page.locator(".map-layers summary").click();
   await page.locator("#county-layer-toggle").check();
   await page.locator("#mpz-layer-toggle").check();
+  await page.locator("#heliport-layer-toggle").check();
   await page.locator(".map-actions summary").click();
   await page.locator("#copy-view-link").click();
   await expect(page.locator("#copy-view-link")).toHaveText("Link copied");
@@ -111,15 +125,18 @@ test("copy view link preserves the map position, filters, and layers", async ({
   expect(copied.searchParams.get("map_layers")).toContain("assets");
   expect(copied.searchParams.get("map_layers")).toContain("counties");
   expect(copied.searchParams.get("map_layers")).toContain("mpz");
-  expect(copied.searchParams.get("map_layers_v")).toBe("3");
+  expect(copied.searchParams.get("map_layers")).toContain("heliports");
+  expect(copied.searchParams.get("map_layers_v")).toBe("4");
   expect(copied.searchParams.get("map_basemap")).toBe("street");
 
   await page.goto(copiedUrl);
   await expect(page.locator("#asset-layer-toggle")).toBeChecked();
   await expect(page.locator("#county-layer-toggle")).toBeChecked();
   await expect(page.locator("#mpz-layer-toggle")).toBeChecked();
+  await expect(page.locator("#heliport-layer-toggle")).toBeChecked();
   await expect(page.locator(".leaflet-county-boundaries-pane path")).not.toHaveCount(0);
   await expect(page.locator(".leaflet-maritime-prosperity-zones-pane path")).toHaveCount(11);
+  await expect(page.locator(".leaflet-heliports-pane .heliport-reference-shell")).toHaveCount(127);
 });
 
 test("print view opens the browser print or PDF workflow", async ({ page }) => {
@@ -538,6 +555,19 @@ test("asset detail profiles stay readable and within the viewport", async ({ pag
       .first()
       .evaluate((element) => element.getBoundingClientRect().height),
   ).toBeLessThan(300);
+});
+
+test("source-backed activity and site-readiness details are visible", async ({ page }) => {
+  await page.goto("/assets/shenandoah-valley-aviation-technology-park/");
+  await expect(
+    page.getByRole("heading", { name: "Shenandoah Valley Aviation Technology Park" }),
+  ).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Current activity and collaboration" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Site readiness" })).toBeVisible();
+  await expect(page.locator(".detail-sidebar")).toContainText("58 acres");
+  await expect(page.locator(".detail-sidebar")).toContainText("In development");
+  await expect(page.getByRole("link", { name: "Activity source" })).toHaveAttribute("href", /^https:/);
+  await expect(page.getByRole("link", { name: "Development source" })).toHaveAttribute("href", /^https:/);
 });
 
 test("about page reports review status without an empty date range", async ({ page }) => {

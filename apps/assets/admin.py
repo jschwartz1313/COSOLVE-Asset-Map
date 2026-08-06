@@ -223,6 +223,8 @@ class AssetAdmin(SimpleHistoryAdmin):
         "name",
         "record_type",
         "region",
+        "activity_status",
+        "development_status",
         "status",
         "visibility",
         "review_priority",
@@ -246,6 +248,9 @@ class AssetAdmin(SimpleHistoryAdmin):
         "short_description",
         "overview",
         "unmanned_systems_relevance",
+        "current_activity",
+        "partnership_opportunities",
+        "owner_operator",
         "contact_text",
         "contact_email",
         "city",
@@ -280,6 +285,40 @@ class AssetAdmin(SimpleHistoryAdmin):
             {"fields": ("name", "slug", "record_type", "short_description", "overview")},
         ),
         ("Unmanned systems relevance", {"fields": ("unmanned_systems_relevance",)}),
+        (
+            "Current activity and collaboration",
+            {
+                "fields": (
+                    "activity_status",
+                    "current_activity",
+                    "partnership_opportunities",
+                    "activity_source_url",
+                    "activity_last_verified_at",
+                ),
+                "description": (
+                    "Use only current, public-source information. A source and review date are "
+                    "required whenever activity or partnership details are entered."
+                ),
+            },
+        ),
+        (
+            "Economic development and site readiness",
+            {
+                "fields": (
+                    "owner_operator",
+                    "available_acreage",
+                    "development_status",
+                    "development_notes",
+                    "infrastructure_access",
+                    "development_source_url",
+                    "development_last_verified_at",
+                ),
+                "description": (
+                    "Document only publicly stated site information. Acreage is informational "
+                    "and does not by itself indicate that land is currently available."
+                ),
+            },
+        ),
         (
             "Taxonomy",
             {"fields": ("strategic_categories", "platform_domains", "capabilities", "missions")},

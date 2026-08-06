@@ -37,6 +37,24 @@ class RealCatalogFileTests(TestCase):
             )
         )
 
+    def test_faa_heliport_reference_layer_is_scoped_and_labeled(self):
+        path = settings.BASE_DIR / "static" / "data" / "virginia-heliports.geojson"
+        layer = json.loads(path.read_text())
+
+        self.assertEqual(layer["type"], "FeatureCollection")
+        self.assertEqual(layer["metadata"]["feature_count"], len(layer["features"]))
+        self.assertGreaterEqual(len(layer["features"]), 120)
+        self.assertIn("private-use", layer["metadata"]["scope"])
+        self.assertIn("does not imply public access", layer["metadata"]["disclaimer"])
+        self.assertTrue(
+            all(
+                feature["geometry"]["type"] == "Point"
+                and feature["properties"]["use"] == "Private use"
+                and feature["properties"]["status"] == "Operational"
+                for feature in layer["features"]
+            )
+        )
+
     def test_catalog_has_at_least_400_real_source_backed_records(self):
         catalog = self.load_catalog()
         records = catalog["records"]
@@ -251,6 +269,44 @@ class RealCatalogFileTests(TestCase):
             ),
             relationships,
         )
+
+    def test_stakeholder_requested_assets_and_dynamic_fields_are_source_backed(self):
+        catalog = self.load_catalog()
+        records_by_name = {record["name"]: record for record in catalog["records"]}
+        requested_assets = {
+            "GO Virginia",
+            "Hampton Roads Alliance",
+            "MITRE National Range",
+            "Shenandoah Valley Aviation Technology Park",
+            "Stafford Regional Airport AAM Integration Project Site",
+            "Virginia Economic Development Partnership",
+        }
+
+        self.assertTrue(requested_assets.issubset(records_by_name))
+        for name in requested_assets:
+            record = records_by_name[name]
+            self.assertTrue(record["activity_status"])
+            self.assertTrue(record["current_activity"])
+            self.assertTrue(record["partnership_opportunities"])
+            self.assertTrue(record["activity_last_verified_at"])
+            self.assertIn(
+                record["activity_source_url"],
+                {source["url"] for source in record["sources"]},
+            )
+
+        shd = records_by_name["Shenandoah Valley Aviation Technology Park"]
+        self.assertEqual(shd["available_acreage"], 58)
+        self.assertEqual(shd["development_status"], "in-development")
+        self.assertIn(
+            shd["development_source_url"],
+            {source["url"] for source in shd["sources"]},
+        )
+        stafford = records_by_name["Stafford Regional Airport AAM Integration Project Site"]
+        self.assertIn("Advanced Air Mobility", stafford["platform_domains"])
+        self.assertEqual(stafford["location_precision"], "site")
+        virginia_fix = records_by_name["Virginia Flight Information Exchange"]
+        self.assertEqual(virginia_fix["location_precision"], "regional")
+        self.assertIsNone(virginia_fix["latitude"])
 
     def test_only_if_empty_preserves_existing_database_edits(self):
         call_command("seed_real_data", verbosity=0)

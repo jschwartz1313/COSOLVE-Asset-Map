@@ -82,6 +82,26 @@ def commit(request):
         asset.contact_phone = data.get("contact_phone", "")
         asset.contact_email = data.get("contact_email", "")
         asset.contact_url = data.get("contact_url", "")
+        asset.activity_status = data.get("activity_status", "")
+        asset.current_activity = data.get("current_activity", "")
+        asset.partnership_opportunities = data.get("partnership_opportunities", "")
+        asset.activity_source_url = data.get("activity_source_url", "")
+        asset.activity_last_verified_at = (
+            date.fromisoformat(data["activity_last_verified_at"])
+            if data.get("activity_last_verified_at")
+            else None
+        )
+        asset.owner_operator = data.get("owner_operator", "")
+        asset.available_acreage = data.get("available_acreage") or None
+        asset.development_status = data.get("development_status", "")
+        asset.development_notes = data.get("development_notes", "")
+        asset.infrastructure_access = data.get("infrastructure_access", "")
+        asset.development_source_url = data.get("development_source_url", "")
+        asset.development_last_verified_at = (
+            date.fromisoformat(data["development_last_verified_at"])
+            if data.get("development_last_verified_at")
+            else None
+        )
         asset.address_line = data.get("address_line", "")
         asset.city = data.get("city", "")
         asset.state = data.get("state", "VA") or "VA"
@@ -188,6 +208,36 @@ def data_quality(request):
             Asset.LocationPrecision.LOCALITY,
         ]
     ).order_by("region__name", "name")
+    activity_claims = (
+        Q(activity_status__gt="")
+        | Q(current_activity__gt="")
+        | Q(partnership_opportunities__gt="")
+    )
+    development_claims = (
+        Q(owner_operator__gt="")
+        | Q(development_status__gt="")
+        | Q(development_notes__gt="")
+        | Q(infrastructure_access__gt="")
+        | Q(available_acreage__isnull=False)
+    )
+    dynamic_claims_stale = active_assets.filter(
+        (
+            activity_claims
+            & (
+                Q(activity_last_verified_at__lt=stale_cutoff)
+                | Q(activity_last_verified_at__isnull=True)
+                | Q(activity_source_url="")
+            )
+        )
+        | (
+            development_claims
+            & (
+                Q(development_last_verified_at__lt=stale_cutoff)
+                | Q(development_last_verified_at__isnull=True)
+                | Q(development_source_url="")
+            )
+        )
+    ).order_by("name")
     needs_review = active_assets.filter(
         Q(reviewed_at__isnull=True) | Q(status__in=[Asset.Status.DRAFT, Asset.Status.NEEDS_REVIEW])
     ).order_by("status", "name")
@@ -370,6 +420,8 @@ def data_quality(request):
             "incomplete_profiles_count": incomplete_profiles.count(),
             "generalized_locations": generalized_locations[:100],
             "generalized_locations_count": generalized_locations.count(),
+            "dynamic_claims_stale": dynamic_claims_stale[:100],
+            "dynamic_claims_stale_count": dynamic_claims_stale.count(),
             "needs_review": needs_review[:100],
             "needs_review_count": needs_review.count(),
             "my_review_queue": my_review_queue[:100],

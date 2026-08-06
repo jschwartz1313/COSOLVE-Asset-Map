@@ -53,6 +53,16 @@ class ImportWorkflowTests(TestCase):
         self.client.post(reverse("imports:commit"))
         self.assertFalse(Asset.objects.exists())
 
+    def test_preview_rejects_unsourced_current_activity(self):
+        content = (
+            "name,record_type,short_description,unmanned_systems_relevance,"
+            "activity_status,current_activity\n"
+            "Demo Import,facility,Fixture,Supports testing,active,Current flight testing\n"
+        )
+        response = self.upload(content)
+        self.assertContains(response, "Activity details require an activity source URL")
+        self.assertContains(response, "Activity details require an activity review date")
+
     def test_duplicate_can_be_updated_and_returned_to_review(self):
         existing = Asset.objects.create(
             name="Demo Import",
@@ -156,6 +166,18 @@ class ImportWorkflowTests(TestCase):
             contact_phone="757-555-0123",
             contact_email="asset@example.org",
             contact_url="https://example.org/asset/contact",
+            activity_status=Asset.ActivityStatus.ACTIVE,
+            current_activity="Current source-backed flight testing.",
+            partnership_opportunities="Public test participation inquiries are accepted.",
+            activity_source_url="https://example.org/activity",
+            activity_last_verified_at=timezone.localdate(),
+            owner_operator="Example operator",
+            available_acreage="12.50",
+            development_status=Asset.DevelopmentStatus.IN_DEVELOPMENT,
+            development_notes="A second test pad is planned.",
+            infrastructure_access="Road, power, and controlled airspace access.",
+            development_source_url="https://example.org/development",
+            development_last_verified_at=timezone.localdate(),
             address_line="100 Test Way",
             city="Norfolk",
             state="VA",
@@ -191,5 +213,13 @@ class ImportWorkflowTests(TestCase):
         self.assertEqual(asset.contact_phone, "757-555-0123")
         self.assertEqual(asset.contact_email, "asset@example.org")
         self.assertEqual(asset.contact_url, "https://example.org/asset/contact")
+        self.assertEqual(asset.activity_status, Asset.ActivityStatus.ACTIVE)
+        self.assertEqual(asset.current_activity, "Current source-backed flight testing.")
+        self.assertEqual(asset.owner_operator, "Example operator")
+        self.assertEqual(str(asset.available_acreage), "12.50")
+        self.assertEqual(
+            asset.development_status,
+            Asset.DevelopmentStatus.IN_DEVELOPMENT,
+        )
         self.assertEqual(list(asset.strategic_categories.all()), [self.category])
         self.assertEqual(asset.sources.get().url, "https://example.org/source")

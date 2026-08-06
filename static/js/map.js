@@ -269,6 +269,65 @@ export function createMap(root) {
   let countyLayerLoaded = false;
   let countyLayerVisible = false;
 
+  map.createPane("heliports");
+  map.getPane("heliports").style.zIndex = 360;
+  const heliportLayer = window.L.layerGroup();
+  let heliportLayerLoaded = false;
+  let heliportLayerVisible = false;
+
+  function heliportPopup(properties) {
+    const popup = document.createElement("section");
+    popup.className = "heliport-popup";
+    const status = document.createElement("span");
+    status.className = "heliport-popup-status";
+    status.textContent = "FAA reference · Private use";
+    const heading = document.createElement("h3");
+    heading.textContent = properties.name;
+    const location = document.createElement("p");
+    location.textContent = [properties.service_city, "Virginia"].filter(Boolean).join(", ");
+    const identifier = document.createElement("p");
+    identifier.textContent = properties.identifier
+      ? `FAA identifier ${properties.identifier}`
+      : "No public identifier listed";
+    const warning = document.createElement("strong");
+    warning.textContent =
+      "Reference only. This point does not indicate public access, landing permission, or flight authorization.";
+    const source = document.createElement("a");
+    source.href = "https://www.faa.gov/data/aero_data";
+    source.target = "_blank";
+    source.rel = "noopener";
+    source.textContent = "FAA aeronautical data";
+    popup.append(status, heading, location, identifier, warning, source);
+    return popup;
+  }
+
+  function addHeliports(data) {
+    for (const feature of data.features) {
+      if (!feature.geometry) continue;
+      const [longitude, latitude] = feature.geometry.coordinates;
+      const properties = feature.properties;
+      const icon = window.L.divIcon({
+        className: "heliport-reference-shell",
+        html: '<span class="heliport-reference-marker" aria-hidden="true">H</span>',
+        iconAnchor: [9, 9],
+        iconSize: [18, 18],
+        popupAnchor: [0, -9],
+        tooltipAnchor: [0, -9],
+      });
+      const marker = window.L.marker([latitude, longitude], {
+        alt: `${properties.name} private-use heliport reference point`,
+        icon,
+        keyboard: true,
+        pane: "heliports",
+        riseOnHover: true,
+        title: properties.name,
+      });
+      marker.bindTooltip(properties.name, { direction: "top", opacity: 0.96 });
+      marker.bindPopup(heliportPopup(properties), { maxWidth: 300 });
+      heliportLayer.addLayer(marker);
+    }
+  }
+
   const layer = window.L.markerClusterGroup
     ? window.L.markerClusterGroup({
         showCoverageOnHover: false,
@@ -481,6 +540,23 @@ export function createMap(root) {
       mpzLayerLoaded = true;
     }
     if (mpzLayerVisible) mpzLayer.addTo(map);
+  }
+
+  async function setHeliportLayerVisible(visible) {
+    heliportLayerVisible = visible;
+    if (!visible) {
+      heliportLayer.removeFrom(map);
+      return;
+    }
+    if (!heliportLayerLoaded) {
+      const response = await fetch(root.dataset.heliportsUrl, {
+        headers: { Accept: "application/geo+json, application/json" },
+      });
+      if (!response.ok) throw new Error(`Heliport request failed: ${response.status}`);
+      addHeliports(await response.json());
+      heliportLayerLoaded = true;
+    }
+    if (heliportLayerVisible) heliportLayer.addTo(map);
   }
 
   map.createPane("analysis-selection");
@@ -754,6 +830,7 @@ export function createMap(root) {
     setAssetLayerVisible,
     setBasemap,
     setCountyLayerVisible,
+    setHeliportLayerVisible,
     setMpzLayerVisible,
     setPrecisionLayerVisible,
     setRegionLayerVisible,

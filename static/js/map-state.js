@@ -1,4 +1,4 @@
-const MAP_LAYER_STATE_VERSION = "3";
+const MAP_LAYER_STATE_VERSION = "4";
 const MAP_STATE_KEYS = [
   "map_lat",
   "map_lon",
@@ -14,6 +14,7 @@ export const MAP_LAYER_ORDER = [
   "regions",
   "mpz",
   "counties",
+  "heliports",
   "verification",
   "precision",
 ];

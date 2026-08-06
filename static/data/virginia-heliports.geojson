@@ -1,0 +1,2173 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          -75.971946,
+          37.273619
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "7VA0",
+        "name": "Airduce",
+        "service_city": "Cheriton",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -79.880923,
+          37.792646
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "5VA1",
+        "name": "Alleghany Rgnl Hospital",
+        "service_city": "Low Moor",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -78.986736,
+          38.095591
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "09VG",
+        "name": "Augusta Medical Center",
+        "service_city": "Fishersville",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -79.831859,
+          37.993377
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "47VG",
+        "name": "Bath Community Hospital",
+        "service_city": "Hot Springs",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.450341,
+          36.863191
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "17VA",
+        "name": "Belleharbour",
+        "service_city": "Suffolk",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.271091,
+          37.295712
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "7VA4",
+        "name": "Bermuda Hundred",
+        "service_city": "Hopewell",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.890036,
+          39.063318
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "9VA5",
+        "name": "Bluegrass",
+        "service_city": "Bluemont",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.452933,
+          37.720249
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "57VG",
+        "name": "Bon Secours AShland Fsed",
+        "service_city": "Ashland",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.360725,
+          37.182174
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "66VG",
+        "name": "Bon Secours Mercy Health Petersburg LLC",
+        "service_city": "Petersburg",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.660089,
+          37.466946
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VG68",
+        "name": "Bon Secours St Francis Medical Center",
+        "service_city": "Midlothian",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.066035,
+          36.831324
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "2VG5",
+        "name": "Breeden Company",
+        "service_city": "Virginia Beach",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -82.257084,
+          36.586902
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "7VA1",
+        "name": "Bristol Rgnl Medical Center",
+        "service_city": "Bristol",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -78.477883,
+          37.537213
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA97",
+        "name": "Buckingham County Rescue Squad",
+        "service_city": "Dillwyn",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -80.506254,
+          37.086827
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA22",
+        "name": "Carilion Clinic",
+        "service_city": "Christiansburg",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -79.890006,
+          36.993324
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VG46",
+        "name": "Carilion Franklin Meml Hospital",
+        "service_city": "Rocky Mount",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -80.712651,
+          37.333882
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA67",
+        "name": "Carilion Giles Community Hospital",
+        "service_city": "Pearisburg",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -80.505975,
+          37.087968
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "68VA",
+        "name": "Carilion New River Valley Medical Center",
+        "service_city": "Radford",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -79.9495,
+          37.25213
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VG47",
+        "name": "Carilion Patient Transportation Services",
+        "service_city": "Roanoke",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -79.943213,
+          37.250703
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VG62",
+        "name": "Carilion Roanoke Meml Hospital",
+        "service_city": "Roanoke",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -79.441179,
+          37.779367
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "8VA7",
+        "name": "Carilion Rockbridge Community Hospital",
+        "service_city": "Lexington",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -81.48969,
+          37.123171
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "38VG",
+        "name": "Carilion Tazewell Community Hospital",
+        "service_city": "Tazewell",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -79.717975,
+          37.115983
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "36VA",
+        "name": "Carilion Westlake Center",
+        "service_city": "Hardy",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.822988,
+          36.710702
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VG11",
+        "name": "Carrsville Vol Fire Dept",
+        "service_city": "Franklin",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -80.643106,
+          37.068341
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VG59",
+        "name": "Cedar Point Landing",
+        "service_city": "Dublin",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -79.431392,
+          36.584452
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "5VA9",
+        "name": "Centra Danville Medical Center",
+        "service_city": "Danville",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.247874,
+          36.745518
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "11VA",
+        "name": "Chesapeake General Hospital",
+        "service_city": "Chesapeake",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.526661,
+          37.514702
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "6VA3",
+        "name": "Chippenham Hospital",
+        "service_city": "Richmond",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -81.81879,
+          37.094879
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "30VA",
+        "name": "Clinch Valley Medical Center",
+        "service_city": "Richlands",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -82.469643,
+          36.961393
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "5VA7",
+        "name": "Coeburn",
+        "service_city": "Coeburn",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.301949,
+          36.932002
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "NCL",
+        "name": "Comlantflt",
+        "service_city": "Norfolk",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -78.104772,
+          36.751355
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "35VA",
+        "name": "Community Meml Hospital",
+        "service_city": "South Hill",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -79.81218,
+          36.838902
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "77VA",
+        "name": "Coopers Mountain",
+        "service_city": "Martinsville",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.332002,
+          39.012341
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA54",
+        "name": "Crippen's",
+        "service_city": "Reston",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -79.408958,
+          36.585696
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "3VA9",
+        "name": "Danville Rescue",
+        "service_city": "Danville",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.450558,
+          37.423619
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VG17",
+        "name": "Defense Supply Center Richmond",
+        "service_city": "Richmond",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.237996,
+          36.795989
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "47VA",
+        "name": "Division Five",
+        "service_city": "Chesapeake",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -82.759762,
+          36.85527
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA51",
+        "name": "Dmme",
+        "service_city": "Big Stone Gap",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.668891,
+          37.250302
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA86",
+        "name": "Doctors Hospital",
+        "service_city": "Williamsburg",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.707991,
+          39.045424
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "4VA0",
+        "name": "Egypt Farms",
+        "service_city": "Purcellville",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -79.301138,
+          37.103761
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "18VA",
+        "name": "English",
+        "service_city": "Hurt",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.374008,
+          38.853211
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "26VA",
+        "name": "Fairfax County Police",
+        "service_city": "Fairfax",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.809733,
+          38.712966
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "8VA3",
+        "name": "Fauquier Hospital Emergency Transport",
+        "service_city": "Warrenton",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -80.480984,
+          36.860196
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA33",
+        "name": "Floyd Co Volunteer Fire Dep Station 2",
+        "service_city": "Willis",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.144947,
+          38.706638
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VG93",
+        "name": "Fort Belvoir Community Hospital",
+        "service_city": "Fort Belvoir",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.327166,
+          37.254671
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA39",
+        "name": "Fort Lee AHP",
+        "service_city": "Petersburg",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.343038,
+          37.241824
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA35",
+        "name": "Fort Lee Nr 1/Hqs",
+        "service_city": "Fort Lee",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.541472,
+          37.603099
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "60VA",
+        "name": "H D H",
+        "service_city": "Richmond",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.271091,
+          37.287378
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "7VA3",
+        "name": "Hopewell",
+        "service_city": "Hopewell",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -79.517581,
+          37.352707
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA03",
+        "name": "Hospital",
+        "service_city": "Bedford",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.582216,
+          37.654588
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VG02",
+        "name": "Innsbrook Technical Center",
+        "service_city": "Richmond",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.104269,
+          38.822377
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "9VA2",
+        "name": "Inova Alexandria Hospital",
+        "service_city": "Alexandria",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.378727,
+          38.884461
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "74VA",
+        "name": "Inova Fair Oaks Hospital",
+        "service_city": "Fairfax",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.226373,
+          38.857064
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "72VA",
+        "name": "Inova Fairfax Hospital",
+        "service_city": "Fairfax",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.479089,
+          39.074352
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "34VA",
+        "name": "Inova Loudoun Hospital",
+        "service_city": "Leesburg",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.634447,
+          36.961174
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA90",
+        "name": "Isle of Wight Volunteer Rescue Squad",
+        "service_city": "Smithfield",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.593891,
+          37.50973
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VG41",
+        "name": "Johnston Willis",
+        "service_city": "Richmond",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -78.288614,
+          39.371674
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "4VA2",
+        "name": "Kuhn",
+        "service_city": "Cross Junction",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -79.170661,
+          37.41743
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "50VA",
+        "name": "L G Hospital",
+        "service_city": "Lynchburg",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -80.029442,
+          37.263238
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "1VA2",
+        "name": "Lewis Gale Clinic Inc",
+        "service_city": "Salem",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -80.03085,
+          37.26366
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "39VA",
+        "name": "Lewis Gale Medical Center",
+        "service_city": "Salem",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -82.754601,
+          36.876538
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VG50",
+        "name": "Lonesome Pine Hospital",
+        "service_city": "Big Stone Gap",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.519169,
+          39.170286
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "6VG8",
+        "name": "Longview",
+        "service_city": "Leesburg",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -75.964653,
+          36.793212
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA38",
+        "name": "Lz Alfa",
+        "service_city": "Virginia Beach",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.510838,
+          37.143657
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "8VA8",
+        "name": "Mary Immaculate Hospital",
+        "service_city": "Newport News",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.485166,
+          38.31086
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "6VA7",
+        "name": "Mary Washington Hospital",
+        "service_city": "Fredericksburg",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -80.100886,
+          37.307482
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "13VG",
+        "name": "May",
+        "service_city": "Salem",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.462316,
+          37.496099
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "0VA6",
+        "name": "Mc Guire Va Medical Center Pad",
+        "service_city": "Richmond",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -78.759192,
+          38.040805
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "6VA8",
+        "name": "Mirador",
+        "service_city": "Crozet",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -80.408681,
+          37.188668
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VG08",
+        "name": "Montgomery Rgnl Hospital",
+        "service_city": "Blacksburg",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.076233,
+          38.740363
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA82",
+        "name": "Mount Vernon Hospital",
+        "service_city": "Alexandria",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.432985,
+          37.647541
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA53",
+        "name": "Nichols",
+        "service_city": "White Stone",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -82.642757,
+          36.933568
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "75VA",
+        "name": "Norton Community Hospital",
+        "service_city": "Norton",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.574049,
+          37.268385
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "NCY",
+        "name": "NWS Helipad",
+        "service_city": "Yorktown",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -79.204447,
+          36.565229
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA40",
+        "name": "O'gara Tech Training Facility",
+        "service_city": "Danville",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -78.46745,
+          38.662983
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "CD27",
+        "name": "Page Meml Hospital",
+        "service_city": "Luray",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.015769,
+          37.309867
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA84",
+        "name": "Point Farm",
+        "service_city": "Cape Charles",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -80.525614,
+          37.184856
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "28VA",
+        "name": "Radford AAP",
+        "service_city": "Radford",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.387896,
+          37.701866
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "49VA",
+        "name": "Rappahannock General Hospital",
+        "service_city": "Kilmarnnock",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.363752,
+          38.962697
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "43VA",
+        "name": "Reston Hospital Center",
+        "service_city": "Reston",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.483833,
+          37.064949
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "54VA",
+        "name": "Riverside Hospital",
+        "service_city": "Newport News",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -75.723179,
+          37.696305
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "3VG6",
+        "name": "Riverside Shore Meml Hospital",
+        "service_city": "Onancock",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.588596,
+          36.937027
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "2VA9",
+        "name": "Riverside Smithfield Hospital",
+        "service_city": "Smithfield",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.54291,
+          37.419791
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA70",
+        "name": "Riverside Walter Reed Hospital",
+        "service_city": "Gloucester",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -78.854044,
+          38.405338
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA47",
+        "name": "Rockingham Meml Hospital",
+        "service_city": "Harrisonburg",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -78.979003,
+          37.762816
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "6VA6",
+        "name": "Roseland Rescue Squad",
+        "service_city": "Roseland",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -82.078487,
+          36.898263
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "04VA",
+        "name": "Russell County Medical Center",
+        "service_city": "Lebanon",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.389188,
+          37.056516
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "71VA",
+        "name": "Sentara Hampton General Hospital",
+        "service_city": "Hampton",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.191544,
+          36.851224
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA15",
+        "name": "Sentara Leigh Hospital",
+        "service_city": "Norfolk",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.304805,
+          36.861696
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA88",
+        "name": "Sentara Norfolk General Hospital",
+        "service_city": "Norfolk",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.285633,
+          38.636249
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "3VA6",
+        "name": "Sentara Nova Medical Center",
+        "service_city": "Woodbridge",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.581096,
+          36.774449
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VG51",
+        "name": "Sentara Obici Hospital",
+        "service_city": "Elephant Fork",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.099516,
+          36.776357
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "42VG",
+        "name": "Sentara Princess Anne",
+        "service_city": "Virginia Beach",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.740658,
+          37.335435
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "2VG9",
+        "name": "Sentara Williamsburg Rgnl Medical Center",
+        "service_city": "Williamsburg",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -78.512542,
+          38.868796
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VG14",
+        "name": "Shenandoah Meml Hospital",
+        "service_city": "Woodstock",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -78.909054,
+          36.718302
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "5VA0",
+        "name": "South Boston Medical",
+        "service_city": "South Boston",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.937002,
+          36.693071
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "9VA9",
+        "name": "Southampton Meml Hospital",
+        "service_city": "Franklin",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.536952,
+          36.702643
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "73VA",
+        "name": "Southern Virginia Medical Center",
+        "service_city": "Emporia",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -78.405136,
+          37.302655
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA77",
+        "name": "Southside Community Hospital",
+        "service_city": "Farmville",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -79.86622,
+          36.699838
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "40VA",
+        "name": "Sovah Health Martinsville",
+        "service_city": "Martinsville",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.495552,
+          38.216624
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "03VA",
+        "name": "Spotsylvania Rgnl Medical Center",
+        "service_city": "Fredericksburg",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.513602,
+          37.582407
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "37VA",
+        "name": "St Mary's Hospital",
+        "service_city": "Richmond",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.407225,
+          38.414452
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "41VA",
+        "name": "Stafford Hospital Center",
+        "service_city": "Stafford",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -78.868907,
+          37.36043
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "38VA",
+        "name": "State Police Division Three",
+        "service_city": "Appomattox",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.541114,
+          38.940286
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "6VG4",
+        "name": "Stonesprings",
+        "service_city": "Arcola",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -82.188748,
+          36.612057
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "5VA2",
+        "name": "Sullins",
+        "service_city": "Bristol",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.876963,
+          37.901844
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VG49",
+        "name": "Tappahannock Hospital",
+        "service_city": "Tappahannock",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.395277,
+          37.306163
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "7VA2",
+        "name": "Technical Center",
+        "service_city": "Colonial Heights",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -82.116509,
+          36.645129
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "7VA8",
+        "name": "Tri-Cities",
+        "service_city": "Bristol",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -80.923309,
+          36.670252
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA80",
+        "name": "Twin County Rgnl",
+        "service_city": "Galax",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -78.014353,
+          38.454624
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA29",
+        "name": "Uva Culpeper Medical Center",
+        "service_city": "Culpeper",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -78.498336,
+          38.031119
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "8VA5",
+        "name": "Uva Health University Hospital",
+        "service_city": "Charlottesville",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.641255,
+          38.819966
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "45VA",
+        "name": "Uva Health/Haymarket Medical Center",
+        "service_city": "Haymarket",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.487961,
+          38.766055
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "27VA",
+        "name": "Uva Health/Prince William Medical Center",
+        "service_city": "Manassas",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.43163,
+          37.540641
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VG10",
+        "name": "Vcu Childrens Med Cntr",
+        "service_city": "Richmond",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.187834,
+          37.505527
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "99VA",
+        "name": "Vcu Health New Kent Ed",
+        "service_city": "Quinton",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.431002,
+          37.548341
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "8VA0",
+        "name": "Vcu Health System-I Lot",
+        "service_city": "Richmond",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.429402,
+          37.539744
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VG45",
+        "name": "Vcu Health System-Main Hosp",
+        "service_city": "Richmond",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.02358,
+          36.866869
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "2VA7",
+        "name": "Virginia Beach General Hospital",
+        "service_city": "Virginia Beach",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.043477,
+          36.747813
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "56VA",
+        "name": "Virginia Beach Muni",
+        "service_city": "Virginia Beach",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -77.462225,
+          37.561396
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "7VA7",
+        "name": "Virginia Dmv Headquarters",
+        "service_city": "Richmond",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -78.154594,
+          38.919386
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA36",
+        "name": "Warren Memorial Replacement Hospital",
+        "service_city": "Front Royal",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.298346,
+          36.82971
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "10VG",
+        "name": "Wavy Tv",
+        "service_city": "Portsmouth",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.874466,
+          37.07156
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VA78",
+        "name": "White Oak Farm",
+        "service_city": "Surry",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.387569,
+          37.648658
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "VG13",
+        "name": "White Stone",
+        "service_city": "White Stone",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -78.192003,
+          39.195441
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "2VA4",
+        "name": "Winchester Medical Center",
+        "service_city": "Winchester",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -76.731849,
+          36.805905
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "79VA",
+        "name": "Windsor",
+        "service_city": "Windsor",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          -81.097851,
+          36.954902
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "22VA",
+        "name": "Wythe County Community Hospital",
+        "service_city": "Wytheville",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    }
+  ],
+  "metadata": {
+    "disclaimer": "Reference only. Inclusion does not imply public access, landing permission, operational availability, or authorization for any flight.",
+    "feature_count": 127,
+    "generated_at": "2026-08-06",
+    "information_url": "https://www.faa.gov/data/aero_data",
+    "scope": "Operational private-use heliports recorded by the FAA in Virginia",
+    "source": "FAA Airports Feature Service",
+    "source_url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
+  },
+  "type": "FeatureCollection"
+}

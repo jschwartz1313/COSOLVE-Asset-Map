@@ -1,3 +1,5 @@
+from datetime import date
+
 from django.contrib.auth import get_user_model
 from django.test import TestCase, override_settings
 from django.urls import reverse
@@ -15,6 +17,7 @@ class CoreViewTests(TestCase):
         self.assertContains(response, 'id="asset-layer-toggle"')
         self.assertContains(response, 'id="county-layer-toggle"')
         self.assertContains(response, 'id="region-layer-toggle"')
+        self.assertContains(response, 'id="heliport-layer-toggle"')
         self.assertContains(response, 'id="state-boundary-toggle"')
         self.assertContains(response, 'id="verification-layer-toggle"')
         self.assertContains(response, 'id="precision-layer-toggle"')
@@ -26,6 +29,7 @@ class CoreViewTests(TestCase):
         self.assertContains(response, 'data-active-filter-bar')
         self.assertContains(response, 'data-active-filter-chips')
         self.assertContains(response, "data-regions-url=")
+        self.assertContains(response, "data-heliports-url=")
         self.assertContains(response, "data-state-boundary-url=")
         self.assertNotContains(response, 'id="relationship-layer-toggle"')
         self.assertNotContains(response, "data-relationships-url=")
@@ -146,6 +150,18 @@ class CoreViewTests(TestCase):
             contact_phone="757-555-0100",
             contact_email="contact@example.org",
             contact_url="https://example.org/contact",
+            activity_status=Asset.ActivityStatus.ACTIVE,
+            current_activity="A current source-backed pilot is underway.",
+            partnership_opportunities="Public partner inquiries are accepted.",
+            activity_source_url="https://example.org/activity",
+            activity_last_verified_at=date(2026, 8, 6),
+            owner_operator="Example site operator",
+            available_acreage="8.00",
+            development_status=Asset.DevelopmentStatus.OPERATIONAL,
+            development_notes="The published test site is operational.",
+            infrastructure_access="Road and utility access.",
+            development_source_url="https://example.org/development",
+            development_last_verified_at=date(2026, 8, 6),
             status=Asset.Status.SOURCE_BACKED,
             visibility=Asset.Visibility.PUBLIC,
         )
@@ -161,6 +177,10 @@ class CoreViewTests(TestCase):
         self.assertContains(response, "Contact and information")
         self.assertContains(response, "757-555-0100")
         self.assertContains(response, "contact@example.org")
+        self.assertContains(response, "Current activity and collaboration")
+        self.assertContains(response, "A current source-backed pilot is underway")
+        self.assertContains(response, "Site readiness")
+        self.assertContains(response, "8 acres")
 
     def test_general_update_submission_enters_staff_queue(self):
         response = self.client.post(

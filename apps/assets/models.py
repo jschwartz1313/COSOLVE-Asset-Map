@@ -64,6 +64,19 @@ class Asset(models.Model):
         HIGH = "high", "High"
         URGENT = "urgent", "Urgent"
 
+    class ActivityStatus(models.TextChoices):
+        ACTIVE = "active", "Active"
+        PILOT = "pilot", "Pilot or demonstration"
+        DEVELOPING = "developing", "In development"
+        PLANNED = "planned", "Planned"
+        HISTORICAL = "historical", "Historical"
+
+    class DevelopmentStatus(models.TextChoices):
+        OPERATIONAL = "operational", "Operational"
+        DEVELOPMENT_READY = "development-ready", "Development ready"
+        IN_DEVELOPMENT = "in-development", "In development"
+        PLANNED = "planned", "Planned"
+
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(max_length=220)
     slug = models.SlugField(max_length=240, unique=True, blank=True)
@@ -76,6 +89,30 @@ class Asset(models.Model):
     contact_phone = models.CharField(max_length=40, blank=True)
     contact_email = models.EmailField(blank=True)
     contact_url = models.URLField(blank=True)
+
+    activity_status = models.CharField(
+        max_length=20, choices=ActivityStatus.choices, blank=True
+    )
+    current_activity = models.TextField(blank=True)
+    partnership_opportunities = models.TextField(blank=True)
+    activity_source_url = models.URLField(blank=True)
+    activity_last_verified_at = models.DateField(null=True, blank=True)
+
+    owner_operator = models.CharField(max_length=240, blank=True)
+    available_acreage = models.DecimalField(
+        max_digits=10,
+        decimal_places=2,
+        null=True,
+        blank=True,
+        validators=[MinValueValidator(0)],
+    )
+    development_status = models.CharField(
+        max_length=24, choices=DevelopmentStatus.choices, blank=True
+    )
+    development_notes = models.TextField(blank=True)
+    infrastructure_access = models.TextField(blank=True)
+    development_source_url = models.URLField(blank=True)
+    development_last_verified_at = models.DateField(null=True, blank=True)
 
     address_line = models.CharField(max_length=240, blank=True)
     city = models.CharField(max_length=120, blank=True)
@@ -182,6 +219,36 @@ class Asset(models.Model):
             errors["visibility"] = "Published records must use public visibility."
         if self.status == self.Status.PUBLISHED and not self.is_editorially_reviewed:
             errors["status"] = "Published records require a completed editorial review."
+        activity_claims = (
+            self.activity_status,
+            self.current_activity,
+            self.partnership_opportunities,
+        )
+        if any(activity_claims):
+            if not self.activity_source_url:
+                errors["activity_source_url"] = (
+                    "Current activity and partnership claims require a public source."
+                )
+            if not self.activity_last_verified_at:
+                errors["activity_last_verified_at"] = (
+                    "Current activity and partnership claims require a review date."
+                )
+        development_claims = (
+            self.owner_operator,
+            self.available_acreage,
+            self.development_status,
+            self.development_notes,
+            self.infrastructure_access,
+        )
+        if any(value not in (None, "") for value in development_claims):
+            if not self.development_source_url:
+                errors["development_source_url"] = (
+                    "Development-readiness claims require a public source."
+                )
+            if not self.development_last_verified_at:
+                errors["development_last_verified_at"] = (
+                    "Development-readiness claims require a review date."
+                )
         if errors:
             raise ValidationError(errors)
 
@@ -190,6 +257,10 @@ class Asset(models.Model):
             self.latitude = Decimal(str(self.latitude))
         if self.longitude is not None and not isinstance(self.longitude, Decimal):
             self.longitude = Decimal(str(self.longitude))
+        if self.available_acreage is not None and not isinstance(
+            self.available_acreage, Decimal
+        ):
+            self.available_acreage = Decimal(str(self.available_acreage))
         if not self.slug:
             base = slugify(self.name)
             slug = base

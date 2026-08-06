@@ -31,6 +31,33 @@ class AssetModelTests(TestCase):
         with self.assertRaises(ValidationError):
             asset.save()
 
+    def test_dynamic_activity_requires_source_and_review_date(self):
+        asset = self.make_asset(
+            activity_status=Asset.ActivityStatus.ACTIVE,
+            current_activity="A documented current test program.",
+        )
+        with self.assertRaises(ValidationError):
+            asset.save()
+
+        asset.activity_source_url = "https://example.org/activity"
+        asset.activity_last_verified_at = timezone.localdate()
+        asset.save()
+        self.assertEqual(asset.activity_status, Asset.ActivityStatus.ACTIVE)
+
+    def test_development_readiness_requires_source_and_review_date(self):
+        asset = self.make_asset(
+            owner_operator="Example operator",
+            available_acreage=Decimal("12.50"),
+            development_status=Asset.DevelopmentStatus.IN_DEVELOPMENT,
+        )
+        with self.assertRaises(ValidationError):
+            asset.save()
+
+        asset.development_source_url = "https://example.org/site"
+        asset.development_last_verified_at = timezone.localdate()
+        asset.save()
+        self.assertEqual(asset.available_acreage, Decimal("12.50"))
+
     def test_public_manager_excludes_draft_and_internal_records(self):
         public = self.make_asset(
             name="Public",

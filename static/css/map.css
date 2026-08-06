@@ -76,6 +76,7 @@
 .legend-line.county-boundary { border-top-color: #56645d; border-top-style: dashed; box-shadow: none; opacity: 0.85; }
 .legend-region-fill { width: 13px; height: 10px; flex: 0 0 13px; border: 1px solid #3978a8; background: rgb(57 120 168 / 28%); }
 .legend-mpz-fill { width: 13px; height: 10px; flex: 0 0 13px; border: 1px dashed #8a5a12; background: rgb(213 155 53 / 32%); }
+.legend-heliport { width: 15px; height: 15px; flex: 0 0 15px; border: 1px solid #405963; border-radius: 50%; display: grid; place-items: center; background: #f7faf9; color: #263d46; font-size: 8px; font-style: normal; font-weight: 900; line-height: 1; }
 .legend-ring, .legend-precision { width: 14px; height: 14px; flex: 0 0 14px; border: 2px solid; border-radius: 50%; }
 .legend-ring.reviewed { border-color: #147d78; }
 .legend-ring.source-backed { border-color: #b48216; }
@@ -102,6 +103,15 @@
 .mpz-popup .mpz-popup-sources { margin-bottom: 8px; font-size: 9px; }
 .mpz-popup-sources a { font-size: inherit; }
 .mpz-popup small { display: block; padding-top: 7px; color: var(--ink-muted); border-top: 1px solid var(--line); font-size: 9px; }
+.heliport-reference-shell { background: transparent; border: 0; }
+.heliport-reference-marker { width: 18px; height: 18px; border: 2px solid #405963; border-radius: 50%; display: grid; place-items: center; background: #f7faf9; color: #263d46; box-shadow: 0 1px 3px rgb(25 33 38 / 35%); font-size: 9px; font-weight: 900; line-height: 1; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+.heliport-reference-shell:hover .heliport-reference-marker, .heliport-reference-shell:focus .heliport-reference-marker { transform: scale(1.12); }
+.heliport-popup { width: min(260px, 70vw); }
+.heliport-popup-status { display: block; margin-bottom: 5px; color: #405963; font-size: 9px; font-weight: 800; text-transform: uppercase; }
+.heliport-popup h3 { margin: 0 0 7px; font-size: 15px; }
+.heliport-popup p { margin: 0 0 7px; color: var(--ink-muted); font-size: 11px; }
+.heliport-popup strong { display: block; margin: 10px 0; font-size: 10px; line-height: 1.45; }
+.heliport-popup a { font-size: 10px; }
 .map-status { position: absolute; z-index: 500; left: 50%; bottom: 18px; transform: translateX(-50%); max-width: calc(100% - 40px); padding: 10px 14px; background: var(--ink); color: white; border-radius: 3px; font-size: 12px; }
 .map-insight-panel { color: var(--ink); background: var(--paper); }
 .map-insight-panel[hidden], .results-view[hidden] { display: none; }
