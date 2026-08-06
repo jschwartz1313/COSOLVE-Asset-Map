@@ -96,6 +96,7 @@ class Command(BaseCommand):
             for field in (
                 "record_type",
                 "short_description",
+                "overview",
                 "unmanned_systems_relevance",
                 "address_line",
                 "city",
@@ -106,6 +107,10 @@ class Command(BaseCommand):
             ):
                 setattr(asset, field, record.get(field, ""))
             asset.website_url = record.get("website_url", "")
+            asset.contact_text = record.get("contact_text", "")
+            asset.contact_phone = record.get("contact_phone", "")
+            asset.contact_email = record.get("contact_email", "")
+            asset.contact_url = record.get("contact_url", "")
             asset.state = record.get("state", "VA")
             asset.region = region
             asset.internal_notes = f"Catalog provenance: {record['provenance']}."

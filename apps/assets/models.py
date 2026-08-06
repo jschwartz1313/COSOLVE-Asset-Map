@@ -69,9 +69,13 @@ class Asset(models.Model):
     slug = models.SlugField(max_length=240, unique=True, blank=True)
     record_type = models.CharField(max_length=30, choices=RecordType.choices)
     short_description = models.CharField(max_length=320)
+    overview = models.TextField(blank=True)
     unmanned_systems_relevance = models.TextField()
     website_url = models.URLField(blank=True)
     contact_text = models.CharField(max_length=240, blank=True)
+    contact_phone = models.CharField(max_length=40, blank=True)
+    contact_email = models.EmailField(blank=True)
+    contact_url = models.URLField(blank=True)
 
     address_line = models.CharField(max_length=240, blank=True)
     city = models.CharField(max_length=120, blank=True)

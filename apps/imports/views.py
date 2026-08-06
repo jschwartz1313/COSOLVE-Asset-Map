@@ -75,9 +75,13 @@ def commit(request):
             asset = Asset(name=data["name"], city=data.get("city", ""))
         asset.record_type = data["record_type"]
         asset.short_description = data["short_description"]
+        asset.overview = data.get("overview", "")
         asset.unmanned_systems_relevance = data["unmanned_systems_relevance"]
         asset.website_url = data.get("website_url", "")
         asset.contact_text = data.get("contact_text", "")
+        asset.contact_phone = data.get("contact_phone", "")
+        asset.contact_email = data.get("contact_email", "")
+        asset.contact_url = data.get("contact_url", "")
         asset.address_line = data.get("address_line", "")
         asset.city = data.get("city", "")
         asset.state = data.get("state", "VA") or "VA"
@@ -175,6 +179,9 @@ def data_quality(request):
         .exclude(location_precision=Asset.LocationPrecision.REGIONAL)
         .order_by("name")
     )
+    incomplete_profiles = active_assets.filter(
+        Q(overview="") | Q(contact_text="") | Q(contact_url="")
+    ).order_by("name")
     generalized_locations = active_assets.filter(
         location_precision__in=[
             Asset.LocationPrecision.APPROXIMATE,
@@ -359,6 +366,8 @@ def data_quality(request):
             "missing_sources_count": missing_sources.count(),
             "missing_coordinates": missing_coordinates[:100],
             "missing_coordinates_count": missing_coordinates.count(),
+            "incomplete_profiles": incomplete_profiles[:100],
+            "incomplete_profiles_count": incomplete_profiles.count(),
             "generalized_locations": generalized_locations[:100],
             "generalized_locations_count": generalized_locations.count(),
             "needs_review": needs_review[:100],

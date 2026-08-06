@@ -1,0 +1,726 @@
+{
+  "assets": {
+    "Adaptive Aerospace Group": {
+      "contact_email": "info@adaptiveaero.com",
+      "contact_phone": "",
+      "contact_url": "https://adaptiveaero.com/contact/",
+      "source_url": "https://adaptiveaero.com/contact/"
+    },
+    "Advanced Aircraft Company": {
+      "contact_email": "",
+      "contact_phone": "757-325-6712",
+      "contact_url": "https://advancedaircraftcompany.com/contact/",
+      "source_url": "https://advancedaircraftcompany.com/contact/"
+    },
+    "AeroVironment Corporate Headquarters": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.avinc.com/contact/",
+      "source_url": "https://www.avinc.com/contact/"
+    },
+    "Agricision": {
+      "contact_email": "info@agricisioninc.com",
+      "contact_phone": "",
+      "contact_url": "https://www.agricisioninc.com/contact",
+      "source_url": "https://www.agricisioninc.com/contact"
+    },
+    "Auterion U.S. Headquarters": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://auterion.com/company/contact-us/",
+      "source_url": "https://auterion.com/company/contact-us/"
+    },
+    "Autonomous Aerial Vehicles at Virginia Tech": {
+      "contact_email": "aav.vtech@gmail.com",
+      "contact_phone": "",
+      "contact_url": "https://www.vtaav.org/our-team",
+      "source_url": "https://www.vtaav.org/our-team"
+    },
+    "Autonomous Flight Technologies": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.autonomousflight.us/contact-offices",
+      "source_url": "https://www.autonomousflight.us/contact-offices"
+    },
+    "Bedford Fire Department UAS Program": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.bedfordva.gov/Directory.aspx",
+      "source_url": "https://www.bedfordva.gov/Directory.aspx"
+    },
+    "Blue Vigil": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.bluevigil.com/blank-1",
+      "source_url": "https://www.bluevigil.com/blank-1"
+    },
+    "CNU Capable Humanitarian Robotics and Intelligent Systems Lab": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://cnu.edu/whoweare/contactus/",
+      "source_url": "https://cnu.edu/whoweare/contactus/"
+    },
+    "Caroline County Fire and Rescue UAS Program": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.co.caroline.va.us/Directory.aspx",
+      "source_url": "https://www.co.caroline.va.us/Directory.aspx"
+    },
+    "Charles City County Sheriff's Office Drone Operations Team": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.charlescityva.us/FormCenter/Main-County-Office-5/Contact-Us-44",
+      "source_url": "https://www.charlescityva.us/FormCenter/Main-County-Office-5/Contact-Us-44"
+    },
+    "Charlottesville Police UAS Team": {
+      "contact_email": "",
+      "contact_phone": "434-970-3280",
+      "contact_url": "https://www.charlottesville.gov/308/Contact-Us",
+      "source_url": "https://www.charlottesville.gov/308/Contact-Us"
+    },
+    "Chesapeake Police UAS Team": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.cityofchesapeake.net/Directory.aspx",
+      "source_url": "https://www.cityofchesapeake.net/Directory.aspx"
+    },
+    "Chesterfield Police Drone as First Responder Program": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.chesterfield.gov/Directory.aspx",
+      "source_url": "https://www.chesterfield.gov/Directory.aspx"
+    },
+    "Craney Island Marine Terminal Project": {
+      "contact_email": "vitrates@vit.org",
+      "contact_phone": "",
+      "contact_url": "https://www.portofvirginia.com/contact/",
+      "source_url": "https://www.portofvirginia.com/contact/"
+    },
+    "DZYNE Technologies": {
+      "contact_email": "info@dzyne.com",
+      "contact_phone": "949-313-6185",
+      "contact_url": "https://dzyne.com/contact-us/",
+      "source_url": "https://dzyne.com/contact-us/"
+    },
+    "Dedrone Washington-Area Headquarters": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.dedrone.com/contact",
+      "source_url": "https://www.dedrone.com/contact"
+    },
+    "DroneUp": {
+      "contact_email": "",
+      "contact_phone": "877-601-1860",
+      "contact_url": "https://www.droneup.com/contact",
+      "source_url": "https://www.droneup.com/contact"
+    },
+    "ENSCO": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.ensco.com/contact",
+      "source_url": "https://www.ensco.com/contact"
+    },
+    "Eagle Aviation Technologies": {
+      "contact_email": "",
+      "contact_phone": "757-262-0445",
+      "contact_url": "https://eagleaviationtech.com/contact-us",
+      "source_url": "https://eagleaviationtech.com/contact-us"
+    },
+    "Energy-Centric UAS Center for Critical Infrastructure": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.rbc.edu/why-rbc/faculty-staff/staff/",
+      "source_url": "https://www.rbc.edu/why-rbc/faculty-staff/staff/"
+    },
+    "Fairfax County Police Drone as First Responder Program": {
+      "contact_email": "",
+      "contact_phone": "703-324-7329",
+      "contact_url": "https://www.fairfaxcounty.gov/topics/contact-us",
+      "source_url": "https://www.fairfaxcounty.gov/topics/contact-us"
+    },
+    "Fairfax County Unmanned Aircraft Systems Program": {
+      "contact_email": "",
+      "contact_phone": "703-324-7329",
+      "contact_url": "https://www.fairfaxcounty.gov/topics/contact-us",
+      "source_url": "https://www.fairfaxcounty.gov/topics/contact-us"
+    },
+    "Flying Ship Company": {
+      "contact_email": "info@flyingship.co",
+      "contact_phone": "",
+      "contact_url": "https://www.flyingship.co/contact",
+      "source_url": "https://www.flyingship.co/contact"
+    },
+    "Fort Eustis - Joint Base Langley-Eustis": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.jble.af.mil/Home/Contact/",
+      "source_url": "https://www.jble.af.mil/Home/Contact/"
+    },
+    "Fredericksburg Drone as First Responder Program": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.fredericksburgva.gov/Directory.aspx",
+      "source_url": "https://www.fredericksburgva.gov/Directory.aspx"
+    },
+    "Fredericksburg Police UAS Team": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.fredericksburgva.gov/Directory.aspx",
+      "source_url": "https://www.fredericksburgva.gov/Directory.aspx"
+    },
+    "Fulcrum Concepts": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://fulcrumconceptsllc.com/contact/",
+      "source_url": "https://fulcrumconceptsllc.com/contact/"
+    },
+    "GO TEC Automation and Robotics Talent Pathway": {
+      "contact_email": "",
+      "contact_phone": "434-766-6700",
+      "contact_url": "https://www.ialr.org/contact/",
+      "source_url": "https://www.ialr.org/contact/"
+    },
+    "George Mason MICO Laboratory": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://mason.gmu.edu/~xwang64/team.html",
+      "source_url": "https://mason.gmu.edu/~xwang64/team.html"
+    },
+    "George Mason SPARX": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://electrical.gmu.edu/about/contact-us",
+      "source_url": "https://electrical.gmu.edu/about/contact-us"
+    },
+    "George Mason Starship Autonomous Delivery Fleet": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://abs.gmu.edu/about/",
+      "source_url": "https://abs.gmu.edu/about/"
+    },
+    "George Mason University Police UAS Team": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://police.gmu.edu/about-us/contact-us/",
+      "source_url": "https://police.gmu.edu/about-us/contact-us/"
+    },
+    "HII Unmanned Systems Center of Excellence": {
+      "contact_email": "",
+      "contact_phone": "877-871-2058",
+      "contact_url": "https://www.hii.com/contact",
+      "source_url": "https://www.hii.com/contact"
+    },
+    "HUSH Aerospace": {
+      "contact_email": "info@hush.aero",
+      "contact_phone": "",
+      "contact_url": "https://www.hush.aero/contact-hush",
+      "source_url": "https://www.hush.aero/contact-hush"
+    },
+    "Hampton Joint Police and Fire UAS Unit": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.hampton.gov/directory",
+      "source_url": "https://www.hampton.gov/directory"
+    },
+    "Hampton University Uncrewed Aircraft Systems Program": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://home.hamptonu.edu/engineering/contact/",
+      "source_url": "https://home.hamptonu.edu/engineering/contact/"
+    },
+    "Hanover County Sheriff's Office sUAS Team": {
+      "contact_email": "soinq@hanovercounty.gov",
+      "contact_phone": "",
+      "contact_url": "https://www.hanoversheriff.com/directory.aspx",
+      "source_url": "https://www.hanoversheriff.com/directory.aspx"
+    },
+    "Harrisonburg Police and Fire Drone and Robot Unit": {
+      "contact_email": "",
+      "contact_phone": "540-434-4436",
+      "contact_url": "https://www.harrisonburgva.gov/contact-hpd",
+      "source_url": "https://www.harrisonburgva.gov/contact-hpd"
+    },
+    "Harrowgate Drone Park": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.chesterfield.gov/Directory.aspx",
+      "source_url": "https://www.chesterfield.gov/Directory.aspx"
+    },
+    "Henrico Fire Robotics Response Team": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://henrico.gov/contact-us",
+      "source_url": "https://henrico.gov/contact-us"
+    },
+    "Heven AeroTech Headquarters": {
+      "contact_email": "info@hevenaerotech.com",
+      "contact_phone": "877-726-6269",
+      "contact_url": "https://hevenaerotech.com/contact-us/",
+      "source_url": "https://hevenaerotech.com/contact-us/"
+    },
+    "Hopewell Fire and EMS Drone Program": {
+      "contact_email": "info@hopewellva.gov",
+      "contact_phone": "",
+      "contact_url": "https://hopewellva.gov/Directory.aspx",
+      "source_url": "https://hopewellva.gov/Directory.aspx"
+    },
+    "IALR AgBOT Precision Agriculture Program": {
+      "contact_email": "",
+      "contact_phone": "434-766-6700",
+      "contact_url": "https://www.ialr.org/contact/",
+      "source_url": "https://www.ialr.org/contact/"
+    },
+    "ICI Services": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://icisrvcs.com/contact-us/",
+      "source_url": "https://icisrvcs.com/contact-us/"
+    },
+    "Inertial Labs": {
+      "contact_email": "il.info@viavisolutions.com",
+      "contact_phone": "",
+      "contact_url": "https://inertiallabs.com/inertial-labs-inc/contact-inertial-labs-team/",
+      "source_url": "https://inertiallabs.com/inertial-labs-inc/contact-inertial-labs-team/"
+    },
+    "Joint Expeditionary Base Little Creek-Fort Story": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://cnrma.cnic.navy.mil/Installations/JEB-Little-Creek-Fort-Story/Contact-Us/",
+      "source_url": "https://cnrma.cnic.navy.mil/Installations/JEB-Little-Creek-Fort-Story/Contact-Us/"
+    },
+    "Langley Air Force Base - Joint Base Langley-Eustis": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.jble.af.mil/Home/Contact/",
+      "source_url": "https://www.jble.af.mil/Home/Contact/"
+    },
+    "Liberty University Medium Unmanned Aerial Systems Certificate": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.liberty.edu/about/contact-liberty-university/",
+      "source_url": "https://www.liberty.edu/about/contact-liberty-university/"
+    },
+    "Liberty University UAS Operational Experience": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.liberty.edu/about/contact-liberty-university/",
+      "source_url": "https://www.liberty.edu/about/contact-liberty-university/"
+    },
+    "Loudoun County Sheriff's Office Drone Unit": {
+      "contact_email": "",
+      "contact_phone": "703-777-0100",
+      "contact_url": "https://sheriff.loudoun.gov/2364/Contact-Us",
+      "source_url": "https://sheriff.loudoun.gov/2364/Contact-Us"
+    },
+    "MAG Aerospace": {
+      "contact_email": "",
+      "contact_phone": "703-376-8993",
+      "contact_url": "https://www.magaero.com/connect/",
+      "source_url": "https://www.magaero.com/connect/"
+    },
+    "Marine Corps Counter-Drone Team": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.trngcmd.marines.mil/Units/Weapons-Training-Battalion/Contact-Us/",
+      "source_url": "https://www.trngcmd.marines.mil/Units/Weapons-Training-Battalion/Contact-Us/"
+    },
+    "Mecklenburg County Sheriff's Office Drone Team": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.mecklenburgva.com/Directory.aspx",
+      "source_url": "https://www.mecklenburgva.com/Directory.aspx"
+    },
+    "Montgomery County Sheriff's Office UAS Team": {
+      "contact_email": "",
+      "contact_phone": "540-394-2120",
+      "contact_url": "https://www.montgomerycountyva.gov/1/contact-us",
+      "source_url": "https://www.montgomerycountyva.gov/1/contact-us"
+    },
+    "NASA Langley Autonomy Incubator": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.nasa.gov/contact/",
+      "source_url": "https://www.nasa.gov/contact/"
+    },
+    "NASA Langley CERTAIN": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.nasa.gov/contact/",
+      "source_url": "https://www.nasa.gov/contact/"
+    },
+    "NASA Langley ROAM UAS Operations Center": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.nasa.gov/contact/",
+      "source_url": "https://www.nasa.gov/contact/"
+    },
+    "NASA Langley Research Center": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.nasa.gov/contact/",
+      "source_url": "https://www.nasa.gov/contact/"
+    },
+    "NASA Langley UAS Test Range": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.nasa.gov/contact/",
+      "source_url": "https://www.nasa.gov/contact/"
+    },
+    "NSWC Carderock Combatant Craft Division": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://cnrma.cnic.navy.mil/Installations/JEB-Little-Creek-Fort-Story/Contact-Us/",
+      "source_url": "https://cnrma.cnic.navy.mil/Installations/JEB-Little-Creek-Fort-Story/Contact-Us/"
+    },
+    "National Institute of Aerospace": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.nianet.org/contact/",
+      "source_url": "https://www.nianet.org/contact/"
+    },
+    "Naval Air Station Oceana": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://cnrma.cnic.navy.mil/Installations/NAS-Oceana/Contact-Us/",
+      "source_url": "https://cnrma.cnic.navy.mil/Installations/NAS-Oceana/Contact-Us/"
+    },
+    "Naval Station Norfolk": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://cnrma.cnic.navy.mil/Installations/NAVSTA-Norfolk/Contact-Us/",
+      "source_url": "https://cnrma.cnic.navy.mil/Installations/NAVSTA-Norfolk/Contact-Us/"
+    },
+    "Naval Support Activity Hampton Roads": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://cnrma.cnic.navy.mil/About/Contact-Us/",
+      "source_url": "https://cnrma.cnic.navy.mil/About/Contact-Us/"
+    },
+    "Naval Weapons Station Yorktown": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://cnrma.cnic.navy.mil/Installations/WPNSTA-Yorktown/Contact-Us/",
+      "source_url": "https://cnrma.cnic.navy.mil/Installations/WPNSTA-Yorktown/Contact-Us/"
+    },
+    "Newport News AirCommerce Park": {
+      "contact_email": "",
+      "contact_phone": "800-274-8348",
+      "contact_url": "https://newportnewsva.com/contact/",
+      "source_url": "https://newportnewsva.com/contact/"
+    },
+    "Newport News Drones as First Responders Program": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.nnva.gov/directory.aspx",
+      "source_url": "https://www.nnva.gov/directory.aspx"
+    },
+    "Newport News Marine Terminal": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://operations.portofvirginia.com/contact-us/",
+      "source_url": "https://operations.portofvirginia.com/contact-us/"
+    },
+    "Newport News Police and Fire Drone Unit": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.nnva.gov/directory.aspx",
+      "source_url": "https://www.nnva.gov/directory.aspx"
+    },
+    "Newport News Shipbuilding": {
+      "contact_email": "",
+      "contact_phone": "877-871-2058",
+      "contact_url": "https://www.hii.com/contact",
+      "source_url": "https://www.hii.com/contact"
+    },
+    "Norfolk Harbor Patrol Drone Capability": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.norfolk.gov/Directory.aspx",
+      "source_url": "https://www.norfolk.gov/Directory.aspx"
+    },
+    "Norfolk International Terminals": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://operations.portofvirginia.com/contact-us/",
+      "source_url": "https://operations.portofvirginia.com/contact-us/"
+    },
+    "Norfolk Police UAS Team": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.norfolk.gov/Directory.aspx",
+      "source_url": "https://www.norfolk.gov/Directory.aspx"
+    },
+    "Norfolk State Drone Photography Course": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.nsu.edu/About/Contact-Us",
+      "source_url": "https://www.nsu.edu/About/Contact-Us"
+    },
+    "Norfolk State Tactical Autonomy Research Program": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.nsu.edu/About/Contact-Us",
+      "source_url": "https://www.nsu.edu/About/Contact-Us"
+    },
+    "ODU Drone Certificate Program": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.odu.edu/about/contact",
+      "source_url": "https://www.odu.edu/about/contact"
+    },
+    "ODU Institute for Autonomous and Connected Systems": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.odu.edu/about/contact",
+      "source_url": "https://www.odu.edu/about/contact"
+    },
+    "ODU Maritime Autonomous Systems Test Site": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.odu.edu/about/contact",
+      "source_url": "https://www.odu.edu/about/contact"
+    },
+    "ODU Uncrewed Systems Design and Development Minor": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.odu.edu/about/contact",
+      "source_url": "https://www.odu.edu/about/contact"
+    },
+    "ODU Unmanned and Autonomous Vehicle Laboratory": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.odu.edu/about/contact",
+      "source_url": "https://www.odu.edu/about/contact"
+    },
+    "Old Dominion University UAS Operations Program": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.odu.edu/about/contact",
+      "source_url": "https://www.odu.edu/about/contact"
+    },
+    "P1 Technologies Keltech Division": {
+      "contact_email": "info@p1tec.com",
+      "contact_phone": "",
+      "contact_url": "https://www.p1tec.com/contact-us",
+      "source_url": "https://www.p1tec.com/contact-us"
+    },
+    "Parsons": {
+      "contact_email": "",
+      "contact_phone": "703-988-8500",
+      "contact_url": "https://www.parsons.com/contact-us/",
+      "source_url": "https://www.parsons.com/contact-us/"
+    },
+    "Portsmouth Marine Terminal": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://operations.portofvirginia.com/contact-us/",
+      "source_url": "https://operations.portofvirginia.com/contact-us/"
+    },
+    "QinetiQ US Headquarters": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.qinetiq.com/en-us/contact-us",
+      "source_url": "https://www.qinetiq.com/en-us/contact-us"
+    },
+    "Radford University First Responder UAS Capability": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.radford.edu/admissions/contact/index.html",
+      "source_url": "https://www.radford.edu/admissions/contact/index.html"
+    },
+    "Richard Bland College Uncrewed Aerial Systems Certificate": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.rbc.edu/why-rbc/faculty-staff/staff/",
+      "source_url": "https://www.rbc.edu/why-rbc/faculty-staff/staff/"
+    },
+    "Richmond Marine Terminal": {
+      "contact_email": "vitrates@vit.org",
+      "contact_phone": "",
+      "contact_url": "https://www.portofvirginia.com/contact/",
+      "source_url": "https://www.portofvirginia.com/contact/"
+    },
+    "Scout Space": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.scout.space/contact",
+      "source_url": "https://www.scout.space/contact"
+    },
+    "Sentinel Robotic Solutions": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.navair.navy.mil/osbp/node/171",
+      "source_url": "https://www.navair.navy.mil/osbp/node/171"
+    },
+    "Shenandoah Drone Assembly VR Training": {
+      "contact_email": "",
+      "contact_phone": "800-432-2266",
+      "contact_url": "https://www.su.edu/about-us/contact-us/",
+      "source_url": "https://www.su.edu/about-us/contact-us/"
+    },
+    "Suffolk Police UAS Unit": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.suffolkva.us/directory",
+      "source_url": "https://www.suffolkva.us/directory"
+    },
+    "The Port of Virginia": {
+      "contact_email": "vitrates@vit.org",
+      "contact_phone": "",
+      "contact_url": "https://www.portofvirginia.com/contact/",
+      "source_url": "https://www.portofvirginia.com/contact/"
+    },
+    "Tidewater Community College Unmanned Systems Courses": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.tcc.edu/about-tcc/contact-us",
+      "source_url": "https://www.tcc.edu/about-tcc/contact-us"
+    },
+    "UVA Bio-Inspired Engineering Research Laboratory": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/people/mae-staff",
+      "source_url": "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/people/mae-staff"
+    },
+    "UVA Robotics and Embedded Systems Focus Path": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://engineering.virginia.edu/department/electrical-and-computer-engineering/people/staff",
+      "source_url": "https://engineering.virginia.edu/department/electrical-and-computer-engineering/people/staff"
+    },
+    "UVA Robotics, Dynamics, and Autonomous Systems": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/people/mae-staff",
+      "source_url": "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/people/mae-staff"
+    },
+    "UVA Wise STREAMWISE Robot Drone League": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.uvawise.edu/directory",
+      "source_url": "https://www.uvawise.edu/directory"
+    },
+    "Universal Solutions International": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://usi-inc.com/contact-us/",
+      "source_url": "https://usi-inc.com/contact-us/"
+    },
+    "University of Virginia UAS Operations Program": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://uvaemergency.virginia.edu/about-us/contact",
+      "source_url": "https://uvaemergency.virginia.edu/about-us/contact"
+    },
+    "VIMS Autonomous Systems Laboratory": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.vims.edu/contactus/index.php",
+      "source_url": "https://www.vims.edu/contactus/index.php"
+    },
+    "VIMS Collaboratory for Physical Oceanography": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.vims.edu/contactus/index.php",
+      "source_url": "https://www.vims.edu/contactus/index.php"
+    },
+    "VIMS Harmful Algal Bloom Drone Monitoring": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.vims.edu/contactus/index.php",
+      "source_url": "https://www.vims.edu/contactus/index.php"
+    },
+    "Virginia Advanced Air Mobility Program": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://doav.virginia.gov/agency-directory/",
+      "source_url": "https://doav.virginia.gov/agency-directory/"
+    },
+    "Virginia Commonwealth University UAS Operations Program": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://healthsafety.vcu.edu/about/staff-directory/",
+      "source_url": "https://healthsafety.vcu.edu/about/staff-directory/"
+    },
+    "Virginia First Responder Unmanned Aircraft Trade and Replace Program": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.dcjs.virginia.gov/about-dcjs/contact-us",
+      "source_url": "https://www.dcjs.virginia.gov/about-dcjs/contact-us"
+    },
+    "Virginia Highlands Community College Small UAS Certificate": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.vhcc.edu/contact-us",
+      "source_url": "https://www.vhcc.edu/contact-us"
+    },
+    "Virginia Inland Port": {
+      "contact_email": "vitrates@vit.org",
+      "contact_phone": "",
+      "contact_url": "https://www.portofvirginia.com/contact/",
+      "source_url": "https://www.portofvirginia.com/contact/"
+    },
+    "Virginia Institute for Spaceflight and Autonomy": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.odu.edu/about/contact",
+      "source_url": "https://www.odu.edu/about/contact"
+    },
+    "Virginia Institute of Marine Science": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.vims.edu/contactus/index.php",
+      "source_url": "https://www.vims.edu/contactus/index.php"
+    },
+    "Virginia International Gateway": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://operations.portofvirginia.com/contact-us/",
+      "source_url": "https://operations.portofvirginia.com/contact-us/"
+    },
+    "Virginia Peninsula Community College Drone Flight Technician Certificate": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.vpcc.edu/contact-us",
+      "source_url": "https://www.vpcc.edu/contact-us"
+    },
+    "Virginia Smart Community Testbed": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://vatestbed.com/about",
+      "source_url": "https://vatestbed.com/about"
+    },
+    "Virginia Spaceport Authority": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.vaspace.org/contact-us",
+      "source_url": "https://www.vaspace.org/contact-us"
+    },
+    "Virginia UAS": {
+      "contact_email": "info@virginiauas.com",
+      "contact_phone": "",
+      "contact_url": "https://virginiauas.com/home/",
+      "source_url": "https://virginiauas.com/home/"
+    },
+    "Wallops Research Park": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://www.accomack.gov/directory.aspx",
+      "source_url": "https://www.accomack.gov/directory.aspx"
+    },
+    "Xelevate Leesburg Unmanned Systems Facility": {
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_url": "https://xelevateus.com/contact/",
+      "source_url": "https://xelevateus.com/contact/"
+    },
+    "Zenith Aerotech": {
+      "contact_email": "",
+      "contact_phone": "540-456-1147",
+      "contact_url": "https://zenithaerotech.com/tethered-drone-contact-us/",
+      "source_url": "https://zenithaerotech.com/tethered-drone-contact-us/"
+    }
+  },
+  "generated_at": "2026-08-06",
+  "methodology": "Conservative discovery of same-host public contact, directory, or staff links from the catalog's checked-in official source pages. Phone and email values are retained only when published as tel: or mailto: links on the selected page."
+}

@@ -101,6 +101,7 @@ class ImportWorkflowTests(TestCase):
         self.assertContains(response, "missing public sources")
         self.assertContains(response, "Unreviewed source")
         self.assertContains(response, "Repeated relevance copy")
+        self.assertContains(response, "Incomplete profiles or contacts")
 
     def test_export_requires_staff(self):
         self.client.logout()
@@ -148,8 +149,13 @@ class ImportWorkflowTests(TestCase):
             name="Round Trip Asset",
             record_type=Asset.RecordType.FACILITY,
             short_description="Complete working export fixture.",
+            overview="A full profile that should survive the spreadsheet round trip.",
             unmanned_systems_relevance="Supports round-trip spreadsheet review.",
             website_url="https://example.org/asset",
+            contact_text="Facility public information",
+            contact_phone="757-555-0123",
+            contact_email="asset@example.org",
+            contact_url="https://example.org/asset/contact",
             address_line="100 Test Way",
             city="Norfolk",
             state="VA",
@@ -178,5 +184,12 @@ class ImportWorkflowTests(TestCase):
         asset.refresh_from_db()
         self.assertEqual(asset.status, Asset.Status.NEEDS_REVIEW)
         self.assertEqual(asset.internal_notes, "Preserve this staff note.")
+        self.assertEqual(
+            asset.overview,
+            "A full profile that should survive the spreadsheet round trip.",
+        )
+        self.assertEqual(asset.contact_phone, "757-555-0123")
+        self.assertEqual(asset.contact_email, "asset@example.org")
+        self.assertEqual(asset.contact_url, "https://example.org/asset/contact")
         self.assertEqual(list(asset.strategic_categories.all()), [self.category])
         self.assertEqual(asset.sources.get().url, "https://example.org/source")

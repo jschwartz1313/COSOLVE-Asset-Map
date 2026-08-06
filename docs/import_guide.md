@@ -12,7 +12,7 @@ The upload limit is 2 MB and encoding must be UTF-8. Required columns are:
 Use the **Export complete working CSV** command as the preferred template. It includes:
 
 - Identity and description fields
-- Website, contact, and full address fields
+- Website, public contact scope, phone, email, contact link, and full address fields
 - Coordinates, location precision, and region
 - Every taxonomy facet
 - Pipe-aligned source titles, URLs, and dates

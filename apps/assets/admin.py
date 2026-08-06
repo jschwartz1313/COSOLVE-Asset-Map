@@ -241,7 +241,15 @@ class AssetAdmin(SimpleHistoryAdmin):
         "review_due_at",
         "last_verified_at",
     )
-    search_fields = ("name", "short_description", "unmanned_systems_relevance", "city")
+    search_fields = (
+        "name",
+        "short_description",
+        "overview",
+        "unmanned_systems_relevance",
+        "contact_text",
+        "contact_email",
+        "city",
+    )
     prepopulated_fields = {"slug": ("name",)}
     filter_horizontal = ("strategic_categories", "platform_domains", "capabilities", "missions")
     readonly_fields = (
@@ -267,7 +275,10 @@ class AssetAdmin(SimpleHistoryAdmin):
         export_selected,
     )
     fieldsets = (
-        ("Identity", {"fields": ("name", "slug", "record_type", "short_description")}),
+        (
+            "Identity",
+            {"fields": ("name", "slug", "record_type", "short_description", "overview")},
+        ),
         ("Unmanned systems relevance", {"fields": ("unmanned_systems_relevance",)}),
         (
             "Taxonomy",
@@ -312,7 +323,18 @@ class AssetAdmin(SimpleHistoryAdmin):
                 )
             },
         ),
-        ("Public contact", {"fields": ("website_url", "contact_text")}),
+        (
+            "Public contact",
+            {
+                "fields": (
+                    "website_url",
+                    "contact_text",
+                    "contact_phone",
+                    "contact_email",
+                    "contact_url",
+                )
+            },
+        ),
         ("Internal", {"fields": ("internal_notes",), "classes": ("collapse",)}),
         ("Audit", {"fields": ("created_at", "updated_at"), "classes": ("collapse",)}),
     )

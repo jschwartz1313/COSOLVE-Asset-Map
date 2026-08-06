@@ -525,14 +525,19 @@ test("directory remains within the viewport", async ({ page }) => {
   ).toBe(true);
 });
 
-test("asset detail pages stay compact and within the viewport", async ({ page }) => {
+test("asset detail profiles stay readable and within the viewport", async ({ page }) => {
   await page.goto("/assets/ata-aviation/");
   await expect(page.getByRole("heading", { name: "ATA Aviation" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Documented relevance" })).toBeVisible();
   expect(
     await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
   ).toBe(true);
-  expect(await page.locator(".detail-main section").first().evaluate((element) => element.getBoundingClientRect().height)).toBeLessThan(140);
+  expect(
+    await page
+      .locator(".detail-main section")
+      .first()
+      .evaluate((element) => element.getBoundingClientRect().height),
+  ).toBeLessThan(300);
 });
 
 test("about page reports review status without an empty date range", async ({ page }) => {

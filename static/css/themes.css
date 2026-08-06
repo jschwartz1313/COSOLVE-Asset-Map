@@ -722,13 +722,13 @@ body.showcase-arrival .map-workspace { animation: showcaseWorkspaceArrival 760ms
 }
 
 @media (max-width: 650px) {
-  :root { --header-height: 146px; }
+  :root { --header-height: 186px; }
   .site-header {
     height: var(--header-height);
     padding: 0 12px;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 48px 46px 52px;
+    grid-template-rows: 48px 46px 92px;
     gap: 0;
   }
   .brand { grid-row: 1; }
@@ -751,12 +751,15 @@ body.showcase-arrival .map-workspace { animation: showcaseWorkspaceArrival 760ms
     grid-row: 3;
     width: 100%;
     margin-left: 0;
-    justify-content: space-between;
-    gap: 14px;
-    overflow-x: auto;
+    height: 92px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0;
+    overflow: visible;
     border-top: 1px solid var(--line);
   }
-  .primary-nav a, .nav-logout { flex: 0 0 auto; }
+  .primary-nav a, .nav-logout { width: 100%; height: 46px; }
+  .nav-logout button { width: 100%; }
   .primary-nav a, .nav-logout button { font-size: 11px; }
   html[data-theme="color"] .theme-page-visual { height: 82px; }
   html[data-theme="showcase"] .theme-page-visual,

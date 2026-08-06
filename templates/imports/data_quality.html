@@ -19,6 +19,7 @@
     <div><strong>{{ stale_count }}</strong><span>stale or unverified</span></div>
     <div><strong>{{ missing_sources_count }}</strong><span>missing public sources</span></div>
     <div><strong>{{ missing_coordinates_count }}</strong><span>missing coordinates</span></div>
+    <div><strong>{{ incomplete_profiles_count }}</strong><span>incomplete profiles or contacts</span></div>
     <div><strong>{{ generalized_locations_count }}</strong><span>generalized locations</span></div>
     <div><strong>{{ needs_review_count }}</strong><span>editorial review pending</span></div>
     <div><strong>{{ source_issues_count }}</strong><span>source issues</span></div>
@@ -87,6 +88,7 @@
   <details class="quality-section"><summary><span>Stale or unverified assets</span><strong>{{ stale_count }}</strong></summary>{% include "imports/quality_table.html" with assets=stale empty_message="No stale records." %}</details>
   <details class="quality-section"><summary><span>Missing public sources</span><strong>{{ missing_sources_count }}</strong></summary>{% include "imports/quality_table.html" with assets=missing_sources empty_message="Every active record has a public source." %}</details>
   <details class="quality-section"><summary><span>Missing coordinates</span><strong>{{ missing_coordinates_count }}</strong></summary>{% include "imports/quality_table.html" with assets=missing_coordinates empty_message="Every active record that represents a single site has coordinates." %}</details>
+  <details class="quality-section"><summary><span>Incomplete profiles or contacts</span><strong>{{ incomplete_profiles_count }}</strong></summary>{% include "imports/quality_table.html" with assets=incomplete_profiles empty_message="Every active record has a full overview and a labeled public contact route." %}</details>
   <details class="quality-section"><summary><span>Generalized locations needing research</span><strong>{{ generalized_locations_count }}</strong></summary>{% include "imports/quality_table.html" with assets=generalized_locations empty_message="Every point is tied to an exact or documented site-level location." %}</details>
   <details class="quality-section"><summary><span>Editorial review pending</span><strong>{{ needs_review_count }}</strong></summary>{% include "imports/quality_table.html" with assets=needs_review empty_message="Every record has completed editorial review." %}</details>
   <details class="quality-section"><summary><span>Repeated relevance copy</span><strong>{{ repeated_copy_count }}</strong></summary>{% include "imports/quality_table.html" with assets=repeated_copy empty_message="No repeated relevance statements." %}</details>

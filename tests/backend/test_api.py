@@ -21,7 +21,12 @@ class PublicApiTests(TestCase):
             name="Demo Public Range",
             record_type=Asset.RecordType.OPERATING_ENVIRONMENT,
             short_description="A representative public range.",
+            overview="A fuller public profile of the representative range.",
             unmanned_systems_relevance="Supports maritime test activity.",
+            contact_text="Site operator public information",
+            contact_phone="757-555-0100",
+            contact_email="range@example.org",
+            contact_url="https://example.org/range/contact",
             city="Norfolk",
             address_line="100 Range Road",
             postal_code="23510",
@@ -116,6 +121,11 @@ class PublicApiTests(TestCase):
         self.assertNotIn("internal_notes", text)
         self.assertNotIn("Never serialize", text)
         self.assertNotIn("Private source note", text)
+        body = response.json()
+        self.assertEqual(body["overview"], self.public.overview)
+        self.assertEqual(body["contact_phone"], "757-555-0100")
+        self.assertEqual(body["contact_email"], "range@example.org")
+        self.assertEqual(body["contact_url"], "https://example.org/range/contact")
 
     def test_detail_includes_public_incoming_relationships(self):
         response = self.client.get(reverse("api:asset-detail", args=[self.public.slug]))

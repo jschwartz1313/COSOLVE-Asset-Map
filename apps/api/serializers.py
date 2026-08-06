@@ -43,6 +43,7 @@ def public_asset_dict(asset, include_detail=True):
         "record_type": asset.record_type,
         "record_type_label": asset.get_record_type_display(),
         "short_description": asset.short_description,
+        "overview": asset.overview,
         "unmanned_systems_relevance": asset.unmanned_systems_relevance,
         "location": {
             "address_line": asset.address_line,
@@ -69,6 +70,9 @@ def public_asset_dict(asset, include_detail=True):
             {
                 "website_url": asset.website_url,
                 "contact_text": asset.contact_text,
+                "contact_phone": asset.contact_phone,
+                "contact_email": asset.contact_email,
+                "contact_url": asset.contact_url,
                 "sources": [
                     {
                         "title": source.title,

@@ -4,7 +4,7 @@ from datetime import date
 from decimal import Decimal, InvalidOperation
 
 from django.core.exceptions import ValidationError
-from django.core.validators import URLValidator
+from django.core.validators import EmailValidator, URLValidator
 
 from apps.assets.models import Asset
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
@@ -21,9 +21,13 @@ CSV_COLUMNS = [
     "name",
     "record_type",
     "short_description",
+    "overview",
     "unmanned_systems_relevance",
     "website_url",
     "contact_text",
+    "contact_phone",
+    "contact_email",
+    "contact_url",
     "address_line",
     "city",
     "state",
@@ -65,9 +69,13 @@ def asset_csv_row(asset, include_internal=False):
         "name": asset.name,
         "record_type": asset.record_type,
         "short_description": asset.short_description,
+        "overview": asset.overview,
         "unmanned_systems_relevance": asset.unmanned_systems_relevance,
         "website_url": asset.website_url,
         "contact_text": asset.contact_text,
+        "contact_phone": asset.contact_phone,
+        "contact_email": asset.contact_email,
+        "contact_url": asset.contact_url,
         "address_line": asset.address_line,
         "city": asset.city,
         "state": asset.state,
@@ -189,6 +197,12 @@ def parse_csv(upload):
         if bool(row.get("latitude")) != bool(row.get("longitude")):
             errors.append("Latitude and longitude must be provided together.")
         validate_url(row.get("website_url", ""), "Website URL", errors)
+        validate_url(row.get("contact_url", ""), "Contact URL", errors)
+        if row.get("contact_email"):
+            try:
+                EmailValidator()(row["contact_email"])
+            except ValidationError:
+                errors.append("Contact email must be a valid email address.")
         for column, model in TAXONOMY_COLUMNS.items():
             requested = split_values(row.get(column, ""))
             existing = set(model.objects.filter(slug__in=requested).values_list("slug", flat=True))

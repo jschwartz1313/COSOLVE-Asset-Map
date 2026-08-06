@@ -7,16 +7,18 @@ import json
 import urllib.parse
 import urllib.request
 import zipfile
+from html.parser import HTMLParser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "virginia_real_assets.json"
-CATALOG_DATE = "2026-08-05"
+CATALOG_DATE = "2026-08-06"
 
 FAA_LAYER = (
     "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
 )
 DOAV_DIRECTORY = "https://doav.virginia.gov/airport-directory/"
+DOAV_SPONSOR_DIRECTORY = "https://doav.virginia.gov/airport_sponsors/"
 FACTBOOK = (
     "https://www.vada.virginia.gov/media/governorvirginiagov/"
     "secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
@@ -32,12 +34,18 @@ PORT_CAPABILITIES = "https://www.portofvirginia.com/gateway/capabilities/"
 IPEDS_DIRECTORY_ZIP = "https://nces.ed.gov/ipeds/datacenter/data/HD2024.zip"
 IPEDS_DIRECTORY_PAGE = "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
 REGION_BOUNDARIES = ROOT / "static" / "data" / "virginia-regions.geojson"
+CONTACT_ENRICHMENT_PATH = ROOT / "data" / "asset_contact_enrichment.json"
 
 IPEDS_NAME_ALIASES = {
     "University of Virginia-Main Campus": "University of Virginia",
     "Virginia Polytechnic Institute and State University": "Virginia Tech",
 }
 REGION_FEATURES = json.loads(REGION_BOUNDARIES.read_text())["features"]
+CONTACT_ENRICHMENT = (
+    json.loads(CONTACT_ENRICHMENT_PATH.read_text()).get("assets", {})
+    if CONTACT_ENRICHMENT_PATH.exists()
+    else {}
+)
 
 SOURCES = {
     "vedp": ("VEDP: Unmanned Systems in Virginia", VEDP_UXS),
@@ -5047,6 +5055,110 @@ def source(key):
     return {"title": title, "url": url}
 
 
+def sentence(value):
+    value = value.strip()
+    return value if value.endswith((".", "!", "?")) else f"{value}."
+
+
+def natural_list(values, limit=3):
+    values = list(values[:limit])
+    if not values:
+        return ""
+    if len(values) == 1:
+        return values[0]
+    if len(values) == 2:
+        return f"{values[0]} and {values[1]}"
+    return f"{', '.join(values[:-1])}, and {values[-1]}"
+
+
+def contact_scope(record):
+    if record["provenance"] == "virginia-military-factbook":
+        return "Installation or agency public information"
+    return {
+        "university": "Institution general information and admissions",
+        "organization": "Organization public information and inquiries",
+        "facility": "Facility or operator public information",
+        "program": "Program or parent-organization inquiries",
+        "infrastructure": "Facility or operator public information",
+        "operating-environment": "Site operator or program information",
+    }[record["record_type"]]
+
+
+def contact_source_score(item):
+    value = f"{item['title']} {item['url']}".lower()
+    score = 0
+    if "contact information" in value or "contact-us" in value or "/contact" in value:
+        score += 6
+    if "phone directory" in value or "directory.aspx" in value:
+        score += 5
+    if "directory" in value or "locations" in value or "about-us" in value:
+        score += 3
+    if value.endswith(".pdf"):
+        score -= 4
+    return score
+
+
+def default_overview(record):
+    record_type = record["record_type"].replace("-", " ")
+    capabilities = natural_list(record.get("capabilities", []))
+    missions = natural_list(record.get("missions", []), limit=2)
+    details = [
+        f"{sentence(record['short_description'])} Public sources support its classification "
+        f"as a Virginia {record_type}."
+    ]
+    if capabilities:
+        details.append(f"Documented capabilities include {capabilities}.")
+    if missions:
+        details.append(f"Relevant mission areas include {missions}.")
+    return " ".join(details)
+
+
+def finalize_record(record):
+    record.setdefault("overview", default_overview(record))
+    record.setdefault("contact_phone", "")
+    record.setdefault("contact_email", "")
+
+    if not record.get("contact_url"):
+        ranked_sources = sorted(
+            record["sources"], key=contact_source_score, reverse=True
+        )
+        best_source = ranked_sources[0]
+        record["contact_url"] = best_source["url"]
+        if contact_source_score(best_source) > 0:
+            record.setdefault("contact_text", contact_scope(record))
+        else:
+            record.setdefault(
+                "contact_text",
+                "Public information route; a direct asset contact is not published in the catalog",
+            )
+    else:
+        record.setdefault("contact_text", contact_scope(record))
+
+    contact_override = CONTACT_ENRICHMENT.get(record["name"])
+    if contact_override:
+        for field in ("contact_phone", "contact_email", "contact_url"):
+            if contact_override.get(field):
+                record[field] = contact_override[field]
+        record["contact_text"] = contact_scope(record)
+        source_url = contact_override["source_url"]
+        if not any(item["url"] == source_url for item in record["sources"]):
+            record["sources"].append(
+                {
+                    "title": f"{record['name']} public contact information",
+                    "url": source_url,
+                }
+            )
+
+    if not any(item["url"] == record["contact_url"] for item in record["sources"]):
+        record["sources"].append(
+            {
+                "title": f"{record['name']} public contact information",
+                "url": record["contact_url"],
+            }
+        )
+    return record
+
+
 def apply_location_override(record):
     override = LOCATION_OVERRIDES.get(record["name"])
     if not override:
@@ -5125,6 +5237,76 @@ def region_for(latitude, longitude):
     return "Central Virginia"
 
 
+class AirportSponsorTableParser(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.rows = []
+        self.current_row = None
+        self.current_cell = None
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "tr":
+            self.current_row = []
+        elif tag == "td" and self.current_row is not None:
+            self.current_cell = []
+
+    def handle_data(self, data):
+        if self.current_cell is not None:
+            self.current_cell.append(data)
+
+    def handle_endtag(self, tag):
+        if tag == "td" and self.current_cell is not None:
+            self.current_row.append(" ".join("".join(self.current_cell).split()))
+            self.current_cell = None
+        elif tag == "tr" and self.current_row is not None:
+            if len(self.current_row) >= 23:
+                self.rows.append(self.current_row)
+            self.current_row = None
+
+
+def format_phone(value):
+    digits = "".join(character for character in value if character.isdigit())
+    if len(digits) == 11 and digits.startswith("1"):
+        digits = digits[1:]
+    if len(digits) < 10:
+        return value.strip()
+    phone = f"{digits[:3]}-{digits[3:6]}-{digits[6:10]}"
+    return f"{phone} ext. {digits[10:]}" if len(digits) > 10 else phone
+
+
+def normalize_airport_postal_code(value):
+    digits = "".join(character for character in value if character.isdigit())
+    return digits[:5]
+
+
+def fetch_airport_sponsor_contacts():
+    request = urllib.request.Request(
+        DOAV_SPONSOR_DIRECTORY,
+        headers={"User-Agent": "cosolve-uxs-map-catalog/1.0"},
+    )
+    with urllib.request.urlopen(request, timeout=30) as response:  # noqa: S310
+        page = response.read().decode("utf-8", errors="replace")
+    parser = AirportSponsorTableParser()
+    parser.feed(page)
+
+    contacts = {}
+    for cells in parser.rows:
+        identifier = cells[0].strip()
+        manager_name, manager_email, manager_phone = cells[19:22]
+        sponsor_name, sponsor_contact, sponsor_email, sponsor_phone = cells[14:18]
+        contact_name = manager_name or sponsor_contact or sponsor_name
+        contacts[identifier] = {
+            "name": contact_name,
+            "email": manager_email or sponsor_email,
+            "phone": manager_phone or sponsor_phone,
+            "role": cells[2],
+            "address_line": cells[3],
+            "city": cells[4],
+            "postal_code": normalize_airport_postal_code(cells[5]),
+        }
+    return contacts
+
+
 def fetch_public_airports():
     params = urllib.parse.urlencode(
         {
@@ -5144,6 +5326,7 @@ def fetch_public_airports():
 
 def airport_records():
     records = []
+    sponsor_contacts = fetch_airport_sponsor_contacts()
     faa_source = {
         "title": "FAA Airports Feature Service",
         "url": FAA_LAYER,
@@ -5152,26 +5335,52 @@ def airport_records():
         "title": "Virginia Public-use Airport Directory",
         "url": DOAV_DIRECTORY,
     }
+    sponsor_source = {
+        "title": "Virginia Airport Sponsor and Manager Directory",
+        "url": DOAV_SPONSOR_DIRECTORY,
+    }
     for feature in fetch_public_airports():
         properties = feature["properties"]
         longitude, latitude = feature["geometry"]["coordinates"][:2]
         name = properties["NAME"].strip()
         city = properties["SERVCITY"].replace("/", " / ").title()
         identifier = properties["IDENT"]
+        contact = sponsor_contacts.get(
+            identifier,
+            {
+                "name": "",
+                "email": "",
+                "phone": "804-236-3624",
+                "role": "public-use aviation facility",
+                "address_line": "",
+                "city": city,
+                "postal_code": "",
+            },
+        )
+        airport_kind = "seaplane base" if properties["TYPE_CODE"] == "SP" else "airport"
+        contact_name = contact["name"]
         records.append(
             {
                 "name": name,
                 "record_type": "infrastructure",
                 "short_description": (
-                    f"Operational public-use Virginia aviation facility (FAA identifier {identifier})."
+                    f"Operational public-use {airport_kind} in {contact['city'] or city} "
+                    f"(FAA identifier {identifier})."
+                ),
+                "overview": (
+                    f"{name} is an operational public-use {airport_kind} listed by the FAA under "
+                    f"identifier {identifier}. The Virginia airport sponsor directory classifies "
+                    f"the facility as {contact['role']}."
                 ),
                 "unmanned_systems_relevance": (
                     f"{name} is included as public aviation infrastructure serving {city}. "
                     "Its inclusion does not imply authorization for unmanned-aircraft operations; "
                     "airport, operator, and airspace approvals still apply."
                 ),
-                "city": city,
+                "address_line": contact["address_line"],
+                "city": contact["city"] or city,
                 "state": "VA",
+                "postal_code": contact["postal_code"],
                 "latitude": round(latitude, 6),
                 "longitude": round(longitude, 6),
                 "location_precision": "exact",
@@ -5181,7 +5390,15 @@ def airport_records():
                 "capabilities": ["Operations, maintenance, and sustainment"],
                 "missions": [],
                 "website_url": DOAV_DIRECTORY,
-                "sources": [faa_source, doav_source],
+                "contact_text": (
+                    f"Airport public contact: {contact_name}"
+                    if contact_name
+                    else "Virginia Department of Aviation public information"
+                ),
+                "contact_phone": format_phone(contact["phone"]),
+                "contact_email": contact["email"],
+                "contact_url": DOAV_SPONSOR_DIRECTORY,
+                "sources": [faa_source, doav_source, sponsor_source],
                 "provenance": "faa-public-airport",
             }
         )
@@ -5271,13 +5488,16 @@ def eligible_virginia_institutions():
 
 
 def institution_description(row):
+    city = row["CITY"].strip()
     if row["CONTROL"] == "1" and row["ICLEVEL"] == "2":
-        return "Public degree-granting community college serving Virginia students and employers."
+        return f"Public degree-granting community college based in {city}, Virginia."
     if row["CONTROL"] == "1":
-        return "Public degree-granting college or university in Virginia."
+        return f"Public degree-granting college or university based in {city}, Virginia."
     if row["CONTROL"] == "2":
-        return "Private nonprofit degree-granting college or university in Virginia."
-    return "Private degree-granting university included in SCHEV statewide completion reporting."
+        return (
+            f"Private nonprofit degree-granting college or university based in {city}, Virginia."
+        )
+    return f"Private degree-granting university based in {city}, Virginia."
 
 
 def university_records():
@@ -5289,6 +5509,11 @@ def university_records():
         latitude = round(float(row["LATITUDE"]), 6)
         longitude = round(float(row["LONGITUD"]), 6)
         website_url = normalize_public_url(row["WEBADDR"])
+        contact_url = (
+            normalize_public_url(row["ADMINURL"])
+            if row.get("ADMINURL", "").strip()
+            else website_url
+        )
         ipeds_source = {
             "title": "NCES IPEDS 2024 institutional directory",
             "url": IPEDS_DIRECTORY_PAGE,
@@ -5308,6 +5533,10 @@ def university_records():
             ]
             missions = ["Training and experimentation"]
             provenance = "university-institution"
+            overview = (
+                f"This institution-level entry connects {name} to its separately documented "
+                "research, education, facilities, operations, and programs in the asset catalog."
+            )
         else:
             description = institution_description(row)
             institution_source = {
@@ -5324,6 +5553,19 @@ def university_records():
             capabilities = []
             missions = []
             provenance = "nces-ipeds-higher-education"
+            overview = (
+                f"{name} is included at the institution level as part of Virginia's education "
+                "and workforce infrastructure. The listing does not claim a dedicated unmanned-"
+                "systems program unless a separate source-backed program is documented."
+            )
+
+        contact_source = {
+            "title": f"{name} admissions and public contact information",
+            "url": contact_url,
+        }
+        record_sources = [institution_source, ipeds_source]
+        if not any(item["url"] == contact_url for item in record_sources):
+            record_sources.append(contact_source)
 
         records.append(
             apply_location_override(
@@ -5331,6 +5573,7 @@ def university_records():
                     "name": name,
                     "record_type": "university",
                     "short_description": description,
+                    "overview": overview,
                     "unmanned_systems_relevance": relevance,
                     "address_line": " ".join(row["ADDR"].split()),
                     "city": row["CITY"].strip(),
@@ -5345,7 +5588,11 @@ def university_records():
                     "capabilities": capabilities,
                     "missions": missions,
                     "website_url": website_url,
-                    "sources": [institution_source, ipeds_source],
+                    "contact_text": "Institution general information and admissions",
+                    "contact_phone": format_phone(row.get("GENTELE", "")),
+                    "contact_email": "",
+                    "contact_url": contact_url,
+                    "sources": record_sources,
                     "provenance": provenance,
                 }
             )
@@ -5402,6 +5649,14 @@ def validate(records, relationships):
         names.add(record["name"])
         if not record["sources"] or not all(item.get("url") for item in record["sources"]):
             raise ValueError(f"Missing source URL: {record['name']}")
+        if not record.get("overview"):
+            raise ValueError(f"Missing asset overview: {record['name']}")
+        if not record.get("contact_text") or not record.get("contact_url"):
+            raise ValueError(f"Missing public contact route: {record['name']}")
+        if not record["contact_url"].startswith("https://"):
+            raise ValueError(f"Invalid public contact URL: {record['name']}")
+        if not any(item["url"] == record["contact_url"] for item in record["sources"]):
+            raise ValueError(f"Contact route is not source-backed: {record['name']}")
         latitude = record["latitude"]
         longitude = record["longitude"]
         if (latitude is None) != (longitude is None):
@@ -5428,6 +5683,7 @@ def validate(records, relationships):
 
 def main():
     records = airport_records() + defense_records() + university_records() + curated_records()
+    records = [finalize_record(record) for record in records]
     records.sort(key=lambda item: item["name"].casefold())
     relationships = list(CATALOG_RELATIONSHIPS) + university_relationships()
     relationships.extend(

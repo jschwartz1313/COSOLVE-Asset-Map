@@ -140,7 +140,12 @@ class CoreViewTests(TestCase):
             name="History Test Asset",
             record_type=Asset.RecordType.FACILITY,
             short_description="A public history test.",
+            overview="A fuller source-backed profile of the public test asset.",
             unmanned_systems_relevance="Supports autonomous systems testing.",
+            contact_text="Facility public information",
+            contact_phone="757-555-0100",
+            contact_email="contact@example.org",
+            contact_url="https://example.org/contact",
             status=Asset.Status.SOURCE_BACKED,
             visibility=Asset.Visibility.PUBLIC,
         )
@@ -152,6 +157,10 @@ class CoreViewTests(TestCase):
         self.assertContains(response, "Record history")
         self.assertContains(response, "Record added")
         self.assertContains(response, "Short Description")
+        self.assertContains(response, "What this asset is")
+        self.assertContains(response, "Contact and information")
+        self.assertContains(response, "757-555-0100")
+        self.assertContains(response, "contact@example.org")
 
     def test_general_update_submission_enters_staff_queue(self):
         response = self.client.post(

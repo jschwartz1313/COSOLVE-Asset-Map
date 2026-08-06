@@ -47,6 +47,15 @@ class RealCatalogFileTests(TestCase):
         self.assertTrue(
             all(record["sources"] and record["unmanned_systems_relevance"] for record in records)
         )
+        self.assertTrue(
+            all(
+                record["overview"]
+                and record["contact_text"]
+                and record["contact_url"]
+                and any(source["url"] == record["contact_url"] for source in record["sources"])
+                for record in records
+            )
+        )
         airport_regions = {
             record["name"]: record["region"]
             for record in records
@@ -79,6 +88,7 @@ class RealCatalogFileTests(TestCase):
                 for record in universities
             )
         )
+        self.assertTrue(all(record["contact_phone"] for record in universities))
         general_institutions = [
             record
             for record in universities
@@ -118,6 +128,18 @@ class RealCatalogFileTests(TestCase):
                 source.get("url", "").startswith("https://")
                 for record in records
                 for source in record["sources"]
+            )
+        )
+        airports = [
+            record for record in records if record["provenance"] == "faa-public-airport"
+        ]
+        self.assertEqual(len(airports), 64)
+        self.assertGreaterEqual(sum(bool(record["contact_phone"]) for record in airports), 63)
+        self.assertGreaterEqual(sum(bool(record["contact_email"]) for record in airports), 62)
+        self.assertTrue(
+            all(
+                any("airport_sponsors" in source["url"] for source in record["sources"])
+                for record in airports
             )
         )
 
@@ -162,6 +184,8 @@ class RealCatalogFileTests(TestCase):
         self.assertEqual(nasa.address_line, "2 Langley Boulevard")
         self.assertEqual(nasa.location_precision, Asset.LocationPrecision.SITE)
         self.assertEqual(str(nasa.latitude), "37.085639")
+        self.assertTrue(nasa.overview)
+        self.assertEqual(nasa.contact_url, "https://www.nasa.gov/contact/")
         northwest_annex = Asset.objects.get(name="Naval Support Activity Northwest Annex")
         self.assertEqual(northwest_annex.city, "Chesapeake")
         self.assertEqual(northwest_annex.postal_code, "23322")
@@ -256,6 +280,26 @@ class RealCatalogFileTests(TestCase):
         call_command("seed_real_data", only_if_empty=True, verbosity=0)
 
         self.assertEqual(Asset.public.count(), catalog["record_count"])
+
+    def test_profile_enrichment_fills_blanks_without_replacing_staff_contact(self):
+        asset = Asset.objects.create(
+            name="NASA Langley Research Center",
+            record_type=Asset.RecordType.ORGANIZATION,
+            short_description="Staff-edited description.",
+            unmanned_systems_relevance="Staff-reviewed relevance.",
+            contact_text="Staff-maintained public affairs contact",
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        )
+
+        call_command("enrich_asset_profiles", verbosity=0)
+
+        asset.refresh_from_db()
+        self.assertEqual(asset.short_description, "Staff-edited description.")
+        self.assertEqual(asset.contact_text, "Staff-maintained public affairs contact")
+        self.assertTrue(asset.overview)
+        self.assertEqual(asset.contact_url, "https://www.nasa.gov/contact/")
+        self.assertTrue(asset.sources.filter(url=asset.contact_url, is_public=True).exists())
 
     def test_add_missing_preserves_reviewed_records_and_restores_catalog_gaps(self):
         catalog = self.load_catalog()
