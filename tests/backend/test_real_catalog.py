@@ -148,9 +148,14 @@ class RealCatalogFileTests(TestCase):
                 for source in record["sources"]
             )
         )
-        airports = [
-            record for record in records if record["provenance"] == "faa-public-airport"
-        ]
+        self.assertTrue(
+            all(
+                record["website_url"]
+                and any(source["url"] == record["website_url"] for source in record["sources"])
+                for record in records
+            )
+        )
+        airports = [record for record in records if record["provenance"] == "faa-public-airport"]
         self.assertEqual(len(airports), 64)
         self.assertGreaterEqual(sum(bool(record["contact_phone"]) for record in airports), 63)
         self.assertGreaterEqual(sum(bool(record["contact_email"]) for record in airports), 62)
@@ -159,6 +164,78 @@ class RealCatalogFileTests(TestCase):
                 any("airport_sponsors" in source["url"] for source in record["sources"])
                 for record in airports
             )
+        )
+        for record in airports:
+            identifier = record["short_description"].split("FAA identifier ", 1)[1][:-2]
+            matching_sources = [
+                source
+                for source in record["sources"]
+                if source["title"].startswith("FAA airport record for ")
+            ]
+            self.assertEqual(len(matching_sources), 1, record["name"])
+            self.assertIn(f"IDENT%3D%27{identifier}%27", matching_sources[0]["url"])
+
+    def test_direct_website_audit_replaces_broad_catalog_pages(self):
+        catalog = self.load_catalog()
+        records_by_name = {record["name"]: record for record in catalog["records"]}
+        broad_vedp_url = "https://www.vedp.org/industry/unmanned-systems"
+        military_factbook_url = (
+            "https://www.vada.virginia.gov/media/governorvirginiagov/"
+            "secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        )
+
+        self.assertEqual(
+            [
+                record["name"]
+                for record in catalog["records"]
+                if record["website_url"] == broad_vedp_url
+            ],
+            ["Virginia Economic Development Partnership"],
+        )
+        self.assertFalse(
+            any(record["website_url"] == military_factbook_url for record in catalog["records"])
+        )
+        self.assertTrue(
+            {"Fort Walker", "Fort Gregg-Adams", "Fort Barfoot"}.issubset(records_by_name)
+        )
+        self.assertFalse(
+            {"Fort A.P. Hill", "Fort Lee", "Fort Pickett"}.intersection(records_by_name)
+        )
+        for name in {
+            "Center for Unmanned Aircraft Systems at Virginia Tech",
+            "JMU Drone Challenge",
+            "NASA Langley Autonomy Incubator",
+            "Virginia Tech Autonomous Systems and Control Laboratory",
+        }:
+            self.assertEqual(records_by_name[name]["activity_status"], "historical")
+            self.assertEqual(records_by_name[name]["activity_last_verified_at"], "2026-08-07")
+
+        self.assertEqual(
+            records_by_name["Accomack County Emergency Management Drone Program"]["website_url"],
+            (
+                "https://www.esva911.org/Communications%20Manual%20-%20Public%20Release%20"
+                "Version-%20UPDATED%2011-26-24.pdf"
+            ),
+        )
+        self.assertEqual(
+            records_by_name["Dominion Energy UAS Program"]["activity_status"],
+            "active",
+        )
+        self.assertEqual(
+            records_by_name["Longbow Unmanned Systems Research and Test Center"]["website_url"],
+            "https://www.sbir.gov/portfolio/1664155",
+        )
+        self.assertEqual(
+            records_by_name["Hampden-Sydney College"]["contact_url"],
+            "https://www.hsc.edu/admission-and-financial-aid/",
+        )
+        self.assertEqual(
+            records_by_name["National Institute of Aerospace"]["contact_url"],
+            "https://www.nianet.org/",
+        )
+        self.assertIn(
+            "https://www.vmi.edu/about/our-location/",
+            {source["url"] for source in records_by_name["Virginia Military Institute"]["sources"]},
         )
 
     def test_catalog_seed_is_idempotent(self):
@@ -334,7 +411,7 @@ class RealCatalogFileTests(TestCase):
             self.assertTrue(record["activity_status"], name)
             self.assertTrue(record["current_activity"], name)
             self.assertTrue(record["partnership_opportunities"], name)
-            self.assertEqual(record["activity_last_verified_at"], "2026-08-06")
+            self.assertEqual(record["activity_last_verified_at"], "2026-08-07")
             self.assertIn(record["activity_source_url"], source_urls)
             self.assertIn(record["contact_url"], source_urls)
 
@@ -509,9 +586,7 @@ class RealCatalogFileTests(TestCase):
             ).exists()
         )
         self.assertTrue(
-            hii.sources.filter(
-                url="https://www.hii.com/news/first-quarter-2021-earnings"
-            ).exists()
+            hii.sources.filter(url="https://www.hii.com/news/first-quarter-2021-earnings").exists()
         )
 
     def test_add_missing_preserves_reviewed_records_and_restores_catalog_gaps(self):
@@ -540,3 +615,69 @@ class RealCatalogFileTests(TestCase):
         self.assertTrue(Asset.objects.filter(name="Harrowgate Drone Park").exists())
         self.assertTrue(Asset.objects.filter(pk=manual.pk).exists())
         self.assertEqual(Asset.public.count(), catalog["record_count"])
+
+    def test_deployment_enrichment_renames_legacy_catalog_assets_and_updates_broad_websites(self):
+        factbook_url = (
+            "https://www.vada.virginia.gov/media/governorvirginiagov/"
+            "secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        )
+        legacy = Asset.objects.create(
+            name="Fort A.P. Hill",
+            record_type=Asset.RecordType.ORGANIZATION,
+            short_description="Legacy catalog record.",
+            unmanned_systems_relevance="Federal and defense ecosystem presence.",
+            website_url=factbook_url,
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+            internal_notes="Catalog provenance: virginia-military-factbook.",
+        )
+        dominion = Asset.objects.create(
+            name="Dominion Energy UAS Program",
+            record_type=Asset.RecordType.PROGRAM,
+            short_description="Legacy catalog record.",
+            unmanned_systems_relevance="Utility unmanned-aircraft operations.",
+            website_url="https://www.dominionenergy.com/our-stories/unmanned-aerial-inspections",
+            contact_url="https://www.dominionenergy.com/our-stories/unmanned-aerial-inspections",
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+            internal_notes="Catalog provenance: curated-public-source.",
+        )
+        Source.objects.create(
+            asset=dominion,
+            title="Obsolete Dominion catalog source",
+            url="https://www.dominionenergy.com/our-stories/unmanned-aerial-inspections",
+            notes="Catalog provenance: curated-public-source",
+        )
+
+        call_command("seed_real_data", add_missing=True, verbosity=0)
+        call_command("enrich_asset_profiles", verbosity=0)
+
+        legacy.refresh_from_db()
+        self.assertEqual(legacy.name, "Fort Walker")
+        self.assertEqual(legacy.website_url, "https://home.army.mil/aphill/")
+        self.assertFalse(Asset.objects.filter(name="Fort A.P. Hill").exists())
+        self.assertEqual(Asset.objects.filter(name="Fort Walker").count(), 1)
+        dominion.refresh_from_db()
+        self.assertEqual(
+            dominion.website_url,
+            "https://www.dominionenergy.com/about/delivering-energy/electric-projects",
+        )
+        self.assertFalse(
+            dominion.sources.filter(
+                url="https://www.dominionenergy.com/our-stories/unmanned-aerial-inspections"
+            ).exists()
+        )
+
+    def test_deployment_enrichment_preserves_staff_website_edits(self):
+        call_command("seed_real_data", verbosity=0)
+        nasa = Asset.objects.get(name="NASA Langley Research Center")
+        nasa.website_url = "https://example.org/staff-reviewed-nasa-page"
+        nasa.save(update_fields=["website_url", "updated_at"])
+
+        call_command("enrich_asset_profiles", verbosity=0)
+
+        nasa.refresh_from_db()
+        self.assertEqual(
+            nasa.website_url,
+            "https://example.org/staff-reviewed-nasa-page",
+        )

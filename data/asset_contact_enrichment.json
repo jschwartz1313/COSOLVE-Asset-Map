@@ -1,5 +1,11 @@
 {
   "assets": {
+    "Accomack County Emergency Management Drone Program": {
+      "contact_email": "safety@co.accomack.va.us",
+      "contact_phone": "757-789-3610",
+      "contact_url": "https://www.co.accomack.va.us/departments/public-safety",
+      "source_url": "https://www.co.accomack.va.us/departments/public-safety"
+    },
     "Adaptive Aerospace Group": {
       "contact_email": "info@adaptiveaero.com",
       "contact_phone": "",
@@ -375,8 +381,8 @@
     "National Institute of Aerospace": {
       "contact_email": "",
       "contact_phone": "",
-      "contact_url": "https://www.nianet.org/contact/",
-      "source_url": "https://www.nianet.org/contact/"
+      "contact_url": "https://www.nianet.org/",
+      "source_url": "https://www.nianet.org/"
     },
     "Naval Air Station Oceana": {
       "contact_email": "",

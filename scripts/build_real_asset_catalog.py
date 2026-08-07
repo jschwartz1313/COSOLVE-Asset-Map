@@ -12,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "virginia_real_assets.json"
-CATALOG_DATE = "2026-08-06"
+CATALOG_DATE = "2026-08-07"
 
 FAA_LAYER = (
     "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
@@ -35,15 +35,24 @@ IPEDS_DIRECTORY_ZIP = "https://nces.ed.gov/ipeds/datacenter/data/HD2024.zip"
 IPEDS_DIRECTORY_PAGE = "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
 REGION_BOUNDARIES = ROOT / "static" / "data" / "virginia-regions.geojson"
 CONTACT_ENRICHMENT_PATH = ROOT / "data" / "asset_contact_enrichment.json"
+WEBSITE_ENRICHMENT_PATH = ROOT / "data" / "asset_website_enrichment.json"
 
 IPEDS_NAME_ALIASES = {
     "University of Virginia-Main Campus": "University of Virginia",
     "Virginia Polytechnic Institute and State University": "Virginia Tech",
 }
+INSTITUTION_CONTACT_OVERRIDES = {
+    "Hampden-Sydney College": "https://www.hsc.edu/admission-and-financial-aid/",
+}
 REGION_FEATURES = json.loads(REGION_BOUNDARIES.read_text())["features"]
 CONTACT_ENRICHMENT = (
     json.loads(CONTACT_ENRICHMENT_PATH.read_text()).get("assets", {})
     if CONTACT_ENRICHMENT_PATH.exists()
+    else {}
+)
+WEBSITE_ENRICHMENT = (
+    json.loads(WEBSITE_ENRICHMENT_PATH.read_text()).get("assets", {})
+    if WEBSITE_ENRICHMENT_PATH.exists()
     else {}
 )
 
@@ -223,12 +232,12 @@ SOURCES = {
         "https://www.hii.com/mission-technologies",
     ),
     "longbow": (
-        "City of Hampton: Hampton Roads Autonomy Demonstrations",
-        "https://www.hampton.gov/CivicAlerts.aspx?AID=4973&ARC=10333",
+        "U.S. Small Business Innovation Research portfolio: The Longbow Group",
+        "https://www.sbir.gov/portfolio/1664155",
     ),
     "longbow_current": (
-        "Unmanned Systems Research and Technology Center",
-        "https://www.usrtc.org/",
+        "U.S. Small Business Innovation Research portfolio: The Longbow Group",
+        "https://www.sbir.gov/portfolio/1664155",
     ),
     "aac": ("Advanced Aircraft Company", "https://advancedaircraftcompany.com/"),
     "aac_products": (
@@ -384,8 +393,8 @@ SOURCES = {
         "https://www.co.prince-edward.va.us/News-Article/Pyle-Named-County-Emergency-Management-Coordinator",
     ),
     "accomack_uas": (
-        "Accomack County DPS Safety Education Day",
-        "https://www.co.accomack.va.us/Home/Components/News/News/381/18",
+        "Eastern Shore 911 Communications Manual: Accomack County Drone Team",
+        "https://www.esva911.org/Communications%20Manual%20-%20Public%20Release%20Version-%20UPDATED%2011-26-24.pdf",
     ),
     "campbell_uas": (
         "Campbell County Sheriff's Office 2024 Annual Report",
@@ -1392,9 +1401,7 @@ ASSET_DETAIL_ENRICHMENT = {
         "contact_phone": "540-231-7303",
         "contact_email": "VTDronePark@vt.edu",
         "contact_url": SOURCES["vt_drone_park"][1],
-        "owner_operator": (
-            "Virginia Tech Institute for Critical Technology and Applied Science"
-        ),
+        "owner_operator": ("Virginia Tech Institute for Critical Technology and Applied Science"),
         "development_status": "operational",
         "development_notes": (
             "The published facility is an operating research and teaching site. No claim is "
@@ -2144,8 +2151,8 @@ LOCATION_OVERRIDES = {
         "latitude": 37.010449,
         "longitude": -76.312444,
         "source": (
-            "Unmanned Systems Research and Technology Center",
-            "https://www.usrtc.org/about-us",
+            "U.S. Small Business Innovation Research portfolio: The Longbow Group",
+            "https://www.sbir.gov/portfolio/1664155",
         ),
     },
     "NASA Langley Autonomy Incubator": {
@@ -2184,8 +2191,8 @@ LOCATION_OVERRIDES = {
         "latitude": 37.082521,
         "longitude": -76.399763,
         "source": (
-            "National Institute of Aerospace contact information",
-            "https://www.nianet.org/contact/",
+            "National Institute of Aerospace",
+            "https://www.nianet.org/",
         ),
     },
     "Naval Air Station Oceana": {
@@ -2467,8 +2474,8 @@ LOCATION_OVERRIDES = {
         "latitude": 37.789600,
         "longitude": -79.437067,
         "source": (
-            "Virginia Military Institute map and directions",
-            "https://www.vmi.edu/about/our-location/map-and-directions/",
+            "Virginia Military Institute location",
+            "https://www.vmi.edu/about/our-location/",
         ),
     },
     "Norfolk State Tactical Autonomy Research Program": {
@@ -2611,21 +2618,30 @@ LOCATION_OVERRIDES = {
         "postal_code": "23529",
         "latitude": 36.889280,
         "longitude": -76.303179,
-        "source": ("Old Dominion University contact information", "https://www.odu.edu/about/contact"),
+        "source": (
+            "Old Dominion University contact information",
+            "https://www.odu.edu/about/contact",
+        ),
     },
     "ODU Uncrewed Systems Design and Development Minor": {
         "address_line": "5115 Hampton Boulevard",
         "postal_code": "23529",
         "latitude": 36.889280,
         "longitude": -76.303179,
-        "source": ("Old Dominion University contact information", "https://www.odu.edu/about/contact"),
+        "source": (
+            "Old Dominion University contact information",
+            "https://www.odu.edu/about/contact",
+        ),
     },
     "ODU Drone Certificate Program": {
         "address_line": "5115 Hampton Boulevard",
         "postal_code": "23529",
         "latitude": 36.889280,
         "longitude": -76.303179,
-        "source": ("Old Dominion University contact information", "https://www.odu.edu/about/contact"),
+        "source": (
+            "Old Dominion University contact information",
+            "https://www.odu.edu/about/contact",
+        ),
     },
     "ODU Maritime Autonomous Systems Test Site": {
         "address_line": "1311 Bayville Street",
@@ -2692,14 +2708,20 @@ LOCATION_OVERRIDES = {
         "postal_code": "23669",
         "latitude": 37.028113,
         "longitude": -76.343479,
-        "source": ("Hampton Division of Fire and Rescue", "https://www.hampton.gov/244/Fire-Rescue"),
+        "source": (
+            "Hampton Division of Fire and Rescue",
+            "https://www.hampton.gov/244/Fire-Rescue",
+        ),
     },
     "Chesapeake Police UAS Team": {
         "address_line": "304 Albemarle Drive",
         "postal_code": "23322",
         "latitude": 36.717383,
         "longitude": -76.247114,
-        "source": ("Chesapeake Police Department", "https://www.cityofchesapeake.net/727/Police-Department"),
+        "source": (
+            "Chesapeake Police Department",
+            "https://www.cityofchesapeake.net/727/Police-Department",
+        ),
     },
     "Newport News Drones as First Responders Program": {
         "address_line": "9710 Jefferson Avenue",
@@ -3045,10 +3067,10 @@ DEFENSE_INSTALLATIONS = [
     ("Fort Belvoir", "Springfield", "Northern Virginia"),
     ("National Geospatial-Intelligence Agency Springfield", "Springfield", "Northern Virginia"),
     ("Marine Corps Base Quantico", "Quantico", "Northern Virginia"),
-    ("Fort A.P. Hill", "Bowling Green", "Fredericksburg Region"),
+    ("Fort Walker", "Bowling Green", "Fredericksburg Region"),
     ("Naval Support Facility Dahlgren", "Dahlgren", "Fredericksburg Region"),
     ("Defense Supply Center Richmond", "Richmond", "Greater Richmond"),
-    ("Fort Lee", "Prince George", "Greater Richmond"),
+    ("Fort Gregg-Adams", "Prince George", "Greater Richmond"),
     ("Naval Weapons Station Yorktown", "Yorktown", "Hampton Roads"),
     ("Fort Eustis - Joint Base Langley-Eustis", "Newport News", "Hampton Roads"),
     ("Langley Air Force Base - Joint Base Langley-Eustis", "Hampton", "Hampton Roads"),
@@ -3064,7 +3086,7 @@ DEFENSE_INSTALLATIONS = [
     ("Dam Neck Annex", "Virginia Beach", "Hampton Roads"),
     ("Naval Support Activity Northwest Annex", "Chesapeake", "Hampton Roads"),
     ("Surface Combat Systems Center Wallops Island", "Wallops Island", "Eastern Shore"),
-    ("Fort Pickett", "Blackstone", "Southside Virginia"),
+    ("Fort Barfoot", "Blackstone", "Southside Virginia"),
     ("Rivanna Station", "Charlottesville", "Central Virginia"),
     ("The Judge Advocate General's Legal Center and School", "Charlottesville", "Central Virginia"),
     ("Radford Army Ammunition Plant", "Radford", "New River Valley"),
@@ -3130,7 +3152,7 @@ UNIVERSITY_ASSETS = [
         [
             "VCU Autonomous Robots and Vehicles Laboratory",
             "VCU Robotics and Autonomous Systems Group",
-            "VCU UAV Research Laboratory",
+            "VCU ARVL Robotic Drone System",
             "Virginia Commonwealth University UAS Operations Program",
             "VCU Robotics and Autonomous Systems Engineering BS",
         ],
@@ -3526,13 +3548,13 @@ CURATED_ASSETS = [
         "vcu_arvl",
     ),
     (
-        "VCU UAV Research Laboratory",
+        "VCU ARVL Robotic Drone System",
         "facility",
         "Richmond",
         "Greater Richmond",
         "research_air",
-        "University UAV research capability documented for flight-control and payload-system research.",
-        "vedp",
+        "Indoor drone system supporting swarm sensing, control, computer vision, and coordinated air-ground robotics research.",
+        "vcu_arvl",
     ),
     (
         "ODU Unmanned and Autonomous Vehicle Laboratory",
@@ -6032,14 +6054,29 @@ def finalize_record(record):
         if not any(item["url"] == detail_source["url"] for item in record["sources"]):
             record["sources"].append(detail_source)
     record.update(detail)
+
+    website_override = WEBSITE_ENRICHMENT.get(record["name"])
+    if website_override:
+        record["website_url"] = website_override["url"]
+        if not any(item["url"] == website_override["url"] for item in record["sources"]):
+            record["sources"].append(
+                {
+                    "title": website_override["title"],
+                    "url": website_override["url"],
+                }
+            )
+        if website_override.get("activity_status"):
+            record["activity_status"] = website_override["activity_status"]
+            record["current_activity"] = website_override["current_activity"]
+            record["activity_source_url"] = website_override["url"]
+            record["activity_last_verified_at"] = CATALOG_DATE
+
     record.setdefault("overview", default_overview(record))
     record.setdefault("contact_phone", "")
     record.setdefault("contact_email", "")
 
     if not record.get("contact_url"):
-        ranked_sources = sorted(
-            record["sources"], key=contact_source_score, reverse=True
-        )
+        ranked_sources = sorted(record["sources"], key=contact_source_score, reverse=True)
         best_source = ranked_sources[0]
         record["contact_url"] = best_source["url"]
         if contact_source_score(best_source) > 0:
@@ -6119,9 +6156,7 @@ def point_in_ring(longitude, latitude, ring):
 
 def point_in_geometry(longitude, latitude, geometry):
     polygons = (
-        [geometry["coordinates"]]
-        if geometry["type"] == "Polygon"
-        else geometry["coordinates"]
+        [geometry["coordinates"]] if geometry["type"] == "Polygon" else geometry["coordinates"]
     )
     return any(
         point_in_ring(longitude, latitude, polygon[0])
@@ -6243,6 +6278,18 @@ def fetch_public_airports():
         return json.load(response)["features"]
 
 
+def faa_airport_record_url(identifier):
+    params = urllib.parse.urlencode(
+        {
+            "where": f"IDENT='{identifier}'",
+            "outFields": "IDENT,NAME,OPERSTATUS",
+            "returnGeometry": "false",
+            "f": "html",
+        }
+    )
+    return f"{FAA_LAYER}/query?{params}"
+
+
 def airport_records():
     records = []
     sponsor_contacts = fetch_airport_sponsor_contacts()
@@ -6264,6 +6311,10 @@ def airport_records():
         name = properties["NAME"].strip()
         city = properties["SERVCITY"].replace("/", " / ").title()
         identifier = properties["IDENT"]
+        faa_record_source = {
+            "title": f"FAA airport record for {name} ({identifier})",
+            "url": faa_airport_record_url(identifier),
+        }
         contact = sponsor_contacts.get(
             identifier,
             {
@@ -6319,7 +6370,7 @@ def airport_records():
                 "contact_phone": format_phone(contact["phone"]),
                 "contact_email": contact["email"],
                 "contact_url": DOAV_SPONSOR_DIRECTORY,
-                "sources": [faa_source, doav_source, sponsor_source],
+                "sources": [faa_record_source, faa_source, doav_source, sponsor_source],
                 "provenance": "faa-public-airport",
             }
         )
@@ -6393,11 +6444,7 @@ def fetch_ipeds_directory():
 def eligible_virginia_institutions():
     institutions = []
     for row in fetch_ipeds_directory():
-        if not (
-            row["STABBR"] == "VA"
-            and row["CYACTIVE"] == "1"
-            and row["DEGGRANT"] == "1"
-        ):
+        if not (row["STABBR"] == "VA" and row["CYACTIVE"] == "1" and row["DEGGRANT"] == "1"):
             continue
 
         name = IPEDS_NAME_ALIASES.get(row["INSTNM"], row["INSTNM"])
@@ -6417,9 +6464,7 @@ def institution_description(row):
     if row["CONTROL"] == "1":
         return f"Public degree-granting college or university based in {city}, Virginia."
     if row["CONTROL"] == "2":
-        return (
-            f"Private nonprofit degree-granting college or university based in {city}, Virginia."
-        )
+        return f"Private nonprofit degree-granting college or university based in {city}, Virginia."
     return f"Private degree-granting university based in {city}, Virginia."
 
 
@@ -6437,6 +6482,7 @@ def university_records():
             if row.get("ADMINURL", "").strip()
             else website_url
         )
+        contact_url = INSTITUTION_CONTACT_OVERRIDES.get(name, contact_url)
         ipeds_source = {
             "title": "NCES IPEDS 2024 institutional directory",
             "url": IPEDS_DIRECTORY_PAGE,
@@ -6487,6 +6533,13 @@ def university_records():
             "url": contact_url,
         }
         record_sources = [institution_source, ipeds_source]
+        if not any(item["url"] == website_url for item in record_sources):
+            record_sources.append(
+                {
+                    "title": f"{name} official website",
+                    "url": website_url,
+                }
+            )
         if not any(item["url"] == contact_url for item in record_sources):
             record_sources.append(contact_source)
 
@@ -6579,6 +6632,10 @@ def validate(records, relationships):
             raise ValueError(f"Missing asset overview: {record['name']}")
         if not record.get("contact_text") or not record.get("contact_url"):
             raise ValueError(f"Missing public contact route: {record['name']}")
+        if not record.get("website_url") or not any(
+            item["url"] == record["website_url"] for item in record["sources"]
+        ):
+            raise ValueError(f"Primary website is not source-backed: {record['name']}")
         if not record["contact_url"].startswith("https://"):
             raise ValueError(f"Invalid public contact URL: {record['name']}")
         if not any(item["url"] == record["contact_url"] for item in record["sources"]):
@@ -6589,13 +6646,9 @@ def validate(records, relationships):
             record.get("partnership_opportunities"),
         )
         if any(activity_claims):
-            if not record.get("activity_source_url") or not record.get(
-                "activity_last_verified_at"
-            ):
+            if not record.get("activity_source_url") or not record.get("activity_last_verified_at"):
                 raise ValueError(f"Unverified activity details: {record['name']}")
-            if not any(
-                item["url"] == record["activity_source_url"] for item in record["sources"]
-            ):
+            if not any(item["url"] == record["activity_source_url"] for item in record["sources"]):
                 raise ValueError(f"Activity source is not attached: {record['name']}")
         development_claims = (
             record.get("owner_operator"),
@@ -6610,8 +6663,7 @@ def validate(records, relationships):
             ):
                 raise ValueError(f"Unverified development details: {record['name']}")
             if not any(
-                item["url"] == record["development_source_url"]
-                for item in record["sources"]
+                item["url"] == record["development_source_url"] for item in record["sources"]
             ):
                 raise ValueError(f"Development source is not attached: {record['name']}")
         if record.get("available_acreage", 0) < 0:

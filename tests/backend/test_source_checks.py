@@ -1,4 +1,5 @@
-from unittest.mock import patch
+from unittest.mock import MagicMock, patch
+from urllib.error import HTTPError
 
 from django.core.management import call_command
 from django.test import TestCase
@@ -13,6 +14,28 @@ class SourceLinkCheckTests(TestCase):
         status, error = check_url("http://127.0.0.1/admin/")
         self.assertIsNone(status)
         self.assertIn("blocked", error)
+
+    def test_head_error_is_retried_with_a_small_get_request(self):
+        opener = MagicMock()
+        response = MagicMock()
+        response.__enter__.return_value.status = 200
+        opener.open.side_effect = [
+            HTTPError("https://example.test/source", 404, "Not Found", {}, None),
+            response,
+        ]
+
+        with (
+            patch("apps.sources.management.commands.check_source_links.validate_public_url"),
+            patch(
+                "apps.sources.management.commands.check_source_links.build_opener",
+                return_value=opener,
+            ),
+        ):
+            status, error = check_url("https://example.test/source")
+
+        self.assertEqual(status, 200)
+        self.assertEqual(error, "")
+        self.assertEqual(opener.open.call_count, 2)
 
     def test_command_records_latest_link_status(self):
         asset = Asset.objects.create(
@@ -36,13 +59,55 @@ class SourceLinkCheckTests(TestCase):
                 for index in range(100)
             ]
         )
+        Source.objects.create(
+            asset=asset,
+            title="Duplicate fixture URL",
+            url="https://example.test/source",
+        )
         with patch(
             "apps.sources.management.commands.check_source_links.check_url",
             return_value=(200, ""),
-        ):
+        ) as mocked_check:
             call_command("check_source_links", "--all", verbosity=0)
         source.refresh_from_db()
         self.assertEqual(source.http_status, 200)
         self.assertIsNotNone(source.last_checked_at)
         self.assertEqual(source.check_error, "")
-        self.assertEqual(Source.objects.filter(last_checked_at__isnull=False).count(), 101)
+        self.assertEqual(Source.objects.filter(last_checked_at__isnull=False).count(), 102)
+        self.assertEqual(mocked_check.call_count, 101)
+
+    def test_command_keeps_checking_after_an_unexpected_network_failure(self):
+        asset = Asset.objects.create(
+            name="Source Check Failure Asset",
+            record_type=Asset.RecordType.FACILITY,
+            short_description="Fixture",
+            unmanned_systems_relevance="Fixture relevance",
+        )
+        failed_source = Source.objects.create(
+            asset=asset,
+            title="Reset source",
+            url="https://reset.example.test/source",
+        )
+        working_source = Source.objects.create(
+            asset=asset,
+            title="Working source",
+            url="https://working.example.test/source",
+        )
+
+        def result_for(url):
+            if "reset" in url:
+                raise ConnectionResetError("Connection reset by peer")
+            return 200, ""
+
+        with patch(
+            "apps.sources.management.commands.check_source_links.check_url",
+            side_effect=result_for,
+        ):
+            call_command("check_source_links", "--all", "--workers", "2", verbosity=0)
+
+        failed_source.refresh_from_db()
+        working_source.refresh_from_db()
+        self.assertIsNone(failed_source.http_status)
+        self.assertIn("Connection reset by peer", failed_source.check_error)
+        self.assertEqual(working_source.http_status, 200)
+        self.assertEqual(working_source.check_error, "")

@@ -72,10 +72,65 @@ GENERATED_CONTACT_SCOPES = {
     "Site operator or program information",
 }
 STALE_CATALOG_SOURCE_URLS = {
+    "Accomack County Emergency Management Drone Program": {
+        "https://www.co.accomack.va.us/Home/Components/News/News/381/18",
+    },
+    "Dominion Energy UAS Program": {
+        "https://www.dominionenergy.com/our-stories/unmanned-aerial-inspections",
+    },
+    "Hampden-Sydney College": {
+        "https://www.hsc.edu/admissions-and-financial-aid",
+    },
     "HII Unmanned Systems Center of Excellence": {
         "https://www.hampton.gov/CivicAlerts.aspx?AID=4656&ARC=9365",
         "https://www.hampton.gov/CivicAlerts.aspx?AID=4759&ARC=9695",
     },
+    "Longbow Unmanned Systems Research and Test Center": {
+        "https://www.hampton.gov/CivicAlerts.aspx?AID=4973&ARC=10333",
+        "https://www.usrtc.org/",
+        "https://www.usrtc.org/about-us",
+    },
+    "National Institute of Aerospace": {
+        "https://www.nianet.org/contact/",
+    },
+    "Virginia Military Institute": {
+        "https://www.vmi.edu/about/our-location/map-and-directions/",
+    },
+}
+LEGACY_SHARED_WEBSITE_URLS = {
+    "https://www.vedp.org/industry/unmanned-systems",
+    (
+        "https://www.vada.virginia.gov/media/governorvirginiagov/"
+        "secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ),
+}
+LEGACY_WEBSITE_URLS_BY_ASSET = {
+    "Accomack County Emergency Management Drone Program": {
+        "https://www.co.accomack.va.us/Home/Components/News/News/381/18"
+    },
+    "Dominion Energy UAS Program": {
+        "https://www.dominionenergy.com/our-stories/unmanned-aerial-inspections"
+    },
+    "Longbow Unmanned Systems Research and Test Center": {
+        "https://www.hampton.gov/CivicAlerts.aspx?AID=4973&ARC=10333",
+        "https://www.usrtc.org/",
+    },
+    "VCU ARVL Robotic Drone System": {"https://arvl.lab.vcu.edu/"},
+}
+LEGACY_CONTACT_URLS_BY_ASSET = {
+    "Accomack County Emergency Management Drone Program": {
+        "https://www.co.accomack.va.us/Home/Components/News/News/381/18"
+    },
+    "Dominion Energy UAS Program": {
+        "https://www.dominionenergy.com/our-stories/unmanned-aerial-inspections"
+    },
+    "Hampden-Sydney College": {"https://www.hsc.edu/admissions-and-financial-aid"},
+    "Longbow Unmanned Systems Research and Test Center": {
+        "https://www.hampton.gov/CivicAlerts.aspx?AID=4973&ARC=10333",
+        "https://www.usrtc.org/",
+        "https://www.usrtc.org/about-us",
+    },
+    "National Institute of Aerospace": {"https://www.nianet.org/contact/"},
 }
 
 
@@ -102,6 +157,30 @@ class Command(BaseCommand):
                 continue
 
             changed_fields = []
+            catalog_managed = asset.internal_notes.startswith("Catalog provenance:")
+            legacy_website_urls = LEGACY_SHARED_WEBSITE_URLS | LEGACY_WEBSITE_URLS_BY_ASSET.get(
+                record["name"], set()
+            )
+            if (
+                catalog_managed
+                and record.get("website_url")
+                and asset.website_url in legacy_website_urls
+                and asset.website_url != record["website_url"]
+            ):
+                asset.website_url = record["website_url"]
+                changed_fields.append("website_url")
+
+            if (
+                catalog_managed
+                and asset.contact_url in LEGACY_CONTACT_URLS_BY_ASSET.get(record["name"], set())
+                and record.get("contact_url")
+                and asset.contact_url != record["contact_url"]
+            ):
+                for field in ("contact_phone", "contact_email", "contact_url"):
+                    if record.get(field) not in (None, ""):
+                        setattr(asset, field, record[field])
+                        changed_fields.append(field)
+
             for field in PROFILE_FIELDS:
                 if getattr(asset, field) in (None, "") and record.get(field) not in (None, ""):
                     value = record[field]

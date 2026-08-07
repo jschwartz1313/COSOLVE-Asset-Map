@@ -2,6 +2,7 @@ import ipaddress
 import socket
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import timedelta
+from http.client import HTTPException
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlsplit
 from urllib.request import HTTPRedirectHandler, Request, build_opener
@@ -15,6 +16,11 @@ from apps.sources.models import Source
 
 class UnsafeSourceURL(ValueError):
     pass
+
+
+def network_error_message(error):
+    reason = error.reason if isinstance(error, URLError) else error
+    return str(reason)[:240]
 
 
 def validate_public_url(url):
@@ -57,11 +63,10 @@ def check_url(url):
         request = Request(url, headers=headers, method="HEAD")
         with opener.open(request, timeout=12) as response:  # noqa: S310
             return response.status, ""
-    except HTTPError as error:
-        if error.code not in {403, 405}:
-            return error.code, ""
-    except (TimeoutError, URLError) as error:
-        return None, str(error.reason if isinstance(error, URLError) else error)[:240]
+    except HTTPError:
+        pass
+    except (TimeoutError, URLError, OSError, HTTPException) as error:
+        return None, network_error_message(error)
 
     try:
         request = Request(url, headers={**headers, "Range": "bytes=0-0"})
@@ -69,8 +74,8 @@ def check_url(url):
             return response.status, ""
     except HTTPError as error:
         return error.code, ""
-    except (TimeoutError, URLError) as error:
-        return None, str(error.reason if isinstance(error, URLError) else error)[:240]
+    except (TimeoutError, URLError, OSError, HTTPException) as error:
+        return None, network_error_message(error)
 
 
 class Command(BaseCommand):
@@ -90,24 +95,30 @@ class Command(BaseCommand):
             )
         queryset = queryset.order_by("last_checked_at", "pk")
         limit = (
-            options["limit"]
-            if options["limit"] is not None
-            else (None if options["all"] else 100)
+            options["limit"] if options["limit"] is not None else (None if options["all"] else 100)
         )
         sources = list(queryset[:limit] if limit is not None else queryset)
         checked_at = timezone.now()
+        urls = {source.url for source in sources}
         results = {}
         with ThreadPoolExecutor(max_workers=max(1, options["workers"])) as executor:
-            futures = {executor.submit(check_url, source.url): source for source in sources}
+            futures = {executor.submit(check_url, url): url for url in urls}
             for future in as_completed(futures):
-                results[futures[future].pk] = future.result()
+                url = futures[future]
+                try:
+                    results[url] = future.result()
+                except Exception as error:  # Keep one unusual server from aborting the batch.
+                    results[url] = (None, f"Unexpected check failure: {error}"[:240])
 
         failures = 0
         for source in sources:
-            status, error = results[source.pk]
+            status, error = results[source.url]
             source.http_status = status
             source.check_error = error
             source.last_checked_at = checked_at
             source.save(update_fields=("http_status", "check_error", "last_checked_at"))
             failures += int(source.has_link_issue)
-        self.stdout.write(f"Checked {len(sources)} source URL(s); {failures} need attention.")
+        self.stdout.write(
+            f"Checked {len(sources)} source record(s) across {len(urls)} URL(s); "
+            f"{failures} need attention."
+        )

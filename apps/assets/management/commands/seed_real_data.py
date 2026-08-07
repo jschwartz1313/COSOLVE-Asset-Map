@@ -18,6 +18,13 @@ TAXONOMY_FIELDS = {
     "missions": MissionArea,
 }
 
+LEGACY_CATALOG_NAMES = {
+    "Fort Walker": "Fort A.P. Hill",
+    "Fort Gregg-Adams": "Fort Lee",
+    "Fort Barfoot": "Fort Pickett",
+    "VCU ARVL Robotic Drone System": "VCU UAV Research Laboratory",
+}
+
 
 class Command(BaseCommand):
     help = "Load the source-backed Virginia real-asset catalog."
@@ -79,6 +86,15 @@ class Command(BaseCommand):
         catalog_names = {record["name"] for record in records}
         for record in records:
             asset = Asset.objects.filter(name=record["name"]).first()
+            legacy_name = LEGACY_CATALOG_NAMES.get(record["name"])
+            if asset is None and legacy_name:
+                asset = Asset.objects.filter(
+                    name=legacy_name,
+                    internal_notes__startswith="Catalog provenance:",
+                ).first()
+                if asset is not None:
+                    asset.name = record["name"]
+                    asset.save(update_fields=["name", "slug", "updated_at"])
             if options["add_missing"] and asset is not None:
                 skipped += 1
                 continue
