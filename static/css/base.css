@@ -147,6 +147,11 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
 .source-list > div, .relationship-list a { padding: 9px 0; display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--line); }
 .source-list span, .relationship-list span { color: var(--ink-muted); font-size: 12px; }
 .relationship-list a { text-decoration: none; }
+.detail-main .record-history-section { padding-bottom: 12px; }
+.record-history-disclosure { padding: 0; border-top: 0; }
+.record-history-disclosure summary { min-height: 30px; margin: 0; display: flex; align-items: center; justify-content: space-between; gap: 16px; color: var(--ink); font-size: 19px; font-weight: 800; }
+.record-history-disclosure summary small { color: var(--ink-muted); font-size: 11px; font-weight: 700; }
+.record-history-disclosure[open] summary { margin-bottom: 8px; }
 .record-history { display: grid; }
 .record-history > div { display: grid; grid-template-columns: 94px minmax(0, 1fr); gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--line); }
 .record-history time { color: var(--ink-muted); font-size: 11px; }
