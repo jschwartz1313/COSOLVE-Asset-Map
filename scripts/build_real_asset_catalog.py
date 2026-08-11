@@ -12,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "virginia_real_assets.json"
-CATALOG_DATE = "2026-08-07"
+CATALOG_DATE = "2026-08-11"
 
 FAA_LAYER = (
     "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
@@ -36,6 +36,7 @@ IPEDS_DIRECTORY_PAGE = "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
 REGION_BOUNDARIES = ROOT / "static" / "data" / "virginia-regions.geojson"
 CONTACT_ENRICHMENT_PATH = ROOT / "data" / "asset_contact_enrichment.json"
 WEBSITE_ENRICHMENT_PATH = ROOT / "data" / "asset_website_enrichment.json"
+PRIORITY_PROFILE_ENRICHMENT_PATH = ROOT / "data" / "priority_profile_enrichment.json"
 
 IPEDS_NAME_ALIASES = {
     "University of Virginia-Main Campus": "University of Virginia",
@@ -53,6 +54,11 @@ CONTACT_ENRICHMENT = (
 WEBSITE_ENRICHMENT = (
     json.loads(WEBSITE_ENRICHMENT_PATH.read_text()).get("assets", {})
     if WEBSITE_ENRICHMENT_PATH.exists()
+    else {}
+)
+PRIORITY_PROFILE_ENRICHMENT = (
+    json.loads(PRIORITY_PROFILE_ENRICHMENT_PATH.read_text()).get("assets", {})
+    if PRIORITY_PROFILE_ENRICHMENT_PATH.exists()
     else {}
 )
 
@@ -671,6 +677,34 @@ SOURCES = {
     "dcjs_awards": (
         "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
         "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+    ),
+    "ashland_police_drone": (
+        "Ashland Police Department monthly report documenting drone operations",
+        "https://www.ashlandva.gov/DocumentCenter/View/6463/July-2024-1?bidId=",
+    ),
+    "haymarket_police_drone": (
+        "Haymarket Police Department 2022 annual report",
+        "https://www.townofhaymarket.org/sites/default/files/fileattachments/police/page/2971/haymarket_police_department_annual_report_2022.pdf",
+    ),
+    "madison_sheriff_drone": (
+        "Madison County FY2026 UAS grant appropriation",
+        "https://www.madisonco.virginia.gov/AgendaCenter/ViewFile/Agenda/_02102026-398",
+    ),
+    "occoquan_police_drone": (
+        "Occoquan 2026 public-safety drone replacement grant",
+        "https://occoquanva.gov/wp-content/uploads/2026/01/TC-Agenda-Packet-FULL-1-6-2026.pdf",
+    ),
+    "radford_police_drone": (
+        "Radford City Police Department 2026 drone replacement grant",
+        "https://www.radfordva.gov/AgendaCenter/ViewFile/Minutes/_01272026-805",
+    ),
+    "wise_sheriff_drone": (
+        "Wise County Sheriff's Office 2026 unmanned-aircraft grant",
+        "https://www.wisecounty.org/AgendaCenter/ViewFile/Agenda/_02122026-671",
+    ),
+    "wythe_sheriff_drone": (
+        "Wythe County Sheriff's Office 2026 unmanned-aircraft grant",
+        "https://www.wytheco.org/AgendaCenter/ViewFile/Agenda/_01272026-119",
     ),
     "caroline_uas": (
         "Caroline County Fire and Rescue UAS Grant Authorization",
@@ -5608,27 +5642,20 @@ CURATED_ASSETS.extend(
     ]
 )
 
-DCJS_JURISDICTION_UAS_ASSETS = [
+DCJS_UNRESOLVED_JURISDICTION_UAS_ASSETS = [
     ("Amherst County", "Amherst", "Lynchburg Region"),
-    ("Town of Ashland", "Ashland", "Greater Richmond"),
     ("Bath County", "Warm Springs", "Shenandoah Valley"),
     ("Buchanan County", "Grundy", "Southwest Virginia"),
     ("Town of Chilhowie", "Chilhowie", "Southwest Virginia"),
     ("Town of Chincoteague", "Chincoteague", "Eastern Shore"),
-    ("Town of Haymarket", "Haymarket", "Northern Virginia"),
-    ("Madison County", "Madison", "Central Virginia"),
     ("City of Manassas", "Manassas", "Northern Virginia"),
     ("Town of New Market", "New Market", "Shenandoah Valley"),
-    ("Town of Occoquan", "Occoquan", "Northern Virginia"),
     ("Pittsylvania County", "Chatham", "Southside Virginia"),
-    ("City of Radford", "Radford", "New River Valley"),
     ("Town of Rocky Mount", "Rocky Mount", "Roanoke Valley"),
     ("Town of Scottsville", "Scottsville", "Central Virginia"),
     ("Smyth County", "Marion", "Southwest Virginia"),
     ("Southampton County", "Courtland", "Southside Virginia"),
     ("City of Staunton", "Staunton", "Shenandoah Valley"),
-    ("Wise County", "Wise", "Southwest Virginia"),
-    ("Wythe County", "Wytheville", "Southwest Virginia"),
 ]
 
 CURATED_ASSETS.extend(
@@ -5645,7 +5672,75 @@ CURATED_ASSETS.extend(
         ),
         ("dcjs_awards", "dcjs_drone"),
     )
-    for jurisdiction, place, region in DCJS_JURISDICTION_UAS_ASSETS
+    for jurisdiction, place, region in DCJS_UNRESOLVED_JURISDICTION_UAS_ASSETS
+)
+
+CURATED_ASSETS.extend(
+    [
+        (
+            "Ashland Police Department Drone Program",
+            "program",
+            "Ashland",
+            "Greater Richmond",
+            "public_safety",
+            "Police drone program used for incident response, infrared search support, and public-safety operations.",
+            ("ashland_police_drone", "dcjs_awards", "dcjs_drone"),
+        ),
+        (
+            "Haymarket Police Department Drone Program",
+            "program",
+            "Haymarket",
+            "Northern Virginia",
+            "public_safety",
+            "Town police drone program documented as fully implemented and supported by a CY 2026 replacement award.",
+            ("haymarket_police_drone", "dcjs_awards", "dcjs_drone"),
+        ),
+        (
+            "Madison County Sheriff's Office UAS Program",
+            "program",
+            "Madison",
+            "Central Virginia",
+            "public_safety",
+            "Sheriff's Office unmanned-aircraft capability supported by a CY 2026 DCJS replacement grant.",
+            ("madison_sheriff_drone", "dcjs_awards", "dcjs_drone"),
+        ),
+        (
+            "Occoquan Police Department Public Safety Drone Program",
+            "program",
+            "Occoquan",
+            "Northern Virginia",
+            "public_safety",
+            "Police-led public-safety drone capability supported by municipal purchases, training, and a CY 2026 replacement grant.",
+            ("occoquan_police_drone", "dcjs_awards", "dcjs_drone"),
+        ),
+        (
+            "Radford City Police Department Drone Program",
+            "program",
+            "Radford",
+            "New River Valley",
+            "public_safety",
+            "Police drone program replacing an existing DJI Mavic 3T with a compliant Skydio X10 and accessories.",
+            ("radford_police_drone", "dcjs_awards", "dcjs_drone"),
+        ),
+        (
+            "Wise County Sheriff's Office Drone Program",
+            "program",
+            "Wise",
+            "Southwest Virginia",
+            "public_safety",
+            "Sheriff's Office drone capability supported by a CY 2026 DCJS unmanned-aircraft grant.",
+            ("wise_sheriff_drone", "dcjs_awards", "dcjs_drone"),
+        ),
+        (
+            "Wythe County Sheriff's Office Drone Program",
+            "program",
+            "Wytheville",
+            "Southwest Virginia",
+            "public_safety",
+            "Sheriff's Office unmanned-aircraft capability supported by a CY 2026 DCJS replacement grant.",
+            ("wythe_sheriff_drone", "dcjs_awards", "dcjs_drone"),
+        ),
+    ]
 )
 
 CURATED_ASSETS.extend(
@@ -6104,6 +6199,26 @@ def finalize_record(record):
                     "url": source_url,
                 }
             )
+
+    priority_profile = PRIORITY_PROFILE_ENRICHMENT.get(record["name"])
+    if priority_profile:
+        for field in (
+            "contact_text",
+            "contact_phone",
+            "contact_email",
+            "contact_url",
+            "activity_status",
+            "current_activity",
+            "partnership_opportunities",
+            "activity_source_url",
+        ):
+            if field in priority_profile:
+                record[field] = priority_profile[field]
+        if priority_profile.get("current_activity"):
+            record["activity_last_verified_at"] = CATALOG_DATE
+        for source_data in priority_profile.get("sources", []):
+            if not any(item["url"] == source_data["url"] for item in record["sources"]):
+                record["sources"].append(source_data)
 
     if not any(item["url"] == record["contact_url"] for item in record["sources"]):
         record["sources"].append(

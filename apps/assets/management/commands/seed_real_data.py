@@ -23,6 +23,27 @@ LEGACY_CATALOG_NAMES = {
     "Fort Gregg-Adams": "Fort Lee",
     "Fort Barfoot": "Fort Pickett",
     "VCU ARVL Robotic Drone System": "VCU UAV Research Laboratory",
+    "Ashland Police Department Drone Program": (
+        "Town of Ashland First Responder UAS Capability"
+    ),
+    "Haymarket Police Department Drone Program": (
+        "Town of Haymarket First Responder UAS Capability"
+    ),
+    "Madison County Sheriff's Office UAS Program": (
+        "Madison County First Responder UAS Capability"
+    ),
+    "Occoquan Police Department Public Safety Drone Program": (
+        "Town of Occoquan First Responder UAS Capability"
+    ),
+    "Radford City Police Department Drone Program": (
+        "City of Radford First Responder UAS Capability"
+    ),
+    "Wise County Sheriff's Office Drone Program": (
+        "Wise County First Responder UAS Capability"
+    ),
+    "Wythe County Sheriff's Office Drone Program": (
+        "Wythe County First Responder UAS Capability"
+    ),
 }
 
 

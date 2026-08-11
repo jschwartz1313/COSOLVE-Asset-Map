@@ -1,0 +1,276 @@
+{
+  "reviewed_at": "2026-08-11",
+  "methodology": "Current activity and public contacts were reviewed against direct official organization, agency, facility, or program pages. Personal contact information is included only when the organization publishes it for the relevant role.",
+  "assets": {
+    "Ashland Police Department Drone Program": {
+      "activity_status": "active",
+      "current_activity": "Ashland Police documents operational use of its drone, including infrared support during a missing-person response, and received a CY 2026 award to replace an aircraft already in service.",
+      "partnership_opportunities": "Public-safety coordination and program questions can be directed to the Ashland Police Department.",
+      "activity_source_url": "https://www.ashlandva.gov/DocumentCenter/View/6463/July-2024-1?bidId=",
+      "contact_text": "Ashland Police Department",
+      "contact_phone": "804-412-0600",
+      "contact_email": "taronhalt@ashlandpolice.us",
+      "contact_url": "https://www.ashlandva.gov/300/Department-Overview",
+      "sources": [
+        {
+          "title": "Ashland Police Department contact information",
+          "url": "https://www.ashlandva.gov/300/Department-Overview"
+        }
+      ]
+    },
+    "CNU Autonomous Systems and Drone Lab": {
+      "activity_status": "active",
+      "current_activity": "Christopher Newport opened the two-story lab in 2026 and is using it for hands-on UAV instruction, programming, motion-capture-enabled testing, research, and industry engagement.",
+      "partnership_opportunities": "The lab is intended to support researchers and industry partners; program questions can be directed to Professor Abhishek Phadke.",
+      "activity_source_url": "https://cnu.edu/news/2026/02/19-cnu-serc-drone-lab/",
+      "contact_text": "Abhishek Phadke, Assistant Professor, School of Engineering and Computing",
+      "contact_phone": "757-594-7192",
+      "contact_email": "abhishek.phadke@cnu.edu",
+      "contact_url": "https://cnu.edu/people/abhishekphadke/",
+      "sources": [
+        {
+          "title": "Christopher Newport University faculty contact for the drone lab",
+          "url": "https://cnu.edu/people/abhishekphadke/"
+        }
+      ]
+    },
+    "Hampton University Uncrewed Aircraft Systems Program": {
+      "activity_status": "active",
+      "current_activity": "Hampton offers an active bachelor-level uncrewed-aircraft-systems curriculum with FAA-aligned remote-pilot preparation, autonomous-flight coursework, applied research, and industry and public-safety partnerships.",
+      "partnership_opportunities": "Academic, workforce, and program inquiries can be directed to Hampton University's Department of Aviation.",
+      "activity_source_url": "https://home.hamptonu.edu/engineering/uas/",
+      "contact_text": "Hampton University Department of Aviation",
+      "contact_phone": "757-727-5418",
+      "contact_email": "aviation@hamptonu.edu",
+      "contact_url": "https://home.hamptonu.edu/engineering/uas/"
+    },
+    "Haymarket Police Department Drone Program": {
+      "activity_status": "active",
+      "current_activity": "Haymarket Police documented a fully implemented department drone program and received a CY 2026 award to replace an aircraft already in service.",
+      "partnership_opportunities": "Public-safety coordination and program questions can be directed to the Haymarket Police Department.",
+      "activity_source_url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/police/page/2971/haymarket_police_department_annual_report_2022.pdf",
+      "contact_text": "Haymarket Police Department",
+      "contact_phone": "703-753-2700",
+      "contact_email": "",
+      "contact_url": "https://www.townofhaymarket.org/1450/Patrol-Division",
+      "sources": [
+        {
+          "title": "Haymarket Police Department contact information",
+          "url": "https://www.townofhaymarket.org/1450/Patrol-Division"
+        }
+      ]
+    },
+    "James City County Police Drone as First Responder Program": {
+      "activity_status": "pilot",
+      "current_activity": "James City County Police began recurring DFR test flights in 2025 as a research site evaluating incident response and the feasibility of drone-delivered AEDs; the county states that AED delivery itself is not yet operational.",
+      "partnership_opportunities": "Public and research inquiries can be directed to the Police Department public information office.",
+      "activity_source_url": "https://www.jamescitycountyva.gov/m/newsflash/Home/Detail/6334",
+      "contact_text": "James City County Police Public Information Office",
+      "contact_phone": "757-592-5618",
+      "contact_email": "tayleb.brooks@jamescitycountyva.gov",
+      "contact_url": "https://www.jamescitycountyva.gov/m/newsflash/Home/Detail/6334"
+    },
+    "Madison County Sheriff's Office UAS Program": {
+      "activity_status": "active",
+      "current_activity": "Madison County appropriated its CY 2026 unmanned-aircraft replacement grant directly to the Sheriff's Office, confirming the operating agency.",
+      "partnership_opportunities": "Program and mutual-aid questions can be directed to the Madison County Sheriff's Office.",
+      "activity_source_url": "https://www.madisonco.virginia.gov/AgendaCenter/ViewFile/Agenda/_02102026-398",
+      "contact_text": "Madison County Sheriff's Office",
+      "contact_phone": "540-948-5161",
+      "contact_email": "",
+      "contact_url": "https://www.madisonco.virginia.gov/268/Sheriff",
+      "sources": [
+        {
+          "title": "Madison County Sheriff's Office contact information",
+          "url": "https://www.madisonco.virginia.gov/268/Sheriff"
+        }
+      ]
+    },
+    "MARS Unmanned Aircraft Systems Airfield": {
+      "activity_status": "active",
+      "current_activity": "The Virginia Spaceport Authority operates the dedicated MARS UAS Airfield for government and commercial training, testing, demonstrations, and exercises with access to restricted airspace at Wallops.",
+      "partnership_opportunities": "Government and commercial users can contact the Virginia Spaceport Authority regarding UAS airfield access and mission support.",
+      "activity_source_url": "https://www.vaspace.org/our-facilities",
+      "contact_text": "Virginia Spaceport Authority external relations",
+      "contact_phone": "757-440-4020",
+      "contact_email": "external.relations@vaspace.org",
+      "contact_url": "https://www.vaspace.org/contact-us",
+      "sources": [
+        {
+          "title": "Virginia Spaceport Authority contact information",
+          "url": "https://www.vaspace.org/contact-us"
+        },
+        {
+          "title": "Virginia Spaceport Authority UAS Airfield facilities",
+          "url": "https://www.vaspace.org/our-facilities"
+        }
+      ]
+    },
+    "NASA Langley CERTAIN": {
+      "activity_status": "active",
+      "current_activity": "NASA's current ROAM facility page identifies CERTAIN as Langley's designated live-flight range supporting small-UAS and human-autonomy research.",
+      "partnership_opportunities": "Research and facility inquiries should use NASA Langley's published contact routes.",
+      "activity_source_url": "https://csaob.larc.nasa.gov/roam/",
+      "contact_text": "NASA Langley Crew Systems and Aviation Operations Branch",
+      "contact_phone": "",
+      "contact_email": "",
+      "contact_url": "https://csaob.larc.nasa.gov/",
+      "sources": [
+        {
+          "title": "NASA Langley ROAM and CERTAIN operations",
+          "url": "https://csaob.larc.nasa.gov/roam/"
+        }
+      ]
+    },
+    "NASA Langley ROAM UAS Operations Center": {
+      "activity_status": "active",
+      "current_activity": "ROAM supports live, virtual, and constructive BVLOS research, air-ground integration, operator training, and human-autonomy experiments involving multiple vehicles.",
+      "partnership_opportunities": "Technical and research inquiries can be directed through NASA Langley's Crew Systems and Aviation Operations Branch.",
+      "activity_source_url": "https://csaob.larc.nasa.gov/roam/",
+      "contact_text": "NASA Langley Crew Systems and Aviation Operations Branch",
+      "contact_phone": "",
+      "contact_email": "",
+      "contact_url": "https://csaob.larc.nasa.gov/"
+    },
+    "NASA Langley UAS Test Range": {
+      "activity_status": "active",
+      "current_activity": "NASA's current ROAM facility page identifies Langley's designated UAS range as supporting live small-UAS operations connected to remote-operations and autonomy research.",
+      "partnership_opportunities": "Research and facility inquiries should use NASA Langley's published contact routes.",
+      "activity_source_url": "https://csaob.larc.nasa.gov/roam/",
+      "contact_text": "NASA Langley Crew Systems and Aviation Operations Branch",
+      "contact_phone": "",
+      "contact_email": "",
+      "contact_url": "https://csaob.larc.nasa.gov/",
+      "sources": [
+        {
+          "title": "NASA Langley ROAM and designated UAS range operations",
+          "url": "https://csaob.larc.nasa.gov/roam/"
+        }
+      ]
+    },
+    "Navy TALSA East Small UAS Training Facility": {
+      "activity_status": "active",
+      "current_activity": "TALSA East is the Navy's dedicated entry-level small-UAS training and logistics facility, supporting operator qualification, system storage, supply, and maintenance at JEB Little Creek-Fort Story.",
+      "partnership_opportunities": "Official inquiries can be directed through NAVAIR or the host installation's public contact channels.",
+      "activity_source_url": "https://www.navair.navy.mil/news/Navy-opens-doors-first-small-unmanned-aircraft-systems-training-facility/Tue-08022022-0923",
+      "contact_text": "NAVAIR public affairs",
+      "contact_phone": "240-925-5305",
+      "contact_email": "",
+      "contact_url": "https://www.navair.navy.mil/contact-us"
+    },
+    "Newport News Drones as First Responders Program": {
+      "activity_status": "active",
+      "current_activity": "Newport News is launching an incident-based DFR program integrating police, fire, and EMS response, with logged flights, defined policies, and a public activity dashboard.",
+      "partnership_opportunities": "Program questions can be directed to the Newport News Police Drone Unit.",
+      "activity_source_url": "https://www.nnva.gov/3269/Drones-as-First-Responders",
+      "contact_text": "Newport News Police Drone Unit",
+      "contact_phone": "757-926-4705",
+      "contact_email": "",
+      "contact_url": "https://www.nnva.gov/2394/Drone-Unit"
+    },
+    "Newport News Police and Fire Drone Unit": {
+      "activity_status": "active",
+      "current_activity": "The joint Police and Fire Drone Unit supports fire management, search and rescue, disaster and hazmat response, tactical deployments, major events, and scene documentation.",
+      "partnership_opportunities": "Mutual-aid and program questions can be directed to the Newport News Police Drone Unit.",
+      "activity_source_url": "https://www.nnva.gov/2394/Drone-Unit",
+      "contact_text": "Newport News Police Drone Unit",
+      "contact_phone": "757-926-4705",
+      "contact_email": "",
+      "contact_url": "https://www.nnva.gov/2394/Drone-Unit"
+    },
+    "Occoquan Police Department Public Safety Drone Program": {
+      "activity_status": "active",
+      "current_activity": "Occoquan maintains a police-led public-safety drone capability and accepted a CY 2026 award to replace the existing aircraft with a compliant U.S.-manufactured system.",
+      "partnership_opportunities": "Public-safety and emergency-management questions can be directed to the Occoquan Police Department.",
+      "activity_source_url": "https://occoquanva.gov/wp-content/uploads/2026/01/TC-Agenda-Packet-FULL-1-6-2026.pdf",
+      "contact_text": "Occoquan Police Department",
+      "contact_phone": "571-492-7274",
+      "contact_email": "policechief@occoquanva.gov",
+      "contact_url": "https://occoquanva.gov/public-safety/",
+      "sources": [
+        {
+          "title": "Occoquan Police Department contact information",
+          "url": "https://occoquanva.gov/public-safety/"
+        }
+      ]
+    },
+    "Radford City Police Department Drone Program": {
+      "activity_status": "active",
+      "current_activity": "Radford Police is replacing its existing DJI Mavic 3T with a Skydio X10 and accessories through the CY 2026 DCJS program.",
+      "partnership_opportunities": "Program and public-safety coordination questions can be directed to Radford City Police.",
+      "activity_source_url": "https://www.radfordva.gov/AgendaCenter/ViewFile/Minutes/_01272026-805",
+      "contact_text": "Radford City Police Department",
+      "contact_phone": "540-731-3624",
+      "contact_email": "",
+      "contact_url": "https://www.radfordva.gov/Directory.aspx?did=16",
+      "sources": [
+        {
+          "title": "Radford City Police Department contact information",
+          "url": "https://www.radfordva.gov/Directory.aspx?did=16"
+        }
+      ]
+    },
+    "VIMS Autonomous Systems Laboratory": {
+      "activity_status": "active",
+      "current_activity": "The laboratory is developing autonomous underwater vehicles, persistent robotic swarms, bio-inspired autonomy, coordinated swarm software, and counter-misuse methods for unmanned systems.",
+      "partnership_opportunities": "Research and collaboration inquiries can be directed to laboratory director Mark R. Patterson.",
+      "activity_source_url": "https://www.vims.edu/people/patterson_mr/",
+      "contact_text": "Mark R. Patterson, Director, Autonomous Systems Laboratory",
+      "contact_phone": "804-684-7374",
+      "contact_email": "",
+      "contact_url": "https://www.vims.edu/people/patterson_mr/"
+    },
+    "Virginia Spaceport Authority": {
+      "activity_status": "active",
+      "current_activity": "The authority operates the Mid-Atlantic Regional Spaceport and MARS UAS Airfield, providing launch, payload, integration, airfield, and mission-support capabilities from Wallops and Norfolk.",
+      "partnership_opportunities": "Commercial and government users can contact external relations regarding launch and UAS mission support.",
+      "activity_source_url": "https://www.vaspace.org/our-facilities",
+      "contact_text": "Virginia Spaceport Authority external relations",
+      "contact_phone": "757-440-4020",
+      "contact_email": "external.relations@vaspace.org",
+      "contact_url": "https://www.vaspace.org/contact-us"
+    },
+    "Wise County Sheriff's Office Drone Program": {
+      "activity_status": "active",
+      "current_activity": "Wise County's 2026 grant record identifies the Sheriff's Office as the grantee and states that the award will purchase a drone.",
+      "partnership_opportunities": "Program and mutual-aid questions can be directed to the Wise County Sheriff's Office.",
+      "activity_source_url": "https://www.wisecounty.org/AgendaCenter/ViewFile/Agenda/_02122026-671",
+      "contact_text": "Wise County Sheriff's Office",
+      "contact_phone": "276-328-3566",
+      "contact_email": "",
+      "contact_url": "https://wisecounty.org/211/Sheriff---WCSO",
+      "sources": [
+        {
+          "title": "Wise County Sheriff's Office contact information",
+          "url": "https://wisecounty.org/211/Sheriff---WCSO"
+        }
+      ]
+    },
+    "Wythe County Sheriff's Office Drone Program": {
+      "activity_status": "active",
+      "current_activity": "Wythe County's January 2026 minutes identify the Sheriff's Office as the recipient of the CY 2026 unmanned-aircraft replacement award.",
+      "partnership_opportunities": "Program and mutual-aid questions can be directed to the Wythe County Sheriff's Office.",
+      "activity_source_url": "https://www.wytheco.org/AgendaCenter/ViewFile/Agenda/_01272026-119",
+      "contact_text": "Wythe County Sheriff's Office",
+      "contact_phone": "276-223-6000",
+      "contact_email": "",
+      "contact_url": "https://www.wytheco.org/170/Sheriff",
+      "sources": [
+        {
+          "title": "Wythe County Sheriff's Office contact information",
+          "url": "https://www.wytheco.org/170/Sheriff"
+        }
+      ]
+    },
+    "York County ROVER Team": {
+      "activity_status": "active",
+      "current_activity": "The joint York County Fire and Life Safety and York-Poquoson Sheriff's Office team operates multiple aircraft for missing-person, hazmat, tactical, severe-weather, and other public-safety missions.",
+      "partnership_opportunities": "Public-safety and mutual-aid inquiries can be directed through York County Fire and Life Safety.",
+      "activity_source_url": "https://www.yorkcounty.gov/1874/The-ROVER-Team",
+      "contact_text": "York County Fire and Life Safety",
+      "contact_phone": "757-890-3600",
+      "contact_email": "",
+      "contact_url": "https://www.yorkcounty.gov/99/Fire-Life-Safety"
+    }
+  }
+}

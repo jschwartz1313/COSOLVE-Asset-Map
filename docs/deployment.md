@@ -27,7 +27,7 @@ To create a Hampton Roads-only release:
 
 Setting `PUBLIC_REGION_SLUG` to another active region creates a different regional release without copying the application or database. A separate database is needed only when contractual or confidentiality requirements prohibit storing statewide working records in the same environment.
 
-The build initializes the source-backed catalog only if the asset table is empty, creates baseline history for existing rows, and leaves later revisions intact. Normal redeployments therefore preserve every staff edit. To intentionally refresh records from the checked-in catalog, back up the database, review the catalog diff, and run `python manage.py seed_real_data --prune` manually.
+The build adds missing catalog records, applies conservative profile enrichment, applies newly checked-in editorial review decisions once, creates baseline history, and leaves later staff review decisions intact. Normal redeployments therefore preserve coworker edits and any later decision to unverify a record. To intentionally refresh catalog-managed fields from the checked-in catalog, back up the database, review the catalog diff, and run `python manage.py seed_real_data --prune` manually.
 
 ```bash
 export DJANGO_SETTINGS_MODULE=config.settings.production

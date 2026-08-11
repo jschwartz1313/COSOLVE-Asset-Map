@@ -65,6 +65,16 @@ TARGET_CONTACT_UPGRADES = {
     "Virginia Unmanned Systems Center",
     "Wallops Research Park",
 }
+RESOLVED_JURISDICTION_RECORDS = {
+    "Ashland Police Department Drone Program",
+    "Haymarket Police Department Drone Program",
+    "Madison County Sheriff's Office UAS Program",
+    "Occoquan Police Department Public Safety Drone Program",
+    "Radford City Police Department Drone Program",
+    "Wise County Sheriff's Office Drone Program",
+    "Wythe County Sheriff's Office Drone Program",
+}
+TARGET_CONTACT_UPGRADES |= RESOLVED_JURISDICTION_RECORDS
 GENERATED_CONTACT_SCOPES = {
     "Facility or operator public information",
     "Organization public information and inquiries",
@@ -103,6 +113,10 @@ LEGACY_SHARED_WEBSITE_URLS = {
         "https://www.vada.virginia.gov/media/governorvirginiagov/"
         "secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
     ),
+}
+LEGACY_JURISDICTION_WEBSITE_URLS = {
+    "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
+    "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
 }
 LEGACY_WEBSITE_URLS_BY_ASSET = {
     "Accomack County Emergency Management Drone Program": {
@@ -164,7 +178,13 @@ class Command(BaseCommand):
             if (
                 catalog_managed
                 and record.get("website_url")
-                and asset.website_url in legacy_website_urls
+                and (
+                    asset.website_url in legacy_website_urls
+                    or (
+                        record["name"] in RESOLVED_JURISDICTION_RECORDS
+                        and asset.website_url in LEGACY_JURISDICTION_WEBSITE_URLS
+                    )
+                )
                 and asset.website_url != record["website_url"]
             ):
                 asset.website_url = record["website_url"]
@@ -222,9 +242,23 @@ class Command(BaseCommand):
             legacy_airport_description = asset.short_description.startswith(
                 "Operational public-use Virginia aviation facility (FAA identifier "
             )
-            if asset.short_description in LEGACY_DESCRIPTIONS or legacy_airport_description:
+            resolved_jurisdiction_description = (
+                catalog_managed
+                and record["name"] in RESOLVED_JURISDICTION_RECORDS
+                and asset.short_description.startswith(
+                    "A CY 2026 Virginia DCJS award documents an unmanned aircraft"
+                )
+            )
+            if (
+                asset.short_description in LEGACY_DESCRIPTIONS
+                or legacy_airport_description
+                or resolved_jurisdiction_description
+            ):
                 asset.short_description = record["short_description"]
                 changed_fields.append("short_description")
+            if resolved_jurisdiction_description:
+                asset.overview = record["overview"]
+                changed_fields.append("overview")
 
             if record["provenance"] == "faa-public-airport":
                 for field in ("address_line", "postal_code"):

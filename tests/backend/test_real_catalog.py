@@ -208,7 +208,7 @@ class RealCatalogFileTests(TestCase):
             "Virginia Tech Autonomous Systems and Control Laboratory",
         }:
             self.assertEqual(records_by_name[name]["activity_status"], "historical")
-            self.assertEqual(records_by_name[name]["activity_last_verified_at"], "2026-08-07")
+            self.assertEqual(records_by_name[name]["activity_last_verified_at"], "2026-08-11")
 
         self.assertEqual(
             records_by_name["Accomack County Emergency Management Drone Program"]["website_url"],
@@ -237,6 +237,38 @@ class RealCatalogFileTests(TestCase):
             "https://www.vmi.edu/about/our-location/",
             {source["url"] for source in records_by_name["Virginia Military Institute"]["sources"]},
         )
+
+    def test_tier_one_review_manifest_uses_attached_official_sources(self):
+        catalog = self.load_catalog()
+        records_by_name = {record["name"]: record for record in catalog["records"]}
+        manifest = json.loads(
+            (settings.BASE_DIR / "data" / "asset_editorial_reviews.json").read_text()
+        )
+
+        self.assertGreaterEqual(len(manifest["reviewed_assets"]), 45)
+        self.assertEqual(len(manifest["follow_up_assets"]), 13)
+        for name, source_urls in manifest["reviewed_assets"].items():
+            self.assertIn(name, records_by_name)
+            attached_urls = {source["url"] for source in records_by_name[name]["sources"]}
+            self.assertTrue(set(source_urls).issubset(attached_urls), name)
+        self.assertTrue(set(manifest["follow_up_assets"]).issubset(records_by_name))
+
+        resolved_names = {
+            "Ashland Police Department Drone Program",
+            "Haymarket Police Department Drone Program",
+            "Madison County Sheriff's Office UAS Program",
+            "Occoquan Police Department Public Safety Drone Program",
+            "Radford City Police Department Drone Program",
+            "Wise County Sheriff's Office Drone Program",
+            "Wythe County Sheriff's Office Drone Program",
+        }
+        self.assertTrue(resolved_names.issubset(manifest["reviewed_assets"]))
+        for name in resolved_names:
+            record = records_by_name[name]
+            self.assertEqual(record["activity_status"], "active")
+            self.assertTrue(record["current_activity"])
+            self.assertTrue(record["contact_phone"])
+            self.assertEqual(record["activity_last_verified_at"], "2026-08-11")
 
     def test_catalog_seed_is_idempotent(self):
         catalog = self.load_catalog()
@@ -411,7 +443,7 @@ class RealCatalogFileTests(TestCase):
             self.assertTrue(record["activity_status"], name)
             self.assertTrue(record["current_activity"], name)
             self.assertTrue(record["partnership_opportunities"], name)
-            self.assertEqual(record["activity_last_verified_at"], "2026-08-07")
+            self.assertEqual(record["activity_last_verified_at"], "2026-08-11")
             self.assertIn(record["activity_source_url"], source_urls)
             self.assertIn(record["contact_url"], source_urls)
 
@@ -589,6 +621,53 @@ class RealCatalogFileTests(TestCase):
             hii.sources.filter(url="https://www.hii.com/news/first-quarter-2021-earnings").exists()
         )
 
+    def test_catalog_review_command_records_reviews_and_preserves_later_unverify(self):
+        manifest = json.loads(
+            (settings.BASE_DIR / "data" / "asset_editorial_reviews.json").read_text()
+        )
+        call_command("seed_real_data", verbosity=0)
+
+        call_command("apply_catalog_reviews", verbosity=0)
+
+        reviewed = Asset.objects.filter(
+            name__in=manifest["reviewed_assets"],
+            status=Asset.Status.PUBLISHED,
+            reviewed_at__isnull=False,
+            last_verified_at=date(2026, 8, 11),
+        )
+        self.assertEqual(reviewed.count(), len(manifest["reviewed_assets"]))
+        self.assertEqual(
+            Asset.objects.filter(
+                name__in=manifest["follow_up_assets"],
+                review_priority=Asset.ReviewPriority.HIGH,
+                reviewed_at__isnull=True,
+            ).count(),
+            len(manifest["follow_up_assets"]),
+        )
+        self.assertTrue(
+            Source.objects.filter(
+                asset__name="CNU Autonomous Systems and Drone Lab",
+                verification_status="verified",
+                last_verified_at=date(2026, 8, 11),
+            ).exists()
+        )
+
+        asset = Asset.objects.get(name="CNU Autonomous Systems and Drone Lab")
+        review_comment_count = asset.review_comments.count()
+        asset.status = Asset.Status.SOURCE_BACKED
+        asset.last_verified_at = None
+        asset.reviewed_at = None
+        asset.reviewed_by = None
+        asset.published_at = None
+        asset.save()
+
+        call_command("apply_catalog_reviews", verbosity=0)
+
+        asset.refresh_from_db()
+        self.assertEqual(asset.status, Asset.Status.SOURCE_BACKED)
+        self.assertIsNone(asset.reviewed_at)
+        self.assertEqual(asset.review_comments.count(), review_comment_count)
+
     def test_add_missing_preserves_reviewed_records_and_restores_catalog_gaps(self):
         catalog = self.load_catalog()
         call_command("seed_real_data", verbosity=0)
@@ -666,6 +745,44 @@ class RealCatalogFileTests(TestCase):
             dominion.sources.filter(
                 url="https://www.dominionenergy.com/our-stories/unmanned-aerial-inspections"
             ).exists()
+        )
+
+    def test_deployment_enrichment_resolves_named_first_responder_operator(self):
+        legacy = Asset.objects.create(
+            name="City of Radford First Responder UAS Capability",
+            record_type=Asset.RecordType.PROGRAM,
+            short_description=(
+                "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use "
+                "by an eligible local first responder agency in City of Radford; the public "
+                "award record does not identify the operating department."
+            ),
+            overview="Legacy generic jurisdiction-level profile.",
+            unmanned_systems_relevance="Public-safety UAS capability.",
+            website_url=(
+                "https://www.vaco.org/wp-content/uploads/2025/12/"
+                "DCJS-Meeting-UAB-Chart.pdf"
+            ),
+            contact_text="Site operator or program information",
+            contact_url=(
+                "https://www.dcjs.virginia.gov/grants/programs/"
+                "cy-26-unmanned-aircraft-trade-and-replace-program"
+            ),
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+            internal_notes="Catalog provenance: curated-public-source.",
+        )
+
+        call_command("seed_real_data", add_missing=True, verbosity=0)
+        call_command("enrich_asset_profiles", verbosity=0)
+
+        legacy.refresh_from_db()
+        self.assertEqual(legacy.name, "Radford City Police Department Drone Program")
+        self.assertIn("Skydio X10", legacy.short_description)
+        self.assertEqual(legacy.contact_phone, "540-731-3624")
+        self.assertEqual(legacy.activity_status, Asset.ActivityStatus.ACTIVE)
+        self.assertEqual(
+            legacy.website_url,
+            "https://www.radfordva.gov/AgendaCenter/ViewFile/Minutes/_01272026-805",
         )
 
     def test_deployment_enrichment_preserves_staff_website_edits(self):

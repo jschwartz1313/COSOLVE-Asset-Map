@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07",
+  "generated_at": "2026-08-11",
   "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, active Virginia public and private nonprofit degree-granting institutions from the NCES IPEDS 2024 directory (plus ECPI University), and a curated set of source-backed ecosystem records. Specific street and site locations are anchored to official public address sources and geocoded against the U.S. Census address ranges or named-site map data; locality points are retained when the public record does not identify the operating department or facility. Every record is also classified as either a core unmanned-systems asset with direct documented activity or a supporting ecosystem asset with a broader enabling role.",
   "record_count": 453,
   "records": [
@@ -54,7 +54,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://www.esva911.org/Communications%20Manual%20-%20Public%20Release%20Version-%20UPDATED%2011-26-24.pdf",
       "activity_status": "active",
       "capabilities": [
@@ -150,7 +150,7 @@
       "website_url": "https://adaptiveaero.com/"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://advancedaircraftcompany.com/uas-products/",
       "activity_status": "active",
       "address_line": "1100 Exploration Way, Suite 316M",
@@ -249,7 +249,7 @@
       "website_url": "https://www.aeroprobe.com/about-aeroprobe/"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://www.avinc.com/about/maccready-works/",
       "activity_status": "active",
       "address_line": "241 18th Street South, Suite 650",
@@ -571,7 +571,7 @@
       "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://www.anratechnologies.com/home/2026/06/24/building-michigans-digital-airspace-integrating-commercial-drone-operations-and-airspace-security/",
       "activity_status": "active",
       "address_line": "11710 Plaza America Drive, Suite 200",
@@ -840,6 +840,65 @@
       "website_url": "https://ascent.edu/"
     },
     {
+      "activity_last_verified_at": "2026-08-11",
+      "activity_source_url": "https://www.ashlandva.gov/DocumentCenter/View/6463/July-2024-1?bidId=",
+      "activity_status": "active",
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Ashland",
+      "contact_email": "taronhalt@ashlandpolice.us",
+      "contact_phone": "804-412-0600",
+      "contact_text": "Ashland Police Department",
+      "contact_url": "https://www.ashlandva.gov/300/Department-Overview",
+      "current_activity": "Ashland Police documents operational use of its drone, including infrared support during a missing-person response, and received a CY 2026 award to replace an aircraft already in service.",
+      "latitude": 37.759,
+      "location_precision": "locality",
+      "longitude": -77.48,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Ashland Police Department Drone Program",
+      "overview": "Police drone program used for incident response, infrared search support, and public-safety operations. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+      "partnership_opportunities": "Public-safety coordination and program questions can be directed to the Ashland Police Department.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Greater Richmond",
+      "short_description": "Police drone program used for incident response, infrared search support, and public-safety operations.",
+      "sources": [
+        {
+          "title": "Ashland Police Department monthly report documenting drone operations",
+          "url": "https://www.ashlandva.gov/DocumentCenter/View/6463/July-2024-1?bidId="
+        },
+        {
+          "title": "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
+          "url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+        },
+        {
+          "title": "DCJS Unmanned Aircraft Trade and Replace Program",
+          "url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+        },
+        {
+          "title": "Ashland Police Department contact information",
+          "url": "https://www.ashlandva.gov/300/Department-Overview"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.ashlandva.gov/DocumentCenter/View/6463/July-2024-1?bidId="
+    },
+    {
       "capabilities": [
         "Safety, policy, regulatory, and airspace integration"
       ],
@@ -965,7 +1024,7 @@
       "website_url": "https://www.co.augusta.va.us/home/showpublisheddocument/20491/639101430011700000"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://www.aurora.aero/contact-us/",
       "activity_status": "active",
       "address_line": "9950 Wakeman Drive",
@@ -2412,7 +2471,7 @@
       "website_url": "https://www.engineering.virginia.edu/labs-groups/link-lab/research/robotics-and-autonomous-systems"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://iucrc.nsf.gov/centers/center-for-unmanned-aircraft-system/",
       "activity_status": "historical",
       "capabilities": [
@@ -3079,52 +3138,6 @@
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
       ],
-      "city": "Radford",
-      "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
-      "latitude": 37.132,
-      "location_precision": "locality",
-      "longitude": -80.576,
-      "missions": [
-        "Public safety and emergency response",
-        "Search and rescue",
-        "Surveying and mapping"
-      ],
-      "name": "City of Radford First Responder UAS Capability",
-      "overview": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in City of Radford; the public award record does not identify the operating department. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
-      "platform_domains": [
-        "Unmanned aircraft systems"
-      ],
-      "provenance": "curated-public-source",
-      "record_type": "program",
-      "region": "New River Valley",
-      "short_description": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in City of Radford; the public award record does not identify the operating department.",
-      "sources": [
-        {
-          "title": "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
-          "url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
-        },
-        {
-          "title": "DCJS Unmanned Aircraft Trade and Replace Program",
-          "url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Programs and initiatives",
-        "Multi-domain missions",
-        "Core unmanned-systems asset"
-      ],
-      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
-    },
-    {
-      "capabilities": [
-        "Operations, maintenance, and sustainment",
-        "Perception, sensing, and sensor fusion"
-      ],
       "city": "Staunton",
       "contact_email": "",
       "contact_phone": "",
@@ -3215,16 +3228,20 @@
       "website_url": "https://www.cisa.gov/sites/default/files/2024-08/24_0826_necp_spotlight_implementing_uas_programs_to_support_emergency_operations_final_508C.pdf"
     },
     {
+      "activity_last_verified_at": "2026-08-11",
+      "activity_source_url": "https://cnu.edu/news/2026/02/19-cnu-serc-drone-lab/",
+      "activity_status": "active",
       "address_line": "1 Avenue of the Arts",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
       ],
       "city": "Newport News",
-      "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.vedp.org/industry/unmanned-systems",
+      "contact_email": "abhishek.phadke@cnu.edu",
+      "contact_phone": "757-594-7192",
+      "contact_text": "Abhishek Phadke, Assistant Professor, School of Engineering and Computing",
+      "contact_url": "https://cnu.edu/people/abhishekphadke/",
+      "current_activity": "Christopher Newport opened the two-story lab in 2026 and is using it for hands-on UAV instruction, programming, motion-capture-enabled testing, research, and industry engagement.",
       "latitude": 37.059929,
       "location_precision": "site",
       "longitude": -76.488306,
@@ -3233,6 +3250,7 @@
       ],
       "name": "CNU Autonomous Systems and Drone Lab",
       "overview": "Christopher Newport University lab researching safe control and planning for aerial and ground vehicles. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+      "partnership_opportunities": "The lab is intended to support researchers and industry partners; program questions can be directed to Professor Abhishek Phadke.",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
@@ -3250,6 +3268,10 @@
         {
           "title": "CNU Science and Engineering Research Center drone lab",
           "url": "https://cnu.edu/news/2026/02/19-cnu-serc-drone-lab/"
+        },
+        {
+          "title": "Christopher Newport University faculty contact for the drone lab",
+          "url": "https://cnu.edu/people/abhishekphadke/"
         }
       ],
       "state": "VA",
@@ -4121,7 +4143,7 @@
       "website_url": "https://www.divinemercy.edu/"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://www.dominionenergy.com/about/delivering-energy/electric-projects",
       "activity_status": "active",
       "capabilities": [
@@ -6269,7 +6291,7 @@
       "website_url": "https://www.ialr.org/go-tec/"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://www.dhcd.virginia.gov/gova",
       "activity_status": "active",
       "address_line": "600 East Main Street, Suite 300",
@@ -6465,7 +6487,7 @@
       "website_url": "https://www.hampton.gov/DocumentCenter/View/37936/557-UAS-Unmanned-Aerial-System-PDF"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://hamptonroadsalliance.com/wp-content/uploads/2025/01/Alliance-Board-Deck-September.pdf",
       "activity_status": "active",
       "address_line": "3 Commercial Place, Suite 1320",
@@ -6629,16 +6651,20 @@
       "website_url": "https://www.hamptonu.edu/"
     },
     {
+      "activity_last_verified_at": "2026-08-11",
+      "activity_source_url": "https://home.hamptonu.edu/engineering/uas/",
+      "activity_status": "active",
       "address_line": "100 East Queen Street",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
       ],
       "city": "Hampton",
-      "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Program or parent-organization inquiries",
-      "contact_url": "https://home.hamptonu.edu/engineering/contact/",
+      "contact_email": "aviation@hamptonu.edu",
+      "contact_phone": "757-727-5418",
+      "contact_text": "Hampton University Department of Aviation",
+      "contact_url": "https://home.hamptonu.edu/engineering/uas/",
+      "current_activity": "Hampton offers an active bachelor-level uncrewed-aircraft-systems curriculum with FAA-aligned remote-pilot preparation, autonomous-flight coursework, applied research, and industry and public-safety partnerships.",
       "latitude": 37.023632,
       "location_precision": "site",
       "longitude": -76.338129,
@@ -6647,6 +6673,7 @@
       ],
       "name": "Hampton University Uncrewed Aircraft Systems Program",
       "overview": "Degree concentration, remote-pilot preparation, flight training, data services, and applied UAS research. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Systems engineering and integration. Relevant mission areas include Training and experimentation.",
+      "partnership_opportunities": "Academic, workforce, and program inquiries can be directed to Hampton University's Department of Aviation.",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
@@ -6873,6 +6900,65 @@
       "website_url": "https://www.chesterfield.gov/163/Parks-and-Facilities"
     },
     {
+      "activity_last_verified_at": "2026-08-11",
+      "activity_source_url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/police/page/2971/haymarket_police_department_annual_report_2022.pdf",
+      "activity_status": "active",
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Haymarket",
+      "contact_email": "",
+      "contact_phone": "703-753-2700",
+      "contact_text": "Haymarket Police Department",
+      "contact_url": "https://www.townofhaymarket.org/1450/Patrol-Division",
+      "current_activity": "Haymarket Police documented a fully implemented department drone program and received a CY 2026 award to replace an aircraft already in service.",
+      "latitude": 38.812,
+      "location_precision": "locality",
+      "longitude": -77.636,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Haymarket Police Department Drone Program",
+      "overview": "Town police drone program documented as fully implemented and supported by a CY 2026 replacement award. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+      "partnership_opportunities": "Public-safety coordination and program questions can be directed to the Haymarket Police Department.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Northern Virginia",
+      "short_description": "Town police drone program documented as fully implemented and supported by a CY 2026 replacement award.",
+      "sources": [
+        {
+          "title": "Haymarket Police Department 2022 annual report",
+          "url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/police/page/2971/haymarket_police_department_annual_report_2022.pdf"
+        },
+        {
+          "title": "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
+          "url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+        },
+        {
+          "title": "DCJS Unmanned Aircraft Trade and Replace Program",
+          "url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+        },
+        {
+          "title": "Haymarket Police Department contact information",
+          "url": "https://www.townofhaymarket.org/1450/Patrol-Division"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/police/page/2971/haymarket_police_department_annual_report_2022.pdf"
+    },
+    {
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -7009,7 +7095,7 @@
       "website_url": "https://hevenaerotech.com/"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://www.hii.com/mission-technologies",
       "activity_status": "active",
       "address_line": "Hampton Roads Center - North Campus",
@@ -7023,7 +7109,7 @@
       "contact_text": "Facility or operator public information",
       "contact_url": "https://www.hii.com/contact",
       "current_activity": "HII maintains an Uncrewed Systems business spanning unmanned undersea and surface platforms and autonomy software; the Hampton center is its publicly documented purpose-built production and test campus.",
-      "development_last_verified_at": "2026-08-07",
+      "development_last_verified_at": "2026-08-11",
       "development_notes": "HII described a 20-acre campus and Hampton documented completion and occupancy of the first 22,000-square-foot building. Campus size is not presented as available acreage.",
       "development_source_url": "https://www.hii.com/news/first-quarter-2021-earnings",
       "development_status": "operational",
@@ -7547,16 +7633,20 @@
       "website_url": "https://www.reynolds.edu/"
     },
     {
+      "activity_last_verified_at": "2026-08-11",
+      "activity_source_url": "https://www.jamescitycountyva.gov/m/newsflash/Home/Detail/6334",
+      "activity_status": "pilot",
       "address_line": "4600 Opportunity Way",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
       ],
       "city": "Williamsburg",
-      "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
+      "contact_email": "tayleb.brooks@jamescitycountyva.gov",
+      "contact_phone": "757-592-5618",
+      "contact_text": "James City County Police Public Information Office",
       "contact_url": "https://www.jamescitycountyva.gov/m/newsflash/Home/Detail/6334",
+      "current_activity": "James City County Police began recurring DFR test flights in 2025 as a research site evaluating incident response and the feasibility of drone-delivered AEDs; the county states that AED delivery itself is not yet operational.",
       "latitude": 37.337991,
       "location_precision": "site",
       "longitude": -76.757712,
@@ -7567,6 +7657,7 @@
       ],
       "name": "James City County Police Drone as First Responder Program",
       "overview": "Police DFR test and operations program providing incident-based aerial awareness and supporting research into drone-delivered AEDs. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+      "partnership_opportunities": "Public and research inquiries can be directed to the Police Department public information office.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -7645,7 +7736,7 @@
       "website_url": "https://www.jmu.edu/index.shtml"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://www.jmu.edu/jmuxlabs/courses/drones.shtml",
       "activity_status": "historical",
       "capabilities": [
@@ -8698,7 +8789,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://www.sbir.gov/portfolio/1664155",
       "activity_status": "active",
       "address_line": "96 Stilwell Road",
@@ -9174,15 +9265,19 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "activity_last_verified_at": "2026-08-11",
+      "activity_source_url": "https://www.madisonco.virginia.gov/AgendaCenter/ViewFile/Agenda/_02102026-398",
+      "activity_status": "active",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
       ],
       "city": "Madison",
       "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
+      "contact_phone": "540-948-5161",
+      "contact_text": "Madison County Sheriff's Office",
+      "contact_url": "https://www.madisonco.virginia.gov/268/Sheriff",
+      "current_activity": "Madison County appropriated its CY 2026 unmanned-aircraft replacement grant directly to the Sheriff's Office, confirming the operating agency.",
       "latitude": 38.38,
       "location_precision": "locality",
       "longitude": -78.258,
@@ -9191,16 +9286,21 @@
         "Search and rescue",
         "Surveying and mapping"
       ],
-      "name": "Madison County First Responder UAS Capability",
-      "overview": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in Madison County; the public award record does not identify the operating department. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+      "name": "Madison County Sheriff's Office UAS Program",
+      "overview": "Sheriff's Office unmanned-aircraft capability supported by a CY 2026 DCJS replacement grant. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+      "partnership_opportunities": "Program and mutual-aid questions can be directed to the Madison County Sheriff's Office.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Central Virginia",
-      "short_description": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in Madison County; the public award record does not identify the operating department.",
+      "short_description": "Sheriff's Office unmanned-aircraft capability supported by a CY 2026 DCJS replacement grant.",
       "sources": [
+        {
+          "title": "Madison County FY2026 UAS grant appropriation",
+          "url": "https://www.madisonco.virginia.gov/AgendaCenter/ViewFile/Agenda/_02102026-398"
+        },
         {
           "title": "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
           "url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
@@ -9208,6 +9308,10 @@
         {
           "title": "DCJS Unmanned Aircraft Trade and Replace Program",
           "url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+        },
+        {
+          "title": "Madison County Sheriff's Office contact information",
+          "url": "https://www.madisonco.virginia.gov/268/Sheriff"
         }
       ],
       "state": "VA",
@@ -9217,7 +9321,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      "website_url": "https://www.madisonco.virginia.gov/AgendaCenter/ViewFile/Agenda/_02102026-398"
     },
     {
       "address_line": "12730 Fair Lakes Circle, Suite 600",
@@ -9402,15 +9506,19 @@
       "website_url": "https://www.marines.mil/News/News-Display/Article/746745/marine-corps-warfighting-lab-tests-autonomous-reconnaissance/"
     },
     {
+      "activity_last_verified_at": "2026-08-11",
+      "activity_source_url": "https://www.vaspace.org/our-facilities",
+      "activity_status": "active",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
       ],
       "city": "Wallops Island",
-      "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Facility or operator public information",
-      "contact_url": "https://www.vaspace.org/about-us",
+      "contact_email": "external.relations@vaspace.org",
+      "contact_phone": "757-440-4020",
+      "contact_text": "Virginia Spaceport Authority external relations",
+      "contact_url": "https://www.vaspace.org/contact-us",
+      "current_activity": "The Virginia Spaceport Authority operates the dedicated MARS UAS Airfield for government and commercial training, testing, demonstrations, and exercises with access to restricted airspace at Wallops.",
       "latitude": 37.94,
       "location_precision": "locality",
       "longitude": -75.467,
@@ -9419,6 +9527,7 @@
       ],
       "name": "MARS Unmanned Aircraft Systems Airfield",
       "overview": "Purpose-built UAS airfield and VTOL test infrastructure at the Mid-Atlantic Regional Spaceport. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+      "partnership_opportunities": "Government and commercial users can contact the Virginia Spaceport Authority regarding UAS airfield access and mission support.",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
@@ -9435,6 +9544,14 @@
         {
           "title": "Virginia Spaceport Authority: MARS and UAS Airfield",
           "url": "https://www.vaspace.org/about-us"
+        },
+        {
+          "title": "Virginia Spaceport Authority contact information",
+          "url": "https://www.vaspace.org/contact-us"
+        },
+        {
+          "title": "Virginia Spaceport Authority UAS Airfield facilities",
+          "url": "https://www.vaspace.org/our-facilities"
         }
       ],
       "state": "VA",
@@ -9719,7 +9836,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://maap.ictas.vt.edu/About/about-us.html",
       "activity_status": "active",
       "capabilities": [
@@ -9872,7 +9989,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range",
       "activity_status": "active",
       "capabilities": [
@@ -9886,7 +10003,7 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range",
       "current_activity": "MITRE operates the Orange County range for controlled testing, evaluation, and prototyping of UAS, counter-UAS, ground systems, communications, and related technologies.",
-      "development_last_verified_at": "2026-08-07",
+      "development_last_verified_at": "2026-08-11",
       "development_notes": "The public fact sheet describes 16 acres of dedicated airspace, hundreds of acres of accessible land, and thousands of acres of aerial access; it does not describe that acreage as generally available development land.",
       "development_source_url": "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range",
       "development_status": "operational",
@@ -10193,7 +10310,7 @@
       "website_url": "https://courses.vccs.edu/colleges/dslcc/courses/UMS-UnmannedSystems"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://www.nasa.gov/centers-and-facilities/langley/inventing-the-future/",
       "activity_status": "historical",
       "address_line": "2 Langley Boulevard",
@@ -10252,6 +10369,9 @@
       "website_url": "https://www.nasa.gov/centers-and-facilities/langley/inventing-the-future/"
     },
     {
+      "activity_last_verified_at": "2026-08-11",
+      "activity_source_url": "https://csaob.larc.nasa.gov/roam/",
+      "activity_status": "active",
       "address_line": "2 Langley Boulevard",
       "capabilities": [
         "Autonomy and artificial intelligence",
@@ -10260,8 +10380,9 @@
       "city": "Hampton",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Site operator or program information",
-      "contact_url": "https://www.nasa.gov/contact/",
+      "contact_text": "NASA Langley Crew Systems and Aviation Operations Branch",
+      "contact_url": "https://csaob.larc.nasa.gov/",
+      "current_activity": "NASA's current ROAM facility page identifies CERTAIN as Langley's designated live-flight range supporting small-UAS and human-autonomy research.",
       "latitude": 37.085639,
       "location_precision": "site",
       "longitude": -76.380667,
@@ -10270,6 +10391,7 @@
       ],
       "name": "NASA Langley CERTAIN",
       "overview": "City Environment for Range Testing of Autonomous Integrated Navigation at NASA Langley. Public sources support its classification as a Virginia operating environment. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+      "partnership_opportunities": "Research and facility inquiries should use NASA Langley's published contact routes.",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
@@ -10291,6 +10413,14 @@
         {
           "title": "NASA Langley CERTAIN public contact information",
           "url": "https://www.nasa.gov/contact/"
+        },
+        {
+          "title": "NASA Langley ROAM and CERTAIN operations",
+          "url": "https://csaob.larc.nasa.gov/roam/"
+        },
+        {
+          "title": "NASA Langley CERTAIN public contact information",
+          "url": "https://csaob.larc.nasa.gov/"
         }
       ],
       "state": "VA",
@@ -10358,6 +10488,9 @@
       "website_url": "https://www.nasa.gov/langley/about-langley-research-center/"
     },
     {
+      "activity_last_verified_at": "2026-08-11",
+      "activity_source_url": "https://csaob.larc.nasa.gov/roam/",
+      "activity_status": "active",
       "address_line": "Building Complex 1268, 2 Langley Boulevard",
       "capabilities": [
         "Autonomy and artificial intelligence",
@@ -10366,8 +10499,9 @@
       "city": "Hampton",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Facility or operator public information",
-      "contact_url": "https://www.nasa.gov/contact/",
+      "contact_text": "NASA Langley Crew Systems and Aviation Operations Branch",
+      "contact_url": "https://csaob.larc.nasa.gov/",
+      "current_activity": "ROAM supports live, virtual, and constructive BVLOS research, air-ground integration, operator training, and human-autonomy experiments involving multiple vehicles.",
       "latitude": 37.085639,
       "location_precision": "site",
       "longitude": -76.380667,
@@ -10376,6 +10510,7 @@
       ],
       "name": "NASA Langley ROAM UAS Operations Center",
       "overview": "Building 1268 operations center for BVLOS research, live-virtual-constructive flight operations, and human-autonomy teaming with multiple vehicles. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+      "partnership_opportunities": "Technical and research inquiries can be directed through NASA Langley's Crew Systems and Aviation Operations Branch.",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
@@ -10397,6 +10532,10 @@
         {
           "title": "NASA Langley ROAM UAS Operations Center public contact information",
           "url": "https://www.nasa.gov/contact/"
+        },
+        {
+          "title": "NASA Langley ROAM UAS Operations Center public contact information",
+          "url": "https://csaob.larc.nasa.gov/"
         }
       ],
       "state": "VA",
@@ -10409,6 +10548,9 @@
       "website_url": "https://csaob.larc.nasa.gov/roam/"
     },
     {
+      "activity_last_verified_at": "2026-08-11",
+      "activity_source_url": "https://csaob.larc.nasa.gov/roam/",
+      "activity_status": "active",
       "address_line": "NASA Langley Research Center, 2 Langley Boulevard",
       "capabilities": [
         "Autonomy and artificial intelligence",
@@ -10417,8 +10559,9 @@
       "city": "Hampton",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Site operator or program information",
-      "contact_url": "https://www.nasa.gov/contact/",
+      "contact_text": "NASA Langley Crew Systems and Aviation Operations Branch",
+      "contact_url": "https://csaob.larc.nasa.gov/",
+      "current_activity": "NASA's current ROAM facility page identifies Langley's designated UAS range as supporting live small-UAS operations connected to remote-operations and autonomy research.",
       "latitude": 37.085639,
       "location_precision": "site",
       "longitude": -76.380667,
@@ -10427,6 +10570,7 @@
       ],
       "name": "NASA Langley UAS Test Range",
       "overview": "NASA-operated 100-acre small-UAS flight range supporting research flights and testing near the CERTAIN city environment. Public sources support its classification as a Virginia operating environment. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+      "partnership_opportunities": "Research and facility inquiries should use NASA Langley's published contact routes.",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
@@ -10448,6 +10592,14 @@
         {
           "title": "NASA Langley UAS Test Range public contact information",
           "url": "https://www.nasa.gov/contact/"
+        },
+        {
+          "title": "NASA Langley ROAM and designated UAS range operations",
+          "url": "https://csaob.larc.nasa.gov/roam/"
+        },
+        {
+          "title": "NASA Langley UAS Test Range public contact information",
+          "url": "https://csaob.larc.nasa.gov/"
         }
       ],
       "state": "VA",
@@ -10953,6 +11105,9 @@
       "website_url": "https://cnrma.cnic.navy.mil/Installations/WPNSTA-Yorktown/Contact-Us/"
     },
     {
+      "activity_last_verified_at": "2026-08-11",
+      "activity_source_url": "https://www.navair.navy.mil/news/Navy-opens-doors-first-small-unmanned-aircraft-systems-training-facility/Tue-08022022-0923",
+      "activity_status": "active",
       "address_line": "Joint Expeditionary Base Little Creek-Fort Story, 1815 Seabee Road",
       "capabilities": [
         "Operations, maintenance, and sustainment",
@@ -10960,9 +11115,10 @@
       ],
       "city": "Virginia Beach",
       "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Facility or operator public information",
-      "contact_url": "https://cnrma.cnic.navy.mil/Installations/JEB-Little-Creek-Fort-Story/Contact-Us/",
+      "contact_phone": "240-925-5305",
+      "contact_text": "NAVAIR public affairs",
+      "contact_url": "https://www.navair.navy.mil/contact-us",
+      "current_activity": "TALSA East is the Navy's dedicated entry-level small-UAS training and logistics facility, supporting operator qualification, system storage, supply, and maintenance at JEB Little Creek-Fort Story.",
       "latitude": 36.918239,
       "location_precision": "site",
       "longitude": -76.156529,
@@ -10972,6 +11128,7 @@
       ],
       "name": "Navy TALSA East Small UAS Training Facility",
       "overview": "Navy training and logistics facility providing entry-level small-UAS qualification, system storage, supply, and maintenance support. Public sources support its classification as a Virginia facility. Documented capabilities include Operations, maintenance, and sustainment and Systems engineering and integration. Relevant mission areas include Training and experimentation and Force protection and installation security.",
+      "partnership_opportunities": "Official inquiries can be directed through NAVAIR or the host installation's public contact channels.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -10988,6 +11145,10 @@
         {
           "title": "Joint Expeditionary Base Little Creek-Fort Story contact information",
           "url": "https://cnrma.cnic.navy.mil/Installations/JEB-Little-Creek-Fort-Story/Contact-Us/"
+        },
+        {
+          "title": "Navy TALSA East Small UAS Training Facility public contact information",
+          "url": "https://www.navair.navy.mil/contact-us"
         }
       ],
       "state": "VA",
@@ -11326,7 +11487,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://newportnewsva.com/manufacturing-growth/",
       "activity_status": "developing",
       "address_line": "Newport News-Williamsburg International Airport, 900 Bland Boulevard",
@@ -11341,7 +11502,7 @@
       "contact_text": "Facility or operator public information",
       "contact_url": "https://newportnewsva.com/contact/",
       "current_activity": "Newport News and the Peninsula Airport Commission are advancing site-readiness work for aviation and aerospace development around the airport.",
-      "development_last_verified_at": "2026-08-07",
+      "development_last_verified_at": "2026-08-11",
       "development_notes": "The reviewed EDA page describes 280 available acres at AirCommerce Park West and 50 additional undeveloped acres at AirCommerce Park East. Only the 280 acres explicitly described as available are stored in the acreage field.",
       "development_source_url": "https://newportnewsva.com/manufacturing-growth/",
       "development_status": "in-development",
@@ -11393,6 +11554,9 @@
       "website_url": "https://newportnewsva.com/business-neighborhoods/patrick-henry-corridor/"
     },
     {
+      "activity_last_verified_at": "2026-08-11",
+      "activity_source_url": "https://www.nnva.gov/3269/Drones-as-First-Responders",
+      "activity_status": "active",
       "address_line": "9710 Jefferson Avenue",
       "capabilities": [
         "Operations, maintenance, and sustainment",
@@ -11400,9 +11564,10 @@
       ],
       "city": "Newport News",
       "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Program or parent-organization inquiries",
-      "contact_url": "https://www.nnva.gov/directory.aspx",
+      "contact_phone": "757-926-4705",
+      "contact_text": "Newport News Police Drone Unit",
+      "contact_url": "https://www.nnva.gov/2394/Drone-Unit",
+      "current_activity": "Newport News is launching an incident-based DFR program integrating police, fire, and EMS response, with logged flights, defined policies, and a public activity dashboard.",
       "latitude": 37.029425,
       "location_precision": "site",
       "longitude": -76.450613,
@@ -11413,6 +11578,7 @@
       ],
       "name": "Newport News Drones as First Responders Program",
       "overview": "City incident-based DFR program integrating police, fire, and EMS with logged flights and public oversight controls. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+      "partnership_opportunities": "Program questions can be directed to the Newport News Police Drone Unit.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -11496,6 +11662,9 @@
       "website_url": "https://www.portofvirginia.com/gateway/capabilities/"
     },
     {
+      "activity_last_verified_at": "2026-08-11",
+      "activity_source_url": "https://www.nnva.gov/2394/Drone-Unit",
+      "activity_status": "active",
       "address_line": "9710 Jefferson Avenue",
       "capabilities": [
         "Operations, maintenance, and sustainment",
@@ -11503,9 +11672,10 @@
       ],
       "city": "Newport News",
       "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Program or parent-organization inquiries",
-      "contact_url": "https://www.nnva.gov/directory.aspx",
+      "contact_phone": "757-926-4705",
+      "contact_text": "Newport News Police Drone Unit",
+      "contact_url": "https://www.nnva.gov/2394/Drone-Unit",
+      "current_activity": "The joint Police and Fire Drone Unit supports fire management, search and rescue, disaster and hazmat response, tactical deployments, major events, and scene documentation.",
       "latitude": 37.029425,
       "location_precision": "site",
       "longitude": -76.450613,
@@ -11516,6 +11686,7 @@
       ],
       "name": "Newport News Police and Fire Drone Unit",
       "overview": "Joint public-safety drone unit supporting police, fire, search, assessment, and emergency operations. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+      "partnership_opportunities": "Mutual-aid and program questions can be directed to the Newport News Police Drone Unit.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -12329,6 +12500,65 @@
       "website_url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Dam-Neck/"
     },
     {
+      "activity_last_verified_at": "2026-08-11",
+      "activity_source_url": "https://occoquanva.gov/wp-content/uploads/2026/01/TC-Agenda-Packet-FULL-1-6-2026.pdf",
+      "activity_status": "active",
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Occoquan",
+      "contact_email": "policechief@occoquanva.gov",
+      "contact_phone": "571-492-7274",
+      "contact_text": "Occoquan Police Department",
+      "contact_url": "https://occoquanva.gov/public-safety/",
+      "current_activity": "Occoquan maintains a police-led public-safety drone capability and accepted a CY 2026 award to replace the existing aircraft with a compliant U.S.-manufactured system.",
+      "latitude": 38.681,
+      "location_precision": "locality",
+      "longitude": -77.26,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Occoquan Police Department Public Safety Drone Program",
+      "overview": "Police-led public-safety drone capability supported by municipal purchases, training, and a CY 2026 replacement grant. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+      "partnership_opportunities": "Public-safety and emergency-management questions can be directed to the Occoquan Police Department.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Northern Virginia",
+      "short_description": "Police-led public-safety drone capability supported by municipal purchases, training, and a CY 2026 replacement grant.",
+      "sources": [
+        {
+          "title": "Occoquan 2026 public-safety drone replacement grant",
+          "url": "https://occoquanva.gov/wp-content/uploads/2026/01/TC-Agenda-Packet-FULL-1-6-2026.pdf"
+        },
+        {
+          "title": "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
+          "url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+        },
+        {
+          "title": "DCJS Unmanned Aircraft Trade and Replace Program",
+          "url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+        },
+        {
+          "title": "Occoquan Police Department contact information",
+          "url": "https://occoquanva.gov/public-safety/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://occoquanva.gov/wp-content/uploads/2026/01/TC-Agenda-Packet-FULL-1-6-2026.pdf"
+    },
+    {
       "address_line": "5115 Hampton Boulevard",
       "capabilities": [
         "Operations, maintenance, and sustainment",
@@ -12375,7 +12605,7 @@
       "website_url": "https://www.odu.edu/iacs"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://www.odu.edu/iacs",
       "activity_status": "active",
       "address_line": "5115 Hampton Boulevard",
@@ -12435,7 +12665,7 @@
       "website_url": "https://www.odu.edu/iacs"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://www.odu.edu/article/beyond-boats-and-submarines-odu-city-of-norfolk-celebrate-the-opening-of-the-maritime",
       "activity_status": "active",
       "address_line": "1311 Bayville Street",
@@ -12450,7 +12680,7 @@
       "contact_text": "ODU National Security Institute research and partnership inquiries",
       "contact_url": "https://www.odu.edu/national-security",
       "current_activity": "ODU and the City of Norfolk operate the Willoughby Bay site for maritime autonomy research and testing with direct access to regional waterways.",
-      "development_last_verified_at": "2026-08-07",
+      "development_last_verified_at": "2026-08-11",
       "development_notes": "The site opened in 2025 as an operating research and test facility. Published materials do not describe generally available land or commercial space.",
       "development_source_url": "https://www.odu.edu/sites/default/files/2026/documents/maritime-conference.pdf",
       "development_status": "operational",
@@ -13465,6 +13695,65 @@
       ],
       "unmanned_systems_relevance": "Radford Army Ammunition Plant is included as documented federal or defense ecosystem presence in Radford. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.jmc.army.mil/Radford/About.aspx"
+    },
+    {
+      "activity_last_verified_at": "2026-08-11",
+      "activity_source_url": "https://www.radfordva.gov/AgendaCenter/ViewFile/Minutes/_01272026-805",
+      "activity_status": "active",
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Radford",
+      "contact_email": "",
+      "contact_phone": "540-731-3624",
+      "contact_text": "Radford City Police Department",
+      "contact_url": "https://www.radfordva.gov/Directory.aspx?did=16",
+      "current_activity": "Radford Police is replacing its existing DJI Mavic 3T with a Skydio X10 and accessories through the CY 2026 DCJS program.",
+      "latitude": 37.132,
+      "location_precision": "locality",
+      "longitude": -80.576,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Radford City Police Department Drone Program",
+      "overview": "Police drone program replacing an existing DJI Mavic 3T with a compliant Skydio X10 and accessories. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+      "partnership_opportunities": "Program and public-safety coordination questions can be directed to Radford City Police.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "New River Valley",
+      "short_description": "Police drone program replacing an existing DJI Mavic 3T with a compliant Skydio X10 and accessories.",
+      "sources": [
+        {
+          "title": "Radford City Police Department 2026 drone replacement grant",
+          "url": "https://www.radfordva.gov/AgendaCenter/ViewFile/Minutes/_01272026-805"
+        },
+        {
+          "title": "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
+          "url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+        },
+        {
+          "title": "DCJS Unmanned Aircraft Trade and Replace Program",
+          "url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+        },
+        {
+          "title": "Radford City Police Department contact information",
+          "url": "https://www.radfordva.gov/Directory.aspx?did=16"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.radfordva.gov/AgendaCenter/ViewFile/Minutes/_01272026-805"
     },
     {
       "address_line": "801 East Main St.",
@@ -14645,7 +14934,7 @@
       "website_url": "https://www.su.edu/"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://cspdc.org/2023/11/27/shd-aviation-tech-park-holds-ribbon-cutting/",
       "activity_status": "developing",
       "address_line": "77 Aviation Circle",
@@ -14660,7 +14949,7 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://cspdc.org/2023/11/27/shd-aviation-tech-park-holds-ribbon-cutting/",
       "current_activity": "Two 14,000-square-foot corporate hangars are complete, and publicly funded utility work supports later phases of the Aviation Technology Park.",
-      "development_last_verified_at": "2026-08-07",
+      "development_last_verified_at": "2026-08-11",
       "development_notes": "The 58-acre park has two completed hangars. Its master plan identifies capacity for up to five additional hangars; this figure is a published site total, not a claim that all acreage is currently available.",
       "development_source_url": "https://cspdc.org/2023/06/07/shenandoah-valley-aviation-technology-park-hangars-near-completion/",
       "development_status": "in-development",
@@ -15194,7 +15483,7 @@
       "website_url": "https://www.staffordsheriff.com/content/about/fieldoperations.cfm"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://doav.virginia.gov/advanced_air_mobility/",
       "activity_status": "pilot",
       "address_line": "95 Aviation Way",
@@ -15859,52 +16148,6 @@
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
       ],
-      "city": "Ashland",
-      "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
-      "latitude": 37.759,
-      "location_precision": "locality",
-      "longitude": -77.48,
-      "missions": [
-        "Public safety and emergency response",
-        "Search and rescue",
-        "Surveying and mapping"
-      ],
-      "name": "Town of Ashland First Responder UAS Capability",
-      "overview": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in Town of Ashland; the public award record does not identify the operating department. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
-      "platform_domains": [
-        "Unmanned aircraft systems"
-      ],
-      "provenance": "curated-public-source",
-      "record_type": "program",
-      "region": "Greater Richmond",
-      "short_description": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in Town of Ashland; the public award record does not identify the operating department.",
-      "sources": [
-        {
-          "title": "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
-          "url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
-        },
-        {
-          "title": "DCJS Unmanned Aircraft Trade and Replace Program",
-          "url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Programs and initiatives",
-        "Multi-domain missions",
-        "Core unmanned-systems asset"
-      ],
-      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
-    },
-    {
-      "capabilities": [
-        "Operations, maintenance, and sustainment",
-        "Perception, sensing, and sensor fusion"
-      ],
       "city": "Chilhowie",
       "contact_email": "",
       "contact_phone": "",
@@ -15997,52 +16240,6 @@
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
       ],
-      "city": "Haymarket",
-      "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
-      "latitude": 38.812,
-      "location_precision": "locality",
-      "longitude": -77.636,
-      "missions": [
-        "Public safety and emergency response",
-        "Search and rescue",
-        "Surveying and mapping"
-      ],
-      "name": "Town of Haymarket First Responder UAS Capability",
-      "overview": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in Town of Haymarket; the public award record does not identify the operating department. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
-      "platform_domains": [
-        "Unmanned aircraft systems"
-      ],
-      "provenance": "curated-public-source",
-      "record_type": "program",
-      "region": "Northern Virginia",
-      "short_description": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in Town of Haymarket; the public award record does not identify the operating department.",
-      "sources": [
-        {
-          "title": "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
-          "url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
-        },
-        {
-          "title": "DCJS Unmanned Aircraft Trade and Replace Program",
-          "url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Programs and initiatives",
-        "Multi-domain missions",
-        "Core unmanned-systems asset"
-      ],
-      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
-    },
-    {
-      "capabilities": [
-        "Operations, maintenance, and sustainment",
-        "Perception, sensing, and sensor fusion"
-      ],
       "city": "New Market",
       "contact_email": "",
       "contact_phone": "",
@@ -16065,52 +16262,6 @@
       "record_type": "program",
       "region": "Shenandoah Valley",
       "short_description": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in Town of New Market; the public award record does not identify the operating department.",
-      "sources": [
-        {
-          "title": "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
-          "url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
-        },
-        {
-          "title": "DCJS Unmanned Aircraft Trade and Replace Program",
-          "url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Programs and initiatives",
-        "Multi-domain missions",
-        "Core unmanned-systems asset"
-      ],
-      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
-    },
-    {
-      "capabilities": [
-        "Operations, maintenance, and sustainment",
-        "Perception, sensing, and sensor fusion"
-      ],
-      "city": "Occoquan",
-      "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
-      "latitude": 38.681,
-      "location_precision": "locality",
-      "longitude": -77.26,
-      "missions": [
-        "Public safety and emergency response",
-        "Search and rescue",
-        "Surveying and mapping"
-      ],
-      "name": "Town of Occoquan First Responder UAS Capability",
-      "overview": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in Town of Occoquan; the public award record does not identify the operating department. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
-      "platform_domains": [
-        "Unmanned aircraft systems"
-      ],
-      "provenance": "curated-public-source",
-      "record_type": "program",
-      "region": "Northern Virginia",
-      "short_description": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in Town of Occoquan; the public award record does not identify the operating department.",
       "sources": [
         {
           "title": "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
@@ -17207,6 +17358,9 @@
       "website_url": "https://arvl.lab.vcu.edu/"
     },
     {
+      "activity_last_verified_at": "2026-08-11",
+      "activity_source_url": "https://www.vims.edu/people/patterson_mr/",
+      "activity_status": "active",
       "address_line": "1375 Greate Road",
       "capabilities": [
         "Autonomy and artificial intelligence",
@@ -17215,9 +17369,10 @@
       ],
       "city": "Gloucester Point",
       "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Organization public information and inquiries",
-      "contact_url": "https://www.vims.edu/contactus/index.php",
+      "contact_phone": "804-684-7374",
+      "contact_text": "Mark R. Patterson, Director, Autonomous Systems Laboratory",
+      "contact_url": "https://www.vims.edu/people/patterson_mr/",
+      "current_activity": "The laboratory is developing autonomous underwater vehicles, persistent robotic swarms, bio-inspired autonomy, coordinated swarm software, and counter-misuse methods for unmanned systems.",
       "latitude": 37.249323,
       "location_precision": "site",
       "longitude": -76.5,
@@ -17227,6 +17382,7 @@
       ],
       "name": "VIMS Autonomous Systems Laboratory",
       "overview": "Laboratory designing and building free-swimming autonomous underwater vehicles for oceanographic sensing and field research. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence, Navigation and positioning, and Perception, sensing, and sensor fusion. Relevant mission areas include Maritime domain awareness and Environmental monitoring.",
+      "partnership_opportunities": "Research and collaboration inquiries can be directed to laboratory director Mark R. Patterson.",
       "platform_domains": [
         "Maritime surface systems",
         "Undersea systems"
@@ -17406,7 +17562,7 @@
       "website_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://doav.virginia.gov/advanced_air_mobility/",
       "activity_status": "active",
       "address_line": "5702 Gulfstream Road",
@@ -17722,7 +17878,7 @@
       "website_url": "https://dwr.virginia.gov/wp-content/uploads/media/Virginia-Conservation-Police-Annual-Report-2024.pdf"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://doav.virginia.gov/advanced_air_mobility/",
       "activity_status": "active",
       "address_line": "5702 Gulfstream Road",
@@ -17856,7 +18012,7 @@
       "website_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://www.vedp.org/industry/unmanned-systems",
       "activity_status": "active",
       "address_line": "901 East Cary Street",
@@ -17954,7 +18110,7 @@
       "website_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://doav.virginia.gov/aviation_programs_resources/",
       "activity_status": "active",
       "address_line": "",
@@ -18812,15 +18968,19 @@
       "website_url": "https://vsgc.odu.edu/geoted-uas/"
     },
     {
+      "activity_last_verified_at": "2026-08-11",
+      "activity_source_url": "https://www.vaspace.org/our-facilities",
+      "activity_status": "active",
       "address_line": "101 West Main Street, Suite 602",
       "capabilities": [
         "Safety, policy, regulatory, and airspace integration"
       ],
       "city": "Norfolk",
-      "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Organization public information and inquiries",
+      "contact_email": "external.relations@vaspace.org",
+      "contact_phone": "757-440-4020",
+      "contact_text": "Virginia Spaceport Authority external relations",
       "contact_url": "https://www.vaspace.org/contact-us",
+      "current_activity": "The authority operates the Mid-Atlantic Regional Spaceport and MARS UAS Airfield, providing launch, payload, integration, airfield, and mission-support capabilities from Wallops and Norfolk.",
       "latitude": 36.84614,
       "location_precision": "site",
       "longitude": -76.29332,
@@ -18829,6 +18989,7 @@
       ],
       "name": "Virginia Spaceport Authority",
       "overview": "State authority that owns and operates MARS and its dedicated UAS airfield, restricted-airspace access, runway, VTOL pad, and hangar. Public sources support its classification as a Virginia organization. Documented capabilities include Safety, policy, regulatory, and airspace integration. Relevant mission areas include Training and experimentation.",
+      "partnership_opportunities": "Commercial and government users can contact external relations regarding launch and UAS mission support.",
       "platform_domains": [
         "Cross-domain autonomy"
       ],
@@ -19088,7 +19249,7 @@
       "website_url": "https://www.ise.vt.edu/research/labs/advanced-control-systems-lab.html"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://archive.vtmag.vt.edu/winter10/feature1.html",
       "activity_status": "historical",
       "capabilities": [
@@ -19267,7 +19428,7 @@
       "website_url": "https://news.vt.edu/articles/2025/04/research-counteruascenter.html"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
       "activity_status": "active",
       "address_line": "2143 Oak Lane",
@@ -19281,7 +19442,7 @@
       "contact_text": "Virginia Tech Drone Park scheduling and facility inquiries",
       "contact_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
       "current_activity": "Virginia Tech operates the netted Drone Park for instruction, research, and controlled flight work, with adjacent laboratory and classroom support.",
-      "development_last_verified_at": "2026-08-07",
+      "development_last_verified_at": "2026-08-11",
       "development_notes": "The published facility is an operating research and teaching site. No claim is made that land or facility space is generally available for development.",
       "development_source_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
       "development_status": "operational",
@@ -19957,7 +20118,7 @@
       "website_url": "https://www.vul.edu/"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/",
       "activity_status": "active",
       "address_line": "313 East Broad Street",
@@ -20268,7 +20429,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
-      "activity_last_verified_at": "2026-08-07",
+      "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://www.accomack.gov/614/Background-Timeline",
       "activity_status": "developing",
       "address_line": "Aerospace Gateway at Mill Dam Road",
@@ -20282,7 +20443,7 @@
       "contact_text": "Accomack County economic-development and site inquiries",
       "contact_url": "https://www.accomack.gov/614/Background-Timeline",
       "current_activity": "Accomack County markets the park for private aerospace, UAS, launch, research, and education development adjoining the Wallops federal and commercial space cluster.",
-      "development_last_verified_at": "2026-08-07",
+      "development_last_verified_at": "2026-08-11",
       "development_notes": "The county describes the park as ready for private development. No acreage is reported here because the reviewed page does not identify a current available-acre figure.",
       "development_source_url": "https://www.accomack.gov/614/Background-Timeline",
       "development_status": "development-ready",
@@ -20770,15 +20931,19 @@
       "website_url": "https://wing.com/news/wing-and-doordash-expand-drone-delivery"
     },
     {
+      "activity_last_verified_at": "2026-08-11",
+      "activity_source_url": "https://www.wisecounty.org/AgendaCenter/ViewFile/Agenda/_02122026-671",
+      "activity_status": "active",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
       ],
       "city": "Wise",
       "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
+      "contact_phone": "276-328-3566",
+      "contact_text": "Wise County Sheriff's Office",
+      "contact_url": "https://wisecounty.org/211/Sheriff---WCSO",
+      "current_activity": "Wise County's 2026 grant record identifies the Sheriff's Office as the grantee and states that the award will purchase a drone.",
       "latitude": 36.975,
       "location_precision": "locality",
       "longitude": -82.576,
@@ -20787,16 +20952,21 @@
         "Search and rescue",
         "Surveying and mapping"
       ],
-      "name": "Wise County First Responder UAS Capability",
-      "overview": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in Wise County; the public award record does not identify the operating department. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+      "name": "Wise County Sheriff's Office Drone Program",
+      "overview": "Sheriff's Office drone capability supported by a CY 2026 DCJS unmanned-aircraft grant. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+      "partnership_opportunities": "Program and mutual-aid questions can be directed to the Wise County Sheriff's Office.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Southwest Virginia",
-      "short_description": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in Wise County; the public award record does not identify the operating department.",
+      "short_description": "Sheriff's Office drone capability supported by a CY 2026 DCJS unmanned-aircraft grant.",
       "sources": [
+        {
+          "title": "Wise County Sheriff's Office 2026 unmanned-aircraft grant",
+          "url": "https://www.wisecounty.org/AgendaCenter/ViewFile/Agenda/_02122026-671"
+        },
         {
           "title": "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
           "url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
@@ -20804,6 +20974,10 @@
         {
           "title": "DCJS Unmanned Aircraft Trade and Replace Program",
           "url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+        },
+        {
+          "title": "Wise County Sheriff's Office contact information",
+          "url": "https://wisecounty.org/211/Sheriff---WCSO"
         }
       ],
       "state": "VA",
@@ -20813,18 +20987,22 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      "website_url": "https://www.wisecounty.org/AgendaCenter/ViewFile/Agenda/_02122026-671"
     },
     {
+      "activity_last_verified_at": "2026-08-11",
+      "activity_source_url": "https://www.wytheco.org/AgendaCenter/ViewFile/Agenda/_01272026-119",
+      "activity_status": "active",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
       ],
       "city": "Wytheville",
       "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
+      "contact_phone": "276-223-6000",
+      "contact_text": "Wythe County Sheriff's Office",
+      "contact_url": "https://www.wytheco.org/170/Sheriff",
+      "current_activity": "Wythe County's January 2026 minutes identify the Sheriff's Office as the recipient of the CY 2026 unmanned-aircraft replacement award.",
       "latitude": 36.949,
       "location_precision": "locality",
       "longitude": -81.084,
@@ -20833,16 +21011,21 @@
         "Search and rescue",
         "Surveying and mapping"
       ],
-      "name": "Wythe County First Responder UAS Capability",
-      "overview": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in Wythe County; the public award record does not identify the operating department. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+      "name": "Wythe County Sheriff's Office Drone Program",
+      "overview": "Sheriff's Office unmanned-aircraft capability supported by a CY 2026 DCJS replacement grant. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+      "partnership_opportunities": "Program and mutual-aid questions can be directed to the Wythe County Sheriff's Office.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Southwest Virginia",
-      "short_description": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in Wythe County; the public award record does not identify the operating department.",
+      "short_description": "Sheriff's Office unmanned-aircraft capability supported by a CY 2026 DCJS replacement grant.",
       "sources": [
+        {
+          "title": "Wythe County Sheriff's Office 2026 unmanned-aircraft grant",
+          "url": "https://www.wytheco.org/AgendaCenter/ViewFile/Agenda/_01272026-119"
+        },
         {
           "title": "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
           "url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
@@ -20850,6 +21033,10 @@
         {
           "title": "DCJS Unmanned Aircraft Trade and Replace Program",
           "url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+        },
+        {
+          "title": "Wythe County Sheriff's Office contact information",
+          "url": "https://www.wytheco.org/170/Sheriff"
         }
       ],
       "state": "VA",
@@ -20859,7 +21046,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      "website_url": "https://www.wytheco.org/AgendaCenter/ViewFile/Agenda/_01272026-119"
     },
     {
       "address_line": "1000 E Main Street",
@@ -20950,6 +21137,9 @@
       "website_url": "https://xelevateus.com/leesburg-virginia/"
     },
     {
+      "activity_last_verified_at": "2026-08-11",
+      "activity_source_url": "https://www.yorkcounty.gov/1874/The-ROVER-Team",
+      "activity_status": "active",
       "address_line": "224 Ballard Street",
       "capabilities": [
         "Operations, maintenance, and sustainment",
@@ -20957,9 +21147,10 @@
       ],
       "city": "Yorktown",
       "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.yorkcounty.gov/1874/The-ROVER-Team",
+      "contact_phone": "757-890-3600",
+      "contact_text": "York County Fire and Life Safety",
+      "contact_url": "https://www.yorkcounty.gov/99/Fire-Life-Safety",
+      "current_activity": "The joint York County Fire and Life Safety and York-Poquoson Sheriff's Office team operates multiple aircraft for missing-person, hazmat, tactical, severe-weather, and other public-safety missions.",
       "latitude": 37.235331,
       "location_precision": "site",
       "longitude": -76.509799,
@@ -20970,6 +21161,7 @@
       ],
       "name": "York County ROVER Team",
       "overview": "Joint fire and sheriff sUAS team supporting search, hazmat, tactical, storm, and emergency missions. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+      "partnership_opportunities": "Public-safety and mutual-aid inquiries can be directed through York County Fire and Life Safety.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -20982,6 +21174,10 @@
         {
           "title": "York County ROVER Team",
           "url": "https://www.yorkcounty.gov/1874/The-ROVER-Team"
+        },
+        {
+          "title": "York County ROVER Team public contact information",
+          "url": "https://www.yorkcounty.gov/99/Fire-Life-Safety"
         }
       ],
       "state": "VA",
