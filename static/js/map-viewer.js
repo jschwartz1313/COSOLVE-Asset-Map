@@ -11,7 +11,7 @@ import {
   featuresWithinRadius,
   summarizeRegion,
 } from "./map-analysis.js?v=20260730-2";
-import { createMap } from "./map.js?v=20260806-1";
+import { createMap } from "./map.js?v=20260812-1";
 import {
   analysisStateFromParams,
   filterParamsFromMapUrl,
@@ -19,7 +19,7 @@ import {
   paramsWithMapState,
   serializePolygonAnalysis,
   serializeRectangleAnalysis,
-} from "./map-state.js?v=20260806-1";
+} from "./map-state.js?v=20260812-1";
 import { renderResults, selectResult } from "./results.js?v=20260727-2";
 import { hydrateForm, paramsFromForm, updateUrl } from "./state.js?v=20260717";
 
@@ -45,12 +45,22 @@ const countyLayerToggle = document.querySelector("#county-layer-toggle");
 const regionLayerToggle = document.querySelector("#region-layer-toggle");
 const mpzLayerToggle = document.querySelector("#mpz-layer-toggle");
 const heliportLayerToggle = document.querySelector("#heliport-layer-toggle");
+const controlledAirspaceToggle = document.querySelector("#controlled-airspace-toggle");
+const uasFacilityMapToggle = document.querySelector("#uas-facility-map-toggle");
+const flightConstraintsToggle = document.querySelector("#flight-constraints-toggle");
+const uasTestSitesToggle = document.querySelector("#uas-test-sites-toggle");
 const stateBoundaryToggle = document.querySelector("#state-boundary-toggle");
 const verificationLayerToggle = document.querySelector("#verification-layer-toggle");
 const precisionLayerToggle = document.querySelector("#precision-layer-toggle");
 const basemapInputs = [...document.querySelectorAll('input[name="map-basemap"]')];
 const verificationLegend = document.querySelector("[data-verification-legend]");
 const precisionLegend = document.querySelector("[data-precision-legend]");
+const controlledAirspaceLegend = document.querySelector(
+  "[data-controlled-airspace-legend]",
+);
+const uasFacilityMapLegend = document.querySelector("[data-uas-facility-map-legend]");
+const flightConstraintsLegend = document.querySelector("[data-flight-constraints-legend]");
+const uasTestSitesLegend = document.querySelector("[data-uas-test-sites-legend]");
 const nearbyRadius = document.querySelector("#nearby-radius");
 const nearbySearchButton = document.querySelector("#nearby-search");
 const selectAreaButton = document.querySelector("#select-area");
@@ -94,6 +104,10 @@ function applyLayerToggleState(state) {
   mpzLayerToggle.checked = layers.includes("mpz");
   countyLayerToggle.checked = layers.includes("counties");
   heliportLayerToggle.checked = layers.includes("heliports");
+  controlledAirspaceToggle.checked = layers.includes("controlled-airspace");
+  uasFacilityMapToggle.checked = layers.includes("uas-facility-map");
+  flightConstraintsToggle.checked = layers.includes("flight-constraints");
+  uasTestSitesToggle.checked = layers.includes("uas-test-sites");
   verificationLayerToggle.checked = layers.includes("verification");
   precisionLayerToggle.checked = layers.includes("precision");
   const basemap = state?.basemap || "street";
@@ -135,6 +149,10 @@ function currentLayers() {
   if (mpzLayerToggle.checked) layers.push("mpz");
   if (countyLayerToggle.checked) layers.push("counties");
   if (heliportLayerToggle.checked) layers.push("heliports");
+  if (controlledAirspaceToggle.checked) layers.push("controlled-airspace");
+  if (uasFacilityMapToggle.checked) layers.push("uas-facility-map");
+  if (flightConstraintsToggle.checked) layers.push("flight-constraints");
+  if (uasTestSitesToggle.checked) layers.push("uas-test-sites");
   if (verificationLayerToggle.checked) layers.push("verification");
   if (precisionLayerToggle.checked) layers.push("precision");
   return layers;
@@ -500,6 +518,51 @@ async function updateHeliportLayer() {
 
 heliportLayerToggle.addEventListener("change", updateHeliportLayer);
 
+function bindReferenceLayer({ toggle, legend, setVisible, failureMessage }) {
+  async function updateLayer() {
+    toggle.disabled = true;
+    try {
+      await setVisible(toggle.checked);
+      legend.hidden = !toggle.checked;
+    } catch (error) {
+      toggle.checked = false;
+      legend.hidden = true;
+      showStatus(failureMessage);
+      console.error(error);
+    } finally {
+      toggle.disabled = false;
+      updateViewActions();
+    }
+  }
+  toggle.addEventListener("change", updateLayer);
+  return updateLayer;
+}
+
+const updateControlledAirspaceLayer = bindReferenceLayer({
+  toggle: controlledAirspaceToggle,
+  legend: controlledAirspaceLegend,
+  setVisible: (visible) => mapController.setControlledAirspaceVisible(visible),
+  failureMessage: "FAA surface controlled airspace could not be loaded.",
+});
+const updateUasFacilityMapLayer = bindReferenceLayer({
+  toggle: uasFacilityMapToggle,
+  legend: uasFacilityMapLegend,
+  setVisible: (visible) => mapController.setUasFacilityMapVisible(visible),
+  failureMessage: "FAA authorization-ceiling data could not be loaded.",
+});
+const updateFlightConstraintsLayer = bindReferenceLayer({
+  toggle: flightConstraintsToggle,
+  legend: flightConstraintsLegend,
+  setVisible: (visible) => mapController.setFlightConstraintsVisible(visible),
+  failureMessage: "FAA flight-constraint data could not be loaded.",
+});
+const updateUasTestSitesLayer = bindReferenceLayer({
+  toggle: uasTestSitesToggle,
+  legend: uasTestSitesLegend,
+  setVisible: (visible) => mapController.setUasTestSitesVisible(visible),
+  failureMessage: "UAS test-facility data could not be loaded.",
+});
+
 async function copyCurrentView() {
   const url = currentMapUrl();
   try {
@@ -644,6 +707,10 @@ async function syncLayerVisibility() {
     updateMpzLayer(),
     updateCountyLayer(),
     updateHeliportLayer(),
+    updateControlledAirspaceLayer(),
+    updateUasFacilityMapLayer(),
+    updateFlightConstraintsLayer(),
+    updateUasTestSitesLayer(),
   ]);
 }
 

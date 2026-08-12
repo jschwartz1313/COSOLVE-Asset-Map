@@ -1,4 +1,4 @@
-const MAP_LAYER_STATE_VERSION = "4";
+const MAP_LAYER_STATE_VERSION = "5";
 const MAP_STATE_KEYS = [
   "map_lat",
   "map_lon",
@@ -15,6 +15,10 @@ export const MAP_LAYER_ORDER = [
   "mpz",
   "counties",
   "heliports",
+  "controlled-airspace",
+  "uas-facility-map",
+  "flight-constraints",
+  "uas-test-sites",
   "verification",
   "precision",
 ];

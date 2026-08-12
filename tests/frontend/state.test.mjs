@@ -73,7 +73,17 @@ test("saved map state preserves filters, center, zoom, and layers", () => {
       latitude: 36.912345,
       longitude: -76.301234,
       zoom: 11,
-      layers: ["assets", "state", "mpz", "counties", "heliports"],
+      layers: [
+        "assets",
+        "state",
+        "mpz",
+        "counties",
+        "heliports",
+        "controlled-airspace",
+        "uas-facility-map",
+        "flight-constraints",
+        "uas-test-sites",
+      ],
       basemap: "light",
     },
   );
@@ -87,11 +97,21 @@ test("saved map state preserves filters, center, zoom, and layers", () => {
     latitude: 36.91235,
     longitude: -76.30123,
     zoom: 11,
-    layers: ["assets", "state", "mpz", "counties", "heliports"],
+    layers: [
+      "assets",
+      "state",
+      "mpz",
+      "counties",
+      "heliports",
+      "controlled-airspace",
+      "uas-facility-map",
+      "flight-constraints",
+      "uas-test-sites",
+    ],
     basemap: "light",
     hasValidCenter: true,
   });
-  assert.equal(params.get("map_layers_v"), "4");
+  assert.equal(params.get("map_layers_v"), "5");
 });
 
 test("legacy saved map layers retain asset points", () => {

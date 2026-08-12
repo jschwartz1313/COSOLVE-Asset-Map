@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260806-1">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260812-1">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
@@ -19,6 +19,14 @@
       data-regions-url="{% static 'data/virginia-regions.geojson' %}?v=20260728"
       data-mpz-candidates-url="{% static 'data/virginia-maritime-prosperity-candidates.geojson' %}?v=20260729"
       data-heliports-url="{% static 'data/virginia-heliports.geojson' %}?v=20260806"
+      data-controlled-airspace-url="{% static 'data/virginia-surface-controlled-airspace.geojson' %}?v=20260812"
+      data-uas-facility-map-url="{% static 'data/virginia-uas-facility-map.geojson' %}?v=20260812"
+      data-flight-constraints-url="{% static 'data/virginia-flight-constraints.geojson' %}?v=20260812"
+      data-uas-test-sites-url="{% static 'data/virginia-uas-test-sites.geojson' %}?v=20260812"
+      data-faa-uasfm-info-url="https://www.faa.gov/uas/getting_started/laanc"
+      data-faa-airspace-info-url="https://www.faa.gov/uas/getting_started/where_can_i_fly/airspace_restrictions/flying_near_airports"
+      data-faa-data-info-url="https://udds-faa.opendata.arcgis.com/"
+      data-faa-security-info-url="https://faa.maps.arcgis.com/apps/webappviewer/index.html?id=9c2e4406710048e19806ebf6a06754ad"
       data-state-boundary-url="{% static 'data/virginia-state-boundary.geojson' %}?v=2025"
       data-icon-base-url="{% static 'img/icons/legend/' %}">
   <aside class="filters-panel" id="asset-filters-panel" aria-label="Asset filters">
@@ -52,6 +60,8 @@
         <p><strong>Potential MPZ tracts:</strong> U.S. Census Bureau geography cross-referenced with public information from MARAD, the Port of Virginia, and the U.S. Navy. These are planning candidates, not federal designations.</p>
         <p><strong>Asset points:</strong> Public institutional and government sources listed on each asset profile. Locations may be exact, approximate, or generalized.</p>
         <p><strong>Heliports:</strong> FAA Airports Feature Service. The optional layer shows FAA-recorded operational private-use heliports for planning reference only. Inclusion does not imply public access, landing permission, operational availability, or flight authorization.</p>
+        <p><strong>Drone airspace:</strong> FAA UAS Facility Map, Class Airspace, Special Use Airspace, and National Security UAS Flight Restrictions feature services, retrieved August 12, 2026. These static layers do not replace current FAA authorization, NOTAM, TFR, or chart review.</p>
+        <p><strong>UAS test facilities:</strong> Published specifications from the Virginia Spaceport Authority, NASA Langley Research Center, and Virginia Tech. Locations and specifications are planning references; access and each proposed operation require facility and regulatory approval.</p>
       </div>
     </details>
     <section class="print-analysis-report" aria-label="Printable asset register">
@@ -110,6 +120,12 @@
             <label title="Show planning-candidate census tracts for the proposed federal Maritime Prosperity Zone program"><input id="mpz-layer-toggle" type="checkbox"><span>Potential MPZ tracts</span></label>
             <label title="Show Virginia county and independent-city boundaries"><input id="county-layer-toggle" type="checkbox"><span>County boundaries</span></label>
             <label title="Show FAA-recorded operational private-use heliports for reference"><input id="heliport-layer-toggle" type="checkbox"><span>FAA heliports</span></label>
+            <strong>Drone airspace</strong>
+            <label title="Show FAA Class B, C, D, and surface Class E airspace"><input id="controlled-airspace-toggle" type="checkbox"><span>Surface controlled airspace</span></label>
+            <label title="Show FAA grid altitudes used to evaluate Part 107 airspace authorization requests"><input id="uas-facility-map-toggle" type="checkbox"><span>FAA authorization ceilings</span></label>
+            <label title="Show FAA national-security UAS restrictions and special-use airspace"><input id="flight-constraints-toggle" type="checkbox"><span>Flight constraints</span></label>
+            <strong>Test infrastructure</strong>
+            <label title="Show Virginia UAS test facilities with published dimensions and operating constraints"><input id="uas-test-sites-toggle" type="checkbox"><span>UAS test facilities</span></label>
             <strong>Point analysis</strong>
             <label title="Outline points by editorial review state"><input id="verification-layer-toggle" type="checkbox"><span>Verification status</span></label>
             <label title="Differentiate points by coordinate precision"><input id="precision-layer-toggle" type="checkbox"><span>Location precision</span></label>
@@ -136,6 +152,28 @@
             <span><i class="legend-region-fill"></i>Ecosystem region</span>
             <span><i class="legend-mpz-fill"></i>Potential MPZ tract</span>
             <span><i class="legend-heliport" aria-hidden="true">H</i>FAA heliport</span>
+            <div class="legend-analysis-group" data-controlled-airspace-legend hidden>
+              <strong>Surface controlled airspace</strong>
+              <span><i class="legend-airspace class-bc"></i>Class B or C</span>
+              <span><i class="legend-airspace class-de"></i>Class D or surface E</span>
+            </div>
+            <div class="legend-analysis-group" data-uas-facility-map-legend hidden>
+              <strong>FAA authorization ceiling</strong>
+              <span><i class="legend-ceiling ceiling-zero"></i>0 ft AGL</span>
+              <span><i class="legend-ceiling ceiling-low"></i>50–100 ft AGL</span>
+              <span><i class="legend-ceiling ceiling-mid"></i>150–250 ft AGL</span>
+              <span><i class="legend-ceiling ceiling-high"></i>300–400 ft AGL</span>
+            </div>
+            <div class="legend-analysis-group" data-flight-constraints-legend hidden>
+              <strong>Flight constraints</strong>
+              <span><i class="legend-constraint national-security"></i>National-security UAS restriction</span>
+              <span><i class="legend-constraint restricted"></i>Prohibited or restricted area</span>
+              <span><i class="legend-constraint advisory"></i>MOA or warning area</span>
+            </div>
+            <div class="legend-analysis-group" data-uas-test-sites-legend hidden>
+              <strong>Test infrastructure</strong>
+              <span><i class="legend-test-site" aria-hidden="true"><img src="{% static 'img/icons/legend/radar.svg' %}" alt=""></i>UAS test facility</span>
+            </div>
             <div class="legend-analysis-group" data-verification-legend hidden>
               <strong>Verification</strong>
               <span><i class="legend-ring reviewed"></i>Reviewed</span>
@@ -148,7 +186,7 @@
               <span><i class="legend-precision approximate"></i>Approximate</span>
               <span><i class="legend-precision locality"></i>Locality only</span>
             </div>
-            <small>Regions are COSOLVE working groupings. Potential MPZ tracts are planning candidates based on documented maritime facilities; none are federally designated. Heliports are private-use FAA reference points and do not imply access or flight authorization. Asset points may represent exact, approximate, or generalized locations.</small>
+            <small>Airspace overlays are static planning references, not flight authorization. Always check current FAA sources, NOTAMs, TFRs, facility access, and operating rules. Asset points may represent exact, approximate, or generalized locations.</small>
           </div>
       </details>
     </div>
@@ -182,6 +220,6 @@
 </main>
 <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
 <script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
-  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260806-1"></script>
+  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260812-1"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}

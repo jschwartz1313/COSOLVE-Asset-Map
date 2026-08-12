@@ -97,3 +97,24 @@ The optional heliport layer is generated from the FAA Airports Feature Service w
 records as private use. The locally stored points are a planning reference, not asset records, and
 do not imply public access, landing permission, operational availability, or authorization for a
 flight.
+
+## Drone airspace and test-facility layers
+
+Run `python scripts/build_drone_airspace_layers.py` to refresh four checked-in reference layers:
+
+- Surface controlled airspace includes FAA Class B, C, D, and surface Class E polygons recorded
+  with a surface floor that intersect Virginia, including airspace assigned to a border-area
+  facility in another jurisdiction.
+- FAA authorization ceilings include UAS Facility Map grid cells intersecting Virginia and their
+  published Part 107 request-evaluation altitudes. A grid value is not flight authorization or a
+  general legal altitude limit.
+- Flight constraints combine FAA national-security UAS restrictions with prohibited, restricted,
+  military-operations, and warning areas that intersect Virginia. These categories have different
+  legal effects and operating schedules.
+- UAS test facilities identify the MARS UAS Airfield, NASA Langley UAS Test Range and CERTAIN, and
+  Virginia Tech Drone Park. Each point reports only facility dimensions, launch or recovery
+  infrastructure, aircraft scope, access, and constraints published by the operator.
+
+The airspace files are a dated planning snapshot, not an operational flight-planning product. They
+do not report live authorization, NOTAM, TFR, weather, facility-access, aircraft-certification, or
+mission-specific status. Operators must consult current FAA and facility sources before flight.

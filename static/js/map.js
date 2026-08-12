@@ -27,6 +27,67 @@ const CLUSTER_TYPE_LABELS = {
   "operating-environment": "Ops env.",
 };
 
+const CONTROLLED_AIRSPACE_COLORS = {
+  B: "#9c2f3f",
+  C: "#b55a1f",
+  D: "#276d79",
+  E: "#486da8",
+};
+
+function appendDefinitionList(container, entries) {
+  const list = document.createElement("dl");
+  for (const [label, value] of entries) {
+    if (!value) continue;
+    const term = document.createElement("dt");
+    term.textContent = label;
+    const definition = document.createElement("dd");
+    definition.textContent = value;
+    list.append(term, definition);
+  }
+  container.append(list);
+}
+
+function appendReferenceLink(container, label, url) {
+  const link = document.createElement("a");
+  link.href = url;
+  link.target = "_blank";
+  link.rel = "noopener";
+  link.textContent = label;
+  container.append(link);
+}
+
+function referencePopup({ status, title, entries, warning, links = [] }) {
+  const popup = document.createElement("section");
+  popup.className = "drone-reference-popup";
+  const eyebrow = document.createElement("span");
+  eyebrow.className = "drone-reference-status";
+  eyebrow.textContent = status;
+  const heading = document.createElement("h3");
+  heading.textContent = title;
+  popup.append(eyebrow, heading);
+  appendDefinitionList(popup, entries);
+  const caution = document.createElement("strong");
+  caution.textContent = warning;
+  popup.append(caution);
+  if (links.length) {
+    const sources = document.createElement("p");
+    sources.className = "drone-reference-sources";
+    links.forEach(([label, url], index) => {
+      if (index) sources.append(" · ");
+      appendReferenceLink(sources, label, url);
+    });
+    popup.append(sources);
+  }
+  return popup;
+}
+
+function authorizationCeilingClass(value) {
+  if (value === 0) return "zero";
+  if (value <= 100) return "low";
+  if (value <= 250) return "mid";
+  return "high";
+}
+
 function clusterComposition(cluster) {
   const counts = new Map();
   for (const marker of cluster.getAllChildMarkers()) {
@@ -275,6 +336,175 @@ export function createMap(root) {
   let heliportLayerLoaded = false;
   let heliportLayerVisible = false;
 
+  map.createPane("controlled-airspace");
+  map.getPane("controlled-airspace").style.zIndex = 342;
+  const controlledAirspaceLayer = window.L.geoJSON(null, {
+    pane: "controlled-airspace",
+    style(feature) {
+      const color = CONTROLLED_AIRSPACE_COLORS[feature.properties.class] || "#486da8";
+      return {
+        color,
+        fillColor: color,
+        fillOpacity: 0.12,
+        opacity: 0.9,
+        weight: 1.6,
+      };
+    },
+    onEachFeature(feature, boundary) {
+      const properties = feature.properties;
+      boundary.bindTooltip(
+        `${properties.name} · Class ${properties.class} from surface`,
+        { direction: "top", opacity: 0.96, sticky: true },
+      );
+      boundary.bindPopup(
+        referencePopup({
+          status: "FAA controlled airspace",
+          title: properties.name,
+          entries: [
+            ["Class", properties.class ? `Class ${properties.class}` : ""],
+            ["Identifier", properties.identifier],
+            ["Floor", properties.lower_limit],
+            ["Published upper limit", properties.upper_limit],
+            ["Hours note", properties.hours_note],
+          ],
+          warning:
+            "Reference only. Drone operations in controlled airspace generally require FAA authorization.",
+          links: [["FAA flying near airports", root.dataset.faaAirspaceInfoUrl]],
+        }),
+        { maxWidth: 330 },
+      );
+    },
+  });
+  let controlledAirspaceLoaded = false;
+  let controlledAirspaceVisible = false;
+
+  map.createPane("uas-facility-map");
+  map.getPane("uas-facility-map").style.zIndex = 344;
+  const uasFacilityMapRenderer = window.L.canvas({
+    pane: "uas-facility-map",
+    padding: 0.5,
+  });
+  const uasFacilityMapLayer = window.L.geoJSON(null, {
+    pane: "uas-facility-map",
+    renderer: uasFacilityMapRenderer,
+    style(feature) {
+      const ceilingClass = authorizationCeilingClass(feature.properties.ceiling_agl_ft);
+      const colors = {
+        zero: "#a62f35",
+        low: "#d27a28",
+        mid: "#d0a52c",
+        high: "#3d8477",
+      };
+      const color = colors[ceilingClass];
+      return {
+        color,
+        fillColor: color,
+        fillOpacity: 0.28,
+        opacity: 0.42,
+        weight: 0.45,
+      };
+    },
+    onEachFeature(feature, boundary) {
+      const properties = feature.properties;
+      const airports = properties.airports
+        .map((airport) => {
+          const identifiers = [airport.faa_id, airport.icao_id].filter(Boolean).join(" / ");
+          const laanc = airport.laanc_enabled ? "LAANC enabled" : "manual FAA process";
+          return `${airport.name}${identifiers ? ` (${identifiers})` : ""}; ${laanc}`;
+        })
+        .join(" · ");
+      boundary.bindTooltip(`${properties.ceiling_agl_ft} ft AGL authorization ceiling`, {
+        direction: "top",
+        opacity: 0.96,
+        sticky: true,
+      });
+      boundary.bindPopup(
+        referencePopup({
+          status: "FAA UAS Facility Map",
+          title: `${properties.ceiling_agl_ft} ft AGL`,
+          entries: [
+            ["Meaning", "Altitude used by the FAA to evaluate Part 107 authorization requests"],
+            ["Airport", airports],
+            ["Airspace", properties.airspace_classes.join(", ")],
+            ["Map effective", properties.map_effective],
+          ],
+          warning:
+            "This value is not flight authorization and is not a general legal altitude limit.",
+          links: [["FAA LAANC information", root.dataset.faaUasfmInfoUrl]],
+        }),
+        { maxWidth: 340 },
+      );
+    },
+  });
+  let uasFacilityMapLoaded = false;
+  let uasFacilityMapVisible = false;
+
+  map.createPane("flight-constraints");
+  map.getPane("flight-constraints").style.zIndex = 346;
+  const flightConstraintsLayer = window.L.geoJSON(null, {
+    pane: "flight-constraints",
+    style(feature) {
+      const properties = feature.properties;
+      if (properties.constraint_type === "national-security-uas") {
+        return {
+          className: "flight-constraint national-security",
+          color: "#8d2633",
+          fillColor: "#b53e4d",
+          fillOpacity: 0.38,
+          opacity: 0.98,
+          weight: 2,
+        };
+      }
+      const strict = ["P", "R"].includes(properties.type_code);
+      return {
+        className: `flight-constraint ${strict ? "restricted" : "advisory"}`,
+        color: strict ? "#732b5a" : "#725d25",
+        dashArray: strict ? "5 3" : "7 4",
+        fillColor: strict ? "#a94a82" : "#d2b55b",
+        fillOpacity: strict ? 0.22 : 0.14,
+        opacity: 0.92,
+        weight: strict ? 1.8 : 1.4,
+      };
+    },
+    onEachFeature(feature, boundary) {
+      const properties = feature.properties;
+      boundary.bindTooltip(`${properties.category}: ${properties.name}`, {
+        direction: "top",
+        opacity: 0.96,
+        sticky: true,
+      });
+      const source = properties.constraint_type === "national-security-uas"
+        ? ["FAA national-security UAS restrictions", root.dataset.faaSecurityInfoUrl]
+        : ["FAA aeronautical data", root.dataset.faaDataInfoUrl];
+      boundary.bindPopup(
+        referencePopup({
+          status: properties.category,
+          title: properties.name,
+          entries: [
+            ["Facility or base", properties.base],
+            ["Agency", properties.branch],
+            ["County", properties.county],
+            ["Vertical extent", `${properties.floor} to ${properties.ceiling}`],
+            ["Published schedule", properties.times_of_use],
+            ["FAA remarks", properties.remarks],
+          ],
+          warning:
+            "Not real-time. Check current FAA notices, NOTAMs, TFRs, and required authorization before flight.",
+          links: [source],
+        }),
+        { maxWidth: 350 },
+      );
+    },
+  });
+  let flightConstraintsLoaded = false;
+  let flightConstraintsVisible = false;
+
+  map.createPane("uas-test-sites");
+  map.getPane("uas-test-sites").style.zIndex = 365;
+  const uasTestSitesLayer = window.L.layerGroup();
+  let uasTestSitesLoaded = false;
+  let uasTestSitesVisible = false;
+
   function heliportPopup(properties) {
     const popup = document.createElement("section");
     popup.className = "heliport-popup";
@@ -325,6 +555,55 @@ export function createMap(root) {
       marker.bindTooltip(properties.name, { direction: "top", opacity: 0.96 });
       marker.bindPopup(heliportPopup(properties), { maxWidth: 300 });
       heliportLayer.addLayer(marker);
+    }
+  }
+
+  function addUasTestSites(data) {
+    for (const feature of data.features) {
+      if (!feature.geometry) continue;
+      const [longitude, latitude] = feature.geometry.coordinates;
+      const properties = feature.properties;
+      const icon = window.L.divIcon({
+        className: "uas-test-site-shell",
+        html: `<span class="uas-test-site-marker" aria-hidden="true"><img src="${root.dataset.iconBaseUrl}radar.svg" alt=""></span>`,
+        iconAnchor: [14, 14],
+        iconSize: [28, 28],
+        popupAnchor: [0, -14],
+        tooltipAnchor: [0, -14],
+      });
+      const marker = window.L.marker([latitude, longitude], {
+        alt: `${properties.name} UAS test facility reference point`,
+        icon,
+        keyboard: true,
+        pane: "uas-test-sites",
+        riseOnHover: true,
+        title: properties.name,
+      });
+      marker.bindTooltip(properties.name, { direction: "top", opacity: 0.96 });
+      const links = [[properties.source_title, properties.source_url]];
+      if (properties.secondary_source_url) {
+        links.push([properties.secondary_source_title, properties.secondary_source_url]);
+      }
+      marker.bindPopup(
+        referencePopup({
+          status: properties.site_type,
+          title: properties.name,
+          entries: [
+            ["Location", `${properties.city}, Virginia · ${properties.location_precision}`],
+            ["Published size", properties.published_size],
+            ["Takeoff and landing", properties.launch_recovery],
+            ["Support infrastructure", properties.support_infrastructure],
+            ["Aircraft or mission scope", properties.aircraft_scope],
+            ["Access", properties.access],
+            ["Published constraints", properties.flight_constraints],
+          ],
+          warning:
+            "Facility inclusion does not establish access or authorization for a proposed operation.",
+          links,
+        }),
+        { maxWidth: 390 },
+      );
+      uasTestSitesLayer.addLayer(marker);
     }
   }
 
@@ -557,6 +836,73 @@ export function createMap(root) {
       heliportLayerLoaded = true;
     }
     if (heliportLayerVisible) heliportLayer.addTo(map);
+  }
+
+  async function toggleGeoJsonLayer({ visible, loaded, layer: targetLayer, url, errorLabel }) {
+    if (!visible) {
+      targetLayer.removeFrom(map);
+      return loaded;
+    }
+    if (!loaded) {
+      const response = await fetch(url, {
+        headers: { Accept: "application/geo+json, application/json" },
+      });
+      if (!response.ok) throw new Error(`${errorLabel} request failed: ${response.status}`);
+      targetLayer.addData(await response.json());
+      loaded = true;
+    }
+    targetLayer.addTo(map);
+    return loaded;
+  }
+
+  async function setControlledAirspaceVisible(visible) {
+    controlledAirspaceVisible = visible;
+    controlledAirspaceLoaded = await toggleGeoJsonLayer({
+      visible,
+      loaded: controlledAirspaceLoaded,
+      layer: controlledAirspaceLayer,
+      url: root.dataset.controlledAirspaceUrl,
+      errorLabel: "Controlled airspace",
+    });
+  }
+
+  async function setUasFacilityMapVisible(visible) {
+    uasFacilityMapVisible = visible;
+    uasFacilityMapLoaded = await toggleGeoJsonLayer({
+      visible,
+      loaded: uasFacilityMapLoaded,
+      layer: uasFacilityMapLayer,
+      url: root.dataset.uasFacilityMapUrl,
+      errorLabel: "FAA UAS Facility Map",
+    });
+  }
+
+  async function setFlightConstraintsVisible(visible) {
+    flightConstraintsVisible = visible;
+    flightConstraintsLoaded = await toggleGeoJsonLayer({
+      visible,
+      loaded: flightConstraintsLoaded,
+      layer: flightConstraintsLayer,
+      url: root.dataset.flightConstraintsUrl,
+      errorLabel: "Flight constraints",
+    });
+  }
+
+  async function setUasTestSitesVisible(visible) {
+    uasTestSitesVisible = visible;
+    if (!visible) {
+      uasTestSitesLayer.removeFrom(map);
+      return;
+    }
+    if (!uasTestSitesLoaded) {
+      const response = await fetch(root.dataset.uasTestSitesUrl, {
+        headers: { Accept: "application/geo+json, application/json" },
+      });
+      if (!response.ok) throw new Error(`UAS test-site request failed: ${response.status}`);
+      addUasTestSites(await response.json());
+      uasTestSitesLoaded = true;
+    }
+    if (uasTestSitesVisible) uasTestSitesLayer.addTo(map);
   }
 
   map.createPane("analysis-selection");
@@ -829,12 +1175,16 @@ export function createMap(root) {
     selectVisibleExtent,
     setAssetLayerVisible,
     setBasemap,
+    setControlledAirspaceVisible,
     setCountyLayerVisible,
+    setFlightConstraintsVisible,
     setHeliportLayerVisible,
     setMpzLayerVisible,
     setPrecisionLayerVisible,
     setRegionLayerVisible,
     setStateBoundaryVisible,
+    setUasFacilityMapVisible,
+    setUasTestSitesVisible,
     setVerificationLayerVisible,
     setViewState,
     showAreaSelection,

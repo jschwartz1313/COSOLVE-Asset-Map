@@ -75,6 +75,43 @@ test("map layers toggle without moving the reset control", async ({ page }) => {
     .dispatchEvent("click");
   await expect(page.locator(".heliport-popup")).toContainText("Private use");
   await expect(page.locator(".heliport-popup")).toContainText("does not indicate public access");
+
+  const controlledAirspaceToggle = page.locator("#controlled-airspace-toggle");
+  await expect(controlledAirspaceToggle).not.toBeChecked();
+  await controlledAirspaceToggle.check();
+  await expect(page.locator(".leaflet-controlled-airspace-pane path")).toHaveCount(33);
+  await expect(page.locator("[data-controlled-airspace-legend]")).not.toHaveAttribute("hidden");
+  await page.locator(".map-legend summary").click();
+  await expect(page.locator("[data-controlled-airspace-legend]")).toBeVisible();
+  await page.locator(".leaflet-controlled-airspace-pane path").first().dispatchEvent("click");
+  await expect(page.locator(".drone-reference-popup")).toContainText(
+    "generally require FAA authorization",
+  );
+
+  const facilityMapToggle = page.locator("#uas-facility-map-toggle");
+  await facilityMapToggle.check();
+  await expect(page.locator(".leaflet-uas-facility-map-pane canvas")).toBeVisible();
+  await expect(page.locator("[data-uas-facility-map-legend]")).toContainText("0 ft AGL");
+
+  const constraintToggle = page.locator("#flight-constraints-toggle");
+  await constraintToggle.check();
+  await expect(page.locator(".leaflet-flight-constraints-pane path")).toHaveCount(139);
+  await expect(page.locator("[data-flight-constraints-legend]")).toContainText(
+    "National-security UAS restriction",
+  );
+
+  const testSitesToggle = page.locator("#uas-test-sites-toggle");
+  await testSitesToggle.check();
+  await expect(page.locator(".leaflet-uas-test-sites-pane .uas-test-site-shell")).toHaveCount(3);
+  await page
+    .locator(".leaflet-uas-test-sites-pane .uas-test-site-shell")
+    .first()
+    .dispatchEvent("click");
+  const testSitePopup = page.locator(".drone-reference-popup", { hasText: "Published size" });
+  await expect(testSitePopup).toBeVisible();
+  await expect(testSitePopup).toContainText(
+    "does not establish access or authorization",
+  );
 });
 
 test("map credits stay compact while full source notes remain available", async ({
@@ -97,6 +134,8 @@ test("map credits stay compact while full source notes remain available", async 
   await expect(sources).toContainText("U.S. Census Bureau TIGERweb");
   await expect(sources).toContainText("planning candidates, not federal designations");
   await expect(sources).toContainText("FAA-recorded operational private-use heliports");
+  await expect(sources).toContainText("FAA UAS Facility Map");
+  await expect(sources).toContainText("Virginia Spaceport Authority");
 });
 
 test("copy view link preserves the map position, filters, and layers", async ({
@@ -112,6 +151,10 @@ test("copy view link preserves the map position, filters, and layers", async ({
   await page.locator("#county-layer-toggle").check();
   await page.locator("#mpz-layer-toggle").check();
   await page.locator("#heliport-layer-toggle").check();
+  await page.locator("#controlled-airspace-toggle").check();
+  await page.locator("#uas-facility-map-toggle").check();
+  await page.locator("#flight-constraints-toggle").check();
+  await page.locator("#uas-test-sites-toggle").check();
   await page.locator(".map-actions summary").click();
   await page.locator("#copy-view-link").click();
   await expect(page.locator("#copy-view-link")).toHaveText("Link copied");
@@ -126,7 +169,11 @@ test("copy view link preserves the map position, filters, and layers", async ({
   expect(copied.searchParams.get("map_layers")).toContain("counties");
   expect(copied.searchParams.get("map_layers")).toContain("mpz");
   expect(copied.searchParams.get("map_layers")).toContain("heliports");
-  expect(copied.searchParams.get("map_layers_v")).toBe("4");
+  expect(copied.searchParams.get("map_layers")).toContain("controlled-airspace");
+  expect(copied.searchParams.get("map_layers")).toContain("uas-facility-map");
+  expect(copied.searchParams.get("map_layers")).toContain("flight-constraints");
+  expect(copied.searchParams.get("map_layers")).toContain("uas-test-sites");
+  expect(copied.searchParams.get("map_layers_v")).toBe("5");
   expect(copied.searchParams.get("map_basemap")).toBe("street");
 
   await page.goto(copiedUrl);
@@ -134,9 +181,17 @@ test("copy view link preserves the map position, filters, and layers", async ({
   await expect(page.locator("#county-layer-toggle")).toBeChecked();
   await expect(page.locator("#mpz-layer-toggle")).toBeChecked();
   await expect(page.locator("#heliport-layer-toggle")).toBeChecked();
+  await expect(page.locator("#controlled-airspace-toggle")).toBeChecked();
+  await expect(page.locator("#uas-facility-map-toggle")).toBeChecked();
+  await expect(page.locator("#flight-constraints-toggle")).toBeChecked();
+  await expect(page.locator("#uas-test-sites-toggle")).toBeChecked();
   await expect(page.locator(".leaflet-county-boundaries-pane path")).not.toHaveCount(0);
   await expect(page.locator(".leaflet-maritime-prosperity-zones-pane path")).toHaveCount(11);
   await expect(page.locator(".leaflet-heliports-pane .heliport-reference-shell")).toHaveCount(127);
+  await expect(page.locator(".leaflet-controlled-airspace-pane path")).toHaveCount(33);
+  await expect(page.locator(".leaflet-uas-facility-map-pane canvas")).toBeVisible();
+  await expect(page.locator(".leaflet-flight-constraints-pane path")).toHaveCount(139);
+  await expect(page.locator(".leaflet-uas-test-sites-pane .uas-test-site-shell")).toHaveCount(3);
 });
 
 test("print view opens the browser print or PDF workflow", async ({ page }) => {
