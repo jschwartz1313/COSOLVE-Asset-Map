@@ -397,8 +397,10 @@ class SavedViewTests(TestCase):
         query_string = (
             "region=hampton-roads&record_type=university"
             "&map_lat=36.91235&map_lon=-76.30123&map_zoom=11"
-            "&map_layers=assets%2Cstate%2Cmpz%2Ccounties%2Cverification"
-            "&map_layers_v=3&map_basemap=light"
+            "&map_layers=assets%2Cstate%2Cmpz%2Ccounties%2Cheliports%2C"
+            "controlled-airspace%2Cuas-facility-map%2Cflight-constraints%2C"
+            "uas-test-sites%2Cverification"
+            "&map_layers_v=5&map_basemap=light"
         )
         response = self.client.post(
             reverse("core:saved-views"),
