@@ -751,6 +751,11 @@ test("about page reports review status without an empty date range", async ({ pa
   await page.goto("/about-data/");
   await expect(page.getByText("Editorial review", { exact: true })).toBeVisible();
   await expect(page.getByText("Verification range", { exact: true })).toHaveCount(0);
+  const publicationNote = page.getByText("Publicly releasable information only", { exact: true });
+  const directoryButton = page.getByRole("link", { name: "Browse the directory" });
+  const publicationBox = await publicationNote.boundingBox();
+  const directoryButtonBox = await directoryButton.boundingBox();
+  expect(directoryButtonBox.y - (publicationBox.y + publicationBox.height)).toBeGreaterThanOrEqual(20);
 });
 
 test("account recovery is available from the sign-in page", async ({ page }) => {
