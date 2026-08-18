@@ -17,6 +17,11 @@ from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region,
 
 from .scoping import apply_public_scope
 
+GENERIC_HIGHER_ED_RELEVANCE_MARKER = (
+    "Inclusion identifies institutional capacity and does not by itself indicate a "
+    "documented unmanned-systems program."
+)
+
 
 class PublicAssetManager(models.Manager):
     def get_queryset(self):
@@ -24,6 +29,10 @@ class PublicAssetManager(models.Manager):
             super()
             .get_queryset()
             .filter(status__in=Asset.public_status_values(), visibility=Asset.Visibility.PUBLIC)
+            .exclude(
+                record_type=Asset.RecordType.UNIVERSITY,
+                unmanned_systems_relevance__contains=GENERIC_HIGHER_ED_RELEVANCE_MARKER,
+            )
         )
         return apply_public_scope(queryset)
 

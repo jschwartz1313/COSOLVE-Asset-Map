@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-08-11",
-  "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, active Virginia public and private nonprofit degree-granting institutions from the NCES IPEDS 2024 directory (plus ECPI University), and a curated set of source-backed ecosystem records. Specific street and site locations are anchored to official public address sources and geocoded against the U.S. Census address ranges or named-site map data; locality points are retained when the public record does not identify the operating department or facility. Every record is also classified as either a core unmanned-systems asset with direct documented activity or a supporting ecosystem asset with a broader enabling role.",
-  "record_count": 453,
+  "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, selected Virginia degree-granting institutions with separately documented unmanned-systems connections from the NCES IPEDS 2024 directory, and a curated set of source-backed ecosystem records. Specific street and site locations are anchored to official public address sources and geocoded against the U.S. Census address ranges or named-site map data; locality points are retained when the public record does not identify the operating department or facility. Every record is also classified as either a core unmanned-systems asset with direct documented activity or a supporting ecosystem asset with a broader enabling role.",
+  "record_count": 390,
   "records": [
     {
       "address_line": "29194 Parkway North",
@@ -307,44 +307,6 @@
       "website_url": "https://www.avinc.com/domains/"
     },
     {
-      "address_line": "9253 Old Keene Mill Road",
-      "capabilities": [],
-      "city": "Burke",
-      "contact_email": "",
-      "contact_phone": "866-462-4672",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.agora.edu/",
-      "latitude": 38.775104,
-      "location_precision": "site",
-      "longitude": -77.265929,
-      "missions": [],
-      "name": "Agora University",
-      "overview": "Agora University is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "22015",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Northern Virginia",
-      "short_description": "Private nonprofit degree-granting college or university based in Burke, Virginia.",
-      "sources": [
-        {
-          "title": "Agora University official website",
-          "url": "https://www.agora.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Agora University is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.agora.edu/"
-    },
-    {
       "address_line": "13199 Wakefield Road",
       "capabilities": [
         "Perception, sensing, and sensor fusion",
@@ -634,90 +596,6 @@
       "website_url": "https://www.vedp.org/news/organizing-skies"
     },
     {
-      "address_line": "1060 Dragon Road",
-      "capabilities": [],
-      "city": "Oakwood",
-      "contact_email": "",
-      "contact_phone": "276-498-4190",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.acp.edu/admissions-aid/prerequisites/",
-      "latitude": 37.211629,
-      "location_precision": "site",
-      "longitude": -82.006195,
-      "missions": [],
-      "name": "Appalachian College of Pharmacy",
-      "overview": "Appalachian College of Pharmacy is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24631",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Southwest Virginia",
-      "short_description": "Private nonprofit degree-granting college or university based in Oakwood, Virginia.",
-      "sources": [
-        {
-          "title": "Appalachian College of Pharmacy official website",
-          "url": "https://www.acp.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Appalachian College of Pharmacy admissions and public contact information",
-          "url": "https://www.acp.edu/admissions-aid/prerequisites/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Appalachian College of Pharmacy is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.acp.edu/"
-    },
-    {
-      "address_line": "1169 Edgewater Drive",
-      "capabilities": [],
-      "city": "Grundy",
-      "contact_email": "",
-      "contact_phone": "276-935-4349 ext. 1231",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.asl.edu/admissions/admissions-office/",
-      "latitude": 37.277669,
-      "location_precision": "site",
-      "longitude": -82.095648,
-      "missions": [],
-      "name": "Appalachian School of Law",
-      "overview": "Appalachian School of Law is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24614",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Southwest Virginia",
-      "short_description": "Private nonprofit degree-granting college or university based in Grundy, Virginia.",
-      "sources": [
-        {
-          "title": "Appalachian School of Law official website",
-          "url": "https://www.asl.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Appalachian School of Law admissions and public contact information",
-          "url": "https://www.asl.edu/admissions/admissions-office/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Appalachian School of Law is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.asl.edu/"
-    },
-    {
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -800,44 +678,6 @@
       ],
       "unmanned_systems_relevance": "Army National Guard Readiness Center is included as documented federal or defense ecosystem presence in Arlington. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.nationalguard.mil/About-the-Guard/Army-National-Guard/Contact-Us/"
-    },
-    {
-      "address_line": "14525 John Marshall Hwy.",
-      "capabilities": [],
-      "city": "Gainesville",
-      "contact_email": "",
-      "contact_phone": "703-753-2791",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://ascent.edu/",
-      "latitude": 38.805988,
-      "location_precision": "site",
-      "longitude": -77.624657,
-      "missions": [],
-      "name": "Ascent College",
-      "overview": "Ascent College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "20155",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Northern Virginia",
-      "short_description": "Private nonprofit degree-granting college or university based in Gainesville, Virginia.",
-      "sources": [
-        {
-          "title": "Ascent College official website",
-          "url": "https://ascent.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Ascent College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://ascent.edu/"
     },
     {
       "activity_last_verified_at": "2026-08-11",
@@ -1332,48 +1172,6 @@
       "website_url": "https://www.auvsiridgeandvalley.org/"
     },
     {
-      "address_line": "420 W Main St",
-      "capabilities": [],
-      "city": "Danville",
-      "contact_email": "",
-      "contact_phone": "434-791-5600",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://admissions.averett.edu/",
-      "latitude": 36.577287,
-      "location_precision": "site",
-      "longitude": -79.413203,
-      "missions": [],
-      "name": "Averett University",
-      "overview": "Averett University is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24541",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Southside Virginia",
-      "short_description": "Private nonprofit degree-granting college or university based in Danville, Virginia.",
-      "sources": [
-        {
-          "title": "Averett University official website",
-          "url": "https://www.averett.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Averett University admissions and public contact information",
-          "url": "https://admissions.averett.edu/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Averett University is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.averett.edu/"
-    },
-    {
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -1568,48 +1366,6 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
-      "address_line": "One College Lane",
-      "capabilities": [],
-      "city": "Weyers Cave",
-      "contact_email": "",
-      "contact_phone": "540-234-9261",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.brcc.edu/admissions/",
-      "latitude": 38.279075,
-      "location_precision": "site",
-      "longitude": -78.937471,
-      "missions": [],
-      "name": "Blue Ridge Community College",
-      "overview": "Blue Ridge Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24486-0080",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Shenandoah Valley",
-      "short_description": "Public degree-granting community college based in Weyers Cave, Virginia.",
-      "sources": [
-        {
-          "title": "Blue Ridge Community College official website",
-          "url": "https://www.brcc.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Blue Ridge Community College admissions and public contact information",
-          "url": "https://www.brcc.edu/admissions/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Blue Ridge Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.brcc.edu/"
-    },
-    {
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -1746,132 +1502,6 @@
       "website_url": "https://www.bluevigil.com/about"
     },
     {
-      "address_line": "3000 College Avenue",
-      "capabilities": [],
-      "city": "Bluefield",
-      "contact_email": "",
-      "contact_phone": "276-326-3682",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.bluefield.edu/admissions/",
-      "latitude": 37.244557,
-      "location_precision": "site",
-      "longitude": -81.246233,
-      "missions": [],
-      "name": "Bluefield University",
-      "overview": "Bluefield University is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24605",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Southwest Virginia",
-      "short_description": "Private nonprofit degree-granting college or university based in Bluefield, Virginia.",
-      "sources": [
-        {
-          "title": "Bluefield University official website",
-          "url": "https://www.bluefield.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Bluefield University admissions and public contact information",
-          "url": "https://www.bluefield.edu/admissions/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Bluefield University is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.bluefield.edu/"
-    },
-    {
-      "address_line": "8550 Magellan Parkway Suite 1100",
-      "capabilities": [],
-      "city": "Richmond",
-      "contact_email": "",
-      "contact_phone": "804-627-5300",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.bsmcon.edu/admissions",
-      "latitude": 37.646698,
-      "location_precision": "site",
-      "longitude": -77.433569,
-      "missions": [],
-      "name": "Bon Secours Memorial College of Nursing",
-      "overview": "Bon Secours Memorial College of Nursing is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23227-1149",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Greater Richmond",
-      "short_description": "Private nonprofit degree-granting college or university based in Richmond, Virginia.",
-      "sources": [
-        {
-          "title": "Bon Secours Memorial College of Nursing official website",
-          "url": "https://www.bsmcon.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Bon Secours Memorial College of Nursing admissions and public contact information",
-          "url": "https://www.bsmcon.edu/admissions"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Bon Secours Memorial College of Nursing is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.bsmcon.edu/"
-    },
-    {
-      "address_line": "8550 Magellan Pkwy Ste 700",
-      "capabilities": [],
-      "city": "Richmond",
-      "contact_email": "",
-      "contact_phone": "804-627-5300",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://smhsomi.edu/admissions",
-      "latitude": 37.646698,
-      "location_precision": "site",
-      "longitude": -77.433569,
-      "missions": [],
-      "name": "Bon Secours St Mary's Hospital School of Medical Imaging",
-      "overview": "Bon Secours St Mary's Hospital School of Medical Imaging is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23227",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Greater Richmond",
-      "short_description": "Private nonprofit degree-granting college or university based in Richmond, Virginia.",
-      "sources": [
-        {
-          "title": "Bon Secours St Mary's Hospital School of Medical Imaging official website",
-          "url": "https://smhsomi.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Bon Secours St Mary's Hospital School of Medical Imaging admissions and public contact information",
-          "url": "https://smhsomi.edu/admissions"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Bon Secours St Mary's Hospital School of Medical Imaging is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://smhsomi.edu/"
-    },
-    {
       "address_line": "1402 Airport Road",
       "capabilities": [
         "Operations, maintenance, and sustainment"
@@ -1920,90 +1550,6 @@
       ],
       "unmanned_systems_relevance": "Bridgewater Air Park is included as public aviation infrastructure serving Bridgewater. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
-    },
-    {
-      "address_line": "402 E College St",
-      "capabilities": [],
-      "city": "Bridgewater",
-      "contact_email": "",
-      "contact_phone": "540-828-8000",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.bridgewater.edu/admissions-aid/",
-      "latitude": 38.378484,
-      "location_precision": "site",
-      "longitude": -78.969007,
-      "missions": [],
-      "name": "Bridgewater College",
-      "overview": "Bridgewater College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "22812-1599",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Shenandoah Valley",
-      "short_description": "Private nonprofit degree-granting college or university based in Bridgewater, Virginia.",
-      "sources": [
-        {
-          "title": "Bridgewater College official website",
-          "url": "https://www.bridgewater.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Bridgewater College admissions and public contact information",
-          "url": "https://www.bridgewater.edu/admissions-aid/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Bridgewater College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.bridgewater.edu/"
-    },
-    {
-      "address_line": "13101 Route 1",
-      "capabilities": [],
-      "city": "Chester",
-      "contact_email": "",
-      "contact_phone": "804-796-4000",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.brightpoint.edu/admissions",
-      "latitude": 37.346254,
-      "location_precision": "site",
-      "longitude": -77.407919,
-      "missions": [],
-      "name": "Brightpoint Community College",
-      "overview": "Brightpoint Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23831-5316",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Greater Richmond",
-      "short_description": "Public degree-granting community college based in Chester, Virginia.",
-      "sources": [
-        {
-          "title": "Brightpoint Community College official website",
-          "url": "https://www.brightpoint.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Brightpoint Community College admissions and public contact information",
-          "url": "https://www.brightpoint.edu/admissions"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Brightpoint Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.brightpoint.edu/"
     },
     {
       "capabilities": [
@@ -2144,48 +1690,6 @@
       ],
       "unmanned_systems_relevance": "Brunswick County is included as public aviation infrastructure serving Lawrenceville. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
-    },
-    {
-      "address_line": "301 Centre Pointe Dr",
-      "capabilities": [],
-      "city": "Virginia Beach",
-      "contact_email": "",
-      "contact_phone": "757-499-7900",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.bryantstratton.edu/Admissions",
-      "latitude": 36.827826,
-      "location_precision": "site",
-      "longitude": -76.13819,
-      "missions": [],
-      "name": "Bryant & Stratton College-Virginia Beach",
-      "overview": "Bryant & Stratton College-Virginia Beach is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23462",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Hampton Roads",
-      "short_description": "Private nonprofit degree-granting college or university based in Virginia Beach, Virginia.",
-      "sources": [
-        {
-          "title": "Bryant & Stratton College-Virginia Beach official website",
-          "url": "https://www.bryantstratton.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Bryant & Stratton College-Virginia Beach admissions and public contact information",
-          "url": "https://www.bryantstratton.edu/Admissions"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Bryant & Stratton College-Virginia Beach is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.bryantstratton.edu/"
     },
     {
       "capabilities": [
@@ -2518,90 +2022,6 @@
       ],
       "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
       "website_url": "https://iucrc.nsf.gov/centers/center-for-unmanned-aircraft-system/"
-    },
-    {
-      "address_line": "905 Lakeside Dr., Suite A",
-      "capabilities": [],
-      "city": "Lynchburg",
-      "contact_email": "",
-      "contact_phone": "434-200-3070",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.centrahealth.com/college/programs-admissions",
-      "latitude": 37.4051,
-      "location_precision": "site",
-      "longitude": -79.174101,
-      "missions": [],
-      "name": "Centra College",
-      "overview": "Centra College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24501",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Lynchburg Region",
-      "short_description": "Private nonprofit degree-granting college or university based in Lynchburg, Virginia.",
-      "sources": [
-        {
-          "title": "Centra College official website",
-          "url": "https://www.centrahealth.com/college"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Centra College admissions and public contact information",
-          "url": "https://www.centrahealth.com/college/programs-admissions"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Centra College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.centrahealth.com/college"
-    },
-    {
-      "address_line": "3506 Wards Rd",
-      "capabilities": [],
-      "city": "Lynchburg",
-      "contact_email": "",
-      "contact_phone": "434-832-7600",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.centralvirginia.edu/admissions",
-      "latitude": 37.358809,
-      "location_precision": "site",
-      "longitude": -79.184238,
-      "missions": [],
-      "name": "Central Virginia Community College",
-      "overview": "Central Virginia Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24502-2498",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Lynchburg Region",
-      "short_description": "Public degree-granting community college based in Lynchburg, Virginia.",
-      "sources": [
-        {
-          "title": "Central Virginia Community College official website",
-          "url": "https://www.centralvirginia.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Central Virginia Community College admissions and public contact information",
-          "url": "https://www.centralvirginia.edu/admissions"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Central Virginia Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.centralvirginia.edu/"
     },
     {
       "address_line": "10780 Courthouse Road",
@@ -3796,48 +3216,6 @@
       "website_url": "https://cnrma.cnic.navy.mil/Installations/NAS-Oceana/"
     },
     {
-      "address_line": "1008 S Main St",
-      "capabilities": [],
-      "city": "Danville",
-      "contact_email": "",
-      "contact_phone": "434-797-2222",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.danville.edu/admissions-aid",
-      "latitude": 36.565286,
-      "location_precision": "site",
-      "longitude": -79.408803,
-      "missions": [],
-      "name": "Danville Community College",
-      "overview": "Danville Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24541-4004",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Southside Virginia",
-      "short_description": "Public degree-granting community college based in Danville, Virginia.",
-      "sources": [
-        {
-          "title": "Danville Community College official website",
-          "url": "https://www.danville.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Danville Community College admissions and public contact information",
-          "url": "https://www.danville.edu/admissions-aid"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Danville Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.danville.edu/"
-    },
-    {
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -4099,48 +3477,6 @@
       ],
       "unmanned_systems_relevance": "Defense Supply Center Richmond is included as documented federal or defense ecosystem presence in Richmond. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.dla.mil/Aviation/Installation.aspx"
-    },
-    {
-      "address_line": "45154 Underwood Lane",
-      "capabilities": [],
-      "city": "Sterling",
-      "contact_email": "",
-      "contact_phone": "703-416-1441",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://enroll.divinemercy.edu/",
-      "latitude": 38.979728,
-      "location_precision": "site",
-      "longitude": -77.437576,
-      "missions": [],
-      "name": "Divine Mercy University",
-      "overview": "Divine Mercy University is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "20166",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Northern Virginia",
-      "short_description": "Private nonprofit degree-granting college or university based in Sterling, Virginia.",
-      "sources": [
-        {
-          "title": "Divine Mercy University official website",
-          "url": "https://www.divinemercy.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Divine Mercy University admissions and public contact information",
-          "url": "https://enroll.divinemercy.edu/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Divine Mercy University is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.divinemercy.edu/"
     },
     {
       "activity_last_verified_at": "2026-08-11",
@@ -4433,90 +3769,6 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
-      "address_line": "1200 Park Rd",
-      "capabilities": [],
-      "city": "Harrisonburg",
-      "contact_email": "",
-      "contact_phone": "540-432-4000",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://emu.edu/admissions/",
-      "latitude": 38.471134,
-      "location_precision": "site",
-      "longitude": -78.880326,
-      "missions": [],
-      "name": "Eastern Mennonite University",
-      "overview": "Eastern Mennonite University is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "22802-2462",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Shenandoah Valley",
-      "short_description": "Private nonprofit degree-granting college or university based in Harrisonburg, Virginia.",
-      "sources": [
-        {
-          "title": "Eastern Mennonite University official website",
-          "url": "https://emu.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Eastern Mennonite University admissions and public contact information",
-          "url": "https://emu.edu/admissions/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Eastern Mennonite University is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://emu.edu/"
-    },
-    {
-      "address_line": "29316 Lankford Hwy",
-      "capabilities": [],
-      "city": "Melfa",
-      "contact_email": "",
-      "contact_phone": "757-789-1789",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.es.vccs.edu/admissions-aid/how-to-apply/",
-      "latitude": 37.639652,
-      "location_precision": "site",
-      "longitude": -75.751129,
-      "missions": [],
-      "name": "Eastern Shore Community College",
-      "overview": "Eastern Shore Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23410",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Eastern Shore",
-      "short_description": "Public degree-granting community college based in Melfa, Virginia.",
-      "sources": [
-        {
-          "title": "Eastern Shore Community College official website",
-          "url": "https://www.es.vccs.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Eastern Shore Community College admissions and public contact information",
-          "url": "https://www.es.vccs.edu/admissions-aid/how-to-apply/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Eastern Shore Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.es.vccs.edu/"
-    },
-    {
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -4555,90 +3807,6 @@
       ],
       "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
       "website_url": "https://courses.vccs.edu/colleges/escc/courses/UMS-UnmannedSystems"
-    },
-    {
-      "address_line": "5555 Greenwich Rd",
-      "capabilities": [],
-      "city": "Virginia Beach",
-      "contact_email": "",
-      "contact_phone": "757-490-9090",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.ecpi.edu/admissions",
-      "latitude": 36.842526,
-      "location_precision": "site",
-      "longitude": -76.178773,
-      "missions": [],
-      "name": "ECPI University",
-      "overview": "ECPI University is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23462",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Hampton Roads",
-      "short_description": "Private degree-granting university based in Virginia Beach, Virginia.",
-      "sources": [
-        {
-          "title": "ECPI University official website",
-          "url": "https://www.ecpi.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "ECPI University admissions and public contact information",
-          "url": "https://www.ecpi.edu/admissions"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "ECPI University is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.ecpi.edu/"
-    },
-    {
-      "address_line": "2265 Kraft Drive",
-      "capabilities": [],
-      "city": "Blacksburg",
-      "contact_email": "",
-      "contact_phone": "540-231-4000",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.vcom.edu/admissions",
-      "latitude": 37.199747,
-      "location_precision": "site",
-      "longitude": -80.406089,
-      "missions": [],
-      "name": "Edward Via College of Osteopathic Medicine",
-      "overview": "Edward Via College of Osteopathic Medicine is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24060",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "New River Valley",
-      "short_description": "Private nonprofit degree-granting college or university based in Blacksburg, Virginia.",
-      "sources": [
-        {
-          "title": "Edward Via College of Osteopathic Medicine official website",
-          "url": "https://www.vcom.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Edward Via College of Osteopathic Medicine admissions and public contact information",
-          "url": "https://www.vcom.edu/admissions"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Edward Via College of Osteopathic Medicine is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.vcom.edu/"
     },
     {
       "capabilities": [
@@ -5127,48 +4295,6 @@
       ],
       "unmanned_systems_relevance": "Farmville Rgnl is included as public aviation infrastructure serving Farmville. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
-    },
-    {
-      "address_line": "215 Ferrum Mountain Road",
-      "capabilities": [],
-      "city": "Ferrum",
-      "contact_email": "",
-      "contact_phone": "540-365-2121",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.ferrum.edu/admission/",
-      "latitude": 36.926431,
-      "location_precision": "site",
-      "longitude": -80.020614,
-      "missions": [],
-      "name": "Ferrum College",
-      "overview": "Ferrum College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24088-9000",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Roanoke Valley",
-      "short_description": "Private nonprofit degree-granting college or university based in Ferrum, Virginia.",
-      "sources": [
-        {
-          "title": "Ferrum College official website",
-          "url": "https://www.ferrum.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Ferrum College admissions and public contact information",
-          "url": "https://www.ferrum.edu/admission/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Ferrum College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.ferrum.edu/"
     },
     {
       "capabilities": [
@@ -6109,48 +5235,6 @@
       "website_url": "https://police.gmu.edu/records-and-reporting/uas-drone-flight-log/"
     },
     {
-      "address_line": "2130 Germanna Hwy",
-      "capabilities": [],
-      "city": "Locust Grove",
-      "contact_email": "",
-      "contact_phone": "540-423-9030",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.germanna.edu/admissions/",
-      "latitude": 38.375532,
-      "location_precision": "site",
-      "longitude": -77.78012,
-      "missions": [],
-      "name": "Germanna Community College",
-      "overview": "Germanna Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "22508-2102",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Central Virginia",
-      "short_description": "Public degree-granting community college based in Locust Grove, Virginia.",
-      "sources": [
-        {
-          "title": "Germanna Community College official website",
-          "url": "https://www.germanna.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Germanna Community College admissions and public contact information",
-          "url": "https://www.germanna.edu/admissions/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Germanna Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.germanna.edu/"
-    },
-    {
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -6387,48 +5471,6 @@
       ],
       "unmanned_systems_relevance": "Gordonsville Muni is included as public aviation infrastructure serving Gordonsville. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
-    },
-    {
-      "address_line": "1 College Road",
-      "capabilities": [],
-      "city": "Hampden-Sydney",
-      "contact_email": "",
-      "contact_phone": "434-223-6000",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.hsc.edu/admission-and-financial-aid/",
-      "latitude": 37.240615,
-      "location_precision": "site",
-      "longitude": -78.464216,
-      "missions": [],
-      "name": "Hampden-Sydney College",
-      "overview": "Hampden-Sydney College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23943",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Central Virginia",
-      "short_description": "Private nonprofit degree-granting college or university based in Hampden-Sydney, Virginia.",
-      "sources": [
-        {
-          "title": "Hampden-Sydney College official website",
-          "url": "https://www.hsc.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Hampden-Sydney College admissions and public contact information",
-          "url": "https://www.hsc.edu/admission-and-financial-aid/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Hampden-Sydney College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.hsc.edu/"
     },
     {
       "address_line": "22 Lincoln Street",
@@ -7161,48 +6203,6 @@
       "website_url": "https://www.hii.com/news/unmanned-systems-center-of-excellence"
     },
     {
-      "address_line": "7916 Williamson Rd NW",
-      "capabilities": [],
-      "city": "Roanoke",
-      "contact_email": "",
-      "contact_phone": "540-362-6000",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.hollins.edu/admission/",
-      "latitude": 37.354201,
-      "location_precision": "site",
-      "longitude": -79.943277,
-      "missions": [],
-      "name": "Hollins University",
-      "overview": "Hollins University is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24020",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Roanoke Valley",
-      "short_description": "Private nonprofit degree-granting college or university based in Roanoke, Virginia.",
-      "sources": [
-        {
-          "title": "Hollins University official website",
-          "url": "https://www.hollins.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Hollins University admissions and public contact information",
-          "url": "https://www.hollins.edu/admission/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Hollins University is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.hollins.edu/"
-    },
-    {
       "address_line": "200 South Hopewell Street",
       "capabilities": [
         "Operations, maintenance, and sustainment",
@@ -7589,48 +6589,6 @@
       ],
       "unmanned_systems_relevance": "Provides advanced manufacturing, modeling, sensing, communications, or prototyping capacity that enables unmanned-system development and scale-up.",
       "website_url": "https://www.ialr.org/"
-    },
-    {
-      "address_line": "1651 East Parham Road",
-      "capabilities": [],
-      "city": "Richmond",
-      "contact_email": "",
-      "contact_phone": "804-371-3000",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.reynolds.edu/register_for_classes/steps_to_register/default.aspx",
-      "latitude": 37.636837,
-      "location_precision": "site",
-      "longitude": -77.473918,
-      "missions": [],
-      "name": "J Sargeant Reynolds Community College",
-      "overview": "J Sargeant Reynolds Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23228-2327",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Greater Richmond",
-      "short_description": "Public degree-granting community college based in Richmond, Virginia.",
-      "sources": [
-        {
-          "title": "J Sargeant Reynolds Community College official website",
-          "url": "https://www.reynolds.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "J Sargeant Reynolds Community College admissions and public contact information",
-          "url": "https://www.reynolds.edu/register_for_classes/steps_to_register/default.aspx"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "J Sargeant Reynolds Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.reynolds.edu/"
     },
     {
       "activity_last_verified_at": "2026-08-11",
@@ -8145,48 +7103,6 @@
       ],
       "unmanned_systems_relevance": "Langley Air Force Base - Joint Base Langley-Eustis is included as documented federal or defense ecosystem presence in Hampton. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.jble.af.mil/Home/Contact/"
-    },
-    {
-      "address_line": "173 Skirmisher Lane",
-      "capabilities": [],
-      "city": "Middletown",
-      "contact_email": "",
-      "contact_phone": "800-906-5322",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://laurelridge.edu/admissions-and-course-prerequisites/",
-      "latitude": 39.036001,
-      "location_precision": "site",
-      "longitude": -78.267336,
-      "missions": [],
-      "name": "Laurel Ridge Community College",
-      "overview": "Laurel Ridge Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "22645",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Shenandoah Valley",
-      "short_description": "Public degree-granting community college based in Middletown, Virginia.",
-      "sources": [
-        {
-          "title": "Laurel Ridge Community College official website",
-          "url": "https://www.laurelridge.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Laurel Ridge Community College admissions and public contact information",
-          "url": "https://laurelridge.edu/admissions-and-course-prerequisites/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Laurel Ridge Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.laurelridge.edu/"
     },
     {
       "capabilities": [
@@ -9564,90 +8480,6 @@
       "website_url": "https://www.vaspace.org/about-us"
     },
     {
-      "address_line": "318 Prospect Street",
-      "capabilities": [],
-      "city": "Staunton",
-      "contact_email": "",
-      "contact_phone": "540-887-7019",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://marybaldwin.edu/admissions/",
-      "latitude": 38.153884,
-      "location_precision": "site",
-      "longitude": -79.069273,
-      "missions": [],
-      "name": "Mary Baldwin University",
-      "overview": "Mary Baldwin University is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24401",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Shenandoah Valley",
-      "short_description": "Private nonprofit degree-granting college or university based in Staunton, Virginia.",
-      "sources": [
-        {
-          "title": "Mary Baldwin University official website",
-          "url": "https://www.marybaldwin.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Mary Baldwin University admissions and public contact information",
-          "url": "https://marybaldwin.edu/admissions/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Mary Baldwin University is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.marybaldwin.edu/"
-    },
-    {
-      "address_line": "2807 N Glebe Rd",
-      "capabilities": [],
-      "city": "Arlington",
-      "contact_email": "",
-      "contact_phone": "703-522-5600",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.marymount.edu/Admissions",
-      "latitude": 38.905562,
-      "location_precision": "site",
-      "longitude": -77.128785,
-      "missions": [],
-      "name": "Marymount University",
-      "overview": "Marymount University is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "22207-4299",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Northern Virginia",
-      "short_description": "Private nonprofit degree-granting college or university based in Arlington, Virginia.",
-      "sources": [
-        {
-          "title": "Marymount University official website",
-          "url": "https://www.marymount.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Marymount University admissions and public contact information",
-          "url": "https://www.marymount.edu/Admissions"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Marymount University is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.marymount.edu/"
-    },
-    {
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration",
@@ -10142,48 +8974,6 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
-      "address_line": "3441 Mountain Empire Road",
-      "capabilities": [],
-      "city": "Big Stone Gap",
-      "contact_email": "",
-      "contact_phone": "276-523-2400",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.mecc.edu/step1/",
-      "latitude": 36.854421,
-      "location_precision": "site",
-      "longitude": -82.758277,
-      "missions": [],
-      "name": "Mountain Empire Community College",
-      "overview": "Mountain Empire Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24219",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Southwest Virginia",
-      "short_description": "Public degree-granting community college based in Big Stone Gap, Virginia.",
-      "sources": [
-        {
-          "title": "Mountain Empire Community College official website",
-          "url": "https://www.mecc.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Mountain Empire Community College admissions and public contact information",
-          "url": "https://www.mecc.edu/step1/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Mountain Empire Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.mecc.edu/"
-    },
-    {
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -10226,48 +9016,6 @@
       ],
       "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
       "website_url": "https://courses.vccs.edu/colleges/mecc/courses/UMS-UnmannedSystems"
-    },
-    {
-      "address_line": "1000 College Drive",
-      "capabilities": [],
-      "city": "Clifton Forge",
-      "contact_email": "",
-      "contact_phone": "540-863-2800",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.mgcc.edu/student-support",
-      "latitude": 37.812275,
-      "location_precision": "site",
-      "longitude": -79.852536,
-      "missions": [],
-      "name": "Mountain Gateway Community College",
-      "overview": "Mountain Gateway Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24422-1000",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Roanoke Valley",
-      "short_description": "Public degree-granting community college based in Clifton Forge, Virginia.",
-      "sources": [
-        {
-          "title": "Mountain Gateway Community College official website",
-          "url": "https://www.mgcc.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Mountain Gateway Community College admissions and public contact information",
-          "url": "https://www.mgcc.edu/student-support"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Mountain Gateway Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.mgcc.edu/"
     },
     {
       "capabilities": [
@@ -11351,48 +10099,6 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
-      "address_line": "5251 College Drive",
-      "capabilities": [],
-      "city": "Dublin",
-      "contact_email": "",
-      "contact_phone": "540-674-3600",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.nr.edu/admissions/",
-      "latitude": 37.105239,
-      "location_precision": "site",
-      "longitude": -80.69605,
-      "missions": [],
-      "name": "New River Community College",
-      "overview": "New River Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24084-3660",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "New River Valley",
-      "short_description": "Public degree-granting community college based in Dublin, Virginia.",
-      "sources": [
-        {
-          "title": "New River Community College official website",
-          "url": "https://www.nr.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "New River Community College admissions and public contact information",
-          "url": "https://www.nr.edu/admissions/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "New River Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.nr.edu/"
-    },
-    {
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -12260,48 +10966,6 @@
       "website_url": "https://www.nsu.edu/"
     },
     {
-      "address_line": "4001 Wakefield Chapel Rd",
-      "capabilities": [],
-      "city": "Annandale",
-      "contact_email": "",
-      "contact_phone": "703-323-3000",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.nvcc.edu/admissions/index.html",
-      "latitude": 38.833361,
-      "location_precision": "site",
-      "longitude": -77.236718,
-      "missions": [],
-      "name": "Northern Virginia Community College",
-      "overview": "Northern Virginia Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "22003-3796",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Northern Virginia",
-      "short_description": "Public degree-granting community college based in Annandale, Virginia.",
-      "sources": [
-        {
-          "title": "Northern Virginia Community College official website",
-          "url": "https://www.nvcc.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Northern Virginia Community College admissions and public contact information",
-          "url": "https://www.nvcc.edu/admissions/index.html"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Northern Virginia Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.nvcc.edu/"
-    },
-    {
       "address_line": "1815 Seabee Road",
       "capabilities": [
         "Autonomy and artificial intelligence",
@@ -13134,132 +11798,6 @@
       "website_url": "https://www.parsons.com/2026/06/parsons-cuas-solutions-strengthen-national-security-and-protect-critical-infrastructure/"
     },
     {
-      "address_line": "645 Patriot Avenue",
-      "capabilities": [],
-      "city": "Martinsville",
-      "contact_email": "",
-      "contact_phone": "276-656-0200",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.patrickhenry.edu/how-to-get-started/how-to-apply",
-      "latitude": 36.737893,
-      "location_precision": "site",
-      "longitude": -79.871133,
-      "missions": [],
-      "name": "Patrick & Henry Community College",
-      "overview": "Patrick & Henry Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24112",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Southside Virginia",
-      "short_description": "Public degree-granting community college based in Martinsville, Virginia.",
-      "sources": [
-        {
-          "title": "Patrick & Henry Community College official website",
-          "url": "https://www.patrickhenry.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Patrick & Henry Community College admissions and public contact information",
-          "url": "https://www.patrickhenry.edu/how-to-get-started/how-to-apply"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Patrick & Henry Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.patrickhenry.edu/"
-    },
-    {
-      "address_line": "10 Patrick Henry Circle",
-      "capabilities": [],
-      "city": "Purcellville",
-      "contact_email": "",
-      "contact_phone": "540-338-1776",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.phc.edu/admissions",
-      "latitude": 39.138687,
-      "location_precision": "site",
-      "longitude": -77.690939,
-      "missions": [],
-      "name": "Patrick Henry College",
-      "overview": "Patrick Henry College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "20132",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Northern Virginia",
-      "short_description": "Private nonprofit degree-granting college or university based in Purcellville, Virginia.",
-      "sources": [
-        {
-          "title": "Patrick Henry College official website",
-          "url": "https://www.phc.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Patrick Henry College admissions and public contact information",
-          "url": "https://www.phc.edu/admissions"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Patrick Henry College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.phc.edu/"
-    },
-    {
-      "address_line": "100 N College Dr",
-      "capabilities": [],
-      "city": "Franklin",
-      "contact_email": "",
-      "contact_phone": "757-569-6700",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.pdc.edu/attend/signing-up-for-classes/how-to-become-a-student/",
-      "latitude": 36.674527,
-      "location_precision": "site",
-      "longitude": -76.93757,
-      "missions": [],
-      "name": "Paul D Camp Community College",
-      "overview": "Paul D Camp Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23851",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Hampton Roads",
-      "short_description": "Public degree-granting community college based in Franklin, Virginia.",
-      "sources": [
-        {
-          "title": "Paul D Camp Community College official website",
-          "url": "https://www.pdc.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Paul D Camp Community College admissions and public contact information",
-          "url": "https://www.pdc.edu/attend/signing-up-for-classes/how-to-become-a-student/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Paul D Camp Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.pdc.edu/"
-    },
-    {
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration"
@@ -13297,48 +11835,6 @@
       ],
       "unmanned_systems_relevance": "Develops or integrates documented autonomous-ground-vehicle technology.",
       "website_url": "https://www.vedp.org/news/home-business-more-400-years"
-    },
-    {
-      "address_line": "501 College Drive",
-      "capabilities": [],
-      "city": "Charlottesville",
-      "contact_email": "",
-      "contact_phone": "434-977-3900",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.pvcc.edu/admissions/steps-to-enrollment",
-      "latitude": 38.006895,
-      "location_precision": "site",
-      "longitude": -78.483707,
-      "missions": [],
-      "name": "Piedmont Virginia Community College",
-      "overview": "Piedmont Virginia Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "22902-7589",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Central Virginia",
-      "short_description": "Public degree-granting community college based in Charlottesville, Virginia.",
-      "sources": [
-        {
-          "title": "Piedmont Virginia Community College official website",
-          "url": "https://www.pvcc.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Piedmont Virginia Community College admissions and public contact information",
-          "url": "https://www.pvcc.edu/admissions/steps-to-enrollment"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Piedmont Virginia Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.pvcc.edu/"
     },
     {
       "capabilities": [
@@ -13902,90 +12398,6 @@
       "website_url": "https://www.radford.edu/registrar/course-descriptions/unmanned-aerial-systems/index.html"
     },
     {
-      "address_line": "2500 Rivermont Ave",
-      "capabilities": [],
-      "city": "Lynchburg",
-      "contact_email": "",
-      "contact_phone": "434-947-8000",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.randolphcollege.edu/admission/",
-      "latitude": 37.437315,
-      "location_precision": "site",
-      "longitude": -79.171887,
-      "missions": [],
-      "name": "Randolph College",
-      "overview": "Randolph College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24503-1555",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Lynchburg Region",
-      "short_description": "Private nonprofit degree-granting college or university based in Lynchburg, Virginia.",
-      "sources": [
-        {
-          "title": "Randolph College official website",
-          "url": "https://www.randolphcollege.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Randolph College admissions and public contact information",
-          "url": "https://www.randolphcollege.edu/admission/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Randolph College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.randolphcollege.edu/"
-    },
-    {
-      "address_line": "204 Henry St",
-      "capabilities": [],
-      "city": "Ashland",
-      "contact_email": "",
-      "contact_phone": "804-752-7200",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.rmc.edu/admissions-and-aid/",
-      "latitude": 37.76043,
-      "location_precision": "site",
-      "longitude": -77.478416,
-      "missions": [],
-      "name": "Randolph-Macon College",
-      "overview": "Randolph-Macon College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23005-5505",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Greater Richmond",
-      "short_description": "Private nonprofit degree-granting college or university based in Ashland, Virginia.",
-      "sources": [
-        {
-          "title": "Randolph-Macon College official website",
-          "url": "https://www.rmc.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Randolph-Macon College admissions and public contact information",
-          "url": "https://www.rmc.edu/admissions-and-aid/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Randolph-Macon College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.rmc.edu/"
-    },
-    {
       "capabilities": [
         "Systems engineering and integration",
         "Operations, maintenance, and sustainment"
@@ -14024,90 +12436,6 @@
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
       "website_url": "https://www.prnewswire.com/news-releases/rapidflight-celebrates-grand-opening-of-uas-3d-manufacturing-headquarters-in-manassas-virginia-301884344.html"
-    },
-    {
-      "address_line": "12745 College Drive",
-      "capabilities": [],
-      "city": "Glenns",
-      "contact_email": "",
-      "contact_phone": "804-758-6730",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.rappahannock.edu/services-and-support/navigating-college/admission-and-records.html",
-      "latitude": 37.564425,
-      "location_precision": "site",
-      "longitude": -76.623913,
-      "missions": [],
-      "name": "Rappahannock Community College",
-      "overview": "Rappahannock Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23149-2616",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Hampton Roads",
-      "short_description": "Public degree-granting community college based in Glenns, Virginia.",
-      "sources": [
-        {
-          "title": "Rappahannock Community College official website",
-          "url": "https://www.rappahannock.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Rappahannock Community College admissions and public contact information",
-          "url": "https://www.rappahannock.edu/services-and-support/navigating-college/admission-and-records.html"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Rappahannock Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.rappahannock.edu/"
-    },
-    {
-      "address_line": "1000 Regent University Dr",
-      "capabilities": [],
-      "city": "Virginia Beach",
-      "contact_email": "",
-      "contact_phone": "757-352-4127",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.regent.edu/admissions-aid/",
-      "latitude": 36.801173,
-      "location_precision": "site",
-      "longitude": -76.194627,
-      "missions": [],
-      "name": "Regent University",
-      "overview": "Regent University is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23464",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Hampton Roads",
-      "short_description": "Private nonprofit degree-granting college or university based in Virginia Beach, Virginia.",
-      "sources": [
-        {
-          "title": "Regent University official website",
-          "url": "https://www.regent.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Regent University admissions and public contact information",
-          "url": "https://www.regent.edu/admissions-aid/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Regent University is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.regent.edu/"
     },
     {
       "address_line": "11301 Johnson Road",
@@ -14433,86 +12761,6 @@
       "website_url": "https://home.army.mil/belvoir/contact/phonebook"
     },
     {
-      "address_line": "316 Main Street",
-      "capabilities": [],
-      "city": "Newport News",
-      "contact_email": "",
-      "contact_phone": "757-240-2200",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.riversideonline.com/careers/college-of-health-careers",
-      "latitude": 37.034972,
-      "location_precision": "site",
-      "longitude": -76.456164,
-      "missions": [],
-      "name": "Riverside College of Health Careers",
-      "overview": "Riverside College of Health Careers is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23601",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Hampton Roads",
-      "short_description": "Private nonprofit degree-granting college or university based in Newport News, Virginia.",
-      "sources": [
-        {
-          "title": "Riverside College of Health Careers official website",
-          "url": "https://www.riversideonline.com/careers/college-of-health-careers"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Riverside College of Health Careers is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.riversideonline.com/careers/college-of-health-careers"
-    },
-    {
-      "address_line": "221 College Lane",
-      "capabilities": [],
-      "city": "Salem",
-      "contact_email": "",
-      "contact_phone": "540-375-2500",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.roanoke.edu/admissions",
-      "latitude": 37.294861,
-      "location_precision": "site",
-      "longitude": -80.055467,
-      "missions": [],
-      "name": "Roanoke College",
-      "overview": "Roanoke College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24153-3794",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Roanoke Valley",
-      "short_description": "Private nonprofit degree-granting college or university based in Salem, Virginia.",
-      "sources": [
-        {
-          "title": "Roanoke College official website",
-          "url": "https://www.roanoke.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Roanoke College admissions and public contact information",
-          "url": "https://www.roanoke.edu/admissions"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Roanoke College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.roanoke.edu/"
-    },
-    {
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -14698,48 +12946,6 @@
       ],
       "unmanned_systems_relevance": "Develops, integrates, manufactures, or supports documented autonomous and uncrewed systems across one or more operating domains.",
       "website_url": "https://www.scout.space/"
-    },
-    {
-      "address_line": "1441 Crossways Blvd, Suite 105",
-      "capabilities": [],
-      "city": "Chesapeake",
-      "contact_email": "",
-      "contact_phone": "757-388-2900",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.sentara.edu/admissions-aid",
-      "latitude": 36.777043,
-      "location_precision": "site",
-      "longitude": -76.243308,
-      "missions": [],
-      "name": "Sentara College of Health Sciences",
-      "overview": "Sentara College of Health Sciences is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23320",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Hampton Roads",
-      "short_description": "Private nonprofit degree-granting college or university based in Chesapeake, Virginia.",
-      "sources": [
-        {
-          "title": "Sentara College of Health Sciences official website",
-          "url": "https://www.sentara.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Sentara College of Health Sciences admissions and public contact information",
-          "url": "https://www.sentara.edu/admissions-aid"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Sentara College of Health Sciences is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.sentara.edu/"
     },
     {
       "capabilities": [
@@ -15185,174 +13391,6 @@
       "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
     },
     {
-      "address_line": "1 University Hill Drive",
-      "capabilities": [],
-      "city": "Buena Vista",
-      "contact_email": "",
-      "contact_phone": "540-261-8400",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://svu.edu/admissions/",
-      "latitude": 37.740368,
-      "location_precision": "site",
-      "longitude": -79.35037,
-      "missions": [],
-      "name": "Southern Virginia University",
-      "overview": "Southern Virginia University is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24416",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Shenandoah Valley",
-      "short_description": "Private nonprofit degree-granting college or university based in Buena Vista, Virginia.",
-      "sources": [
-        {
-          "title": "Southern Virginia University official website",
-          "url": "https://svu.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Southern Virginia University admissions and public contact information",
-          "url": "https://svu.edu/admissions/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Southern Virginia University is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://svu.edu/"
-    },
-    {
-      "address_line": "430 Clairmont Court - Suite 200",
-      "capabilities": [],
-      "city": "Colonial Heights",
-      "contact_email": "",
-      "contact_phone": "804-765-5800",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.schs.edu/admissions",
-      "latitude": 37.267704,
-      "location_precision": "site",
-      "longitude": -77.400278,
-      "missions": [],
-      "name": "Southside College of Health Sciences",
-      "overview": "Southside College of Health Sciences is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23834",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Greater Richmond",
-      "short_description": "Private nonprofit degree-granting college or university based in Colonial Heights, Virginia.",
-      "sources": [
-        {
-          "title": "Southside College of Health Sciences official website",
-          "url": "https://www.schs.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Southside College of Health Sciences admissions and public contact information",
-          "url": "https://www.schs.edu/admissions"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Southside College of Health Sciences is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.schs.edu/"
-    },
-    {
-      "address_line": "109 Campus Drive",
-      "capabilities": [],
-      "city": "Alberta",
-      "contact_email": "",
-      "contact_phone": "888-220-7822",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://southside.edu/admissions",
-      "latitude": 36.839066,
-      "location_precision": "site",
-      "longitude": -77.917962,
-      "missions": [],
-      "name": "Southside Virginia Community College",
-      "overview": "Southside Virginia Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23821",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Southside Virginia",
-      "short_description": "Public degree-granting community college based in Alberta, Virginia.",
-      "sources": [
-        {
-          "title": "Southside Virginia Community College official website",
-          "url": "https://www.southside.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Southside Virginia Community College admissions and public contact information",
-          "url": "https://southside.edu/admissions"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Southside Virginia Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.southside.edu/"
-    },
-    {
-      "address_line": "369 College Road US Rt. 19, 6 Miles S. Claypool Hill",
-      "capabilities": [],
-      "city": "Cedar Bluff",
-      "contact_email": "",
-      "contact_phone": "276-964-2555",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://sw.edu/admissions/",
-      "latitude": 37.006196,
-      "location_precision": "site",
-      "longitude": -81.796682,
-      "missions": [],
-      "name": "Southwest Virginia Community College",
-      "overview": "Southwest Virginia Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24609",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Southwest Virginia",
-      "short_description": "Public degree-granting community college based in Cedar Bluff, Virginia.",
-      "sources": [
-        {
-          "title": "Southwest Virginia Community College official website",
-          "url": "https://sw.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Southwest Virginia Community College admissions and public contact information",
-          "url": "https://sw.edu/admissions/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Southwest Virginia Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://sw.edu/"
-    },
-    {
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -15686,48 +13724,6 @@
       "website_url": "https://www.navsea.navy.mil/Home/SCSC/"
     },
     {
-      "address_line": "134 Chapel Drive",
-      "capabilities": [],
-      "city": "Sweet Briar",
-      "contact_email": "",
-      "contact_phone": "434-381-6100",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.sbc.edu/admissions/",
-      "latitude": 37.556725,
-      "location_precision": "site",
-      "longitude": -79.081014,
-      "missions": [],
-      "name": "Sweet Briar College",
-      "overview": "Sweet Briar College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24595-9998",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Lynchburg Region",
-      "short_description": "Private nonprofit degree-granting college or university based in Sweet Briar, Virginia.",
-      "sources": [
-        {
-          "title": "Sweet Briar College official website",
-          "url": "https://www.sbc.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Sweet Briar College admissions and public contact information",
-          "url": "https://www.sbc.edu/admissions/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Sweet Briar College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.sbc.edu/"
-    },
-    {
       "address_line": "16320 West Ridge Road",
       "capabilities": [
         "Operations, maintenance, and sustainment"
@@ -16007,48 +14003,6 @@
       ],
       "unmanned_systems_relevance": "Provides port, intermodal, staging, or semi-automated logistics infrastructure relevant to maritime autonomy, inspection, and deployment.",
       "website_url": "https://www.portofvirginia.com/gateway/capabilities/"
-    },
-    {
-      "address_line": "121 College Place",
-      "capabilities": [],
-      "city": "Norfolk",
-      "contact_email": "",
-      "contact_phone": "757-822-1111",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.tcc.edu/admission",
-      "latitude": 36.85009,
-      "location_precision": "site",
-      "longitude": -76.291376,
-      "missions": [],
-      "name": "Tidewater Community College",
-      "overview": "Tidewater Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23510",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Hampton Roads",
-      "short_description": "Public degree-granting community college based in Norfolk, Virginia.",
-      "sources": [
-        {
-          "title": "Tidewater Community College official website",
-          "url": "https://www.tcc.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Tidewater Community College admissions and public contact information",
-          "url": "https://www.tcc.edu/admission"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Tidewater Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.tcc.edu/"
     },
     {
       "address_line": "1428 Cedar Road",
@@ -16518,48 +14472,6 @@
       "website_url": "https://www.atlanticarea.uscg.mil/Our-Organization/District-Units/East-District/Sector-Virginia/"
     },
     {
-      "address_line": "3401 Brook Rd",
-      "capabilities": [],
-      "city": "Richmond",
-      "contact_email": "",
-      "contact_phone": "804-355-0671",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.upsem.edu/admissions-aid/apply-now/",
-      "latitude": 37.578928,
-      "location_precision": "site",
-      "longitude": -77.449314,
-      "missions": [],
-      "name": "Union Presbyterian Seminary",
-      "overview": "Union Presbyterian Seminary is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23227",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Greater Richmond",
-      "short_description": "Private nonprofit degree-granting college or university based in Richmond, Virginia.",
-      "sources": [
-        {
-          "title": "Union Presbyterian Seminary official website",
-          "url": "https://www.upsem.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Union Presbyterian Seminary admissions and public contact information",
-          "url": "https://www.upsem.edu/admissions-aid/apply-now/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Union Presbyterian Seminary is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.upsem.edu/"
-    },
-    {
       "address_line": "11827 Canon Boulevard, Suite 203",
       "capabilities": [
         "Systems engineering and integration",
@@ -16604,132 +14516,6 @@
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
       "website_url": "https://usi-inc.com/"
-    },
-    {
-      "address_line": "1501 Lakeside Dr",
-      "capabilities": [],
-      "city": "Lynchburg",
-      "contact_email": "",
-      "contact_phone": "434-544-8100",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.lynchburg.edu/undergraduate-admission/",
-      "latitude": 37.399774,
-      "location_precision": "site",
-      "longitude": -79.181653,
-      "missions": [],
-      "name": "University of Lynchburg",
-      "overview": "University of Lynchburg is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24501-3113",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Lynchburg Region",
-      "short_description": "Private nonprofit degree-granting college or university based in Lynchburg, Virginia.",
-      "sources": [
-        {
-          "title": "University of Lynchburg official website",
-          "url": "https://www.lynchburg.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "University of Lynchburg admissions and public contact information",
-          "url": "https://www.lynchburg.edu/undergraduate-admission/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "University of Lynchburg is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.lynchburg.edu/"
-    },
-    {
-      "address_line": "1301 College Ave",
-      "capabilities": [],
-      "city": "Fredericksburg",
-      "contact_email": "",
-      "contact_phone": "540-654-1000",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.umw.edu/admissions/",
-      "latitude": 38.302492,
-      "location_precision": "site",
-      "longitude": -77.476055,
-      "missions": [],
-      "name": "University of Mary Washington",
-      "overview": "University of Mary Washington is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "22401-5300",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Fredericksburg Region",
-      "short_description": "Public degree-granting college or university based in Fredericksburg, Virginia.",
-      "sources": [
-        {
-          "title": "University of Mary Washington official website",
-          "url": "https://www.umw.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "University of Mary Washington admissions and public contact information",
-          "url": "https://www.umw.edu/admissions/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "University of Mary Washington is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.umw.edu/"
-    },
-    {
-      "address_line": "410 Westhampton Way",
-      "capabilities": [],
-      "city": "University of Richmond",
-      "contact_email": "",
-      "contact_phone": "804-289-8000",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://admissions.richmond.edu/process/index.html",
-      "latitude": 37.577393,
-      "location_precision": "site",
-      "longitude": -77.538806,
-      "missions": [],
-      "name": "University of Richmond",
-      "overview": "University of Richmond is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23173",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Greater Richmond",
-      "short_description": "Private nonprofit degree-granting college or university based in University of Richmond, Virginia.",
-      "sources": [
-        {
-          "title": "University of Richmond official website",
-          "url": "https://www.richmond.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "University of Richmond admissions and public contact information",
-          "url": "https://admissions.richmond.edu/process/index.html"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "University of Richmond is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.richmond.edu/"
     },
     {
       "address_line": "1827 University Avenue",
@@ -17660,44 +15446,6 @@
       "website_url": "https://www.vtti.vt.edu/facilities/vac.html"
     },
     {
-      "address_line": "2221 Centerville Turnpike",
-      "capabilities": [],
-      "city": "Virginia Beach",
-      "contact_email": "",
-      "contact_phone": "757-479-3706",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.vbts.edu/",
-      "latitude": 36.765993,
-      "location_precision": "site",
-      "longitude": -76.189475,
-      "missions": [],
-      "name": "Virginia Beach Theological Seminary",
-      "overview": "Virginia Beach Theological Seminary is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23464-6847",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Hampton Roads",
-      "short_description": "Private nonprofit degree-granting college or university based in Virginia Beach, Virginia.",
-      "sources": [
-        {
-          "title": "Virginia Beach Theological Seminary official website",
-          "url": "https://www.vbts.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Virginia Beach Theological Seminary is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.vbts.edu/"
-    },
-    {
       "address_line": "910 W Franklin St",
       "capabilities": [
         "Autonomy and artificial intelligence",
@@ -18209,48 +15957,6 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
-      "address_line": "100 VHCC Drive",
-      "capabilities": [],
-      "city": "Abingdon",
-      "contact_email": "",
-      "contact_phone": "276-739-2400",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.vhcc.edu/start-vhcc",
-      "latitude": 36.698866,
-      "location_precision": "site",
-      "longitude": -82.001118,
-      "missions": [],
-      "name": "Virginia Highlands Community College",
-      "overview": "Virginia Highlands Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24212-0828",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Southwest Virginia",
-      "short_description": "Public degree-granting community college based in Abingdon, Virginia.",
-      "sources": [
-        {
-          "title": "Virginia Highlands Community College official website",
-          "url": "https://www.vhcc.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Virginia Highlands Community College admissions and public contact information",
-          "url": "https://www.vhcc.edu/start-vhcc"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Virginia Highlands Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.vhcc.edu/"
-    },
-    {
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -18692,48 +16398,6 @@
       ],
       "unmanned_systems_relevance": "Provides documented marine robotics, autonomy, sensing, navigation, or field-test capacity for surface and undersea systems.",
       "website_url": "https://digitalcommons.odu.edu/vmasc/"
-    },
-    {
-      "address_line": "99 Thomas Nelson Drive",
-      "capabilities": [],
-      "city": "Hampton",
-      "contact_email": "",
-      "contact_phone": "757-825-2700",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://vpcc.edu/services/enrollment",
-      "latitude": 37.063821,
-      "location_precision": "site",
-      "longitude": -76.420046,
-      "missions": [],
-      "name": "Virginia Peninsula Community College",
-      "overview": "Virginia Peninsula Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23666",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Hampton Roads",
-      "short_description": "Public degree-granting community college based in Hampton, Virginia.",
-      "sources": [
-        {
-          "title": "Virginia Peninsula Community College official website",
-          "url": "https://vpcc.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Virginia Peninsula Community College admissions and public contact information",
-          "url": "https://vpcc.edu/services/enrollment"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Virginia Peninsula Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://vpcc.edu/"
     },
     {
       "address_line": "99 Thomas Nelson Drive",
@@ -19996,128 +17660,6 @@
       "website_url": "https://virginiauas.com/"
     },
     {
-      "address_line": "1500 N Lombardy St",
-      "capabilities": [],
-      "city": "Richmond",
-      "contact_email": "",
-      "contact_phone": "804-257-5600",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.vuu.edu/admissions-at-union/apply-online",
-      "latitude": 37.562405,
-      "location_precision": "site",
-      "longitude": -77.450903,
-      "missions": [],
-      "name": "Virginia Union University",
-      "overview": "Virginia Union University is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23220",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Greater Richmond",
-      "short_description": "Private nonprofit degree-granting college or university based in Richmond, Virginia.",
-      "sources": [
-        {
-          "title": "Virginia Union University official website",
-          "url": "https://www.vuu.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Virginia Union University admissions and public contact information",
-          "url": "https://www.vuu.edu/admissions-at-union/apply-online"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Virginia Union University is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.vuu.edu/"
-    },
-    {
-      "address_line": "1980 Gallows Road",
-      "capabilities": [],
-      "city": "Vienna",
-      "contact_email": "",
-      "contact_phone": "703-323-5690",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.vuim.edu/admissions/",
-      "latitude": 38.91009,
-      "location_precision": "site",
-      "longitude": -77.22432,
-      "missions": [],
-      "name": "Virginia University of Integrative Medicine",
-      "overview": "Virginia University of Integrative Medicine is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "22182-5310",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Northern Virginia",
-      "short_description": "Private nonprofit degree-granting college or university based in Vienna, Virginia.",
-      "sources": [
-        {
-          "title": "Virginia University of Integrative Medicine official website",
-          "url": "https://www.vuim.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Virginia University of Integrative Medicine admissions and public contact information",
-          "url": "https://www.vuim.edu/admissions/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Virginia University of Integrative Medicine is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.vuim.edu/"
-    },
-    {
-      "address_line": "2058 Garfield Ave",
-      "capabilities": [],
-      "city": "Lynchburg",
-      "contact_email": "",
-      "contact_phone": "434-528-5276",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.vul.edu/",
-      "latitude": 37.395187,
-      "location_precision": "site",
-      "longitude": -79.151615,
-      "missions": [],
-      "name": "Virginia University of Lynchburg",
-      "overview": "Virginia University of Lynchburg is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24501",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Lynchburg Region",
-      "short_description": "Private nonprofit degree-granting college or university based in Lynchburg, Virginia.",
-      "sources": [
-        {
-          "title": "Virginia University of Lynchburg official website",
-          "url": "https://www.vul.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Virginia University of Lynchburg is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.vul.edu/"
-    },
-    {
       "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/",
       "activity_status": "active",
@@ -20168,48 +17710,6 @@
       "website_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
     },
     {
-      "address_line": "5817 Wesleyan Drive",
-      "capabilities": [],
-      "city": "Virginia Beach",
-      "contact_email": "",
-      "contact_phone": "757-455-3200",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.vwu.edu/enrollment-aid/",
-      "latitude": 36.868417,
-      "location_precision": "site",
-      "longitude": -76.18606,
-      "missions": [],
-      "name": "Virginia Wesleyan University",
-      "overview": "Virginia Wesleyan University is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "23455",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Hampton Roads",
-      "short_description": "Private nonprofit degree-granting college or university based in Virginia Beach, Virginia.",
-      "sources": [
-        {
-          "title": "Virginia Wesleyan University official website",
-          "url": "https://www.vwu.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Virginia Wesleyan University admissions and public contact information",
-          "url": "https://www.vwu.edu/enrollment-aid/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Virginia Wesleyan University is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.vwu.edu/"
-    },
-    {
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration",
@@ -20250,48 +17750,6 @@
       ],
       "unmanned_systems_relevance": "Builds a documented education or experiential-learning pathway in autonomous vehicles, robotics, uncrewed aircraft, sensing, integration, or prototyping.",
       "website_url": "https://www.virginiawestern.edu/academics/mechatronics/autonomous-vehicle-technology/"
-    },
-    {
-      "address_line": "3094 Colonial Ave",
-      "capabilities": [],
-      "city": "Roanoke",
-      "contact_email": "",
-      "contact_phone": "540-857-8922",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.virginiawestern.edu/get-started/",
-      "latitude": 37.245029,
-      "location_precision": "site",
-      "longitude": -79.973011,
-      "missions": [],
-      "name": "Virginia Western Community College",
-      "overview": "Virginia Western Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24015",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Roanoke Valley",
-      "short_description": "Public degree-granting community college based in Roanoke, Virginia.",
-      "sources": [
-        {
-          "title": "Virginia Western Community College official website",
-          "url": "https://www.virginiawestern.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Virginia Western Community College admissions and public contact information",
-          "url": "https://www.virginiawestern.edu/get-started/"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Virginia Western Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.virginiawestern.edu/"
     },
     {
       "capabilities": [
@@ -20593,48 +18051,6 @@
       ],
       "unmanned_systems_relevance": "Warrenton/Fauquier is included as public aviation infrastructure serving Warrenton. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
-    },
-    {
-      "address_line": "204 West Washington Street",
-      "capabilities": [],
-      "city": "Lexington",
-      "contact_email": "",
-      "contact_phone": "540-458-8400",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.wlu.edu/admissions",
-      "latitude": 37.788939,
-      "location_precision": "site",
-      "longitude": -79.443018,
-      "missions": [],
-      "name": "Washington and Lee University",
-      "overview": "Washington and Lee University is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24450-2116",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Shenandoah Valley",
-      "short_description": "Private nonprofit degree-granting college or university based in Lexington, Virginia.",
-      "sources": [
-        {
-          "title": "Washington and Lee University official website",
-          "url": "https://www.wlu.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Washington and Lee University admissions and public contact information",
-          "url": "https://www.wlu.edu/admissions"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Washington and Lee University is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.wlu.edu/"
     },
     {
       "address_line": "95 Aviation Way",
@@ -21047,48 +18463,6 @@
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
       "website_url": "https://www.wytheco.org/AgendaCenter/ViewFile/Agenda/_01272026-119"
-    },
-    {
-      "address_line": "1000 E Main Street",
-      "capabilities": [],
-      "city": "Wytheville",
-      "contact_email": "",
-      "contact_phone": "276-223-4700",
-      "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.wcc.vccs.edu/admissions",
-      "latitude": 36.95731,
-      "location_precision": "site",
-      "longitude": -81.071181,
-      "missions": [],
-      "name": "Wytheville Community College",
-      "overview": "Wytheville Community College is included at the institution level as part of Virginia's education and workforce infrastructure. The listing does not claim a dedicated unmanned-systems program unless a separate source-backed program is documented.",
-      "platform_domains": [],
-      "postal_code": "24382-3308",
-      "provenance": "nces-ipeds-higher-education",
-      "record_type": "university",
-      "region": "Southwest Virginia",
-      "short_description": "Public degree-granting community college based in Wytheville, Virginia.",
-      "sources": [
-        {
-          "title": "Wytheville Community College official website",
-          "url": "https://www.wcc.vccs.edu/"
-        },
-        {
-          "title": "NCES IPEDS 2024 institutional directory",
-          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
-        },
-        {
-          "title": "Wytheville Community College admissions and public contact information",
-          "url": "https://www.wcc.vccs.edu/admissions"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Workforce and talent",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Wytheville Community College is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
-      "website_url": "https://www.wcc.vccs.edu/"
     },
     {
       "capabilities": [

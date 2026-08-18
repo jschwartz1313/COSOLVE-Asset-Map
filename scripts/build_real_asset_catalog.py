@@ -6572,23 +6572,14 @@ def eligible_virginia_institutions():
     return institutions
 
 
-def institution_description(row):
-    city = row["CITY"].strip()
-    if row["CONTROL"] == "1" and row["ICLEVEL"] == "2":
-        return f"Public degree-granting community college based in {city}, Virginia."
-    if row["CONTROL"] == "1":
-        return f"Public degree-granting college or university based in {city}, Virginia."
-    if row["CONTROL"] == "2":
-        return f"Private nonprofit degree-granting college or university based in {city}, Virginia."
-    return f"Private degree-granting university based in {city}, Virginia."
-
-
 def university_records():
     detailed_assets = {item[0]: item for item in UNIVERSITY_ASSETS}
     records = []
     for row in eligible_virginia_institutions():
         name = row["catalog_name"]
         detailed_asset = detailed_assets.get(name)
+        if not detailed_asset:
+            continue
         latitude = round(float(row["LATITUDE"]), 6)
         longitude = round(float(row["LONGITUD"]), 6)
         website_url = normalize_public_url(row["WEBADDR"])
@@ -6602,46 +6593,24 @@ def university_records():
             "title": "NCES IPEDS 2024 institutional directory",
             "url": IPEDS_DIRECTORY_PAGE,
         }
-        if detailed_asset:
-            _name, _place, _region, description, source_key, _children = detailed_asset
-            institution_source = source(source_key)
-            relevance = (
-                f"{name} is mapped at the institution level to connect its source-backed "
-                "unmanned-systems research, education, operations, facilities, and programs."
-            )
-            categories = ["Research and technical depth", "Workforce and talent"]
-            domains = ["Cross-domain autonomy"]
-            capabilities = [
-                "Autonomy and artificial intelligence",
-                "Systems engineering and integration",
-            ]
-            missions = ["Training and experimentation"]
-            provenance = "university-institution"
-            overview = (
-                f"This institution-level entry connects {name} to its separately documented "
-                "research, education, facilities, operations, and programs in the asset catalog."
-            )
-        else:
-            description = institution_description(row)
-            institution_source = {
-                "title": f"{name} official website",
-                "url": website_url,
-            }
-            relevance = (
-                f"{name} is included as statewide higher-education and workforce infrastructure. "
-                "Inclusion identifies institutional capacity and does not by itself indicate a "
-                "documented unmanned-systems program."
-            )
-            categories = ["Workforce and talent"]
-            domains = []
-            capabilities = []
-            missions = []
-            provenance = "nces-ipeds-higher-education"
-            overview = (
-                f"{name} is included at the institution level as part of Virginia's education "
-                "and workforce infrastructure. The listing does not claim a dedicated unmanned-"
-                "systems program unless a separate source-backed program is documented."
-            )
+        _name, _place, _region, description, source_key, _children = detailed_asset
+        institution_source = source(source_key)
+        relevance = (
+            f"{name} is mapped at the institution level to connect its source-backed "
+            "unmanned-systems research, education, operations, facilities, and programs."
+        )
+        categories = ["Research and technical depth", "Workforce and talent"]
+        domains = ["Cross-domain autonomy"]
+        capabilities = [
+            "Autonomy and artificial intelligence",
+            "Systems engineering and integration",
+        ]
+        missions = ["Training and experimentation"]
+        provenance = "university-institution"
+        overview = (
+            f"This institution-level entry connects {name} to its separately documented "
+            "research, education, facilities, operations, and programs in the asset catalog."
+        )
 
         contact_source = {
             "title": f"{name} admissions and public contact information",
@@ -6829,9 +6798,9 @@ def main():
         "record_count": len(records),
         "methodology": (
             "Current operational public-use aviation facilities from the FAA feature service, "
-            "publicly listed installations from the Virginia Military Factbook, active Virginia "
-            "public and private nonprofit degree-granting institutions from the NCES IPEDS 2024 "
-            "directory (plus ECPI University), and a curated set of source-backed ecosystem "
+            "publicly listed installations from the Virginia Military Factbook, selected Virginia "
+            "degree-granting institutions with separately documented unmanned-systems connections "
+            "from the NCES IPEDS 2024 directory, and a curated set of source-backed ecosystem "
             "records. Specific street and site locations are "
             "anchored to official public address sources and geocoded against the U.S. Census "
             "address ranges or named-site map data; locality points are retained when the public "
