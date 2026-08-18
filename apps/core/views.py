@@ -163,6 +163,7 @@ def asset_detail(request, slug):
         .select_related("region")
         .order_by("-shared_categories", "name")[:6]
     )
+    public_sources = tuple(source for source in asset.sources.all() if source.is_public)
     return render(
         request,
         "assets/detail.html",
@@ -173,6 +174,7 @@ def asset_detail(request, slug):
             "incoming_relationships": incoming_relationships,
             "incoming_relationship_count": incoming_relationships.count(),
             "similar_assets": similar_assets,
+            "public_sources": public_sources,
             "history_entries": asset_history_entries(asset, request.user.is_staff),
         },
     )

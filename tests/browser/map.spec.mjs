@@ -605,6 +605,14 @@ test("asset detail profiles stay readable and within the viewport", async ({ pag
   await expect(reviewStatus).toBeVisible();
   await expect(reviewStatus).toContainText("Review status");
   await expect(page.locator(".detail-header .verification-block")).toHaveCount(0);
+  const similarAssets = page.locator(".similar-assets-disclosure");
+  const sources = page.locator(".sources-disclosure");
+  await expect(similarAssets).not.toHaveAttribute("open", "");
+  await expect(sources).not.toHaveAttribute("open", "");
+  await similarAssets.locator("summary").click();
+  await expect(similarAssets.locator(".relationship-list")).toBeVisible();
+  await sources.locator("summary").click();
+  await expect(sources.locator(".source-list")).toBeVisible();
   expect(
     await page.locator(".detail-grid").evaluate(
       (grid, status) => Boolean(grid.compareDocumentPosition(status) & Node.DOCUMENT_POSITION_FOLLOWING),

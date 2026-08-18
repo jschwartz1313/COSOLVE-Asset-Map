@@ -171,8 +171,9 @@ class CoreViewTests(TestCase):
         response = self.client.get(reverse("core:asset-detail", args=[asset.slug]))
 
         self.assertContains(response, "Record history")
-        self.assertContains(response, 'class="record-history-disclosure"')
-        self.assertNotContains(response, 'class="record-history-disclosure" open')
+        self.assertContains(response, 'class="detail-disclosure record-history-disclosure"')
+        self.assertNotContains(response, 'class="detail-disclosure record-history-disclosure" open')
+        self.assertContains(response, 'class="detail-disclosure sources-disclosure"')
         self.assertContains(response, "2 entries")
         self.assertContains(response, "Record added")
         self.assertContains(response, "Short Description")
