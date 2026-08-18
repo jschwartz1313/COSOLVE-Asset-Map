@@ -755,7 +755,7 @@ test("about page reports review status without an empty date range", async ({ pa
   const directoryButton = page.getByRole("link", { name: "Browse the directory" });
   const publicationBox = await publicationNote.boundingBox();
   const directoryButtonBox = await directoryButton.boundingBox();
-  expect(directoryButtonBox.y - (publicationBox.y + publicationBox.height)).toBeGreaterThanOrEqual(20);
+  expect(directoryButtonBox.y - (publicationBox.y + publicationBox.height)).toBeGreaterThanOrEqual(40);
 });
 
 test("account recovery is available from the sign-in page", async ({ page }) => {
