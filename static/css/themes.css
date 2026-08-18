@@ -311,7 +311,7 @@ html[data-theme="showcase"] .site-footer { background: #05090a; border-top: 3px 
 .showcase-credits a { color: #9fbdb8; font-size: 11px; }
 body.showcase-cover-open { overflow: hidden; }
 
-html[data-theme="showcase"] .map-workspace { grid-template-columns: 292px minmax(360px, 1fr) 338px; background: #090f11; }
+html[data-theme="showcase"] .map-workspace { --filter-panel-width: 292px; --results-panel-width: 338px; background: #090f11; }
 html[data-theme="showcase"] .filters-panel,
 html[data-theme="showcase"] .results-panel { background: rgb(14 23 25 / 97%); }
 html[data-theme="showcase"] .filters-panel { border-right: 2px solid #536c69; }
@@ -491,7 +491,7 @@ html[data-theme="showcase-light"] .showcase-credits { color: var(--ink-muted); b
 html[data-theme="showcase-light"] .showcase-credits summary { color: var(--ink); }
 html[data-theme="showcase-light"] .showcase-credits a { color: var(--brand-dark); }
 
-html[data-theme="showcase-light"] .map-workspace { grid-template-columns: 292px minmax(360px, 1fr) 338px; background: var(--surface); }
+html[data-theme="showcase-light"] .map-workspace { --filter-panel-width: 292px; --results-panel-width: 338px; background: var(--surface); }
 html[data-theme="showcase-light"] .filters-panel,
 html[data-theme="showcase-light"] .results-panel { background: rgb(255 255 255 / 97%); }
 html[data-theme="showcase-light"] .filters-panel { border-right: 2px solid var(--line-strong); }
@@ -612,7 +612,7 @@ body.showcase-arrival .map-workspace { animation: showcaseWorkspaceArrival 760ms
   .appearance-switcher button { min-width: 38px; padding-inline: 7px; }
   .appearance-switcher button > span:last-child { display: none; }
   html[data-theme="showcase"] .map-workspace,
-  html[data-theme="showcase-light"] .map-workspace { grid-template-columns: 260px minmax(340px, 1fr) 304px; }
+  html[data-theme="showcase-light"] .map-workspace { --filter-panel-width: 260px; --results-panel-width: 304px; }
   .showcase-photo-grid { width: calc(100% - 48px); }
 }
 
@@ -620,8 +620,6 @@ body.showcase-arrival .map-workspace { animation: showcaseWorkspaceArrival 760ms
   .site-header { display: flex; gap: 14px; }
   .appearance-switcher button { min-width: 48px; }
   .primary-nav { margin-left: auto; }
-  html[data-theme="showcase"] .map-workspace,
-  html[data-theme="showcase-light"] .map-workspace { grid-template-columns: minmax(0, 1fr) 310px; }
   .showcase-topbar { padding-inline: 28px; }
   .showcase-hero { padding: 102px 40px 64px; }
   .showcase-cover-copy { width: min(640px, 78vw); }
@@ -709,8 +707,6 @@ body.showcase-arrival .map-workspace { animation: showcaseWorkspaceArrival 760ms
   .showcase-final { min-height: 78dvh; padding: 78px 20px; }
   .showcase-credits { padding: 24px 20px 42px; }
   .showcase-credits p { display: grid; }
-  html[data-theme="showcase"] .map-workspace,
-  html[data-theme="showcase-light"] .map-workspace { grid-template-columns: 1fr; }
   html[data-theme="showcase"] .asset-detail-page .detail-header,
   html[data-theme="showcase-light"] .asset-detail-page .detail-header { min-height: 360px; padding: 130px 20px 24px; }
   html[data-theme="showcase"] .page-heading h1,

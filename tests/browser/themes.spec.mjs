@@ -5,9 +5,41 @@ const catalog = JSON.parse(
   readFileSync(new URL("../../data/virginia_real_assets.json", import.meta.url), "utf8"),
 );
 
+async function expectContiguousMapPanels(page) {
+  if ((await page.viewportSize()).width <= 650) {
+    await expect(page.locator('[data-panel-resizer="left"]')).toBeHidden();
+    await expect(page.locator('[data-panel-resizer="right"]')).toBeHidden();
+    return;
+  }
+
+  const layout = await page.locator(".map-workspace").evaluate((workspace) => {
+    const filter = workspace.querySelector(".filters-panel").getBoundingClientRect();
+    const leftResizer = workspace.querySelector('[data-panel-resizer="left"]').getBoundingClientRect();
+    const map = workspace.querySelector(".map-stage").getBoundingClientRect();
+    const rightResizer = workspace.querySelector('[data-panel-resizer="right"]').getBoundingClientRect();
+    const results = workspace.querySelector(".results-panel").getBoundingClientRect();
+    return {
+      filterRight: filter.right,
+      leftResizerLeft: leftResizer.left,
+      leftResizerRight: leftResizer.right,
+      mapLeft: map.left,
+      mapRight: map.right,
+      rightResizerLeft: rightResizer.left,
+      rightResizerRight: rightResizer.right,
+      resultsLeft: results.left,
+    };
+  });
+
+  expect(layout.leftResizerLeft).toBeCloseTo(layout.filterRight, 0);
+  expect(layout.mapLeft).toBeCloseTo(layout.leftResizerRight, 0);
+  expect(layout.rightResizerLeft).toBeCloseTo(layout.mapRight, 0);
+  expect(layout.resultsLeft).toBeCloseTo(layout.rightResizerRight, 0);
+}
+
 test("four presentation modes preserve the same map data and controls", async ({ page }) => {
   await page.goto("/map/");
   await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
+  await expectContiguousMapPanels(page);
 
   const originalWorkspace = await page.locator(".map-workspace").boundingBox();
   const originalFilters = await page.locator(".filters-panel").boundingBox();
@@ -19,6 +51,7 @@ test("four presentation modes preserve the same map data and controls", async ({
     "true",
   );
   await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
+  await expectContiguousMapPanels(page);
   expect(await page.locator(".map-workspace").boundingBox()).toEqual(originalWorkspace);
   expect(await page.locator(".filters-panel").boundingBox()).toEqual(originalFilters);
 
@@ -29,6 +62,7 @@ test("four presentation modes preserve the same map data and controls", async ({
   await page.locator("[data-showcase-enter]").first().click();
   await expect(page.locator("[data-showcase-cover]")).toBeHidden();
   await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
+  await expectContiguousMapPanels(page);
 
   await page.reload();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "showcase");
@@ -44,6 +78,7 @@ test("four presentation modes preserve the same map data and controls", async ({
   await page.locator("[data-showcase-enter]").first().click();
   await expect(page.locator("[data-showcase-cover]")).toBeHidden();
   await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
+  await expectContiguousMapPanels(page);
 
   await page.reload();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "showcase-light");
