@@ -128,14 +128,62 @@ test("map credits stay compact while full source notes remain available", async 
   const sources = page.locator(".map-source-disclosure");
   await expect(sources).not.toHaveAttribute("open", "");
   await expect(sources).toHaveCSS("padding-top", "0px");
+  expect((await sources.boundingBox()).width).toBeGreaterThanOrEqual(140);
+  expect(
+    await sources.locator("summary").evaluate((summary) => summary.scrollWidth <= summary.clientWidth),
+  ).toBe(true);
   await sources.locator("summary").click();
   await expect(sources).toHaveAttribute("open", "");
+  expect((await sources.boundingBox()).width).toBeGreaterThanOrEqual(280);
   await expect(sources).toContainText("Use limitations");
   await expect(sources).toContainText("U.S. Census Bureau TIGERweb");
   await expect(sources).toContainText("not federal designations");
   await expect(sources).toContainText("operational private-use heliports");
   await expect(sources).toContainText("FAA UAS Facility Map");
   await expect(sources).toContainText("Virginia Spaceport Authority");
+});
+
+test("visible map labels fit inside their controls across themes and widths", async ({ page }) => {
+  test.setTimeout(60_000);
+  const sizes = [
+    { width: 1280, height: 720 },
+    { width: 900, height: 768 },
+    { width: 390, height: 844 },
+  ];
+  const themes = ["classic", "dark", "showcase", "showcase-light"];
+
+  for (const size of sizes) {
+    await page.setViewportSize(size);
+    await page.goto("/map/");
+    const cover = page.locator("[data-showcase-cover]");
+    if (await cover.isVisible()) await page.locator("[data-showcase-enter]").first().click();
+
+    for (const theme of themes) {
+      await page.locator(`[data-theme-choice="${theme}"]`).click();
+      if (await cover.isVisible()) await page.locator("[data-showcase-enter]").first().click();
+
+      const overflows = await page
+        .locator(
+          ".map-workspace button, .map-workspace details > summary, "
+          + ".map-workspace .asset-type-badge, .map-workspace .active-filter-chip, "
+          + ".map-workspace .result-row h3, .map-workspace .result-row p",
+        )
+        .evaluateAll((elements) => elements
+          .filter((element) => {
+            const style = getComputedStyle(element);
+            return style.display !== "none"
+              && element.getClientRects().length > 0
+              && (element.scrollWidth > element.clientWidth + 1
+                || element.scrollHeight > element.clientHeight + 1);
+          })
+          .map((element) => ({
+            className: element.className,
+            text: element.textContent.trim().replace(/\s+/g, " ").slice(0, 80),
+          })));
+
+      expect(overflows, `${theme} at ${size.width}px`).toEqual([]);
+    }
+  }
 });
 
 test("map side panels can be resized and retain their widths", async ({ page }) => {
