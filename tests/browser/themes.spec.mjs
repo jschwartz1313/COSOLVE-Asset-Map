@@ -5,7 +5,7 @@ const catalog = JSON.parse(
   readFileSync(new URL("../../data/virginia_real_assets.json", import.meta.url), "utf8"),
 );
 
-test("five presentation modes preserve the same map data and controls", async ({ page }) => {
+test("four presentation modes preserve the same map data and controls", async ({ page }) => {
   await page.goto("/map/");
   await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
 
@@ -21,11 +21,6 @@ test("five presentation modes preserve the same map data and controls", async ({
   await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
   expect(await page.locator(".map-workspace").boundingBox()).toEqual(originalWorkspace);
   expect(await page.locator(".filters-panel").boundingBox()).toEqual(originalFilters);
-
-  await page.locator('[data-theme-choice="color"]').click();
-  await expect(page.locator("html")).toHaveAttribute("data-theme", "color");
-  await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
-  await expect(page.locator(".theme-page-visual")).toBeHidden();
 
   await page.locator('[data-theme-choice="showcase"]').click();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "showcase");
@@ -58,10 +53,8 @@ test("five presentation modes preserve the same map data and controls", async ({
   await expect(page.locator("html")).toHaveAttribute("data-theme", "classic");
 });
 
-test("color and showcase imagery appears on supporting pages", async ({ page }) => {
+test("showcase imagery appears on supporting pages", async ({ page }) => {
   await page.goto("/directory/");
-  await page.locator('[data-theme-choice="color"]').click();
-  await expect(page.locator(".theme-page-visual")).toBeVisible();
   await expect(page.locator(".directory-list")).toBeVisible();
 
   await page.locator('[data-theme-choice="showcase"]').click();
@@ -71,17 +64,17 @@ test("color and showcase imagery appears on supporting pages", async ({ page }) 
   await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
 });
 
-test("the five-mode switch remains usable on mobile", async ({ page }) => {
+test("the four-mode switch remains usable on mobile", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/map/");
   const switcher = page.locator(".appearance-switcher");
   await expect(switcher).toBeVisible();
-  await expect(switcher.locator("button")).toHaveCount(5);
+  await expect(switcher.locator("button")).toHaveCount(4);
   expect(
     await switcher.locator("button").evaluateAll((buttons) =>
       buttons.map((button) => getComputedStyle(button, "::after").content.replaceAll('"', "")),
     ),
-  ).toEqual(["Current", "Dark", "Color", "Show", "Light"]);
+  ).toEqual(["Current", "Dark", "Show", "Light"]);
 
   const switchBox = await switcher.boundingBox();
   expect(switchBox.x).toBeGreaterThanOrEqual(0);

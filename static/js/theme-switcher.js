@@ -1,9 +1,8 @@
-export const THEMES = ["classic", "dark", "color", "showcase", "showcase-light"];
+export const THEMES = ["classic", "dark", "showcase", "showcase-light"];
 
 export const THEME_LABELS = {
   classic: "Current",
   dark: "Dark",
-  color: "Color",
   showcase: "Showcase",
   "showcase-light": "Showcase Light",
 };
@@ -43,7 +42,6 @@ export function initializeThemeSwitcher(doc = document, win = window) {
   const themeColors = {
     classic: "#ffffff",
     dark: "#11171a",
-    color: "#ffffff",
     showcase: "#071823",
     "showcase-light": "#ffffff",
   };

@@ -52,7 +52,6 @@
 
 .swatch-classic { background: #fff; }
 .swatch-dark { background: #172127; }
-.swatch-color { background: #77364a; box-shadow: 4px 0 0 #39746b, -4px 0 0 #d5dfda; }
 .swatch-showcase { background: #111a1c; box-shadow: 0 0 0 2px #87bcb5; }
 .swatch-showcase-light { background: #fff; box-shadow: 0 0 0 2px #c63f2b; }
 
@@ -112,88 +111,6 @@ html[data-theme="dark"] .composition-cluster { color: var(--ink); background: #1
 html[data-theme="dark"] .region-map-label,
 html[data-theme="dark"] .asset-search-label { color: var(--ink); background: rgb(20 28 32 / 94%); }
 html[data-theme="dark"] .site-footer { background: #0a1013; }
-
-/* Color: an editorial atlas treatment using two restrained accents. */
-html[data-theme="color"] {
-  --ink: #202925;
-  --ink-muted: #64706a;
-  --paper: #fbfcfa;
-  --surface: #edf2ee;
-  --line: #ced8d1;
-  --line-strong: #91a39a;
-  --brand: #77364a;
-  --brand-dark: #552536;
-  --teal: #39746b;
-  --gold: #786a4c;
-  --blue: #49656b;
-  --focus: #2f6e65;
-  --shadow: 0 14px 34px rgb(40 59 51 / 15%);
-}
-
-html[data-theme="color"] .site-header { border-bottom: 4px solid #77364a; }
-html[data-theme="color"] .appearance-switcher { background: #eef2ef; border-color: #b9c5be; }
-html[data-theme="color"] .appearance-switcher button[aria-pressed="true"] { box-shadow: inset 0 -3px #39746b; }
-html[data-theme="color"] .theme-page-visual {
-  height: 112px;
-  display: block;
-  background-color: #dce7e0;
-  background-image: linear-gradient(rgb(28 48 40 / 36%), rgb(28 48 40 / 36%)), url("../img/themes/color-virginia-atlas.webp");
-  background-position: center 46%;
-  background-size: cover;
-  border-bottom: 5px solid #77364a;
-}
-html[data-theme="color"] body.map-page .theme-page-visual { display: none; }
-html[data-theme="color"] .eyebrow { color: #77364a; }
-html[data-theme="color"] .button.primary { box-shadow: 4px 4px 0 #27332d; }
-html[data-theme="color"] .button.primary:hover { transform: translate(-1px, -1px); box-shadow: 5px 5px 0 #27332d; }
-html[data-theme="color"] .directory-filters { background: #edf2ee; border-right: 4px solid #39746b; }
-html[data-theme="color"] .directory-list { border-top: 4px solid #77364a; }
-html[data-theme="color"] .directory-row { border-left: 3px solid transparent; }
-html[data-theme="color"] .directory-row:nth-child(odd) { border-left-color: #adc4ba; }
-html[data-theme="color"] .directory-row:hover { background: #eef5f1; }
-html[data-theme="color"] .filters-panel { background: #f0f4f1; border-right: 4px solid #39746b; }
-html[data-theme="color"] .panel-heading {
-  margin: -18px -16px 17px;
-  padding: 17px 16px 15px;
-  color: white;
-  background-color: #314b42;
-  background-image: linear-gradient(rgb(29 52 43 / 64%), rgb(29 52 43 / 64%)), url("../img/themes/color-virginia-atlas.webp");
-  background-position: 18% 52%;
-  background-size: 620px auto;
-  text-shadow: 0 1px 2px rgb(18 31 26 / 65%);
-}
-html[data-theme="color"] .panel-heading .eyebrow { color: #d4e4dd; }
-html[data-theme="color"] .results-panel { border-left: 4px solid #77364a; }
-html[data-theme="color"] .results-heading {
-  color: white;
-  background-color: #4b2935;
-  background-image: linear-gradient(rgb(58 29 40 / 70%), rgb(58 29 40 / 70%)), url("../img/themes/color-virginia-atlas.webp");
-  background-position: 92% 58%;
-  background-size: 720px auto;
-  border-bottom: 4px solid #39746b;
-  text-shadow: 0 1px 2px rgb(39 21 28 / 70%);
-}
-html[data-theme="color"] .results-heading .eyebrow { color: #d9e4df; }
-html[data-theme="color"] .results-heading .text-link { color: white; }
-html[data-theme="color"] .active-filter-bar { background: #e8f0ec; }
-html[data-theme="color"] .active-filter-chip { border-color: #88aaa0; box-shadow: 2px 2px 0 #b9cdc5; }
-html[data-theme="color"] .result-row { border-left: 3px solid transparent; }
-html[data-theme="color"] .result-row:nth-child(odd) { border-left-color: #adc4ba; }
-html[data-theme="color"] .result-row:hover,
-html[data-theme="color"] .result-row.is-selected { background: #eef5f1; }
-html[data-theme="color"] .map-layers,
-html[data-theme="color"] .map-actions,
-html[data-theme="color"] .map-analysis { border-top: 4px solid #39746b; }
-html[data-theme="color"] .map-legend { border-top: 4px solid #77364a; }
-html[data-theme="color"] #map .leaflet-tile-pane { filter: saturate(.88) contrast(1.02); }
-html[data-theme="color"] .composition-cluster { border-color: #27332d; box-shadow: 4px 4px 0 rgb(39 51 45 / 24%); }
-html[data-theme="color"] .detail-header { border-bottom: 5px solid #77364a; }
-html[data-theme="color"] .verification-block { border-left-color: #39746b; }
-html[data-theme="color"] .detail-sidebar section { border-top: 5px solid #39746b; }
-html[data-theme="color"] .data-stats div:nth-child(odd) { background: #e5eee9; }
-html[data-theme="color"] .region-column:first-child { border-top-color: #77364a; }
-html[data-theme="color"] .region-column:last-child { border-top-color: #39746b; }
-html[data-theme="color"] .site-footer { border-top: 5px solid #77364a; }
 
 /* Showcase: cinematic cover, editorial imagery, stronger motion, same functional data UI. */
 html[data-theme="showcase"] {
@@ -761,7 +678,6 @@ body.showcase-arrival .map-workspace { animation: showcaseWorkspaceArrival 760ms
   .primary-nav a, .nav-logout { width: 100%; height: 46px; }
   .nav-logout button { width: 100%; }
   .primary-nav a, .nav-logout button { font-size: 11px; }
-  html[data-theme="color"] .theme-page-visual { height: 82px; }
   html[data-theme="showcase"] .theme-page-visual,
   html[data-theme="showcase-light"] .theme-page-visual { height: 130px; }
   .showcase-topbar { min-height: 60px; padding-inline: 16px; }

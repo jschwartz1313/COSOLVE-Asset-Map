@@ -9,7 +9,7 @@
   <title>{% block title %}COSOLVE Asset Map{% endblock %}</title>
   <script>
     (() => {
-      const allowedThemes = ["classic", "dark", "color", "showcase", "showcase-light"];
+      const allowedThemes = ["classic", "dark", "showcase", "showcase-light"];
       try {
         const savedTheme = localStorage.getItem("cosolve-display-mode");
         if (allowedThemes.includes(savedTheme)) document.documentElement.dataset.theme = savedTheme;
@@ -23,8 +23,8 @@
   <link rel="stylesheet" href="{% static 'css/tokens.css' %}?v=20260717">
   <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20260806-1">
   {% block extra_css %}{% endblock %}
-  <link rel="stylesheet" href="{% static 'css/themes.css' %}?v=20260806-1">
-  <script type="module" src="{% static 'js/theme-switcher.js' %}?v=20260805-3"></script>
+  <link rel="stylesheet" href="{% static 'css/themes.css' %}?v=20260817-1">
+  <script type="module" src="{% static 'js/theme-switcher.js' %}?v=20260817-1"></script>
 </head>
 <body class="{% block body_class %}{% endblock %}">
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -41,9 +41,6 @@
       </button>
       <button type="button" data-theme-choice="dark" data-mobile-label="Dark" aria-pressed="false" title="Dark view">
         <span class="theme-swatch swatch-dark" aria-hidden="true"></span><span>Dark</span>
-      </button>
-      <button type="button" data-theme-choice="color" data-mobile-label="Color" aria-pressed="false" title="Color view">
-        <span class="theme-swatch swatch-color" aria-hidden="true"></span><span>Color</span>
       </button>
       <button type="button" data-theme-choice="showcase" data-mobile-label="Show" aria-pressed="false" title="Showcase view">
         <span class="theme-swatch swatch-showcase" aria-hidden="true"></span><span>Showcase</span>
