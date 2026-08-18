@@ -69,7 +69,7 @@ class AssetModelTests(TestCase):
         self.make_asset(name="Internal", visibility=Asset.Visibility.INTERNAL).save()
         self.assertQuerySetEqual(Asset.public.all(), [public])
 
-    def test_public_manager_excludes_unrelated_generic_university(self):
+    def test_public_manager_keeps_broad_institutions_and_excludes_specialty_schools(self):
         related = self.make_asset(
             name="Related University",
             record_type=Asset.RecordType.UNIVERSITY,
@@ -78,7 +78,7 @@ class AssetModelTests(TestCase):
             visibility=Asset.Visibility.PUBLIC,
         )
         related.save()
-        self.make_asset(
+        general = self.make_asset(
             name="Generic University",
             record_type=Asset.RecordType.UNIVERSITY,
             unmanned_systems_relevance=(
@@ -88,10 +88,20 @@ class AssetModelTests(TestCase):
             ),
             status=Asset.Status.SOURCE_BACKED,
             visibility=Asset.Visibility.PUBLIC,
+        )
+        general.save()
+        self.make_asset(
+            name="Edward Via College of Osteopathic Medicine",
+            record_type=Asset.RecordType.UNIVERSITY,
+            unmanned_systems_relevance=(
+                "Included as statewide higher-education and workforce infrastructure."
+            ),
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
         ).save()
 
-        self.assertQuerySetEqual(Asset.public.all(), [related])
-        self.assertEqual(Asset.objects.count(), 2)
+        self.assertQuerySetEqual(Asset.public.all(), [general, related])
+        self.assertEqual(Asset.objects.count(), 3)
 
     @override_settings(PUBLIC_REGION_SLUG="hampton-roads")
     def test_public_manager_enforces_deployment_region(self):

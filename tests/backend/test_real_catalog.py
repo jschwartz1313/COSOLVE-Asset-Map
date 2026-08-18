@@ -6,7 +6,7 @@ from django.conf import settings
 from django.core.management import call_command
 from django.test import TestCase
 
-from apps.assets.models import Asset, Relationship
+from apps.assets.models import Asset, Relationship, SPECIALIZED_HIGHER_ED_EXCLUSIONS
 from apps.sources.models import Source
 
 
@@ -55,10 +55,10 @@ class RealCatalogFileTests(TestCase):
             )
         )
 
-    def test_catalog_has_at_least_390_relevant_source_backed_records(self):
+    def test_catalog_has_at_least_440_relevant_source_backed_records(self):
         catalog = self.load_catalog()
         records = catalog["records"]
-        self.assertGreaterEqual(len(records), 390)
+        self.assertGreaterEqual(len(records), 440)
         self.assertEqual(catalog["record_count"], len(records))
         self.assertGreaterEqual(len(catalog["relationships"]), 90)
         self.assertFalse(any(record["name"].startswith("Demo ") for record in records))
@@ -83,11 +83,13 @@ class RealCatalogFileTests(TestCase):
         self.assertEqual(airport_regions["Lynchburg Rgnl/Preston Glenn Fld"], "Lynchburg Region")
         self.assertEqual(airport_regions["Roanoke/Blacksburg Rgnl (Woodrum Fld)"], "Roanoke Valley")
         universities = [record for record in records if record["record_type"] == "university"]
-        self.assertEqual(len(universities), 19)
+        self.assertEqual(len(universities), 69)
         self.assertTrue(
             {
+                "Blue Ridge Community College",
                 "Old Dominion University",
                 "University of Virginia",
+                "University of Mary Washington",
                 "Virginia Tech",
             }.issubset({record["name"] for record in universities})
         )
@@ -107,10 +109,22 @@ class RealCatalogFileTests(TestCase):
             )
         )
         self.assertTrue(all(record["contact_phone"] for record in universities))
+        general_institutions = [
+            record
+            for record in universities
+            if record["provenance"] == "nces-ipeds-higher-education"
+        ]
+        self.assertEqual(len(general_institutions), 50)
+        self.assertTrue(
+            all(
+                "does not by itself indicate a documented unmanned-systems program"
+                in record["unmanned_systems_relevance"]
+                for record in general_institutions
+            )
+        )
         self.assertFalse(
-            any(
-                record["provenance"] == "nces-ipeds-higher-education"
-                for record in universities
+            SPECIALIZED_HIGHER_ED_EXCLUSIONS.intersection(
+                record["name"] for record in universities
             )
         )
         hampton_roads = [record for record in records if record["region"] == "Hampton Roads"]
@@ -218,7 +232,10 @@ class RealCatalogFileTests(TestCase):
             records_by_name["Longbow Unmanned Systems Research and Test Center"]["website_url"],
             "https://www.sbir.gov/portfolio/1664155",
         )
-        self.assertNotIn("Hampden-Sydney College", records_by_name)
+        self.assertEqual(
+            records_by_name["Hampden-Sydney College"]["contact_url"],
+            "https://www.hsc.edu/admission-and-financial-aid/",
+        )
         self.assertEqual(
             records_by_name["National Institute of Aerospace"]["contact_url"],
             "https://www.nianet.org/",
@@ -296,9 +313,8 @@ class RealCatalogFileTests(TestCase):
         )
         self.assertFalse(
             Asset.public.filter(
-                unmanned_systems_relevance__contains=(
-                    "does not by itself indicate a documented unmanned-systems program"
-                )
+                record_type=Asset.RecordType.UNIVERSITY,
+                name__in=SPECIALIZED_HIGHER_ED_EXCLUSIONS,
             ).exists()
         )
         self.assertTrue(

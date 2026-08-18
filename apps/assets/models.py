@@ -17,9 +17,22 @@ from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region,
 
 from .scoping import apply_public_scope
 
-GENERIC_HIGHER_ED_RELEVANCE_MARKER = (
-    "Inclusion identifies institutional capacity and does not by itself indicate a "
-    "documented unmanned-systems program."
+SPECIALIZED_HIGHER_ED_EXCLUSIONS = frozenset(
+    {
+        "Appalachian College of Pharmacy",
+        "Ascent College",
+        "Bon Secours Memorial College of Nursing",
+        "Bon Secours St Mary's Hospital School of Medical Imaging",
+        "Centra College",
+        "Divine Mercy University",
+        "Edward Via College of Osteopathic Medicine",
+        "Riverside College of Health Careers",
+        "Sentara College of Health Sciences",
+        "Southside College of Health Sciences",
+        "Union Presbyterian Seminary",
+        "Virginia Beach Theological Seminary",
+        "Virginia University of Integrative Medicine",
+    }
 )
 
 
@@ -31,7 +44,7 @@ class PublicAssetManager(models.Manager):
             .filter(status__in=Asset.public_status_values(), visibility=Asset.Visibility.PUBLIC)
             .exclude(
                 record_type=Asset.RecordType.UNIVERSITY,
-                unmanned_systems_relevance__contains=GENERIC_HIGHER_ED_RELEVANCE_MARKER,
+                name__in=SPECIALIZED_HIGHER_ED_EXCLUSIONS,
             )
         )
         return apply_public_scope(queryset)
