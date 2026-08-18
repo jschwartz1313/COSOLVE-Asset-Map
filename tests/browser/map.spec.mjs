@@ -138,6 +138,59 @@ test("map credits stay compact while full source notes remain available", async 
   await expect(sources).toContainText("Virginia Spaceport Authority");
 });
 
+test("map side panels can be resized and retain their widths", async ({ page }) => {
+  await page.goto("/map/");
+  await expect(page.locator(".result-row").first()).toBeVisible();
+
+  const leftHandle = page.locator('[data-panel-resizer="left"]');
+  const rightHandle = page.locator('[data-panel-resizer="right"]');
+  const viewport = page.viewportSize();
+
+  if (viewport.width <= 650) {
+    await expect(leftHandle).toBeHidden();
+    await expect(rightHandle).toBeHidden();
+    return;
+  }
+
+  await expect(rightHandle).toBeVisible();
+  if (viewport.width <= 880) {
+    await expect(leftHandle).toBeHidden();
+    return;
+  }
+
+  await expect(leftHandle).toBeVisible();
+  await expect(leftHandle).toHaveAttribute("role", "separator");
+  const filterPanel = page.locator("#asset-filters-panel");
+  const resultsPanel = page.locator("#map-results-panel");
+  const initialFilterWidth = (await filterPanel.boundingBox()).width;
+
+  await leftHandle.focus();
+  await page.keyboard.press("ArrowRight");
+  const keyboardFilterWidth = (await filterPanel.boundingBox()).width;
+  expect(keyboardFilterWidth).toBeGreaterThan(initialFilterWidth + 10);
+  await expect(leftHandle).toHaveAttribute(
+    "aria-valuenow",
+    String(Math.round(keyboardFilterWidth)),
+  );
+
+  const initialResultsWidth = (await resultsPanel.boundingBox()).width;
+  const rightHandleBox = await rightHandle.boundingBox();
+  await page.mouse.move(rightHandleBox.x + (rightHandleBox.width / 2), rightHandleBox.y + 100);
+  await page.mouse.down();
+  await page.mouse.move(rightHandleBox.x - 48, rightHandleBox.y + 100, { steps: 5 });
+  await page.mouse.up();
+  const resizedResultsWidth = (await resultsPanel.boundingBox()).width;
+  expect(resizedResultsWidth).toBeGreaterThan(initialResultsWidth + 35);
+
+  await page.reload();
+  await expect(page.locator(".result-row").first()).toBeVisible();
+  expect((await filterPanel.boundingBox()).width).toBeCloseTo(keyboardFilterWidth, 0);
+  expect((await resultsPanel.boundingBox()).width).toBeCloseTo(resizedResultsWidth, 0);
+
+  await leftHandle.dblclick();
+  expect((await filterPanel.boundingBox()).width).toBeCloseTo(initialFilterWidth, 0);
+});
+
 test("copy view link preserves the map position, filters, and layers", async ({
   context,
   page,

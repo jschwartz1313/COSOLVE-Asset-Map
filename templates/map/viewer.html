@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260818-1">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260818-2">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
@@ -44,6 +44,8 @@
       </div>
     </form>
   </aside>
+
+  <div class="panel-resizer panel-resizer-left" data-panel-resizer="left" role="separator" aria-label="Resize filter panel" aria-controls="asset-filters-panel" aria-orientation="vertical" tabindex="0" title="Drag to resize filters. Double-click to reset."></div>
 
   <section class="map-stage" aria-label="Asset map">
     <header class="print-map-heading">
@@ -193,6 +195,8 @@
     <div id="map-status" class="map-status" role="status" hidden></div>
   </section>
 
+  <div class="panel-resizer panel-resizer-right" data-panel-resizer="right" role="separator" aria-label="Resize asset results panel" aria-controls="map-results-panel" aria-orientation="vertical" tabindex="0" title="Drag to resize asset results. Double-click to reset."></div>
+
   <aside class="results-panel" id="map-results-panel" aria-label="Filtered assets">
     <section class="results-view asset-results-view" id="asset-results-view">
       <div class="results-heading">
@@ -220,6 +224,6 @@
 </main>
 <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
 <script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
-  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260818-1"></script>
+  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260818-2"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}
