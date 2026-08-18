@@ -181,7 +181,6 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
 .metric-row { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: 16px; padding: 8px 0; color: var(--ink-muted); font-size: 13px; }
 .metric-row strong { color: var(--ink); }
 .metric-with-rate span small { display: block; margin-top: 2px; color: var(--ink-muted); font-size: 9px; }
-.comparison-note { margin: 36px 0 0; padding-top: 18px; color: var(--ink-muted); border-top: 1px solid var(--line); font-size: 11px; line-height: 1.55; }
 .region-column > .button { margin-top: 20px; }
 .data-stats { display: grid; grid-template-columns: repeat(3,1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .data-stats div { padding: 24px 18px; border-right: 1px solid var(--line); }

@@ -131,6 +131,8 @@ class CoreViewTests(TestCase):
         self.assertContains(response, "Data confidence")
         self.assertContains(response, "Leading capabilities")
         self.assertContains(response, "documented inventory")
+        self.assertContains(response, "does not establish that a real-world capability is absent")
+        self.assertNotContains(response, 'class="comparison-note"')
 
     def test_about_data_renders(self):
         response = self.client.get(reverse("core:about-data"))
