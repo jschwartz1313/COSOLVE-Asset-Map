@@ -160,6 +160,9 @@ test("map side panels can be resized and retain their widths", async ({ page }) 
 
   await expect(leftHandle).toBeVisible();
   await expect(leftHandle).toHaveAttribute("role", "separator");
+  expect(
+    await leftHandle.evaluate((handle) => getComputedStyle(handle, "::before").width),
+  ).toBe("1px");
   const filterPanel = page.locator("#asset-filters-panel");
   const resultsPanel = page.locator("#map-results-panel");
   const initialFilterWidth = (await filterPanel.boundingBox()).width;

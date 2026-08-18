@@ -36,6 +36,14 @@ async function expectContiguousMapPanels(page) {
   expect(layout.resultsLeft).toBeCloseTo(layout.rightResizerRight, 0);
 }
 
+async function expectUniformResultEdges(page) {
+  expect(
+    await page.locator(".result-row").evaluateAll((rows) =>
+      [...new Set(rows.slice(0, 6).map((row) => getComputedStyle(row).borderLeftWidth))],
+    ),
+  ).toEqual(["0px"]);
+}
+
 test("four presentation modes preserve the same map data and controls", async ({ page }) => {
   await page.goto("/map/");
   await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
@@ -63,6 +71,7 @@ test("four presentation modes preserve the same map data and controls", async ({
   await expect(page.locator("[data-showcase-cover]")).toBeHidden();
   await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
   await expectContiguousMapPanels(page);
+  await expectUniformResultEdges(page);
 
   await page.reload();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "showcase");
@@ -79,6 +88,7 @@ test("four presentation modes preserve the same map data and controls", async ({
   await expect(page.locator("[data-showcase-cover]")).toBeHidden();
   await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
   await expectContiguousMapPanels(page);
+  await expectUniformResultEdges(page);
 
   await page.reload();
   await expect(page.locator("html")).toHaveAttribute("data-theme", "showcase-light");
