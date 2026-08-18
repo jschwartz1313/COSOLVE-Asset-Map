@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260812-1">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260818-1">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
@@ -53,15 +53,16 @@
     <p class="visually-hidden" id="map-accessibility-note">Use the adjacent results list or directory for a text-based view of every mapped asset.</p>
     <div id="map" role="region" tabindex="0" aria-label="Interactive map of public asset listings" aria-describedby="map-accessibility-note"></div>
     <details class="map-source-disclosure">
-      <summary>Map sources</summary>
+      <summary>Sources &amp; disclaimer</summary>
       <div class="map-source-content">
+        <p class="map-use-disclaimer"><strong>Use limitations:</strong> This map supports ecosystem research and planning. It is not navigation, flight authorization, facility-access, security, or operational guidance. Check current FAA sources, NOTAMs, TFRs, charts, site owners, and applicable rules before making operational decisions. Locations may be generalized, records may change, and potential MPZ tracts are not federal designations.</p>
         <p><strong>Boundaries:</strong> U.S. Census Bureau TIGERweb (2025).</p>
         <p><strong>Ecosystem regions:</strong> COSOLVE working analytical groupings derived from Virginia regional organizations.</p>
-        <p><strong>Potential MPZ tracts:</strong> U.S. Census Bureau geography cross-referenced with public information from MARAD, the Port of Virginia, and the U.S. Navy. These are planning candidates, not federal designations.</p>
+        <p><strong>Potential MPZ tracts:</strong> U.S. Census Bureau geography cross-referenced with public information from MARAD, the Port of Virginia, and the U.S. Navy.</p>
         <p><strong>Asset points:</strong> Public institutional and government sources listed on each asset profile. Locations may be exact, approximate, or generalized.</p>
-        <p><strong>Heliports:</strong> FAA Airports Feature Service. The optional layer shows FAA-recorded operational private-use heliports for planning reference only. Inclusion does not imply public access, landing permission, operational availability, or flight authorization.</p>
-        <p><strong>Drone airspace:</strong> FAA UAS Facility Map, Class Airspace, Special Use Airspace, and National Security UAS Flight Restrictions feature services, retrieved August 12, 2026. These static layers do not replace current FAA authorization, NOTAM, TFR, or chart review.</p>
-        <p><strong>UAS test facilities:</strong> Published specifications from the Virginia Spaceport Authority, NASA Langley Research Center, and Virginia Tech. Locations and specifications are planning references; access and each proposed operation require facility and regulatory approval.</p>
+        <p><strong>Heliports:</strong> FAA Airports Feature Service records for operational private-use heliports.</p>
+        <p><strong>Drone airspace:</strong> FAA UAS Facility Map, Class Airspace, Special Use Airspace, and National Security UAS Flight Restrictions feature services, retrieved August 12, 2026.</p>
+        <p><strong>UAS test facilities:</strong> Published specifications from the Virginia Spaceport Authority, NASA Langley Research Center, and Virginia Tech.</p>
       </div>
     </details>
     <section class="print-analysis-report" aria-label="Printable asset register">
@@ -186,7 +187,6 @@
               <span><i class="legend-precision approximate"></i>Approximate</span>
               <span><i class="legend-precision locality"></i>Locality only</span>
             </div>
-            <small>Airspace overlays are static planning references, not flight authorization. Always check current FAA sources, NOTAMs, TFRs, facility access, and operating rules. Asset points may represent exact, approximate, or generalized locations.</small>
           </div>
       </details>
     </div>
@@ -220,6 +220,6 @@
 </main>
 <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
 <script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
-  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260812-1"></script>
+  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260818-1"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}

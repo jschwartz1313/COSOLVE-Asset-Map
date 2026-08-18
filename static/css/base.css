@@ -165,8 +165,6 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
 .record-history p { margin: 0; line-height: 1.35; }
 .record-history strong, .record-history span, .record-history small { display: block; }
 .record-history span, .record-history small { margin-top: 3px; color: var(--ink-muted); font-size: 11px; }
-.public-disclaimer { margin-top: 24px; padding: 13px 0; color: var(--ink-muted); border-top: 1px solid var(--line); font-size: 11px; }
-
 .page-heading { max-width: 760px; margin-bottom: 30px; }
 .page-heading h1 { margin: 8px 0 12px; font-size: 40px; line-height: 1.08; }
 .page-heading p { color: var(--ink-muted); font-size: 16px; line-height: 1.6; }
@@ -203,7 +201,10 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
 .footer-identity span, .footer-meta { font-size: 11px; }
 .footer-nav { display: flex; flex-wrap: wrap; justify-content: end; gap: 12px 24px; font-size: 12px; font-weight: 700; }
 .footer-nav a { text-underline-offset: 3px; }
-.footer-meta { grid-column: 1 / -1; padding-top: 15px; display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); }
+.footer-meta { grid-column: 1 / -1; padding-top: 15px; display: flex; justify-content: space-between; align-items: start; gap: 20px; border-top: 1px solid var(--line); }
+.footer-disclaimer { max-width: 620px; margin-left: auto; text-align: right; }
+.footer-disclaimer summary { color: var(--ink); cursor: pointer; font-weight: 750; list-style-position: inside; }
+.footer-disclaimer p { margin: 8px 0 0; line-height: 1.55; }
 
 .update-page { width: min(1040px, calc(100% - 40px)); margin: 0 auto; padding: 42px 0 60px; }
 .update-layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 64px; align-items: start; padding-top: 28px; border-top: 1px solid var(--line); }
@@ -323,6 +324,7 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
   .site-footer-inner { grid-template-columns: 1fr; gap: 22px; }
   .footer-nav { justify-content: start; }
   .footer-meta { grid-column: auto; flex-direction: column; gap: 5px; }
+  .footer-disclaimer { margin-left: 0; text-align: left; }
   .form-pair { grid-template-columns: 1fr; }
   .submission-context { grid-template-columns: 1fr; }
   .submission-context a { grid-column: 1; grid-row: auto; }
@@ -333,7 +335,7 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
 }
 
 @media print {
-  .skip-link, .site-header, .site-footer, .breadcrumbs, .detail-sidebar .button, .public-disclaimer { display: none !important; }
+  .skip-link, .site-header, .site-footer, .breadcrumbs, .detail-sidebar .button { display: none !important; }
   body { color: black; background: white; }
   .detail-page { width: 100%; padding: 0; }
   .detail-grid { grid-template-columns: minmax(0, 1fr) 240px; }

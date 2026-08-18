@@ -74,7 +74,8 @@ test("map layers toggle without moving the reset control", async ({ page }) => {
     .first()
     .dispatchEvent("click");
   await expect(page.locator(".heliport-popup")).toContainText("Private use");
-  await expect(page.locator(".heliport-popup")).toContainText("does not indicate public access");
+  await expect(page.locator(".heliport-popup")).toContainText("FAA aeronautical data");
+  await expect(page.locator(".heliport-popup")).not.toContainText("does not indicate public access");
 
   const controlledAirspaceToggle = page.locator("#controlled-airspace-toggle");
   await expect(controlledAirspaceToggle).not.toBeChecked();
@@ -84,9 +85,8 @@ test("map layers toggle without moving the reset control", async ({ page }) => {
   await page.locator(".map-legend summary").click();
   await expect(page.locator("[data-controlled-airspace-legend]")).toBeVisible();
   await page.locator(".leaflet-controlled-airspace-pane path").first().dispatchEvent("click");
-  await expect(page.locator(".drone-reference-popup")).toContainText(
-    "generally require FAA authorization",
-  );
+  await expect(page.locator(".drone-reference-popup")).toContainText("FAA flying near airports");
+  await expect(page.locator(".drone-reference-popup")).not.toContainText("Reference only");
 
   const facilityMapToggle = page.locator("#uas-facility-map-toggle");
   await facilityMapToggle.check();
@@ -109,9 +109,8 @@ test("map layers toggle without moving the reset control", async ({ page }) => {
     .dispatchEvent("click");
   const testSitePopup = page.locator(".drone-reference-popup", { hasText: "Published size" });
   await expect(testSitePopup).toBeVisible();
-  await expect(testSitePopup).toContainText(
-    "does not establish access or authorization",
-  );
+  await expect(testSitePopup).toContainText("Access");
+  await expect(testSitePopup).not.toContainText("does not establish access or authorization");
 });
 
 test("map credits stay compact while full source notes remain available", async ({
@@ -131,9 +130,10 @@ test("map credits stay compact while full source notes remain available", async 
   await expect(sources).toHaveCSS("padding-top", "0px");
   await sources.locator("summary").click();
   await expect(sources).toHaveAttribute("open", "");
+  await expect(sources).toContainText("Use limitations");
   await expect(sources).toContainText("U.S. Census Bureau TIGERweb");
-  await expect(sources).toContainText("planning candidates, not federal designations");
-  await expect(sources).toContainText("FAA-recorded operational private-use heliports");
+  await expect(sources).toContainText("not federal designations");
+  await expect(sources).toContainText("operational private-use heliports");
   await expect(sources).toContainText("FAA UAS Facility Map");
   await expect(sources).toContainText("Virginia Spaceport Authority");
 });

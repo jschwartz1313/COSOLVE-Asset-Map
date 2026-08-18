@@ -35,6 +35,5 @@
     </aside>
   </div>
   <div class="verification-block detail-verification-footer"><span>Review status</span><strong>{{ asset.verification_label }}</strong><small>{% if asset.is_editorially_reviewed %}Reviewed {{ asset.last_verified_at|date:"M j, Y" }} · {% endif %}{{ asset.get_location_precision_display }} location</small><small>Record updated {{ asset.updated_at|date:"M j, Y" }}</small></div>
-  <footer class="public-disclaimer">Informational ecosystem data only. Records may be incomplete and are not authoritative for operational use.</footer>
 </main>
 {% endblock %}

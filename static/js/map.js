@@ -56,7 +56,7 @@ function appendReferenceLink(container, label, url) {
   container.append(link);
 }
 
-function referencePopup({ status, title, entries, warning, links = [] }) {
+function referencePopup({ status, title, entries, links = [] }) {
   const popup = document.createElement("section");
   popup.className = "drone-reference-popup";
   const eyebrow = document.createElement("span");
@@ -66,9 +66,6 @@ function referencePopup({ status, title, entries, warning, links = [] }) {
   heading.textContent = title;
   popup.append(eyebrow, heading);
   appendDefinitionList(popup, entries);
-  const caution = document.createElement("strong");
-  caution.textContent = warning;
-  popup.append(caution);
   if (links.length) {
     const sources = document.createElement("p");
     sources.className = "drone-reference-sources";
@@ -367,8 +364,6 @@ export function createMap(root) {
             ["Published upper limit", properties.upper_limit],
             ["Hours note", properties.hours_note],
           ],
-          warning:
-            "Reference only. Drone operations in controlled airspace generally require FAA authorization.",
           links: [["FAA flying near airports", root.dataset.faaAirspaceInfoUrl]],
         }),
         { maxWidth: 330 },
@@ -428,8 +423,6 @@ export function createMap(root) {
             ["Airspace", properties.airspace_classes.join(", ")],
             ["Map effective", properties.map_effective],
           ],
-          warning:
-            "This value is not flight authorization and is not a general legal altitude limit.",
           links: [["FAA LAANC information", root.dataset.faaUasfmInfoUrl]],
         }),
         { maxWidth: 340 },
@@ -488,8 +481,6 @@ export function createMap(root) {
             ["Published schedule", properties.times_of_use],
             ["FAA remarks", properties.remarks],
           ],
-          warning:
-            "Not real-time. Check current FAA notices, NOTAMs, TFRs, and required authorization before flight.",
           links: [source],
         }),
         { maxWidth: 350 },
@@ -519,15 +510,12 @@ export function createMap(root) {
     identifier.textContent = properties.identifier
       ? `FAA identifier ${properties.identifier}`
       : "No public identifier listed";
-    const warning = document.createElement("strong");
-    warning.textContent =
-      "Reference only. This point does not indicate public access, landing permission, or flight authorization.";
     const source = document.createElement("a");
     source.href = "https://www.faa.gov/data/aero_data";
     source.target = "_blank";
     source.rel = "noopener";
     source.textContent = "FAA aeronautical data";
-    popup.append(status, heading, location, identifier, warning, source);
+    popup.append(status, heading, location, identifier, source);
     return popup;
   }
 
@@ -597,8 +585,6 @@ export function createMap(root) {
             ["Access", properties.access],
             ["Published constraints", properties.flight_constraints],
           ],
-          warning:
-            "Facility inclusion does not establish access or authorization for a proposed operation.",
           links,
         }),
         { maxWidth: 390 },

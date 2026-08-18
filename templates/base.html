@@ -21,7 +21,7 @@
   <link rel="icon" type="image/png" href="{% static 'img/cosolve-logo-black.png' %}">
   <link rel="apple-touch-icon" href="{% static 'img/cosolve-logo-black.png' %}">
   <link rel="stylesheet" href="{% static 'css/tokens.css' %}?v=20260717">
-  <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20260818-2">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20260818-3">
   {% block extra_css %}{% endblock %}
   <link rel="stylesheet" href="{% static 'css/themes.css' %}?v=20260817-1">
   <script type="module" src="{% static 'js/theme-switcher.js' %}?v=20260817-1"></script>
@@ -169,7 +169,10 @@
       </nav>
       <div class="footer-meta">
         {% if catalog_last_updated %}<span>Catalog updated {{ catalog_last_updated|date:"M j, Y" }}</span>{% endif %}
-        <span>Not for operational use</span>
+        <details class="footer-disclaimer">
+          <summary>Data disclaimer</summary>
+          <p>This public-source inventory supports ecosystem research and planning. Records may be incomplete, generalized, or change over time and should not be used for navigation, flight authorization, security planning, facility access, or operational decisions.</p>
+        </details>
       </div>
     </div>
   </footer>
