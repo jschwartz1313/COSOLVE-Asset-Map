@@ -2,6 +2,22 @@
   "reviewed_at": "2026-08-11",
   "methodology": "Current activity and public contacts were reviewed against direct official organization, agency, facility, or program pages. Personal contact information is included only when the organization publishes it for the relevant role.",
   "assets": {
+    "Amherst County Fire and EMS Drone Program": {
+      "activity_status": "active",
+      "current_activity": "Amherst County emergency-services minutes document field assistance from the Fire Department drone, and the county Fire and EMS equipment schedule lists two DJI Mavic 3T unmanned aircraft.",
+      "partnership_opportunities": "Program and mutual-aid questions can be directed to Amherst County Fire and EMS.",
+      "activity_source_url": "https://www.countyofamherst.com/egov/documents/1730910273_75599.pdf",
+      "contact_text": "Amherst County Fire and EMS",
+      "contact_phone": "434-946-9307",
+      "contact_email": "",
+      "contact_url": "https://www.countyofamherst.com/department/index.php?structureid=23",
+      "sources": [
+        {
+          "title": "Amherst County Fire and EMS contact information",
+          "url": "https://www.countyofamherst.com/department/index.php?structureid=23"
+        }
+      ]
+    },
     "Ashland Police Department Drone Program": {
       "activity_status": "active",
       "current_activity": "Ashland Police documents operational use of its drone, including infrared support during a missing-person response, and received a CY 2026 award to replace an aircraft already in service.",
@@ -207,6 +223,22 @@
         {
           "title": "Radford City Police Department contact information",
           "url": "https://www.radfordva.gov/Directory.aspx?did=16"
+        }
+      ]
+    },
+    "Staunton Police Department UAS Program": {
+      "activity_status": "active",
+      "current_activity": "Staunton's budget records place a homeland-security unmanned-aircraft grant in Police Department accounts, while the CY 2026 DCJS award documents an existing local first-responder aircraft eligible for replacement.",
+      "partnership_opportunities": "Program and public-safety coordination questions can be directed to the Staunton Police Department.",
+      "activity_source_url": "https://www.ci.staunton.va.us/Home/Components/MeetingsManager/MeetingAgenda/ShowPrimaryDocument/?agendaID=1054&includeTrash=False&isPub=True",
+      "contact_text": "Staunton Police Department",
+      "contact_phone": "540-332-3842",
+      "contact_email": "PoliceAdmin@ci.staunton.va.us",
+      "contact_url": "https://www.ci.staunton.va.us/departments/police",
+      "sources": [
+        {
+          "title": "Staunton Police Department contact information",
+          "url": "https://www.ci.staunton.va.us/departments/police"
         }
       ]
     },

@@ -45,13 +45,6 @@ ECOSYSTEM_ROLE_CATEGORIES = {
     "Core unmanned-systems asset",
     "Supporting ecosystem asset",
 }
-TARGET_LOCATION_UPGRADES = {
-    "ANRA Technologies",
-    "AeroVironment Corporate Headquarters",
-    "Aurora Flight Sciences",
-    "Virginia Tech Drone Park",
-    "Virginia Unmanned Systems Center",
-}
 TARGET_CONTACT_UPGRADES = {
     "ANRA Technologies",
     "Advanced Aircraft Company",
@@ -66,11 +59,13 @@ TARGET_CONTACT_UPGRADES = {
     "Wallops Research Park",
 }
 RESOLVED_JURISDICTION_RECORDS = {
+    "Amherst County Fire and EMS Drone Program",
     "Ashland Police Department Drone Program",
     "Haymarket Police Department Drone Program",
     "Madison County Sheriff's Office UAS Program",
     "Occoquan Police Department Public Safety Drone Program",
     "Radford City Police Department Drone Program",
+    "Staunton Police Department UAS Program",
     "Wise County Sheriff's Office Drone Program",
     "Wythe County Sheriff's Office Drone Program",
 }
@@ -267,7 +262,8 @@ class Command(BaseCommand):
                         changed_fields.append(field)
 
             if (
-                record["name"] in TARGET_LOCATION_UPGRADES
+                catalog_managed
+                and not asset.address_line
                 and asset.location_precision
                 in {
                     Asset.LocationPrecision.APPROXIMATE,

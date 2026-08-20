@@ -270,7 +270,13 @@ def data_quality(request):
         category_count=Count("strategic_categories", distinct=True),
         domain_count=Count("platform_domains", distinct=True),
         capability_count=Count("capabilities", distinct=True),
-    ).filter(Q(category_count=0) | Q(domain_count=0) | Q(capability_count=0))
+    ).filter(
+        Q(category_count=0)
+        | (
+            ~Q(record_type=Asset.RecordType.UNIVERSITY)
+            & (Q(domain_count=0) | Q(capability_count=0))
+        )
+    )
     disconnected = active_assets.annotate(
         outgoing_count=Count("outgoing_relationships", distinct=True),
         incoming_count=Count("incoming_relationships", distinct=True),

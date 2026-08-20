@@ -6,7 +6,7 @@ from django.conf import settings
 from django.core.management import call_command
 from django.test import TestCase
 
-from apps.assets.models import Asset, Relationship, SPECIALIZED_HIGHER_ED_EXCLUSIONS
+from apps.assets.models import SPECIALIZED_HIGHER_ED_EXCLUSIONS, Asset, Relationship
 from apps.sources.models import Source
 
 
@@ -253,7 +253,7 @@ class RealCatalogFileTests(TestCase):
         )
 
         self.assertGreaterEqual(len(manifest["reviewed_assets"]), 45)
-        self.assertEqual(len(manifest["follow_up_assets"]), 13)
+        self.assertEqual(len(manifest["follow_up_assets"]), 11)
         for name, source_urls in manifest["reviewed_assets"].items():
             self.assertIn(name, records_by_name)
             attached_urls = {source["url"] for source in records_by_name[name]["sources"]}
@@ -261,11 +261,13 @@ class RealCatalogFileTests(TestCase):
         self.assertTrue(set(manifest["follow_up_assets"]).issubset(records_by_name))
 
         resolved_names = {
+            "Amherst County Fire and EMS Drone Program",
             "Ashland Police Department Drone Program",
             "Haymarket Police Department Drone Program",
             "Madison County Sheriff's Office UAS Program",
             "Occoquan Police Department Public Safety Drone Program",
             "Radford City Police Department Drone Program",
+            "Staunton Police Department UAS Program",
             "Wise County Sheriff's Office Drone Program",
             "Wythe County Sheriff's Office Drone Program",
         }
@@ -463,6 +465,42 @@ class RealCatalogFileTests(TestCase):
             self.assertIn(record["activity_source_url"], source_urls)
             self.assertIn(record["contact_url"], source_urls)
 
+    def test_university_programs_use_documented_campus_or_facility_locations(self):
+        catalog = self.load_catalog()
+        records_by_name = {record["name"]: record for record in catalog["records"]}
+
+        campus_program = records_by_name["George Mason Autonomous Robotics Laboratory"]
+        self.assertEqual(campus_program["address_line"], "4400 University Dr")
+        self.assertEqual(campus_program["location_precision"], "site")
+        self.assertTrue(
+            any("nces.ed.gov/ipeds" in source["url"] for source in campus_program["sources"])
+        )
+
+        facility_locations = {
+            "Amherst County Fire and EMS Drone Program": "119 Taylor Street",
+            "Kentland Experimental Aerial Systems Laboratory": (
+                "Kentland Farm, 5250 Whitethorne Road"
+            ),
+            "Mid-Atlantic Aviation Partnership": "1991 Kraft Drive, Building 19",
+            "Mid-Atlantic Regional Spaceport": "7414 Atlantic Road",
+            "NASA Wallops Flight Facility": "34200 Fulton Street",
+            "Staunton Police Department UAS Program": "116 West Beverley Street",
+            "UVA Link Lab": "Olsson Hall, 151 Engineer's Way",
+            "Virginia Tech Transportation Institute": "3500 Transportation Research Plaza",
+        }
+        for name, address in facility_locations.items():
+            record = records_by_name[name]
+            self.assertEqual(record["address_line"], address, name)
+            self.assertIn(record["location_precision"], {"site", "exact"}, name)
+            self.assertIsNotNone(record["latitude"], name)
+            self.assertIsNotNone(record["longitude"], name)
+
+        # A multi-county test corridor must not inherit the Blacksburg campus point.
+        self.assertEqual(
+            records_by_name["Virginia Automated Corridors"]["location_precision"],
+            "locality",
+        )
+
         precise_assets = {
             "ANRA Technologies",
             "AeroVironment Corporate Headquarters",
@@ -597,6 +635,7 @@ class RealCatalogFileTests(TestCase):
             contact_url="https://vipc.org/initiatives/virginia-unmanned-systems-center/",
             status=Asset.Status.SOURCE_BACKED,
             visibility=Asset.Visibility.PUBLIC,
+            internal_notes="Catalog provenance: curated-public-source.",
         )
         hii = Asset.objects.create(
             name="HII Unmanned Systems Center of Excellence",

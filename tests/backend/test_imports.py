@@ -113,6 +113,28 @@ class ImportWorkflowTests(TestCase):
         self.assertContains(response, "Repeated relevance copy")
         self.assertContains(response, "Incomplete profiles or contacts")
 
+    def test_data_quality_taxonomy_queue_allows_broad_university_records(self):
+        university = Asset.objects.create(
+            name="Broad University",
+            record_type=Asset.RecordType.UNIVERSITY,
+            short_description="Statewide higher-education capacity.",
+            unmanned_systems_relevance="Supporting workforce infrastructure.",
+            status=Asset.Status.SOURCE_BACKED,
+        )
+        university.strategic_categories.add(self.category)
+        Asset.objects.create(
+            name="Unclassified Facility",
+            record_type=Asset.RecordType.FACILITY,
+            short_description="Facility requiring classification.",
+            unmanned_systems_relevance="Potential test infrastructure.",
+            status=Asset.Status.SOURCE_BACKED,
+        )
+
+        response = self.client.get(reverse("imports:data-quality"))
+
+        self.assertEqual(response.context["missing_taxonomy_count"], 1)
+        self.assertContains(response, "Unclassified Facility")
+
     def test_export_requires_staff(self):
         self.client.logout()
         response = self.client.get(reverse("imports:export"))

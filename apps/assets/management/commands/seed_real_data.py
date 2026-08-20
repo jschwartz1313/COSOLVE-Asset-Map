@@ -23,6 +23,9 @@ LEGACY_CATALOG_NAMES = {
     "Fort Gregg-Adams": "Fort Lee",
     "Fort Barfoot": "Fort Pickett",
     "VCU ARVL Robotic Drone System": "VCU UAV Research Laboratory",
+    "Amherst County Fire and EMS Drone Program": (
+        "Amherst County First Responder UAS Capability"
+    ),
     "Ashland Police Department Drone Program": (
         "Town of Ashland First Responder UAS Capability"
     ),
@@ -37,6 +40,9 @@ LEGACY_CATALOG_NAMES = {
     ),
     "Radford City Police Department Drone Program": (
         "City of Radford First Responder UAS Capability"
+    ),
+    "Staunton Police Department UAS Program": (
+        "City of Staunton First Responder UAS Capability"
     ),
     "Wise County Sheriff's Office Drone Program": (
         "Wise County First Responder UAS Capability"

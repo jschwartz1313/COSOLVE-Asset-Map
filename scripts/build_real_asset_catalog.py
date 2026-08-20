@@ -693,6 +693,27 @@ SOURCES = {
         "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
         "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
     ),
+    "amherst_fire_drone": (
+        "Amherst County emergency-services minutes documenting the Fire Department drone",
+        "https://www.countyofamherst.com/egov/documents/1730910273_75599.pdf",
+    ),
+    "amherst_fire_equipment": (
+        "Amherst County Fire and EMS equipment schedule listing unmanned aircraft",
+        "https://www.countyofamherst.com/egov/documents/1749654223_53408.pdf",
+    ),
+    "amherst_fire_contact": (
+        "Amherst County Fire and EMS contact information",
+        "https://www.countyofamherst.com/department/index.php?structureid=23",
+    ),
+    "staunton_police_uas": (
+        "Staunton Police Department homeland-security UAS appropriation",
+        "https://www.ci.staunton.va.us/Home/Components/MeetingsManager/"
+        "MeetingAgenda/ShowPrimaryDocument/?agendaID=1054&includeTrash=False&isPub=True",
+    ),
+    "staunton_police_contact": (
+        "Staunton Police Department contact information",
+        "https://www.ci.staunton.va.us/departments/police",
+    ),
     "ashland_police_drone": (
         "Ashland Police Department monthly report documenting drone operations",
         "https://www.ashlandva.gov/DocumentCenter/View/6463/July-2024-1?bidId=",
@@ -3085,6 +3106,149 @@ LOCATION_OVERRIDES = {
         "source": (
             "Newport News EDA AirCommerce Park",
             "https://newportnewsva.com/business-neighborhoods/patrick-henry-corridor/",
+        ),
+    },
+    "Mid-Atlantic Aviation Partnership": {
+        "address_line": "1991 Kraft Drive, Building 19",
+        "postal_code": "24060",
+        "latitude": 37.202048,
+        "longitude": -80.409798,
+        "location_precision": "site",
+        "source": (
+            "Virginia Tech ICTAS Corporate Research Center facility",
+            "https://ictas.vt.edu/Facilities/ictascrc.html",
+        ),
+    },
+    "Virginia Tech Transportation Institute": {
+        "address_line": "3500 Transportation Research Plaza",
+        "postal_code": "24061",
+        "latitude": 37.187786,
+        "longitude": -80.397174,
+        "location_precision": "exact",
+        "source": (
+            "Virginia Tech Transportation Institute contact information",
+            "https://www.vtti.vt.edu/contact/index.html",
+        ),
+    },
+    "Virginia Smart Road": {
+        "address_line": "3500 Transportation Research Plaza",
+        "postal_code": "24061",
+        "latitude": 37.187786,
+        "longitude": -80.397174,
+        "location_precision": "site",
+        "source": (
+            "Virginia Tech Transportation Institute Smart Roads facility",
+            "https://www.vtti.vt.edu/facilities/virginia-smart-roads.html",
+        ),
+    },
+    "Kentland Experimental Aerial Systems Laboratory": {
+        "address_line": "Kentland Farm, 5250 Whitethorne Road",
+        "postal_code": "24060",
+        "latitude": 37.199869,
+        "longitude": -80.564314,
+        "location_precision": "site",
+        "source": (
+            "Virginia Tech Kentland Farm facility information",
+            "https://www.cals.vt.edu/research/facilities.html",
+        ),
+    },
+    "NASA Wallops Flight Facility": {
+        "address_line": "34200 Fulton Street",
+        "postal_code": "23337",
+        "latitude": 37.940000,
+        "longitude": -75.466000,
+        "location_precision": "site",
+        "source": (
+            "NASA Wallops Flight Facility mailing and site address",
+            "https://www.nasa.gov/wallops/visitor-center/plan-your-visit/",
+        ),
+    },
+    "Mid-Atlantic Regional Spaceport": {
+        "address_line": "7414 Atlantic Road",
+        "postal_code": "23337",
+        "latitude": 37.933422,
+        "longitude": -75.479662,
+        "location_precision": "exact",
+        "source": (
+            "Virginia Spaceport Authority contact information",
+            "https://www.vaspace.org/contact-us",
+        ),
+    },
+    "Institute for Advanced Learning and Research": {
+        "address_line": "150 Slayton Avenue",
+        "postal_code": "24540",
+        "latitude": 36.579466,
+        "longitude": -79.356172,
+        "location_precision": "exact",
+        "source": (
+            "Institute for Advanced Learning and Research contact information",
+            "https://www.ialr.org/contact/",
+        ),
+    },
+    "IALR AgBOT Precision Agriculture Program": {
+        "address_line": "150 Slayton Avenue",
+        "postal_code": "24540",
+        "latitude": 36.579466,
+        "longitude": -79.356172,
+        "location_precision": "site",
+        "source": (
+            "Institute for Advanced Learning and Research contact information",
+            "https://www.ialr.org/contact/",
+        ),
+    },
+    "GO TEC Automation and Robotics Talent Pathway": {
+        "address_line": "150 Slayton Avenue",
+        "postal_code": "24540",
+        "latitude": 36.579466,
+        "longitude": -79.356172,
+        "location_precision": "site",
+        "source": (
+            "Institute for Advanced Learning and Research contact information",
+            "https://www.ialr.org/contact/",
+        ),
+    },
+    "UVA Link Lab": {
+        "address_line": "Olsson Hall, 151 Engineer's Way",
+        "postal_code": "22904",
+        "latitude": 38.032666,
+        "longitude": -78.510787,
+        "location_precision": "exact",
+        "source": (
+            "UVA Link Lab visitor information",
+            "https://engineering.virginia.edu/labs-groups/link-lab/visit",
+        ),
+    },
+    "George Mason RobotiXX Laboratory": {
+        "address_line": "3401 Fairfax Drive",
+        "postal_code": "22201",
+        "latitude": 38.884422,
+        "longitude": -77.101047,
+        "location_precision": "site",
+        "source": (
+            "George Mason RobotiXX Laboratory faculty profile",
+            "https://people.cs.gmu.edu/~xiao/xuesu_website_files/CV_Xiao.pdf",
+        ),
+    },
+    "Amherst County Fire and EMS Drone Program": {
+        "address_line": "119 Taylor Street",
+        "postal_code": "24521",
+        "latitude": 37.585554,
+        "longitude": -79.049827,
+        "location_precision": "exact",
+        "source": (
+            "Amherst County Fire and EMS contact information",
+            "https://www.countyofamherst.com/department/index.php?structureid=23",
+        ),
+    },
+    "Staunton Police Department UAS Program": {
+        "address_line": "116 West Beverley Street",
+        "postal_code": "24401",
+        "latitude": 38.149343,
+        "longitude": -79.073899,
+        "location_precision": "exact",
+        "source": (
+            "Staunton Police Department contact information",
+            "https://www.ci.staunton.va.us/departments/police",
         ),
     },
 }
@@ -5658,7 +5822,6 @@ CURATED_ASSETS.extend(
 )
 
 DCJS_UNRESOLVED_JURISDICTION_UAS_ASSETS = [
-    ("Amherst County", "Amherst", "Lynchburg Region"),
     ("Bath County", "Warm Springs", "Shenandoah Valley"),
     ("Buchanan County", "Grundy", "Southwest Virginia"),
     ("Town of Chilhowie", "Chilhowie", "Southwest Virginia"),
@@ -5670,7 +5833,6 @@ DCJS_UNRESOLVED_JURISDICTION_UAS_ASSETS = [
     ("Town of Scottsville", "Scottsville", "Central Virginia"),
     ("Smyth County", "Marion", "Southwest Virginia"),
     ("Southampton County", "Courtland", "Southside Virginia"),
-    ("City of Staunton", "Staunton", "Shenandoah Valley"),
 ]
 
 CURATED_ASSETS.extend(
@@ -5692,6 +5854,35 @@ CURATED_ASSETS.extend(
 
 CURATED_ASSETS.extend(
     [
+        (
+            "Amherst County Fire and EMS Drone Program",
+            "program",
+            "Amherst",
+            "Lynchburg Region",
+            "public_safety",
+            "County Fire and EMS drone capability documented in emergency-services minutes and the department's insured equipment schedule.",
+            (
+                "amherst_fire_drone",
+                "amherst_fire_equipment",
+                "amherst_fire_contact",
+                "dcjs_awards",
+                "dcjs_drone",
+            ),
+        ),
+        (
+            "Staunton Police Department UAS Program",
+            "program",
+            "Staunton",
+            "Shenandoah Valley",
+            "public_safety",
+            "Police unmanned-aircraft capability documented through a city homeland-security grant appropriation and a CY 2026 replacement award.",
+            (
+                "staunton_police_uas",
+                "staunton_police_contact",
+                "dcjs_awards",
+                "dcjs_drone",
+            ),
+        ),
         (
             "Ashland Police Department Drone Program",
             "program",
@@ -6270,6 +6461,49 @@ def apply_location_override(record):
     return record
 
 
+def apply_university_campus_locations(records):
+    """Use a documented parent campus for same-city university programs.
+
+    The program source establishes the university association while IPEDS supplies
+    the institution's public campus address. This is campus-level, not a claim that
+    the marker identifies a particular laboratory room or operating site.
+    """
+    records_by_name = {record["name"]: record for record in records}
+    for parent_name, _relationship_type, child_name in university_relationships():
+        parent = records_by_name.get(parent_name)
+        child = records_by_name.get(child_name)
+        if not parent or not child:
+            continue
+        if child.get("address_line") or child.get("location_precision") not in {
+            "approximate",
+            "locality",
+        }:
+            continue
+        if child.get("city", "").casefold() != parent.get("city", "").casefold():
+            continue
+        if not parent.get("address_line"):
+            continue
+
+        for field in (
+            "address_line",
+            "city",
+            "postal_code",
+            "latitude",
+            "longitude",
+            "region",
+        ):
+            child[field] = parent.get(field, "")
+        child["location_precision"] = "site"
+        if not any(item["url"] == IPEDS_DIRECTORY_PAGE for item in child["sources"]):
+            child["sources"].append(
+                {
+                    "title": f"{parent_name} campus location (NCES IPEDS 2024)",
+                    "url": IPEDS_DIRECTORY_PAGE,
+                }
+            )
+    return records
+
+
 def point_in_ring(longitude, latitude, ring):
     inside = False
     previous_x, previous_y = ring[-1]
@@ -6833,6 +7067,7 @@ def validate(records, relationships):
 def main():
     records = airport_records() + defense_records() + university_records() + curated_records()
     records = [finalize_record(record) for record in records]
+    records = apply_university_campus_locations(records)
     records.sort(key=lambda item: item["name"].casefold())
     relationships = list(CATALOG_RELATIONSHIPS) + university_relationships()
     relationships.extend(

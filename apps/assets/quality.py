@@ -52,21 +52,21 @@ def _candidate_details(first, second):
     if first_name == second_name:
         reasons.append("Same normalized name")
         scores.append(100)
-    if first_url and first_url == second_url and name_similarity >= 0.75:
+    if first_url and first_url == second_url and same_city and name_similarity >= 0.75:
         reasons.append(f"Same website URL with related names ({name_similarity:.0%})")
         scores.append(round(90 + name_similarity * 8))
     if (
         first_address
         and first_address == second_address
         and same_city
-        and name_similarity >= 0.55
+        and name_similarity >= 0.9
     ):
         reasons.append(f"Same street address and related names ({name_similarity:.0%})")
         scores.append(round(88 + name_similarity * 8))
     if same_city and name_similarity >= 0.9:
         reasons.append(f"Similar names in the same city ({name_similarity:.0%})")
         scores.append(round(86 + name_similarity * 10))
-    if distance is not None and distance <= 0.05 and name_similarity >= 0.75:
+    if distance is not None and distance <= 0.05 and name_similarity >= 0.9:
         reasons.append(f"Locations within {distance:.2f} miles with related names")
         scores.append(round(82 + name_similarity * 10))
 

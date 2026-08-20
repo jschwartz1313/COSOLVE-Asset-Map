@@ -525,33 +525,52 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "activity_last_verified_at": "2026-08-11",
+      "activity_source_url": "https://www.countyofamherst.com/egov/documents/1730910273_75599.pdf",
+      "activity_status": "active",
+      "address_line": "119 Taylor Street",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
       ],
       "city": "Amherst",
       "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
-      "latitude": 37.585,
-      "location_precision": "locality",
-      "longitude": -79.052,
+      "contact_phone": "434-946-9307",
+      "contact_text": "Amherst County Fire and EMS",
+      "contact_url": "https://www.countyofamherst.com/department/index.php?structureid=23",
+      "current_activity": "Amherst County emergency-services minutes document field assistance from the Fire Department drone, and the county Fire and EMS equipment schedule lists two DJI Mavic 3T unmanned aircraft.",
+      "latitude": 37.585554,
+      "location_precision": "exact",
+      "longitude": -79.049827,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
         "Surveying and mapping"
       ],
-      "name": "Amherst County First Responder UAS Capability",
-      "overview": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in Amherst County; the public award record does not identify the operating department. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+      "name": "Amherst County Fire and EMS Drone Program",
+      "overview": "County Fire and EMS drone capability documented in emergency-services minutes and the department's insured equipment schedule. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+      "partnership_opportunities": "Program and mutual-aid questions can be directed to Amherst County Fire and EMS.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "24521",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Lynchburg Region",
-      "short_description": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in Amherst County; the public award record does not identify the operating department.",
+      "short_description": "County Fire and EMS drone capability documented in emergency-services minutes and the department's insured equipment schedule.",
       "sources": [
+        {
+          "title": "Amherst County emergency-services minutes documenting the Fire Department drone",
+          "url": "https://www.countyofamherst.com/egov/documents/1730910273_75599.pdf"
+        },
+        {
+          "title": "Amherst County Fire and EMS equipment schedule listing unmanned aircraft",
+          "url": "https://www.countyofamherst.com/egov/documents/1749654223_53408.pdf"
+        },
+        {
+          "title": "Amherst County Fire and EMS contact information",
+          "url": "https://www.countyofamherst.com/department/index.php?structureid=23"
+        },
         {
           "title": "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
           "url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
@@ -568,7 +587,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      "website_url": "https://www.countyofamherst.com/egov/documents/1730910273_75599.pdf"
     },
     {
       "activity_last_verified_at": "2026-08-11",
@@ -1042,6 +1061,7 @@
       "website_url": "https://auterion.com/auterion-moves-corporate-headquarters-to-arlington-virginia/"
     },
     {
+      "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Navigation and positioning",
@@ -1052,9 +1072,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://autoboat.aoe.vt.edu/",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "latitude": 37.229012,
+      "location_precision": "site",
+      "longitude": -80.423675,
       "missions": [
         "Maritime domain awareness",
         "Environmental monitoring"
@@ -1065,6 +1085,7 @@
         "Maritime surface systems",
         "Undersea systems"
       ],
+      "postal_code": "24061-0131",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "New River Valley",
@@ -1073,6 +1094,10 @@
         {
           "title": "AutoBoat at Virginia Tech",
           "url": "https://autoboat.aoe.vt.edu/"
+        },
+        {
+          "title": "Virginia Tech campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -1085,6 +1110,7 @@
       "website_url": "https://autoboat.aoe.vt.edu/"
     },
     {
+      "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
@@ -1094,9 +1120,9 @@
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://www.vtaav.org/our-team",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "latitude": 37.229012,
+      "location_precision": "site",
+      "longitude": -80.423675,
       "missions": [
         "Training and experimentation"
       ],
@@ -1106,6 +1132,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24061-0131",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "New River Valley",
@@ -1114,6 +1141,10 @@
         {
           "title": "Autonomous Aerial Vehicles at Virginia Tech",
           "url": "https://www.vtaav.org/our-team"
+        },
+        {
+          "title": "Virginia Tech campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -2266,6 +2297,7 @@
       "website_url": "https://co.caroline.va.us/AgendaCenter/ViewFile/Item/7378?fileID=11595"
     },
     {
+      "address_line": "1827 University Avenue",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Perception, sensing, and sensor fusion"
@@ -2275,9 +2307,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.engineering.virginia.edu/labs-groups/link-lab/research/robotics-and-autonomous-systems",
-      "latitude": 38.035,
-      "location_precision": "locality",
-      "longitude": -78.503,
+      "latitude": 38.035665,
+      "location_precision": "site",
+      "longitude": -78.503428,
       "missions": [
         "Training and experimentation"
       ],
@@ -2287,6 +2319,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "22903-2628",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Central Virginia",
@@ -2295,6 +2328,10 @@
         {
           "title": "UVA Robotics and Autonomous Systems",
           "url": "https://www.engineering.virginia.edu/labs-groups/link-lab/research/robotics-and-autonomous-systems"
+        },
+        {
+          "title": "University of Virginia campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -2310,6 +2347,7 @@
       "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://iucrc.nsf.gov/centers/center-for-unmanned-aircraft-system/",
       "activity_status": "historical",
+      "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
@@ -2320,9 +2358,9 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vedp.org/industry/unmanned-systems",
       "current_activity": "The center was a documented unmanned-aircraft research consortium with a Virginia Tech site. NSF now lists the IUCRC award period as completed and retains the page for reference.",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "latitude": 37.229012,
+      "location_precision": "site",
+      "longitude": -80.423675,
       "missions": [
         "Training and experimentation"
       ],
@@ -2332,6 +2370,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24061-0131",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "New River Valley",
@@ -2344,6 +2383,10 @@
         {
           "title": "NSF IUCRC: completed Center for Unmanned Aircraft Systems",
           "url": "https://iucrc.nsf.gov/centers/center-for-unmanned-aircraft-system/"
+        },
+        {
+          "title": "Virginia Tech campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -2928,52 +2971,6 @@
       "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
     },
     {
-      "capabilities": [
-        "Operations, maintenance, and sustainment",
-        "Perception, sensing, and sensor fusion"
-      ],
-      "city": "Staunton",
-      "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
-      "latitude": 38.15,
-      "location_precision": "locality",
-      "longitude": -79.072,
-      "missions": [
-        "Public safety and emergency response",
-        "Search and rescue",
-        "Surveying and mapping"
-      ],
-      "name": "City of Staunton First Responder UAS Capability",
-      "overview": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in City of Staunton; the public award record does not identify the operating department. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
-      "platform_domains": [
-        "Unmanned aircraft systems"
-      ],
-      "provenance": "curated-public-source",
-      "record_type": "program",
-      "region": "Shenandoah Valley",
-      "short_description": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in City of Staunton; the public award record does not identify the operating department.",
-      "sources": [
-        {
-          "title": "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
-          "url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
-        },
-        {
-          "title": "DCJS Unmanned Aircraft Trade and Replace Program",
-          "url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Programs and initiatives",
-        "Multi-domain missions",
-        "Core unmanned-systems asset"
-      ],
-      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
-    },
-    {
       "address_line": "2401 Courthouse Drive",
       "capabilities": [
         "Operations, maintenance, and sustainment",
@@ -3309,6 +3306,7 @@
       "website_url": "https://ccam-va.com/"
     },
     {
+      "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
       "capabilities": [
         "Manufacturing, materials, and prototyping",
         "Systems engineering and integration"
@@ -3318,9 +3316,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "latitude": 37.229012,
+      "location_precision": "site",
+      "longitude": -80.423675,
       "missions": [
         "Training and experimentation"
       ],
@@ -3329,6 +3327,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "24061-0131",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "New River Valley",
@@ -3341,6 +3340,10 @@
         {
           "title": "Commonwealth Cyber Initiative",
           "url": "https://cyberinitiative.org/"
+        },
+        {
+          "title": "Virginia Tech campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -4351,6 +4354,7 @@
       "website_url": "https://www.ecpi.edu/"
     },
     {
+      "address_line": "30461 Garnand Drive",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -4360,9 +4364,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://catalog.ehc.edu/envs-330",
-      "latitude": 36.772,
-      "location_precision": "locality",
-      "longitude": -81.831,
+      "latitude": 36.772857,
+      "location_precision": "site",
+      "longitude": -81.829142,
       "missions": [
         "Training and experimentation"
       ],
@@ -4372,6 +4376,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24327-0947",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Southwest Virginia",
@@ -4380,6 +4385,10 @@
         {
           "title": "Emory & Henry Drone Pilot Test Preparation",
           "url": "https://catalog.ehc.edu/envs-330"
+        },
+        {
+          "title": "Emory & Henry University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -4495,6 +4504,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "11301 Johnson Road",
       "capabilities": [
         "Testing, evaluation, verification, and validation",
         "Systems engineering and integration"
@@ -4504,9 +4514,9 @@
       "contact_phone": "",
       "contact_text": "Facility or operator public information",
       "contact_url": "https://www.rbc.edu/why-rbc/faculty-staff/staff/",
-      "latitude": 37.158,
-      "location_precision": "locality",
-      "longitude": -77.387,
+      "latitude": 37.156972,
+      "location_precision": "site",
+      "longitude": -77.399932,
       "missions": [
         "Training and experimentation"
       ],
@@ -4517,6 +4527,7 @@
         "Ground vehicles and robotics",
         "Maritime surface systems"
       ],
+      "postal_code": "23805-7100",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "Greater Richmond",
@@ -4529,6 +4540,10 @@
         {
           "title": "Energy-Centric UAS Center for Critical Infrastructure public contact information",
           "url": "https://www.rbc.edu/why-rbc/faculty-staff/staff/"
+        },
+        {
+          "title": "Richard Bland College campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -5412,6 +5427,7 @@
       "website_url": "https://fulcrumconceptsllc.com/contact/"
     },
     {
+      "address_line": "4400 University Dr",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Perception, sensing, and sensor fusion"
@@ -5421,9 +5437,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 38.846,
-      "location_precision": "locality",
-      "longitude": -77.307,
+      "latitude": 38.83195,
+      "location_precision": "site",
+      "longitude": -77.307063,
       "missions": [
         "Training and experimentation"
       ],
@@ -5433,6 +5449,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "22030-4444",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "Northern Virginia",
@@ -5445,6 +5462,10 @@
         {
           "title": "George Mason Autonomous Robotics Laboratory",
           "url": "https://people.cs.gmu.edu/~robotics/pmwiki.php/Main/People"
+        },
+        {
+          "title": "George Mason University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -5457,6 +5478,7 @@
       "website_url": "https://people.cs.gmu.edu/~robotics/pmwiki.php/Main/People"
     },
     {
+      "address_line": "4400 University Dr",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
@@ -5466,9 +5488,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 38.846,
-      "location_precision": "locality",
-      "longitude": -77.307,
+      "latitude": 38.83195,
+      "location_precision": "site",
+      "longitude": -77.307063,
       "missions": [
         "Training and experimentation"
       ],
@@ -5478,6 +5500,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "22030-4444",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Northern Virginia",
@@ -5490,6 +5513,10 @@
         {
           "title": "George Mason Center for Air Transportation Systems Research",
           "url": "https://catsr.vse.gmu.edu/index.html"
+        },
+        {
+          "title": "George Mason University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -5502,6 +5529,7 @@
       "website_url": "https://catsr.vse.gmu.edu/index.html"
     },
     {
+      "address_line": "4400 University Dr",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Perception, sensing, and sensor fusion"
@@ -5511,9 +5539,9 @@
       "contact_phone": "",
       "contact_text": "Facility or operator public information",
       "contact_url": "https://mason.gmu.edu/~xwang64/team.html",
-      "latitude": 38.846,
-      "location_precision": "locality",
-      "longitude": -77.307,
+      "latitude": 38.83195,
+      "location_precision": "site",
+      "longitude": -77.307063,
       "missions": [
         "Training and experimentation"
       ],
@@ -5523,6 +5551,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "22030-4444",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "Northern Virginia",
@@ -5535,6 +5564,10 @@
         {
           "title": "George Mason MICO Laboratory public contact information",
           "url": "https://mason.gmu.edu/~xwang64/team.html"
+        },
+        {
+          "title": "George Mason University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -5547,6 +5580,7 @@
       "website_url": "https://mason.gmu.edu/~xwang64/"
     },
     {
+      "address_line": "4400 University Dr",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
@@ -5556,9 +5590,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://c5i.gmu.edu/2025/10/c5i-center-leads-drone-as-a-first-responder-study-for-northern-virginia/",
-      "latitude": 38.846,
-      "location_precision": "locality",
-      "longitude": -77.307,
+      "latitude": 38.83195,
+      "location_precision": "site",
+      "longitude": -77.307063,
       "missions": [
         "Training and experimentation"
       ],
@@ -5568,6 +5602,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "22030-4444",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Northern Virginia",
@@ -5576,6 +5611,10 @@
         {
           "title": "George Mason C5I Northern Virginia DFR Study",
           "url": "https://c5i.gmu.edu/2025/10/c5i-center-leads-drone-as-a-first-responder-study-for-northern-virginia/"
+        },
+        {
+          "title": "George Mason University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -5588,6 +5627,7 @@
       "website_url": "https://c5i.gmu.edu/2025/10/c5i-center-leads-drone-as-a-first-responder-study-for-northern-virginia/"
     },
     {
+      "address_line": "3401 Fairfax Drive",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Perception, sensing, and sensor fusion"
@@ -5597,9 +5637,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://people.cs.gmu.edu/~xxiao2/index.html",
-      "latitude": 38.881,
-      "location_precision": "locality",
-      "longitude": -77.091,
+      "latitude": 38.884422,
+      "location_precision": "site",
+      "longitude": -77.101047,
       "missions": [
         "Training and experimentation"
       ],
@@ -5609,6 +5649,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "22201",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "Northern Virginia",
@@ -5617,6 +5658,10 @@
         {
           "title": "George Mason RobotiXX Laboratory",
           "url": "https://people.cs.gmu.edu/~xxiao2/index.html"
+        },
+        {
+          "title": "George Mason RobotiXX Laboratory faculty profile",
+          "url": "https://people.cs.gmu.edu/~xiao/xuesu_website_files/CV_Xiao.pdf"
         }
       ],
       "state": "VA",
@@ -5629,6 +5674,7 @@
       "website_url": "https://people.cs.gmu.edu/~xxiao2/index.html"
     },
     {
+      "address_line": "4400 University Dr",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Perception, sensing, and sensor fusion"
@@ -5638,9 +5684,9 @@
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://electrical.gmu.edu/about/contact-us",
-      "latitude": 38.846,
-      "location_precision": "locality",
-      "longitude": -77.307,
+      "latitude": 38.83195,
+      "location_precision": "site",
+      "longitude": -77.307063,
       "missions": [
         "Training and experimentation"
       ],
@@ -5650,6 +5696,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "22030-4444",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Northern Virginia",
@@ -5662,6 +5709,10 @@
         {
           "title": "George Mason SPARX public contact information",
           "url": "https://electrical.gmu.edu/about/contact-us"
+        },
+        {
+          "title": "George Mason University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -5674,6 +5725,7 @@
       "website_url": "https://electrical.gmu.edu/research/controls-and-robotics"
     },
     {
+      "address_line": "4400 University Dr",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Perception, sensing, and sensor fusion"
@@ -5683,9 +5735,9 @@
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://abs.gmu.edu/about/",
-      "latitude": 38.846,
-      "location_precision": "locality",
-      "longitude": -77.307,
+      "latitude": 38.83195,
+      "location_precision": "site",
+      "longitude": -77.307063,
       "missions": [
         "Training and experimentation"
       ],
@@ -5695,6 +5747,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "22030-4444",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Northern Virginia",
@@ -5707,6 +5760,10 @@
         {
           "title": "George Mason Starship Autonomous Delivery Fleet public contact information",
           "url": "https://abs.gmu.edu/about/"
+        },
+        {
+          "title": "George Mason University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -5773,6 +5830,7 @@
       "website_url": "https://www.gmu.edu/"
     },
     {
+      "address_line": "4400 University Dr",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -5782,9 +5840,9 @@
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://police.gmu.edu/about-us/contact-us/",
-      "latitude": 38.846,
-      "location_precision": "locality",
-      "longitude": -77.307,
+      "latitude": 38.83195,
+      "location_precision": "site",
+      "longitude": -77.307063,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -5795,6 +5853,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "22030-4444",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Northern Virginia",
@@ -5807,6 +5866,10 @@
         {
           "title": "George Mason University Police UAS Team public contact information",
           "url": "https://police.gmu.edu/about-us/contact-us/"
+        },
+        {
+          "title": "George Mason University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -5957,6 +6020,7 @@
       "website_url": "https://pub-gloucesterva.escribemeetings.com/filestream.ashx?DocumentId=24451"
     },
     {
+      "address_line": "150 Slayton Avenue",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -5966,9 +6030,9 @@
       "contact_phone": "434-766-6700",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://www.ialr.org/contact/",
-      "latitude": 36.586,
-      "location_precision": "locality",
-      "longitude": -79.395,
+      "latitude": 36.579466,
+      "location_precision": "site",
+      "longitude": -79.356172,
       "missions": [
         "Training and experimentation"
       ],
@@ -5978,6 +6042,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24540",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Southside Virginia",
@@ -5988,7 +6053,7 @@
           "url": "https://www.ialr.org/go-tec/"
         },
         {
-          "title": "GO TEC Automation and Robotics Talent Pathway public contact information",
+          "title": "Institute for Advanced Learning and Research contact information",
           "url": "https://www.ialr.org/contact/"
         }
       ],
@@ -7065,6 +7130,7 @@
       "website_url": "https://www.vedp.org/news/home-business-more-400-years"
     },
     {
+      "address_line": "150 Slayton Avenue",
       "capabilities": [
         "Perception, sensing, and sensor fusion",
         "Data engineering, analytics, and edge computing"
@@ -7074,9 +7140,9 @@
       "contact_phone": "434-766-6700",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://www.ialr.org/contact/",
-      "latitude": 36.586,
-      "location_precision": "locality",
-      "longitude": -79.395,
+      "latitude": 36.579466,
+      "location_precision": "site",
+      "longitude": -79.356172,
       "missions": [
         "Agriculture and natural resources",
         "Environmental monitoring"
@@ -7086,6 +7152,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "24540",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Southside Virginia",
@@ -7096,7 +7163,7 @@
           "url": "https://www.ialr.org/plant-endophyte-research-center/areas-of-focus/"
         },
         {
-          "title": "IALR AgBOT Precision Agriculture Program public contact information",
+          "title": "Institute for Advanced Learning and Research contact information",
           "url": "https://www.ialr.org/contact/"
         }
       ],
@@ -7257,6 +7324,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "150 Slayton Avenue",
       "capabilities": [
         "Manufacturing, materials, and prototyping",
         "Systems engineering and integration"
@@ -7264,11 +7332,11 @@
       "city": "Danville",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 36.586,
-      "location_precision": "locality",
-      "longitude": -79.395,
+      "contact_text": "Organization public information and inquiries",
+      "contact_url": "https://www.ialr.org/contact/",
+      "latitude": 36.579466,
+      "location_precision": "exact",
+      "longitude": -79.356172,
       "missions": [
         "Training and experimentation"
       ],
@@ -7277,6 +7345,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "24540",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Southside Virginia",
@@ -7285,6 +7354,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "Institute for Advanced Learning and Research contact information",
+          "url": "https://www.ialr.org/contact/"
         },
         {
           "title": "Institute for Advanced Learning and Research",
@@ -7449,6 +7522,7 @@
       "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://www.jmu.edu/jmuxlabs/courses/drones.shtml",
       "activity_status": "historical",
+      "address_line": "800 South Main Street",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
@@ -7459,9 +7533,9 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vedp.org/industry/unmanned-systems",
       "current_activity": "JMU documents the Drone Challenge and related drone-course iterations as completed interdisciplinary projects. The page is retained as evidence of the university's past unmanned-systems work, not as a current standalone program.",
-      "latitude": 38.449,
-      "location_precision": "locality",
-      "longitude": -78.869,
+      "latitude": 38.436311,
+      "location_precision": "site",
+      "longitude": -78.870484,
       "missions": [
         "Training and experimentation"
       ],
@@ -7471,6 +7545,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "22807",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Shenandoah Valley",
@@ -7483,6 +7558,10 @@
         {
           "title": "JMU X-Labs drone course and projects",
           "url": "https://www.jmu.edu/jmuxlabs/courses/drones.shtml"
+        },
+        {
+          "title": "James Madison University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -7495,6 +7574,7 @@
       "website_url": "https://www.jmu.edu/jmuxlabs/courses/drones.shtml"
     },
     {
+      "address_line": "800 South Main Street",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
@@ -7504,9 +7584,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 38.449,
-      "location_precision": "locality",
-      "longitude": -78.869,
+      "latitude": 38.436311,
+      "location_precision": "site",
+      "longitude": -78.870484,
       "missions": [
         "Training and experimentation"
       ],
@@ -7516,6 +7596,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "22807",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "Shenandoah Valley",
@@ -7528,6 +7609,10 @@
         {
           "title": "JMU X-Labs",
           "url": "https://www.jmu.edu/jmuxlabs"
+        },
+        {
+          "title": "James Madison University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -7626,6 +7711,7 @@
       "website_url": "https://cnrma.cnic.navy.mil/Installations/JEB-Little-Creek-Fort-Story/Contact-Us/"
     },
     {
+      "address_line": "Kentland Farm, 5250 Whitethorne Road",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
@@ -7635,9 +7721,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://autonomyandrobotics.centers.vt.edu/groups/keas.html",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "latitude": 37.199869,
+      "location_precision": "site",
+      "longitude": -80.564314,
       "missions": [
         "Training and experimentation"
       ],
@@ -7647,6 +7733,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24060",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "New River Valley",
@@ -7655,6 +7742,10 @@
         {
           "title": "Virginia Tech Kentland Experimental Aerial Systems Laboratory",
           "url": "https://autonomyandrobotics.centers.vt.edu/groups/keas.html"
+        },
+        {
+          "title": "Virginia Tech Kentland Farm facility information",
+          "url": "https://www.cals.vt.edu/research/facilities.html"
         }
       ],
       "state": "VA",
@@ -8184,6 +8275,7 @@
       "website_url": "https://www.liberty.edu/"
     },
     {
+      "address_line": "1971 University Blvd",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -8193,9 +8285,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 37.414,
-      "location_precision": "locality",
-      "longitude": -79.142,
+      "latitude": 37.350232,
+      "location_precision": "site",
+      "longitude": -79.18222,
       "missions": [
         "Training and experimentation"
       ],
@@ -8205,6 +8297,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24515",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Lynchburg Region",
@@ -8217,6 +8310,10 @@
         {
           "title": "Liberty University BS in Unmanned Aircraft Operations",
           "url": "https://www.liberty.edu/aeronautics/bachelors/unmanned-aircraft-operations/"
+        },
+        {
+          "title": "Liberty University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -8228,6 +8325,7 @@
       "website_url": "https://www.liberty.edu/aeronautics/bachelors/unmanned-aircraft-operations/"
     },
     {
+      "address_line": "1971 University Blvd",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -8237,9 +8335,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 37.414,
-      "location_precision": "locality",
-      "longitude": -79.142,
+      "latitude": 37.350232,
+      "location_precision": "site",
+      "longitude": -79.18222,
       "missions": [
         "Training and experimentation"
       ],
@@ -8249,6 +8347,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24515",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Lynchburg Region",
@@ -8261,6 +8360,10 @@
         {
           "title": "Liberty University Aviation Maintenance BS - Unmanned Aerial Systems",
           "url": "https://catalog.liberty.edu/undergraduate/colleges-schools/aeronautics/aviation-maintenance-major-bs/unmanned-aerial-systems-resident/"
+        },
+        {
+          "title": "Liberty University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -8272,6 +8375,7 @@
       "website_url": "https://catalog.liberty.edu/undergraduate/colleges-schools/aeronautics/aviation-maintenance-major-bs/unmanned-aerial-systems-resident/"
     },
     {
+      "address_line": "1971 University Blvd",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -8281,9 +8385,9 @@
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://www.liberty.edu/about/contact-liberty-university/",
-      "latitude": 37.414,
-      "location_precision": "locality",
-      "longitude": -79.142,
+      "latitude": 37.350232,
+      "location_precision": "site",
+      "longitude": -79.18222,
       "missions": [
         "Training and experimentation"
       ],
@@ -8293,6 +8397,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24515",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Lynchburg Region",
@@ -8305,6 +8410,10 @@
         {
           "title": "Liberty University Medium Unmanned Aerial Systems Certificate public contact information",
           "url": "https://www.liberty.edu/about/contact-liberty-university/"
+        },
+        {
+          "title": "Liberty University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -8316,6 +8425,7 @@
       "website_url": "https://www.liberty.edu/aeronautics/certificates/medium-unmanned-aerial-systems/"
     },
     {
+      "address_line": "1971 University Blvd",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -8325,9 +8435,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 37.414,
-      "location_precision": "locality",
-      "longitude": -79.142,
+      "latitude": 37.350232,
+      "location_precision": "site",
+      "longitude": -79.18222,
       "missions": [
         "Training and experimentation"
       ],
@@ -8337,6 +8447,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24515",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Lynchburg Region",
@@ -8349,6 +8460,10 @@
         {
           "title": "Liberty University School of Aeronautics unmanned aerial systems",
           "url": "https://www.liberty.edu/aeronautics/unmanned-aerial-systems/"
+        },
+        {
+          "title": "Liberty University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -8360,6 +8475,7 @@
       "website_url": "https://www.liberty.edu/aeronautics/unmanned-aerial-systems/"
     },
     {
+      "address_line": "1971 University Blvd",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -8369,9 +8485,9 @@
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://www.liberty.edu/about/contact-liberty-university/",
-      "latitude": 37.414,
-      "location_precision": "locality",
-      "longitude": -79.142,
+      "latitude": 37.350232,
+      "location_precision": "site",
+      "longitude": -79.18222,
       "missions": [
         "Training and experimentation"
       ],
@@ -8381,6 +8497,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24515",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Lynchburg Region",
@@ -8393,6 +8510,10 @@
         {
           "title": "Liberty University UAS Operational Experience public contact information",
           "url": "https://www.liberty.edu/about/contact-liberty-university/"
+        },
+        {
+          "title": "Liberty University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -8548,6 +8669,7 @@
       "website_url": "https://www.sbir.gov/portfolio/1664155"
     },
     {
+      "address_line": "201 High St",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Navigation and positioning",
@@ -8558,9 +8680,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.longwood.edu/news/2026/seed-entrepreneurship-experience/",
-      "latitude": 37.302,
-      "location_precision": "locality",
-      "longitude": -78.391,
+      "latitude": 37.297975,
+      "location_precision": "site",
+      "longitude": -78.396987,
       "missions": [
         "Maritime domain awareness",
         "Environmental monitoring"
@@ -8571,6 +8693,7 @@
         "Maritime surface systems",
         "Undersea systems"
       ],
+      "postal_code": "23909",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Central Virginia",
@@ -8579,6 +8702,10 @@
         {
           "title": "Longwood SEED Autonomous Marine Project",
           "url": "https://www.longwood.edu/news/2026/seed-entrepreneurship-experience/"
+        },
+        {
+          "title": "Longwood University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -9358,6 +9485,7 @@
       "website_url": "https://www.marymount.edu/"
     },
     {
+      "address_line": "4400 University Dr",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration",
@@ -9368,9 +9496,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.mix.gmu.edu/mix-short-course-programs",
-      "latitude": 38.846,
-      "location_precision": "locality",
-      "longitude": -77.307,
+      "latitude": 38.83195,
+      "location_precision": "site",
+      "longitude": -77.307063,
       "missions": [
         "Training and experimentation"
       ],
@@ -9381,6 +9509,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "22030-4444",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Northern Virginia",
@@ -9389,6 +9518,10 @@
         {
           "title": "Mason Innovation Exchange Short Course Programs",
           "url": "https://www.mix.gmu.edu/mix-short-course-programs"
+        },
+        {
+          "title": "George Mason University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -9549,6 +9682,7 @@
       "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://maap.ictas.vt.edu/About/about-us.html",
       "activity_status": "active",
+      "address_line": "1991 Kraft Drive, Building 19",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
@@ -9559,9 +9693,9 @@
       "contact_text": "MAAP research, testing, and partnership inquiries",
       "contact_url": "https://maap.ictas.vt.edu/Contact.html",
       "current_activity": "MAAP remains an FAA-designated UAS test site supporting research, flight testing, evaluation, operational approvals, and safety-case development.",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "latitude": 37.202048,
+      "location_precision": "site",
+      "longitude": -80.409798,
       "missions": [
         "Training and experimentation"
       ],
@@ -9572,6 +9706,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24060",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "New River Valley",
@@ -9580,6 +9715,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "Virginia Tech ICTAS Corporate Research Center facility",
+          "url": "https://ictas.vt.edu/Facilities/ictascrc.html"
         },
         {
           "title": "Mid-Atlantic Aviation Partnership overview",
@@ -9604,6 +9743,7 @@
       "website_url": "https://maap.ictas.vt.edu/About/about-us.html"
     },
     {
+      "address_line": "7414 Atlantic Road",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
@@ -9612,10 +9752,10 @@
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Facility or operator public information",
-      "contact_url": "https://www.vaspace.org/about-us",
-      "latitude": 37.94,
-      "location_precision": "locality",
-      "longitude": -75.467,
+      "contact_url": "https://www.vaspace.org/contact-us",
+      "latitude": 37.933422,
+      "location_precision": "exact",
+      "longitude": -75.479662,
       "missions": [
         "Training and experimentation"
       ],
@@ -9625,6 +9765,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23337",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "Eastern Shore",
@@ -9633,6 +9774,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "Virginia Spaceport Authority contact information",
+          "url": "https://www.vaspace.org/contact-us"
         },
         {
           "title": "Virginia Spaceport Authority: Mid-Atlantic Regional Spaceport",
@@ -10322,6 +10467,7 @@
       "website_url": "https://www.nasa.gov/centers-and-facilities/langley/nasa-langley-drone-flying-site-open-for-testing/"
     },
     {
+      "address_line": "34200 Fulton Street",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
@@ -10332,8 +10478,8 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vedp.org/industry/unmanned-systems",
       "latitude": 37.94,
-      "location_precision": "locality",
-      "longitude": -75.467,
+      "location_precision": "site",
+      "longitude": -75.466,
       "missions": [
         "Training and experimentation"
       ],
@@ -10343,6 +10489,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23337",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "Eastern Shore",
@@ -10351,6 +10498,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "NASA Wallops Flight Facility mailing and site address",
+          "url": "https://www.nasa.gov/wallops/visitor-center/plan-your-visit/"
         },
         {
           "title": "NASA: About Wallops Flight Facility",
@@ -13572,6 +13723,7 @@
       "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
     },
     {
+      "address_line": "801 East Main St.",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -13581,9 +13733,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.radford.edu/registrar/course-descriptions/unmanned-aerial-systems/index.html",
-      "latitude": 37.132,
-      "location_precision": "locality",
-      "longitude": -80.576,
+      "latitude": 37.136907,
+      "location_precision": "site",
+      "longitude": -80.549728,
       "missions": [
         "Training and experimentation"
       ],
@@ -13593,6 +13745,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24142",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "New River Valley",
@@ -13601,6 +13754,10 @@
         {
           "title": "Radford University Unmanned Aerial Systems Courses",
           "url": "https://www.radford.edu/registrar/course-descriptions/unmanned-aerial-systems/index.html"
+        },
+        {
+          "title": "Radford University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -13870,6 +14027,7 @@
       "website_url": "https://www.rbc.edu/"
     },
     {
+      "address_line": "11301 Johnson Road",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -13879,9 +14037,9 @@
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://www.rbc.edu/why-rbc/faculty-staff/staff/",
-      "latitude": 37.158,
-      "location_precision": "locality",
-      "longitude": -77.387,
+      "latitude": 37.156972,
+      "location_precision": "site",
+      "longitude": -77.399932,
       "missions": [
         "Training and experimentation"
       ],
@@ -13891,6 +14049,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23805-7100",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Greater Richmond",
@@ -13903,6 +14062,10 @@
         {
           "title": "Richard Bland College Uncrewed Aerial Systems Certificate public contact information",
           "url": "https://www.rbc.edu/why-rbc/faculty-staff/staff/"
+        },
+        {
+          "title": "Richard Bland College campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -14466,6 +14629,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "1460 University Dr",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -14475,9 +14639,9 @@
       "contact_phone": "800-432-2266",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://www.su.edu/about-us/contact-us/",
-      "latitude": 39.185,
-      "location_precision": "locality",
-      "longitude": -78.163,
+      "latitude": 39.167355,
+      "location_precision": "site",
+      "longitude": -78.157433,
       "missions": [
         "Training and experimentation"
       ],
@@ -14487,6 +14651,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "22601-5195",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Shenandoah Valley",
@@ -14499,6 +14664,10 @@
         {
           "title": "Shenandoah Drone Assembly VR Training public contact information",
           "url": "https://www.su.edu/about-us/contact-us/"
+        },
+        {
+          "title": "Shenandoah University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -15128,6 +15297,67 @@
       ],
       "unmanned_systems_relevance": "Supports documented testing or operational integration of uncrewed aviation and advanced-air-mobility concepts in the National Airspace System.",
       "website_url": "https://doav.virginia.gov/advanced_air_mobility/"
+    },
+    {
+      "activity_last_verified_at": "2026-08-11",
+      "activity_source_url": "https://www.ci.staunton.va.us/Home/Components/MeetingsManager/MeetingAgenda/ShowPrimaryDocument/?agendaID=1054&includeTrash=False&isPub=True",
+      "activity_status": "active",
+      "address_line": "116 West Beverley Street",
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Staunton",
+      "contact_email": "PoliceAdmin@ci.staunton.va.us",
+      "contact_phone": "540-332-3842",
+      "contact_text": "Staunton Police Department",
+      "contact_url": "https://www.ci.staunton.va.us/departments/police",
+      "current_activity": "Staunton's budget records place a homeland-security unmanned-aircraft grant in Police Department accounts, while the CY 2026 DCJS award documents an existing local first-responder aircraft eligible for replacement.",
+      "latitude": 38.149343,
+      "location_precision": "exact",
+      "longitude": -79.073899,
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue",
+        "Surveying and mapping"
+      ],
+      "name": "Staunton Police Department UAS Program",
+      "overview": "Police unmanned-aircraft capability documented through a city homeland-security grant appropriation and a CY 2026 replacement award. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+      "partnership_opportunities": "Program and public-safety coordination questions can be directed to the Staunton Police Department.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "24401",
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Shenandoah Valley",
+      "short_description": "Police unmanned-aircraft capability documented through a city homeland-security grant appropriation and a CY 2026 replacement award.",
+      "sources": [
+        {
+          "title": "Staunton Police Department homeland-security UAS appropriation",
+          "url": "https://www.ci.staunton.va.us/Home/Components/MeetingsManager/MeetingAgenda/ShowPrimaryDocument/?agendaID=1054&includeTrash=False&isPub=True"
+        },
+        {
+          "title": "Staunton Police Department contact information",
+          "url": "https://www.ci.staunton.va.us/departments/police"
+        },
+        {
+          "title": "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
+          "url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+        },
+        {
+          "title": "DCJS Unmanned Aircraft Trade and Replace Program",
+          "url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Multi-domain missions",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
+      "website_url": "https://www.ci.staunton.va.us/Home/Components/MeetingsManager/MeetingAgenda/ShowPrimaryDocument/?agendaID=1054&includeTrash=False&isPub=True"
     },
     {
       "address_line": "1200 Gene Bolton Drive",
@@ -16332,6 +16562,7 @@
       "website_url": "https://www.virginia.edu/"
     },
     {
+      "address_line": "1827 University Avenue",
       "capabilities": [
         "Safety, policy, regulatory, and airspace integration",
         "Operations, maintenance, and sustainment"
@@ -16341,9 +16572,9 @@
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://uvaemergency.virginia.edu/about-us/contact",
-      "latitude": 38.035,
-      "location_precision": "locality",
-      "longitude": -78.503,
+      "latitude": 38.035665,
+      "location_precision": "site",
+      "longitude": -78.503428,
       "missions": [
         "Training and experimentation"
       ],
@@ -16352,6 +16583,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "22903-2628",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Central Virginia",
@@ -16364,6 +16596,10 @@
         {
           "title": "University of Virginia UAS Operations Program public contact information",
           "url": "https://uvaemergency.virginia.edu/about-us/contact"
+        },
+        {
+          "title": "University of Virginia campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -16430,6 +16666,7 @@
       "website_url": "https://www.uvawise.edu/"
     },
     {
+      "address_line": "1827 University Avenue",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Navigation and positioning",
@@ -16440,9 +16677,9 @@
       "contact_phone": "",
       "contact_text": "Facility or operator public information",
       "contact_url": "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/people/mae-staff",
-      "latitude": 38.035,
-      "location_precision": "locality",
-      "longitude": -78.503,
+      "latitude": 38.035665,
+      "location_precision": "site",
+      "longitude": -78.503428,
       "missions": [
         "Maritime domain awareness",
         "Environmental monitoring"
@@ -16453,6 +16690,7 @@
         "Maritime surface systems",
         "Undersea systems"
       ],
+      "postal_code": "22903-2628",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "Central Virginia",
@@ -16465,6 +16703,10 @@
         {
           "title": "UVA Bio-Inspired Engineering Research Laboratory public contact information",
           "url": "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/people/mae-staff"
+        },
+        {
+          "title": "University of Virginia campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -16520,6 +16762,7 @@
       "website_url": "https://abcrc.virginia.edu/files/abcrc/files/coastal_research_center___drone_pilot_compliance_checklist.pdf"
     },
     {
+      "address_line": "Olsson Hall, 151 Engineer's Way",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Perception, sensing, and sensor fusion"
@@ -16529,9 +16772,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.engineering.virginia.edu/labs-groups/link-lab/research/robotics-and-autonomous-systems",
-      "latitude": 38.035,
-      "location_precision": "locality",
-      "longitude": -78.503,
+      "latitude": 38.032666,
+      "location_precision": "exact",
+      "longitude": -78.510787,
       "missions": [
         "Training and experimentation"
       ],
@@ -16541,6 +16784,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "22904",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Central Virginia",
@@ -16549,6 +16793,10 @@
         {
           "title": "UVA Robotics and Autonomous Systems",
           "url": "https://www.engineering.virginia.edu/labs-groups/link-lab/research/robotics-and-autonomous-systems"
+        },
+        {
+          "title": "UVA Link Lab visitor information",
+          "url": "https://engineering.virginia.edu/labs-groups/link-lab/visit"
         }
       ],
       "state": "VA",
@@ -16561,6 +16809,7 @@
       "website_url": "https://www.engineering.virginia.edu/labs-groups/link-lab/research/robotics-and-autonomous-systems"
     },
     {
+      "address_line": "1827 University Avenue",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Perception, sensing, and sensor fusion"
@@ -16570,9 +16819,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.engineering.virginia.edu/labs-groups/link-lab/research/robotics-and-autonomous-systems",
-      "latitude": 38.035,
-      "location_precision": "locality",
-      "longitude": -78.503,
+      "latitude": 38.035665,
+      "location_precision": "site",
+      "longitude": -78.503428,
       "missions": [
         "Training and experimentation"
       ],
@@ -16582,6 +16831,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "22903-2628",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Central Virginia",
@@ -16590,6 +16840,10 @@
         {
           "title": "UVA Robotics and Autonomous Systems",
           "url": "https://www.engineering.virginia.edu/labs-groups/link-lab/research/robotics-and-autonomous-systems"
+        },
+        {
+          "title": "University of Virginia campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -16602,6 +16856,7 @@
       "website_url": "https://www.engineering.virginia.edu/labs-groups/link-lab/research/robotics-and-autonomous-systems"
     },
     {
+      "address_line": "1827 University Avenue",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -16611,9 +16866,9 @@
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://engineering.virginia.edu/department/electrical-and-computer-engineering/people/staff",
-      "latitude": 38.035,
-      "location_precision": "locality",
-      "longitude": -78.503,
+      "latitude": 38.035665,
+      "location_precision": "site",
+      "longitude": -78.503428,
       "missions": [
         "Training and experimentation"
       ],
@@ -16623,6 +16878,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "22903-2628",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Central Virginia",
@@ -16635,6 +16891,10 @@
         {
           "title": "UVA Robotics and Embedded Systems Focus Path public contact information",
           "url": "https://engineering.virginia.edu/department/electrical-and-computer-engineering/people/staff"
+        },
+        {
+          "title": "University of Virginia campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -16646,6 +16906,7 @@
       "website_url": "https://engineering.virginia.edu/department/electrical-and-computer-engineering/robotics-and-embedded-systems"
     },
     {
+      "address_line": "1827 University Avenue",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Perception, sensing, and sensor fusion"
@@ -16655,9 +16916,9 @@
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/people/mae-staff",
-      "latitude": 38.035,
-      "location_precision": "locality",
-      "longitude": -78.503,
+      "latitude": 38.035665,
+      "location_precision": "site",
+      "longitude": -78.503428,
       "missions": [
         "Training and experimentation"
       ],
@@ -16667,6 +16928,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "22903-2628",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Central Virginia",
@@ -16679,6 +16941,10 @@
         {
           "title": "UVA Robotics, Dynamics, and Autonomous Systems public contact information",
           "url": "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/people/mae-staff"
+        },
+        {
+          "title": "University of Virginia campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -16691,6 +16957,7 @@
       "website_url": "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/research/robotics-dynamics-and-autonomous-systems"
     },
     {
+      "address_line": "1 College Avenue",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration",
@@ -16701,9 +16968,9 @@
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://www.uvawise.edu/directory",
-      "latitude": 36.975,
-      "location_precision": "locality",
-      "longitude": -82.576,
+      "latitude": 36.970602,
+      "location_precision": "site",
+      "longitude": -82.559656,
       "missions": [
         "Training and experimentation"
       ],
@@ -16714,6 +16981,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24293-4400",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Southwest Virginia",
@@ -16726,6 +16994,10 @@
         {
           "title": "UVA Wise STREAMWISE Robot Drone League public contact information",
           "url": "https://www.uvawise.edu/directory"
+        },
+        {
+          "title": "University of Virginia's College at Wise campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -16737,6 +17009,7 @@
       "website_url": "https://www.uvawise.edu/news/2025/10/empowering-next-generation-innovators-through-streamwise"
     },
     {
+      "address_line": "910 W Franklin St",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
@@ -16746,9 +17019,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://arvl.lab.vcu.edu/",
-      "latitude": 37.541,
-      "location_precision": "locality",
-      "longitude": -77.436,
+      "latitude": 37.54962,
+      "location_precision": "site",
+      "longitude": -77.452697,
       "missions": [
         "Training and experimentation"
       ],
@@ -16758,6 +17031,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23284-2512",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "Greater Richmond",
@@ -16770,6 +17044,10 @@
         {
           "title": "VCU ARVL robotic drone capabilities and equipment",
           "url": "https://arvl.lab.vcu.edu/capabilities-and-equipment/"
+        },
+        {
+          "title": "Virginia Commonwealth University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -16782,6 +17060,7 @@
       "website_url": "https://arvl.lab.vcu.edu/capabilities-and-equipment/"
     },
     {
+      "address_line": "910 W Franklin St",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Perception, sensing, and sensor fusion"
@@ -16791,9 +17070,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://arvl.lab.vcu.edu/",
-      "latitude": 37.541,
-      "location_precision": "locality",
-      "longitude": -77.436,
+      "latitude": 37.54962,
+      "location_precision": "site",
+      "longitude": -77.452697,
       "missions": [
         "Training and experimentation"
       ],
@@ -16803,6 +17082,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23284-2512",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "Greater Richmond",
@@ -16811,6 +17091,10 @@
         {
           "title": "VCU Autonomous Robots and Vehicles Laboratory",
           "url": "https://arvl.lab.vcu.edu/"
+        },
+        {
+          "title": "Virginia Commonwealth University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -16823,6 +17107,7 @@
       "website_url": "https://arvl.lab.vcu.edu/"
     },
     {
+      "address_line": "910 W Franklin St",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -16832,9 +17117,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://news.vcu.edu/article/vcu-to-offer-new-undergraduate-degree-in-robotics-and-autonomous-systems-engineering",
-      "latitude": 37.541,
-      "location_precision": "locality",
-      "longitude": -77.436,
+      "latitude": 37.54962,
+      "location_precision": "site",
+      "longitude": -77.452697,
       "missions": [
         "Training and experimentation"
       ],
@@ -16844,6 +17129,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23284-2512",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Greater Richmond",
@@ -16852,6 +17138,10 @@
         {
           "title": "VCU Robotics and Autonomous Systems Engineering Degree",
           "url": "https://news.vcu.edu/article/vcu-to-offer-new-undergraduate-degree-in-robotics-and-autonomous-systems-engineering"
+        },
+        {
+          "title": "Virginia Commonwealth University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -16863,6 +17153,7 @@
       "website_url": "https://news.vcu.edu/article/vcu-to-offer-new-undergraduate-degree-in-robotics-and-autonomous-systems-engineering"
     },
     {
+      "address_line": "910 W Franklin St",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Perception, sensing, and sensor fusion"
@@ -16872,9 +17163,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://arvl.lab.vcu.edu/",
-      "latitude": 37.541,
-      "location_precision": "locality",
-      "longitude": -77.436,
+      "latitude": 37.54962,
+      "location_precision": "site",
+      "longitude": -77.452697,
       "missions": [
         "Training and experimentation"
       ],
@@ -16884,6 +17175,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23284-2512",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Greater Richmond",
@@ -16892,6 +17184,10 @@
         {
           "title": "VCU Autonomous Robots and Vehicles Laboratory",
           "url": "https://arvl.lab.vcu.edu/"
+        },
+        {
+          "title": "Virginia Commonwealth University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -17260,6 +17556,7 @@
       "website_url": "https://www.vcu.edu/"
     },
     {
+      "address_line": "910 W Franklin St",
       "capabilities": [
         "Safety, policy, regulatory, and airspace integration",
         "Operations, maintenance, and sustainment"
@@ -17269,9 +17566,9 @@
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://healthsafety.vcu.edu/about/staff-directory/",
-      "latitude": 37.541,
-      "location_precision": "locality",
-      "longitude": -77.436,
+      "latitude": 37.54962,
+      "location_precision": "site",
+      "longitude": -77.452697,
       "missions": [
         "Training and experimentation"
       ],
@@ -17280,6 +17577,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23284-2512",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Greater Richmond",
@@ -17292,6 +17590,10 @@
         {
           "title": "Virginia Commonwealth University UAS Operations Program public contact information",
           "url": "https://healthsafety.vcu.edu/about/staff-directory/"
+        },
+        {
+          "title": "Virginia Commonwealth University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -18385,6 +18687,7 @@
       "website_url": "https://vatestbed.com/projects"
     },
     {
+      "address_line": "3500 Transportation Research Plaza",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Perception, sensing, and sensor fusion"
@@ -18394,9 +18697,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "latitude": 37.187786,
+      "location_precision": "site",
+      "longitude": -80.397174,
       "missions": [
         "Training and experimentation"
       ],
@@ -18406,6 +18709,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24061",
       "provenance": "curated-public-source",
       "record_type": "operating-environment",
       "region": "New River Valley",
@@ -18416,7 +18720,7 @@
           "url": "https://www.vedp.org/industry/unmanned-systems"
         },
         {
-          "title": "Virginia Tech Transportation Institute: Virginia Smart Roads",
+          "title": "Virginia Tech Transportation Institute Smart Roads facility",
           "url": "https://www.vtti.vt.edu/facilities/virginia-smart-roads.html"
         }
       ],
@@ -18622,6 +18926,7 @@
       "website_url": "https://www.vsu.edu/"
     },
     {
+      "address_line": "1 Hayden Drive",
       "capabilities": [
         "Safety, policy, regulatory, and airspace integration",
         "Operations, maintenance, and sustainment"
@@ -18631,9 +18936,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vsu.edu/files/docs/policies/8000/use-unmanned-aerial-systems-drones.pdf",
-      "latitude": 37.227,
-      "location_precision": "locality",
-      "longitude": -77.402,
+      "latitude": 37.234692,
+      "location_precision": "site",
+      "longitude": -77.419026,
       "missions": [
         "Training and experimentation"
       ],
@@ -18642,6 +18947,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23806",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Greater Richmond",
@@ -18650,6 +18956,10 @@
         {
           "title": "Virginia State University Use of Unmanned Aerial Systems Policy",
           "url": "https://www.vsu.edu/files/docs/policies/8000/use-unmanned-aerial-systems-drones.pdf"
+        },
+        {
+          "title": "Virginia State University campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -18716,6 +19026,7 @@
       "website_url": "https://www.vt.edu/"
     },
     {
+      "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
@@ -18725,9 +19036,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.ise.vt.edu/research/labs/advanced-control-systems-lab.html",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "latitude": 37.229012,
+      "location_precision": "site",
+      "longitude": -80.423675,
       "missions": [
         "Training and experimentation"
       ],
@@ -18737,6 +19048,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24061-0131",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "New River Valley",
@@ -18745,6 +19057,10 @@
         {
           "title": "Virginia Tech Advanced Control Systems Lab",
           "url": "https://www.ise.vt.edu/research/labs/advanced-control-systems-lab.html"
+        },
+        {
+          "title": "Virginia Tech campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -18760,6 +19076,7 @@
       "activity_last_verified_at": "2026-08-11",
       "activity_source_url": "https://archive.vtmag.vt.edu/winter10/feature1.html",
       "activity_status": "historical",
+      "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
@@ -18770,9 +19087,9 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vedp.org/industry/unmanned-systems",
       "current_activity": "Virginia Tech documented the Autonomous Systems and Control Laboratory and its unmanned maritime research. The reviewed direct evidence is archival, so this record is labeled historical rather than presented as a current laboratory.",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "latitude": 37.229012,
+      "location_precision": "site",
+      "longitude": -80.423675,
       "missions": [
         "Training and experimentation"
       ],
@@ -18782,6 +19099,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24061-0131",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "New River Valley",
@@ -18794,6 +19112,10 @@
         {
           "title": "Virginia Tech archive: Autonomous Systems and Control Laboratory",
           "url": "https://archive.vtmag.vt.edu/winter10/feature1.html"
+        },
+        {
+          "title": "Virginia Tech campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -18806,6 +19128,7 @@
       "website_url": "https://archive.vtmag.vt.edu/winter10/feature1.html"
     },
     {
+      "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Perception, sensing, and sensor fusion"
@@ -18815,9 +19138,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "latitude": 37.229012,
+      "location_precision": "site",
+      "longitude": -80.423675,
       "missions": [
         "Training and experimentation"
       ],
@@ -18827,6 +19150,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24061-0131",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "New River Valley",
@@ -18839,6 +19163,10 @@
         {
           "title": "Autonomy and Robotics at Virginia Tech",
           "url": "https://autonomyandrobotics.centers.vt.edu/"
+        },
+        {
+          "title": "Virginia Tech campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -18851,6 +19179,7 @@
       "website_url": "https://autonomyandrobotics.centers.vt.edu/"
     },
     {
+      "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Navigation and positioning",
@@ -18861,9 +19190,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://marinerobotics.centers.vt.edu/index.html",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "latitude": 37.229012,
+      "location_precision": "site",
+      "longitude": -80.423675,
       "missions": [
         "Maritime domain awareness",
         "Environmental monitoring"
@@ -18874,6 +19203,7 @@
         "Maritime surface systems",
         "Undersea systems"
       ],
+      "postal_code": "24061-0131",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "New River Valley",
@@ -18882,6 +19212,10 @@
         {
           "title": "Virginia Tech Center for Marine Autonomy and Robotics",
           "url": "https://marinerobotics.centers.vt.edu/index.html"
+        },
+        {
+          "title": "Virginia Tech campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -18894,6 +19228,7 @@
       "website_url": "https://marinerobotics.centers.vt.edu/index.html"
     },
     {
+      "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
       "capabilities": [
         "Perception, sensing, and sensor fusion",
         "Testing, evaluation, verification, and validation"
@@ -18903,9 +19238,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://news.vt.edu/articles/2025/04/research-counteruascenter.html",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "latitude": 37.229012,
+      "location_precision": "site",
+      "longitude": -80.423675,
       "missions": [
         "Counter-UAS",
         "Force protection and installation security"
@@ -18916,6 +19251,7 @@
         "Counter-UAS",
         "Unmanned aircraft systems"
       ],
+      "postal_code": "24061-0131",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "New River Valley",
@@ -18924,6 +19260,10 @@
         {
           "title": "Virginia Tech Counter UAS Research and Testing Center",
           "url": "https://news.vt.edu/articles/2025/04/research-counteruascenter.html"
+        },
+        {
+          "title": "Virginia Tech campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -19035,6 +19375,7 @@
       "website_url": "https://www.arec.vaes.vt.edu/content/dam/arec_vaes_vt_edu/eastern-shore/newsletter/The%20Stalk%20-%20July%202024.pdf"
     },
     {
+      "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Perception, sensing, and sensor fusion"
@@ -19044,9 +19385,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://idpro.icat.vt.edu/projects.html",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "latitude": 37.229012,
+      "location_precision": "site",
+      "longitude": -80.423675,
       "missions": [
         "Training and experimentation"
       ],
@@ -19056,6 +19397,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24061-0131",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "New River Valley",
@@ -19064,6 +19406,10 @@
         {
           "title": "Virginia Tech IDPro Projects",
           "url": "https://idpro.icat.vt.edu/projects.html"
+        },
+        {
+          "title": "Virginia Tech campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -19076,6 +19422,7 @@
       "website_url": "https://idpro.icat.vt.edu/projects.html"
     },
     {
+      "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
       "capabilities": [
         "Perception, sensing, and sensor fusion",
         "Data engineering, analytics, and edge computing"
@@ -19085,9 +19432,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/spes-747.html",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "latitude": 37.229012,
+      "location_precision": "site",
+      "longitude": -80.423675,
       "missions": [
         "Agriculture and natural resources",
         "Environmental monitoring"
@@ -19097,6 +19444,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "24061-0131",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "New River Valley",
@@ -19105,6 +19453,10 @@
         {
           "title": "Virginia Tech Grain Crop Drone Research",
           "url": "https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/spes-747.html"
+        },
+        {
+          "title": "Virginia Tech campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -19117,6 +19469,7 @@
       "website_url": "https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/spes-747.html"
     },
     {
+      "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
       "capabilities": [
         "Manufacturing, materials, and prototyping",
         "Systems engineering and integration"
@@ -19126,9 +19479,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "latitude": 37.229012,
+      "location_precision": "site",
+      "longitude": -80.423675,
       "missions": [
         "Training and experimentation"
       ],
@@ -19137,6 +19490,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "24061-0131",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "New River Valley",
@@ -19149,6 +19503,10 @@
         {
           "title": "Virginia Tech Hume Center mission and organization",
           "url": "https://hume.vt.edu/about.html"
+        },
+        {
+          "title": "Virginia Tech campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -19161,6 +19519,7 @@
       "website_url": "https://hume.vt.edu/about.html"
     },
     {
+      "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
       "capabilities": [
         "Manufacturing, materials, and prototyping",
         "Systems engineering and integration"
@@ -19170,9 +19529,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://made.vt.edu/robotics-autonomy.html",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "latitude": 37.229012,
+      "location_precision": "site",
+      "longitude": -80.423675,
       "missions": [
         "Training and experimentation"
       ],
@@ -19181,6 +19540,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "24061-0131",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "New River Valley",
@@ -19189,6 +19549,10 @@
         {
           "title": "Virginia Tech Robotics and Autonomy",
           "url": "https://made.vt.edu/robotics-autonomy.html"
+        },
+        {
+          "title": "Virginia Tech campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -19201,6 +19565,7 @@
       "website_url": "https://made.vt.edu/robotics-autonomy.html"
     },
     {
+      "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
@@ -19210,9 +19575,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://nationalsecurity.vt.edu/research/mission-systems-division.html",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "latitude": 37.229012,
+      "location_precision": "site",
+      "longitude": -80.423675,
       "missions": [
         "Training and experimentation"
       ],
@@ -19222,6 +19587,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24061-0131",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "New River Valley",
@@ -19230,6 +19596,10 @@
         {
           "title": "Virginia Tech Mission Systems Division",
           "url": "https://nationalsecurity.vt.edu/research/mission-systems-division.html"
+        },
+        {
+          "title": "Virginia Tech campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -19242,6 +19612,7 @@
       "website_url": "https://nationalsecurity.vt.edu/research/mission-systems-division.html"
     },
     {
+      "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Perception, sensing, and sensor fusion"
@@ -19251,9 +19622,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://idpro.icat.vt.edu/projects.html",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "latitude": 37.229012,
+      "location_precision": "site",
+      "longitude": -80.423675,
       "missions": [
         "Training and experimentation"
       ],
@@ -19263,6 +19634,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24061-0131",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "New River Valley",
@@ -19271,6 +19643,10 @@
         {
           "title": "Virginia Tech IDPro Projects",
           "url": "https://idpro.icat.vt.edu/projects.html"
+        },
+        {
+          "title": "Virginia Tech campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -19283,6 +19659,7 @@
       "website_url": "https://idpro.icat.vt.edu/projects.html"
     },
     {
+      "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
@@ -19292,9 +19669,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://spacedrones.aoe.vt.edu/",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "latitude": 37.229012,
+      "location_precision": "site",
+      "longitude": -80.423675,
       "missions": [
         "Training and experimentation"
       ],
@@ -19304,6 +19681,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24061-0131",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "New River Valley",
@@ -19312,6 +19690,10 @@
         {
           "title": "Virginia Tech SpaceDrones Laboratory",
           "url": "https://spacedrones.aoe.vt.edu/"
+        },
+        {
+          "title": "Virginia Tech campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -19324,6 +19706,7 @@
       "website_url": "https://spacedrones.aoe.vt.edu/"
     },
     {
+      "address_line": "3500 Transportation Research Plaza",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Perception, sensing, and sensor fusion"
@@ -19331,11 +19714,11 @@
       "city": "Blacksburg",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "contact_text": "Organization public information and inquiries",
+      "contact_url": "https://www.vtti.vt.edu/contact/index.html",
+      "latitude": 37.187786,
+      "location_precision": "exact",
+      "longitude": -80.397174,
       "missions": [
         "Training and experimentation"
       ],
@@ -19345,6 +19728,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24061",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "New River Valley",
@@ -19353,6 +19737,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "Virginia Tech Transportation Institute contact information",
+          "url": "https://www.vtti.vt.edu/contact/index.html"
         },
         {
           "title": "About Virginia Tech Transportation Institute",
@@ -19369,6 +19757,7 @@
       "website_url": "https://www.vtti.vt.edu/about/about-vtti.html"
     },
     {
+      "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Testing, evaluation, verification, and validation"
@@ -19378,9 +19767,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://usl.me.vt.edu/projects.html",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "latitude": 37.229012,
+      "location_precision": "site",
+      "longitude": -80.423675,
       "missions": [
         "Training and experimentation"
       ],
@@ -19390,6 +19779,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24061-0131",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "New River Valley",
@@ -19398,6 +19788,10 @@
         {
           "title": "Virginia Tech Uncrewed Systems Laboratory",
           "url": "https://usl.me.vt.edu/projects.html"
+        },
+        {
+          "title": "Virginia Tech campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",
@@ -19760,6 +20154,7 @@
       "website_url": "https://www.virginiawestern.edu/"
     },
     {
+      "address_line": "319 Letcher Avenue",
       "capabilities": [
         "Perception, sensing, and sensor fusion",
         "Testing, evaluation, verification, and validation"
@@ -19769,9 +20164,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vmi.edu/news/headlines/2025-2026/drone-detection-focus-of-cadet-research.php",
-      "latitude": 37.785,
-      "location_precision": "locality",
-      "longitude": -79.442,
+      "latitude": 37.7896,
+      "location_precision": "site",
+      "longitude": -79.437067,
       "missions": [
         "Counter-UAS",
         "Force protection and installation security"
@@ -19782,6 +20177,7 @@
         "Counter-UAS",
         "Unmanned aircraft systems"
       ],
+      "postal_code": "24450",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Shenandoah Valley",
@@ -19790,6 +20186,10 @@
         {
           "title": "VMI Cadet Drone Detection Research",
           "url": "https://www.vmi.edu/news/headlines/2025-2026/drone-detection-focus-of-cadet-research.php"
+        },
+        {
+          "title": "Virginia Military Institute campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         }
       ],
       "state": "VA",

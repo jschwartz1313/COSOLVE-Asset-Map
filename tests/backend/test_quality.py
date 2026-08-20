@@ -89,6 +89,29 @@ class ReviewQualityWorkflowTests(TestCase):
         )
         self.assertNotContains(audit, f">{candidate.pk}<")
 
+    def test_duplicate_scan_ignores_shared_institutional_sites_and_campus_points(self):
+        self.make_asset(
+            "Example University",
+            city="Norfolk",
+            address_line="100 College Drive",
+            website_url="https://example.edu/",
+            latitude="36.850000",
+            longitude="-76.290000",
+        )
+        self.make_asset(
+            "Autonomous Systems Certificate",
+            city="Norfolk",
+            address_line="100 College Drive",
+            website_url="https://example.edu/",
+            latitude="36.850000",
+            longitude="-76.290000",
+        )
+
+        result = sync_duplicate_candidates()
+
+        self.assertEqual(result["detected"], 0)
+        self.assertFalse(DuplicateCandidate.objects.exists())
+
     def test_source_monitor_health_appears_in_review_workspace(self):
         asset = self.make_asset("Source Monitor Asset")
         Source.objects.create(
