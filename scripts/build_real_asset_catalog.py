@@ -13,6 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "virginia_real_assets.json"
 CATALOG_DATE = "2026-08-11"
+BUILD_DATE = "2026-08-21"
 
 FAA_LAYER = (
     "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
@@ -37,6 +38,7 @@ REGION_BOUNDARIES = ROOT / "static" / "data" / "virginia-regions.geojson"
 CONTACT_ENRICHMENT_PATH = ROOT / "data" / "asset_contact_enrichment.json"
 WEBSITE_ENRICHMENT_PATH = ROOT / "data" / "asset_website_enrichment.json"
 PRIORITY_PROFILE_ENRICHMENT_PATH = ROOT / "data" / "priority_profile_enrichment.json"
+SOURCE_ENRICHMENT_PATH = ROOT / "data" / "asset_source_enrichment.json"
 
 IPEDS_NAME_ALIASES = {
     "University of Virginia-Main Campus": "University of Virginia",
@@ -74,6 +76,11 @@ WEBSITE_ENRICHMENT = (
 PRIORITY_PROFILE_ENRICHMENT = (
     json.loads(PRIORITY_PROFILE_ENRICHMENT_PATH.read_text()).get("assets", {})
     if PRIORITY_PROFILE_ENRICHMENT_PATH.exists()
+    else {}
+)
+SOURCE_ENRICHMENT = (
+    json.loads(SOURCE_ENRICHMENT_PATH.read_text()).get("assets", {})
+    if SOURCE_ENRICHMENT_PATH.exists()
     else {}
 )
 
@@ -666,8 +673,9 @@ SOURCES = {
         "https://files.culpeperva.gov/FY25%20TOC%20Annual%20Report.pdf",
     ),
     "orange_uas": (
-        "Louisa County: Orange County Drone Team Deployment",
-        "https://www.louisacounty.gov/m/newsflash?cat=22%2C1",
+        "Orange County Sheriff's Office academy curriculum including drone operations",
+        "https://www.orangecountyva.gov/DocumentCenter/View/5121/"
+        "2026-Citizens-Police-Academy-Overview-and-Application?bidId=",
     ),
     "auvsi_ridge": (
         "AUVSI Ridge and Valley Chapter",
@@ -5359,7 +5367,7 @@ CURATED_ASSETS = [
         "Orange",
         "Central Virginia",
         "public_safety",
-        "Sheriff's Office drone team documented in a 2026 regional deployment supporting a search for fleeing armed subjects.",
+        "Sheriff's Office drone operations documented in 2026 public academy and youth-program materials.",
         "orange_uas",
     ),
     # Federal autonomy research and engineering facilities.
@@ -6356,6 +6364,10 @@ def finalize_record(record):
             record["sources"].append(detail_source)
     record.update(detail)
 
+    for source_data in SOURCE_ENRICHMENT.get(record["name"], []):
+        if not any(item["url"] == source_data["url"] for item in record["sources"]):
+            record["sources"].append(source_data)
+
     website_override = WEBSITE_ENRICHMENT.get(record["name"])
     if website_override:
         record["website_url"] = website_override["url"]
@@ -6421,7 +6433,9 @@ def finalize_record(record):
             if field in priority_profile:
                 record[field] = priority_profile[field]
         if priority_profile.get("current_activity"):
-            record["activity_last_verified_at"] = CATALOG_DATE
+            record["activity_last_verified_at"] = priority_profile.get(
+                "reviewed_at", CATALOG_DATE
+            )
         for source_data in priority_profile.get("sources", []):
             if not any(item["url"] == source_data["url"] for item in record["sources"]):
                 record["sources"].append(source_data)
@@ -7063,6 +7077,13 @@ def validate(records, relationships):
     if unknown_assets:
         raise ValueError(f"Unknown relationship assets: {', '.join(sorted(unknown_assets))}")
 
+    unknown_source_enrichment = set(SOURCE_ENRICHMENT) - names
+    if unknown_source_enrichment:
+        raise ValueError(
+            "Unknown source-enrichment assets: "
+            f"{', '.join(sorted(unknown_source_enrichment))}"
+        )
+
 
 def main():
     records = airport_records() + defense_records() + university_records() + curated_records()
@@ -7077,7 +7098,7 @@ def main():
     )
     validate(records, relationships)
     payload = {
-        "generated_at": CATALOG_DATE,
+        "generated_at": BUILD_DATE,
         "record_count": len(records),
         "methodology": (
             "Current operational public-use aviation facilities from the FAA feature service, "

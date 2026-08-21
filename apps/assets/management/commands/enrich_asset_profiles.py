@@ -95,6 +95,9 @@ STALE_CATALOG_SOURCE_URLS = {
         "https://www.usrtc.org/",
         "https://www.usrtc.org/about-us",
     },
+    "Orange County Sheriff's Office Drone Team": {
+        "https://www.louisacounty.gov/m/newsflash?cat=22%2C1",
+    },
     "National Institute of Aerospace": {
         "https://www.nianet.org/contact/",
     },
@@ -123,6 +126,9 @@ LEGACY_WEBSITE_URLS_BY_ASSET = {
     "Longbow Unmanned Systems Research and Test Center": {
         "https://www.hampton.gov/CivicAlerts.aspx?AID=4973&ARC=10333",
         "https://www.usrtc.org/",
+    },
+    "Orange County Sheriff's Office Drone Team": {
+        "https://www.louisacounty.gov/m/newsflash?cat=22%2C1",
     },
     "VCU ARVL Robotic Drone System": {"https://arvl.lab.vcu.edu/"},
 }

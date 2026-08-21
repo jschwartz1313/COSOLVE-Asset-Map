@@ -65,6 +65,7 @@ class RealCatalogFileTests(TestCase):
         self.assertTrue(
             all(record["sources"] and record["unmanned_systems_relevance"] for record in records)
         )
+        self.assertTrue(all(len(record["sources"]) >= 2 for record in records))
         self.assertTrue(
             all(
                 record["overview"]
@@ -162,6 +163,15 @@ class RealCatalogFileTests(TestCase):
                 for record in records
             )
         )
+        records_by_name = {record["name"]: record for record in records}
+        orange = records_by_name["Orange County Sheriff's Office Drone Team"]
+        self.assertEqual(orange["website_url"], "https://www.orangecountyva.gov/sheriff")
+        self.assertFalse(
+            any("louisacounty.gov" in source["url"] for source in orange["sources"])
+        )
+        rapidflight = records_by_name["RapidFlight UAS Manufacturing Headquarters"]
+        self.assertEqual(rapidflight["activity_status"], "historical")
+        self.assertIn("AEVEX", rapidflight["current_activity"])
         airports = [record for record in records if record["provenance"] == "faa-public-airport"]
         self.assertEqual(len(airports), 64)
         self.assertGreaterEqual(sum(bool(record["contact_phone"]) for record in airports), 63)

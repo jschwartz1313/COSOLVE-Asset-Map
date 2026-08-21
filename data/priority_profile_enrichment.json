@@ -210,6 +210,23 @@
         }
       ]
     },
+    "RapidFlight UAS Manufacturing Headquarters": {
+      "reviewed_at": "2026-08-21",
+      "activity_status": "historical",
+      "current_activity": "RapidFlight established and operated the Manassas UAS manufacturing headquarters. In September 2025, AEVEX announced that it had acquired select RapidFlight assets and intellectual property, so the facility record is retained as historical rather than presented as a current standalone RapidFlight operation.",
+      "partnership_opportunities": "Current inquiries about the acquired RapidFlight technology and assets should be directed to AEVEX rather than the former standalone RapidFlight operation.",
+      "activity_source_url": "https://aevex.com/aevex-launches-drone-factory-of-the-future-and-expands-its-robust-uas-portfolio-through-the-acquisition-of-select-assets-from-rapidflight/",
+      "sources": [
+        {
+          "title": "City of Manassas economic-development report on RapidFlight",
+          "url": "https://choosemanassas.org/2022/10/2022-q3-market-report/"
+        },
+        {
+          "title": "AEVEX acquisition of select RapidFlight assets and intellectual property",
+          "url": "https://aevex.com/aevex-launches-drone-factory-of-the-future-and-expands-its-robust-uas-portfolio-through-the-acquisition-of-select-assets-from-rapidflight/"
+        }
+      ]
+    },
     "Radford City Police Department Drone Program": {
       "activity_status": "active",
       "current_activity": "Radford Police is replacing its existing DJI Mavic 3T with a Skydio X10 and accessories through the CY 2026 DCJS program.",

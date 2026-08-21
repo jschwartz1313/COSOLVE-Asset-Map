@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11",
+  "generated_at": "2026-08-21",
   "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, broad-based Virginia degree-granting institutions from the NCES IPEDS 2024 directory while excluding narrowly specialized health and ministry schools without documented unmanned-systems relevance, and a curated set of source-backed ecosystem records. Specific street and site locations are anchored to official public address sources and geocoded against the U.S. Census address ranges or named-site map data; locality points are retained when the public record does not identify the operating department or facility. Every record is also classified as either a core unmanned-systems asset with direct documented activity or a supporting ecosystem asset with a broader enabling role.",
   "record_count": 440,
   "records": [
@@ -421,6 +421,10 @@
         {
           "title": "Albemarle County Fire Rescue Staffing Study",
           "url": "https://www.albemarle.org/home/showpublisheddocument/27911/638961259487630000"
+        },
+        {
+          "title": "Albemarle County Fire Rescue emergency services",
+          "url": "https://www.albemarle.org/government/fire-rescue/emergency-services"
         }
       ],
       "state": "VA",
@@ -463,6 +467,10 @@
         {
           "title": "Albemarle County Adopted Budget",
           "url": "https://www.albemarle.org/home/showpublisheddocument/26848/638869823368570000"
+        },
+        {
+          "title": "Albemarle County Police Department",
+          "url": "https://www.albemarle.org/government/police?lv=true"
         }
       ],
       "state": "VA",
@@ -725,6 +733,10 @@
         {
           "title": "Arlington Joint Public Safety UAS Program",
           "url": "https://www.arlingtonva.us/Government/Departments/PSCEM/Unmanned-Aircraft-Systems"
+        },
+        {
+          "title": "Arlington County announces operational UAS program",
+          "url": "https://www.arlingtonva.us/About-Arlington/Newsroom/Articles/2024/Arlington-County-Unmanned-Aircraft-Systems-Program-Now-Operational"
         }
       ],
       "state": "VA",
@@ -910,6 +922,14 @@
         {
           "title": "Virginia AAM and Unmanned Systems Test Site Program",
           "url": "https://vipc.org/virginia-launches-advanced-air-mobility-and-unmanned-systems-test-site-program/"
+        },
+        {
+          "title": "ATA company profile",
+          "url": "https://ata-llc.com/company/"
+        },
+        {
+          "title": "ATA Aviation FAA public filing describing AirDEX and UAS operations",
+          "url": "https://downloads.regulations.gov/FAA-2023-1256-0279/attachment_1.pdf"
         }
       ],
       "state": "VA",
@@ -951,6 +971,14 @@
         {
           "title": "Augusta County Sheriff's Office Drone Team",
           "url": "https://www.co.augusta.va.us/home/showpublisheddocument/20491/639101430011700000"
+        },
+        {
+          "title": "Augusta County Sheriff's Office 2020 annual report",
+          "url": "https://www.co.augusta.va.us/home/showpublisheddocument/16586/638489703162570000"
+        },
+        {
+          "title": "Augusta County Sheriff's Office",
+          "url": "https://www.co.augusta.va.us/government/departments-and-offices/sheriff"
         }
       ],
       "state": "VA",
@@ -1271,6 +1299,10 @@
         {
           "title": "AUVSI Ridge and Valley Chapter",
           "url": "https://www.auvsiridgeandvalley.org/"
+        },
+        {
+          "title": "AUVSI Ridge and Valley Chapter: About",
+          "url": "https://www.auvsiridgeandvalley.org/about"
         }
       ],
       "state": "VA",
@@ -1378,8 +1410,8 @@
       "city": "Bedford",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://sheriff.bedfordcountyva.gov/Home/Components/News/News/1947/3987?arch=1&npage=2",
+      "contact_text": "Program or parent-organization inquiries",
+      "contact_url": "https://sheriff.bedfordcountyva.gov/about-us/contact-us",
       "latitude": 37.334,
       "location_precision": "locality",
       "longitude": -79.523,
@@ -1401,6 +1433,10 @@
         {
           "title": "Bedford County Sheriff's Office Drone Team",
           "url": "https://sheriff.bedfordcountyva.gov/Home/Components/News/News/1947/3987?arch=1&npage=2"
+        },
+        {
+          "title": "Bedford County Sheriff's Office contact information",
+          "url": "https://sheriff.bedfordcountyva.gov/about-us/contact-us"
         }
       ],
       "state": "VA",
@@ -1590,6 +1626,10 @@
         {
           "title": "VCCS: Unmanned Systems Courses at Blue Ridge Community College",
           "url": "https://courses.vccs.edu/colleges/brcc/courses/UMS-UnmannedSystems"
+        },
+        {
+          "title": "Blue Ridge Community College: About",
+          "url": "https://www.brcc.edu/about/"
         }
       ],
       "state": "VA",
@@ -1631,6 +1671,10 @@
         {
           "title": "Blue Ridge Defense Works",
           "url": "https://blueridgedefense.com/"
+        },
+        {
+          "title": "SAM.gov entity record for the registered parent organization cited by Blue Ridge Defense Works",
+          "url": "https://sam.gov/entity/MV3AMKSSPZR1/coreData?status=Active"
         }
       ],
       "state": "VA",
@@ -1902,6 +1946,10 @@
         {
           "title": "VCCS: Unmanned Systems Courses at Brightpoint Community College",
           "url": "https://courses.vccs.edu/colleges/jtcc/courses/UMS-UnmannedSystems"
+        },
+        {
+          "title": "Brightpoint Community College: About",
+          "url": "https://www.brightpoint.edu/about"
         }
       ],
       "state": "VA",
@@ -2179,6 +2227,14 @@
         {
           "title": "Campbell County Sheriff's Office 2024 Annual Report",
           "url": "https://www.campbellcountyva.gov/324/Annual-Reports"
+        },
+        {
+          "title": "Campbell County Sheriff's Office 2024 annual report",
+          "url": "https://www.campbellcountyva.gov/DocumentCenter/View/15215/2024-CCSO-Annual-Report"
+        },
+        {
+          "title": "Campbell County Sheriff's Office 2021 annual report",
+          "url": "https://www.campbellcountyva.gov/DocumentCenter/View/8349/2021-CCSO-Annual-Report"
         }
       ],
       "state": "VA",
@@ -2771,6 +2827,10 @@
         {
           "title": "Chesterfield Fire and EMS Community Risk Assessment",
           "url": "https://www.chesterfield.gov/DocumentCenter/View/46569/Chesterfield-Fire-and-EMS-Community-Risk-Assessment-and-Standards-of-Cover-PDF"
+        },
+        {
+          "title": "Chesterfield County Police and public-safety drone operations",
+          "url": "https://www.chesterfield.gov/941/Police"
         }
       ],
       "state": "VA",
@@ -2891,7 +2951,7 @@
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.fairfaxva.gov/files/assets/city/v/1/police/documents/annual-reports/fy2023-ffx-pd-annual-report.pdf",
+      "contact_url": "https://www.fairfaxva.gov/Government/Departments/Police",
       "latitude": 38.846,
       "location_precision": "locality",
       "longitude": -77.307,
@@ -2913,6 +2973,10 @@
         {
           "title": "City of Fairfax Police Annual Report",
           "url": "https://www.fairfaxva.gov/files/assets/city/v/1/police/documents/annual-reports/fy2023-ffx-pd-annual-report.pdf"
+        },
+        {
+          "title": "City of Fairfax Police Department",
+          "url": "https://www.fairfaxva.gov/Government/Departments/Police"
         }
       ],
       "state": "VA",
@@ -3229,8 +3293,8 @@
       "city": "Richmond",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.ccals.com/",
+      "contact_text": "Organization public information and inquiries",
+      "contact_url": "https://www.ccals.com/about-us/",
       "latitude": 37.541,
       "location_precision": "locality",
       "longitude": -77.436,
@@ -3250,6 +3314,14 @@
         {
           "title": "Commonwealth Center for Advanced Logistics Systems",
           "url": "https://www.ccals.com/"
+        },
+        {
+          "title": "CCALS: About",
+          "url": "https://www.ccals.com/about-us/"
+        },
+        {
+          "title": "CCALS: What we do",
+          "url": "https://www.ccals.com/what-we-do/"
         }
       ],
       "state": "VA",
@@ -3465,7 +3537,7 @@
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://files.culpeperva.gov/FY25%20TOC%20Annual%20Report.pdf",
+      "contact_url": "https://files.culpeperva.gov/Document_Center/Government/Town_Clerk/FY23_TOC_Annual_Report.pdf?t=202311211113020",
       "latitude": 38.473,
       "location_precision": "locality",
       "longitude": -77.996,
@@ -3487,6 +3559,10 @@
         {
           "title": "Culpeper Police Department FY2025 Annual Report",
           "url": "https://files.culpeperva.gov/FY25%20TOC%20Annual%20Report.pdf"
+        },
+        {
+          "title": "Town of Culpeper FY 2023 annual report",
+          "url": "https://files.culpeperva.gov/Document_Center/Government/Town_Clerk/FY23_TOC_Annual_Report.pdf?t=202311211113020"
         }
       ],
       "state": "VA",
@@ -3664,6 +3740,10 @@
         {
           "title": "VCCS: Unmanned Systems Courses at Danville Community College",
           "url": "https://courses.vccs.edu/colleges/dcc/courses/UMS-UnmannedSystems"
+        },
+        {
+          "title": "Danville Community College mission and institution profile",
+          "url": "https://danville.edu/mission-vision"
         }
       ],
       "state": "VA",
@@ -3705,6 +3785,14 @@
         {
           "title": "Danville Life Saving Crew Drone Operations",
           "url": "https://www.dlsc.org/drones"
+        },
+        {
+          "title": "Danville Life Saving Crew: About",
+          "url": "https://www.dlsc.org/about"
+        },
+        {
+          "title": "Danville Life Saving Crew history and drone-team development",
+          "url": "https://www.dlsc.org/history"
         }
       ],
       "state": "VA",
@@ -4301,6 +4389,10 @@
         {
           "title": "VCCS: Unmanned Systems Courses at Eastern Shore Community College",
           "url": "https://courses.vccs.edu/colleges/escc/courses/UMS-UnmannedSystems"
+        },
+        {
+          "title": "Eastern Shore Community College: About",
+          "url": "https://es.vccs.edu/about/"
         }
       ],
       "state": "VA",
@@ -4925,6 +5017,10 @@
         {
           "title": "Flying Ship Company",
           "url": "https://www.flyingship.co/contact"
+        },
+        {
+          "title": "Flying Ship Company",
+          "url": "https://www.flyingship.co/"
         }
       ],
       "state": "VA",
@@ -5231,6 +5327,10 @@
         {
           "title": "Frederick County Sheriff's Office Special Operations",
           "url": "https://www.fcva.us/departments/sheriff-s-office/divisions/special-operations"
+        },
+        {
+          "title": "Frederick County Sheriff's Office",
+          "url": "https://www.fcva.us/departments/sheriff-s-office"
         }
       ],
       "state": "VA",
@@ -5416,6 +5516,14 @@
         {
           "title": "Fulcrum Concepts Contact",
           "url": "https://fulcrumconceptsllc.com/contact/"
+        },
+        {
+          "title": "Fulcrum Concepts: About",
+          "url": "https://fulcrumconceptsllc.com/about/"
+        },
+        {
+          "title": "Fulcrum Concepts program news",
+          "url": "https://fulcrumconceptsllc.com/news/"
         }
       ],
       "state": "VA",
@@ -6101,6 +6209,14 @@
         {
           "title": "GO Virginia",
           "url": "https://www.dhcd.virginia.gov/gova"
+        },
+        {
+          "title": "Virginia DHCD: GO Virginia regional materials",
+          "url": "https://www.dhcd.virginia.gov/go-virginia-regional-materials"
+        },
+        {
+          "title": "Virginia DHCD: GO Virginia State Board",
+          "url": "https://www.dhcd.virginia.gov/virginia-growth-and-opportunity-go-virginia-board"
         }
       ],
       "state": "VA",
@@ -7453,6 +7569,10 @@
         {
           "title": "James City County Police Drone as First Responder Program",
           "url": "https://www.jamescitycountyva.gov/m/newsflash/Home/Detail/6334"
+        },
+        {
+          "title": "James City County Police Department",
+          "url": "https://www.jamescitycountyva.gov/767/Police"
         }
       ],
       "state": "VA",
@@ -7997,8 +8117,8 @@
       "city": "Middletown",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://courses.vccs.edu/colleges/lfcc/courses/UMS-UnmannedSystems",
+      "contact_text": "Program or parent-organization inquiries",
+      "contact_url": "https://laurelridge.edu/about-us/",
       "latitude": 39.027,
       "location_precision": "locality",
       "longitude": -78.28,
@@ -8019,6 +8139,10 @@
         {
           "title": "VCCS: Unmanned Systems Courses at Laurel Ridge Community College",
           "url": "https://courses.vccs.edu/colleges/lfcc/courses/UMS-UnmannedSystems"
+        },
+        {
+          "title": "Laurel Ridge Community College: About",
+          "url": "https://laurelridge.edu/about-us/"
         }
       ],
       "state": "VA",
@@ -8160,6 +8284,14 @@
         {
           "title": "Leesburg Police Unmanned Aircraft Systems Team",
           "url": "https://www.leesburgva.gov/departments/police/about-the-lpd/investigations-operational-support-bureau/specialty-units/unmaned-aircraft-systems-uas-team"
+        },
+        {
+          "title": "Leesburg Police 2018 annual report",
+          "url": "https://www.leesburgva.gov/home/showpublisheddocument/32228/637032736900770000"
+        },
+        {
+          "title": "Leesburg Police Department general orders",
+          "url": "https://www.leesburgva.gov/departments/police/about-the-lpd/general-orders"
         }
       ],
       "state": "VA",
@@ -8657,6 +8789,14 @@
         {
           "title": "U.S. Small Business Innovation Research portfolio: The Longbow Group",
           "url": "https://www.sbir.gov/portfolio/1664155"
+        },
+        {
+          "title": "Hampton public-hearing materials for the Longbow Group 3 UAS test center",
+          "url": "https://www.hampton.gov/Archive.aspx?ADID=3536"
+        },
+        {
+          "title": "National Institute of Aerospace annual report describing Longbow development",
+          "url": "https://www.nianet.org/wp-content/uploads/2022/02/2020-NIA-annual-report.pdf"
         }
       ],
       "state": "VA",
@@ -8998,6 +9138,10 @@
         {
           "title": "Lynchburg Fire Department Annual Report",
           "url": "https://www.lynchburgva.gov/ArchiveCenter/ViewFile/Item/64"
+        },
+        {
+          "title": "Lynchburg Fire Department article describing the UAV team",
+          "url": "https://lynchburgva.gov/Archive/ViewFile/Item/100"
         }
       ],
       "state": "VA",
@@ -9017,8 +9161,8 @@
       "city": "Lynchburg",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://lynchburgva.gov/DocumentCenter/View/4331",
+      "contact_text": "Program or parent-organization inquiries",
+      "contact_url": "https://www.lynchburgva.gov/m/directory/department?did=54",
       "latitude": 37.414,
       "location_precision": "locality",
       "longitude": -79.142,
@@ -9040,6 +9184,10 @@
         {
           "title": "Lynchburg Police Drone Unit",
           "url": "https://lynchburgva.gov/DocumentCenter/View/4331"
+        },
+        {
+          "title": "City of Lynchburg police department directory",
+          "url": "https://www.lynchburgva.gov/m/directory/department?did=54"
         }
       ],
       "state": "VA",
@@ -9194,6 +9342,18 @@
         {
           "title": "MAG Aerospace Corporate Headquarters",
           "url": "https://www.magaero.com/connect/"
+        },
+        {
+          "title": "MAG Aerospace",
+          "url": "https://www.magaero.com/"
+        },
+        {
+          "title": "MAG Aerospace history and UAS operations",
+          "url": "https://www.magaero.com/history-and-growth/"
+        },
+        {
+          "title": "MAG Aerospace autonomy and technology integration",
+          "url": "https://www.magaero.com/technology-integration/"
         }
       ],
       "state": "VA",
@@ -9305,8 +9465,8 @@
       "city": "Quantico",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.marines.mil/News/News-Display/Article/746745/marine-corps-warfighting-lab-tests-autonomous-reconnaissance/",
+      "contact_text": "Organization public information and inquiries",
+      "contact_url": "https://www.mcwl.marines.mil/Welcome-to-MCWL/About-Us/",
       "latitude": 38.522,
       "location_precision": "locality",
       "longitude": -77.29,
@@ -9330,6 +9490,18 @@
         {
           "title": "Marine Corps Warfighting Laboratory Autonomous Reconnaissance",
           "url": "https://www.marines.mil/News/News-Display/Article/746745/marine-corps-warfighting-lab-tests-autonomous-reconnaissance/"
+        },
+        {
+          "title": "Marine Corps Warfighting Laboratory: About",
+          "url": "https://www.mcwl.marines.mil/Welcome-to-MCWL/About-Us/"
+        },
+        {
+          "title": "Marine Corps Warfighting Laboratory Current Technology Office",
+          "url": "https://www.mcwl.marines.mil/Divisions/SnT/CTO/"
+        },
+        {
+          "title": "Marine Corps drone task force and UAS lethality initiative",
+          "url": "https://www.marines.mil/News/News-Display/Article/4299458/marine-corps-initiates-drone-task-force-summits-to-accelerate-uas-lethality/"
         }
       ],
       "state": "VA",
@@ -9888,6 +10060,14 @@
         {
           "title": "MITRE National Range",
           "url": "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range"
+        },
+        {
+          "title": "MITRE National Range fact sheet PDF",
+          "url": "https://www.mitre.org/sites/default/files/2024-07/PR-24-2208-MITRE-National-Range.pdf"
+        },
+        {
+          "title": "MITRE EDGE laboratory and range environment",
+          "url": "https://www.mitre.org/resources/edge-lab"
         }
       ],
       "state": "VA",
@@ -10154,6 +10334,10 @@
         {
           "title": "VCCS: Unmanned Systems Courses at Mountain Gateway Community College",
           "url": "https://courses.vccs.edu/colleges/dslcc/courses/UMS-UnmannedSystems"
+        },
+        {
+          "title": "Mountain Gateway Community College: About",
+          "url": "https://www.mgcc.edu/about"
         }
       ],
       "state": "VA",
@@ -10909,6 +11093,14 @@
         {
           "title": "NSWC Dahlgren Division: What We Do",
           "url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/What-We-Do/"
+        },
+        {
+          "title": "NSWC Dahlgren Division: Who we are",
+          "url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Who-We-Are/"
+        },
+        {
+          "title": "NSWC Dahlgren intelligent automation fact sheet",
+          "url": "https://www.navsea.navy.mil/Portals/103/Documents/NSWC_Dahlgren/Fact%20Sheets%202024/FNL_IA%20Fact%20Sheet.pdf"
         }
       ],
       "state": "VA",
@@ -11051,6 +11243,14 @@
         {
           "title": "New College Institute",
           "url": "https://newcollegeinstitute.org/"
+        },
+        {
+          "title": "New College Institute 2023 annual report documenting UAS test-site administration",
+          "url": "https://newcollegeinstitute.org/wp-content/uploads/2024/07/2023-Annual-Report-1.pdf"
+        },
+        {
+          "title": "New College Institute: About",
+          "url": "https://newcollegeinstitute.org/about-new-college-institute/"
         }
       ],
       "state": "VA",
@@ -12248,6 +12448,14 @@
         {
           "title": "NSWC Dahlgren Outdoor Autonomy Laboratory",
           "url": "https://www.navsea.navy.mil/Media/News/Article-View/Article/3886620/maximizing-resources-building-a-competitive-outdoor-autonomy-lab-environment/"
+        },
+        {
+          "title": "NSWC Dahlgren Division: Who we are",
+          "url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Who-We-Are/"
+        },
+        {
+          "title": "NSWC Dahlgren Division mission areas",
+          "url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/What-We-Do/"
         }
       ],
       "state": "VA",
@@ -12348,6 +12556,14 @@
         {
           "title": "NSWCDD Dam Neck Activity",
           "url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Dam-Neck/"
+        },
+        {
+          "title": "NSWC Dahlgren Division: Who we are",
+          "url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Who-We-Are/"
+        },
+        {
+          "title": "NSWC Dahlgren Division mission areas",
+          "url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/What-We-Do/"
         }
       ],
       "state": "VA",
@@ -12863,7 +13079,7 @@
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.louisacounty.gov/m/newsflash?cat=22%2C1",
+      "contact_url": "https://www.orangecountyva.gov/DocumentCenter/View/5121/2026-Citizens-Police-Academy-Overview-and-Application?bidId=",
       "latitude": 38.245,
       "location_precision": "locality",
       "longitude": -78.013,
@@ -12873,18 +13089,26 @@
         "Surveying and mapping"
       ],
       "name": "Orange County Sheriff's Office Drone Team",
-      "overview": "Sheriff's Office drone team documented in a 2026 regional deployment supporting a search for fleeing armed subjects. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+      "overview": "Sheriff's Office drone operations documented in 2026 public academy and youth-program materials. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Central Virginia",
-      "short_description": "Sheriff's Office drone team documented in a 2026 regional deployment supporting a search for fleeing armed subjects.",
+      "short_description": "Sheriff's Office drone operations documented in 2026 public academy and youth-program materials.",
       "sources": [
         {
-          "title": "Louisa County: Orange County Drone Team Deployment",
-          "url": "https://www.louisacounty.gov/m/newsflash?cat=22%2C1"
+          "title": "Orange County Sheriff's Office academy curriculum including drone operations",
+          "url": "https://www.orangecountyva.gov/DocumentCenter/View/5121/2026-Citizens-Police-Academy-Overview-and-Application?bidId="
+        },
+        {
+          "title": "Orange County Sheriff's Office",
+          "url": "https://www.orangecountyva.gov/sheriff"
+        },
+        {
+          "title": "Orange County Sheriff's Office youth academy drone demonstration",
+          "url": "https://orangecountyva.gov/1126/Youth-Academy"
         }
       ],
       "state": "VA",
@@ -12894,7 +13118,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.louisacounty.gov/m/newsflash?cat=22%2C1"
+      "website_url": "https://www.orangecountyva.gov/sheriff"
     },
     {
       "address_line": "6591 Merriman Road",
@@ -13149,6 +13373,14 @@
         {
           "title": "VEDP: Virginia Unmanned Systems Companies",
           "url": "https://www.vedp.org/news/home-business-more-400-years"
+        },
+        {
+          "title": "Perrone Robotics: About",
+          "url": "https://www.perronerobotics.com/about"
+        },
+        {
+          "title": "Perrone Robotics deployments",
+          "url": "https://www.perronerobotics.com/deployments"
         }
       ],
       "state": "VA",
@@ -13373,6 +13605,10 @@
         {
           "title": "Powhatan County Emergency Operations Plan",
           "url": "https://www.powhatanva.gov/DocumentCenter/View/8410/Emergency-Operations-Plan-2024"
+        },
+        {
+          "title": "Powhatan County Emergency Management",
+          "url": "https://www.powhatanva.gov/234/Emergency-Management"
         }
       ],
       "state": "VA",
@@ -13415,6 +13651,14 @@
         {
           "title": "Prince Edward County Drone Program",
           "url": "https://www.co.prince-edward.va.us/News-Article/Pyle-Named-County-Emergency-Management-Coordinator"
+        },
+        {
+          "title": "Prince Edward County 2023 minutes documenting emergency-management drone use",
+          "url": "https://www.co.prince-edward.va.us/files/assets/county/v/1/govboard/documents/board-meetings/december-12-2023-regular-meeting-minutes-agenda.pdf"
+        },
+        {
+          "title": "Prince Edward County Emergency Management",
+          "url": "https://www.co.prince-edward.va.us/Departments/Emergency-Management"
         }
       ],
       "state": "VA",
@@ -13457,6 +13701,10 @@
         {
           "title": "Prince William County Police sUAS Team",
           "url": "https://www.pwcva.gov/news/pwcpd-spotlight-departments-suas-team-serving-sky/"
+        },
+        {
+          "title": "Prince William County Police 2023 annual report",
+          "url": "https://www.pwcva.gov/assets/2024-03/2023%20Annual%20Report.pdf"
         }
       ],
       "state": "VA",
@@ -13853,6 +14101,9 @@
       "website_url": "https://www.rmc.edu/"
     },
     {
+      "activity_last_verified_at": "2026-08-21",
+      "activity_source_url": "https://aevex.com/aevex-launches-drone-factory-of-the-future-and-expands-its-robust-uas-portfolio-through-the-acquisition-of-select-assets-from-rapidflight/",
+      "activity_status": "historical",
       "capabilities": [
         "Systems engineering and integration",
         "Operations, maintenance, and sustainment"
@@ -13862,6 +14113,7 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.prnewswire.com/news-releases/rapidflight-celebrates-grand-opening-of-uas-3d-manufacturing-headquarters-in-manassas-virginia-301884344.html",
+      "current_activity": "RapidFlight established and operated the Manassas UAS manufacturing headquarters. In September 2025, AEVEX announced that it had acquired select RapidFlight assets and intellectual property, so the facility record is retained as historical rather than presented as a current standalone RapidFlight operation.",
       "latitude": 38.751,
       "location_precision": "locality",
       "longitude": -77.475,
@@ -13871,6 +14123,7 @@
       ],
       "name": "RapidFlight UAS Manufacturing Headquarters",
       "overview": "Manassas headquarters and digital manufacturing facility for rapidly produced unmanned aircraft systems. Public sources support its classification as a Virginia facility. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "partnership_opportunities": "Current inquiries about the acquired RapidFlight technology and assets should be directed to AEVEX rather than the former standalone RapidFlight operation.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -13882,6 +14135,14 @@
         {
           "title": "RapidFlight Manassas UAS Manufacturing Headquarters",
           "url": "https://www.prnewswire.com/news-releases/rapidflight-celebrates-grand-opening-of-uas-3d-manufacturing-headquarters-in-manassas-virginia-301884344.html"
+        },
+        {
+          "title": "City of Manassas economic-development report on RapidFlight",
+          "url": "https://choosemanassas.org/2022/10/2022-q3-market-report/"
+        },
+        {
+          "title": "AEVEX acquisition of select RapidFlight assets and intellectual property",
+          "url": "https://aevex.com/aevex-launches-drone-factory-of-the-future-and-expands-its-robust-uas-portfolio-through-the-acquisition-of-select-assets-from-rapidflight/"
         }
       ],
       "state": "VA",
@@ -14230,7 +14491,7 @@
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://rva.gov/sites/default/files/2024-02/GO%2006-32%20Unmanned%20Aerial%20Vehicle.pdf",
+      "contact_url": "https://rva.gov/police",
       "latitude": 37.541,
       "location_precision": "locality",
       "longitude": -77.436,
@@ -14252,6 +14513,14 @@
         {
           "title": "Richmond Police Small Unmanned Aerial Vehicle Policy",
           "url": "https://rva.gov/sites/default/files/2024-02/GO%2006-32%20Unmanned%20Aerial%20Vehicle.pdf"
+        },
+        {
+          "title": "Richmond Police Department",
+          "url": "https://rva.gov/police"
+        },
+        {
+          "title": "Richmond Police Department general orders index",
+          "url": "https://www.rva.gov/police/general-orders/"
         }
       ],
       "state": "VA",
@@ -14378,6 +14647,14 @@
         {
           "title": "Roanoke County Community Strategic Plan Annual Report",
           "url": "https://www.roanokecountyva.gov/DocumentCenter/View/22361/2021-Community-Strategic-Plan-Annual-Report"
+        },
+        {
+          "title": "Roanoke County Fire and Rescue",
+          "url": "https://www.roanokecountyva.gov/75/Fire-Rescue"
+        },
+        {
+          "title": "Roanoke County 2019 report describing Fire and Rescue drone capability",
+          "url": "https://www.roanokecountyva.gov/DocumentCenter/View/17041/2019-State-of-the-County-Remarks?bidId="
         }
       ],
       "state": "VA",
@@ -14420,6 +14697,10 @@
         {
           "title": "Roanoke County Police Department Special Operations",
           "url": "https://www.roanokecountyva.gov/DocumentCenter/View/1061/Agenda-with-Reports"
+        },
+        {
+          "title": "Roanoke County Police Department",
+          "url": "https://www.roanokecountyva.gov/83/Police"
         }
       ],
       "state": "VA",
@@ -15139,6 +15420,14 @@
         {
           "title": "Southwest Virginia Higher Education Center Board Minutes",
           "url": "https://www.swcenter.edu/wp-content/uploads/2025/07/2024Dec12_Minutes_FINAL.pdf"
+        },
+        {
+          "title": "Southwest Virginia Higher Education Center FY 2023 annual report documenting drone education",
+          "url": "https://www.swcenter.edu/wp-content/uploads/2024/10/FY-23-SWVHEC-Annual-Report.pdf"
+        },
+        {
+          "title": "Southwest Virginia Higher Education Center education-outreach minutes",
+          "url": "https://www.swcenter.edu/wp-content/uploads/2024/07/December-10-2020-Minutes.pdf"
         }
       ],
       "state": "VA",
@@ -15180,6 +15469,14 @@
         {
           "title": "Spotsylvania Regional Public Safety UAS Program",
           "url": "https://www.spotsylvania.va.us/DocumentCenter/View/20535/May-19-2022---No-Quorum"
+        },
+        {
+          "title": "Spotsylvania County 2018 minutes adopting the regional UAS program",
+          "url": "https://www.spotsylvania.va.us/DocumentCenter/View/4833/Minutes-02-27-2018?bidId="
+        },
+        {
+          "title": "Spotsylvania County public-safety departments",
+          "url": "https://www.spotsylvania.va.us/1036/Public-Safety"
         }
       ],
       "state": "VA",
@@ -16728,7 +17025,7 @@
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://abcrc.virginia.edu/files/abcrc/files/coastal_research_center___drone_pilot_compliance_checklist.pdf",
+      "contact_url": "https://abcrc.virginia.edu/permits-access-drones",
       "latitude": 37.352,
       "location_precision": "locality",
       "longitude": -75.946,
@@ -16750,6 +17047,14 @@
         {
           "title": "UVA Coastal Research Center Drone Pilot Compliance Checklist",
           "url": "https://abcrc.virginia.edu/files/abcrc/files/coastal_research_center___drone_pilot_compliance_checklist.pdf"
+        },
+        {
+          "title": "UVA Coastal Research Center drone permits and access",
+          "url": "https://abcrc.virginia.edu/permits-access-drones"
+        },
+        {
+          "title": "UVA Coastal Research Center research infrastructure and drone capabilities",
+          "url": "https://abcrc.virginia.edu/research-infrastructure-facilities"
         }
       ],
       "state": "VA",
@@ -17392,6 +17697,14 @@
         {
           "title": "Virginia Unmanned Systems Center",
           "url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
+        },
+        {
+          "title": "VIPC press kit identifying the Virginia AAM Alliance",
+          "url": "https://vipc.org/press/press-kit/"
+        },
+        {
+          "title": "VIPC strategic initiatives",
+          "url": "https://vipc.org/initiatives/strategic-initiatives/"
         }
       ],
       "state": "VA",
@@ -17613,8 +17926,8 @@
       "city": "Richmond",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://courses.vccs.edu/courses/UMS-UnmannedSystems",
+      "contact_text": "Program or parent-organization inquiries",
+      "contact_url": "https://www.vccs.edu/find-your-community-college/",
       "latitude": 37.541,
       "location_precision": "locality",
       "longitude": -77.436,
@@ -17635,6 +17948,14 @@
         {
           "title": "Virginia Community College System Unmanned Systems Courses",
           "url": "https://courses.vccs.edu/courses/UMS-UnmannedSystems"
+        },
+        {
+          "title": "Virginia Community College System: About",
+          "url": "https://www.vccs.edu/about/"
+        },
+        {
+          "title": "Virginia Community College System college directory",
+          "url": "https://www.vccs.edu/find-your-community-college/"
         }
       ],
       "state": "VA",
@@ -17676,6 +17997,14 @@
         {
           "title": "Virginia Conservation Police 2024 Annual Report",
           "url": "https://dwr.virginia.gov/wp-content/uploads/media/Virginia-Conservation-Police-Annual-Report-2024.pdf"
+        },
+        {
+          "title": "Virginia Conservation Police 2022 annual report documenting UAS program launch",
+          "url": "https://dwr.virginia.gov/wp-content/uploads/media/Virginia-Conservation-Police-Annual-Report-2022.pdf"
+        },
+        {
+          "title": "Virginia DWR law-enforcement committee UAS program materials",
+          "url": "https://dwr.virginia.gov/wp-content/uploads/media/10272021-LE-Committee-Meeting-Materials.pdf"
         }
       ],
       "state": "VA",
@@ -17771,6 +18100,10 @@
         {
           "title": "Virginia Department of Forestry Drone Program",
           "url": "https://dof.virginia.gov/user_directory/jason-a-braunstein/"
+        },
+        {
+          "title": "Virginia Department of Forestry agency directory and UAV program contact",
+          "url": "https://www.dof.virginia.gov/about/agency-directory/"
         }
       ],
       "state": "VA",
@@ -17810,6 +18143,18 @@
         {
           "title": "Virginia Unmanned Systems Center",
           "url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
+        },
+        {
+          "title": "VDOT geospatial program and UAS services",
+          "url": "https://www.vdot.virginia.gov/doing-business/technical-guidance-and-support/location-and-design/geospatial-program/"
+        },
+        {
+          "title": "VDOT unmanned aircraft systems policy",
+          "url": "https://www.vdot.virginia.gov/media/vdotvirginiagov/doing-business/technical-guidance-and-support/technical-guidance-documents/location-and-design/migrated/iim/IIM264_acc.pdf"
+        },
+        {
+          "title": "VDOT Unmanned Aerial Systems Manual",
+          "url": "https://www.vdot.virginia.gov/doing-business/technical-guidance-and-support/technical-guidance-documents/unmanned-aerial-systems-uas-manual/"
         }
       ],
       "state": "VA",
@@ -17957,6 +18302,14 @@
         {
           "title": "Virginia Department of Aviation Flight Information Exchange",
           "url": "https://doav.virginia.gov/aviation_programs_resources/"
+        },
+        {
+          "title": "Virginia Flight Information Exchange concept paper",
+          "url": "https://doav.virginia.gov/wp-content/uploads/Files/DocumentLibrary/va-fix-concept-paper-july-2020---copyright-final-publication.pdf"
+        },
+        {
+          "title": "Virginia DOAV mobility and innovation report describing VA-FIX",
+          "url": "https://doav.virginia.gov/wp-content/uploads/Files/DocumentLibrary/DOAVMVI2024Reportv2.0.pdf"
         }
       ],
       "state": "VA",
@@ -18177,6 +18530,14 @@
         {
           "title": "Virginia Unmanned Systems Center",
           "url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
+        },
+        {
+          "title": "VIPC strategic initiatives",
+          "url": "https://vipc.org/initiatives/strategic-initiatives/"
+        },
+        {
+          "title": "VIPC press kit and organizational information",
+          "url": "https://vipc.org/press/press-kit/"
         }
       ],
       "state": "VA",
@@ -18623,6 +18984,14 @@
         {
           "title": "Virginia Unmanned Systems Center",
           "url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
+        },
+        {
+          "title": "VIPC strategic initiatives including the Public Safety Innovation Center",
+          "url": "https://vipc.org/initiatives/strategic-initiatives/"
+        },
+        {
+          "title": "VIPC press kit identifying the Public Safety Innovation Center",
+          "url": "https://vipc.org/press/press-kit/"
         }
       ],
       "state": "VA",
@@ -18860,6 +19229,10 @@
         {
           "title": "Virginia State Police Department History",
           "url": "https://vsp.virginia.gov/about-us/department-history/"
+        },
+        {
+          "title": "Virginia State Police: About",
+          "url": "https://vsp.virginia.gov/about-us/"
         }
       ],
       "state": "VA",
@@ -19342,7 +19715,7 @@
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.arec.vaes.vt.edu/content/dam/arec_vaes_vt_edu/eastern-shore/newsletter/The%20Stalk%20-%20July%202024.pdf",
+      "contact_url": "https://www.arec.vaes.vt.edu/arec/eastern-shore.html",
       "latitude": 37.649,
       "location_precision": "locality",
       "longitude": -75.741,
@@ -19363,6 +19736,14 @@
         {
           "title": "Virginia Tech Eastern Shore AREC Drone Research",
           "url": "https://www.arec.vaes.vt.edu/content/dam/arec_vaes_vt_edu/eastern-shore/newsletter/The%20Stalk%20-%20July%202024.pdf"
+        },
+        {
+          "title": "Virginia Tech Eastern Shore Agricultural Research and Extension Center",
+          "url": "https://www.arec.vaes.vt.edu/arec/eastern-shore.html"
+        },
+        {
+          "title": "Virginia Tech Eastern Shore AREC researcher profile documenting UAS work",
+          "url": "https://www.arec.vaes.vt.edu/arec/eastern-shore/people/vijay-singh.html"
         }
       ],
       "state": "VA",
@@ -20101,6 +20482,10 @@
         {
           "title": "Virginia Western Autonomous Vehicle Technology",
           "url": "https://www.virginiawestern.edu/academics/mechatronics/autonomous-vehicle-technology/"
+        },
+        {
+          "title": "Virginia Western mechatronics program",
+          "url": "https://www.virginiawestern.edu/academics/mechatronics/"
         }
       ],
       "state": "VA",
@@ -20669,7 +21054,7 @@
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.winchesterva.gov/files/assets/public/v/1/finance/fy23_budget_book.pdf",
+      "contact_url": "https://www.winchesterva.gov/Government/Departments/Emergency-Management",
       "latitude": 39.185,
       "location_precision": "locality",
       "longitude": -78.163,
@@ -20691,6 +21076,14 @@
         {
           "title": "Winchester Emergency Management UAS Program",
           "url": "https://www.winchesterva.gov/files/assets/public/v/1/finance/fy23_budget_book.pdf"
+        },
+        {
+          "title": "Winchester FY 2026 budget documenting current sUAS capability",
+          "url": "https://www.winchesterva.gov/files/assets/public/v/1/finance/fy26-budget-7.24.25-1.pdf"
+        },
+        {
+          "title": "Winchester Emergency Management",
+          "url": "https://www.winchesterva.gov/Government/Departments/Emergency-Management"
         }
       ],
       "state": "VA",
