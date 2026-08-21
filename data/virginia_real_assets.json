@@ -54,7 +54,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.esva911.org/Communications%20Manual%20-%20Public%20Release%20Version-%20UPDATED%2011-26-24.pdf",
       "activity_status": "active",
       "capabilities": [
@@ -150,7 +150,7 @@
       "website_url": "https://adaptiveaero.com/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://advancedaircraftcompany.com/uas-products/",
       "activity_status": "active",
       "address_line": "1100 Exploration Way, Suite 316M",
@@ -249,7 +249,7 @@
       "website_url": "https://www.aeroprobe.com/about-aeroprobe/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.avinc.com/about/maccready-works/",
       "activity_status": "active",
       "address_line": "241 18th Street South, Suite 650",
@@ -533,7 +533,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.countyofamherst.com/egov/documents/1730910273_75599.pdf",
       "activity_status": "active",
       "address_line": "119 Taylor Street",
@@ -598,7 +598,7 @@
       "website_url": "https://www.countyofamherst.com/egov/documents/1730910273_75599.pdf"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.anratechnologies.com/home/2026/06/24/building-michigans-digital-airspace-integrating-commercial-drone-operations-and-airspace-security/",
       "activity_status": "active",
       "address_line": "11710 Plaza America Drive, Suite 200",
@@ -791,7 +791,7 @@
       "website_url": "https://www.nationalguard.mil/About-the-Guard/Army-National-Guard/Contact-Us/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.ashlandva.gov/DocumentCenter/View/6463/July-2024-1?bidId=",
       "activity_status": "active",
       "capabilities": [
@@ -991,7 +991,7 @@
       "website_url": "https://www.co.augusta.va.us/home/showpublisheddocument/20491/639101430011700000"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.aurora.aero/contact-us/",
       "activity_status": "active",
       "address_line": "9950 Wakeman Drive",
@@ -1185,39 +1185,46 @@
       "website_url": "https://www.vtaav.org/our-team"
     },
     {
+      "activity_last_verified_at": "2026-08-21",
+      "activity_source_url": "https://www.autonomousflight.us/careers",
+      "activity_status": "active",
+      "address_line": "172 East Main Street",
       "capabilities": [
         "Systems engineering and integration",
         "Operations, maintenance, and sustainment"
       ],
-      "city": "Roanoke",
-      "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Organization public information and inquiries",
-      "contact_url": "https://www.autonomousflight.us/contact-offices",
-      "latitude": 37.271,
-      "location_precision": "locality",
-      "longitude": -79.941,
+      "city": "Salem",
+      "contact_email": "recruiting@autonomousflight.us",
+      "contact_phone": "540-647-0484",
+      "contact_text": "Autonomous Flight Technologies public inquiries",
+      "contact_url": "https://www.autonomousflight.us/careers",
+      "current_activity": "Autonomous Flight Technologies currently publishes small-UAS design, fabrication, flight-testing, counter-UAS products, and flight services from its Salem office.",
+      "latitude": 37.293087,
+      "location_precision": "exact",
+      "longitude": -80.055796,
       "missions": [
         "Infrastructure inspection",
         "Logistics and contested logistics"
       ],
       "name": "Autonomous Flight Technologies",
-      "overview": "Roanoke-based developer of unmanned aircraft, avionics, and autonomous-flight technologies. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Salem developer of unmanned aircraft, avionics, counter-UAS products, and autonomous-flight technologies. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "partnership_opportunities": "Product, engineering, flight-service, and employment inquiries can use the company's published contact routes.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "24153",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Roanoke Valley",
-      "short_description": "Roanoke-based developer of unmanned aircraft, avionics, and autonomous-flight technologies.",
+      "short_description": "Salem developer of unmanned aircraft, avionics, counter-UAS products, and autonomous-flight technologies.",
       "sources": [
         {
           "title": "Autonomous Flight Technologies",
           "url": "https://www.autonomousflight.us/company"
         },
         {
-          "title": "Autonomous Flight Technologies public contact information",
-          "url": "https://www.autonomousflight.us/contact-offices"
+          "title": "Autonomous Flight Technologies Salem office and employment information",
+          "url": "https://www.autonomousflight.us/careers"
         }
       ],
       "state": "VA",
@@ -1226,7 +1233,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
-      "website_url": "https://www.autonomousflight.us/company"
+      "website_url": "https://www.autonomousflight.us/careers"
     },
     {
       "capabilities": [
@@ -2400,7 +2407,7 @@
       "website_url": "https://www.engineering.virginia.edu/labs-groups/link-lab/research/robotics-and-autonomous-systems"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://iucrc.nsf.gov/centers/center-for-unmanned-aircraft-system/",
       "activity_status": "historical",
       "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
@@ -3083,7 +3090,7 @@
       "website_url": "https://www.cisa.gov/sites/default/files/2024-08/24_0826_necp_spotlight_implementing_uas_programs_to_support_emergency_operations_final_508C.pdf"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://cnu.edu/news/2026/02/19-cnu-serc-drone-lab/",
       "activity_status": "active",
       "address_line": "1 Avenue of the Arts",
@@ -3856,53 +3863,6 @@
     },
     {
       "capabilities": [
-        "Autonomy and artificial intelligence",
-        "Systems engineering and integration",
-        "Manufacturing, materials, and prototyping"
-      ],
-      "city": "Sterling",
-      "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Organization public information and inquiries",
-      "contact_url": "https://www.dedrone.com/contact",
-      "latitude": 39.006,
-      "location_precision": "locality",
-      "longitude": -77.428,
-      "missions": [
-        "Training and experimentation"
-      ],
-      "name": "Dedrone Washington-Area Headquarters",
-      "overview": "Sterling headquarters for counter-drone sensing, identification, tracking, and airspace-security technology. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence, Systems engineering and integration, and Manufacturing, materials, and prototyping. Relevant mission areas include Training and experimentation.",
-      "platform_domains": [
-        "Unmanned aircraft systems",
-        "Ground vehicles and robotics",
-        "Cross-domain autonomy"
-      ],
-      "provenance": "curated-public-source",
-      "record_type": "organization",
-      "region": "Northern Virginia",
-      "short_description": "Sterling headquarters for counter-drone sensing, identification, tracking, and airspace-security technology.",
-      "sources": [
-        {
-          "title": "Dedrone by Axon",
-          "url": "https://www.dedrone.com/about/contact-us"
-        },
-        {
-          "title": "Dedrone Washington-Area Headquarters public contact information",
-          "url": "https://www.dedrone.com/contact"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Companies and solution providers",
-        "Manufacturing and supply chain",
-        "Core unmanned-systems asset"
-      ],
-      "unmanned_systems_relevance": "Develops, integrates, manufactures, or supports documented autonomous and uncrewed systems across one or more operating domains.",
-      "website_url": "https://www.dedrone.com/about/contact-us"
-    },
-    {
-      "capabilities": [
         "Systems engineering and integration"
       ],
       "city": "Arlington",
@@ -3986,7 +3946,7 @@
       "website_url": "https://www.dla.mil/Aviation/Installation.aspx"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.dominionenergy.com/about/delivering-energy/electric-projects",
       "activity_status": "active",
       "capabilities": [
@@ -4034,7 +3994,10 @@
       "website_url": "https://www.dominionenergy.com/about/delivering-energy/electric-projects"
     },
     {
-      "address_line": "160 Newtown Road, Suite 302",
+      "activity_last_verified_at": "2026-08-21",
+      "activity_source_url": "https://www.droneup.com/",
+      "activity_status": "active",
+      "address_line": "",
       "capabilities": [
         "Systems engineering and integration",
         "Operations, maintenance, and sustainment"
@@ -4042,33 +4005,35 @@
       "city": "Virginia Beach",
       "contact_email": "",
       "contact_phone": "877-601-1860",
-      "contact_text": "Organization public information and inquiries",
+      "contact_text": "DroneUp airspace and UAS technology inquiries",
       "contact_url": "https://www.droneup.com/contact",
-      "latitude": 36.842642,
-      "location_precision": "site",
-      "longitude": -76.186071,
+      "current_activity": "DroneUp remains active but has shifted its current emphasis from operating last-mile delivery networks to airspace management, regulatory enablement, and autonomous UAS operations technology.",
+      "latitude": 36.8529,
+      "location_precision": "locality",
+      "longitude": -75.978,
       "missions": [
         "Infrastructure inspection",
         "Logistics and contested logistics"
       ],
       "name": "DroneUp",
-      "overview": "Virginia Beach-founded drone services, operations, software, training, and delivery company. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Virginia Beach-founded company now focused on airspace management, regulatory enablement, and autonomous UAS operations technology. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "partnership_opportunities": "Airspace-management, UAS-operations, and technology inquiries can use DroneUp's current partnership form.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
-      "postal_code": "23462",
+      "postal_code": "",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Hampton Roads",
-      "short_description": "Virginia Beach-founded drone services, operations, software, training, and delivery company.",
+      "short_description": "Virginia Beach-founded company now focused on airspace management, regulatory enablement, and autonomous UAS operations technology.",
       "sources": [
         {
           "title": "VEDP: Virginia Unmanned Systems Companies",
           "url": "https://www.vedp.org/news/home-business-more-400-years"
         },
         {
-          "title": "DroneUp privacy policy and contact information",
-          "url": "https://www.droneup.com/privacy-policy"
+          "title": "DroneUp current airspace and UAS technology operations",
+          "url": "https://www.droneup.com/"
         },
         {
           "title": "DroneUp public contact information",
@@ -4081,7 +4046,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
-      "website_url": "https://www.vedp.org/news/home-business-more-400-years"
+      "website_url": "https://www.droneup.com/"
     },
     {
       "capabilities": [
@@ -4128,7 +4093,10 @@
       "website_url": "https://www.dynamicaviation.com/"
     },
     {
-      "address_line": "8280 Willow Oaks Corporate Drive, Suite 200",
+      "activity_last_verified_at": "2026-08-21",
+      "activity_source_url": "https://dzyne.com/contact-us/",
+      "activity_status": "active",
+      "address_line": "",
       "capabilities": [
         "Systems engineering and integration",
         "Manufacturing, materials, and prototyping"
@@ -4136,26 +4104,28 @@
       "city": "Fairfax",
       "contact_email": "info@dzyne.com",
       "contact_phone": "949-313-6185",
-      "contact_text": "Organization public information and inquiries",
+      "contact_text": "DZYNE product and business inquiries",
       "contact_url": "https://dzyne.com/contact-us/",
-      "latitude": 38.863831,
-      "location_precision": "exact",
-      "longitude": -77.230173,
+      "current_activity": "DZYNE remains an active autonomous-defense business within Ondas Sentinel and continues to list Fairfax as a current location for its long-endurance UAS and counter-UAS work.",
+      "latitude": 38.846,
+      "location_precision": "locality",
+      "longitude": -77.307,
       "missions": [
         "Counter-UAS",
         "Force protection and installation security"
       ],
       "name": "DZYNE Technologies",
-      "overview": "Fairfax office of an autonomous-systems company developing long-endurance unmanned aircraft, autonomy software, and counter-unmanned capabilities. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Manufacturing, materials, and prototyping. Relevant mission areas include Counter-UAS and Force protection and installation security.",
+      "overview": "Fairfax location of DZYNE, part of Ondas Sentinel, developing long-endurance unmanned aircraft and counter-UAS capabilities. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Manufacturing, materials, and prototyping. Relevant mission areas include Counter-UAS and Force protection and installation security.",
+      "partnership_opportunities": "Product, demonstration, and business inquiries can use DZYNE's current public contact route.",
       "platform_domains": [
         "Counter-UAS",
         "Unmanned aircraft systems"
       ],
-      "postal_code": "22031",
+      "postal_code": "",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Northern Virginia",
-      "short_description": "Fairfax office of an autonomous-systems company developing long-endurance unmanned aircraft, autonomy software, and counter-unmanned capabilities.",
+      "short_description": "Fairfax location of DZYNE, part of Ondas Sentinel, developing long-endurance unmanned aircraft and counter-UAS capabilities.",
       "sources": [
         {
           "title": "DZYNE Technologies",
@@ -4166,7 +4136,7 @@
           "url": "https://www.sbir.gov/portfolio/406214"
         },
         {
-          "title": "DZYNE Technologies public contact information",
+          "title": "DZYNE current locations and Ondas Sentinel ownership",
           "url": "https://dzyne.com/contact-us/"
         }
       ],
@@ -4177,7 +4147,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Develops documented counter-UAS systems, components, or production capacity.",
-      "website_url": "https://dzyne.com/about/"
+      "website_url": "https://dzyne.com/contact-us/"
     },
     {
       "address_line": "7505 Warwick Boulevard",
@@ -5031,6 +5001,62 @@
       ],
       "unmanned_systems_relevance": "Provides maritime engineering, shipbuilding, integration, or robotic-system capacity.",
       "website_url": "https://www.flyingship.co/contact"
+    },
+    {
+      "activity_last_verified_at": "2026-08-21",
+      "activity_source_url": "https://www.axon.com/blog/axon-completes-acquisition-of-dedrone",
+      "activity_status": "historical",
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "city": "Sterling",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Dedrone by Axon inquiries",
+      "contact_url": "https://www.axon.com/contact/dedrone",
+      "current_activity": "Dedrone previously maintained its Washington-area headquarters in Sterling. Axon completed its acquisition of Dedrone in October 2024, and current Axon materials do not establish the former Sterling headquarters as a current standalone operation.",
+      "latitude": 39.006,
+      "location_precision": "locality",
+      "longitude": -77.428,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Former Dedrone Washington-Area Headquarters",
+      "overview": "Former Sterling headquarters of Dedrone, retained as a historical Virginia ecosystem record after Axon acquired the company in 2024. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence, Systems engineering and integration, and Manufacturing, materials, and prototyping. Relevant mission areas include Training and experimentation.",
+      "partnership_opportunities": "Current Dedrone product and partnership inquiries should be directed to Axon.",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Former Sterling headquarters of Dedrone, retained as a historical Virginia ecosystem record after Axon acquired the company in 2024.",
+      "sources": [
+        {
+          "title": "Dedrone by Axon",
+          "url": "https://www.axon.com/products/dedrone"
+        },
+        {
+          "title": "Axon completes acquisition of Dedrone",
+          "url": "https://www.axon.com/blog/axon-completes-acquisition-of-dedrone"
+        },
+        {
+          "title": "Former Dedrone Washington-Area Headquarters public contact information",
+          "url": "https://www.axon.com/contact/dedrone"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Develops, integrates, manufactures, or supports documented autonomous and uncrewed systems across one or more operating domains.",
+      "website_url": "https://www.axon.com/blog/axon-completes-acquisition-of-dedrone"
     },
     {
       "capabilities": [
@@ -6174,7 +6200,7 @@
       "website_url": "https://www.ialr.org/go-tec/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.dhcd.virginia.gov/gova",
       "activity_status": "active",
       "address_line": "600 East Main Street, Suite 300",
@@ -6378,7 +6404,7 @@
       "website_url": "https://www.hampton.gov/DocumentCenter/View/37936/557-UAS-Unmanned-Aerial-System-PDF"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://hamptonroadsalliance.com/wp-content/uploads/2025/01/Alliance-Board-Deck-September.pdf",
       "activity_status": "active",
       "address_line": "3 Commercial Place, Suite 1320",
@@ -6542,7 +6568,7 @@
       "website_url": "https://www.hamptonu.edu/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://home.hamptonu.edu/engineering/uas/",
       "activity_status": "active",
       "address_line": "100 East Queen Street",
@@ -6791,8 +6817,8 @@
       "website_url": "https://www.chesterfield.gov/163/Parks-and-Facilities"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
-      "activity_source_url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/police/page/2971/haymarket_police_department_annual_report_2022.pdf",
+      "activity_last_verified_at": "2026-08-21",
+      "activity_source_url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/town_council/meeting/11057/tc_regmtg_03_06_2023.pdf",
       "activity_status": "active",
       "capabilities": [
         "Operations, maintenance, and sustainment",
@@ -6802,7 +6828,7 @@
       "contact_email": "",
       "contact_phone": "703-753-2700",
       "contact_text": "Haymarket Police Department",
-      "contact_url": "https://www.townofhaymarket.org/1450/Patrol-Division",
+      "contact_url": "https://www.townofhaymarket.org/1293/Police-Department",
       "current_activity": "Haymarket Police documented a fully implemented department drone program and received a CY 2026 award to replace an aircraft already in service.",
       "latitude": 38.812,
       "location_precision": "locality",
@@ -6824,8 +6850,8 @@
       "short_description": "Town police drone program documented as fully implemented and supported by a CY 2026 replacement award.",
       "sources": [
         {
-          "title": "Haymarket Police Department 2022 annual report",
-          "url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/police/page/2971/haymarket_police_department_annual_report_2022.pdf"
+          "title": "Haymarket Town Council packet documenting the implemented drone program",
+          "url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/town_council/meeting/11057/tc_regmtg_03_06_2023.pdf"
         },
         {
           "title": "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
@@ -6837,7 +6863,7 @@
         },
         {
           "title": "Haymarket Police Department contact information",
-          "url": "https://www.townofhaymarket.org/1450/Patrol-Division"
+          "url": "https://www.townofhaymarket.org/1293/Police-Department"
         }
       ],
       "state": "VA",
@@ -6847,7 +6873,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/police/page/2971/haymarket_police_department_annual_report_2022.pdf"
+      "website_url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/town_council/meeting/11057/tc_regmtg_03_06_2023.pdf"
     },
     {
       "capabilities": [
@@ -6986,7 +7012,7 @@
       "website_url": "https://hevenaerotech.com/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.hii.com/mission-technologies",
       "activity_status": "active",
       "address_line": "Hampton Roads Center - North Campus",
@@ -7000,7 +7026,7 @@
       "contact_text": "Facility or operator public information",
       "contact_url": "https://www.hii.com/contact",
       "current_activity": "HII maintains an Uncrewed Systems business spanning unmanned undersea and surface platforms and autonomy software; the Hampton center is its publicly documented purpose-built production and test campus.",
-      "development_last_verified_at": "2026-08-11",
+      "development_last_verified_at": "2026-08-21",
       "development_notes": "HII described a 20-acre campus and Hampton documented completion and occupancy of the first 22,000-square-foot building. Campus size is not presented as available acreage.",
       "development_source_url": "https://www.hii.com/news/first-quarter-2021-earnings",
       "development_status": "operational",
@@ -7532,7 +7558,7 @@
       "website_url": "https://www.reynolds.edu/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.jamescitycountyva.gov/m/newsflash/Home/Detail/6334",
       "activity_status": "pilot",
       "address_line": "4600 Opportunity Way",
@@ -7639,7 +7665,7 @@
       "website_url": "https://www.jmu.edu/index.shtml"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.jmu.edu/jmuxlabs/courses/drones.shtml",
       "activity_status": "historical",
       "address_line": "800 South Main Street",
@@ -8752,7 +8778,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.sbir.gov/portfolio/1664155",
       "activity_status": "active",
       "address_line": "96 Stilwell Road",
@@ -9250,7 +9276,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.madisonco.virginia.gov/AgendaCenter/ViewFile/Agenda/_02102026-398",
       "activity_status": "active",
       "capabilities": [
@@ -9515,7 +9541,7 @@
       "website_url": "https://www.marines.mil/News/News-Display/Article/746745/marine-corps-warfighting-lab-tests-autonomous-reconnaissance/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.vaspace.org/our-facilities",
       "activity_status": "active",
       "capabilities": [
@@ -9851,7 +9877,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://maap.ictas.vt.edu/About/about-us.html",
       "activity_status": "active",
       "address_line": "1991 Kraft Drive, Building 19",
@@ -10016,7 +10042,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range",
       "activity_status": "active",
       "capabilities": [
@@ -10030,7 +10056,7 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range",
       "current_activity": "MITRE operates the Orange County range for controlled testing, evaluation, and prototyping of UAS, counter-UAS, ground systems, communications, and related technologies.",
-      "development_last_verified_at": "2026-08-11",
+      "development_last_verified_at": "2026-08-21",
       "development_notes": "The public fact sheet describes 16 acres of dedicated airspace, hundreds of acres of accessible land, and thousands of acres of aerial access; it does not describe that acreage as generally available development land.",
       "development_source_url": "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range",
       "development_status": "operational",
@@ -10349,7 +10375,7 @@
       "website_url": "https://courses.vccs.edu/colleges/dslcc/courses/UMS-UnmannedSystems"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.nasa.gov/centers-and-facilities/langley/inventing-the-future/",
       "activity_status": "historical",
       "address_line": "2 Langley Boulevard",
@@ -10408,7 +10434,7 @@
       "website_url": "https://www.nasa.gov/centers-and-facilities/langley/inventing-the-future/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://csaob.larc.nasa.gov/roam/",
       "activity_status": "active",
       "address_line": "2 Langley Boulevard",
@@ -10527,7 +10553,7 @@
       "website_url": "https://www.nasa.gov/langley/about-langley-research-center/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://csaob.larc.nasa.gov/roam/",
       "activity_status": "active",
       "address_line": "Building Complex 1268, 2 Langley Boulevard",
@@ -10587,7 +10613,7 @@
       "website_url": "https://csaob.larc.nasa.gov/roam/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://csaob.larc.nasa.gov/roam/",
       "activity_status": "active",
       "address_line": "NASA Langley Research Center, 2 Langley Boulevard",
@@ -11158,7 +11184,7 @@
       "website_url": "https://cnrma.cnic.navy.mil/Installations/WPNSTA-Yorktown/Contact-Us/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.navair.navy.mil/news/Navy-opens-doors-first-small-unmanned-aircraft-systems-training-facility/Tue-08022022-0923",
       "activity_status": "active",
       "address_line": "Joint Expeditionary Base Little Creek-Fort Story, 1815 Seabee Road",
@@ -11170,7 +11196,7 @@
       "contact_email": "",
       "contact_phone": "240-925-5305",
       "contact_text": "NAVAIR public affairs",
-      "contact_url": "https://www.navair.navy.mil/contact-us",
+      "contact_url": "https://www.navair.navy.mil/product/Family-Small-Unmanned-Aircraft-Systems",
       "current_activity": "TALSA East is the Navy's dedicated entry-level small-UAS training and logistics facility, supporting operator qualification, system storage, supply, and maintenance at JEB Little Creek-Fort Story.",
       "latitude": 36.918239,
       "location_precision": "site",
@@ -11200,8 +11226,8 @@
           "url": "https://cnrma.cnic.navy.mil/Installations/JEB-Little-Creek-Fort-Story/Contact-Us/"
         },
         {
-          "title": "Navy TALSA East Small UAS Training Facility public contact information",
-          "url": "https://www.navair.navy.mil/contact-us"
+          "title": "NAVAIR Family of Small Unmanned Aircraft Systems and TALSA support",
+          "url": "https://www.navair.navy.mil/product/Family-Small-Unmanned-Aircraft-Systems"
         }
       ],
       "state": "VA",
@@ -11548,7 +11574,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://newportnewsva.com/manufacturing-growth/",
       "activity_status": "developing",
       "address_line": "Newport News-Williamsburg International Airport, 900 Bland Boulevard",
@@ -11563,7 +11589,7 @@
       "contact_text": "Facility or operator public information",
       "contact_url": "https://newportnewsva.com/contact/",
       "current_activity": "Newport News and the Peninsula Airport Commission are advancing site-readiness work for aviation and aerospace development around the airport.",
-      "development_last_verified_at": "2026-08-11",
+      "development_last_verified_at": "2026-08-21",
       "development_notes": "The reviewed EDA page describes 280 available acres at AirCommerce Park West and 50 additional undeveloped acres at AirCommerce Park East. Only the 280 acres explicitly described as available are stored in the acreage field.",
       "development_source_url": "https://newportnewsva.com/manufacturing-growth/",
       "development_status": "in-development",
@@ -11615,7 +11641,7 @@
       "website_url": "https://newportnewsva.com/business-neighborhoods/patrick-henry-corridor/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.nnva.gov/3269/Drones-as-First-Responders",
       "activity_status": "active",
       "address_line": "9710 Jefferson Avenue",
@@ -11723,7 +11749,7 @@
       "website_url": "https://www.portofvirginia.com/gateway/capabilities/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.nnva.gov/2394/Drone-Unit",
       "activity_status": "active",
       "address_line": "9710 Jefferson Avenue",
@@ -12577,7 +12603,7 @@
       "website_url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Dam-Neck/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://occoquanva.gov/wp-content/uploads/2026/01/TC-Agenda-Packet-FULL-1-6-2026.pdf",
       "activity_status": "active",
       "capabilities": [
@@ -12682,7 +12708,7 @@
       "website_url": "https://www.odu.edu/iacs"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.odu.edu/iacs",
       "activity_status": "active",
       "address_line": "5115 Hampton Boulevard",
@@ -12742,7 +12768,7 @@
       "website_url": "https://www.odu.edu/iacs"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.odu.edu/article/beyond-boats-and-submarines-odu-city-of-norfolk-celebrate-the-opening-of-the-maritime",
       "activity_status": "active",
       "address_line": "1311 Bayville Street",
@@ -12757,7 +12783,7 @@
       "contact_text": "ODU National Security Institute research and partnership inquiries",
       "contact_url": "https://www.odu.edu/national-security",
       "current_activity": "ODU and the City of Norfolk operate the Willoughby Bay site for maritime autonomy research and testing with direct access to regional waterways.",
-      "development_last_verified_at": "2026-08-11",
+      "development_last_verified_at": "2026-08-21",
       "development_notes": "The site opened in 2025 as an operating research and test facility. Published materials do not describe generally available land or commercial space.",
       "development_source_url": "https://www.odu.edu/sites/default/files/2026/documents/maritime-conference.pdf",
       "development_status": "operational",
@@ -13806,7 +13832,7 @@
       "website_url": "https://www.jmc.army.mil/Radford/About.aspx"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.radfordva.gov/AgendaCenter/ViewFile/Minutes/_01272026-805",
       "activity_status": "active",
       "capabilities": [
@@ -15014,7 +15040,7 @@
       "website_url": "https://www.su.edu/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://cspdc.org/2023/11/27/shd-aviation-tech-park-holds-ribbon-cutting/",
       "activity_status": "developing",
       "address_line": "77 Aviation Circle",
@@ -15029,7 +15055,7 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://cspdc.org/2023/11/27/shd-aviation-tech-park-holds-ribbon-cutting/",
       "current_activity": "Two 14,000-square-foot corporate hangars are complete, and publicly funded utility work supports later phases of the Aviation Technology Park.",
-      "development_last_verified_at": "2026-08-11",
+      "development_last_verified_at": "2026-08-21",
       "development_notes": "The 58-acre park has two completed hangars. Its master plan identifies capacity for up to five additional hangars; this figure is a published site total, not a claim that all acreage is currently available.",
       "development_source_url": "https://cspdc.org/2023/06/07/shenandoah-valley-aviation-technology-park-hangars-near-completion/",
       "development_status": "in-development",
@@ -15537,7 +15563,7 @@
       "website_url": "https://www.staffordsheriff.com/content/about/fieldoperations.cfm"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://doav.virginia.gov/advanced_air_mobility/",
       "activity_status": "pilot",
       "address_line": "95 Aviation Way",
@@ -15596,7 +15622,7 @@
       "website_url": "https://doav.virginia.gov/advanced_air_mobility/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.ci.staunton.va.us/Home/Components/MeetingsManager/MeetingAgenda/ShowPrimaryDocument/?agendaID=1054&includeTrash=False&isPub=True",
       "activity_status": "active",
       "address_line": "116 West Beverley Street",
@@ -17505,7 +17531,7 @@
       "website_url": "https://arvl.lab.vcu.edu/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.vims.edu/people/patterson_mr/",
       "activity_status": "active",
       "address_line": "1375 Greate Road",
@@ -17717,7 +17743,7 @@
       "website_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://doav.virginia.gov/advanced_air_mobility/",
       "activity_status": "active",
       "address_line": "5702 Gulfstream Road",
@@ -18017,7 +18043,7 @@
       "website_url": "https://dwr.virginia.gov/wp-content/uploads/media/Virginia-Conservation-Police-Annual-Report-2024.pdf"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://doav.virginia.gov/advanced_air_mobility/",
       "activity_status": "active",
       "address_line": "5702 Gulfstream Road",
@@ -18167,7 +18193,7 @@
       "website_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.vedp.org/industry/unmanned-systems",
       "activity_status": "active",
       "address_line": "901 East Cary Street",
@@ -18265,7 +18291,7 @@
       "website_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://doav.virginia.gov/aviation_programs_resources/",
       "activity_status": "active",
       "address_line": "",
@@ -19149,7 +19175,7 @@
       "website_url": "https://vsgc.odu.edu/geoted-uas/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.vaspace.org/our-facilities",
       "activity_status": "active",
       "address_line": "101 West Main Street, Suite 602",
@@ -19446,7 +19472,7 @@
       "website_url": "https://www.ise.vt.edu/research/labs/advanced-control-systems-lab.html"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://archive.vtmag.vt.edu/winter10/feature1.html",
       "activity_status": "historical",
       "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
@@ -19649,7 +19675,7 @@
       "website_url": "https://news.vt.edu/articles/2025/04/research-counteruascenter.html"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
       "activity_status": "active",
       "address_line": "2143 Oak Lane",
@@ -19663,7 +19689,7 @@
       "contact_text": "Virginia Tech Drone Park scheduling and facility inquiries",
       "contact_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
       "current_activity": "Virginia Tech operates the netted Drone Park for instruction, research, and controlled flight work, with adjacent laboratory and classroom support.",
-      "development_last_verified_at": "2026-08-11",
+      "development_last_verified_at": "2026-08-21",
       "development_notes": "The published facility is an operating research and teaching site. No claim is made that land or facility space is generally available for development.",
       "development_source_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
       "development_status": "operational",
@@ -20359,7 +20385,7 @@
       "website_url": "https://www.vul.edu/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/",
       "activity_status": "active",
       "address_line": "313 East Broad Street",
@@ -20680,7 +20706,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.accomack.gov/614/Background-Timeline",
       "activity_status": "developing",
       "address_line": "Aerospace Gateway at Mill Dam Road",
@@ -20694,7 +20720,7 @@
       "contact_text": "Accomack County economic-development and site inquiries",
       "contact_url": "https://www.accomack.gov/614/Background-Timeline",
       "current_activity": "Accomack County markets the park for private aerospace, UAS, launch, research, and education development adjoining the Wallops federal and commercial space cluster.",
-      "development_last_verified_at": "2026-08-11",
+      "development_last_verified_at": "2026-08-21",
       "development_notes": "The county describes the park as ready for private development. No acreage is reported here because the reviewed page does not identify a current available-acre figure.",
       "development_source_url": "https://www.accomack.gov/614/Background-Timeline",
       "development_status": "development-ready",
@@ -21190,7 +21216,7 @@
       "website_url": "https://wing.com/news/wing-and-doordash-expand-drone-delivery"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.wisecounty.org/AgendaCenter/ViewFile/Agenda/_02122026-671",
       "activity_status": "active",
       "capabilities": [
@@ -21249,7 +21275,7 @@
       "website_url": "https://www.wisecounty.org/AgendaCenter/ViewFile/Agenda/_02122026-671"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.wytheco.org/AgendaCenter/ViewFile/Agenda/_01272026-119",
       "activity_status": "active",
       "capabilities": [
@@ -21396,7 +21422,7 @@
       "website_url": "https://xelevateus.com/leesburg-virginia/"
     },
     {
-      "activity_last_verified_at": "2026-08-11",
+      "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.yorkcounty.gov/1874/The-ROVER-Team",
       "activity_status": "active",
       "address_line": "224 Ballard Street",
@@ -21408,7 +21434,7 @@
       "contact_email": "",
       "contact_phone": "757-890-3600",
       "contact_text": "York County Fire and Life Safety",
-      "contact_url": "https://www.yorkcounty.gov/99/Fire-Life-Safety",
+      "contact_url": "https://www.yorkcounty.gov/1024/Administrative-Services",
       "current_activity": "The joint York County Fire and Life Safety and York-Poquoson Sheriff's Office team operates multiple aircraft for missing-person, hazmat, tactical, severe-weather, and other public-safety missions.",
       "latitude": 37.235331,
       "location_precision": "site",
@@ -21435,8 +21461,8 @@
           "url": "https://www.yorkcounty.gov/1874/The-ROVER-Team"
         },
         {
-          "title": "York County ROVER Team public contact information",
-          "url": "https://www.yorkcounty.gov/99/Fire-Life-Safety"
+          "title": "York County Administrative Services and ROVER program",
+          "url": "https://www.yorkcounty.gov/1024/Administrative-Services"
         }
       ],
       "state": "VA",

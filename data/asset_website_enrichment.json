@@ -1,5 +1,5 @@
 {
-  "reviewed_at": "2026-08-07",
+  "reviewed_at": "2026-08-21",
   "methodology": "Direct official organization, agency, installation, laboratory, facility, or program pages reviewed during the August 2026 source audit. Shared authoritative registries remain attached as supporting evidence.",
   "assets": {
     "Accomack County Emergency Management Drone Program": {
@@ -19,6 +19,12 @@
     "Association for Uncrewed Vehicle Systems International": {
       "title": "AUVSI: About",
       "url": "https://www.auvsi.org/about-auvsi/"
+    },
+    "Autonomous Flight Technologies": {
+      "title": "Autonomous Flight Technologies current UAS capabilities and Salem office",
+      "url": "https://www.autonomousflight.us/careers",
+      "activity_status": "active",
+      "current_activity": "Autonomous Flight Technologies currently publishes small-UAS design, fabrication, flight-testing, counter-UAS products, and flight services from its Salem office."
     },
     "Aurora Flight Sciences": {
       "title": "Aurora Flight Sciences contact information",
@@ -59,6 +65,18 @@
     "Dynamic Aviation": {
       "title": "Dynamic Aviation",
       "url": "https://www.dynamicaviation.com/"
+    },
+    "DroneUp": {
+      "title": "DroneUp current airspace and UAS technology operations",
+      "url": "https://www.droneup.com/",
+      "activity_status": "active",
+      "current_activity": "DroneUp remains active but has shifted its current emphasis from operating last-mile delivery networks to airspace management, regulatory enablement, and autonomous UAS operations technology."
+    },
+    "DZYNE Technologies": {
+      "title": "DZYNE current locations and Ondas Sentinel ownership",
+      "url": "https://dzyne.com/contact-us/",
+      "activity_status": "active",
+      "current_activity": "DZYNE remains an active autonomous-defense business within Ondas Sentinel and continues to list Fairfax as a current location for its long-endurance UAS and counter-UAS work."
     },
     "FAA BEYOND Virginia Team": {
       "title": "FAA BEYOND program and Virginia participant",
@@ -247,6 +265,12 @@
     "Fort Belvoir": {
       "title": "U.S. Army Fort Belvoir",
       "url": "https://home.army.mil/belvoir/"
+    },
+    "Former Dedrone Washington-Area Headquarters": {
+      "title": "Axon completes acquisition of Dedrone",
+      "url": "https://www.axon.com/blog/axon-completes-acquisition-of-dedrone",
+      "activity_status": "historical",
+      "current_activity": "Dedrone previously maintained its Washington-area headquarters in Sterling. Axon completed its acquisition of Dedrone in October 2024, and current Axon materials do not establish the former Sterling headquarters as a current standalone operation."
     },
     "National Geospatial-Intelligence Agency Springfield": {
       "title": "National Geospatial-Intelligence Agency",

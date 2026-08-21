@@ -12,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "virginia_real_assets.json"
-CATALOG_DATE = "2026-08-11"
+CATALOG_DATE = "2026-08-21"
 BUILD_DATE = "2026-08-21"
 
 FAA_LAYER = (
@@ -328,7 +328,11 @@ SOURCES = {
         "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
     ),
     "qinetiq": ("QinetiQ US locations", "https://www.qinetiq.com/en-us/who-we-are/our-locations"),
-    "dedrone": ("Dedrone by Axon", "https://www.dedrone.com/about/contact-us"),
+    "dedrone": ("Dedrone by Axon", "https://www.axon.com/products/dedrone"),
+    "dedrone_acquisition": (
+        "Axon completes acquisition of Dedrone",
+        "https://www.axon.com/blog/axon-completes-acquisition-of-dedrone",
+    ),
     "vt_grain_drones": (
         "Virginia Tech Grain Crop Drone Research",
         "https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/spes-747.html",
@@ -535,6 +539,10 @@ SOURCES = {
         "Autonomous Flight Technologies",
         "https://www.autonomousflight.us/company",
     ),
+    "autonomous_flight_location": (
+        "Autonomous Flight Technologies Salem office and employment information",
+        "https://www.autonomousflight.us/careers",
+    ),
     "ici_usv": (
         "ICI Services Unmanned Surface Vehicle Development",
         "https://icisrvcs.com/news/2020/2/5/236/ici-services-to-support-navy-unmanned-surface-vehicle-development/index.html",
@@ -727,8 +735,8 @@ SOURCES = {
         "https://www.ashlandva.gov/DocumentCenter/View/6463/July-2024-1?bidId=",
     ),
     "haymarket_police_drone": (
-        "Haymarket Police Department 2022 annual report",
-        "https://www.townofhaymarket.org/sites/default/files/fileattachments/police/page/2971/haymarket_police_department_annual_report_2022.pdf",
+        "Haymarket Town Council packet documenting the implemented drone program",
+        "https://www.townofhaymarket.org/sites/default/files/fileattachments/town_council/meeting/11057/tc_regmtg_03_06_2023.pdf",
     ),
     "madison_sheriff_drone": (
         "Madison County FY2026 UAS grant appropriation",
@@ -913,6 +921,10 @@ SOURCES = {
     "dzyne_location": (
         "U.S. SBIR Portfolio: DZYNE Technologies",
         "https://www.sbir.gov/portfolio/406214",
+    ),
+    "dzyne_current": (
+        "DZYNE current locations and Ondas Sentinel ownership",
+        "https://dzyne.com/contact-us/",
     ),
     "ensco": (
         "ENSCO Capabilities",
@@ -1416,6 +1428,9 @@ ASSET_DETAIL_SOURCE_KEYS = {
         "hii_mission_technologies",
     ),
     "Longbow Unmanned Systems Research and Test Center": ("longbow_current",),
+    "Former Dedrone Washington-Area Headquarters": ("dedrone_acquisition",),
+    "Autonomous Flight Technologies": ("autonomous_flight_location",),
+    "DZYNE Technologies": ("dzyne_current",),
     "Mid-Atlantic Aviation Partnership": ("maap_about", "maap_contact", "maap_beyond"),
     "Newport News AirCommerce Park": ("aircommerce_growth",),
     "ODU Institute for Autonomous and Connected Systems": ("odu_nsi",),
@@ -1947,6 +1962,7 @@ PLACES = {
     "Reston": (38.959, -77.357),
     "Richmond": (37.541, -77.436),
     "Roanoke": (37.271, -79.941),
+    "Salem": (37.293, -80.056),
     "Rocky Mount": (36.997, -79.892),
     "Rustburg": (37.276, -79.100),
     "Scottsville": (37.798, -78.495),
@@ -1975,6 +1991,18 @@ PLACES = {
 # or installation administrative points. "Site" does not claim an operationally exact
 # location within a large or access-controlled property.
 LOCATION_OVERRIDES = {
+    "Autonomous Flight Technologies": {
+        "address_line": "172 East Main Street",
+        "city": "Salem",
+        "postal_code": "24153",
+        "latitude": 37.293087,
+        "longitude": -80.055796,
+        "location_precision": "exact",
+        "source": (
+            "Autonomous Flight Technologies Salem office and employment information",
+            SOURCES["autonomous_flight_location"][1],
+        ),
+    },
     "Adaptive Aerospace Group": {
         "address_line": "22 Enterprise Parkway, Suite 320",
         "postal_code": "23666",
@@ -2167,13 +2195,14 @@ LOCATION_OVERRIDES = {
         ),
     },
     "DroneUp": {
-        "address_line": "160 Newtown Road, Suite 302",
-        "postal_code": "23462",
-        "latitude": 36.842642,
-        "longitude": -76.186071,
+        "address_line": "",
+        "postal_code": "",
+        "latitude": 36.8529,
+        "longitude": -75.9780,
+        "location_precision": "locality",
         "source": (
-            "DroneUp privacy policy and contact information",
-            "https://www.droneup.com/privacy-policy",
+            "DroneUp current airspace and UAS technology operations",
+            "https://www.droneup.com/",
         ),
     },
     "Fort Eustis - Joint Base Langley-Eustis": {
@@ -2975,14 +3004,14 @@ LOCATION_OVERRIDES = {
         ),
     },
     "DZYNE Technologies": {
-        "address_line": "8280 Willow Oaks Corporate Drive, Suite 200",
-        "postal_code": "22031",
-        "latitude": 38.863831,
-        "longitude": -77.230173,
-        "location_precision": "exact",
+        "address_line": "",
+        "postal_code": "",
+        "latitude": 38.846,
+        "longitude": -77.307,
+        "location_precision": "locality",
         "source": (
-            "U.S. SBIR portfolio company address",
-            "https://www.sbir.gov/portfolio/406214",
+            "DZYNE current locations and Ondas Sentinel ownership",
+            "https://dzyne.com/contact-us/",
         ),
     },
     "ENSCO": {
@@ -4231,12 +4260,12 @@ CURATED_ASSETS = [
         "qinetiq",
     ),
     (
-        "Dedrone Washington-Area Headquarters",
+        "Former Dedrone Washington-Area Headquarters",
         "organization",
         "Sterling",
         "Northern Virginia",
         "company_cross",
-        "Sterling headquarters for counter-drone sensing, identification, tracking, and airspace-security technology.",
+        "Former Sterling headquarters of Dedrone, retained as a historical Virginia ecosystem record after Axon acquired the company in 2024.",
         "dedrone",
     ),
     (
@@ -4245,7 +4274,7 @@ CURATED_ASSETS = [
         "Virginia Beach",
         "Hampton Roads",
         "company_air",
-        "Virginia Beach-founded drone services, operations, software, training, and delivery company.",
+        "Virginia Beach-founded company now focused on airspace management, regulatory enablement, and autonomous UAS operations technology.",
         "vedp_companies",
     ),
     (
@@ -5039,10 +5068,10 @@ CURATED_ASSETS = [
     (
         "Autonomous Flight Technologies",
         "organization",
-        "Roanoke",
+        "Salem",
         "Roanoke Valley",
         "company_air",
-        "Roanoke-based developer of unmanned aircraft, avionics, and autonomous-flight technologies.",
+        "Salem developer of unmanned aircraft, avionics, counter-UAS products, and autonomous-flight technologies.",
         "autonomous_flight",
     ),
     (
@@ -5751,7 +5780,7 @@ CURATED_ASSETS.extend(
             "Fairfax",
             "Northern Virginia",
             "company_counter_uas",
-            "Fairfax office of an autonomous-systems company developing long-endurance unmanned aircraft, autonomy software, and counter-unmanned capabilities.",
+            "Fairfax location of DZYNE, part of Ondas Sentinel, developing long-endurance unmanned aircraft and counter-UAS capabilities.",
             ("dzyne", "dzyne_location"),
         ),
         (

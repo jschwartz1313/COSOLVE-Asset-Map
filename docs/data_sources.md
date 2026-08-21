@@ -61,11 +61,41 @@ The source-expansion pass targeted all 60 public records that previously had onl
 
 The pass also replaced the Orange County Sheriff's Office record's Louisa County primary link with Orange County sources and qualified the former RapidFlight Manassas headquarters as historical after AEVEX publicly announced its acquisition of select RapidFlight assets and intellectual property in September 2025. Newly collected citations enter the database as unreviewed; source collection and a successful automated link check do not substitute for human editorial verification.
 
+## August 21, 2026 full-catalog verification
+
+The full verification pass covers every one of the 440 public catalog records in
+`data/asset_catalog_audit_2026_08_21.json`. It refreshed the FAA airport and NCES IPEDS
+inputs, checked record structure and location precision, reviewed record-specific official
+evidence, and researched current status for companies and programs with a higher risk of
+stale claims.
+
+- 423 current records were confirmed as written.
+- Six records were confirmed as historical and remain explicitly labeled historical.
+- Eleven jurisdiction-level first-responder awards remain cautiously named and flagged for
+  follow-up because the public award documents do not identify the operating department.
+- Autonomous Flight Technologies was moved from a Roanoke locality point to its published
+  Salem street address.
+- Dedrone's former Sterling headquarters is now historical following Axon's acquisition.
+- DZYNE remains active within Ondas Sentinel, but its map point was downgraded to Fairfax
+  locality precision because the current source does not publish a street address.
+- DroneUp remains active with a changed emphasis on airspace and autonomous-operations
+  technology; its old headquarters address was removed because it is no longer published by
+  the company.
+- Three confirmed dead references were replaced for Haymarket Police, Navy TALSA East, and
+  York County ROVER.
+
+The final availability sweep checked 1,310 database source records across 763 distinct URLs
+and found no confirmed dead links. Four official pages returned automated HTTP 403 responses;
+two belong to a specialized college hidden from the public catalog, while the Staunton Police
+and Marine Corps Warfighting Laboratory records retain separate accepted official evidence.
+The audit ledger records these exceptions rather than treating an anti-automation response as
+proof that the underlying asset is invalid.
+
 ## August 11, 2026 priority review
 
-The priority review checked 48 core UxS companies, test and research facilities, active programs, military or federal assets, and Hampton Roads records against specific official public evidence. It records 52 verified source attachments in `data/asset_editorial_reviews.json`. The deployment command `apply_catalog_reviews` applies each checked-in decision once and will not overwrite a later staff decision to unverify or revise the record.
+The initial priority review checked core UxS companies, test and research facilities, active programs, military or federal assets, and Hampton Roads records against specific official public evidence. The later full-catalog pass supersedes its coverage while retaining its decisions and review history. The deployment command `apply_catalog_reviews` applies each checked-in decision once and will not overwrite a later staff decision to unverify or revise the record.
 
-Seven of the 20 CY 2026 jurisdiction-level award records now have official public evidence identifying their operator: Ashland Police, Haymarket Police, Madison County Sheriff's Office, Occoquan Police, Radford City Police, Wise County Sheriff's Office, and Wythe County Sheriff's Office. The remaining 13 stay cautiously labeled as jurisdiction-level first-responder capabilities and are flagged as high-priority follow-up work. The public award table documents the jurisdiction and an aircraft already in use but does not identify the operating department, so the catalog does not infer one.
+Nine of the 20 CY 2026 jurisdiction-level award records now have official public evidence identifying their operator: Amherst Fire and EMS, Ashland Police, Haymarket Police, Madison County Sheriff's Office, Occoquan Police, Radford City Police, Staunton Police, Wise County Sheriff's Office, and Wythe County Sheriff's Office. The remaining 11 stay cautiously labeled as jurisdiction-level first-responder capabilities and are flagged as high-priority follow-up work. The public award table documents the jurisdiction and an aircraft already in use but does not identify the operating department, so the catalog does not infer one.
 
 `data/priority_profile_enrichment.json` stores reviewed current-activity, collaboration, and contact improvements for the most useful stakeholder-facing records. Direct phone numbers and email addresses are included only when an official public page publishes them.
 

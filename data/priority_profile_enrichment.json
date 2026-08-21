@@ -1,5 +1,5 @@
 {
-  "reviewed_at": "2026-08-11",
+  "reviewed_at": "2026-08-21",
   "methodology": "Current activity and public contacts were reviewed against direct official organization, agency, facility, or program pages. Personal contact information is included only when the organization publishes it for the relevant role.",
   "assets": {
     "Amherst County Fire and EMS Drone Program": {
@@ -15,6 +15,74 @@
         {
           "title": "Amherst County Fire and EMS contact information",
           "url": "https://www.countyofamherst.com/department/index.php?structureid=23"
+        }
+      ]
+    },
+    "Autonomous Flight Technologies": {
+      "activity_status": "active",
+      "current_activity": "Autonomous Flight Technologies currently publishes small-UAS design, fabrication, flight-testing, counter-UAS products, and flight services from its Salem office.",
+      "partnership_opportunities": "Product, engineering, flight-service, and employment inquiries can use the company's published contact routes.",
+      "activity_source_url": "https://www.autonomousflight.us/careers",
+      "contact_text": "Autonomous Flight Technologies public inquiries",
+      "contact_phone": "540-647-0484",
+      "contact_email": "recruiting@autonomousflight.us",
+      "contact_url": "https://www.autonomousflight.us/careers",
+      "sources": [
+        {
+          "title": "Autonomous Flight Technologies Salem office and current UAS activity",
+          "url": "https://www.autonomousflight.us/careers"
+        }
+      ]
+    },
+    "Former Dedrone Washington-Area Headquarters": {
+      "activity_status": "historical",
+      "current_activity": "Dedrone previously maintained its Washington-area headquarters in Sterling. Axon completed its acquisition of Dedrone in October 2024, and current Axon materials do not establish the former Sterling headquarters as a current standalone operation.",
+      "partnership_opportunities": "Current Dedrone product and partnership inquiries should be directed to Axon.",
+      "activity_source_url": "https://www.axon.com/blog/axon-completes-acquisition-of-dedrone",
+      "contact_text": "Dedrone by Axon inquiries",
+      "contact_phone": "",
+      "contact_email": "",
+      "contact_url": "https://www.axon.com/contact/dedrone",
+      "sources": [
+        {
+          "title": "Axon completes acquisition of Dedrone",
+          "url": "https://www.axon.com/blog/axon-completes-acquisition-of-dedrone"
+        },
+        {
+          "title": "Dedrone by Axon contact route",
+          "url": "https://www.axon.com/contact/dedrone"
+        }
+      ]
+    },
+    "DroneUp": {
+      "activity_status": "active",
+      "current_activity": "DroneUp remains active but has shifted its current emphasis from operating last-mile delivery networks to airspace management, regulatory enablement, and autonomous UAS operations technology.",
+      "partnership_opportunities": "Airspace-management, UAS-operations, and technology inquiries can use DroneUp's current partnership form.",
+      "activity_source_url": "https://www.droneup.com/",
+      "contact_text": "DroneUp airspace and UAS technology inquiries",
+      "contact_phone": "877-601-1860",
+      "contact_email": "",
+      "contact_url": "https://www.droneup.com/contact",
+      "sources": [
+        {
+          "title": "DroneUp current airspace and UAS technology operations",
+          "url": "https://www.droneup.com/"
+        }
+      ]
+    },
+    "DZYNE Technologies": {
+      "activity_status": "active",
+      "current_activity": "DZYNE remains an active autonomous-defense business within Ondas Sentinel and continues to list Fairfax as a current location for its long-endurance UAS and counter-UAS work.",
+      "partnership_opportunities": "Product, demonstration, and business inquiries can use DZYNE's current public contact route.",
+      "activity_source_url": "https://dzyne.com/contact-us/",
+      "contact_text": "DZYNE product and business inquiries",
+      "contact_phone": "949-313-6185",
+      "contact_email": "info@dzyne.com",
+      "contact_url": "https://dzyne.com/contact-us/",
+      "sources": [
+        {
+          "title": "DZYNE current locations and Ondas Sentinel ownership",
+          "url": "https://dzyne.com/contact-us/"
         }
       ]
     },
@@ -64,15 +132,19 @@
       "activity_status": "active",
       "current_activity": "Haymarket Police documented a fully implemented department drone program and received a CY 2026 award to replace an aircraft already in service.",
       "partnership_opportunities": "Public-safety coordination and program questions can be directed to the Haymarket Police Department.",
-      "activity_source_url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/police/page/2971/haymarket_police_department_annual_report_2022.pdf",
+      "activity_source_url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/town_council/meeting/11057/tc_regmtg_03_06_2023.pdf",
       "contact_text": "Haymarket Police Department",
       "contact_phone": "703-753-2700",
       "contact_email": "",
-      "contact_url": "https://www.townofhaymarket.org/1450/Patrol-Division",
+      "contact_url": "https://www.townofhaymarket.org/1293/Police-Department",
       "sources": [
         {
           "title": "Haymarket Police Department contact information",
-          "url": "https://www.townofhaymarket.org/1450/Patrol-Division"
+          "url": "https://www.townofhaymarket.org/1293/Police-Department"
+        },
+        {
+          "title": "Haymarket Town Council packet documenting the implemented drone program",
+          "url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/town_council/meeting/11057/tc_regmtg_03_06_2023.pdf"
         }
       ]
     },
@@ -172,7 +244,13 @@
       "contact_text": "NAVAIR public affairs",
       "contact_phone": "240-925-5305",
       "contact_email": "",
-      "contact_url": "https://www.navair.navy.mil/contact-us"
+      "contact_url": "https://www.navair.navy.mil/product/Family-Small-Unmanned-Aircraft-Systems",
+      "sources": [
+        {
+          "title": "NAVAIR Family of Small Unmanned Aircraft Systems and TALSA support",
+          "url": "https://www.navair.navy.mil/product/Family-Small-Unmanned-Aircraft-Systems"
+        }
+      ]
     },
     "Newport News Drones as First Responders Program": {
       "activity_status": "active",
@@ -319,7 +397,13 @@
       "contact_text": "York County Fire and Life Safety",
       "contact_phone": "757-890-3600",
       "contact_email": "",
-      "contact_url": "https://www.yorkcounty.gov/99/Fire-Life-Safety"
+      "contact_url": "https://www.yorkcounty.gov/1024/Administrative-Services",
+      "sources": [
+        {
+          "title": "York County Administrative Services and ROVER program",
+          "url": "https://www.yorkcounty.gov/1024/Administrative-Services"
+        }
+      ]
     }
   }
 }

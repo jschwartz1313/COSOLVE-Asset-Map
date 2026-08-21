@@ -57,6 +57,10 @@ TARGET_CONTACT_UPGRADES = {
     "Virginia Tech Drone Park",
     "Virginia Unmanned Systems Center",
     "Wallops Research Park",
+    "Autonomous Flight Technologies",
+    "DZYNE Technologies",
+    "DroneUp",
+    "Former Dedrone Washington-Area Headquarters",
 }
 RESOLVED_JURISDICTION_RECORDS = {
     "Amherst County Fire and EMS Drone Program",
@@ -90,6 +94,29 @@ STALE_CATALOG_SOURCE_URLS = {
         "https://www.hampton.gov/CivicAlerts.aspx?AID=4656&ARC=9365",
         "https://www.hampton.gov/CivicAlerts.aspx?AID=4759&ARC=9695",
     },
+    "Autonomous Flight Technologies": {
+        "https://www.autonomousflight.us/contact-offices",
+    },
+    "DZYNE Technologies": {
+        "https://www.sbir.gov/portfolio/406214",
+    },
+    "DroneUp": {
+        "https://www.droneup.com/privacy-policy",
+    },
+    "Former Dedrone Washington-Area Headquarters": {
+        "https://www.dedrone.com/about/contact-us",
+        "https://www.dedrone.com/contact",
+    },
+    "Haymarket Police Department Drone Program": {
+        "https://www.townofhaymarket.org/sites/default/files/fileattachments/police/page/2971/haymarket_police_department_annual_report_2022.pdf",
+        "https://www.townofhaymarket.org/1450/Patrol-Division",
+    },
+    "Navy TALSA East Small UAS Training Facility": {
+        "https://www.navair.navy.mil/contact-us",
+    },
+    "York County ROVER Team": {
+        "https://www.yorkcounty.gov/99/Fire-Life-Safety",
+    },
     "Longbow Unmanned Systems Research and Test Center": {
         "https://www.hampton.gov/CivicAlerts.aspx?AID=4973&ARC=10333",
         "https://www.usrtc.org/",
@@ -117,6 +144,21 @@ LEGACY_JURISDICTION_WEBSITE_URLS = {
     "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
 }
 LEGACY_WEBSITE_URLS_BY_ASSET = {
+    "Autonomous Flight Technologies": {
+        "https://www.autonomousflight.us/company",
+    },
+    "DZYNE Technologies": {
+        "https://dzyne.com/about/",
+    },
+    "DroneUp": {
+        "https://www.vedp.org/news/home-business-more-400-years",
+    },
+    "Former Dedrone Washington-Area Headquarters": {
+        "https://www.dedrone.com/about/contact-us",
+    },
+    "Haymarket Police Department Drone Program": {
+        "https://www.townofhaymarket.org/sites/default/files/fileattachments/police/page/2971/haymarket_police_department_annual_report_2022.pdf",
+    },
     "Accomack County Emergency Management Drone Program": {
         "https://www.co.accomack.va.us/Home/Components/News/News/381/18"
     },
@@ -133,6 +175,23 @@ LEGACY_WEBSITE_URLS_BY_ASSET = {
     "VCU ARVL Robotic Drone System": {"https://arvl.lab.vcu.edu/"},
 }
 LEGACY_CONTACT_URLS_BY_ASSET = {
+    "Autonomous Flight Technologies": {
+        "https://www.autonomousflight.us/contact-offices",
+    },
+    "Former Dedrone Washington-Area Headquarters": {
+        "https://www.dedrone.com/contact",
+    },
+    "Haymarket Police Department Drone Program": {
+        "https://www.townofhaymarket.org/1450/Patrol-Division",
+    },
+    "Navy TALSA East Small UAS Training Facility": {
+        "https://www.navair.navy.mil/contact-us",
+        "https://cnrma.cnic.navy.mil/Installations/JEB-Little-Creek-Fort-Story/Contact-Us/",
+    },
+    "York County ROVER Team": {
+        "https://www.yorkcounty.gov/1874/The-ROVER-Team",
+        "https://www.yorkcounty.gov/99/Fire-Life-Safety",
+    },
     "Accomack County Emergency Management Drone Program": {
         "https://www.co.accomack.va.us/Home/Components/News/News/381/18"
     },
@@ -147,6 +206,63 @@ LEGACY_CONTACT_URLS_BY_ASSET = {
     },
     "National Institute of Aerospace": {"https://www.nianet.org/contact/"},
 }
+
+LEGACY_FIELD_VALUES_BY_ASSET = {
+    "Autonomous Flight Technologies": {
+        "city": {"Roanoke"},
+        "address_line": {""},
+        "postal_code": {""},
+        "latitude": {37.271},
+        "longitude": {-79.941},
+        "location_precision": {Asset.LocationPrecision.LOCALITY},
+        "short_description": {
+            "Roanoke-based developer of unmanned aircraft, avionics, and "
+            "autonomous-flight technologies."
+        },
+    },
+    "DZYNE Technologies": {
+        "address_line": {"8280 Willow Oaks Corporate Drive, Suite 200"},
+        "postal_code": {"22031"},
+        "latitude": {38.863831},
+        "longitude": {-77.230173},
+        "location_precision": {Asset.LocationPrecision.EXACT},
+        "short_description": {
+            "Fairfax office of an autonomous-systems company developing long-endurance "
+            "unmanned aircraft, autonomy software, and counter-unmanned capabilities."
+        },
+    },
+    "DroneUp": {
+        "address_line": {"160 Newtown Road, Suite 302"},
+        "postal_code": {"23462"},
+        "latitude": {36.842642},
+        "longitude": {-76.186071},
+        "location_precision": {Asset.LocationPrecision.SITE},
+        "short_description": {
+            "Virginia Beach-founded drone services, operations, software, training, "
+            "and delivery company."
+        },
+    },
+    "Former Dedrone Washington-Area Headquarters": {
+        "short_description": {
+            "Sterling headquarters for counter-drone sensing, identification, tracking, "
+            "and airspace-security technology."
+        },
+    },
+}
+
+
+def matches_legacy_value(value, candidates):
+    if value in candidates:
+        return True
+    try:
+        numeric_value = float(value)
+    except (TypeError, ValueError):
+        return False
+    return any(
+        abs(numeric_value - float(candidate)) < 0.000001
+        for candidate in candidates
+        if isinstance(candidate, (int, float))
+    )
 
 
 class Command(BaseCommand):
@@ -201,6 +317,43 @@ class Command(BaseCommand):
                     if record.get(field) not in (None, ""):
                         setattr(asset, field, record[field])
                         changed_fields.append(field)
+
+            corrected_description = False
+            legacy_fields = LEGACY_FIELD_VALUES_BY_ASSET.get(record["name"], {})
+            location_fields = {
+                "address_line",
+                "city",
+                "postal_code",
+                "latitude",
+                "longitude",
+                "location_precision",
+            }.intersection(legacy_fields)
+            legacy_location_matches = all(
+                matches_legacy_value(getattr(asset, field), legacy_fields[field])
+                for field in location_fields
+            )
+            for field, legacy_values in legacy_fields.items():
+                if field in location_fields and not legacy_location_matches:
+                    continue
+                current_value = getattr(asset, field)
+                target_value = record.get(field, "")
+                if (
+                    catalog_managed
+                    and matches_legacy_value(current_value, legacy_values)
+                    and current_value != target_value
+                ):
+                    setattr(asset, field, target_value)
+                    changed_fields.append(field)
+                    corrected_description |= field == "short_description"
+            if corrected_description and asset.overview.startswith(
+                tuple(
+                    LEGACY_FIELD_VALUES_BY_ASSET[record["name"]].get(
+                        "short_description", set()
+                    )
+                )
+            ):
+                asset.overview = record["overview"]
+                changed_fields.append("overview")
 
             for field in PROFILE_FIELDS:
                 if getattr(asset, field) in (None, "") and record.get(field) not in (None, ""):
@@ -346,8 +499,6 @@ class Command(BaseCommand):
                 deleted_count, _details = asset.sources.filter(
                     url__in=stale_urls,
                     notes__startswith="Catalog provenance:",
-                    verification_status="unreviewed",
-                    link_review_status=Source.LinkReviewStatus.AUTOMATIC,
                 ).delete()
                 removed_stale_sources += deleted_count
 

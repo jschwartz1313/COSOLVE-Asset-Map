@@ -19,6 +19,7 @@ TAXONOMY_FIELDS = {
 }
 
 LEGACY_CATALOG_NAMES = {
+    "Former Dedrone Washington-Area Headquarters": "Dedrone Washington-Area Headquarters",
     "Fort Walker": "Fort A.P. Hill",
     "Fort Gregg-Adams": "Fort Lee",
     "Fort Barfoot": "Fort Pickett",
@@ -183,22 +184,33 @@ class Command(BaseCommand):
                 values = [model.objects.get_or_create(name=name)[0] for name in record[field]]
                 getattr(asset, field).set(values)
 
-            source_titles = {source_data["title"] for source_data in record["sources"]}
-            asset.sources.filter(notes__startswith="Catalog provenance:").exclude(
-                title__in=source_titles
-            ).delete()
+            source_urls = {source_data["url"] for source_data in record["sources"]}
             for source_data in record["sources"]:
-                source, source_created = Source.objects.get_or_create(
-                    asset=asset,
-                    title=source_data["title"],
-                    defaults={
-                        "url": source_data["url"],
-                        "notes": f"Catalog provenance: {record['provenance']}",
-                        "is_public": True,
-                    },
-                )
-                url_changed = source.url != source_data["url"]
-                source.url = source_data["url"]
+                source = asset.sources.filter(url=source_data["url"]).first()
+                source_created = source is None
+                url_changed = False
+                if source is None:
+                    source = (
+                        asset.sources.filter(
+                            title=source_data["title"],
+                            notes__startswith="Catalog provenance:",
+                        )
+                        .exclude(url__in=source_urls)
+                        .first()
+                    )
+                    if source is not None:
+                        source.url = source_data["url"]
+                        source_created = False
+                        url_changed = True
+                if source is None:
+                    source = Source(
+                        asset=asset,
+                        url=source_data["url"],
+                        title=source_data["title"],
+                        notes=f"Catalog provenance: {record['provenance']}",
+                        is_public=True,
+                    )
+                source.title = source_data["title"]
                 source.notes = f"Catalog provenance: {record['provenance']}"
                 source.is_public = True
                 if source_created or url_changed:
@@ -208,6 +220,9 @@ class Command(BaseCommand):
                     source.http_status = None
                     source.check_error = ""
                 source.save()
+            asset.sources.filter(notes__startswith="Catalog provenance:").exclude(
+                url__in=source_urls
+            ).delete()
             created += int(was_created)
             updated += int(not was_created)
 

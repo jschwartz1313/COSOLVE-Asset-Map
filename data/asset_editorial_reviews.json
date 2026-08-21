@@ -1,163 +1,4 @@
 {
-  "reviewed_at": "2026-08-11",
-  "methodology": "Tier 1 records were checked against direct official public sources for the named organization or program, its Virginia location, and its described unmanned-systems role. A verified source is not a claim that every future activity remains unchanged; records remain subject to the normal review cycle.",
-  "reviewed_assets": {
-    "Advanced Aircraft Company": [
-      "https://advancedaircraftcompany.com/uas-products/"
-    ],
-    "AeroVironment Corporate Headquarters": [
-      "https://www.avinc.com/domains/"
-    ],
-    "ANRA Technologies": [
-      "https://www.anratechnologies.com/home/"
-    ],
-    "Amherst County Fire and EMS Drone Program": [
-      "https://www.countyofamherst.com/egov/documents/1730910273_75599.pdf",
-      "https://www.countyofamherst.com/egov/documents/1749654223_53408.pdf"
-    ],
-    "Ashland Police Department Drone Program": [
-      "https://www.ashlandva.gov/DocumentCenter/View/6463/July-2024-1?bidId="
-    ],
-    "Aurora Flight Sciences": [
-      "https://www.aurora.aero/contact-us/"
-    ],
-    "Chesapeake Police UAS Team": [
-      "https://www.cityofchesapeake.net/921/Operations-Bureau"
-    ],
-    "CNU Autonomous Systems and Drone Lab": [
-      "https://cnu.edu/news/2026/02/19-cnu-serc-drone-lab/"
-    ],
-    "Hampton Joint Police and Fire UAS Unit": [
-      "https://www.hampton.gov/DocumentCenter/View/37936/557-UAS-Unmanned-Aerial-System-PDF"
-    ],
-    "Hampton University Uncrewed Aircraft Systems Program": [
-      "https://home.hamptonu.edu/engineering/uas/"
-    ],
-    "Haymarket Police Department Drone Program": [
-      "https://www.townofhaymarket.org/sites/default/files/fileattachments/police/page/2971/haymarket_police_department_annual_report_2022.pdf"
-    ],
-    "HII Unmanned Systems Center of Excellence": [
-      "https://www.hii.com/news/unmanned-systems-center-of-excellence",
-      "https://www.hii.com/mission-technologies"
-    ],
-    "James City County Police Drone as First Responder Program": [
-      "https://www.jamescitycountyva.gov/m/newsflash/Home/Detail/6334"
-    ],
-    "Longbow Unmanned Systems Research and Test Center": [
-      "https://www.sbir.gov/portfolio/1664155"
-    ],
-    "Madison County Sheriff's Office UAS Program": [
-      "https://www.madisonco.virginia.gov/AgendaCenter/ViewFile/Agenda/_02102026-398"
-    ],
-    "MARS Unmanned Aircraft Systems Airfield": [
-      "https://www.vaspace.org/our-facilities"
-    ],
-    "Mid-Atlantic Aviation Partnership": [
-      "https://maap.ictas.vt.edu/About/about-us.html"
-    ],
-    "MITRE National Range": [
-      "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range"
-    ],
-    "NASA Langley CERTAIN": [
-      "https://csaob.larc.nasa.gov/roam/"
-    ],
-    "NASA Langley Research Center": [
-      "https://www.nasa.gov/langley/about-langley-research-center/"
-    ],
-    "NASA Langley ROAM UAS Operations Center": [
-      "https://csaob.larc.nasa.gov/roam/"
-    ],
-    "NASA Langley UAS Test Range": [
-      "https://csaob.larc.nasa.gov/roam/"
-    ],
-    "NASA Wallops Flight Facility": [
-      "https://www.nasa.gov/wallops/about/"
-    ],
-    "Navy TALSA East Small UAS Training Facility": [
-      "https://www.navair.navy.mil/news/Navy-opens-doors-first-small-unmanned-aircraft-systems-training-facility/Tue-08022022-0923"
-    ],
-    "Newport News AirCommerce Park": [
-      "https://newportnewsva.com/business-neighborhoods/patrick-henry-corridor/",
-      "https://newportnewsva.com/wp-content/uploads/2022/07/NNEDA-Aerospace-Aviation-Flyer.pdf"
-    ],
-    "Newport News Drones as First Responders Program": [
-      "https://www.nnva.gov/3269/Drones-as-First-Responders"
-    ],
-    "Newport News Police and Fire Drone Unit": [
-      "https://www.nnva.gov/2394/Drone-Unit"
-    ],
-    "Norfolk Harbor Patrol Drone Capability": [
-      "https://www.norfolk.gov/6644/Harbor-Patrol-Unit"
-    ],
-    "NSWC Carderock Combatant Craft Division": [
-      "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Carderock/Who-We-Are/Norfolk-Virginia/"
-    ],
-    "NSWC Dahlgren UAV Test Runway": [
-      "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/What-We-Do/"
-    ],
-    "NSWCDD Dam Neck Activity": [
-      "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Dam-Neck/"
-    ],
-    "Occoquan Police Department Public Safety Drone Program": [
-      "https://occoquanva.gov/wp-content/uploads/2026/01/TC-Agenda-Packet-FULL-1-6-2026.pdf"
-    ],
-    "ODU Institute for Autonomous and Connected Systems": [
-      "https://www.odu.edu/iacs"
-    ],
-    "ODU Maritime Autonomous Systems Test Site": [
-      "https://www.odu.edu/article/beyond-boats-and-submarines-odu-city-of-norfolk-celebrate-the-opening-of-the-maritime",
-      "https://www.odu.edu/national-security/facilities-test-environments"
-    ],
-    "Radford City Police Department Drone Program": [
-      "https://www.radfordva.gov/AgendaCenter/ViewFile/Minutes/_01272026-805"
-    ],
-    "Staunton Police Department UAS Program": [
-      "https://www.ci.staunton.va.us/Home/Components/MeetingsManager/MeetingAgenda/ShowPrimaryDocument/?agendaID=1054&includeTrash=False&isPub=True"
-    ],
-    "VIMS Autonomous Systems Laboratory": [
-      "https://www.vims.edu/people/patterson_mr/"
-    ],
-    "VIMS Harmful Algal Bloom Drone Monitoring": [
-      "https://www.vims.edu/bayinfo/habs/tech/"
-    ],
-    "Virginia Advanced Air Mobility Program": [
-      "https://doav.virginia.gov/advanced_air_mobility/"
-    ],
-    "Virginia Department of Aviation": [
-      "https://doav.virginia.gov/advanced_air_mobility/"
-    ],
-    "Virginia Economic Development Partnership": [
-      "https://www.vedp.org/industry/unmanned-systems"
-    ],
-    "Virginia Flight Information Exchange": [
-      "https://doav.virginia.gov/aviation_programs_resources/"
-    ],
-    "Virginia Peninsula Community College Drone Flight Technician Certificate": [
-      "https://www.vpcc.edu/program/small-unmanned-aircraft-systems-drone-flight-technician/"
-    ],
-    "Virginia Spaceport Authority": [
-      "https://www.vaspace.org/our-facilities"
-    ],
-    "Virginia Tech Drone Park": [
-      "https://ictas.vt.edu/Facilities/ictas-drone-park.html"
-    ],
-    "Virginia Unmanned Systems Center": [
-      "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
-    ],
-    "Wallops Research Park": [
-      "https://www.accomack.gov/614/Background-Timeline",
-      "https://www.accomack.gov/692/Aerospace"
-    ],
-    "Wise County Sheriff's Office Drone Program": [
-      "https://www.wisecounty.org/AgendaCenter/ViewFile/Agenda/_02122026-671"
-    ],
-    "Wythe County Sheriff's Office Drone Program": [
-      "https://www.wytheco.org/AgendaCenter/ViewFile/Agenda/_01272026-119"
-    ],
-    "York County ROVER Team": [
-      "https://www.yorkcounty.gov/1874/The-ROVER-Team"
-    ]
-  },
   "follow_up_assets": {
     "Bath County First Responder UAS Capability": "The DCJS award confirms a currently used aircraft in an eligible first responder agency, but the public materials reviewed do not distinguish the Sheriff's Office from county emergency services.",
     "Buchanan County First Responder UAS Capability": "The DCJS award confirms a currently used aircraft in an eligible first responder agency, but the public materials reviewed do not name the operating department.",
@@ -170,5 +11,1993 @@
     "Town of New Market First Responder UAS Capability": "The DCJS award confirms a currently used aircraft in an eligible first responder agency, but the public materials reviewed do not name the operating department.",
     "Town of Rocky Mount First Responder UAS Capability": "The DCJS award confirms a currently used aircraft in an eligible first responder agency, but the public materials reviewed do not name the operating department.",
     "Town of Scottsville First Responder UAS Capability": "Official town material documents local drone demonstrations, but it does not establish which participating first responder agency owns the DCJS-funded aircraft."
-  }
+  },
+  "methodology": "Full-catalog verification pass using current authoritative registry refreshes, record-specific official public pages, source-availability checks, targeted current-status research, and conservative location precision. Verification confirms the catalog claim as written; it does not imply flight authorization, site access, endorsement, or that future activity will remain unchanged.",
+  "reviewed_assets": {
+    "ANRA Technologies": [
+      "https://www.anratechnologies.com/home/",
+      "https://www.anratechnologies.com/home/2026/06/24/building-michigans-digital-airspace-integrating-commercial-drone-operations-and-airspace-security/",
+      "https://www.vedp.org/news/organizing-skies"
+    ],
+    "ATA Aviation": [
+      "https://vipc.org/virginia-launches-advanced-air-mobility-and-unmanned-systems-test-site-program/",
+      "https://downloads.regulations.gov/FAA-2023-1256-0279/attachment_1.pdf",
+      "https://ata-llc.com/company/"
+    ],
+    "AUVSI Hampton Roads Chapter": [
+      "https://www.nasa.gov/general/nasa-langley-supports-advanced-air-mobility-aam-exposition/",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "AUVSI Ridge and Valley Chapter": [
+      "https://www.auvsiridgeandvalley.org/",
+      "https://www.auvsiridgeandvalley.org/about"
+    ],
+    "Accomack County": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27MFV%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Accomack County Emergency Management Drone Program": [
+      "https://www.esva911.org/Communications%20Manual%20-%20Public%20Release%20Version-%20UPDATED%2011-26-24.pdf",
+      "https://www.co.accomack.va.us/departments/public-safety"
+    ],
+    "Adaptive Aerospace Group": [
+      "https://adaptiveaero.com/",
+      "https://adaptiveaero.com/contact/"
+    ],
+    "Advanced Aircraft Company": [
+      "https://advancedaircraftcompany.com/uas-products/",
+      "https://advancedaircraftcompany.com/",
+      "https://advancedaircraftcompany.com/contact/"
+    ],
+    "AeroVironment Corporate Headquarters": [
+      "https://www.avinc.com/domains/",
+      "https://www.avinc.com/about/maccready-works/",
+      "https://www.avinc.com/contact/"
+    ],
+    "Aeroprobe": [
+      "https://www.aeroprobe.com/about-aeroprobe/",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Agora University": [
+      "https://www.agora.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "Agricision": [
+      "https://www.agricisioninc.com/",
+      "https://www.agricisioninc.com/contact"
+    ],
+    "Albemarle County Fire Rescue UAS Program": [
+      "https://www.albemarle.org/home/showpublisheddocument/27911/638961259487630000",
+      "https://www.albemarle.org/government/fire-rescue/emergency-services"
+    ],
+    "Albemarle County Police UAS Program": [
+      "https://www.albemarle.org/home/showpublisheddocument/26848/638869823368570000",
+      "https://www.albemarle.org/government/police?lv=true"
+    ],
+    "Allan C Perkinson/Blackstone AAF": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27BKT%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Amherst County Fire and EMS Drone Program": [
+      "https://www.countyofamherst.com/egov/documents/1730910273_75599.pdf",
+      "https://www.countyofamherst.com/egov/documents/1749654223_53408.pdf",
+      "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+    ],
+    "Appalachian School of Law": [
+      "https://www.asl.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.asl.edu/admissions/admissions-office/"
+    ],
+    "Arlington Joint Public Safety UAS Program": [
+      "https://www.arlingtonva.us/Government/Departments/PSCEM/Unmanned-Aircraft-Systems",
+      "https://www.arlingtonva.us/About-Arlington/Newsroom/Articles/2024/Arlington-County-Unmanned-Aircraft-Systems-Program-Now-Operational"
+    ],
+    "Army National Guard Readiness Center": [
+      "https://www.nationalguard.mil/About-the-Guard/Army-National-Guard/Contact-Us/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Ashland Police Department Drone Program": [
+      "https://www.ashlandva.gov/DocumentCenter/View/6463/July-2024-1?bidId=",
+      "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+      "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+    ],
+    "Association for Uncrewed Vehicle Systems International": [
+      "https://www.auvsi.org/about-auvsi/",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Augusta County Sheriff's Office Drone Team": [
+      "https://www.co.augusta.va.us/home/showpublisheddocument/20491/639101430011700000",
+      "https://www.co.augusta.va.us/home/showpublisheddocument/16586/638489703162570000",
+      "https://www.co.augusta.va.us/government/departments-and-offices/sheriff"
+    ],
+    "Aurora Flight Sciences": [
+      "https://www.aurora.aero/contact-us/",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Auterion U.S. Headquarters": [
+      "https://auterion.com/auterion-moves-corporate-headquarters-to-arlington-virginia/",
+      "https://auterion.com/company/contact-us/"
+    ],
+    "AutoBoat at Virginia Tech": [
+      "https://autoboat.aoe.vt.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "Autonomous Aerial Vehicles at Virginia Tech": [
+      "https://www.vtaav.org/our-team",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "Autonomous Flight Technologies": [
+      "https://www.autonomousflight.us/careers",
+      "https://www.autonomousflight.us/company"
+    ],
+    "Averett University": [
+      "https://www.averett.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://admissions.averett.edu/"
+    ],
+    "Bedford County Sheriff's Office Drone Team": [
+      "https://sheriff.bedfordcountyva.gov/Home/Components/News/News/1947/3987?arch=1&npage=2",
+      "https://sheriff.bedfordcountyva.gov/about-us/contact-us"
+    ],
+    "Bedford Fire Department UAS Program": [
+      "https://bedfordva.gov/DocumentCenter/View/1970/BFD-Annual-Report-2018-PDF",
+      "https://www.bedfordva.gov/AgendaCenter/ViewFile/Minutes/_08232022-258",
+      "https://www.bedfordva.gov/Directory.aspx"
+    ],
+    "Blue Ridge": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27MTV%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Blue Ridge Community College": [
+      "https://www.brcc.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.brcc.edu/admissions/"
+    ],
+    "Blue Ridge Community College Unmanned Systems Courses": [
+      "https://courses.vccs.edu/colleges/brcc/courses/UMS-UnmannedSystems",
+      "https://www.brcc.edu/about/"
+    ],
+    "Blue Ridge Defense Works": [
+      "https://blueridgedefense.com/",
+      "https://sam.gov/entity/MV3AMKSSPZR1/coreData?status=Active"
+    ],
+    "Blue Vigil": [
+      "https://www.bluevigil.com/about",
+      "https://www.vedp.org/news/industries-future-unmanned-systems",
+      "https://www.bluevigil.com/"
+    ],
+    "Bluefield University": [
+      "https://www.bluefield.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.bluefield.edu/admissions/"
+    ],
+    "Bridgewater Air Park": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27VBW%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Bridgewater College": [
+      "https://www.bridgewater.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.bridgewater.edu/admissions-aid/"
+    ],
+    "Brightpoint Community College": [
+      "https://www.brightpoint.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.brightpoint.edu/admissions"
+    ],
+    "Brightpoint Community College Unmanned Systems Courses": [
+      "https://courses.vccs.edu/colleges/jtcc/courses/UMS-UnmannedSystems",
+      "https://www.brightpoint.edu/about"
+    ],
+    "Brookneal/Campbell County": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%270V4%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Brunswick County": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27LVL%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Bryant & Stratton College-Virginia Beach": [
+      "https://www.bryantstratton.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.bryantstratton.edu/Admissions"
+    ],
+    "CACI International": [
+      "https://www.caci.com/",
+      "https://www.caci.com/sites/default/files/2022-11/F614_2210_Maritime_cUAS.pdf"
+    ],
+    "CNU Autonomous Systems and Drone Lab": [
+      "https://cnu.edu/news/2026/02/19-cnu-serc-drone-lab/",
+      "https://www.vedp.org/industry/unmanned-systems",
+      "https://cnu.edu/people/abhishekphadke/"
+    ],
+    "CNU Capable Humanitarian Robotics and Intelligent Systems Lab": [
+      "https://cnu.edu/academics/departments/sec/research/",
+      "https://www.vedp.org/industry/unmanned-systems",
+      "https://cnu.edu/whoweare/contactus/"
+    ],
+    "Campbell County Sheriff's Office Drone Program": [
+      "https://www.campbellcountyva.gov/324/Annual-Reports",
+      "https://www.campbellcountyva.gov/DocumentCenter/View/15215/2024-CCSO-Annual-Report",
+      "https://www.campbellcountyva.gov/DocumentCenter/View/8349/2021-CCSO-Annual-Report"
+    ],
+    "Campbell Fld": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%279VG%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Caroline County Fire and Rescue UAS Program": [
+      "https://co.caroline.va.us/AgendaCenter/ViewFile/Item/7378?fileID=11595",
+      "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+      "https://www.co.caroline.va.us/Directory.aspx"
+    ],
+    "Cavalier Autonomous Racing": [
+      "https://www.engineering.virginia.edu/labs-groups/link-lab/research/robotics-and-autonomous-systems",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "Center for Unmanned Aircraft Systems at Virginia Tech": [
+      "https://iucrc.nsf.gov/centers/center-for-unmanned-aircraft-system/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Central Virginia Community College": [
+      "https://www.centralvirginia.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.centralvirginia.edu/admissions"
+    ],
+    "Charles City County Sheriff's Office Drone Operations Team": [
+      "https://vasheriff.org/2025/03/05/charles-city-county-sheriffs-office-announces-formation-of-drone-operations-team/",
+      "https://www.charlescityva.us/FormCenter/Main-County-Office-5/Contact-Us-44",
+      "https://www.charlescityva.us/directory.aspx?did=20"
+    ],
+    "Charlottesville Police UAS Team": [
+      "https://www.charlottesville.gov/1697/Emergency-Services-Unit",
+      "https://www.charlottesville.gov/308/Contact-Us"
+    ],
+    "Charlottesville-Albemarle": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27CHO%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Chase City Muni": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27CXE%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Chesapeake Police UAS Team": [
+      "https://www.cityofchesapeake.net/921/Operations-Bureau",
+      "https://www.cityofchesapeake.net/Directory.aspx",
+      "https://www.cityofchesapeake.net/727/Police-Department"
+    ],
+    "Chesapeake Rgnl": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27CPK%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Chesterfield Fire and EMS sUAS Program": [
+      "https://www.chesterfield.gov/DocumentCenter/View/46569/Chesterfield-Fire-and-EMS-Community-Risk-Assessment-and-Standards-of-Cover-PDF",
+      "https://www.chesterfield.gov/941/Police"
+    ],
+    "Chesterfield Police Drone as First Responder Program": [
+      "https://www.chesterfield.gov/941/Police",
+      "https://www.chesterfield.gov/Directory.aspx"
+    ],
+    "Christopher Newport University": [
+      "https://cnu.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://cnu.edu/admission/"
+    ],
+    "City of Fairfax Regional UAS Unit": [
+      "https://www.fairfaxva.gov/files/assets/city/v/1/police/documents/annual-reports/fy2023-ffx-pd-annual-report.pdf",
+      "https://www.fairfaxva.gov/Government/Departments/Police"
+    ],
+    "City of Virginia Beach UAS Program": [
+      "https://www.cisa.gov/sites/default/files/2024-08/24_0826_necp_spotlight_implementing_uas_programs_to_support_emergency_operations_final_508C.pdf",
+      "https://virginiabeach.gov/"
+    ],
+    "Coast Guard Atlantic Area and Fifth Coast Guard District": [
+      "https://www.uscg.mil/Our-Organization/D5/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Colonial Heights Police Drone Program": [
+      "https://colonialheightsva.gov/AgendaCenter/ViewFile/Agenda/_02102026-750?packet=true",
+      "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+      "https://www.colonialheightsva.gov/156/Police"
+    ],
+    "Commonwealth Center for Advanced Logistics Systems": [
+      "https://www.ccals.com/",
+      "https://www.ccals.com/about-us/",
+      "https://www.ccals.com/what-we-do/"
+    ],
+    "Commonwealth Center for Advanced Manufacturing": [
+      "https://ccam-va.com/",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Commonwealth Cyber Initiative": [
+      "https://cyberinitiative.org/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Craney Island Marine Terminal Project": [
+      "https://www.portofvirginia.com/gateway/capabilities/",
+      "https://www.nao.usace.army.mil/Missions/Civil-Works/Craney-Island/",
+      "https://www.portofvirginia.com/contact/"
+    ],
+    "Crewe Muni": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27W81%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Culpeper Police Department Drone Team": [
+      "https://files.culpeperva.gov/FY25%20TOC%20Annual%20Report.pdf",
+      "https://files.culpeperva.gov/Document_Center/Government/Town_Clerk/FY23_TOC_Annual_Report.pdf?t=202311211113020"
+    ],
+    "Culpeper Rgnl": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27CJR%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "DZYNE Technologies": [
+      "https://dzyne.com/contact-us/",
+      "https://dzyne.com/about/"
+    ],
+    "Dam Neck Annex": [
+      "https://cnrma.cnic.navy.mil/Installations/NAS-Oceana/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Danville Community College": [
+      "https://www.danville.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.danville.edu/admissions-aid"
+    ],
+    "Danville Community College Unmanned Systems Courses": [
+      "https://courses.vccs.edu/colleges/dcc/courses/UMS-UnmannedSystems",
+      "https://danville.edu/mission-vision"
+    ],
+    "Danville Life Saving Crew Drone Team": [
+      "https://www.dlsc.org/drones",
+      "https://www.dlsc.org/history",
+      "https://www.dlsc.org/about"
+    ],
+    "Danville Rgnl": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27DAN%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Defense Advanced Research Projects Agency": [
+      "https://www.darpa.mil/policies/visitor-information",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Defense Supply Center Richmond": [
+      "https://www.dla.mil/Aviation/Installation.aspx",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Dominion Energy UAS Program": [
+      "https://www.dominionenergy.com/about/delivering-energy/electric-projects",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "DroneUp": [
+      "https://www.droneup.com/",
+      "https://www.vedp.org/news/home-business-more-400-years",
+      "https://www.droneup.com/contact"
+    ],
+    "Dynamic Aviation": [
+      "https://www.dynamicaviation.com/",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "ECPI University": [
+      "https://www.ecpi.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.ecpi.edu/admissions"
+    ],
+    "ENSCO": [
+      "https://www.ensco.com/capabilities",
+      "https://www.ensco.com/contact/locations",
+      "https://www.ensco.com/contact"
+    ],
+    "Eagle Aviation Technologies": [
+      "https://eagleaviationtech.com/about-us-1",
+      "https://eagleaviationtech.com/contact-us"
+    ],
+    "Eagle's Nest": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27W13%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Eastern Mennonite University": [
+      "https://emu.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://emu.edu/admissions/"
+    ],
+    "Eastern Shore Community College": [
+      "https://www.es.vccs.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.es.vccs.edu/admissions-aid/how-to-apply/"
+    ],
+    "Eastern Shore Community College Unmanned Systems Courses": [
+      "https://courses.vccs.edu/colleges/escc/courses/UMS-UnmannedSystems",
+      "https://es.vccs.edu/about/"
+    ],
+    "Emory & Henry Drone Pilot Test Preparation": [
+      "https://catalog.ehc.edu/envs-330",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "Emory & Henry University": [
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.emoryhenry.edu/",
+      "https://www.ehc.edu/about/"
+    ],
+    "Emporia-Greensville Rgnl": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27EMV%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Energy-Centric UAS Center for Critical Infrastructure": [
+      "https://www.rbc.edu/news-releases/rbc-will-serve-as-operations-site-for-uas-center/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.rbc.edu/why-rbc/faculty-staff/staff/"
+    ],
+    "FAA BEYOND Virginia Team": [
+      "https://www.faa.gov/uas/programs_partnerships/beyond",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Fairfax County Police Drone as First Responder Program": [
+      "https://www.fairfaxcounty.gov/police/real-time-crime-center-transparency",
+      "https://www.fairfaxcounty.gov/uas/",
+      "https://www.fairfaxcounty.gov/topics/contact-us"
+    ],
+    "Fairfax County Unmanned Aircraft Systems Program": [
+      "https://www.fairfaxcounty.gov/uas/",
+      "https://www.fairfaxcounty.gov/topics/contact-us"
+    ],
+    "Falwell": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27W24%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Farmville Rgnl": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27FVX%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Ferrum College": [
+      "https://www.ferrum.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.ferrum.edu/admission/"
+    ],
+    "Flying Ship Company": [
+      "https://www.flyingship.co/contact",
+      "https://www.flyingship.co/"
+    ],
+    "Former Dedrone Washington-Area Headquarters": [
+      "https://www.axon.com/blog/axon-completes-acquisition-of-dedrone",
+      "https://www.axon.com/products/dedrone",
+      "https://www.axon.com/contact/dedrone"
+    ],
+    "Fort Barfoot": [
+      "https://www.army.mil/article-amp/264025/virginia_guards_fort_pickett_to_be_redesignated_fort_barfoot",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Fort Belvoir": [
+      "https://home.army.mil/belvoir/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Fort Eustis - Joint Base Langley-Eustis": [
+      "https://www.jble.af.mil/Home/Contact/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Fort Gregg-Adams": [
+      "https://home.army.mil/greggadams/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Fort Walker": [
+      "https://home.army.mil/aphill/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Franklin Rgnl": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27FKN%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Frederick County Sheriff's Office sUAS Program": [
+      "https://www.fcva.us/departments/sheriff-s-office/divisions/special-operations",
+      "https://www.fcva.us/departments/sheriff-s-office"
+    ],
+    "Fredericksburg Drone as First Responder Program": [
+      "https://www.fredericksburgva.gov/2066/Drone-as-First-Responder-DFR-Program",
+      "https://www.fredericksburgva.gov/Directory.aspx"
+    ],
+    "Fredericksburg Police UAS Team": [
+      "https://www.fredericksburgva.gov/1529/Unmanned-Aircraft-System-Team",
+      "https://www.fredericksburgva.gov/Directory.aspx"
+    ],
+    "Front Royal-Warren County": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27FRR%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Fulcrum Concepts": [
+      "https://fulcrumconceptsllc.com/contact/",
+      "https://fulcrumconceptsllc.com/about/",
+      "https://fulcrumconceptsllc.com/news/"
+    ],
+    "GO TEC Automation and Robotics Talent Pathway": [
+      "https://www.ialr.org/go-tec/",
+      "https://www.ialr.org/contact/"
+    ],
+    "GO Virginia": [
+      "https://www.dhcd.virginia.gov/gova",
+      "https://www.dhcd.virginia.gov/go-virginia-regional-materials",
+      "https://www.dhcd.virginia.gov/virginia-growth-and-opportunity-go-virginia-board"
+    ],
+    "George Mason Autonomous Robotics Laboratory": [
+      "https://people.cs.gmu.edu/~robotics/pmwiki.php/Main/People",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "George Mason Center for Air Transportation Systems Research": [
+      "https://catsr.vse.gmu.edu/index.html",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "George Mason MICO Laboratory": [
+      "https://mason.gmu.edu/~xwang64/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://mason.gmu.edu/~xwang64/team.html"
+    ],
+    "George Mason Northern Virginia DFR Planning Study": [
+      "https://c5i.gmu.edu/2025/10/c5i-center-leads-drone-as-a-first-responder-study-for-northern-virginia/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "George Mason RobotiXX Laboratory": [
+      "https://people.cs.gmu.edu/~xxiao2/index.html",
+      "https://people.cs.gmu.edu/~xiao/xuesu_website_files/CV_Xiao.pdf"
+    ],
+    "George Mason SPARX": [
+      "https://electrical.gmu.edu/research/controls-and-robotics",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://electrical.gmu.edu/about/contact-us"
+    ],
+    "George Mason Starship Autonomous Delivery Fleet": [
+      "https://abs.gmu.edu/services/dining/transition-updates/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://abs.gmu.edu/about/"
+    ],
+    "George Mason University": [
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.gmu.edu/",
+      "https://www.gmu.edu/about/key-facts"
+    ],
+    "George Mason University Police UAS Team": [
+      "https://police.gmu.edu/records-and-reporting/uas-drone-flight-log/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://police.gmu.edu/about-us/contact-us/"
+    ],
+    "Germanna Community College": [
+      "https://www.germanna.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.germanna.edu/admissions/"
+    ],
+    "Germanna Community College Drone-UAV FAA Pilot Class": [
+      "https://courses.vccs.edu/colleges/germanna/courses/UMS-UnmannedSystems",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Gloucester County Sheriff's Office UAS Program": [
+      "https://pub-gloucesterva.escribemeetings.com/filestream.ashx?DocumentId=24451",
+      "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+      "https://gloucesterva.gov/sheriff"
+    ],
+    "Gordonsville Muni": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27GVE%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "HII Unmanned Systems Center of Excellence": [
+      "https://www.hii.com/news/unmanned-systems-center-of-excellence",
+      "https://www.hii.com/mission-technologies",
+      "https://www.hii.com/news/first-quarter-2021-earnings"
+    ],
+    "HUSH Aerospace": [
+      "https://www.vedp.org/news/home-business-more-400-years",
+      "https://www.hush.aero/contact-hush"
+    ],
+    "Hampden-Sydney College": [
+      "https://www.hsc.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.hsc.edu/admission-and-financial-aid/"
+    ],
+    "Hampton Joint Police and Fire UAS Unit": [
+      "https://www.hampton.gov/DocumentCenter/View/37936/557-UAS-Unmanned-Aerial-System-PDF",
+      "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+      "https://www.hampton.gov/directory"
+    ],
+    "Hampton Roads Alliance": [
+      "https://hamptonroadsalliance.com/wp-content/uploads/2025/01/Alliance-Board-Deck-September.pdf",
+      "https://hamptonroadsalliance.com/wp-content/uploads/2025/01/Minutes_Board-Meeting_April-19-2024.pdf",
+      "https://hamptonroadsalliance.com/"
+    ],
+    "Hampton Roads Exec": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27PVG%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Hampton University": [
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.hamptonu.edu/",
+      "https://home.hamptonu.edu/"
+    ],
+    "Hampton University Uncrewed Aircraft Systems Program": [
+      "https://home.hamptonu.edu/engineering/uas/",
+      "https://home.hamptonu.edu/engineering/contact/",
+      "https://home.hamptonu.edu/about/contact-hu/"
+    ],
+    "Hanover County Muni": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27OFP%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Hanover County Sheriff's Office sUAS Team": [
+      "https://www.hanoversheriff.com/412/sUAS-Team",
+      "https://www.hanoversheriff.com/directory.aspx"
+    ],
+    "Harrisonburg Police and Fire Drone and Robot Unit": [
+      "https://www.harrisonburgva.gov/SWAT",
+      "https://www.harrisonburgva.gov/contact-hpd"
+    ],
+    "Harrowgate Drone Park": [
+      "https://www.chesterfield.gov/163/Parks-and-Facilities",
+      "https://www.chesterfield.gov/Calendar.aspx?EID=4094",
+      "https://www.chesterfield.gov/Directory.aspx"
+    ],
+    "Haymarket Police Department Drone Program": [
+      "https://www.townofhaymarket.org/sites/default/files/fileattachments/town_council/meeting/11057/tc_regmtg_03_06_2023.pdf",
+      "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+      "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+    ],
+    "Henrico Fire Robotics Response Team": [
+      "https://henrico.gov/fire/about-us/specialty-teams/",
+      "https://henrico.gov/contact-us"
+    ],
+    "Henry County Sheriff's Office Drone Program": [
+      "https://www.henrycountyva.gov/AgendaCenter/ViewFile/Agenda/_01272026-344",
+      "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+    ],
+    "Heven AeroTech Headquarters": [
+      "https://hevenaerotech.com/",
+      "https://hevenaerotech.com/contact-us/"
+    ],
+    "Hollins University": [
+      "https://www.hollins.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.hollins.edu/admission/"
+    ],
+    "Hopewell Fire and EMS Drone Program": [
+      "https://www.hopewellva.gov/510/Operations",
+      "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+      "https://hopewellva.gov/Directory.aspx"
+    ],
+    "Hummel Fld": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27W75%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "IALR AgBOT Precision Agriculture Program": [
+      "https://www.ialr.org/plant-endophyte-research-center/areas-of-focus/",
+      "https://www.ialr.org/contact/"
+    ],
+    "ICI Services": [
+      "https://icisrvcs.com/news/2020/2/5/236/ici-services-to-support-navy-unmanned-surface-vehicle-development/index.html",
+      "https://www.icisrvcs.com/",
+      "https://icisrvcs.com/contact-us/"
+    ],
+    "Inertial Labs": [
+      "https://inertiallabs.com/inertial-labs-inc/",
+      "https://inertiallabs.com/inertial-labs-inc/contact-inertial-labs-team/"
+    ],
+    "Ingalls Fld": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27HSP%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Institute for Advanced Learning and Research": [
+      "https://www.ialr.org/",
+      "https://www.vedp.org/industry/unmanned-systems",
+      "https://www.ialr.org/contact/"
+    ],
+    "J Sargeant Reynolds Community College": [
+      "https://www.reynolds.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.reynolds.edu/register_for_classes/steps_to_register/default.aspx"
+    ],
+    "JMU Drone Challenge": [
+      "https://www.jmu.edu/jmuxlabs/courses/drones.shtml",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "JMU X-Labs": [
+      "https://www.jmu.edu/jmuxlabs",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "James City County Police Drone as First Responder Program": [
+      "https://www.jamescitycountyva.gov/m/newsflash/Home/Detail/6334",
+      "https://www.jamescitycountyva.gov/767/Police"
+    ],
+    "James Madison University": [
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.jmu.edu/index.shtml",
+      "https://www.jmu.edu/about/index.shtml"
+    ],
+    "Joint Base Myer-Henderson Hall": [
+      "https://home.army.mil/jbmhh/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Joint Expeditionary Base Little Creek-Fort Story": [
+      "https://cnrma.cnic.navy.mil/Installations/JEB-Little-Creek-Fort-Story/Contact-Us/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Kentland Experimental Aerial Systems Laboratory": [
+      "https://autonomyandrobotics.centers.vt.edu/groups/keas.html",
+      "https://www.cals.vt.edu/research/facilities.html"
+    ],
+    "King George County Public Safety Drone Program": [
+      "https://www.kinggeorgecountyva.gov/AgendaCenter/ViewFile/Minutes/_02032026-1454",
+      "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+    ],
+    "Lake Anna": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%277W4%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Lake Country Rgnl": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27W63%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Langley Air Force Base - Joint Base Langley-Eustis": [
+      "https://www.jble.af.mil/Home/Contact/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Laurel Ridge Community College": [
+      "https://www.laurelridge.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://laurelridge.edu/admissions-and-course-prerequisites/"
+    ],
+    "Laurel Ridge Community College Unmanned Systems Courses": [
+      "https://courses.vccs.edu/colleges/lfcc/courses/UMS-UnmannedSystems",
+      "https://laurelridge.edu/about-us/"
+    ],
+    "Lee County": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%270VG%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Leesburg Exec": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27JYO%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Leesburg Police UAS Team": [
+      "https://www.leesburgva.gov/departments/police/about-the-lpd/investigations-operational-support-bureau/specialty-units/unmaned-aircraft-systems-uas-team",
+      "https://www.leesburgva.gov/home/showpublisheddocument/32228/637032736900770000",
+      "https://www.leesburgva.gov/departments/police/about-the-lpd/general-orders"
+    ],
+    "Leidos": [
+      "https://investors.leidos.com/node/35791/pdf",
+      "https://investors.leidos.com/stockholder-resources/investor-faqs"
+    ],
+    "Liberty University": [
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.liberty.edu/",
+      "https://www.liberty.edu/about/"
+    ],
+    "Liberty University Aeronautics: Unmanned Aerial Systems BS": [
+      "https://www.liberty.edu/aeronautics/bachelors/unmanned-aircraft-operations/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Liberty University Aviation Maintenance: Unmanned Aerial Systems BS": [
+      "https://catalog.liberty.edu/undergraduate/colleges-schools/aeronautics/aviation-maintenance-major-bs/unmanned-aerial-systems-resident/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Liberty University Medium Unmanned Aerial Systems Certificate": [
+      "https://www.liberty.edu/aeronautics/certificates/medium-unmanned-aerial-systems/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.liberty.edu/about/contact-liberty-university/"
+    ],
+    "Liberty University School of Aeronautics": [
+      "https://www.liberty.edu/aeronautics/unmanned-aerial-systems/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Liberty University UAS Operational Experience": [
+      "https://www.liberty.edu/aeronautics/uas-operational-experience/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.liberty.edu/about/contact-liberty-university/"
+    ],
+    "Lockheed Martin Rotary and Mission Systems - Manassas": [
+      "https://www.lockheedmartin.com/en-us/who-we-are/business-areas/rotary-and-mission-systems/manassas-va.html",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Lonesome Pine": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27LNP%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Longbow Unmanned Systems Research and Test Center": [
+      "https://www.sbir.gov/portfolio/1664155",
+      "https://www.hampton.gov/Archive.aspx?ADID=3536",
+      "https://www.nianet.org/wp-content/uploads/2022/02/2020-NIA-annual-report.pdf"
+    ],
+    "Longwood SEED Autonomous Marine Project": [
+      "https://www.longwood.edu/news/2026/seed-entrepreneurship-experience/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "Longwood University": [
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.longwood.edu/",
+      "https://www.longwood.edu/about/"
+    ],
+    "Loudoun County Sheriff's Office Drone Unit": [
+      "https://sheriff.loudoun.gov/m/newsflash/home/detail/9418",
+      "https://sheriff.loudoun.gov/2364/Contact-Us"
+    ],
+    "Louisa County/Freeman Fld": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27LKU%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Lunenburg County": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27W31%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Luray Caverns": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27LUA%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Lynchburg Fire Department UAV Team": [
+      "https://www.lynchburgva.gov/ArchiveCenter/ViewFile/Item/64",
+      "https://lynchburgva.gov/Archive/ViewFile/Item/100"
+    ],
+    "Lynchburg Police Drone Unit": [
+      "https://lynchburgva.gov/DocumentCenter/View/4331",
+      "https://www.lynchburgva.gov/m/directory/department?did=54"
+    ],
+    "Lynchburg Rgnl/Preston Glenn Fld": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27LYH%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "MAG Aerospace": [
+      "https://www.magaero.com/connect/",
+      "https://www.magaero.com/history-and-growth/",
+      "https://www.magaero.com/technology-integration/"
+    ],
+    "MARS Unmanned Aircraft Systems Airfield": [
+      "https://www.vaspace.org/our-facilities",
+      "https://www.vaspace.org/about-us",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "MITRE National Range": [
+      "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range",
+      "https://www.mitre.org/sites/default/files/2024-07/PR-24-2208-MITRE-National-Range.pdf",
+      "https://www.mitre.org/resources/edge-lab"
+    ],
+    "Madison County Sheriff's Office UAS Program": [
+      "https://www.madisonco.virginia.gov/AgendaCenter/ViewFile/Agenda/_02102026-398",
+      "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+      "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+    ],
+    "Marine Corps Base Quantico": [
+      "https://www.quantico.marines.mil/About/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Marine Corps Counter-Drone Team": [
+      "https://www.tecom.marines.mil/In-the-News/Stories/News-Article-Display/Article/4538355/tecom-establishes-marine-corps-robotics-integration-group-and-counter-drone-team/",
+      "https://www.trngcmd.marines.mil/Units/Weapons-Training-Battalion/Contact-Us/"
+    ],
+    "Marine Corps Warfighting Laboratory": [
+      "https://www.marines.mil/News/News-Display/Article/746745/marine-corps-warfighting-lab-tests-autonomous-reconnaissance/",
+      "https://www.marines.mil/News/News-Display/Article/4299458/marine-corps-initiates-drone-task-force-summits-to-accelerate-uas-lethality/",
+      "https://www.mcwl.marines.mil/Welcome-to-MCWL/About-Us/"
+    ],
+    "Mary Baldwin University": [
+      "https://www.marybaldwin.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://marybaldwin.edu/admissions/"
+    ],
+    "Marymount University": [
+      "https://www.marymount.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.marymount.edu/Admissions"
+    ],
+    "Mason Innovation Exchange Autonomous Systems Short Courses": [
+      "https://www.mix.gmu.edu/mix-short-course-programs",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "Mc Laughlin": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%272G6%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Mecklenburg County Sheriff's Office Drone Team": [
+      "https://www.mecklenburgva.com/194/Sheriffs-Office",
+      "https://www.mecklenburgva.com/Directory.aspx"
+    ],
+    "Mecklenburg-Brunswick Rgnl": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27AVC%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Mid-Atlantic Aviation Partnership": [
+      "https://maap.ictas.vt.edu/About/about-us.html",
+      "https://www.vedp.org/industry/unmanned-systems",
+      "https://ictas.vt.edu/Facilities/ictascrc.html"
+    ],
+    "Mid-Atlantic Regional Spaceport": [
+      "https://www.vaspace.org/about-us",
+      "https://www.vedp.org/industry/unmanned-systems",
+      "https://www.vaspace.org/contact-us"
+    ],
+    "Middle Peninsula Rgnl": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27FYJ%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Montgomery County Sheriff's Office UAS Team": [
+      "https://www.montgomerycountyva.gov/1/departments-services/sheriffs-office/support-services",
+      "https://www.montgomerycountyva.gov/1/contact-us"
+    ],
+    "Mountain Empire": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27MKJ%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Mountain Empire Community College": [
+      "https://www.mecc.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.mecc.edu/step1/"
+    ],
+    "Mountain Empire Community College UAS Program": [
+      "https://courses.vccs.edu/colleges/mecc/courses/UMS-UnmannedSystems",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Mountain Gateway Community College": [
+      "https://www.mgcc.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.mgcc.edu/student-support"
+    ],
+    "Mountain Gateway Community College Unmanned Systems Courses": [
+      "https://courses.vccs.edu/colleges/dslcc/courses/UMS-UnmannedSystems",
+      "https://www.mgcc.edu/about"
+    ],
+    "NASA Langley Autonomy Incubator": [
+      "https://www.nasa.gov/centers-and-facilities/langley/inventing-the-future/",
+      "https://www.vedp.org/industry/unmanned-systems",
+      "https://www.nasa.gov/contact/"
+    ],
+    "NASA Langley CERTAIN": [
+      "https://csaob.larc.nasa.gov/roam/",
+      "https://www.nasa.gov/centers-and-facilities/langley/nasa-langley-drone-flying-site-open-for-testing/",
+      "https://www.nasa.gov/centers-and-facilities/langley/maps-directions/"
+    ],
+    "NASA Langley ROAM UAS Operations Center": [
+      "https://csaob.larc.nasa.gov/roam/",
+      "https://www.nasa.gov/contact/",
+      "https://csaob.larc.nasa.gov/"
+    ],
+    "NASA Langley Research Center": [
+      "https://www.nasa.gov/langley/about-langley-research-center/",
+      "https://www.vedp.org/industry/unmanned-systems",
+      "https://www.nasa.gov/centers-and-facilities/langley/maps-directions/"
+    ],
+    "NASA Langley UAS Test Range": [
+      "https://csaob.larc.nasa.gov/roam/",
+      "https://www.nasa.gov/centers-and-facilities/langley/nasa-langley-drone-flying-site-open-for-testing/",
+      "https://www.nasa.gov/contact/"
+    ],
+    "NASA Wallops Flight Facility": [
+      "https://www.nasa.gov/wallops/about/",
+      "https://www.vedp.org/industry/unmanned-systems",
+      "https://www.nasa.gov/wallops/visitor-center/plan-your-visit/"
+    ],
+    "NSWC Carderock Combatant Craft Division": [
+      "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Carderock/Who-We-Are/Norfolk-Virginia/",
+      "https://cnrma.cnic.navy.mil/Installations/JEB-Little-Creek-Fort-Story/Contact-Us/"
+    ],
+    "NSWC Dahlgren Outdoor Autonomy Laboratory": [
+      "https://www.navsea.navy.mil/Media/News/Article-View/Article/3886620/maximizing-resources-building-a-competitive-outdoor-autonomy-lab-environment/",
+      "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Who-We-Are/",
+      "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/What-We-Do/"
+    ],
+    "NSWC Dahlgren UAV Test Runway": [
+      "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/What-We-Do/",
+      "https://www.openstreetmap.org/copyright"
+    ],
+    "NSWCDD Dam Neck Activity": [
+      "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Dam-Neck/",
+      "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Who-We-Are/",
+      "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/What-We-Do/"
+    ],
+    "National Geospatial-Intelligence Agency Springfield": [
+      "https://www.nga.mil/index.html",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "National Institute of Aerospace": [
+      "https://www.nianet.org/",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Naval Air Station Oceana": [
+      "https://cnrma.cnic.navy.mil/Installations/NAS-Oceana/Contact-Us/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Naval Medical Center Portsmouth": [
+      "https://portsmouth.tricare.mil/About-Us/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf",
+      "https://portsmouth.tricare.mil/About-Us/Phone-Directory"
+    ],
+    "Naval Station Norfolk": [
+      "https://cnrma.cnic.navy.mil/Installations/NAVSTA-Norfolk/Contact-Us/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Naval Support Activity Hampton Roads": [
+      "https://cnrma.cnic.navy.mil/Installations/NSA-Hampton-Roads/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf",
+      "https://cnrma.cnic.navy.mil/About/Contact-Us/"
+    ],
+    "Naval Support Activity Northwest Annex": [
+      "https://cnrma.cnic.navy.mil/Installations/NSA-Hampton-Roads/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Naval Support Facility Dahlgren": [
+      "https://cnrma.cnic.navy.mil/Installations/NSA-South-Potomac/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Naval Surface Warfare Center Dahlgren Division": [
+      "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/What-We-Do/",
+      "https://www.navsea.navy.mil/Portals/103/Documents/NSWC_Dahlgren/Fact%20Sheets%202024/FNL_IA%20Fact%20Sheet.pdf",
+      "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Who-We-Are/"
+    ],
+    "Naval Weapons Station Yorktown": [
+      "https://cnrma.cnic.navy.mil/Installations/WPNSTA-Yorktown/Contact-Us/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Navy TALSA East Small UAS Training Facility": [
+      "https://www.navair.navy.mil/news/Navy-opens-doors-first-small-unmanned-aircraft-systems-training-facility/Tue-08022022-0923",
+      "https://www.navair.navy.mil/product/Family-Small-Unmanned-Aircraft-Systems",
+      "https://cnrma.cnic.navy.mil/Installations/JEB-Little-Creek-Fort-Story/Contact-Us/"
+    ],
+    "New College Institute": [
+      "https://newcollegeinstitute.org/",
+      "https://newcollegeinstitute.org/wp-content/uploads/2024/07/2023-Annual-Report-1.pdf",
+      "https://newcollegeinstitute.org/about-new-college-institute/"
+    ],
+    "New Kent County": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27W96%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "New London": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27W90%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "New Market": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%278W2%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "New River Community College": [
+      "https://www.nr.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.nr.edu/admissions/"
+    ],
+    "New River Community College sUAS Remote Pilot Ground School": [
+      "https://courses.vccs.edu/colleges/nrcc/courses/UMS-UnmannedSystems",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "New River Valley": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27PSK%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Newport News AirCommerce Park": [
+      "https://newportnewsva.com/business-neighborhoods/patrick-henry-corridor/",
+      "https://newportnewsva.com/wp-content/uploads/2022/07/NNEDA-Aerospace-Aviation-Flyer.pdf",
+      "https://newportnewsva.com/manufacturing-growth/"
+    ],
+    "Newport News Drones as First Responders Program": [
+      "https://www.nnva.gov/3269/Drones-as-First-Responders",
+      "https://www.nnva.gov/2394/Drone-Unit",
+      "https://www.nnva.gov/directory.aspx"
+    ],
+    "Newport News Marine Terminal": [
+      "https://www.portofvirginia.com/gateway/capabilities/",
+      "https://operations.portofvirginia.com/terminal-directions/",
+      "https://operations.portofvirginia.com/contact-us/"
+    ],
+    "Newport News Police and Fire Drone Unit": [
+      "https://www.nnva.gov/2394/Drone-Unit",
+      "https://www.nnva.gov/directory.aspx"
+    ],
+    "Newport News Shipbuilding": [
+      "https://www.hii.com/company-overview",
+      "https://www.vedp.org/industry/unmanned-systems",
+      "https://www.hii.com/contact"
+    ],
+    "Newport News/Williamsburg Intl": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27PHF%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Norfolk District, U.S. Army Corps of Engineers": [
+      "https://www.nao.usace.army.mil/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Norfolk Harbor Patrol Drone Capability": [
+      "https://www.norfolk.gov/6644/Harbor-Patrol-Unit",
+      "https://www.norfolk.gov/Directory.aspx"
+    ],
+    "Norfolk International Terminals": [
+      "https://www.portofvirginia.com/gateway/capabilities/",
+      "https://operations.portofvirginia.com/terminal-directions/",
+      "https://operations.portofvirginia.com/contact-us/"
+    ],
+    "Norfolk Intl": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27ORF%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Norfolk Naval Shipyard": [
+      "https://www.navsea.navy.mil/Home/Shipyards/Norfolk/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Norfolk Police UAS Team": [
+      "https://www.norfolk.gov/DocumentCenter/View/73566/CMO-Crime-Reduction-Strategies-Report_Final-Draft?bidId=",
+      "https://www.norfolk.gov/Directory.aspx",
+      "https://www.norfolk.gov/5729/About-Us"
+    ],
+    "Norfolk State Drone Photography Course": [
+      "https://catalog.nsu.edu/undergraduate/course-descriptions/fia/fia.pdf",
+      "https://www.nsu.edu/About/Contact-Us",
+      "https://www.nsu.edu/About"
+    ],
+    "Norfolk State Tactical Autonomy Research Program": [
+      "https://www.nsu.edu/News/2023/February/CSET-Good-News-Report-Jan-2023",
+      "https://www.nsu.edu/About/Contact-Us",
+      "https://www.nsu.edu/About"
+    ],
+    "Norfolk State University": [
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.nsu.edu/",
+      "https://www.nsu.edu/About"
+    ],
+    "Northern Virginia Community College": [
+      "https://www.nvcc.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.nvcc.edu/admissions/index.html"
+    ],
+    "ODU Drone Certificate Program": [
+      "https://www.odu.edu/iacs",
+      "https://www.odu.edu/about/contact"
+    ],
+    "ODU Institute for Autonomous and Connected Systems": [
+      "https://www.odu.edu/iacs",
+      "https://www.odu.edu/national-security",
+      "https://www.odu.edu/about/contact"
+    ],
+    "ODU Maritime Autonomous Systems Test Site": [
+      "https://www.odu.edu/article/beyond-boats-and-submarines-odu-city-of-norfolk-celebrate-the-opening-of-the-maritime",
+      "https://www.odu.edu/national-security/facilities-test-environments",
+      "https://www.odu.edu/sites/default/files/2026/documents/maritime-conference.pdf"
+    ],
+    "ODU Uncrewed Systems Design and Development Minor": [
+      "https://www.odu.edu/academics/programs/minor/uncrewed-systems-design-development",
+      "https://www.odu.edu/about/contact"
+    ],
+    "ODU Unmanned and Autonomous Vehicle Laboratory": [
+      "https://www.odu.edu/mechanical-aerospace-engineering/instructional-laboratories/uav-lab",
+      "https://www.vedp.org/industry/unmanned-systems",
+      "https://www.odu.edu/about/contact"
+    ],
+    "Occoquan Police Department Public Safety Drone Program": [
+      "https://occoquanva.gov/wp-content/uploads/2026/01/TC-Agenda-Packet-FULL-1-6-2026.pdf",
+      "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+      "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+    ],
+    "Old Dominion University": [
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.odu.edu/",
+      "https://www.odu.edu/about"
+    ],
+    "Old Dominion University UAS Operations Program": [
+      "https://www.odu.edu/risk-management/advisories/uas-drones",
+      "https://www.odu.edu/about/contact"
+    ],
+    "Orange County": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27OMH%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Orange County Sheriff's Office Drone Team": [
+      "https://www.orangecountyva.gov/sheriff",
+      "https://www.orangecountyva.gov/DocumentCenter/View/5121/2026-Citizens-Police-Academy-Overview-and-Application?bidId=",
+      "https://orangecountyva.gov/1126/Youth-Academy"
+    ],
+    "P1 Technologies Keltech Division": [
+      "https://www.p1tec.com/",
+      "https://www.vedp.org/news/industries-future-unmanned-systems",
+      "https://www.p1tec.com/contact-us"
+    ],
+    "Parsons": [
+      "https://www.parsons.com/2026/06/parsons-cuas-solutions-strengthen-national-security-and-protect-critical-infrastructure/",
+      "https://www.parsons.com/contact-us/"
+    ],
+    "Patrick & Henry Community College": [
+      "https://www.patrickhenry.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.patrickhenry.edu/how-to-get-started/how-to-apply"
+    ],
+    "Patrick Henry College": [
+      "https://www.phc.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.phc.edu/admissions"
+    ],
+    "Paul D Camp Community College": [
+      "https://www.pdc.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.pdc.edu/attend/signing-up-for-classes/how-to-become-a-student/"
+    ],
+    "Perrone Robotics": [
+      "https://www.vedp.org/news/home-business-more-400-years",
+      "https://www.perronerobotics.com/about",
+      "https://www.perronerobotics.com/deployments"
+    ],
+    "Piedmont Virginia Community College": [
+      "https://www.pvcc.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.pvcc.edu/admissions/steps-to-enrollment"
+    ],
+    "Piedmont Virginia Community College sUAS Public Safety Courses": [
+      "https://www.pvcc.edu/programs/remote-pilot-airman",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Portsmouth Marine Terminal": [
+      "https://www.portofvirginia.com/gateway/capabilities/",
+      "https://operations.portofvirginia.com/terminal-directions/",
+      "https://operations.portofvirginia.com/contact-us/"
+    ],
+    "Powhatan County Emergency Management UAS Program": [
+      "https://www.powhatanva.gov/DocumentCenter/View/8410/Emergency-Operations-Plan-2024",
+      "https://www.powhatanva.gov/234/Emergency-Management"
+    ],
+    "Prince Edward County Emergency Management Drone Program": [
+      "https://www.co.prince-edward.va.us/News-Article/Pyle-Named-County-Emergency-Management-Coordinator",
+      "https://www.co.prince-edward.va.us/files/assets/county/v/1/govboard/documents/board-meetings/december-12-2023-regular-meeting-minutes-agenda.pdf",
+      "https://www.co.prince-edward.va.us/Departments/Emergency-Management"
+    ],
+    "Prince William County Police sUAS Team": [
+      "https://www.pwcva.gov/news/pwcpd-spotlight-departments-suas-team-serving-sky/",
+      "https://www.pwcva.gov/assets/2024-03/2023%20Annual%20Report.pdf"
+    ],
+    "QinetiQ US Headquarters": [
+      "https://www.qinetiq.com/en-us/who-we-are/our-locations",
+      "https://www.qinetiq.com/en-us/contact-us"
+    ],
+    "Radford Army Ammunition Plant": [
+      "https://www.jmc.army.mil/Radford/About.aspx",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Radford City Police Department Drone Program": [
+      "https://www.radfordva.gov/AgendaCenter/ViewFile/Minutes/_01272026-805",
+      "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+      "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+    ],
+    "Radford University": [
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.radford.edu/",
+      "https://www.radford.edu/about/"
+    ],
+    "Radford University First Responder UAS Capability": [
+      "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+      "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
+      "https://www.radford.edu/admissions/contact/index.html"
+    ],
+    "Radford University Unmanned Aerial Systems Minor": [
+      "https://www.radford.edu/registrar/course-descriptions/unmanned-aerial-systems/index.html",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "Randolph College": [
+      "https://www.randolphcollege.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.randolphcollege.edu/admission/"
+    ],
+    "Randolph-Macon College": [
+      "https://www.rmc.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.rmc.edu/admissions-and-aid/"
+    ],
+    "RapidFlight UAS Manufacturing Headquarters": [
+      "https://aevex.com/aevex-launches-drone-factory-of-the-future-and-expands-its-robust-uas-portfolio-through-the-acquisition-of-select-assets-from-rapidflight/",
+      "https://www.prnewswire.com/news-releases/rapidflight-celebrates-grand-opening-of-uas-3d-manufacturing-headquarters-in-manassas-virginia-301884344.html",
+      "https://choosemanassas.org/2022/10/2022-q3-market-report/"
+    ],
+    "Rappahannock Community College": [
+      "https://www.rappahannock.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.rappahannock.edu/services-and-support/navigating-college/admission-and-records.html"
+    ],
+    "Regent University": [
+      "https://www.regent.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.regent.edu/admissions-aid/"
+    ],
+    "Richard Bland College": [
+      "https://www.rbc.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.rbc.edu/admissions/administrative-offices/office-of-admissions/"
+    ],
+    "Richard Bland College Uncrewed Aerial Systems Certificate": [
+      "https://www.rbc.edu/academics/programs-degree/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.rbc.edu/why-rbc/faculty-staff/staff/"
+    ],
+    "Richmond Exec/Chesterfield County": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27FCI%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Richmond Intl": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27RIC%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Richmond Marine Terminal": [
+      "https://www.portofvirginia.com/gateway/capabilities/",
+      "https://www.portofvirginia.com/contact/"
+    ],
+    "Richmond Police sUAV Program": [
+      "https://rva.gov/sites/default/files/2024-02/GO%2006-32%20Unmanned%20Aerial%20Vehicle.pdf",
+      "https://rva.gov/police",
+      "https://www.rva.gov/police/general-orders/"
+    ],
+    "Rivanna Station": [
+      "https://home.army.mil/belvoir/contact/phonebook",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Roanoke College": [
+      "https://www.roanoke.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.roanoke.edu/admissions"
+    ],
+    "Roanoke County Fire and Rescue Drone Program": [
+      "https://www.roanokecountyva.gov/DocumentCenter/View/22361/2021-Community-Strategic-Plan-Annual-Report",
+      "https://www.roanokecountyva.gov/DocumentCenter/View/17041/2019-State-of-the-County-Remarks?bidId=",
+      "https://www.roanokecountyva.gov/75/Fire-Rescue"
+    ],
+    "Roanoke County Police UAV Team": [
+      "https://www.roanokecountyva.gov/DocumentCenter/View/1061/Agenda-with-Reports",
+      "https://www.roanokecountyva.gov/83/Police"
+    ],
+    "Roanoke/Blacksburg Rgnl (Woodrum Fld)": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27ROA%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Scout Space": [
+      "https://www.scout.space/",
+      "https://www.sbir.gov/portfolio/1543541",
+      "https://www.scout.space/contact"
+    ],
+    "Sentinel Robotic Solutions": [
+      "https://www.navair.navy.mil/osbp/node/11301",
+      "https://www.navair.navy.mil/osbp/node/171"
+    ],
+    "Shannon": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27EZF%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Shenandoah Drone Assembly VR Training": [
+      "https://www.su.edu/blog/2023/06/12/shenandoah-vr-faculty-students-creating-drone-assembly-training-program/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.su.edu/about-us/contact-us/"
+    ],
+    "Shenandoah University": [
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.su.edu/",
+      "https://www.su.edu/about/"
+    ],
+    "Shenandoah Valley Aviation Technology Park": [
+      "https://cspdc.org/2023/11/27/shd-aviation-tech-park-holds-ribbon-cutting/",
+      "https://cspdc.org/2023/06/07/shenandoah-valley-aviation-technology-park-hangars-near-completion/"
+    ],
+    "Shenandoah Valley Rgnl": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27SHD%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Smith Mountain Lake": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27W91%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Southern Virginia University": [
+      "https://svu.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://svu.edu/admissions/"
+    ],
+    "Southside Virginia Community College": [
+      "https://www.southside.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://southside.edu/admissions"
+    ],
+    "Southwest Virginia Community College": [
+      "https://sw.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://sw.edu/admissions/"
+    ],
+    "Southwest Virginia Drone Soccer Program": [
+      "https://www.swcenter.edu/wp-content/uploads/2025/07/2024Dec12_Minutes_FINAL.pdf",
+      "https://www.swcenter.edu/wp-content/uploads/2024/10/FY-23-SWVHEC-Annual-Report.pdf",
+      "https://www.swcenter.edu/wp-content/uploads/2024/07/December-10-2020-Minutes.pdf"
+    ],
+    "Spotsylvania Regional Public Safety UAS Program": [
+      "https://www.spotsylvania.va.us/DocumentCenter/View/20535/May-19-2022---No-Quorum",
+      "https://www.spotsylvania.va.us/DocumentCenter/View/4833/Minutes-02-27-2018?bidId=",
+      "https://www.spotsylvania.va.us/1036/Public-Safety"
+    ],
+    "Stafford County Sheriff's Office UAS Team": [
+      "https://www.staffordsheriff.com/content/about/fieldoperations.cfm",
+      "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+    ],
+    "Stafford Regional Airport AAM Integration Project Site": [
+      "https://doav.virginia.gov/advanced_air_mobility/",
+      "https://doav.virginia.gov/wp-content/uploads/Files/DocumentLibrary/Stafford_Warrenton_Winchester_Project.pdf",
+      "https://doav.virginia.gov/airport_sponsors/"
+    ],
+    "Staunton Police Department UAS Program": [
+      "https://www.ci.staunton.va.us/Home/Components/MeetingsManager/MeetingAgenda/ShowPrimaryDocument/?agendaID=1054&includeTrash=False&isPub=True",
+      "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+      "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+    ],
+    "Suffolk Exec": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27SFQ%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Suffolk Police UAS Unit": [
+      "https://www.suffolkva.us/directory.aspx?EID=60",
+      "https://www.suffolkva.us/directory",
+      "https://www.suffolkva.us/Directory.aspx?did=28"
+    ],
+    "Surface Combat Systems Center Wallops Island": [
+      "https://www.navsea.navy.mil/Home/SCSC/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "Sweet Briar College": [
+      "https://www.sbc.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.sbc.edu/admissions/"
+    ],
+    "Tangier Island": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27TGI%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Tappahannock/Essex County": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27XSA%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Tazewell County": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27JFZ%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "The Judge Advocate General's Legal Center and School": [
+      "https://tjaglcs.army.mil/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "The Pentagon": [
+      "https://www.defense.gov/Pentagon-Tours/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "The Port of Virginia": [
+      "https://www.portofvirginia.com/gateway/capabilities/",
+      "https://www.portofvirginia.com/contact/"
+    ],
+    "Tidewater Community College": [
+      "https://www.tcc.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.tcc.edu/admission"
+    ],
+    "Tidewater Community College Unmanned Systems Courses": [
+      "https://courses.vccs.edu/colleges/tcc/courses/UMS-UnmannedSystems",
+      "https://www.tcc.edu/about-tcc/contact-us",
+      "https://www.tcc.edu/come-to-tcc/chesapeake-campus/"
+    ],
+    "Torc Robotics": [
+      "https://torc.ai/about-us/blacksburg/",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Tri Cities Exec/Dinwiddie County": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27PTB%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Twin County": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27HLX%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "U.S. Coast Guard Base Portsmouth": [
+      "https://www.atlanticarea.uscg.mil/Our-Organization/District-Units/East-District/Sector-Virginia/",
+      "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+    ],
+    "UVA Bio-Inspired Engineering Research Laboratory": [
+      "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/research/robotics-dynamics-and-autonomous-systems",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/people/mae-staff"
+    ],
+    "UVA Coastal Research Center UAS Operations": [
+      "https://abcrc.virginia.edu/files/abcrc/files/coastal_research_center___drone_pilot_compliance_checklist.pdf",
+      "https://abcrc.virginia.edu/permits-access-drones",
+      "https://abcrc.virginia.edu/research-infrastructure-facilities"
+    ],
+    "UVA Link Lab": [
+      "https://www.engineering.virginia.edu/labs-groups/link-lab/research/robotics-and-autonomous-systems",
+      "https://engineering.virginia.edu/labs-groups/link-lab/visit"
+    ],
+    "UVA Robotics and Autonomous Systems Research": [
+      "https://www.engineering.virginia.edu/labs-groups/link-lab/research/robotics-and-autonomous-systems",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "UVA Robotics and Embedded Systems Focus Path": [
+      "https://engineering.virginia.edu/department/electrical-and-computer-engineering/robotics-and-embedded-systems",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://engineering.virginia.edu/department/electrical-and-computer-engineering/people/staff"
+    ],
+    "UVA Robotics, Dynamics, and Autonomous Systems": [
+      "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/research/robotics-dynamics-and-autonomous-systems",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/people/mae-staff"
+    ],
+    "UVA Wise STREAMWISE Robot Drone League": [
+      "https://www.uvawise.edu/news/2025/10/empowering-next-generation-innovators-through-streamwise",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.uvawise.edu/directory"
+    ],
+    "Universal Solutions International": [
+      "https://usi-inc.com/",
+      "https://usi-inc.com/contact-us/"
+    ],
+    "University of Lynchburg": [
+      "https://www.lynchburg.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.lynchburg.edu/undergraduate-admission/"
+    ],
+    "University of Mary Washington": [
+      "https://www.umw.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.umw.edu/admissions/"
+    ],
+    "University of Richmond": [
+      "https://www.richmond.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://admissions.richmond.edu/process/index.html"
+    ],
+    "University of Virginia": [
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.virginia.edu/",
+      "https://www.virginia.edu/about-uva/"
+    ],
+    "University of Virginia UAS Operations Program": [
+      "https://uvaemergency.virginia.edu/unmanned-aircraft-uas/operating-uas-uva",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://uvaemergency.virginia.edu/about-us/contact"
+    ],
+    "University of Virginia's College at Wise": [
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.uvawise.edu/",
+      "https://www.uvawise.edu/about"
+    ],
+    "VCU ARVL Robotic Drone System": [
+      "https://arvl.lab.vcu.edu/capabilities-and-equipment/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://arvl.lab.vcu.edu/"
+    ],
+    "VCU Autonomous Robots and Vehicles Laboratory": [
+      "https://arvl.lab.vcu.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "VCU Robotics and Autonomous Systems Engineering BS": [
+      "https://news.vcu.edu/article/vcu-to-offer-new-undergraduate-degree-in-robotics-and-autonomous-systems-engineering",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "VCU Robotics and Autonomous Systems Group": [
+      "https://arvl.lab.vcu.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "VIMS Autonomous Systems Laboratory": [
+      "https://www.vims.edu/people/patterson_mr/",
+      "https://www.vims.edu/contactus/index.php",
+      "https://www.vims.edu/intranet/street_addresses/"
+    ],
+    "VIMS Collaboratory for Physical Oceanography": [
+      "https://www.vims.edu/research/units/labgroups/c4po/",
+      "https://www.vims.edu/intranet/street_addresses/",
+      "https://www.vims.edu/contactus/index.php"
+    ],
+    "VIMS Harmful Algal Bloom Drone Monitoring": [
+      "https://www.vims.edu/bayinfo/habs/tech/",
+      "https://www.vims.edu/contactus/index.php",
+      "https://www.vims.edu/intranet/street_addresses/"
+    ],
+    "VMI Drone Detection and Counter-UAS Research": [
+      "https://www.vmi.edu/news/headlines/2025-2026/drone-detection-focus-of-cadet-research.php",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "Virginia Advanced Air Mobility Alliance": [
+      "https://vipc.org/initiatives/virginia-unmanned-systems-center/",
+      "https://vipc.org/press/press-kit/",
+      "https://vipc.org/initiatives/strategic-initiatives/"
+    ],
+    "Virginia Advanced Air Mobility Program": [
+      "https://doav.virginia.gov/advanced_air_mobility/",
+      "https://doav.virginia.gov/agency-directory/"
+    ],
+    "Virginia Automated Corridors": [
+      "https://www.vtti.vt.edu/facilities/vac.html",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Virginia Commonwealth University": [
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.vcu.edu/",
+      "https://www.vcu.edu/about-vcu/"
+    ],
+    "Virginia Commonwealth University UAS Operations Program": [
+      "https://healthsafety.vcu.edu/operational-risk/unmanned-aircraft-system/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://healthsafety.vcu.edu/about/staff-directory/"
+    ],
+    "Virginia Community College System Unmanned Systems Curriculum": [
+      "https://courses.vccs.edu/courses/UMS-UnmannedSystems",
+      "https://www.vccs.edu/about/",
+      "https://www.vccs.edu/find-your-community-college/"
+    ],
+    "Virginia Conservation Police UAS Program": [
+      "https://dwr.virginia.gov/wp-content/uploads/media/Virginia-Conservation-Police-Annual-Report-2024.pdf",
+      "https://dwr.virginia.gov/wp-content/uploads/media/Virginia-Conservation-Police-Annual-Report-2022.pdf",
+      "https://dwr.virginia.gov/wp-content/uploads/media/10272021-LE-Committee-Meeting-Materials.pdf"
+    ],
+    "Virginia Department of Aviation": [
+      "https://doav.virginia.gov/advanced_air_mobility/",
+      "https://vipc.org/virginia-launches-advanced-air-mobility-and-unmanned-systems-test-site-program/"
+    ],
+    "Virginia Department of Forestry UAV Program": [
+      "https://dof.virginia.gov/user_directory/jason-a-braunstein/",
+      "https://www.dof.virginia.gov/about/agency-directory/"
+    ],
+    "Virginia Department of Transportation UAS Program": [
+      "https://vipc.org/initiatives/virginia-unmanned-systems-center/",
+      "https://www.vdot.virginia.gov/media/vdotvirginiagov/doing-business/technical-guidance-and-support/technical-guidance-documents/location-and-design/migrated/iim/IIM264_acc.pdf",
+      "https://www.vdot.virginia.gov/doing-business/technical-guidance-and-support/location-and-design/geospatial-program/"
+    ],
+    "Virginia Economic Development Partnership": [
+      "https://www.vedp.org/industry/unmanned-systems",
+      "https://www.vedp.org/contact-us"
+    ],
+    "Virginia First Responder Unmanned Aircraft Trade and Replace Program": [
+      "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
+      "https://www.dcjs.virginia.gov/about-dcjs/contact-us"
+    ],
+    "Virginia Flight Information Exchange": [
+      "https://doav.virginia.gov/aviation_programs_resources/",
+      "https://doav.virginia.gov/wp-content/uploads/Files/DocumentLibrary/va-fix-concept-paper-july-2020---copyright-final-publication.pdf",
+      "https://doav.virginia.gov/wp-content/uploads/Files/DocumentLibrary/DOAVMVI2024Reportv2.0.pdf"
+    ],
+    "Virginia Highlands": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27VJI%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Virginia Highlands Community College": [
+      "https://www.vhcc.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.vhcc.edu/start-vhcc"
+    ],
+    "Virginia Highlands Community College Small UAS Certificate": [
+      "https://www.vhcc.edu/small-unmanned-aerial-systems-suas",
+      "https://www.vhcc.edu/contact-us"
+    ],
+    "Virginia Inland Port": [
+      "https://www.portofvirginia.com/gateway/capabilities/",
+      "https://www.portofvirginia.com/contact/"
+    ],
+    "Virginia Innovation Partnership Corporation": [
+      "https://vipc.org/initiatives/virginia-unmanned-systems-center/",
+      "https://vipc.org/initiatives/strategic-initiatives/",
+      "https://vipc.org/press/press-kit/"
+    ],
+    "Virginia Institute for Spaceflight and Autonomy": [
+      "https://www.odu.edu/research/enterprise-research-and-innovation",
+      "https://www.vedp.org/industry/unmanned-systems",
+      "https://www.odu.edu/about/contact"
+    ],
+    "Virginia Institute of Marine Science": [
+      "https://www.vims.edu/about/at_a_glance/",
+      "https://www.vedp.org/industry/unmanned-systems",
+      "https://www.vims.edu/intranet/street_addresses/"
+    ],
+    "Virginia International Gateway": [
+      "https://www.portofvirginia.com/gateway/capabilities/",
+      "https://operations.portofvirginia.com/terminal-directions/",
+      "https://operations.portofvirginia.com/contact-us/"
+    ],
+    "Virginia International Raceway Automated Vehicle Test Environment": [
+      "https://www.vtti.vt.edu/facilities/vir.html",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Virginia Military Institute": [
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.vmi.edu/",
+      "https://www.vmi.edu/about/"
+    ],
+    "Virginia Modeling, Analysis and Simulation Center": [
+      "https://digitalcommons.odu.edu/vmasc/",
+      "https://www.vedp.org/industry/unmanned-systems",
+      "https://www.odu.edu/sites/default/files/documents/nutrient-management-plan.pdf"
+    ],
+    "Virginia Peninsula Community College": [
+      "https://vpcc.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://vpcc.edu/services/enrollment"
+    ],
+    "Virginia Peninsula Community College Drone Flight Technician Certificate": [
+      "https://www.vpcc.edu/program/small-unmanned-aircraft-systems-drone-flight-technician/",
+      "https://www.vpcc.edu/contact-us",
+      "https://www.vpcc.edu/about/locations/hampton-campus/"
+    ],
+    "Virginia Public Safety Innovation Center": [
+      "https://vipc.org/initiatives/virginia-unmanned-systems-center/",
+      "https://vipc.org/initiatives/strategic-initiatives/",
+      "https://vipc.org/press/press-kit/"
+    ],
+    "Virginia Smart Community Testbed": [
+      "https://vatestbed.com/projects",
+      "https://vatestbed.com/",
+      "https://vatestbed.com/about"
+    ],
+    "Virginia Smart Road": [
+      "https://www.vtti.vt.edu/facilities/virginia-smart-roads.html",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Virginia Space Grant Consortium Drone Academies": [
+      "https://vsgc.odu.edu/geoted-uas/",
+      "https://www.nasa.gov/learning-resources/national-space-grant-college-and-fellowship-project/consortium-directors/"
+    ],
+    "Virginia Spaceport Authority": [
+      "https://www.vaspace.org/our-facilities",
+      "https://www.vaspace.org/contact-us"
+    ],
+    "Virginia State Police UAS Program": [
+      "https://vsp.virginia.gov/about-us/department-history/",
+      "https://vsp.virginia.gov/about-us/"
+    ],
+    "Virginia State University": [
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.vsu.edu/",
+      "https://www.vsu.edu/about/"
+    ],
+    "Virginia State University UAS Operations Program": [
+      "https://www.vsu.edu/files/docs/policies/8000/use-unmanned-aerial-systems-drones.pdf",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "Virginia Tech": [
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.vt.edu/",
+      "https://www.vt.edu/about.html"
+    ],
+    "Virginia Tech Advanced Control Systems Lab": [
+      "https://www.ise.vt.edu/research/labs/advanced-control-systems-lab.html",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "Virginia Tech Autonomous Systems and Control Laboratory": [
+      "https://archive.vtmag.vt.edu/winter10/feature1.html",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Virginia Tech Autonomy and Robotics": [
+      "https://autonomyandrobotics.centers.vt.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Virginia Tech Center for Marine Autonomy and Robotics": [
+      "https://marinerobotics.centers.vt.edu/index.html",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "Virginia Tech Counter UAS Research and Testing Center": [
+      "https://news.vt.edu/articles/2025/04/research-counteruascenter.html",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "Virginia Tech Drone Park": [
+      "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Virginia Tech Eastern Shore AREC Drone Application Research": [
+      "https://www.arec.vaes.vt.edu/content/dam/arec_vaes_vt_edu/eastern-shore/newsletter/The%20Stalk%20-%20July%202024.pdf",
+      "https://www.arec.vaes.vt.edu/arec/eastern-shore/people/vijay-singh.html",
+      "https://www.arec.vaes.vt.edu/arec/eastern-shore.html"
+    ],
+    "Virginia Tech GobbleBot Autonomous Delivery Robot": [
+      "https://idpro.icat.vt.edu/projects.html",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "Virginia Tech Grain Crop Drone Research Program": [
+      "https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/spes-747.html",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "Virginia Tech Hume Center for National Security and Technology": [
+      "https://hume.vt.edu/about.html",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Virginia Tech MADE": [
+      "https://made.vt.edu/robotics-autonomy.html",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "Virginia Tech Mission Systems Division": [
+      "https://nationalsecurity.vt.edu/research/mission-systems-division.html",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "Virginia Tech RoboGrinder": [
+      "https://idpro.icat.vt.edu/projects.html",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "Virginia Tech SpaceDrones Laboratory": [
+      "https://spacedrones.aoe.vt.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "Virginia Tech Transportation Institute": [
+      "https://www.vtti.vt.edu/about/about-vtti.html",
+      "https://www.vedp.org/industry/unmanned-systems",
+      "https://www.vtti.vt.edu/contact/index.html"
+    ],
+    "Virginia Tech Uncrewed Systems Laboratory": [
+      "https://usl.me.vt.edu/projects.html",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "Virginia Tech/Montgomery Exec": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27BCB%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Virginia UAS": [
+      "https://virginiauas.com/",
+      "https://virginiauas.com/home/"
+    ],
+    "Virginia Union University": [
+      "https://www.vuu.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.vuu.edu/admissions-at-union/apply-online"
+    ],
+    "Virginia University of Lynchburg": [
+      "https://www.vul.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+    ],
+    "Virginia Unmanned Systems Center": [
+      "https://vipc.org/initiatives/virginia-unmanned-systems-center/",
+      "https://vipc.org/contact-us/"
+    ],
+    "Virginia Wesleyan University": [
+      "https://www.vwu.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.vwu.edu/enrollment-aid/"
+    ],
+    "Virginia Western Autonomous Vehicle Technology Certificate": [
+      "https://www.virginiawestern.edu/academics/mechatronics/autonomous-vehicle-technology/",
+      "https://www.virginiawestern.edu/academics/mechatronics/"
+    ],
+    "Virginia Western Community College": [
+      "https://www.virginiawestern.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.virginiawestern.edu/get-started/"
+    ],
+    "Volvo Trucks New River Valley Plant": [
+      "https://www.volvogroup.com/en/about-us/organization/our-production-facilities/new-river-valley-plant.html",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Wakefield Muni": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27AKQ%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Wallops Research Park": [
+      "https://www.accomack.gov/614/Background-Timeline",
+      "https://www.accomack.gov/692/Aerospace",
+      "https://www.nasa.gov/wp-content/uploads/2024/10/wallops-research-park-fea-fonsi.pdf"
+    ],
+    "Waltrip Williamsburg Exec Airport": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27JGG%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Warrenton/Fauquier": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27HWY%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Washington Exec/Stafford Rgnl": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27RMN%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Washington and Lee University": [
+      "https://www.wlu.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.wlu.edu/admissions"
+    ],
+    "William & Mary": [
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.wm.edu/",
+      "https://www.wm.edu/about/"
+    ],
+    "William M Tuck": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27W78%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Winchester Emergency Management sUAS Program": [
+      "https://www.winchesterva.gov/files/assets/public/v/1/finance/fy23_budget_book.pdf",
+      "https://www.winchesterva.gov/files/assets/public/v/1/finance/fy26-budget-7.24.25-1.pdf",
+      "https://www.winchesterva.gov/Government/Departments/Emergency-Management"
+    ],
+    "Winchester Rgnl": [
+      "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27OKV%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "https://doav.virginia.gov/airport_sponsors/",
+      "https://doav.virginia.gov/airport-directory/"
+    ],
+    "Wing Christiansburg Drone Delivery Program": [
+      "https://wing.com/news/wing-and-doordash-expand-drone-delivery",
+      "https://www.vedp.org/industry/unmanned-systems"
+    ],
+    "Wise County Sheriff's Office Drone Program": [
+      "https://www.wisecounty.org/AgendaCenter/ViewFile/Agenda/_02122026-671",
+      "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+      "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+    ],
+    "Wythe County Sheriff's Office Drone Program": [
+      "https://www.wytheco.org/AgendaCenter/ViewFile/Agenda/_01272026-119",
+      "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+      "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+    ],
+    "Wytheville Community College": [
+      "https://www.wcc.vccs.edu/",
+      "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+      "https://www.wcc.vccs.edu/admissions"
+    ],
+    "Xelevate Leesburg Unmanned Systems Facility": [
+      "https://xelevateus.com/leesburg-virginia/",
+      "https://xelevateus.com/contact/"
+    ],
+    "York County ROVER Team": [
+      "https://www.yorkcounty.gov/1874/The-ROVER-Team",
+      "https://www.yorkcounty.gov/1024/Administrative-Services"
+    ],
+    "Zenith Aerotech": [
+      "https://zenithaerotech.com/about-us-tethered-drone/",
+      "https://zenithaerotech.com/tethered-drone-contact-us/"
+    ]
+  },
+  "reviewed_at": "2026-08-21"
 }

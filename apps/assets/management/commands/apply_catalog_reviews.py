@@ -42,6 +42,7 @@ class Command(BaseCommand):
         reviewed_at = timezone.make_aware(datetime.combine(reviewed_on, time(hour=12)))
         verified_assets = 0
         verified_sources = 0
+        supplemented_assets = 0
         follow_ups = 0
         skipped = 0
 
@@ -55,7 +56,10 @@ class Command(BaseCommand):
             marker = f"{REVIEW_COMMENT_PREFIX} {key}"
             if asset.review_comments.filter(body__startswith=marker).exists():
                 continue
-            if asset.reviewed_at is not None:
+            has_prior_catalog_review = asset.review_comments.filter(
+                body__startswith=REVIEW_COMMENT_PREFIX
+            ).exists()
+            if asset.reviewed_at is None and has_prior_catalog_review:
                 skipped += 1
                 continue
 
@@ -69,45 +73,66 @@ class Command(BaseCommand):
                 )
                 skipped += 1
                 continue
+            if any(
+                source.verification_status in {"stale", "rejected"}
+                or source.link_review_status == Source.LinkReviewStatus.NEEDS_REPLACEMENT
+                for source in sources
+            ):
+                self.stderr.write(
+                    self.style.WARNING(
+                        f"Skipped {asset_name}: a selected source has a later staff warning."
+                    )
+                )
+                skipped += 1
+                continue
 
             for source in sources:
                 source.verification_status = "verified"
                 source.last_verified_at = reviewed_on
                 source.link_review_status = Source.LinkReviewStatus.ACCEPTED
                 source.link_review_notes = (
-                    f"Official public source manually reviewed for the Tier 1 catalog audit "
+                    f"Official public source reviewed for the full catalog audit "
                     f"on {reviewed_on:%Y-%m-%d}."
                 )
-                source._change_reason = "Source verified in the Tier 1 public-source audit."
+                source._change_reason = "Source verified in the full public-source catalog audit."
                 source.save()
                 verified_sources += 1
 
-            asset.status = Asset.Status.PUBLISHED
-            asset.visibility = Asset.Visibility.PUBLIC
-            asset.last_verified_at = reviewed_on
-            asset.reviewed_at = reviewed_at
-            asset.reviewed_by = None
-            asset.review_assignee = None
-            asset.review_due_at = None
-            asset.review_priority = Asset.ReviewPriority.NORMAL
-            if not asset.review_notes:
-                asset.review_notes = (
-                    "Tier 1 catalog review confirmed the record's identity, Virginia location, "
-                    "and described unmanned-systems role against the listed official sources."
+            if asset.reviewed_at is None:
+                asset.status = Asset.Status.PUBLISHED
+                asset.visibility = Asset.Visibility.PUBLIC
+                asset.last_verified_at = reviewed_on
+                asset.reviewed_at = reviewed_at
+                asset.reviewed_by = None
+                asset.review_assignee = None
+                asset.review_due_at = None
+                asset.review_priority = Asset.ReviewPriority.NORMAL
+                if not asset.review_notes:
+                    asset.review_notes = (
+                        "Full catalog review confirmed the record's identity, Virginia location, "
+                        "and described unmanned-systems role against the listed official sources."
+                    )
+                asset.published_at = asset.published_at or reviewed_at
+                asset._change_reason = (
+                    "Full-catalog editorial verification completed from official sources."
                 )
-            asset.published_at = asset.published_at or reviewed_at
-            asset._change_reason = "Tier 1 editorial verification completed from official sources."
-            asset.save()
+                asset.save()
+                verified_assets += 1
+                review_summary = (
+                    "Confirmed the named entity, Virginia location, and described "
+                    "unmanned-systems role"
+                )
+            else:
+                supplemented_assets += 1
+                review_summary = "Added newly reviewed official evidence to the existing review"
             AssetReviewComment.objects.create(
                 asset=asset,
                 author=None,
                 body=(
-                    f"{marker}\nReviewed {reviewed_on:%Y-%m-%d}. Confirmed the named entity, "
-                    "Virginia location, and described unmanned-systems role against: "
+                    f"{marker}\nReviewed {reviewed_on:%Y-%m-%d}. {review_summary} against: "
                     + ", ".join(source_urls)
                 ),
             )
-            verified_assets += 1
 
         for asset_name, reason in manifest.get("follow_up_assets", {}).items():
             asset = Asset.objects.filter(name=asset_name).first()
@@ -134,7 +159,9 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.SUCCESS(
-                f"Applied {verified_assets} Tier 1 asset reviews and {verified_sources} source "
-                f"reviews; flagged {follow_ups} unresolved records; skipped {skipped}."
+                f"Applied {verified_assets} full-catalog asset reviews and "
+                f"{verified_sources} source "
+                f"reviews; supplemented {supplemented_assets} existing reviews; flagged "
+                f"{follow_ups} unresolved records; skipped {skipped}."
             )
         )

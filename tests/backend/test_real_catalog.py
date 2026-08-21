@@ -130,11 +130,14 @@ class RealCatalogFileTests(TestCase):
         )
         hampton_roads = [record for record in records if record["region"] == "Hampton Roads"]
         self.assertGreaterEqual(len(hampton_roads), 69)
-        self.assertFalse(
-            any(
-                record["location_precision"] in {"approximate", "locality"}
-                for record in hampton_roads
-            )
+        locality_only = {
+            record["name"]
+            for record in hampton_roads
+            if record["location_precision"] in {"approximate", "locality"}
+        }
+        self.assertEqual(
+            locality_only,
+            {"DroneUp"},
         )
         self.assertTrue(
             all(
@@ -225,7 +228,7 @@ class RealCatalogFileTests(TestCase):
             "Virginia Tech Autonomous Systems and Control Laboratory",
         }:
             self.assertEqual(records_by_name[name]["activity_status"], "historical")
-            self.assertEqual(records_by_name[name]["activity_last_verified_at"], "2026-08-11")
+            self.assertEqual(records_by_name[name]["activity_last_verified_at"], "2026-08-21")
 
         self.assertEqual(
             records_by_name["Accomack County Emergency Management Drone Program"]["website_url"],
@@ -255,15 +258,19 @@ class RealCatalogFileTests(TestCase):
             {source["url"] for source in records_by_name["Virginia Military Institute"]["sources"]},
         )
 
-    def test_tier_one_review_manifest_uses_attached_official_sources(self):
+    def test_full_catalog_review_manifest_uses_attached_official_sources(self):
         catalog = self.load_catalog()
         records_by_name = {record["name"]: record for record in catalog["records"]}
         manifest = json.loads(
             (settings.BASE_DIR / "data" / "asset_editorial_reviews.json").read_text()
         )
 
-        self.assertGreaterEqual(len(manifest["reviewed_assets"]), 45)
+        self.assertEqual(len(manifest["reviewed_assets"]), 429)
         self.assertEqual(len(manifest["follow_up_assets"]), 11)
+        self.assertEqual(
+            len(manifest["reviewed_assets"]) + len(manifest["follow_up_assets"]),
+            len(records_by_name),
+        )
         for name, source_urls in manifest["reviewed_assets"].items():
             self.assertIn(name, records_by_name)
             attached_urls = {source["url"] for source in records_by_name[name]["sources"]}
@@ -287,7 +294,61 @@ class RealCatalogFileTests(TestCase):
             self.assertEqual(record["activity_status"], "active")
             self.assertTrue(record["current_activity"])
             self.assertTrue(record["contact_phone"])
-            self.assertEqual(record["activity_last_verified_at"], "2026-08-11")
+            self.assertEqual(record["activity_last_verified_at"], "2026-08-21")
+
+    def test_full_catalog_audit_ledger_covers_every_record(self):
+        catalog = self.load_catalog()
+        audit = json.loads(
+            (
+                settings.BASE_DIR / "data" / "asset_catalog_audit_2026_08_21.json"
+            ).read_text()
+        )
+        audit_by_name = {record["name"]: record for record in audit["records"]}
+
+        self.assertEqual(audit["record_count"], catalog["record_count"])
+        self.assertEqual(set(audit_by_name), {record["name"] for record in catalog["records"]})
+        self.assertEqual(
+            audit["outcomes"],
+            {
+                "confirmed": 423,
+                "confirmed-historical": 6,
+                "qualified-follow-up": 11,
+            },
+        )
+        self.assertTrue(
+            all(record["evidence_urls"] and record["review_basis"] for record in audit["records"])
+        )
+
+    def test_august_21_company_and_source_corrections_are_conservative(self):
+        records = self.load_catalog()["records"]
+        records_by_name = {record["name"]: record for record in records}
+
+        autonomous_flight = records_by_name["Autonomous Flight Technologies"]
+        self.assertEqual(autonomous_flight["city"], "Salem")
+        self.assertEqual(autonomous_flight["address_line"], "172 East Main Street")
+        self.assertEqual(autonomous_flight["location_precision"], "exact")
+
+        self.assertNotIn("Dedrone Washington-Area Headquarters", records_by_name)
+        dedrone = records_by_name["Former Dedrone Washington-Area Headquarters"]
+        self.assertEqual(dedrone["activity_status"], "historical")
+        self.assertIn("Axon", dedrone["current_activity"])
+
+        droneup = records_by_name["DroneUp"]
+        self.assertEqual(droneup["activity_status"], "active")
+        self.assertEqual(droneup["location_precision"], "locality")
+        self.assertFalse(droneup["address_line"])
+        self.assertIn("airspace management", droneup["current_activity"])
+
+        all_source_urls = {
+            source["url"] for record in records for source in record["sources"]
+        }
+        self.assertNotIn(
+            "https://www.townofhaymarket.org/sites/default/files/fileattachments/police/"
+            "page/2971/haymarket_police_department_annual_report_2022.pdf",
+            all_source_urls,
+        )
+        self.assertNotIn("https://www.navair.navy.mil/contact-us", all_source_urls)
+        self.assertNotIn("https://www.yorkcounty.gov/99/Fire-Life-Safety", all_source_urls)
 
     def test_catalog_seed_is_idempotent(self):
         catalog = self.load_catalog()
@@ -355,7 +416,6 @@ class RealCatalogFileTests(TestCase):
             "Bedford Fire Department UAS Program",
             "CACI International",
             "Charles City County Sheriff's Office Drone Operations Team",
-            "DZYNE Technologies",
             "Eagle Aviation Technologies",
             "ENSCO",
             "Fairfax County Police Drone as First Responder Program",
@@ -385,6 +445,11 @@ class RealCatalogFileTests(TestCase):
             self.assertTrue(
                 all(source["url"].startswith("https://") for source in record["sources"])
             )
+
+        dzyne = records_by_name["DZYNE Technologies"]
+        self.assertEqual(dzyne["location_precision"], "locality")
+        self.assertFalse(dzyne["address_line"])
+        self.assertIn("Ondas Sentinel", dzyne["short_description"])
 
         relationships = {
             (relationship["from"], relationship["type"], relationship["to"])
@@ -471,7 +536,7 @@ class RealCatalogFileTests(TestCase):
             self.assertTrue(record["activity_status"], name)
             self.assertTrue(record["current_activity"], name)
             self.assertTrue(record["partnership_opportunities"], name)
-            self.assertEqual(record["activity_last_verified_at"], "2026-08-11")
+            self.assertEqual(record["activity_last_verified_at"], "2026-08-21")
             self.assertIn(record["activity_source_url"], source_urls)
             self.assertIn(record["contact_url"], source_urls)
 
@@ -698,7 +763,7 @@ class RealCatalogFileTests(TestCase):
             name__in=manifest["reviewed_assets"],
             status=Asset.Status.PUBLISHED,
             reviewed_at__isnull=False,
-            last_verified_at=date(2026, 8, 11),
+            last_verified_at=date(2026, 8, 21),
         )
         self.assertEqual(reviewed.count(), len(manifest["reviewed_assets"]))
         self.assertEqual(
@@ -713,7 +778,7 @@ class RealCatalogFileTests(TestCase):
             Source.objects.filter(
                 asset__name="CNU Autonomous Systems and Drone Lab",
                 verification_status="verified",
-                last_verified_at=date(2026, 8, 11),
+                last_verified_at=date(2026, 8, 21),
             ).exists()
         )
 
@@ -849,6 +914,59 @@ class RealCatalogFileTests(TestCase):
             legacy.website_url,
             "https://www.radfordva.gov/AgendaCenter/ViewFile/Minutes/_01272026-805",
         )
+
+    def test_deployment_enrichment_applies_audited_company_corrections(self):
+        autonomous_flight = Asset.objects.create(
+            name="Autonomous Flight Technologies",
+            record_type=Asset.RecordType.ORGANIZATION,
+            short_description=(
+                "Roanoke-based developer of unmanned aircraft, avionics, and "
+                "autonomous-flight technologies."
+            ),
+            unmanned_systems_relevance="UAS technology company.",
+            city="Roanoke",
+            latitude="37.271000",
+            longitude="-79.941000",
+            location_precision=Asset.LocationPrecision.LOCALITY,
+            website_url="https://www.autonomousflight.us/company",
+            contact_url="https://www.autonomousflight.us/contact-offices",
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+            internal_notes="Catalog provenance: curated-public-source.",
+        )
+        dedrone = Asset.objects.create(
+            name="Dedrone Washington-Area Headquarters",
+            record_type=Asset.RecordType.ORGANIZATION,
+            short_description=(
+                "Sterling headquarters for counter-drone sensing, identification, tracking, "
+                "and airspace-security technology."
+            ),
+            unmanned_systems_relevance="Counter-UAS company.",
+            city="Sterling",
+            latitude="39.006000",
+            longitude="-77.428000",
+            location_precision=Asset.LocationPrecision.LOCALITY,
+            website_url="https://www.dedrone.com/about/contact-us",
+            contact_url="https://www.dedrone.com/contact",
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+            internal_notes="Catalog provenance: curated-public-source.",
+        )
+
+        call_command("seed_real_data", add_missing=True, verbosity=0)
+        call_command("enrich_asset_profiles", verbosity=0)
+
+        autonomous_flight.refresh_from_db()
+        self.assertEqual(autonomous_flight.city, "Salem")
+        self.assertEqual(autonomous_flight.address_line, "172 East Main Street")
+        self.assertEqual(
+            autonomous_flight.location_precision,
+            Asset.LocationPrecision.EXACT,
+        )
+        dedrone.refresh_from_db()
+        self.assertEqual(dedrone.name, "Former Dedrone Washington-Area Headquarters")
+        self.assertEqual(dedrone.activity_status, Asset.ActivityStatus.HISTORICAL)
+        self.assertIn("Axon", dedrone.current_activity)
 
     def test_deployment_enrichment_preserves_staff_website_edits(self):
         call_command("seed_real_data", verbosity=0)
