@@ -87,6 +87,7 @@ test("map layers toggle without moving the reset control", async ({ page }) => {
   await page.locator(".leaflet-controlled-airspace-pane path").first().dispatchEvent("click");
   await expect(page.locator(".drone-reference-popup")).toContainText("FAA flying near airports");
   await expect(page.locator(".drone-reference-popup")).not.toContainText("Reference only");
+  await page.locator(".map-layers summary").click();
 
   const facilityMapToggle = page.locator("#uas-facility-map-toggle");
   await facilityMapToggle.check();
@@ -111,6 +112,34 @@ test("map layers toggle without moving the reset control", async ({ page }) => {
   await expect(testSitePopup).toBeVisible();
   await expect(testSitePopup).toContainText("Access");
   await expect(testSitePopup).not.toContainText("does not establish access or authorization");
+});
+
+test("expanded map tools replace the results panel without covering the map", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto("/map/");
+  await expect(page.locator(".result-row").first()).toBeVisible();
+
+  const mapBox = await page.locator("#map").boundingBox();
+  const resultsBox = await page.locator("#map-results-panel").boundingBox();
+  await page.locator(".map-layers summary").click();
+
+  const layers = page.locator(".map-layers");
+  const layersBox = await layers.boundingBox();
+  await expect(layers).toHaveAttribute("open", "");
+  await expect(page.locator("#asset-results-view")).toBeHidden();
+  expect(layersBox.x).toBeCloseTo(resultsBox.x, 0);
+  expect(layersBox.width).toBeCloseTo(resultsBox.width, 0);
+  expect(layersBox.x).toBeGreaterThanOrEqual(mapBox.x + mapBox.width);
+
+  await page.locator(".map-legend summary").click();
+  await expect(page.locator(".map-layers")).not.toHaveAttribute("open", "");
+  await expect(page.locator(".map-legend")).toHaveAttribute("open", "");
+
+  await page.keyboard.press("Escape");
+  await expect(page.locator(".map-legend")).not.toHaveAttribute("open", "");
+  await expect(page.locator("#asset-results-view")).toBeVisible();
 });
 
 test("map credits stay compact while full source notes remain available", async ({
@@ -520,6 +549,7 @@ test("analytical map tools expose quality, summaries, and saved basemaps", async
   await page.locator("#select-extent").click();
   await expect(page.locator("#analysis-status")).toContainText("assets selected");
   await expect(page.locator("#export-area")).toBeEnabled();
+  await page.locator(".map-analysis summary").click();
   await page.locator("#clear-analysis").click();
   await expect(page.locator("#result-count")).toHaveText(fullResultCount);
 
@@ -638,6 +668,7 @@ test("nearby search filters from the current map center and can be cleared", asy
   await expect(page.locator("#analysis-status")).toContainText("within 25 miles");
   await expect(page.locator(".leaflet-analysis-selection-pane path")).toHaveCount(1);
   await expect(page.locator("#export-area")).toBeEnabled();
+  await page.locator(".map-analysis summary").click();
   await page.locator("#clear-analysis").click();
   await expect(page.locator("#result-count")).toHaveText("1");
 });

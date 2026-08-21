@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260818-4">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260821-1">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
@@ -77,7 +77,7 @@
       <div class="map-tools">
         <button class="button compact filter-open" type="button" aria-label="Open filters" aria-controls="asset-filters-panel" aria-expanded="false">Filters <span class="toolbar-filter-count" data-toolbar-filter-count hidden></span></button>
         <button class="button compact" id="reset-view" type="button" aria-label="Reset map view">Reset</button>
-        <details class="map-actions">
+        <details class="map-actions map-tool-details" data-map-tool-label="Save and export">
           <summary>Save / export</summary>
           <div class="map-action-options">
             {% if user.is_authenticated %}<a id="save-view-link" href="{% url 'core:saved-views' %}?view_type=map">Save to my views</a>{% endif %}
@@ -87,7 +87,7 @@
             <span class="visually-hidden" id="view-action-status" role="status" aria-live="polite"></span>
           </div>
         </details>
-        <details class="map-analysis">
+        <details class="map-analysis map-tool-details" data-map-tool-label="Analyze">
           <summary>Analyze</summary>
           <div class="map-analysis-options">
             <fieldset>
@@ -100,8 +100,6 @@
               <button id="select-area" type="button">Draw rectangle</button>
               <button id="select-polygon" type="button" title="Add points on the map, then finish the polygon">Draw polygon</button>
               <button id="select-extent" type="button">Use visible extent</button>
-              <button id="finish-polygon" type="button" hidden>Finish polygon</button>
-              <button id="cancel-polygon" type="button" hidden>Cancel drawing</button>
               <button id="export-area" type="button" disabled>Export selected CSV</button>
             </fieldset>
             <fieldset>
@@ -113,7 +111,7 @@
             <small id="analysis-status" aria-live="polite"></small>
           </div>
         </details>
-        <details class="map-layers">
+        <details class="map-layers map-tool-details" data-map-tool-label="Layers">
           <summary>Layers</summary>
           <div class="map-layer-options">
             <strong>Map data</strong>
@@ -141,7 +139,7 @@
           </div>
         </details>
       </div>
-      <details class="map-legend">
+      <details class="map-legend map-tool-details" data-map-tool-label="Legend">
           <summary>Legend</summary>
           <div class="legend-content">
             <span><i class="legend-dot university" aria-hidden="true"><img src="{% static 'img/icons/legend/university.svg' %}" alt=""></i>University</span>
@@ -192,6 +190,10 @@
           </div>
       </details>
     </div>
+    <div class="polygon-drawing-actions" data-polygon-drawing-actions hidden>
+      <button class="button compact primary" id="finish-polygon" type="button">Finish polygon</button>
+      <button class="button compact secondary" id="cancel-polygon" type="button">Cancel</button>
+    </div>
     <div id="map-status" class="map-status" role="status" hidden></div>
   </section>
 
@@ -224,6 +226,6 @@
 </main>
 <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
 <script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
-  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260818-2"></script>
+  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260821-1"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}

@@ -68,13 +68,15 @@ const selectAreaButton = document.querySelector("#select-area");
 const selectPolygonButton = document.querySelector("#select-polygon");
 const finishPolygonButton = document.querySelector("#finish-polygon");
 const cancelPolygonButton = document.querySelector("#cancel-polygon");
+const polygonDrawingActions = document.querySelector("[data-polygon-drawing-actions]");
 const selectExtentButton = document.querySelector("#select-extent");
 const exportAreaButton = document.querySelector("#export-area");
 const clearAnalysisButton = document.querySelector("#clear-analysis");
 const analysisStatus = document.querySelector("#analysis-status");
 const summaryRegion = document.querySelector("#summary-region");
 const showRegionSummaryButton = document.querySelector("#show-region-summary");
-const mapAnalysisDetails = document.querySelector(".map-analysis");
+const mapToolDetails = [...document.querySelectorAll(".map-tool-details")];
+const mapLegendDetails = document.querySelector(".map-legend");
 const activeFilterBar = document.querySelector("[data-active-filter-bar]");
 const activeFilterChips = document.querySelector("[data-active-filter-chips]");
 const activeFilterCount = document.querySelector("[data-applied-filter-count]");
@@ -128,6 +130,7 @@ let analysisActive = false;
 let analysisDefinition = null;
 let polygonDrawing = false;
 let loadRequestId = 0;
+let activeMapTool = null;
 
 function showStatus(message) {
   status.textContent = message;
@@ -136,8 +139,7 @@ function showStatus(message) {
 
 function setPolygonDrawing(active) {
   polygonDrawing = active;
-  finishPolygonButton.hidden = !active;
-  cancelPolygonButton.hidden = !active;
+  polygonDrawingActions.hidden = !active;
   selectAreaButton.hidden = active;
   selectPolygonButton.hidden = active;
   selectExtentButton.hidden = active;
@@ -205,11 +207,47 @@ function updateViewActions() {
   }
 }
 
+function closeMapTools({ restoreResults = false } = {}) {
+  activeMapTool = null;
+  for (const details of mapToolDetails) details.open = false;
+  if (restoreResults) {
+    assetResultsView.hidden = false;
+    insightPanel.hidden = true;
+    resultsPanel.setAttribute("aria-label", "Filtered assets");
+  }
+}
+
 function showAssetResults({ focus = false } = {}) {
+  closeMapTools();
   assetResultsView.hidden = false;
   insightPanel.hidden = true;
   resultsPanel.setAttribute("aria-label", "Filtered assets");
   if (focus) assetResultsTitle.focus();
+}
+
+for (const details of mapToolDetails) {
+  const summary = details.querySelector(":scope > summary");
+  summary.setAttribute("aria-expanded", "false");
+  details.addEventListener("toggle", () => {
+    summary.setAttribute("aria-expanded", String(details.open));
+    if (details.open) {
+      activeMapTool = details;
+      for (const other of mapToolDetails) {
+        if (other !== details) other.open = false;
+      }
+      assetResultsView.hidden = true;
+      insightPanel.hidden = true;
+      resultsPanel.setAttribute(
+        "aria-label",
+        `${details.dataset.mapToolLabel || summary.textContent.trim()} map tools`,
+      );
+    } else if (activeMapTool === details) {
+      activeMapTool = null;
+      assetResultsView.hidden = false;
+      insightPanel.hidden = true;
+      resultsPanel.setAttribute("aria-label", "Filtered assets");
+    }
+  });
 }
 
 function renderFeatureCollection(
@@ -269,7 +307,7 @@ function applyAreaSelection(bounds) {
 
 function applyPolygonSelection(vertices) {
   setPolygonDrawing(false);
-  mapAnalysisDetails.open = false;
+  closeMapTools();
   applyAnalysisSelection(featuresWithinPolygon(allFeatures, vertices), {
     type: "polygon",
     label: "Drawn polygon",
@@ -379,7 +417,7 @@ function populatePrintReport() {
 
 function renderRegionSummary(regionSlug, regionName) {
   const summary = summarizeRegion(allFeatures, regionSlug);
-  mapAnalysisDetails.open = false;
+  closeMapTools();
   insightTitle.textContent = regionName;
   insightContent.replaceChildren();
 
@@ -591,8 +629,10 @@ function setPresentationMode(enabled) {
   document.body.classList.toggle("presentation-mode", enabled);
   exitPresentationButton.hidden = !enabled;
   if (enabled) {
-    for (const details of document.querySelectorAll(".map-tools details")) details.open = false;
-    document.querySelector(".map-legend").open = true;
+    closeMapTools();
+    mapLegendDetails.open = true;
+  } else {
+    closeMapTools({ restoreResults: true });
   }
   window.requestAnimationFrame(() => mapController.refresh());
 }
@@ -606,8 +646,13 @@ presentationButton.addEventListener("click", () => setPresentationMode(true));
 exitPresentationButton.addEventListener("click", () => setPresentationMode(false));
 window.addEventListener("beforeprint", () => {
   populatePrintReport();
-  document.querySelector(".map-legend").open = true;
+  mapLegendDetails.open = true;
   mapController.refresh();
+});
+window.addEventListener("afterprint", () => {
+  if (!document.body.classList.contains("presentation-mode")) {
+    closeMapTools({ restoreResults: true });
+  }
 });
 mapController.onViewChange(updateViewActions);
 
@@ -633,7 +678,7 @@ nearbySearchButton.addEventListener("click", () => {
 selectAreaButton.addEventListener("click", () => {
   clearAnalysis();
   analysisStatus.textContent = "Drawing selection";
-  mapAnalysisDetails.open = false;
+  closeMapTools();
   mapController.beginAreaSelection(applyAreaSelection);
 });
 
@@ -691,6 +736,10 @@ document.addEventListener("keydown", (event) => {
     clearAnalysis();
   } else if (document.body.classList.contains("presentation-mode")) {
     setPresentationMode(false);
+  } else if (activeMapTool) {
+    const summary = activeMapTool.querySelector(":scope > summary");
+    activeMapTool.open = false;
+    summary.focus();
   } else if (!insightPanel.hidden) {
     showAssetResults({ focus: true });
   }
