@@ -20,7 +20,7 @@ import {
   serializePolygonAnalysis,
   serializeRectangleAnalysis,
 } from "./map-state.js?v=20260812-1";
-import { bindPanelResizers } from "./panel-resize.js?v=20260818-1";
+import { bindPanelResizers } from "./panel-resize.js?v=20260821-1";
 import { renderResults, selectResult } from "./results.js?v=20260727-2";
 import { hydrateForm, paramsFromForm, updateUrl } from "./state.js?v=20260717";
 

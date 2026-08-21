@@ -19,7 +19,7 @@ test("crowded desktop layouts preserve the minimum map and panel widths", () => 
 
   assert.equal(layout.leftVisible, true);
   assert.equal(layout.resizable, true);
-  assert.equal(layout.left + layout.right, 564);
+  assert.equal(layout.left + layout.right, 578);
   assert.ok(layout.left >= 220);
   assert.ok(layout.right >= 260);
 });
@@ -27,7 +27,7 @@ test("crowded desktop layouts preserve the minimum map and panel widths", () => 
 test("tablet layouts resize only the results panel", () => {
   assert.deepEqual(
     constrainPanelWidths({ containerWidth: 800, leftWidth: 300, rightWidth: 500 }),
-    { left: 300, right: 472, leftVisible: false, resizable: true },
+    { left: 300, right: 479, leftVisible: false, resizable: true },
   );
 });
 
