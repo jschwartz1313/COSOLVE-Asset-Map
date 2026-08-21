@@ -76,6 +76,7 @@ const analysisStatus = document.querySelector("#analysis-status");
 const summaryRegion = document.querySelector("#summary-region");
 const showRegionSummaryButton = document.querySelector("#show-region-summary");
 const mapToolDetails = [...document.querySelectorAll(".map-tool-details")];
+const mapAnalysisDetails = document.querySelector(".map-analysis");
 const mapLegendDetails = document.querySelector(".map-legend");
 const activeFilterBar = document.querySelector("[data-active-filter-bar]");
 const activeFilterChips = document.querySelector("[data-active-filter-chips]");
@@ -139,6 +140,7 @@ function showStatus(message) {
 
 function setPolygonDrawing(active) {
   polygonDrawing = active;
+  mapAnalysisDetails.classList.toggle("is-polygon-drawing", active);
   polygonDrawingActions.hidden = !active;
   selectAreaButton.hidden = active;
   selectPolygonButton.hidden = active;
@@ -228,6 +230,17 @@ function showAssetResults({ focus = false } = {}) {
 for (const details of mapToolDetails) {
   const summary = details.querySelector(":scope > summary");
   summary.setAttribute("aria-expanded", "false");
+  summary.addEventListener("click", (event) => {
+    if (!polygonDrawing) return;
+    if (details === mapAnalysisDetails && details.open) {
+      event.preventDefault();
+      return;
+    }
+    if (details !== mapAnalysisDetails) {
+      event.preventDefault();
+      analysisStatus.textContent = "Finish or cancel the polygon before opening another tool";
+    }
+  });
   details.addEventListener("toggle", () => {
     summary.setAttribute("aria-expanded", String(details.open));
     if (details.open) {
@@ -685,6 +698,7 @@ selectAreaButton.addEventListener("click", () => {
 selectPolygonButton.addEventListener("click", () => {
   clearAnalysis();
   setPolygonDrawing(true);
+  mapAnalysisDetails.open = true;
   analysisStatus.textContent = "Drawing polygon";
   mapController.beginPolygonSelection(applyPolygonSelection);
 });

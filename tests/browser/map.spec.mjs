@@ -605,15 +605,25 @@ test("drawn polygon selects and exports only enclosed assets", async ({ context,
 
   await page.locator(".map-analysis summary").click();
   await page.locator("#select-polygon").click();
+  await expect(page.locator(".map-analysis")).toHaveAttribute("open", "");
+  await expect(page.locator(".polygon-drawing-actions")).toBeVisible();
+  await expect(page.locator(".map-analysis-options .polygon-drawing-actions")).toHaveCount(1);
+  if (page.viewportSize().width > 650) {
+    const analyzeBox = await page.locator(".map-analysis").boundingBox();
+    const mapStageBox = await page.locator(".map-stage").boundingBox();
+    expect(analyzeBox.x).toBeGreaterThanOrEqual(mapStageBox.x + mapStageBox.width);
+  }
+  await page.locator(".map-analysis summary").click();
+  await expect(page.locator(".map-analysis")).toHaveAttribute("open", "");
   const mapBox = await page.locator("#map").boundingBox();
   if (!mapBox) throw new Error("Map did not render");
   const mobile = page.viewportSize().width <= 650;
   const vertices = mobile
     ? [
-        [0.58, 0.55],
-        [0.86, 0.55],
-        [0.86, 0.78],
-        [0.58, 0.78],
+        [0.08, 0.38],
+        [0.44, 0.38],
+        [0.44, 0.82],
+        [0.08, 0.82],
       ]
     : [
         [0.4, 0.25],

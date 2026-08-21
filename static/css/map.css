@@ -152,9 +152,9 @@ body.is-resizing-map-panels, body.is-resizing-map-panels * { cursor: col-resize 
 .drone-reference-sources { margin: 0; font-size: 9px; line-height: 1.4; }
 .drone-reference-sources a { font-size: inherit; }
 .map-status { position: absolute; z-index: 500; left: 50%; bottom: 18px; transform: translateX(-50%); max-width: calc(100% - 40px); padding: 10px 14px; background: var(--ink); color: white; border-radius: 3px; font-size: 12px; }
-.polygon-drawing-actions { position: absolute; z-index: 740; left: 50%; bottom: 46px; transform: translateX(-50%); display: flex; gap: 8px; padding: 8px; background: var(--paper); border: 1px solid var(--line-strong); box-shadow: 0 2px 10px rgb(25 33 38 / 18%); }
+.polygon-drawing-actions { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding-top: 8px; border-top: 1px solid var(--line); }
 .polygon-drawing-actions[hidden] { display: none; }
-.polygon-drawing-actions .button { min-width: 104px; white-space: nowrap; }
+.polygon-drawing-actions .button { min-width: 0; width: 100%; min-height: 38px; white-space: nowrap; }
 .map-insight-panel { color: var(--ink); background: var(--paper); }
 .map-insight-panel[hidden], .results-view[hidden] { display: none; }
 .insight-heading .icon-button { flex: 0 0 34px; font-size: 18px; }
@@ -269,6 +269,15 @@ body.is-resizing-map-panels, body.is-resizing-map-panels * { cursor: col-resize 
   .legend-content span { font-size: 9px; }
   .map-tool-details > summary { padding-inline: 9px; font-size: 11px; }
   .map-tool-details[open] { top: var(--header-height); width: min(360px, 100vw); }
+  .map-analysis.is-polygon-drawing[open] { width: min(180px, 48vw); }
+  .map-analysis.is-polygon-drawing[open] > summary { min-height: 56px; padding: 11px 10px; font-size: 14px; }
+  .map-analysis.is-polygon-drawing .map-analysis-options { padding: 8px 10px 12px; }
+  .map-analysis.is-polygon-drawing .map-analysis-options > fieldset:not(.area-selection-fieldset),
+  .map-analysis.is-polygon-drawing .area-selection-fieldset > :not(legend):not(.polygon-drawing-actions),
+  .map-analysis.is-polygon-drawing .analysis-clear { display: none; }
+  .map-analysis.is-polygon-drawing .area-selection-fieldset { display: block; padding: 8px 0; }
+  .map-analysis.is-polygon-drawing .polygon-drawing-actions { grid-template-columns: 1fr; }
+  .map-analysis.is-polygon-drawing .polygon-drawing-actions .button { white-space: normal; }
   .map-tool-details[open] > summary { padding: 16px; font-size: 17px; }
   .region-map-label { display: none; }
 }

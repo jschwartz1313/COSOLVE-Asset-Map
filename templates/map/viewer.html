@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260821-3">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260821-4">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
@@ -95,12 +95,16 @@
               <label><span>Radius</span><select id="nearby-radius"><option value="10">10 miles</option><option value="25" selected>25 miles</option><option value="50">50 miles</option><option value="100">100 miles</option></select></label>
               <button id="nearby-search" type="button">Near map center</button>
             </fieldset>
-            <fieldset>
+            <fieldset class="area-selection-fieldset">
               <legend>Area selection</legend>
               <button id="select-area" type="button">Draw rectangle</button>
               <button id="select-polygon" type="button" title="Add points on the map, then finish the polygon">Draw polygon</button>
               <button id="select-extent" type="button">Use visible extent</button>
               <button id="export-area" type="button" disabled>Export selected CSV</button>
+              <div class="polygon-drawing-actions" data-polygon-drawing-actions hidden>
+                <button class="button primary" id="finish-polygon" type="button">Finish polygon</button>
+                <button class="button secondary" id="cancel-polygon" type="button">Cancel</button>
+              </div>
             </fieldset>
             <fieldset>
               <legend>Regional summary</legend>
@@ -190,10 +194,6 @@
           </div>
       </details>
     </div>
-    <div class="polygon-drawing-actions" data-polygon-drawing-actions hidden>
-      <button class="button compact primary" id="finish-polygon" type="button">Finish polygon</button>
-      <button class="button compact secondary" id="cancel-polygon" type="button">Cancel</button>
-    </div>
     <div id="map-status" class="map-status" role="status" hidden></div>
   </section>
 
@@ -226,6 +226,6 @@
 </main>
 <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
 <script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
-  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260821-3"></script>
+  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260821-4"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}
