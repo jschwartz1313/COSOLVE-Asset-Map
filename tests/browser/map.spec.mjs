@@ -87,7 +87,6 @@ test("map layers toggle without moving the reset control", async ({ page }) => {
   await page.locator(".leaflet-controlled-airspace-pane path").first().dispatchEvent("click");
   await expect(page.locator(".drone-reference-popup")).toContainText("FAA flying near airports");
   await expect(page.locator(".drone-reference-popup")).not.toContainText("Reference only");
-  await page.locator(".map-layers summary").click();
 
   const facilityMapToggle = page.locator("#uas-facility-map-toggle");
   await facilityMapToggle.check();
@@ -134,12 +133,17 @@ test("expanded map tools replace the results panel without covering the map", as
   expect(layersBox.x).toBeGreaterThanOrEqual(mapBox.x + mapBox.width);
 
   await page.locator(".map-legend summary").click();
-  await expect(page.locator(".map-layers")).not.toHaveAttribute("open", "");
+  await expect(page.locator(".map-layers")).toHaveAttribute("open", "");
   await expect(page.locator(".map-legend")).toHaveAttribute("open", "");
+  const legendBox = await page.locator(".map-legend").boundingBox();
+  expect(legendBox.x + legendBox.width).toBeLessThanOrEqual(mapBox.x + mapBox.width);
 
   await page.keyboard.press("Escape");
-  await expect(page.locator(".map-legend")).not.toHaveAttribute("open", "");
+  await expect(page.locator(".map-layers")).not.toHaveAttribute("open", "");
+  await expect(page.locator(".map-legend")).toHaveAttribute("open", "");
   await expect(page.locator("#asset-results-view")).toBeVisible();
+  await page.keyboard.press("Escape");
+  await expect(page.locator(".map-legend")).not.toHaveAttribute("open", "");
 });
 
 test("map credits stay compact while full source notes remain available", async ({

@@ -74,9 +74,11 @@ body.is-resizing-map-panels, body.is-resizing-map-panels * { cursor: col-resize 
 .toolbar-filter-count[hidden] { display: none; }
 .print-map-heading { display: none; }
 .print-analysis-report { display: none; }
-.map-legend { width: auto; background: rgb(255 255 255 / 96%); }
-.legend-content { display: grid; gap: 9px; padding: 14px 18px 18px; }
-.legend-content span { display: flex; align-items: center; gap: 8px; font-size: 11px; }
+.map-legend { width: 118px; padding: 0; border: 1px solid var(--line); background: rgb(255 255 255 / 96%); box-shadow: 0 2px 10px rgb(25 33 38 / 10%); }
+.map-legend[open] { width: 168px; max-height: calc(100vh - var(--header-height) - 24px); overflow-y: auto; }
+.map-legend summary { margin: 0; padding: 9px 10px; color: var(--ink); white-space: nowrap; }
+.legend-content { display: grid; gap: 7px; padding: 4px 10px 10px; }
+.legend-content span { display: flex; align-items: center; gap: 7px; font-size: 10px; }
 .legend-content small { padding-top: 6px; color: var(--ink-muted); border-top: 1px solid var(--line); font-size: 9px; line-height: 1.4; }
 .legend-analysis-group { padding-top: 6px; display: grid; gap: 6px; border-top: 1px solid var(--line); }
 .legend-analysis-group[hidden] { display: none; }
@@ -238,6 +240,8 @@ body.is-resizing-map-panels, body.is-resizing-map-panels * { cursor: col-resize 
 @media (max-width: 1100px) {
   .map-workspace { --filter-panel-width: 252px; --results-panel-width: 290px; grid-template-columns: var(--filter-panel-width) var(--panel-resizer-width) minmax(320px, 1fr) var(--panel-resizer-width) var(--results-panel-width); }
   .map-tools { max-width: calc(100% - 96px); }
+  .map-legend { width: 88px; }
+  .map-legend[open] { width: 168px; }
 }
 @media (max-width: 880px) {
   .map-workspace { --results-panel-width: 290px; grid-template-columns: minmax(0, 1fr) var(--panel-resizer-width) var(--results-panel-width); }
@@ -259,6 +263,8 @@ body.is-resizing-map-panels, body.is-resizing-map-panels * { cursor: col-resize 
   .map-toolbar { left: 8px; right: 8px; gap: 5px; }
   .map-tools { gap: 5px; }
   .map-toolbar .button.compact { padding-inline: 9px; font-size: 12px; }
+  .map-legend { position: absolute; top: 0; right: 0; }
+  .map-legend[open] { width: min(168px, calc(100vw - 16px)); max-height: calc(52vh - 16px); }
   .legend-content span { font-size: 9px; }
   .map-tool-details > summary { padding-inline: 9px; font-size: 11px; }
   .map-tool-details[open] { top: var(--header-height); width: min(360px, 100vw); }

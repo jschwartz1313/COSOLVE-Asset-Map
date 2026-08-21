@@ -740,6 +740,9 @@ document.addEventListener("keydown", (event) => {
     const summary = activeMapTool.querySelector(":scope > summary");
     activeMapTool.open = false;
     summary.focus();
+  } else if (mapLegendDetails.open) {
+    mapLegendDetails.open = false;
+    mapLegendDetails.querySelector(":scope > summary").focus();
   } else if (!insightPanel.hidden) {
     showAssetResults({ focus: true });
   }
