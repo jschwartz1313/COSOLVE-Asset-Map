@@ -21,8 +21,8 @@ TAXONOMY_FIELDS = {
 LEGACY_CATALOG_NAMES = {
     "Former Dedrone Washington-Area Headquarters": "Dedrone Washington-Area Headquarters",
     "Fort Walker": "Fort A.P. Hill",
-    "Fort Gregg-Adams": "Fort Lee",
-    "Fort Barfoot": "Fort Pickett",
+    "Fort Lee": "Fort Gregg-Adams",
+    "Fort Pickett": "Fort Barfoot",
     "VCU ARVL Robotic Drone System": "VCU UAV Research Laboratory",
     "Amherst County Fire and EMS Drone Program": (
         "Amherst County First Responder UAS Capability"

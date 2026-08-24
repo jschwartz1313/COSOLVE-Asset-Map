@@ -133,13 +133,7 @@ class RealCatalogFileTests(TestCase):
             for record in hampton_roads
             if record["location_precision"] in {"approximate", "locality"}
         }
-        self.assertEqual(
-            locality_only,
-            {
-                "DroneUp",
-                "SubSea Craft Virginia Beach Operations",
-            },
-        )
+        self.assertFalse(locality_only)
         self.assertTrue(
             all(
                 record.get("address_line")
@@ -214,11 +208,11 @@ class RealCatalogFileTests(TestCase):
         self.assertFalse(
             any(record["website_url"] == military_factbook_url for record in catalog["records"])
         )
-        self.assertTrue(
-            {"Fort Walker", "Fort Gregg-Adams", "Fort Barfoot"}.issubset(records_by_name)
-        )
+        self.assertTrue({"Fort Walker", "Fort Lee", "Fort Pickett"}.issubset(records_by_name))
         self.assertFalse(
-            {"Fort A.P. Hill", "Fort Lee", "Fort Pickett"}.intersection(records_by_name)
+            {"Fort A.P. Hill", "Fort Gregg-Adams", "Fort Barfoot"}.intersection(
+                records_by_name
+            )
         )
         for name in {
             "Center for Unmanned Aircraft Systems at Virginia Tech",
@@ -271,6 +265,11 @@ class RealCatalogFileTests(TestCase):
                 settings.BASE_DIR / "data" / "asset_editorial_reviews_2026_08_24_expansion.json"
             ).read_text()
         )
+        location_manifest = json.loads(
+            (
+                settings.BASE_DIR / "data" / "asset_editorial_reviews_2026_08_24_locations.json"
+            ).read_text()
+        )
 
         self.assertEqual(len(manifest["reviewed_assets"]), 429)
         self.assertEqual(len(manifest["follow_up_assets"]), 11)
@@ -278,6 +277,8 @@ class RealCatalogFileTests(TestCase):
         self.assertFalse(additions_manifest["follow_up_assets"])
         self.assertEqual(len(expansion_manifest["reviewed_assets"]), 20)
         self.assertFalse(expansion_manifest["follow_up_assets"])
+        self.assertEqual(len(location_manifest["reviewed_assets"]), 97)
+        self.assertFalse(location_manifest["follow_up_assets"])
 
         reviewed_names = set(manifest["reviewed_assets"])
         follow_up_names = set(manifest["follow_up_assets"])
@@ -294,6 +295,10 @@ class RealCatalogFileTests(TestCase):
             **expansion_manifest["reviewed_assets"],
         }
         for name, source_urls in reviewed_assets.items():
+            self.assertIn(name, records_by_name)
+            attached_urls = {source["url"] for source in records_by_name[name]["sources"]}
+            self.assertTrue(set(source_urls).issubset(attached_urls), name)
+        for name, source_urls in location_manifest["reviewed_assets"].items():
             self.assertIn(name, records_by_name)
             attached_urls = {source["url"] for source in records_by_name[name]["sources"]}
             self.assertTrue(set(source_urls).issubset(attached_urls), name)
@@ -326,9 +331,12 @@ class RealCatalogFileTests(TestCase):
         audit_by_name = {record["name"]: record for record in audit["records"]}
 
         self.assertEqual(audit["record_count"], 440)
-        self.assertTrue(
-            set(audit_by_name).issubset({record["name"] for record in catalog["records"]})
-        )
+        current_names = {record["name"] for record in catalog["records"]}
+        current_equivalents = {
+            {"Fort Barfoot": "Fort Pickett", "Fort Gregg-Adams": "Fort Lee"}.get(name, name)
+            for name in audit_by_name
+        }
+        self.assertTrue(current_equivalents.issubset(current_names))
         self.assertEqual(
             audit["outcomes"],
             {
@@ -357,8 +365,8 @@ class RealCatalogFileTests(TestCase):
 
         droneup = records_by_name["DroneUp"]
         self.assertEqual(droneup["activity_status"], "active")
-        self.assertEqual(droneup["location_precision"], "locality")
-        self.assertFalse(droneup["address_line"])
+        self.assertEqual(droneup["location_precision"], "exact")
+        self.assertEqual(droneup["address_line"], "160 Newtown Road, Suite 500")
         self.assertIn("airspace management", droneup["current_activity"])
 
         all_source_urls = {source["url"] for record in records for source in record["sources"]}
@@ -467,8 +475,10 @@ class RealCatalogFileTests(TestCase):
             )
 
         dzyne = records_by_name["DZYNE Technologies"]
-        self.assertEqual(dzyne["location_precision"], "locality")
-        self.assertFalse(dzyne["address_line"])
+        self.assertEqual(dzyne["location_precision"], "exact")
+        self.assertEqual(
+            dzyne["address_line"], "8280 Willow Oaks Corporate Drive, Suite 200"
+        )
         self.assertIn("Ondas Sentinel", dzyne["short_description"])
 
         relationships = {
@@ -627,6 +637,45 @@ class RealCatalogFileTests(TestCase):
                 record["development_source_url"],
                 {source["url"] for source in record["sources"]},
             )
+
+    def test_location_enrichment_uses_attached_public_sources(self):
+        catalog = self.load_catalog()
+        records_by_name = {record["name"]: record for record in catalog["records"]}
+        enrichment = json.loads(
+            (settings.BASE_DIR / "data" / "asset_location_enrichment.json").read_text()
+        )["assets"]
+
+        self.assertEqual(len(enrichment), 97)
+        self.assertTrue(set(enrichment).issubset(records_by_name))
+        for name, location in enrichment.items():
+            record = records_by_name[name]
+            self.assertEqual(record["address_line"], location["address_line"], name)
+            self.assertEqual(record["city"], location["city"], name)
+            self.assertEqual(record["postal_code"], location["postal_code"], name)
+            self.assertEqual(record["latitude"], location["latitude"], name)
+            self.assertEqual(record["longitude"], location["longitude"], name)
+            self.assertEqual(record["location_precision"], location["location_precision"], name)
+            self.assertIn(
+                location["source"]["url"],
+                {source["url"] for source in record["sources"]},
+                name,
+            )
+
+        self.assertEqual(records_by_name["Dynamic Aviation"]["city"], "Bridgewater")
+        self.assertEqual(
+            records_by_name["UVA Coastal Research Center UAS Operations"]["city"],
+            "Cape Charles",
+        )
+        self.assertEqual(
+            records_by_name["Virginia Tech Eastern Shore AREC Drone Application Research"][
+                "city"
+            ],
+            "Painter",
+        )
+        self.assertEqual(
+            records_by_name["SubSea Craft Virginia Beach Operations"]["address_line"],
+            "2517 Squadron Court",
+        )
 
     def test_every_asset_has_one_documented_ecosystem_role(self):
         catalog = self.load_catalog()
@@ -882,6 +931,38 @@ class RealCatalogFileTests(TestCase):
             Asset.ActivityStatus.DEVELOPING,
         )
 
+    def test_location_review_batch_supplements_existing_catalog_reviews(self):
+        review_paths = [
+            settings.BASE_DIR / "data" / "asset_editorial_reviews.json",
+            settings.BASE_DIR / "data" / "asset_editorial_reviews_2026_08_24.json",
+            settings.BASE_DIR / "data" / "asset_editorial_reviews_2026_08_24_expansion.json",
+        ]
+        location_path = (
+            settings.BASE_DIR / "data" / "asset_editorial_reviews_2026_08_24_locations.json"
+        )
+        location_manifest = json.loads(location_path.read_text())
+        call_command("seed_real_data", verbosity=0)
+        call_command("enrich_asset_profiles", verbosity=0)
+
+        for review_path in review_paths:
+            call_command("apply_catalog_reviews", reviews=review_path, verbosity=0)
+        call_command("apply_catalog_reviews", reviews=location_path, verbosity=0)
+
+        for name, source_urls in location_manifest["reviewed_assets"].items():
+            asset = Asset.objects.get(name=name)
+            self.assertIsNotNone(asset.reviewed_at, name)
+            self.assertEqual(
+                set(
+                    asset.sources.filter(
+                        url__in=source_urls,
+                        verification_status="verified",
+                        last_verified_at=date(2026, 8, 24),
+                    ).values_list("url", flat=True)
+                ),
+                set(source_urls),
+                name,
+            )
+
     def test_add_missing_preserves_reviewed_records_and_restores_catalog_gaps(self):
         catalog = self.load_catalog()
         call_command("seed_real_data", verbosity=0)
@@ -924,6 +1005,26 @@ class RealCatalogFileTests(TestCase):
             visibility=Asset.Visibility.PUBLIC,
             internal_notes="Catalog provenance: virginia-military-factbook.",
         )
+        legacy_fort_lee = Asset.objects.create(
+            name="Fort Gregg-Adams",
+            record_type=Asset.RecordType.ORGANIZATION,
+            short_description="Legacy catalog record.",
+            unmanned_systems_relevance="Federal and defense ecosystem presence.",
+            website_url=factbook_url,
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+            internal_notes="Catalog provenance: virginia-military-factbook.",
+        )
+        legacy_fort_pickett = Asset.objects.create(
+            name="Fort Barfoot",
+            record_type=Asset.RecordType.ORGANIZATION,
+            short_description="Legacy catalog record.",
+            unmanned_systems_relevance="Federal and defense ecosystem presence.",
+            website_url=factbook_url,
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+            internal_notes="Catalog provenance: virginia-military-factbook.",
+        )
         dominion = Asset.objects.create(
             name="Dominion Energy UAS Program",
             record_type=Asset.RecordType.PROGRAM,
@@ -946,10 +1047,18 @@ class RealCatalogFileTests(TestCase):
         call_command("enrich_asset_profiles", verbosity=0)
 
         legacy.refresh_from_db()
+        legacy_fort_lee.refresh_from_db()
+        legacy_fort_pickett.refresh_from_db()
         self.assertEqual(legacy.name, "Fort Walker")
         self.assertEqual(legacy.website_url, "https://home.army.mil/aphill/")
+        self.assertEqual(legacy_fort_lee.name, "Fort Lee")
+        self.assertEqual(legacy_fort_pickett.name, "Fort Pickett")
         self.assertFalse(Asset.objects.filter(name="Fort A.P. Hill").exists())
+        self.assertFalse(Asset.objects.filter(name="Fort Gregg-Adams").exists())
+        self.assertFalse(Asset.objects.filter(name="Fort Barfoot").exists())
         self.assertEqual(Asset.objects.filter(name="Fort Walker").count(), 1)
+        self.assertEqual(Asset.objects.filter(name="Fort Lee").count(), 1)
+        self.assertEqual(Asset.objects.filter(name="Fort Pickett").count(), 1)
         dominion.refresh_from_db()
         self.assertEqual(
             dominion.website_url,
@@ -958,6 +1067,35 @@ class RealCatalogFileTests(TestCase):
         self.assertFalse(
             dominion.sources.filter(
                 url="https://www.dominionenergy.com/our-stories/unmanned-aerial-inspections"
+            ).exists()
+        )
+
+    def test_deployment_enrichment_applies_documented_location_upgrade(self):
+        dynamic = Asset.objects.create(
+            name="Dynamic Aviation",
+            record_type=Asset.RecordType.ORGANIZATION,
+            short_description="Legacy catalog record.",
+            unmanned_systems_relevance="Aviation and unmanned-systems support.",
+            city="Harrisonburg",
+            latitude="38.449000",
+            longitude="-78.869000",
+            location_precision=Asset.LocationPrecision.LOCALITY,
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+            internal_notes="Catalog provenance: curated-public-source.",
+        )
+
+        call_command("seed_real_data", add_missing=True, verbosity=0)
+        call_command("enrich_asset_profiles", verbosity=0)
+
+        dynamic.refresh_from_db()
+        self.assertEqual(dynamic.address_line, "1402 Airport Road")
+        self.assertEqual(dynamic.city, "Bridgewater")
+        self.assertEqual(dynamic.postal_code, "22812-0007")
+        self.assertEqual(dynamic.location_precision, Asset.LocationPrecision.EXACT)
+        self.assertTrue(
+            dynamic.sources.filter(
+                url="https://www.dynamicaviation.com/contact-us/"
             ).exists()
         )
 

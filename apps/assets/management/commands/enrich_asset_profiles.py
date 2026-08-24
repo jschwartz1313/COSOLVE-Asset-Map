@@ -100,9 +100,6 @@ STALE_CATALOG_SOURCE_URLS = {
     "DZYNE Technologies": {
         "https://www.sbir.gov/portfolio/406214",
     },
-    "DroneUp": {
-        "https://www.droneup.com/privacy-policy",
-    },
     "Former Dedrone Washington-Area Headquarters": {
         "https://www.dedrone.com/about/contact-us",
         "https://www.dedrone.com/contact",

@@ -7,13 +7,13 @@ The checked-in catalog contains 473 real, publicly documented Virginia ecosystem
 | Source group | Records | Location treatment |
 | --- | ---: | --- |
 | FAA and Virginia Department of Aviation public-use airports | 64 | Published airport reference coordinates |
-| Virginia Military Factbook installations | 30 | Generalized locality coordinates |
+| Virginia Military Factbook installations | 30 | Generalized localities or official public visitor/administrative sites |
 | Broad-based Virginia degree-granting institutions and those with documented unmanned-systems connections | 69 | NCES IPEDS campus addresses and coordinates |
 | Curated research, workforce, company, public-safety, federal, program, and infrastructure assets | 310 | Official public addresses, named sites, or generalized locality coordinates |
 
-The catalog currently covers 12 Virginia ecosystem regions and six record types. Every record has a fuller overview, an unmanned-systems relevance statement, a labeled public contact route, at least two public evidence URLs, a catalog review date, and normalized taxonomy values. The catalog contains 1,356 source attachments across 822 distinct URLs. It classifies 285 records as core unmanned-systems assets and 188 as supporting ecosystem assets using the documented rule in the data dictionary. Selected records also carry source-dated current activity, collaboration, and site-readiness details. Source verification status is tracked separately so staff can record human review and later rechecks.
+The catalog currently covers 12 Virginia ecosystem regions and six record types. Every record has a fuller overview, an unmanned-systems relevance statement, a labeled public contact route, at least two public evidence URLs, a catalog review date, and normalized taxonomy values. The catalog contains 1,425 source attachments across 876 distinct URLs. It classifies 285 records as core unmanned-systems assets and 188 as supporting ecosystem assets using the documented rule in the data dictionary. Selected records also carry source-dated current activity, collaboration, and site-readiness details. Source verification status is tracked separately so staff can record human review and later rechecks.
 
-The August 6 enrichment pass added current activity and partnership details for 13 high-priority organizations and sites. The August 7 website audit brought source-dated activity coverage to 28 records. The August 11 priority review expanded that coverage to 48 records, and later company and catalog passes brought it to 88. After excluding narrowly specialized higher-education institutions without a plausible ecosystem role, exact or site-level coverage stands at 332 records and 232 records have a published phone or email. Eight records have documented site-readiness or operational-facility details. Acreage is populated only when an official source describes land as available; campus size, accessible land, and planned buildout are retained in notes instead of being treated as available acreage.
+The August 6 enrichment pass added current activity and partnership details for 13 high-priority organizations and sites. The August 7 website audit brought source-dated activity coverage to 28 records. The August 11 priority review expanded that coverage to 48 records, and later company and catalog passes brought it to 88. After excluding narrowly specialized higher-education institutions without a plausible ecosystem role, exact or site-level coverage stands at 429 records and 232 records have a published phone or email. Eight records have documented site-readiness or operational-facility details. Acreage is populated only when an official source describes land as available; campus size, accessible land, and planned buildout are retained in notes instead of being treated as available acreage.
 
 Institution phone numbers and admissions routes come from the NCES IPEDS 2024 directory. Airport manager, sponsor, phone, email, role, and address data come from the Virginia Department of Aviation sponsor directory. For other records, `scripts/build_contact_enrichment.py` conservatively follows same-host contact, directory, or staff links from checked-in official source pages. A phone or email is stored only when the selected public page explicitly publishes it as a telephone or email link. When no direct contact is available, the profile says so and links to the most relevant public information source rather than inventing a contact.
 
@@ -25,7 +25,7 @@ Institution phone numbers and admissions routes come from the NCES IPEDS 2024 di
 - Higher-education coverage includes broad-based universities, liberal-arts colleges, technical institutions, and community colleges as potential workforce and partnership assets. Narrowly specialized clinical-health, medical, pharmacy, ministry, and theology schools are excluded unless a separate source documents unmanned-systems relevance. General institutional inclusion is labeled as supporting capacity and is not presented as evidence of a current unmanned-systems program.
 - Eastern Virginia Medical School is not represented as a separate institution because it became the Macon & Joan Brock Virginia Health Sciences at Old Dominion University in 2024.
 - Public descriptions must not include classified, controlled, live-operational, vulnerability, or security-procedure information.
-- Military and federal records identify only publicly documented installations and use generalized points.
+- Military and federal records identify only publicly documented installations. They use generalized points unless an official source publishes an appropriate visitor or administrative location; internal operational positions are not mapped.
 - Airport inclusion does not imply permission to fly UAS there. Operators remain responsible for all airport, airspace, and regulatory authorization.
 - Current activity, partnership routes, site-readiness details, ownership, and available acreage remain blank when the reviewed official sources do not support a specific claim.
 
@@ -48,7 +48,8 @@ The audit reviewed the primary website and attached public evidence for every ca
 
 - Added or replaced direct official organization, program, facility, or installation pages for 82 records that had relied on broad industry pages or an outdated military factbook as their primary website.
 - Added a record-specific FAA result URL for each of the 64 public-use airport records while retaining the FAA feature service and Virginia airport directories as shared supporting sources.
-- Updated Fort A.P. Hill, Fort Lee, and Fort Pickett to Fort Walker, Fort Gregg-Adams, and Fort Barfoot.
+- Uses the current official installation names Fort Walker, Fort Lee, and Fort Pickett. Fort
+  Lee and Fort Pickett were redesignated from Fort Gregg-Adams and Fort Barfoot in June 2025.
 - Recast the former VCU UAV Research Laboratory record as the specifically documented VCU ARVL Robotic Drone System.
 - Labeled four records historical where only completed or archival direct program evidence was found.
 - Replaced eight obsolete catalog links, including the Accomack County drone-team, Dominion Energy UAS, Longbow, Hampden-Sydney, NIA, and VMI references.
@@ -103,10 +104,11 @@ campus.
 The same pass added Psionic, Logos Technologies, Austal USA Advanced Technologies and
 Solutions, Devorto, DroneShield's U.S. headquarters, Analytical Mechanics Associates, Fairlead
 Maritime Systems, Mare Custos' IDEA Lab presence, and SubSea Craft's announced Virginia Beach
-operation. The SubSea Craft record remains labeled planned and locality-only because no opened
-Virginia facility or street address was publicly documented. The Fairlead record maps the
-published corporate headquarters and does not claim that a specific USV production line is at
-that address. The reviewed decisions are stored separately in
+operation. The SubSea Craft record remains labeled planned and maps the site identified in the
+Virginia Beach Development Authority resolution; the address does not establish that the
+operation has opened. The Fairlead record maps the published corporate headquarters and does
+not claim that a specific USV production line is at that address. The reviewed decisions are
+stored separately in
 `data/asset_editorial_reviews_2026_08_24.json` so the August 21 audit remains an immutable
 historical snapshot.
 
@@ -128,6 +130,33 @@ companies' counter-UAS portfolios but do not tie a specific product line to thos
 locations. The reviewed decisions are stored in
 `data/asset_editorial_reviews_2026_08_24_expansion.json`.
 
+## August 24, 2026 location-precision audit
+
+A targeted location pass upgraded 97 previously locality-level records using current official
+organization, government, facility, and institutional address sources. Exact or site-level
+coverage increased from 332 to 429 records. The pass corrected several locality assignments,
+including Dynamic Aviation to Bridgewater, CCAM to Disputanta, UVA's Coastal Research Center to
+Cape Charles, Virginia Tech's Eastern Shore AREC to Painter, and Virginia International Raceway
+to Alton.
+
+Company headquarters with a published street address use exact-address precision. Programs use
+site precision when the source identifies a host campus, department, public visitor facility, or
+administering office. Those markers are not represented as aircraft launch points, emergency
+response positions, secure entrances, flight permissions, or proof that every activity occurs at
+the displayed building. Deliberately generalized defense and test assets remain generalized.
+
+Forty-six records still lack a published street address. This group includes two regional
+records, two coordinate-defined airport records, deliberately generalized facilities, and
+organizations or programs whose official sources publish only a locality. The reviewed location
+decisions are stored in `data/asset_location_enrichment.json` and
+`data/asset_editorial_reviews_2026_08_24_locations.json`.
+
+The final availability sweep checked 85 distinct location-source URLs and found no confirmed
+dead link. Seventy-four responded normally; nine official sites blocked the automated checker,
+one state site presented a certificate-chain error, and one institutional site returned a
+temporary service error. Those eleven sources were retained because their public address content
+was reviewed directly rather than inferred from the automated response.
+
 ## August 11, 2026 priority review
 
 The initial priority review checked core UxS companies, test and research facilities, active programs, military or federal assets, and Hampton Roads records against specific official public evidence. The later full-catalog pass supersedes its coverage while retaining its decisions and review history. The deployment command `apply_catalog_reviews` applies each checked-in decision once and will not overwrite a later staff decision to unverify or revise the record.
@@ -148,6 +177,7 @@ python manage.py enrich_asset_profiles
 python manage.py apply_catalog_reviews
 python manage.py apply_catalog_reviews --reviews data/asset_editorial_reviews_2026_08_24.json
 python manage.py apply_catalog_reviews --reviews data/asset_editorial_reviews_2026_08_24_expansion.json
+python manage.py apply_catalog_reviews --reviews data/asset_editorial_reviews_2026_08_24_locations.json
 python manage.py test tests.backend.test_real_catalog
 ```
 

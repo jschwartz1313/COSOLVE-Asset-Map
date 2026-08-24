@@ -39,6 +39,7 @@ CONTACT_ENRICHMENT_PATH = ROOT / "data" / "asset_contact_enrichment.json"
 WEBSITE_ENRICHMENT_PATH = ROOT / "data" / "asset_website_enrichment.json"
 PRIORITY_PROFILE_ENRICHMENT_PATH = ROOT / "data" / "priority_profile_enrichment.json"
 SOURCE_ENRICHMENT_PATH = ROOT / "data" / "asset_source_enrichment.json"
+LOCATION_ENRICHMENT_PATH = ROOT / "data" / "asset_location_enrichment.json"
 
 IPEDS_NAME_ALIASES = {
     "University of Virginia-Main Campus": "University of Virginia",
@@ -81,6 +82,11 @@ PRIORITY_PROFILE_ENRICHMENT = (
 SOURCE_ENRICHMENT = (
     json.loads(SOURCE_ENRICHMENT_PATH.read_text()).get("assets", {})
     if SOURCE_ENRICHMENT_PATH.exists()
+    else {}
+)
+LOCATION_ENRICHMENT = (
+    json.loads(LOCATION_ENRICHMENT_PATH.read_text()).get("assets", {})
+    if LOCATION_ENRICHMENT_PATH.exists()
     else {}
 )
 
@@ -3320,7 +3326,7 @@ DEFENSE_INSTALLATIONS = [
     ("Fort Walker", "Bowling Green", "Fredericksburg Region"),
     ("Naval Support Facility Dahlgren", "Dahlgren", "Fredericksburg Region"),
     ("Defense Supply Center Richmond", "Richmond", "Greater Richmond"),
-    ("Fort Gregg-Adams", "Prince George", "Greater Richmond"),
+    ("Fort Lee", "Prince George", "Greater Richmond"),
     ("Naval Weapons Station Yorktown", "Yorktown", "Hampton Roads"),
     ("Fort Eustis - Joint Base Langley-Eustis", "Newport News", "Hampton Roads"),
     ("Langley Air Force Base - Joint Base Langley-Eustis", "Hampton", "Hampton Roads"),
@@ -3336,7 +3342,7 @@ DEFENSE_INSTALLATIONS = [
     ("Dam Neck Annex", "Virginia Beach", "Hampton Roads"),
     ("Naval Support Activity Northwest Annex", "Chesapeake", "Hampton Roads"),
     ("Surface Combat Systems Center Wallops Island", "Wallops Island", "Eastern Shore"),
-    ("Fort Barfoot", "Blackstone", "Southside Virginia"),
+    ("Fort Pickett", "Blackstone", "Southside Virginia"),
     ("Rivanna Station", "Charlottesville", "Central Virginia"),
     ("The Judge Advocate General's Legal Center and School", "Charlottesville", "Central Virginia"),
     ("Radford Army Ammunition Plant", "Radford", "New River Valley"),
@@ -8742,7 +8748,10 @@ def finalize_record(record):
 
 
 def apply_location_override(record):
-    override = LOCATION_OVERRIDES.get(record["name"])
+    override = {
+        **LOCATION_OVERRIDES.get(record["name"], {}),
+        **LOCATION_ENRICHMENT.get(record["name"], {}),
+    }
     if not override:
         return record
 
@@ -8760,7 +8769,10 @@ def apply_location_override(record):
 
     location_source = override.get("source")
     if location_source:
-        title, url = location_source
+        if isinstance(location_source, dict):
+            title, url = location_source["title"], location_source["url"]
+        else:
+            title, url = location_source
         if not any(item["url"] == url for item in record["sources"]):
             record["sources"].append({"title": title, "url": url})
     return record
@@ -9384,7 +9396,7 @@ def main():
         + VERIFIED_UXS_ADDITIONS
         + VERIFIED_UXS_EXPANSION
     )
-    records = [finalize_record(record) for record in records]
+    records = [finalize_record(apply_location_override(record)) for record in records]
     records = apply_university_campus_locations(records)
     records.sort(key=lambda item: item["name"].casefold())
     relationships = list(CATALOG_RELATIONSHIPS) + university_relationships()

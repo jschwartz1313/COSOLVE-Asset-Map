@@ -1,0 +1,1169 @@
+{
+  "methodology": "Publicly documented street addresses are attached only when an official organization, government, institution, or facility source identifies the site. Program records use the public host or administering office and site precision; the point is not presented as a launch location, response position, secure entrance, or authorization to access or operate there.",
+  "assets": {
+    "Aeroprobe": {
+      "address_line": "200 Technology Drive",
+      "city": "Christiansburg",
+      "postal_code": "24073",
+      "latitude": 37.117391,
+      "longitude": -80.375977,
+      "location_precision": "exact",
+      "source": {
+        "title": "Aeroprobe contact and headquarters information",
+        "url": "https://www.aeroprobe.com/contact/"
+      }
+    },
+    "Association for Uncrewed Vehicle Systems International": {
+      "address_line": "3100 Clarendon Boulevard, Suite 1200",
+      "city": "Arlington",
+      "postal_code": "22201",
+      "latitude": 38.886915,
+      "longitude": -77.094959,
+      "location_precision": "exact",
+      "source": {
+        "title": "AUVSI contact and headquarters information",
+        "url": "https://www.auvsi.org/get-more-information/"
+      }
+    },
+    "Auterion U.S. Headquarters": {
+      "address_line": "4250 Fairfax Drive, Suite 350",
+      "city": "Arlington",
+      "postal_code": "22203",
+      "latitude": 38.882057,
+      "longitude": -77.11226,
+      "location_precision": "exact",
+      "source": {
+        "title": "Auterion U.S. headquarters contact information",
+        "url": "https://auterion.com/company/contact-us/"
+      }
+    },
+    "Commonwealth Center for Advanced Logistics Systems": {
+      "address_line": "1964 Wakefield Street",
+      "city": "Petersburg",
+      "postal_code": "23805",
+      "latitude": 37.202567,
+      "longitude": -77.384788,
+      "location_precision": "exact",
+      "source": {
+        "title": "Commonwealth Center for Advanced Logistics Systems contact information",
+        "url": "https://www.ccals.com/"
+      }
+    },
+    "Commonwealth Center for Advanced Manufacturing": {
+      "address_line": "5520 West Quaker Road",
+      "city": "Disputanta",
+      "postal_code": "23842",
+      "latitude": 37.186124,
+      "longitude": -77.304537,
+      "location_precision": "exact",
+      "source": {
+        "title": "Commonwealth Center for Advanced Manufacturing contact information",
+        "url": "https://ccam-va.com/"
+      }
+    },
+    "Dynamic Aviation": {
+      "address_line": "1402 Airport Road",
+      "city": "Bridgewater",
+      "postal_code": "22812-0007",
+      "latitude": 38.363337,
+      "longitude": -78.961347,
+      "location_precision": "exact",
+      "source": {
+        "title": "Dynamic Aviation contact information",
+        "url": "https://www.dynamicaviation.com/contact-us/"
+      }
+    },
+    "Flying Ship Company": {
+      "address_line": "15 East Market Street, Suite 615",
+      "city": "Leesburg",
+      "postal_code": "20178",
+      "latitude": 39.11525,
+      "longitude": -77.564039,
+      "location_precision": "exact",
+      "source": {
+        "title": "Flying Ship Company contact information",
+        "url": "https://www.flyingship.co/contact"
+      }
+    },
+    "Heven AeroTech Headquarters": {
+      "address_line": "45240 Business Court, Suite 400",
+      "city": "Dulles",
+      "postal_code": "20166",
+      "latitude": 38.980842,
+      "longitude": -77.436011,
+      "location_precision": "exact",
+      "source": {
+        "title": "Heven AeroTech headquarters contact information",
+        "url": "https://hevenaerotech.com/contact-us/"
+      }
+    },
+    "Lockheed Martin Rotary and Mission Systems - Manassas": {
+      "address_line": "9500 Godwin Drive, Building 400",
+      "city": "Manassas",
+      "postal_code": "20110-4166",
+      "latitude": 38.747044,
+      "longitude": -77.512928,
+      "location_precision": "exact",
+      "source": {
+        "title": "Lockheed Martin Manassas site information",
+        "url": "https://www.lockheedmartin.com/en-us/who-we-are/business-areas/rotary-and-mission-systems/manassas-va.html"
+      }
+    },
+    "New College Institute": {
+      "address_line": "Baldwin Building, 191 Fayette Street",
+      "city": "Martinsville",
+      "postal_code": "24112",
+      "latitude": 36.693039,
+      "longitude": -79.876457,
+      "location_precision": "exact",
+      "source": {
+        "title": "New College Institute location information",
+        "url": "https://newcollegeinstitute.org/"
+      }
+    },
+    "Perrone Robotics": {
+      "address_line": "1000 Research Park Boulevard, Suite 106",
+      "city": "Charlottesville",
+      "postal_code": "22911",
+      "latitude": 38.150355,
+      "longitude": -78.43496,
+      "location_precision": "exact",
+      "source": {
+        "title": "Perrone Robotics headquarters contact information",
+        "url": "https://www.perronerobotics.com/contact/"
+      }
+    },
+    "QinetiQ US Headquarters": {
+      "address_line": "10440 Furnace Road, Suite 204",
+      "city": "Lorton",
+      "postal_code": "22079-2630",
+      "latitude": 38.675086,
+      "longitude": -77.240393,
+      "location_precision": "exact",
+      "source": {
+        "title": "QinetiQ U.S. locations",
+        "url": "https://www.qinetiq.com/en-us/who-we-are/our-locations"
+      }
+    },
+    "Torc Robotics": {
+      "address_line": "405 Partnership Drive",
+      "city": "Blacksburg",
+      "postal_code": "24060",
+      "latitude": 37.189551,
+      "longitude": -80.392214,
+      "location_precision": "exact",
+      "source": {
+        "title": "Torc Robotics Blacksburg headquarters",
+        "url": "https://torc.ai/about-us/blacksburg/"
+      }
+    },
+    "Virginia Innovation Partnership Corporation": {
+      "address_line": "313 East Broad Street",
+      "city": "Richmond",
+      "postal_code": "23219",
+      "latitude": 37.543832,
+      "longitude": -77.439186,
+      "location_precision": "exact",
+      "source": {
+        "title": "Virginia Innovation Partnership Corporation contact information",
+        "url": "https://vipc.org/contact-us/"
+      }
+    },
+    "Zenith Aerotech": {
+      "address_line": "10517 Critzers Shop Road",
+      "city": "Afton",
+      "postal_code": "22920",
+      "latitude": 38.002365,
+      "longitude": -78.825996,
+      "location_precision": "exact",
+      "source": {
+        "title": "Zenith AeroTech contact information",
+        "url": "https://zenithaerotech.com/tethered-drone-contact-us/"
+      }
+    },
+    "RapidFlight UAS Manufacturing Headquarters": {
+      "address_line": "9617 Center Street",
+      "city": "Manassas",
+      "postal_code": "20110",
+      "latitude": 38.753213,
+      "longitude": -77.488543,
+      "location_precision": "site",
+      "source": {
+        "title": "RapidFlight Manassas manufacturing headquarters opening",
+        "url": "https://www.prnewswire.com/news-releases/rapidflight-celebrates-grand-opening-of-uas-3d-manufacturing-headquarters-in-manassas-virginia-301884344.html"
+      }
+    },
+    "UVA Coastal Research Center UAS Operations": {
+      "address_line": "6364 Cliffs Road",
+      "city": "Cape Charles",
+      "postal_code": "23310",
+      "latitude": 37.288373,
+      "longitude": -75.926299,
+      "location_precision": "site",
+      "source": {
+        "title": "UVA Coastal Research Center contact information",
+        "url": "https://abcrc.virginia.edu/contact-us"
+      }
+    },
+    "Richmond Marine Terminal": {
+      "address_line": "5000 Deepwater Terminal Road",
+      "city": "Richmond",
+      "postal_code": "23234",
+      "latitude": 37.45784,
+      "longitude": -77.423308,
+      "location_precision": "site",
+      "source": {
+        "title": "Port of Virginia terminal directions",
+        "url": "https://operations.portofvirginia.com/terminal-directions/"
+      }
+    },
+    "Virginia Inland Port": {
+      "address_line": "7685 Winchester Road",
+      "city": "Front Royal",
+      "postal_code": "22630",
+      "latitude": 38.98705,
+      "longitude": -78.180598,
+      "location_precision": "site",
+      "source": {
+        "title": "Port of Virginia terminal directions",
+        "url": "https://operations.portofvirginia.com/terminal-directions/"
+      }
+    },
+    "Xelevate Leesburg Unmanned Systems Facility": {
+      "address_line": "13870 Taylorstown Road",
+      "city": "Leesburg",
+      "postal_code": "20176",
+      "latitude": 39.231209,
+      "longitude": -77.551347,
+      "location_precision": "site",
+      "source": {
+        "title": "Xelevate Virginia facility visitor terms",
+        "url": "https://xelevateus.com/terms-and-conditions/"
+      }
+    },
+    "Virginia Tech Eastern Shore AREC Drone Application Research": {
+      "address_line": "33446 Research Drive",
+      "city": "Painter",
+      "postal_code": "23420",
+      "latitude": 37.583499,
+      "longitude": -75.820517,
+      "location_precision": "site",
+      "source": {
+        "title": "Virginia Tech Eastern Shore AREC contact information",
+        "url": "https://www.arec.vaes.vt.edu/arec/eastern-shore/contact.html"
+      }
+    },
+    "Volvo Trucks New River Valley Plant": {
+      "address_line": "New River Valley Plant, I-81 Exit 98",
+      "city": "Dublin",
+      "postal_code": "24084",
+      "latitude": 37.073293,
+      "longitude": -80.704077,
+      "location_precision": "site",
+      "source": {
+        "title": "Volvo Group New River Valley Plant location information",
+        "url": "https://www.volvogroup.com/en/about-us/organization/our-production-facilities/new-river-valley-plant.html"
+      }
+    },
+    "Virginia International Raceway Automated Vehicle Test Environment": {
+      "address_line": "1245 Pine Tree Road",
+      "city": "Alton",
+      "postal_code": "24520",
+      "latitude": 36.560025,
+      "longitude": -79.20251,
+      "location_precision": "site",
+      "source": {
+        "title": "Virginia International Raceway contact information",
+        "url": "https://virnow.com/contact/"
+      }
+    },
+    "Wing Christiansburg Drone Delivery Program": {
+      "address_line": "160 Welcome Street NE",
+      "city": "Christiansburg",
+      "postal_code": "24073",
+      "latitude": 37.161937,
+      "longitude": -80.418745,
+      "location_precision": "site",
+      "source": {
+        "title": "Wing Christiansburg operations profile",
+        "url": "https://wing.com/news/meet-team-behind-americas-first"
+      }
+    },
+    "Defense Advanced Research Projects Agency": {
+      "address_line": "675 North Randolph Street",
+      "city": "Arlington",
+      "postal_code": "22203",
+      "latitude": 38.8788,
+      "longitude": -77.109173,
+      "location_precision": "site",
+      "source": {
+        "title": "DARPA visitor information",
+        "url": "https://www.darpa.mil/policies/visitor-information"
+      }
+    },
+    "National Geospatial-Intelligence Agency Springfield": {
+      "address_line": "7500 GEOINT Drive",
+      "city": "Springfield",
+      "postal_code": "22150-7500",
+      "latitude": 38.753741,
+      "longitude": -77.194772,
+      "location_precision": "site",
+      "source": {
+        "title": "National Geospatial-Intelligence Agency contact information",
+        "url": "https://www.nga.mil/contact/Contact_Us.html"
+      }
+    },
+    "Defense Supply Center Richmond": {
+      "address_line": "6090 Strathmore Road",
+      "city": "Richmond",
+      "postal_code": "23237",
+      "latitude": 37.443177,
+      "longitude": -77.45167,
+      "location_precision": "site",
+      "source": {
+        "title": "Defense Supply Center Richmond visitor information",
+        "url": "https://www.dla.mil/Aviation/Installation/Visitors-and-ID-Office/"
+      }
+    },
+    "Joint Base Myer-Henderson Hall": {
+      "address_line": "Visitor Control Center, Building S-507, 29 Carpenter Road",
+      "city": "Fort Myer",
+      "postal_code": "22211",
+      "latitude": 38.872366,
+      "longitude": -77.079797,
+      "location_precision": "site",
+      "source": {
+        "title": "Joint Base Myer-Henderson Hall visitor control information",
+        "url": "https://home.army.mil/jbmhh/index.php/my-fort/all-services/access-gate-info"
+      }
+    },
+    "Fort Belvoir": {
+      "address_line": "Visitor Control Center, 9500 Pohick Road, Building 1409",
+      "city": "Fort Belvoir",
+      "postal_code": "22060",
+      "latitude": 38.699422,
+      "longitude": -77.155683,
+      "location_precision": "site",
+      "source": {
+        "title": "Fort Belvoir installation access information",
+        "url": "https://home.army.mil/belvoir/about/installation-access"
+      }
+    },
+    "Fort Lee": {
+      "address_line": "Visitor Control Center, 500 Gregg Avenue, Building 5228",
+      "city": "Fort Lee",
+      "postal_code": "23801",
+      "latitude": 37.243076,
+      "longitude": -77.350243,
+      "location_precision": "site",
+      "source": {
+        "title": "Fort Lee visitor information",
+        "url": "https://home.army.mil/lee/access"
+      }
+    },
+    "Army National Guard Readiness Center": {
+      "address_line": "111 South George Mason Drive",
+      "city": "Arlington",
+      "postal_code": "22204-1373",
+      "latitude": 38.867589,
+      "longitude": -77.105382,
+      "location_precision": "site",
+      "source": {
+        "title": "National Guard Bureau readiness-center address",
+        "url": "https://www.ngbpmc.ng.mil/Portals/27/Publications/PPOM/CY24/U_PPOM%2024-006_20240729.pdf?ver=h4yHU1OntPicYSxgSbryPQ%3D%3D"
+      }
+    },
+    "The Judge Advocate General's Legal Center and School": {
+      "address_line": "600 Massie Road",
+      "city": "Charlottesville",
+      "postal_code": "22903",
+      "latitude": 38.05204,
+      "longitude": -78.509251,
+      "location_precision": "site",
+      "source": {
+        "title": "The Judge Advocate General's Legal Center and School contact information",
+        "url": "https://tjaglcs.army.mil/G6-itd"
+      }
+    },
+    "Arlington Joint Public Safety UAS Program": {
+      "address_line": "1400 North Uhle Street, Suite 300",
+      "city": "Arlington",
+      "postal_code": "22201",
+      "latitude": 38.889613,
+      "longitude": -77.08467,
+      "location_precision": "site",
+      "source": {
+        "title": "Arlington Public Safety Communications and Emergency Management contact information",
+        "url": "https://www.arlingtonva.us/Government/Departments/PSCEM"
+      }
+    },
+    "Albemarle County Fire Rescue UAS Program": {
+      "address_line": "460 Stagecoach Road, Suite F",
+      "city": "Charlottesville",
+      "postal_code": "22902",
+      "latitude": 38.004791,
+      "longitude": -78.515669,
+      "location_precision": "site",
+      "source": {
+        "title": "Albemarle County Fire Rescue emergency services contact information",
+        "url": "https://www.albemarle.org/government/fire-rescue/emergency-services"
+      }
+    },
+    "Albemarle County Police UAS Program": {
+      "address_line": "1600 5th Street, Suite D",
+      "city": "Charlottesville",
+      "postal_code": "22902",
+      "latitude": 38.005238,
+      "longitude": -78.516828,
+      "location_precision": "site",
+      "source": {
+        "title": "Albemarle County Police Department contact information",
+        "url": "https://www.albemarle.org/government/police?lv=true"
+      }
+    },
+    "Ashland Police Department Drone Program": {
+      "address_line": "601 England Street",
+      "city": "Ashland",
+      "postal_code": "23005",
+      "latitude": 37.758314,
+      "longitude": -77.473617,
+      "location_precision": "site",
+      "source": {
+        "title": "Ashland Police Department contact information",
+        "url": "https://www.ashlandva.gov/296/About-Us"
+      }
+    },
+    "Bedford County Sheriff's Office Drone Team": {
+      "address_line": "1345 Falling Creek Road",
+      "city": "Bedford",
+      "postal_code": "24523",
+      "latitude": 37.31166,
+      "longitude": -79.504548,
+      "location_precision": "site",
+      "source": {
+        "title": "Bedford County Sheriff's Office contact information",
+        "url": "https://sheriff.bedfordcountyva.gov/about-us/sheriff-advanced-components/business-directory-list"
+      }
+    },
+    "Campbell County Sheriff's Office Drone Program": {
+      "address_line": "87 Courthouse Lane",
+      "city": "Rustburg",
+      "postal_code": "24588",
+      "latitude": 37.27746,
+      "longitude": -79.10244,
+      "location_precision": "site",
+      "source": {
+        "title": "Campbell County Sheriff's Office contact information",
+        "url": "https://www.campbellcountyva.gov/310/Sheriffs-Office"
+      }
+    },
+    "Charlottesville Police UAS Team": {
+      "address_line": "606 East Market Street",
+      "city": "Charlottesville",
+      "postal_code": "22902",
+      "latitude": 38.030297,
+      "longitude": -78.477347,
+      "location_precision": "site",
+      "source": {
+        "title": "Charlottesville Police Department contact information",
+        "url": "https://www.charlottesville.gov/308/Contact-Us"
+      }
+    },
+    "Chesterfield Fire and EMS sUAS Program": {
+      "address_line": "6731 Mimms Loop",
+      "city": "Chesterfield",
+      "postal_code": "23832",
+      "latitude": 37.377091,
+      "longitude": -77.504127,
+      "location_precision": "site",
+      "source": {
+        "title": "Chesterfield Fire and EMS contact information",
+        "url": "https://www.chesterfield.gov/FireAndEMS"
+      }
+    },
+    "Chesterfield Police Drone as First Responder Program": {
+      "address_line": "10001 Iron Bridge Road",
+      "city": "Chesterfield",
+      "postal_code": "23832",
+      "latitude": 37.376473,
+      "longitude": -77.507926,
+      "location_precision": "site",
+      "source": {
+        "title": "Chesterfield Police headquarters",
+        "url": "https://www.chesterfield.gov/Facilities/Facility/Details/Police-Headquarters-98"
+      }
+    },
+    "City of Fairfax Regional UAS Unit": {
+      "address_line": "3730 Blenheim Boulevard",
+      "city": "Fairfax",
+      "postal_code": "22030",
+      "latitude": 38.851777,
+      "longitude": -77.299845,
+      "location_precision": "site",
+      "source": {
+        "title": "City of Fairfax Police Department contact information",
+        "url": "https://www.fairfaxva.gov/files/assets/city/v/1/police/documents/community-feedback-form.pdf"
+      }
+    },
+    "Culpeper Police Department Drone Team": {
+      "address_line": "740 Old Brandy Road",
+      "city": "Culpeper",
+      "postal_code": "22701",
+      "latitude": 38.478997,
+      "longitude": -77.984389,
+      "location_precision": "site",
+      "source": {
+        "title": "Culpeper Police Department annual report and contact information",
+        "url": "https://files.culpeperva.gov/FY25%20TOC%20Annual%20Report.pdf"
+      }
+    },
+    "Fredericksburg Drone as First Responder Program": {
+      "address_line": "2200 Cowan Boulevard",
+      "city": "Fredericksburg",
+      "postal_code": "22401",
+      "latitude": 38.303323,
+      "longitude": -77.488932,
+      "location_precision": "site",
+      "source": {
+        "title": "Fredericksburg Police Department contact information",
+        "url": "https://www.fredericksburgva.gov/Directory.aspx?did=12"
+      }
+    },
+    "Fredericksburg Police UAS Team": {
+      "address_line": "2200 Cowan Boulevard",
+      "city": "Fredericksburg",
+      "postal_code": "22401",
+      "latitude": 38.303323,
+      "longitude": -77.488932,
+      "location_precision": "site",
+      "source": {
+        "title": "Fredericksburg Police Department contact information",
+        "url": "https://www.fredericksburgva.gov/Directory.aspx?did=12"
+      }
+    },
+    "Hanover County Sheriff's Office sUAS Team": {
+      "address_line": "7522 County Complex Road",
+      "city": "Hanover",
+      "postal_code": "23069",
+      "latitude": 37.764637,
+      "longitude": -77.366613,
+      "location_precision": "site",
+      "source": {
+        "title": "Hanover County Sheriff's Office contact information",
+        "url": "https://www.hanoversheriff.com/27/Our-Organization"
+      }
+    },
+    "Leesburg Police UAS Team": {
+      "address_line": "65 Plaza Street NE",
+      "city": "Leesburg",
+      "postal_code": "20176",
+      "latitude": 39.112434,
+      "longitude": -77.547039,
+      "location_precision": "site",
+      "source": {
+        "title": "Leesburg Police Department facility information",
+        "url": "https://www.leesburgva.gov/Home/Components/FacilityDirectory/FacilityDirectory/231/2311"
+      }
+    },
+    "Loudoun County Sheriff's Office Drone Unit": {
+      "address_line": "803 Sycolin Road SE",
+      "city": "Leesburg",
+      "postal_code": "20175",
+      "latitude": 39.082373,
+      "longitude": -77.552597,
+      "location_precision": "site",
+      "source": {
+        "title": "Loudoun County Sheriff's Administration Building",
+        "url": "https://sheriff.loudoun.gov/4572/Sheriffs-Administration-Building"
+      }
+    },
+    "Lynchburg Fire Department UAV Team": {
+      "address_line": "800 Madison Street",
+      "city": "Lynchburg",
+      "postal_code": "24504",
+      "latitude": 37.413626,
+      "longitude": -79.146594,
+      "location_precision": "site",
+      "source": {
+        "title": "Lynchburg Fire Department contact information",
+        "url": "https://www.lynchburgva.gov/m/directory/department?did=33"
+      }
+    },
+    "Lynchburg Police Drone Unit": {
+      "address_line": "3405 Odd Fellows Road",
+      "city": "Lynchburg",
+      "postal_code": "24501",
+      "latitude": 37.383136,
+      "longitude": -79.162529,
+      "location_precision": "site",
+      "source": {
+        "title": "Lynchburg Police Department contact information",
+        "url": "https://www.lynchburgva.gov/m/directory/department?did=64"
+      }
+    },
+    "Montgomery County Sheriff's Office UAS Team": {
+      "address_line": "1 East Main Street",
+      "city": "Christiansburg",
+      "postal_code": "24073",
+      "latitude": 37.130053,
+      "longitude": -80.408451,
+      "location_precision": "site",
+      "source": {
+        "title": "Montgomery County Sheriff's Office contact information",
+        "url": "https://montgomerycountyva.gov/1/departments-services/sheriffs-office"
+      }
+    },
+    "Orange County Sheriff's Office Drone Team": {
+      "address_line": "11282 Government Center Drive, Suite A",
+      "city": "Orange",
+      "postal_code": "22960",
+      "latitude": 38.248565,
+      "longitude": -78.055492,
+      "location_precision": "site",
+      "source": {
+        "title": "Orange County Sheriff's Office contact information",
+        "url": "https://www.orangecountyva.gov/sheriff"
+      }
+    },
+    "Richmond Police sUAV Program": {
+      "address_line": "200 West Grace Street",
+      "city": "Richmond",
+      "postal_code": "23220",
+      "latitude": 37.545913,
+      "longitude": -77.444541,
+      "location_precision": "site",
+      "source": {
+        "title": "Richmond Police Department contact information",
+        "url": "https://rva.gov/police/police-faqs"
+      }
+    },
+    "Roanoke County Fire and Rescue Drone Program": {
+      "address_line": "5925 Cove Road",
+      "city": "Roanoke",
+      "postal_code": "24019",
+      "latitude": 37.321176,
+      "longitude": -80.022068,
+      "location_precision": "site",
+      "source": {
+        "title": "Roanoke County Fire and Rescue contact information",
+        "url": "https://www.roanokecountyva.gov/Directory.aspx?DID=21"
+      }
+    },
+    "Roanoke County Police UAV Team": {
+      "address_line": "5925 Cove Road",
+      "city": "Roanoke",
+      "postal_code": "24019",
+      "latitude": 37.321176,
+      "longitude": -80.022068,
+      "location_precision": "site",
+      "source": {
+        "title": "Roanoke County Police Department contact information",
+        "url": "https://www.roanokecountyva.gov/1085/Crime-Reports"
+      }
+    },
+    "Wise County Sheriff's Office Drone Program": {
+      "address_line": "5605 Patriot Drive",
+      "city": "Wise",
+      "postal_code": "24293",
+      "latitude": 36.967429,
+      "longitude": -82.550581,
+      "location_precision": "site",
+      "source": {
+        "title": "Wise County Sheriff's Office contact information",
+        "url": "https://www.wisecounty.org/directory.aspx?did=18"
+      }
+    },
+    "Wythe County Sheriff's Office Drone Program": {
+      "address_line": "245 South 4th Street",
+      "city": "Wytheville",
+      "postal_code": "24382",
+      "latitude": 36.94725,
+      "longitude": -81.083722,
+      "location_precision": "site",
+      "source": {
+        "title": "Wythe County Sheriff's Office contact information",
+        "url": "https://www.wytheco.org/170/Sheriff"
+      }
+    },
+    "Virginia Conservation Police UAS Program": {
+      "address_line": "7870 Villa Park Drive, Suite 400",
+      "city": "Henrico",
+      "postal_code": "23228",
+      "latitude": 37.627916,
+      "longitude": -77.466326,
+      "location_precision": "site",
+      "source": {
+        "title": "Virginia Conservation Police headquarters information",
+        "url": "https://dwr.virginia.gov/wp-content/uploads/media/Virginia-Conservation-Police-Annual-Report-2022.pdf"
+      }
+    },
+    "Virginia Department of Forestry UAV Program": {
+      "address_line": "900 Natural Resources Drive, Suite 800",
+      "city": "Charlottesville",
+      "postal_code": "22903",
+      "latitude": 38.022084,
+      "longitude": -78.530654,
+      "location_precision": "site",
+      "source": {
+        "title": "Virginia Department of Forestry headquarters",
+        "url": "https://www.dof.virginia.gov/office_location/128/"
+      }
+    },
+    "Virginia First Responder Unmanned Aircraft Trade and Replace Program": {
+      "address_line": "1100 Bank Street",
+      "city": "Richmond",
+      "postal_code": "23219",
+      "latitude": 37.537485,
+      "longitude": -77.433638,
+      "location_precision": "site",
+      "source": {
+        "title": "Virginia Department of Criminal Justice Services contact information",
+        "url": "https://www.dcjs.virginia.gov/about-dcjs/foia-requests"
+      }
+    },
+    "Virginia State Police UAS Program": {
+      "address_line": "7700 Midlothian Turnpike",
+      "city": "North Chesterfield",
+      "postal_code": "23235",
+      "latitude": 37.498983,
+      "longitude": -77.539283,
+      "location_precision": "site",
+      "source": {
+        "title": "Virginia State Police headquarters directions",
+        "url": "https://vsp.virginia.gov/sections-units-bureaus/superintendent/directions-to-virginia-state-police/"
+      }
+    },
+    "Virginia Community College System Unmanned Systems Curriculum": {
+      "address_line": "300 Arboretum Place, Suite 200",
+      "city": "Richmond",
+      "postal_code": "23236",
+      "latitude": 37.493813,
+      "longitude": -77.564677,
+      "location_precision": "site",
+      "source": {
+        "title": "Virginia Community College System contact information",
+        "url": "https://www.vccs.edu/contact-us/"
+      }
+    },
+    "Virginia Department of Transportation UAS Program": {
+      "address_line": "1221 East Broad Street",
+      "city": "Richmond",
+      "postal_code": "23219",
+      "latitude": 37.539014,
+      "longitude": -77.431139,
+      "location_precision": "site",
+      "source": {
+        "title": "Virginia Department of Transportation contact information",
+        "url": "https://www.vdot.virginia.gov/contact/"
+      }
+    },
+    "Virginia Advanced Air Mobility Alliance": {
+      "address_line": "313 East Broad Street",
+      "city": "Richmond",
+      "postal_code": "23219",
+      "latitude": 37.543832,
+      "longitude": -77.439186,
+      "location_precision": "site",
+      "source": {
+        "title": "Virginia Innovation Partnership Corporation contact information",
+        "url": "https://vipc.org/contact-us/"
+      }
+    },
+    "Virginia Public Safety Innovation Center": {
+      "address_line": "313 East Broad Street",
+      "city": "Richmond",
+      "postal_code": "23219",
+      "latitude": 37.543832,
+      "longitude": -77.439186,
+      "location_precision": "site",
+      "source": {
+        "title": "Virginia Innovation Partnership Corporation contact information",
+        "url": "https://vipc.org/contact-us/"
+      }
+    },
+    "Blue Ridge Community College Unmanned Systems Courses": {
+      "address_line": "One College Lane",
+      "city": "Weyers Cave",
+      "postal_code": "24486-0080",
+      "latitude": 38.279075,
+      "longitude": -78.937471,
+      "location_precision": "site",
+      "source": {
+        "title": "Blue Ridge Community College campus location (NCES IPEDS 2024)",
+        "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+      }
+    },
+    "Brightpoint Community College Unmanned Systems Courses": {
+      "address_line": "13101 Route 1",
+      "city": "Chester",
+      "postal_code": "23831-5316",
+      "latitude": 37.346254,
+      "longitude": -77.407919,
+      "location_precision": "site",
+      "source": {
+        "title": "Brightpoint Community College campus location (NCES IPEDS 2024)",
+        "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+      }
+    },
+    "Danville Community College Unmanned Systems Courses": {
+      "address_line": "1008 South Main Street",
+      "city": "Danville",
+      "postal_code": "24541-4004",
+      "latitude": 36.565286,
+      "longitude": -79.408803,
+      "location_precision": "site",
+      "source": {
+        "title": "Danville Community College campus location (NCES IPEDS 2024)",
+        "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+      }
+    },
+    "Eastern Shore Community College Unmanned Systems Courses": {
+      "address_line": "29316 Lankford Highway",
+      "city": "Melfa",
+      "postal_code": "23410",
+      "latitude": 37.639652,
+      "longitude": -75.751129,
+      "location_precision": "site",
+      "source": {
+        "title": "Eastern Shore Community College campus location (NCES IPEDS 2024)",
+        "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+      }
+    },
+    "Laurel Ridge Community College Unmanned Systems Courses": {
+      "address_line": "173 Skirmisher Lane",
+      "city": "Middletown",
+      "postal_code": "22645",
+      "latitude": 39.036001,
+      "longitude": -78.267336,
+      "location_precision": "site",
+      "source": {
+        "title": "Laurel Ridge Community College campus location (NCES IPEDS 2024)",
+        "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+      }
+    },
+    "Mountain Gateway Community College Unmanned Systems Courses": {
+      "address_line": "1000 College Drive",
+      "city": "Clifton Forge",
+      "postal_code": "24422",
+      "latitude": 37.812275,
+      "longitude": -79.852536,
+      "location_precision": "site",
+      "source": {
+        "title": "Mountain Gateway Community College campus location (NCES IPEDS 2024)",
+        "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+      }
+    },
+    "Piedmont Virginia Community College sUAS Public Safety Courses": {
+      "address_line": "501 College Drive",
+      "city": "Charlottesville",
+      "postal_code": "22902",
+      "latitude": 38.006895,
+      "longitude": -78.483707,
+      "location_precision": "site",
+      "source": {
+        "title": "Piedmont Virginia Community College campus location (NCES IPEDS 2024)",
+        "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+      }
+    },
+    "Virginia Highlands Community College Small UAS Certificate": {
+      "address_line": "100 VHCC Drive",
+      "city": "Abingdon",
+      "postal_code": "24212",
+      "latitude": 36.698866,
+      "longitude": -82.001118,
+      "location_precision": "site",
+      "source": {
+        "title": "Virginia Highlands Community College campus location (NCES IPEDS 2024)",
+        "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+      }
+    },
+    "Virginia Western Autonomous Vehicle Technology Certificate": {
+      "address_line": "3094 Colonial Avenue",
+      "city": "Roanoke",
+      "postal_code": "24015",
+      "latitude": 37.245029,
+      "longitude": -79.973011,
+      "location_precision": "site",
+      "source": {
+        "title": "Virginia Western Community College campus location (NCES IPEDS 2024)",
+        "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+      }
+    },
+    "ATA Aviation": {
+      "address_line": "752 Walker Road, Suite D",
+      "city": "Great Falls",
+      "postal_code": "22066",
+      "latitude": 38.997318,
+      "longitude": -77.28849,
+      "location_precision": "exact",
+      "source": {
+        "title": "ATA contact and headquarters information",
+        "url": "https://ata-llc.com/contact/"
+      }
+    },
+    "DroneUp": {
+      "address_line": "160 Newtown Road, Suite 500",
+      "city": "Virginia Beach",
+      "postal_code": "23462",
+      "latitude": 36.842642,
+      "longitude": -76.186071,
+      "location_precision": "exact",
+      "source": {
+        "title": "DroneUp public contact address",
+        "url": "https://www.droneup.com/privacy-policy"
+      }
+    },
+    "DZYNE Technologies": {
+      "address_line": "8280 Willow Oaks Corporate Drive, Suite 200",
+      "city": "Fairfax",
+      "postal_code": "22031",
+      "latitude": 38.863831,
+      "longitude": -77.230173,
+      "location_precision": "exact",
+    "source": {
+      "title": "DZYNE Supplier Code of Conduct",
+      "url": "https://dzyne.com/wp-content/uploads/2026/01/DZYNE-SUPPLIER-CODE-OF-CONDUCT_DP-2-1002-56-V2.pdf"
+    }
+    },
+    "Sentinel Robotic Solutions": {
+      "address_line": "33531 Chincoteague Road",
+      "city": "Wallops Island",
+      "postal_code": "23337",
+      "latitude": 37.925329,
+      "longitude": -75.487131,
+      "location_precision": "exact",
+      "source": {
+        "title": "Sentinel Robotic Solutions contact information",
+        "url": "https://www.srsgrp.com/contact"
+      }
+    },
+    "SubSea Craft Virginia Beach Operations": {
+      "address_line": "2517 Squadron Court",
+      "city": "Virginia Beach",
+      "postal_code": "23453",
+      "latitude": 36.796937,
+      "longitude": -76.060818,
+      "location_precision": "site",
+      "source": {
+        "title": "Virginia Beach Development Authority SubSea Craft expansion resolution",
+        "url": "https://yes-vb.files.svdcdn.com/production/About-Us/VBDA/MeetingMaterial/2026/VBDA-Resolutions-May-2026.pdf"
+      }
+    },
+    "Accomack County Emergency Management Drone Program": {
+      "address_line": "18426 Dunne Avenue",
+      "city": "Parksley",
+      "postal_code": "23421",
+      "latitude": 37.784394,
+      "longitude": -75.652377,
+      "location_precision": "site",
+      "source": {
+        "title": "Accomack County Department of Public Safety address",
+        "url": "https://www.accomack.gov/292/Public-Safety"
+      }
+    },
+    "Augusta County Sheriff's Office Drone Team": {
+      "address_line": "127 Lee Highway",
+      "city": "Verona",
+      "postal_code": "24482",
+      "latitude": 38.194112,
+      "longitude": -79.017976,
+      "location_precision": "site",
+      "source": {
+        "title": "Augusta County Sheriff's Office address",
+        "url": "https://www.co.augusta.va.us/government/departments-and-offices/sheriff"
+      }
+    },
+    "Danville Life Saving Crew Drone Team": {
+      "address_line": "202 Christopher Lane",
+      "city": "Danville",
+      "postal_code": "24541",
+      "latitude": 36.585261,
+      "longitude": -79.409408,
+      "location_precision": "site",
+      "source": {
+        "title": "Danville Life Saving Crew drone operations and contact information",
+        "url": "https://www.dlsc.org/drones"
+      }
+    },
+    "Fairfax County Unmanned Aircraft Systems Program": {
+      "address_line": "4890 Alliance Drive",
+      "city": "Fairfax",
+      "postal_code": "22030",
+      "latitude": 38.847229,
+      "longitude": -77.374952,
+      "location_precision": "site",
+      "source": {
+        "title": "Fairfax County UAS program contact location",
+        "url": "https://www.fairfaxcounty.gov/uas/about-uas-program"
+      }
+    },
+    "Harrisonburg Police and Fire Drone and Robot Unit": {
+      "address_line": "101 North Main Street",
+      "city": "Harrisonburg",
+      "postal_code": "22802",
+      "latitude": 38.450481,
+      "longitude": -78.868385,
+      "location_precision": "site",
+      "source": {
+        "title": "Harrisonburg Police Department contact location",
+        "url": "https://www.harrisonburgva.gov/contact-hpd"
+      }
+    },
+    "Henrico Fire Robotics Response Team": {
+      "address_line": "7721 East Parham Road",
+      "city": "Henrico",
+      "postal_code": "23294",
+      "latitude": 37.630251,
+      "longitude": -77.527333,
+      "location_precision": "site",
+      "source": {
+        "title": "Henrico Fire Administration public location",
+        "url": "https://henrico.gov/services/fireems-reports/1000"
+      }
+    },
+    "Henry County Sheriff's Office Drone Program": {
+      "address_line": "3250 Kings Mountain Road",
+      "city": "Martinsville",
+      "postal_code": "24112",
+      "latitude": 36.741092,
+      "longitude": -79.891957,
+      "location_precision": "site",
+      "source": {
+        "title": "Henry County Sheriff's Office address",
+        "url": "https://www.henrycountyva.gov/m/directory/department?did=32"
+      }
+    },
+    "King George County Public Safety Drone Program": {
+      "address_line": "8122 Kings Highway",
+      "city": "King George",
+      "postal_code": "22485",
+      "latitude": 38.276607,
+      "longitude": -77.206153,
+      "location_precision": "site",
+      "source": {
+        "title": "King George Fire and Rescue headquarters",
+        "url": "https://www.kinggeorgecountyva.gov/337/Emergency-Management"
+      }
+    },
+    "Madison County Sheriff's Office UAS Program": {
+      "address_line": "115 Church Street",
+      "city": "Madison",
+      "postal_code": "22727",
+      "latitude": 38.380193,
+      "longitude": -78.257441,
+      "location_precision": "site",
+      "source": {
+        "title": "Madison County Sheriff's Office address",
+        "url": "https://madisonco.virginia.gov/268/Sheriff"
+      }
+    },
+    "Mecklenburg County Sheriff's Office Drone Team": {
+      "address_line": "911 Madison Street",
+      "city": "Boydton",
+      "postal_code": "23917",
+      "latitude": 36.669604,
+      "longitude": -78.383276,
+      "location_precision": "site",
+      "source": {
+        "title": "Mecklenburg County Sheriff's Office address",
+        "url": "https://www.mecklenburgva.com/194/Sheriffs-Office"
+      }
+    },
+    "Occoquan Police Department Public Safety Drone Program": {
+      "address_line": "124 Commerce Street",
+      "city": "Occoquan",
+      "postal_code": "22125",
+      "latitude": 38.682349,
+      "longitude": -77.259804,
+      "location_precision": "site",
+      "source": {
+        "title": "Occoquan Police Department public safety contact location",
+        "url": "https://occoquanva.gov/public-safety/"
+      }
+    },
+    "Powhatan County Emergency Management UAS Program": {
+      "address_line": "3910 Old Buckingham Road",
+      "city": "Powhatan",
+      "postal_code": "23139",
+      "latitude": 37.544356,
+      "longitude": -77.919653,
+      "location_precision": "site",
+      "source": {
+        "title": "Powhatan County Emergency Management address",
+        "url": "https://www.powhatanva.gov/234/Emergency-Management"
+      }
+    },
+    "Prince Edward County Emergency Management Drone Program": {
+      "address_line": "111 South Street, 3rd Floor",
+      "city": "Farmville",
+      "postal_code": "23901",
+      "latitude": 37.300818,
+      "longitude": -78.392145,
+      "location_precision": "site",
+      "source": {
+        "title": "Prince Edward County Emergency Management address",
+        "url": "https://www.co.prince-edward.va.us/Departments/Emergency-Management"
+      }
+    },
+    "Radford City Police Department Drone Program": {
+      "address_line": "20 Robertson Street",
+      "city": "Radford",
+      "postal_code": "24141",
+      "latitude": 37.131588,
+      "longitude": -80.581693,
+      "location_precision": "site",
+      "source": {
+        "title": "Radford City Police Department address",
+        "url": "https://radfordva.gov/2398/Police-Department"
+      }
+    },
+    "Winchester Emergency Management sUAS Program": {
+      "address_line": "301 East Cork Street",
+      "city": "Winchester",
+      "postal_code": "22601",
+      "latitude": 39.181078,
+      "longitude": -78.161777,
+      "location_precision": "site",
+      "source": {
+        "title": "Winchester Emergency Management office address",
+        "url": "https://www.winchesterva.gov/Government/Departments/Emergency-Management"
+      }
+    },
+    "Mountain Empire Community College UAS Program": {
+      "address_line": "3441 Mountain Empire Road",
+      "city": "Big Stone Gap",
+      "postal_code": "24219",
+      "latitude": 36.856376,
+      "longitude": -82.758604,
+      "location_precision": "site",
+      "source": {
+        "title": "Mountain Empire Community College campus location",
+        "url": "https://www.mecc.edu/contact-us"
+      }
+    },
+    "New River Community College sUAS Remote Pilot Ground School": {
+      "address_line": "782 New River Road NW, Suite 400",
+      "city": "Christiansburg",
+      "postal_code": "24073",
+      "latitude": 37.167574,
+      "longitude": -80.427915,
+      "location_precision": "site",
+      "source": {
+        "title": "New River Community College Christiansburg site",
+        "url": "https://www.nr.edu/maps/campus.php"
+      }
+    },
+    "Southwest Virginia Drone Soccer Program": {
+      "address_line": "One Partnership Circle",
+      "city": "Abingdon",
+      "postal_code": "24210",
+      "latitude": 36.6957,
+      "longitude": -82.002083,
+      "location_precision": "site",
+      "source": {
+        "title": "Southwest Virginia Higher Education Center contact location",
+        "url": "https://www.swcenter.edu/contact/"
+      }
+    }
+  }
+}

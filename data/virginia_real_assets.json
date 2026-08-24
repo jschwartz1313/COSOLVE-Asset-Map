@@ -57,19 +57,20 @@
       "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.esva911.org/Communications%20Manual%20-%20Public%20Release%20Version-%20UPDATED%2011-26-24.pdf",
       "activity_status": "active",
+      "address_line": "18426 Dunne Avenue",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
       ],
-      "city": "Accomac",
+      "city": "Parksley",
       "contact_email": "safety@co.accomack.va.us",
       "contact_phone": "757-789-3610",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://www.co.accomack.va.us/departments/public-safety",
       "current_activity": "The Eastern Shore 911 Communications Manual identifies the Accomack County Drone Team as a Department of Public Safety resource available for operational needs across the Eastern Shore and beyond when requested.",
-      "latitude": 37.72,
-      "location_precision": "locality",
-      "longitude": -75.665,
+      "latitude": 37.784394,
+      "location_precision": "site",
+      "longitude": -75.652377,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -80,6 +81,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23421",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Eastern Shore",
@@ -88,6 +90,10 @@
         {
           "title": "Eastern Shore 911 Communications Manual: Accomack County Drone Team",
           "url": "https://www.esva911.org/Communications%20Manual%20-%20Public%20Release%20Version-%20UPDATED%2011-26-24.pdf"
+        },
+        {
+          "title": "Accomack County Department of Public Safety address",
+          "url": "https://www.accomack.gov/292/Public-Safety"
         },
         {
           "title": "Accomack County Emergency Management Drone Program public contact information",
@@ -258,6 +264,7 @@
       "website_url": "https://www.atscva.com/"
     },
     {
+      "address_line": "200 Technology Drive",
       "capabilities": [
         "Systems engineering and integration",
         "Operations, maintenance, and sustainment"
@@ -265,11 +272,11 @@
       "city": "Christiansburg",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 37.13,
-      "location_precision": "locality",
-      "longitude": -80.409,
+      "contact_text": "Organization public information and inquiries",
+      "contact_url": "https://www.aeroprobe.com/contact/",
+      "latitude": 37.117391,
+      "location_precision": "exact",
+      "longitude": -80.375977,
       "missions": [
         "Infrastructure inspection",
         "Logistics and contested logistics"
@@ -279,6 +286,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "24073",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "New River Valley",
@@ -287,6 +295,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "Aeroprobe contact and headquarters information",
+          "url": "https://www.aeroprobe.com/contact/"
         },
         {
           "title": "Aeroprobe: About",
@@ -444,6 +456,7 @@
       "website_url": "https://www.agricisioninc.com/"
     },
     {
+      "address_line": "460 Stagecoach Road, Suite F",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -451,11 +464,11 @@
       "city": "Charlottesville",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.albemarle.org/home/showpublisheddocument/27911/638961259487630000",
-      "latitude": 38.035,
-      "location_precision": "locality",
-      "longitude": -78.503,
+      "contact_text": "Program or parent-organization inquiries",
+      "contact_url": "https://www.albemarle.org/government/fire-rescue/emergency-services",
+      "latitude": 38.004791,
+      "location_precision": "site",
+      "longitude": -78.515669,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -466,6 +479,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "22902",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Central Virginia",
@@ -476,7 +490,7 @@
           "url": "https://www.albemarle.org/home/showpublisheddocument/27911/638961259487630000"
         },
         {
-          "title": "Albemarle County Fire Rescue emergency services",
+          "title": "Albemarle County Fire Rescue emergency services contact information",
           "url": "https://www.albemarle.org/government/fire-rescue/emergency-services"
         }
       ],
@@ -490,6 +504,7 @@
       "website_url": "https://www.albemarle.org/home/showpublisheddocument/27911/638961259487630000"
     },
     {
+      "address_line": "1600 5th Street, Suite D",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -497,11 +512,11 @@
       "city": "Charlottesville",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.albemarle.org/home/showpublisheddocument/26848/638869823368570000",
-      "latitude": 38.035,
-      "location_precision": "locality",
-      "longitude": -78.503,
+      "contact_text": "Program or parent-organization inquiries",
+      "contact_url": "https://www.albemarle.org/government/police?lv=true",
+      "latitude": 38.005238,
+      "location_precision": "site",
+      "longitude": -78.516828,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -512,6 +527,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "22902",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Central Virginia",
@@ -522,7 +538,7 @@
           "url": "https://www.albemarle.org/home/showpublisheddocument/26848/638869823368570000"
         },
         {
-          "title": "Albemarle County Police Department",
+          "title": "Albemarle County Police Department contact information",
           "url": "https://www.albemarle.org/government/police?lv=true"
         }
       ],
@@ -811,6 +827,7 @@
       "website_url": "https://www.asl.edu/"
     },
     {
+      "address_line": "1400 North Uhle Street, Suite 300",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -818,11 +835,11 @@
       "city": "Arlington",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.arlingtonva.us/Government/Departments/PSCEM/Unmanned-Aircraft-Systems",
-      "latitude": 38.881,
-      "location_precision": "locality",
-      "longitude": -77.091,
+      "contact_text": "Program or parent-organization inquiries",
+      "contact_url": "https://www.arlingtonva.us/Government/Departments/PSCEM",
+      "latitude": 38.889613,
+      "location_precision": "site",
+      "longitude": -77.08467,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -833,6 +850,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "22201",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Northern Virginia",
@@ -841,6 +859,10 @@
         {
           "title": "Arlington Joint Public Safety UAS Program",
           "url": "https://www.arlingtonva.us/Government/Departments/PSCEM/Unmanned-Aircraft-Systems"
+        },
+        {
+          "title": "Arlington Public Safety Communications and Emergency Management contact information",
+          "url": "https://www.arlingtonva.us/Government/Departments/PSCEM"
         },
         {
           "title": "Arlington County announces operational UAS program",
@@ -857,6 +879,7 @@
       "website_url": "https://www.arlingtonva.us/Government/Departments/PSCEM/Unmanned-Aircraft-Systems"
     },
     {
+      "address_line": "111 South George Mason Drive",
       "capabilities": [
         "Systems engineering and integration"
       ],
@@ -865,9 +888,9 @@
       "contact_phone": "",
       "contact_text": "Installation or agency public information",
       "contact_url": "https://www.nationalguard.mil/About-the-Guard/Army-National-Guard/Contact-Us/",
-      "latitude": 38.881,
-      "location_precision": "locality",
-      "longitude": -77.091,
+      "latitude": 38.867589,
+      "location_precision": "site",
+      "longitude": -77.105382,
       "missions": [
         "Force protection and installation security"
       ],
@@ -876,6 +899,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "22204-1373",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Northern Virginia",
@@ -884,6 +908,10 @@
         {
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        },
+        {
+          "title": "National Guard Bureau readiness-center address",
+          "url": "https://www.ngbpmc.ng.mil/Portals/27/Publications/PPOM/CY24/U_PPOM%2024-006_20240729.pdf?ver=h4yHU1OntPicYSxgSbryPQ%3D%3D"
         },
         {
           "title": "Army National Guard Readiness Center contact information",
@@ -902,6 +930,7 @@
       "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.ashlandva.gov/DocumentCenter/View/6463/July-2024-1?bidId=",
       "activity_status": "active",
+      "address_line": "601 England Street",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -912,9 +941,9 @@
       "contact_text": "Ashland Police Department",
       "contact_url": "https://www.ashlandva.gov/300/Department-Overview",
       "current_activity": "Ashland Police documents operational use of its drone, including infrared support during a missing-person response, and received a CY 2026 award to replace an aircraft already in service.",
-      "latitude": 37.759,
-      "location_precision": "locality",
-      "longitude": -77.48,
+      "latitude": 37.758314,
+      "location_precision": "site",
+      "longitude": -77.473617,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -926,6 +955,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23005",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Greater Richmond",
@@ -945,6 +975,10 @@
         },
         {
           "title": "Ashland Police Department contact information",
+          "url": "https://www.ashlandva.gov/296/About-Us"
+        },
+        {
+          "title": "Ashland Police Department contact information",
           "url": "https://www.ashlandva.gov/300/Department-Overview"
         }
       ],
@@ -958,6 +992,7 @@
       "website_url": "https://www.ashlandva.gov/DocumentCenter/View/6463/July-2024-1?bidId="
     },
     {
+      "address_line": "3100 Clarendon Boulevard, Suite 1200",
       "capabilities": [
         "Safety, policy, regulatory, and airspace integration"
       ],
@@ -966,9 +1001,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 38.881,
-      "location_precision": "locality",
-      "longitude": -77.091,
+      "latitude": 38.886915,
+      "location_precision": "exact",
+      "longitude": -77.094959,
       "missions": [
         "Training and experimentation"
       ],
@@ -977,6 +1012,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "22201",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Northern Virginia",
@@ -985,6 +1021,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "AUVSI contact and headquarters information",
+          "url": "https://www.auvsi.org/get-more-information/"
         },
         {
           "title": "AUVSI: About",
@@ -1001,18 +1041,19 @@
       "website_url": "https://www.auvsi.org/about-auvsi/"
     },
     {
+      "address_line": "752 Walker Road, Suite D",
       "capabilities": [
         "Systems engineering and integration",
         "Operations, maintenance, and sustainment"
       ],
-      "city": "Fairfax",
+      "city": "Great Falls",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://vipc.org/virginia-launches-advanced-air-mobility-and-unmanned-systems-test-site-program/",
-      "latitude": 38.846,
-      "location_precision": "locality",
-      "longitude": -77.307,
+      "contact_text": "Organization public information and inquiries",
+      "contact_url": "https://ata-llc.com/contact/",
+      "latitude": 38.997318,
+      "location_precision": "exact",
+      "longitude": -77.28849,
       "missions": [
         "Infrastructure inspection",
         "Logistics and contested logistics"
@@ -1022,6 +1063,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "22066",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Northern Virginia",
@@ -1030,6 +1072,10 @@
         {
           "title": "Virginia AAM and Unmanned Systems Test Site Program",
           "url": "https://vipc.org/virginia-launches-advanced-air-mobility-and-unmanned-systems-test-site-program/"
+        },
+        {
+          "title": "ATA contact and headquarters information",
+          "url": "https://ata-llc.com/contact/"
         },
         {
           "title": "ATA company profile",
@@ -1049,18 +1095,19 @@
       "website_url": "https://vipc.org/virginia-launches-advanced-air-mobility-and-unmanned-systems-test-site-program/"
     },
     {
+      "address_line": "127 Lee Highway",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
       ],
-      "city": "Staunton",
+      "city": "Verona",
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.co.augusta.va.us/home/showpublisheddocument/20491/639101430011700000",
-      "latitude": 38.15,
-      "location_precision": "locality",
-      "longitude": -79.072,
+      "latitude": 38.194112,
+      "location_precision": "site",
+      "longitude": -79.017976,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -1071,6 +1118,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "24482",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Shenandoah Valley",
@@ -1081,12 +1129,12 @@
           "url": "https://www.co.augusta.va.us/home/showpublisheddocument/20491/639101430011700000"
         },
         {
-          "title": "Augusta County Sheriff's Office 2020 annual report",
-          "url": "https://www.co.augusta.va.us/home/showpublisheddocument/16586/638489703162570000"
+          "title": "Augusta County Sheriff's Office address",
+          "url": "https://www.co.augusta.va.us/government/departments-and-offices/sheriff"
         },
         {
-          "title": "Augusta County Sheriff's Office",
-          "url": "https://www.co.augusta.va.us/government/departments-and-offices/sheriff"
+          "title": "Augusta County Sheriff's Office 2020 annual report",
+          "url": "https://www.co.augusta.va.us/home/showpublisheddocument/16586/638489703162570000"
         }
       ],
       "state": "VA",
@@ -1263,6 +1311,7 @@
       "website_url": "https://www.austalusa.com/solutions"
     },
     {
+      "address_line": "4250 Fairfax Drive, Suite 350",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration",
@@ -1273,9 +1322,9 @@
       "contact_phone": "",
       "contact_text": "Organization public information and inquiries",
       "contact_url": "https://auterion.com/company/contact-us/",
-      "latitude": 38.881,
-      "location_precision": "locality",
-      "longitude": -77.091,
+      "latitude": 38.882057,
+      "location_precision": "exact",
+      "longitude": -77.11226,
       "missions": [
         "Training and experimentation"
       ],
@@ -1286,6 +1335,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "22203",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Northern Virginia",
@@ -1296,7 +1346,7 @@
           "url": "https://auterion.com/auterion-moves-corporate-headquarters-to-arlington-virginia/"
         },
         {
-          "title": "Auterion U.S. Headquarters public contact information",
+          "title": "Auterion U.S. headquarters contact information",
           "url": "https://auterion.com/company/contact-us/"
         }
       ],
@@ -1631,6 +1681,7 @@
       "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
     },
     {
+      "address_line": "1345 Falling Creek Road",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -1639,10 +1690,10 @@
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
-      "contact_url": "https://sheriff.bedfordcountyva.gov/about-us/contact-us",
-      "latitude": 37.334,
-      "location_precision": "locality",
-      "longitude": -79.523,
+      "contact_url": "https://sheriff.bedfordcountyva.gov/about-us/sheriff-advanced-components/business-directory-list",
+      "latitude": 37.31166,
+      "location_precision": "site",
+      "longitude": -79.504548,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -1653,6 +1704,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "24523",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Lynchburg Region",
@@ -1661,6 +1713,10 @@
         {
           "title": "Bedford County Sheriff's Office Drone Team",
           "url": "https://sheriff.bedfordcountyva.gov/Home/Components/News/News/1947/3987?arch=1&npage=2"
+        },
+        {
+          "title": "Bedford County Sheriff's Office contact information",
+          "url": "https://sheriff.bedfordcountyva.gov/about-us/sheriff-advanced-components/business-directory-list"
         },
         {
           "title": "Bedford County Sheriff's Office contact information",
@@ -1825,6 +1881,7 @@
       "website_url": "https://www.brcc.edu/"
     },
     {
+      "address_line": "One College Lane",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -1834,9 +1891,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://courses.vccs.edu/colleges/brcc/courses/UMS-UnmannedSystems",
-      "latitude": 38.288,
-      "location_precision": "locality",
-      "longitude": -78.913,
+      "latitude": 38.279075,
+      "location_precision": "site",
+      "longitude": -78.937471,
       "missions": [
         "Training and experimentation"
       ],
@@ -1846,6 +1903,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24486-0080",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Shenandoah Valley",
@@ -1854,6 +1912,10 @@
         {
           "title": "VCCS: Unmanned Systems Courses at Blue Ridge Community College",
           "url": "https://courses.vccs.edu/colleges/brcc/courses/UMS-UnmannedSystems"
+        },
+        {
+          "title": "Blue Ridge Community College campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         },
         {
           "title": "Blue Ridge Community College: About",
@@ -2145,6 +2207,7 @@
       "website_url": "https://www.brightpoint.edu/"
     },
     {
+      "address_line": "13101 Route 1",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -2154,9 +2217,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://courses.vccs.edu/colleges/jtcc/courses/UMS-UnmannedSystems",
-      "latitude": 37.356,
-      "location_precision": "locality",
-      "longitude": -77.442,
+      "latitude": 37.346254,
+      "location_precision": "site",
+      "longitude": -77.407919,
       "missions": [
         "Training and experimentation"
       ],
@@ -2166,6 +2229,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23831-5316",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Greater Richmond",
@@ -2174,6 +2238,10 @@
         {
           "title": "VCCS: Unmanned Systems Courses at Brightpoint Community College",
           "url": "https://courses.vccs.edu/colleges/jtcc/courses/UMS-UnmannedSystems"
+        },
+        {
+          "title": "Brightpoint Community College campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         },
         {
           "title": "Brightpoint Community College: About",
@@ -2477,6 +2545,7 @@
       "website_url": "https://www.caci.com/"
     },
     {
+      "address_line": "87 Courthouse Lane",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -2484,11 +2553,11 @@
       "city": "Rustburg",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.campbellcountyva.gov/324/Annual-Reports",
-      "latitude": 37.276,
-      "location_precision": "locality",
-      "longitude": -79.1,
+      "contact_text": "Program or parent-organization inquiries",
+      "contact_url": "https://www.campbellcountyva.gov/310/Sheriffs-Office",
+      "latitude": 37.27746,
+      "location_precision": "site",
+      "longitude": -79.10244,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -2499,6 +2568,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "24588",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Lynchburg Region",
@@ -2507,6 +2577,10 @@
         {
           "title": "Campbell County Sheriff's Office 2024 Annual Report",
           "url": "https://www.campbellcountyva.gov/324/Annual-Reports"
+        },
+        {
+          "title": "Campbell County Sheriff's Office contact information",
+          "url": "https://www.campbellcountyva.gov/310/Sheriffs-Office"
         },
         {
           "title": "Campbell County Sheriff's Office 2024 annual report",
@@ -2829,6 +2903,7 @@
       "website_url": "https://vasheriff.org/2025/03/05/charles-city-county-sheriffs-office-announces-formation-of-drone-operations-team/"
     },
     {
+      "address_line": "606 East Market Street",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -2838,9 +2913,9 @@
       "contact_phone": "434-970-3280",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://www.charlottesville.gov/308/Contact-Us",
-      "latitude": 38.035,
-      "location_precision": "locality",
-      "longitude": -78.503,
+      "latitude": 38.030297,
+      "location_precision": "site",
+      "longitude": -78.477347,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -2851,6 +2926,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "22902",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Central Virginia",
@@ -2861,7 +2937,7 @@
           "url": "https://www.charlottesville.gov/1697/Emergency-Services-Unit"
         },
         {
-          "title": "Charlottesville Police UAS Team public contact information",
+          "title": "Charlottesville Police Department contact information",
           "url": "https://www.charlottesville.gov/308/Contact-Us"
         }
       ],
@@ -3077,18 +3153,19 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "6731 Mimms Loop",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
       ],
-      "city": "Chester",
+      "city": "Chesterfield",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.chesterfield.gov/DocumentCenter/View/46569/Chesterfield-Fire-and-EMS-Community-Risk-Assessment-and-Standards-of-Cover-PDF",
-      "latitude": 37.356,
-      "location_precision": "locality",
-      "longitude": -77.442,
+      "contact_text": "Program or parent-organization inquiries",
+      "contact_url": "https://www.chesterfield.gov/FireAndEMS",
+      "latitude": 37.377091,
+      "location_precision": "site",
+      "longitude": -77.504127,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -3099,6 +3176,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23832",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Greater Richmond",
@@ -3107,6 +3185,10 @@
         {
           "title": "Chesterfield Fire and EMS Community Risk Assessment",
           "url": "https://www.chesterfield.gov/DocumentCenter/View/46569/Chesterfield-Fire-and-EMS-Community-Risk-Assessment-and-Standards-of-Cover-PDF"
+        },
+        {
+          "title": "Chesterfield Fire and EMS contact information",
+          "url": "https://www.chesterfield.gov/FireAndEMS"
         },
         {
           "title": "Chesterfield County Police and public-safety drone operations",
@@ -3123,18 +3205,19 @@
       "website_url": "https://www.chesterfield.gov/DocumentCenter/View/46569/Chesterfield-Fire-and-EMS-Community-Risk-Assessment-and-Standards-of-Cover-PDF"
     },
     {
+      "address_line": "10001 Iron Bridge Road",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
       ],
-      "city": "Chester",
+      "city": "Chesterfield",
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://www.chesterfield.gov/Directory.aspx",
-      "latitude": 37.356,
-      "location_precision": "locality",
-      "longitude": -77.442,
+      "latitude": 37.376473,
+      "location_precision": "site",
+      "longitude": -77.507926,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -3145,6 +3228,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23832",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Greater Richmond",
@@ -3153,6 +3237,10 @@
         {
           "title": "Chesterfield County Police",
           "url": "https://www.chesterfield.gov/941/Police"
+        },
+        {
+          "title": "Chesterfield Police headquarters",
+          "url": "https://www.chesterfield.gov/Facilities/Facility/Details/Police-Headquarters-98"
         },
         {
           "title": "Chesterfield Police Drone as First Responder Program public contact information",
@@ -3223,6 +3311,7 @@
       "website_url": "https://cnu.edu/"
     },
     {
+      "address_line": "3730 Blenheim Boulevard",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -3230,11 +3319,11 @@
       "city": "Fairfax",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.fairfaxva.gov/Government/Departments/Police",
-      "latitude": 38.846,
-      "location_precision": "locality",
-      "longitude": -77.307,
+      "contact_text": "Program or parent-organization inquiries",
+      "contact_url": "https://www.fairfaxva.gov/files/assets/city/v/1/police/documents/community-feedback-form.pdf",
+      "latitude": 38.851777,
+      "location_precision": "site",
+      "longitude": -77.299845,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -3245,6 +3334,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "22030",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Northern Virginia",
@@ -3253,6 +3343,10 @@
         {
           "title": "City of Fairfax Police Annual Report",
           "url": "https://www.fairfaxva.gov/files/assets/city/v/1/police/documents/annual-reports/fy2023-ffx-pd-annual-report.pdf"
+        },
+        {
+          "title": "City of Fairfax Police Department contact information",
+          "url": "https://www.fairfaxva.gov/files/assets/city/v/1/police/documents/community-feedback-form.pdf"
         },
         {
           "title": "City of Fairfax Police Department",
@@ -3566,18 +3660,19 @@
       "website_url": "https://colonialheightsva.gov/AgendaCenter/ViewFile/Agenda/_02102026-750?packet=true"
     },
     {
+      "address_line": "1964 Wakefield Street",
       "capabilities": [
         "Manufacturing, materials, and prototyping",
         "Systems engineering and integration"
       ],
-      "city": "Richmond",
+      "city": "Petersburg",
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Organization public information and inquiries",
       "contact_url": "https://www.ccals.com/about-us/",
-      "latitude": 37.541,
-      "location_precision": "locality",
-      "longitude": -77.436,
+      "latitude": 37.202567,
+      "location_precision": "exact",
+      "longitude": -77.384788,
       "missions": [
         "Training and experimentation"
       ],
@@ -3586,6 +3681,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23805",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Greater Richmond",
@@ -3614,18 +3710,19 @@
       "website_url": "https://www.ccals.com/"
     },
     {
+      "address_line": "5520 West Quaker Road",
       "capabilities": [
         "Manufacturing, materials, and prototyping",
         "Systems engineering and integration"
       ],
-      "city": "Prince George",
+      "city": "Disputanta",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 37.221,
-      "location_precision": "locality",
-      "longitude": -77.289,
+      "contact_text": "Organization public information and inquiries",
+      "contact_url": "https://ccam-va.com/",
+      "latitude": 37.186124,
+      "location_precision": "exact",
+      "longitude": -77.304537,
       "missions": [
         "Training and experimentation"
       ],
@@ -3634,6 +3731,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23842",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Greater Richmond",
@@ -3644,7 +3742,7 @@
           "url": "https://www.vedp.org/industry/unmanned-systems"
         },
         {
-          "title": "Commonwealth Center for Advanced Manufacturing",
+          "title": "Commonwealth Center for Advanced Manufacturing contact information",
           "url": "https://ccam-va.com/"
         }
       ],
@@ -3809,6 +3907,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "740 Old Brandy Road",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -3818,9 +3917,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://files.culpeperva.gov/Document_Center/Government/Town_Clerk/FY23_TOC_Annual_Report.pdf?t=202311211113020",
-      "latitude": 38.473,
-      "location_precision": "locality",
-      "longitude": -77.996,
+      "latitude": 38.478997,
+      "location_precision": "site",
+      "longitude": -77.984389,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -3831,6 +3930,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "22701",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Central Virginia",
@@ -4047,6 +4147,7 @@
       "website_url": "https://www.danville.edu/"
     },
     {
+      "address_line": "1008 South Main Street",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -4056,9 +4157,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://courses.vccs.edu/colleges/dcc/courses/UMS-UnmannedSystems",
-      "latitude": 36.586,
-      "location_precision": "locality",
-      "longitude": -79.395,
+      "latitude": 36.565286,
+      "location_precision": "site",
+      "longitude": -79.408803,
       "missions": [
         "Training and experimentation"
       ],
@@ -4068,6 +4169,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24541-4004",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Southside Virginia",
@@ -4076,6 +4178,10 @@
         {
           "title": "VCCS: Unmanned Systems Courses at Danville Community College",
           "url": "https://courses.vccs.edu/colleges/dcc/courses/UMS-UnmannedSystems"
+        },
+        {
+          "title": "Danville Community College campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         },
         {
           "title": "Danville Community College mission and institution profile",
@@ -4091,6 +4197,7 @@
       "website_url": "https://courses.vccs.edu/colleges/dcc/courses/UMS-UnmannedSystems"
     },
     {
+      "address_line": "202 Christopher Lane",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -4100,9 +4207,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.dlsc.org/drones",
-      "latitude": 36.586,
-      "location_precision": "locality",
-      "longitude": -79.395,
+      "latitude": 36.585261,
+      "location_precision": "site",
+      "longitude": -79.409408,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -4113,6 +4220,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "24541",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Southside Virginia",
@@ -4249,6 +4357,7 @@
       "website_url": "https://dcscorp.com/"
     },
     {
+      "address_line": "675 North Randolph Street",
       "capabilities": [
         "Systems engineering and integration"
       ],
@@ -4257,9 +4366,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.darpa.mil/policies/visitor-information",
-      "latitude": 38.881,
-      "location_precision": "locality",
-      "longitude": -77.091,
+      "latitude": 38.8788,
+      "location_precision": "site",
+      "longitude": -77.109173,
       "missions": [
         "Force protection and installation security"
       ],
@@ -4268,6 +4377,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "22203",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Northern Virginia",
@@ -4278,7 +4388,7 @@
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         },
         {
-          "title": "DARPA visitor and Arlington location information",
+          "title": "DARPA visitor information",
           "url": "https://www.darpa.mil/policies/visitor-information"
         }
       ],
@@ -4291,6 +4401,7 @@
       "website_url": "https://www.darpa.mil/policies/visitor-information"
     },
     {
+      "address_line": "6090 Strathmore Road",
       "capabilities": [
         "Systems engineering and integration"
       ],
@@ -4298,10 +4409,10 @@
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.dla.mil/Aviation/Installation.aspx",
-      "latitude": 37.541,
-      "location_precision": "locality",
-      "longitude": -77.436,
+      "contact_url": "https://www.dla.mil/Aviation/Installation/Visitors-and-ID-Office/",
+      "latitude": 37.443177,
+      "location_precision": "site",
+      "longitude": -77.45167,
       "missions": [
         "Force protection and installation security"
       ],
@@ -4310,6 +4421,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23237",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Greater Richmond",
@@ -4318,6 +4430,10 @@
         {
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        },
+        {
+          "title": "Defense Supply Center Richmond visitor information",
+          "url": "https://www.dla.mil/Aviation/Installation/Visitors-and-ID-Office/"
         },
         {
           "title": "Defense Supply Center Richmond installation",
@@ -4554,7 +4670,7 @@
       "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.droneup.com/",
       "activity_status": "active",
-      "address_line": "",
+      "address_line": "160 Newtown Road, Suite 500",
       "capabilities": [
         "Systems engineering and integration",
         "Operations, maintenance, and sustainment"
@@ -4565,9 +4681,9 @@
       "contact_text": "DroneUp airspace and UAS technology inquiries",
       "contact_url": "https://www.droneup.com/contact",
       "current_activity": "DroneUp remains active but has shifted its current emphasis from operating last-mile delivery networks to airspace management, regulatory enablement, and autonomous UAS operations technology.",
-      "latitude": 36.8529,
-      "location_precision": "locality",
-      "longitude": -75.978,
+      "latitude": 36.842642,
+      "location_precision": "exact",
+      "longitude": -76.186071,
       "missions": [
         "Infrastructure inspection",
         "Logistics and contested logistics"
@@ -4578,7 +4694,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
-      "postal_code": "",
+      "postal_code": "23462",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -4587,6 +4703,10 @@
         {
           "title": "VEDP: Virginia Unmanned Systems Companies",
           "url": "https://www.vedp.org/news/home-business-more-400-years"
+        },
+        {
+          "title": "DroneUp public contact address",
+          "url": "https://www.droneup.com/privacy-policy"
         },
         {
           "title": "DroneUp current airspace and UAS technology operations",
@@ -4606,18 +4726,19 @@
       "website_url": "https://www.droneup.com/"
     },
     {
+      "address_line": "1402 Airport Road",
       "capabilities": [
         "Systems engineering and integration",
         "Operations, maintenance, and sustainment"
       ],
-      "city": "Harrisonburg",
+      "city": "Bridgewater",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 38.449,
-      "location_precision": "locality",
-      "longitude": -78.869,
+      "contact_text": "Organization public information and inquiries",
+      "contact_url": "https://www.dynamicaviation.com/contact-us/",
+      "latitude": 38.363337,
+      "location_precision": "exact",
+      "longitude": -78.961347,
       "missions": [
         "Infrastructure inspection",
         "Logistics and contested logistics"
@@ -4627,6 +4748,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "22812-0007",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Shenandoah Valley",
@@ -4635,6 +4757,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "Dynamic Aviation contact information",
+          "url": "https://www.dynamicaviation.com/contact-us/"
         },
         {
           "title": "Dynamic Aviation",
@@ -4653,7 +4779,7 @@
       "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://dzyne.com/contact-us/",
       "activity_status": "active",
-      "address_line": "",
+      "address_line": "8280 Willow Oaks Corporate Drive, Suite 200",
       "capabilities": [
         "Systems engineering and integration",
         "Manufacturing, materials, and prototyping"
@@ -4664,9 +4790,9 @@
       "contact_text": "DZYNE product and business inquiries",
       "contact_url": "https://dzyne.com/contact-us/",
       "current_activity": "DZYNE remains an active autonomous-defense business within Ondas Sentinel and continues to list Fairfax as a current location for its long-endurance UAS and counter-UAS work.",
-      "latitude": 38.846,
-      "location_precision": "locality",
-      "longitude": -77.307,
+      "latitude": 38.863831,
+      "location_precision": "exact",
+      "longitude": -77.230173,
       "missions": [
         "Counter-UAS",
         "Force protection and installation security"
@@ -4678,7 +4804,7 @@
         "Counter-UAS",
         "Unmanned aircraft systems"
       ],
-      "postal_code": "",
+      "postal_code": "22031",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Northern Virginia",
@@ -4691,6 +4817,10 @@
         {
           "title": "U.S. SBIR Portfolio: DZYNE Technologies",
           "url": "https://www.sbir.gov/portfolio/406214"
+        },
+        {
+          "title": "DZYNE Supplier Code of Conduct",
+          "url": "https://dzyne.com/wp-content/uploads/2026/01/DZYNE-SUPPLIER-CODE-OF-CONDUCT_DP-2-1002-56-V2.pdf"
         },
         {
           "title": "DZYNE current locations and Ondas Sentinel ownership",
@@ -4887,6 +5017,7 @@
       "website_url": "https://www.es.vccs.edu/"
     },
     {
+      "address_line": "29316 Lankford Highway",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -4896,9 +5027,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://courses.vccs.edu/colleges/escc/courses/UMS-UnmannedSystems",
-      "latitude": 37.649,
-      "location_precision": "locality",
-      "longitude": -75.741,
+      "latitude": 37.639652,
+      "location_precision": "site",
+      "longitude": -75.751129,
       "missions": [
         "Training and experimentation"
       ],
@@ -4908,6 +5039,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23410",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Eastern Shore",
@@ -4916,6 +5048,10 @@
         {
           "title": "VCCS: Unmanned Systems Courses at Eastern Shore Community College",
           "url": "https://courses.vccs.edu/colleges/escc/courses/UMS-UnmannedSystems"
+        },
+        {
+          "title": "Eastern Shore Community College campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         },
         {
           "title": "Eastern Shore Community College: About",
@@ -5327,6 +5463,7 @@
       "website_url": "https://www.fairfaxcounty.gov/police/real-time-crime-center-transparency"
     },
     {
+      "address_line": "4890 Alliance Drive",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -5336,9 +5473,9 @@
       "contact_phone": "703-324-7329",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://www.fairfaxcounty.gov/topics/contact-us",
-      "latitude": 38.846,
-      "location_precision": "locality",
-      "longitude": -77.307,
+      "latitude": 38.847229,
+      "location_precision": "site",
+      "longitude": -77.374952,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -5349,6 +5486,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "22030",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Northern Virginia",
@@ -5357,6 +5495,10 @@
         {
           "title": "Fairfax County Unmanned Aircraft Systems",
           "url": "https://www.fairfaxcounty.gov/uas/"
+        },
+        {
+          "title": "Fairfax County UAS program contact location",
+          "url": "https://www.fairfaxcounty.gov/uas/about-uas-program"
         },
         {
           "title": "Fairfax County Unmanned Aircraft Systems Program public contact information",
@@ -5569,6 +5711,7 @@
       "website_url": "https://www.ferrum.edu/"
     },
     {
+      "address_line": "15 East Market Street, Suite 615",
       "capabilities": [
         "Systems engineering and integration",
         "Manufacturing, materials, and prototyping"
@@ -5578,9 +5721,9 @@
       "contact_phone": "",
       "contact_text": "Organization public information and inquiries",
       "contact_url": "https://www.flyingship.co/contact",
-      "latitude": 39.116,
-      "location_precision": "locality",
-      "longitude": -77.564,
+      "latitude": 39.11525,
+      "location_precision": "exact",
+      "longitude": -77.564039,
       "missions": [
         "Maritime domain awareness"
       ],
@@ -5590,6 +5733,7 @@
         "Maritime surface systems",
         "Undersea systems"
       ],
+      "postal_code": "20178",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Northern Virginia",
@@ -5670,59 +5814,18 @@
       "website_url": "https://www.axon.com/blog/axon-completes-acquisition-of-dedrone"
     },
     {
+      "address_line": "Visitor Control Center, 9500 Pohick Road, Building 1409",
       "capabilities": [
         "Systems engineering and integration"
       ],
-      "city": "Blackstone",
+      "city": "Fort Belvoir",
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.army.mil/article-amp/264025/virginia_guards_fort_pickett_to_be_redesignated_fort_barfoot",
-      "latitude": 37.08,
-      "location_precision": "locality",
-      "longitude": -77.997,
-      "missions": [
-        "Force protection and installation security"
-      ],
-      "name": "Fort Barfoot",
-      "overview": "Fort Barfoot, a publicly documented military or federal installation in Blackstone. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration. Relevant mission areas include Force protection and installation security.",
-      "platform_domains": [
-        "Cross-domain autonomy"
-      ],
-      "provenance": "virginia-military-factbook",
-      "record_type": "organization",
-      "region": "Southside Virginia",
-      "short_description": "Fort Barfoot, a publicly documented military or federal installation in Blackstone.",
-      "sources": [
-        {
-          "title": "Virginia Military Factbook",
-          "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
-        },
-        {
-          "title": "U.S. Army: Fort Barfoot redesignation",
-          "url": "https://www.army.mil/article-amp/264025/virginia_guards_fort_pickett_to_be_redesignated_fort_barfoot"
-        }
-      ],
-      "state": "VA",
-      "strategic_categories": [
-        "Federal and defense customer access",
-        "Supporting ecosystem asset"
-      ],
-      "unmanned_systems_relevance": "Fort Barfoot is included as documented federal or defense ecosystem presence in Blackstone. Its map point is generalized and omits operational detail.",
-      "website_url": "https://www.army.mil/article-amp/264025/virginia_guards_fort_pickett_to_be_redesignated_fort_barfoot"
-    },
-    {
-      "capabilities": [
-        "Systems engineering and integration"
-      ],
-      "city": "Springfield",
-      "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://home.army.mil/belvoir/",
-      "latitude": 38.789,
-      "location_precision": "locality",
-      "longitude": -77.187,
+      "contact_url": "https://home.army.mil/belvoir/about/installation-access",
+      "latitude": 38.699422,
+      "location_precision": "site",
+      "longitude": -77.155683,
       "missions": [
         "Force protection and installation security"
       ],
@@ -5731,6 +5834,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "22060",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Northern Virginia",
@@ -5739,6 +5843,10 @@
         {
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        },
+        {
+          "title": "Fort Belvoir installation access information",
+          "url": "https://home.army.mil/belvoir/about/installation-access"
         },
         {
           "title": "U.S. Army Fort Belvoir",
@@ -5798,37 +5906,43 @@
       "website_url": "https://www.jble.af.mil/Home/Contact/"
     },
     {
+      "address_line": "Visitor Control Center, 500 Gregg Avenue, Building 5228",
       "capabilities": [
         "Systems engineering and integration"
       ],
-      "city": "Prince George",
+      "city": "Fort Lee",
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://home.army.mil/greggadams/",
-      "latitude": 37.221,
-      "location_precision": "locality",
-      "longitude": -77.289,
+      "contact_url": "https://home.army.mil/lee/access",
+      "latitude": 37.243076,
+      "location_precision": "site",
+      "longitude": -77.350243,
       "missions": [
         "Force protection and installation security"
       ],
-      "name": "Fort Gregg-Adams",
-      "overview": "Fort Gregg-Adams, a publicly documented military or federal installation in Prince George. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration. Relevant mission areas include Force protection and installation security.",
+      "name": "Fort Lee",
+      "overview": "Fort Lee, a publicly documented military or federal installation in Prince George. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration. Relevant mission areas include Force protection and installation security.",
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23801",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Greater Richmond",
-      "short_description": "Fort Gregg-Adams, a publicly documented military or federal installation in Prince George.",
+      "short_description": "Fort Lee, a publicly documented military or federal installation in Prince George.",
       "sources": [
         {
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
         },
         {
-          "title": "U.S. Army Fort Gregg-Adams",
-          "url": "https://home.army.mil/greggadams/"
+          "title": "Fort Lee visitor information",
+          "url": "https://home.army.mil/lee/access"
+        },
+        {
+          "title": "U.S. Army Fort Lee",
+          "url": "https://home.army.mil/lee/"
         }
       ],
       "state": "VA",
@@ -5836,8 +5950,50 @@
         "Federal and defense customer access",
         "Supporting ecosystem asset"
       ],
-      "unmanned_systems_relevance": "Fort Gregg-Adams is included as documented federal or defense ecosystem presence in Prince George. Its map point is generalized and omits operational detail.",
-      "website_url": "https://home.army.mil/greggadams/"
+      "unmanned_systems_relevance": "Fort Lee is included as documented federal or defense ecosystem presence in Prince George. Its map point is generalized and omits operational detail.",
+      "website_url": "https://home.army.mil/lee/"
+    },
+    {
+      "capabilities": [
+        "Systems engineering and integration"
+      ],
+      "city": "Blackstone",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
+      "contact_url": "https://va.ng.mil/Installations/Fort-Pickett/",
+      "latitude": 37.08,
+      "location_precision": "locality",
+      "longitude": -77.997,
+      "missions": [
+        "Force protection and installation security"
+      ],
+      "name": "Fort Pickett",
+      "overview": "Fort Pickett, a publicly documented military or federal installation in Blackstone. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration. Relevant mission areas include Force protection and installation security.",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "provenance": "virginia-military-factbook",
+      "record_type": "organization",
+      "region": "Southside Virginia",
+      "short_description": "Fort Pickett, a publicly documented military or federal installation in Blackstone.",
+      "sources": [
+        {
+          "title": "Virginia Military Factbook",
+          "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        },
+        {
+          "title": "Virginia National Guard Fort Pickett",
+          "url": "https://va.ng.mil/Installations/Fort-Pickett/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Federal and defense customer access",
+        "Supporting ecosystem asset"
+      ],
+      "unmanned_systems_relevance": "Fort Pickett is included as documented federal or defense ecosystem presence in Blackstone. Its map point is generalized and omits operational detail.",
+      "website_url": "https://va.ng.mil/Installations/Fort-Pickett/"
     },
     {
       "capabilities": [
@@ -5980,6 +6136,7 @@
       "website_url": "https://www.fcva.us/departments/sheriff-s-office/divisions/special-operations"
     },
     {
+      "address_line": "2200 Cowan Boulevard",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -5989,9 +6146,9 @@
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://www.fredericksburgva.gov/Directory.aspx",
-      "latitude": 38.303,
-      "location_precision": "locality",
-      "longitude": -77.461,
+      "latitude": 38.303323,
+      "location_precision": "site",
+      "longitude": -77.488932,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -6002,6 +6159,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "22401",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Fredericksburg Region",
@@ -6010,6 +6168,10 @@
         {
           "title": "Fredericksburg Drone as First Responder Program",
           "url": "https://www.fredericksburgva.gov/2066/Drone-as-First-Responder-DFR-Program"
+        },
+        {
+          "title": "Fredericksburg Police Department contact information",
+          "url": "https://www.fredericksburgva.gov/Directory.aspx?did=12"
         },
         {
           "title": "Fredericksburg Drone as First Responder Program public contact information",
@@ -6026,6 +6188,7 @@
       "website_url": "https://www.fredericksburgva.gov/2066/Drone-as-First-Responder-DFR-Program"
     },
     {
+      "address_line": "2200 Cowan Boulevard",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -6035,9 +6198,9 @@
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://www.fredericksburgva.gov/Directory.aspx",
-      "latitude": 38.303,
-      "location_precision": "locality",
-      "longitude": -77.461,
+      "latitude": 38.303323,
+      "location_precision": "site",
+      "longitude": -77.488932,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -6048,6 +6211,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "22401",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Fredericksburg Region",
@@ -6056,6 +6220,10 @@
         {
           "title": "Fredericksburg Police Unmanned Aircraft System Team",
           "url": "https://www.fredericksburgva.gov/1529/Unmanned-Aircraft-System-Team"
+        },
+        {
+          "title": "Fredericksburg Police Department contact information",
+          "url": "https://www.fredericksburgva.gov/Directory.aspx?did=12"
         },
         {
           "title": "Fredericksburg Police UAS Team public contact information",
@@ -7457,6 +7625,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "7522 County Complex Road",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -7466,9 +7635,9 @@
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://www.hanoversheriff.com/directory.aspx",
-      "latitude": 37.766,
-      "location_precision": "locality",
-      "longitude": -77.37,
+      "latitude": 37.764637,
+      "location_precision": "site",
+      "longitude": -77.366613,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -7479,6 +7648,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23069",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Greater Richmond",
@@ -7487,6 +7657,10 @@
         {
           "title": "Hanover County Sheriff's Office sUAS Team",
           "url": "https://www.hanoversheriff.com/412/sUAS-Team"
+        },
+        {
+          "title": "Hanover County Sheriff's Office contact information",
+          "url": "https://www.hanoversheriff.com/27/Our-Organization"
         },
         {
           "title": "Hanover County Sheriff's Office sUAS Team public contact information",
@@ -7503,6 +7677,7 @@
       "website_url": "https://www.hanoversheriff.com/412/sUAS-Team"
     },
     {
+      "address_line": "101 North Main Street",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -7512,9 +7687,9 @@
       "contact_phone": "540-434-4436",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://www.harrisonburgva.gov/contact-hpd",
-      "latitude": 38.449,
-      "location_precision": "locality",
-      "longitude": -78.869,
+      "latitude": 38.450481,
+      "location_precision": "site",
+      "longitude": -78.868385,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -7525,6 +7700,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "22802",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Shenandoah Valley",
@@ -7535,7 +7711,7 @@
           "url": "https://www.harrisonburgva.gov/SWAT"
         },
         {
-          "title": "Harrisonburg Police and Fire Drone and Robot Unit public contact information",
+          "title": "Harrisonburg Police Department contact location",
           "url": "https://www.harrisonburgva.gov/contact-hpd"
         }
       ],
@@ -7660,6 +7836,7 @@
       "website_url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/town_council/meeting/11057/tc_regmtg_03_06_2023.pdf"
     },
     {
+      "address_line": "7721 East Parham Road",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -7669,9 +7846,9 @@
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://henrico.gov/contact-us",
-      "latitude": 37.632,
-      "location_precision": "locality",
-      "longitude": -77.515,
+      "latitude": 37.630251,
+      "location_precision": "site",
+      "longitude": -77.527333,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -7682,6 +7859,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23294",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Greater Richmond",
@@ -7690,6 +7868,10 @@
         {
           "title": "Henrico Fire Specialty Teams",
           "url": "https://henrico.gov/fire/about-us/specialty-teams/"
+        },
+        {
+          "title": "Henrico Fire Administration public location",
+          "url": "https://henrico.gov/services/fireems-reports/1000"
         },
         {
           "title": "Henrico Fire Robotics Response Team public contact information",
@@ -7706,6 +7888,7 @@
       "website_url": "https://henrico.gov/fire/about-us/specialty-teams/"
     },
     {
+      "address_line": "3250 Kings Mountain Road",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -7713,11 +7896,11 @@
       "city": "Martinsville",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.henrycountyva.gov/AgendaCenter/ViewFile/Agenda/_01272026-344",
-      "latitude": 36.691,
-      "location_precision": "locality",
-      "longitude": -79.873,
+      "contact_text": "Program or parent-organization inquiries",
+      "contact_url": "https://www.henrycountyva.gov/m/directory/department?did=32",
+      "latitude": 36.741092,
+      "location_precision": "site",
+      "longitude": -79.891957,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -7728,6 +7911,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "24112",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Southside Virginia",
@@ -7740,6 +7924,10 @@
         {
           "title": "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
           "url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+        },
+        {
+          "title": "Henry County Sheriff's Office address",
+          "url": "https://www.henrycountyva.gov/m/directory/department?did=32"
         }
       ],
       "state": "VA",
@@ -7752,6 +7940,7 @@
       "website_url": "https://www.henrycountyva.gov/AgendaCenter/ViewFile/Agenda/_01272026-344"
     },
     {
+      "address_line": "45240 Business Court, Suite 400",
       "capabilities": [
         "Systems engineering and integration",
         "Operations, maintenance, and sustainment"
@@ -7761,9 +7950,9 @@
       "contact_phone": "877-726-6269",
       "contact_text": "Organization public information and inquiries",
       "contact_url": "https://hevenaerotech.com/contact-us/",
-      "latitude": 38.955,
-      "location_precision": "locality",
-      "longitude": -77.448,
+      "latitude": 38.980842,
+      "location_precision": "exact",
+      "longitude": -77.436011,
       "missions": [
         "Infrastructure inspection",
         "Logistics and contested logistics"
@@ -7773,6 +7962,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "20166",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Northern Virginia",
@@ -7783,7 +7973,7 @@
           "url": "https://hevenaerotech.com/"
         },
         {
-          "title": "Heven AeroTech Headquarters public contact information",
+          "title": "Heven AeroTech headquarters contact information",
           "url": "https://hevenaerotech.com/contact-us/"
         }
       ],
@@ -8610,17 +8800,18 @@
       "website_url": "https://www.jmu.edu/jmuxlabs"
     },
     {
+      "address_line": "Visitor Control Center, Building S-507, 29 Carpenter Road",
       "capabilities": [
         "Systems engineering and integration"
       ],
-      "city": "Arlington",
+      "city": "Fort Myer",
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://home.army.mil/jbmhh/",
-      "latitude": 38.881,
-      "location_precision": "locality",
-      "longitude": -77.091,
+      "contact_url": "https://home.army.mil/jbmhh/index.php/my-fort/all-services/access-gate-info",
+      "latitude": 38.872366,
+      "location_precision": "site",
+      "longitude": -77.079797,
       "missions": [
         "Force protection and installation security"
       ],
@@ -8629,6 +8820,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "22211",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Northern Virginia",
@@ -8637,6 +8829,10 @@
         {
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        },
+        {
+          "title": "Joint Base Myer-Henderson Hall visitor control information",
+          "url": "https://home.army.mil/jbmhh/index.php/my-fort/all-services/access-gate-info"
         },
         {
           "title": "Joint Base Myer-Henderson Hall",
@@ -8743,6 +8939,7 @@
       "website_url": "https://autonomyandrobotics.centers.vt.edu/groups/keas.html"
     },
     {
+      "address_line": "8122 Kings Highway",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -8752,9 +8949,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.kinggeorgecountyva.gov/AgendaCenter/ViewFile/Minutes/_02032026-1454",
-      "latitude": 38.269,
-      "location_precision": "locality",
-      "longitude": -77.184,
+      "latitude": 38.276607,
+      "location_precision": "site",
+      "longitude": -77.206153,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -8765,6 +8962,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "22485",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Fredericksburg Region",
@@ -8777,6 +8975,10 @@
         {
           "title": "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
           "url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+        },
+        {
+          "title": "King George Fire and Rescue headquarters",
+          "url": "https://www.kinggeorgecountyva.gov/337/Emergency-Management"
         }
       ],
       "state": "VA",
@@ -8975,6 +9177,7 @@
       "website_url": "https://www.laurelridge.edu/"
     },
     {
+      "address_line": "173 Skirmisher Lane",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -8984,9 +9187,9 @@
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://laurelridge.edu/about-us/",
-      "latitude": 39.027,
-      "location_precision": "locality",
-      "longitude": -78.28,
+      "latitude": 39.036001,
+      "location_precision": "site",
+      "longitude": -78.267336,
       "missions": [
         "Training and experimentation"
       ],
@@ -8996,6 +9199,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "22645",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Shenandoah Valley",
@@ -9004,6 +9208,10 @@
         {
           "title": "VCCS: Unmanned Systems Courses at Laurel Ridge Community College",
           "url": "https://courses.vccs.edu/colleges/lfcc/courses/UMS-UnmannedSystems"
+        },
+        {
+          "title": "Laurel Ridge Community College campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         },
         {
           "title": "Laurel Ridge Community College: About",
@@ -9119,6 +9327,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "65 Plaza Street NE",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -9126,11 +9335,11 @@
       "city": "Leesburg",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.leesburgva.gov/departments/police/about-the-lpd/investigations-operational-support-bureau/specialty-units/unmaned-aircraft-systems-uas-team",
-      "latitude": 39.116,
-      "location_precision": "locality",
-      "longitude": -77.564,
+      "contact_text": "Program or parent-organization inquiries",
+      "contact_url": "https://www.leesburgva.gov/Home/Components/FacilityDirectory/FacilityDirectory/231/2311",
+      "latitude": 39.112434,
+      "location_precision": "site",
+      "longitude": -77.547039,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -9141,6 +9350,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "20176",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Northern Virginia",
@@ -9149,6 +9359,10 @@
         {
           "title": "Leesburg Police Unmanned Aircraft Systems Team",
           "url": "https://www.leesburgva.gov/departments/police/about-the-lpd/investigations-operational-support-bureau/specialty-units/unmaned-aircraft-systems-uas-team"
+        },
+        {
+          "title": "Leesburg Police Department facility information",
+          "url": "https://www.leesburgva.gov/Home/Components/FacilityDirectory/FacilityDirectory/231/2311"
         },
         {
           "title": "Leesburg Police 2018 annual report",
@@ -9573,6 +9787,7 @@
       "website_url": "https://linebird.net/about/"
     },
     {
+      "address_line": "9500 Godwin Drive, Building 400",
       "capabilities": [
         "Systems engineering and integration",
         "Manufacturing, materials, and prototyping"
@@ -9582,9 +9797,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 38.751,
-      "location_precision": "locality",
-      "longitude": -77.475,
+      "latitude": 38.747044,
+      "location_precision": "exact",
+      "longitude": -77.512928,
       "missions": [
         "Maritime domain awareness"
       ],
@@ -9594,6 +9809,7 @@
         "Maritime surface systems",
         "Undersea systems"
       ],
+      "postal_code": "20110-4166",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "Northern Virginia",
@@ -9604,7 +9820,7 @@
           "url": "https://www.vedp.org/industry/unmanned-systems"
         },
         {
-          "title": "Lockheed Martin Manassas site",
+          "title": "Lockheed Martin Manassas site information",
           "url": "https://www.lockheedmartin.com/en-us/who-we-are/business-areas/rotary-and-mission-systems/manassas-va.html"
         }
       ],
@@ -9882,6 +10098,7 @@
       "website_url": "https://www.longwood.edu/"
     },
     {
+      "address_line": "803 Sycolin Road SE",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -9891,9 +10108,9 @@
       "contact_phone": "703-777-0100",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://sheriff.loudoun.gov/2364/Contact-Us",
-      "latitude": 39.116,
-      "location_precision": "locality",
-      "longitude": -77.564,
+      "latitude": 39.082373,
+      "location_precision": "site",
+      "longitude": -77.552597,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -9904,6 +10121,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "20175",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Northern Virginia",
@@ -9912,6 +10130,10 @@
         {
           "title": "Loudoun County Sheriff's Office Drone Capability",
           "url": "https://sheriff.loudoun.gov/m/newsflash/home/detail/9418"
+        },
+        {
+          "title": "Loudoun County Sheriff's Administration Building",
+          "url": "https://sheriff.loudoun.gov/4572/Sheriffs-Administration-Building"
         },
         {
           "title": "Loudoun County Sheriff's Office Drone Unit public contact information",
@@ -10078,6 +10300,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "800 Madison Street",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -10085,11 +10308,11 @@
       "city": "Lynchburg",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.lynchburgva.gov/ArchiveCenter/ViewFile/Item/64",
-      "latitude": 37.414,
-      "location_precision": "locality",
-      "longitude": -79.142,
+      "contact_text": "Program or parent-organization inquiries",
+      "contact_url": "https://www.lynchburgva.gov/m/directory/department?did=33",
+      "latitude": 37.413626,
+      "location_precision": "site",
+      "longitude": -79.146594,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -10100,6 +10323,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "24504",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Lynchburg Region",
@@ -10108,6 +10332,10 @@
         {
           "title": "Lynchburg Fire Department Annual Report",
           "url": "https://www.lynchburgva.gov/ArchiveCenter/ViewFile/Item/64"
+        },
+        {
+          "title": "Lynchburg Fire Department contact information",
+          "url": "https://www.lynchburgva.gov/m/directory/department?did=33"
         },
         {
           "title": "Lynchburg Fire Department article describing the UAV team",
@@ -10124,6 +10352,7 @@
       "website_url": "https://www.lynchburgva.gov/ArchiveCenter/ViewFile/Item/64"
     },
     {
+      "address_line": "3405 Odd Fellows Road",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -10132,10 +10361,10 @@
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
-      "contact_url": "https://www.lynchburgva.gov/m/directory/department?did=54",
-      "latitude": 37.414,
-      "location_precision": "locality",
-      "longitude": -79.142,
+      "contact_url": "https://www.lynchburgva.gov/m/directory/department?did=64",
+      "latitude": 37.383136,
+      "location_precision": "site",
+      "longitude": -79.162529,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -10146,6 +10375,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "24501",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Lynchburg Region",
@@ -10154,6 +10384,10 @@
         {
           "title": "Lynchburg Police Drone Unit",
           "url": "https://lynchburgva.gov/DocumentCenter/View/4331"
+        },
+        {
+          "title": "Lynchburg Police Department contact information",
+          "url": "https://www.lynchburgva.gov/m/directory/department?did=64"
         },
         {
           "title": "City of Lynchburg police department directory",
@@ -10223,6 +10457,7 @@
       "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.madisonco.virginia.gov/AgendaCenter/ViewFile/Agenda/_02102026-398",
       "activity_status": "active",
+      "address_line": "115 Church Street",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -10233,9 +10468,9 @@
       "contact_text": "Madison County Sheriff's Office",
       "contact_url": "https://www.madisonco.virginia.gov/268/Sheriff",
       "current_activity": "Madison County appropriated its CY 2026 unmanned-aircraft replacement grant directly to the Sheriff's Office, confirming the operating agency.",
-      "latitude": 38.38,
-      "location_precision": "locality",
-      "longitude": -78.258,
+      "latitude": 38.380193,
+      "location_precision": "site",
+      "longitude": -78.257441,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -10247,6 +10482,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "22727",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Central Virginia",
@@ -10263,6 +10499,10 @@
         {
           "title": "DCJS Unmanned Aircraft Trade and Replace Program",
           "url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+        },
+        {
+          "title": "Madison County Sheriff's Office address",
+          "url": "https://madisonco.virginia.gov/268/Sheriff"
         },
         {
           "title": "Madison County Sheriff's Office contact information",
@@ -10903,6 +11143,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "911 Madison Street",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -10912,9 +11153,9 @@
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://www.mecklenburgva.com/Directory.aspx",
-      "latitude": 36.667,
-      "location_precision": "locality",
-      "longitude": -78.387,
+      "latitude": 36.669604,
+      "location_precision": "site",
+      "longitude": -78.383276,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -10925,6 +11166,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23917",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Southside Virginia",
@@ -11229,6 +11471,7 @@
       "website_url": "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range"
     },
     {
+      "address_line": "1 East Main Street",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -11238,9 +11481,9 @@
       "contact_phone": "540-394-2120",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://www.montgomerycountyva.gov/1/contact-us",
-      "latitude": 37.13,
-      "location_precision": "locality",
-      "longitude": -80.409,
+      "latitude": 37.130053,
+      "location_precision": "site",
+      "longitude": -80.408451,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -11251,6 +11494,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "24073",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "New River Valley",
@@ -11259,6 +11503,10 @@
         {
           "title": "Montgomery County Sheriff's Office Support Services",
           "url": "https://www.montgomerycountyva.gov/1/departments-services/sheriffs-office/support-services"
+        },
+        {
+          "title": "Montgomery County Sheriff's Office contact information",
+          "url": "https://montgomerycountyva.gov/1/departments-services/sheriffs-office"
         },
         {
           "title": "Montgomery County Sheriff's Office UAS Team public contact information",
@@ -11367,18 +11615,19 @@
       "website_url": "https://www.mecc.edu/"
     },
     {
+      "address_line": "3441 Mountain Empire Road",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
       ],
-      "city": "Wise",
+      "city": "Big Stone Gap",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 36.975,
-      "location_precision": "locality",
-      "longitude": -82.576,
+      "contact_text": "Program or parent-organization inquiries",
+      "contact_url": "https://www.mecc.edu/contact-us",
+      "latitude": 36.856376,
+      "location_precision": "site",
+      "longitude": -82.758604,
       "missions": [
         "Training and experimentation"
       ],
@@ -11388,6 +11637,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24219",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Southwest Virginia",
@@ -11396,6 +11646,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "Mountain Empire Community College campus location",
+          "url": "https://www.mecc.edu/contact-us"
         },
         {
           "title": "Mountain Empire Community College Unmanned Systems courses",
@@ -11453,6 +11707,7 @@
       "website_url": "https://www.mgcc.edu/"
     },
     {
+      "address_line": "1000 College Drive",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -11462,9 +11717,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://courses.vccs.edu/colleges/dslcc/courses/UMS-UnmannedSystems",
-      "latitude": 37.817,
-      "location_precision": "locality",
-      "longitude": -79.824,
+      "latitude": 37.812275,
+      "location_precision": "site",
+      "longitude": -79.852536,
       "missions": [
         "Training and experimentation"
       ],
@@ -11474,6 +11729,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24422",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Shenandoah Valley",
@@ -11482,6 +11738,10 @@
         {
           "title": "VCCS: Unmanned Systems Courses at Mountain Gateway Community College",
           "url": "https://courses.vccs.edu/colleges/dslcc/courses/UMS-UnmannedSystems"
+        },
+        {
+          "title": "Mountain Gateway Community College campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         },
         {
           "title": "Mountain Gateway Community College: About",
@@ -11850,17 +12110,18 @@
       "website_url": "https://www.nasa.gov/wallops/about/"
     },
     {
+      "address_line": "7500 GEOINT Drive",
       "capabilities": [
         "Systems engineering and integration"
       ],
       "city": "Springfield",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.nga.mil/index.html",
-      "latitude": 38.789,
-      "location_precision": "locality",
-      "longitude": -77.187,
+      "contact_text": "Installation or agency public information",
+      "contact_url": "https://www.nga.mil/contact/Contact_Us.html",
+      "latitude": 38.753741,
+      "location_precision": "site",
+      "longitude": -77.194772,
       "missions": [
         "Force protection and installation security"
       ],
@@ -11869,6 +12130,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "22150-7500",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Northern Virginia",
@@ -11877,6 +12139,10 @@
         {
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        },
+        {
+          "title": "National Geospatial-Intelligence Agency contact information",
+          "url": "https://www.nga.mil/contact/Contact_Us.html"
         },
         {
           "title": "National Geospatial-Intelligence Agency",
@@ -12362,6 +12628,7 @@
       "website_url": "https://www.navair.navy.mil/news/Navy-opens-doors-first-small-unmanned-aircraft-systems-training-facility/Tue-08022022-0923"
     },
     {
+      "address_line": "Baldwin Building, 191 Fayette Street",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -12371,9 +12638,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://newcollegeinstitute.org/",
-      "latitude": 36.691,
-      "location_precision": "locality",
-      "longitude": -79.873,
+      "latitude": 36.693039,
+      "location_precision": "exact",
+      "longitude": -79.876457,
       "missions": [
         "Training and experimentation"
       ],
@@ -12383,6 +12650,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24112",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Southside Virginia",
@@ -12602,6 +12870,7 @@
       "website_url": "https://www.nr.edu/"
     },
     {
+      "address_line": "782 New River Road NW, Suite 400",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -12611,9 +12880,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 37.13,
-      "location_precision": "locality",
-      "longitude": -80.409,
+      "latitude": 37.167574,
+      "location_precision": "site",
+      "longitude": -80.427915,
       "missions": [
         "Training and experimentation"
       ],
@@ -12623,6 +12892,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24073",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "New River Valley",
@@ -12631,6 +12901,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "New River Community College Christiansburg site",
+          "url": "https://www.nr.edu/maps/campus.php"
         },
         {
           "title": "New River Community College Unmanned Systems courses",
@@ -13728,6 +14002,7 @@
       "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://occoquanva.gov/wp-content/uploads/2026/01/TC-Agenda-Packet-FULL-1-6-2026.pdf",
       "activity_status": "active",
+      "address_line": "124 Commerce Street",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -13738,9 +14013,9 @@
       "contact_text": "Occoquan Police Department",
       "contact_url": "https://occoquanva.gov/public-safety/",
       "current_activity": "Occoquan maintains a police-led public-safety drone capability and accepted a CY 2026 award to replace the existing aircraft with a compliant U.S.-manufactured system.",
-      "latitude": 38.681,
-      "location_precision": "locality",
-      "longitude": -77.26,
+      "latitude": 38.682349,
+      "location_precision": "site",
+      "longitude": -77.259804,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -13752,6 +14027,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "22125",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Northern Virginia",
@@ -13770,7 +14046,7 @@
           "url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
         },
         {
-          "title": "Occoquan Police Department contact information",
+          "title": "Occoquan Police Department public safety contact location",
           "url": "https://occoquanva.gov/public-safety/"
         }
       ],
@@ -14219,6 +14495,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "11282 Government Center Drive, Suite A",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -14226,11 +14503,11 @@
       "city": "Orange",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.orangecountyva.gov/DocumentCenter/View/5121/2026-Citizens-Police-Academy-Overview-and-Application?bidId=",
-      "latitude": 38.245,
-      "location_precision": "locality",
-      "longitude": -78.013,
+      "contact_text": "Program or parent-organization inquiries",
+      "contact_url": "https://www.orangecountyva.gov/sheriff",
+      "latitude": 38.248565,
+      "location_precision": "site",
+      "longitude": -78.055492,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -14241,6 +14518,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "22960",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Central Virginia",
@@ -14251,7 +14529,7 @@
           "url": "https://www.orangecountyva.gov/DocumentCenter/View/5121/2026-Citizens-Police-Academy-Overview-and-Application?bidId="
         },
         {
-          "title": "Orange County Sheriff's Office",
+          "title": "Orange County Sheriff's Office contact information",
           "url": "https://www.orangecountyva.gov/sheriff"
         },
         {
@@ -14493,6 +14771,7 @@
       "website_url": "https://www.pdc.edu/"
     },
     {
+      "address_line": "1000 Research Park Boulevard, Suite 106",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration"
@@ -14500,11 +14779,11 @@
       "city": "Charlottesville",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.vedp.org/news/home-business-more-400-years",
-      "latitude": 38.035,
-      "location_precision": "locality",
-      "longitude": -78.503,
+      "contact_text": "Organization public information and inquiries",
+      "contact_url": "https://www.perronerobotics.com/contact/",
+      "latitude": 38.150355,
+      "location_precision": "exact",
+      "longitude": -78.43496,
       "missions": [
         "Logistics and contested logistics"
       ],
@@ -14513,6 +14792,7 @@
       "platform_domains": [
         "Ground vehicles and robotics"
       ],
+      "postal_code": "22911",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Central Virginia",
@@ -14521,6 +14801,10 @@
         {
           "title": "VEDP: Virginia Unmanned Systems Companies",
           "url": "https://www.vedp.org/news/home-business-more-400-years"
+        },
+        {
+          "title": "Perrone Robotics headquarters contact information",
+          "url": "https://www.perronerobotics.com/contact/"
         },
         {
           "title": "Perrone Robotics: About",
@@ -14582,6 +14866,7 @@
       "website_url": "https://www.pvcc.edu/"
     },
     {
+      "address_line": "501 College Drive",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -14591,9 +14876,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 38.035,
-      "location_precision": "locality",
-      "longitude": -78.503,
+      "latitude": 38.006895,
+      "location_precision": "site",
+      "longitude": -78.483707,
       "missions": [
         "Training and experimentation"
       ],
@@ -14603,6 +14888,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "22902",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Central Virginia",
@@ -14611,6 +14897,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "Piedmont Virginia Community College campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         },
         {
           "title": "Piedmont Virginia Community College Remote Pilot Airman program",
@@ -14723,6 +15013,7 @@
       "website_url": "https://www.portofvirginia.com/gateway/capabilities/"
     },
     {
+      "address_line": "3910 Old Buckingham Road",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -14732,9 +15023,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.powhatanva.gov/DocumentCenter/View/8410/Emergency-Operations-Plan-2024",
-      "latitude": 37.542,
-      "location_precision": "locality",
-      "longitude": -77.919,
+      "latitude": 37.544356,
+      "location_precision": "site",
+      "longitude": -77.919653,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -14745,6 +15036,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23139",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Greater Richmond",
@@ -14755,7 +15047,7 @@
           "url": "https://www.powhatanva.gov/DocumentCenter/View/8410/Emergency-Operations-Plan-2024"
         },
         {
-          "title": "Powhatan County Emergency Management",
+          "title": "Powhatan County Emergency Management address",
           "url": "https://www.powhatanva.gov/234/Emergency-Management"
         }
       ],
@@ -14769,6 +15061,7 @@
       "website_url": "https://www.powhatanva.gov/DocumentCenter/View/8410/Emergency-Operations-Plan-2024"
     },
     {
+      "address_line": "111 South Street, 3rd Floor",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -14778,9 +15071,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.co.prince-edward.va.us/News-Article/Pyle-Named-County-Emergency-Management-Coordinator",
-      "latitude": 37.302,
-      "location_precision": "locality",
-      "longitude": -78.391,
+      "latitude": 37.300818,
+      "location_precision": "site",
+      "longitude": -78.392145,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -14791,6 +15084,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23901",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Central Virginia",
@@ -14801,12 +15095,12 @@
           "url": "https://www.co.prince-edward.va.us/News-Article/Pyle-Named-County-Emergency-Management-Coordinator"
         },
         {
-          "title": "Prince Edward County 2023 minutes documenting emergency-management drone use",
-          "url": "https://www.co.prince-edward.va.us/files/assets/county/v/1/govboard/documents/board-meetings/december-12-2023-regular-meeting-minutes-agenda.pdf"
+          "title": "Prince Edward County Emergency Management address",
+          "url": "https://www.co.prince-edward.va.us/Departments/Emergency-Management"
         },
         {
-          "title": "Prince Edward County Emergency Management",
-          "url": "https://www.co.prince-edward.va.us/Departments/Emergency-Management"
+          "title": "Prince Edward County 2023 minutes documenting emergency-management drone use",
+          "url": "https://www.co.prince-edward.va.us/files/assets/county/v/1/govboard/documents/board-meetings/december-12-2023-regular-meeting-minutes-agenda.pdf"
         }
       ],
       "state": "VA",
@@ -14921,6 +15215,7 @@
       "website_url": "https://psionicnav.com/"
     },
     {
+      "address_line": "10440 Furnace Road, Suite 204",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration",
@@ -14931,9 +15226,9 @@
       "contact_phone": "",
       "contact_text": "Organization public information and inquiries",
       "contact_url": "https://www.qinetiq.com/en-us/contact-us",
-      "latitude": 38.704,
-      "location_precision": "locality",
-      "longitude": -77.228,
+      "latitude": 38.675086,
+      "location_precision": "exact",
+      "longitude": -77.240393,
       "missions": [
         "Training and experimentation"
       ],
@@ -14944,6 +15239,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "22079-2630",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Northern Virginia",
@@ -15013,6 +15309,7 @@
       "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.radfordva.gov/AgendaCenter/ViewFile/Minutes/_01272026-805",
       "activity_status": "active",
+      "address_line": "20 Robertson Street",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -15023,9 +15320,9 @@
       "contact_text": "Radford City Police Department",
       "contact_url": "https://www.radfordva.gov/Directory.aspx?did=16",
       "current_activity": "Radford Police is replacing its existing DJI Mavic 3T with a Skydio X10 and accessories through the CY 2026 DCJS program.",
-      "latitude": 37.132,
-      "location_precision": "locality",
-      "longitude": -80.576,
+      "latitude": 37.131588,
+      "location_precision": "site",
+      "longitude": -80.581693,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -15037,6 +15334,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "24141",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "New River Valley",
@@ -15053,6 +15351,10 @@
         {
           "title": "DCJS Unmanned Aircraft Trade and Replace Program",
           "url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+        },
+        {
+          "title": "Radford City Police Department address",
+          "url": "https://radfordva.gov/2398/Police-Department"
         },
         {
           "title": "Radford City Police Department contact information",
@@ -15308,6 +15610,7 @@
       "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://aevex.com/aevex-launches-drone-factory-of-the-future-and-expands-its-robust-uas-portfolio-through-the-acquisition-of-select-assets-from-rapidflight/",
       "activity_status": "historical",
+      "address_line": "9617 Center Street",
       "capabilities": [
         "Systems engineering and integration",
         "Operations, maintenance, and sustainment"
@@ -15318,9 +15621,9 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.prnewswire.com/news-releases/rapidflight-celebrates-grand-opening-of-uas-3d-manufacturing-headquarters-in-manassas-virginia-301884344.html",
       "current_activity": "RapidFlight established and operated the Manassas UAS manufacturing headquarters. In September 2025, AEVEX announced that it had acquired select RapidFlight assets and intellectual property, so the facility record is retained as historical rather than presented as a current standalone RapidFlight operation.",
-      "latitude": 38.751,
-      "location_precision": "locality",
-      "longitude": -77.475,
+      "latitude": 38.753213,
+      "location_precision": "site",
+      "longitude": -77.488543,
       "missions": [
         "Infrastructure inspection",
         "Logistics and contested logistics"
@@ -15331,6 +15634,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "20110",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "Northern Virginia",
@@ -15642,6 +15946,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "5000 Deepwater Terminal Road",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Data engineering, analytics, and edge computing"
@@ -15651,9 +15956,9 @@
       "contact_phone": "",
       "contact_text": "Facility or operator public information",
       "contact_url": "https://www.portofvirginia.com/contact/",
-      "latitude": 37.541,
-      "location_precision": "locality",
-      "longitude": -77.436,
+      "latitude": 37.45784,
+      "location_precision": "site",
+      "longitude": -77.423308,
       "missions": [
         "Logistics and contested logistics",
         "Infrastructure inspection"
@@ -15664,6 +15969,7 @@
         "Maritime surface systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23234",
       "provenance": "curated-public-source",
       "record_type": "infrastructure",
       "region": "Greater Richmond",
@@ -15672,6 +15978,10 @@
         {
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
+        },
+        {
+          "title": "Port of Virginia terminal directions",
+          "url": "https://operations.portofvirginia.com/terminal-directions/"
         },
         {
           "title": "Richmond Marine Terminal public contact information",
@@ -15687,6 +15997,7 @@
       "website_url": "https://www.portofvirginia.com/gateway/capabilities/"
     },
     {
+      "address_line": "200 West Grace Street",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -15694,11 +16005,11 @@
       "city": "Richmond",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://rva.gov/police",
-      "latitude": 37.541,
-      "location_precision": "locality",
-      "longitude": -77.436,
+      "contact_text": "Program or parent-organization inquiries",
+      "contact_url": "https://rva.gov/police/police-faqs",
+      "latitude": 37.545913,
+      "location_precision": "site",
+      "longitude": -77.444541,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -15709,6 +16020,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23220",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Greater Richmond",
@@ -15717,6 +16029,10 @@
         {
           "title": "Richmond Police Small Unmanned Aerial Vehicle Policy",
           "url": "https://rva.gov/sites/default/files/2024-02/GO%2006-32%20Unmanned%20Aerial%20Vehicle.pdf"
+        },
+        {
+          "title": "Richmond Police Department contact information",
+          "url": "https://rva.gov/police/police-faqs"
         },
         {
           "title": "Richmond Police Department",
@@ -15821,6 +16137,7 @@
       "website_url": "https://www.roanoke.edu/"
     },
     {
+      "address_line": "5925 Cove Road",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -15828,11 +16145,11 @@
       "city": "Roanoke",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.roanokecountyva.gov/DocumentCenter/View/22361/2021-Community-Strategic-Plan-Annual-Report",
-      "latitude": 37.271,
-      "location_precision": "locality",
-      "longitude": -79.941,
+      "contact_text": "Program or parent-organization inquiries",
+      "contact_url": "https://www.roanokecountyva.gov/Directory.aspx?DID=21",
+      "latitude": 37.321176,
+      "location_precision": "site",
+      "longitude": -80.022068,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -15843,6 +16160,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "24019",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Roanoke Valley",
@@ -15851,6 +16169,10 @@
         {
           "title": "Roanoke County Community Strategic Plan Annual Report",
           "url": "https://www.roanokecountyva.gov/DocumentCenter/View/22361/2021-Community-Strategic-Plan-Annual-Report"
+        },
+        {
+          "title": "Roanoke County Fire and Rescue contact information",
+          "url": "https://www.roanokecountyva.gov/Directory.aspx?DID=21"
         },
         {
           "title": "Roanoke County Fire and Rescue",
@@ -15871,6 +16193,7 @@
       "website_url": "https://www.roanokecountyva.gov/DocumentCenter/View/22361/2021-Community-Strategic-Plan-Annual-Report"
     },
     {
+      "address_line": "5925 Cove Road",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -15878,11 +16201,11 @@
       "city": "Roanoke",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.roanokecountyva.gov/DocumentCenter/View/1061/Agenda-with-Reports",
-      "latitude": 37.271,
-      "location_precision": "locality",
-      "longitude": -79.941,
+      "contact_text": "Program or parent-organization inquiries",
+      "contact_url": "https://www.roanokecountyva.gov/1085/Crime-Reports",
+      "latitude": 37.321176,
+      "location_precision": "site",
+      "longitude": -80.022068,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -15893,6 +16216,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "24019",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Roanoke Valley",
@@ -15901,6 +16225,10 @@
         {
           "title": "Roanoke County Police Department Special Operations",
           "url": "https://www.roanokecountyva.gov/DocumentCenter/View/1061/Agenda-with-Reports"
+        },
+        {
+          "title": "Roanoke County Police Department contact information",
+          "url": "https://www.roanokecountyva.gov/1085/Crime-Reports"
         },
         {
           "title": "Roanoke County Police Department",
@@ -16074,6 +16402,7 @@
       "website_url": "https://www.scout.space/"
     },
     {
+      "address_line": "33531 Chincoteague Road",
       "capabilities": [
         "Systems engineering and integration",
         "Operations, maintenance, and sustainment"
@@ -16083,9 +16412,9 @@
       "contact_phone": "",
       "contact_text": "Organization public information and inquiries",
       "contact_url": "https://www.navair.navy.mil/osbp/node/171",
-      "latitude": 37.94,
-      "location_precision": "locality",
-      "longitude": -75.467,
+      "latitude": 37.925329,
+      "location_precision": "exact",
+      "longitude": -75.487131,
       "missions": [
         "Infrastructure inspection",
         "Logistics and contested logistics"
@@ -16095,6 +16424,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23337",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Eastern Shore",
@@ -16103,6 +16433,10 @@
         {
           "title": "NAVAIR Small Business Profile: Sentinel Robotic Solutions",
           "url": "https://www.navair.navy.mil/osbp/node/11301"
+        },
+        {
+          "title": "Sentinel Robotic Solutions contact information",
+          "url": "https://www.srsgrp.com/contact"
         },
         {
           "title": "Sentinel Robotic Solutions public contact information",
@@ -16649,6 +16983,7 @@
       "website_url": "https://sw.edu/"
     },
     {
+      "address_line": "One Partnership Circle",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -16656,11 +16991,11 @@
       "city": "Abingdon",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.swcenter.edu/wp-content/uploads/2025/07/2024Dec12_Minutes_FINAL.pdf",
-      "latitude": 36.71,
-      "location_precision": "locality",
-      "longitude": -81.975,
+      "contact_text": "Program or parent-organization inquiries",
+      "contact_url": "https://www.swcenter.edu/contact/",
+      "latitude": 36.6957,
+      "location_precision": "site",
+      "longitude": -82.002083,
       "missions": [
         "Training and experimentation"
       ],
@@ -16670,6 +17005,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24210",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Southwest Virginia",
@@ -16678,6 +17014,10 @@
         {
           "title": "Southwest Virginia Higher Education Center Board Minutes",
           "url": "https://www.swcenter.edu/wp-content/uploads/2025/07/2024Dec12_Minutes_FINAL.pdf"
+        },
+        {
+          "title": "Southwest Virginia Higher Education Center contact location",
+          "url": "https://www.swcenter.edu/contact/"
         },
         {
           "title": "Southwest Virginia Higher Education Center FY 2023 annual report documenting drone education",
@@ -16971,6 +17311,7 @@
       "activity_last_verified_at": "2026-08-24",
       "activity_source_url": "https://subseacraft.com/subsea-craft-kickstarts-u-s-expansion/",
       "activity_status": "planned",
+      "address_line": "2517 Squadron Court",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration",
@@ -16986,9 +17327,9 @@
       "development_notes": "The Virginia Beach operation was publicly announced in May 2026; the catalog does not yet have evidence of an opened local facility or a public street address.",
       "development_source_url": "https://subseacraft.com/subsea-craft-kickstarts-u-s-expansion/",
       "development_status": "planned",
-      "latitude": 36.853,
-      "location_precision": "locality",
-      "longitude": -75.978,
+      "latitude": 36.796937,
+      "location_precision": "site",
+      "longitude": -76.060818,
       "missions": [
         "Maritime domain awareness",
         "ISR",
@@ -17002,7 +17343,7 @@
         "Undersea systems",
         "Unmanned aircraft systems"
       ],
-      "postal_code": "",
+      "postal_code": "23453",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Hampton Roads",
@@ -17019,6 +17360,10 @@
         {
           "title": "SubSea Craft U.S. recruitment and public contact information",
           "url": "https://subseacraft.com/contact/"
+        },
+        {
+          "title": "Virginia Beach Development Authority SubSea Craft expansion resolution",
+          "url": "https://yes-vb.files.svdcdn.com/production/About-Us/VBDA/MeetingMaterial/2026/VBDA-Resolutions-May-2026.pdf"
         }
       ],
       "state": "VA",
@@ -17426,17 +17771,18 @@
       "website_url": "https://www.textronsystems.com/products/aerosonde-uas"
     },
     {
+      "address_line": "600 Massie Road",
       "capabilities": [
         "Systems engineering and integration"
       ],
       "city": "Charlottesville",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://tjaglcs.army.mil/",
-      "latitude": 38.035,
-      "location_precision": "locality",
-      "longitude": -78.503,
+      "contact_text": "Installation or agency public information",
+      "contact_url": "https://tjaglcs.army.mil/G6-itd",
+      "latitude": 38.05204,
+      "location_precision": "site",
+      "longitude": -78.509251,
       "missions": [
         "Force protection and installation security"
       ],
@@ -17445,6 +17791,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "22903",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Central Virginia",
@@ -17453,6 +17800,10 @@
         {
           "title": "Virginia Military Factbook",
           "url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf"
+        },
+        {
+          "title": "The Judge Advocate General's Legal Center and School contact information",
+          "url": "https://tjaglcs.army.mil/G6-itd"
         },
         {
           "title": "The Judge Advocate General's Legal Center and School",
@@ -17649,6 +18000,7 @@
       "website_url": "https://courses.vccs.edu/colleges/tcc/courses/UMS-UnmannedSystems"
     },
     {
+      "address_line": "405 Partnership Drive",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration"
@@ -17658,9 +18010,9 @@
       "contact_phone": "",
       "contact_text": "Organization public information and inquiries",
       "contact_url": "https://torc.ai/about-us/blacksburg/",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "latitude": 37.189551,
+      "location_precision": "exact",
+      "longitude": -80.392214,
       "missions": [
         "Logistics and contested logistics"
       ],
@@ -17669,6 +18021,7 @@
       "platform_domains": [
         "Ground vehicles and robotics"
       ],
+      "postal_code": "24060",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "New River Valley",
@@ -18672,19 +19025,20 @@
       "website_url": "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/research/robotics-dynamics-and-autonomous-systems"
     },
     {
+      "address_line": "6364 Cliffs Road",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Navigation and positioning",
         "Perception, sensing, and sensor fusion"
       ],
-      "city": "Eastville",
+      "city": "Cape Charles",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://abcrc.virginia.edu/permits-access-drones",
-      "latitude": 37.352,
-      "location_precision": "locality",
-      "longitude": -75.946,
+      "contact_text": "Facility or operator public information",
+      "contact_url": "https://abcrc.virginia.edu/contact-us",
+      "latitude": 37.288373,
+      "location_precision": "site",
+      "longitude": -75.926299,
       "missions": [
         "Maritime domain awareness",
         "Environmental monitoring"
@@ -18695,6 +19049,7 @@
         "Maritime surface systems",
         "Undersea systems"
       ],
+      "postal_code": "23310",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "Eastern Shore",
@@ -18703,6 +19058,10 @@
         {
           "title": "UVA Coastal Research Center Drone Pilot Compliance Checklist",
           "url": "https://abcrc.virginia.edu/files/abcrc/files/coastal_research_center___drone_pilot_compliance_checklist.pdf"
+        },
+        {
+          "title": "UVA Coastal Research Center contact information",
+          "url": "https://abcrc.virginia.edu/contact-us"
         },
         {
           "title": "UVA Coastal Research Center drone permits and access",
@@ -19440,6 +19799,7 @@
       "website_url": "https://www.vims.edu/bayinfo/habs/tech/"
     },
     {
+      "address_line": "313 East Broad Street",
       "capabilities": [
         "Safety, policy, regulatory, and airspace integration",
         "Data engineering, analytics, and edge computing"
@@ -19447,11 +19807,11 @@
       "city": "Richmond",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/",
-      "latitude": 37.541,
-      "location_precision": "locality",
-      "longitude": -77.436,
+      "contact_text": "Organization public information and inquiries",
+      "contact_url": "https://vipc.org/contact-us/",
+      "latitude": 37.543832,
+      "location_precision": "site",
+      "longitude": -77.439186,
       "missions": [
         "Logistics and contested logistics",
         "Training and experimentation"
@@ -19462,6 +19822,7 @@
         "Advanced Air Mobility",
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23219",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Greater Richmond",
@@ -19470,6 +19831,10 @@
         {
           "title": "Virginia Unmanned Systems Center",
           "url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
+        },
+        {
+          "title": "Virginia Innovation Partnership Corporation contact information",
+          "url": "https://vipc.org/contact-us/"
         },
         {
           "title": "VIPC press kit identifying the Virginia AAM Alliance",
@@ -19692,6 +20057,7 @@
       "website_url": "https://healthsafety.vcu.edu/operational-risk/unmanned-aircraft-system/"
     },
     {
+      "address_line": "300 Arboretum Place, Suite 200",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -19700,10 +20066,10 @@
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
-      "contact_url": "https://www.vccs.edu/find-your-community-college/",
-      "latitude": 37.541,
-      "location_precision": "locality",
-      "longitude": -77.436,
+      "contact_url": "https://www.vccs.edu/contact-us/",
+      "latitude": 37.493813,
+      "location_precision": "site",
+      "longitude": -77.564677,
       "missions": [
         "Training and experimentation"
       ],
@@ -19713,6 +20079,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "23236",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Greater Richmond",
@@ -19721,6 +20088,10 @@
         {
           "title": "Virginia Community College System Unmanned Systems Courses",
           "url": "https://courses.vccs.edu/courses/UMS-UnmannedSystems"
+        },
+        {
+          "title": "Virginia Community College System contact information",
+          "url": "https://www.vccs.edu/contact-us/"
         },
         {
           "title": "Virginia Community College System: About",
@@ -19740,6 +20111,7 @@
       "website_url": "https://courses.vccs.edu/courses/UMS-UnmannedSystems"
     },
     {
+      "address_line": "7870 Villa Park Drive, Suite 400",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -19749,9 +20121,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://dwr.virginia.gov/wp-content/uploads/media/Virginia-Conservation-Police-Annual-Report-2024.pdf",
-      "latitude": 37.632,
-      "location_precision": "locality",
-      "longitude": -77.515,
+      "latitude": 37.627916,
+      "location_precision": "site",
+      "longitude": -77.466326,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -19762,6 +20134,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23228",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Greater Richmond",
@@ -19772,7 +20145,7 @@
           "url": "https://dwr.virginia.gov/wp-content/uploads/media/Virginia-Conservation-Police-Annual-Report-2024.pdf"
         },
         {
-          "title": "Virginia Conservation Police 2022 annual report documenting UAS program launch",
+          "title": "Virginia Conservation Police headquarters information",
           "url": "https://dwr.virginia.gov/wp-content/uploads/media/Virginia-Conservation-Police-Annual-Report-2022.pdf"
         },
         {
@@ -19843,6 +20216,7 @@
       "website_url": "https://vipc.org/virginia-launches-advanced-air-mobility-and-unmanned-systems-test-site-program/"
     },
     {
+      "address_line": "900 Natural Resources Drive, Suite 800",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -19852,9 +20226,9 @@
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://dof.virginia.gov/user_directory/jason-a-braunstein/",
-      "latitude": 38.035,
-      "location_precision": "locality",
-      "longitude": -78.503,
+      "latitude": 38.022084,
+      "location_precision": "site",
+      "longitude": -78.530654,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -19865,6 +20239,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "22903",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Central Virginia",
@@ -19873,6 +20248,10 @@
         {
           "title": "Virginia Department of Forestry Drone Program",
           "url": "https://dof.virginia.gov/user_directory/jason-a-braunstein/"
+        },
+        {
+          "title": "Virginia Department of Forestry headquarters",
+          "url": "https://www.dof.virginia.gov/office_location/128/"
         },
         {
           "title": "Virginia Department of Forestry agency directory and UAV program contact",
@@ -19889,17 +20268,18 @@
       "website_url": "https://dof.virginia.gov/user_directory/jason-a-braunstein/"
     },
     {
+      "address_line": "1221 East Broad Street",
       "capabilities": [
         "Safety, policy, regulatory, and airspace integration"
       ],
       "city": "Richmond",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/",
-      "latitude": 37.541,
-      "location_precision": "locality",
-      "longitude": -77.436,
+      "contact_text": "Program or parent-organization inquiries",
+      "contact_url": "https://www.vdot.virginia.gov/contact/",
+      "latitude": 37.539014,
+      "location_precision": "site",
+      "longitude": -77.431139,
       "missions": [
         "Training and experimentation"
       ],
@@ -19908,6 +20288,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23219",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Greater Richmond",
@@ -19916,6 +20297,10 @@
         {
           "title": "Virginia Unmanned Systems Center",
           "url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
+        },
+        {
+          "title": "Virginia Department of Transportation contact information",
+          "url": "https://www.vdot.virginia.gov/contact/"
         },
         {
           "title": "VDOT geospatial program and UAS services",
@@ -19992,6 +20377,7 @@
       "website_url": "https://www.vedp.org/industry/unmanned-systems"
     },
     {
+      "address_line": "1100 Bank Street",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -20001,9 +20387,9 @@
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://www.dcjs.virginia.gov/about-dcjs/contact-us",
-      "latitude": 37.541,
-      "location_precision": "locality",
-      "longitude": -77.436,
+      "latitude": 37.537485,
+      "location_precision": "site",
+      "longitude": -77.433638,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -20014,6 +20400,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23219",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Greater Richmond",
@@ -20022,6 +20409,10 @@
         {
           "title": "DCJS Unmanned Aircraft Trade and Replace Program",
           "url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+        },
+        {
+          "title": "Virginia Department of Criminal Justice Services contact information",
+          "url": "https://www.dcjs.virginia.gov/about-dcjs/foia-requests"
         },
         {
           "title": "Virginia First Responder Unmanned Aircraft Trade and Replace Program public contact information",
@@ -20187,6 +20578,7 @@
       "website_url": "https://www.vhcc.edu/"
     },
     {
+      "address_line": "100 VHCC Drive",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
@@ -20196,9 +20588,9 @@
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://www.vhcc.edu/contact-us",
-      "latitude": 36.71,
-      "location_precision": "locality",
-      "longitude": -81.975,
+      "latitude": 36.698866,
+      "location_precision": "site",
+      "longitude": -82.001118,
       "missions": [
         "Training and experimentation"
       ],
@@ -20208,6 +20600,7 @@
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24212",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Southwest Virginia",
@@ -20216,6 +20609,10 @@
         {
           "title": "Virginia Highlands Community College Small UAS Certificate",
           "url": "https://www.vhcc.edu/small-unmanned-aerial-systems-suas"
+        },
+        {
+          "title": "Virginia Highlands Community College campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         },
         {
           "title": "Virginia Highlands Community College Small UAS Certificate public contact information",
@@ -20231,6 +20628,7 @@
       "website_url": "https://www.vhcc.edu/small-unmanned-aerial-systems-suas"
     },
     {
+      "address_line": "7685 Winchester Road",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Data engineering, analytics, and edge computing"
@@ -20240,9 +20638,9 @@
       "contact_phone": "",
       "contact_text": "Facility or operator public information",
       "contact_url": "https://www.portofvirginia.com/contact/",
-      "latitude": 38.918,
-      "location_precision": "locality",
-      "longitude": -78.194,
+      "latitude": 38.98705,
+      "location_precision": "site",
+      "longitude": -78.180598,
       "missions": [
         "Logistics and contested logistics",
         "Infrastructure inspection"
@@ -20253,6 +20651,7 @@
         "Maritime surface systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "22630",
       "provenance": "curated-public-source",
       "record_type": "infrastructure",
       "region": "Shenandoah Valley",
@@ -20261,6 +20660,10 @@
         {
           "title": "Port of Virginia Capabilities",
           "url": "https://www.portofvirginia.com/gateway/capabilities/"
+        },
+        {
+          "title": "Port of Virginia terminal directions",
+          "url": "https://operations.portofvirginia.com/terminal-directions/"
         },
         {
           "title": "Virginia Inland Port public contact information",
@@ -20276,17 +20679,18 @@
       "website_url": "https://www.portofvirginia.com/gateway/capabilities/"
     },
     {
+      "address_line": "313 East Broad Street",
       "capabilities": [
         "Safety, policy, regulatory, and airspace integration"
       ],
       "city": "Richmond",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/",
-      "latitude": 37.541,
-      "location_precision": "locality",
-      "longitude": -77.436,
+      "contact_text": "Organization public information and inquiries",
+      "contact_url": "https://vipc.org/contact-us/",
+      "latitude": 37.543832,
+      "location_precision": "exact",
+      "longitude": -77.439186,
       "missions": [
         "Training and experimentation"
       ],
@@ -20295,6 +20699,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23219",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Greater Richmond",
@@ -20303,6 +20708,10 @@
         {
           "title": "Virginia Unmanned Systems Center",
           "url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
+        },
+        {
+          "title": "Virginia Innovation Partnership Corporation contact information",
+          "url": "https://vipc.org/contact-us/"
         },
         {
           "title": "VIPC strategic initiatives",
@@ -20482,18 +20891,19 @@
       "website_url": "https://www.portofvirginia.com/gateway/capabilities/"
     },
     {
+      "address_line": "1245 Pine Tree Road",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Perception, sensing, and sensor fusion"
       ],
-      "city": "Danville",
+      "city": "Alton",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 36.586,
-      "location_precision": "locality",
-      "longitude": -79.395,
+      "contact_text": "Site operator or program information",
+      "contact_url": "https://virnow.com/contact/",
+      "latitude": 36.560025,
+      "location_precision": "site",
+      "longitude": -79.20251,
       "missions": [
         "Training and experimentation"
       ],
@@ -20503,6 +20913,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24520",
       "provenance": "curated-public-source",
       "record_type": "operating-environment",
       "region": "Southside Virginia",
@@ -20511,6 +20922,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "Virginia International Raceway contact information",
+          "url": "https://virnow.com/contact/"
         },
         {
           "title": "Virginia Tech Transportation Institute: Virginia International Raceway",
@@ -20730,17 +21145,18 @@
       "website_url": "https://www.vpcc.edu/program/small-unmanned-aircraft-systems-drone-flight-technician/"
     },
     {
+      "address_line": "313 East Broad Street",
       "capabilities": [
         "Safety, policy, regulatory, and airspace integration"
       ],
       "city": "Richmond",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/",
-      "latitude": 37.541,
-      "location_precision": "locality",
-      "longitude": -77.436,
+      "contact_text": "Organization public information and inquiries",
+      "contact_url": "https://vipc.org/contact-us/",
+      "latitude": 37.543832,
+      "location_precision": "site",
+      "longitude": -77.439186,
       "missions": [
         "Training and experimentation"
       ],
@@ -20749,6 +21165,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23219",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Greater Richmond",
@@ -20757,6 +21174,10 @@
         {
           "title": "Virginia Unmanned Systems Center",
           "url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
+        },
+        {
+          "title": "Virginia Innovation Partnership Corporation contact information",
+          "url": "https://vipc.org/contact-us/"
         },
         {
           "title": "VIPC strategic initiatives including the Public Safety Innovation Center",
@@ -20972,18 +21393,19 @@
       "website_url": "https://www.vaspace.org/our-facilities"
     },
     {
+      "address_line": "7700 Midlothian Turnpike",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
       ],
-      "city": "Richmond",
+      "city": "North Chesterfield",
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
       "contact_url": "https://vsp.virginia.gov/about-us/department-history/",
-      "latitude": 37.541,
-      "location_precision": "locality",
-      "longitude": -77.436,
+      "latitude": 37.498983,
+      "location_precision": "site",
+      "longitude": -77.539283,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -20994,6 +21416,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23235",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Greater Richmond",
@@ -21002,6 +21425,10 @@
         {
           "title": "Virginia State Police Department History",
           "url": "https://vsp.virginia.gov/about-us/department-history/"
+        },
+        {
+          "title": "Virginia State Police headquarters directions",
+          "url": "https://vsp.virginia.gov/sections-units-bureaus/superintendent/directions-to-virginia-state-police/"
         },
         {
           "title": "Virginia State Police: About",
@@ -21480,18 +21907,19 @@
       "website_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html"
     },
     {
+      "address_line": "33446 Research Drive",
       "capabilities": [
         "Perception, sensing, and sensor fusion",
         "Data engineering, analytics, and edge computing"
       ],
-      "city": "Melfa",
+      "city": "Painter",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.arec.vaes.vt.edu/arec/eastern-shore.html",
-      "latitude": 37.649,
-      "location_precision": "locality",
-      "longitude": -75.741,
+      "contact_text": "Program or parent-organization inquiries",
+      "contact_url": "https://www.arec.vaes.vt.edu/arec/eastern-shore/contact.html",
+      "latitude": 37.583499,
+      "location_precision": "site",
+      "longitude": -75.820517,
       "missions": [
         "Agriculture and natural resources",
         "Environmental monitoring"
@@ -21501,6 +21929,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23420",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Eastern Shore",
@@ -21509,6 +21938,10 @@
         {
           "title": "Virginia Tech Eastern Shore AREC Drone Research",
           "url": "https://www.arec.vaes.vt.edu/content/dam/arec_vaes_vt_edu/eastern-shore/newsletter/The%20Stalk%20-%20July%202024.pdf"
+        },
+        {
+          "title": "Virginia Tech Eastern Shore AREC contact information",
+          "url": "https://www.arec.vaes.vt.edu/arec/eastern-shore/contact.html"
         },
         {
           "title": "Virginia Tech Eastern Shore Agricultural Research and Extension Center",
@@ -22224,6 +22657,7 @@
       "website_url": "https://www.vwu.edu/"
     },
     {
+      "address_line": "3094 Colonial Avenue",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration",
@@ -22234,9 +22668,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.virginiawestern.edu/academics/mechatronics/autonomous-vehicle-technology/",
-      "latitude": 37.271,
-      "location_precision": "locality",
-      "longitude": -79.941,
+      "latitude": 37.245029,
+      "location_precision": "site",
+      "longitude": -79.973011,
       "missions": [
         "Training and experimentation"
       ],
@@ -22247,6 +22681,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
+      "postal_code": "24015",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Roanoke Valley",
@@ -22255,6 +22690,10 @@
         {
           "title": "Virginia Western Autonomous Vehicle Technology",
           "url": "https://www.virginiawestern.edu/academics/mechatronics/autonomous-vehicle-technology/"
+        },
+        {
+          "title": "Virginia Western Community College campus location (NCES IPEDS 2024)",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         },
         {
           "title": "Virginia Western mechatronics program",
@@ -22410,18 +22849,19 @@
       "website_url": "https://www.vmi.edu/news/headlines/2025-2026/drone-detection-focus-of-cadet-research.php"
     },
     {
+      "address_line": "New River Valley Plant, I-81 Exit 98",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration"
       ],
-      "city": "Christiansburg",
+      "city": "Dublin",
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Facility or operator public information",
       "contact_url": "https://www.volvogroup.com/en/about-us/organization/our-production-facilities/new-river-valley-plant.html",
-      "latitude": 37.13,
-      "location_precision": "locality",
-      "longitude": -80.409,
+      "latitude": 37.073293,
+      "location_precision": "site",
+      "longitude": -80.704077,
       "missions": [
         "Logistics and contested logistics"
       ],
@@ -22430,6 +22870,7 @@
       "platform_domains": [
         "Ground vehicles and robotics"
       ],
+      "postal_code": "24084",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "New River Valley",
@@ -22440,7 +22881,7 @@
           "url": "https://www.vedp.org/industry/unmanned-systems"
         },
         {
-          "title": "Volvo Group New River Valley Plant",
+          "title": "Volvo Group New River Valley Plant location information",
           "url": "https://www.volvogroup.com/en/about-us/organization/our-production-facilities/new-river-valley-plant.html"
         }
       ],
@@ -22869,6 +23310,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "301 East Cork Street",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -22878,9 +23320,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.winchesterva.gov/Government/Departments/Emergency-Management",
-      "latitude": 39.185,
-      "location_precision": "locality",
-      "longitude": -78.163,
+      "latitude": 39.181078,
+      "location_precision": "site",
+      "longitude": -78.161777,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -22891,6 +23333,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "22601",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Shenandoah Valley",
@@ -22901,12 +23344,12 @@
           "url": "https://www.winchesterva.gov/files/assets/public/v/1/finance/fy23_budget_book.pdf"
         },
         {
-          "title": "Winchester FY 2026 budget documenting current sUAS capability",
-          "url": "https://www.winchesterva.gov/files/assets/public/v/1/finance/fy26-budget-7.24.25-1.pdf"
+          "title": "Winchester Emergency Management office address",
+          "url": "https://www.winchesterva.gov/Government/Departments/Emergency-Management"
         },
         {
-          "title": "Winchester Emergency Management",
-          "url": "https://www.winchesterva.gov/Government/Departments/Emergency-Management"
+          "title": "Winchester FY 2026 budget documenting current sUAS capability",
+          "url": "https://www.winchesterva.gov/files/assets/public/v/1/finance/fy26-budget-7.24.25-1.pdf"
         }
       ],
       "state": "VA",
@@ -22969,6 +23412,7 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "address_line": "160 Welcome Street NE",
       "capabilities": [
         "Systems engineering and integration",
         "Operations, maintenance, and sustainment"
@@ -22978,9 +23422,9 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 37.13,
-      "location_precision": "locality",
-      "longitude": -80.409,
+      "latitude": 37.161937,
+      "location_precision": "site",
+      "longitude": -80.418745,
       "missions": [
         "Infrastructure inspection",
         "Logistics and contested logistics"
@@ -22990,6 +23434,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "24073",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "New River Valley",
@@ -22998,6 +23443,10 @@
         {
           "title": "VEDP: Unmanned Systems in Virginia",
           "url": "https://www.vedp.org/industry/unmanned-systems"
+        },
+        {
+          "title": "Wing Christiansburg operations profile",
+          "url": "https://wing.com/news/meet-team-behind-americas-first"
         },
         {
           "title": "Wing and DoorDash drone delivery in Christiansburg",
@@ -23016,6 +23465,7 @@
       "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.wisecounty.org/AgendaCenter/ViewFile/Agenda/_02122026-671",
       "activity_status": "active",
+      "address_line": "5605 Patriot Drive",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -23026,9 +23476,9 @@
       "contact_text": "Wise County Sheriff's Office",
       "contact_url": "https://wisecounty.org/211/Sheriff---WCSO",
       "current_activity": "Wise County's 2026 grant record identifies the Sheriff's Office as the grantee and states that the award will purchase a drone.",
-      "latitude": 36.975,
-      "location_precision": "locality",
-      "longitude": -82.576,
+      "latitude": 36.967429,
+      "location_precision": "site",
+      "longitude": -82.550581,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -23040,6 +23490,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "24293",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Southwest Virginia",
@@ -23056,6 +23507,10 @@
         {
           "title": "DCJS Unmanned Aircraft Trade and Replace Program",
           "url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+        },
+        {
+          "title": "Wise County Sheriff's Office contact information",
+          "url": "https://www.wisecounty.org/directory.aspx?did=18"
         },
         {
           "title": "Wise County Sheriff's Office contact information",
@@ -23133,6 +23588,7 @@
       "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.wytheco.org/AgendaCenter/ViewFile/Agenda/_01272026-119",
       "activity_status": "active",
+      "address_line": "245 South 4th Street",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -23143,9 +23599,9 @@
       "contact_text": "Wythe County Sheriff's Office",
       "contact_url": "https://www.wytheco.org/170/Sheriff",
       "current_activity": "Wythe County's January 2026 minutes identify the Sheriff's Office as the recipient of the CY 2026 unmanned-aircraft replacement award.",
-      "latitude": 36.949,
-      "location_precision": "locality",
-      "longitude": -81.084,
+      "latitude": 36.94725,
+      "location_precision": "site",
+      "longitude": -81.083722,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
@@ -23157,6 +23613,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "24382",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Southwest Virginia",
@@ -23231,6 +23688,7 @@
       "website_url": "https://www.wcc.vccs.edu/"
     },
     {
+      "address_line": "13870 Taylorstown Road",
       "capabilities": [
         "Testing, evaluation, verification, and validation",
         "Systems engineering and integration"
@@ -23240,9 +23698,9 @@
       "contact_phone": "",
       "contact_text": "Site operator or program information",
       "contact_url": "https://xelevateus.com/contact/",
-      "latitude": 39.116,
-      "location_precision": "locality",
-      "longitude": -77.564,
+      "latitude": 39.231209,
+      "location_precision": "site",
+      "longitude": -77.551347,
       "missions": [
         "Training and experimentation"
       ],
@@ -23253,6 +23711,7 @@
         "Ground vehicles and robotics",
         "Maritime surface systems"
       ],
+      "postal_code": "20176",
       "provenance": "curated-public-source",
       "record_type": "operating-environment",
       "region": "Northern Virginia",
@@ -23261,6 +23720,10 @@
         {
           "title": "Xelevate Leesburg Unmanned Systems Facility",
           "url": "https://xelevateus.com/leesburg-virginia/"
+        },
+        {
+          "title": "Xelevate Virginia facility visitor terms",
+          "url": "https://xelevateus.com/terms-and-conditions/"
         },
         {
           "title": "Xelevate Leesburg Unmanned Systems Facility public contact information",
@@ -23330,6 +23793,7 @@
       "website_url": "https://www.yorkcounty.gov/1874/The-ROVER-Team"
     },
     {
+      "address_line": "10517 Critzers Shop Road",
       "capabilities": [
         "Systems engineering and integration",
         "Operations, maintenance, and sustainment"
@@ -23339,9 +23803,9 @@
       "contact_phone": "540-456-1147",
       "contact_text": "Organization public information and inquiries",
       "contact_url": "https://zenithaerotech.com/tethered-drone-contact-us/",
-      "latitude": 38.029,
-      "location_precision": "locality",
-      "longitude": -78.835,
+      "latitude": 38.002365,
+      "location_precision": "exact",
+      "longitude": -78.825996,
       "missions": [
         "Infrastructure inspection",
         "Logistics and contested logistics"
@@ -23351,6 +23815,7 @@
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "22920",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Central Virginia",
@@ -23361,7 +23826,7 @@
           "url": "https://zenithaerotech.com/about-us-tethered-drone/"
         },
         {
-          "title": "Zenith Aerotech public contact information",
+          "title": "Zenith AeroTech contact information",
           "url": "https://zenithaerotech.com/tethered-drone-contact-us/"
         }
       ],
