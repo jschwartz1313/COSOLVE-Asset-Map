@@ -55,10 +55,10 @@ class RealCatalogFileTests(TestCase):
             )
         )
 
-    def test_catalog_has_at_least_440_relevant_source_backed_records(self):
+    def test_catalog_has_at_least_470_relevant_source_backed_records(self):
         catalog = self.load_catalog()
         records = catalog["records"]
-        self.assertGreaterEqual(len(records), 440)
+        self.assertGreaterEqual(len(records), 470)
         self.assertEqual(catalog["record_count"], len(records))
         self.assertGreaterEqual(len(catalog["relationships"]), 90)
         self.assertFalse(any(record["name"].startswith("Demo ") for record in records))
@@ -124,9 +124,7 @@ class RealCatalogFileTests(TestCase):
             )
         )
         self.assertFalse(
-            SPECIALIZED_HIGHER_ED_EXCLUSIONS.intersection(
-                record["name"] for record in universities
-            )
+            SPECIALIZED_HIGHER_ED_EXCLUSIONS.intersection(record["name"] for record in universities)
         )
         hampton_roads = [record for record in records if record["region"] == "Hampton Roads"]
         self.assertGreaterEqual(len(hampton_roads), 69)
@@ -172,9 +170,7 @@ class RealCatalogFileTests(TestCase):
         records_by_name = {record["name"]: record for record in records}
         orange = records_by_name["Orange County Sheriff's Office Drone Team"]
         self.assertEqual(orange["website_url"], "https://www.orangecountyva.gov/sheriff")
-        self.assertFalse(
-            any("louisacounty.gov" in source["url"] for source in orange["sources"])
-        )
+        self.assertFalse(any("louisacounty.gov" in source["url"] for source in orange["sources"]))
         rapidflight = records_by_name["RapidFlight UAS Manufacturing Headquarters"]
         self.assertEqual(rapidflight["activity_status"], "historical")
         self.assertIn("AEVEX", rapidflight["current_activity"])
@@ -268,8 +264,11 @@ class RealCatalogFileTests(TestCase):
             (settings.BASE_DIR / "data" / "asset_editorial_reviews.json").read_text()
         )
         additions_manifest = json.loads(
+            (settings.BASE_DIR / "data" / "asset_editorial_reviews_2026_08_24.json").read_text()
+        )
+        expansion_manifest = json.loads(
             (
-                settings.BASE_DIR / "data" / "asset_editorial_reviews_2026_08_24.json"
+                settings.BASE_DIR / "data" / "asset_editorial_reviews_2026_08_24_expansion.json"
             ).read_text()
         )
 
@@ -277,16 +276,22 @@ class RealCatalogFileTests(TestCase):
         self.assertEqual(len(manifest["follow_up_assets"]), 11)
         self.assertEqual(len(additions_manifest["reviewed_assets"]), 13)
         self.assertFalse(additions_manifest["follow_up_assets"])
+        self.assertEqual(len(expansion_manifest["reviewed_assets"]), 20)
+        self.assertFalse(expansion_manifest["follow_up_assets"])
 
         reviewed_names = set(manifest["reviewed_assets"])
         follow_up_names = set(manifest["follow_up_assets"])
         addition_names = set(additions_manifest["reviewed_assets"])
+        expansion_names = set(expansion_manifest["reviewed_assets"])
+        historical_names = reviewed_names | follow_up_names | addition_names
         self.assertFalse((reviewed_names | follow_up_names).intersection(addition_names))
-        self.assertEqual(reviewed_names | follow_up_names | addition_names, set(records_by_name))
+        self.assertFalse(historical_names.intersection(expansion_names))
+        self.assertEqual(historical_names | expansion_names, set(records_by_name))
 
         reviewed_assets = {
             **manifest["reviewed_assets"],
             **additions_manifest["reviewed_assets"],
+            **expansion_manifest["reviewed_assets"],
         }
         for name, source_urls in reviewed_assets.items():
             self.assertIn(name, records_by_name)
@@ -316,9 +321,7 @@ class RealCatalogFileTests(TestCase):
     def test_august_21_catalog_audit_remains_a_complete_historical_snapshot(self):
         catalog = self.load_catalog()
         audit = json.loads(
-            (
-                settings.BASE_DIR / "data" / "asset_catalog_audit_2026_08_21.json"
-            ).read_text()
+            (settings.BASE_DIR / "data" / "asset_catalog_audit_2026_08_21.json").read_text()
         )
         audit_by_name = {record["name"]: record for record in audit["records"]}
 
@@ -358,9 +361,7 @@ class RealCatalogFileTests(TestCase):
         self.assertFalse(droneup["address_line"])
         self.assertIn("airspace management", droneup["current_activity"])
 
-        all_source_urls = {
-            source["url"] for record in records for source in record["sources"]
-        }
+        all_source_urls = {source["url"] for record in records for source in record["sources"]}
         self.assertNotIn(
             "https://www.townofhaymarket.org/sites/default/files/fileattachments/police/"
             "page/2971/haymarket_police_department_annual_report_2022.pdf",
@@ -840,10 +841,45 @@ class RealCatalogFileTests(TestCase):
             sum(len(urls) for urls in manifest["reviewed_assets"].values()),
         )
         self.assertEqual(
-            Asset.objects.get(
-                name="SubSea Craft Virginia Beach Operations"
-            ).activity_status,
+            Asset.objects.get(name="SubSea Craft Virginia Beach Operations").activity_status,
             Asset.ActivityStatus.PLANNED,
+        )
+
+    def test_august_24_second_expansion_is_published_from_its_review_manifest(self):
+        review_path = (
+            settings.BASE_DIR / "data" / "asset_editorial_reviews_2026_08_24_expansion.json"
+        )
+        manifest = json.loads(review_path.read_text())
+        call_command("seed_real_data", verbosity=0)
+
+        call_command("apply_catalog_reviews", reviews=review_path, verbosity=0)
+
+        reviewed = Asset.objects.filter(
+            name__in=manifest["reviewed_assets"],
+            status=Asset.Status.PUBLISHED,
+            reviewed_at__isnull=False,
+            last_verified_at=date(2026, 8, 24),
+        )
+        self.assertEqual(reviewed.count(), 20)
+        self.assertEqual(
+            Source.objects.filter(
+                asset__name__in=manifest["reviewed_assets"],
+                verification_status="verified",
+                last_verified_at=date(2026, 8, 24),
+            ).count(),
+            sum(len(urls) for urls in manifest["reviewed_assets"].values()),
+        )
+        self.assertEqual(
+            Asset.objects.get(name="Hampton Roads Mobility Innovation Center").activity_status,
+            Asset.ActivityStatus.PLANNED,
+        )
+        self.assertEqual(
+            Asset.objects.get(name="TurbineOne Headquarters and T1 Edgeworks").activity_status,
+            Asset.ActivityStatus.PLANNED,
+        )
+        self.assertEqual(
+            Asset.objects.get(name="BZRD Systems").activity_status,
+            Asset.ActivityStatus.DEVELOPING,
         )
 
     def test_add_missing_preserves_reviewed_records_and_restores_catalog_gaps(self):
@@ -937,8 +973,7 @@ class RealCatalogFileTests(TestCase):
             overview="Legacy generic jurisdiction-level profile.",
             unmanned_systems_relevance="Public-safety UAS capability.",
             website_url=(
-                "https://www.vaco.org/wp-content/uploads/2025/12/"
-                "DCJS-Meeting-UAB-Chart.pdf"
+                "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
             ),
             contact_text="Site operator or program information",
             contact_url=(

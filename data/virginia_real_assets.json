@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-08-24",
   "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, broad-based Virginia degree-granting institutions from the NCES IPEDS 2024 directory while excluding narrowly specialized health and ministry schools without documented unmanned-systems relevance, and a curated set of source-backed ecosystem records. Specific street and site locations are anchored to official public address sources and geocoded against the U.S. Census address ranges or named-site map data; locality points are retained when the public record does not identify the operating department or facility. Every record is also classified as either a core unmanned-systems asset with direct documented activity or a supporting ecosystem asset with a broader enabling role.",
-  "record_count": 453,
+  "record_count": 473,
   "records": [
     {
       "address_line": "29194 Parkway North",
@@ -203,6 +203,59 @@
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
       "website_url": "https://advancedaircraftcompany.com/"
+    },
+    {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://www.atscva.com/dronesting-scout/",
+      "activity_status": "active",
+      "address_line": "2010 Corporate Ridge Drive, Suite 910",
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Command, control, and communications",
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "city": "McLean",
+      "contact_email": "info@atscva.com",
+      "contact_phone": "703-556-0557",
+      "contact_text": "ATSC headquarters inquiries",
+      "contact_url": "https://www.atscva.com/",
+      "current_activity": "ATSC currently markets the DroneSting family, including the wearable Scout system, and reported a live full kill-chain demonstration of the product family in 2025.",
+      "latitude": 38.912931,
+      "location_precision": "exact",
+      "longitude": -77.217102,
+      "missions": [
+        "Counter-UAS",
+        "Force protection and installation security"
+      ],
+      "name": "Advanced Technology Systems Company DroneSting",
+      "overview": "Advanced Technology Systems Company (ATSC) is headquartered in McLean. Its DroneSting counter-UAS family combines RF sensing, radar, electro-optical and infrared cameras, AI-assisted recognition, command and control, and multiple mitigation options for fixed, mobile, and expeditionary use.",
+      "platform_domains": [
+        "Counter-UAS"
+      ],
+      "postal_code": "22102",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "McLean defense company developing the DroneSting family of modular fixed, mobile, and wearable counter-UAS detection and defeat systems.",
+      "sources": [
+        {
+          "title": "ATSC DroneSting counter-UAS family and headquarters",
+          "url": "https://www.atscva.com/"
+        },
+        {
+          "title": "ATSC DroneSting Scout product profile",
+          "url": "https://www.atscva.com/dronesting-scout/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Federal and defense customer access",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Develops direct counter-UAS sensing, tracking, command-and-control, and defeat capabilities.",
+      "website_url": "https://www.atscva.com/"
     },
     {
       "capabilities": [
@@ -1044,6 +1097,64 @@
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
       "website_url": "https://www.co.augusta.va.us/home/showpublisheddocument/20491/639101430011700000"
+    },
+    {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://auranetworksystems.com/infrastructure",
+      "activity_status": "active",
+      "address_line": "1765 Greensboro Station Place, 9th Floor",
+      "capabilities": [
+        "Command, control, and communications",
+        "Safety, policy, regulatory, and airspace integration",
+        "Systems engineering and integration"
+      ],
+      "city": "McLean",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "AURA Network Systems public inquiry form",
+      "contact_url": "https://auranetworksystems.com/contact",
+      "current_activity": "AURA currently offers airborne radios for aircraft integration and ground systems for test flights while advancing standards and services for UAS C2 links.",
+      "latitude": 38.922148,
+      "location_precision": "exact",
+      "longitude": -77.233232,
+      "missions": [
+        "Communications relay",
+        "Logistics and contested logistics"
+      ],
+      "name": "AURA Network Systems",
+      "overview": "AURA Network Systems is headquartered in McLean and develops aviation-dedicated communications infrastructure. Its public materials describe licensed spectrum, airborne radios, ground systems, and deterministic frequency allocation for uncrewed-aircraft command and control, including BVLOS routes.",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Advanced Air Mobility"
+      ],
+      "postal_code": "22102",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "McLean aviation-communications company providing licensed spectrum, radios, and network infrastructure for UAS command and control and BVLOS operations.",
+      "sources": [
+        {
+          "title": "AURA UAS communications infrastructure",
+          "url": "https://auranetworksystems.com/infrastructure"
+        },
+        {
+          "title": "AURA McLean headquarters",
+          "url": "https://auranetworksystems.com/company"
+        },
+        {
+          "title": "AURA public contact route",
+          "url": "https://auranetworksystems.com/contact"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Physical infrastructure and logistics",
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Provides direct communications and spectrum infrastructure intended to support safe UAS command-and-control links and integration into national airspace.",
+      "website_url": "https://auranetworksystems.com/infrastructure"
     },
     {
       "activity_last_verified_at": "2026-08-21",
@@ -2264,6 +2375,58 @@
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
       "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+    },
+    {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://www.bzrdsystems.com/",
+      "activity_status": "developing",
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Autonomy and artificial intelligence",
+        "Command, control, and communications",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "city": "Blacksburg",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "BZRD Systems public contact form",
+      "contact_url": "https://www.bzrdsystems.com/",
+      "current_activity": "BZRD launched its public site in July 2026 and describes its system as a developing capability moving from prototype and field validation toward deployment. The record does not present the product as broadly fielded.",
+      "latitude": 37.229,
+      "location_precision": "locality",
+      "longitude": -80.414,
+      "missions": [
+        "Counter-UAS",
+        "Force protection and installation security"
+      ],
+      "name": "BZRD Systems",
+      "overview": "BZRD Systems is a Blacksburg startup originating from Virginia Tech's Hacking for Defense program. The company describes a developing passive counter-UAS awareness system using onboard AI to classify and track drone signals and publish detections into ATAK mission workflows.",
+      "platform_domains": [
+        "Counter-UAS"
+      ],
+      "postal_code": "24060",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "New River Valley",
+      "short_description": "Blacksburg startup developing passive, AI-assisted UAS detection and tracking designed to share threat tracks through ATAK without emitting an RF signature.",
+      "sources": [
+        {
+          "title": "BZRD Systems passive counter-UAS technology and contact route",
+          "url": "https://www.bzrdsystems.com/"
+        },
+        {
+          "title": "BZRD Systems official company profile and Blacksburg location",
+          "url": "https://www.linkedin.com/company/bzrd-systems"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Develops direct passive counter-UAS sensing, AI classification, tracking, and tactical common-operating-picture integration.",
+      "website_url": "https://www.bzrdsystems.com/"
     },
     {
       "address_line": "12021 Sunset Hills Road",
@@ -3742,6 +3905,62 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://d-fendsolutions.com/",
+      "activity_status": "active",
+      "address_line": "1640 Boro Place, 4th Floor",
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Command, control, and communications",
+        "Systems engineering and integration"
+      ],
+      "city": "McLean",
+      "contact_email": "",
+      "contact_phone": "240-786-8513",
+      "contact_text": "D-Fend North American office listing",
+      "contact_url": "https://www.navair.navy.mil/osbp/node/10916",
+      "current_activity": "D-Fend continues to market and support EnforceAir after Motorola Solutions completed its acquisition of D-Fend Solutions in August 2026.",
+      "latitude": 38.924472,
+      "location_precision": "exact",
+      "longitude": -77.233497,
+      "missions": [
+        "Counter-UAS",
+        "Force protection and installation security"
+      ],
+      "name": "D-Fend Solutions North American Headquarters",
+      "overview": "D-Fend Solutions operates its North American headquarters in McLean. Its EnforceAir system detects, identifies, and mitigates unauthorized drones through RF cyber takeover intended to support a controlled landing rather than jamming or kinetic defeat.",
+      "platform_domains": [
+        "Counter-UAS"
+      ],
+      "postal_code": "22102",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "McLean North American headquarters for EnforceAir cyber and RF-based counter-drone detection, identification, and controlled-takeover technology.",
+      "sources": [
+        {
+          "title": "D-Fend EnforceAir counter-drone technology",
+          "url": "https://d-fendsolutions.com/"
+        },
+        {
+          "title": "D-Fend North American headquarters expansion",
+          "url": "https://d-fendsolutions.com/press_releases/d-fend-solutions-significantly-expands-operations-in-north-america-to-meet-increasing-demand-for-its-counter-drone-solutions/"
+        },
+        {
+          "title": "NAVAIR D-Fend McLean company profile",
+          "url": "https://www.navair.navy.mil/osbp/node/10916"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Federal and defense customer access",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Provides direct counter-UAS detection and mitigation technology and North American sales, demonstrations, delivery, support, and maintenance from Virginia.",
+      "website_url": "https://d-fendsolutions.com/"
+    },
+    {
       "address_line": "1912 Regulus Avenue",
       "capabilities": [
         "Systems engineering and integration"
@@ -3970,6 +4189,64 @@
       ],
       "unmanned_systems_relevance": "Danville Rgnl is included as public aviation infrastructure serving Danville. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://www.dcscorp.com/home/what-we-do/c5isr/",
+      "activity_status": "active",
+      "address_line": "6909 Metro Park Drive, Suite 500",
+      "capabilities": [
+        "Command, control, and communications",
+        "Autonomy and artificial intelligence",
+        "Perception, sensing, and sensor fusion",
+        "Simulation, digital twins, and synthetic environments",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Alexandria",
+      "contact_email": "info@dcscorp.com",
+      "contact_phone": "571-227-6000",
+      "contact_text": "DCS Corporation headquarters inquiries",
+      "contact_url": "https://dcscorp.com/",
+      "current_activity": "DCS currently lists unmanned systems and manned-unmanned teaming among its mission capabilities and documents active command-and-control and autonomous-sensing work.",
+      "latitude": 38.769243,
+      "location_precision": "exact",
+      "longitude": -77.156538,
+      "missions": [
+        "ISR",
+        "Training and experimentation"
+      ],
+      "name": "DCS Corporation",
+      "overview": "DCS Corporation is headquartered in Alexandria. Its public capability materials describe command and control for unmanned air, ground, and undersea systems, collaborative autonomous sensing, manned-unmanned teaming, rapid prototyping, modeling and simulation, and test and evaluation.",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Undersea systems",
+        "Cross-domain autonomy"
+      ],
+      "postal_code": "22310",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Alexandria-headquartered engineering company supporting unmanned air, ground, and undersea command and control, autonomous sensing, prototyping, simulation, and test.",
+      "sources": [
+        {
+          "title": "DCS unmanned-systems capabilities and Alexandria headquarters",
+          "url": "https://dcscorp.com/"
+        },
+        {
+          "title": "DCS C5ISR and unmanned-system command-and-control capabilities",
+          "url": "https://www.dcscorp.com/home/what-we-do/c5isr/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Research and technical depth",
+        "Federal and defense customer access",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Provides direct engineering and integration capabilities for multi-domain unmanned systems, autonomy, sensing, mission planning, and C5ISR.",
+      "website_url": "https://dcscorp.com/"
     },
     {
       "capabilities": [
@@ -4212,6 +4489,66 @@
       ],
       "unmanned_systems_relevance": "Develops documented counter-UAS products and integration capabilities using RF sensing, artificial intelligence, sensor fusion, edge computing, and electronic warfare.",
       "website_url": "https://www.droneshield.com/connect-with-us"
+    },
+    {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://www.dronetrace.com/capabilities",
+      "activity_status": "active",
+      "capabilities": [
+        "Data engineering, analytics, and edge computing",
+        "Autonomy and artificial intelligence",
+        "Testing, evaluation, verification, and validation",
+        "Payloads and mission systems"
+      ],
+      "city": "Charlottesville",
+      "contact_email": "Info@dronetrace.com",
+      "contact_phone": "",
+      "contact_text": "DroneTrace company inquiries",
+      "contact_url": "https://www.dronetrace.com/contact",
+      "current_activity": "DroneTrace currently offers platform demonstrations, user certification, field deployment support, custom exploitation modules, and UxS exploitation training.",
+      "latitude": 38.035,
+      "location_precision": "locality",
+      "longitude": -78.503,
+      "missions": [
+        "ISR",
+        "Counter-UAS",
+        "Training and experimentation"
+      ],
+      "name": "DroneTrace",
+      "overview": "DroneTrace is a service-disabled veteran-owned small business located near Charlottesville. Its web-based platform and services are designed to extract flight paths, telemetry, command-and-control configurations, payload activity, media, mission logs, and network information from captured unmanned systems.",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Maritime surface systems",
+        "Undersea systems"
+      ],
+      "postal_code": "",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Central Virginia",
+      "short_description": "Charlottesville-area company providing AI-assisted field exploitation of captured air, land, and maritime unmanned systems.",
+      "sources": [
+        {
+          "title": "DroneTrace platform, company, and Virginia location",
+          "url": "https://www.dronetrace.com/home"
+        },
+        {
+          "title": "DroneTrace UxS exploitation capabilities",
+          "url": "https://www.dronetrace.com/capabilities"
+        },
+        {
+          "title": "DroneTrace public contact route",
+          "url": "https://www.dronetrace.com/contact"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Federal and defense customer access",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Provides direct UxS exploitation, reverse engineering, signature analysis, training, and intelligence-workflow support across aerial, ground, and maritime platforms.",
+      "website_url": "https://www.dronetrace.com/home"
     },
     {
       "activity_last_verified_at": "2026-08-21",
@@ -6580,6 +6917,118 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://getgotak.com/pages/forge",
+      "activity_status": "active",
+      "address_line": "780 Lynnhaven Parkway, Suite 400",
+      "capabilities": [
+        "Command, control, and communications",
+        "Systems engineering and integration",
+        "Payloads and mission systems",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Virginia Beach",
+      "contact_email": "sales@getgotak.com",
+      "contact_phone": "757-910-0259",
+      "contact_text": "GoTAK sales and integration inquiries",
+      "contact_url": "https://getgotak.com/pages/about-us",
+      "current_activity": "GoTAK currently engineers and supports UAS trackers, drone-detection integrations, RF tools, TAK software, and deployment packages from Virginia Beach.",
+      "latitude": 36.815503,
+      "location_precision": "exact",
+      "longitude": -76.06677,
+      "missions": [
+        "Counter-UAS",
+        "ISR",
+        "Public safety and emergency response"
+      ],
+      "name": "GoTAK",
+      "overview": "GoTAK is a Virginia Beach engineering and systems-integration company built around the Team Awareness Kit ecosystem. Its public profile documents RF, counter-UAS, tracking, and RIDAR drone-detection payloads, mission software, plugins, equipment provisioning, deployment, and sustainment.",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Counter-UAS"
+      ],
+      "postal_code": "23452",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "short_description": "Virginia Beach tactical-communications integrator supporting UAS tracking, counter-UAS sensors, RF payloads, TAK software, provisioning, and sustainment.",
+      "sources": [
+        {
+          "title": "GoTAK company, sensor, UAS, and contact profile",
+          "url": "https://getgotak.com/pages/about-us"
+        },
+        {
+          "title": "GoTAK FORGE UAS tracking and integration capabilities",
+          "url": "https://getgotak.com/pages/forge"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Federal and defense customer access",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Integrates UAS tracking and counter-UAS sensor data into tactical command-and-control workflows and supports field deployment from Virginia Beach.",
+      "website_url": "https://getgotak.com/pages/about-us"
+    },
+    {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://www.h2psolution.com/services/",
+      "activity_status": "active",
+      "capabilities": [
+        "Testing, evaluation, verification, and validation",
+        "Operations, maintenance, and sustainment",
+        "Safety, policy, regulatory, and airspace integration"
+      ],
+      "city": "Fairfax",
+      "contact_email": "admin@h2psolution.com",
+      "contact_phone": "571-605-9578",
+      "contact_text": "H2P Solution consultation inquiries",
+      "contact_url": "https://www.h2psolution.com/",
+      "current_activity": "H2P currently offers counter-UAS training, readiness assessments, exercises, and program-development support from Fairfax.",
+      "latitude": 38.846,
+      "location_precision": "locality",
+      "longitude": -77.307,
+      "missions": [
+        "Counter-UAS",
+        "Training and experimentation",
+        "Force protection and installation security"
+      ],
+      "name": "H2P Solution",
+      "overview": "H2P Solution is a Fairfax-based, service-disabled veteran-owned small business focused on counter-UAS readiness. Its services cover threat and capability assessment, planning, leadership education, operator training, tabletop and field exercises, program development, and periodic reassessment.",
+      "platform_domains": [
+        "Counter-UAS"
+      ],
+      "postal_code": "",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Fairfax counter-UAS training and readiness company serving defense, intelligence, public-safety, and allied organizations.",
+      "sources": [
+        {
+          "title": "H2P counter-UAS training and readiness profile",
+          "url": "https://www.h2psolution.com/"
+        },
+        {
+          "title": "H2P counter-UAS services",
+          "url": "https://www.h2psolution.com/services/"
+        },
+        {
+          "title": "H2P Fairfax company background",
+          "url": "https://www.h2psolution.com/about/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Workforce and talent",
+        "Federal and defense customer access",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Provides direct counter-UAS workforce, planning, exercise, assessment, and operational-readiness support.",
+      "website_url": "https://www.h2psolution.com/"
+    },
+    {
       "address_line": "1 College Road",
       "capabilities": [],
       "city": "Hampden-Sydney",
@@ -6782,6 +7231,67 @@
       ],
       "unmanned_systems_relevance": "Hampton Roads Exec is included as public aviation infrastructure serving Norfolk. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://newportnewsva.com/mic/",
+      "activity_status": "planned",
+      "address_line": "Newport News Park Radio Control Club Flying Field, Richneck Road",
+      "capabilities": [
+        "Testing, evaluation, verification, and validation",
+        "Safety, policy, regulatory, and airspace integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Newport News",
+      "contact_email": "",
+      "contact_phone": "800-274-8348",
+      "contact_text": "Newport News Economic Development Authority project inquiries",
+      "contact_url": "https://newportnewsva.com/contact/",
+      "current_activity": "Newport News announced a $3.061 million GO Virginia award in May 2026 to develop the center. The public project description anticipates future operations and does not state that the BVLOS environment is currently open.",
+      "latitude": 37.169681,
+      "location_precision": "site",
+      "longitude": -76.509008,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Hampton Roads Mobility Innovation Center",
+      "overview": "The Hampton Roads Mobility Innovation Center is a funded, planned dual-site project anchored by Newport News-Williamsburg Airport and the Newport News Park Radio Control Club flying field. Public project materials describe an FAA-aligned environment for UAS and AAM testing, research, workforce training, BVLOS operations, and validation.",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Advanced Air Mobility"
+      ],
+      "postal_code": "23603",
+      "provenance": "curated-public-source",
+      "record_type": "operating-environment",
+      "region": "Hampton Roads",
+      "short_description": "Funded Newport News dual-site project for FAA-aligned UAS and AAM training, testing, research, BVLOS operations, and workforce development.",
+      "sources": [
+        {
+          "title": "Newport News Mobility Innovation Center award and dual-site plan",
+          "url": "https://newportnewsva.com/mic/"
+        },
+        {
+          "title": "GO Virginia Mobility Innovation Center implementation application",
+          "url": "https://www.dhcd.virginia.gov/sites/default/files/DocX/gova/board-docx/gova-board-packet-mar2026.pdf"
+        },
+        {
+          "title": "Newport News Park Radio Control Club field and GPS location",
+          "url": "https://newportnewsrc.org/"
+        },
+        {
+          "title": "Newport News Economic Development Authority contact information",
+          "url": "https://newportnewsva.com/contact/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Test and operational environments",
+        "Workforce and talent",
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Would provide direct regional UAS test, training, research, workforce, and BVLOS infrastructure. It remains planned and does not yet imply operational availability or authorization for public flight testing.",
+      "website_url": "https://newportnewsva.com/mic/"
     },
     {
       "address_line": "100 East Queen Street",
@@ -9012,6 +9522,57 @@
       "website_url": "https://www.liberty.edu/aeronautics/uas-operational-experience/"
     },
     {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://www.svrglobal.com/news-1/b64cf0a4-a15b-4be3-a2cb-64eaaf949bf3",
+      "activity_status": "active",
+      "address_line": "1717 East Cary Street",
+      "capabilities": [
+        "Payloads and mission systems",
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "city": "Richmond",
+      "contact_email": "info@linebird.net",
+      "contact_phone": "804-305-9763",
+      "contact_text": "Linebird company and product inquiries",
+      "contact_url": "https://linebird.net/about/",
+      "current_activity": "Linebird currently markets the Osprey platform and joined the Strategic Ventures portfolio in July 2026 to support continued utility-market growth.",
+      "latitude": 37.532252,
+      "location_precision": "exact",
+      "longitude": -77.428859,
+      "missions": [
+        "Infrastructure inspection"
+      ],
+      "name": "Linebird",
+      "overview": "Linebird is a Richmond unmanned-systems company applying drones to electric-utility inspection and live-line work. Its Osprey Nonconductive Payload System carries sensors and tools so compatible UAS can contact energized transmission and distribution infrastructure.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "23223",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Greater Richmond",
+      "short_description": "Richmond company developing nonconductive UAS payloads and robotic tools for inspection, measurement, and maintenance of energized electric infrastructure.",
+      "sources": [
+        {
+          "title": "Linebird UAS payload technology and Richmond contact information",
+          "url": "https://linebird.net/about/"
+        },
+        {
+          "title": "Strategic Ventures Linebird portfolio update",
+          "url": "https://www.svrglobal.com/news-1/b64cf0a4-a15b-4be3-a2cb-64eaaf949bf3"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Develops direct UAS payloads, end effectors, measurement tools, and integration methods for infrastructure inspection and physical work on power lines.",
+      "website_url": "https://linebird.net/about/"
+    },
+    {
       "capabilities": [
         "Systems engineering and integration",
         "Manufacturing, materials, and prototyping"
@@ -9776,6 +10337,64 @@
     },
     {
       "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://www.magothyrt.com/autopilot",
+      "activity_status": "active",
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Navigation and positioning",
+        "Perception, sensing, and sensor fusion",
+        "Systems engineering and integration"
+      ],
+      "city": "Herndon",
+      "contact_email": "info@magothyrt.com",
+      "contact_phone": "703-791-9632",
+      "contact_text": "Magothy River Technologies company inquiries",
+      "contact_url": "https://www.magothyrt.com/contact",
+      "current_activity": "The company currently markets its Magothy Autopilot and engineering services for USV, UUV, ROV, and collaborative marine-autonomy applications.",
+      "latitude": 38.9696,
+      "location_precision": "locality",
+      "longitude": -77.3861,
+      "missions": [
+        "Maritime domain awareness",
+        "ISR",
+        "Surveying and mapping"
+      ],
+      "name": "Magothy River Technologies",
+      "overview": "Magothy River Technologies is a Herndon-based marine-autonomy company. Its published products and services include professional autopilots, navigation, path planning, radar processing, obstacle avoidance, simulation, and integration for USVs, UUVs, ROVs, towed systems, and hybrid marine vehicles.",
+      "platform_domains": [
+        "Maritime surface systems",
+        "Undersea systems"
+      ],
+      "postal_code": "",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Herndon marine-autonomy company developing autopilots and control systems for unmanned surface, undersea, remotely operated, and hybrid vehicles.",
+      "sources": [
+        {
+          "title": "Magothy River Technologies marine-autonomy capabilities",
+          "url": "https://www.magothyrt.com/"
+        },
+        {
+          "title": "Magothy Autopilot product details",
+          "url": "https://www.magothyrt.com/autopilot"
+        },
+        {
+          "title": "Magothy River Technologies Herndon contact information",
+          "url": "https://www.magothyrt.com/contact"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Develops direct autonomy, navigation, control, and perception technology for uncrewed maritime platforms.",
+      "website_url": "https://www.magothyrt.com/"
+    },
+    {
+      "activity_last_verified_at": "2026-08-24",
       "activity_source_url": "https://norfolkdevelopment.com/mare-custos-establishes-u-s-presence-in-norfolk-through-idea-lab-to-advance-maritime-robotics-and-subsea-inspection-innovation/",
       "activity_status": "active",
       "address_line": "3 Commercial Place, Suite 1320",
@@ -9984,6 +10603,64 @@
       ],
       "unmanned_systems_relevance": "Provides publicly documented federal research, experimentation, engineering, or test capacity for autonomous and uncrewed systems.",
       "website_url": "https://www.marines.mil/News/News-Display/Article/746745/marine-corps-warfighting-lab-tests-autonomous-reconnaissance/"
+    },
+    {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://www.marinesonic.com/",
+      "activity_status": "active",
+      "address_line": "120 Newsome Drive, Suite H",
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Payloads and mission systems",
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "city": "Yorktown",
+      "contact_email": "Sales@US-TKMSgroup.com",
+      "contact_phone": "757-463-0670",
+      "contact_text": "Marine Sonic Technology sales and support",
+      "contact_url": "https://www.marinesonic.com/about-us",
+      "current_activity": "Marine Sonic currently markets embedded side-scan sonar for autonomous underwater platforms and continues to provide products, training, and support from Yorktown.",
+      "latitude": 37.185405,
+      "location_precision": "exact",
+      "longitude": -76.480533,
+      "missions": [
+        "Maritime domain awareness",
+        "Surveying and mapping",
+        "Search and rescue"
+      ],
+      "name": "Marine Sonic Technology",
+      "overview": "Marine Sonic Technology operates from Yorktown as a TKMS ATLAS North America brand. It develops and supplies side-scan sonar, synthetic-aperture sonar, collision-avoidance sonar, depth sounders, and embedded systems for AUV, ROV, and towed use.",
+      "platform_domains": [
+        "Undersea systems"
+      ],
+      "postal_code": "23692",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "short_description": "Yorktown sonar company supplying embedded side-scan and synthetic-aperture systems for autonomous underwater vehicles, remotely operated vehicles, and towed platforms.",
+      "sources": [
+        {
+          "title": "Marine Sonic AUV sonar products and Yorktown contact information",
+          "url": "https://www.marinesonic.com/"
+        },
+        {
+          "title": "Marine Sonic company background and operations",
+          "url": "https://www.marinesonic.com/about-us"
+        },
+        {
+          "title": "Marine Sonic AUV and ROV sonar product catalog",
+          "url": "https://www.marinesonic.com/products"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Provides Virginia-based sonar products, integration interfaces, training, and support directly applicable to autonomous and remotely operated undersea vehicles.",
+      "website_url": "https://www.marinesonic.com/"
     },
     {
       "activity_last_verified_at": "2026-08-21",
@@ -15290,6 +15967,60 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://experience.saic.com/cuas",
+      "activity_status": "active",
+      "address_line": "12010 Sunset Hills Road",
+      "capabilities": [
+        "Systems engineering and integration",
+        "Perception, sensing, and sensor fusion",
+        "Command, control, and communications",
+        "Testing, evaluation, verification, and validation",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Reston",
+      "contact_email": "info@SAIC.io",
+      "contact_phone": "",
+      "contact_text": "SAIC solutions and services inquiries",
+      "contact_url": "https://www.saic.com/contact-us",
+      "current_activity": "SAIC currently markets full-spectrum counter-UAS integration covering detection, tracking, mitigation, data analysis, testing, training, fielding, and sustainment.",
+      "latitude": 38.955451,
+      "location_precision": "exact",
+      "longitude": -77.356423,
+      "missions": [
+        "Counter-UAS",
+        "Force protection and installation security"
+      ],
+      "name": "SAIC Counter-UAS Integration",
+      "overview": "SAIC is headquartered in Reston and publishes a dedicated counter-UAS capability. Its offering covers architecture and design, sensors and effectors, command and control, testing, training, field integration, logistics, and long-term sustainment.",
+      "platform_domains": [
+        "Counter-UAS"
+      ],
+      "postal_code": "20190",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Reston-headquartered systems integrator providing configurable counter-UAS design, sensor and effector integration, testing, training, deployment, and sustainment.",
+      "sources": [
+        {
+          "title": "SAIC counter-UAS integration capability",
+          "url": "https://experience.saic.com/cuas"
+        },
+        {
+          "title": "SAIC Reston headquarters and public contact route",
+          "url": "https://www.saic.com/contact-us"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Federal and defense customer access",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Provides direct counter-UAS systems integration and lifecycle support for fixed, mobile, tactical, airport, border, and infrastructure missions.",
+      "website_url": "https://experience.saic.com/cuas"
+    },
+    {
       "address_line": "2002 Edmund Halley Drive",
       "capabilities": [
         "Autonomy and artificial intelligence",
@@ -16014,6 +16745,59 @@
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
       "website_url": "https://www.spotsylvania.va.us/DocumentCenter/View/20535/May-19-2022---No-Quorum"
+    },
+    {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://www.srcinc.com/about/locations/herndon-va.html",
+      "activity_status": "active",
+      "address_line": "13861 Sunrise Valley Drive, Building 1, Suite 450",
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Testing, evaluation, verification, and validation",
+        "Systems engineering and integration",
+        "Command, control, and communications"
+      ],
+      "city": "Herndon",
+      "contact_email": "",
+      "contact_phone": "703-961-5500",
+      "contact_text": "SRC Herndon office",
+      "contact_url": "https://www.srcinc.com/about/locations/herndon-va.html",
+      "current_activity": "SRC currently lists the Herndon office and RF laboratory as active and continues to market passive direction-finding and counter-UAS spectrum-sensing systems.",
+      "latitude": 38.949669,
+      "location_precision": "exact",
+      "longitude": -77.422129,
+      "missions": [
+        "Counter-UAS",
+        "Force protection and installation security"
+      ],
+      "name": "SRC Herndon RF and Systems Engineering Lab",
+      "overview": "SRC's Herndon office includes more than 16,000 square feet of office and static-safe laboratory space for development and testing of radio-electronic circuits, devices, and systems. SRC separately documents counter-UAS radar, direction finding, spectrum sensing, and electronic-warfare products.",
+      "platform_domains": [
+        "Counter-UAS"
+      ],
+      "postal_code": "20171",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Northern Virginia",
+      "short_description": "Herndon RF and systems-engineering office within a company that develops radar, electronic-warfare, direction-finding, and counter-UAS technology.",
+      "sources": [
+        {
+          "title": "SRC Herndon office and RF laboratory",
+          "url": "https://www.srcinc.com/about/locations/herndon-va.html"
+        },
+        {
+          "title": "SRC counter-UAS direction-finding systems",
+          "url": "https://www.srcinc.com/products/ew-spectrum-operations/direction-finding-systems.html"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Federal and defense customer access",
+        "Supporting ecosystem asset"
+      ],
+      "unmanned_systems_relevance": "Provides a Virginia RF and systems-engineering lab inside a direct counter-UAS technology company. It is classified as supporting because public sources do not assign a specific counter-UAS product line to the Herndon office.",
+      "website_url": "https://www.srcinc.com/about/locations/herndon-va.html"
     },
     {
       "address_line": "1225 Courthouse Road",
@@ -17188,6 +17972,170 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://tridsys.com/contact-us/",
+      "activity_status": "active",
+      "address_line": "3810 Concorde Parkway, Suite 2200",
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Chantilly",
+      "contact_email": "info@tridsys.com",
+      "contact_phone": "703-273-1012",
+      "contact_text": "Trident Systems general and C4ISR product inquiries",
+      "contact_url": "https://tridsys.com/contact-us/",
+      "current_activity": "Trident currently lists the Chantilly address as its Virginia production facility. Its published MS3 product sheet documents a counter-UAS variant without assigning that product to a particular manufacturing location.",
+      "latitude": 38.910668,
+      "location_precision": "exact",
+      "longitude": -77.450446,
+      "missions": [
+        "Counter-UAS",
+        "Force protection and installation security"
+      ],
+      "name": "Trident Systems Chantilly Production Facility",
+      "overview": "Trident Systems lists a production facility in Chantilly. The company's public portfolio includes C4ISR systems and a Mobile Security Surveillance System with a counter-UAS variant, but available sources do not identify which products are manufactured at the Chantilly address.",
+      "platform_domains": [
+        "Counter-UAS"
+      ],
+      "postal_code": "20151",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Northern Virginia",
+      "short_description": "Documented Chantilly production facility within a defense-electronics company whose portfolio includes mobile counter-UAS surveillance and tracking systems.",
+      "sources": [
+        {
+          "title": "Trident Systems Chantilly production facility",
+          "url": "https://tridsys.com/contact-us/"
+        },
+        {
+          "title": "Trident MS3 counter-UAS variant product sheet",
+          "url": "https://tridsys.com/wp-content/uploads/2024/04/MS3-Cutsheet.pdf"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Manufacturing and supply chain",
+        "Federal and defense customer access",
+        "Supporting ecosystem asset"
+      ],
+      "unmanned_systems_relevance": "Represents documented Virginia production capacity within a company that supplies counter-UAS and C4ISR products; it is classified as supporting because the public record does not tie a specific UxS production line to this site.",
+      "website_url": "https://tridsys.com/contact-us/"
+    },
+    {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://truweathersolutions.com/",
+      "activity_status": "active",
+      "capabilities": [
+        "Data engineering, analytics, and edge computing",
+        "Perception, sensing, and sensor fusion",
+        "Safety, policy, regulatory, and airspace integration"
+      ],
+      "city": "Reston",
+      "contact_email": "info@truweathersolutions.com",
+      "contact_phone": "877-633-9911",
+      "contact_text": "TruWeather Solutions general inquiries",
+      "contact_url": "https://truweathersolutions.com/",
+      "current_activity": "TruWeather currently markets its V360 weather platform, infrastructure, and professional services for drone pilots, air taxis, and autonomous aerial missions.",
+      "latitude": 38.959,
+      "location_precision": "locality",
+      "longitude": -77.357,
+      "missions": [
+        "Public safety and emergency response",
+        "Environmental monitoring",
+        "Logistics and contested logistics"
+      ],
+      "name": "TruWeather Solutions",
+      "overview": "TruWeather Solutions identifies Reston as its Virginia and Washington-area headquarters. It combines aviation-weather software, ground sensors, micro-weather stations, forecasting, and regulatory support for drone and advanced-air-mobility operations.",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Advanced Air Mobility"
+      ],
+      "postal_code": "",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Reston aviation-weather company providing hyperlocal data, sensors, forecasting, and decision tools for drones, AAM, public safety, and BVLOS operations.",
+      "sources": [
+        {
+          "title": "TruWeather aviation-weather products and Reston headquarters",
+          "url": "https://truweathersolutions.com/"
+        },
+        {
+          "title": "TruWeather public-safety and BVLOS weather applications",
+          "url": "https://truweathersolutions.com/public-safety/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Provides purpose-built low-altitude weather intelligence and go/no-go decision support for UAS, autonomous aerial missions, public safety, and BVLOS operations.",
+      "website_url": "https://truweathersolutions.com/"
+    },
+    {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://www.governor.virginia.gov/newsroom/news-releases/2026/may-releases/name-1117183-en.html",
+      "activity_status": "planned",
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Data engineering, analytics, and edge computing",
+        "Payloads and mission systems",
+        "Systems engineering and integration"
+      ],
+      "city": "Chantilly",
+      "contact_email": "jamie@turbineone.com",
+      "contact_phone": "",
+      "contact_text": "TurbineOne public contact listed in the Virginia project announcement",
+      "contact_url": "https://www.governor.virginia.gov/newsroom/news-releases/2026/may-releases/name-1117183-en.html",
+      "current_activity": "The Commonwealth and TurbineOne announced the Fairfax County headquarters and Chantilly T1 Edgeworks project in May 2026. No public street address or opening confirmation was located during this review.",
+      "latitude": 38.875,
+      "location_precision": "locality",
+      "longitude": -77.442,
+      "missions": [
+        "ISR",
+        "Force protection and installation security"
+      ],
+      "name": "TurbineOne Headquarters and T1 Edgeworks",
+      "overview": "TurbineOne announced in May 2026 that it would establish its headquarters in Fairfax County and create T1 Edgeworks, an R&D experience lab in Chantilly. Public company and Commonwealth sources describe edge AI for threat detection, team decision support, and orchestration of autonomous or semi-autonomous missions.",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "postal_code": "",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Northern Virginia",
+      "short_description": "Announced Chantilly headquarters and R&D experience lab for edge AI used in autonomous and semi-autonomous defense missions.",
+      "sources": [
+        {
+          "title": "TurbineOne newsroom and Edgeworks announcement",
+          "url": "https://www.turbineone.com/company/newsroom"
+        },
+        {
+          "title": "Virginia announcement of TurbineOne headquarters and T1 Edgeworks",
+          "url": "https://www.governor.virginia.gov/newsroom/news-releases/2026/may-releases/name-1117183-en.html"
+        },
+        {
+          "title": "Federal SBIR award for TurbineOne AutoML for UAS",
+          "url": "https://www.sbir.gov/awards/194997"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Research and technical depth",
+        "Federal and defense customer access",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Develops edge AI with documented UAS and autonomous-mission applications; the Virginia headquarters and lab remain an announced project until opening is confirmed.",
+      "website_url": "https://www.turbineone.com/company/newsroom"
+    },
+    {
       "address_line": "504 Hangar Road",
       "capabilities": [
         "Operations, maintenance, and sustainment"
@@ -17280,6 +18228,65 @@
       ],
       "unmanned_systems_relevance": "U.S. Coast Guard Base Portsmouth is included as documented federal or defense ecosystem presence in Portsmouth. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.atlanticarea.uscg.mil/Our-Organization/District-Units/East-District/Sector-Virginia/"
+    },
+    {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://umaritime.com/ultra-maritime-david-adams/",
+      "activity_status": "active",
+      "address_line": "14585 Avion Parkway",
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Payloads and mission systems",
+        "Systems engineering and integration",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Chantilly",
+      "contact_email": "",
+      "contact_phone": "703-956-6480",
+      "contact_text": "Ultra Maritime Chantilly office",
+      "contact_url": "https://umaritime.com/contact-us/",
+      "current_activity": "Ultra Maritime currently lists Chantilly as an engineering hub and announced a Chantilly-based leader for unmanned anti-submarine-warfare and rapid-fielding solutions.",
+      "latitude": 38.905716,
+      "location_precision": "exact",
+      "longitude": -77.449234,
+      "missions": [
+        "Maritime domain awareness",
+        "ISR"
+      ],
+      "name": "Ultra Maritime Chantilly Engineering Hub",
+      "overview": "Ultra Maritime identifies Chantilly as a U.S. engineering hub, distinct from its listed manufacturing sites. The company develops undersea-warfare systems, USV radar solutions, autonomous sensing, and counter-UUV technology, and in 2026 placed leadership for unmanned and rapid capability fielding in Chantilly.",
+      "platform_domains": [
+        "Undersea systems",
+        "Maritime surface systems"
+      ],
+      "postal_code": "20151",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Northern Virginia",
+      "short_description": "Chantilly engineering hub for an undersea-warfare company with autonomous counter-UUV, unmanned sensing, USV radar, and rapid-fielding programs.",
+      "sources": [
+        {
+          "title": "Ultra Maritime unmanned capabilities and engineering hubs",
+          "url": "https://umaritime.com/"
+        },
+        {
+          "title": "Ultra Maritime Chantilly unmanned capability leadership",
+          "url": "https://umaritime.com/ultra-maritime-david-adams/"
+        },
+        {
+          "title": "Ultra Maritime Chantilly office address",
+          "url": "https://umaritime.com/contact-us/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Research and technical depth",
+        "Federal and defense customer access",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Provides a documented Virginia engineering base tied directly to unmanned undersea capability development and rapid fielding; it is not represented as a manufacturing site.",
+      "website_url": "https://umaritime.com/"
     },
     {
       "address_line": "11827 Canon Boulevard, Suite 203",
@@ -21305,6 +22312,56 @@
       "website_url": "https://www.virginiawestern.edu/"
     },
     {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://www.virtusinnovation.com/",
+      "activity_status": "active",
+      "address_line": "1550 Crystal Drive, Suite 200",
+      "capabilities": [
+        "Systems engineering and integration"
+      ],
+      "city": "Arlington",
+      "contact_email": "MFellows@VirtusInnovation.com",
+      "contact_phone": "",
+      "contact_text": "Virtus Innovation Center membership and partnership inquiries",
+      "contact_url": "https://www.virtusinnovation.com/contact",
+      "current_activity": "Virtus launched its Arlington center in June 2026 and currently accepts applications from dual-use founders, partners, investors, and government users.",
+      "latitude": 38.860251,
+      "location_precision": "exact",
+      "longitude": -77.049381,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Virtus Innovation Center",
+      "overview": "Virtus Innovation Center is a membership-based, 16,000-plus-square-foot dual-use technology hub launched in June 2026 at 1550 Crystal Drive in Arlington. It supports early-stage national-security technology companies through workspace, programming, investor access, and commercialization paths.",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "postal_code": "22202",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Northern Virginia",
+      "short_description": "Arlington dual-use innovation center providing workspace, capital access, commercialization support, and government-market connections.",
+      "sources": [
+        {
+          "title": "Virtus Innovation Center facility and membership model",
+          "url": "https://www.virtusinnovation.com/"
+        },
+        {
+          "title": "Virtus Arlington address and public contact",
+          "url": "https://www.virtusinnovation.com/contact"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Commercialization and capital",
+        "Companies and solution providers",
+        "Federal and defense customer access",
+        "Supporting ecosystem asset"
+      ],
+      "unmanned_systems_relevance": "Supports the wider dual-use company and investment ecosystem used by unmanned-systems ventures. Inclusion does not imply that every Virtus member works in UxS.",
+      "website_url": "https://www.virtusinnovation.com/"
+    },
+    {
       "address_line": "319 Letcher Avenue",
       "capabilities": [
         "Perception, sensing, and sensor fusion",
@@ -22015,6 +23072,64 @@
       "website_url": "https://www.wisecounty.org/AgendaCenter/ViewFile/Agenda/_02122026-671"
     },
     {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://www.wnkaviation.com/capabilities",
+      "activity_status": "active",
+      "address_line": "1101 Wilson Boulevard, Floor 6",
+      "capabilities": [
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment",
+        "Command, control, and communications"
+      ],
+      "city": "Arlington",
+      "contact_email": "wnkaviation@proton.me",
+      "contact_phone": "757-752-8421",
+      "contact_text": "WNK Aviation company inquiries",
+      "contact_url": "https://www.wnkaviation.com/about-4",
+      "current_activity": "WNK currently presents UAS, counter-UAS, electronic-warfare, training, integration, and capacity-building services from its Arlington office. These capability claims are company-published and have not been independently performance-tested by COSOLVE.",
+      "latitude": 38.894767,
+      "location_precision": "exact",
+      "longitude": -77.069545,
+      "missions": [
+        "Counter-UAS",
+        "Training and experimentation",
+        "Force protection and installation security"
+      ],
+      "name": "WNK Aviation",
+      "overview": "WNK Aviation is an Arlington-based, service-disabled veteran-owned company focused on UAS and counter-UAS solutions. Its public capability pages describe drone and counter-drone technology sourcing, integration, advisory services, training, electronic-warfare support, and partner-nation capacity building.",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Counter-UAS"
+      ],
+      "postal_code": "22209",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Arlington UAS and counter-UAS integrator providing technology sourcing, mission integration, training, electronic-warfare support, and capacity building.",
+      "sources": [
+        {
+          "title": "WNK Aviation UAS and counter-UAS company profile",
+          "url": "https://www.wnkaviation.com/"
+        },
+        {
+          "title": "WNK Aviation capabilities",
+          "url": "https://www.wnkaviation.com/capabilities"
+        },
+        {
+          "title": "WNK Aviation Arlington address and contact information",
+          "url": "https://www.wnkaviation.com/about-4"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Federal and defense customer access",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Provides direct UAS and counter-UAS integration, procurement support, training, and mission-advisory services.",
+      "website_url": "https://www.wnkaviation.com/"
+    },
+    {
       "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.wytheco.org/AgendaCenter/ViewFile/Agenda/_01272026-119",
       "activity_status": "active",
@@ -22333,6 +23448,11 @@
     {
       "from": "Virginia Department of Aviation",
       "to": "Stafford Regional Airport AAM Integration Project Site",
+      "type": "supports"
+    },
+    {
+      "from": "Newport News/Williamsburg Intl",
+      "to": "Hampton Roads Mobility Innovation Center",
       "type": "supports"
     },
     {
