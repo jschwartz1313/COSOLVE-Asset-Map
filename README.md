@@ -31,7 +31,7 @@ The checked-in catalog contains source-backed, publicly documented Virginia reco
 - Optional FAA-recorded private-use heliport reference layer with access and authorization warnings
 - Password recovery, login throttling, optional TOTP MFA, and optional OIDC organization sign-in
 - Public correction and addition submissions routed to an editor-only review queue
-- 440 source-backed Virginia records spanning public-use airports, relevant higher education, research, workforce, companies, infrastructure, programs, and generalized defense assets
+- 453 source-backed Virginia records spanning public-use airports, relevant higher education, research, workforce, companies, infrastructure, programs, and generalized defense assets
 - Backend, frontend state, security-boundary, and import tests
 
 ## Local setup

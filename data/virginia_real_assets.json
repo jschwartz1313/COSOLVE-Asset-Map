@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-21",
+  "generated_at": "2026-08-24",
   "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, broad-based Virginia degree-granting institutions from the NCES IPEDS 2024 directory while excluding narrowly specialized health and ministry schools without documented unmanned-systems relevance, and a curated set of source-backed ecosystem records. Specific street and site locations are anchored to official public address sources and geocoded against the U.S. Census address ranges or named-site map data; locality points are retained when the public record does not identify the operating department or facility. Every record is also classified as either a core unmanned-systems asset with direct documented activity or a supporting ecosystem asset with a broader enabling role.",
-  "record_count": 440,
+  "record_count": 453,
   "records": [
     {
       "address_line": "29194 Parkway North",
@@ -598,6 +598,61 @@
       "website_url": "https://www.countyofamherst.com/egov/documents/1730910273_75599.pdf"
     },
     {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://www.ama-inc.com/engineering/ENG_MissionAnalysisDesign.shtml",
+      "activity_status": "active",
+      "address_line": "21 Enterprise Parkway, Suite 300",
+      "capabilities": [
+        "Systems engineering and integration",
+        "Simulation, digital twins, and synthetic environments",
+        "Testing, evaluation, verification, and validation",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "city": "Hampton",
+      "contact_email": "info@ama-inc.com",
+      "contact_phone": "757-865-0000",
+      "contact_text": "AMA general inquiries",
+      "contact_url": "https://www.ama-inc.com/contact",
+      "current_activity": "AMA currently markets autonomous-vehicle and UAV engineering capabilities from its Hampton headquarters, including flight hardware design, guidance and control, simulation, additive manufacturing, and prototyping.",
+      "latitude": 37.054285,
+      "location_precision": "exact",
+      "longitude": -76.408421,
+      "missions": [
+        "Training and experimentation",
+        "Logistics and contested logistics"
+      ],
+      "name": "Analytical Mechanics Associates",
+      "overview": "Analytical Mechanics Associates (AMA) is a Hampton-headquartered engineering company supporting government and industry missions. Its public engineering profile specifically lists autonomous vehicles and UAVs alongside guidance, navigation and control, flight hardware, modeling and simulation, additive manufacturing, and 3D prototyping.",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "postal_code": "23666",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "short_description": "Hampton engineering company with documented autonomous-vehicle, UAV, flight-hardware, simulation, prototyping, and test capabilities.",
+      "sources": [
+        {
+          "title": "AMA autonomous-vehicle and UAV engineering capabilities",
+          "url": "https://www.ama-inc.com/engineering/ENG_MissionAnalysisDesign.shtml"
+        },
+        {
+          "title": "AMA Hampton headquarters and public contact information",
+          "url": "https://www.ama-inc.com/contact"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Provides documented engineering, analysis, simulation, prototyping, and test support applicable to uncrewed aircraft and autonomous vehicles.",
+      "website_url": "https://www.ama-inc.com/engineering/ENG_MissionAnalysisDesign.shtml"
+    },
+    {
       "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.anratechnologies.com/home/2026/06/24/building-michigans-digital-airspace-integrating-commercial-drone-operations-and-airspace-security/",
       "activity_status": "active",
@@ -1040,6 +1095,61 @@
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
       "website_url": "https://www.aurora.aero/contact-us/"
+    },
+    {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://www.austalusa.com/solutions",
+      "activity_status": "active",
+      "address_line": "501 Locust Avenue, Suite 100",
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Charlottesville",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Austal USA public inquiry form",
+      "contact_url": "https://www.austalusa.com/contact-us",
+      "current_activity": "The Charlottesville division is currently dedicated to advanced maritime solutions and autonomous systems, including AI-enabled platforms and a USV portfolio.",
+      "latitude": 38.032396,
+      "location_precision": "exact",
+      "longitude": -78.47094,
+      "missions": [
+        "Maritime domain awareness",
+        "Logistics and contested logistics",
+        "ISR"
+      ],
+      "name": "Austal USA Advanced Technologies and Solutions",
+      "overview": "Austal USA's Charlottesville-based Advanced Technologies and Solutions division develops and integrates autonomous maritime platforms and mission technologies. The company identifies unmanned surface vehicles as an active portfolio and undersea vehicles as a growth area.",
+      "platform_domains": [
+        "Maritime surface systems",
+        "Undersea systems"
+      ],
+      "postal_code": "22902",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Central Virginia",
+      "short_description": "Charlottesville division dedicated to autonomous maritime platforms, AI-enabled systems, USVs, and future UUV capabilities.",
+      "sources": [
+        {
+          "title": "Austal USA autonomous maritime solutions",
+          "url": "https://www.austalusa.com/solutions"
+        },
+        {
+          "title": "Austal USA Charlottesville office",
+          "url": "https://www.austalusa.com/contact-us"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Provides documented design, engineering, integration, and life-cycle capabilities for autonomous ships, unmanned surface vessels, and future undersea systems.",
+      "website_url": "https://www.austalusa.com/solutions"
     },
     {
       "capabilities": [
@@ -3946,6 +4056,61 @@
       "website_url": "https://www.dla.mil/Aviation/Installation.aspx"
     },
     {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://devorto.io/",
+      "activity_status": "developing",
+      "address_line": "16 Murray Street",
+      "capabilities": [
+        "Propulsion, batteries, fuels, and energy systems",
+        "Autonomy and artificial intelligence",
+        "Navigation and positioning",
+        "Command, control, and communications"
+      ],
+      "city": "Hampton",
+      "contact_email": "info@devorto.io",
+      "contact_phone": "757-703-4850",
+      "contact_text": "Devorto company inquiries",
+      "contact_url": "https://devorto.io/",
+      "current_activity": "Devorto publicly describes ongoing development of TURN variants ranging from a solar high-altitude platform to smaller commercial and defense UAS concepts.",
+      "latitude": 37.007896,
+      "location_precision": "exact",
+      "longitude": -76.311615,
+      "missions": [
+        "Communications relay",
+        "Environmental monitoring",
+        "ISR"
+      ],
+      "name": "Devorto",
+      "overview": "Devorto is a Hampton aerospace company developing the Tethered Uni-Rotor Network (TURN), a high-altitude, long-endurance aircraft concept intended for persistent communications, sensing, environmental monitoring, and defense missions. Public NASA and SBIR records document earlier technical research behind the concept.",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Space-enabled services"
+      ],
+      "postal_code": "23651",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "short_description": "Hampton developer of the TURN high-altitude, long-endurance uncrewed aircraft concept for communications, sensing, and persistent missions.",
+      "sources": [
+        {
+          "title": "Devorto TURN aircraft and contact information",
+          "url": "https://devorto.io/"
+        },
+        {
+          "title": "NASA NIAC TURN feasibility study",
+          "url": "https://www.nasa.gov/wp-content/uploads/2019/10/moore_2013_phi_eternalflight_-_tagged.pdf"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Develops a documented uncrewed high-altitude platform concept and associated propulsion, controls, navigation, communications, and payload architecture.",
+      "website_url": "https://devorto.io/"
+    },
+    {
       "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.dominionenergy.com/about/delivering-energy/electric-projects",
       "activity_status": "active",
@@ -3992,6 +4157,61 @@
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
       "website_url": "https://www.dominionenergy.com/about/delivering-energy/electric-projects"
+    },
+    {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://www.droneshield.com/media/press-releases/droneshield-overland-ai-advance-autonomous-ground-protection-interoperability",
+      "activity_status": "active",
+      "address_line": "7140-B Farm Station Road",
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "city": "Warrenton",
+      "contact_email": "",
+      "contact_phone": "540-215-8383",
+      "contact_text": "DroneShield U.S. headquarters",
+      "contact_url": "https://www.droneshield.com/connect-with-us",
+      "current_activity": "DroneShield announced a 2026 integration of its DroneSentry-X Mk2 counter-UAS system with Overland AI's autonomous ground vehicle and identified Warrenton as the release location.",
+      "latitude": 38.744348,
+      "location_precision": "exact",
+      "longitude": -77.676112,
+      "missions": [
+        "Counter-UAS",
+        "Force protection and installation security"
+      ],
+      "name": "DroneShield U.S. Headquarters",
+      "overview": "DroneShield's Warrenton office is the company's United States headquarters. The company develops counter-UAS detection, identification, tracking, and response solutions for terrestrial, maritime, and airborne platforms.",
+      "platform_domains": [
+        "Counter-UAS",
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "postal_code": "20187",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Warrenton U.S. headquarters for a counter-UAS company specializing in RF sensing, AI, sensor fusion, electronic warfare, and system integration.",
+      "sources": [
+        {
+          "title": "DroneShield U.S. headquarters and capabilities",
+          "url": "https://www.droneshield.com/connect-with-us"
+        },
+        {
+          "title": "DroneShield and Overland AI counter-UAS integration",
+          "url": "https://www.droneshield.com/media/press-releases/droneshield-overland-ai-advance-autonomous-ground-protection-interoperability"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Develops documented counter-UAS products and integration capabilities using RF sensing, artificial intelligence, sensor fusion, edge computing, and electronic warfare.",
+      "website_url": "https://www.droneshield.com/connect-with-us"
     },
     {
       "activity_last_verified_at": "2026-08-21",
@@ -4814,6 +5034,60 @@
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
       "website_url": "https://www.fairfaxcounty.gov/uas/"
+    },
+    {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://fairlead.com/about/press-releases/snc-and-fairlead/",
+      "activity_status": "active",
+      "address_line": "650 Chautauqua Avenue",
+      "capabilities": [
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Portsmouth",
+      "contact_email": "",
+      "contact_phone": "757-384-1957",
+      "contact_text": "Fairlead corporate headquarters",
+      "contact_url": "https://fairlead.com/",
+      "current_activity": "Fairlead and SNC announced a May 2026 partnership to domestically produce AEGIR unmanned surface vessels using Fairlead's shipbuilding and systems-integration capacity. The public announcement does not identify a single production address.",
+      "latitude": 36.843529,
+      "location_precision": "exact",
+      "longitude": -76.332593,
+      "missions": [
+        "Maritime domain awareness",
+        "Logistics and contested logistics",
+        "Force protection and installation security"
+      ],
+      "name": "Fairlead Maritime Systems",
+      "overview": "Fairlead is a Portsmouth-headquartered maritime manufacturer and systems integrator with multiple Virginia industrial waterfront facilities. The company reports active contracts involving unmanned platforms and announced a partnership with SNC to establish scalable domestic production of AEGIR USVs.",
+      "platform_domains": [
+        "Maritime surface systems",
+        "Undersea systems"
+      ],
+      "postal_code": "23707",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "short_description": "Portsmouth shipbuilder and systems integrator with active unmanned-platform work and a 2026 partnership to scale AEGIR unmanned surface vessel production.",
+      "sources": [
+        {
+          "title": "Fairlead capabilities and Virginia headquarters",
+          "url": "https://fairlead.com/"
+        },
+        {
+          "title": "SNC and Fairlead AEGIR USV production partnership",
+          "url": "https://fairlead.com/about/press-releases/snc-and-fairlead/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Provides documented maritime manufacturing, modular construction, systems integration, and sustainment capacity for unmanned surface vessels.",
+      "website_url": "https://fairlead.com/"
     },
     {
       "address_line": "4332 Richmond Highway",
@@ -7012,6 +7286,61 @@
       "website_url": "https://hevenaerotech.com/"
     },
     {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://hevenaerotech.com/work-with-us/",
+      "activity_status": "active",
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Propulsion, batteries, fuels, and energy systems",
+        "Testing, evaluation, verification, and validation",
+        "Payloads and mission systems"
+      ],
+      "city": "Winchester",
+      "contact_email": "info@hevenaerotech.com",
+      "contact_phone": "877-726-6269",
+      "contact_text": "Heven AeroTech company inquiries",
+      "contact_url": "https://hevenaerotech.com/company/",
+      "current_activity": "Heven currently advertises Winchester manufacturing, production, integration, hydrogen engineering, and UAS flight-operations roles tied to the campus.",
+      "latitude": 39.185,
+      "location_precision": "locality",
+      "longitude": -78.163,
+      "missions": [
+        "ISR",
+        "Logistics and contested logistics",
+        "Public safety and emergency response",
+        "Training and experimentation"
+      ],
+      "name": "Heven AeroTech Winchester Innovation and Manufacturing Campus",
+      "overview": "Heven AeroTech identifies its Winchester facility as an innovation and manufacturing campus combining engineering, high-volume manufacturing, flight testing, payload integration, and training. Current job listings document drone assembly, production, integration, and hydrogen-systems work in Winchester.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Shenandoah Valley",
+      "short_description": "Winchester UAS engineering, manufacturing, flight-test, payload-integration, and hydrogen-systems campus.",
+      "sources": [
+        {
+          "title": "Heven AeroTech Winchester innovation and manufacturing campus",
+          "url": "https://hevenaerotech.com/company/"
+        },
+        {
+          "title": "Heven AeroTech Winchester manufacturing and UAS positions",
+          "url": "https://hevenaerotech.com/work-with-us/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Manufacturing and supply chain",
+        "Test and operational environments",
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Provides documented Virginia production, integration, propulsion, and flight-test capacity for hydrogen-powered and tactical uncrewed aircraft.",
+      "website_url": "https://hevenaerotech.com/company/"
+    },
+    {
       "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.hii.com/mission-technologies",
       "activity_status": "active",
@@ -8728,6 +9057,60 @@
       "website_url": "https://www.lockheedmartin.com/en-us/who-we-are/business-areas/rotary-and-mission-systems/manassas-va.html"
     },
     {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://www.logostech.net/products/",
+      "activity_status": "active",
+      "address_line": "2701 Prosperity Avenue, Suite 400",
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Payloads and mission systems",
+        "Data engineering, analytics, and edge computing",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "city": "Fairfax",
+      "contact_email": "",
+      "contact_phone": "703-584-5725",
+      "contact_text": "Logos Technologies Fairfax office",
+      "contact_url": "https://www.logostech.net/about-us/",
+      "current_activity": "Logos currently markets multiple UAS-oriented sensor products, including BlackKite-I, RedKite-I, and MicroKestrel, from its Fairfax operation.",
+      "latitude": 38.881015,
+      "location_precision": "exact",
+      "longitude": -77.23358,
+      "missions": [
+        "ISR",
+        "Force protection and installation security",
+        "Infrastructure inspection"
+      ],
+      "name": "Logos Technologies",
+      "overview": "Logos Technologies is a Fairfax sensor and analytics company whose design, development, and production teams build wide-area motion imagery and edge-data systems. Its product portfolio includes payloads designed specifically for unmanned aircraft systems.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "22031",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Fairfax developer and producer of wide-area imagery sensors, edge processing, analytics, and payloads for unmanned aircraft.",
+      "sources": [
+        {
+          "title": "Logos Technologies Fairfax office and UAS sensor capabilities",
+          "url": "https://www.logostech.net/about-us/"
+        },
+        {
+          "title": "Logos Technologies UAS sensor products",
+          "url": "https://www.logostech.net/products/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Develops and produces documented UAS payloads, persistent-surveillance sensors, edge processing, and advanced analytics.",
+      "website_url": "https://www.logostech.net/about-us/"
+    },
+    {
       "address_line": "6225 Airport Road",
       "capabilities": [
         "Operations, maintenance, and sustainment"
@@ -9390,6 +9773,68 @@
       ],
       "unmanned_systems_relevance": "Develops, integrates, manufactures, or supports documented autonomous and uncrewed systems across one or more operating domains.",
       "website_url": "https://www.magaero.com/connect/"
+    },
+    {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://norfolkdevelopment.com/mare-custos-establishes-u-s-presence-in-norfolk-through-idea-lab-to-advance-maritime-robotics-and-subsea-inspection-innovation/",
+      "activity_status": "active",
+      "address_line": "3 Commercial Place, Suite 1320",
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Systems engineering and integration",
+        "Data engineering, analytics, and edge computing",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Norfolk",
+      "contact_email": "contact@mare-custos.com",
+      "contact_phone": "+33 7 56 80 80 04",
+      "contact_text": "Mare Custos company inquiries",
+      "contact_url": "https://mare-custos.com/contact/",
+      "current_activity": "Mare Custos established its first U.S. presence at the Hampton Roads Alliance IDEA Lab in Norfolk in June 2026 to develop U.S. maritime, energy, infrastructure, and defense partnerships.",
+      "latitude": 36.845514,
+      "location_precision": "site",
+      "longitude": -76.288238,
+      "missions": [
+        "Infrastructure inspection",
+        "Environmental monitoring",
+        "Maritime domain awareness"
+      ],
+      "name": "Mare Custos U.S. Presence at IDEA Lab",
+      "overview": "Mare Custos develops remotely operated underwater robotic systems and modular payloads for offshore inspection, environmental sampling, and subsea maintenance. In June 2026 the company established its first U.S. presence through the Hampton Roads Alliance IDEA Lab in downtown Norfolk.",
+      "platform_domains": [
+        "Undersea systems"
+      ],
+      "postal_code": "23510",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "short_description": "Norfolk U.S. presence for a developer of underwater robotic inspection, sensing, sampling, and subsea maintenance systems.",
+      "sources": [
+        {
+          "title": "City of Norfolk: Mare Custos IDEA Lab presence",
+          "url": "https://norfolkdevelopment.com/mare-custos-establishes-u-s-presence-in-norfolk-through-idea-lab-to-advance-maritime-robotics-and-subsea-inspection-innovation/"
+        },
+        {
+          "title": "Mare Custos underwater robotics",
+          "url": "https://mare-custos.com/"
+        },
+        {
+          "title": "Mare Custos public contact information",
+          "url": "https://mare-custos.com/contact/"
+        },
+        {
+          "title": "Hampton Roads Alliance contact and IDEA Lab location",
+          "url": "https://hamptonroadsalliance.com/wp-content/uploads/2025/01/Minutes_Board-Meeting_April-19-2024.pdf"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Commercialization and capital",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Develops and deploys documented underwater robotic vehicles, inspection tools, sensors, and data-collection payloads.",
+      "website_url": "https://mare-custos.com/"
     },
     {
       "capabilities": [
@@ -13743,6 +14188,62 @@
       "website_url": "https://www.pwcva.gov/news/pwcpd-spotlight-departments-suas-team-serving-sky/"
     },
     {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://psionicnav.com/",
+      "activity_status": "active",
+      "address_line": "1100 Exploration Way, Suite 209",
+      "capabilities": [
+        "Navigation and positioning",
+        "Perception, sensing, and sensor fusion",
+        "Systems engineering and integration"
+      ],
+      "city": "Hampton",
+      "contact_email": "contactus@psionicnav.com",
+      "contact_phone": "",
+      "contact_text": "Psionic company inquiries",
+      "contact_url": "https://psionicnav.com/",
+      "current_activity": "Psionic currently markets SurePath navigation sensors for defense, aviation, and ground platforms and is developing an end-to-end navigation system.",
+      "latitude": 37.082521,
+      "location_precision": "exact",
+      "longitude": -76.399763,
+      "missions": [
+        "ISR",
+        "Logistics and contested logistics",
+        "Infrastructure inspection"
+      ],
+      "name": "Psionic",
+      "overview": "Psionic is a Hampton company founded by former NASA engineers. It develops laser-based navigation sensors and systems that provide velocity, position, and attitude information for autonomous land, air, and space vehicles when GPS is degraded, jammed, spoofed, or unavailable.",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Space-enabled services",
+        "Cross-domain autonomy"
+      ],
+      "postal_code": "23666",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "short_description": "Hampton developer of laser-based navigation and sensing for autonomous land, air, and space vehicles operating in GPS-denied environments.",
+      "sources": [
+        {
+          "title": "Psionic autonomous navigation capabilities and Hampton contact",
+          "url": "https://psionicnav.com/"
+        },
+        {
+          "title": "NASA Spinoff profile of Psionic navigation technology",
+          "url": "https://spinoff.nasa.gov/Softer_Moon_Landings_for_Companies"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Provides documented assured navigation, positioning, and sensing technology for manned and unmanned autonomous platforms.",
+      "website_url": "https://psionicnav.com/"
+    },
+    {
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration",
@@ -15683,6 +16184,69 @@
       "website_url": "https://www.ci.staunton.va.us/Home/Components/MeetingsManager/MeetingAgenda/ShowPrimaryDocument/?agendaID=1054&includeTrash=False&isPub=True"
     },
     {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://subseacraft.com/subsea-craft-kickstarts-u-s-expansion/",
+      "activity_status": "planned",
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration",
+        "Payloads and mission systems"
+      ],
+      "city": "Virginia Beach",
+      "contact_email": "enquiries@subseacraft.com",
+      "contact_phone": "+44 (0) 7795 900003",
+      "contact_text": "Company inquiries regarding the announced Virginia Beach expansion",
+      "contact_url": "https://subseacraft.com/contact/",
+      "current_activity": "SubSea Craft announced plans to establish Virginia Beach operations and recruit U.S. personnel. No specific Virginia facility address was publicly identified in the reviewed materials.",
+      "development_last_verified_at": "2026-08-24",
+      "development_notes": "The Virginia Beach operation was publicly announced in May 2026; the catalog does not yet have evidence of an opened local facility or a public street address.",
+      "development_source_url": "https://subseacraft.com/subsea-craft-kickstarts-u-s-expansion/",
+      "development_status": "planned",
+      "latitude": 36.853,
+      "location_precision": "locality",
+      "longitude": -75.978,
+      "missions": [
+        "Maritime domain awareness",
+        "ISR",
+        "Communications relay",
+        "Force protection and installation security"
+      ],
+      "name": "SubSea Craft Virginia Beach Operations",
+      "overview": "SubSea Craft is a United Kingdom maritime-technology company developing uncrewed surface vessels, submersible craft, and subsurface-launched uncrewed aircraft. In May 2026 the company announced plans to expand operations to Virginia Beach and hire leadership, operations, field-engineering, and technical staff.",
+      "platform_domains": [
+        "Maritime surface systems",
+        "Undersea systems",
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "short_description": "Planned Virginia Beach operation for a developer of uncrewed surface vessels, subsurface craft, and subsurface-launched UAS.",
+      "sources": [
+        {
+          "title": "SubSea Craft maritime technology",
+          "url": "https://subseacraft.com/"
+        },
+        {
+          "title": "SubSea Craft Virginia Beach expansion announcement",
+          "url": "https://subseacraft.com/subsea-craft-kickstarts-u-s-expansion/"
+        },
+        {
+          "title": "SubSea Craft U.S. recruitment and public contact information",
+          "url": "https://subseacraft.com/contact/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Commercialization and capital",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Develops documented uncrewed surface, subsurface, and aerial platforms for maritime awareness, ISR, communications, and contested operations.",
+      "website_url": "https://subseacraft.com/"
+    },
+    {
       "address_line": "1200 Gene Bolton Drive",
       "capabilities": [
         "Operations, maintenance, and sustainment"
@@ -16017,6 +16581,65 @@
       ],
       "unmanned_systems_relevance": "Tazewell County is included as public aviation infrastructure serving Richlands. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://www.textronsystems.com/our-company/operational-footprint",
+      "activity_status": "active",
+      "address_line": "277 Dominy Corner Road",
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Testing, evaluation, verification, and validation",
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "city": "Blackstone",
+      "contact_email": "",
+      "contact_phone": "434-298-0029",
+      "contact_text": "Textron Systems Blackstone operation",
+      "contact_url": "https://www.textronsystems.com/our-company/operational-footprint",
+      "current_activity": "Textron's current operational-footprint directory lists the Blackstone site for air systems, operations and logistics support, and test, training, and simulation.",
+      "latitude": 37.082203,
+      "location_precision": "exact",
+      "longitude": -77.958505,
+      "missions": [
+        "ISR",
+        "Training and experimentation",
+        "Logistics and contested logistics"
+      ],
+      "name": "Textron Systems Aerosonde UAS Center of Excellence",
+      "overview": "Textron Systems operates an Aerosonde UAS Center of Excellence in Blackstone. The company describes the 38,000-square-foot site as supporting production, assembly, flight testing, training, operations, logistics, and life-cycle support for its Aerosonde uncrewed aircraft family.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "23824",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Southside Virginia",
+      "short_description": "Blackstone center for Aerosonde UAS production, assembly, testing, training, operations, logistics, and sustainment.",
+      "sources": [
+        {
+          "title": "Textron Systems Blackstone operational footprint",
+          "url": "https://www.textronsystems.com/our-company/operational-footprint"
+        },
+        {
+          "title": "Textron Systems Aerosonde UAS",
+          "url": "https://www.textronsystems.com/products/aerosonde-uas"
+        },
+        {
+          "title": "Textron Aerosonde UAS Center of Excellence profile",
+          "url": "https://www.textronsystems.com/our-company/news-events/articles/inside-ts/aerosonde-uas-center-excellence"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Manufacturing and supply chain",
+        "Test and operational environments",
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Provides documented Virginia manufacturing, integration, testing, training, operations, and sustainment capacity for Aerosonde uncrewed aircraft systems.",
+      "website_url": "https://www.textronsystems.com/products/aerosonde-uas"
     },
     {
       "capabilities": [
@@ -17340,6 +17963,65 @@
       "website_url": "https://www.uvawise.edu/news/2025/10/empowering-next-generation-innovators-through-streamwise"
     },
     {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://uvisionuav.com/uvision-usa/",
+      "activity_status": "active",
+      "address_line": "600 Corporate Drive",
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration",
+        "Payloads and mission systems",
+        "Navigation and positioning"
+      ],
+      "city": "Stafford",
+      "contact_email": "jim.truxel@uvisionusa.com",
+      "contact_phone": "540-303-3354",
+      "contact_text": "UVision USA public contact",
+      "contact_url": "https://uvisionuav.com/uvision-usa/",
+      "current_activity": "UVision's current U.S. page identifies the Stafford facility as an opened Virginia production site for HERO systems; state economic-development materials document its manufacturing and training purpose.",
+      "latitude": 38.514916,
+      "location_precision": "exact",
+      "longitude": -77.366339,
+      "missions": [
+        "ISR",
+        "Force protection and installation security",
+        "Training and experimentation"
+      ],
+      "name": "UVision USA Stafford Production and Training Center",
+      "overview": "UVision USA operates a 25,000-square-foot production and training center at the Quantico Corporate Center in Stafford. The company states that the facility produces the HERO family of loitering unmanned aircraft systems for U.S. and international customers.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "22554",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Fredericksburg Region",
+      "short_description": "Stafford production, assembly, training, and U.S. headquarters facility for UVision HERO loitering unmanned aircraft systems.",
+      "sources": [
+        {
+          "title": "UVision USA Stafford production facility",
+          "url": "https://uvisionuav.com/uvision-usa/"
+        },
+        {
+          "title": "VEDP announcement of UVision Stafford production and training center",
+          "url": "https://www.vedp.org/press-release/2021-12/uvision-usa-corporation-stafford-county"
+        },
+        {
+          "title": "UVision Stafford facility opening announcement",
+          "url": "https://uvisionuav.com/wp-content/uploads/2023/06/UVision-USA-_Press-Release.pdf"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Manufacturing and supply chain",
+        "Companies and solution providers",
+        "Federal and defense customer access",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Provides documented Virginia production, assembly, training, navigation, and payload-integration capacity for the HERO family of unmanned aircraft.",
+      "website_url": "https://uvisionuav.com/uvision-usa/"
+    },
+    {
       "address_line": "910 W Franklin St",
       "capabilities": [
         "Autonomy and artificial intelligence",
@@ -17529,6 +18211,64 @@
       ],
       "unmanned_systems_relevance": "Develops robotics, perception, planning, control, or connected-vehicle capabilities that support autonomous ground and cross-domain systems.",
       "website_url": "https://arvl.lab.vcu.edu/"
+    },
+    {
+      "activity_last_verified_at": "2026-08-24",
+      "activity_source_url": "https://vidarrinc.com/pages/reavers-home",
+      "activity_status": "active",
+      "address_line": "2656 Lishelle Place",
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Payloads and mission systems",
+        "Perception, sensing, and sensor fusion",
+        "Systems engineering and integration"
+      ],
+      "city": "Virginia Beach",
+      "contact_email": "peter@vidarrinc.com",
+      "contact_phone": "877-636-8432",
+      "contact_text": "ViDARR Virginia Beach facility",
+      "contact_url": "https://vidarrinc.com/pages/about-us",
+      "current_activity": "ViDARR identifies the Virginia Beach address as its manufacturing facility and currently markets the modular REAVERS UAS and distributed-manufacturing approach.",
+      "latitude": 36.812091,
+      "location_precision": "exact",
+      "longitude": -76.067654,
+      "missions": [
+        "ISR",
+        "Search and rescue",
+        "Force protection and installation security"
+      ],
+      "name": "ViDARR Virginia Beach Manufacturing Facility",
+      "overview": "ViDARR operates a 16,410-square-foot Virginia Beach manufacturing facility for advanced defense technologies, including autonomous systems, modular REAVERS uncrewed aircraft, thermal and night-vision payloads, and edge-manufactured components.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "23452",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Hampton Roads",
+      "short_description": "Virginia Beach manufacturing facility producing modular UAS, autonomous systems, defense optics, and edge-manufactured components.",
+      "sources": [
+        {
+          "title": "ViDARR Virginia Beach manufacturing facility",
+          "url": "https://vidarrinc.com/pages/about-us"
+        },
+        {
+          "title": "ViDARR REAVERS UAS and distributed manufacturing",
+          "url": "https://vidarrinc.com/pages/reavers-home"
+        },
+        {
+          "title": "VEDP announcement of ViDARR Virginia Beach manufacturing facility",
+          "url": "https://www.vedp.org/press-release/2025-03/vidarr-inc-virginia-beach"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Manufacturing and supply chain",
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Provides documented Virginia production, assembly, component, payload, and integration capacity for modular uncrewed aircraft and related sensing systems.",
+      "website_url": "https://vidarrinc.com/pages/about-us"
     },
     {
       "activity_last_verified_at": "2026-08-21",

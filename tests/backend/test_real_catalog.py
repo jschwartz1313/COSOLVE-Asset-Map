@@ -137,7 +137,10 @@ class RealCatalogFileTests(TestCase):
         }
         self.assertEqual(
             locality_only,
-            {"DroneUp"},
+            {
+                "DroneUp",
+                "SubSea Craft Virginia Beach Operations",
+            },
         )
         self.assertTrue(
             all(
@@ -258,20 +261,34 @@ class RealCatalogFileTests(TestCase):
             {source["url"] for source in records_by_name["Virginia Military Institute"]["sources"]},
         )
 
-    def test_full_catalog_review_manifest_uses_attached_official_sources(self):
+    def test_catalog_review_manifests_use_attached_official_sources(self):
         catalog = self.load_catalog()
         records_by_name = {record["name"]: record for record in catalog["records"]}
         manifest = json.loads(
             (settings.BASE_DIR / "data" / "asset_editorial_reviews.json").read_text()
         )
+        additions_manifest = json.loads(
+            (
+                settings.BASE_DIR / "data" / "asset_editorial_reviews_2026_08_24.json"
+            ).read_text()
+        )
 
         self.assertEqual(len(manifest["reviewed_assets"]), 429)
         self.assertEqual(len(manifest["follow_up_assets"]), 11)
-        self.assertEqual(
-            len(manifest["reviewed_assets"]) + len(manifest["follow_up_assets"]),
-            len(records_by_name),
-        )
-        for name, source_urls in manifest["reviewed_assets"].items():
+        self.assertEqual(len(additions_manifest["reviewed_assets"]), 13)
+        self.assertFalse(additions_manifest["follow_up_assets"])
+
+        reviewed_names = set(manifest["reviewed_assets"])
+        follow_up_names = set(manifest["follow_up_assets"])
+        addition_names = set(additions_manifest["reviewed_assets"])
+        self.assertFalse((reviewed_names | follow_up_names).intersection(addition_names))
+        self.assertEqual(reviewed_names | follow_up_names | addition_names, set(records_by_name))
+
+        reviewed_assets = {
+            **manifest["reviewed_assets"],
+            **additions_manifest["reviewed_assets"],
+        }
+        for name, source_urls in reviewed_assets.items():
             self.assertIn(name, records_by_name)
             attached_urls = {source["url"] for source in records_by_name[name]["sources"]}
             self.assertTrue(set(source_urls).issubset(attached_urls), name)
@@ -296,7 +313,7 @@ class RealCatalogFileTests(TestCase):
             self.assertTrue(record["contact_phone"])
             self.assertEqual(record["activity_last_verified_at"], "2026-08-21")
 
-    def test_full_catalog_audit_ledger_covers_every_record(self):
+    def test_august_21_catalog_audit_remains_a_complete_historical_snapshot(self):
         catalog = self.load_catalog()
         audit = json.loads(
             (
@@ -305,8 +322,10 @@ class RealCatalogFileTests(TestCase):
         )
         audit_by_name = {record["name"]: record for record in audit["records"]}
 
-        self.assertEqual(audit["record_count"], catalog["record_count"])
-        self.assertEqual(set(audit_by_name), {record["name"] for record in catalog["records"]})
+        self.assertEqual(audit["record_count"], 440)
+        self.assertTrue(
+            set(audit_by_name).issubset({record["name"] for record in catalog["records"]})
+        )
         self.assertEqual(
             audit["outcomes"],
             {
@@ -797,6 +816,35 @@ class RealCatalogFileTests(TestCase):
         self.assertEqual(asset.status, Asset.Status.SOURCE_BACKED)
         self.assertIsNone(asset.reviewed_at)
         self.assertEqual(asset.review_comments.count(), review_comment_count)
+
+    def test_august_24_company_additions_are_published_from_their_review_manifest(self):
+        review_path = settings.BASE_DIR / "data" / "asset_editorial_reviews_2026_08_24.json"
+        manifest = json.loads(review_path.read_text())
+        call_command("seed_real_data", verbosity=0)
+
+        call_command("apply_catalog_reviews", reviews=review_path, verbosity=0)
+
+        reviewed = Asset.objects.filter(
+            name__in=manifest["reviewed_assets"],
+            status=Asset.Status.PUBLISHED,
+            reviewed_at__isnull=False,
+            last_verified_at=date(2026, 8, 24),
+        )
+        self.assertEqual(reviewed.count(), 13)
+        self.assertEqual(
+            Source.objects.filter(
+                asset__name__in=manifest["reviewed_assets"],
+                verification_status="verified",
+                last_verified_at=date(2026, 8, 24),
+            ).count(),
+            sum(len(urls) for urls in manifest["reviewed_assets"].values()),
+        )
+        self.assertEqual(
+            Asset.objects.get(
+                name="SubSea Craft Virginia Beach Operations"
+            ).activity_status,
+            Asset.ActivityStatus.PLANNED,
+        )
 
     def test_add_missing_preserves_reviewed_records_and_restores_catalog_gaps(self):
         catalog = self.load_catalog()
