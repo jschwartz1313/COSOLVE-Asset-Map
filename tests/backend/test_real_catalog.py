@@ -55,10 +55,10 @@ class RealCatalogFileTests(TestCase):
             )
         )
 
-    def test_catalog_has_at_least_470_relevant_source_backed_records(self):
+    def test_catalog_has_at_least_490_relevant_source_backed_records(self):
         catalog = self.load_catalog()
         records = catalog["records"]
-        self.assertGreaterEqual(len(records), 470)
+        self.assertGreaterEqual(len(records), 490)
         self.assertEqual(catalog["record_count"], len(records))
         self.assertGreaterEqual(len(catalog["relationships"]), 90)
         self.assertFalse(any(record["name"].startswith("Demo ") for record in records))
@@ -127,7 +127,7 @@ class RealCatalogFileTests(TestCase):
             SPECIALIZED_HIGHER_ED_EXCLUSIONS.intersection(record["name"] for record in universities)
         )
         hampton_roads = [record for record in records if record["region"] == "Hampton Roads"]
-        self.assertGreaterEqual(len(hampton_roads), 69)
+        self.assertGreaterEqual(len(hampton_roads), 120)
         locality_only = {
             record["name"]
             for record in hampton_roads
@@ -144,9 +144,12 @@ class RealCatalogFileTests(TestCase):
         regional = [
             record for record in hampton_roads if record["location_precision"] == "regional"
         ]
-        self.assertEqual([record["name"] for record in regional], ["AUVSI Hampton Roads Chapter"])
-        self.assertIsNone(regional[0]["latitude"])
-        self.assertIsNone(regional[0]["longitude"])
+        self.assertEqual(
+            [record["name"] for record in regional],
+            ["AUVSI Hampton Roads Chapter", "Virginia Capes Range Complex"],
+        )
+        self.assertTrue(all(record["latitude"] is None for record in regional))
+        self.assertTrue(all(record["longitude"] is None for record in regional))
         self.assertTrue(
             all(
                 source.get("url", "").startswith("https://")
@@ -265,6 +268,13 @@ class RealCatalogFileTests(TestCase):
                 settings.BASE_DIR / "data" / "asset_editorial_reviews_2026_08_24_expansion.json"
             ).read_text()
         )
+        hampton_roads_manifest = json.loads(
+            (
+                settings.BASE_DIR
+                / "data"
+                / "asset_editorial_reviews_2026_08_25_hampton_roads.json"
+            ).read_text()
+        )
         location_manifest = json.loads(
             (
                 settings.BASE_DIR / "data" / "asset_editorial_reviews_2026_08_24_locations.json"
@@ -277,6 +287,8 @@ class RealCatalogFileTests(TestCase):
         self.assertFalse(additions_manifest["follow_up_assets"])
         self.assertEqual(len(expansion_manifest["reviewed_assets"]), 20)
         self.assertFalse(expansion_manifest["follow_up_assets"])
+        self.assertEqual(len(hampton_roads_manifest["reviewed_assets"]), 21)
+        self.assertFalse(hampton_roads_manifest["follow_up_assets"])
         self.assertEqual(len(location_manifest["reviewed_assets"]), 97)
         self.assertFalse(location_manifest["follow_up_assets"])
 
@@ -284,15 +296,21 @@ class RealCatalogFileTests(TestCase):
         follow_up_names = set(manifest["follow_up_assets"])
         addition_names = set(additions_manifest["reviewed_assets"])
         expansion_names = set(expansion_manifest["reviewed_assets"])
+        hampton_roads_names = set(hampton_roads_manifest["reviewed_assets"])
         historical_names = reviewed_names | follow_up_names | addition_names
         self.assertFalse((reviewed_names | follow_up_names).intersection(addition_names))
         self.assertFalse(historical_names.intersection(expansion_names))
-        self.assertEqual(historical_names | expansion_names, set(records_by_name))
+        self.assertFalse((historical_names | expansion_names).intersection(hampton_roads_names))
+        self.assertEqual(
+            historical_names | expansion_names | hampton_roads_names,
+            set(records_by_name),
+        )
 
         reviewed_assets = {
             **manifest["reviewed_assets"],
             **additions_manifest["reviewed_assets"],
             **expansion_manifest["reviewed_assets"],
+            **hampton_roads_manifest["reviewed_assets"],
         }
         for name, source_urls in reviewed_assets.items():
             self.assertIn(name, records_by_name)
@@ -930,6 +948,48 @@ class RealCatalogFileTests(TestCase):
             Asset.objects.get(name="BZRD Systems").activity_status,
             Asset.ActivityStatus.DEVELOPING,
         )
+
+    def test_august_25_hampton_roads_expansion_is_published_from_review_manifest(self):
+        review_path = (
+            settings.BASE_DIR
+            / "data"
+            / "asset_editorial_reviews_2026_08_25_hampton_roads.json"
+        )
+        manifest = json.loads(review_path.read_text())
+        call_command("seed_real_data", verbosity=0)
+
+        call_command("apply_catalog_reviews", reviews=review_path, verbosity=0)
+
+        reviewed = Asset.objects.filter(
+            name__in=manifest["reviewed_assets"],
+            status=Asset.Status.PUBLISHED,
+            reviewed_at__isnull=False,
+            last_verified_at=date(2026, 8, 25),
+        )
+        self.assertEqual(reviewed.count(), 21)
+        self.assertEqual(
+            Source.objects.filter(
+                asset__name__in=manifest["reviewed_assets"],
+                verification_status="verified",
+                last_verified_at=date(2026, 8, 25),
+            ).count(),
+            sum(len(urls) for urls in manifest["reviewed_assets"].values()),
+        )
+        self.assertEqual(
+            Asset.objects.get(name="Tidal Flight Chesapeake Development Hangar").activity_status,
+            Asset.ActivityStatus.DEVELOPING,
+        )
+        self.assertEqual(
+            Asset.objects.get(name="ODU National Security Institute").activity_status,
+            Asset.ActivityStatus.ACTIVE,
+        )
+        wing = Asset.objects.get(name="Commander, Helicopter Sea Combat Wing Atlantic")
+        self.assertEqual(wing.activity_status, Asset.ActivityStatus.ACTIVE)
+        self.assertEqual(wing.location_precision, Asset.LocationPrecision.SITE)
+        range_complex = Asset.objects.get(name="Virginia Capes Range Complex")
+        self.assertEqual(range_complex.location_precision, Asset.LocationPrecision.REGIONAL)
+        self.assertIsNone(range_complex.latitude)
+        self.assertIsNone(range_complex.longitude)
 
     def test_location_review_batch_supplements_existing_catalog_reviews(self):
         review_paths = [

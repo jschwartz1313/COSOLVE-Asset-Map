@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "virginia_real_assets.json"
 CATALOG_DATE = "2026-08-21"
-BUILD_DATE = "2026-08-24"
+BUILD_DATE = "2026-08-25"
 
 FAA_LAYER = (
     "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
@@ -8310,6 +8310,1573 @@ VERIFIED_UXS_EXPANSION = [
     },
 ]
 
+VERIFIED_HAMPTON_ROADS_EXPANSION = [
+    {
+        "name": "Phoenix International Chesapeake Operations",
+        "record_type": "facility",
+        "short_description": (
+            "Chesapeake underwater-services operation of a company that owns and operates "
+            "ROV and AUV systems for subsea inspection, recovery, survey, and intervention."
+        ),
+        "overview": (
+            "Phoenix International's Chesapeake operation supports government and commercial "
+            "underwater ship repair, inspection, welding, and rapid-response work. Phoenix also "
+            "publishes a mission-ready fleet of inspection- through work-class ROVs and an AUV "
+            "capability for subsea operations."
+        ),
+        "unmanned_systems_relevance": (
+            "Provides direct undersea robotic capability through the parent company's ROV and "
+            "AUV fleet. The marker identifies the documented Chesapeake operation; public "
+            "sources do not identify which individual vehicles are stored at this address."
+        ),
+        "activity_status": "active",
+        "current_activity": (
+            "Phoenix currently operates its Chesapeake office for underwater ship repair and "
+            "testing and continues to publish active ROV and AUV capabilities."
+        ),
+        "activity_source_url": (
+            "https://www.phnx-international.com/phoenix-office-locations/"
+            "phoenix-chesapeake-va-office/"
+        ),
+        "activity_last_verified_at": "2026-08-25",
+        "address_line": "2601 Trade Street, Suite F",
+        "city": "Chesapeake",
+        "state": "VA",
+        "postal_code": "23323",
+        "latitude": 36.763709,
+        "longitude": -76.343778,
+        "location_precision": "exact",
+        "region": "Hampton Roads",
+        "strategic_categories": [
+            "Companies and solution providers",
+            "Multi-domain missions",
+            "Physical infrastructure and logistics",
+            "Core unmanned-systems asset",
+        ],
+        "platform_domains": ["Undersea systems"],
+        "capabilities": [
+            "Operations, maintenance, and sustainment",
+            "Payloads and mission systems",
+            "Perception, sensing, and sensor fusion",
+        ],
+        "missions": [
+            "Infrastructure inspection",
+            "Maritime domain awareness",
+            "Search and rescue",
+            "Surveying and mapping",
+        ],
+        "website_url": (
+            "https://www.phnx-international.com/phoenix-office-locations/"
+            "phoenix-chesapeake-va-office/"
+        ),
+        "contact_text": "Phoenix Chesapeake operations and service inquiries",
+        "contact_phone": "757-855-7516",
+        "contact_email": "info@phnx-international.com",
+        "contact_url": (
+            "https://www.phnx-international.com/phoenix-office-locations/"
+            "phoenix-chesapeake-va-office/"
+        ),
+        "sources": [
+            {
+                "title": "Phoenix Chesapeake operation, address, and services",
+                "url": (
+                    "https://www.phnx-international.com/phoenix-office-locations/"
+                    "phoenix-chesapeake-va-office/"
+                ),
+            },
+            {
+                "title": "Phoenix remotely operated vehicle fleet",
+                "url": (
+                    "https://www.phnx-international.com/phoenix-assets-and-capabilities/"
+                    "remotely-operated-vehicles/"
+                ),
+            },
+            {
+                "title": "Phoenix autonomous underwater vehicle capability",
+                "url": (
+                    "https://www.phnx-international.com/phoenix-assets-and-capabilities/"
+                    "autonomous-underwater-vehicle/"
+                ),
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+    {
+        "name": "Valkyrie Enterprises",
+        "record_type": "organization",
+        "short_description": (
+            "Virginia Beach defense-engineering company with hardware-in-the-loop testing for "
+            "UAS, autonomous guidance and navigation, sensor fusion, and flight controls."
+        ),
+        "overview": (
+            "Valkyrie Enterprises provides defense systems engineering, testing, simulation, "
+            "maritime modernization, and mission support. Its published hardware-in-the-loop "
+            "environment explicitly includes UAS and autonomous guidance, navigation, control, "
+            "and sensor-fusion platform applications."
+        ),
+        "unmanned_systems_relevance": (
+            "Provides direct simulation and verification infrastructure applicable to UAS and "
+            "autonomous flight systems. The public page does not identify the precise building "
+            "or room containing each test system."
+        ),
+        "activity_status": "active",
+        "current_activity": (
+            "Valkyrie currently markets hardware-in-the-loop testing and related engineering "
+            "support for UAS and autonomous guidance and sensor-fusion platforms."
+        ),
+        "activity_source_url": "https://www.valkyrie.com/hwilsupportequipment",
+        "activity_last_verified_at": "2026-08-25",
+        "address_line": "2877 Guardian Lane",
+        "city": "Virginia Beach",
+        "state": "VA",
+        "postal_code": "23452",
+        "latitude": 36.825678,
+        "longitude": -76.072206,
+        "location_precision": "exact",
+        "region": "Hampton Roads",
+        "strategic_categories": [
+            "Companies and solution providers",
+            "Federal and defense customer access",
+            "Research and technical depth",
+            "Core unmanned-systems asset",
+        ],
+        "platform_domains": ["Unmanned aircraft systems", "Cross-domain autonomy"],
+        "capabilities": [
+            "Simulation, digital twins, and synthetic environments",
+            "Testing, evaluation, verification, and validation",
+            "Navigation and positioning",
+            "Perception, sensing, and sensor fusion",
+        ],
+        "missions": ["ISR", "Training and experimentation"],
+        "website_url": "https://www.valkyrie.com/hwilsupportequipment",
+        "contact_text": "Valkyrie technical and business inquiries",
+        "contact_phone": "757-962-2545",
+        "contact_email": "",
+        "contact_url": "https://www.valkyrie.com/contact",
+        "sources": [
+            {
+                "title": "Valkyrie UAS and autonomous-system HWIL applications",
+                "url": "https://www.valkyrie.com/hwilsupportequipment",
+            },
+            {
+                "title": "Valkyrie Virginia Beach address and contact",
+                "url": "https://www.valkyrie.com/contact",
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+    {
+        "name": "WR Systems Norfolk Operations Center",
+        "record_type": "facility",
+        "short_description": (
+            "Norfolk operations center of a systems company that integrates USVs, navigation, "
+            "payloads, command and control, testing, and maritime domain-awareness solutions."
+        ),
+        "overview": (
+            "WR Systems maintains a documented Norfolk operations center and publishes direct "
+            "unmanned-systems engineering for USV integration, navigation, payloads, command and "
+            "control, testing, and lifecycle support."
+        ),
+        "unmanned_systems_relevance": (
+            "The company directly supports unmanned surface vessels and enabling systems. The "
+            "marker is the public Norfolk operations center; the company does not allocate every "
+            "listed unmanned-system function to a specific building."
+        ),
+        "activity_status": "active",
+        "current_activity": (
+            "WR Systems currently publishes USV integration and support capabilities and lists "
+            "the Norfolk site as an operations center."
+        ),
+        "activity_source_url": "https://wrsystems.com/unmanned-systems/",
+        "activity_last_verified_at": "2026-08-25",
+        "address_line": "2500 Almeda Avenue, Suite 214",
+        "city": "Norfolk",
+        "state": "VA",
+        "postal_code": "23513",
+        "latitude": 36.878776,
+        "longitude": -76.215932,
+        "location_precision": "exact",
+        "region": "Hampton Roads",
+        "strategic_categories": [
+            "Companies and solution providers",
+            "Federal and defense customer access",
+            "Multi-domain missions",
+            "Core unmanned-systems asset",
+        ],
+        "platform_domains": ["Maritime surface systems", "Cross-domain autonomy"],
+        "capabilities": [
+            "Command, control, and communications",
+            "Navigation and positioning",
+            "Payloads and mission systems",
+            "Systems engineering and integration",
+            "Testing, evaluation, verification, and validation",
+        ],
+        "missions": ["ISR", "Maritime domain awareness"],
+        "website_url": "https://wrsystems.com/unmanned-systems/",
+        "contact_text": "WR Systems Norfolk operations inquiries",
+        "contact_phone": "757-858-6000",
+        "contact_email": "",
+        "contact_url": "https://wrsystems.com/contact/",
+        "sources": [
+            {
+                "title": "WR Systems unmanned-systems capabilities",
+                "url": "https://wrsystems.com/unmanned-systems/",
+            },
+            {
+                "title": "WR Systems Norfolk Operations Center address",
+                "url": "https://wrsystems.com/contact/",
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+    {
+        "name": "SimIS Autonomous Solutions",
+        "record_type": "organization",
+        "short_description": (
+            "Suffolk technology company developing autonomous platforms, a RiverScout USV, "
+            "AI-enabled sensing, modeling and simulation, and defense test support."
+        ),
+        "overview": (
+            "SimIS develops autonomous solutions from its Suffolk corporate base, including "
+            "the RiverScout unmanned surface vessel, AI-enabled sensors and decision support, "
+            "modeling and simulation, rapid prototyping, and test and evaluation services."
+        ),
+        "unmanned_systems_relevance": (
+            "Develops direct autonomous maritime platforms and the software, sensing, "
+            "simulation, prototyping, and test capabilities that support them."
+        ),
+        "activity_status": "active",
+        "current_activity": (
+            "SimIS currently presents RiverScout and related autonomous solutions and continues "
+            "to provide defense test, evaluation, simulation, and prototyping services."
+        ),
+        "activity_source_url": "https://www.simisinc.com/autonomous-solutions",
+        "activity_last_verified_at": "2026-08-25",
+        "address_line": "2371 Wilroy Road",
+        "city": "Suffolk",
+        "state": "VA",
+        "postal_code": "23434",
+        "latitude": 36.778670,
+        "longitude": -76.539881,
+        "location_precision": "exact",
+        "region": "Hampton Roads",
+        "strategic_categories": [
+            "Companies and solution providers",
+            "Research and technical depth",
+            "Test and operational environments",
+            "Core unmanned-systems asset",
+        ],
+        "platform_domains": ["Maritime surface systems", "Cross-domain autonomy"],
+        "capabilities": [
+            "Autonomy and artificial intelligence",
+            "Manufacturing, materials, and prototyping",
+            "Perception, sensing, and sensor fusion",
+            "Simulation, digital twins, and synthetic environments",
+            "Testing, evaluation, verification, and validation",
+        ],
+        "missions": ["ISR", "Maritime domain awareness", "Surveying and mapping"],
+        "website_url": "https://www.simisinc.com/autonomous-solutions",
+        "contact_text": "SimIS autonomous-solutions and project inquiries",
+        "contact_phone": "757-399-4502",
+        "contact_email": "",
+        "contact_url": "https://www.simisinc.com/contact-us",
+        "sources": [
+            {
+                "title": "SimIS autonomous solutions and RiverScout USV",
+                "url": "https://www.simisinc.com/autonomous-solutions",
+            },
+            {
+                "title": "SimIS test and evaluation capability",
+                "url": "https://www.simisinc.com/test-and-evaluation",
+            },
+            {
+                "title": "SimIS Suffolk office and public contact",
+                "url": "https://www.simisinc.com/contact-us",
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+    {
+        "name": "Threat Tec UAS Threat Emulation",
+        "record_type": "organization",
+        "short_description": (
+            "Hampton threat-emulation company operating camera and thermal-equipped UAS for "
+            "military and law-enforcement training and counter-UAS preparedness."
+        ),
+        "overview": (
+            "Threat Tec provides threat emulation, intelligence support, mission engineering, "
+            "and training. Its published UAS program uses camera and thermal-equipped aircraft "
+            "in government and civilian airspace to expose units to realistic drone threats."
+        ),
+        "unmanned_systems_relevance": (
+            "Operates UAS directly and uses them to develop training, tactics, and realistic "
+            "counter-UAS threat scenarios for military and public-safety users."
+        ),
+        "activity_status": "active",
+        "current_activity": (
+            "Threat Tec states that it continues to upgrade its UAS fleet and support customer "
+            "training against evolving drone threats."
+        ),
+        "activity_source_url": (
+            "https://threattec.com/training-against-a-threat-with-drones/"
+        ),
+        "activity_last_verified_at": "2026-08-25",
+        "address_line": "34 Research Drive",
+        "city": "Hampton",
+        "state": "VA",
+        "postal_code": "23666",
+        "latitude": 37.088927,
+        "longitude": -76.391412,
+        "location_precision": "exact",
+        "region": "Hampton Roads",
+        "strategic_categories": [
+            "Companies and solution providers",
+            "Federal and defense customer access",
+            "Multi-domain missions",
+            "Core unmanned-systems asset",
+        ],
+        "platform_domains": ["Unmanned aircraft systems", "Counter-UAS"],
+        "capabilities": [
+            "Operations, maintenance, and sustainment",
+            "Payloads and mission systems",
+            "Safety, policy, regulatory, and airspace integration",
+            "Testing, evaluation, verification, and validation",
+        ],
+        "missions": [
+            "Counter-UAS",
+            "Force protection and installation security",
+            "ISR",
+            "Training and experimentation",
+        ],
+        "website_url": "https://threattec.com/training-against-a-threat-with-drones/",
+        "contact_text": "Threat Tec training and mission-support inquiries",
+        "contact_phone": "757-240-4305",
+        "contact_email": "",
+        "contact_url": "https://threattec.com/contact/",
+        "sources": [
+            {
+                "title": "Threat Tec drone threat-emulation and training capability",
+                "url": "https://threattec.com/training-against-a-threat-with-drones/",
+            },
+            {
+                "title": "Threat Tec Hampton address and public contact",
+                "url": "https://threattec.com/contact/",
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+    {
+        "name": "Global Planning Initiatives Autonomous Systems Division",
+        "record_type": "organization",
+        "short_description": (
+            "Virginia Beach defense-planning company integrating robotic autonomous systems, "
+            "maritime experimentation, training, and operational concepts."
+        ),
+        "overview": (
+            "Global Planning Initiatives provides Joint and Navy planning, exercise support, "
+            "synthetic training, and new technical solutions. Its Autonomous Systems Division "
+            "focuses on maritime robotic systems, operational integration, experimentation, and "
+            "transitioning autonomous capabilities into fleet concepts."
+        ),
+        "unmanned_systems_relevance": (
+            "Directly supports robotic autonomous systems, maritime autonomy experimentation, "
+            "operational planning, and training for defense users."
+        ),
+        "activity_status": "active",
+        "current_activity": (
+            "GPI currently publishes an Autonomous Systems Division and robotic autonomous "
+            "systems as a company mission area."
+        ),
+        "activity_source_url": "https://www.gpi-llc.com/asd",
+        "activity_last_verified_at": "2026-08-25",
+        "address_line": "One Columbus Center, Suite 615",
+        "city": "Virginia Beach",
+        "state": "VA",
+        "postal_code": "23464",
+        "latitude": 36.843173,
+        "longitude": -76.131098,
+        "location_precision": "site",
+        "region": "Hampton Roads",
+        "strategic_categories": [
+            "Companies and solution providers",
+            "Federal and defense customer access",
+            "Multi-domain missions",
+            "Core unmanned-systems asset",
+        ],
+        "platform_domains": [
+            "Maritime surface systems",
+            "Undersea systems",
+            "Cross-domain autonomy",
+        ],
+        "capabilities": [
+            "Autonomy and artificial intelligence",
+            "Simulation, digital twins, and synthetic environments",
+            "Systems engineering and integration",
+            "Testing, evaluation, verification, and validation",
+        ],
+        "missions": ["Maritime domain awareness", "Training and experimentation"],
+        "website_url": "https://www.gpi-llc.com/asd",
+        "contact_text": "GPI autonomous-systems and planning inquiries",
+        "contact_phone": "757-966-7050",
+        "contact_email": "GPI@GPI-LLC.com",
+        "contact_url": "https://www.gpi-llc.com/",
+        "sources": [
+            {
+                "title": "GPI Autonomous Systems Division",
+                "url": "https://www.gpi-llc.com/asd",
+            },
+            {
+                "title": "GPI robotic autonomous systems mission area",
+                "url": "https://www.gpi-llc.com/missionareas",
+            },
+            {
+                "title": "GPI Virginia Beach location and contact",
+                "url": "https://www.gpi-llc.com/",
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+    {
+        "name": "G2 Ops Virginia Beach Headquarters",
+        "record_type": "organization",
+        "short_description": (
+            "Virginia Beach defense-engineering firm applying model-based systems engineering, "
+            "digital twins, cybersecurity, and AI analytics to surface and undersea systems."
+        ),
+        "overview": (
+            "G2 Ops is a Virginia Beach-based defense engineering company serving maritime and "
+            "other national-security programs. Its maritime portfolio includes digital twins, "
+            "undersea and surface mission-system integration, AI-enabled analytics, systems "
+            "engineering, and cyber-resilient design."
+        ),
+        "unmanned_systems_relevance": (
+            "Provides enabling digital engineering, integration, simulation, and cyber work for "
+            "surface and undersea systems. Inclusion does not imply that G2 Ops manufactures an "
+            "uncrewed vehicle at its headquarters."
+        ),
+        "activity_status": "active",
+        "current_activity": (
+            "G2 Ops currently publishes active maritime systems-engineering, digital-twin, "
+            "AI-analytics, and undersea integration work from a Virginia Beach headquarters."
+        ),
+        "activity_source_url": "https://g2-ops.com/maritime/",
+        "activity_last_verified_at": "2026-08-25",
+        "address_line": "2829 Guardian Lane, Suite 150",
+        "city": "Virginia Beach",
+        "state": "VA",
+        "postal_code": "23452",
+        "latitude": 36.825707,
+        "longitude": -76.071064,
+        "location_precision": "exact",
+        "region": "Hampton Roads",
+        "strategic_categories": [
+            "Companies and solution providers",
+            "Federal and defense customer access",
+            "Research and technical depth",
+            "Supporting ecosystem asset",
+        ],
+        "platform_domains": [
+            "Maritime surface systems",
+            "Undersea systems",
+            "Cross-domain autonomy",
+        ],
+        "capabilities": [
+            "Autonomy and artificial intelligence",
+            "Simulation, digital twins, and synthetic environments",
+            "Systems engineering and integration",
+            "Testing, evaluation, verification, and validation",
+        ],
+        "missions": ["ISR", "Maritime domain awareness"],
+        "website_url": "https://g2-ops.com/maritime/",
+        "contact_text": "G2 Ops engineering and business inquiries",
+        "contact_phone": "757-965-8330",
+        "contact_email": "info@g2-ops.com",
+        "contact_url": "https://g2-ops.com/contact/",
+        "sources": [
+            {
+                "title": "G2 Ops maritime systems-engineering portfolio",
+                "url": "https://g2-ops.com/maritime/",
+            },
+            {
+                "title": "G2 Ops headquarters and company profile",
+                "url": "https://g2-ops.com/about/",
+            },
+            {
+                "title": "G2 Ops public contact route",
+                "url": "https://g2-ops.com/contact/",
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+    {
+        "name": "Hampton Roads Helicopters UAS Chase Support",
+        "record_type": "organization",
+        "short_description": (
+            "Chesapeake flight operator providing helicopter chase-aircraft and airborne "
+            "support for crewed and uncrewed flight-test operations."
+        ),
+        "overview": (
+            "Hampton Roads Helicopters operates from Hampton Roads Executive Airport and lists "
+            "chase-aircraft operations among its specialized capabilities, including support "
+            "for unmanned-system flight programs."
+        ),
+        "unmanned_systems_relevance": (
+            "Provides crewed chase-aircraft and flight support that can be required for UAS "
+            "testing, observation, communications, and safety. It is an enabling service, not "
+            "an unmanned-aircraft developer."
+        ),
+        "activity_status": "active",
+        "current_activity": (
+            "The operator currently advertises specialized flight capabilities and public "
+            "contact from its Chesapeake airport hangar."
+        ),
+        "activity_source_url": (
+            "https://hrheli.com/hrhs-capabilities-and-current-previous-customers/"
+        ),
+        "activity_last_verified_at": "2026-08-25",
+        "address_line": "5196 West Military Highway",
+        "city": "Chesapeake",
+        "state": "VA",
+        "postal_code": "23321",
+        "latitude": 36.775956,
+        "longitude": -76.447132,
+        "location_precision": "exact",
+        "region": "Hampton Roads",
+        "strategic_categories": [
+            "Companies and solution providers",
+            "Test and operational environments",
+            "Physical infrastructure and logistics",
+            "Supporting ecosystem asset",
+        ],
+        "platform_domains": ["Unmanned aircraft systems", "Advanced Air Mobility"],
+        "capabilities": [
+            "Operations, maintenance, and sustainment",
+            "Safety, policy, regulatory, and airspace integration",
+            "Testing, evaluation, verification, and validation",
+        ],
+        "missions": ["Training and experimentation"],
+        "website_url": (
+            "https://hrheli.com/hrhs-capabilities-and-current-previous-customers/"
+        ),
+        "contact_text": "Hampton Roads Helicopters flight-support inquiries",
+        "contact_phone": "757-488-9044",
+        "contact_email": "flying@hrheli.com",
+        "contact_url": "https://hrheli.com/contact/",
+        "sources": [
+            {
+                "title": "Hampton Roads Helicopters specialized and chase-flight capabilities",
+                "url": (
+                    "https://hrheli.com/hrhs-capabilities-and-current-previous-customers/"
+                ),
+            },
+            {
+                "title": "Hampton Roads Helicopters airport location and contact",
+                "url": "https://hrheli.com/contact/",
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+    {
+        "name": "NATO Allied Command Transformation Task Force X",
+        "record_type": "program",
+        "short_description": (
+            "NATO rapid-adoption program linking military users and industry to test and move "
+            "multi-domain uncrewed systems toward operational use."
+        ),
+        "overview": (
+            "Task Force X is NATO's rapid-adoption mechanism for identifying, integrating, "
+            "testing, and transitioning mature technologies against defined operational needs. "
+            "Its documented activities combine crewed and uncrewed systems across air, ground, "
+            "surface, and undersea domains."
+        ),
+        "unmanned_systems_relevance": (
+            "Provides a direct path from industry technology to realistic multi-domain uncrewed-"
+            "system experimentation and potential procurement. The Norfolk marker is Allied "
+            "Command Transformation headquarters; Task Force X field trials occur elsewhere."
+        ),
+        "activity_status": "active",
+        "current_activity": (
+            "NATO expanded Task Force X in 2026 across Baltic, North Sea, Arctic, and Central "
+            "Mediterranean activities involving uncrewed and supporting technologies."
+        ),
+        "activity_source_url": (
+            "https://www.act.nato.int/article/tfx-from-technology-to-operations/"
+        ),
+        "activity_last_verified_at": "2026-08-25",
+        "address_line": "7857 Blandy Road, Suite 100",
+        "city": "Norfolk",
+        "state": "VA",
+        "postal_code": "23551",
+        "latitude": 36.924200,
+        "longitude": -76.305120,
+        "location_precision": "site",
+        "region": "Hampton Roads",
+        "strategic_categories": [
+            "Federal and defense customer access",
+            "Multi-domain missions",
+            "Programs and initiatives",
+            "Test and operational environments",
+            "Core unmanned-systems asset",
+        ],
+        "platform_domains": [
+            "Unmanned aircraft systems",
+            "Ground vehicles and robotics",
+            "Maritime surface systems",
+            "Undersea systems",
+            "Counter-UAS",
+            "Cross-domain autonomy",
+        ],
+        "capabilities": [
+            "Command, control, and communications",
+            "Systems engineering and integration",
+            "Testing, evaluation, verification, and validation",
+        ],
+        "missions": [
+            "Force protection and installation security",
+            "ISR",
+            "Maritime domain awareness",
+            "Training and experimentation",
+        ],
+        "website_url": (
+            "https://www.act.nato.int/article/tfx-from-technology-to-operations/"
+        ),
+        "contact_text": "NATO Allied Command Transformation public inquiries",
+        "contact_phone": "757-747-3400",
+        "contact_email": "",
+        "contact_url": "https://www.act.nato.int/contact-us/",
+        "sources": [
+            {
+                "title": "NATO Task Force X rapid-adoption model and 2026 expansion",
+                "url": (
+                    "https://www.act.nato.int/article/tfx-from-technology-to-operations/"
+                ),
+            },
+            {
+                "title": "NATO Task Force X Central Mediterranean multi-domain trials",
+                "url": "https://www.act.nato.int/activities/task-force-x-centmed/",
+            },
+            {
+                "title": "Allied Command Transformation Norfolk contact information",
+                "url": "https://www.act.nato.int/contact-us/",
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+    {
+        "name": "DEVCOM AvMC Maneuver Air Directorate - Fort Eustis",
+        "record_type": "organization",
+        "short_description": (
+            "Fort Eustis Army aviation research operation supporting conceptual design, "
+            "experimentation, autonomy, manned-unmanned teaming, and flight-system integration."
+        ),
+        "overview": (
+            "The DEVCOM Aviation & Missile Center's Fort Eustis operation sits under the "
+            "Maneuver Air Directorate and includes Conceptual Design, Analysis & Experimentation. "
+            "DEVCOM AvMC develops and tests future aviation capabilities including autonomous-"
+            "ready aircraft and control of complex unmanned systems."
+        ),
+        "unmanned_systems_relevance": (
+            "Provides direct Army aviation research, experimentation, integration, and test "
+            "capacity for autonomous and manned-unmanned systems. The marker denotes the public "
+            "Fort Eustis host site rather than a restricted laboratory entrance."
+        ),
+        "activity_status": "active",
+        "current_activity": (
+            "The Army confirmed in July 2026 that DEVCOM AvMC's Fort Eustis operation is active "
+            "under the new Maneuver Air Directorate."
+        ),
+        "activity_source_url": (
+            "https://www.army.mil/article/293730/"
+            "centers_fort_eustis_footprint_welcomes_new_commander_salutes_retiring_colonel"
+        ),
+        "activity_last_verified_at": "2026-08-25",
+        "address_line": "Fort Eustis, 705 Washington Boulevard",
+        "city": "Newport News",
+        "state": "VA",
+        "postal_code": "23604",
+        "latitude": 37.161782,
+        "longitude": -76.577685,
+        "location_precision": "site",
+        "region": "Hampton Roads",
+        "strategic_categories": [
+            "Federal and defense customer access",
+            "Research and technical depth",
+            "Test and operational environments",
+            "Core unmanned-systems asset",
+        ],
+        "platform_domains": ["Unmanned aircraft systems", "Cross-domain autonomy"],
+        "capabilities": [
+            "Autonomy and artificial intelligence",
+            "Systems engineering and integration",
+            "Testing, evaluation, verification, and validation",
+        ],
+        "missions": [
+            "ISR",
+            "Logistics and contested logistics",
+            "Training and experimentation",
+        ],
+        "website_url": (
+            "https://www.army.mil/article/293730/"
+            "centers_fort_eustis_footprint_welcomes_new_commander_salutes_retiring_colonel"
+        ),
+        "contact_text": "Joint Base Langley-Eustis public information",
+        "contact_phone": "",
+        "contact_email": "",
+        "contact_url": "https://www.jble.af.mil/Home/Contact/",
+        "sources": [
+            {
+                "title": "DEVCOM AvMC Fort Eustis Maneuver Air Directorate organization",
+                "url": (
+                    "https://www.army.mil/article/293730/"
+                    "centers_fort_eustis_footprint_welcomes_new_commander_salutes_retiring_colonel"
+                ),
+            },
+            {
+                "title": "DEVCOM AvMC autonomous-ready Black Hawk delivery",
+                "url": (
+                    "https://www.army.mil/article/291237/"
+                    "u_s_army_takes_major_leap_into_future_of_aviation_with_delivery_of_first_"
+                    "autonomous_ready_black_hawk"
+                ),
+            },
+            {
+                "title": "DEVCOM AvMC Apache control of complex unmanned systems",
+                "url": (
+                    "https://www.army.mil/article/291612/"
+                    "new_capability_gives_apache_ability_to_control_complex_unmanned_systems"
+                ),
+            },
+            {
+                "title": "Joint Base Langley-Eustis contact information",
+                "url": "https://www.jble.af.mil/Home/Contact/",
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+    {
+        "name": "NASA Flight Dynamics Research Facility",
+        "record_type": "facility",
+        "short_description": (
+            "NASA Langley vertical wind tunnel supporting flight-dynamics research for "
+            "autonomous vehicles, drones, atmospheric aircraft, and future aerospace missions."
+        ),
+        "overview": (
+            "NASA's Flight Dynamics Research Facility is a 25,000-square-foot vertical wind "
+            "tunnel at Langley Research Center. It supports free-flight and captive research on "
+            "stability, control, autonomous flight vehicles, drones, X-planes, and atmospheric "
+            "vehicles."
+        ),
+        "unmanned_systems_relevance": (
+            "Provides direct aerodynamic and flight-dynamics research infrastructure for drones "
+            "and autonomous atmospheric vehicles. Public access and test availability require "
+            "NASA coordination."
+        ),
+        "activity_status": "active",
+        "current_activity": (
+            "NASA opened the completed Flight Dynamics Research Facility in July 2026 and lists "
+            "autonomous flight vehicles and drones among its research applications."
+        ),
+        "activity_source_url": (
+            "https://www.nasa.gov/news-release/"
+            "nasa-opens-new-flight-dynamics-research-facility-in-virginia/"
+        ),
+        "activity_last_verified_at": "2026-08-25",
+        "address_line": "NASA Langley Research Center, 1 NASA Drive",
+        "city": "Hampton",
+        "state": "VA",
+        "postal_code": "23666",
+        "latitude": 37.085639,
+        "longitude": -76.380667,
+        "location_precision": "site",
+        "region": "Hampton Roads",
+        "strategic_categories": [
+            "Federal and defense customer access",
+            "Research and technical depth",
+            "Test and operational environments",
+            "Core unmanned-systems asset",
+        ],
+        "platform_domains": ["Unmanned aircraft systems", "Advanced Air Mobility"],
+        "capabilities": [
+            "Simulation, digital twins, and synthetic environments",
+            "Testing, evaluation, verification, and validation",
+        ],
+        "missions": ["Training and experimentation"],
+        "website_url": (
+            "https://www.nasa.gov/directorates/armd/flight-dynamics-research-facility/"
+        ),
+        "contact_text": "NASA Flight Dynamics Research Facility inquiries",
+        "contact_phone": "757-864-8447",
+        "contact_email": "",
+        "contact_url": (
+            "https://www.nasa.gov/directorates/armd/flight-dynamics-research-facility/"
+        ),
+        "sources": [
+            {
+                "title": "NASA Flight Dynamics Research Facility capabilities and contact",
+                "url": (
+                    "https://www.nasa.gov/directorates/armd/"
+                    "flight-dynamics-research-facility/"
+                ),
+            },
+            {
+                "title": "NASA opening of the Flight Dynamics Research Facility",
+                "url": (
+                    "https://www.nasa.gov/news-release/"
+                    "nasa-opens-new-flight-dynamics-research-facility-in-virginia/"
+                ),
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+    {
+        "name": "NASA Autonomy Lab for Intelligent Flight Systems",
+        "record_type": "facility",
+        "short_description": (
+            "NASA Langley autonomy lab researching data-degraded aerial navigation, machine "
+            "learning, multimodal navigation, payload delivery, robotics, and UAS integration."
+        ),
+        "overview": (
+            "The Autonomy Lab for Intelligent Flight Systems brings together NASA Langley "
+            "researchers, UAS pilots, safety personnel, and technicians to advance autonomous "
+            "operations. Its focus includes aerial navigation in dynamic, data-degraded "
+            "environments, multimodal navigation, payload delivery, and machine learning."
+        ),
+        "unmanned_systems_relevance": (
+            "Conducts direct autonomous-navigation and robotics research with UAS aircraft, "
+            "pilots, and safety staff. The point represents NASA Langley rather than a publicly "
+            "accessible lab entrance."
+        ),
+        "activity_status": "active",
+        "current_activity": (
+            "NASA Langley currently publishes A-LIFT as a multidisciplinary autonomy and "
+            "robotics laboratory focused primarily on intelligent aerial navigation."
+        ),
+        "activity_source_url": "https://researchdirectorate.larc.nasa.gov/a-lift/",
+        "activity_last_verified_at": "2026-08-25",
+        "address_line": "NASA Langley Research Center, 2 Langley Boulevard",
+        "city": "Hampton",
+        "state": "VA",
+        "postal_code": "23681",
+        "latitude": 37.085639,
+        "longitude": -76.380667,
+        "location_precision": "site",
+        "region": "Hampton Roads",
+        "strategic_categories": [
+            "Research and technical depth",
+            "Test and operational environments",
+            "Federal and defense customer access",
+            "Core unmanned-systems asset",
+        ],
+        "platform_domains": ["Unmanned aircraft systems", "Cross-domain autonomy"],
+        "capabilities": [
+            "Autonomy and artificial intelligence",
+            "Navigation and positioning",
+            "Perception, sensing, and sensor fusion",
+            "Safety, policy, regulatory, and airspace integration",
+        ],
+        "missions": [
+            "Environmental monitoring",
+            "Logistics and contested logistics",
+            "Training and experimentation",
+        ],
+        "website_url": "https://researchdirectorate.larc.nasa.gov/a-lift/",
+        "contact_text": "NASA Langley public inquiries",
+        "contact_phone": "757-864-1000",
+        "contact_email": "",
+        "contact_url": "https://www.nasa.gov/contact/",
+        "sources": [
+            {
+                "title": "NASA Langley Autonomy Lab for Intelligent Flight Systems",
+                "url": "https://researchdirectorate.larc.nasa.gov/a-lift/",
+            },
+            {
+                "title": "NASA Langley facilities and capabilities directory",
+                "url": (
+                    "https://researchdirectorate.larc.nasa.gov/facilities-capabilities/"
+                ),
+            },
+            {
+                "title": "NASA public contact information",
+                "url": "https://www.nasa.gov/contact/",
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+    {
+        "name": "Virginia Capes Range Complex",
+        "record_type": "operating-environment",
+        "short_description": (
+            "Navy offshore and inshore Atlantic training and test range documented for UAS, "
+            "USV, UUV, underwater recovery, and long-range unmanned-surface-vessel activities."
+        ),
+        "overview": (
+            "The Virginia Capes Range Complex is part of the Navy's Atlantic Fleet Training and "
+            "Testing area off Virginia. Current and proposed public planning documents identify "
+            "unmanned aerial, surface, and undersea testing, underwater search and recovery, and "
+            "long-range unmanned-surface-vessel training in the complex."
+        ),
+        "unmanned_systems_relevance": (
+            "Provides a documented military operating environment for multi-domain unmanned-"
+            "system training and testing. It is not a public test range, and the catalog "
+            "intentionally uses no single point for the large offshore complex."
+        ),
+        "activity_status": "active",
+        "current_activity": (
+            "The Navy's Atlantic Fleet Training and Testing documentation identifies current "
+            "and proposed uncrewed-system activities in the Virginia Capes Range Complex."
+        ),
+        "activity_source_url": (
+            "https://www.nepa.navy.mil/Portals/20/Documents/AFTT%20EIS%204%20Draft/"
+            "04%20AFTT%20DEIS%20Chapter%202%20Description%20of%20Proposed%20Action%20and%20"
+            "Alternatives.pdf"
+        ),
+        "activity_last_verified_at": "2026-08-25",
+        "city": "",
+        "state": "VA",
+        "postal_code": "",
+        "latitude": None,
+        "longitude": None,
+        "location_precision": "regional",
+        "region": "Hampton Roads",
+        "strategic_categories": [
+            "Federal and defense customer access",
+            "Multi-domain missions",
+            "Test and operational environments",
+            "Core unmanned-systems asset",
+        ],
+        "platform_domains": [
+            "Unmanned aircraft systems",
+            "Maritime surface systems",
+            "Undersea systems",
+            "Cross-domain autonomy",
+        ],
+        "capabilities": [
+            "Operations, maintenance, and sustainment",
+            "Safety, policy, regulatory, and airspace integration",
+            "Testing, evaluation, verification, and validation",
+        ],
+        "missions": [
+            "ISR",
+            "Maritime domain awareness",
+            "Search and rescue",
+            "Training and experimentation",
+        ],
+        "website_url": (
+            "https://www.nepa.navy.mil/Portals/20/Documents/AFTT%20EIS%204%20Draft/"
+            "04%20AFTT%20DEIS%20Chapter%202%20Description%20of%20Proposed%20Action%20and%20"
+            "Alternatives.pdf"
+        ),
+        "contact_text": "Atlantic Fleet Training and Testing public information",
+        "contact_phone": "",
+        "contact_email": "",
+        "contact_url": "https://www.nepa.navy.mil/AFTTEIS/",
+        "sources": [
+            {
+                "title": "Navy Atlantic Fleet Training and Testing activity tables",
+                "url": (
+                    "https://www.nepa.navy.mil/Portals/20/Documents/AFTT%20EIS%204%20Draft/"
+                    "04%20AFTT%20DEIS%20Chapter%202%20Description%20of%20Proposed%20Action%20"
+                    "and%20Alternatives.pdf"
+                ),
+            },
+            {
+                "title": "Navy Atlantic Fleet Training and Testing project information",
+                "url": "https://www.nepa.navy.mil/AFTTEIS/",
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+    {
+        "name": "Williamsburg Police and Fire FotoKite Capability",
+        "record_type": "program",
+        "short_description": (
+            "Documented tethered-drone capability acquired for Williamsburg Police and Fire "
+            "situational awareness and public-safety response."
+        ),
+        "overview": (
+            "Williamsburg's adopted capital plan documents the purchase of a FotoKite tethered "
+            "drone for Police and Fire use. The system was intended to provide sustained aerial "
+            "situational awareness during incidents without representing a general public drone "
+            "service."
+        ),
+        "unmanned_systems_relevance": (
+            "Documents a direct local public-safety UAS capability. The source confirms the "
+            "purchase and intended Police and Fire use but does not establish current deployment "
+            "status or a launch location."
+        ),
+        "address_line": "Williamsburg Police Department, 615 Lafayette Street",
+        "city": "Williamsburg",
+        "state": "VA",
+        "postal_code": "23185",
+        "latitude": 37.276675,
+        "longitude": -76.711436,
+        "location_precision": "site",
+        "region": "Hampton Roads",
+        "strategic_categories": [
+            "Multi-domain missions",
+            "Programs and initiatives",
+            "Core unmanned-systems asset",
+        ],
+        "platform_domains": ["Unmanned aircraft systems"],
+        "capabilities": ["Payloads and mission systems"],
+        "missions": [
+            "Public safety and emergency response",
+            "Search and rescue",
+        ],
+        "website_url": "https://www.williamsburgva.gov/304/Police",
+        "contact_text": "Williamsburg Police public information",
+        "contact_phone": "757-220-2331",
+        "contact_email": "",
+        "contact_url": "https://www.williamsburgva.gov/304/Police",
+        "sources": [
+            {
+                "title": "Williamsburg adopted capital plan documenting FotoKite acquisition",
+                "url": "https://www.williamsburgva.gov/DocumentCenter/View/4066",
+            },
+            {
+                "title": "Williamsburg Police Department location and contact",
+                "url": "https://www.williamsburgva.gov/304/Police",
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+    {
+        "name": "REaKTOR Technology Innovation Center",
+        "record_type": "facility",
+        "short_description": (
+            "Hampton technology incubator supporting autonomous-systems commercialization, "
+            "dual-use startups, customer discovery, prototyping, and business growth."
+        ),
+        "overview": (
+            "REaKTOR is a Hampton technology innovation center focused on accelerating early-"
+            "stage and dual-use technology companies. It provides incubation, mentoring, "
+            "commercialization support, technical programming, and connections to the region's "
+            "aerospace, defense, and autonomy ecosystem."
+        ),
+        "unmanned_systems_relevance": (
+            "Supports company formation and commercialization for autonomous-systems ventures. "
+            "It is an enabling incubator and does not imply that every resident company works in "
+            "unmanned systems."
+        ),
+        "activity_status": "active",
+        "current_activity": (
+            "REaKTOR currently operates from Exploration Way in Hampton and accepts technology "
+            "entrepreneurs and partners for incubation and commercialization support."
+        ),
+        "activity_source_url": "https://reaktor757.org/",
+        "activity_last_verified_at": "2026-08-25",
+        "address_line": "1100 Exploration Way, Suite 302X",
+        "city": "Hampton",
+        "state": "VA",
+        "postal_code": "23666",
+        "latitude": 37.082461,
+        "longitude": -76.399698,
+        "location_precision": "exact",
+        "region": "Hampton Roads",
+        "strategic_categories": [
+            "Commercialization and capital",
+            "Companies and solution providers",
+            "Workforce and talent",
+            "Supporting ecosystem asset",
+        ],
+        "platform_domains": ["Cross-domain autonomy"],
+        "capabilities": [
+            "Manufacturing, materials, and prototyping",
+            "Systems engineering and integration",
+        ],
+        "missions": ["Training and experimentation"],
+        "website_url": "https://reaktor757.org/",
+        "contact_text": "REaKTOR membership and partnership inquiries",
+        "contact_phone": "",
+        "contact_email": "",
+        "contact_url": "https://reaktor757.org/contact/",
+        "sources": [
+            {
+                "title": "REaKTOR programs, autonomy focus, and Hampton location",
+                "url": "https://reaktor757.org/",
+            },
+            {
+                "title": "REaKTOR public contact route",
+                "url": "https://reaktor757.org/contact/",
+            },
+            {
+                "title": "City of Hampton business incubator directory",
+                "url": "https://www.hampton.gov/2362/Business-Incubators",
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+    {
+        "name": "Mid-Atlantic Tech Bridge",
+        "record_type": "program",
+        "short_description": (
+            "Norfolk Navy innovation program connecting fleet needs with industry and academic "
+            "solutions in unmanned systems, digital engineering, 5G, and advanced manufacturing."
+        ),
+        "overview": (
+            "The Mid-Atlantic Tech Bridge is part of the Department of the Navy Tech Bridge "
+            "network. It connects Navy and Marine Corps problems with regional industry, "
+            "entrepreneurs, and researchers, with published focus areas including unmanned "
+            "systems, 5G, advanced manufacturing, and digital engineering."
+        ),
+        "unmanned_systems_relevance": (
+            "Provides a direct regional pathway for unmanned-system companies and researchers to "
+            "engage Navy users, demonstrations, accelerators, and transition opportunities. The "
+            "marker identifies its documented downtown Norfolk collaboration site."
+        ),
+        "activity_status": "active",
+        "current_activity": (
+            "The Mid-Atlantic Tech Bridge participated in the Navy's 2026 Digital Warfighting "
+            "Symposium and Defense Technology Accelerator activities in Norfolk."
+        ),
+        "activity_source_url": (
+            "https://www.navsea.navy.mil/Media/News/Article/4501883/"
+            "navy-leaders-emphasize-speed-and-a-unified-digital-ecosystem-at-the-2026-digita/"
+        ),
+        "activity_last_verified_at": "2026-08-25",
+        "address_line": "Assembly, 400 Granby Street",
+        "city": "Norfolk",
+        "state": "VA",
+        "postal_code": "23510",
+        "latitude": 36.851213,
+        "longitude": -76.289812,
+        "location_precision": "site",
+        "region": "Hampton Roads",
+        "strategic_categories": [
+            "Commercialization and capital",
+            "Federal and defense customer access",
+            "Programs and initiatives",
+            "Core unmanned-systems asset",
+        ],
+        "platform_domains": ["Cross-domain autonomy"],
+        "capabilities": [
+            "Manufacturing, materials, and prototyping",
+            "Systems engineering and integration",
+            "Testing, evaluation, verification, and validation",
+        ],
+        "missions": ["Training and experimentation"],
+        "website_url": (
+            "https://www.navsea.navy.mil/Media/News/Article-View/Article/2555171/"
+            "tech-bridges-101-network-built-to-accelerate-solutions-to-the-warfighter/"
+        ),
+        "contact_text": "Mid-Atlantic Tech Bridge public program information",
+        "contact_phone": "",
+        "contact_email": "",
+        "contact_url": (
+            "https://www.navsea.navy.mil/Media/News/Article-View/Article/2555171/"
+            "tech-bridges-101-network-built-to-accelerate-solutions-to-the-warfighter/"
+        ),
+        "sources": [
+            {
+                "title": "Navy Tech Bridge network and Mid-Atlantic unmanned-systems focus",
+                "url": (
+                    "https://www.navsea.navy.mil/Media/News/Article-View/Article/2555171/"
+                    "tech-bridges-101-network-built-to-accelerate-solutions-to-the-warfighter/"
+                ),
+            },
+            {
+                "title": "Mid-Atlantic Tech Bridge 2026 Norfolk accelerator activity",
+                "url": (
+                    "https://www.navsea.navy.mil/Media/News/Article/4501883/"
+                    "navy-leaders-emphasize-speed-and-a-unified-digital-ecosystem-at-the-2026-"
+                    "digita/"
+                ),
+            },
+            {
+                "title": "Mid-Atlantic Tech Bridge annual report and Norfolk collaboration site",
+                "url": (
+                    "https://757collab.org/wp-content/uploads/2024/11/"
+                    "MATB-FY-2024-Annual-Report-compressed.pdf"
+                ),
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+    {
+        "name": "ODU National Security Institute",
+        "record_type": "organization",
+        "short_description": (
+            "Old Dominion University institute coordinating applied research in autonomous and "
+            "maritime systems, AI, simulation, communications, sensing, and operational security."
+        ),
+        "overview": (
+            "ODU launched its National Security Institute in 2026 to coordinate mission-focused "
+            "research across autonomous and maritime systems, AI and modeling and simulation, "
+            "cyber and spectrum operations, sensing, advanced technologies, and human performance."
+        ),
+        "unmanned_systems_relevance": (
+            "Coordinates direct autonomy and maritime-systems research and serves as a gateway "
+            "for federal, industry, and academic partnerships. It is distinct from the IACS "
+            "research institute and the Willoughby Bay physical test site already mapped."
+        ),
+        "activity_status": "active",
+        "current_activity": (
+            "ODU launched the National Security Institute in June 2026 with autonomous and "
+            "maritime systems as one of four core mission areas."
+        ),
+        "activity_source_url": (
+            "https://www.odu.edu/article/old-dominion-university-launches-national-security-"
+            "institute-to-advance-solutions-for"
+        ),
+        "activity_last_verified_at": "2026-08-25",
+        "address_line": "Innovation Research Park I, 4111 Monarch Way, Suite 203",
+        "city": "Norfolk",
+        "state": "VA",
+        "postal_code": "23529",
+        "latitude": 36.882436,
+        "longitude": -76.300479,
+        "location_precision": "site",
+        "region": "Hampton Roads",
+        "strategic_categories": [
+            "Federal and defense customer access",
+            "Research and technical depth",
+            "Programs and initiatives",
+            "Core unmanned-systems asset",
+        ],
+        "platform_domains": [
+            "Unmanned aircraft systems",
+            "Maritime surface systems",
+            "Undersea systems",
+            "Cross-domain autonomy",
+        ],
+        "capabilities": [
+            "Autonomy and artificial intelligence",
+            "Command, control, and communications",
+            "Perception, sensing, and sensor fusion",
+            "Simulation, digital twins, and synthetic environments",
+            "Systems engineering and integration",
+        ],
+        "missions": [
+            "Infrastructure inspection",
+            "ISR",
+            "Maritime domain awareness",
+            "Training and experimentation",
+        ],
+        "website_url": "https://www.odu.edu/national-security",
+        "contact_text": "ODU National Security Institute research and partnership inquiries",
+        "contact_phone": "757-683-3460",
+        "contact_email": "research@odu.edu",
+        "contact_url": "https://www.odu.edu/national-security",
+        "sources": [
+            {
+                "title": "ODU National Security Institute overview",
+                "url": "https://www.odu.edu/national-security",
+            },
+            {
+                "title": "ODU autonomous and maritime systems mission area",
+                "url": (
+                    "https://www.odu.edu/national-security/mission-areas/"
+                    "autonomous-maritime-systems"
+                ),
+            },
+            {
+                "title": "ODU 2026 National Security Institute launch",
+                "url": (
+                    "https://www.odu.edu/article/old-dominion-university-launches-national-"
+                    "security-institute-to-advance-solutions-for"
+                ),
+            },
+            {
+                "title": "ODU research center address and contact",
+                "url": "https://www.odu.edu/research/research-centers",
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+    {
+        "name": "Tidal Flight Chesapeake Development Hangar",
+        "record_type": "facility",
+        "short_description": (
+            "Chesapeake Regional Airport hangar expansion for development and testing of a "
+            "hybrid-electric amphibious aircraft platform."
+        ),
+        "overview": (
+            "Tidal Flight is a Hampton Roads startup developing a hybrid-electric amphibious "
+            "aircraft. In 2026 the company announced an expansion into 13,000 square feet of "
+            "hangar space at Chesapeake Regional Airport for engineering, prototype development, "
+            "and testing."
+        ),
+        "unmanned_systems_relevance": (
+            "Adds adjacent AAM propulsion, aircraft-development, airport, and test capacity that "
+            "may support the broader autonomy ecosystem. Public sources do not describe the "
+            "aircraft as uncrewed or autonomous, so this is a supporting asset."
+        ),
+        "activity_status": "developing",
+        "current_activity": (
+            "Tidal Flight announced a 2026 investment and planned 13,000-square-foot Chesapeake "
+            "hangar expansion while developing its hybrid-electric aircraft."
+        ),
+        "activity_source_url": (
+            "https://www.tidalflight.com/news/governor-spanberger-announces-hybrid-electric-"
+            "seaplane-startup-expands-with-more-than-500000-investment-in-chesapeake"
+        ),
+        "activity_last_verified_at": "2026-08-25",
+        "address_line": "2808 Airport Drive",
+        "city": "Chesapeake",
+        "state": "VA",
+        "postal_code": "23323",
+        "latitude": 36.665553,
+        "longitude": -76.325201,
+        "location_precision": "site",
+        "region": "Hampton Roads",
+        "strategic_categories": [
+            "Companies and solution providers",
+            "Manufacturing and supply chain",
+            "Physical infrastructure and logistics",
+            "Supporting ecosystem asset",
+        ],
+        "platform_domains": ["Advanced Air Mobility"],
+        "capabilities": [
+            "Manufacturing, materials, and prototyping",
+            "Propulsion, batteries, fuels, and energy systems",
+            "Testing, evaluation, verification, and validation",
+        ],
+        "missions": ["Training and experimentation"],
+        "website_url": "https://www.tidalflight.com/",
+        "contact_text": "Tidal Flight company and partnership inquiries",
+        "contact_phone": "",
+        "contact_email": "contact-us@tidalflight.com",
+        "contact_url": "https://www.tidalflight.com/",
+        "sources": [
+            {
+                "title": "Tidal Flight company, Chesapeake address, and public contact",
+                "url": "https://www.tidalflight.com/",
+            },
+            {
+                "title": "Tidal Flight Chesapeake hangar expansion announcement",
+                "url": (
+                    "https://www.tidalflight.com/news/governor-spanberger-announces-hybrid-"
+                    "electric-seaplane-startup-expands-with-more-than-500000-investment-in-"
+                    "chesapeake"
+                ),
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+    {
+        "name": "Cruz Associates Hampton Roads UAS Engineering Support",
+        "record_type": "organization",
+        "short_description": (
+            "Yorktown aviation engineering and test company with current Hampton Roads support "
+            "for Army Special Operations Aviation UAS, flight test, integration, and sustainment."
+        ),
+        "overview": (
+            "Cruz Associates provides aviation engineering, integration, airworthiness, test and "
+            "evaluation, lifecycle support, and sustainment from its Yorktown headquarters and "
+            "customer sites. Current Fort Eustis recruiting materials document support for Army "
+            "Special Operations Aviation UAS and associated mission equipment."
+        ),
+        "unmanned_systems_relevance": (
+            "Provides documented UAS test and evaluation, engineering, integration, and "
+            "sustainment support in Hampton Roads. The point identifies the public Yorktown "
+            "headquarters; some project work occurs at Joint Base Langley-Eustis."
+        ),
+        "activity_status": "active",
+        "current_activity": (
+            "Cruz currently recruits Hampton Roads test and engineering personnel for Army "
+            "aviation work that explicitly includes Special Operations Aviation UAS."
+        ),
+        "activity_source_url": "https://cruzinc.us/job-openings/",
+        "activity_last_verified_at": "2026-08-25",
+        "address_line": "6515 George Washington Memorial Highway, Suite 209",
+        "city": "Yorktown",
+        "state": "VA",
+        "postal_code": "23692",
+        "latitude": 37.171482,
+        "longitude": -76.473780,
+        "location_precision": "exact",
+        "region": "Hampton Roads",
+        "strategic_categories": [
+            "Companies and solution providers",
+            "Federal and defense customer access",
+            "Test and operational environments",
+            "Core unmanned-systems asset",
+        ],
+        "platform_domains": ["Unmanned aircraft systems", "Cross-domain autonomy"],
+        "capabilities": [
+            "Operations, maintenance, and sustainment",
+            "Systems engineering and integration",
+            "Testing, evaluation, verification, and validation",
+        ],
+        "missions": ["ISR", "Training and experimentation"],
+        "website_url": "https://cruzinc.us/",
+        "contact_text": "Cruz Associates aviation and test-support inquiries",
+        "contact_phone": "757-833-7538",
+        "contact_email": "info@cruzinc.us",
+        "contact_url": "https://cruzinc.us/contact-us/",
+        "sources": [
+            {
+                "title": "Cruz Associates capabilities, Yorktown address, and contact",
+                "url": "https://cruzinc.us/",
+            },
+            {
+                "title": "Cruz current Fort Eustis UAS test and engineering support",
+                "url": "https://cruzinc.us/job-openings/",
+            },
+            {
+                "title": "Cruz ASTRO unmanned-aircraft support contract scope",
+                "url": "https://cruzinc.us/astro-small-business/",
+            },
+            {
+                "title": "Cruz Associates public contact page",
+                "url": "https://cruzinc.us/contact-us/",
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+    {
+        "name": "Alphatec Surveyors UAS Services",
+        "record_type": "organization",
+        "short_description": (
+            "Chesapeake surveying company operating UAS for topographic mapping, aerial imagery, "
+            "three-dimensional terrain models, and construction-site data collection."
+        ),
+        "overview": (
+            "Alphatec Surveyors provides land and construction surveying across southeastern "
+            "Virginia. Its published UAS service uses aerial data collection to produce imagery, "
+            "topographic surveys, terrain models, volumetric information, and site documentation."
+        ),
+        "unmanned_systems_relevance": (
+            "Operates UAS directly for commercial surveying and mapping missions, adding a "
+            "documented civil-use operator to a regional inventory otherwise weighted toward "
+            "defense and public safety."
+        ),
+        "activity_status": "active",
+        "current_activity": (
+            "Alphatec currently advertises UAS topographic surveying services from its "
+            "Chesapeake office."
+        ),
+        "activity_source_url": (
+            "https://alphatec-surveyors.com/uas-topographic-surveying-hampton-roads/"
+        ),
+        "activity_last_verified_at": "2026-08-25",
+        "address_line": "530 Woodlake Circle, Suite 200",
+        "city": "Chesapeake",
+        "state": "VA",
+        "postal_code": "23320",
+        "latitude": 36.780825,
+        "longitude": -76.243328,
+        "location_precision": "exact",
+        "region": "Hampton Roads",
+        "strategic_categories": [
+            "Companies and solution providers",
+            "Multi-domain missions",
+            "Core unmanned-systems asset",
+        ],
+        "platform_domains": ["Unmanned aircraft systems"],
+        "capabilities": [
+            "Data engineering, analytics, and edge computing",
+            "Payloads and mission systems",
+            "Perception, sensing, and sensor fusion",
+        ],
+        "missions": [
+            "Infrastructure inspection",
+            "Surveying and mapping",
+        ],
+        "website_url": (
+            "https://alphatec-surveyors.com/uas-topographic-surveying-hampton-roads/"
+        ),
+        "contact_text": "Alphatec UAS surveying inquiries",
+        "contact_phone": "757-963-5261",
+        "contact_email": "",
+        "contact_url": (
+            "https://alphatec-surveyors.com/uas-topographic-surveying-hampton-roads/"
+        ),
+        "sources": [
+            {
+                "title": "Alphatec Hampton Roads UAS topographic surveying services",
+                "url": (
+                    "https://alphatec-surveyors.com/uas-topographic-surveying-hampton-roads/"
+                ),
+            },
+            {
+                "title": "Alphatec Surveyors company and service overview",
+                "url": "https://alphatec-surveyors.com/",
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+    {
+        "name": "Commander, Helicopter Sea Combat Wing Atlantic",
+        "record_type": "organization",
+        "short_description": (
+            "Navy type-wing headquarters at Naval Station Norfolk whose official mission "
+            "includes manned and unmanned maritime attack, combat support, and airborne mine "
+            "countermeasures."
+        ),
+        "overview": (
+            "Commander, Helicopter Sea Combat Wing Atlantic is the Navy's largest helicopter "
+            "type wing, with 11 squadrons and more than 140 aircraft. Its current official "
+            "description identifies the Helicopter Sea Combat community's mission as manned "
+            "and unmanned maritime attack, combat support, and airborne mine countermeasures."
+        ),
+        "unmanned_systems_relevance": (
+            "Provides a directly documented command-level unmanned maritime-attack mission in "
+            "Hampton Roads. The point identifies the wing's published headquarters address and "
+            "does not represent aircraft locations, launch points, or the unmanned status of "
+            "every subordinate squadron or aircraft."
+        ),
+        "activity_status": "active",
+        "current_activity": (
+            "The wing's current official page lists 11 squadrons, more than 140 aircraft, and "
+            "manned and unmanned maritime attack among the HSC community's missions."
+        ),
+        "activity_source_url": (
+            "https://www.airlant.usff.navy.mil/comhelseacombatwinglant/"
+        ),
+        "activity_last_verified_at": "2026-08-25",
+        "address_line": "610 A Street, Suite 150, Building SP-65",
+        "city": "Norfolk",
+        "state": "VA",
+        "postal_code": "23511",
+        "latitude": 36.943564,
+        "longitude": -76.285373,
+        "location_precision": "site",
+        "region": "Hampton Roads",
+        "strategic_categories": [
+            "Federal and defense customer access",
+            "Multi-domain missions",
+            "Core unmanned-systems asset",
+        ],
+        "platform_domains": ["Unmanned aircraft systems"],
+        "capabilities": [
+            "Operations, maintenance, and sustainment",
+            "Payloads and mission systems",
+        ],
+        "missions": [
+            "Maritime domain awareness",
+            "Force protection and installation security",
+        ],
+        "website_url": (
+            "https://www.airlant.usff.navy.mil/comhelseacombatwinglant/"
+        ),
+        "contact_text": "Helicopter Sea Combat Wing Atlantic administration",
+        "contact_phone": "757-444-7958",
+        "contact_email": "",
+        "contact_url": (
+            "https://www.airlant.usff.navy.mil/Organization/"
+            "COMHELSEACOMBATWINGLANT/Contact-Us/"
+        ),
+        "sources": [
+            {
+                "title": "Helicopter Sea Combat Wing Atlantic mission and force",
+                "url": (
+                    "https://www.airlant.usff.navy.mil/"
+                    "comhelseacombatwinglant/"
+                ),
+            },
+            {
+                "title": "Helicopter Sea Combat Wing Atlantic public contact information",
+                "url": (
+                    "https://www.airlant.usff.navy.mil/Organization/"
+                    "COMHELSEACOMBATWINGLANT/Contact-Us/"
+                ),
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+]
+
 CATALOG_RELATIONSHIPS = [
     ("Mid-Atlantic Aviation Partnership", "operates", "Virginia Tech Drone Park"),
     ("Mid-Atlantic Aviation Partnership", "operates", "MARS Unmanned Aircraft Systems Airfield"),
@@ -9395,6 +10962,7 @@ def main():
         + curated_records()
         + VERIFIED_UXS_ADDITIONS
         + VERIFIED_UXS_EXPANSION
+        + VERIFIED_HAMPTON_ROADS_EXPANSION
     )
     records = [finalize_record(apply_location_override(record)) for record in records]
     records = apply_university_campus_locations(records)
