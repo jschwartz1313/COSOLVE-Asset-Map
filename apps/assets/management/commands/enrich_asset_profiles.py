@@ -7,7 +7,7 @@ from django.core.management.base import BaseCommand
 from django.db import transaction
 
 from apps.assets.models import Asset
-from apps.catalog.models import PlatformDomain, Region, StrategicCategory
+from apps.catalog.models import Capability, PlatformDomain, Region, StrategicCategory
 from apps.sources.models import Source
 
 PROFILE_FIELDS = (
@@ -44,6 +44,11 @@ LEGACY_DESCRIPTIONS = {
 ECOSYSTEM_ROLE_CATEGORIES = {
     "Core unmanned-systems asset",
     "Supporting ecosystem asset",
+}
+MANUFACTURING_FACILITY_CATEGORY = "Manufacturing facilities"
+MANUFACTURING_CAPABILITY = "Manufacturing, materials, and prototyping"
+ADDITIVE_STRATEGIC_CATEGORIES = ECOSYSTEM_ROLE_CATEGORIES | {
+    MANUFACTURING_FACILITY_CATEGORY
 }
 TARGET_CONTACT_UPGRADES = {
     "ANRA Technologies",
@@ -367,7 +372,7 @@ class Command(BaseCommand):
                 if not asset.platform_domains.filter(pk=aam_domain.pk).exists():
                     asset.platform_domains.add(aam_domain)
 
-            for category_name in ECOSYSTEM_ROLE_CATEGORIES.intersection(
+            for category_name in ADDITIVE_STRATEGIC_CATEGORIES.intersection(
                 record.get("strategic_categories", [])
             ):
                 role_category, _created = StrategicCategory.objects.get_or_create(
@@ -375,6 +380,13 @@ class Command(BaseCommand):
                 )
                 if not asset.strategic_categories.filter(pk=role_category.pk).exists():
                     asset.strategic_categories.add(role_category)
+
+            if MANUFACTURING_FACILITY_CATEGORY in record.get("strategic_categories", []):
+                manufacturing_capability, _created = Capability.objects.get_or_create(
+                    name=MANUFACTURING_CAPABILITY
+                )
+                if not asset.capabilities.filter(pk=manufacturing_capability.pk).exists():
+                    asset.capabilities.add(manufacturing_capability)
 
             if (
                 record["name"] in TARGET_CONTACT_UPGRADES

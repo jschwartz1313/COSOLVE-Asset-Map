@@ -1,5 +1,5 @@
 {
-  "collected_at": "2026-08-21",
+  "collected_at": "2026-08-30",
   "methodology": "Additional official public evidence collected for records that previously had only one attached source. Organization and agency pages establish identity and public contact routes; program reports, policies, minutes, and current operator pages establish the specific unmanned-systems activity. Collection does not constitute human editorial verification.",
   "assets": {
     "Albemarle County Fire Rescue UAS Program": [
@@ -12,6 +12,12 @@
       {
         "title": "Albemarle County Police Department",
         "url": "https://www.albemarle.org/government/police?lv=true"
+      }
+    ],
+    "Aeroprobe": [
+      {
+        "title": "VEDP profile of Aeroprobe's Christiansburg manufacturing operation",
+        "url": "https://www.vedp.org/news/aeroprobe-sets-companies-speed"
       }
     ],
     "Arlington Joint Public Safety UAS Program": [
@@ -130,6 +136,12 @@
         "url": "https://es.vccs.edu/about/"
       }
     ],
+    "Eagle Aviation Technologies": [
+      {
+        "title": "Eagle Technologies Newport News advanced-manufacturing facility tour",
+        "url": "https://eagleaviationtech.com/news-and-updates/f/eagle-technologies-welcomes-the-vma-for-a-facility-tour"
+      }
+    ],
     "Flying Ship Company": [
       {
         "title": "Flying Ship Company",
@@ -160,6 +172,12 @@
       {
         "title": "Virginia DHCD: GO Virginia State Board",
         "url": "https://www.dhcd.virginia.gov/virginia-growth-and-opportunity-go-virginia-board"
+      }
+    ],
+    "HUSH Aerospace": [
+      {
+        "title": "HUSH Aerospace Virginia Beach design and manufacturing facility",
+        "url": "https://www.hush.aero/what-we-do"
       }
     ],
     "James City County Police Drone as First Responder Program": [
@@ -502,6 +520,12 @@
       {
         "title": "Virginia Western mechatronics program",
         "url": "https://www.virginiawestern.edu/academics/mechatronics/"
+      }
+    ],
+    "Volvo Trucks New River Valley Plant": [
+      {
+        "title": "Volvo VNL Autonomous assembly at the New River Valley plant",
+        "url": "https://www.volvoautonomoussolutions.com/en-en/autona-freight/volvo-vnl-autonomous.html"
       }
     ],
     "Winchester Emergency Management sUAS Program": [

@@ -12,6 +12,7 @@ python manage.py apply_catalog_reviews --reviews data/asset_editorial_reviews_20
 python manage.py apply_catalog_reviews --reviews data/asset_editorial_reviews_2026_08_24_expansion.json
 python manage.py apply_catalog_reviews --reviews data/asset_editorial_reviews_2026_08_24_locations.json
 python manage.py apply_catalog_reviews --reviews data/asset_editorial_reviews_2026_08_25_hampton_roads.json
+python manage.py apply_catalog_reviews --reviews data/asset_editorial_reviews_2026_08_30_manufacturing.json
 python manage.py scan_asset_duplicates
 python manage.py populate_history --auto --batchsize 500
 python manage.py ensure_admin_user

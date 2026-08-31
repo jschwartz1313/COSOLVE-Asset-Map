@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "virginia_real_assets.json"
 CATALOG_DATE = "2026-08-21"
-BUILD_DATE = "2026-08-25"
+BUILD_DATE = "2026-08-30"
 
 FAA_LAYER = (
     "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
@@ -1403,6 +1403,33 @@ PROFILES = {
 
 CORE_ASSET_CATEGORY = "Core unmanned-systems asset"
 SUPPORTING_ASSET_CATEGORY = "Supporting ecosystem asset"
+MANUFACTURING_FACILITY_CATEGORY = "Manufacturing facilities"
+MANUFACTURING_CAPABILITY = "Manufacturing, materials, and prototyping"
+MANUFACTURING_FACILITY_ASSETS = frozenset(
+    {
+        "Advanced Aircraft Company",
+        "Aeroprobe",
+        "Agricision",
+        "Eagle Aviation Technologies",
+        "Fairlead Maritime Systems",
+        "Fulcrum Concepts Newport News Machine Shop",
+        "HII Unmanned Systems Center of Excellence",
+        "HUSH Aerospace",
+        "Heven AeroTech Winchester Innovation and Manufacturing Campus",
+        "Marine Sonic Technology",
+        "Micron Manassas Semiconductor Fabrication Plant",
+        "Newport News Shipbuilding",
+        "P1 Technologies Keltech Division",
+        "RapidFlight UAS Manufacturing Headquarters",
+        "Textron Systems Aerosonde UAS Center of Excellence",
+        "Trident Systems Chantilly Production Facility",
+        "UVision USA Stafford Production and Training Center",
+        "ViDARR Virginia Beach Manufacturing Facility",
+        "Volvo Trucks New River Valley Plant",
+        "Wrap Technologies Norton Manufacturing Headquarters",
+        "Zenith Aerotech",
+    }
+)
 SUPPORTING_PROFILE_KEYS = {
     "aviation_site",
     "economic_development",
@@ -9877,6 +9904,241 @@ VERIFIED_HAMPTON_ROADS_EXPANSION = [
     },
 ]
 
+# Physical production sites added during the August 30 manufacturing review. The
+# records stay separate from their parent organizations when the factory or shop
+# has a distinct public address and operational role.
+VERIFIED_MANUFACTURING_EXPANSION = [
+    {
+        "name": "Fulcrum Concepts Newport News Machine Shop",
+        "record_type": "facility",
+        "short_description": (
+            "Newport News aerospace machine shop providing in-house CNC fabrication and "
+            "production capacity for Fulcrum Concepts."
+        ),
+        "overview": (
+            "Fulcrum Concepts opened this 7,490-square-foot machine shop in January 2026. "
+            "The facility uses five-axis and three-axis CNC equipment and lathes to produce "
+            "high-precision aerospace components, supporting the company's aircraft "
+            "integration, fabrication, and uncrewed-systems work."
+        ),
+        "unmanned_systems_relevance": (
+            "Provides documented Virginia aerospace-component fabrication capacity within a "
+            "company that designs, integrates, fabricates, tests, and supports uncrewed "
+            "aircraft systems. The public factory sources describe aerospace production "
+            "generally rather than a dedicated UAS-only line."
+        ),
+        "activity_status": "active",
+        "current_activity": (
+            "Fulcrum publicly documents the Newport News machine shop as its centralized "
+            "in-house machining facility and marked its opening with a January 2026 ribbon "
+            "cutting."
+        ),
+        "activity_source_url": (
+            "https://fulcrumconceptsllc.com/about/manufacturing-and-production/"
+        ),
+        "activity_last_verified_at": "2026-08-30",
+        "address_line": "737 Industrial Park Drive",
+        "city": "Newport News",
+        "state": "VA",
+        "postal_code": "23608",
+        "latitude": 37.169518,
+        "longitude": -76.533490,
+        "location_precision": "exact",
+        "region": "Hampton Roads",
+        "strategic_categories": [
+            "Companies and solution providers",
+            "Manufacturing and supply chain",
+            "Supporting ecosystem asset",
+        ],
+        "platform_domains": ["Unmanned aircraft systems", "Cross-domain autonomy"],
+        "capabilities": [
+            "Manufacturing, materials, and prototyping",
+            "Systems engineering and integration",
+        ],
+        "missions": ["Logistics and contested logistics", "Training and experimentation"],
+        "website_url": (
+            "https://fulcrumconceptsllc.com/about/manufacturing-and-production/"
+        ),
+        "contact_text": "Fulcrum Concepts public inquiries",
+        "contact_phone": "804-785-1017",
+        "contact_email": "info@fulcrumconceptsllc.com",
+        "contact_url": "https://fulcrumconceptsllc.com/about/our-facilities/",
+        "sources": [
+            {
+                "title": "Fulcrum Concepts manufacturing and production capabilities",
+                "url": (
+                    "https://fulcrumconceptsllc.com/about/manufacturing-and-production/"
+                ),
+            },
+            {
+                "title": "Fulcrum Concepts Virginia facilities and public contact information",
+                "url": "https://fulcrumconceptsllc.com/about/our-facilities/",
+            },
+            {
+                "title": "Fulcrum Concepts Newport News machine shop address and opening",
+                "url": (
+                    "https://fulcrumconceptsllc.com/news/fulcrum-concepts-opens-new-"
+                    "machine-shop-in-newport-news-expanding-manufacturing-capabilities/"
+                ),
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+    {
+        "name": "Micron Manassas Semiconductor Fabrication Plant",
+        "record_type": "facility",
+        "short_description": (
+            "Manassas semiconductor fabrication plant producing long-lifecycle memory used "
+            "in drones, autonomous vehicles, aerospace, defense, and industrial systems."
+        ),
+        "overview": (
+            "Micron's Fab 6 is an active 300-millimeter semiconductor manufacturing and "
+            "testing site. Micron identifies the Manassas plant's long-lifecycle memory as "
+            "supporting automotive, defense, aerospace, industrial, networking, drone, and "
+            "autonomous-vehicle applications."
+        ),
+        "unmanned_systems_relevance": (
+            "Provides domestic memory-component manufacturing for drones and autonomous "
+            "systems. It is classified as supporting infrastructure because the plant serves "
+            "multiple markets and is not dedicated exclusively to uncrewed platforms."
+        ),
+        "activity_status": "active",
+        "current_activity": (
+            "Micron began manufacturing 1-alpha DRAM at the Manassas fab in May 2026 as part "
+            "of a continuing expansion and modernization program."
+        ),
+        "activity_source_url": "https://www.micron.com/us-expansion/va",
+        "activity_last_verified_at": "2026-08-30",
+        "address_line": "9600 Godwin Drive",
+        "city": "Manassas",
+        "state": "VA",
+        "postal_code": "20110",
+        "latitude": 38.746371,
+        "longitude": -77.513223,
+        "location_precision": "exact",
+        "region": "Northern Virginia",
+        "strategic_categories": [
+            "Manufacturing and supply chain",
+            "Physical infrastructure and logistics",
+            "Supporting ecosystem asset",
+        ],
+        "platform_domains": [
+            "Unmanned aircraft systems",
+            "Ground vehicles and robotics",
+            "Cross-domain autonomy",
+        ],
+        "capabilities": [
+            "Manufacturing, materials, and prototyping",
+            "Data engineering, analytics, and edge computing",
+        ],
+        "missions": ["Logistics and contested logistics"],
+        "website_url": "https://www.micron.com/us-expansion/va",
+        "contact_text": "Micron Manassas facility information",
+        "contact_phone": "703-396-1000",
+        "contact_email": "",
+        "contact_url": "https://www.micron.com/about/locations",
+        "sources": [
+            {
+                "title": "Micron Virginia manufacturing expansion and current operations",
+                "url": "https://www.micron.com/us-expansion/va",
+            },
+            {
+                "title": "Micron Manassas location and public contact information",
+                "url": "https://www.micron.com/about/locations",
+            },
+            {
+                "title": "Micron Manassas products and drone applications",
+                "url": (
+                    "https://www.micron.com/about/press/media-relations/press-kits/"
+                    "manassas-media-kit"
+                ),
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+    {
+        "name": "Wrap Technologies Norton Manufacturing Headquarters",
+        "record_type": "facility",
+        "short_description": (
+            "Norton manufacturing headquarters with active final assembly and a documented "
+            "roadmap for counter-UAS intercept products and autonomous platforms."
+        ),
+        "overview": (
+            "Wrap Technologies opened this 20,000-square-foot manufacturing headquarters in "
+            "September 2025. The company performs final assembly, testing, quality "
+            "verification, and shipping in Norton and identifies the site for development and "
+            "future assembly of its 1KC counter-drone cassette and autonomous products."
+        ),
+        "unmanned_systems_relevance": (
+            "Provides an active Virginia production, engineering, and test site within a "
+            "company developing counter-UAS and autonomous-platform products. The public "
+            "record describes the 1KC assembly line as intended rather than current volume "
+            "production."
+        ),
+        "activity_status": "active",
+        "current_activity": (
+            "Wrap's 2026 annual report confirms that the company completed its move to Norton "
+            "and performs final assembly, testing, quality verification, and shipping at the "
+            "facility while advancing counter-UAS programs."
+        ),
+        "activity_source_url": (
+            "https://ir.wrap.com/sec-filings/annual-reports/content/"
+            "0001140361-26-011401/0001140361-26-011401.pdf"
+        ),
+        "activity_last_verified_at": "2026-08-30",
+        "address_line": "182 Progress Way NE",
+        "city": "Norton",
+        "state": "VA",
+        "postal_code": "24273",
+        "latitude": 36.946661,
+        "longitude": -82.609510,
+        "location_precision": "exact",
+        "region": "Southwest Virginia",
+        "strategic_categories": [
+            "Companies and solution providers",
+            "Manufacturing and supply chain",
+            "Federal and defense customer access",
+            "Core unmanned-systems asset",
+        ],
+        "platform_domains": ["Counter-UAS", "Cross-domain autonomy"],
+        "capabilities": [
+            "Manufacturing, materials, and prototyping",
+            "Systems engineering and integration",
+            "Payloads and mission systems",
+        ],
+        "missions": ["Counter-UAS", "Public safety and emergency response"],
+        "website_url": (
+            "https://ir.wrap.com/news-events/press-releases/detail/352/"
+            "wrap-technologies-opens-new-virginia-facility-to-scale"
+        ),
+        "contact_text": "Wrap Technologies investor and public information",
+        "contact_phone": "800-583-2652",
+        "contact_email": "ir@wrap.com",
+        "contact_url": "https://ir.wrap.com/ir-resources/investor-faqs",
+        "sources": [
+            {
+                "title": "Wrap Norton manufacturing headquarters and counter-UAS roadmap",
+                "url": (
+                    "https://ir.wrap.com/news-events/press-releases/detail/352/"
+                    "wrap-technologies-opens-new-virginia-facility-to-scale"
+                ),
+            },
+            {
+                "title": "Wrap Norton manufacturing address and public contact information",
+                "url": "https://ir.wrap.com/ir-resources/investor-faqs",
+            },
+            {
+                "title": "Wrap 2026 annual report manufacturing and counter-UAS disclosure",
+                "url": (
+                    "https://ir.wrap.com/sec-filings/annual-reports/content/"
+                    "0001140361-26-011401/0001140361-26-011401.pdf"
+                ),
+            },
+        ],
+        "provenance": "curated-public-source",
+    },
+]
+
 CATALOG_RELATIONSHIPS = [
     ("Mid-Atlantic Aviation Partnership", "operates", "Virginia Tech Drone Park"),
     ("Mid-Atlantic Aviation Partnership", "operates", "MARS Unmanned Aircraft Systems Airfield"),
@@ -10146,6 +10408,11 @@ CATALOG_RELATIONSHIPS.extend(
         ),
         ("P1 Technologies Keltech Division", "manufactures-for", "Blue Vigil"),
         (
+            "Fulcrum Concepts",
+            "operates",
+            "Fulcrum Concepts Newport News Machine Shop",
+        ),
+        (
             "Virginia Innovation Partnership Corporation",
             "supports",
             "Virginia Smart Community Testbed",
@@ -10229,6 +10496,12 @@ def finalize_record(record):
         if not any(item["url"] == detail_source["url"] for item in record["sources"]):
             record["sources"].append(detail_source)
     record.update(detail)
+
+    if record["name"] in MANUFACTURING_FACILITY_ASSETS:
+        if MANUFACTURING_FACILITY_CATEGORY not in record["strategic_categories"]:
+            record["strategic_categories"].append(MANUFACTURING_FACILITY_CATEGORY)
+        if MANUFACTURING_CAPABILITY not in record["capabilities"]:
+            record["capabilities"].append(MANUFACTURING_CAPABILITY)
 
     for source_data in SOURCE_ENRICHMENT.get(record["name"], []):
         if not any(item["url"] == source_data["url"] for item in record["sources"]):
@@ -10937,6 +11210,11 @@ def validate(records, relationships):
         }.intersection(record["strategic_categories"])
         if len(role_categories) != 1:
             raise ValueError(f"Invalid ecosystem role classification: {record['name']}")
+        if record["name"] in MANUFACTURING_FACILITY_ASSETS:
+            if MANUFACTURING_FACILITY_CATEGORY not in record["strategic_categories"]:
+                raise ValueError(f"Missing manufacturing-facility category: {record['name']}")
+            if MANUFACTURING_CAPABILITY not in record["capabilities"]:
+                raise ValueError(f"Missing manufacturing capability: {record['name']}")
 
     relationship_assets = {
         asset_name
@@ -10953,6 +11231,13 @@ def validate(records, relationships):
             f"Unknown source-enrichment assets: {', '.join(sorted(unknown_source_enrichment))}"
         )
 
+    unknown_manufacturing_assets = MANUFACTURING_FACILITY_ASSETS - names
+    if unknown_manufacturing_assets:
+        raise ValueError(
+            "Unknown manufacturing-facility assets: "
+            + ", ".join(sorted(unknown_manufacturing_assets))
+        )
+
 
 def main():
     records = (
@@ -10963,6 +11248,7 @@ def main():
         + VERIFIED_UXS_ADDITIONS
         + VERIFIED_UXS_EXPANSION
         + VERIFIED_HAMPTON_ROADS_EXPANSION
+        + VERIFIED_MANUFACTURING_EXPANSION
     )
     records = [finalize_record(apply_location_override(record)) for record in records]
     records = apply_university_campus_locations(records)

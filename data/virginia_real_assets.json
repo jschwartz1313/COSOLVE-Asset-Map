@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-25",
+  "generated_at": "2026-08-30",
   "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, broad-based Virginia degree-granting institutions from the NCES IPEDS 2024 directory while excluding narrowly specialized health and ministry schools without documented unmanned-systems relevance, and a curated set of source-backed ecosystem records. Specific street and site locations are anchored to official public address sources and geocoded against the U.S. Census address ranges or named-site map data; locality points are retained when the public record does not identify the operating department or facility. Every record is also classified as either a core unmanned-systems asset with direct documented activity or a supporting ecosystem asset with a broader enabling role.",
-  "record_count": 494,
+  "record_count": 497,
   "records": [
     {
       "address_line": "29194 Parkway North",
@@ -18,7 +18,7 @@
       "longitude": -75.761047,
       "missions": [],
       "name": "Accomack County",
-      "overview": "Accomack County is an operational public-use airport listed by the FAA under identifier MFV. The Virginia airport sponsor directory classifies the facility as General Aviation Regional.",
+      "overview": "Accomack County is an operational public-use airport listed by the FAA under identifier MFV. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -113,7 +113,8 @@
       "address_line": "22 Enterprise Parkway, Suite 320",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment"
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Hampton",
       "contact_email": "info@adaptiveaero.com",
@@ -128,7 +129,7 @@
         "Logistics and contested logistics"
       ],
       "name": "Adaptive Aerospace Group",
-      "overview": "Hampton aerospace engineering company providing uncrewed-aircraft-system design and technical services. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Hampton aerospace engineering company providing uncrewed-aircraft-system design and technical services. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -162,7 +163,8 @@
       "address_line": "1100 Exploration Way, Suite 316M",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment"
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Hampton",
       "contact_email": "info@flyaac.com",
@@ -178,7 +180,7 @@
         "Logistics and contested logistics"
       ],
       "name": "Advanced Aircraft Company",
-      "overview": "Hampton developer and manufacturer of long-endurance hybrid-electric unmanned aircraft systems. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Hampton developer and manufacturer of long-endurance hybrid-electric unmanned aircraft systems. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
       "partnership_opportunities": "Product, engineering, and business inquiries can use the company's published Hampton contact information.",
       "platform_domains": [
         "Unmanned aircraft systems"
@@ -205,7 +207,8 @@
       "state": "VA",
       "strategic_categories": [
         "Companies and solution providers",
-        "Core unmanned-systems asset"
+        "Core unmanned-systems asset",
+        "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
       "website_url": "https://advancedaircraftcompany.com/"
@@ -267,7 +270,8 @@
       "address_line": "200 Technology Drive",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment"
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Christiansburg",
       "contact_email": "",
@@ -282,7 +286,7 @@
         "Logistics and contested logistics"
       ],
       "name": "Aeroprobe",
-      "overview": "Christiansburg aerospace company providing airflow measurement and advanced flight-test instrumentation. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Christiansburg aerospace company providing airflow measurement and advanced flight-test instrumentation. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -301,6 +305,10 @@
           "url": "https://www.aeroprobe.com/contact/"
         },
         {
+          "title": "VEDP profile of Aeroprobe's Christiansburg manufacturing operation",
+          "url": "https://www.vedp.org/news/aeroprobe-sets-companies-speed"
+        },
+        {
           "title": "Aeroprobe: About",
           "url": "https://www.aeroprobe.com/about-aeroprobe/"
         }
@@ -308,7 +316,8 @@
       "state": "VA",
       "strategic_categories": [
         "Companies and solution providers",
-        "Core unmanned-systems asset"
+        "Core unmanned-systems asset",
+        "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
       "website_url": "https://www.aeroprobe.com/about-aeroprobe/"
@@ -450,7 +459,8 @@
       "strategic_categories": [
         "Companies and solution providers",
         "Manufacturing and supply chain",
-        "Core unmanned-systems asset"
+        "Core unmanned-systems asset",
+        "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "Provides documented agricultural UAS platforms, software, or related services.",
       "website_url": "https://www.agricisioninc.com/"
@@ -566,7 +576,7 @@
       "longitude": -77.951815,
       "missions": [],
       "name": "Allan C Perkinson/Blackstone AAF",
-      "overview": "Allan C Perkinson/Blackstone AAF is an operational public-use airport listed by the FAA under identifier BKT. The Virginia airport sponsor directory classifies the facility as General Aviation Community.",
+      "overview": "Allan C Perkinson/Blackstone AAF is an operational public-use airport listed by the FAA under identifier BKT. The Virginia airport sponsor directory classifies the facility as Community Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -780,7 +790,8 @@
       "address_line": "11710 Plaza America Drive, Suite 200",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment"
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Reston",
       "contact_email": "",
@@ -796,7 +807,7 @@
         "Logistics and contested logistics"
       ],
       "name": "ANRA Technologies",
-      "overview": "Virginia-based developer of uncrewed traffic management, fleet operations, and airspace services. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Virginia-based developer of uncrewed traffic management, fleet operations, and airspace services. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
       "partnership_opportunities": "Organizations can request a consultation through ANRA's airspace-management page.",
       "platform_domains": [
         "Unmanned aircraft systems"
@@ -1096,7 +1107,8 @@
       "address_line": "752 Walker Road, Suite D",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment"
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Great Falls",
       "contact_email": "",
@@ -1111,7 +1123,7 @@
         "Logistics and contested logistics"
       ],
       "name": "ATA Aviation",
-      "overview": "Aviation systems and integration company leading work in Virginia's AAM test-site initiative. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Aviation systems and integration company leading work in Virginia's AAM test-site initiative. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -1263,7 +1275,8 @@
       "address_line": "9950 Wakeman Drive",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment"
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Manassas",
       "contact_email": "sales@aurora.aero",
@@ -1279,7 +1292,7 @@
         "Logistics and contested logistics"
       ],
       "name": "Aurora Flight Sciences",
-      "overview": "Aerospace company developing advanced aircraft and autonomous flight technologies in Manassas. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Aerospace company developing advanced aircraft and autonomous flight technologies in Manassas. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
       "partnership_opportunities": "Product, business-development, and general inquiries can use Aurora's published sales and headquarters contacts.",
       "platform_domains": [
         "Unmanned aircraft systems"
@@ -1514,7 +1527,8 @@
       "address_line": "172 East Main Street",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment"
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Salem",
       "contact_email": "recruiting@autonomousflight.us",
@@ -1530,7 +1544,7 @@
         "Logistics and contested logistics"
       ],
       "name": "Autonomous Flight Technologies",
-      "overview": "Salem developer of unmanned aircraft, avionics, counter-UAS products, and autonomous-flight technologies. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Salem developer of unmanned aircraft, avionics, counter-UAS products, and autonomous-flight technologies. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
       "partnership_opportunities": "Product, engineering, flight-service, and employment inquiries can use the company's published contact routes.",
       "platform_domains": [
         "Unmanned aircraft systems"
@@ -1855,7 +1869,7 @@
       "longitude": -80.019955,
       "missions": [],
       "name": "Blue Ridge",
-      "overview": "Blue Ridge is an operational public-use airport listed by the FAA under identifier MTV. The Virginia airport sponsor directory classifies the facility as General Aviation Regional.",
+      "overview": "Blue Ridge is an operational public-use airport listed by the FAA under identifier MTV. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -2032,7 +2046,8 @@
       "address_line": "45449 Severn Way, Suite 169",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment"
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Sterling",
       "contact_email": "",
@@ -2047,7 +2062,7 @@
         "Logistics and contested logistics"
       ],
       "name": "Blue Vigil",
-      "overview": "Virginia company developing tethered-drone power systems and autonomous aerial lighting for construction, public safety, utilities, and emergency scenes. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Virginia company developing tethered-drone power systems and autonomous aerial lighting for construction, public safety, utilities, and emergency scenes. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -2139,7 +2154,7 @@
       "longitude": -78.958968,
       "missions": [],
       "name": "Bridgewater Air Park",
-      "overview": "Bridgewater Air Park is an operational public-use airport listed by the FAA under identifier VBW. The Virginia airport sponsor directory classifies the facility as General Aviation Local Service.",
+      "overview": "Bridgewater Air Park is an operational public-use airport listed by the FAA under identifier VBW. The Virginia airport sponsor directory classifies the facility as Local Service.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -2323,7 +2338,7 @@
       "longitude": -79.016392,
       "missions": [],
       "name": "Brookneal/Campbell County",
-      "overview": "Brookneal/Campbell County is an operational public-use airport listed by the FAA under identifier 0V4. The Virginia airport sponsor directory classifies the facility as General Aviation Community.",
+      "overview": "Brookneal/Campbell County is an operational public-use airport listed by the FAA under identifier 0V4. The Virginia airport sponsor directory classifies the facility as Community Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -2373,7 +2388,7 @@
       "longitude": -77.793784,
       "missions": [],
       "name": "Brunswick County",
-      "overview": "Brunswick County is an operational public-use airport listed by the FAA under identifier LVL. The Virginia airport sponsor directory classifies the facility as General Aviation Local Service.",
+      "overview": "Brunswick County is an operational public-use airport listed by the FAA under identifier LVL. The Virginia airport sponsor directory classifies the facility as Local Service.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -3017,7 +3032,7 @@
       "longitude": -78.452347,
       "missions": [],
       "name": "Charlottesville-Albemarle",
-      "overview": "Charlottesville-Albemarle is an operational public-use airport listed by the FAA under identifier CHO. The Virginia airport sponsor directory classifies the facility as Air Carrier.",
+      "overview": "Charlottesville-Albemarle is an operational public-use airport listed by the FAA under identifier CHO. The Virginia airport sponsor directory classifies the facility as Commercial Service.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -3058,7 +3073,7 @@
         "Operations, maintenance, and sustainment"
       ],
       "city": "Chase City",
-      "contact_email": "cctownmanager@gmail.com",
+      "contact_email": "cctownmanager@chasecity.org",
       "contact_phone": "434-372-5136",
       "contact_text": "Airport public contact: Dusty Forbes, Town Manager",
       "contact_url": "https://doav.virginia.gov/airport_sponsors/",
@@ -3067,7 +3082,7 @@
       "longitude": -78.501556,
       "missions": [],
       "name": "Chase City Muni",
-      "overview": "Chase City Muni is an operational public-use airport listed by the FAA under identifier CXE. The Virginia airport sponsor directory classifies the facility as General Aviation Local Service.",
+      "overview": "Chase City Muni is an operational public-use airport listed by the FAA under identifier CXE. The Virginia airport sponsor directory classifies the facility as Local Service.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -3169,7 +3184,7 @@
       "longitude": -76.320658,
       "missions": [],
       "name": "Chesapeake Rgnl",
-      "overview": "Chesapeake Rgnl is an operational public-use airport listed by the FAA under identifier CPK. The Virginia airport sponsor directory classifies the facility as Reliever.",
+      "overview": "Chesapeake Rgnl is an operational public-use airport listed by the FAA under identifier CPK. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -3974,7 +3989,7 @@
       "longitude": -78.098477,
       "missions": [],
       "name": "Crewe Muni",
-      "overview": "Crewe Muni is an operational public-use airport listed by the FAA under identifier W81. The Virginia airport sponsor directory classifies the facility as General Aviation Local Service.",
+      "overview": "Crewe Muni is an operational public-use airport listed by the FAA under identifier W81. The Virginia airport sponsor directory classifies the facility as Community Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -4134,7 +4149,7 @@
       "longitude": -77.859641,
       "missions": [],
       "name": "Culpeper Rgnl",
-      "overview": "Culpeper Rgnl is an operational public-use airport listed by the FAA under identifier CJR. The Virginia airport sponsor directory classifies the facility as General Aviation Regional.",
+      "overview": "Culpeper Rgnl is an operational public-use airport listed by the FAA under identifier CJR. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -4428,7 +4443,7 @@
       "longitude": -79.336253,
       "missions": [],
       "name": "Danville Rgnl",
-      "overview": "Danville Rgnl is an operational public-use airport listed by the FAA under identifier DAN. The Virginia airport sponsor directory classifies the facility as General Aviation Regional.",
+      "overview": "Danville Rgnl is an operational public-use airport listed by the FAA under identifier DAN. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -4737,7 +4752,8 @@
       "activity_status": "active",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment"
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Richmond",
       "contact_email": "",
@@ -4753,7 +4769,7 @@
         "Logistics and contested logistics"
       ],
       "name": "Dominion Energy UAS Program",
-      "overview": "Utility UAS activity supporting infrastructure inspection and Virginia advanced-flight demonstrations. Public sources support its classification as a Virginia program. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Utility UAS activity supporting infrastructure inspection and Virginia advanced-flight demonstrations. Public sources support its classification as a Virginia program. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -4901,7 +4917,8 @@
       "address_line": "160 Newtown Road, Suite 500",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment"
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Virginia Beach",
       "contact_email": "",
@@ -4917,7 +4934,7 @@
         "Logistics and contested logistics"
       ],
       "name": "DroneUp",
-      "overview": "Virginia Beach-founded company now focused on airspace management, regulatory enablement, and autonomous UAS operations technology. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Virginia Beach-founded company now focused on airspace management, regulatory enablement, and autonomous UAS operations technology. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
       "partnership_opportunities": "Airspace-management, UAS-operations, and technology inquiries can use DroneUp's current partnership form.",
       "platform_domains": [
         "Unmanned aircraft systems"
@@ -4957,7 +4974,8 @@
       "address_line": "1402 Airport Road",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment"
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Bridgewater",
       "contact_email": "",
@@ -4972,7 +4990,7 @@
         "Logistics and contested logistics"
       ],
       "name": "Dynamic Aviation",
-      "overview": "Virginia aviation operator and integrator with aircraft modification, mission, and fleet capabilities. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Virginia aviation operator and integrator with aircraft modification, mission, and fleet capabilities. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -5068,7 +5086,8 @@
       "address_line": "7505 Warwick Boulevard",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment"
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Newport News",
       "contact_email": "",
@@ -5083,7 +5102,7 @@
         "Logistics and contested logistics"
       ],
       "name": "Eagle Aviation Technologies",
-      "overview": "Newport News aerospace design, manufacturing, and test company supporting manned and unmanned platforms and prototype aircraft systems. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Newport News aerospace design, manufacturing, and test company supporting manned and unmanned platforms and prototype aircraft systems. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -5100,12 +5119,17 @@
         {
           "title": "Eagle Aviation Technologies contact information",
           "url": "https://eagleaviationtech.com/contact-us"
+        },
+        {
+          "title": "Eagle Technologies Newport News advanced-manufacturing facility tour",
+          "url": "https://eagleaviationtech.com/news-and-updates/f/eagle-technologies-welcomes-the-vma-for-a-facility-tour"
         }
       ],
       "state": "VA",
       "strategic_categories": [
         "Companies and solution providers",
-        "Core unmanned-systems asset"
+        "Core unmanned-systems asset",
+        "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
       "website_url": "https://eagleaviationtech.com/about-us-1"
@@ -5125,7 +5149,7 @@
       "longitude": -78.94444,
       "missions": [],
       "name": "Eagle's Nest",
-      "overview": "Eagle's Nest is an operational public-use airport listed by the FAA under identifier W13. The Virginia airport sponsor directory classifies the facility as General Aviation Local Service.",
+      "overview": "Eagle's Nest is an operational public-use airport listed by the FAA under identifier W13. The Virginia airport sponsor directory classifies the facility as Local Service.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -5451,7 +5475,7 @@
       "longitude": -77.482751,
       "missions": [],
       "name": "Emporia-Greensville Rgnl",
-      "overview": "Emporia-Greensville Rgnl is an operational public-use airport listed by the FAA under identifier EMV. The Virginia airport sponsor directory classifies the facility as General Aviation Regional.",
+      "overview": "Emporia-Greensville Rgnl is an operational public-use airport listed by the FAA under identifier EMV. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -5791,7 +5815,8 @@
       "strategic_categories": [
         "Companies and solution providers",
         "Manufacturing and supply chain",
-        "Core unmanned-systems asset"
+        "Core unmanned-systems asset",
+        "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "Provides documented maritime manufacturing, modular construction, systems integration, and sustainment capacity for unmanned surface vessels.",
       "website_url": "https://fairlead.com/"
@@ -5811,7 +5836,7 @@
       "longitude": -79.122248,
       "missions": [],
       "name": "Falwell",
-      "overview": "Falwell is an operational public-use airport listed by the FAA under identifier W24. The Virginia airport sponsor directory classifies the facility as General Aviation Local Service.",
+      "overview": "Falwell is an operational public-use airport listed by the FAA under identifier W24. The Virginia airport sponsor directory classifies the facility as Local Service.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -5861,7 +5886,7 @@
       "longitude": -78.437808,
       "missions": [],
       "name": "Farmville Rgnl",
-      "overview": "Farmville Rgnl is an operational public-use airport listed by the FAA under identifier FVX. The Virginia airport sponsor directory classifies the facility as General Aviation Regional.",
+      "overview": "Farmville Rgnl is an operational public-use airport listed by the FAA under identifier FVX. The Virginia airport sponsor directory classifies the facility as Community Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -6280,7 +6305,7 @@
       "longitude": -76.902138,
       "missions": [],
       "name": "Franklin Rgnl",
-      "overview": "Franklin Rgnl is an operational public-use airport listed by the FAA under identifier FKN. The Virginia airport sponsor directory classifies the facility as General Aviation Community.",
+      "overview": "Franklin Rgnl is an operational public-use airport listed by the FAA under identifier FKN. The Virginia airport sponsor directory classifies the facility as Community Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -6482,7 +6507,7 @@
       "longitude": -78.253376,
       "missions": [],
       "name": "Front Royal-Warren County",
-      "overview": "Front Royal-Warren County is an operational public-use airport listed by the FAA under identifier FRR. The Virginia airport sponsor directory classifies the facility as General Aviation Community.",
+      "overview": "Front Royal-Warren County is an operational public-use airport listed by the FAA under identifier FRR. The Virginia airport sponsor directory classifies the facility as Community Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -6521,7 +6546,8 @@
       "address_line": "1776 Patriot Way",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment"
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Mattaponi",
       "contact_email": "",
@@ -6536,7 +6562,7 @@
         "Logistics and contested logistics"
       ],
       "name": "Fulcrum Concepts",
-      "overview": "Virginia UAS engineering, integration, fabrication, flight-test, and training company. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Virginia UAS engineering, integration, fabrication, flight-test, and training company. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -6566,6 +6592,63 @@
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
       "website_url": "https://fulcrumconceptsllc.com/contact/"
+    },
+    {
+      "activity_last_verified_at": "2026-08-30",
+      "activity_source_url": "https://fulcrumconceptsllc.com/about/manufacturing-and-production/",
+      "activity_status": "active",
+      "address_line": "737 Industrial Park Drive",
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "city": "Newport News",
+      "contact_email": "info@fulcrumconceptsllc.com",
+      "contact_phone": "804-785-1017",
+      "contact_text": "Fulcrum Concepts public inquiries",
+      "contact_url": "https://fulcrumconceptsllc.com/about/our-facilities/",
+      "current_activity": "Fulcrum publicly documents the Newport News machine shop as its centralized in-house machining facility and marked its opening with a January 2026 ribbon cutting.",
+      "latitude": 37.169518,
+      "location_precision": "exact",
+      "longitude": -76.53349,
+      "missions": [
+        "Logistics and contested logistics",
+        "Training and experimentation"
+      ],
+      "name": "Fulcrum Concepts Newport News Machine Shop",
+      "overview": "Fulcrum Concepts opened this 7,490-square-foot machine shop in January 2026. The facility uses five-axis and three-axis CNC equipment and lathes to produce high-precision aerospace components, supporting the company's aircraft integration, fabrication, and uncrewed-systems work.",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "postal_code": "23608",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Hampton Roads",
+      "short_description": "Newport News aerospace machine shop providing in-house CNC fabrication and production capacity for Fulcrum Concepts.",
+      "sources": [
+        {
+          "title": "Fulcrum Concepts manufacturing and production capabilities",
+          "url": "https://fulcrumconceptsllc.com/about/manufacturing-and-production/"
+        },
+        {
+          "title": "Fulcrum Concepts Virginia facilities and public contact information",
+          "url": "https://fulcrumconceptsllc.com/about/our-facilities/"
+        },
+        {
+          "title": "Fulcrum Concepts Newport News machine shop address and opening",
+          "url": "https://fulcrumconceptsllc.com/news/fulcrum-concepts-opens-new-machine-shop-in-newport-news-expanding-manufacturing-capabilities/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset",
+        "Manufacturing facilities"
+      ],
+      "unmanned_systems_relevance": "Provides documented Virginia aerospace-component fabrication capacity within a company that designs, integrates, fabricates, tests, and supports uncrewed aircraft systems. The public factory sources describe aerospace production generally rather than a dedicated UAS-only line.",
+      "website_url": "https://fulcrumconceptsllc.com/about/manufacturing-and-production/"
     },
     {
       "activity_last_verified_at": "2026-08-25",
@@ -7397,7 +7480,7 @@
       "longitude": -78.165782,
       "missions": [],
       "name": "Gordonsville Muni",
-      "overview": "Gordonsville Muni is an operational public-use airport listed by the FAA under identifier GVE. The Virginia airport sponsor directory classifies the facility as General Aviation Local Service.",
+      "overview": "Gordonsville Muni is an operational public-use airport listed by the FAA under identifier GVE. The Virginia airport sponsor directory classifies the facility as Local Service.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -7713,7 +7796,7 @@
       "longitude": -76.451282,
       "missions": [],
       "name": "Hampton Roads Exec",
-      "overview": "Hampton Roads Exec is an operational public-use airport listed by the FAA under identifier PVG. The Virginia airport sponsor directory classifies the facility as Reliever.",
+      "overview": "Hampton Roads Exec is an operational public-use airport listed by the FAA under identifier PVG. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -7990,7 +8073,7 @@
       "longitude": -77.43664,
       "missions": [],
       "name": "Hanover County Muni",
-      "overview": "Hanover County Muni is an operational public-use airport listed by the FAA under identifier OFP. The Virginia airport sponsor directory classifies the facility as Reliever.",
+      "overview": "Hanover County Muni is an operational public-use airport listed by the FAA under identifier OFP. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -8344,7 +8427,8 @@
       "address_line": "45240 Business Court, Suite 400",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment"
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Dulles",
       "contact_email": "info@hevenaerotech.com",
@@ -8359,7 +8443,7 @@
         "Logistics and contested logistics"
       ],
       "name": "Heven AeroTech Headquarters",
-      "overview": "Virginia headquarters for a developer of hydrogen-powered and other unmanned aerial systems. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Virginia headquarters for a developer of hydrogen-powered and other unmanned aerial systems. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -8436,7 +8520,8 @@
         "Manufacturing and supply chain",
         "Test and operational environments",
         "Companies and solution providers",
-        "Core unmanned-systems asset"
+        "Core unmanned-systems asset",
+        "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "Provides documented Virginia production, integration, propulsion, and flight-test capacity for hydrogen-powered and tactical uncrewed aircraft.",
       "website_url": "https://hevenaerotech.com/company/"
@@ -8502,7 +8587,8 @@
       "strategic_categories": [
         "Companies and solution providers",
         "Manufacturing and supply chain",
-        "Core unmanned-systems asset"
+        "Core unmanned-systems asset",
+        "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "Provides maritime engineering, shipbuilding, integration, or robotic-system capacity.",
       "website_url": "https://www.hii.com/news/unmanned-systems-center-of-excellence"
@@ -8620,7 +8706,7 @@
       "longitude": -76.446456,
       "missions": [],
       "name": "Hummel Fld",
-      "overview": "Hummel Fld is an operational public-use airport listed by the FAA under identifier W75. The Virginia airport sponsor directory classifies the facility as General Aviation Community.",
+      "overview": "Hummel Fld is an operational public-use airport listed by the FAA under identifier W75. The Virginia airport sponsor directory classifies the facility as Community Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -8659,7 +8745,8 @@
       "address_line": "2873 Crusader Circle",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment"
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Virginia Beach",
       "contact_email": "info@hush.aero",
@@ -8674,7 +8761,7 @@
         "Logistics and contested logistics"
       ],
       "name": "HUSH Aerospace",
-      "overview": "Virginia company providing UAS product design, prototyping, analysis, and manufacturing. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Virginia company providing UAS product design, prototyping, analysis, and manufacturing. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -8691,12 +8778,17 @@
         {
           "title": "HUSH Aerospace contact information",
           "url": "https://www.hush.aero/contact-hush"
+        },
+        {
+          "title": "HUSH Aerospace Virginia Beach design and manufacturing facility",
+          "url": "https://www.hush.aero/what-we-do"
         }
       ],
       "state": "VA",
       "strategic_categories": [
         "Companies and solution providers",
-        "Core unmanned-systems asset"
+        "Core unmanned-systems asset",
+        "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
       "website_url": "https://www.vedp.org/news/home-business-more-400-years"
@@ -8860,7 +8952,7 @@
       "longitude": -79.833892,
       "missions": [],
       "name": "Ingalls Fld",
-      "overview": "Ingalls Fld is an operational public-use airport listed by the FAA under identifier HSP. The Virginia airport sponsor directory classifies the facility as General Aviation Regional.",
+      "overview": "Ingalls Fld is an operational public-use airport listed by the FAA under identifier HSP. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -9406,7 +9498,7 @@
       "longitude": -77.745905,
       "missions": [],
       "name": "Lake Anna",
-      "overview": "Lake Anna is an operational public-use airport listed by the FAA under identifier 7W4. The Virginia airport sponsor directory classifies the facility as General Aviation Local Service.",
+      "overview": "Lake Anna is an operational public-use airport listed by the FAA under identifier 7W4. The Virginia airport sponsor directory classifies the facility as Local Service.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -9456,7 +9548,7 @@
       "longitude": -78.559732,
       "missions": [],
       "name": "Lake Country Rgnl",
-      "overview": "Lake Country Rgnl is an operational public-use airport listed by the FAA under identifier W63. The Virginia airport sponsor directory classifies the facility as General Aviation Community.",
+      "overview": "Lake Country Rgnl is an operational public-use airport listed by the FAA under identifier W63. The Virginia airport sponsor directory classifies the facility as Community Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -9642,7 +9734,7 @@
       "longitude": -83.217851,
       "missions": [],
       "name": "Lee County",
-      "overview": "Lee County is an operational public-use airport listed by the FAA under identifier 0VG. The Virginia airport sponsor directory classifies the facility as General Aviation Community.",
+      "overview": "Lee County is an operational public-use airport listed by the FAA under identifier 0VG. The Virginia airport sponsor directory classifies the facility as Community Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -9692,7 +9784,7 @@
       "longitude": -77.557502,
       "missions": [],
       "name": "Leesburg Exec",
-      "overview": "Leesburg Exec is an operational public-use airport listed by the FAA under identifier JYO. The Virginia airport sponsor directory classifies the facility as Reliever.",
+      "overview": "Leesburg Exec is an operational public-use airport listed by the FAA under identifier JYO. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -10303,7 +10395,7 @@
       "longitude": -82.529788,
       "missions": [],
       "name": "Lonesome Pine",
-      "overview": "Lonesome Pine is an operational public-use airport listed by the FAA under identifier LNP. The Virginia airport sponsor directory classifies the facility as General Aviation Regional.",
+      "overview": "Lonesome Pine is an operational public-use airport listed by the FAA under identifier LNP. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -10565,7 +10657,7 @@
       "longitude": -77.970129,
       "missions": [],
       "name": "Louisa County/Freeman Fld",
-      "overview": "Louisa County/Freeman Fld is an operational public-use airport listed by the FAA under identifier LKU. The Virginia airport sponsor directory classifies the facility as General Aviation Regional.",
+      "overview": "Louisa County/Freeman Fld is an operational public-use airport listed by the FAA under identifier LKU. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -10615,7 +10707,7 @@
       "longitude": -78.185114,
       "missions": [],
       "name": "Lunenburg County",
-      "overview": "Lunenburg County is an operational public-use airport listed by the FAA under identifier W31. The Virginia airport sponsor directory classifies the facility as General Aviation Local Service.",
+      "overview": "Lunenburg County is an operational public-use airport listed by the FAA under identifier W31. The Virginia airport sponsor directory classifies the facility as Local Service.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -10665,7 +10757,7 @@
       "longitude": -78.500838,
       "missions": [],
       "name": "Luray Caverns",
-      "overview": "Luray Caverns is an operational public-use airport listed by the FAA under identifier LUA. The Virginia airport sponsor directory classifies the facility as General Aviation Community.",
+      "overview": "Luray Caverns is an operational public-use airport listed by the FAA under identifier LUA. The Virginia airport sponsor directory classifies the facility as Community Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -10810,16 +10902,16 @@
         "Operations, maintenance, and sustainment"
       ],
       "city": "Lynchburg",
-      "contact_email": "andrew.lagala@lynchburgva.gov",
+      "contact_email": "cedric.simon@lynchburgva.gov",
       "contact_phone": "434-455-6089 ext. 1",
-      "contact_text": "Airport public contact: Andrew LaGala, Airport Director",
+      "contact_text": "Airport public contact: Cedric Simon, Airport Director",
       "contact_url": "https://doav.virginia.gov/airport_sponsors/",
       "latitude": 37.325396,
       "location_precision": "exact",
       "longitude": -79.201225,
       "missions": [],
       "name": "Lynchburg Rgnl/Preston Glenn Fld",
-      "overview": "Lynchburg Rgnl/Preston Glenn Fld is an operational public-use airport listed by the FAA under identifier LYH. The Virginia airport sponsor directory classifies the facility as Air Carrier.",
+      "overview": "Lynchburg Rgnl/Preston Glenn Fld is an operational public-use airport listed by the FAA under identifier LYH. The Virginia airport sponsor directory classifies the facility as Commercial Service.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -11298,7 +11390,8 @@
       "strategic_categories": [
         "Companies and solution providers",
         "Manufacturing and supply chain",
-        "Core unmanned-systems asset"
+        "Core unmanned-systems asset",
+        "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "Provides Virginia-based sonar products, integration interfaces, training, and support directly applicable to autonomous and remotely operated undersea vehicles.",
       "website_url": "https://www.marinesonic.com/"
@@ -11606,7 +11699,7 @@
       "longitude": -78.054475,
       "missions": [],
       "name": "Mecklenburg-Brunswick Rgnl",
-      "overview": "Mecklenburg-Brunswick Rgnl is an operational public-use airport listed by the FAA under identifier AVC. The Virginia airport sponsor directory classifies the facility as General Aviation Regional.",
+      "overview": "Mecklenburg-Brunswick Rgnl is an operational public-use airport listed by the FAA under identifier AVC. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -11640,6 +11733,63 @@
       ],
       "unmanned_systems_relevance": "Mecklenburg-Brunswick Rgnl is included as public aviation infrastructure serving South Hill. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "activity_last_verified_at": "2026-08-30",
+      "activity_source_url": "https://www.micron.com/us-expansion/va",
+      "activity_status": "active",
+      "address_line": "9600 Godwin Drive",
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "city": "Manassas",
+      "contact_email": "",
+      "contact_phone": "703-396-1000",
+      "contact_text": "Micron Manassas facility information",
+      "contact_url": "https://www.micron.com/about/locations",
+      "current_activity": "Micron began manufacturing 1-alpha DRAM at the Manassas fab in May 2026 as part of a continuing expansion and modernization program.",
+      "latitude": 38.746371,
+      "location_precision": "exact",
+      "longitude": -77.513223,
+      "missions": [
+        "Logistics and contested logistics"
+      ],
+      "name": "Micron Manassas Semiconductor Fabrication Plant",
+      "overview": "Micron's Fab 6 is an active 300-millimeter semiconductor manufacturing and testing site. Micron identifies the Manassas plant's long-lifecycle memory as supporting automotive, defense, aerospace, industrial, networking, drone, and autonomous-vehicle applications.",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "postal_code": "20110",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Northern Virginia",
+      "short_description": "Manassas semiconductor fabrication plant producing long-lifecycle memory used in drones, autonomous vehicles, aerospace, defense, and industrial systems.",
+      "sources": [
+        {
+          "title": "Micron Virginia manufacturing expansion and current operations",
+          "url": "https://www.micron.com/us-expansion/va"
+        },
+        {
+          "title": "Micron Manassas location and public contact information",
+          "url": "https://www.micron.com/about/locations"
+        },
+        {
+          "title": "Micron Manassas products and drone applications",
+          "url": "https://www.micron.com/about/press/media-relations/press-kits/manassas-media-kit"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Manufacturing and supply chain",
+        "Physical infrastructure and logistics",
+        "Supporting ecosystem asset",
+        "Manufacturing facilities"
+      ],
+      "unmanned_systems_relevance": "Provides domestic memory-component manufacturing for drones and autonomous systems. It is classified as supporting infrastructure because the plant serves multiple markets and is not dedicated exclusively to uncrewed platforms.",
+      "website_url": "https://www.micron.com/us-expansion/va"
     },
     {
       "activity_last_verified_at": "2026-08-21",
@@ -11818,7 +11968,7 @@
         "Operations, maintenance, and sustainment"
       ],
       "city": "Mattaponi",
-      "contact_email": "manager@fly-fyj.com",
+      "contact_email": "mpramanager@fly-fyj.com",
       "contact_phone": "804-785-9725",
       "contact_text": "Airport public contact: Joel Mooney, Airport Manager",
       "contact_url": "https://doav.virginia.gov/airport_sponsors/",
@@ -11827,7 +11977,7 @@
       "longitude": -76.762752,
       "missions": [],
       "name": "Middle Peninsula Rgnl",
-      "overview": "Middle Peninsula Rgnl is an operational public-use airport listed by the FAA under identifier FYJ. The Virginia airport sponsor directory classifies the facility as General Aviation Regional.",
+      "overview": "Middle Peninsula Rgnl is an operational public-use airport listed by the FAA under identifier FYJ. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -11994,7 +12144,7 @@
       "longitude": -81.34995,
       "missions": [],
       "name": "Mountain Empire",
-      "overview": "Mountain Empire is an operational public-use airport listed by the FAA under identifier MKJ. The Virginia airport sponsor directory classifies the facility as General Aviation Community.",
+      "overview": "Mountain Empire is an operational public-use airport listed by the FAA under identifier MKJ. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -13326,7 +13476,7 @@
       "longitude": -77.126561,
       "missions": [],
       "name": "New Kent County",
-      "overview": "New Kent County is an operational public-use airport listed by the FAA under identifier W96. The Virginia airport sponsor directory classifies the facility as General Aviation Community.",
+      "overview": "New Kent County is an operational public-use airport listed by the FAA under identifier W96. The Virginia airport sponsor directory classifies the facility as Community Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -13376,7 +13526,7 @@
       "longitude": -79.335903,
       "missions": [],
       "name": "New London",
-      "overview": "New London is an operational public-use airport listed by the FAA under identifier W90. The Virginia airport sponsor directory classifies the facility as General Aviation Local Service.",
+      "overview": "New London is an operational public-use airport listed by the FAA under identifier W90. The Virginia airport sponsor directory classifies the facility as Local Service.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -13426,7 +13576,7 @@
       "longitude": -78.708499,
       "missions": [],
       "name": "New Market",
-      "overview": "New Market is an operational public-use airport listed by the FAA under identifier 8W2. The Virginia airport sponsor directory classifies the facility as General Aviation Local Service.",
+      "overview": "New Market is an operational public-use airport listed by the FAA under identifier 8W2. The Virginia airport sponsor directory classifies the facility as Local Service.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -13568,7 +13718,7 @@
       "longitude": -80.678483,
       "missions": [],
       "name": "New River Valley",
-      "overview": "New River Valley is an operational public-use airport listed by the FAA under identifier PSK. The Virginia airport sponsor directory classifies the facility as General Aviation Regional.",
+      "overview": "New River Valley is an operational public-use airport listed by the FAA under identifier PSK. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -13877,7 +14027,8 @@
       "strategic_categories": [
         "Companies and solution providers",
         "Manufacturing and supply chain",
-        "Core unmanned-systems asset"
+        "Core unmanned-systems asset",
+        "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "Provides maritime engineering, shipbuilding, integration, or robotic-system capacity.",
       "website_url": "https://www.hii.com/company-overview"
@@ -13897,7 +14048,7 @@
       "longitude": -76.492974,
       "missions": [],
       "name": "Newport News/Williamsburg Intl",
-      "overview": "Newport News/Williamsburg Intl is an operational public-use airport listed by the FAA under identifier PHF. The Virginia airport sponsor directory classifies the facility as Air Carrier.",
+      "overview": "Newport News/Williamsburg Intl is an operational public-use airport listed by the FAA under identifier PHF. The Virginia airport sponsor directory classifies the facility as Commercial Service.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -14090,7 +14241,7 @@
       "longitude": -76.198867,
       "missions": [],
       "name": "Norfolk Intl",
-      "overview": "Norfolk Intl is an operational public-use airport listed by the FAA under identifier ORF. The Virginia airport sponsor directory classifies the facility as Air Carrier.",
+      "overview": "Norfolk Intl is an operational public-use airport listed by the FAA under identifier ORF. The Virginia airport sponsor directory classifies the facility as Commercial Service.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -15161,7 +15312,7 @@
       "longitude": -78.045624,
       "missions": [],
       "name": "Orange County",
-      "overview": "Orange County is an operational public-use airport listed by the FAA under identifier OMH. The Virginia airport sponsor directory classifies the facility as General Aviation Community.",
+      "overview": "Orange County is an operational public-use airport listed by the FAA under identifier OMH. The Virginia airport sponsor directory classifies the facility as Community Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -15293,7 +15444,8 @@
       "strategic_categories": [
         "Research and technical depth",
         "Manufacturing and supply chain",
-        "Supporting ecosystem asset"
+        "Supporting ecosystem asset",
+        "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "Provides advanced manufacturing, modeling, sensing, communications, or prototyping capacity that enables unmanned-system development and scale-up.",
       "website_url": "https://www.p1tec.com/"
@@ -15476,7 +15628,8 @@
       "address_line": "1000 Research Park Boulevard, Suite 106",
       "capabilities": [
         "Autonomy and artificial intelligence",
-        "Systems engineering and integration"
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Charlottesville",
       "contact_email": "",
@@ -16374,7 +16527,8 @@
       "address_line": "9617 Center Street",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment"
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Manassas",
       "contact_email": "",
@@ -16390,7 +16544,7 @@
         "Logistics and contested logistics"
       ],
       "name": "RapidFlight UAS Manufacturing Headquarters",
-      "overview": "Manassas headquarters and digital manufacturing facility for rapidly produced unmanned aircraft systems. Public sources support its classification as a Virginia facility. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Manassas headquarters and digital manufacturing facility for rapidly produced unmanned aircraft systems. Public sources support its classification as a Virginia facility. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
       "partnership_opportunities": "Current inquiries about the acquired RapidFlight technology and assets should be directed to AEVEX rather than the former standalone RapidFlight operation.",
       "platform_domains": [
         "Unmanned aircraft systems"
@@ -16417,7 +16571,8 @@
       "state": "VA",
       "strategic_categories": [
         "Companies and solution providers",
-        "Core unmanned-systems asset"
+        "Core unmanned-systems asset",
+        "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
       "website_url": "https://www.prnewswire.com/news-releases/rapidflight-celebrates-grand-opening-of-uas-3d-manufacturing-headquarters-in-manassas-virginia-301884344.html"
@@ -16676,7 +16831,7 @@
       "longitude": -77.524836,
       "missions": [],
       "name": "Richmond Exec/Chesterfield County",
-      "overview": "Richmond Exec/Chesterfield County is an operational public-use airport listed by the FAA under identifier FCI. The Virginia airport sponsor directory classifies the facility as Reliever.",
+      "overview": "Richmond Exec/Chesterfield County is an operational public-use airport listed by the FAA under identifier FCI. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -16726,7 +16881,7 @@
       "longitude": -77.319741,
       "missions": [],
       "name": "Richmond Intl",
-      "overview": "Richmond Intl is an operational public-use airport listed by the FAA under identifier RIC. The Virginia airport sponsor directory classifies the facility as Air Carrier.",
+      "overview": "Richmond Intl is an operational public-use airport listed by the FAA under identifier RIC. The Virginia airport sponsor directory classifies the facility as Commercial Service.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -17066,16 +17221,16 @@
         "Operations, maintenance, and sustainment"
       ],
       "city": "Roanoke",
-      "contact_email": "billiejo.nipper@flyroa.com",
-      "contact_phone": "540-362-1999 ext. 260",
-      "contact_text": "Airport public contact: Billie Jo Nipper, Operations Manager",
+      "contact_email": "david.tickner@flyroa.com",
+      "contact_phone": "540-362-1999 ext. 238",
+      "contact_text": "Airport public contact: David Tickner, Airport Planner",
       "contact_url": "https://doav.virginia.gov/airport_sponsors/",
       "latitude": 37.32548,
       "location_precision": "exact",
       "longitude": -79.97542,
       "missions": [],
       "name": "Roanoke/Blacksburg Rgnl (Woodrum Fld)",
-      "overview": "Roanoke/Blacksburg Rgnl (Woodrum Fld) is an operational public-use airport listed by the FAA under identifier ROA. The Virginia airport sponsor directory classifies the facility as Air Carrier.",
+      "overview": "Roanoke/Blacksburg Rgnl (Woodrum Fld) is an operational public-use airport listed by the FAA under identifier ROA. The Virginia airport sponsor directory classifies the facility as Commercial Service.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -17221,7 +17376,8 @@
       "address_line": "33531 Chincoteague Road",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment"
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Wallops Island",
       "contact_email": "",
@@ -17236,7 +17392,7 @@
         "Logistics and contested logistics"
       ],
       "name": "Sentinel Robotic Solutions",
-      "overview": "Wallops-based small business supporting UAS engineering, operations, training, and test activities. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Wallops-based small business supporting UAS engineering, operations, training, and test activities. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -17282,7 +17438,7 @@
       "longitude": -77.449243,
       "missions": [],
       "name": "Shannon",
-      "overview": "Shannon is an operational public-use airport listed by the FAA under identifier EZF. The Virginia airport sponsor directory classifies the facility as General Aviation Community.",
+      "overview": "Shannon is an operational public-use airport listed by the FAA under identifier EZF. The Virginia airport sponsor directory classifies the facility as Community Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -17495,7 +17651,7 @@
       "longitude": -78.896447,
       "missions": [],
       "name": "Shenandoah Valley Rgnl",
-      "overview": "Shenandoah Valley Rgnl is an operational public-use airport listed by the FAA under identifier SHD. The Virginia airport sponsor directory classifies the facility as Air Carrier.",
+      "overview": "Shenandoah Valley Rgnl is an operational public-use airport listed by the FAA under identifier SHD. The Virginia airport sponsor directory classifies the facility as Commercial Service.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -17606,7 +17762,7 @@
       "longitude": -79.592475,
       "missions": [],
       "name": "Smith Mountain Lake",
-      "overview": "Smith Mountain Lake is an operational public-use airport listed by the FAA under identifier W91. The Virginia airport sponsor directory classifies the facility as General Aviation Local Service.",
+      "overview": "Smith Mountain Lake is an operational public-use airport listed by the FAA under identifier W91. The Virginia airport sponsor directory classifies the facility as Local Service.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -18267,7 +18423,7 @@
       "longitude": -76.599625,
       "missions": [],
       "name": "Suffolk Exec",
-      "overview": "Suffolk Exec is an operational public-use airport listed by the FAA under identifier SFQ. The Virginia airport sponsor directory classifies the facility as General Aviation Regional.",
+      "overview": "Suffolk Exec is an operational public-use airport listed by the FAA under identifier SFQ. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -18444,16 +18600,16 @@
         "Operations, maintenance, and sustainment"
       ],
       "city": "Tangier",
-      "contact_email": "robert.baechtel@gmail.com",
-      "contact_phone": "757-891-2244",
-      "contact_text": "Airport public contact: Rob Baechtel, Airport Manager",
+      "contact_email": "townoffice@tangiervirginia.org",
+      "contact_phone": "757-891-2438",
+      "contact_text": "Airport public contact: James Eskridge, Town Manager",
       "contact_url": "https://doav.virginia.gov/airport_sponsors/",
       "latitude": 37.825873,
       "location_precision": "exact",
       "longitude": -75.997664,
       "missions": [],
       "name": "Tangier Island",
-      "overview": "Tangier Island is an operational public-use airport listed by the FAA under identifier TGI. The Virginia airport sponsor directory classifies the facility as General Aviation Community.",
+      "overview": "Tangier Island is an operational public-use airport listed by the FAA under identifier TGI. The Virginia airport sponsor directory classifies the facility as Community Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -18503,7 +18659,7 @@
       "longitude": -76.894122,
       "missions": [],
       "name": "Tappahannock/Essex County",
-      "overview": "Tappahannock/Essex County is an operational public-use airport listed by the FAA under identifier XSA. The Virginia airport sponsor directory classifies the facility as General Aviation Regional.",
+      "overview": "Tappahannock/Essex County is an operational public-use airport listed by the FAA under identifier XSA. The Virginia airport sponsor directory classifies the facility as Community Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -18553,7 +18709,7 @@
       "longitude": -81.798269,
       "missions": [],
       "name": "Tazewell County",
-      "overview": "Tazewell County is an operational public-use airport listed by the FAA under identifier JFZ. The Virginia airport sponsor directory classifies the facility as General Aviation Regional.",
+      "overview": "Tazewell County is an operational public-use airport listed by the FAA under identifier JFZ. The Virginia airport sponsor directory classifies the facility as Community Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -18642,7 +18798,8 @@
         "Manufacturing and supply chain",
         "Test and operational environments",
         "Companies and solution providers",
-        "Core unmanned-systems asset"
+        "Core unmanned-systems asset",
+        "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "Provides documented Virginia manufacturing, integration, testing, training, operations, and sustainment capacity for Aerosonde uncrewed aircraft systems.",
       "website_url": "https://www.textronsystems.com/products/aerosonde-uas"
@@ -18989,7 +19146,8 @@
       "address_line": "405 Partnership Drive",
       "capabilities": [
         "Autonomy and artificial intelligence",
-        "Systems engineering and integration"
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Blacksburg",
       "contact_email": "",
@@ -19275,7 +19433,7 @@
       "longitude": -77.506177,
       "missions": [],
       "name": "Tri Cities Exec/Dinwiddie County",
-      "overview": "Tri Cities Exec/Dinwiddie County is an operational public-use airport listed by the FAA under identifier PTB. The Virginia airport sponsor directory classifies the facility as General Aviation Regional.",
+      "overview": "Tri Cities Exec/Dinwiddie County is an operational public-use airport listed by the FAA under identifier PTB. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -19357,7 +19515,8 @@
       "strategic_categories": [
         "Manufacturing and supply chain",
         "Federal and defense customer access",
-        "Supporting ecosystem asset"
+        "Supporting ecosystem asset",
+        "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "Represents documented Virginia production capacity within a company that supplies counter-UAS and C4ISR products; it is classified as supporting because the public record does not tie a specific UxS production line to this site.",
       "website_url": "https://tridsys.com/contact-us/"
@@ -19489,7 +19648,7 @@
       "longitude": -80.823565,
       "missions": [],
       "name": "Twin County",
-      "overview": "Twin County is an operational public-use airport listed by the FAA under identifier HLX. The Virginia airport sponsor directory classifies the facility as General Aviation Community.",
+      "overview": "Twin County is an operational public-use airport listed by the FAA under identifier HLX. The Virginia airport sponsor directory classifies the facility as Community Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -19631,7 +19790,8 @@
       "address_line": "11827 Canon Boulevard, Suite 203",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment"
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Newport News",
       "contact_email": "",
@@ -19646,7 +19806,7 @@
         "Logistics and contested logistics"
       ],
       "name": "Universal Solutions International",
-      "overview": "Newport News engineering and professional-services company supporting Army aviation and manned and unmanned aircraft systems. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Newport News engineering and professional-services company supporting Army aviation and manned and unmanned aircraft systems. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -20368,7 +20528,8 @@
         "Manufacturing and supply chain",
         "Companies and solution providers",
         "Federal and defense customer access",
-        "Core unmanned-systems asset"
+        "Core unmanned-systems asset",
+        "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "Provides documented Virginia production, assembly, training, navigation, and payload-integration capacity for the HERO family of unmanned aircraft.",
       "website_url": "https://uvisionuav.com/uvision-usa/"
@@ -20672,7 +20833,8 @@
       "strategic_categories": [
         "Manufacturing and supply chain",
         "Companies and solution providers",
-        "Core unmanned-systems asset"
+        "Core unmanned-systems asset",
+        "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "Provides documented Virginia production, assembly, component, payload, and integration capacity for modular uncrewed aircraft and related sensing systems.",
       "website_url": "https://vidarrinc.com/pages/about-us"
@@ -21598,7 +21760,7 @@
       "longitude": -82.034788,
       "missions": [],
       "name": "Virginia Highlands",
-      "overview": "Virginia Highlands is an operational public-use airport listed by the FAA under identifier VJI. The Virginia airport sponsor directory classifies the facility as General Aviation Regional.",
+      "overview": "Virginia Highlands is an operational public-use airport listed by the FAA under identifier VJI. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -23503,7 +23665,7 @@
       "longitude": -80.412093,
       "missions": [],
       "name": "Virginia Tech/Montgomery Exec",
-      "overview": "Virginia Tech/Montgomery Exec is an operational public-use airport listed by the FAA under identifier BCB. The Virginia airport sponsor directory classifies the facility as General Aviation Regional.",
+      "overview": "Virginia Tech/Montgomery Exec is an operational public-use airport listed by the FAA under identifier BCB. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -23541,7 +23703,8 @@
     {
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment"
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Glen Allen",
       "contact_email": "info@virginiauas.com",
@@ -23556,7 +23719,7 @@
         "Logistics and contested logistics"
       ],
       "name": "Virginia UAS",
-      "overview": "Virginia small-UAS training, safety, operational integration, and consulting provider. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Virginia small-UAS training, safety, operational integration, and consulting provider. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -23950,7 +24113,8 @@
       "address_line": "New River Valley Plant, I-81 Exit 98",
       "capabilities": [
         "Autonomy and artificial intelligence",
-        "Systems engineering and integration"
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Dublin",
       "contact_email": "",
@@ -23964,7 +24128,7 @@
         "Logistics and contested logistics"
       ],
       "name": "Volvo Trucks New River Valley Plant",
-      "overview": "Truck manufacturing facility connected to Volvo autonomous-truck development documented by VEDP. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence and Systems engineering and integration. Relevant mission areas include Logistics and contested logistics.",
+      "overview": "Truck manufacturing facility connected to Volvo autonomous-truck development documented by VEDP. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence, Systems engineering and integration, and Manufacturing, materials, and prototyping. Relevant mission areas include Logistics and contested logistics.",
       "platform_domains": [
         "Ground vehicles and robotics"
       ],
@@ -23981,12 +24145,17 @@
         {
           "title": "Volvo Group New River Valley Plant location information",
           "url": "https://www.volvogroup.com/en/about-us/organization/our-production-facilities/new-river-valley-plant.html"
+        },
+        {
+          "title": "Volvo VNL Autonomous assembly at the New River Valley plant",
+          "url": "https://www.volvoautonomoussolutions.com/en-en/autona-freight/volvo-vnl-autonomous.html"
         }
       ],
       "state": "VA",
       "strategic_categories": [
         "Companies and solution providers",
-        "Core unmanned-systems asset"
+        "Core unmanned-systems asset",
+        "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "Develops or integrates documented autonomous-ground-vehicle technology.",
       "website_url": "https://www.volvogroup.com/en/about-us/organization/our-production-facilities/new-river-valley-plant.html"
@@ -24006,7 +24175,7 @@
       "longitude": -77.001131,
       "missions": [],
       "name": "Wakefield Muni",
-      "overview": "Wakefield Muni is an operational public-use airport listed by the FAA under identifier AKQ. The Virginia airport sponsor directory classifies the facility as General Aviation Community.",
+      "overview": "Wakefield Muni is an operational public-use airport listed by the FAA under identifier AKQ. The Virginia airport sponsor directory classifies the facility as Community Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -24122,7 +24291,7 @@
       "longitude": -76.716098,
       "missions": [],
       "name": "Waltrip Williamsburg Exec Airport",
-      "overview": "Waltrip Williamsburg Exec Airport is an operational public-use airport listed by the FAA under identifier JGG. The Virginia airport sponsor directory classifies the facility as General Aviation Community.",
+      "overview": "Waltrip Williamsburg Exec Airport is an operational public-use airport listed by the FAA under identifier JGG. The Virginia airport sponsor directory classifies the facility as Community Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -24163,16 +24332,16 @@
         "Operations, maintenance, and sustainment"
       ],
       "city": "Midland",
-      "contact_email": "tbd@fauquiercounty.gov",
-      "contact_phone": "540-422-8283",
-      "contact_text": "Airport public contact: TBD Airport Enterprise Director",
+      "contact_email": "Stacey.Williams.air@fauquiercounty.gov",
+      "contact_phone": "540-422-8284",
+      "contact_text": "Airport public contact: Stacey Williams Airport Manager",
       "contact_url": "https://doav.virginia.gov/airport_sponsors/",
       "latitude": 38.586293,
       "location_precision": "exact",
       "longitude": -77.710633,
       "missions": [],
       "name": "Warrenton/Fauquier",
-      "overview": "Warrenton/Fauquier is an operational public-use airport listed by the FAA under identifier HWY. The Virginia airport sponsor directory classifies the facility as Reliever.",
+      "overview": "Warrenton/Fauquier is an operational public-use airport listed by the FAA under identifier HWY. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -24264,7 +24433,7 @@
       "longitude": -77.45661,
       "missions": [],
       "name": "Washington Exec/Stafford Rgnl",
-      "overview": "Washington Exec/Stafford Rgnl is an operational public-use airport listed by the FAA under identifier RMN. The Virginia airport sponsor directory classifies the facility as Reliever.",
+      "overview": "Washington Exec/Stafford Rgnl is an operational public-use airport listed by the FAA under identifier RMN. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -24372,7 +24541,7 @@
       "longitude": -78.84834,
       "missions": [],
       "name": "William M Tuck",
-      "overview": "William M Tuck is an operational public-use airport listed by the FAA under identifier W78. The Virginia airport sponsor directory classifies the facility as General Aviation Regional.",
+      "overview": "William M Tuck is an operational public-use airport listed by the FAA under identifier W78. The Virginia airport sponsor directory classifies the facility as Community Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -24520,7 +24689,7 @@
       "longitude": -78.144447,
       "missions": [],
       "name": "Winchester Rgnl",
-      "overview": "Winchester Rgnl is an operational public-use airport listed by the FAA under identifier OKV. The Virginia airport sponsor directory classifies the facility as General Aviation Regional.",
+      "overview": "Winchester Rgnl is an operational public-use airport listed by the FAA under identifier OKV. The Virginia airport sponsor directory classifies the facility as Regional Business.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -24559,7 +24728,8 @@
       "address_line": "160 Welcome Street NE",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment"
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Christiansburg",
       "contact_email": "",
@@ -24574,7 +24744,7 @@
         "Logistics and contested logistics"
       ],
       "name": "Wing Christiansburg Drone Delivery Program",
-      "overview": "Documented commercial drone-delivery program launched in Christiansburg in 2019. Public sources support its classification as a Virginia program. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Documented commercial drone-delivery program launched in Christiansburg in 2019. Public sources support its classification as a Virginia program. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -24783,6 +24953,65 @@
       ],
       "unmanned_systems_relevance": "The company directly supports unmanned surface vessels and enabling systems. The marker is the public Norfolk operations center; the company does not allocate every listed unmanned-system function to a specific building.",
       "website_url": "https://wrsystems.com/unmanned-systems/"
+    },
+    {
+      "activity_last_verified_at": "2026-08-30",
+      "activity_source_url": "https://ir.wrap.com/sec-filings/annual-reports/content/0001140361-26-011401/0001140361-26-011401.pdf",
+      "activity_status": "active",
+      "address_line": "182 Progress Way NE",
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration",
+        "Payloads and mission systems"
+      ],
+      "city": "Norton",
+      "contact_email": "ir@wrap.com",
+      "contact_phone": "800-583-2652",
+      "contact_text": "Wrap Technologies investor and public information",
+      "contact_url": "https://ir.wrap.com/ir-resources/investor-faqs",
+      "current_activity": "Wrap's 2026 annual report confirms that the company completed its move to Norton and performs final assembly, testing, quality verification, and shipping at the facility while advancing counter-UAS programs.",
+      "latitude": 36.946661,
+      "location_precision": "exact",
+      "longitude": -82.60951,
+      "missions": [
+        "Counter-UAS",
+        "Public safety and emergency response"
+      ],
+      "name": "Wrap Technologies Norton Manufacturing Headquarters",
+      "overview": "Wrap Technologies opened this 20,000-square-foot manufacturing headquarters in September 2025. The company performs final assembly, testing, quality verification, and shipping in Norton and identifies the site for development and future assembly of its 1KC counter-drone cassette and autonomous products.",
+      "platform_domains": [
+        "Counter-UAS",
+        "Cross-domain autonomy"
+      ],
+      "postal_code": "24273",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Southwest Virginia",
+      "short_description": "Norton manufacturing headquarters with active final assembly and a documented roadmap for counter-UAS intercept products and autonomous platforms.",
+      "sources": [
+        {
+          "title": "Wrap Norton manufacturing headquarters and counter-UAS roadmap",
+          "url": "https://ir.wrap.com/news-events/press-releases/detail/352/wrap-technologies-opens-new-virginia-facility-to-scale"
+        },
+        {
+          "title": "Wrap Norton manufacturing address and public contact information",
+          "url": "https://ir.wrap.com/ir-resources/investor-faqs"
+        },
+        {
+          "title": "Wrap 2026 annual report manufacturing and counter-UAS disclosure",
+          "url": "https://ir.wrap.com/sec-filings/annual-reports/content/0001140361-26-011401/0001140361-26-011401.pdf"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Federal and defense customer access",
+        "Core unmanned-systems asset",
+        "Manufacturing facilities"
+      ],
+      "unmanned_systems_relevance": "Provides an active Virginia production, engineering, and test site within a company developing counter-UAS and autonomous-platform products. The public record describes the 1KC assembly line as intended rather than current volume production.",
+      "website_url": "https://ir.wrap.com/news-events/press-releases/detail/352/wrap-technologies-opens-new-virginia-facility-to-scale"
     },
     {
       "activity_last_verified_at": "2026-08-21",
@@ -24996,7 +25225,8 @@
       "address_line": "10517 Critzers Shop Road",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment"
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
       ],
       "city": "Afton",
       "contact_email": "",
@@ -25011,7 +25241,7 @@
         "Logistics and contested logistics"
       ],
       "name": "Zenith Aerotech",
-      "overview": "Virginia manufacturer of tethered unmanned aircraft systems for public-safety, defense, and industrial applications. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Virginia manufacturer of tethered unmanned aircraft systems for public-safety, defense, and industrial applications. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -25033,7 +25263,8 @@
       "state": "VA",
       "strategic_categories": [
         "Companies and solution providers",
-        "Core unmanned-systems asset"
+        "Core unmanned-systems asset",
+        "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
       "website_url": "https://zenithaerotech.com/about-us-tethered-drone/"
@@ -25374,6 +25605,11 @@
       "from": "P1 Technologies Keltech Division",
       "to": "Blue Vigil",
       "type": "manufactures-for"
+    },
+    {
+      "from": "Fulcrum Concepts",
+      "to": "Fulcrum Concepts Newport News Machine Shop",
+      "type": "operates"
     },
     {
       "from": "Virginia Innovation Partnership Corporation",

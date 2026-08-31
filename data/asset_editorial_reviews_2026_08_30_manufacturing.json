@@ -1,0 +1,22 @@
+{
+  "follow_up_assets": {},
+  "methodology": "Targeted manufacturing-facility expansion using current official company, investor-relations, economic-development, and public location sources. A record qualifies for the narrow Manufacturing facilities category only when a specific Virginia site is publicly documented as performing production, assembly, fabrication, or component manufacturing. Headquarters, research centers, development hangars, and generic company-wide manufacturing claims are excluded unless a source ties manufacturing to the mapped site. Supporting facilities are labeled separately when their output enables unmanned systems but the production line is not dedicated to UxS.",
+  "reviewed_assets": {
+    "Fulcrum Concepts Newport News Machine Shop": [
+      "https://fulcrumconceptsllc.com/about/manufacturing-and-production/",
+      "https://fulcrumconceptsllc.com/about/our-facilities/",
+      "https://fulcrumconceptsllc.com/news/fulcrum-concepts-opens-new-machine-shop-in-newport-news-expanding-manufacturing-capabilities/"
+    ],
+    "Micron Manassas Semiconductor Fabrication Plant": [
+      "https://www.micron.com/us-expansion/va",
+      "https://www.micron.com/about/locations",
+      "https://www.micron.com/about/press/media-relations/press-kits/manassas-media-kit"
+    ],
+    "Wrap Technologies Norton Manufacturing Headquarters": [
+      "https://ir.wrap.com/news-events/press-releases/detail/352/wrap-technologies-opens-new-virginia-facility-to-scale",
+      "https://ir.wrap.com/ir-resources/investor-faqs",
+      "https://ir.wrap.com/sec-filings/annual-reports/content/0001140361-26-011401/0001140361-26-011401.pdf"
+    ]
+  },
+  "reviewed_at": "2026-08-30"
+}

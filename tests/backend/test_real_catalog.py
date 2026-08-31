@@ -55,10 +55,10 @@ class RealCatalogFileTests(TestCase):
             )
         )
 
-    def test_catalog_has_at_least_490_relevant_source_backed_records(self):
+    def test_catalog_has_at_least_497_relevant_source_backed_records(self):
         catalog = self.load_catalog()
         records = catalog["records"]
-        self.assertGreaterEqual(len(records), 490)
+        self.assertGreaterEqual(len(records), 497)
         self.assertEqual(catalog["record_count"], len(records))
         self.assertGreaterEqual(len(catalog["relationships"]), 90)
         self.assertFalse(any(record["name"].startswith("Demo ") for record in records))
@@ -128,6 +128,43 @@ class RealCatalogFileTests(TestCase):
         )
         hampton_roads = [record for record in records if record["region"] == "Hampton Roads"]
         self.assertGreaterEqual(len(hampton_roads), 120)
+
+        manufacturing = [
+            record
+            for record in records
+            if "Manufacturing facilities" in record["strategic_categories"]
+        ]
+        self.assertEqual(len(manufacturing), 21)
+        self.assertTrue(
+            all(
+                "Manufacturing, materials, and prototyping" in record["capabilities"]
+                and record["location_precision"] not in {"regional", "hidden"}
+                for record in manufacturing
+            )
+        )
+        self.assertEqual(
+            {
+                record["name"]
+                for record in manufacturing
+                if record.get("activity_status") == "historical"
+            },
+            {"RapidFlight UAS Manufacturing Headquarters"},
+        )
+        records_by_name = {record["name"]: record for record in records}
+        self.assertEqual(
+            records_by_name["Fulcrum Concepts Newport News Machine Shop"]["address_line"],
+            "737 Industrial Park Drive",
+        )
+        self.assertEqual(
+            records_by_name["Micron Manassas Semiconductor Fabrication Plant"]["address_line"],
+            "9600 Godwin Drive",
+        )
+        self.assertEqual(
+            records_by_name["Wrap Technologies Norton Manufacturing Headquarters"][
+                "address_line"
+            ],
+            "182 Progress Way NE",
+        )
         locality_only = {
             record["name"]
             for record in hampton_roads
@@ -275,6 +312,13 @@ class RealCatalogFileTests(TestCase):
                 / "asset_editorial_reviews_2026_08_25_hampton_roads.json"
             ).read_text()
         )
+        manufacturing_manifest = json.loads(
+            (
+                settings.BASE_DIR
+                / "data"
+                / "asset_editorial_reviews_2026_08_30_manufacturing.json"
+            ).read_text()
+        )
         location_manifest = json.loads(
             (
                 settings.BASE_DIR / "data" / "asset_editorial_reviews_2026_08_24_locations.json"
@@ -289,6 +333,8 @@ class RealCatalogFileTests(TestCase):
         self.assertFalse(expansion_manifest["follow_up_assets"])
         self.assertEqual(len(hampton_roads_manifest["reviewed_assets"]), 21)
         self.assertFalse(hampton_roads_manifest["follow_up_assets"])
+        self.assertEqual(len(manufacturing_manifest["reviewed_assets"]), 3)
+        self.assertFalse(manufacturing_manifest["follow_up_assets"])
         self.assertEqual(len(location_manifest["reviewed_assets"]), 97)
         self.assertFalse(location_manifest["follow_up_assets"])
 
@@ -297,12 +343,18 @@ class RealCatalogFileTests(TestCase):
         addition_names = set(additions_manifest["reviewed_assets"])
         expansion_names = set(expansion_manifest["reviewed_assets"])
         hampton_roads_names = set(hampton_roads_manifest["reviewed_assets"])
+        manufacturing_names = set(manufacturing_manifest["reviewed_assets"])
         historical_names = reviewed_names | follow_up_names | addition_names
         self.assertFalse((reviewed_names | follow_up_names).intersection(addition_names))
         self.assertFalse(historical_names.intersection(expansion_names))
         self.assertFalse((historical_names | expansion_names).intersection(hampton_roads_names))
+        self.assertFalse(
+            (historical_names | expansion_names | hampton_roads_names).intersection(
+                manufacturing_names
+            )
+        )
         self.assertEqual(
-            historical_names | expansion_names | hampton_roads_names,
+            historical_names | expansion_names | hampton_roads_names | manufacturing_names,
             set(records_by_name),
         )
 
@@ -311,6 +363,7 @@ class RealCatalogFileTests(TestCase):
             **additions_manifest["reviewed_assets"],
             **expansion_manifest["reviewed_assets"],
             **hampton_roads_manifest["reviewed_assets"],
+            **manufacturing_manifest["reviewed_assets"],
         }
         for name, source_urls in reviewed_assets.items():
             self.assertIn(name, records_by_name)
@@ -781,6 +834,35 @@ class RealCatalogFileTests(TestCase):
             asset.strategic_categories.filter(name="Core unmanned-systems asset").exists()
         )
 
+    def test_profile_enrichment_adds_manufacturing_taxonomy_and_sources(self):
+        asset = Asset.objects.create(
+            name="Aeroprobe",
+            record_type=Asset.RecordType.ORGANIZATION,
+            short_description="Staff-maintained Aeroprobe description.",
+            unmanned_systems_relevance="Staff-maintained component relevance.",
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+            internal_notes="Catalog provenance: curated-public-source.",
+        )
+
+        call_command("enrich_asset_profiles", verbosity=0)
+
+        asset.refresh_from_db()
+        self.assertEqual(asset.short_description, "Staff-maintained Aeroprobe description.")
+        self.assertTrue(
+            asset.strategic_categories.filter(name="Manufacturing facilities").exists()
+        )
+        self.assertTrue(
+            asset.capabilities.filter(
+                name="Manufacturing, materials, and prototyping"
+            ).exists()
+        )
+        self.assertTrue(
+            asset.sources.filter(
+                url="https://www.vedp.org/news/aeroprobe-sets-companies-speed"
+            ).exists()
+        )
+
     def test_profile_enrichment_upgrades_only_coarse_priority_locations(self):
         coarse = Asset.objects.create(
             name="Virginia Unmanned Systems Center",
@@ -990,6 +1072,46 @@ class RealCatalogFileTests(TestCase):
         self.assertEqual(range_complex.location_precision, Asset.LocationPrecision.REGIONAL)
         self.assertIsNone(range_complex.latitude)
         self.assertIsNone(range_complex.longitude)
+
+    def test_august_30_manufacturing_expansion_is_published_from_review_manifest(self):
+        review_path = (
+            settings.BASE_DIR
+            / "data"
+            / "asset_editorial_reviews_2026_08_30_manufacturing.json"
+        )
+        manifest = json.loads(review_path.read_text())
+        call_command("seed_real_data", verbosity=0)
+
+        call_command("apply_catalog_reviews", reviews=review_path, verbosity=0)
+
+        reviewed = Asset.objects.filter(
+            name__in=manifest["reviewed_assets"],
+            status=Asset.Status.PUBLISHED,
+            reviewed_at__isnull=False,
+            last_verified_at=date(2026, 8, 30),
+        )
+        self.assertEqual(reviewed.count(), 3)
+        self.assertEqual(
+            Source.objects.filter(
+                asset__name__in=manifest["reviewed_assets"],
+                verification_status="verified",
+                last_verified_at=date(2026, 8, 30),
+            ).count(),
+            sum(len(urls) for urls in manifest["reviewed_assets"].values()),
+        )
+        self.assertEqual(
+            Asset.objects.get(
+                name="Micron Manassas Semiconductor Fabrication Plant"
+            ).activity_status,
+            Asset.ActivityStatus.ACTIVE,
+        )
+        wrap = Asset.objects.get(
+            name="Wrap Technologies Norton Manufacturing Headquarters"
+        )
+        self.assertEqual(wrap.location_precision, Asset.LocationPrecision.EXACT)
+        self.assertTrue(
+            wrap.strategic_categories.filter(name="Manufacturing facilities").exists()
+        )
 
     def test_location_review_batch_supplements_existing_catalog_reviews(self):
         review_paths = [
