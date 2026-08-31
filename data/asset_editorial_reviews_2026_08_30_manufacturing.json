@@ -1,16 +1,41 @@
 {
+  "excluded_candidates": {
+    "Avio USA Hurt solid rocket motor facility": "The official announcement establishes a planned factory in Hurt, but the reviewed sources do not yet document an operating production site or a direct UxS role.",
+    "StewTech Virginia manufacturing facility": "A company article claims a Virginia Beach factory, while the company's public profile lists a Hampton address and no authoritative source confirms the plant address. The record remains excluded rather than placing an imprecise or potentially incorrect factory point."
+  },
   "follow_up_assets": {},
-  "methodology": "Targeted manufacturing-facility expansion using current official company, investor-relations, economic-development, and public location sources. A record qualifies for the narrow Manufacturing facilities category only when a specific Virginia site is publicly documented as performing production, assembly, fabrication, or component manufacturing. Headquarters, research centers, development hangars, and generic company-wide manufacturing claims are excluded unless a source ties manufacturing to the mapped site. Supporting facilities are labeled separately when their output enables unmanned systems but the production line is not dedicated to UxS.",
+  "methodology": "Targeted manufacturing-facility expansion using current official company, investor-relations, economic-development, federal, and public location sources. A record qualifies for the narrow Manufacturing facilities category only when a specific Virginia site is publicly documented as performing production, assembly, fabrication, or component manufacturing. Headquarters, research centers, development hangars, planned factories, and generic company-wide manufacturing claims are excluded unless a source ties manufacturing to the mapped site. Supporting facilities are labeled separately when their output enables unmanned systems but the production line is not dedicated to UxS.",
   "reviewed_assets": {
+    "Defense Maritime Solutions Chesapeake Manufacturing Facility": [
+      "https://dmsamerica.com/",
+      "https://vedp.org/press-release/2026-08/chesapeake-defense-maritime-solutions",
+      "https://dmsamerica.com/contact/",
+      "https://dmsamerica.com/products-and-solutions/"
+    ],
     "Fulcrum Concepts Newport News Machine Shop": [
       "https://fulcrumconceptsllc.com/about/manufacturing-and-production/",
       "https://fulcrumconceptsllc.com/about/our-facilities/",
       "https://fulcrumconceptsllc.com/news/fulcrum-concepts-opens-new-machine-shop-in-newport-news-expanding-manufacturing-capabilities/"
     ],
+    "Inertial Labs": [
+      "https://inertiallabs.com/inertial-labs-inc/",
+      "https://inertiallabs.com/applications-summary/aerospace-solutions/",
+      "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1729205.015"
+    ],
+    "L3Harris Orange County Propulsion Manufacturing Site": [
+      "https://www.l3harris.com/newsroom/editorial/2024/05/orange-county-expansion-helps-aerojet-rocketdyne-boost-solid-rocket",
+      "https://arsuppliernet.l3harris.com/sites/default/files/documents/SupplierNet/sites/ar-suppliernet-logistics-site-visits.pdf",
+      "https://www.asafm.army.mil/Portals/72/Documents/BudgetMaterial/2026/Discretionary%20Budget/Procurement/Missile%20Procurement%20Army.pdf"
+    ],
     "Micron Manassas Semiconductor Fabrication Plant": [
       "https://www.micron.com/us-expansion/va",
       "https://www.micron.com/about/locations",
       "https://www.micron.com/about/press/media-relations/press-kits/manassas-media-kit"
+    ],
+    "Radian Forge Portsmouth Manufacturing Facility": [
+      "https://radianforge.com/",
+      "https://www.vedp.org/press-release/2026-02/radian-forge-portsmouth",
+      "https://www.linkedin.com/company/radian-forge"
     ],
     "Wrap Technologies Norton Manufacturing Headquarters": [
       "https://ir.wrap.com/news-events/press-releases/detail/352/wrap-technologies-opens-new-virginia-facility-to-scale",

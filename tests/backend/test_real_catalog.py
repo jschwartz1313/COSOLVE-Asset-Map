@@ -55,10 +55,10 @@ class RealCatalogFileTests(TestCase):
             )
         )
 
-    def test_catalog_has_at_least_497_relevant_source_backed_records(self):
+    def test_catalog_has_at_least_500_relevant_source_backed_records(self):
         catalog = self.load_catalog()
         records = catalog["records"]
-        self.assertGreaterEqual(len(records), 497)
+        self.assertGreaterEqual(len(records), 500)
         self.assertEqual(catalog["record_count"], len(records))
         self.assertGreaterEqual(len(catalog["relationships"]), 90)
         self.assertFalse(any(record["name"].startswith("Demo ") for record in records))
@@ -134,7 +134,7 @@ class RealCatalogFileTests(TestCase):
             for record in records
             if "Manufacturing facilities" in record["strategic_categories"]
         ]
-        self.assertEqual(len(manufacturing), 21)
+        self.assertEqual(len(manufacturing), 25)
         self.assertTrue(
             all(
                 "Manufacturing, materials, and prototyping" in record["capabilities"]
@@ -164,6 +164,26 @@ class RealCatalogFileTests(TestCase):
                 "address_line"
             ],
             "182 Progress Way NE",
+        )
+        self.assertEqual(
+            records_by_name["Defense Maritime Solutions Chesapeake Manufacturing Facility"][
+                "address_line"
+            ],
+            "3617 Koppens Way",
+        )
+        self.assertEqual(
+            records_by_name["Radian Forge Portsmouth Manufacturing Facility"]["address_line"],
+            "176 Lincoln Street",
+        )
+        self.assertEqual(
+            records_by_name["L3Harris Orange County Propulsion Manufacturing Site"][
+                "address_line"
+            ],
+            "7499 Pine Stake Road",
+        )
+        self.assertIn(
+            "Manufacturing facilities",
+            records_by_name["Inertial Labs"]["strategic_categories"],
         )
         locality_only = {
             record["name"]
@@ -333,7 +353,7 @@ class RealCatalogFileTests(TestCase):
         self.assertFalse(expansion_manifest["follow_up_assets"])
         self.assertEqual(len(hampton_roads_manifest["reviewed_assets"]), 21)
         self.assertFalse(hampton_roads_manifest["follow_up_assets"])
-        self.assertEqual(len(manufacturing_manifest["reviewed_assets"]), 3)
+        self.assertEqual(len(manufacturing_manifest["reviewed_assets"]), 7)
         self.assertFalse(manufacturing_manifest["follow_up_assets"])
         self.assertEqual(len(location_manifest["reviewed_assets"]), 97)
         self.assertFalse(location_manifest["follow_up_assets"])
@@ -348,10 +368,11 @@ class RealCatalogFileTests(TestCase):
         self.assertFalse((reviewed_names | follow_up_names).intersection(addition_names))
         self.assertFalse(historical_names.intersection(expansion_names))
         self.assertFalse((historical_names | expansion_names).intersection(hampton_roads_names))
-        self.assertFalse(
+        self.assertEqual(
             (historical_names | expansion_names | hampton_roads_names).intersection(
                 manufacturing_names
-            )
+            ),
+            {"Inertial Labs"},
         )
         self.assertEqual(
             historical_names | expansion_names | hampton_roads_names | manufacturing_names,
@@ -1090,7 +1111,7 @@ class RealCatalogFileTests(TestCase):
             reviewed_at__isnull=False,
             last_verified_at=date(2026, 8, 30),
         )
-        self.assertEqual(reviewed.count(), 3)
+        self.assertEqual(reviewed.count(), 7)
         self.assertEqual(
             Source.objects.filter(
                 asset__name__in=manifest["reviewed_assets"],
@@ -1111,6 +1132,18 @@ class RealCatalogFileTests(TestCase):
         self.assertEqual(wrap.location_precision, Asset.LocationPrecision.EXACT)
         self.assertTrue(
             wrap.strategic_categories.filter(name="Manufacturing facilities").exists()
+        )
+        self.assertTrue(
+            Asset.objects.get(name="Inertial Labs")
+            .strategic_categories.filter(name="Manufacturing facilities")
+            .exists()
+        )
+        self.assertEqual(
+            set(manifest["excluded_candidates"]),
+            {
+                "Avio USA Hurt solid rocket motor facility",
+                "StewTech Virginia manufacturing facility",
+            },
         )
 
     def test_location_review_batch_supplements_existing_catalog_reviews(self):

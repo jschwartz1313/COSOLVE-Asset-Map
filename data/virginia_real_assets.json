@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-08-30",
   "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, broad-based Virginia degree-granting institutions from the NCES IPEDS 2024 directory while excluding narrowly specialized health and ministry schools without documented unmanned-systems relevance, and a curated set of source-backed ecosystem records. Specific street and site locations are anchored to official public address sources and geocoded against the U.S. Census address ranges or named-site map data; locality points are retained when the public record does not identify the operating department or facility. Every record is also classified as either a core unmanned-systems asset with direct documented activity or a supporting ecosystem asset with a broader enabling role.",
-  "record_count": 497,
+  "record_count": 500,
   "records": [
     {
       "address_line": "29194 Parkway North",
@@ -4581,6 +4581,70 @@
       "website_url": "https://www.darpa.mil/policies/visitor-information"
     },
     {
+      "activity_last_verified_at": "2026-08-30",
+      "activity_source_url": "https://vedp.org/press-release/2026-08/chesapeake-defense-maritime-solutions",
+      "activity_status": "active",
+      "address_line": "3617 Koppens Way",
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Propulsion, batteries, fuels, and energy systems",
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Chesapeake",
+      "contact_email": "",
+      "contact_phone": "757-558-3625",
+      "contact_text": "Defense Maritime Solutions Chesapeake facility",
+      "contact_url": "https://dmsamerica.com/contact/",
+      "current_activity": "DMS announced an August 2026 investment of more than $30 million to expand domestic marine-engine manufacturing and testing at its Chesapeake operation.",
+      "latitude": 36.781007,
+      "location_precision": "exact",
+      "longitude": -76.36236,
+      "missions": [
+        "Logistics and contested logistics",
+        "Maritime domain awareness"
+      ],
+      "name": "Defense Maritime Solutions Chesapeake Manufacturing Facility",
+      "overview": "Defense Maritime Solutions operates a marine manufacturing, repair, assembly, and systems-integration facility in Chesapeake. A 2026 expansion adds domestic production and testing capacity for Wartsila medium-speed marine engines.",
+      "platform_domains": [
+        "Maritime surface systems",
+        "Undersea systems"
+      ],
+      "postal_code": "23323",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Hampton Roads",
+      "short_description": "Chesapeake manufacturing and assembly facility producing marine engines, propulsors, and integrated shipboard systems for U.S. government fleets.",
+      "sources": [
+        {
+          "title": "Defense Maritime Solutions company website",
+          "url": "https://dmsamerica.com/"
+        },
+        {
+          "title": "VEDP Defense Maritime Solutions Chesapeake manufacturing expansion",
+          "url": "https://vedp.org/press-release/2026-08/chesapeake-defense-maritime-solutions"
+        },
+        {
+          "title": "Defense Maritime Solutions Chesapeake address",
+          "url": "https://dmsamerica.com/contact/"
+        },
+        {
+          "title": "Defense Maritime Solutions products and vessel integration",
+          "url": "https://dmsamerica.com/products-and-solutions/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Manufacturing and supply chain",
+        "Physical infrastructure and logistics",
+        "Federal and defense customer access",
+        "Supporting ecosystem asset",
+        "Manufacturing facilities"
+      ],
+      "unmanned_systems_relevance": "Provides propulsion, maneuvering, integration, and lifecycle-support capacity that can support autonomous-vessel builders and operators. Public sources do not identify a dedicated uncrewed-platform production line at this address, so the facility is classified as a supporting ecosystem asset.",
+      "website_url": "https://dmsamerica.com/"
+    },
+    {
       "address_line": "6090 Strathmore Road",
       "capabilities": [
         "Systems engineering and integration"
@@ -8892,6 +8956,9 @@
       "website_url": "https://icisrvcs.com/news/2020/2/5/236/ici-services-to-support-navy-unmanned-surface-vehicle-development/index.html"
     },
     {
+      "activity_last_verified_at": "2026-08-21",
+      "activity_source_url": "https://inertiallabs.com/inertial-labs-inc/",
+      "activity_status": "active",
       "address_line": "39959 Catoctin Ridge Street",
       "capabilities": [
         "Manufacturing, materials, and prototyping",
@@ -8902,6 +8969,7 @@
       "contact_phone": "",
       "contact_text": "Organization public information and inquiries",
       "contact_url": "https://inertiallabs.com/inertial-labs-inc/contact-inertial-labs-team/",
+      "current_activity": "Current company material identifies active Virginia production and markets inertial-navigation systems for fixed-wing, VTOL, multicopter, ground, and underwater uncrewed platforms.",
       "latitude": 39.148926,
       "location_precision": "exact",
       "longitude": -77.620274,
@@ -8909,7 +8977,7 @@
         "Training and experimentation"
       ],
       "name": "Inertial Labs",
-      "overview": "Virginia headquarters and R&D operation developing inertial navigation, positioning, and sensor-fusion systems for UAV, UGV, and marine platforms. Public sources support its classification as a Virginia organization. Documented capabilities include Manufacturing, materials, and prototyping and Systems engineering and integration. Relevant mission areas include Training and experimentation.",
+      "overview": "Inertial Labs designs and manufactures inertial measurement, navigation, and sensor-fusion systems in Virginia. The company identifies a Leesburg production facility, and a federal inspection record classifies the mapped Paeonian Springs establishment as a navigation and guidance instrument manufacturing site.",
       "platform_domains": [
         "Cross-domain autonomy"
       ],
@@ -8917,11 +8985,19 @@
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Northern Virginia",
-      "short_description": "Virginia headquarters and R&D operation developing inertial navigation, positioning, and sensor-fusion systems for UAV, UGV, and marine platforms.",
+      "short_description": "Paeonian Springs navigation-system manufacturer producing inertial sensing and positioning products for UAV, UGV, autonomous-underwater, and other platforms.",
       "sources": [
         {
           "title": "Inertial Labs Headquarters and R&D",
           "url": "https://inertiallabs.com/inertial-labs-inc/"
+        },
+        {
+          "title": "Inertial Labs UAV navigation applications",
+          "url": "https://inertiallabs.com/applications-summary/aerospace-solutions/"
+        },
+        {
+          "title": "OSHA Inertial Labs Virginia manufacturing-establishment record",
+          "url": "https://www.osha.gov/ords/imis/establishment.inspection_detail?id=1729205.015"
         },
         {
           "title": "Inertial Labs public contact information",
@@ -8932,9 +9008,10 @@
       "strategic_categories": [
         "Research and technical depth",
         "Manufacturing and supply chain",
-        "Supporting ecosystem asset"
+        "Supporting ecosystem asset",
+        "Manufacturing facilities"
       ],
-      "unmanned_systems_relevance": "Provides advanced manufacturing, modeling, sensing, communications, or prototyping capacity that enables unmanned-system development and scale-up.",
+      "unmanned_systems_relevance": "Produces documented navigation and positioning products for UAV, UGV, AUV, ROV, and other autonomous platforms. The mapped address is the company's public Virginia headquarters and a federally classified manufacturing establishment.",
       "website_url": "https://inertiallabs.com/inertial-labs-inc/"
     },
     {
@@ -9482,6 +9559,63 @@
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
       "website_url": "https://www.kinggeorgecountyva.gov/AgendaCenter/ViewFile/Minutes/_02032026-1454"
+    },
+    {
+      "activity_last_verified_at": "2026-08-30",
+      "activity_source_url": "https://www.l3harris.com/newsroom/editorial/2024/05/orange-county-expansion-helps-aerojet-rocketdyne-boost-solid-rocket",
+      "activity_status": "active",
+      "address_line": "7499 Pine Stake Road",
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Propulsion, batteries, fuels, and energy systems",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Culpeper",
+      "contact_email": "",
+      "contact_phone": "540-854-2020",
+      "contact_text": "L3Harris Orange County supplier and site logistics",
+      "contact_url": "https://arsuppliernet.l3harris.com/sites/default/files/documents/SupplierNet/sites/ar-suppliernet-logistics-site-visits.pdf",
+      "current_activity": "L3Harris is expanding active Orange County manufacturing to add dedicated casting, final assembly, testing, and control facilities for Stinger, Javelin, and other solid rocket motor programs.",
+      "latitude": 38.30252,
+      "location_precision": "exact",
+      "longitude": -77.930442,
+      "missions": [
+        "Counter-UAS",
+        "Force protection and installation security"
+      ],
+      "name": "L3Harris Orange County Propulsion Manufacturing Site",
+      "overview": "L3Harris operates a 2,100-acre Orange County propulsion and energetics campus with 256,000 square feet of manufacturing space. The company is expanding the site's casting, assembly, testing, and solid-rocket-motor production capacity.",
+      "platform_domains": [
+        "Counter-UAS"
+      ],
+      "postal_code": "22701",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Central Virginia",
+      "short_description": "Orange County solid-rocket-motor manufacturing complex producing propulsion for Stinger and Javelin systems, with a documented counter-UAS connection.",
+      "sources": [
+        {
+          "title": "L3Harris Orange County solid rocket motor manufacturing",
+          "url": "https://www.l3harris.com/newsroom/editorial/2024/05/orange-county-expansion-helps-aerojet-rocketdyne-boost-solid-rocket"
+        },
+        {
+          "title": "L3Harris Orange County site address and logistics guide",
+          "url": "https://arsuppliernet.l3harris.com/sites/default/files/documents/SupplierNet/sites/ar-suppliernet-logistics-site-visits.pdf"
+        },
+        {
+          "title": "U.S. Army Stinger mission includes defense against UAS",
+          "url": "https://www.asafm.army.mil/Portals/72/Documents/BudgetMaterial/2026/Discretionary%20Budget/Procurement/Missile%20Procurement%20Army.pdf"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Manufacturing and supply chain",
+        "Federal and defense customer access",
+        "Supporting ecosystem asset",
+        "Manufacturing facilities"
+      ],
+      "unmanned_systems_relevance": "The site produces propulsion for Stinger, whose official Army mission includes defense against unmanned aircraft systems. It is classified as supporting counter-UAS manufacturing because the Virginia site makes rocket motors rather than complete drone-detection or interception systems.",
+      "website_url": "https://www.l3harris.com/newsroom/editorial/2024/05/orange-county-expansion-helps-aerojet-rocketdyne-boost-solid-rocket"
     },
     {
       "address_line": "355 Kentucky Springs Road",
@@ -16435,6 +16569,62 @@
       ],
       "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
       "website_url": "https://www.radford.edu/registrar/course-descriptions/unmanned-aerial-systems/index.html"
+    },
+    {
+      "activity_last_verified_at": "2026-08-30",
+      "activity_source_url": "https://radianforge.com/",
+      "activity_status": "active",
+      "address_line": "176 Lincoln Street",
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "city": "Portsmouth",
+      "contact_email": "kait@radianforge.com",
+      "contact_phone": "",
+      "contact_text": "Radian Forge public and manufacturing inquiries",
+      "contact_url": "https://radianforge.com/",
+      "current_activity": "Radian Forge opened its Portsmouth operation in 2026 and is scaling large-format wire-arc additive manufacturing for U.S. Navy production and sustainment needs.",
+      "latitude": 36.828755,
+      "location_precision": "exact",
+      "longitude": -76.296649,
+      "missions": [
+        "Logistics and contested logistics"
+      ],
+      "name": "Radian Forge Portsmouth Manufacturing Facility",
+      "overview": "Radian Forge operates a Portsmouth wire-arc additive manufacturing facility focused on large metal components for naval, maritime, and defense customers. Its process combines robotic welding, digital design, and in-process monitoring.",
+      "platform_domains": [
+        "Maritime surface systems",
+        "Undersea systems"
+      ],
+      "postal_code": "23704",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Hampton Roads",
+      "short_description": "Portsmouth wire-arc additive manufacturing facility producing large, precision-grade maritime and defense components.",
+      "sources": [
+        {
+          "title": "Radian Forge maritime additive manufacturing capabilities",
+          "url": "https://radianforge.com/"
+        },
+        {
+          "title": "VEDP Radian Forge Portsmouth manufacturing investment",
+          "url": "https://www.vedp.org/press-release/2026-02/radian-forge-portsmouth"
+        },
+        {
+          "title": "Radian Forge Portsmouth facility address",
+          "url": "https://www.linkedin.com/company/radian-forge"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Manufacturing and supply chain",
+        "Federal and defense customer access",
+        "Supporting ecosystem asset",
+        "Manufacturing facilities"
+      ],
+      "unmanned_systems_relevance": "Provides advanced metal-component production that can support Virginia maritime and undersea system integrators, including uncrewed-platform supply chains. Reviewed sources do not document a dedicated UxS production line, so this is a supporting ecosystem asset rather than a core uncrewed-systems manufacturer.",
+      "website_url": "https://radianforge.com/"
     },
     {
       "address_line": "2500 Rivermont Ave",
