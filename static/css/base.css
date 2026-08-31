@@ -315,6 +315,8 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
   .detail-header, .detail-grid { grid-template-columns: 1fr; }
   .detail-header { gap: 16px; }
   .detail-grid { gap: 18px; }
+  .detail-main section { margin-bottom: 20px; padding-bottom: 20px; }
+  .overview-section p, .relevance-section p { font-size: 14px; line-height: 1.5; }
   .detail-verification-footer { grid-template-columns: 1fr; gap: 5px; }
   .source-list > div { display: grid; grid-template-columns: 1fr; gap: 5px; }
   .data-stats div { padding: 16px 9px; }
