@@ -112,6 +112,15 @@ test("regional summaries report mix, precision, review, and capabilities", () =>
   assert.deepEqual(summary.capabilities[0], ["Autonomy and AI", 2]);
 });
 
+test("closed polygons and repeated vertices do not select points outside the area", () => {
+  const features = [feature("inside", 36.85, -76.3), feature("outside", 38.9, -77.04)];
+  const start = { lat: 36.8, lng: -76.4 };
+  const vertices = [start, { lat: 36.8, lng: -76.2 }, { lat: 37, lng: -76.3 }];
+  for (const polygon of [[...vertices, start], [start, ...vertices]]) {
+    assert.deepEqual(featuresWithinPolygon(features, polygon).map((item) => item.id), ["inside"]);
+  }
+});
+
 test("CSV export preserves names and public map metadata", () => {
   const csv = featureCsv([feature("quoted", 36.86, -76.29, { name: 'Asset "One"' })]);
   assert.match(csv, /name,asset_type,address/);

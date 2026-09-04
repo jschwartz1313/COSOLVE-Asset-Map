@@ -11,6 +11,8 @@ from django.utils import timezone
 from apps.assets.models import Asset, AssetReviewComment
 from apps.sources.models import Source
 
+from .apply_catalog_corrections import CONFLICT_PREFIX, review_required_names
+
 REVIEW_COMMENT_PREFIX = "Catalog editorial review:"
 FOLLOW_UP_COMMENT_PREFIX = "Catalog research follow-up:"
 
@@ -22,6 +24,16 @@ def review_key(reviewed_at, asset_name, evidence):
         sort_keys=True,
     )
     return hashlib.sha256(payload.encode()).hexdigest()[:16]
+
+
+def has_staff_review_context(asset):
+    return bool(
+        asset.reviewed_by_id
+        or asset.review_assignee_id
+        or asset.review_due_at
+        or asset.history.filter(history_user__isnull=False).exists()
+        or asset.review_comments.filter(author__isnull=False).exists()
+    )
 
 
 class Command(BaseCommand):
@@ -38,6 +50,7 @@ class Command(BaseCommand):
     @transaction.atomic
     def handle(self, *args, **options):
         manifest = json.loads(options["reviews"].read_text())
+        research_follow_ups = review_required_names()
         reviewed_on = date.fromisoformat(manifest["reviewed_at"])
         reviewed_at = timezone.make_aware(datetime.combine(reviewed_on, time(hour=12)))
         verified_assets = 0
@@ -49,6 +62,20 @@ class Command(BaseCommand):
         for asset_name, source_urls in manifest.get("reviewed_assets", {}).items():
             asset = Asset.objects.filter(name=asset_name).first()
             if asset is None or not asset.internal_notes.startswith("Catalog provenance:"):
+                skipped += 1
+                continue
+            if (
+                not source_urls
+                or asset_name in research_follow_ups
+                or asset.review_comments.filter(body__startswith=CONFLICT_PREFIX).exists()
+                or asset.visibility != Asset.Visibility.PUBLIC
+                or asset.status not in Asset.public_status_values()
+                or has_staff_review_context(asset)
+                or (
+                    asset.reviewed_at is None
+                    and (asset.review_notes or asset.review_priority != Asset.ReviewPriority.NORMAL)
+                )
+            ):
                 skipped += 1
                 continue
 
@@ -76,6 +103,8 @@ class Command(BaseCommand):
             if any(
                 source.verification_status in {"stale", "rejected"}
                 or source.link_review_status == Source.LinkReviewStatus.NEEDS_REPLACEMENT
+                or source.history.filter(history_user__isnull=False).exists()
+                or (source.last_verified_at and source.last_verified_at > reviewed_on)
                 for source in sources
             ):
                 self.stderr.write(
@@ -91,10 +120,10 @@ class Command(BaseCommand):
                 source.last_verified_at = reviewed_on
                 source.link_review_status = Source.LinkReviewStatus.ACCEPTED
                 source.link_review_notes = (
-                    f"Official public source reviewed for the full catalog audit "
+                    f"Official public source reviewed for the catalog editorial review "
                     f"on {reviewed_on:%Y-%m-%d}."
                 )
-                source._change_reason = "Source verified in the full public-source catalog audit."
+                source._change_reason = "Source verified in a catalog editorial review."
                 source.save()
                 verified_sources += 1
 
@@ -109,12 +138,13 @@ class Command(BaseCommand):
                 asset.review_priority = Asset.ReviewPriority.NORMAL
                 if not asset.review_notes:
                     asset.review_notes = (
-                        "Full catalog review confirmed the record's identity, Virginia location, "
+                        "Catalog editorial review confirmed the record's identity, "
+                        "Virginia location, "
                         "and described unmanned-systems role against the listed official sources."
                     )
                 asset.published_at = asset.published_at or reviewed_at
                 asset._change_reason = (
-                    "Full-catalog editorial verification completed from official sources."
+                    "Catalog editorial verification completed from official sources."
                 )
                 asset.save()
                 verified_assets += 1
@@ -139,11 +169,19 @@ class Command(BaseCommand):
             if asset is None or not asset.internal_notes.startswith("Catalog provenance:"):
                 skipped += 1
                 continue
+            if (
+                asset.visibility != Asset.Visibility.PUBLIC
+                or asset.status not in Asset.public_status_values()
+                or has_staff_review_context(asset)
+            ):
+                skipped += 1
+                continue
             key = review_key(reviewed_on, asset_name, reason)
             marker = f"{FOLLOW_UP_COMMENT_PREFIX} {key}"
             if asset.review_comments.filter(body__startswith=marker).exists():
                 continue
-            asset.review_priority = Asset.ReviewPriority.HIGH
+            if asset.review_priority == Asset.ReviewPriority.NORMAL:
+                asset.review_priority = Asset.ReviewPriority.HIGH
             if not asset.review_notes:
                 asset.review_notes = reason
             asset._change_reason = (
@@ -159,7 +197,7 @@ class Command(BaseCommand):
 
         self.stdout.write(
             self.style.SUCCESS(
-                f"Applied {verified_assets} full-catalog asset reviews and "
+                f"Applied {verified_assets} catalog asset reviews and "
                 f"{verified_sources} source "
                 f"reviews; supplemented {supplemented_assets} existing reviews; flagged "
                 f"{follow_ups} unresolved records; skipped {skipped}."

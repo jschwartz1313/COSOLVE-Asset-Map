@@ -10,6 +10,8 @@ from apps.assets.models import Asset
 from apps.catalog.models import Capability, PlatformDomain, Region, StrategicCategory
 from apps.sources.models import Source
 
+from .apply_catalog_corrections import CONFLICT_PREFIX, protected_asset
+
 PROFILE_FIELDS = (
     "overview",
     "contact_text",
@@ -47,9 +49,7 @@ ECOSYSTEM_ROLE_CATEGORIES = {
 }
 MANUFACTURING_FACILITY_CATEGORY = "Manufacturing facilities"
 MANUFACTURING_CAPABILITY = "Manufacturing, materials, and prototyping"
-ADDITIVE_STRATEGIC_CATEGORIES = ECOSYSTEM_ROLE_CATEGORIES | {
-    MANUFACTURING_FACILITY_CATEGORY
-}
+ADDITIVE_STRATEGIC_CATEGORIES = ECOSYSTEM_ROLE_CATEGORIES | {MANUFACTURING_FACILITY_CATEGORY}
 TARGET_CONTACT_UPGRADES = {
     "ANRA Technologies",
     "Advanced Aircraft Company",
@@ -286,9 +286,15 @@ class Command(BaseCommand):
         removed_stale_sources = 0
         for record in records:
             asset = Asset.objects.filter(name=record["name"]).first()
-            if asset is None:
+            if asset is None or protected_asset(asset):
+                continue
+            if asset.review_comments.filter(body__startswith=CONFLICT_PREFIX).exists():
                 continue
 
+            original_values = {
+                field.attname: getattr(asset, field.attname)
+                for field in asset._meta.concrete_fields
+            }
             changed_fields = []
             catalog_managed = asset.internal_notes.startswith("Catalog provenance:")
             legacy_website_urls = LEGACY_SHARED_WEBSITE_URLS | LEGACY_WEBSITE_URLS_BY_ASSET.get(
@@ -348,11 +354,7 @@ class Command(BaseCommand):
                     changed_fields.append(field)
                     corrected_description |= field == "short_description"
             if corrected_description and asset.overview.startswith(
-                tuple(
-                    LEGACY_FIELD_VALUES_BY_ASSET[record["name"]].get(
-                        "short_description", set()
-                    )
-                )
+                tuple(LEGACY_FIELD_VALUES_BY_ASSET[record["name"]].get("short_description", set()))
             ):
                 asset.overview = record["overview"]
                 changed_fields.append("overview")
@@ -485,13 +487,26 @@ class Command(BaseCommand):
                 )
                 changed_fields.append("region")
 
-            if changed_fields:
-                asset.save(update_fields=[*changed_fields, "updated_at"])
+            actual_changes = set()
+            for name in changed_fields:
+                field = asset._meta.get_field(name)
+                value = field.to_python(getattr(asset, field.attname))
+                if value != original_values[field.attname]:
+                    actual_changes.add(name)
+            if actual_changes:
+                asset.save(update_fields=[*actual_changes, "updated_at"])
                 updated_assets += 1
 
             existing_urls = set(asset.sources.values_list("url", flat=True))
             for source_data in record["sources"]:
                 if source_data["url"] in existing_urls:
+                    continue
+                if Source.history.filter(
+                    asset_id=asset.pk,
+                    url=source_data["url"],
+                    history_type="-",
+                    history_user_id__isnull=False,
+                ).exists():
                     continue
                 Source.objects.create(
                     asset=asset,
@@ -503,13 +518,19 @@ class Command(BaseCommand):
                 existing_urls.add(source_data["url"])
                 added_sources += 1
 
-            stale_urls = STALE_CATALOG_SOURCE_URLS.get(record["name"], set())
+            catalog_urls = {source["url"] for source in record["sources"]}
+            stale_urls = STALE_CATALOG_SOURCE_URLS.get(record["name"], set()) - catalog_urls
             if stale_urls:
-                deleted_count, _details = asset.sources.filter(
+                stale_sources = asset.sources.filter(
                     url__in=stale_urls,
-                    notes__startswith="Catalog provenance:",
-                ).delete()
-                removed_stale_sources += deleted_count
+                    notes=f"Catalog provenance: {record['provenance']}",
+                    is_public=True,
+                    link_review_status=Source.LinkReviewStatus.AUTOMATIC,
+                )
+                for source in stale_sources:
+                    if not source.history.filter(history_user_id__isnull=False).exists():
+                        deleted_count, _details = source.delete()
+                        removed_stale_sources += deleted_count
 
         self.stdout.write(
             self.style.SUCCESS(

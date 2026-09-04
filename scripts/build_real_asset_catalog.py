@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "virginia_real_assets.json"
 CATALOG_DATE = "2026-08-21"
-BUILD_DATE = "2026-08-30"
+BUILD_DATE = "2026-09-04"
 
 FAA_LAYER = (
     "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
@@ -40,6 +40,8 @@ WEBSITE_ENRICHMENT_PATH = ROOT / "data" / "asset_website_enrichment.json"
 PRIORITY_PROFILE_ENRICHMENT_PATH = ROOT / "data" / "priority_profile_enrichment.json"
 SOURCE_ENRICHMENT_PATH = ROOT / "data" / "asset_source_enrichment.json"
 LOCATION_ENRICHMENT_PATH = ROOT / "data" / "asset_location_enrichment.json"
+SEPTEMBER_EXPANSION_PATH = ROOT / "data" / "asset_expansion_2026_09_04.json"
+SEPTEMBER_CORRECTIONS_PATH = ROOT / "data" / "asset_corrections_2026_09_04.json"
 
 IPEDS_NAME_ALIASES = {
     "University of Virginia-Main Campus": "University of Virginia",
@@ -11504,6 +11506,23 @@ def validate(records, relationships):
         )
 
 
+def apply_reviewed_corrections(records):
+    """Apply the same reviewed changes to generated data that deployments apply conditionally."""
+    records_by_name = {record["name"]: record for record in records}
+    manifest = json.loads(SEPTEMBER_CORRECTIONS_PATH.read_text())
+    for correction in manifest["corrections"]:
+        record = records_by_name[correction["name"]]
+        record.update(correction["after"])
+        replacements = correction.get("replace_sources", [])
+        obsolete = {item["old_url"] for item in replacements}
+        record["sources"] = [item for item in record["sources"] if item["url"] not in obsolete]
+        additions = correction.get("add_sources", []) + [item["source"] for item in replacements]
+        for item in additions:
+            if not any(source["url"] == item["url"] for source in record["sources"]):
+                record["sources"].append(item)
+    return records
+
+
 def main():
     records = (
         airport_records()
@@ -11514,9 +11533,11 @@ def main():
         + VERIFIED_UXS_EXPANSION
         + VERIFIED_HAMPTON_ROADS_EXPANSION
         + VERIFIED_MANUFACTURING_EXPANSION
+        + json.loads(SEPTEMBER_EXPANSION_PATH.read_text())["records"]
     )
     records = [finalize_record(apply_location_override(record)) for record in records]
     records = apply_university_campus_locations(records)
+    records = apply_reviewed_corrections(records)
     records.sort(key=lambda item: item["name"].casefold())
     relationships = list(CATALOG_RELATIONSHIPS) + university_relationships()
     relationships.extend(

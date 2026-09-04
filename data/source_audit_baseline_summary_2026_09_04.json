@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-09-04T20:10:49.019965+00:00",
+  "catalog_record_count": 500,
+  "catalog_sha256": "ac8346bec150477716b9aa74581c28a5678e89347ece839782da365f1399d6b7",
+  "unique_url_count": 954,
+  "url_reference_count": 2629,
+  "classification_counts": {
+    "reachable": 823,
+    "access_blocked_or_rate_limited": 105,
+    "http_not_found": 5,
+    "network_or_tls_error": 18,
+    "redirected_to_homepage_review": 3
+  },
+  "assets_with_url_issues": 94,
+  "assets_without_readable_html_source": 67,
+  "failed_or_redirected_urls": [
+    {
+      "url": "https://blueridgedefense.com/",
+      "http_status": 404,
+      "classification": "http_not_found",
+      "checked_at": "2026-09-04T20:06:01.909625+00:00",
+      "final_url": "https://blueridgedefense.com/"
+    },
+    {
+      "url": "https://ir.wrap.com/sec-filings/annual-reports/content/0001140361-26-011401/0001140361-26-011401.pdf",
+      "http_status": 404,
+      "classification": "http_not_found",
+      "checked_at": "2026-09-04T20:07:02.355811+00:00",
+      "final_url": "https://ir.wrap.com/sec-filings/annual-reports/content/0001140361-26-011401/0001140361-26-011401.pdf"
+    },
+    {
+      "url": "https://vatestbed.com/about",
+      "http_status": 200,
+      "classification": "redirected_to_homepage_review",
+      "checked_at": "2026-09-04T20:06:57.843400+00:00",
+      "final_url": "https://vatestbed.com/"
+    },
+    {
+      "url": "https://virginiauas.com/home/",
+      "http_status": 200,
+      "classification": "redirected_to_homepage_review",
+      "checked_at": "2026-09-04T20:06:59.796740+00:00",
+      "final_url": "https://virginiauas.com/"
+    },
+    {
+      "url": "https://www.axon.com/products/dedrone",
+      "http_status": 404,
+      "classification": "http_not_found",
+      "checked_at": "2026-09-04T20:06:10.850750+00:00",
+      "final_url": "https://www.axon.com/products/dedrone"
+    },
+    {
+      "url": "https://www.caci.com/sites/default/files/2022-11/F614_2210_Maritime_cUAS.pdf",
+      "http_status": 404,
+      "classification": "http_not_found",
+      "checked_at": "2026-09-04T20:06:03.225992+00:00",
+      "final_url": "https://www.caci.com/sites/default/files/2022-11/F614_2210_Maritime_cUAS.pdf"
+    },
+    {
+      "url": "https://www.hamptonu.edu/studentservices/admissions",
+      "http_status": 200,
+      "classification": "redirected_to_homepage_review",
+      "checked_at": "2026-09-04T20:06:17.567510+00:00",
+      "final_url": "https://home.hamptonu.edu/"
+    },
+    {
+      "url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/town_council/meeting/11057/tc_regmtg_03_06_2023.pdf",
+      "http_status": 404,
+      "classification": "http_not_found",
+      "checked_at": "2026-09-04T20:06:18.913804+00:00",
+      "final_url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/town_council/meeting/11057/tc_regmtg_03_06_2023.pdf"
+    }
+  ]
+}

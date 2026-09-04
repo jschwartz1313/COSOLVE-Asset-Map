@@ -1,0 +1,15 @@
+{
+  "follow_up_assets": {
+    "Blue Ridge Defense Works": "Company homepage returned HTTP 404. Exact-name and domain web searches did not corroborate the Virginia interceptor/counter-UAS claim. SAM returned a client-rendered page with no readable entity text. This is insufficient to re-confirm identity, Winchester location, capability or current operations; it is not evidence of nonexistence or closure.",
+    "Haymarket Police Department Drone Program": "Original council packet returns HTTP 404. Search-indexed separate 2022 police annual-report PDF contains the implemented-program statement but also returns HTTP 404 by direct GET, despite web text availability. Neither old local-government PDF should be described as a freshly working replacement.",
+    "L3Harris Orange County Propulsion Manufacturing Site": "SupplierNet hostname failed DNS resolution in this runtime. Search still indexes the official SupplierNet site, so classify this as unresolved transport availability rather than a confirmed stale PDF.",
+    "Liquid Robotics Herndon Headquarters and Production": "Current official contact page still lists Herndon, but the May 7, 2026 company announcement schedules headquarters and manufacturing relocation to Jessup, Maryland by the end of 2026. Reconfirm which Virginia operations remain after that move; the profile already discloses the transition.",
+    "PerimeterAI Group": "The company and official accelerator announcement establish Haymarket locality and developing acoustic drone-sensing work, but no public Virginia street address was corroborated. Keep the record without a point until a public business address is available.",
+    "VCU ARVL Robotic Drone System": "The legacy laboratory hostname shared by these three records failed DNS resolution. Confirm a current official VCU laboratory page before changing its capability evidence.",
+    "VCU Autonomous Robots and Vehicles Laboratory": "The legacy laboratory hostname shared by these three records failed DNS resolution. Confirm a current official VCU laboratory page before changing its capability evidence.",
+    "VCU Robotics and Autonomous Systems Group": "The legacy laboratory hostname shared by these three records failed DNS resolution. Confirm a current official VCU laboratory page before changing its capability evidence."
+  },
+  "methodology": "Targeted research follow-up flags from the 2026-09-04 source audit. This manifest does not promote machine-checked links or newly added records to editorially verified status. Asset source and location research is documented in the separate expansion, correction, and audit files.",
+  "reviewed_assets": {},
+  "reviewed_at": "2026-09-04"
+}

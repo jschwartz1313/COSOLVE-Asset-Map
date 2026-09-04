@@ -60,8 +60,168 @@ class ImportWorkflowTests(TestCase):
             "Demo Import,facility,Fixture,Supports testing,active,Current flight testing\n"
         )
         response = self.upload(content)
-        self.assertContains(response, "Activity details require an activity source URL")
-        self.assertContains(response, "Activity details require an activity review date")
+        self.assertContains(
+            response, "Current activity and partnership claims require a public source"
+        )
+        self.assertContains(
+            response, "Current activity and partnership claims require a review date"
+        )
+
+    def test_partial_update_preserves_omitted_details_and_taxonomy(self):
+        asset = Asset.objects.create(
+            name="Partial update",
+            record_type=Asset.RecordType.FACILITY,
+            short_description="Before",
+            unmanned_systems_relevance="Testing",
+            city="Norfolk",
+            latitude="36.850000",
+            longitude="-76.280000",
+            location_precision=Asset.LocationPrecision.EXACT,
+            overview="Keep the profile",
+            contact_url="https://example.org/contact",
+            region=self.region,
+            activity_status=Asset.ActivityStatus.ACTIVE,
+            current_activity="Testing",
+            activity_source_url="https://example.org/activity",
+            activity_last_verified_at=timezone.localdate(),
+        )
+        asset.strategic_categories.add(self.category)
+        response = self.upload(
+            "slug,name,record_type,short_description,unmanned_systems_relevance,current_activity\n"
+            f"{asset.slug},Renamed asset,facility,After,Testing,Updated testing\n"
+        )
+        self.assertContains(response, "Ready")
+        self.client.post(reverse("imports:commit"), {"update_existing": "1"})
+        asset.refresh_from_db()
+        self.assertEqual(asset.name, "Renamed asset")
+        self.assertEqual(asset.city, "Norfolk")
+        self.assertEqual(str(asset.latitude), "36.850000")
+        self.assertEqual(asset.location_precision, Asset.LocationPrecision.EXACT)
+        self.assertEqual(asset.overview, "Keep the profile")
+        self.assertEqual(asset.contact_url, "https://example.org/contact")
+        self.assertEqual(asset.current_activity, "Updated testing")
+        self.assertEqual(asset.region, self.region)
+        self.assertEqual(list(asset.strategic_categories.all()), [self.category])
+
+    def test_invalid_coordinates_and_field_lengths_block_preview(self):
+        for latitude in ("91", "NaN", "Infinity", "36.1234567"):
+            with self.subTest(latitude=latitude):
+                response = self.upload(
+                    "name,record_type,short_description,unmanned_systems_relevance,latitude,longitude\n"
+                    f"Invalid asset,facility,Fixture,Testing,{latitude},-76.2\n"
+                )
+                self.assertFalse(response.context["can_commit"])
+                self.client.post(reverse("imports:commit"))
+                self.assertFalse(Asset.objects.exists())
+        response = self.upload(
+            "name,record_type,short_description,unmanned_systems_relevance\n"
+            f"{'A' * 221},facility,Fixture,Testing\n"
+        )
+        self.assertFalse(response.context["can_commit"])
+
+    def test_invalid_second_upload_cannot_commit_previous_preview(self):
+        self.upload(
+            "name,record_type,short_description,unmanned_systems_relevance\n"
+            "Stale preview,facility,Fixture,Testing\n"
+        )
+        self.upload("wrong,headers\ninvalid,data\n")
+        self.client.post(reverse("imports:commit"))
+        self.assertFalse(Asset.objects.exists())
+
+    def test_repeated_assets_in_file_block_commit(self):
+        response = self.upload(
+            "name,record_type,short_description,unmanned_systems_relevance\n"
+            "Repeated asset,facility,Fixture,Testing\n"
+            "Repeated asset,facility,Other fixture,Testing\n"
+        )
+        self.assertContains(response, "This asset occurs more than once")
+        self.client.post(reverse("imports:commit"))
+        self.assertFalse(Asset.objects.exists())
+
+    def test_add_permission_does_not_allow_updating_existing_assets(self):
+        user = get_user_model().objects.create_user("importer", password="test", is_staff=True)
+        user.user_permissions.add(Permission.objects.get(codename="add_asset"))
+        asset = Asset.objects.create(
+            name="Protected",
+            record_type=Asset.RecordType.FACILITY,
+            short_description="Original",
+            unmanned_systems_relevance="Testing",
+        )
+        self.client.force_login(user)
+        self.upload(
+            "name,record_type,short_description,unmanned_systems_relevance\n"
+            "Protected,facility,Changed,Testing\n"
+        )
+        response = self.client.post(reverse("imports:commit"), {"update_existing": "1"})
+        self.assertEqual(response.status_code, 403)
+        asset.refresh_from_db()
+        self.assertEqual(asset.short_description, "Original")
+
+    def test_round_trip_preserves_private_and_same_title_sources(self):
+        asset = Asset.objects.create(
+            name="Source round trip",
+            record_type=Asset.RecordType.FACILITY,
+            short_description="Fixture",
+            unmanned_systems_relevance="Testing",
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        )
+        private = Source.objects.create(
+            asset=asset,
+            title="Shared source title",
+            url="https://example.org/private",
+            is_public=False,
+        )
+        public = Source.objects.create(
+            asset=asset,
+            title="Shared source title",
+            url="https://example.org/public",
+            http_status=403,
+            last_checked_at=timezone.now(),
+            link_review_status=Source.LinkReviewStatus.ACCEPTED,
+            link_review_notes="Official evidence confirmed in a browser",
+        )
+        exported = self.client.get(reverse("imports:export"))
+        self.assertNotContains(exported, private.url)
+        exported = self.client.get(reverse("imports:export"), {"scope": "all"})
+        response = self.upload(exported.content.decode())
+        self.assertContains(response, "Ready")
+        self.client.post(reverse("imports:commit"), {"update_existing": "1"})
+        private.refresh_from_db()
+        public.refresh_from_db()
+        self.assertFalse(private.is_public)
+        self.assertEqual(asset.sources.count(), 2)
+        self.assertEqual(public.link_review_status, Source.LinkReviewStatus.ACCEPTED)
+
+    def test_malformed_csv_blocks_commit(self):
+        for content in (
+            "name,record_type,short_description,unmanned_systems_relevance\n"
+            "Unquoted,facility,Fixture,Testing,Extra\n",
+            "name,name,record_type,short_description,unmanned_systems_relevance\n"
+            "First,Second,facility,Fixture,Testing\n",
+            'name,record_type,short_description,unmanned_systems_relevance\n"Unclosed',
+        ):
+            with self.subTest(content=content):
+                response = self.upload(content)
+                self.assertFalse(response.context.get("can_commit", False))
+                self.client.post(reverse("imports:commit"))
+                self.assertFalse(Asset.objects.exists())
+
+    def test_changed_database_constraint_cancels_entire_import(self):
+        self.upload(
+            "name,record_type,short_description,unmanned_systems_relevance\n"
+            "First new asset,facility,Fixture,Testing\n"
+            "Created since preview,facility,Fixture,Testing\n"
+        )
+        existing = Asset.objects.create(
+            name="Created since preview",
+            record_type=Asset.RecordType.FACILITY,
+            short_description="Keep original",
+            unmanned_systems_relevance="Testing",
+        )
+        response = self.client.post(reverse("imports:commit"), follow=True)
+        self.assertContains(response, "Import cancelled")
+        self.assertEqual(list(Asset.objects.all()), [existing])
 
     def test_duplicate_can_be_updated_and_returned_to_review(self):
         existing = Asset.objects.create(
@@ -141,9 +301,7 @@ class ImportWorkflowTests(TestCase):
         self.assertEqual(response.status_code, 302)
 
     def test_export_requires_export_permission(self):
-        user = get_user_model().objects.create_user(
-            "viewer", password="test", is_staff=True
-        )
+        user = get_user_model().objects.create_user("viewer", password="test", is_staff=True)
         user.user_permissions.add(Permission.objects.get(codename="view_asset"))
         self.client.force_login(user)
         response = self.client.get(reverse("imports:export"))
@@ -218,9 +376,7 @@ class ImportWorkflowTests(TestCase):
             url="https://example.org/source",
         )
         exported = self.client.get(reverse("imports:export"), {"scope": "all"})
-        upload = SimpleUploadedFile(
-            "round-trip.csv", exported.content, content_type="text/csv"
-        )
+        upload = SimpleUploadedFile("round-trip.csv", exported.content, content_type="text/csv")
         preview = self.client.post(reverse("imports:preview"), {"file": upload})
         self.assertContains(preview, "Ready")
         self.client.post(reverse("imports:commit"), {"update_existing": "1"})

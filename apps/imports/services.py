@@ -8,6 +8,7 @@ from django.core.validators import EmailValidator, URLValidator
 
 from apps.assets.models import Asset
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
+from apps.sources.models import Source
 
 REQUIRED_COLUMNS = {"name", "record_type", "short_description", "unmanned_systems_relevance"}
 TAXONOMY_COLUMNS = {
@@ -60,6 +61,43 @@ CSV_COLUMNS = [
     "last_verified_at",
     "internal_notes",
 ]
+IMPORT_FIELDS = set(CSV_COLUMNS) - {
+    "slug",
+    "region",
+    "status",
+    "visibility",
+    "last_verified_at",
+    "source_titles",
+    "source_urls",
+    "source_dates",
+    *TAXONOMY_COLUMNS,
+}
+
+
+def prepare_import_asset(data, asset=None):
+    """Apply supplied columns, preserving omitted fields on an existing record."""
+    is_new = asset is None
+    asset = asset or Asset()
+    for name in IMPORT_FIELDS & data.keys():
+        field = Asset._meta.get_field(name)
+        value = data[name]
+        if not value:
+            value = None if field.null else field.get_default() if field.has_default() else ""
+        setattr(asset, name, value)
+    if is_new and data.get("slug"):
+        asset.slug = data["slug"]
+    if "region" in data:
+        asset.region = Region.objects.filter(slug=data["region"]).first()
+    if "location_precision" in data:
+        asset.location_precision = data["location_precision"] or Asset.LocationPrecision.APPROXIMATE
+    asset.status = Asset.Status.DRAFT if is_new else Asset.Status.NEEDS_REVIEW
+    asset.visibility = Asset.Visibility.INTERNAL
+    asset.last_verified_at = None
+    asset.reviewed_at = None
+    asset.reviewed_by = None
+    asset.published_at = None
+    asset.full_clean()
+    return asset
 
 
 def split_values(value):
@@ -75,7 +113,7 @@ def joined_slugs(items):
 
 
 def asset_csv_row(asset, include_internal=False):
-    sources = list(asset.sources.all())
+    sources = [source for source in asset.sources.all() if include_internal or source.is_public]
     return {
         "slug": asset.slug,
         "name": asset.name,
@@ -93,9 +131,7 @@ def asset_csv_row(asset, include_internal=False):
         "partnership_opportunities": asset.partnership_opportunities,
         "activity_source_url": asset.activity_source_url,
         "activity_last_verified_at": (
-            asset.activity_last_verified_at.isoformat()
-            if asset.activity_last_verified_at
-            else ""
+            asset.activity_last_verified_at.isoformat() if asset.activity_last_verified_at else ""
         ),
         "owner_operator": asset.owner_operator,
         "available_acreage": (
@@ -129,9 +165,7 @@ def asset_csv_row(asset, include_internal=False):
         ),
         "status": asset.status,
         "visibility": asset.visibility,
-        "last_verified_at": (
-            asset.last_verified_at.isoformat() if asset.last_verified_at else ""
-        ),
+        "last_verified_at": (asset.last_verified_at.isoformat() if asset.last_verified_at else ""),
         "internal_notes": asset.internal_notes if include_internal else "",
     }
 
@@ -182,6 +216,11 @@ def source_values(row, errors):
             errors.append(f"Source {index} requires both a title and URL.")
             continue
         validate_url(url, f"Source {index} URL", errors)
+        for name, value in (("title", title), ("url", url)):
+            try:
+                Source._meta.get_field(name).clean(value, None)
+            except ValidationError as error:
+                errors.extend(f"Source {index}: {message}" for message in error.messages)
         parsed_date = parse_iso_date(source_date, f"Source {index} date", errors)
         sources.append(
             {
@@ -193,14 +232,32 @@ def source_values(row, errors):
     return sources
 
 
+def save_import_source(asset, data):
+    sources = asset.sources.filter(title=data["title"])
+    source = sources.filter(url=data["url"]).first()
+    if source is None:
+        source = (
+            sources.first() if sources.count() == 1 else Source(asset=asset, title=data["title"])
+        )
+    source.url = data["url"]
+    source.source_date = date.fromisoformat(data["source_date"]) if data["source_date"] else None
+    source.verification_status = "unreviewed"
+    source.last_verified_at = None
+    # Existing source visibility and manual decisions stay intact for the same URL.
+    source.save()
+
+
 def parse_csv(upload):
     text = upload.read().decode("utf-8-sig")
-    reader = csv.DictReader(io.StringIO(text))
+    reader = csv.DictReader(io.StringIO(text), strict=True)
     missing = REQUIRED_COLUMNS - set(reader.fieldnames or [])
     if missing:
         return [], [f"Missing required column(s): {', '.join(sorted(missing))}"]
+    if len(reader.fieldnames) != len(set(reader.fieldnames)):
+        return [], ["CSV column names must be unique."]
 
     rows = []
+    seen_assets = set()
     file_errors = []
     valid_record_types = {value for value, _label in Asset.RecordType.choices}
     valid_location_precisions = {value for value, _label in Asset.LocationPrecision.choices}
@@ -209,6 +266,10 @@ def parse_csv(upload):
     for number, raw in enumerate(reader, start=2):
         row = {key: (value or "").strip() for key, value in raw.items() if key is not None}
         errors = []
+        if None in raw:
+            errors.append(
+                "This row has more values than the CSV header; quote values containing commas."
+            )
         if not row["name"]:
             errors.append("Name is required.")
         if row["record_type"] not in valid_record_types:
@@ -235,13 +296,8 @@ def parse_csv(upload):
         validate_url(row.get("website_url", ""), "Website URL", errors)
         validate_url(row.get("contact_url", ""), "Contact URL", errors)
         validate_url(row.get("activity_source_url", ""), "Activity source URL", errors)
-        validate_url(
-            row.get("development_source_url", ""), "Development source URL", errors
-        )
-        if (
-            row.get("activity_status")
-            and row["activity_status"] not in valid_activity_statuses
-        ):
+        validate_url(row.get("development_source_url", ""), "Development source URL", errors)
+        if row.get("activity_status") and row["activity_status"] not in valid_activity_statuses:
             errors.append("Activity status is invalid.")
         if (
             row.get("development_status")
@@ -251,35 +307,13 @@ def parse_csv(upload):
         if row.get("available_acreage"):
             try:
                 acreage = Decimal(row["available_acreage"])
-                if acreage < 0:
+                if not acreage.is_finite():
+                    errors.append("Available acreage must be finite.")
+                elif acreage < 0:
                     errors.append("Available acreage cannot be negative.")
             except InvalidOperation:
                 errors.append("Available acreage must be numeric.")
-        activity_claims = (
-            row.get("activity_status"),
-            row.get("current_activity"),
-            row.get("partnership_opportunities"),
-        )
-        if any(activity_claims):
-            if not row.get("activity_source_url"):
-                errors.append("Activity details require an activity source URL.")
-            if not row.get("activity_last_verified_at"):
-                errors.append("Activity details require an activity review date.")
-        development_claims = (
-            row.get("owner_operator"),
-            row.get("available_acreage"),
-            row.get("development_status"),
-            row.get("development_notes"),
-            row.get("infrastructure_access"),
-        )
-        if any(development_claims):
-            if not row.get("development_source_url"):
-                errors.append("Development details require a development source URL.")
-            if not row.get("development_last_verified_at"):
-                errors.append("Development details require a development review date.")
-        parse_iso_date(
-            row.get("activity_last_verified_at", ""), "Activity review date", errors
-        )
+        parse_iso_date(row.get("activity_last_verified_at", ""), "Activity review date", errors)
         parse_iso_date(
             row.get("development_last_verified_at", ""),
             "Development review date",
@@ -307,6 +341,15 @@ def parse_csv(upload):
             asset = Asset.objects.filter(
                 name__iexact=row["name"], city__iexact=row.get("city", "")
             ).first()
+        asset_id = str(asset.pk) if asset else ""
+        identity = asset_id or (row["name"].casefold(), row.get("city", "").casefold())
+        if identity in seen_assets:
+            errors.append("This asset occurs more than once in the CSV.")
+        seen_assets.add(identity)
+        try:
+            prepare_import_asset(row, asset)
+        except ValidationError as error:
+            errors.extend(error.messages)
         rows.append(
             {
                 "number": number,

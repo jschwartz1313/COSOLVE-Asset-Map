@@ -37,8 +37,9 @@ async function expectContiguousMapPanels(page) {
 }
 
 async function expectUniformResultEdges(page) {
-  expect(
-    await page.locator(".result-row").evaluateAll((rows) =>
+  // The server-rendered count is available before the asynchronous result rows.
+  await expect.poll(() =>
+    page.locator(".result-row").evaluateAll((rows) =>
       [...new Set(rows.slice(0, 6).map((row) => getComputedStyle(row).borderLeftWidth))],
     ),
   ).toEqual(["0px"]);

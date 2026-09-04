@@ -121,8 +121,15 @@ class ReviewQualityWorkflowTests(TestCase):
             last_checked_at=timezone.now(),
             http_status=200,
         )
+        Source.objects.create(
+            asset=asset,
+            title="No HTTP result",
+            url="https://example.org/no-result",
+            last_checked_at=timezone.now(),
+        )
 
         response = self.client.get(reverse("imports:data-quality"))
 
         self.assertContains(response, "Source monitor")
         self.assertContains(response, "Healthy checks in the last 7 days")
+        self.assertEqual(response.context["healthy_source_count"], 1)

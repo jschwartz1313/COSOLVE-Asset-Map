@@ -134,7 +134,7 @@ class RealCatalogFileTests(TestCase):
             for record in records
             if "Manufacturing facilities" in record["strategic_categories"]
         ]
-        self.assertEqual(len(manufacturing), 25)
+        self.assertEqual(len(manufacturing), 26)
         self.assertTrue(
             all(
                 "Manufacturing, materials, and prototyping" in record["capabilities"]
@@ -190,7 +190,8 @@ class RealCatalogFileTests(TestCase):
             for record in hampton_roads
             if record["location_precision"] in {"approximate", "locality"}
         }
-        self.assertFalse(locality_only)
+        # The Southampton award identifies a jurisdiction, not its operating department.
+        self.assertEqual(locality_only, {"Southampton County First Responder UAS Capability"})
         self.assertTrue(
             all(
                 record.get("address_line")
@@ -314,6 +315,23 @@ class RealCatalogFileTests(TestCase):
     def test_catalog_review_manifests_use_attached_official_sources(self):
         catalog = self.load_catalog()
         records_by_name = {record["name"]: record for record in catalog["records"]}
+        september = json.loads(
+            (settings.BASE_DIR / "data" / "asset_expansion_2026_09_04.json").read_text()
+        )
+        september_names = {record["name"] for record in september["records"]}
+        self.assertEqual(len(september_names), 25)
+        self.assertEqual(set(september["evidence_reviews"]), september_names)
+        corrections = json.loads(
+            (settings.BASE_DIR / "data" / "asset_corrections_2026_09_04.json").read_text()
+        )
+        retired_urls = {}
+        for correction in corrections["corrections"]:
+            for replacement in correction.get("replace_sources", []):
+                retired_urls.setdefault(correction["name"], set()).add(replacement["old_url"])
+                self.assertIn(
+                    replacement["source"]["url"],
+                    {source["url"] for source in records_by_name[correction["name"]]["sources"]},
+                )
         manifest = json.loads(
             (settings.BASE_DIR / "data" / "asset_editorial_reviews.json").read_text()
         )
@@ -375,7 +393,8 @@ class RealCatalogFileTests(TestCase):
             {"Inertial Labs"},
         )
         self.assertEqual(
-            historical_names | expansion_names | hampton_roads_names | manufacturing_names,
+            historical_names | expansion_names | hampton_roads_names | manufacturing_names
+            | september_names,
             set(records_by_name),
         )
 
@@ -389,7 +408,9 @@ class RealCatalogFileTests(TestCase):
         for name, source_urls in reviewed_assets.items():
             self.assertIn(name, records_by_name)
             attached_urls = {source["url"] for source in records_by_name[name]["sources"]}
-            self.assertTrue(set(source_urls).issubset(attached_urls), name)
+            self.assertTrue(
+                set(source_urls).issubset(attached_urls | retired_urls.get(name, set())), name
+            )
         for name, source_urls in location_manifest["reviewed_assets"].items():
             self.assertIn(name, records_by_name)
             attached_urls = {source["url"] for source in records_by_name[name]["sources"]}
@@ -410,10 +431,14 @@ class RealCatalogFileTests(TestCase):
         self.assertTrue(resolved_names.issubset(manifest["reviewed_assets"]))
         for name in resolved_names:
             record = records_by_name[name]
-            self.assertEqual(record["activity_status"], "active")
+            haymarket = name == "Haymarket Police Department Drone Program"
+            self.assertEqual(record["activity_status"], "" if haymarket else "active")
             self.assertTrue(record["current_activity"])
             self.assertTrue(record["contact_phone"])
-            self.assertEqual(record["activity_last_verified_at"], "2026-08-21")
+            self.assertEqual(
+                record["activity_last_verified_at"],
+                "2026-09-04" if haymarket else "2026-08-21",
+            )
 
     def test_august_21_catalog_audit_remains_a_complete_historical_snapshot(self):
         catalog = self.load_catalog()
@@ -955,7 +980,10 @@ class RealCatalogFileTests(TestCase):
             reviewed_at__isnull=False,
             last_verified_at=date(2026, 8, 21),
         )
-        self.assertEqual(reviewed.count(), len(manifest["reviewed_assets"]))
+        # Six old reviews cite retired links; Blue Ridge now explicitly requires fresh review.
+        self.assertEqual(reviewed.count(), len(manifest["reviewed_assets"]) - 7)
+        self.assertFalse(reviewed.filter(name="Blue Ridge Defense Works").exists())
+        self.assertFalse(reviewed.filter(name="Haymarket Police Department Drone Program").exists())
         self.assertEqual(
             Asset.objects.filter(
                 name__in=manifest["follow_up_assets"],
@@ -1111,14 +1139,21 @@ class RealCatalogFileTests(TestCase):
             reviewed_at__isnull=False,
             last_verified_at=date(2026, 8, 30),
         )
-        self.assertEqual(reviewed.count(), 7)
+        # Wrap's former PDF is retired; its historical review cannot verify a different URL.
+        self.assertEqual(reviewed.count(), 6)
+        self.assertFalse(
+            reviewed.filter(name="Wrap Technologies Norton Manufacturing Headquarters").exists()
+        )
         self.assertEqual(
             Source.objects.filter(
                 asset__name__in=manifest["reviewed_assets"],
                 verification_status="verified",
                 last_verified_at=date(2026, 8, 30),
             ).count(),
-            sum(len(urls) for urls in manifest["reviewed_assets"].values()),
+            sum(
+                len(urls) for name, urls in manifest["reviewed_assets"].items()
+                if name != "Wrap Technologies Norton Manufacturing Headquarters"
+            ),
         )
         self.assertEqual(
             Asset.objects.get(

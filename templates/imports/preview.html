@@ -2,7 +2,7 @@
 {% block content %}
 <div id="content-main">
   <h1>Import asset CSV</h1>
-  <p>Uploads are validated before any records are created. New records begin as internal drafts; updated records return to review. Complete working exports can be edited and imported back without dropping taxonomy, coordinates, or sources.</p>
+  <p>Uploads are validated before any records are created. New records begin as internal drafts; updated records return to review. Omitted columns preserve existing details; blank profile or category cells clear those values. Imported sources are added or updated. Complete working exports can be edited and imported back without dropping taxonomy, coordinates, or sources.</p>
   <form method="post" enctype="multipart/form-data">{% csrf_token %}<input type="file" name="file" accept=".csv,text/csv" required> <button class="button" type="submit">Preview import</button></form>
   {% if file_errors %}<ul class="errorlist">{% for error in file_errors %}<li>{{ error }}</li>{% endfor %}</ul>{% endif %}
   {% if rows %}
@@ -10,7 +10,7 @@
     <table><thead><tr><th>Row</th><th>Name</th><th>Type</th><th>Match</th><th>Validation</th></tr></thead><tbody>
     {% for row in rows %}<tr><td>{{ row.number }}</td><td>{{ row.data.name }}</td><td>{{ row.data.record_type }}</td><td>{% if row.duplicate %}Existing record{% else %}New{% endif %}</td><td>{% if row.errors %}<ul class="errorlist">{% for error in row.errors %}<li>{{ error }}</li>{% endfor %}</ul>{% else %}Ready{% endif %}</td></tr>{% endfor %}
     </tbody></table>
-    {% if can_commit %}<form method="post" action="{% url 'imports:commit' %}">{% csrf_token %}<p><label><input type="checkbox" name="update_existing" value="1"> Update matching records and return them to editorial review</label></p><button class="button default" type="submit">Commit import</button></form>{% endif %}
+    {% if can_commit %}<form method="post" action="{% url 'imports:commit' %}">{% csrf_token %}{% if perms.assets.change_asset %}<p><label><input type="checkbox" name="update_existing" value="1"> Update matching records and return them to editorial review</label></p>{% endif %}<button class="button default" type="submit">Commit import</button></form>{% endif %}
   {% endif %}
 </div>
 {% endblock %}

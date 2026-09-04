@@ -1,0 +1,2814 @@
+{
+  "generated_at": "2026-09-04",
+  "record_count": 25,
+  "methodology": "Distinct new organizations and documented facilities compared against the 500-record baseline. Official page contents establish capability and current public address; Census address-range and Esri point-address geocodes are retained at site precision; one locality-only startup has no fabricated point. Corporate offices do not imply every cited activity occurs at that point. AI-assisted evidence reviews do not set human verification state.",
+  "records": [
+    {
+      "name": "Bihrle Applied Research",
+      "record_type": "organization",
+      "address_line": "81 Research Drive",
+      "city": "Hampton",
+      "state": "VA",
+      "postal_code": "23666",
+      "latitude": 37.087907,
+      "longitude": -76.392766,
+      "location_precision": "site",
+      "region": "Hampton Roads",
+      "short_description": "Hampton aerospace company offering flight-simulation software for UAVs and unmanned multi-vehicle studies.",
+      "overview": "Hampton aerospace company offering flight-simulation software for UAVs and unmanned multi-vehicle studies. Bihrle currently publishes DSix simulation software for UAV flight models and unmanned multi-vehicle scenarios. A federal SBIR portfolio separately documents historical autonomous-aircraft navigation research; it does not establish an active award.",
+      "unmanned_systems_relevance": "Bihrle currently publishes DSix simulation software for UAV flight models and unmanned multi-vehicle scenarios. A federal SBIR portfolio separately documents historical autonomous-aircraft navigation research; it does not establish an active award.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Navigation and positioning",
+        "Simulation, digital twins, and synthetic environments"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "sources": [
+        {
+          "title": "Bihrle DSix UAV and unmanned multi-vehicle simulation",
+          "url": "https://bihrle.com/dsix/"
+        },
+        {
+          "title": "SBIR historical Bihrle research portfolio",
+          "url": "https://www.sbir.gov/portfolio/106770"
+        },
+        {
+          "title": "Bihrle published company identity and address",
+          "url": "https://bihrle.com/legal/"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=81+Research+Drive%2C+Hampton%2C+VA+23666&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "website_url": "https://bihrle.com/dsix/",
+      "contact_url": "https://bihrle.com/dsix/",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "757-766-2416",
+      "contact_email": "",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "Hampton aerospace company offering flight-simulation software for UAVs and unmanned multi-vehicle studies.",
+      "activity_source_url": "https://bihrle.com/dsix/",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "Booz Allen Hamilton",
+      "record_type": "organization",
+      "address_line": "8283 Greensboro Drive",
+      "city": "McLean",
+      "state": "VA",
+      "postal_code": "22102",
+      "latitude": 38.923271,
+      "longitude": -77.231063,
+      "location_precision": "site",
+      "region": "Northern Virginia",
+      "short_description": "McLean headquarters of an engineering and technology company developing software-defined autonomy.",
+      "overview": "McLean headquarters of an engineering and technology company developing software-defined autonomy. Booz Allen publishes autonomous-system integration and software capabilities. This corporate contact location is distinct from its specialized laboratories. Its announced Reston headquarters is scheduled to open in 2027.",
+      "unmanned_systems_relevance": "Booz Allen publishes autonomous-system integration and software capabilities. This corporate contact location is distinct from its specialized laboratories. Its announced Reston headquarters is scheduled to open in 2027.",
+      "platform_domains": [
+        "Cross-domain autonomy",
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "missions": [],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "sources": [
+        {
+          "title": "Booz Allen scalable autonomy capabilities",
+          "url": "https://www.boozallen.com/markets/defense/mission-ready-scalable-autonomy.html"
+        },
+        {
+          "title": "Booz Allen office locations",
+          "url": "https://www.boozallen.com/menu/office-locations.html"
+        },
+        {
+          "title": "Booz Allen future Reston headquarters schedule",
+          "url": "https://newsroom.boozallen.com/news-releases/news-release-details/booz-allen-relocate-global-headquarters-reston-virginia"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=8283+Greensboro+Drive%2C+McLean%2C+VA+22102&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "website_url": "https://www.boozallen.com/markets/defense/mission-ready-scalable-autonomy.html",
+      "contact_url": "https://www.boozallen.com/menu/office-locations.html",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "703-902-5000",
+      "contact_email": "",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "McLean headquarters of an engineering and technology company developing software-defined autonomy.",
+      "activity_source_url": "https://www.boozallen.com/markets/defense/mission-ready-scalable-autonomy.html",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "Bowman Consulting Unmanned Geospatial Services",
+      "record_type": "organization",
+      "address_line": "12355 Sunrise Valley Drive, Suite 520",
+      "city": "Reston",
+      "state": "VA",
+      "postal_code": "20191",
+      "latitude": 38.950763,
+      "longitude": -77.372733,
+      "location_precision": "site",
+      "region": "Northern Virginia",
+      "short_description": "Reston-headquartered engineering firm providing drone imaging, scanning, and geospatial services.",
+      "overview": "Reston-headquartered engineering firm providing drone imaging, scanning, and geospatial services. Bowman describes integrating its drone-based imaging and scanning operations into its national aerial-imaging business. This record locates the Virginia corporate contact rather than an aircraft operating base.",
+      "unmanned_systems_relevance": "Bowman describes integrating its drone-based imaging and scanning operations into its national aerial-imaging business. This record locates the Virginia corporate contact rather than an aircraft operating base.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing",
+        "Simulation, digital twins, and synthetic environments"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection"
+      ],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "sources": [
+        {
+          "title": "Bowman geospatial and drone-service operations",
+          "url": "https://bowman.com/news_tags/geospatial"
+        },
+        {
+          "title": "Bowman published corporate address",
+          "url": "https://investors.bowman.com/corporate-governance/contact-the-board"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=12355+Sunrise+Valley+Drive%2C+Reston%2C+VA+20191&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "website_url": "https://bowman.com/news_tags/geospatial",
+      "contact_url": "https://investors.bowman.com/corporate-governance/contact-the-board",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "703-464-1000",
+      "contact_email": "",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "Reston-headquartered engineering firm providing drone imaging, scanning, and geospatial services.",
+      "activity_source_url": "https://bowman.com/news_tags/geospatial",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "Curtiss-Wright Defense Solutions Ashburn",
+      "record_type": "organization",
+      "address_line": "20130 Lakeview Center Plaza, Suite 200",
+      "city": "Ashburn",
+      "state": "VA",
+      "postal_code": "20147",
+      "latitude": 39.058623,
+      "longitude": -77.451874,
+      "location_precision": "site",
+      "region": "Northern Virginia",
+      "short_description": "Ashburn defense-electronics division headquarters with embedded computing and sensor-processing products for unmanned systems.",
+      "overview": "Ashburn defense-electronics division headquarters with embedded computing and sensor-processing products for unmanned systems. Curtiss-Wright documents computing used on unmanned platforms and 2026 processing support for a sensor able to detect UAS. The public facility directory identifies its Ashburn office; production lines are not inferred from the headquarters address.",
+      "unmanned_systems_relevance": "Curtiss-Wright documents computing used on unmanned platforms and 2026 processing support for a sensor able to detect UAS. The public facility directory identifies its Ashburn office; production lines are not inferred from the headquarters address.",
+      "platform_domains": [
+        "Cross-domain autonomy",
+        "Unmanned aircraft systems",
+        "Counter-UAS"
+      ],
+      "capabilities": [
+        "Data engineering, analytics, and edge computing",
+        "Command, control, and communications",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Counter-UAS"
+      ],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "sources": [
+        {
+          "title": "Curtiss-Wright sensor-processing development including UAS detection",
+          "url": "https://defense-solutions.curtisswright.com/media-center/news/curtiss-wright-provide-sensor-processing-northrop-grumman-improved-threat-detection-system"
+        },
+        {
+          "title": "Curtiss-Wright Ashburn facility directory",
+          "url": "https://curtisswright.com/company/facilities"
+        },
+        {
+          "title": "Esri public address-point geocode (site approximation)",
+          "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=20130+Lakeview+Ctr+Plz%2C+Ashburn%2C+VA+20147&f=pjson&outFields=Match_addr%2CAddr_type%2CStAddr%2CCity%2CRegion%2CPostal&maxLocations=1"
+        }
+      ],
+      "website_url": "https://defense-solutions.curtisswright.com/media-center/news/curtiss-wright-provide-sensor-processing-northrop-grumman-improved-threat-detection-system",
+      "contact_url": "https://curtisswright.com/company/facilities",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "703-779-7800",
+      "contact_email": "",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "Ashburn defense-electronics division headquarters with embedded computing and sensor-processing products for unmanned systems.",
+      "activity_source_url": "https://defense-solutions.curtisswright.com/media-center/news/curtiss-wright-provide-sensor-processing-northrop-grumman-improved-threat-detection-system",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "Dewberry Gainesville sUAS Acquisition Team",
+      "record_type": "organization",
+      "address_line": "13575 Heathcote Boulevard, Suite 130",
+      "city": "Gainesville",
+      "state": "VA",
+      "postal_code": "20155",
+      "latitude": 38.803009,
+      "longitude": -77.599735,
+      "location_precision": "site",
+      "region": "Northern Virginia",
+      "short_description": "Gainesville-based small-UAS lidar and surveying acquisition team serving the mid-Atlantic region.",
+      "overview": "Gainesville-based small-UAS lidar and surveying acquisition team serving the mid-Atlantic region. Dewberry explicitly locates its sUAS acquisition team in Gainesville and describes aerial lidar, imagery, inspection, and ground-survey support. The contact directory supplies the Gainesville office address.",
+      "unmanned_systems_relevance": "Dewberry explicitly locates its sUAS acquisition team in Gainesville and describes aerial lidar, imagery, inspection, and ground-survey support. The contact directory supplies the Gainesville office address.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection"
+      ],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "sources": [
+        {
+          "title": "Dewberry Gainesville lidar sUAS acquisition team",
+          "url": "https://www.dewberry.com/docs/default-source/documents/lidar-suas-one-pager.pdf"
+        },
+        {
+          "title": "Dewberry Gainesville office contact",
+          "url": "https://www.dewberry.com/contact"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=13575+Heathcote+Boulevard%2C+Gainesville%2C+VA+20155&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "website_url": "https://www.dewberry.com/docs/default-source/documents/lidar-suas-one-pager.pdf",
+      "contact_url": "https://www.dewberry.com/contact",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "703-468-2211",
+      "contact_email": "",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "Gainesville-based small-UAS lidar and surveying acquisition team serving the mid-Atlantic region.",
+      "activity_source_url": "https://www.dewberry.com/docs/default-source/documents/lidar-suas-one-pager.pdf",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "Duncan-Parnell Ashland Unmanned Solutions",
+      "record_type": "organization",
+      "address_line": "305 Ashcake Road, Suite K",
+      "city": "Ashland",
+      "state": "VA",
+      "postal_code": "23005",
+      "latitude": 37.744906,
+      "longitude": -77.469209,
+      "location_precision": "site",
+      "region": "Greater Richmond",
+      "short_description": "Ashland branch offering drone hardware, maintenance, software, operator training, and hydrospatial equipment.",
+      "overview": "Ashland branch offering drone hardware, maintenance, software, operator training, and hydrospatial equipment. The branch-specific official page explicitly lists unmanned-solutions sales, service, parts, and UAS operator training at this Ashland location.",
+      "unmanned_systems_relevance": "The branch-specific official page explicitly lists unmanned-solutions sales, service, parts, and UAS operator training at this Ashland location.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Training and experimentation"
+      ],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Workforce and talent",
+        "Core unmanned-systems asset"
+      ],
+      "sources": [
+        {
+          "title": "Duncan-Parnell Ashland location and UAS services",
+          "url": "https://www.duncan-parnell.com/locations/ashland-va"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=305+Ashcake+Road%2C+Ashland%2C+VA+23005&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "website_url": "https://www.duncan-parnell.com/locations/ashland-va",
+      "contact_url": "https://www.duncan-parnell.com/locations/ashland-va",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "804-368-7525",
+      "contact_email": "",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "Ashland branch offering drone hardware, maintenance, software, operator training, and hydrospatial equipment.",
+      "activity_source_url": "https://www.duncan-parnell.com/locations/ashland-va",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "Electra Manassas Headquarters and Aircraft Development",
+      "record_type": "organization",
+      "address_line": "10761 James Payne Court",
+      "city": "Manassas",
+      "state": "VA",
+      "postal_code": "20110",
+      "latitude": 38.730274,
+      "longitude": -77.518157,
+      "location_precision": "site",
+      "region": "Northern Virginia",
+      "short_description": "Manassas headquarters of a developer of hybrid-electric ultra-short-takeoff aircraft.",
+      "overview": "Manassas headquarters of a developer of hybrid-electric ultra-short-takeoff aircraft. Electra supplies supporting advanced-air-mobility propulsion and aircraft-development expertise. Its aircraft program remains in development; a proposed production factory in Ohio is not a Virginia manufacturing asset.",
+      "unmanned_systems_relevance": "Electra supplies supporting advanced-air-mobility propulsion and aircraft-development expertise. Its aircraft program remains in development; a proposed production factory in Ohio is not a Virginia manufacturing asset.",
+      "platform_domains": [
+        "Advanced Air Mobility"
+      ],
+      "capabilities": [
+        "Propulsion, batteries, fuels, and energy systems",
+        "Systems engineering and integration",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "missions": [
+        "Logistics and contested logistics"
+      ],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Research and technical depth",
+        "Supporting ecosystem asset"
+      ],
+      "sources": [
+        {
+          "title": "Electra technology, current headquarters and development activity",
+          "url": "https://electra.aero/"
+        },
+        {
+          "title": "Electra defense and public headquarters contact",
+          "url": "https://electra.aero/defense"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=10761+James+Payne+Court%2C+Manassas%2C+VA+20110&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "website_url": "https://electra.aero/",
+      "contact_url": "https://electra.aero/defense",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "703-479-7870",
+      "contact_email": "",
+      "provenance": "curated-public-source",
+      "activity_status": "developing",
+      "current_activity": "Manassas headquarters of a developer of hybrid-electric ultra-short-takeoff aircraft.",
+      "activity_source_url": "https://electra.aero/",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "HDT Robotics BLADE Fredericksburg Facility",
+      "record_type": "organization",
+      "address_line": "510 Lansdowne Road",
+      "city": "Fredericksburg",
+      "state": "VA",
+      "postal_code": "22408",
+      "latitude": 38.265887,
+      "longitude": -77.463924,
+      "location_precision": "site",
+      "region": "Fredericksburg Region",
+      "short_description": "Fredericksburg HDT Robotics facility producing robotic arms and Hunter WOLF unmanned ground vehicles under the BLADE brand.",
+      "overview": "Fredericksburg HDT Robotics facility producing robotic arms and Hunter WOLF unmanned ground vehicles under the BLADE brand. The operator publishes its Fredericksburg address and current ground-robot products. HDT announced its BLADE branding in March 2026; the legal operating entity remains HDT Robotics, LLC.",
+      "unmanned_systems_relevance": "The operator publishes its Fredericksburg address and current ground-robot products. HDT announced its BLADE branding in March 2026; the legal operating entity remains HDT Robotics, LLC.",
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration",
+        "Autonomy and artificial intelligence"
+      ],
+      "missions": [
+        "Logistics and contested logistics",
+        "Training and experimentation"
+      ],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "sources": [
+        {
+          "title": "HDT Robotics products and facility contact",
+          "url": "https://www.hdtrobotics.com/"
+        },
+        {
+          "title": "BLADE and HDT Robotics current program news",
+          "url": "https://www.hdtglobal.com/news/"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=510+Lansdowne+Road%2C+Fredericksburg%2C+VA+22408&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "website_url": "https://www.hdtrobotics.com/",
+      "contact_url": "https://www.hdtrobotics.com/",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "800-969-8527",
+      "contact_email": "info@hdtglobal.com",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "Fredericksburg HDT Robotics facility producing robotic arms and Hunter WOLF unmanned ground vehicles under the BLADE brand.",
+      "activity_source_url": "https://www.hdtrobotics.com/",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "I Fly Drones Richmond Services and Training",
+      "record_type": "organization",
+      "address_line": "9507 Lyndonway Drive",
+      "city": "Richmond",
+      "state": "VA",
+      "postal_code": "23229",
+      "latitude": 37.615098,
+      "longitude": -77.57438,
+      "location_precision": "site",
+      "region": "Greater Richmond",
+      "short_description": "Richmond-area drone-services business offering imagery, mapping, inspection, equipment support, and pilot training.",
+      "overview": "Richmond-area drone-services business offering imagery, mapping, inspection, equipment support, and pilot training. The operator publishes aerial mapping, thermal imaging, drone repair, and instructional services. The marker denotes its publicly listed business contact address, not a flight-training field or public drop-in facility.",
+      "unmanned_systems_relevance": "The operator publishes aerial mapping, thermal imaging, drone repair, and instructional services. The marker denotes its publicly listed business contact address, not a flight-training field or public drop-in facility.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection",
+        "Training and experimentation"
+      ],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Workforce and talent",
+        "Core unmanned-systems asset"
+      ],
+      "sources": [
+        {
+          "title": "I Fly Drones services",
+          "url": "https://iflydrones.com/"
+        },
+        {
+          "title": "I Fly Drones contact address",
+          "url": "https://iflydrones.com/contact/"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=9507+Lyndonway+Drive%2C+Richmond%2C+VA+23229&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "website_url": "https://iflydrones.com/",
+      "contact_url": "https://iflydrones.com/contact/",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "804-356-5179",
+      "contact_email": "Gary@IFlyDrones.com",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "Richmond-area drone-services business offering imagery, mapping, inspection, equipment support, and pilot training.",
+      "activity_source_url": "https://iflydrones.com/",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "Industrial Control Specialties",
+      "record_type": "organization",
+      "address_line": "4455 Flexon Drive",
+      "city": "Prince George",
+      "state": "VA",
+      "postal_code": "23875",
+      "latitude": 37.251627,
+      "longitude": -77.369239,
+      "location_precision": "site",
+      "region": "Greater Richmond",
+      "short_description": "Prince George industrial systems integrator providing robotics, machine vision, and manufacturing controls.",
+      "overview": "Prince George industrial systems integrator providing robotics, machine vision, and manufacturing controls. ICS provides enabling automation, controls, and system-integration capacity for the manufacturing ecosystem. Its public description supports industrial robotics expertise, not a claim of an autonomous vehicle product.",
+      "unmanned_systems_relevance": "ICS provides enabling automation, controls, and system-integration capacity for the manufacturing ecosystem. Its public description supports industrial robotics expertise, not a claim of an autonomous vehicle product.",
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Perception, sensing, and sensor fusion",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "sources": [
+        {
+          "title": "ICS automation capabilities and business address",
+          "url": "https://icsva.com/"
+        },
+        {
+          "title": "ICS current careers and location",
+          "url": "https://icsva.com/careers/"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4455+Flexon+Drive%2C+Prince+George%2C+VA+23875&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "website_url": "https://icsva.com/",
+      "contact_url": "https://icsva.com/",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "804-526-7693",
+      "contact_email": "",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "Prince George industrial systems integrator providing robotics, machine vision, and manufacturing controls.",
+      "activity_source_url": "https://icsva.com/",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "Iridium Communications Headquarters",
+      "record_type": "organization",
+      "address_line": "1676 International Drive, Suite 1100",
+      "city": "McLean",
+      "state": "VA",
+      "postal_code": "22102",
+      "latitude": 38.9246,
+      "longitude": -77.227956,
+      "location_precision": "site",
+      "region": "Northern Virginia",
+      "short_description": "McLean satellite-network headquarters supporting communications for BVLOS unmanned aircraft and autonomous systems.",
+      "overview": "McLean satellite-network headquarters supporting communications for BVLOS unmanned aircraft and autonomous systems. Iridium reports a flight trial using its satellite avionics for remotely piloted BVLOS aircraft. The trial occurred in California; this record maps its current Virginia corporate office.",
+      "unmanned_systems_relevance": "Iridium reports a flight trial using its satellite avionics for remotely piloted BVLOS aircraft. The trial occurred in California; this record maps its current Virginia corporate office.",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Space-enabled services"
+      ],
+      "capabilities": [
+        "Command, control, and communications",
+        "Safety, policy, regulatory, and airspace integration"
+      ],
+      "missions": [
+        "Communications relay"
+      ],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "sources": [
+        {
+          "title": "Iridium BVLOS unmanned-aircraft flight trial",
+          "url": "https://investor.iridium.com/2023-06-20-Iridium-Proposes-a-New-Model-for-Monitored-BVLOS-UAS-Integration-in-the-National-Airspace-System"
+        },
+        {
+          "title": "Iridium current corporate address",
+          "url": "https://www.iridium.com/company/contact"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1676+International+Drive%2C+McLean%2C+VA+22102&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "website_url": "https://investor.iridium.com/2023-06-20-Iridium-Proposes-a-New-Model-for-Monitored-BVLOS-UAS-Integration-in-the-National-Airspace-System",
+      "contact_url": "https://www.iridium.com/company/contact",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "703-287-7400",
+      "contact_email": "",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "McLean satellite-network headquarters supporting communications for BVLOS unmanned aircraft and autonomous systems.",
+      "activity_source_url": "https://investor.iridium.com/2023-06-20-Iridium-Proposes-a-New-Model-for-Monitored-BVLOS-UAS-Integration-in-the-National-Airspace-System",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "Kollmorgen Radford Motion Systems",
+      "record_type": "organization",
+      "address_line": "203A West Rock Road",
+      "city": "Radford",
+      "state": "VA",
+      "postal_code": "24141",
+      "latitude": 37.117739,
+      "longitude": -80.555553,
+      "location_precision": "site",
+      "region": "New River Valley",
+      "short_description": "Radford motion-systems supplier with motors and engineering support for unmanned and mobile robotics.",
+      "overview": "Radford motion-systems supplier with motors and engineering support for unmanned and mobile robotics. Kollmorgen documents motors for ground, aerial, surface and undersea robots. Its worldwide location page identifies the Radford business; autonomous-vehicle fleet-control development is not assumed to be located there.",
+      "unmanned_systems_relevance": "Kollmorgen documents motors for ground, aerial, surface and undersea robots. Its worldwide location page identifies the Radford business; autonomous-vehicle fleet-control development is not assumed to be located there.",
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Unmanned aircraft systems",
+        "Maritime surface systems",
+        "Undersea systems"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Propulsion, batteries, fuels, and energy systems",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "sources": [
+        {
+          "title": "Kollmorgen mobile-robot motion products",
+          "url": "https://www.kollmorgen.com/en-us/solutions/robotics/mobile-robots"
+        },
+        {
+          "title": "Kollmorgen worldwide locations",
+          "url": "https://www.kollmorgen.com/en-us/company/worldwide-locations"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=203+West+Rock+Road%2C+Radford%2C+VA+24141&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "website_url": "https://www.kollmorgen.com/en-us/solutions/robotics/mobile-robots",
+      "contact_url": "https://www.kollmorgen.com/en-us/company/worldwide-locations",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "833-565-5667",
+      "contact_email": "",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "Radford motion-systems supplier with motors and engineering support for unmanned and mobile robotics.",
+      "activity_source_url": "https://www.kollmorgen.com/en-us/solutions/robotics/mobile-robots",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "Liquid Robotics Herndon Headquarters and Production",
+      "record_type": "organization",
+      "address_line": "460 Herndon Parkway",
+      "city": "Herndon",
+      "state": "VA",
+      "postal_code": "20170",
+      "latitude": 38.957596,
+      "longitude": -77.375843,
+      "location_precision": "site",
+      "region": "Northern Virginia",
+      "short_description": "Herndon Wave Glider headquarters and production site, with a move to Jessup, Maryland announced for the end of 2026.",
+      "overview": "Liquid Robotics manufactures Wave Glider uncrewed surface vessels. Its current contact page still lists Herndon; a May 2026 announcement schedules headquarters and manufacturing relocation to Jessup, Maryland by year end.",
+      "unmanned_systems_relevance": "Wave Glider production and maritime-autonomy engineering support Virginia capability while the Herndon operation remains. Hawaii is the marine test center. The announced Maryland relocation requires a follow-up location review.",
+      "platform_domains": [
+        "Maritime surface systems",
+        "Undersea systems"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Command, control, and communications",
+        "Manufacturing, materials, and prototyping",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Maritime domain awareness",
+        "Environmental monitoring",
+        "Communications relay"
+      ],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "sources": [
+        {
+          "title": "Liquid Robotics headquarters and production relocation",
+          "url": "https://www.liquid-robotics.com/blog/liquid-robotics-headquarters-relocation-herndon/"
+        },
+        {
+          "title": "Liquid Robotics current locations and contact",
+          "url": "https://www.liquid-robotics.com/contact-us/"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=460+Herndon+Parkway%2C+Herndon%2C+VA+20170&benchmark=Public_AR_Current&format=json"
+        },
+        {
+          "title": "Liquid Robotics announced 2026 relocation to Maryland",
+          "url": "https://www.liquid-robotics.com/resource/liquid-robotics-relocation-jessup-maryland/"
+        }
+      ],
+      "website_url": "https://www.liquid-robotics.com/blog/liquid-robotics-headquarters-relocation-herndon/",
+      "contact_url": "https://www.liquid-robotics.com/contact-us/",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "703-376-9300",
+      "contact_email": "info@liquid-robotics.com",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "Current published contact remains Herndon. On May 7, 2026 the company announced plans to relocate headquarters and manufacturing to Jessup, Maryland by the end of 2026; completion was not confirmed in the reviewed sources.",
+      "activity_source_url": "https://www.liquid-robotics.com/resource/liquid-robotics-relocation-jessup-maryland/",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "McQ Fredericksburg Sensor Systems",
+      "record_type": "organization",
+      "address_line": "1551 Forbes Street",
+      "city": "Fredericksburg",
+      "state": "VA",
+      "postal_code": "22405",
+      "latitude": 38.356087,
+      "longitude": -77.456271,
+      "location_precision": "site",
+      "region": "Fredericksburg Region",
+      "short_description": "Fredericksburg developer of autonomous unattended sensors and passive UAS detection systems.",
+      "overview": "Fredericksburg developer of autonomous unattended sensors and passive UAS detection systems. McQ describes RANGER sensors that autonomously detect and classify UAS and other targets and its current counter-UAS integration activity. This record identifies the commercial company office.",
+      "unmanned_systems_relevance": "McQ describes RANGER sensors that autonomously detect and classify UAS and other targets and its current counter-UAS integration activity. This record identifies the commercial company office.",
+      "platform_domains": [
+        "Counter-UAS",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing",
+        "Command, control, and communications"
+      ],
+      "missions": [
+        "Counter-UAS",
+        "ISR"
+      ],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "sources": [
+        {
+          "title": "McQ autonomous sensing technology",
+          "url": "https://www.mcqinc.com/"
+        },
+        {
+          "title": "McQ current counter-UAS activity and public contact",
+          "url": "https://www.mcqinc.com/news/"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1551+Forbes+Street%2C+Fredericksburg%2C+VA+22405&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "website_url": "https://www.mcqinc.com/",
+      "contact_url": "https://www.mcqinc.com/news/",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "866-373-2374",
+      "contact_email": "info@mcqinc.com",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "Fredericksburg developer of autonomous unattended sensors and passive UAS detection systems.",
+      "activity_source_url": "https://www.mcqinc.com/",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "Metron Reston Autonomy and Decision Systems",
+      "record_type": "organization",
+      "address_line": "1818 Library Street, Suite 600",
+      "city": "Reston",
+      "state": "VA",
+      "postal_code": "20190",
+      "latitude": 38.958642,
+      "longitude": -77.358687,
+      "location_precision": "site",
+      "region": "Northern Virginia",
+      "short_description": "Reston company developing autonomous coordination and decision software for heterogeneous unmanned systems.",
+      "overview": "Reston company developing autonomous coordination and decision software for heterogeneous unmanned systems. Metron documents the AutoMATE framework for distributed planning across unmanned air, surface, undersea, and space platforms. The marker represents the corporate office, not each deployment location.",
+      "unmanned_systems_relevance": "Metron documents the AutoMATE framework for distributed planning across unmanned air, surface, undersea, and space platforms. The marker represents the corporate office, not each deployment location.",
+      "platform_domains": [
+        "Cross-domain autonomy",
+        "Unmanned aircraft systems",
+        "Maritime surface systems",
+        "Undersea systems"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Data engineering, analytics, and edge computing",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Search and rescue",
+        "Training and experimentation"
+      ],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "sources": [
+        {
+          "title": "Metron AutoMATE unmanned teaming framework",
+          "url": "https://www.metsci.com/what-we-do/products-tools/automate/"
+        },
+        {
+          "title": "Metron corporate office contact",
+          "url": "https://www.metsci.com/contact-us/"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1818+Library+Street%2C+Reston%2C+VA+20190&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "website_url": "https://www.metsci.com/what-we-do/products-tools/automate/",
+      "contact_url": "https://www.metsci.com/contact-us/",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "703-787-8700",
+      "contact_email": "",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "Reston company developing autonomous coordination and decision software for heterogeneous unmanned systems.",
+      "activity_source_url": "https://www.metsci.com/what-we-do/products-tools/automate/",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "Modern Technology Solutions Alexandria Headquarters",
+      "record_type": "organization",
+      "address_line": "6361 Walker Lane",
+      "city": "Alexandria",
+      "state": "VA",
+      "postal_code": "22310",
+      "latitude": 38.769116,
+      "longitude": -77.159256,
+      "location_precision": "site",
+      "region": "Northern Virginia",
+      "short_description": "Alexandria engineering company providing autonomy evaluation, integration, and assurance capabilities.",
+      "overview": "Alexandria engineering company providing autonomy evaluation, integration, and assurance capabilities. MTSI documents its SAFE autonomous-platform evaluation framework and engineering capabilities. Its April 2026 headquarters relocation announcement supersedes the older Shawnee Road contact listing.",
+      "unmanned_systems_relevance": "MTSI documents its SAFE autonomous-platform evaluation framework and engineering capabilities. Its April 2026 headquarters relocation announcement supersedes the older Shawnee Road contact listing.",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "sources": [
+        {
+          "title": "MTSI SAFE autonomous-platform evaluation",
+          "url": "https://www.mtsi-va.com/case-study/supervised-autonomous-function-executive-safe/"
+        },
+        {
+          "title": "MTSI 2026 headquarters relocation",
+          "url": "https://www.mtsi-va.com/mtsi-announces-relocation-of-corporate-headquarters/"
+        },
+        {
+          "title": "MTSI public contact",
+          "url": "https://www.mtsi-va.com/contact/"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=6361+Walker+Lane%2C+Alexandria%2C+VA+22310&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "website_url": "https://www.mtsi-va.com/case-study/supervised-autonomous-function-executive-safe/",
+      "contact_url": "https://www.mtsi-va.com/contact/",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "703-564-3800",
+      "contact_email": "",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "Alexandria engineering company providing autonomy evaluation, integration, and assurance capabilities.",
+      "activity_source_url": "https://www.mtsi-va.com/case-study/supervised-autonomous-function-executive-safe/",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "Moog Blacksburg Power and Data Division",
+      "record_type": "organization",
+      "address_line": "1213 North Main Street",
+      "city": "Blacksburg",
+      "state": "VA",
+      "postal_code": "24060",
+      "latitude": 37.241414,
+      "longitude": -80.418488,
+      "location_precision": "site",
+      "region": "New River Valley",
+      "short_description": "Blacksburg power, data-transfer and motion-control business serving unmanned air, land and sea platforms.",
+      "overview": "Blacksburg power, data-transfer and motion-control business serving unmanned air, land and sea platforms. Moog publishes unmanned-platform actuator applications and confirms actuator manufacturing moved to Blacksburg. The marker uses its division contact address; the reviewed pages do not identify the exact internal actuator production building.",
+      "unmanned_systems_relevance": "Moog publishes unmanned-platform actuator applications and confirms actuator manufacturing moved to Blacksburg. The marker uses its division contact address; the reviewed pages do not identify the exact internal actuator production building.",
+      "platform_domains": [
+        "Cross-domain autonomy",
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Maritime surface systems"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration",
+        "Propulsion, batteries, fuels, and energy systems"
+      ],
+      "missions": [],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "sources": [
+        {
+          "title": "Moog unmanned-system actuators and Blacksburg manufacturing relocation",
+          "url": "https://www.moog.com/products/actuators-servoactuators/multi-purpose.html"
+        },
+        {
+          "title": "Moog Power and Data Division public locations",
+          "url": "https://www.moog.com/about-us/space-defense-group/power-and-data-sector.html"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1213+North+Main+Street%2C+Blacksburg%2C+VA+24060&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "website_url": "https://www.moog.com/products/actuators-servoactuators/multi-purpose.html",
+      "contact_url": "https://www.moog.com/about-us/space-defense-group/power-and-data-sector.html",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "540-552-3011",
+      "contact_email": "",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "Blacksburg power, data-transfer and motion-control business serving unmanned air, land and sea platforms.",
+      "activity_source_url": "https://www.moog.com/products/actuators-servoactuators/multi-purpose.html",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "NAL Technologies Manassas Headquarters",
+      "record_type": "organization",
+      "address_line": "11100 Endeavor Court, Suite 300",
+      "city": "Manassas",
+      "state": "VA",
+      "postal_code": "20109",
+      "latitude": 38.75122,
+      "longitude": -77.527791,
+      "location_precision": "site",
+      "region": "Northern Virginia",
+      "short_description": "Manassas satellite-communications and resilient navigation company serving uncrewed aircraft and surface vessels.",
+      "overview": "Manassas satellite-communications and resilient navigation company serving uncrewed aircraft and surface vessels. Naltec publishes communications integration with uncrewed aircraft for BVLOS command and control and with uncrewed surface vessels. NAL Research now redirects to the NAL Technologies website.",
+      "unmanned_systems_relevance": "Naltec publishes communications integration with uncrewed aircraft for BVLOS command and control and with uncrewed surface vessels. NAL Research now redirects to the NAL Technologies website.",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Maritime surface systems",
+        "Space-enabled services"
+      ],
+      "capabilities": [
+        "Command, control, and communications",
+        "Navigation and positioning",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Communications relay"
+      ],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "sources": [
+        {
+          "title": "NAL Technologies capabilities and headquarters",
+          "url": "https://naltec.com/"
+        },
+        {
+          "title": "NAL Research public Iridium partner profile",
+          "url": "https://ifp.iridium.com/company/nal-research-corporation/"
+        },
+        {
+          "title": "Esri public address-point geocode (site approximation)",
+          "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=11100+Endeavor+Court%2C+Manassas%2C+VA+20109&f=pjson&outFields=Match_addr%2CAddr_type%2CStAddr%2CCity%2CRegion%2CPostal&maxLocations=1"
+        },
+        {
+          "title": "Prince William County 2019 Endeavor Court address reassignment",
+          "url": "https://www.pwcva.gov/assets/documents/doit/MasterLetter062519.doc.pdf"
+        }
+      ],
+      "website_url": "https://naltec.com/",
+      "contact_url": "https://naltec.com/",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "888-746-8867",
+      "contact_email": "",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "Manassas satellite-communications and resilient navigation company serving uncrewed aircraft and surface vessels.",
+      "activity_source_url": "https://naltec.com/",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "NOVA Fab Lab Manassas",
+      "record_type": "facility",
+      "address_line": "10500 Battleview Parkway",
+      "city": "Manassas",
+      "state": "VA",
+      "postal_code": "20109",
+      "latitude": 38.806017,
+      "longitude": -77.51681,
+      "location_precision": "site",
+      "region": "Northern Virginia",
+      "short_description": "Northern Virginia Community College fabrication lab supporting robotics, electronics, and additive-manufacturing education.",
+      "overview": "Northern Virginia Community College fabrication lab supporting robotics, electronics, and additive-manufacturing education. The Trailside Building lab provides fabrication equipment and robotics expertise to NOVA students, faculty, and staff. It is supporting workforce and prototyping capacity; open access for outside businesses is not assumed.",
+      "unmanned_systems_relevance": "The Trailside Building lab provides fabrication equipment and robotics expertise to NOVA students, faculty, and staff. It is supporting workforce and prototyping capacity; open access for outside businesses is not assumed.",
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "strategic_categories": [
+        "Workforce and talent",
+        "Research and technical depth",
+        "Supporting ecosystem asset"
+      ],
+      "sources": [
+        {
+          "title": "NOVA Fab Lab programs and capabilities",
+          "url": "https://www.nvcc.edu/academics/divisions/iet/systemic/fablab.html"
+        },
+        {
+          "title": "NOVA official Trailside Building street address",
+          "url": "https://www.nvcc.edu/student-resources/tutoring/index.html"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=10500+Battleview+Parkway%2C+Manassas%2C+VA+20109&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "website_url": "https://www.nvcc.edu/academics/divisions/iet/systemic/fablab.html",
+      "contact_url": "https://www.nvcc.edu/academics/divisions/iet/systemic/fablab.html",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "703-530-3505",
+      "contact_email": "fablab@nvcc.edu",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "Northern Virginia Community College fabrication lab supporting robotics, electronics, and additive-manufacturing education.",
+      "activity_source_url": "https://www.nvcc.edu/academics/divisions/iet/systemic/fablab.html",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "PerimeterAI Group",
+      "record_type": "organization",
+      "address_line": "",
+      "city": "Haymarket",
+      "state": "VA",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "region": "Northern Virginia",
+      "short_description": "Haymarket startup developing passive acoustic sensors to detect and classify small unmanned-aircraft threats.",
+      "overview": "Haymarket startup developing passive acoustic sensors to detect and classify small unmanned-aircraft threats. The Oregon UAS Accelerator identifies PerimeterAI Group in Haymarket in its August 2026 cohort announcement. The company publishes acoustic sensing products; its early-stage commercialization status is retained.",
+      "unmanned_systems_relevance": "The Oregon UAS Accelerator identifies PerimeterAI Group in Haymarket in its August 2026 cohort announcement. The company publishes acoustic sensing products; its early-stage commercialization status is retained.",
+      "platform_domains": [
+        "Counter-UAS"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Autonomy and artificial intelligence",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Counter-UAS"
+      ],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "sources": [
+        {
+          "title": "PerimeterAI company and acoustic-sensing development",
+          "url": "https://perimeteraigroup.com/company/"
+        },
+        {
+          "title": "Oregon UAS Accelerator 2026 cohort and Haymarket location",
+          "url": "https://proveninpendleton.com/blogs/news/oregon-uas-accelerator-welcomes-17-startups-to-its-fall-2026-cohort"
+        }
+      ],
+      "website_url": "https://perimeteraigroup.com/company/",
+      "contact_url": "https://perimeteraigroup.com/company/",
+      "contact_text": "Public company email; no Virginia street address is published in the reviewed sources.",
+      "contact_phone": "",
+      "contact_email": "contact@perimeteraigroup.com",
+      "provenance": "curated-public-source",
+      "activity_status": "developing",
+      "current_activity": "Haymarket startup developing passive acoustic sensors to detect and classify small unmanned-aircraft threats.",
+      "activity_source_url": "https://perimeteraigroup.com/company/",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "Rice Associates Unmanned Aerial Surveying",
+      "record_type": "organization",
+      "address_line": "10661 Gaskins Way",
+      "city": "Manassas",
+      "state": "VA",
+      "postal_code": "20109",
+      "latitude": 38.803049,
+      "longitude": -77.518385,
+      "location_precision": "site",
+      "region": "Northern Virginia",
+      "short_description": "Manassas-headquartered survey company with documented drone lidar, photogrammetry, and building assessment services.",
+      "overview": "Manassas-headquartered survey company with documented drone lidar, photogrammetry, and building assessment services. Rice documents its UAS demonstration for Fairfax County, including aerial lidar, topographic data and building-condition imagery. The marker is its current public headquarters.",
+      "unmanned_systems_relevance": "Rice documents its UAS demonstration for Fairfax County, including aerial lidar, topographic data and building-condition imagery. The marker is its current public headquarters.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection"
+      ],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "sources": [
+        {
+          "title": "Rice Associates Fairfax County UAS demonstration",
+          "url": "https://www.ricesurveys.com/project/fairfax-county-uas"
+        },
+        {
+          "title": "Rice Associates headquarters and locations",
+          "url": "https://www.ricesurveys.com/contact"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=10661+Gaskins+Way%2C+Manassas%2C+VA+20109&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "website_url": "https://www.ricesurveys.com/project/fairfax-county-uas",
+      "contact_url": "https://www.ricesurveys.com/contact",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "703-968-3200",
+      "contact_email": "",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "Manassas-headquartered survey company with documented drone lidar, photogrammetry, and building assessment services.",
+      "activity_source_url": "https://www.ricesurveys.com/project/fairfax-county-uas",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "SkyRaptor Drone Services",
+      "record_type": "organization",
+      "address_line": "700 Tech Center Parkway, Suite 200-129",
+      "city": "Newport News",
+      "state": "VA",
+      "postal_code": "23606",
+      "latitude": 37.099856,
+      "longitude": -76.486184,
+      "location_precision": "site",
+      "region": "Hampton Roads",
+      "short_description": "Newport News drone photography and videography provider serving Hampton Roads.",
+      "overview": "Newport News drone photography and videography provider serving Hampton Roads. SkyRaptor publicly lists commercial aerial imagery and construction-documentation services. Its map point is the published business contact building, not a drone operating site.",
+      "unmanned_systems_relevance": "SkyRaptor publicly lists commercial aerial imagery and construction-documentation services. Its map point is the published business contact building, not a drone operating site.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "sources": [
+        {
+          "title": "SkyRaptor aerial and construction imagery services",
+          "url": "https://www.skyraptordrones.com/"
+        },
+        {
+          "title": "SkyRaptor business contact",
+          "url": "https://www.skyraptordrones.com/contact"
+        },
+        {
+          "title": "Esri public address-point geocode (site approximation)",
+          "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=700+Tech+Center+Parkway%2C+Newport+News%2C+VA+23606&f=pjson&outFields=Match_addr%2CAddr_type%2CStAddr%2CCity%2CRegion%2CPostal&maxLocations=1"
+        }
+      ],
+      "website_url": "https://www.skyraptordrones.com/",
+      "contact_url": "https://www.skyraptordrones.com/contact",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "757-715-2867",
+      "contact_email": "skyraptordrones@gmail.com",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "Newport News drone photography and videography provider serving Hampton Roads.",
+      "activity_source_url": "https://www.skyraptordrones.com/",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "Southern Virginia Higher Education Center Robotics Training",
+      "record_type": "program",
+      "address_line": "820 Bruce Street",
+      "city": "South Boston",
+      "state": "VA",
+      "postal_code": "24592",
+      "latitude": 36.69551,
+      "longitude": -78.901827,
+      "location_precision": "site",
+      "region": "Southside Virginia",
+      "short_description": "South Boston workforce center offering automation and robotics training through its Career Tech Academy.",
+      "overview": "South Boston workforce center offering automation and robotics training through its Career Tech Academy. SVHEC documents robotics programming, maintenance and automated-systems instruction and reports continuing workforce activity in 2026. This supports the robotics workforce rather than a claimed dedicated unmanned-vehicle program.",
+      "unmanned_systems_relevance": "SVHEC documents robotics programming, maintenance and automated-systems instruction and reports continuing workforce activity in 2026. This supports the robotics workforce rather than a claimed dedicated unmanned-vehicle program.",
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "strategic_categories": [
+        "Workforce and talent",
+        "Supporting ecosystem asset"
+      ],
+      "sources": [
+        {
+          "title": "SVHEC current 2026 workforce programs and Bruce Street building",
+          "url": "https://www.svhec.org/news/svhec-drives-22-million-economic-impact-in-southern-virginia/"
+        },
+        {
+          "title": "SVHEC automation and robotics program report",
+          "url": "https://www.svhec.org/wp-content/uploads/2022/04/SVHEC-AnnualReport-Final-digital.pdf"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=820+Bruce+Street%2C+South+Boston%2C+VA+24592&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "website_url": "https://www.svhec.org/news/svhec-drives-22-million-economic-impact-in-southern-virginia/",
+      "contact_url": "https://www.svhec.org/news/svhec-drives-22-million-economic-impact-in-southern-virginia/",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "",
+      "contact_email": "",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "South Boston workforce center offering automation and robotics training through its Career Tech Academy.",
+      "activity_source_url": "https://www.svhec.org/news/svhec-drives-22-million-economic-impact-in-southern-virginia/",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "SVT Robotics Norfolk",
+      "record_type": "organization",
+      "address_line": "730 West 20th Street",
+      "city": "Norfolk",
+      "state": "VA",
+      "postal_code": "23517",
+      "latitude": 36.869499,
+      "longitude": -76.294825,
+      "location_precision": "site",
+      "region": "Hampton Roads",
+      "short_description": "Norfolk software company integrating autonomous mobile robots with warehouse and industrial systems.",
+      "overview": "Norfolk software company integrating autonomous mobile robots with warehouse and industrial systems. SVT documents integrations between warehouse-management software and autonomous mobile robots using its SOFTBOT platform. Its current website and contact page publish the Norfolk address.",
+      "unmanned_systems_relevance": "SVT documents integrations between warehouse-management software and autonomous mobile robots using its SOFTBOT platform. Its current website and contact page publish the Norfolk address.",
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Data engineering, analytics, and edge computing",
+        "Autonomy and artificial intelligence"
+      ],
+      "missions": [
+        "Logistics and contested logistics"
+      ],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "sources": [
+        {
+          "title": "SVT Robotics platform and autonomous-mobile-robot integrations",
+          "url": "https://www.svtrobotics.com/"
+        },
+        {
+          "title": "SVT Robotics Norfolk contact",
+          "url": "https://www.svtrobotics.com/talk-to-us/"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=730+West+20th+Street%2C+Norfolk%2C+VA+23517&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "website_url": "https://www.svtrobotics.com/",
+      "contact_url": "https://www.svtrobotics.com/talk-to-us/",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "",
+      "contact_email": "",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "Norfolk software company integrating autonomous mobile robots with warehouse and industrial systems.",
+      "activity_source_url": "https://www.svtrobotics.com/",
+      "activity_last_verified_at": "2026-09-04"
+    },
+    {
+      "name": "THRYVE Automation Richmond",
+      "record_type": "organization",
+      "address_line": "700 Gordon Avenue",
+      "city": "Richmond",
+      "state": "VA",
+      "postal_code": "23224",
+      "latitude": 37.515421,
+      "longitude": -77.431392,
+      "location_precision": "site",
+      "region": "Greater Richmond",
+      "short_description": "Richmond industrial robotics and machine-vision integrator formerly known as Jewett Automation.",
+      "overview": "Richmond industrial robotics and machine-vision integrator formerly known as Jewett Automation. The company builds automated assembly and material-handling systems. It provides supporting robotic integration, fabrication and production expertise; the reviewed source does not establish an unmanned-vehicle product line.",
+      "unmanned_systems_relevance": "The company builds automated assembly and material-handling systems. It provides supporting robotic integration, fabrication and production expertise; the reviewed source does not establish an unmanned-vehicle product line.",
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [],
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "sources": [
+        {
+          "title": "THRYVE automation capabilities, former name and Richmond location",
+          "url": "https://thryve.co/"
+        },
+        {
+          "title": "Former Jewett Automation website redirect",
+          "url": "https://jewettautomation.com/"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=700+Gordon+Avenue%2C+Richmond%2C+VA+23224&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "website_url": "https://thryve.co/",
+      "contact_url": "https://thryve.co/",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_phone": "804-344-8101",
+      "contact_email": "",
+      "provenance": "curated-public-source",
+      "activity_status": "active",
+      "current_activity": "Richmond industrial robotics and machine-vision integrator formerly known as Jewett Automation.",
+      "activity_source_url": "https://thryve.co/",
+      "activity_last_verified_at": "2026-09-04"
+    }
+  ],
+  "evidence_reviews": {
+    "Liquid Robotics Herndon Headquarters and Production": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "The company announced its Herndon headquarters and production relocation in2022. The currently published contact address remains460 Herndon Parkway. A May7,2026 announcement states headquarters and manufacturing will move to Jessup, Maryland by the end of2026; no completion confirmation was found. Recheck Virginia operating status before later use.",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access.",
+      "sources": [
+        {
+          "url": "https://www.liquid-robotics.com/blog/liquid-robotics-headquarters-relocation-herndon/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://www.liquid-robotics.com/contact-us/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=460+Herndon+Parkway%2C+Herndon%2C+VA+20170&benchmark=Public_AR_Current&format=json",
+          "checked_at": "2026-09-04",
+          "purpose": "Public-address geocode evidence"
+        },
+        {
+          "url": "https://www.liquid-robotics.com/resource/liquid-robotics-relocation-jessup-maryland/",
+          "checked_at": "2026-09-04",
+          "purpose": "Planned Maryland relocation and current-operation limitation"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=460+Herndon+Parkway%2C+Herndon%2C+VA+20170&benchmark=Public_AR_Current&format=json",
+        "matches": [
+          {
+            "tigerLine": {
+              "side": "R",
+              "tigerLineId": "641105348"
+            },
+            "coordinates": {
+              "x": -77.375843455738,
+              "y": 38.957596073835
+            },
+            "addressComponents": {
+              "zip": "20170",
+              "streetName": "HERNDON",
+              "preType": "",
+              "city": "HERNDON",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "402",
+              "state": "VA",
+              "suffixType": "PKWY",
+              "toAddress": "460",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "460 HERNDON PKWY, HERNDON, VA, 20170"
+          }
+        ],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates."
+      }
+    },
+    "NAL Technologies Manassas Headquarters": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "Manassas satellite-communications and resilient navigation company serving uncrewed aircraft and surface vessels. Current name and address taken from Naltec; the older Iridium profile is retained solely as identity/history corroboration.",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access. County GIS confirms 9385 Discovery Boulevard was reassigned to 11100 Endeavor Court in 2019. Esri directly matches the current address. A less precise Census match to the old street address was rejected.",
+      "sources": [
+        {
+          "url": "https://naltec.com/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://ifp.iridium.com/company/nal-research-corporation/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=11100+Endeavor+Court%2C+Manassas%2C+VA+20109&f=pjson&outFields=Match_addr%2CAddr_type%2CStAddr%2CCity%2CRegion%2CPostal&maxLocations=1",
+          "checked_at": "2026-09-04",
+          "purpose": "Published-address point geocode, not an operating area"
+        },
+        {
+          "url": "https://www.pwcva.gov/assets/documents/doit/MasterLetter062519.doc.pdf",
+          "checked_at": "2026-09-04",
+          "purpose": "County address reassignment verifies current and former address refer to same building; PDF page 5"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=11100+Endeavor+Court%2C+Manassas%2C+VA+20109&benchmark=Public_AR_Current&format=json",
+        "matches": [],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates.",
+        "fallback": {
+          "provider": "Esri World Geocoding Service",
+          "checked_at": "2026-09-04",
+          "request_url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=11100+Endeavor+Court%2C+Manassas%2C+VA+20109&f=pjson&outFields=Match_addr%2CAddr_type%2CStAddr%2CCity%2CRegion%2CPostal&maxLocations=1",
+          "candidate": {
+            "address": "11100 Endeavor Ct, Manassas, Virginia, 20109",
+            "location": {
+              "x": -77.527791148763,
+              "y": 38.751220376581
+            },
+            "score": 100,
+            "attributes": {
+              "Match_addr": "11100 Endeavor Ct, Manassas, Virginia, 20109",
+              "Addr_type": "PointAddress",
+              "StAddr": "11100 Endeavor Ct",
+              "City": "Manassas",
+              "Region": "Virginia",
+              "Postal": "20109"
+            },
+            "extent": {
+              "xmin": -77.528791148763,
+              "ymin": 38.750220376581,
+              "xmax": -77.526791148763,
+              "ymax": 38.752220376581
+            }
+          },
+          "method": "PointAddress match at score 100 to the published public business address. Retained at site precision; not independently surveyed."
+        }
+      }
+    },
+    "McQ Fredericksburg Sensor Systems": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "Fredericksburg developer of autonomous unattended sensors and passive UAS detection systems. ",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access.",
+      "sources": [
+        {
+          "url": "https://www.mcqinc.com/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://www.mcqinc.com/news/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1551+Forbes+Street%2C+Fredericksburg%2C+VA+22405&benchmark=Public_AR_Current&format=json",
+          "checked_at": "2026-09-04",
+          "purpose": "Public-address geocode evidence"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1551+Forbes+Street%2C+Fredericksburg%2C+VA+22405&benchmark=Public_AR_Current&format=json",
+        "matches": [
+          {
+            "tigerLine": {
+              "side": "L",
+              "tigerLineId": "636657813"
+            },
+            "coordinates": {
+              "x": -77.456270694429,
+              "y": 38.356086575373
+            },
+            "addressComponents": {
+              "zip": "22405",
+              "streetName": "FORBES",
+              "preType": "",
+              "city": "FREDERICKSBURG",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "1501",
+              "state": "VA",
+              "suffixType": "ST",
+              "toAddress": "1599",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "1551 FORBES ST, FREDERICKSBURG, VA, 22405"
+          }
+        ],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates."
+      }
+    },
+    "HDT Robotics BLADE Fredericksburg Facility": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "Fredericksburg HDT Robotics facility producing robotic arms and Hunter WOLF unmanned ground vehicles under the BLADE brand. No factory acreage or exact internal production location is asserted.",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access.",
+      "sources": [
+        {
+          "url": "https://www.hdtrobotics.com/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://www.hdtglobal.com/news/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=510+Lansdowne+Road%2C+Fredericksburg%2C+VA+22408&benchmark=Public_AR_Current&format=json",
+          "checked_at": "2026-09-04",
+          "purpose": "Public-address geocode evidence"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=510+Lansdowne+Road%2C+Fredericksburg%2C+VA+22408&benchmark=Public_AR_Current&format=json",
+        "matches": [
+          {
+            "tigerLine": {
+              "side": "R",
+              "tigerLineId": "655379577"
+            },
+            "coordinates": {
+              "x": -77.463923721059,
+              "y": 38.265887193099
+            },
+            "addressComponents": {
+              "zip": "22408",
+              "streetName": "LANSDOWNE",
+              "preType": "",
+              "city": "FREDERICKSBURG",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "598",
+              "state": "VA",
+              "suffixType": "RD",
+              "toAddress": "504",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "510 LANSDOWNE RD, FREDERICKSBURG, VA, 22408"
+          }
+        ],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates."
+      }
+    },
+    "Metron Reston Autonomy and Decision Systems": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "Reston company developing autonomous coordination and decision software for heterogeneous unmanned systems. ",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access.",
+      "sources": [
+        {
+          "url": "https://www.metsci.com/what-we-do/products-tools/automate/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://www.metsci.com/contact-us/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1818+Library+Street%2C+Reston%2C+VA+20190&benchmark=Public_AR_Current&format=json",
+          "checked_at": "2026-09-04",
+          "purpose": "Public-address geocode evidence"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1818+Library+Street%2C+Reston%2C+VA+20190&benchmark=Public_AR_Current&format=json",
+        "matches": [
+          {
+            "tigerLine": {
+              "side": "R",
+              "tigerLineId": "624434295"
+            },
+            "coordinates": {
+              "x": -77.358686593125,
+              "y": 38.958642497269
+            },
+            "addressComponents": {
+              "zip": "20190",
+              "streetName": "LIBRARY",
+              "preType": "",
+              "city": "RESTON",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "1816",
+              "state": "VA",
+              "suffixType": "ST",
+              "toAddress": "1898",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "1818 LIBRARY ST, RESTON, VA, 20190"
+          }
+        ],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates."
+      }
+    },
+    "Iridium Communications Headquarters": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "McLean satellite-network headquarters supporting communications for BVLOS unmanned aircraft and autonomous systems. Current production website lists 1676 International Drive. Older annual reports and the UAT website retain 1750 Tysons Boulevard; those old addresses were rejected.",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access.",
+      "sources": [
+        {
+          "url": "https://investor.iridium.com/2023-06-20-Iridium-Proposes-a-New-Model-for-Monitored-BVLOS-UAS-Integration-in-the-National-Airspace-System",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://www.iridium.com/company/contact",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1676+International+Drive%2C+McLean%2C+VA+22102&benchmark=Public_AR_Current&format=json",
+          "checked_at": "2026-09-04",
+          "purpose": "Public-address geocode evidence"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1676+International+Drive%2C+McLean%2C+VA+22102&benchmark=Public_AR_Current&format=json",
+        "matches": [
+          {
+            "tigerLine": {
+              "side": "R",
+              "tigerLineId": "215948699"
+            },
+            "coordinates": {
+              "x": -77.227955871977,
+              "y": 38.924599899611
+            },
+            "addressComponents": {
+              "zip": "22102",
+              "streetName": "INTERNATIONAL",
+              "preType": "",
+              "city": "MCLEAN",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "1668",
+              "state": "VA",
+              "suffixType": "DR",
+              "toAddress": "1698",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "1676 INTERNATIONAL DR, MCLEAN, VA, 22102"
+          }
+        ],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates."
+      }
+    },
+    "Bihrle Applied Research": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "Hampton aerospace company offering flight-simulation software for UAVs and unmanned multi-vehicle studies. Main homepage retrieval timed out; indexed full official DSix and legal-page content were reviewed. Active status describes the current published product offering, not a past SBIR award.",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access.",
+      "sources": [
+        {
+          "url": "https://bihrle.com/dsix/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://www.sbir.gov/portfolio/106770",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://bihrle.com/legal/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=81+Research+Drive%2C+Hampton%2C+VA+23666&benchmark=Public_AR_Current&format=json",
+          "checked_at": "2026-09-04",
+          "purpose": "Public-address geocode evidence"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=81+Research+Drive%2C+Hampton%2C+VA+23666&benchmark=Public_AR_Current&format=json",
+        "matches": [
+          {
+            "tigerLine": {
+              "side": "L",
+              "tigerLineId": "103804925"
+            },
+            "coordinates": {
+              "x": -76.392765822921,
+              "y": 37.087907392915
+            },
+            "addressComponents": {
+              "zip": "23666",
+              "streetName": "RESEARCH",
+              "preType": "",
+              "city": "HAMPTON",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "27",
+              "state": "VA",
+              "suffixType": "DR",
+              "toAddress": "99",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "81 RESEARCH DR, HAMPTON, VA, 23666"
+          }
+        ],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates."
+      }
+    },
+    "Modern Technology Solutions Alexandria Headquarters": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "Alexandria engineering company providing autonomy evaluation, integration, and assurance capabilities. Mapped the later dated relocation announcement, 6361 Walker Lane, rather than stale 5285 Shawnee Road contact-page address.",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access.",
+      "sources": [
+        {
+          "url": "https://www.mtsi-va.com/case-study/supervised-autonomous-function-executive-safe/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://www.mtsi-va.com/mtsi-announces-relocation-of-corporate-headquarters/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://www.mtsi-va.com/contact/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=6361+Walker+Lane%2C+Alexandria%2C+VA+22310&benchmark=Public_AR_Current&format=json",
+          "checked_at": "2026-09-04",
+          "purpose": "Public-address geocode evidence"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=6361+Walker+Lane%2C+Alexandria%2C+VA+22310&benchmark=Public_AR_Current&format=json",
+        "matches": [
+          {
+            "tigerLine": {
+              "side": "L",
+              "tigerLineId": "657880466"
+            },
+            "coordinates": {
+              "x": -77.15925557244,
+              "y": 38.769115691119
+            },
+            "addressComponents": {
+              "zip": "22310",
+              "streetName": "WALKER",
+              "preType": "",
+              "city": "ALEXANDRIA",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "6399",
+              "state": "VA",
+              "suffixType": "LN",
+              "toAddress": "6301",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "6361 WALKER LN, ALEXANDRIA, VA, 22310"
+          }
+        ],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates."
+      }
+    },
+    "Booz Allen Hamilton": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "McLean headquarters of an engineering and technology company developing software-defined autonomy. The 2027 Reston office was not added as an operating facility.",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access.",
+      "sources": [
+        {
+          "url": "https://www.boozallen.com/markets/defense/mission-ready-scalable-autonomy.html",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://www.boozallen.com/menu/office-locations.html",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://newsroom.boozallen.com/news-releases/news-release-details/booz-allen-relocate-global-headquarters-reston-virginia",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=8283+Greensboro+Drive%2C+McLean%2C+VA+22102&benchmark=Public_AR_Current&format=json",
+          "checked_at": "2026-09-04",
+          "purpose": "Public-address geocode evidence"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=8283+Greensboro+Drive%2C+McLean%2C+VA+22102&benchmark=Public_AR_Current&format=json",
+        "matches": [
+          {
+            "tigerLine": {
+              "side": "L",
+              "tigerLineId": "639870698"
+            },
+            "coordinates": {
+              "x": -77.231063448895,
+              "y": 38.923271289735
+            },
+            "addressComponents": {
+              "zip": "22102",
+              "streetName": "GREENSBORO",
+              "preType": "",
+              "city": "MCLEAN",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "8203",
+              "state": "VA",
+              "suffixType": "DR",
+              "toAddress": "8299",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "8283 GREENSBORO DR, MCLEAN, VA, 22102"
+          }
+        ],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates."
+      }
+    },
+    "Dewberry Gainesville sUAS Acquisition Team": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "Gainesville-based small-UAS lidar and surveying acquisition team serving the mid-Atlantic region. ",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access.",
+      "sources": [
+        {
+          "url": "https://www.dewberry.com/docs/default-source/documents/lidar-suas-one-pager.pdf",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://www.dewberry.com/contact",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=13575+Heathcote+Boulevard%2C+Gainesville%2C+VA+20155&benchmark=Public_AR_Current&format=json",
+          "checked_at": "2026-09-04",
+          "purpose": "Public-address geocode evidence"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=13575+Heathcote+Boulevard%2C+Gainesville%2C+VA+20155&benchmark=Public_AR_Current&format=json",
+        "matches": [
+          {
+            "tigerLine": {
+              "side": "R",
+              "tigerLineId": "207164008"
+            },
+            "coordinates": {
+              "x": -77.599734772641,
+              "y": 38.80300870791
+            },
+            "addressComponents": {
+              "zip": "20155",
+              "streetName": "HEATHCOTE",
+              "preType": "",
+              "city": "GAINESVILLE",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "13599",
+              "state": "VA",
+              "suffixType": "BLVD",
+              "toAddress": "13501",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "13575 HEATHCOTE BLVD, GAINESVILLE, VA, 20155"
+          }
+        ],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates."
+      }
+    },
+    "Rice Associates Unmanned Aerial Surveying": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "Manassas-headquartered survey company with documented drone lidar, photogrammetry, and building assessment services. ",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access.",
+      "sources": [
+        {
+          "url": "https://www.ricesurveys.com/project/fairfax-county-uas",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://www.ricesurveys.com/contact",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=10661+Gaskins+Way%2C+Manassas%2C+VA+20109&benchmark=Public_AR_Current&format=json",
+          "checked_at": "2026-09-04",
+          "purpose": "Public-address geocode evidence"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=10661+Gaskins+Way%2C+Manassas%2C+VA+20109&benchmark=Public_AR_Current&format=json",
+        "matches": [
+          {
+            "tigerLine": {
+              "side": "L",
+              "tigerLineId": "207158641"
+            },
+            "coordinates": {
+              "x": -77.518385233506,
+              "y": 38.80304862201
+            },
+            "addressComponents": {
+              "zip": "20109",
+              "streetName": "GASKINS",
+              "preType": "",
+              "city": "MANASSAS",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "10627",
+              "state": "VA",
+              "suffixType": "WAY",
+              "toAddress": "10699",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "10661 GASKINS WAY, MANASSAS, VA, 20109"
+          }
+        ],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates."
+      }
+    },
+    "Bowman Consulting Unmanned Geospatial Services": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "Reston-headquartered engineering firm providing drone imaging, scanning, and geospatial services. ",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access.",
+      "sources": [
+        {
+          "url": "https://bowman.com/news_tags/geospatial",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://investors.bowman.com/corporate-governance/contact-the-board",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=12355+Sunrise+Valley+Drive%2C+Reston%2C+VA+20191&benchmark=Public_AR_Current&format=json",
+          "checked_at": "2026-09-04",
+          "purpose": "Public-address geocode evidence"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=12355+Sunrise+Valley+Drive%2C+Reston%2C+VA+20191&benchmark=Public_AR_Current&format=json",
+        "matches": [
+          {
+            "tigerLine": {
+              "side": "L",
+              "tigerLineId": "76028605"
+            },
+            "coordinates": {
+              "x": -77.372733312321,
+              "y": 38.950763341408
+            },
+            "addressComponents": {
+              "zip": "20191",
+              "streetName": "SUNRISE VALLEY",
+              "preType": "",
+              "city": "RESTON",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "12301",
+              "state": "VA",
+              "suffixType": "DR",
+              "toAddress": "12399",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "12355 SUNRISE VALLEY DR, RESTON, VA, 20191"
+          }
+        ],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates."
+      }
+    },
+    "Kollmorgen Radford Motion Systems": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "Radford motion-systems supplier with motors and engineering support for unmanned and mobile robotics. ",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access.",
+      "sources": [
+        {
+          "url": "https://www.kollmorgen.com/en-us/solutions/robotics/mobile-robots",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://www.kollmorgen.com/en-us/company/worldwide-locations",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=203+West+Rock+Road%2C+Radford%2C+VA+24141&benchmark=Public_AR_Current&format=json",
+          "checked_at": "2026-09-04",
+          "purpose": "Public-address geocode evidence"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=203+West+Rock+Road%2C+Radford%2C+VA+24141&benchmark=Public_AR_Current&format=json",
+        "matches": [
+          {
+            "tigerLine": {
+              "side": "L",
+              "tigerLineId": "73651661"
+            },
+            "coordinates": {
+              "x": -80.555552651402,
+              "y": 37.117738764708
+            },
+            "addressComponents": {
+              "zip": "24141",
+              "streetName": "ROCK",
+              "preType": "",
+              "city": "RADFORD",
+              "preDirection": "",
+              "suffixDirection": "W",
+              "fromAddress": "299",
+              "state": "VA",
+              "suffixType": "RD",
+              "toAddress": "201",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "203 ROCK RD W, RADFORD, VA, 24141"
+          }
+        ],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates."
+      }
+    },
+    "Moog Blacksburg Power and Data Division": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "Blacksburg power, data-transfer and motion-control business serving unmanned air, land and sea platforms. Not labeled a narrowly verified Manufacturing facility because the official list contains two Blacksburg buildings and does not assign the actuator line to one.",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access.",
+      "sources": [
+        {
+          "url": "https://www.moog.com/products/actuators-servoactuators/multi-purpose.html",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://www.moog.com/about-us/space-defense-group/power-and-data-sector.html",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1213+North+Main+Street%2C+Blacksburg%2C+VA+24060&benchmark=Public_AR_Current&format=json",
+          "checked_at": "2026-09-04",
+          "purpose": "Public-address geocode evidence"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1213+North+Main+Street%2C+Blacksburg%2C+VA+24060&benchmark=Public_AR_Current&format=json",
+        "matches": [
+          {
+            "tigerLine": {
+              "side": "L",
+              "tigerLineId": "658136488"
+            },
+            "coordinates": {
+              "x": -80.418488377557,
+              "y": 37.241413891702
+            },
+            "addressComponents": {
+              "zip": "24060",
+              "streetName": "N MAIN",
+              "preType": "",
+              "city": "BLACKSBURG",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "1213",
+              "state": "VA",
+              "suffixType": "ST",
+              "toAddress": "1305",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "1213 N MAIN ST, BLACKSBURG, VA, 24060"
+          }
+        ],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates."
+      }
+    },
+    "THRYVE Automation Richmond": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "Richmond industrial robotics and machine-vision integrator formerly known as Jewett Automation. Old Jewett URL redirects to current THRYVE brand. The same organization was added once.",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access.",
+      "sources": [
+        {
+          "url": "https://thryve.co/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://jewettautomation.com/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=700+Gordon+Avenue%2C+Richmond%2C+VA+23224&benchmark=Public_AR_Current&format=json",
+          "checked_at": "2026-09-04",
+          "purpose": "Public-address geocode evidence"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=700+Gordon+Avenue%2C+Richmond%2C+VA+23224&benchmark=Public_AR_Current&format=json",
+        "matches": [
+          {
+            "tigerLine": {
+              "side": "L",
+              "tigerLineId": "201542928"
+            },
+            "coordinates": {
+              "x": -77.431392341647,
+              "y": 37.515421421973
+            },
+            "addressComponents": {
+              "zip": "23224",
+              "streetName": "GORDON",
+              "preType": "",
+              "city": "RICHMOND",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "600",
+              "state": "VA",
+              "suffixType": "AVE",
+              "toAddress": "798",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "700 GORDON AVE, RICHMOND, VA, 23224"
+          }
+        ],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates."
+      }
+    },
+    "Industrial Control Specialties": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "Prince George industrial systems integrator providing robotics, machine vision, and manufacturing controls. ",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access.",
+      "sources": [
+        {
+          "url": "https://icsva.com/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://icsva.com/careers/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4455+Flexon+Drive%2C+Prince+George%2C+VA+23875&benchmark=Public_AR_Current&format=json",
+          "checked_at": "2026-09-04",
+          "purpose": "Public-address geocode evidence"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4455+Flexon+Drive%2C+Prince+George%2C+VA+23875&benchmark=Public_AR_Current&format=json",
+        "matches": [
+          {
+            "tigerLine": {
+              "side": "L",
+              "tigerLineId": "54185165"
+            },
+            "coordinates": {
+              "x": -77.369239230669,
+              "y": 37.251626692559
+            },
+            "addressComponents": {
+              "zip": "23875",
+              "streetName": "FLEXON",
+              "preType": "",
+              "city": "PRINCE GEORGE",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "4401",
+              "state": "VA",
+              "suffixType": "DR",
+              "toAddress": "4499",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "4455 FLEXON DR, PRINCE GEORGE, VA, 23875"
+          }
+        ],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates."
+      }
+    },
+    "Duncan-Parnell Ashland Unmanned Solutions": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "Ashland branch offering drone hardware, maintenance, software, operator training, and hydrospatial equipment. ",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access.",
+      "sources": [
+        {
+          "url": "https://www.duncan-parnell.com/locations/ashland-va",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=305+Ashcake+Road%2C+Ashland%2C+VA+23005&benchmark=Public_AR_Current&format=json",
+          "checked_at": "2026-09-04",
+          "purpose": "Public-address geocode evidence"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=305+Ashcake+Road%2C+Ashland%2C+VA+23005&benchmark=Public_AR_Current&format=json",
+        "matches": [
+          {
+            "tigerLine": {
+              "side": "R",
+              "tigerLineId": "84986514"
+            },
+            "coordinates": {
+              "x": -77.469209189972,
+              "y": 37.744906151118
+            },
+            "addressComponents": {
+              "zip": "23005",
+              "streetName": "ASHCAKE",
+              "preType": "",
+              "city": "ASHLAND",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "303",
+              "state": "VA",
+              "suffixType": "RD",
+              "toAddress": "399",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "305 ASHCAKE RD, ASHLAND, VA, 23005"
+          }
+        ],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates."
+      }
+    },
+    "Curtiss-Wright Defense Solutions Ashburn": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "Ashburn defense-electronics division headquarters with embedded computing and sensor-processing products for unmanned systems. ",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access.",
+      "sources": [
+        {
+          "url": "https://defense-solutions.curtisswright.com/media-center/news/curtiss-wright-provide-sensor-processing-northrop-grumman-improved-threat-detection-system",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://curtisswright.com/company/facilities",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=20130+Lakeview+Ctr+Plz%2C+Ashburn%2C+VA+20147&f=pjson&outFields=Match_addr%2CAddr_type%2CStAddr%2CCity%2CRegion%2CPostal&maxLocations=1",
+          "checked_at": "2026-09-04",
+          "purpose": "Published-address point geocode, not an operating area"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=20130+Lakeview+Center+Plaza%2C+Ashburn%2C+VA+20147&benchmark=Public_AR_Current&format=json",
+        "matches": [],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates.",
+        "fallback": {
+          "provider": "Esri World Geocoding Service",
+          "checked_at": "2026-09-04",
+          "request_url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=20130+Lakeview+Ctr+Plz%2C+Ashburn%2C+VA+20147&f=pjson&outFields=Match_addr%2CAddr_type%2CStAddr%2CCity%2CRegion%2CPostal&maxLocations=1",
+          "candidate": {
+            "address": "20130 Lakeview Center Plz, Ashburn, Virginia, 20147",
+            "location": {
+              "x": -77.451874240046,
+              "y": 39.058623448507
+            },
+            "score": 100,
+            "attributes": {
+              "Match_addr": "20130 Lakeview Center Plz, Ashburn, Virginia, 20147",
+              "Addr_type": "PointAddress",
+              "StAddr": "20130 Lakeview Center Plz",
+              "City": "Ashburn",
+              "Region": "Virginia",
+              "Postal": "20147"
+            },
+            "extent": {
+              "xmin": -77.452874240046,
+              "ymin": 39.057623448507,
+              "xmax": -77.450874240046,
+              "ymax": 39.059623448507
+            }
+          },
+          "method": "PointAddress match at score 100 to the published public business address. Retained at site precision; not independently surveyed."
+        }
+      }
+    },
+    "I Fly Drones Richmond Services and Training": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "Richmond-area drone-services business offering imagery, mapping, inspection, equipment support, and pilot training. ",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access.",
+      "sources": [
+        {
+          "url": "https://iflydrones.com/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://iflydrones.com/contact/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=9507+Lyndonway+Drive%2C+Richmond%2C+VA+23229&benchmark=Public_AR_Current&format=json",
+          "checked_at": "2026-09-04",
+          "purpose": "Public-address geocode evidence"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=9507+Lyndonway+Drive%2C+Richmond%2C+VA+23229&benchmark=Public_AR_Current&format=json",
+        "matches": [
+          {
+            "tigerLine": {
+              "side": "L",
+              "tigerLineId": "106643032"
+            },
+            "coordinates": {
+              "x": -77.574379572753,
+              "y": 37.615098248223
+            },
+            "addressComponents": {
+              "zip": "23229",
+              "streetName": "LYNDONWAY",
+              "preType": "",
+              "city": "RICHMOND",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "9401",
+              "state": "VA",
+              "suffixType": "DR",
+              "toAddress": "9601",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "9507 LYNDONWAY DR, RICHMOND, VA, 23229"
+          }
+        ],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates."
+      }
+    },
+    "SkyRaptor Drone Services": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "Newport News drone photography and videography provider serving Hampton Roads. ",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access.",
+      "sources": [
+        {
+          "url": "https://www.skyraptordrones.com/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://www.skyraptordrones.com/contact",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=700+Tech+Center+Parkway%2C+Newport+News%2C+VA+23606&f=pjson&outFields=Match_addr%2CAddr_type%2CStAddr%2CCity%2CRegion%2CPostal&maxLocations=1",
+          "checked_at": "2026-09-04",
+          "purpose": "Published-address point geocode, not an operating area"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=700+Tech+Center+Parkway%2C+Newport+News%2C+VA+23606&benchmark=Public_AR_Current&format=json",
+        "matches": [],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates.",
+        "fallback": {
+          "provider": "Esri World Geocoding Service",
+          "checked_at": "2026-09-04",
+          "request_url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=700+Tech+Center+Parkway%2C+Newport+News%2C+VA+23606&f=pjson&outFields=Match_addr%2CAddr_type%2CStAddr%2CCity%2CRegion%2CPostal&maxLocations=1",
+          "candidate": {
+            "address": "700 Tech Center Pkwy, Newport News, Virginia, 23606",
+            "location": {
+              "x": -76.486183524358,
+              "y": 37.099856160162
+            },
+            "score": 100,
+            "attributes": {
+              "Match_addr": "700 Tech Center Pkwy, Newport News, Virginia, 23606",
+              "Addr_type": "PointAddress",
+              "StAddr": "700 Tech Center Pkwy",
+              "City": "Newport News",
+              "Region": "Virginia",
+              "Postal": "23606"
+            },
+            "extent": {
+              "xmin": -76.487183524358,
+              "ymin": 37.098856160162,
+              "xmax": -76.485183524358,
+              "ymax": 37.100856160162
+            }
+          },
+          "method": "PointAddress match at score 100 to the published public business address. Retained at site precision; not independently surveyed."
+        }
+      }
+    },
+    "NOVA Fab Lab Manassas": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "Northern Virginia Community College fabrication lab supporting robotics, electronics, and additive-manufacturing education. ",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access. The expired2024 calendar event was replaced by the current official tutoring directory identifying Trailside Building at10500 Battleview Parkway. The Fab Lab page independently establishes that it is in Trailside.",
+      "sources": [
+        {
+          "url": "https://www.nvcc.edu/academics/divisions/iet/systemic/fablab.html",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://www.nvcc.edu/student-resources/tutoring/index.html",
+          "checked_at": "2026-09-04",
+          "purpose": "Trailside Building address on current official tutoring directory; lab page separately identifies its location in Trailside"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=10500+Battleview+Parkway%2C+Manassas%2C+VA+20109&benchmark=Public_AR_Current&format=json",
+          "checked_at": "2026-09-04",
+          "purpose": "Public-address geocode evidence"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=10500+Battleview+Parkway%2C+Manassas%2C+VA+20109&benchmark=Public_AR_Current&format=json",
+        "matches": [
+          {
+            "tigerLine": {
+              "side": "R",
+              "tigerLineId": "207155558"
+            },
+            "coordinates": {
+              "x": -77.516809791652,
+              "y": 38.806016880805
+            },
+            "addressComponents": {
+              "zip": "20109",
+              "streetName": "BATTLEVIEW",
+              "preType": "",
+              "city": "MANASSAS",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "10500",
+              "state": "VA",
+              "suffixType": "PKWY",
+              "toAddress": "10598",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "10500 BATTLEVIEW PKWY, MANASSAS, VA, 20109"
+          }
+        ],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates."
+      }
+    },
+    "Southern Virginia Higher Education Center Robotics Training": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "South Boston workforce center offering automation and robotics training through its Career Tech Academy. ",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access.",
+      "sources": [
+        {
+          "url": "https://www.svhec.org/news/svhec-drives-22-million-economic-impact-in-southern-virginia/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://www.svhec.org/wp-content/uploads/2022/04/SVHEC-AnnualReport-Final-digital.pdf",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=820+Bruce+Street%2C+South+Boston%2C+VA+24592&benchmark=Public_AR_Current&format=json",
+          "checked_at": "2026-09-04",
+          "purpose": "Public-address geocode evidence"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=820+Bruce+Street%2C+South+Boston%2C+VA+24592&benchmark=Public_AR_Current&format=json",
+        "matches": [
+          {
+            "tigerLine": {
+              "side": "R",
+              "tigerLineId": "90310339"
+            },
+            "coordinates": {
+              "x": -78.901826665821,
+              "y": 36.695509833881
+            },
+            "addressComponents": {
+              "zip": "24592",
+              "streetName": "BRUCE",
+              "preType": "",
+              "city": "SOUTH BOSTON",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "800",
+              "state": "VA",
+              "suffixType": "ST",
+              "toAddress": "898",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "820 BRUCE ST, SOUTH BOSTON, VA, 24592"
+          }
+        ],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates."
+      }
+    },
+    "SVT Robotics Norfolk": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "Norfolk software company integrating autonomous mobile robots with warehouse and industrial systems. ",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access.",
+      "sources": [
+        {
+          "url": "https://www.svtrobotics.com/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://www.svtrobotics.com/talk-to-us/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=730+West+20th+Street%2C+Norfolk%2C+VA+23517&benchmark=Public_AR_Current&format=json",
+          "checked_at": "2026-09-04",
+          "purpose": "Public-address geocode evidence"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=730+West+20th+Street%2C+Norfolk%2C+VA+23517&benchmark=Public_AR_Current&format=json",
+        "matches": [
+          {
+            "tigerLine": {
+              "side": "R",
+              "tigerLineId": "122122760"
+            },
+            "coordinates": {
+              "x": -76.294824797443,
+              "y": 36.869499450533
+            },
+            "addressComponents": {
+              "zip": "23517",
+              "streetName": "20TH",
+              "preType": "",
+              "city": "NORFOLK",
+              "preDirection": "W",
+              "suffixDirection": "",
+              "fromAddress": "700",
+              "state": "VA",
+              "suffixType": "ST",
+              "toAddress": "798",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "730 W 20TH ST, NORFOLK, VA, 23517"
+          }
+        ],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates."
+      }
+    },
+    "Electra Manassas Headquarters and Aircraft Development": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "Manassas headquarters of a developer of hybrid-electric ultra-short-takeoff aircraft. ",
+      "location_note": "Published public street address. The point is a geocoded address/site approximation, not a surveyed rooftop, entrance, laboratory room, flight launch site, or authorization to access.",
+      "sources": [
+        {
+          "url": "https://electra.aero/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://electra.aero/defense",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=10761+James+Payne+Court%2C+Manassas%2C+VA+20110&benchmark=Public_AR_Current&format=json",
+          "checked_at": "2026-09-04",
+          "purpose": "Public-address geocode evidence"
+        }
+      ],
+      "geocode": {
+        "provider": "U.S. Census Geocoder",
+        "checked_at": "2026-09-04",
+        "request_url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=10761+James+Payne+Court%2C+Manassas%2C+VA+20110&benchmark=Public_AR_Current&format=json",
+        "matches": [
+          {
+            "tigerLine": {
+              "side": "L",
+              "tigerLineId": "626995771"
+            },
+            "coordinates": {
+              "x": -77.518156645221,
+              "y": 38.73027404377
+            },
+            "addressComponents": {
+              "zip": "20110",
+              "streetName": "JAMES PAYNE",
+              "preType": "",
+              "city": "MANASSAS",
+              "preDirection": "",
+              "suffixDirection": "",
+              "fromAddress": "10701",
+              "state": "VA",
+              "suffixType": "CT",
+              "toAddress": "10799",
+              "suffixQualifier": "",
+              "preQualifier": ""
+            },
+            "matchedAddress": "10761 JAMES PAYNE CT, MANASSAS, VA, 20110"
+          }
+        ],
+        "error": "",
+        "method": "Address-range interpolation. Site precision retained; not treated as surveyed exact coordinates."
+      }
+    },
+    "PerimeterAI Group": {
+      "checked_at": "2026-09-04",
+      "review_method": "AI-assisted review of official page content; not an independent human verification.",
+      "evidence_summary": "Haymarket startup developing passive acoustic sensors to detect and classify small unmanned-aircraft threats. No public Virginia street address was found. The Oregon accelerator address is not the company Virginia location; no city-center pin is invented.",
+      "location_note": "Only Haymarket locality is published by the accelerator. No public street address or defensible site coordinate was found; location remains regional with no point.",
+      "sources": [
+        {
+          "url": "https://perimeteraigroup.com/company/",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        },
+        {
+          "url": "https://proveninpendleton.com/blogs/news/oregon-uas-accelerator-welcomes-17-startups-to-its-fall-2026-cohort",
+          "checked_at": "2026-09-04",
+          "purpose": "Organization, capability, activity, or public-address evidence"
+        }
+      ]
+    }
+  }
+}

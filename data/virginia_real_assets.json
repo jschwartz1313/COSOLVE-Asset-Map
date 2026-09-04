@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-30",
+  "generated_at": "2026-09-04",
   "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, broad-based Virginia degree-granting institutions from the NCES IPEDS 2024 directory while excluding narrowly specialized health and ministry schools without documented unmanned-systems relevance, and a curated set of source-backed ecosystem records. Specific street and site locations are anchored to official public address sources and geocoded against the U.S. Census address ranges or named-site map data; locality points are retained when the public record does not identify the operating department or facility. Every record is also classified as either a core unmanned-systems asset with direct documented activity or a supporting ecosystem asset with a broader enabling role.",
-  "record_count": 500,
+  "record_count": 525,
   "records": [
     {
       "address_line": "29194 Parkway North",
@@ -1855,6 +1855,65 @@
       "website_url": "https://bedfordva.gov/DocumentCenter/View/1970/BFD-Annual-Report-2018-PDF"
     },
     {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://bihrle.com/dsix/",
+      "activity_status": "active",
+      "address_line": "81 Research Drive",
+      "capabilities": [
+        "Systems engineering and integration",
+        "Navigation and positioning",
+        "Simulation, digital twins, and synthetic environments"
+      ],
+      "city": "Hampton",
+      "contact_email": "",
+      "contact_phone": "757-766-2416",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://bihrle.com/dsix/",
+      "current_activity": "Hampton aerospace company offering flight-simulation software for UAVs and unmanned multi-vehicle studies.",
+      "latitude": 37.087907,
+      "location_precision": "site",
+      "longitude": -76.392766,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Bihrle Applied Research",
+      "overview": "Hampton aerospace company offering flight-simulation software for UAVs and unmanned multi-vehicle studies. Bihrle currently publishes DSix simulation software for UAV flight models and unmanned multi-vehicle scenarios. A federal SBIR portfolio separately documents historical autonomous-aircraft navigation research; it does not establish an active award.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "23666",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "short_description": "Hampton aerospace company offering flight-simulation software for UAVs and unmanned multi-vehicle studies.",
+      "sources": [
+        {
+          "title": "Bihrle DSix UAV and unmanned multi-vehicle simulation",
+          "url": "https://bihrle.com/dsix/"
+        },
+        {
+          "title": "SBIR historical Bihrle research portfolio",
+          "url": "https://www.sbir.gov/portfolio/106770"
+        },
+        {
+          "title": "Bihrle published company identity and address",
+          "url": "https://bihrle.com/legal/"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=81+Research+Drive%2C+Hampton%2C+VA+23666&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Bihrle currently publishes DSix simulation software for UAV flight models and unmanned multi-vehicle scenarios. A federal SBIR portfolio separately documents historical autonomous-aircraft navigation research; it does not establish an active award.",
+      "website_url": "https://bihrle.com/dsix/"
+    },
+    {
       "address_line": "525 Aiport Road",
       "capabilities": [
         "Operations, maintenance, and sustainment"
@@ -2014,15 +2073,15 @@
         "Force protection and installation security"
       ],
       "name": "Blue Ridge Defense Works",
-      "overview": "Virginia counter-UAS company developing interceptor systems for defense applications. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Manufacturing, materials, and prototyping. Relevant mission areas include Counter-UAS and Force protection and installation security.",
+      "overview": "This previously cataloged Winchester counter-UAS record needs fresh editorial review. On September 4, 2026 the company homepage returned 404; exact-name research and the available SAM page did not independently corroborate its current Virginia presence or interceptor-development claims. This is an evidence gap, not proof that the business has closed. The existing point remains locality-level.",
       "platform_domains": [
         "Counter-UAS",
         "Unmanned aircraft systems"
       ],
       "provenance": "curated-public-source",
       "record_type": "organization",
-      "region": "Northern Virginia",
-      "short_description": "Virginia counter-UAS company developing interceptor systems for defense applications.",
+      "region": "Shenandoah Valley",
+      "short_description": "Research follow-up: previously listed Winchester counter-UAS business whose current company and capability evidence needs reconfirmation.",
       "sources": [
         {
           "title": "Blue Ridge Defense Works",
@@ -2039,7 +2098,7 @@
         "Manufacturing and supply chain",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Develops documented counter-UAS systems, components, or production capacity.",
+      "unmanned_systems_relevance": "Previously recorded as a counter-UAS interceptor developer. Direct official evidence of its current capability and Virginia presence remains unresolved; do not treat this listing as confirmed available capacity.",
       "website_url": "https://blueridgedefense.com/"
     },
     {
@@ -2138,6 +2197,118 @@
       ],
       "unmanned_systems_relevance": "Bluefield University is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
       "website_url": "https://www.bluefield.edu/"
+    },
+    {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://www.boozallen.com/markets/defense/mission-ready-scalable-autonomy.html",
+      "activity_status": "active",
+      "address_line": "8283 Greensboro Drive",
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "McLean",
+      "contact_email": "",
+      "contact_phone": "703-902-5000",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://www.boozallen.com/menu/office-locations.html",
+      "current_activity": "McLean headquarters of an engineering and technology company developing software-defined autonomy.",
+      "latitude": 38.923271,
+      "location_precision": "site",
+      "longitude": -77.231063,
+      "missions": [],
+      "name": "Booz Allen Hamilton",
+      "overview": "McLean headquarters of an engineering and technology company developing software-defined autonomy. Booz Allen publishes autonomous-system integration and software capabilities. This corporate contact location is distinct from its specialized laboratories. Its announced Reston headquarters is scheduled to open in 2027.",
+      "platform_domains": [
+        "Cross-domain autonomy",
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "22102",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "McLean headquarters of an engineering and technology company developing software-defined autonomy.",
+      "sources": [
+        {
+          "title": "Booz Allen scalable autonomy capabilities",
+          "url": "https://www.boozallen.com/markets/defense/mission-ready-scalable-autonomy.html"
+        },
+        {
+          "title": "Booz Allen office locations",
+          "url": "https://www.boozallen.com/menu/office-locations.html"
+        },
+        {
+          "title": "Booz Allen future Reston headquarters schedule",
+          "url": "https://newsroom.boozallen.com/news-releases/news-release-details/booz-allen-relocate-global-headquarters-reston-virginia"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=8283+Greensboro+Drive%2C+McLean%2C+VA+22102&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Booz Allen publishes autonomous-system integration and software capabilities. This corporate contact location is distinct from its specialized laboratories. Its announced Reston headquarters is scheduled to open in 2027.",
+      "website_url": "https://www.boozallen.com/markets/defense/mission-ready-scalable-autonomy.html"
+    },
+    {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://bowman.com/news_tags/geospatial",
+      "activity_status": "active",
+      "address_line": "12355 Sunrise Valley Drive, Suite 520",
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing",
+        "Simulation, digital twins, and synthetic environments"
+      ],
+      "city": "Reston",
+      "contact_email": "",
+      "contact_phone": "703-464-1000",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://investors.bowman.com/corporate-governance/contact-the-board",
+      "current_activity": "Reston-headquartered engineering firm providing drone imaging, scanning, and geospatial services.",
+      "latitude": 38.950763,
+      "location_precision": "site",
+      "longitude": -77.372733,
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection"
+      ],
+      "name": "Bowman Consulting Unmanned Geospatial Services",
+      "overview": "Reston-headquartered engineering firm providing drone imaging, scanning, and geospatial services. Bowman describes integrating its drone-based imaging and scanning operations into its national aerial-imaging business. This record locates the Virginia corporate contact rather than an aircraft operating base.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "20191",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Reston-headquartered engineering firm providing drone imaging, scanning, and geospatial services.",
+      "sources": [
+        {
+          "title": "Bowman geospatial and drone-service operations",
+          "url": "https://bowman.com/news_tags/geospatial"
+        },
+        {
+          "title": "Bowman published corporate address",
+          "url": "https://investors.bowman.com/corporate-governance/contact-the-board"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=12355+Sunrise+Valley+Drive%2C+Reston%2C+VA+20191&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Bowman describes integrating its drone-based imaging and scanning operations into its national aerial-imaging business. This record locates the Virginia corporate contact rather than an aircraft operating base.",
+      "website_url": "https://bowman.com/news_tags/geospatial"
     },
     {
       "address_line": "1402 Airport Road",
@@ -2283,7 +2454,7 @@
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://courses.vccs.edu/colleges/jtcc/courses/UMS-UnmannedSystems",
+      "contact_url": "https://courses.vccs.edu/colleges/brightpoint/courses/UMS-UnmannedSystems",
       "latitude": 37.346254,
       "location_precision": "site",
       "longitude": -77.407919,
@@ -2303,16 +2474,16 @@
       "short_description": "Community-college small-UAS coursework supporting remote-pilot knowledge and operational skills.",
       "sources": [
         {
-          "title": "VCCS: Unmanned Systems Courses at Brightpoint Community College",
-          "url": "https://courses.vccs.edu/colleges/jtcc/courses/UMS-UnmannedSystems"
-        },
-        {
           "title": "Brightpoint Community College campus location (NCES IPEDS 2024)",
           "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         },
         {
           "title": "Brightpoint Community College: About",
           "url": "https://www.brightpoint.edu/about"
+        },
+        {
+          "title": "Brightpoint Community College Unmanned Systems Courses: current official VCCS course catalog",
+          "url": "https://courses.vccs.edu/colleges/brightpoint/courses/UMS-UnmannedSystems"
         }
       ],
       "state": "VA",
@@ -2321,7 +2492,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
-      "website_url": "https://courses.vccs.edu/colleges/jtcc/courses/UMS-UnmannedSystems"
+      "website_url": "https://courses.vccs.edu/colleges/brightpoint/courses/UMS-UnmannedSystems"
     },
     {
       "address_line": "133 Runway Road",
@@ -2598,8 +2769,8 @@
           "url": "https://www.caci.com/"
         },
         {
-          "title": "CACI maritime and counter-UAS capability statement",
-          "url": "https://www.caci.com/sites/default/files/2022-11/F614_2210_Maritime_cUAS.pdf"
+          "title": "CACI counter-unmanned systems and maritime solutions",
+          "url": "https://www.caci.com/cuxs"
         }
       ],
       "state": "VA",
@@ -4185,6 +4356,63 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://defense-solutions.curtisswright.com/media-center/news/curtiss-wright-provide-sensor-processing-northrop-grumman-improved-threat-detection-system",
+      "activity_status": "active",
+      "address_line": "20130 Lakeview Center Plaza, Suite 200",
+      "capabilities": [
+        "Data engineering, analytics, and edge computing",
+        "Command, control, and communications",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Ashburn",
+      "contact_email": "",
+      "contact_phone": "703-779-7800",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://curtisswright.com/company/facilities",
+      "current_activity": "Ashburn defense-electronics division headquarters with embedded computing and sensor-processing products for unmanned systems.",
+      "latitude": 39.058623,
+      "location_precision": "site",
+      "longitude": -77.451874,
+      "missions": [
+        "Counter-UAS"
+      ],
+      "name": "Curtiss-Wright Defense Solutions Ashburn",
+      "overview": "Ashburn defense-electronics division headquarters with embedded computing and sensor-processing products for unmanned systems. Curtiss-Wright documents computing used on unmanned platforms and 2026 processing support for a sensor able to detect UAS. The public facility directory identifies its Ashburn office; production lines are not inferred from the headquarters address.",
+      "platform_domains": [
+        "Cross-domain autonomy",
+        "Unmanned aircraft systems",
+        "Counter-UAS"
+      ],
+      "postal_code": "20147",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Ashburn defense-electronics division headquarters with embedded computing and sensor-processing products for unmanned systems.",
+      "sources": [
+        {
+          "title": "Curtiss-Wright sensor-processing development including UAS detection",
+          "url": "https://defense-solutions.curtisswright.com/media-center/news/curtiss-wright-provide-sensor-processing-northrop-grumman-improved-threat-detection-system"
+        },
+        {
+          "title": "Curtiss-Wright Ashburn facility directory",
+          "url": "https://curtisswright.com/company/facilities"
+        },
+        {
+          "title": "Esri public address-point geocode (site approximation)",
+          "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=20130+Lakeview+Ctr+Plz%2C+Ashburn%2C+VA+20147&f=pjson&outFields=Match_addr%2CAddr_type%2CStAddr%2CCity%2CRegion%2CPostal&maxLocations=1"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Curtiss-Wright documents computing used on unmanned platforms and 2026 processing support for a sensor able to detect UAS. The public facility directory identifies its Ashburn office; production lines are not inferred from the headquarters address.",
+      "website_url": "https://defense-solutions.curtisswright.com/media-center/news/curtiss-wright-provide-sensor-processing-northrop-grumman-improved-threat-detection-system"
+    },
+    {
       "activity_last_verified_at": "2026-08-24",
       "activity_source_url": "https://d-fendsolutions.com/",
       "activity_status": "active",
@@ -4811,13 +5039,67 @@
       "website_url": "https://devorto.io/"
     },
     {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://www.dewberry.com/docs/default-source/documents/lidar-suas-one-pager.pdf",
+      "activity_status": "active",
+      "address_line": "13575 Heathcote Boulevard, Suite 130",
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Gainesville",
+      "contact_email": "",
+      "contact_phone": "703-468-2211",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://www.dewberry.com/contact",
+      "current_activity": "Gainesville-based small-UAS lidar and surveying acquisition team serving the mid-Atlantic region.",
+      "latitude": 38.803009,
+      "location_precision": "site",
+      "longitude": -77.599735,
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection"
+      ],
+      "name": "Dewberry Gainesville sUAS Acquisition Team",
+      "overview": "Gainesville-based small-UAS lidar and surveying acquisition team serving the mid-Atlantic region. Dewberry explicitly locates its sUAS acquisition team in Gainesville and describes aerial lidar, imagery, inspection, and ground-survey support. The contact directory supplies the Gainesville office address.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "20155",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Gainesville-based small-UAS lidar and surveying acquisition team serving the mid-Atlantic region.",
+      "sources": [
+        {
+          "title": "Dewberry Gainesville lidar sUAS acquisition team",
+          "url": "https://www.dewberry.com/docs/default-source/documents/lidar-suas-one-pager.pdf"
+        },
+        {
+          "title": "Dewberry Gainesville office contact",
+          "url": "https://www.dewberry.com/contact"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=13575+Heathcote+Boulevard%2C+Gainesville%2C+VA+20155&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Dewberry explicitly locates its sUAS acquisition team in Gainesville and describes aerial lidar, imagery, inspection, and ground-survey support. The contact directory supplies the Gainesville office address.",
+      "website_url": "https://www.dewberry.com/docs/default-source/documents/lidar-suas-one-pager.pdf"
+    },
+    {
       "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.dominionenergy.com/about/delivering-energy/electric-projects",
       "activity_status": "active",
+      "address_line": "600 East Canal Street",
       "capabilities": [
-        "Systems engineering and integration",
-        "Operations, maintenance, and sustainment",
-        "Manufacturing, materials, and prototyping"
+        "Operations, maintenance, and sustainment"
       ],
       "city": "Richmond",
       "contact_email": "",
@@ -4825,18 +5107,18 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vedp.org/industry/unmanned-systems",
       "current_activity": "Dominion Energy currently describes drone inspections as part of its work to inspect transmission lines, towers, and distribution equipment more safely and quickly.",
-      "latitude": 37.541,
-      "location_precision": "locality",
-      "longitude": -77.436,
+      "latitude": 37.538119,
+      "location_precision": "site",
+      "longitude": -77.440536,
       "missions": [
-        "Infrastructure inspection",
-        "Logistics and contested logistics"
+        "Infrastructure inspection"
       ],
       "name": "Dominion Energy UAS Program",
-      "overview": "Utility UAS activity supporting infrastructure inspection and Virginia advanced-flight demonstrations. Public sources support its classification as a Virginia program. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Dominion Energy uses UAS for utility infrastructure inspections and has participated in Virginia advanced-flight demonstrations. The marker identifies its public corporate headquarters as an administrative reference; inspections occur across its service territory.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "23219",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Greater Richmond",
@@ -4849,6 +5131,14 @@
         {
           "title": "Dominion Energy electric projects and drone inspections",
           "url": "https://www.dominionenergy.com/about/delivering-energy/electric-projects"
+        },
+        {
+          "title": "Dominion Energy corporate address in SEC filing",
+          "url": "https://www.sec.gov/Archives/edgar/data/715957/000119312526364045/0001193125-26-364045-index.htm"
+        },
+        {
+          "title": "FAA BEYOND: Dominion infrastructure-inspection accomplishments",
+          "url": "https://www.faa.gov/uas/programs_partnerships/beyond"
         }
       ],
       "state": "VA",
@@ -5033,6 +5323,58 @@
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
       "website_url": "https://www.droneup.com/"
+    },
+    {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://www.duncan-parnell.com/locations/ashland-va",
+      "activity_status": "active",
+      "address_line": "305 Ashcake Road, Suite K",
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion",
+        "Systems engineering and integration"
+      ],
+      "city": "Ashland",
+      "contact_email": "",
+      "contact_phone": "804-368-7525",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://www.duncan-parnell.com/locations/ashland-va",
+      "current_activity": "Ashland branch offering drone hardware, maintenance, software, operator training, and hydrospatial equipment.",
+      "latitude": 37.744906,
+      "location_precision": "site",
+      "longitude": -77.469209,
+      "missions": [
+        "Surveying and mapping",
+        "Training and experimentation"
+      ],
+      "name": "Duncan-Parnell Ashland Unmanned Solutions",
+      "overview": "Ashland branch offering drone hardware, maintenance, software, operator training, and hydrospatial equipment. The branch-specific official page explicitly lists unmanned-solutions sales, service, parts, and UAS operator training at this Ashland location.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "23005",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Greater Richmond",
+      "short_description": "Ashland branch offering drone hardware, maintenance, software, operator training, and hydrospatial equipment.",
+      "sources": [
+        {
+          "title": "Duncan-Parnell Ashland location and UAS services",
+          "url": "https://www.duncan-parnell.com/locations/ashland-va"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=305+Ashcake+Road%2C+Ashland%2C+VA+23005&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Workforce and talent",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "The branch-specific official page explicitly lists unmanned-solutions sales, service, parts, and UAS operator training at this Ashland location.",
+      "website_url": "https://www.duncan-parnell.com/locations/ashland-va"
     },
     {
       "address_line": "1402 Airport Road",
@@ -5425,6 +5767,61 @@
       "website_url": "https://www.ecpi.edu/"
     },
     {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://electra.aero/",
+      "activity_status": "developing",
+      "address_line": "10761 James Payne Court",
+      "capabilities": [
+        "Propulsion, batteries, fuels, and energy systems",
+        "Systems engineering and integration",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Manassas",
+      "contact_email": "",
+      "contact_phone": "703-479-7870",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://electra.aero/defense",
+      "current_activity": "Manassas headquarters of a developer of hybrid-electric ultra-short-takeoff aircraft.",
+      "latitude": 38.730274,
+      "location_precision": "site",
+      "longitude": -77.518157,
+      "missions": [
+        "Logistics and contested logistics"
+      ],
+      "name": "Electra Manassas Headquarters and Aircraft Development",
+      "overview": "Manassas headquarters of a developer of hybrid-electric ultra-short-takeoff aircraft. Electra supplies supporting advanced-air-mobility propulsion and aircraft-development expertise. Its aircraft program remains in development; a proposed production factory in Ohio is not a Virginia manufacturing asset.",
+      "platform_domains": [
+        "Advanced Air Mobility"
+      ],
+      "postal_code": "20110",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Manassas headquarters of a developer of hybrid-electric ultra-short-takeoff aircraft.",
+      "sources": [
+        {
+          "title": "Electra technology, current headquarters and development activity",
+          "url": "https://electra.aero/"
+        },
+        {
+          "title": "Electra defense and public headquarters contact",
+          "url": "https://electra.aero/defense"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=10761+James+Payne+Court%2C+Manassas%2C+VA+20110&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Research and technical depth",
+        "Supporting ecosystem asset"
+      ],
+      "unmanned_systems_relevance": "Electra supplies supporting advanced-air-mobility propulsion and aircraft-development expertise. Its aircraft program remains in development; a proposed production factory in Ohio is not a Virginia manufacturing asset.",
+      "website_url": "https://electra.aero/"
+    },
+    {
       "address_line": "30461 Garnand Drive",
       "capabilities": [
         "Operations, maintenance, and sustainment",
@@ -5680,25 +6077,27 @@
       "website_url": "https://www.ensco.com/capabilities"
     },
     {
+      "address_line": "1991 Kraft Drive, Building 19",
       "capabilities": [
         "Safety, policy, regulatory, and airspace integration"
       ],
       "city": "Blacksburg",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 37.229,
-      "location_precision": "locality",
-      "longitude": -80.414,
+      "contact_text": "MAAP public program and partnership inquiries",
+      "contact_url": "https://maap.ictas.vt.edu/Contact.html",
+      "latitude": 37.202048,
+      "location_precision": "site",
+      "longitude": -80.409798,
       "missions": [
         "Training and experimentation"
       ],
       "name": "FAA BEYOND Virginia Team",
-      "overview": "Virginia team advancing scalable beyond-visual-line-of-sight UAS operations and safety cases. Public sources support its classification as a Virginia program. Documented capabilities include Safety, policy, regulatory, and airspace integration. Relevant mission areas include Training and experimentation.",
+      "overview": "Virginia team advancing scalable beyond-visual-line-of-sight UAS operations and safety cases. Public sources support its classification as a Virginia program. Documented capabilities include Safety, policy, regulatory, and airspace integration. Relevant mission areas include Training and experimentation. The marker identifies MAAP's publicly documented administering office; BEYOND activities take place at multiple partner sites.",
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "24060",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "New River Valley",
@@ -5711,6 +6110,18 @@
         {
           "title": "FAA BEYOND program and Virginia participant",
           "url": "https://www.faa.gov/uas/programs_partnerships/beyond"
+        },
+        {
+          "title": "Virginia Tech ICTAS building housing MAAP",
+          "url": "https://ictas.vt.edu/Facilities/ictascrc.html"
+        },
+        {
+          "title": "Virginia BEYOND program and MAAP operational leadership",
+          "url": "https://maap.ictas.vt.edu/BEYOND/aboutBEYOND.html"
+        },
+        {
+          "title": "MAAP public program contact",
+          "url": "https://maap.ictas.vt.edu/Contact.html"
         }
       ],
       "state": "VA",
@@ -6109,16 +6520,16 @@
       "short_description": "Former Sterling headquarters of Dedrone, retained as a historical Virginia ecosystem record after Axon acquired the company in 2024.",
       "sources": [
         {
-          "title": "Dedrone by Axon",
-          "url": "https://www.axon.com/products/dedrone"
-        },
-        {
           "title": "Axon completes acquisition of Dedrone",
           "url": "https://www.axon.com/blog/axon-completes-acquisition-of-dedrone"
         },
         {
           "title": "Former Dedrone Washington-Area Headquarters public contact information",
           "url": "https://www.axon.com/contact/dedrone"
+        },
+        {
+          "title": "Dedrone by Axon official airspace security product information",
+          "url": "https://www.axon.com/landing-pages/dedrone-sem-landing-page"
         }
       ],
       "state": "VA",
@@ -7272,27 +7683,29 @@
       "website_url": "https://www.germanna.edu/"
     },
     {
+      "address_line": "10000 Germanna Point Drive",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Systems engineering and integration"
       ],
-      "city": "Dahlgren",
+      "city": "Fredericksburg",
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vedp.org/industry/unmanned-systems",
-      "latitude": 38.333,
-      "location_precision": "locality",
-      "longitude": -77.031,
+      "latitude": 38.228987,
+      "location_precision": "site",
+      "longitude": -77.492539,
       "missions": [
         "Training and experimentation"
       ],
       "name": "Germanna Community College Drone-UAV FAA Pilot Class",
-      "overview": "Community-college class supporting FAA remote-pilot knowledge for drone operations. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Systems engineering and integration. Relevant mission areas include Training and experimentation.",
+      "overview": "Community-college class supporting FAA remote-pilot knowledge for drone operations. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Systems engineering and integration. Relevant mission areas include Training and experimentation. The marker identifies the college's public Fredericksburg campus, which houses its Workforce and Technology Center. The actual classroom, course schedule, and flight location require confirmation with the college.",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
       ],
+      "postal_code": "22408-9543",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Fredericksburg Region",
@@ -7305,6 +7718,10 @@
         {
           "title": "Germanna Community College Unmanned Systems courses",
           "url": "https://courses.vccs.edu/colleges/germanna/courses/UMS-UnmannedSystems"
+        },
+        {
+          "title": "Germanna Fredericksburg campus Workforce and Technology Center",
+          "url": "https://germanna.edu/about-germanna/contact-hours-locations"
         }
       ],
       "state": "VA",
@@ -8019,7 +8436,7 @@
       "contact_email": "",
       "contact_phone": "757-727-5000",
       "contact_text": "Institution general information and admissions",
-      "contact_url": "https://www.hamptonu.edu/studentservices/admissions",
+      "contact_url": "https://home.hamptonu.edu/admissions/",
       "latitude": 37.023632,
       "location_precision": "site",
       "longitude": -76.338129,
@@ -8050,12 +8467,16 @@
           "url": "https://www.hamptonu.edu/"
         },
         {
-          "title": "Hampton University admissions and public contact information",
-          "url": "https://www.hamptonu.edu/studentservices/admissions"
-        },
-        {
           "title": "Hampton University contact information",
           "url": "https://home.hamptonu.edu/about/contact-hu/"
+        },
+        {
+          "title": "Hampton University Office of Admission and public contact information",
+          "url": "https://home.hamptonu.edu/admissions/"
+        },
+        {
+          "title": "Hampton University Uncrewed Aircraft Systems Program",
+          "url": "https://home.hamptonu.edu/engineering/uas/"
         }
       ],
       "state": "VA",
@@ -8325,9 +8746,10 @@
       "website_url": "https://www.chesterfield.gov/163/Parks-and-Facilities"
     },
     {
-      "activity_last_verified_at": "2026-08-21",
-      "activity_source_url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/town_council/meeting/11057/tc_regmtg_03_06_2023.pdf",
-      "activity_status": "active",
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://www.dcjs.virginia.gov/sites/dcjs.virginia.gov/files/meetingminutes/criminal-justice-services-board/2025-12-08.pdf",
+      "activity_status": "",
+      "address_line": "15000 Washington Street, Suite 100",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -8337,30 +8759,27 @@
       "contact_phone": "703-753-2700",
       "contact_text": "Haymarket Police Department",
       "contact_url": "https://www.townofhaymarket.org/1293/Police-Department",
-      "current_activity": "Haymarket Police documented a fully implemented department drone program and received a CY 2026 award to replace an aircraft already in service.",
-      "latitude": 38.812,
-      "location_precision": "locality",
-      "longitude": -77.636,
+      "current_activity": "The DCJS award schedule and board minutes support a CY 2026 unmanned-aircraft replacement award for Haymarket. A fresh working copy of the older police report and current operating details still need confirmation.",
+      "latitude": 38.812184,
+      "location_precision": "site",
+      "longitude": -77.636347,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
         "Surveying and mapping"
       ],
       "name": "Haymarket Police Department Drone Program",
-      "overview": "Town police drone program documented as fully implemented and supported by a CY 2026 replacement award. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+      "overview": "Haymarket's police drone program is retained from prior public documentation. The current DCJS schedule and board minutes support a CY 2026 replacement award to the town. The older local packet is unavailable, so the earlier fully-implemented claim has not been freshly reconfirmed. The map point is the public Town Hall / police contact site, not drone storage or a launch location.",
       "partnership_opportunities": "Public-safety coordination and program questions can be directed to the Haymarket Police Department.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "20169",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Northern Virginia",
-      "short_description": "Town police drone program documented as fully implemented and supported by a CY 2026 replacement award.",
+      "short_description": "Haymarket police drone program retained from prior documentation; the town is also listed in the CY 2026 aircraft-replacement awards.",
       "sources": [
-        {
-          "title": "Haymarket Town Council packet documenting the implemented drone program",
-          "url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/town_council/meeting/11057/tc_regmtg_03_06_2023.pdf"
-        },
         {
           "title": "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
           "url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
@@ -8372,6 +8791,10 @@
         {
           "title": "Haymarket Police Department contact information",
           "url": "https://www.townofhaymarket.org/1293/Police-Department"
+        },
+        {
+          "title": "DCJS board minutes approving UAS replacement awards, including Haymarket",
+          "url": "https://www.dcjs.virginia.gov/sites/dcjs.virginia.gov/files/meetingminutes/criminal-justice-services-board/2025-12-08.pdf"
         }
       ],
       "state": "VA",
@@ -8381,7 +8804,63 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/town_council/meeting/11057/tc_regmtg_03_06_2023.pdf"
+      "website_url": "https://www.townofhaymarket.org/1293/Police-Department"
+    },
+    {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://www.hdtrobotics.com/",
+      "activity_status": "active",
+      "address_line": "510 Lansdowne Road",
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration",
+        "Autonomy and artificial intelligence"
+      ],
+      "city": "Fredericksburg",
+      "contact_email": "info@hdtglobal.com",
+      "contact_phone": "800-969-8527",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://www.hdtrobotics.com/",
+      "current_activity": "Fredericksburg HDT Robotics facility producing robotic arms and Hunter WOLF unmanned ground vehicles under the BLADE brand.",
+      "latitude": 38.265887,
+      "location_precision": "site",
+      "longitude": -77.463924,
+      "missions": [
+        "Logistics and contested logistics",
+        "Training and experimentation"
+      ],
+      "name": "HDT Robotics BLADE Fredericksburg Facility",
+      "overview": "Fredericksburg HDT Robotics facility producing robotic arms and Hunter WOLF unmanned ground vehicles under the BLADE brand. The operator publishes its Fredericksburg address and current ground-robot products. HDT announced its BLADE branding in March 2026; the legal operating entity remains HDT Robotics, LLC.",
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "postal_code": "22408",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Fredericksburg Region",
+      "short_description": "Fredericksburg HDT Robotics facility producing robotic arms and Hunter WOLF unmanned ground vehicles under the BLADE brand.",
+      "sources": [
+        {
+          "title": "HDT Robotics products and facility contact",
+          "url": "https://www.hdtrobotics.com/"
+        },
+        {
+          "title": "BLADE and HDT Robotics current program news",
+          "url": "https://www.hdtglobal.com/news/"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=510+Lansdowne+Road%2C+Fredericksburg%2C+VA+22408&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "The operator publishes its Fredericksburg address and current ground-robot products. HDT announced its BLADE branding in March 2026; the legal operating entity remains HDT Robotics, LLC.",
+      "website_url": "https://www.hdtrobotics.com/"
     },
     {
       "address_line": "7721 East Parham Road",
@@ -8858,6 +9337,63 @@
       "website_url": "https://www.vedp.org/news/home-business-more-400-years"
     },
     {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://iflydrones.com/",
+      "activity_status": "active",
+      "address_line": "9507 Lyndonway Drive",
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "city": "Richmond",
+      "contact_email": "Gary@IFlyDrones.com",
+      "contact_phone": "804-356-5179",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://iflydrones.com/contact/",
+      "current_activity": "Richmond-area drone-services business offering imagery, mapping, inspection, equipment support, and pilot training.",
+      "latitude": 37.615098,
+      "location_precision": "site",
+      "longitude": -77.57438,
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection",
+        "Training and experimentation"
+      ],
+      "name": "I Fly Drones Richmond Services and Training",
+      "overview": "Richmond-area drone-services business offering imagery, mapping, inspection, equipment support, and pilot training. The operator publishes aerial mapping, thermal imaging, drone repair, and instructional services. The marker denotes its publicly listed business contact address, not a flight-training field or public drop-in facility.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "23229",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Greater Richmond",
+      "short_description": "Richmond-area drone-services business offering imagery, mapping, inspection, equipment support, and pilot training.",
+      "sources": [
+        {
+          "title": "I Fly Drones services",
+          "url": "https://iflydrones.com/"
+        },
+        {
+          "title": "I Fly Drones contact address",
+          "url": "https://iflydrones.com/contact/"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=9507+Lyndonway+Drive%2C+Richmond%2C+VA+23229&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Workforce and talent",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "The operator publishes aerial mapping, thermal imaging, drone repair, and instructional services. The marker denotes its publicly listed business contact address, not a flight-training field or public drop-in facility.",
+      "website_url": "https://iflydrones.com/"
+    },
+    {
       "address_line": "150 Slayton Avenue",
       "capabilities": [
         "Perception, sensing, and sensor fusion",
@@ -8954,6 +9490,59 @@
       ],
       "unmanned_systems_relevance": "Provides maritime engineering, shipbuilding, integration, or robotic-system capacity.",
       "website_url": "https://icisrvcs.com/news/2020/2/5/236/ici-services-to-support-navy-unmanned-surface-vehicle-development/index.html"
+    },
+    {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://icsva.com/",
+      "activity_status": "active",
+      "address_line": "4455 Flexon Drive",
+      "capabilities": [
+        "Systems engineering and integration",
+        "Perception, sensing, and sensor fusion",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Prince George",
+      "contact_email": "",
+      "contact_phone": "804-526-7693",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://icsva.com/",
+      "current_activity": "Prince George industrial systems integrator providing robotics, machine vision, and manufacturing controls.",
+      "latitude": 37.251627,
+      "location_precision": "site",
+      "longitude": -77.369239,
+      "missions": [],
+      "name": "Industrial Control Specialties",
+      "overview": "Prince George industrial systems integrator providing robotics, machine vision, and manufacturing controls. ICS provides enabling automation, controls, and system-integration capacity for the manufacturing ecosystem. Its public description supports industrial robotics expertise, not a claim of an autonomous vehicle product.",
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "postal_code": "23875",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Greater Richmond",
+      "short_description": "Prince George industrial systems integrator providing robotics, machine vision, and manufacturing controls.",
+      "sources": [
+        {
+          "title": "ICS automation capabilities and business address",
+          "url": "https://icsva.com/"
+        },
+        {
+          "title": "ICS current careers and location",
+          "url": "https://icsva.com/careers/"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4455+Flexon+Drive%2C+Prince+George%2C+VA+23875&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "unmanned_systems_relevance": "ICS provides enabling automation, controls, and system-integration capacity for the manufacturing ecosystem. Its public description supports industrial robotics expertise, not a claim of an autonomous vehicle product.",
+      "website_url": "https://icsva.com/"
     },
     {
       "activity_last_verified_at": "2026-08-21",
@@ -9113,6 +9702,60 @@
       ],
       "unmanned_systems_relevance": "Provides advanced manufacturing, modeling, sensing, communications, or prototyping capacity that enables unmanned-system development and scale-up.",
       "website_url": "https://www.ialr.org/"
+    },
+    {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://investor.iridium.com/2023-06-20-Iridium-Proposes-a-New-Model-for-Monitored-BVLOS-UAS-Integration-in-the-National-Airspace-System",
+      "activity_status": "active",
+      "address_line": "1676 International Drive, Suite 1100",
+      "capabilities": [
+        "Command, control, and communications",
+        "Safety, policy, regulatory, and airspace integration"
+      ],
+      "city": "McLean",
+      "contact_email": "",
+      "contact_phone": "703-287-7400",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://www.iridium.com/company/contact",
+      "current_activity": "McLean satellite-network headquarters supporting communications for BVLOS unmanned aircraft and autonomous systems.",
+      "latitude": 38.9246,
+      "location_precision": "site",
+      "longitude": -77.227956,
+      "missions": [
+        "Communications relay"
+      ],
+      "name": "Iridium Communications Headquarters",
+      "overview": "McLean satellite-network headquarters supporting communications for BVLOS unmanned aircraft and autonomous systems. Iridium reports a flight trial using its satellite avionics for remotely piloted BVLOS aircraft. The trial occurred in California; this record maps its current Virginia corporate office.",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Space-enabled services"
+      ],
+      "postal_code": "22102",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "McLean satellite-network headquarters supporting communications for BVLOS unmanned aircraft and autonomous systems.",
+      "sources": [
+        {
+          "title": "Iridium BVLOS unmanned-aircraft flight trial",
+          "url": "https://investor.iridium.com/2023-06-20-Iridium-Proposes-a-New-Model-for-Monitored-BVLOS-UAS-Integration-in-the-National-Airspace-System"
+        },
+        {
+          "title": "Iridium current corporate address",
+          "url": "https://www.iridium.com/company/contact"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1676+International+Drive%2C+McLean%2C+VA+22102&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Iridium reports a flight trial using its satellite avionics for remotely piloted BVLOS aircraft. The trial occurred in California; this record maps its current Virginia corporate office.",
+      "website_url": "https://investor.iridium.com/2023-06-20-Iridium-Proposes-a-New-Model-for-Monitored-BVLOS-UAS-Integration-in-the-National-Airspace-System"
     },
     {
       "address_line": "1651 East Parham Road",
@@ -9561,6 +10204,62 @@
       "website_url": "https://www.kinggeorgecountyva.gov/AgendaCenter/ViewFile/Minutes/_02032026-1454"
     },
     {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://www.kollmorgen.com/en-us/solutions/robotics/mobile-robots",
+      "activity_status": "active",
+      "address_line": "203A West Rock Road",
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Propulsion, batteries, fuels, and energy systems",
+        "Systems engineering and integration"
+      ],
+      "city": "Radford",
+      "contact_email": "",
+      "contact_phone": "833-565-5667",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://www.kollmorgen.com/en-us/company/worldwide-locations",
+      "current_activity": "Radford motion-systems supplier with motors and engineering support for unmanned and mobile robotics.",
+      "latitude": 37.117739,
+      "location_precision": "site",
+      "longitude": -80.555553,
+      "missions": [],
+      "name": "Kollmorgen Radford Motion Systems",
+      "overview": "Radford motion-systems supplier with motors and engineering support for unmanned and mobile robotics. Kollmorgen documents motors for ground, aerial, surface and undersea robots. Its worldwide location page identifies the Radford business; autonomous-vehicle fleet-control development is not assumed to be located there.",
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Unmanned aircraft systems",
+        "Maritime surface systems",
+        "Undersea systems"
+      ],
+      "postal_code": "24141",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "New River Valley",
+      "short_description": "Radford motion-systems supplier with motors and engineering support for unmanned and mobile robotics.",
+      "sources": [
+        {
+          "title": "Kollmorgen mobile-robot motion products",
+          "url": "https://www.kollmorgen.com/en-us/solutions/robotics/mobile-robots"
+        },
+        {
+          "title": "Kollmorgen worldwide locations",
+          "url": "https://www.kollmorgen.com/en-us/company/worldwide-locations"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=203+West+Rock+Road%2C+Radford%2C+VA+24141&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Kollmorgen documents motors for ground, aerial, surface and undersea robots. Its worldwide location page identifies the Radford business; autonomous-vehicle fleet-control development is not assumed to be located there.",
+      "website_url": "https://www.kollmorgen.com/en-us/solutions/robotics/mobile-robots"
+    },
+    {
       "activity_last_verified_at": "2026-08-30",
       "activity_source_url": "https://www.l3harris.com/newsroom/editorial/2024/05/orange-county-expansion-helps-aerojet-rocketdyne-boost-solid-rocket",
       "activity_status": "active",
@@ -9833,16 +10532,16 @@
       "short_description": "Community-college UMS coursework including remote-pilot ground school and small-UAS operations.",
       "sources": [
         {
-          "title": "VCCS: Unmanned Systems Courses at Laurel Ridge Community College",
-          "url": "https://courses.vccs.edu/colleges/lfcc/courses/UMS-UnmannedSystems"
-        },
-        {
           "title": "Laurel Ridge Community College campus location (NCES IPEDS 2024)",
           "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
         },
         {
           "title": "Laurel Ridge Community College: About",
           "url": "https://laurelridge.edu/about-us/"
+        },
+        {
+          "title": "Laurel Ridge Community College Unmanned Systems Courses: current official VCCS course catalog",
+          "url": "https://courses.vccs.edu/colleges/laurelridge/courses/UMS-UnmannedSystems"
         }
       ],
       "state": "VA",
@@ -9851,7 +10550,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
-      "website_url": "https://courses.vccs.edu/colleges/lfcc/courses/UMS-UnmannedSystems"
+      "website_url": "https://courses.vccs.edu/colleges/laurelridge/courses/UMS-UnmannedSystems"
     },
     {
       "address_line": "773 Airport Road",
@@ -10412,6 +11111,70 @@
       ],
       "unmanned_systems_relevance": "Develops direct UAS payloads, end effectors, measurement tools, and integration methods for infrastructure inspection and physical work on power lines.",
       "website_url": "https://linebird.net/about/"
+    },
+    {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://www.liquid-robotics.com/resource/liquid-robotics-relocation-jessup-maryland/",
+      "activity_status": "active",
+      "address_line": "460 Herndon Parkway",
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Command, control, and communications",
+        "Manufacturing, materials, and prototyping",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Herndon",
+      "contact_email": "info@liquid-robotics.com",
+      "contact_phone": "703-376-9300",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://www.liquid-robotics.com/contact-us/",
+      "current_activity": "Current published contact remains Herndon. On May 7, 2026 the company announced plans to relocate headquarters and manufacturing to Jessup, Maryland by the end of 2026; completion was not confirmed in the reviewed sources.",
+      "latitude": 38.957596,
+      "location_precision": "site",
+      "longitude": -77.375843,
+      "missions": [
+        "Maritime domain awareness",
+        "Environmental monitoring",
+        "Communications relay"
+      ],
+      "name": "Liquid Robotics Herndon Headquarters and Production",
+      "overview": "Liquid Robotics manufactures Wave Glider uncrewed surface vessels. Its current contact page still lists Herndon; a May 2026 announcement schedules headquarters and manufacturing relocation to Jessup, Maryland by year end.",
+      "platform_domains": [
+        "Maritime surface systems",
+        "Undersea systems"
+      ],
+      "postal_code": "20170",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Herndon Wave Glider headquarters and production site, with a move to Jessup, Maryland announced for the end of 2026.",
+      "sources": [
+        {
+          "title": "Liquid Robotics headquarters and production relocation",
+          "url": "https://www.liquid-robotics.com/blog/liquid-robotics-headquarters-relocation-herndon/"
+        },
+        {
+          "title": "Liquid Robotics current locations and contact",
+          "url": "https://www.liquid-robotics.com/contact-us/"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=460+Herndon+Parkway%2C+Herndon%2C+VA+20170&benchmark=Public_AR_Current&format=json"
+        },
+        {
+          "title": "Liquid Robotics announced 2026 relocation to Maryland",
+          "url": "https://www.liquid-robotics.com/resource/liquid-robotics-relocation-jessup-maryland/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Wave Glider production and maritime-autonomy engineering support Virginia capability while the Herndon operation remains. Hawaii is the marine test center. The announced Maryland relocation requires a follow-up location review.",
+      "website_url": "https://www.liquid-robotics.com/blog/liquid-robotics-headquarters-relocation-herndon/"
     },
     {
       "address_line": "9500 Godwin Drive, Building 400",
@@ -11771,6 +12534,62 @@
       "website_url": "https://doav.virginia.gov/airport-directory/"
     },
     {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://www.mcqinc.com/",
+      "activity_status": "active",
+      "address_line": "1551 Forbes Street",
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing",
+        "Command, control, and communications"
+      ],
+      "city": "Fredericksburg",
+      "contact_email": "info@mcqinc.com",
+      "contact_phone": "866-373-2374",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://www.mcqinc.com/news/",
+      "current_activity": "Fredericksburg developer of autonomous unattended sensors and passive UAS detection systems.",
+      "latitude": 38.356087,
+      "location_precision": "site",
+      "longitude": -77.456271,
+      "missions": [
+        "Counter-UAS",
+        "ISR"
+      ],
+      "name": "McQ Fredericksburg Sensor Systems",
+      "overview": "Fredericksburg developer of autonomous unattended sensors and passive UAS detection systems. McQ describes RANGER sensors that autonomously detect and classify UAS and other targets and its current counter-UAS integration activity. This record identifies the commercial company office.",
+      "platform_domains": [
+        "Counter-UAS",
+        "Cross-domain autonomy"
+      ],
+      "postal_code": "22405",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Fredericksburg Region",
+      "short_description": "Fredericksburg developer of autonomous unattended sensors and passive UAS detection systems.",
+      "sources": [
+        {
+          "title": "McQ autonomous sensing technology",
+          "url": "https://www.mcqinc.com/"
+        },
+        {
+          "title": "McQ current counter-UAS activity and public contact",
+          "url": "https://www.mcqinc.com/news/"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1551+Forbes+Street%2C+Fredericksburg%2C+VA+22405&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "McQ describes RANGER sensors that autonomously detect and classify UAS and other targets and its current counter-UAS integration activity. This record identifies the commercial company office.",
+      "website_url": "https://www.mcqinc.com/"
+    },
+    {
       "address_line": "911 Madison Street",
       "capabilities": [
         "Operations, maintenance, and sustainment",
@@ -11867,6 +12686,64 @@
       ],
       "unmanned_systems_relevance": "Mecklenburg-Brunswick Rgnl is included as public aviation infrastructure serving South Hill. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://www.metsci.com/what-we-do/products-tools/automate/",
+      "activity_status": "active",
+      "address_line": "1818 Library Street, Suite 600",
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Data engineering, analytics, and edge computing",
+        "Systems engineering and integration"
+      ],
+      "city": "Reston",
+      "contact_email": "",
+      "contact_phone": "703-787-8700",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://www.metsci.com/contact-us/",
+      "current_activity": "Reston company developing autonomous coordination and decision software for heterogeneous unmanned systems.",
+      "latitude": 38.958642,
+      "location_precision": "site",
+      "longitude": -77.358687,
+      "missions": [
+        "Search and rescue",
+        "Training and experimentation"
+      ],
+      "name": "Metron Reston Autonomy and Decision Systems",
+      "overview": "Reston company developing autonomous coordination and decision software for heterogeneous unmanned systems. Metron documents the AutoMATE framework for distributed planning across unmanned air, surface, undersea, and space platforms. The marker represents the corporate office, not each deployment location.",
+      "platform_domains": [
+        "Cross-domain autonomy",
+        "Unmanned aircraft systems",
+        "Maritime surface systems",
+        "Undersea systems"
+      ],
+      "postal_code": "20190",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Reston company developing autonomous coordination and decision software for heterogeneous unmanned systems.",
+      "sources": [
+        {
+          "title": "Metron AutoMATE unmanned teaming framework",
+          "url": "https://www.metsci.com/what-we-do/products-tools/automate/"
+        },
+        {
+          "title": "Metron corporate office contact",
+          "url": "https://www.metsci.com/contact-us/"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1818+Library+Street%2C+Reston%2C+VA+20190&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Metron documents the AutoMATE framework for distributed planning across unmanned air, surface, undersea, and space platforms. The marker represents the corporate office, not each deployment location.",
+      "website_url": "https://www.metsci.com/what-we-do/products-tools/automate/"
     },
     {
       "activity_last_verified_at": "2026-08-30",
@@ -12212,6 +13089,65 @@
       "website_url": "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range"
     },
     {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://www.mtsi-va.com/case-study/supervised-autonomous-function-executive-safe/",
+      "activity_status": "active",
+      "address_line": "6361 Walker Lane",
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Alexandria",
+      "contact_email": "",
+      "contact_phone": "703-564-3800",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://www.mtsi-va.com/contact/",
+      "current_activity": "Alexandria engineering company providing autonomy evaluation, integration, and assurance capabilities.",
+      "latitude": 38.769116,
+      "location_precision": "site",
+      "longitude": -77.159256,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Modern Technology Solutions Alexandria Headquarters",
+      "overview": "Alexandria engineering company providing autonomy evaluation, integration, and assurance capabilities. MTSI documents its SAFE autonomous-platform evaluation framework and engineering capabilities. Its April 2026 headquarters relocation announcement supersedes the older Shawnee Road contact listing.",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "postal_code": "22310",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Alexandria engineering company providing autonomy evaluation, integration, and assurance capabilities.",
+      "sources": [
+        {
+          "title": "MTSI SAFE autonomous-platform evaluation",
+          "url": "https://www.mtsi-va.com/case-study/supervised-autonomous-function-executive-safe/"
+        },
+        {
+          "title": "MTSI 2026 headquarters relocation",
+          "url": "https://www.mtsi-va.com/mtsi-announces-relocation-of-corporate-headquarters/"
+        },
+        {
+          "title": "MTSI public contact",
+          "url": "https://www.mtsi-va.com/contact/"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=6361+Walker+Lane%2C+Alexandria%2C+VA+22310&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "MTSI documents its SAFE autonomous-platform evaluation framework and engineering capabilities. Its April 2026 headquarters relocation announcement supersedes the older Shawnee Road contact listing.",
+      "website_url": "https://www.mtsi-va.com/case-study/supervised-autonomous-function-executive-safe/"
+    },
+    {
       "address_line": "1 East Main Street",
       "capabilities": [
         "Operations, maintenance, and sustainment",
@@ -12262,6 +13198,62 @@
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
       "website_url": "https://www.montgomerycountyva.gov/1/departments-services/sheriffs-office/support-services"
+    },
+    {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://www.moog.com/products/actuators-servoactuators/multi-purpose.html",
+      "activity_status": "active",
+      "address_line": "1213 North Main Street",
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration",
+        "Propulsion, batteries, fuels, and energy systems"
+      ],
+      "city": "Blacksburg",
+      "contact_email": "",
+      "contact_phone": "540-552-3011",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://www.moog.com/about-us/space-defense-group/power-and-data-sector.html",
+      "current_activity": "Blacksburg power, data-transfer and motion-control business serving unmanned air, land and sea platforms.",
+      "latitude": 37.241414,
+      "location_precision": "site",
+      "longitude": -80.418488,
+      "missions": [],
+      "name": "Moog Blacksburg Power and Data Division",
+      "overview": "Blacksburg power, data-transfer and motion-control business serving unmanned air, land and sea platforms. Moog publishes unmanned-platform actuator applications and confirms actuator manufacturing moved to Blacksburg. The marker uses its division contact address; the reviewed pages do not identify the exact internal actuator production building.",
+      "platform_domains": [
+        "Cross-domain autonomy",
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Maritime surface systems"
+      ],
+      "postal_code": "24060",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "New River Valley",
+      "short_description": "Blacksburg power, data-transfer and motion-control business serving unmanned air, land and sea platforms.",
+      "sources": [
+        {
+          "title": "Moog unmanned-system actuators and Blacksburg manufacturing relocation",
+          "url": "https://www.moog.com/products/actuators-servoactuators/multi-purpose.html"
+        },
+        {
+          "title": "Moog Power and Data Division public locations",
+          "url": "https://www.moog.com/about-us/space-defense-group/power-and-data-sector.html"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=1213+North+Main+Street%2C+Blacksburg%2C+VA+24060&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Moog publishes unmanned-platform actuator applications and confirms actuator manufacturing moved to Blacksburg. The marker uses its division contact address; the reviewed pages do not identify the exact internal actuator production building.",
+      "website_url": "https://www.moog.com/products/actuators-servoactuators/multi-purpose.html"
     },
     {
       "address_line": "8223 Lee Highway",
@@ -12457,7 +13449,7 @@
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://courses.vccs.edu/colleges/dslcc/courses/UMS-UnmannedSystems",
+      "contact_url": "https://courses.vccs.edu/colleges/mgcc/courses/UMS-UnmannedSystems",
       "latitude": 37.812275,
       "location_precision": "site",
       "longitude": -79.852536,
@@ -12473,13 +13465,9 @@
       "postal_code": "24422",
       "provenance": "curated-public-source",
       "record_type": "program",
-      "region": "Shenandoah Valley",
+      "region": "Roanoke Valley",
       "short_description": "Community-college UMS coursework covering remote-pilot preparation and advanced UAS operations.",
       "sources": [
-        {
-          "title": "VCCS: Unmanned Systems Courses at Mountain Gateway Community College",
-          "url": "https://courses.vccs.edu/colleges/dslcc/courses/UMS-UnmannedSystems"
-        },
         {
           "title": "Mountain Gateway Community College campus location (NCES IPEDS 2024)",
           "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
@@ -12487,6 +13475,10 @@
         {
           "title": "Mountain Gateway Community College: About",
           "url": "https://www.mgcc.edu/about"
+        },
+        {
+          "title": "Mountain Gateway Community College Unmanned Systems Courses: current official VCCS course catalog",
+          "url": "https://courses.vccs.edu/colleges/mgcc/courses/UMS-UnmannedSystems"
         }
       ],
       "state": "VA",
@@ -12495,7 +13487,67 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
-      "website_url": "https://courses.vccs.edu/colleges/dslcc/courses/UMS-UnmannedSystems"
+      "website_url": "https://courses.vccs.edu/colleges/mgcc/courses/UMS-UnmannedSystems"
+    },
+    {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://naltec.com/",
+      "activity_status": "active",
+      "address_line": "11100 Endeavor Court, Suite 300",
+      "capabilities": [
+        "Command, control, and communications",
+        "Navigation and positioning",
+        "Systems engineering and integration"
+      ],
+      "city": "Manassas",
+      "contact_email": "",
+      "contact_phone": "888-746-8867",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://naltec.com/",
+      "current_activity": "Manassas satellite-communications and resilient navigation company serving uncrewed aircraft and surface vessels.",
+      "latitude": 38.75122,
+      "location_precision": "site",
+      "longitude": -77.527791,
+      "missions": [
+        "Communications relay"
+      ],
+      "name": "NAL Technologies Manassas Headquarters",
+      "overview": "Manassas satellite-communications and resilient navigation company serving uncrewed aircraft and surface vessels. Naltec publishes communications integration with uncrewed aircraft for BVLOS command and control and with uncrewed surface vessels. NAL Research now redirects to the NAL Technologies website.",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Maritime surface systems",
+        "Space-enabled services"
+      ],
+      "postal_code": "20109",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Manassas satellite-communications and resilient navigation company serving uncrewed aircraft and surface vessels.",
+      "sources": [
+        {
+          "title": "NAL Technologies capabilities and headquarters",
+          "url": "https://naltec.com/"
+        },
+        {
+          "title": "NAL Research public Iridium partner profile",
+          "url": "https://ifp.iridium.com/company/nal-research-corporation/"
+        },
+        {
+          "title": "Esri public address-point geocode (site approximation)",
+          "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=11100+Endeavor+Court%2C+Manassas%2C+VA+20109&f=pjson&outFields=Match_addr%2CAddr_type%2CStAddr%2CCity%2CRegion%2CPostal&maxLocations=1"
+        },
+        {
+          "title": "Prince William County 2019 Endeavor Court address reassignment",
+          "url": "https://www.pwcva.gov/assets/documents/doit/MasterLetter062519.doc.pdf"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Naltec publishes communications integration with uncrewed aircraft for BVLOS command and control and with uncrewed surface vessels. NAL Research now redirects to the NAL Technologies website.",
+      "website_url": "https://naltec.com/"
     },
     {
       "activity_last_verified_at": "2026-08-25",
@@ -14704,6 +15756,61 @@
       "website_url": "https://www.nvcc.edu/"
     },
     {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://www.nvcc.edu/academics/divisions/iet/systemic/fablab.html",
+      "activity_status": "active",
+      "address_line": "10500 Battleview Parkway",
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "city": "Manassas",
+      "contact_email": "fablab@nvcc.edu",
+      "contact_phone": "703-530-3505",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://www.nvcc.edu/academics/divisions/iet/systemic/fablab.html",
+      "current_activity": "Northern Virginia Community College fabrication lab supporting robotics, electronics, and additive-manufacturing education.",
+      "latitude": 38.806017,
+      "location_precision": "site",
+      "longitude": -77.51681,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "NOVA Fab Lab Manassas",
+      "overview": "Northern Virginia Community College fabrication lab supporting robotics, electronics, and additive-manufacturing education. The Trailside Building lab provides fabrication equipment and robotics expertise to NOVA students, faculty, and staff. It is supporting workforce and prototyping capacity; open access for outside businesses is not assumed.",
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "postal_code": "20109",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Northern Virginia",
+      "short_description": "Northern Virginia Community College fabrication lab supporting robotics, electronics, and additive-manufacturing education.",
+      "sources": [
+        {
+          "title": "NOVA Fab Lab programs and capabilities",
+          "url": "https://www.nvcc.edu/academics/divisions/iet/systemic/fablab.html"
+        },
+        {
+          "title": "NOVA official Trailside Building street address",
+          "url": "https://www.nvcc.edu/student-resources/tutoring/index.html"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=10500+Battleview+Parkway%2C+Manassas%2C+VA+20109&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent",
+        "Research and technical depth",
+        "Supporting ecosystem asset"
+      ],
+      "unmanned_systems_relevance": "The Trailside Building lab provides fabrication equipment and robotics expertise to NOVA students, faculty, and staff. It is supporting workforce and prototyping capacity; open access for outside businesses is not assumed.",
+      "website_url": "https://www.nvcc.edu/academics/divisions/iet/systemic/fablab.html"
+    },
+    {
       "address_line": "1815 Seabee Road",
       "capabilities": [
         "Autonomy and artificial intelligence",
@@ -15759,6 +16866,56 @@
       "website_url": "https://www.pdc.edu/"
     },
     {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://perimeteraigroup.com/company/",
+      "activity_status": "developing",
+      "address_line": "",
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Autonomy and artificial intelligence",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "city": "Haymarket",
+      "contact_email": "contact@perimeteraigroup.com",
+      "contact_phone": "",
+      "contact_text": "Public company email; no Virginia street address is published in the reviewed sources.",
+      "contact_url": "https://perimeteraigroup.com/company/",
+      "current_activity": "Haymarket startup developing passive acoustic sensors to detect and classify small unmanned-aircraft threats.",
+      "latitude": null,
+      "location_precision": "regional",
+      "longitude": null,
+      "missions": [
+        "Counter-UAS"
+      ],
+      "name": "PerimeterAI Group",
+      "overview": "Haymarket startup developing passive acoustic sensors to detect and classify small unmanned-aircraft threats. The Oregon UAS Accelerator identifies PerimeterAI Group in Haymarket in its August 2026 cohort announcement. The company publishes acoustic sensing products; its early-stage commercialization status is retained.",
+      "platform_domains": [
+        "Counter-UAS"
+      ],
+      "postal_code": "",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Haymarket startup developing passive acoustic sensors to detect and classify small unmanned-aircraft threats.",
+      "sources": [
+        {
+          "title": "PerimeterAI company and acoustic-sensing development",
+          "url": "https://perimeteraigroup.com/company/"
+        },
+        {
+          "title": "Oregon UAS Accelerator 2026 cohort and Haymarket location",
+          "url": "https://proveninpendleton.com/blogs/news/oregon-uas-accelerator-welcomes-17-startups-to-its-fall-2026-cohort"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "The Oregon UAS Accelerator identifies PerimeterAI Group in Haymarket in its August 2026 cohort announcement. The company publishes acoustic sensing products; its early-stage commercialization status is retained.",
+      "website_url": "https://perimeteraigroup.com/company/"
+    },
+    {
       "address_line": "1000 Research Park Boulevard, Suite 106",
       "capabilities": [
         "Autonomy and artificial intelligence",
@@ -16161,6 +17318,7 @@
       "website_url": "https://www.co.prince-edward.va.us/News-Article/Pyle-Named-County-Emergency-Management-Coordinator"
     },
     {
+      "address_line": "8900 Freedom Center Boulevard",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -16170,19 +17328,20 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.pwcva.gov/news/pwcpd-spotlight-departments-suas-team-serving-sky/",
-      "latitude": 38.751,
-      "location_precision": "locality",
-      "longitude": -77.475,
+      "latitude": 38.761222,
+      "location_precision": "site",
+      "longitude": -77.516521,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
         "Surveying and mapping"
       ],
       "name": "Prince William County Police sUAS Team",
-      "overview": "Police small-UAS team supporting searches, tactical response, crash scenes, and public-safety missions. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+      "overview": "Police small-UAS team supporting searches, tactical response, crash scenes, and public-safety missions. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue. The marker identifies the public Western District Station as a contact reference. The sUAS team draws members from across the department; this point does not identify its operating base or drone storage.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "20110",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Northern Virginia",
@@ -16195,6 +17354,10 @@
         {
           "title": "Prince William County Police 2023 annual report",
           "url": "https://www.pwcva.gov/assets/2024-03/2023%20Annual%20Report.pdf"
+        },
+        {
+          "title": "Prince William County Police public district stations",
+          "url": "https://www.pwcva.gov/department/police/contact-us/"
         }
       ],
       "state": "VA",
@@ -16905,6 +18068,61 @@
       ],
       "unmanned_systems_relevance": "Regent University is included as statewide higher-education and workforce infrastructure. Inclusion identifies institutional capacity and does not by itself indicate a documented unmanned-systems program.",
       "website_url": "https://www.regent.edu/"
+    },
+    {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://www.ricesurveys.com/project/fairfax-county-uas",
+      "activity_status": "active",
+      "address_line": "10661 Gaskins Way",
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing",
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Manassas",
+      "contact_email": "",
+      "contact_phone": "703-968-3200",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://www.ricesurveys.com/contact",
+      "current_activity": "Manassas-headquartered survey company with documented drone lidar, photogrammetry, and building assessment services.",
+      "latitude": 38.803049,
+      "location_precision": "site",
+      "longitude": -77.518385,
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection"
+      ],
+      "name": "Rice Associates Unmanned Aerial Surveying",
+      "overview": "Manassas-headquartered survey company with documented drone lidar, photogrammetry, and building assessment services. Rice documents its UAS demonstration for Fairfax County, including aerial lidar, topographic data and building-condition imagery. The marker is its current public headquarters.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "20109",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Manassas-headquartered survey company with documented drone lidar, photogrammetry, and building assessment services.",
+      "sources": [
+        {
+          "title": "Rice Associates Fairfax County UAS demonstration",
+          "url": "https://www.ricesurveys.com/project/fairfax-county-uas"
+        },
+        {
+          "title": "Rice Associates headquarters and locations",
+          "url": "https://www.ricesurveys.com/contact"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=10661+Gaskins+Way%2C+Manassas%2C+VA+20109&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Rice documents its UAS demonstration for Fairfax County, including aerial lidar, topographic data and building-condition imagery. The marker is its current public headquarters.",
+      "website_url": "https://www.ricesurveys.com/project/fairfax-county-uas"
     },
     {
       "address_line": "11301 Johnson Road",
@@ -17938,6 +19156,59 @@
       "website_url": "https://www.simisinc.com/autonomous-solutions"
     },
     {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://www.skyraptordrones.com/",
+      "activity_status": "active",
+      "address_line": "700 Tech Center Parkway, Suite 200-129",
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Newport News",
+      "contact_email": "skyraptordrones@gmail.com",
+      "contact_phone": "757-715-2867",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://www.skyraptordrones.com/contact",
+      "current_activity": "Newport News drone photography and videography provider serving Hampton Roads.",
+      "latitude": 37.099856,
+      "location_precision": "site",
+      "longitude": -76.486184,
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "name": "SkyRaptor Drone Services",
+      "overview": "Newport News drone photography and videography provider serving Hampton Roads. SkyRaptor publicly lists commercial aerial imagery and construction-documentation services. Its map point is the published business contact building, not a drone operating site.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "23606",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "short_description": "Newport News drone photography and videography provider serving Hampton Roads.",
+      "sources": [
+        {
+          "title": "SkyRaptor aerial and construction imagery services",
+          "url": "https://www.skyraptordrones.com/"
+        },
+        {
+          "title": "SkyRaptor business contact",
+          "url": "https://www.skyraptordrones.com/contact"
+        },
+        {
+          "title": "Esri public address-point geocode (site approximation)",
+          "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=700+Tech+Center+Parkway%2C+Newport+News%2C+VA+23606&f=pjson&outFields=Match_addr%2CAddr_type%2CStAddr%2CCity%2CRegion%2CPostal&maxLocations=1"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "SkyRaptor publicly lists commercial aerial imagery and construction-documentation services. Its map point is the published business contact building, not a drone operating site.",
+      "website_url": "https://www.skyraptordrones.com/"
+    },
+    {
       "address_line": "1090 Cutlass Road",
       "capabilities": [
         "Operations, maintenance, and sustainment"
@@ -17959,7 +19230,7 @@
       "postal_code": "24121",
       "provenance": "faa-public-airport",
       "record_type": "infrastructure",
-      "region": "Roanoke Valley",
+      "region": "Lynchburg Region",
       "short_description": "Operational public-use airport in Moneta (FAA identifier W91).",
       "sources": [
         {
@@ -18058,7 +19329,7 @@
       ],
       "provenance": "curated-public-source",
       "record_type": "program",
-      "region": "Southside Virginia",
+      "region": "Hampton Roads",
       "short_description": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in Southampton County; the public award record does not identify the operating department.",
       "sources": [
         {
@@ -18078,6 +19349,60 @@
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
       "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+    },
+    {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://www.svhec.org/news/svhec-drives-22-million-economic-impact-in-southern-virginia/",
+      "activity_status": "active",
+      "address_line": "820 Bruce Street",
+      "capabilities": [
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "city": "South Boston",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://www.svhec.org/news/svhec-drives-22-million-economic-impact-in-southern-virginia/",
+      "current_activity": "South Boston workforce center offering automation and robotics training through its Career Tech Academy.",
+      "latitude": 36.69551,
+      "location_precision": "site",
+      "longitude": -78.901827,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Southern Virginia Higher Education Center Robotics Training",
+      "overview": "South Boston workforce center offering automation and robotics training through its Career Tech Academy. SVHEC documents robotics programming, maintenance and automated-systems instruction and reports continuing workforce activity in 2026. This supports the robotics workforce rather than a claimed dedicated unmanned-vehicle program.",
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "postal_code": "24592",
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Southside Virginia",
+      "short_description": "South Boston workforce center offering automation and robotics training through its Career Tech Academy.",
+      "sources": [
+        {
+          "title": "SVHEC current 2026 workforce programs and Bruce Street building",
+          "url": "https://www.svhec.org/news/svhec-drives-22-million-economic-impact-in-southern-virginia/"
+        },
+        {
+          "title": "SVHEC automation and robotics program report",
+          "url": "https://www.svhec.org/wp-content/uploads/2022/04/SVHEC-AnnualReport-Final-digital.pdf"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=820+Bruce+Street%2C+South+Boston%2C+VA+24592&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent",
+        "Supporting ecosystem asset"
+      ],
+      "unmanned_systems_relevance": "SVHEC documents robotics programming, maintenance and automated-systems instruction and reports continuing workforce activity in 2026. This supports the robotics workforce rather than a claimed dedicated unmanned-vehicle program.",
+      "website_url": "https://www.svhec.org/news/svhec-drives-22-million-economic-impact-in-southern-virginia/"
     },
     {
       "address_line": "1 University Hill Drive",
@@ -18260,6 +19585,7 @@
       "website_url": "https://www.swcenter.edu/wp-content/uploads/2025/07/2024Dec12_Minutes_FINAL.pdf"
     },
     {
+      "address_line": "9119 Dean Ridings Lane",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
@@ -18269,19 +19595,20 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.spotsylvania.va.us/DocumentCenter/View/20535/May-19-2022---No-Quorum",
-      "latitude": 38.2,
-      "location_precision": "locality",
-      "longitude": -77.589,
+      "latitude": 38.201497,
+      "location_precision": "site",
+      "longitude": -77.584355,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
         "Surveying and mapping"
       ],
       "name": "Spotsylvania Regional Public Safety UAS Program",
-      "overview": "Regional public-safety UAS capability supporting emergency response and participating agencies. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+      "overview": "Regional public-safety UAS capability supporting emergency response and participating agencies. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue. The marker identifies the public-safety administrative building shared by the Sheriff and Fire, Rescue, and Emergency Management; it does not locate deployed aircraft or a response position.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "22553",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Fredericksburg Region",
@@ -18298,6 +19625,14 @@
         {
           "title": "Spotsylvania County public-safety departments",
           "url": "https://www.spotsylvania.va.us/1036/Public-Safety"
+        },
+        {
+          "title": "Spotsylvania public-safety administrative address",
+          "url": "https://www.spotsylvania.va.us/1533/Operations"
+        },
+        {
+          "title": "Spotsylvania FY2026 adopted capital plan: drone vehicle replacement",
+          "url": "https://www.spotsylvania.va.us/DocumentCenter/View/34323/Adopted-FY2026-CIP-document---web"
         }
       ],
       "state": "VA",
@@ -18689,6 +20024,10 @@
         {
           "title": "Suffolk Police UAS Unit public contact information",
           "url": "https://www.suffolkva.us/directory"
+        },
+        {
+          "title": "Suffolk Police promotion announcement explicitly identifying UAS Team membership",
+          "url": "https://www.suffolkva.us/Archive/ViewFile/Item/13536"
         }
       ],
       "state": "VA",
@@ -18741,6 +20080,60 @@
       ],
       "unmanned_systems_relevance": "Surface Combat Systems Center Wallops Island is included as documented federal or defense ecosystem presence in Wallops Island. Its map point is generalized and omits operational detail.",
       "website_url": "https://www.navsea.navy.mil/Home/SCSC/"
+    },
+    {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://www.svtrobotics.com/",
+      "activity_status": "active",
+      "address_line": "730 West 20th Street",
+      "capabilities": [
+        "Systems engineering and integration",
+        "Data engineering, analytics, and edge computing",
+        "Autonomy and artificial intelligence"
+      ],
+      "city": "Norfolk",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://www.svtrobotics.com/talk-to-us/",
+      "current_activity": "Norfolk software company integrating autonomous mobile robots with warehouse and industrial systems.",
+      "latitude": 36.869499,
+      "location_precision": "site",
+      "longitude": -76.294825,
+      "missions": [
+        "Logistics and contested logistics"
+      ],
+      "name": "SVT Robotics Norfolk",
+      "overview": "Norfolk software company integrating autonomous mobile robots with warehouse and industrial systems. SVT documents integrations between warehouse-management software and autonomous mobile robots using its SOFTBOT platform. Its current website and contact page publish the Norfolk address.",
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "postal_code": "23517",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "short_description": "Norfolk software company integrating autonomous mobile robots with warehouse and industrial systems.",
+      "sources": [
+        {
+          "title": "SVT Robotics platform and autonomous-mobile-robot integrations",
+          "url": "https://www.svtrobotics.com/"
+        },
+        {
+          "title": "SVT Robotics Norfolk contact",
+          "url": "https://www.svtrobotics.com/talk-to-us/"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=730+West+20th+Street%2C+Norfolk%2C+VA+23517&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "SVT documents integrations between warehouse-management software and autonomous mobile robots using its SOFTBOT platform. Its current website and contact page publish the Norfolk address.",
+      "website_url": "https://www.svtrobotics.com/"
     },
     {
       "address_line": "134 Chapel Drive",
@@ -19187,6 +20580,59 @@
       ],
       "unmanned_systems_relevance": "Operates UAS directly and uses them to develop training, tactics, and realistic counter-UAS threat scenarios for military and public-safety users.",
       "website_url": "https://threattec.com/training-against-a-threat-with-drones/"
+    },
+    {
+      "activity_last_verified_at": "2026-09-04",
+      "activity_source_url": "https://thryve.co/",
+      "activity_status": "active",
+      "address_line": "700 Gordon Avenue",
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Richmond",
+      "contact_email": "",
+      "contact_phone": "804-344-8101",
+      "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+      "contact_url": "https://thryve.co/",
+      "current_activity": "Richmond industrial robotics and machine-vision integrator formerly known as Jewett Automation.",
+      "latitude": 37.515421,
+      "location_precision": "site",
+      "longitude": -77.431392,
+      "missions": [],
+      "name": "THRYVE Automation Richmond",
+      "overview": "Richmond industrial robotics and machine-vision integrator formerly known as Jewett Automation. The company builds automated assembly and material-handling systems. It provides supporting robotic integration, fabrication and production expertise; the reviewed source does not establish an unmanned-vehicle product line.",
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "postal_code": "23224",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Greater Richmond",
+      "short_description": "Richmond industrial robotics and machine-vision integrator formerly known as Jewett Automation.",
+      "sources": [
+        {
+          "title": "THRYVE automation capabilities, former name and Richmond location",
+          "url": "https://thryve.co/"
+        },
+        {
+          "title": "Former Jewett Automation website redirect",
+          "url": "https://jewettautomation.com/"
+        },
+        {
+          "title": "U.S. Census public-address geocode (site approximation)",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=700+Gordon+Avenue%2C+Richmond%2C+VA+23224&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "unmanned_systems_relevance": "The company builds automated assembly and material-handling systems. It provides supporting robotic integration, fabrication and production expertise; the reviewed source does not establish an unmanned-vehicle product line.",
+      "website_url": "https://thryve.co/"
     },
     {
       "activity_last_verified_at": "2026-08-25",
@@ -24526,9 +25972,9 @@
       "contact_phone": "540-422-8284",
       "contact_text": "Airport public contact: Stacey Williams Airport Manager",
       "contact_url": "https://doav.virginia.gov/airport_sponsors/",
-      "latitude": 38.586293,
+      "latitude": 38.586294,
       "location_precision": "exact",
-      "longitude": -77.710633,
+      "longitude": -77.710632,
       "missions": [],
       "name": "Warrenton/Fauquier",
       "overview": "Warrenton/Fauquier is an operational public-use airport listed by the FAA under identifier HWY. The Virginia airport sponsor directory classifies the facility as Regional Business.",
@@ -25146,7 +26592,7 @@
     },
     {
       "activity_last_verified_at": "2026-08-30",
-      "activity_source_url": "https://ir.wrap.com/sec-filings/annual-reports/content/0001140361-26-011401/0001140361-26-011401.pdf",
+      "activity_source_url": "https://ir.wrap.com/node/12121/html",
       "activity_status": "active",
       "address_line": "182 Progress Way NE",
       "capabilities": [
@@ -25188,8 +26634,8 @@
           "url": "https://ir.wrap.com/ir-resources/investor-faqs"
         },
         {
-          "title": "Wrap 2026 annual report manufacturing and counter-UAS disclosure",
-          "url": "https://ir.wrap.com/sec-filings/annual-reports/content/0001140361-26-011401/0001140361-26-011401.pdf"
+          "title": "Wrap FY2025 Form 10-K filed March 26, 2026: Norton manufacturing and counter-UAS development",
+          "url": "https://ir.wrap.com/node/12121/html"
         }
       ],
       "state": "VA",

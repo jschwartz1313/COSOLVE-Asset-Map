@@ -1,0 +1,218 @@
+{
+  "reviewed_at": "2026-09-04",
+  "scope": "Targeted editorial follow-up to the full public-URL GET audit; proposals only. No catalog or live records are changed by this file.",
+  "url_replacements": [
+    {
+      "assets": [
+        "CACI International"
+      ],
+      "old_url": "https://www.caci.com/sites/default/files/2022-11/F614_2210_Maritime_cUAS.pdf",
+      "new_url": "https://www.caci.com/cuxs",
+      "new_title": "CACI counter-unmanned systems and maritime solutions",
+      "old_status": "HTTP 404 confirmed by direct GET and web fetch",
+      "new_status": "HTTP 200 direct GET and successful web fetch",
+      "evidence": "Followed the live CACI homepage Counter UxS link to this current official page. It explicitly describes RF/radar/EO-IR sensing, CORIAN, BEAM, systems integration, and maritime counter-uncrewed systems. The search-indexed 2024 replacement PDF also returns 404 and must not be substituted.",
+      "discovery_url": "https://www.caci.com/",
+      "supports": [
+        "Counter-UAS technology",
+        "Maritime counter-uncrewed systems",
+        "Sensing and systems integration"
+      ],
+      "does_not_independently_verify": [
+        "Reston street address",
+        "Every claimed capability or mission tag"
+      ]
+    },
+    {
+      "assets": [
+        "Former Dedrone Washington-Area Headquarters"
+      ],
+      "old_url": "https://www.axon.com/products/dedrone",
+      "new_url": "https://www.axon.com/landing-pages/dedrone-sem-landing-page",
+      "new_title": "Dedrone by Axon official airspace security product information",
+      "old_status": "HTTP 404 direct GET; web could not open old endpoint",
+      "new_status": "HTTP 200 direct GET and successful web fetch",
+      "evidence": "Official Axon page describes Dedrone detection, identification and tracking of unauthorized drones and provides a product inquiry form. This is a source-link repair, not evidence that the former Sterling office remains operational.",
+      "discovery_url": "https://www.axon.com/landing-pages/dedrone-sem-landing-page",
+      "supports": [
+        "Current Dedrone product identity and airspace-security capability"
+      ],
+      "does_not_independently_verify": [
+        "Former Virginia headquarters location",
+        "Former office operating status"
+      ]
+    },
+    {
+      "assets": [
+        "Hampton University"
+      ],
+      "old_url": "https://www.hamptonu.edu/studentservices/admissions",
+      "new_url": "https://home.hamptonu.edu/admissions/",
+      "new_title": "Hampton University Office of Admission and public contact information",
+      "old_status": "HTTP 200 after redirect to generic university homepage",
+      "new_status": "HTTP 200 direct GET and successful web fetch",
+      "evidence": "Official current admission page publishes the admission process, hours, phone and application-status email. Repair restores the page-specific admissions route. The institution record's UAS-program description should also have its separate official UAS-program page attached.",
+      "discovery_url": "https://home.hamptonu.edu/admissions/",
+      "supports": [
+        "Admissions contact route"
+      ],
+      "does_not_independently_verify": [
+        "UAS program capabilities",
+        "Exact UAS laboratory location"
+      ]
+    },
+    {
+      "assets": [
+        "Wrap Technologies Norton Manufacturing Headquarters"
+      ],
+      "old_url": "https://ir.wrap.com/sec-filings/annual-reports/content/0001140361-26-011401/0001140361-26-011401.pdf",
+      "new_url": "https://ir.wrap.com/node/12121/html",
+      "new_title": "Wrap FY2025 Form 10-K filed March 26, 2026: Norton manufacturing and counter-UAS development",
+      "old_status": "HTTP 404 direct GET",
+      "new_status": "Successfully fetched and read via web; bounded direct GET timed out",
+      "evidence": "Followed the company's annual-reports index to the exact March 26, 2026 10-K HTML. Manufacturing section confirms September 2025 Norton move and final assembly/testing/quality/shipping. Properties section gives 182 Progress Way NE, Norton VA 24273 and 20,000 square feet. Business section identifies developing counter-UAS initiatives; it does not support current volume manufacture of counter-UAS products.",
+      "discovery_url": "https://ir.wrap.com/financials/annual-reports",
+      "alternative_pdf_url": "https://ir.wrap.com/static-files/b855ee9c-cb70-481b-aa71-a88366e6062d",
+      "supports": [
+        "Norton manufacturing facility",
+        "Published street address",
+        "Manufacturing activities",
+        "Counter-UAS development status"
+      ],
+      "does_not_independently_verify": [
+        "Building-level map coordinate",
+        "Current high-volume counter-UAS production"
+      ]
+    },
+    {
+      "assets": [
+        "Brightpoint Community College Unmanned Systems Courses"
+      ],
+      "old_url": "https://courses.vccs.edu/colleges/jtcc/courses/UMS-UnmannedSystems",
+      "new_url": "https://courses.vccs.edu/colleges/brightpoint/courses/UMS-UnmannedSystems",
+      "new_title": "Brightpoint Community College Unmanned Systems Courses: current official VCCS course catalog",
+      "old_status": "HTTP 200 but only generic VCCS navigation; named college/course content absent",
+      "new_status": "HTTP 200 direct GET with college-specific Unmanned Systems course descriptions",
+      "evidence": "The college slug changed following the institutional rename. Current official VCCS pages list the unmanned-systems course descriptions; the obsolete slug silently returns only navigation. The source supports cataloged course offerings, not a guarantee of current-semester availability.",
+      "discovery_url": "https://courses.vccs.edu/colleges/brightpoint/courses",
+      "supports": [
+        "Named-college unmanned-systems coursework"
+      ],
+      "does_not_independently_verify": [
+        "Specific classroom location",
+        "Current-semester scheduling"
+      ]
+    },
+    {
+      "assets": [
+        "Laurel Ridge Community College Unmanned Systems Courses"
+      ],
+      "old_url": "https://courses.vccs.edu/colleges/lfcc/courses/UMS-UnmannedSystems",
+      "new_url": "https://courses.vccs.edu/colleges/laurelridge/courses/UMS-UnmannedSystems",
+      "new_title": "Laurel Ridge Community College Unmanned Systems Courses: current official VCCS course catalog",
+      "old_status": "HTTP 200 but only generic VCCS navigation; named college/course content absent",
+      "new_status": "HTTP 200 direct GET with college-specific Unmanned Systems course descriptions",
+      "evidence": "The college slug changed following the institutional rename. Current official VCCS pages list the unmanned-systems course descriptions; the obsolete slug silently returns only navigation. The source supports cataloged course offerings, not a guarantee of current-semester availability.",
+      "discovery_url": "https://courses.vccs.edu/colleges/laurelridge/courses",
+      "supports": [
+        "Named-college unmanned-systems coursework"
+      ],
+      "does_not_independently_verify": [
+        "Specific classroom location",
+        "Current-semester scheduling"
+      ]
+    },
+    {
+      "assets": [
+        "Mountain Gateway Community College Unmanned Systems Courses"
+      ],
+      "old_url": "https://courses.vccs.edu/colleges/dslcc/courses/UMS-UnmannedSystems",
+      "new_url": "https://courses.vccs.edu/colleges/mgcc/courses/UMS-UnmannedSystems",
+      "new_title": "Mountain Gateway Community College Unmanned Systems Courses: current official VCCS course catalog",
+      "old_status": "HTTP 200 but only generic VCCS navigation; named college/course content absent",
+      "new_status": "HTTP 200 direct GET with college-specific Unmanned Systems course descriptions",
+      "evidence": "The college slug changed following the institutional rename. Current official VCCS pages list the unmanned-systems course descriptions; the obsolete slug silently returns only navigation. The source supports cataloged course offerings, not a guarantee of current-semester availability.",
+      "discovery_url": "https://courses.vccs.edu/colleges/mgcc/courses",
+      "supports": [
+        "Named-college unmanned-systems coursework"
+      ],
+      "does_not_independently_verify": [
+        "Specific classroom location",
+        "Current-semester scheduling"
+      ]
+    }
+  ],
+  "source_additions": [
+    {
+      "asset": "Hampton University",
+      "title": "Hampton University Uncrewed Aircraft Systems Program",
+      "url": "https://home.hamptonu.edu/engineering/uas/",
+      "reason": "The institution record explicitly claims a UAS degree concentration, training and applied operations, but its currently attached pages are generic institution/admissions/contact and NCES pages. Attach the already-cataloged official program source directly to this record as well.",
+      "status": "HTTP 200 in full audit; direct page text explicitly describes UAS coursework and training."
+    },
+    {
+      "asset": "Suffolk Police UAS Unit",
+      "title": "Suffolk Police promotion announcement explicitly identifying UAS Team membership",
+      "url": "https://www.suffolkva.us/Archive/ViewFile/Item/13536",
+      "reason": "The previously attached EID60 staff profile no longer mentions UAS; all three original sources are contact directories. This official police announcement explicitly identifies department UAS Team membership. Retain the directory sources only as contacts.",
+      "status": "HTTP 200 direct GET application/pdf; official indexed text explicitly names UAS Team and Unmanned Aircraft Systems."
+    }
+  ],
+  "unresolved_editorial_follow_ups": [
+    {
+      "asset": "Blue Ridge Defense Works",
+      "priority": "high",
+      "urls": [
+        "https://blueridgedefense.com/",
+        "https://sam.gov/entity/MV3AMKSSPZR1/coreData?status=Active"
+      ],
+      "reason": "Company homepage returned HTTP 404. Exact-name and domain web searches did not corroborate the Virginia interceptor/counter-UAS claim. SAM returned a client-rendered page with no readable entity text. This is insufficient to re-confirm identity, Winchester location, capability or current operations; it is not evidence of nonexistence or closure.",
+      "recommendation": "Keep a qualified follow-up state until an authoritative company or government capability source and Virginia presence can be checked; do not invent a replacement homepage."
+    },
+    {
+      "asset": "Haymarket Police Department Drone Program",
+      "priority": "medium",
+      "urls": [
+        "https://www.townofhaymarket.org/sites/default/files/fileattachments/town_council/meeting/11057/tc_regmtg_03_06_2023.pdf"
+      ],
+      "reason": "Original council packet returns HTTP 404. Search-indexed separate 2022 police annual-report PDF contains the implemented-program statement but also returns HTTP 404 by direct GET, despite web text availability. Neither old local-government PDF should be described as a freshly working replacement.",
+      "preserved_evidence_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+      "official_corroboration_url": "https://www.dcjs.virginia.gov/sites/dcjs.virginia.gov/files/meetingminutes/criminal-justice-services-board/2025-12-08.pdf",
+      "recommendation": "Use the working department page as the website. The DCJS board minutes and already-attached award schedule support the CY2026 replacement award; qualify the older fully-implemented statement until a working local annual-report copy is found."
+    },
+    {
+      "asset": "L3Harris Orange County Propulsion Manufacturing Site",
+      "priority": "medium",
+      "urls": [
+        "https://arsuppliernet.l3harris.com/sites/default/files/documents/SupplierNet/sites/ar-suppliernet-logistics-site-visits.pdf"
+      ],
+      "reason": "SupplierNet hostname failed DNS resolution in this runtime. Search still indexes the official SupplierNet site, so classify this as unresolved transport availability rather than a confirmed stale PDF.",
+      "recommendation": "Recheck the official supplier logistics resource in a regular browser before changing address evidence."
+    },
+    {
+      "assets": [
+        "VCU ARVL Robotic Drone System",
+        "VCU Autonomous Robots and Vehicles Laboratory",
+        "VCU Robotics and Autonomous Systems Group"
+      ],
+      "priority": "medium",
+      "urls": [
+        "https://arvl.lab.vcu.edu/capabilities-and-equipment/"
+      ],
+      "reason": "The legacy laboratory hostname shared by these three records failed DNS resolution. Confirm a current official VCU laboratory page before changing its capability evidence.",
+      "recommendation": "Retain an explicit unresolved source flag; do not invent a migrated laboratory URL."
+    }
+  ],
+  "reviewed_redirects": [
+    {
+      "old_url": "https://virginiauas.com/home/",
+      "final_url": "https://virginiauas.com/",
+      "decision": "Benign home-path canonicalization; final page retains Virginia UAS identity, training/services and contact navigation."
+    },
+    {
+      "old_url": "https://vatestbed.com/about",
+      "final_url": "https://vatestbed.com/",
+      "decision": "Current homepage retains the Virginia Smart Community Testbed mission; the /about deep link is lost. Canonicalizing is optional, and this does not independently verify each asset claim."
+    }
+  ]
+}

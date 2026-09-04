@@ -11,7 +11,7 @@ class Source(models.Model):
 
     asset = models.ForeignKey("assets.Asset", on_delete=models.CASCADE, related_name="sources")
     title = models.CharField(max_length=240)
-    url = models.URLField(blank=True)
+    url = models.URLField(max_length=2048, blank=True)
     source_date = models.DateField(null=True, blank=True)
     last_verified_at = models.DateField(null=True, blank=True)
     verification_status = models.CharField(
@@ -61,6 +61,30 @@ class Source(models.Model):
             raise ValidationError(errors)
 
     def save(self, *args, **kwargs):
+        update_fields = kwargs.get("update_fields")
+        if self.pk and (update_fields is None or "url" in update_fields):
+            previous_url = (
+                type(self).objects.filter(pk=self.pk).values_list("url", flat=True).first()
+            )
+            if previous_url is not None and previous_url != self.url:
+                # Verification, link checks, and manual exceptions describe the old URL only.
+                self.verification_status = "unreviewed"
+                self.last_verified_at = None
+                self.last_checked_at = None
+                self.http_status = None
+                self.check_error = ""
+                self.link_review_status = self.LinkReviewStatus.AUTOMATIC
+                self.link_review_notes = ""
+                if update_fields is not None:
+                    kwargs["update_fields"] = set(update_fields) | {
+                        "verification_status",
+                        "last_verified_at",
+                        "last_checked_at",
+                        "http_status",
+                        "check_error",
+                        "link_review_status",
+                        "link_review_notes",
+                    }
         self.full_clean()
         super().save(*args, **kwargs)
 

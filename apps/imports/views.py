@@ -1,10 +1,11 @@
 import csv
-from datetime import date, timedelta
+from datetime import timedelta
 
 from django.conf import settings
 from django.contrib import messages
 from django.contrib.admin.views.decorators import staff_member_required
 from django.contrib.auth.decorators import permission_required
+from django.core.exceptions import PermissionDenied, ValidationError
 from django.db import transaction
 from django.db.models import Case, Count, IntegerField, Max, Q, When
 from django.http import HttpResponse
@@ -23,6 +24,8 @@ from .services import (
     TAXONOMY_COLUMNS,
     asset_csv_row,
     parse_csv,
+    prepare_import_asset,
+    save_import_source,
     split_values,
 )
 
@@ -33,6 +36,7 @@ from .services import (
 def preview(request):
     context = {}
     if request.method == "POST":
+        request.session.pop("asset_import_rows", None)
         upload = request.FILES.get("file")
         if not upload:
             context["file_errors"] = ["Choose a CSV file."]
@@ -43,6 +47,8 @@ def preview(request):
                 rows, file_errors = parse_csv(upload)
             except UnicodeDecodeError:
                 rows, file_errors = [], ["The file must use UTF-8 encoding."]
+            except csv.Error:
+                rows, file_errors = [], ["The file contains malformed CSV data."]
             context.update({"rows": rows, "file_errors": file_errors})
             if not file_errors:
                 request.session["asset_import_rows"] = rows
@@ -55,6 +61,9 @@ def preview(request):
 @require_POST
 @transaction.atomic
 def commit(request):
+    update_existing = request.POST.get("update_existing") == "1"
+    if update_existing and not request.user.has_perm("assets.change_asset"):
+        raise PermissionDenied
     rows = request.session.pop("asset_import_rows", [])
     if not rows or any(row["errors"] for row in rows):
         messages.error(request, "No valid import preview is available.")
@@ -62,87 +71,29 @@ def commit(request):
     created = 0
     updated = 0
     skipped = 0
-    update_existing = request.POST.get("update_existing") == "1"
     for row in rows:
         data = row["data"]
-        region = Region.objects.filter(slug=data.get("region", "")).first()
         asset = Asset.objects.filter(pk=row["asset_id"]).first() if row["asset_id"] else None
         was_created = asset is None
         if asset and not update_existing:
             skipped += 1
             continue
-        if asset is None:
-            asset = Asset(name=data["name"], city=data.get("city", ""))
-        asset.record_type = data["record_type"]
-        asset.short_description = data["short_description"]
-        asset.overview = data.get("overview", "")
-        asset.unmanned_systems_relevance = data["unmanned_systems_relevance"]
-        asset.website_url = data.get("website_url", "")
-        asset.contact_text = data.get("contact_text", "")
-        asset.contact_phone = data.get("contact_phone", "")
-        asset.contact_email = data.get("contact_email", "")
-        asset.contact_url = data.get("contact_url", "")
-        asset.activity_status = data.get("activity_status", "")
-        asset.current_activity = data.get("current_activity", "")
-        asset.partnership_opportunities = data.get("partnership_opportunities", "")
-        asset.activity_source_url = data.get("activity_source_url", "")
-        asset.activity_last_verified_at = (
-            date.fromisoformat(data["activity_last_verified_at"])
-            if data.get("activity_last_verified_at")
-            else None
-        )
-        asset.owner_operator = data.get("owner_operator", "")
-        asset.available_acreage = data.get("available_acreage") or None
-        asset.development_status = data.get("development_status", "")
-        asset.development_notes = data.get("development_notes", "")
-        asset.infrastructure_access = data.get("infrastructure_access", "")
-        asset.development_source_url = data.get("development_source_url", "")
-        asset.development_last_verified_at = (
-            date.fromisoformat(data["development_last_verified_at"])
-            if data.get("development_last_verified_at")
-            else None
-        )
-        asset.address_line = data.get("address_line", "")
-        asset.city = data.get("city", "")
-        asset.state = data.get("state", "VA") or "VA"
-        asset.postal_code = data.get("postal_code", "")
-        asset.latitude = data.get("latitude") or None
-        asset.longitude = data.get("longitude") or None
-        asset.location_precision = (
-            data.get("location_precision") or Asset.LocationPrecision.APPROXIMATE
-        )
-        asset.region = region
-        if "internal_notes" in data:
-            asset.internal_notes = data["internal_notes"]
-        asset.status = Asset.Status.DRAFT if was_created else Asset.Status.NEEDS_REVIEW
-        asset.visibility = Asset.Visibility.INTERNAL
-        asset.last_verified_at = None
-        asset.reviewed_at = None
-        asset.reviewed_by = None
-        asset.published_at = None
-        asset.save()
+        try:
+            asset = prepare_import_asset(data, asset)
+            asset.save()
+        except ValidationError as error:
+            transaction.set_rollback(True)
+            messages.error(
+                request, f"Import cancelled at row {row['number']}: {'; '.join(error.messages)}"
+            )
+            return redirect("imports:preview")
         for column, model in TAXONOMY_COLUMNS.items():
-            getattr(asset, column).set(
-                model.objects.filter(slug__in=split_values(data.get(column, "")))
-            )
+            if column in data:
+                getattr(asset, column).set(
+                    model.objects.filter(slug__in=split_values(data[column]))
+                )
         for source_data in row["sources"]:
-            Source.objects.update_or_create(
-                asset=asset,
-                title=source_data["title"],
-                defaults={
-                    "url": source_data["url"],
-                    "source_date": (
-                        date.fromisoformat(source_data["source_date"])
-                        if source_data["source_date"]
-                        else None
-                    ),
-                    "verification_status": "unreviewed",
-                    "last_verified_at": None,
-                    "is_public": True,
-                    "link_review_status": Source.LinkReviewStatus.AUTOMATIC,
-                    "link_review_notes": "",
-                },
-            )
+            save_import_source(asset, source_data)
         created += int(was_created)
         updated += int(not was_created)
     messages.success(
@@ -209,9 +160,7 @@ def data_quality(request):
         ]
     ).order_by("region__name", "name")
     activity_claims = (
-        Q(activity_status__gt="")
-        | Q(current_activity__gt="")
-        | Q(partnership_opportunities__gt="")
+        Q(activity_status__gt="") | Q(current_activity__gt="") | Q(partnership_opportunities__gt="")
     )
     development_claims = (
         Q(owner_operator__gt="")
@@ -405,9 +354,11 @@ def data_quality(request):
     public_sources = Source.objects.filter(is_public=True)
     source_check_cutoff = timezone.now() - timedelta(days=7)
     recently_checked_sources = public_sources.filter(last_checked_at__gte=source_check_cutoff)
-    healthy_sources = recently_checked_sources.exclude(
-        Q(check_error__gt="") | Q(http_status__gte=400)
-    ).exclude(link_review_status=Source.LinkReviewStatus.NEEDS_REPLACEMENT)
+    healthy_sources = (
+        recently_checked_sources.filter(http_status__gte=200, http_status__lt=400)
+        .exclude(Q(check_error__gt="") | Q(http_status__gte=400))
+        .exclude(link_review_status=Source.LinkReviewStatus.NEEDS_REPLACEMENT)
+    )
     unchecked_sources = public_sources.filter(
         Q(last_checked_at__lt=source_check_cutoff) | Q(last_checked_at__isnull=True)
     )
@@ -488,9 +439,9 @@ def _history_events(
     related_fields=(),
 ):
     events = []
-    records = history_manager.select_related(
-        "history_user", *related_fields
-    ).order_by("-history_date")[:limit]
+    records = history_manager.select_related("history_user", *related_fields).order_by(
+        "-history_date"
+    )[:limit]
     for record in records:
         changed_fields = []
         if record.history_type == "~":
@@ -503,9 +454,7 @@ def _history_events(
         events.append(
             {
                 "date": record.history_date,
-                "action": {"+": "Created", "~": "Updated", "-": "Deleted"}[
-                    record.history_type
-                ],
+                "action": {"+": "Created", "~": "Updated", "-": "Deleted"}[record.history_type],
                 "object_type": object_type,
                 "object_label": (
                     label_field(record)

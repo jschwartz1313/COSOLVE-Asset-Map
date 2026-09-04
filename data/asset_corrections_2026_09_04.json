@@ -1,0 +1,574 @@
+{
+  "corrections": [
+    {
+      "add_sources": [
+        {
+          "title": "Haymarket Police Department and public Town Hall address",
+          "url": "https://www.townofhaymarket.org/1293/Police-Department"
+        }
+      ],
+      "after": {
+        "address_line": "15000 Washington Street, Suite 100",
+        "city": "Haymarket",
+        "latitude": 38.812184,
+        "location_precision": "site",
+        "longitude": -77.636347,
+        "overview": "Town police drone program documented as fully implemented and supported by a CY 2026 replacement award. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue. The marker identifies the public Town Hall / police contact site; it does not identify drone storage or a launch location.",
+        "postal_code": "20169",
+        "region": "Northern Virginia"
+      },
+      "before": {
+        "address_line": "",
+        "city": "Haymarket",
+        "latitude": 38.812,
+        "location_precision": "locality",
+        "longitude": -77.636,
+        "overview": "Town police drone program documented as fully implemented and supported by a CY 2026 replacement award. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+        "postal_code": "",
+        "region": "Northern Virginia"
+      },
+      "name": "Haymarket Police Department Drone Program",
+      "provenance": "curated-public-source",
+      "reason": "Official public address reviewed on 2026-09-04. The marker identifies the public Town Hall / police contact site; it does not identify drone storage or a launch location."
+    },
+    {
+      "accepted_baselines": [
+        {
+          "address_line": "",
+          "city": "Richmond",
+          "latitude": 37.541,
+          "location_precision": "locality",
+          "longitude": -77.436,
+          "overview": "Utility UAS activity supporting infrastructure inspection and Virginia advanced-flight demonstrations. Public sources support its classification as a Virginia program. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+          "postal_code": "",
+          "region": "Greater Richmond"
+        }
+      ],
+      "add_sources": [
+        {
+          "title": "Dominion Energy corporate address in SEC filing",
+          "url": "https://www.sec.gov/Archives/edgar/data/715957/000119312526364045/0001193125-26-364045-index.htm"
+        }
+      ],
+      "after": {
+        "address_line": "600 East Canal Street",
+        "city": "Richmond",
+        "latitude": 37.538119,
+        "location_precision": "site",
+        "longitude": -77.440536,
+        "overview": "Utility UAS activity supporting infrastructure inspection and Virginia advanced-flight demonstrations. Public sources support its classification as a Virginia program. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics. The marker identifies Dominion Energy's public corporate headquarters as an administrative reference; UAS inspections occur across its service territory.",
+        "postal_code": "23219",
+        "region": "Greater Richmond"
+      },
+      "before": {
+        "address_line": "",
+        "city": "Richmond",
+        "latitude": 37.541,
+        "location_precision": "locality",
+        "longitude": -77.436,
+        "overview": "Utility UAS activity supporting infrastructure inspection and Virginia advanced-flight demonstrations. Public sources support its classification as a Virginia program. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+        "postal_code": "",
+        "region": "Greater Richmond"
+      },
+      "name": "Dominion Energy UAS Program",
+      "provenance": "curated-public-source",
+      "reason": "Official public address reviewed on 2026-09-04. The marker identifies Dominion Energy's public corporate headquarters as an administrative reference; UAS inspections occur across its service territory."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Spotsylvania public-safety administrative address",
+          "url": "https://www.spotsylvania.va.us/1533/Operations"
+        },
+        {
+          "title": "Spotsylvania FY2026 adopted capital plan: drone vehicle replacement",
+          "url": "https://www.spotsylvania.va.us/DocumentCenter/View/34323/Adopted-FY2026-CIP-document---web"
+        }
+      ],
+      "after": {
+        "address_line": "9119 Dean Ridings Lane",
+        "city": "Spotsylvania",
+        "latitude": 38.201497,
+        "location_precision": "site",
+        "longitude": -77.584355,
+        "overview": "Regional public-safety UAS capability supporting emergency response and participating agencies. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue. The marker identifies the public-safety administrative building shared by the Sheriff and Fire, Rescue, and Emergency Management; it does not locate deployed aircraft or a response position.",
+        "postal_code": "22553",
+        "region": "Fredericksburg Region"
+      },
+      "before": {
+        "address_line": "",
+        "city": "Spotsylvania",
+        "latitude": 38.2,
+        "location_precision": "locality",
+        "longitude": -77.589,
+        "overview": "Regional public-safety UAS capability supporting emergency response and participating agencies. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+        "postal_code": "",
+        "region": "Fredericksburg Region"
+      },
+      "name": "Spotsylvania Regional Public Safety UAS Program",
+      "provenance": "curated-public-source",
+      "reason": "Official public address reviewed on 2026-09-04. The marker identifies the public-safety administrative building shared by the Sheriff and Fire, Rescue, and Emergency Management; it does not locate deployed aircraft or a response position."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Prince William County Police public district stations",
+          "url": "https://www.pwcva.gov/department/police/contact-us/"
+        }
+      ],
+      "after": {
+        "address_line": "8900 Freedom Center Boulevard",
+        "city": "Manassas",
+        "latitude": 38.761222,
+        "location_precision": "site",
+        "longitude": -77.516521,
+        "overview": "Police small-UAS team supporting searches, tactical response, crash scenes, and public-safety missions. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue. The marker identifies the public Western District Station as a contact reference. The sUAS team draws members from across the department; this point does not identify its operating base or drone storage.",
+        "postal_code": "20110",
+        "region": "Northern Virginia"
+      },
+      "before": {
+        "address_line": "",
+        "city": "Manassas",
+        "latitude": 38.751,
+        "location_precision": "locality",
+        "longitude": -77.475,
+        "overview": "Police small-UAS team supporting searches, tactical response, crash scenes, and public-safety missions. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+        "postal_code": "",
+        "region": "Northern Virginia"
+      },
+      "name": "Prince William County Police sUAS Team",
+      "provenance": "curated-public-source",
+      "reason": "Official public address reviewed on 2026-09-04. The marker identifies the public Western District Station as a contact reference. The sUAS team draws members from across the department; this point does not identify its operating base or drone storage."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Germanna Fredericksburg campus Workforce and Technology Center",
+          "url": "https://germanna.edu/about-germanna/contact-hours-locations"
+        }
+      ],
+      "after": {
+        "address_line": "10000 Germanna Point Drive",
+        "city": "Fredericksburg",
+        "latitude": 38.228987,
+        "location_precision": "site",
+        "longitude": -77.492539,
+        "overview": "Community-college class supporting FAA remote-pilot knowledge for drone operations. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Systems engineering and integration. Relevant mission areas include Training and experimentation. The marker identifies the college's public Fredericksburg campus, which houses its Workforce and Technology Center. The actual classroom, course schedule, and flight location require confirmation with the college.",
+        "postal_code": "22408-9543",
+        "region": "Fredericksburg Region"
+      },
+      "before": {
+        "address_line": "",
+        "city": "Dahlgren",
+        "latitude": 38.333,
+        "location_precision": "locality",
+        "longitude": -77.031,
+        "overview": "Community-college class supporting FAA remote-pilot knowledge for drone operations. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Systems engineering and integration. Relevant mission areas include Training and experimentation.",
+        "postal_code": "",
+        "region": "Fredericksburg Region"
+      },
+      "name": "Germanna Community College Drone-UAV FAA Pilot Class",
+      "provenance": "curated-public-source",
+      "reason": "Official public address reviewed on 2026-09-04. The marker identifies the college's public Fredericksburg campus, which houses its Workforce and Technology Center. The actual classroom, course schedule, and flight location require confirmation with the college."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Virginia Tech ICTAS building housing MAAP",
+          "url": "https://ictas.vt.edu/Facilities/ictascrc.html"
+        },
+        {
+          "title": "Virginia BEYOND program and MAAP operational leadership",
+          "url": "https://maap.ictas.vt.edu/BEYOND/aboutBEYOND.html"
+        },
+        {
+          "title": "MAAP public program contact",
+          "url": "https://maap.ictas.vt.edu/Contact.html"
+        }
+      ],
+      "after": {
+        "address_line": "1991 Kraft Drive, Building 19",
+        "city": "Blacksburg",
+        "contact_text": "MAAP public program and partnership inquiries",
+        "contact_url": "https://maap.ictas.vt.edu/Contact.html",
+        "latitude": 37.202048,
+        "location_precision": "site",
+        "longitude": -80.409798,
+        "overview": "Virginia team advancing scalable beyond-visual-line-of-sight UAS operations and safety cases. Public sources support its classification as a Virginia program. Documented capabilities include Safety, policy, regulatory, and airspace integration. Relevant mission areas include Training and experimentation. The marker identifies MAAP's publicly documented administering office; BEYOND activities take place at multiple partner sites.",
+        "postal_code": "24060",
+        "region": "New River Valley"
+      },
+      "before": {
+        "address_line": "",
+        "city": "Blacksburg",
+        "contact_text": "Public information route; a direct asset contact is not published in the catalog",
+        "contact_url": "https://www.vedp.org/industry/unmanned-systems",
+        "latitude": 37.229,
+        "location_precision": "locality",
+        "longitude": -80.414,
+        "overview": "Virginia team advancing scalable beyond-visual-line-of-sight UAS operations and safety cases. Public sources support its classification as a Virginia program. Documented capabilities include Safety, policy, regulatory, and airspace integration. Relevant mission areas include Training and experimentation.",
+        "postal_code": "",
+        "region": "New River Valley"
+      },
+      "name": "FAA BEYOND Virginia Team",
+      "provenance": "curated-public-source",
+      "reason": "Official public address reviewed on 2026-09-04. The marker identifies MAAP's publicly documented administering office; BEYOND activities take place at multiple partner sites."
+    },
+    {
+      "accepted_baselines": [
+        {
+          "capabilities": [
+            "Operations, maintenance, and sustainment",
+            "Systems engineering and integration"
+          ],
+          "missions": [
+            "Infrastructure inspection",
+            "Logistics and contested logistics"
+          ],
+          "overview": "Utility UAS activity supporting infrastructure inspection and Virginia advanced-flight demonstrations. Public sources support its classification as a Virginia program. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics. The marker identifies Dominion Energy's public corporate headquarters as an administrative reference; UAS inspections occur across its service territory."
+        }
+      ],
+      "add_sources": [
+        {
+          "title": "FAA BEYOND: Dominion infrastructure-inspection accomplishments",
+          "url": "https://www.faa.gov/uas/programs_partnerships/beyond"
+        }
+      ],
+      "after": {
+        "capabilities": [
+          "Operations, maintenance, and sustainment"
+        ],
+        "missions": [
+          "Infrastructure inspection"
+        ],
+        "overview": "Dominion Energy uses UAS for utility infrastructure inspections and has participated in Virginia advanced-flight demonstrations. The marker identifies its public corporate headquarters as an administrative reference; inspections occur across its service territory."
+      },
+      "before": {
+        "capabilities": [
+          "Systems engineering and integration",
+          "Operations, maintenance, and sustainment",
+          "Manufacturing, materials, and prototyping"
+        ],
+        "missions": [
+          "Infrastructure inspection",
+          "Logistics and contested logistics"
+        ],
+        "overview": "Utility UAS activity supporting infrastructure inspection and Virginia advanced-flight demonstrations. Public sources support its classification as a Virginia program. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics. The marker identifies Dominion Energy's public corporate headquarters as an administrative reference; UAS inspections occur across its service territory."
+      },
+      "name": "Dominion Energy UAS Program",
+      "provenance": "curated-public-source",
+      "reason": "Remove generic manufacturing and logistics classifications: reviewed FAA evidence establishes utility inspection, not manufacturing or cargo service."
+    },
+    {
+      "after": {},
+      "before": {},
+      "name": "CACI International",
+      "provenance": "curated-public-source",
+      "reason": "Followed the live CACI homepage Counter UxS link to this current official page. It explicitly describes RF/radar/EO-IR sensing, CORIAN, BEAM, systems integration, and maritime counter-uncrewed systems. The search-indexed 2024 replacement PDF also returns 404 and must not be substituted.",
+      "replace_sources": [
+        {
+          "old_url": "https://www.caci.com/sites/default/files/2022-11/F614_2210_Maritime_cUAS.pdf",
+          "source": {
+            "title": "CACI counter-unmanned systems and maritime solutions",
+            "url": "https://www.caci.com/cuxs"
+          }
+        }
+      ]
+    },
+    {
+      "after": {},
+      "before": {},
+      "name": "Former Dedrone Washington-Area Headquarters",
+      "provenance": "curated-public-source",
+      "reason": "Official Axon page describes Dedrone detection, identification and tracking of unauthorized drones and provides a product inquiry form. This is a source-link repair, not evidence that the former Sterling office remains operational.",
+      "replace_sources": [
+        {
+          "old_url": "https://www.axon.com/products/dedrone",
+          "source": {
+            "title": "Dedrone by Axon official airspace security product information",
+            "url": "https://www.axon.com/landing-pages/dedrone-sem-landing-page"
+          }
+        }
+      ]
+    },
+    {
+      "after": {
+        "contact_url": "https://home.hamptonu.edu/admissions/"
+      },
+      "before": {
+        "contact_url": "https://www.hamptonu.edu/studentservices/admissions"
+      },
+      "name": "Hampton University",
+      "provenance": "university-institution",
+      "reason": "Official current admission page publishes the admission process, hours, phone and application-status email. Repair restores the page-specific admissions route. The institution record's UAS-program description should also have its separate official UAS-program page attached.",
+      "replace_sources": [
+        {
+          "old_url": "https://www.hamptonu.edu/studentservices/admissions",
+          "source": {
+            "title": "Hampton University Office of Admission and public contact information",
+            "url": "https://home.hamptonu.edu/admissions/"
+          }
+        }
+      ]
+    },
+    {
+      "after": {
+        "activity_source_url": "https://ir.wrap.com/node/12121/html"
+      },
+      "before": {
+        "activity_source_url": "https://ir.wrap.com/sec-filings/annual-reports/content/0001140361-26-011401/0001140361-26-011401.pdf"
+      },
+      "name": "Wrap Technologies Norton Manufacturing Headquarters",
+      "provenance": "curated-public-source",
+      "reason": "Followed the company's annual-reports index to the exact March 26, 2026 10-K HTML. Manufacturing section confirms September 2025 Norton move and final assembly/testing/quality/shipping. Properties section gives 182 Progress Way NE, Norton VA 24273 and 20,000 square feet. Business section identifies developing counter-UAS initiatives; it does not support current volume manufacture of counter-UAS products.",
+      "replace_sources": [
+        {
+          "old_url": "https://ir.wrap.com/sec-filings/annual-reports/content/0001140361-26-011401/0001140361-26-011401.pdf",
+          "source": {
+            "title": "Wrap FY2025 Form 10-K filed March 26, 2026: Norton manufacturing and counter-UAS development",
+            "url": "https://ir.wrap.com/node/12121/html"
+          }
+        }
+      ]
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Hampton University Uncrewed Aircraft Systems Program",
+          "url": "https://home.hamptonu.edu/engineering/uas/"
+        }
+      ],
+      "after": {},
+      "before": {},
+      "name": "Hampton University",
+      "provenance": "university-institution",
+      "reason": "The institution record explicitly claims a UAS degree concentration, training and applied operations, but its currently attached pages are generic institution/admissions/contact and NCES pages. Attach the already-cataloged official program source directly to this record as well."
+    },
+    {
+      "accepted_baselines": [
+        {
+          "activity_last_verified_at": "2026-08-11",
+          "activity_source_url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/police/page/2971/haymarket_police_department_annual_report_2022.pdf",
+          "activity_status": "active",
+          "current_activity": "Haymarket Police documented a fully implemented department drone program and received a CY 2026 award to replace an aircraft already in service.",
+          "overview": "Town police drone program documented as fully implemented and supported by a CY 2026 replacement award. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue. The marker identifies the public Town Hall / police contact site; it does not identify drone storage or a launch location.",
+          "short_description": "Town police drone program documented as fully implemented and supported by a CY 2026 replacement award.",
+          "website_url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/town_council/meeting/11057/tc_regmtg_03_06_2023.pdf"
+        }
+      ],
+      "add_sources": [
+        {
+          "title": "DCJS board minutes approving UAS replacement awards, including Haymarket",
+          "url": "https://www.dcjs.virginia.gov/sites/dcjs.virginia.gov/files/meetingminutes/criminal-justice-services-board/2025-12-08.pdf"
+        }
+      ],
+      "after": {
+        "activity_last_verified_at": "2026-09-04",
+        "activity_source_url": "https://www.dcjs.virginia.gov/sites/dcjs.virginia.gov/files/meetingminutes/criminal-justice-services-board/2025-12-08.pdf",
+        "activity_status": "",
+        "current_activity": "The DCJS award schedule and board minutes support a CY 2026 unmanned-aircraft replacement award for Haymarket. A fresh working copy of the older police report and current operating details still need confirmation.",
+        "overview": "Haymarket's police drone program is retained from prior public documentation. The current DCJS schedule and board minutes support a CY 2026 replacement award to the town. The older local packet is unavailable, so the earlier fully-implemented claim has not been freshly reconfirmed. The map point is the public Town Hall / police contact site, not drone storage or a launch location.",
+        "short_description": "Haymarket police drone program retained from prior documentation; the town is also listed in the CY 2026 aircraft-replacement awards.",
+        "website_url": "https://www.townofhaymarket.org/1293/Police-Department"
+      },
+      "before": {
+        "activity_last_verified_at": "2026-08-21",
+        "activity_source_url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/town_council/meeting/11057/tc_regmtg_03_06_2023.pdf",
+        "activity_status": "active",
+        "current_activity": "Haymarket Police documented a fully implemented department drone program and received a CY 2026 award to replace an aircraft already in service.",
+        "overview": "Town police drone program documented as fully implemented and supported by a CY 2026 replacement award. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue. The marker identifies the public Town Hall / police contact site; it does not identify drone storage or a launch location.",
+        "short_description": "Town police drone program documented as fully implemented and supported by a CY 2026 replacement award.",
+        "website_url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/town_council/meeting/11057/tc_regmtg_03_06_2023.pdf"
+      },
+      "name": "Haymarket Police Department Drone Program",
+      "provenance": "curated-public-source",
+      "reason": "Retire the confirmed dead local packet, retain the public police contact, and qualify operating-status claims to the current accessible award evidence.",
+      "replace_sources": [
+        {
+          "old_url": "https://www.townofhaymarket.org/sites/default/files/fileattachments/town_council/meeting/11057/tc_regmtg_03_06_2023.pdf",
+          "source": {
+            "title": "Haymarket Police Department public information",
+            "url": "https://www.townofhaymarket.org/1293/Police-Department"
+          }
+        }
+      ]
+    },
+    {
+      "after": {
+        "overview": "This previously cataloged Winchester counter-UAS record needs fresh editorial review. On September 4, 2026 the company homepage returned 404; exact-name research and the available SAM page did not independently corroborate its current Virginia presence or interceptor-development claims. This is an evidence gap, not proof that the business has closed. The existing point remains locality-level.",
+        "short_description": "Research follow-up: previously listed Winchester counter-UAS business whose current company and capability evidence needs reconfirmation.",
+        "unmanned_systems_relevance": "Previously recorded as a counter-UAS interceptor developer. Direct official evidence of its current capability and Virginia presence remains unresolved; do not treat this listing as confirmed available capacity."
+      },
+      "before": {
+        "overview": "Virginia counter-UAS company developing interceptor systems for defense applications. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Manufacturing, materials, and prototyping. Relevant mission areas include Counter-UAS and Force protection and installation security.",
+        "short_description": "Virginia counter-UAS company developing interceptor systems for defense applications.",
+        "unmanned_systems_relevance": "Develops documented counter-UAS systems, components, or production capacity."
+      },
+      "name": "Blue Ridge Defense Works",
+      "provenance": "curated-public-source",
+      "reason": "Full source audit found a dead company homepage and insufficient accessible evidence to reconfirm this record. Preserve the record and explicitly qualify its claims for follow-up.",
+      "review_required": true
+    },
+    {
+      "after": {
+        "city": "Winchester",
+        "latitude": 39.185,
+        "longitude": -78.163,
+        "region": "Shenandoah Valley"
+      },
+      "before": {
+        "city": "Winchester",
+        "latitude": 39.185,
+        "longitude": -78.163,
+        "region": "Northern Virginia"
+      },
+      "name": "Blue Ridge Defense Works",
+      "provenance": "curated-public-source",
+      "reason": "Align the region filter with the existing documented point and checked-in Virginia regional boundaries; no coordinate change."
+    },
+    {
+      "after": {
+        "city": "Clifton Forge",
+        "latitude": 37.812275,
+        "longitude": -79.852536,
+        "region": "Roanoke Valley"
+      },
+      "before": {
+        "city": "Clifton Forge",
+        "latitude": 37.812275,
+        "longitude": -79.852536,
+        "region": "Shenandoah Valley"
+      },
+      "name": "Mountain Gateway Community College Unmanned Systems Courses",
+      "provenance": "curated-public-source",
+      "reason": "Align the region filter with the existing documented point and checked-in Virginia regional boundaries; no coordinate change."
+    },
+    {
+      "after": {
+        "city": "Moneta",
+        "latitude": 37.10773,
+        "longitude": -79.592475,
+        "region": "Lynchburg Region"
+      },
+      "before": {
+        "city": "Moneta",
+        "latitude": 37.10773,
+        "longitude": -79.592475,
+        "region": "Roanoke Valley"
+      },
+      "name": "Smith Mountain Lake",
+      "provenance": "faa-public-airport",
+      "reason": "Align the region filter with the existing documented point and checked-in Virginia regional boundaries; no coordinate change."
+    },
+    {
+      "after": {
+        "city": "Courtland",
+        "latitude": 36.716,
+        "longitude": -77.068,
+        "region": "Hampton Roads"
+      },
+      "before": {
+        "city": "Courtland",
+        "latitude": 36.716,
+        "longitude": -77.068,
+        "region": "Southside Virginia"
+      },
+      "name": "Southampton County First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "reason": "Align the region filter with the existing documented point and checked-in Virginia regional boundaries; no coordinate change."
+    },
+    {
+      "after": {
+        "contact_url": "https://courses.vccs.edu/colleges/brightpoint/courses/UMS-UnmannedSystems",
+        "website_url": "https://courses.vccs.edu/colleges/brightpoint/courses/UMS-UnmannedSystems"
+      },
+      "before": {
+        "contact_url": "https://courses.vccs.edu/colleges/jtcc/courses/UMS-UnmannedSystems",
+        "website_url": "https://courses.vccs.edu/colleges/jtcc/courses/UMS-UnmannedSystems"
+      },
+      "name": "Brightpoint Community College Unmanned Systems Courses",
+      "provenance": "curated-public-source",
+      "reason": "The college slug changed following the institutional rename. Current official VCCS pages list the unmanned-systems course descriptions; the obsolete slug silently returns only navigation. The source supports cataloged course offerings, not a guarantee of current-semester availability.",
+      "replace_sources": [
+        {
+          "old_url": "https://courses.vccs.edu/colleges/jtcc/courses/UMS-UnmannedSystems",
+          "source": {
+            "title": "Brightpoint Community College Unmanned Systems Courses: current official VCCS course catalog",
+            "url": "https://courses.vccs.edu/colleges/brightpoint/courses/UMS-UnmannedSystems"
+          }
+        }
+      ]
+    },
+    {
+      "after": {
+        "website_url": "https://courses.vccs.edu/colleges/laurelridge/courses/UMS-UnmannedSystems"
+      },
+      "before": {
+        "website_url": "https://courses.vccs.edu/colleges/lfcc/courses/UMS-UnmannedSystems"
+      },
+      "name": "Laurel Ridge Community College Unmanned Systems Courses",
+      "provenance": "curated-public-source",
+      "reason": "The college slug changed following the institutional rename. Current official VCCS pages list the unmanned-systems course descriptions; the obsolete slug silently returns only navigation. The source supports cataloged course offerings, not a guarantee of current-semester availability.",
+      "replace_sources": [
+        {
+          "old_url": "https://courses.vccs.edu/colleges/lfcc/courses/UMS-UnmannedSystems",
+          "source": {
+            "title": "Laurel Ridge Community College Unmanned Systems Courses: current official VCCS course catalog",
+            "url": "https://courses.vccs.edu/colleges/laurelridge/courses/UMS-UnmannedSystems"
+          }
+        }
+      ]
+    },
+    {
+      "after": {
+        "contact_url": "https://courses.vccs.edu/colleges/mgcc/courses/UMS-UnmannedSystems",
+        "website_url": "https://courses.vccs.edu/colleges/mgcc/courses/UMS-UnmannedSystems"
+      },
+      "before": {
+        "contact_url": "https://courses.vccs.edu/colleges/dslcc/courses/UMS-UnmannedSystems",
+        "website_url": "https://courses.vccs.edu/colleges/dslcc/courses/UMS-UnmannedSystems"
+      },
+      "name": "Mountain Gateway Community College Unmanned Systems Courses",
+      "provenance": "curated-public-source",
+      "reason": "The college slug changed following the institutional rename. Current official VCCS pages list the unmanned-systems course descriptions; the obsolete slug silently returns only navigation. The source supports cataloged course offerings, not a guarantee of current-semester availability.",
+      "replace_sources": [
+        {
+          "old_url": "https://courses.vccs.edu/colleges/dslcc/courses/UMS-UnmannedSystems",
+          "source": {
+            "title": "Mountain Gateway Community College Unmanned Systems Courses: current official VCCS course catalog",
+            "url": "https://courses.vccs.edu/colleges/mgcc/courses/UMS-UnmannedSystems"
+          }
+        }
+      ]
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Suffolk Police promotion announcement explicitly identifying UAS Team membership",
+          "url": "https://www.suffolkva.us/Archive/ViewFile/Item/13536"
+        }
+      ],
+      "after": {},
+      "before": {},
+      "name": "Suffolk Police UAS Unit",
+      "provenance": "curated-public-source",
+      "reason": "The previously attached EID60 staff profile no longer mentions UAS; all three original sources are contact directories. This official police announcement explicitly identifies department UAS Team membership. Retain the directory sources only as contacts."
+    },
+    {
+      "after": {
+        "latitude": 38.586294,
+        "longitude": -77.710632
+      },
+      "before": {
+        "latitude": 38.586293,
+        "longitude": -77.710633
+      },
+      "name": "Warrenton/Fauquier",
+      "provenance": "faa-public-airport",
+      "reason": "Refresh FAA published airport reference coordinates (sub-meter rounding update). Retain airport reference precision."
+    }
+  ],
+  "legacy_baseline_note": "Complete older automatically generated database states for Dominion and Haymarket were compared with the local pre-update database on 2026-09-04. These alternatives require exact grouped matches and no staff review/history context. They resolve earlier source-enrichment version drift without relaxing preservation checks.",
+  "methodology": "Reviewed public addresses and narrowly scoped claim corrections. Before/after preconditions preserve staff changes; public office or campus markers are site-level references, not rooftop surveys or operational locations.",
+  "reviewed_at": "2026-09-04"
+}

@@ -44,6 +44,11 @@ export function featuresWithinBounds(features, bounds) {
 }
 
 function pointOnSegment(point, start, end) {
+  const squaredLength =
+    (end.lng - start.lng) ** 2 + (end.lat - start.lat) ** 2;
+  if (squaredLength === 0) {
+    return point.lat === start.lat && point.lng === start.lng;
+  }
   const crossProduct =
     (point.lng - start.lng) * (end.lat - start.lat) -
     (point.lat - start.lat) * (end.lng - start.lng);
@@ -52,8 +57,6 @@ function pointOnSegment(point, start, end) {
     (point.lng - start.lng) * (end.lng - start.lng) +
     (point.lat - start.lat) * (end.lat - start.lat);
   if (dotProduct < 0) return false;
-  const squaredLength =
-    (end.lng - start.lng) ** 2 + (end.lat - start.lat) ** 2;
   return dotProduct <= squaredLength;
 }
 

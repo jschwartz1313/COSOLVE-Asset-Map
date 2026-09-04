@@ -184,6 +184,37 @@ class PublicApiTests(TestCase):
         ).json()
         self.assertIn(self.public.name, [item["name"] for item in relationship_search["results"]])
 
+    def test_keyword_search_does_not_match_private_evidence_or_relationships(self):
+        Source.objects.create(
+            asset=self.public,
+            title="Confidential evidence phrase",
+            url="https://example.org/private",
+            is_public=False,
+        )
+        Relationship.objects.create(
+            from_asset=self.public,
+            to_asset=self.internal,
+            relationship_type=Relationship.RelationshipType.SUPPORTS,
+        )
+        self.assertEqual(
+            self.client.get(reverse("api:asset-list"), {"q": "Confidential evidence"}).json()[
+                "result_count"
+            ],
+            0,
+        )
+        self.assertEqual(
+            self.client.get(reverse("api:asset-list"), {"q": "Restricted Asset"}).json()[
+                "result_count"
+            ],
+            0,
+        )
+        Relationship.objects.filter(from_asset=self.partner).update(is_public=False)
+        response = self.client.get(
+            reverse("api:asset-list"),
+            {"q": "Partner Organization"},
+        ).json()
+        self.assertEqual([item["name"] for item in response["results"]], [self.partner.name])
+
     def test_region_summary_honors_active_filters(self):
         response = self.client.get(
             reverse("api:region-summary", args=[self.region.slug]),

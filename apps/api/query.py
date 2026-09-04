@@ -1,7 +1,7 @@
 from django.db.models import Q
 
 from apps.assets.models import Asset
-from apps.assets.scoping import public_region_slug
+from apps.assets.scoping import public_region_slug, public_scope_q
 
 FACETS = {
     "record_type": "record_type",
@@ -52,9 +52,25 @@ def filter_public_assets(params, include_related=True):
             | Q(platform_domains__name__icontains=query)
             | Q(capabilities__name__icontains=query)
             | Q(missions__name__icontains=query)
-            | Q(sources__title__icontains=query)
-            | Q(outgoing_relationships__to_asset__name__icontains=query)
-            | Q(incoming_relationships__from_asset__name__icontains=query)
+            | Q(sources__title__icontains=query, sources__is_public=True)
+            | (
+                Q(
+                    outgoing_relationships__to_asset__name__icontains=query,
+                    outgoing_relationships__is_public=True,
+                    outgoing_relationships__to_asset__status__in=Asset.public_status_values(),
+                    outgoing_relationships__to_asset__visibility=Asset.Visibility.PUBLIC,
+                )
+                & public_scope_q("outgoing_relationships__to_asset__")
+            )
+            | (
+                Q(
+                    incoming_relationships__from_asset__name__icontains=query,
+                    incoming_relationships__is_public=True,
+                    incoming_relationships__from_asset__status__in=Asset.public_status_values(),
+                    incoming_relationships__from_asset__visibility=Asset.Visibility.PUBLIC,
+                )
+                & public_scope_q("incoming_relationships__from_asset__")
+            )
         )
     return queryset.distinct()
 
