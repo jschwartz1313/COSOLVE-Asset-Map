@@ -76,6 +76,11 @@ def protected_asset(asset):
     )
 
 
+def history_reason(instance, reason):
+    maximum = instance.history.model._meta.get_field("history_change_reason").max_length
+    return reason[:maximum] if maximum else reason
+
+
 def review_required_names():
     path = settings.BASE_DIR / "data" / "asset_corrections_2026_09_04.json"
     if not path.exists():
@@ -253,7 +258,7 @@ class Command(BaseCommand):
                     }
                 )
             if scalar_fields:
-                asset._change_reason = item["reason"]
+                asset._change_reason = history_reason(asset, item["reason"])
                 asset.save(update_fields=[*scalar_fields, "updated_at"])
             for field in set(changed_values) & set(TAXONOMY_FIELDS):
                 model = TAXONOMY_FIELDS[field]
@@ -276,7 +281,7 @@ class Command(BaseCommand):
                     old.link_review_notes = (
                         f"Superseded on {manifest['reviewed_at']}: {data['url']}"
                     )
-                    old._change_reason = item["reason"]
+                    old._change_reason = history_reason(old, item["reason"])
                     old.save()
             AssetReviewComment.objects.create(
                 asset=asset,

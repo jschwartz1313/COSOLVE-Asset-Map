@@ -14,6 +14,22 @@ jobs:
     env:
       DJANGO_SECRET_KEY: ci-only-secret-key
       DJANGO_DEBUG: "false"
+      DATABASE_URL: postgres://postgres:postgres@127.0.0.1:5432/cosolve_ci
+
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_DB: cosolve_ci
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: postgres
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
 
     steps:
       - name: Check out repository

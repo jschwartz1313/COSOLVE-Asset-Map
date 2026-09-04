@@ -327,6 +327,20 @@ class CatalogCorrectionTests(TestCase):
         self.apply()
         self.assertEqual(self.asset.sources.count(), 2)
 
+    def test_long_correction_reason_fits_history_and_preserves_full_review_evidence(self):
+        old = self.source_replacement()
+        self.item["before"] = {"overview": ""}
+        self.item["after"] = {"overview": "Updated source-backed profile."}
+        self.item["reason"] = "Reviewed official location and source evidence. " * 12
+        self.apply()
+        for record in (self.asset, old):
+            with self.subTest(model=type(record).__name__):
+                maximum = record.history.model._meta.get_field("history_change_reason").max_length
+                reason = record.history.latest().history_change_reason
+                self.assertEqual(reason, self.item["reason"][:maximum])
+        comment = self.asset.review_comments.get(body__startswith="Catalog correction:")
+        self.assertIn(self.item["reason"], comment.body)
+
     def test_staff_source_annotation_is_not_removed(self):
         old = self.source_replacement()
         old.notes += " Staff annotation."
