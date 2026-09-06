@@ -6,6 +6,7 @@ from decimal import Decimal, InvalidOperation
 from django.core.exceptions import ValidationError
 from django.core.validators import EmailValidator, URLValidator
 
+from apps.assets.discovery import TEST_SPEC_FIELDS
 from apps.assets.models import Asset
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 from apps.sources.models import Source
@@ -41,6 +42,7 @@ CSV_COLUMNS = [
     "infrastructure_access",
     "development_source_url",
     "development_last_verified_at",
+    *TEST_SPEC_FIELDS,
     "address_line",
     "city",
     "state",
@@ -115,6 +117,10 @@ def joined_slugs(items):
 def asset_csv_row(asset, include_internal=False):
     sources = [source for source in asset.sources.all() if include_internal or source.is_public]
     return {
+        **{
+            field: (getattr(asset, field) if getattr(asset, field) is not None else "")
+            for field in TEST_SPEC_FIELDS
+        },
         "slug": asset.slug,
         "name": asset.name,
         "record_type": asset.record_type,

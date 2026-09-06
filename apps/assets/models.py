@@ -136,6 +136,20 @@ class Asset(models.Model):
     development_source_url = models.URLField(blank=True)
     development_last_verified_at = models.DateField(null=True, blank=True)
 
+    test_aircraft = models.TextField("Published aircraft / testing scope", blank=True)
+    test_dimensions = models.TextField(
+        "Published site and launch / recovery dimensions", blank=True
+    )
+    test_runway_length_ft = models.PositiveIntegerField(
+        "Published runway length (ft)", null=True, blank=True,
+        validators=[MinValueValidator(1)],
+    )
+    test_access = models.TextField("Test-site access and operating constraints", blank=True)
+    test_source_url = models.URLField("Test-site specification source", max_length=1000, blank=True)
+    test_last_verified_at = models.DateField(
+        "Test-site source review date", null=True, blank=True
+    )
+
     address_line = models.CharField(max_length=240, blank=True)
     city = models.CharField(max_length=120, blank=True)
     state = models.CharField(max_length=2, default="VA")
@@ -271,6 +285,13 @@ class Asset(models.Model):
                 errors["development_last_verified_at"] = (
                     "Development-readiness claims require a review date."
                 )
+        if self.has_test_details:
+            if not self.test_source_url:
+                errors["test_source_url"] = "Test-site specifications require a public source."
+            if not self.test_last_verified_at:
+                errors["test_last_verified_at"] = (
+                    "Test-site specifications require a source review date."
+                )
         if errors:
             raise ValidationError(errors)
 
@@ -298,6 +319,12 @@ class Asset(models.Model):
 
     def get_absolute_url(self):
         return reverse("core:asset-detail", kwargs={"slug": self.slug})
+
+    @property
+    def has_test_details(self):
+        return any(value not in (None, "") for value in (
+            self.test_aircraft, self.test_dimensions, self.test_runway_length_ft, self.test_access,
+        ))
 
     @property
     def is_editorially_reviewed(self):
@@ -519,6 +546,7 @@ class SavedView(models.Model):
 
     def clean(self):
         allowed = {
+            "purpose", "activity", "test_specs", "min_runway",
             "q",
             "record_type",
             "category",

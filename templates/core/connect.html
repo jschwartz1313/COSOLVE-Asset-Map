@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Get connected | COSOLVE{% endblock %}
+{% block body_class %}connect-page{% endblock %}
+{% block content %}
+<main id="main-content" class="about-page">
+  <header class="page-heading">
+    <span class="eyebrow">Virginia ecosystem</span>
+    <h1>Get connected</h1>
+    <p>Public starting points for testing, workforce, business support, and research partnerships.</p>
+  </header>
+  <div class="connection-list">
+    <section class="connection-row">
+      <div><span class="eyebrow">Ecosystem and commercialization</span><h2>Virginia Unmanned Systems Center at VIPC</h2></div>
+      <div><p>UxS partnerships, startup resources, grants, and early-stage funding information across air, land, sea, and space.</p><a href="https://vipc.org/initiatives/virginia-unmanned-systems-center/" rel="noopener noreferrer">Visit the center and its resources</a></div>
+    </section>
+    <section class="connection-row">
+      <div><span class="eyebrow">Business expansion and locations</span><h2>Virginia Economic Development Partnership</h2></div>
+      <div><p>Company location and expansion inquiries, with public contacts for business investment and regional support.</p><a href="https://www.vedp.org/contact-us" rel="noopener noreferrer">Find the appropriate VEDP contact</a></div>
+    </section>
+    <section class="connection-row">
+      <div><span class="eyebrow">Aviation integration</span><h2>Virginia Department of Aviation</h2></div>
+      <div><p>AAM initiatives, airport integration, Smart Airspace, VA-FIX, and the state's existing aviation strategy and infrastructure resources.</p><a href="https://doav.virginia.gov/advanced_air_mobility/" rel="noopener noreferrer">AAM program contact and official resources</a></div>
+    </section>
+    <section class="connection-row">
+      <div><span class="eyebrow">Workforce and internships</span><h2>Virginia Space Grant Consortium</h2></div>
+      <div><p>CSIIP connects employers with undergraduate STEM interns. STEM Takes Flight provides NASA research experiences for community college students and faculty; consult the program for the next application cycle.</p><div class="connection-links"><a href="https://vsgc.odu.edu/csiip/" rel="noopener noreferrer">CSIIP: employers and students</a><a href="https://vsgc.odu.edu/STEMtakesFlight/" rel="noopener noreferrer">STEM Takes Flight</a></div></div>
+    </section>
+    <section class="connection-row">
+      <div><span class="eyebrow">Research and technology transfer</span><h2>NASA Langley Research Center</h2></div>
+      <div><p>Langley's Front Door connects prospective partners with research capabilities, facilities, technology transfer, small-business programs, and the partnerships team.</p><a href="https://www.nasa.gov/langley/frontdoor/" rel="noopener noreferrer">Explore NASA Langley partnerships</a></div>
+    </section>
+  </div>
+  <section class="connection-next">
+    <h2>Testing and operational resources</h2>
+    <div class="connection-links"><a href="{% url 'core:directory' %}?purpose=testing">Browse test sites</a><a href="{% url 'core:directory' %}?test_specs=1">Published site specifications</a><a href="{% url 'core:directory' %}?purpose=workforce">Workforce and training directory</a></div>
+    <p class="section-note">Public routes reviewed September 6, 2026. These are starting points, not commitments of funding, access, availability, or regulatory approval.</p>
+  </section>
+</main>
+{% endblock %}

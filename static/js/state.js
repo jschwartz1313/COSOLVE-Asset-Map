@@ -1,4 +1,4 @@
-const FACETS = ["q", "record_type", "region", "category", "domain", "capability", "mission"];
+const FACETS = ["q", "purpose", "record_type", "region", "category", "domain", "capability", "mission", "activity", "test_specs", "min_runway"];
 
 export function paramsFromEntries(entries) {
   const params = new URLSearchParams();

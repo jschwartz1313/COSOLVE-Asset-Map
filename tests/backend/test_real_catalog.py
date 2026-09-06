@@ -204,7 +204,12 @@ class RealCatalogFileTests(TestCase):
         ]
         self.assertEqual(
             [record["name"] for record in regional],
-            ["AUVSI Hampton Roads Chapter", "Virginia Capes Range Complex"],
+            [
+                "AUVSI Hampton Roads Chapter",
+                "Commonwealth STEM Industry Internship Program (CSIIP)",
+                "STEM Takes Flight at Virginia's Community Colleges",
+                "Virginia Capes Range Complex",
+            ],
         )
         self.assertTrue(all(record["latitude"] is None for record in regional))
         self.assertTrue(all(record["longitude"] is None for record in regional))
@@ -392,11 +397,17 @@ class RealCatalogFileTests(TestCase):
             ),
             {"Inertial Labs"},
         )
-        self.assertEqual(
-            historical_names | expansion_names | hampton_roads_names | manufacturing_names
-            | september_names,
-            set(records_by_name),
+        source_backed_additions = {
+            record["name"] for record in json.loads(
+                (settings.BASE_DIR / "data/asset_interview_followup_2026_09_06.json").read_text()
+            )["records"]
+        }
+        reviewed_or_flagged = (
+            historical_names | expansion_names | hampton_roads_names
+            | manufacturing_names | september_names
         )
+        self.assertFalse(reviewed_or_flagged.intersection(source_backed_additions))
+        self.assertEqual(reviewed_or_flagged | source_backed_additions, set(records_by_name))
 
         reviewed_assets = {
             **manifest["reviewed_assets"],
@@ -546,7 +557,7 @@ class RealCatalogFileTests(TestCase):
         self.assertEqual(nasa.location_precision, Asset.LocationPrecision.SITE)
         self.assertEqual(str(nasa.latitude), "37.085639")
         self.assertTrue(nasa.overview)
-        self.assertEqual(nasa.contact_url, "https://www.nasa.gov/contact/")
+        self.assertEqual(nasa.contact_url, "https://www.nasa.gov/langley/frontdoor/")
         northwest_annex = Asset.objects.get(name="Naval Support Activity Northwest Annex")
         self.assertEqual(northwest_annex.city, "Chesapeake")
         self.assertEqual(northwest_annex.postal_code, "23322")
@@ -874,7 +885,7 @@ class RealCatalogFileTests(TestCase):
         self.assertEqual(asset.short_description, "Staff-edited description.")
         self.assertEqual(asset.contact_text, "Staff-maintained public affairs contact")
         self.assertTrue(asset.overview)
-        self.assertEqual(asset.contact_url, "https://www.nasa.gov/contact/")
+        self.assertEqual(asset.contact_url, "https://www.nasa.gov/langley/frontdoor/")
         self.assertTrue(asset.sources.filter(url=asset.contact_url, is_public=True).exists())
         self.assertTrue(
             asset.strategic_categories.filter(name="Core unmanned-systems asset").exists()

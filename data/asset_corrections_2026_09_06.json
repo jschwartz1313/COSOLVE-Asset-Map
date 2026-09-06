@@ -1,0 +1,27 @@
+{
+  "reviewed_at": "2026-09-06",
+  "corrections": [
+    {
+      "name": "Virginia Department of Aviation",
+      "provenance": "curated-public-source",
+      "before": {"website_url": "https://vipc.org/virginia-launches-advanced-air-mobility-and-unmanned-systems-test-site-program/"},
+      "after": {"website_url": "https://doav.virginia.gov/advanced_air_mobility/"},
+      "reason": "Use the agency's public AAM contact, strategy, and project resources as the primary website. Reviewed 2026-09-06."
+    },
+    {
+      "name": "MARS Unmanned Aircraft Systems Airfield",
+      "provenance": "curated-public-source",
+      "before": {"website_url": "https://www.vaspace.org/about-us"},
+      "after": {"website_url": "https://www.vaspace.org/our-facilities"},
+      "reason": "Link directly to operator-published airfield dimensions and capabilities. Reviewed 2026-09-06."
+    },
+    {
+      "name": "NASA Langley Research Center",
+      "provenance": "curated-public-source",
+      "before": {"contact_url": "https://www.nasa.gov/contact/"},
+      "after": {"contact_url": "https://www.nasa.gov/langley/frontdoor/"},
+      "add_sources": [{"title": "NASA Langley Front Door: capabilities and partnership routes", "url": "https://www.nasa.gov/langley/frontdoor/"}],
+      "reason": "Replace the generic NASA contact route with Langley's published partnership entry point. Reviewed 2026-09-06."
+    }
+  ]
+}

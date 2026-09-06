@@ -1,0 +1,106 @@
+{
+  "reviewed_at": "2026-09-06",
+  "method": "Interview themes used for discovery priorities; all published additions below are supported by public operator or program pages. No private interview statements are included.",
+  "profiles": {
+    "MARS Unmanned Aircraft Systems Airfield": {
+      "test_aircraft": "Government and commercial UAS; multi-domain testing, training, demonstrations, and exercises.",
+      "test_dimensions": "3,000 x 75 ft runway; vertical takeoff and landing pad; 90 x 50 ft hangar. Direct access to 75 square nautical miles of restricted airspace.",
+      "test_runway_length_ft": 3000,
+      "test_access": "Secure federal facility. Coordinate mission integration and airfield access with the Virginia Spaceport Authority; published dimensions do not establish aircraft-specific approval.",
+      "test_source_url": "https://www.vaspace.org/our-facilities",
+      "test_last_verified_at": "2026-09-06"
+    },
+    "Virginia Tech Drone Park": {
+      "test_aircraft": "Drone research, education, and technology testing inside a netted enclosure.",
+      "test_dimensions": "300 x 120 x 85 ft netted enclosure, approximately three million cubic feet of flight space; adjacent laboratory and classroom space. This is not an open-air runway.",
+      "test_access": "Request flight time through VTDronePark@vt.edu, review the park protocol, and complete the orientation. Commercial and third-party operations have additional requirements.",
+      "test_source_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
+      "test_last_verified_at": "2026-09-06"
+    },
+    "NASA Langley UAS Test Range": {
+      "test_aircraft": "Small research UAS. The cited July 2015 opening announcement describes the initial operating scope, not current aircraft approvals.",
+      "test_dimensions": "100-acre range reported in the 2015 opening announcement. Current launch-area and runway dimensions are not established by that source.",
+      "test_access": "NASA's opening announcement requires scheduling through the UAS Operations Office, airspace coordination, security notification, and a range safety officer. Confirm current conditions with NASA; the historical limits are not a present-day authorization.",
+      "test_source_url": "https://www.nasa.gov/centers-and-facilities/langley/nasa-langley-drone-flying-site-open-for-testing/",
+      "test_last_verified_at": "2026-09-06"
+    },
+    "NASA Langley Research Center": {
+      "activity_status": "active",
+      "current_activity": "Langley's public Front Door brings together research facilities, capabilities, technology transfer, small-business programs, and partnerships information.",
+      "partnership_opportunities": "Prospective industry, academic, and other partners can use the Front Door's Connecting with Langley route to submit a statement of interest to the partnerships team.",
+      "activity_source_url": "https://www.nasa.gov/langley/frontdoor/",
+      "activity_last_verified_at": "2026-09-06",
+      "sources": [{"title": "NASA Langley Front Door: capabilities and partnership routes", "url": "https://www.nasa.gov/langley/frontdoor/"}]
+    }
+  },
+  "records": [
+    {
+      "name": "Commonwealth STEM Industry Internship Program (CSIIP)",
+      "record_type": "program",
+      "short_description": "Virginia Space Grant Consortium program connecting employers and undergraduates with paid STEM internships.",
+      "overview": "CSIIP is a statewide workforce program coordinated by Hampton-based VSGC, rather than a single training or flight site. Employers register and hire interns directly; the program provides student matching and staff support. The regional classification identifies the coordinator, not the program's service boundary.",
+      "unmanned_systems_relevance": "Supporting workforce resource for UxS employers recruiting engineering, computer science, cybersecurity, and data-science talent. The program explicitly includes aviation and UAV internships.",
+      "website_url": "https://vsgc.odu.edu/csiip/",
+      "contact_text": "Sarah Pauls, CSIIP public program contact",
+      "contact_email": "spauls@odu.edu",
+      "contact_phone": "757-766-5210",
+      "contact_url": "https://vsgc.odu.edu/csiip/",
+      "activity_status": "active",
+      "current_activity": "The public program page lists ongoing registration for students and employers.",
+      "partnership_opportunities": "Employers can register internships through the company route; students use the separate student registration route. Confirm current eligibility and support with the program.",
+      "activity_source_url": "https://vsgc.odu.edu/csiip/",
+      "activity_last_verified_at": "2026-09-06",
+      "address_line": "",
+      "city": "",
+      "state": "VA",
+      "postal_code": "",
+      "region": "Hampton Roads",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "strategic_categories": ["Workforce and talent", "Programs and initiatives", "Supporting ecosystem asset"],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "provenance": "curated-public-source",
+      "sources": [
+        {"title": "VSGC: CSIIP student and employer information", "url": "https://vsgc.odu.edu/csiip/"},
+        {"title": "VSGC programs and Hampton coordinating office", "url": "https://vsgc.odu.edu/about-us/"}
+      ]
+    },
+    {
+      "name": "STEM Takes Flight at Virginia's Community Colleges",
+      "record_type": "program",
+      "short_description": "VSGC, VCCS, and NASA research-experience program for Virginia community college STEM students and faculty.",
+      "overview": "The initiative connects community college students with paid research experiences at NASA Langley and Wallops and offers faculty professional development. It is coordinated by Hampton-based VSGC and serves participants across Virginia rather than a single mapped training site. The regional classification identifies the coordinator, not the program's service boundary.",
+      "unmanned_systems_relevance": "Supporting aerospace and technical workforce pathway, including community college technician tracks. Participation does not itself establish drone-pilot certification or UAS-specific project placement.",
+      "website_url": "https://vsgc.odu.edu/STEMtakesFlight/",
+      "contact_text": "Nicole Shaw, student research experience contact",
+      "contact_email": "lnshaw@odu.edu",
+      "contact_phone": "",
+      "contact_url": "https://vsgc.odu.edu/STEMtakesFlight/",
+      "activity_status": "",
+      "current_activity": "The published 2026 student research session ran June 1-August 7. Those application deadlines have passed; a later intake has not been confirmed in this record.",
+      "partnership_opportunities": "Students and faculty should consult the program's separate information and application routes and ask about the next announced cycle.",
+      "activity_source_url": "https://vsgc.odu.edu/STEMtakesFlight/",
+      "activity_last_verified_at": "2026-09-06",
+      "address_line": "",
+      "city": "",
+      "state": "VA",
+      "postal_code": "",
+      "region": "Hampton Roads",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "strategic_categories": ["Workforce and talent", "Programs and initiatives", "Supporting ecosystem asset"],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "provenance": "curated-public-source",
+      "sources": [
+        {"title": "VSGC: STEM Takes Flight research experiences and 2026 dates", "url": "https://vsgc.odu.edu/STEMtakesFlight/"},
+        {"title": "VSGC programs and Hampton coordinating office", "url": "https://vsgc.odu.edu/about-us/"}
+      ]
+    }
+  ]
+}

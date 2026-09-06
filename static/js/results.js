@@ -15,6 +15,7 @@ function resultRow(feature, container, onSelect) {
   button.className = "result-row";
   button.dataset.assetId = feature.id;
   button.append(textElement("span", `type-pill type-${props.record_type}`, props.record_type_label));
+  if (props.activity_status_label) button.append(textElement("span", "activity-label", props.activity_status_label));
   button.append(textElement("h3", "", props.name));
   button.append(textElement("p", "", props.short_description));
   const footer = textElement("div", "row-footer", "");

@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "virginia_real_assets.json"
 CATALOG_DATE = "2026-08-21"
-BUILD_DATE = "2026-09-04"
+BUILD_DATE = "2026-09-06"
 
 FAA_LAYER = (
     "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
@@ -42,6 +42,7 @@ SOURCE_ENRICHMENT_PATH = ROOT / "data" / "asset_source_enrichment.json"
 LOCATION_ENRICHMENT_PATH = ROOT / "data" / "asset_location_enrichment.json"
 SEPTEMBER_EXPANSION_PATH = ROOT / "data" / "asset_expansion_2026_09_04.json"
 SEPTEMBER_CORRECTIONS_PATH = ROOT / "data" / "asset_corrections_2026_09_04.json"
+INTERVIEW_FOLLOWUP_PATH = ROOT / "data" / "asset_interview_followup_2026_09_06.json"
 
 IPEDS_NAME_ALIASES = {
     "University of Virginia-Main Campus": "University of Virginia",
@@ -11440,6 +11441,16 @@ def validate(records, relationships):
                 raise ValueError(f"Unverified activity details: {record['name']}")
             if not any(item["url"] == record["activity_source_url"] for item in record["sources"]):
                 raise ValueError(f"Activity source is not attached: {record['name']}")
+        test_claims = (record.get("test_aircraft"), record.get("test_dimensions"),
+                       record.get("test_runway_length_ft"), record.get("test_access"))
+        if any(value not in (None, "") for value in test_claims):
+            if not record.get("test_source_url") or not record.get("test_last_verified_at"):
+                raise ValueError(f"Missing test-site evidence: {record['name']}")
+            if not any(item["url"] == record["test_source_url"] for item in record["sources"]):
+                raise ValueError(f"Test-site source is not attached: {record['name']}")
+        runway = record.get("test_runway_length_ft")
+        if runway is not None and (type(runway) is not int or runway < 1):
+            raise ValueError(f"Invalid runway length: {record['name']}")
         development_claims = (
             record.get("owner_operator"),
             record.get("available_acreage"),
@@ -11509,8 +11520,10 @@ def validate(records, relationships):
 def apply_reviewed_corrections(records):
     """Apply the same reviewed changes to generated data that deployments apply conditionally."""
     records_by_name = {record["name"]: record for record in records}
-    manifest = json.loads(SEPTEMBER_CORRECTIONS_PATH.read_text())
-    for correction in manifest["corrections"]:
+    corrections = json.loads(SEPTEMBER_CORRECTIONS_PATH.read_text())["corrections"]
+    followup_path = ROOT / "data" / "asset_corrections_2026_09_06.json"
+    corrections += json.loads(followup_path.read_text())["corrections"]
+    for correction in corrections:
         record = records_by_name[correction["name"]]
         record.update(correction["after"])
         replacements = correction.get("replace_sources", [])
@@ -11520,6 +11533,22 @@ def apply_reviewed_corrections(records):
         for item in additions:
             if not any(source["url"] == item["url"] for source in record["sources"]):
                 record["sources"].append(item)
+    return records
+
+
+def apply_interview_followup(records):
+    """Apply public-source follow-up without needing to refresh unrelated source feeds."""
+    manifest = json.loads(INTERVIEW_FOLLOWUP_PATH.read_text())
+    by_name = {record["name"]: record for record in records}
+    for name, profile in manifest["profiles"].items():
+        record = by_name[name]
+        record.update({key: value for key, value in profile.items() if key != "sources"})
+        for source in profile.get("sources", []):
+            if not any(existing["url"] == source["url"] for existing in record["sources"]):
+                record["sources"].append(source.copy())
+    for record in manifest["records"]:
+        if record["name"] not in by_name:
+            records.append(record)
     return records
 
 
@@ -11538,6 +11567,7 @@ def main():
     records = [finalize_record(apply_location_override(record)) for record in records]
     records = apply_university_campus_locations(records)
     records = apply_reviewed_corrections(records)
+    records = apply_interview_followup(records)
     records.sort(key=lambda item: item["name"].casefold())
     relationships = list(CATALOG_RELATIONSHIPS) + university_relationships()
     relationships.extend(

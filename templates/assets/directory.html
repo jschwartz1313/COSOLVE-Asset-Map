@@ -35,6 +35,7 @@
           </div>
           <div class="directory-classification">
             <span class="type-pill type-{{ asset.record_type }}">{{ asset.get_record_type_display }}</span>
+            {% if asset.activity_status %}<span class="activity-label">{{ asset.get_activity_status_display }}</span>{% endif %}
             {% with category=asset.strategic_categories.all|first %}{% if category %}<small>{{ category.name }}</small>{% endif %}{% endwith %}
           </div>
           <div class="directory-location"><strong>{{ asset.city|default:"Virginia" }}</strong>{% if asset.city and asset.state %}<span>{{ asset.state }}</span>{% endif %}</div>

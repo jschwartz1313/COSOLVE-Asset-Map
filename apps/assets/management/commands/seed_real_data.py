@@ -166,6 +166,13 @@ class Command(BaseCommand):
                 else None
             )
             asset.available_acreage = record.get("available_acreage")
+            for field in ("test_aircraft", "test_dimensions", "test_access", "test_source_url"):
+                setattr(asset, field, record.get(field, ""))
+            asset.test_runway_length_ft = record.get("test_runway_length_ft")
+            asset.test_last_verified_at = (
+                date.fromisoformat(record["test_last_verified_at"])
+                if record.get("test_last_verified_at") else None
+            )
             asset.development_last_verified_at = (
                 date.fromisoformat(record["development_last_verified_at"])
                 if record.get("development_last_verified_at")

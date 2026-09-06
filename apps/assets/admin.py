@@ -302,6 +302,17 @@ class AssetAdmin(SimpleHistoryAdmin):
             },
         ),
         (
+            "Testing and access",
+            {
+                "fields": ("test_aircraft", "test_dimensions", "test_runway_length_ft",
+                           "test_access", "test_source_url", "test_last_verified_at"),
+                "description": (
+                    "Published operator specifications only. Leave unknown values blank. "
+                    "Do not imply flight authorization or aircraft suitability."
+                ),
+            },
+        ),
+        (
             "Economic development and site readiness",
             {
                 "fields": (

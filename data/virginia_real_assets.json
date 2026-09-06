@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-04",
+  "generated_at": "2026-09-06",
   "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, broad-based Virginia degree-granting institutions from the NCES IPEDS 2024 directory while excluding narrowly specialized health and ministry schools without documented unmanned-systems relevance, and a curated set of source-backed ecosystem records. Specific street and site locations are anchored to official public address sources and geocoded against the U.S. Census address ranges or named-site map data; locality points are retained when the public record does not identify the operating department or facility. Every record is also classified as either a core unmanned-systems asset with direct documented activity or a supporting ecosystem asset with a broader enabling role.",
-  "record_count": 525,
+  "record_count": 527,
   "records": [
     {
       "address_line": "29194 Parkway North",
@@ -4093,6 +4093,50 @@
       ],
       "unmanned_systems_relevance": "Provides advanced manufacturing, modeling, sensing, communications, or prototyping capacity that enables unmanned-system development and scale-up.",
       "website_url": "https://cyberinitiative.org/"
+    },
+    {
+      "name": "Commonwealth STEM Industry Internship Program (CSIIP)",
+      "record_type": "program",
+      "short_description": "Virginia Space Grant Consortium program connecting employers and undergraduates with paid STEM internships.",
+      "overview": "CSIIP is a statewide workforce program coordinated by Hampton-based VSGC, rather than a single training or flight site. Employers register and hire interns directly; the program provides student matching and staff support. The regional classification identifies the coordinator, not the program's service boundary.",
+      "unmanned_systems_relevance": "Supporting workforce resource for UxS employers recruiting engineering, computer science, cybersecurity, and data-science talent. The program explicitly includes aviation and UAV internships.",
+      "website_url": "https://vsgc.odu.edu/csiip/",
+      "contact_text": "Sarah Pauls, CSIIP public program contact",
+      "contact_email": "spauls@odu.edu",
+      "contact_phone": "757-766-5210",
+      "contact_url": "https://vsgc.odu.edu/csiip/",
+      "activity_status": "active",
+      "current_activity": "The public program page lists ongoing registration for students and employers.",
+      "partnership_opportunities": "Employers can register internships through the company route; students use the separate student registration route. Confirm current eligibility and support with the program.",
+      "activity_source_url": "https://vsgc.odu.edu/csiip/",
+      "activity_last_verified_at": "2026-09-06",
+      "address_line": "",
+      "city": "",
+      "state": "VA",
+      "postal_code": "",
+      "region": "Hampton Roads",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "strategic_categories": [
+        "Workforce and talent",
+        "Programs and initiatives",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "provenance": "curated-public-source",
+      "sources": [
+        {
+          "title": "VSGC: CSIIP student and employer information",
+          "url": "https://vsgc.odu.edu/csiip/"
+        },
+        {
+          "title": "VSGC programs and Hampton coordinating office",
+          "url": "https://vsgc.odu.edu/about-us/"
+        }
+      ]
     },
     {
       "address_line": "Craney Island",
@@ -12349,7 +12393,13 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
-      "website_url": "https://www.vaspace.org/about-us"
+      "website_url": "https://www.vaspace.org/our-facilities",
+      "test_aircraft": "Government and commercial UAS; multi-domain testing, training, demonstrations, and exercises.",
+      "test_dimensions": "3,000 x 75 ft runway; vertical takeoff and landing pad; 90 x 50 ft hangar. Direct access to 75 square nautical miles of restricted airspace.",
+      "test_runway_length_ft": 3000,
+      "test_access": "Secure federal facility. Coordinate mission integration and airfield access with the Virginia Spaceport Authority; published dimensions do not establish aircraft-specific approval.",
+      "test_source_url": "https://www.vaspace.org/our-facilities",
+      "test_last_verified_at": "2026-09-06"
     },
     {
       "address_line": "318 Prospect Street",
@@ -13794,7 +13844,7 @@
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Organization public information and inquiries",
-      "contact_url": "https://www.nasa.gov/contact/",
+      "contact_url": "https://www.nasa.gov/langley/frontdoor/",
       "latitude": 37.085639,
       "location_precision": "site",
       "longitude": -76.380667,
@@ -13828,6 +13878,10 @@
         {
           "title": "NASA Langley Research Center public contact information",
           "url": "https://www.nasa.gov/contact/"
+        },
+        {
+          "title": "NASA Langley Front Door: capabilities and partnership routes",
+          "url": "https://www.nasa.gov/langley/frontdoor/"
         }
       ],
       "state": "VA",
@@ -13837,7 +13891,12 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
-      "website_url": "https://www.nasa.gov/langley/about-langley-research-center/"
+      "website_url": "https://www.nasa.gov/langley/about-langley-research-center/",
+      "activity_status": "active",
+      "current_activity": "Langley's public Front Door brings together research facilities, capabilities, technology transfer, small-business programs, and partnerships information.",
+      "partnership_opportunities": "Prospective industry, academic, and other partners can use the Front Door's Connecting with Langley route to submit a statement of interest to the partnerships team.",
+      "activity_source_url": "https://www.nasa.gov/langley/frontdoor/",
+      "activity_last_verified_at": "2026-09-06"
     },
     {
       "activity_last_verified_at": "2026-08-21",
@@ -13961,7 +14020,12 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
-      "website_url": "https://www.nasa.gov/centers-and-facilities/langley/nasa-langley-drone-flying-site-open-for-testing/"
+      "website_url": "https://www.nasa.gov/centers-and-facilities/langley/nasa-langley-drone-flying-site-open-for-testing/",
+      "test_aircraft": "Small research UAS. The cited July 2015 opening announcement describes the initial operating scope, not current aircraft approvals.",
+      "test_dimensions": "100-acre range reported in the 2015 opening announcement. Current launch-area and runway dimensions are not established by that source.",
+      "test_access": "NASA's opening announcement requires scheduling through the UAS Operations Office, airspace coordination, security notification, and a range safety officer. Confirm current conditions with NASA; the historical limits are not a present-day authorization.",
+      "test_source_url": "https://www.nasa.gov/centers-and-facilities/langley/nasa-langley-drone-flying-site-open-for-testing/",
+      "test_last_verified_at": "2026-09-06"
     },
     {
       "address_line": "34200 Fulton Street",
@@ -19866,6 +19930,50 @@
       "website_url": "https://www.ci.staunton.va.us/Home/Components/MeetingsManager/MeetingAgenda/ShowPrimaryDocument/?agendaID=1054&includeTrash=False&isPub=True"
     },
     {
+      "name": "STEM Takes Flight at Virginia's Community Colleges",
+      "record_type": "program",
+      "short_description": "VSGC, VCCS, and NASA research-experience program for Virginia community college STEM students and faculty.",
+      "overview": "The initiative connects community college students with paid research experiences at NASA Langley and Wallops and offers faculty professional development. It is coordinated by Hampton-based VSGC and serves participants across Virginia rather than a single mapped training site. The regional classification identifies the coordinator, not the program's service boundary.",
+      "unmanned_systems_relevance": "Supporting aerospace and technical workforce pathway, including community college technician tracks. Participation does not itself establish drone-pilot certification or UAS-specific project placement.",
+      "website_url": "https://vsgc.odu.edu/STEMtakesFlight/",
+      "contact_text": "Nicole Shaw, student research experience contact",
+      "contact_email": "lnshaw@odu.edu",
+      "contact_phone": "",
+      "contact_url": "https://vsgc.odu.edu/STEMtakesFlight/",
+      "activity_status": "",
+      "current_activity": "The published 2026 student research session ran June 1-August 7. Those application deadlines have passed; a later intake has not been confirmed in this record.",
+      "partnership_opportunities": "Students and faculty should consult the program's separate information and application routes and ask about the next announced cycle.",
+      "activity_source_url": "https://vsgc.odu.edu/STEMtakesFlight/",
+      "activity_last_verified_at": "2026-09-06",
+      "address_line": "",
+      "city": "",
+      "state": "VA",
+      "postal_code": "",
+      "region": "Hampton Roads",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "strategic_categories": [
+        "Workforce and talent",
+        "Programs and initiatives",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "provenance": "curated-public-source",
+      "sources": [
+        {
+          "title": "VSGC: STEM Takes Flight research experiences and 2026 dates",
+          "url": "https://vsgc.odu.edu/STEMtakesFlight/"
+        },
+        {
+          "title": "VSGC programs and Hampton coordinating office",
+          "url": "https://vsgc.odu.edu/about-us/"
+        }
+      ]
+    },
+    {
       "activity_last_verified_at": "2026-08-24",
       "activity_source_url": "https://subseacraft.com/subsea-craft-kickstarts-u-s-expansion/",
       "activity_status": "planned",
@@ -23109,7 +23217,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Supports documented planning, infrastructure integration, information exchange, or operational enablement for advanced air mobility and uncrewed aviation.",
-      "website_url": "https://vipc.org/virginia-launches-advanced-air-mobility-and-unmanned-systems-test-site-program/"
+      "website_url": "https://doav.virginia.gov/advanced_air_mobility/"
     },
     {
       "address_line": "900 Natural Resources Drive, Suite 800",
@@ -24800,7 +24908,12 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
-      "website_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html"
+      "website_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
+      "test_aircraft": "Drone research, education, and technology testing inside a netted enclosure.",
+      "test_dimensions": "300 x 120 x 85 ft netted enclosure, approximately three million cubic feet of flight space; adjacent laboratory and classroom space. This is not an open-air runway.",
+      "test_access": "Request flight time through VTDronePark@vt.edu, review the park protocol, and complete the orientation. Commercial and third-party operations have additional requirements.",
+      "test_source_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
+      "test_last_verified_at": "2026-09-06"
     },
     {
       "address_line": "33446 Research Drive",

@@ -9,6 +9,7 @@ export function buildPopup(feature) {
   const props = feature.properties;
   const root = element("article", "map-popup");
   root.append(element("span", `type-pill type-${props.record_type}`, props.record_type_label));
+  if (props.activity_status_label) root.append(element("span", "activity-label", props.activity_status_label));
   root.append(element("h3", "", props.name));
   const location = [
     props.location.address_line,

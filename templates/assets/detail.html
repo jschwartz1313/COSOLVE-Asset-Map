@@ -17,6 +17,18 @@
       {% if asset.overview %}<section class="overview-section"><h2>What this asset is</h2><p>{{ asset.overview }}</p></section>{% endif %}
       <section class="relevance-section"><h2>Documented relevance</h2><p>{{ asset.unmanned_systems_relevance }}</p></section>
       {% if asset.activity_status or asset.current_activity or asset.partnership_opportunities %}<section class="activity-section"><h2>Current activity and collaboration</h2>{% if asset.activity_status %}<p class="section-kicker">{{ asset.get_activity_status_display }}</p>{% endif %}{% if asset.current_activity %}<h3>Documented activity</h3><p>{{ asset.current_activity }}</p>{% endif %}{% if asset.partnership_opportunities %}<h3>Publicly documented collaboration route</h3><p>{{ asset.partnership_opportunities }}</p>{% endif %}<p class="section-note"><a href="{{ asset.activity_source_url }}" rel="noopener noreferrer">Activity source</a> · Reviewed {{ asset.activity_last_verified_at|date:"M j, Y" }}</p></section>{% endif %}
+      {% if asset.has_test_details %}
+      <section class="test-specifications"><h2>Testing and access</h2>
+        <dl class="test-spec-list">
+          <div><dt>Aircraft and testing scope</dt><dd>{{ asset.test_aircraft|default:"Not documented" }}</dd></div>
+          <div><dt>Site and launch / recovery dimensions</dt><dd>{{ asset.test_dimensions|default:"Not documented" }}</dd></div>
+          <div><dt>Published runway length</dt><dd>{% if asset.test_runway_length_ft %}{{ asset.test_runway_length_ft }} ft{% else %}Not documented{% endif %}</dd></div>
+          <div><dt>Access and constraints</dt><dd>{{ asset.test_access|default:"Confirm directly with the operator" }}</dd></div>
+        </dl>
+        <p class="section-note"><a href="{{ asset.test_source_url }}" rel="noopener noreferrer">Operator specification source</a> · Source reviewed {{ asset.test_last_verified_at|date:"M j, Y" }}</p>
+        <p class="field-note">Published specifications are not flight authorization or confirmation that a particular aircraft can operate here. Confirm suitability, availability, and approvals with the operator.</p>
+      </section>
+      {% endif %}
       {% if asset.capabilities.exists %}<section><h2>Capabilities</h2><div class="tag-list large">{% for item in asset.capabilities.all %}<span>{{ item.name }}</span>{% endfor %}</div></section>{% endif %}
       {% if asset.missions.exists %}<section><h2>Mission areas</h2><div class="tag-list large">{% for item in asset.missions.all %}<span>{{ item.name }}</span>{% endfor %}</div></section>{% endif %}
       {% if relationships %}<section><h2>Related assets</h2><div class="relationship-list">{% for relationship in relationships|slice:":12" %}<a href="{{ relationship.to_asset.get_absolute_url }}"><span>{{ relationship.get_relationship_type_display }}</span><strong>{{ relationship.to_asset.name }}</strong></a>{% endfor %}</div>{% if relationship_count > 12 %}<p class="section-note">Showing 12 of {{ relationship_count }} documented connections.</p>{% endif %}</section>{% endif %}

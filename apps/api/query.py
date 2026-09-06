@@ -1,5 +1,6 @@
 from django.db.models import Q
 
+from apps.assets.discovery import RESOURCE_QUERIES
 from apps.assets.models import Asset
 from apps.assets.scoping import public_region_slug, public_scope_q
 
@@ -10,6 +11,7 @@ FACETS = {
     "capability": "capabilities__slug",
     "mission": "missions__slug",
     "region": "region__slug",
+    "activity": "activity_status",
 }
 
 
@@ -30,8 +32,26 @@ def filter_public_assets(params, include_related=True):
         if parameter == "region" and public_region_slug():
             continue
         values = requested_values(params, parameter)
+        if parameter == "activity":
+            values = ["" if value == "undocumented" else value for value in values]
         if values:
             queryset = queryset.filter(**{f"{field}__in": values})
+    purpose = params.get("purpose", "")
+    if purpose in RESOURCE_QUERIES:
+        queryset = queryset.filter(RESOURCE_QUERIES[purpose])
+    if params.get("test_specs") == "1":
+        queryset = queryset.exclude(test_source_url="").filter(
+            Q(test_aircraft__gt="") | Q(test_dimensions__gt="")
+            | Q(test_runway_length_ft__isnull=False) | Q(test_access__gt=""),
+            test_last_verified_at__isnull=False,
+        )
+    runway = params.get("min_runway", "").strip()
+    if runway:
+        if (runway.isascii() and runway.isdigit() and len(runway) <= 6
+                and 1 <= int(runway) <= 100000):
+            queryset = queryset.filter(test_runway_length_ft__gte=int(runway))
+        else:
+            return queryset.none()
     query = params.get("q", "").strip()
     if query:
         queryset = queryset.filter(
@@ -44,6 +64,9 @@ def filter_public_assets(params, include_related=True):
             | Q(owner_operator__icontains=query)
             | Q(development_notes__icontains=query)
             | Q(infrastructure_access__icontains=query)
+            | Q(test_aircraft__icontains=query)
+            | Q(test_dimensions__icontains=query)
+            | Q(test_access__icontains=query)
             | Q(contact_text__icontains=query)
             | Q(contact_email__icontains=query)
             | Q(city__icontains=query)
@@ -83,4 +106,7 @@ def active_filters(params):
     }
     if params.get("q"):
         filters["q"] = params["q"]
+    for key in ("purpose", "test_specs", "min_runway"):
+        if params.get(key):
+            filters[key] = params[key]
     return {key: value for key, value in filters.items() if value}

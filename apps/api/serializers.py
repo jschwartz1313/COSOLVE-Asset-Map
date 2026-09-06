@@ -1,4 +1,13 @@
+from apps.assets.discovery import TEST_SPEC_FIELDS
 from apps.assets.scoping import asset_is_in_public_scope
+
+
+def test_specifications(asset):
+    return {
+        field: (value.isoformat() if hasattr(value, "isoformat") else value)
+        for field in TEST_SPEC_FIELDS
+        for value in [getattr(asset, field)]
+    }
 
 
 def names(items):
@@ -73,6 +82,7 @@ def public_asset_dict(asset, include_detail=True):
                 "contact_phone": asset.contact_phone,
                 "contact_email": asset.contact_email,
                 "contact_url": asset.contact_url,
+                "test_specifications": test_specifications(asset),
                 "activity": {
                     "status": asset.activity_status,
                     "status_label": asset.get_activity_status_display()
@@ -131,6 +141,10 @@ def asset_feature(asset):
             "coordinates": [float(asset.longitude), float(asset.latitude)],
         }
     properties = {
+        "activity_status": asset.activity_status,
+        "activity_status_label": (
+            asset.get_activity_status_display() if asset.activity_status else ""
+        ),
         "name": asset.name,
         "slug": asset.slug,
         "record_type": asset.record_type,

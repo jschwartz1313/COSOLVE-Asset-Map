@@ -23,6 +23,23 @@ test("URLSearchParams preserves repeated facet values", () => {
   assert.equal(params.get("region"), "hampton-roads");
 });
 
+test("resource and test-site filters survive URL and saved-map round trips", () => {
+  const filters = paramsFromEntries([
+    ["purpose", "testing"], ["activity", "pilot"], ["test_specs", "1"], ["min_runway", "2500"],
+  ]);
+  const saved = paramsWithMapState(filters, { latitude: 37, longitude: -77, zoom: 8, layers: ["assets", "state"], basemap: "street" });
+  assert.equal(filterParamsFromMapUrl(saved).toString(), filters.toString());
+  const elements = [
+    { name: "purpose", type: "select-one", value: "" },
+    { name: "test_specs", type: "checkbox", value: "1", checked: false },
+    { name: "min_runway", type: "number", value: "" },
+  ];
+  hydrateForm({ elements }, filters);
+  assert.equal(elements[0].value, "testing");
+  assert.equal(elements[1].checked, true);
+  assert.equal(elements[2].value, "2500");
+});
+
 test("clear-all state has no query string", () => {
   assert.equal(new URLSearchParams().toString(), "");
 });

@@ -21,7 +21,7 @@
   <link rel="icon" type="image/png" href="{% static 'img/cosolve-logo-black.png' %}">
   <link rel="apple-touch-icon" href="{% static 'img/cosolve-logo-black.png' %}">
   <link rel="stylesheet" href="{% static 'css/tokens.css' %}?v=20260717">
-  <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20260830-1">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20260906-1">
   {% block extra_css %}{% endblock %}
   <link rel="stylesheet" href="{% static 'css/themes.css' %}?v=20260818-2">
   <script type="module" src="{% static 'js/theme-switcher.js' %}?v=20260817-1"></script>
@@ -55,6 +55,7 @@
       <a href="{% url 'core:directory' %}" {% if request.resolver_match.url_name == 'directory' or request.resolver_match.url_name == 'asset-detail' or request.resolver_match.url_name == 'asset-suggest-update' %}aria-current="page"{% endif %}>Directory</a>
       {% if not public_scope_is_regional %}<a href="{% url 'core:region-compare' %}" {% if request.resolver_match.url_name == 'region-compare' %}aria-current="page"{% endif %}>Regions</a>{% endif %}
       <a href="{% url 'core:about-data' %}" {% if request.resolver_match.url_name == 'about-data' %}aria-current="page"{% endif %}>About data</a>
+      <a href="{% url 'core:connect' %}" {% if request.resolver_match.url_name == 'connect' %}aria-current="page"{% endif %}>Get connected</a>
       {% if user.is_staff %}<a href="{% url 'admin:index' %}">Admin</a>{% endif %}
       {% if user.is_authenticated %}
         <form method="post" action="{% url 'logout' %}" class="nav-logout">

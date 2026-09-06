@@ -1,8 +1,28 @@
 {% load query_helpers %}
+<label>
+  <span>Find resources</span>
+  <select name="purpose">
+    <option value="">All resources</option>
+    {% for value, label in resource_choices %}<option value="{{ value }}" {% if request.GET.purpose == value %}selected{% endif %}>{{ label }}</option>{% endfor %}
+  </select>
+</label>
 <label class="search-field">
   <span>Search</span>
   <input type="search" name="q" value="{{ request.GET.q }}" placeholder="Name, capability, city">
 </label>
+
+<details class="project-site-filters" {% if request.GET.activity or request.GET.test_specs or request.GET.min_runway %}open{% endif %}>
+  <summary>Project and site details</summary>
+  <div class="project-site-fields">
+    <label><span>Activity status</span><select name="activity">
+      <option value="">All activity statuses</option>
+      {% for value, label in activity_choices %}<option value="{{ value }}" {% if request.GET.activity == value %}selected{% endif %}>{{ label }}</option>{% endfor %}
+      <option value="undocumented" {% if request.GET.activity == "undocumented" %}selected{% endif %}>Not documented</option>
+    </select></label>
+    <label class="check-row"><input type="checkbox" name="test_specs" value="1" {% if request.GET.test_specs == "1" %}checked{% endif %}><span>Published test-site specifications</span></label>
+    <label><span>Minimum published runway (ft)</span><input type="number" name="min_runway" min="1" max="100000" step="1" value="{{ request.GET.min_runway }}" placeholder="No minimum"></label>
+  </div>
+</details>
 
 <label>
   <span>Asset type</span>

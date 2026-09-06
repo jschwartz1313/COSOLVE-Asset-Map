@@ -6,6 +6,7 @@ from django.conf import settings
 from django.core.management.base import BaseCommand
 from django.db import transaction
 
+from apps.assets.discovery import TEST_SPEC_FIELDS
 from apps.assets.models import Asset
 from apps.catalog.models import Capability, PlatformDomain, Region, StrategicCategory
 from apps.sources.models import Source
@@ -31,7 +32,7 @@ PROFILE_FIELDS = (
     "development_source_url",
     "development_last_verified_at",
 )
-DATE_FIELDS = {"activity_last_verified_at", "development_last_verified_at"}
+DATE_FIELDS = {"activity_last_verified_at", "development_last_verified_at", "test_last_verified_at"}
 LOCATION_CORRECTION_LEGACY_CITIES = {
     "Virginia Advanced Air Mobility Program": "Richmond",
     "Virginia Department of Aviation": "Richmond",
@@ -358,6 +359,31 @@ class Command(BaseCommand):
             ):
                 asset.overview = record["overview"]
                 changed_fields.append("overview")
+
+            # Keep specifications and their evidence together; never mix in an older source.
+            test_source_url = record.get("test_source_url")
+            test_source_blocked = test_source_url and (
+                any(
+                    not source.is_public
+                    or source.verification_status in {"stale", "rejected"}
+                    or source.link_review_status == Source.LinkReviewStatus.NEEDS_REPLACEMENT
+                    for source in asset.sources.filter(url=test_source_url)
+                )
+                or Source.history.filter(
+                    asset_id=asset.pk, url=test_source_url,
+                    history_type="-", history_user_id__isnull=False,
+                ).exists()
+            )
+            if test_source_url and not test_source_blocked and not any(
+                getattr(asset, field) not in (None, "") for field in TEST_SPEC_FIELDS
+            ):
+                for field in TEST_SPEC_FIELDS:
+                    if record.get(field) not in (None, ""):
+                        value = record[field]
+                        if field in DATE_FIELDS:
+                            value = date.fromisoformat(value)
+                        setattr(asset, field, value)
+                        changed_fields.append(field)
 
             for field in PROFILE_FIELDS:
                 if getattr(asset, field) in (None, "") and record.get(field) not in (None, ""):

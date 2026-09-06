@@ -12,6 +12,7 @@ from django.urls import reverse
 from django.views.decorators.http import require_POST
 
 from apps.api.query import filter_public_assets
+from apps.assets.discovery import RESOURCE_CHOICES, TEST_SPEC_FIELDS
 from apps.assets.models import Asset, SavedView
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 from apps.sources.models import Source
@@ -29,6 +30,7 @@ DIRECTORY_ORDERING = {
     "type": ("record_type", "name"),
 }
 PUBLIC_HISTORY_FIELDS = {
+    *TEST_SPEC_FIELDS,
     "name",
     "record_type",
     "short_description",
@@ -99,12 +101,18 @@ def filter_context():
         regions = regions.filter(slug=settings.PUBLIC_REGION_SLUG)
     return {
         "record_types": Asset.RecordType.choices,
+        "resource_choices": RESOURCE_CHOICES,
+        "activity_choices": Asset.ActivityStatus.choices,
         "categories": StrategicCategory.objects.filter(is_active=True),
         "domains": PlatformDomain.objects.filter(is_active=True),
         "capabilities": Capability.objects.filter(is_active=True),
         "missions": MissionArea.objects.filter(is_active=True),
         "regions": regions,
     }
+
+
+def connect(request):
+    return render(request, "core/connect.html")
 
 
 def map_view(request):

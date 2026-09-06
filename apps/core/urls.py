@@ -7,6 +7,7 @@ urlpatterns = [
     path("", views.map_view, name="home"),
     path("map/", views.map_view, name="map"),
     path("directory/", views.directory_view, name="directory"),
+    path("connect/", views.connect, name="connect"),
     path("saved-views/", views.saved_views, name="saved-views"),
     path("saved-views/<uuid:token>/", views.open_saved_view, name="open-saved-view"),
     path(

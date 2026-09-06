@@ -3,6 +3,7 @@ from django.http import Http404, JsonResponse
 from django.shortcuts import get_object_or_404
 from django.views.decorators.http import require_GET
 
+from apps.assets.discovery import RESOURCE_CHOICES
 from apps.assets.models import Asset
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 
@@ -77,6 +78,10 @@ def filter_values(request):
             "record_types": [
                 {"slug": value, "name": label} for value, label in Asset.RecordType.choices
             ],
+            "resources": [{"slug": value, "name": label} for value, label in RESOURCE_CHOICES],
+            "activity_statuses": [
+                {"slug": value, "name": label} for value, label in Asset.ActivityStatus.choices
+            ] + [{"slug": "undocumented", "name": "Not documented"}],
             "strategic_categories": taxonomy_values(StrategicCategory),
             "platform_domains": taxonomy_values(PlatformDomain),
             "capabilities": taxonomy_values(Capability),
