@@ -8,6 +8,7 @@ python manage.py setup_staff_roles
 python manage.py seed_real_data --add-missing
 python manage.py apply_catalog_corrections
 python manage.py apply_catalog_corrections --corrections data/asset_corrections_2026_09_06.json
+python manage.py apply_catalog_corrections --corrections data/airport_website_corrections_2026_09_06.json
 python manage.py enrich_asset_profiles
 python manage.py apply_catalog_reviews
 python manage.py apply_catalog_reviews --reviews data/asset_editorial_reviews_2026_08_24.json

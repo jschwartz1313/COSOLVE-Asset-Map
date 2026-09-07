@@ -216,6 +216,11 @@ class RealCatalogFileTests(TestCase):
         self.assertTrue(
             all(
                 source.get("url", "").startswith("https://")
+                # This reviewed operator site does not offer HTTPS.
+                or (
+                    record["name"] == "Campbell Fld"
+                    and source["url"] == "http://www.campbellfieldairport.com/"
+                )
                 for record in records
                 for source in record["sources"]
             )

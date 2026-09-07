@@ -1,0 +1,1138 @@
+{
+  "reviewed_at": "2026-09-06",
+  "scope": "Public-airport primary websites and public contact routes only. Does not verify operating conditions or publish assets.",
+  "corrections": [
+    {
+      "name": "Accomack County",
+      "identifier": "MFV",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.accomack.gov/279/Airport",
+        "contact_url": "https://www.accomack.gov/279/Airport"
+      },
+      "add_sources": [
+        {
+          "title": "Accomack County Airport: official county airport page",
+          "url": "https://www.accomack.gov/279/Airport"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (MFV). The old county domain redirects to a missing page; use the current dedicated airport page. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Allan C Perkinson/Blackstone AAF",
+      "identifier": "BKT",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.townofblackstoneva.com/airport",
+        "contact_url": "https://www.townofblackstoneva.com/airport"
+      },
+      "add_sources": [
+        {
+          "title": "Allen C. Perkinson Municipal Airport: official airport or operator website",
+          "url": "https://www.townofblackstoneva.com/airport"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (BKT). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Blue Ridge",
+      "identifier": "MTV",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.flyblueridge.com/",
+        "contact_url": "https://www.flyblueridge.com/"
+      },
+      "add_sources": [
+        {
+          "title": "Blue Ridge Regional Airport: official airport or operator website",
+          "url": "https://www.flyblueridge.com/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (MTV). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Bridgewater Air Park",
+      "identifier": "VBW",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.dynamicaviation.com/community-engagement",
+        "contact_url": "https://www.dynamicaviation.com/community-engagement"
+      },
+      "add_sources": [
+        {
+          "title": "Bridgewater Air Park operator: Dynamic Aviation facilities and visits",
+          "url": "https://www.dynamicaviation.com/community-engagement"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (VBW). Operator's facility and visit page for the Bridgewater air park; not a separate airport website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Brookneal/Campbell County",
+      "identifier": "0V4",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.campbellcountyva.gov/1031/Brookneal-Campbell-County-Airport",
+        "contact_url": "https://www.campbellcountyva.gov/1031/Brookneal-Campbell-County-Airport"
+      },
+      "add_sources": [
+        {
+          "title": "Brookneal-Campbell County Airport: official county airport page",
+          "url": "https://www.campbellcountyva.gov/1031/Brookneal-Campbell-County-Airport"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (0V4). Replaces the retired Campbell economic-development page. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Brunswick County",
+      "identifier": "LVL",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.brunswickco.com/government/departments/airports",
+        "contact_url": "https://www.brunswickco.com/government/departments/airports"
+      },
+      "add_sources": [
+        {
+          "title": "Brunswick County Airport: official county aviation information",
+          "url": "https://www.brunswickco.com/government/departments/airports"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (LVL). County operator page covers Brunswick County and Mecklenburg-Brunswick airports; no separate airport-owned site confirmed. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Campbell Fld",
+      "identifier": "9VG",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "http://www.campbellfieldairport.com/",
+        "contact_url": "http://www.campbellfieldairport.com/"
+      },
+      "add_sources": [
+        {
+          "title": "Campbell Field Airport: operator website",
+          "url": "http://www.campbellfieldairport.com/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (9VG). Operator website responds over HTTP only; no HTTPS endpoint confirmed. Historical content is not a current operating authorization. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Charlottesville-Albemarle",
+      "identifier": "CHO",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://gocho.com/",
+        "contact_url": "https://gocho.com/"
+      },
+      "add_sources": [
+        {
+          "title": "Charlottesville-Albemarle Airport: official airport or operator website",
+          "url": "https://gocho.com/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (CHO). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Chesapeake Rgnl",
+      "identifier": "CPK",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.chesapeakeairport.com/",
+        "contact_url": "https://www.chesapeakeairport.com/"
+      },
+      "add_sources": [
+        {
+          "title": "Chesapeake Regional Airport: official airport or operator website",
+          "url": "https://www.chesapeakeairport.com/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (CPK). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Crewe Muni",
+      "identifier": "W81",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.townofcrewe.com/187/Airport",
+        "contact_url": "https://www.townofcrewe.com/187/Airport"
+      },
+      "add_sources": [
+        {
+          "title": "Crewe Municipal Airport: official town airport page",
+          "url": "https://www.townofcrewe.com/187/Airport"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (W81). Town's dedicated airport page identifies W81. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Culpeper Rgnl",
+      "identifier": "CJR",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://culpeperairport.com/",
+        "contact_url": "https://culpeperairport.com/"
+      },
+      "add_sources": [
+        {
+          "title": "Culpeper Regional Airport: official airport or operator website",
+          "url": "https://culpeperairport.com/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (CJR). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Danville Rgnl",
+      "identifier": "DAN",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.danville-va.gov/507/Danville-Regional-Airport",
+        "contact_url": "https://www.danville-va.gov/507/Danville-Regional-Airport"
+      },
+      "add_sources": [
+        {
+          "title": "Danville Regional Airport: official airport or operator website",
+          "url": "https://www.danville-va.gov/507/Danville-Regional-Airport"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (DAN). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Eagle's Nest",
+      "identifier": "W13",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.eaglesnest.aero/",
+        "contact_url": "https://www.eaglesnest.aero/"
+      },
+      "add_sources": [
+        {
+          "title": "Eagle's Nest Airport: official airport or operator website",
+          "url": "https://www.eaglesnest.aero/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (W13). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Emporia-Greensville Rgnl",
+      "identifier": "EMV",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.flyemv.net/",
+        "contact_url": "https://www.flyemv.net/"
+      },
+      "add_sources": [
+        {
+          "title": "Emporia-Greensville Regional Airport: official airport website",
+          "url": "https://www.flyemv.net/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (EMV). Use the airport website instead of the chamber's directory page. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Farmville Rgnl",
+      "identifier": "FVX",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://farmvilleva.com/166/Farmville-Regional-Airport",
+        "contact_url": "https://farmvilleva.com/166/Farmville-Regional-Airport"
+      },
+      "add_sources": [
+        {
+          "title": "Farmville Regional Airport: official airport or operator website",
+          "url": "https://farmvilleva.com/166/Farmville-Regional-Airport"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (FVX). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Franklin Rgnl",
+      "identifier": "FKN",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.franklinva.gov/204/Airport",
+        "contact_url": "https://www.franklinva.gov/204/Airport"
+      },
+      "add_sources": [
+        {
+          "title": "Franklin Regional Airport: official city airport page",
+          "url": "https://www.franklinva.gov/204/Airport"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (FKN). Use the current city domain and airport page. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Front Royal-Warren County",
+      "identifier": "FRR",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://warrencountyva.gov/303/Front-Royal-Warren-County-Airport",
+        "contact_url": "https://warrencountyva.gov/303/Front-Royal-Warren-County-Airport"
+      },
+      "add_sources": [
+        {
+          "title": "Front Royal-Warren County Airport: official county airport page",
+          "url": "https://warrencountyva.gov/303/Front-Royal-Warren-County-Airport"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (FRR). The previous county airport path returns 404. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Gordonsville Muni",
+      "identifier": "GVE",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.townofgordonsville.org/government/departments/airport/index.php",
+        "contact_url": "https://www.townofgordonsville.org/government/departments/airport/index.php"
+      },
+      "add_sources": [
+        {
+          "title": "Gordonsville Municipal Airport: official airport or operator website",
+          "url": "https://www.townofgordonsville.org/government/departments/airport/index.php"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (GVE). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Hampton Roads Exec",
+      "identifier": "PVG",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.flypvg.com/",
+        "contact_url": "https://www.flypvg.com/"
+      },
+      "add_sources": [
+        {
+          "title": "Hampton Roads Executive Airport: official airport or operator website",
+          "url": "https://www.flypvg.com/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (PVG). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Hanover County Muni",
+      "identifier": "OFP",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.hanovercounty.gov/1209/Hanover-County-Municipal-Airport",
+        "contact_url": "https://www.hanovercounty.gov/1209/Hanover-County-Municipal-Airport"
+      },
+      "add_sources": [
+        {
+          "title": "Hanover County Municipal Airport: official airport or operator website",
+          "url": "https://www.hanovercounty.gov/1209/Hanover-County-Municipal-Airport"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (OFP). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Hummel Fld",
+      "identifier": "W75",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.co.middlesex.va.us/285/Hummel-Field-Airport",
+        "contact_url": "https://www.co.middlesex.va.us/285/Hummel-Field-Airport"
+      },
+      "add_sources": [
+        {
+          "title": "Hummel Field Airport: official airport or operator website",
+          "url": "https://www.co.middlesex.va.us/285/Hummel-Field-Airport"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (W75). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Ingalls Fld",
+      "identifier": "HSP",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://bathco.hosted.civiclive.com/government/boards___commissions/airport_authority",
+        "contact_url": "https://bathco.hosted.civiclive.com/government/boards___commissions/airport_authority"
+      },
+      "add_sources": [
+        {
+          "title": "Ingalls Field: Bath County Airport Authority",
+          "url": "https://bathco.hosted.civiclive.com/government/boards___commissions/airport_authority"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (HSP). Use the official airport authority page; ingallsfield.com currently serves unrelated travel content. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Lee County",
+      "identifier": "0VG",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.leecova.com/airport",
+        "contact_url": "https://www.leecova.com/airport"
+      },
+      "add_sources": [
+        {
+          "title": "Lee County Airport: official county airport page",
+          "url": "https://www.leecova.com/airport"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (0VG). Use the current county website rather than the obsolete leecova.org airport path. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Leesburg Exec",
+      "identifier": "JYO",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.leesburgva.gov/departments/airport",
+        "contact_url": "https://www.leesburgva.gov/departments/airport"
+      },
+      "add_sources": [
+        {
+          "title": "Leesburg Executive Airport: official airport or operator website",
+          "url": "https://www.leesburgva.gov/departments/airport"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (JYO). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Lonesome Pine",
+      "identifier": "LNP",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://lonesomepineairport.com/index.html",
+        "contact_url": "https://lonesomepineairport.com/index.html"
+      },
+      "add_sources": [
+        {
+          "title": "Lonesome Pine Airport: official airport or operator website",
+          "url": "https://lonesomepineairport.com/index.html"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (LNP). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Louisa County/Freeman Fld",
+      "identifier": "LKU",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.louisacounty.gov/3379/Louisa-County-Airport",
+        "contact_url": "https://www.louisacounty.gov/3379/Louisa-County-Airport"
+      },
+      "add_sources": [
+        {
+          "title": "Louisa County Airport: official airport or operator website",
+          "url": "https://www.louisacounty.gov/3379/Louisa-County-Airport"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (LKU). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Lunenburg County",
+      "identifier": "W31",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://lunenburgva.gov/services/airport.php",
+        "contact_url": "https://lunenburgva.gov/services/airport.php"
+      },
+      "add_sources": [
+        {
+          "title": "Lunenburg County Airport: official airport or operator website",
+          "url": "https://lunenburgva.gov/services/airport.php"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (W31). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Luray Caverns",
+      "identifier": "LUA",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.lurayairport.com/",
+        "contact_url": "https://www.lurayairport.com/"
+      },
+      "add_sources": [
+        {
+          "title": "Luray Caverns Airport: official airport or operator website",
+          "url": "https://www.lurayairport.com/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (LUA). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Lynchburg Rgnl/Preston Glenn Fld",
+      "identifier": "LYH",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://flylyh.com/",
+        "contact_url": "https://flylyh.com/"
+      },
+      "add_sources": [
+        {
+          "title": "Lynchburg Regional Airport: official airport or operator website",
+          "url": "https://flylyh.com/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (LYH). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Mecklenburg-Brunswick Rgnl",
+      "identifier": "AVC",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://avcairport.com/",
+        "contact_url": "https://avcairport.com/"
+      },
+      "add_sources": [
+        {
+          "title": "Mecklenburg-Brunswick Regional Airport: official airport or operator website",
+          "url": "https://avcairport.com/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (AVC). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Mountain Empire",
+      "identifier": "MKJ",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://mtnempireairport.com/index.html",
+        "contact_url": "https://mtnempireairport.com/index.html"
+      },
+      "add_sources": [
+        {
+          "title": "Mountain Empire Airport: official airport or operator website",
+          "url": "https://mtnempireairport.com/index.html"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (MKJ). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "New Kent County",
+      "identifier": "W96",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.newkent-va.us/177/Airport",
+        "contact_url": "https://www.newkent-va.us/177/Airport"
+      },
+      "add_sources": [
+        {
+          "title": "New Kent County Airport: official county airport page",
+          "url": "https://www.newkent-va.us/177/Airport"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (W96). Use the current county domain for the W96 airport page. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "New River Valley",
+      "identifier": "PSK",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://newrivervalleyairport.com/",
+        "contact_url": "https://newrivervalleyairport.com/"
+      },
+      "add_sources": [
+        {
+          "title": "New River Valley Airport: official airport or operator website",
+          "url": "https://newrivervalleyairport.com/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (PSK). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Newport News/Williamsburg Intl",
+      "identifier": "PHF",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://newportnewsairport.com/",
+        "contact_url": "https://newportnewsairport.com/"
+      },
+      "add_sources": [
+        {
+          "title": "Newport News-Williamsburg International Airport: official airport or operator website",
+          "url": "https://newportnewsairport.com/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (PHF). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Norfolk Intl",
+      "identifier": "ORF",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.flyorf.com/",
+        "contact_url": "https://www.flyorf.com/"
+      },
+      "add_sources": [
+        {
+          "title": "Norfolk International Airport: official airport or operator website",
+          "url": "https://www.flyorf.com/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (ORF). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Orange County",
+      "identifier": "OMH",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://orangecountyva.gov/150/Airport",
+        "contact_url": "https://orangecountyva.gov/150/Airport"
+      },
+      "add_sources": [
+        {
+          "title": "Orange County Airport: official airport or operator website",
+          "url": "https://orangecountyva.gov/150/Airport"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (OMH). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Richmond Exec/Chesterfield County",
+      "identifier": "FCI",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.chesterfield.gov/739/Airport",
+        "contact_url": "https://www.chesterfield.gov/739/Airport"
+      },
+      "add_sources": [
+        {
+          "title": "Richmond Executive-Chesterfield County Airport: official airport or operator website",
+          "url": "https://www.chesterfield.gov/739/Airport"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (FCI). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Richmond Intl",
+      "identifier": "RIC",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://flyrichmond.com/",
+        "contact_url": "https://flyrichmond.com/"
+      },
+      "add_sources": [
+        {
+          "title": "Richmond International Airport: official airport or operator website",
+          "url": "https://flyrichmond.com/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (RIC). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Roanoke/Blacksburg Rgnl (Woodrum Fld)",
+      "identifier": "ROA",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://flyroa.com/",
+        "contact_url": "https://flyroa.com/"
+      },
+      "add_sources": [
+        {
+          "title": "Roanoke-Blacksburg Regional Airport: official airport or operator website",
+          "url": "https://flyroa.com/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (ROA). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Shannon",
+      "identifier": "EZF",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://shannonezf.com/",
+        "contact_url": "https://shannonezf.com/"
+      },
+      "add_sources": [
+        {
+          "title": "Shannon Airport: official airport or operator website",
+          "url": "https://shannonezf.com/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (EZF). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Shenandoah Valley Rgnl",
+      "identifier": "SHD",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://flyshd.com/",
+        "contact_url": "https://flyshd.com/"
+      },
+      "add_sources": [
+        {
+          "title": "Shenandoah Valley Regional Airport: official airport or operator website",
+          "url": "https://flyshd.com/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (SHD). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Suffolk Exec",
+      "identifier": "SFQ",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.suffolkva.us/149/Airport",
+        "contact_url": "https://www.suffolkva.us/149/Airport"
+      },
+      "add_sources": [
+        {
+          "title": "Suffolk Executive Airport: official airport or operator website",
+          "url": "https://www.suffolkva.us/149/Airport"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (SFQ). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Tappahannock/Essex County",
+      "identifier": "XSA",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.essexva.gov/1252/Airport",
+        "contact_url": "https://www.essexva.gov/1252/Airport"
+      },
+      "add_sources": [
+        {
+          "title": "Tappahannock-Essex County Airport: official county airport page",
+          "url": "https://www.essexva.gov/1252/Airport"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (XSA). The old airport link redirects to the county homepage; use the dedicated current airport page. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Tazewell County",
+      "identifier": "JFZ",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://fly.tazewellcountyva.org/",
+        "contact_url": "https://fly.tazewellcountyva.org/"
+      },
+      "add_sources": [
+        {
+          "title": "Tazewell County Airport: official airport or operator website",
+          "url": "https://fly.tazewellcountyva.org/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (JFZ). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Tri Cities Exec/Dinwiddie County",
+      "identifier": "PTB",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://ptbairport.com/",
+        "contact_url": "https://ptbairport.com/"
+      },
+      "add_sources": [
+        {
+          "title": "Dinwiddie County Airport: official airport or operator website",
+          "url": "https://ptbairport.com/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (PTB). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Twin County",
+      "identifier": "HLX",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://twincountyairport.us/",
+        "contact_url": "https://twincountyairport.us/"
+      },
+      "add_sources": [
+        {
+          "title": "Twin County Airport: official airport or operator website",
+          "url": "https://twincountyairport.us/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (HLX). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Virginia Highlands",
+      "identifier": "VJI",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.vahighlandsairport.com/",
+        "contact_url": "https://www.vahighlandsairport.com/"
+      },
+      "add_sources": [
+        {
+          "title": "Virginia Highlands Airport: official airport or operator website",
+          "url": "https://www.vahighlandsairport.com/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (VJI). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Virginia Tech/Montgomery Exec",
+      "identifier": "BCB",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://vtmea.com/",
+        "contact_url": "https://vtmea.com/"
+      },
+      "add_sources": [
+        {
+          "title": "Virginia Tech Montgomery Executive Airport: official airport website",
+          "url": "https://vtmea.com/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (BCB). Current airport authority site replaces the retired flybcb.com link. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Wakefield Muni",
+      "identifier": "AKQ",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://wakefieldva.org/wakefield-airport/",
+        "contact_url": "https://wakefieldva.org/wakefield-airport/"
+      },
+      "add_sources": [
+        {
+          "title": "Wakefield Municipal Airport: official town airport page",
+          "url": "https://wakefieldva.org/wakefield-airport/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (AKQ). Town operator's dedicated airport page. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Waltrip Williamsburg Exec Airport",
+      "identifier": "JGG",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://waltripwilliamsburgexecutiveairport.com/",
+        "contact_url": "https://waltripwilliamsburgexecutiveairport.com/"
+      },
+      "add_sources": [
+        {
+          "title": "Waltrip Williamsburg Executive Airport: official airport website",
+          "url": "https://waltripwilliamsburgexecutiveairport.com/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (JGG). Use the current airport branding and domain instead of the old Williamsburg-Jamestown domain. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Warrenton/Fauquier",
+      "identifier": "HWY",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.fauquiercounty.gov/government/departments-h-z/warrenton-fauquier-airport",
+        "contact_url": "https://www.fauquiercounty.gov/government/departments-h-z/warrenton-fauquier-airport"
+      },
+      "add_sources": [
+        {
+          "title": "Warrenton-Fauquier Airport: official airport or operator website",
+          "url": "https://www.fauquiercounty.gov/government/departments-h-z/warrenton-fauquier-airport"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (HWY). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Washington Exec/Stafford Rgnl",
+      "identifier": "RMN",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://staffordairport.com/",
+        "contact_url": "https://staffordairport.com/"
+      },
+      "add_sources": [
+        {
+          "title": "Stafford Regional Airport: official airport or operator website",
+          "url": "https://staffordairport.com/"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (RMN). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "William M Tuck",
+      "identifier": "W78",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.halifaxcountyva.gov/172/William-M-Tuck-Airport",
+        "contact_url": "https://www.halifaxcountyva.gov/172/William-M-Tuck-Airport"
+      },
+      "add_sources": [
+        {
+          "title": "William M Tuck Airport: official airport or operator website",
+          "url": "https://www.halifaxcountyva.gov/172/William-M-Tuck-Airport"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (W78). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    },
+    {
+      "name": "Winchester Rgnl",
+      "identifier": "OKV",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.flyokv.com/home-regionalairport",
+        "contact_url": "https://www.flyokv.com/home-regionalairport"
+      },
+      "add_sources": [
+        {
+          "title": "Winchester Regional Airport: official airport or operator website",
+          "url": "https://www.flyokv.com/home-regionalairport"
+        }
+      ],
+      "reason": "Airport link review 2026-09-06 (OKV). Matched the DOAV directory by FAA identifier and reviewed the destination airport page. Automated access restrictions are not treated as evidence of a broken website. Primary and contact links point to the airport or its operator; existing FAA evidence and editorial status are retained."
+    }
+  ],
+  "unresolved": [
+    {
+      "name": "Chase City Muni",
+      "identifier": "CXE",
+      "reason": "Town economic-development page mentions the airport, but a dedicated airport/operator page was not confirmed."
+    },
+    {
+      "name": "Falwell",
+      "identifier": "W24",
+      "reason": "Freedom Aviation's website describes its history at Falwell and current operations at LYH; no dedicated current Falwell airport website confirmed."
+    },
+    {
+      "name": "Lake Anna",
+      "identifier": "7W4",
+      "reason": "No airport-owned or dedicated government airport webpage confirmed."
+    },
+    {
+      "name": "Lake Country Rgnl",
+      "identifier": "W63",
+      "reason": "The published lakecountryregionalairport.org domain displays a hosting placeholder. No replacement dedicated airport website confirmed."
+    },
+    {
+      "name": "Mc Laughlin",
+      "identifier": "2G6",
+      "reason": "No operator website confirmed for Mc Laughlin Seaplane Base."
+    },
+    {
+      "name": "Middle Peninsula Rgnl",
+      "identifier": "FYJ",
+      "reason": "The published fly-fyj.com site returns 'You have reached an invalid site.' No replacement operator website confirmed."
+    },
+    {
+      "name": "New London",
+      "identifier": "W90",
+      "reason": "The published newlondonairport.com domain redirects to an error page; no replacement operator website confirmed."
+    },
+    {
+      "name": "New Market",
+      "identifier": "8W2",
+      "reason": "No dedicated airport website confirmed; a directory's operator link leads to a separate balloon business."
+    },
+    {
+      "name": "Smith Mountain Lake",
+      "identifier": "W91",
+      "reason": "A current flight-school website was found, but it was not established as the airport operator's site."
+    },
+    {
+      "name": "Tangier Island",
+      "identifier": "TGI",
+      "reason": "No airport-owned or dedicated town airport webpage confirmed. Do not confuse with Tangier airport in Morocco."
+    }
+  ]
+}
