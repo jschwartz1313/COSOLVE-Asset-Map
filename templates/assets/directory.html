@@ -30,7 +30,7 @@
       {% for asset in page_obj %}
         <article class="directory-row">
           <div class="directory-row-main">
-            <h3><a href="{{ asset.get_absolute_url }}">{{ asset.name }}</a></h3>
+            <h3><a href="{{ asset.get_absolute_url }}">{{ asset.public_name }}</a></h3>
             <p>{{ asset.short_description }}</p>
           </div>
           <div class="directory-classification">
@@ -38,7 +38,7 @@
             {% if asset.activity_status %}<span class="activity-label">{{ asset.get_activity_status_display }}</span>{% endif %}
             {% with category=asset.strategic_categories.all|first %}{% if category %}<small>{{ category.name }}</small>{% endif %}{% endwith %}
           </div>
-          <div class="directory-location"><strong>{{ asset.city|default:"Virginia" }}</strong>{% if asset.city and asset.state %}<span>{{ asset.state }}</span>{% endif %}</div>
+          <div class="directory-location"><strong>{{ asset.city|default:"Virginia" }}</strong>{% if asset.city and asset.state %}<span>{{ asset.state }}</span>{% endif %}{% if asset.location_role %}<small>{{ asset.get_location_role_display }}</small>{% endif %}</div>
         </article>
       {% empty %}
         <div class="empty-state"><h3>No matching assets</h3><p>Adjust the active filters or search terms.</p></div>

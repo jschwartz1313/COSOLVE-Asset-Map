@@ -127,3 +127,18 @@ test("CSV export preserves names and public map metadata", () => {
   assert.match(csv, /"Asset ""One"""/);
   assert.match(csv, /Source-backed; review pending/);
 });
+
+test("CSV export preserves the distinction between a pin and an operating site", () => {
+  const asset = feature("context", 36.86, -76.29);
+  Object.assign(asset.properties.location, {
+    role_label: "Office / coordination",
+    method_label: "Locality reference only",
+    notes: "Office locality, not the test range",
+    source_url: "https://example.org/location",
+    reviewed_at: "2026-09-06",
+  });
+  const csv = featureCsv([asset]);
+  assert.match(csv, /location_represents,coordinate_basis,location_notes,location_source/);
+  assert.match(csv, /"Office locality, not the test range"/);
+  assert.match(csv, /https:\/\/example.org\/location,2026-09-06/);
+});

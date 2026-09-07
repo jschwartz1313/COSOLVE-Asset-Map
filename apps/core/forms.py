@@ -52,7 +52,7 @@ class UpdateSubmissionForm(forms.ModelForm):
         if asset:
             self.fields["kind"].initial = UpdateSubmission.Kind.CORRECTION
             self.fields["kind"].disabled = True
-            self.fields["subject"].initial = asset.name
+            self.fields["subject"].initial = asset.public_name
             self.fields["subject"].disabled = True
 
     def clean_details(self):

@@ -35,3 +35,9 @@ TEST_SPEC_FIELDS = (
     "test_source_url",
     "test_last_verified_at",
 )
+
+IDENTITY_FIELDS = ("display_name", "search_aliases")
+LOCATION_EVIDENCE_FIELDS = (
+    "location_role", "location_method", "location_notes", "location_source_url",
+    "location_last_verified_at",
+)

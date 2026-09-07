@@ -15,7 +15,7 @@
       {% if asset %}
         <div class="submission-context">
           <span>Update requested for</span>
-          <strong>{{ asset.name }}</strong>
+          <strong>{{ asset.public_name }}</strong>
           <a href="{{ asset.get_absolute_url }}">Return to record</a>
         </div>
         {{ form.kind.as_hidden }}

@@ -16,6 +16,7 @@ export function buildPopup(feature) {
     [props.location.city, props.location.state].filter(Boolean).join(", "),
   ].filter(Boolean).join(" · ");
   if (location) root.append(element("p", "popup-location", location));
+  if (props.location.role_label) root.append(element("small", "popup-precision", props.location.role_label));
   root.append(element("small", "popup-precision", props.location.precision_label));
   root.append(element("p", "", props.short_description));
   const link = element("a", "", "View asset");

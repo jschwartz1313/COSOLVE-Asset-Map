@@ -733,11 +733,13 @@ class RealCatalogFileTests(TestCase):
             self.assertIsNotNone(record["latitude"], name)
             self.assertIsNotNone(record["longitude"], name)
 
-        # A multi-county test corridor must not inherit the Blacksburg campus point.
+        # A multi-county corridor is not the Blacksburg campus or a Fairfax locality pin.
         self.assertEqual(
             records_by_name["Virginia Automated Corridors"]["location_precision"],
-            "locality",
+            "regional",
         )
+        self.assertIsNone(records_by_name["Virginia Automated Corridors"]["latitude"])
+        self.assertIsNone(records_by_name["Virginia Automated Corridors"]["longitude"])
 
         precise_assets = {
             "ANRA Technologies",

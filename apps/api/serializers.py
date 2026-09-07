@@ -2,6 +2,19 @@ from apps.assets.discovery import TEST_SPEC_FIELDS
 from apps.assets.scoping import asset_is_in_public_scope
 
 
+def location_context(asset):
+    return {
+        "role": asset.location_role,
+        "role_label": asset.get_location_role_display() if asset.location_role else "",
+        "method": asset.location_method,
+        "method_label": asset.get_location_method_display() if asset.location_method else "",
+        "notes": asset.location_notes,
+        "source_url": asset.location_source_url,
+        "reviewed_at": (asset.location_last_verified_at.isoformat()
+                        if asset.location_last_verified_at else None),
+    }
+
+
 def test_specifications(asset):
     return {
         field: (value.isoformat() if hasattr(value, "isoformat") else value)
@@ -17,7 +30,7 @@ def names(items):
 def public_relationships(asset):
     related = [
         {
-            "name": relationship.to_asset.name,
+            "name": relationship.to_asset.public_name,
             "relationship": relationship.get_relationship_type_display(),
             "direction": "outgoing",
             "url": relationship.to_asset.get_absolute_url(),
@@ -30,7 +43,7 @@ def public_relationships(asset):
     ]
     related.extend(
         {
-            "name": relationship.from_asset.name,
+            "name": relationship.from_asset.public_name,
             "relationship": relationship.get_relationship_type_display(),
             "direction": "incoming",
             "url": relationship.from_asset.get_absolute_url(),
@@ -47,7 +60,7 @@ def public_relationships(asset):
 def public_asset_dict(asset, include_detail=True):
     data = {
         "id": str(asset.pk),
-        "name": asset.name,
+        "name": asset.public_name,
         "slug": asset.slug,
         "record_type": asset.record_type,
         "record_type_label": asset.get_record_type_display(),
@@ -55,6 +68,7 @@ def public_asset_dict(asset, include_detail=True):
         "overview": asset.overview,
         "unmanned_systems_relevance": asset.unmanned_systems_relevance,
         "location": {
+            **location_context(asset),
             "address_line": asset.address_line,
             "city": asset.city,
             "state": asset.state,
@@ -145,7 +159,7 @@ def asset_feature(asset):
         "activity_status_label": (
             asset.get_activity_status_display() if asset.activity_status else ""
         ),
-        "name": asset.name,
+        "name": asset.public_name,
         "slug": asset.slug,
         "record_type": asset.record_type,
         "record_type_label": asset.get_record_type_display(),
@@ -156,6 +170,7 @@ def asset_feature(asset):
         if asset.last_verified_at
         else None,
         "location": {
+            **location_context(asset),
             "address_line": asset.address_line,
             "city": asset.city,
             "state": asset.state,

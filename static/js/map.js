@@ -1,4 +1,4 @@
-import { buildPopup } from "./popups.js?v=20260906-1";
+import { buildPopup } from "./popups.js?v=20260906-2";
 
 const ICON_FILES = {
   university: "university.svg",

@@ -171,6 +171,12 @@ def data_quality(request):
     )
     dynamic_claims_stale = active_assets.filter(
         (
+            (Q(location_role__gt="") | Q(location_notes__gt=""))
+            & (Q(location_last_verified_at__lt=stale_cutoff)
+               | Q(location_last_verified_at__isnull=True) | Q(location_source_url=""))
+        )
+        |
+        (
             (Q(test_aircraft__gt="") | Q(test_dimensions__gt="")
              | Q(test_runway_length_ft__isnull=False) | Q(test_access__gt=""))
             & (Q(test_last_verified_at__lt=stale_cutoff)

@@ -7,6 +7,7 @@ from django.core.management.base import BaseCommand, CommandError
 from django.db import transaction
 from django.db.models import Q
 
+from apps.assets.discovery import IDENTITY_FIELDS, LOCATION_EVIDENCE_FIELDS
 from apps.assets.models import Asset, Relationship
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 from apps.sources.models import Source
@@ -178,6 +179,10 @@ class Command(BaseCommand):
                 if record.get("development_last_verified_at")
                 else None
             )
+            for field in (*IDENTITY_FIELDS, *LOCATION_EVIDENCE_FIELDS):
+                model_field = asset._meta.get_field(field)
+                value = record.get(field, None if model_field.null else "")
+                setattr(asset, field, model_field.to_python(value))
             asset.website_url = record.get("website_url", "")
             asset.contact_text = record.get("contact_text", "")
             asset.contact_phone = record.get("contact_phone", "")

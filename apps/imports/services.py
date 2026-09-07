@@ -6,7 +6,7 @@ from decimal import Decimal, InvalidOperation
 from django.core.exceptions import ValidationError
 from django.core.validators import EmailValidator, URLValidator
 
-from apps.assets.discovery import TEST_SPEC_FIELDS
+from apps.assets.discovery import IDENTITY_FIELDS, LOCATION_EVIDENCE_FIELDS, TEST_SPEC_FIELDS
 from apps.assets.models import Asset
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 from apps.sources.models import Source
@@ -21,6 +21,7 @@ TAXONOMY_COLUMNS = {
 CSV_COLUMNS = [
     "slug",
     "name",
+    *IDENTITY_FIELDS,
     "record_type",
     "short_description",
     "overview",
@@ -50,6 +51,7 @@ CSV_COLUMNS = [
     "latitude",
     "longitude",
     "location_precision",
+    *LOCATION_EVIDENCE_FIELDS,
     "region",
     "strategic_categories",
     "platform_domains",
@@ -119,7 +121,7 @@ def asset_csv_row(asset, include_internal=False):
     return {
         **{
             field: (getattr(asset, field) if getattr(asset, field) is not None else "")
-            for field in TEST_SPEC_FIELDS
+            for field in (*TEST_SPEC_FIELDS, *IDENTITY_FIELDS, *LOCATION_EVIDENCE_FIELDS)
         },
         "slug": asset.slug,
         "name": asset.name,

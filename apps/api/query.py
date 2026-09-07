@@ -2,7 +2,9 @@ from django.db.models import Q
 
 from apps.assets.discovery import RESOURCE_QUERIES
 from apps.assets.models import Asset
-from apps.assets.scoping import public_region_slug, public_scope_q
+from apps.assets.scoping import public_region_slug
+
+from .search import PUBLIC_NAME_ORDER, apply_search
 
 FACETS = {
     "record_type": "record_type",
@@ -54,47 +56,9 @@ def filter_public_assets(params, include_related=True):
             return queryset.none()
     query = params.get("q", "").strip()
     if query:
-        queryset = queryset.filter(
-            Q(name__icontains=query)
-            | Q(short_description__icontains=query)
-            | Q(overview__icontains=query)
-            | Q(unmanned_systems_relevance__icontains=query)
-            | Q(current_activity__icontains=query)
-            | Q(partnership_opportunities__icontains=query)
-            | Q(owner_operator__icontains=query)
-            | Q(development_notes__icontains=query)
-            | Q(infrastructure_access__icontains=query)
-            | Q(test_aircraft__icontains=query)
-            | Q(test_dimensions__icontains=query)
-            | Q(test_access__icontains=query)
-            | Q(contact_text__icontains=query)
-            | Q(contact_email__icontains=query)
-            | Q(city__icontains=query)
-            | Q(region__name__icontains=query)
-            | Q(strategic_categories__name__icontains=query)
-            | Q(platform_domains__name__icontains=query)
-            | Q(capabilities__name__icontains=query)
-            | Q(missions__name__icontains=query)
-            | Q(sources__title__icontains=query, sources__is_public=True)
-            | (
-                Q(
-                    outgoing_relationships__to_asset__name__icontains=query,
-                    outgoing_relationships__is_public=True,
-                    outgoing_relationships__to_asset__status__in=Asset.public_status_values(),
-                    outgoing_relationships__to_asset__visibility=Asset.Visibility.PUBLIC,
-                )
-                & public_scope_q("outgoing_relationships__to_asset__")
-            )
-            | (
-                Q(
-                    incoming_relationships__from_asset__name__icontains=query,
-                    incoming_relationships__is_public=True,
-                    incoming_relationships__from_asset__status__in=Asset.public_status_values(),
-                    incoming_relationships__from_asset__visibility=Asset.Visibility.PUBLIC,
-                )
-                & public_scope_q("incoming_relationships__from_asset__")
-            )
-        )
+        queryset = apply_search(queryset, query)
+    else:
+        queryset = queryset.order_by(PUBLIC_NAME_ORDER, "pk")
     return queryset.distinct()
 
 

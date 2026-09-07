@@ -10,8 +10,8 @@ import {
   featuresWithinPolygon,
   featuresWithinRadius,
   summarizeRegion,
-} from "./map-analysis.js?v=20260904-1";
-import { createMap } from "./map.js?v=20260906-1";
+} from "./map-analysis.js?v=20260906-2";
+import { createMap } from "./map.js?v=20260906-2";
 import {
   analysisStateFromParams,
   filterParamsFromMapUrl,

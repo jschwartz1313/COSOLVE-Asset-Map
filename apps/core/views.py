@@ -12,7 +12,13 @@ from django.urls import reverse
 from django.views.decorators.http import require_POST
 
 from apps.api.query import filter_public_assets
-from apps.assets.discovery import RESOURCE_CHOICES, TEST_SPEC_FIELDS
+from apps.api.search import PUBLIC_NAME_ORDER
+from apps.assets.discovery import (
+    IDENTITY_FIELDS,
+    LOCATION_EVIDENCE_FIELDS,
+    RESOURCE_CHOICES,
+    TEST_SPEC_FIELDS,
+)
 from apps.assets.models import Asset, SavedView
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 from apps.sources.models import Source
@@ -20,17 +26,20 @@ from apps.sources.models import Source
 from .forms import SavedViewForm, UpdateSubmissionForm
 
 DIRECTORY_SORTS = (
+    ("relevance", "Best match"),
     ("name", "Name A-Z"),
     ("region", "Region"),
     ("type", "Asset type"),
 )
 DIRECTORY_ORDERING = {
-    "name": ("name",),
-    "region": ("region__name", "name"),
-    "type": ("record_type", "name"),
+    "name": (PUBLIC_NAME_ORDER, "pk"),
+    "region": ("region__name", PUBLIC_NAME_ORDER, "pk"),
+    "type": ("record_type", PUBLIC_NAME_ORDER, "pk"),
 }
 PUBLIC_HISTORY_FIELDS = {
     *TEST_SPEC_FIELDS,
+    *IDENTITY_FIELDS,
+    *LOCATION_EVIDENCE_FIELDS,
     "name",
     "record_type",
     "short_description",
@@ -123,10 +132,12 @@ def map_view(request):
 
 def directory_view(request):
     queryset = filter_public_assets(request.GET)
-    sort_key = request.GET.get("sort", "name")
-    if sort_key not in DIRECTORY_ORDERING:
-        sort_key = "name"
-    queryset = queryset.order_by(*DIRECTORY_ORDERING[sort_key])
+    default_sort = "relevance" if request.GET.get("q", "").strip() else "name"
+    sort_key = request.GET.get("sort", default_sort)
+    if sort_key not in {*DIRECTORY_ORDERING, "relevance"}:
+        sort_key = default_sort
+    if sort_key != "relevance":
+        queryset = queryset.order_by(*DIRECTORY_ORDERING[sort_key])
     paginator = Paginator(queryset, 12)
     context = filter_context()
     context.update(
@@ -352,7 +363,7 @@ def suggest_update(request, slug=None):
         if asset:
             submission.asset = asset
             submission.kind = submission.Kind.CORRECTION
-            submission.subject = asset.name
+            submission.subject = asset.public_name
         submission.save()
         return redirect("core:update-thanks")
     return render(request, "core/suggest_update.html", {"form": form, "asset": asset})

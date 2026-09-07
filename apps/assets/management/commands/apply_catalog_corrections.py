@@ -9,7 +9,9 @@ from pathlib import Path
 from django.conf import settings
 from django.core.management.base import BaseCommand, CommandError
 from django.db import transaction
+from django.db.models import DecimalField
 
+from apps.assets.discovery import IDENTITY_FIELDS, LOCATION_EVIDENCE_FIELDS, TEST_SPEC_FIELDS
 from apps.assets.models import Asset, AssetReviewComment
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 from apps.sources.models import Source
@@ -23,6 +25,9 @@ TAXONOMY_FIELDS = {
     "strategic_categories": StrategicCategory,
 }
 ALLOWED_FIELDS = {
+    *IDENTITY_FIELDS,
+    *LOCATION_EVIDENCE_FIELDS,
+    *TEST_SPEC_FIELDS,
     "address_line",
     "city",
     "postal_code",
@@ -231,10 +236,11 @@ class Command(BaseCommand):
                     continue
                 if field == "region":
                     asset.region = Region.objects.get(name=value)
-                elif field == "activity_last_verified_at":
-                    asset.activity_last_verified_at = date.fromisoformat(value) if value else None
                 else:
-                    setattr(asset, field, value)
+                    model_field = asset._meta.get_field(field)
+                    if isinstance(model_field, DecimalField) and value is not None:
+                        value = Decimal(str(value))
+                    setattr(asset, field, model_field.to_python(value))
             scalar_fields = set(changed_values) - set(TAXONOMY_FIELDS)
             if item.get("review_required"):
                 asset.status = Asset.Status.SOURCE_BACKED

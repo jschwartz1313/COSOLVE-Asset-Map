@@ -86,6 +86,23 @@ class Asset(models.Model):
         HIGH = "high", "High"
         URGENT = "urgent", "Urgent"
 
+    class LocationRole(models.TextChoices):
+        HEADQUARTERS = "headquarters", "Headquarters"
+        MANUFACTURING = "manufacturing", "Manufacturing site"
+        RESEARCH = "research", "Research facility"
+        TEST_SITE = "test-site", "Test site"
+        AIRPORT = "airport", "Airport reference point"
+        CAMPUS = "campus", "Campus"
+        OFFICE = "office", "Office / coordination"
+        INSTALLATION = "installation", "General installation area"
+        SERVICE_AREA = "service-area", "Service area / multiple sites"
+
+    class LocationMethod(models.TextChoices):
+        PUBLISHED = "published", "Published reference coordinates"
+        GEOCODED = "geocoded", "Address geocoding"
+        LOCALITY = "locality", "Locality reference only"
+        UNMAPPED = "unmapped", "No single point"
+
     class ActivityStatus(models.TextChoices):
         ACTIVE = "active", "Active"
         PILOT = "pilot", "Pilot or demonstration"
@@ -101,6 +118,14 @@ class Asset(models.Model):
 
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     name = models.CharField(max_length=220)
+    display_name = models.CharField(
+        "Public display name", max_length=220, blank=True,
+        help_text="Optional readable name; leaves the catalog identity and existing URL unchanged.",
+    )
+    search_aliases = models.TextField(
+        "Search aliases", blank=True,
+        help_text="Public acronyms, former names, or identifiers, one per line.",
+    )
     slug = models.SlugField(max_length=240, unique=True, blank=True)
     record_type = models.CharField(max_length=30, choices=RecordType.choices)
     short_description = models.CharField(max_length=320)
@@ -170,6 +195,13 @@ class Asset(models.Model):
     )
     location_precision = models.CharField(
         max_length=20, choices=LocationPrecision.choices, default=LocationPrecision.APPROXIMATE
+    )
+    location_role = models.CharField(max_length=24, choices=LocationRole.choices, blank=True)
+    location_method = models.CharField(max_length=24, choices=LocationMethod.choices, blank=True)
+    location_notes = models.TextField("What the mapped location represents", blank=True)
+    location_source_url = models.URLField("Location evidence", max_length=1000, blank=True)
+    location_last_verified_at = models.DateField(
+        "Location evidence reviewed", null=True, blank=True
     )
     region = models.ForeignKey(
         Region, on_delete=models.SET_NULL, null=True, blank=True, related_name="assets"
@@ -292,6 +324,19 @@ class Asset(models.Model):
                 errors["test_last_verified_at"] = (
                     "Test-site specifications require a source review date."
                 )
+        if any((self.location_role, self.location_method, self.location_notes)):
+            if not self.location_source_url:
+                errors["location_source_url"] = "Location context requires a public source."
+            if not self.location_last_verified_at:
+                errors["location_last_verified_at"] = "Location context requires a review date."
+        if self.location_method == self.LocationMethod.UNMAPPED and (
+            self.latitude is not None or self.longitude is not None
+        ):
+            errors["location_method"] = "An unmapped asset cannot have point coordinates."
+        self.display_name = self.display_name.strip()
+        self.search_aliases = "\n".join(dict.fromkeys(
+            line.strip() for line in self.search_aliases.splitlines() if line.strip()
+        ))
         if errors:
             raise ValidationError(errors)
 
@@ -319,6 +364,10 @@ class Asset(models.Model):
 
     def get_absolute_url(self):
         return reverse("core:asset-detail", kwargs={"slug": self.slug})
+
+    @property
+    def public_name(self):
+        return self.display_name or self.name
 
     @property
     def has_test_details(self):

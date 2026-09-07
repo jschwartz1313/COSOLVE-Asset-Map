@@ -245,6 +245,8 @@ class AssetAdmin(SimpleHistoryAdmin):
     )
     search_fields = (
         "name",
+        "display_name",
+        "search_aliases",
         "short_description",
         "overview",
         "unmanned_systems_relevance",
@@ -282,7 +284,8 @@ class AssetAdmin(SimpleHistoryAdmin):
     fieldsets = (
         (
             "Identity",
-            {"fields": ("name", "slug", "record_type", "short_description", "overview")},
+            {"fields": ("name", "display_name", "search_aliases", "slug", "record_type",
+                        "short_description", "overview")},
         ),
         ("Unmanned systems relevance", {"fields": ("unmanned_systems_relevance",)}),
         (
@@ -345,6 +348,11 @@ class AssetAdmin(SimpleHistoryAdmin):
                     "latitude",
                     "longitude",
                     "location_precision",
+                    "location_role",
+                    "location_method",
+                    "location_notes",
+                    "location_source_url",
+                    "location_last_verified_at",
                     "region",
                 )
             },
