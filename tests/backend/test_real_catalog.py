@@ -500,7 +500,8 @@ class RealCatalogFileTests(TestCase):
         self.assertEqual(droneup["activity_status"], "active")
         self.assertEqual(droneup["location_precision"], "exact")
         self.assertEqual(droneup["address_line"], "160 Newtown Road, Suite 500")
-        self.assertIn("airspace management", droneup["current_activity"])
+        self.assertIn("ATOMx", droneup["current_activity"])
+        self.assertIn("Uncrew", droneup["current_activity"])
 
         all_source_urls = {source["url"] for record in records for source in record["sources"]}
         self.assertNotIn(
@@ -612,7 +613,7 @@ class RealCatalogFileTests(TestCase):
         self.assertEqual(
             dzyne["address_line"], "8280 Willow Oaks Corporate Drive, Suite 200"
         )
-        self.assertIn("Ondas Sentinel", dzyne["short_description"])
+        self.assertIn("Ondas Sentinel", dzyne["current_activity"])
 
         relationships = {
             (relationship["from"], relationship["type"], relationship["to"])
@@ -696,10 +697,19 @@ class RealCatalogFileTests(TestCase):
         for name in priority_assets:
             record = records_by_name[name]
             source_urls = {source["url"] for source in record["sources"]}
-            self.assertTrue(record["activity_status"], name)
+            if name == "HII Unmanned Systems Center of Excellence":
+                self.assertEqual(record["activity_status"], "")
+                self.assertIn("not been confirmed", record["current_activity"])
+            else:
+                self.assertTrue(record["activity_status"], name)
             self.assertTrue(record["current_activity"], name)
             self.assertTrue(record["partnership_opportunities"], name)
-            self.assertEqual(record["activity_last_verified_at"], "2026-08-21")
+            self.assertGreaterEqual(
+                date.fromisoformat(record["activity_last_verified_at"]), date(2026, 8, 21)
+            )
+            self.assertLessEqual(
+                record["activity_last_verified_at"], catalog["generated_at"]
+            )
             self.assertIn(record["activity_source_url"], source_urls)
             self.assertIn(record["contact_url"], source_urls)
 

@@ -34,13 +34,15 @@ test("new resource controls and connection routes fit all four designs", async (
     await page.goto("/map/?test_specs=1");
     const cover = page.locator("[data-showcase-cover]");
     if (await cover.isVisible()) await page.locator("[data-showcase-enter]").first().click();
+    await expect(cover).toBeHidden();
     await page.locator(`[data-theme-choice="${theme}"]`).click();
     if (await cover.isVisible()) await page.locator("[data-showcase-enter]").first().click();
+    await expect(cover).toBeHidden();
     if (await page.locator(".filter-open").isVisible()) await page.locator(".filter-open").click();
     await expect(page.locator(".project-site-fields")).toBeVisible();
     await page.screenshot({ path: testInfo.outputPath(`resource-${theme}.png`), fullPage: true });
     await page.goto("/connect/");
-    if (await cover.isVisible()) await page.locator("[data-showcase-enter]").first().click();
+    await expect(cover).toBeHidden();
     await expect(page.getByRole("heading", { name: "Get connected", exact: true })).toBeVisible();
     await expect(page.locator(".connection-row")).toHaveCount(5);
     const overflows = await page.locator(".connection-row h2, .connection-row p, .test-spec-list dd")

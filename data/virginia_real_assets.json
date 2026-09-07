@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06",
+  "generated_at": "2026-09-07",
   "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, broad-based Virginia degree-granting institutions from the NCES IPEDS 2024 directory while excluding narrowly specialized health and ministry schools without documented unmanned-systems relevance, and a curated set of source-backed ecosystem records. Specific street and site locations are anchored to official public address sources and geocoded against the U.S. Census address ranges or named-site map data; locality points are retained when the public record does not identify the operating department or facility. Every record is also classified as either a core unmanned-systems asset with direct documented activity or a supporting ecosystem asset with a broader enabling role.",
   "record_count": 527,
   "records": [
@@ -168,21 +168,23 @@
       "website_url": "https://adaptiveaero.com/"
     },
     {
-      "activity_last_verified_at": "2026-08-21",
-      "activity_source_url": "https://advancedaircraftcompany.com/uas-products/",
+      "activity_last_verified_at": "2026-09-07",
+      "activity_source_url": "https://advancedaircraftcompany.com/",
       "activity_status": "active",
       "address_line": "1100 Exploration Way, Suite 316M",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment",
-        "Manufacturing, materials, and prototyping"
+        "Manufacturing, materials, and prototyping",
+        "Propulsion, batteries, fuels, and energy systems",
+        "Payloads and mission systems",
+        "Operations, maintenance, and sustainment"
       ],
       "city": "Hampton",
       "contact_email": "info@flyaac.com",
       "contact_phone": "757-325-6712",
-      "contact_text": "Product, engineering, and business inquiries",
-      "contact_url": "https://advancedaircraftcompany.com/uas-products/",
-      "current_activity": "Advanced Aircraft Company publishes its HAMR hybrid multirotor UAS product and Virginia engineering and manufacturing contact information.",
+      "contact_text": "AAC aircraft, payload, and support inquiries",
+      "contact_url": "https://advancedaircraftcompany.com/",
+      "current_activity": "AAC's current website advertises HAMR as shipping and publishes aircraft specifications and payload options; delivery dates and mission configuration require a quotation.",
       "latitude": 37.082521,
       "location_precision": "site",
       "longitude": -76.399763,
@@ -191,8 +193,8 @@
         "Logistics and contested logistics"
       ],
       "name": "Advanced Aircraft Company",
-      "overview": "Hampton developer and manufacturer of long-endurance hybrid-electric unmanned aircraft systems. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
-      "partnership_opportunities": "Product, engineering, and business inquiries can use the company's published Hampton contact information.",
+      "overview": "Hampton company designing and manufacturing HAMR hybrid-electric multirotor aircraft. HAMR combines fuel-powered generation with electric propulsion and modular payload bays for cameras and other mission equipment. The manufacturer lists inspection, search and rescue, maritime operations, and logistics among its applications. Published maximum endurance and payload figures describe different configurations, not a guarantee that maximum payload can be carried for the maximum flight duration. This record represents the company; confirm the production or demonstration location when arranging a visit.",
+      "partnership_opportunities": "Contact AAC about aircraft purchases, payload compatibility, demonstrations, and support. Confirm mission requirements with the manufacturer.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -200,7 +202,7 @@
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Hampton Roads",
-      "short_description": "Hampton developer and manufacturer of long-endurance hybrid-electric unmanned aircraft systems.",
+      "short_description": "Hampton manufacturer of HAMR hybrid-electric multirotor UAS with modular payloads for inspection, maritime operations, and logistics.",
       "sources": [
         {
           "title": "Advanced Aircraft Company",
@@ -213,6 +215,10 @@
         {
           "title": "Advanced Aircraft Company public contact information",
           "url": "https://advancedaircraftcompany.com/contact/"
+        },
+        {
+          "title": "AAC HAMR aircraft capabilities and configuration limits",
+          "url": "https://advancedaircraftcompany.com/hamr/"
         }
       ],
       "state": "VA",
@@ -221,7 +227,7 @@
         "Core unmanned-systems asset",
         "Manufacturing facilities"
       ],
-      "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
+      "unmanned_systems_relevance": "Aircraft supply, hybrid propulsion, payload integration, and field-support inquiries for users needing longer-endurance multirotor operations.",
       "website_url": "https://advancedaircraftcompany.com/"
     },
     {
@@ -435,16 +441,21 @@
       "website_url": "https://www.agora.edu/"
     },
     {
+      "activity_last_verified_at": "2026-09-07",
+      "activity_source_url": "https://www.agricisioninc.com/",
+      "activity_status": "developing",
       "address_line": "13199 Wakefield Road",
       "capabilities": [
         "Perception, sensing, and sensor fusion",
-        "Manufacturing, materials, and prototyping"
+        "Manufacturing, materials, and prototyping",
+        "Data engineering, analytics, and edge computing"
       ],
       "city": "Sedley",
       "contact_email": "info@agricisioninc.com",
-      "contact_phone": "",
-      "contact_text": "Organization public information and inquiries",
+      "contact_phone": "757-514-1233",
+      "contact_text": "Agricision product and grower inquiries",
       "contact_url": "https://www.agricisioninc.com/contact",
+      "current_activity": "The current product page describes Scout as coming soon and BUBBA-18G as in testing. No production delivery schedule is confirmed in this record.",
       "latitude": 36.841546,
       "location_precision": "site",
       "longitude": -77.057713,
@@ -452,7 +463,8 @@
         "Agriculture and natural resources"
       ],
       "name": "Agricision",
-      "overview": "Virginia agricultural-drone manufacturer providing scouting and spray drone platforms and software. Public sources support its classification as a Virginia organization. Documented capabilities include Perception, sensing, and sensor fusion and Manufacturing, materials, and prototyping. Relevant mission areas include Agriculture and natural resources.",
+      "overview": "Farmer-led Sedley company developing agricultural drones and pest-detection software. Its scouting technology uses imagery from uncrewed platforms to help growers identify weeds and pests and make treatment decisions. The company describes Scout-series scouting aircraft and the BUBBA-18G agricultural spray drone as Virginia-manufactured products. At review, its website still described Scout as forthcoming and BUBBA-18G as in testing. A listed product is therefore not evidence of commercial availability or a completed customer deployment.",
+      "partnership_opportunities": "Growers and technology partners can use Agricision's inquiry or demonstration-request routes to discuss crop problems, platform fit, and current availability.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -460,7 +472,7 @@
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Hampton Roads",
-      "short_description": "Virginia agricultural-drone manufacturer providing scouting and spray drone platforms and software.",
+      "short_description": "Sedley agricultural-drone and software developer working on pest scouting and spray platforms; product availability remains under development.",
       "sources": [
         {
           "title": "Agricision",
@@ -469,6 +481,10 @@
         {
           "title": "Agricision contact information",
           "url": "https://www.agricisioninc.com/contact"
+        },
+        {
+          "title": "Agricision scouting and pest-detection technology",
+          "url": "https://www.agricisioninc.com/drone-technology"
         }
       ],
       "state": "VA",
@@ -478,7 +494,7 @@
         "Core unmanned-systems asset",
         "Manufacturing facilities"
       ],
-      "unmanned_systems_relevance": "Provides documented agricultural UAS platforms, software, or related services.",
+      "unmanned_systems_relevance": "Crop scouting, pest-detection software, and agricultural spray-platform development rather than a general public drone test range.",
       "website_url": "https://www.agricisioninc.com/"
     },
     {
@@ -811,21 +827,23 @@
       "website_url": "https://www.ama-inc.com/engineering/ENG_MissionAnalysisDesign.shtml"
     },
     {
-      "activity_last_verified_at": "2026-08-21",
-      "activity_source_url": "https://www.anratechnologies.com/home/2026/06/24/building-michigans-digital-airspace-integrating-commercial-drone-operations-and-airspace-security/",
+      "activity_last_verified_at": "2026-09-07",
+      "activity_source_url": "https://www.anratechnologies.com/home/",
       "activity_status": "active",
       "address_line": "11710 Plaza America Drive, Suite 200",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment",
-        "Manufacturing, materials, and prototyping"
+        "Safety, policy, regulatory, and airspace integration",
+        "Command, control, and communications",
+        "Perception, sensing, and sensor fusion",
+        "Simulation, digital twins, and synthetic environments"
       ],
       "city": "Reston",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Airspace-management consultation and business inquiries",
+      "contact_text": "ANRA airspace-management and integration consultation",
       "contact_url": "https://www.anratechnologies.com/home/airspace-management/",
-      "current_activity": "ANRA continues to deploy airspace and mission-management technology for commercial drone operations, UTM, UAM, and airspace-security integration.",
+      "current_activity": "ANRA publishes UTM/U-space, sensor-fusion, fleet-management, and vertiport-management offerings for commercial and public-sector integration projects.",
       "latitude": 38.951363,
       "location_precision": "site",
       "longitude": -77.34734,
@@ -834,8 +852,8 @@
         "Logistics and contested logistics"
       ],
       "name": "ANRA Technologies",
-      "overview": "Virginia-based developer of uncrewed traffic management, fleet operations, and airspace services. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
-      "partnership_opportunities": "Organizations can request a consultation through ANRA's airspace-management page.",
+      "overview": "Virginia-based provider of airspace and mission-management software for drone operators, infrastructure owners, and airspace managers. Its published services include mission planning, strategic deconfliction, flight tracking, conformance monitoring, operational risk assessment, sensor fusion, digital twins, and fleet management. These are software and integration capabilities offered across customer deployments, not evidence of aircraft manufacturing or a flight range at the Reston office.",
+      "partnership_opportunities": "Use ANRA's airspace-management consultation route for software integration and project scoping. Specify the operating area, aircraft, sensors, and intended use case.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -843,7 +861,7 @@
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Northern Virginia",
-      "short_description": "Virginia-based developer of uncrewed traffic management, fleet operations, and airspace services.",
+      "short_description": "Reston-based airspace software company providing drone traffic management, sensor integration, mission planning, and fleet operations tools.",
       "sources": [
         {
           "title": "VEDP: Organizing the Skies",
@@ -871,8 +889,8 @@
         "Companies and solution providers",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
-      "website_url": "https://www.vedp.org/news/organizing-skies"
+      "unmanned_systems_relevance": "Digital infrastructure connecting operators, sensors, and airspace stakeholders; supports integration and safety-case work without itself conferring permission to fly.",
+      "website_url": "https://www.anratechnologies.com/home/airspace-management/"
     },
     {
       "address_line": "1169 Edgewater Drive",
@@ -1301,21 +1319,23 @@
       "website_url": "https://auranetworksystems.com/infrastructure"
     },
     {
-      "activity_last_verified_at": "2026-08-21",
-      "activity_source_url": "https://www.aurora.aero/contact-us/",
+      "activity_last_verified_at": "2026-09-07",
+      "activity_source_url": "https://www.aurora.aero/about/",
       "activity_status": "active",
       "address_line": "9950 Wakeman Drive",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment",
-        "Manufacturing, materials, and prototyping"
+        "Manufacturing, materials, and prototyping",
+        "Autonomy and artificial intelligence",
+        "Propulsion, batteries, fuels, and energy systems",
+        "Testing, evaluation, verification, and validation"
       ],
       "city": "Manassas",
-      "contact_email": "sales@aurora.aero",
+      "contact_email": "info@aurora.aero",
       "contact_phone": "703-369-3633",
-      "contact_text": "Product and business-development inquiries",
+      "contact_text": "Aurora Manassas headquarters and engineering inquiries",
       "contact_url": "https://www.aurora.aero/contact-us/",
-      "current_activity": "Aurora, a Boeing company, develops advanced aircraft and autonomy technologies from its Manassas headquarters and other facilities.",
+      "current_activity": "Aurora's current facilities page identifies Manassas as its headquarters and engineering/test campus, distinct from its other manufacturing locations.",
       "latitude": 38.728261,
       "location_precision": "site",
       "longitude": -77.512034,
@@ -1324,8 +1344,8 @@
         "Logistics and contested logistics"
       ],
       "name": "Aurora Flight Sciences",
-      "overview": "Aerospace company developing advanced aircraft and autonomous flight technologies in Manassas. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
-      "partnership_opportunities": "Product, business-development, and general inquiries can use Aurora's published sales and headquarters contacts.",
+      "overview": "Aurora's Manassas headquarters at Manassas Regional Airport includes three aircraft hangars, engineering development and build spaces, test laboratories, and remote flight-operations centers. The company develops aircraft configurations, autonomy, propulsion, and manufacturing technologies. Its published Manassas certification scope includes design, fabrication, assembly, testing, and operation of aircraft components and structures. Aurora separately identifies major advanced-manufacturing sites in Mississippi and West Virginia; their equipment and production capacity should not be attributed to the Virginia location.",
+      "partnership_opportunities": "Contact Aurora about engineering programs and aircraft-development partnerships. Facility visits and use of test resources require company arrangements.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -1333,7 +1353,7 @@
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Northern Virginia",
-      "short_description": "Aerospace company developing advanced aircraft and autonomous flight technologies in Manassas.",
+      "short_description": "Manassas aircraft-development campus with hangars, engineering build spaces, test laboratories, and remote flight-operations centers.",
       "sources": [
         {
           "title": "VEDP: Unmanned Systems in Virginia",
@@ -1342,6 +1362,14 @@
         {
           "title": "Aurora Flight Sciences contact information",
           "url": "https://www.aurora.aero/contact-us/"
+        },
+        {
+          "title": "Aurora Manassas campus and other locations",
+          "url": "https://www.aurora.aero/about/"
+        },
+        {
+          "title": "Aurora Manassas design, fabrication and test certification scope (2024)",
+          "url": "https://www.aurora.aero/wp-content/uploads/2024/07/2024-AWV-AVA-AS9100-Certificate.pdf"
         }
       ],
       "state": "VA",
@@ -1349,7 +1377,13 @@
         "Companies and solution providers",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
+      "test_access": "Company-managed development campus, not a public range reservation. Coordinate project scope, access, and any flight arrangements with Aurora.",
+      "test_aircraft": "Aircraft and component development, assembly, laboratory testing, and remote flight operations. The published certification scope includes crewed, uncrewed, and optionally crewed systems.",
+      "test_dimensions": "Three aircraft hangars plus engineering build spaces and test labs at Manassas. No dedicated UAS runway dimensions or flight boundary are established by the cited facilities page.",
+      "test_last_verified_at": "2026-09-07",
+      "test_runway_length_ft": null,
+      "test_source_url": "https://www.aurora.aero/about/",
+      "unmanned_systems_relevance": "Virginia-based aircraft prototyping, engineering, integration, and test resources for crewed, uncrewed, and optionally crewed systems.",
       "website_url": "https://www.aurora.aero/contact-us/"
     },
     {
@@ -5509,21 +5543,22 @@
       "website_url": "https://www.dronetrace.com/home"
     },
     {
-      "activity_last_verified_at": "2026-08-21",
+      "activity_last_verified_at": "2026-09-07",
       "activity_source_url": "https://www.droneup.com/",
       "activity_status": "active",
       "address_line": "160 Newtown Road, Suite 500",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment",
-        "Manufacturing, materials, and prototyping"
+        "Safety, policy, regulatory, and airspace integration",
+        "Command, control, and communications",
+        "Autonomy and artificial intelligence"
       ],
       "city": "Virginia Beach",
       "contact_email": "",
       "contact_phone": "877-601-1860",
-      "contact_text": "DroneUp airspace and UAS technology inquiries",
-      "contact_url": "https://www.droneup.com/contact",
-      "current_activity": "DroneUp remains active but has shifted its current emphasis from operating last-mile delivery networks to airspace management, regulatory enablement, and autonomous UAS operations technology.",
+      "contact_text": "DroneUp technology demonstrations and partnerships",
+      "contact_url": "https://www.droneup.com/",
+      "current_activity": "DroneUp currently promotes ATOMx and Uncrew and offers a demo/partnership contact route; individual deployments and permissions require confirmation.",
       "latitude": 36.842642,
       "location_precision": "exact",
       "longitude": -76.186071,
@@ -5532,8 +5567,8 @@
         "Logistics and contested logistics"
       ],
       "name": "DroneUp",
-      "overview": "Virginia Beach-founded company now focused on airspace management, regulatory enablement, and autonomous UAS operations technology. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
-      "partnership_opportunities": "Airspace-management, UAS-operations, and technology inquiries can use DroneUp's current partnership form.",
+      "overview": "Virginia Beach-founded company now marketing autonomous airspace and UAS operations technology. Its ATOMx offering combines mission identity, authorizations, policy coordination, sensing, and threat-awareness functions. Its Uncrew platform covers flight routing, mission supervision, and shared operational data for uses such as delivery and inspection. These are company-described software and service offerings; the Virginia listing does not establish an active delivery route, available aircraft factory, or public testing site.",
+      "partnership_opportunities": "Use DroneUp's demo or partnership route to discuss operator software and airspace integration.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -5541,7 +5576,7 @@
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Hampton Roads",
-      "short_description": "Virginia Beach-founded company now focused on airspace management, regulatory enablement, and autonomous UAS operations technology.",
+      "short_description": "Virginia Beach-founded developer of ATOMx airspace coordination and Uncrew UAS operations technology.",
       "sources": [
         {
           "title": "VEDP: Virginia Unmanned Systems Companies",
@@ -5565,7 +5600,7 @@
         "Companies and solution providers",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
+      "unmanned_systems_relevance": "Airspace coordination, fleet supervision, and software integration for unmanned operations rather than a confirmed Virginia aircraft-production facility.",
       "website_url": "https://www.droneup.com/"
     },
     {
@@ -5672,7 +5707,7 @@
       "website_url": "https://www.dynamicaviation.com/"
     },
     {
-      "activity_last_verified_at": "2026-08-21",
+      "activity_last_verified_at": "2026-09-07",
       "activity_source_url": "https://dzyne.com/contact-us/",
       "activity_status": "active",
       "address_line": "8280 Willow Oaks Corporate Drive, Suite 200",
@@ -5683,9 +5718,9 @@
       "city": "Fairfax",
       "contact_email": "info@dzyne.com",
       "contact_phone": "949-313-6185",
-      "contact_text": "DZYNE product and business inquiries",
+      "contact_text": "DZYNE corporate product inquiries; not a Fairfax direct line",
       "contact_url": "https://dzyne.com/contact-us/",
-      "current_activity": "DZYNE remains an active autonomous-defense business within Ondas Sentinel and continues to list Fairfax as a current location for its long-endurance UAS and counter-UAS work.",
+      "current_activity": "The current company site identifies DZYNE as part of Ondas Sentinel and lists Fairfax as a location alongside its other offices.",
       "latitude": 38.863831,
       "location_precision": "exact",
       "longitude": -77.230173,
@@ -5694,8 +5729,8 @@
         "Force protection and installation security"
       ],
       "name": "DZYNE Technologies",
-      "overview": "Fairfax location of DZYNE, part of Ondas Sentinel, developing long-endurance unmanned aircraft and counter-UAS capabilities. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Manufacturing, materials, and prototyping. Relevant mission areas include Counter-UAS and Force protection and installation security.",
-      "partnership_opportunities": "Product, demonstration, and business inquiries can use DZYNE's current public contact route.",
+      "overview": "DZYNE lists Fairfax among its company locations and describes a portfolio spanning long-endurance uncrewed aircraft and counter-UAS systems. Public product families include ULTRA and LEAP aircraft, Dronebuster, and detection/tracking/identification systems. These portfolio capabilities are not assigned to a specific Fairfax production line in the published material. The Virginia entry therefore identifies a company presence, not a verified local manufacturing plant or available test range.",
+      "partnership_opportunities": "Use DZYNE's general inquiry route to identify the appropriate product team and confirm which work is performed in Virginia.",
       "platform_domains": [
         "Counter-UAS",
         "Unmanned aircraft systems"
@@ -5704,7 +5739,7 @@
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Northern Virginia",
-      "short_description": "Fairfax location of DZYNE, part of Ondas Sentinel, developing long-endurance unmanned aircraft and counter-UAS capabilities.",
+      "short_description": "Fairfax presence of an autonomous-systems company offering long-endurance UAS and counter-UAS products; local production scope is unconfirmed.",
       "sources": [
         {
           "title": "DZYNE Technologies",
@@ -5721,6 +5756,10 @@
         {
           "title": "DZYNE current locations and Ondas Sentinel ownership",
           "url": "https://dzyne.com/contact-us/"
+        },
+        {
+          "title": "DZYNE public UAS and counter-UAS portfolio",
+          "url": "https://dzyne.com/"
         }
       ],
       "state": "VA",
@@ -5729,21 +5768,25 @@
         "Manufacturing and supply chain",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Develops documented counter-UAS systems, components, or production capacity.",
+      "unmanned_systems_relevance": "Potential product and integration partner for uncrewed aircraft and counter-UAS sensing; Virginia-specific workshare requires company confirmation.",
       "website_url": "https://dzyne.com/contact-us/"
     },
     {
+      "activity_last_verified_at": "2026-09-07",
+      "activity_source_url": "https://eagleaviationtech.com/about-us-1",
+      "activity_status": "active",
       "address_line": "7505 Warwick Boulevard",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment",
-        "Manufacturing, materials, and prototyping"
+        "Manufacturing, materials, and prototyping",
+        "Testing, evaluation, verification, and validation"
       ],
       "city": "Newport News",
       "contact_email": "",
       "contact_phone": "757-262-0445",
-      "contact_text": "Organization public information and inquiries",
+      "contact_text": "Eagle engineering, manufacturing, and testing inquiries",
       "contact_url": "https://eagleaviationtech.com/contact-us",
+      "current_activity": "Eagle publishes in-house engineering, metal/composite manufacturing, and testing capabilities at its Newport News facility.",
       "latitude": 37.014492,
       "location_precision": "exact",
       "longitude": -76.448543,
@@ -5752,7 +5795,8 @@
         "Logistics and contested logistics"
       ],
       "name": "Eagle Aviation Technologies",
-      "overview": "Newport News aerospace design, manufacturing, and test company supporting manned and unmanned platforms and prototype aircraft systems. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Newport News engineering and manufacturing facility supporting crewed and uncrewed aircraft, rotorcraft, and eVTOL programs. Eagle combines aerospace design, precision CNC machining, composite fabrication, rotor and propeller development, wind-tunnel models, and prototype airframe components. The operator describes composite clean rooms, assembly space, and in-house ground and whirl testing. Customers can discuss individual test articles or integrated development work; published material does not establish a public flight range.",
+      "partnership_opportunities": "Submit engineering, component, prototyping, or test inquiries through Eagle's contact form.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -5760,7 +5804,7 @@
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Hampton Roads",
-      "short_description": "Newport News aerospace design, manufacturing, and test company supporting manned and unmanned platforms and prototype aircraft systems.",
+      "short_description": "Newport News aerospace facility providing composite fabrication, CNC machining, rotor development, prototyping, and ground testing.",
       "sources": [
         {
           "title": "Eagle Aviation Technologies",
@@ -5773,6 +5817,10 @@
         {
           "title": "Eagle Technologies Newport News advanced-manufacturing facility tour",
           "url": "https://eagleaviationtech.com/news-and-updates/f/eagle-technologies-welcomes-the-vma-for-a-facility-tour"
+        },
+        {
+          "title": "Eagle engineering testing and quality resources",
+          "url": "https://www.eagleaviationtech.com/"
         }
       ],
       "state": "VA",
@@ -5781,7 +5829,13 @@
         "Core unmanned-systems asset",
         "Manufacturing facilities"
       ],
-      "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
+      "test_access": "Contract engineering and testing inquiries through Eagle. Confirm project compatibility, equipment availability, and site access directly.",
+      "test_aircraft": "Ground, whirl, and system-evaluation work for aircraft components, rotors, propellers, and prototypes; this is not a public UAS flight range.",
+      "test_dimensions": "Precision machine shop, composite clean rooms, and assembly/prototyping space. No current public flight-area dimensions or runway specification are established.",
+      "test_last_verified_at": "2026-09-07",
+      "test_runway_length_ft": null,
+      "test_source_url": "https://eagleaviationtech.com/about-us-1",
+      "unmanned_systems_relevance": "Supplier of metal/composite aircraft components, test articles, and engineering services for UAS and advanced-aircraft developers.",
       "website_url": "https://eagleaviationtech.com/about-us-1"
     },
     {
@@ -6528,21 +6582,22 @@
       "website_url": "https://www.fairfaxcounty.gov/uas/"
     },
     {
-      "activity_last_verified_at": "2026-08-24",
+      "activity_last_verified_at": "2026-09-07",
       "activity_source_url": "https://fairlead.com/about/press-releases/snc-and-fairlead/",
       "activity_status": "active",
       "address_line": "650 Chautauqua Avenue",
       "capabilities": [
-        "Systems engineering and integration",
         "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration",
+        "Propulsion, batteries, fuels, and energy systems",
         "Operations, maintenance, and sustainment"
       ],
       "city": "Portsmouth",
       "contact_email": "",
       "contact_phone": "757-384-1957",
-      "contact_text": "Fairlead corporate headquarters",
+      "contact_text": "Fairlead corporate routing for maritime project inquiries",
       "contact_url": "https://fairlead.com/",
-      "current_activity": "Fairlead and SNC announced a May 2026 partnership to domestically produce AEGIR unmanned surface vessels using Fairlead's shipbuilding and systems-integration capacity. The public announcement does not identify a single production address.",
+      "current_activity": "The May 2026 SNC partnership announces intended AEGIR USV production using Fairlead's shipbuilding and integration capability; site allocation and output require confirmation.",
       "latitude": 36.843529,
       "location_precision": "exact",
       "longitude": -76.332593,
@@ -6552,7 +6607,8 @@
         "Force protection and installation security"
       ],
       "name": "Fairlead Maritime Systems",
-      "overview": "Fairlead is a Portsmouth-headquartered maritime manufacturer and systems integrator with multiple Virginia industrial waterfront facilities. The company reports active contracts involving unmanned platforms and announced a partnership with SNC to establish scalable domestic production of AEGIR USVs.",
+      "overview": "Portsmouth-headquartered maritime manufacturer and systems integrator with several Virginia facilities. Its services include power and control systems, modular ship construction, vessel overhaul, outfitting, and systems integration. The reported waterfront acreage and pier frontage describe a combined industrial footprint, not the headquarters parcel. Fairlead and SNC announced an AEGIR unmanned-surface-vessel production partnership in May 2026; the announcement does not identify a specific Virginia production address or confirm delivered quantities.",
+      "partnership_opportunities": "Use Fairlead's corporate contact route to identify the appropriate facility for fabrication, integration, vessel work, or supplier inquiries.",
       "platform_domains": [
         "Maritime surface systems",
         "Undersea systems"
@@ -6579,7 +6635,7 @@
         "Core unmanned-systems asset",
         "Manufacturing facilities"
       ],
-      "unmanned_systems_relevance": "Provides documented maritime manufacturing, modular construction, systems integration, and sustainment capacity for unmanned surface vessels.",
+      "unmanned_systems_relevance": "Maritime fabrication, electrical/control integration, and vessel-support capabilities relevant to USV developers and naval supply chains.",
       "website_url": "https://fairlead.com/"
     },
     {
@@ -7349,17 +7405,21 @@
       "website_url": "https://warrencountyva.gov/303/Front-Royal-Warren-County-Airport"
     },
     {
+      "activity_last_verified_at": "2026-09-07",
+      "activity_source_url": "https://fulcrumconceptsllc.com/about/our-facilities/",
+      "activity_status": "active",
       "address_line": "1776 Patriot Way",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment",
-        "Manufacturing, materials, and prototyping"
+        "Manufacturing, materials, and prototyping",
+        "Operations, maintenance, and sustainment"
       ],
       "city": "Mattaponi",
-      "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Organization public information and inquiries",
+      "contact_email": "info@fulcrumconceptsllc.com",
+      "contact_phone": "804-785-1017",
+      "contact_text": "Fulcrum engineering and production project inquiries",
       "contact_url": "https://fulcrumconceptsllc.com/contact/",
+      "current_activity": "Fulcrum's facilities page distinguishes Mattaponi headquarters, Newport News machining, and West Point logistics/manufacturing functions.",
       "latitude": 37.523935,
       "location_precision": "site",
       "longitude": -76.756529,
@@ -7368,7 +7428,8 @@
         "Logistics and contested logistics"
       ],
       "name": "Fulcrum Concepts",
-      "overview": "Virginia UAS engineering, integration, fabrication, flight-test, and training company. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Aircraft engineering and integration company headquartered at Middle Peninsula Regional Airport in Mattaponi. Its headquarters includes offices and a 6,400-square-foot hangar. The company's manufacturing services cover prototyping, low-rate production, assembly, inspection, and aircraft wiring. In-house CNC machining is centralized at its separately listed Newport News machine shop; warehouse and additional manufacturing/avionics space are in West Point. These locations support different work packages rather than one interchangeable production site.",
+      "partnership_opportunities": "Contact Fulcrum to scope engineering or fabrication work and identify the responsible Virginia facility.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -7376,7 +7437,7 @@
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Greater Richmond",
-      "short_description": "Virginia UAS engineering, integration, fabrication, flight-test, and training company.",
+      "short_description": "Mattaponi aircraft-engineering and integration headquarters with hangar space and a network of Virginia manufacturing facilities.",
       "sources": [
         {
           "title": "Fulcrum Concepts Contact",
@@ -7389,6 +7450,14 @@
         {
           "title": "Fulcrum Concepts program news",
           "url": "https://fulcrumconceptsllc.com/news/"
+        },
+        {
+          "title": "Fulcrum Virginia facilities and division of work",
+          "url": "https://fulcrumconceptsllc.com/about/our-facilities/"
+        },
+        {
+          "title": "Fulcrum manufacturing, inspection and wiring capabilities",
+          "url": "https://fulcrumconceptsllc.com/about/manufacturing-and-production/"
         }
       ],
       "state": "VA",
@@ -7396,11 +7465,11 @@
         "Companies and solution providers",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
+      "unmanned_systems_relevance": "Engineering, fabrication, integration, and support resources for aircraft and uncrewed-system projects.",
       "website_url": "https://fulcrumconceptsllc.com/contact/"
     },
     {
-      "activity_last_verified_at": "2026-08-30",
+      "activity_last_verified_at": "2026-09-07",
       "activity_source_url": "https://fulcrumconceptsllc.com/about/manufacturing-and-production/",
       "activity_status": "active",
       "address_line": "737 Industrial Park Drive",
@@ -7409,11 +7478,11 @@
         "Systems engineering and integration"
       ],
       "city": "Newport News",
-      "contact_email": "info@fulcrumconceptsllc.com",
-      "contact_phone": "804-785-1017",
-      "contact_text": "Fulcrum Concepts public inquiries",
-      "contact_url": "https://fulcrumconceptsllc.com/about/our-facilities/",
-      "current_activity": "Fulcrum publicly documents the Newport News machine shop as its centralized in-house machining facility and marked its opening with a January 2026 ribbon cutting.",
+      "contact_email": "fulcrummachineshop@fulcrumconceptsllc.com",
+      "contact_phone": "804-466-2762",
+      "contact_text": "Fulcrum Newport News machine shop inquiries",
+      "contact_url": "https://fulcrumconceptsllc.com/contact/",
+      "current_activity": "Fulcrum's current manufacturing page identifies Newport News as the center of its in-house machining capability.",
       "latitude": 37.169518,
       "location_last_verified_at": "2026-09-06",
       "location_method": "",
@@ -7427,7 +7496,8 @@
         "Training and experimentation"
       ],
       "name": "Fulcrum Concepts Newport News Machine Shop",
-      "overview": "Fulcrum Concepts opened this 7,490-square-foot machine shop in January 2026. The facility uses five-axis and three-axis CNC equipment and lathes to produce high-precision aerospace components, supporting the company's aircraft integration, fabrication, and uncrewed-systems work.",
+      "overview": "Fulcrum's 7,490-square-foot Newport News machine shop centralizes the company's in-house machining. Published equipment includes five-axis and three-axis CNC machines and lathes for aerospace components, with much of the work involving aluminum alloys. Model-based machining and configuration-controlled component data connect engineering to production. This record represents machining capacity; Fulcrum's Mattaponi hangar and West Point manufacturing/avionics spaces are separate facilities.",
+      "partnership_opportunities": "Contact the Newport News machine shop about part specifications, materials, quantities, and lead times; public sources do not state spare capacity.",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
@@ -7436,7 +7506,7 @@
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "Hampton Roads",
-      "short_description": "Newport News aerospace machine shop providing in-house CNC fabrication and production capacity for Fulcrum Concepts.",
+      "short_description": "Newport News aerospace machine shop with five-axis and three-axis CNC machining, lathes, and model-based production workflows.",
       "sources": [
         {
           "title": "Fulcrum Concepts manufacturing and production capabilities",
@@ -7449,6 +7519,10 @@
         {
           "title": "Fulcrum Concepts Newport News machine shop address and opening",
           "url": "https://fulcrumconceptsllc.com/news/fulcrum-concepts-opens-new-machine-shop-in-newport-news-expanding-manufacturing-capabilities/"
+        },
+        {
+          "title": "Fulcrum corporate contact and project inquiries",
+          "url": "https://fulcrumconceptsllc.com/contact/"
         }
       ],
       "state": "VA",
@@ -7458,7 +7532,7 @@
         "Supporting ecosystem asset",
         "Manufacturing facilities"
       ],
-      "unmanned_systems_relevance": "Provides documented Virginia aerospace-component fabrication capacity within a company that designs, integrates, fabricates, tests, and supports uncrewed aircraft systems. The public factory sources describe aerospace production generally rather than a dedicated UAS-only line.",
+      "unmanned_systems_relevance": "Precision parts and prototype-to-production machining supporting aircraft integration and uncrewed-system supply chains.",
       "website_url": "https://fulcrumconceptsllc.com/about/manufacturing-and-production/"
     },
     {
@@ -9483,9 +9557,9 @@
       "website_url": "https://hevenaerotech.com/company/"
     },
     {
-      "activity_last_verified_at": "2026-08-21",
-      "activity_source_url": "https://www.hii.com/mission-technologies",
-      "activity_status": "active",
+      "activity_last_verified_at": "2026-09-07",
+      "activity_source_url": "https://ir.hii.com/files/doc_news/archive/2021/05/1Q21-RELEASE.pdf",
+      "activity_status": "",
       "address_line": "Hampton Roads Center - North Campus",
       "capabilities": [
         "Systems engineering and integration",
@@ -9494,9 +9568,9 @@
       "city": "Hampton",
       "contact_email": "",
       "contact_phone": "877-871-2058",
-      "contact_text": "Facility or operator public information",
+      "contact_text": "HII corporate routing for unmanned-systems inquiries",
       "contact_url": "https://www.hii.com/contact",
-      "current_activity": "HII maintains an Uncrewed Systems business spanning unmanned undersea and surface platforms and autonomy software; the Hampton center is its publicly documented purpose-built production and test campus.",
+      "current_activity": "HII's 2021 results record completion of the first campus phase. Current building-by-building capabilities and customer access have not been confirmed by the sources reviewed here.",
       "development_last_verified_at": "2026-08-21",
       "development_notes": "HII described a 20-acre campus and Hampton documented completion and occupancy of the first 22,000-square-foot building. Campus size is not presented as available acreage.",
       "development_source_url": "https://www.hii.com/news/first-quarter-2021-earnings",
@@ -9509,9 +9583,9 @@
         "Maritime domain awareness"
       ],
       "name": "HII Unmanned Systems Center of Excellence",
-      "overview": "Digital manufacturing and engineering facility established for HII unmanned and autonomous systems. Public sources support its classification as a Virginia facility. Documented capabilities include Systems engineering and integration and Manufacturing, materials, and prototyping. Relevant mission areas include Maritime domain awareness.",
+      "overview": "Hampton campus established for unmanned maritime systems prototyping, production, and testing. HII's 2020 announcement described planned digital manufacturing, machining, surface finishing, and welding resources. Its 2021 results confirm completion of an initial 22,000-square-foot building. Those dated sources do not establish that every proposed building or production capability is currently available. HII's wider UUV, USV, and autonomy portfolio should not be treated as a list of products manufactured at this particular campus.",
       "owner_operator": "HII",
-      "partnership_opportunities": "Business and supplier inquiries can be routed through HII's public corporate contact channel.",
+      "partnership_opportunities": "Use HII's corporate contact route to reach the relevant unmanned-systems business team; no public campus booking service is established.",
       "platform_domains": [
         "Maritime surface systems",
         "Undersea systems"
@@ -9537,6 +9611,10 @@
         {
           "title": "HII Unmanned Systems Center of Excellence public contact information",
           "url": "https://www.hii.com/contact"
+        },
+        {
+          "title": "HII first-quarter 2021 results: first campus phase completed",
+          "url": "https://ir.hii.com/files/doc_news/archive/2021/05/1Q21-RELEASE.pdf"
         }
       ],
       "state": "VA",
@@ -9546,7 +9624,7 @@
         "Core unmanned-systems asset",
         "Manufacturing facilities"
       ],
-      "unmanned_systems_relevance": "Provides maritime engineering, shipbuilding, integration, or robotic-system capacity.",
+      "unmanned_systems_relevance": "Documented Virginia unmanned-maritime production investment; current campus workshare, equipment, and external access require HII confirmation.",
       "website_url": "https://www.hii.com/news/unmanned-systems-center-of-excellence"
     },
     {
@@ -12534,21 +12612,21 @@
       "website_url": "https://www.magaero.com/connect/"
     },
     {
-      "activity_last_verified_at": "2026-08-24",
+      "activity_last_verified_at": "2026-09-07",
       "activity_source_url": "https://www.magothyrt.com/autopilot",
       "activity_status": "active",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Navigation and positioning",
-        "Perception, sensing, and sensor fusion",
-        "Systems engineering and integration"
+        "Systems engineering and integration",
+        "Simulation, digital twins, and synthetic environments"
       ],
       "city": "Herndon",
       "contact_email": "info@magothyrt.com",
       "contact_phone": "703-791-9632",
-      "contact_text": "Magothy River Technologies company inquiries",
+      "contact_text": "Magothy marine-control integration and collaboration inquiries",
       "contact_url": "https://www.magothyrt.com/contact",
-      "current_activity": "The company currently markets its Magothy Autopilot and engineering services for USV, UUV, ROV, and collaborative marine-autonomy applications.",
+      "current_activity": "Magothy publishes its autopilot, simulator/interface resources, and development kit, with a Virginia office and separate Maryland testing locations.",
       "latitude": 38.9696,
       "location_last_verified_at": "2026-09-06",
       "location_method": "locality",
@@ -12563,7 +12641,8 @@
         "Surveying and mapping"
       ],
       "name": "Magothy River Technologies",
-      "overview": "Magothy River Technologies is a Herndon-based marine-autonomy company. Its published products and services include professional autopilots, navigation, path planning, radar processing, obstacle avoidance, simulation, and integration for USVs, UUVs, ROVs, towed systems, and hybrid marine vehicles.",
+      "overview": "Herndon-based marine-control and autonomy company working with surface, underwater, and remotely operated vehicles. Its Magothy Autopilot supports vehicle control, path planning, fault responses, and integration with higher-level autonomy. Customers can use a simulator, interface documentation, and a software development kit to connect vehicle hardware and mission software. The company lists its water-testing facilities in Maryland, so the Virginia office pin does not represent an in-water test site.",
+      "partnership_opportunities": "The public contact route accepts service and collaboration inquiries. Confirm where integration and in-water testing would take place.",
       "platform_domains": [
         "Maritime surface systems",
         "Undersea systems"
@@ -12593,7 +12672,7 @@
         "Research and technical depth",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Develops direct autonomy, navigation, control, and perception technology for uncrewed maritime platforms.",
+      "unmanned_systems_relevance": "Marine autopilot integration, vehicle-control engineering, simulation, and navigation support for USV, UUV, and ROV developers.",
       "website_url": "https://www.magothyrt.com/"
     },
     {
@@ -12867,7 +12946,7 @@
       "website_url": "https://www.marinesonic.com/"
     },
     {
-      "activity_last_verified_at": "2026-08-21",
+      "activity_last_verified_at": "2026-09-07",
       "activity_source_url": "https://www.vaspace.org/our-facilities",
       "activity_status": "active",
       "capabilities": [
@@ -12877,9 +12956,9 @@
       "city": "Wallops Island",
       "contact_email": "external.relations@vaspace.org",
       "contact_phone": "757-440-4020",
-      "contact_text": "Virginia Spaceport Authority external relations",
-      "contact_url": "https://www.vaspace.org/contact-us",
-      "current_activity": "The Virginia Spaceport Authority operates the dedicated MARS UAS Airfield for government and commercial training, testing, demonstrations, and exercises with access to restricted airspace at Wallops.",
+      "contact_text": "Virginia Spaceport Authority external relations; request UAS airfield coordination",
+      "contact_url": "https://www.vaspace.org/our-facilities",
+      "current_activity": "The operator's current facilities page offers government and commercial UAS activities and publishes airfield specifications.",
       "latitude": 37.94,
       "location_precision": "locality",
       "longitude": -75.467,
@@ -12887,8 +12966,8 @@
         "Training and experimentation"
       ],
       "name": "MARS Unmanned Aircraft Systems Airfield",
-      "overview": "Purpose-built UAS airfield and VTOL test infrastructure at the Mid-Atlantic Regional Spaceport. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
-      "partnership_opportunities": "Government and commercial users can contact the Virginia Spaceport Authority regarding UAS airfield access and mission support.",
+      "overview": "Virginia Spaceport Authority airfield at Wallops supporting government and commercial uncrewed-system training, testing, demonstrations, and exercises. The operator publishes a runway, vertical-takeoff-and-landing pad, hangar, and access to restricted airspace. Its staff provide UAS integration and airfield-management support. This is an operator-coordinated facility within a secure federal environment, not an unrestricted launch area.",
+      "partnership_opportunities": "Start with Virginia Spaceport Authority's public inquiry route for mission integration and airfield coordination.",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
@@ -12927,7 +13006,7 @@
       "test_last_verified_at": "2026-09-06",
       "test_runway_length_ft": 3000,
       "test_source_url": "https://www.vaspace.org/our-facilities",
-      "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
+      "unmanned_systems_relevance": "Dedicated UAS infrastructure with operator support for matching test and demonstration plans to site requirements.",
       "website_url": "https://www.vaspace.org/our-facilities"
     },
     {
@@ -13415,20 +13494,23 @@
       "website_url": "https://www.micron.com/us-expansion/va"
     },
     {
-      "activity_last_verified_at": "2026-08-21",
-      "activity_source_url": "https://maap.ictas.vt.edu/About/about-us.html",
+      "activity_last_verified_at": "2026-09-07",
+      "activity_source_url": "https://maap.ictas.vt.edu/capabilities/test-evaluation.html",
       "activity_status": "active",
       "address_line": "1991 Kraft Drive, Building 19",
       "capabilities": [
-        "Autonomy and artificial intelligence",
-        "Testing, evaluation, verification, and validation"
+        "Testing, evaluation, verification, and validation",
+        "Safety, policy, regulatory, and airspace integration",
+        "Perception, sensing, and sensor fusion",
+        "Command, control, and communications",
+        "Systems engineering and integration"
       ],
       "city": "Blacksburg",
       "contact_email": "maapinfo@vt.edu",
       "contact_phone": "540-231-9416",
-      "contact_text": "MAAP research, testing, and partnership inquiries",
+      "contact_text": "MAAP research, flight-test, and safety-case project inquiries",
       "contact_url": "https://maap.ictas.vt.edu/Contact.html",
-      "current_activity": "MAAP remains an FAA-designated UAS test site supporting research, flight testing, evaluation, operational approvals, and safety-case development.",
+      "current_activity": "MAAP publishes airworthiness, impact, detect-and-avoid, communications, and standards-testing services, supported by mobile operations resources.",
       "latitude": 37.202048,
       "location_precision": "site",
       "longitude": -80.409798,
@@ -13436,8 +13518,8 @@
         "Training and experimentation"
       ],
       "name": "Mid-Atlantic Aviation Partnership",
-      "overview": "FAA-designated UAS test-site organization managed by Virginia Tech. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
-      "partnership_opportunities": "Government, industry, and research organizations can contact MAAP about flight testing, evaluations, operational concepts, and Virginia FAA BEYOND activities.",
+      "overview": "Virginia Tech's FAA-designated UAS test-site organization provides flight-test planning, engineering evaluation, airworthiness assessment, and safety-case development. Published specialties include impact/injury-risk testing, detect-and-avoid sensor evaluation, command-and-control testing, and standards-related assessment. MAAP uses mobile command, surveillance, and weather resources to work at mission-appropriate locations. Its Blacksburg organization address is not the boundary of a single flight range; Kentland is one of its local testing resources.",
+      "partnership_opportunities": "Contact MAAP to match a proposed aircraft or sensor test with facilities, research staff, and an appropriate operating environment.",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
@@ -13446,7 +13528,7 @@
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "New River Valley",
-      "short_description": "FAA-designated UAS test-site organization managed by Virginia Tech.",
+      "short_description": "Virginia Tech UAS test-site organization offering flight evaluation, safety-case development, impact testing, and sensor assessment.",
       "sources": [
         {
           "title": "VEDP: Unmanned Systems in Virginia",
@@ -13467,6 +13549,14 @@
         {
           "title": "Virginia FAA BEYOND partnership",
           "url": "https://maap.ictas.vt.edu/BEYOND/aboutBEYOND.html"
+        },
+        {
+          "title": "MAAP engineering, sensor, impact and standards testing",
+          "url": "https://maap.ictas.vt.edu/capabilities/test-evaluation.html"
+        },
+        {
+          "title": "MAAP mobile resources and site-specific operations",
+          "url": "https://maap.ictas.vt.edu/capabilities/facilities.html"
         }
       ],
       "state": "VA",
@@ -13475,7 +13565,13 @@
         "Test and operational environments",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
+      "test_access": "MAAP selects locations and works with partners and regulators on mission-specific arrangements. Contact the team before assuming access or an operating approval.",
+      "test_aircraft": "UAS engineering and airworthiness evaluation; injury-risk and impact testing; detect-and-avoid, communications, and other standards-related assessment.",
+      "test_dimensions": "Mobile operations command center, surveillance equipment, weather instrumentation, and access to mission-specific sites. Kentland's runway is recorded separately; there is no single MAAP-wide runway length.",
+      "test_last_verified_at": "2026-09-07",
+      "test_runway_length_ft": null,
+      "test_source_url": "https://maap.ictas.vt.edu/capabilities/facilities.html",
+      "unmanned_systems_relevance": "Research and test partner for companies developing aircraft, sensors, communications, and evidence for more complex UAS operations.",
       "website_url": "https://maap.ictas.vt.edu/About/about-us.html"
     },
     {
@@ -17436,16 +17532,21 @@
       "website_url": "https://www.orangecountyva.gov/sheriff"
     },
     {
+      "activity_last_verified_at": "2026-09-07",
+      "activity_source_url": "https://www.p1tec.com/capabilities/pcba-box-builds-electronics-integration",
+      "activity_status": "active",
       "address_line": "6591 Merriman Road",
       "capabilities": [
         "Manufacturing, materials, and prototyping",
-        "Systems engineering and integration"
+        "Systems engineering and integration",
+        "Testing, evaluation, verification, and validation"
       ],
       "city": "Roanoke",
       "contact_email": "info@p1tec.com",
-      "contact_phone": "",
-      "contact_text": "Organization public information and inquiries",
-      "contact_url": "https://www.p1tec.com/contact-us",
+      "contact_phone": "540-772-7950",
+      "contact_text": "P1 corporate manufacturing and electronics inquiries",
+      "contact_url": "https://www.p1tec.com/",
+      "current_activity": "P1 currently markets PCB assembly and electronics-integration services. The earlier Blue Vigil manufacturing relationship is retained as historical context, not a newly confirmed order.",
       "latitude": 37.197351,
       "location_precision": "site",
       "longitude": -79.99951,
@@ -17453,7 +17554,8 @@
         "Training and experimentation"
       ],
       "name": "P1 Technologies Keltech Division",
-      "overview": "Roanoke manufacturing operation documented by VEDP as the producer of Blue Vigil's tethered-drone systems. Public sources support its classification as a Virginia organization. Documented capabilities include Manufacturing, materials, and prototyping and Systems engineering and integration. Relevant mission areas include Training and experimentation.",
+      "overview": "Roanoke electronics-manufacturing resource within P1 Technologies. Current company materials describe printed-circuit-board assembly, box builds, cable assemblies, tooling, prototyping, and inspection. Its electronics page lists surface-mount and through-hole assembly, automated optical inspection, and customer-defined functional testing. Earlier VEDP reporting linked Keltech to Blue Vigil tethered-drone production; that historical customer example does not establish a current contract or assign all P1 equipment to the mapped Keltech site.",
+      "partnership_opportunities": "Contact P1 to discuss drawings, assembly requirements, test criteria, and the appropriate Roanoke production location.",
       "platform_domains": [
         "Cross-domain autonomy"
       ],
@@ -17461,7 +17563,7 @@
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Roanoke Valley",
-      "short_description": "Roanoke manufacturing operation documented by VEDP as the producer of Blue Vigil's tethered-drone systems.",
+      "short_description": "Roanoke electronics and electromechanical manufacturing resource with PCB assembly, box-build, cable, and testing capabilities.",
       "sources": [
         {
           "title": "P1 Technologies Roanoke Manufacturing",
@@ -17474,6 +17576,10 @@
         {
           "title": "P1 Technologies contact information",
           "url": "https://www.p1tec.com/contact-us"
+        },
+        {
+          "title": "P1 PCB assembly, electronics integration and testing",
+          "url": "https://www.p1tec.com/capabilities/pcba-box-builds-electronics-integration"
         }
       ],
       "state": "VA",
@@ -17483,7 +17589,7 @@
         "Supporting ecosystem asset",
         "Manufacturing facilities"
       ],
-      "unmanned_systems_relevance": "Provides advanced manufacturing, modeling, sensing, communications, or prototyping capacity that enables unmanned-system development and scale-up.",
+      "unmanned_systems_relevance": "Supporting supplier for UAS electronics, interconnects, and integrated assemblies; current drone-specific orders and site workshare require confirmation.",
       "website_url": "https://www.p1tec.com/"
     },
     {
@@ -17726,17 +17832,21 @@
       "website_url": "https://perimeteraigroup.com/company/"
     },
     {
+      "activity_last_verified_at": "2026-09-07",
+      "activity_source_url": "https://www.perronerobotics.com/",
+      "activity_status": "active",
       "address_line": "1000 Research Park Boulevard, Suite 106",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration",
-        "Manufacturing, materials, and prototyping"
+        "Navigation and positioning"
       ],
       "city": "Charlottesville",
-      "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Organization public information and inquiries",
+      "contact_email": "sales@perronerobotics.com",
+      "contact_phone": "434-260-8550",
+      "contact_text": "Perrone vehicle and deployment sales inquiries",
       "contact_url": "https://www.perronerobotics.com/contact/",
+      "current_activity": "Perrone currently advertises TONY retrofit/factory-fit autonomy and turnkey passenger and cargo offerings.",
       "latitude": 38.150355,
       "location_precision": "exact",
       "longitude": -78.43496,
@@ -17744,7 +17854,8 @@
         "Logistics and contested logistics"
       ],
       "name": "Perrone Robotics",
-      "overview": "Developer of autonomous retrofit systems for transit and other vehicle platforms. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence and Systems engineering and integration. Relevant mission areas include Logistics and contested logistics.",
+      "overview": "Charlottesville autonomous-vehicle developer offering the TONY autonomy kit for retrofit or factory integration, alongside turnkey passenger and cargo vehicle offerings. Its public materials address shuttles, buses, logistics, and specialty vehicle applications. This is a company and engineering contact point, not proof that every advertised vehicle or deployment operates at the Virginia address. Route conditions, vehicle compatibility, safety responsibilities, and deployment scope need project-specific discussion.",
+      "partnership_opportunities": "Contact the published sales team to discuss a vehicle, route, or deployment requirement.",
       "platform_domains": [
         "Ground vehicles and robotics"
       ],
@@ -17752,7 +17863,7 @@
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Central Virginia",
-      "short_description": "Developer of autonomous retrofit systems for transit and other vehicle platforms.",
+      "short_description": "Charlottesville developer of TONY autonomous-vehicle kits and passenger/cargo vehicle integration solutions.",
       "sources": [
         {
           "title": "VEDP: Virginia Unmanned Systems Companies",
@@ -17769,6 +17880,10 @@
         {
           "title": "Perrone Robotics deployments",
           "url": "https://www.perronerobotics.com/deployments"
+        },
+        {
+          "title": "Perrone TONY autonomy and vehicle offerings",
+          "url": "https://www.perronerobotics.com/"
         }
       ],
       "state": "VA",
@@ -17776,8 +17891,8 @@
         "Companies and solution providers",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Develops or integrates documented autonomous-ground-vehicle technology.",
-      "website_url": "https://www.vedp.org/news/home-business-more-400-years"
+      "unmanned_systems_relevance": "Ground-vehicle autonomy and systems integration for organizations evaluating transit, logistics, or specialty fleet applications.",
+      "website_url": "https://www.perronerobotics.com/"
     },
     {
       "activity_last_verified_at": "2026-08-25",
@@ -18185,7 +18300,7 @@
       "website_url": "https://www.pwcva.gov/news/pwcpd-spotlight-departments-suas-team-serving-sky/"
     },
     {
-      "activity_last_verified_at": "2026-08-24",
+      "activity_last_verified_at": "2026-09-07",
       "activity_source_url": "https://psionicnav.com/",
       "activity_status": "active",
       "address_line": "1100 Exploration Way, Suite 209",
@@ -18197,9 +18312,9 @@
       "city": "Hampton",
       "contact_email": "contactus@psionicnav.com",
       "contact_phone": "",
-      "contact_text": "Psionic company inquiries",
+      "contact_text": "Psionic navigation-product and demonstration inquiries",
       "contact_url": "https://psionicnav.com/",
-      "current_activity": "Psionic currently markets SurePath navigation sensors for defense, aviation, and ground platforms and is developing an end-to-end navigation system.",
+      "current_activity": "Psionic markets SurePath and space-navigation lidar. Its website identifies an end-to-end navigation system as under development, with a company-stated Q1 2027 target rather than a completed delivery.",
       "latitude": 37.082521,
       "location_precision": "exact",
       "longitude": -76.399763,
@@ -18209,7 +18324,8 @@
         "Infrastructure inspection"
       ],
       "name": "Psionic",
-      "overview": "Psionic is a Hampton company founded by former NASA engineers. It develops laser-based navigation sensors and systems that provide velocity, position, and attitude information for autonomous land, air, and space vehicles when GPS is degraded, jammed, spoofed, or unavailable.",
+      "overview": "Hampton navigation-technology company developing laser-based motion sensing for vehicles that cannot rely on satellite navigation. Its SurePath offering targets air and ground applications; its Space Navigation Doppler Lidar supports landing, docking, and surface-mobility applications. The public website distinguishes the existing sensor offering from a fuller end-to-end navigation system still under development. Product performance and integration suitability should be evaluated for the intended vehicle, rather than treating company-wide claims as guaranteed outcomes.",
+      "partnership_opportunities": "Use Psionic's inquiry or demonstration route to discuss sensor integration and the maturity of the requested configuration.",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Ground vehicles and robotics",
@@ -18229,6 +18345,10 @@
         {
           "title": "NASA Spinoff profile of Psionic navigation technology",
           "url": "https://spinoff.nasa.gov/Softer_Moon_Landings_for_Companies"
+        },
+        {
+          "title": "Psionic SurePath applications and integration context",
+          "url": "https://psionicnav.com/explore-surepath/"
         }
       ],
       "state": "VA",
@@ -18237,7 +18357,7 @@
         "Research and technical depth",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Provides documented assured navigation, positioning, and sensing technology for manned and unmanned autonomous platforms.",
+      "unmanned_systems_relevance": "Navigation sensors and integration expertise for autonomous vehicles operating with degraded or unavailable GPS.",
       "website_url": "https://psionicnav.com/"
     },
     {
@@ -25954,7 +26074,7 @@
       "website_url": "https://news.vt.edu/articles/2025/04/research-counteruascenter.html"
     },
     {
-      "activity_last_verified_at": "2026-08-21",
+      "activity_last_verified_at": "2026-09-07",
       "activity_source_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
       "activity_status": "active",
       "address_line": "2143 Oak Lane",
@@ -25965,9 +26085,9 @@
       "city": "Blacksburg",
       "contact_email": "VTDronePark@vt.edu",
       "contact_phone": "540-231-7303",
-      "contact_text": "Virginia Tech Drone Park scheduling and facility inquiries",
+      "contact_text": "Virginia Tech Drone Park scheduling and orientation",
       "contact_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
-      "current_activity": "Virginia Tech operates the netted Drone Park for instruction, research, and controlled flight work, with adjacent laboratory and classroom support.",
+      "current_activity": "The park publishes a flight-time request process, orientation, and additional conditions for commercial and third-party users.",
       "development_last_verified_at": "2026-08-21",
       "development_notes": "The published facility is an operating research and teaching site. No claim is made that land or facility space is generally available for development.",
       "development_source_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
@@ -25980,9 +26100,9 @@
         "Training and experimentation"
       ],
       "name": "Virginia Tech Drone Park",
-      "overview": "Netted flight facility supporting university UAS instruction, research, and operations. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+      "overview": "Virginia Tech facility for drone research, instruction, and technology testing in a netted enclosure, with adjacent laboratory and classroom space. It supports contained experimentation and pilot learning rather than an open-air long-range flight corridor.",
       "owner_operator": "Virginia Tech Institute for Critical Technology and Applied Science",
-      "partnership_opportunities": "University and external users can request scheduling; the facility notes that commercial and other third-party use may require additional arrangements.",
+      "partnership_opportunities": "Request flight time with the number of participants and preferred date; complete orientation and confirm any external-user requirements.",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
@@ -26013,7 +26133,7 @@
       "test_dimensions": "300 x 120 x 85 ft netted enclosure, approximately three million cubic feet of flight space; adjacent laboratory and classroom space. This is not an open-air runway.",
       "test_last_verified_at": "2026-09-06",
       "test_source_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
-      "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
+      "unmanned_systems_relevance": "Contained flight-testing and educational resource for university users and external projects meeting the operator's requirements.",
       "website_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html"
     },
     {

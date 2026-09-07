@@ -46,6 +46,7 @@ ALLOWED_FIELDS = {
     "activity_source_url",
     "activity_status",
     "current_activity",
+    "partnership_opportunities",
     "activity_last_verified_at",
 }
 
