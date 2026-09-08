@@ -268,7 +268,7 @@ class Asset(models.Model):
         ]
 
     def __str__(self):
-        return self.name
+        return self.public_name
 
     @classmethod
     def public_status_values(cls):

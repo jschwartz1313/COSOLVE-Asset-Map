@@ -46,6 +46,7 @@ INTERVIEW_FOLLOWUP_PATH = ROOT / "data" / "asset_interview_followup_2026_09_06.j
 AIRPORT_WEBSITE_CORRECTIONS_PATH = ROOT / "data" / "airport_website_corrections_2026_09_06.json"
 PROFILE_IMPROVEMENTS_PATH = ROOT / "data" / "profile_improvements_2026_09_06.json"
 CAPABILITY_PROFILES_PATH = ROOT / "data" / "capability_profiles_2026_09_07.json"
+AIRPORT_DISPLAY_NAMES_PATH = ROOT / "data" / "airport_display_names_2026_09_07.json"
 
 IPEDS_NAME_ALIASES = {
     "University of Virginia-Main Campus": "University of Virginia",
@@ -11529,6 +11530,7 @@ def apply_reviewed_corrections(records):
     corrections += json.loads(AIRPORT_WEBSITE_CORRECTIONS_PATH.read_text())["corrections"]
     corrections += json.loads(PROFILE_IMPROVEMENTS_PATH.read_text())["corrections"]
     corrections += json.loads(CAPABILITY_PROFILES_PATH.read_text())["corrections"]
+    corrections += json.loads(AIRPORT_DISPLAY_NAMES_PATH.read_text())["corrections"]
     for correction in corrections:
         record = records_by_name[correction["name"]]
         record.update(correction["after"])

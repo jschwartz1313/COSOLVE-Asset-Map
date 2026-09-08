@@ -2994,7 +2994,7 @@
       "contact_phone": "804-236-3624",
       "contact_text": "Virginia Department of Aviation public information",
       "contact_url": "http://www.campbellfieldairport.com/",
-      "display_name": "Campbell Field",
+      "display_name": "Campbell Field Airport",
       "latitude": 37.458477,
       "location_last_verified_at": "2026-09-04",
       "location_method": "published",
@@ -3035,6 +3035,10 @@
         {
           "title": "Campbell Field Airport: operator website",
           "url": "http://www.campbellfieldairport.com/"
+        },
+        {
+          "title": "Virginia Tourism Corporation: Campbell Field Airport (9VG)",
+          "url": "https://www.virginia.org/listing/campbell-field-airport/11334/amp/"
         }
       ],
       "state": "VA",
@@ -10120,7 +10124,7 @@
       "contact_phone": "540-839-5326",
       "contact_text": "Airport public contact: Parke Kerschner, Manager",
       "contact_url": "https://bathco.hosted.civiclive.com/government/boards___commissions/airport_authority",
-      "display_name": "Ingalls Field",
+      "display_name": "Ingalls Field Airport",
       "latitude": 37.95146,
       "location_last_verified_at": "2026-09-04",
       "location_method": "published",

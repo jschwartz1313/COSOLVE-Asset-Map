@@ -10,6 +10,7 @@ from django.http import HttpResponse
 from django.utils import timezone
 from simple_history.admin import SimpleHistoryAdmin
 
+from apps.api.search import PUBLIC_NAME_ORDER
 from apps.imports.services import CSV_COLUMNS, asset_csv_row
 from apps.sources.models import Source
 
@@ -220,7 +221,7 @@ def export_selected(modeladmin, request, queryset):
 @admin.register(Asset)
 class AssetAdmin(SimpleHistoryAdmin):
     list_display = (
-        "name",
+        "asset_name",
         "record_type",
         "region",
         "activity_status",
@@ -257,6 +258,12 @@ class AssetAdmin(SimpleHistoryAdmin):
         "contact_email",
         "city",
     )
+    ordering = (PUBLIC_NAME_ORDER, "name")
+
+    @admin.display(description="Asset name", ordering=PUBLIC_NAME_ORDER)
+    def asset_name(self, obj):
+        return obj.public_name
+
     prepopulated_fields = {"slug": ("name",)}
     filter_horizontal = ("strategic_categories", "platform_domains", "capabilities", "missions")
     readonly_fields = (

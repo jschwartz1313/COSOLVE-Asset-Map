@@ -1,0 +1,27 @@
+{
+  "reviewed_at": "2026-09-07",
+  "scope": "Complete the two remaining Field labels with the published Airport suffix. Stable catalog names, slugs, coordinates and review decisions are unchanged.",
+  "corrections": [
+    {
+      "name": "Campbell Fld",
+      "provenance": "faa-public-airport",
+      "before": {"display_name": "Campbell Field"},
+      "after": {"display_name": "Campbell Field Airport"},
+      "add_sources": [
+        {
+          "title": "Virginia Tourism Corporation: Campbell Field Airport (9VG)",
+          "url": "https://www.virginia.org/listing/campbell-field-airport/11334/amp/"
+        }
+      ],
+      "reason": "Virginia Tourism Corporation identifies Campbell Field Airport with FAA identifier 9VG. This is a display-label clarification, not a new operational or access verification."
+    },
+    {
+      "name": "Ingalls Fld",
+      "provenance": "faa-public-airport",
+      "before": {"display_name": "Ingalls Field"},
+      "after": {"display_name": "Ingalls Field Airport"},
+      "add_sources": [],
+      "reason": "Bath County's airport-authority page identifies Ingalls Field Airport at 6240 Airport Road. The existing county source is retained; this does not change operating or access claims."
+    }
+  ]
+}
