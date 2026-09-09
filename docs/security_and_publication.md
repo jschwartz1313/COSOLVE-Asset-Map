@@ -18,6 +18,11 @@ Source monitoring rejects local, private, reserved, credential-bearing, non-HTTP
 
 Direct login is rate-limited. Password recovery uses email, optional TOTP supplies a second factor and recovery codes, and optional OpenID Connect can connect an organization identity only to an active account that an administrator created in advance. Public account signup remains closed.
 
+The configured sign-in allowance is 40 attempts per five minutes per detected client IP.
+Failed-password protection remains five failed attempts per five minutes. Multiple people
+can keep independent sessions on the same account; signing out closes only that browser's
+session. These are sign-in rate limits, not a limit on concurrent authenticated viewers.
+
 Never store or publish classified information, CUI, export-controlled technical data, live operational data, vulnerabilities, security procedures, or precise details that increase physical-security risk. The public viewer is an ecosystem-navigation product, not an operational map.
 
 Before production, configure HTTPS, secure cookies, SMTP, restricted admin access, centralized logging, automated backups, and a tested restore process. Define role permissions and location-generalization rules with COSOLVE before adding partner-only data.

@@ -149,7 +149,7 @@ ACCOUNT_LOGIN_ON_PASSWORD_RESET = True
 ACCOUNT_SESSION_REMEMBER = True
 ACCOUNT_RATE_LIMITS = {
     "login_failed": "5/5m",
-    "login": "20/5m",
+    "login": "40/5m",
     "reset_password": "5/h",
     "reset_password_email": "5/h",
 }
