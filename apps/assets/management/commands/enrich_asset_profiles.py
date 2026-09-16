@@ -479,7 +479,10 @@ class Command(BaseCommand):
                     "longitude",
                     "location_precision",
                 ):
-                    setattr(asset, field, record.get(field))
+                    value = record.get(field)
+                    if value is None and not asset._meta.get_field(field).null:
+                        value = ""
+                    setattr(asset, field, value)
                     changed_fields.append(field)
                 asset.region, _created = Region.objects.get_or_create(
                     name=record["region"],

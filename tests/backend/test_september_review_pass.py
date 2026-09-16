@@ -134,6 +134,13 @@ class SeptemberReviewPassTests(SimpleTestCase):
             with self.assertRaisesRegex(ValueError, "Invalid public contact URL"):
                 validate([record], [])
 
+    def test_atomic_corrections_run_before_generic_profile_enrichment(self):
+        build = (settings.BASE_DIR / "build.sh").read_text()
+        self.assertLess(
+            build.index("--corrections data/asset_corrections_2026_09_16.json"),
+            build.index("python manage.py enrich_asset_profiles"),
+        )
+
 
 class SeptemberReviewDeploymentTests(TestCase):
     def test_fresh_install_replays_older_location_updates_without_false_conflicts(self):
@@ -187,6 +194,8 @@ class SeptemberReviewDeploymentTests(TestCase):
             fixture.write_text(json.dumps({"records": old_records, "relationships": []}))
             call_command("seed_real_data", catalog=fixture, stdout=StringIO())
             call_command("apply_catalog_corrections", corrections=path, stdout=StringIO())
+            fixture.write_text(json.dumps({"records": final_records, "relationships": []}))
+            call_command("enrich_asset_profiles", catalog=fixture, stdout=StringIO())
             output = StringIO()
             call_command("apply_catalog_corrections", corrections=path, stdout=output)
             self.assertIn("Applied 0 catalog corrections; preserved 0 conflicts", output.getvalue())

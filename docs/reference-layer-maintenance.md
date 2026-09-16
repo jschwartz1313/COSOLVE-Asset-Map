@@ -78,8 +78,22 @@ remain in the browser cache until they expire. Do not bypass provider caches or
 bulk-download tiles. For sustained production use, configure an appropriately
 licensed provider using the existing basemap environment variables.
 
-Outstanding provider setup: on September 15 the default CARTO Light basemap
-returned tiles watermarked "API KEY REQUIRED" in a normal browser. Street works
-after the referrer correction. The maintainer should configure a licensed Light
-provider through `LIGHT_BASEMAP_TILE_URL` and its matching attribution; no API
-credentials were created, purchased, or committed as part of this change.
+The CARTO Light basemap requires a provider-issued key. Set
+`CARTO_BASEMAP_API_KEY` in the local `.env` and in the hosted service's environment;
+restart or redeploy that service after changing it. Do not commit the value.
+The setting adds the key only to CARTO's Light tile requests. A non-empty
+`LIGHT_BASEMAP_TILE_URL` overrides this configuration completely; configure its
+matching attribution when using another provider.
+
+The browser needs the tile key, so it is visible in map requests even though it is
+not in GitHub. Restrict it in the CARTO dashboard to the site's actual hosts,
+including `cosolve-asset-map.onrender.com`, `127.0.0.1`, and `localhost` while local
+development is needed. Do not use wildcard access to unrelated Render sites.
+Add the eventual VIPC hostname before switching domains. Keep CARTO and
+OpenStreetMap attribution visible, including in exported maps.
+
+Provider references: [key setup](https://carto.com/basemaps/apikey/) and
+[basemap documentation](https://docs.carto.com/faqs/carto-basemaps).
+The raster tiles used by Leaflet remain available but are being retired; plan a
+separately tested vector-basemap migration rather than replacing the map engine
+as part of a credential change.

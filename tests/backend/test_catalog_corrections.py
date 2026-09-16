@@ -139,6 +139,13 @@ class CatalogCorrectionTests(TestCase):
             call_command("enrich_asset_profiles", catalog=path, stdout=StringIO())
         self.asset.refresh_from_db()
 
+    def test_location_enrichment_preserves_blank_postal_code_as_empty_text(self):
+        self.enrich(postal_code=None)
+        self.assertEqual(self.asset.postal_code, "")
+        self.assertEqual(self.asset.location_precision, "site")
+        self.assertEqual(self.asset.latitude, Decimal("37.538119"))
+        self.asset.full_clean()
+
     def test_enrichment_does_not_undo_a_conflicted_location_correction(self):
         self.asset.longitude = -78
         self.asset.save()

@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+from urllib.parse import urlencode
 
 import dj_database_url
 from dotenv import load_dotenv
@@ -104,10 +105,12 @@ BASEMAP_ATTRIBUTION = os.getenv(
     "BASEMAP_ATTRIBUTION",
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 )
-LIGHT_BASEMAP_TILE_URL = os.getenv(
-    "LIGHT_BASEMAP_TILE_URL",
-    "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-)
+CARTO_BASEMAP_API_KEY = os.getenv("CARTO_BASEMAP_API_KEY", "").strip()
+_carto_light_url = "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+if CARTO_BASEMAP_API_KEY:
+    _carto_light_url += "?" + urlencode({"key": CARTO_BASEMAP_API_KEY})
+# A custom provider overrides CARTO; never send the CARTO key to that provider.
+LIGHT_BASEMAP_TILE_URL = os.getenv("LIGHT_BASEMAP_TILE_URL") or _carto_light_url
 LIGHT_BASEMAP_ATTRIBUTION = os.getenv(
     "LIGHT_BASEMAP_ATTRIBUTION",
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, '
