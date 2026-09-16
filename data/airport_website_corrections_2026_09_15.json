@@ -1,0 +1,56 @@
+{
+  "reviewed_at": "2026-09-15",
+  "scope": "Follow-up of the ten unresolved airport websites. Website identity only; no operating conditions or verification status changed.",
+  "corrections": [
+    {
+      "name": "Falwell",
+      "identifier": "W24",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://mclarencorporation.com/",
+        "contact_url": "https://mclarencorporation.com/"
+      },
+      "add_sources": [
+        {
+          "title": "Falwell Airport: McLaren Corporation operator and public contact page",
+          "url": "https://mclarencorporation.com/"
+        }
+      ],
+      "reason": "Airport website follow-up 2026-09-15 (W24). McLaren's page explicitly identifies its Falwell Airport location and lists public contact details. Cross-checked with the DOAV sponsor directory naming Roger Beck of McLaren as airport manager. Not confused with Freedom Aviation's LYH location. Preserves FAA evidence and editorial status."
+    },
+    {
+      "name": "Middle Peninsula Rgnl",
+      "identifier": "FYJ",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "after": {
+        "website_url": "https://www.west-point.va.us/community/visitors/airport.php",
+        "contact_url": "https://www.west-point.va.us/community/visitors/airport.php"
+      },
+      "add_sources": [
+        {
+          "title": "Middle Peninsula Regional Airport: Town of West Point airport page",
+          "url": "https://www.west-point.va.us/community/visitors/airport.php"
+        }
+      ],
+      "reason": "Airport website follow-up 2026-09-15 (FYJ). The Town of West Point maintains a dedicated airport page identifying the Mattaponi facility and its manager's public contact details. Use this working government page rather than the unconfirmed fly-fyj.com destination. Preserves FAA evidence and editorial status."
+    }
+  ],
+  "unresolved": [
+    {"name": "Chase City Muni", "identifier": "CXE", "reason": "Town pages and DOAV sponsor contact checked; no dedicated current airport page confirmed."},
+    {"name": "Lake Anna", "identifier": "7W4", "reason": "DOAV lists Mile High Charters and manager contact; no confirmed airport operator website found."},
+    {"name": "Lake Country Rgnl", "identifier": "W63", "reason": "Town of Clarksville facilities page confirms the airport but links to AirNav. Former airport domain not confirmed usable; retain official DOAV reference."},
+    {"name": "Mc Laughlin", "identifier": "2G6", "reason": "No confirmed public operator website found; retain official airport evidence."},
+    {"name": "New London", "identifier": "W90", "reason": "Liberty ownership and airport activity documented, but its articles and LYH-based Freedom Aviation homepage are not current airport-specific contact pages. Former domain not confirmed usable."},
+    {"name": "New Market", "identifier": "8W2", "reason": "DOAV identifies New Market Aeronautics. No dedicated operator site confirmed; do not substitute the manager's separate balloon business."},
+    {"name": "Smith Mountain Lake", "identifier": "W91", "reason": "SML Aviation identifies itself as a flight school at W91; airport ownership/management is separately listed by DOAV. Do not label the tenant school as the airport operator."},
+    {"name": "Tangier Island", "identifier": "TGI", "reason": "DOAV identifies the Town of Tangier and town office contact, but no dedicated airport operator page confirmed."}
+  ]
+}

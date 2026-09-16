@@ -1,0 +1,41 @@
+name: Reference layer refresh review
+
+on:
+  schedule:
+    - cron: '17 10 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  prepare-snapshots:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Install geometry and project dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libgeos-c1v5 libgdal-dev
+          python -m pip install -e .
+      - name: Download candidate reference layers
+        run: |
+          python scripts/build_drone_airspace_layers.py --faa-only --output-dir tmp/reference-refresh
+          python scripts/build_heliport_layer.py --output-dir tmp/reference-refresh
+      - name: Check completeness and geometry
+        run: python scripts/review_reference_refresh.py tmp/reference-refresh
+      - name: Save snapshots for maintainer review
+        uses: actions/upload-artifact@v4
+        with:
+          name: reference-layer-review
+          path: tmp/reference-refresh/*.geojson
+          retention-days: 30
+          if-no-files-found: error
+      - name: Review instructions
+        run: |
+          echo 'Validated FAA snapshots are in the reference-layer-review artifact. Review and publish them using docs/reference-layer-maintenance.md. This workflow does not automatically change the live site.' >> "$GITHUB_STEP_SUMMARY"

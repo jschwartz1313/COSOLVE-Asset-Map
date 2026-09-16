@@ -2043,6 +2043,23 @@
     {
       "geometry": {
         "coordinates": [
+          -80.395372,
+          37.190137
+        ],
+        "type": "Point"
+      },
+      "properties": {
+        "identifier": "8VA2",
+        "name": "Virginia Tech Vertiport",
+        "service_city": "Blacksburg",
+        "status": "Operational",
+        "use": "Private use"
+      },
+      "type": "Feature"
+    },
+    {
+      "geometry": {
+        "coordinates": [
           -78.154594,
           38.919386
         ],
@@ -2162,8 +2179,8 @@
   ],
   "metadata": {
     "disclaimer": "Reference only. Inclusion does not imply public access, landing permission, operational availability, or authorization for any flight.",
-    "feature_count": 127,
-    "generated_at": "2026-08-06",
+    "feature_count": 128,
+    "generated_at": "2026-09-15",
     "information_url": "https://www.faa.gov/data/aero_data",
     "scope": "Operational private-use heliports recorded by the FAA in Virginia",
     "source": "FAA Airports Feature Service",

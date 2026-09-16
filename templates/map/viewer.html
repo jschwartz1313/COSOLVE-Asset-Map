@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260821-5">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260915-1">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
@@ -18,11 +18,11 @@
       data-counties-url="{% static 'data/virginia-counties.geojson' %}?v=2025"
       data-regions-url="{% static 'data/virginia-regions.geojson' %}?v=20260728"
       data-mpz-candidates-url="{% static 'data/virginia-maritime-prosperity-candidates.geojson' %}?v=20260729"
-      data-heliports-url="{% static 'data/virginia-heliports.geojson' %}?v=20260806"
-      data-controlled-airspace-url="{% static 'data/virginia-surface-controlled-airspace.geojson' %}?v=20260812"
-      data-uas-facility-map-url="{% static 'data/virginia-uas-facility-map.geojson' %}?v=20260812"
-      data-flight-constraints-url="{% static 'data/virginia-flight-constraints.geojson' %}?v=20260812"
-      data-uas-test-sites-url="{% static 'data/virginia-uas-test-sites.geojson' %}?v=20260812"
+      data-heliports-url="{% static 'data/virginia-heliports.geojson' %}?v={{ layer_freshness.heliports.version }}"
+      data-controlled-airspace-url="{% static 'data/virginia-surface-controlled-airspace.geojson' %}?v={{ layer_freshness.controlled_airspace.version }}"
+      data-uas-facility-map-url="{% static 'data/virginia-uas-facility-map.geojson' %}?v={{ layer_freshness.uas_facility_map.version }}"
+      data-flight-constraints-url="{% static 'data/virginia-flight-constraints.geojson' %}?v={{ layer_freshness.flight_constraints.version }}"
+      data-uas-test-sites-url="{% static 'data/virginia-uas-test-sites.geojson' %}?v={{ layer_freshness.uas_test_sites.version }}"
       data-faa-uasfm-info-url="https://www.faa.gov/uas/getting_started/laanc"
       data-faa-airspace-info-url="https://www.faa.gov/uas/getting_started/where_can_i_fly/airspace_restrictions/flying_near_airports"
       data-faa-data-info-url="https://udds-faa.opendata.arcgis.com/"
@@ -63,7 +63,8 @@
         <p><strong>Potential MPZ tracts:</strong> U.S. Census Bureau geography cross-referenced with public information from MARAD, the Port of Virginia, and the U.S. Navy.</p>
         <p><strong>Asset points:</strong> Public institutional and government sources listed on each asset profile. Locations may be exact, approximate, or generalized.</p>
         <p><strong>Heliports:</strong> FAA Airports Feature Service records for operational private-use heliports.</p>
-        <p><strong>Drone airspace:</strong> FAA UAS Facility Map, Class Airspace, Special Use Airspace, and National Security UAS Flight Restrictions feature services, retrieved August 12, 2026.</p>
+        <p><strong>Drone airspace:</strong> FAA UAS Facility Map, Class Airspace, Special Use Airspace, and National Security UAS Flight Restrictions feature services. Snapshot dates appear beside each layer. These are downloaded reference snapshots, not live restrictions or flight permissions.</p>
+        <p><strong>Refresh reviews:</strong> Airspace weekly, heliports every 28 days, and test-facility specifications every 90 days. A snapshot date records retrieval, not operational verification. Updated datasets are checked before publication.</p>
         <p><strong>UAS test facilities:</strong> Published specifications from the Virginia Spaceport Authority, NASA Langley Research Center, and Virginia Tech.</p>
       </div>
     </details>
@@ -124,13 +125,14 @@
             <label title="Shade COSOLVE's working Virginia ecosystem regions"><input id="region-layer-toggle" type="checkbox"><span>Ecosystem regions</span></label>
             <label title="Show planning-candidate census tracts for the proposed federal Maritime Prosperity Zone program"><input id="mpz-layer-toggle" type="checkbox"><span>Potential MPZ tracts</span></label>
             <label title="Show Virginia county and independent-city boundaries"><input id="county-layer-toggle" type="checkbox"><span>County boundaries</span></label>
-            <label title="Show FAA-recorded operational private-use heliports for reference"><input id="heliport-layer-toggle" type="checkbox"><span>FAA heliports</span></label>
+            <label title="Show FAA-recorded operational private-use heliports for reference"><input id="heliport-layer-toggle" type="checkbox"><span>FAA heliports{% include "includes/layer_freshness.html" with layer=layer_freshness.heliports %}</span></label>
             <strong>Drone airspace</strong>
-            <label title="Show FAA Class B, C, D, and surface Class E airspace"><input id="controlled-airspace-toggle" type="checkbox"><span>Surface controlled airspace</span></label>
-            <label title="Show FAA grid altitudes used to evaluate Part 107 airspace authorization requests"><input id="uas-facility-map-toggle" type="checkbox"><span>FAA authorization ceilings</span></label>
-            <label title="Show FAA national-security UAS restrictions and special-use airspace"><input id="flight-constraints-toggle" type="checkbox"><span>Flight constraints</span></label>
+            <label title="Show FAA Class B, C, D, and surface Class E airspace"><input id="controlled-airspace-toggle" type="checkbox"><span>Surface controlled airspace{% include "includes/layer_freshness.html" with layer=layer_freshness.controlled_airspace %}</span></label>
+            <label title="Show FAA grid altitudes used to evaluate Part 107 airspace authorization requests"><input id="uas-facility-map-toggle" type="checkbox"><span>FAA authorization ceilings{% include "includes/layer_freshness.html" with layer=layer_freshness.uas_facility_map %}</span></label>
+            <label title="Show FAA national-security UAS restrictions and special-use airspace"><input id="flight-constraints-toggle" type="checkbox"><span>Flight constraints{% include "includes/layer_freshness.html" with layer=layer_freshness.flight_constraints %}</span></label>
+            <p class="layer-reference-note">Reference snapshots, not live flight permissions. <a href="https://www.faa.gov/uas/getting_started/where_can_i_fly" target="_blank" rel="noopener">Check current FAA guidance</a>.</p>
             <strong>Test infrastructure</strong>
-            <label title="Show Virginia UAS test facilities with published dimensions and operating constraints"><input id="uas-test-sites-toggle" type="checkbox"><span>UAS test facilities</span></label>
+            <label title="Show Virginia UAS test facilities with published dimensions and operating constraints"><input id="uas-test-sites-toggle" type="checkbox"><span>UAS test facilities{% include "includes/layer_freshness.html" with layer=layer_freshness.uas_test_sites %}</span></label>
             <strong>Point analysis</strong>
             <label title="Outline points by editorial review state"><input id="verification-layer-toggle" type="checkbox"><span>Verification status</span></label>
             <label title="Differentiate points by coordinate precision"><input id="precision-layer-toggle" type="checkbox"><span>Location precision</span></label>
@@ -226,6 +228,6 @@
 </main>
 <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
 <script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
-  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260906-2"></script>
+  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260915-1"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}

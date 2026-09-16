@@ -24,6 +24,7 @@ from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region,
 from apps.sources.models import Source
 
 from .forms import SavedViewForm, UpdateSubmissionForm
+from .map_layers import layer_freshness
 
 DIRECTORY_SORTS = (
     ("relevance", "Best match"),
@@ -127,6 +128,7 @@ def connect(request):
 def map_view(request):
     context = filter_context()
     context["total_assets"] = Asset.public.count()
+    context["layer_freshness"] = layer_freshness()
     return render(request, "map/viewer.html", context)
 
 

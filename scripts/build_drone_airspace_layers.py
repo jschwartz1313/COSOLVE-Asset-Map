@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """Build checked-in Virginia drone-airspace and test-facility reference layers."""
 
+import argparse
 import json
 import time
 import urllib.parse
 import urllib.request
+from datetime import UTC, datetime
 from pathlib import Path
 
 from django.contrib.gis.geos import GEOSGeometry
@@ -12,7 +14,7 @@ from django.contrib.gis.geos import GEOSGeometry
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "static" / "data"
 STATE_BOUNDARY = DATA_DIR / "virginia-state-boundary.geojson"
-GENERATED_AT = "2026-08-12"
+TEST_SITES_REVIEWED_AT = "2026-08-12"
 VIRGINIA_ENVELOPE = "-83.7,36.5,-75.1,39.6"
 
 FAA_ROOT = "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/arcgis/rest/services"
@@ -120,9 +122,9 @@ def request_geojson(layer_url, *, where, out_fields, geometry=None, page_size=20
             "outFields": out_fields,
             "returnGeometry": "true",
             "outSR": "4326",
-            "geometryPrecision": "6",
             "resultOffset": str(offset),
             "resultRecordCount": str(page_size),
+            "orderByFields": "OBJECTID ASC",
             "f": "geojson",
         }
         if geometry:
@@ -149,9 +151,13 @@ def request_geojson(layer_url, *, where, out_fields, geometry=None, page_size=20
                 time.sleep(65)
                 continue
             raise RuntimeError(error)
-        page = payload.get("features", [])
+        if payload.get("type") != "FeatureCollection":
+            raise ValueError("FAA response is not a GeoJSON FeatureCollection")
+        page = payload["features"]
+        if not page and payload.get("exceededTransferLimit"):
+            raise ValueError("FAA pagination returned an empty incomplete page")
         features.extend(page)
-        if len(page) < page_size:
+        if len(page) < page_size and not payload.get("exceededTransferLimit"):
             break
         offset += len(page)
     return features
@@ -180,13 +186,16 @@ def write_layer(
     information_url,
     features,
     disclaimer,
+    generated_at=None,
 ):
+    if not features:
+        raise ValueError(f"Refusing to publish an empty layer: {filename}")
     payload = {
         "type": "FeatureCollection",
         "metadata": {
             "name": name,
             "description": description,
-            "generated_at": GENERATED_AT,
+            "generated_at": generated_at or datetime.now(UTC).date().isoformat(),
             "feature_count": len(features),
             "source": source,
             "source_url": source_url,
@@ -196,6 +205,7 @@ def write_layer(
         "features": features,
     }
     output = DATA_DIR / filename
+    output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(payload, separators=(",", ":")) + "\n")
     print(f"Wrote {len(features)} features to {output}")
 
@@ -467,6 +477,7 @@ def build_test_sites():
         )
     write_layer(
         "virginia-uas-test-sites.geojson",
+        generated_at=TEST_SITES_REVIEWED_AT,
         name="Virginia UAS test facilities with published specifications",
         description=(
             "Selected Virginia flight facilities with official public dimensions, "
@@ -485,10 +496,17 @@ def build_test_sites():
 
 
 def main():
+    global DATA_DIR
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output-dir", type=Path, default=DATA_DIR)
+    parser.add_argument("--faa-only", action="store_true")
+    args = parser.parse_args()
+    DATA_DIR = args.output_dir
     build_uas_facility_map()
     build_surface_controlled_airspace()
     build_flight_constraints()
-    build_test_sites()
+    if not args.faa_only:
+        build_test_sites()
 
 
 if __name__ == "__main__":

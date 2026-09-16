@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """Build the checked-in Virginia heliport reference layer from FAA data."""
 
+import argparse
 import json
 import urllib.parse
 import urllib.request
+from datetime import UTC, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "static" / "data" / "virginia-heliports.geojson"
-GENERATED_AT = "2026-08-06"
 FAA_LAYER = (
     "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/"
     "US_Airport/FeatureServer/0"
@@ -34,7 +35,10 @@ def fetch_heliports():
         headers={"User-Agent": "cosolve-uxs-map-heliports/1.0"},
     )
     with urllib.request.urlopen(request, timeout=30) as response:  # noqa: S310
-        return json.load(response)["features"]
+        payload = json.load(response)
+    if payload.get("error") or payload.get("exceededTransferLimit"):
+        raise ValueError("FAA heliport response is incomplete or contains an error")
+    return payload["features"]
 
 
 def normalized_feature(feature):
@@ -57,16 +61,21 @@ def normalized_feature(feature):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--output-dir", type=Path, default=OUTPUT.parent)
+    args = parser.parse_args()
     features = [
         normalized_feature(feature)
         for feature in fetch_heliports()
         if feature.get("geometry")
     ]
     features.sort(key=lambda feature: feature["properties"]["name"].casefold())
+    if not features:
+        raise ValueError("Refusing to publish an empty heliport layer")
     payload = {
         "type": "FeatureCollection",
         "metadata": {
-            "generated_at": GENERATED_AT,
+            "generated_at": datetime.now(UTC).date().isoformat(),
             "feature_count": len(features),
             "source": "FAA Airports Feature Service",
             "source_url": FAA_LAYER,
@@ -79,8 +88,10 @@ def main():
         },
         "features": features,
     }
-    OUTPUT.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")
-    print(f"Wrote {len(features)} Virginia heliports to {OUTPUT}")
+    output = args.output_dir / OUTPUT.name
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n")
+    print(f"Wrote {len(features)} Virginia heliports to {output}")
 
 
 if __name__ == "__main__":

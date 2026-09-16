@@ -11528,6 +11528,9 @@ def apply_reviewed_corrections(records):
     followup_path = ROOT / "data" / "asset_corrections_2026_09_06.json"
     corrections += json.loads(followup_path.read_text())["corrections"]
     corrections += json.loads(AIRPORT_WEBSITE_CORRECTIONS_PATH.read_text())["corrections"]
+    corrections += json.loads(
+        (ROOT / "data" / "airport_website_corrections_2026_09_15.json").read_text()
+    )["corrections"]
     corrections += json.loads(PROFILE_IMPROVEMENTS_PATH.read_text())["corrections"]
     corrections += json.loads(CAPABILITY_PROFILES_PATH.read_text())["corrections"]
     corrections += json.loads(AIRPORT_DISPLAY_NAMES_PATH.read_text())["corrections"]

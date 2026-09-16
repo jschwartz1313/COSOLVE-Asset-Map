@@ -21,6 +21,7 @@ test("new testing and collaboration information fits all designs", async ({ page
   for (const theme of ["classic", "dark", "showcase", "showcase-light"]) {
     await page.goto("/assets/mid-atlantic-aviation-partnership/");
     await enterSite(page);
+    await page.locator(".appearance-menu > summary").click();
     await page.locator(`[data-theme-choice="${theme}"]`).click();
     await enterSite(page);
     await page.goto("/assets/mid-atlantic-aviation-partnership/");

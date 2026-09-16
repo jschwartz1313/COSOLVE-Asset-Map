@@ -4,6 +4,9 @@ import { readFileSync } from "node:fs";
 const catalog = JSON.parse(
   readFileSync(new URL("../../data/virginia_real_assets.json", import.meta.url), "utf8"),
 );
+const heliportCount = JSON.parse(
+  readFileSync(new URL("../../static/data/virginia-heliports.geojson", import.meta.url), "utf8"),
+).metadata.feature_count;
 
 test("map layers toggle without moving the reset control", async ({ page }) => {
   await page.goto("/map/");
@@ -68,7 +71,7 @@ test("map layers toggle without moving the reset control", async ({ page }) => {
   await expect(heliportToggle).not.toBeChecked();
   await expect(page.locator(".leaflet-heliports-pane .heliport-reference-shell")).toHaveCount(0);
   await heliportToggle.check();
-  await expect(page.locator(".leaflet-heliports-pane .heliport-reference-shell")).toHaveCount(127);
+  await expect(page.locator(".leaflet-heliports-pane .heliport-reference-shell")).toHaveCount(heliportCount);
   await page
     .locator(".leaflet-heliports-pane .heliport-reference-shell")
     .first()
@@ -192,6 +195,7 @@ test("visible map labels fit inside their controls across themes and widths", as
     if (await cover.isVisible()) await page.locator("[data-showcase-enter]").first().click();
 
     for (const theme of themes) {
+      await page.locator(".appearance-menu > summary").click();
       await page.locator(`[data-theme-choice="${theme}"]`).click();
       if (await cover.isVisible()) await page.locator("[data-showcase-enter]").first().click();
 
@@ -324,7 +328,7 @@ test("copy view link preserves the map position, filters, and layers", async ({
   await expect(page.locator("#uas-test-sites-toggle")).toBeChecked();
   await expect(page.locator(".leaflet-county-boundaries-pane path")).not.toHaveCount(0);
   await expect(page.locator(".leaflet-maritime-prosperity-zones-pane path")).toHaveCount(11);
-  await expect(page.locator(".leaflet-heliports-pane .heliport-reference-shell")).toHaveCount(127);
+  await expect(page.locator(".leaflet-heliports-pane .heliport-reference-shell")).toHaveCount(heliportCount);
   await expect(page.locator(".leaflet-controlled-airspace-pane path")).toHaveCount(33);
   await expect(page.locator(".leaflet-uas-facility-map-pane canvas")).toBeVisible();
   await expect(page.locator(".leaflet-flight-constraints-pane path")).toHaveCount(139);

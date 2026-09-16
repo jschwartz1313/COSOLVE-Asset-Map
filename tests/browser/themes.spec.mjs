@@ -5,6 +5,11 @@ const catalog = JSON.parse(
   readFileSync(new URL("../../data/virginia_real_assets.json", import.meta.url), "utf8"),
 );
 
+async function selectTheme(page, theme) {
+  await page.locator(".appearance-menu > summary").click();
+  await page.locator(`[data-theme-choice="${theme}"]`).click();
+}
+
 async function expectContiguousMapPanels(page) {
   if ((await page.viewportSize()).width <= 650) {
     await expect(page.locator('[data-panel-resizer="left"]')).toBeHidden();
@@ -53,7 +58,7 @@ test("four presentation modes preserve the same map data and controls", async ({
   const originalWorkspace = await page.locator(".map-workspace").boundingBox();
   const originalFilters = await page.locator(".filters-panel").boundingBox();
 
-  await page.locator('[data-theme-choice="dark"]').click();
+  await selectTheme(page, "dark");
   await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
   await expect(page.locator('[data-theme-choice="dark"]')).toHaveAttribute(
     "aria-pressed",
@@ -64,7 +69,7 @@ test("four presentation modes preserve the same map data and controls", async ({
   expect(await page.locator(".map-workspace").boundingBox()).toEqual(originalWorkspace);
   expect(await page.locator(".filters-panel").boundingBox()).toEqual(originalFilters);
 
-  await page.locator('[data-theme-choice="showcase"]').click();
+  await selectTheme(page, "showcase");
   await expect(page.locator("html")).toHaveAttribute("data-theme", "showcase");
   await expect(page.locator("[data-showcase-cover]")).toBeVisible();
   await expect(page.locator(".showcase-photo")).toHaveCount(3);
@@ -78,7 +83,7 @@ test("four presentation modes preserve the same map data and controls", async ({
   await expect(page.locator("html")).toHaveAttribute("data-theme", "showcase");
   await expect(page.locator("[data-showcase-cover]")).toBeHidden();
 
-  await page.locator('[data-theme-choice="showcase-light"]').click();
+  await selectTheme(page, "showcase-light");
   await expect(page.locator("html")).toHaveAttribute("data-theme", "showcase-light");
   await expect(page.locator('[data-theme-choice="showcase-light"]')).toHaveAttribute(
     "aria-pressed",
@@ -95,7 +100,7 @@ test("four presentation modes preserve the same map data and controls", async ({
   await expect(page.locator("html")).toHaveAttribute("data-theme", "showcase-light");
   await expect(page.locator("[data-showcase-cover]")).toBeHidden();
 
-  await page.locator('[data-theme-choice="classic"]').click();
+  await selectTheme(page, "classic");
   await expect(page.locator("html")).toHaveAttribute("data-theme", "classic");
 });
 
@@ -103,7 +108,7 @@ test("showcase imagery appears on supporting pages", async ({ page }) => {
   await page.goto("/directory/");
   await expect(page.locator(".directory-list")).toBeVisible();
 
-  await page.locator('[data-theme-choice="showcase"]').click();
+  await selectTheme(page, "showcase");
   await expect(page.locator("[data-showcase-cover]")).toBeVisible();
   await page.locator("[data-showcase-enter]").first().click();
   await expect(page).toHaveURL(/\/map\/$/);
@@ -114,13 +119,17 @@ test("the four-mode switch remains usable on mobile", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/map/");
   const switcher = page.locator(".appearance-switcher");
+  await expect(switcher).toBeHidden();
+  const headerBox = await page.locator(".site-header").boundingBox();
+  expect(headerBox.height).toBeLessThanOrEqual(100);
+  await page.locator(".appearance-menu > summary").click();
   await expect(switcher).toBeVisible();
   await expect(switcher.locator("button")).toHaveCount(4);
   expect(
     await switcher.locator("button").evaluateAll((buttons) =>
-      buttons.map((button) => getComputedStyle(button, "::after").content.replaceAll('"', "")),
+      buttons.map((button) => button.textContent.trim()),
     ),
-  ).toEqual(["Current", "Dark", "Show", "Light"]);
+  ).toEqual(["Current", "Dark", "Showcase", "Showcase Light"]);
 
   const switchBox = await switcher.boundingBox();
   expect(switchBox.x).toBeGreaterThanOrEqual(0);
@@ -138,7 +147,7 @@ test("the four-mode switch remains usable on mobile", async ({ page }) => {
 
 test("showcase light keeps the cinematic experience in the current light palette", async ({ page }) => {
   await page.goto("/map/");
-  await page.locator('[data-theme-choice="showcase-light"]').click();
+  await selectTheme(page, "showcase-light");
 
   const cover = page.locator("[data-showcase-cover]");
   await expect(cover).toBeVisible();
@@ -160,7 +169,7 @@ test("showcase light keeps the cinematic experience in the current light palette
 
 test("showcase entrance scrolls through real Virginia imagery and returns to the map", async ({ page }) => {
   await page.goto("/map/");
-  await page.locator('[data-theme-choice="showcase"]').click();
+  await selectTheme(page, "showcase");
   const cover = page.locator("[data-showcase-cover]");
   await expect(cover).toBeVisible();
   await expect(cover.locator('img[src*="nasa-langley-autonomous-drone"]')).toBeVisible();

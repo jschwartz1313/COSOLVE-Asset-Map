@@ -21,10 +21,10 @@
   <link rel="icon" type="image/png" href="{% static 'img/cosolve-logo-black.png' %}">
   <link rel="apple-touch-icon" href="{% static 'img/cosolve-logo-black.png' %}">
   <link rel="stylesheet" href="{% static 'css/tokens.css' %}?v=20260717">
-  <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20260906-1">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20260915-1">
   {% block extra_css %}{% endblock %}
-  <link rel="stylesheet" href="{% static 'css/themes.css' %}?v=20260818-2">
-  <script type="module" src="{% static 'js/theme-switcher.js' %}?v=20260817-1"></script>
+  <link rel="stylesheet" href="{% static 'css/themes.css' %}?v=20260915-1">
+  <script type="module" src="{% static 'js/theme-switcher.js' %}?v=20260915-1"></script>
 </head>
 <body class="{% block body_class %}{% endblock %}">
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -35,7 +35,9 @@
       </span>
       <small>{{ public_scope_name }} Asset Map</small>
     </a>
-    <div class="appearance-switcher" role="group" aria-label="Site appearance">
+    <details class="appearance-menu header-menu" data-header-menu>
+      <summary title="Choose site appearance"><span class="theme-swatch" data-current-theme-swatch aria-hidden="true"></span>Appearance</summary>
+      <div class="appearance-switcher header-menu-panel" role="group" aria-label="Site appearance">
       <button type="button" data-theme-choice="classic" data-mobile-label="Current" aria-pressed="true" title="Current view">
         <span class="theme-swatch swatch-classic" aria-hidden="true"></span><span>Current</span>
       </button>
@@ -49,11 +51,15 @@
         <span class="theme-swatch swatch-showcase-light" aria-hidden="true"></span><span>Showcase Light</span>
       </button>
       <span class="visually-hidden" data-theme-status role="status" aria-live="polite"></span>
-    </div>
+      </div>
+    </details>
     <nav class="primary-nav" aria-label="Primary navigation">
       <a href="{% url 'core:map' %}" {% if request.resolver_match.url_name == 'map' or request.resolver_match.url_name == 'home' %}aria-current="page"{% endif %}>Map</a>
       <a href="{% url 'core:directory' %}" {% if request.resolver_match.url_name == 'directory' or request.resolver_match.url_name == 'asset-detail' or request.resolver_match.url_name == 'asset-suggest-update' %}aria-current="page"{% endif %}>Directory</a>
       {% if not public_scope_is_regional %}<a href="{% url 'core:region-compare' %}" {% if request.resolver_match.url_name == 'region-compare' %}aria-current="page"{% endif %}>Regions</a>{% endif %}
+      <details class="navigation-menu header-menu" data-header-menu>
+        <summary {% if request.resolver_match.url_name == 'about-data' or request.resolver_match.url_name == 'connect' %}class="is-current"{% endif %}>More</summary>
+        <div class="header-menu-panel">
       <a href="{% url 'core:about-data' %}" {% if request.resolver_match.url_name == 'about-data' %}aria-current="page"{% endif %}>About data</a>
       <a href="{% url 'core:connect' %}" {% if request.resolver_match.url_name == 'connect' %}aria-current="page"{% endif %}>Get connected</a>
       {% if user.is_staff %}<a href="{% url 'admin:index' %}">Admin</a>{% endif %}
@@ -63,6 +69,8 @@
           <button type="submit">Sign out</button>
         </form>
       {% endif %}
+        </div>
+      </details>
     </nav>
   </header>
   <div class="theme-page-visual" aria-hidden="true"></div>

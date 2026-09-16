@@ -35,6 +35,7 @@ test("new resource controls and connection routes fit all four designs", async (
     const cover = page.locator("[data-showcase-cover]");
     if (await cover.isVisible()) await page.locator("[data-showcase-enter]").first().click();
     await expect(cover).toBeHidden();
+    await page.locator(".appearance-menu > summary").click();
     await page.locator(`[data-theme-choice="${theme}"]`).click();
     if (await cover.isVisible()) await page.locator("[data-showcase-enter]").first().click();
     await expect(cover).toBeHidden();

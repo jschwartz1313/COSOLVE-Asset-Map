@@ -11,6 +11,7 @@ from apps.assets.models import Asset
 from scripts.build_real_asset_catalog import apply_reviewed_corrections
 
 MANIFEST = settings.BASE_DIR / "data" / "airport_website_corrections_2026_09_06.json"
+FOLLOWUP = settings.BASE_DIR / "data" / "airport_website_corrections_2026_09_15.json"
 DIRECTORY = "https://doav.virginia.gov/airport-directory/"
 SPONSORS = "https://doav.virginia.gov/airport_sponsors/"
 
@@ -18,6 +19,13 @@ SPONSORS = "https://doav.virginia.gov/airport_sponsors/"
 class AirportWebsiteCatalogTests(SimpleTestCase):
     def test_every_catalog_airport_has_a_reviewed_decision(self):
         manifest = json.loads(MANIFEST.read_text())
+        followup = json.loads(FOLLOWUP.read_text())
+        self.assertEqual(
+            {r["name"] for r in manifest["unresolved"]},
+            {r["name"] for r in followup["corrections"] + followup["unresolved"]},
+        )
+        manifest["corrections"] += followup["corrections"]
+        manifest["unresolved"] = followup["unresolved"]
         records = json.loads((settings.BASE_DIR / "data/virginia_real_assets.json").read_text())[
             "records"
         ]
@@ -26,7 +34,7 @@ class AirportWebsiteCatalogTests(SimpleTestCase):
         self.assertEqual(len(decisions), len(airports))
         self.assertEqual({r["name"] for r in decisions}, set(airports))
         self.assertEqual(len({r["identifier"] for r in decisions}), len(airports))
-        self.assertEqual(len(manifest["corrections"]), 54)
+        self.assertEqual(len(manifest["corrections"]), 56)
         for correction in manifest["corrections"]:
             with self.subTest(airport=correction["name"]):
                 record = airports[correction["name"]]
@@ -53,6 +61,7 @@ class AirportWebsiteCatalogTests(SimpleTestCase):
             "records"
         ]
         manifest = json.loads(MANIFEST.read_text())
+        manifest["corrections"] += json.loads(FOLLOWUP.read_text())["corrections"]
         by_name = {r["name"]: r for r in records}
         for correction in manifest["corrections"]:
             record = by_name[correction["name"]]
@@ -125,3 +134,22 @@ class AirportWebsiteDeploymentTests(TestCase):
         self.apply()
         self.assertEqual(self.asset.website_url, DIRECTORY)
         self.assertEqual(self.asset.sources.get().verification_status, "rejected")
+
+    def test_followup_links_apply_once_and_keep_review_status(self):
+        for correction in json.loads(FOLLOWUP.read_text())["corrections"]:
+            asset = Asset.objects.create(
+                name=correction["name"], record_type="infrastructure",
+                short_description="Public-use airport.",
+                unmanned_systems_relevance="Supporting aviation infrastructure.",
+                status="source-backed", visibility="public",
+                internal_notes="Catalog provenance: faa-public-airport.",
+                **correction["before"],
+            )
+            call_command("apply_catalog_corrections", corrections=FOLLOWUP, stdout=StringIO())
+            call_command("apply_catalog_corrections", corrections=FOLLOWUP, stdout=StringIO())
+            asset.refresh_from_db()
+            self.assertEqual(asset.website_url, correction["after"]["website_url"])
+            self.assertEqual(asset.status, "source-backed")
+            self.assertIsNone(asset.reviewed_at)
+            self.assertEqual(asset.sources.count(), 1)
+            self.assertEqual(asset.review_comments.count(), 1)

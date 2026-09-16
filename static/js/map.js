@@ -134,17 +134,21 @@ export function createMap(root) {
       url: root.dataset.basemapStreetUrl,
       attribution: root.dataset.basemapStreetAttribution,
       maxZoom: 19,
+      // Identify the site to the tile provider without sharing paths or filters.
+      referrerPolicy: "strict-origin",
     },
     light: {
       url: root.dataset.basemapLightUrl,
       attribution: root.dataset.basemapLightAttribution,
       maxZoom: 20,
       subdomains: "abcd",
+      referrerPolicy: "strict-origin",
     },
     imagery: {
       url: root.dataset.basemapImageryUrl,
       attribution: root.dataset.basemapImageryAttribution,
       maxZoom: 16,
+      referrerPolicy: "strict-origin",
     },
   };
   let activeBasemap = "street";

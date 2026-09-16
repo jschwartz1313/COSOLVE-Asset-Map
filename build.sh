@@ -9,6 +9,7 @@ python manage.py seed_real_data --add-missing
 python manage.py apply_catalog_corrections
 python manage.py apply_catalog_corrections --corrections data/asset_corrections_2026_09_06.json
 python manage.py apply_catalog_corrections --corrections data/airport_website_corrections_2026_09_06.json
+python manage.py apply_catalog_corrections --corrections data/airport_website_corrections_2026_09_15.json
 python manage.py apply_catalog_corrections --corrections data/profile_improvements_2026_09_06.json
 python manage.py apply_catalog_corrections --corrections data/capability_profiles_2026_09_07.json
 python manage.py apply_catalog_corrections --corrections data/airport_display_names_2026_09_07.json

@@ -42,6 +42,7 @@ test("operator details and location evidence fit all four designs", async ({ pag
   for (const theme of ["classic", "dark", "showcase", "showcase-light"]) {
     await page.goto("/map/");
     await enterMap(page);
+    await page.locator(".appearance-menu > summary").click();
     await page.locator(`[data-theme-choice="${theme}"]`).click();
     await enterMap(page);
     await page.goto("/assets/xelevate-leesburg-unmanned-systems-facility/");

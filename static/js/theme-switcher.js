@@ -39,6 +39,9 @@ export function initializeThemeSwitcher(doc = document, win = window) {
   const revealItems = [...doc.querySelectorAll("[data-showcase-reveal]")];
   const status = doc.querySelector("[data-theme-status]");
   const themeMeta = doc.querySelector("#theme-color-meta");
+  const appearanceMenu = doc.querySelector(".appearance-menu");
+  const headerMenus = [...doc.querySelectorAll("[data-header-menu]")];
+  const currentSwatch = doc.querySelector("[data-current-theme-swatch]");
   const themeColors = {
     classic: "#ffffff",
     dark: "#11171a",
@@ -130,6 +133,7 @@ export function initializeThemeSwitcher(doc = document, win = window) {
   function applyTheme(value, { announce = false, showIntro = false } = {}) {
     const theme = normalizeTheme(value);
     root.dataset.theme = theme;
+    if (currentSwatch) currentSwatch.className = `theme-swatch swatch-${theme}`;
     saveValue(win.localStorage, "cosolve-display-mode", theme);
     for (const button of buttons) {
       button.setAttribute("aria-pressed", String(button.dataset.themeChoice === theme));
@@ -150,7 +154,11 @@ export function initializeThemeSwitcher(doc = document, win = window) {
 
   for (const button of buttons) {
     button.addEventListener("click", () => {
+      if (appearanceMenu) appearanceMenu.open = false;
       applyTheme(button.dataset.themeChoice, { announce: true, showIntro: true });
+      if (!SHOWCASE_THEMES.has(normalizeTheme(button.dataset.themeChoice))) {
+        appearanceMenu?.querySelector("summary")?.focus();
+      }
     });
     button.addEventListener("keydown", (event) => {
       if (!new Set(["ArrowLeft", "ArrowRight", "Home", "End"]).has(event.key)) return;
@@ -177,11 +185,31 @@ export function initializeThemeSwitcher(doc = document, win = window) {
   });
   coverScroll?.addEventListener("scroll", updateShowcaseProgress, { passive: true });
 
+  for (const menu of headerMenus) {
+    menu.addEventListener("toggle", () => {
+      if (menu.open) headerMenus.filter((other) => other !== menu).forEach((other) => {
+        other.open = false;
+      });
+    });
+  }
+  doc.addEventListener("click", (event) => {
+    headerMenus.forEach((menu) => {
+      if (!menu.contains(event.target)) menu.open = false;
+    });
+  });
+
   doc.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && (!cover || cover.hidden)) {
+      const openMenu = headerMenus.find((menu) => menu.open);
+      if (openMenu) {
+        openMenu.open = false;
+        openMenu.querySelector("summary")?.focus();
+      }
+    }
     if (!cover || cover.hidden) return;
     if (event.key === "Escape") {
       hideCover();
-      buttons.find((button) => button.dataset.themeChoice === activeCoverTheme)?.focus();
+      appearanceMenu?.querySelector("summary")?.focus();
       return;
     }
     if (event.key !== "Tab") return;

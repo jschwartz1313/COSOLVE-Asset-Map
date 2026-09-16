@@ -1,0 +1,4 @@
+<small class="layer-freshness{% if layer.review_due %} is-due{% endif %}">
+  {% if layer.snapshot_date %}Snapshot <time datetime="{{ layer.version }}">{{ layer.snapshot_date|date:"M j, Y" }}</time>{% else %}Snapshot date unavailable{% endif %}
+  {% if layer.review_due %}<span>Refresh review due</span>{% endif %}
+</small>

@@ -6651,7 +6651,7 @@
       "contact_email": "rbeck@mclarencorporation.com",
       "contact_phone": "434-845-8769",
       "contact_text": "Airport public contact: Roger Beck, Manager",
-      "contact_url": "https://doav.virginia.gov/airport_sponsors/",
+      "contact_url": "https://mclarencorporation.com/",
       "display_name": "Falwell Airport",
       "latitude": 37.377928,
       "location_last_verified_at": "2026-09-04",
@@ -6679,6 +6679,10 @@
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27W24%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html"
         },
         {
+          "title": "Falwell Airport: McLaren Corporation operator and public contact page",
+          "url": "https://mclarencorporation.com/"
+        },
+        {
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
@@ -6697,7 +6701,7 @@
         "Supporting ecosystem asset"
       ],
       "unmanned_systems_relevance": "Falwell is included as public aviation infrastructure serving Lynchburg. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
-      "website_url": "https://doav.virginia.gov/airport-directory/"
+      "website_url": "https://mclarencorporation.com/"
     },
     {
       "address_line": "130 Wedgewood Drive",
@@ -13694,7 +13698,7 @@
       "contact_email": "mpramanager@fly-fyj.com",
       "contact_phone": "804-785-9725",
       "contact_text": "Airport public contact: Joel Mooney, Airport Manager",
-      "contact_url": "https://doav.virginia.gov/airport_sponsors/",
+      "contact_url": "https://www.west-point.va.us/community/visitors/airport.php",
       "display_name": "Middle Peninsula Regional Airport",
       "latitude": 37.521369,
       "location_last_verified_at": "2026-09-04",
@@ -13722,6 +13726,10 @@
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27FYJ%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html"
         },
         {
+          "title": "Middle Peninsula Regional Airport: Town of West Point airport page",
+          "url": "https://www.west-point.va.us/community/visitors/airport.php"
+        },
+        {
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
@@ -13740,7 +13748,7 @@
         "Supporting ecosystem asset"
       ],
       "unmanned_systems_relevance": "Middle Peninsula Rgnl is included as public aviation infrastructure serving West Point. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
-      "website_url": "https://doav.virginia.gov/airport-directory/"
+      "website_url": "https://www.west-point.va.us/community/visitors/airport.php"
     },
     {
       "activity_last_verified_at": "2026-08-21",
