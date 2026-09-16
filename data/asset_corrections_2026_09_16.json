@@ -1,0 +1,1318 @@
+{
+  "corrections": [
+    {
+      "add_sources": [
+        {
+          "title": "Bowman current Virginia offices and headquarters",
+          "url": "https://bowman.com/virginia"
+        }
+      ],
+      "after": {},
+      "before": {},
+      "name": "Bowman Consulting Unmanned Geospatial Services",
+      "provenance": "curated-public-source",
+      "reason": "Reviewed official public evidence."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "HDT public office and manufacturing addresses",
+          "url": "https://www.hdtglobal.com/about/office-locations/"
+        }
+      ],
+      "after": {},
+      "before": {},
+      "name": "HDT Robotics BLADE Fredericksburg Facility",
+      "provenance": "curated-public-source",
+      "reason": "Reviewed official public evidence."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "SAIC published counter-drone product portfolio",
+          "url": "https://www.saic.com/products"
+        }
+      ],
+      "after": {},
+      "before": {},
+      "name": "SAIC Counter-UAS Integration",
+      "provenance": "curated-public-source",
+      "reason": "Reviewed official public evidence."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "SAIC counter-UAS integration scope",
+          "url": "https://experience.saic.com/counter-unmanned-aerial-systems-cuas"
+        }
+      ],
+      "after": {},
+      "before": {},
+      "name": "SAIC Counter-UAS Integration",
+      "provenance": "curated-public-source",
+      "reason": "Reviewed official public evidence."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Virtus mission and Arlington street address",
+          "url": "https://www.virtusinnovation.com/mission"
+        }
+      ],
+      "after": {},
+      "before": {},
+      "name": "Virtus Innovation Center",
+      "provenance": "curated-public-source",
+      "reason": "Reviewed official public evidence."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "TruWeather headquarters locality and public contact",
+          "url": "https://truweathersolutions.com/contact/"
+        }
+      ],
+      "after": {},
+      "before": {},
+      "name": "TruWeather Solutions",
+      "provenance": "curated-public-source",
+      "reason": "Reviewed official public evidence."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "SVHEC 2025-26 Career Tech Academy robotics offering",
+          "url": "https://www.svhec.org/news/career-tech-academy-opens-application-period/"
+        }
+      ],
+      "after": {},
+      "before": {},
+      "name": "Southern Virginia Higher Education Center Robotics Training",
+      "provenance": "curated-public-source",
+      "reason": "Reviewed official public evidence."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "SVHEC annual report and South Boston campus address",
+          "url": "https://www.svhec.org/wp-content/uploads/2020/04/FY2019-Annual-Report.pdf"
+        }
+      ],
+      "after": {},
+      "before": {},
+      "name": "Southern Virginia Higher Education Center Robotics Training",
+      "provenance": "curated-public-source",
+      "reason": "Reviewed official public evidence."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Hampton Roads Alliance announcement of Mare Custos at IDEA Lab",
+          "url": "https://www.linkedin.com/posts/hamptonroadsalliance_the-hampton-roads-alliance-is-proud-to-welcome-activity-7468316047843102720-aBpj"
+        }
+      ],
+      "after": {},
+      "before": {},
+      "name": "Mare Custos U.S. Presence at IDEA Lab",
+      "provenance": "curated-public-source",
+      "reason": "Reviewed official public evidence."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Published public contact address",
+          "url": "https://www.linkedin.com/company/turbineone"
+        },
+        {
+          "title": "Census public address-range match",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=14120+Sullyfield+Circle%2C+Chantilly%2C+VA+20151&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "after": {
+        "address_line": "14120 Sullyfield Circle, Suite J",
+        "latitude": 38.894284,
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "geocoded",
+        "location_notes": "Company-published Chantilly headquarters address. The point does not establish that the announced T1 Edgeworks experience lab is open or that all company operations occur here. Coordinates are Census address-range estimates, not surveyed building/entrance coordinates.",
+        "location_precision": "site",
+        "location_role": "headquarters",
+        "location_source_url": "https://www.linkedin.com/company/turbineone",
+        "longitude": -77.438272,
+        "postal_code": "20151"
+      },
+      "before": {
+        "address_line": "",
+        "latitude": 38.875,
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_precision": "locality",
+        "location_role": "",
+        "location_source_url": "",
+        "longitude": -77.442,
+        "postal_code": ""
+      },
+      "name": "TurbineOne Headquarters and T1 Edgeworks",
+      "provenance": "curated-public-source",
+      "reason": "Replace the locality reference with a corroborated public contact address; preserve site-level precision and explicit use limitations."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Published public contact address",
+          "url": "https://www.mcwl.marines.mil/Divisions/MCWL-G-3-5/"
+        },
+        {
+          "title": "Census public address-range match",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2084+South+Street%2C+Quantico%2C+VA+22134&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "after": {
+        "address_line": "2084 South Street",
+        "latitude": 38.516492,
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "geocoded",
+        "location_notes": "Official public administrative/contact address, not the location or extent of field experiments or an unrestricted visitor entrance. Coordinates are Census address-range estimates, not surveyed building/entrance coordinates.",
+        "location_precision": "site",
+        "location_role": "office",
+        "location_source_url": "https://www.mcwl.marines.mil/Divisions/MCWL-G-3-5/",
+        "longitude": -77.29164,
+        "postal_code": "22134"
+      },
+      "before": {
+        "address_line": "",
+        "latitude": 38.522,
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_precision": "locality",
+        "location_role": "",
+        "location_source_url": "",
+        "longitude": -77.29,
+        "postal_code": ""
+      },
+      "name": "Marine Corps Warfighting Laboratory",
+      "provenance": "curated-public-source",
+      "reason": "Replace the locality reference with a corroborated public contact address; preserve site-level precision and explicit use limitations."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Published public contact address",
+          "url": "https://www.linkedin.com/company/manassas-city-police"
+        },
+        {
+          "title": "Census public address-range match",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=9608+Grant+Avenue%2C+Manassas%2C+VA+20110&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "after": {
+        "address_line": "9608 Grant Avenue",
+        "latitude": 38.747275,
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "geocoded",
+        "location_notes": "Current Police Department public contact building for its documented drone program. The point is not a launch site, equipment-storage location, or proof that the police received the separately listed 2026 jurisdiction-level award. Coordinates are Census address-range estimates, not surveyed building/entrance coordinates.",
+        "location_precision": "site",
+        "location_role": "office",
+        "location_source_url": "https://www.linkedin.com/company/manassas-city-police",
+        "longitude": -77.47457,
+        "postal_code": "20110"
+      },
+      "before": {
+        "address_line": "",
+        "latitude": 38.751,
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_precision": "locality",
+        "location_role": "",
+        "location_source_url": "",
+        "longitude": -77.475,
+        "postal_code": ""
+      },
+      "name": "City of Manassas First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "reason": "Replace the locality reference with a corroborated public contact address; preserve site-level precision and explicit use limitations."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Official Navy public contact address",
+          "url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Contact/"
+        },
+        {
+          "title": "Esri public address match",
+          "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=6149+Welsh+Road%2C+Dahlgren%2C+VA+22448&outFields=Match_addr%2CAddr_type%2CStAddr%2CCity%2CRegion%2CPostal&maxLocations=1&f=json"
+        }
+      ],
+      "after": {
+        "address_line": "6149 Welsh Road, Suite 203",
+        "contact_url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Contact/",
+        "latitude": 38.32682,
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "geocoded",
+        "location_notes": "Official public administrative/contact address matched with the Esri address geocoder. Not a test-range boundary, operational activity location, unrestricted entrance, or access authorization. Site-level precision is retained; internal military facilities are not mapped.",
+        "location_precision": "site",
+        "location_role": "office",
+        "location_source_url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Contact/",
+        "longitude": -77.037444,
+        "postal_code": "22448"
+      },
+      "before": {
+        "address_line": "",
+        "contact_url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/What-We-Do/",
+        "latitude": 38.333,
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_precision": "locality",
+        "location_role": "",
+        "location_source_url": "",
+        "longitude": -77.031,
+        "postal_code": ""
+      },
+      "name": "Naval Surface Warfare Center Dahlgren Division",
+      "provenance": "curated-public-source",
+      "reason": "Replace town-center reference with the publicly listed administrative address, not a sensitive operational location."
+    },
+    {
+      "accepted_baselines": [
+        {
+          "address_line": "",
+          "contact_url": "https://www.vada.virginia.gov/media/governorvirginiagov/secretary-of-veterans-and-defense-affairs/pdf/VA-FactBook_WEB_2020-10-19-CSG.pdf",
+          "latitude": "37.940000",
+          "location_last_verified_at": null,
+          "location_method": "",
+          "location_notes": "",
+          "location_precision": "locality",
+          "location_role": "",
+          "location_source_url": "",
+          "longitude": "-75.467000",
+          "postal_code": ""
+        }
+      ],
+      "add_sources": [
+        {
+          "title": "Official Navy public contact address",
+          "url": "https://www.navsea.navy.mil/Home/SCSC/Contact-Us/"
+        },
+        {
+          "title": "Esri public address match",
+          "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=30+Battle+Group+Way%2C+Wallops+Island%2C+VA+23337&outFields=Match_addr%2CAddr_type%2CStAddr%2CCity%2CRegion%2CPostal&maxLocations=1&f=json"
+        }
+      ],
+      "after": {
+        "address_line": "30 Battle Group Way",
+        "contact_url": "https://www.navsea.navy.mil/Home/SCSC/Contact-Us/",
+        "latitude": 37.931343,
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "geocoded",
+        "location_notes": "Official public administrative/contact address matched with the Esri address geocoder. Not a test-range boundary, operational activity location, unrestricted entrance, or access authorization. Site-level precision is retained; internal military facilities are not mapped.",
+        "location_precision": "site",
+        "location_role": "office",
+        "location_source_url": "https://www.navsea.navy.mil/Home/SCSC/Contact-Us/",
+        "longitude": -75.477468,
+        "postal_code": "23337"
+      },
+      "before": {
+        "address_line": "",
+        "contact_url": "https://www.navsea.navy.mil/Home/SCSC/",
+        "latitude": 37.94,
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_precision": "locality",
+        "location_role": "",
+        "location_source_url": "",
+        "longitude": -75.467,
+        "postal_code": ""
+      },
+      "name": "Surface Combat Systems Center Wallops Island",
+      "provenance": "virginia-military-factbook",
+      "reason": "Replace town-center reference with the publicly listed administrative address, not a sensitive operational location."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "USA.gov Department of Defense headquarters",
+          "url": "https://www.usa.gov/agencies/u-s-department-of-defense"
+        },
+        {
+          "title": "Esri named Pentagon site match",
+          "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=Pentagon%2C+Arlington%2C+Virginia&outFields=Match_addr%2CAddr_type%2CStAddr%2CCity%2CRegion%2CPostal&maxLocations=1&f=json"
+        }
+      ],
+      "after": {
+        "latitude": 38.872701,
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "geocoded",
+        "location_notes": "Named-site reference for the publicly identified Pentagon headquarters, replacing the Arlington locality center. Not an office, entrance, access route, or authorization to visit. The federal mailing address uses Washington, DC although the building is in Arlington, Virginia.",
+        "location_precision": "site",
+        "location_role": "headquarters",
+        "location_source_url": "https://www.usa.gov/agencies/u-s-department-of-defense",
+        "longitude": -77.056191
+      },
+      "before": {
+        "latitude": 38.881,
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_precision": "locality",
+        "location_role": "",
+        "location_source_url": "",
+        "longitude": -77.091
+      },
+      "name": "The Pentagon",
+      "provenance": "virginia-military-factbook",
+      "reason": "Correct the locality-center pin to the named headquarters site without mapping internal facilities."
+    },
+    {
+      "after": {
+        "activity_last_verified_at": "2026-09-16",
+        "activity_source_url": "https://www.linkedin.com/company/turbineone",
+        "current_activity": "TurbineOne now publishes a Chantilly headquarters address. The May 2026 Commonwealth announcement also describes the T1 Edgeworks experience-lab project; opening of that lab has not been independently confirmed."
+      },
+      "before": {
+        "activity_last_verified_at": "2026-08-24",
+        "activity_source_url": "https://www.governor.virginia.gov/newsroom/news-releases/2026/may-releases/name-1117183-en.html",
+        "current_activity": "The Commonwealth and TurbineOne announced the Fairfax County headquarters and Chantilly T1 Edgeworks project in May 2026. No public street address or opening confirmation was located during this review."
+      },
+      "name": "TurbineOne Headquarters and T1 Edgeworks",
+      "provenance": "curated-public-source",
+      "reason": "Published headquarters address resolves the address gap, but does not prove the announced experience lab has opened."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Manassas Police official July 2023 drone deployment release",
+          "url": "https://cms9files.revize.com/manassasva/MCPD%20Press%20Release%2007.05.23.pdf"
+        },
+        {
+          "title": "City of Manassas FY2023 Police accomplishments",
+          "url": "https://www.manassasva.gov/Finance/Budget%20Division/2023/Adopted/Section%2005%20-%20Department%20Budgets.pdf"
+        },
+        {
+          "title": "City of Manassas Police Department public contact page",
+          "url": "https://www.manassasva.gov/police_department/index.php"
+        }
+      ],
+      "after": {
+        "contact_phone": "703-257-8000",
+        "contact_text": "City Police Department public, non-emergency contact; current UAS program details require confirmation.",
+        "contact_url": "https://www.manassasva.gov/police_department/index.php",
+        "display_name": "City of Manassas Police Drone Program",
+        "overview": "The City of Manassas Police Department documented purchasing a drone and completing pilot training in November 2021, and a July 2023 department release documents drone deployment during an investigation. The current point is its public contact building. Separately, a CY 2026 DCJS trade-and-replace award names the City of Manassas but does not identify its recipient department; these records do not establish that the police received that award or disclose current aircraft numbers.",
+        "short_description": "City police drone use documented in official budget and incident records; current program details and the 2026 grant linkage still need confirmation.",
+        "website_url": "https://www.manassasva.gov/police_department/index.php"
+      },
+      "before": {
+        "contact_phone": "",
+        "contact_text": "Public information route; a direct asset contact is not published in the catalog",
+        "contact_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
+        "display_name": "",
+        "overview": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in City of Manassas; the public award record does not identify the operating department. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+        "short_description": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in City of Manassas; the public award record does not identify the operating department.",
+        "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      },
+      "name": "City of Manassas First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "reason": "Attribute demonstrated police drone use without assigning the jurisdiction-level grant or inventing current program details."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "unmapped",
+        "location_notes": "Regional or statewide activity covering multiple sites. A coordinator's office, event venue or locality center would not represent the program's footprint; no single map pin is assigned.",
+        "location_role": "service-area",
+        "location_source_url": "https://www.nasa.gov/general/nasa-langley-supports-advanced-air-mobility-aam-exposition/"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "AUVSI Hampton Roads Chapter",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "unmapped",
+        "location_notes": "Regional membership chapter. Its published postal address is not confirmation of an occupied operating facility, so the chapter is listed without a single map pin.",
+        "location_role": "service-area",
+        "location_source_url": "https://www.auvsiridgeandvalley.org/"
+      },
+      "before": {
+        "location_last_verified_at": "2026-09-06",
+        "location_method": "unmapped",
+        "location_notes": "Regional membership chapter. Its published postal address is not confirmation of an occupied operating facility, so the chapter is listed without a single map pin.",
+        "location_role": "service-area",
+        "location_source_url": "https://www.auvsiridgeandvalley.org/"
+      },
+      "name": "AUVSI Ridge and Valley Chapter",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
+        "location_role": "",
+        "location_source_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Bath County First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Locality reference only. Current Virginia operating presence remains uncorroborated; neither this marker nor an old company registration verifies an occupied facility.",
+        "location_role": "",
+        "location_source_url": "https://sam.gov/entity/MV3AMKSSPZR1/coreData?status=Active"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Blue Ridge Defense Works",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
+        "location_role": "",
+        "location_source_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Buchanan County First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Official material supports the listed locality, but a current public operating street address was not corroborated. The marker is a locality reference, not a building, test site or visitor entrance.",
+        "location_role": "",
+        "location_source_url": "https://www.linkedin.com/company/bzrd-systems"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "BZRD Systems",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "unmapped",
+        "location_notes": "Regional or statewide activity covering multiple sites. A coordinator's office, event venue or locality center would not represent the program's footprint; no single map pin is assigned.",
+        "location_role": "service-area",
+        "location_source_url": "https://vsgc.odu.edu/about-us/"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Commonwealth STEM Industry Internship Program (CSIIP)",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Official material supports the listed locality, but a current public operating street address was not corroborated. The marker is a locality reference, not a building, test site or visitor entrance.",
+        "location_role": "",
+        "location_source_url": "https://www.dronetrace.com/contact"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "DroneTrace",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Historical Sterling record retained after the Axon acquisition; a former office address is not evidence of current occupancy. Locality reference only, not a current operating facility.",
+        "location_role": "",
+        "location_source_url": "https://www.axon.com/landing-pages/dedrone-sem-landing-page"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Former Dedrone Washington-Area Headquarters",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Generalized public installation locality retained. A public contact or mailing address must not be confused with the installation boundary, autonomous-systems test area, or an unrestricted visitor entrance.",
+        "location_role": "",
+        "location_source_url": "https://va.ng.mil/Installations/Fort-Pickett/"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Fort Pickett",
+      "provenance": "virginia-military-factbook",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Generalized public installation locality retained. A public contact or mailing address must not be confused with the installation boundary, autonomous-systems test area, or an unrestricted visitor entrance.",
+        "location_role": "",
+        "location_source_url": "https://home.army.mil/aphill/"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Fort Walker",
+      "provenance": "virginia-military-factbook",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "The company publishes Fairfax as its location, but a specific operating address was not confirmed. The pin is a locality reference, not a training site.",
+        "location_role": "office",
+        "location_source_url": "https://www.h2psolution.com/about/"
+      },
+      "before": {
+        "location_last_verified_at": "2026-09-06",
+        "location_method": "locality",
+        "location_notes": "The company publishes Fairfax as its location, but a specific operating address was not confirmed. The pin is a locality reference, not a training site.",
+        "location_role": "office",
+        "location_source_url": "https://www.h2psolution.com/about/"
+      },
+      "name": "H2P Solution",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Company confirms Winchester manufacturing/engineering activity but no campus street address was corroborated. The separate Dulles headquarters address must not be substituted for this campus.",
+        "location_role": "",
+        "location_source_url": "https://hevenaerotech.com/work-with-us/"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Heven AeroTech Winchester Innovation and Manufacturing Campus",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "The Virginia record represents the published Herndon office locality, not a test range. The company's contact page places its water-testing facilities in Maryland; no Virginia street address was confirmed.",
+        "location_role": "office",
+        "location_source_url": "https://www.magothyrt.com/contact"
+      },
+      "before": {
+        "location_last_verified_at": "2026-09-06",
+        "location_method": "locality",
+        "location_notes": "The Virginia record represents the published Herndon office locality, not a test range. The company's contact page places its water-testing facilities in Maryland; no Virginia street address was confirmed.",
+        "location_role": "office",
+        "location_source_url": "https://www.magothyrt.com/contact"
+      },
+      "name": "Magothy River Technologies",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Generalized public installation locality retained. A public contact or mailing address must not be confused with the installation boundary, autonomous-systems test area, or an unrestricted visitor entrance.",
+        "location_role": "",
+        "location_source_url": "https://www.quantico.marines.mil/About/"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Marine Corps Base Quantico",
+      "provenance": "virginia-military-factbook",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Operator confirms the dedicated UAS airfield on the Wallops complex, but a specific airfield point or access address was not corroborated in the reviewed materials. Existing locality reference is not a runway, test boundary or launch point; the Norfolk corporate address is not the airfield.",
+        "location_role": "",
+        "location_source_url": "https://www.vaspace.org/our-facilities"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "MARS Unmanned Aircraft Systems Airfield",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "The public fact sheet identifies Orange County but does not provide an operating-site address. The current Orange pin is a locality reference, not the range boundary or access point.",
+        "location_role": "test-site",
+        "location_source_url": "https://www.mitre.org/sites/default/files/2024-07/PR-24-2208-MITRE-National-Range.pdf"
+      },
+      "before": {
+        "location_last_verified_at": "2026-09-06",
+        "location_method": "locality",
+        "location_notes": "The public fact sheet identifies Orange County but does not provide an operating-site address. The current Orange pin is a locality reference, not the range boundary or access point.",
+        "location_role": "test-site",
+        "location_source_url": "https://www.mitre.org/sites/default/files/2024-07/PR-24-2208-MITRE-National-Range.pdf"
+      },
+      "name": "MITRE National Range",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Generalized public installation locality retained. A public contact or mailing address must not be confused with the installation boundary, autonomous-systems test area, or an unrestricted visitor entrance.",
+        "location_role": "",
+        "location_source_url": "https://cnrma.cnic.navy.mil/Installations/NSA-South-Potomac/"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Naval Support Facility Dahlgren",
+      "provenance": "virginia-military-factbook",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Generalized public installation locality retained. A public contact or mailing address must not be confused with the installation boundary, autonomous-systems test area, or an unrestricted visitor entrance.",
+        "location_role": "",
+        "location_source_url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/What-We-Do/"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "NSWC Dahlgren Outdoor Autonomy Laboratory",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "unmapped",
+        "location_notes": "Regional or statewide activity covering multiple sites. A coordinator's office, event venue or locality center would not represent the program's footprint; no single map pin is assigned.",
+        "location_role": "service-area",
+        "location_source_url": "https://proveninpendleton.com/blogs/news/oregon-uas-accelerator-welcomes-17-startups-to-its-fall-2026-cohort"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "PerimeterAI Group",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
+        "location_role": "",
+        "location_source_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Pittsylvania County First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Generalized public installation locality retained. A public contact or mailing address must not be confused with the installation boundary, autonomous-systems test area, or an unrestricted visitor entrance.",
+        "location_role": "",
+        "location_source_url": "https://www.jmc.army.mil/Radford/About.aspx"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Radford Army Ammunition Plant",
+      "provenance": "virginia-military-factbook",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Generalized public installation locality retained. A public contact or mailing address must not be confused with the installation boundary, autonomous-systems test area, or an unrestricted visitor entrance.",
+        "location_role": "",
+        "location_source_url": "https://home.army.mil/belvoir/contact/phonebook"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Rivanna Station",
+      "provenance": "virginia-military-factbook",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
+        "location_role": "",
+        "location_source_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Smyth County First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
+        "location_role": "",
+        "location_source_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Southampton County First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "unmapped",
+        "location_notes": "Regional or statewide activity covering multiple sites. A coordinator's office, event venue or locality center would not represent the program's footprint; no single map pin is assigned.",
+        "location_role": "service-area",
+        "location_source_url": "https://vsgc.odu.edu/about-us/"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "STEM Takes Flight at Virginia's Community Colleges",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
+        "location_role": "",
+        "location_source_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Town of Chilhowie First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
+        "location_role": "",
+        "location_source_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Town of Chincoteague First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
+        "location_role": "",
+        "location_source_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Town of New Market First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
+        "location_role": "",
+        "location_source_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Town of Rocky Mount First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
+        "location_role": "",
+        "location_source_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Town of Scottsville First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Current operator contact page confirms Reston headquarters locality but not a current operating street address. Historical or possible residential mailing addresses are not substituted for an operating facility.",
+        "location_role": "",
+        "location_source_url": "https://truweathersolutions.com/contact/"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "TruWeather Solutions",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "unmapped",
+        "location_notes": "Multi-site road-testing program spanning Northern Virginia roads and participating test facilities elsewhere in Virginia. The former Fairfax locality pin did not represent the whole network.",
+        "location_role": "service-area",
+        "location_source_url": "https://www.vtti.vt.edu/facilities/vac.html"
+      },
+      "before": {
+        "location_last_verified_at": "2026-09-06",
+        "location_method": "unmapped",
+        "location_notes": "Multi-site road-testing program spanning Northern Virginia roads and participating test facilities elsewhere in Virginia. The former Fairfax locality pin did not represent the whole network.",
+        "location_role": "service-area",
+        "location_source_url": "https://www.vtti.vt.edu/facilities/vac.html"
+      },
+      "name": "Virginia Automated Corridors",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "unmapped",
+        "location_notes": "Regional or statewide activity covering multiple sites. A coordinator's office, event venue or locality center would not represent the program's footprint; no single map pin is assigned.",
+        "location_role": "service-area",
+        "location_source_url": "https://www.nepa.navy.mil/AFTTEIS/"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Virginia Capes Range Complex",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "unmapped",
+        "location_notes": "Regional or statewide activity covering multiple sites. A coordinator's office, event venue or locality center would not represent the program's footprint; no single map pin is assigned.",
+        "location_role": "service-area",
+        "location_source_url": "https://doav.virginia.gov/wp-content/uploads/Files/DocumentLibrary/DOAVMVI2024Reportv2.0.pdf"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Virginia Flight Information Exchange",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "after": {
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Official material supports the listed locality, but a current public operating street address was not corroborated. The marker is a locality reference, not a building, test site or visitor entrance.",
+        "location_role": "",
+        "location_source_url": "https://virginiauas.com/home/"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": "",
+        "location_notes": "",
+        "location_role": "",
+        "location_source_url": ""
+      },
+      "name": "Virginia UAS",
+      "provenance": "curated-public-source",
+      "reason": "Record the location-review limitation rather than promote an unsupported point to exact precision."
+    },
+    {
+      "accepted_baselines": [
+        {
+          "contact_email": "cctownmanager@gmail.com",
+          "contact_phone": "434-372-5136",
+          "contact_text": "Airport public contact: Dusty Forbes, Town Manager",
+          "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+        }
+      ],
+      "add_sources": [
+        {
+          "title": "Virginia DOAV airport-specific sponsor and manager listing",
+          "url": "https://doav.virginia.gov/airport_sponsors/"
+        }
+      ],
+      "after": {
+        "contact_email": "cctownmanager@chasecity.org",
+        "contact_phone": "434-372-5136",
+        "contact_text": "Town of Chase City airport sponsor/manager, as listed by Virginia DOAV.",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "before": {
+        "contact_email": "cctownmanager@chasecity.org",
+        "contact_phone": "434-372-5136",
+        "contact_text": "Airport public contact: Dusty Forbes, Town Manager",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "name": "Chase City Muni",
+      "provenance": "faa-public-airport",
+      "reason": "Add the published operator/manager route while preserving the official website fallback; do not mistake sponsor mailing addresses for runway coordinates."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Virginia DOAV airport-specific sponsor and manager listing",
+          "url": "https://doav.virginia.gov/airport_sponsors/"
+        }
+      ],
+      "after": {
+        "contact_email": "hank.rempe@comcast.net",
+        "contact_phone": "804-550-5794",
+        "contact_text": "Mile High Charters airport manager, as listed by Virginia DOAV.",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "before": {
+        "contact_email": "hank.rempe@comcast.net",
+        "contact_phone": "804-550-5794",
+        "contact_text": "Airport public contact: Hank Rempe, Manager",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "name": "Lake Anna",
+      "provenance": "faa-public-airport",
+      "reason": "Add the published operator/manager route while preserving the official website fallback; do not mistake sponsor mailing addresses for runway coordinates."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Virginia DOAV airport-specific sponsor and manager listing",
+          "url": "https://doav.virginia.gov/airport_sponsors/"
+        }
+      ],
+      "after": {
+        "contact_email": "kerrlakedocks@gmail.com",
+        "contact_phone": "804-894-0458",
+        "contact_text": "Lake Country airport commission contact, as listed by Virginia DOAV.",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "before": {
+        "contact_email": "kerrlakedocks@gmail.com",
+        "contact_phone": "804-894-0458",
+        "contact_text": "Airport public contact: Michael Denton, Commission Chair",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "name": "Lake Country Rgnl",
+      "provenance": "faa-public-airport",
+      "reason": "Add the published operator/manager route while preserving the official website fallback; do not mistake sponsor mailing addresses for runway coordinates."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Virginia DOAV airport-specific sponsor and manager listing",
+          "url": "https://doav.virginia.gov/airport_sponsors/"
+        }
+      ],
+      "after": {
+        "contact_email": "jwallace@flyfreedomaviation.com",
+        "contact_phone": "434-582-3028",
+        "contact_text": "Liberty University / Freedom Aviation airport manager, as listed by Virginia DOAV.",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "before": {
+        "contact_email": "jwallace@flyfreedomaviation.com",
+        "contact_phone": "434-582-3028",
+        "contact_text": "Airport public contact: Andrew Wallace, Manager",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "name": "New London",
+      "provenance": "faa-public-airport",
+      "reason": "Add the published operator/manager route while preserving the official website fallback; do not mistake sponsor mailing addresses for runway coordinates."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Virginia DOAV airport-specific sponsor and manager listing",
+          "url": "https://doav.virginia.gov/airport_sponsors/"
+        }
+      ],
+      "after": {
+        "contact_email": "fireflyer@icloud.com",
+        "contact_phone": "703-898-1157",
+        "contact_text": "New Market Aeronautics airport manager, as listed by Virginia DOAV.",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "before": {
+        "contact_email": "fireflyer@icloud.com",
+        "contact_phone": "703-898-1157",
+        "contact_text": "Airport public contact: Bob Thomas, Manager",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "name": "New Market",
+      "provenance": "faa-public-airport",
+      "reason": "Add the published operator/manager route while preserving the official website fallback; do not mistake sponsor mailing addresses for runway coordinates."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Virginia DOAV airport-specific sponsor and manager listing",
+          "url": "https://doav.virginia.gov/airport_sponsors/"
+        }
+      ],
+      "after": {
+        "contact_email": "w91smla@gmail.com",
+        "contact_phone": "732-296-4950",
+        "contact_text": "Smith Mountain Lake Airport LLC operator contact, as listed by Virginia DOAV.",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "before": {
+        "contact_email": "w91smla@gmail.com",
+        "contact_phone": "732-296-4950",
+        "contact_text": "Airport public contact: Moe Bazazan, President",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "name": "Smith Mountain Lake",
+      "provenance": "faa-public-airport",
+      "reason": "Add the published operator/manager route while preserving the official website fallback; do not mistake sponsor mailing addresses for runway coordinates."
+    },
+    {
+      "accepted_baselines": [
+        {
+          "contact_email": "robert.baechtel@gmail.com",
+          "contact_phone": "757-891-2244",
+          "contact_text": "Airport public contact: Rob Baechtel, Airport Manager",
+          "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+        }
+      ],
+      "add_sources": [
+        {
+          "title": "Virginia DOAV airport-specific sponsor and manager listing",
+          "url": "https://doav.virginia.gov/airport_sponsors/"
+        }
+      ],
+      "after": {
+        "contact_email": "townoffice@tangiervirginia.org",
+        "contact_phone": "757-891-2438",
+        "contact_text": "Town of Tangier airport sponsor contact, as listed by Virginia DOAV.",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "before": {
+        "contact_email": "townoffice@tangiervirginia.org",
+        "contact_phone": "757-891-2438",
+        "contact_text": "Airport public contact: James Eskridge, Town Manager",
+        "contact_url": "https://doav.virginia.gov/airport_sponsors/"
+      },
+      "name": "Tangier Island",
+      "provenance": "faa-public-airport",
+      "reason": "Add the published operator/manager route while preserving the official website fallback; do not mistake sponsor mailing addresses for runway coordinates."
+    },
+    {
+      "name": "Southern Virginia Higher Education Center Robotics Training",
+      "provenance": "curated-public-source",
+      "before": {
+        "activity_status": "active",
+        "current_activity": "South Boston workforce center offering automation and robotics training through its Career Tech Academy.",
+        "activity_source_url": "https://www.svhec.org/news/svhec-drives-22-million-economic-impact-in-southern-virginia/",
+        "activity_last_verified_at": "2026-09-04"
+      },
+      "after": {
+        "activity_status": "",
+        "current_activity": "SVHEC documents automation and robotics instruction in its annual reports and 2025-26 Career Tech Academy recruitment. Its 2026 reporting describes continuing workforce activity, but a currently open 2026-27 robotics intake was not confirmed in this review.",
+        "activity_source_url": "https://www.svhec.org/news/career-tech-academy-opens-application-period/",
+        "activity_last_verified_at": "2026-09-16"
+      },
+      "reason": "Distinguish documented prior-year robotics training from an unconfirmed current recruitment cycle."
+    },
+    {
+      "name": "The Pentagon",
+      "provenance": "virginia-military-factbook",
+      "before": {
+        "address_line": ""
+      },
+      "after": {
+        "address_line": "Pentagon Reservation (named site, not mailing address)"
+      },
+      "add_sources": [
+        {
+          "title": "Washington Headquarters Services: Pentagon Reservation in Arlington",
+          "url": "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/ai/a118p.pdf?ver=2019-04-03-104441-023"
+        }
+      ],
+      "reason": "Identify the publicly named Arlington site without inventing a street address or substituting its Washington, DC mailing address."
+    }
+  ],
+  "reviewed_at": "2026-09-16"
+}

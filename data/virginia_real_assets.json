@@ -1648,7 +1648,12 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.vedp.org/industry/unmanned-systems",
       "latitude": null,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "unmapped",
+      "location_notes": "Regional or statewide activity covering multiple sites. A coordinator's office, event venue or locality center would not represent the program's footprint; no single map pin is assigned.",
       "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://www.nasa.gov/general/nasa-langley-supports-advanced-air-mobility-aam-exposition/",
       "longitude": null,
       "missions": [
         "Training and experimentation"
@@ -1691,7 +1696,7 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.auvsiridgeandvalley.org/",
       "latitude": null,
-      "location_last_verified_at": "2026-09-06",
+      "location_last_verified_at": "2026-09-16",
       "location_method": "unmapped",
       "location_notes": "Regional membership chapter. Its published postal address is not confirmation of an occupied operating facility, so the chapter is listed without a single map pin.",
       "location_precision": "regional",
@@ -1788,7 +1793,12 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
       "latitude": 38.052,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
       "longitude": -79.781,
       "missions": [
         "Public safety and emergency response",
@@ -2159,7 +2169,12 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://blueridgedefense.com/",
       "latitude": 39.185,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Locality reference only. Current Virginia operating presence remains uncorroborated; neither this marker nor an old company registration verifies an occupied facility.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://sam.gov/entity/MV3AMKSSPZR1/coreData?status=Active",
       "longitude": -78.163,
       "missions": [
         "Counter-UAS",
@@ -2398,6 +2413,10 @@
         {
           "title": "U.S. Census public-address geocode (site approximation)",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=12355+Sunrise+Valley+Drive%2C+Reston%2C+VA+20191&benchmark=Public_AR_Current&format=json"
+        },
+        {
+          "title": "Bowman current Virginia offices and headquarters",
+          "url": "https://bowman.com/virginia"
         }
       ],
       "state": "VA",
@@ -2793,7 +2812,12 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
       "latitude": 37.278,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
       "longitude": -82.1,
       "missions": [
         "Public safety and emergency response",
@@ -2845,7 +2869,12 @@
       "contact_url": "https://www.bzrdsystems.com/",
       "current_activity": "BZRD launched its public site in July 2026 and describes its system as a developing capability moving from prototype and field validation toward deployment. The record does not present the product as broadly fielded.",
       "latitude": 37.229,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Official material supports the listed locality, but a current public operating street address was not corroborated. The marker is a locality reference, not a building, test site or visitor entrance.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://www.linkedin.com/company/bzrd-systems",
       "longitude": -80.414,
       "missions": [
         "Counter-UAS",
@@ -3423,7 +3452,7 @@
       "city": "Chase City",
       "contact_email": "cctownmanager@chasecity.org",
       "contact_phone": "434-372-5136",
-      "contact_text": "Airport public contact: Dusty Forbes, Town Manager",
+      "contact_text": "Town of Chase City airport sponsor/manager, as listed by Virginia DOAV.",
       "contact_url": "https://doav.virginia.gov/airport_sponsors/",
       "display_name": "Chase City Municipal Airport",
       "latitude": 36.788343,
@@ -3801,32 +3830,40 @@
       "website_url": "https://www.fairfaxva.gov/files/assets/city/v/1/police/documents/annual-reports/fy2023-ffx-pd-annual-report.pdf"
     },
     {
+      "address_line": "9608 Grant Avenue",
       "capabilities": [
         "Operations, maintenance, and sustainment",
         "Perception, sensing, and sensor fusion"
       ],
       "city": "Manassas",
       "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
-      "latitude": 38.751,
-      "location_precision": "locality",
-      "longitude": -77.475,
+      "contact_phone": "703-257-8000",
+      "contact_text": "City Police Department public, non-emergency contact; current UAS program details require confirmation.",
+      "contact_url": "https://www.manassasva.gov/police_department/index.php",
+      "display_name": "City of Manassas Police Drone Program",
+      "latitude": 38.747275,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "geocoded",
+      "location_notes": "Current Police Department public contact building for its documented drone program. The point is not a launch site, equipment-storage location, or proof that the police received the separately listed 2026 jurisdiction-level award. Coordinates are Census address-range estimates, not surveyed building/entrance coordinates.",
+      "location_precision": "site",
+      "location_role": "office",
+      "location_source_url": "https://www.linkedin.com/company/manassas-city-police",
+      "longitude": -77.47457,
       "missions": [
         "Public safety and emergency response",
         "Search and rescue",
         "Surveying and mapping"
       ],
       "name": "City of Manassas First Responder UAS Capability",
-      "overview": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in City of Manassas; the public award record does not identify the operating department. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+      "overview": "The City of Manassas Police Department documented purchasing a drone and completing pilot training in November 2021, and a July 2023 department release documents drone deployment during an investigation. The current point is its public contact building. Separately, a CY 2026 DCJS trade-and-replace award names the City of Manassas but does not identify its recipient department; these records do not establish that the police received that award or disclose current aircraft numbers.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
+      "postal_code": "20110",
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Northern Virginia",
-      "short_description": "A CY 2026 Virginia DCJS award documents an unmanned aircraft already in use by an eligible local first responder agency in City of Manassas; the public award record does not identify the operating department.",
+      "short_description": "City police drone use documented in official budget and incident records; current program details and the 2026 grant linkage still need confirmation.",
       "sources": [
         {
           "title": "DCJS CY 2026 Unmanned Aircraft Trade and Replace Awards",
@@ -3835,6 +3872,26 @@
         {
           "title": "DCJS Unmanned Aircraft Trade and Replace Program",
           "url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+        },
+        {
+          "title": "Published public contact address",
+          "url": "https://www.linkedin.com/company/manassas-city-police"
+        },
+        {
+          "title": "Census public address-range match",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=9608+Grant+Avenue%2C+Manassas%2C+VA+20110&benchmark=Public_AR_Current&format=json"
+        },
+        {
+          "title": "Manassas Police official July 2023 drone deployment release",
+          "url": "https://cms9files.revize.com/manassasva/MCPD%20Press%20Release%2007.05.23.pdf"
+        },
+        {
+          "title": "City of Manassas FY2023 Police accomplishments",
+          "url": "https://www.manassasva.gov/Finance/Budget%20Division/2023/Adopted/Section%2005%20-%20Department%20Budgets.pdf"
+        },
+        {
+          "title": "City of Manassas Police Department public contact page",
+          "url": "https://www.manassasva.gov/police_department/index.php"
         }
       ],
       "state": "VA",
@@ -3844,7 +3901,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      "website_url": "https://www.manassasva.gov/police_department/index.php"
     },
     {
       "address_line": "2401 Courthouse Drive",
@@ -4307,7 +4364,12 @@
       "contact_url": "https://vsgc.odu.edu/csiip/",
       "current_activity": "The public program page lists ongoing registration for students and employers.",
       "latitude": null,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "unmapped",
+      "location_notes": "Regional or statewide activity covering multiple sites. A coordinator's office, event venue or locality center would not represent the program's footprint; no single map pin is assigned.",
       "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://vsgc.odu.edu/about-us/",
       "longitude": null,
       "missions": [],
       "name": "Commonwealth STEM Industry Internship Program (CSIIP)",
@@ -5503,7 +5565,12 @@
       "contact_url": "https://www.dronetrace.com/contact",
       "current_activity": "DroneTrace currently offers platform demonstrations, user certification, field deployment support, custom exploitation modules, and UxS exploitation training.",
       "latitude": 38.035,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Official material supports the listed locality, but a current public operating street address was not corroborated. The marker is a locality reference, not a building, test site or visitor entrance.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://www.dronetrace.com/contact",
       "longitude": -78.503,
       "missions": [
         "ISR",
@@ -6874,7 +6941,12 @@
       "contact_url": "https://www.axon.com/contact/dedrone",
       "current_activity": "Dedrone previously maintained its Washington-area headquarters in Sterling. Axon completed its acquisition of Dedrone in October 2024, and current Axon materials do not establish the former Sterling headquarters as a current standalone operation.",
       "latitude": 39.006,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Historical Sterling record retained after the Axon acquisition; a former office address is not evidence of current occupancy. Locality reference only, not a current operating facility.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://www.axon.com/landing-pages/dedrone-sem-landing-page",
       "longitude": -77.428,
       "missions": [
         "Training and experimentation"
@@ -7064,7 +7136,12 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://va.ng.mil/Installations/Fort-Pickett/",
       "latitude": 37.08,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Generalized public installation locality retained. A public contact or mailing address must not be confused with the installation boundary, autonomous-systems test area, or an unrestricted visitor entrance.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://va.ng.mil/Installations/Fort-Pickett/",
       "longitude": -77.997,
       "missions": [
         "Force protection and installation security"
@@ -7106,7 +7183,12 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://home.army.mil/aphill/",
       "latitude": 38.05,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Generalized public installation locality retained. A public contact or mailing address must not be confused with the installation boundary, autonomous-systems test area, or an unrestricted visitor entrance.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://home.army.mil/aphill/",
       "longitude": -77.347,
       "missions": [
         "Force protection and installation security"
@@ -8506,7 +8588,7 @@
       "contact_url": "https://www.h2psolution.com/contact-us/",
       "current_activity": "H2P currently offers counter-UAS training, readiness assessments, exercises, and program-development support from Fairfax.",
       "latitude": 38.846,
-      "location_last_verified_at": "2026-09-06",
+      "location_last_verified_at": "2026-09-16",
       "location_method": "locality",
       "location_notes": "The company publishes Fairfax as its location, but a specific operating address was not confirmed. The pin is a locality reference, not a training site.",
       "location_precision": "locality",
@@ -9346,6 +9428,10 @@
         {
           "title": "U.S. Census public-address geocode (site approximation)",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=510+Lansdowne+Road%2C+Fredericksburg%2C+VA+22408&benchmark=Public_AR_Current&format=json"
+        },
+        {
+          "title": "HDT public office and manufacturing addresses",
+          "url": "https://www.hdtglobal.com/about/office-locations/"
         }
       ],
       "state": "VA",
@@ -9525,7 +9611,12 @@
       "contact_url": "https://hevenaerotech.com/company/",
       "current_activity": "Heven currently advertises Winchester manufacturing, production, integration, hydrogen engineering, and UAS flight-operations roles tied to the campus.",
       "latitude": 39.185,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Company confirms Winchester manufacturing/engineering activity but no campus street address was corroborated. The separate Dulles headquarters address must not be substituted for this campus.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://hevenaerotech.com/work-with-us/",
       "longitude": -78.163,
       "missions": [
         "ISR",
@@ -10872,7 +10963,7 @@
       "city": "Bumpass",
       "contact_email": "hank.rempe@comcast.net",
       "contact_phone": "804-550-5794",
-      "contact_text": "Airport public contact: Hank Rempe, Manager",
+      "contact_text": "Mile High Charters airport manager, as listed by Virginia DOAV.",
       "contact_url": "https://doav.virginia.gov/airport_sponsors/",
       "display_name": "Lake Anna Airport",
       "latitude": 37.965827,
@@ -10929,7 +11020,7 @@
       "city": "Clarkesville",
       "contact_email": "kerrlakedocks@gmail.com",
       "contact_phone": "804-894-0458",
-      "contact_text": "Airport public contact: Michael Denton, Commission Chair",
+      "contact_text": "Lake Country airport commission contact, as listed by Virginia DOAV.",
       "contact_url": "https://doav.virginia.gov/airport_sponsors/",
       "display_name": "Lake Country Regional Airport",
       "latitude": 36.596374,
@@ -12636,7 +12727,7 @@
       "contact_url": "https://www.magothyrt.com/contact",
       "current_activity": "Magothy publishes its autopilot, simulator/interface resources, and development kit, with a Virginia office and separate Maryland testing locations.",
       "latitude": 38.9696,
-      "location_last_verified_at": "2026-09-06",
+      "location_last_verified_at": "2026-09-16",
       "location_method": "locality",
       "location_notes": "The Virginia record represents the published Herndon office locality, not a test range. The company's contact page places its water-testing facilities in Maryland; no Virginia street address was confirmed.",
       "location_precision": "locality",
@@ -12734,6 +12825,10 @@
         {
           "title": "Hampton Roads Alliance contact and IDEA Lab location",
           "url": "https://hamptonroadsalliance.com/wp-content/uploads/2025/01/Minutes_Board-Meeting_April-19-2024.pdf"
+        },
+        {
+          "title": "Hampton Roads Alliance announcement of Mare Custos at IDEA Lab",
+          "url": "https://www.linkedin.com/posts/hamptonroadsalliance_the-hampton-roads-alliance-is-proud-to-welcome-activity-7468316047843102720-aBpj"
         }
       ],
       "state": "VA",
@@ -12755,7 +12850,12 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.quantico.marines.mil/About/",
       "latitude": 38.522,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Generalized public installation locality retained. A public contact or mailing address must not be confused with the installation boundary, autonomous-systems test area, or an unrestricted visitor entrance.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://www.quantico.marines.mil/About/",
       "longitude": -77.29,
       "missions": [
         "Force protection and installation security"
@@ -12837,6 +12937,7 @@
       "website_url": "https://www.tecom.marines.mil/In-the-News/Stories/News-Article-Display/Article/4538355/tecom-establishes-marine-corps-robotics-integration-group-and-counter-drone-team/"
     },
     {
+      "address_line": "2084 South Street",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration",
@@ -12847,9 +12948,14 @@
       "contact_phone": "",
       "contact_text": "Organization public information and inquiries",
       "contact_url": "https://www.mcwl.marines.mil/Welcome-to-MCWL/About-Us/",
-      "latitude": 38.522,
-      "location_precision": "locality",
-      "longitude": -77.29,
+      "latitude": 38.516492,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "geocoded",
+      "location_notes": "Official public administrative/contact address, not the location or extent of field experiments or an unrestricted visitor entrance. Coordinates are Census address-range estimates, not surveyed building/entrance coordinates.",
+      "location_precision": "site",
+      "location_role": "office",
+      "location_source_url": "https://www.mcwl.marines.mil/Divisions/MCWL-G-3-5/",
+      "longitude": -77.29164,
       "missions": [
         "Training and experimentation",
         "Force protection and installation security"
@@ -12862,6 +12968,7 @@
         "Maritime surface systems",
         "Undersea systems"
       ],
+      "postal_code": "22134",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Northern Virginia",
@@ -12882,6 +12989,14 @@
         {
           "title": "Marine Corps drone task force and UAS lethality initiative",
           "url": "https://www.marines.mil/News/News-Display/Article/4299458/marine-corps-initiates-drone-task-force-summits-to-accelerate-uas-lethality/"
+        },
+        {
+          "title": "Published public contact address",
+          "url": "https://www.mcwl.marines.mil/Divisions/MCWL-G-3-5/"
+        },
+        {
+          "title": "Census public address-range match",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=2084+South+Street%2C+Quantico%2C+VA+22134&benchmark=Public_AR_Current&format=json"
         }
       ],
       "state": "VA",
@@ -12968,7 +13083,12 @@
       "contact_url": "https://www.vaspace.org/our-facilities",
       "current_activity": "The operator's current facilities page offers government and commercial UAS activities and publishes airfield specifications.",
       "latitude": 37.94,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Operator confirms the dedicated UAS airfield on the Wallops complex, but a specific airfield point or access address was not corroborated in the reviewed materials. Existing locality reference is not a runway, test boundary or launch point; the Norfolk corporate address is not the airfield.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://www.vaspace.org/our-facilities",
       "longitude": -75.467,
       "missions": [
         "Training and experimentation"
@@ -13771,7 +13891,7 @@
       "development_status": "operational",
       "infrastructure_access": "Powered operations center, offices and work areas, storage, 5G connectivity, outdoor charging, internet, training space, and testing support.",
       "latitude": 38.245,
-      "location_last_verified_at": "2026-09-06",
+      "location_last_verified_at": "2026-09-16",
       "location_method": "locality",
       "location_notes": "The public fact sheet identifies Orange County but does not provide an operating-site address. The current Orange pin is a locality reference, not the range boundary or access point.",
       "location_precision": "locality",
@@ -15196,7 +15316,12 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://cnrma.cnic.navy.mil/Installations/NSA-South-Potomac/",
       "latitude": 38.333,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Generalized public installation locality retained. A public contact or mailing address must not be confused with the installation boundary, autonomous-systems test area, or an unrestricted visitor entrance.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://cnrma.cnic.navy.mil/Installations/NSA-South-Potomac/",
       "longitude": -77.031,
       "missions": [
         "Force protection and installation security"
@@ -15229,6 +15354,7 @@
       "website_url": "https://cnrma.cnic.navy.mil/Installations/NSA-South-Potomac/"
     },
     {
+      "address_line": "6149 Welsh Road, Suite 203",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration",
@@ -15238,10 +15364,15 @@
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/What-We-Do/",
-      "latitude": 38.333,
-      "location_precision": "locality",
-      "longitude": -77.031,
+      "contact_url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Contact/",
+      "latitude": 38.32682,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "geocoded",
+      "location_notes": "Official public administrative/contact address matched with the Esri address geocoder. Not a test-range boundary, operational activity location, unrestricted entrance, or access authorization. Site-level precision is retained; internal military facilities are not mapped.",
+      "location_precision": "site",
+      "location_role": "office",
+      "location_source_url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Contact/",
+      "longitude": -77.037444,
       "missions": [
         "Training and experimentation",
         "Force protection and installation security"
@@ -15254,6 +15385,7 @@
         "Maritime surface systems",
         "Undersea systems"
       ],
+      "postal_code": "22448",
       "provenance": "curated-public-source",
       "record_type": "organization",
       "region": "Fredericksburg Region",
@@ -15270,6 +15402,14 @@
         {
           "title": "NSWC Dahlgren intelligent automation fact sheet",
           "url": "https://www.navsea.navy.mil/Portals/103/Documents/NSWC_Dahlgren/Fact%20Sheets%202024/FNL_IA%20Fact%20Sheet.pdf"
+        },
+        {
+          "title": "Official Navy public contact address",
+          "url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Contact/"
+        },
+        {
+          "title": "Esri public address match",
+          "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=6149+Welsh+Road%2C+Dahlgren%2C+VA+22448&outFields=Match_addr%2CAddr_type%2CStAddr%2CCity%2CRegion%2CPostal&maxLocations=1&f=json"
         }
       ],
       "state": "VA",
@@ -15501,7 +15641,7 @@
       "city": "Forest",
       "contact_email": "jwallace@flyfreedomaviation.com",
       "contact_phone": "434-582-3028",
-      "contact_text": "Airport public contact: Andrew Wallace, Manager",
+      "contact_text": "Liberty University / Freedom Aviation airport manager, as listed by Virginia DOAV.",
       "contact_url": "https://doav.virginia.gov/airport_sponsors/",
       "display_name": "New London Airport",
       "latitude": 37.271735,
@@ -15558,7 +15698,7 @@
       "city": "New Market",
       "contact_email": "fireflyer@icloud.com",
       "contact_phone": "703-898-1157",
-      "contact_text": "Airport public contact: Bob Thomas, Manager",
+      "contact_text": "New Market Aeronautics airport manager, as listed by Virginia DOAV.",
       "contact_url": "https://doav.virginia.gov/airport_sponsors/",
       "display_name": "New Market Airport",
       "latitude": 38.655992,
@@ -16745,7 +16885,12 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.navsea.navy.mil/Media/News/Article-View/Article/3886620/maximizing-resources-building-a-competitive-outdoor-autonomy-lab-environment/",
       "latitude": 38.333,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Generalized public installation locality retained. A public contact or mailing address must not be confused with the installation boundary, autonomous-systems test area, or an unrestricted visitor entrance.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/What-We-Do/",
       "longitude": -77.031,
       "missions": [
         "Training and experimentation",
@@ -17810,7 +17955,12 @@
       "contact_url": "https://perimeteraigroup.com/company/",
       "current_activity": "Haymarket startup developing passive acoustic sensors to detect and classify small unmanned-aircraft threats.",
       "latitude": null,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "unmapped",
+      "location_notes": "Regional or statewide activity covering multiple sites. A coordinator's office, event venue or locality center would not represent the program's footprint; no single map pin is assigned.",
       "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://proveninpendleton.com/blogs/news/oregon-uas-accelerator-welcomes-17-startups-to-its-fall-2026-cohort",
       "longitude": null,
       "missions": [
         "Counter-UAS"
@@ -18073,7 +18223,12 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
       "latitude": 36.826,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
       "longitude": -79.398,
       "missions": [
         "Public safety and emergency response",
@@ -18431,7 +18586,12 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.jmc.army.mil/Radford/About.aspx",
       "latitude": 37.132,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Generalized public installation locality retained. A public contact or mailing address must not be confused with the installation boundary, autonomous-systems test area, or an unrestricted visitor entrance.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://www.jmc.army.mil/Radford/About.aspx",
       "longitude": -80.576,
       "missions": [
         "Force protection and installation security"
@@ -19440,7 +19600,12 @@
       "contact_text": "Installation or agency public information",
       "contact_url": "https://home.army.mil/belvoir/contact/phonebook",
       "latitude": 38.035,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Generalized public installation locality retained. A public contact or mailing address must not be confused with the installation boundary, autonomous-systems test area, or an unrestricted visitor entrance.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://home.army.mil/belvoir/contact/phonebook",
       "longitude": -78.503,
       "missions": [
         "Force protection and installation security"
@@ -19731,6 +19896,14 @@
         {
           "title": "SAIC Reston headquarters and public contact route",
           "url": "https://www.saic.com/contact-us"
+        },
+        {
+          "title": "SAIC published counter-drone product portfolio",
+          "url": "https://www.saic.com/products"
+        },
+        {
+          "title": "SAIC counter-UAS integration scope",
+          "url": "https://experience.saic.com/counter-unmanned-aerial-systems-cuas"
         }
       ],
       "state": "VA",
@@ -20258,7 +20431,7 @@
       "city": "Moneta",
       "contact_email": "w91smla@gmail.com",
       "contact_phone": "732-296-4950",
-      "contact_text": "Airport public contact: Moe Bazazan, President",
+      "contact_text": "Smith Mountain Lake Airport LLC operator contact, as listed by Virginia DOAV.",
       "contact_url": "https://doav.virginia.gov/airport_sponsors/",
       "display_name": "Smith Mountain Lake Airport",
       "latitude": 37.10773,
@@ -20318,7 +20491,12 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
       "latitude": 36.834,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
       "longitude": -81.514,
       "missions": [
         "Public safety and emergency response",
@@ -20364,7 +20542,12 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
       "latitude": 36.716,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
       "longitude": -77.068,
       "missions": [
         "Public safety and emergency response",
@@ -20400,9 +20583,9 @@
       "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
     },
     {
-      "activity_last_verified_at": "2026-09-04",
-      "activity_source_url": "https://www.svhec.org/news/svhec-drives-22-million-economic-impact-in-southern-virginia/",
-      "activity_status": "active",
+      "activity_last_verified_at": "2026-09-16",
+      "activity_source_url": "https://www.svhec.org/news/career-tech-academy-opens-application-period/",
+      "activity_status": "",
       "address_line": "820 Bruce Street",
       "capabilities": [
         "Systems engineering and integration",
@@ -20414,7 +20597,7 @@
       "contact_phone": "",
       "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
       "contact_url": "https://www.svhec.org/news/svhec-drives-22-million-economic-impact-in-southern-virginia/",
-      "current_activity": "South Boston workforce center offering automation and robotics training through its Career Tech Academy.",
+      "current_activity": "SVHEC documents automation and robotics instruction in its annual reports and 2025-26 Career Tech Academy recruitment. Its 2026 reporting describes continuing workforce activity, but a currently open 2026-27 robotics intake was not confirmed in this review.",
       "latitude": 36.69551,
       "location_precision": "site",
       "longitude": -78.901827,
@@ -20443,6 +20626,14 @@
         {
           "title": "U.S. Census public-address geocode (site approximation)",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=820+Bruce+Street%2C+South+Boston%2C+VA+24592&benchmark=Public_AR_Current&format=json"
+        },
+        {
+          "title": "SVHEC 2025-26 Career Tech Academy robotics offering",
+          "url": "https://www.svhec.org/news/career-tech-academy-opens-application-period/"
+        },
+        {
+          "title": "SVHEC annual report and South Boston campus address",
+          "url": "https://www.svhec.org/wp-content/uploads/2020/04/FY2019-Annual-Report.pdf"
         }
       ],
       "state": "VA",
@@ -20942,7 +21133,12 @@
       "contact_url": "https://vsgc.odu.edu/STEMtakesFlight/",
       "current_activity": "The published 2026 student research session ran June 1-August 7. Those application deadlines have passed; a later intake has not been confirmed in this record.",
       "latitude": null,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "unmapped",
+      "location_notes": "Regional or statewide activity covering multiple sites. A coordinator's office, event venue or locality center would not represent the program's footprint; no single map pin is assigned.",
       "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://vsgc.odu.edu/about-us/",
       "longitude": null,
       "missions": [],
       "name": "STEM Takes Flight at Virginia's Community Colleges",
@@ -21159,6 +21355,7 @@
       "website_url": "https://www.suffolkva.us/directory.aspx?EID=60"
     },
     {
+      "address_line": "30 Battle Group Way",
       "capabilities": [
         "Systems engineering and integration"
       ],
@@ -21166,10 +21363,15 @@
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://www.navsea.navy.mil/Home/SCSC/",
-      "latitude": 37.94,
-      "location_precision": "locality",
-      "longitude": -75.467,
+      "contact_url": "https://www.navsea.navy.mil/Home/SCSC/Contact-Us/",
+      "latitude": 37.931343,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "geocoded",
+      "location_notes": "Official public administrative/contact address matched with the Esri address geocoder. Not a test-range boundary, operational activity location, unrestricted entrance, or access authorization. Site-level precision is retained; internal military facilities are not mapped.",
+      "location_precision": "site",
+      "location_role": "office",
+      "location_source_url": "https://www.navsea.navy.mil/Home/SCSC/Contact-Us/",
+      "longitude": -75.477468,
       "missions": [
         "Force protection and installation security"
       ],
@@ -21178,6 +21380,7 @@
       "platform_domains": [
         "Cross-domain autonomy"
       ],
+      "postal_code": "23337",
       "provenance": "virginia-military-factbook",
       "record_type": "organization",
       "region": "Eastern Shore",
@@ -21190,6 +21393,14 @@
         {
           "title": "Surface Combat Systems Center Wallops Island",
           "url": "https://www.navsea.navy.mil/Home/SCSC/"
+        },
+        {
+          "title": "Official Navy public contact address",
+          "url": "https://www.navsea.navy.mil/Home/SCSC/Contact-Us/"
+        },
+        {
+          "title": "Esri public address match",
+          "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=30+Battle+Group+Way%2C+Wallops+Island%2C+VA+23337&outFields=Match_addr%2CAddr_type%2CStAddr%2CCity%2CRegion%2CPostal&maxLocations=1&f=json"
         }
       ],
       "state": "VA",
@@ -21309,7 +21520,7 @@
       "city": "Tangier",
       "contact_email": "townoffice@tangiervirginia.org",
       "contact_phone": "757-891-2438",
-      "contact_text": "Airport public contact: James Eskridge, Town Manager",
+      "contact_text": "Town of Tangier airport sponsor contact, as listed by Virginia DOAV.",
       "contact_url": "https://doav.virginia.gov/airport_sponsors/",
       "display_name": "Tangier Island Airport",
       "latitude": 37.825873,
@@ -21605,6 +21816,7 @@
       "website_url": "https://tjaglcs.army.mil/"
     },
     {
+      "address_line": "Pentagon Reservation (named site, not mailing address)",
       "capabilities": [
         "Systems engineering and integration"
       ],
@@ -21613,9 +21825,14 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.defense.gov/Pentagon-Tours/",
-      "latitude": 38.881,
-      "location_precision": "locality",
-      "longitude": -77.091,
+      "latitude": 38.872701,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "geocoded",
+      "location_notes": "Named-site reference for the publicly identified Pentagon headquarters, replacing the Arlington locality center. Not an office, entrance, access route, or authorization to visit. The federal mailing address uses Washington, DC although the building is in Arlington, Virginia.",
+      "location_precision": "site",
+      "location_role": "headquarters",
+      "location_source_url": "https://www.usa.gov/agencies/u-s-department-of-defense",
+      "longitude": -77.056191,
       "missions": [
         "Force protection and installation security"
       ],
@@ -21636,6 +21853,18 @@
         {
           "title": "U.S. Department of Defense: Pentagon information",
           "url": "https://www.defense.gov/Pentagon-Tours/"
+        },
+        {
+          "title": "USA.gov Department of Defense headquarters",
+          "url": "https://www.usa.gov/agencies/u-s-department-of-defense"
+        },
+        {
+          "title": "Esri named Pentagon site match",
+          "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=Pentagon%2C+Arlington%2C+Virginia&outFields=Match_addr%2CAddr_type%2CStAddr%2CCity%2CRegion%2CPostal&maxLocations=1&f=json"
+        },
+        {
+          "title": "Washington Headquarters Services: Pentagon Reservation in Arlington",
+          "url": "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/ai/a118p.pdf?ver=2019-04-03-104441-023"
         }
       ],
       "state": "VA",
@@ -22009,7 +22238,12 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
       "latitude": 36.798,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
       "longitude": -81.683,
       "missions": [
         "Public safety and emergency response",
@@ -22055,7 +22289,12 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
       "latitude": 37.934,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
       "longitude": -75.378,
       "missions": [
         "Public safety and emergency response",
@@ -22101,7 +22340,12 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
       "latitude": 38.647,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
       "longitude": -78.671,
       "missions": [
         "Public safety and emergency response",
@@ -22147,7 +22391,12 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
       "latitude": 36.997,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
       "longitude": -79.892,
       "missions": [
         "Public safety and emergency response",
@@ -22193,7 +22442,12 @@
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
       "latitude": 37.798,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
       "longitude": -78.495,
       "missions": [
         "Public safety and emergency response",
@@ -22358,7 +22612,12 @@
       "contact_url": "https://truweathersolutions.com/",
       "current_activity": "TruWeather currently markets its V360 weather platform, infrastructure, and professional services for drone pilots, air taxis, and autonomous aerial missions.",
       "latitude": 38.959,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Current operator contact page confirms Reston headquarters locality but not a current operating street address. Historical or possible residential mailing addresses are not substituted for an operating facility.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://truweathersolutions.com/contact/",
       "longitude": -77.357,
       "missions": [
         "Public safety and emergency response",
@@ -22384,6 +22643,10 @@
         {
           "title": "TruWeather public-safety and BVLOS weather applications",
           "url": "https://truweathersolutions.com/public-safety/"
+        },
+        {
+          "title": "TruWeather headquarters locality and public contact",
+          "url": "https://truweathersolutions.com/contact/"
         }
       ],
       "state": "VA",
@@ -22396,9 +22659,10 @@
       "website_url": "https://truweathersolutions.com/"
     },
     {
-      "activity_last_verified_at": "2026-08-24",
-      "activity_source_url": "https://www.governor.virginia.gov/newsroom/news-releases/2026/may-releases/name-1117183-en.html",
+      "activity_last_verified_at": "2026-09-16",
+      "activity_source_url": "https://www.linkedin.com/company/turbineone",
       "activity_status": "planned",
+      "address_line": "14120 Sullyfield Circle, Suite J",
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Data engineering, analytics, and edge computing",
@@ -22410,10 +22674,15 @@
       "contact_phone": "",
       "contact_text": "TurbineOne public contact listed in the Virginia project announcement",
       "contact_url": "https://www.governor.virginia.gov/newsroom/news-releases/2026/may-releases/name-1117183-en.html",
-      "current_activity": "The Commonwealth and TurbineOne announced the Fairfax County headquarters and Chantilly T1 Edgeworks project in May 2026. No public street address or opening confirmation was located during this review.",
-      "latitude": 38.875,
-      "location_precision": "locality",
-      "longitude": -77.442,
+      "current_activity": "TurbineOne now publishes a Chantilly headquarters address. The May 2026 Commonwealth announcement also describes the T1 Edgeworks experience-lab project; opening of that lab has not been independently confirmed.",
+      "latitude": 38.894284,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "geocoded",
+      "location_notes": "Company-published Chantilly headquarters address. The point does not establish that the announced T1 Edgeworks experience lab is open or that all company operations occur here. Coordinates are Census address-range estimates, not surveyed building/entrance coordinates.",
+      "location_precision": "site",
+      "location_role": "headquarters",
+      "location_source_url": "https://www.linkedin.com/company/turbineone",
+      "longitude": -77.438272,
       "missions": [
         "ISR",
         "Force protection and installation security"
@@ -22425,7 +22694,7 @@
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
       ],
-      "postal_code": "",
+      "postal_code": "20151",
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "Northern Virginia",
@@ -22442,6 +22711,14 @@
         {
           "title": "Federal SBIR award for TurbineOne AutoML for UAS",
           "url": "https://www.sbir.gov/awards/194997"
+        },
+        {
+          "title": "Published public contact address",
+          "url": "https://www.linkedin.com/company/turbineone"
+        },
+        {
+          "title": "Census public address-range match",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=14120+Sullyfield+Circle%2C+Chantilly%2C+VA+20151&benchmark=Public_AR_Current&format=json"
         }
       ],
       "state": "VA",
@@ -23988,7 +24265,7 @@
       "contact_text": "VTTI research inquiries; operator coordination required for facility or corridor use",
       "contact_url": "https://www.vtti.vt.edu/contact/index.html",
       "latitude": null,
-      "location_last_verified_at": "2026-09-06",
+      "location_last_verified_at": "2026-09-16",
       "location_method": "unmapped",
       "location_notes": "Multi-site road-testing program spanning Northern Virginia roads and participating test facilities elsewhere in Virginia. The former Fairfax locality pin did not represent the whole network.",
       "location_precision": "regional",
@@ -24054,7 +24331,12 @@
       "contact_url": "https://www.nepa.navy.mil/AFTTEIS/",
       "current_activity": "The Navy's Atlantic Fleet Training and Testing documentation identifies current and proposed uncrewed-system activities in the Virginia Capes Range Complex.",
       "latitude": null,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "unmapped",
+      "location_notes": "Regional or statewide activity covering multiple sites. A coordinator's office, event venue or locality center would not represent the program's footprint; no single map pin is assigned.",
       "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://www.nepa.navy.mil/AFTTEIS/",
       "longitude": null,
       "missions": [
         "ISR",
@@ -24592,7 +24874,12 @@
       "contact_url": "https://doav.virginia.gov/aviation_programs_resources/",
       "current_activity": "Virginia FIX provides an information-sharing capability for state and local governments and UAS stakeholders to address safety and policy concerns while supporting integrated airspace.",
       "latitude": null,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "unmapped",
+      "location_notes": "Regional or statewide activity covering multiple sites. A coordinator's office, event venue or locality center would not represent the program's footprint; no single map pin is assigned.",
       "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://doav.virginia.gov/wp-content/uploads/Files/DocumentLibrary/DOAVMVI2024Reportv2.0.pdf",
       "longitude": null,
       "missions": [
         "Logistics and contested logistics",
@@ -26705,7 +26992,12 @@
       "contact_text": "Organization public information and inquiries",
       "contact_url": "https://virginiauas.com/home/",
       "latitude": 37.666,
+      "location_last_verified_at": "2026-09-16",
+      "location_method": "locality",
+      "location_notes": "Official material supports the listed locality, but a current public operating street address was not corroborated. The marker is a locality reference, not a building, test site or visitor entrance.",
       "location_precision": "locality",
+      "location_role": "",
+      "location_source_url": "https://virginiauas.com/home/",
       "longitude": -77.506,
       "missions": [
         "Infrastructure inspection",
@@ -27062,6 +27354,10 @@
         {
           "title": "Virtus Arlington address and public contact",
           "url": "https://www.virtusinnovation.com/contact"
+        },
+        {
+          "title": "Virtus mission and Arlington street address",
+          "url": "https://www.virtusinnovation.com/mission"
         }
       ],
       "state": "VA",

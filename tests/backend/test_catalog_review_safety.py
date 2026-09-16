@@ -33,7 +33,7 @@ class CatalogReviewSafetyTests(TestCase):
         )
         return asset
 
-    def apply_manifest(self, reviewed_assets=None, follow_up_assets=None):
+    def apply_manifest(self, reviewed_assets=None, follow_up_assets=None, review_findings=None):
         with TemporaryDirectory() as directory:
             path = Path(directory) / "reviews.json"
             path.write_text(
@@ -42,6 +42,7 @@ class CatalogReviewSafetyTests(TestCase):
                         "reviewed_at": "2026-09-04",
                         "reviewed_assets": reviewed_assets or {},
                         "follow_up_assets": follow_up_assets or {},
+                        "review_findings": review_findings or {},
                     }
                 )
             )
@@ -100,3 +101,29 @@ class CatalogReviewSafetyTests(TestCase):
         self.apply_manifest({asset.name: []})
         asset.refresh_from_db()
         self.assertIsNone(asset.reviewed_at)
+
+    def test_record_specific_finding_is_saved_without_upgrading_precision(self):
+        asset = self.make_asset("Locality research", location_precision="locality")
+        finding = "Company confirms the locality, but no public operating address was found."
+        kwargs = {
+            "reviewed_assets": {asset.name: ["https://example.org/source"]},
+            "review_findings": {asset.name: finding},
+        }
+        self.apply_manifest(**kwargs)
+        self.apply_manifest(**kwargs)
+        asset.refresh_from_db()
+        self.assertIsNotNone(asset.reviewed_at)
+        self.assertEqual(asset.location_precision, "locality")
+        self.assertEqual(asset.review_notes, finding)
+        self.assertEqual(asset.review_comments.count(), 1)
+        self.assertIn(finding, asset.review_comments.get().body)
+
+    def test_finding_cannot_clear_an_existing_review_warning(self):
+        asset = self.make_asset("Unresolved", review_notes="Confirm operating agency")
+        self.apply_manifest(
+            {asset.name: ["https://example.org/source"]},
+            review_findings={asset.name: "New catalog research"},
+        )
+        asset.refresh_from_db()
+        self.assertIsNone(asset.reviewed_at)
+        self.assertEqual(asset.review_notes, "Confirm operating agency")

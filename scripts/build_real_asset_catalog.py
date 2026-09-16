@@ -11431,7 +11431,8 @@ def validate(records, relationships):
             item["url"] == record["website_url"] for item in record["sources"]
         ):
             raise ValueError(f"Primary website is not source-backed: {record['name']}")
-        if not record["contact_url"].startswith("https://"):
+        contact_url = urllib.parse.urlsplit(record["contact_url"])
+        if contact_url.scheme not in {"http", "https"} or not contact_url.hostname:
             raise ValueError(f"Invalid public contact URL: {record['name']}")
         if not any(item["url"] == record["contact_url"] for item in record["sources"]):
             raise ValueError(f"Contact route is not source-backed: {record['name']}")
@@ -11521,19 +11522,23 @@ def validate(records, relationships):
         )
 
 
-def apply_reviewed_corrections(records):
+def apply_reviewed_corrections(records, corrections=None):
     """Apply the same reviewed changes to generated data that deployments apply conditionally."""
     records_by_name = {record["name"]: record for record in records}
-    corrections = json.loads(SEPTEMBER_CORRECTIONS_PATH.read_text())["corrections"]
-    followup_path = ROOT / "data" / "asset_corrections_2026_09_06.json"
-    corrections += json.loads(followup_path.read_text())["corrections"]
-    corrections += json.loads(AIRPORT_WEBSITE_CORRECTIONS_PATH.read_text())["corrections"]
-    corrections += json.loads(
-        (ROOT / "data" / "airport_website_corrections_2026_09_15.json").read_text()
-    )["corrections"]
-    corrections += json.loads(PROFILE_IMPROVEMENTS_PATH.read_text())["corrections"]
-    corrections += json.loads(CAPABILITY_PROFILES_PATH.read_text())["corrections"]
-    corrections += json.loads(AIRPORT_DISPLAY_NAMES_PATH.read_text())["corrections"]
+    if corrections is None:
+        corrections = json.loads(SEPTEMBER_CORRECTIONS_PATH.read_text())["corrections"]
+        followup_path = ROOT / "data" / "asset_corrections_2026_09_06.json"
+        corrections += json.loads(followup_path.read_text())["corrections"]
+        corrections += json.loads(AIRPORT_WEBSITE_CORRECTIONS_PATH.read_text())["corrections"]
+        corrections += json.loads(
+            (ROOT / "data" / "airport_website_corrections_2026_09_15.json").read_text()
+        )["corrections"]
+        corrections += json.loads(PROFILE_IMPROVEMENTS_PATH.read_text())["corrections"]
+        corrections += json.loads(CAPABILITY_PROFILES_PATH.read_text())["corrections"]
+        corrections += json.loads(AIRPORT_DISPLAY_NAMES_PATH.read_text())["corrections"]
+        corrections += json.loads(
+            (ROOT / "data" / "asset_corrections_2026_09_16.json").read_text()
+        )["corrections"]
     for correction in corrections:
         record = records_by_name[correction["name"]]
         record.update(correction["after"])
@@ -11577,8 +11582,8 @@ def main():
     )
     records = [finalize_record(apply_location_override(record)) for record in records]
     records = apply_university_campus_locations(records)
-    records = apply_reviewed_corrections(records)
     records = apply_interview_followup(records)
+    records = apply_reviewed_corrections(records)
     records.sort(key=lambda item: item["name"].casefold())
     relationships = list(CATALOG_RELATIONSHIPS) + university_relationships()
     relationships.extend(

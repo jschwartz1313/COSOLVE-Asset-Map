@@ -1,0 +1,1025 @@
+{
+  "airport_website_reviews": [
+    {
+      "finding": "No reliable current airport-specific operator website was corroborated. Retain the official Virginia airport directory and the existing airport-specific FAA source; do not substitute a tenant or unrelated commercial directory.",
+      "identifier": "CXE",
+      "name": "Chase City Muni",
+      "outcome": "official-directory-retained",
+      "source": "https://doav.virginia.gov/airport_sponsors/",
+      "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "finding": "No reliable current airport-specific operator website was corroborated. Retain the official Virginia airport directory and the existing airport-specific FAA source; do not substitute a tenant or unrelated commercial directory.",
+      "identifier": "7W4",
+      "name": "Lake Anna",
+      "outcome": "official-directory-retained",
+      "source": "https://doav.virginia.gov/airport_sponsors/",
+      "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "finding": "No reliable current airport-specific operator website was corroborated. Retain the official Virginia airport directory and the existing airport-specific FAA source; do not substitute a tenant or unrelated commercial directory. Historical lakecountryregionalairport.org was not reliably accessible; current Town of Clarksville facilities listing corroborates the airport but is not a dedicated airport page.",
+      "identifier": "W63",
+      "name": "Lake Country Rgnl",
+      "outcome": "official-directory-retained",
+      "source": "https://doav.virginia.gov/airport_sponsors/",
+      "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "finding": "No reliable current airport-specific operator website was corroborated. Retain the official Virginia airport directory and the existing airport-specific FAA source; do not substitute a tenant or unrelated commercial directory. This record is a seaplane base; preserve its seaplane-base display name.",
+      "identifier": "2G6",
+      "name": "Mc Laughlin",
+      "outcome": "official-directory-retained",
+      "source": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%272G6%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+      "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "finding": "No reliable current airport-specific operator website was corroborated. Retain the official Virginia airport directory and the existing airport-specific FAA source; do not substitute a tenant or unrelated commercial directory.",
+      "identifier": "W90",
+      "name": "New London",
+      "outcome": "official-directory-retained",
+      "source": "https://doav.virginia.gov/airport_sponsors/",
+      "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "finding": "No reliable current airport-specific operator website was corroborated. Retain the official Virginia airport directory and the existing airport-specific FAA source; do not substitute a tenant or unrelated commercial directory.",
+      "identifier": "8W2",
+      "name": "New Market",
+      "outcome": "official-directory-retained",
+      "source": "https://doav.virginia.gov/airport_sponsors/",
+      "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "finding": "No reliable current airport-specific operator website was corroborated. Retain the official Virginia airport directory and the existing airport-specific FAA source; do not substitute a tenant or unrelated commercial directory. Rejected smlairport.com: its current body describes a different Alpine airport with placeholder information, despite the historical domain name.",
+      "identifier": "W91",
+      "name": "Smith Mountain Lake",
+      "outcome": "official-directory-retained",
+      "source": "https://doav.virginia.gov/airport_sponsors/",
+      "website_url": "https://doav.virginia.gov/airport-directory/"
+    },
+    {
+      "finding": "No reliable current airport-specific operator website was corroborated. Retain the official Virginia airport directory and the existing airport-specific FAA source; do not substitute a tenant or unrelated commercial directory.",
+      "identifier": "TGI",
+      "name": "Tangier Island",
+      "outcome": "official-directory-retained",
+      "source": "https://doav.virginia.gov/airport_sponsors/",
+      "website_url": "https://doav.virginia.gov/airport-directory/"
+    }
+  ],
+  "location_reviews": [
+    {
+      "finding": "Regional or statewide activity covering multiple sites. A coordinator's office, event venue or locality center would not represent the program's footprint; no single map pin is assigned.",
+      "name": "AUVSI Hampton Roads Chapter",
+      "outcome": "regional-no-single-site",
+      "precision": "regional",
+      "source": "https://www.nasa.gov/general/nasa-langley-supports-advanced-air-mobility-aam-exposition/"
+    },
+    {
+      "finding": "Regional membership chapter. Its published postal address is not confirmation of an occupied operating facility, so the chapter is listed without a single map pin.",
+      "name": "AUVSI Ridge and Valley Chapter",
+      "outcome": "regional-no-single-site",
+      "precision": "regional",
+      "source": "https://www.auvsiridgeandvalley.org/"
+    },
+    {
+      "finding": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
+      "name": "Bath County First Responder UAS Capability",
+      "outcome": "operator-address-unresolved",
+      "precision": "locality",
+      "source": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+    },
+    {
+      "finding": "Locality reference only. Current Virginia operating presence remains uncorroborated; neither this marker nor an old company registration verifies an occupied facility.",
+      "name": "Blue Ridge Defense Works",
+      "outcome": "public-operating-address-unresolved",
+      "precision": "locality",
+      "source": "https://sam.gov/entity/MV3AMKSSPZR1/coreData?status=Active"
+    },
+    {
+      "finding": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
+      "name": "Buchanan County First Responder UAS Capability",
+      "outcome": "operator-address-unresolved",
+      "precision": "locality",
+      "source": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+    },
+    {
+      "finding": "Official material supports the listed locality, but a current public operating street address was not corroborated. The marker is a locality reference, not a building, test site or visitor entrance.",
+      "name": "BZRD Systems",
+      "outcome": "public-operating-address-unresolved",
+      "precision": "locality",
+      "source": "https://www.linkedin.com/company/bzrd-systems"
+    },
+    {
+      "finding": "Current Police Department public contact building for its documented drone program. The point is not a launch site, equipment-storage location, or proof that the police received the separately listed 2026 jurisdiction-level award. Coordinates are Census address-range estimates, not surveyed building/entrance coordinates.",
+      "name": "City of Manassas First Responder UAS Capability",
+      "outcome": "public-contact-or-site-point",
+      "precision": "site",
+      "source": "https://www.linkedin.com/company/manassas-city-police"
+    },
+    {
+      "finding": "Regional or statewide activity covering multiple sites. A coordinator's office, event venue or locality center would not represent the program's footprint; no single map pin is assigned.",
+      "name": "Commonwealth STEM Industry Internship Program (CSIIP)",
+      "outcome": "regional-no-single-site",
+      "precision": "regional",
+      "source": "https://vsgc.odu.edu/about-us/"
+    },
+    {
+      "finding": "Official material supports the listed locality, but a current public operating street address was not corroborated. The marker is a locality reference, not a building, test site or visitor entrance.",
+      "name": "DroneTrace",
+      "outcome": "public-operating-address-unresolved",
+      "precision": "locality",
+      "source": "https://www.dronetrace.com/contact"
+    },
+    {
+      "finding": "Historical Sterling record retained after the Axon acquisition; a former office address is not evidence of current occupancy. Locality reference only, not a current operating facility.",
+      "name": "Former Dedrone Washington-Area Headquarters",
+      "outcome": "public-operating-address-unresolved",
+      "precision": "locality",
+      "source": "https://www.axon.com/landing-pages/dedrone-sem-landing-page"
+    },
+    {
+      "finding": "Generalized public installation locality retained. A public contact or mailing address must not be confused with the installation boundary, autonomous-systems test area, or an unrestricted visitor entrance.",
+      "name": "Fort Pickett",
+      "outcome": "generalized-installation-retained",
+      "precision": "locality",
+      "source": "https://va.ng.mil/Installations/Fort-Pickett/"
+    },
+    {
+      "finding": "Generalized public installation locality retained. A public contact or mailing address must not be confused with the installation boundary, autonomous-systems test area, or an unrestricted visitor entrance.",
+      "name": "Fort Walker",
+      "outcome": "generalized-installation-retained",
+      "precision": "locality",
+      "source": "https://home.army.mil/aphill/"
+    },
+    {
+      "finding": "The company publishes Fairfax as its location, but a specific operating address was not confirmed. The pin is a locality reference, not a training site.",
+      "name": "H2P Solution",
+      "outcome": "public-operating-address-unresolved",
+      "precision": "locality",
+      "source": "https://www.h2psolution.com/about/"
+    },
+    {
+      "finding": "Company confirms Winchester manufacturing/engineering activity but no campus street address was corroborated. The separate Dulles headquarters address must not be substituted for this campus.",
+      "name": "Heven AeroTech Winchester Innovation and Manufacturing Campus",
+      "outcome": "public-operating-address-unresolved",
+      "precision": "locality",
+      "source": "https://hevenaerotech.com/work-with-us/"
+    },
+    {
+      "finding": "The Virginia record represents the published Herndon office locality, not a test range. The company's contact page places its water-testing facilities in Maryland; no Virginia street address was confirmed.",
+      "name": "Magothy River Technologies",
+      "outcome": "public-operating-address-unresolved",
+      "precision": "locality",
+      "source": "https://www.magothyrt.com/contact"
+    },
+    {
+      "finding": "Generalized public installation locality retained. A public contact or mailing address must not be confused with the installation boundary, autonomous-systems test area, or an unrestricted visitor entrance.",
+      "name": "Marine Corps Base Quantico",
+      "outcome": "generalized-installation-retained",
+      "precision": "locality",
+      "source": "https://www.quantico.marines.mil/About/"
+    },
+    {
+      "finding": "Official public administrative/contact address, not the location or extent of field experiments or an unrestricted visitor entrance. Coordinates are Census address-range estimates, not surveyed building/entrance coordinates.",
+      "name": "Marine Corps Warfighting Laboratory",
+      "outcome": "public-contact-or-site-point",
+      "precision": "site",
+      "source": "https://www.mcwl.marines.mil/Divisions/MCWL-G-3-5/"
+    },
+    {
+      "finding": "Operator confirms the dedicated UAS airfield on the Wallops complex, but a specific airfield point or access address was not corroborated in the reviewed materials. Existing locality reference is not a runway, test boundary or launch point; the Norfolk corporate address is not the airfield.",
+      "name": "MARS Unmanned Aircraft Systems Airfield",
+      "outcome": "public-operating-address-unresolved",
+      "precision": "locality",
+      "source": "https://www.vaspace.org/our-facilities"
+    },
+    {
+      "finding": "The public fact sheet identifies Orange County but does not provide an operating-site address. The current Orange pin is a locality reference, not the range boundary or access point.",
+      "name": "MITRE National Range",
+      "outcome": "public-operating-address-unresolved",
+      "precision": "locality",
+      "source": "https://www.mitre.org/sites/default/files/2024-07/PR-24-2208-MITRE-National-Range.pdf"
+    },
+    {
+      "finding": "Generalized public installation locality retained. A public contact or mailing address must not be confused with the installation boundary, autonomous-systems test area, or an unrestricted visitor entrance.",
+      "name": "Naval Support Facility Dahlgren",
+      "outcome": "generalized-installation-retained",
+      "precision": "locality",
+      "source": "https://cnrma.cnic.navy.mil/Installations/NSA-South-Potomac/"
+    },
+    {
+      "finding": "Official public administrative/contact address matched with the Esri address geocoder. Not a test-range boundary, operational activity location, unrestricted entrance, or access authorization. Site-level precision is retained; internal military facilities are not mapped.",
+      "name": "Naval Surface Warfare Center Dahlgren Division",
+      "outcome": "public-contact-or-site-point",
+      "precision": "site",
+      "source": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Contact/"
+    },
+    {
+      "finding": "Generalized public installation locality retained. A public contact or mailing address must not be confused with the installation boundary, autonomous-systems test area, or an unrestricted visitor entrance.",
+      "name": "NSWC Dahlgren Outdoor Autonomy Laboratory",
+      "outcome": "generalized-installation-retained",
+      "precision": "locality",
+      "source": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/What-We-Do/"
+    },
+    {
+      "finding": "Regional or statewide activity covering multiple sites. A coordinator's office, event venue or locality center would not represent the program's footprint; no single map pin is assigned.",
+      "name": "PerimeterAI Group",
+      "outcome": "regional-no-single-site",
+      "precision": "regional",
+      "source": "https://proveninpendleton.com/blogs/news/oregon-uas-accelerator-welcomes-17-startups-to-its-fall-2026-cohort"
+    },
+    {
+      "finding": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
+      "name": "Pittsylvania County First Responder UAS Capability",
+      "outcome": "operator-address-unresolved",
+      "precision": "locality",
+      "source": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+    },
+    {
+      "finding": "Generalized public installation locality retained. A public contact or mailing address must not be confused with the installation boundary, autonomous-systems test area, or an unrestricted visitor entrance.",
+      "name": "Radford Army Ammunition Plant",
+      "outcome": "generalized-installation-retained",
+      "precision": "locality",
+      "source": "https://www.jmc.army.mil/Radford/About.aspx"
+    },
+    {
+      "finding": "Generalized public installation locality retained. A public contact or mailing address must not be confused with the installation boundary, autonomous-systems test area, or an unrestricted visitor entrance.",
+      "name": "Rivanna Station",
+      "outcome": "generalized-installation-retained",
+      "precision": "locality",
+      "source": "https://home.army.mil/belvoir/contact/phonebook"
+    },
+    {
+      "finding": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
+      "name": "Smyth County First Responder UAS Capability",
+      "outcome": "operator-address-unresolved",
+      "precision": "locality",
+      "source": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+    },
+    {
+      "finding": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
+      "name": "Southampton County First Responder UAS Capability",
+      "outcome": "operator-address-unresolved",
+      "precision": "locality",
+      "source": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+    },
+    {
+      "finding": "Regional or statewide activity covering multiple sites. A coordinator's office, event venue or locality center would not represent the program's footprint; no single map pin is assigned.",
+      "name": "STEM Takes Flight at Virginia's Community Colleges",
+      "outcome": "regional-no-single-site",
+      "precision": "regional",
+      "source": "https://vsgc.odu.edu/about-us/"
+    },
+    {
+      "finding": "Official public administrative/contact address matched with the Esri address geocoder. Not a test-range boundary, operational activity location, unrestricted entrance, or access authorization. Site-level precision is retained; internal military facilities are not mapped.",
+      "name": "Surface Combat Systems Center Wallops Island",
+      "outcome": "public-contact-or-site-point",
+      "precision": "site",
+      "source": "https://www.navsea.navy.mil/Home/SCSC/Contact-Us/"
+    },
+    {
+      "finding": "Named-site reference for the publicly identified Pentagon headquarters, replacing the Arlington locality center. Not an office, entrance, access route, or authorization to visit. The federal mailing address uses Washington, DC although the building is in Arlington, Virginia.",
+      "name": "The Pentagon",
+      "outcome": "public-contact-or-site-point",
+      "precision": "site",
+      "source": "https://www.usa.gov/agencies/u-s-department-of-defense"
+    },
+    {
+      "finding": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
+      "name": "Town of Chilhowie First Responder UAS Capability",
+      "outcome": "operator-address-unresolved",
+      "precision": "locality",
+      "source": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+    },
+    {
+      "finding": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
+      "name": "Town of Chincoteague First Responder UAS Capability",
+      "outcome": "operator-address-unresolved",
+      "precision": "locality",
+      "source": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+    },
+    {
+      "finding": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
+      "name": "Town of New Market First Responder UAS Capability",
+      "outcome": "operator-address-unresolved",
+      "precision": "locality",
+      "source": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+    },
+    {
+      "finding": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
+      "name": "Town of Rocky Mount First Responder UAS Capability",
+      "outcome": "operator-address-unresolved",
+      "precision": "locality",
+      "source": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+    },
+    {
+      "finding": "Jurisdiction-level reference only. The public grant record does not identify the operating first-responder department or facility. This is not a police/fire station, equipment location, or launch point.",
+      "name": "Town of Scottsville First Responder UAS Capability",
+      "outcome": "operator-address-unresolved",
+      "precision": "locality",
+      "source": "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+    },
+    {
+      "finding": "Current operator contact page confirms Reston headquarters locality but not a current operating street address. Historical or possible residential mailing addresses are not substituted for an operating facility.",
+      "name": "TruWeather Solutions",
+      "outcome": "public-operating-address-unresolved",
+      "precision": "locality",
+      "source": "https://truweathersolutions.com/contact/"
+    },
+    {
+      "finding": "Company-published Chantilly headquarters address. The point does not establish that the announced T1 Edgeworks experience lab is open or that all company operations occur here. Coordinates are Census address-range estimates, not surveyed building/entrance coordinates.",
+      "name": "TurbineOne Headquarters and T1 Edgeworks",
+      "outcome": "public-contact-or-site-point",
+      "precision": "site",
+      "source": "https://www.linkedin.com/company/turbineone"
+    },
+    {
+      "finding": "Multi-site road-testing program spanning Northern Virginia roads and participating test facilities elsewhere in Virginia. The former Fairfax locality pin did not represent the whole network.",
+      "name": "Virginia Automated Corridors",
+      "outcome": "regional-no-single-site",
+      "precision": "regional",
+      "source": "https://www.vtti.vt.edu/facilities/vac.html"
+    },
+    {
+      "finding": "Regional or statewide activity covering multiple sites. A coordinator's office, event venue or locality center would not represent the program's footprint; no single map pin is assigned.",
+      "name": "Virginia Capes Range Complex",
+      "outcome": "regional-no-single-site",
+      "precision": "regional",
+      "source": "https://www.nepa.navy.mil/AFTTEIS/"
+    },
+    {
+      "finding": "Regional or statewide activity covering multiple sites. A coordinator's office, event venue or locality center would not represent the program's footprint; no single map pin is assigned.",
+      "name": "Virginia Flight Information Exchange",
+      "outcome": "regional-no-single-site",
+      "precision": "regional",
+      "source": "https://doav.virginia.gov/wp-content/uploads/Files/DocumentLibrary/DOAVMVI2024Reportv2.0.pdf"
+    },
+    {
+      "finding": "Official material supports the listed locality, but a current public operating street address was not corroborated. The marker is a locality reference, not a building, test site or visitor entrance.",
+      "name": "Virginia UAS",
+      "outcome": "public-operating-address-unresolved",
+      "precision": "locality",
+      "source": "https://virginiauas.com/home/"
+    }
+  ],
+  "methodology": "Dated public-source editorial desk review, not independent field inspection, operational approval or product certification. Manually compare identity, stated Virginia presence, described role and published activity; retain explicit historical, developmental and location limitations. HTTP reachability alone is not verification. Source selections exclude unread PDFs, geocoders as occupancy evidence, unavailable pages and suspicious content. Existing staff decisions and unresolved flags remain protected.",
+  "pending_reviews": [
+    {
+      "finding": "Official DroneSting product and company pages support the McLean office and counter-UAS sensor/integration role.",
+      "name": "Advanced Technology Systems Company DroneSting",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.atscva.com/",
+        "https://www.atscva.com/dronesting-scout/"
+      ]
+    },
+    {
+      "finding": "Engineering page explicitly lists autonomous vehicles and UAVs; contact page confirms the Hampton headquarters.",
+      "name": "Analytical Mechanics Associates",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.ama-inc.com/engineering/ENG_MissionAnalysisDesign.shtml",
+        "https://www.ama-inc.com/contact"
+      ]
+    },
+    {
+      "finding": "Operator pages support the McLean office and aviation C2 radios, spectrum and ground infrastructure; not a blanket BVLOS authorization.",
+      "name": "AURA Network Systems",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://auranetworksystems.com/infrastructure",
+        "https://auranetworksystems.com/company",
+        "https://auranetworksystems.com/contact"
+      ]
+    },
+    {
+      "finding": "Austal identifies its Charlottesville Solutions division and Locust Avenue office. USVs are current portfolio; UUVs remain a growth area.",
+      "name": "Austal USA Advanced Technologies and Solutions",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.austalusa.com/solutions",
+        "https://www.austalusa.com/contact-us"
+      ]
+    },
+    {
+      "finding": "DCJS trade-and-replace award and program eligibility support a jurisdiction-level first-responder UAS record, but the operating department and public contact facility were not corroborated. Do not infer police, sheriff, fire or emergency-management ownership, or relocate the marker to a generic government building. Agency confirmation is required to close this review.",
+      "name": "Bath County First Responder UAS Capability",
+      "outcome": "follow-up-required",
+      "sources": [
+        "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+        "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+      ]
+    },
+    {
+      "finding": "Federal SBIR portfolio corroborates Hampton address and historical autonomy research, but direct company pages failed TLS retrieval in this pass. Do not promote current product/activity claims based only on indexed material; obtain an accessible current operator source.",
+      "name": "Bihrle Applied Research",
+      "outcome": "follow-up-required",
+      "sources": [
+        "https://bihrle.com/dsix/",
+        "https://www.sbir.gov/portfolio/106770",
+        "https://bihrle.com/legal/"
+      ]
+    },
+    {
+      "finding": "Current Virginia presence and operating capability remain uncorroborated. The previous warning is retained; a reachable SAM shell or unsupported directory is not verification.",
+      "name": "Blue Ridge Defense Works",
+      "outcome": "follow-up-required",
+      "sources": [
+        "https://blueridgedefense.com/",
+        "https://sam.gov/entity/MV3AMKSSPZR1/coreData?status=Active"
+      ]
+    },
+    {
+      "finding": "Autonomy services and current McLean office confirmed. The previously announced 2027 Reston move is not treated as completed.",
+      "name": "Booz Allen Hamilton",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.boozallen.com/markets/defense/mission-ready-scalable-autonomy.html",
+        "https://www.boozallen.com/menu/office-locations.html"
+      ]
+    },
+    {
+      "finding": "Official geospatial coverage confirms drone imaging/scanning and the current Reston headquarters, not a Virginia aircraft operating base.",
+      "name": "Bowman Consulting Unmanned Geospatial Services",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://bowman.com/news_tags/geospatial",
+        "https://bowman.com/virginia"
+      ]
+    },
+    {
+      "finding": "DCJS trade-and-replace award and program eligibility support a jurisdiction-level first-responder UAS record, but the operating department and public contact facility were not corroborated. Do not infer police, sheriff, fire or emergency-management ownership, or relocate the marker to a generic government building. Agency confirmation is required to close this review.",
+      "name": "Buchanan County First Responder UAS Capability",
+      "outcome": "follow-up-required",
+      "sources": [
+        "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+        "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+      ]
+    },
+    {
+      "finding": "Company identifies Blacksburg and developing passive counter-UAS technology. No public operating address confirmed; locality precision retained.",
+      "name": "BZRD Systems",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.bzrdsystems.com/"
+      ]
+    },
+    {
+      "finding": "Official city budget and July 2023 police release establish a Police Department drone program. Current police contact address can replace the town-center pin, but the 2026 trade-in award does not identify its recipient department. Preserve the editorial follow-up until current program ownership/award linkage is confirmed.",
+      "name": "City of Manassas First Responder UAS Capability",
+      "outcome": "follow-up-required",
+      "sources": [
+        "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+        "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program",
+        "https://www.linkedin.com/company/manassas-city-police",
+        "https://cms9files.revize.com/manassasva/MCPD%20Press%20Release%2007.05.23.pdf",
+        "https://www.manassasva.gov/Finance/Budget%20Division/2023/Adopted/Section%2005%20-%20Department%20Budgets.pdf"
+      ]
+    },
+    {
+      "finding": "VSGC supports the statewide employer/student matching program and Hampton coordinator. No single internship-site pin is appropriate.",
+      "name": "Commonwealth STEM Industry Internship Program (CSIIP)",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://vsgc.odu.edu/csiip/",
+        "https://vsgc.odu.edu/about-us/"
+      ]
+    },
+    {
+      "finding": "Company sensor-processing announcement and facility directory corroborate Ashburn headquarters and unmanned-system enabling electronics, not a factory claim.",
+      "name": "Curtiss-Wright Defense Solutions Ashburn",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://defense-solutions.curtisswright.com/media-center/news/curtiss-wright-provide-sensor-processing-northrop-grumman-improved-threat-detection-system",
+        "https://curtisswright.com/company/facilities"
+      ]
+    },
+    {
+      "finding": "Current EnforceAir product page and NAVAIR supplier listing support the counter-UAS role and McLean address; current homepage also announces the August acquisition.",
+      "name": "D-Fend Solutions North American Headquarters",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://d-fendsolutions.com/",
+        "https://www.navair.navy.mil/osbp/node/10916"
+      ]
+    },
+    {
+      "finding": "Company headquarters and C5ISR pages support Alexandria and air/ground/undersea unmanned command and control.",
+      "name": "DCS Corporation",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://dcscorp.com/",
+        "https://www.dcscorp.com/home/what-we-do/c5isr/"
+      ]
+    },
+    {
+      "finding": "Company confirms Hampton address and TURN development. Aircraft concepts remain developmental; historical research is not a current award.",
+      "name": "Devorto",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://devorto.io/"
+      ]
+    },
+    {
+      "finding": "Read the two-page lidar/sUAS sheet: it explicitly locates the acquisition team in Gainesville. Contact directory confirms office address.",
+      "name": "Dewberry Gainesville sUAS Acquisition Team",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.dewberry.com/docs/default-source/documents/lidar-suas-one-pager.pdf",
+        "https://www.dewberry.com/contact"
+      ]
+    },
+    {
+      "finding": "Official contact page confirms Warrenton U.S. headquarters; dated release documents the Overland AI integration.",
+      "name": "DroneShield U.S. Headquarters",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.droneshield.com/connect-with-us",
+        "https://www.droneshield.com/media/press-releases/droneshield-overland-ai-advance-autonomous-ground-protection-interoperability"
+      ]
+    },
+    {
+      "finding": "Official pages support Charlottesville-area UxS forensics, exploitation and training. No street address established.",
+      "name": "DroneTrace",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.dronetrace.com/home",
+        "https://www.dronetrace.com/capabilities",
+        "https://www.dronetrace.com/contact"
+      ]
+    },
+    {
+      "finding": "Ashland branch page explicitly provides address and drone sales, support and operator training.",
+      "name": "Duncan-Parnell Ashland Unmanned Solutions",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.duncan-parnell.com/locations/ashland-va"
+      ]
+    },
+    {
+      "finding": "Manassas address and hybrid-electric aircraft development confirmed. Supporting AAM record, not a proven autonomous aircraft or Virginia production plant.",
+      "name": "Electra Manassas Headquarters and Aircraft Development",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://electra.aero/",
+        "https://electra.aero/defense"
+      ]
+    },
+    {
+      "finding": "Portsmouth headquarters and announced SNC USV partnership confirmed. Production intent does not establish output or allocate a specific shipyard.",
+      "name": "Fairlead Maritime Systems",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://fairlead.com/",
+        "https://fairlead.com/about/press-releases/snc-and-fairlead/"
+      ]
+    },
+    {
+      "finding": "GoTAK publishes Virginia Beach address and TAK, drone-detection and UAS tracking integrations.",
+      "name": "GoTAK",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://getgotak.com/pages/about-us",
+        "https://getgotak.com/pages/forge"
+      ]
+    },
+    {
+      "finding": "Fairfax counter-UAS readiness/training role confirmed. Public contact page does not establish a training-site street address.",
+      "name": "H2P Solution",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.h2psolution.com/",
+        "https://www.h2psolution.com/services/",
+        "https://www.h2psolution.com/about/",
+        "https://www.h2psolution.com/contact-us/"
+      ]
+    },
+    {
+      "finding": "City project announcement supports funded/planned dual-site center, not currently open BVLOS access; model-aircraft club publishes the mapped field coordinates.",
+      "name": "Hampton Roads Mobility Innovation Center",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://newportnewsva.com/mic/",
+        "https://newportnewsrc.org/",
+        "https://newportnewsva.com/contact/"
+      ]
+    },
+    {
+      "finding": "Company facility directory confirms Fredericksburg BLADE address; current robotics pages and announcements support robotic arms and UGVs.",
+      "name": "HDT Robotics BLADE Fredericksburg Facility",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.hdtrobotics.com/",
+        "https://www.hdtglobal.com/news/",
+        "https://www.hdtglobal.com/about/office-locations/"
+      ]
+    },
+    {
+      "finding": "Company campus description and Winchester production/engineering job listings support the campus locality. Dulles headquarters address is not substituted.",
+      "name": "Heven AeroTech Winchester Innovation and Manufacturing Campus",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://hevenaerotech.com/company/",
+        "https://hevenaerotech.com/work-with-us/"
+      ]
+    },
+    {
+      "finding": "Operator lists Richmond-area business contact and drone imagery, mapping, repair and instruction. Contact address is not a public flight site.",
+      "name": "I Fly Drones Richmond Services and Training",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://iflydrones.com/",
+        "https://iflydrones.com/contact/"
+      ]
+    },
+    {
+      "finding": "Prince George address and industrial automation, robotics and controls confirmed; supporting ecosystem classification retained.",
+      "name": "Industrial Control Specialties",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://icsva.com/",
+        "https://icsva.com/careers/"
+      ]
+    },
+    {
+      "finding": "Official investor page describes the dated BVLOS trial and publishes current McLean corporate address. The California trial is not a Virginia operating site.",
+      "name": "Iridium Communications Headquarters",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://investor.iridium.com/2023-06-20-Iridium-Proposes-a-New-Model-for-Monitored-BVLOS-UAS-Integration-in-the-National-Airspace-System"
+      ]
+    },
+    {
+      "finding": "Mobile-robotics motor applications and Radford location are company-published; specific fleet-control development is not assigned to this address.",
+      "name": "Kollmorgen Radford Motion Systems",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.kollmorgen.com/en-us/solutions/robotics/mobile-robots",
+        "https://www.kollmorgen.com/en-us/company/worldwide-locations"
+      ]
+    },
+    {
+      "finding": "Richmond address, Osprey live-line payload role and dated Strategic Ventures portfolio announcement corroborated.",
+      "name": "Linebird",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://linebird.net/about/",
+        "https://www.svrglobal.com/news-1/b64cf0a4-a15b-4be3-a2cb-64eaaf949bf3"
+      ]
+    },
+    {
+      "finding": "Herndon remains on the official contact page, while the company announces a move of headquarters/manufacturing to Jessup, Maryland by year-end 2026. Obtain confirmation of Virginia operations before closing the relocation follow-up.",
+      "name": "Liquid Robotics Herndon Headquarters and Production",
+      "outcome": "follow-up-required",
+      "sources": [
+        "https://www.liquid-robotics.com/blog/liquid-robotics-headquarters-relocation-herndon/",
+        "https://www.liquid-robotics.com/contact-us/",
+        "https://www.liquid-robotics.com/resource/liquid-robotics-relocation-jessup-maryland/"
+      ]
+    },
+    {
+      "finding": "Fairfax office and UAS-oriented WAMI sensor product family corroborated against current company pages.",
+      "name": "Logos Technologies",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.logostech.net/about-us/",
+        "https://www.logostech.net/products/"
+      ]
+    },
+    {
+      "finding": "Herndon office locality and marine autopilot confirmed; contact page places water-testing facilities in Maryland, not at the Virginia pin.",
+      "name": "Magothy River Technologies",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.magothyrt.com/",
+        "https://www.magothyrt.com/autopilot",
+        "https://www.magothyrt.com/contact"
+      ]
+    },
+    {
+      "finding": "The Alliance's official announcement corroborates Mare Custos at the Norfolk IDEA Lab and the company confirms underwater robotics. Direct city page is access-blocked and a current room/street occupancy confirmation was not obtained; retain follow-up rather than certify the exact office.",
+      "name": "Mare Custos U.S. Presence at IDEA Lab",
+      "outcome": "follow-up-required",
+      "sources": [
+        "https://norfolkdevelopment.com/mare-custos-establishes-u-s-presence-in-norfolk-through-idea-lab-to-advance-maritime-robotics-and-subsea-inspection-innovation/",
+        "https://mare-custos.com/",
+        "https://mare-custos.com/contact/",
+        "https://hamptonroadsalliance.com/wp-content/uploads/2025/01/Minutes_Board-Meeting_April-19-2024.pdf",
+        "https://www.linkedin.com/posts/hamptonroadsalliance_the-hampton-roads-alliance-is-proud-to-welcome-activity-7468316047843102720-aBpj"
+      ]
+    },
+    {
+      "finding": "Yorktown address and embedded AUV/ROV sonar portfolio confirmed; current TKMS branding retained.",
+      "name": "Marine Sonic Technology",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.marinesonic.com/",
+        "https://www.marinesonic.com/about-us",
+        "https://www.marinesonic.com/products"
+      ]
+    },
+    {
+      "finding": "Fredericksburg office and unattended sensing/counter-UAS role confirmed from company site and news.",
+      "name": "McQ Fredericksburg Sensor Systems",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.mcqinc.com/",
+        "https://www.mcqinc.com/news/"
+      ]
+    },
+    {
+      "finding": "AutoMATE autonomous-team coordination and current Reston headquarters confirmed.",
+      "name": "Metron Reston Autonomy and Decision Systems",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.metsci.com/what-we-do/products-tools/automate/",
+        "https://www.metsci.com/contact-us/"
+      ]
+    },
+    {
+      "finding": "SAFE autonomy evaluation and announced Alexandria headquarters relocation confirmed; new Walker Lane address retained.",
+      "name": "Modern Technology Solutions Alexandria Headquarters",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.mtsi-va.com/case-study/supervised-autonomous-function-executive-safe/",
+        "https://www.mtsi-va.com/mtsi-announces-relocation-of-corporate-headquarters/",
+        "https://www.mtsi-va.com/contact/"
+      ]
+    },
+    {
+      "finding": "Unmanned-platform actuators and Blacksburg Power and Data division address supported. Exact internal production building is not asserted.",
+      "name": "Moog Blacksburg Power and Data Division",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.moog.com/products/actuators-servoactuators/multi-purpose.html",
+        "https://www.moog.com/about-us/space-defense-group/power-and-data-sector.html"
+      ]
+    },
+    {
+      "finding": "Current NAL Technologies homepage confirms Manassas address and uncrewed communications/navigation services; legacy NAL branding redirects there.",
+      "name": "NAL Technologies Manassas Headquarters",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://naltec.com/"
+      ]
+    },
+    {
+      "finding": "NOVA documents Fab Lab robotics/fabrication and identifies Trailside Building at the published Manassas campus address; external open access not assumed.",
+      "name": "NOVA Fab Lab Manassas",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.nvcc.edu/academics/divisions/iet/systemic/fablab.html",
+        "https://www.nvcc.edu/student-resources/tutoring/index.html"
+      ]
+    },
+    {
+      "finding": "Company and official accelerator materials corroborate Haymarket and acoustic counter-UAS development, but no public operating street address is established. Preserve the existing editorial follow-up and locality classification.",
+      "name": "PerimeterAI Group",
+      "outcome": "follow-up-required",
+      "sources": [
+        "https://perimeteraigroup.com/company/",
+        "https://proveninpendleton.com/blogs/news/oregon-uas-accelerator-welcomes-17-startups-to-its-fall-2026-cohort"
+      ]
+    },
+    {
+      "finding": "DCJS trade-and-replace award and program eligibility support a jurisdiction-level first-responder UAS record, but the operating department and public contact facility were not corroborated. Do not infer police, sheriff, fire or emergency-management ownership, or relocate the marker to a generic government building. Agency confirmation is required to close this review.",
+      "name": "Pittsylvania County First Responder UAS Capability",
+      "outcome": "follow-up-required",
+      "sources": [
+        "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+        "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+      ]
+    },
+    {
+      "finding": "Hampton address, SurePath and space navigation lidar supported. Company target for end-to-end navigation in Q1 2027 remains a target, not a delivery.",
+      "name": "Psionic",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://psionicnav.com/",
+        "https://spinoff.nasa.gov/Softer_Moon_Landings_for_Companies",
+        "https://psionicnav.com/explore-surepath/"
+      ]
+    },
+    {
+      "finding": "Official UAS demonstration profile and Manassas contact support aerial surveying role and location.",
+      "name": "Rice Associates Unmanned Aerial Surveying",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.ricesurveys.com/project/fairfax-county-uas",
+        "https://www.ricesurveys.com/contact"
+      ]
+    },
+    {
+      "finding": "Reston address and official counter-UAS portfolio/integration page support the record. A script-only landing page is not the sole evidence.",
+      "name": "SAIC Counter-UAS Integration",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.saic.com/contact-us",
+        "https://www.saic.com/products",
+        "https://experience.saic.com/counter-unmanned-aerial-systems-cuas"
+      ]
+    },
+    {
+      "finding": "Operator pages corroborate Newport News business contact, aerial imagery and construction documentation; not a launch-site address.",
+      "name": "SkyRaptor Drone Services",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.skyraptordrones.com/",
+        "https://www.skyraptordrones.com/contact"
+      ]
+    },
+    {
+      "finding": "DCJS trade-and-replace award and program eligibility support a jurisdiction-level first-responder UAS record, but the operating department and public contact facility were not corroborated. Do not infer police, sheriff, fire or emergency-management ownership, or relocate the marker to a generic government building. Agency confirmation is required to close this review.",
+      "name": "Smyth County First Responder UAS Capability",
+      "outcome": "follow-up-required",
+      "sources": [
+        "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+        "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+      ]
+    },
+    {
+      "finding": "DCJS trade-and-replace award and program eligibility support a jurisdiction-level first-responder UAS record, but the operating department and public contact facility were not corroborated. Do not infer police, sheriff, fire or emergency-management ownership, or relocate the marker to a generic government building. Agency confirmation is required to close this review.",
+      "name": "Southampton County First Responder UAS Capability",
+      "outcome": "follow-up-required",
+      "sources": [
+        "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+        "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+      ]
+    },
+    {
+      "finding": "Institution reports document automation/robotics training and South Boston campus. 2025-26 recruitment is historical, not confirmation of an open 2026-27 intake.",
+      "name": "Southern Virginia Higher Education Center Robotics Training",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.svhec.org/wp-content/uploads/2022/04/SVHEC-AnnualReport-Final-digital.pdf",
+        "https://www.svhec.org/news/career-tech-academy-opens-application-period/",
+        "https://www.svhec.org/wp-content/uploads/2020/04/FY2019-Annual-Report.pdf"
+      ]
+    },
+    {
+      "finding": "SRC identifies its Herndon RF laboratory and separately publishes counter-UAS direction-finding products; product manufacturing is not assigned to the lab.",
+      "name": "SRC Herndon RF and Systems Engineering Lab",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.srcinc.com/about/locations/herndon-va.html",
+        "https://www.srcinc.com/products/ew-spectrum-operations/direction-finding-systems.html"
+      ]
+    },
+    {
+      "finding": "VSGC confirms NASA research experiences at Langley/Wallops and Hampton coordination. Published 2026 dates have passed; regional/no-single-site remains correct.",
+      "name": "STEM Takes Flight at Virginia's Community Colleges",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://vsgc.odu.edu/STEMtakesFlight/",
+        "https://vsgc.odu.edu/about-us/"
+      ]
+    },
+    {
+      "finding": "Company confirms Norfolk address and SOFTBOT integration of autonomous mobile robots with warehouse systems.",
+      "name": "SVT Robotics Norfolk",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.svtrobotics.com/",
+        "https://www.svtrobotics.com/talk-to-us/"
+      ]
+    },
+    {
+      "finding": "Textron official directory and center article corroborate Blackstone facility and Aerosonde production, training, flight-test and lifecycle role.",
+      "name": "Textron Systems Aerosonde UAS Center of Excellence",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.textronsystems.com/our-company/operational-footprint",
+        "https://www.textronsystems.com/products/aerosonde-uas",
+        "https://www.textronsystems.com/our-company/news-events/articles/inside-ts/aerosonde-uas-center-excellence"
+      ]
+    },
+    {
+      "finding": "Current THRYVE site supports Richmond address and industrial robotics/system integration. Former Jewett site redirects; no autonomous-vehicle product inferred.",
+      "name": "THRYVE Automation Richmond",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://thryve.co/"
+      ]
+    },
+    {
+      "finding": "DCJS trade-and-replace award and program eligibility support a jurisdiction-level first-responder UAS record, but the operating department and public contact facility were not corroborated. Do not infer police, sheriff, fire or emergency-management ownership, or relocate the marker to a generic government building. Agency confirmation is required to close this review.",
+      "name": "Town of Chilhowie First Responder UAS Capability",
+      "outcome": "follow-up-required",
+      "sources": [
+        "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+        "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+      ]
+    },
+    {
+      "finding": "DCJS trade-and-replace award and program eligibility support a jurisdiction-level first-responder UAS record, but the operating department and public contact facility were not corroborated. Do not infer police, sheriff, fire or emergency-management ownership, or relocate the marker to a generic government building. Agency confirmation is required to close this review.",
+      "name": "Town of Chincoteague First Responder UAS Capability",
+      "outcome": "follow-up-required",
+      "sources": [
+        "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+        "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+      ]
+    },
+    {
+      "finding": "DCJS trade-and-replace award and program eligibility support a jurisdiction-level first-responder UAS record, but the operating department and public contact facility were not corroborated. Do not infer police, sheriff, fire or emergency-management ownership, or relocate the marker to a generic government building. Agency confirmation is required to close this review.",
+      "name": "Town of New Market First Responder UAS Capability",
+      "outcome": "follow-up-required",
+      "sources": [
+        "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+        "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+      ]
+    },
+    {
+      "finding": "DCJS trade-and-replace award and program eligibility support a jurisdiction-level first-responder UAS record, but the operating department and public contact facility were not corroborated. Do not infer police, sheriff, fire or emergency-management ownership, or relocate the marker to a generic government building. Agency confirmation is required to close this review.",
+      "name": "Town of Rocky Mount First Responder UAS Capability",
+      "outcome": "follow-up-required",
+      "sources": [
+        "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+        "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+      ]
+    },
+    {
+      "finding": "DCJS trade-and-replace award and program eligibility support a jurisdiction-level first-responder UAS record, but the operating department and public contact facility were not corroborated. Do not infer police, sheriff, fire or emergency-management ownership, or relocate the marker to a generic government building. Agency confirmation is required to close this review.",
+      "name": "Town of Scottsville First Responder UAS Capability",
+      "outcome": "follow-up-required",
+      "sources": [
+        "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf",
+        "https://www.dcjs.virginia.gov/grants/programs/cy-26-unmanned-aircraft-trade-and-replace-program"
+      ]
+    },
+    {
+      "finding": "Contact page still lists the Chantilly production facility but contains unrelated pharmaceutical-spam navigation. Do not certify that page as clean current evidence; seek an independently corroborated operator/parent-government source before completing the review.",
+      "name": "Trident Systems Chantilly Production Facility",
+      "outcome": "follow-up-required",
+      "sources": [
+        "https://tridsys.com/contact-us/",
+        "https://tridsys.com/wp-content/uploads/2024/04/MS3-Cutsheet.pdf"
+      ]
+    },
+    {
+      "finding": "Official pages support Reston headquarters locality and UAS weather services. No current operating street address established; historical possible residential address not substituted.",
+      "name": "TruWeather Solutions",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://truweathersolutions.com/",
+        "https://truweathersolutions.com/public-safety/",
+        "https://truweathersolutions.com/contact/"
+      ]
+    },
+    {
+      "finding": "Company-published Chantilly street address now corroborated and geocoded. T1 Edgeworks remains an announced project pending opening confirmation.",
+      "name": "TurbineOne Headquarters and T1 Edgeworks",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.turbineone.com/company/newsroom",
+        "https://www.governor.virginia.gov/newsroom/news-releases/2026/may-releases/name-1117183-en.html",
+        "https://www.linkedin.com/company/turbineone"
+      ]
+    },
+    {
+      "finding": "Official directory confirms Chantilly engineering hub and Avion Parkway address; unmanned leadership announcement does not turn it into a manufacturing plant.",
+      "name": "Ultra Maritime Chantilly Engineering Hub",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://umaritime.com/",
+        "https://umaritime.com/ultra-maritime-david-adams/",
+        "https://umaritime.com/contact-us/"
+      ]
+    },
+    {
+      "finding": "Company U.S. page identifies opened Stafford production/training facility and HERO systems. This is a facility listing, not independent performance testing.",
+      "name": "UVision USA Stafford Production and Training Center",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://uvisionuav.com/uvision-usa/"
+      ]
+    },
+    {
+      "finding": "Company identifies Virginia Beach manufacturing address and REAVERS platform. Commercial product claims remain attributed to the operator.",
+      "name": "ViDARR Virginia Beach Manufacturing Facility",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://vidarrinc.com/pages/about-us",
+        "https://vidarrinc.com/pages/reavers-home"
+      ]
+    },
+    {
+      "finding": "Official homepage and mission page support June launch, dual-use startup hub and full Arlington street/suite address.",
+      "name": "Virtus Innovation Center",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.virtusinnovation.com/",
+        "https://www.virtusinnovation.com/mission"
+      ]
+    },
+    {
+      "finding": "WNK publishes Arlington address and UAS/counter-UAS integration, advisory and training scope; claims have not been independently performance-tested.",
+      "name": "WNK Aviation",
+      "outcome": "reviewed-public-evidence",
+      "sources": [
+        "https://www.wnkaviation.com/",
+        "https://www.wnkaviation.com/capabilities",
+        "https://www.wnkaviation.com/about-4"
+      ]
+    }
+  ],
+  "reviewed_at": "2026-09-16"
+}

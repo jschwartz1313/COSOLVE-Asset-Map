@@ -4921,7 +4921,19 @@
           "url": "https://www.auvsiridgeandvalley.org/"
         }
       ],
-      "reason": "Explain the represented location without increasing coordinate precision or implying access. The evidence review is not full asset verification."
+      "reason": "Explain the represented location without increasing coordinate precision or implying access. The evidence review is not full asset verification.",
+      "accepted_baselines": [
+        {
+          "location_role": "service-area",
+          "location_method": "unmapped",
+          "location_notes": "Regional membership chapter. Its published postal address is not confirmation of an occupied operating facility, so the chapter is listed without a single map pin.",
+          "location_source_url": "https://www.auvsiridgeandvalley.org/",
+          "location_last_verified_at": "2026-09-16",
+          "location_precision": "regional",
+          "latitude": null,
+          "longitude": null
+        }
+      ]
     },
     {
       "name": "Virginia Automated Corridors",
@@ -4952,7 +4964,19 @@
           "url": "https://www.vtti.vt.edu/facilities/vac.html"
         }
       ],
-      "reason": "Explain the represented location without increasing coordinate precision or implying access. The evidence review is not full asset verification."
+      "reason": "Explain the represented location without increasing coordinate precision or implying access. The evidence review is not full asset verification.",
+      "accepted_baselines": [
+        {
+          "location_role": "service-area",
+          "location_method": "unmapped",
+          "location_notes": "Multi-site road-testing program spanning Northern Virginia roads and participating test facilities elsewhere in Virginia. The former Fairfax locality pin did not represent the whole network.",
+          "location_source_url": "https://www.vtti.vt.edu/facilities/vac.html",
+          "location_last_verified_at": "2026-09-16",
+          "location_precision": "regional",
+          "latitude": null,
+          "longitude": null
+        }
+      ]
     },
     {
       "name": "H2P Solution",
@@ -4977,7 +5001,16 @@
           "url": "https://www.h2psolution.com/about/"
         }
       ],
-      "reason": "Explain the represented location without increasing coordinate precision or implying access. The evidence review is not full asset verification."
+      "reason": "Explain the represented location without increasing coordinate precision or implying access. The evidence review is not full asset verification.",
+      "accepted_baselines": [
+        {
+          "location_role": "office",
+          "location_method": "locality",
+          "location_notes": "The company publishes Fairfax as its location, but a specific operating address was not confirmed. The pin is a locality reference, not a training site.",
+          "location_source_url": "https://www.h2psolution.com/about/",
+          "location_last_verified_at": "2026-09-16"
+        }
+      ]
     },
     {
       "name": "Magothy River Technologies",
@@ -5002,7 +5035,16 @@
           "url": "https://www.magothyrt.com/contact"
         }
       ],
-      "reason": "Explain the represented location without increasing coordinate precision or implying access. The evidence review is not full asset verification."
+      "reason": "Explain the represented location without increasing coordinate precision or implying access. The evidence review is not full asset verification.",
+      "accepted_baselines": [
+        {
+          "location_role": "office",
+          "location_method": "locality",
+          "location_notes": "The Virginia record represents the published Herndon office locality, not a test range. The company's contact page places its water-testing facilities in Maryland; no Virginia street address was confirmed.",
+          "location_source_url": "https://www.magothyrt.com/contact",
+          "location_last_verified_at": "2026-09-16"
+        }
+      ]
     },
     {
       "name": "MITRE National Range",
@@ -5027,7 +5069,16 @@
           "url": "https://www.mitre.org/sites/default/files/2024-07/PR-24-2208-MITRE-National-Range.pdf"
         }
       ],
-      "reason": "Explain the represented location without increasing coordinate precision or implying access. The evidence review is not full asset verification."
+      "reason": "Explain the represented location without increasing coordinate precision or implying access. The evidence review is not full asset verification.",
+      "accepted_baselines": [
+        {
+          "location_role": "test-site",
+          "location_method": "locality",
+          "location_notes": "The public fact sheet identifies Orange County but does not provide an operating-site address. The current Orange pin is a locality reference, not the range boundary or access point.",
+          "location_source_url": "https://www.mitre.org/sites/default/files/2024-07/PR-24-2208-MITRE-National-Range.pdf",
+          "location_last_verified_at": "2026-09-16"
+        }
+      ]
     },
     {
       "name": "Kentland Experimental Aerial Systems Laboratory",

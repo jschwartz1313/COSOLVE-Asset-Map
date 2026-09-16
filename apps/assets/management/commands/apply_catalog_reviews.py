@@ -137,7 +137,7 @@ class Command(BaseCommand):
                 asset.review_due_at = None
                 asset.review_priority = Asset.ReviewPriority.NORMAL
                 if not asset.review_notes:
-                    asset.review_notes = (
+                    asset.review_notes = manifest.get("review_findings", {}).get(asset_name) or (
                         "Catalog editorial review confirmed the record's identity, "
                         "Virginia location, "
                         "and described unmanned-systems role against the listed official sources."
@@ -161,6 +161,11 @@ class Command(BaseCommand):
                 body=(
                     f"{marker}\nReviewed {reviewed_on:%Y-%m-%d}. {review_summary} against: "
                     + ", ".join(source_urls)
+                    + (
+                        "\nFinding: " + manifest["review_findings"][asset_name]
+                        if manifest.get("review_findings", {}).get(asset_name)
+                        else ""
+                    )
                 ),
             )
 
@@ -184,9 +189,7 @@ class Command(BaseCommand):
                 asset.review_priority = Asset.ReviewPriority.HIGH
             if not asset.review_notes:
                 asset.review_notes = reason
-            asset._change_reason = (
-                "Operating agency remains unresolved after public-source research."
-            )
+            asset._change_reason = "Public-source research requires follow-up."
             asset.save(update_fields=["review_priority", "review_notes", "updated_at"])
             AssetReviewComment.objects.create(
                 asset=asset,
