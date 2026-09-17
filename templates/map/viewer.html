@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260915-1">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260917-1">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
@@ -31,7 +31,7 @@
       data-icon-base-url="{% static 'img/icons/legend/' %}">
   <aside class="filters-panel" id="asset-filters-panel" aria-label="Asset filters">
     <div class="panel-heading">
-      <div><span class="eyebrow">{{ public_scope_eyebrow }}</span><h1>Asset intelligence</h1></div>
+      <h1>Find assets</h1>
       <button class="icon-button filter-close" type="button" aria-label="Close filters" title="Close filters">&times;</button>
     </div>
     <form id="asset-filters" autocomplete="off">
@@ -148,51 +148,52 @@
       <details class="map-legend">
           <summary>Legend</summary>
           <div class="legend-content">
-            <span><i class="legend-dot university" aria-hidden="true"><img src="{% static 'img/icons/legend/university.svg' %}" alt=""></i>University</span>
-            <span><i class="legend-dot organization" aria-hidden="true"><img src="{% static 'img/icons/legend/building-2.svg' %}" alt=""></i>Organization</span>
-            <span><i class="legend-dot facility" aria-hidden="true"><img src="{% static 'img/icons/legend/factory.svg' %}" alt=""></i>Facility</span>
-            <span><i class="legend-dot program" aria-hidden="true"><img src="{% static 'img/icons/legend/clipboard-list.svg' %}" alt=""></i>Program</span>
-            <span><i class="legend-dot infrastructure" aria-hidden="true"><img src="{% static 'img/icons/legend/construction.svg' %}" alt=""></i>Infrastructure</span>
-            <span><i class="legend-dot operating-environment" aria-hidden="true"><img src="{% static 'img/icons/legend/radar.svg' %}" alt=""></i>Operating environment</span>
-            <span><i class="legend-line state-boundary"></i>Virginia boundary</span>
-            <span><i class="legend-line county-boundary"></i>County boundary</span>
-            <span><i class="legend-region-fill"></i>Ecosystem region</span>
-            <span><i class="legend-mpz-fill"></i>Potential MPZ tract</span>
-            <span><i class="legend-heliport" aria-hidden="true">H</i>FAA heliport</span>
-            <div class="legend-analysis-group" data-controlled-airspace-legend hidden>
+            <span data-legend-toggle="asset-layer-toggle"><i class="legend-dot university" aria-hidden="true"><img src="{% static 'img/icons/legend/university.svg' %}" alt=""></i>University</span>
+            <span data-legend-toggle="asset-layer-toggle"><i class="legend-dot organization" aria-hidden="true"><img src="{% static 'img/icons/legend/building-2.svg' %}" alt=""></i>Organization</span>
+            <span data-legend-toggle="asset-layer-toggle"><i class="legend-dot facility" aria-hidden="true"><img src="{% static 'img/icons/legend/factory.svg' %}" alt=""></i>Facility</span>
+            <span data-legend-toggle="asset-layer-toggle"><i class="legend-dot program" aria-hidden="true"><img src="{% static 'img/icons/legend/clipboard-list.svg' %}" alt=""></i>Program</span>
+            <span data-legend-toggle="asset-layer-toggle"><i class="legend-dot infrastructure" aria-hidden="true"><img src="{% static 'img/icons/legend/construction.svg' %}" alt=""></i>Infrastructure</span>
+            <span data-legend-toggle="asset-layer-toggle"><i class="legend-dot operating-environment" aria-hidden="true"><img src="{% static 'img/icons/legend/radar.svg' %}" alt=""></i>Operating environment</span>
+            <span data-legend-toggle="state-boundary-toggle"><i class="legend-line state-boundary"></i>Virginia boundary</span>
+            <span data-legend-toggle="county-layer-toggle" hidden><i class="legend-line county-boundary"></i>County boundary</span>
+            <span data-legend-toggle="region-layer-toggle" hidden><i class="legend-region-fill"></i>Ecosystem region</span>
+            <span data-legend-toggle="mpz-layer-toggle" hidden><i class="legend-mpz-fill"></i>Potential MPZ tract</span>
+            <span data-legend-toggle="heliport-layer-toggle" hidden><i class="legend-heliport" aria-hidden="true">H</i>FAA heliport</span>
+            <div class="legend-analysis-group" data-legend-toggle="controlled-airspace-toggle" data-controlled-airspace-legend hidden>
               <strong>Surface controlled airspace</strong>
               <span><i class="legend-airspace class-bc"></i>Class B or C</span>
               <span><i class="legend-airspace class-de"></i>Class D or surface E</span>
             </div>
-            <div class="legend-analysis-group" data-uas-facility-map-legend hidden>
+            <div class="legend-analysis-group" data-legend-toggle="uas-facility-map-toggle" data-uas-facility-map-legend hidden>
               <strong>FAA authorization ceiling</strong>
               <span><i class="legend-ceiling ceiling-zero"></i>0 ft AGL</span>
               <span><i class="legend-ceiling ceiling-low"></i>50–100 ft AGL</span>
               <span><i class="legend-ceiling ceiling-mid"></i>150–250 ft AGL</span>
               <span><i class="legend-ceiling ceiling-high"></i>300–400 ft AGL</span>
             </div>
-            <div class="legend-analysis-group" data-flight-constraints-legend hidden>
+            <div class="legend-analysis-group" data-legend-toggle="flight-constraints-toggle" data-flight-constraints-legend hidden>
               <strong>Flight constraints</strong>
               <span><i class="legend-constraint national-security"></i>National-security UAS restriction</span>
               <span><i class="legend-constraint restricted"></i>Prohibited or restricted area</span>
               <span><i class="legend-constraint advisory"></i>MOA or warning area</span>
             </div>
-            <div class="legend-analysis-group" data-uas-test-sites-legend hidden>
+            <div class="legend-analysis-group" data-legend-toggle="uas-test-sites-toggle" data-uas-test-sites-legend hidden>
               <strong>Test infrastructure</strong>
               <span><i class="legend-test-site" aria-hidden="true"><img src="{% static 'img/icons/legend/radar.svg' %}" alt=""></i>UAS test facility</span>
             </div>
-            <div class="legend-analysis-group" data-verification-legend hidden>
+            <div class="legend-analysis-group" data-legend-toggle="verification-layer-toggle" data-legend-requires-assets data-verification-legend hidden>
               <strong>Verification</strong>
               <span><i class="legend-ring reviewed"></i>Reviewed</span>
               <span><i class="legend-ring source-backed"></i>Review pending</span>
               <span><i class="legend-ring stale"></i>Review out of date</span>
             </div>
-            <div class="legend-analysis-group" data-precision-legend hidden>
+            <div class="legend-analysis-group" data-legend-toggle="precision-layer-toggle" data-legend-requires-assets data-precision-legend hidden>
               <strong>Location precision</strong>
               <span><i class="legend-precision site"></i>Exact or site-level</span>
               <span><i class="legend-precision approximate"></i>Approximate</span>
               <span><i class="legend-precision locality"></i>Locality only</span>
             </div>
+            <p class="legend-empty" data-legend-empty hidden>No overlays selected.</p>
           </div>
       </details>
     </div>
@@ -204,11 +205,8 @@
   <aside class="results-panel" id="map-results-panel" aria-label="Filtered assets">
     <section class="results-view asset-results-view" id="asset-results-view">
       <div class="results-heading">
-        <div><span class="eyebrow">Public listings</span><h2 id="asset-results-title" tabindex="-1" aria-live="polite" aria-atomic="true"><strong id="result-count">{{ total_assets }}</strong> assets</h2></div>
-        <div class="results-actions">
-          {% if user.is_staff %}<a class="text-link" id="export-link" href="{% url 'imports:export' %}">Export CSV</a>{% endif %}
-          <a class="text-link" id="directory-link" href="{% url 'core:directory' %}">Directory view</a>
-        </div>
+        <h2 id="asset-results-title" tabindex="-1" aria-live="polite" aria-atomic="true"><strong id="result-count">{{ total_assets }}</strong> assets</h2>
+        {% if user.is_staff %}<div class="results-actions"><a class="text-link" id="export-link" href="{% url 'imports:export' %}">Export CSV</a></div>{% endif %}
       </div>
       <section class="active-filter-bar" data-active-filter-bar aria-label="Active filters" hidden>
         <span class="active-filter-summary"><strong data-applied-filter-count>0</strong> active filters</span>
@@ -228,6 +226,6 @@
 </main>
 <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
 <script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
-  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260915-1"></script>
+  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260917-1"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}

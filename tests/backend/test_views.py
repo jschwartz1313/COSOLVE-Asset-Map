@@ -12,7 +12,13 @@ class CoreViewTests(TestCase):
     def test_map_shell_renders(self):
         response = self.client.get(reverse("core:map"))
         self.assertContains(response, "Virginia Asset Map")
-        self.assertContains(response, "Asset intelligence")
+        self.assertContains(response, "Find assets")
+        self.assertNotContains(response, "<h1>Asset intelligence</h1>")
+        self.assertNotContains(response, '<span class="eyebrow">Public listings</span>')
+        self.assertContains(response, 'id="directory-link"', count=1)
+        self.assertNotContains(response, ">Directory view</a>")
+        self.assertContains(response, 'data-legend-toggle="asset-layer-toggle"', count=6)
+        self.assertContains(response, 'data-legend-toggle="county-layer-toggle" hidden')
         self.assertContains(response, 'id="map"')
         self.assertContains(response, 'id="asset-layer-toggle"')
         self.assertContains(response, 'id="county-layer-toggle"')
@@ -290,7 +296,7 @@ class ScopedPublicSiteTests(TestCase):
     def test_public_map_and_directory_are_region_scoped(self):
         map_response = self.client.get(reverse("core:map"))
         self.assertEqual(map_response.context["total_assets"], 1)
-        self.assertContains(map_response, "Hampton Roads ecosystem")
+        self.assertContains(map_response, "Find assets")
         self.assertContains(map_response, "Hampton Roads Asset Map")
         self.assertNotContains(map_response, 'data-region-quick-filter="hampton-roads"')
         self.assertNotContains(map_response, 'name="region"')

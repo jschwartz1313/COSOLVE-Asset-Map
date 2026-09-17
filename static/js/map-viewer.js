@@ -54,14 +54,8 @@ const stateBoundaryToggle = document.querySelector("#state-boundary-toggle");
 const verificationLayerToggle = document.querySelector("#verification-layer-toggle");
 const precisionLayerToggle = document.querySelector("#precision-layer-toggle");
 const basemapInputs = [...document.querySelectorAll('input[name="map-basemap"]')];
-const verificationLegend = document.querySelector("[data-verification-legend]");
-const precisionLegend = document.querySelector("[data-precision-legend]");
-const controlledAirspaceLegend = document.querySelector(
-  "[data-controlled-airspace-legend]",
-);
-const uasFacilityMapLegend = document.querySelector("[data-uas-facility-map-legend]");
-const flightConstraintsLegend = document.querySelector("[data-flight-constraints-legend]");
-const uasTestSitesLegend = document.querySelector("[data-uas-test-sites-legend]");
+const legendItems = [...document.querySelectorAll("[data-legend-toggle]")];
+const legendEmpty = document.querySelector("[data-legend-empty]");
 const nearbyRadius = document.querySelector("#nearby-radius");
 const nearbySearchButton = document.querySelector("#nearby-search");
 const selectAreaButton = document.querySelector("#select-area");
@@ -180,7 +174,17 @@ function currentMapUrl() {
   return url.toString();
 }
 
+function updateLegendVisibility() {
+  for (const item of legendItems) {
+    const toggle = document.getElementById(item.dataset.legendToggle);
+    const needsAssets = item.hasAttribute("data-legend-requires-assets");
+    item.hidden = !toggle.checked || toggle.disabled || (needsAssets && !assetLayerToggle.checked);
+  }
+  legendEmpty.hidden = legendItems.some((item) => !item.hidden);
+}
+
 function updateViewActions() {
+  updateLegendVisibility();
   const params = currentMapParams();
   if (saveViewLink) {
     saveViewLink.href = `/saved-views/?view_type=map&query=${encodeURIComponent(params)}`;
@@ -491,12 +495,10 @@ stateBoundaryToggle.addEventListener("change", () => {
 });
 verificationLayerToggle.addEventListener("change", () => {
   mapController.setVerificationLayerVisible(verificationLayerToggle.checked);
-  verificationLegend.hidden = !verificationLayerToggle.checked;
   updateViewActions();
 });
 precisionLayerToggle.addEventListener("change", () => {
   mapController.setPrecisionLayerVisible(precisionLayerToggle.checked);
-  precisionLegend.hidden = !precisionLayerToggle.checked;
   updateViewActions();
 });
 for (const input of basemapInputs) {
@@ -509,6 +511,7 @@ for (const input of basemapInputs) {
 
 async function updateCountyLayer() {
   countyLayerToggle.disabled = true;
+  updateLegendVisibility();
   try {
     await mapController.setCountyLayerVisible(countyLayerToggle.checked);
   } catch (error) {
@@ -525,6 +528,7 @@ countyLayerToggle.addEventListener("change", updateCountyLayer);
 
 async function updateRegionLayer() {
   regionLayerToggle.disabled = true;
+  updateLegendVisibility();
   try {
     await mapController.setRegionLayerVisible(regionLayerToggle.checked);
   } catch (error) {
@@ -541,6 +545,7 @@ regionLayerToggle.addEventListener("change", updateRegionLayer);
 
 async function updateMpzLayer() {
   mpzLayerToggle.disabled = true;
+  updateLegendVisibility();
   try {
     await mapController.setMpzLayerVisible(mpzLayerToggle.checked);
   } catch (error) {
@@ -557,6 +562,7 @@ mpzLayerToggle.addEventListener("change", updateMpzLayer);
 
 async function updateHeliportLayer() {
   heliportLayerToggle.disabled = true;
+  updateLegendVisibility();
   try {
     await mapController.setHeliportLayerVisible(heliportLayerToggle.checked);
   } catch (error) {
@@ -571,15 +577,14 @@ async function updateHeliportLayer() {
 
 heliportLayerToggle.addEventListener("change", updateHeliportLayer);
 
-function bindReferenceLayer({ toggle, legend, setVisible, failureMessage }) {
+function bindReferenceLayer({ toggle, setVisible, failureMessage }) {
   async function updateLayer() {
     toggle.disabled = true;
+    updateLegendVisibility();
     try {
       await setVisible(toggle.checked);
-      legend.hidden = !toggle.checked;
     } catch (error) {
       toggle.checked = false;
-      legend.hidden = true;
       showStatus(failureMessage);
       console.error(error);
     } finally {
@@ -593,25 +598,21 @@ function bindReferenceLayer({ toggle, legend, setVisible, failureMessage }) {
 
 const updateControlledAirspaceLayer = bindReferenceLayer({
   toggle: controlledAirspaceToggle,
-  legend: controlledAirspaceLegend,
   setVisible: (visible) => mapController.setControlledAirspaceVisible(visible),
   failureMessage: "FAA surface controlled airspace could not be loaded.",
 });
 const updateUasFacilityMapLayer = bindReferenceLayer({
   toggle: uasFacilityMapToggle,
-  legend: uasFacilityMapLegend,
   setVisible: (visible) => mapController.setUasFacilityMapVisible(visible),
   failureMessage: "FAA authorization-ceiling data could not be loaded.",
 });
 const updateFlightConstraintsLayer = bindReferenceLayer({
   toggle: flightConstraintsToggle,
-  legend: flightConstraintsLegend,
   setVisible: (visible) => mapController.setFlightConstraintsVisible(visible),
   failureMessage: "FAA flight-constraint data could not be loaded.",
 });
 const updateUasTestSitesLayer = bindReferenceLayer({
   toggle: uasTestSitesToggle,
-  legend: uasTestSitesLegend,
   setVisible: (visible) => mapController.setUasTestSitesVisible(visible),
   failureMessage: "UAS test-facility data could not be loaded.",
 });
@@ -767,8 +768,7 @@ async function syncLayerVisibility() {
   mapController.setStateBoundaryVisible(stateBoundaryToggle.checked);
   mapController.setVerificationLayerVisible(verificationLayerToggle.checked);
   mapController.setPrecisionLayerVisible(precisionLayerToggle.checked);
-  verificationLegend.hidden = !verificationLayerToggle.checked;
-  precisionLegend.hidden = !precisionLayerToggle.checked;
+  updateLegendVisibility();
   mapController.setBasemap(selectedBasemap());
   await Promise.all([
     updateRegionLayer(),
