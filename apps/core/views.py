@@ -13,12 +13,7 @@ from django.views.decorators.http import require_POST
 
 from apps.api.query import filter_public_assets
 from apps.api.search import PUBLIC_NAME_ORDER
-from apps.assets.discovery import (
-    IDENTITY_FIELDS,
-    LOCATION_EVIDENCE_FIELDS,
-    RESOURCE_CHOICES,
-    TEST_SPEC_FIELDS,
-)
+from apps.assets.discovery import RESOURCE_CHOICES
 from apps.assets.models import Asset, SavedView
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 from apps.sources.models import Source
@@ -37,72 +32,6 @@ DIRECTORY_ORDERING = {
     "region": ("region__name", PUBLIC_NAME_ORDER, "pk"),
     "type": ("record_type", PUBLIC_NAME_ORDER, "pk"),
 }
-PUBLIC_HISTORY_FIELDS = {
-    *TEST_SPEC_FIELDS,
-    *IDENTITY_FIELDS,
-    *LOCATION_EVIDENCE_FIELDS,
-    "name",
-    "record_type",
-    "short_description",
-    "overview",
-    "unmanned_systems_relevance",
-    "website_url",
-    "contact_text",
-    "contact_phone",
-    "contact_email",
-    "contact_url",
-    "activity_status",
-    "current_activity",
-    "partnership_opportunities",
-    "activity_source_url",
-    "activity_last_verified_at",
-    "owner_operator",
-    "available_acreage",
-    "development_status",
-    "development_notes",
-    "infrastructure_access",
-    "development_source_url",
-    "development_last_verified_at",
-    "address_line",
-    "city",
-    "state",
-    "postal_code",
-    "latitude",
-    "longitude",
-    "location_precision",
-    "region",
-    "status",
-    "last_verified_at",
-    "published_at",
-}
-
-
-def asset_history_entries(asset, include_editor=False):
-    records = list(asset.history.select_related("history_user").order_by("-history_date")[:12])
-    entries = []
-    for index, record in enumerate(records):
-        changed_fields = []
-        if record.history_type == "+":
-            label = "Record added"
-        else:
-            label = "Record updated"
-            if index + 1 < len(records):
-                delta = record.diff_against(records[index + 1])
-                changed_fields = [
-                    change.field.replace("_", " ").title()
-                    for change in delta.changes
-                    if change.field in PUBLIC_HISTORY_FIELDS
-                ]
-        entries.append(
-            {
-                "date": record.history_date,
-                "label": label,
-                "changed_fields": changed_fields,
-                "editor": record.history_user if include_editor else None,
-                "reason": record.history_change_reason if include_editor else "",
-            }
-        )
-    return entries
 
 
 def filter_context():
@@ -196,7 +125,6 @@ def asset_detail(request, slug):
             "incoming_relationship_count": incoming_relationships.count(),
             "similar_assets": similar_assets,
             "public_sources": public_sources,
-            "history_entries": asset_history_entries(asset, request.user.is_staff),
         },
     )
 

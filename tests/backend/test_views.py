@@ -141,7 +141,7 @@ class CoreViewTests(TestCase):
         self.assertContains(response, "Suggest an update")
         self.assertNotContains(response, "Verification range")
 
-    def test_asset_detail_includes_public_record_history(self):
+    def test_asset_detail_preserves_profile_without_public_record_history(self):
         asset = Asset.objects.create(
             name="History Test Asset",
             record_type=Asset.RecordType.FACILITY,
@@ -172,13 +172,11 @@ class CoreViewTests(TestCase):
 
         response = self.client.get(reverse("core:asset-detail", args=[asset.slug]))
 
-        self.assertContains(response, "Record history")
-        self.assertContains(response, 'class="detail-disclosure record-history-disclosure"')
-        self.assertNotContains(response, 'class="detail-disclosure record-history-disclosure" open')
+        self.assertNotContains(response, "Record history")
+        self.assertNotContains(response, "record-history")
+        self.assertNotIn("history_entries", response.context)
+        self.assertEqual(asset.history.count(), 2)
         self.assertContains(response, 'class="detail-disclosure sources-disclosure"')
-        self.assertContains(response, "2 entries")
-        self.assertContains(response, "Record added")
-        self.assertContains(response, "Short Description")
         self.assertContains(response, "What this asset is")
         self.assertContains(response, "Contact and information")
         self.assertContains(response, "757-555-0100")
@@ -187,6 +185,14 @@ class CoreViewTests(TestCase):
         self.assertContains(response, "A current source-backed pilot is underway")
         self.assertContains(response, "Site readiness")
         self.assertContains(response, "8 acres")
+        self.assertContains(response, "Review status")
+
+        staff = get_user_model().objects.create_user(username="history-staff", is_staff=True)
+        self.client.force_login(staff)
+        response = self.client.get(reverse("core:asset-detail", args=[asset.slug]))
+        self.assertNotContains(response, "Record history")
+        self.assertNotContains(response, "record-history")
+        self.assertEqual(asset.history.count(), 2)
 
     def test_general_update_submission_enters_staff_queue(self):
         response = self.client.post(
