@@ -63,15 +63,27 @@ class ReleaseScriptTests(SimpleTestCase):
         self.assertEqual(code, 23)
         self.assertEqual(len(commands), 1)
 
-    def test_start_releases_before_serving_and_never_recovers_accounts(self):
+    def test_start_checks_release_before_serving(self):
         code, commands = self.run_script("start.sh")
         self.assertEqual(code, 0)
+        self.assertEqual(commands, [
+            "python manage.py release_database",
+            "gunicorn config.wsgi:application --bind 0.0.0.0:8123",
+        ])
+
+    def test_release_never_recovers_accounts(self):
+        code, commands = self.run_script("release.sh")
+        self.assertEqual(code, 0)
         self.assertEqual(commands[0], "python manage.py migrate --noinput")
-        self.assertEqual(commands[-2], "python manage.py ensure_admin_user --skip-recovery")
-        self.assertEqual(commands[-1], "gunicorn config.wsgi:application --bind 0.0.0.0:8123")
+        self.assertEqual(commands[-1], "python manage.py ensure_admin_user --skip-recovery")
 
     def test_failed_release_does_not_start_server(self):
-        code, commands = self.run_script("start.sh", failure="migrate")
+        code, commands = self.run_script("start.sh", failure="release_database")
+        self.assertEqual(code, 23)
+        self.assertEqual(commands, ["python manage.py release_database"])
+
+    def test_failed_migration_stops_catalog_updates(self):
+        code, commands = self.run_script("release.sh", failure="migrate")
         self.assertEqual(code, 23)
         self.assertEqual(commands, ["python manage.py migrate --noinput"])
 
@@ -82,5 +94,6 @@ class ReleaseScriptTests(SimpleTestCase):
             self.assertIn('key: REQUIRE_SITE_LOGIN\n        value: "true"', blueprint)
         self.assertIn("startCommand: bash start.sh", (root / "render.yaml").read_text())
         self.assertIn(
-            "preDeployCommand: bash release.sh", (root / "render.production.yaml").read_text()
+            "preDeployCommand: python manage.py release_database",
+            (root / "render.production.yaml").read_text()
         )

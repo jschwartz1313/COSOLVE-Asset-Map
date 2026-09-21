@@ -60,7 +60,7 @@ The staff **Review workspace** at `/admin/imports/data-quality/` is the operatio
 
 SQLite is the no-setup local default. Set `DATABASE_URL` to a PostgreSQL URL to use PostgreSQL. The current MVP stores WGS84 latitude and longitude in portable decimal columns; Phase 4 introduces PostGIS geometry and spatial indexes.
 
-For Render, `build.sh` installs dependencies and collects static files without changing the database. `release.sh` applies migrations and guarded catalog updates, configures staff roles, and initializes the first administrator. Later releases preserve staff changes and ignore stale administrator-reset flags. The Blueprint prompts for the initial administrator username, email, and password. Production startup fails if its database, host, secret key, or initial administrator settings are missing.
+For Render, `build.sh` installs dependencies and collects static files without changing the database. `release_database` runs `release.sh` once per deployed commit to apply migrations and guarded catalog updates, configure staff roles, and initialize the first administrator. PostgreSQL releases are serialized; repeat wake-ups skip completed updates. Later releases preserve staff changes and ignore stale administrator-reset flags. The Blueprint prompts for the initial administrator username, email, and password. Production startup fails if its database, host, secret key, or initial administrator settings are missing.
 
 Both Render Blueprints are statewide Virginia releases and require sign-in by default, including the viewer and data APIs. A public launch requires explicitly setting `REQUIRE_SITE_LOGIN=false`; `/admin/` remains protected.
 

@@ -8,15 +8,17 @@ Use the website's password-reset email once delivery is configured, or have anot
 
 The free web service can sleep when idle and does not support dedicated pre-deploy commands or outbound SMTP on ports 25, 465, or 587. Do not downgrade the database to the free plan: free PostgreSQL expires after 30 days and has no managed recovery.
 
-The separate `render.production.yaml` is a template for a paid web service and database, with a daily source-monitor cron job and a dedicated pre-deploy step. It creates separate resources; do not apply it to upgrade the current service unless a separate environment is intended. Cron jobs are billed separately. To upgrade the existing service, approve its costs, change its plan, set the pre-deploy command to `bash release.sh`, and use the Gunicorn start command shown below. Both templates and production settings default to private access. Set `REQUIRE_SITE_LOGIN=false` only for an explicitly approved public launch.
+The separate `render.production.yaml` is a template for a paid web service and database, with a daily source-monitor cron job and a dedicated pre-deploy step. It creates separate resources; do not apply it to upgrade the current service unless a separate environment is intended. Cron jobs are billed separately. To upgrade the existing service, approve its costs, change its plan, set the pre-deploy command to `python manage.py release_database`, and use the Gunicorn start command shown below. Both templates and production settings default to private access. Set `REQUIRE_SITE_LOGIN=false` only for an explicitly approved public launch.
 
 ## Build and release safety
 
 `build.sh` only installs dependencies and collects static files. It does not migrate, seed, change accounts, or write to the database. A failed build therefore leaves the live database untouched.
 
-`release.sh` performs migrations, conservative catalog updates, staff-role setup, history initialization, and first-administrator creation. The paid template runs it in Render's pre-deploy phase. The current free service uses `bash start.sh`, which runs the release after a successful build and only starts Gunicorn if all release commands succeed. Free-service restarts also repeat these idempotent commands and may take longer than a simple server restart. Use a paid pre-deploy step when reliable start-up latency is required.
+`release_database` runs `release.sh` to perform migrations, conservative catalog updates, staff-role setup, history initialization, and first-administrator creation. It records success in the database against Render's commit SHA, so waking or restarting the same version does not repeat the data updates. A PostgreSQL advisory lock serializes overlapping releases. Failed releases are not recorded and can be retried. The paid template runs this command in Render's pre-deploy phase. The current free service uses `bash start.sh`, which runs it after a successful build and only starts Gunicorn on success. A new release can take several minutes on the free instance; an ordinary wake-up only checks its completion record. Render's own idle-start delay still applies.
 
-Release steps are not a single transaction and code rollback does not undo migrations or data corrections. Keep migrations backward-compatible with the previous running version and export a backup before schema or bulk-data changes. Never run two release jobs concurrently against the same database.
+For intentional reapplication of the same version, run `python manage.py release_database --force`. Without `RENDER_GIT_COMMIT` (for example, a manual local deployment), the command runs every time without storing a version marker. Do not run `release.sh` directly against production because that bypasses release locking and completion tracking.
+
+Release steps are not a single transaction and code rollback does not undo migrations or data corrections. Keep migrations backward-compatible with the previous running version and export a backup before schema or bulk-data changes. All automated release jobs must use the locking command.
 
 ## Statewide release scope
 
@@ -36,7 +38,7 @@ The release adds missing catalog records, applies conservative profile enrichmen
 ```bash
 export DJANGO_SETTINGS_MODULE=config.settings.production
 bash build.sh
-bash release.sh
+python manage.py release_database
 gunicorn config.wsgi:application --bind 0.0.0.0:8000
 ```
 
@@ -67,7 +69,7 @@ pg_restore --exit-on-error --no-owner --no-acl \
 
 Point an isolated local test process at that database; disable outgoing email and external integrations. Check migration state, asset/source/user counts, foreign-key restoration, private-page redirects, an authenticated search, and a representative asset page. Record the archive date, checksum, results, and any limitations. Stop the isolated database when finished. A restore drill does not prove that a future backup is valid, so repeat it quarterly and before handover.
 
-September 21 verification: a complete hosted logical export was created at 14:57 UTC. Chrome blocked its download, so a restore of that **hosted** export is still pending. Separately, a local PostgreSQL 18 backup was restored into a fresh test database: 527 assets, 1,711 sources, and one test administrator were present; the anonymous map redirected to login, and authenticated map/search/detail requests succeeded. This validates the local restore procedure, not the untested hosted archive. No live database was overwritten.
+September 21 verification: a complete hosted logical export was created at 14:57 UTC. Both the automated link and Chrome's native Save Link As workflow were tried; Chrome rejected the download with **Blocked by your organization**. An approved download route is needed before restoring that **hosted** export. Separately, a local PostgreSQL 18 backup was restored into a fresh test database: 527 assets, 1,711 sources, and one test administrator were present; the anonymous map redirected to login, and authenticated map/search/detail requests succeeded. This validates the local restore procedure, not the untested hosted archive. No live database was overwritten.
 
 Set `OIDC_SERVER_URL`, `OIDC_CLIENT_ID`, and `OIDC_CLIENT_SECRET` together to enable organization sign-in. The provider must send a verified email that matches an active user created by an administrator. Leave all three unset to use password and TOTP authentication only.
 

@@ -10,7 +10,7 @@ services:
     runtime: python
     plan: starter
     buildCommand: ./build.sh
-    preDeployCommand: bash release.sh
+    preDeployCommand: python manage.py release_database
     startCommand: gunicorn config.wsgi:application --bind 0.0.0.0:$PORT
     healthCheckPath: /health/
     envVars:
