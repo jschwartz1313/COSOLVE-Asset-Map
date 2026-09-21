@@ -4,7 +4,9 @@ from django.db.models import Case, Exists, IntegerField, OuterRef, Q, Value, Whe
 from django.db.models.functions import Coalesce, Lower, NullIf
 from django.utils.text import smart_split, unescape_string_literal
 
-from apps.assets.models import Asset
+from apps.assets.models import Asset, Relationship
+from apps.catalog.models import Capability, MissionArea, PlatformDomain, StrategicCategory
+from apps.sources.models import Source
 
 PUBLIC_NAME_ORDER = Lower(Coalesce(NullIf("display_name", Value("")), "name"))
 SEARCH_FIELDS = (
@@ -27,11 +29,8 @@ SEARCH_FIELDS = (
     "contact_email",
     "city",
     "region__name",
-    "strategic_categories__name",
-    "platform_domains__name",
-    "capabilities__name",
-    "missions__name",
 )
+SEARCH_TAXONOMIES = (StrategicCategory, PlatformDomain, Capability, MissionArea)
 SYNONYM_GROUPS = (
     ("drone", "drones", "uas", "uav", "unmanned", "uncrewed"),
     ("test", "testing"),
@@ -51,23 +50,35 @@ def search_terms(query):
     return terms if len(terms) <= 16 else None
 
 
-def public_term_query(term):
+def contains_any(fields, alternatives):
     condition = Q()
-    for field in SEARCH_FIELDS:
-        condition |= Q(**{f"{field}__icontains": term})
-    condition |= Q(sources__title__icontains=term, sources__is_public=True)
-    for direction, target in (("outgoing", "to"), ("incoming", "from")):
-        prefix = f"{direction}_relationships__"
-        asset_path = f"{prefix}{target}_asset__"
-        related_name = Q(**{f"{asset_path}name__icontains": term}) | Q(
-            **{f"{asset_path}display_name__icontains": term}
+    for field in fields:
+        for term in alternatives:
+            condition |= Q(**{f"{field}__icontains": term})
+    return condition
+
+
+def public_term_query(alternatives):
+    condition = contains_any(SEARCH_FIELDS, alternatives)
+    # Isolate each to-many relation so tags, sources, and relationships never multiply rows.
+    for model in SEARCH_TAXONOMIES:
+        matching = model.objects.filter(assets__pk=OuterRef("pk")).filter(
+            contains_any(("name",), alternatives)
         )
-        condition |= related_name & Q(
-            **{
-                f"{prefix}is_public": True,
-                f"{asset_path}pk__in": Asset.public.values("pk"),
-            }
+        condition |= Q(Exists(matching))
+    sources = Source.objects.filter(asset_id=OuterRef("pk"), is_public=True).filter(
+        contains_any(("title",), alternatives)
+    )
+    condition |= Q(Exists(sources))
+    public_partners = Asset.public.filter(
+        contains_any(("name", "display_name"), alternatives)
+    ).order_by().values("pk")
+    for origin, target in (("from_asset", "to_asset"), ("to_asset", "from_asset")):
+        matching = Relationship.objects.filter(
+            is_public=True,
+            **{origin: OuterRef("pk"), f"{target}__in": public_partners},
         )
+        condition |= Q(Exists(matching))
     return condition
 
 
@@ -79,12 +90,7 @@ def apply_search(queryset, query):
         alternatives = (term,)
         if not quoted:
             alternatives = next((group for group in SYNONYM_GROUPS if term in group), alternatives)
-        condition = Q()
-        for alternative in alternatives:
-            condition |= public_term_query(alternative)
-        # Independent EXISTS clauses allow words in different sources/tags without join fan-out.
-        matching = Asset.objects.filter(pk=OuterRef("pk")).filter(condition)
-        queryset = queryset.filter(Exists(matching))
+        queryset = queryset.filter(public_term_query(alternatives))
     return queryset.annotate(
         _search_rank=Case(
             When(Q(display_name__iexact=query) | Q(name__iexact=query), then=Value(0)),

@@ -25,12 +25,19 @@ def requested_limit(request, default, maximum):
         return default
 
 
+def limited_assets(queryset, limit):
+    # One extra row tells us whether a separate total-count query is actually necessary.
+    assets = list(queryset[:limit + 1])
+    result_count = queryset.count() if len(assets) > limit else len(assets)
+    return assets[:limit], result_count
+
+
 @require_GET
 def asset_list(request):
     queryset = filter_public_assets(request.GET)
     limit = requested_limit(request, 100, 500)
-    records = [public_asset_dict(asset, include_detail=False) for asset in queryset[:limit]]
-    result_count = queryset.count()
+    assets, result_count = limited_assets(queryset, limit)
+    records = [public_asset_dict(asset, include_detail=False) for asset in assets]
     return JsonResponse(
         {
             "result_count": result_count,
@@ -46,8 +53,8 @@ def asset_list(request):
 def asset_geojson(request):
     queryset = filter_public_assets(request.GET)
     limit = requested_limit(request, 2000, 5000)
-    features = [asset_feature(asset) for asset in queryset[:limit]]
-    result_count = queryset.count()
+    assets, result_count = limited_assets(queryset, limit)
+    features = [asset_feature(asset) for asset in assets]
     return JsonResponse(
         {
             "type": "FeatureCollection",
