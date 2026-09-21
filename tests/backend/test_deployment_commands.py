@@ -83,3 +83,29 @@ class EnsureAdminUserTests(TestCase):
         ):
             with self.assertRaisesMessage(CommandError, "No administrator exists"):
                 call_command("ensure_admin_user", verbosity=0)
+
+    def test_automated_release_ignores_stale_recovery_flag(self):
+        user = get_user_model().objects.create_superuser(
+            "existing-admin", "existing@example.com", "existing-password"
+        )
+        with patch.dict("os.environ", {
+            "DJANGO_SUPERUSER_RESET": "true",
+            "DJANGO_SUPERUSER_USERNAME": "replacement-admin",
+            "DJANGO_SUPERUSER_EMAIL": "replacement@example.com",
+            "DJANGO_SUPERUSER_PASSWORD": "replacement-password",
+        }):
+            call_command("ensure_admin_user", skip_recovery=True, stdout=StringIO())
+        user.refresh_from_db()
+        self.assertEqual(user.username, "existing-admin")
+        self.assertEqual(user.email, "existing@example.com")
+        self.assertTrue(user.check_password("existing-password"))
+        self.assertEqual(get_user_model().objects.filter(is_superuser=True).count(), 1)
+
+    def test_bootstrap_still_creates_first_admin_with_skip_recovery(self):
+        with patch.dict("os.environ", {
+            "DJANGO_SUPERUSER_RESET": "true",
+            "DJANGO_SUPERUSER_USERNAME": "initial-admin",
+            "DJANGO_SUPERUSER_PASSWORD": "initial-password",
+        }):
+            call_command("ensure_admin_user", skip_recovery=True, stdout=StringIO())
+        self.assertTrue(get_user_model().objects.get(username="initial-admin").is_superuser)

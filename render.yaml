@@ -1,7 +1,7 @@
 databases:
   - name: cosolve-asset-map-db
-    # Evaluation only: Render free PostgreSQL expires after 30 days and has no backups.
-    plan: free
+    # Matches the existing paid database; retain its automatic recovery coverage.
+    plan: basic-256mb
     databaseName: cosolve_asset_map
     user: cosolve_asset_map
 
@@ -11,7 +11,7 @@ services:
     runtime: python
     plan: free
     buildCommand: ./build.sh
-    startCommand: gunicorn config.wsgi:application --bind 0.0.0.0:$PORT
+    startCommand: bash start.sh
     healthCheckPath: /health/
     envVars:
       - key: DJANGO_SETTINGS_MODULE

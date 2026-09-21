@@ -17,6 +17,8 @@ if not ALLOWED_HOSTS or set(ALLOWED_HOSTS) <= {"localhost", "127.0.0.1"}:  # noq
     raise ImproperlyConfigured("DJANGO_ALLOWED_HOSTS must name the production host.")
 
 DEBUG = False
+# Missing configuration must not silently publish a private working inventory.
+REQUIRE_SITE_LOGIN = os.getenv("REQUIRE_SITE_LOGIN", "true").lower() != "false"
 STORAGES["staticfiles"] = {  # noqa: F405
     "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage"
 }
@@ -28,8 +30,7 @@ SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
 SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
-if os.getenv("EMAIL_HOST"):
-    EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_BACKEND = os.getenv("EMAIL_BACKEND", "django.core.mail.backends.smtp.EmailBackend")
 
 LOGGING = {
     "version": 1,

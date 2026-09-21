@@ -2,17 +2,21 @@
 
 Deploy with Python 3.12+, PostgreSQL, Gunicorn, and a reverse proxy or managed Django platform. Configure all values from `.env.example`; do not place credentials in the repository.
 
-The checked-in `render.yaml` and `build.sh` define a free Render evaluation environment. Create a Blueprint from the repository to provision it. The Blueprint keeps the site behind login and prompts for `DJANGO_SUPERUSER_USERNAME`, `DJANGO_SUPERUSER_EMAIL`, and `DJANGO_SUPERUSER_PASSWORD`. These values create the first administrator only; later builds never reset an existing account or password.
+The checked-in `render.yaml` matches the existing deployment: a free Render web service and a paid `basic-256mb` PostgreSQL database. The database was already on that paid plan when checked on September 21, 2026; this configuration does not upgrade the existing service. Creating a new Blueprint will incur the database charge. Both Blueprints keep the site behind login and prompt for `DJANGO_SUPERUSER_USERNAME`, `DJANGO_SUPERUSER_EMAIL`, and `DJANGO_SUPERUSER_PASSWORD`. Automated releases create the first administrator only and never reset an existing account or password.
 
-If the initial administrator credentials are lost on a free service without shell access,
-set the three administrator variables to the desired recovery credentials, add
-`DJANGO_SUPERUSER_RESET=true`, and choose **Save, rebuild, and deploy**. After confirming
-the recovered account can sign in, remove `DJANGO_SUPERUSER_RESET` and deploy again.
-Never leave the recovery switch enabled during normal operation.
+Use the website's password-reset email once delivery is configured, or have another administrator reset the account. For emergency recovery, a trusted operator can run `python manage.py changepassword USERNAME` against the correct database. The `ensure_admin_user` command still supports an explicit recovery when invoked manually with `DJANGO_SUPERUSER_RESET=true`, but automated releases pass `--skip-recovery` and ignore that flag. On a free service without shell access, use a trusted local environment with the database's external connection URL, never a URL committed to GitHub. Remove temporary recovery variables after use.
 
-The Blueprint uses Render's free service and database plans for evaluation. The free PostgreSQL database expires after 30 days and has no backups. Upgrade or replace the database before coworkers perform work that must be retained; the repository intentionally does not select a paid plan automatically.
+The free web service can sleep when idle and does not support dedicated pre-deploy commands or outbound SMTP on ports 25, 465, or 587. Do not downgrade the database to the free plan: free PostgreSQL expires after 30 days and has no managed recovery.
 
-For durable use, create the Blueprint from `render.production.yaml`. It selects a paid web service and non-expiring database, prompts for a production basemap and SMTP configuration, and adds a daily source-monitor cron job. The production viewer is public, but staff and administrative routes remain authenticated. Render cron jobs are billed separately with a minimum monthly charge. Add a scheduled database export or other tested backup before making the hosted database the system of record.
+The separate `render.production.yaml` is a template for a paid web service and database, with a daily source-monitor cron job and a dedicated pre-deploy step. It creates separate resources; do not apply it to upgrade the current service unless a separate environment is intended. Cron jobs are billed separately. To upgrade the existing service, approve its costs, change its plan, set the pre-deploy command to `bash release.sh`, and use the Gunicorn start command shown below. Both templates and production settings default to private access. Set `REQUIRE_SITE_LOGIN=false` only for an explicitly approved public launch.
+
+## Build and release safety
+
+`build.sh` only installs dependencies and collects static files. It does not migrate, seed, change accounts, or write to the database. A failed build therefore leaves the live database untouched.
+
+`release.sh` performs migrations, conservative catalog updates, staff-role setup, history initialization, and first-administrator creation. The paid template runs it in Render's pre-deploy phase. The current free service uses `bash start.sh`, which runs the release after a successful build and only starts Gunicorn if all release commands succeed. Free-service restarts also repeat these idempotent commands and may take longer than a simple server restart. Use a paid pre-deploy step when reliable start-up latency is required.
+
+Release steps are not a single transaction and code rollback does not undo migrations or data corrections. Keep migrations backward-compatible with the previous running version and export a backup before schema or bulk-data changes. Never run two release jobs concurrently against the same database.
 
 ## Statewide release scope
 
@@ -27,16 +31,43 @@ To create a Hampton Roads-only release:
 
 Setting `PUBLIC_REGION_SLUG` to another active region creates a different regional release without copying the application or database. A separate database is needed only when contractual or confidentiality requirements prohibit storing statewide working records in the same environment.
 
-The build adds missing catalog records, applies conservative profile enrichment, applies newly checked-in editorial review decisions once, creates baseline history, and leaves later staff review decisions intact. Normal redeployments therefore preserve coworker edits and any later decision to unverify a record. To intentionally refresh catalog-managed fields from the checked-in catalog, back up the database, review the catalog diff, and run `python manage.py seed_real_data --prune` manually.
+The release adds missing catalog records, applies conservative profile enrichment, applies newly checked-in editorial review decisions once, creates baseline history, and leaves later staff review decisions intact. Normal redeployments therefore preserve coworker edits and any later decision to unverify a record. To intentionally refresh catalog-managed fields from the checked-in catalog, back up the database, review the catalog diff, and run `python manage.py seed_real_data --prune` manually.
 
 ```bash
 export DJANGO_SETTINGS_MODULE=config.settings.production
-python manage.py migrate
-python manage.py collectstatic --noinput
+bash build.sh
+bash release.sh
 gunicorn config.wsgi:application --bind 0.0.0.0:8000
 ```
 
-Required production choices include a strong `DJANGO_SECRET_KEY`, explicit `DJANGO_ALLOWED_HOSTS`, PostgreSQL `DATABASE_URL`, HTTPS, SMTP, and a basemap provider whose terms cover expected traffic. Run migrations as a release step before switching application traffic. Back up the database before schema changes.
+Required production choices include a strong `DJANGO_SECRET_KEY`, explicit `DJANGO_ALLOWED_HOSTS`, PostgreSQL `DATABASE_URL`, HTTPS, a working email provider, and a basemap provider whose terms cover expected traffic. Run migrations as a release step before switching application traffic. Back up the database before schema changes.
+
+## Password-reset delivery
+
+As of September 21, the hosted site has no mail-provider configuration. The reset page now explains that delivery is unavailable rather than promising an email or raising a server error. Signing in and existing passwords are unaffected. No `DJANGO_SUPERUSER_RESET` variable remains on the hosted service.
+
+Choose an approved sender service and verify a sender/domain with its owner. Configure `DEFAULT_FROM_EMAIL`, `EMAIL_HOST`, `EMAIL_PORT`, `EMAIL_HOST_USER`, `EMAIL_HOST_PASSWORD`, and `EMAIL_USE_TLS` for SMTP on a supported hosting plan. `EMAIL_TIMEOUT` defaults to ten seconds. The free Render web service blocks the usual SMTP ports; staying on that plan requires a supported HTTPS email backend and its provider credentials instead. `EMAIL_BACKEND` is configurable in production, but a provider-specific backend must be installed and configured before enabling it.
+
+Use `python manage.py sendtestemail jake@letscosolve.com` only after delivery is configured. Provider acceptance is not proof of inbox delivery: confirm receipt, then request a real password-reset email, open its HTTPS link, and verify expiration/single-use behavior. Do not log reset links or send test account secrets. Automated tests cover generating an email, resetting through its link, rejecting reuse, and handling missing configuration for both known and unknown addresses.
+
+## Backups and restore drills
+
+The current database's **Recovery** page was checked on September 21, 2026: point-in-time recovery covers the last **three days**. This is a rolling recovery window, not an indefinite archive. Render retains logical exports for at least seven days. See [Render's backup documentation](https://render.com/docs/postgresql-backups).
+
+Before schema changes or bulk edits, use **Database > Recovery > Create export** and download the completed archive to a private location outside the repository. Keep a dated monthly export and a pre-release export according to VIPC's retention policy; assign an owner to this task. Longer-term off-device archive storage and retention automation are not configured by this repository. Backups contain user records, password hashes, and potentially private submissions: restrict access and never commit or share them as ordinary asset exports.
+
+Test recovery into a **new, empty local database**, never the live database. Use PostgreSQL tools at least as new as the source server (currently PostgreSQL 18). For a Render directory-format export, extract its archive and run:
+
+```bash
+createdb -h /PRIVATE/LOCAL/SOCKET -p 55439 cosolve_restore_check
+pg_restore --exit-on-error --no-owner --no-acl \
+  --host=/PRIVATE/LOCAL/SOCKET --port=55439 \
+  --dbname=cosolve_restore_check /PRIVATE/BACKUP/EXTRACTED_DIRECTORY
+```
+
+Point an isolated local test process at that database; disable outgoing email and external integrations. Check migration state, asset/source/user counts, foreign-key restoration, private-page redirects, an authenticated search, and a representative asset page. Record the archive date, checksum, results, and any limitations. Stop the isolated database when finished. A restore drill does not prove that a future backup is valid, so repeat it quarterly and before handover.
+
+September 21 verification: a complete hosted logical export was created at 14:57 UTC. Chrome blocked its download, so a restore of that **hosted** export is still pending. Separately, a local PostgreSQL 18 backup was restored into a fresh test database: 527 assets, 1,711 sources, and one test administrator were present; the anonymous map redirected to login, and authenticated map/search/detail requests succeeded. This validates the local restore procedure, not the untested hosted archive. No live database was overwritten.
 
 Set `OIDC_SERVER_URL`, `OIDC_CLIENT_ID`, and `OIDC_CLIENT_SECRET` together to enable organization sign-in. The provider must send a verified email that matches an active user created by an administrator. Leave all three unset to use password and TOTP authentication only.
 
@@ -46,7 +77,7 @@ Rollback procedure:
 
 1. Remove the failing release from traffic.
 2. Restore the preceding application image or checkout.
-3. Reverse only migrations documented as reversible; otherwise restore the pre-release database backup.
+3. Reverse only migrations documented as reversible. Otherwise restore the pre-release database backup into a separate database, check it, and deliberately switch the application connection. Identify and preserve any staff edits made since the backup before switching; do not overwrite the live database blindly.
 4. Run `/health/`, a public API request, and the browser smoke test before restoring traffic.
 
 Operational checks should cover database backups and restore drills, stale-record review, dependency updates, failed login monitoring, static-file availability, API errors, and staff account offboarding.

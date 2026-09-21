@@ -135,10 +135,10 @@ class SeptemberReviewPassTests(SimpleTestCase):
                 validate([record], [])
 
     def test_atomic_corrections_run_before_generic_profile_enrichment(self):
-        build = (settings.BASE_DIR / "build.sh").read_text()
+        release = (settings.BASE_DIR / "release.sh").read_text()
         self.assertLess(
-            build.index("--corrections data/asset_corrections_2026_09_16.json"),
-            build.index("python manage.py enrich_asset_profiles"),
+            release.index("--corrections data/asset_corrections_2026_09_16.json"),
+            release.index("python manage.py enrich_asset_profiles"),
         )
 
 

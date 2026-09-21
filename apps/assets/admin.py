@@ -1,7 +1,6 @@
 import csv
 from datetime import timedelta
 
-from allauth.account.forms import ResetPasswordForm
 from django.contrib import admin, messages
 from django.contrib.auth import get_user_model
 from django.contrib.auth.admin import UserAdmin as DjangoUserAdmin
@@ -11,6 +10,7 @@ from django.utils import timezone
 from simple_history.admin import SimpleHistoryAdmin
 
 from apps.api.search import PUBLIC_NAME_ORDER
+from apps.core.forms import SiteResetPasswordForm
 from apps.imports.services import CSV_COLUMNS, asset_csv_row
 from apps.sources.models import Source
 
@@ -590,13 +590,18 @@ class RestrictedUserAdmin(DjangoUserAdmin):
 
     @admin.action(description="Send password setup or reset email")
     def send_account_setup_email(self, request, queryset):
+        if not SiteResetPasswordForm().email_delivery_configured:
+            messages.error(
+                request, "Email delivery is not configured. No account emails were sent."
+            )
+            return
         sent = 0
         skipped = 0
         for user in queryset.filter(is_active=True):
             if not user.email:
                 skipped += 1
                 continue
-            form = ResetPasswordForm({"email": user.email})
+            form = SiteResetPasswordForm({"email": user.email})
             if form.is_valid():
                 form.save(request)
                 sent += 1

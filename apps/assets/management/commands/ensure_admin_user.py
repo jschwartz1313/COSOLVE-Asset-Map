@@ -7,12 +7,25 @@ from django.core.management.base import BaseCommand, CommandError
 class Command(BaseCommand):
     help = "Create the initial superuser or perform an explicitly requested recovery."
 
+    def add_arguments(self, parser):
+        parser.add_argument(
+            "--skip-recovery",
+            action="store_true",
+            help="Bootstrap only; ignore a stale recovery flag during automated deployments.",
+        )
+
     def handle(self, *args, **options):
         user_model = get_user_model()
         username = os.getenv("DJANGO_SUPERUSER_USERNAME", "").strip()
         password = os.getenv("DJANGO_SUPERUSER_PASSWORD", "")
         email = os.getenv("DJANGO_SUPERUSER_EMAIL", "").strip()
         reset_requested = os.getenv("DJANGO_SUPERUSER_RESET", "false").lower() == "true"
+        if options["skip_recovery"] and reset_requested:
+            self.stdout.write(
+                "Ignoring DJANGO_SUPERUSER_RESET during automated deployment; "
+                "remove this flag from the environment."
+            )
+            reset_requested = False
 
         if reset_requested:
             if not username or not password:

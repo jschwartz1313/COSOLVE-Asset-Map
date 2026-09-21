@@ -144,6 +144,7 @@ AUTHENTICATION_BACKENDS = (
     "allauth.account.auth_backends.AuthenticationBackend",
 )
 ACCOUNT_ADAPTER = "apps.core.adapters.ClosedAccountAdapter"
+ACCOUNT_FORMS = {"reset_password": "apps.core.forms.SiteResetPasswordForm"}
 SOCIALACCOUNT_ADAPTER = "apps.core.adapters.InvitedUserSocialAccountAdapter"
 ACCOUNT_LOGIN_METHODS = {"username", "email"}
 ACCOUNT_SIGNUP_FIELDS = ["username*", "email*", "password1*", "password2*"]
@@ -165,6 +166,7 @@ EMAIL_PORT = int(os.getenv("EMAIL_PORT", "587"))
 EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER", "")
 EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD", "")
 EMAIL_USE_TLS = os.getenv("EMAIL_USE_TLS", "true").lower() == "true"
+EMAIL_TIMEOUT = int(os.getenv("EMAIL_TIMEOUT", "10"))
 
 OIDC_SERVER_URL = os.getenv("OIDC_SERVER_URL", "").strip()
 OIDC_CLIENT_ID = os.getenv("OIDC_CLIENT_ID", "").strip()

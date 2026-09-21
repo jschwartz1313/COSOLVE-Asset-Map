@@ -1,7 +1,27 @@
+from allauth.account.forms import ResetPasswordForm
 from django import forms
+from django.conf import settings
 from django.core.exceptions import ValidationError
 
 from apps.assets.models import SavedView, UpdateSubmission
+
+
+class SiteResetPasswordForm(ResetPasswordForm):
+    @property
+    def email_delivery_configured(self):
+        return (
+            settings.EMAIL_BACKEND != "django.core.mail.backends.smtp.EmailBackend"
+            or bool(settings.EMAIL_HOST.strip())
+        )
+
+    def clean(self):
+        cleaned = super().clean()
+        if not self.email_delivery_configured:
+            raise ValidationError(
+                "Password-reset email is not available yet. "
+                "Contact the COSOLVE administrator for help signing in."
+            )
+        return cleaned
 
 
 class UpdateSubmissionForm(forms.ModelForm):

@@ -10,6 +10,7 @@ services:
     runtime: python
     plan: starter
     buildCommand: ./build.sh
+    preDeployCommand: bash release.sh
     startCommand: gunicorn config.wsgi:application --bind 0.0.0.0:$PORT
     healthCheckPath: /health/
     envVars:
@@ -24,7 +25,7 @@ services:
           name: cosolve-asset-map-production-db
           property: connectionString
       - key: REQUIRE_SITE_LOGIN
-        value: "false"
+        value: "true"
       - key: PUBLIC_REGION_SLUG
         value: ""
       - key: PUBLIC_SCOPE_NAME
