@@ -1,0 +1,831 @@
+{
+  "reviewed_at": "2026-09-24",
+  "scope": "Replace documents, third-party reports, news articles, and broad directory or mismatched-organization pages in the primary website field. Source evidence is retained. Empty website fields intentionally hide the website button.",
+  "corrections": [
+    {
+      "name": "ATA Aviation",
+      "provenance": "curated-public-source",
+      "before": {"website_url": "https://vipc.org/virginia-launches-advanced-air-mobility-and-unmanned-systems-test-site-program/"},
+      "after": {"website_url": "https://www.ataaviation.com/"},
+      "add_sources": [{"title": "ATA Aviation official website", "url": "https://www.ataaviation.com/"}],
+      "reason": "Link to the organization's own website rather than a VIPC article."
+    },
+    {
+      "name": "Virginia Department of Transportation UAS Program",
+      "provenance": "curated-public-source",
+      "before": {"website_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"},
+      "after": {"website_url": "https://www.vdot.virginia.gov/doing-business/technical-guidance-and-support/location-and-design/geospatial-program/"},
+      "reason": "VDOT's own geospatial-program page describes its UAS section."
+    },
+    {
+      "name": "Virginia Innovation Partnership Corporation",
+      "provenance": "curated-public-source",
+      "before": {"website_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"},
+      "after": {"website_url": "https://vipc.org/"},
+      "add_sources": [{"title": "Virginia Innovation Partnership Corporation official site", "url": "https://vipc.org/"}],
+      "reason": "The parent organization should link to its own site, not a single initiative."
+    },
+    {
+      "name": "Virginia Public Safety Innovation Center",
+      "provenance": "curated-public-source",
+      "before": {"website_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"},
+      "after": {"website_url": "https://vipc.org/initiatives/public-safety-innovation-center/"},
+      "add_sources": [{"title": "VIPC Public Safety Innovation Center", "url": "https://vipc.org/initiatives/public-safety-innovation-center/"}],
+      "reason": "Link to this center's own VIPC page rather than the unrelated Unmanned Systems Center."
+    },
+    {
+      "name": "Virginia Advanced Air Mobility Alliance",
+      "provenance": "curated-public-source",
+      "before": {"website_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"},
+      "after": {"website_url": ""},
+      "reason": "VIPC's Unmanned Systems Center page is not a dedicated Alliance website; retain it under Sources."
+    },
+    {
+      "name": "Accomack County Emergency Management Drone Program",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.esva911.org/Communications%20Manual%20-%20Public%20Release%20Version-%20UPDATED%2011-26-24.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Amherst County Fire and EMS Drone Program",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.countyofamherst.com/egov/documents/1730910273_75599.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Bath County First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Bedford County Sheriff's Office Drone Team",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://sheriff.bedfordcountyva.gov/Home/Components/News/News/1947/3987?arch=1&npage=2"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Bowman Consulting Unmanned Geospatial Services",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://bowman.com/news_tags/geospatial"
+      },
+      "after": {
+        "website_url": "https://bowman.com/services/survey-geospatial"
+      },
+      "reason": "The website button now opens an official operator page for this asset or organization; the former article remains supporting evidence.",
+      "add_sources": [
+        {
+          "title": "Bowman geospatial and drone services",
+          "url": "https://bowman.com/services/survey-geospatial"
+        }
+      ]
+    },
+    {
+      "name": "Buchanan County First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Campbell County Sheriff's Office Drone Program",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.campbellcountyva.gov/324/Annual-Reports"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Chase City Muni",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "City of Fairfax Regional UAS Unit",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.fairfaxva.gov/files/assets/city/v/1/police/documents/annual-reports/fy2023-ffx-pd-annual-report.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "City of Virginia Beach UAS Program",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.cisa.gov/sites/default/files/2024-08/24_0826_necp_spotlight_implementing_uas_programs_to_support_emergency_operations_final_508C.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "CNU Autonomous Systems and Drone Lab",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://cnu.edu/news/2026/02/19-cnu-serc-drone-lab/"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Culpeper Police Department Drone Team",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://files.culpeperva.gov/FY25%20TOC%20Annual%20Report.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Curtiss-Wright Defense Solutions Ashburn",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://defense-solutions.curtisswright.com/media-center/news/curtiss-wright-provide-sensor-processing-northrop-grumman-improved-threat-detection-system"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Dewberry Gainesville sUAS Acquisition Team",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.dewberry.com/docs/default-source/documents/lidar-suas-one-pager.pdf"
+      },
+      "after": {
+        "website_url": "https://www.dewberry.com/services/geospatial-mapping-and-survey"
+      },
+      "reason": "Use Dewberry's official geospatial and drone services page; keep the lidar handout as evidence.",
+      "add_sources": [{"title": "Dewberry geospatial, mapping, and sUAS services", "url": "https://www.dewberry.com/services/geospatial-mapping-and-survey"}]
+    },
+    {
+      "name": "Energy-Centric UAS Center for Critical Infrastructure",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.rbc.edu/news-releases/rbc-will-serve-as-operations-site-for-uas-center/"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Hampton Roads Alliance",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://hamptonroadsalliance.com/wp-content/uploads/2025/01/Alliance-Board-Deck-September.pdf"
+      },
+      "after": {
+        "website_url": "https://hamptonroadsalliance.com/"
+      },
+      "reason": "The website button now opens an official operator page for this asset or organization; the former article remains supporting evidence."
+    },
+    {
+      "name": "Harrowgate Drone Park",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.chesterfield.gov/m/newsflash/home/detail/3280"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "HII Unmanned Systems Center of Excellence",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.hii.com/news/unmanned-systems-center-of-excellence"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "HUSH Aerospace",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.vedp.org/news/home-business-more-400-years"
+      },
+      "after": {
+        "website_url": "https://www.hush.aero/what-we-do"
+      },
+      "reason": "The website button now opens an official operator page for this asset or organization; the former article remains supporting evidence."
+    },
+    {
+      "name": "ICI Services",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://icisrvcs.com/news/2020/2/5/236/ici-services-to-support-navy-unmanned-surface-vehicle-development/index.html"
+      },
+      "after": {
+        "website_url": "https://icisrvcs.com/"
+      },
+      "reason": "The website button now opens an official operator page for this asset or organization; the former article remains supporting evidence.",
+      "add_sources": [
+        {
+          "title": "ICI Services official website",
+          "url": "https://icisrvcs.com/"
+        }
+      ]
+    },
+    {
+      "name": "James City County Police Drone as First Responder Program",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.jamescitycountyva.gov/m/newsflash/Home/Detail/6334"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "L3Harris Orange County Propulsion Manufacturing Site",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.l3harris.com/newsroom/editorial/2024/05/orange-county-expansion-helps-aerojet-rocketdyne-boost-solid-rocket"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Lake Anna",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Lake Country Rgnl",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Longbow Unmanned Systems Research and Test Center",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.sbir.gov/portfolio/1664155"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Longwood SEED Autonomous Marine Project",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.longwood.edu/news/2026/seed-entrepreneurship-experience/"
+      },
+      "after": {
+        "website_url": "https://www.seedva.org/startedatseed"
+      },
+      "reason": "Use SEED's own project listing for the Bathymetrix autonomous aquatic drone project; retain the Longwood story as evidence.",
+      "add_sources": [{"title": "SEED Innovation Hub autonomous aquatic drone project", "url": "https://www.seedva.org/startedatseed"}]
+    },
+    {
+      "name": "Loudoun County Sheriff's Office Drone Unit",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://sheriff.loudoun.gov/m/newsflash/home/detail/9418"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Marine Corps Counter-Drone Team",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.tecom.marines.mil/In-the-News/Stories/News-Article-Display/Article/4538355/tecom-establishes-marine-corps-robotics-integration-group-and-counter-drone-team/"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Marine Corps Warfighting Laboratory",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.marines.mil/News/News-Display/Article/746745/marine-corps-warfighting-lab-tests-autonomous-reconnaissance/"
+      },
+      "after": {
+        "website_url": "https://www.mcwl.marines.mil/Welcome-to-MCWL/About-Us/"
+      },
+      "reason": "The website button now opens an official operator page for this asset or organization; the former article remains supporting evidence."
+    },
+    {
+      "name": "Mc Laughlin",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Mid-Atlantic Tech Bridge",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.navsea.navy.mil/Media/News/Article-View/Article/2555171/tech-bridges-101-network-built-to-accelerate-solutions-to-the-warfighter/"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Navy TALSA East Small UAS Training Facility",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.navair.navy.mil/news/Navy-opens-doors-first-small-unmanned-aircraft-systems-training-facility/Tue-08022022-0923"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "New London",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "New Market",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Norfolk State Drone Photography Course",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://catalog.nsu.edu/undergraduate/course-descriptions/fia/fia.pdf"
+      },
+      "after": {
+        "website_url": "https://catalog.nsu.edu/undergraduate/liberal-arts/visual-performing-arts/"
+      },
+      "reason": "Use the university's live course catalog page listing FIA 324 and FIA 325 instead of its PDF export.",
+      "add_sources": [{"title": "Norfolk State drone-photography course catalog", "url": "https://catalog.nsu.edu/undergraduate/liberal-arts/visual-performing-arts/"}]
+    },
+    {
+      "name": "Norfolk State Tactical Autonomy Research Program",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.nsu.edu/News/2023/February/CSET-Good-News-Report-Jan-2023"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "NSWC Dahlgren Outdoor Autonomy Laboratory",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.navsea.navy.mil/Media/News/Article-View/Article/3886620/maximizing-resources-building-a-competitive-outdoor-autonomy-lab-environment/"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Occoquan Police Department Public Safety Drone Program",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://occoquanva.gov/wp-content/uploads/2026/01/TC-Agenda-Packet-FULL-1-6-2026.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Pittsylvania County First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Prince Edward County Emergency Management Drone Program",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.co.prince-edward.va.us/News-Article/Pyle-Named-County-Emergency-Management-Coordinator"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Prince William County Police sUAS Team",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.pwcva.gov/news/pwcpd-spotlight-departments-suas-team-serving-sky/"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Radford University First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "RapidFlight UAS Manufacturing Headquarters",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.prnewswire.com/news-releases/rapidflight-celebrates-grand-opening-of-uas-3d-manufacturing-headquarters-in-manassas-virginia-301884344.html"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Richmond Police sUAV Program",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://rva.gov/sites/default/files/2024-02/GO%2006-32%20Unmanned%20Aerial%20Vehicle.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Smith Mountain Lake",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Smyth County First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Southampton County First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Southern Virginia Higher Education Center Robotics Training",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.svhec.org/news/svhec-drives-22-million-economic-impact-in-southern-virginia/"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Southwest Virginia Drone Soccer Program",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.swcenter.edu/wp-content/uploads/2025/07/2024Dec12_Minutes_FINAL.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Tangier Island",
+      "provenance": "faa-public-airport",
+      "before": {
+        "website_url": "https://doav.virginia.gov/airport-directory/"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Textron Systems Aerosonde UAS Center of Excellence",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.textronsystems.com/our-company/news-events/articles/inside-ts/aerosonde-uas-center-excellence"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Town of Chilhowie First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Town of Chincoteague First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Town of New Market First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Town of Rocky Mount First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Town of Scottsville First Responder UAS Capability",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "TurbineOne Headquarters and T1 Edgeworks",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.turbineone.com/company/newsroom"
+      },
+      "after": {
+        "website_url": "https://www.turbineone.com/"
+      },
+      "reason": "The website button now opens an official operator page for this asset or organization; the former article remains supporting evidence.",
+      "add_sources": [
+        {
+          "title": "TurbineOne official website",
+          "url": "https://www.turbineone.com/"
+        }
+      ]
+    },
+    {
+      "name": "UVA Coastal Research Center UAS Operations",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://abcrc.virginia.edu/files/abcrc/files/coastal_research_center___drone_pilot_compliance_checklist.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "UVA Wise STREAMWISE Robot Drone League",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.uvawise.edu/news/2025/10/empowering-next-generation-innovators-through-streamwise"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "VCU Robotics and Autonomous Systems Engineering BS",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://news.vcu.edu/article/vcu-to-offer-new-undergraduate-degree-in-robotics-and-autonomous-systems-engineering"
+      },
+      "after": {
+        "website_url": "https://bulletin.vcu.edu/undergraduate/engineering/robotics-auto-systems-eng-bs/"
+      },
+      "reason": "Use VCU's current official degree page rather than the announcement article.",
+      "add_sources": [{"title": "VCU robotics and autonomous systems degree requirements", "url": "https://bulletin.vcu.edu/undergraduate/engineering/robotics-auto-systems-eng-bs/"}]
+    },
+    {
+      "name": "Virginia Capes Range Complex",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.nepa.navy.mil/Portals/20/Documents/AFTT%20EIS%204%20Draft/04%20AFTT%20DEIS%20Chapter%202%20Description%20of%20Proposed%20Action%20and%20Alternatives.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Virginia Conservation Police UAS Program",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://dwr.virginia.gov/wp-content/uploads/media/Virginia-Conservation-Police-Annual-Report-2024.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Virginia State University UAS Operations Program",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.vsu.edu/files/docs/policies/8000/use-unmanned-aerial-systems-drones.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Virginia Tech Counter UAS Research and Testing Center",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://news.vt.edu/articles/2025/04/research-counteruascenter.html"
+      },
+      "after": {
+        "website_url": "https://nationalsecurity.vt.edu/research/sdd.html"
+      },
+      "reason": "The website button now opens an official operator page for this asset or organization; the former article remains supporting evidence.",
+      "add_sources": [
+        {
+          "title": "Virginia Tech Counter-UAS Testing and Research Center",
+          "url": "https://nationalsecurity.vt.edu/research/sdd.html"
+        }
+      ]
+    },
+    {
+      "name": "Virginia Tech Eastern Shore AREC Drone Application Research",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.arec.vaes.vt.edu/content/dam/arec_vaes_vt_edu/eastern-shore/newsletter/The%20Stalk%20-%20July%202024.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "VMI Drone Detection and Counter-UAS Research",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.vmi.edu/news/headlines/2025-2026/drone-detection-focus-of-cadet-research.php"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Winchester Emergency Management sUAS Program",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://www.winchesterva.gov/files/assets/public/v/1/finance/fy23_budget_book.pdf"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Wing Christiansburg Drone Delivery Program",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://wing.com/news/wing-and-doordash-expand-drone-delivery"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    },
+    {
+      "name": "Wrap Technologies Norton Manufacturing Headquarters",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://ir.wrap.com/news-events/press-releases/detail/352/wrap-technologies-opens-new-virginia-facility-to-scale"
+      },
+      "after": {
+        "website_url": ""
+      },
+      "reason": "No dedicated public asset website was confirmed; retain the current link only as a supporting source."
+    }
+  ]
+}

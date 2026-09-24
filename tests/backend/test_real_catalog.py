@@ -227,8 +227,8 @@ class RealCatalogFileTests(TestCase):
         )
         self.assertTrue(
             all(
-                record["website_url"]
-                and any(source["url"] == record["website_url"] for source in record["sources"])
+                not record["website_url"]
+                or any(source["url"] == record["website_url"] for source in record["sources"])
                 for record in records
             )
         )
@@ -296,10 +296,7 @@ class RealCatalogFileTests(TestCase):
 
         self.assertEqual(
             records_by_name["Accomack County Emergency Management Drone Program"]["website_url"],
-            (
-                "https://www.esva911.org/Communications%20Manual%20-%20Public%20Release%20"
-                "Version-%20UPDATED%2011-26-24.pdf"
-            ),
+            "",
         )
         self.assertEqual(
             records_by_name["Dominion Energy UAS Program"]["activity_status"],
@@ -307,7 +304,35 @@ class RealCatalogFileTests(TestCase):
         )
         self.assertEqual(
             records_by_name["Longbow Unmanned Systems Research and Test Center"]["website_url"],
-            "https://www.sbir.gov/portfolio/1664155",
+            "",
+        )
+        self.assertEqual(
+            records_by_name["ATA Aviation"]["website_url"],
+            "https://www.ataaviation.com/",
+        )
+        self.assertEqual(
+            records_by_name["Virginia Department of Transportation UAS Program"]["website_url"],
+            "https://www.vdot.virginia.gov/doing-business/technical-guidance-and-support/"
+            "location-and-design/geospatial-program/",
+        )
+        self.assertTrue(
+            all(not record["website_url"].lower().split("?", 1)[0].endswith(".pdf")
+                for record in catalog["records"])
+        )
+        self.assertTrue(
+            {
+                "Robin Radar USA Sterling Operations Center",
+                "Systems Planning & Analysis",
+                "Virginia AAM Smart Airspace Program",
+                "Virginia Tech VTTI Smart Airspace Vertiport",
+            }.issubset(records_by_name)
+        )
+        self.assertIsNone(
+            records_by_name["Virginia Tech VTTI Smart Airspace Vertiport"]["latitude"]
+        )
+        self.assertEqual(
+            records_by_name["Robin Radar USA Sterling Operations Center"]["website_url"],
+            "https://www.robinradar.com/locations",
         )
         self.assertEqual(
             records_by_name["Hampden-Sydney College"]["contact_url"],
@@ -407,6 +432,11 @@ class RealCatalogFileTests(TestCase):
                 (settings.BASE_DIR / "data/asset_interview_followup_2026_09_06.json").read_text()
             )["records"]
         }
+        source_backed_additions.update(
+            record["name"] for record in json.loads(
+                (settings.BASE_DIR / "data/asset_expansion_2026_09_24.json").read_text()
+            )["records"]
+        )
         reviewed_or_flagged = (
             historical_names | expansion_names | hampton_roads_names
             | manufacturing_names | september_names

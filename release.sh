@@ -14,6 +14,7 @@ python manage.py apply_catalog_corrections --corrections data/capability_profile
 python manage.py apply_catalog_corrections --corrections data/airport_display_names_2026_09_07.json
 python manage.py fill_airport_display_names
 python manage.py apply_catalog_corrections --corrections data/asset_corrections_2026_09_16.json
+python manage.py apply_catalog_corrections --corrections data/asset_website_corrections_2026_09_24.json
 python manage.py enrich_asset_profiles
 python manage.py apply_catalog_reviews
 python manage.py apply_catalog_reviews --reviews data/asset_editorial_reviews_2026_08_24.json

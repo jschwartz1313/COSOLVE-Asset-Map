@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-07",
+  "generated_at": "2026-09-24",
   "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, broad-based Virginia degree-granting institutions from the NCES IPEDS 2024 directory while excluding narrowly specialized health and ministry schools without documented unmanned-systems relevance, and a curated set of source-backed ecosystem records. Specific street and site locations are anchored to official public address sources and geocoded against the U.S. Census address ranges or named-site map data; locality points are retained when the public record does not identify the operating department or facility. Every record is also classified as either a core unmanned-systems asset with direct documented activity or a supporting ecosystem asset with a broader enabling role.",
-  "record_count": 527,
+  "record_count": 531,
   "records": [
     {
       "address_line": "29194 Parkway North",
@@ -118,7 +118,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.esva911.org/Communications%20Manual%20-%20Public%20Release%20Version-%20UPDATED%2011-26-24.pdf"
+      "website_url": ""
     },
     {
       "address_line": "22 Enterprise Parkway, Suite 320",
@@ -769,7 +769,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.countyofamherst.com/egov/documents/1730910273_75599.pdf"
+      "website_url": ""
     },
     {
       "activity_last_verified_at": "2026-08-24",
@@ -1198,6 +1198,10 @@
         {
           "title": "ATA Aviation FAA public filing describing AirDEX and UAS operations",
           "url": "https://downloads.regulations.gov/FAA-2023-1256-0279/attachment_1.pdf"
+        },
+        {
+          "title": "ATA Aviation official website",
+          "url": "https://www.ataaviation.com/"
         }
       ],
       "state": "VA",
@@ -1206,7 +1210,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
-      "website_url": "https://vipc.org/virginia-launches-advanced-air-mobility-and-unmanned-systems-test-site-program/"
+      "website_url": "https://www.ataaviation.com/"
     },
     {
       "address_line": "127 Lee Highway",
@@ -1831,7 +1835,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      "website_url": ""
     },
     {
       "address_line": "1345 Falling Creek Road",
@@ -1883,7 +1887,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://sheriff.bedfordcountyva.gov/Home/Components/News/News/1947/3987?arch=1&npage=2"
+      "website_url": ""
     },
     {
       "address_line": "315 Bedford Avenue",
@@ -2417,6 +2421,10 @@
         {
           "title": "Bowman current Virginia offices and headquarters",
           "url": "https://bowman.com/virginia"
+        },
+        {
+          "title": "Bowman geospatial and drone services",
+          "url": "https://bowman.com/services/survey-geospatial"
         }
       ],
       "state": "VA",
@@ -2425,7 +2433,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Bowman describes integrating its drone-based imaging and scanning operations into its national aerial-imaging business. This record locates the Virginia corporate contact rather than an aircraft operating base.",
-      "website_url": "https://bowman.com/news_tags/geospatial"
+      "website_url": "https://bowman.com/services/survey-geospatial"
     },
     {
       "address_line": "1402 Airport Road",
@@ -2850,7 +2858,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      "website_url": ""
     },
     {
       "activity_last_verified_at": "2026-08-24",
@@ -3011,7 +3019,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.campbellcountyva.gov/324/Annual-Reports"
+      "website_url": ""
     },
     {
       "address_line": "",
@@ -3499,7 +3507,7 @@
         "Supporting ecosystem asset"
       ],
       "unmanned_systems_relevance": "Chase City Muni is included as public aviation infrastructure serving Chase City. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
-      "website_url": "https://doav.virginia.gov/airport-directory/"
+      "website_url": ""
     },
     {
       "address_line": "304 Albemarle Drive",
@@ -3827,7 +3835,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.fairfaxva.gov/files/assets/city/v/1/police/documents/annual-reports/fy2023-ffx-pd-annual-report.pdf"
+      "website_url": ""
     },
     {
       "address_line": "9608 Grant Avenue",
@@ -3949,7 +3957,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.cisa.gov/sites/default/files/2024-08/24_0826_necp_spotlight_implementing_uas_programs_to_support_emergency_operations_final_508C.pdf"
+      "website_url": ""
     },
     {
       "activity_last_verified_at": "2026-08-21",
@@ -4005,7 +4013,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
-      "website_url": "https://cnu.edu/news/2026/02/19-cnu-serc-drone-lab/"
+      "website_url": ""
     },
     {
       "address_line": "1 Avenue of the Arts",
@@ -4620,7 +4628,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://files.culpeperva.gov/FY25%20TOC%20Annual%20Report.pdf"
+      "website_url": ""
     },
     {
       "address_line": "12517 Beverly Ford Road",
@@ -4738,7 +4746,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Curtiss-Wright documents computing used on unmanned platforms and 2026 processing support for a sensor able to detect UAS. The public facility directory identifies its Ashburn office; production lines are not inferred from the headquarters address.",
-      "website_url": "https://defense-solutions.curtisswright.com/media-center/news/curtiss-wright-provide-sensor-processing-northrop-grumman-improved-threat-detection-system"
+      "website_url": ""
     },
     {
       "activity_last_verified_at": "2026-08-24",
@@ -5427,6 +5435,10 @@
         {
           "title": "U.S. Census public-address geocode (site approximation)",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=13575+Heathcote+Boulevard%2C+Gainesville%2C+VA+20155&benchmark=Public_AR_Current&format=json"
+        },
+        {
+          "title": "Dewberry geospatial, mapping, and sUAS services",
+          "url": "https://www.dewberry.com/services/geospatial-mapping-and-survey"
         }
       ],
       "state": "VA",
@@ -5435,7 +5447,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Dewberry explicitly locates its sUAS acquisition team in Gainesville and describes aerial lidar, imagery, inspection, and ground-survey support. The contact directory supplies the Gainesville office address.",
-      "website_url": "https://www.dewberry.com/docs/default-source/documents/lidar-suas-one-pager.pdf"
+      "website_url": "https://www.dewberry.com/services/geospatial-mapping-and-survey"
     },
     {
       "activity_last_verified_at": "2026-08-21",
@@ -6432,7 +6444,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides a publicly documented environment for unmanned-system testing, training, demonstration, validation, or operational integration.",
-      "website_url": "https://www.rbc.edu/news-releases/rbc-will-serve-as-operations-site-for-uas-center/"
+      "website_url": ""
     },
     {
       "address_line": "2600 Park Tower Drive, Suite 400",
@@ -6746,10 +6758,6 @@
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27W24%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html"
         },
         {
-          "title": "Falwell Airport: McLaren Corporation operator and public contact page",
-          "url": "https://mclarencorporation.com/"
-        },
-        {
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
@@ -6760,6 +6768,10 @@
         {
           "title": "Virginia Airport Sponsor and Manager Directory",
           "url": "https://doav.virginia.gov/airport_sponsors/"
+        },
+        {
+          "title": "Falwell Airport: McLaren Corporation operator and public contact page",
+          "url": "https://mclarencorporation.com/"
         }
       ],
       "state": "VA",
@@ -7611,7 +7623,7 @@
           "url": "https://fulcrumconceptsllc.com/news/fulcrum-concepts-opens-new-machine-shop-in-newport-news-expanding-manufacturing-capabilities/"
         },
         {
-          "title": "Fulcrum corporate contact and project inquiries",
+          "title": "Fulcrum site-specific contacts and project inquiries",
           "url": "https://fulcrumconceptsllc.com/contact/"
         }
       ],
@@ -8795,7 +8807,7 @@
         "Supporting ecosystem asset"
       ],
       "unmanned_systems_relevance": "Provides documented economic-development coordination, business attraction, funding, site support, or partnership development relevant to Virginia's autonomy ecosystem.",
-      "website_url": "https://hamptonroadsalliance.com/wp-content/uploads/2025/01/Alliance-Board-Deck-September.pdf"
+      "website_url": "https://hamptonroadsalliance.com/"
     },
     {
       "address_line": "5172 West Military Highway",
@@ -9320,7 +9332,7 @@
       "test_runway_length_ft": null,
       "test_source_url": "https://www.chesterfield.gov/m/newsflash/home/detail/3280",
       "unmanned_systems_relevance": "Provides a publicly documented environment for unmanned-system testing, training, demonstration, validation, or operational integration.",
-      "website_url": "https://www.chesterfield.gov/m/newsflash/home/detail/3280"
+      "website_url": ""
     },
     {
       "activity_last_verified_at": "2026-09-04",
@@ -9724,7 +9736,7 @@
         "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "Documented Virginia unmanned-maritime production investment; current campus workshare, equipment, and external access require HII confirmation.",
-      "website_url": "https://www.hii.com/news/unmanned-systems-center-of-excellence"
+      "website_url": ""
     },
     {
       "address_line": "7916 Williamson Rd NW",
@@ -9940,7 +9952,7 @@
         "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
-      "website_url": "https://www.vedp.org/news/home-business-more-400-years"
+      "website_url": "https://www.hush.aero/what-we-do"
     },
     {
       "activity_last_verified_at": "2026-09-04",
@@ -10086,6 +10098,10 @@
         {
           "title": "ICI Services public contact information",
           "url": "https://icisrvcs.com/contact-us/"
+        },
+        {
+          "title": "ICI Services official website",
+          "url": "https://icisrvcs.com/"
         }
       ],
       "state": "VA",
@@ -10095,7 +10111,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides maritime engineering, shipbuilding, integration, or robotic-system capacity.",
-      "website_url": "https://icisrvcs.com/news/2020/2/5/236/ici-services-to-support-navy-unmanned-surface-vehicle-development/index.html"
+      "website_url": "https://icisrvcs.com/"
     },
     {
       "activity_last_verified_at": "2026-09-04",
@@ -10472,7 +10488,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.jamescitycountyva.gov/m/newsflash/Home/Detail/6334"
+      "website_url": ""
     },
     {
       "address_line": "800 South Main Street",
@@ -10953,7 +10969,7 @@
         "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "The site produces propulsion for Stinger, whose official Army mission includes defense against unmanned aircraft systems. It is classified as supporting counter-UAS manufacturing because the Virginia site makes rocket motors rather than complete drone-detection or interception systems.",
-      "website_url": "https://www.l3harris.com/newsroom/editorial/2024/05/orange-county-expansion-helps-aerojet-rocketdyne-boost-solid-rocket"
+      "website_url": ""
     },
     {
       "address_line": "355 Kentucky Springs Road",
@@ -11010,7 +11026,7 @@
         "Supporting ecosystem asset"
       ],
       "unmanned_systems_relevance": "Lake Anna is included as public aviation infrastructure serving Bumpass. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
-      "website_url": "https://doav.virginia.gov/airport-directory/"
+      "website_url": ""
     },
     {
       "address_line": "11632 Highway 15",
@@ -11067,7 +11083,7 @@
         "Supporting ecosystem asset"
       ],
       "unmanned_systems_relevance": "Lake Country Rgnl is included as public aviation infrastructure serving Clarksville. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
-      "website_url": "https://doav.virginia.gov/airport-directory/"
+      "website_url": ""
     },
     {
       "address_line": "230 East Flight Line Road",
@@ -12078,7 +12094,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides a publicly documented environment for unmanned-system testing, training, demonstration, validation, or operational integration.",
-      "website_url": "https://www.sbir.gov/portfolio/1664155"
+      "website_url": ""
     },
     {
       "address_line": "201 High St",
@@ -12118,6 +12134,10 @@
         {
           "title": "Longwood University campus location (NCES IPEDS 2024)",
           "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+        },
+        {
+          "title": "SEED Innovation Hub autonomous aquatic drone project",
+          "url": "https://www.seedva.org/startedatseed"
         }
       ],
       "state": "VA",
@@ -12127,7 +12147,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides documented marine robotics, autonomy, sensing, navigation, or field-test capacity for surface and undersea systems.",
-      "website_url": "https://www.longwood.edu/news/2026/seed-entrepreneurship-experience/"
+      "website_url": "https://www.seedva.org/startedatseed"
     },
     {
       "address_line": "201 High St",
@@ -12238,7 +12258,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://sheriff.loudoun.gov/m/newsflash/home/detail/9418"
+      "website_url": ""
     },
     {
       "address_line": "335 Industrial Drive",
@@ -12934,7 +12954,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides documented federal counter-UAS training, capability development, experimentation, or operational integration.",
-      "website_url": "https://www.tecom.marines.mil/In-the-News/Stories/News-Article-Display/Article/4538355/tecom-establishes-marine-corps-robotics-integration-group-and-counter-drone-team/"
+      "website_url": ""
     },
     {
       "address_line": "2084 South Street",
@@ -13007,7 +13027,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides publicly documented federal research, experimentation, engineering, or test capacity for autonomous and uncrewed systems.",
-      "website_url": "https://www.marines.mil/News/News-Display/Article/746745/marine-corps-warfighting-lab-tests-autonomous-reconnaissance/"
+      "website_url": "https://www.mcwl.marines.mil/Welcome-to-MCWL/About-Us/"
     },
     {
       "activity_last_verified_at": "2026-08-24",
@@ -13334,7 +13354,7 @@
         "Supporting ecosystem asset"
       ],
       "unmanned_systems_relevance": "Mc Laughlin is included as public aviation infrastructure serving Chester. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
-      "website_url": "https://doav.virginia.gov/airport-directory/"
+      "website_url": ""
     },
     {
       "activity_last_verified_at": "2026-09-04",
@@ -13807,7 +13827,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides a direct regional pathway for unmanned-system companies and researchers to engage Navy users, demonstrations, accelerators, and transition opportunities. The marker identifies its documented downtown Norfolk collaboration site.",
-      "website_url": "https://www.navsea.navy.mil/Media/News/Article-View/Article/2555171/tech-bridges-101-network-built-to-accelerate-solutions-to-the-warfighter/"
+      "website_url": ""
     },
     {
       "address_line": "1000 Airport Road",
@@ -13846,10 +13866,6 @@
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27FYJ%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html"
         },
         {
-          "title": "Middle Peninsula Regional Airport: Town of West Point airport page",
-          "url": "https://www.west-point.va.us/community/visitors/airport.php"
-        },
-        {
           "title": "FAA Airports Feature Service",
           "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
         },
@@ -13860,6 +13876,10 @@
         {
           "title": "Virginia Airport Sponsor and Manager Directory",
           "url": "https://doav.virginia.gov/airport_sponsors/"
+        },
+        {
+          "title": "Middle Peninsula Regional Airport: Town of West Point airport page",
+          "url": "https://www.west-point.va.us/community/visitors/airport.php"
         }
       ],
       "state": "VA",
@@ -15520,7 +15540,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides documented federal training, qualification, logistics, or sustainment capacity for uncrewed-aircraft operators and systems.",
-      "website_url": "https://www.navair.navy.mil/news/Navy-opens-doors-first-small-unmanned-aircraft-systems-training-facility/Tue-08022022-0923"
+      "website_url": ""
     },
     {
       "address_line": "Baldwin Building, 191 Fayette Street",
@@ -15688,7 +15708,7 @@
         "Supporting ecosystem asset"
       ],
       "unmanned_systems_relevance": "New London is included as public aviation infrastructure serving Forest. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
-      "website_url": "https://doav.virginia.gov/airport-directory/"
+      "website_url": ""
     },
     {
       "address_line": "59 River Road",
@@ -15745,7 +15765,7 @@
         "Supporting ecosystem asset"
       ],
       "unmanned_systems_relevance": "New Market is included as public aviation infrastructure serving New Market. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
-      "website_url": "https://doav.virginia.gov/airport-directory/"
+      "website_url": ""
     },
     {
       "address_line": "5251 College Drive",
@@ -16599,6 +16619,10 @@
         {
           "title": "Norfolk State Drone Photography Course public contact information",
           "url": "https://www.nsu.edu/About/Contact-Us"
+        },
+        {
+          "title": "Norfolk State drone-photography course catalog",
+          "url": "https://catalog.nsu.edu/undergraduate/liberal-arts/visual-performing-arts/"
         }
       ],
       "state": "VA",
@@ -16607,7 +16631,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
-      "website_url": "https://catalog.nsu.edu/undergraduate/course-descriptions/fia/fia.pdf"
+      "website_url": "https://catalog.nsu.edu/undergraduate/liberal-arts/visual-performing-arts/"
     },
     {
       "address_line": "700 Park Avenue",
@@ -16658,7 +16682,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
-      "website_url": "https://www.nsu.edu/News/2023/February/CSET-Good-News-Report-Jan-2023"
+      "website_url": ""
     },
     {
       "address_line": "700 Park Avenue",
@@ -16930,7 +16954,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides publicly documented federal research, experimentation, engineering, or test capacity for autonomous and uncrewed systems.",
-      "website_url": "https://www.navsea.navy.mil/Media/News/Article-View/Article/3886620/maximizing-resources-building-a-competitive-outdoor-autonomy-lab-environment/"
+      "website_url": ""
     },
     {
       "address_line": "Runway 16/34, Naval Support Facility Dahlgren",
@@ -17099,7 +17123,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://occoquanva.gov/wp-content/uploads/2026/01/TC-Agenda-Packet-FULL-1-6-2026.pdf"
+      "website_url": ""
     },
     {
       "address_line": "5115 Hampton Boulevard",
@@ -18261,7 +18285,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      "website_url": ""
     },
     {
       "address_line": "2000 Seaboard Avenue",
@@ -18412,7 +18436,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.co.prince-edward.va.us/News-Article/Pyle-Named-County-Emergency-Management-Coordinator"
+      "website_url": ""
     },
     {
       "address_line": "8900 Freedom Center Boulevard",
@@ -18464,7 +18488,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.pwcva.gov/news/pwcpd-spotlight-departments-suas-team-serving-sky/"
+      "website_url": ""
     },
     {
       "activity_last_verified_at": "2026-09-07",
@@ -18797,7 +18821,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      "website_url": ""
     },
     {
       "address_line": "801 East Main St.",
@@ -19050,7 +19074,7 @@
         "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
-      "website_url": "https://www.prnewswire.com/news-releases/rapidflight-celebrates-grand-opening-of-uas-3d-manufacturing-headquarters-in-manassas-virginia-301884344.html"
+      "website_url": ""
     },
     {
       "address_line": "12745 College Drive",
@@ -19588,7 +19612,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://rva.gov/sites/default/files/2024-02/GO%2006-32%20Unmanned%20Aerial%20Vehicle.pdf"
+      "website_url": ""
     },
     {
       "capabilities": [
@@ -19852,6 +19876,65 @@
       ],
       "unmanned_systems_relevance": "Roanoke/Blacksburg Rgnl (Woodrum Fld) is included as public aviation infrastructure serving Roanoke. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://flyroa.com/"
+    },
+    {
+      "activity_last_verified_at": "2026-09-24",
+      "activity_source_url": "https://www.robinradar.com/news-events/robin-opens-new-larger-u.s.-operations-center-as-global-c-uas-demand-accelerates",
+      "activity_status": "active",
+      "address_line": "504 Shaw Road, Suite 201",
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Safety, policy, regulatory, and airspace integration"
+      ],
+      "city": "Sterling",
+      "contact_email": "info@robinradar.com",
+      "contact_phone": "+1 703 994 5888",
+      "contact_text": "Published U.S. office contact; mapped address is not a radar operating site.",
+      "contact_url": "https://www.robinradar.com/locations",
+      "current_activity": "U.S. operations and customer support for drone-detection radar from a Sterling office.",
+      "latitude": 38.98868,
+      "location_precision": "site",
+      "longitude": -77.427265,
+      "missions": [
+        "Counter-UAS",
+        "Force protection and installation security"
+      ],
+      "name": "Robin Radar USA Sterling Operations Center",
+      "overview": "Robin Radar Systems opened a larger Northern Virginia U.S. operations center in August 2026. The company publishes its Sterling contact address and offers radar systems for detecting and tracking drones. The mapped point is an address-range approximation of the office, not a radar installation or operating area.",
+      "platform_domains": [
+        "Counter-UAS",
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "20166",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Northern Virginia",
+      "short_description": "Sterling U.S. operations center for a developer of drone-detection radar systems.",
+      "sources": [
+        {
+          "title": "Robin Radar U.S. office and counter-UAS expansion",
+          "url": "https://www.robinradar.com/news-events/robin-opens-new-larger-u.s.-operations-center-as-global-c-uas-demand-accelerates"
+        },
+        {
+          "title": "Robin Radar U.S. office address",
+          "url": "https://www.robinradar.com/locations"
+        },
+        {
+          "title": "Robin Radar drone detection systems",
+          "url": "https://www.robinradar.com/drone-detection-radar-system"
+        },
+        {
+          "title": "U.S. Census address-range geocode",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=504%20Shaw%20Road%20Suite%20201%2C%20Sterling%2C%20VA%2020166&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Robin Radar develops drone-detection radar for counter-UAS and airspace awareness; its U.S. operations center is in Sterling.",
+      "website_url": "https://www.robinradar.com/locations"
     },
     {
       "activity_last_verified_at": "2026-08-24",
@@ -20478,7 +20561,7 @@
         "Supporting ecosystem asset"
       ],
       "unmanned_systems_relevance": "Smith Mountain Lake is included as public aviation infrastructure serving Moneta. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
-      "website_url": "https://doav.virginia.gov/airport-directory/"
+      "website_url": ""
     },
     {
       "capabilities": [
@@ -20529,7 +20612,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      "website_url": ""
     },
     {
       "capabilities": [
@@ -20580,7 +20663,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      "website_url": ""
     },
     {
       "activity_last_verified_at": "2026-09-16",
@@ -20642,7 +20725,7 @@
         "Supporting ecosystem asset"
       ],
       "unmanned_systems_relevance": "SVHEC documents robotics programming, maintenance and automated-systems instruction and reports continuing workforce activity in 2026. This supports the robotics workforce rather than a claimed dedicated unmanned-vehicle program.",
-      "website_url": "https://www.svhec.org/news/svhec-drives-22-million-economic-impact-in-southern-virginia/"
+      "website_url": ""
     },
     {
       "address_line": "1 University Hill Drive",
@@ -20837,7 +20920,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
-      "website_url": "https://www.swcenter.edu/wp-content/uploads/2025/07/2024Dec12_Minutes_FINAL.pdf"
+      "website_url": ""
     },
     {
       "address_line": "9119 Dean Ridings Lane",
@@ -21513,6 +21596,61 @@
       "website_url": "https://www.sbc.edu/"
     },
     {
+      "activity_last_verified_at": "2026-09-24",
+      "activity_source_url": "https://spa.com/who-we-serve/homeland-security/",
+      "activity_status": "active",
+      "address_line": "2001 N. Beauregard St.",
+      "capabilities": [
+        "Testing, evaluation, verification, and validation",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "city": "Alexandria",
+      "contact_email": "",
+      "contact_phone": "703-931-3500",
+      "contact_text": "Alexandria corporate headquarters; not a counter-UAS operating area.",
+      "contact_url": "https://spa.com/about-us/locations/",
+      "current_activity": "Publishes counter-UAS testing and evaluation services from a Virginia-headquartered defense analysis business.",
+      "latitude": null,
+      "location_precision": "site",
+      "longitude": null,
+      "missions": [
+        "Counter-UAS",
+        "Force protection and installation security"
+      ],
+      "name": "Systems Planning & Analysis",
+      "overview": "Systems Planning & Analysis (SPA) publishes an Alexandria headquarters address and describes real-world testing and analysis of counter-UAS technologies. The address is a corporate contact location, not evidence that a specific counter-UAS flight test occurs there. A reliable public geocode was not obtained, so the record has no mapped point.",
+      "platform_domains": [
+        "Counter-UAS",
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "22311",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Northern Virginia",
+      "short_description": "Alexandria-headquartered defense analysis firm with published counter-UAS testing and evaluation services.",
+      "sources": [
+        {
+          "title": "SPA official website",
+          "url": "https://spa.com/"
+        },
+        {
+          "title": "SPA counter-UAS test and analysis services",
+          "url": "https://spa.com/who-we-serve/homeland-security/"
+        },
+        {
+          "title": "SPA Alexandria headquarters address",
+          "url": "https://spa.com/about-us/locations/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "SPA provides counter-UAS test, evaluation, analysis, and threat-emulation services.",
+      "website_url": "https://spa.com/"
+    },
+    {
       "address_line": "16320 West Ridge Road",
       "capabilities": [
         "Operations, maintenance, and sustainment"
@@ -21567,7 +21705,7 @@
         "Supporting ecosystem asset"
       ],
       "unmanned_systems_relevance": "Tangier Island is included as public aviation infrastructure serving Tangier. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
-      "website_url": "https://doav.virginia.gov/airport-directory/"
+      "website_url": ""
     },
     {
       "address_line": "1450 Aviation Road",
@@ -21765,7 +21903,7 @@
       "test_runway_length_ft": null,
       "test_source_url": "https://www.textronsystems.com/our-company/news-events/articles/inside-ts/aerosonde-uas-center-excellence",
       "unmanned_systems_relevance": "Provides documented Virginia manufacturing, integration, testing, training, operations, and sustainment capacity for Aerosonde uncrewed aircraft systems.",
-      "website_url": "https://www.textronsystems.com/our-company/news-events/articles/inside-ts/aerosonde-uas-center-excellence"
+      "website_url": ""
     },
     {
       "address_line": "600 Massie Road",
@@ -22276,7 +22414,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      "website_url": ""
     },
     {
       "capabilities": [
@@ -22327,7 +22465,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      "website_url": ""
     },
     {
       "capabilities": [
@@ -22378,7 +22516,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      "website_url": ""
     },
     {
       "capabilities": [
@@ -22429,7 +22567,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      "website_url": ""
     },
     {
       "capabilities": [
@@ -22480,7 +22618,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.vaco.org/wp-content/uploads/2025/12/DCJS-Meeting-UAB-Chart.pdf"
+      "website_url": ""
     },
     {
       "address_line": "6775 Beck-Chappell Drive",
@@ -22719,6 +22857,10 @@
         {
           "title": "Census public address-range match",
           "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=14120+Sullyfield+Circle%2C+Chantilly%2C+VA+20151&benchmark=Public_AR_Current&format=json"
+        },
+        {
+          "title": "TurbineOne official website",
+          "url": "https://www.turbineone.com/"
         }
       ],
       "state": "VA",
@@ -22729,7 +22871,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Develops edge AI with documented UAS and autonomous-mission applications; the Virginia headquarters and lab remain an announced project until opening is confirmed.",
-      "website_url": "https://www.turbineone.com/company/newsroom"
+      "website_url": "https://www.turbineone.com/"
     },
     {
       "address_line": "504 Hangar Road",
@@ -23364,7 +23506,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides documented marine robotics, autonomy, sensing, navigation, or field-test capacity for surface and undersea systems.",
-      "website_url": "https://abcrc.virginia.edu/files/abcrc/files/coastal_research_center___drone_pilot_compliance_checklist.pdf"
+      "website_url": ""
     },
     {
       "address_line": "Olsson Hall, 151 Engineer's Way",
@@ -23611,7 +23753,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Builds a documented education or experiential-learning pathway in autonomous vehicles, robotics, uncrewed aircraft, sensing, integration, or prototyping.",
-      "website_url": "https://www.uvawise.edu/news/2025/10/empowering-next-generation-innovators-through-streamwise"
+      "website_url": ""
     },
     {
       "activity_last_verified_at": "2026-08-24",
@@ -23867,6 +24009,10 @@
         {
           "title": "Virginia Commonwealth University campus location (NCES IPEDS 2024)",
           "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+        },
+        {
+          "title": "VCU robotics and autonomous systems degree requirements",
+          "url": "https://bulletin.vcu.edu/undergraduate/engineering/robotics-auto-systems-eng-bs/"
         }
       ],
       "state": "VA",
@@ -23875,7 +24021,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
-      "website_url": "https://news.vcu.edu/article/vcu-to-offer-new-undergraduate-degree-in-robotics-and-autonomous-systems-engineering"
+      "website_url": "https://bulletin.vcu.edu/undergraduate/engineering/robotics-auto-systems-eng-bs/"
     },
     {
       "address_line": "910 W Franklin St",
@@ -24146,6 +24292,61 @@
       "website_url": "https://www.vims.edu/bayinfo/habs/tech/"
     },
     {
+      "activity_last_verified_at": "2026-09-24",
+      "activity_source_url": "https://www.textronsystems.com/our-company/news-events/articles/press-release/textron-systems-aerosonde-uas-completes-first-uas",
+      "activity_status": "active",
+      "address_line": "",
+      "capabilities": [
+        "Safety, policy, regulatory, and airspace integration",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Richmond",
+      "contact_email": "scott.denny@doav.virginia.gov",
+      "contact_phone": "804-236-3638",
+      "contact_text": "Virginia Department of Aviation advanced-air-mobility program contact.",
+      "contact_url": "https://doav.virginia.gov/advanced_air_mobility/",
+      "current_activity": "Smart Airspace demonstration and vertiport-node development; current flight permissions must be confirmed with operators and the FAA.",
+      "latitude": null,
+      "location_precision": "regional",
+      "longitude": null,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Virginia AAM Smart Airspace Program",
+      "overview": "The Virginia Department of Aviation identifies Smart Airspace as a statewide advanced-air-mobility initiative with vertiport nodes at Roanoke, Virginia Tech Transportation Institute, and Blackstone. Textron reported a September 2026 uncrewed-aircraft demonstration between the Virginia Tech and Blackstone nodes. The program is represented without a single point because its infrastructure spans multiple sites; the agency is headquartered in Richmond. Published diagrams do not establish that every route or vertiport is available for public operations.",
+      "platform_domains": [
+        "Advanced Air Mobility",
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "",
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Greater Richmond",
+      "short_description": "Statewide advanced-air-mobility program connecting vertiport nodes at Roanoke, Virginia Tech, and Blackstone.",
+      "sources": [
+        {
+          "title": "Virginia Department of Aviation advanced-air-mobility program",
+          "url": "https://doav.virginia.gov/advanced_air_mobility/"
+        },
+        {
+          "title": "Virginia Smart Airspace program node diagram",
+          "url": "https://doav.virginia.gov/wp-content/uploads/Files/DocumentLibrary/AAM_Smart_Airspace_Program.pdf"
+        },
+        {
+          "title": "Textron Smart Airspace demonstration between Virginia Tech and Blackstone",
+          "url": "https://www.textronsystems.com/our-company/news-events/articles/press-release/textron-systems-aerosonde-uas-completes-first-uas"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Test and operational environments",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "The program develops airspace integration and infrastructure for advanced-air-mobility and uncrewed flights.",
+      "website_url": ""
+    },
+    {
       "address_line": "313 East Broad Street",
       "capabilities": [
         "Safety, policy, regulatory, and airspace integration",
@@ -24199,7 +24400,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Supports documented planning, infrastructure integration, information exchange, or operational enablement for advanced air mobility and uncrewed aviation.",
-      "website_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
+      "website_url": ""
     },
     {
       "activity_last_verified_at": "2026-08-21",
@@ -24375,7 +24576,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides a documented military operating environment for multi-domain unmanned-system training and testing. It is not a public test range, and the catalog intentionally uses no single point for the large offshore complex.",
-      "website_url": "https://www.nepa.navy.mil/Portals/20/Documents/AFTT%20EIS%204%20Draft/04%20AFTT%20DEIS%20Chapter%202%20Description%20of%20Proposed%20Action%20and%20Alternatives.pdf"
+      "website_url": ""
     },
     {
       "address_line": "910 W Franklin St",
@@ -24590,7 +24791,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://dwr.virginia.gov/wp-content/uploads/media/Virginia-Conservation-Police-Annual-Report-2024.pdf"
+      "website_url": ""
     },
     {
       "activity_last_verified_at": "2026-08-21",
@@ -24752,7 +24953,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Coordinates, funds, regulates, or accelerates Virginia's unmanned-systems ecosystem.",
-      "website_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
+      "website_url": "https://www.vdot.virginia.gov/doing-business/technical-guidance-and-support/location-and-design/geospatial-program/"
     },
     {
       "activity_last_verified_at": "2026-08-21",
@@ -25171,6 +25372,10 @@
         {
           "title": "VIPC press kit and organizational information",
           "url": "https://vipc.org/press/press-kit/"
+        },
+        {
+          "title": "Virginia Innovation Partnership Corporation official site",
+          "url": "https://vipc.org/"
         }
       ],
       "state": "VA",
@@ -25180,7 +25385,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Coordinates, funds, regulates, or accelerates Virginia's unmanned-systems ecosystem.",
-      "website_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
+      "website_url": "https://vipc.org/"
     },
     {
       "address_line": "4111 Monarch Way",
@@ -25683,6 +25888,10 @@
         {
           "title": "VIPC press kit identifying the Public Safety Innovation Center",
           "url": "https://vipc.org/press/press-kit/"
+        },
+        {
+          "title": "VIPC Public Safety Innovation Center",
+          "url": "https://vipc.org/initiatives/public-safety-innovation-center/"
         }
       ],
       "state": "VA",
@@ -25692,7 +25901,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Coordinates, funds, regulates, or accelerates Virginia's unmanned-systems ecosystem.",
-      "website_url": "https://vipc.org/initiatives/virginia-unmanned-systems-center/"
+      "website_url": "https://vipc.org/initiatives/public-safety-innovation-center/"
     },
     {
       "address_line": "2143 Richmond Highway",
@@ -26061,7 +26270,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates a documented institutional UAS program supporting research, instruction, and compliant flight operations.",
-      "website_url": "https://www.vsu.edu/files/docs/policies/8000/use-unmanned-aerial-systems-drones.pdf"
+      "website_url": ""
     },
     {
       "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
@@ -26361,6 +26570,10 @@
         {
           "title": "Virginia Tech campus location (NCES IPEDS 2024)",
           "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+        },
+        {
+          "title": "Virginia Tech Counter-UAS Testing and Research Center",
+          "url": "https://nationalsecurity.vt.edu/research/sdd.html"
         }
       ],
       "state": "VA",
@@ -26370,7 +26583,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides documented counter-UAS research, testing, and evaluation capabilities.",
-      "website_url": "https://news.vt.edu/articles/2025/04/research-counteruascenter.html"
+      "website_url": "https://nationalsecurity.vt.edu/research/sdd.html"
     },
     {
       "activity_last_verified_at": "2026-09-07",
@@ -26488,7 +26701,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Conducts documented drone-based sensing, imaging, analysis, or field research for agriculture, natural resources, or environmental monitoring.",
-      "website_url": "https://www.arec.vaes.vt.edu/content/dam/arec_vaes_vt_edu/eastern-shore/newsletter/The%20Stalk%20-%20July%202024.pdf"
+      "website_url": ""
     },
     {
       "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
@@ -26918,6 +27131,61 @@
       ],
       "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
       "website_url": "https://usl.me.vt.edu/projects.html"
+    },
+    {
+      "activity_last_verified_at": "2026-09-24",
+      "activity_source_url": "https://www.textronsystems.com/our-company/news-events/articles/press-release/textron-systems-aerosonde-uas-completes-first-uas",
+      "activity_status": "active",
+      "address_line": "",
+      "capabilities": [
+        "Safety, policy, regulatory, and airspace integration",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Blacksburg",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Virginia Tech Transportation Institute public contact; vertiport access is not implied.",
+      "contact_url": "https://www.vtti.vt.edu/",
+      "current_activity": "VTTI vertiport used for a publicly reported unmanned-aircraft Smart Airspace demonstration in September 2026.",
+      "latitude": null,
+      "location_precision": "regional",
+      "longitude": null,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Virginia Tech VTTI Smart Airspace Vertiport",
+      "overview": "The Virginia Department of Aviation identifies an off-airport VTTI vertiport in the Smart Airspace program. Textron Systems reports that an Aerosonde UAS flew from the VTTI vertiport to Blackstone in September 2026. The public sources reviewed do not specify a precise vertiport point or public access terms, so this facility has no mapped coordinates. It is distinct from the broader VTTI campus and Smart Airspace program.",
+      "platform_domains": [
+        "Advanced Air Mobility",
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "New River Valley",
+      "short_description": "Virginia Tech Transportation Institute vertiport used in Virginia's Smart Airspace demonstration.",
+      "sources": [
+        {
+          "title": "Virginia Smart Airspace program VTTI node",
+          "url": "https://doav.virginia.gov/wp-content/uploads/Files/DocumentLibrary/AAM_Smart_Airspace_Program.pdf"
+        },
+        {
+          "title": "Textron VTTI-to-Blackstone flight demonstration",
+          "url": "https://www.textronsystems.com/our-company/news-events/articles/press-release/textron-systems-aerosonde-uas-completes-first-uas"
+        },
+        {
+          "title": "Virginia Tech Transportation Institute",
+          "url": "https://www.vtti.vt.edu/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Test and operational environments",
+        "Physical infrastructure and logistics",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "Demonstrated vertiport node for unmanned flight and advanced-air-mobility airspace integration.",
+      "website_url": ""
     },
     {
       "address_line": "1601 Tech Center Drive",
@@ -27416,7 +27684,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides documented counter-UAS research, testing, and evaluation capabilities.",
-      "website_url": "https://www.vmi.edu/news/headlines/2025-2026/drone-detection-focus-of-cadet-research.php"
+      "website_url": ""
     },
     {
       "address_line": "New River Valley Plant, I-81 Exit 98",
@@ -28051,7 +28319,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Operates, coordinates, or funds a documented public-sector UAS capability for emergency response, mapping, inspection, conservation, or public safety.",
-      "website_url": "https://www.winchesterva.gov/files/assets/public/v/1/finance/fy23_budget_book.pdf"
+      "website_url": ""
     },
     {
       "address_line": "491 Airport Road",
@@ -28163,7 +28431,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
-      "website_url": "https://wing.com/news/wing-and-doordash-expand-drone-delivery"
+      "website_url": ""
     },
     {
       "activity_last_verified_at": "2026-08-21",
@@ -28401,7 +28669,7 @@
         "Manufacturing facilities"
       ],
       "unmanned_systems_relevance": "Provides an active Virginia production, engineering, and test site within a company developing counter-UAS and autonomous-platform products. The public record describes the 1KC assembly line as intended rather than current volume production.",
-      "website_url": "https://ir.wrap.com/news-events/press-releases/detail/352/wrap-technologies-opens-new-virginia-facility-to-scale"
+      "website_url": ""
     },
     {
       "activity_last_verified_at": "2026-08-21",

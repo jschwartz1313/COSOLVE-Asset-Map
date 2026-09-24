@@ -65,6 +65,29 @@ class CatalogCorrectionTests(TestCase):
         self.assertEqual(self.asset.latitude, Decimal("37.500000"))
         self.assertEqual(self.asset.review_comments.count(), 1)
 
+    def test_website_can_be_cleared_without_deleting_its_evidence(self):
+        old_url = "https://example.org/press-release.pdf"
+        self.asset.website_url = old_url
+        self.asset.save()
+        Source.objects.create(
+            asset=self.asset,
+            title="Public evidence",
+            url=old_url,
+            notes="Catalog provenance: curated-public-source",
+        )
+        correction = {
+            "name": self.asset.name,
+            "provenance": "curated-public-source",
+            "before": {"website_url": old_url},
+            "after": {"website_url": ""},
+            "reason": "Evidence is not the asset website.",
+        }
+        self.apply(items=[correction])
+        self.assertEqual(self.asset.website_url, "")
+        self.assertTrue(self.asset.sources.filter(url=old_url).exists())
+        self.apply(items=[correction])
+        self.assertEqual(self.asset.review_comments.count(), 1)
+
     def test_staff_coordinate_change_preserves_entire_group(self):
         self.asset.longitude = -78
         self.asset.save()

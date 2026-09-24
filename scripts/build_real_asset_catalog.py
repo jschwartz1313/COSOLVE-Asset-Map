@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "virginia_real_assets.json"
 CATALOG_DATE = "2026-08-21"
-BUILD_DATE = "2026-09-07"
+BUILD_DATE = "2026-09-24"
 
 FAA_LAYER = (
     "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
@@ -41,6 +41,8 @@ PRIORITY_PROFILE_ENRICHMENT_PATH = ROOT / "data" / "priority_profile_enrichment.
 SOURCE_ENRICHMENT_PATH = ROOT / "data" / "asset_source_enrichment.json"
 LOCATION_ENRICHMENT_PATH = ROOT / "data" / "asset_location_enrichment.json"
 SEPTEMBER_EXPANSION_PATH = ROOT / "data" / "asset_expansion_2026_09_04.json"
+LATEST_EXPANSION_PATH = ROOT / "data" / "asset_expansion_2026_09_24.json"
+LATEST_WEBSITE_CORRECTIONS_PATH = ROOT / "data" / "asset_website_corrections_2026_09_24.json"
 SEPTEMBER_CORRECTIONS_PATH = ROOT / "data" / "asset_corrections_2026_09_04.json"
 INTERVIEW_FOLLOWUP_PATH = ROOT / "data" / "asset_interview_followup_2026_09_06.json"
 AIRPORT_WEBSITE_CORRECTIONS_PATH = ROOT / "data" / "airport_website_corrections_2026_09_06.json"
@@ -11427,7 +11429,7 @@ def validate(records, relationships):
             raise ValueError(f"Missing asset overview: {record['name']}")
         if not record.get("contact_text") or not record.get("contact_url"):
             raise ValueError(f"Missing public contact route: {record['name']}")
-        if not record.get("website_url") or not any(
+        if record.get("website_url") and not any(
             item["url"] == record["website_url"] for item in record["sources"]
         ):
             raise ValueError(f"Primary website is not source-backed: {record['name']}")
@@ -11539,6 +11541,7 @@ def apply_reviewed_corrections(records, corrections=None):
         corrections += json.loads(
             (ROOT / "data" / "asset_corrections_2026_09_16.json").read_text()
         )["corrections"]
+        corrections += json.loads(LATEST_WEBSITE_CORRECTIONS_PATH.read_text())["corrections"]
     for correction in corrections:
         record = records_by_name[correction["name"]]
         record.update(correction["after"])
@@ -11579,6 +11582,7 @@ def main():
         + VERIFIED_HAMPTON_ROADS_EXPANSION
         + VERIFIED_MANUFACTURING_EXPANSION
         + json.loads(SEPTEMBER_EXPANSION_PATH.read_text())["records"]
+        + json.loads(LATEST_EXPANSION_PATH.read_text())["records"]
     )
     records = [finalize_record(apply_location_override(record)) for record in records]
     records = apply_university_campus_locations(records)
