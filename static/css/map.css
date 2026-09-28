@@ -29,6 +29,7 @@ body.is-resizing-map-panels, body.is-resizing-map-panels * { cursor: col-resize 
 .map-toolbar > * { pointer-events: auto; }
 .map-tools { max-width: calc(100% - 180px); display: flex; flex-wrap: wrap; align-items: flex-start; gap: 7px; pointer-events: none; }
 .map-tools > * { pointer-events: auto; }
+.map-toolbar:has(.map-legend[open]) .map-tools { max-width: calc(100% - 176px); }
 .filter-open { display: none; }
 .map-tool-details { width: auto; min-width: 0; padding: 0; border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--paper); box-shadow: 0 2px 10px rgb(25 33 38 / 10%); }
 .map-tool-details > summary { min-height: 34px; margin: 0; padding: 9px 11px; list-style: none; color: var(--ink); cursor: pointer; font-size: 12px; font-weight: 750; white-space: nowrap; }

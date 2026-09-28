@@ -52,6 +52,22 @@ export function initializeThemeSwitcher(doc = document, win = window) {
   let revealObserver;
   let leaveTimer;
   let activeCoverTheme = "showcase";
+  const backgroundInertStates = new Map();
+
+  function setCoverBackgroundInert(active) {
+    if (active) {
+      for (const element of doc.body.children) {
+        if (element === cover || element.tagName === "SCRIPT") continue;
+        if (!backgroundInertStates.has(element)) {
+          backgroundInertStates.set(element, element.inert);
+        }
+        element.inert = true;
+      }
+    } else {
+      for (const [element, inert] of backgroundInertStates) element.inert = inert;
+      backgroundInertStates.clear();
+    }
+  }
 
   function coverSeenKey(theme) {
     return theme === "showcase-light"
@@ -96,10 +112,11 @@ export function initializeThemeSwitcher(doc = document, win = window) {
     cover.hidden = true;
     cover.classList.remove("is-ready", "is-leaving");
     doc.body.classList.remove("showcase-cover-open");
+    setCoverBackgroundInert(false);
     if (remember) saveValue(win.sessionStorage, coverSeenKey(activeCoverTheme), "true");
   }
 
-  function showCover({ focus = false, theme = "showcase" } = {}) {
+  function showCover({ theme = "showcase" } = {}) {
     if (!cover) return;
     activeCoverTheme = theme;
     win.clearTimeout(leaveTimer);
@@ -110,7 +127,8 @@ export function initializeThemeSwitcher(doc = document, win = window) {
     updateShowcaseProgress();
     prepareRevealItems();
     win.requestAnimationFrame(() => cover.classList.add("is-ready"));
-    if (focus) enterButtons[0]?.focus();
+    enterButtons[0]?.focus({ preventScroll: true });
+    setCoverBackgroundInert(true);
   }
 
   function enterSite() {
@@ -126,7 +144,11 @@ export function initializeThemeSwitcher(doc = document, win = window) {
       }
       doc.body.classList.add("showcase-arrival");
       win.setTimeout(() => doc.body.classList.remove("showcase-arrival"), 900);
-      doc.querySelector("#main-content")?.focus({ preventScroll: true });
+      const main = doc.querySelector("#main-content");
+      if (main) {
+        if (!main.hasAttribute("tabindex")) main.setAttribute("tabindex", "-1");
+        main.focus({ preventScroll: true });
+      }
     }, delay);
   }
 
@@ -142,7 +164,7 @@ export function initializeThemeSwitcher(doc = document, win = window) {
 
     if (SHOWCASE_THEMES.has(theme)) {
       const seen = storageValue(win.sessionStorage, coverSeenKey(theme)) === "true";
-      if (showIntro || !seen) showCover({ focus: showIntro, theme });
+      if (showIntro || !seen) showCover({ theme });
     } else {
       hideCover({ remember: false });
     }
@@ -214,7 +236,12 @@ export function initializeThemeSwitcher(doc = document, win = window) {
     }
     if (event.key !== "Tab") return;
     const focusable = [...cover.querySelectorAll("button, summary, a[href]")]
-      .filter((element) => !element.hasAttribute("disabled"));
+      .filter((element) => {
+        const closedDisclosure = element.closest("details:not([open])");
+        return !element.hasAttribute("disabled") && element.tabIndex >= 0
+          && element.getClientRects().length > 0
+          && (!closedDisclosure || element === closedDisclosure.querySelector("summary"));
+      });
     if (!focusable.length) return;
     const first = focusable[0];
     const last = focusable.at(-1);

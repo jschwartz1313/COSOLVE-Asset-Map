@@ -85,7 +85,7 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
 .directory-row:last-child { border-bottom: 0; }
 .directory-row:hover { background: #f5f8f6; }
 .directory-row-main { min-width: 0; }
-.directory-row-main h3 { margin: 0 0 3px; font-size: 15px; line-height: 1.25; }
+.directory-row-main h3 { margin: 0 0 3px; font-size: 15px; line-height: 1.25; overflow-wrap: anywhere; }
 .directory-row-main h3 a { color: var(--ink); text-decoration-color: transparent; text-underline-offset: 3px; }
 .directory-row-main h3 a:hover { color: var(--brand-dark); text-decoration-color: currentColor; }
 .directory-row-main p { margin: 0; overflow: hidden; color: var(--ink-muted); font-size: 12px; line-height: 1.4; text-overflow: ellipsis; white-space: nowrap; }
@@ -262,6 +262,14 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
 @media (max-width: 1050px) {
   .directory-columns, .directory-row { grid-template-columns: minmax(0, 1fr) 170px 100px; gap: 16px; }
 }
+@media (max-width: 880px) {
+  .directory-columns { display: none; }
+  .directory-row { grid-template-columns: minmax(0, 1fr) auto; gap: 7px 14px; }
+  .directory-row-main { grid-column: 1 / -1; }
+  .directory-row-main p { white-space: normal; }
+  .directory-classification small { max-width: 45vw; }
+  .directory-location { justify-items: end; }
+}
 @media (max-width: 760px) {
   :root { --header-height: 60px; }
   .site-header { padding: 0 14px; }
@@ -276,13 +284,8 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
   .directory-filters form > .search-field, .directory-filters form > .filter-actions { grid-column: 1 / -1; }
   .directory-results { padding: 18px 18px 32px; }
   .directory-heading { align-items: start; }
-  .directory-columns { display: none; }
-  .directory-row { grid-template-columns: minmax(0, 1fr) auto; gap: 7px 14px; padding: 11px 0; }
-  .directory-row-main { grid-column: 1 / -1; }
-  .directory-row-main p { white-space: normal; }
+  .directory-row { padding: 11px 0; }
   .directory-classification { display: flex; align-items: center; }
-  .directory-classification small { max-width: 45vw; }
-  .directory-location { justify-items: end; }
   .detail-page { width: min(100% - 28px, 1180px); }
   .detail-header { grid-template-columns: minmax(0, 1fr); }
   .detail-header h1 { font-size: 34px; }
