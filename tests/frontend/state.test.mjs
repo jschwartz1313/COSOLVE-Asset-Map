@@ -7,6 +7,7 @@ import {
   mapStateFromParams,
   paramsWithMapState,
   serializePolygonAnalysis,
+  serializeRadiusAnalysis,
   serializeRectangleAnalysis,
 } from "../../static/js/map-state.js";
 import { hydrateForm, paramsFromEntries } from "../../static/js/state.js";
@@ -42,6 +43,32 @@ test("resource and test-site filters survive URL and saved-map round trips", () 
 
 test("clear-all state has no query string", () => {
   assert.equal(new URLSearchParams().toString(), "");
+});
+
+test("directory paging, sorting, tracking parameters and empty values are not map filters", () => {
+  assert.equal(filterParamsFromMapUrl(new URLSearchParams(
+    "q=airport&sort=type&page=2&utm_source=email&category=&map_zoom=8",
+  )).toString(), "q=airport");
+});
+
+test("blank coordinates do not become zero-valued map centers or polygons", () => {
+  assert.equal(mapStateFromParams(new URLSearchParams(
+    "map_lat=&map_lon=&map_zoom=8",
+  )).hasValidCenter, false);
+  for (const value of ["polygon|,-77;37,-77;38,-78", "rectangle|,-77,38,-76"]) {
+    assert.equal(analysisStateFromParams(new URLSearchParams({ map_analysis: value })), null);
+  }
+});
+
+test("nearby analysis round trips the original center and radius", () => {
+  const serialized = serializeRadiusAnalysis({ lat: 36.91234, lng: -76.30123 }, 25);
+  assert.deepEqual(analysisStateFromParams(new URLSearchParams({ map_analysis: serialized })), {
+    type: "radius", center: { lat: 36.91234, lng: -76.30123 }, radius: 25,
+  });
+  for (const value of ["radius|37,-77,0", "radius|37,-77,101", "radius|,-77,25",
+    "radius|37,-77,NaN", "radius|37,-77,25,5"]) {
+    assert.equal(analysisStateFromParams(new URLSearchParams({ map_analysis: value })), null);
+  }
 });
 
 test("empty form entries produce no active filters", () => {

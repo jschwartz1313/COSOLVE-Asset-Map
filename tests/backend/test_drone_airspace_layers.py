@@ -1,7 +1,10 @@
 import json
 from pathlib import Path
+from unittest.mock import patch
 
 from django.test import SimpleTestCase
+
+from scripts import build_drone_airspace_layers as builder
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = ROOT / "static" / "data"
@@ -12,6 +15,22 @@ def load_layer(filename):
 
 
 class DroneAirspaceLayerTests(SimpleTestCase):
+    def test_blank_faa_facility_names_fall_back_to_base_or_generic_label(self):
+        security = [
+            {"geometry": {"type": "Point", "coordinates": [-77, 37]}, "properties": {
+                "OBJECTID": index, "Facility": facility, "Base": base,
+            }}
+            for index, (facility, base) in enumerate([
+                ("   ", " NS Norfolk 8 "), (" Public facility ", "Base"), (None, "  "),
+            ])
+        ]
+        with (patch.object(builder, "state_geometry"),
+              patch.object(builder, "request_geojson", side_effect=[[], security]),
+              patch.object(builder, "write_layer") as write):
+            builder.build_flight_constraints()
+        names = {feature["properties"]["name"] for feature in write.call_args.kwargs["features"]}
+        self.assertEqual(names, {"NS Norfolk 8", "Public facility", "Protected facility"})
+
     def test_faa_uas_facility_map_has_documented_virginia_cells(self):
         layer = load_layer("virginia-uas-facility-map.geojson")
 

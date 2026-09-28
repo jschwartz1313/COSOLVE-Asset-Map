@@ -12,6 +12,7 @@ from scripts.build_real_asset_catalog import apply_reviewed_corrections
 
 MANIFEST = settings.BASE_DIR / "data" / "airport_website_corrections_2026_09_06.json"
 FOLLOWUP = settings.BASE_DIR / "data" / "airport_website_corrections_2026_09_15.json"
+LATEST = settings.BASE_DIR / "data" / "asset_website_corrections_2026_09_24.json"
 DIRECTORY = "https://doav.virginia.gov/airport-directory/"
 SPONSORS = "https://doav.virginia.gov/airport_sponsors/"
 
@@ -52,9 +53,15 @@ class AirportWebsiteCatalogTests(SimpleTestCase):
                 if urlparse(url).scheme != "https":
                     self.assertEqual(correction["identifier"], "9VG")
                     self.assertIn("HTTP only", correction["reason"])
+        latest = {
+            item["name"]: item["after"]["website_url"]
+            for item in json.loads(LATEST.read_text())["corrections"]
+        }
         for unresolved in manifest["unresolved"]:
             self.assertTrue(unresolved["reason"])
-            self.assertEqual(airports[unresolved["name"]]["website_url"], DIRECTORY)
+            record = airports[unresolved["name"]]
+            self.assertEqual(record["website_url"], latest.get(unresolved["name"], DIRECTORY))
+            self.assertIn(DIRECTORY, {source["url"] for source in record["sources"]})
 
     def test_catalog_regeneration_retains_airport_links_without_duplicate_sources(self):
         records = json.loads((settings.BASE_DIR / "data/virginia_real_assets.json").read_text())[

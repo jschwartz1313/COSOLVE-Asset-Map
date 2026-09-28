@@ -80,9 +80,18 @@ class SeptemberReviewPassTests(SimpleTestCase):
         )
 
     def test_airport_fallbacks_and_faa_coordinates_are_not_replaced_by_sponsor_addresses(self):
+        latest_websites = {
+            item["name"]: item["after"]["website_url"]
+            for item in json.loads((settings.BASE_DIR / "data"
+                                    / "asset_website_corrections_2026_09_24.json").read_text())[
+                "corrections"
+            ]
+        }
         for item in self.audit["airport_website_reviews"]:
             record = self.by_name[item["name"]]
-            self.assertEqual(record["website_url"], "https://doav.virginia.gov/airport-directory/")
+            self.assertEqual(record["website_url"], latest_websites.get(
+                record["name"], "https://doav.virginia.gov/airport-directory/"
+            ))
             self.assertTrue(any("FAA airport record" in s["title"] for s in record["sources"]))
             for correction in self.corrections:
                 if correction["name"] == record["name"]:

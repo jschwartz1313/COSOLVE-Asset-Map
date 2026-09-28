@@ -1,9 +1,9 @@
-const FACETS = ["q", "purpose", "record_type", "region", "category", "domain", "capability", "mission", "activity", "test_specs", "min_runway"];
+export const FILTER_KEYS = ["q", "purpose", "record_type", "region", "category", "domain", "capability", "mission", "activity", "test_specs", "min_runway"];
 
 export function paramsFromEntries(entries) {
   const params = new URLSearchParams();
   const values = [...entries];
-  for (const facet of FACETS) {
+  for (const facet of FILTER_KEYS) {
     for (const [name, value] of values) {
       if (name !== facet) continue;
       if (String(value).trim()) params.append(facet, String(value).trim());

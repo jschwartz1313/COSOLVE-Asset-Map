@@ -1,13 +1,6 @@
+import { FILTER_KEYS } from "./state.js?v=20260928-1";
+
 const MAP_LAYER_STATE_VERSION = "5";
-const MAP_STATE_KEYS = [
-  "map_lat",
-  "map_lon",
-  "map_zoom",
-  "map_layers",
-  "map_layers_v",
-  "map_basemap",
-  "map_analysis",
-];
 export const MAP_LAYER_ORDER = [
   "assets",
   "state",
@@ -25,6 +18,7 @@ export const MAP_LAYER_ORDER = [
 export const MAP_BASEMAPS = ["street", "light", "imagery"];
 
 function validNumber(value, minimum, maximum) {
+  if (value == null || !String(value).trim()) return null;
   const number = Number(value);
   return Number.isFinite(number) && number >= minimum && number <= maximum
     ? number
@@ -32,8 +26,10 @@ function validNumber(value, minimum, maximum) {
 }
 
 export function filterParamsFromMapUrl(params) {
-  const filters = new URLSearchParams(params);
-  for (const key of MAP_STATE_KEYS) filters.delete(key);
+  const filters = new URLSearchParams();
+  for (const [key, value] of params) {
+    if (FILTER_KEYS.includes(key) && value.trim()) filters.append(key, value.trim());
+  }
   return filters;
 }
 
@@ -84,7 +80,15 @@ export function analysisStateFromParams(params) {
   if (separator === -1) return null;
   const type = raw.slice(0, separator);
   const payload = raw.slice(separator + 1);
+  if (type === "radius") {
+    const values = payload.split(",");
+    if (values.length !== 3) return null;
+    const center = coordinatePair(values.slice(0, 2).join(","));
+    const radius = validNumber(values[2], 1, 100);
+    return center && radius !== null ? { type, center, radius } : null;
+  }
   if (type === "rectangle") {
+    if (payload.split(",").some((value) => !value.trim())) return null;
     const values = payload.split(",").map(Number);
     if (
       values.length !== 4 ||
@@ -131,6 +135,10 @@ export function serializePolygonAnalysis(vertices) {
   return `polygon|${vertices
     .map((vertex) => `${Number(vertex.lat).toFixed(5)},${Number(vertex.lng).toFixed(5)}`)
     .join(";")}`;
+}
+
+export function serializeRadiusAnalysis(center, radius) {
+  return `radius|${Number(center.lat).toFixed(5)},${Number(center.lng).toFixed(5)},${radius}`;
 }
 
 export function paramsWithMapState(filters, state) {

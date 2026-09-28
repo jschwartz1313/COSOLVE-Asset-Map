@@ -465,7 +465,8 @@ export function createMap(root) {
     },
     onEachFeature(feature, boundary) {
       const properties = feature.properties;
-      boundary.bindTooltip(`${properties.category}: ${properties.name}`, {
+      const name = properties.name?.trim() || properties.base?.trim() || properties.category;
+      boundary.bindTooltip(`${properties.category}: ${name}`, {
         direction: "top",
         opacity: 0.96,
         sticky: true,
@@ -476,7 +477,7 @@ export function createMap(root) {
       boundary.bindPopup(
         referencePopup({
           status: properties.category,
-          title: properties.name,
+          title: name,
           entries: [
             ["Facility or base", properties.base],
             ["Agency", properties.branch],
@@ -659,6 +660,8 @@ export function createMap(root) {
   }
 
   function draw(features, onSelect, { showLabels = false, fit = true } = {}) {
+    // Fit the view before reattaching clusters so off-screen mobile pins are not discarded.
+    layer.removeFrom(map);
     layer.clearLayers();
     markers.clear();
     const bounds = [];
@@ -690,12 +693,12 @@ export function createMap(root) {
       markers.set(feature.id, marker);
       bounds.push([latitude, longitude]);
     }
-    if (!fit) return;
-    if (bounds.length > 1) {
+    if (fit && bounds.length > 1) {
       map.fitBounds(bounds, { animate: false, padding: [35, 35], maxZoom: 11 });
-    } else if (bounds.length === 1) {
+    } else if (fit && bounds.length === 1) {
       map.setView(bounds[0], 10, { animate: false });
     }
+    if (assetLayerVisible) layer.addTo(map);
   }
 
   function select(id) {
@@ -1125,9 +1128,9 @@ export function createMap(root) {
     ).addTo(map);
   }
 
-  function showNearbyRadius(radiusMiles) {
+  function showNearbyRadius(radiusMiles, center = map.getCenter()) {
     if (nearbyCircle) nearbyCircle.removeFrom(map);
-    nearbyCircle = window.L.circle(map.getCenter(), {
+    nearbyCircle = window.L.circle(center, {
       pane: "analysis-selection",
       color: "#147d78",
       fillColor: "#147d78",

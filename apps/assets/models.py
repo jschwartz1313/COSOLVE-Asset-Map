@@ -676,6 +676,14 @@ class SavedView(models.Model):
                         and -180 <= vertex[1] <= 180
                         for vertex in vertices
                     )
+                elif analysis_type == "radius" and separator:
+                    values = [float(value) for value in payload.split(",")]
+                    valid = (
+                        len(values) == 3
+                        and -90 <= values[0] <= 90
+                        and -180 <= values[1] <= 180
+                        and 1 <= values[2] <= 100
+                    )
                 else:
                     valid = False
             except ValueError:

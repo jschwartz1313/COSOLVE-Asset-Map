@@ -205,11 +205,11 @@
   <aside class="results-panel" id="map-results-panel" aria-label="Filtered assets">
     <section class="results-view asset-results-view" id="asset-results-view">
       <div class="results-heading">
-        <h2 id="asset-results-title" tabindex="-1" aria-live="polite" aria-atomic="true"><strong id="result-count">{{ total_assets }}</strong> assets</h2>
+        <h2 id="asset-results-title" tabindex="-1" aria-live="polite" aria-atomic="true"><strong id="result-count">{{ total_assets }}</strong> <span data-result-count-label>asset{{ total_assets|pluralize }}</span></h2>
         {% if user.is_staff %}<div class="results-actions"><a class="text-link" id="export-link" href="{% url 'imports:export' %}">Export CSV</a></div>{% endif %}
       </div>
       <section class="active-filter-bar" data-active-filter-bar aria-label="Active filters" hidden>
-        <span class="active-filter-summary"><strong data-applied-filter-count>0</strong> active filters</span>
+        <span class="active-filter-summary"><strong data-applied-filter-count>0</strong> <span data-applied-filter-label>active filters</span></span>
         <div class="active-filter-chips" data-active-filter-chips></div>
         <button class="active-filter-clear" type="button" data-clear-active-filters>Clear all</button>
       </section>
@@ -226,6 +226,6 @@
 </main>
 <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
 <script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
-  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260917-1"></script>
+  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260928-1"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}

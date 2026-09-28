@@ -476,3 +476,27 @@ class SavedViewTests(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Invalid saved map analysis")
         self.assertFalse(SavedView.objects.exists())
+
+    def test_saved_map_view_reopens_with_nearby_analysis(self):
+        self.client.force_login(self.owner)
+        query_string = "q=airport&map_analysis=radius%7C37%2C-77%2C25"
+        response = self.client.post(reverse("core:saved-views"), {
+            "name": "Nearby airports", "view_type": SavedView.ViewType.MAP,
+            "query_string": query_string,
+        })
+        self.assertRedirects(response, reverse("core:saved-views"))
+        saved = SavedView.objects.get(owner=self.owner)
+        response = self.client.get(reverse("core:open-saved-view", args=[saved.share_token]))
+        self.assertRedirects(response, f"/map/?{query_string}", fetch_redirect_response=False)
+
+    def test_saved_map_view_rejects_invalid_nearby_analysis(self):
+        self.client.force_login(self.owner)
+        for value in ("radius|37,-77,0", "radius|37,-77,101", "radius|37,-77,nan",
+                      "radius|,-77,25", "radius|37,-77,25,5"):
+            response = self.client.post(reverse("core:saved-views"), {
+                "name": "Invalid nearby", "view_type": SavedView.ViewType.MAP,
+                "query_string": f"map_analysis={value}",
+            })
+            self.assertEqual(response.status_code, 200)
+            self.assertContains(response, "Invalid saved map analysis")
+        self.assertFalse(SavedView.objects.exists())

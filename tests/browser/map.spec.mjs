@@ -1,9 +1,7 @@
 import { expect, test } from "@playwright/test";
 import { readFileSync } from "node:fs";
+import { publicAssetCount } from "./helpers.mjs";
 
-const catalog = JSON.parse(
-  readFileSync(new URL("../../data/virginia_real_assets.json", import.meta.url), "utf8"),
-);
 const heliportCount = JSON.parse(
   readFileSync(new URL("../../static/data/virginia-heliports.geojson", import.meta.url), "utf8"),
 ).metadata.feature_count;
@@ -394,6 +392,7 @@ test("empty filters preserve the complete map result set", async ({ page }) => {
 });
 
 test("clear all removes filters inherited from a filtered URL", async ({ page }) => {
+  const total = await publicAssetCount(page);
   await page.goto("/map/?record_type=university");
   if (await page.locator(".filter-open").isVisible()) {
     await page.locator(".filter-open").click();
@@ -407,7 +406,7 @@ test("clear all removes filters inherited from a filtered URL", async ({ page })
 
   await expect(form.locator('select[name="record_type"]')).toHaveValue("");
   await expect(activeBadge).toBeHidden();
-  await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
+  await expect(page.locator("#result-count")).toHaveText(String(total));
   await expect(page).toHaveURL(/\/map\/$/);
 });
 
@@ -735,8 +734,9 @@ test("Hampton Roads records expose site-level location quality", async ({ page }
 });
 
 test("large map results render in responsive batches", async ({ page }) => {
+  const total = await publicAssetCount(page);
   await page.goto("/map/");
-  await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
+  await expect(page.locator("#result-count")).toHaveText(String(total));
   await expect(page.locator(".result-row")).toHaveCount(50);
   await expect(page.getByRole("button", { name: "Show 50 more" })).toBeVisible();
 });

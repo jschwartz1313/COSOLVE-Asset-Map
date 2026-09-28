@@ -411,7 +411,11 @@ def build_flight_constraints():
         )
     for feature in security:
         properties = feature["properties"]
-        name = properties.get("Facility") or properties.get("Base") or "Protected facility"
+        name = (
+            (properties.get("Facility") or "").strip()
+            or (properties.get("Base") or "").strip()
+            or "Protected facility"
+        )
         features.append(
             {
                 "type": "Feature",

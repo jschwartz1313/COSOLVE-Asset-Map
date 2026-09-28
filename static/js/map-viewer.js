@@ -1,4 +1,4 @@
-import { fetchAssets } from "./api.js?v=20260731";
+import { fetchAssets } from "./api.js?v=20260928-1";
 import {
   bindFilterDrawer,
   bindFilterIndicators,
@@ -11,18 +11,19 @@ import {
   featuresWithinRadius,
   summarizeRegion,
 } from "./map-analysis.js?v=20260906-2";
-import { createMap } from "./map.js?v=20260915-1";
+import { createMap } from "./map.js?v=20260928-1";
 import {
   analysisStateFromParams,
   filterParamsFromMapUrl,
   mapStateFromParams,
   paramsWithMapState,
   serializePolygonAnalysis,
+  serializeRadiusAnalysis,
   serializeRectangleAnalysis,
-} from "./map-state.js?v=20260812-1";
+} from "./map-state.js?v=20260928-1";
 import { bindPanelResizers } from "./panel-resize.js?v=20260821-1";
 import { renderResults, selectResult } from "./results.js?v=20260906-1";
-import { hydrateForm, paramsFromForm, updateUrl } from "./state.js?v=20260906-1";
+import { hydrateForm, paramsFromForm, updateUrl } from "./state.js?v=20260928-1";
 
 const root = document.querySelector("[data-map-app]");
 const form = document.querySelector("#asset-filters");
@@ -126,10 +127,26 @@ let analysisDefinition = null;
 let polygonDrawing = false;
 let loadRequestId = 0;
 let activeMapTool = null;
+let assetDataReady = false;
+let assetRequestController;
+
+function setAssetDataReady(ready) {
+  assetDataReady = ready;
+  root.setAttribute("aria-busy", String(!ready));
+  for (const button of [
+    printViewButton, nearbySearchButton, selectAreaButton, selectPolygonButton,
+    selectExtentButton, showRegionSummaryButton,
+  ]) button.disabled = !ready;
+  updateViewActions();
+}
 
 function showStatus(message) {
   status.textContent = message;
   status.hidden = !message;
+}
+
+function assetCountLabel(value) {
+  return `${value} ${Number(value) === 1 ? "asset" : "assets"}`;
 }
 
 function setPolygonDrawing(active) {
@@ -206,10 +223,11 @@ function updateViewActions() {
       exportLink.removeAttribute("aria-label");
       exportLink.removeAttribute("aria-disabled");
     }
+    if (!assetDataReady) exportLink.setAttribute("aria-disabled", "true");
   }
   if (printMapSummary) {
     const filterState = activeFilterParams.toString() ? "Filtered view" : "Statewide view";
-    printMapSummary.textContent = `${filterState} · ${count.textContent || "0"} assets · ${new Date().toLocaleDateString()}`;
+    printMapSummary.textContent = `${filterState} · ${assetCountLabel(count.textContent || "0")} · ${new Date().toLocaleDateString()}`;
   }
 }
 
@@ -282,6 +300,7 @@ function renderFeatureCollection(
   });
   renderResults(list, features, selectOnMap);
   count.textContent = String(resultCount);
+  document.querySelector("[data-result-count-label]").textContent = resultCount === 1 ? "asset" : "assets";
   updateViewActions();
 }
 
@@ -311,7 +330,7 @@ function applyAnalysisSelection(features, definition = null) {
   renderFeatureCollection(analysisFeatures);
   exportAreaButton.disabled = analysisFeatures.length === 0;
   clearAnalysisButton.hidden = false;
-  analysisStatus.textContent = `${analysisFeatures.length} assets selected`;
+  analysisStatus.textContent = `${assetCountLabel(analysisFeatures.length)} selected`;
 }
 
 function applyAreaSelection(bounds) {
@@ -347,7 +366,20 @@ function restoreAnalysis(state) {
       label: "Saved polygon",
       serialized: serializePolygonAnalysis(state.vertices),
     });
+  } else if (state?.type === "radius") {
+    applyNearbySelection(state.center, state.radius);
   }
+}
+
+function applyNearbySelection(center, radius) {
+  applyAnalysisSelection(featuresWithinRadius(allFeatures, center, radius), {
+    type: "radius",
+    label: `${radius}-mile radius`,
+    serialized: serializeRadiusAnalysis(center, radius),
+  });
+  mapController.showNearbyRadius(radius, center);
+  nearbyRadius.value = String(radius);
+  analysisStatus.textContent = `${assetCountLabel(analysisFeatures.length)} within ${radius} miles`;
 }
 
 function filterDescription(key, value) {
@@ -376,6 +408,8 @@ function renderActiveFilters() {
   const entries = [...activeFilterParams];
   activeFilterBar.hidden = entries.length === 0;
   activeFilterCount.textContent = String(entries.length);
+  document.querySelector("[data-applied-filter-label]").textContent = entries.length === 1
+    ? "active filter" : "active filters";
   toolbarFilterCount.textContent = String(entries.length);
   toolbarFilterCount.hidden = entries.length === 0;
   activeFilterChips.replaceChildren();
@@ -413,7 +447,7 @@ function populatePrintReport() {
   printReportTitle.textContent = analysisActive
     ? `${analysisDefinition?.label || "Selected area"} asset report`
     : "Current map asset report";
-  printReportContext.textContent = `${selectedFilterSummary()} · ${features.length} assets · Generated ${new Date().toLocaleString()}`;
+  printReportContext.textContent = `${selectedFilterSummary()} · ${assetCountLabel(features.length)} · Generated ${new Date().toLocaleString()}`;
   printReportRows.replaceChildren();
   for (const feature of features) {
     const row = document.createElement("tr");
@@ -674,19 +708,7 @@ nearbySearchButton.addEventListener("click", () => {
   clearAnalysis({ render: false });
   const radius = Number(nearbyRadius.value);
   const center = mapController.map.getCenter();
-  const nearbyFeatures = featuresWithinRadius(allFeatures, center, radius);
-  analysisFeatures = nearbyFeatures;
-  analysisActive = true;
-  analysisDefinition = {
-    type: "radius",
-    label: `${radius}-mile radius from map center`,
-    serialized: "",
-  };
-  mapController.showNearbyRadius(radius);
-  renderFeatureCollection(nearbyFeatures);
-  exportAreaButton.disabled = nearbyFeatures.length === 0;
-  clearAnalysisButton.hidden = false;
-  analysisStatus.textContent = `${nearbyFeatures.length} assets within ${radius} miles`;
+  applyNearbySelection(center, radius);
 });
 
 selectAreaButton.addEventListener("click", () => {
@@ -725,6 +747,10 @@ exportAreaButton.addEventListener("click", () => {
   downloadFeatureCsv(analysisFeatures, "cosolve-selected-assets.csv");
 });
 exportLink?.addEventListener("click", (event) => {
+  if (!assetDataReady) {
+    event.preventDefault();
+    return;
+  }
   if (!analysisActive) return;
   event.preventDefault();
   if (!analysisFeatures.length) return;
@@ -737,6 +763,7 @@ showRegionSummaryButton.addEventListener("click", () => {
   renderRegionSummary(option.value, option.textContent);
 });
 mapController.onRegionSelect((properties) => {
+  if (!assetDataReady) return;
   summaryRegion.value = properties.region_slug;
   renderRegionSummary(properties.region_slug, properties.region_name);
 });
@@ -787,14 +814,20 @@ async function load(
   { changeUrl = true, viewState = null, analysisState = null } = {},
 ) {
   const requestId = ++loadRequestId;
+  assetRequestController?.abort();
+  assetRequestController = new AbortController();
   const requestedFilterParams = filterParamsFromMapUrl(params);
   activeFilterParams = requestedFilterParams;
+  setAssetDataReady(false);
+  directoryLink.href = requestedFilterParams.toString()
+    ? `/directory/?${requestedFilterParams}`
+    : "/directory/";
   renderActiveFilters();
   clearAnalysis({ render: false });
   showAssetResults();
   showStatus("Loading public asset listings...");
   try {
-    const data = await fetchAssets(requestedFilterParams);
+    const data = await fetchAssets(requestedFilterParams, { signal: assetRequestController.signal });
     if (requestId !== loadRequestId) return;
     allFeatures = data.features;
     fullResultCount = data.result_count;
@@ -805,9 +838,7 @@ async function load(
     });
     mapController.setViewState(viewState);
     restoreAnalysis(analysisState);
-    directoryLink.href = requestedFilterParams.toString()
-      ? `/directory/?${requestedFilterParams}`
-      : "/directory/";
+    setAssetDataReady(true);
     showStatus(
       data.truncated
         ? `Showing ${data.returned_count} of ${data.result_count} matching assets. Narrow the filters to see every result.`
@@ -819,8 +850,12 @@ async function load(
     }
   } catch (error) {
     if (requestId !== loadRequestId) return;
+    allFeatures = [];
+    fullResultCount = 0;
+    renderFeatureCollection([]);
+    list.querySelector(".empty-state").textContent = "Asset results are temporarily unavailable.";
+    root.setAttribute("aria-busy", "false");
     showStatus("The map data could not be loaded. The directory remains available.");
-    list.replaceChildren();
     console.error(error);
   }
 }

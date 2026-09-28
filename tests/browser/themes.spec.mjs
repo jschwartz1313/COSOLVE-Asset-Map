@@ -1,9 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { readFileSync } from "node:fs";
-
-const catalog = JSON.parse(
-  readFileSync(new URL("../../data/virginia_real_assets.json", import.meta.url), "utf8"),
-);
+import { publicAssetCount } from "./helpers.mjs";
 
 async function selectTheme(page, theme) {
   await page.locator(".appearance-menu > summary").click();
@@ -51,8 +47,9 @@ async function expectUniformResultEdges(page) {
 }
 
 test("four presentation modes preserve the same map data and controls", async ({ page }) => {
+  const total = await publicAssetCount(page);
   await page.goto("/map/");
-  await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
+  await expect(page.locator("#result-count")).toHaveText(String(total));
   await expectContiguousMapPanels(page);
 
   const originalWorkspace = await page.locator(".map-workspace").boundingBox();
@@ -64,7 +61,7 @@ test("four presentation modes preserve the same map data and controls", async ({
     "aria-pressed",
     "true",
   );
-  await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
+  await expect(page.locator("#result-count")).toHaveText(String(total));
   await expectContiguousMapPanels(page);
   expect(await page.locator(".map-workspace").boundingBox()).toEqual(originalWorkspace);
   expect(await page.locator(".filters-panel").boundingBox()).toEqual(originalFilters);
@@ -75,7 +72,7 @@ test("four presentation modes preserve the same map data and controls", async ({
   await expect(page.locator(".showcase-photo")).toHaveCount(3);
   await page.locator("[data-showcase-enter]").first().click();
   await expect(page.locator("[data-showcase-cover]")).toBeHidden();
-  await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
+  await expect(page.locator("#result-count")).toHaveText(String(total));
   await expectContiguousMapPanels(page);
   await expectUniformResultEdges(page);
 
@@ -92,7 +89,7 @@ test("four presentation modes preserve the same map data and controls", async ({
   await expect(page.locator("[data-showcase-cover]")).toBeVisible();
   await page.locator("[data-showcase-enter]").first().click();
   await expect(page.locator("[data-showcase-cover]")).toBeHidden();
-  await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
+  await expect(page.locator("#result-count")).toHaveText(String(total));
   await expectContiguousMapPanels(page);
   await expectUniformResultEdges(page);
 
@@ -105,6 +102,7 @@ test("four presentation modes preserve the same map data and controls", async ({
 });
 
 test("showcase imagery appears on supporting pages", async ({ page }) => {
+  const total = await publicAssetCount(page);
   await page.goto("/directory/");
   await expect(page.locator(".directory-list")).toBeVisible();
 
@@ -112,7 +110,7 @@ test("showcase imagery appears on supporting pages", async ({ page }) => {
   await expect(page.locator("[data-showcase-cover]")).toBeVisible();
   await page.locator("[data-showcase-enter]").first().click();
   await expect(page).toHaveURL(/\/map\/$/);
-  await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
+  await expect(page.locator("#result-count")).toHaveText(String(total));
 });
 
 test("the four-mode switch remains usable on mobile", async ({ page }) => {
@@ -146,6 +144,7 @@ test("the four-mode switch remains usable on mobile", async ({ page }) => {
 });
 
 test("showcase light keeps the cinematic experience in the current light palette", async ({ page }) => {
+  const total = await publicAssetCount(page);
   await page.goto("/map/");
   await selectTheme(page, "showcase-light");
 
@@ -164,10 +163,11 @@ test("showcase light keeps the cinematic experience in the current light palette
     "background-color",
     "rgba(255, 255, 255, 0.97)",
   );
-  await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
+  await expect(page.locator("#result-count")).toHaveText(String(total));
 });
 
 test("showcase entrance scrolls through real Virginia imagery and returns to the map", async ({ page }) => {
+  const total = await publicAssetCount(page);
   await page.goto("/map/");
   await selectTheme(page, "showcase");
   const cover = page.locator("[data-showcase-cover]");
@@ -181,5 +181,5 @@ test("showcase entrance scrolls through real Virginia imagery and returns to the
   await cover.locator(".showcase-final [data-showcase-enter]").click();
 
   await expect(cover).toBeHidden();
-  await expect(page.locator("#result-count")).toHaveText(String(catalog.record_count));
+  await expect(page.locator("#result-count")).toHaveText(String(total));
 });
