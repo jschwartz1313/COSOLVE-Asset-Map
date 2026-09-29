@@ -50,6 +50,7 @@ AIRPORT_WEBSITE_CORRECTIONS_PATH = ROOT / "data" / "airport_website_corrections_
 PROFILE_IMPROVEMENTS_PATH = ROOT / "data" / "profile_improvements_2026_09_06.json"
 CAPABILITY_PROFILES_PATH = ROOT / "data" / "capability_profiles_2026_09_07.json"
 TEST_CAPABILITY_PROFILES_PATH = ROOT / "data" / "capability_profiles_2026_09_29.json"
+AEROSPACE_REPORT_CORRECTIONS_PATH = ROOT / "data" / "aerospace_report_corrections_2026_09_29.json"
 AIRPORT_DISPLAY_NAMES_PATH = ROOT / "data" / "airport_display_names_2026_09_07.json"
 
 IPEDS_NAME_ALIASES = {
@@ -11545,6 +11546,7 @@ def apply_reviewed_corrections(records, corrections=None):
         )["corrections"]
         corrections += json.loads(LATEST_WEBSITE_CORRECTIONS_PATH.read_text())["corrections"]
         corrections += json.loads(TEST_CAPABILITY_PROFILES_PATH.read_text())["corrections"]
+        corrections += json.loads(AEROSPACE_REPORT_CORRECTIONS_PATH.read_text())["corrections"]
     for correction in corrections:
         record = records_by_name[correction["name"]]
         record.update(correction["after"])

@@ -1,0 +1,79 @@
+{
+  "reviewed_at": "2026-09-29",
+  "scope": "Follow up Virginia manufacturing leads from the GLS 2026 aerospace and defense report against official operator sources. Update the existing Orange County campus without duplicating planned buildings, importing rankings, or assuming public testing access. Material new profile details require editorial review.",
+  "corrections": [
+    {
+      "name": "L3Harris Orange County Propulsion Manufacturing Site",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "L3Harris operates a 2,100-acre Orange County propulsion and energetics campus with 256,000 square feet of manufacturing space. The company is expanding the site's casting, assembly, testing, and solid-rocket-motor production capacity.",
+        "current_activity": "L3Harris is expanding active Orange County manufacturing to add dedicated casting, final assembly, testing, and control facilities for Stinger, Javelin, and other solid rocket motor programs.",
+        "activity_source_url": "https://www.l3harris.com/newsroom/editorial/2024/05/orange-county-expansion-helps-aerojet-rocketdyne-boost-solid-rocket",
+        "activity_last_verified_at": "2026-08-30",
+        "website_url": "",
+        "owner_operator": "",
+        "development_status": "",
+        "development_notes": "",
+        "development_source_url": "",
+        "development_last_verified_at": null,
+        "test_aircraft": "",
+        "test_dimensions": "",
+        "test_access": "",
+        "test_source_url": "",
+        "test_last_verified_at": null
+      },
+      "after": {
+        "overview": "L3Harris's Orange County campus researches propellants, manufactures small and medium solid rocket motors, and tests propulsion components. The existing plant has 256,000 square feet of manufacturing space. Its Stinger propulsion work supports counter-UAS supply chains rather than drone production. The operator identifies three propulsion-test facilities on the campus; these are not public drone flight ranges.",
+        "current_activity": "In April 2026, L3Harris announced the Virginia Advanced Propulsion Facilities (VAPF) expansion: more than $1 billion, with manufacturing space expected to more than double and over 350 jobs projected over five years. Planned processes include mixing, grinding, casting, and final assembly. These are announced expansion targets, not confirmed completed capacity.",
+        "activity_source_url": "https://www.l3harris.com/newsroom/press-release/2026/04/l3harris-announces-billion-dollar-expansion-orange-county-virginia",
+        "activity_last_verified_at": "2026-09-29",
+        "website_url": "https://www.l3harris.com/all-capabilities/solid-rocket-motors",
+        "owner_operator": "L3Harris Technologies",
+        "development_status": "operational",
+        "development_notes": "The existing campus is operational; the VAPF expansion is planned. A separate five-building expansion broke ground in May 2025. No completion date or available tenant acreage is confirmed here.",
+        "development_source_url": "https://www.l3harris.com/newsroom/press-release/2026/04/l3harris-announces-billion-dollar-expansion-orange-county-virginia",
+        "development_last_verified_at": "2026-09-29",
+        "test_aircraft": "Propellant and rocket-motor research and component testing; no UAS flight envelope is published.",
+        "test_dimensions": "Published facilities: Orange Static Test Facility (OSTF), Orange Aerothermal Propulsion Lab (OAPL), and Orange Altitude Test Site (OATS). Test limits are not published on the page reviewed.",
+        "test_access": "Proprietary industrial campus. Confirm any proposed project and access with L3Harris; the published logistics contact is not a public range-booking service.",
+        "test_source_url": "https://www.l3harris.com/all-capabilities/solid-rocket-motors",
+        "test_last_verified_at": "2026-09-29"
+      },
+      "accepted_baselines": [
+        {
+          "overview": "L3Harris operates a 2,100-acre Orange County propulsion and energetics campus with 256,000 square feet of manufacturing space. The company is expanding the site's casting, assembly, testing, and solid-rocket-motor production capacity.",
+          "current_activity": "L3Harris is expanding active Orange County manufacturing to add dedicated casting, final assembly, testing, and control facilities for Stinger, Javelin, and other solid rocket motor programs.",
+          "activity_source_url": "https://www.l3harris.com/newsroom/editorial/2024/05/orange-county-expansion-helps-aerojet-rocketdyne-boost-solid-rocket",
+          "activity_last_verified_at": "2026-08-30",
+          "website_url": "https://www.l3harris.com/newsroom/editorial/2024/05/orange-county-expansion-helps-aerojet-rocketdyne-boost-solid-rocket",
+          "owner_operator": "",
+          "development_status": "",
+          "development_notes": "",
+          "development_source_url": "",
+          "development_last_verified_at": null,
+          "test_aircraft": "",
+          "test_dimensions": "",
+          "test_access": "",
+          "test_source_url": "",
+          "test_last_verified_at": null
+        }
+      ],
+      "add_sources": [
+        {
+          "title": "L3Harris operator page: Orange County propulsion and test facilities",
+          "url": "https://www.l3harris.com/all-capabilities/solid-rocket-motors"
+        },
+        {
+          "title": "L3Harris April 2026 Orange County expansion announcement",
+          "url": "https://www.l3harris.com/newsroom/press-release/2026/04/l3harris-announces-billion-dollar-expansion-orange-county-virginia"
+        },
+        {
+          "title": "L3Harris May 2025 groundbreaking for five Virginia propulsion buildings",
+          "url": "https://www.l3harris.com/newsroom/press-release/2025/05/l3harris-marks-major-milestone-new-solid-rocket-motor-factories"
+        }
+      ],
+      "review_required": true,
+      "reason": "Add operator-supported propulsion-test capabilities and the 2026 VAPF expansion, distinguishing current operations from planned capacity. Keep the existing campus point and supporting counter-UAS classification; new details await editorial review."
+    }
+  ]
+}

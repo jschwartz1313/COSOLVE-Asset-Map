@@ -48,6 +48,11 @@ ALLOWED_FIELDS = {
     "current_activity",
     "partnership_opportunities",
     "activity_last_verified_at",
+    "owner_operator",
+    "development_status",
+    "development_notes",
+    "development_source_url",
+    "development_last_verified_at",
 }
 
 
