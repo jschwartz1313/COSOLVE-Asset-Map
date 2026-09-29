@@ -437,6 +437,11 @@ class RealCatalogFileTests(TestCase):
                 (settings.BASE_DIR / "data/asset_expansion_2026_09_24.json").read_text()
             )["records"]
         )
+        source_backed_additions.update(
+            record["name"] for record in json.loads(
+                (settings.BASE_DIR / "data/asset_expansion_2026_09_29.json").read_text()
+            )["records"]
+        )
         reviewed_or_flagged = (
             historical_names | expansion_names | hampton_roads_names
             | manufacturing_names | september_names
@@ -730,10 +735,17 @@ class RealCatalogFileTests(TestCase):
             if name == "HII Unmanned Systems Center of Excellence":
                 self.assertEqual(record["activity_status"], "")
                 self.assertIn("not been confirmed", record["current_activity"])
+            elif name == "Longbow Unmanned Systems Research and Test Center":
+                self.assertEqual(record["activity_status"], "")
+                self.assertIn("2021", record["current_activity"])
+                self.assertIn("not confirmed", record["current_activity"])
             else:
                 self.assertTrue(record["activity_status"], name)
             self.assertTrue(record["current_activity"], name)
-            self.assertTrue(record["partnership_opportunities"], name)
+            if name == "Longbow Unmanned Systems Research and Test Center":
+                self.assertEqual(record["partnership_opportunities"], "")
+            else:
+                self.assertTrue(record["partnership_opportunities"], name)
             self.assertGreaterEqual(
                 date.fromisoformat(record["activity_last_verified_at"]), date(2026, 8, 21)
             )

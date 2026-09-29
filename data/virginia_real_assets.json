@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-24",
+  "generated_at": "2026-09-29",
   "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, broad-based Virginia degree-granting institutions from the NCES IPEDS 2024 directory while excluding narrowly specialized health and ministry schools without documented unmanned-systems relevance, and a curated set of source-backed ecosystem records. Specific street and site locations are anchored to official public address sources and geocoded against the U.S. Census address ranges or named-site map data; locality points are retained when the public record does not identify the operating department or facility. Every record is also classified as either a core unmanned-systems asset with direct documented activity or a supporting ecosystem asset with a broader enabling role.",
-  "record_count": 531,
+  "record_count": 536,
   "records": [
     {
       "address_line": "29194 Parkway North",
@@ -286,8 +286,10 @@
     {
       "address_line": "200 Technology Drive",
       "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Testing, evaluation, verification, and validation",
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment",
+        "Data engineering, analytics, and edge computing",
         "Manufacturing, materials, and prototyping"
       ],
       "city": "Christiansburg",
@@ -299,11 +301,10 @@
       "location_precision": "exact",
       "longitude": -80.375977,
       "missions": [
-        "Infrastructure inspection",
-        "Logistics and contested logistics"
+        "Training and experimentation"
       ],
       "name": "Aeroprobe",
-      "overview": "Christiansburg aerospace company providing airflow measurement and advanced flight-test instrumentation. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Aeroprobe supplies air-data computers, pressure and flow probes, calibration services, and data-analysis tools for aircraft and research. Its UAS offering provides onboard flow information to pilots and autopilots, while its measurement products support aerodynamic experiments and instrument validation. An aircraft developer can use these resources to integrate air-data sensing or calibrate a probe before flight testing. Published on-site calibration wind tunnels are instrumentation resources, not evidence that the company operates a public outdoor UAS range.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -328,6 +329,10 @@
         {
           "title": "Aeroprobe: About",
           "url": "https://www.aeroprobe.com/about-aeroprobe/"
+        },
+        {
+          "title": "Aeroprobe UAS air-data systems, calibration, and flow-measurement products",
+          "url": "https://www.aeroprobe.com/"
         }
       ],
       "state": "VA",
@@ -336,7 +341,7 @@
         "Core unmanned-systems asset",
         "Manufacturing facilities"
       ],
-      "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
+      "unmanned_systems_relevance": "Air-data sensing and calibrated flow measurement for autonomous-aircraft control, flight-test instrumentation, and aerodynamic development.",
       "website_url": "https://www.aeroprobe.com/about-aeroprobe/"
     },
     {
@@ -1449,8 +1454,9 @@
       "address_line": "4250 Fairfax Drive, Suite 350",
       "capabilities": [
         "Autonomy and artificial intelligence",
+        "Command, control, and communications",
         "Systems engineering and integration",
-        "Manufacturing, materials, and prototyping"
+        "Data engineering, analytics, and edge computing"
       ],
       "city": "Arlington",
       "contact_email": "",
@@ -1461,10 +1467,12 @@
       "location_precision": "exact",
       "longitude": -77.11226,
       "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection",
         "Training and experimentation"
       ],
       "name": "Auterion U.S. Headquarters",
-      "overview": "Arlington headquarters for an open autonomous-systems software and mission-computing company. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence, Systems engineering and integration, and Manufacturing, materials, and prototyping. Relevant mission areas include Training and experimentation.",
+      "overview": "Auterion provides an autonomy software and computing platform used by aircraft manufacturers and operators. Its published products combine onboard operating software, autopilot and compute hardware, mission planning, fleet management, video, and flight-data analysis. Practical uses include integrating a common software stack across aircraft, planning repeatable mapping or inspection missions, and managing operational data. The Arlington headquarters is a corporate contact location, not evidence of a manufacturing plant or a publicly available flight-test range.",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Ground vehicles and robotics",
@@ -1483,6 +1491,10 @@
         {
           "title": "Auterion U.S. headquarters contact information",
           "url": "https://auterion.com/company/contact-us/"
+        },
+        {
+          "title": "Auterion operating software, mission control, fleet data, and Arlington headquarters",
+          "url": "https://auterion.com/"
         }
       ],
       "state": "VA",
@@ -1491,8 +1503,8 @@
         "Manufacturing and supply chain",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Develops, integrates, manufactures, or supports documented autonomous and uncrewed systems across one or more operating domains.",
-      "website_url": "https://auterion.com/auterion-moves-corporate-headquarters-to-arlington-virginia/"
+      "unmanned_systems_relevance": "Software, onboard computing, and mission-management integration for drone manufacturers and fleets, rather than a standalone aircraft operating site.",
+      "website_url": "https://auterion.com/"
     },
     {
       "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
@@ -2216,24 +2228,25 @@
     {
       "address_line": "45449 Severn Way, Suite 169",
       "capabilities": [
+        "Payloads and mission systems",
+        "Propulsion, batteries, fuels, and energy systems",
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment",
         "Manufacturing, materials, and prototyping"
       ],
       "city": "Sterling",
-      "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Organization public information and inquiries",
-      "contact_url": "https://www.bluevigil.com/blank-1",
+      "contact_email": "info@bluevigil.com",
+      "contact_phone": "703-995-9891",
+      "contact_text": "AL1000 product information and on-site demonstration requests.",
+      "contact_url": "https://www.bluevigil.com/",
       "latitude": 39.02068,
       "location_precision": "site",
       "longitude": -77.426677,
       "missions": [
-        "Infrastructure inspection",
-        "Logistics and contested logistics"
+        "Public safety and emergency response",
+        "Training and experimentation"
       ],
       "name": "Blue Vigil",
-      "overview": "Virginia company developing tethered-drone power systems and autonomous aerial lighting for construction, public safety, utilities, and emergency scenes. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Blue Vigil develops the AL1000 Autonomous Aerial Light, a tethered airborne LED system for illuminating work areas and emergency scenes. The manufacturer lists construction, paving, utility work, disaster response, and event uses. The practical role is elevated, repositionable lighting supplied from a ground unit, not free-flying mapping or cargo delivery. A buyer can request an on-site demonstration for a specific use case; lighting performance, operating conditions, and regulatory requirements should be confirmed for that deployment.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -2265,8 +2278,8 @@
         "Companies and solution providers",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
-      "website_url": "https://www.bluevigil.com/about"
+      "unmanned_systems_relevance": "A concrete tethered-UAS use case for nighttime work and emergency-scene illumination, connecting drone technology with construction and public-safety needs.",
+      "website_url": "https://www.bluevigil.com/"
     },
     {
       "address_line": "3000 College Avenue",
@@ -8255,6 +8268,69 @@
       "website_url": "https://courses.vccs.edu/colleges/germanna/courses/UMS-UnmannedSystems"
     },
     {
+      "address_line": "1020 Lotus Drive",
+      "capabilities": [
+        "Simulation, digital twins, and synthetic environments",
+        "Testing, evaluation, verification, and validation",
+        "Perception, sensing, and sensor fusion",
+        "Systems engineering and integration"
+      ],
+      "city": "Alton",
+      "contact_email": "",
+      "contact_phone": "434-766-6644",
+      "contact_text": "GCAPS project inquiries; public Alton research-center contact.",
+      "contact_url": "https://www.gcaps.net/contact-us/",
+      "latitude": 36.556123,
+      "location_last_verified_at": "2026-09-29",
+      "location_method": "geocoded",
+      "location_notes": "Site-level address match for the published Alton research-center address, not the nearby Virginia International Raceway test tracks. Public geocoder returned a point-address match; the point is not a visitor-entry guarantee.",
+      "location_precision": "site",
+      "location_role": "research",
+      "location_source_url": "https://www.gcaps.net/contact-us/",
+      "longitude": -79.194905,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Global Center for Automotive Performance Simulation",
+      "overview": "GCAPS is a Virginia Tech Transportation Institute research center for vehicle performance and automated-driving validation. Teams can turn naturalistic-driving events into test scenarios, evaluate perception sensors and sensor degradation, and examine sensor fusion, connected-vehicle communications, planning, and decision-making. Physical tire testing and modeling help relate simulation to real vehicle behavior. These are ground-vehicle engineering services, distinct from booking an outdoor track or flying drones; agree a project and validation scope with the center.",
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "postal_code": "24520",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Southside Virginia",
+      "short_description": "VTTI research center in Alton providing automated-driving simulation, sensor assessment, and tire/vehicle testing.",
+      "sources": [
+        {
+          "title": "GCAPS automated-driving validation and vehicle research capabilities",
+          "url": "https://www.gcaps.net/"
+        },
+        {
+          "title": "GCAPS official Alton address and contact",
+          "url": "https://www.gcaps.net/contact-us/"
+        },
+        {
+          "title": "Public point-address geocode for the published GCAPS address",
+          "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=1020+Lotus+Drive%2C+Alton%2C+VA+24520&outFields=Match_addr%2CAddr_type%2CStAddr%2CCity%2CRegion%2CPostal&maxLocations=1&f=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Test and operational environments",
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "test_access": "Contact GCAPS about the required data, simulation, sensing, or vehicle-performance project. Site access and deliverables are arranged with the operator.",
+      "test_aircraft": "Ground vehicles, tire/vehicle models, and automated-driving sensor and software systems; no aerial operating envelope is claimed.",
+      "test_dimensions": "Operator publishes simulation and tire-test services, including wet tire testing. A single outdoor test-area size or runway length is not applicable to these services.",
+      "test_last_verified_at": "2026-09-29",
+      "test_runway_length_ft": null,
+      "test_source_url": "https://www.gcaps.net/",
+      "unmanned_systems_relevance": "Supports repeatable assessment of automated ground vehicles and their sensing and decision systems, including difficult traffic scenarios before real-world deployment.",
+      "website_url": "https://www.gcaps.net/"
+    },
+    {
       "activity_last_verified_at": "2026-08-25",
       "activity_source_url": "https://www.gpi-llc.com/asd",
       "activity_status": "active",
@@ -9270,8 +9346,7 @@
     {
       "address_line": "15501 Harrowgate Road",
       "capabilities": [
-        "Testing, evaluation, verification, and validation",
-        "Systems engineering and integration"
+        "Operations, maintenance, and sustainment"
       ],
       "city": "Chester",
       "contact_email": "",
@@ -9290,7 +9365,7 @@
         "Training and experimentation"
       ],
       "name": "Harrowgate Drone Park",
-      "overview": "County-designated outdoor flying area for recreational drones and radio-controlled aircraft. Public sources support its classification as a Virginia operating environment. Documented capabilities include Testing, evaluation, verification, and validation and Systems engineering and integration. Relevant mission areas include Training and experimentation.",
+      "overview": "Chesterfield County dedicated this recreational drone-flying area behind the Chester Early Childhood Learning Academy at 15501 Harrowgate Road in 2022. The county's later description identifies a shared field for drones and model aircraft outside school hours. It is relevant for basic flying skills, recreational practice, and community education, rather than advanced commercial aircraft testing. Published historical rules and the shared-school setting make it important to confirm today's operating hours and county requirements before using the site.",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Ground vehicles and robotics",
@@ -9331,7 +9406,7 @@
       "test_last_verified_at": "2026-09-06",
       "test_runway_length_ft": null,
       "test_source_url": "https://www.chesterfield.gov/m/newsflash/home/detail/3280",
-      "unmanned_systems_relevance": "Provides a publicly documented environment for unmanned-system testing, training, demonstration, validation, or operational integration.",
+      "unmanned_systems_relevance": "Entry-level recreational flying and UAS familiarity; no public evidence here of BVLOS approvals, instrumented performance evaluation, or commercial test-range access.",
       "website_url": ""
     },
     {
@@ -10767,10 +10842,12 @@
       "location_source_url": "https://autonomyandrobotics.centers.vt.edu/groups/keas.html",
       "longitude": -80.564314,
       "missions": [
-        "Training and experimentation"
+        "Training and experimentation",
+        "Infrastructure inspection",
+        "Environmental monitoring"
       ],
       "name": "Kentland Experimental Aerial Systems Laboratory",
-      "overview": "Virginia Tech field laboratory for UAS flight dynamics, control, research, and instruction. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+      "overview": "Virginia Tech's Kentland laboratory provides a field setting for small-UAS research and education, with a 300-by-70-foot paved runway and adjacent hangar. University examples show fixed-wing wind-sensing flights and quadrotor infrastructure-inspection work. Developers and researchers can use the setting to evaluate flight dynamics, controls, sensing, and integrated aircraft prototypes through an agreed university project. The roughly 1,800-acre farm is not itself an approved flight boundary, and the laboratory is not an unrestricted public airfield.",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
@@ -10789,6 +10866,14 @@
         {
           "title": "Virginia Tech Kentland Farm facility information",
           "url": "https://www.cals.vt.edu/research/facilities.html"
+        },
+        {
+          "title": "Virginia Tech Kentland lab, runway dimensions, and research examples",
+          "url": "https://www.aoe.vt.edu/research/facilities/keaslab.html"
+        },
+        {
+          "title": "MAAP Kentland facilities and flight-approval support",
+          "url": "https://maap.ictas.vt.edu/capabilities/facilities.html"
         }
       ],
       "state": "VA",
@@ -10803,8 +10888,8 @@
       "test_last_verified_at": "2026-09-06",
       "test_runway_length_ft": 300,
       "test_source_url": "https://autonomyandrobotics.centers.vt.edu/groups/keas.html",
-      "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
-      "website_url": "https://autonomyandrobotics.centers.vt.edu/groups/keas.html"
+      "unmanned_systems_relevance": "A launch, recovery, and preparation resource for university-coordinated small-aircraft experiments, including environmental sensing and infrastructure-inspection research.",
+      "website_url": "https://www.aoe.vt.edu/research/facilities/keaslab.html"
     },
     {
       "address_line": "8122 Kings Highway",
@@ -12040,20 +12125,20 @@
       "website_url": "https://lonesomepineairport.com/index.html"
     },
     {
-      "activity_last_verified_at": "2026-08-21",
-      "activity_source_url": "https://www.sbir.gov/portfolio/1664155",
-      "activity_status": "active",
+      "activity_last_verified_at": "2026-09-29",
+      "activity_source_url": "https://www.nasa.gov/news-release/nasa-enters-space-act-agreement-with-longbow-to-develop-drone-flight-research-corridors/",
+      "activity_status": "",
       "address_line": "96 Stilwell Road",
       "capabilities": [
         "Testing, evaluation, verification, and validation",
         "Systems engineering and integration"
       ],
       "city": "Hampton",
-      "contact_email": "",
-      "contact_phone": "",
-      "contact_text": "Research, testing, and partnership inquiries",
-      "contact_url": "https://www.sbir.gov/portfolio/1664155",
-      "current_activity": "The federal SBIR portfolio documents The Longbow Group's Virginia-based UAS safety and traffic-management work and its Unmanned Systems Research and Technology Center at Fort Monroe.",
+      "contact_email": "msterk@thelongbowgroup.com",
+      "contact_phone": "901-336-6551",
+      "contact_text": "The Longbow Group business contact published in its 2025 NASA SBIR award; confirm center-specific services and access.",
+      "contact_url": "https://www.sbir.gov/awards/220639",
+      "current_activity": "NASA's 2021 public agreement documents a collaborative research effort on high-density vertiplex technologies and proposed flight corridors; current services and corridor availability are not confirmed by that announcement.",
       "latitude": 37.010449,
       "location_precision": "site",
       "longitude": -76.312444,
@@ -12061,8 +12146,8 @@
         "Training and experimentation"
       ],
       "name": "Longbow Unmanned Systems Research and Test Center",
-      "overview": "Fort Monroe center supporting urban air, ground, and maritime unmanned-system research, testing, and validation. Public sources support its classification as a Virginia operating environment. Documented capabilities include Testing, evaluation, verification, and validation and Systems engineering and integration. Relevant mission areas include Training and experimentation.",
-      "partnership_opportunities": "The center states that it is seeking partnerships and provides a public inquiry form for prospective users and collaborators.",
+      "overview": "Longbow's Fort Monroe center is associated with research on advanced-air-mobility infrastructure and coordinated drone operations. NASA's 2021 agreement described collaborative development of high-density vertiplex concepts and proposed BVLOS research corridors between Langley's CERTAIN range and the Fort Monroe center. Potential research uses concern operational concepts, infrastructure, data sharing, and air-ground integration, not a general recreational flying area. The agreement documents a research effort, not proof that a corridor is currently open or available to external aircraft; confirm today's facility services directly with Longbow.",
+      "partnership_opportunities": "",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Ground vehicles and robotics",
@@ -12085,6 +12170,14 @@
         {
           "title": "National Institute of Aerospace annual report describing Longbow development",
           "url": "https://www.nianet.org/wp-content/uploads/2022/02/2020-NIA-annual-report.pdf"
+        },
+        {
+          "title": "NASA 2021 Longbow agreement and proposed research-corridor scope",
+          "url": "https://www.nasa.gov/news-release/nasa-enters-space-act-agreement-with-longbow-to-develop-drone-flight-research-corridors/"
+        },
+        {
+          "title": "NASA 2025 Longbow SOAR award and published business contact",
+          "url": "https://www.sbir.gov/awards/220639"
         }
       ],
       "state": "VA",
@@ -12093,7 +12186,7 @@
         "Companies and solution providers",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Provides a publicly documented environment for unmanned-system testing, training, demonstration, validation, or operational integration.",
+      "unmanned_systems_relevance": "A Hampton Roads contact for documented vertiplex and UAS operational-concept research, with current access and corridor status requiring operator confirmation.",
       "website_url": ""
     },
     {
@@ -13725,8 +13818,10 @@
     {
       "address_line": "7414 Atlantic Road",
       "capabilities": [
-        "Autonomy and artificial intelligence",
-        "Testing, evaluation, verification, and validation"
+        "Systems engineering and integration",
+        "Payloads and mission systems",
+        "Testing, evaluation, verification, and validation",
+        "Operations, maintenance, and sustainment"
       ],
       "city": "Wallops Island",
       "contact_email": "",
@@ -13740,7 +13835,7 @@
         "Training and experimentation"
       ],
       "name": "Mid-Atlantic Regional Spaceport",
-      "overview": "Virginia spaceport providing launch, range, integration, and advanced-aerospace infrastructure. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+      "overview": "The Mid-Atlantic Regional Spaceport is Virginia Spaceport Authority infrastructure at NASA Wallops for launch-vehicle integration, payload preparation, launch operations, and mission control. Its separately listed MARS UAS Airfield supports unmanned training, testing, and demonstrations. A project needing launch support or space-enabled systems can use the spaceport's integration and processing resources; a drone flight project should inquire about the UAS airfield specifically. These facilities are within a secure federal environment and require operator coordination.",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
@@ -13762,6 +13857,10 @@
         {
           "title": "Virginia Spaceport Authority: Mid-Atlantic Regional Spaceport",
           "url": "https://www.vaspace.org/about-us"
+        },
+        {
+          "title": "Virginia Spaceport Authority launch, payload, and UAS facilities",
+          "url": "https://www.vaspace.org/our-facilities"
         }
       ],
       "state": "VA",
@@ -13770,8 +13869,8 @@
         "Test and operational environments",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
-      "website_url": "https://www.vaspace.org/about-us"
+      "unmanned_systems_relevance": "Aerospace integration and mission-support infrastructure connected to a dedicated UAS airfield; space-launch capabilities are not interchangeable with drone flight permission.",
+      "website_url": "https://www.vaspace.org/our-facilities"
     },
     {
       "activity_last_verified_at": "2026-08-25",
@@ -13897,7 +13996,8 @@
       "capabilities": [
         "Testing, evaluation, verification, and validation",
         "Systems engineering and integration",
-        "Navigation and positioning"
+        "Command, control, and communications",
+        "Perception, sensing, and sensor fusion"
       ],
       "city": "Orange",
       "contact_email": "Culsh@MITRE.org",
@@ -13921,10 +14021,11 @@
       "missions": [
         "Training and experimentation",
         "Public safety and emergency response",
+        "Search and rescue",
         "Counter-UAS"
       ],
       "name": "MITRE National Range",
-      "overview": "Controlled Orange County proving ground for UAS, counter-UAS, ground robotics, communications, prototyping, and independent evaluation. Public sources support its classification as a Virginia operating environment. Documented capabilities include Testing, evaluation, verification, and validation, Systems engineering and integration, and Navigation and positioning. Relevant mission areas include Training and experimentation and Public safety and emergency response.",
+      "overview": "MITRE's Orange County range gives government, academic, and industry partners a controlled setting to compare drone, counter-UAS, ground-robot, and communications technologies. Published resources include a powered operations center, 5G connectivity, a standardized drone training course, telemetry capture, and command-and-control integration. Practical uses include independent prototype evaluation, network and sensor-fusion tests, operator training, and emergency-response demonstrations. Range use is arranged with MITRE; the locality-level marker does not identify a gate or an authorized operating boundary.",
       "owner_operator": "MITRE",
       "partnership_opportunities": "MITRE states that government, academic, and industry partners can discuss range use for prototyping, testing, training, demonstrations, and independent validation.",
       "platform_domains": [
@@ -13963,7 +14064,7 @@
       "test_last_verified_at": "2026-09-06",
       "test_runway_length_ft": null,
       "test_source_url": "https://www.mitre.org/sites/default/files/2024-07/PR-24-2208-MITRE-National-Range.pdf",
-      "unmanned_systems_relevance": "Provides a documented controlled environment for testing, evaluating, and prototyping uncrewed aircraft, counter-UAS, ground systems, and communications.",
+      "unmanned_systems_relevance": "Supports repeatable evaluation of aircraft, ground robots, sensors, and communications before operational deployment, including public-safety scenarios and manufacturer/buyer validation.",
       "website_url": "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range"
     },
     {
@@ -14535,7 +14636,7 @@
         "Training and experimentation"
       ],
       "name": "NASA Flight Dynamics Research Facility",
-      "overview": "NASA's Flight Dynamics Research Facility is a 25,000-square-foot vertical wind tunnel at Langley Research Center. It supports free-flight and captive research on stability, control, autonomous flight vehicles, drones, X-planes, and atmospheric vehicles.",
+      "overview": "NASA Langley's Flight Dynamics Research Facility is a vertical, subsonic wind tunnel for studying stability, controllability, free fall, spin behavior, and recovery. It supports free-flight and captive experiments on atmospheric vehicles, including autonomous aircraft and drones. This can help a development team investigate difficult flight-dynamics behavior before outdoor flight testing. The published 25,000-square-foot figure is building area, not an outdoor flight envelope or a permitted aircraft size.",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Advanced Air Mobility"
@@ -14563,13 +14664,13 @@
         "Test and operational environments",
         "Core unmanned-systems asset"
       ],
-      "test_access": "Contact NASA for suitability and test scheduling. The facility page includes summer-2026 opening language; commissioning and actual availability require confirmation.",
-      "test_aircraft": "Vertical subsonic wind-tunnel research on stability, control, free-fall and spin recovery, including autonomous-aircraft models.",
-      "test_dimensions": "NASA describes a 25,000 sq ft research facility; this is building area, not test-chamber area or a flight range. No runway applies to this wind-tunnel record.",
-      "test_last_verified_at": "2026-09-06",
+      "test_access": "Discuss model requirements, test conditions, scheduling, and facility access with NASA's published facility manager.",
+      "test_aircraft": "Free-flight and captive testing of atmospheric vehicles and models, including autonomous-flight and drone research; model compatibility must be confirmed.",
+      "test_dimensions": "25,000-square-foot facility with a vertical subsonic test section. Building floor area does not define usable test-section dimensions.",
+      "test_last_verified_at": "2026-09-29",
       "test_runway_length_ft": null,
       "test_source_url": "https://www.nasa.gov/directorates/armd/flight-dynamics-research-facility/",
-      "unmanned_systems_relevance": "Provides direct aerodynamic and flight-dynamics research infrastructure for drones and autonomous atmospheric vehicles. Public access and test availability require NASA coordination.",
+      "unmanned_systems_relevance": "Controlled flight-dynamics evaluation for drone and autonomous-aircraft models; complements, rather than replaces, outdoor flight trials.",
       "website_url": "https://www.nasa.gov/directorates/armd/flight-dynamics-research-facility/"
     },
     {
@@ -14653,7 +14754,7 @@
         "Training and experimentation"
       ],
       "name": "NASA Langley CERTAIN",
-      "overview": "City Environment for Range Testing of Autonomous Integrated Navigation at NASA Langley. Public sources support its classification as a Virginia operating environment. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+      "overview": "CERTAIN is NASA Langley's designated UAS research-flight environment, linked to the ROAM remote operations center. NASA uses live flights alongside virtual and simulated traffic to study onboard autonomy, air-ground integration, and how operators manage multiple aircraft. Documented research scenarios include delivery and emergency-response surveillance. This is NASA-coordinated research infrastructure, not a public drone park. The separate Langley UAS Test Range entry describes the range's earlier opening and should not be interpreted as a second independent booking site.",
       "partnership_opportunities": "Research and facility inquiries should use NASA Langley's published contact routes.",
       "platform_domains": [
         "Unmanned aircraft systems",
@@ -14692,8 +14793,82 @@
         "Test and operational environments",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
-      "website_url": "https://www.nasa.gov/centers-and-facilities/langley/nasa-langley-drone-flying-site-open-for-testing/"
+      "test_access": "Coordinate with NASA Langley research and flight-operations personnel. Published research examples do not transfer BVLOS permissions to outside users.",
+      "test_aircraft": "NASA research involving small UAS and integration with remote operations and simulated traffic; current aircraft eligibility is project-specific.",
+      "test_last_verified_at": "2026-09-29",
+      "test_source_url": "https://csaob.larc.nasa.gov/roam/",
+      "unmanned_systems_relevance": "An environment for validating autonomy and remote-operation concepts with real aircraft, complementing laboratory and human-in-the-loop simulation.",
+      "website_url": "https://csaob.larc.nasa.gov/roam/"
+    },
+    {
+      "address_line": "Landing and Impact Research Facility, NASA Langley Research Center",
+      "capabilities": [
+        "Testing, evaluation, verification, and validation",
+        "Simulation, digital twins, and synthetic environments"
+      ],
+      "city": "Hampton",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "NASA Langley Front Door partnership inquiry; specify LandIR and the proposed impact-test problem.",
+      "contact_url": "https://www.nasa.gov/langley/frontdoor/",
+      "latitude": 37.101609,
+      "location_last_verified_at": "2026-09-29",
+      "location_method": "geocoded",
+      "location_notes": "Point represents the named LandIR facility footprint in public map data, not a visitor entrance or a specific impact-test position.",
+      "location_precision": "site",
+      "location_role": "test-site",
+      "location_source_url": "https://www.openstreetmap.org/way/1136385259",
+      "longitude": -76.389665,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "NASA Langley Landing and Impact Research Facility",
+      "overview": "Langley's Landing and Impact Research Facility (LandIR) supports controlled impact experiments on aircraft and spacecraft structures. NASA used it to crash-test an experimental eVTOL cabin, examining occupant protection and energy absorption and comparing results with computer predictions. For AAM developers, the practical use is structural safety research before flight deployment, not outdoor flying. Projects and equipment suitability must be agreed with NASA.",
+      "platform_domains": [
+        "Advanced Air Mobility",
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "23681",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Hampton Roads",
+      "short_description": "Langley impact-test facility used to evaluate crashworthiness, including an experimental eVTOL cabin.",
+      "sources": [
+        {
+          "title": "NASA Langley facility directory and LandIR",
+          "url": "https://www.nasa.gov/langley/facilities/"
+        },
+        {
+          "title": "NASA LandIR eVTOL cabin crash-test example",
+          "url": "https://www.nasa.gov/centers-and-facilities/langley/nasa-crash-tests-evtol-concept/"
+        },
+        {
+          "title": "NASA facility management reference and LandIR dimensions",
+          "url": "https://www.nasa.gov/reference/management-roles-and-facilities/"
+        },
+        {
+          "title": "NASA Langley Front Door research partnership route",
+          "url": "https://www.nasa.gov/langley/frontdoor/"
+        },
+        {
+          "title": "Public named-site footprint of LandIR",
+          "url": "https://www.openstreetmap.org/way/1136385259"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Test and operational environments",
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "test_access": "Use NASA Langley's Front Door to discuss a partnership and relevant research team; access is controlled and project-specific.",
+      "test_aircraft": "Structural articles, cabins, and models for impact and crashworthiness research; not a flight-test approval.",
+      "test_dimensions": "NASA describes a gantry approximately 240 feet high, 400 feet long, and 265 feet wide. Test-article and impact limits depend on the agreed experiment.",
+      "test_last_verified_at": "2026-09-29",
+      "test_runway_length_ft": null,
+      "test_source_url": "https://www.nasa.gov/reference/management-roles-and-facilities/",
+      "unmanned_systems_relevance": "Enables crashworthiness and structural-model validation relevant to advanced-air-mobility vehicles; a separate capability from Langley's UAS flight range.",
+      "website_url": "https://www.nasa.gov/langley/facilities/"
     },
     {
       "activity_last_verified_at": "2026-09-06",
@@ -14702,7 +14877,9 @@
       "address_line": "2 Langley Boulevard",
       "capabilities": [
         "Autonomy and artificial intelligence",
-        "Testing, evaluation, verification, and validation"
+        "Testing, evaluation, verification, and validation",
+        "Simulation, digital twins, and synthetic environments",
+        "Systems engineering and integration"
       ],
       "city": "Hampton",
       "contact_email": "",
@@ -14717,7 +14894,7 @@
         "Training and experimentation"
       ],
       "name": "NASA Langley Research Center",
-      "overview": "NASA research center conducting autonomy, UAS airspace integration, sensing, and flight research. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+      "overview": "NASA Langley is a research partner for developing and evaluating flight technologies, rather than a single test range. Its facilities connect autonomous-flight research, wind-tunnel experiments, structural and crash testing, simulation, and airspace-integration work. AAM developers can investigate vehicle behavior and safety through a project matched to the relevant facility and team. NASA's Front Door provides the published route for partnership inquiries, technology transfer, and small-business opportunities. The campus marker does not locate every facility or establish access to them.",
       "partnership_opportunities": "Prospective industry, academic, and other partners can use the Front Door's Connecting with Langley route to submit a statement of interest to the partnerships team.",
       "platform_domains": [
         "Unmanned aircraft systems",
@@ -14748,6 +14925,10 @@
         {
           "title": "NASA Langley Front Door: capabilities and partnership routes",
           "url": "https://www.nasa.gov/langley/frontdoor/"
+        },
+        {
+          "title": "NASA Langley facilities and experimental resources",
+          "url": "https://www.nasa.gov/langley/facilities/"
         }
       ],
       "state": "VA",
@@ -14756,7 +14937,7 @@
         "Test and operational environments",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
+      "unmanned_systems_relevance": "An entry point to specialized research and test resources for drones and advanced-air-mobility vehicles; users should select a facility and agree a project rather than assume campus-wide range access.",
       "website_url": "https://www.nasa.gov/langley/about-langley-research-center/"
     },
     {
@@ -14766,7 +14947,9 @@
       "address_line": "Building Complex 1268, 2 Langley Boulevard",
       "capabilities": [
         "Autonomy and artificial intelligence",
-        "Testing, evaluation, verification, and validation"
+        "Testing, evaluation, verification, and validation",
+        "Simulation, digital twins, and synthetic environments",
+        "Command, control, and communications"
       ],
       "city": "Hampton",
       "contact_email": "",
@@ -14781,7 +14964,7 @@
         "Training and experimentation"
       ],
       "name": "NASA Langley ROAM UAS Operations Center",
-      "overview": "Building 1268 operations center for BVLOS research, live-virtual-constructive flight operations, and human-autonomy teaming with multiple vehicles. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+      "overview": "ROAM is NASA Langley's remote UAS operations center in Building Complex 1268. It combines live aircraft, virtual vehicles, and simulated traffic to examine air-ground integration and human-autonomy teaming. Researchers study prospective multi-aircraft supervision, operator workload, and shared situational awareness; preliminary studies are not proof of unrestricted operational readiness. Delivery, emergency surveillance, and urban-air-mobility concepts are published examples. ROAM is a coordination and research environment, not a separate launch field or a transferable BVLOS authorization.",
       "partnership_opportunities": "Technical and research inquiries can be directed through NASA Langley's Crew Systems and Aviation Operations Branch.",
       "platform_domains": [
         "Unmanned aircraft systems",
@@ -14808,6 +14991,10 @@
         {
           "title": "NASA Langley ROAM UAS Operations Center public contact information",
           "url": "https://csaob.larc.nasa.gov/"
+        },
+        {
+          "title": "NASA 2025 preliminary research on human-autonomy teaming for multiple aircraft",
+          "url": "https://ntrs.nasa.gov/citations/20240014944"
         }
       ],
       "state": "VA",
@@ -14816,7 +15003,11 @@
         "Test and operational environments",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
+      "test_access": "Research is governed by NASA project requirements, policies, and flight-safety procedures. Use the published technical contact to discuss a project.",
+      "test_aircraft": "Small-UAS live, virtual, and constructive experiments, with human-in-the-loop studies of multiple autonomous vehicles.",
+      "test_last_verified_at": "2026-09-29",
+      "test_source_url": "https://csaob.larc.nasa.gov/roam/",
+      "unmanned_systems_relevance": "Supports research into remote supervision, multi-aircraft operations, and safe operator-autonomy interfaces before broader deployment.",
       "website_url": "https://csaob.larc.nasa.gov/roam/"
     },
     {
@@ -14841,7 +15032,7 @@
         "Training and experimentation"
       ],
       "name": "NASA Langley UAS Test Range",
-      "overview": "NASA-operated 100-acre small-UAS flight range supporting research flights and testing near the CERTAIN city environment. Public sources support its classification as a Virginia operating environment. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+      "overview": "NASA's 2015 opening announcement describes a 100-acre Langley UAS range where researchers began moving autonomy experiments from indoor tests to outdoor flights. Examples included robotic mission behavior, package delivery, and search-and-rescue concepts using modified small aircraft. NASA subsequently identifies CERTAIN as its designated research flight range. These records describe related Langley infrastructure, not two independently available commercial ranges. The 2015 aircraft and airspace limits are historical; current suitability and permissions must be confirmed with NASA.",
       "partnership_opportunities": "Research and facility inquiries should use NASA Langley's published contact routes.",
       "platform_domains": [
         "Unmanned aircraft systems",
@@ -14885,14 +15076,17 @@
       "test_dimensions": "100-acre range reported in the 2015 opening announcement. Current launch-area and runway dimensions are not established by that source.",
       "test_last_verified_at": "2026-09-06",
       "test_source_url": "https://www.nasa.gov/centers-and-facilities/langley/nasa-langley-drone-flying-site-open-for-testing/",
-      "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
+      "unmanned_systems_relevance": "Documents the outdoor-flight step in Langley's autonomy research pipeline. It is useful for finding a research partner, not for deciding that a private flight is currently authorized.",
       "website_url": "https://www.nasa.gov/centers-and-facilities/langley/nasa-langley-drone-flying-site-open-for-testing/"
     },
     {
       "address_line": "34200 Fulton Street",
       "capabilities": [
-        "Autonomy and artificial intelligence",
-        "Testing, evaluation, verification, and validation"
+        "Testing, evaluation, verification, and validation",
+        "Systems engineering and integration",
+        "Payloads and mission systems",
+        "Command, control, and communications",
+        "Safety, policy, regulatory, and airspace integration"
       ],
       "city": "Wallops Island",
       "contact_email": "",
@@ -14906,7 +15100,7 @@
         "Training and experimentation"
       ],
       "name": "NASA Wallops Flight Facility",
-      "overview": "NASA flight facility supporting atmospheric, aerospace, UAS, and range operations. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+      "overview": "NASA Wallops combines a research airport, launch range, aircraft operations, and technical support for science, defense, and commercial projects. Its range handbook describes UAS control centers and hangar-based test and integration laboratories, helping teams prepare aircraft and payloads before an approved flight campaign. Practical uses include instrument checkout, aircraft integration, data collection, and coordinated research flights. NASA flight clearance, airworthiness review, range scheduling, and applicable FAA approvals are project requirements, not permissions granted by this listing.",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
@@ -14928,6 +15122,10 @@
         {
           "title": "NASA: About Wallops Flight Facility",
           "url": "https://www.nasa.gov/wallops/about/"
+        },
+        {
+          "title": "Wallops Range User's Handbook 2024: UAS integration and flight requirements",
+          "url": "https://www.nasa.gov/wp-content/uploads/2023/09/wallopsrangeusershandbook-2024.pdf"
         }
       ],
       "state": "VA",
@@ -14936,8 +15134,66 @@
         "Test and operational environments",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
+      "unmanned_systems_relevance": "Provides an integrated preparation-to-flight environment for UAS research, with laboratory, communications, mission-control, and range support.",
       "website_url": "https://www.nasa.gov/wallops/about/"
+    },
+    {
+      "address_line": "NASA Wallops Flight Facility, hangars N-159 and D-1",
+      "capabilities": [
+        "Testing, evaluation, verification, and validation",
+        "Systems engineering and integration",
+        "Payloads and mission systems"
+      ],
+      "city": "Wallops Island",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Wallops Range and Mission Management Office project-coordination information; specify UAS integration requirements.",
+      "contact_url": "https://www.nasa.gov/wallopsrange/",
+      "latitude": null,
+      "location_last_verified_at": "2026-09-29",
+      "location_method": "unmapped",
+      "location_notes": "NASA's 2024 handbook identifies the hangars, but a reliable hangar-specific point was not established. No parent-campus or visitor-center point is substituted.",
+      "location_precision": "site",
+      "location_role": "research",
+      "location_source_url": "https://www.nasa.gov/wp-content/uploads/2023/09/wallopsrangeusershandbook-2024.pdf",
+      "longitude": null,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "NASA Wallops UAS Test and Integration Facility",
+      "overview": "NASA's 2024 Wallops Range User's Handbook identifies a UAS Test and Integration Facility using hangars N-159 and D-1. The hangar-accessible, electrostatic-discharge-protected integration laboratory has test benches, power, communications, and nearby project office and conference space. This supports aircraft and payload integration and bench checkout before a coordinated flight campaign. It is a distinct preparation resource within Wallops, not another runway or an independent flight authorization. Confirm the current configuration and project access with NASA.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Eastern Shore",
+      "short_description": "Wallops hangar and electrostatic-discharge-protected laboratory infrastructure for UAS preparation and integration.",
+      "sources": [
+        {
+          "title": "NASA 2024 Wallops Range User's Handbook, UAS integration facility",
+          "url": "https://www.nasa.gov/wp-content/uploads/2023/09/wallopsrangeusershandbook-2024.pdf"
+        },
+        {
+          "title": "NASA Wallops Range operator and project-coordination route",
+          "url": "https://www.nasa.gov/wallopsrange/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Test and operational environments",
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "test_access": "Arrange preparation and any subsequent flight activity with the Wallops range team; airworthiness, safety, and flight clearances remain project-specific.",
+      "test_aircraft": "UAS and associated integration and payload equipment accommodated through a NASA-coordinated project; published maximum aircraft dimensions were not found.",
+      "test_dimensions": "2024 handbook identifies hangars N-159 and D-1 and a hangar-accessible integration laboratory. No facility-specific runway length or hangar capacity is inferred.",
+      "test_last_verified_at": "2026-09-29",
+      "test_runway_length_ft": null,
+      "test_source_url": "https://www.nasa.gov/wp-content/uploads/2023/09/wallopsrangeusershandbook-2024.pdf",
+      "unmanned_systems_relevance": "Links bench-level UAS and payload preparation with Wallops research-flight support, helping teams check integrated equipment before flight testing.",
+      "website_url": "https://www.nasa.gov/wallopsrange/"
     },
     {
       "address_line": "7500 GEOINT Drive",
@@ -16921,12 +17177,12 @@
         "Force protection and installation security"
       ],
       "name": "NSWC Dahlgren Outdoor Autonomy Laboratory",
-      "overview": "Outdoor laboratory for ground, surface, undersea, radio-frequency, and cross-domain autonomy experimentation. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence, Systems engineering and integration, and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation and Force protection and installation security.",
+      "overview": "Dahlgren's Outdoor Autonomy Lab supports early-stage experiments with unmanned ground, surface, and underwater vehicles, radio-frequency checkouts, and other low-risk autonomy activities. The Navy describes open and wooded terrain and a pond, allowing engineers to move prototypes beyond the bench before larger range evaluations. Government personnel can lead work after lab training; contractors, universities, and industry require government sponsorship. The published scope is not a general aerial-drone range, and the locality marker does not identify the lab entrance or test boundary.",
       "platform_domains": [
-        "Unmanned aircraft systems",
         "Ground vehicles and robotics",
         "Maritime surface systems",
-        "Undersea systems"
+        "Undersea systems",
+        "Cross-domain autonomy"
       ],
       "provenance": "curated-public-source",
       "record_type": "facility",
@@ -16944,6 +17200,10 @@
         {
           "title": "NSWC Dahlgren Division mission areas",
           "url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/What-We-Do/"
+        },
+        {
+          "title": "Navy Outdoor Autonomy Lab environments, system types, and sponsorship",
+          "url": "https://www.navsea.navy.mil/Media/News/Article/3886620/maximizing-resources-building-a-competitive-outdoor-autonomy-lab-environment/"
         }
       ],
       "state": "VA",
@@ -16953,7 +17213,12 @@
         "Research and technical depth",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Provides publicly documented federal research, experimentation, engineering, or test capacity for autonomous and uncrewed systems.",
+      "test_access": "Trained government personnel lead projects. Contractors, academia, and industry need government sponsorship; confirm current lab rules and project eligibility with NSWCDD.",
+      "test_aircraft": "Unmanned ground, surface, and underwater vehicles; radio-frequency checkouts and other low-risk autonomy activities described by the Navy.",
+      "test_dimensions": "Open and wooded terrain plus a pond. The cited source does not publish site acreage, launch dimensions, or aircraft runway length.",
+      "test_last_verified_at": "2026-09-29",
+      "test_source_url": "https://www.navsea.navy.mil/Media/News/Article/3886620/maximizing-resources-building-a-competitive-outdoor-autonomy-lab-environment/",
+      "unmanned_systems_relevance": "A lower-complexity prototyping environment for ground and maritime autonomy, system integration, and communications checkout under Navy project oversight.",
       "website_url": ""
     },
     {
@@ -16976,7 +17241,7 @@
         "Force protection and installation security"
       ],
       "name": "NSWC Dahlgren UAV Test Runway",
-      "overview": "Dedicated Navy runway identified for in-house research, development, and testing of UAV sensors, payloads, and weapons. Public sources support its classification as a Virginia operating environment. Documented capabilities include Autonomy and artificial intelligence, Systems engineering and integration, and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation and Force protection and installation security.",
+      "overview": "The Navy identifies a Dahlgren UAV runway as an in-house resource for researching and testing unmanned-aircraft sensors, payloads, weapons, and engagement systems. It can support military-sponsored aircraft and combat-system evaluation rather than ordinary airport operations. A Navy report describes a specially coordinated fixed-wing flight from the runway, illustrating that aircraft and airspace approvals are part of the test project. This listing does not establish open commercial access, current aircraft limits, or permission to operate in nearby restricted airspace.",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Ground vehicles and robotics",
@@ -16996,6 +17261,14 @@
         {
           "title": "OpenStreetMap named-site map data",
           "url": "https://www.openstreetmap.org/copyright"
+        },
+        {
+          "title": "Navy Dahlgren mission and UAV runway capabilities",
+          "url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/What-We-Do/PrinttheFleet/"
+        },
+        {
+          "title": "Navy example of coordinated fixed-wing UAV flight at Dahlgren",
+          "url": "https://www.navsea.navy.mil/Media/News/Article/610875/first-uav-flight-over-national-airspace-at-dahlgren-supports-navy-combat-system/"
         }
       ],
       "state": "VA",
@@ -17005,7 +17278,11 @@
         "Research and technical depth",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Provides publicly documented federal research, experimentation, engineering, or test capacity for autonomous and uncrewed systems.",
+      "test_access": "Military-sponsored project coordination is required. Confirm the actual runway, flight clearances, range scheduling, and current aircraft limits with the Navy.",
+      "test_aircraft": "Navy in-house UAV research, development, and testing of sensors, payloads, weapons, and engagement systems; current aircraft eligibility is not published here.",
+      "test_last_verified_at": "2026-09-29",
+      "test_source_url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/What-We-Do/PrinttheFleet/",
+      "unmanned_systems_relevance": "Military UAV integration and evaluation infrastructure for aircraft-mounted systems and combat-system test campaigns.",
       "website_url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/What-We-Do/"
     },
     {
@@ -17179,7 +17456,10 @@
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Systems engineering and integration",
-        "Testing, evaluation, verification, and validation"
+        "Testing, evaluation, verification, and validation",
+        "Perception, sensing, and sensor fusion",
+        "Simulation, digital twins, and synthetic environments",
+        "Command, control, and communications"
       ],
       "city": "Norfolk",
       "contact_email": "hchaoui@odu.edu",
@@ -17194,7 +17474,7 @@
         "Training and experimentation"
       ],
       "name": "ODU Institute for Autonomous and Connected Systems",
-      "overview": "Interdisciplinary institute researching uncrewed aerial, surface, and underwater vehicles, robotics, connected mobility, sensing, and AI. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence, Systems engineering and integration, and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+      "overview": "ODU's IACS connects researchers working on aerial, surface, underwater, and ground autonomy with industry, government, and community partners. Its practical research areas include robotics, sensor integration, intelligent transportation, connected systems, and cybersecurity. Teams can engage the institute for collaborative prototyping, simulation, and field-testing projects, as well as uncrewed-systems education and workforce connections. IACS is a research coordination route, not a guarantee that every linked laboratory or field site is available for external hire.",
       "partnership_opportunities": "The institute invites engagement with industry, government, and community partners through its published institute contact.",
       "platform_domains": [
         "Unmanned aircraft systems",
@@ -17228,7 +17508,7 @@
         "Test and operational environments",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Provides documented cross-domain autonomy research, engineering, prototyping, simulation, or field-test capacity.",
+      "unmanned_systems_relevance": "Helps a prospective partner assemble cross-domain autonomy, sensing, communications, and validation expertise around a defined research problem.",
       "website_url": "https://www.odu.edu/iacs"
     },
     {
@@ -17237,8 +17517,9 @@
       "activity_status": "active",
       "address_line": "1311 Bayville Street",
       "capabilities": [
+        "Testing, evaluation, verification, and validation",
+        "Systems engineering and integration",
         "Autonomy and artificial intelligence",
-        "Navigation and positioning",
         "Perception, sensing, and sensor fusion"
       ],
       "city": "Norfolk",
@@ -17261,11 +17542,13 @@
       "location_source_url": "https://visaatodu.org/masts/",
       "longitude": -76.28888,
       "missions": [
-        "Maritime domain awareness",
-        "Environmental monitoring"
+        "Training and experimentation",
+        "Environmental monitoring",
+        "Surveying and mapping",
+        "Infrastructure inspection"
       ],
       "name": "ODU Maritime Autonomous Systems Test Site",
-      "overview": "Willoughby Bay waterfront test site with a floating dock, crane, covered workspace, utilities, and chase boat for autonomous surface and underwater systems. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence, Navigation and positioning, and Perception, sensing, and sensor fusion. Relevant mission areas include Maritime domain awareness and Environmental monitoring.",
+      "overview": "ODU's MASTS waterfront site at Norfolk's Willoughby Boat Ramp supports surface and underwater robot testing, calibration, and research data collection. The documented setup includes a floating dock, covered work area, power and water, a 1,000-pound jib crane, and an 18-foot research chase boat. Researchers can prepare and launch prototypes, evaluate sensing and autonomy, and collect repeatable field data for uses such as environmental monitoring, surveying, and infrastructure inspection. The crane rating is not an approved vessel-size limit, and access must be arranged with ODU.",
       "owner_operator": "Old Dominion University and the City of Norfolk",
       "partnership_opportunities": "Research and external-partnership questions can be routed through ODU's National Security Institute.",
       "platform_domains": [
@@ -17320,8 +17603,8 @@
       "test_last_verified_at": "2026-09-06",
       "test_runway_length_ft": null,
       "test_source_url": "https://www.odu.edu/article/beyond-boats-and-submarines-odu-city-of-norfolk-celebrate-the-opening-of-the-maritime",
-      "unmanned_systems_relevance": "Provides documented marine robotics, autonomy, sensing, navigation, or field-test capacity for surface and undersea systems.",
-      "website_url": "https://visaatodu.org/masts/"
+      "unmanned_systems_relevance": "A practical waterfront transition from bench development to supported on-water trials of uncrewed vessels and sensors, with research and recovery infrastructure.",
+      "website_url": "https://www.odu.edu/national-security/facilities-test-environments"
     },
     {
       "activity_last_verified_at": "2026-08-25",
@@ -17442,22 +17725,27 @@
     {
       "address_line": "5115 Hampton Boulevard",
       "capabilities": [
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping",
         "Autonomy and artificial intelligence",
+        "Payloads and mission systems",
         "Testing, evaluation, verification, and validation"
       ],
       "city": "Norfolk",
-      "contact_email": "",
+      "contact_email": "dlandman@odu.edu",
       "contact_phone": "",
-      "contact_text": "Facility or operator public information",
-      "contact_url": "https://www.odu.edu/about/contact",
+      "contact_text": "Laboratory research, student-project, and use inquiries: Dr. Drew Landman.",
+      "contact_url": "https://www.odu.edu/mechanical-aerospace-engineering/instructional-laboratories/uav-lab",
       "latitude": 36.88928,
       "location_precision": "site",
       "longitude": -76.303179,
       "missions": [
-        "Training and experimentation"
+        "Training and experimentation",
+        "Search and rescue",
+        "ISR"
       ],
       "name": "ODU Unmanned and Autonomous Vehicle Laboratory",
-      "overview": "Old Dominion University laboratory supporting ground and flight autonomous-vehicle design. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+      "overview": "ODU's laboratory in Kaufman Hall supports student aircraft design, fabrication, integration, and sponsored research on aerial and surface vehicles. Published projects include the AeroVironment-sponsored Gryphon flying wing for search-and-rescue and reconnaissance concepts, with work on modular payloads, autopilots, launch, navigation, and recovery. The lab also teaches students to build and fly small aircraft. Project targets and flight demonstrations describe particular prototypes, not guaranteed commercial performance or an authorized flight area at the laboratory address.",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Cross-domain autonomy"
@@ -17487,7 +17775,7 @@
         "Test and operational environments",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
+      "unmanned_systems_relevance": "A route to student engineering teams and research expertise for prototype airframes, payload integration, autonomous flight control, and hands-on UAS education.",
       "website_url": "https://www.odu.edu/mechanical-aerospace-engineering/instructional-laboratories/uav-lab"
     },
     {
@@ -22323,8 +22611,9 @@
       "address_line": "405 Partnership Drive",
       "capabilities": [
         "Autonomy and artificial intelligence",
+        "Perception, sensing, and sensor fusion",
         "Systems engineering and integration",
-        "Manufacturing, materials, and prototyping"
+        "Testing, evaluation, verification, and validation"
       ],
       "city": "Blacksburg",
       "contact_email": "",
@@ -22335,10 +22624,11 @@
       "location_precision": "exact",
       "longitude": -80.392214,
       "missions": [
-        "Logistics and contested logistics"
+        "Logistics and contested logistics",
+        "Training and experimentation"
       ],
       "name": "Torc Robotics",
-      "overview": "Autonomous-trucking technology company founded in Blacksburg and part of Daimler Truck. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence and Systems engineering and integration. Relevant mission areas include Logistics and contested logistics.",
+      "overview": "Torc develops autonomous long-haul trucking technology focused on hub-to-hub freight operations and integration with Freightliner Cascadia trucks. Its work combines sensing, software, vehicle hardware, repeated testing, and partnerships with trucking fleets and technology suppliers. The practical opportunity is freight-autonomy development and integration, not a general-purpose robotics range or drone service. The Blacksburg location represents the company's Virginia engineering presence; deployment routes and customer availability must be confirmed separately.",
       "platform_domains": [
         "Ground vehicles and robotics"
       ],
@@ -22355,6 +22645,10 @@
         {
           "title": "Torc Robotics Blacksburg headquarters",
           "url": "https://torc.ai/about-us/blacksburg/"
+        },
+        {
+          "title": "Torc hub-to-hub autonomous trucking, safety, and partnerships",
+          "url": "https://torc.ai/"
         }
       ],
       "state": "VA",
@@ -22362,7 +22656,7 @@
         "Companies and solution providers",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Develops or integrates documented autonomous-ground-vehicle technology.",
+      "unmanned_systems_relevance": "Ground-vehicle autonomy for logistics, including perception, vehicle integration, safety evaluation, and freight-industry partnerships.",
       "website_url": "https://torc.ai/about-us/blacksburg/"
     },
     {
@@ -23559,7 +23853,9 @@
       "address_line": "1827 University Avenue",
       "capabilities": [
         "Autonomy and artificial intelligence",
-        "Perception, sensing, and sensor fusion"
+        "Perception, sensing, and sensor fusion",
+        "Systems engineering and integration",
+        "Testing, evaluation, verification, and validation"
       ],
       "city": "Charlottesville",
       "contact_email": "",
@@ -23573,7 +23869,7 @@
         "Training and experimentation"
       ],
       "name": "UVA Robotics and Autonomous Systems Research",
-      "overview": "Research program spanning autonomous vehicles, drones, multi-robot systems, and human-robot interaction. Public sources support its classification as a Virginia program. Documented capabilities include Autonomy and artificial intelligence and Perception, sensing, and sensor fusion. Relevant mission areas include Training and experimentation.",
+      "overview": "UVA's Link Lab develops robots and autonomous systems that perceive, learn, adapt, and collaborate in physical environments. Published examples include safety monitoring for autonomous racing, human-AI collaboration, and robotics research across sensing, planning, and control. Prospective partners can engage faculty on a research problem, grant proposal, student project, or workforce connection. This record describes research expertise; the university address is not proof that a full-scale aircraft or road vehicle can be tested there.",
       "platform_domains": [
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
@@ -23591,6 +23887,14 @@
         {
           "title": "University of Virginia campus location (NCES IPEDS 2024)",
           "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+        },
+        {
+          "title": "UVA Link Lab robotics and autonomous-system research examples",
+          "url": "https://engineering.virginia.edu/labs-groups/link-lab/research/robotics-and-autonomous-systems"
+        },
+        {
+          "title": "UVA Link Lab research partnership routes",
+          "url": "https://engineering.virginia.edu/labs-groups/link-lab/research"
         }
       ],
       "state": "VA",
@@ -23599,7 +23903,7 @@
         "Multi-domain missions",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Develops robotics, perception, planning, control, or connected-vehicle capabilities that support autonomous ground and cross-domain systems.",
+      "unmanned_systems_relevance": "Research support for reliable perception, planning, control, and human-robot collaboration, including validation of autonomous-system behavior.",
       "website_url": "https://www.engineering.virginia.edu/labs-groups/link-lab/research/robotics-and-autonomous-systems"
     },
     {
@@ -23930,7 +24234,10 @@
       "address_line": "910 W Franklin St",
       "capabilities": [
         "Autonomy and artificial intelligence",
-        "Perception, sensing, and sensor fusion"
+        "Perception, sensing, and sensor fusion",
+        "Simulation, digital twins, and synthetic environments",
+        "Navigation and positioning",
+        "Testing, evaluation, verification, and validation"
       ],
       "city": "Richmond",
       "contact_email": "",
@@ -23944,7 +24251,7 @@
         "Training and experimentation"
       ],
       "name": "VCU Autonomous Robots and Vehicles Laboratory",
-      "overview": "Research laboratory for autonomous vehicles, coordinated robotics, sensing, control, and AI. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence and Perception, sensing, and sensor fusion. Relevant mission areas include Training and experimentation.",
+      "overview": "VCU's ARVL combines mobile robots, scaled traffic environments, networked driving simulators, an autonomous car, and indoor nano drones. Researchers can compare lane keeping, collision avoidance, platooning, intersection control, teleoperation, and cooperative perception before more expensive field trials. Full-cabin and desktop simulators support shared scenarios and human-in-the-loop work, while indoor positioning supports experiments across aerial and ground robots. These are laboratory and research platforms, not evidence of a public road-test corridor or unrestricted outdoor drone range.",
       "platform_domains": [
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
@@ -23962,6 +24269,10 @@
         {
           "title": "Virginia Commonwealth University campus location (NCES IPEDS 2024)",
           "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+        },
+        {
+          "title": "VCU ARVL test paradigms, robots, simulators, and cooperative perception",
+          "url": "https://arvl.lab.vcu.edu/capabilities-and-equipment/"
         }
       ],
       "state": "VA",
@@ -23970,7 +24281,11 @@
         "Multi-domain missions",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Develops robotics, perception, planning, control, or connected-vehicle capabilities that support autonomous ground and cross-domain systems.",
+      "test_access": "Arrange a research project with VCU ARVL. Laboratory equipment listings do not establish public booking, outdoor flight permission, or on-road authorization.",
+      "test_aircraft": "Indoor nano drones, mobile robots, scaled autonomous cars, driving simulators, and a research autonomous vehicle.",
+      "test_last_verified_at": "2026-09-29",
+      "test_source_url": "https://arvl.lab.vcu.edu/capabilities-and-equipment/",
+      "unmanned_systems_relevance": "A staged, repeatable test environment for vehicle autonomy, multi-agent coordination, human-machine interaction, and aerial-ground cooperative sensing.",
       "website_url": "https://arvl.lab.vcu.edu/"
     },
     {
@@ -24458,7 +24773,10 @@
     {
       "capabilities": [
         "Autonomy and artificial intelligence",
-        "Perception, sensing, and sensor fusion"
+        "Perception, sensing, and sensor fusion",
+        "Navigation and positioning",
+        "Command, control, and communications",
+        "Testing, evaluation, verification, and validation"
       ],
       "city": "Fairfax",
       "contact_email": "inquiries@vtti.vt.edu",
@@ -24477,7 +24795,7 @@
         "Training and experimentation"
       ],
       "name": "Virginia Automated Corridors",
-      "overview": "Northern Virginia road network and test environments supporting automated-vehicle development. Public sources support its classification as a Virginia operating environment. Documented capabilities include Autonomy and artificial intelligence and Perception, sensing, and sensor fusion. Relevant mission areas include Training and experimentation.",
+      "overview": "VTTI's Virginia Automated Corridors provide a progression from controlled test tracks to real-world automated-vehicle research. The published network includes more than 70 miles of Northern Virginia interstates and arterials, alongside closed facilities at the Smart Roads and Virginia International Raceway. Resources include high-definition mapping, traffic and incident information, positioning, and connected-vehicle communications. Vehicle developers and suppliers can evaluate how systems behave in realistic roadway conditions through coordinated projects. This is a distributed ground-vehicle network, not a statewide drone corridor or an unrestricted public-road test permission.",
       "platform_domains": [
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
@@ -24513,7 +24831,7 @@
       "test_last_verified_at": "2026-09-06",
       "test_runway_length_ft": null,
       "test_source_url": "https://www.vtti.vt.edu/facilities/vac.html",
-      "unmanned_systems_relevance": "Develops robotics, perception, planning, control, or connected-vehicle capabilities that support autonomous ground and cross-domain systems.",
+      "unmanned_systems_relevance": "Supports staged validation of automated driving, localization, and connected-vehicle technology from controlled environments to road-network conditions.",
       "website_url": "https://www.vtti.vt.edu/facilities/vac.html"
     },
     {
@@ -25568,7 +25886,8 @@
       "address_line": "1245 Pine Tree Road",
       "capabilities": [
         "Autonomy and artificial intelligence",
-        "Perception, sensing, and sensor fusion"
+        "Perception, sensing, and sensor fusion",
+        "Testing, evaluation, verification, and validation"
       ],
       "city": "Alton",
       "contact_email": "",
@@ -25582,7 +25901,7 @@
         "Training and experimentation"
       ],
       "name": "Virginia International Raceway Automated Vehicle Test Environment",
-      "overview": "Road-course test environment identified by VEDP as part of Virginia's automated-vehicle ecosystem. Public sources support its classification as a Virginia operating environment. Documented capabilities include Autonomy and artificial intelligence and Perception, sensing, and sensor fusion. Relevant mission areas include Training and experimentation.",
+      "overview": "VTTI's collaboration with Virginia International Raceway provides a configurable road-course environment for vehicle research in closed-course and open-traffic conditions. The operator describes five course configurations ranging from 1.1 to 4.2 miles, including hairpin curves and blind passes. Such controlled routes support vehicle evaluations before live-road deployment. The adjacent GCAPS center provides separate tire-modeling and simulation resources; the two are not the same facility. Testing requires an agreed project and schedule with the operators.",
       "platform_domains": [
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
@@ -25612,7 +25931,12 @@
         "Multi-domain missions",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Develops robotics, perception, planning, control, or connected-vehicle capabilities that support autonomous ground and cross-domain systems.",
+      "test_access": "Discuss the project, operating conditions, and track availability with VTTI and VIR; ordinary visitor or driving-event access is not research authorization.",
+      "test_aircraft": "Ground-vehicle research through the VTTI/VIR collaboration; the cited facility description does not establish UAS permissions.",
+      "test_dimensions": "Five road-course configurations from 1.1 to 4.2 miles, with curves and blind passes. These are road-course lengths, not aircraft runway dimensions.",
+      "test_last_verified_at": "2026-09-29",
+      "test_source_url": "https://www.vtti.vt.edu/facilities/vir.html",
+      "unmanned_systems_relevance": "A physical road-course option for evaluating automated and connected vehicles through configurable geometry, complementing virtual and tire-model validation.",
       "website_url": "https://www.vtti.vt.edu/facilities/vir.html"
     },
     {
@@ -25959,7 +26283,9 @@
       "address_line": "3500 Transportation Research Plaza",
       "capabilities": [
         "Autonomy and artificial intelligence",
-        "Perception, sensing, and sensor fusion"
+        "Perception, sensing, and sensor fusion",
+        "Testing, evaluation, verification, and validation",
+        "Systems engineering and integration"
       ],
       "city": "Blacksburg",
       "contact_email": "inquiries@vtti.vt.edu",
@@ -25979,7 +26305,7 @@
         "Training and experimentation"
       ],
       "name": "Virginia Smart Road",
-      "overview": "Controlled transportation test facility used for connected and automated vehicle research. Public sources support its classification as a Virginia operating environment. Documented capabilities include Autonomy and artificial intelligence and Perception, sensing, and sensor fusion. Relevant mission areas include Training and experimentation.",
+      "overview": "VTTI's Smart Roads combine controlled highway, surface-street, rural, and unimproved-road environments for automated and connected vehicle research. The operator publishes more than seven miles of roadbed, reconfigurable intersections, different pavement types, weather-making equipment, lighting controls, and monitoring infrastructure. Teams can compare vehicle and sensing behavior under repeatable road conditions before moving to live traffic. VTTI also lists UAS testing capability, but the road mileage is not a runway length and drone operations require project-specific coordination.",
       "platform_domains": [
         "Ground vehicles and robotics",
         "Cross-domain autonomy"
@@ -26016,7 +26342,7 @@
       "test_last_verified_at": "2026-09-06",
       "test_runway_length_ft": null,
       "test_source_url": "https://www.vtti.vt.edu/facilities/virginia-smart-roads.html",
-      "unmanned_systems_relevance": "Develops robotics, perception, planning, control, or connected-vehicle capabilities that support autonomous ground and cross-domain systems.",
+      "unmanned_systems_relevance": "Repeatable perception, vehicle-control, and integration testing across road and environmental conditions, with operator-coordinated UAS research also documented.",
       "website_url": "https://www.vtti.vt.edu/facilities/virginia-smart-roads.html"
     },
     {
@@ -26489,7 +26815,9 @@
       "capabilities": [
         "Autonomy and artificial intelligence",
         "Navigation and positioning",
-        "Perception, sensing, and sensor fusion"
+        "Command, control, and communications",
+        "Systems engineering and integration",
+        "Testing, evaluation, verification, and validation"
       ],
       "city": "Blacksburg",
       "contact_email": "",
@@ -26500,11 +26828,12 @@
       "location_precision": "site",
       "longitude": -80.423675,
       "missions": [
-        "Maritime domain awareness",
+        "Training and experimentation",
+        "Surveying and mapping",
         "Environmental monitoring"
       ],
       "name": "Virginia Tech Center for Marine Autonomy and Robotics",
-      "overview": "Interdisciplinary center developing autonomous marine vehicles, navigation, control, and multi-agent systems. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence, Navigation and positioning, and Perception, sensing, and sensor fusion. Relevant mission areas include Maritime domain awareness and Environmental monitoring.",
+      "overview": "Virginia Tech's marine robotics center develops autonomous underwater vehicles and the algorithms that let them navigate, communicate, and work in teams. Its VT690 research vehicles carry bathymetric sonar and use acoustic communications and aided inertial navigation. Published work covers cooperative feature mapping, underwater communication prediction, hydrodynamic design, and vehicle control. A partner can engage the research team on marine autonomy or prototype development; the Blacksburg university address does not identify an ocean launch site or a publicly bookable maritime range.",
       "platform_domains": [
         "Maritime surface systems",
         "Undersea systems"
@@ -26522,6 +26851,14 @@
         {
           "title": "Virginia Tech campus location (NCES IPEDS 2024)",
           "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+        },
+        {
+          "title": "Virginia Tech marine autonomy and cooperative AUV research",
+          "url": "https://marinerobotics.centers.vt.edu/Research1/Research_autonomy.html"
+        },
+        {
+          "title": "Virginia Tech VT690 and autonomous underwater vehicle platforms",
+          "url": "https://marinerobotics.centers.vt.edu/Research1/Autonomous_vehicles.html"
         }
       ],
       "state": "VA",
@@ -26530,20 +26867,22 @@
         "Test and operational environments",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Provides documented marine robotics, autonomy, sensing, navigation, or field-test capacity for surface and undersea systems.",
+      "unmanned_systems_relevance": "Research expertise and demonstrator vehicles for underwater navigation, cooperative surveying, acoustic communications, vehicle design, and multi-agent autonomy.",
       "website_url": "https://marinerobotics.centers.vt.edu/index.html"
     },
     {
       "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
       "capabilities": [
         "Perception, sensing, and sensor fusion",
-        "Testing, evaluation, verification, and validation"
+        "Testing, evaluation, verification, and validation",
+        "Systems engineering and integration",
+        "Autonomy and artificial intelligence"
       ],
       "city": "Blacksburg",
       "contact_email": "",
       "contact_phone": "",
-      "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://news.vt.edu/articles/2025/04/research-counteruascenter.html",
+      "contact_text": "CTRC research inquiries: published center contact Austin Phoenix, Mission Systems Division.",
+      "contact_url": "https://nationalsecurity.vt.edu/about/centers-facilities.html",
       "latitude": 37.229012,
       "location_precision": "site",
       "longitude": -80.423675,
@@ -26552,7 +26891,7 @@
         "Force protection and installation security"
       ],
       "name": "Virginia Tech Counter UAS Research and Testing Center",
-      "overview": "Research and testing center with outdoor, indoor, and virtual counter-UAS laboratories. Public sources support its classification as a Virginia facility. Documented capabilities include Perception, sensing, and sensor fusion and Testing, evaluation, verification, and validation. Relevant mission areas include Counter-UAS and Force protection and installation security.",
+      "overview": "Virginia Tech's counter-UAS center brings together autonomy, sensing, and radio-frequency expertise to evaluate technologies for detecting, tracking, identifying, and countering drones. VTNSI describes controlled laboratories and access to a 1,800-acre outdoor research environment for government and industry projects. Users can investigate detection performance and integrated counter-UAS concepts under instrumented conditions. The existing campus marker is a university reference, not the outdoor range. Farm acreage does not establish a flight boundary, and a research capability does not authorize private jamming or drone defeat.",
       "platform_domains": [
         "Counter-UAS",
         "Unmanned aircraft systems"
@@ -26574,6 +26913,10 @@
         {
           "title": "Virginia Tech Counter-UAS Testing and Research Center",
           "url": "https://nationalsecurity.vt.edu/research/sdd.html"
+        },
+        {
+          "title": "VTNSI counter-UAS center, research environment, and contact",
+          "url": "https://nationalsecurity.vt.edu/about/centers-facilities.html"
         }
       ],
       "state": "VA",
@@ -26582,7 +26925,12 @@
         "Test and operational environments",
         "Core unmanned-systems asset"
       ],
-      "unmanned_systems_relevance": "Provides documented counter-UAS research, testing, and evaluation capabilities.",
+      "test_access": "Contact VTNSI about a government or industry research project. Confirm site, equipment, legal authority, and approvals; counter-UAS research does not grant jamming or mitigation authority.",
+      "test_aircraft": "Counter-UAS research involving detection, tracking, identification, and evaluation of system concepts; platform and effectors eligibility is project-specific.",
+      "test_dimensions": "VTNSI describes controlled laboratories and 1,800 acres of outdoor research environment. That acreage is not a published authorized flight polygon.",
+      "test_last_verified_at": "2026-09-29",
+      "test_source_url": "https://nationalsecurity.vt.edu/about/centers-facilities.html",
+      "unmanned_systems_relevance": "Partner-facing evaluation of counter-drone sensing and system performance, linking laboratory work with controlled outdoor trials.",
       "website_url": "https://nationalsecurity.vt.edu/research/sdd.html"
     },
     {
@@ -27033,6 +27381,67 @@
       ],
       "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
       "website_url": "https://spacedrones.aoe.vt.edu/"
+    },
+    {
+      "address_line": "Stability Wind Tunnel, Old Turner Street",
+      "capabilities": [
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Blacksburg",
+      "contact_email": "devenport@vt.edu",
+      "contact_phone": "540-231-4456",
+      "contact_text": "Dr. William Devenport, tunnel director; prospective-customer information and scheduling.",
+      "contact_url": "https://www.aoe.vt.edu/research/facilities/stabilitytunnel.html",
+      "latitude": 37.231062,
+      "location_last_verified_at": "2026-09-29",
+      "location_method": "geocoded",
+      "location_notes": "Named wind-tunnel footprint on Old Turner Street, rather than the department's temporary office address. The university's published upgrade plan retains the tunnel at this location; confirm current access during construction.",
+      "location_precision": "site",
+      "location_role": "test-site",
+      "location_source_url": "https://www.openstreetmap.org/way/461103807",
+      "longitude": -80.423161,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Virginia Tech Stability Wind Tunnel",
+      "overview": "Virginia Tech's Stability Wind Tunnel offers aerodynamic and aeroacoustic experiments for university and industrial projects. Its interchangeable acoustic test section and published rotor-measurement work make it an enabling resource for investigating airfoil behavior, rotor noise, and computational predictions relevant to drones and AAM. It is not a UAS flight range. The university publishes a major-upgrade and construction plan, so prospective users should confirm the current configuration and schedule.",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Advanced Air Mobility"
+      ],
+      "postal_code": "24061",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "New River Valley",
+      "short_description": "University aerodynamic and aeroacoustic test facility for model, rotor, noise, and computational-validation experiments.",
+      "sources": [
+        {
+          "title": "Virginia Tech Stability Wind Tunnel capabilities, dimensions, and contacts",
+          "url": "https://www.aoe.vt.edu/research/facilities/stabilitytunnel.html"
+        },
+        {
+          "title": "Virginia Tech Stability Wind Tunnel major-upgrade and construction plan",
+          "url": "https://www.aoe.vt.edu/content/aoe_vt_edu/en/research/facilities/stabilitytunnel/2025beyond.html"
+        },
+        {
+          "title": "Public named-site footprint of the Stability Wind Tunnel",
+          "url": "https://www.openstreetmap.org/way/461103807"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Test and operational environments",
+        "Research and technical depth",
+        "Supporting ecosystem asset"
+      ],
+      "test_access": "Academic and industrial project inquiries go to the published tunnel contacts. Check scheduling and the major-upgrade plan before assuming availability.",
+      "test_aircraft": "Models and experimental articles suited to the tunnel configuration; aircraft and rotor suitability must be confirmed with the tunnel team.",
+      "test_dimensions": "Published test section is 1.85 by 1.85 meters, with a maximum speed of 80 meters per second and a removable anechoic section.",
+      "test_last_verified_at": "2026-09-29",
+      "test_runway_length_ft": null,
+      "test_source_url": "https://www.aoe.vt.edu/research/facilities/stabilitytunnel.html",
+      "unmanned_systems_relevance": "Supporting laboratory capability for air-vehicle design and noise evaluation, rather than a dedicated autonomy range or guaranteed full-aircraft test service.",
+      "website_url": "https://www.aoe.vt.edu/research/facilities/stabilitytunnel.html"
     },
     {
       "address_line": "3500 Transportation Research Plaza",
@@ -28802,7 +29211,7 @@
         "Training and experimentation"
       ],
       "name": "Xelevate Leesburg Unmanned Systems Facility",
-      "overview": "Dedicated Loudoun County facility for unmanned-systems testing, development, training, and demonstrations. Public sources support its classification as a Virginia operating environment. Documented capabilities include Testing, evaluation, verification, and validation and Systems engineering and integration. Relevant mission areas include Training and experimentation.",
+      "overview": "Xelevate's 66-acre fenced Leesburg campus supports air and ground unmanned-systems testing, training, and customer demonstrations. The operator lists Group 1-2 UAS under 55 pounds, broadband connectivity, workspaces, and storage. Teams can use it to integrate equipment, rehearse operations, and show prototypes to government or industry stakeholders. The separately described Luray mountain range is not part of this campus. Aircraft suitability, bookings, and mission approvals must be agreed with Xelevate.",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Ground vehicles and robotics",
@@ -28839,7 +29248,62 @@
       "test_last_verified_at": "2026-09-06",
       "test_runway_length_ft": null,
       "test_source_url": "https://xelevateus.com/leesburg-virginia/",
-      "unmanned_systems_relevance": "Provides a publicly documented environment for unmanned-system testing, training, demonstration, validation, or operational integration.",
+      "unmanned_systems_relevance": "Private range and workspace for small-UAS and ground-system integration, training, and demonstrations; not a general authorization for any advertised mission.",
+      "website_url": "https://xelevateus.com/leesburg-virginia/"
+    },
+    {
+      "address_line": "",
+      "capabilities": [
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Luray",
+      "contact_email": "jburkel@xelevateus.com",
+      "contact_phone": "571-919-1948",
+      "contact_text": "Xelevate's published inquiry and reservation contact; ask specifically about the Luray range.",
+      "contact_url": "https://xelevateus.com/leesburg-virginia/",
+      "latitude": null,
+      "location_last_verified_at": "2026-09-29",
+      "location_method": "unmapped",
+      "location_notes": "Xelevate describes a distinct range in Luray but does not publish a precise site address or operating boundary on the page reviewed. No town-center point is substituted.",
+      "location_precision": "regional",
+      "location_role": "test-site",
+      "location_source_url": "https://xelevateus.com/leesburg-virginia/",
+      "longitude": null,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Xelevate Luray Mountain Range",
+      "overview": "Xelevate identifies a separate Luray range for testing Group 1-3 UAS in mountainous terrain. It gives teams a different evaluation environment from the operator's fenced Leesburg campus, particularly for terrain-dependent flight experiments. The operator publishes acreage and aircraft-group scope, but not a site point or detailed operating envelope. Coordinate the proposed aircraft, mission, approvals, and booking directly with Xelevate.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "",
+      "provenance": "curated-public-source",
+      "record_type": "operating-environment",
+      "region": "Shenandoah Valley",
+      "short_description": "Operator-described 300-acre mountain range for Group 1-3 UAS testing, distinct from Xelevate's Leesburg campus.",
+      "sources": [
+        {
+          "title": "Xelevate operator description of the Luray mountain range and contact",
+          "url": "https://xelevateus.com/leesburg-virginia/"
+        },
+        {
+          "title": "Xelevate range operator and public project-inquiry contact",
+          "url": "https://xelevateus.com/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Test and operational environments",
+        "Core unmanned-systems asset"
+      ],
+      "test_access": "Arrange use with Xelevate; do not assume that Leesburg's aircraft restrictions or permissions apply to this distinct site.",
+      "test_aircraft": "Operator-reported Group 1-3 UAS; confirm the particular aircraft and proposed operation.",
+      "test_dimensions": "Operator reports 300 acres of mountainous terrain. Acreage is not a mapped flight-permission boundary; runway and launch-pad dimensions are not published.",
+      "test_last_verified_at": "2026-09-29",
+      "test_runway_length_ft": null,
+      "test_source_url": "https://xelevateus.com/leesburg-virginia/",
+      "unmanned_systems_relevance": "A documented mountain-terrain option for UAS evaluation; terrain-specific trial design is a potential use, not a published authorization for BVLOS or other restricted operations.",
       "website_url": "https://xelevateus.com/leesburg-virginia/"
     },
     {
@@ -28899,7 +29363,9 @@
       "address_line": "10517 Critzers Shop Road",
       "capabilities": [
         "Systems engineering and integration",
-        "Operations, maintenance, and sustainment",
+        "Payloads and mission systems",
+        "Command, control, and communications",
+        "Propulsion, batteries, fuels, and energy systems",
         "Manufacturing, materials, and prototyping"
       ],
       "city": "Afton",
@@ -28911,11 +29377,13 @@
       "location_precision": "exact",
       "longitude": -78.825996,
       "missions": [
-        "Infrastructure inspection",
-        "Logistics and contested logistics"
+        "ISR",
+        "Communications relay",
+        "Public safety and emergency response",
+        "Force protection and installation security"
       ],
       "name": "Zenith Aerotech",
-      "overview": "Virginia manufacturer of tethered unmanned aircraft systems for public-safety, defense, and industrial applications. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+      "overview": "Zenith Aerotech supplies tethered aircraft and ground-power systems for persistent surveillance, elevated radio relays, and aerial lighting. The tether supplies power and carries data, while payload configurations can combine cameras, communications equipment, and other sensors. This is useful where a team needs an elevated sensor or antenna to remain near one location, rather than travel a long route. Product altitude, endurance, and payload claims are configuration-specific manufacturer information; confirm system suitability and flight approvals for the intended mission.",
       "platform_domains": [
         "Unmanned aircraft systems"
       ],
@@ -28932,6 +29400,10 @@
         {
           "title": "Zenith AeroTech contact information",
           "url": "https://zenithaerotech.com/tethered-drone-contact-us/"
+        },
+        {
+          "title": "Zenith tethered UAS, ground power, communications, and lighting applications",
+          "url": "https://zenithaerotech.com/"
         }
       ],
       "state": "VA",
@@ -28940,8 +29412,8 @@
         "Core unmanned-systems asset",
         "Manufacturing facilities"
       ],
-      "unmanned_systems_relevance": "Provides documented UAS technology, aircraft, services, integration, or operations.",
-      "website_url": "https://zenithaerotech.com/about-us-tethered-drone/"
+      "unmanned_systems_relevance": "Tethered platforms for sustained observation, temporary communications coverage, and illumination in public-safety, defense, and industrial operations.",
+      "website_url": "https://zenithaerotech.com/"
     }
   ],
   "relationships": [
