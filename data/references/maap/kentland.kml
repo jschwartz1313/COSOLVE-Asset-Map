@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>MAAP Kentland Farm Flight Area</name>
+    <Placemark>
+      <name>MAAP Kentland Farm Flight Area</name>
+      <Polygon>
+        <tessellate>1</tessellate>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+						-80.58622146114874,37.18335678817044,0 -80.57893953183489,37.18810159711283,0 -80.57066323144622,37.19383367995382,0 -80.56732598465658,37.19770217942295,0 -80.56359881348445,37.19934293222007,0 -80.57212943854566,37.21107706582776,0 -80.58641786951078,37.20706772411586,0 -80.58772605870057,37.2096938671436,0 -80.60920630577165,37.2116797806526,0 -80.59966544962073,37.20331897386768,0 -80.59617140824773,37.19408233518479,0 -80.59181144254353,37.18668228403685,0 -80.58622146114874,37.18335678817044,0
+					</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Document>
+</kml>

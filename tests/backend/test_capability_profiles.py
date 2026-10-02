@@ -12,7 +12,7 @@ from apps.assets.management.commands.apply_catalog_corrections import TAXONOMY_F
 from apps.assets.models import Asset
 from apps.catalog.models import Capability
 from apps.sources.models import Source
-from scripts.build_real_asset_catalog import apply_reviewed_corrections
+from scripts.build_real_asset_catalog import MAAP_CORRECTIONS_PATH, apply_reviewed_corrections
 
 MANIFEST = settings.BASE_DIR / "data/capability_profiles_2026_09_07.json"
 CATALOG = settings.BASE_DIR / "data/virginia_real_assets.json"
@@ -22,6 +22,10 @@ class CapabilityManifestTests(SimpleTestCase):
     def test_all_profiles_have_evidence_and_preserve_identity_and_location(self):
         records = {r["name"]: r for r in json.loads(CATALOG.read_text())["records"]}
         changes = json.loads(MANIFEST.read_text())["corrections"]
+        followups = {
+            c["name"]: c["after"]
+            for c in json.loads(MAAP_CORRECTIONS_PATH.read_text())["corrections"]
+        }
         self.assertEqual(len(changes), 18)
         self.assertEqual(len({c["name"] for c in changes}), 18)
         allowed = {
@@ -64,7 +68,8 @@ class CapabilityManifestTests(SimpleTestCase):
                     self.assertIn(after["test_source_url"], urls)
                     self.assertIsNone(after["test_runway_length_ft"])
                 for field, value in after.items():
-                    self.assertEqual(records[change["name"]][field], value)
+                    expected = followups.get(change["name"], {}).get(field, value)
+                    self.assertEqual(records[change["name"]][field], expected)
 
     def test_scope_and_maturity_caveats_are_retained(self):
         records = {r["name"]: r for r in json.loads(CATALOG.read_text())["records"]}

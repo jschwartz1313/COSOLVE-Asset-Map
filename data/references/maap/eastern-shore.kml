@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>MAAP Eastern Shore Offshore Flight Area</name>
+    <Placemark>
+      <name>MAAP Eastern Shore Offshore Flight Area</name>
+      <Polygon>
+        <tessellate>1</tessellate>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+						-76.00319,37.354519,0 -76.024722,37.666667,0 -76.014167,37.683333,0 -76.014167,37.833333,0 -76.041389,37.920833,0 -75.653611,37.781944,0 -75.525278,37.649167,0 -75.32154199999999,37.603206,0 -75.452011,37.354519,0 -76.00319,37.354519,0
+					</coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+  </Document>
+</kml>

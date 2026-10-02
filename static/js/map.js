@@ -501,6 +501,51 @@ export function createMap(root) {
   let uasTestSitesLoaded = false;
   let uasTestSitesVisible = false;
 
+  map.createPane("maap-flight-areas");
+  map.getPane("maap-flight-areas").style.zIndex = 360;
+  const maapFlightAreasLayer = window.L.geoJSON(null, {
+    pane: "maap-flight-areas",
+    style(feature) {
+      return {
+        color: "#794969",
+        fillColor: "#794969",
+        fillOpacity: 0.1,
+        weight: 2,
+        dashArray: feature.properties.draft ? "7 5" : null,
+      };
+    },
+    onEachFeature(feature, boundary) {
+      const properties = feature.properties;
+      const tooltip = document.createElement("span");
+      tooltip.textContent = `${properties.name}${properties.draft ? " (draft)" : ""}`;
+      boundary.bindTooltip(tooltip, { direction: "top", sticky: true });
+      boundary.bindPopup(referencePopup({
+        status: properties.draft ? "MAAP reference · Draft source" : "MAAP supplied reference",
+        title: properties.name,
+        entries: [
+          ["Outline status", properties.boundary_status],
+          ["Imported", properties.imported_at],
+          ["Reported size", properties.published_size],
+          ["Reported altitude", properties.altitude_limit],
+          ["Aircraft", properties.aircraft_scope],
+          ["Launch and recovery", properties.launch_recovery],
+          ["Conditions", properties.constraints],
+          ["Access", properties.access],
+        ],
+        links: [["Asset profile", properties.asset_url], ["Source notes", properties.source_url]],
+      }), {
+        className: "maap-flight-popup",
+        keepInView: true,
+        autoPanPaddingTopLeft: [12, 110],
+        autoPanPaddingBottomRight: [12, 12],
+        maxWidth: Math.max(160, Math.min(390, map.getSize().x - 40)),
+        maxHeight: Math.max(160, Math.min(420, map.getSize().y - 170)),
+      });
+    },
+  });
+  let maapFlightAreasLoaded = false;
+  let maapFlightAreasVisible = false;
+
   function heliportPopup(properties) {
     const popup = document.createElement("section");
     popup.className = "heliport-popup";
@@ -898,6 +943,23 @@ export function createMap(root) {
     if (uasTestSitesVisible) uasTestSitesLayer.addTo(map);
   }
 
+  async function setMaapFlightAreasVisible(visible) {
+    maapFlightAreasVisible = visible;
+    if (!visible) {
+      maapFlightAreasLayer.removeFrom(map);
+      return;
+    }
+    if (!maapFlightAreasLoaded) {
+      const response = await fetch(root.dataset.maapFlightAreasUrl, {
+        headers: { Accept: "application/geo+json, application/json" },
+      });
+      if (!response.ok) throw new Error(`MAAP flight-area request failed: ${response.status}`);
+      maapFlightAreasLayer.addData(await response.json());
+      maapFlightAreasLoaded = true;
+    }
+    if (maapFlightAreasVisible) maapFlightAreasLayer.addTo(map);
+  }
+
   map.createPane("analysis-selection");
   map.getPane("analysis-selection").style.zIndex = 390;
   let selectionRectangle = null;
@@ -1178,6 +1240,7 @@ export function createMap(root) {
     setStateBoundaryVisible,
     setUasFacilityMapVisible,
     setUasTestSitesVisible,
+    setMaapFlightAreasVisible,
     setVerificationLayerVisible,
     setViewState,
     showAreaSelection,

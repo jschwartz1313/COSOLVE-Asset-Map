@@ -1,0 +1,380 @@
+{
+  "generated_at": "2026-10-02",
+  "record_count": 6,
+  "methodology": "MAAP-supplied flight-area, capability and September 2026 Smart Airspace briefings. Operating-area records describe operator-managed research environments, not public flight authorizations. Regional entries have no invented point. New records are source-backed and await editorial review.",
+  "records": [
+    {
+      "name": "MAAP Kentland Farm Flight Area",
+      "city": "Blacksburg",
+      "region": "New River Valley",
+      "record_type": "operating-environment",
+      "overview": "MAAP's supplied briefing describes a Kentland research flight area near Blacksburg, with aircraft up to 1,320 lb and a ceiling up to 700 ft AGL under its test-site approval. The team supplied a geographic outline for ecosystem reference. The approximately 2.5-sq-mi flight-area figure and 1,800-acre farm describe different resources. This operating-area entry is distinct from the Kentland laboratory runway and CTRC equipment; the outline is not permission for independent public flights.",
+      "unmanned_systems_relevance": "A MAAP-coordinated environment for aircraft, sensor and flight-test research using Kentland launch/recovery and engineering resources.",
+      "search_aliases": "Kentland COA\nKentland Farm UAS Test Site\n2024-ESA-15752-44803",
+      "state": "VA",
+      "provenance": "curated-public-source",
+      "address_line": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_method": "unmapped",
+      "location_role": "service-area",
+      "location_last_verified_at": "2026-10-02",
+      "postal_code": "",
+      "test_runway_length_ft": null,
+      "short_description": "MAAP-described UAS research flight area: Blacksburg.",
+      "website_url": "https://maap.ictas.vt.edu/capabilities/facilities.html",
+      "contact_url": "https://maap.ictas.vt.edu/Contact.html",
+      "contact_text": "MAAP project and flight-operations coordination; confirm current approvals, aircraft eligibility and site access.",
+      "contact_email": "maapinfo@vt.edu",
+      "contact_phone": "540-231-9416",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Testing, evaluation, verification, and validation",
+        "Safety, policy, regulatory, and airspace integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "strategic_categories": [
+        "Test and operational environments",
+        "Core unmanned-systems asset"
+      ],
+      "test_aircraft": "Aircraft up to 1,320 lb under MAAP's described test-site approval; aircraft and mission eligibility require confirmation",
+      "test_dimensions": "Approximately 2.5 sq mi flight area; 1,800-acre research farm (different measures). 300-ft runway and hangar at Kentland Experimental Aerial Systems Laboratory. Up to 700 ft AGL, as stated in the supplied MAAP briefing.",
+      "test_access": "Coordinate with MAAP. Adjacent Radford Army Ammunition Plant acreage is not included in this supplied outline and is not available by implication. Obtain the current COA and project release from MAAP; this reference does not authorize flight.",
+      "test_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#kentland",
+      "test_last_verified_at": "2026-10-02",
+      "location_notes": "Geographic area, not a point. View the MAAP supplied outlines layer; no airport or polygon centroid is substituted as an exact launch location.",
+      "location_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#kentland",
+      "sources": [
+        {
+          "title": "MAAP supplied flight-area and facility summary",
+          "url": "https://cosolve-asset-map.onrender.com/references/maap/#kentland"
+        },
+        {
+          "title": "MAAP official facilities and flight-approval coordination",
+          "url": "https://maap.ictas.vt.edu/capabilities/facilities.html"
+        },
+        {
+          "title": "MAAP official public contact",
+          "url": "https://maap.ictas.vt.edu/Contact.html"
+        }
+      ]
+    },
+    {
+      "name": "MAAP Central Virginia Flight Area",
+      "city": "Central Virginia",
+      "region": "Central Virginia",
+      "record_type": "operating-environment",
+      "overview": "MAAP's supplied briefing describes an approximately 4,500-sq-mi Central Virginia test environment, aircraft up to 1,320 lb and flights up to 7,000 ft MSL under its approval. The corridor supports longer-distance research with Crewe Airport runway/hangar resources and borders the separate Blackstone Class D area. The geographic file's internal folder is explicitly labeled COA DRAFT 108625. Its outline is displayed as provisional reference data, not a verified current approval boundary. The briefing acreage/area claim is not a measurement of that polygon.",
+      "unmanned_systems_relevance": "A described MAAP-managed setting for longer-distance UAS flight trials and integration research; proposed missions require MAAP confirmation of current approval, geographic limits and supporting-site access.",
+      "search_aliases": "Central Virginia COA\nCentral VA COA\n2024-ESA-15755-44803\nCOA DRAFT 108625",
+      "state": "VA",
+      "provenance": "curated-public-source",
+      "address_line": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_method": "unmapped",
+      "location_role": "service-area",
+      "location_last_verified_at": "2026-10-02",
+      "postal_code": "",
+      "test_runway_length_ft": null,
+      "short_description": "MAAP-described UAS research flight area: Central Virginia (supplied outline is draft).",
+      "website_url": "https://maap.ictas.vt.edu/capabilities/facilities.html",
+      "contact_url": "https://maap.ictas.vt.edu/Contact.html",
+      "contact_text": "MAAP project and flight-operations coordination; confirm current approvals, aircraft eligibility and site access.",
+      "contact_email": "maapinfo@vt.edu",
+      "contact_phone": "540-231-9416",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Testing, evaluation, verification, and validation",
+        "Safety, policy, regulatory, and airspace integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "strategic_categories": [
+        "Test and operational environments",
+        "Core unmanned-systems asset"
+      ],
+      "test_aircraft": "Aircraft up to 1,320 lb under MAAP's described test-site approval; aircraft and mission eligibility require confirmation",
+      "test_dimensions": "Approximately 4,500 sq mi in the briefing; not a measurement of the supplied polygon. Briefing identifies a 3,000-ft runway and hangar at Crewe Airport as supporting infrastructure. Up to 7,000 ft MSL, as stated in the supplied MAAP briefing.",
+      "test_access": "Supplied corridor outline skirts the Blackstone Class D area. Its draft labeling must be resolved with MAAP before operational use; airport access and current airspace approvals are separate. Obtain the current COA and project release from MAAP; this reference does not authorize flight.",
+      "test_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#central-virginia",
+      "test_last_verified_at": "2026-10-02",
+      "location_notes": "Geographic area, not a point. View the MAAP supplied outlines layer; no airport or polygon centroid is substituted as an exact launch location.",
+      "location_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#central-virginia",
+      "sources": [
+        {
+          "title": "MAAP supplied flight-area and facility summary",
+          "url": "https://cosolve-asset-map.onrender.com/references/maap/#central-virginia"
+        },
+        {
+          "title": "MAAP official facilities and flight-approval coordination",
+          "url": "https://maap.ictas.vt.edu/capabilities/facilities.html"
+        },
+        {
+          "title": "MAAP official public contact",
+          "url": "https://maap.ictas.vt.edu/Contact.html"
+        }
+      ]
+    },
+    {
+      "name": "MAAP Blackstone Class D Flight Area",
+      "city": "Blackstone",
+      "region": "Southside Virginia",
+      "record_type": "operating-environment",
+      "overview": "MAAP's supplied briefing describes a test-site operating area in Blackstone Class D airspace, a 4.2-nm airport radius, approximately 73 sq mi, flights up to 2,500 ft MSL and aircraft up to 1,320 lb. R-6602A is explicitly excluded. No Blackstone boundary file was supplied, so no approximate circle or airport-centered asset pin is used for this operating-area record. It is distinct from the airport and Smart Airspace vertiport. The actual current approval and civil/military coordination govern any proposed research flight.",
+      "unmanned_systems_relevance": "A described dual-use controlled-airspace research environment for MAAP-coordinated UAS testing and airspace integration, subject to the operator's current approval and restricted-area exclusions.",
+      "search_aliases": "Blackstone COA\nKBKT COA\n2024-ESA-15770-44803",
+      "state": "VA",
+      "provenance": "curated-public-source",
+      "address_line": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_method": "unmapped",
+      "location_role": "service-area",
+      "location_last_verified_at": "2026-10-02",
+      "postal_code": "",
+      "test_runway_length_ft": null,
+      "short_description": "MAAP-described UAS research flight area: Blackstone.",
+      "website_url": "https://maap.ictas.vt.edu/capabilities/facilities.html",
+      "contact_url": "https://maap.ictas.vt.edu/Contact.html",
+      "contact_text": "MAAP project and flight-operations coordination; confirm current approvals, aircraft eligibility and site access.",
+      "contact_email": "maapinfo@vt.edu",
+      "contact_phone": "540-231-9416",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Testing, evaluation, verification, and validation",
+        "Safety, policy, regulatory, and airspace integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "strategic_categories": [
+        "Test and operational environments",
+        "Core unmanned-systems asset"
+      ],
+      "test_aircraft": "Aircraft up to 1,320 lb under MAAP's described test-site approval; aircraft and mission eligibility require confirmation",
+      "test_dimensions": "Briefing describes a 4.2-nm radius around KBKT and approximately 73 sq mi. Joint civil/military Blackstone Army Airfield environment; site arrangements are mission-specific. Up to 2,500 ft MSL, as stated in the supplied MAAP briefing.",
+      "test_access": "Briefing explicitly excludes R-6602A. A simple airport-centered circle would omit this condition and is therefore not drawn. Obtain the current COA and project release from MAAP; this reference does not authorize flight.",
+      "test_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#blackstone",
+      "test_last_verified_at": "2026-10-02",
+      "location_notes": "No Blackstone geographic file supplied; no boundary generated from the diagram",
+      "location_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#blackstone",
+      "sources": [
+        {
+          "title": "MAAP supplied flight-area and facility summary",
+          "url": "https://cosolve-asset-map.onrender.com/references/maap/#blackstone"
+        },
+        {
+          "title": "MAAP official facilities and flight-approval coordination",
+          "url": "https://maap.ictas.vt.edu/capabilities/facilities.html"
+        },
+        {
+          "title": "MAAP official public contact",
+          "url": "https://maap.ictas.vt.edu/Contact.html"
+        }
+      ]
+    },
+    {
+      "name": "MAAP Eastern Shore Offshore Flight Area",
+      "city": "Accomack County",
+      "region": "Eastern Shore",
+      "record_type": "operating-environment",
+      "overview": "MAAP's supplied Accomack offshore briefing describes an over-water test environment based at Accomack County Airport, aircraft up to 1,320 lb and flights up to 3,000 ft MSL under its approval. The one-page overview reports approximately 990 sq mi and a 5,000-ft supporting runway. The team supplied a geographic outline, which is retained without clipping away the water areas. The briefing discusses warning-area provisions and adjoining R-6609; it is not the full COA, and area figures are not computed from the supplied outline. Confirm chase-aircraft arrangements, current approval and airport access with MAAP.",
+      "unmanned_systems_relevance": "A described MAAP-coordinated over-water research environment for UAS mission and sensor trials, supported by Accomack County Airport and project-specific airspace arrangements.",
+      "search_aliases": "Eastern Shore COA\nAccomack Offshore COA\nAccomack Off-Shore\nEasternShoreCOA",
+      "state": "VA",
+      "provenance": "curated-public-source",
+      "address_line": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_method": "unmapped",
+      "location_role": "service-area",
+      "location_last_verified_at": "2026-10-02",
+      "postal_code": "",
+      "test_runway_length_ft": null,
+      "short_description": "MAAP-described UAS research flight area: Accomack offshore.",
+      "website_url": "https://maap.ictas.vt.edu/capabilities/facilities.html",
+      "contact_url": "https://maap.ictas.vt.edu/Contact.html",
+      "contact_text": "MAAP project and flight-operations coordination; confirm current approvals, aircraft eligibility and site access.",
+      "contact_email": "maapinfo@vt.edu",
+      "contact_phone": "540-231-9416",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Testing, evaluation, verification, and validation",
+        "Safety, policy, regulatory, and airspace integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "strategic_categories": [
+        "Test and operational environments",
+        "Core unmanned-systems asset"
+      ],
+      "test_aircraft": "Aircraft up to 1,320 lb under MAAP's described test-site approval; aircraft and mission eligibility require confirmation",
+      "test_dimensions": "Approximately 990 sq mi in the briefing; not a measurement of the supplied polygon. Accomack County Airport is the described base of operations; overview lists a 5,000-ft runway. Up to 3,000 ft MSL, as stated in the supplied MAAP briefing.",
+      "test_access": "Over-water and warning-area research environment adjoining R-6609. Briefing describes different chase-aircraft provisions within the warning area; obtain the actual conditions from MAAP before planning a flight. Obtain the current COA and project release from MAAP; this reference does not authorize flight.",
+      "test_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#eastern-shore",
+      "test_last_verified_at": "2026-10-02",
+      "location_notes": "Geographic area, not a point. View the MAAP supplied outlines layer; no airport or polygon centroid is substituted as an exact launch location.",
+      "location_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#eastern-shore",
+      "sources": [
+        {
+          "title": "MAAP supplied flight-area and facility summary",
+          "url": "https://cosolve-asset-map.onrender.com/references/maap/#eastern-shore"
+        },
+        {
+          "title": "MAAP official facilities and flight-approval coordination",
+          "url": "https://maap.ictas.vt.edu/capabilities/facilities.html"
+        },
+        {
+          "title": "MAAP official public contact",
+          "url": "https://maap.ictas.vt.edu/Contact.html"
+        }
+      ]
+    },
+    {
+      "name": "Blackstone Smart Airspace Vertiport",
+      "city": "Blackstone",
+      "region": "Southside Virginia",
+      "record_type": "facility",
+      "short_description": "Smart Airspace research and demonstration vertiport at Blackstone Army Airfield (KBKT).",
+      "overview": "The supplied September 2026 Smart Airspace briefing identifies an active vertiport node at Blackstone Army Airfield, within a Class D dual-use civil/military environment. It reports specialized approach and departure procedures activated on March 19, 2026 and Aerosonde/EL2 flight demonstrations. The node is distinct from the public airport record and MAAP Class D flight area. The briefing shows the pad but does not supply surveyed coordinates or pad/load specifications, so no invented exact pin is published. Confirm current procedure availability and site permissions with the project team.",
+      "unmanned_systems_relevance": "A demonstration node for integrating AAM and uncrewed flights into existing instrument-flight and civil/military airport arrangements.",
+      "search_aliases": "KBKT Vertiport\nBlackstone Vertiport\nSmart Airspace Blackstone",
+      "website_url": "https://doav.virginia.gov/advanced_air_mobility/",
+      "contact_url": "https://doav.virginia.gov/advanced_air_mobility/",
+      "contact_email": "scott.denny@doav.virginia.gov",
+      "contact_phone": "804-236-3638",
+      "contact_text": "Virginia Department of Aviation AAM program contact; coordinate specific operations with MAAP and the airfield.",
+      "platform_domains": [
+        "Advanced Air Mobility",
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Safety, policy, regulatory, and airspace integration",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "strategic_categories": [
+        "Test and operational environments",
+        "Physical infrastructure and logistics",
+        "Core unmanned-systems asset"
+      ],
+      "test_aircraft": "AAM/UAS demonstrations; the supplied briefing reports Aerosonde and Electra EL2 flights, not a generally available aircraft operating envelope.",
+      "test_dimensions": "Vertiport node in the Blackstone dual-use airport environment. Pad dimensions and aircraft/load limits are not supplied.",
+      "test_access": "Arrange access and current instrument/airspace approvals with the project team and airfield. Public airport status does not make this research pad or its procedures available without coordination.",
+      "test_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace",
+      "test_last_verified_at": "2026-10-02",
+      "activity_status": "pilot",
+      "current_activity": "September 2026 briefing reports an active Blackstone node, March 19 procedure activation and demonstration flights. Current operational availability is not independently verified.",
+      "activity_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace",
+      "activity_last_verified_at": "2026-10-02",
+      "location_notes": "Distinct vertiport shown in the supplied briefing, but no surveyed geographic point supplied. Do not reuse the airport reference point as a precise vertiport location.",
+      "location_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace",
+      "sources": [
+        {
+          "title": "MAAP supplied September 2026 Smart Airspace node and milestone summary",
+          "url": "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace"
+        },
+        {
+          "title": "Virginia Department of Aviation AAM program and public contact",
+          "url": "https://doav.virginia.gov/advanced_air_mobility/"
+        }
+      ],
+      "state": "VA",
+      "provenance": "curated-public-source",
+      "address_line": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_method": "unmapped",
+      "location_role": "test-site",
+      "location_last_verified_at": "2026-10-02",
+      "postal_code": "",
+      "test_runway_length_ft": null
+    },
+    {
+      "name": "Roanoke Smart Airspace Demonstration Vertiport",
+      "city": "Roanoke",
+      "region": "Roanoke Valley",
+      "record_type": "facility",
+      "short_description": "Temporary Smart Airspace demonstration vertiport at Roanoke-Blacksburg Regional Airport (KROA).",
+      "overview": "The supplied September 2026 Smart Airspace briefing describes a temporary vertiport at Roanoke-Blacksburg Regional Airport in Class C airspace. It reports temporary landing-area designation filing, flight validation, an instrument-procedure package submission and an Electra EL2 demonstration. The temporary pad is distinct from the airport reference point. A permanent vertiport location and ongoing availability are not established, so the record is unpinned rather than placed at the airport center. It documents a demonstration environment, not a confirmed permanent public AAM service.",
+      "unmanned_systems_relevance": "A demonstration setting for integrating AAM aircraft into a commercial-airport controlled-airspace environment and the Smart Airspace network.",
+      "search_aliases": "KROA Vertiport\nRoanoke Vertiport\nSmart Airspace Roanoke\nSite C",
+      "website_url": "https://flyroa.com/",
+      "contact_url": "https://doav.virginia.gov/advanced_air_mobility/",
+      "contact_email": "scott.denny@doav.virginia.gov",
+      "contact_phone": "804-236-3638",
+      "contact_text": "Virginia Department of Aviation AAM program contact; coordinate airport arrangements and research access separately.",
+      "platform_domains": [
+        "Advanced Air Mobility"
+      ],
+      "capabilities": [
+        "Safety, policy, regulatory, and airspace integration",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "strategic_categories": [
+        "Test and operational environments",
+        "Physical infrastructure and logistics",
+        "Core unmanned-systems asset"
+      ],
+      "test_aircraft": "Electra EL2 demonstration reported in the September 2026 briefing. It does not establish a general UAS operating envelope or open vertiport service.",
+      "test_dimensions": "Temporary demonstration landing area within a Class C commercial-airport environment; permanent-site specifications are not supplied.",
+      "test_access": "Contact the Smart Airspace project team and airport. Confirm whether the temporary facility is available, current procedures and approvals; do not assume a permanent operating site.",
+      "test_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace",
+      "test_last_verified_at": "2026-10-02",
+      "activity_status": "pilot",
+      "current_activity": "September 2026 briefing reports a temporary landing-area filing, flight validation, procedure-package submission and EL2 demonstration. Permanent location remains unconfirmed.",
+      "activity_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace",
+      "activity_last_verified_at": "2026-10-02",
+      "location_notes": "Temporary Site C is illustrated in the supplied briefing. No surveyed pad point or permanent site location is supplied; the airport reference point is not substituted.",
+      "location_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace",
+      "sources": [
+        {
+          "title": "MAAP supplied temporary Roanoke Smart Airspace demonstration summary",
+          "url": "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace"
+        },
+        {
+          "title": "Roanoke-Blacksburg Regional Airport official website",
+          "url": "https://flyroa.com/"
+        },
+        {
+          "title": "Virginia Department of Aviation AAM program and public contact",
+          "url": "https://doav.virginia.gov/advanced_air_mobility/"
+        }
+      ],
+      "state": "VA",
+      "provenance": "curated-public-source",
+      "address_line": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_method": "unmapped",
+      "location_role": "test-site",
+      "location_last_verified_at": "2026-10-02",
+      "postal_code": "",
+      "test_runway_length_ft": null
+    }
+  ]
+}

@@ -414,7 +414,7 @@ class SavedViewTests(TestCase):
             "&map_lat=36.91235&map_lon=-76.30123&map_zoom=11"
             "&map_layers=assets%2Cstate%2Cmpz%2Ccounties%2Cheliports%2C"
             "controlled-airspace%2Cuas-facility-map%2Cflight-constraints%2C"
-            "uas-test-sites%2Cverification"
+            "uas-test-sites%2Cmaap-flight-areas%2Cverification"
             "&map_layers_v=5&map_basemap=light"
         )
         response = self.client.post(

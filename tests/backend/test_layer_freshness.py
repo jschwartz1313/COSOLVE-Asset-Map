@@ -46,7 +46,7 @@ class LayerFreshnessTests(SimpleTestCase):
         html = render_to_string("map/viewer.html", {
             "layer_freshness": result, "request": RequestFactory().get("/map/"),
         })
-        self.assertEqual(html.count('class="layer-freshness'), 5)
+        self.assertEqual(html.count('class="layer-freshness'), 6)
         self.assertIn("Snapshot", html)
         self.assertIn("not live flight permissions", html)
         self.assertNotIn("retrieved August 12, 2026", html)

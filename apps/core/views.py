@@ -1,3 +1,4 @@
+import json
 from urllib.parse import urlencode
 
 from django.conf import settings
@@ -283,6 +284,11 @@ def about_data(request):
             ).aggregate(latest=Max("last_checked_at"))["latest"],
         },
     )
+
+
+def maap_reference(request):
+    reference = json.loads((settings.BASE_DIR / "data/maap_reference_2026_10_02.json").read_text())
+    return render(request, "core/maap_reference.html", {"reference": reference})
 
 
 def suggest_update(request, slug=None):

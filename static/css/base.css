@@ -184,6 +184,10 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
 .about-grid { display: grid; grid-template-columns: minmax(0,1fr) 320px; gap: 70px; padding-top: 38px; }
 .about-grid article section { padding-bottom: 26px; margin-bottom: 26px; border-bottom: 1px solid var(--line); }
 .about-grid h2 { font-size: 20px; }.about-grid p { color: var(--ink-muted); line-height: 1.7; }
+.maap-reference-specs { display: grid; grid-template-columns: minmax(110px, 0.4fr) minmax(0, 1fr); gap: 8px 16px; margin: 16px 0; }
+.maap-reference-specs dt { font-weight: 700; }
+.maap-reference-specs dd { margin: 0; overflow-wrap: anywhere; }
+@media (max-width: 600px) { .maap-reference-specs { grid-template-columns: 1fr; gap: 4px; } .maap-reference-specs dd { margin-bottom: 12px; } }
 .methodology-panel { align-self: start; padding: 22px; border: 1px solid var(--line); background: var(--paper); }
 .methodology-panel dl { margin: 0; }.methodology-panel dt { margin-top: 18px; color: var(--ink-muted); font-size: 11px; font-weight: 800; text-transform: uppercase; }.methodology-panel dd { margin: 5px 0; font-size: 13px; }
 .methodology-panel > .button { margin-top: 24px; }

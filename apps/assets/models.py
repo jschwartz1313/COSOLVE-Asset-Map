@@ -646,6 +646,7 @@ class SavedView(models.Model):
                 "uas-facility-map",
                 "flight-constraints",
                 "uas-test-sites",
+                "maap-flight-areas",
                 "verification",
                 "precision",
                 "relationships",

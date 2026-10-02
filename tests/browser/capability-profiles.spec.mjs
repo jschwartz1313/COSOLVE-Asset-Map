@@ -26,7 +26,8 @@ test("new testing and collaboration information fits all designs", async ({ page
     await enterSite(page);
     await page.goto("/assets/mid-atlantic-aviation-partnership/");
     await expect(page.locator("[data-showcase-cover]")).toBeHidden();
-    await expect(page.locator(".test-specifications")).toContainText("no single MAAP-wide runway");
+    await expect(page.locator(".test-specifications")).toContainText("four described Virginia flight areas");
+    await expect(page.locator(".test-specifications")).toContainText("not unrestricted operation by other users");
     await expect(page.locator(".activity-section")).toContainText("Contact MAAP");
     const overflow = await page.locator("h1, .detail-main p, .test-spec-list dd, .detail-sidebar dd")
       .evaluateAll((elements) => elements.filter((el) => el.scrollWidth > el.clientWidth + 1)

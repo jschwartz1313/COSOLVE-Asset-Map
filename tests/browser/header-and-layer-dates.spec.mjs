@@ -49,6 +49,7 @@ test("dated reference controls fit on small screens and preserve the map", async
     ["uas-facility-map-toggle", "virginia-uas-facility-map.geojson"],
     ["flight-constraints-toggle", "virginia-flight-constraints.geojson"],
     ["uas-test-sites-toggle", "virginia-uas-test-sites.geojson"],
+    ["maap-flight-areas-toggle", "maap-flight-areas.geojson"],
   ];
   await page.goto("/map/");
   await expect(page.locator(".asset-marker, .marker-cluster").first()).toBeVisible();

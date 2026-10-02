@@ -11,7 +11,7 @@ import {
   featuresWithinRadius,
   summarizeRegion,
 } from "./map-analysis.js?v=20260906-2";
-import { createMap } from "./map.js?v=20260928-1";
+import { createMap } from "./map.js?v=20261002-1";
 import {
   analysisStateFromParams,
   filterParamsFromMapUrl,
@@ -20,7 +20,7 @@ import {
   serializePolygonAnalysis,
   serializeRadiusAnalysis,
   serializeRectangleAnalysis,
-} from "./map-state.js?v=20260928-1";
+} from "./map-state.js?v=20261002-1";
 import { bindPanelResizers } from "./panel-resize.js?v=20260821-1";
 import { renderResults, selectResult } from "./results.js?v=20260906-1";
 import { hydrateForm, paramsFromForm, updateUrl } from "./state.js?v=20260928-1";
@@ -51,6 +51,7 @@ const controlledAirspaceToggle = document.querySelector("#controlled-airspace-to
 const uasFacilityMapToggle = document.querySelector("#uas-facility-map-toggle");
 const flightConstraintsToggle = document.querySelector("#flight-constraints-toggle");
 const uasTestSitesToggle = document.querySelector("#uas-test-sites-toggle");
+const maapFlightAreasToggle = document.querySelector("#maap-flight-areas-toggle");
 const stateBoundaryToggle = document.querySelector("#state-boundary-toggle");
 const verificationLayerToggle = document.querySelector("#verification-layer-toggle");
 const precisionLayerToggle = document.querySelector("#precision-layer-toggle");
@@ -107,6 +108,7 @@ function applyLayerToggleState(state) {
   uasFacilityMapToggle.checked = layers.includes("uas-facility-map");
   flightConstraintsToggle.checked = layers.includes("flight-constraints");
   uasTestSitesToggle.checked = layers.includes("uas-test-sites");
+  maapFlightAreasToggle.checked = layers.includes("maap-flight-areas");
   verificationLayerToggle.checked = layers.includes("verification");
   precisionLayerToggle.checked = layers.includes("precision");
   const basemap = state?.basemap || "street";
@@ -170,6 +172,7 @@ function currentLayers() {
   if (uasFacilityMapToggle.checked) layers.push("uas-facility-map");
   if (flightConstraintsToggle.checked) layers.push("flight-constraints");
   if (uasTestSitesToggle.checked) layers.push("uas-test-sites");
+  if (maapFlightAreasToggle.checked) layers.push("maap-flight-areas");
   if (verificationLayerToggle.checked) layers.push("verification");
   if (precisionLayerToggle.checked) layers.push("precision");
   return layers;
@@ -650,6 +653,11 @@ const updateUasTestSitesLayer = bindReferenceLayer({
   setVisible: (visible) => mapController.setUasTestSitesVisible(visible),
   failureMessage: "UAS test-facility data could not be loaded.",
 });
+const updateMaapFlightAreasLayer = bindReferenceLayer({
+  toggle: maapFlightAreasToggle,
+  setVisible: (visible) => mapController.setMaapFlightAreasVisible(visible),
+  failureMessage: "MAAP supplied flight-area outlines could not be loaded.",
+});
 
 async function copyCurrentView() {
   const url = currentMapUrl();
@@ -806,6 +814,7 @@ async function syncLayerVisibility() {
     updateUasFacilityMapLayer(),
     updateFlightConstraintsLayer(),
     updateUasTestSitesLayer(),
+    updateMaapFlightAreasLayer(),
   ]);
 }
 

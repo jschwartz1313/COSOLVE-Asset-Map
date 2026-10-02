@@ -1,0 +1,31 @@
+{
+  "retrieved_at": "2026-10-02",
+  "source_url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%278VA2%27&outFields=IDENT%2CNAME%2COPERSTATUS%2CPRIVATEUSE&returnGeometry=true&outSR=4326&f=geojson",
+  "payload": {
+    "type": "FeatureCollection",
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "EPSG:4326"
+      }
+    },
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.395372220582,
+            37.1901373093657
+          ]
+        },
+        "properties": {
+          "IDENT": "8VA2",
+          "NAME": "Virginia Tech Vertiport",
+          "OPERSTATUS": "OPERATIONAL",
+          "PRIVATEUSE": 1
+        }
+      }
+    ]
+  }
+}

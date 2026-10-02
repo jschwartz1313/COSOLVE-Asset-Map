@@ -1,0 +1,95 @@
+{
+  "imported_at": "2026-10-02",
+  "source": "Virginia Tech Mid-Atlantic Aviation Partnership (MAAP), material supplied for the asset map",
+  "source_note": "Summaries of the supplied MAAP briefing, flight-area overview, geographic files, and September 2026 Smart Airspace briefing. Import date is not an approval date. The source package does not establish current COA validity, complete conditions, or general public access.",
+  "contact_url": "https://maap.ictas.vt.edu/Contact.html",
+  "contact_email": "maapinfo@vt.edu",
+  "areas": [
+    {
+      "id": "kentland",
+      "name": "MAAP Kentland Farm Flight Area",
+      "asset_slug": "maap-kentland-farm-flight-area",
+      "source_file": "Kentand Farms.kml",
+      "geometry_file": "kentland.kml",
+      "boundary_status": "Operator-supplied reference outline; current approval not independently checked",
+      "draft": false,
+      "published_size": "Approximately 2.5 sq mi flight area; 1,800-acre research farm (different measures)",
+      "altitude_limit": "Up to 700 ft AGL, as stated in the supplied MAAP briefing",
+      "aircraft_scope": "Aircraft up to 1,320 lb under MAAP's described test-site approval; aircraft and mission eligibility require confirmation",
+      "launch_recovery": "300-ft runway and hangar at Kentland Experimental Aerial Systems Laboratory",
+      "constraints": "Coordinate with MAAP. Adjacent Radford Army Ammunition Plant acreage is not included in this supplied outline and is not available by implication.",
+      "coa_reference": "2024-ESA-15752-44803 (briefing reference; validity and conditions not checked)",
+      "source_sha256": "a64819f4d465bcff59ef001b34dd29e9d22bb12bfe7993b3e2051c7868add05c"
+    },
+    {
+      "id": "central-virginia",
+      "name": "MAAP Central Virginia Flight Area",
+      "asset_slug": "maap-central-virginia-flight-area",
+      "source_file": "Central VA COA Operations Area.kmz",
+      "geometry_file": "central-virginia.kml",
+      "boundary_status": "Source KML folder is labeled COA DRAFT 108625; provisional reference outline",
+      "draft": true,
+      "published_size": "Approximately 4,500 sq mi in the briefing; not a measurement of the supplied polygon",
+      "altitude_limit": "Up to 7,000 ft MSL, as stated in the supplied MAAP briefing",
+      "aircraft_scope": "Aircraft up to 1,320 lb under MAAP's described test-site approval; aircraft and mission eligibility require confirmation",
+      "launch_recovery": "Briefing identifies a 3,000-ft runway and hangar at Crewe Airport as supporting infrastructure",
+      "constraints": "Supplied corridor outline skirts the Blackstone Class D area. Its draft labeling must be resolved with MAAP before operational use; airport access and current airspace approvals are separate.",
+      "coa_reference": "2024-ESA-15755-44803 (briefing reference; validity and conditions not checked)",
+      "source_sha256": "479211e5788e5d9032c963bac4216beaf7b4d3878e097f632da73cd3da00b126"
+    },
+    {
+      "id": "blackstone",
+      "name": "MAAP Blackstone Class D Flight Area",
+      "asset_slug": "maap-blackstone-class-d-flight-area",
+      "source_file": "",
+      "geometry_file": "",
+      "boundary_status": "No Blackstone geographic file supplied; no boundary generated from the diagram",
+      "draft": false,
+      "published_size": "Briefing describes a 4.2-nm radius around KBKT and approximately 73 sq mi",
+      "altitude_limit": "Up to 2,500 ft MSL, as stated in the supplied MAAP briefing",
+      "aircraft_scope": "Aircraft up to 1,320 lb under MAAP's described test-site approval; aircraft and mission eligibility require confirmation",
+      "launch_recovery": "Joint civil/military Blackstone Army Airfield environment; site arrangements are mission-specific",
+      "constraints": "Briefing explicitly excludes R-6602A. A simple airport-centered circle would omit this condition and is therefore not drawn.",
+      "coa_reference": "2024-ESA-15770-44803 (briefing reference; validity and conditions not checked)"
+    },
+    {
+      "id": "eastern-shore",
+      "name": "MAAP Eastern Shore Offshore Flight Area",
+      "asset_slug": "maap-eastern-shore-offshore-flight-area",
+      "source_file": "EasternShoreCOA.kmz",
+      "geometry_file": "eastern-shore.kml",
+      "boundary_status": "Operator-supplied reference outline; current approval not independently checked",
+      "draft": false,
+      "published_size": "Approximately 990 sq mi in the briefing; not a measurement of the supplied polygon",
+      "altitude_limit": "Up to 3,000 ft MSL, as stated in the supplied MAAP briefing",
+      "aircraft_scope": "Aircraft up to 1,320 lb under MAAP's described test-site approval; aircraft and mission eligibility require confirmation",
+      "launch_recovery": "Accomack County Airport is the described base of operations; overview lists a 5,000-ft runway",
+      "constraints": "Over-water and warning-area research environment adjoining R-6609. Briefing describes different chase-aircraft provisions within the warning area; obtain the actual conditions from MAAP before planning a flight.",
+      "coa_reference": "No identifier provided in the supplied summary",
+      "source_sha256": "1da92c8864f4c2036534f9d2450bcb151e78ef1d17becb86df0378156f2bf233"
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "maap",
+      "title": "MAAP test and evaluation",
+      "text": "The briefing describes technology assessment, test planning, safety cases, operator training, custom aircraft design and airworthiness review. MAAP can match a research mission to a site, mobile operations resources and the appropriate approval pathway. BVLOS arrangements, observers, chase aircraft and external FAA/FCC coordination are project-specific, not blanket privileges for map users.",
+      "source_file": "MAAP Overview and C-UAS briefing.pptx, slides 6-12 and 19-26",
+      "official_url": "https://maap.ictas.vt.edu/capabilities/test-evaluation.html"
+    },
+    {
+      "id": "ctrc",
+      "title": "Counter-UAS Testing and Research Center at Kentland",
+      "text": "The briefing describes a 14-by-50-ft test management building, a 20-by-25-ft equipment platform elevated 20 ft with power and internet, secure equipment storage and mobile-system hookups. A diverse drone library supports repeatable sensor trials and comparison of sensor tracks with aircraft truth data. Example metrics include detection probability, useful range, track accuracy, latency, false/usable alerts, data quality and human factors. Terrain and time-of-day scenarios help assess performance outside a laboratory. The 2,300-m circle in a slide is a scenario illustration, not a published sensor guarantee or flight boundary.",
+      "source_file": "MAAP Overview and C-UAS briefing.pptx, slides 14-26",
+      "official_url": "https://nationalsecurity.vt.edu/about/centers-facilities.html"
+    },
+    {
+      "id": "smart-airspace",
+      "title": "Smart Airspace network",
+      "text": "The September 2026 briefing describes three nodes linked through an IFR-integration research program: Virginia Tech 8VA2 (private, prior permission required), Blackstone KBKT and a temporary Roanoke KROA demonstration site. VTTI site improvements, state licensing and flight validation were reported complete, with its instrument-procedure package submitted to the FAA. Blackstone approach and departure procedures were reported activated March 19, 2026. Roanoke was described as temporary, with a permanent location not established. The briefing reports Aerosonde flights in July and Electra EL2 flights in September 2026. Procedure submissions, flight demonstrations and a functioning public commercial service are different milestones. Proprietary approach designs and operational waypoints are not reproduced here.",
+      "source_file": "VA AAM Smart Airspace_Sept 2026.pdf, pages 4-11",
+      "official_url": "https://doav.virginia.gov/advanced_air_mobility/"
+    }
+  ]
+}

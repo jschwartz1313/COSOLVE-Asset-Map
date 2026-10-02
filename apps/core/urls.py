@@ -17,6 +17,7 @@ urlpatterns = [
     ),
     path("regions/compare/", views.region_compare, name="region-compare"),
     path("about-data/", views.about_data, name="about-data"),
+    path("references/maap/", views.maap_reference, name="maap-reference"),
     path("suggest-update/", views.suggest_update, name="suggest-update"),
     path("suggest-update/thanks/", views.update_thanks, name="update-thanks"),
     path(

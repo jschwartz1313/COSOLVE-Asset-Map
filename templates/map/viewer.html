@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20260928-1">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20261002-1">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
@@ -23,6 +23,7 @@
       data-uas-facility-map-url="{% static 'data/virginia-uas-facility-map.geojson' %}?v={{ layer_freshness.uas_facility_map.version }}"
       data-flight-constraints-url="{% static 'data/virginia-flight-constraints.geojson' %}?v={{ layer_freshness.flight_constraints.version }}"
       data-uas-test-sites-url="{% static 'data/virginia-uas-test-sites.geojson' %}?v={{ layer_freshness.uas_test_sites.version }}"
+      data-maap-flight-areas-url="{% static 'data/maap-flight-areas.geojson' %}?v={{ layer_freshness.maap_flight_areas.version }}"
       data-faa-uasfm-info-url="https://www.faa.gov/uas/getting_started/laanc"
       data-faa-airspace-info-url="https://www.faa.gov/uas/getting_started/where_can_i_fly/airspace_restrictions/flying_near_airports"
       data-faa-data-info-url="https://udds-faa.opendata.arcgis.com/"
@@ -66,6 +67,7 @@
         <p><strong>Drone airspace:</strong> FAA UAS Facility Map, Class Airspace, Special Use Airspace, and National Security UAS Flight Restrictions feature services. Snapshot dates appear beside each layer. These are downloaded reference snapshots, not live restrictions or flight permissions.</p>
         <p><strong>Refresh reviews:</strong> Airspace weekly, heliports every 28 days, and test-facility specifications every 90 days. A snapshot date records retrieval, not operational verification. Updated datasets are checked before publication.</p>
         <p><strong>UAS test facilities:</strong> Published specifications from the Virginia Spaceport Authority, NASA Langley Research Center, and Virginia Tech.</p>
+        <p><strong>MAAP flight areas:</strong> Three operator-supplied reference outlines imported October 2, 2026. Central Virginia is labeled draft; no Blackstone outline was supplied. <a href="{% url 'core:maap-reference' %}">Sources and reported conditions</a>. These outlines are not current flight authorization.</p>
       </div>
     </details>
     <section class="print-analysis-report" aria-label="Printable asset register">
@@ -133,6 +135,7 @@
             <p class="layer-reference-note">Reference snapshots, not live flight permissions. <a href="https://www.faa.gov/uas/getting_started/where_can_i_fly" target="_blank" rel="noopener">Check current FAA guidance</a>.</p>
             <strong>Test infrastructure</strong>
             <label title="Show Virginia UAS test facilities with published dimensions and operating constraints"><input id="uas-test-sites-toggle" type="checkbox"><span>UAS test facilities{% include "includes/layer_freshness.html" with layer=layer_freshness.uas_test_sites %}</span></label>
+            <label title="Show three MAAP-supplied reference outlines; Central Virginia is draft, not current flight authorization"><input id="maap-flight-areas-toggle" type="checkbox"><span>MAAP flight-area outlines{% include "includes/layer_freshness.html" with layer=layer_freshness.maap_flight_areas %}</span></label>
             <strong>Point analysis</strong>
             <label title="Outline points by editorial review state"><input id="verification-layer-toggle" type="checkbox"><span>Verification status</span></label>
             <label title="Differentiate points by coordinate precision"><input id="precision-layer-toggle" type="checkbox"><span>Location precision</span></label>
@@ -181,6 +184,11 @@
               <strong>Test infrastructure</strong>
               <span><i class="legend-test-site" aria-hidden="true"><img src="{% static 'img/icons/legend/radar.svg' %}" alt=""></i>UAS test facility</span>
             </div>
+            <div class="legend-analysis-group" data-legend-toggle="maap-flight-areas-toggle" hidden>
+              <strong>MAAP reference outlines</strong>
+              <span><i class="legend-maap-area"></i>Supplied outline</span>
+              <span><i class="legend-maap-area draft"></i>Draft source outline</span>
+            </div>
             <div class="legend-analysis-group" data-legend-toggle="verification-layer-toggle" data-legend-requires-assets data-verification-legend hidden>
               <strong>Verification</strong>
               <span><i class="legend-ring reviewed"></i>Reviewed</span>
@@ -226,6 +234,6 @@
 </main>
 <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
 <script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
-  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20260928-1"></script>
+  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20261002-1"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}

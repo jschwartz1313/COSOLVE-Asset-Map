@@ -20,6 +20,7 @@ from apps.assets.models import Asset
 from apps.catalog.models import Region
 from apps.sources.models import Source
 from scripts.build_real_asset_catalog import (
+    MAAP_CORRECTIONS_PATH,
     TEST_CAPABILITY_PROFILES_PATH,
     TEST_ENVIRONMENT_EXPANSION_PATH,
     apply_reviewed_corrections,
@@ -35,6 +36,10 @@ class TestEnvironmentManifestTests(SimpleTestCase):
         catalog = json.loads(CATALOG.read_text())
         by_name = {r["name"]: r for r in catalog["records"]}
         changes = json.loads(TEST_CAPABILITY_PROFILES_PATH.read_text())["corrections"]
+        followups = {
+            c["name"]: c["after"]
+            for c in json.loads(MAAP_CORRECTIONS_PATH.read_text())["corrections"]
+        }
         self.assertEqual(len(changes), 29)
         self.assertEqual(len({c["name"] for c in changes}), 29)
         for change in changes:
@@ -51,7 +56,8 @@ class TestEnvironmentManifestTests(SimpleTestCase):
                     if after.get(field):
                         self.assertIn(after[field], urls)
                 for field, value in after.items():
-                    self.assertEqual(record[field], value)
+                    expected = followups.get(change["name"], {}).get(field, value)
+                    self.assertEqual(record[field], expected)
                 for baseline in change.get("accepted_baselines", []):
                     self.assertEqual(set(baseline), set(after))
         validate(

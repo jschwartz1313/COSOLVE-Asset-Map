@@ -327,9 +327,10 @@ class RealCatalogFileTests(TestCase):
                 "Virginia Tech VTTI Smart Airspace Vertiport",
             }.issubset(records_by_name)
         )
-        self.assertIsNone(
-            records_by_name["Virginia Tech VTTI Smart Airspace Vertiport"]["latitude"]
-        )
+        vertiport = records_by_name["Virginia Tech VTTI Smart Airspace Vertiport"]
+        self.assertEqual(vertiport["location_precision"], "site")
+        self.assertIn("8VA2", vertiport["location_notes"])
+        self.assertIn("arcgis.com", vertiport["location_source_url"])
         self.assertEqual(
             records_by_name["Robin Radar USA Sterling Operations Center"]["website_url"],
             "https://www.robinradar.com/locations",
@@ -440,6 +441,11 @@ class RealCatalogFileTests(TestCase):
         source_backed_additions.update(
             record["name"] for record in json.loads(
                 (settings.BASE_DIR / "data/asset_expansion_2026_09_29.json").read_text()
+            )["records"]
+        )
+        source_backed_additions.update(
+            record["name"] for record in json.loads(
+                (settings.BASE_DIR / "data/asset_expansion_2026_10_02.json").read_text()
             )["records"]
         )
         reviewed_or_flagged = (

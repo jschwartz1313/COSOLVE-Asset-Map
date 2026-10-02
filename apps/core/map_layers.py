@@ -14,6 +14,7 @@ REFERENCE_LAYERS = {
     "uas_facility_map": ("virginia-uas-facility-map.geojson", 7),
     "flight_constraints": ("virginia-flight-constraints.geojson", 7),
     "uas_test_sites": ("virginia-uas-test-sites.geojson", 90),
+    "maap_flight_areas": ("maap-flight-areas.geojson", 90),
 }
 
 

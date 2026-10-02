@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %}MAAP supplied references | COSOLVE{% endblock %}
+{% block content %}
+<main id="main-content" class="about-page">
+  <header class="page-heading">
+    <span class="eyebrow">Source material</span>
+    <h1>MAAP facilities and flight areas</h1>
+    <p>{{ reference.source }}</p>
+    <p>Imported {{ reference.imported_at }}. {{ reference.source_note }}</p>
+    <a class="text-link" href="{% url 'core:map' %}?map_layers=assets,state,maap-flight-areas&amp;map_layers_v=5">View the supplied outlines on the map</a>
+  </header>
+  <div class="about-grid">
+    <article>
+      {% for area in reference.areas %}
+      <section id="{{ area.id }}">
+        <h2>{{ area.name }}</h2>
+        <dl class="maap-reference-specs">
+          <dt>Outline status</dt><dd>{{ area.boundary_status }}</dd>
+          <dt>Reported size</dt><dd>{{ area.published_size }}</dd>
+          <dt>Reported altitude</dt><dd>{{ area.altitude_limit }}</dd>
+          <dt>Aircraft</dt><dd>{{ area.aircraft_scope }}</dd>
+          <dt>Launch and recovery</dt><dd>{{ area.launch_recovery }}</dd>
+          <dt>Conditions</dt><dd>{{ area.constraints }}</dd>
+          <dt>Briefing COA reference</dt><dd>{{ area.coa_reference }}</dd>
+          {% if area.source_file %}<dt>Geographic source</dt><dd>{{ area.source_file }}</dd>{% endif %}
+        </dl>
+        <a class="text-link" href="{% url 'core:asset-detail' slug=area.asset_slug %}">Asset profile</a>
+      </section>
+      {% endfor %}
+      {% for capability in reference.capabilities %}
+      <section id="{{ capability.id }}">
+        <h2>{{ capability.title }}</h2>
+        <p>{{ capability.text }}</p>
+        <p>Supplied source: {{ capability.source_file }}</p>
+        <a class="text-link" href="{{ capability.official_url }}" target="_blank" rel="noopener">Official organization information</a>
+      </section>
+      {% endfor %}
+    </article>
+    <aside class="methodology-panel">
+      <h2>Reference status</h2>
+      <p>Supplied by the MAAP team for ecosystem mapping. These summaries are not the COA instruments, FAA charts, live restrictions, or current access agreements.</p>
+      <p>Briefing size claims are retained as attributed figures. They are not polygon area calculations. Ground-level KML coordinates do not define flight ceilings.</p>
+      <p>Source documents: <em>One Page MAAP COAs.pdf</em>, <em>MAAP Overview and C-UAS briefing.pptx</em>, and <em>VA AAM Smart Airspace_Sept 2026.pdf</em>.</p>
+      <p>The original briefing files remain in the project research archive. Proprietary procedure designs and operational waypoints are not published here.</p>
+      <a class="button primary full" href="{{ reference.contact_url }}" target="_blank" rel="noopener">Contact MAAP</a>
+    </aside>
+  </div>
+</main>
+{% endblock %}

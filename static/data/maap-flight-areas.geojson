@@ -1,0 +1,284 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "generated_at": "2026-10-02",
+    "feature_count": 3,
+    "source": "Virginia Tech Mid-Atlantic Aviation Partnership (MAAP), material supplied for the asset map",
+    "information_url": "/references/maap/",
+    "source_url": "https://maap.ictas.vt.edu/capabilities/facilities.html",
+    "disclaimer": "Summaries of the supplied MAAP briefing, flight-area overview, geographic files, and September 2026 Smart Airspace briefing. Import date is not an approval date. The source package does not establish current COA validity, complete conditions, or general public access.",
+    "geometry_note": "Original supplied outlines, including over-water areas; no clipping, invented Blackstone circle, inferred vertical limits or waypoint import. Central Virginia is labeled draft in its source KML.",
+    "unmapped_areas": [
+      "MAAP Blackstone Class D Flight Area"
+    ]
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "kentland",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -80.58622146114874,
+              37.18335678817044
+            ],
+            [
+              -80.57893953183489,
+              37.18810159711283
+            ],
+            [
+              -80.57066323144622,
+              37.19383367995382
+            ],
+            [
+              -80.56732598465658,
+              37.19770217942295
+            ],
+            [
+              -80.56359881348445,
+              37.19934293222007
+            ],
+            [
+              -80.57212943854566,
+              37.21107706582776
+            ],
+            [
+              -80.58641786951078,
+              37.20706772411586
+            ],
+            [
+              -80.58772605870057,
+              37.2096938671436
+            ],
+            [
+              -80.60920630577165,
+              37.2116797806526
+            ],
+            [
+              -80.59966544962073,
+              37.20331897386768
+            ],
+            [
+              -80.59617140824773,
+              37.19408233518479
+            ],
+            [
+              -80.59181144254353,
+              37.18668228403685
+            ],
+            [
+              -80.58622146114874,
+              37.18335678817044
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "kentland",
+        "name": "MAAP Kentland Farm Flight Area",
+        "asset_slug": "maap-kentland-farm-flight-area",
+        "source_file": "Kentand Farms.kml",
+        "geometry_file": "kentland.kml",
+        "boundary_status": "Operator-supplied reference outline; current approval not independently checked",
+        "draft": false,
+        "published_size": "Approximately 2.5 sq mi flight area; 1,800-acre research farm (different measures)",
+        "altitude_limit": "Up to 700 ft AGL, as stated in the supplied MAAP briefing",
+        "aircraft_scope": "Aircraft up to 1,320 lb under MAAP's described test-site approval; aircraft and mission eligibility require confirmation",
+        "launch_recovery": "300-ft runway and hangar at Kentland Experimental Aerial Systems Laboratory",
+        "constraints": "Coordinate with MAAP. Adjacent Radford Army Ammunition Plant acreage is not included in this supplied outline and is not available by implication.",
+        "coa_reference": "2024-ESA-15752-44803 (briefing reference; validity and conditions not checked)",
+        "source_sha256": "a64819f4d465bcff59ef001b34dd29e9d22bb12bfe7993b3e2051c7868add05c",
+        "geometry_sha256": "f3d781a3edc6bc6ff3eddbe43ce0999b879a21e0e22ae1cb21fbe79a7746b4b0",
+        "imported_at": "2026-10-02",
+        "source_title": "MAAP supplied flight-area and capability references",
+        "source_url": "/references/maap/",
+        "asset_url": "/assets/maap-kentland-farm-flight-area/",
+        "access": "Coordinate a project with MAAP; map display is not flight authorization"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "central-virginia",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.52370869977634,
+              36.54123500988848
+            ],
+            [
+              -79.31802427901846,
+              36.71641063688933
+            ],
+            [
+              -77.96722025155373,
+              37.00475312570968
+            ],
+            [
+              -78.01480362536715,
+              37.02043407465951
+            ],
+            [
+              -78.04216589717215,
+              37.05686516287463
+            ],
+            [
+              -78.03686455503049,
+              37.10559072254618
+            ],
+            [
+              -77.987698217221,
+              37.14034953471315
+            ],
+            [
+              -77.93107178935665,
+              37.14144657748523
+            ],
+            [
+              -77.88482199425516,
+              37.1171111818057
+            ],
+            [
+              -77.8759093731115,
+              37.10076653784735
+            ],
+            [
+              -77.85891685381526,
+              37.10079719595409
+            ],
+            [
+              -77.88777017982046,
+              38.03299182000197
+            ],
+            [
+              -78.27004098210071,
+              38.14973753679434
+            ],
+            [
+              -78.38337324273094,
+              37.91810112525145
+            ],
+            [
+              -78.8282115639651,
+              37.68556910797439
+            ],
+            [
+              -79.0253545531568,
+              37.47434994781543
+            ],
+            [
+              -78.95817851101388,
+              37.37434990638065
+            ],
+            [
+              -79.6934018928483,
+              36.54259086648438
+            ],
+            [
+              -79.52370869977634,
+              36.54123500988848
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "central-virginia",
+        "name": "MAAP Central Virginia Flight Area",
+        "asset_slug": "maap-central-virginia-flight-area",
+        "source_file": "Central VA COA Operations Area.kmz",
+        "geometry_file": "central-virginia.kml",
+        "boundary_status": "Source KML folder is labeled COA DRAFT 108625; provisional reference outline",
+        "draft": true,
+        "published_size": "Approximately 4,500 sq mi in the briefing; not a measurement of the supplied polygon",
+        "altitude_limit": "Up to 7,000 ft MSL, as stated in the supplied MAAP briefing",
+        "aircraft_scope": "Aircraft up to 1,320 lb under MAAP's described test-site approval; aircraft and mission eligibility require confirmation",
+        "launch_recovery": "Briefing identifies a 3,000-ft runway and hangar at Crewe Airport as supporting infrastructure",
+        "constraints": "Supplied corridor outline skirts the Blackstone Class D area. Its draft labeling must be resolved with MAAP before operational use; airport access and current airspace approvals are separate.",
+        "coa_reference": "2024-ESA-15755-44803 (briefing reference; validity and conditions not checked)",
+        "source_sha256": "479211e5788e5d9032c963bac4216beaf7b4d3878e097f632da73cd3da00b126",
+        "geometry_sha256": "2a1ca0460cab7c4eb190e8c308af9a5d9a98338255466c85dd12cd2b591797f4",
+        "imported_at": "2026-10-02",
+        "source_title": "MAAP supplied flight-area and capability references",
+        "source_url": "/references/maap/",
+        "asset_url": "/assets/maap-central-virginia-flight-area/",
+        "access": "Coordinate a project with MAAP; map display is not flight authorization"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "eastern-shore",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -76.00319,
+              37.354519
+            ],
+            [
+              -76.024722,
+              37.666667
+            ],
+            [
+              -76.014167,
+              37.683333
+            ],
+            [
+              -76.014167,
+              37.833333
+            ],
+            [
+              -76.041389,
+              37.920833
+            ],
+            [
+              -75.653611,
+              37.781944
+            ],
+            [
+              -75.525278,
+              37.649167
+            ],
+            [
+              -75.321542,
+              37.603206
+            ],
+            [
+              -75.452011,
+              37.354519
+            ],
+            [
+              -76.00319,
+              37.354519
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "id": "eastern-shore",
+        "name": "MAAP Eastern Shore Offshore Flight Area",
+        "asset_slug": "maap-eastern-shore-offshore-flight-area",
+        "source_file": "EasternShoreCOA.kmz",
+        "geometry_file": "eastern-shore.kml",
+        "boundary_status": "Operator-supplied reference outline; current approval not independently checked",
+        "draft": false,
+        "published_size": "Approximately 990 sq mi in the briefing; not a measurement of the supplied polygon",
+        "altitude_limit": "Up to 3,000 ft MSL, as stated in the supplied MAAP briefing",
+        "aircraft_scope": "Aircraft up to 1,320 lb under MAAP's described test-site approval; aircraft and mission eligibility require confirmation",
+        "launch_recovery": "Accomack County Airport is the described base of operations; overview lists a 5,000-ft runway",
+        "constraints": "Over-water and warning-area research environment adjoining R-6609. Briefing describes different chase-aircraft provisions within the warning area; obtain the actual conditions from MAAP before planning a flight.",
+        "coa_reference": "No identifier provided in the supplied summary",
+        "source_sha256": "1da92c8864f4c2036534f9d2450bcb151e78ef1d17becb86df0378156f2bf233",
+        "geometry_sha256": "adeb9bf080d079ef4072d119120c1896bfdf8b8a5e79928c5b25f2f7c058d03c",
+        "imported_at": "2026-10-02",
+        "source_title": "MAAP supplied flight-area and capability references",
+        "source_url": "/references/maap/",
+        "asset_url": "/assets/maap-eastern-shore-offshore-flight-area/",
+        "access": "Coordinate a project with MAAP; map display is not flight authorization"
+      }
+    }
+  ]
+}

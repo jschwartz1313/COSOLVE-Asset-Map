@@ -12,6 +12,7 @@ export const MAP_LAYER_ORDER = [
   "uas-facility-map",
   "flight-constraints",
   "uas-test-sites",
+  "maap-flight-areas",
   "verification",
   "precision",
 ];

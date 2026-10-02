@@ -112,6 +112,8 @@ body.is-resizing-map-panels, body.is-resizing-map-panels * { cursor: col-resize 
 .legend-constraint.advisory { border-color: #725d25; border-style: dashed; background: rgb(210 181 91 / 20%); }
 .legend-test-site { width: 20px; height: 20px; flex: 0 0 20px; border: 2px solid white; border-radius: 50%; display: grid; place-items: center; background: #1f5f65; box-shadow: 0 0 0 2px #b88a24; }
 .legend-test-site img { width: 12px; height: 12px; filter: brightness(0) invert(1); }
+.legend-maap-area { width: 20px; height: 14px; flex: 0 0 20px; border: 2px solid #794969; background: rgb(121 73 105 / 10%); print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+.legend-maap-area.draft { border-style: dashed; }
 .legend-ring, .legend-precision { width: 14px; height: 14px; flex: 0 0 14px; border: 2px solid; border-radius: 50%; }
 .legend-ring.reviewed { border-color: #147d78; }
 .legend-ring.source-backed { border-color: #b48216; }
@@ -152,6 +154,7 @@ body.is-resizing-map-panels, body.is-resizing-map-panels * { cursor: col-resize 
 .uas-test-site-marker img { width: 16px; height: 16px; filter: brightness(0) invert(1); }
 .uas-test-site-shell:hover .uas-test-site-marker, .uas-test-site-shell:focus .uas-test-site-marker { transform: scale(1.1); }
 .drone-reference-popup { width: min(330px, 76vw); }
+.maap-flight-popup .drone-reference-popup { max-width: 100%; overflow-wrap: anywhere; }
 .drone-reference-status { display: block; margin-bottom: 5px; color: #8a3b2a; font-size: 9px; font-weight: 800; text-transform: uppercase; }
 .drone-reference-popup h3 { margin: 0 0 9px; font-size: 15px; line-height: 1.2; }
 .drone-reference-popup dl { margin: 0 0 9px; display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 5px 8px; font-size: 10px; line-height: 1.35; }

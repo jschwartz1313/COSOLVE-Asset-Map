@@ -1,0 +1,276 @@
+{
+  "reviewed_at": "2026-10-02",
+  "scope": "Integrate MAAP-supplied facility and capability references, preserving source uncertainty, approval conditions and later staff edits. New technical claims require editorial review, not automatic operational verification.",
+  "corrections": [
+    {
+      "name": "Mid-Atlantic Aviation Partnership",
+      "provenance": "curated-public-source",
+      "after": {
+        "overview": "Virginia Tech's FAA-designated UAS test-site team helps organizations design flight trials, evaluate aircraft and sensors, develop safety cases, and train operators. Its supplied briefing describes airworthiness review, custom UAS design/build/fly work, technology selection and repeatable testing. Projects can use mobile command, surveillance and weather resources at an appropriate site. MAAP describes Kentland, Central Virginia, Blackstone and Eastern Shore operating areas; these are separate from its Blacksburg office, and the supplied summaries are not current flight authorizations.",
+        "test_aircraft": "UAS airworthiness and impact evaluation; detect-and-avoid, communications and counter-UAS sensor assessment. The supplied area briefing describes aircraft up to 1,320 lb under MAAP approvals, not unrestricted operation by other users.",
+        "test_dimensions": "Mobile operations and engineering support with four described Virginia flight areas. Kentland has a 300-ft runway, Central Virginia uses Crewe support infrastructure, and Eastern Shore operations use Accomack County Airport. Individual flight-area records separate these resources and limitations.",
+        "test_access": "Contact MAAP to agree on a project, site and aircraft envelope. Flight cards, risk assessment, safety review and an operations release precede testing. FAA/FCC approvals, ATC/NOTAM coordination, observers and chase-aircraft provisions depend on the specific mission and current approval.",
+        "test_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#maap",
+        "test_last_verified_at": "2026-10-02",
+        "platform_domains": [
+          "Unmanned aircraft systems",
+          "Cross-domain autonomy",
+          "Counter-UAS"
+        ],
+        "missions": [
+          "Training and experimentation",
+          "Counter-UAS"
+        ],
+        "search_aliases": "MAAP\nVirginia Tech UAS Test Site\nVirginia Test Site",
+        "website_url": "https://maap.ictas.vt.edu/"
+      },
+      "add_sources": [
+        {
+          "title": "MAAP supplied overview and testing briefing (source summary)",
+          "url": "https://cosolve-asset-map.onrender.com/references/maap/#maap"
+        },
+        {
+          "title": "MAAP official website",
+          "url": "https://maap.ictas.vt.edu/"
+        },
+        {
+          "title": "MAAP counter-UAS and detect-and-avoid research",
+          "url": "https://maap.ictas.vt.edu/capabilities/research-development.html"
+        }
+      ],
+      "review_required": true,
+      "reason": "Add operator-supplied capabilities and project access process, separating the test-site organization from its flight areas.",
+      "before": {
+        "overview": "Virginia Tech's FAA-designated UAS test-site organization provides flight-test planning, engineering evaluation, airworthiness assessment, and safety-case development. Published specialties include impact/injury-risk testing, detect-and-avoid sensor evaluation, command-and-control testing, and standards-related assessment. MAAP uses mobile command, surveillance, and weather resources to work at mission-appropriate locations. Its Blacksburg organization address is not the boundary of a single flight range; Kentland is one of its local testing resources.",
+        "test_aircraft": "UAS engineering and airworthiness evaluation; injury-risk and impact testing; detect-and-avoid, communications, and other standards-related assessment.",
+        "test_dimensions": "Mobile operations command center, surveillance equipment, weather instrumentation, and access to mission-specific sites. Kentland's runway is recorded separately; there is no single MAAP-wide runway length.",
+        "test_access": "MAAP selects locations and works with partners and regulators on mission-specific arrangements. Contact the team before assuming access or an operating approval.",
+        "test_source_url": "https://maap.ictas.vt.edu/capabilities/facilities.html",
+        "test_last_verified_at": "2026-09-07",
+        "platform_domains": [
+          "Unmanned aircraft systems",
+          "Cross-domain autonomy"
+        ],
+        "missions": [
+          "Training and experimentation"
+        ],
+        "search_aliases": "",
+        "website_url": "https://maap.ictas.vt.edu/About/about-us.html"
+      }
+    },
+    {
+      "name": "Kentland Experimental Aerial Systems Laboratory",
+      "provenance": "curated-public-source",
+      "after": {
+        "overview": "Virginia Tech's Kentland laboratory supports fixed-wing and rotary-wing UAS research, instruction and prototype evaluation. Published infrastructure includes a 300-by-70-ft paved runway and approximately 2,000-sq-ft hangar. Research examples include wind sensing, infrastructure inspection, flight dynamics and controls. MAAP's supplied materials separately describe a Kentland flight-area outline and an up-to-700-ft-AGL limit under its test-site approval. The lab runway, the roughly 1,800-acre research farm and a flight-approval boundary are different things; none implies unrestricted public access.",
+        "test_aircraft": "Small fixed-wing and rotary-wing aircraft for university research and instruction. MAAP's separate Kentland-area briefing describes an approval envelope up to 1,320 lb; that does not establish compatibility with the laboratory runway or availability to all users.",
+        "test_dimensions": "300 by 70 ft paved runway and approximately 2,000 sq ft hangar. The 1,800-acre farm is a land-resource figure; the supplied Kentland reference outline is shown separately in the MAAP flight-area layer.",
+        "test_access": "Coordinate a research project with Virginia Tech/MAAP and confirm aircraft, launch/recovery arrangements and current approvals. The supplied reference outline does not establish public range booking or blanket flight permission.",
+        "test_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#kentland",
+        "test_last_verified_at": "2026-10-02"
+      },
+      "add_sources": [
+        {
+          "title": "MAAP supplied Kentland flight-area and facility summary",
+          "url": "https://cosolve-asset-map.onrender.com/references/maap/#kentland"
+        }
+      ],
+      "review_required": true,
+      "reason": "Distinguish laboratory infrastructure from the supplied MAAP flight area and project-specific aircraft eligibility.",
+      "before": {
+        "overview": "Virginia Tech's Kentland laboratory provides a field setting for small-UAS research and education, with a 300-by-70-foot paved runway and adjacent hangar. University examples show fixed-wing wind-sensing flights and quadrotor infrastructure-inspection work. Developers and researchers can use the setting to evaluate flight dynamics, controls, sensing, and integrated aircraft prototypes through an agreed university project. The roughly 1,800-acre farm is not itself an approved flight boundary, and the laboratory is not an unrestricted public airfield.",
+        "test_aircraft": "Virginia Tech research, instruction and outreach using small fixed-wing and rotary-wing unmanned aircraft.",
+        "test_dimensions": "300 by 70 ft asphalt airstrip and approximately 2,000 sq ft adjacent hangar. Kentland Farm's roughly 1,800 acres describe the farm, not an authorized flight boundary.",
+        "test_access": "Coordinate research and access with Virginia Tech. The facility description does not establish public booking or blanket flight permission.",
+        "test_source_url": "https://autonomyandrobotics.centers.vt.edu/groups/keas.html",
+        "test_last_verified_at": "2026-09-06"
+      }
+    },
+    {
+      "name": "Virginia Tech Counter UAS Research and Testing Center",
+      "provenance": "curated-public-source",
+      "after": {
+        "overview": "Virginia Tech's Counter-UAS Testing and Research Center combines instrumented outdoor trials at Kentland with laboratory and engineering work. MAAP's supplied briefing describes a 14-by-50-ft test management building, a 20-by-25-ft equipment platform elevated 20 ft with power and internet, storage and mobile-system hookups. A diverse drone library supports repeatable radar, RF, electro-optical/infrared and acoustic detection trials. Teams compare sensor tracks against aircraft truth data to study detection probability, range, accuracy, latency, alerting, data quality and human factors under terrain and day/night scenarios. Site access, aircraft eligibility and any counter-UAS mitigation authority are project-specific.",
+        "test_aircraft": "Counter-UAS sensor characterization using commercial and custom aircraft, fixed-wing, rotary-wing and hybrid configurations. The briefing describes test targets across Groups 1-3; actual aircraft, payloads and legal authority are agreed for each project.",
+        "test_dimensions": "1,800-acre Kentland research farm; 14-by-50-ft (700 sq ft) test management building; 20-by-25-ft equipment platform elevated 20 ft; secure storage and large/mobile-system parking and hookups. A slide's 2,300-m scenario circle is not an authorized flight boundary or guaranteed sensor range.",
+        "test_access": "Contact VTNSI/MAAP for government or industry testing. Agree on performance metrics, test cards, telemetry and sensor logging, safety review, approvals and release before operations. Counter-UAS research does not confer jamming or drone-defeat authority.",
+        "test_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#ctrc",
+        "test_last_verified_at": "2026-10-02",
+        "address_line": "Kentland Farm research site",
+        "postal_code": "",
+        "latitude": 37.195892,
+        "longitude": -80.582872,
+        "location_precision": "site",
+        "location_role": "test-site",
+        "location_method": "published",
+        "location_notes": "Representative point inside the MAAP-supplied Kentland outline. The briefing places CTRC at Kentland; this is a farm-level reference, not a surveyed tower/building location, entrance or permitted launch point. Replaces the unrelated main-campus administrative pin.",
+        "location_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#ctrc",
+        "location_last_verified_at": "2026-10-02",
+        "search_aliases": "CTRC\nCounter-Unmanned Aerial Systems Testing and Research Center\nMAAP Counter UAS Test and Research Center\nKentland Counter-UAS"
+      },
+      "add_sources": [
+        {
+          "title": "MAAP supplied CTRC resources, Kentland location and sensor-test process",
+          "url": "https://cosolve-asset-map.onrender.com/references/maap/#ctrc"
+        }
+      ],
+      "review_required": true,
+      "reason": "Replace the main-campus proxy with an explicitly farm-level Kentland reference and add the supplied CTRC testing resources and use cases.",
+      "before": {
+        "overview": "Virginia Tech's counter-UAS center brings together autonomy, sensing, and radio-frequency expertise to evaluate technologies for detecting, tracking, identifying, and countering drones. VTNSI describes controlled laboratories and access to a 1,800-acre outdoor research environment for government and industry projects. Users can investigate detection performance and integrated counter-UAS concepts under instrumented conditions. The existing campus marker is a university reference, not the outdoor range. Farm acreage does not establish a flight boundary, and a research capability does not authorize private jamming or drone defeat.",
+        "test_aircraft": "Counter-UAS research involving detection, tracking, identification, and evaluation of system concepts; platform and effectors eligibility is project-specific.",
+        "test_dimensions": "VTNSI describes controlled laboratories and 1,800 acres of outdoor research environment. That acreage is not a published authorized flight polygon.",
+        "test_access": "Contact VTNSI about a government or industry research project. Confirm site, equipment, legal authority, and approvals; counter-UAS research does not grant jamming or mitigation authority.",
+        "test_source_url": "https://nationalsecurity.vt.edu/about/centers-facilities.html",
+        "test_last_verified_at": "2026-09-29",
+        "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
+        "postal_code": "24061-0131",
+        "latitude": 37.229012,
+        "longitude": -80.423675,
+        "location_precision": "site",
+        "location_role": "",
+        "location_method": "",
+        "location_notes": "",
+        "location_source_url": "",
+        "location_last_verified_at": null,
+        "search_aliases": ""
+      }
+    },
+    {
+      "name": "Virginia Tech VTTI Smart Airspace Vertiport",
+      "provenance": "curated-public-source",
+      "after": {
+        "overview": "Virginia Tech Vertiport, FAA identifier 8VA2, is a private-use VTTI Smart Airspace node near Blacksburg. The FAA feature service records an operational heliport and provides its reference coordinates. The September 2026 briefing reports completed site improvements, Virginia private/PPR licensing and flight validation, with an instrument-procedure package submitted to the FAA. It reports Aerosonde and Electra EL2 demonstrations linking the node with Blackstone and Roanoke. A submitted procedure package is not proof of current published procedures; private-use status requires prior permission.",
+        "address_line": "Virginia Tech Vertiport (FAA 8VA2)",
+        "postal_code": "24060",
+        "latitude": 37.190137,
+        "longitude": -80.395372,
+        "location_precision": "site",
+        "location_role": "test-site",
+        "location_method": "published",
+        "location_notes": "FAA Airports Feature Service reference point for Virginia Tech Vertiport, identifier 8VA2. This identifies the vertiport rather than the VTTI campus; it is not a surveyed pad edge, an entrance or flight authorization.",
+        "location_source_url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%278VA2%27&outFields=IDENT%2CNAME%2COPERSTATUS%2CPRIVATEUSE&returnGeometry=true&outSR=4326&f=geojson",
+        "location_last_verified_at": "2026-10-02",
+        "test_aircraft": "AAM and UAS integration demonstrations; briefing reports Aerosonde UAS and Electra EL2 aircraft. It does not publish a general aircraft operating envelope for other users.",
+        "test_dimensions": "Private vertiport and completed site improvements described in the September 2026 briefing. Pad dimensions and load limits are not stated in the supplied material.",
+        "test_access": "Private, prior permission required (PPR). Arrange research or demonstration operations with VTTI/MAAP and confirm current flight procedures, aircraft eligibility and approvals.",
+        "test_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace",
+        "test_last_verified_at": "2026-10-02",
+        "current_activity": "September 2026 briefing reports completed site improvements, state licensing and flight validation, instrument-procedure submission, and Aerosonde/EL2 demonstrations. These are reported project milestones, not a public commercial service.",
+        "activity_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace",
+        "activity_last_verified_at": "2026-10-02",
+        "search_aliases": "8VA2\nVirginia Tech Vertiport\nVT Vertiport\nVTTI Vertiport",
+        "website_url": "https://www.vtti.vt.edu/"
+      },
+      "add_sources": [
+        {
+          "title": "MAAP supplied September 2026 Smart Airspace milestone summary",
+          "url": "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace"
+        },
+        {
+          "title": "FAA Virginia Tech Vertiport 8VA2 reference coordinates and private-use status",
+          "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%278VA2%27&outFields=IDENT%2CNAME%2COPERSTATUS%2CPRIVATEUSE&returnGeometry=true&outSR=4326&f=geojson"
+        }
+      ],
+      "review_required": true,
+      "reason": "Map the specific vertiport using FAA coordinates and retain private/PPR access and submitted-versus-active procedure distinctions.",
+      "before": {
+        "overview": "The Virginia Department of Aviation identifies an off-airport VTTI vertiport in the Smart Airspace program. Textron Systems reports that an Aerosonde UAS flew from the VTTI vertiport to Blackstone in September 2026. The public sources reviewed do not specify a precise vertiport point or public access terms, so this facility has no mapped coordinates. It is distinct from the broader VTTI campus and Smart Airspace program.",
+        "address_line": "",
+        "postal_code": "",
+        "latitude": null,
+        "longitude": null,
+        "location_precision": "regional",
+        "location_role": "",
+        "location_method": "",
+        "location_notes": "",
+        "location_source_url": "",
+        "location_last_verified_at": null,
+        "test_aircraft": "",
+        "test_dimensions": "",
+        "test_access": "",
+        "test_source_url": "",
+        "test_last_verified_at": null,
+        "current_activity": "VTTI vertiport used for a publicly reported unmanned-aircraft Smart Airspace demonstration in September 2026.",
+        "activity_source_url": "https://www.textronsystems.com/our-company/news-events/articles/press-release/textron-systems-aerosonde-uas-completes-first-uas",
+        "activity_last_verified_at": "2026-09-24",
+        "search_aliases": "",
+        "website_url": ""
+      }
+    },
+    {
+      "name": "Virginia AAM Smart Airspace Program",
+      "provenance": "curated-public-source",
+      "after": {
+        "overview": "Virginia's Smart Airspace program develops infrastructure and procedures for integrating AAM aircraft into the existing IFR system. Its first described network connects Virginia Tech Vertiport (8VA2, private/PPR), Blackstone Army Airfield (KBKT, Class D/dual use) and a temporary Roanoke demonstration vertiport (KROA, Class C). The September 2026 briefing reports Aerosonde flights on the Virginia Tech-Blackstone segment in July and Electra EL2 network flights in September. It distinguishes active Blackstone procedures from submitted packages at the other nodes. The program spans several sites and is not pinned at its Richmond agency office. Proprietary approach designs and route waypoints are not published in this inventory.",
+        "current_activity": "September 2026 briefing reports three Smart Airspace nodes, completed flight validation and Aerosonde/EL2 demonstration flights. A permanent Roanoke vertiport location and routine public service are not established by this source.",
+        "activity_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace",
+        "activity_last_verified_at": "2026-10-02",
+        "website_url": "https://doav.virginia.gov/advanced_air_mobility/",
+        "search_aliases": "Smart Airspace\nVirginia Smart Airspace\nAAM IFR integration"
+      },
+      "add_sources": [
+        {
+          "title": "MAAP supplied September 2026 Smart Airspace milestones and demonstration summary",
+          "url": "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace"
+        }
+      ],
+      "review_required": true,
+      "reason": "Use the supplied briefing's actual flight months and distinguish demonstration, procedure and permanent-site milestones.",
+      "before": {
+        "overview": "The Virginia Department of Aviation identifies Smart Airspace as a statewide advanced-air-mobility initiative with vertiport nodes at Roanoke, Virginia Tech Transportation Institute, and Blackstone. Textron reported a September 2026 uncrewed-aircraft demonstration between the Virginia Tech and Blackstone nodes. The program is represented without a single point because its infrastructure spans multiple sites; the agency is headquartered in Richmond. Published diagrams do not establish that every route or vertiport is available for public operations.",
+        "current_activity": "Smart Airspace demonstration and vertiport-node development; current flight permissions must be confirmed with operators and the FAA.",
+        "activity_source_url": "https://www.textronsystems.com/our-company/news-events/articles/press-release/textron-systems-aerosonde-uas-completes-first-uas",
+        "activity_last_verified_at": "2026-09-24",
+        "website_url": "",
+        "search_aliases": ""
+      }
+    },
+    {
+      "name": "Allan C Perkinson/Blackstone AAF",
+      "provenance": "faa-public-airport",
+      "accepted_baselines": [
+        {"overview": "Allan C Perkinson/Blackstone AAF is an operational public-use airport listed by the FAA under identifier BKT. The Virginia airport sponsor directory classifies the facility as General Aviation Community."}
+      ],
+      "after": {
+        "overview": "Allen C. Perkinson Municipal Airport shares the Blackstone Army Airfield environment (BKT/KBKT). In addition to public aviation infrastructure, the supplied MAAP briefing describes a separate Class D test-site flight area, up to 2,500 ft MSL, excluding R-6602A. The September 2026 Smart Airspace briefing identifies a vertiport node and reports approach/departure activation on March 19, 2026 and demonstration flights. The airport point is not a vertiport pad or flight-area boundary; military, airport and MAAP arrangements must be coordinated separately."
+      },
+      "add_sources": [
+        {
+          "title": "MAAP supplied Blackstone Class D flight-area description",
+          "url": "https://cosolve-asset-map.onrender.com/references/maap/#blackstone"
+        },
+        {
+          "title": "MAAP supplied Smart Airspace vertiport milestone summary",
+          "url": "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace"
+        }
+      ],
+      "review_required": true,
+      "reason": "Explain the airport's documented testing and Smart Airspace roles without conflating the airport point with a pad or approval boundary.",
+      "before": {
+        "overview": "Allan C Perkinson/Blackstone AAF is an operational public-use airport listed by the FAA under identifier BKT. The Virginia airport sponsor directory classifies the facility as Community Business."
+      }
+    },
+    {
+      "name": "Roanoke/Blacksburg Rgnl (Woodrum Fld)",
+      "provenance": "faa-public-airport",
+      "accepted_baselines": [
+        {"overview": "Roanoke/Blacksburg Rgnl (Woodrum Fld) is an operational public-use airport listed by the FAA under identifier ROA. The Virginia airport sponsor directory classifies the facility as Air Carrier."}
+      ],
+      "after": {
+        "overview": "Roanoke-Blacksburg Regional Airport (ROA/KROA) is a public-use commercial airport in Class C airspace. The supplied September 2026 Smart Airspace briefing describes a temporary demonstration vertiport at the airport, flight validation, an instrument-procedure package submission and an Electra EL2 demonstration. This temporary project site is recorded separately from the airport; the supplied material does not establish a permanent vertiport location, unrestricted drone operations or a public AAM passenger service."
+      },
+      "add_sources": [
+        {
+          "title": "MAAP supplied temporary Roanoke Smart Airspace vertiport summary",
+          "url": "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace"
+        }
+      ],
+      "review_required": true,
+      "reason": "Clarify the temporary Smart Airspace demonstration site while keeping the existing FAA airport point and direct airport website.",
+      "before": {
+        "overview": "Roanoke/Blacksburg Rgnl (Woodrum Fld) is an operational public-use airport listed by the FAA under identifier ROA. The Virginia airport sponsor directory classifies the facility as Commercial Service."
+      }
+    }
+  ]
+}
