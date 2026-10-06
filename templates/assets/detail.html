@@ -42,9 +42,9 @@
       <section><h2>Location</h2><dl>
         {% if asset.location_role %}<dt>Location represents</dt><dd>{{ asset.get_location_role_display }}</dd>{% endif %}
         {% if asset.address_line %}<dt>Public site address</dt><dd>{{ asset.address_line }}<br>{{ asset.city }}{% if asset.state %}, {{ asset.state }}{% endif %} {{ asset.postal_code }}</dd>{% endif %}
-        <dt>Map precision</dt><dd>{{ asset.get_location_precision_display }}</dd>
+        <dt>Map precision</dt><dd>{{ asset.public_location_label }}</dd>
         {% if asset.location_method %}<dt>Coordinate basis</dt><dd>{{ asset.get_location_method_display }}</dd>{% endif %}
-        {% if asset.location_notes %}<dd class="field-note">{{ asset.location_notes }}</dd>{% elif asset.location_precision == "site" %}<dd class="field-note">The pin identifies the documented site or campus, not a room, building entrance, or operational position.</dd>{% elif asset.location_precision == "regional" %}<dd class="field-note">This asset serves the region and has no single documented public site, so no map pin is shown.</dd>{% elif asset.location_precision == "locality" or asset.location_precision == "approximate" %}<dd class="field-note">The pin identifies the locality, not a confirmed facility or operating address.</dd>{% endif %}
+        {% if asset.location_notes %}<dd class="field-note">{{ asset.location_notes }}</dd>{% elif asset.location_precision == "regional" %}<dd class="field-note">This asset serves the region and has no single documented public site, so no map pin is shown.</dd>{% elif not asset.has_public_coordinates %}<dd class="field-note">No map point has been established for this documented location.</dd>{% elif asset.location_precision == "site" %}<dd class="field-note">The pin identifies the documented site or campus, not a room, building entrance, or operational position.</dd>{% elif asset.location_precision == "locality" or asset.location_precision == "approximate" %}<dd class="field-note">The pin identifies the locality, not a confirmed facility or operating address.</dd>{% endif %}
         {% if asset.location_source_url %}<dt>Location evidence</dt><dd><a href="{{ asset.location_source_url }}" rel="noopener noreferrer">View location source</a>{% if asset.location_last_verified_at %}<span>Reviewed {{ asset.location_last_verified_at|date:"M j, Y" }}</span>{% endif %}</dd>{% endif %}
       </dl></section>
       <section><h2>Classification</h2><dl><dt>Strategic categories</dt><dd>{% for item in asset.strategic_categories.all %}<span>{{ item.name }}</span>{% endfor %}</dd><dt>Platform domains</dt><dd>{% for item in asset.platform_domains.all %}<span>{{ item.name }}</span>{% endfor %}</dd><dt>Region</dt><dd>{{ asset.region.name|default:"Not assigned" }}</dd></dl></section>
@@ -52,6 +52,6 @@
       <a class="button secondary full" href="{% url 'core:asset-suggest-update' asset.slug %}">Suggest an update</a>
     </aside>
   </div>
-  <div class="verification-block detail-verification-footer"><span>Review status</span><strong>{{ asset.verification_label }}</strong><small>{% if asset.is_editorially_reviewed %}Reviewed {{ asset.last_verified_at|date:"M j, Y" }} · {% endif %}{{ asset.get_location_precision_display }} location</small><small>Record updated {{ asset.updated_at|date:"M j, Y" }}</small></div>
+  <div class="verification-block detail-verification-footer"><span>Review status</span><strong>{{ asset.verification_label }}</strong><small>{% if asset.is_editorially_reviewed %}Reviewed {{ asset.last_verified_at|date:"M j, Y" }} · {% endif %}{{ asset.public_location_label }}</small><small>Record updated {{ asset.updated_at|date:"M j, Y" }}</small></div>
 </main>
 {% endblock %}

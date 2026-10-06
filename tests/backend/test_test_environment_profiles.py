@@ -21,6 +21,7 @@ from apps.catalog.models import Region
 from apps.sources.models import Source
 from scripts.build_real_asset_catalog import (
     MAAP_CORRECTIONS_PATH,
+    OCTOBER_WEBSITE_CORRECTIONS_PATH,
     TEST_CAPABILITY_PROFILES_PATH,
     TEST_ENVIRONMENT_EXPANSION_PATH,
     apply_reviewed_corrections,
@@ -36,10 +37,10 @@ class TestEnvironmentManifestTests(SimpleTestCase):
         catalog = json.loads(CATALOG.read_text())
         by_name = {r["name"]: r for r in catalog["records"]}
         changes = json.loads(TEST_CAPABILITY_PROFILES_PATH.read_text())["corrections"]
-        followups = {
-            c["name"]: c["after"]
-            for c in json.loads(MAAP_CORRECTIONS_PATH.read_text())["corrections"]
-        }
+        followups = {}
+        for path in (MAAP_CORRECTIONS_PATH, OCTOBER_WEBSITE_CORRECTIONS_PATH):
+            for change in json.loads(path.read_text())["corrections"]:
+                followups.setdefault(change["name"], {}).update(change["after"])
         self.assertEqual(len(changes), 29)
         self.assertEqual(len({c["name"] for c in changes}), 29)
         for change in changes:
@@ -53,8 +54,9 @@ class TestEnvironmentManifestTests(SimpleTestCase):
                 self.assertTrue(change["add_sources"])
                 urls = {s["url"] for s in record["sources"]}
                 for field in ("test_source_url", "activity_source_url", "website_url"):
-                    if after.get(field):
-                        self.assertIn(after[field], urls)
+                    expected = followups.get(change["name"], {}).get(field, after.get(field))
+                    if expected:
+                        self.assertIn(expected, urls)
                 for field, value in after.items():
                     expected = followups.get(change["name"], {}).get(field, value)
                     self.assertEqual(record[field], expected)

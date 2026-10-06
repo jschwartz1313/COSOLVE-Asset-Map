@@ -65,7 +65,11 @@ class RealCatalogFileTests(TestCase):
         self.assertTrue(
             all(record["sources"] and record["unmanned_systems_relevance"] for record in records)
         )
-        self.assertTrue(all(len(record["sources"]) >= 2 for record in records))
+        single_source_names = {r["name"] for r in records if len(r["sources"]) == 1}
+        # Retired duplicate routes now resolve to one official page, not invented extra sources.
+        self.assertEqual(single_source_names, {"Virginia UAS", "Zenith Aerotech"})
+        self.assertTrue(all(len(record["sources"]) >= 2 or record["name"] in single_source_names
+                            for record in records))
         self.assertTrue(
             all(
                 record["overview"]
@@ -360,6 +364,9 @@ class RealCatalogFileTests(TestCase):
         corrections = json.loads(
             (settings.BASE_DIR / "data" / "asset_corrections_2026_09_04.json").read_text()
         )
+        corrections["corrections"] += json.loads(
+            (settings.BASE_DIR / "data" / "asset_website_corrections_2026_10_06.json").read_text()
+        )["corrections"]
         retired_urls = {}
         for correction in corrections["corrections"]:
             for replacement in correction.get("replace_sources", []):
@@ -471,7 +478,9 @@ class RealCatalogFileTests(TestCase):
         for name, source_urls in location_manifest["reviewed_assets"].items():
             self.assertIn(name, records_by_name)
             attached_urls = {source["url"] for source in records_by_name[name]["sources"]}
-            self.assertTrue(set(source_urls).issubset(attached_urls), name)
+            self.assertTrue(
+                set(source_urls).issubset(attached_urls | retired_urls.get(name, set())), name,
+            )
         self.assertTrue(set(manifest["follow_up_assets"]).issubset(records_by_name))
 
         resolved_names = {
@@ -837,6 +846,12 @@ class RealCatalogFileTests(TestCase):
         enrichment = json.loads(
             (settings.BASE_DIR / "data" / "asset_location_enrichment.json").read_text()
         )["assets"]
+        replacements = {
+            (change["name"], replacement["old_url"]): replacement["source"]["url"]
+            for change in json.loads((settings.BASE_DIR / "data"
+                / "asset_website_corrections_2026_10_06.json").read_text())["corrections"]
+            for replacement in change.get("replace_sources", [])
+        }
 
         self.assertEqual(len(enrichment), 97)
         self.assertTrue(set(enrichment).issubset(records_by_name))
@@ -849,7 +864,7 @@ class RealCatalogFileTests(TestCase):
             self.assertEqual(record["longitude"], location["longitude"], name)
             self.assertEqual(record["location_precision"], location["location_precision"], name)
             self.assertIn(
-                location["source"]["url"],
+                replacements.get((name, location["source"]["url"]), location["source"]["url"]),
                 {source["url"] for source in record["sources"]},
                 name,
             )
@@ -1056,8 +1071,11 @@ class RealCatalogFileTests(TestCase):
             reviewed_at__isnull=False,
             last_verified_at=date(2026, 8, 21),
         )
-        # Six old reviews cite retired links; Blue Ridge now explicitly requires fresh review.
-        self.assertEqual(reviewed.count(), len(manifest["reviewed_assets"]) - 7)
+        # Eleven historical reviews cite retired links; Blue Ridge also needs fresh review.
+        self.assertEqual(reviewed.count(), len(manifest["reviewed_assets"]) - 12)
+        for name in ("Virginia Smart Community Testbed", "Virginia Tech Drone Park",
+                     "Virginia Tech Mission Systems Division", "Virginia UAS", "Zenith Aerotech"):
+            self.assertFalse(reviewed.filter(name=name).exists())
         self.assertFalse(reviewed.filter(name="Blue Ridge Defense Works").exists())
         self.assertFalse(reviewed.filter(name="Haymarket Police Department Drone Program").exists())
         self.assertEqual(
@@ -1215,8 +1233,10 @@ class RealCatalogFileTests(TestCase):
             reviewed_at__isnull=False,
             last_verified_at=date(2026, 8, 30),
         )
-        # Wrap's former PDF is retired; its historical review cannot verify a different URL.
-        self.assertEqual(reviewed.count(), 6)
+        # Retired evidence cannot verify a different URL or the DMS expansion's availability.
+        retired = {"Wrap Technologies Norton Manufacturing Headquarters",
+                   "Defense Maritime Solutions Chesapeake Manufacturing Facility"}
+        self.assertEqual(reviewed.count(), 5)
         self.assertFalse(
             reviewed.filter(name="Wrap Technologies Norton Manufacturing Headquarters").exists()
         )
@@ -1228,7 +1248,7 @@ class RealCatalogFileTests(TestCase):
             ).count(),
             sum(
                 len(urls) for name, urls in manifest["reviewed_assets"].items()
-                if name != "Wrap Technologies Norton Manufacturing Headquarters"
+                if name not in retired
             ),
         )
         self.assertEqual(
@@ -1276,6 +1296,17 @@ class RealCatalogFileTests(TestCase):
 
         for name, source_urls in location_manifest["reviewed_assets"].items():
             asset = Asset.objects.get(name=name)
+            if name == "Zenith Aerotech":
+                self.assertIsNone(asset.reviewed_at)
+                self.assertFalse(asset.sources.filter(verification_status="verified").exists())
+                continue
+            if name == "Virginia State Police UAS Program":
+                self.assertIsNotNone(asset.reviewed_at)
+                self.assertFalse(asset.sources.filter(
+                    url__in=source_urls, verification_status="verified",
+                    last_verified_at=date(2026, 8, 24),
+                ).exists())
+                continue
             self.assertIsNotNone(asset.reviewed_at, name)
             self.assertEqual(
                 set(

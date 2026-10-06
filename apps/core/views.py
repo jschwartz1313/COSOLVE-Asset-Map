@@ -194,10 +194,12 @@ def region_metrics(region):
         .count()
     )
     site_level = queryset.filter(
+        latitude__isnull=False,
+        longitude__isnull=False,
         location_precision__in=[
             Asset.LocationPrecision.EXACT,
             Asset.LocationPrecision.SITE,
-        ]
+        ],
     ).count()
 
     def rate(value):

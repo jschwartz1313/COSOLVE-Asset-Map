@@ -74,6 +74,46 @@ class PublicRedirects(HTTPRedirectHandler):
         return super().redirect_request(req, fp, code, msg, headers, newurl)
 
 
+def classify_response(result):
+    status = result["http_status"]
+    title = result.get("title", "").lower()
+    if status in {404, 410}:
+        return "http_not_found"
+    if status in {401, 403, 406, 418, 429} or any(
+        marker in title for marker in (
+            "just a moment", "access denied", "attention required", "robot challenge",
+            "human verification",
+        )
+    ):
+        return "access_blocked_or_rate_limited"
+    if status >= 500:
+        return "server_error"
+    if status >= 400:
+        return "http_error"
+    original = urlsplit(result["url"])
+    final = urlsplit(result.get("final_url", result["url"]))
+    login_paths = {"/login", "/accounts/login", "/signin", "/sign-in"}
+    if final.path.rstrip("/") in login_paths and original.path.rstrip("/") not in login_paths:
+        return "access_blocked_or_rate_limited"
+    if any(marker in title for marker in (
+        "page not found", "page cannot be found", "404 not found", "domain for sale",
+    )):
+        return "suspected_soft_404"
+    if "arcgis" in result["url"].lower():
+        try:
+            payload = json.loads(result.get("text", ""))
+        except (TypeError, ValueError):
+            payload = None
+        error = payload.get("error") if isinstance(payload, dict) else None
+        if isinstance(error, dict):
+            if str(error.get("code")) in {"401", "403", "429", "498", "499"}:
+                return "access_blocked_or_rate_limited"
+            return "api_error_in_success_response"
+    if original.path.strip("/") and not final.path.strip("/"):
+        return "redirected_to_homepage_review"
+    return "reachable"
+
+
 def fetch(url, cache, refresh):
     key = hashlib.sha256(url.encode()).hexdigest()
     cache_file = cache / (key + ".json")
@@ -82,6 +122,8 @@ def fetch(url, cache, refresh):
         cached_text = cached.get("text", "")
         # Earlier snapshots could misread an unsolicited gzip body as HTML.
         if not cached_text or cached_text.count("\ufffd") / len(cached_text) <= 0.01:
+            if cached.get("http_status") is not None:
+                cached["classification"] = classify_response(cached)
             return cached
     result = {"url": url, "checked_at": datetime.now(timezone.utc).isoformat(), "method": "GET"}
     with HOST_LOCKS[urlsplit(url).hostname]:
@@ -130,40 +172,11 @@ def fetch(url, cache, refresh):
                     result["content_screen"] = (
                         "readable_text" if len(result["text"]) >= 100 else "limited_or_empty_text"
                     )
-            status = result["http_status"]
-            title = result.get("title", "").lower()
-            opening = result.get("text", "")[:1000].lower()
-            if status in {404, 410}:
-                result["classification"] = "http_not_found"
-            elif status in {401, 403, 406, 418, 429} or any(
-                t in title
-                for t in ("just a moment", "access denied", "attention required", "robot challenge")
-            ):
-                result["classification"] = "access_blocked_or_rate_limited"
-            elif status >= 500:
-                result["classification"] = "server_error"
-            elif status >= 400:
-                result["classification"] = "http_error"
-            elif any(
-                t in title
-                for t in (
-                    "page not found",
-                    "page cannot be found",
-                    "404 not found",
-                    "domain for sale",
-                )
-            ):
-                result["classification"] = "suspected_soft_404"
-            elif '"error"' in opening and '"code"' in opening and "arcgis" in url.lower():
-                result["classification"] = "api_error_in_success_response"
-            else:
-                result["classification"] = "reachable"
+            result["classification"] = classify_response(result)
             original, final = urlsplit(url), urlsplit(result["final_url"])
             result["redirected_to_homepage"] = bool(
                 original.path.strip("/") and not final.path.strip("/")
             )
-            if result["redirected_to_homepage"] and result["classification"] == "reachable":
-                result["classification"] = "redirected_to_homepage_review"
         except (ValueError, OSError, TimeoutError, URLError) as error:
             result.update(classification="network_or_tls_error", error=str(error)[:400])
         except Exception as error:

@@ -1,0 +1,228 @@
+{
+  "reviewed_at": "2026-10-06",
+  "scope": "Guarded official-link repairs and clarification of announced manufacturing capacity. This pass does not certify operational permissions or replace staff edits.",
+  "corrections": [
+    {
+      "name": "Virginia Tech Drone Park",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
+        "contact_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
+        "activity_source_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
+        "development_source_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
+        "test_source_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html"
+      },
+      "after": {
+        "website_url": "https://drones.ictas.vt.edu/dronepark.html",
+        "contact_url": "https://drones.ictas.vt.edu/dronepark.html",
+        "activity_source_url": "https://drones.ictas.vt.edu/dronepark.html",
+        "development_source_url": "https://ictas.vt.edu/Facilities.html",
+        "test_source_url": "https://ictas.vt.edu/Facilities.html"
+      },
+      "reason": "Replace the missing facility page with the operator's current scheduling page and the official facilities overview supporting the enclosure dimensions.",
+      "replace_sources": [
+        {
+          "old_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
+          "source": {
+            "title": "Virginia Tech Drone Park scheduling, orientation and public address",
+            "url": "https://drones.ictas.vt.edu/dronepark.html"
+          }
+        }
+      ],
+      "add_sources": [
+        {
+          "title": "Virginia Tech facilities: Drone Park address and 300 x 120 x 85 ft enclosure",
+          "url": "https://ictas.vt.edu/Facilities.html"
+        }
+      ]
+    },
+    {
+      "name": "Virginia Tech Mission Systems Division",
+      "provenance": "curated-public-source",
+      "before": {
+        "website_url": "https://nationalsecurity.vt.edu/research/mission-systems-division.html",
+        "contact_url": "https://nationalsecurity.vt.edu/research/mission-systems-division.html"
+      },
+      "after": {
+        "website_url": "https://nationalsecurity.vt.edu/research/msd.html",
+        "contact_url": "https://nationalsecurity.vt.edu/research/msd.html"
+      },
+      "reason": "Use the division's current official page rather than its missing former URL.",
+      "replace_sources": [
+        {
+          "old_url": "https://nationalsecurity.vt.edu/research/mission-systems-division.html",
+          "source": {
+            "title": "Virginia Tech Mission Systems Division official research and capabilities",
+            "url": "https://nationalsecurity.vt.edu/research/msd.html"
+          }
+        }
+      ]
+    },
+    {
+      "name": "HII Unmanned Systems Center of Excellence",
+      "provenance": "curated-public-source",
+      "before": {
+        "activity_source_url": "https://ir.hii.com/files/doc_news/archive/2021/05/1Q21-RELEASE.pdf",
+        "current_activity": "HII's 2021 results record completion of the first campus phase. Current building-by-building capabilities and customer access have not been confirmed by the sources reviewed here."
+      },
+      "after": {
+        "activity_source_url": "https://www.globenewswire.com/news-release/2021/01/11/2156355/0/en/Huntington-Ingalls-Industries-Completes-First-Phase-of-Unmanned-Systems-Center-of-Excellence-Campus.html",
+        "current_activity": "HII's January 2021 company announcement records completion of the first campus phase. Current building-by-building capabilities and customer access have not been confirmed by the sources reviewed here."
+      },
+      "reason": "Replace the missing investor PDF with HII's own dated first-phase completion announcement; retain the distinction between historical investment and current availability.",
+      "replace_sources": [
+        {
+          "old_url": "https://ir.hii.com/files/doc_news/archive/2021/05/1Q21-RELEASE.pdf",
+          "source": {
+            "title": "HII company announcement: first campus phase completed (January 11, 2021)",
+            "url": "https://www.globenewswire.com/news-release/2021/01/11/2156355/0/en/Huntington-Ingalls-Industries-Completes-First-Phase-of-Unmanned-Systems-Center-of-Excellence-Campus.html"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Defense Maritime Solutions Chesapeake Manufacturing Facility",
+      "provenance": "curated-public-source",
+      "before": {
+        "activity_source_url": "https://vedp.org/press-release/2026-08/chesapeake-defense-maritime-solutions",
+        "current_activity": "DMS announced an August 2026 investment of more than $30 million to expand domestic marine-engine manufacturing and testing at its Chesapeake operation.",
+        "overview": "Defense Maritime Solutions operates a marine manufacturing, repair, assembly, and systems-integration facility in Chesapeake. A 2026 expansion adds domestic production and testing capacity for Wartsila medium-speed marine engines.",
+        "short_description": "Chesapeake manufacturing and assembly facility producing marine engines, propulsors, and integrated shipboard systems for U.S. government fleets.",
+        "contact_email": ""
+      },
+      "after": {
+        "activity_source_url": "https://www.governor.virginia.gov/newsroom/news-releases/2026/august-releases/name-1122358-en.html",
+        "current_activity": "The August 12, 2026 state announcement describes a planned investment of more than $30 million in expanded Chesapeake marine-engine manufacturing and testing. Completion and commissioning of that additional capacity have not been confirmed.",
+        "overview": "Defense Maritime Solutions operates a marine repair, assembly and systems-integration facility in Chesapeake. Its public company history describes propeller and thruster work and equipment assembly and testing. An August 2026 announcement proposes expanded domestic manufacturing and testing of Wartsila medium-speed marine engines; it does not establish that the new engine-production capacity is already operational.",
+        "short_description": "Chesapeake marine repair, assembly and systems-integration facility, with a separately announced engine-manufacturing expansion.",
+        "contact_email": "info@DMSAmerica.com"
+      },
+      "reason": "Separate the operating facility from the announced expansion. Replace the missing VEDP release with the corresponding official state announcement; require editorial review of the revised availability claims.",
+      "replace_sources": [
+        {
+          "old_url": "https://vedp.org/press-release/2026-08/chesapeake-defense-maritime-solutions",
+          "source": {
+            "title": "Virginia governor: announced DMS Chesapeake expansion (August 12, 2026)",
+            "url": "https://www.governor.virginia.gov/newsroom/news-releases/2026/august-releases/name-1122358-en.html"
+          }
+        }
+      ],
+      "add_sources": [
+        {
+          "title": "DMS company history and Chesapeake repair/assembly capabilities",
+          "url": "https://dmsamerica.com/this-is-dms/"
+        }
+      ],
+      "review_required": true
+    },
+    {
+      "name": "Virginia State Police UAS Program",
+      "provenance": "curated-public-source",
+      "before": {
+        "contact_url": "https://vsp.virginia.gov/about-us/department-history/"
+      },
+      "after": {
+        "contact_url": "https://vsp.virginia.gov/contact/"
+      },
+      "reason": "Use the official department contact page for inquiries and headquarters evidence; it does not identify drone launch locations.",
+      "replace_sources": [
+        {
+          "old_url": "https://vsp.virginia.gov/sections-units-bureaus/superintendent/directions-to-virginia-state-police/",
+          "source": {
+            "title": "Virginia State Police public contact and headquarters",
+            "url": "https://vsp.virginia.gov/contact/"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Zenith Aerotech",
+      "provenance": "curated-public-source",
+      "before": {
+        "contact_url": "https://zenithaerotech.com/tethered-drone-contact-us/"
+      },
+      "after": {
+        "contact_url": "https://zenithaerotech.com/"
+      },
+      "reason": "Replace missing public links with the manufacturer's homepage, which publishes its address and public contact information. Product performance remains configuration-specific.",
+      "replace_sources": [
+        {
+          "old_url": "https://zenithaerotech.com/about-us-tethered-drone/",
+          "source": {
+            "title": "Zenith Aerotech official tethered systems and applications",
+            "url": "https://zenithaerotech.com/"
+          }
+        },
+        {
+          "old_url": "https://zenithaerotech.com/tethered-drone-contact-us/",
+          "source": {
+            "title": "Zenith Aerotech public contact information",
+            "url": "https://zenithaerotech.com/"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Virginia Smart Community Testbed",
+      "provenance": "curated-public-source",
+      "before": {
+        "contact_url": "https://vatestbed.com/about"
+      },
+      "after": {
+        "contact_url": "https://vatestbed.com/"
+      },
+      "reason": "Canonicalize the retired about route to the testbed's own homepage, which now handles public information.",
+      "replace_sources": [
+        {
+          "old_url": "https://vatestbed.com/about",
+          "source": {
+            "title": "Stafford / Virginia Smart Community Testbed official information",
+            "url": "https://vatestbed.com/"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Virginia UAS",
+      "provenance": "curated-public-source",
+      "before": {
+        "contact_url": "https://virginiauas.com/home/",
+        "location_source_url": "https://virginiauas.com/home/"
+      },
+      "after": {
+        "contact_url": "https://virginiauas.com/",
+        "location_source_url": "https://virginiauas.com/"
+      },
+      "reason": "Canonicalize the retired home route without inventing a street address or upgrading the locality marker.",
+      "replace_sources": [
+        {
+          "old_url": "https://virginiauas.com/home/",
+          "source": {
+            "title": "Virginia UAS official public information",
+            "url": "https://virginiauas.com/"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Virginia Tech Counter UAS Research and Testing Center",
+      "provenance": "curated-public-source",
+      "accepted_baselines": [
+        {"website_url": "https://news.vt.edu/articles/2025/04/research-counteruascenter.html"}
+      ],
+      "before": {
+        "website_url": "https://nationalsecurity.vt.edu/research/sdd.html"
+      },
+      "after": {
+        "website_url": "https://nationalsecurity.vt.edu/research/msd.html"
+      },
+      "reason": "The Mission Systems Division's current page explicitly identifies CTRC; the former website field instead opened the Spectrum Dominance Division.",
+      "add_sources": [
+        {
+          "title": "Virginia Tech Mission Systems Division: CTRC facilities",
+          "url": "https://nationalsecurity.vt.edu/research/msd.html"
+        }
+      ]
+    }
+  ]
+}

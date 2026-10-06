@@ -18,6 +18,7 @@ python manage.py apply_catalog_corrections --corrections data/asset_website_corr
 python manage.py apply_catalog_corrections --corrections data/capability_profiles_2026_09_29.json
 python manage.py apply_catalog_corrections --corrections data/aerospace_report_corrections_2026_09_29.json
 python manage.py apply_catalog_corrections --corrections data/maap_profile_corrections_2026_10_02.json
+python manage.py apply_catalog_corrections --corrections data/asset_website_corrections_2026_10_06.json
 python manage.py enrich_asset_profiles
 python manage.py apply_catalog_reviews
 python manage.py apply_catalog_reviews --reviews data/asset_editorial_reviews_2026_08_24.json
@@ -28,6 +29,7 @@ python manage.py apply_catalog_reviews --reviews data/asset_editorial_reviews_20
 python manage.py apply_catalog_reviews --reviews data/asset_editorial_reviews_2026_09_04.json
 python manage.py apply_catalog_reviews --reviews data/asset_editorial_reviews_2026_09_16.json
 python manage.py apply_source_audit
+python manage.py apply_source_audit --path data/source_audit_2026_10_06.json
 python manage.py scan_asset_duplicates
 python manage.py populate_history --auto --batchsize 500
 python manage.py ensure_admin_user --skip-recovery

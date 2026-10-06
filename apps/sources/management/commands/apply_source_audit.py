@@ -15,7 +15,7 @@ CLASSIFICATION_MESSAGES = {
     "reachable": "",
     "http_not_found": "Source returned HTTP 404/410; replacement requires review.",
     "access_blocked_or_rate_limited": (
-        "Automated access blocked or rate-limited; availability is inconclusive."
+        "Automated access blocked, sign-in required, or rate-limited; availability is inconclusive."
     ),
     "network_or_tls_error": "Network or TLS check failed; availability is inconclusive.",
     "server_error": "Source server returned an error; retry before treating it as a stale link.",

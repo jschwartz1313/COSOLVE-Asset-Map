@@ -14,7 +14,7 @@ from django.urls import reverse
 from apps.api.query import filter_public_assets
 from apps.assets.discovery import RESOURCE_CHOICES, TEST_SPEC_FIELDS
 from apps.assets.models import Asset, SavedView
-from apps.catalog.models import Capability, MissionArea, Region, StrategicCategory
+from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 from apps.imports.services import asset_csv_row, prepare_import_asset
 from apps.sources.models import Source
 
@@ -92,7 +92,15 @@ class ResourceDiscoveryTests(TestCase):
         self.assertEqual(self.results("min_runway=3000&test_specs=1"), [self.site.pk])
         self.assertEqual(self.results("min_runway=3001"), [])
         for invalid in ("NaN", "-5", "0", "1.5", "999999999999999999999"):
-            self.assertEqual(self.results(f"min_runway={invalid}"), [])
+                self.assertEqual(self.results(f"min_runway={invalid}"), [])
+
+    def test_counter_uas_shortcut_includes_domain_and_mission_without_duplicates(self):
+        domain = PlatformDomain.objects.create(name="Counter-UAS")
+        self.site.platform_domains.add(domain)
+        self.unknown.platform_domains.add(domain)
+        self.private.platform_domains.add(domain)
+        self.assertEqual(set(self.results("purpose=counter-uas")), {self.site.pk, self.unknown.pk})
+        self.assertEqual(self.results("purpose=counter-uas&activity=pilot"), [self.site.pk])
 
     def test_specification_search_and_empty_filters(self):
         self.assertEqual(self.results("q=Operator+scheduling"), [self.site.pk])
@@ -201,7 +209,7 @@ class InterviewCatalogTests(TestCase):
         Source.objects.create(
             asset=site,
             title="Rejected operator source",
-            url="https://ictas.vt.edu/Facilities/ictas-drone-park.html",
+            url="https://ictas.vt.edu/Facilities.html",
             verification_status="rejected",
         )
         call_command("enrich_asset_profiles", stdout=StringIO())

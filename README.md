@@ -31,7 +31,7 @@ The checked-in catalog contains source-backed, publicly documented Virginia reco
 - Optional FAA-recorded private-use heliport reference layer with access and authorization warnings
 - Password recovery, login throttling, optional TOTP MFA, and optional OIDC organization sign-in
 - Public correction and addition submissions routed to an editor-only review queue
-- 525 source-backed Virginia records spanning public-use airports, relevant higher education, research, workforce, companies, infrastructure, programs, and generalized defense assets
+- 542 source-backed Virginia records spanning public-use airports, relevant higher education, research, workforce, companies, infrastructure, programs, and generalized defense assets
 - A dedicated `Manufacturing facilities` strategic category covering 26 documented Virginia production, assembly, fabrication, and component-manufacturing sites
 - Backend, frontend state, security-boundary, and import tests
 
@@ -110,6 +110,7 @@ Example:
 - [Data dictionary](docs/data_dictionary.md)
 - [Real-data sources and methodology](docs/data_sources.md)
 - [September 4 research, location, source, and application audit](docs/audit_2026_09_04.md)
+- [October 6 asset and functionality review](docs/audit_2026_10_06.md)
 - [CSV import guide](docs/import_guide.md)
 - [Security and publication](docs/security_and_publication.md)
 - [Deployment and operations](docs/deployment.md)

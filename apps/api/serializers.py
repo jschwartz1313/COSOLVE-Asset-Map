@@ -1,5 +1,5 @@
 from apps.assets.discovery import TEST_SPEC_FIELDS
-from apps.assets.scoping import asset_is_in_public_scope
+from apps.assets.models import Asset
 
 
 def location_context(asset):
@@ -28,6 +28,7 @@ def names(items):
 
 
 def public_relationships(asset):
+    public_assets = Asset.public.all()
     related = [
         {
             "name": relationship.to_asset.public_name,
@@ -35,11 +36,9 @@ def public_relationships(asset):
             "direction": "outgoing",
             "url": relationship.to_asset.get_absolute_url(),
         }
-        for relationship in asset.outgoing_relationships.select_related("to_asset")
-        if relationship.is_public
-        and relationship.to_asset.status in asset.public_status_values()
-        and relationship.to_asset.visibility == asset.Visibility.PUBLIC
-        and asset_is_in_public_scope(relationship.to_asset)
+        for relationship in asset.outgoing_relationships.filter(
+            is_public=True, to_asset__in=public_assets
+        ).select_related("to_asset")
     ]
     related.extend(
         {
@@ -48,11 +47,9 @@ def public_relationships(asset):
             "direction": "incoming",
             "url": relationship.from_asset.get_absolute_url(),
         }
-        for relationship in asset.incoming_relationships.select_related("from_asset")
-        if relationship.is_public
-        and relationship.from_asset.status in asset.public_status_values()
-        and relationship.from_asset.visibility == asset.Visibility.PUBLIC
-        and asset_is_in_public_scope(relationship.from_asset)
+        for relationship in asset.incoming_relationships.filter(
+            is_public=True, from_asset__in=public_assets
+        ).select_related("from_asset")
     )
     return related
 
@@ -74,7 +71,7 @@ def public_asset_dict(asset, include_detail=True):
             "state": asset.state,
             "postal_code": asset.postal_code,
             "precision": asset.location_precision,
-            "precision_label": asset.get_location_precision_display(),
+            "precision_label": asset.public_location_label,
             "region": asset.region.name if asset.region else None,
         },
         "strategic_categories": names(asset.strategic_categories),
@@ -176,7 +173,7 @@ def asset_feature(asset):
             "state": asset.state,
             "postal_code": asset.postal_code,
             "precision": asset.location_precision,
-            "precision_label": asset.get_location_precision_display(),
+            "precision_label": asset.public_location_label,
             "region": asset.region.name if asset.region else None,
             "region_slug": asset.region.slug if asset.region else None,
         },

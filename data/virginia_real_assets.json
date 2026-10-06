@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02",
+  "generated_at": "2026-10-06",
   "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, broad-based Virginia degree-granting institutions from the NCES IPEDS 2024 directory while excluding narrowly specialized health and ministry schools without documented unmanned-systems relevance, and a curated set of source-backed ecosystem records. Specific street and site locations are anchored to official public address sources and geocoded against the U.S. Census address ranges or named-site map data; locality points are retained when the public record does not identify the operating department or facility. Every record is also classified as either a core unmanned-systems asset with direct documented activity or a supporting ecosystem asset with a broader enabling role.",
   "record_count": 542,
   "records": [
@@ -5246,7 +5246,7 @@
     },
     {
       "activity_last_verified_at": "2026-08-30",
-      "activity_source_url": "https://vedp.org/press-release/2026-08/chesapeake-defense-maritime-solutions",
+      "activity_source_url": "https://www.governor.virginia.gov/newsroom/news-releases/2026/august-releases/name-1122358-en.html",
       "activity_status": "active",
       "address_line": "3617 Koppens Way",
       "capabilities": [
@@ -5256,11 +5256,11 @@
         "Operations, maintenance, and sustainment"
       ],
       "city": "Chesapeake",
-      "contact_email": "",
+      "contact_email": "info@DMSAmerica.com",
       "contact_phone": "757-558-3625",
       "contact_text": "Defense Maritime Solutions Chesapeake facility",
       "contact_url": "https://dmsamerica.com/contact/",
-      "current_activity": "DMS announced an August 2026 investment of more than $30 million to expand domestic marine-engine manufacturing and testing at its Chesapeake operation.",
+      "current_activity": "The August 12, 2026 state announcement describes a planned investment of more than $30 million in expanded Chesapeake marine-engine manufacturing and testing. Completion and commissioning of that additional capacity have not been confirmed.",
       "latitude": 36.781007,
       "location_precision": "exact",
       "longitude": -76.36236,
@@ -5269,7 +5269,7 @@
         "Maritime domain awareness"
       ],
       "name": "Defense Maritime Solutions Chesapeake Manufacturing Facility",
-      "overview": "Defense Maritime Solutions operates a marine manufacturing, repair, assembly, and systems-integration facility in Chesapeake. A 2026 expansion adds domestic production and testing capacity for Wartsila medium-speed marine engines.",
+      "overview": "Defense Maritime Solutions operates a marine repair, assembly and systems-integration facility in Chesapeake. Its public company history describes propeller and thruster work and equipment assembly and testing. An August 2026 announcement proposes expanded domestic manufacturing and testing of Wartsila medium-speed marine engines; it does not establish that the new engine-production capacity is already operational.",
       "platform_domains": [
         "Maritime surface systems",
         "Undersea systems"
@@ -5278,15 +5278,11 @@
       "provenance": "curated-public-source",
       "record_type": "facility",
       "region": "Hampton Roads",
-      "short_description": "Chesapeake manufacturing and assembly facility producing marine engines, propulsors, and integrated shipboard systems for U.S. government fleets.",
+      "short_description": "Chesapeake marine repair, assembly and systems-integration facility, with a separately announced engine-manufacturing expansion.",
       "sources": [
         {
           "title": "Defense Maritime Solutions company website",
           "url": "https://dmsamerica.com/"
-        },
-        {
-          "title": "VEDP Defense Maritime Solutions Chesapeake manufacturing expansion",
-          "url": "https://vedp.org/press-release/2026-08/chesapeake-defense-maritime-solutions"
         },
         {
           "title": "Defense Maritime Solutions Chesapeake address",
@@ -5295,6 +5291,14 @@
         {
           "title": "Defense Maritime Solutions products and vessel integration",
           "url": "https://dmsamerica.com/products-and-solutions/"
+        },
+        {
+          "title": "DMS company history and Chesapeake repair/assembly capabilities",
+          "url": "https://dmsamerica.com/this-is-dms/"
+        },
+        {
+          "title": "Virginia governor: announced DMS Chesapeake expansion (August 12, 2026)",
+          "url": "https://www.governor.virginia.gov/newsroom/news-releases/2026/august-releases/name-1122358-en.html"
         }
       ],
       "state": "VA",
@@ -9815,7 +9819,7 @@
     },
     {
       "activity_last_verified_at": "2026-09-07",
-      "activity_source_url": "https://ir.hii.com/files/doc_news/archive/2021/05/1Q21-RELEASE.pdf",
+      "activity_source_url": "https://www.globenewswire.com/news-release/2021/01/11/2156355/0/en/Huntington-Ingalls-Industries-Completes-First-Phase-of-Unmanned-Systems-Center-of-Excellence-Campus.html",
       "activity_status": "",
       "address_line": "Hampton Roads Center - North Campus",
       "capabilities": [
@@ -9827,7 +9831,7 @@
       "contact_phone": "877-871-2058",
       "contact_text": "HII corporate routing for unmanned-systems inquiries",
       "contact_url": "https://www.hii.com/contact",
-      "current_activity": "HII's 2021 results record completion of the first campus phase. Current building-by-building capabilities and customer access have not been confirmed by the sources reviewed here.",
+      "current_activity": "HII's January 2021 company announcement records completion of the first campus phase. Current building-by-building capabilities and customer access have not been confirmed by the sources reviewed here.",
       "development_last_verified_at": "2026-08-21",
       "development_notes": "HII described a 20-acre campus and Hampton documented completion and occupancy of the first 22,000-square-foot building. Campus size is not presented as available acreage.",
       "development_source_url": "https://www.hii.com/news/first-quarter-2021-earnings",
@@ -9870,8 +9874,8 @@
           "url": "https://www.hii.com/contact"
         },
         {
-          "title": "HII first-quarter 2021 results: first campus phase completed",
-          "url": "https://ir.hii.com/files/doc_news/archive/2021/05/1Q21-RELEASE.pdf"
+          "title": "HII company announcement: first campus phase completed (January 11, 2021)",
+          "url": "https://www.globenewswire.com/news-release/2021/01/11/2156355/0/en/Huntington-Ingalls-Industries-Completes-First-Phase-of-Unmanned-Systems-Center-of-Excellence-Campus.html"
         }
       ],
       "state": "VA",
@@ -26668,7 +26672,7 @@
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Site operator or program information",
-      "contact_url": "https://vatestbed.com/about",
+      "contact_url": "https://vatestbed.com/",
       "latitude": 38.423823,
       "location_precision": "site",
       "longitude": -77.408604,
@@ -26695,10 +26699,6 @@
         {
           "title": "Virginia Smart Community Testbed",
           "url": "https://vatestbed.com/"
-        },
-        {
-          "title": "Virginia Smart Community Testbed public contact information",
-          "url": "https://vatestbed.com/about"
         }
       ],
       "state": "VA",
@@ -26882,7 +26882,7 @@
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Program or parent-organization inquiries",
-      "contact_url": "https://vsp.virginia.gov/about-us/department-history/",
+      "contact_url": "https://vsp.virginia.gov/contact/",
       "latitude": 37.498983,
       "location_precision": "site",
       "longitude": -77.539283,
@@ -26907,12 +26907,12 @@
           "url": "https://vsp.virginia.gov/about-us/department-history/"
         },
         {
-          "title": "Virginia State Police headquarters directions",
-          "url": "https://vsp.virginia.gov/sections-units-bureaus/superintendent/directions-to-virginia-state-police/"
-        },
-        {
           "title": "Virginia State Police: About",
           "url": "https://vsp.virginia.gov/about-us/"
+        },
+        {
+          "title": "Virginia State Police public contact and headquarters",
+          "url": "https://vsp.virginia.gov/contact/"
         }
       ],
       "state": "VA",
@@ -27358,6 +27358,10 @@
         {
           "title": "MAAP supplied CTRC resources, Kentland location and sensor-test process",
           "url": "https://cosolve-asset-map.onrender.com/references/maap/#ctrc"
+        },
+        {
+          "title": "Virginia Tech Mission Systems Division: CTRC facilities",
+          "url": "https://nationalsecurity.vt.edu/research/msd.html"
         }
       ],
       "state": "VA",
@@ -27372,11 +27376,11 @@
       "test_last_verified_at": "2026-10-02",
       "test_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#ctrc",
       "unmanned_systems_relevance": "Partner-facing evaluation of counter-drone sensing and system performance, linking laboratory work with controlled outdoor trials.",
-      "website_url": "https://nationalsecurity.vt.edu/research/sdd.html"
+      "website_url": "https://nationalsecurity.vt.edu/research/msd.html"
     },
     {
       "activity_last_verified_at": "2026-09-07",
-      "activity_source_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
+      "activity_source_url": "https://drones.ictas.vt.edu/dronepark.html",
       "activity_status": "active",
       "address_line": "2143 Oak Lane",
       "capabilities": [
@@ -27387,11 +27391,11 @@
       "contact_email": "VTDronePark@vt.edu",
       "contact_phone": "540-231-7303",
       "contact_text": "Virginia Tech Drone Park scheduling and orientation",
-      "contact_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
+      "contact_url": "https://drones.ictas.vt.edu/dronepark.html",
       "current_activity": "The park publishes a flight-time request process, orientation, and additional conditions for commercial and third-party users.",
       "development_last_verified_at": "2026-08-21",
       "development_notes": "The published facility is an operating research and teaching site. No claim is made that land or facility space is generally available for development.",
-      "development_source_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
+      "development_source_url": "https://ictas.vt.edu/Facilities.html",
       "development_status": "operational",
       "infrastructure_access": "Approximately 300-by-120-by-85-foot netted flight enclosure with adjacent laboratory, classroom, work, and observation space.",
       "latitude": 37.2241,
@@ -27419,8 +27423,12 @@
           "url": "https://www.vedp.org/industry/unmanned-systems"
         },
         {
-          "title": "Virginia Tech Drone Park facility and scheduling information",
-          "url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html"
+          "title": "Virginia Tech facilities: Drone Park address and 300 x 120 x 85 ft enclosure",
+          "url": "https://ictas.vt.edu/Facilities.html"
+        },
+        {
+          "title": "Virginia Tech Drone Park scheduling, orientation and public address",
+          "url": "https://drones.ictas.vt.edu/dronepark.html"
         }
       ],
       "state": "VA",
@@ -27433,9 +27441,9 @@
       "test_aircraft": "Drone research, education, and technology testing inside a netted enclosure.",
       "test_dimensions": "300 x 120 x 85 ft netted enclosure, approximately three million cubic feet of flight space; adjacent laboratory and classroom space. This is not an open-air runway.",
       "test_last_verified_at": "2026-09-06",
-      "test_source_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
+      "test_source_url": "https://ictas.vt.edu/Facilities.html",
       "unmanned_systems_relevance": "Contained flight-testing and educational resource for university users and external projects meeting the operator's requirements.",
-      "website_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html"
+      "website_url": "https://drones.ictas.vt.edu/dronepark.html"
     },
     {
       "address_line": "33446 Research Drive",
@@ -27692,7 +27700,7 @@
       "contact_email": "",
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
-      "contact_url": "https://nationalsecurity.vt.edu/research/mission-systems-division.html",
+      "contact_url": "https://nationalsecurity.vt.edu/research/msd.html",
       "latitude": 37.229012,
       "location_precision": "site",
       "longitude": -80.423675,
@@ -27712,12 +27720,12 @@
       "short_description": "National-security research division developing autonomous platforms, resilient control, maritime sensing, and airborne and spaceborne systems.",
       "sources": [
         {
-          "title": "Virginia Tech Mission Systems Division",
-          "url": "https://nationalsecurity.vt.edu/research/mission-systems-division.html"
-        },
-        {
           "title": "Virginia Tech campus location (NCES IPEDS 2024)",
           "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+        },
+        {
+          "title": "Virginia Tech Mission Systems Division official research and capabilities",
+          "url": "https://nationalsecurity.vt.edu/research/msd.html"
         }
       ],
       "state": "VA",
@@ -27727,7 +27735,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Provides documented research, engineering, or test capacity for aerial and cross-domain autonomous systems.",
-      "website_url": "https://nationalsecurity.vt.edu/research/mission-systems-division.html"
+      "website_url": "https://nationalsecurity.vt.edu/research/msd.html"
     },
     {
       "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
@@ -28127,14 +28135,14 @@
       "contact_email": "info@virginiauas.com",
       "contact_phone": "",
       "contact_text": "Organization public information and inquiries",
-      "contact_url": "https://virginiauas.com/home/",
+      "contact_url": "https://virginiauas.com/",
       "latitude": 37.666,
       "location_last_verified_at": "2026-09-16",
       "location_method": "locality",
       "location_notes": "Official material supports the listed locality, but a current public operating street address was not corroborated. The marker is a locality reference, not a building, test site or visitor entrance.",
       "location_precision": "locality",
       "location_role": "",
-      "location_source_url": "https://virginiauas.com/home/",
+      "location_source_url": "https://virginiauas.com/",
       "longitude": -77.506,
       "missions": [
         "Infrastructure inspection",
@@ -28153,10 +28161,6 @@
         {
           "title": "Virginia UAS",
           "url": "https://virginiauas.com/"
-        },
-        {
-          "title": "Virginia UAS public contact information",
-          "url": "https://virginiauas.com/home/"
         }
       ],
       "state": "VA",
@@ -29832,7 +29836,7 @@
       "contact_email": "",
       "contact_phone": "540-456-1147",
       "contact_text": "Organization public information and inquiries",
-      "contact_url": "https://zenithaerotech.com/tethered-drone-contact-us/",
+      "contact_url": "https://zenithaerotech.com/",
       "latitude": 38.002365,
       "location_precision": "exact",
       "longitude": -78.825996,
@@ -29853,14 +29857,6 @@
       "region": "Central Virginia",
       "short_description": "Virginia manufacturer of tethered unmanned aircraft systems for public-safety, defense, and industrial applications.",
       "sources": [
-        {
-          "title": "Zenith Aerotech",
-          "url": "https://zenithaerotech.com/about-us-tethered-drone/"
-        },
-        {
-          "title": "Zenith AeroTech contact information",
-          "url": "https://zenithaerotech.com/tethered-drone-contact-us/"
-        },
         {
           "title": "Zenith tethered UAS, ground power, communications, and lighting applications",
           "url": "https://zenithaerotech.com/"

@@ -309,10 +309,12 @@ def data_quality(request):
                 located=Count(
                     "id",
                     filter=Q(
+                        latitude__isnull=False,
+                        longitude__isnull=False,
                         location_precision__in=[
                             Asset.LocationPrecision.EXACT,
                             Asset.LocationPrecision.SITE,
-                        ]
+                        ],
                     ),
                     distinct=True,
                 ),

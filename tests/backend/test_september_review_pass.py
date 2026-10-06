@@ -113,6 +113,9 @@ class SeptemberReviewPassTests(SimpleTestCase):
             by_name[correction["name"]].update(correction["before"])
         apply_reviewed_corrections(records, self.corrections)
         apply_reviewed_corrections(records, self.corrections)
+        latest = json.loads((settings.BASE_DIR / "data"
+            / "asset_website_corrections_2026_10_06.json").read_text())["corrections"]
+        apply_reviewed_corrections(records, latest)
         for name, record in by_name.items():
             self.assertEqual(record, self.by_name[name])
             urls = [s["url"] for s in record["sources"]]

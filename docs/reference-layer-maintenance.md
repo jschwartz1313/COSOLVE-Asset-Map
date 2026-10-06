@@ -67,6 +67,15 @@ self-intersection at MCB Quantico. The downloader now retains the FAA's full
 coordinate precision; both polygons pass validation without modifying the source
 boundaries or dropping features.
 
+## October 6, 2026
+
+Refetched and validated 7,002 UAS Facility Map cells, 33 surface controlled-airspace
+features, 139 flight constraints and 128 heliports. All geometries are valid and
+required popup fields are retained. The FAA snapshot date is October 6; individual
+FAA records retain their own effective/edit dates. MAAP outlines and curated
+test-site specifications were not re-dated. These are reference snapshots, not
+live flight permissions.
+
 ## Basemap requests
 
 Leaflet tile images use `strict-origin` as their referrer policy: providers receive

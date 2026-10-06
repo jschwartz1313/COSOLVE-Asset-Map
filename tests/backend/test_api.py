@@ -121,6 +121,40 @@ class PublicApiTests(TestCase):
     def test_relationship_layer_endpoint_is_not_public(self):
         self.assertEqual(self.client.get("/api/relationships.geojson").status_code, 404)
 
+    def test_unmapped_site_is_not_labeled_as_a_map_point(self):
+        self.public.latitude = None
+        self.public.longitude = None
+        self.public.save()
+        detail = self.client.get(reverse("api:asset-detail", args=[self.public.slug])).json()
+        self.assertEqual(detail["location"]["precision"], "site")
+        self.assertEqual(detail["location"]["precision_label"], "Not mapped")
+        features = self.client.get(reverse("api:asset-geojson")).json()["features"]
+        feature = next(f for f in features if f["properties"]["slug"] == self.public.slug)
+        self.assertIsNone(feature["geometry"])
+        self.assertEqual(feature["properties"]["location"]["precision_label"], "Not mapped")
+        page = self.client.get(self.public.get_absolute_url())
+        self.assertContains(page, "No map point has been established")
+        self.assertNotContains(page, "The pin identifies")
+
+    def test_related_entities_exclude_specially_excluded_universities(self):
+        excluded = Asset.objects.create(
+            name="Edward Via College of Osteopathic Medicine",
+            record_type=Asset.RecordType.UNIVERSITY,
+            short_description="Excluded specialized school",
+            unmanned_systems_relevance="No established relevance",
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+            region=self.region,
+        )
+        for from_asset, to_asset in ((excluded, self.public), (self.public, excluded)):
+            Relationship.objects.create(
+                from_asset=from_asset, to_asset=to_asset,
+                relationship_type=Relationship.RelationshipType.SUPPORTS,
+            )
+        body = self.client.get(reverse("api:asset-detail", args=[self.public.slug])).json()
+        self.assertEqual([r["name"] for r in body["related_entities"]], [self.partner.name])
+        self.assertEqual(self.client.get(excluded.get_absolute_url()).status_code, 404)
+
     def test_geojson_reports_when_limit_truncates_results(self):
         body = self.client.get(reverse("api:asset-geojson"), {"limit": 1}).json()
         self.assertEqual(body["result_count"], 2)

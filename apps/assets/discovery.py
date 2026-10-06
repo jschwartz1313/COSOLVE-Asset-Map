@@ -22,7 +22,7 @@ RESOURCE_QUERIES = {
             "state-strategy-and-coordination",
         )
     ),
-    "counter-uas": Q(missions__slug="counter-uas"),
+    "counter-uas": Q(missions__slug="counter-uas") | Q(platform_domains__slug="counter-uas"),
     "airspace": Q(capabilities__slug="safety-policy-regulatory-and-airspace-integration"),
     "manufacturing": Q(strategic_categories__slug="manufacturing-facilities"),
 }

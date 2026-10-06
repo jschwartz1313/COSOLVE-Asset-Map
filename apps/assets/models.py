@@ -410,6 +410,14 @@ class Asset(models.Model):
             and self.location_precision != self.LocationPrecision.HIDDEN
         )
 
+    @property
+    def public_location_label(self):
+        if not self.has_public_coordinates and self.location_precision not in {
+            self.LocationPrecision.REGIONAL, self.LocationPrecision.HIDDEN,
+        }:
+            return "Not mapped"
+        return self.get_location_precision_display()
+
 
 class Relationship(models.Model):
     class RelationshipType(models.TextChoices):
