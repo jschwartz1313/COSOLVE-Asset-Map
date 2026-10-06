@@ -10,7 +10,7 @@ Current work and collaboration use `activity_status`, `current_activity`, `partn
 
 Economic-development and site-readiness data use `owner_operator`, `available_acreage`, `development_status`, `development_notes`, `infrastructure_access`, `development_source_url`, and `development_last_verified_at`. Published acreage is contextual site information and does not guarantee that land or space is currently available. Populated development claims also require a public source and review date.
 
-Lifecycle values are `draft`, `needs-review`, `verified`, `published`, and `archived`. Visibility values are `public`, `partner`, and `internal`. Unauthenticated queries require both `published` status and `public` visibility.
+Lifecycle values are `draft`, `needs-review`, `source-backed`, `verified`, `published`, and `archived`. Visibility values are `public`, `partner`, and `internal`. Public-facing queries include `source-backed` and `published` records with `public` visibility, subject to the configured regional scope and specialized-institution exclusions. Hosted access can still require sign-in. A source-backed listing remains pending editorial review; a listed-asset total does not mean every included record is editorially reviewed.
 
 Location uses WGS84 decimal latitude and longitude. `location_precision` is `exact`, `site`, `approximate`, `locality`, `regional`, or `hidden`. The public API suppresses geometry when coordinates are absent. Regional records identify a service area without asserting a point; hidden locations cannot be public.
 

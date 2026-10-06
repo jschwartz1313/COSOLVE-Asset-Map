@@ -17,7 +17,7 @@
   <div class="comparison-grid">
     {% for item in comparisons %}
       <section class="region-column">
-        <div class="region-total"><span>{{ item.region.name }}</span><strong>{{ item.total }}</strong><small>published assets</small></div>
+        <div class="region-total"><span>{{ item.region.name }}</span><strong>{{ item.total }}</strong><small>listed assets</small></div>
         <div class="metrics-section"><h2>Data confidence</h2>{% for metric in item.quality_metrics %}<div class="metric-row metric-with-rate"><span>{{ metric.name }}<small>{{ metric.count }} records</small></span><strong>{{ metric.rate }}%</strong></div>{% endfor %}</div>
         <div class="metrics-section"><h2>Asset mix</h2>{% for metric in item.record_types %}<div class="metric-row"><span>{{ metric.name }}</span><strong>{{ metric.count }}</strong></div>{% endfor %}</div>
         <div class="metrics-section"><h2>Leading strategic categories</h2>{% for category in item.categories %}<div class="metric-row"><span>{{ category.name }}</span><strong>{{ category.asset_count }}</strong></div>{% empty %}<p>No category data.</p>{% endfor %}</div>
