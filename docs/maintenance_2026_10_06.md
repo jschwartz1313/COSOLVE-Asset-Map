@@ -22,8 +22,8 @@ Required context was read before making changes:
 No applicable AGENTS.md was found in the checked repository/ancestor locations;
 `/Users/jakeschwartz/.agents` was absent. The checkout began on `main` at
 `9168408a6c75330f6ac494a33983d0c18a6a926c`, matching the remote. The existing
-untracked `tmp/` research archive was preserved. No staff record or source was
-edited during this pass.
+untracked `tmp/` research archive was preserved. No staff-authored data was
+overwritten; the guarded catalog enrichment is described below.
 
 ## Access and database boundaries
 
@@ -114,8 +114,12 @@ automatic approval review, which rejected the browser navigation because the
 delegated/quoted authorization was not accepted as direct user permission for
 that private folder. The exact requested retry was also rejected. The action
 was stopped and reported to the parent; no alternate access path was used.
-Existing checked-in sanitized integration notes remained available. Current
-COA instruments, expiry/conditions and Blackstone geometry still need evidence.
+Existing checked-in sanitized integration notes remained available. The user
+subsequently said to ignore the already-integrated Tombo SharePoint file.
+That access dependency is canceled: do not inspect it or request access. The
+supplied integration is complete. Current COA instruments, expiry/conditions
+and Blackstone geometry remain ordinary operator-evidence follow-ups, separate
+from inspecting that folder.
 
 ## Public-source developments
 
@@ -266,6 +270,7 @@ The tested implementation commit above remains the hosted application version.
 5. Follow the established FAA candidate-validation/review cadence. Keep the
    heliport 28-day and curated-site 90-day review intervals distinct.
 
-The parent task maintains the project tracker/playbook and Tuesday/Friday
+The parent task maintains the private project tracker/playbook and Tuesday/Friday
 09:00 Eastern schedule. This log and the difference ledger feed that task;
-this maintenance pass did not create a duplicate schedule or send outreach.
+this maintenance pass did not write the shared tracker, create a duplicate
+schedule or send outreach.
