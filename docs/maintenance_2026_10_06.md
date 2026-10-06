@@ -73,6 +73,9 @@ mission tags and two publication states. Hosted `fort-ap-hill` and
 two duplicate public records. Mare Custos and Trident have publication-state
 differences. These are follow-up findings, not approved overwrite instructions.
 Review production audit/history and correction baselines before resolving them.
+This ledger is the initial, pre-ESCC baseline; the later intentional ESCC change
+is recorded separately in the live receipt below. Local SQLite was not resynchronized
+from production or changed to imitate the hosted record.
 
 The earlier complete audit covers all 555 stored assets, all 542 public profiles
 and API responses, and 1,215 actual local source URLs. This pass independently
@@ -131,6 +134,18 @@ These targeted official rechecks do not amount to a new full news sweep:
 - The same announcement supports the $3,061,400 Hampton Roads Mobility
   Innovation Center project. Its existing hosted profile already describes
   funded/future facilities and does not claim currently open BVLOS access.
+- ESCC's [own news archive](https://es.vccs.edu/category/uncategorized/page/2/)
+  corroborates the grant, existing training and planned expansion. It supplies
+  additional partnership and equipment context for follow-up, without confirming
+  current enrollment or completion of the funded expansion. Direct VCCS course
+  extraction failed during the fresh check; that does not establish course closure.
+- A fresh [FAA October 5 research-award announcement](https://www.faa.gov/newsroom/faa-funds-drone-research-support-safe-integration)
+  lists projects for ANRA Technologies, DroneUp and Aerial Vantage, among others.
+  ANRA and DroneUp are already in the catalog; Aerial Vantage is a candidate to
+  check for Virginia presence/scope. Match award recipients to the correct
+  entity and site before assigning new activity or capabilities. The FAA now
+  lists nine designated test sites; current repository descriptions checked in
+  this pass did not contain the obsolete seven-site claim.
 
 Blue Ridge Defense Works' missing homepage remains a research follow-up, not
 proof of closure. No closure, current facility capacity, newly available land
@@ -218,8 +233,24 @@ The main local SQLite database was not modified. Logs are
 `tmp/maintenance-escc-tests-2026-10-06.log` and
 `tmp/maintenance-escc-release-2026-10-06.log`.
 
-**Deployment pending:** Hosted release/profile/export verification is still
-required before treating this tested change as applied to production.
+**Deployed and verified:** Implementation commit
+`b63b34f75131504346b43f53a6e7ae42c8910106` is **Live** in Render at
+[dep-db2kkb2jnfac73f46d80](https://dashboard.render.com/web/srv-d9kgihvqj5pc73eie5bg/deploys/dep-db2kkb2jnfac73f46d80)
+after a 6m13s auto-deploy. The hosted ESCC profile displays the grant wording,
+official activity source/date, four sources and pending editorial review.
+Initiative-name search returns exactly this existing record; filtered CSV
+matches the manifest. The full hosted export still has 542 rows, now 504
+`published` and 38 `source-backed`. Normalized before/after comparison confirms
+only ESCC changed and all other 541 rows are unchanged. Its campus coordinates,
+precision, name, course descriptions, website, activity status and taxonomy
+match the initial hosted export. Regional totals still label records as listed
+assets (Hampton Roads 139, Eastern Shore 16).
+
+The machine-readable verification receipt is
+[maintenance_escc_live_receipt_2026_10_06.json](../data/maintenance_escc_live_receipt_2026_10_06.json).
+The final log/receipt update is documentation only and uses Render's
+[documented skip-auto-deploy phrase](https://render.com/docs/deploys#skipping-an-auto-deploy).
+The tested implementation commit above remains the hosted application version.
 
 ## Next maintenance work
 

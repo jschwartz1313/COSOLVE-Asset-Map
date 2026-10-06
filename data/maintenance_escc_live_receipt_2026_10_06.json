@@ -1,0 +1,33 @@
+{
+  "verification_date": "2026-10-06",
+  "implementation_commit": "b63b34f75131504346b43f53a6e7ae42c8910106",
+  "hosted_profile": "https://cosolve-asset-map.onrender.com/assets/eastern-shore-community-college-unmanned-systems-courses/",
+  "render_deployment": "https://dashboard.render.com/web/srv-d9kgihvqj5pc73eie5bg/deploys/dep-db2kkb2jnfac73f46d80",
+  "render_live_confirmed": true,
+  "render_deploy_duration": "6m13s",
+  "regional_labels_after_release": "listed assets",
+  "public_count_before": 542,
+  "public_count_after": 542,
+  "publication_counts_after": {
+    "published": 504,
+    "source-backed": 38
+  },
+  "changed_rows": {
+    "eastern-shore-community-college-unmanned-systems-courses": [
+      "search_aliases",
+      "current_activity",
+      "activity_source_url",
+      "activity_last_verified_at",
+      "status",
+      "last_verified_at",
+      "sources"
+    ]
+  },
+  "profile_and_csv_grant_fields_agree": true,
+  "initiative_name_search_results": 1,
+  "other_541_rows_unchanged": true,
+  "coordinate_pairs_valid": true,
+  "exported_internal_notes_blank": true,
+  "staff_preservation_tests": "69 focused/catalog tests passed; isolated release rehearsal passed",
+  "new_claims_editorial_status": "source-backed; editorial review pending"
+}
