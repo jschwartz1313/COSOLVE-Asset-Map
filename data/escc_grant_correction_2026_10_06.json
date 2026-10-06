@@ -1,0 +1,30 @@
+{
+  "reviewed_at": "2026-10-06",
+  "scope": "Add the official ESCC UAS workforce grant announcement to the existing coursework program. Funded expansion remains planned and pending editorial review; current enrollment, expanded capabilities and rollout are not certified.",
+  "corrections": [
+    {
+      "name": "Eastern Shore Community College Unmanned Systems Courses",
+      "provenance": "curated-public-source",
+      "before": {
+        "current_activity": "",
+        "activity_source_url": "",
+        "activity_last_verified_at": null,
+        "search_aliases": ""
+      },
+      "after": {
+        "current_activity": "The VCCS catalog lists existing ESCC unmanned-systems coursework. On April 17, 2026, Virginia announced a $788,700 GO Virginia implementation grant for ESCC's FAA Uncrewed Aerial Systems College Initiative in Accomack and Northampton counties. The funded plan calls for expanded UAS workforce training, credentialing opportunities, engineering and electronics curricula, and hands-on applications. The announcement describes future program development; implementation, enrollment availability and expanded operating capabilities were not confirmed in this review.",
+        "activity_source_url": "https://www.governor.virginia.gov/newsroom/news-releases/2026/april-releases/name-1116537-en.html",
+        "activity_last_verified_at": "2026-10-06",
+        "search_aliases": "FAA Uncrewed Aerial Systems College Initiative\nESCC UAS College Initiative"
+      },
+      "add_sources": [
+        {
+          "title": "Virginia April 17, 2026 GO Virginia award: ESCC FAA Uncrewed Aerial Systems College Initiative",
+          "url": "https://www.governor.virginia.gov/newsroom/news-releases/2026/april-releases/name-1116537-en.html"
+        }
+      ],
+      "review_required": true,
+      "reason": "Record the official $788,700 funded ESCC workforce initiative as planned expansion of the existing coursework program. Confirm rollout and enrollment before claiming expanded capabilities are operating; preserve the campus point and existing course evidence."
+    }
+  ]
+}

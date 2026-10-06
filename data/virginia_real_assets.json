@@ -6204,6 +6204,10 @@
         {
           "title": "Eastern Shore Community College: About",
           "url": "https://es.vccs.edu/about/"
+        },
+        {
+          "title": "Virginia April 17, 2026 GO Virginia award: ESCC FAA Uncrewed Aerial Systems College Initiative",
+          "url": "https://www.governor.virginia.gov/newsroom/news-releases/2026/april-releases/name-1116537-en.html"
         }
       ],
       "state": "VA",
@@ -6212,7 +6216,11 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
-      "website_url": "https://courses.vccs.edu/colleges/escc/courses/UMS-UnmannedSystems"
+      "website_url": "https://courses.vccs.edu/colleges/escc/courses/UMS-UnmannedSystems",
+      "current_activity": "The VCCS catalog lists existing ESCC unmanned-systems coursework. On April 17, 2026, Virginia announced a $788,700 GO Virginia implementation grant for ESCC's FAA Uncrewed Aerial Systems College Initiative in Accomack and Northampton counties. The funded plan calls for expanded UAS workforce training, credentialing opportunities, engineering and electronics curricula, and hands-on applications. The announcement describes future program development; implementation, enrollment availability and expanded operating capabilities were not confirmed in this review.",
+      "activity_source_url": "https://www.governor.virginia.gov/newsroom/news-releases/2026/april-releases/name-1116537-en.html",
+      "activity_last_verified_at": "2026-10-06",
+      "search_aliases": "FAA Uncrewed Aerial Systems College Initiative\nESCC UAS College Initiative"
     },
     {
       "address_line": "5555 Greenwich Rd",

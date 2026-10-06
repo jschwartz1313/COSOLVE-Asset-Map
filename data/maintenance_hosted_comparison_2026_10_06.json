@@ -1,0 +1,325 @@
+{
+  "comparison_date": "2026-10-06",
+  "baseline_code_commit": "9168408a6c75330f6ac494a33983d0c18a6a926c",
+  "scope": "Hosted authenticated public CSV versus local filter_public_assets export; no production SQL session",
+  "normalization": "Source URL/title/date tuples sorted before comparison; slug used as identity key",
+  "matched_rows_with_field_differences": 42,
+  "hosted_slugs_with_local_legacy_counterparts": 2,
+  "hosted_public": 542,
+  "local_filtered_public": 542,
+  "hosted_only": [
+    "fort-ap-hill",
+    "radford-army-ammunition-plant"
+  ],
+  "local_only": [
+    "fort-ap-hill-2",
+    "radford-army-ammunition-plant-2"
+  ],
+  "different_rows": 44,
+  "fields": {
+    "search_aliases": 1,
+    "website_url": 2,
+    "contact_url": 1,
+    "location_role": 1,
+    "location_method": 1,
+    "location_notes": 1,
+    "location_source_url": 1,
+    "location_last_verified_at": 1,
+    "source_titles": 6,
+    "source_urls": 6,
+    "source_dates": 5,
+    "last_verified_at": 32,
+    "short_description": 1,
+    "owner_operator": 1,
+    "development_source_url": 2,
+    "missions": 3,
+    "status": 2
+  },
+  "differences": [
+    {
+      "slug": "accomack-county",
+      "fields": [
+        "search_aliases",
+        "website_url",
+        "contact_url",
+        "location_role",
+        "location_method",
+        "location_notes",
+        "location_source_url",
+        "location_last_verified_at",
+        "source_titles",
+        "source_urls",
+        "source_dates"
+      ]
+    },
+    {
+      "slug": "advanced-technology-systems-company-dronesting",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "analytical-mechanics-associates",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "aura-network-systems",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "austal-usa-advanced-technologies-and-solutions",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "bzrd-systems",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "commonwealth-stem-industry-internship-program-csiip",
+      "fields": [
+        "source_titles",
+        "source_urls",
+        "source_dates"
+      ]
+    },
+    {
+      "slug": "dcs-corporation",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "devorto",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "d-fend-solutions-north-american-headquarters",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "droneshield-us-headquarters",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "dronetrace",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "fairlead-maritime-systems",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "fort-ap-hill",
+      "finding": "hosted_only"
+    },
+    {
+      "slug": "fulcrum-concepts-newport-news-machine-shop",
+      "fields": [
+        "source_titles",
+        "source_urls",
+        "source_dates"
+      ]
+    },
+    {
+      "slug": "george-mason-northern-virginia-dfr-planning-study",
+      "fields": [
+        "short_description"
+      ]
+    },
+    {
+      "slug": "george-mason-robotixx-laboratory",
+      "fields": [
+        "website_url",
+        "source_titles",
+        "source_urls",
+        "source_dates"
+      ]
+    },
+    {
+      "slug": "gotak",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "h2p-solution",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "hampton-roads-mobility-innovation-center",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "heven-aerotech-winchester-innovation-and-manufacturing-campus",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "hii-unmanned-systems-center-of-excellence",
+      "fields": [
+        "owner_operator",
+        "development_source_url"
+      ]
+    },
+    {
+      "slug": "linebird",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "logos-technologies",
+      "fields": [
+        "missions",
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "magothy-river-technologies",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "mare-custos-us-presence-at-idea-lab",
+      "fields": [
+        "status",
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "marine-sonic-technology",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "odu-maritime-autonomous-systems-test-site",
+      "fields": [
+        "development_source_url"
+      ]
+    },
+    {
+      "slug": "odu-national-security-institute",
+      "fields": [
+        "missions"
+      ]
+    },
+    {
+      "slug": "psionic",
+      "fields": [
+        "missions",
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "radford-army-ammunition-plant",
+      "finding": "hosted_only"
+    },
+    {
+      "slug": "saic-counter-uas-integration",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "src-herndon-rf-and-systems-engineering-lab",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "stem-takes-flight-at-virginias-community-colleges",
+      "fields": [
+        "source_titles",
+        "source_urls",
+        "source_dates"
+      ]
+    },
+    {
+      "slug": "textron-systems-aerosonde-uas-center-of-excellence",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "trident-systems-chantilly-production-facility",
+      "fields": [
+        "status",
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "truweather-solutions",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "turbineone-headquarters-and-t1-edgeworks",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "ultra-maritime-chantilly-engineering-hub",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "uvision-usa-stafford-production-and-training-center",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "vidarr-virginia-beach-manufacturing-facility",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "virginia-tech-counter-uas-research-and-testing-center",
+      "fields": [
+        "source_titles",
+        "source_urls"
+      ]
+    },
+    {
+      "slug": "virtus-innovation-center",
+      "fields": [
+        "last_verified_at"
+      ]
+    },
+    {
+      "slug": "wnk-aviation",
+      "fields": [
+        "last_verified_at"
+      ]
+    }
+  ]
+}
