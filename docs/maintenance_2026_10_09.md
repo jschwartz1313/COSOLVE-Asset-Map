@@ -50,7 +50,7 @@ The canceled supplied-folder access dependency was not reopened.
 
 | Surface | October 9 result |
 | --- | --- |
-| GitHub | Existing Git credentials can read the repository; remote branch matched the checkout before delivery. |
+| GitHub | Existing credentials read the repository and successfully pushed [a0a689a](https://github.com/jschwartz1313/COSOLVE-Asset-Map/commit/a0a689a530786733cca1acb33478b846d6e6dcb0). The remote branch was independently confirmed at that commit. |
 | Hosted health | `/health/` returned HTTP 200 with `status: ok`. |
 | Hosted protection | Anonymous map, API, directory, comparison and MAAP-reference requests redirected to the sign-in page. Final HTTP 200 is the login page, not the protected application. |
 | Hosted authenticated session | **Unavailable to this runtime.** No browser/computer/session tools are exposed. October 6's signed-in session is historical evidence, not a new access check. |
