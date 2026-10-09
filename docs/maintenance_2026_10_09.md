@@ -2,8 +2,9 @@
 
 ## Outcome and execution state
 
-The independent inventory, source and local application review is complete. Hosted
-health and sign-in boundaries passed. **Authenticated hosted verification remains
+The local inventory/source audit and application tests are finished. The full
+maintenance review remains open. Hosted health and sign-in boundaries passed.
+**Authenticated hosted verification remains
 blocked by this runtime's missing browser/session tools. No production record,
 reference layer, access setting or application release was changed.**
 
@@ -13,6 +14,7 @@ reference layer, access setting or application release was changed.**
 | Browser referrer test using the actual test origin | Yes | Full desktop/mobile suite passed | Test code only |
 | Corrected smoke checklist for hosted authentication and isolated writes | Yes | Matches anonymous hosted checks and current settings | Documentation only |
 | Three guarded FAA research-award enrichments | Yes | Guard tests and copied-database rehearsal passed | **No**; not wired into generation or release |
+| Six VABA follow-up comparisons | Yes | Official content and 13 existing local records compared | Evidence/proposals only; no catalog mutation |
 | Authenticated hosted feature/inventory comparison | Required | Local counterpart passed | **Blocked**, not certified |
 
 Repository delivery uses `[skip render]`. A Git push of these evidence/test files
@@ -64,6 +66,30 @@ The blocker was reported during the review; independent work continued. To finis
 resume in an environment exposing the supported browser/session tools, use the
 existing authorized session, inspect Render and export the current public inventory.
 No password reset, cookie extraction or login-bypass workaround was attempted.
+
+### Reconnection follow-up, 14:42 UTC
+
+After the parent reported a freshly connected, authorized Mac, the executor was
+confirmed as Darwin in the same repository. Its 340 callable tools still expose
+no browser/CUA/JavaScript REPL, local-history API, Render connector or reconnect
+action. Executor skill discovery returns no skills. The newly cached Chrome and
+Browser packages, version `26.1007.21159`, have empty skill directories; Chrome's
+plugin metadata refers to the absent `node_repl` runtime.
+
+Packaged read-only diagnostics confirm Chrome is installed/running and the
+native-host manifest is valid. The fresh diagnostic now selects a profile without
+the ChatGPT extension, while another profile has it enabled. Before reconnection,
+the diagnostic selected the enabled profile. Neither result checks actual
+browser-client transport or a signed-in site. No profile was switched. There is
+also no Render CLI or database connection in the shell/project dotenv.
+
+The exact local diagnostic receipt is
+`tmp/maintenance-2026-10-09/browser-route-check.json` (untracked). The parent/platform
+must expose the supported browser runtime and confirm the intended authorized
+profile. Packaged Chrome troubleshooting documents extension checks and a Browser
+plugin UI reinstall if restored transport still fails; it prohibits shell browser
+substitutes and native-host repair. No failed transport call or need to reinstall
+is inferred from missing tool registration alone.
 
 ## Inventory and display agreement
 
@@ -165,10 +191,34 @@ follow-up: Riverside's official site now brands itself College of Health Science
 and VUIM's admissions URL redirects home. Any identity correction must preserve
 the intended specialized-institution exclusion.
 
-VABA has no record or explicit follow-up instruction in the repository. Its
-official site/board was checked, but the parent's specific existing follow-up
-context is unavailable here. No outreach, new listing or stakeholder assertion
-was inferred. This is a continuity limitation to carry back to the parent.
+### VABA follow-up supplied by the parent
+
+The parent subsequently supplied six topics. The
+[comparison ledger](../data/vaba_followup_comparison_2026_10_09.json) records official
+content, 13 matched local records and their existing sources, proposed enrichments,
+precision limits and the outstanding hosted comparison. The initial context gap
+is resolved for these topics; the VABA-specific newsletter/deliverable remains
+unavailable. No new asset or catalog/database change was made.
+
+| Topic and public evidence | Local comparison / proposed disposition |
+| --- | --- |
+| [Textron demonstration](https://www.textronsystems.com/our-company/news-events/articles/press-release/textron-systems-aerosonde-uas-completes-first-uas) | Already sourced on Smart Airspace and VTTI. Consider attributed activity enrichment on the existing Textron center; preserve separate airport, pad and flight-area records. |
+| [Current FAA roster](https://www.faa.gov/uas/programs_partnerships/test_sites/locations) | Lists nine sites; the Textron release's seven-site count is stale. No matching stale count was found in checked map text. |
+| [Winchester AIP award](https://www.govirginiaregion8.org/news/winchester-awarded-airport-improvement-program-grant/) | Add awarded/planned taxiway context to the existing airport; construction is not established as complete. |
+| [Liberty DC-8 Overlook](https://www.liberty.edu/news/2026/09/21/liberty-university-receives-grant-from-boeing-to-support-dc-8-overlook-project/) | Existing university, aeronautics school and airport match. Consider a planned-project note; no pavilion point, opening date or grant amount is established. |
+| [CSIIP](https://vsgc.odu.edu/csiip/) | Existing statewide workforce program. Consider its subsidy ceiling in activity information; retain unmapped regional representation. |
+| [InternshipsVA](https://www.vedp.org/internshipsva) | Consider linking this workforce resource from existing VEDP information; eligibility/training require current checks. |
+| VABA-specific study/toolkit lead | Publication is unverified. VEDP's general Employer Toolkit does not establish publication of the distinct VABA deliverable. |
+
+These are review proposals, not a guarded VABA mutation manifest. Fresh hosted
+record/source/history comparison remains required before integration, isolated
+mutation tests, release and live verification. Private correspondence and inferred
+assignments were excluded; no outreach or application was made.
+
+The six-topic/13-record JSON consistency check passed: all identities/slugs match,
+source links are public HTTPS URLs, and the catalog hash and main SQLite timestamp
+remain unchanged. Existing application/proposal test results below remain valid;
+this follow-up changed only documentation and evidence files.
 
 ## Reference layers and functional QA
 

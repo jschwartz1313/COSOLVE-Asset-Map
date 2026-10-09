@@ -240,11 +240,14 @@
   ],
   "coordination_follow_up": {
     "topic": "VABA",
-    "disposition": "No VABA record or follow-up instruction found in repository docs/data/scripts/tests. Official organization and board pages were checked; the specific existing parent follow-up is unavailable in this runtime. No map record, outreach or new claim was inferred.",
     "source_urls": [
       "https://www.thevaba.org/",
       "https://www.thevaba.org/board"
-    ]
+    ],
+    "initial_disposition": "No VABA record or follow-up instruction found in repository docs/data/scripts/tests. Official organization and board pages were checked; the specific existing parent follow-up is unavailable in this runtime. No map record, outreach or new claim was inferred.",
+    "disposition": "Parent subsequently supplied six VABA follow-up topics. Official content was compared with 13 existing local records; existing-record enrichments are proposed only. The VABA-specific study/toolkit publication remains unverified. No catalog, main SQLite or hosted changes, new assets or outreach.",
+    "comparison_ledger": "data/vaba_followup_comparison_2026_10_09.json",
+    "production_comparison_completed": false
   },
   "excluded_institution_follow_up": [
     {

@@ -1,0 +1,638 @@
+{
+  "checked_at_utc": "2026-10-09T14:45:41.090766+00:00",
+  "scope": "Six parent-supplied VABA follow-up topics; official-source content compared with checked-in catalog and read-only local SQLite. These are not fresh Render PostgreSQL inventory observations.",
+  "baseline": {
+    "repository_commit": "49d5f06cb38326dd00e622b9ef91d1a39bfcec05",
+    "canonical_catalog_sha256": "6022175c22e199d75bc498056ffd69004f0a6e6747c41922a157053533d7ed3a",
+    "local_sqlite_mtime_utc": "2026-10-06T18:31:37.712434+00:00"
+  },
+  "execution_state": {
+    "source_content_read": true,
+    "canonical_and_local_comparison_completed": true,
+    "production_baseline_compared": false,
+    "new_assets_created": 0,
+    "catalog_or_main_sqlite_changes": 0,
+    "guarded_vaba_mutation_manifest_prepared": false,
+    "mutation_tests_for_vaba_changes": "not applicable; evidence and proposals only",
+    "deployed": false,
+    "live_verified": false
+  },
+  "required_before_integration": "Restore supported authenticated browser/project access, compare fresh hosted records/sources/history, preserve staff differences, then prepare guarded eligible enrichments and rehearse in isolation before release and authenticated live verification.",
+  "comparisons": [
+    {
+      "topic": "Textron / MAAP / VTTI / Blackstone demonstration",
+      "publication_date": "2026-09-22",
+      "source_urls": [
+        "https://www.textronsystems.com/our-company/news-events/articles/press-release/textron-systems-aerosonde-uas-completes-first-uas",
+        "https://www.faa.gov/uas/programs_partnerships/test_sites/locations"
+      ],
+      "confirmed_source_facts": "Textron reports an Aerosonde Mk. 4.7 VTOL demonstration from VTTI in Blacksburg to its Blackstone center, approximately 150 nautical miles over 2.5 hours. Its 38,000-square-foot center supports assembly, testing and training. The FAA currently lists nine test sites, including MAAP.",
+      "local_comparison": "The Textron center already describes the 38,000-square-foot footprint and relevant support. Smart Airspace and VTTI already cite this exact release. The Textron and MAAP profiles do not currently include it. The airport, vertiport and flight area remain separate records.",
+      "proposed_existing_record_enrichment": "Consider adding the attributed demonstration and release source to the existing Textron center activity; retain its operational-footprint information. Cross-reference existing MAAP/Smart Airspace/VTTI records rather than creating another site.",
+      "limits": [
+        "September 22 is the release date; it is not an independently verified flight date.",
+        "The release says seven FAA sites; use the current FAA roster for any count. No stale count was found in the checked catalog or application text.",
+        "The demonstration and building floor area do not establish COA geometry, unrestricted access, another operator’s authority or a general aircraft operating envelope."
+      ],
+      "disposition": "existing-record-enrichment-proposed; existing cross-record evidence retained",
+      "matched_local_records": [
+        {
+          "name": "Textron Systems Aerosonde UAS Center of Excellence",
+          "slug": "textron-systems-aerosonde-uas-center-of-excellence"
+        },
+        {
+          "name": "Mid-Atlantic Aviation Partnership",
+          "slug": "mid-atlantic-aviation-partnership"
+        },
+        {
+          "name": "Virginia AAM Smart Airspace Program",
+          "slug": "virginia-aam-smart-airspace-program"
+        },
+        {
+          "name": "Virginia Tech VTTI Smart Airspace Vertiport",
+          "slug": "virginia-tech-vtti-smart-airspace-vertiport"
+        },
+        {
+          "name": "Blackstone Smart Airspace Vertiport",
+          "slug": "blackstone-smart-airspace-vertiport"
+        },
+        {
+          "name": "Allan C Perkinson/Blackstone AAF",
+          "slug": "allan-c-perkinsonblackstone-aaf"
+        },
+        {
+          "name": "MAAP Blackstone Class D Flight Area",
+          "slug": "maap-blackstone-class-d-flight-area"
+        }
+      ]
+    },
+    {
+      "topic": "Winchester Regional Airport taxiway grant",
+      "publication_date": "2026-09-15",
+      "source_urls": [
+        "https://www.govirginiaregion8.org/news/winchester-awarded-airport-improvement-program-grant/"
+      ],
+      "confirmed_source_facts": "The airport authority reports a $7,053,560 FAA AIP award for the third and final parallel-taxiway relocation phase. Construction is expected to start in spring 2027.",
+      "local_comparison": "The existing Winchester Regional Airport record has FAA/DOAV identity and operator sources; current activity and development fields are blank. The new award source is absent from its source list.",
+      "proposed_existing_record_enrichment": "Add an attributed awarded/planned project note and source to the existing airport. Keep its identity, aliases, point and publication review unchanged.",
+      "limits": [
+        "An award and expected start do not establish completed construction.",
+        "This is general airport infrastructure funding; UAS-specific capability is not established.",
+        "Do not add the award to the overlapping $45 million capital-improvement statement."
+      ],
+      "disposition": "existing-airport-enrichment-proposed; no additional facility",
+      "matched_local_records": [
+        {
+          "name": "Winchester Rgnl",
+          "slug": "winchester-rgnl"
+        }
+      ]
+    },
+    {
+      "topic": "Liberty University / Lynchburg Airport DC-8 Overlook",
+      "publication_date": "2026-09-21",
+      "source_urls": [
+        "https://www.liberty.edu/news/2026/09/21/liberty-university-receives-grant-from-boeing-to-support-dc-8-overlook-project/"
+      ],
+      "confirmed_source_facts": "Liberty reports a Boeing grant toward a planned public pavilion at the DC-8 Overlook at Preston Glenn Field, Lynchburg Regional Airport. Planned STEM/workforce programming includes UAS career awareness. The project’s grant amount and opening date are not stated.",
+      "local_comparison": "The university, aeronautics school, existing UAS academic programs and airport already have records. None of these three profiles cites this announcement. No DC-8 Overlook name/alias was found in the local canonical inventory.",
+      "proposed_existing_record_enrichment": "Consider an attributed planned-project note and source on the existing aeronautics school, with the university and airport as contextual matches. Review related-asset relevance before adding links; a separate project record is not assumed necessary.",
+      "limits": [
+        "A planned pavilion is not an operating UAS flight/training facility.",
+        "Do not treat Boeing’s $50.8 million global 2025 giving as this project’s grant.",
+        "The university campus or airport reference point is not a surveyed pavilion point. Do not move existing pins or invent project coordinates."
+      ],
+      "disposition": "existing-education-record-enrichment-proposed; project identity/alias reviewed",
+      "matched_local_records": [
+        {
+          "name": "Liberty University",
+          "slug": "liberty-university"
+        },
+        {
+          "name": "Liberty University School of Aeronautics",
+          "slug": "liberty-university-school-of-aeronautics"
+        },
+        {
+          "name": "Lynchburg Rgnl/Preston Glenn Fld",
+          "slug": "lynchburg-rgnlpreston-glenn-fld"
+        }
+      ]
+    },
+    {
+      "topic": "VSGC Commonwealth STEM Industry Internship Program (CSIIP)",
+      "publication_date": null,
+      "source_urls": [
+        "https://vsgc.odu.edu/csiip/"
+      ],
+      "confirmed_source_facts": "The current CSIIP page lists ongoing registration, year-round employer support and subsidies up to $5,000 for aerospace, aviation including UAV, and cybersecurity internships. Employers hire students directly.",
+      "local_comparison": "CSIIP already exists as a statewide workforce program, uses this exact source, and describes ongoing registration and aviation/UAV relevance. Its current activity does not mention the subsidy ceiling. Its regional unmapped representation correctly avoids using the coordinator office as a program boundary.",
+      "proposed_existing_record_enrichment": "Retain ongoing registration and add the attributed subsidy ceiling and eligible sector examples to the existing program activity, with a fresh source-check date after guarded integration.",
+      "limits": [
+        "Up to $5,000 is a ceiling, not a guaranteed award or a finding that COSOLVE participants qualify.",
+        "This is a workforce program, not a new physical training or flight site."
+      ],
+      "disposition": "existing-program-enrichment-proposed; no duplicate VSGC facility",
+      "matched_local_records": [
+        {
+          "name": "Commonwealth STEM Industry Internship Program (CSIIP)",
+          "slug": "commonwealth-stem-industry-internship-program-csiip"
+        }
+      ]
+    },
+    {
+      "topic": "VEDP InternshipsVA",
+      "publication_date": null,
+      "source_urls": [
+        "https://www.vedp.org/internshipsva"
+      ],
+      "confirmed_source_facts": "VEDP offers internship resources and matching grants for qualifying organizations with at most 150 Virginia employees offering paid internships to Virginia college/university students. Application precedes the internship; live employer training is required. On October 9, the next listed session is October 21 at 9 a.m. Eastern; October 8 has passed.",
+      "local_comparison": "VEDP already has a supporting-ecosystem organization profile with talent solutions. No InternshipsVA-specific local record, alias or source was found. The existing Richmond office point must remain an office location, not a statewide program boundary.",
+      "proposed_existing_record_enrichment": "Consider adding the official internship resource to the existing VEDP partnership/opportunity information and source list. Link current eligibility and training details rather than introducing an undated event or facility.",
+      "limits": [
+        "Eligibility is not independently determined for any COSOLVE participant.",
+        "Training dates are time-sensitive and require rechecking before later publication.",
+        "No registration, grant application, financial commitment or contact was made."
+      ],
+      "disposition": "existing-resource-enrichment-proposed; separate program listing not presumed missing",
+      "matched_local_records": [
+        {
+          "name": "Virginia Economic Development Partnership",
+          "slug": "virginia-economic-development-partnership"
+        }
+      ]
+    },
+    {
+      "topic": "VABA-specific workforce study / toolkit",
+      "publication_date": null,
+      "source_urls": [],
+      "confirmed_source_facts": null,
+      "lead_status": "Parent supplied a newsletter lead describing study wrap-up and toolkit development with VEDP/VSGC; the specific public newsletter URL and a published deliverable were not provided or independently established.",
+      "local_comparison": "The general VEDP Employer Toolkit linked from InternshipsVA is not proof that the distinct VABA-specific study/toolkit has been published. No operating asset or new capability is established by this lead.",
+      "proposed_existing_record_enrichment": null,
+      "limits": [
+        "Await the public newsletter/deliverable and verify scope, publication and responsible organization before any map claim.",
+        "Private coordination receipts, named correspondence and inferred assignments are excluded."
+      ],
+      "disposition": "unverified-publication-lead; no map mutation proposed",
+      "matched_local_records": [
+        {
+          "name": "Virginia Economic Development Partnership",
+          "slug": "virginia-economic-development-partnership"
+        }
+      ]
+    }
+  ],
+  "matched_record_baselines": [
+    {
+      "canonical_name": "Textron Systems Aerosonde UAS Center of Excellence",
+      "local_record": {
+        "name": "Textron Systems Aerosonde UAS Center of Excellence",
+        "display_name": "",
+        "slug": "textron-systems-aerosonde-uas-center-of-excellence",
+        "record_type": "facility",
+        "status": "published",
+        "visibility": "public",
+        "current_activity": "Textron's current operational-footprint directory lists the Blackstone site for air systems, operations and logistics support, and test, training, and simulation.",
+        "activity_source_url": "https://www.textronsystems.com/our-company/operational-footprint",
+        "activity_last_verified_at": "2026-08-24",
+        "development_status": "",
+        "development_notes": "",
+        "location_precision": "exact",
+        "location_method": "",
+        "latitude": 37.082203,
+        "longitude": -77.958505
+      },
+      "canonical_source_urls": [
+        "https://www.textronsystems.com/our-company/operational-footprint",
+        "https://www.textronsystems.com/products/aerosonde-uas",
+        "https://www.textronsystems.com/our-company/news-events/articles/inside-ts/aerosonde-uas-center-excellence",
+        "https://www.textronsystems.com/sites/default/files/_documents/Aerosonde%20UAS%20Family%20Brochure.pdf"
+      ],
+      "local_public_source_urls": [
+        "https://www.textronsystems.com/our-company/news-events/articles/inside-ts/aerosonde-uas-center-excellence",
+        "https://www.textronsystems.com/our-company/operational-footprint",
+        "https://www.textronsystems.com/products/aerosonde-uas",
+        "https://www.textronsystems.com/sites/default/files/_documents/Aerosonde%20UAS%20Family%20Brochure.pdf"
+      ],
+      "local_human_attributed_history_rows": 0,
+      "hosted_record_or_staff_history_checked": false
+    },
+    {
+      "canonical_name": "Mid-Atlantic Aviation Partnership",
+      "local_record": {
+        "name": "Mid-Atlantic Aviation Partnership",
+        "display_name": "",
+        "slug": "mid-atlantic-aviation-partnership",
+        "record_type": "organization",
+        "status": "source-backed",
+        "visibility": "public",
+        "current_activity": "MAAP publishes airworthiness, impact, detect-and-avoid, communications, and standards-testing services, supported by mobile operations resources.",
+        "activity_source_url": "https://maap.ictas.vt.edu/capabilities/test-evaluation.html",
+        "activity_last_verified_at": "2026-09-07",
+        "development_status": "",
+        "development_notes": "",
+        "location_precision": "site",
+        "location_method": "",
+        "latitude": 37.202048,
+        "longitude": -80.409798
+      },
+      "canonical_source_urls": [
+        "https://www.vedp.org/industry/unmanned-systems",
+        "https://ictas.vt.edu/Facilities/ictascrc.html",
+        "https://maap.ictas.vt.edu/About/about-us.html",
+        "https://maap.ictas.vt.edu/Contact.html",
+        "https://maap.ictas.vt.edu/BEYOND/aboutBEYOND.html",
+        "https://maap.ictas.vt.edu/capabilities/test-evaluation.html",
+        "https://maap.ictas.vt.edu/capabilities/facilities.html",
+        "https://cosolve-asset-map.onrender.com/references/maap/#maap",
+        "https://maap.ictas.vt.edu/",
+        "https://maap.ictas.vt.edu/capabilities/research-development.html"
+      ],
+      "local_public_source_urls": [
+        "https://cosolve-asset-map.onrender.com/references/maap/#maap",
+        "https://ictas.vt.edu/Facilities/ictascrc.html",
+        "https://maap.ictas.vt.edu/",
+        "https://maap.ictas.vt.edu/About/about-us.html",
+        "https://maap.ictas.vt.edu/BEYOND/aboutBEYOND.html",
+        "https://maap.ictas.vt.edu/Contact.html",
+        "https://maap.ictas.vt.edu/capabilities/facilities.html",
+        "https://maap.ictas.vt.edu/capabilities/research-development.html",
+        "https://maap.ictas.vt.edu/capabilities/test-evaluation.html",
+        "https://www.vedp.org/industry/unmanned-systems"
+      ],
+      "local_human_attributed_history_rows": 0,
+      "hosted_record_or_staff_history_checked": false
+    },
+    {
+      "canonical_name": "Virginia AAM Smart Airspace Program",
+      "local_record": {
+        "name": "Virginia AAM Smart Airspace Program",
+        "display_name": "",
+        "slug": "virginia-aam-smart-airspace-program",
+        "record_type": "program",
+        "status": "source-backed",
+        "visibility": "public",
+        "current_activity": "September 2026 briefing reports three Smart Airspace nodes, completed flight validation and Aerosonde/EL2 demonstration flights. A permanent Roanoke vertiport location and routine public service are not established by this source.",
+        "activity_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace",
+        "activity_last_verified_at": "2026-10-02",
+        "development_status": "",
+        "development_notes": "",
+        "location_precision": "regional",
+        "location_method": "",
+        "latitude": null,
+        "longitude": null
+      },
+      "canonical_source_urls": [
+        "https://doav.virginia.gov/advanced_air_mobility/",
+        "https://doav.virginia.gov/wp-content/uploads/Files/DocumentLibrary/AAM_Smart_Airspace_Program.pdf",
+        "https://www.textronsystems.com/our-company/news-events/articles/press-release/textron-systems-aerosonde-uas-completes-first-uas",
+        "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace"
+      ],
+      "local_public_source_urls": [
+        "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace",
+        "https://doav.virginia.gov/advanced_air_mobility/",
+        "https://doav.virginia.gov/wp-content/uploads/Files/DocumentLibrary/AAM_Smart_Airspace_Program.pdf",
+        "https://www.textronsystems.com/our-company/news-events/articles/press-release/textron-systems-aerosonde-uas-completes-first-uas"
+      ],
+      "local_human_attributed_history_rows": 0,
+      "hosted_record_or_staff_history_checked": false
+    },
+    {
+      "canonical_name": "Virginia Tech VTTI Smart Airspace Vertiport",
+      "local_record": {
+        "name": "Virginia Tech VTTI Smart Airspace Vertiport",
+        "display_name": "",
+        "slug": "virginia-tech-vtti-smart-airspace-vertiport",
+        "record_type": "facility",
+        "status": "source-backed",
+        "visibility": "public",
+        "current_activity": "September 2026 briefing reports completed site improvements, state licensing and flight validation, instrument-procedure submission, and Aerosonde/EL2 demonstrations. These are reported project milestones, not a public commercial service.",
+        "activity_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace",
+        "activity_last_verified_at": "2026-10-02",
+        "development_status": "",
+        "development_notes": "",
+        "location_precision": "site",
+        "location_method": "published",
+        "latitude": 37.190137,
+        "longitude": -80.395372
+      },
+      "canonical_source_urls": [
+        "https://doav.virginia.gov/wp-content/uploads/Files/DocumentLibrary/AAM_Smart_Airspace_Program.pdf",
+        "https://www.textronsystems.com/our-company/news-events/articles/press-release/textron-systems-aerosonde-uas-completes-first-uas",
+        "https://www.vtti.vt.edu/",
+        "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace",
+        "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%278VA2%27&outFields=IDENT%2CNAME%2COPERSTATUS%2CPRIVATEUSE&returnGeometry=true&outSR=4326&f=geojson"
+      ],
+      "local_public_source_urls": [
+        "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace",
+        "https://doav.virginia.gov/wp-content/uploads/Files/DocumentLibrary/AAM_Smart_Airspace_Program.pdf",
+        "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%278VA2%27&outFields=IDENT%2CNAME%2COPERSTATUS%2CPRIVATEUSE&returnGeometry=true&outSR=4326&f=geojson",
+        "https://www.textronsystems.com/our-company/news-events/articles/press-release/textron-systems-aerosonde-uas-completes-first-uas",
+        "https://www.vtti.vt.edu/"
+      ],
+      "local_human_attributed_history_rows": 0,
+      "hosted_record_or_staff_history_checked": false
+    },
+    {
+      "canonical_name": "Blackstone Smart Airspace Vertiport",
+      "local_record": {
+        "name": "Blackstone Smart Airspace Vertiport",
+        "display_name": "",
+        "slug": "blackstone-smart-airspace-vertiport",
+        "record_type": "facility",
+        "status": "source-backed",
+        "visibility": "public",
+        "current_activity": "September 2026 briefing reports an active Blackstone node, March 19 procedure activation and demonstration flights. Current operational availability is not independently verified.",
+        "activity_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace",
+        "activity_last_verified_at": "2026-10-02",
+        "development_status": "",
+        "development_notes": "",
+        "location_precision": "regional",
+        "location_method": "unmapped",
+        "latitude": null,
+        "longitude": null
+      },
+      "canonical_source_urls": [
+        "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace",
+        "https://doav.virginia.gov/advanced_air_mobility/"
+      ],
+      "local_public_source_urls": [
+        "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace",
+        "https://doav.virginia.gov/advanced_air_mobility/"
+      ],
+      "local_human_attributed_history_rows": 0,
+      "hosted_record_or_staff_history_checked": false
+    },
+    {
+      "canonical_name": "Allan C Perkinson/Blackstone AAF",
+      "local_record": {
+        "name": "Allan C Perkinson/Blackstone AAF",
+        "display_name": "Allen C. Perkinson Municipal Airport",
+        "slug": "allan-c-perkinsonblackstone-aaf",
+        "record_type": "infrastructure",
+        "status": "source-backed",
+        "visibility": "public",
+        "current_activity": "",
+        "activity_source_url": "",
+        "activity_last_verified_at": null,
+        "development_status": "",
+        "development_notes": "",
+        "location_precision": "exact",
+        "location_method": "published",
+        "latitude": 37.074745,
+        "longitude": -77.951815
+      },
+      "canonical_source_urls": [
+        "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27BKT%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+        "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0",
+        "https://doav.virginia.gov/airport-directory/",
+        "https://doav.virginia.gov/airport_sponsors/",
+        "https://www.townofblackstoneva.com/airport",
+        "https://cosolve-asset-map.onrender.com/references/maap/#blackstone",
+        "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace"
+      ],
+      "local_public_source_urls": [
+        "https://cosolve-asset-map.onrender.com/references/maap/#blackstone",
+        "https://cosolve-asset-map.onrender.com/references/maap/#smart-airspace",
+        "https://doav.virginia.gov/airport-directory/",
+        "https://doav.virginia.gov/airport_sponsors/",
+        "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0",
+        "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27BKT%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+        "https://www.townofblackstoneva.com/airport"
+      ],
+      "local_human_attributed_history_rows": 0,
+      "hosted_record_or_staff_history_checked": false
+    },
+    {
+      "canonical_name": "MAAP Blackstone Class D Flight Area",
+      "local_record": {
+        "name": "MAAP Blackstone Class D Flight Area",
+        "display_name": "",
+        "slug": "maap-blackstone-class-d-flight-area",
+        "record_type": "operating-environment",
+        "status": "source-backed",
+        "visibility": "public",
+        "current_activity": "",
+        "activity_source_url": "",
+        "activity_last_verified_at": null,
+        "development_status": "",
+        "development_notes": "",
+        "location_precision": "regional",
+        "location_method": "unmapped",
+        "latitude": null,
+        "longitude": null
+      },
+      "canonical_source_urls": [
+        "https://cosolve-asset-map.onrender.com/references/maap/#blackstone",
+        "https://maap.ictas.vt.edu/capabilities/facilities.html",
+        "https://maap.ictas.vt.edu/Contact.html"
+      ],
+      "local_public_source_urls": [
+        "https://cosolve-asset-map.onrender.com/references/maap/#blackstone",
+        "https://maap.ictas.vt.edu/Contact.html",
+        "https://maap.ictas.vt.edu/capabilities/facilities.html"
+      ],
+      "local_human_attributed_history_rows": 0,
+      "hosted_record_or_staff_history_checked": false
+    },
+    {
+      "canonical_name": "Winchester Rgnl",
+      "local_record": {
+        "name": "Winchester Rgnl",
+        "display_name": "Winchester Regional Airport",
+        "slug": "winchester-rgnl",
+        "record_type": "infrastructure",
+        "status": "published",
+        "visibility": "public",
+        "current_activity": "",
+        "activity_source_url": "",
+        "activity_last_verified_at": null,
+        "development_status": "",
+        "development_notes": "",
+        "location_precision": "exact",
+        "location_method": "published",
+        "latitude": 39.143536,
+        "longitude": -78.144447
+      },
+      "canonical_source_urls": [
+        "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27OKV%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+        "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0",
+        "https://doav.virginia.gov/airport-directory/",
+        "https://doav.virginia.gov/airport_sponsors/",
+        "https://www.flyokv.com/home-regionalairport"
+      ],
+      "local_public_source_urls": [
+        "https://doav.virginia.gov/airport-directory/",
+        "https://doav.virginia.gov/airport_sponsors/",
+        "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0",
+        "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27OKV%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+        "https://www.flyokv.com/home-regionalairport"
+      ],
+      "local_human_attributed_history_rows": 0,
+      "hosted_record_or_staff_history_checked": false
+    },
+    {
+      "canonical_name": "Liberty University",
+      "local_record": {
+        "name": "Liberty University",
+        "display_name": "",
+        "slug": "liberty-university",
+        "record_type": "university",
+        "status": "published",
+        "visibility": "public",
+        "current_activity": "",
+        "activity_source_url": "",
+        "activity_last_verified_at": null,
+        "development_status": "",
+        "development_notes": "",
+        "location_precision": "site",
+        "location_method": "",
+        "latitude": 37.350232,
+        "longitude": -79.18222
+      },
+      "canonical_source_urls": [
+        "https://www.liberty.edu/about/",
+        "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+        "https://www.liberty.edu/",
+        "https://www.liberty.edu/admissions"
+      ],
+      "local_public_source_urls": [
+        "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+        "https://www.liberty.edu/",
+        "https://www.liberty.edu/about/",
+        "https://www.liberty.edu/admissions"
+      ],
+      "local_human_attributed_history_rows": 0,
+      "hosted_record_or_staff_history_checked": false
+    },
+    {
+      "canonical_name": "Liberty University School of Aeronautics",
+      "local_record": {
+        "name": "Liberty University School of Aeronautics",
+        "display_name": "",
+        "slug": "liberty-university-school-of-aeronautics",
+        "record_type": "organization",
+        "status": "published",
+        "visibility": "public",
+        "current_activity": "",
+        "activity_source_url": "",
+        "activity_last_verified_at": null,
+        "development_status": "",
+        "development_notes": "",
+        "location_precision": "site",
+        "location_method": "",
+        "latitude": 37.350232,
+        "longitude": -79.18222
+      },
+      "canonical_source_urls": [
+        "https://www.vedp.org/industry/unmanned-systems",
+        "https://www.liberty.edu/aeronautics/unmanned-aerial-systems/",
+        "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+      ],
+      "local_public_source_urls": [
+        "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+        "https://www.liberty.edu/aeronautics/unmanned-aerial-systems/",
+        "https://www.vedp.org/industry/unmanned-systems"
+      ],
+      "local_human_attributed_history_rows": 0,
+      "hosted_record_or_staff_history_checked": false
+    },
+    {
+      "canonical_name": "Lynchburg Rgnl/Preston Glenn Fld",
+      "local_record": {
+        "name": "Lynchburg Rgnl/Preston Glenn Fld",
+        "display_name": "Lynchburg Regional Airport",
+        "slug": "lynchburg-rgnlpreston-glenn-fld",
+        "record_type": "infrastructure",
+        "status": "published",
+        "visibility": "public",
+        "current_activity": "",
+        "activity_source_url": "",
+        "activity_last_verified_at": null,
+        "development_status": "",
+        "development_notes": "",
+        "location_precision": "exact",
+        "location_method": "published",
+        "latitude": 37.325396,
+        "longitude": -79.201225
+      },
+      "canonical_source_urls": [
+        "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27LYH%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html",
+        "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0",
+        "https://doav.virginia.gov/airport-directory/",
+        "https://doav.virginia.gov/airport_sponsors/",
+        "https://flylyh.com/"
+      ],
+      "local_public_source_urls": [
+        "https://doav.virginia.gov/airport-directory/",
+        "https://doav.virginia.gov/airport_sponsors/",
+        "https://flylyh.com/",
+        "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0",
+        "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%27LYH%27&outFields=IDENT%2CNAME%2COPERSTATUS&returnGeometry=false&f=html"
+      ],
+      "local_human_attributed_history_rows": 0,
+      "hosted_record_or_staff_history_checked": false
+    },
+    {
+      "canonical_name": "Commonwealth STEM Industry Internship Program (CSIIP)",
+      "local_record": {
+        "name": "Commonwealth STEM Industry Internship Program (CSIIP)",
+        "display_name": "",
+        "slug": "commonwealth-stem-industry-internship-program-csiip",
+        "record_type": "program",
+        "status": "published",
+        "visibility": "public",
+        "current_activity": "The public program page lists ongoing registration for students and employers.",
+        "activity_source_url": "https://vsgc.odu.edu/csiip/",
+        "activity_last_verified_at": "2026-09-06",
+        "development_status": "",
+        "development_notes": "",
+        "location_precision": "regional",
+        "location_method": "unmapped",
+        "latitude": null,
+        "longitude": null
+      },
+      "canonical_source_urls": [
+        "https://vsgc.odu.edu/csiip/",
+        "https://vsgc.odu.edu/about-us/"
+      ],
+      "local_public_source_urls": [
+        "https://vsgc.odu.edu/about-us/",
+        "https://vsgc.odu.edu/csiip/",
+        "https://vsgc.odu.edu/opportunities-2/"
+      ],
+      "local_human_attributed_history_rows": 0,
+      "hosted_record_or_staff_history_checked": false
+    },
+    {
+      "canonical_name": "Virginia Economic Development Partnership",
+      "local_record": {
+        "name": "Virginia Economic Development Partnership",
+        "display_name": "",
+        "slug": "virginia-economic-development-partnership",
+        "record_type": "organization",
+        "status": "published",
+        "visibility": "public",
+        "current_activity": "VEDP markets Virginia's unmanned-systems sector and provides companies with business intelligence, site-selection guidance, incentive support, and talent solutions.",
+        "activity_source_url": "https://www.vedp.org/industry/unmanned-systems",
+        "activity_last_verified_at": "2026-08-06",
+        "development_status": "",
+        "development_notes": "",
+        "location_precision": "exact",
+        "location_method": "",
+        "latitude": 37.537283,
+        "longitude": -77.437109
+      },
+      "canonical_source_urls": [
+        "https://www.vedp.org/industry/unmanned-systems",
+        "https://www.vedp.org/contact-us"
+      ],
+      "local_public_source_urls": [
+        "https://www.vedp.org/contact-us",
+        "https://www.vedp.org/industry/unmanned-systems"
+      ],
+      "local_human_attributed_history_rows": 0,
+      "hosted_record_or_staff_history_checked": false
+    }
+  ]
+}
