@@ -87,6 +87,15 @@ def protected_asset(asset):
     )
 
 
+def protected_source_history(asset, url, *, current_exists):
+    history = Source.history.filter(asset_id=asset.pk, url=url)
+    # A missing URL with prior history was deleted or changed. Absence of an
+    # attributed actor is not permission to restore retired evidence.
+    return history.filter(history_type="-").exists() or (
+        not current_exists and history.exists()
+    )
+
+
 def history_reason(instance, reason):
     maximum = instance.history.model._meta.get_field("history_change_reason").max_length
     return reason[:maximum] if maximum else reason
@@ -178,12 +187,9 @@ class Command(BaseCommand):
                 )
                 if (
                     len(old_matches) > 1
-                    or Source.history.filter(
-                        asset_id=asset.pk,
-                        url=replacement["old_url"],
-                        history_type="-",
-                        history_user_id__isnull=False,
-                    ).exists()
+                    or protected_source_history(
+                        asset, replacement["old_url"], current_exists=bool(old_matches)
+                    )
                 ):
                     source_conflict = True
                     break
@@ -208,12 +214,9 @@ class Command(BaseCommand):
                 existing_matches = list(asset.sources.select_for_update().filter(url=data["url"]))
                 if (
                     len(existing_matches) > 1
-                    or Source.history.filter(
-                        asset_id=asset.pk,
-                        url=data["url"],
-                        history_type="-",
-                        history_user_id__isnull=False,
-                    ).exists()
+                    or protected_source_history(
+                        asset, data["url"], current_exists=bool(existing_matches)
+                    )
                 ):
                     source_conflict = True
                     break

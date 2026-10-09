@@ -305,6 +305,20 @@ class CatalogCorrectionTests(TestCase):
         self.enrich()
         self.assertEqual(self.asset.sources.count(), 2)
 
+    def test_enrichment_does_not_reintroduce_an_edited_or_unattributed_deleted_url(self):
+        for retirement in ("edited", "deleted"):
+            with self.subTest(retirement=retirement):
+                url = f"https://example.org/{retirement}"
+                source = Source.objects.create(asset=self.asset, title="Retired", url=url)
+                if retirement == "edited":
+                    source.url = "https://example.org/current-replacement"
+                    source._history_user = get_user_model().objects.create_user("source-editor")
+                    source.save()
+                else:
+                    source.delete()
+                self.enrich(sources=[{"title": "Catalog evidence", "url": url}])
+                self.assertFalse(self.asset.sources.filter(url=url).exists())
+
     def test_repeat_enrichment_preserves_current_sources_and_avoids_empty_history_updates(self):
         self.asset.name = "DZYNE Technologies"
         self.asset.save()

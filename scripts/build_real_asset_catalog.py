@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "virginia_real_assets.json"
 CATALOG_DATE = "2026-08-21"
-BUILD_DATE = "2026-10-06"
+BUILD_DATE = "2026-10-09"
 
 FAA_LAYER = (
     "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
@@ -55,6 +55,7 @@ AEROSPACE_REPORT_CORRECTIONS_PATH = ROOT / "data" / "aerospace_report_correction
 MAAP_CORRECTIONS_PATH = ROOT / "data" / "maap_profile_corrections_2026_10_02.json"
 OCTOBER_WEBSITE_CORRECTIONS_PATH = ROOT / "data" / "asset_website_corrections_2026_10_06.json"
 ESCC_GRANT_CORRECTION_PATH = ROOT / "data" / "escc_grant_correction_2026_10_06.json"
+FAA_BAA_CORRECTION_PATH = ROOT / "data" / "faa_baa_corrections_2026_10_09.json"
 AIRPORT_DISPLAY_NAMES_PATH = ROOT / "data" / "airport_display_names_2026_09_07.json"
 
 IPEDS_NAME_ALIASES = {
@@ -11554,6 +11555,7 @@ def apply_reviewed_corrections(records, corrections=None):
         corrections += json.loads(MAAP_CORRECTIONS_PATH.read_text())["corrections"]
         corrections += json.loads(OCTOBER_WEBSITE_CORRECTIONS_PATH.read_text())["corrections"]
         corrections += json.loads(ESCC_GRANT_CORRECTION_PATH.read_text())["corrections"]
+        corrections += json.loads(FAA_BAA_CORRECTION_PATH.read_text())["corrections"]
     for correction in corrections:
         record = records_by_name[correction["name"]]
         record.update(correction["after"])

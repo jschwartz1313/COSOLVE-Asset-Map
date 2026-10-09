@@ -20,7 +20,8 @@ python manage.py apply_catalog_corrections --corrections data/aerospace_report_c
 python manage.py apply_catalog_corrections --corrections data/maap_profile_corrections_2026_10_02.json
 python manage.py apply_catalog_corrections --corrections data/asset_website_corrections_2026_10_06.json
 python manage.py apply_catalog_corrections --corrections data/escc_grant_correction_2026_10_06.json
-python manage.py enrich_asset_profiles
+python manage.py apply_catalog_corrections --corrections data/faa_baa_corrections_2026_10_09.json
+python manage.py enrich_asset_profiles --guarded-corrections data/faa_baa_corrections_2026_10_09.json
 python manage.py apply_catalog_reviews
 python manage.py apply_catalog_reviews --reviews data/asset_editorial_reviews_2026_08_24.json
 python manage.py apply_catalog_reviews --reviews data/asset_editorial_reviews_2026_08_24_expansion.json

@@ -1,0 +1,154 @@
+{
+  "prepared_at_utc": "2026-10-09T15:59:49.011524+00:00",
+  "decision": "guarded release candidate locally tested; 333 backend tests and 32 final focused checks passed; production application and live verification pending",
+  "baseline_code_commit": "d96dab4bc74cb28a2205cb33baf28af66b288fc4",
+  "manifest": "data/faa_baa_corrections_2026_10_09.json",
+  "source": "https://www.faa.gov/newsroom/faa-funds-drone-research-support-safe-integration",
+  "hosted_baseline": {
+    "observed_window_utc": "2026-10-09 15:14\u201315:33 UTC",
+    "deployment_commit": "b63b34f75131504346b43f53a6e7ae42c8910106",
+    "public_listings": 542,
+    "published": 504,
+    "source_backed": 38,
+    "csv_sha256": "39693bfae6d0f85bd588363429b808aa66a1670044bd80d0c5c6de175074de4e",
+    "three_before_groups_rechecked_against_download": true,
+    "direct_sql_or_deleted_source_history_absence_certified": false
+  },
+  "guard_review": {
+    "old_guard_failures_reproduced": [
+      "staff-retired URL recreated",
+      "unattributed deleted source recreated",
+      "enrichment bypassed a provenance/identity skip"
+    ],
+    "shared_fix": "Preserve any deleted history for a URL, plus any missing current URL with retained historical rows. Apply the check to corrections and enrichment; preserve the entire correction group on conflict.",
+    "existing_field_staff_hidden_source_guards_retained": true,
+    "production_queries_required_before_mutation": true,
+    "no_baselines_broadened": true,
+    "enrichment_identity_and_provenance_checks_aligned": true
+  },
+  "catalog_changed_records": [
+    "ANRA Technologies",
+    "Devorto",
+    "DroneUp"
+  ],
+  "catalog_changed_fields": [
+    "current_activity",
+    "activity_source_url",
+    "activity_last_verified_at",
+    "sources"
+  ],
+  "source_audit_import_added_to_release": false,
+  "reference_or_hosting_configuration_changes": false,
+  "tests": {
+    "focused_guard_tests": 46,
+    "integrated_focused_tests": 78,
+    "ruff": "passed",
+    "django_check": "passed",
+    "migration_drift": "none",
+    "release_shell_syntax": "passed",
+    "repeated_frontend_or_full_browser_suite": false,
+    "backend_tests_before_final_enrichment_alignment": 332,
+    "full_backend_tests": 333,
+    "final_enrichment_guard_tests": 32,
+    "final_backend_log_sha256": "8621d760f8a4166d43c1929ed36bd799cd9f40b952dbf16343e58be0c5de5597",
+    "final_focused_log_sha256": "c4efc7b7b7b8d9b4369c6107098cce1d3180f2936c7e44ddac4a28d9a4380697"
+  },
+  "happy_release_copy": {
+    "environment": "isolated SQLite copy after unchanged release baseline; not a production restore",
+    "asset_count": 555,
+    "public_count": 542,
+    "unrelated_asset_rows_preserved": 552,
+    "all_preexisting_source_rows_preserved": 1862,
+    "new_sources": 3,
+    "repeat_release_noop": true,
+    "targets": [
+      {
+        "name": "ANRA Technologies",
+        "status": "source-backed",
+        "public_sources": 6,
+        "profile_status": 200,
+        "api_status": 200
+      },
+      {
+        "name": "DroneUp",
+        "status": "source-backed",
+        "public_sources": 5,
+        "profile_status": 200,
+        "api_status": 200
+      },
+      {
+        "name": "Devorto",
+        "status": "source-backed",
+        "public_sources": 3,
+        "profile_status": 200,
+        "api_status": 200
+      }
+    ]
+  },
+  "conflict_release_copy": {
+    "environment": "isolated SQLite conflict copy",
+    "full_release_completed": true,
+    "cases": [
+      "hidden award source",
+      "staff-edited award URL",
+      "unattributed deleted award source"
+    ],
+    "asset_and_existing_source_rows_preserved": true,
+    "public_award_sources_added": 0,
+    "conflict_markers_prevent_enrichment_bypass": true
+  },
+  "preservation": {
+    "main_sqlite_sha256_unchanged": true,
+    "main_sqlite_sha256": "1560f31bc94c6ed377d09a662beef73151ebf889a8ea5c9cb20f28be15712d4d",
+    "browser_task_files_unchanged": true,
+    "browser_task_files_left_uncommitted": [
+      "docs/browser_review_2026_10_09.md",
+      "data/maintenance_hosted_comparison_2026_10_09.json",
+      "docs/maintenance_2026_10_09.md"
+    ]
+  },
+  "expected_hosted_if_three_guards_pass_and_no_other_changes": {
+    "public_listings": 542,
+    "published": 501,
+    "source_backed": 41,
+    "target_public_sources": {
+      "ANRA Technologies": 6,
+      "DroneUp": 5,
+      "Devorto": 3
+    },
+    "unrelated_public_rows_preserved": 539
+  },
+  "deployment": {
+    "requested_by_this_task": false,
+    "verified": false,
+    "live_record_changes_verified": false,
+    "next_action": "Confirm reviewed candidate is latest linked main commit; Render Deploys > Manual Deploy > Deploy latest commit; inspect release summary and verify affected live profiles and pre/post CSV."
+  },
+  "handoff": "docs/faa_release_candidate_2026_10_09.md",
+  "latest_code_repeated_full_release_on_both_copies": {
+    "passed": true,
+    "asset_and_source_digests_unchanged": true
+  },
+  "final_validation_recorded_at_utc": "2026-10-09T16:56:27.800858+00:00",
+  "pre_release_recheck": {
+    "observed_at_utc": "2026-10-09T16:58:25.829776+00:00",
+    "csv_download": "/Users/jakeschwartz/Downloads/cosolve-assets (13).csv",
+    "csv_sha256": "39693bfae6d0f85bd588363429b808aa66a1670044bd80d0c5c6de175074de4e",
+    "public_listings": 542,
+    "status_counts": {
+      "published": 504,
+      "source-backed": 38
+    },
+    "all_public_rows_equal_to_prior_browser_export": true,
+    "all_three_before_groups_match": true,
+    "candidate_staff_asset_history_counts": {
+      "ANRA Technologies": 12,
+      "DroneUp": 13,
+      "Devorto": 6
+    },
+    "attributed_staff_actor_in_candidate_asset_history": false,
+    "candidate_reviewed_by_assignee_due_date_empty": true,
+    "candidate_comment_authors_empty": true,
+    "deleted_source_absence_inferred": false
+  }
+}

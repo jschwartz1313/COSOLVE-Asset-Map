@@ -13,6 +13,7 @@ from apps.assets.models import Asset
 from apps.catalog.models import Capability
 from apps.sources.models import Source
 from scripts.build_real_asset_catalog import (
+    FAA_BAA_CORRECTION_PATH,
     MAAP_CORRECTIONS_PATH,
     OCTOBER_WEBSITE_CORRECTIONS_PATH,
     apply_reviewed_corrections,
@@ -27,7 +28,9 @@ class CapabilityManifestTests(SimpleTestCase):
         records = {r["name"]: r for r in json.loads(CATALOG.read_text())["records"]}
         changes = json.loads(MANIFEST.read_text())["corrections"]
         followups = {}
-        for path in (MAAP_CORRECTIONS_PATH, OCTOBER_WEBSITE_CORRECTIONS_PATH):
+        for path in (
+            MAAP_CORRECTIONS_PATH, OCTOBER_WEBSITE_CORRECTIONS_PATH, FAA_BAA_CORRECTION_PATH
+        ):
             for change in json.loads(path.read_text())["corrections"]:
                 followups.setdefault(change["name"], {}).update(change["after"])
         self.assertEqual(len(changes), 18)

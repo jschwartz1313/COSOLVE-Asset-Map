@@ -1,4 +1,4 @@
-"""Exercise the prepared public-source proposal without wiring it into deployment."""
+"""Exercise guarded FAA reconciliation, source retirement and release review state."""
 
 import json
 from copy import deepcopy
@@ -16,7 +16,7 @@ from apps.assets.models import Asset
 from apps.sources.models import Source
 from scripts.build_real_asset_catalog import apply_reviewed_corrections
 
-MANIFEST = settings.BASE_DIR / "data/proposed_faa_baa_corrections_2026_10_09.json"
+MANIFEST = settings.BASE_DIR / "data/faa_baa_corrections_2026_10_09.json"
 
 
 class FaaBaaProposalTests(TestCase):
@@ -27,6 +27,13 @@ class FaaBaaProposalTests(TestCase):
         cls.records = [r for r in catalog["records"] if r["name"] in {
             c["name"] for c in cls.changes
         }]
+        # Represent the freshly observed hosted baseline, before the new release.
+        changes_by_name = {c["name"]: c for c in cls.changes}
+        for record in cls.records:
+            change = changes_by_name[record["name"]]
+            record.update(change["before"])
+            additions = {s["url"] for s in change["add_sources"]}
+            record["sources"] = [s for s in record["sources"] if s["url"] not in additions]
         with TemporaryDirectory() as directory:
             path = Path(directory) / "catalog.json"
             path.write_text(json.dumps({"records": cls.records, "relationships": []}))
@@ -99,7 +106,61 @@ class FaaBaaProposalTests(TestCase):
             self.assertEqual(asset.status, Asset.Status.PUBLISHED)
             self.assertFalse(asset.sources.get(url=change["add_sources"][0]["url"]).is_public)
 
-    def test_explicit_generation_is_idempotent_and_default_generation_keeps_proposal_pending(self):
+    def test_retired_award_url_preserves_the_group_and_is_not_reintroduced(self):
+        reviewer = get_user_model().objects.create_user("isolated-source-reviewer")
+        for change in self.changes:
+            asset = Asset.objects.get(name=change["name"])
+            evidence = change["add_sources"][0]
+            source = Source.objects.create(asset=asset, **evidence)
+            source.url = "https://example.org/reviewed-replacement"
+            source._history_user = reviewer
+            source.save()
+        self.apply()
+        for change in self.changes:
+            asset = Asset.objects.get(name=change["name"])
+            self.assertEqual(asset.current_activity, change["before"]["current_activity"])
+            self.assertEqual(asset.status, Asset.Status.PUBLISHED)
+            self.assertFalse(asset.sources.filter(url=change["add_sources"][0]["url"]).exists())
+            self.assertTrue(asset.sources.filter(
+                url="https://example.org/reviewed-replacement").exists())
+
+    def test_unattributed_deleted_award_source_is_not_reintroduced(self):
+        for change in self.changes:
+            asset = Asset.objects.get(name=change["name"])
+            source = Source.objects.create(asset=asset, **change["add_sources"][0])
+            source.delete()
+        self.apply()
+        for change in self.changes:
+            asset = Asset.objects.get(name=change["name"])
+            self.assertEqual(asset.current_activity, change["before"]["current_activity"])
+            self.assertEqual(asset.status, Asset.Status.PUBLISHED)
+            self.assertFalse(asset.sources.filter(url=change["add_sources"][0]["url"]).exists())
+
+    def test_provenance_and_ambiguous_identity_skips_cannot_be_bypassed_by_enrichment(self):
+        anra = Asset.objects.get(name="ANRA Technologies")
+        droneup = Asset.objects.get(name="DroneUp")
+        anra.internal_notes = "Preserve manually managed provenance."
+        anra.save(update_fields=["internal_notes"])
+        Asset.objects.create(
+            name=droneup.name,
+            city="Isolated duplicate city",
+            record_type=droneup.record_type,
+            short_description=droneup.short_description,
+            unmanned_systems_relevance=droneup.unmanned_systems_relevance,
+            internal_notes=droneup.internal_notes,
+            status=Asset.Status.SOURCE_BACKED,
+        )
+        self.apply()
+        call_command("enrich_asset_profiles", guarded_corrections=MANIFEST, stdout=StringIO())
+        for name in ("ANRA Technologies", "DroneUp"):
+            change = next(c for c in self.changes if c["name"] == name)
+            asset = Asset.objects.get(pk=anra.pk if name == anra.name else droneup.pk)
+            self.assertEqual(asset.current_activity, change["before"]["current_activity"])
+            self.assertEqual(asset.status, Asset.Status.PUBLISHED)
+            self.assertFalse(Source.objects.filter(
+                asset__name=name, url=change["add_sources"][0]["url"]).exists())
+
+    def test_default_and_explicit_generation_include_each_award_once(self):
         records = deepcopy(self.records)
         apply_reviewed_corrections(records, self.changes)
         apply_reviewed_corrections(records, self.changes)
@@ -115,6 +176,19 @@ class FaaBaaProposalTests(TestCase):
         by_name = {record["name"]: record for record in default_records}
         for change in self.changes:
             record = by_name[change["name"]]
-            self.assertEqual(record["current_activity"], change["before"]["current_activity"])
-            self.assertNotIn(change["add_sources"][0]["url"],
-                             {source["url"] for source in record["sources"]})
+            self.assertEqual(record["current_activity"], change["after"]["current_activity"])
+            self.assertEqual(sum(s["url"] == change["add_sources"][0]["url"]
+                                 for s in record["sources"]), 1)
+
+    def test_historical_catalog_reviews_do_not_republish_the_new_claims(self):
+        self.apply()
+        review_paths = [
+            settings.BASE_DIR / "data/asset_editorial_reviews.json",
+            *sorted((settings.BASE_DIR / "data").glob("asset_editorial_reviews_*.json")),
+        ]
+        for reviews in review_paths:
+            call_command("apply_catalog_reviews", reviews=reviews, stdout=StringIO())
+        for asset in Asset.objects.all():
+            self.assertEqual(asset.status, Asset.Status.SOURCE_BACKED)
+            self.assertIsNone(asset.reviewed_at)
+            self.assertIsNone(asset.last_verified_at)

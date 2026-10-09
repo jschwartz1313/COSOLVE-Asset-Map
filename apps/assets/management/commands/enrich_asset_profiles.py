@@ -11,7 +11,11 @@ from apps.assets.models import Asset
 from apps.catalog.models import Capability, PlatformDomain, Region, StrategicCategory
 from apps.sources.models import Source
 
-from .apply_catalog_corrections import CONFLICT_PREFIX, protected_asset
+from .apply_catalog_corrections import (
+    CONFLICT_PREFIX,
+    protected_asset,
+    protected_source_history,
+)
 
 PROFILE_FIELDS = (
     "overview",
@@ -278,16 +282,37 @@ class Command(BaseCommand):
             default=settings.BASE_DIR / "data" / "virginia_real_assets.json",
             help="Path to the generated real-asset catalog JSON.",
         )
+        parser.add_argument(
+            "--guarded-corrections",
+            type=Path,
+            help="Preserve provenance skips for records in this release's correction manifest.",
+        )
 
     @transaction.atomic
     def handle(self, *args, **options):
         records = json.loads(options["catalog"].read_text())["records"]
+        guarded_provenance = {}
+        if options["guarded_corrections"]:
+            guarded_provenance = {
+                item["name"]: item["provenance"]
+                for item in json.loads(options["guarded_corrections"].read_text())["corrections"]
+            }
         updated_assets = 0
         added_sources = 0
         removed_stale_sources = 0
         for record in records:
-            asset = Asset.objects.filter(name=record["name"]).first()
-            if asset is None or protected_asset(asset):
+            matches = list(Asset.objects.select_for_update().filter(name=record["name"]))
+            if len(matches) != 1:
+                continue
+            asset = matches[0]
+            required_provenance = guarded_provenance.get(record["name"])
+            if (
+                protected_asset(asset)
+                or (
+                    required_provenance is not None
+                    and asset.internal_notes != f"Catalog provenance: {required_provenance}."
+                )
+            ):
                 continue
             if asset.review_comments.filter(body__startswith=CONFLICT_PREFIX).exists():
                 continue
@@ -369,10 +394,10 @@ class Command(BaseCommand):
                     or source.link_review_status == Source.LinkReviewStatus.NEEDS_REPLACEMENT
                     for source in asset.sources.filter(url=test_source_url)
                 )
-                or Source.history.filter(
-                    asset_id=asset.pk, url=test_source_url,
-                    history_type="-", history_user_id__isnull=False,
-                ).exists()
+                or protected_source_history(
+                    asset, test_source_url,
+                    current_exists=asset.sources.filter(url=test_source_url).exists(),
+                )
             )
             if test_source_url and not test_source_blocked and not any(
                 getattr(asset, field) not in (None, "") for field in TEST_SPEC_FIELDS
@@ -530,12 +555,7 @@ class Command(BaseCommand):
             for source_data in record["sources"]:
                 if source_data["url"] in existing_urls:
                     continue
-                if Source.history.filter(
-                    asset_id=asset.pk,
-                    url=source_data["url"],
-                    history_type="-",
-                    history_user_id__isnull=False,
-                ).exists():
+                if protected_source_history(asset, source_data["url"], current_exists=False):
                     continue
                 Source.objects.create(
                     asset=asset,

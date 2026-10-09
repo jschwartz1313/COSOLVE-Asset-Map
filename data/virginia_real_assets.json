@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-06",
+  "generated_at": "2026-10-09",
   "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, broad-based Virginia degree-granting institutions from the NCES IPEDS 2024 directory while excluding narrowly specialized health and ministry schools without documented unmanned-systems relevance, and a curated set of source-backed ecosystem records. Specific street and site locations are anchored to official public address sources and geocoded against the U.S. Census address ranges or named-site map data; locality points are retained when the public record does not identify the operating department or facility. Every record is also classified as either a core unmanned-systems asset with direct documented activity or a supporting ecosystem asset with a broader enabling role.",
   "record_count": 542,
   "records": [
@@ -840,8 +840,8 @@
       "website_url": "https://www.ama-inc.com/engineering/ENG_MissionAnalysisDesign.shtml"
     },
     {
-      "activity_last_verified_at": "2026-09-07",
-      "activity_source_url": "https://www.anratechnologies.com/home/",
+      "activity_last_verified_at": "2026-10-09",
+      "activity_source_url": "https://www.faa.gov/newsroom/faa-funds-drone-research-support-safe-integration",
       "activity_status": "active",
       "address_line": "11710 Plaza America Drive, Suite 200",
       "capabilities": [
@@ -856,7 +856,7 @@
       "contact_phone": "",
       "contact_text": "ANRA airspace-management and integration consultation",
       "contact_url": "https://www.anratechnologies.com/home/airspace-management/",
-      "current_activity": "ANRA publishes UTM/U-space, sensor-fusion, fleet-management, and vertiport-management offerings for commercial and public-sector integration projects.",
+      "current_activity": "ANRA publishes UTM/U-space, sensor-fusion, fleet-management, and vertiport-management offerings for commercial and public-sector integration projects. On October 5, 2026, the FAA announced research awards to ANRA covering air-taxi and vertiport coordination, shared altitude references, airport/drone traffic-system interoperability, and AI-supported drone identification. The awards do not certify completed products, operational availability, or permission to fly.",
       "latitude": 38.951363,
       "location_precision": "site",
       "longitude": -77.34734,
@@ -895,6 +895,10 @@
         {
           "title": "ANRA Technologies airspace-management consultation",
           "url": "https://www.anratechnologies.com/home/airspace-management/"
+        },
+        {
+          "title": "FAA October 5, 2026 drone research awards",
+          "url": "https://www.faa.gov/newsroom/faa-funds-drone-research-support-safe-integration"
         }
       ],
       "state": "VA",
@@ -5424,8 +5428,8 @@
       "website_url": "https://www.army.mil/article/293730/centers_fort_eustis_footprint_welcomes_new_commander_salutes_retiring_colonel"
     },
     {
-      "activity_last_verified_at": "2026-08-24",
-      "activity_source_url": "https://devorto.io/",
+      "activity_last_verified_at": "2026-10-09",
+      "activity_source_url": "https://www.faa.gov/newsroom/faa-funds-drone-research-support-safe-integration",
       "activity_status": "developing",
       "address_line": "16 Murray Street",
       "capabilities": [
@@ -5439,7 +5443,7 @@
       "contact_phone": "757-703-4850",
       "contact_text": "Devorto company inquiries",
       "contact_url": "https://devorto.io/",
-      "current_activity": "Devorto publicly describes ongoing development of TURN variants ranging from a solar high-altitude platform to smaller commercial and defense UAS concepts.",
+      "current_activity": "Devorto publicly describes ongoing development of TURN variants ranging from a solar high-altitude platform to smaller commercial and defense UAS concepts. On October 5, 2026, the FAA announced a research award to Devorto Corporation for extended-range cargo-drone service. This is funded research, not confirmation that a cargo route is operating or that a TURN product is certified.",
       "latitude": 37.007896,
       "location_precision": "exact",
       "longitude": -76.311615,
@@ -5467,6 +5471,10 @@
         {
           "title": "NASA NIAC TURN feasibility study",
           "url": "https://www.nasa.gov/wp-content/uploads/2019/10/moore_2013_phi_eternalflight_-_tagged.pdf"
+        },
+        {
+          "title": "FAA October 5, 2026 drone research awards",
+          "url": "https://www.faa.gov/newsroom/faa-funds-drone-research-support-safe-integration"
         }
       ],
       "state": "VA",
@@ -5714,8 +5722,8 @@
       "website_url": "https://www.dronetrace.com/home"
     },
     {
-      "activity_last_verified_at": "2026-09-07",
-      "activity_source_url": "https://www.droneup.com/",
+      "activity_last_verified_at": "2026-10-09",
+      "activity_source_url": "https://www.faa.gov/newsroom/faa-funds-drone-research-support-safe-integration",
       "activity_status": "active",
       "address_line": "160 Newtown Road, Suite 500",
       "capabilities": [
@@ -5729,7 +5737,7 @@
       "contact_phone": "877-601-1860",
       "contact_text": "DroneUp technology demonstrations and partnerships",
       "contact_url": "https://www.droneup.com/",
-      "current_activity": "DroneUp currently promotes ATOMx and Uncrew and offers a demo/partnership contact route; individual deployments and permissions require confirmation.",
+      "current_activity": "DroneUp currently promotes ATOMx and Uncrew and offers a demo/partnership contact route; individual deployments and permissions require confirmation. On October 5, 2026, the FAA announced a research award to DroneUp for securely establishing drone identity and flight authorization. An award does not certify a deployed system or confer operating permission.",
       "latitude": 36.842642,
       "location_precision": "exact",
       "longitude": -76.186071,
@@ -5764,6 +5772,10 @@
         {
           "title": "DroneUp public contact information",
           "url": "https://www.droneup.com/contact"
+        },
+        {
+          "title": "FAA October 5, 2026 drone research awards",
+          "url": "https://www.faa.gov/newsroom/faa-funds-drone-research-support-safe-integration"
         }
       ],
       "state": "VA",
