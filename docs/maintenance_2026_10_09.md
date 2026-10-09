@@ -91,6 +91,30 @@ plugin UI reinstall if restored transport still fails; it prohibits shell browse
 substitutes and native-host repair. No failed transport call or need to reinstall
 is inferred from missing tool registration alone.
 
+### Intended Chrome account follow-up, 15:10 UTC
+
+After the user clarified the intended account, read-only non-secret Chrome profile
+metadata maps it to **Default**, displayed as **Person 1**. The fresh automatic
+extension diagnostic now selects that matching profile and passes: installed,
+registered and enabled. A diagnostic-only check explicitly targeting Default also
+passes. Chrome is running and the native-host manifest remains valid. The 14:42
+profile-selection mismatch is historical; it is no longer the current blocker.
+
+The remaining blocker is unchanged tool registration: 340 callable tools expose
+no supported browser/CUA/JavaScript REPL or reconnect action, and executor skill
+discovery remains empty. Actual extension transport, signed-in map access and
+Render PostgreSQL/staff-history access cannot be tested without that runtime.
+The smallest next step is for the parent/platform to expose the Browser/Chrome
+runtime in this execution context, or resume in a context with those tools. The
+diagnostics do not indicate a need to switch profiles, install an extension or
+create a login; profile selection alone cannot supply missing runtime tools.
+
+The private local receipt is
+`tmp/maintenance-2026-10-09/chrome-account-route-2026-10-09T151012Z.json` (untracked,
+owner-only). No cookies, tokens or passwords were inspected or retained; no
+profile, security, access or extension settings changed. Staged FAA corrections
+remain unapplied pending current production and staff-history comparison.
+
 ## Inventory and display agreement
 
 The [stored-record review](../data/asset_review_pass_2026_10_09.json) covers all
