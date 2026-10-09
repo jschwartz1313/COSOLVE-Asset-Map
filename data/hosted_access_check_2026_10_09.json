@@ -1,0 +1,62 @@
+{
+  "checked_at": "2026-10-09",
+  "scope": "Anonymous GET checks only. No authenticated browser session is available to this runtime. Success at the sign-in page does not verify protected application behavior.",
+  "results": [
+    {
+      "path": "/health/",
+      "checked_at": "2026-10-09T14:16:47.219430+00:00",
+      "final_http_status": 200,
+      "final_url": "https://cosolve-asset-map.onrender.com/health/",
+      "redirected_to_login": false,
+      "page_title": "",
+      "health_response": {
+        "status": "ok"
+      }
+    },
+    {
+      "path": "/map/",
+      "checked_at": "2026-10-09T14:16:47.662257+00:00",
+      "final_http_status": 200,
+      "final_url": "https://cosolve-asset-map.onrender.com/login/?next=%2Fmap%2F",
+      "redirected_to_login": true,
+      "page_title": "Sign in | COSOLVE",
+      "health_response": null
+    },
+    {
+      "path": "/api/assets/",
+      "checked_at": "2026-10-09T14:16:48.295581+00:00",
+      "final_http_status": 200,
+      "final_url": "https://cosolve-asset-map.onrender.com/login/?next=%2Fapi%2Fassets%2F",
+      "redirected_to_login": true,
+      "page_title": "Sign in | COSOLVE",
+      "health_response": null
+    },
+    {
+      "path": "/directory/",
+      "checked_at": "2026-10-09T14:16:48.899800+00:00",
+      "final_http_status": 200,
+      "final_url": "https://cosolve-asset-map.onrender.com/login/?next=%2Fdirectory%2F",
+      "redirected_to_login": true,
+      "page_title": "Sign in | COSOLVE",
+      "health_response": null
+    },
+    {
+      "path": "/regions/compare/",
+      "checked_at": "2026-10-09T14:16:49.538146+00:00",
+      "final_http_status": 200,
+      "final_url": "https://cosolve-asset-map.onrender.com/login/?next=%2Fregions%2Fcompare%2F",
+      "redirected_to_login": true,
+      "page_title": "Sign in | COSOLVE",
+      "health_response": null
+    },
+    {
+      "path": "/references/maap/",
+      "checked_at": "2026-10-09T14:16:49.947379+00:00",
+      "final_http_status": 200,
+      "final_url": "https://cosolve-asset-map.onrender.com/login/?next=%2Freferences%2Fmaap%2F",
+      "redirected_to_login": true,
+      "page_title": "Sign in | COSOLVE",
+      "health_response": null
+    }
+  ]
+}

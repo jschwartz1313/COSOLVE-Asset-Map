@@ -1,0 +1,84 @@
+{
+  "checked_at": "2026-10-09",
+  "scope": "Isolated local SQLite copy after existing release workflow. CSV, API, public geometry, source sets and related visibility compared with ORM; not hosted PostgreSQL. Login writes only to the isolated copy.",
+  "csv_count": 542,
+  "geojson_count": 542,
+  "public_model_count": 542,
+  "non_null_geometry_count": 524,
+  "csv_status_counts": {
+    "published": 502,
+    "source-backed": 40
+  },
+  "related_entity_entries_checked": 414,
+  "regional_counts": [
+    {
+      "region": "Central Virginia",
+      "model_count": 37,
+      "summary_count": 37
+    },
+    {
+      "region": "Eastern Shore",
+      "model_count": 16,
+      "summary_count": 16
+    },
+    {
+      "region": "Fredericksburg Region",
+      "model_count": 21,
+      "summary_count": 21
+    },
+    {
+      "region": "Greater Richmond",
+      "model_count": 62,
+      "summary_count": 62
+    },
+    {
+      "region": "Hampton Roads",
+      "model_count": 139,
+      "summary_count": 139
+    },
+    {
+      "region": "Lynchburg Region",
+      "model_count": 21,
+      "summary_count": 21
+    },
+    {
+      "region": "New River Valley",
+      "model_count": 46,
+      "summary_count": 46
+    },
+    {
+      "region": "Northern Virginia",
+      "model_count": 91,
+      "summary_count": 91
+    },
+    {
+      "region": "Roanoke Valley",
+      "model_count": 14,
+      "summary_count": 14
+    },
+    {
+      "region": "Shenandoah Valley",
+      "model_count": 37,
+      "summary_count": 37
+    },
+    {
+      "region": "Southside Virginia",
+      "model_count": 34,
+      "summary_count": 34
+    },
+    {
+      "region": "Southwest Virginia",
+      "model_count": 24,
+      "summary_count": 24
+    }
+  ],
+  "page_http_status": {
+    "/map/": 200,
+    "/directory/": 200,
+    "/regions/compare/": 200,
+    "/about-data/": 200,
+    "/references/maap/": 200,
+    "/saved-views/": 200
+  },
+  "issues": []
+}

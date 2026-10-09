@@ -1,0 +1,130 @@
+{
+  "checked_at": "2026-10-09",
+  "scope": "Read-only validation of shipped local reference files. Geometry validity does not establish current COA approval, occupancy, surveyed accuracy, access or flight permission. No snapshots re-dated.",
+  "layers": [
+    {
+      "file": "static/data/maap-flight-areas.geojson",
+      "feature_count": 3,
+      "declared_feature_count": 3,
+      "snapshot_date": "2026-10-02",
+      "invalid_or_empty_geometry_count": 0,
+      "invalid_feature_ids": []
+    },
+    {
+      "file": "static/data/virginia-counties.geojson",
+      "feature_count": 133,
+      "declared_feature_count": null,
+      "snapshot_date": null,
+      "invalid_or_empty_geometry_count": 0,
+      "invalid_feature_ids": []
+    },
+    {
+      "file": "static/data/virginia-flight-constraints.geojson",
+      "feature_count": 139,
+      "declared_feature_count": 139,
+      "snapshot_date": "2026-10-06",
+      "invalid_or_empty_geometry_count": 0,
+      "invalid_feature_ids": []
+    },
+    {
+      "file": "static/data/virginia-heliports.geojson",
+      "feature_count": 128,
+      "declared_feature_count": 128,
+      "snapshot_date": "2026-10-06",
+      "invalid_or_empty_geometry_count": 0,
+      "invalid_feature_ids": []
+    },
+    {
+      "file": "static/data/virginia-maritime-prosperity-candidates.geojson",
+      "feature_count": 11,
+      "declared_feature_count": null,
+      "snapshot_date": null,
+      "invalid_or_empty_geometry_count": 0,
+      "invalid_feature_ids": []
+    },
+    {
+      "file": "static/data/virginia-regions.geojson",
+      "feature_count": 12,
+      "declared_feature_count": null,
+      "snapshot_date": null,
+      "invalid_or_empty_geometry_count": 0,
+      "invalid_feature_ids": []
+    },
+    {
+      "file": "static/data/virginia-state-boundary.geojson",
+      "feature_count": 1,
+      "declared_feature_count": null,
+      "snapshot_date": null,
+      "invalid_or_empty_geometry_count": 0,
+      "invalid_feature_ids": []
+    },
+    {
+      "file": "static/data/virginia-surface-controlled-airspace.geojson",
+      "feature_count": 33,
+      "declared_feature_count": 33,
+      "snapshot_date": "2026-10-06",
+      "invalid_or_empty_geometry_count": 0,
+      "invalid_feature_ids": []
+    },
+    {
+      "file": "static/data/virginia-uas-facility-map.geojson",
+      "feature_count": 7002,
+      "declared_feature_count": 7002,
+      "snapshot_date": "2026-10-06",
+      "invalid_or_empty_geometry_count": 0,
+      "invalid_feature_ids": []
+    },
+    {
+      "file": "static/data/virginia-uas-test-sites.geojson",
+      "feature_count": 3,
+      "declared_feature_count": 3,
+      "snapshot_date": "2026-08-12",
+      "invalid_or_empty_geometry_count": 0,
+      "invalid_feature_ids": []
+    }
+  ],
+  "freshness": {
+    "heliports": {
+      "snapshot_date": "2026-10-06",
+      "due_date": "2026-11-03",
+      "review_due": false,
+      "version": "2026-10-06",
+      "interval_days": 28
+    },
+    "controlled_airspace": {
+      "snapshot_date": "2026-10-06",
+      "due_date": "2026-10-13",
+      "review_due": false,
+      "version": "2026-10-06",
+      "interval_days": 7
+    },
+    "uas_facility_map": {
+      "snapshot_date": "2026-10-06",
+      "due_date": "2026-10-13",
+      "review_due": false,
+      "version": "2026-10-06",
+      "interval_days": 7
+    },
+    "flight_constraints": {
+      "snapshot_date": "2026-10-06",
+      "due_date": "2026-10-13",
+      "review_due": false,
+      "version": "2026-10-06",
+      "interval_days": 7
+    },
+    "uas_test_sites": {
+      "snapshot_date": "2026-08-12",
+      "due_date": "2026-11-10",
+      "review_due": false,
+      "version": "2026-08-12",
+      "interval_days": 90
+    },
+    "maap_flight_areas": {
+      "snapshot_date": "2026-10-02",
+      "due_date": "2026-12-31",
+      "review_due": false,
+      "version": "2026-10-02",
+      "interval_days": 90
+    }
+  }
+}

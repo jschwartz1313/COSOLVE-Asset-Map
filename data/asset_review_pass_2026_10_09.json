@@ -1,0 +1,6561 @@
+{
+  "checked_at": "2026-10-09",
+  "total_records": 555,
+  "public_records": 542,
+  "finding_counts": {
+    "no_primary_website": 58,
+    "editorial_review_pending": 39,
+    "locality_location_only": 28,
+    "site_record_without_coordinates": 2
+  },
+  "rows": [
+    {
+      "name": "ANRA Technologies",
+      "slug": "anra-technologies",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "ATA Aviation",
+      "slug": "ata-aviation",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "AURA Network Systems",
+      "slug": "aura-network-systems",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "AUVSI Hampton Roads Chapter",
+      "slug": "auvsi-hampton-roads-chapter",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "regional",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "AUVSI Ridge and Valley Chapter",
+      "slug": "auvsi-ridge-and-valley-chapter",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "regional",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Accomack County",
+      "slug": "accomack-county",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Accomack County Emergency Management Drone Program",
+      "slug": "accomack-county-emergency-management-drone-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Adaptive Aerospace Group",
+      "slug": "adaptive-aerospace-group",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Advanced Aircraft Company",
+      "slug": "advanced-aircraft-company",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Advanced Technology Systems Company DroneSting",
+      "slug": "advanced-technology-systems-company-dronesting",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "AeroVironment Corporate Headquarters",
+      "slug": "aerovironment-corporate-headquarters",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Aeroprobe",
+      "slug": "aeroprobe",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Agora University",
+      "slug": "agora-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Agricision",
+      "slug": "agricision",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Albemarle County Fire Rescue UAS Program",
+      "slug": "albemarle-county-fire-rescue-uas-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Albemarle County Police UAS Program",
+      "slug": "albemarle-county-police-uas-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Allan C Perkinson/Blackstone AAF",
+      "slug": "allan-c-perkinsonblackstone-aaf",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "exact",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 7,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Alphatec Surveyors UAS Services",
+      "slug": "alphatec-surveyors-uas-services",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Amherst County Fire and EMS Drone Program",
+      "slug": "amherst-county-first-responder-uas-capability",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Analytical Mechanics Associates",
+      "slug": "analytical-mechanics-associates",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Appalachian College of Pharmacy",
+      "slug": "appalachian-college-of-pharmacy",
+      "public": false,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": []
+    },
+    {
+      "name": "Appalachian School of Law",
+      "slug": "appalachian-school-of-law",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Arlington Joint Public Safety UAS Program",
+      "slug": "arlington-joint-public-safety-uas-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Army National Guard Readiness Center",
+      "slug": "army-national-guard-readiness-center",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Ascent College",
+      "slug": "ascent-college",
+      "public": false,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": []
+    },
+    {
+      "name": "Ashland Police Department Drone Program",
+      "slug": "town-of-ashland-first-responder-uas-capability",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Association for Uncrewed Vehicle Systems International",
+      "slug": "association-for-uncrewed-vehicle-systems-international",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Augusta County Sheriff's Office Drone Team",
+      "slug": "augusta-county-sheriffs-office-drone-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Aurora Flight Sciences",
+      "slug": "aurora-flight-sciences",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Austal USA Advanced Technologies and Solutions",
+      "slug": "austal-usa-advanced-technologies-and-solutions",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Auterion U.S. Headquarters",
+      "slug": "auterion-us-headquarters",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "AutoBoat at Virginia Tech",
+      "slug": "autoboat-at-virginia-tech",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Autonomous Aerial Vehicles at Virginia Tech",
+      "slug": "autonomous-aerial-vehicles-at-virginia-tech",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Autonomous Flight Technologies",
+      "slug": "autonomous-flight-technologies",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Averett University",
+      "slug": "averett-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "BZRD Systems",
+      "slug": "bzrd-systems",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "locality",
+      "findings": [
+        "locality_location_only"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Bath County First Responder UAS Capability",
+      "slug": "bath-county-first-responder-uas-capability",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "locality",
+      "findings": [
+        "no_primary_website",
+        "editorial_review_pending",
+        "locality_location_only"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Bedford County Sheriff's Office Drone Team",
+      "slug": "bedford-county-sheriffs-office-drone-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Bedford Fire Department UAS Program",
+      "slug": "bedford-fire-department-uas-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Bihrle Applied Research",
+      "slug": "bihrle-applied-research",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Blackstone Smart Airspace Vertiport",
+      "slug": "blackstone-smart-airspace-vertiport",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "regional",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Blue Ridge",
+      "slug": "blue-ridge",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Blue Ridge Community College",
+      "slug": "blue-ridge-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Blue Ridge Community College Unmanned Systems Courses",
+      "slug": "blue-ridge-community-college-unmanned-systems-courses",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Blue Ridge Defense Works",
+      "slug": "blue-ridge-defense-works",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "locality",
+      "findings": [
+        "editorial_review_pending",
+        "locality_location_only"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Blue Vigil",
+      "slug": "blue-vigil",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Bluefield University",
+      "slug": "bluefield-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Bon Secours Memorial College of Nursing",
+      "slug": "bon-secours-memorial-college-of-nursing",
+      "public": false,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": []
+    },
+    {
+      "name": "Bon Secours St Mary's Hospital School of Medical Imaging",
+      "slug": "bon-secours-st-marys-hospital-school-of-medical-imaging",
+      "public": false,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": []
+    },
+    {
+      "name": "Booz Allen Hamilton",
+      "slug": "booz-allen-hamilton",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Bowman Consulting Unmanned Geospatial Services",
+      "slug": "bowman-consulting-unmanned-geospatial-services",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Bridgewater Air Park",
+      "slug": "bridgewater-air-park",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Bridgewater College",
+      "slug": "bridgewater-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Brightpoint Community College",
+      "slug": "brightpoint-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Brightpoint Community College Unmanned Systems Courses",
+      "slug": "brightpoint-community-college-unmanned-systems-courses",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Brookneal/Campbell County",
+      "slug": "brooknealcampbell-county",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Brunswick County",
+      "slug": "brunswick-county",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Bryant & Stratton College-Virginia Beach",
+      "slug": "bryant-stratton-college-virginia-beach",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Buchanan County First Responder UAS Capability",
+      "slug": "buchanan-county-first-responder-uas-capability",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "locality",
+      "findings": [
+        "no_primary_website",
+        "editorial_review_pending",
+        "locality_location_only"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "CACI International",
+      "slug": "caci-international",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "CNU Autonomous Systems and Drone Lab",
+      "slug": "cnu-autonomous-systems-and-drone-lab",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "CNU Capable Humanitarian Robotics and Intelligent Systems Lab",
+      "slug": "cnu-capable-humanitarian-robotics-and-intelligent-systems-lab",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Campbell County Sheriff's Office Drone Program",
+      "slug": "campbell-county-sheriffs-office-drone-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Campbell Fld",
+      "slug": "campbell-fld",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 6,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Caroline County Fire and Rescue UAS Program",
+      "slug": "caroline-county-fire-and-rescue-uas-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Cavalier Autonomous Racing",
+      "slug": "cavalier-autonomous-racing",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Center for Unmanned Aircraft Systems at Virginia Tech",
+      "slug": "center-for-unmanned-aircraft-systems-at-virginia-tech",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Centra College",
+      "slug": "centra-college",
+      "public": false,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": []
+    },
+    {
+      "name": "Central Virginia Community College",
+      "slug": "central-virginia-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Charles City County Sheriff's Office Drone Operations Team",
+      "slug": "charles-city-county-sheriffs-office-drone-operations-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Charlottesville Police UAS Team",
+      "slug": "charlottesville-police-uas-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Charlottesville-Albemarle",
+      "slug": "charlottesville-albemarle",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Chase City Muni",
+      "slug": "chase-city-muni",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Chesapeake Police UAS Team",
+      "slug": "chesapeake-police-uas-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Chesapeake Rgnl",
+      "slug": "chesapeake-rgnl",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Chesterfield Fire and EMS sUAS Program",
+      "slug": "chesterfield-fire-and-ems-suas-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Chesterfield Police Drone as First Responder Program",
+      "slug": "chesterfield-police-drone-as-first-responder-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Christopher Newport University",
+      "slug": "christopher-newport-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "City of Fairfax Regional UAS Unit",
+      "slug": "city-of-fairfax-regional-uas-unit",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "City of Manassas First Responder UAS Capability",
+      "slug": "city-of-manassas-first-responder-uas-capability",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 7,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "City of Virginia Beach UAS Program",
+      "slug": "city-of-virginia-beach-uas-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Coast Guard Atlantic Area and Fifth Coast Guard District",
+      "slug": "coast-guard-atlantic-area-and-fifth-coast-guard-district",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Colonial Heights Police Drone Program",
+      "slug": "colonial-heights-police-drone-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Commander, Helicopter Sea Combat Wing Atlantic",
+      "slug": "commander-helicopter-sea-combat-wing-atlantic",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Commonwealth Center for Advanced Logistics Systems",
+      "slug": "commonwealth-center-for-advanced-logistics-systems",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Commonwealth Center for Advanced Manufacturing",
+      "slug": "commonwealth-center-for-advanced-manufacturing",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Commonwealth Cyber Initiative",
+      "slug": "commonwealth-cyber-initiative",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Commonwealth STEM Industry Internship Program (CSIIP)",
+      "slug": "commonwealth-stem-industry-internship-program-csiip",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "regional",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Craney Island Marine Terminal Project",
+      "slug": "craney-island-marine-terminal-project",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Crewe Muni",
+      "slug": "crewe-muni",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Cruz Associates Hampton Roads UAS Engineering Support",
+      "slug": "cruz-associates-hampton-roads-uas-engineering-support",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Culpeper Police Department Drone Team",
+      "slug": "culpeper-police-department-drone-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Culpeper Rgnl",
+      "slug": "culpeper-rgnl",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Curtiss-Wright Defense Solutions Ashburn",
+      "slug": "curtiss-wright-defense-solutions-ashburn",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "D-Fend Solutions North American Headquarters",
+      "slug": "d-fend-solutions-north-american-headquarters",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "DCS Corporation",
+      "slug": "dcs-corporation",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "DEVCOM AvMC Maneuver Air Directorate - Fort Eustis",
+      "slug": "devcom-avmc-maneuver-air-directorate-fort-eustis",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "DZYNE Technologies",
+      "slug": "dzyne-technologies",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Dam Neck Annex",
+      "slug": "dam-neck-annex",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Danville Community College",
+      "slug": "danville-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Danville Community College Unmanned Systems Courses",
+      "slug": "danville-community-college-unmanned-systems-courses",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Danville Life Saving Crew Drone Team",
+      "slug": "danville-life-saving-crew-drone-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Danville Rgnl",
+      "slug": "danville-rgnl",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Defense Advanced Research Projects Agency",
+      "slug": "defense-advanced-research-projects-agency",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Defense Maritime Solutions Chesapeake Manufacturing Facility",
+      "slug": "defense-maritime-solutions-chesapeake-manufacturing-facility",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "exact",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Defense Supply Center Richmond",
+      "slug": "defense-supply-center-richmond",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Devorto",
+      "slug": "devorto",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Dewberry Gainesville sUAS Acquisition Team",
+      "slug": "dewberry-gainesville-suas-acquisition-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Divine Mercy University",
+      "slug": "divine-mercy-university",
+      "public": false,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": []
+    },
+    {
+      "name": "Dominion Energy UAS Program",
+      "slug": "dominion-energy-uas-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "DroneShield U.S. Headquarters",
+      "slug": "droneshield-us-headquarters",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "DroneTrace",
+      "slug": "dronetrace",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "locality",
+      "findings": [
+        "locality_location_only"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "DroneUp",
+      "slug": "droneup",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Duncan-Parnell Ashland Unmanned Solutions",
+      "slug": "duncan-parnell-ashland-unmanned-solutions",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Dynamic Aviation",
+      "slug": "dynamic-aviation",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "ECPI University",
+      "slug": "ecpi-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "ENSCO",
+      "slug": "ensco",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Eagle Aviation Technologies",
+      "slug": "eagle-aviation-technologies",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Eagle's Nest",
+      "slug": "eagles-nest",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Eastern Mennonite University",
+      "slug": "eastern-mennonite-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Eastern Shore Community College",
+      "slug": "eastern-shore-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Eastern Shore Community College Unmanned Systems Courses",
+      "slug": "eastern-shore-community-college-unmanned-systems-courses",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Edward Via College of Osteopathic Medicine",
+      "slug": "edward-via-college-of-osteopathic-medicine",
+      "public": false,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": []
+    },
+    {
+      "name": "Electra Manassas Headquarters and Aircraft Development",
+      "slug": "electra-manassas-headquarters-and-aircraft-development",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Emory & Henry Drone Pilot Test Preparation",
+      "slug": "emory-henry-drone-pilot-test-preparation",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Emory & Henry University",
+      "slug": "emory-henry-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Emporia-Greensville Rgnl",
+      "slug": "emporia-greensville-rgnl",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Energy-Centric UAS Center for Critical Infrastructure",
+      "slug": "energy-centric-uas-center-for-critical-infrastructure",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "FAA BEYOND Virginia Team",
+      "slug": "faa-beyond-virginia-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Fairfax County Police Drone as First Responder Program",
+      "slug": "fairfax-county-police-drone-as-first-responder-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Fairfax County Unmanned Aircraft Systems Program",
+      "slug": "fairfax-county-unmanned-aircraft-systems-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Fairlead Maritime Systems",
+      "slug": "fairlead-maritime-systems",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Falwell",
+      "slug": "falwell",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Farmville Rgnl",
+      "slug": "farmville-rgnl",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Ferrum College",
+      "slug": "ferrum-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Flying Ship Company",
+      "slug": "flying-ship-company",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Former Dedrone Washington-Area Headquarters",
+      "slug": "dedrone-washington-area-headquarters",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "locality",
+      "findings": [
+        "locality_location_only"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Fort Belvoir",
+      "slug": "fort-belvoir",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Fort Eustis - Joint Base Langley-Eustis",
+      "slug": "fort-eustis-joint-base-langley-eustis",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Fort Lee",
+      "slug": "fort-lee",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Fort Pickett",
+      "slug": "fort-pickett",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "locality",
+      "findings": [
+        "locality_location_only"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Fort Walker",
+      "slug": "fort-ap-hill-2",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "locality",
+      "findings": [
+        "locality_location_only"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Franklin Rgnl",
+      "slug": "franklin-rgnl",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Frederick County Sheriff's Office sUAS Program",
+      "slug": "frederick-county-sheriffs-office-suas-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Fredericksburg Drone as First Responder Program",
+      "slug": "fredericksburg-drone-as-first-responder-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Fredericksburg Police UAS Team",
+      "slug": "fredericksburg-police-uas-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Front Royal-Warren County",
+      "slug": "front-royal-warren-county",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Fulcrum Concepts",
+      "slug": "fulcrum-concepts",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Fulcrum Concepts Newport News Machine Shop",
+      "slug": "fulcrum-concepts-newport-news-machine-shop",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "G2 Ops Virginia Beach Headquarters",
+      "slug": "g2-ops-virginia-beach-headquarters",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "GO TEC Automation and Robotics Talent Pathway",
+      "slug": "go-tec-automation-and-robotics-talent-pathway",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "GO Virginia",
+      "slug": "go-virginia",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "George Mason Autonomous Robotics Laboratory",
+      "slug": "george-mason-autonomous-robotics-laboratory",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "George Mason Center for Air Transportation Systems Research",
+      "slug": "george-mason-center-for-air-transportation-systems-research",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "George Mason MICO Laboratory",
+      "slug": "george-mason-mico-laboratory",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "George Mason Northern Virginia DFR Planning Study",
+      "slug": "george-mason-northern-virginia-dfr-planning-study",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "George Mason RobotiXX Laboratory",
+      "slug": "george-mason-robotixx-laboratory",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "George Mason SPARX",
+      "slug": "george-mason-sparx",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "George Mason Starship Autonomous Delivery Fleet",
+      "slug": "george-mason-starship-autonomous-delivery-fleet",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "George Mason University",
+      "slug": "george-mason-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "George Mason University Police UAS Team",
+      "slug": "george-mason-university-police-uas-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Germanna Community College",
+      "slug": "germanna-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Germanna Community College Drone-UAV FAA Pilot Class",
+      "slug": "germanna-community-college-drone-uav-faa-pilot-class",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Global Center for Automotive Performance Simulation",
+      "slug": "global-center-for-automotive-performance-simulation",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Global Planning Initiatives Autonomous Systems Division",
+      "slug": "global-planning-initiatives-autonomous-systems-division",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Gloucester County Sheriff's Office UAS Program",
+      "slug": "gloucester-county-sheriffs-office-uas-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "GoTAK",
+      "slug": "gotak",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Gordonsville Muni",
+      "slug": "gordonsville-muni",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "H2P Solution",
+      "slug": "h2p-solution",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "locality",
+      "findings": [
+        "locality_location_only"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "HDT Robotics BLADE Fredericksburg Facility",
+      "slug": "hdt-robotics-blade-fredericksburg-facility",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "HII Unmanned Systems Center of Excellence",
+      "slug": "hii-unmanned-systems-center-of-excellence",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "HUSH Aerospace",
+      "slug": "hush-aerospace",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Hampden-Sydney College",
+      "slug": "hampden-sydney-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Hampton Joint Police and Fire UAS Unit",
+      "slug": "hampton-joint-police-and-fire-uas-unit",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Hampton Roads Alliance",
+      "slug": "hampton-roads-alliance",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Hampton Roads Exec",
+      "slug": "hampton-roads-exec",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Hampton Roads Helicopters UAS Chase Support",
+      "slug": "hampton-roads-helicopters-uas-chase-support",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Hampton Roads Mobility Innovation Center",
+      "slug": "hampton-roads-mobility-innovation-center",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Hampton University",
+      "slug": "hampton-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 6,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Hampton University Uncrewed Aircraft Systems Program",
+      "slug": "hampton-university-uncrewed-aircraft-systems-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Hanover County Muni",
+      "slug": "hanover-county-muni",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Hanover County Sheriff's Office sUAS Team",
+      "slug": "hanover-county-sheriffs-office-suas-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Harrisonburg Police and Fire Drone and Robot Unit",
+      "slug": "harrisonburg-police-and-fire-drone-and-robot-unit",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Harrowgate Drone Park",
+      "slug": "harrowgate-drone-park",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Haymarket Police Department Drone Program",
+      "slug": "town-of-haymarket-first-responder-uas-capability",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Henrico Fire Robotics Response Team",
+      "slug": "henrico-fire-robotics-response-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Henry County Sheriff's Office Drone Program",
+      "slug": "henry-county-sheriffs-office-drone-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Heven AeroTech Headquarters",
+      "slug": "heven-aerotech-headquarters",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Heven AeroTech Winchester Innovation and Manufacturing Campus",
+      "slug": "heven-aerotech-winchester-innovation-and-manufacturing-campus",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "locality",
+      "findings": [
+        "locality_location_only"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Hollins University",
+      "slug": "hollins-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Hopewell Fire and EMS Drone Program",
+      "slug": "hopewell-fire-and-ems-drone-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Hummel Fld",
+      "slug": "hummel-fld",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "I Fly Drones Richmond Services and Training",
+      "slug": "i-fly-drones-richmond-services-and-training",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "IALR AgBOT Precision Agriculture Program",
+      "slug": "ialr-agbot-precision-agriculture-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "ICI Services",
+      "slug": "ici-services",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Industrial Control Specialties",
+      "slug": "industrial-control-specialties",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Inertial Labs",
+      "slug": "inertial-labs",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Ingalls Fld",
+      "slug": "ingalls-fld",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Institute for Advanced Learning and Research",
+      "slug": "institute-for-advanced-learning-and-research",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Iridium Communications Headquarters",
+      "slug": "iridium-communications-headquarters",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "J Sargeant Reynolds Community College",
+      "slug": "j-sargeant-reynolds-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "JMU Drone Challenge",
+      "slug": "jmu-drone-challenge",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "JMU X-Labs",
+      "slug": "jmu-x-labs",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "James City County Police Drone as First Responder Program",
+      "slug": "james-city-county-police-drone-as-first-responder-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "James Madison University",
+      "slug": "james-madison-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Joint Base Myer-Henderson Hall",
+      "slug": "joint-base-myer-henderson-hall",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Joint Expeditionary Base Little Creek-Fort Story",
+      "slug": "joint-expeditionary-base-little-creek-fort-story",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Kentland Experimental Aerial Systems Laboratory",
+      "slug": "kentland-experimental-aerial-systems-laboratory",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "King George County Public Safety Drone Program",
+      "slug": "king-george-county-public-safety-drone-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Kollmorgen Radford Motion Systems",
+      "slug": "kollmorgen-radford-motion-systems",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "L3Harris Orange County Propulsion Manufacturing Site",
+      "slug": "l3harris-orange-county-propulsion-manufacturing-site",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "exact",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 6,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Lake Anna",
+      "slug": "lake-anna",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Lake Country Rgnl",
+      "slug": "lake-country-rgnl",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Langley Air Force Base - Joint Base Langley-Eustis",
+      "slug": "langley-air-force-base-joint-base-langley-eustis",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Laurel Ridge Community College",
+      "slug": "laurel-ridge-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Laurel Ridge Community College Unmanned Systems Courses",
+      "slug": "laurel-ridge-community-college-unmanned-systems-courses",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Lee County",
+      "slug": "lee-county",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Leesburg Exec",
+      "slug": "leesburg-exec",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Leesburg Police UAS Team",
+      "slug": "leesburg-police-uas-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Leidos",
+      "slug": "leidos",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Liberty University",
+      "slug": "liberty-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Liberty University Aeronautics: Unmanned Aerial Systems BS",
+      "slug": "liberty-university-aeronautics-unmanned-aerial-systems-bs",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Liberty University Aviation Maintenance: Unmanned Aerial Systems BS",
+      "slug": "liberty-university-aviation-maintenance-unmanned-aerial-systems-bs",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Liberty University Medium Unmanned Aerial Systems Certificate",
+      "slug": "liberty-university-medium-unmanned-aerial-systems-certificate",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Liberty University School of Aeronautics",
+      "slug": "liberty-university-school-of-aeronautics",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Liberty University UAS Operational Experience",
+      "slug": "liberty-university-uas-operational-experience",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Linebird",
+      "slug": "linebird",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Liquid Robotics Herndon Headquarters and Production",
+      "slug": "liquid-robotics-herndon-headquarters-and-production",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Lockheed Martin Rotary and Mission Systems - Manassas",
+      "slug": "lockheed-martin-rotary-and-mission-systems-manassas",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Logos Technologies",
+      "slug": "logos-technologies",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Lonesome Pine",
+      "slug": "lonesome-pine",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Longbow Unmanned Systems Research and Test Center",
+      "slug": "longbow-unmanned-systems-research-and-test-center",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Longwood SEED Autonomous Marine Project",
+      "slug": "longwood-seed-autonomous-marine-project",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Longwood University",
+      "slug": "longwood-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Loudoun County Sheriff's Office Drone Unit",
+      "slug": "loudoun-county-sheriffs-office-drone-unit",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Louisa County/Freeman Fld",
+      "slug": "louisa-countyfreeman-fld",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Lunenburg County",
+      "slug": "lunenburg-county",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Luray Caverns",
+      "slug": "luray-caverns",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Lynchburg Fire Department UAV Team",
+      "slug": "lynchburg-fire-department-uav-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Lynchburg Police Drone Unit",
+      "slug": "lynchburg-police-drone-unit",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Lynchburg Rgnl/Preston Glenn Fld",
+      "slug": "lynchburg-rgnlpreston-glenn-fld",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "MAAP Blackstone Class D Flight Area",
+      "slug": "maap-blackstone-class-d-flight-area",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "regional",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "MAAP Central Virginia Flight Area",
+      "slug": "maap-central-virginia-flight-area",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "regional",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "MAAP Eastern Shore Offshore Flight Area",
+      "slug": "maap-eastern-shore-offshore-flight-area",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "regional",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "MAAP Kentland Farm Flight Area",
+      "slug": "maap-kentland-farm-flight-area",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "regional",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "MAG Aerospace",
+      "slug": "mag-aerospace",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "MARS Unmanned Aircraft Systems Airfield",
+      "slug": "mars-unmanned-aircraft-systems-airfield",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "locality",
+      "findings": [
+        "locality_location_only"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "MITRE National Range",
+      "slug": "mitre-national-range",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "locality",
+      "findings": [
+        "locality_location_only"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Madison County Sheriff's Office UAS Program",
+      "slug": "madison-county-first-responder-uas-capability",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Magothy River Technologies",
+      "slug": "magothy-river-technologies",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "locality",
+      "findings": [
+        "locality_location_only"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Mare Custos U.S. Presence at IDEA Lab",
+      "slug": "mare-custos-us-presence-at-idea-lab",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Marine Corps Base Quantico",
+      "slug": "marine-corps-base-quantico",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "locality",
+      "findings": [
+        "locality_location_only"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Marine Corps Counter-Drone Team",
+      "slug": "marine-corps-counter-drone-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Marine Corps Warfighting Laboratory",
+      "slug": "marine-corps-warfighting-laboratory",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 6,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Marine Sonic Technology",
+      "slug": "marine-sonic-technology",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Mary Baldwin University",
+      "slug": "mary-baldwin-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Marymount University",
+      "slug": "marymount-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Mason Innovation Exchange Autonomous Systems Short Courses",
+      "slug": "mason-innovation-exchange-autonomous-systems-short-courses",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Mc Laughlin",
+      "slug": "mc-laughlin",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "McQ Fredericksburg Sensor Systems",
+      "slug": "mcq-fredericksburg-sensor-systems",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Mecklenburg County Sheriff's Office Drone Team",
+      "slug": "mecklenburg-county-sheriffs-office-drone-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Mecklenburg-Brunswick Rgnl",
+      "slug": "mecklenburg-brunswick-rgnl",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Metron Reston Autonomy and Decision Systems",
+      "slug": "metron-reston-autonomy-and-decision-systems",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Micron Manassas Semiconductor Fabrication Plant",
+      "slug": "micron-manassas-semiconductor-fabrication-plant",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Mid-Atlantic Aviation Partnership",
+      "slug": "mid-atlantic-aviation-partnership",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 10,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Mid-Atlantic Regional Spaceport",
+      "slug": "mid-atlantic-regional-spaceport",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Mid-Atlantic Tech Bridge",
+      "slug": "mid-atlantic-tech-bridge",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Middle Peninsula Rgnl",
+      "slug": "middle-peninsula-rgnl",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Modern Technology Solutions Alexandria Headquarters",
+      "slug": "modern-technology-solutions-alexandria-headquarters",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Montgomery County Sheriff's Office UAS Team",
+      "slug": "montgomery-county-sheriffs-office-uas-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Moog Blacksburg Power and Data Division",
+      "slug": "moog-blacksburg-power-and-data-division",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Mountain Empire",
+      "slug": "mountain-empire",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Mountain Empire Community College",
+      "slug": "mountain-empire-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Mountain Empire Community College UAS Program",
+      "slug": "mountain-empire-community-college-uas-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Mountain Gateway Community College",
+      "slug": "mountain-gateway-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Mountain Gateway Community College Unmanned Systems Courses",
+      "slug": "mountain-gateway-community-college-unmanned-systems-courses",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "NAL Technologies Manassas Headquarters",
+      "slug": "nal-technologies-manassas-headquarters",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "NASA Autonomy Lab for Intelligent Flight Systems",
+      "slug": "nasa-autonomy-lab-for-intelligent-flight-systems",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "NASA Flight Dynamics Research Facility",
+      "slug": "nasa-flight-dynamics-research-facility",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "NASA Langley Autonomy Incubator",
+      "slug": "nasa-langley-autonomy-incubator",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "NASA Langley CERTAIN",
+      "slug": "nasa-langley-certain",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "NASA Langley Landing and Impact Research Facility",
+      "slug": "nasa-langley-landing-and-impact-research-facility",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "NASA Langley ROAM UAS Operations Center",
+      "slug": "nasa-langley-roam-uas-operations-center",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "NASA Langley Research Center",
+      "slug": "nasa-langley-research-center",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 6,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "NASA Langley UAS Test Range",
+      "slug": "nasa-langley-uas-test-range",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "NASA Wallops Flight Facility",
+      "slug": "nasa-wallops-flight-facility",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "NASA Wallops UAS Test and Integration Facility",
+      "slug": "nasa-wallops-uas-test-and-integration-facility",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": [
+        "editorial_review_pending",
+        "site_record_without_coordinates"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "NATO Allied Command Transformation Task Force X",
+      "slug": "nato-allied-command-transformation-task-force-x",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "NOVA Fab Lab Manassas",
+      "slug": "nova-fab-lab-manassas",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "NSWC Carderock Combatant Craft Division",
+      "slug": "nswc-carderock-combatant-craft-division",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "NSWC Dahlgren Outdoor Autonomy Laboratory",
+      "slug": "nswc-dahlgren-outdoor-autonomy-laboratory",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "locality",
+      "findings": [
+        "no_primary_website",
+        "locality_location_only"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "NSWC Dahlgren UAV Test Runway",
+      "slug": "nswc-dahlgren-uav-test-runway",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "NSWCDD Dam Neck Activity",
+      "slug": "nswcdd-dam-neck-activity",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "National Geospatial-Intelligence Agency Springfield",
+      "slug": "national-geospatial-intelligence-agency-springfield",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "National Institute of Aerospace",
+      "slug": "national-institute-of-aerospace",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Naval Air Station Oceana",
+      "slug": "naval-air-station-oceana",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Naval Medical Center Portsmouth",
+      "slug": "naval-medical-center-portsmouth",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Naval Station Norfolk",
+      "slug": "naval-station-norfolk",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Naval Support Activity Hampton Roads",
+      "slug": "naval-support-activity-hampton-roads",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Naval Support Activity Northwest Annex",
+      "slug": "naval-support-activity-northwest-annex",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Naval Support Facility Dahlgren",
+      "slug": "naval-support-facility-dahlgren",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "locality",
+      "findings": [
+        "locality_location_only"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Naval Surface Warfare Center Dahlgren Division",
+      "slug": "naval-surface-warfare-center-dahlgren-division",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Naval Weapons Station Yorktown",
+      "slug": "naval-weapons-station-yorktown",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Navy TALSA East Small UAS Training Facility",
+      "slug": "navy-talsa-east-small-uas-training-facility",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "New College Institute",
+      "slug": "new-college-institute",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "New Kent County",
+      "slug": "new-kent-county",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "New London",
+      "slug": "new-london",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "New Market",
+      "slug": "new-market",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "New River Community College",
+      "slug": "new-river-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "New River Community College sUAS Remote Pilot Ground School",
+      "slug": "new-river-community-college-suas-remote-pilot-ground-school",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "New River Valley",
+      "slug": "new-river-valley",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Newport News AirCommerce Park",
+      "slug": "newport-news-aircommerce-park",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Newport News Drones as First Responders Program",
+      "slug": "newport-news-drones-as-first-responders-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Newport News Marine Terminal",
+      "slug": "newport-news-marine-terminal",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Newport News Police and Fire Drone Unit",
+      "slug": "newport-news-police-and-fire-drone-unit",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Newport News Shipbuilding",
+      "slug": "newport-news-shipbuilding",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Newport News/Williamsburg Intl",
+      "slug": "newport-newswilliamsburg-intl",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Norfolk District, U.S. Army Corps of Engineers",
+      "slug": "norfolk-district-us-army-corps-of-engineers",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Norfolk Harbor Patrol Drone Capability",
+      "slug": "norfolk-harbor-patrol-drone-capability",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Norfolk International Terminals",
+      "slug": "norfolk-international-terminals",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Norfolk Intl",
+      "slug": "norfolk-intl",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Norfolk Naval Shipyard",
+      "slug": "norfolk-naval-shipyard",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Norfolk Police UAS Team",
+      "slug": "norfolk-police-uas-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Norfolk State Drone Photography Course",
+      "slug": "norfolk-state-drone-photography-course",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Norfolk State Tactical Autonomy Research Program",
+      "slug": "norfolk-state-tactical-autonomy-research-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Norfolk State University",
+      "slug": "norfolk-state-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Northern Virginia Community College",
+      "slug": "northern-virginia-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "ODU Drone Certificate Program",
+      "slug": "odu-drone-certificate-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "ODU Institute for Autonomous and Connected Systems",
+      "slug": "odu-institute-for-autonomous-and-connected-systems",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "ODU Maritime Autonomous Systems Test Site",
+      "slug": "odu-maritime-autonomous-systems-test-site",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 7,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "ODU National Security Institute",
+      "slug": "odu-national-security-institute",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "ODU Uncrewed Systems Design and Development Minor",
+      "slug": "odu-uncrewed-systems-design-and-development-minor",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "ODU Unmanned and Autonomous Vehicle Laboratory",
+      "slug": "odu-unmanned-and-autonomous-vehicle-laboratory",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Occoquan Police Department Public Safety Drone Program",
+      "slug": "town-of-occoquan-first-responder-uas-capability",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Old Dominion University",
+      "slug": "old-dominion-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Old Dominion University UAS Operations Program",
+      "slug": "old-dominion-university-uas-operations-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Orange County",
+      "slug": "orange-county",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Orange County Sheriff's Office Drone Team",
+      "slug": "orange-county-sheriffs-office-drone-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "P1 Technologies Keltech Division",
+      "slug": "p1-technologies-keltech-division",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Parsons",
+      "slug": "parsons",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Patrick & Henry Community College",
+      "slug": "patrick-henry-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Patrick Henry College",
+      "slug": "patrick-henry-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Paul D Camp Community College",
+      "slug": "paul-d-camp-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "PerimeterAI Group",
+      "slug": "perimeterai-group",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "regional",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Perrone Robotics",
+      "slug": "perrone-robotics",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Phoenix International Chesapeake Operations",
+      "slug": "phoenix-international-chesapeake-operations",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Piedmont Virginia Community College",
+      "slug": "piedmont-virginia-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Piedmont Virginia Community College sUAS Public Safety Courses",
+      "slug": "piedmont-virginia-community-college-suas-public-safety-courses",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Pittsylvania County First Responder UAS Capability",
+      "slug": "pittsylvania-county-first-responder-uas-capability",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "locality",
+      "findings": [
+        "no_primary_website",
+        "editorial_review_pending",
+        "locality_location_only"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Portsmouth Marine Terminal",
+      "slug": "portsmouth-marine-terminal",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Powhatan County Emergency Management UAS Program",
+      "slug": "powhatan-county-emergency-management-uas-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Prince Edward County Emergency Management Drone Program",
+      "slug": "prince-edward-county-emergency-management-drone-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Prince William County Police sUAS Team",
+      "slug": "prince-william-county-police-suas-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Psionic",
+      "slug": "psionic",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "QinetiQ US Headquarters",
+      "slug": "qinetiq-us-headquarters",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "REaKTOR Technology Innovation Center",
+      "slug": "reaktor-technology-innovation-center",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Radford Army Ammunition Plant",
+      "slug": "radford-army-ammunition-plant-2",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "locality",
+      "findings": [
+        "locality_location_only"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Radford City Police Department Drone Program",
+      "slug": "city-of-radford-first-responder-uas-capability",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Radford University",
+      "slug": "radford-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Radford University First Responder UAS Capability",
+      "slug": "radford-university-first-responder-uas-capability",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Radford University Unmanned Aerial Systems Minor",
+      "slug": "radford-university-unmanned-aerial-systems-minor",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Radian Forge Portsmouth Manufacturing Facility",
+      "slug": "radian-forge-portsmouth-manufacturing-facility",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Randolph College",
+      "slug": "randolph-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Randolph-Macon College",
+      "slug": "randolph-macon-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "RapidFlight UAS Manufacturing Headquarters",
+      "slug": "rapidflight-uas-manufacturing-headquarters",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Rappahannock Community College",
+      "slug": "rappahannock-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Regent University",
+      "slug": "regent-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Rice Associates Unmanned Aerial Surveying",
+      "slug": "rice-associates-unmanned-aerial-surveying",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Richard Bland College",
+      "slug": "richard-bland-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Richard Bland College Uncrewed Aerial Systems Certificate",
+      "slug": "richard-bland-college-uncrewed-aerial-systems-certificate",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Richmond Exec/Chesterfield County",
+      "slug": "richmond-execchesterfield-county",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Richmond Intl",
+      "slug": "richmond-intl",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Richmond Marine Terminal",
+      "slug": "richmond-marine-terminal",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Richmond Police sUAV Program",
+      "slug": "richmond-police-suav-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Rivanna Station",
+      "slug": "rivanna-station",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "locality",
+      "findings": [
+        "locality_location_only"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Riverside College of Health Careers",
+      "slug": "riverside-college-of-health-careers",
+      "public": false,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": []
+    },
+    {
+      "name": "Roanoke College",
+      "slug": "roanoke-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Roanoke County Fire and Rescue Drone Program",
+      "slug": "roanoke-county-fire-and-rescue-drone-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Roanoke County Police UAV Team",
+      "slug": "roanoke-county-police-uav-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Roanoke Smart Airspace Demonstration Vertiport",
+      "slug": "roanoke-smart-airspace-demonstration-vertiport",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "regional",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Roanoke/Blacksburg Rgnl (Woodrum Fld)",
+      "slug": "roanokeblacksburg-rgnl-woodrum-fld",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "exact",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 6,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Robin Radar USA Sterling Operations Center",
+      "slug": "robin-radar-usa-sterling-operations-center",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "SAIC Counter-UAS Integration",
+      "slug": "saic-counter-uas-integration",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "SRC Herndon RF and Systems Engineering Lab",
+      "slug": "src-herndon-rf-and-systems-engineering-lab",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "STEM Takes Flight at Virginia's Community Colleges",
+      "slug": "stem-takes-flight-at-virginias-community-colleges",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "regional",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "SVT Robotics Norfolk",
+      "slug": "svt-robotics-norfolk",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Scout Space",
+      "slug": "scout-space",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Sentara College of Health Sciences",
+      "slug": "sentara-college-of-health-sciences",
+      "public": false,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": []
+    },
+    {
+      "name": "Sentinel Robotic Solutions",
+      "slug": "sentinel-robotic-solutions",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Shannon",
+      "slug": "shannon",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Shenandoah Drone Assembly VR Training",
+      "slug": "shenandoah-drone-assembly-vr-training",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Shenandoah University",
+      "slug": "shenandoah-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Shenandoah Valley Aviation Technology Park",
+      "slug": "shenandoah-valley-aviation-technology-park",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Shenandoah Valley Rgnl",
+      "slug": "shenandoah-valley-rgnl",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "SimIS Autonomous Solutions",
+      "slug": "simis-autonomous-solutions",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "SkyRaptor Drone Services",
+      "slug": "skyraptor-drone-services",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Smith Mountain Lake",
+      "slug": "smith-mountain-lake",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Smyth County First Responder UAS Capability",
+      "slug": "smyth-county-first-responder-uas-capability",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "locality",
+      "findings": [
+        "no_primary_website",
+        "editorial_review_pending",
+        "locality_location_only"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Southampton County First Responder UAS Capability",
+      "slug": "southampton-county-first-responder-uas-capability",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "locality",
+      "findings": [
+        "no_primary_website",
+        "editorial_review_pending",
+        "locality_location_only"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Southern Virginia Higher Education Center Robotics Training",
+      "slug": "southern-virginia-higher-education-center-robotics-training",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Southern Virginia University",
+      "slug": "southern-virginia-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Southside College of Health Sciences",
+      "slug": "southside-college-of-health-sciences",
+      "public": false,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": []
+    },
+    {
+      "name": "Southside Virginia Community College",
+      "slug": "southside-virginia-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Southwest Virginia Community College",
+      "slug": "southwest-virginia-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Southwest Virginia Drone Soccer Program",
+      "slug": "southwest-virginia-drone-soccer-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Spotsylvania Regional Public Safety UAS Program",
+      "slug": "spotsylvania-regional-public-safety-uas-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Stafford County Sheriff's Office UAS Team",
+      "slug": "stafford-county-sheriffs-office-uas-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Stafford Regional Airport AAM Integration Project Site",
+      "slug": "stafford-regional-airport-aam-integration-project-site",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Staunton Police Department UAS Program",
+      "slug": "city-of-staunton-first-responder-uas-capability",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "SubSea Craft Virginia Beach Operations",
+      "slug": "subsea-craft-virginia-beach-operations",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Suffolk Exec",
+      "slug": "suffolk-exec",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Suffolk Police UAS Unit",
+      "slug": "suffolk-police-uas-unit",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Surface Combat Systems Center Wallops Island",
+      "slug": "surface-combat-systems-center-wallops-island",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Sweet Briar College",
+      "slug": "sweet-briar-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Systems Planning & Analysis",
+      "slug": "systems-planning-analysis",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": [
+        "editorial_review_pending",
+        "site_record_without_coordinates"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "THRYVE Automation Richmond",
+      "slug": "thryve-automation-richmond",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Tangier Island",
+      "slug": "tangier-island",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Tappahannock/Essex County",
+      "slug": "tappahannockessex-county",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Tazewell County",
+      "slug": "tazewell-county",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Textron Systems Aerosonde UAS Center of Excellence",
+      "slug": "textron-systems-aerosonde-uas-center-of-excellence",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "The Judge Advocate General's Legal Center and School",
+      "slug": "the-judge-advocate-generals-legal-center-and-school",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "The Pentagon",
+      "slug": "the-pentagon",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "The Port of Virginia",
+      "slug": "the-port-of-virginia",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Threat Tec UAS Threat Emulation",
+      "slug": "threat-tec-uas-threat-emulation",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Tidal Flight Chesapeake Development Hangar",
+      "slug": "tidal-flight-chesapeake-development-hangar",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Tidewater Community College",
+      "slug": "tidewater-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Tidewater Community College Unmanned Systems Courses",
+      "slug": "tidewater-community-college-unmanned-systems-courses",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Torc Robotics",
+      "slug": "torc-robotics",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Town of Chilhowie First Responder UAS Capability",
+      "slug": "town-of-chilhowie-first-responder-uas-capability",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "locality",
+      "findings": [
+        "no_primary_website",
+        "editorial_review_pending",
+        "locality_location_only"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Town of Chincoteague First Responder UAS Capability",
+      "slug": "town-of-chincoteague-first-responder-uas-capability",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "locality",
+      "findings": [
+        "no_primary_website",
+        "editorial_review_pending",
+        "locality_location_only"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Town of New Market First Responder UAS Capability",
+      "slug": "town-of-new-market-first-responder-uas-capability",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "locality",
+      "findings": [
+        "no_primary_website",
+        "editorial_review_pending",
+        "locality_location_only"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Town of Rocky Mount First Responder UAS Capability",
+      "slug": "town-of-rocky-mount-first-responder-uas-capability",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "locality",
+      "findings": [
+        "no_primary_website",
+        "editorial_review_pending",
+        "locality_location_only"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Town of Scottsville First Responder UAS Capability",
+      "slug": "town-of-scottsville-first-responder-uas-capability",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "locality",
+      "findings": [
+        "no_primary_website",
+        "editorial_review_pending",
+        "locality_location_only"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Tri Cities Exec/Dinwiddie County",
+      "slug": "tri-cities-execdinwiddie-county",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Trident Systems Chantilly Production Facility",
+      "slug": "trident-systems-chantilly-production-facility",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "exact",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "TruWeather Solutions",
+      "slug": "truweather-solutions",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "locality",
+      "findings": [
+        "locality_location_only"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "TurbineOne Headquarters and T1 Edgeworks",
+      "slug": "turbineone-headquarters-and-t1-edgeworks",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 6,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Twin County",
+      "slug": "twin-county",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "U.S. Coast Guard Base Portsmouth",
+      "slug": "us-coast-guard-base-portsmouth",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "UVA Bio-Inspired Engineering Research Laboratory",
+      "slug": "uva-bio-inspired-engineering-research-laboratory",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "UVA Coastal Research Center UAS Operations",
+      "slug": "uva-coastal-research-center-uas-operations",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "UVA Link Lab",
+      "slug": "uva-link-lab",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "UVA Robotics and Autonomous Systems Research",
+      "slug": "uva-robotics-and-autonomous-systems-research",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "UVA Robotics and Embedded Systems Focus Path",
+      "slug": "uva-robotics-and-embedded-systems-focus-path",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "UVA Robotics, Dynamics, and Autonomous Systems",
+      "slug": "uva-robotics-dynamics-and-autonomous-systems",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "UVA Wise STREAMWISE Robot Drone League",
+      "slug": "uva-wise-streamwise-robot-drone-league",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "UVision USA Stafford Production and Training Center",
+      "slug": "uvision-usa-stafford-production-and-training-center",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Ultra Maritime Chantilly Engineering Hub",
+      "slug": "ultra-maritime-chantilly-engineering-hub",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Union Presbyterian Seminary",
+      "slug": "union-presbyterian-seminary",
+      "public": false,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": []
+    },
+    {
+      "name": "Universal Solutions International",
+      "slug": "universal-solutions-international",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "University of Lynchburg",
+      "slug": "university-of-lynchburg",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "University of Mary Washington",
+      "slug": "university-of-mary-washington",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "University of Richmond",
+      "slug": "university-of-richmond",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "University of Virginia",
+      "slug": "university-of-virginia",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "University of Virginia UAS Operations Program",
+      "slug": "university-of-virginia-uas-operations-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "University of Virginia's College at Wise",
+      "slug": "university-of-virginias-college-at-wise",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "VCU ARVL Robotic Drone System",
+      "slug": "vcu-uav-research-laboratory",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "VCU Autonomous Robots and Vehicles Laboratory",
+      "slug": "vcu-autonomous-robots-and-vehicles-laboratory",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "VCU Robotics and Autonomous Systems Engineering BS",
+      "slug": "vcu-robotics-and-autonomous-systems-engineering-bs",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "VCU Robotics and Autonomous Systems Group",
+      "slug": "vcu-robotics-and-autonomous-systems-group",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "VIMS Autonomous Systems Laboratory",
+      "slug": "vims-autonomous-systems-laboratory",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "VIMS Collaboratory for Physical Oceanography",
+      "slug": "vims-collaboratory-for-physical-oceanography",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "VIMS Harmful Algal Bloom Drone Monitoring",
+      "slug": "vims-harmful-algal-bloom-drone-monitoring",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "VMI Drone Detection and Counter-UAS Research",
+      "slug": "vmi-drone-detection-and-counter-uas-research",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Valkyrie Enterprises",
+      "slug": "valkyrie-enterprises",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "ViDARR Virginia Beach Manufacturing Facility",
+      "slug": "vidarr-virginia-beach-manufacturing-facility",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia AAM Smart Airspace Program",
+      "slug": "virginia-aam-smart-airspace-program",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "regional",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Advanced Air Mobility Alliance",
+      "slug": "virginia-advanced-air-mobility-alliance",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Advanced Air Mobility Program",
+      "slug": "virginia-advanced-air-mobility-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Automated Corridors",
+      "slug": "virginia-automated-corridors",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "regional",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Beach Theological Seminary",
+      "slug": "virginia-beach-theological-seminary",
+      "public": false,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": []
+    },
+    {
+      "name": "Virginia Capes Range Complex",
+      "slug": "virginia-capes-range-complex",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "regional",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Commonwealth University",
+      "slug": "virginia-commonwealth-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Commonwealth University UAS Operations Program",
+      "slug": "virginia-commonwealth-university-uas-operations-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Community College System Unmanned Systems Curriculum",
+      "slug": "virginia-community-college-system-unmanned-systems-curriculum",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Conservation Police UAS Program",
+      "slug": "virginia-conservation-police-uas-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Department of Aviation",
+      "slug": "virginia-department-of-aviation",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Department of Forestry UAV Program",
+      "slug": "virginia-department-of-forestry-uav-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Department of Transportation UAS Program",
+      "slug": "virginia-department-of-transportation-uas-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Economic Development Partnership",
+      "slug": "virginia-economic-development-partnership",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia First Responder Unmanned Aircraft Trade and Replace Program",
+      "slug": "virginia-first-responder-unmanned-aircraft-trade-and-replace-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Flight Information Exchange",
+      "slug": "virginia-flight-information-exchange",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "regional",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Highlands",
+      "slug": "virginia-highlands",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Highlands Community College",
+      "slug": "virginia-highlands-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Highlands Community College Small UAS Certificate",
+      "slug": "virginia-highlands-community-college-small-uas-certificate",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Inland Port",
+      "slug": "virginia-inland-port",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Innovation Partnership Corporation",
+      "slug": "virginia-innovation-partnership-corporation",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Institute for Spaceflight and Autonomy",
+      "slug": "virginia-institute-for-spaceflight-and-autonomy",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 6,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Institute of Marine Science",
+      "slug": "virginia-institute-of-marine-science",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia International Gateway",
+      "slug": "virginia-international-gateway",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia International Raceway Automated Vehicle Test Environment",
+      "slug": "virginia-international-raceway-automated-vehicle-test-environment",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Military Institute",
+      "slug": "virginia-military-institute",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Modeling, Analysis and Simulation Center",
+      "slug": "virginia-modeling-analysis-and-simulation-center",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 6,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Peninsula Community College",
+      "slug": "virginia-peninsula-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Peninsula Community College Drone Flight Technician Certificate",
+      "slug": "virginia-peninsula-community-college-drone-flight-technician-certificate",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Public Safety Innovation Center",
+      "slug": "virginia-public-safety-innovation-center",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Smart Community Testbed",
+      "slug": "virginia-smart-community-testbed",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Smart Road",
+      "slug": "virginia-smart-road",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Space Grant Consortium Drone Academies",
+      "slug": "virginia-space-grant-consortium-drone-academies",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Spaceport Authority",
+      "slug": "virginia-spaceport-authority",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia State Police UAS Program",
+      "slug": "virginia-state-police-uas-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia State University",
+      "slug": "virginia-state-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia State University UAS Operations Program",
+      "slug": "virginia-state-university-uas-operations-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Tech",
+      "slug": "virginia-tech",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Tech Advanced Control Systems Lab",
+      "slug": "virginia-tech-advanced-control-systems-lab",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Tech Autonomous Systems and Control Laboratory",
+      "slug": "virginia-tech-autonomous-systems-and-control-laboratory",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Tech Autonomy and Robotics",
+      "slug": "virginia-tech-autonomy-and-robotics",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Tech Center for Marine Autonomy and Robotics",
+      "slug": "virginia-tech-center-for-marine-autonomy-and-robotics",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Tech Counter UAS Research and Testing Center",
+      "slug": "virginia-tech-counter-uas-research-and-testing-center",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 6,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Tech Drone Park",
+      "slug": "virginia-tech-drone-park",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Tech Eastern Shore AREC Drone Application Research",
+      "slug": "virginia-tech-eastern-shore-arec-drone-application-research",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Tech GobbleBot Autonomous Delivery Robot",
+      "slug": "virginia-tech-gobblebot-autonomous-delivery-robot",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Tech Grain Crop Drone Research Program",
+      "slug": "virginia-tech-grain-crop-drone-research-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Tech Hume Center for National Security and Technology",
+      "slug": "virginia-tech-hume-center-for-national-security-and-technology",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Tech MADE",
+      "slug": "virginia-tech-made",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Tech Mission Systems Division",
+      "slug": "virginia-tech-mission-systems-division",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Tech RoboGrinder",
+      "slug": "virginia-tech-robogrinder",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Tech SpaceDrones Laboratory",
+      "slug": "virginia-tech-spacedrones-laboratory",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Tech Stability Wind Tunnel",
+      "slug": "virginia-tech-stability-wind-tunnel",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Tech Transportation Institute",
+      "slug": "virginia-tech-transportation-institute",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Tech Uncrewed Systems Laboratory",
+      "slug": "virginia-tech-uncrewed-systems-laboratory",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Tech VTTI Smart Airspace Vertiport",
+      "slug": "virginia-tech-vtti-smart-airspace-vertiport",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Tech/Montgomery Exec",
+      "slug": "virginia-techmontgomery-exec",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia UAS",
+      "slug": "virginia-uas",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "locality",
+      "findings": [
+        "locality_location_only"
+      ],
+      "public_source_count": 1,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Union University",
+      "slug": "virginia-union-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia University of Integrative Medicine",
+      "slug": "virginia-university-of-integrative-medicine",
+      "public": false,
+      "review_status": "source-backed",
+      "precision": "site",
+      "findings": []
+    },
+    {
+      "name": "Virginia University of Lynchburg",
+      "slug": "virginia-university-of-lynchburg",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Unmanned Systems Center",
+      "slug": "virginia-unmanned-systems-center",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Wesleyan University",
+      "slug": "virginia-wesleyan-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Western Autonomous Vehicle Technology Certificate",
+      "slug": "virginia-western-autonomous-vehicle-technology-certificate",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virginia Western Community College",
+      "slug": "virginia-western-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Virtus Innovation Center",
+      "slug": "virtus-innovation-center",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Volvo Trucks New River Valley Plant",
+      "slug": "volvo-trucks-new-river-valley-plant",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "WNK Aviation",
+      "slug": "wnk-aviation",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "WR Systems Norfolk Operations Center",
+      "slug": "wr-systems-norfolk-operations-center",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Wakefield Muni",
+      "slug": "wakefield-muni",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Wallops Research Park",
+      "slug": "wallops-research-park",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Waltrip Williamsburg Exec Airport",
+      "slug": "waltrip-williamsburg-exec-airport",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Warrenton/Fauquier",
+      "slug": "warrentonfauquier",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Washington Exec/Stafford Rgnl",
+      "slug": "washington-execstafford-rgnl",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Washington and Lee University",
+      "slug": "washington-and-lee-university",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "William & Mary",
+      "slug": "william-mary",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "William M Tuck",
+      "slug": "william-m-tuck",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Williamsburg Police and Fire FotoKite Capability",
+      "slug": "williamsburg-police-and-fire-fotokite-capability",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Winchester Emergency Management sUAS Program",
+      "slug": "winchester-emergency-management-suas-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Winchester Rgnl",
+      "slug": "winchester-rgnl",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Wing Christiansburg Drone Delivery Program",
+      "slug": "wing-christiansburg-drone-delivery-program",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Wise County Sheriff's Office Drone Program",
+      "slug": "wise-county-first-responder-uas-capability",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 5,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Wrap Technologies Norton Manufacturing Headquarters",
+      "slug": "wrap-technologies-norton-manufacturing-headquarters",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [
+        "no_primary_website"
+      ],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Wythe County Sheriff's Office Drone Program",
+      "slug": "wythe-county-first-responder-uas-capability",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 4,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Wytheville Community College",
+      "slug": "wytheville-community-college",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Xelevate Leesburg Unmanned Systems Facility",
+      "slug": "xelevate-leesburg-unmanned-systems-facility",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 3,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Xelevate Luray Mountain Range",
+      "slug": "xelevate-luray-mountain-range",
+      "public": true,
+      "review_status": "source-backed",
+      "precision": "regional",
+      "findings": [
+        "editorial_review_pending"
+      ],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "York County ROVER Team",
+      "slug": "york-county-rover-team",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "site",
+      "findings": [],
+      "public_source_count": 2,
+      "page_http_status": 200,
+      "api_http_status": 200
+    },
+    {
+      "name": "Zenith Aerotech",
+      "slug": "zenith-aerotech",
+      "public": true,
+      "review_status": "reviewed",
+      "precision": "exact",
+      "findings": [],
+      "public_source_count": 1,
+      "page_http_status": 200,
+      "api_http_status": 200
+    }
+  ],
+  "duplicate_candidates": [],
+  "shared_points": {
+    "37.082521,-76.399763": [
+      "Advanced Aircraft Company",
+      "National Institute of Aerospace",
+      "Psionic"
+    ],
+    "37.229012,-80.423675": [
+      "AutoBoat at Virginia Tech",
+      "Autonomous Aerial Vehicles at Virginia Tech",
+      "Center for Unmanned Aircraft Systems at Virginia Tech",
+      "Commonwealth Cyber Initiative",
+      "Virginia Tech",
+      "Virginia Tech Advanced Control Systems Lab",
+      "Virginia Tech Autonomous Systems and Control Laboratory",
+      "Virginia Tech Autonomy and Robotics",
+      "Virginia Tech Center for Marine Autonomy and Robotics",
+      "Virginia Tech GobbleBot Autonomous Delivery Robot",
+      "Virginia Tech Grain Crop Drone Research Program",
+      "Virginia Tech Hume Center for National Security and Technology",
+      "Virginia Tech MADE",
+      "Virginia Tech Mission Systems Division",
+      "Virginia Tech RoboGrinder",
+      "Virginia Tech SpaceDrones Laboratory",
+      "Virginia Tech Uncrewed Systems Laboratory"
+    ],
+    "38.279075,-78.937471": [
+      "Blue Ridge Community College",
+      "Blue Ridge Community College Unmanned Systems Courses"
+    ],
+    "39.185000,-78.163000": [
+      "Blue Ridge Defense Works",
+      "Heven AeroTech Winchester Innovation and Manufacturing Campus"
+    ],
+    "37.346254,-77.407919": [
+      "Brightpoint Community College",
+      "Brightpoint Community College Unmanned Systems Courses"
+    ],
+    "37.059929,-76.488306": [
+      "CNU Autonomous Systems and Drone Lab",
+      "CNU Capable Humanitarian Robotics and Intelligent Systems Lab",
+      "Christopher Newport University"
+    ],
+    "38.035665,-78.503428": [
+      "Cavalier Autonomous Racing",
+      "UVA Bio-Inspired Engineering Research Laboratory",
+      "UVA Robotics and Autonomous Systems Research",
+      "UVA Robotics and Embedded Systems Focus Path",
+      "UVA Robotics, Dynamics, and Autonomous Systems",
+      "University of Virginia",
+      "University of Virginia UAS Operations Program"
+    ],
+    "37.161782,-76.577685": [
+      "DEVCOM AvMC Maneuver Air Directorate - Fort Eustis",
+      "Fort Eustis - Joint Base Langley-Eustis"
+    ],
+    "36.565286,-79.408803": [
+      "Danville Community College",
+      "Danville Community College Unmanned Systems Courses"
+    ],
+    "38.035000,-78.503000": [
+      "DroneTrace",
+      "Rivanna Station"
+    ],
+    "37.639652,-75.751129": [
+      "Eastern Shore Community College",
+      "Eastern Shore Community College Unmanned Systems Courses"
+    ],
+    "36.772857,-81.829142": [
+      "Emory & Henry Drone Pilot Test Preparation",
+      "Emory & Henry University"
+    ],
+    "37.156972,-77.399932": [
+      "Energy-Centric UAS Center for Critical Infrastructure",
+      "Richard Bland College",
+      "Richard Bland College Uncrewed Aerial Systems Certificate"
+    ],
+    "37.202048,-80.409798": [
+      "FAA BEYOND Virginia Team",
+      "Mid-Atlantic Aviation Partnership"
+    ],
+    "38.303323,-77.488932": [
+      "Fredericksburg Drone as First Responder Program",
+      "Fredericksburg Police UAS Team"
+    ],
+    "36.579466,-79.356172": [
+      "GO TEC Automation and Robotics Talent Pathway",
+      "IALR AgBOT Precision Agriculture Program",
+      "Institute for Advanced Learning and Research"
+    ],
+    "38.831950,-77.307063": [
+      "George Mason Autonomous Robotics Laboratory",
+      "George Mason Center for Air Transportation Systems Research",
+      "George Mason MICO Laboratory",
+      "George Mason Northern Virginia DFR Planning Study",
+      "George Mason SPARX",
+      "George Mason Starship Autonomous Delivery Fleet",
+      "George Mason University",
+      "George Mason University Police UAS Team",
+      "Mason Innovation Exchange Autonomous Systems Short Courses"
+    ],
+    "37.023632,-76.338129": [
+      "Hampton University",
+      "Hampton University Uncrewed Aircraft Systems Program"
+    ],
+    "38.436311,-78.870484": [
+      "JMU Drone Challenge",
+      "JMU X-Labs",
+      "James Madison University"
+    ],
+    "36.918239,-76.156529": [
+      "Joint Expeditionary Base Little Creek-Fort Story",
+      "NSWC Carderock Combatant Craft Division",
+      "Navy TALSA East Small UAS Training Facility"
+    ],
+    "39.036001,-78.267336": [
+      "Laurel Ridge Community College",
+      "Laurel Ridge Community College Unmanned Systems Courses"
+    ],
+    "37.350232,-79.182220": [
+      "Liberty University",
+      "Liberty University Aeronautics: Unmanned Aerial Systems BS",
+      "Liberty University Aviation Maintenance: Unmanned Aerial Systems BS",
+      "Liberty University Medium Unmanned Aerial Systems Certificate",
+      "Liberty University School of Aeronautics",
+      "Liberty University UAS Operational Experience"
+    ],
+    "37.297975,-78.396987": [
+      "Longwood SEED Autonomous Marine Project",
+      "Longwood University"
+    ],
+    "37.812275,-79.852536": [
+      "Mountain Gateway Community College",
+      "Mountain Gateway Community College Unmanned Systems Courses"
+    ],
+    "37.085639,-76.380667": [
+      "NASA Autonomy Lab for Intelligent Flight Systems",
+      "NASA Flight Dynamics Research Facility",
+      "NASA Langley Autonomy Incubator",
+      "NASA Langley CERTAIN",
+      "NASA Langley ROAM UAS Operations Center",
+      "NASA Langley Research Center",
+      "NASA Langley UAS Test Range"
+    ],
+    "38.333000,-77.031000": [
+      "NSWC Dahlgren Outdoor Autonomy Laboratory",
+      "Naval Support Facility Dahlgren"
+    ],
+    "37.029425,-76.450613": [
+      "Newport News Drones as First Responders Program",
+      "Newport News Police and Fire Drone Unit"
+    ],
+    "36.848642,-76.291219": [
+      "Norfolk Harbor Patrol Drone Capability",
+      "Norfolk Police UAS Team"
+    ],
+    "36.849182,-76.267977": [
+      "Norfolk State Drone Photography Course",
+      "Norfolk State Tactical Autonomy Research Program",
+      "Norfolk State University"
+    ],
+    "36.889280,-76.303179": [
+      "ODU Drone Certificate Program",
+      "ODU Institute for Autonomous and Connected Systems",
+      "ODU Uncrewed Systems Design and Development Minor",
+      "ODU Unmanned and Autonomous Vehicle Laboratory",
+      "Old Dominion University",
+      "Old Dominion University UAS Operations Program"
+    ],
+    "36.882436,-76.300479": [
+      "ODU National Security Institute",
+      "Virginia Institute for Spaceflight and Autonomy"
+    ],
+    "38.006895,-78.483707": [
+      "Piedmont Virginia Community College",
+      "Piedmont Virginia Community College sUAS Public Safety Courses"
+    ],
+    "37.136907,-80.549728": [
+      "Radford University",
+      "Radford University Unmanned Aerial Systems Minor"
+    ],
+    "37.321176,-80.022068": [
+      "Roanoke County Fire and Rescue Drone Program",
+      "Roanoke County Police UAV Team"
+    ],
+    "39.167355,-78.157433": [
+      "Shenandoah Drone Assembly VR Training",
+      "Shenandoah University"
+    ],
+    "38.263841,-78.896447": [
+      "Shenandoah Valley Aviation Technology Park",
+      "Shenandoah Valley Rgnl"
+    ],
+    "38.399142,-77.456610": [
+      "Stafford Regional Airport AAM Integration Project Site",
+      "Washington Exec/Stafford Rgnl"
+    ],
+    "36.846140,-76.293320": [
+      "The Port of Virginia",
+      "Virginia Spaceport Authority"
+    ],
+    "36.970602,-82.559656": [
+      "UVA Wise STREAMWISE Robot Drone League",
+      "University of Virginia's College at Wise"
+    ],
+    "37.549620,-77.452697": [
+      "VCU ARVL Robotic Drone System",
+      "VCU Autonomous Robots and Vehicles Laboratory",
+      "VCU Robotics and Autonomous Systems Engineering BS",
+      "VCU Robotics and Autonomous Systems Group",
+      "Virginia Commonwealth University",
+      "Virginia Commonwealth University UAS Operations Program"
+    ],
+    "37.249323,-76.500000": [
+      "VIMS Autonomous Systems Laboratory",
+      "VIMS Collaboratory for Physical Oceanography",
+      "VIMS Harmful Algal Bloom Drone Monitoring",
+      "Virginia Institute of Marine Science"
+    ],
+    "37.789600,-79.437067": [
+      "VMI Drone Detection and Counter-UAS Research",
+      "Virginia Military Institute"
+    ],
+    "37.543832,-77.439186": [
+      "Virginia Advanced Air Mobility Alliance",
+      "Virginia Innovation Partnership Corporation",
+      "Virginia Public Safety Innovation Center",
+      "Virginia Unmanned Systems Center"
+    ],
+    "37.512142,-77.332758": [
+      "Virginia Advanced Air Mobility Program",
+      "Virginia Department of Aviation"
+    ],
+    "36.698866,-82.001118": [
+      "Virginia Highlands Community College",
+      "Virginia Highlands Community College Small UAS Certificate"
+    ],
+    "37.187786,-80.397174": [
+      "Virginia Smart Road",
+      "Virginia Tech Transportation Institute"
+    ],
+    "37.234692,-77.419026": [
+      "Virginia State University",
+      "Virginia State University UAS Operations Program"
+    ],
+    "37.245029,-79.973011": [
+      "Virginia Western Autonomous Vehicle Technology Certificate",
+      "Virginia Western Community College"
+    ]
+  },
+  "scope": "Read-only local SQLite inventory and profiles; not current hosted PostgreSQL verification.",
+  "checks": "Asset/source model validation, public-source completeness, profile/API responses, names, coordinates, precision, date bounds, basic public-field exclusion, and duplicate-candidate discovery. Reachability is not factual certification."
+}

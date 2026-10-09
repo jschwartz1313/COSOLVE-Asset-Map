@@ -1,0 +1,267 @@
+{
+  "checked_at": "2026-10-09",
+  "scope": "Pending local inventory and precision follow-up; no points, lifecycle status or editorial verification dates changed. Hosted counts/history require renewed authenticated access.",
+  "findings_changed_since_local_october_6": [],
+  "location_records": [
+    {
+      "name": "BZRD Systems",
+      "slug": "bzrd-systems",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "Bath County First Responder UAS Capability",
+      "slug": "bath-county-first-responder-uas-capability",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "Blue Ridge Defense Works",
+      "slug": "blue-ridge-defense-works",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "Buchanan County First Responder UAS Capability",
+      "slug": "buchanan-county-first-responder-uas-capability",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "DroneTrace",
+      "slug": "dronetrace",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "Former Dedrone Washington-Area Headquarters",
+      "slug": "dedrone-washington-area-headquarters",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "Fort Pickett",
+      "slug": "fort-pickett",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "Fort Walker",
+      "slug": "fort-ap-hill-2",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "H2P Solution",
+      "slug": "h2p-solution",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "Heven AeroTech Winchester Innovation and Manufacturing Campus",
+      "slug": "heven-aerotech-winchester-innovation-and-manufacturing-campus",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "MARS Unmanned Aircraft Systems Airfield",
+      "slug": "mars-unmanned-aircraft-systems-airfield",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "MITRE National Range",
+      "slug": "mitre-national-range",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "Magothy River Technologies",
+      "slug": "magothy-river-technologies",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "Marine Corps Base Quantico",
+      "slug": "marine-corps-base-quantico",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "NASA Wallops UAS Test and Integration Facility",
+      "slug": "nasa-wallops-uas-test-and-integration-facility",
+      "precision": "site",
+      "disposition": "retain-unmapped-location"
+    },
+    {
+      "name": "NSWC Dahlgren Outdoor Autonomy Laboratory",
+      "slug": "nswc-dahlgren-outdoor-autonomy-laboratory",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "Naval Support Facility Dahlgren",
+      "slug": "naval-support-facility-dahlgren",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "Pittsylvania County First Responder UAS Capability",
+      "slug": "pittsylvania-county-first-responder-uas-capability",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "Radford Army Ammunition Plant",
+      "slug": "radford-army-ammunition-plant-2",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "Rivanna Station",
+      "slug": "rivanna-station",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "Smyth County First Responder UAS Capability",
+      "slug": "smyth-county-first-responder-uas-capability",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "Southampton County First Responder UAS Capability",
+      "slug": "southampton-county-first-responder-uas-capability",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "Systems Planning & Analysis",
+      "slug": "systems-planning-analysis",
+      "precision": "site",
+      "disposition": "retain-unmapped-location"
+    },
+    {
+      "name": "Town of Chilhowie First Responder UAS Capability",
+      "slug": "town-of-chilhowie-first-responder-uas-capability",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "Town of Chincoteague First Responder UAS Capability",
+      "slug": "town-of-chincoteague-first-responder-uas-capability",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "Town of New Market First Responder UAS Capability",
+      "slug": "town-of-new-market-first-responder-uas-capability",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "Town of Rocky Mount First Responder UAS Capability",
+      "slug": "town-of-rocky-mount-first-responder-uas-capability",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "Town of Scottsville First Responder UAS Capability",
+      "slug": "town-of-scottsville-first-responder-uas-capability",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "TruWeather Solutions",
+      "slug": "truweather-solutions",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    },
+    {
+      "name": "Virginia UAS",
+      "slug": "virginia-uas",
+      "precision": "locality",
+      "disposition": "retain-generalized-location"
+    }
+  ],
+  "operator_follow_up": [
+    {
+      "topic": "MAAP COA areas and Blackstone boundary",
+      "disposition": "Current COA approval/expiry remains unconfirmed. Central VA supplied geometry is draft; reconcile briefing areas against geometry. No Blackstone boundary file supplied; do not invent a radius or point.",
+      "evidence": "docs/maap-integration-2026-10-02.md"
+    },
+    {
+      "topic": "Liquid Robotics Herndon transition",
+      "disposition": "Official contact page still publishes Herndon, while the May 7 announcement plans relocation to Jessup by year-end. Do not mark the Virginia site closed or move it without completion evidence.",
+      "source_urls": [
+        "https://www.liquid-robotics.com/contact-us/",
+        "https://www.liquid-robotics.com/resource/liquid-robotics-relocation-jessup-maryland/"
+      ]
+    },
+    {
+      "topic": "Dedrone historical Sterling location",
+      "disposition": "Dedrone legal page still lists the Sterling address. It is useful corroboration of the registered contact, but the current Axon contact page does not independently establish occupancy. Retain the historical/locality qualification.",
+      "source_urls": [
+        "https://www.dedrone.com/legal/overview",
+        "https://www.axon.com/contact/dedrone"
+      ]
+    },
+    {
+      "topic": "SPA unmapped headquarters",
+      "disposition": "Official headquarters address retained; fresh Census address query returned no matches. Do not substitute an arbitrary point.",
+      "source_urls": [
+        "https://spa.com/contact-us/",
+        "https://spa.com/about-us/locations/"
+      ],
+      "geocode_archive": "tmp/maintenance-2026-10-09/spa-census-geocode.json"
+    },
+    {
+      "topic": "NASA Wallops UAS Test and Integration Facility",
+      "disposition": "Facility pin remains unresolved. General Wallops/spaceport sources do not identify the UAS building. Preserve the unlocated site record."
+    },
+    {
+      "topic": "Blue Ridge Defense Works",
+      "disposition": "Existing homepage still returns 404. Exact-name research did not produce new corroboration in this pass; retain evidence-gap wording and locality-level point. No closure inference.",
+      "source_urls": [
+        "https://blueridgedefense.com/"
+      ]
+    }
+  ],
+  "research_candidates": [
+    {
+      "name": "Robotic and Autonomous Systems Warfighting Development Center (RASWDC)",
+      "disposition": "Absent from canonical inventory by name/acronym. September 25 reporting describes establishment at JEB Little Creek on September 24, 2026 and phased capability development. Navy announcement and NAVADMIN PDF returned 403. Prepare a source-backed candidate only after authoritative full-content review; no guessed pad, building, public access or service availability.",
+      "source_urls": [
+        "https://www.navy.mil/Press-Office/Press-Releases/display-pressreleases/Article/4610570/us-navy-establishes-robotic-and-autonomous-systems-warfighting-development-cent/",
+        "https://www.mynavyhr.navy.mil/Portals/55/Messages/NAVADMIN/NAV2026/NAV26221.pdf",
+        "https://defensescoop.com/2026/09/25/navy-creates-robotic-autonomous-systems-warfighting-development-center/"
+      ]
+    }
+  ],
+  "coordination_follow_up": {
+    "topic": "VABA",
+    "disposition": "No VABA record or follow-up instruction found in repository docs/data/scripts/tests. Official organization and board pages were checked; the specific existing parent follow-up is unavailable in this runtime. No map record, outreach or new claim was inferred.",
+    "source_urls": [
+      "https://www.thevaba.org/",
+      "https://www.thevaba.org/board"
+    ]
+  },
+  "excluded_institution_follow_up": [
+    {
+      "name": "Riverside College of Health Careers",
+      "disposition": "The former website redirects to the official Riverside College of Health Sciences site. Review identity and the specialized-institution exclusion before renaming; do not accidentally introduce an excluded institution to the public map.",
+      "source_urls": [
+        "https://www.riversideonline.com/careers/college-of-health-careers",
+        "https://www.riverside.edu/"
+      ]
+    },
+    {
+      "name": "Virginia University of Integrative Medicine",
+      "disposition": "The admissions link redirects to the institution homepage. Review the intended contact route; the redirect does not establish closure. This institution remains excluded from public listings.",
+      "source_urls": [
+        "https://www.vuim.edu/admissions/",
+        "https://www.vuim.edu/"
+      ]
+    }
+  ]
+}

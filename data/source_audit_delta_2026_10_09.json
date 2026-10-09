@@ -1,0 +1,296 @@
+{
+  "checked_at": "2026-10-09",
+  "baseline": "source_audit_2026_10_06.json",
+  "comparison_scope": "Exact URLs in the checked-in canonical catalog; scope differs from the 1,238-URL local stored-record check. Availability changes do not alter editorial verification or establish closure.",
+  "previous_url_count": 1208,
+  "current_url_count": 1209,
+  "changed_classification_count": 35,
+  "changes": [
+    {
+      "url": "https://fulcrumconceptsllc.com/about/",
+      "previous_classification": "network_or_tls_error",
+      "current_classification": "access_blocked_or_rate_limited",
+      "asset_names": [
+        "Fulcrum Concepts"
+      ]
+    },
+    {
+      "url": "https://fulcrumconceptsllc.com/news/",
+      "previous_classification": "network_or_tls_error",
+      "current_classification": "access_blocked_or_rate_limited",
+      "asset_names": [
+        "Fulcrum Concepts"
+      ]
+    },
+    {
+      "url": "https://fulcrumconceptsllc.com/news/fulcrum-concepts-opens-new-machine-shop-in-newport-news-expanding-manufacturing-capabilities/",
+      "previous_classification": "network_or_tls_error",
+      "current_classification": "access_blocked_or_rate_limited",
+      "asset_names": [
+        "Fulcrum Concepts Newport News Machine Shop"
+      ]
+    },
+    {
+      "url": "https://investors.bowman.com/corporate-governance/contact-the-board",
+      "previous_classification": "network_or_tls_error",
+      "current_classification": "access_blocked_or_rate_limited",
+      "asset_names": [
+        "Bowman Consulting Unmanned Geospatial Services"
+      ]
+    },
+    {
+      "url": "https://investors.leidos.com/node/35791/pdf",
+      "previous_classification": "network_or_tls_error",
+      "current_classification": "access_blocked_or_rate_limited",
+      "asset_names": [
+        "Leidos"
+      ]
+    },
+    {
+      "url": "https://investors.leidos.com/stockholder-resources/investor-faqs",
+      "previous_classification": "network_or_tls_error",
+      "current_classification": "access_blocked_or_rate_limited",
+      "asset_names": [
+        "Leidos"
+      ]
+    },
+    {
+      "url": "https://ir.wrap.com/ir-resources/investor-faqs",
+      "previous_classification": "network_or_tls_error",
+      "current_classification": "access_blocked_or_rate_limited",
+      "asset_names": [
+        "Wrap Technologies Norton Manufacturing Headquarters"
+      ]
+    },
+    {
+      "url": "https://ir.wrap.com/news-events/press-releases/detail/352/wrap-technologies-opens-new-virginia-facility-to-scale",
+      "previous_classification": "network_or_tls_error",
+      "current_classification": "access_blocked_or_rate_limited",
+      "asset_names": [
+        "Wrap Technologies Norton Manufacturing Headquarters"
+      ]
+    },
+    {
+      "url": "https://ir.wrap.com/node/12121/html",
+      "previous_classification": "network_or_tls_error",
+      "current_classification": "access_blocked_or_rate_limited",
+      "asset_names": [
+        "Wrap Technologies Norton Manufacturing Headquarters"
+      ]
+    },
+    {
+      "url": "https://news.vt.edu/articles/2025/04/research-counteruascenter.html",
+      "previous_classification": "reachable",
+      "current_classification": "network_or_tls_error",
+      "asset_names": [
+        "Virginia Tech Counter UAS Research and Testing Center"
+      ]
+    },
+    {
+      "url": "https://newsroom.boozallen.com/news-releases/news-release-details/booz-allen-relocate-global-headquarters-reston-virginia",
+      "previous_classification": "network_or_tls_error",
+      "current_classification": "access_blocked_or_rate_limited",
+      "asset_names": [
+        "Booz Allen Hamilton"
+      ]
+    },
+    {
+      "url": "https://pub-gloucesterva.escribemeetings.com/filestream.ashx?DocumentId=24451",
+      "previous_classification": "reachable",
+      "current_classification": "access_blocked_or_rate_limited",
+      "asset_names": [
+        "Gloucester County Sheriff's Office UAS Program"
+      ]
+    },
+    {
+      "url": "https://researchdirectorate.larc.nasa.gov/a-lift/",
+      "previous_classification": "reachable",
+      "current_classification": "network_or_tls_error",
+      "asset_names": [
+        "NASA Autonomy Lab for Intelligent Flight Systems"
+      ]
+    },
+    {
+      "url": "https://researchdirectorate.larc.nasa.gov/facilities-capabilities/",
+      "previous_classification": "reachable",
+      "current_classification": "network_or_tls_error",
+      "asset_names": [
+        "NASA Autonomy Lab for Intelligent Flight Systems"
+      ]
+    },
+    {
+      "url": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0/query?where=IDENT%3D%278VA2%27&outFields=IDENT%2CNAME%2COPERSTATUS%2CPRIVATEUSE&returnGeometry=true&outSR=4326&f=geojson",
+      "previous_classification": "access_blocked_or_rate_limited",
+      "current_classification": "reachable",
+      "asset_names": [
+        "Virginia Tech VTTI Smart Airspace Vertiport"
+      ]
+    },
+    {
+      "url": "https://tjaglcs.army.mil/",
+      "previous_classification": "network_or_tls_error",
+      "current_classification": "reachable",
+      "asset_names": [
+        "The Judge Advocate General's Legal Center and School"
+      ]
+    },
+    {
+      "url": "https://tjaglcs.army.mil/G6-itd",
+      "previous_classification": "network_or_tls_error",
+      "current_classification": "reachable",
+      "asset_names": [
+        "The Judge Advocate General's Legal Center and School"
+      ]
+    },
+    {
+      "url": "https://www.act.nato.int/activities/task-force-x-centmed/",
+      "previous_classification": "reachable",
+      "current_classification": "access_blocked_or_rate_limited",
+      "asset_names": [
+        "NATO Allied Command Transformation Task Force X"
+      ]
+    },
+    {
+      "url": "https://www.arec.vaes.vt.edu/arec/eastern-shore/contact.html",
+      "previous_classification": "network_or_tls_error",
+      "current_classification": "reachable",
+      "asset_names": [
+        "Virginia Tech Eastern Shore AREC Drone Application Research"
+      ]
+    },
+    {
+      "url": "https://www.axon.com/contact/dedrone",
+      "previous_classification": "reachable",
+      "current_classification": "access_blocked_or_rate_limited",
+      "asset_names": [
+        "Former Dedrone Washington-Area Headquarters"
+      ]
+    },
+    {
+      "url": "https://www.fredericksburgva.gov/1529/Unmanned-Aircraft-System-Team",
+      "previous_classification": "access_blocked_or_rate_limited",
+      "current_classification": "reachable",
+      "asset_names": [
+        "Fredericksburg Police UAS Team"
+      ]
+    },
+    {
+      "url": "https://www.fredericksburgva.gov/2066/Drone-as-First-Responder-DFR-Program",
+      "previous_classification": "access_blocked_or_rate_limited",
+      "current_classification": "reachable",
+      "asset_names": [
+        "Fredericksburg Drone as First Responder Program"
+      ]
+    },
+    {
+      "url": "https://www.fredericksburgva.gov/Directory.aspx",
+      "previous_classification": "access_blocked_or_rate_limited",
+      "current_classification": "reachable",
+      "asset_names": [
+        "Fredericksburg Drone as First Responder Program",
+        "Fredericksburg Police UAS Team"
+      ]
+    },
+    {
+      "url": "https://www.globenewswire.com/news-release/2021/01/11/2156355/0/en/Huntington-Ingalls-Industries-Completes-First-Phase-of-Unmanned-Systems-Center-of-Excellence-Campus.html",
+      "previous_classification": "network_or_tls_error",
+      "current_classification": "access_blocked_or_rate_limited",
+      "asset_names": [
+        "HII Unmanned Systems Center of Excellence"
+      ]
+    },
+    {
+      "url": "https://www.hampton.gov/244/Fire-Rescue",
+      "previous_classification": "access_blocked_or_rate_limited",
+      "current_classification": "reachable",
+      "asset_names": [
+        "Hampton Joint Police and Fire UAS Unit"
+      ]
+    },
+    {
+      "url": "https://www.hampton.gov/DocumentCenter/View/37936/557-UAS-Unmanned-Aerial-System-PDF",
+      "previous_classification": "access_blocked_or_rate_limited",
+      "current_classification": "reachable",
+      "asset_names": [
+        "Hampton Joint Police and Fire UAS Unit"
+      ]
+    },
+    {
+      "url": "https://www.hampton.gov/directory",
+      "previous_classification": "access_blocked_or_rate_limited",
+      "current_classification": "reachable",
+      "asset_names": [
+        "Hampton Joint Police and Fire UAS Unit"
+      ]
+    },
+    {
+      "url": "https://www.jamescitycountyva.gov/767/Police",
+      "previous_classification": "access_blocked_or_rate_limited",
+      "current_classification": "reachable",
+      "asset_names": [
+        "James City County Police Drone as First Responder Program"
+      ]
+    },
+    {
+      "url": "https://www.jamescitycountyva.gov/m/newsflash/Home/Detail/6334",
+      "previous_classification": "access_blocked_or_rate_limited",
+      "current_classification": "reachable",
+      "asset_names": [
+        "James City County Police Drone as First Responder Program"
+      ]
+    },
+    {
+      "url": "https://www.norfolk.gov/Directory.aspx",
+      "previous_classification": "network_or_tls_error",
+      "current_classification": "reachable",
+      "asset_names": [
+        "Norfolk Harbor Patrol Drone Capability",
+        "Norfolk Police UAS Team"
+      ]
+    },
+    {
+      "url": "https://www.prnewswire.com/news-releases/rapidflight-celebrates-grand-opening-of-uas-3d-manufacturing-headquarters-in-manassas-virginia-301884344.html",
+      "previous_classification": "reachable",
+      "current_classification": "network_or_tls_error",
+      "asset_names": [
+        "RapidFlight UAS Manufacturing Headquarters"
+      ]
+    },
+    {
+      "url": "https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/spes-747.html",
+      "previous_classification": "reachable",
+      "current_classification": "network_or_tls_error",
+      "asset_names": [
+        "Virginia Tech Grain Crop Drone Research Program"
+      ]
+    },
+    {
+      "url": "https://www.randolphcollege.edu/",
+      "previous_classification": "access_blocked_or_rate_limited",
+      "current_classification": "reachable",
+      "asset_names": [
+        "Randolph College"
+      ]
+    },
+    {
+      "url": "https://www.randolphcollege.edu/admission/",
+      "previous_classification": "access_blocked_or_rate_limited",
+      "current_classification": "reachable",
+      "asset_names": [
+        "Randolph College"
+      ]
+    },
+    {
+      "url": "https://www.tcc.edu/",
+      "previous_classification": "reachable",
+      "current_classification": "access_blocked_or_rate_limited",
+      "asset_names": [
+        "Tidewater Community College"
+      ]
+    }
+  ],
+  "added_urls": [
+    "https://www.governor.virginia.gov/newsroom/news-releases/2026/april-releases/name-1116537-en.html"
+  ],
+  "removed_urls": []
+}

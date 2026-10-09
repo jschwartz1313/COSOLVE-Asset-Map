@@ -1,0 +1,40 @@
+{
+  "checked_at": "2026-10-09",
+  "execution_status": "isolated proposal SQLite rehearsal only; not deployed",
+  "manifest": "data/proposed_faa_baa_corrections_2026_10_09.json",
+  "asset_count_preserved": 555,
+  "public_count": 542,
+  "unrelated_asset_rows_preserved": 552,
+  "unrelated_source_rows_preserved": 1851,
+  "added_public_sources": 3,
+  "idempotent_rerun": true,
+  "targets": [
+    {
+      "name": "ANRA Technologies",
+      "status": "source-backed",
+      "activity_source_url": "https://www.faa.gov/newsroom/faa-funds-drone-research-support-safe-integration",
+      "activity_last_verified_at": "2026-10-09",
+      "profile_http_status": 200,
+      "api_http_status": 200,
+      "public_source_count": 6
+    },
+    {
+      "name": "DroneUp",
+      "status": "source-backed",
+      "activity_source_url": "https://www.faa.gov/newsroom/faa-funds-drone-research-support-safe-integration",
+      "activity_last_verified_at": "2026-10-09",
+      "profile_http_status": 200,
+      "api_http_status": 200,
+      "public_source_count": 5
+    },
+    {
+      "name": "Devorto",
+      "status": "source-backed",
+      "activity_source_url": "https://www.faa.gov/newsroom/faa-funds-drone-research-support-safe-integration",
+      "activity_last_verified_at": "2026-10-09",
+      "profile_http_status": 200,
+      "api_http_status": 200,
+      "public_source_count": 3
+    }
+  ]
+}

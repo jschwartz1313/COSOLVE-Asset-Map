@@ -12,8 +12,9 @@ test("map images identify only the site origin to providers", async ({ page }) =
   });
   await page.goto("/map/?q=airport");
   await expect.poll(() => tileRequests.length).toBeGreaterThan(0);
+  const siteOrigin = `${new URL(page.url()).origin}/`;
   for (const request of tileRequests) {
-    expect(request.headers().referer).toBe("http://127.0.0.1:8002/");
+    expect(request.headers().referer).toBe(siteOrigin);
   }
   await expect(page.locator("img.leaflet-tile").first()).toHaveAttribute("referrerpolicy", "strict-origin");
 });

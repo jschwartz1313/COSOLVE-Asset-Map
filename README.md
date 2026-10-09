@@ -111,6 +111,7 @@ Example:
 - [Real-data sources and methodology](docs/data_sources.md)
 - [September 4 research, location, source, and application audit](docs/audit_2026_09_04.md)
 - [October 6 asset and functionality review](docs/audit_2026_10_06.md)
+- [October 9 maintenance evidence and hosted verification blockers](docs/maintenance_2026_10_09.md)
 - [CSV import guide](docs/import_guide.md)
 - [Security and publication](docs/security_and_publication.md)
 - [Deployment and operations](docs/deployment.md)

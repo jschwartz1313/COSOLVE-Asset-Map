@@ -1,0 +1,73 @@
+{
+  "reviewed_at": "2026-10-09",
+  "execution_status": "prepared-and-locally-tested; not wired into catalog generation or release; not deployed",
+  "scope": "Preserve existing company activity descriptions and add attributed FAA BAA award context to three existing Virginia organizations. No change to operating status, capabilities, locations, access or contacts. Check current hosted records and staff history before release integration.",
+  "corrections": [
+    {
+      "name": "ANRA Technologies",
+      "provenance": "curated-public-source",
+      "before": {
+        "current_activity": "ANRA publishes UTM/U-space, sensor-fusion, fleet-management, and vertiport-management offerings for commercial and public-sector integration projects.",
+        "activity_source_url": "https://www.anratechnologies.com/home/",
+        "activity_last_verified_at": "2026-09-07"
+      },
+      "after": {
+        "current_activity": "ANRA publishes UTM/U-space, sensor-fusion, fleet-management, and vertiport-management offerings for commercial and public-sector integration projects. On October 5, 2026, the FAA announced research awards to ANRA covering air-taxi and vertiport coordination, shared altitude references, airport/drone traffic-system interoperability, and AI-supported drone identification. The awards do not certify completed products, operational availability, or permission to fly.",
+        "activity_source_url": "https://www.faa.gov/newsroom/faa-funds-drone-research-support-safe-integration",
+        "activity_last_verified_at": "2026-10-09"
+      },
+      "add_sources": [
+        {
+          "title": "FAA October 5, 2026 drone research awards",
+          "url": "https://www.faa.gov/newsroom/faa-funds-drone-research-support-safe-integration"
+        }
+      ],
+      "review_required": true,
+      "reason": "Add the directly attributed research award; retain prior official company evidence and require editorial review. Award amount, test-site assignment, implementation and operating approvals are not inferred."
+    },
+    {
+      "name": "DroneUp",
+      "provenance": "curated-public-source",
+      "before": {
+        "current_activity": "DroneUp currently promotes ATOMx and Uncrew and offers a demo/partnership contact route; individual deployments and permissions require confirmation.",
+        "activity_source_url": "https://www.droneup.com/",
+        "activity_last_verified_at": "2026-09-07"
+      },
+      "after": {
+        "current_activity": "DroneUp currently promotes ATOMx and Uncrew and offers a demo/partnership contact route; individual deployments and permissions require confirmation. On October 5, 2026, the FAA announced a research award to DroneUp for securely establishing drone identity and flight authorization. An award does not certify a deployed system or confer operating permission.",
+        "activity_source_url": "https://www.faa.gov/newsroom/faa-funds-drone-research-support-safe-integration",
+        "activity_last_verified_at": "2026-10-09"
+      },
+      "add_sources": [
+        {
+          "title": "FAA October 5, 2026 drone research awards",
+          "url": "https://www.faa.gov/newsroom/faa-funds-drone-research-support-safe-integration"
+        }
+      ],
+      "review_required": true,
+      "reason": "Add the directly attributed research award; retain prior official company evidence and require editorial review. Award amount, test-site assignment, implementation and operating approvals are not inferred."
+    },
+    {
+      "name": "Devorto",
+      "provenance": "curated-public-source",
+      "before": {
+        "current_activity": "Devorto publicly describes ongoing development of TURN variants ranging from a solar high-altitude platform to smaller commercial and defense UAS concepts.",
+        "activity_source_url": "https://devorto.io/",
+        "activity_last_verified_at": "2026-08-24"
+      },
+      "after": {
+        "current_activity": "Devorto publicly describes ongoing development of TURN variants ranging from a solar high-altitude platform to smaller commercial and defense UAS concepts. On October 5, 2026, the FAA announced a research award to Devorto Corporation for extended-range cargo-drone service. This is funded research, not confirmation that a cargo route is operating or that a TURN product is certified.",
+        "activity_source_url": "https://www.faa.gov/newsroom/faa-funds-drone-research-support-safe-integration",
+        "activity_last_verified_at": "2026-10-09"
+      },
+      "add_sources": [
+        {
+          "title": "FAA October 5, 2026 drone research awards",
+          "url": "https://www.faa.gov/newsroom/faa-funds-drone-research-support-safe-integration"
+        }
+      ],
+      "review_required": true,
+      "reason": "Add the directly attributed research award; retain prior official company evidence and require editorial review. Award amount, test-site assignment, implementation and operating approvals are not inferred."
+    }
+  ]
+}
