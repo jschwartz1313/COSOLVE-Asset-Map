@@ -459,6 +459,11 @@ class RealCatalogFileTests(TestCase):
             historical_names | expansion_names | hampton_roads_names
             | manufacturing_names | september_names
         )
+        source_backed_additions.update(
+            record["name"] for record in json.loads(
+                (settings.BASE_DIR / "data/asset_expansion_2026_10_13.json").read_text()
+            )["records"]
+        )
         self.assertFalse(reviewed_or_flagged.intersection(source_backed_additions))
         self.assertEqual(reviewed_or_flagged | source_backed_additions, set(records_by_name))
 

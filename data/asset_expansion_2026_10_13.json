@@ -1,0 +1,64 @@
+{
+  "reviewed_at": "2026-10-13",
+  "scope": "One source-backed Navy command, distinct from its existing host installation and other Navy or NATO entities. No commercial test availability, range boundary, flight permission or benchmark score is inferred.",
+  "records": [
+    {
+      "name": "Navy Robotic and Autonomous Systems Warfighting Development Center",
+      "identity_guard_terms": ["RASWDC", "Robotic and Autonomous Systems Warfighting Development Center"],
+      "search_aliases": "RASWDC; Robotic and Autonomous Systems Warfighting Development Center; JEB Little Creek-Fort Story; U.S. Fleet Forces Command",
+      "record_type": "organization",
+      "short_description": "Navy command at Little Creek integrating autonomous air, surface and undersea systems through operational testing, doctrine and training; full capability is still developing.",
+      "overview": "Established September 24, 2026 at Joint Expeditionary Base Little Creek-Fort Story under U.S. Fleet Forces Command. RASWDC coordinates operational integration, testing, doctrine and tactical instruction across autonomous air, surface and undersea systems. Its phased implementation is progressing toward full operational capability. The separate DRPM RAS portfolio handles acquisition.",
+      "unmanned_systems_relevance": "A documented Fleet-facing integration and training command for robotic and autonomous systems, rather than a confirmed commercial testing service.",
+      "activity_status": "developing",
+      "current_activity": "The Navy has established RASWDC and is developing its command structure, mission relationships and resources through a phased implementation plan.",
+      "activity_source_url": "https://www.dvidshub.net/news/575564/us-navy-establishes-robotic-and-autonomous-systems-warfighting-development-center",
+      "activity_last_verified_at": "2026-10-13",
+      "partnership_opportunities": "The establishment release directs information and media queries to Fleet Forces. It does not document commercial-testing intake, fees, availability, permissions or test boundaries.",
+      "website_url": "",
+      "contact_text": "U.S. Fleet Forces Command public affairs; media inquiries, not a commercial-testing intake",
+      "contact_url": "https://www.usff.navy.mil/Press-Room/Media-Contact/",
+      "contact_phone": "",
+      "contact_email": "",
+      "address_line": "Joint Expeditionary Base Little Creek-Fort Story (general installation reference)",
+      "city": "Virginia Beach",
+      "state": "VA",
+      "postal_code": "",
+      "latitude": 36.918239,
+      "longitude": -76.156529,
+      "location_precision": "site",
+      "location_role": "headquarters",
+      "location_method": "",
+      "location_notes": "Uses the existing Little Creek installation reference point. The Navy confirms the host base, not a command building, test-bed footprint or operating boundary.",
+      "location_source_url": "https://www.dvidshub.net/news/575564/us-navy-establishes-robotic-and-autonomous-systems-warfighting-development-center",
+      "location_last_verified_at": "2026-10-13",
+      "region": "Hampton Roads",
+      "strategic_categories": ["Federal and defense customer access", "Test and operational environments", "Core unmanned-systems asset"],
+      "platform_domains": ["Unmanned aircraft systems", "Maritime surface systems", "Undersea systems"],
+      "capabilities": ["Systems engineering and integration", "Testing, evaluation, verification, and validation"],
+      "missions": ["Training and experimentation"],
+      "provenance": "curated-public-source",
+      "sources": [
+        {
+          "title": "U.S. Navy establishes RASWDC, September 24, 2026",
+          "url": "https://www.dvidshub.net/news/575564/us-navy-establishes-robotic-and-autonomous-systems-warfighting-development-center"
+        },
+        {
+          "title": "U.S. Fleet Forces Command media contact",
+          "url": "https://www.usff.navy.mil/Press-Room/Media-Contact/"
+        },
+        {
+          "title": "JEB Little Creek-Fort Story installation reference",
+          "url": "https://cnrma.cnic.navy.mil/Installations/JEB-Little-Creek-Fort-Story/Contact-Us/"
+        }
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "Navy Robotic and Autonomous Systems Warfighting Development Center",
+      "type": "located-at",
+      "to": "Joint Expeditionary Base Little Creek-Fort Story"
+    }
+  ]
+}

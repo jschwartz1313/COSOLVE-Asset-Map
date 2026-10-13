@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "virginia_real_assets.json"
 CATALOG_DATE = "2026-08-21"
-BUILD_DATE = "2026-10-09"
+BUILD_DATE = "2026-10-13"
 
 FAA_LAYER = (
     "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
@@ -44,6 +44,7 @@ SEPTEMBER_EXPANSION_PATH = ROOT / "data" / "asset_expansion_2026_09_04.json"
 LATEST_EXPANSION_PATH = ROOT / "data" / "asset_expansion_2026_09_24.json"
 TEST_ENVIRONMENT_EXPANSION_PATH = ROOT / "data" / "asset_expansion_2026_09_29.json"
 MAAP_EXPANSION_PATH = ROOT / "data" / "asset_expansion_2026_10_02.json"
+OCTOBER_COMMAND_EXPANSION_PATH = ROOT / "data" / "asset_expansion_2026_10_13.json"
 LATEST_WEBSITE_CORRECTIONS_PATH = ROOT / "data" / "asset_website_corrections_2026_09_24.json"
 SEPTEMBER_CORRECTIONS_PATH = ROOT / "data" / "asset_corrections_2026_09_04.json"
 INTERVIEW_FOLLOWUP_PATH = ROOT / "data" / "asset_interview_followup_2026_09_06.json"
@@ -11599,6 +11600,7 @@ def main():
         + json.loads(LATEST_EXPANSION_PATH.read_text())["records"]
         + json.loads(TEST_ENVIRONMENT_EXPANSION_PATH.read_text())["records"]
         + json.loads(MAAP_EXPANSION_PATH.read_text())["records"]
+        + json.loads(OCTOBER_COMMAND_EXPANSION_PATH.read_text())["records"]
     )
     records = [finalize_record(apply_location_override(record)) for record in records]
     records = apply_university_campus_locations(records)
@@ -11606,6 +11608,10 @@ def main():
     records = apply_reviewed_corrections(records)
     records.sort(key=lambda item: item["name"].casefold())
     relationships = list(CATALOG_RELATIONSHIPS) + university_relationships()
+    relationships.extend(
+        (item["from"], item["type"], item["to"])
+        for item in json.loads(OCTOBER_COMMAND_EXPANSION_PATH.read_text())["relationships"]
+    )
     relationships.extend(
         ("Virginia Department of Aviation", "supports", record["name"])
         for record in records

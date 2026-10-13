@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-09",
+  "generated_at": "2026-10-13",
   "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, broad-based Virginia degree-granting institutions from the NCES IPEDS 2024 directory while excluding narrowly specialized health and ministry schools without documented unmanned-systems relevance, and a curated set of source-backed ecosystem records. Specific street and site locations are anchored to official public address sources and geocoded against the U.S. Census address ranges or named-site map data; locality points are retained when the public record does not identify the operating department or facility. Every record is also classified as either a core unmanned-systems asset with direct documented activity or a supporting ecosystem asset with a broader enabling role.",
-  "record_count": 542,
+  "record_count": 543,
   "records": [
     {
       "address_line": "29194 Parkway North",
@@ -16123,6 +16123,73 @@
       "website_url": "https://cnrma.cnic.navy.mil/Installations/WPNSTA-Yorktown/Contact-Us/"
     },
     {
+      "activity_last_verified_at": "2026-10-13",
+      "activity_source_url": "https://www.dvidshub.net/news/575564/us-navy-establishes-robotic-and-autonomous-systems-warfighting-development-center",
+      "activity_status": "developing",
+      "address_line": "Joint Expeditionary Base Little Creek-Fort Story (general installation reference)",
+      "capabilities": [
+        "Systems engineering and integration",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Virginia Beach",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "U.S. Fleet Forces Command public affairs; media inquiries, not a commercial-testing intake",
+      "contact_url": "https://www.usff.navy.mil/Press-Room/Media-Contact/",
+      "current_activity": "The Navy has established RASWDC and is developing its command structure, mission relationships and resources through a phased implementation plan.",
+      "identity_guard_terms": [
+        "RASWDC",
+        "Robotic and Autonomous Systems Warfighting Development Center"
+      ],
+      "latitude": 36.918239,
+      "location_last_verified_at": "2026-10-13",
+      "location_method": "",
+      "location_notes": "Uses the existing Little Creek installation reference point. The Navy confirms the host base, not a command building, test-bed footprint or operating boundary.",
+      "location_precision": "site",
+      "location_role": "headquarters",
+      "location_source_url": "https://www.dvidshub.net/news/575564/us-navy-establishes-robotic-and-autonomous-systems-warfighting-development-center",
+      "longitude": -76.156529,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Navy Robotic and Autonomous Systems Warfighting Development Center",
+      "overview": "Established September 24, 2026 at Joint Expeditionary Base Little Creek-Fort Story under U.S. Fleet Forces Command. RASWDC coordinates operational integration, testing, doctrine and tactical instruction across autonomous air, surface and undersea systems. Its phased implementation is progressing toward full operational capability. The separate DRPM RAS portfolio handles acquisition.",
+      "partnership_opportunities": "The establishment release directs information and media queries to Fleet Forces. It does not document commercial-testing intake, fees, availability, permissions or test boundaries.",
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Maritime surface systems",
+        "Undersea systems"
+      ],
+      "postal_code": "",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "search_aliases": "RASWDC; Robotic and Autonomous Systems Warfighting Development Center; JEB Little Creek-Fort Story; U.S. Fleet Forces Command",
+      "short_description": "Navy command at Little Creek integrating autonomous air, surface and undersea systems through operational testing, doctrine and training; full capability is still developing.",
+      "sources": [
+        {
+          "title": "U.S. Navy establishes RASWDC, September 24, 2026",
+          "url": "https://www.dvidshub.net/news/575564/us-navy-establishes-robotic-and-autonomous-systems-warfighting-development-center"
+        },
+        {
+          "title": "U.S. Fleet Forces Command media contact",
+          "url": "https://www.usff.navy.mil/Press-Room/Media-Contact/"
+        },
+        {
+          "title": "JEB Little Creek-Fort Story installation reference",
+          "url": "https://cnrma.cnic.navy.mil/Installations/JEB-Little-Creek-Fort-Story/Contact-Us/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Federal and defense customer access",
+        "Test and operational environments",
+        "Core unmanned-systems asset"
+      ],
+      "unmanned_systems_relevance": "A documented Fleet-facing integration and training command for robotic and autonomous systems, rather than a confirmed commercial testing service.",
+      "website_url": ""
+    },
+    {
       "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.navair.navy.mil/news/Navy-opens-doors-first-small-unmanned-aircraft-systems-training-facility/Tue-08022022-0923",
       "activity_status": "active",
@@ -30927,6 +30994,11 @@
       "from": "Virginia Department of Aviation",
       "to": "Winchester Rgnl",
       "type": "supports"
+    },
+    {
+      "from": "Navy Robotic and Autonomous Systems Warfighting Development Center",
+      "to": "Joint Expeditionary Base Little Creek-Fort Story",
+      "type": "located-at"
     }
   ]
 }

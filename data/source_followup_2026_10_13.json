@@ -1,0 +1,73 @@
+{
+  "scope": "Current hosted public URL routes needing corroboration; do not infer closure",
+  "findings": [
+    {
+      "url": "https://blueridgedefense.com/",
+      "classification": "http_not_found",
+      "http_status": 404,
+      "checked_at": "2026-10-13T14:20:14.557661+00:00",
+      "references": [
+        {
+          "asset": "Blue Ridge Defense Works",
+          "field": "website_url"
+        },
+        {
+          "asset": "Blue Ridge Defense Works",
+          "field": "contact_url"
+        },
+        {
+          "asset": "Blue Ridge Defense Works",
+          "field": "sources",
+          "title": "Blue Ridge Defense Works"
+        },
+        {
+          "asset": "Blue Ridge Defense Works",
+          "field": "website_url"
+        },
+        {
+          "asset": "Blue Ridge Defense Works",
+          "field": "contact_url"
+        },
+        {
+          "asset": "Blue Ridge Defense Works",
+          "field": "sources",
+          "title": "Blue Ridge Defense Works"
+        }
+      ]
+    },
+    {
+      "url": "https://www.louisacounty.gov/m/newsflash?cat=22%2C1",
+      "classification": "http_not_found",
+      "http_status": 404,
+      "checked_at": "2026-10-13T14:21:08.580403+00:00",
+      "references": [
+        {
+          "asset": "Orange County Sheriff's Office Drone Team",
+          "field": "contact_url"
+        },
+        {
+          "asset": "Orange County Sheriff's Office Drone Team",
+          "field": "contact_url"
+        }
+      ]
+    },
+    {
+      "url": "https://www.saic.com/products",
+      "classification": "http_not_found",
+      "http_status": 404,
+      "checked_at": "2026-10-13T14:21:17.584284+00:00",
+      "references": [
+        {
+          "asset": "SAIC Counter-UAS Integration",
+          "field": "sources",
+          "title": "SAIC published counter-drone product portfolio"
+        },
+        {
+          "asset": "SAIC Counter-UAS Integration",
+          "field": "sources",
+          "title": "SAIC published counter-drone product portfolio"
+        }
+      ]
+    }
+  ]
+}

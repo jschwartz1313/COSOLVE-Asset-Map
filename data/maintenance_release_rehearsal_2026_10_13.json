@@ -1,0 +1,57 @@
+{
+  "scope": "Isolated SQLite release copy after replaying Friday baseline; not Render PostgreSQL",
+  "preservation": {
+    "assets": {
+      "before": 555,
+      "after": 556,
+      "existing_changed_count": 0,
+      "added_count": 1
+    },
+    "sources": {
+      "before": 1865,
+      "after": 1868,
+      "existing_changed_count": 1848,
+      "added_count": 3,
+      "all_existing_protected_fields_preserved": true
+    },
+    "relationships": {
+      "before": 207,
+      "after": 208,
+      "existing_changed_count": 0,
+      "added_count": 1
+    },
+    "users": {
+      "before": 1,
+      "after": 1,
+      "existing_changed_count": 0,
+      "added_count": 0
+    },
+    "local_public_count": 543,
+    "candidate_status": "source-backed"
+  },
+  "final_backend_tests": 338,
+  "frontend_tests": 30,
+  "new_regression_cases": 5,
+  "lint_passed": true,
+  "system_checks_passed": true,
+  "migration_check_passed": true,
+  "same_version_repeat_skipped": true,
+  "final_guarded_release_completed": true,
+  "local_candidate_public_status_counts": {
+    "published": 499,
+    "source-backed": 44
+  },
+  "expected_hosted_counts_if_addition_allowed": {
+    "stored": 556,
+    "public": 543,
+    "published": 501,
+    "source-backed": 42
+  },
+  "production_applied": false,
+  "runtime_guards": [
+    "Explicit Navy identity terms in staff names/display names/aliases hold addition and relation",
+    "Existing hidden relationships preserved",
+    "Missing relationships with retained history not recreated",
+    "Newer source availability only; no editorial or manual-link decisions changed"
+  ]
+}

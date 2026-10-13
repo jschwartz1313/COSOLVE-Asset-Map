@@ -1,0 +1,31 @@
+{
+  "checked_at_utc": "2026-10-13T14:20:00.492138+00:00",
+  "hosted_csv": "/Users/jakeschwartz/Downloads/cosolve-assets (16).csv",
+  "hosted_csv_sha256": "3db1ec88cb3178eafe4efc4a5d0fb972cdfb6a0f6806d131552a208cf80888a4",
+  "hosted_public_count": 542,
+  "hosted_status_counts": {
+    "published": 501,
+    "source-backed": 41
+  },
+  "local_stored_count": 555,
+  "local_public_count": 542,
+  "local_status_counts": {
+    "published": 503,
+    "source-backed": 39
+  },
+  "friday_public_rows_unchanged": 542,
+  "friday_post_csv_sha256": "3db1ec88cb3178eafe4efc4a5d0fb972cdfb6a0f6806d131552a208cf80888a4",
+  "current_hosted_matches_friday_byte_for_byte": true,
+  "current_working_csv": "/Users/jakeschwartz/Downloads/cosolve-assets (17).csv",
+  "current_working_count": 555,
+  "working_status_counts": {
+    "published": 501,
+    "source-backed": 54
+  },
+  "hosted_staff_access": "jschwartz authenticated; bounded recent audit newest events Oct 9 FAA corrections, System attributed",
+  "render_access": "Session expired; sign-in required. No fresh deployment or PostgreSQL resource metadata inspection.",
+  "standalone_api": "Chrome net::ERR_BLOCKED_BY_CLIENT; not bypassed",
+  "browser_transport": "Closed later during live QA; one read-only recovery check also failed.",
+  "direct_production_sql": false,
+  "scope_warning": "Local SQLite differs from hosted PostgreSQL. Public CSV and bounded staff audit do not prove all private history is unchanged."
+}

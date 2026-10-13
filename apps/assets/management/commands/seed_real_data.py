@@ -112,6 +112,7 @@ class Command(BaseCommand):
         created = 0
         updated = 0
         skipped = 0
+        held_identities = set()
         catalog_names = {record["name"] for record in records}
         for record in records:
             asset = Asset.objects.filter(name=record["name"]).first()
@@ -127,6 +128,18 @@ class Command(BaseCommand):
             if options["add_missing"] and asset is not None:
                 skipped += 1
                 continue
+            if options["add_missing"] and asset is None and record.get("identity_guard_terms"):
+                matches = Q()
+                for term in record["identity_guard_terms"]:
+                    matches |= (
+                        Q(name__icontains=term) | Q(display_name__icontains=term)
+                        | Q(search_aliases__icontains=term)
+                    )
+                if Asset.objects.filter(matches).exists():
+                    held_identities.add(record["name"])
+                    skipped += 1
+                    self.stdout.write(f"Preserved possible existing identity for {record['name']}.")
+                    continue
 
             region, _ = Region.objects.get_or_create(
                 name=record["region"], defaults={"region_type": "Virginia ecosystem region"}
@@ -240,9 +253,30 @@ class Command(BaseCommand):
 
         relationships_created = 0
         for relationship_data in catalog.get("relationships", []):
+            if {relationship_data["from"], relationship_data["to"]} & held_identities:
+                continue
             from_asset = Asset.objects.get(name=relationship_data["from"])
             to_asset = Asset.objects.get(name=relationship_data["to"])
-            _relationship, was_created = Relationship.objects.update_or_create(
+            if options["add_missing"]:
+                identity = {
+                    "from_asset_id": from_asset.pk,
+                    "to_asset_id": to_asset.pk,
+                    "relationship_type": relationship_data["type"],
+                }
+                if (
+                    not Relationship.objects.filter(**identity).exists()
+                    and Relationship.history.filter(**identity).exists()
+                ):
+                    self.stdout.write(
+                        f"Preserved retired relationship: {from_asset.name} "
+                        f"{relationship_data['type']} {to_asset.name}."
+                    )
+                    continue
+            relationship_writer = (
+                Relationship.objects.get_or_create if options["add_missing"]
+                else Relationship.objects.update_or_create
+            )
+            _relationship, was_created = relationship_writer(
                 from_asset=from_asset,
                 to_asset=to_asset,
                 relationship_type=relationship_data["type"],
