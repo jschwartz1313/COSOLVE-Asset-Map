@@ -5,6 +5,23 @@ async function enterMap(page) {
   if (await cover.isVisible()) await page.locator("[data-showcase-enter]").first().click();
 }
 
+test("misspelled names find the same asset in map and directory", async ({ page }, testInfo) => {
+  await page.goto("/map/");
+  await enterMap(page);
+  const filtersButton = page.getByRole("button", { name: "Open filters" });
+  if (await filtersButton.isVisible()) await filtersButton.click();
+  await page.locator('input[name="q"]').fill("reactor");
+  await page.locator('#asset-filters button[type="submit"]').click();
+  await expect(page.locator(".result-row h3"))
+    .toContainText(["REaKTOR Technology Innovation Center"]);
+  await page.screenshot({ path: testInfo.outputPath("reactor-map.png"), animations: "disabled" });
+  await page.locator("#directory-link").click();
+  await expect(page.locator('input[name="q"]')).toHaveValue("reactor");
+  await expect(page.locator(".directory-row").first())
+    .toContainText("REaKTOR Technology Innovation Center");
+  await page.screenshot({ path: testInfo.outputPath("reactor-directory.png"), animations: "disabled" });
+});
+
 test("airport codes rank the named airport first and preserve its existing URL", async ({ page }) => {
   await page.goto("/map/?q=ORF");
   await expect(page.locator(".result-row h3").first()).toHaveText("Norfolk International Airport");

@@ -1,4 +1,8 @@
-"""Bounded word/phrase search over public asset information."""
+"""Bounded word/phrase search with conservative public-name typo matching."""
+
+import re
+from collections import defaultdict
+from difflib import get_close_matches
 
 from django.db.models import Case, Exists, IntegerField, OuterRef, Q, Value, When
 from django.db.models.functions import Coalesce, Lower, NullIf
@@ -35,6 +39,7 @@ SYNONYM_GROUPS = (
     ("drone", "drones", "uas", "uav", "unmanned", "uncrewed"),
     ("test", "testing"),
 )
+NAME_WORDS = re.compile(r"[^\W\d_]+")
 
 
 def search_terms(query):
@@ -82,15 +87,52 @@ def public_term_query(alternatives):
     return condition
 
 
+def fuzzy_name_matches(queryset, terms):
+    eligible = [
+        term for term, quoted in terms
+        if not quoted and 5 <= len(term) <= 48 and term.isalpha()
+    ]
+    if not eligible:
+        return {}
+    # Read only names/approved aliases within the active publication and filter scope.
+    vocabulary = defaultdict(set)
+    rows = queryset.order_by().values_list(
+        "pk", "name", "display_name", "search_aliases",
+    ).distinct()
+    for pk, *names in rows:
+        for name in names:
+            for word in NAME_WORDS.findall(name.casefold()):
+                if 5 <= len(word) <= 50:
+                    vocabulary[word].add(pk)
+    matches = {}
+    for term in eligible:
+        candidates = (
+            word for word in vocabulary
+            if abs(len(word) - len(term)) <= 2 and term not in word
+        )
+        close_words = get_close_matches(
+            term, candidates, n=3, cutoff=0.8 if len(term) == 5 else 0.84,
+        )
+        if close_words:
+            matches[term] = sorted({pk for word in close_words for pk in vocabulary[word]})
+    return matches
+
+
 def apply_search(queryset, query):
     terms = search_terms(query)
     if terms is None:
         return queryset.none()
+    name_matches = fuzzy_name_matches(queryset, terms)
+    ordinary_matches = Q()
     for term, quoted in terms:
         alternatives = (term,)
         if not quoted:
             alternatives = next((group for group in SYNONYM_GROUPS if term in group), alternatives)
-        queryset = queryset.filter(public_term_query(alternatives))
+        condition = public_term_query(alternatives)
+        ordinary_matches &= condition
+        if term in name_matches:
+            condition |= Q(pk__in=name_matches[term])
+        queryset = queryset.filter(condition)
     return queryset.annotate(
         _search_rank=Case(
             When(Q(display_name__iexact=query) | Q(name__iexact=query), then=Value(0)),
@@ -102,7 +144,8 @@ def apply_search(queryset, query):
                 then=Value(1),
             ),
             When(Q(display_name__istartswith=query) | Q(name__istartswith=query), then=Value(2)),
-            default=Value(3),
+            *([When(ordinary_matches, then=Value(3))] if name_matches else []),
+            default=Value(4 if name_matches else 3),
             output_field=IntegerField(),
         )
     ).order_by("_search_rank", PUBLIC_NAME_ORDER, "pk")
