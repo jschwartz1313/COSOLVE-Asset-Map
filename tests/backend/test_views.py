@@ -3,6 +3,7 @@ from datetime import date
 from django.contrib.auth import get_user_model
 from django.test import TestCase, override_settings
 from django.urls import reverse
+from django.utils import timezone
 
 from apps.assets.models import Asset, SavedView, UpdateSubmission
 from apps.catalog.models import Region
@@ -146,6 +147,38 @@ class CoreViewTests(TestCase):
         self.assertContains(response, "Editorial review")
         self.assertContains(response, "Suggest an update")
         self.assertNotContains(response, "Verification range")
+
+    @override_settings(PUBLIC_REGION_SLUG="", REQUIRE_SITE_LOGIN=False)
+    def test_about_data_counts_public_listings_and_preserves_pending_distinction(self):
+        for name, status, visibility, reviewed in (
+            ("Reviewed public asset", Asset.Status.PUBLISHED, Asset.Visibility.PUBLIC, True),
+            ("Pending public asset", Asset.Status.SOURCE_BACKED, Asset.Visibility.PUBLIC, False),
+            ("Internal reviewed asset", Asset.Status.VERIFIED, Asset.Visibility.INTERNAL, True),
+            ("Partner pending asset", Asset.Status.SOURCE_BACKED, Asset.Visibility.PARTNER, False),
+        ):
+            Asset.objects.create(
+                name=name,
+                record_type=Asset.RecordType.ORGANIZATION,
+                short_description="An asset used to check the public listing summary.",
+                unmanned_systems_relevance="Supports autonomous systems.",
+                status=status,
+                visibility=visibility,
+                reviewed_at=timezone.now() if reviewed else None,
+                last_verified_at=date(2026, 10, 13) if reviewed else None,
+            )
+
+        response = self.client.get(reverse("core:about-data"))
+
+        self.assertEqual(response.context["asset_count"], 2)
+        self.assertEqual(response.context["reviewed_count"], 1)
+        self.assertEqual(response.context["pending_review_count"], 1)
+        self.assertContains(
+            response,
+            "<div><strong>2</strong><span>listed assets</span></div>",
+            html=True,
+        )
+        self.assertContains(response, "<dd>1 records pending</dd>", html=True)
+        self.assertNotContains(response, "<span>published assets</span>", html=True)
 
     def test_asset_detail_preserves_profile_without_public_record_history(self):
         asset = Asset.objects.create(

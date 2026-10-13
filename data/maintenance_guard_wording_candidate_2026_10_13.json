@@ -1,0 +1,140 @@
+{
+  "recorded_at_utc": "2026-10-13T16:34:07Z",
+  "base_commit": "41e0690eac4a5722eb9481f3335d1ef5c085ce77",
+  "existing_live_commit": "41e0690eac4a5722eb9481f3335d1ef5c085ce77",
+  "existing_live_deployment": "dep-db74lf4s728c73de48l0",
+  "candidate_commit": null,
+  "state": {
+    "prepared": true,
+    "locally_tested": true,
+    "committed": false,
+    "pushed": false,
+    "deployment_requested": false,
+    "deployed": false,
+    "live_verified": false
+  },
+  "scope": "Narrow local follow-up to the already deployed Tuesday candidate; no new data manifest or delivery attempt.",
+  "application_files": [
+    "apps/assets/management/commands/seed_real_data.py",
+    "templates/core/about_data.html"
+  ],
+  "regression_files": [
+    "tests/backend/test_raswdc_2026_10_13.py",
+    "tests/backend/test_views.py"
+  ],
+  "confirmed_relationship_bug": {
+    "evidence": "Before-fix regression ran in an isolated Django in-memory SQLite test database and failed because a new relationship existed for an existing exact-name internal staff command.",
+    "reproduction_test": "tests.backend.test_raswdc_2026_10_13.RaswdcReleaseTests.test_existing_staff_command_and_sources_are_preserved",
+    "before_exit_code": 1,
+    "before_failure": "AssertionError: True is not false at the assertion that no relationship from the existing staff command exists",
+    "asset_source_fields_and_histories_preserved_before_fix": true,
+    "correction": "Existing exact-name records with identity_guard_terms now enter held_identities before the add-missing asset skip.",
+    "intended_semantics": [
+      "Hold new incoming and outgoing relationships for any existing guarded identity, regardless of status, visibility or retained catalog provenance.",
+      "Preserve existing public and hidden relationship values and histories.",
+      "Keep deleted relationships absent; retain the generic history guard for unguarded records.",
+      "Allow a genuinely new pending command to link to the existing unguarded Little Creek base.",
+      "Preserve ordinary unguarded catalog gap behavior."
+    ],
+    "production_conflict_observed": false,
+    "production_basis": "Previous pre-release hosted searches and complete working-export identity fields contained no RASWDC command match; no new hosted database access in this follow-up."
+  },
+  "about_data": {
+    "semantics": "The aggregate is Asset.public, including Published and Source-backed public listings.",
+    "correction": "The summary label changes from published assets to listed assets; count and publication rules are unchanged.",
+    "regression": "Mixed fixture verifies 2 public listings, 1 reviewed and 1 pending, excluding Internal and Partner-only records.",
+    "preexisting_live_wording_issue": true
+  },
+  "validation": {
+    "database": "Explicit DATABASE_URL=sqlite:///:memory:, config.settings.local; Django test database isolated from main SQLite and hosted PostgreSQL.",
+    "affected_backend": {
+      "passed": 38,
+      "duration_seconds": 2.294
+    },
+    "full_backend": {
+      "passed": 343,
+      "duration_seconds": 145.593
+    },
+    "frontend": {
+      "passed": 30,
+      "failed": 0
+    },
+    "ruff": true,
+    "django_system_check": true,
+    "migration_drift_check": true,
+    "git_diff_check": true,
+    "historical_runs_preserved": "The expected before-fix failure and first 89-test combined run with two invalid new fixtures are retained. Review-date/publication fixtures were corrected before the final 38- and 343-test passing runs.",
+    "source_review": "Independent read-only guard/relationship review found no actionable concerns."
+  },
+  "isolated_catalog_replay": {
+    "passed": true,
+    "scope": "One-record catalog import and repeat on a private read-only backup of local SQLite; no full release, migrations, audit or hosted PostgreSQL verification.",
+    "original_preserved": {
+      "assets": 555,
+      "sources": 1861,
+      "relationships": 207,
+      "relationship_history_rows": 4550,
+      "taxonomy_assignments": 4066
+    },
+    "original_asset_and_source_histories_preserved": true,
+    "original_taxonomy_vocabulary_preserved": true,
+    "added": {
+      "assets": 1,
+      "public_unreviewed_sources": 3,
+      "public_located_at_relationships": 1
+    },
+    "only_new_asset": "Navy Robotic and Autonomous Systems Warfighting Development Center",
+    "original_changed": 0,
+    "original_removed": 0,
+    "repeat_no_model_changes": true,
+    "repeat_clone_byte_identical": true,
+    "local_only_counts": {
+      "stored": 556,
+      "listed": 543,
+      "published": 503,
+      "source_backed": 40
+    },
+    "counts_are_hosted_postgresql": false,
+    "receipt": "tmp/maintenance-2026-10-13/identity-guard-fix/isolated-catalog-replay.json",
+    "receipt_sha256": "765e5154200efc211f4dc5fcebefa5ff0a50ca7020be334fa3e44eed121d7a19"
+  },
+  "preservation": {
+    "local_sqlite_sha256_before": "1560f31bc94c6ed377d09a662beef73151ebf889a8ea5c9cb20f28be15712d4d",
+    "local_sqlite_sha256_after": "1560f31bc94c6ed377d09a662beef73151ebf889a8ea5c9cb20f28be15712d4d",
+    "existing_immutable_evidence_files_checked": 54,
+    "existing_immutable_evidence_unchanged": true,
+    "maintenance_and_smoke_logs_append_only": true,
+    "earlier_delivery_and_live_qa_receipts_unchanged": true,
+    "friday_uncommitted_evidence_preserved": true
+  },
+  "evidence": {
+    "directory": "tmp/maintenance-2026-10-13/identity-guard-fix",
+    "owner_only": true,
+    "patch": "tmp/maintenance-2026-10-13/identity-guard-fix/guard-wording.patch",
+    "patch_sha256": "5b119ab162689dcdcfda3b79eb34731c1d20ec8913751a9814e636c651b488b3",
+    "logs": [
+      "reproduction-before.log",
+      "relevant-backend.log",
+      "affected-backend-final.log",
+      "full-backend-final.log",
+      "frontend.log",
+      "lint-final.log",
+      "system-check.log",
+      "migration-check.log",
+      "isolated-catalog-replay.log"
+    ],
+    "preservation_baseline": "tmp/maintenance-2026-10-13/identity-guard-fix/preservation-before.json"
+  },
+  "remaining_live_qa_limits": [
+    "No saved complete post-release public or scope=all CSV despite prior HTTP 200 server responses; full 55-field and unmapped/private-history preservation remains uncertified on hosted PostgreSQL.",
+    "COSOLVE print/PDF inspection and Jake's print-preview cancellation handoff remain pending; no new print or native-window action.",
+    "Standalone API/direct browser health and an explicit JavaScript-disabled directory session remain uncertified; previous Render health logs are positive.",
+    "The local guard and wording correction is not yet delivered or live-verified."
+  ],
+  "browser_or_permission_changes": false,
+  "denied_unrelated_native_window_inspected": false,
+  "private_tracker_edited": false,
+  "external_messages_sent": false,
+  "production_database_writes": false,
+  "maintenance_log": "docs/maintenance_2026_10_13.md"
+}

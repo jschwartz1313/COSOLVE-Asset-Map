@@ -126,6 +126,8 @@ class Command(BaseCommand):
                     asset.name = record["name"]
                     asset.save(update_fields=["name", "slug", "updated_at"])
             if options["add_missing"] and asset is not None:
+                if record.get("identity_guard_terms"):
+                    held_identities.add(record["name"])
                 skipped += 1
                 continue
             if options["add_missing"] and asset is None and record.get("identity_guard_terms"):
