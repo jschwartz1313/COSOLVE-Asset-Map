@@ -9,10 +9,11 @@
   <title>{% block title %}COSOLVE Asset Map{% endblock %}</title>
   <script>
     (() => {
-      const allowedThemes = ["classic", "dark", "showcase", "showcase-light"];
+      const allowedThemes = ["classic", "dark"];
       try {
         const savedTheme = localStorage.getItem("cosolve-display-mode");
-        if (allowedThemes.includes(savedTheme)) document.documentElement.dataset.theme = savedTheme;
+        const theme = allowedThemes.includes(savedTheme) ? savedTheme : "classic";
+        document.documentElement.dataset.theme = theme;
       } catch (error) {
         document.documentElement.dataset.theme = "classic";
       }
@@ -24,7 +25,7 @@
   <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20261002-1">
   {% block extra_css %}{% endblock %}
   <link rel="stylesheet" href="{% static 'css/themes.css' %}?v=20260917-1">
-  <script type="module" src="{% static 'js/theme-switcher.js' %}?v=20260928-1"></script>
+  <script type="module" src="{% static 'js/theme-switcher.js' %}?v=20261015-1"></script>
 </head>
 <body class="{% block body_class %}{% endblock %}">
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -44,12 +45,14 @@
       <button type="button" data-theme-choice="dark" data-mobile-label="Dark" aria-pressed="false" title="Dark view">
         <span class="theme-swatch swatch-dark" aria-hidden="true"></span><span>Dark</span>
       </button>
+      {% comment "Showcase appearances are paused; retain their controls for restoration." %}
       <button type="button" data-theme-choice="showcase" data-mobile-label="Show" aria-pressed="false" title="Showcase view">
         <span class="theme-swatch swatch-showcase" aria-hidden="true"></span><span>Showcase</span>
       </button>
       <button type="button" data-theme-choice="showcase-light" data-mobile-label="Light" aria-pressed="false" title="Showcase Light view">
         <span class="theme-swatch swatch-showcase-light" aria-hidden="true"></span><span>Showcase Light</span>
       </button>
+      {% endcomment %}
       <span class="visually-hidden" data-theme-status role="status" aria-live="polite"></span>
       </div>
     </details>
@@ -74,6 +77,7 @@
     </nav>
   </header>
   <div class="theme-page-visual" aria-hidden="true"></div>
+  {% comment "Showcase introductions are paused with their appearances, avoiding unused image loads." %}
   <section class="showcase-cover" data-showcase-cover role="dialog" aria-modal="true" aria-labelledby="showcase-cover-title" hidden>
     <div class="showcase-progress" aria-hidden="true"><span></span></div>
     <div class="showcase-topbar">
@@ -156,6 +160,7 @@
       </details>
     </div>
   </section>
+  {% endcomment %}
   {% if messages %}
     <div class="messages" aria-live="polite">
       {% for message in messages %}<div class="message {{ message.tags }}">{{ message }}</div>{% endfor %}

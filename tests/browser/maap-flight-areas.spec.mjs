@@ -1,3 +1,4 @@
+import { THEMES } from "../../static/js/theme-switcher.js";
 import { expect, test } from "@playwright/test";
 
 test("MAAP outlines toggle, restore, explain draft status and fit their popup", async ({ page }, testInfo) => {
@@ -67,7 +68,7 @@ test("MAAP outlines toggle, restore, explain draft status and fit their popup", 
 });
 
 test("MAAP source notes and site profiles remain usable across designs", async ({ page }, testInfo) => {
-  for (const theme of ["classic", "dark", "showcase", "showcase-light"]) {
+  for (const theme of THEMES) {
     await page.addInitScript((mode) => {
       localStorage.setItem("cosolve-display-mode", mode);
     }, theme);

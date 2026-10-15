@@ -1,3 +1,4 @@
+import { THEMES } from "../../static/js/theme-switcher.js";
 import { expect, test } from "@playwright/test";
 
 async function enterSite(page) {
@@ -28,7 +29,7 @@ test("historical corridor evidence and a published business contact remain disti
   await expect(page.locator(".detail-sidebar")).toContainText("901-336-6551");
 });
 
-test("new testing profiles fit desktop and mobile in all four designs", async ({ page }, testInfo) => {
+test("new testing profiles fit desktop and mobile in both active designs", async ({ page }, testInfo) => {
   test.setTimeout(120_000);
   const profiles = [
     ["nasa-langley-landing-and-impact-research-facility", "crash-test"],
@@ -37,7 +38,7 @@ test("new testing profiles fit desktop and mobile in all four designs", async ({
     ["xelevate-luray-mountain-range", "mountainous terrain"],
     ["nasa-wallops-uas-test-and-integration-facility", "bench checkout"],
   ];
-  for (const theme of ["classic", "dark", "showcase", "showcase-light"]) {
+  for (const theme of THEMES) {
     await page.goto(`/assets/${profiles[0][0]}/`);
     await enterSite(page);
     await page.locator(".appearance-menu > summary").click();

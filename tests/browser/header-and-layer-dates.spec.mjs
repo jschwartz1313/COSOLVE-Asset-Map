@@ -28,7 +28,8 @@ test("header menus are compact, keyboard accessible, and preserve navigation", a
   await appearance.locator("summary").focus();
   await page.keyboard.press("Enter");
   await expect(appearance).toHaveAttribute("open", "");
-  await expect(appearance.getByRole("button", { name: "Showcase Light", exact: true })).toBeVisible();
+  await expect(appearance.getByRole("button", { name: "Dark", exact: true })).toBeVisible();
+  await expect(appearance.getByRole("button")).toHaveCount(2);
   await page.keyboard.press("Escape");
   await expect(appearance).not.toHaveAttribute("open", "");
   await expect(appearance.locator("summary")).toBeFocused();

@@ -1,6 +1,7 @@
+import { THEMES } from "../../static/js/theme-switcher.js";
 import { expect, test } from "@playwright/test";
 
-for (const theme of ["classic", "dark", "showcase", "showcase-light"]) {
+for (const theme of THEMES) {
   test(`directory titles have room at tablet widths in ${theme}`, async ({ page }) => {
     await page.addInitScript((selectedTheme) => {
       localStorage.setItem("cosolve-display-mode", selectedTheme);
@@ -54,44 +55,21 @@ for (const theme of ["classic", "dark", "showcase", "showcase-light"]) {
 }
 
 for (const theme of ["showcase", "showcase-light"]) {
-  test(`the ${theme} introduction contains keyboard focus and restores the map`, async ({ page }) => {
+  test(`a saved ${theme} appearance returns to Current without an introduction`, async ({ page }) => {
     await page.addInitScript((selectedTheme) => {
       localStorage.setItem("cosolve-display-mode", selectedTheme);
     }, theme);
     await page.goto("/map/");
-    const cover = page.locator("[data-showcase-cover]");
-    const enter = cover.locator("[data-showcase-enter]").first();
-    const credits = cover.locator(".showcase-credits > summary");
-    await expect(cover).toBeVisible();
-    await expect(enter).toBeFocused();
-    await expect(page.locator(".site-header")).toHaveJSProperty("inert", true);
-    await expect(page.locator("#main-content")).toHaveJSProperty("inert", true);
-
-    await page.keyboard.press("Shift+Tab");
-    await expect(credits).toBeFocused();
-    await page.keyboard.press("Tab");
-    await expect(enter).toBeFocused();
-
-    await credits.focus();
-    await page.keyboard.press("Space");
-    const lastCredit = cover.locator(".showcase-credits a").last();
-    await expect(lastCredit).toBeVisible();
-    await lastCredit.focus();
-    await page.keyboard.press("Tab");
-    await expect(enter).toBeFocused();
-
-    await page.keyboard.press("Escape");
-    await expect(cover).toBeHidden();
-    await expect(page.locator(".appearance-menu > summary")).toBeFocused();
+    await expect(page.locator("html")).toHaveAttribute("data-theme", "classic");
+    await expect(page.locator(".result-row").first()).toBeVisible();
+    await expect(page.locator("[data-showcase-cover]")).toHaveCount(0);
     await expect(page.locator(".site-header")).toHaveJSProperty("inert", false);
     await expect(page.locator("#main-content")).toHaveJSProperty("inert", false);
 
-    await page.locator(".appearance-menu > summary").click();
-    await page.locator(`[data-theme-choice="${theme}"]`).click();
-    await expect(enter).toBeFocused();
-    await enter.click();
-    await expect(cover).toBeHidden();
-    await expect(page.locator("#main-content")).toBeFocused();
-    await expect(page.locator(".site-header")).toHaveJSProperty("inert", false);
+    await expect.poll(() => page.evaluate(() =>
+      localStorage.getItem("cosolve-display-mode"),
+    )).toBe("classic");
+    await page.reload();
+    await expect(page.locator("html")).toHaveAttribute("data-theme", "classic");
   });
 }

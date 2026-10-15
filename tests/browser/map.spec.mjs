@@ -1,3 +1,4 @@
+import { THEMES } from "../../static/js/theme-switcher.js";
 import { expect, test } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import { publicAssetCount } from "./helpers.mjs";
@@ -184,7 +185,7 @@ test("visible map labels fit inside their controls across themes and widths", as
     { width: 900, height: 768 },
     { width: 390, height: 844 },
   ];
-  const themes = ["classic", "dark", "showcase", "showcase-light"];
+  const themes = THEMES;
 
   for (const size of sizes) {
     await page.setViewportSize(size);

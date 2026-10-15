@@ -1,3 +1,4 @@
+import { THEMES } from "../../static/js/theme-switcher.js";
 import { expect, test } from "@playwright/test";
 
 test("resource filters persist between map and directory and clear completely", async ({ page }) => {
@@ -28,9 +29,9 @@ test("project status and published specifications are visible", async ({ page })
   await expect(page.locator(".test-specifications a")).toHaveAttribute("href", /ictas\.vt\.edu/);
 });
 
-test("new resource controls and connection routes fit all four designs", async ({ page }, testInfo) => {
+test("new resource controls and connection routes fit both active designs", async ({ page }, testInfo) => {
   test.setTimeout(90_000);
-  for (const theme of ["classic", "dark", "showcase", "showcase-light"]) {
+  for (const theme of THEMES) {
     await page.goto("/map/?test_specs=1");
     const cover = page.locator("[data-showcase-cover]");
     if (await cover.isVisible()) await page.locator("[data-showcase-enter]").first().click();

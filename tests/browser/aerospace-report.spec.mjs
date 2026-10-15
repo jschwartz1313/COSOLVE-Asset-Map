@@ -1,3 +1,4 @@
+import { THEMES } from "../../static/js/theme-switcher.js";
 import { expect, test } from "@playwright/test";
 
 test("propulsion profile is searchable and fits all designs", async ({ page }, testInfo) => {
@@ -6,7 +7,7 @@ test("propulsion profile is searchable and fits all designs", async ({ page }, t
   await expect(page.locator(".directory-row"))
     .toContainText(["L3Harris Orange County Propulsion Manufacturing Site"]);
   const slug = "/assets/l3harris-orange-county-propulsion-manufacturing-site/";
-  for (const theme of ["classic", "dark", "showcase", "showcase-light"]) {
+  for (const theme of THEMES) {
     await page.goto(slug);
     if (await page.locator("[data-showcase-cover]").isVisible()) {
       await page.keyboard.press("Escape");

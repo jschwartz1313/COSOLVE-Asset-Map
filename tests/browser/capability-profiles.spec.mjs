@@ -1,3 +1,4 @@
+import { THEMES } from "../../static/js/theme-switcher.js";
 import { expect, test } from "@playwright/test";
 
 async function enterSite(page) {
@@ -18,7 +19,7 @@ test("capability searches find the concrete services in updated profiles", async
 
 test("new testing and collaboration information fits all designs", async ({ page }, testInfo) => {
   test.setTimeout(120_000);
-  for (const theme of ["classic", "dark", "showcase", "showcase-light"]) {
+  for (const theme of THEMES) {
     await page.goto("/assets/mid-atlantic-aviation-partnership/");
     await enterSite(page);
     await page.locator(".appearance-menu > summary").click();

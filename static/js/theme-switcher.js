@@ -1,4 +1,5 @@
-export const THEMES = ["classic", "dark", "showcase", "showcase-light"];
+// Showcase styles, artwork and introduction code are retained while those modes are paused.
+export const THEMES = ["classic", "dark"];
 
 export const THEME_LABELS = {
   classic: "Current",

@@ -7,179 +7,98 @@ async function selectTheme(page, theme) {
 }
 
 async function expectContiguousMapPanels(page) {
-  if ((await page.viewportSize()).width <= 650) {
+  if (page.viewportSize().width <= 650) {
     await expect(page.locator('[data-panel-resizer="left"]')).toBeHidden();
     await expect(page.locator('[data-panel-resizer="right"]')).toBeHidden();
     return;
   }
-
-  const layout = await page.locator(".map-workspace").evaluate((workspace) => {
-    const filter = workspace.querySelector(".filters-panel").getBoundingClientRect();
-    const leftResizer = workspace.querySelector('[data-panel-resizer="left"]').getBoundingClientRect();
-    const map = workspace.querySelector(".map-stage").getBoundingClientRect();
-    const rightResizer = workspace.querySelector('[data-panel-resizer="right"]').getBoundingClientRect();
-    const results = workspace.querySelector(".results-panel").getBoundingClientRect();
-    return {
-      filterRight: filter.right,
-      leftResizerLeft: leftResizer.left,
-      leftResizerRight: leftResizer.right,
-      mapLeft: map.left,
-      mapRight: map.right,
-      rightResizerLeft: rightResizer.left,
-      rightResizerRight: rightResizer.right,
-      resultsLeft: results.left,
-    };
+  const bounds = await page.locator(".map-workspace").evaluate((workspace) => {
+    const selectors = [".filters-panel", '[data-panel-resizer="left"]', ".map-stage",
+      '[data-panel-resizer="right"]', ".results-panel"];
+    return selectors.map((selector) => {
+      const { left, right } = workspace.querySelector(selector).getBoundingClientRect();
+      return { left, right };
+    });
   });
-
-  expect(layout.leftResizerLeft).toBeCloseTo(layout.filterRight, 0);
-  expect(layout.mapLeft).toBeCloseTo(layout.leftResizerRight, 0);
-  expect(layout.rightResizerLeft).toBeCloseTo(layout.mapRight, 0);
-  expect(layout.resultsLeft).toBeCloseTo(layout.rightResizerRight, 0);
+  for (let index = 1; index < bounds.length; index += 1) {
+    expect(bounds[index].left).toBeCloseTo(bounds[index - 1].right, 0);
+  }
 }
 
-async function expectUniformResultEdges(page) {
-  // The server-rendered count is available before the asynchronous result rows.
-  await expect.poll(() =>
-    page.locator(".result-row").evaluateAll((rows) =>
-      [...new Set(rows.slice(0, 6).map((row) => getComputedStyle(row).borderLeftWidth))],
-    ),
-  ).toEqual(["0px"]);
-}
-
-test("four presentation modes preserve the same map data and controls", async ({ page }) => {
+test("Current and Dark preserve map data, layout and saved appearance", async ({ page }, testInfo) => {
   const total = await publicAssetCount(page);
+  const showcaseRequests = [];
+  page.on("request", (request) => {
+    if (request.url().includes("/img/themes/")) showcaseRequests.push(request.url());
+  });
   await page.goto("/map/");
-  await expect(page.locator("#result-count")).toHaveText(String(total));
-  await expectContiguousMapPanels(page);
-
+  await expect(page.locator(".result-row").first()).toBeVisible();
   const originalWorkspace = await page.locator(".map-workspace").boundingBox();
   const originalFilters = await page.locator(".filters-panel").boundingBox();
-
-  await selectTheme(page, "dark");
-  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
-  await expect(page.locator('[data-theme-choice="dark"]')).toHaveAttribute(
-    "aria-pressed",
-    "true",
-  );
-  await expect(page.locator("#result-count")).toHaveText(String(total));
-  await expectContiguousMapPanels(page);
-  expect(await page.locator(".map-workspace").boundingBox()).toEqual(originalWorkspace);
-  expect(await page.locator(".filters-panel").boundingBox()).toEqual(originalFilters);
-
-  await selectTheme(page, "showcase");
-  await expect(page.locator("html")).toHaveAttribute("data-theme", "showcase");
-  await expect(page.locator("[data-showcase-cover]")).toBeVisible();
-  await expect(page.locator(".showcase-photo")).toHaveCount(3);
-  await page.locator("[data-showcase-enter]").first().click();
-  await expect(page.locator("[data-showcase-cover]")).toBeHidden();
-  await expect(page.locator("#result-count")).toHaveText(String(total));
-  await expectContiguousMapPanels(page);
-  await expectUniformResultEdges(page);
-
-  await page.reload();
-  await expect(page.locator("html")).toHaveAttribute("data-theme", "showcase");
-  await expect(page.locator("[data-showcase-cover]")).toBeHidden();
-
-  await selectTheme(page, "showcase-light");
-  await expect(page.locator("html")).toHaveAttribute("data-theme", "showcase-light");
-  await expect(page.locator('[data-theme-choice="showcase-light"]')).toHaveAttribute(
-    "aria-pressed",
-    "true",
-  );
-  await expect(page.locator("[data-showcase-cover]")).toBeVisible();
-  await page.locator("[data-showcase-enter]").first().click();
-  await expect(page.locator("[data-showcase-cover]")).toBeHidden();
-  await expect(page.locator("#result-count")).toHaveText(String(total));
-  await expectContiguousMapPanels(page);
-  await expectUniformResultEdges(page);
-
-  await page.reload();
-  await expect(page.locator("html")).toHaveAttribute("data-theme", "showcase-light");
-  await expect(page.locator("[data-showcase-cover]")).toBeHidden();
-
-  await selectTheme(page, "classic");
-  await expect(page.locator("html")).toHaveAttribute("data-theme", "classic");
+  for (const theme of ["dark", "classic"]) {
+    await selectTheme(page, theme);
+    await expect(page.locator("html")).toHaveAttribute("data-theme", theme);
+    await expect(page.locator(`[data-theme-choice="${theme}"]`))
+      .toHaveAttribute("aria-pressed", "true");
+    await expect(page.locator("#result-count")).toHaveText(String(total));
+    await expectContiguousMapPanels(page);
+    expect(await page.locator(".map-workspace").boundingBox()).toEqual(originalWorkspace);
+    expect(await page.locator(".filters-panel").boundingBox()).toEqual(originalFilters);
+    await expect(page.locator("[data-showcase-cover]")).toHaveCount(0);
+    await expect.poll(() => page.locator(".result-row").evaluateAll((rows) =>
+      [...new Set(rows.slice(0, 6).map((row) => getComputedStyle(row).borderLeftWidth))],
+    )).toEqual(["0px"]);
+    await page.screenshot({path: testInfo.outputPath(`map-${theme}.png`), animations: "disabled"});
+    await page.reload();
+    await expect(page.locator("html")).toHaveAttribute("data-theme", theme);
+  }
+  expect(showcaseRequests).toEqual([]);
 });
 
-test("showcase imagery appears on supporting pages", async ({ page }) => {
-  const total = await publicAssetCount(page);
-  await page.goto("/directory/");
-  await expect(page.locator(".directory-list")).toBeVisible();
-
-  await selectTheme(page, "showcase");
-  await expect(page.locator("[data-showcase-cover]")).toBeVisible();
-  await page.locator("[data-showcase-enter]").first().click();
-  await expect(page).toHaveURL(/\/map\/$/);
-  await expect(page.locator("#result-count")).toHaveText(String(total));
-});
-
-test("the four-mode switch remains usable on mobile", async ({ page }) => {
+test("the compact appearance menu offers only Current and Dark", async ({ page }, testInfo) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/map/");
   const switcher = page.locator(".appearance-switcher");
   await expect(switcher).toBeHidden();
-  const headerBox = await page.locator(".site-header").boundingBox();
-  expect(headerBox.height).toBeLessThanOrEqual(100);
+  expect((await page.locator(".site-header").boundingBox()).height).toBeLessThanOrEqual(100);
   await page.locator(".appearance-menu > summary").click();
   await expect(switcher).toBeVisible();
-  await expect(switcher.locator("button")).toHaveCount(4);
-  expect(
-    await switcher.locator("button").evaluateAll((buttons) =>
-      buttons.map((button) => button.textContent.trim()),
-    ),
-  ).toEqual(["Current", "Dark", "Showcase", "Showcase Light"]);
-
-  const switchBox = await switcher.boundingBox();
-  expect(switchBox.x).toBeGreaterThanOrEqual(0);
-  expect(switchBox.x + switchBox.width).toBeLessThanOrEqual(390);
-  expect(switchBox.y + switchBox.height).toBeLessThanOrEqual(844);
-
-  await page.locator('[data-theme-choice="showcase-light"]').click();
-  await expect(page.locator("[data-showcase-cover]")).toBeVisible();
-  const coverBox = await page.locator("[data-showcase-cover]").boundingBox();
-  expect(coverBox.width).toBe(390);
-  expect(coverBox.height).toBeGreaterThanOrEqual(844);
-  await expect(page.locator(".showcase-topbar")).toBeVisible();
-  await expect(page.locator(".showcase-hero h1")).toBeVisible();
+  await expect(switcher.locator("button")).toHaveText(["Current", "Dark"]);
+  const box = await switcher.boundingBox();
+  expect(box.x).toBeGreaterThanOrEqual(0);
+  expect(box.x + box.width).toBeLessThanOrEqual(390);
+  expect(box.y + box.height).toBeLessThanOrEqual(844);
+  await page.screenshot({path: testInfo.outputPath("appearance-menu.png"), animations: "disabled"});
+  await page.locator('[data-theme-choice="dark"]').click();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await expect(switcher).toBeHidden();
 });
 
-test("showcase light keeps the cinematic experience in the current light palette", async ({ page }) => {
-  const total = await publicAssetCount(page);
+test("keyboard selection cycles only through active appearances", async ({ page }) => {
   await page.goto("/map/");
-  await selectTheme(page, "showcase-light");
-
-  const cover = page.locator("[data-showcase-cover]");
-  await expect(cover).toBeVisible();
-  await expect(cover).toHaveCSS("background-color", "rgb(255, 255, 255)");
-  await expect(cover.locator(".showcase-statement")).toHaveCSS(
-    "background-color",
-    "rgb(255, 255, 255)",
-  );
-  await expect(cover.locator('img[src*="nasa-langley-autonomous-drone"]')).toBeVisible();
-
-  await cover.locator("[data-showcase-enter]").first().click();
-  await expect(cover).toBeHidden();
-  await expect(page.locator(".filters-panel")).toHaveCSS(
-    "background-color",
-    "rgba(255, 255, 255, 0.97)",
-  );
-  await expect(page.locator("#result-count")).toHaveText(String(total));
+  await page.locator(".appearance-menu > summary").click();
+  const classic = page.locator('[data-theme-choice="classic"]');
+  const dark = page.locator('[data-theme-choice="dark"]');
+  await classic.focus();
+  await page.keyboard.press("ArrowRight");
+  await expect(dark).toBeFocused();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await page.keyboard.press("ArrowRight");
+  await expect(classic).toBeFocused();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "classic");
+  await page.keyboard.press("End");
+  await expect(dark).toBeFocused();
+  await page.keyboard.press("Home");
+  await expect(classic).toBeFocused();
+  await page.keyboard.press("Escape");
+  await expect(page.locator(".appearance-menu > summary")).toBeFocused();
 });
 
-test("showcase entrance scrolls through real Virginia imagery and returns to the map", async ({ page }) => {
-  const total = await publicAssetCount(page);
-  await page.goto("/map/");
-  await selectTheme(page, "showcase");
-  const cover = page.locator("[data-showcase-cover]");
-  await expect(cover).toBeVisible();
-  await expect(cover.locator('img[src*="nasa-langley-autonomous-drone"]')).toBeVisible();
-
-  await cover.locator("[data-showcase-scroll-story]").click();
-  await expect(cover.locator(".showcase-statement")).toBeInViewport();
-  await cover.locator(".showcase-final").scrollIntoViewIfNeeded();
-  await expect(cover.locator(".showcase-final")).toBeInViewport();
-  await cover.locator(".showcase-final [data-showcase-enter]").click();
-
-  await expect(cover).toBeHidden();
-  await expect(page.locator("#result-count")).toHaveText(String(total));
+test("Dark persists between the directory and asset profiles", async ({ page }) => {
+  await page.goto("/directory/?q=reactor");
+  await selectTheme(page, "dark");
+  await page.locator(".directory-row-main h3 a").first().click();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await expect(page.locator("[data-showcase-cover]")).toHaveCount(0);
+  await expect(page.locator("[data-theme-choice]")).toHaveCount(2);
 });

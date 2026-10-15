@@ -1,3 +1,4 @@
+import { THEMES } from "../../static/js/theme-switcher.js";
 import { expect, test } from "@playwright/test";
 
 test("map headings stay concise and the legend follows visible overlays", async ({ page }) => {
@@ -65,7 +66,7 @@ test("saved layer selections and printed legends omit inactive overlays", async 
 
 test("simplified headings and unboxed profile sections fit all designs", async ({ page }, testInfo) => {
   test.setTimeout(120_000);
-  for (const theme of ["classic", "dark", "showcase", "showcase-light"]) {
+  for (const theme of THEMES) {
     await page.goto("/map/");
     await expect(page.locator(".result-row").first()).toBeVisible();
     await page.locator(".appearance-menu > summary").click();

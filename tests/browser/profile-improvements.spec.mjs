@@ -1,3 +1,4 @@
+import { THEMES } from "../../static/js/theme-switcher.js";
 import { expect, test } from "@playwright/test";
 
 async function enterMap(page) {
@@ -54,9 +55,9 @@ test("unmapped networks remain listed without misleading point geometry", async 
   expect(network.properties.location.role_label).toBe("Service area / multiple sites");
 });
 
-test("operator details and location evidence fit all four designs", async ({ page }, testInfo) => {
+test("operator details and location evidence fit both active designs", async ({ page }, testInfo) => {
   test.setTimeout(120_000);
-  for (const theme of ["classic", "dark", "showcase", "showcase-light"]) {
+  for (const theme of THEMES) {
     await page.goto("/map/");
     await enterMap(page);
     await page.locator(".appearance-menu > summary").click();
