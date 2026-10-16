@@ -7,6 +7,7 @@ from django.utils import timezone
 
 from apps.assets.models import Asset, SavedView, UpdateSubmission
 from apps.catalog.models import Region
+from apps.sources.models import Source
 
 
 class CoreViewTests(TestCase):
@@ -232,6 +233,71 @@ class CoreViewTests(TestCase):
         self.assertNotContains(response, "Record history")
         self.assertNotContains(response, "record-history")
         self.assertEqual(asset.history.count(), 2)
+
+    def test_asset_web_links_open_new_tabs_without_changing_internal_navigation(self):
+        asset = Asset.objects.create(
+            name="External Link Test Asset",
+            record_type=Asset.RecordType.FACILITY,
+            short_description="A source-backed public testing facility.",
+            unmanned_systems_relevance="Supports autonomous systems testing.",
+            website_url="https://example.org/",
+            contact_url="https://example.org/contact",
+            contact_email="contact@example.org",
+            contact_phone="757-555-0100",
+            current_activity="Documented testing activity.",
+            activity_source_url="https://example.org/activity",
+            activity_last_verified_at=date(2026, 10, 16),
+            owner_operator="Example operator",
+            development_source_url="https://example.org/development",
+            development_last_verified_at=date(2026, 10, 16),
+            test_aircraft="Small unmanned aircraft.",
+            test_source_url="https://example.org/testing",
+            test_last_verified_at=date(2026, 10, 16),
+            location_source_url="https://example.org/location",
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        )
+        Source.objects.create(
+            asset=asset,
+            title="Official facility information",
+            url="https://example.org/source",
+        )
+
+        response = self.client.get(asset.get_absolute_url())
+
+        for url, label in (
+            (asset.contact_url, "Open contact information"),
+            (asset.activity_source_url, "Activity source"),
+            (asset.development_source_url, "Development source"),
+            (asset.test_source_url, "Operator specification source"),
+            (asset.location_source_url, "View location source"),
+            ("https://example.org/source", "Official facility information"),
+        ):
+            with self.subTest(url=url):
+                self.assertContains(
+                    response,
+                    f'<a href="{url}" target="_blank" rel="noopener noreferrer">{label}</a>',
+                    html=True,
+                )
+        self.assertContains(
+            response,
+            '<a class="button primary full" href="https://example.org/" '
+            'target="_blank" rel="noopener noreferrer">Visit website</a>',
+            html=True,
+        )
+        for href, label in (
+            (reverse("core:directory"), "Directory"),
+            ("mailto:contact@example.org", "contact@example.org"),
+            ("tel:757-555-0100", "757-555-0100"),
+        ):
+            self.assertContains(response, f'<a href="{href}">{label}</a>', html=True)
+
+        response = self.client.get(reverse("core:directory"))
+        self.assertContains(
+            response,
+            f'<a href="{asset.get_absolute_url()}">{asset.public_name}</a>',
+            html=True,
+        )
 
     def test_general_update_submission_enters_staff_queue(self):
         response = self.client.post(

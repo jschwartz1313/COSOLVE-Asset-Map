@@ -45,6 +45,35 @@ test("acronyms work across map and directory without losing the search", async (
   await expect(page.locator(".directory-row").first()).toContainText("Kentland");
 });
 
+test("directory website links open a new tab and preserve the asset profile", async ({ page, context }) => {
+  await page.goto("/directory/?q=Norfolk%20International%20Airport");
+  const assetLink = page.locator(".directory-row h3 a").first();
+  await expect(assetLink).not.toHaveAttribute("target", "_blank");
+  await assetLink.click();
+  await expect(page).toHaveURL(/\/assets\/norfolk-intl\/$/);
+
+  const profileURL = page.url();
+  const website = page.getByRole("link", { name: "Visit website", exact: true });
+  const websiteURL = await website.getAttribute("href");
+  await expect(website).toHaveAttribute("target", "_blank");
+  await expect(website).toHaveAttribute("rel", "noopener noreferrer");
+  await context.route(websiteURL, (route) => route.fulfill({
+    contentType: "text/html",
+    body: "<!doctype html><title>Official airport website</title><h1>Airport website</h1>",
+  }));
+
+  const popupPromise = page.waitForEvent("popup");
+  await website.click();
+  const websiteTab = await popupPromise;
+  await expect(websiteTab).toHaveURL(websiteURL);
+  await expect(websiteTab.getByRole("heading", { name: "Airport website" })).toBeVisible();
+  expect(await websiteTab.evaluate(() => window.opener === null)).toBe(true);
+  await expect(page).toHaveURL(profileURL);
+  await expect(page.getByRole("heading", { name: "Norfolk International Airport", exact: true }))
+    .toBeVisible();
+  await websiteTab.close();
+});
+
 test("unmapped networks remain listed without misleading point geometry", async ({ request }) => {
   const response = await request.get('/api/assets.geojson?q=Virginia%20Automated%20Corridors');
   expect(response.ok()).toBeTruthy();
