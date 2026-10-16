@@ -95,7 +95,9 @@ test("simplified headings and unboxed profile sections fit all designs", async (
     await expect(page.locator(".detail-sidebar")).toContainText("Contact and information");
     await expect(page.locator(".detail-sidebar")).toContainText("Location");
     await expect(page.locator(".detail-sidebar")).toContainText("Classification");
-    await expect(page.locator(".detail-verification-footer")).toContainText("Review status");
+    await expect(page.locator(".detail-verification-footer")).toHaveCount(0);
+    await expect(page.locator("main")).not.toContainText("Review status");
+    await expect(page.locator("main")).not.toContainText("Record updated");
     const overflow = await page.locator(".detail-sidebar h2, .detail-sidebar dd")
       .evaluateAll((elements) => elements.filter((el) => el.scrollWidth > el.clientWidth + 1).map((el) => el.textContent));
     expect(overflow).toEqual([]);

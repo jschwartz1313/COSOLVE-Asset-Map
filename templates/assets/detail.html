@@ -52,6 +52,5 @@
       <a class="button secondary full" href="{% url 'core:asset-suggest-update' asset.slug %}">Suggest an update</a>
     </aside>
   </div>
-  <div class="verification-block detail-verification-footer"><span>Review status</span><strong>{{ asset.verification_label }}</strong><small>{% if asset.is_editorially_reviewed %}Reviewed {{ asset.last_verified_at|date:"M j, Y" }} · {% endif %}{{ asset.public_location_label }}</small><small>Record updated {{ asset.updated_at|date:"M j, Y" }}</small></div>
 </main>
 {% endblock %}

@@ -181,7 +181,7 @@ class CoreViewTests(TestCase):
         self.assertContains(response, "<dd>1 records pending</dd>", html=True)
         self.assertNotContains(response, "<span>published assets</span>", html=True)
 
-    def test_asset_detail_preserves_profile_without_public_record_history(self):
+    def test_asset_detail_preserves_profile_without_public_review_metadata(self):
         asset = Asset.objects.create(
             name="History Test Asset",
             record_type=Asset.RecordType.FACILITY,
@@ -204,6 +204,8 @@ class CoreViewTests(TestCase):
             infrastructure_access="Road and utility access.",
             development_source_url="https://example.org/development",
             development_last_verified_at=date(2026, 8, 6),
+            reviewed_at=timezone.now(),
+            last_verified_at=date(2026, 8, 21),
             status=Asset.Status.SOURCE_BACKED,
             visibility=Asset.Visibility.PUBLIC,
         )
@@ -225,13 +227,25 @@ class CoreViewTests(TestCase):
         self.assertContains(response, "A current source-backed pilot is underway")
         self.assertContains(response, "Site readiness")
         self.assertContains(response, "8 acres")
-        self.assertContains(response, "Review status")
+        self.assertNotContains(response, "Review status")
+        self.assertNotContains(response, "Editorially reviewed")
+        self.assertNotContains(response, "Reviewed Aug 21, 2026")
+        self.assertNotContains(response, "Record updated")
+        self.assertNotContains(response, "detail-verification-footer")
 
         staff = get_user_model().objects.create_user(username="history-staff", is_staff=True)
         self.client.force_login(staff)
         response = self.client.get(reverse("core:asset-detail", args=[asset.slug]))
         self.assertNotContains(response, "Record history")
         self.assertNotContains(response, "record-history")
+        self.assertNotContains(response, "Review status")
+        self.assertNotContains(response, "Editorially reviewed")
+        self.assertNotContains(response, "Reviewed Aug 21, 2026")
+        self.assertNotContains(response, "Record updated")
+        self.assertNotContains(response, "detail-verification-footer")
+        asset.refresh_from_db()
+        self.assertTrue(asset.is_editorially_reviewed)
+        self.assertEqual(asset.last_verified_at, date(2026, 8, 21))
         self.assertEqual(asset.history.count(), 2)
 
     def test_asset_web_links_open_new_tabs_without_changing_internal_navigation(self):

@@ -755,10 +755,9 @@ test("asset detail profiles stay readable and within the viewport", async ({ pag
   await page.goto("/assets/ata-aviation/");
   await expect(page.getByRole("heading", { name: "ATA Aviation" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Documented relevance" })).toBeVisible();
-  const reviewStatus = page.locator(".detail-verification-footer");
-  await expect(reviewStatus).toBeVisible();
-  await expect(reviewStatus).toContainText("Review status");
-  await expect(page.locator(".detail-header .verification-block")).toHaveCount(0);
+  await expect(page.locator(".verification-block, .detail-verification-footer")).toHaveCount(0);
+  await expect(page.locator("main")).not.toContainText("Review status");
+  await expect(page.locator("main")).not.toContainText("Record updated");
   const similarAssets = page.locator(".similar-assets-disclosure");
   const sources = page.locator(".sources-disclosure");
   await expect(similarAssets).not.toHaveAttribute("open", "");
@@ -767,12 +766,6 @@ test("asset detail profiles stay readable and within the viewport", async ({ pag
   await expect(similarAssets.locator(".relationship-list")).toBeVisible();
   await sources.locator("summary").click();
   await expect(sources.locator(".source-list")).toBeVisible();
-  expect(
-    await page.locator(".detail-grid").evaluate(
-      (grid, status) => Boolean(grid.compareDocumentPosition(status) & Node.DOCUMENT_POSITION_FOLLOWING),
-      await reviewStatus.elementHandle(),
-    ),
-  ).toBe(true);
   expect(
     await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
   ).toBe(true);
