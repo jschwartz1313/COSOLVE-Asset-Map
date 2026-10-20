@@ -637,7 +637,13 @@ export function createMap(root) {
           ],
           links,
         }),
-        { maxWidth: 390 },
+        {
+          keepInView: true,
+          autoPanPaddingTopLeft: [12, 110],
+          autoPanPaddingBottomRight: [12, 12],
+          maxWidth: Math.max(160, Math.min(390, map.getSize().x - 40)),
+          maxHeight: Math.max(160, Math.min(420, map.getSize().y - 170)),
+        },
       );
       uasTestSitesLayer.addLayer(marker);
     }
@@ -723,7 +729,13 @@ export function createMap(root) {
         riseOnHover: true,
         title: feature.properties.name,
       });
-      marker.bindPopup(buildPopup(feature));
+      marker.bindPopup(buildPopup(feature), {
+        keepInView: true,
+        autoPanPaddingTopLeft: [12, 110],
+        autoPanPaddingBottomRight: [12, 12],
+        maxWidth: Math.max(160, Math.min(300, map.getSize().x - 40)),
+        maxHeight: Math.max(160, Math.min(420, map.getSize().y - 170)),
+      });
       if (showLabels) {
         marker.bindTooltip(feature.properties.name, {
           className: "asset-search-label",

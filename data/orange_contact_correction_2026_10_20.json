@@ -1,0 +1,17 @@
+{
+  "reviewed_at": "2026-10-20",
+  "scope": "Correct the Orange County Sheriff's Office inquiry link only when the exact prior Louisa County URL and catalog identity still match. Preserve staff-managed records, source decisions and editorial state.",
+  "corrections": [
+    {
+      "name": "Orange County Sheriff's Office Drone Team",
+      "provenance": "curated-public-source",
+      "before": {
+        "contact_url": "https://www.louisacounty.gov/m/newsflash?cat=22%2C1"
+      },
+      "after": {
+        "contact_url": "https://www.orangecountyva.gov/sheriff"
+      },
+      "reason": "The October 20 hosted export retains a Louisa County news link as the Orange County team's contact route. Use the official Orange County Sheriff's Office page already attached as the record's website and public source. This changes no drone capabilities, location, permissions or editorial verification."
+    }
+  ]
+}

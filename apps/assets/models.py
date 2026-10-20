@@ -427,6 +427,8 @@ class Relationship(models.Model):
         FUNDS = "funds", "Funds"
         SUPPORTS = "supports", "Supports"
         PARTICIPATES_IN = "participates-in", "Participates in"
+        HOSTS = "hosts", "Hosts"
+        MANUFACTURES_FOR = "manufactures-for", "Manufactures for"
 
     from_asset = models.ForeignKey(
         Asset, on_delete=models.CASCADE, related_name="outgoing_relationships"

@@ -92,8 +92,10 @@ def classify_response(result):
         return "http_error"
     original = urlsplit(result["url"])
     final = urlsplit(result.get("final_url", result["url"]))
-    login_paths = {"/login", "/accounts/login", "/signin", "/sign-in"}
-    if final.path.rstrip("/") in login_paths and original.path.rstrip("/") not in login_paths:
+    login_segments = {"login", "signin", "sign-in"}
+    original_endpoint = original.path.rstrip("/").rsplit("/", 1)[-1].casefold()
+    final_endpoint = final.path.rstrip("/").rsplit("/", 1)[-1].casefold()
+    if final_endpoint in login_segments and original_endpoint not in login_segments:
         return "access_blocked_or_rate_limited"
     if any(marker in title for marker in (
         "page not found", "page cannot be found", "404 not found", "domain for sale",

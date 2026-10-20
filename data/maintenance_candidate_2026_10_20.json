@@ -1,0 +1,167 @@
+{
+  "recorded_at_utc": "2026-10-20T15:41:42.696570+00:00",
+  "checkpoint": "Prepared and isolated-tested candidate; subsequent delivery is recorded separately",
+  "base_commit": "806ac4f4e3e62b466da3189967b9067574a5d1f8",
+  "candidate_commit": null,
+  "state": {
+    "prepared": true,
+    "isolated_tested": true,
+    "committed": false,
+    "pushed": false,
+    "deployment_requested": false,
+    "deployed": false,
+    "live_sha_verified": false,
+    "full_live_qa_verified": false
+  },
+  "last_verified_production": {
+    "sha": "806ac4f4e3e62b466da3189967b9067574a5d1f8",
+    "deployment_id": "dep-db92kfmk1f9s73f21deg",
+    "status": "Deploy succeeded | Live",
+    "live_at_utc": "2026-10-16T13:52:21Z",
+    "release_completed_at_utc": "2026-10-16T13:52:06Z",
+    "health": "Repeated Render GET /health/ 200; fresh anonymous health 200 on October 20",
+    "no_new_deployment_performed": true
+  },
+  "fixes": [
+    "Recognize and label existing hosts/manufactures-for edges; preserve raw directions and history; reject unsupported catalog relationship types",
+    "Guarded exact-old-value Orange County contact-only correction using existing staff-preserving command",
+    "Drone Park reference popup official facilities/scheduling URLs only; preserve geometry, IDs, count, constraints and dates",
+    "Read-only audit classifier recognizes nested/cased terminal sign-in redirects; no import/editorial decision changes",
+    "Keep UAS facility and ordinary asset popup headings/close controls below toolbar and make long content scroll in available map height",
+    "Align RASWDC tests/documentation with intentional October16 profile footer and paused showcase appearances"
+  ],
+  "tests": {
+    "backend": 374,
+    "frontend": 30,
+    "ruff": true,
+    "django_system": true,
+    "migration_drift": false,
+    "diff_check": true,
+    "repository_browser": {
+      "passed": 145,
+      "expected_skip": 1,
+      "failed": 0,
+      "scope": "Final isolated candidate UI, desktop/mobile; includes eight new facility/asset popup regressions"
+    },
+    "isolated_saved_view_crud": {
+      "passed": 8,
+      "production_mutations": false
+    },
+    "candidate_targeted_desktop_mobile": {
+      "passed": 12,
+      "initial_settled_popup_captures": 2
+    },
+    "popup_regressions_in_final_browser_suite": 8,
+    "settled_popup_comparison_cases": 10,
+    "relationship_migration_clone": "Forward/reverse preserves 207 existing edges and 4550 history rows; no-op SQL under SQLite",
+    "orange_clone": "Only contact/update timestamp plus expected system history/comment; repeat no-op; staff/private/identity guards tested",
+    "classifier_focused_import_boundary": 16,
+    "postgresql_or_full_candidate_release_rehearsed": false
+  },
+  "fresh_hosted_public_comparison": {
+    "rows": 543,
+    "columns": 55,
+    "published": 501,
+    "source_backed": 42,
+    "original_rows_compared": 542,
+    "semantically_changed_original_rows": 0,
+    "raw_source_url_order_only_rows": 2,
+    "new_identities": [
+      "RASWDC"
+    ],
+    "normalization": "Aligned source tuples and taxonomy ordering",
+    "private_workflow_and_complete_history_proven": false
+  },
+  "inventory_and_reference": {
+    "local_stored": 555,
+    "local_public": 542,
+    "local_published": 503,
+    "local_public_source_backed": 39,
+    "catalog_records": 543,
+    "catalog_edges": 208,
+    "main_sqlite_is_hosted_postgresql": false,
+    "availability_urls": 1242,
+    "raw_machine_counts": {
+      "reachable": 1038,
+      "blocked_or_rate_limited": 172,
+      "network_or_tls_inconclusive": 28,
+      "http_not_found": 2,
+      "homepage_redirect_review": 2
+    },
+    "frozen_classifier_change_count": 1,
+    "editorial_verification_or_import_performed": false,
+    "layers": 10,
+    "features": 7465,
+    "fresh_faa_candidates_semantic_changes": 0,
+    "faa_id_date_only_refresh_shipped": false,
+    "mandatory_new_virginia_site_or_closure_found": false
+  },
+  "residual_issues": [
+    "UAS facility and ordinary asset toolbar overlap reproduced on baseline and fixed in isolated candidate; fresh hosted mobile confirmation remains pending",
+    "SAIC/products404 replacement candidate, BlueRidge404 without confirmed equivalent, NCES sign-in shell, LaurelRidge old generic course shell, GMU TLS limitation remain manual follow-ups"
+  ],
+  "remaining_hosted_qa": [
+    "Fresh authenticated working/internal55-column CSV and private staff/history preservation",
+    "Authenticated standalone API/GeoJSON payloads; direct browser routes were client-blocked",
+    "Complete search/filter/marker/profile navigation and both relationship directions",
+    "All reference overlays/legends/basemaps, drawing, analysis and selected exports",
+    "Existing/copied saved-view restoration and regional comparisons",
+    "Hosted PDF/native preview, explicit JavaScript-disabled session, mobile and Current/Dark appearances",
+    "Candidate deployment release guards, exact Live SHA and post-release candidate behavior"
+  ],
+  "browser_blocker": {
+    "mac_connected": true,
+    "supported_cua_transport_closed": true,
+    "bound_retry_and_supported_reset_failed": true,
+    "fresh_delegated_environment_exposed_cua": false,
+    "blocked_routes_bypassed": false,
+    "credentials_permissions_or_settings_changed": false,
+    "smallest_documented_recovery_attempt": "Fresh local Codex/ChatGPT Work chat with @Chrome on the same connected Mac; not attempted or guaranteed",
+    "official_documentation": "https://learn.chatgpt.com/docs/chrome-extension#troubleshooting"
+  },
+  "main_sqlite_sha256": "1560f31bc94c6ed377d09a662beef73151ebf889a8ea5c9cb20f28be15712d4d",
+  "candidate_files_sha256": {
+    "README.md": "6955dfbbc5e026215a78c7a5bf97eafbf9eaf1f97a81b4d1a77ecac248a1f713",
+    "apps/assets/models.py": "05e2e495a80b0bbeec26d93af26cb374ea92672ba2ff02db0165261ef05a3e3f",
+    "apps/assets/migrations/0016_supported_relationship_types.py": "022a40c2132f092246efd2dcb515ef28b59a78232b9c3ab3dbafd1d471c8c684",
+    "data/orange_contact_correction_2026_10_20.json": "981951ba3008294e505bae2a5f9dbdf28416376e150c8c8c6a3b86eb4f4a3f56",
+    "docs/data_dictionary.md": "b5d177ef8241f4c979d6751eb9e9c432268b8b97093308b6c9da928cc56b342d",
+    "docs/security_and_publication.md": "f28473d7fe86d523f7fd08dc26303a75c54d95f589764af5781933d9d2c48ba3",
+    "docs/maintenance_2026_10_20.md": "eac1917fc510a2cea9c58931ccd49aea671e142a2c4f311c291212ca49e72709",
+    "release.sh": "a86bdb5dc1e1e8c87efb6bf3bffa800278660f13a57be9e02782a1db88c6bd43",
+    "scripts/audit_catalog_sources.py": "b083ea2dc9124f57f8cb9ed10c5c9f7c18f8fe6c9f1aee094cca8d9744af5b2a",
+    "scripts/build_drone_airspace_layers.py": "9efed76b1bf72a6c905edd79eac98ef347a49b43168f256b3c742d39a09ccd57",
+    "scripts/build_real_asset_catalog.py": "b91ef8f49d7984185a97cc431607abd294e9dfec926aa581b4e2d8c38123c0af",
+    "static/data/virginia-uas-test-sites.geojson": "73edcf214b8fb71d07b91f0fa64771683369368f21729d434f3ee8cd7b630833",
+    "static/js/map.js": "3e1f52884e6d2c4ee3eb6c630abcdd403f36888184b023ba05b1780a07eff32d",
+    "tests/browser/map-reliability.spec.mjs": "a3cb3d9bd6a8b091aa21374900e28f6836f92f3cc0105eba2c355eb18e45d863",
+    "tests/backend/test_raswdc_2026_10_13.py": "c4143ed20e9d478ba05de28088a5ecdae45f5132595dbc2874a7fff53c245f1e",
+    "tests/backend/test_orange_contact_correction_2026_10_20.py": "b9a8ca954cfce5ff05691be533ed12e753ea9121327f2a375cecfa73e4df53d1",
+    "tests/backend/test_relationship_types.py": "c1311f00ab62c7d3d2052d30a222eb759d85d07b843b24d13ed48266c4131be1",
+    "tests/backend/test_source_login_redirects.py": "b8e5aeef4f0ba149c5695930e297f670cd83bd09f884a0bdbb7ebe5f7d51026d"
+  },
+  "private_evidence_sha256": {
+    "tmp/maintenance-2026-10-20/preservation-before.json": "4c85b56a0349363e7ab403a65490d28a835ac94b3d15aa004c64dbbaabcece1a",
+    "tmp/maintenance-2026-10-20/browser/render-history-dom.txt": "925f5b265ccb4b6a644c91802fb24802114f13b254a8ea8b922e2048fba44e46",
+    "tmp/maintenance-2026-10-20/browser/render-live-deployment-dom.txt": "7470a4a212b6d7c1791c161a504098c2f21a33fcb2b7c500cfcca3ae3b671c0d",
+    "tmp/maintenance-2026-10-20/browser/render-failed-deployment-dom.txt": "f83c07f21cb901a74410d7d484712c4a933c5428465818de640d01dfe422e691",
+    "tmp/maintenance-2026-10-20/browser/hosted-public.csv": "25075fa84673804451502a17ba352564b77de70d2b685276b81a6207f3a8181d",
+    "tmp/maintenance-2026-10-20/browser/staff-review-baseline-dom.txt": "1414fda8de0f43e12fac22e7a4aa7f20188a1440147310167edf998f9e4949bb",
+    "tmp/maintenance-2026-10-20/browser/working-export-blocked-dom.txt": "061c1888c2459477d42f82bbb933e2ed3244bd7a69750e5a2071112c3a1d8845",
+    "tmp/maintenance-2026-10-20/browser/raswdc-directory-dom.txt": "28f2d0ebd53fd1ea9b5eb0b28fa55e9d7d8259309609fb66e43a312421dcbaff",
+    "tmp/maintenance-2026-10-20/inventory/inventory-summary.json": "3f95737cd799d14d73cb463ce5886e590d1b0da076c3acb972b22443dc60ebe6",
+    "tmp/maintenance-2026-10-20/developments/research_receipt.json": "fb9c62d1a0c40517418e53206cd8574ef37926968e606b60fb41870ff1fb9239",
+    "tmp/maintenance-2026-10-20/browser-regressions/receipt.json": "140fa863aa73cfd725360140756cb1f42d62ddb67b7003f41a3e92c24e5efd6d",
+    "tmp/maintenance-2026-10-20/browser-regressions/candidate-targeted/receipt.json": "75a75d8af95cd189de6ca4698c4e8d1ef3d7818ac09fa7d2911f218b720f24b5",
+    "tmp/maintenance-2026-10-20/browser-regressions/popup-fix/receipt.json": "9dce87f4d4320050f635880c3018753c39f018dd2e2d2e1ad477171dc353d7e0",
+    "tmp/maintenance-2026-10-20/tests/relationship-types/relationship-types-receipt.json": "45578b97303065fd98170294c47e6f6d84c238400ea95f77d143d0988a528b49",
+    "tmp/maintenance-2026-10-20/tests/final-source-classifier/checks-receipt.json": "3c34a86a6bb4e5691570baa6d485a09598527eaa727075502814ae246c9b6cd8",
+    "tmp/maintenance-2026-10-20/source-login-fix/receipt.json": "dc447587aa5c70acb2549c98e82b31c5d50a4a0b0ae41a3df30ccbb6ac33ae6e",
+    "tmp/maintenance-2026-10-20/reference-link-fix/receipt.json": "3a6587cda254d883071d02110b5bccc3a5ce08672cb2ffcd2f4e92cf722245e1",
+    "tmp/maintenance-2026-10-20/hosted-qa-recovery/recovery-capability-receipt.json": "86ce58d9aa15e47bbc9fe7df526fdd22950131c5582f04ea4d698f9da49943be"
+  },
+  "excluded_prior_work": "All preexisting October9/13 modified/untracked evidence, appended smoke log and tmp archive remain uncommitted",
+  "maintenance_log": "docs/maintenance_2026_10_20.md",
+  "private_tracker_written": false,
+  "external_messages_sent": false
+}

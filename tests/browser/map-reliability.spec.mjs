@@ -81,3 +81,115 @@ test("airspace popups use the published base when the facility label is blank", 
   await page.locator(".leaflet-flight-constraints-pane path").click({ force: true });
   await expect(page.locator(".drone-reference-popup h3")).toHaveText("Published base name");
 });
+
+for (const facility of [
+  { name: "MARS UAS Airfield", latitude: 37.94, longitude: -75.467, sources: 1 },
+  { name: "NASA Langley UAS Test Range and CERTAIN", latitude: 37.085639, longitude: -76.380667, sources: 2 },
+  { name: "Virginia Tech Drone Park", latitude: 37.2241, longitude: -80.4286, sources: 2 },
+]) {
+  test(`UAS facility popup keeps ${facility.name} readable and usable below map controls`, async ({ page }, testInfo) => {
+    const query = new URLSearchParams({
+      q: facility.name,
+      map_lat: String(facility.latitude),
+      map_lon: String(facility.longitude),
+      map_zoom: "12",
+      map_layers: "state,uas-test-sites",
+      map_layers_v: "5",
+    });
+    await page.goto(`/map/?${query}`);
+    await expect(page.locator("[data-map-app]")).toHaveAttribute("aria-busy", "false");
+    await page.locator(`.uas-test-site-shell[title="${facility.name}"]`).click();
+    const popup = page.locator(".leaflet-popup");
+    await expect(popup).toHaveCSS("opacity", "1");
+    const heading = popup.getByRole("heading", { name: facility.name, exact: true });
+    const close = popup.locator(".leaflet-popup-close-button");
+    for (const control of [heading, close]) {
+      expect(await control.evaluate((element) => {
+        const rect = element.getBoundingClientRect();
+        return [0.2, 0.5, 0.8].every((fraction) => element.contains(
+          document.elementFromPoint(rect.left + rect.width * fraction, rect.top + rect.height / 2),
+        ));
+      })).toBeTruthy();
+    }
+    await close.click({ trial: true });
+    const withinMap = async () => popup.evaluate((element) => {
+      const rect = element.getBoundingClientRect();
+      const map = document.querySelector("#map").getBoundingClientRect();
+      return rect.top >= map.top && rect.bottom <= map.bottom + 1
+        && rect.left >= map.left && rect.right <= map.right + 1;
+    });
+    expect(await withinMap()).toBeTruthy();
+    await page.screenshot({ path: testInfo.outputPath("facility-popup-heading.png"), animations: "disabled" });
+    const rows = popup.locator("dd");
+    await expect(rows).toHaveCount(7);
+    for (const row of await rows.all()) {
+      await row.scrollIntoViewIfNeeded();
+      expect(await row.evaluate((element) => {
+        const rect = element.getBoundingClientRect();
+        const content = element.closest(".leaflet-popup-content").getBoundingClientRect();
+        return rect.top >= content.top - 1 && rect.bottom <= content.bottom + 1
+          && element.contains(document.elementFromPoint(rect.left + rect.width / 2, rect.top + rect.height / 2));
+      })).toBeTruthy();
+    }
+    const sources = popup.locator('a[target="_blank"]');
+    await expect(sources).toHaveCount(facility.sources);
+    for (const source of await sources.all()) {
+      await expect(source).toHaveAttribute("href", /^https:\/\//);
+      await source.click({ trial: true });
+    }
+    expect(await withinMap()).toBeTruthy();
+    await page.screenshot({ path: testInfo.outputPath("facility-popup-sources.png"), animations: "disabled" });
+    await close.click();
+    await expect(popup).toHaveCount(0);
+  });
+}
+
+test("ordinary RASWDC popup keeps its heading, close button and profile link usable", async ({ page }, testInfo) => {
+  const name = "Navy Robotic and Autonomous Systems Warfighting Development Center";
+  await page.goto("/map/?q=RASWDC&map_lat=36.918239&map_lon=-76.156529&map_zoom=12&map_layers=assets,state&map_layers_v=5");
+  await expect(page.locator("[data-map-app]")).toHaveAttribute("aria-busy", "false");
+  const marker = page.locator(".asset-marker-shell");
+  await marker.click();
+  const popup = page.locator(".leaflet-popup");
+  await expect(popup).toHaveCSS("opacity", "1");
+  const heading = popup.getByRole("heading", { name, exact: true });
+  const close = popup.locator(".leaflet-popup-close-button");
+  for (const control of [heading, close]) {
+    expect(await control.evaluate((element) => {
+      const rect = element.getBoundingClientRect();
+      return [0.2, 0.5, 0.8].every((fraction) => element.contains(
+        document.elementFromPoint(rect.left + rect.width * fraction, rect.top + rect.height / 2),
+      ));
+    })).toBeTruthy();
+  }
+  await close.click({ trial: true });
+  const withinMap = async () => popup.evaluate((element) => {
+    const rect = element.getBoundingClientRect();
+    const map = document.querySelector("#map").getBoundingClientRect();
+    return rect.top >= map.top && rect.bottom <= map.bottom + 1
+      && rect.left >= map.left && rect.right <= map.right + 1;
+  });
+  expect(await withinMap()).toBeTruthy();
+  await expect(popup).toContainText("In development");
+  await page.screenshot({ path: testInfo.outputPath("asset-popup-heading.png"), animations: "disabled" });
+  for (const row of await popup.locator(".map-popup > p, .map-popup > small").all()) {
+    await row.scrollIntoViewIfNeeded();
+    expect(await row.evaluate((element) => {
+      const rect = element.getBoundingClientRect();
+      const content = element.closest(".leaflet-popup-content").getBoundingClientRect();
+      return rect.top >= content.top - 1 && rect.bottom <= content.bottom + 1
+        && element.contains(document.elementFromPoint(rect.left + rect.width / 2, rect.top + rect.height / 2));
+    })).toBeTruthy();
+  }
+  const profile = popup.getByRole("link", { name: "View asset", exact: true });
+  await expect(profile).toHaveAttribute("href", "/assets/navy-robotic-and-autonomous-systems-warfighting-development-center/");
+  await profile.click({ trial: true });
+  expect(await withinMap()).toBeTruthy();
+  await page.screenshot({ path: testInfo.outputPath("asset-popup-profile-link.png"), animations: "disabled" });
+  await close.click();
+  await expect(popup).toHaveCount(0);
+  await marker.click();
+  await expect(popup).toHaveCSS("opacity", "1");
+  await profile.click();
+  await expect(page.getByRole("heading", { name, exact: true })).toBeVisible();
+});

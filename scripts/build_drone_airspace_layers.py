@@ -107,8 +107,10 @@ TEST_SITES = (
             "operations have additional requirements."
         ),
         "access": "Scheduled access through Virginia Tech",
-        "source_title": "Virginia Tech Drone Park",
-        "source_url": "https://ictas.vt.edu/Facilities/ictas-drone-park.html",
+        "source_title": "Virginia Tech Drone Park facilities and enclosure",
+        "source_url": "https://ictas.vt.edu/Facilities.html",
+        "secondary_source_title": "Virginia Tech Drone Park scheduling and orientation",
+        "secondary_source_url": "https://drones.ictas.vt.edu/dronepark.html",
     },
 )
 

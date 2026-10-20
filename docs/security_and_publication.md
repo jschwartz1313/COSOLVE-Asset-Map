@@ -1,6 +1,6 @@
 # Security and publication
 
-The public surface is deny-by-default. Public querysets require either `source-backed` or `published` status plus `public` visibility. Source-backed listings are explicitly labeled as awaiting editorial review. `Published` is reserved for records with completed editorial review dates. Dedicated public serializers omit internal notes, source notes, draft records, restricted records, and staff workflow fields. Admin, import, and export routes require a staff account and Django CSRF protection.
+The public surface is deny-by-default. Public querysets require either `source-backed` or `published` status plus `public` visibility. Map/report labels, API fields and CSV status distinguish source-backed listings awaiting editorial review. Public profiles intentionally omit the review-status footer; backend review records and source labels remain available. `Published` is reserved for records with completed editorial review dates. Dedicated public serializers omit internal notes, source notes, draft records, restricted records, and staff workflow fields. Admin, import, and export routes require a staff account and Django CSRF protection.
 
 Publication workflow:
 

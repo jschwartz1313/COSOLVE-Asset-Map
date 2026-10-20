@@ -14,6 +14,10 @@ ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "virginia_real_assets.json"
 CATALOG_DATE = "2026-08-21"
 BUILD_DATE = "2026-10-13"
+RELATIONSHIP_TYPES = frozenset({
+    "operates", "located-at", "partners-with", "funds", "supports", "participates-in",
+    "hosts", "manufactures-for",
+})
 
 FAA_LAYER = (
     "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/ArcGIS/rest/services/US_Airport/FeatureServer/0"
@@ -11509,6 +11513,13 @@ def validate(records, relationships):
                 raise ValueError(f"Missing manufacturing-facility category: {record['name']}")
             if MANUFACTURING_CAPABILITY not in record["capabilities"]:
                 raise ValueError(f"Missing manufacturing capability: {record['name']}")
+
+    unknown_relationship_types = {item[1] for item in relationships} - RELATIONSHIP_TYPES
+    if unknown_relationship_types:
+        raise ValueError(
+            "Unknown relationship types: "
+            + ", ".join(sorted(repr(value) for value in unknown_relationship_types))
+        )
 
     relationship_assets = {
         asset_name

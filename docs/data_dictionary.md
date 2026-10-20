@@ -32,6 +32,6 @@ A source belongs to one asset and records title, URL, source date, verification 
 
 ## Relationship
 
-A directed typed connection between two assets. Supported types are operates, located at, partners with, funds, supports, and participates in. Only public relationships between public records appear in the public API and profile.
+A directed typed connection between two assets. Supported types are operates, located at, partners with, funds, supports, participates in, hosts, and manufactures for. Only public relationships between public records appear in the public API and profile. The `hosts` and `manufactures-for` codes preserve existing catalog directions and historical records; their readable labels do not remap edges.
 
 The checked-in real-data catalog also contains a reviewed set of public relationships. The seed command creates or updates these links without deleting relationships maintained manually in the admin.

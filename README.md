@@ -15,7 +15,7 @@ The checked-in catalog contains source-backed, publicly documented Virginia reco
 - Public-safe JSON and GeoJSON APIs with server-side filtering
 - Deployment-level regional scoping that can publish Hampton Roads while retaining statewide staff data
 - Synchronized Leaflet map and result directory with URL-backed state
-- Four persistent presentation modes: the current interface, a geometry-matched dark mode, and dark or light image-led showcase modes
+- Two active appearances: Current and a geometry-matched Dark mode; showcase appearances are paused
 - Saved rectangle and polygon analyses that reopen with the same geometry and selected records
 - Accessible non-map directory and public asset profiles
 - Source-dated current activity, collaboration routes, and economic-development site-readiness fields
@@ -31,7 +31,7 @@ The checked-in catalog contains source-backed, publicly documented Virginia reco
 - Optional FAA-recorded private-use heliport reference layer with access and authorization warnings
 - Password recovery, login throttling, optional TOTP MFA, and optional OIDC organization sign-in
 - Public correction and addition submissions routed to an editor-only review queue
-- 542 source-backed Virginia records spanning public-use airports, relevant higher education, research, workforce, companies, infrastructure, programs, and generalized defense assets
+- 543 publicly listed Virginia records spanning public-use airports, relevant higher education, research, workforce, companies, infrastructure, programs, and generalized defense assets; pending listings and editorially reviewed records remain distinct
 - A dedicated `Manufacturing facilities` strategic category covering 26 documented Virginia production, assembly, fabrication, and component-manufacturing sites
 - Backend, frontend state, security-boundary, and import tests
 
