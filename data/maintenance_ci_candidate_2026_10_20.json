@@ -1,0 +1,28 @@
+{
+  "base_application_commit": "e7c9c491aebcb06082db449cbada66f2244ba544",
+  "scope": "CI runner native GIS dependency setup only; application code unchanged",
+  "failed_ci_run": 39450863294,
+  "failed_log_sha256": "2116d68043aa7682d0dd3ffa1fac84b6e7ac3b24d325f71d40a3b5dc3eb7eb0d",
+  "error_modules": [
+    "test_drone_airspace_layers",
+    "test_layer_freshness",
+    "test_maap_integration"
+  ],
+  "reported_cases": 357,
+  "actual_cases_passed": 354,
+  "import_error_placeholders": 3,
+  "expected_tests_uncollected": 20,
+  "assertion_failures": 0,
+  "yaml_parse_passed": true,
+  "workflow_unchanged_except_two_added_steps": true,
+  "workflow_permissions_unchanged": true,
+  "local_exact_gis_preflight_passed": true,
+  "local_gdal_version": "3.13.0",
+  "new_ubuntu_ci_passed": false,
+  "deployed": false,
+  "upstream_guidance": "https://docs.djangoproject.com/en/5.2/ref/contrib/gis/install/geolibs/",
+  "new_files_sha256": {
+    ".github/workflows/ci.yml": "c557f5030e2c30f5cd3e3136b698867e25b90e79eb7321ad6437bdab64921b2f",
+    "docs/maintenance_ci_repair_2026_10_20.md": "f2e4867206c61795bc94f7c7401cbdd0b116a09bc8257d1540238cb572fde6f8"
+  }
+}

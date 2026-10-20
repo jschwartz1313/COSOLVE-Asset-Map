@@ -49,6 +49,14 @@ jobs:
       - name: Install dependencies
         run: python -m pip install -e '.[dev]'
 
+      - name: Install GIS system libraries
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y binutils libproj-dev gdal-bin
+
+      - name: Check GIS runtime
+        run: python -c "from django.contrib.gis.gdal import GDAL_VERSION; from django.contrib.gis.geos import GEOSGeometry; print(GDAL_VERSION, GEOSGeometry('POINT (0 0)'))"
+
       - name: Install browser test dependencies
         run: |
           npm ci
