@@ -150,9 +150,25 @@ export function createMap(root) {
       maxZoom: 16,
       referrerPolicy: "strict-origin",
     },
+    topo: {
+      url: root.dataset.basemapTopoUrl,
+      attribution: root.dataset.basemapTopoAttribution,
+      maxZoom: 19,
+      referrerPolicy: "strict-origin",
+    },
   };
   let activeBasemap = "street";
+  root.dataset.basemap = activeBasemap;
   let basemapLayer = window.L.tileLayer(basemaps.street.url, basemaps.street).addTo(map);
+
+  // The same Virginia sample tile makes the four map styles easy to compare.
+  for (const preview of root.querySelectorAll("[data-basemap-preview]")) {
+    const provider = basemaps[preview.dataset.basemapPreview];
+    preview.src = window.L.Util.template(provider.url, {
+      s: "a", z: 12, x: 1132, y: 1590, r: "",
+    });
+    preview.addEventListener("error", () => { preview.hidden = true; });
+  }
 
   function setBasemap(name) {
     if (!basemaps[name] || name === activeBasemap) return;
@@ -160,6 +176,7 @@ export function createMap(root) {
     basemapLayer = window.L.tileLayer(basemaps[name].url, basemaps[name]).addTo(map);
     basemapLayer.bringToBack();
     activeBasemap = name;
+    root.dataset.basemap = name;
   }
 
   let regionSelectCallback = () => {};

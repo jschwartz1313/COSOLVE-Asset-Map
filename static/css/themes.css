@@ -109,7 +109,8 @@ html[data-theme="dark"] .form-alert { color: #ffc0b4; background: #321b18; }
 html[data-theme="dark"] .type-pill { filter: saturate(.86) brightness(.92); }
 html[data-theme="dark"] .tag-list span { background: #10171a; }
 html[data-theme="dark"] #map { background: #131d22; }
-html[data-theme="dark"] #map .leaflet-tile-pane {
+html[data-theme="dark"] [data-map-app][data-basemap="street"] #map .leaflet-tile-pane,
+html[data-theme="dark"] [data-map-app][data-basemap="light"] #map .leaflet-tile-pane {
   filter: invert(.88) hue-rotate(175deg) brightness(.72) contrast(.92) saturate(.7);
 }
 html[data-theme="dark"] .map-layers,

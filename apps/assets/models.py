@@ -664,7 +664,7 @@ class SavedView(models.Model):
             layers = {value for value in params["map_layers"].split(",") if value}
             if layers - allowed_layers:
                 raise ValidationError({"query_string": "Unsupported map layer selection."})
-        if params.get("map_basemap", "street") not in {"street", "light", "imagery"}:
+        if params.get("map_basemap", "street") not in {"street", "light", "topo", "imagery"}:
             raise ValidationError({"query_string": "Unsupported map basemap selection."})
         if "map_analysis" in params:
             analysis_type, separator, payload = params["map_analysis"].partition("|")

@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20261002-1">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20261020-1">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
@@ -15,6 +15,7 @@
       data-basemap-street-url="{{ basemap_tile_url }}" data-basemap-street-attribution="{{ basemap_attribution }}"
       data-basemap-light-url="{{ light_basemap_tile_url }}" data-basemap-light-attribution="{{ light_basemap_attribution }}"
       data-basemap-imagery-url="{{ imagery_basemap_tile_url }}" data-basemap-imagery-attribution="{{ imagery_basemap_attribution }}"
+      data-basemap-topo-url="{{ topo_basemap_tile_url }}" data-basemap-topo-attribution="{{ topo_basemap_attribution }}"
       data-counties-url="{% static 'data/virginia-counties.geojson' %}?v=2025"
       data-regions-url="{% static 'data/virginia-regions.geojson' %}?v=20260728"
       data-mpz-candidates-url="{% static 'data/virginia-maritime-prosperity-candidates.geojson' %}?v=20260729"
@@ -55,6 +56,31 @@
     </header>
     <p class="visually-hidden" id="map-accessibility-note">Use the adjacent results list or directory for a text-based view of every mapped asset.</p>
     <div id="map" role="region" tabindex="0" aria-label="Interactive map of public asset listings" aria-describedby="map-accessibility-note"></div>
+    <fieldset class="basemap-picker" aria-label="Basemap">
+      <legend class="visually-hidden">Basemap</legend>
+      <div class="basemap-tiles">
+        <label title="Street basemap">
+          <input type="radio" name="map-basemap" value="street" checked>
+          <img data-basemap-preview="street" alt="" width="56" height="56" referrerpolicy="strict-origin">
+          <span>Street</span>
+        </label>
+        <label title="Grey basemap">
+          <input type="radio" name="map-basemap" value="light">
+          <img data-basemap-preview="light" alt="" width="56" height="56" referrerpolicy="strict-origin">
+          <span>Grey</span>
+        </label>
+        <label title="Topographic basemap">
+          <input type="radio" name="map-basemap" value="topo">
+          <img data-basemap-preview="topo" alt="" width="56" height="56" referrerpolicy="strict-origin">
+          <span>Topo</span>
+        </label>
+        <label title="Aerial imagery basemap">
+          <input type="radio" name="map-basemap" value="imagery">
+          <img data-basemap-preview="imagery" alt="" width="56" height="56" referrerpolicy="strict-origin">
+          <span>Aerial</span>
+        </label>
+      </div>
+    </fieldset>
     <details class="map-source-disclosure">
       <summary>Sources &amp; notes</summary>
       <div class="map-source-content">
@@ -139,12 +165,6 @@
             <strong>Point analysis</strong>
             <label title="Outline points by editorial review state"><input id="verification-layer-toggle" type="checkbox"><span>Verification status</span></label>
             <label title="Differentiate points by coordinate precision"><input id="precision-layer-toggle" type="checkbox"><span>Location precision</span></label>
-            <fieldset class="basemap-options">
-              <legend>Basemap</legend>
-              <label><input type="radio" name="map-basemap" value="street" checked><span>Street</span></label>
-              <label><input type="radio" name="map-basemap" value="light"><span>Light</span></label>
-              <label><input type="radio" name="map-basemap" value="imagery"><span>Imagery</span></label>
-            </fieldset>
           </div>
         </details>
       </div>
@@ -234,6 +254,6 @@
 </main>
 <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
 <script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
-  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20261002-1"></script>
+  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20261020-1"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}

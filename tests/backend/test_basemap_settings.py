@@ -20,6 +20,7 @@ class BasemapSettingsTests(SimpleTestCase):
         self.assertIn("/{z}/{x}/{y}{r}.png", url)
         self.assertNotIn("key=", configured["BASEMAP_TILE_URL"])
         self.assertNotIn("key=", configured["IMAGERY_BASEMAP_TILE_URL"])
+        self.assertNotIn("key=", configured["TOPO_BASEMAP_TILE_URL"])
         self.assertIn("carto.com/attributions", configured["LIGHT_BASEMAP_ATTRIBUTION"])
 
     def test_custom_provider_does_not_receive_carto_key(self):
@@ -38,3 +39,17 @@ class BasemapSettingsTests(SimpleTestCase):
     def test_no_key_is_not_replaced_with_an_invalid_placeholder(self):
         configured = self.load_settings()
         self.assertNotIn("?", configured["LIGHT_BASEMAP_TILE_URL"])
+
+    def test_topographic_basemap_uses_official_usgs_tiles(self):
+        configured = self.load_settings()
+        self.assertEqual(
+            configured["TOPO_BASEMAP_TILE_URL"],
+            "https://basemap.nationalmap.gov/arcgis/rest/services/"
+            "USGSTopo/MapServer/tile/{z}/{y}/{x}",
+        )
+        self.assertIn("USGS The National Map", configured["TOPO_BASEMAP_ATTRIBUTION"])
+
+    def test_topographic_provider_can_be_overridden(self):
+        custom = "https://tiles.example.org/topo/{z}/{x}/{y}.png"
+        configured = self.load_settings(TOPO_BASEMAP_TILE_URL=custom)
+        self.assertEqual(configured["TOPO_BASEMAP_TILE_URL"], custom)

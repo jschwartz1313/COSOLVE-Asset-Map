@@ -14,6 +14,8 @@ def map_settings(request):
         "light_basemap_attribution": settings.LIGHT_BASEMAP_ATTRIBUTION,
         "imagery_basemap_tile_url": settings.IMAGERY_BASEMAP_TILE_URL,
         "imagery_basemap_attribution": settings.IMAGERY_BASEMAP_ATTRIBUTION,
+        "topo_basemap_tile_url": settings.TOPO_BASEMAP_TILE_URL,
+        "topo_basemap_attribution": settings.TOPO_BASEMAP_ATTRIBUTION,
         "default_map_lat": settings.DEFAULT_MAP_LAT,
         "default_map_lon": settings.DEFAULT_MAP_LON,
         "default_map_zoom": settings.DEFAULT_MAP_ZOOM,

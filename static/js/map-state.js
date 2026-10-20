@@ -16,7 +16,7 @@ export const MAP_LAYER_ORDER = [
   "verification",
   "precision",
 ];
-export const MAP_BASEMAPS = ["street", "light", "imagery"];
+export const MAP_BASEMAPS = ["street", "light", "topo", "imagery"];
 
 function validNumber(value, minimum, maximum) {
   if (value == null || !String(value).trim()) return null;

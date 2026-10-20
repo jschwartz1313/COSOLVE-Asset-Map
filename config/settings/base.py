@@ -125,6 +125,15 @@ IMAGERY_BASEMAP_ATTRIBUTION = os.getenv(
     "IMAGERY_BASEMAP_ATTRIBUTION",
     "USDA, USGS The National Map: Orthoimagery",
 )
+TOPO_BASEMAP_TILE_URL = os.getenv("TOPO_BASEMAP_TILE_URL") or (
+    "https://basemap.nationalmap.gov/arcgis/rest/services/"
+    "USGSTopo/MapServer/tile/{z}/{y}/{x}"
+)
+TOPO_BASEMAP_ATTRIBUTION = os.getenv(
+    "TOPO_BASEMAP_ATTRIBUTION",
+    '<a href="https://www.usgs.gov/programs/national-geospatial-program/the-national-map">'
+    "USGS The National Map</a>",
+)
 DEFAULT_MAP_LAT = float(os.getenv("DEFAULT_MAP_LAT", "37.5"))
 DEFAULT_MAP_LON = float(os.getenv("DEFAULT_MAP_LON", "-78.7"))
 DEFAULT_MAP_ZOOM = int(os.getenv("DEFAULT_MAP_ZOOM", "7"))

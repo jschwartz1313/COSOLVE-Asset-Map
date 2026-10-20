@@ -11,7 +11,7 @@ import {
   featuresWithinRadius,
   summarizeRegion,
 } from "./map-analysis.js?v=20260906-2";
-import { createMap } from "./map.js?v=20261002-1";
+import { createMap } from "./map.js?v=20261020-1";
 import {
   analysisStateFromParams,
   filterParamsFromMapUrl,
@@ -20,7 +20,7 @@ import {
   serializePolygonAnalysis,
   serializeRadiusAnalysis,
   serializeRectangleAnalysis,
-} from "./map-state.js?v=20261002-1";
+} from "./map-state.js?v=20261020-1";
 import { bindPanelResizers } from "./panel-resize.js?v=20260821-1";
 import { renderResults, selectResult } from "./results.js?v=20260906-1";
 import { hydrateForm, paramsFromForm, updateUrl } from "./state.js?v=20260928-1";
@@ -117,6 +117,7 @@ function applyLayerToggleState(state) {
 
 applyLayerToggleState(initialMapState);
 const mapController = createMap(root);
+mapController.setBasemap(selectedBasemap());
 bindPanelResizers(root, { onResize: () => mapController.refresh() });
 const closeDrawer = bindFilterDrawer(root);
 const updateFilterIndicators = bindFilterIndicators(form);

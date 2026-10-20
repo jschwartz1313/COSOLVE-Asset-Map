@@ -22,6 +22,10 @@ class CoreViewTests(TestCase):
         self.assertContains(response, 'data-legend-toggle="asset-layer-toggle"', count=6)
         self.assertContains(response, 'data-legend-toggle="county-layer-toggle" hidden')
         self.assertContains(response, 'id="map"')
+        self.assertContains(response, 'class="basemap-picker"')
+        self.assertContains(response, 'data-basemap-topo-url=')
+        self.assertContains(response, 'name="map-basemap"', count=4)
+        self.assertNotContains(response, 'class="basemap-options"')
         self.assertContains(response, 'id="asset-layer-toggle"')
         self.assertContains(response, 'id="county-layer-toggle"')
         self.assertContains(response, 'id="region-layer-toggle"')
@@ -549,6 +553,31 @@ class SavedViewTests(TestCase):
             f"/map/?{query_string}",
             fetch_redirect_response=False,
         )
+
+    def test_saved_topographic_map_reopens_without_changing_filters(self):
+        self.client.force_login(self.owner)
+        query_string = (
+            "q=airport&region=hampton-roads&map_lat=36.9&map_lon=-76.3&map_zoom=9"
+            "&map_layers=assets%2Cstate&map_layers_v=5&map_basemap=topo"
+        )
+        response = self.client.post(reverse("core:saved-views"), {
+            "name": "Topographic airports", "view_type": SavedView.ViewType.MAP,
+            "query_string": query_string,
+        })
+        self.assertRedirects(response, reverse("core:saved-views"))
+        saved = SavedView.objects.get(owner=self.owner)
+        response = self.client.get(reverse("core:open-saved-view", args=[saved.share_token]))
+        self.assertRedirects(response, f"/map/?{query_string}", fetch_redirect_response=False)
+
+    def test_saved_map_rejects_unknown_basemap(self):
+        self.client.force_login(self.owner)
+        response = self.client.post(reverse("core:saved-views"), {
+            "name": "Unknown map", "view_type": SavedView.ViewType.MAP,
+            "query_string": "map_basemap=unrecognized",
+        })
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "Unsupported map basemap selection")
+        self.assertFalse(SavedView.objects.exists())
 
     def test_saved_map_view_reopens_with_polygon_analysis(self):
         self.client.force_login(self.owner)

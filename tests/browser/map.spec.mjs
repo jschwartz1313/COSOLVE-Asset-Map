@@ -515,7 +515,7 @@ test("analytical map tools expose quality, summaries, and saved basemaps", async
   await expect(clusterTooltip).not.toContainText("Infrastructure");
   await expect(clusterTooltip).not.toContainText("Operating environment");
 
-  await page.locator(".map-layers summary").click();
+  await expect(page.locator(".basemap-picker")).toBeVisible();
   await page.locator('input[name="map-basemap"][value="light"]').check();
   await expect
     .poll(async () =>
@@ -525,6 +525,9 @@ test("analytical map tools expose quality, summaries, and saved basemaps", async
         .getAttribute("src"),
     )
     .toContain("basemaps.cartocdn.com");
+  await page.locator('input[name="map-basemap"][value="topo"]').check();
+  await expect(page.locator(".leaflet-tile-pane img").first()).toHaveAttribute("src", /USGSTopo/);
+  await expect(page.locator(".leaflet-control-attribution")).toContainText("USGS The National Map");
   await page.locator('input[name="map-basemap"][value="imagery"]').check();
   await expect
     .poll(async () =>
@@ -535,6 +538,7 @@ test("analytical map tools expose quality, summaries, and saved basemaps", async
     )
     .toContain("basemap.nationalmap.gov");
 
+  await page.locator(".map-layers summary").click();
   await page.locator("#verification-layer-toggle").check();
   await page.locator("#precision-layer-toggle").check();
   await page.locator(".map-legend summary").click();

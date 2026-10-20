@@ -200,6 +200,18 @@ test("saved map state restores imagery and analytical layers", () => {
   assert.equal(state.basemap, "imagery");
 });
 
+test("topographic basemap round-trips without changing filters or layer choices", () => {
+  const params = paramsWithMapState(new URLSearchParams("q=drone&region=hampton-roads"), {
+    latitude: 36.9, longitude: -76.3, zoom: 9,
+    layers: ["assets", "state", "counties"], basemap: "topo",
+  });
+  assert.equal(params.get("map_basemap"), "topo");
+  const restored = mapStateFromParams(params);
+  assert.equal(restored.basemap, "topo");
+  assert.deepEqual(restored.layers, ["assets", "state", "counties"]);
+  assert.equal(filterParamsFromMapUrl(params).toString(), "q=drone&region=hampton-roads");
+});
+
 test("saved map state preserves and restores rectangle analysis geometry", () => {
   const serialized = serializeRectangleAnalysis({
     south: 36.7,
