@@ -284,7 +284,7 @@ body.is-resizing-map-panels, body.is-resizing-map-panels * { cursor: col-resize 
   .map-tools { gap: 5px; }
   .map-toolbar .button.compact { padding-inline: 9px; font-size: 12px; }
   .map-legend { position: absolute; top: 0; right: 0; }
-  .map-legend[open] { width: min(168px, calc(100vw - 16px)); max-height: calc(52vh - 16px); }
+  .map-legend[open] { width: min(168px, calc(100vw - 16px)); max-height: calc(max(52vh, 440px) - 224px); }
   .legend-content span { font-size: 9px; }
   .map-tool-details > summary { padding-inline: 9px; font-size: 11px; }
   .map-tool-details[open] { top: var(--header-height); width: min(360px, 100vw); }
@@ -301,10 +301,14 @@ body.is-resizing-map-panels, body.is-resizing-map-panels * { cursor: col-resize 
   .region-map-label { display: none; }
 }
 
-@media (max-height: 540px) and (min-width: 651px) {
+@media (max-width: 650px), (max-height: 540px) {
   .basemap-tiles { grid-template-columns: repeat(2, 50px); gap: 5px; }
   .basemap-picker label { width: 50px; height: 50px; }
   .map-source-disclosure[open] { width: min(380px, calc(100% - 130px)); }
+}
+
+@media (max-height: 540px) and (min-width: 651px) {
+  .map-legend[open] { max-height: max(70px, calc(100dvh - var(--header-height) - 224px)); }
 }
 
 body.presentation-mode { overflow: hidden; }

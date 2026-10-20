@@ -169,7 +169,13 @@ test("map credits stay compact while full source notes remain available", async 
   ).toBe(true);
   await sources.locator("summary").click();
   await expect(sources).toHaveAttribute("open", "");
-  expect((await sources.boundingBox()).width).toBeGreaterThanOrEqual(280);
+  const mapWidth = (await page.locator("#map").boundingBox()).width;
+  expect((await sources.boundingBox()).width).toBeGreaterThanOrEqual(Math.min(280, mapWidth - 130));
+  expect(await sources.evaluate(element => {
+    const source = element.getBoundingClientRect();
+    const picker = document.querySelector(".basemap-picker").getBoundingClientRect();
+    return !(source.left < picker.right && source.right > picker.left && source.top < picker.bottom && source.bottom > picker.top);
+  })).toBe(true);
   await expect(sources).toContainText("Use limitations");
   await expect(sources).toContainText("U.S. Census Bureau TIGERweb");
   await expect(sources).toContainText("not federal designations");

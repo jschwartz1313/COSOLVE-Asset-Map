@@ -120,3 +120,25 @@ test("short landscape maps use a compact two-by-two picker", async ({ page }, te
   expect(withinMap).toBe(true);
   await page.screenshot({path:testInfo.outputPath("basemaps-landscape.png"), animations:"disabled"});
 });
+
+test("expanded legends leave all basemap choices accessible on small screens", async ({ page }) => {
+  for (const viewport of [{width:390,height:844}, {width:844,height:390}]) {
+    await page.setViewportSize(viewport);
+    await page.goto("/map/");
+    await expect(page.locator("[data-map-app]")).toHaveAttribute("aria-busy", "false");
+    await page.locator(".map-legend > summary").click();
+    const clear = await page.locator(".basemap-picker label").evaluateAll(labels => labels.every(label => {
+      const rect = label.getBoundingClientRect();
+      return label.contains(document.elementFromPoint(rect.left + rect.width / 2, rect.top + rect.height / 2));
+    }));
+    expect(clear).toBe(true);
+    const overlap = await page.evaluate(() => {
+      const picker = document.querySelector(".basemap-picker").getBoundingClientRect();
+      const legend = document.querySelector(".map-legend").getBoundingClientRect();
+      return picker.left < legend.right && picker.right > legend.left && picker.top < legend.bottom && picker.bottom > legend.top;
+    });
+    expect(overlap).toBe(false);
+    await radio(page, "topo").check();
+    await expect(page.locator("[data-map-app]")).toHaveAttribute("data-basemap", "topo");
+  }
+});
