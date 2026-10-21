@@ -51,13 +51,13 @@ body.is-resizing-map-panels, body.is-resizing-map-panels * { cursor: col-resize 
 .layer-freshness.is-due > span { display: block; font-weight: 700; color: var(--brand-dark); }
 .layer-reference-note { margin: 6px 0 12px; color: var(--ink-muted); font-size: 11px; line-height: 1.5; overflow-wrap: anywhere; }
 .basemap-picker { position: absolute; z-index: 700; right: 10px; bottom: 96px; margin: 0; padding: 0; border: 0; }
-.basemap-tiles { display: grid; grid-template-columns: 56px; gap: 6px; }
-.basemap-picker label { position: relative; width: 56px; height: 56px; display: block; overflow: hidden; margin: 0; border: 2px solid var(--paper); border-radius: 3px; background: var(--surface); box-shadow: 0 1px 5px rgb(25 33 38 / 30%); cursor: pointer; }
+.basemap-tiles { display: grid; grid-template-columns: 38px; gap: 6px; }
+.basemap-picker label { position: relative; width: 38px; height: 38px; display: block; overflow: hidden; margin: 0; border: 1px solid var(--paper); border-radius: 2px; background: var(--surface); box-shadow: 0 1px 4px rgb(25 33 38 / 30%); cursor: pointer; }
 .basemap-picker img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .basemap-picker img[hidden] { display: none; }
 .basemap-picker input { position: absolute; z-index: 2; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
-.basemap-picker span { position: absolute; right: 2px; bottom: 2px; left: 2px; padding: 2px 0; background: var(--paper); color: var(--ink); font-size: 9px; line-height: 11px; font-weight: 750; text-align: center; pointer-events: none; }
-.basemap-picker label:has(input:checked) { border-color: var(--brand); box-shadow: 0 0 0 1px var(--paper), 0 0 0 3px var(--brand); }
+.basemap-picker span { position: absolute; right: 1px; bottom: 1px; left: 1px; padding: 1px 0; background: var(--paper); color: var(--ink); font-size: 9px; line-height: 11px; font-weight: 750; text-align: center; pointer-events: none; }
+.basemap-picker label:has(input:checked) { border-color: var(--brand); box-shadow: 0 0 0 1px var(--paper), 0 0 0 2px var(--brand); }
 .basemap-picker label:hover { border-color: var(--brand-dark); }
 .basemap-picker label:has(input:focus-visible) { outline: 3px solid var(--ink); outline-offset: 3px; }
 .map-stage:has(.leaflet-popup) .basemap-picker { visibility: hidden; }
@@ -302,8 +302,9 @@ body.is-resizing-map-panels, body.is-resizing-map-panels * { cursor: col-resize 
 }
 
 @media (max-width: 650px), (max-height: 540px) {
-  .basemap-tiles { grid-template-columns: repeat(2, 50px); gap: 5px; }
-  .basemap-picker label { width: 50px; height: 50px; }
+  .basemap-tiles { grid-template-columns: repeat(2, 34px); gap: 5px; }
+  .basemap-picker label { width: 34px; height: 34px; }
+  .basemap-picker span { font-size: 8px; line-height: 10px; }
   .map-source-disclosure[open] { width: min(380px, calc(100% - 130px)); }
 }
 

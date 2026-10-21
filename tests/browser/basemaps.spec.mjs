@@ -94,6 +94,12 @@ test("thumbnail controls fit both designs without covering zoom or source contro
       };
     });
     expect(layout).toEqual({inside:true, zoomOverlap:false, sourcesOverlap:false, labelsFit:true});
+    const { width, height } = page.viewportSize();
+    const size = width <= 650 || height <= 540 ? 34 : 38;
+    for (const tile of await page.locator(".basemap-picker label").all()) {
+      await expect(tile).toHaveCSS("width", `${size}px`);
+      await expect(tile).toHaveCSS("height", `${size}px`);
+    }
     await page.screenshot({path:testInfo.outputPath(`basemaps-${theme}.png`), animations:"disabled"});
   }
 });
@@ -102,7 +108,7 @@ test("short landscape maps use a compact two-by-two picker", async ({ page }, te
   await page.setViewportSize({width:844, height:390});
   await page.goto("/map/");
   const picker = page.locator(".basemap-picker");
-  await expect(page.locator(".basemap-tiles")).toHaveCSS("grid-template-columns", "50px 50px");
+  await expect(page.locator(".basemap-tiles")).toHaveCSS("grid-template-columns", "34px 34px");
   const tiles = await picker.locator("label").evaluateAll(labels => labels.map(el => {
     const { x, y, width, height } = el.getBoundingClientRect();
     return { x, y, width, height };
