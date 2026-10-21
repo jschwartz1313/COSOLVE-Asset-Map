@@ -1,6 +1,14 @@
 # Presentation modes
 
-The public interface provides four browser-side presentation modes under **Appearance** in the header. They all use the same Django views, asset records, filters, saved views, and exports.
+## Standard light interface (October 21, 2026)
+
+The public site now uses only the established light COSOLVE interface. The Appearance menu, alternate palettes, introduction markup, theme stylesheet, and theme-switching script have been removed. Existing browser preferences under `cosolve-display-mode` are ignored, including when the device prefers dark mode. Asset data, map basemaps, filters, saved views, and exports are unchanged.
+
+The More menu retains its account actions, permission checks, keyboard access, and outside-click dismissal. The original presentation implementations remain recoverable from Git history.
+
+## Retired designs (historical reference)
+
+The earlier presentation modes all used the same Django views and underlying data:
 
 | Mode | Purpose |
 | --- | --- |
@@ -9,17 +17,17 @@ The public interface provides four browser-side presentation modes under **Appea
 | Showcase | A presentation-focused dark treatment with a cinematic, multi-section entrance and real Virginia photography. |
 | Showcase Light | The full Showcase entrance, imagery, motion, and expanded layouts using the established light COSOLVE palette. |
 
-The selected mode is stored in the browser under `cosolve-display-mode`. It does not modify filter URLs, saved views, or any underlying data.
+The former selector stored its choice under `cosolve-display-mode`. The current site no longer reads or writes this preference.
 
-Print and PDF output suppresses the decorative presentation layers and uses a neutral light treatment for legibility.
+Print and PDF output continues to use the light treatment.
 
 ## Compact header (September 15, 2026)
 
-The previous always-visible four-button design selector is now an Appearance menu. All four designs remain available; no stakeholder preference has been chosen as a permanent replacement. The mobile header is reduced from approximately 186px to 94px. Map, Directory, and Regions stay visible; About data, Get connected, and account actions are under More, with the same permission checks as before. Menus close with Escape, an outside click, or a selection.
+The former four-button design selector was moved into an Appearance menu. The mobile header was reduced from approximately 186px to 94px. Map, Directory, and Regions remained visible; About data, Get connected, and account actions moved under More. This navigation arrangement remains, without the Appearance menu.
 
 ## Showcase photography
 
-Both Showcase entrances use downloaded, locally optimized copies of these source images:
+The retired Showcase entrances used locally optimized copies of these source images. These files are no longer loaded by the public interface:
 
 - NASA Langley autonomous flight research, Hampton, Virginia: NASA / Bowman, [NASA source](https://www.nasa.gov/aeronautics/nasa-flies-autonomous-drones/)
 - Autonomous surface vessel demonstration, Fort Monroe, Virginia: U.S. Navy public-domain image, [DVIDS source](https://www.dvidshub.net/image/144663/autonomous-unmanned-surface-vehicle-demonstration)

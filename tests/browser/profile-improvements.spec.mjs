@@ -1,14 +1,7 @@
-import { THEMES } from "../../static/js/theme-switcher.js";
 import { expect, test } from "@playwright/test";
-
-async function enterMap(page) {
-  const cover = page.locator("[data-showcase-cover]");
-  if (await cover.isVisible()) await page.locator("[data-showcase-enter]").first().click();
-}
 
 test("misspelled names find the same asset in map and directory", async ({ page }, testInfo) => {
   await page.goto("/map/");
-  await enterMap(page);
   const filtersButton = page.getByRole("button", { name: "Open filters" });
   if (await filtersButton.isVisible()) await filtersButton.click();
   await page.locator('input[name="q"]').fill("reactor");
@@ -84,26 +77,19 @@ test("unmapped networks remain listed without misleading point geometry", async 
   expect(network.properties.location.role_label).toBe("Service area / multiple sites");
 });
 
-test("operator details and location evidence fit both active designs", async ({ page }, testInfo) => {
+test("operator details and location evidence fit the standard design", async ({ page }, testInfo) => {
   test.setTimeout(120_000);
-  for (const theme of THEMES) {
-    await page.goto("/map/");
-    await enterMap(page);
-    await page.locator(".appearance-menu > summary").click();
-    await page.locator(`[data-theme-choice="${theme}"]`).click();
-    await enterMap(page);
-    await page.goto("/assets/xelevate-leesburg-unmanned-systems-facility/");
-    await expect(page.locator(".test-specifications")).toContainText("66-acre");
-    await expect(page.locator(".test-specifications")).toContainText("different site");
-    await expect(page.locator('a[href="mailto:jburkel@xelevateus.com"]')).toBeVisible();
-    const overflow = await page.locator("h1, .test-spec-list dd, .detail-sidebar dd")
-      .evaluateAll((els) => els.filter((el) => el.scrollWidth > el.clientWidth + 1)
-        .map((el) => el.textContent));
-    expect(overflow).toEqual([]);
-    expect(await page.evaluate(() => document.documentElement.scrollWidth))
-      .toBeLessThanOrEqual(page.viewportSize().width);
-    await page.screenshot({
-      path: testInfo.outputPath(`profile-${theme}.png`), fullPage: true, animations: "disabled",
-    });
-  }
+  await page.goto("/assets/xelevate-leesburg-unmanned-systems-facility/");
+  await expect(page.locator(".test-specifications")).toContainText("66-acre");
+  await expect(page.locator(".test-specifications")).toContainText("different site");
+  await expect(page.locator('a[href="mailto:jburkel@xelevateus.com"]')).toBeVisible();
+  const overflow = await page.locator("h1, .test-spec-list dd, .detail-sidebar dd")
+    .evaluateAll((els) => els.filter((el) => el.scrollWidth > el.clientWidth + 1)
+      .map((el) => el.textContent));
+  expect(overflow).toEqual([]);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth))
+    .toBeLessThanOrEqual(page.viewportSize().width);
+  await page.screenshot({
+    path: testInfo.outputPath("profile-light.png"), fullPage: true, animations: "disabled",
+  });
 });

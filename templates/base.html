@@ -1,31 +1,18 @@
 {% load static %}
 <!doctype html>
-<html lang="en" data-theme="classic">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{% block meta_description %}Explore the unmanned and autonomous systems ecosystem in {{ public_scope_name }} through the COSOLVE asset map and directory.{% endblock %}">
   <meta name="theme-color" content="#ffffff" id="theme-color-meta">
   <title>{% block title %}COSOLVE Asset Map{% endblock %}</title>
-  <script>
-    (() => {
-      const allowedThemes = ["classic", "dark"];
-      try {
-        const savedTheme = localStorage.getItem("cosolve-display-mode");
-        const theme = allowedThemes.includes(savedTheme) ? savedTheme : "classic";
-        document.documentElement.dataset.theme = theme;
-      } catch (error) {
-        document.documentElement.dataset.theme = "classic";
-      }
-    })();
-  </script>
   <link rel="icon" type="image/png" href="{% static 'img/cosolve-logo-black.png' %}">
   <link rel="apple-touch-icon" href="{% static 'img/cosolve-logo-black.png' %}">
   <link rel="stylesheet" href="{% static 'css/tokens.css' %}?v=20260717">
-  <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20261021-2">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20261021-3">
   {% block extra_css %}{% endblock %}
-  <link rel="stylesheet" href="{% static 'css/themes.css' %}?v=20261020-1">
-  <script type="module" src="{% static 'js/theme-switcher.js' %}?v=20261015-1"></script>
+  <script type="module" src="{% static 'js/site-header.js' %}?v=20261021-1"></script>
 </head>
 <body class="{% block body_class %}{% endblock %}">
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -36,26 +23,6 @@
       </span>
       <small>{{ public_scope_name }} Asset Map</small>
     </a>
-    <details class="appearance-menu header-menu" data-header-menu>
-      <summary title="Choose site appearance"><span class="theme-swatch" data-current-theme-swatch aria-hidden="true"></span>Appearance</summary>
-      <div class="appearance-switcher header-menu-panel" role="group" aria-label="Site appearance">
-      <button type="button" data-theme-choice="classic" data-mobile-label="Current" aria-pressed="true" title="Current view">
-        <span class="theme-swatch swatch-classic" aria-hidden="true"></span><span>Current</span>
-      </button>
-      <button type="button" data-theme-choice="dark" data-mobile-label="Dark" aria-pressed="false" title="Dark view">
-        <span class="theme-swatch swatch-dark" aria-hidden="true"></span><span>Dark</span>
-      </button>
-      {% comment "Showcase appearances are paused; retain their controls for restoration." %}
-      <button type="button" data-theme-choice="showcase" data-mobile-label="Show" aria-pressed="false" title="Showcase view">
-        <span class="theme-swatch swatch-showcase" aria-hidden="true"></span><span>Showcase</span>
-      </button>
-      <button type="button" data-theme-choice="showcase-light" data-mobile-label="Light" aria-pressed="false" title="Showcase Light view">
-        <span class="theme-swatch swatch-showcase-light" aria-hidden="true"></span><span>Showcase Light</span>
-      </button>
-      {% endcomment %}
-      <span class="visually-hidden" data-theme-status role="status" aria-live="polite"></span>
-      </div>
-    </details>
     <nav class="primary-nav" aria-label="Primary navigation">
       <a href="{% url 'core:map' %}" {% if request.resolver_match.url_name == 'map' or request.resolver_match.url_name == 'home' %}aria-current="page"{% endif %}>Map</a>
       <a id="directory-link" href="{% url 'core:directory' %}" {% if request.resolver_match.url_name == 'directory' or request.resolver_match.url_name == 'asset-detail' or request.resolver_match.url_name == 'asset-suggest-update' %}aria-current="page"{% endif %}>Directory</a>
@@ -76,91 +43,6 @@
       </details>
     </nav>
   </header>
-  <div class="theme-page-visual" aria-hidden="true"></div>
-  {% comment "Showcase introductions are paused with their appearances, avoiding unused image loads." %}
-  <section class="showcase-cover" data-showcase-cover role="dialog" aria-modal="true" aria-labelledby="showcase-cover-title" hidden>
-    <div class="showcase-progress" aria-hidden="true"><span></span></div>
-    <div class="showcase-topbar">
-      <div class="showcase-wordmark">
-        <img src="{% static 'img/cosolve-logo-black.png' %}" alt="">
-        <span>Virginia UxS intelligence</span>
-      </div>
-      <button class="showcase-enter showcase-enter-quiet" type="button" data-showcase-enter>
-        Open asset map <span aria-hidden="true">&rarr;</span>
-      </button>
-    </div>
-    <div class="showcase-scroll" data-showcase-scroll>
-      <section class="showcase-hero">
-        <img class="showcase-hero-image" src="{% static 'img/themes/nasa-langley-autonomous-drone.webp' %}" alt="An autonomous NASA test drone flying above NASA Langley Research Center in Hampton, Virginia">
-        <div class="showcase-hero-shade" aria-hidden="true"></div>
-        <div class="showcase-cover-copy">
-          <span class="showcase-kicker">COSOLVE Geographic Asset Intelligence</span>
-          <h1 id="showcase-cover-title">See Virginia's autonomy ecosystem as a system.</h1>
-          <p>Research. Infrastructure. Industry. Missions.</p>
-          <button class="showcase-enter" type="button" data-showcase-scroll-story>
-            Explore the landscape <span aria-hidden="true">&darr;</span>
-          </button>
-        </div>
-        <div class="showcase-photo-credit">NASA Langley Research Center, Hampton | NASA / Bowman</div>
-      </section>
-
-      <section class="showcase-statement" data-showcase-reveal>
-        <span class="showcase-section-index">01 / The connected field</span>
-        <div>
-          <h2>Virginia's advantage lives between the assets.</h2>
-          <p>Test ranges connect to researchers. Ports connect to maritime missions. Universities connect talent to industry. The map makes those relationships visible across the Commonwealth.</p>
-        </div>
-      </section>
-
-      <section class="showcase-photo-grid" aria-label="Virginia autonomy ecosystem photography">
-        <figure class="showcase-photo showcase-photo-wide" data-showcase-reveal>
-          <img src="{% static 'img/themes/fort-monroe-autonomous-usv.webp' %}" alt="Two U.S. Navy autonomous test craft operating near Fort Monroe, Virginia" loading="lazy">
-          <figcaption><span>Maritime autonomy</span><strong>Fort Monroe, Virginia</strong><small>U.S. Navy public-domain photo</small></figcaption>
-        </figure>
-        <figure class="showcase-photo" data-showcase-reveal>
-          <img src="{% static 'img/themes/virginia-beach-uas-survey.webp' %}" alt="A U.S. Army Corps of Engineers operator conducting an unmanned aerial survey at Sandbridge Beach" loading="lazy">
-          <figcaption><span>Applied operations</span><strong>Virginia Beach</strong><small>U.S. Army photo / Patrick Bloodgood</small></figcaption>
-        </figure>
-        <figure class="showcase-photo" data-showcase-reveal>
-          <img src="{% static 'img/themes/norfolk-international-terminal.webp' %}" alt="A U.S. Army Corps survey vessel passing cranes at Norfolk International Terminal" loading="lazy">
-          <figcaption><span>Strategic infrastructure</span><strong>Port of Virginia</strong><small>U.S. Army photo / Patrick Bloodgood</small></figcaption>
-        </figure>
-      </section>
-
-      <section class="showcase-domains" data-showcase-reveal>
-        <span class="showcase-section-index">02 / One statewide view</span>
-        <h2>From research bench to operating environment.</h2>
-        <div class="showcase-domain-list">
-          <div><span>01</span><strong>Air</strong><small>Flight research, smart airspace, airports, and test ranges</small></div>
-          <div><span>02</span><strong>Land</strong><small>Robotics, autonomy software, manufacturing, and field operations</small></div>
-          <div><span>03</span><strong>Maritime</strong><small>Ports, shipyards, offshore missions, and autonomous vessels</small></div>
-          <div><span>04</span><strong>Space</strong><small>Launch, sensing, communications, and supporting infrastructure</small></div>
-        </div>
-      </section>
-
-      <section class="showcase-final" data-showcase-reveal>
-        <img src="{% static 'img/themes/norfolk-international-terminal.webp' %}" alt="" loading="lazy">
-        <div>
-          <span class="showcase-section-index">03 / Explore the evidence</span>
-          <h2>Move from the statewide picture to the individual asset.</h2>
-          <button class="showcase-enter" type="button" data-showcase-enter>
-            Enter the asset map <span aria-hidden="true">&rarr;</span>
-          </button>
-        </div>
-      </section>
-
-      <details class="showcase-credits">
-        <summary>Photography sources</summary>
-        <p>
-          <a href="https://www.nasa.gov/aeronautics/nasa-flies-autonomous-drones/" target="_blank" rel="noopener">NASA Langley autonomous flight research</a>
-          <a href="https://www.dvidshub.net/image/144663/autonomous-unmanned-surface-vehicle-demonstration" target="_blank" rel="noopener">U.S. Navy autonomous surface vessel demonstration</a>
-          <a href="https://www.dvidshub.net/image/5738169/flying-uas" target="_blank" rel="noopener">U.S. Army Corps UAS survey</a>
-          <a href="https://www.dvidshub.net/image/5052532/usace-port-virginia-ramp-up-norfolk-harbor-deepening-efforts" target="_blank" rel="noopener">Norfolk International Terminal</a>
-        </p>
-      </details>
-    </div>
-  </section>
-  {% endcomment %}
   {% if messages %}
     <div class="messages" aria-live="polite">
       {% for message in messages %}<div class="message {{ message.tags }}">{{ message }}</div>{% endfor %}

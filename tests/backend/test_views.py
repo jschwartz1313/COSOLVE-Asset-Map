@@ -51,6 +51,19 @@ class CoreViewTests(TestCase):
     def test_relationship_network_page_is_not_public(self):
         self.assertEqual(self.client.get("/relationships/").status_code, 404)
 
+    def test_public_pages_only_load_the_standard_design(self):
+        for name in ("core:map", "core:directory", "core:about-data", "core:region-compare"):
+            with self.subTest(page=name):
+                response = self.client.get(reverse(name))
+                self.assertContains(response, "js/site-header.js")
+                self.assertContains(response, 'class="navigation-menu header-menu"')
+                self.assertNotContains(response, "appearance-menu")
+                self.assertNotContains(response, "data-theme-choice")
+                self.assertNotContains(response, "theme-switcher.js")
+                self.assertNotContains(response, "themes.css")
+                self.assertNotContains(response, "cosolve-display-mode")
+                self.assertNotContains(response, "showcase-cover")
+
     def test_health_endpoint(self):
         self.assertEqual(self.client.get(reverse("core:health")).json(), {"status": "ok"})
 

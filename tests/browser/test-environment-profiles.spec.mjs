@@ -1,12 +1,4 @@
-import { THEMES } from "../../static/js/theme-switcher.js";
 import { expect, test } from "@playwright/test";
-
-async function enterSite(page) {
-  if (await page.locator("[data-showcase-cover]").isVisible()) {
-    await page.locator("[data-showcase-enter]").first().click();
-    await expect(page.locator("[data-showcase-cover]")).toBeHidden();
-  }
-}
 
 test("practical-use searches find the relevant facilities and suppliers", async ({ page }) => {
   for (const [query, name] of [
@@ -29,7 +21,7 @@ test("historical corridor evidence and a published business contact remain disti
   await expect(page.locator(".detail-sidebar")).toContainText("901-336-6551");
 });
 
-test("new testing profiles fit desktop and mobile in both active designs", async ({ page }, testInfo) => {
+test("new testing profiles fit desktop and mobile", async ({ page }, testInfo) => {
   test.setTimeout(120_000);
   const profiles = [
     ["nasa-langley-landing-and-impact-research-facility", "crash-test"],
@@ -38,28 +30,21 @@ test("new testing profiles fit desktop and mobile in both active designs", async
     ["xelevate-luray-mountain-range", "mountainous terrain"],
     ["nasa-wallops-uas-test-and-integration-facility", "bench checkout"],
   ];
-  for (const theme of THEMES) {
-    await page.goto(`/assets/${profiles[0][0]}/`);
-    await enterSite(page);
-    await page.locator(".appearance-menu > summary").click();
-    await page.locator(`[data-theme-choice="${theme}"]`).click();
-    await enterSite(page);
-    for (const [slug, use] of profiles) {
-      await page.goto(`/assets/${slug}/`);
-      await expect(page.locator(".overview-section")).toContainText(use);
-      await expect(page.locator(".test-specifications")).toContainText("2026");
-      const overflow = await page
-        .locator("h1, .detail-main p, .test-spec-list dd, .detail-sidebar dd")
-        .evaluateAll(elements => elements
-          .filter(el => el.scrollWidth > el.clientWidth + 1)
-          .map(el => el.textContent));
-      expect(overflow).toEqual([]);
-      expect(await page.evaluate(() => document.documentElement.scrollWidth))
-        .toBeLessThanOrEqual(page.viewportSize().width);
-    }
-    await page.screenshot({
-      path: testInfo.outputPath(`testing-profiles-${theme}.png`),
-      fullPage: true, animations: "disabled",
-    });
+  for (const [slug, use] of profiles) {
+    await page.goto(`/assets/${slug}/`);
+    await expect(page.locator(".overview-section")).toContainText(use);
+    await expect(page.locator(".test-specifications")).toContainText("2026");
+    const overflow = await page
+      .locator("h1, .detail-main p, .test-spec-list dd, .detail-sidebar dd")
+      .evaluateAll(elements => elements
+        .filter(el => el.scrollWidth > el.clientWidth + 1)
+        .map(el => el.textContent));
+    expect(overflow).toEqual([]);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth))
+      .toBeLessThanOrEqual(page.viewportSize().width);
   }
+  await page.screenshot({
+    path: testInfo.outputPath("testing-profiles-light.png"),
+    fullPage: true, animations: "disabled",
+  });
 });

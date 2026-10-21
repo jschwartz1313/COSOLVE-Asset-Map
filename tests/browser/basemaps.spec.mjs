@@ -1,5 +1,4 @@
 import { expect, test } from "@playwright/test";
-import { THEMES } from "../../static/js/theme-switcher.js";
 
 const radio = (page, value) => page.locator(`input[name="map-basemap"][value="${value}"]`);
 const statefulMap = "/map/?q=airport&map_lat=37.2&map_lon=-80.4&map_zoom=9"
@@ -73,35 +72,31 @@ test("the picker yields to asset popups and returns when they close", async ({ p
   await expect(radio(page, "street")).toBeChecked();
 });
 
-test("thumbnail controls fit both designs without covering zoom or source controls", async ({ page }, testInfo) => {
-  for (const theme of THEMES) {
-    await page.goto("/map/");
-    await page.locator(".appearance-menu > summary").click();
-    await page.locator(`[data-theme-choice="${theme}"]`).click();
-    await radio(page, "topo").check();
-    await expect(page.locator("#map .leaflet-tile-pane")).toHaveCSS("filter", "none");
-    const layout = await page.evaluate(() => {
-      const box = (selector) => document.querySelector(selector).getBoundingClientRect();
-      const stage = box(".map-stage");
-      const picker = box(".basemap-picker");
-      const zoom = box(".leaflet-control-zoom");
-      const sources = box(".map-source-disclosure");
-      const overlaps = (a, b) => a.left < b.right && a.right > b.left && a.top < b.bottom && a.bottom > b.top;
-      return {
-        inside: picker.left >= stage.left && picker.right <= stage.right && picker.top >= stage.top && picker.bottom <= stage.bottom,
-        zoomOverlap: overlaps(picker, zoom), sourcesOverlap: overlaps(picker, sources),
-        labelsFit: [...document.querySelectorAll(".basemap-picker span")].every(el => el.scrollWidth <= el.clientWidth),
-      };
-    });
-    expect(layout).toEqual({inside:true, zoomOverlap:false, sourcesOverlap:false, labelsFit:true});
-    const { width, height } = page.viewportSize();
-    const size = width <= 650 || height <= 540 ? 34 : 38;
-    for (const tile of await page.locator(".basemap-picker label").all()) {
-      await expect(tile).toHaveCSS("width", `${size}px`);
-      await expect(tile).toHaveCSS("height", `${size}px`);
-    }
-    await page.screenshot({path:testInfo.outputPath(`basemaps-${theme}.png`), animations:"disabled"});
+test("thumbnail controls fit without covering zoom or source controls", async ({ page }, testInfo) => {
+  await page.goto("/map/");
+  await radio(page, "topo").check();
+  await expect(page.locator("#map .leaflet-tile-pane")).toHaveCSS("filter", "none");
+  const layout = await page.evaluate(() => {
+    const box = (selector) => document.querySelector(selector).getBoundingClientRect();
+    const stage = box(".map-stage");
+    const picker = box(".basemap-picker");
+    const zoom = box(".leaflet-control-zoom");
+    const sources = box(".map-source-disclosure");
+    const overlaps = (a, b) => a.left < b.right && a.right > b.left && a.top < b.bottom && a.bottom > b.top;
+    return {
+      inside: picker.left >= stage.left && picker.right <= stage.right && picker.top >= stage.top && picker.bottom <= stage.bottom,
+      zoomOverlap: overlaps(picker, zoom), sourcesOverlap: overlaps(picker, sources),
+      labelsFit: [...document.querySelectorAll(".basemap-picker span")].every(el => el.scrollWidth <= el.clientWidth),
+    };
+  });
+  expect(layout).toEqual({inside:true, zoomOverlap:false, sourcesOverlap:false, labelsFit:true});
+  const { width, height } = page.viewportSize();
+  const size = width <= 650 || height <= 540 ? 34 : 38;
+  for (const tile of await page.locator(".basemap-picker label").all()) {
+    await expect(tile).toHaveCSS("width", `${size}px`);
+    await expect(tile).toHaveCSS("height", `${size}px`);
   }
+  await page.screenshot({path:testInfo.outputPath("basemaps-light.png"), animations:"disabled"});
 });
 
 test("short landscape maps use a compact two-by-two picker", async ({ page }, testInfo) => {

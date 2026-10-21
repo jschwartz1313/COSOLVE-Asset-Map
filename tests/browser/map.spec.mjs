@@ -1,4 +1,3 @@
-import { THEMES } from "../../static/js/theme-switcher.js";
 import { expect, test } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import { publicAssetCount } from "./helpers.mjs";
@@ -184,47 +183,37 @@ test("map credits stay compact while full source notes remain available", async 
   await expect(sources).toContainText("Virginia Spaceport Authority");
 });
 
-test("visible map labels fit inside their controls across themes and widths", async ({ page }) => {
+test("visible map labels fit inside their controls across widths", async ({ page }) => {
   test.setTimeout(60_000);
   const sizes = [
     { width: 1280, height: 720 },
     { width: 900, height: 768 },
     { width: 390, height: 844 },
   ];
-  const themes = THEMES;
 
   for (const size of sizes) {
     await page.setViewportSize(size);
     await page.goto("/map/");
-    const cover = page.locator("[data-showcase-cover]");
-    if (await cover.isVisible()) await page.locator("[data-showcase-enter]").first().click();
+    const overflows = await page
+      .locator(
+        ".map-workspace button, .map-workspace details > summary, "
+        + ".map-workspace .asset-type-badge, .map-workspace .active-filter-chip, "
+        + ".map-workspace .result-row h3, .map-workspace .result-row p",
+      )
+      .evaluateAll((elements) => elements
+        .filter((element) => {
+          const style = getComputedStyle(element);
+          return style.display !== "none"
+            && element.getClientRects().length > 0
+            && (element.scrollWidth > element.clientWidth + 1
+              || element.scrollHeight > element.clientHeight + 1);
+        })
+        .map((element) => ({
+          className: element.className,
+          text: element.textContent.trim().replace(/\s+/g, " ").slice(0, 80),
+        })));
 
-    for (const theme of themes) {
-      await page.locator(".appearance-menu > summary").click();
-      await page.locator(`[data-theme-choice="${theme}"]`).click();
-      if (await cover.isVisible()) await page.locator("[data-showcase-enter]").first().click();
-
-      const overflows = await page
-        .locator(
-          ".map-workspace button, .map-workspace details > summary, "
-          + ".map-workspace .asset-type-badge, .map-workspace .active-filter-chip, "
-          + ".map-workspace .result-row h3, .map-workspace .result-row p",
-        )
-        .evaluateAll((elements) => elements
-          .filter((element) => {
-            const style = getComputedStyle(element);
-            return style.display !== "none"
-              && element.getClientRects().length > 0
-              && (element.scrollWidth > element.clientWidth + 1
-                || element.scrollHeight > element.clientHeight + 1);
-          })
-          .map((element) => ({
-            className: element.className,
-            text: element.textContent.trim().replace(/\s+/g, " ").slice(0, 80),
-          })));
-
-      expect(overflows, `${theme} at ${size.width}px`).toEqual([]);
-    }
+    expect(overflows, `at ${size.width}px`).toEqual([]);
   }
 });
 

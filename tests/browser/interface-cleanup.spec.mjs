@@ -1,4 +1,3 @@
-import { THEMES } from "../../static/js/theme-switcher.js";
 import { expect, test } from "@playwright/test";
 
 test("map headings stay concise and the legend follows visible overlays", async ({ page }) => {
@@ -162,44 +161,37 @@ test("saved layer selections and printed legends omit inactive overlays", async 
   await expect(page.locator(".legend-line.county-boundary")).toBeVisible();
 });
 
-test("simplified headings and unboxed profile sections fit all designs", async ({ page }, testInfo) => {
+test("simplified headings and unboxed profile sections fit the standard design", async ({ page }, testInfo) => {
   test.setTimeout(120_000);
-  for (const theme of THEMES) {
-    await page.goto("/map/");
-    await expect(page.locator(".result-row").first()).toBeVisible();
-    await page.locator(".appearance-menu > summary").click();
-    await page.locator(`[data-theme-choice="${theme}"]`).click();
-    const cover = page.locator("[data-showcase-cover]");
-    if (await cover.isVisible()) await page.locator("[data-showcase-enter]").first().click();
-    await expect(cover).toBeHidden();
-    await page.locator(".map-legend summary").click();
-    await page.screenshot({ path: testInfo.outputPath(`map-${theme}.png`), fullPage: true, animations: "disabled" });
+  await page.goto("/map/");
+  await expect(page.locator(".result-row").first()).toBeVisible();
+  await page.locator(".map-legend summary").click();
+  await page.screenshot({ path: testInfo.outputPath("map-light.png"), fullPage: true, animations: "disabled" });
 
-    await page.goto("/directory/");
-    await expect(page.locator(".directory-filters .eyebrow, .directory-heading .eyebrow")).toHaveCount(0);
-    await page.screenshot({ path: testInfo.outputPath(`directory-${theme}.png`), fullPage: true, animations: "disabled" });
+  await page.goto("/directory/");
+  await expect(page.locator(".directory-filters .eyebrow, .directory-heading .eyebrow")).toHaveCount(0);
+  await page.screenshot({ path: testInfo.outputPath("directory-light.png"), fullPage: true, animations: "disabled" });
 
-    await page.goto("/assets/xelevate-leesburg-unmanned-systems-facility/");
-    const sections = page.locator(".detail-sidebar section");
-    await expect(sections.first()).toBeVisible();
-    for (const section of await sections.all()) {
-      await expect(section).toHaveCSS("border-left-width", "0px");
-      await expect(section).toHaveCSS("border-right-width", "0px");
-      await expect(section).toHaveCSS("border-bottom-width", "0px");
-      await expect(section).toHaveCSS("background-color", "rgba(0, 0, 0, 0)");
-    }
-    await expect(sections.first()).toHaveCSS("border-top-width", "0px");
-    await expect(sections.nth(1)).toHaveCSS("border-top-width", "1px");
-    await expect(page.locator(".detail-sidebar")).toContainText("Contact and information");
-    await expect(page.locator(".detail-sidebar")).toContainText("Location");
-    await expect(page.locator(".detail-sidebar")).toContainText("Classification");
-    await expect(page.locator(".detail-verification-footer")).toHaveCount(0);
-    await expect(page.locator("main")).not.toContainText("Review status");
-    await expect(page.locator("main")).not.toContainText("Record updated");
-    const overflow = await page.locator(".detail-sidebar h2, .detail-sidebar dd")
-      .evaluateAll((elements) => elements.filter((el) => el.scrollWidth > el.clientWidth + 1).map((el) => el.textContent));
-    expect(overflow).toEqual([]);
-    expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(page.viewportSize().width);
-    await page.screenshot({ path: testInfo.outputPath(`profile-${theme}.png`), fullPage: true, animations: "disabled" });
+  await page.goto("/assets/xelevate-leesburg-unmanned-systems-facility/");
+  const sections = page.locator(".detail-sidebar section");
+  await expect(sections.first()).toBeVisible();
+  for (const section of await sections.all()) {
+    await expect(section).toHaveCSS("border-left-width", "0px");
+    await expect(section).toHaveCSS("border-right-width", "0px");
+    await expect(section).toHaveCSS("border-bottom-width", "0px");
+    await expect(section).toHaveCSS("background-color", "rgba(0, 0, 0, 0)");
   }
+  await expect(sections.first()).toHaveCSS("border-top-width", "0px");
+  await expect(sections.nth(1)).toHaveCSS("border-top-width", "1px");
+  await expect(page.locator(".detail-sidebar")).toContainText("Contact and information");
+  await expect(page.locator(".detail-sidebar")).toContainText("Location");
+  await expect(page.locator(".detail-sidebar")).toContainText("Classification");
+  await expect(page.locator(".detail-verification-footer")).toHaveCount(0);
+  await expect(page.locator("main")).not.toContainText("Review status");
+  await expect(page.locator("main")).not.toContainText("Record updated");
+  const overflow = await page.locator(".detail-sidebar h2, .detail-sidebar dd")
+    .evaluateAll((elements) => elements.filter((el) => el.scrollWidth > el.clientWidth + 1).map((el) => el.textContent));
+  expect(overflow).toEqual([]);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(page.viewportSize().width);
+  await page.screenshot({ path: testInfo.outputPath("profile-light.png"), fullPage: true, animations: "disabled" });
 });

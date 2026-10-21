@@ -1,4 +1,3 @@
-import { THEMES } from "../../static/js/theme-switcher.js";
 import { expect, test } from "@playwright/test";
 
 test("MAAP outlines toggle, restore, explain draft status and fit their popup", async ({ page }, testInfo) => {
@@ -67,17 +66,12 @@ test("MAAP outlines toggle, restore, explain draft status and fit their popup", 
   expect(errors).toEqual([]);
 });
 
-test("MAAP source notes and site profiles remain usable across designs", async ({ page }, testInfo) => {
-  for (const theme of THEMES) {
-    await page.addInitScript((mode) => {
-      localStorage.setItem("cosolve-display-mode", mode);
-    }, theme);
-    await page.goto("/references/maap/");
-    await page.keyboard.press("Escape");
-    await expect(page.getByRole("heading", { name: "MAAP facilities and flight areas", exact: true })).toBeVisible();
-    expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBeTruthy();
-    await page.screenshot({ path: testInfo.outputPath(`maap-reference-${theme}.png`), fullPage: true });
-  }
+test("MAAP source notes and site profiles remain usable", async ({ page }, testInfo) => {
+  await page.goto("/references/maap/");
+  await page.keyboard.press("Escape");
+  await expect(page.getByRole("heading", { name: "MAAP facilities and flight areas", exact: true })).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth + 1)).toBeTruthy();
+  await page.screenshot({ path: testInfo.outputPath("maap-reference-light.png"), fullPage: true });
   await page.goto("/assets/virginia-tech-vtti-smart-airspace-vertiport/");
   await page.keyboard.press("Escape");
   await expect(page.locator("main")).toContainText("8VA2");

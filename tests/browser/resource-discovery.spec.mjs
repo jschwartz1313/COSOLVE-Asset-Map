@@ -1,4 +1,3 @@
-import { THEMES } from "../../static/js/theme-switcher.js";
 import { expect, test } from "@playwright/test";
 
 test("resource filters persist between map and directory and clear completely", async ({ page }) => {
@@ -32,30 +31,20 @@ test("active programs and published specifications are visible", async ({ page }
   await expect(page.locator(".test-specifications a")).toHaveAttribute("href", /ictas\.vt\.edu/);
 });
 
-test("new resource controls and connection routes fit both active designs", async ({ page }, testInfo) => {
+test("new resource controls and connection routes fit the standard design", async ({ page }, testInfo) => {
   test.setTimeout(90_000);
-  for (const theme of THEMES) {
-    await page.goto("/map/?test_specs=1");
-    const cover = page.locator("[data-showcase-cover]");
-    if (await cover.isVisible()) await page.locator("[data-showcase-enter]").first().click();
-    await expect(cover).toBeHidden();
-    await page.locator(".appearance-menu > summary").click();
-    await page.locator(`[data-theme-choice="${theme}"]`).click();
-    if (await cover.isVisible()) await page.locator("[data-showcase-enter]").first().click();
-    await expect(cover).toBeHidden();
-    if (await page.locator(".filter-open").isVisible()) await page.locator(".filter-open").click();
-    await expect(page.locator(".project-site-fields")).toBeVisible();
-    await page.screenshot({ path: testInfo.outputPath(`resource-${theme}.png`), fullPage: true });
-    await page.goto("/connect/");
-    await expect(cover).toBeHidden();
-    await expect(page.getByRole("heading", { name: "Get connected", exact: true })).toBeVisible();
-    await expect(page.locator(".connection-row")).toHaveCount(5);
-    const overflows = await page.locator(".connection-row h2, .connection-row p, .test-spec-list dd")
-      .evaluateAll((elements) => elements.filter((el) => el.scrollWidth > el.clientWidth + 1)
-        .map((el) => el.textContent));
-    expect(overflows).toEqual([]);
-    expect(await page.evaluate(() => document.documentElement.scrollWidth))
-      .toBeLessThanOrEqual(page.viewportSize().width);
-    await page.screenshot({ path: testInfo.outputPath(`connect-${theme}.png`), fullPage: true });
-  }
+  await page.goto("/map/?test_specs=1");
+  if (await page.locator(".filter-open").isVisible()) await page.locator(".filter-open").click();
+  await expect(page.locator(".project-site-fields")).toBeVisible();
+  await page.screenshot({ path: testInfo.outputPath("resource-light.png"), fullPage: true });
+  await page.goto("/connect/");
+  await expect(page.getByRole("heading", { name: "Get connected", exact: true })).toBeVisible();
+  await expect(page.locator(".connection-row")).toHaveCount(5);
+  const overflows = await page.locator(".connection-row h2, .connection-row p, .test-spec-list dd")
+    .evaluateAll((elements) => elements.filter((el) => el.scrollWidth > el.clientWidth + 1)
+      .map((el) => el.textContent));
+  expect(overflows).toEqual([]);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth))
+    .toBeLessThanOrEqual(page.viewportSize().width);
+  await page.screenshot({ path: testInfo.outputPath("connect-light.png"), fullPage: true });
 });

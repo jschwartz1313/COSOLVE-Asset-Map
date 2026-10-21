@@ -2,32 +2,28 @@ import { expect, test } from "@playwright/test";
 
 const face = (select) => select.locator("..").locator(".filter-select-value");
 
-test("long filter selections fit a narrow panel in both designs", async ({ page }, testInfo) => {
+test("long filter selections fit a narrow panel", async ({ page }, testInfo) => {
   await page.setViewportSize({ width: 1280, height: 800 });
-  for (const theme of ["classic", "dark"]) {
-    await page.goto("/map/?purpose=business&record_type=operating-environment&activity=undocumented");
-    await page.locator(".appearance-menu > summary").click();
-    await page.locator(`[data-theme-choice="${theme}"]`).click();
-    await page.locator(".panel-resizer-left").press("Home");
-    await expect(page.locator(".filters-panel")).toHaveCSS("width", "220px");
-    const resource = page.getByRole("combobox", { name: "Find resources", exact: true });
-    await expect(face(resource)).toHaveText("Business support and partnerships");
-    await expect(face(resource)).toHaveCSS("font-size", "13px");
-    await expect(face(resource)).toHaveAttribute("aria-hidden", "true");
-    for (const select of await page.locator("#asset-filters select").all()) {
-      const options = await select.locator("option").evaluateAll((options) =>
-        options.map((el) => ({ value: el.value, label: el.label })));
-      for (const option of options) {
-        await select.selectOption(option.value);
-        await expect(face(select)).toHaveText(option.label);
-        const fits = await face(select).evaluate((el) =>
-          el.scrollWidth <= el.clientWidth && el.scrollHeight <= el.clientHeight);
-        expect(fits, option.label).toBe(true);
-      }
+  await page.goto("/map/?purpose=business&record_type=operating-environment&activity=undocumented");
+  await page.locator(".panel-resizer-left").press("Home");
+  await expect(page.locator(".filters-panel")).toHaveCSS("width", "220px");
+  const resource = page.getByRole("combobox", { name: "Find resources", exact: true });
+  await expect(face(resource)).toHaveText("Business support and partnerships");
+  await expect(face(resource)).toHaveCSS("font-size", "13px");
+  await expect(face(resource)).toHaveAttribute("aria-hidden", "true");
+  for (const select of await page.locator("#asset-filters select").all()) {
+    const options = await select.locator("option").evaluateAll((options) =>
+      options.map((el) => ({ value: el.value, label: el.label })));
+    for (const option of options) {
+      await select.selectOption(option.value);
+      await expect(face(select)).toHaveText(option.label);
+      const fits = await face(select).evaluate((el) =>
+        el.scrollWidth <= el.clientWidth && el.scrollHeight <= el.clientHeight);
+      expect(fits, option.label).toBe(true);
     }
-    await resource.selectOption("business");
-    await page.screenshot({ path: testInfo.outputPath(`narrow-filters-${theme}.png`), animations: "disabled" });
   }
+  await resource.selectOption("business");
+  await page.screenshot({ path: testInfo.outputPath("narrow-filters-light.png"), animations: "disabled" });
 });
 
 test("native keyboard selection and filter resets keep the displayed value synchronized", async ({ page }) => {

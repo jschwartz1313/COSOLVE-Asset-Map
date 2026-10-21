@@ -15,7 +15,7 @@ The checked-in catalog contains source-backed, publicly documented Virginia reco
 - Public-safe JSON and GeoJSON APIs with server-side filtering
 - Deployment-level regional scoping that can publish Hampton Roads while retaining statewide staff data
 - Synchronized Leaflet map and result directory with URL-backed state
-- Two active appearances: Current and a geometry-matched Dark mode; showcase appearances are paused
+- One standard light interface, without appearance controls or saved theme preferences
 - Saved rectangle and polygon analyses that reopen with the same geometry and selected records
 - Accessible non-map directory and public asset profiles
 - Source-dated current activity, collaboration routes, and economic-development site-readiness fields
