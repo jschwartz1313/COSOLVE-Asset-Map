@@ -41,8 +41,36 @@ export function bindFilterDrawer(root) {
   return closeDrawer;
 }
 
-export function bindFilterIndicators(form) {
+export function bindFilterSelects(form) {
+  // Preserve native keyboard/mobile pickers while allowing the visible value to wrap.
+  const fields = [...form.querySelectorAll(".filter-select select")].map((select) => {
+    const wrapper = select.closest(".filter-select");
+    const value = form.ownerDocument.createElement("span");
+    value.className = "filter-select-value";
+    value.setAttribute("aria-hidden", "true");
+    wrapper.append(value);
+    wrapper.classList.add("is-enhanced");
+    return { select, wrapper, value };
+  });
   function update() {
+    for (const { select, wrapper, value } of fields) {
+      const label = select.selectedOptions[0]?.label || "";
+      value.textContent = label;
+      wrapper.title = label;
+    }
+  }
+  form.addEventListener("change", update);
+  form.addEventListener("input", update);
+  form.addEventListener("reset", () => queueMicrotask(update));
+  form.ownerDocument.defaultView?.addEventListener("pageshow", update);
+  update();
+  return update;
+}
+
+export function bindFilterIndicators(form) {
+  const updateSelects = bindFilterSelects(form);
+  function update() {
+    updateSelects();
     let activeCount = 0;
     for (const element of form.elements) {
       if (!element.name || ["submit", "reset"].includes(element.type)) continue;

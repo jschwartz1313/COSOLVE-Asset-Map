@@ -3,7 +3,7 @@ import {
   bindFilterDrawer,
   bindFilterIndicators,
   withoutFilterValue,
-} from "./filters.js?v=20260805-1";
+} from "./filters.js?v=20261021-2";
 import {
   downloadFeatureCsv,
   featuresWithinBounds,

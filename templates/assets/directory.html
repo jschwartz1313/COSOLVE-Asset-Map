@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load static %}
 {% block body_class %}directory-page{% endblock %}
 {% block title %}{{ public_scope_name }} Directory | COSOLVE{% endblock %}
 {% block meta_description %}Browse and filter COSOLVE's public directory of {{ public_scope_name }} unmanned and autonomous systems assets.{% endblock %}
@@ -8,7 +9,7 @@
     <h1>Asset directory</h1>
     <form method="get">
       {% include "includes/filter_fields.html" %}
-      <label><span>Sort results</span><select name="sort">{% for value, label in sort_options %}<option value="{{ value }}" {% if sort_key == value %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label>
+      <label><span>Sort results</span><span class="filter-select"><select name="sort">{% for value, label in sort_options %}<option value="{{ value }}" {% if sort_key == value %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></span></label>
       <div class="filter-actions">
         <button class="button primary" type="submit">Apply filters</button>
         <a class="button secondary" href="{% url 'core:directory' %}">Clear all</a>
@@ -52,4 +53,5 @@
     {% endif %}
   </section>
 </main>
+<script type="module" src="{% static 'js/directory-filters.js' %}?v=20261021-2"></script>
 {% endblock %}
