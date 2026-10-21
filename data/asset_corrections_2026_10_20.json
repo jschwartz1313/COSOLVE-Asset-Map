@@ -1,0 +1,70 @@
+{
+  "corrections": [
+    {
+      "accepted_baselines": [
+        {
+          "activity_last_verified_at": "2026-08-21",
+          "activity_source_url": "https://www.jamescitycountyva.gov/m/newsflash/Home/Detail/6334",
+          "activity_status": "pilot",
+          "current_activity": "James City County Police began recurring DFR test flights in 2025 as a research site evaluating incident response and the feasibility of drone-delivered AEDs; the county states that AED delivery itself is not yet operational."
+        }
+      ],
+      "add_sources": [
+        {
+          "title": "James City County: completed testing and August 1 live AED/DFR operations",
+          "url": "https://www.jamescitycountyva.gov/m/newsflash/home/detail/6933"
+        }
+      ],
+      "after": {
+        "activity_last_verified_at": "2026-10-20",
+        "activity_source_url": "https://www.jamescitycountyva.gov/m/newsflash/home/detail/6933",
+        "activity_status": "active",
+        "current_activity": "The county reports that testing was completed and live drone-delivered AED operations began August 1, 2026, within its joint Police and Fire DFR response. The program provides incident-based aerial awareness and AED delivery under county procedures. The Law Enforcement Center reference point is not every launch or deployment site, and this record does not authorize independent public flight operations."
+      },
+      "before": {
+        "activity_last_verified_at": "2026-08-11",
+        "activity_source_url": "https://www.jamescitycountyva.gov/m/newsflash/Home/Detail/6334",
+        "activity_status": "pilot",
+        "current_activity": "James City County Police began recurring DFR test flights in 2025 as a research site evaluating incident response and the feasibility of drone-delivered AEDs; the county states that AED delivery itself is not yet operational."
+      },
+      "name": "James City County Police Drone as First Responder Program",
+      "provenance": "curated-public-source",
+      "reason": "Replace the earlier pilot/not-yet-operational AED statement with the county\u2019s later public update, using the exact saved hosted activity baseline and preserving all other fields, source history and editorial decisions."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "USI September 15, 2026 MIC implementation MOA, operator role and performance period",
+          "url": "https://usi-inc.com/press-releases/universal-solutions-international-celebrates-launch-of-hampton-roads-mobility-innovation-center-initiative/"
+        }
+      ],
+      "after": {
+        "activity_last_verified_at": "2026-10-20",
+        "activity_source_url": "https://usi-inc.com/press-releases/universal-solutions-international-celebrates-launch-of-hampton-roads-mobility-innovation-center-initiative/",
+        "activity_status": "developing",
+        "current_activity": "Newport News announced a $3,061,400 GO Virginia award for the dual-site MIC project in May 2026. USI\u2019s September 15, 2026 announcement describes a memorandum of agreement with the Newport News Economic Development Authority, with Universal Solutions International, Inc. as private implementation partner, program integrator and operator and a performance period through April 30, 2029. Capability and facility language remains future-facing; the announcement does not establish fully commissioned BVLOS infrastructure or open public testing.",
+        "development_last_verified_at": "2026-10-20",
+        "development_notes": "Funded dual-site MIC implementation under the announced September 2026 MOA. Existing PHF airport and NNPRCC club operations are distinct from MIC commissioning. Project roles do not establish real-property ownership, visitor access, BVLOS permissions or completion of all proposed capabilities.",
+        "development_source_url": "https://usi-inc.com/press-releases/universal-solutions-international-celebrates-launch-of-hampton-roads-mobility-innovation-center-initiative/",
+        "development_status": "in-development",
+        "owner_operator": "Universal Solutions International, Inc. (program integrator/operator); Newport News EDA project partner"
+      },
+      "before": {
+        "activity_last_verified_at": "2026-08-24",
+        "activity_source_url": "https://newportnewsva.com/mic/",
+        "activity_status": "planned",
+        "current_activity": "Newport News announced a $3.061 million GO Virginia award in May 2026 to develop the center. The public project description anticipates future operations and does not state that the BVLOS environment is currently open.",
+        "development_last_verified_at": "",
+        "development_notes": "",
+        "development_source_url": "",
+        "development_status": "",
+        "owner_operator": ""
+      },
+      "name": "Hampton Roads Mobility Innovation Center",
+      "provenance": "curated-public-source",
+      "reason": "Add the later official partner MOA and development roles to the existing planned MIC identity without claiming operational readiness or moving its site point. Apply atomically only while all exact saved hosted activity/development baseline values remain unchanged."
+    }
+  ],
+  "reviewed_at": "2026-10-20",
+  "scope": "Exact saved hosted baseline activity/development corrections; no editorial promotion, coordinate or staff workflow changes."
+}

@@ -209,9 +209,11 @@ class RealCatalogFileTests(TestCase):
         self.assertEqual(
             [record["name"] for record in regional],
             [
+                "757 Collab",
                 "AUVSI Hampton Roads Chapter",
                 "Commonwealth STEM Industry Internship Program (CSIIP)",
                 "STEM Takes Flight at Virginia's Community Colleges",
+                "U.S. Army Futures and Autonomous Systems Command",
                 "Virginia Capes Range Complex",
             ],
         )
@@ -462,6 +464,11 @@ class RealCatalogFileTests(TestCase):
         source_backed_additions.update(
             record["name"] for record in json.loads(
                 (settings.BASE_DIR / "data/asset_expansion_2026_10_13.json").read_text()
+            )["records"]
+        )
+        source_backed_additions.update(
+            record["name"] for record in json.loads(
+                (settings.BASE_DIR / "data/asset_expansion_2026_10_20.json").read_text()
             )["records"]
         )
         self.assertFalse(reviewed_or_flagged.intersection(source_backed_additions))
@@ -1166,10 +1173,10 @@ class RealCatalogFileTests(TestCase):
             ).count(),
             sum(len(urls) for urls in manifest["reviewed_assets"].values()),
         )
-        self.assertEqual(
-            Asset.objects.get(name="Hampton Roads Mobility Innovation Center").activity_status,
-            Asset.ActivityStatus.PLANNED,
-        )
+        # Later activity evidence does not alter the historical publication decision.
+        mic = Asset.objects.get(name="Hampton Roads Mobility Innovation Center")
+        self.assertEqual(mic.status, Asset.Status.PUBLISHED)
+        self.assertEqual(mic.activity_status, Asset.ActivityStatus.DEVELOPING)
         self.assertEqual(
             Asset.objects.get(name="TurbineOne Headquarters and T1 Edgeworks").activity_status,
             Asset.ActivityStatus.PLANNED,

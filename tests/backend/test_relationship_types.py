@@ -63,7 +63,20 @@ class CatalogRelationshipTypesTests(TestCase):
         ).select_related("from_asset", "to_asset")
         before = list(legacy.order_by("pk").values())
         history_before = list(Relationship.history.order_by("history_id").values())
-        self.assertEqual(legacy.filter(relationship_type="hosts").count(), 3)
+        hosts = set(legacy.filter(relationship_type="hosts").values_list(
+            "from_asset__name", "to_asset__name",
+        ))
+        self.assertTrue({
+            ("Dam Neck Annex", "NSWCDD Dam Neck Activity"),
+            ("Joint Expeditionary Base Little Creek-Fort Story",
+             "Navy TALSA East Small UAS Training Facility"),
+            ("Marine Corps Base Quantico", "Marine Corps Counter-Drone Team"),
+            ("Tidewater Community College", "Maxbyte Industry 4.0 Centre of Excellence at TCC"),
+        }.issubset(hosts))
+        self.assertEqual(hosts, {
+            (item["from"], item["to"])
+            for item in self.catalog["relationships"] if item["type"] == "hosts"
+        })
         self.assertEqual(legacy.filter(relationship_type="manufactures-for").count(), 1)
         labels = {"hosts": "Hosts", "manufactures-for": "Manufactures for"}
         field = Relationship._meta.get_field("relationship_type").formfield()

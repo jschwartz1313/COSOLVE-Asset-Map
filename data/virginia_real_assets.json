@@ -1,8 +1,89 @@
 {
-  "generated_at": "2026-10-13",
+  "generated_at": "2026-10-20",
   "methodology": "Current operational public-use aviation facilities from the FAA feature service, publicly listed installations from the Virginia Military Factbook, broad-based Virginia degree-granting institutions from the NCES IPEDS 2024 directory while excluding narrowly specialized health and ministry schools without documented unmanned-systems relevance, and a curated set of source-backed ecosystem records. Specific street and site locations are anchored to official public address sources and geocoded against the U.S. Census address ranges or named-site map data; locality points are retained when the public record does not identify the operating department or facility. Every record is also classified as either a core unmanned-systems asset with direct documented activity or a supporting ecosystem asset with a broader enabling role.",
-  "record_count": 543,
+  "record_count": 555,
   "records": [
+    {
+      "activity_last_verified_at": "2026-10-20",
+      "activity_source_url": "https://757collab.org/defend/",
+      "activity_status": "active",
+      "address_line": "",
+      "capabilities": [],
+      "city": "Norfolk",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Use 757 Collab official program contacts for founder, partner and program inquiries.",
+      "contact_url": "https://757collab.org/contact/",
+      "current_activity": "757 Collab and the Mid-Atlantic Tech Bridge jointly deliver the Defense Technology Accelerator, which supports early-stage defense technology commercialization.",
+      "development_last_verified_at": "2026-10-20",
+      "development_notes": "",
+      "development_source_url": "https://757collab.org/757-accelerate-welcomes-cohort-7/",
+      "development_status": "",
+      "display_name": "",
+      "identity_guard_terms": [
+        "757 Collab",
+        "757Collab"
+      ],
+      "infrastructure_access": "Use official program contacts and applicable eligibility/application processes; current workspace or operational-test access must be confirmed separately.",
+      "latitude": null,
+      "location_last_verified_at": "2026-10-20",
+      "location_method": "unmapped",
+      "location_notes": "Regional program and entrepreneurship support coordinated from the Assembly campus in downtown Norfolk. Official organization evidence confirms co-location but does not establish a verified street/suite in this review. No single map point or coordinates are assigned.",
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://757collab.org/campus/",
+      "longitude": null,
+      "missions": [],
+      "name": "757 Collab",
+      "overview": "757 Collab supports founders through incubation, acceleration and investment connections. Its Defense Technology Accelerator, developed and delivered with the Mid-Atlantic Tech Bridge, supports defense commercialization and includes unmanned surface vehicle enablers among its technology focus areas.",
+      "owner_operator": "757 Collab, nonprofit startup-support organization.",
+      "partnership_opportunities": "Use 757 Collab official program contacts for founder, partner and program inquiries.",
+      "platform_domains": [
+        "Maritime surface systems"
+      ],
+      "postal_code": "",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "search_aliases": "757Collab",
+      "short_description": "Norfolk startup-support nonprofit offering incubation, acceleration, investment connections and defense commercialization.",
+      "sources": [
+        {
+          "title": "757 Collab official organization and program continuum",
+          "url": "https://757collab.org/"
+        },
+        {
+          "title": "757 Collab official program contact route",
+          "url": "https://757collab.org/contact/"
+        },
+        {
+          "title": "757 Collab official Assembly campus co-location",
+          "url": "https://757collab.org/campus/"
+        },
+        {
+          "title": "757 Collab official Defense Technology Accelerator and Mid-Atlantic Tech Bridge partnership",
+          "url": "https://757collab.org/defend/"
+        },
+        {
+          "title": "757 Collab official nonprofit identity and historical 2024 cohort announcement",
+          "url": "https://757collab.org/757-accelerate-welcomes-cohort-7/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Commercialization and capital",
+        "Federal and defense customer access",
+        "Supporting ecosystem asset"
+      ],
+      "test_access": "",
+      "test_aircraft": "",
+      "test_dimensions": "",
+      "test_last_verified_at": null,
+      "test_runway_length_ft": null,
+      "test_source_url": "",
+      "unmanned_systems_relevance": "Commercialization support for maritime autonomy enabling technologies through the documented Defense Technology Accelerator focus. This identifies an ecosystem resource rather than an operational vehicle or test-range capability.",
+      "website_url": "https://757collab.org/"
+    },
     {
       "address_line": "29194 Parkway North",
       "capabilities": [
@@ -171,7 +252,7 @@
       "activity_last_verified_at": "2026-09-07",
       "activity_source_url": "https://advancedaircraftcompany.com/",
       "activity_status": "active",
-      "address_line": "1100 Exploration Way, Suite 316M",
+      "address_line": "1100 Exploration Way",
       "capabilities": [
         "Systems engineering and integration",
         "Manufacturing, materials, and prototyping",
@@ -343,6 +424,79 @@
       ],
       "unmanned_systems_relevance": "Air-data sensing and calibrated flow measurement for autonomous-aircraft control, flight-test instrumentation, and aerodynamic development.",
       "website_url": "https://www.aeroprobe.com/about-aeroprobe/"
+    },
+    {
+      "activity_last_verified_at": "2026-10-20",
+      "activity_source_url": "https://www.odu.edu/center-educational-innovation-opportunity/lab-schools/aaes",
+      "activity_status": "active",
+      "address_line": "",
+      "capabilities": [],
+      "city": "",
+      "contact_email": "r1white@odu.edu",
+      "contact_phone": "",
+      "contact_text": "AAES program director and enrollment information",
+      "contact_url": "https://www.odu.edu/center-educational-innovation-opportunity/lab-schools/aaes",
+      "current_activity": "Multi-site school program with a published course pathway.",
+      "development_last_verified_at": "2026-10-20",
+      "development_notes": "Regional education program, not a single Wallops campus.",
+      "development_source_url": "https://www.odu.edu/center-educational-innovation-opportunity/lab-schools/aaes",
+      "development_status": "",
+      "display_name": "Aerospace Academy of the Eastern Shore (AAES)",
+      "identity_guard_terms": [
+        "Aerospace Academy of the Eastern Shore",
+        "Aerospace Academy Eastern Shore",
+        "AAES",
+        "Eastern Shore Lab School",
+        "Eastern Shore Aerospace Lab School"
+      ],
+      "latitude": null,
+      "location_last_verified_at": "2026-10-20",
+      "location_method": "unmapped",
+      "location_notes": "Accomack/Northampton school sites and ESCC. A Wallops ribbon-cutting venue is not the program's campus.",
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://www.odu.edu/center-educational-innovation-opportunity/lab-schools/aaes",
+      "longitude": null,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Aerospace Academy of the Eastern Shore",
+      "overview": "AAES links ODU, Accomack and Northampton school divisions, and Eastern Shore Community College. Grades 9\u201310 study at zoned schools; grades 11\u201312 attend ESCC. The published curriculum includes aerospace pathways, dual enrollment and Part 107 UAS credentials.",
+      "owner_operator": "ODU, Accomack and Northampton school divisions, and Eastern Shore Community College partnership",
+      "partnership_opportunities": "Enrollment and program inquiries through ODU's listed director.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "",
+      "provenance": "curated-public-source",
+      "record_type": "program",
+      "region": "Eastern Shore",
+      "search_aliases": "AAES\nAerospace Academy Eastern Shore\nEastern Shore Lab School\nEastern Shore Aerospace Lab School",
+      "short_description": "Multi-site Eastern Shore aerospace education program with dual enrollment and a published Part 107 UAS credential pathway.",
+      "sources": [
+        {
+          "title": "ODU Aerospace Academy of the Eastern Shore: curriculum, locations, partners and contact",
+          "url": "https://www.odu.edu/center-educational-innovation-opportunity/lab-schools/aaes"
+        },
+        {
+          "title": "ODU K-12 lab-school network and CEIO partnerships",
+          "url": "https://www.odu.edu/center-educational-innovation-opportunity/lab-schools"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent",
+        "Programs and initiatives",
+        "Supporting ecosystem asset"
+      ],
+      "test_access": "",
+      "test_aircraft": "",
+      "test_dimensions": "",
+      "test_last_verified_at": null,
+      "test_runway_length_ft": null,
+      "test_source_url": "",
+      "unmanned_systems_relevance": "Supporting workforce pathway; curriculum does not establish a public flight range.",
+      "website_url": "https://www.odu.edu/center-educational-innovation-opportunity/lab-schools/aaes"
     },
     {
       "activity_last_verified_at": "2026-08-21",
@@ -6177,6 +6331,8 @@
       "website_url": "https://www.es.vccs.edu/"
     },
     {
+      "activity_last_verified_at": "2026-10-06",
+      "activity_source_url": "https://www.governor.virginia.gov/newsroom/news-releases/2026/april-releases/name-1116537-en.html",
       "address_line": "29316 Lankford Highway",
       "capabilities": [
         "Operations, maintenance, and sustainment",
@@ -6187,6 +6343,7 @@
       "contact_phone": "",
       "contact_text": "Public information route; a direct asset contact is not published in the catalog",
       "contact_url": "https://courses.vccs.edu/colleges/escc/courses/UMS-UnmannedSystems",
+      "current_activity": "The VCCS catalog lists existing ESCC unmanned-systems coursework. On April 17, 2026, Virginia announced a $788,700 GO Virginia implementation grant for ESCC's FAA Uncrewed Aerial Systems College Initiative in Accomack and Northampton counties. The funded plan calls for expanded UAS workforce training, credentialing opportunities, engineering and electronics curricula, and hands-on applications. The announcement describes future program development; implementation, enrollment availability and expanded operating capabilities were not confirmed in this review.",
       "latitude": 37.639652,
       "location_precision": "site",
       "longitude": -75.751129,
@@ -6203,6 +6360,7 @@
       "provenance": "curated-public-source",
       "record_type": "program",
       "region": "Eastern Shore",
+      "search_aliases": "FAA Uncrewed Aerial Systems College Initiative\nESCC UAS College Initiative",
       "short_description": "Community-college UMS coursework supporting small-UAS operations and applied technical skills.",
       "sources": [
         {
@@ -6228,11 +6386,7 @@
         "Core unmanned-systems asset"
       ],
       "unmanned_systems_relevance": "Builds a documented education or credential pathway for unmanned-systems operators, maintainers, engineers, or technicians.",
-      "website_url": "https://courses.vccs.edu/colleges/escc/courses/UMS-UnmannedSystems",
-      "current_activity": "The VCCS catalog lists existing ESCC unmanned-systems coursework. On April 17, 2026, Virginia announced a $788,700 GO Virginia implementation grant for ESCC's FAA Uncrewed Aerial Systems College Initiative in Accomack and Northampton counties. The funded plan calls for expanded UAS workforce training, credentialing opportunities, engineering and electronics curricula, and hands-on applications. The announcement describes future program development; implementation, enrollment availability and expanded operating capabilities were not confirmed in this review.",
-      "activity_source_url": "https://www.governor.virginia.gov/newsroom/news-releases/2026/april-releases/name-1116537-en.html",
-      "activity_last_verified_at": "2026-10-06",
-      "search_aliases": "FAA Uncrewed Aerial Systems College Initiative\nESCC UAS College Initiative"
+      "website_url": "https://courses.vccs.edu/colleges/escc/courses/UMS-UnmannedSystems"
     },
     {
       "address_line": "5555 Greenwich Rd",
@@ -9095,9 +9249,9 @@
       "website_url": "https://hrheli.com/hrhs-capabilities-and-current-previous-customers/"
     },
     {
-      "activity_last_verified_at": "2026-08-24",
-      "activity_source_url": "https://newportnewsva.com/mic/",
-      "activity_status": "planned",
+      "activity_last_verified_at": "2026-10-20",
+      "activity_source_url": "https://usi-inc.com/press-releases/universal-solutions-international-celebrates-launch-of-hampton-roads-mobility-innovation-center-initiative/",
+      "activity_status": "developing",
       "address_line": "Newport News Park Radio Control Club Flying Field, Richneck Road",
       "capabilities": [
         "Testing, evaluation, verification, and validation",
@@ -9109,7 +9263,11 @@
       "contact_phone": "800-274-8348",
       "contact_text": "Newport News Economic Development Authority project inquiries",
       "contact_url": "https://newportnewsva.com/contact/",
-      "current_activity": "Newport News announced a $3.061 million GO Virginia award in May 2026 to develop the center. The public project description anticipates future operations and does not state that the BVLOS environment is currently open.",
+      "current_activity": "Newport News announced a $3,061,400 GO Virginia award for the dual-site MIC project in May 2026. USI\u2019s September 15, 2026 announcement describes a memorandum of agreement with the Newport News Economic Development Authority, with Universal Solutions International, Inc. as private implementation partner, program integrator and operator and a performance period through April 30, 2029. Capability and facility language remains future-facing; the announcement does not establish fully commissioned BVLOS infrastructure or open public testing.",
+      "development_last_verified_at": "2026-10-20",
+      "development_notes": "Funded dual-site MIC implementation under the announced September 2026 MOA. Existing PHF airport and NNPRCC club operations are distinct from MIC commissioning. Project roles do not establish real-property ownership, visitor access, BVLOS permissions or completion of all proposed capabilities.",
+      "development_source_url": "https://usi-inc.com/press-releases/universal-solutions-international-celebrates-launch-of-hampton-roads-mobility-innovation-center-initiative/",
+      "development_status": "in-development",
       "latitude": 37.169681,
       "location_precision": "site",
       "longitude": -76.509008,
@@ -9118,6 +9276,7 @@
       ],
       "name": "Hampton Roads Mobility Innovation Center",
       "overview": "The Hampton Roads Mobility Innovation Center is a funded, planned dual-site project anchored by Newport News-Williamsburg Airport and the Newport News Park Radio Control Club flying field. Public project materials describe an FAA-aligned environment for UAS and AAM testing, research, workforce training, BVLOS operations, and validation.",
+      "owner_operator": "Universal Solutions International, Inc. (program integrator/operator); Newport News EDA project partner",
       "platform_domains": [
         "Unmanned aircraft systems",
         "Advanced Air Mobility"
@@ -9143,6 +9302,10 @@
         {
           "title": "Newport News Economic Development Authority contact information",
           "url": "https://newportnewsva.com/contact/"
+        },
+        {
+          "title": "USI September 15, 2026 MIC implementation MOA, operator role and performance period",
+          "url": "https://usi-inc.com/press-releases/universal-solutions-international-celebrates-launch-of-hampton-roads-mobility-innovation-center-initiative/"
         }
       ],
       "state": "VA",
@@ -9154,6 +9317,84 @@
       ],
       "unmanned_systems_relevance": "Would provide direct regional UAS test, training, research, workforce, and BVLOS infrastructure. It remains planned and does not yet imply operational availability or authorization for public flight testing.",
       "website_url": "https://newportnewsva.com/mic/"
+    },
+    {
+      "activity_last_verified_at": "2026-10-20",
+      "activity_source_url": "https://maritimejobsva.com/about/",
+      "activity_status": "active",
+      "address_line": "999 Waterside Drive, Suite 1314",
+      "capabilities": [],
+      "city": "Norfolk",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Use the Council official contact route for workforce services, employer partnerships and the appropriate program inquiry.",
+      "contact_url": "https://www.theworkforcecouncil.org/contact-us/",
+      "current_activity": "The Council links current maritime workforce resources through the Hampton Roads Maritime Training System, connecting training partners and employers in shipbuilding and ship repair trades.",
+      "development_last_verified_at": "2026-10-20",
+      "development_notes": "",
+      "development_source_url": "https://www.theworkforcecouncil.org/",
+      "development_status": "",
+      "display_name": "",
+      "identity_guard_terms": [
+        "Hampton Roads Workforce Council",
+        "HRWC"
+      ],
+      "infrastructure_access": "Use the relevant official service or program route. The Council office does not identify every partner training location or establish vehicle-test access.",
+      "latitude": 36.844003,
+      "location_last_verified_at": "2026-10-20",
+      "location_method": "geocoded",
+      "location_notes": "Official public address positioned by the U.S. Census address-range geocoder. General building/campus address reference, not a surveyed building, office suite, facility footprint or service-area boundary. Council office building only; workforce partners and services operate across the region.",
+      "location_precision": "site",
+      "location_role": "office",
+      "location_source_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=999+Waterside+Drive&city=Norfolk&state=VA&zip=23510&benchmark=Public_AR_Current&format=json",
+      "longitude": -76.287947,
+      "missions": [],
+      "name": "Hampton Roads Workforce Council",
+      "overview": "The Hampton Roads Workforce Council coordinates regional workforce services and employer partnerships from Norfolk. Its Hampton Roads Maritime Training System connects training partners, schools, universities and employers to support skilled trades for shipbuilding, ship repair and the Navy's maritime industrial base.",
+      "owner_operator": "Hampton Roads Workforce Council, a regional special-purpose unit of local government.",
+      "partnership_opportunities": "Use the Council official contact route for workforce services, employer partnerships and the appropriate program inquiry.",
+      "platform_domains": [],
+      "postal_code": "23510",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "search_aliases": "HRWC",
+      "short_description": "Regional workforce council connecting employers, training partners and maritime skilled-trades talent.",
+      "sources": [
+        {
+          "title": "HRWC official regional workforce role and programs",
+          "url": "https://www.theworkforcecouncil.org/"
+        },
+        {
+          "title": "HRWC official office and contact route",
+          "url": "https://www.theworkforcecouncil.org/contact-us/"
+        },
+        {
+          "title": "Hampton Roads Maritime Training System official about page",
+          "url": "https://maritimejobsva.com/about/"
+        },
+        {
+          "title": "HRWC official maritime-workforce DoD award announcement, December 2023",
+          "url": "https://www.theworkforcecouncil.org/hampton-roads-workforce-council-receives-14-million-from-u-s-department-of-defense-to-bolster-maritime-workforce/"
+        },
+        {
+          "title": "U.S. Census public address reference, October 20, 2026",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=999+Waterside+Drive&city=Norfolk&state=VA&zip=23510&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Workforce and talent",
+        "Supporting ecosystem asset"
+      ],
+      "test_access": "",
+      "test_aircraft": "",
+      "test_dimensions": "",
+      "test_last_verified_at": null,
+      "test_runway_length_ft": null,
+      "test_source_url": "",
+      "unmanned_systems_relevance": "Supporting defense-maritime workforce resource. Its documented training network develops skilled-trades talent relevant to the regional industrial base; no UxS-specific certification or operating range is established.",
+      "website_url": "https://www.theworkforcecouncil.org/"
     },
     {
       "address_line": "100 East Queen Street",
@@ -10457,6 +10698,76 @@
       "website_url": "https://bathco.hosted.civiclive.com/government/boards___commissions/airport_authority"
     },
     {
+      "activity_last_verified_at": "2026-10-20",
+      "activity_source_url": "https://www.innovate757.org/",
+      "activity_status": "active",
+      "address_line": "1100 Exploration Way, Suite 302H",
+      "capabilities": [],
+      "city": "Hampton",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Use the Innovate Hampton Roads official contact form for inquiries and appointments.",
+      "contact_url": "https://www.innovate757.org/contact-us/",
+      "current_activity": "Publishes Hampton Roads startup news, upcoming-event listings and regional business-directory resources on its official website.",
+      "development_last_verified_at": "2026-10-20",
+      "development_notes": "",
+      "development_source_url": "https://www.innovate757.org/contact-us/",
+      "development_status": "",
+      "display_name": "",
+      "identity_guard_terms": [
+        "Innovate Hampton Roads",
+        "Innovate757"
+      ],
+      "infrastructure_access": "Office visits are by appointment only through the official contact route.",
+      "latitude": 37.082523,
+      "location_last_verified_at": "2026-10-20",
+      "location_method": "geocoded",
+      "location_notes": "Official public address positioned by the U.S. Census address-range geocoder. General building/campus address reference, not a surveyed building, office suite, facility footprint or service-area boundary. Shared office-building reference for this independently documented address; a suite and common tenant ownership are not located by the geocoder.",
+      "location_precision": "site",
+      "location_role": "office",
+      "location_source_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1100+Exploration+Way&city=Hampton&state=VA&zip=23666&benchmark=Public_AR_Current&format=json",
+      "longitude": -76.399763,
+      "missions": [],
+      "name": "Innovate Hampton Roads",
+      "overview": "Innovate Hampton Roads publishes regional startup news, event listings and business-directory resources. Its official contact page lists a Hampton office at 1100 Exploration Way, Suite 302H, available by appointment.",
+      "owner_operator": "",
+      "partnership_opportunities": "Use the Innovate Hampton Roads official contact form for inquiries and appointments.",
+      "platform_domains": [],
+      "postal_code": "23666",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "search_aliases": "Innovate757",
+      "short_description": "Regional innovation organization publishing Hampton Roads startup news, events and business resources.",
+      "sources": [
+        {
+          "title": "Innovate Hampton Roads official startup news, events and regional business resources",
+          "url": "https://www.innovate757.org/"
+        },
+        {
+          "title": "Innovate Hampton Roads official contact and appointment-only Hampton office",
+          "url": "https://www.innovate757.org/contact-us/"
+        },
+        {
+          "title": "U.S. Census public address reference, October 20, 2026",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1100+Exploration+Way&city=Hampton&state=VA&zip=23666&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Commercialization and capital",
+        "Supporting ecosystem asset"
+      ],
+      "test_access": "",
+      "test_aircraft": "",
+      "test_dimensions": "",
+      "test_last_verified_at": null,
+      "test_runway_length_ft": null,
+      "test_source_url": "",
+      "unmanned_systems_relevance": "Supporting innovation-network and entrepreneurship resource for the Hampton Roads technology ecosystem. The reviewed official sources establish regional resources and office access rather than a dedicated UxS laboratory or operational site.",
+      "website_url": "https://www.innovate757.org/"
+    },
+    {
       "address_line": "150 Slayton Avenue",
       "capabilities": [
         "Manufacturing, materials, and prototyping",
@@ -10608,9 +10919,9 @@
       "website_url": "https://www.reynolds.edu/"
     },
     {
-      "activity_last_verified_at": "2026-08-21",
-      "activity_source_url": "https://www.jamescitycountyva.gov/m/newsflash/Home/Detail/6334",
-      "activity_status": "pilot",
+      "activity_last_verified_at": "2026-10-20",
+      "activity_source_url": "https://www.jamescitycountyva.gov/m/newsflash/home/detail/6933",
+      "activity_status": "active",
       "address_line": "4600 Opportunity Way",
       "capabilities": [
         "Operations, maintenance, and sustainment",
@@ -10621,7 +10932,7 @@
       "contact_phone": "757-592-5618",
       "contact_text": "James City County Police Public Information Office",
       "contact_url": "https://www.jamescitycountyva.gov/m/newsflash/Home/Detail/6334",
-      "current_activity": "James City County Police began recurring DFR test flights in 2025 as a research site evaluating incident response and the feasibility of drone-delivered AEDs; the county states that AED delivery itself is not yet operational.",
+      "current_activity": "The county reports that testing was completed and live drone-delivered AED operations began August 1, 2026, within its joint Police and Fire DFR response. The program provides incident-based aerial awareness and AED delivery under county procedures. The Law Enforcement Center reference point is not every launch or deployment site, and this record does not authorize independent public flight operations.",
       "latitude": 37.337991,
       "location_precision": "site",
       "longitude": -76.757712,
@@ -10649,6 +10960,10 @@
         {
           "title": "James City County Police Department",
           "url": "https://www.jamescitycountyva.gov/767/Police"
+        },
+        {
+          "title": "James City County: completed testing and August 1 live AED/DFR operations",
+          "url": "https://www.jamescitycountyva.gov/m/newsflash/home/detail/6933"
         }
       ],
       "state": "VA",
@@ -12082,6 +12397,88 @@
       ],
       "unmanned_systems_relevance": "Wave Glider production and maritime-autonomy engineering support Virginia capability while the Herndon operation remains. Hawaii is the marine test center. The announced Maryland relocation requires a follow-up location review.",
       "website_url": "https://www.liquid-robotics.com/blog/liquid-robotics-headquarters-relocation-herndon/"
+    },
+    {
+      "activity_last_verified_at": "2026-10-20",
+      "activity_source_url": "https://www.litiholo.com/hologram-research-development.html",
+      "activity_status": "",
+      "address_line": "1100 Exploration Way",
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "city": "Hampton",
+      "contact_email": "info@litiholo.com",
+      "contact_phone": "757-873-6460",
+      "contact_text": "Confirm current scope and access through the organization or host before operational planning.",
+      "contact_url": "https://www.litiholo.com/about-us.html",
+      "current_activity": "The company publishes holographic R&D services, optical-element expertise, laboratory capabilities and educational hologram products.",
+      "development_last_verified_at": "2026-10-20",
+      "development_notes": "First-party research and product capabilities are documented. Inclusion is supporting photonics and research context, without an asserted vehicle deployment or test range.",
+      "development_source_url": "https://www.litiholo.com/hologram-research-development.html",
+      "development_status": "",
+      "display_name": "LitiHolo",
+      "identity_guard_terms": [
+        "Liti Holographics",
+        "Liti Holographics Inc",
+        "LitiHolo",
+        "Litiholo",
+        "litiholo.com"
+      ],
+      "infrastructure_access": "Coordinate directly with the organization or host; public information does not establish physical admission or vehicle-test access.",
+      "latitude": 37.082523,
+      "location_last_verified_at": "2026-10-20",
+      "location_method": "geocoded",
+      "location_notes": "Official public address positioned by the U.S. Census address-range geocoder. General building/campus address reference, not a surveyed building, office suite, facility footprint or service-area boundary. Shared office-building reference for this independently documented address; a suite and common tenant ownership are not located by the geocoder.",
+      "location_precision": "site",
+      "location_role": "office",
+      "location_source_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1100+Exploration+Way&city=Hampton&state=VA&zip=23666&benchmark=Public_AR_Current&format=json",
+      "longitude": -76.399763,
+      "missions": [],
+      "name": "Liti Holographics, Inc.",
+      "overview": "Liti Holographics, Inc., trading as LitiHolo, publishes holographic research and development capabilities including diffractive optics, holographic optical elements and VR/AR/MR display applications. Its own site lists a Hampton headquarters and contact address.",
+      "owner_operator": "Liti Holographics, Inc.",
+      "partnership_opportunities": "Use the official organization or host contact route to discuss a specific research, training or industry collaboration.",
+      "platform_domains": [],
+      "postal_code": "23666",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "search_aliases": "Liti Holographics\nLitiHolo\nLitiholo",
+      "short_description": "Hampton holographic optics company offering photonics research, display development and educational hologram products.",
+      "sources": [
+        {
+          "title": "Company identity and Hampton address.",
+          "url": "https://www.litiholo.com/about-us.html"
+        },
+        {
+          "title": "Holographic optics, laboratory capability and VR/AR/MR R&D.",
+          "url": "https://www.litiholo.com/hologram-research-development.html"
+        },
+        {
+          "title": "Liti Holographics, Inc. official company website",
+          "url": "https://www.litiholo.com/"
+        },
+        {
+          "title": "U.S. Census public address reference, October 20, 2026",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1100+Exploration+Way&city=Hampton&state=VA&zip=23666&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Research and technical depth",
+        "Manufacturing and supply chain",
+        "Workforce and talent",
+        "Supporting ecosystem asset"
+      ],
+      "test_access": "",
+      "test_aircraft": "",
+      "test_dimensions": "",
+      "test_last_verified_at": null,
+      "test_runway_length_ft": null,
+      "test_source_url": "",
+      "unmanned_systems_relevance": "Photonics, display and technical education capabilities provide supporting research/supply-chain context. Reviewed evidence does not establish a UxS deployment, vehicle guidance system or test range.",
+      "website_url": "https://www.litiholo.com/about-us.html"
     },
     {
       "address_line": "9500 Godwin Drive, Building 400",
@@ -13756,6 +14153,94 @@
       ],
       "unmanned_systems_relevance": "Builds a documented education or experiential-learning pathway in autonomous vehicles, robotics, uncrewed aircraft, sensing, integration, or prototyping.",
       "website_url": "https://www.mix.gmu.edu/mix-short-course-programs"
+    },
+    {
+      "activity_last_verified_at": "2026-10-20",
+      "activity_source_url": "https://maxbyte.co/virginia-beach-4-0/",
+      "activity_status": "",
+      "address_line": "1700 College Crescent, Advanced Technology Center (Building H)",
+      "capabilities": [],
+      "city": "Virginia Beach",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Confirm current scope and access through the organization or host before operational planning.",
+      "contact_url": "https://maxbyte.co/virginia-beach-4-0/",
+      "current_activity": "Maxbyte\u2019s current regional page lists Virginia Beach assessment, training and pilot programs and links a completed 2025 Industry 4.0 foundation program. Current onsite equipment availability and enrollment are not independently established.",
+      "development_last_verified_at": "2026-10-20",
+      "development_notes": "A November 14, 2024 City retrospective confirms the opening. Current operational availability requires confirmation; the September 6, 2024 announcement alone was prospective.",
+      "development_source_url": "https://virginiabeach.gov/connect/blog/growth-matters-economic-development-fosters-business-expansions-and-offers-resources-for-small-businesses",
+      "development_status": "",
+      "display_name": "Maxbyte Industry 4.0 Centre of Excellence",
+      "identity_guard_terms": [
+        "Maxbyte",
+        "Maxbyte Technologies",
+        "Maxbyte Industry 4.0 Centre of Excellence",
+        "Industry 4.0 CoE",
+        "Virginia Beach Workforce Training Center",
+        "Advanced Technology Center"
+      ],
+      "infrastructure_access": "Coordinate directly with the organization or host; public information does not establish physical admission or vehicle-test access.",
+      "latitude": 36.786534,
+      "location_last_verified_at": "2026-10-20",
+      "location_method": "geocoded",
+      "location_notes": "Official public address positioned by the U.S. Census address-range geocoder. General building/campus address reference, not a surveyed building, office suite, facility footprint or service-area boundary. TCC Virginia Beach campus street reference; the hosted center is in Building H, which the geocoder does not locate separately.",
+      "location_precision": "site",
+      "location_role": "campus",
+      "location_source_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1700+College+Crescent&city=Virginia+Beach&state=VA&zip=23453&benchmark=Public_AR_Current&format=json",
+      "longitude": -76.099587,
+      "missions": [],
+      "name": "Maxbyte Industry 4.0 Centre of Excellence at TCC",
+      "overview": "The City of Virginia Beach reported that Maxbyte Technologies opened its Industry 4.0 Centre of Excellence at the Virginia Beach Workforce Training Center inside Tidewater Community College\u2019s Advanced Technology Center in 2024. Maxbyte\u2019s current regional page lists assessment, training and pilot programs for Virginia Beach manufacturing. The reviewed sources do not establish current onsite equipment availability or enrollment.",
+      "owner_operator": "Maxbyte Technologies with Virginia Beach Economic Development; hosted at the Virginia Beach Workforce Training Center / TCC Advanced Technology Center. Property ownership not established.",
+      "partnership_opportunities": "Use the official organization or host contact route to discuss a specific research, training or industry collaboration.",
+      "platform_domains": [],
+      "postal_code": "23453",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Hampton Roads",
+      "search_aliases": "Maxbyte\nMaxbyte Technologies\nMaxbyte Industry 4.0 Centre of Excellence\nIndustry 4.0 CoE",
+      "short_description": "Industry 4.0 manufacturing and engineering workforce center hosted at TCC\u2019s Advanced Technology Center in Virginia Beach.",
+      "sources": [
+        {
+          "title": "Retrospective confirms CoE opened at named host.",
+          "url": "https://virginiabeach.gov/connect/blog/growth-matters-economic-development-fosters-business-expansions-and-offers-resources-for-small-businesses"
+        },
+        {
+          "title": "Announced opening, partnership, engineering workforce and industrial robotics/automation/AI scope.",
+          "url": "https://virginiabeach.gov/connect/news/virginia-beach-partners-with-technology-firm-on-new-center-for-manufacturing-initiatives"
+        },
+        {
+          "title": "Campus address and ATC BuildingH.",
+          "url": "https://www.tcc.edu/come-to-tcc/virginia-beach-campus/map-buildings/"
+        },
+        {
+          "title": "Maxbyte Industry 4.0 Centre of Excellence at TCC official company website",
+          "url": "https://maxbyte.co/"
+        },
+        {
+          "title": "Maxbyte official Virginia Beach assessment, training and pilot programs",
+          "url": "https://maxbyte.co/virginia-beach-4-0/"
+        },
+        {
+          "title": "U.S. Census public address reference, October 20, 2026",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1700+College+Crescent&city=Virginia+Beach&state=VA&zip=23453&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Workforce and talent",
+        "Supporting ecosystem asset"
+      ],
+      "test_access": "",
+      "test_aircraft": "",
+      "test_dimensions": "",
+      "test_last_verified_at": null,
+      "test_runway_length_ft": null,
+      "test_source_url": "",
+      "unmanned_systems_relevance": "Industrial robotics, AI, automation and workforce development support the manufacturing ecosystem. No UAS, maritime or ground-vehicle range, operating authority or specific current robot inventory is established.",
+      "website_url": "https://maxbyte.co/"
     },
     {
       "address_line": "",
@@ -16804,6 +17289,80 @@
       "website_url": "https://www.portofvirginia.com/gateway/capabilities/"
     },
     {
+      "activity_last_verified_at": "2026-10-20",
+      "activity_source_url": "https://newportnewsrc.org/",
+      "activity_status": "active",
+      "address_line": "Newport News Park Radio Control Club Flying Field, Richneck Road",
+      "capabilities": [
+        "Operations, maintenance, and sustainment"
+      ],
+      "city": "Newport News",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Club membership and field-use inquiries through the official club website",
+      "contact_url": "https://newportnewsrc.org/",
+      "current_activity": "The official club site describes more than 100 active members and a field open to members from sunrise to sunset throughout the year. Visitors and spectators are welcome under club arrangements. Published club rules prohibit flight above 400 feet because of the nearby airport; current club and airspace requirements still apply.",
+      "development_last_verified_at": "2026-10-20",
+      "development_notes": "",
+      "development_source_url": "https://newportnewsrc.org/",
+      "development_status": "",
+      "display_name": "Newport News Park Radio Control Club Flying Field",
+      "identity_guard_terms": [
+        "Newport News Park Radio Control Club",
+        "Newport News RC Club",
+        "NNPRCC"
+      ],
+      "infrastructure_access": "",
+      "latitude": 37.169681,
+      "location_last_verified_at": "2026-10-20",
+      "location_method": "published",
+      "location_notes": "Official club GPS converted from 37\u00b010\u203210.85\u2033N, 76\u00b030\u203232.43\u2033W. Representative flying-field point, not a surveyed boundary, runway threshold, public launch permission or MIC operating footprint.",
+      "location_precision": "site",
+      "location_role": "test-site",
+      "location_source_url": "https://newportnewsrc.org/",
+      "longitude": -76.509008,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Newport News Park Radio Control Club Flying Field",
+      "overview": "The Newport News Park Radio Control Club operates a model-aircraft field on Richneck Road. Its official site describes an active AMA-chartered club, a paved 400-foot runway, a 30-acre overfly area, shelters, spectator seating, restroom and charging power. The field serves model airplanes, helicopters and multirotors. Existing club activity is distinct from future Mobility Innovation Center capabilities; MIC funding and implementation agreements do not establish commissioned BVLOS infrastructure.",
+      "owner_operator": "Newport News Park Radio Control Club, Inc. (club operator; land ownership not established)",
+      "partnership_opportunities": "Ask the club about membership, instruction and permitted field use; MIC commercial or research access must be confirmed separately.",
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "postal_code": "",
+      "provenance": "curated-public-source",
+      "record_type": "facility",
+      "region": "Hampton Roads",
+      "search_aliases": "NNPRCC\nNewport News Park Radio Control Club\nNewport News RC Club",
+      "short_description": "Members\u2019 model-aircraft flying field with a published 400-foot paved runway and 30-acre overfly area; a separate site in the planned MIC dual-site project.",
+      "sources": [
+        {
+          "title": "NNPRCC official field, member access, runway, amenities and GPS coordinates",
+          "url": "https://newportnewsrc.org/"
+        },
+        {
+          "title": "Newport News MIC funded dual-site plan; future project distinct from current club use",
+          "url": "https://newportnewsva.com/mic/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Physical infrastructure and logistics",
+        "Test and operational environments",
+        "Supporting ecosystem asset"
+      ],
+      "test_access": "Flying field is for members, sunrise to sunset year-round. Visitors/guests may visit under club arrangements; this does not confer public or commercial flight access. Confirm current membership, club rules and approvals before use.",
+      "test_aircraft": "Club-published model airplanes, helicopters and multirotors; no aircraft-specific commercial testing approval inferred.",
+      "test_dimensions": "Published 400-foot paved runway and 30-acre overfly area; runway width and a surveyed operating boundary are not provided.",
+      "test_last_verified_at": "2026-10-20",
+      "test_runway_length_ft": 400,
+      "test_source_url": "https://newportnewsrc.org/",
+      "unmanned_systems_relevance": "Supporting model-aviation and flight-training infrastructure. This is not a public commercial UAS test range, a professional certification claim or proof that MIC BVLOS operations are available.",
+      "website_url": "https://newportnewsrc.org/"
+    },
+    {
       "activity_last_verified_at": "2026-08-21",
       "activity_source_url": "https://www.nnva.gov/2394/Drone-Unit",
       "activity_status": "active",
@@ -18507,6 +19066,78 @@
       ],
       "unmanned_systems_relevance": "Supporting supplier for UAS electronics, interconnects, and integrated assemblies; current drone-specific orders and site workshare require confirmation.",
       "website_url": "https://www.p1tec.com/"
+    },
+    {
+      "activity_last_verified_at": "2026-10-20",
+      "activity_source_url": "https://www.pancopia.com/",
+      "activity_status": "",
+      "address_line": "1100 Exploration Way, Suite 208",
+      "capabilities": [],
+      "city": "Hampton",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Confirm current scope and access through the organization or host before operational planning.",
+      "contact_url": "https://www.pancopia.com/",
+      "current_activity": "The current company website markets agricultural water-treatment products and distinguishes research-stage recycling technology from deployed farm applications. No operational spaceflight system is established.",
+      "development_last_verified_at": "2026-10-20",
+      "development_notes": "Research and product maturity vary by technology. The current website distinguishes field-deployable agricultural products from water-recycling research; NASA-derived research does not establish flight-qualified operational capability.",
+      "development_source_url": "https://www.pancopia.com/",
+      "development_status": "",
+      "display_name": "",
+      "identity_guard_terms": [
+        "Pancopia",
+        "Pancopia LLC",
+        "ZRV7TNXZPDJ3"
+      ],
+      "infrastructure_access": "Coordinate directly with the organization or host; public information does not establish physical admission or vehicle-test access.",
+      "latitude": 37.082523,
+      "location_last_verified_at": "2026-10-20",
+      "location_method": "geocoded",
+      "location_notes": "Official public address positioned by the U.S. Census address-range geocoder. General building/campus address reference, not a surveyed building, office suite, facility footprint or service-area boundary. Shared office-building reference for this independently documented address; a suite and common tenant ownership are not located by the geocoder. The federal SBIR profile supplies the company contact address; present physical occupancy has not been independently confirmed.",
+      "location_precision": "site",
+      "location_role": "office",
+      "location_source_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1100+Exploration+Way&city=Hampton&state=VA&zip=23666&benchmark=Public_AR_Current&format=json",
+      "longitude": -76.399763,
+      "missions": [],
+      "name": "Pancopia LLC",
+      "overview": "Pancopia LLC develops water and nutrient-recovery technologies. Its first-party website describes NASA life-support origins and research-stage barn-water recycling alongside field-deployable agricultural water-treatment products. The federal SBIR company profile lists a Hampton contact address and funded research.",
+      "owner_operator": "Pancopia LLC",
+      "partnership_opportunities": "Use the official organization or host contact route to discuss a specific research, training or industry collaboration.",
+      "platform_domains": [],
+      "postal_code": "23666",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "search_aliases": "Pancopia",
+      "short_description": "Hampton company researching water and nutrient recovery, with NASA life-support origins and current animal-agriculture applications.",
+      "sources": [
+        {
+          "title": "Current agricultural focus, NASA origins and differentiated research/deployment maturity.",
+          "url": "https://www.pancopia.com/"
+        },
+        {
+          "title": "Legal company identity, government Hampton contact address and funded R&D.",
+          "url": "https://www.sbir.gov/portfolio/699480"
+        },
+        {
+          "title": "U.S. Census public address reference, October 20, 2026",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1100+Exploration+Way&city=Hampton&state=VA&zip=23666&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Research and technical depth",
+        "Supporting ecosystem asset"
+      ],
+      "test_access": "",
+      "test_aircraft": "",
+      "test_dimensions": "",
+      "test_last_verified_at": null,
+      "test_runway_length_ft": null,
+      "test_source_url": "",
+      "unmanned_systems_relevance": "Supporting aerospace and environmental research and commercialization resource. NASA life-support origins and water-treatment R&D are documented; direct unmanned-vehicle deployment, autonomous control or an operational spaceflight system is not established.",
+      "website_url": "https://www.pancopia.com/"
     },
     {
       "address_line": "14291 Park Meadow Drive, Suite 100",
@@ -20742,6 +21373,93 @@
       "website_url": "https://www.robinradar.com/locations"
     },
     {
+      "activity_last_verified_at": "2026-10-20",
+      "activity_source_url": "https://rocketlabcorp.com/missions/launches/thats-not-a-knife/",
+      "activity_status": "active",
+      "address_line": "",
+      "capabilities": [
+        "Payloads and mission systems",
+        "Systems engineering and integration",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Wallops Island",
+      "contact_email": "inquiries@rocketlabusa.com",
+      "contact_phone": "",
+      "contact_text": "Rocket Lab public inquiry form and general company inquiries; not site-entry authorization",
+      "contact_url": "https://rocketlabcorp.com/contact/",
+      "current_activity": "LC2 has documented Electron/HASTE operations. LC3 is open; Neutron remains developmental in the reviewed current company description.",
+      "development_last_verified_at": "2026-10-20",
+      "development_notes": "LC3's August 2025 opening is documented separately from Neutron vehicle development. No operational Neutron launch or Virginia vehicle-manufacturing capability is asserted.",
+      "development_source_url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-opens-launch-complex-3-critical-milestone-path",
+      "development_status": "",
+      "display_name": "Rocket Lab Virginia Launch Operations",
+      "identity_guard_terms": [
+        "Rocket Lab",
+        "RocketLab",
+        "Launch Complex 2",
+        "Launch Complex 3",
+        "LC-2",
+        "LC-3",
+        "HASTE"
+      ],
+      "latitude": null,
+      "location_last_verified_at": "2026-10-20",
+      "location_method": "unmapped",
+      "location_notes": "Virginia operations within MARS at Wallops; no street, launch-pad coordinate, building or operational boundary is assigned.",
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://rocketlabcorp.com/contact/",
+      "longitude": null,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Rocket Lab Virginia Launch Operations",
+      "overview": "Rocket Lab operates at the Mid-Atlantic Regional Spaceport on Wallops Island. Launch Complex 2 supports Electron and HASTE; a February 27, 2026 HASTE mission documents Virginia launch activity. Launch Complex 3 opened in August 2025 for Neutron, which the current company website describes as in development. This listing groups the company's Virginia launch operations and does not assign separate product pins or imply a completed Neutron launch.",
+      "owner_operator": "Rocket Lab",
+      "partnership_opportunities": "Use Rocket Lab's public inquiry route for project-specific discussions; launch and site arrangements require separate coordination.",
+      "platform_domains": [
+        "Space-enabled services"
+      ],
+      "postal_code": "",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Eastern Shore",
+      "search_aliases": "Rocket Lab Virginia\nRocket Lab Wallops\nRocket Lab Launch Complex 2\nRocket Lab Launch Complex 3\nLC-2\nLC-3\nHASTE Wallops\nElectron Wallops\nNeutron Wallops",
+      "short_description": "Rocket Lab's Wallops launch operations include operational Electron/HASTE activity at LC2 and the opened LC3 complex for the developmental Neutron vehicle.",
+      "sources": [
+        {
+          "title": "Rocket Lab company and current Neutron development description",
+          "url": "https://rocketlabcorp.com/"
+        },
+        {
+          "title": "Rocket Lab public contacts and Launch Complex 2 location",
+          "url": "https://rocketlabcorp.com/contact/"
+        },
+        {
+          "title": "Rocket Lab That's Not A Knife HASTE mission, February 27, 2026",
+          "url": "https://rocketlabcorp.com/missions/launches/thats-not-a-knife/"
+        },
+        {
+          "title": "Rocket Lab opens Launch Complex 3, August 28, 2025",
+          "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-opens-launch-complex-3-critical-milestone-path"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Physical infrastructure and logistics",
+        "Supporting ecosystem asset"
+      ],
+      "test_access": "",
+      "test_aircraft": "",
+      "test_dimensions": "",
+      "test_last_verified_at": null,
+      "test_runway_length_ft": null,
+      "test_source_url": "",
+      "unmanned_systems_relevance": "Supporting space-launch and hypersonic-test infrastructure for payload and mission development. Its inclusion does not establish public UAS access or a general-purpose vehicle range.",
+      "website_url": "https://rocketlabcorp.com/"
+    },
+    {
       "activity_last_verified_at": "2026-08-24",
       "activity_source_url": "https://experience.saic.com/cuas",
       "activity_status": "active",
@@ -22866,6 +23584,104 @@
       "website_url": "https://www.portofvirginia.com/gateway/capabilities/"
     },
     {
+      "activity_last_verified_at": "2026-10-20",
+      "activity_source_url": "https://www.jlab.org/about",
+      "activity_status": "active",
+      "address_line": "12000 Jefferson Avenue",
+      "capabilities": [
+        "Data engineering, analytics, and edge computing",
+        "Systems engineering and integration"
+      ],
+      "city": "Newport News",
+      "contact_email": "jlabinfo@jlab.org",
+      "contact_phone": "757-269-7100",
+      "contact_text": "Jefferson Lab general inquiries and public contact directory; research/user access follows laboratory procedures",
+      "contact_url": "https://www.jlab.org/about/contact-jlab",
+      "current_activity": "Existing scientific research, applied computing and education programs; the separately announced new data-center/HPDF building remains a development project.",
+      "development_last_verified_at": "2026-10-20",
+      "development_notes": "The existing laboratory is distinct from the new data-center/HPDF building, whose June 2026 announcement describes groundbreaking rather than completed operation.",
+      "development_source_url": "https://www.jlab.org/sites/default/files/Collateral2026_GenesisMissionv7.pdf",
+      "development_status": "",
+      "display_name": "Jefferson Lab",
+      "identity_guard_terms": [
+        "Jefferson Lab",
+        "Jefferson Laboratory",
+        "Thomas Jefferson National Accelerator Facility",
+        "TJNAF",
+        "JLab"
+      ],
+      "latitude": null,
+      "location_last_verified_at": "2026-10-20",
+      "location_method": "unmapped",
+      "location_notes": "Verified campus address only. No coordinate, building, accelerator footprint or vehicle-test boundary has been established from the reviewed sources.",
+      "location_precision": "site",
+      "location_role": "campus",
+      "location_source_url": "https://www.jlab.org/visiting",
+      "longitude": null,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "Thomas Jefferson National Accelerator Facility (Jefferson Lab)",
+      "overview": "Jefferson Lab is a U.S. Department of Energy Office of Science national laboratory managed and operated by SURATech, LLC. Its established work includes nuclear physics, accelerator engineering, instrumentation and scientific computing. Documented AI/ML work includes anomaly detection, optimization and control, and edge computing. Engineering internships and education contribute to regional technical talent. These scientific capabilities do not establish a UxS operating range or vehicle-autonomy test service.",
+      "owner_operator": "U.S. Department of Energy Office of Science; managed and operated by SURATech, LLC",
+      "partnership_opportunities": "Use the laboratory's published information and user routes. Facility access requires registration and applicable approval.",
+      "platform_domains": [],
+      "postal_code": "23606",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "search_aliases": "Jefferson Lab\nJLab\nTJNAF\nThomas Jefferson National Accelerator Facility",
+      "short_description": "DOE national laboratory in Newport News contributing scientific computing, AI/ML, accelerator engineering and technical workforce expertise.",
+      "sources": [
+        {
+          "title": "Jefferson Lab overview and current SURATech operator",
+          "url": "https://www.jlab.org/about"
+        },
+        {
+          "title": "Visiting Jefferson Lab: campus address and access procedures",
+          "url": "https://www.jlab.org/visiting"
+        },
+        {
+          "title": "Contact Jefferson Lab",
+          "url": "https://www.jlab.org/about/contact-jlab"
+        },
+        {
+          "title": "Jefferson Lab accelerator science",
+          "url": "https://www.jlab.org/accelerator"
+        },
+        {
+          "title": "Jefferson Lab Data Science Department",
+          "url": "https://www.jlab.org/IT/datascience"
+        },
+        {
+          "title": "Jefferson Lab student internship program",
+          "url": "https://www.jlab.org/human_resources/careers/student-internships"
+        },
+        {
+          "title": "Jefferson Lab AI-accelerated science factsheet, updated June 2026",
+          "url": "https://www.jlab.org/sites/default/files/Collateral2026_GenesisMissionv7.pdf"
+        },
+        {
+          "title": "Jefferson Lab breaks ground on new data-center building, June 12, 2026",
+          "url": "https://www.jlab.org/news/releases/jefferson-lab-breaks-ground-new-building-power-next-generation-scientific-discovery"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Workforce and talent",
+        "Supporting ecosystem asset"
+      ],
+      "test_access": "",
+      "test_aircraft": "",
+      "test_dimensions": "",
+      "test_last_verified_at": null,
+      "test_runway_length_ft": null,
+      "test_source_url": "",
+      "unmanned_systems_relevance": "Supporting research and workforce context through scientific AI, data systems and engineering. Transfer to uncrewed vehicles would require a specific evidenced project or partnership.",
+      "website_url": "https://www.jlab.org/about"
+    },
+    {
       "activity_last_verified_at": "2026-08-25",
       "activity_source_url": "https://threattec.com/training-against-a-threat-with-drones/",
       "activity_status": "active",
@@ -23744,6 +24560,84 @@
       ],
       "unmanned_systems_relevance": "Twin County is included as public aviation infrastructure serving Galax Hillsville. Its inclusion does not imply authorization for unmanned-aircraft operations; airport, operator, and airspace approvals still apply.",
       "website_url": "https://twincountyairport.us/"
+    },
+    {
+      "activity_last_verified_at": "2026-10-20",
+      "activity_source_url": "https://www.army.mil/article/296115/vice_chief_to_soldiers_im_trusting_you",
+      "activity_status": "active",
+      "address_line": "",
+      "capabilities": [
+        "Systems engineering and integration",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "city": "Newport News",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Official Army command information; project-intake and visitor-access routes not verified",
+      "contact_url": "https://www.army.mil/fascom",
+      "current_activity": "Official Army October 2026 announcements identify the FCC-to-FASCOM redesignation and a command role in concepts, requirements and autonomous-systems experimentation. This is an active organization, not a declaration that any military test facility is publicly available.",
+      "development_last_verified_at": "2026-10-20",
+      "development_notes": "",
+      "development_source_url": "https://www.army.mil/article/296115/vice_chief_to_soldiers_im_trusting_you",
+      "development_status": "",
+      "display_name": "U.S. Army Futures and Autonomous Systems Command",
+      "identity_guard_terms": [
+        "FASCOM",
+        "Futures and Autonomous Systems Command",
+        "Futures and Concepts Command"
+      ],
+      "infrastructure_access": "",
+      "latitude": null,
+      "location_last_verified_at": "2026-10-20",
+      "location_method": "unmapped",
+      "location_notes": "Publicly associated with Fort Eustis. No precise command-office address, command-building point or test-area boundary is verified; the existing Fort Eustis installation record remains separate.",
+      "location_precision": "regional",
+      "location_role": "headquarters",
+      "location_source_url": "https://www.army.mil/article/296115/vice_chief_to_soldiers_im_trusting_you",
+      "longitude": null,
+      "missions": [
+        "Training and experimentation"
+      ],
+      "name": "U.S. Army Futures and Autonomous Systems Command",
+      "overview": "The Army publicly announced the redesignation of Futures and Concepts Command as the U.S. Army Futures and Autonomous Systems Command at Fort Eustis on October 14, 2026. This record represents the command and its concepts, requirements and autonomous-systems experimentation role. It does not identify a standalone range, a specific command building, commercially available testing capacity or an operating-area boundary.",
+      "owner_operator": "U.S. Army",
+      "partnership_opportunities": "Use official Army channels for releasable organizational information. No commercial testing intake, visitor access or operational permissions are established here.",
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "postal_code": "",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "search_aliases": "FASCOM\nFutures and Autonomous Systems Command\nFutures and Concepts Command\nFCC (Army predecessor)",
+      "short_description": "U.S. Army concepts, requirements and autonomous-systems experimentation command at Fort Eustis, redesignated from Futures and Concepts Command in October 2026.",
+      "sources": [
+        {
+          "title": "Official U.S. Army FASCOM command information",
+          "url": "https://www.army.mil/fascom"
+        },
+        {
+          "title": "Army October 2026 announcement of FCC-to-FASCOM redesignation at Fort Eustis",
+          "url": "https://www.army.mil/article/296115/vice_chief_to_soldiers_im_trusting_you"
+        },
+        {
+          "title": "Army autonomy advancements and future command role, October 2026",
+          "url": "https://www.army.mil/article/296083/future_focused_vice_chief_of_staff_of_the_army_details_army_autonomy_advancements"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Federal and defense customer access",
+        "Core unmanned-systems asset"
+      ],
+      "test_access": "",
+      "test_aircraft": "",
+      "test_dimensions": "",
+      "test_last_verified_at": null,
+      "test_runway_length_ft": null,
+      "test_source_url": "",
+      "unmanned_systems_relevance": "Federal command and customer/technical-coordination connection for Army autonomous-systems concepts, requirements and experimentation. Public organizational reporting is not approval to access military facilities or perform any operation.",
+      "website_url": "https://www.army.mil/fascom"
     },
     {
       "address_line": "4000 Coast Guard Boulevard",
@@ -27389,6 +28283,86 @@
       "website_url": "https://marinerobotics.centers.vt.edu/index.html"
     },
     {
+      "activity_last_verified_at": "2026-10-20",
+      "activity_source_url": "https://www.innovateattechcenterva.com/secure-energy-future-center-opens-in-newport-news-va/",
+      "activity_status": "active",
+      "address_line": "700 Tech Center Parkway",
+      "capabilities": [],
+      "city": "Newport News",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Use the official VTCRC Newport News contact route for current office and program arrangements.",
+      "contact_url": "https://www.vtcrc.com/staff-and-contacts/",
+      "current_activity": "VTCRC lists a Newport News and Secure Energy Future Center operation. The center opened April 22, 2026 for energy innovation, commercialization and workforce development.",
+      "development_last_verified_at": "2026-10-20",
+      "development_notes": "",
+      "development_source_url": "https://www.vtcrc.com/about/",
+      "development_status": "",
+      "display_name": "",
+      "identity_guard_terms": [
+        "Virginia Tech Corporate Research Center Newport News",
+        "VTCRC Newport News",
+        "Secure Energy Future Center"
+      ],
+      "infrastructure_access": "Contact VTCRC for current office and program arrangements. Current cohort, workspace and laboratory availability require program-specific confirmation.",
+      "latitude": null,
+      "location_last_verified_at": "2026-10-20",
+      "location_method": "",
+      "location_notes": "One coordinated Newport News office/center identity at the official building-level address. Sources differ between Suite 301 and Suite 305; no suite is selected. Coordinates have not been verified and no spatial pin is assigned. VTCRC headquarters in Blacksburg is a distinct location.",
+      "location_precision": "site",
+      "location_role": "office",
+      "location_source_url": "https://www.vtcrc.com/staff-and-contacts/",
+      "longitude": null,
+      "missions": [],
+      "name": "Virginia Tech Corporate Research Center Newport News and Secure Energy Future Center",
+      "overview": "Virginia Tech Corporate Research Center's Newport News operation supports research commercialization, entrepreneurship and industry collaboration at Tech Center Research Park. Its documented aerospace connection includes a NASA technology-commercialization accelerator pilot launched in 2021. The Secure Energy Future Center opened in April 2026 and supports energy innovation, commercialization and workforce development.",
+      "owner_operator": "Virginia Tech Corporate Research Center, Inc., a wholly owned for-profit subsidiary of Virginia Tech Foundation, Inc.",
+      "partnership_opportunities": "Use the official VTCRC Newport News contact route for current office and program arrangements.",
+      "platform_domains": [],
+      "postal_code": "23606",
+      "provenance": "curated-public-source",
+      "record_type": "organization",
+      "region": "Hampton Roads",
+      "search_aliases": "VTCRC Newport News\nSecure Energy Future Center\nSEFC",
+      "short_description": "Newport News research-commercialization and energy-innovation support at Tech Center Research Park.",
+      "sources": [
+        {
+          "title": "VTCRC official corporate identity and ownership",
+          "url": "https://www.vtcrc.com/about/"
+        },
+        {
+          "title": "VTCRC official Newport News / SEFC office and contact route",
+          "url": "https://www.vtcrc.com/staff-and-contacts/"
+        },
+        {
+          "title": "NASA Tech Center Research Park accelerator pilot, October 2021",
+          "url": "https://technology.nasa.gov/tech-center-research-park-accelerator-network-pilot-program"
+        },
+        {
+          "title": "Official Secure Energy Future Center overview",
+          "url": "https://secureenergyfuturecenter.com/"
+        },
+        {
+          "title": "Tech Center official SEFC opening announcement, April 2026",
+          "url": "https://www.innovateattechcenterva.com/secure-energy-future-center-opens-in-newport-news-va/"
+        }
+      ],
+      "state": "VA",
+      "strategic_categories": [
+        "Commercialization and capital",
+        "Workforce and talent",
+        "Supporting ecosystem asset"
+      ],
+      "test_access": "",
+      "test_aircraft": "",
+      "test_dimensions": "",
+      "test_last_verified_at": null,
+      "test_runway_length_ft": null,
+      "test_source_url": "",
+      "unmanned_systems_relevance": "Supporting commercialization, energy and workforce resource for the regional technology ecosystem. The local NASA pilot provides an aerospace-commercialization connection; Southwest Virginia autonomy activities are not assigned to this Newport News office.",
+      "website_url": "https://www.vtcrc.com/staff-and-contacts/"
+    },
+    {
       "address_line": "Kentland Farm research site",
       "capabilities": [
         "Perception, sensing, and sensor fusion",
@@ -30999,6 +31973,41 @@
       "from": "Navy Robotic and Autonomous Systems Warfighting Development Center",
       "to": "Joint Expeditionary Base Little Creek-Fort Story",
       "type": "located-at"
+    },
+    {
+      "from": "U.S. Army Futures and Autonomous Systems Command",
+      "to": "Fort Eustis - Joint Base Langley-Eustis",
+      "type": "located-at"
+    },
+    {
+      "from": "Hampton Roads Mobility Innovation Center",
+      "to": "Newport News Park Radio Control Club Flying Field",
+      "type": "located-at"
+    },
+    {
+      "from": "Rocket Lab Virginia Launch Operations",
+      "to": "Mid-Atlantic Regional Spaceport",
+      "type": "located-at"
+    },
+    {
+      "from": "Old Dominion University",
+      "to": "Aerospace Academy of the Eastern Shore",
+      "type": "supports"
+    },
+    {
+      "from": "Eastern Shore Community College",
+      "to": "Aerospace Academy of the Eastern Shore",
+      "type": "supports"
+    },
+    {
+      "from": "757 Collab",
+      "to": "Mid-Atlantic Tech Bridge",
+      "type": "partners-with"
+    },
+    {
+      "from": "Tidewater Community College",
+      "to": "Maxbyte Industry 4.0 Centre of Excellence at TCC",
+      "type": "hosts"
     }
   ]
 }

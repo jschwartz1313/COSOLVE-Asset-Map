@@ -19,10 +19,13 @@ test("resource filters persist between map and directory and clear completely", 
   expect(Number(await page.locator("#result-count").textContent())).toBeGreaterThan(500);
 });
 
-test("project status and published specifications are visible", async ({ page }) => {
-  await page.goto("/map/?purpose=projects&activity=pilot");
-  await expect(page.locator(".result-row").first()).toBeVisible();
-  await expect(page.locator(".result-row .activity-label").first()).toHaveText("Pilot or demonstration");
+test("active programs and published specifications are visible", async ({ page }) => {
+  await page.goto("/map/?purpose=projects&activity=active");
+  const results = page.locator(".result-row");
+  await expect(results.first()).toBeVisible();
+  const resultCount = await results.count();
+  await expect(results.locator(".type-pill")).toHaveText(Array(resultCount).fill("Program"));
+  await expect(results.locator(".activity-label")).toHaveText(Array(resultCount).fill("Active"));
   await page.goto("/assets/virginia-tech-drone-park/");
   await expect(page.locator(".test-specifications")).toContainText("300 x 120 x 85");
   await expect(page.locator(".test-specifications")).toContainText("Not documented");

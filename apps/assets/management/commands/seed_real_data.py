@@ -137,10 +137,15 @@ class Command(BaseCommand):
                         Q(name__icontains=term) | Q(display_name__icontains=term)
                         | Q(search_aliases__icontains=term)
                     )
-                if Asset.objects.filter(matches).exists():
+                if (
+                    Asset.objects.filter(matches).exists()
+                    or Asset.history.filter(matches).exists()
+                ):
                     held_identities.add(record["name"])
                     skipped += 1
-                    self.stdout.write(f"Preserved possible existing identity for {record['name']}.")
+                    self.stdout.write(
+                        f"Preserved possible existing or retired identity for {record['name']}."
+                    )
                     continue
 
             region, _ = Region.objects.get_or_create(

@@ -23,6 +23,7 @@ python manage.py apply_catalog_corrections --corrections data/escc_grant_correct
 python manage.py apply_catalog_corrections --corrections data/faa_baa_corrections_2026_10_09.json
 python manage.py enrich_asset_profiles --guarded-corrections data/faa_baa_corrections_2026_10_09.json
 python manage.py apply_catalog_corrections --corrections data/orange_contact_correction_2026_10_20.json
+python manage.py apply_catalog_corrections --corrections data/asset_corrections_2026_10_20.json
 python manage.py apply_catalog_reviews
 python manage.py apply_catalog_reviews --reviews data/asset_editorial_reviews_2026_08_24.json
 python manage.py apply_catalog_reviews --reviews data/asset_editorial_reviews_2026_08_24_expansion.json
