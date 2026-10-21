@@ -45,6 +45,32 @@ test("short and detailed profiles wrap cleanly at desktop, tablet and phone size
   }
 });
 
+test("contact and location share a row below the description instead of a long sidebar", async ({ page }) => {
+  for (const width of [390, 768, 1280]) {
+    await page.setViewportSize({ width, height: 900 });
+    for (const slug of [
+      "blue-ridge-community-college-unmanned-systems-courses",
+      "xelevate-leesburg-unmanned-systems-facility",
+    ]) {
+      await page.goto(`/assets/${slug}/`);
+      const main = await page.locator(".detail-main").boundingBox();
+      const details = await page.locator(".detail-sidebar").boundingBox();
+      const contact = await page.locator(".contact-section").boundingBox();
+      const location = await page.locator(".location-section").boundingBox();
+      const supporting = await page.locator(".detail-supporting").boundingBox();
+      expect(details.y).toBeGreaterThanOrEqual(main.y + main.height);
+      expect(Math.abs(details.width - main.width)).toBeLessThan(2);
+      expect(supporting.y).toBeGreaterThanOrEqual(details.y + details.height);
+      if (width > 520) {
+        expect(Math.abs(contact.y - location.y)).toBeLessThan(2);
+        expect(location.x).toBeGreaterThanOrEqual(contact.x + contact.width);
+      } else {
+        expect(location.y).toBeGreaterThanOrEqual(contact.y + contact.height);
+      }
+    }
+  }
+});
+
 test("printing includes supporting details and restores the reader's open sections", async ({ page }) => {
   await page.goto(course);
   const sources = page.locator(".sources-disclosure");

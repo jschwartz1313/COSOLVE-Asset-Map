@@ -182,7 +182,8 @@ test("simplified headings and unboxed profile sections fit the standard design",
     await expect(section).toHaveCSS("background-color", "rgba(0, 0, 0, 0)");
   }
   await expect(sections.first()).toHaveCSS("border-top-width", "0px");
-  await expect(sections.nth(1)).toHaveCSS("border-top-width", "1px");
+  await expect(page.locator(".detail-sidebar")).toHaveCSS("border-top-width", "1px");
+  await expect(page.locator(".detail-sidebar")).toHaveCSS("border-left-width", "0px");
   await expect(page.locator(".detail-sidebar")).toContainText("Contact and information");
   await expect(page.locator(".detail-sidebar")).toContainText("Location");
   await expect(page.locator(".detail-sidebar")).toContainText("Classification");
