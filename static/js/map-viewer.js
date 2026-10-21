@@ -132,6 +132,8 @@ let loadRequestId = 0;
 let activeMapTool = null;
 let assetDataReady = false;
 let assetRequestController;
+let assetStatus = "";
+const layerErrors = new Map();
 
 function setAssetDataReady(ready) {
   assetDataReady = ready;
@@ -144,8 +146,20 @@ function setAssetDataReady(ready) {
 }
 
 function showStatus(message) {
-  status.textContent = message;
-  status.hidden = !message;
+  assetStatus = message;
+  renderStatus();
+}
+
+function showLayerError(toggle, message = "") {
+  if (message) layerErrors.set(toggle.id, message);
+  else layerErrors.delete(toggle.id);
+  renderStatus();
+}
+
+function renderStatus() {
+  const messages = [assetStatus, ...layerErrors.values()].filter(Boolean);
+  status.textContent = messages.join(" ");
+  status.hidden = !messages.length;
 }
 
 function assetCountLabel(value) {
@@ -547,83 +561,16 @@ for (const input of basemapInputs) {
   });
 }
 
-async function updateCountyLayer() {
-  countyLayerToggle.disabled = true;
-  updateLegendVisibility();
-  try {
-    await mapController.setCountyLayerVisible(countyLayerToggle.checked);
-  } catch (error) {
-    countyLayerToggle.checked = false;
-    showStatus("County boundaries could not be loaded.");
-    console.error(error);
-  } finally {
-    countyLayerToggle.disabled = false;
-    updateViewActions();
-  }
-}
-
-countyLayerToggle.addEventListener("change", updateCountyLayer);
-
-async function updateRegionLayer() {
-  regionLayerToggle.disabled = true;
-  updateLegendVisibility();
-  try {
-    await mapController.setRegionLayerVisible(regionLayerToggle.checked);
-  } catch (error) {
-    regionLayerToggle.checked = false;
-    showStatus("Ecosystem region shading could not be loaded.");
-    console.error(error);
-  } finally {
-    regionLayerToggle.disabled = false;
-    updateViewActions();
-  }
-}
-
-regionLayerToggle.addEventListener("change", updateRegionLayer);
-
-async function updateMpzLayer() {
-  mpzLayerToggle.disabled = true;
-  updateLegendVisibility();
-  try {
-    await mapController.setMpzLayerVisible(mpzLayerToggle.checked);
-  } catch (error) {
-    mpzLayerToggle.checked = false;
-    showStatus("Potential Maritime Prosperity Zone tracts could not be loaded.");
-    console.error(error);
-  } finally {
-    mpzLayerToggle.disabled = false;
-    updateViewActions();
-  }
-}
-
-mpzLayerToggle.addEventListener("change", updateMpzLayer);
-
-async function updateHeliportLayer() {
-  heliportLayerToggle.disabled = true;
-  updateLegendVisibility();
-  try {
-    await mapController.setHeliportLayerVisible(heliportLayerToggle.checked);
-  } catch (error) {
-    heliportLayerToggle.checked = false;
-    showStatus("FAA heliport reference points could not be loaded.");
-    console.error(error);
-  } finally {
-    heliportLayerToggle.disabled = false;
-    updateViewActions();
-  }
-}
-
-heliportLayerToggle.addEventListener("change", updateHeliportLayer);
-
 function bindReferenceLayer({ toggle, setVisible, failureMessage }) {
   async function updateLayer() {
     toggle.disabled = true;
     updateLegendVisibility();
     try {
       await setVisible(toggle.checked);
+      showLayerError(toggle);
     } catch (error) {
       toggle.checked = false;
-      showStatus(failureMessage);
+      showLayerError(toggle, failureMessage);
       console.error(error);
     } finally {
       toggle.disabled = false;
@@ -634,6 +581,26 @@ function bindReferenceLayer({ toggle, setVisible, failureMessage }) {
   return updateLayer;
 }
 
+const updateCountyLayer = bindReferenceLayer({
+  toggle: countyLayerToggle,
+  setVisible: (visible) => mapController.setCountyLayerVisible(visible),
+  failureMessage: "County boundaries could not be loaded.",
+});
+const updateRegionLayer = bindReferenceLayer({
+  toggle: regionLayerToggle,
+  setVisible: (visible) => mapController.setRegionLayerVisible(visible),
+  failureMessage: "Ecosystem region shading could not be loaded.",
+});
+const updateMpzLayer = bindReferenceLayer({
+  toggle: mpzLayerToggle,
+  setVisible: (visible) => mapController.setMpzLayerVisible(visible),
+  failureMessage: "Potential Maritime Prosperity Zone tracts could not be loaded.",
+});
+const updateHeliportLayer = bindReferenceLayer({
+  toggle: heliportLayerToggle,
+  setVisible: (visible) => mapController.setHeliportLayerVisible(visible),
+  failureMessage: "FAA heliport reference points could not be loaded.",
+});
 const updateControlledAirspaceLayer = bindReferenceLayer({
   toggle: controlledAirspaceToggle,
   setVisible: (visible) => mapController.setControlledAirspaceVisible(visible),

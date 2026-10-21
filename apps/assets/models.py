@@ -454,6 +454,20 @@ class Relationship(models.Model):
         if self.from_asset_id == self.to_asset_id:
             raise ValidationError("An asset cannot relate to itself.")
 
+    @property
+    def incoming_label(self):
+        """Describe the source when this edge is shown on its target's profile."""
+        return {
+            self.RelationshipType.OPERATES: "Operated by",
+            self.RelationshipType.LOCATED_AT: "Location of",
+            self.RelationshipType.PARTNERS_WITH: "Partners with",
+            self.RelationshipType.FUNDS: "Funded by",
+            self.RelationshipType.SUPPORTS: "Supported by",
+            self.RelationshipType.PARTICIPATES_IN: "Participants include",
+            self.RelationshipType.HOSTS: "Hosted by",
+            self.RelationshipType.MANUFACTURES_FOR: "Receives manufacturing from",
+        }.get(self.relationship_type, "Related from")
+
     def __str__(self):
         return f"{self.from_asset} {self.get_relationship_type_display()} {self.to_asset}"
 

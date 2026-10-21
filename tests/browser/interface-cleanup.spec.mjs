@@ -39,16 +39,114 @@ test("map headings stay concise and the legend follows visible overlays", async 
   await expect(page.locator("[data-legend-empty]")).toBeHidden();
 });
 
-test("failed overlays do not appear in the legend", async ({ page }) => {
+const referenceLayers = [
+  ["county-layer-toggle", "virginia-counties", "county-boundaries", "County boundaries"],
+  ["region-layer-toggle", "virginia-regions", "ecosystem-regions", "Ecosystem region shading"],
+  ["mpz-layer-toggle", "virginia-maritime-prosperity-candidates", "maritime-prosperity-zones", "Potential Maritime Prosperity Zone tracts"],
+  ["heliport-layer-toggle", "virginia-heliports", "heliports", "FAA heliport reference points"],
+  ["controlled-airspace-toggle", "virginia-surface-controlled-airspace", "controlled-airspace", "FAA surface controlled airspace"],
+  ["uas-facility-map-toggle", "virginia-uas-facility-map", "uas-facility-map", "FAA authorization-ceiling data"],
+  ["flight-constraints-toggle", "virginia-flight-constraints", "flight-constraints", "FAA flight-constraint data"],
+  ["uas-test-sites-toggle", "virginia-uas-test-sites", "uas-test-sites", "UAS test-facility data"],
+  ["maap-flight-areas-toggle", "maap-flight-areas", "maap-flight-areas", "MAAP supplied flight-area outlines"],
+];
+
+for (const [id, file, pane, label] of referenceLayers) {
+  test(`${label} clear their failure after a successful retry`, async ({ page }) => {
+    const pattern = `**/${file}.geojson*`;
+    await page.route(pattern, (route) => route.fulfill({ status: 503, body: "Unavailable" }));
+    await page.goto("/map/");
+    await expect(page.locator("[data-map-app]")).toHaveAttribute("aria-busy", "false");
+    await page.locator(".map-legend summary").click();
+    await page.locator(".map-layers summary").click();
+    const toggle = page.locator(`#${id}`);
+    const legend = page.locator(`[data-legend-toggle="${id}"]`);
+    const geometry = page.locator(`.leaflet-${pane}-pane path, .leaflet-${pane}-pane canvas, .leaflet-${pane}-pane .leaflet-marker-icon`);
+    await expect(toggle).not.toBeChecked();
+    // A failed load immediately resets the checkbox; check() wrongly requires it to stay checked.
+    await toggle.click();
+    await expect(page.locator("#map-status")).toContainText(`${label} could not be loaded.`);
+    await expect(toggle).not.toBeChecked();
+    await expect(toggle).toBeEnabled();
+    await expect(legend).toBeHidden();
+    await expect(geometry).toHaveCount(0);
+
+    await page.unroute(pattern);
+    await toggle.click();
+    await expect(toggle).toBeChecked();
+    await expect(toggle).toBeEnabled();
+    await expect(geometry).not.toHaveCount(0);
+    await expect(legend).toBeVisible();
+    await expect(page.locator("#map-status")).toBeHidden();
+    await expect(page.locator("#map-status")).toHaveText("");
+  });
+}
+
+test("a recovered layer preserves other layer failures", async ({ page }) => {
+  for (const file of ["virginia-counties", "virginia-regions"]) {
+    await page.route(`**/${file}.geojson*`, (route) => route.fulfill({ status: 503, body: "Unavailable" }));
+  }
+  await page.goto("/map/");
+  await expect(page.locator("[data-map-app]")).toHaveAttribute("aria-busy", "false");
+  await page.locator(".map-layers summary").click();
+  await page.locator("#county-layer-toggle").click();
+  await expect(page.locator("#map-status")).toContainText("County boundaries could not be loaded.");
+  await page.locator("#region-layer-toggle").click();
+  await expect(page.locator("#map-status")).toContainText("Ecosystem region shading could not be loaded.");
+  await expect(page.locator("#map-status")).toContainText("County boundaries could not be loaded.");
+  await page.unroute("**/virginia-counties.geojson*");
+  await page.locator("#county-layer-toggle").click();
+  await expect(page.locator("#county-layer-toggle")).toBeEnabled();
+  await expect(page.locator("#map-status")).not.toContainText("County boundaries");
+  await expect(page.locator("#map-status")).toHaveText("Ecosystem region shading could not be loaded.");
+  await page.locator("#heliport-layer-toggle").check();
+  await expect(page.locator("#heliport-layer-toggle")).toBeEnabled();
+  await expect(page.locator("#map-status")).toHaveText("Ecosystem region shading could not be loaded.");
+  await page.unroute("**/virginia-regions.geojson*");
+  await page.locator("#region-layer-toggle").click();
+  await expect(page.locator("#region-layer-toggle")).toBeEnabled();
+  await expect(page.locator("#map-status")).toBeHidden();
+});
+
+test("a recovered layer preserves the truncated listing notice", async ({ page }) => {
+  await page.route("**/api/assets.geojson*", async (route) => {
+    const response = await route.fetch();
+    const data = await response.json();
+    await route.fulfill({ response, json: {
+      ...data, truncated: true, result_count: data.result_count + 1,
+    } });
+  });
   await page.route("**/virginia-counties.geojson*", (route) => route.fulfill({ status: 503, body: "Unavailable" }));
   await page.goto("/map/");
-  await expect(page.locator(".result-row").first()).toBeVisible();
-  await page.locator(".map-legend summary").click();
+  await expect(page.locator("#map-status")).toContainText("Narrow the filters to see every result.");
+  const listingNotice = await page.locator("#map-status").textContent();
   await page.locator(".map-layers summary").click();
-  await page.locator("#county-layer-toggle").check();
-  await expect(page.locator("#map-status")).toContainText("County boundaries could not be loaded");
-  await expect(page.locator("#county-layer-toggle")).not.toBeChecked();
-  await expect(page.locator('[data-legend-toggle="county-layer-toggle"]')).toBeHidden();
+  await page.locator("#county-layer-toggle").click();
+  await expect(page.locator("#map-status")).toContainText("County boundaries could not be loaded.");
+  await expect(page.locator("#map-status")).toContainText(listingNotice);
+  await page.unroute("**/virginia-counties.geojson*");
+  await page.locator("#county-layer-toggle").click();
+  await expect(page.locator("#county-layer-toggle")).toBeEnabled();
+  await expect(page.locator("#map-status")).toHaveText(listingNotice);
+  await expect(page.locator("#map-status")).toBeVisible();
+});
+
+test("a recovered layer preserves an asset loading failure", async ({ page }) => {
+  await page.route("**/api/assets.geojson*", (route) => route.fulfill({ status: 503, body: "Unavailable" }));
+  await page.route("**/virginia-counties.geojson*", (route) => route.fulfill({ status: 503, body: "Unavailable" }));
+  await page.goto("/map/");
+  const assetFailure = "The map data could not be loaded. The directory remains available.";
+  await expect(page.locator("#map-status")).toHaveText(assetFailure);
+  await page.locator(".map-layers summary").click();
+  await page.locator("#county-layer-toggle").click();
+  await expect(page.locator("#map-status")).toContainText("County boundaries could not be loaded.");
+  await expect(page.locator("#map-status")).toContainText(assetFailure);
+  await page.unroute("**/virginia-counties.geojson*");
+  await page.locator("#county-layer-toggle").click();
+  await expect(page.locator("#county-layer-toggle")).toBeEnabled();
+  await expect(page.locator(".leaflet-county-boundaries-pane path")).not.toHaveCount(0);
+  await expect(page.locator("#map-status")).toHaveText(assetFailure);
+  await expect(page.locator("#nearby-search")).toBeDisabled();
 });
 
 test("saved layer selections and printed legends omit inactive overlays", async ({ page }) => {
