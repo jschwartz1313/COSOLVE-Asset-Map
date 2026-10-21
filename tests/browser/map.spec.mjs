@@ -768,12 +768,10 @@ test("asset detail profiles stay readable and within the viewport", async ({ pag
   expect(
     await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
   ).toBe(true);
-  expect(
-    await page
-      .locator(".detail-main section")
-      .first()
-      .evaluate((element) => element.getBoundingClientRect().height),
-  ).toBeLessThan(300);
+  for (const selector of [".overview-section > p", ".relevance-section"]) {
+    expect(await page.locator(selector).evaluate((element) =>
+      element.getBoundingClientRect().height)).toBeLessThan(300);
+  }
 });
 
 test("source-backed activity and site-readiness details are visible", async ({ page }) => {

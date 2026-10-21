@@ -236,7 +236,7 @@ class CoreViewTests(TestCase):
         self.assertNotIn("history_entries", response.context)
         self.assertEqual(asset.history.count(), 2)
         self.assertContains(response, 'class="detail-disclosure sources-disclosure"')
-        self.assertContains(response, "What this asset is")
+        self.assertContains(response, "Overview")
         self.assertContains(response, "Contact and information")
         self.assertContains(response, "757-555-0100")
         self.assertContains(response, "contact@example.org")
@@ -329,6 +329,78 @@ class CoreViewTests(TestCase):
             f'<a href="{asset.get_absolute_url()}">{asset.public_name}</a>',
             html=True,
         )
+
+    def test_profile_layout_keeps_public_details_and_taxonomy_without_editing_data(self):
+        asset = Asset.objects.create(
+            name="Organized public profile",
+            record_type=Asset.RecordType.PROGRAM,
+            short_description="A short public summary.",
+            overview="The complete published overview remains available.",
+            unmanned_systems_relevance="The full documented UxS relevance remains available.",
+            contact_text="Public information route; direct contact is not published.",
+            contact_phone="757-555-0100",
+            contact_email="contact@example.org",
+            contact_url="https://example.org/contact",
+            website_url="https://example.org/",
+            address_line="123 Research Lane",
+            city="Hampton",
+            state="VA",
+            postal_code="23666",
+            latitude="37.04",
+            longitude="-76.38",
+            location_precision=Asset.LocationPrecision.SITE,
+            location_method=Asset.LocationMethod.PUBLISHED,
+            location_source_url="https://example.org/location",
+            location_last_verified_at=date(2026, 10, 21),
+            location_notes="The point represents the campus, not a building entrance.",
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        )
+        asset.capabilities.create(name="Documented flight testing")
+        asset.missions.create(name="Training and experimentation")
+        asset.strategic_categories.create(name="Research and testing")
+        asset.platform_domains.create(name="Air")
+        Source.objects.create(asset=asset, title="Official program details", url=asset.website_url)
+        before = Asset.objects.filter(pk=asset.pk).values().get()
+        history_count = asset.history.count()
+
+        response = self.client.get(asset.get_absolute_url())
+
+        for text in (
+            asset.public_name, asset.short_description, asset.overview,
+            asset.unmanned_systems_relevance, asset.contact_text, asset.contact_phone,
+            asset.contact_email, asset.address_line, asset.city, asset.postal_code,
+            asset.location_notes, asset.get_location_precision_display(),
+            asset.get_location_method_display(), "Documented flight testing",
+            "Training and experimentation", "Research and testing", "Air",
+            "Official program details", "Suggest an update",
+        ):
+            with self.subTest(text=text):
+                self.assertContains(response, text)
+        self.assertContains(response, 'class="overview-section"')
+        self.assertContains(response, 'class="focus-section"')
+        self.assertContains(response, 'class="detail-taxonomy-list"', count=2)
+        self.assertContains(
+            response, 'class="detail-disclosure sidebar-disclosure location-evidence"',
+        )
+        self.assertContains(response, 'class="classification-section"')
+        self.assertEqual(response.content.count(b">Visit website</a>"), 1)
+        self.assertEqual(Asset.objects.filter(pk=asset.pk).values().get(), before)
+        self.assertEqual(asset.history.count(), history_count)
+
+    def test_profile_without_an_overview_still_shows_its_relevance(self):
+        asset = Asset.objects.create(
+            name="Minimal public profile",
+            record_type=Asset.RecordType.ORGANIZATION,
+            short_description="A concise summary.",
+            unmanned_systems_relevance="Documented relevance without an extended overview.",
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        )
+        response = self.client.get(asset.get_absolute_url())
+        self.assertContains(response, "Documented relevance without an extended overview.")
+        self.assertNotContains(response, 'class="focus-section"')
+        self.assertNotContains(response, 'class="contact-section"')
 
     def test_general_update_submission_enters_staff_queue(self):
         response = self.client.post(
