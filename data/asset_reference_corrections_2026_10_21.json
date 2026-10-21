@@ -1,0 +1,23 @@
+{
+  "reviewed_at": "2026-10-21",
+  "scope": "Alias lookup and one official historical reference for the existing Virginia Flight Information Exchange program; no new asset, point, editorial promotion, activity claim or landing-page placement.",
+  "corrections": [
+    {
+      "name": "Virginia Flight Information Exchange",
+      "provenance": "curated-public-source",
+      "before": {
+        "search_aliases": ""
+      },
+      "after": {
+        "search_aliases": "VA FIX\nVA-FIX\nVirginia FIX"
+      },
+      "add_sources": [
+        {
+          "title": "Virginia DOAV: VA-FIX Concept of Operations Summary, Version 7 (24 July 2020)",
+          "url": "https://doav.virginia.gov/wp-content/uploads/Files/DocumentLibrary/va--fix-conops-summary-version-7.pdf"
+        }
+      ],
+      "reason": "Improve acronym lookup for the existing statewide information-sharing program and append DOAV's dated explanatory summary. The 2020 document supports identity and digital advisory/data scope, not a new physical facility or a current operational-status update. Preserve publication, staff fields, existing evidence and all location choices."
+    }
+  ]
+}
