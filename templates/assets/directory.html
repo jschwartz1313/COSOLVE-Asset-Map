@@ -37,6 +37,7 @@
             <span class="type-pill type-{{ asset.record_type }}">{{ asset.get_record_type_display }}</span>
             {% if asset.activity_status %}<span class="activity-label">{{ asset.get_activity_status_display }}</span>{% endif %}
             {% with category=asset.strategic_categories.all|first %}{% if category %}<small>{{ category.name }}</small>{% endif %}{% endwith %}
+            {% if asset.is_vipc_portfolio %}<span class="affiliation-tag" title="VIPC portfolio: {{ asset.get_vipc_portfolio_sector_display }}">VIPC portfolio organization</span>{% endif %}
           </div>
           <div class="directory-location"><strong>{{ asset.city|default:"Virginia" }}</strong>{% if asset.city and asset.state %}<span>{{ asset.state }}</span>{% endif %}{% if asset.location_role %}<small>{{ asset.get_location_role_display }}</small>{% endif %}</div>
         </article>

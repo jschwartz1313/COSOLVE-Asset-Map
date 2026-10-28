@@ -144,6 +144,8 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
 .empty-state { grid-column: 1 / -1; padding: 60px 20px; text-align: center; border: 1px dashed var(--line-strong); }
 
 .asset-detail-page { background: var(--paper); }
+.affiliation-tag { display: inline-block; max-width: 100%; margin: 4px 0; padding: 3px 7px; border: 1px solid var(--line); border-radius: 3px; color: var(--ink-muted); background: var(--surface); font-size: 11px; font-weight: 600; line-height: 1.4; overflow-wrap: anywhere; }
+.portfolio-filter { margin-block: 2px 6px; }
 .detail-page { width: min(1000px, calc(100% - 40px)); margin: 0 auto; padding: 20px 0 40px; }
 .breadcrumbs { display: flex; flex-wrap: wrap; gap: 8px; color: var(--ink-muted); font-size: 12px; margin-bottom: 16px; }
 .detail-header { display: grid; grid-template-columns: minmax(0, 1fr); align-items: end; padding-bottom: 24px; border-bottom: 1px solid var(--line); }

@@ -34,6 +34,8 @@
   </select></span>
 </label>
 
+<label class="check-row portfolio-filter"><input type="checkbox" name="portfolio" value="vipc" {% if request.GET.portfolio == "vipc" %}checked{% endif %}><span>VIPC portfolio organizations only</span></label>
+
 {% if not public_scope_is_regional %}
   <label>
     <span>Region</span>

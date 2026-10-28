@@ -236,6 +236,7 @@ class AssetAdmin(SimpleHistoryAdmin):
     )
     list_filter = (
         "record_type",
+        "vipc_portfolio_sector",
         "region",
         "status",
         "visibility",
@@ -342,7 +343,10 @@ class AssetAdmin(SimpleHistoryAdmin):
         ),
         (
             "Taxonomy",
-            {"fields": ("strategic_categories", "platform_domains", "capabilities", "missions")},
+            {"fields": (
+                "strategic_categories", "platform_domains", "capabilities", "missions",
+                "vipc_portfolio_sector",
+            )},
         ),
         (
             "Location",

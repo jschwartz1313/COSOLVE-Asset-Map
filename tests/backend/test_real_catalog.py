@@ -194,8 +194,12 @@ class RealCatalogFileTests(TestCase):
             for record in hampton_roads
             if record["location_precision"] in {"approximate", "locality"}
         }
-        # The Southampton award identifies a jurisdiction, not its operating department.
-        self.assertEqual(locality_only, {"Southampton County First Responder UAS Capability"})
+        # The new InDust listing has a published locality but no confirmed street location.
+        self.assertEqual(locality_only, {
+            "Southampton County First Responder UAS Capability",
+            "Industrial Intelligence (InDust)",
+        })
+        self.assertIsNone(records_by_name["Industrial Intelligence (InDust)"]["latitude"])
         self.assertTrue(
             all(
                 record.get("address_line")
@@ -469,6 +473,11 @@ class RealCatalogFileTests(TestCase):
         source_backed_additions.update(
             record["name"] for record in json.loads(
                 (settings.BASE_DIR / "data/asset_expansion_2026_10_20.json").read_text()
+            )["records"]
+        )
+        source_backed_additions.update(
+            record["name"] for record in json.loads(
+                (settings.BASE_DIR / "data/vipc_portfolio_2026_10_28.json").read_text()
             )["records"]
         )
         self.assertFalse(reviewed_or_flagged.intersection(source_backed_additions))

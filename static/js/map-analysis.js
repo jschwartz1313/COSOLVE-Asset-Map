@@ -144,6 +144,7 @@ export function featureCsv(features) {
     ["latitude", (feature) => feature.geometry?.coordinates[1] ?? ""],
     ["longitude", (feature) => feature.geometry?.coordinates[0] ?? ""],
     ["detail_url", (feature) => feature.properties.detail_url],
+    ["vipc_portfolio_sector", (feature) => feature.properties.vipc_portfolio_sector || ""],
   ];
   const rows = [columns.map(([heading]) => heading)];
   for (const feature of features) {

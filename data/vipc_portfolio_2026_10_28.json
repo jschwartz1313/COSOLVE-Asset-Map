@@ -1,0 +1,1431 @@
+{
+  "reviewed_at": "2026-10-28",
+  "source_url": "https://vipc.org/portfolio/",
+  "scope": "All 39 entries in VIPC Autonomous Systems or Aerospace, including three universities and SURA on behalf of Jefferson Lab. Portfolio listing is not a claim of equity investment, current service availability, or editorial verification.",
+  "memberships": [
+    {
+      "name": "Adaptive Aerospace Group",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: Adaptive Aerospace",
+        "url": "https://vipc.org/adaptive-aerospace/"
+      }
+    },
+    {
+      "name": "Advanced Aircraft Company",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: Advanced Aircraft Company",
+        "url": "https://vipc.org/advanced-aircraft-company/"
+      }
+    },
+    {
+      "name": "Allocortech",
+      "sector": "aerospace",
+      "source": {
+        "title": "VIPC portfolio: allocortech",
+        "url": "https://vipc.org/allocortech/"
+      }
+    },
+    {
+      "name": "Applied Impact Robotics",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: Applied Impact Robotics",
+        "url": "https://vipc.org/applied-impact-robotics/"
+      }
+    },
+    {
+      "name": "Autonomous Flight Technologies",
+      "sector": "aerospace",
+      "source": {
+        "title": "VIPC portfolio: Autonomous Flight Technologies",
+        "url": "https://vipc.org/autonomous-flight-technologies/"
+      }
+    },
+    {
+      "name": "Blue Vigil",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: Blue Vigil",
+        "url": "https://vipc.org/blue-vigil/"
+      }
+    },
+    {
+      "name": "Counter-Drone Research Corporation",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: Counter-Drone Research Corporation",
+        "url": "https://vipc.org/counter-drone-research-corporation/"
+      }
+    },
+    {
+      "name": "Cowden Technologies",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: Cowden Technologies",
+        "url": "https://vipc.org/cowden-technologies/"
+      }
+    },
+    {
+      "name": "dbS Productions",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: dbS Productions",
+        "url": "https://vipc.org/dbs-productions/"
+      }
+    },
+    {
+      "name": "Devorto",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: Devorto Corporation",
+        "url": "https://vipc.org/devorto-corporation/"
+      }
+    },
+    {
+      "name": "DroneUp",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: DroneUp",
+        "url": "https://vipc.org/droneup/"
+      }
+    },
+    {
+      "name": "Eksdyne",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: Eksdyne",
+        "url": "https://vipc.org/eksdyne/"
+      }
+    },
+    {
+      "name": "Electra Manassas Headquarters and Aircraft Development",
+      "sector": "aerospace",
+      "source": {
+        "title": "VIPC portfolio: Electra",
+        "url": "https://vipc.org/electra/"
+      }
+    },
+    {
+      "name": "Flying Ship Company",
+      "sector": "aerospace",
+      "source": {
+        "title": "VIPC portfolio: Flying Ship Company",
+        "url": "https://vipc.org/flying-ship-company/"
+      }
+    },
+    {
+      "name": "Industrial Intelligence (InDust)",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: InDust",
+        "url": "https://vipc.org/indust/"
+      }
+    },
+    {
+      "name": "LEAF",
+      "sector": "aerospace",
+      "source": {
+        "title": "VIPC portfolio: LEAF",
+        "url": "https://vipc.org/leaf/"
+      }
+    },
+    {
+      "name": "Linebird",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: Linebird",
+        "url": "https://vipc.org/linebird/"
+      }
+    },
+    {
+      "name": "Lynk Global",
+      "sector": "aerospace",
+      "source": {
+        "title": "VIPC portfolio: Lynk Global",
+        "url": "https://vipc.org/lynk-global/"
+      }
+    },
+    {
+      "name": "Magothy River Technologies",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: Magothy River Technologies",
+        "url": "https://vipc.org/magothy-river-technologies/"
+      }
+    },
+    {
+      "name": "Micro Harmonics",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: Micro Harmonics",
+        "url": "https://vipc.org/micro-harmonics/"
+      }
+    },
+    {
+      "name": "Mobius Logic",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: Mobius Logic",
+        "url": "https://vipc.org/mobius-logic/"
+      }
+    },
+    {
+      "name": "Netarus",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: Netarus",
+        "url": "https://vipc.org/netarus/"
+      }
+    },
+    {
+      "name": "NOVI",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: NOVI",
+        "url": "https://vipc.org/novi/"
+      }
+    },
+    {
+      "name": "Old Dominion University",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: Old Dominion University",
+        "url": "https://vipc.org/old-dominion-university/"
+      }
+    },
+    {
+      "name": "Polaris Semiconductor",
+      "sector": "aerospace",
+      "source": {
+        "title": "VIPC portfolio: Polaris Semiconductor",
+        "url": "https://vipc.org/polaris-semiconductor/"
+      }
+    },
+    {
+      "name": "Psionic",
+      "sector": "aerospace",
+      "source": {
+        "title": "VIPC portfolio: Psionic",
+        "url": "https://vipc.org/psionic/"
+      }
+    },
+    {
+      "name": "Quest Knight Enterprises",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: Quest Knight",
+        "url": "https://vipc.org/quest-knight/"
+      }
+    },
+    {
+      "name": "Rising Tide Analytics",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: Rising Tide Analytics",
+        "url": "https://vipc.org/rising-tide-analytics/"
+      }
+    },
+    {
+      "name": "Ryzing Technologies",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: Ryzing Technologies",
+        "url": "https://vipc.org/ryzing-technologies/"
+      }
+    },
+    {
+      "name": "Scout Space",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: SCOUT Space",
+        "url": "https://vipc.org/scout-space/"
+      }
+    },
+    {
+      "name": "Sedaro",
+      "sector": "aerospace",
+      "source": {
+        "title": "VIPC portfolio: Sedaro",
+        "url": "https://vipc.org/sedaro/"
+      }
+    },
+    {
+      "name": "Sentinel Robotic Solutions",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: Sentinel Robotic Solutions",
+        "url": "https://vipc.org/sentinel-robotic-solutions/"
+      }
+    },
+    {
+      "name": "SVT Robotics Norfolk",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: SVT Robotics",
+        "url": "https://vipc.org/svt-robotics/"
+      }
+    },
+    {
+      "name": "The Spaceport Company",
+      "sector": "aerospace",
+      "source": {
+        "title": "VIPC portfolio: The Spaceport Company",
+        "url": "https://vipc.org/the-spaceport-company/"
+      }
+    },
+    {
+      "name": "Thomas Jefferson National Accelerator Facility (Jefferson Lab)",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: Southeastern Universities Research Association (on behalf of the Jefferson Lab)",
+        "url": "https://vipc.org/southeastern-universities-research-association/"
+      }
+    },
+    {
+      "name": "Tidal Flight Chesapeake Development Hangar",
+      "sector": "aerospace",
+      "source": {
+        "title": "VIPC portfolio: Tidal Flight",
+        "url": "https://vipc.org/tidal-flight/"
+      }
+    },
+    {
+      "name": "TruWeather Solutions",
+      "sector": "autonomous-systems",
+      "source": {
+        "title": "VIPC portfolio: TruWeather",
+        "url": "https://vipc.org/truweather/"
+      }
+    },
+    {
+      "name": "Virginia Commonwealth University",
+      "sector": "aerospace",
+      "source": {
+        "title": "VIPC portfolio: Virginia Commonwealth University",
+        "url": "https://vipc.org/virginia-commonwealth-university/"
+      }
+    },
+    {
+      "name": "William & Mary",
+      "sector": "aerospace",
+      "source": {
+        "title": "VIPC portfolio: College of William and Mary",
+        "url": "https://vipc.org/college-of-william-and-mary/"
+      }
+    }
+  ],
+  "records": [
+    {
+      "name": "Allocortech",
+      "record_type": "organization",
+      "state": "VA",
+      "city": "Waynesboro",
+      "region": "Shenandoah Valley",
+      "short_description": "Vehicle power electronics, avionics and control-system supplier serving uncrewed aircraft, maritime systems and advanced air mobility.",
+      "overview": "Allocortech supplies power distribution, motor and flight controllers, batteries, charging systems and distributed computing for vehicle developers. Its published offerings include standard products, modified hardware and custom integration for air and maritime applications. The official contact page identifies its Waynesboro headquarters.",
+      "unmanned_systems_relevance": "Teams can discuss power-system design, avionics integration and hardware-in-the-loop support for uncrewed or optionally crewed vehicles. Product suitability and certification require confirmation with the supplier.",
+      "website_url": "https://www.allocor.tech/",
+      "contact_url": "https://www.allocor.tech/contact",
+      "contact_email": "sales@allocor.tech",
+      "contact_phone": "434-218-3345",
+      "contact_text": "Published company inquiry route; confirm current scope and availability directly.",
+      "address_line": "440 N Commerce Ave",
+      "postal_code": "22980",
+      "latitude": 38.070894,
+      "longitude": -78.874749,
+      "location_precision": "site",
+      "location_method": "geocoded",
+      "location_source_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=440+N+Commerce+Ave&city=Waynesboro&state=VA&zip=22980&benchmark=Public_AR_Current&format=json",
+      "location_last_verified_at": "2026-10-28",
+      "location_notes": "Published company business address positioned with the U.S. Census address-range geocoder. Building/address reference only, not an exact suite, manufacturing footprint or operating boundary.",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset",
+        "Manufacturing and supply chain"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Maritime surface systems",
+        "Advanced Air Mobility"
+      ],
+      "capabilities": [
+        "Propulsion, batteries, fuels, and energy systems",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "VIPC portfolio: allocortech",
+          "url": "https://vipc.org/allocortech/"
+        },
+        {
+          "title": "Allocortech: official company capabilities",
+          "url": "https://www.allocor.tech/"
+        },
+        {
+          "title": "Allocortech: public contact route",
+          "url": "https://www.allocor.tech/contact"
+        },
+        {
+          "title": "U.S. Census public address reference, 2026-10-28",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=440+N+Commerce+Ave&city=Waynesboro&state=VA&zip=22980&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "provenance": "curated-public-source",
+      "search_aliases": "allocortech",
+      "identity_guard_terms": [
+        "Allocortech",
+        "allocortech"
+      ],
+      "vipc_portfolio_sector": "aerospace",
+      "location_role": "office"
+    },
+    {
+      "name": "Applied Impact Robotics",
+      "record_type": "organization",
+      "state": "VA",
+      "city": "Sterling",
+      "region": "Northern Virginia",
+      "short_description": "Robotics developer for inspecting crude-oil storage tanks while reducing human entry into hazardous confined spaces.",
+      "overview": "Applied Impact Robotics develops robotic inspection technology designed to operate inside in-service crude-oil tanks, including sludge-filled conditions. Its official site describes closed-tank inspection and lists a Sterling business address.",
+      "unmanned_systems_relevance": "Potential partner for industrial robotic inspection, sensor integration and hazardous-environment automation. A company listing does not establish a publicly accessible testing facility.",
+      "website_url": "https://www.appliedimpactrobotics.com/",
+      "contact_url": "https://www.appliedimpactrobotics.com/",
+      "contact_email": "info@appliedimpactrobotics.com",
+      "contact_phone": "703-457-1110",
+      "contact_text": "Published company inquiry route; confirm current scope and availability directly.",
+      "address_line": "45449 Severn Way, Suite 165",
+      "postal_code": "20166",
+      "latitude": 39.020679,
+      "longitude": -77.426676,
+      "location_precision": "site",
+      "location_method": "geocoded",
+      "location_source_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=45449+Severn+Way&city=Sterling&state=VA&zip=20166&benchmark=Public_AR_Current&format=json",
+      "location_last_verified_at": "2026-10-28",
+      "location_notes": "Published company business address positioned with the U.S. Census address-range geocoder. Building/address reference only, not an exact suite, manufacturing footprint or operating boundary.",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "VIPC portfolio: Applied Impact Robotics",
+          "url": "https://vipc.org/applied-impact-robotics/"
+        },
+        {
+          "title": "Applied Impact Robotics: official company capabilities",
+          "url": "https://www.appliedimpactrobotics.com/"
+        },
+        {
+          "title": "U.S. Census public address reference, 2026-10-28",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=45449+Severn+Way&city=Sterling&state=VA&zip=20166&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "provenance": "curated-public-source",
+      "search_aliases": "",
+      "identity_guard_terms": [
+        "Applied Impact Robotics",
+        "applied impact robotics"
+      ],
+      "vipc_portfolio_sector": "autonomous-systems",
+      "location_role": "office"
+    },
+    {
+      "name": "Counter-Drone Research Corporation",
+      "record_type": "organization",
+      "state": "VA",
+      "city": "Vienna",
+      "region": "Northern Virginia",
+      "short_description": "VIPC-listed counter-UAS research company associated with radio-frequency drone detection and mitigation prototype research.",
+      "overview": "VIPC lists Counter-Drone Research Corporation in its Autonomous Systems portfolio in Vienna. A Virginia research-commercialization report documents a 2017-2018 mobile counter-UAS prototype project. A current company website, public operating address and present service availability were not confirmed.",
+      "unmanned_systems_relevance": "A documented historical counter-UAS research participant. Confirm current organizational status and capabilities through VIPC before relying on it as a present-day supplier.",
+      "website_url": "",
+      "contact_url": "https://vipc.org/contact-us/",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "VIPC portfolio inquiry route; a current direct organization contact has not been confirmed.",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_method": "unmapped",
+      "location_source_url": "https://vipc.org/counter-drone-research-corporation/",
+      "location_last_verified_at": "2026-10-28",
+      "location_notes": "The source identifies the locality; a current physical operating address has not been confirmed. No city-center or assumed facility pin is drawn.",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Counter-UAS"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Counter-UAS"
+      ],
+      "sources": [
+        {
+          "title": "VIPC portfolio: Counter-Drone Research Corporation",
+          "url": "https://vipc.org/counter-drone-research-corporation/"
+        },
+        {
+          "title": "Counter-Drone Research Corporation: public contact route",
+          "url": "https://vipc.org/contact-us/"
+        },
+        {
+          "title": "Virginia published 2017 research award: rogue-UAS detection and interdiction prototype",
+          "url": "https://rga.lis.virginia.gov/Published/2017/RD348/PDF"
+        }
+      ],
+      "provenance": "curated-public-source",
+      "search_aliases": "",
+      "identity_guard_terms": [
+        "Counter-Drone Research Corporation",
+        "counter drone research corporation"
+      ],
+      "vipc_portfolio_sector": "autonomous-systems"
+    },
+    {
+      "name": "Cowden Technologies",
+      "record_type": "organization",
+      "state": "VA",
+      "city": "Blacksburg",
+      "region": "New River Valley",
+      "short_description": "Blacksburg robotics company with documented research into drone docking stations and remote-operation autonomy software.",
+      "overview": "VIPC identifies Cowden Technologies as an Autonomous Systems portfolio member. Virginia Tech Corporate Research Center has documented the company's drone docking-station prototype and proposed VTOL autonomy software work. The reviewed evidence does not establish current product availability or a current public facility address.",
+      "unmanned_systems_relevance": "Relevant to drone logistics, remote docking and mission automation research. Discuss present capabilities and commercial readiness directly rather than treating earlier prototype plans as deployed services.",
+      "website_url": "https://cowden.tech/",
+      "contact_url": "https://cowden.tech/",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Published company inquiry route; confirm current scope and availability directly.",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_method": "unmapped",
+      "location_source_url": "https://vipc.org/cowden-technologies/",
+      "location_last_verified_at": "2026-10-28",
+      "location_notes": "The source identifies the locality; a current physical operating address has not been confirmed. No city-center or assumed facility pin is drawn.",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "VIPC portfolio: Cowden Technologies",
+          "url": "https://vipc.org/cowden-technologies/"
+        },
+        {
+          "title": "Cowden Technologies: official company capabilities",
+          "url": "https://cowden.tech/"
+        },
+        {
+          "title": "Virginia Tech Corporate Research Center: Cowden drone docking and autonomy research",
+          "url": "https://www.vtcrc.com/cowden-technologies-and-other-cogro-members-are-thriving-at-the-vtcrc-vt-corporate-research-center/"
+        }
+      ],
+      "provenance": "curated-public-source",
+      "search_aliases": "",
+      "identity_guard_terms": [
+        "Cowden Technologies",
+        "cowden technologies"
+      ],
+      "vipc_portfolio_sector": "autonomous-systems"
+    },
+    {
+      "name": "dbS Productions",
+      "record_type": "organization",
+      "state": "VA",
+      "city": "Charlottesville",
+      "region": "Central Virginia",
+      "short_description": "Search-and-rescue research, training and publications company providing lost-person behavior and search-planning resources.",
+      "overview": "dbS Productions provides search-and-rescue research, publications, consulting and training. Its official contact is a Charlottesville post-office box rather than a confirmed operating site. VIPC classifies it in the Autonomous Systems portfolio.",
+      "unmanned_systems_relevance": "Supports the planning and human-factors side of search-and-rescue missions that can involve unmanned systems. Its portfolio category alone does not establish that it manufactures aircraft or provides flight-test access.",
+      "website_url": "https://www.dbs-sar.com/",
+      "contact_url": "https://www.dbs-sar.com/contact.htm",
+      "contact_email": "info@dbs-sar.com",
+      "contact_phone": "434-293-5502",
+      "contact_text": "Published company inquiry route; confirm current scope and availability directly.",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_method": "unmapped",
+      "location_source_url": "https://vipc.org/dbs-productions/",
+      "location_last_verified_at": "2026-10-28",
+      "location_notes": "The source identifies the locality; a current physical operating address has not been confirmed. No city-center or assumed facility pin is drawn.",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Data engineering, analytics, and edge computing",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Search and rescue",
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "VIPC portfolio: dbS Productions",
+          "url": "https://vipc.org/dbs-productions/"
+        },
+        {
+          "title": "dbS Productions: official company capabilities",
+          "url": "https://www.dbs-sar.com/"
+        },
+        {
+          "title": "dbS Productions: public contact route",
+          "url": "https://www.dbs-sar.com/contact.htm"
+        }
+      ],
+      "provenance": "curated-public-source",
+      "search_aliases": "",
+      "identity_guard_terms": [
+        "dbS Productions",
+        "dbs productions"
+      ],
+      "vipc_portfolio_sector": "autonomous-systems"
+    },
+    {
+      "name": "Eksdyne",
+      "record_type": "organization",
+      "state": "VA",
+      "city": "Blacksburg",
+      "region": "New River Valley",
+      "short_description": "VIPC-listed Blacksburg research company associated with a funded magnetohydrodynamic actuator project for robotics.",
+      "overview": "VIPC lists Eksdyne in its Autonomous Systems portfolio. A 2020 Virginia unmanned-systems newsletter records a research award for a magnetohydrodynamic actuator system for robotics. A current official website, public facility address and current commercial services were not confirmed.",
+      "unmanned_systems_relevance": "Historical robotics-component research context, not evidence of an operational test range or a currently available product. Contact VIPC to establish the company's current status.",
+      "website_url": "",
+      "contact_url": "https://vipc.org/contact-us/",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "VIPC portfolio inquiry route; a current direct organization contact has not been confirmed.",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_method": "unmapped",
+      "location_source_url": "https://vipc.org/eksdyne/",
+      "location_last_verified_at": "2026-10-28",
+      "location_notes": "The source identifies the locality; a current physical operating address has not been confirmed. No city-center or assumed facility pin is drawn.",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Supporting ecosystem asset",
+        "Research and technical depth"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "VIPC portfolio: Eksdyne",
+          "url": "https://vipc.org/eksdyne/"
+        },
+        {
+          "title": "Eksdyne: public contact route",
+          "url": "https://vipc.org/contact-us/"
+        },
+        {
+          "title": "Virginia Unmanned Systems newsletter: 2020 Eksdyne robotics actuator research award",
+          "url": "https://microharmonics.com/wp-content/uploads/2020/10/2020.10.01_VAUMS-Newsletter-with-links_October-2020-Micro-Harmonics.pdf"
+        }
+      ],
+      "provenance": "curated-public-source",
+      "search_aliases": "",
+      "identity_guard_terms": [
+        "Eksdyne",
+        "eksdyne"
+      ],
+      "vipc_portfolio_sector": "autonomous-systems"
+    },
+    {
+      "name": "Industrial Intelligence (InDust)",
+      "record_type": "organization",
+      "state": "VA",
+      "city": "Williamsburg",
+      "region": "Hampton Roads",
+      "short_description": "Industrial dust mapping and continuous monitoring company listed as InDust in VIPC's Autonomous Systems portfolio.",
+      "overview": "Industrial Intelligence publishes dust-mapping surveys, continuous dust-accumulation monitors and trend analysis for manufacturing environments. Its official site identifies Williamsburg and a public inquiry route. VIPC lists the organization under the name InDust.",
+      "unmanned_systems_relevance": "An enabling industrial sensing and analytics resource. Current published offerings do not establish autonomous-vehicle operation, aircraft production or public test-site access.",
+      "website_url": "https://www.industintel.com/",
+      "contact_url": "https://www.industintel.com/",
+      "contact_email": "info@industintel.com",
+      "contact_phone": "757-208-0587",
+      "contact_text": "Published company inquiry route; confirm current scope and availability directly.",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_method": "unmapped",
+      "location_source_url": "https://vipc.org/indust/",
+      "location_last_verified_at": "2026-10-28",
+      "location_notes": "The source identifies the locality; a current physical operating address has not been confirmed. No city-center or assumed facility pin is drawn.",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Environmental monitoring"
+      ],
+      "sources": [
+        {
+          "title": "VIPC portfolio: InDust",
+          "url": "https://vipc.org/indust/"
+        },
+        {
+          "title": "Industrial Intelligence (InDust): official company capabilities",
+          "url": "https://www.industintel.com/"
+        }
+      ],
+      "provenance": "curated-public-source",
+      "search_aliases": "InDust",
+      "identity_guard_terms": [
+        "Industrial Intelligence (InDust)",
+        "Industrial Intelligence",
+        "industintel.com"
+      ],
+      "vipc_portfolio_sector": "autonomous-systems"
+    },
+    {
+      "name": "LEAF",
+      "record_type": "organization",
+      "state": "VA",
+      "city": "Charlottesville",
+      "region": "Central Virginia",
+      "short_description": "Charlottesville organization listed in VIPC's Aerospace portfolio; detailed capabilities and direct contact remain to be confirmed.",
+      "overview": "VIPC identifies LEAF as a Charlottesville Aerospace portfolio member supported through the Commonwealth Commercialization Fund. Its public portfolio entry does not identify an official company website, products or a physical operating address.",
+      "unmanned_systems_relevance": "Included to represent VIPC's documented aerospace portfolio coverage. No aircraft, manufacturing, testing or operational capability is inferred from the sector label alone.",
+      "website_url": "",
+      "contact_url": "https://vipc.org/contact-us/",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "VIPC portfolio inquiry route; a current direct organization contact has not been confirmed.",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_method": "unmapped",
+      "location_source_url": "https://vipc.org/leaf/",
+      "location_last_verified_at": "2026-10-28",
+      "location_notes": "The source identifies the locality; a current physical operating address has not been confirmed. No city-center or assumed facility pin is drawn.",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "VIPC portfolio: LEAF",
+          "url": "https://vipc.org/leaf/"
+        },
+        {
+          "title": "LEAF: public contact route",
+          "url": "https://vipc.org/contact-us/"
+        }
+      ],
+      "provenance": "curated-public-source",
+      "search_aliases": "",
+      "identity_guard_terms": [
+        "LEAF",
+        "leaf"
+      ],
+      "vipc_portfolio_sector": "aerospace"
+    },
+    {
+      "name": "Lynk Global",
+      "record_type": "organization",
+      "state": "VA",
+      "city": "Falls Church",
+      "region": "Northern Virginia",
+      "short_description": "Satellite-to-phone communications company listed in VIPC's Aerospace portfolio.",
+      "overview": "Lynk develops satellite connectivity for ordinary mobile phones and publishes government and commercial communications applications. VIPC's portfolio entry associates it with Falls Church; a current Virginia operating street address was not established in this review.",
+      "unmanned_systems_relevance": "A supporting space-communications resource for remote connectivity and resilient communications planning. Mobile-phone connectivity does not by itself establish a qualified command-and-control link for an unmanned vehicle.",
+      "website_url": "https://lynk.world/",
+      "contact_url": "https://lynk.world/contact/",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Published company inquiry route; confirm current scope and availability directly.",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_method": "unmapped",
+      "location_source_url": "https://vipc.org/lynk-global/",
+      "location_last_verified_at": "2026-10-28",
+      "location_notes": "The source identifies the locality; a current physical operating address has not been confirmed. No city-center or assumed facility pin is drawn.",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Space-enabled services"
+      ],
+      "capabilities": [
+        "Command, control, and communications"
+      ],
+      "missions": [
+        "Communications relay"
+      ],
+      "sources": [
+        {
+          "title": "VIPC portfolio: Lynk Global",
+          "url": "https://vipc.org/lynk-global/"
+        },
+        {
+          "title": "Lynk Global: official company capabilities",
+          "url": "https://lynk.world/"
+        },
+        {
+          "title": "Lynk Global: public contact route",
+          "url": "https://lynk.world/contact/"
+        },
+        {
+          "title": "Lynk: satellite-to-phone service and government communications",
+          "url": "https://lynk.world/news/lynk-announces-sat2phone-contract-with-u-s-government/"
+        }
+      ],
+      "provenance": "curated-public-source",
+      "search_aliases": "",
+      "identity_guard_terms": [
+        "Lynk Global",
+        "lynk global"
+      ],
+      "vipc_portfolio_sector": "aerospace"
+    },
+    {
+      "name": "Micro Harmonics",
+      "record_type": "organization",
+      "state": "VA",
+      "city": "Fincastle",
+      "region": "Roanoke Valley",
+      "short_description": "Millimeter-wave component supplier producing isolators, circulators, attenuators and other RF components for sensing and communications systems.",
+      "overview": "Micro Harmonics publishes millimeter-wave components and direct engineering support for radar, communications and scientific instrumentation. Its official site lists its Fincastle contact address and describes NASA-supported component research.",
+      "unmanned_systems_relevance": "Potential component supplier for advanced radar, sensing and communications integration. This is an organization/contact-site record, not a separately verified manufacturing-plant footprint or open test range.",
+      "website_url": "https://microharmonics.com/",
+      "contact_url": "https://microharmonics.com/contact/",
+      "contact_email": "sales@mhc1.com",
+      "contact_phone": "540-473-9983",
+      "contact_text": "Published company inquiry route; confirm current scope and availability directly.",
+      "address_line": "20 S Roanoke St, Suite 202",
+      "postal_code": "24090",
+      "latitude": 37.498759,
+      "longitude": -79.877641,
+      "location_precision": "site",
+      "location_method": "geocoded",
+      "location_source_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=20+S+Roanoke+St&city=Fincastle&state=VA&zip=24090&benchmark=Public_AR_Current&format=json",
+      "location_last_verified_at": "2026-10-28",
+      "location_notes": "Published company business address positioned with the U.S. Census address-range geocoder. Building/address reference only, not an exact suite, manufacturing footprint or operating boundary.",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Command, control, and communications",
+        "Perception, sensing, and sensor fusion",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "VIPC portfolio: Micro Harmonics",
+          "url": "https://vipc.org/micro-harmonics/"
+        },
+        {
+          "title": "Micro Harmonics: official company capabilities",
+          "url": "https://microharmonics.com/"
+        },
+        {
+          "title": "Micro Harmonics: public contact route",
+          "url": "https://microharmonics.com/contact/"
+        },
+        {
+          "title": "U.S. Census public address reference, 2026-10-28",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=20+S+Roanoke+St&city=Fincastle&state=VA&zip=24090&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "provenance": "curated-public-source",
+      "search_aliases": "",
+      "identity_guard_terms": [
+        "Micro Harmonics",
+        "micro harmonics"
+      ],
+      "vipc_portfolio_sector": "autonomous-systems",
+      "location_role": "office"
+    },
+    {
+      "name": "Mobius Logic",
+      "record_type": "organization",
+      "state": "VA",
+      "city": "Falls Church",
+      "region": "Northern Virginia",
+      "short_description": "Enterprise artificial-intelligence and data-platform company listed in VIPC's Autonomous Systems portfolio.",
+      "overview": "Mobius Logic describes AI engineering and governed data platforms for regulated and mission-critical organizations. VIPC lists the company in Falls Church within its Autonomous Systems portfolio. A current street address was not confirmed from the reviewed company pages.",
+      "unmanned_systems_relevance": "Supporting AI, analytics and integration expertise. Portfolio inclusion and general enterprise AI work do not establish ownership of unmanned vehicles or an operational flight facility.",
+      "website_url": "https://www.mobiuslogic.com/",
+      "contact_url": "https://www.mobiuslogic.com/",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Published company inquiry route; confirm current scope and availability directly.",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_method": "unmapped",
+      "location_source_url": "https://vipc.org/mobius-logic/",
+      "location_last_verified_at": "2026-10-28",
+      "location_notes": "The source identifies the locality; a current physical operating address has not been confirmed. No city-center or assumed facility pin is drawn.",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Data engineering, analytics, and edge computing",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "VIPC portfolio: Mobius Logic",
+          "url": "https://vipc.org/mobius-logic/"
+        },
+        {
+          "title": "Mobius Logic: official company capabilities",
+          "url": "https://www.mobiuslogic.com/"
+        }
+      ],
+      "provenance": "curated-public-source",
+      "search_aliases": "",
+      "identity_guard_terms": [
+        "Mobius Logic",
+        "mobius logic"
+      ],
+      "vipc_portfolio_sector": "autonomous-systems"
+    },
+    {
+      "name": "Netarus",
+      "record_type": "organization",
+      "state": "VA",
+      "city": "Norfolk",
+      "region": "Hampton Roads",
+      "short_description": "Norfolk industrial visibility company providing HoistCam camera systems and TugCam maritime situational-awareness products.",
+      "overview": "Netarus publishes camera-based visibility systems for cranes, lifting equipment, material handling and tug/barge operations. Its official contact page identifies a Norfolk office. VIPC lists it in the Autonomous Systems portfolio.",
+      "unmanned_systems_relevance": "Supporting sensing and remote situational-awareness capability for industrial and maritime integration. Camera assistance is not itself proof of autonomous-vessel control or a publicly available test facility.",
+      "website_url": "https://www.netarus.com/",
+      "contact_url": "https://www.netarus.com/contact/",
+      "contact_email": "",
+      "contact_phone": "757-819-4600",
+      "contact_text": "Published company inquiry route; confirm current scope and availability directly.",
+      "address_line": "4855 Brookside Ct, Suite B",
+      "postal_code": "23502",
+      "latitude": 36.86452,
+      "longitude": -76.227142,
+      "location_precision": "site",
+      "location_method": "geocoded",
+      "location_source_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4855+Brookside+Ct&city=Norfolk&state=VA&zip=23502&benchmark=Public_AR_Current&format=json",
+      "location_last_verified_at": "2026-10-28",
+      "location_notes": "Published company business address positioned with the U.S. Census address-range geocoder. Building/address reference only, not an exact suite, manufacturing footprint or operating boundary.",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Maritime surface systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Command, control, and communications"
+      ],
+      "missions": [
+        "Maritime domain awareness"
+      ],
+      "sources": [
+        {
+          "title": "VIPC portfolio: Netarus",
+          "url": "https://vipc.org/netarus/"
+        },
+        {
+          "title": "Netarus: official company capabilities",
+          "url": "https://www.netarus.com/"
+        },
+        {
+          "title": "Netarus: public contact route",
+          "url": "https://www.netarus.com/contact/"
+        },
+        {
+          "title": "U.S. Census public address reference, 2026-10-28",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=4855+Brookside+Ct&city=Norfolk&state=VA&zip=23502&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "provenance": "curated-public-source",
+      "search_aliases": "",
+      "identity_guard_terms": [
+        "Netarus",
+        "netarus"
+      ],
+      "vipc_portfolio_sector": "autonomous-systems",
+      "location_role": "office"
+    },
+    {
+      "name": "NOVI",
+      "record_type": "organization",
+      "state": "VA",
+      "city": "Arlington",
+      "region": "Northern Virginia",
+      "short_description": "Space computing and AI infrastructure company developing onboard computers, smart satellites and hosted mission services.",
+      "overview": "NOVI publishes onboard computing, satellite mission services and on-orbit processing capabilities for space-based sensing and autonomy. Its current contact page identifies an Arlington facility and separates hardware/general inquiries from partner inquiries.",
+      "unmanned_systems_relevance": "Teams can discuss space-edge computing, hosted software demonstrations and satellite sensor-data processing. Confirm mission availability, readiness and contract terms directly with NOVI.",
+      "website_url": "https://www.novispace.ai/",
+      "contact_url": "https://www.novispace.ai/contact",
+      "contact_email": "moreinfo@novispace.ai",
+      "contact_phone": "",
+      "contact_text": "Published company inquiry route; confirm current scope and availability directly.",
+      "address_line": "2700 S Quincy St, Suite 280",
+      "postal_code": "22206",
+      "latitude": 38.842163,
+      "longitude": -77.086795,
+      "location_precision": "site",
+      "location_method": "geocoded",
+      "location_source_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2700+S+Quincy+St&city=Arlington&state=VA&zip=22206&benchmark=Public_AR_Current&format=json",
+      "location_last_verified_at": "2026-10-28",
+      "location_notes": "Published company business address positioned with the U.S. Census address-range geocoder. Building/address reference only, not an exact suite, manufacturing footprint or operating boundary.",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Space-enabled services"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Data engineering, analytics, and edge computing",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "ISR"
+      ],
+      "sources": [
+        {
+          "title": "VIPC portfolio: NOVI",
+          "url": "https://vipc.org/novi/"
+        },
+        {
+          "title": "NOVI: official company capabilities",
+          "url": "https://www.novispace.ai/"
+        },
+        {
+          "title": "NOVI: public contact route",
+          "url": "https://www.novispace.ai/contact"
+        },
+        {
+          "title": "U.S. Census public address reference, 2026-10-28",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=2700+S+Quincy+St&city=Arlington&state=VA&zip=22206&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "provenance": "curated-public-source",
+      "search_aliases": "",
+      "identity_guard_terms": [
+        "NOVI",
+        "novi"
+      ],
+      "vipc_portfolio_sector": "autonomous-systems",
+      "location_role": "office"
+    },
+    {
+      "name": "Polaris Semiconductor",
+      "record_type": "organization",
+      "state": "VA",
+      "city": "Alexandria",
+      "region": "Northern Virginia",
+      "short_description": "Power-management semiconductor developer offering low-noise voltage regulators for aerospace, defense and precision instrumentation.",
+      "overview": "Polaris Semiconductor develops optoelectronic power-management devices and publishes regulator products, evaluation support and spaceflight research. Although VIPC's portfolio entry uses Arlington, the company's current official contact page identifies Alexandria.",
+      "unmanned_systems_relevance": "Supporting electronics supplier for systems requiring clean, efficient DC power. The published office address does not establish a Virginia semiconductor fabrication plant or universal qualification for aerospace use.",
+      "website_url": "https://www.polarissemiconductor.com/",
+      "contact_url": "https://www.polarissemiconductor.com/contact",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Published company inquiry route; confirm current scope and availability directly.",
+      "address_line": "1800 Diagonal Rd, Suite 600",
+      "postal_code": "22314",
+      "latitude": 38.806042,
+      "longitude": -77.059827,
+      "location_precision": "site",
+      "location_method": "geocoded",
+      "location_source_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1800+Diagonal+Rd&city=Alexandria&state=VA&zip=22314&benchmark=Public_AR_Current&format=json",
+      "location_last_verified_at": "2026-10-28",
+      "location_notes": "Published company business address positioned with the U.S. Census address-range geocoder. Building/address reference only, not an exact suite, manufacturing footprint or operating boundary.",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain"
+      ],
+      "platform_domains": [
+        "Space-enabled services"
+      ],
+      "capabilities": [
+        "Propulsion, batteries, fuels, and energy systems",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "VIPC portfolio: Polaris Semiconductor",
+          "url": "https://vipc.org/polaris-semiconductor/"
+        },
+        {
+          "title": "Polaris Semiconductor: official company capabilities",
+          "url": "https://www.polarissemiconductor.com/"
+        },
+        {
+          "title": "Polaris Semiconductor: public contact route",
+          "url": "https://www.polarissemiconductor.com/contact"
+        },
+        {
+          "title": "U.S. Census public address reference, 2026-10-28",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1800+Diagonal+Rd&city=Alexandria&state=VA&zip=22314&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "provenance": "curated-public-source",
+      "search_aliases": "",
+      "identity_guard_terms": [
+        "Polaris Semiconductor",
+        "polaris semiconductor"
+      ],
+      "vipc_portfolio_sector": "aerospace",
+      "location_role": "office"
+    },
+    {
+      "name": "Quest Knight Enterprises",
+      "record_type": "organization",
+      "state": "VA",
+      "city": "Leesburg",
+      "region": "Northern Virginia",
+      "short_description": "Unmanned-systems integration and engineering company listed in VIPC's Autonomous Systems portfolio.",
+      "overview": "Quest Knight Enterprises describes unmanned airspace integration, systems engineering and technology integration for defense and commercial users. VIPC places the company in Leesburg. The company website contains unfinished template material, so specific aircraft performance, customer endorsements and a current operating address are not asserted here.",
+      "unmanned_systems_relevance": "A potential systems-integration contact for UAS and maritime unmanned-system projects. Confirm current products, technical scope and permissions directly; inclusion is not an operational authorization.",
+      "website_url": "https://www.questknightenterprises.com/",
+      "contact_url": "https://www.questknightenterprises.com/",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Published company inquiry route; confirm current scope and availability directly.",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_method": "unmapped",
+      "location_source_url": "https://vipc.org/quest-knight/",
+      "location_last_verified_at": "2026-10-28",
+      "location_notes": "The source identifies the locality; a current physical operating address has not been confirmed. No city-center or assumed facility pin is drawn.",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Maritime surface systems"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Safety, policy, regulatory, and airspace integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "VIPC portfolio: Quest Knight",
+          "url": "https://vipc.org/quest-knight/"
+        },
+        {
+          "title": "Quest Knight Enterprises: official company capabilities",
+          "url": "https://www.questknightenterprises.com/"
+        }
+      ],
+      "provenance": "curated-public-source",
+      "search_aliases": "Quest Knight",
+      "identity_guard_terms": [
+        "Quest Knight Enterprises",
+        "quest knight"
+      ],
+      "vipc_portfolio_sector": "autonomous-systems"
+    },
+    {
+      "name": "Rising Tide Analytics",
+      "record_type": "organization",
+      "state": "VA",
+      "city": "Richmond",
+      "region": "Greater Richmond",
+      "short_description": "Richmond routing-intelligence and workflow-automation company serving delivery and other route-based businesses.",
+      "overview": "Rising Tide publishes logistics routing and intelligent workflow-automation software, including its Streaming Logistics approach. The company identifies the 1717 Innovation Center in Richmond as its public business address. VIPC lists it under Autonomous Systems.",
+      "unmanned_systems_relevance": "Supporting logistics analytics and planning software. Its use of AI and robotic process automation does not by itself establish driverless-vehicle technology or physical robotics operations.",
+      "website_url": "https://www.risingtide.us/",
+      "contact_url": "https://www.risingtide.us/",
+      "contact_email": "",
+      "contact_phone": "",
+      "contact_text": "Published company inquiry route; confirm current scope and availability directly.",
+      "address_line": "1717 East Cary Street",
+      "postal_code": "23223",
+      "latitude": 37.532252,
+      "longitude": -77.428859,
+      "location_precision": "site",
+      "location_method": "geocoded",
+      "location_source_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1717+East+Cary+Street&city=Richmond&state=VA&zip=23223&benchmark=Public_AR_Current&format=json",
+      "location_last_verified_at": "2026-10-28",
+      "location_notes": "Published company business address positioned with the U.S. Census address-range geocoder. Building/address reference only, not an exact suite, manufacturing footprint or operating boundary.",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Logistics and contested logistics"
+      ],
+      "sources": [
+        {
+          "title": "VIPC portfolio: Rising Tide Analytics",
+          "url": "https://vipc.org/rising-tide-analytics/"
+        },
+        {
+          "title": "Rising Tide Analytics: official company capabilities",
+          "url": "https://www.risingtide.us/"
+        },
+        {
+          "title": "U.S. Census public address reference, 2026-10-28",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=1717+East+Cary+Street&city=Richmond&state=VA&zip=23223&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "provenance": "curated-public-source",
+      "search_aliases": "",
+      "identity_guard_terms": [
+        "Rising Tide Analytics",
+        "rising tide analytics"
+      ],
+      "vipc_portfolio_sector": "autonomous-systems",
+      "location_role": "office"
+    },
+    {
+      "name": "Ryzing Technologies",
+      "record_type": "organization",
+      "state": "VA",
+      "city": "Staunton",
+      "region": "Shenandoah Valley",
+      "short_description": "Engineering and prototyping firm specializing in engineered textiles, inflatable structures and soft-robotics applications.",
+      "overview": "Ryzing Technologies publishes engineering, prototyping, fabrication and testing capabilities for textile-based structures. Its project descriptions include inflatable sensor arrays and deployable support structures. The company lists a Staunton contact address.",
+      "unmanned_systems_relevance": "Supporting prototyping, lightweight structures and soft-robotics engineering for potential aerospace and autonomous-system integration. Specific project suitability and access must be agreed with the company.",
+      "website_url": "https://ryzingtech.com/",
+      "contact_url": "https://ryzingtech.com/",
+      "contact_email": "info@ryzingtech.com",
+      "contact_phone": "540-487-7881",
+      "contact_text": "Published company inquiry route; confirm current scope and availability directly.",
+      "address_line": "710 Robertson Street",
+      "postal_code": "24401",
+      "latitude": 38.143218,
+      "longitude": -79.074622,
+      "location_precision": "site",
+      "location_method": "geocoded",
+      "location_source_url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=710+Robertson+Street&city=Staunton&state=VA&zip=24401&benchmark=Public_AR_Current&format=json",
+      "location_last_verified_at": "2026-10-28",
+      "location_notes": "Published company business address positioned with the U.S. Census address-range geocoder. Building/address reference only, not an exact suite, manufacturing footprint or operating boundary.",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Testing, evaluation, verification, and validation",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "VIPC portfolio: Ryzing Technologies",
+          "url": "https://vipc.org/ryzing-technologies/"
+        },
+        {
+          "title": "Ryzing Technologies: official company capabilities",
+          "url": "https://ryzingtech.com/"
+        },
+        {
+          "title": "U.S. Census public address reference, 2026-10-28",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=710+Robertson+Street&city=Staunton&state=VA&zip=24401&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "provenance": "curated-public-source",
+      "search_aliases": "",
+      "identity_guard_terms": [
+        "Ryzing Technologies",
+        "ryzing technologies"
+      ],
+      "vipc_portfolio_sector": "autonomous-systems",
+      "location_role": "office"
+    },
+    {
+      "name": "Sedaro",
+      "record_type": "organization",
+      "state": "VA",
+      "city": "Arlington",
+      "region": "Northern Virginia",
+      "short_description": "Digital-engineering and mission-simulation software company supporting multi-domain analysis and autonomy development.",
+      "overview": "Sedaro offers cloud-based simulation and digital-engineering software for modeling interactions across space, air, land, maritime and cyber systems. Its published use cases include digital test and training, mission engineering and autonomy simulation. VIPC identifies the company in Arlington.",
+      "unmanned_systems_relevance": "Teams can discuss software-based mission rehearsal, architecture analysis, digital twins and autonomy validation. A digital test environment is not a physical flight range or permission to conduct real-world operations.",
+      "website_url": "https://sedaro.com/",
+      "contact_url": "https://sedaro.com/contact",
+      "contact_email": "Team@Sedaro.com",
+      "contact_phone": "",
+      "contact_text": "Published company inquiry route; confirm current scope and availability directly.",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_method": "unmapped",
+      "location_source_url": "https://vipc.org/sedaro/",
+      "location_last_verified_at": "2026-10-28",
+      "location_notes": "The source identifies the locality; a current physical operating address has not been confirmed. No city-center or assumed facility pin is drawn.",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Cross-domain autonomy",
+        "Space-enabled services"
+      ],
+      "capabilities": [
+        "Simulation, digital twins, and synthetic environments",
+        "Systems engineering and integration",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "VIPC portfolio: Sedaro",
+          "url": "https://vipc.org/sedaro/"
+        },
+        {
+          "title": "Sedaro: official company capabilities",
+          "url": "https://sedaro.com/"
+        },
+        {
+          "title": "Sedaro: public contact route",
+          "url": "https://sedaro.com/contact"
+        }
+      ],
+      "provenance": "curated-public-source",
+      "search_aliases": "",
+      "identity_guard_terms": [
+        "Sedaro",
+        "sedaro"
+      ],
+      "vipc_portfolio_sector": "aerospace"
+    },
+    {
+      "name": "The Spaceport Company",
+      "record_type": "organization",
+      "state": "VA",
+      "city": "Woodbridge",
+      "region": "Northern Virginia",
+      "short_description": "Mobile launch-infrastructure and telemetry company listed in VIPC's Aerospace portfolio.",
+      "overview": "The Spaceport Company publishes mobile offshore launch infrastructure, transportable telemetry/tracking services and inertial-measurement products. VIPC associates its portfolio listing with Woodbridge. Publicly described maritime operations outside Virginia are not mapped as a Virginia launch site.",
+      "unmanned_systems_relevance": "Supporting launch logistics, telemetry and maritime/space infrastructure expertise. Confirm the current Virginia organizational footprint and service locations directly; no Virginia launch range is inferred.",
+      "website_url": "https://thespaceportcompany.com/",
+      "contact_url": "https://thespaceportcompany.com/",
+      "contact_email": "info@thespaceportcompany.com",
+      "contact_phone": "",
+      "contact_text": "Published company inquiry route; confirm current scope and availability directly.",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_method": "unmapped",
+      "location_source_url": "https://vipc.org/the-spaceport-company/",
+      "location_last_verified_at": "2026-10-28",
+      "location_notes": "The source identifies the locality; a current physical operating address has not been confirmed. No city-center or assumed facility pin is drawn.",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Space-enabled services"
+      ],
+      "capabilities": [
+        "Command, control, and communications",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Communications relay"
+      ],
+      "sources": [
+        {
+          "title": "VIPC portfolio: The Spaceport Company",
+          "url": "https://vipc.org/the-spaceport-company/"
+        },
+        {
+          "title": "The Spaceport Company: official company capabilities",
+          "url": "https://thespaceportcompany.com/"
+        }
+      ],
+      "provenance": "curated-public-source",
+      "search_aliases": "",
+      "identity_guard_terms": [
+        "The Spaceport Company",
+        "the spaceport company"
+      ],
+      "vipc_portfolio_sector": "aerospace"
+    }
+  ],
+  "relationships": []
+}

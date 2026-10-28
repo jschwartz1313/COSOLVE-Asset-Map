@@ -161,6 +161,7 @@ class Command(BaseCommand):
                 )
             for field in (
                 "record_type",
+                "vipc_portfolio_sector",
                 "short_description",
                 "overview",
                 "unmanned_systems_relevance",

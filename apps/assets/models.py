@@ -51,6 +51,10 @@ class PublicAssetManager(models.Manager):
 
 
 class Asset(models.Model):
+    class VipcPortfolioSector(models.TextChoices):
+        AUTONOMOUS_SYSTEMS = "autonomous-systems", "Autonomous Systems"
+        AEROSPACE = "aerospace", "Aerospace"
+
     class RecordType(models.TextChoices):
         UNIVERSITY = "university", "University"
         ORGANIZATION = "organization", "Organization"
@@ -132,6 +136,12 @@ class Asset(models.Model):
     overview = models.TextField(blank=True)
     unmanned_systems_relevance = models.TextField()
     website_url = models.URLField(blank=True)
+    vipc_portfolio_sector = models.CharField(
+        "VIPC portfolio sector", max_length=24, choices=VipcPortfolioSector.choices, blank=True,
+        help_text=(
+            "VIPC portfolio listing, including grant recipients; not an editorial verification."
+        ),
+    )
     contact_text = models.CharField(max_length=240, blank=True)
     contact_phone = models.CharField(max_length=40, blank=True)
     contact_email = models.EmailField(blank=True)
@@ -368,6 +378,10 @@ class Asset(models.Model):
     @property
     def public_name(self):
         return self.display_name or self.name
+
+    @property
+    def is_vipc_portfolio(self):
+        return self.vipc_portfolio_sector in self.VipcPortfolioSector.values
 
     @property
     def has_test_details(self):
@@ -619,7 +633,7 @@ class SavedView(models.Model):
 
     def clean(self):
         allowed = {
-            "purpose", "activity", "test_specs", "min_runway",
+            "purpose", "activity", "test_specs", "min_runway", "portfolio",
             "q",
             "record_type",
             "category",

@@ -64,6 +64,7 @@ CSV_COLUMNS = [
     "visibility",
     "last_verified_at",
     "internal_notes",
+    "vipc_portfolio_sector",
 ]
 IMPORT_FIELDS = set(CSV_COLUMNS) - {
     "slug",
@@ -130,6 +131,7 @@ def asset_csv_row(asset, include_internal=False):
         "overview": asset.overview,
         "unmanned_systems_relevance": asset.unmanned_systems_relevance,
         "website_url": asset.website_url,
+        "vipc_portfolio_sector": asset.vipc_portfolio_sector,
         "contact_text": asset.contact_text,
         "contact_phone": asset.contact_phone,
         "contact_email": asset.contact_email,

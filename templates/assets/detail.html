@@ -10,6 +10,7 @@
     <div>
       <div class="card-meta"><span class="type-pill type-{{ asset.record_type }}">{{ asset.get_record_type_display }}</span>{% if asset.city %}<span>{{ asset.city }}{% if asset.state %}, {{ asset.state }}{% endif %}</span>{% elif asset.region %}<span>{{ asset.region.name }}</span>{% endif %}</div>
       <h1>{{ asset.public_name }}</h1>
+      {% if asset.is_vipc_portfolio %}<p class="affiliation-tag" title="VIPC portfolio: {{ asset.get_vipc_portfolio_sector_display }}">VIPC portfolio organization</p>{% endif %}
       <p class="lead">{{ asset.short_description }}</p>
     </div>
   </header>

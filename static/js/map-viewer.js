@@ -10,8 +10,8 @@ import {
   featuresWithinPolygon,
   featuresWithinRadius,
   summarizeRegion,
-} from "./map-analysis.js?v=20260906-2";
-import { createMap } from "./map.js?v=20261020-1";
+} from "./map-analysis.js?v=20261028-1";
+import { createMap } from "./map.js?v=20261028-1";
 import {
   analysisStateFromParams,
   filterParamsFromMapUrl,
@@ -20,10 +20,10 @@ import {
   serializePolygonAnalysis,
   serializeRadiusAnalysis,
   serializeRectangleAnalysis,
-} from "./map-state.js?v=20261020-1";
+} from "./map-state.js?v=20261028-1";
 import { bindPanelResizers } from "./panel-resize.js?v=20260821-1";
-import { renderResults, selectResult } from "./results.js?v=20260906-1";
-import { hydrateForm, paramsFromForm, updateUrl } from "./state.js?v=20260928-1";
+import { renderResults, selectResult } from "./results.js?v=20261028-1";
+import { hydrateForm, paramsFromForm, updateUrl } from "./state.js?v=20261028-1";
 
 const root = document.querySelector("[data-map-app]");
 const form = document.querySelector("#asset-filters");
@@ -401,6 +401,7 @@ function applyNearbySelection(center, radius) {
 }
 
 function filterDescription(key, value) {
+  if (key === "portfolio" && value === "vipc") return "VIPC portfolio organizations";
   const fields = [...form.querySelectorAll(`[name="${CSS.escape(key)}"]`)];
   const field = fields.find((candidate) => candidate.value === value) || fields[0];
   const fallbackLabel = key.replaceAll("_", " ");

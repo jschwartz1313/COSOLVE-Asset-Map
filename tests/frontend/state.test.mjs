@@ -45,6 +45,15 @@ test("clear-all state has no query string", () => {
   assert.equal(new URLSearchParams().toString(), "");
 });
 
+test("VIPC portfolio filter survives saved and shared map links", () => {
+  const filters = paramsFromEntries([["portfolio", "vipc"], ["region", "hampton-roads"]]);
+  const saved = paramsWithMapState(filters, { latitude: 37, longitude: -77, zoom: 8, layers: ["assets", "state"], basemap: "street" });
+  assert.equal(filterParamsFromMapUrl(saved).toString(), filters.toString());
+  const field = { name: "portfolio", type: "checkbox", value: "vipc", checked: false };
+  hydrateForm({ elements: [field] }, saved);
+  assert.equal(field.checked, true);
+});
+
 test("directory paging, sorting, tracking parameters and empty values are not map filters", () => {
   assert.equal(filterParamsFromMapUrl(new URLSearchParams(
     "q=airport&sort=type&page=2&utm_source=email&category=&map_zoom=8",

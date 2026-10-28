@@ -38,6 +38,8 @@ def filter_public_assets(params, include_related=True):
             values = ["" if value == "undocumented" else value for value in values]
         if values:
             queryset = queryset.filter(**{f"{field}__in": values})
+    if params.get("portfolio") == "vipc":
+        queryset = queryset.filter(vipc_portfolio_sector__in=Asset.VipcPortfolioSector.values)
     purpose = params.get("purpose", "")
     if purpose in RESOURCE_QUERIES:
         queryset = queryset.filter(RESOURCE_QUERIES[purpose])
@@ -70,6 +72,8 @@ def active_filters(params):
     }
     if params.get("q"):
         filters["q"] = params["q"]
+    if params.get("portfolio") == "vipc":
+        filters["portfolio"] = "vipc"
     for key in ("purpose", "test_specs", "min_runway"):
         if params.get(key):
             filters[key] = params[key]

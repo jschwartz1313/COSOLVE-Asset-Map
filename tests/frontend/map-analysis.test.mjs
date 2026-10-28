@@ -128,6 +128,12 @@ test("CSV export preserves names and public map metadata", () => {
   assert.match(csv, /Source-backed; review pending/);
 });
 
+test("CSV export includes the portfolio tag without shifting existing columns", () => {
+  const csv = featureCsv([feature("portfolio", 37, -77, { vipc_portfolio_sector: "aerospace" })]);
+  assert.match(csv.split("\n")[0], /detail_url,vipc_portfolio_sector$/);
+  assert.match(csv.split("\n")[1], /,aerospace$/);
+});
+
 test("CSV export preserves the distinction between a pin and an operating site", () => {
   const asset = feature("context", 36.86, -76.29);
   Object.assign(asset.properties.location, {

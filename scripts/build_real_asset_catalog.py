@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "virginia_real_assets.json"
 CATALOG_DATE = "2026-08-21"
-BUILD_DATE = "2026-10-20"
+BUILD_DATE = "2026-10-28"
 RELATIONSHIP_TYPES = frozenset({
     "operates", "located-at", "partners-with", "funds", "supports", "participates-in",
     "hosts", "manufactures-for",
@@ -50,6 +50,7 @@ TEST_ENVIRONMENT_EXPANSION_PATH = ROOT / "data" / "asset_expansion_2026_09_29.js
 MAAP_EXPANSION_PATH = ROOT / "data" / "asset_expansion_2026_10_02.json"
 OCTOBER_COMMAND_EXPANSION_PATH = ROOT / "data" / "asset_expansion_2026_10_13.json"
 OCTOBER_ECOSYSTEM_EXPANSION_PATH = ROOT / "data" / "asset_expansion_2026_10_20.json"
+VIPC_PORTFOLIO_PATH = ROOT / "data" / "vipc_portfolio_2026_10_28.json"
 OCTOBER_ECOSYSTEM_CORRECTIONS_PATH = ROOT / "data" / "asset_corrections_2026_10_20.json"
 LATEST_WEBSITE_CORRECTIONS_PATH = ROOT / "data" / "asset_website_corrections_2026_09_24.json"
 SEPTEMBER_CORRECTIONS_PATH = ROOT / "data" / "asset_corrections_2026_09_04.json"
@@ -11602,6 +11603,18 @@ def apply_interview_followup(records):
     return records
 
 
+def apply_vipc_portfolio(records):
+    """Add affiliation metadata without reclassifying capabilities or locations."""
+    by_name = {record["name"]: record for record in records}
+    for member in json.loads(VIPC_PORTFOLIO_PATH.read_text())["memberships"]:
+        record = by_name[member["name"]]
+        record["vipc_portfolio_sector"] = member["sector"]
+        evidence = member["source"]
+        if not any(source["url"] == evidence["url"] for source in record["sources"]):
+            record["sources"].append(evidence.copy())
+    return records
+
+
 def main():
     records = (
         airport_records()
@@ -11618,11 +11631,13 @@ def main():
         + json.loads(MAAP_EXPANSION_PATH.read_text())["records"]
         + json.loads(OCTOBER_COMMAND_EXPANSION_PATH.read_text())["records"]
         + json.loads(OCTOBER_ECOSYSTEM_EXPANSION_PATH.read_text())["records"]
+        + json.loads(VIPC_PORTFOLIO_PATH.read_text())["records"]
     )
     records = [finalize_record(apply_location_override(record)) for record in records]
     records = apply_university_campus_locations(records)
     records = apply_interview_followup(records)
     records = apply_reviewed_corrections(records)
+    records = apply_vipc_portfolio(records)
     records.sort(key=lambda item: item["name"].casefold())
     relationships = list(CATALOG_RELATIONSHIPS) + university_relationships()
     relationships.extend(

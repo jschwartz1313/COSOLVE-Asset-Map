@@ -16,6 +16,7 @@ function resultRow(feature, container, onSelect) {
   button.dataset.assetId = feature.id;
   button.append(textElement("span", `type-pill type-${props.record_type}`, props.record_type_label));
   if (props.activity_status_label) button.append(textElement("span", "activity-label", props.activity_status_label));
+  if (props.vipc_portfolio_sector) button.append(textElement("span", "affiliation-tag", "VIPC portfolio organization"));
   button.append(textElement("h3", "", props.name));
   button.append(textElement("p", "", props.short_description));
   const footer = textElement("div", "row-footer", "");
