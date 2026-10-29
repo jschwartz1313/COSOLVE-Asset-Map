@@ -115,11 +115,22 @@ def asset_detail(request, slug):
         .order_by("-shared_categories", "name")[:6]
     )
     public_sources = tuple(source for source in asset.sources.all() if source.is_public)
+    summary = asset.short_description.strip()
+    overview = asset.overview.strip()
+    if summary and summary.endswith((".", "!", "?")) and overview.startswith(summary):
+        remainder = overview[len(summary) :]
+        if not remainder or remainder[0].isspace():
+            overview = remainder.strip()
+    about_paragraphs = []
+    for paragraph in (overview, asset.unmanned_systems_relevance.strip()):
+        if paragraph and paragraph != summary and paragraph not in about_paragraphs:
+            about_paragraphs.append(paragraph)
     return render(
         request,
         "assets/detail.html",
         {
             "asset": asset,
+            "about_paragraphs": about_paragraphs,
             "relationships": relationships,
             "relationship_count": relationships.count(),
             "incoming_relationships": incoming_relationships,

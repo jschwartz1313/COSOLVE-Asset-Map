@@ -26,6 +26,8 @@ test("airport codes rank the named airport first and preserve its existing URL",
   await expect(page.getByRole("heading", { name: "Norfolk International Airport", exact: true }))
     .toBeVisible();
   await expect(page.locator(".detail-sidebar")).toContainText("FAA airport reference point");
+  await page.locator(".supporting-disclosure summary").click();
+  await expect(page.locator(".location-evidence")).toContainText("Published reference coordinates");
 });
 
 test("acronyms work across map and directory without losing the search", async ({ page }) => {

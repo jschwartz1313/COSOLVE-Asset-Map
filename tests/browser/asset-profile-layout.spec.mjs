@@ -8,20 +8,24 @@ test("profiles group descriptions and focus without oversized headings or boxed 
     "font-size", page.viewportSize().width <= 760 ? "26px" : "32px",
   );
   expect((await page.locator(".detail-header").boundingBox()).height).toBeLessThan(300);
-  await expect(page.locator(".overview-section h2")).toHaveText("Overview");
-  await expect(page.locator(".overview-section .relevance-section"))
+  await expect(page.locator(".overview-section h2")).toHaveText("About this asset");
+  await expect(page.locator(".overview-section"))
     .toContainText("education or credential pathway");
   await expect(page.locator(".focus-section"))
     .toContainText("Operations, maintenance, and sustainment");
   await expect(page.locator(".focus-section"))
     .toContainText("Training and experimentation");
   await expect(page.locator(".focus-section .tag-list")).toHaveCount(0);
-  const classification = page.locator(".classification-section details");
-  await expect(classification).not.toHaveAttribute("open");
-  await classification.locator("summary").press("Enter");
-  await expect(classification.getByText("Platform domains", { exact: true })).toBeVisible();
+  const supporting = page.locator(".supporting-disclosure");
+  await expect(page.locator(".detail-page details")).toHaveCount(1);
+  await expect(supporting).not.toHaveAttribute("open");
+  await expect(page.locator(".classification-section")).toBeHidden();
+  await supporting.locator("summary").press("Enter");
+  await expect(supporting.getByText("Platform domains", { exact: true })).toBeVisible();
   await expect(page.locator(".location-section")).toContainText("Site or campus");
   await expect(page.getByRole("link", { name: "Visit website", exact: true })).toBeVisible();
+  expect(await page.locator(".detail-page h2").allTextContents())
+    .toEqual(["About this asset", "Capabilities and uses", "Contact and location"]);
 });
 
 test("short and detailed profiles wrap cleanly at desktop, tablet and phone sizes", async ({ page }, testInfo) => {
@@ -33,6 +37,7 @@ test("short and detailed profiles wrap cleanly at desktop, tablet and phone size
       "norfolk-intl",
     ]) {
       await page.goto(`/assets/${slug}/`);
+      await page.locator(".supporting-disclosure summary").click();
       const overflow = await page.locator(".detail-page h1, .detail-page h2, .detail-page p, .detail-page li, .detail-page dd, .detail-page summary")
         .evaluateAll(elements => elements.filter(el => el.getClientRects().length > 0
           && el.scrollWidth > el.clientWidth + 1).map(el => el.textContent));
@@ -69,6 +74,20 @@ test("contact and location share a row below the description instead of a long s
       }
     }
   }
+});
+
+test("testing and site-readiness information remain visible inside capabilities", async ({ page }) => {
+  await page.goto("/assets/xelevate-leesburg-unmanned-systems-facility/");
+  await expect(page.locator(".focus-section .test-specifications")).toContainText("66-acre");
+  await expect(page.locator(".focus-section .test-specifications")).toContainText("different site");
+  await expect(page.locator(".supporting-disclosure")).not.toHaveAttribute("open");
+  await expect(page.getByRole("link", { name: "Operator specification source", exact: true })).toBeVisible();
+  await page.goto("/assets/shenandoah-valley-aviation-technology-park/");
+  await expect(page.locator(".focus-section .site-readiness-section")).toContainText("58 acres");
+  await expect(page.locator(".focus-section .activity-section")).toBeVisible();
+  await expect(page.locator(".detail-sidebar .site-readiness-section")).toHaveCount(0);
+  expect(await page.locator(".detail-page h2").allTextContents())
+    .toEqual(["About this asset", "Capabilities and uses", "Contact and location"]);
 });
 
 test("asset corrections have a separate bottom action outside classifications", async ({ page }) => {
@@ -119,8 +138,9 @@ test("directory entries have a continuous outline and single row dividers", asyn
 
 test("printing includes supporting details and restores the reader's open sections", async ({ page }) => {
   await page.goto(course);
-  const sources = page.locator(".sources-disclosure");
-  await sources.locator("summary").click();
+  const supporting = page.locator(".supporting-disclosure");
+  const sources = page.locator(".sources-section");
+  await expect(supporting).not.toHaveAttribute("open");
   const before = await page.locator(".detail-page details").evaluateAll(elements => elements.map(el => el.open));
   await page.evaluate(() => window.dispatchEvent(new Event("beforeprint")));
   await expect(page.locator(".detail-page details:not([open])")).toHaveCount(0);
@@ -138,9 +158,8 @@ test("supporting profile details remain accessible without JavaScript", async ({
   const page = await context.newPage();
   try {
     await page.goto(course);
-    await page.locator(".classification-section summary").click();
+    await page.locator(".supporting-disclosure summary").click();
     await expect(page.locator(".classification-section dl")).toBeVisible();
-    await page.locator(".sources-disclosure summary").click();
     await expect(page.locator(".source-list")).toBeVisible();
   } finally {
     await context.close();

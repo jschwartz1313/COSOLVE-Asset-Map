@@ -753,24 +753,23 @@ test("directory remains within the viewport", async ({ page }) => {
 test("asset detail profiles stay readable and within the viewport", async ({ page }) => {
   await page.goto("/assets/ata-aviation/");
   await expect(page.getByRole("heading", { name: "ATA Aviation" })).toBeVisible();
-  await expect(page.getByRole("heading", { name: "Documented relevance" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "About this asset" })).toBeVisible();
   await expect(page.locator(".verification-block, .detail-verification-footer")).toHaveCount(0);
   await expect(page.locator("main")).not.toContainText("Review status");
   await expect(page.locator("main")).not.toContainText("Record updated");
-  const similarAssets = page.locator(".similar-assets-disclosure");
-  const sources = page.locator(".sources-disclosure");
-  await expect(similarAssets).not.toHaveAttribute("open", "");
-  await expect(sources).not.toHaveAttribute("open", "");
-  await similarAssets.locator("summary").click();
+  const supporting = page.locator(".supporting-disclosure");
+  const similarAssets = page.locator(".similar-assets-section");
+  const sources = page.locator(".sources-section");
+  await expect(supporting).not.toHaveAttribute("open", "");
+  await expect(similarAssets).toBeHidden();
+  await supporting.locator("summary").click();
   await expect(similarAssets.locator(".relationship-list")).toBeVisible();
-  await sources.locator("summary").click();
   await expect(sources.locator(".source-list")).toBeVisible();
   expect(
     await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
   ).toBe(true);
-  for (const selector of [".overview-section > p", ".relevance-section"]) {
-    expect(await page.locator(selector).evaluate((element) =>
-      element.getBoundingClientRect().height)).toBeLessThan(300);
+  for (const paragraph of await page.locator(".overview-section > p").all()) {
+    expect(await paragraph.evaluate((element) => element.getBoundingClientRect().height)).toBeLessThan(300);
   }
 });
 
@@ -781,8 +780,8 @@ test("source-backed activity and site-readiness details are visible", async ({ p
   ).toBeVisible();
   await expect(page.getByRole("heading", { name: "Current activity and collaboration" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Site readiness" })).toBeVisible();
-  await expect(page.locator(".detail-sidebar")).toContainText("58 acres");
-  await expect(page.locator(".detail-sidebar")).toContainText("In development");
+  await expect(page.locator(".focus-section")).toContainText("58 acres");
+  await expect(page.locator(".focus-section")).toContainText("In development");
   await expect(page.getByRole("link", { name: "Activity source" })).toHaveAttribute("href", /^https:/);
   await expect(page.getByRole("link", { name: "Development source" })).toHaveAttribute("href", /^https:/);
 });

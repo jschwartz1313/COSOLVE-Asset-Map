@@ -40,6 +40,7 @@ for (const relationship of relationships) {
     const sourcePath = await profilePath(request, relationship.source);
     const targetPath = await profilePath(request, relationship.target);
     await page.goto(sourcePath);
+    await page.locator(".supporting-disclosure summary").click();
     const outgoing = page.locator("section").filter({
       has: page.getByRole("heading", { name: "Related assets", exact: true }),
     }).locator(`a[href="${targetPath}"]`);
@@ -47,6 +48,7 @@ for (const relationship of relationships) {
     await expect(outgoing.locator("strong")).toHaveText(relationship.target);
     await outgoing.click();
     await expect(page).toHaveURL(new RegExp(`${targetPath}$`));
+    await page.locator(".supporting-disclosure summary").click();
 
     const incoming = page.locator("section").filter({
       has: page.getByRole("heading", { name: "Connected organizations and programs", exact: true }),

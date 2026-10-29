@@ -173,7 +173,7 @@ test("simplified headings and unboxed profile sections fit the standard design",
   await page.screenshot({ path: testInfo.outputPath("directory-light.png"), fullPage: true, animations: "disabled" });
 
   await page.goto("/assets/xelevate-leesburg-unmanned-systems-facility/");
-  const sections = page.locator(".detail-sidebar section");
+  const sections = page.locator(".detail-sidebar > div");
   await expect(sections.first()).toBeVisible();
   for (const section of await sections.all()) {
     await expect(section).toHaveCSS("border-left-width", "0px");
@@ -184,9 +184,11 @@ test("simplified headings and unboxed profile sections fit the standard design",
   await expect(sections.first()).toHaveCSS("border-top-width", "0px");
   await expect(page.locator(".detail-sidebar")).toHaveCSS("border-top-width", "1px");
   await expect(page.locator(".detail-sidebar")).toHaveCSS("border-left-width", "0px");
-  await expect(page.locator(".detail-sidebar")).toContainText("Contact and information");
+  await expect(page.locator(".detail-sidebar")).toContainText("Contact and location");
   await expect(page.locator(".detail-sidebar")).toContainText("Location");
-  await expect(page.locator(".detail-sidebar")).toContainText("Classification");
+  await expect(page.locator(".classification-section")).toBeHidden();
+  await page.locator(".supporting-disclosure summary").click();
+  await expect(page.locator(".classification-section")).toBeVisible();
   await expect(page.locator(".detail-verification-footer")).toHaveCount(0);
   await expect(page.locator("main")).not.toContainText("Review status");
   await expect(page.locator("main")).not.toContainText("Record updated");

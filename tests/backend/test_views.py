@@ -235,9 +235,9 @@ class CoreViewTests(TestCase):
         self.assertNotContains(response, "record-history")
         self.assertNotIn("history_entries", response.context)
         self.assertEqual(asset.history.count(), 2)
-        self.assertContains(response, 'class="detail-disclosure sources-disclosure"')
-        self.assertContains(response, "Overview")
-        self.assertContains(response, "Contact and information")
+        self.assertContains(response, 'class="detail-disclosure supporting-disclosure"')
+        self.assertContains(response, "About this asset")
+        self.assertContains(response, "Contact and location")
         self.assertContains(response, "757-555-0100")
         self.assertContains(response, "contact@example.org")
         self.assertContains(response, "Current activity and collaboration")
@@ -353,6 +353,23 @@ class CoreViewTests(TestCase):
             location_source_url="https://example.org/location",
             location_last_verified_at=date(2026, 10, 21),
             location_notes="The point represents the campus, not a building entrance.",
+            current_activity="Documented flight trials are underway.",
+            activity_status=Asset.ActivityStatus.ACTIVE,
+            partnership_opportunities="Research partners may contact the operator.",
+            activity_source_url="https://example.org/activity",
+            activity_last_verified_at=date(2026, 10, 21),
+            test_aircraft="Small fixed-wing aircraft and multirotors.",
+            test_dimensions="A 30-acre documented testing area.",
+            test_access="Prior operator permission is required.",
+            test_runway_length_ft=1200,
+            test_source_url="https://example.org/testing",
+            test_last_verified_at=date(2026, 10, 21),
+            owner_operator="Example public site operator",
+            available_acreage="30.00",
+            infrastructure_access="Published road and utility access.",
+            development_notes="Availability must be confirmed directly.",
+            development_source_url="https://example.org/development",
+            development_last_verified_at=date(2026, 10, 21),
             status=Asset.Status.SOURCE_BACKED,
             visibility=Asset.Visibility.PUBLIC,
         )
@@ -367,13 +384,35 @@ class CoreViewTests(TestCase):
         response = self.client.get(asset.get_absolute_url())
 
         for text in (
-            asset.public_name, asset.short_description, asset.overview,
-            asset.unmanned_systems_relevance, asset.contact_text, asset.contact_phone,
-            asset.contact_email, asset.address_line, asset.city, asset.postal_code,
-            asset.location_notes, asset.get_location_precision_display(),
-            asset.get_location_method_display(), "Documented flight testing",
-            "Training and experimentation", "Research and testing", "Air",
-            "Official program details", "Suggest an update",
+            asset.public_name,
+            asset.short_description,
+            asset.overview,
+            asset.unmanned_systems_relevance,
+            asset.contact_text,
+            asset.contact_phone,
+            asset.contact_email,
+            asset.address_line,
+            asset.city,
+            asset.postal_code,
+            asset.location_notes,
+            asset.get_location_precision_display(),
+            asset.get_location_method_display(),
+            "Documented flight testing",
+            asset.current_activity,
+            asset.partnership_opportunities,
+            asset.test_aircraft,
+            asset.test_dimensions,
+            asset.test_access,
+            "1200 ft",
+            asset.owner_operator,
+            "30 acres",
+            asset.infrastructure_access,
+            asset.development_notes,
+            "Training and experimentation",
+            "Research and testing",
+            "Air",
+            "Official program details",
+            "Suggest an update",
         ):
             with self.subTest(text=text):
                 self.assertContains(response, text)
@@ -381,12 +420,60 @@ class CoreViewTests(TestCase):
         self.assertContains(response, 'class="focus-section"')
         self.assertContains(response, 'class="detail-taxonomy-list"', count=2)
         self.assertContains(
-            response, 'class="detail-disclosure sidebar-disclosure location-evidence"',
+            response,
+            'class="location-evidence"',
         )
         self.assertContains(response, 'class="classification-section"')
+        self.assertContains(response, "<h2>About this asset</h2>", html=True)
+        self.assertContains(response, "<h2>Capabilities and uses</h2>", html=True)
+        self.assertContains(
+            response, '<h2 id="contact-location-heading">Contact and location</h2>', html=True
+        )
+        self.assertContains(response, 'class="detail-disclosure supporting-disclosure"')
         self.assertEqual(response.content.count(b">Visit website</a>"), 1)
         self.assertEqual(Asset.objects.filter(pk=asset.pk).values().get(), before)
         self.assertEqual(asset.history.count(), history_count)
+
+    def test_profile_removes_only_complete_repeated_opening_text_from_presentation(self):
+        asset = Asset.objects.create(
+            name="Repeated public profile",
+            record_type=Asset.RecordType.FACILITY,
+            short_description="A public testing site.",
+            overview="A public testing site. Its outdoor range supports documented flight trials.",
+            unmanned_systems_relevance="A public testing site.",
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        )
+        before = Asset.objects.filter(pk=asset.pk).values().get()
+        response = self.client.get(asset.get_absolute_url())
+        self.assertEqual(
+            response.context["about_paragraphs"],
+            ["Its outdoor range supports documented flight trials."],
+        )
+        self.assertContains(response, '<p class="lead">A public testing site.</p>', html=True)
+        self.assertNotContains(response, "<p>A public testing site.</p>", html=True)
+        self.assertEqual(Asset.objects.filter(pk=asset.pk).values().get(), before)
+
+    def test_profile_preserves_partial_sentence_prefixes_and_unique_relevance(self):
+        for summary, overview in (
+            ("Research", "Research and testing facilities support local industry."),
+            ("Lab.", "Lab.oratory is the published project name."),
+        ):
+            with self.subTest(summary=summary):
+                asset = Asset.objects.create(
+                    name=f"Prefix {summary}",
+                    record_type=Asset.RecordType.ORGANIZATION,
+                    short_description=summary,
+                    overview=overview,
+                    unmanned_systems_relevance="Unique published relevance.",
+                    status=Asset.Status.SOURCE_BACKED,
+                    visibility=Asset.Visibility.PUBLIC,
+                )
+                response = self.client.get(asset.get_absolute_url())
+                self.assertEqual(
+                    response.context["about_paragraphs"],
+                    [overview, "Unique published relevance."],
+                )
 
     def test_profile_without_an_overview_still_shows_its_relevance(self):
         asset = Asset.objects.create(
