@@ -100,6 +100,16 @@ test("directory entries have a continuous outline and single row dividers", asyn
     const row = await page.locator(".directory-row").first().boundingBox();
     const content = await page.locator(".directory-row-main").first().boundingBox();
     expect(content.x - row.x).toBeGreaterThanOrEqual(12);
+    const truncatedTypes = await page.locator(".directory-classification .type-pill")
+      .evaluateAll(elements => elements.filter(el => el.scrollWidth > el.clientWidth + 1).map(el => el.textContent));
+    expect(truncatedTypes).toEqual([]);
+    const squeezedTags = await page.locator(".directory-classification .affiliation-tag")
+      .evaluateAll(elements => elements.filter(el => {
+        const style = getComputedStyle(el);
+        return el.clientHeight > Number.parseFloat(style.lineHeight) * 2
+          + Number.parseFloat(style.paddingTop) + Number.parseFloat(style.paddingBottom) + 1;
+      }).map(el => el.textContent));
+    expect(squeezedTags).toEqual([]);
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
     if ([390, 1280].includes(width)) {
       await page.screenshot({ path: testInfo.outputPath(`outlined-directory-${width}.png`), fullPage: true });

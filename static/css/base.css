@@ -342,7 +342,9 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
   .directory-results { padding: 18px 18px 32px; }
   .directory-heading { align-items: start; }
   .directory-row { padding: 11px 12px; }
-  .directory-classification { display: flex; align-items: center; }
+  .directory-classification { display: flex; flex-wrap: wrap; align-items: center; }
+  .directory-classification .type-pill { max-width: 100%; flex-shrink: 0; }
+  .directory-classification small { max-width: 100%; white-space: normal; }
   .detail-page { width: min(100% - 28px, 1000px); }
   .detail-header { grid-template-columns: minmax(0, 1fr); }
   .detail-header h1 { font-size: 26px; }
