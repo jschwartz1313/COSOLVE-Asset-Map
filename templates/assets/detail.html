@@ -64,7 +64,6 @@
       {% if asset.owner_operator or asset.available_acreage or asset.development_status or asset.development_notes or asset.infrastructure_access %}<section class="site-readiness-section"><h2>Site readiness</h2><dl>{% if asset.owner_operator %}<dt>Owner / operator</dt><dd>{{ asset.owner_operator }}</dd>{% endif %}{% if asset.development_status %}<dt>Published status</dt><dd>{{ asset.get_development_status_display }}</dd>{% endif %}{% if asset.available_acreage %}<dt>Published site acreage</dt><dd>{{ asset.available_acreage|floatformat:"-2" }} acres</dd>{% endif %}{% if asset.infrastructure_access %}<dt>Access and infrastructure</dt><dd>{{ asset.infrastructure_access }}</dd>{% endif %}{% if asset.development_notes %}<dt>Development notes</dt><dd>{{ asset.development_notes }}</dd>{% endif %}<dt>Source review</dt><dd><a href="{{ asset.development_source_url }}" target="_blank" rel="noopener noreferrer">Development source</a><span>Reviewed {{ asset.development_last_verified_at|date:"M j, Y" }}</span></dd></dl><p class="field-note">Published acreage and plans do not guarantee current availability. Confirm directly with the owner or operator.</p></section>{% endif %}
       <div class="profile-meta-footer">
         <section class="classification-section"><details class="detail-disclosure sidebar-disclosure"><summary><span>Classification</span></summary><dl><dt>Strategic categories</dt><dd>{% for item in asset.strategic_categories.all %}<span>{{ item.name }}</span>{% endfor %}</dd><dt>Platform domains</dt><dd>{% for item in asset.platform_domains.all %}<span>{{ item.name }}</span>{% endfor %}</dd><dt>Region</dt><dd>{{ asset.region.name|default:"Not assigned" }}</dd></dl></details></section>
-        <a class="profile-update-link" href="{% url 'core:asset-suggest-update' asset.slug %}">Suggest an update</a>
       </div>
     </aside>
     <div class="detail-supporting">
@@ -72,6 +71,7 @@
       <section class="detail-disclosure-section"><details class="detail-disclosure sources-disclosure"><summary><span>Sources</span><small>{{ public_sources|length }} public source{{ public_sources|length|pluralize }}</small></summary><div class="source-list">{% for source in public_sources %}<div><strong>{% if source.url %}<a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.title }}</a>{% else %}{{ source.title }}{% endif %}</strong><span>{{ source.get_verification_status_display }}{% if source.source_date %} · Published {{ source.source_date|date:"M j, Y" }}{% endif %}{% if source.last_checked_at %} · Link checked {{ source.last_checked_at|date:"M j, Y" }}{% endif %}</span></div>{% empty %}<p>No public sources are listed.</p>{% endfor %}</div></details></section>
     </div>
   </div>
+  <footer class="profile-actions"><a class="profile-update-link" href="{% url 'core:asset-suggest-update' asset.slug %}">Suggest an update</a></footer>
 </main>
 <script type="module" src="{% static 'js/asset-detail.js' %}?v=20261021-1"></script>
 {% endblock %}

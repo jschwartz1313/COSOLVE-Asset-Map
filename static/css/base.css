@@ -106,8 +106,8 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
 .directory-heading h2 { margin: 0; font-size: 22px; }
 .heading-actions { display: flex; gap: 8px; }
 .directory-columns, .directory-row { display: grid; grid-template-columns: minmax(0, 1fr) 190px 120px; gap: 24px; }
-.directory-columns { padding: 0 12px 7px; color: var(--ink-muted); border-bottom: 1px solid var(--line-strong); font-size: 10px; font-weight: 800; text-transform: uppercase; }
-.directory-list { background: var(--paper); border-bottom: 1px solid var(--line-strong); }
+.directory-columns { padding: 0 13px 7px; color: var(--ink-muted); font-size: 10px; font-weight: 800; text-transform: uppercase; }
+.directory-list { background: var(--paper); border: 1px solid var(--line-strong); }
 .directory-row { min-width: 0; align-items: center; padding: 10px 12px; border-bottom: 1px solid var(--line); }
 .directory-row:last-child { border-bottom: 0; }
 .directory-row:hover { background: #f5f8f6; }
@@ -180,8 +180,7 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
 .detail-sidebar section { min-width: 0; padding: 0; background: transparent; border: 0; }
 .detail-sidebar .location-section:first-child { grid-column: 1 / -1; }
 .detail-sidebar .site-readiness-section { grid-column: 1 / -1; padding-top: 20px; border-top: 1px solid var(--line); }
-.profile-meta-footer { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 24px; align-items: start; padding-top: 16px; border-top: 1px solid var(--line); }
-.profile-meta-footer .profile-update-link { margin-top: 7px; }
+.profile-meta-footer { grid-column: 1 / -1; padding-top: 16px; border-top: 1px solid var(--line); }
 .site-readiness-section dl { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 10px 24px; }
 .site-readiness-section dl dt, .site-readiness-section dl dd { margin: 0; }
 .detail-sidebar dl { margin: 0; }
@@ -193,6 +192,7 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
 .detail-sidebar .button { margin-top: 0; }
 .contact-section .button { min-height: 36px; width: auto; margin-bottom: 14px; font-size: 13px; }
 .profile-update-link { justify-self: start; color: var(--brand-dark); font-size: 12px; font-weight: 650; text-underline-offset: 3px; }
+.profile-actions { margin-top: 24px; }
 .source-list, .relationship-list { display: grid; }
 .section-note { margin: 10px 0 0; color: var(--ink-muted); font-size: 12px; }
 .source-list > div, .relationship-list a { padding: 10px 0; display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--line); }
@@ -341,7 +341,7 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
   .directory-filters form > .search-field, .directory-filters form > .filter-actions { grid-column: 1 / -1; }
   .directory-results { padding: 18px 18px 32px; }
   .directory-heading { align-items: start; }
-  .directory-row { padding: 11px 0; }
+  .directory-row { padding: 11px 12px; }
   .directory-classification { display: flex; align-items: center; }
   .detail-page { width: min(100% - 28px, 1000px); }
   .detail-header { grid-template-columns: minmax(0, 1fr); }
@@ -367,8 +367,6 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 12px; font-weight: 750
   .detail-main section + section { margin-top: 24px; }
   .detail-sidebar { grid-template-columns: minmax(0, 1fr); padding-top: 20px; }
   .detail-sidebar .location-section:not(:first-child) { padding-top: 20px; border-top: 1px solid var(--line); }
-  .profile-meta-footer { grid-template-columns: minmax(0, 1fr); gap: 12px; }
-  .profile-meta-footer .profile-update-link { margin-top: 0; }
   .site-readiness-section dl { grid-template-columns: minmax(0, 1fr); gap: 4px; }
   .site-readiness-section dl dt:not(:first-child) { margin-top: 10px; }
   .focus-row { grid-template-columns: minmax(0, 1fr); gap: 5px; }

@@ -71,6 +71,42 @@ test("contact and location share a row below the description instead of a long s
   }
 });
 
+test("asset corrections have a separate bottom action outside classifications", async ({ page }) => {
+  await page.goto(course);
+  await expect(page.locator(".detail-sidebar .profile-update-link")).toHaveCount(0);
+  await expect(page.locator(".classification-section a")).toHaveCount(0);
+  const update = page.locator(".profile-actions .profile-update-link");
+  await expect(update).toHaveText("Suggest an update");
+  await expect(update).toHaveAttribute("href", `${course}suggest-update/`);
+  const supporting = await page.locator(".detail-supporting").boundingBox();
+  const action = await update.boundingBox();
+  expect(action.y).toBeGreaterThanOrEqual(supporting.y + supporting.height);
+  await update.click();
+  await expect(page).toHaveURL(`${course}suggest-update/`);
+  await expect(page.getByRole("heading", { name: "Suggest an update", exact: true })).toBeVisible();
+});
+
+test("directory entries have a continuous outline and single row dividers", async ({ page }, testInfo) => {
+  for (const width of [320, 390, 768, 1280]) {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto("/directory/?portfolio=vipc");
+    const list = page.locator(".directory-list");
+    for (const side of ["top", "right", "bottom", "left"]) {
+      await expect(list).toHaveCSS(`border-${side}-width`, "1px");
+      await expect(list).toHaveCSS(`border-${side}-style`, "solid");
+    }
+    await expect(page.locator(".directory-row").first()).toHaveCSS("border-bottom-width", "1px");
+    await expect(page.locator(".directory-row").last()).toHaveCSS("border-bottom-width", "0px");
+    const row = await page.locator(".directory-row").first().boundingBox();
+    const content = await page.locator(".directory-row-main").first().boundingBox();
+    expect(content.x - row.x).toBeGreaterThanOrEqual(12);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+    if ([390, 1280].includes(width)) {
+      await page.screenshot({ path: testInfo.outputPath(`outlined-directory-${width}.png`), fullPage: true });
+    }
+  }
+});
+
 test("printing includes supporting details and restores the reader's open sections", async ({ page }) => {
   await page.goto(course);
   const sources = page.locator(".sources-disclosure");
