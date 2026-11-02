@@ -3,6 +3,7 @@ from datetime import date
 from pathlib import Path
 
 from django.conf import settings
+from django.core.exceptions import ValidationError
 from django.core.management.base import BaseCommand
 from django.db import transaction
 
@@ -37,6 +38,10 @@ PROFILE_FIELDS = (
     "development_last_verified_at",
 )
 DATE_FIELDS = {"activity_last_verified_at", "development_last_verified_at", "test_last_verified_at"}
+LOCATION_CONTEXT_FIELDS = (
+    "location_role", "location_method", "location_notes", "location_source_url",
+    "location_last_verified_at",
+)
 LOCATION_CORRECTION_LEGACY_CITIES = {
     "Virginia Advanced Air Mobility Program": "Richmond",
     "Virginia Department of Aviation": "Richmond",
@@ -300,6 +305,7 @@ class Command(BaseCommand):
         updated_assets = 0
         added_sources = 0
         removed_stale_sources = 0
+        skipped_invalid = 0
         for record in records:
             matches = list(Asset.objects.select_for_update().filter(name=record["name"]))
             if len(matches) != 1:
@@ -317,12 +323,23 @@ class Command(BaseCommand):
             if asset.review_comments.filter(body__startswith=CONFLICT_PREFIX).exists():
                 continue
 
+            try:
+                asset.full_clean(validate_unique=False, validate_constraints=False)
+            except ValidationError as error:
+                self.stderr.write(self.style.WARNING(
+                    f"Skipped invalid existing asset {asset.name}: {error}"
+                ))
+                skipped_invalid += 1
+                continue
+
             original_values = {
                 field.attname: getattr(asset, field.attname)
                 for field in asset._meta.concrete_fields
             }
             changed_fields = []
             catalog_managed = asset.internal_notes.startswith("Catalog provenance:")
+            # Reviewed location context must move with coordinates in a guarded correction.
+            location_has_context = any(getattr(asset, field) for field in LOCATION_CONTEXT_FIELDS)
             legacy_website_urls = LEGACY_SHARED_WEBSITE_URLS | LEGACY_WEBSITE_URLS_BY_ASSET.get(
                 record["name"], set()
             )
@@ -362,7 +379,7 @@ class Command(BaseCommand):
                 "longitude",
                 "location_precision",
             }.intersection(legacy_fields)
-            legacy_location_matches = all(
+            legacy_location_matches = not location_has_context and all(
                 matches_legacy_value(getattr(asset, field), legacy_fields[field])
                 for field in location_fields
             )
@@ -484,6 +501,7 @@ class Command(BaseCommand):
 
             if (
                 catalog_managed
+                and not location_has_context
                 and not asset.address_line
                 and asset.location_precision
                 in {
@@ -518,6 +536,7 @@ class Command(BaseCommand):
             legacy_city = LOCATION_CORRECTION_LEGACY_CITIES.get(record["name"])
             if (
                 legacy_city
+                and not location_has_context
                 and asset.city == legacy_city
                 and not asset.address_line
                 and asset.location_precision == Asset.LocationPrecision.LOCALITY
@@ -585,6 +604,7 @@ class Command(BaseCommand):
             self.style.SUCCESS(
                 f"Enriched {updated_assets} existing assets and added "
                 f"{added_sources} public sources; removed "
-                f"{removed_stale_sources} obsolete catalog sources."
+                f"{removed_stale_sources} obsolete catalog sources; "
+                f"skipped {skipped_invalid} invalid existing assets."
             )
         )

@@ -72,3 +72,13 @@ approvals, hosting changes, account changes, or handoff responsibilities were cr
 - A private backup preceded local changes. Fourteen corrections applied locally;
   the merged VTCRC Newport News/SEFC catalog identity was not present in that older
   local database, so no replacement identity was invented or forced.
+
+## Release Safeguard
+
+The first Render attempt exposed an older generic-enrichment path that could copy
+new coordinates without updating an existing unmapped location context. Atomic
+corrections now precede generic enrichment. Generic enrichment preserves documented
+location context, and reports already-invalid records before making profile, taxonomy,
+or source changes. Model validation remains unchanged. Regression coverage includes
+the unmapped-location case, skipping invalid records without partial writes, and
+release ordering. These are update-process repairs, not hosting or handoff work.
