@@ -15,6 +15,7 @@ from apps.sources.models import Source
 from scripts.build_real_asset_catalog import (
     FAA_BAA_CORRECTION_PATH,
     MAAP_CORRECTIONS_PATH,
+    NOVEMBER_REFERENCE_PROFILES_PATH,
     OCTOBER_WEBSITE_CORRECTIONS_PATH,
     apply_reviewed_corrections,
 )
@@ -29,7 +30,8 @@ class CapabilityManifestTests(SimpleTestCase):
         changes = json.loads(MANIFEST.read_text())["corrections"]
         followups = {}
         for path in (
-            MAAP_CORRECTIONS_PATH, OCTOBER_WEBSITE_CORRECTIONS_PATH, FAA_BAA_CORRECTION_PATH
+            MAAP_CORRECTIONS_PATH, OCTOBER_WEBSITE_CORRECTIONS_PATH, FAA_BAA_CORRECTION_PATH,
+            NOVEMBER_REFERENCE_PROFILES_PATH,
         ):
             for change in json.loads(path.read_text())["corrections"]:
                 followups.setdefault(change["name"], {}).update(change["after"])

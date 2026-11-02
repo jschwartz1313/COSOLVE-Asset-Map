@@ -11,10 +11,20 @@ from django.test import SimpleTestCase, TestCase
 from apps.assets.management.commands.apply_catalog_corrections import ALLOWED_FIELDS
 from apps.assets.models import Asset
 from scripts.build_real_asset_catalog import (
+    NOVEMBER_REFERENCE_PROFILES_PATH,
     apply_interview_followup,
     apply_reviewed_corrections,
     validate,
 )
+
+
+def before_november(records):
+    records = copy.deepcopy(records)
+    by_name = {record["name"]: record for record in records}
+    for change in json.loads(NOVEMBER_REFERENCE_PROFILES_PATH.read_text())["corrections"]:
+        if change["name"] in by_name:
+            by_name[change["name"]].update(change["before"])
+    return records
 
 
 class SeptemberReviewPassTests(SimpleTestCase):
@@ -116,6 +126,9 @@ class SeptemberReviewPassTests(SimpleTestCase):
         latest = json.loads((settings.BASE_DIR / "data"
             / "asset_website_corrections_2026_10_06.json").read_text())["corrections"]
         apply_reviewed_corrections(records, latest)
+        apply_reviewed_corrections(
+            records, json.loads(NOVEMBER_REFERENCE_PROFILES_PATH.read_text())["corrections"]
+        )
         for name, record in by_name.items():
             self.assertEqual(record, self.by_name[name])
             urls = [s["url"] for s in record["sources"]]
@@ -164,10 +177,10 @@ class SeptemberReviewDeploymentTests(TestCase):
             "Magothy River Technologies",
             "MITRE National Range",
         }
-        records = [
+        records = before_november([
             r for r in json.loads((data / "virginia_real_assets.json").read_text())["records"]
             if r["name"] in names
-        ]
+        ])
         with TemporaryDirectory() as directory:
             fixture = Path(directory) / "catalog.json"
             fixture.write_text(json.dumps({"records": records, "relationships": []}))
@@ -197,7 +210,7 @@ class SeptemberReviewDeploymentTests(TestCase):
         names = {c["name"] for c in corrections}
         catalog = json.loads((data / "virginia_real_assets.json").read_text())
         final_records = [r for r in catalog["records"] if r["name"] in names]
-        old_records = copy.deepcopy(final_records)
+        old_records = before_november(final_records)
         by_name = {r["name"]: r for r in old_records}
         for correction in reversed(corrections):
             by_name[correction["name"]].update(correction["before"])
@@ -206,6 +219,8 @@ class SeptemberReviewDeploymentTests(TestCase):
             fixture.write_text(json.dumps({"records": old_records, "relationships": []}))
             call_command("seed_real_data", catalog=fixture, stdout=StringIO())
             call_command("apply_catalog_corrections", corrections=path, stdout=StringIO())
+            call_command("apply_catalog_corrections", corrections=NOVEMBER_REFERENCE_PROFILES_PATH,
+                         stdout=StringIO())
             fixture.write_text(json.dumps({"records": final_records, "relationships": []}))
             call_command("enrich_asset_profiles", catalog=fixture, stdout=StringIO())
             output = StringIO()

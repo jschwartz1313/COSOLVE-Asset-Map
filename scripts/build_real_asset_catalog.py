@@ -64,6 +64,7 @@ MAAP_CORRECTIONS_PATH = ROOT / "data" / "maap_profile_corrections_2026_10_02.jso
 OCTOBER_WEBSITE_CORRECTIONS_PATH = ROOT / "data" / "asset_website_corrections_2026_10_06.json"
 ESCC_GRANT_CORRECTION_PATH = ROOT / "data" / "escc_grant_correction_2026_10_06.json"
 FAA_BAA_CORRECTION_PATH = ROOT / "data" / "faa_baa_corrections_2026_10_09.json"
+NOVEMBER_REFERENCE_PROFILES_PATH = ROOT / "data" / "asset_reference_profiles_2026_11_02.json"
 AIRPORT_DISPLAY_NAMES_PATH = ROOT / "data" / "airport_display_names_2026_09_07.json"
 
 IPEDS_NAME_ALIASES = {
@@ -11574,6 +11575,7 @@ def apply_reviewed_corrections(records, corrections=None):
         corrections += json.loads(ESCC_GRANT_CORRECTION_PATH.read_text())["corrections"]
         corrections += json.loads(FAA_BAA_CORRECTION_PATH.read_text())["corrections"]
         corrections += json.loads(OCTOBER_ECOSYSTEM_CORRECTIONS_PATH.read_text())["corrections"]
+        corrections += json.loads(NOVEMBER_REFERENCE_PROFILES_PATH.read_text())["corrections"]
     for correction in corrections:
         record = records_by_name[correction["name"]]
         record.update(correction["after"])

@@ -1,0 +1,685 @@
+{
+  "corrections": [
+    {
+      "add_sources": [
+        {
+          "title": "SPA official headquarters and directions",
+          "url": "https://spa.com/about-us/locations/"
+        },
+        {
+          "title": "Address marker linked by SPA's headquarters page",
+          "url": "https://maps.app.goo.gl/tBxqinPxNEky5dsS6"
+        }
+      ],
+      "after": {
+        "latitude": 38.83225,
+        "location_last_verified_at": "2026-11-02",
+        "location_method": "published",
+        "location_notes": "Address marker reached through the official SPA headquarters directions link, not the embedded map's camera center. Corporate office at 2001 N. Beauregard St.; not a counter-UAS range, test boundary, or launch point. Census did not match this address.",
+        "location_precision": "site",
+        "location_role": "headquarters",
+        "location_source_url": "https://spa.com/about-us/locations/",
+        "longitude": -77.119859,
+        "overview": "Systems Planning & Analysis (SPA) publishes an Alexandria headquarters and describes counter-UAS test and analysis services. The marker follows the company's published headquarters directions. It identifies an office and inquiry location, not a counter-UAS flight-test area; project locations and access must be arranged with SPA."
+      },
+      "before": {
+        "latitude": null,
+        "location_last_verified_at": null,
+        "location_method": null,
+        "location_notes": null,
+        "location_precision": "site",
+        "location_role": null,
+        "location_source_url": null,
+        "longitude": null,
+        "overview": "Systems Planning & Analysis (SPA) publishes an Alexandria headquarters address and describes real-world testing and analysis of counter-UAS technologies. The address is a corporate contact location, not evidence that a specific counter-UAS flight test occurs there. A reliable public geocode was not obtained, so the record has no mapped point."
+      },
+      "name": "Systems Planning & Analysis",
+      "provenance": "curated-public-source",
+      "reason": "Position the published corporate address using the operator-linked address marker; do not infer a flight-test location."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Jefferson Lab public campus address and visitor access",
+          "url": "https://www.jlab.org/visiting"
+        },
+        {
+          "title": "Census address-range match for Jefferson Lab campus address, November 2, 2026",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=12000+Jefferson+Ave&city=Newport+News&state=VA&zip=23606&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "after": {
+        "latitude": 37.098359,
+        "location_last_verified_at": "2026-11-02",
+        "location_method": "geocoded",
+        "location_notes": "Published campus address positioned by the Census address-range match for 12000 Jefferson Ave. A street-address reference, not a surveyed building, accelerator, entrance, or vehicle-test footprint. Census returns ZIP 23605; the laboratory's official 23606 mailing ZIP is retained. Visitor registration and laboratory access procedures still apply.",
+        "location_precision": "site",
+        "location_role": "campus",
+        "location_source_url": "https://www.jlab.org/visiting",
+        "longitude": -76.489693
+      },
+      "before": {
+        "latitude": null,
+        "location_last_verified_at": "2026-10-20",
+        "location_method": "unmapped",
+        "location_notes": "Verified campus address only. No coordinate, building, accelerator footprint or vehicle-test boundary has been established from the reviewed sources.",
+        "location_precision": "site",
+        "location_role": "campus",
+        "location_source_url": "https://www.jlab.org/visiting",
+        "longitude": null
+      },
+      "name": "Thomas Jefferson National Accelerator Facility (Jefferson Lab)",
+      "provenance": "curated-public-source",
+      "reason": "Add a qualified campus-address reference rather than an assumed building or experimental location."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Federal SBIR portfolio: Lynk public business address",
+          "url": "https://www.sbir.gov/portfolio/1546733"
+        },
+        {
+          "title": "July 2025 SEC filing: Lynk business-address corroboration",
+          "url": "https://www.sec.gov/Archives/edgar/data/1838162/000121390025067440/0001213900-25-067440-index-headers.html"
+        },
+        {
+          "title": "Census public address reference for Lynk, November 2, 2026",
+          "url": "https://geocoding.geo.census.gov/geocoder/locations/address?street=510+N+Washington+St&city=Falls+Church&state=VA&zip=22046&benchmark=Public_AR_Current&format=json"
+        }
+      ],
+      "after": {
+        "address_line": "510 N. Washington Street",
+        "latitude": 38.885874,
+        "location_last_verified_at": "2026-11-02",
+        "location_method": "geocoded",
+        "location_notes": "Building-level business-address reference corroborated by the federal SBIR portfolio and July 2025 SEC filing, then positioned with Census address ranges. Public records differ on suite number, so no suite is selected. Not a satellite manufacturing, launch, or ground-station location; confirm current occupancy with Lynk.",
+        "location_precision": "site",
+        "location_role": "office",
+        "location_source_url": "https://www.sbir.gov/portfolio/1546733",
+        "longitude": -77.164126,
+        "overview": "Lynk develops satellite connectivity for ordinary mobile phones and publishes government and commercial communications applications. Federal SBIR and SEC records identify a Falls Church business address at 510 N. Washington Street. The marker is a qualified office-address reference, not proof of satellite manufacturing or a transmission site.",
+        "postal_code": "22046"
+      },
+      "before": {
+        "address_line": "",
+        "latitude": null,
+        "location_last_verified_at": "2026-10-28",
+        "location_method": "unmapped",
+        "location_notes": "The source identifies the locality; a current physical operating address has not been confirmed. No city-center or assumed facility pin is drawn.",
+        "location_precision": "locality",
+        "location_role": null,
+        "location_source_url": "https://vipc.org/lynk-global/",
+        "longitude": null,
+        "overview": "Lynk develops satellite connectivity for ordinary mobile phones and publishes government and commercial communications applications. VIPC's portfolio entry associates it with Falls Church; a current Virginia operating street address was not established in this review.",
+        "postal_code": ""
+      },
+      "name": "Lynk Global",
+      "provenance": "curated-public-source",
+      "reason": "Replace the unmapped locality-only entry with a qualified public business-address reference, without claiming a current production site."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "VTCRC Newport News and SEFC contact team and location",
+          "url": "https://www.vtcrc.com/staff-and-contacts/"
+        },
+        {
+          "title": "SEFC operator site and separately published suite information",
+          "url": "https://secureenergyfuturecenter.com/"
+        }
+      ],
+      "after": {
+        "contact_email": "sefc@vtcrc.com",
+        "contact_phone": "540-231-2507",
+        "contact_text": "VTCRC's Newport News / Secure Energy Future Center inquiry team; confirm the suite before visiting.",
+        "location_last_verified_at": "2026-11-02",
+        "location_notes": "Both official sites identify 700 Tech Center Parkway. VTCRC lists Suite 305 while SEFC's site lists Suite 301; retain the building-level address without selecting a suite. Census returned no address match and a separate map search resolved only the road, so no coordinate is assigned. Blacksburg headquarters is a distinct location."
+      },
+      "before": {
+        "contact_email": "",
+        "contact_phone": "",
+        "contact_text": "Use the official VTCRC Newport News contact route for current office and program arrangements.",
+        "location_last_verified_at": "2026-10-20",
+        "location_notes": "One coordinated Newport News office/center identity at the official building-level address. Sources differ between Suite 301 and Suite 305; no suite is selected. Coordinates have not been verified and no spatial pin is assigned. VTCRC headquarters in Blacksburg is a distinct location."
+      },
+      "name": "Virginia Tech Corporate Research Center Newport News and Secure Energy Future Center",
+      "provenance": "curated-public-source",
+      "reason": "Add the published Newport News contact team while preserving the unresolved suite and coordinate qualifications."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Virginia Spaceport Authority UAS airfield operator specifications",
+          "url": "https://www.vaspace.org/our-facilities"
+        },
+        {
+          "title": "NASA 2024 Wallops handbook: UAS runway, VTOL pad and Group 3 scope",
+          "url": "https://www.nasa.gov/wp-content/uploads/2023/09/wallopsrangeusershandbook-2024.pdf"
+        },
+        {
+          "title": "NASA 2022 Wallops handbook: conflicting rounded coordinates (not used)",
+          "url": "https://ntrs.nasa.gov/api/citations/20220005381/downloads/NASA%20TP%2020220005381.pdf"
+        },
+        {
+          "title": "Public runway geometry corroborating the northern Wallops Island airfield",
+          "url": "https://www.openstreetmap.org/way/746031073"
+        },
+        {
+          "title": "OurAirports public-domain dataset: Wallops Island Drone Runway, US-7081",
+          "url": "https://davidmegginson.github.io/ourairports-data/airports.csv"
+        },
+        {
+          "title": "FAA spaceport operator listing: differing published hangar dimensions",
+          "url": "https://www.faa.gov/space/spaceports_by_state"
+        }
+      ],
+      "after": {
+        "latitude": 37.8853,
+        "location_last_verified_at": "2026-11-02",
+        "location_method": "published",
+        "location_notes": "Public runway reference from OurAirports record US-7081, corroborated against OpenStreetMap runway 746031073 and NASA's 2024 map showing the UAS airfield on northern Wallops Island. This is not the separate mainland research airport. The older handbook's minute-rounded coordinate conflicts with the island map and was not used. Site reference only, not a surveyed threshold, entrance, launch point, or flight boundary.",
+        "location_precision": "approximate",
+        "location_role": "test-site",
+        "location_source_url": "https://www.openstreetmap.org/way/746031073",
+        "longitude": -75.43706,
+        "test_access": "Arrange airfield integration and scheduling with Virginia Spaceport Authority. NASA's handbook describes coordinated restricted-airspace use and separate arrangements for other airspace; no listed dimension or aircraft group grants flight permission.",
+        "test_aircraft": "NASA's 2024 Wallops handbook describes support for UAS through Group 3. Aircraft and mission acceptance must be confirmed by the operator.",
+        "test_dimensions": "3,000 x 75 ft runway; NASA's 2024 handbook describes a 130 x 120 ft VTOL pad. The operator lists access to 75 square nautical miles of restricted airspace and a 90 x 50 ft hangar; the FAA spaceport listing instead gives 95 x 50 ft. Confirm usable hangar dimensions and clearances before planning.",
+        "test_last_verified_at": "2026-11-02"
+      },
+      "before": {
+        "latitude": 37.94,
+        "location_last_verified_at": "2026-09-16",
+        "location_method": "locality",
+        "location_notes": "Operator confirms the dedicated UAS airfield on the Wallops complex, but a specific airfield point or access address was not corroborated in the reviewed materials. Existing locality reference is not a runway, test boundary or launch point; the Norfolk corporate address is not the airfield.",
+        "location_precision": "locality",
+        "location_role": "",
+        "location_source_url": "https://www.vaspace.org/our-facilities",
+        "longitude": -75.467,
+        "test_access": "Secure federal facility. Coordinate mission integration and airfield access with the Virginia Spaceport Authority; published dimensions do not establish aircraft-specific approval.",
+        "test_aircraft": "Government and commercial UAS; multi-domain testing, training, demonstrations, and exercises.",
+        "test_dimensions": "3,000 x 75 ft runway; vertical takeoff and landing pad; 90 x 50 ft hangar. Direct access to 75 square nautical miles of restricted airspace.",
+        "test_last_verified_at": "2026-09-06"
+      },
+      "name": "MARS Unmanned Aircraft Systems Airfield",
+      "provenance": "curated-public-source",
+      "reason": "Move the misleading mainland locality reference to the corroborated island runway, reject the conflicting older rounded coordinate, and expose conflicting hangar dimensions."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "NASA Langley range safety procedures LPR 8715.5B, effective May 2024",
+          "url": "https://lmse.larc.nasa.gov/admin/public_docs/LPR-8715.5B_Final.pdf"
+        },
+        {
+          "title": "NASA May 2024 CERTAIN and MOSAIC capabilities overview",
+          "url": "https://ntrs.nasa.gov/api/citations/20240005785/downloads/5-7-2024%20CERTAIN%20SC%20MOSAIC%20Overview.pdf"
+        }
+      ],
+      "after": {
+        "contact_email": "larc-uas-ops@mail.nasa.gov",
+        "contact_text": "NASA Langley UAS Operations Office; public coordination address in the May 2024 range procedures.",
+        "contact_url": "https://lmse.larc.nasa.gov/admin/public_docs/LPR-8715.5B_Final.pdf",
+        "overview": "CERTAIN is NASA Langley's urban and rural UAS research environment, linked to remote operations and simulated traffic. NASA's May 2024 material describes roughly 800 acres, instrumented monitoring, and experiments in inspection, emergency response, delivery, and multi-aircraft supervision. The original UAS Test Range record documents its earlier development, not a second independently bookable range. Projects require NASA coordination; published research conditions are not permissions for outside operators.",
+        "test_access": "NASA's UAS Operations Office coordinates project review, scheduling, airspace and spectrum requirements. Request the current range procedures and applicable COA/Letter of Procedure before planning; research examples do not transfer BVLOS authority.",
+        "test_aircraft": "NASA-approved UAS research. The May 2024 overview lists a 125 lb vehicle scope; this is a dated facility description, not a universal or current aircraft acceptance guarantee.",
+        "test_dimensions": "May 2024 NASA procedures describe approximately 800 acres from the surface to 400 ft AGL, subject to the applicable COA and Langley Air Force Base agreement. The overview also lists caged/indoor testing and a fixed-wing operating surface; runway dimensions are not established here.",
+        "test_last_verified_at": "2026-11-02",
+        "test_source_url": "https://lmse.larc.nasa.gov/admin/public_docs/LPR-8715.5B_Final.pdf"
+      },
+      "before": {
+        "contact_email": "",
+        "contact_text": "NASA Langley Crew Systems and Aviation Operations Branch",
+        "contact_url": "https://csaob.larc.nasa.gov/",
+        "overview": "CERTAIN is NASA Langley's designated UAS research-flight environment, linked to the ROAM remote operations center. NASA uses live flights alongside virtual and simulated traffic to study onboard autonomy, air-ground integration, and how operators manage multiple aircraft. Documented research scenarios include delivery and emergency-response surveillance. This is NASA-coordinated research infrastructure, not a public drone park. The separate Langley UAS Test Range entry describes the range's earlier opening and should not be interpreted as a second independent booking site.",
+        "test_access": "Coordinate with NASA Langley research and flight-operations personnel. Published research examples do not transfer BVLOS permissions to outside users.",
+        "test_aircraft": "NASA research involving small UAS and integration with remote operations and simulated traffic; current aircraft eligibility is project-specific.",
+        "test_dimensions": null,
+        "test_last_verified_at": "2026-09-29",
+        "test_source_url": "https://csaob.larc.nasa.gov/roam/"
+      },
+      "name": "NASA Langley CERTAIN",
+      "provenance": "curated-public-source",
+      "reason": "Replace the original 100-acre reference with the newer, explicitly dated CERTAIN description and mission-specific coordination requirements.",
+      "accepted_baselines": [
+        {
+          "contact_email": "",
+          "contact_text": "Site operator or program information",
+          "contact_url": "https://www.nasa.gov/contact/",
+          "overview": "CERTAIN is NASA Langley's designated UAS research-flight environment, linked to the ROAM remote operations center. NASA uses live flights alongside virtual and simulated traffic to study onboard autonomy, air-ground integration, and how operators manage multiple aircraft. Documented research scenarios include delivery and emergency-response surveillance. This is NASA-coordinated research infrastructure, not a public drone park. The separate Langley UAS Test Range entry describes the range's earlier opening and should not be interpreted as a second independent booking site.",
+          "test_access": "Coordinate with NASA Langley research and flight-operations personnel. Published research examples do not transfer BVLOS permissions to outside users.",
+          "test_aircraft": "NASA research involving small UAS and integration with remote operations and simulated traffic; current aircraft eligibility is project-specific.",
+          "test_dimensions": null,
+          "test_last_verified_at": "2026-09-29",
+          "test_source_url": "https://csaob.larc.nasa.gov/roam/"
+        }
+      ]
+    },
+    {
+      "add_sources": [
+        {
+          "title": "NASA Langley range safety procedures LPR 8715.5B, effective May 2024",
+          "url": "https://lmse.larc.nasa.gov/admin/public_docs/LPR-8715.5B_Final.pdf"
+        },
+        {
+          "title": "NASA May 2024 CERTAIN and MOSAIC capabilities overview",
+          "url": "https://ntrs.nasa.gov/api/citations/20240005785/downloads/5-7-2024%20CERTAIN%20SC%20MOSAIC%20Overview.pdf"
+        },
+        {
+          "title": "NASA ROAM and its related CERTAIN live-flight environment",
+          "url": "https://csaob.larc.nasa.gov/roam/"
+        }
+      ],
+      "after": {
+        "contact_text": "Related NASA ROAM / CERTAIN research facilities and project coordination.",
+        "contact_url": "https://csaob.larc.nasa.gov/roam/",
+        "overview": "The Langley UAS Test Range opened as a 100-acre research area in 2015, enabling outdoor autonomy experiments. NASA's later CERTAIN material describes a broader campus research environment. This entry records the earlier range identity; it is not an additional commercial range or independent booking opportunity. Use the related CERTAIN record and NASA's current coordination route when discussing a project.",
+        "test_access": "Contact NASA's UAS Operations Office for the current CERTAIN project requirements; neither the 2015 announcement nor this historical entry authorizes a flight.",
+        "test_aircraft": "Historical small-UAS range opened in 2015; use the related CERTAIN profile and operator confirmation for present-day aircraft suitability.",
+        "test_dimensions": "The 2015 announcement's 100-acre figure is historical. NASA's May 2024 procedures describe the broader CERTAIN environment at approximately 800 acres; the two descriptions must not be added together as independent available ranges.",
+        "test_last_verified_at": "2026-11-02",
+        "test_source_url": "https://lmse.larc.nasa.gov/admin/public_docs/LPR-8715.5B_Final.pdf",
+        "website_url": "https://csaob.larc.nasa.gov/roam/"
+      },
+      "before": {
+        "contact_text": "NASA Langley Crew Systems and Aviation Operations Branch",
+        "contact_url": "https://csaob.larc.nasa.gov/",
+        "overview": "NASA's 2015 opening announcement describes a 100-acre Langley UAS range where researchers began moving autonomy experiments from indoor tests to outdoor flights. Examples included robotic mission behavior, package delivery, and search-and-rescue concepts using modified small aircraft. NASA subsequently identifies CERTAIN as its designated research flight range. These records describe related Langley infrastructure, not two independently available commercial ranges. The 2015 aircraft and airspace limits are historical; current suitability and permissions must be confirmed with NASA.",
+        "test_access": "NASA's opening announcement requires scheduling through the UAS Operations Office, airspace coordination, security notification, and a range safety officer. Confirm current conditions with NASA; the historical limits are not a present-day authorization.",
+        "test_aircraft": "Small research UAS. The cited July 2015 opening announcement describes the initial operating scope, not current aircraft approvals.",
+        "test_dimensions": "100-acre range reported in the 2015 opening announcement. Current launch-area and runway dimensions are not established by that source.",
+        "test_last_verified_at": "2026-09-06",
+        "test_source_url": "https://www.nasa.gov/centers-and-facilities/langley/nasa-langley-drone-flying-site-open-for-testing/",
+        "website_url": "https://www.nasa.gov/centers-and-facilities/langley/nasa-langley-drone-flying-site-open-for-testing/"
+      },
+      "name": "NASA Langley UAS Test Range",
+      "provenance": "curated-public-source",
+      "reason": "Keep the historical range identity explicit and route visitors to operator information rather than a decade-old opening announcement.",
+      "accepted_baselines": [
+        {
+          "contact_text": "Site operator or program information",
+          "contact_url": "https://www.nasa.gov/contact/",
+          "overview": "NASA's 2015 opening announcement describes a 100-acre Langley UAS range where researchers began moving autonomy experiments from indoor tests to outdoor flights. Examples included robotic mission behavior, package delivery, and search-and-rescue concepts using modified small aircraft. NASA subsequently identifies CERTAIN as its designated research flight range. These records describe related Langley infrastructure, not two independently available commercial ranges. The 2015 aircraft and airspace limits are historical; current suitability and permissions must be confirmed with NASA.",
+          "test_access": "NASA's opening announcement requires scheduling through the UAS Operations Office, airspace coordination, security notification, and a range safety officer. Confirm current conditions with NASA; the historical limits are not a present-day authorization.",
+          "test_aircraft": "Small research UAS. The cited July 2015 opening announcement describes the initial operating scope, not current aircraft approvals.",
+          "test_dimensions": "100-acre range reported in the 2015 opening announcement. Current launch-area and runway dimensions are not established by that source.",
+          "test_last_verified_at": "2026-09-06",
+          "test_source_url": "https://www.nasa.gov/centers-and-facilities/langley/nasa-langley-drone-flying-site-open-for-testing/",
+          "website_url": "https://www.nasa.gov/centers-and-facilities/langley/nasa-langley-drone-flying-site-open-for-testing/"
+        }
+      ]
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Virginia Tech Drone Park scheduling, orientation and site map",
+          "url": "https://drones.ictas.vt.edu/dronepark.html"
+        },
+        {
+          "title": "Virginia Tech ICTAS: 120 x 300 ft footprint and 85 ft height",
+          "url": "https://ictas.vt.edu/Facilities.html"
+        }
+      ],
+      "after": {
+        "location_last_verified_at": "2026-11-02",
+        "location_method": "published",
+        "location_notes": "The operator identifies 2143 Oak Lane and provides a facility map. Existing site reference is retained; it is not an approved outdoor flight boundary or entrance-level survey.",
+        "location_role": "test-site",
+        "location_source_url": "https://drones.ictas.vt.edu/dronepark.html",
+        "test_access": "Check the operator's calendar, request flight time at VTDronePark@vt.edu with organization and group size, and complete the one-time orientation. Commercial and third-party use has additional requirements; the enclosure does not authorize outdoor flights elsewhere.",
+        "test_last_verified_at": "2026-11-02",
+        "test_source_url": "https://ictas.vt.edu/Facilities.html"
+      },
+      "before": {
+        "location_last_verified_at": null,
+        "location_method": null,
+        "location_notes": null,
+        "location_role": null,
+        "location_source_url": null,
+        "test_access": "Request flight time through VTDronePark@vt.edu, review the park protocol, and complete the orientation. Commercial and third-party operations have additional requirements.",
+        "test_last_verified_at": "2026-09-06",
+        "test_source_url": "https://ictas.vt.edu/Facilities.html"
+      },
+      "name": "Virginia Tech Drone Park",
+      "provenance": "curated-public-source",
+      "reason": "Recheck the enclosure and access rules against the operator's facility and scheduling pages without turning a contained facility into open-air authorization."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "MITRE National Range operator fact sheet: facilities, use cases and reservation contact",
+          "url": "https://www.mitre.org/sites/default/files/2024-07/PR-24-2208-MITRE-National-Range.pdf"
+        }
+      ],
+      "after": {
+        "test_access": "Contact the MITRE range team for discussions and reservations. Confirm aircraft, project eligibility, operating limits and any counter-UAS authorities separately; the fact sheet is not flight or radio-frequency permission.",
+        "test_aircraft": "UAS, ground robots, communications equipment and counter-UAS prototypes described by MITRE. Published material does not establish a weight, wingspan or universal aircraft approval.",
+        "test_last_verified_at": "2026-11-02"
+      },
+      "before": {
+        "test_access": "Contact the range team for preliminary discussions and reservations. Eligibility, mission restrictions and approvals must be confirmed for the proposed work.",
+        "test_aircraft": "Operator-described robotics, unmanned aircraft, communications and counter-UAS experimentation.",
+        "test_last_verified_at": "2026-09-06"
+      },
+      "name": "MITRE National Range",
+      "provenance": "curated-public-source",
+      "reason": "Make unpublished aircraft limits and project-specific access explicit; retain the qualified Orange County location."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Xelevate Leesburg facility features, aircraft scope and inquiry contact",
+          "url": "https://xelevateus.com/leesburg-virginia/"
+        }
+      ],
+      "after": {
+        "contact_email": "jburkel@xelevateus.com",
+        "contact_phone": "571-919-1948",
+        "contact_text": "Xelevate range inquiries; specify the Leesburg campus and proposed aircraft/mission.",
+        "test_dimensions": "66-acre fenced campus with powered, climate-controlled innovation workspaces and storage. The operator's 300-acre mountainous Luray range is a different site, not part of Leesburg. No runway length or public flight boundary is established here.",
+        "test_last_verified_at": "2026-11-02"
+      },
+      "before": {
+        "contact_email": "jburkel@xelevateus.com",
+        "contact_phone": "571-919-1948",
+        "contact_text": "Leesburg facility and range reservation inquiries",
+        "test_dimensions": "66-acre fenced Leesburg campus with workspaces and storage. The operator's larger Luray range is a different site; no runway length is published for this record.",
+        "test_last_verified_at": "2026-09-06"
+      },
+      "name": "Xelevate Leesburg Unmanned Systems Facility",
+      "provenance": "curated-public-source",
+      "reason": "Add operator-published workspace and contact details while keeping Leesburg and Luray specifications separate."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Xelevate operator page: separately identified Luray mountain range",
+          "url": "https://xelevateus.com/leesburg-virginia/"
+        }
+      ],
+      "after": {
+        "contact_email": "jburkel@xelevateus.com",
+        "contact_phone": "571-919-1948",
+        "contact_text": "Xelevate range inquiries; specify the distinct Luray mountain range. No site point or public operating boundary is published.",
+        "test_last_verified_at": "2026-11-02"
+      },
+      "before": {
+        "contact_email": "jburkel@xelevateus.com",
+        "contact_phone": "571-919-1948",
+        "contact_text": "Xelevate's published inquiry and reservation contact; ask specifically about the Luray range.",
+        "test_last_verified_at": "2026-09-29"
+      },
+      "name": "Xelevate Luray Mountain Range",
+      "provenance": "curated-public-source",
+      "reason": "Recheck the separate 300-acre Group 1-3 description and add the published operator contact without creating a town-center pin."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "UVA Coastal Research Center drone permits and pre-research requirements",
+          "url": "https://abcrc.virginia.edu/permits-access-drones"
+        },
+        {
+          "title": "UVA CRC operator inventory: drones, RTK and processing resources",
+          "url": "https://abcrc.virginia.edu/research-infrastructure-facilities"
+        },
+        {
+          "title": "UVA CRC staff contacts and public station address",
+          "url": "https://abcrc.virginia.edu/contact-us"
+        }
+      ],
+      "after": {
+        "capabilities": [
+          "Perception, sensing, and sensor fusion",
+          "Navigation and positioning",
+          "Data engineering, analytics, and edge computing"
+        ],
+        "contact_email": "pnj9ud@virginia.edu",
+        "contact_phone": "757-331-1246",
+        "contact_text": "ABCRC station; Tom Burkett is the published research/drone guidance contact.",
+        "overview": "UVA's Anheuser-Busch Coastal Research Center supports drone-based coastal data collection from its property and research vessels. Operator-listed equipment includes Phantom 4, RTK and multispectral drones, GNSS reference equipment, and imagery-processing resources. Researchers can discuss photogrammetry, coastal mapping and environmental observations with station staff. Research and land-access permissions must be arranged before fieldwork; this is not a general-access commercial drone range.",
+        "platform_domains": [
+          "Unmanned aircraft systems"
+        ],
+        "test_access": "Complete the station's drone compliance checklist and acknowledgement before research begins. Coordinate with staff and obtain relevant land-manager permits; seasonal wildlife restrictions can apply to nearby islands.",
+        "test_aircraft": "Operator-listed DJI Phantom 4, Phantom 4 RTK and Phantom 4 Multispectral RTK research resources; current equipment availability requires station confirmation.",
+        "test_dimensions": "Operator describes a 43-acre coastal campus and research-vessel access. Campus acreage is not an approved aerial operating boundary; runway dimensions and aircraft weight limits are not published on the reviewed pages.",
+        "test_last_verified_at": "2026-11-02",
+        "test_source_url": "https://abcrc.virginia.edu/permits-access-drones",
+        "unmanned_systems_relevance": "Documented UAS imagery, RTK positioning and coastal field-research support. The drone program does not itself establish autonomous surface-vessel or undersea-vehicle capabilities.",
+        "website_url": "https://abcrc.virginia.edu/permits-access-drones"
+      },
+      "before": {
+        "capabilities": [
+          "Autonomy and artificial intelligence",
+          "Navigation and positioning",
+          "Perception, sensing, and sensor fusion"
+        ],
+        "contact_email": "",
+        "contact_phone": "",
+        "contact_text": "Facility or operator public information",
+        "overview": "Coastal research-center UAS operations for compliant flights from the center's property and vessels. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence, Navigation and positioning, and Perception, sensing, and sensor fusion. Relevant mission areas include Maritime domain awareness and Environmental monitoring.",
+        "platform_domains": [
+          "Maritime surface systems",
+          "Undersea systems"
+        ],
+        "test_access": null,
+        "test_aircraft": null,
+        "test_dimensions": null,
+        "test_last_verified_at": null,
+        "test_source_url": null,
+        "unmanned_systems_relevance": "Provides documented marine robotics, autonomy, sensing, navigation, or field-test capacity for surface and undersea systems.",
+        "website_url": ""
+      },
+      "name": "UVA Coastal Research Center UAS Operations",
+      "provenance": "curated-public-source",
+      "reason": "Replace boilerplate with documented coastal UAS use cases, provide a direct drone-access page, and remove unsupported maritime/undersea platform classifications.",
+      "accepted_baselines": [
+        {
+          "capabilities": [
+            "Autonomy and artificial intelligence",
+            "Navigation and positioning",
+            "Perception, sensing, and sensor fusion"
+          ],
+          "contact_email": "",
+          "contact_phone": "",
+          "contact_text": "Public information route; a direct asset contact is not published in the catalog",
+          "overview": "Coastal research-center UAS operations for compliant flights from the center's property and vessels. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence, Navigation and positioning, and Perception, sensing, and sensor fusion. Relevant mission areas include Maritime domain awareness and Environmental monitoring.",
+          "platform_domains": [
+            "Maritime surface systems",
+            "Undersea systems"
+          ],
+          "test_access": null,
+          "test_aircraft": null,
+          "test_dimensions": null,
+          "test_last_verified_at": null,
+          "test_source_url": null,
+          "unmanned_systems_relevance": "Provides documented marine robotics, autonomy, sensing, navigation, or field-test capacity for surface and undersea systems.",
+          "website_url": ""
+        }
+      ]
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Virginia Tech Eastern Shore AREC Weed Science program",
+          "url": "https://www.arec.vaes.vt.edu/arec/eastern-shore/programs/weed-science.html"
+        },
+        {
+          "title": "Virginia Tech researcher profile documenting UAS, ground robots and precision spray research",
+          "url": "https://www.arec.vaes.vt.edu/arec/eastern-shore/people/vijay-singh.html"
+        }
+      ],
+      "after": {
+        "contact_email": "vijaysingh@vt.edu",
+        "contact_text": "Eastern Shore AREC precision weed-management research; Vijay Singh is the published program researcher.",
+        "contact_url": "https://www.arec.vaes.vt.edu/arec/eastern-shore/people/vijay-singh.html",
+        "overview": "The Eastern Shore AREC precision weed-management team studies UAS, sensor-equipped ground vehicles and robots for weed identification, herbicide-resistance detection and spray applications. This is a research and extension resource for discussing agricultural sensing, targeted treatment and field-study collaboration. The research profile does not advertise a generally bookable flight range or publish a transferable aircraft authorization.",
+        "website_url": "https://www.arec.vaes.vt.edu/arec/eastern-shore/programs/weed-science.html"
+      },
+      "before": {
+        "contact_email": "",
+        "contact_text": "Program or parent-organization inquiries",
+        "contact_url": "https://www.arec.vaes.vt.edu/arec/eastern-shore/contact.html",
+        "overview": "Eastern Shore field research and outreach on agricultural drone sensing and spray-drone applications. Public sources support its classification as a Virginia program. Documented capabilities include Perception, sensing, and sensor fusion and Data engineering, analytics, and edge computing. Relevant mission areas include Agriculture and natural resources and Environmental monitoring.",
+        "website_url": ""
+      },
+      "name": "Virginia Tech Eastern Shore AREC Drone Application Research",
+      "provenance": "curated-public-source",
+      "reason": "Link directly to the responsible research program and researcher rather than leave the primary website blank.",
+      "accepted_baselines": [
+        {
+          "contact_email": "",
+          "contact_text": "Public information route; a direct asset contact is not published in the catalog",
+          "contact_url": "https://www.arec.vaes.vt.edu/content/dam/arec_vaes_vt_edu/eastern-shore/newsletter/The%20Stalk%20-%20July%202024.pdf",
+          "overview": "Eastern Shore field research and outreach on agricultural drone sensing and spray-drone applications. Public sources support its classification as a Virginia program. Documented capabilities include Perception, sensing, and sensor fusion and Data engineering, analytics, and edge computing. Relevant mission areas include Agriculture and natural resources and Environmental monitoring.",
+          "website_url": ""
+        }
+      ]
+    },
+    {
+      "add_sources": [
+        {
+          "title": "SVHEC direct automation and industrial-maintenance training program",
+          "url": "https://www.svhec.org/job-training/automation/"
+        },
+        {
+          "title": "SVHEC robotics operations course descriptions",
+          "url": "https://www.svhec.org/job-training/automation/ats-courses/"
+        }
+      ],
+      "after": {
+        "contact_phone": "434-572-5566",
+        "contact_text": "SVHEC industrial maintenance / automated-systems training inquiries; confirm current classes and eligibility.",
+        "contact_url": "https://www.svhec.org/job-training/automation/",
+        "overview": "SVHEC's South Boston workforce programs cover industrial maintenance, automated systems and robot operations. Published course content includes robot safety, teach-pendant operation, coordinate frames, faults and recovery, sensors and programmable controllers. Employers can discuss customized workforce training. These are supporting robotics skills, not a documented autonomous-vehicle flight-test service; current schedules and places should be confirmed with the center.",
+        "website_url": "https://www.svhec.org/job-training/automation/"
+      },
+      "before": {
+        "contact_phone": "",
+        "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area.",
+        "contact_url": "https://www.svhec.org/news/svhec-drives-22-million-economic-impact-in-southern-virginia/",
+        "overview": "South Boston workforce center offering automation and robotics training through its Career Tech Academy. SVHEC documents robotics programming, maintenance and automated-systems instruction and reports continuing workforce activity in 2026. This supports the robotics workforce rather than a claimed dedicated unmanned-vehicle program.",
+        "website_url": ""
+      },
+      "name": "Southern Virginia Higher Education Center Robotics Training",
+      "provenance": "curated-public-source",
+      "reason": "Replace a news-article inquiry route with the actual training program and robotics course information."
+    },
+    {
+      "add_sources": [
+        {
+          "title": "Virginia Beach Police: direct Drone as First Responder program and public inquiries",
+          "url": "https://police.virginiabeach.gov/your-vbpd/initiatives/drone-as-first-responder-program"
+        }
+      ],
+      "after": {
+        "contact_email": "VBPDPublicAffairs@vbgov.com",
+        "contact_phone": "757-385-4097",
+        "contact_text": "VBPD Public Affairs for the police Drone as First Responder component; not the contact for every city-department UAS operation.",
+        "contact_url": "https://police.virginiabeach.gov/your-vbpd/initiatives/drone-as-first-responder-program",
+        "overview": "Virginia Beach's municipal UAS activity includes cross-department emergency operations documented by CISA. The police department now publishes a dedicated Drone as First Responder page describing dispatch support, missing-person searches and crash documentation. That page covers the police component, not every city UAS team. Its approvals are specific to the department and do not authorize public flying or outside access to launch sites.",
+        "website_url": "https://police.virginiabeach.gov/your-vbpd/initiatives/drone-as-first-responder-program"
+      },
+      "before": {
+        "contact_email": "",
+        "contact_phone": "",
+        "contact_text": "Public information route; a direct asset contact is not published in the catalog",
+        "contact_url": "https://virginiabeach.gov/",
+        "overview": "Cross-department municipal UAS program supporting emergency operations and public-safety response. Public sources support its classification as a Virginia program. Documented capabilities include Operations, maintenance, and sustainment and Perception, sensing, and sensor fusion. Relevant mission areas include Public safety and emergency response and Search and rescue.",
+        "website_url": ""
+      },
+      "name": "City of Virginia Beach UAS Program",
+      "provenance": "curated-public-source",
+      "reason": "Provide a direct public program page with explicit police-versus-citywide scope and keep the contact point distinct from operational locations."
+    }
+  ],
+  "reviewed_at": "2026-11-02",
+  "scope": "FAA-reference follow-up, qualified public locations, operational profiles and direct official program websites; no handoff or hosting changes.",
+  "unresolved": [
+    {
+      "issue": "Suite 301/305 conflict and no building-specific geocode; keep unmapped.",
+      "name": "Virginia Tech Corporate Research Center Newport News and Secure Energy Future Center"
+    },
+    {
+      "issue": "Current homepage identifies Fairfax, while an older contact page lists a Woodbridge street. Do not relocate using the conflicting address.",
+      "name": "H2P Solution"
+    },
+    {
+      "issue": "Operator publishes Northern Virginia only; do not use a third-party registered/residential address or Maryland test sites for a Virginia pin.",
+      "name": "Magothy River Technologies"
+    },
+    {
+      "issue": "Published Dulles headquarters address is not the Winchester manufacturing campus.",
+      "name": "Heven AeroTech Winchester Innovation and Manufacturing Campus"
+    },
+    {
+      "issue": "Existing company domain returned 404; current operating address and direct site remain unresolved.",
+      "name": "Blue Ridge Defense Works"
+    },
+    {
+      "issue": "Operator contact page gives Reston only; its New York operations address is not the Virginia headquarters.",
+      "name": "TruWeather Solutions"
+    },
+    {
+      "issue": "Official contact page does not publish a street address; no third-party address substituted.",
+      "name": "Sedaro"
+    },
+    {
+      "issue": "Official contact gives a Charlottesville PO box, not an operating location.",
+      "name": "dbS Productions"
+    },
+    {
+      "issue": "Official site identifies the Charlottesville area only; no precise operating address published.",
+      "name": "DroneTrace"
+    },
+    {
+      "issue": "Public company material identifies Blacksburg but no reliable operating street address.",
+      "name": "BZRD Systems"
+    },
+    {
+      "issue": "Operator identifies Orange County without an operating address or mapped range boundary; retain locality qualification.",
+      "name": "MITRE National Range"
+    },
+    {
+      "issue": "County's Harrowgate Park facility page is a different address on Cougar Trail; the CECLA drone field remains supported by dated county material, not a current standalone facility website.",
+      "name": "Harrowgate Drone Park"
+    },
+    {
+      "issue": "Historically listed smlairport.com now presents an unrelated/template Alpine Zenith identity; do not assign it as the airport website.",
+      "name": "Smith Mountain Lake"
+    },
+    {
+      "issue": "Historical airport domain could not be retrieved. Owner news confirms the airport but is not promoted to its primary website.",
+      "name": "New London"
+    },
+    {
+      "issue": "Historically listed dedicated domain could not be retrieved. Keep official airport evidence separate from primary website.",
+      "name": "Lake Country Rgnl"
+    },
+    {
+      "issue": "Operator's dedicated SECNAV URL could not be retrieved; no unrelated news page substituted as its website.",
+      "name": "Mid-Atlantic Tech Bridge"
+    },
+    {
+      "issue": "No current asset-specific official page found. Local-search business listings are not an airport-owned website.",
+      "name": "Chase City Muni"
+    },
+    {
+      "issue": "No current asset-specific official page found. The state park and tourism sites describe different assets.",
+      "name": "Lake Anna"
+    },
+    {
+      "issue": "No current asset-specific official page identified; this record is the McLaughlin seaplane base, not a similarly named commercial airport.",
+      "name": "Mc Laughlin"
+    },
+    {
+      "issue": "Official town and county planning materials confirm a privately owned public-use airport but are not its operating website.",
+      "name": "New Market"
+    },
+    {
+      "issue": "State sponsor records identify the town-owned airport; the town homepage and island tourism websites are not airport-specific operating pages.",
+      "name": "Tangier Island"
+    }
+  ]
+}

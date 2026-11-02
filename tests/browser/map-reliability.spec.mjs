@@ -83,7 +83,7 @@ test("airspace popups use the published base when the facility label is blank", 
 });
 
 for (const facility of [
-  { name: "MARS UAS Airfield", latitude: 37.94, longitude: -75.467, sources: 1 },
+  { name: "MARS UAS Airfield", latitude: 37.8853, longitude: -75.43706, sources: 2 },
   { name: "NASA Langley UAS Test Range and CERTAIN", latitude: 37.085639, longitude: -76.380667, sources: 2 },
   { name: "Virginia Tech Drone Park", latitude: 37.2241, longitude: -80.4286, sources: 2 },
 ]) {

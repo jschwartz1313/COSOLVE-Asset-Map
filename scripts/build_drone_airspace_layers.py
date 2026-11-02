@@ -14,7 +14,7 @@ from django.contrib.gis.geos import GEOSGeometry
 ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = ROOT / "static" / "data"
 STATE_BOUNDARY = DATA_DIR / "virginia-state-boundary.geojson"
-TEST_SITES_REVIEWED_AT = "2026-08-12"
+TEST_SITES_REVIEWED_AT = "2026-11-02"
 VIRGINIA_ENVELOPE = "-83.7,36.5,-75.1,39.6"
 
 FAA_ROOT = "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/arcgis/rest/services"
@@ -39,18 +39,21 @@ TEST_SITES = (
     {
         "name": "MARS UAS Airfield",
         "city": "Wallops Island",
-        "longitude": -75.467,
-        "latitude": 37.94,
-        "location_precision": "Approximate site location",
+        "longitude": -75.437060,
+        "latitude": 37.885300,
+        "location_precision": "Corroborated island runway reference; not a surveyed threshold",
         "site_type": "Dedicated UAS airfield",
         "published_size": "Direct access to 75 square nautical miles of restricted airspace",
-        "launch_recovery": "3,000 ft by 75 ft runway and a vertical takeoff and landing pad",
+        "launch_recovery": (
+            "3,000 ft by 75 ft runway; 130 ft by 120 ft VTOL pad in NASA's 2024 handbook"
+        ),
         "support_infrastructure": (
-            "90 ft by 50 ft hangar and UAS integration and airfield management support"
+            "Hangar, integration and airfield-management support; confirm usable hangar "
+            "clearances because published operator and FAA dimensions differ"
         ),
         "aircraft_scope": (
-            "Government and commercial unmanned-aircraft training, testing, "
-            "demonstrations, and exercises"
+            "NASA's 2024 handbook describes UAS through Group 3; operator acceptance "
+            "and mission approval remain aircraft-specific"
         ),
         "flight_constraints": (
             "Secure federal facility; operations use the NASA Wallops range environment "
@@ -59,6 +62,13 @@ TEST_SITES = (
         "access": "Coordinated customer access; not a public-use airfield",
         "source_title": "Virginia Spaceport Authority facilities",
         "source_url": "https://www.vaspace.org/our-facilities",
+        "secondary_source_title": "NASA 2024 Wallops range handbook",
+        "secondary_source_url": "https://www.nasa.gov/wp-content/uploads/2023/09/wallopsrangeusershandbook-2024.pdf",
+        "location_source_url": "https://www.openstreetmap.org/way/746031073",
+        "location_notes": (
+            "Public mapped runway corroborated against NASA's island map and OurAirports "
+            "US-7081. Not the separate mainland airport, an access gate, or a flight boundary."
+        ),
     },
     {
         "name": "NASA Langley UAS Test Range and CERTAIN",
@@ -68,25 +78,31 @@ TEST_SITES = (
         "location_precision": "NASA Langley campus reference point",
         "site_type": "Open-air research range and urban test environment",
         "published_size": (
-            "100-acre designated UAS test range; CERTAIN provides a city-like "
-            "research environment"
+            "Approximately 800 acres of urban and rural airspace in NASA's May 2024 "
+            "CERTAIN procedures; the original 2015 opening's 100-acre figure is historical"
         ),
-        "launch_recovery": "Official sources do not publish runway or launch-pad dimensions",
+        "launch_recovery": (
+            "Caged/indoor facilities and a fixed-wing operating surface; "
+            "confirm current configuration"
+        ),
         "support_infrastructure": (
-            "Live small-UAS flight range connected to NASA remote-operations "
-            "and autonomy research"
+            "Remote-operations centers, telemetry, local weather and airspace monitoring "
+            "described in NASA's 2024 overview"
         ),
-        "aircraft_scope": "NASA-approved small UAS research operations",
+        "aircraft_scope": (
+            "NASA's May 2024 overview lists vehicles up to 125 lb; "
+            "confirm current project eligibility"
+        ),
         "flight_constraints": (
-            "Flight time is scheduled through NASA's UAS Operations Office; the Air Force "
-            "requires advance notification, NASA security is notified, and a NASA range "
-            "safety officer must be present."
+            "NASA's May 2024 procedures describe surface to 400 ft AGL, subject to the "
+            "applicable COA and Air Force agreement. UASOO coordinates scheduling, "
+            "safety and spectrum; obtain current conditions. No transferable BVLOS permission."
         ),
         "access": "Coordinated research access; not an open public flying site",
-        "source_title": "NASA Langley drone flying site",
-        "source_url": "https://www.nasa.gov/centers-and-facilities/langley/nasa-langley-drone-flying-site-open-for-testing/",
-        "secondary_source_title": "NASA ROAM and CERTAIN operations",
-        "secondary_source_url": "https://csaob.larc.nasa.gov/roam/",
+        "source_title": "NASA Langley range procedures, May 2024",
+        "source_url": "https://lmse.larc.nasa.gov/admin/public_docs/LPR-8715.5B_Final.pdf",
+        "secondary_source_title": "NASA CERTAIN / MOSAIC capabilities, May 2024",
+        "secondary_source_url": "https://ntrs.nasa.gov/api/citations/20240005785/downloads/5-7-2024%20CERTAIN%20SC%20MOSAIC%20Overview.pdf",
     },
     {
         "name": "Virginia Tech Drone Park",
