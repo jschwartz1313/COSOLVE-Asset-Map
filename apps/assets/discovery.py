@@ -2,6 +2,8 @@
 
 from django.db.models import Q
 
+from .testing import STRUCTURED_TEST_FIELDS
+
 RESOURCE_CHOICES = (
     ("testing", "Test sites and environments"),
     ("projects", "Projects and programs"),
@@ -34,6 +36,7 @@ TEST_SPEC_FIELDS = (
     "test_access",
     "test_source_url",
     "test_last_verified_at",
+    *STRUCTURED_TEST_FIELDS,
 )
 
 IDENTITY_FIELDS = ("display_name", "search_aliases")

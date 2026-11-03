@@ -1,3 +1,4 @@
+import csv
 import json
 from urllib.parse import urlencode
 
@@ -7,7 +8,7 @@ from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
 from django.db import connection
 from django.db.models import Count, Max
-from django.http import Http404, JsonResponse
+from django.http import Http404, HttpResponse, JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
 from django.views.decorators.http import require_POST
@@ -16,10 +17,19 @@ from apps.api.query import filter_public_assets
 from apps.api.search import PUBLIC_NAME_ORDER
 from apps.assets.discovery import RESOURCE_CHOICES
 from apps.assets.models import Asset, SavedView
+from apps.assets.testing import (
+    ACCESS_CHOICES,
+    ACTIVITY_CHOICES,
+    LAUNCH_CHOICES,
+    access_labels,
+    compare_site,
+    evidence_usable,
+    testing_candidates,
+)
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 from apps.sources.models import Source
 
-from .forms import SavedViewForm, UpdateSubmissionForm
+from .forms import SavedViewForm, TestSiteSearchForm, UpdateSubmissionForm
 from .map_layers import layer_freshness
 
 DIRECTORY_SORTS = (
@@ -42,6 +52,7 @@ def filter_context():
     return {
         "record_types": Asset.RecordType.choices,
         "resource_choices": RESOURCE_CHOICES,
+        "test_access_choices": ACCESS_CHOICES,
         "activity_choices": Asset.ActivityStatus.choices,
         "categories": StrategicCategory.objects.filter(is_active=True),
         "domains": PlatformDomain.objects.filter(is_active=True),
@@ -53,6 +64,63 @@ def filter_context():
 
 def connect(request):
     return render(request, "core/connect.html")
+
+
+def test_sites(request):
+    form = TestSiteSearchForm(request.GET)
+    rows = []
+    if form.is_valid():
+        criteria = form.cleaned_data
+        filters = request.GET.copy()
+        for name in list(filters):
+            if name != "access":
+                filters.pop(name)
+        candidates = testing_candidates(filter_public_assets(filters))
+        rows = [compare_site(asset, criteria) for asset in candidates]
+        if criteria.get("outcome"):
+            rows = [row for row in rows if row["state"] == criteria["outcome"]]
+        rows.sort(key=lambda row: (
+            {"match": 0, "reference": 1, "unknown": 2, "conflict": 3}[row["state"]],
+            row["asset"].public_name.lower(),
+        ))
+    if form.is_valid() and request.GET.get("download") == "csv":
+        response = HttpResponse(content_type="text/csv; charset=utf-8")
+        response["Content-Disposition"] = 'attachment; filename="cosolve-test-site-comparison.csv"'
+        writer = csv.writer(response)
+        writer.writerow([
+            "Planning comparison only; not aircraft acceptance or flight authorization",
+        ])
+        writer.writerow(["Requirement", "Value"])
+        for field in form:
+            if field.name != "outcome":
+                writer.writerow([field.label, form.cleaned_data.get(field.name) or "Not specified"])
+        writer.writerow([])
+        writer.writerow(["Asset", "Outcome", "Documented access", "Comparison", "Profile",
+                         "Criteria source", "Source checked", "Runway source",
+                         "Runway source checked"])
+        for row in rows:
+            asset = row["asset"]
+            values = [asset.public_name, row["label"], "; ".join(row["access_labels"]),
+                      "; ".join(f"{c['label']}: {c['status']} - {c['text']}"
+                                for c in row["checks"]),
+                      request.build_absolute_uri(asset.get_absolute_url()),
+                      asset.test_suitability_source_url if row["evidence_usable"] else "",
+                      asset.test_suitability_reviewed_at if row["evidence_usable"] else "",
+                      asset.test_source_url if criteria.get("runway") and evidence_usable(
+                          asset, asset.test_source_url, asset.test_last_verified_at) else "",
+                      asset.test_last_verified_at if criteria.get("runway") and evidence_usable(
+                          asset, asset.test_source_url, asset.test_last_verified_at) else ""]
+            writer.writerow(["'" + value if isinstance(value, str)
+                             and value.lstrip().startswith(("=", "+", "-", "@")) else value
+                             for value in values])
+        return response
+    params = request.GET.copy()
+    params.pop("page", None)
+    params["download"] = "csv"
+    return render(request, "assets/test_sites.html", {
+        "form": form, "page_obj": Paginator(rows, 12).get_page(request.GET.get("page")),
+        "result_count": len(rows), "download_query": params.urlencode(),
+    })
 
 
 def map_view(request):
@@ -137,6 +205,14 @@ def asset_detail(request, slug):
             "incoming_relationship_count": incoming_relationships.count(),
             "similar_assets": similar_assets,
             "public_sources": public_sources,
+            "test_access_labels": access_labels(asset),
+            "test_criteria_supported": evidence_usable(
+                asset, asset.test_suitability_source_url, asset.test_suitability_reviewed_at,
+            ),
+            "test_launch_labels": [label for code, label in LAUNCH_CHOICES
+                                   if code in asset.test_launch_methods],
+            "test_activity_labels": [label for code, label in ACTIVITY_CHOICES
+                                     if code in asset.test_activities],
         },
     )
 

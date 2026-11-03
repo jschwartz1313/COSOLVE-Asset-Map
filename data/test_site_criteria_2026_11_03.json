@@ -1,0 +1,255 @@
+{
+  "reviewed_at": "2026-11-03",
+  "scope": "Documented criteria only; not operating approval. Missing limits are unknown.",
+  "corrections": [
+    {
+      "name": "MARS Unmanned Aircraft Systems Airfield",
+      "provenance": "curated-public-source",
+      "before": {
+        "test_max_weight_lb": null,
+        "test_max_span_ft": null,
+        "test_max_weight_exclusive": false,
+        "test_launch_methods": [],
+        "test_activities": [],
+        "test_access_types": [],
+        "test_suitability_source_url": "",
+        "test_suitability_reviewed_at": null
+      },
+      "after": {
+        "test_max_weight_lb": null,
+        "test_max_span_ft": null,
+        "test_max_weight_exclusive": false,
+        "test_launch_methods": [
+          "runway",
+          "vertical"
+        ],
+        "test_activities": [
+          "flight"
+        ],
+        "test_access_types": [
+          "commercial",
+          "restricted"
+        ],
+        "test_suitability_source_url": "https://www.vaspace.org/our-facilities",
+        "test_suitability_reviewed_at": "2026-11-03"
+      },
+      "add_sources": [
+        {
+          "title": "Operator evidence for documented test-site criteria",
+          "url": "https://www.vaspace.org/our-facilities"
+        }
+      ],
+      "reason": "Operator publishes a runway, VTOL pad, commercial/government testing, and secure federal access. No maximum aircraft weight or span is inferred."
+    },
+    {
+      "name": "MITRE National Range",
+      "provenance": "curated-public-source",
+      "before": {
+        "test_max_weight_lb": null,
+        "test_max_span_ft": null,
+        "test_max_weight_exclusive": false,
+        "test_launch_methods": [],
+        "test_activities": [],
+        "test_access_types": [],
+        "test_suitability_source_url": "",
+        "test_suitability_reviewed_at": null
+      },
+      "after": {
+        "test_max_weight_lb": null,
+        "test_max_span_ft": null,
+        "test_max_weight_exclusive": false,
+        "test_launch_methods": [],
+        "test_activities": [
+          "flight",
+          "counter-uas"
+        ],
+        "test_access_types": [
+          "research",
+          "partnership"
+        ],
+        "test_suitability_source_url": "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range",
+        "test_suitability_reviewed_at": "2026-11-03"
+      },
+      "add_sources": [
+        {
+          "title": "Operator evidence for documented test-site criteria",
+          "url": "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range"
+        }
+      ],
+      "reason": "The fact sheet describes partner testing and C-UAS evaluation. No RF, defeat, or flight permissions are implied."
+    },
+    {
+      "name": "Xelevate Leesburg Unmanned Systems Facility",
+      "provenance": "curated-public-source",
+      "before": {
+        "test_max_weight_lb": null,
+        "test_max_span_ft": null,
+        "test_max_weight_exclusive": false,
+        "test_launch_methods": [],
+        "test_activities": [],
+        "test_access_types": [],
+        "test_suitability_source_url": "",
+        "test_suitability_reviewed_at": null
+      },
+      "after": {
+        "test_max_weight_lb": 55,
+        "test_max_span_ft": null,
+        "test_max_weight_exclusive": true,
+        "test_launch_methods": [],
+        "test_activities": [
+          "flight"
+        ],
+        "test_access_types": [
+          "commercial"
+        ],
+        "test_suitability_source_url": "https://xelevateus.com/leesburg-virginia/",
+        "test_suitability_reviewed_at": "2026-11-03"
+      },
+      "add_sources": [
+        {
+          "title": "Operator evidence for documented test-site criteria",
+          "url": "https://xelevateus.com/leesburg-virginia/"
+        }
+      ],
+      "reason": "The operator lists less than 55 lb for Leesburg. The starred Group 1-3 scope belongs to Luray and is not applied to Leesburg."
+    },
+    {
+      "name": "Xelevate Luray Mountain Range",
+      "provenance": "curated-public-source",
+      "before": {
+        "test_max_weight_lb": null,
+        "test_max_span_ft": null,
+        "test_max_weight_exclusive": false,
+        "test_launch_methods": [],
+        "test_activities": [],
+        "test_access_types": [],
+        "test_suitability_source_url": "",
+        "test_suitability_reviewed_at": null
+      },
+      "after": {
+        "test_max_weight_lb": null,
+        "test_max_span_ft": null,
+        "test_max_weight_exclusive": false,
+        "test_launch_methods": [],
+        "test_activities": [
+          "flight"
+        ],
+        "test_access_types": [
+          "commercial"
+        ],
+        "test_suitability_source_url": "https://xelevateus.com/leesburg-virginia/",
+        "test_suitability_reviewed_at": "2026-11-03"
+      },
+      "add_sources": [
+        {
+          "title": "Operator evidence for documented test-site criteria",
+          "url": "https://xelevateus.com/leesburg-virginia/"
+        }
+      ],
+      "reason": "The operator footnote identifies the separate Luray mountain range. No numeric weight is inferred from Group 3 or the Leesburg limit."
+    },
+    {
+      "name": "Virginia Tech Drone Park",
+      "provenance": "curated-public-source",
+      "before": {
+        "test_max_weight_lb": null,
+        "test_max_span_ft": null,
+        "test_max_weight_exclusive": false,
+        "test_launch_methods": [],
+        "test_activities": [],
+        "test_access_types": [],
+        "test_suitability_source_url": "",
+        "test_suitability_reviewed_at": null
+      },
+      "after": {
+        "test_max_weight_lb": null,
+        "test_max_span_ft": null,
+        "test_max_weight_exclusive": false,
+        "test_launch_methods": [],
+        "test_activities": [],
+        "test_access_types": [
+          "commercial",
+          "research"
+        ],
+        "test_suitability_source_url": "https://drones.ictas.vt.edu/dronepark.html",
+        "test_suitability_reviewed_at": "2026-11-03"
+      },
+      "add_sources": [
+        {
+          "title": "Operator evidence for documented test-site criteria",
+          "url": "https://drones.ictas.vt.edu/dronepark.html"
+        }
+      ],
+      "reason": "Scheduling and orientation are required; commercial and third-party operations have additional requirements. No automatic public access or aircraft acceptance is asserted."
+    },
+    {
+      "name": "UVA Coastal Research Center UAS Operations",
+      "provenance": "curated-public-source",
+      "before": {
+        "test_max_weight_lb": null,
+        "test_max_span_ft": null,
+        "test_max_weight_exclusive": false,
+        "test_launch_methods": [],
+        "test_activities": [],
+        "test_access_types": [],
+        "test_suitability_source_url": "",
+        "test_suitability_reviewed_at": null
+      },
+      "after": {
+        "test_max_weight_lb": null,
+        "test_max_span_ft": null,
+        "test_max_weight_exclusive": false,
+        "test_launch_methods": [],
+        "test_activities": [],
+        "test_access_types": [
+          "research"
+        ],
+        "test_suitability_source_url": "https://abcrc.virginia.edu/permits-access-drones",
+        "test_suitability_reviewed_at": "2026-11-03"
+      },
+      "add_sources": [
+        {
+          "title": "Operator evidence for documented test-site criteria",
+          "url": "https://abcrc.virginia.edu/permits-access-drones"
+        }
+      ],
+      "reason": "The station requires drone research compliance documents and relevant land-manager permits. Research data collection is not relabeled as a general aircraft-development range."
+    },
+    {
+      "name": "NASA Langley CERTAIN",
+      "provenance": "curated-public-source",
+      "before": {
+        "test_max_weight_lb": null,
+        "test_max_span_ft": null,
+        "test_max_weight_exclusive": false,
+        "test_launch_methods": [],
+        "test_activities": [],
+        "test_access_types": [],
+        "test_suitability_source_url": "",
+        "test_suitability_reviewed_at": null
+      },
+      "after": {
+        "test_max_weight_lb": null,
+        "test_max_span_ft": null,
+        "test_max_weight_exclusive": false,
+        "test_launch_methods": [],
+        "test_activities": [
+          "flight",
+          "autonomy"
+        ],
+        "test_access_types": [
+          "research"
+        ],
+        "test_suitability_source_url": "https://lmse.larc.nasa.gov/admin/public_docs/LPR-8715.5B_Final.pdf",
+        "test_suitability_reviewed_at": "2026-11-03"
+      },
+      "add_sources": [
+        {
+          "title": "Operator evidence for documented test-site criteria",
+          "url": "https://lmse.larc.nasa.gov/admin/public_docs/LPR-8715.5B_Final.pdf"
+        }
+      ],
+      "reason": "NASA research procedures govern projects. A dated 125 lb overview scope is not treated as a universal current acceptance limit."
+    }
+  ]
+}

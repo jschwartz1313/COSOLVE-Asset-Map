@@ -471,7 +471,7 @@
         "Training and experimentation"
       ],
       "name": "Aerospace Academy of the Eastern Shore",
-      "overview": "AAES links ODU, Accomack and Northampton school divisions, and Eastern Shore Community College. Grades 9\u201310 study at zoned schools; grades 11\u201312 attend ESCC. The published curriculum includes aerospace pathways, dual enrollment and Part 107 UAS credentials.",
+      "overview": "AAES links ODU, Accomack and Northampton school divisions, and Eastern Shore Community College. Grades 9–10 study at zoned schools; grades 11–12 attend ESCC. The published curriculum includes aerospace pathways, dual enrollment and Part 107 UAS credentials.",
       "owner_operator": "ODU, Accomack and Northampton school divisions, and Eastern Shore Community College partnership",
       "partnership_opportunities": "Enrollment and program inquiries through ODU's listed director.",
       "platform_domains": [
@@ -9660,7 +9660,7 @@
       "contact_phone": "800-274-8348",
       "contact_text": "Newport News Economic Development Authority project inquiries",
       "contact_url": "https://newportnewsva.com/contact/",
-      "current_activity": "Newport News announced a $3,061,400 GO Virginia award for the dual-site MIC project in May 2026. USI\u2019s September 15, 2026 announcement describes a memorandum of agreement with the Newport News Economic Development Authority, with Universal Solutions International, Inc. as private implementation partner, program integrator and operator and a performance period through April 30, 2029. Capability and facility language remains future-facing; the announcement does not establish fully commissioned BVLOS infrastructure or open public testing.",
+      "current_activity": "Newport News announced a $3,061,400 GO Virginia award for the dual-site MIC project in May 2026. USI’s September 15, 2026 announcement describes a memorandum of agreement with the Newport News Economic Development Authority, with Universal Solutions International, Inc. as private implementation partner, program integrator and operator and a performance period through April 30, 2029. Capability and facility language remains future-facing; the announcement does not establish fully commissioned BVLOS infrastructure or open public testing.",
       "development_last_verified_at": "2026-10-20",
       "development_notes": "Funded dual-site MIC implementation under the announced September 2026 MOA. Existing PHF airport and NNPRCC club operations are distinct from MIC commissioning. Project roles do not establish real-property ownership, visitor access, BVLOS permissions or completion of all proposed capabilities.",
       "development_source_url": "https://usi-inc.com/press-releases/universal-solutions-international-celebrates-launch-of-hampton-roads-mobility-innovation-center-initiative/",
@@ -14614,7 +14614,23 @@
       "test_runway_length_ft": 3000,
       "test_source_url": "https://www.vaspace.org/our-facilities",
       "unmanned_systems_relevance": "Dedicated UAS infrastructure with operator support for matching test and demonstration plans to site requirements.",
-      "website_url": "https://www.vaspace.org/our-facilities"
+      "website_url": "https://www.vaspace.org/our-facilities",
+      "test_max_weight_lb": null,
+      "test_max_span_ft": null,
+      "test_max_weight_exclusive": false,
+      "test_launch_methods": [
+        "runway",
+        "vertical"
+      ],
+      "test_activities": [
+        "flight"
+      ],
+      "test_access_types": [
+        "commercial",
+        "restricted"
+      ],
+      "test_suitability_source_url": "https://www.vaspace.org/our-facilities",
+      "test_suitability_reviewed_at": "2026-11-03"
     },
     {
       "address_line": "318 Prospect Street",
@@ -14769,7 +14785,7 @@
       "contact_phone": "",
       "contact_text": "Confirm current scope and access through the organization or host before operational planning.",
       "contact_url": "https://maxbyte.co/virginia-beach-4-0/",
-      "current_activity": "Maxbyte\u2019s current regional page lists Virginia Beach assessment, training and pilot programs and links a completed 2025 Industry 4.0 foundation program. Current onsite equipment availability and enrollment are not independently established.",
+      "current_activity": "Maxbyte’s current regional page lists Virginia Beach assessment, training and pilot programs and links a completed 2025 Industry 4.0 foundation program. Current onsite equipment availability and enrollment are not independently established.",
       "development_last_verified_at": "2026-10-20",
       "development_notes": "A November 14, 2024 City retrospective confirms the opening. Current operational availability requires confirmation; the September 6, 2024 announcement alone was prospective.",
       "development_source_url": "https://virginiabeach.gov/connect/blog/growth-matters-economic-development-fosters-business-expansions-and-offers-resources-for-small-businesses",
@@ -14794,7 +14810,7 @@
       "longitude": -76.099587,
       "missions": [],
       "name": "Maxbyte Industry 4.0 Centre of Excellence at TCC",
-      "overview": "The City of Virginia Beach reported that Maxbyte Technologies opened its Industry 4.0 Centre of Excellence at the Virginia Beach Workforce Training Center inside Tidewater Community College\u2019s Advanced Technology Center in 2024. Maxbyte\u2019s current regional page lists assessment, training and pilot programs for Virginia Beach manufacturing. The reviewed sources do not establish current onsite equipment availability or enrollment.",
+      "overview": "The City of Virginia Beach reported that Maxbyte Technologies opened its Industry 4.0 Centre of Excellence at the Virginia Beach Workforce Training Center inside Tidewater Community College’s Advanced Technology Center in 2024. Maxbyte’s current regional page lists assessment, training and pilot programs for Virginia Beach manufacturing. The reviewed sources do not establish current onsite equipment availability or enrollment.",
       "owner_operator": "Maxbyte Technologies with Virginia Beach Economic Development; hosted at the Virginia Beach Workforce Training Center / TCC Advanced Technology Center. Property ownership not established.",
       "partnership_opportunities": "Use the official organization or host contact route to discuss a specific research, training or industry collaboration.",
       "platform_domains": [],
@@ -14803,7 +14819,7 @@
       "record_type": "facility",
       "region": "Hampton Roads",
       "search_aliases": "Maxbyte\nMaxbyte Technologies\nMaxbyte Industry 4.0 Centre of Excellence\nIndustry 4.0 CoE",
-      "short_description": "Industry 4.0 manufacturing and engineering workforce center hosted at TCC\u2019s Advanced Technology Center in Virginia Beach.",
+      "short_description": "Industry 4.0 manufacturing and engineering workforce center hosted at TCC’s Advanced Technology Center in Virginia Beach.",
       "sources": [
         {
           "title": "Retrospective confirms CoE opened at named host.",
@@ -15596,7 +15612,21 @@
       "test_runway_length_ft": null,
       "test_source_url": "https://www.mitre.org/sites/default/files/2024-07/PR-24-2208-MITRE-National-Range.pdf",
       "unmanned_systems_relevance": "Supports repeatable evaluation of aircraft, ground robots, sensors, and communications before operational deployment, including public-safety scenarios and manufacturer/buyer validation.",
-      "website_url": "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range"
+      "website_url": "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range",
+      "test_max_weight_lb": null,
+      "test_max_span_ft": null,
+      "test_max_weight_exclusive": false,
+      "test_launch_methods": [],
+      "test_activities": [
+        "flight",
+        "counter-uas"
+      ],
+      "test_access_types": [
+        "research",
+        "partnership"
+      ],
+      "test_suitability_source_url": "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range",
+      "test_suitability_reviewed_at": "2026-11-03"
     },
     {
       "address_line": "",
@@ -16390,7 +16420,20 @@
       "test_last_verified_at": "2026-11-02",
       "test_source_url": "https://lmse.larc.nasa.gov/admin/public_docs/LPR-8715.5B_Final.pdf",
       "unmanned_systems_relevance": "An environment for validating autonomy and remote-operation concepts with real aircraft, complementing laboratory and human-in-the-loop simulation.",
-      "website_url": "https://csaob.larc.nasa.gov/roam/"
+      "website_url": "https://csaob.larc.nasa.gov/roam/",
+      "test_max_weight_lb": null,
+      "test_max_span_ft": null,
+      "test_max_weight_exclusive": false,
+      "test_launch_methods": [],
+      "test_activities": [
+        "flight",
+        "autonomy"
+      ],
+      "test_access_types": [
+        "research"
+      ],
+      "test_suitability_source_url": "https://lmse.larc.nasa.gov/admin/public_docs/LPR-8715.5B_Final.pdf",
+      "test_suitability_reviewed_at": "2026-11-03"
     },
     {
       "address_line": "Landing and Impact Research Facility, NASA Langley Research Center",
@@ -18115,7 +18158,7 @@
       "latitude": 37.169681,
       "location_last_verified_at": "2026-10-20",
       "location_method": "published",
-      "location_notes": "Official club GPS converted from 37\u00b010\u203210.85\u2033N, 76\u00b030\u203232.43\u2033W. Representative flying-field point, not a surveyed boundary, runway threshold, public launch permission or MIC operating footprint.",
+      "location_notes": "Official club GPS converted from 37°10′10.85″N, 76°30′32.43″W. Representative flying-field point, not a surveyed boundary, runway threshold, public launch permission or MIC operating footprint.",
       "location_precision": "site",
       "location_role": "test-site",
       "location_source_url": "https://newportnewsrc.org/",
@@ -18135,7 +18178,7 @@
       "record_type": "facility",
       "region": "Hampton Roads",
       "search_aliases": "NNPRCC\nNewport News Park Radio Control Club\nNewport News RC Club",
-      "short_description": "Members\u2019 model-aircraft flying field with a published 400-foot paved runway and 30-acre overfly area; a separate site in the planned MIC dual-site project.",
+      "short_description": "Members’ model-aircraft flying field with a published 400-foot paved runway and 30-acre overfly area; a separate site in the planned MIC dual-site project.",
       "sources": [
         {
           "title": "NNPRCC official field, member access, runway, amenities and GPS coordinates",
@@ -26489,7 +26532,17 @@
       "test_last_verified_at": "2026-11-02",
       "test_source_url": "https://abcrc.virginia.edu/permits-access-drones",
       "unmanned_systems_relevance": "Documented UAS imagery, RTK positioning and coastal field-research support. The drone program does not itself establish autonomous surface-vessel or undersea-vehicle capabilities.",
-      "website_url": "https://abcrc.virginia.edu/permits-access-drones"
+      "website_url": "https://abcrc.virginia.edu/permits-access-drones",
+      "test_max_weight_lb": null,
+      "test_max_span_ft": null,
+      "test_max_weight_exclusive": false,
+      "test_launch_methods": [],
+      "test_activities": [],
+      "test_access_types": [
+        "research"
+      ],
+      "test_suitability_source_url": "https://abcrc.virginia.edu/permits-access-drones",
+      "test_suitability_reviewed_at": "2026-11-03"
     },
     {
       "address_line": "Olsson Hall, 151 Engineer's Way",
@@ -29792,7 +29845,18 @@
       "test_last_verified_at": "2026-11-02",
       "test_source_url": "https://ictas.vt.edu/Facilities.html",
       "unmanned_systems_relevance": "Contained flight-testing and educational resource for university users and external projects meeting the operator's requirements.",
-      "website_url": "https://drones.ictas.vt.edu/dronepark.html"
+      "website_url": "https://drones.ictas.vt.edu/dronepark.html",
+      "test_max_weight_lb": null,
+      "test_max_span_ft": null,
+      "test_max_weight_exclusive": false,
+      "test_launch_methods": [],
+      "test_activities": [],
+      "test_access_types": [
+        "commercial",
+        "research"
+      ],
+      "test_suitability_source_url": "https://drones.ictas.vt.edu/dronepark.html",
+      "test_suitability_reviewed_at": "2026-11-03"
     },
     {
       "address_line": "33446 Research Drive",
@@ -32071,7 +32135,19 @@
       "test_runway_length_ft": null,
       "test_source_url": "https://xelevateus.com/leesburg-virginia/",
       "unmanned_systems_relevance": "Private range and workspace for small-UAS and ground-system integration, training, and demonstrations; not a general authorization for any advertised mission.",
-      "website_url": "https://xelevateus.com/leesburg-virginia/"
+      "website_url": "https://xelevateus.com/leesburg-virginia/",
+      "test_max_weight_lb": 55,
+      "test_max_span_ft": null,
+      "test_max_weight_exclusive": true,
+      "test_launch_methods": [],
+      "test_activities": [
+        "flight"
+      ],
+      "test_access_types": [
+        "commercial"
+      ],
+      "test_suitability_source_url": "https://xelevateus.com/leesburg-virginia/",
+      "test_suitability_reviewed_at": "2026-11-03"
     },
     {
       "address_line": "",
@@ -32126,7 +32202,19 @@
       "test_runway_length_ft": null,
       "test_source_url": "https://xelevateus.com/leesburg-virginia/",
       "unmanned_systems_relevance": "A documented mountain-terrain option for UAS evaluation; terrain-specific trial design is a potential use, not a published authorization for BVLOS or other restricted operations.",
-      "website_url": "https://xelevateus.com/leesburg-virginia/"
+      "website_url": "https://xelevateus.com/leesburg-virginia/",
+      "test_max_weight_lb": null,
+      "test_max_span_ft": null,
+      "test_max_weight_exclusive": false,
+      "test_launch_methods": [],
+      "test_activities": [
+        "flight"
+      ],
+      "test_access_types": [
+        "commercial"
+      ],
+      "test_suitability_source_url": "https://xelevateus.com/leesburg-virginia/",
+      "test_suitability_reviewed_at": "2026-11-03"
     },
     {
       "activity_last_verified_at": "2026-08-21",

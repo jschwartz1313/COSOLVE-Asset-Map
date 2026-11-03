@@ -16,6 +16,11 @@ from simple_history.models import HistoricalRecords
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 
 from .scoping import apply_public_scope
+from .testing import (
+    ACCESS_CHOICES,
+    ACTIVITY_CHOICES,
+    LAUNCH_CHOICES,
+)
 
 SPECIALIZED_HIGHER_ED_EXCLUSIONS = frozenset(
     {
@@ -184,6 +189,26 @@ class Asset(models.Model):
     test_last_verified_at = models.DateField(
         "Test-site source review date", null=True, blank=True
     )
+    test_max_weight_lb = models.DecimalField(
+        "Published maximum aircraft weight (lb)", max_digits=10, decimal_places=2,
+        null=True, blank=True, validators=[MinValueValidator(Decimal("0.01"))],
+    )
+    test_max_span_ft = models.DecimalField(
+        "Published maximum aircraft span / width (ft)", max_digits=8, decimal_places=2,
+        null=True, blank=True, validators=[MinValueValidator(Decimal("0.01"))],
+    )
+    test_max_weight_exclusive = models.BooleanField(
+        "Weight limit is strictly less than the stated value", default=False,
+    )
+    test_launch_methods = models.JSONField(default=list, blank=True)
+    test_activities = models.JSONField(default=list, blank=True)
+    test_access_types = models.JSONField(default=list, blank=True)
+    test_suitability_source_url = models.URLField(
+        "Structured criteria source", max_length=1000, blank=True,
+    )
+    test_suitability_reviewed_at = models.DateField(
+        "Structured criteria source checked", null=True, blank=True,
+    )
 
     address_line = models.CharField(max_length=240, blank=True)
     city = models.CharField(max_length=120, blank=True)
@@ -327,7 +352,31 @@ class Asset(models.Model):
                 errors["development_last_verified_at"] = (
                     "Development-readiness claims require a review date."
                 )
-        if self.has_test_details:
+        structured = (self.test_max_weight_lb, self.test_max_span_ft,
+                      self.test_launch_methods, self.test_activities, self.test_access_types)
+        for field, choices in (("test_launch_methods", LAUNCH_CHOICES),
+                               ("test_activities", ACTIVITY_CHOICES),
+                               ("test_access_types", ACCESS_CHOICES)):
+            values = getattr(self, field)
+            if (not isinstance(values, list) or any(not isinstance(v, str) for v in values)
+                    or any(v not in dict(choices) for v in values)
+                    or len(values) != len(set(values))):
+                errors[field] = "Choose distinct documented values from the available options."
+        if any(value is not None and value != [] for value in structured):
+            if not self.test_suitability_source_url:
+                errors["test_suitability_source_url"] = (
+                    "Structured criteria require a public source."
+                )
+            if not self.test_suitability_reviewed_at:
+                errors["test_suitability_reviewed_at"] = "Structured criteria require a check date."
+        if (self.test_suitability_reviewed_at
+                and self.test_suitability_reviewed_at > timezone.localdate()):
+            errors["test_suitability_reviewed_at"] = "The check date cannot be in the future."
+        if self.test_max_weight_exclusive and self.test_max_weight_lb is None:
+            errors["test_max_weight_lb"] = "An exclusive limit requires a published weight value."
+        if any(value not in (None, "") for value in (
+            self.test_aircraft, self.test_dimensions, self.test_runway_length_ft, self.test_access,
+        )):
             if not self.test_source_url:
                 errors["test_source_url"] = "Test-site specifications require a public source."
             if not self.test_last_verified_at:
@@ -387,7 +436,7 @@ class Asset(models.Model):
     def has_test_details(self):
         return any(value not in (None, "") for value in (
             self.test_aircraft, self.test_dimensions, self.test_runway_length_ft, self.test_access,
-        ))
+        )) or bool(self.test_suitability_source_url)
 
     @property
     def is_editorially_reviewed(self):
@@ -633,7 +682,7 @@ class SavedView(models.Model):
 
     def clean(self):
         allowed = {
-            "purpose", "activity", "test_specs", "min_runway", "portfolio",
+            "purpose", "activity", "test_specs", "min_runway", "access", "portfolio",
             "q",
             "record_type",
             "category",

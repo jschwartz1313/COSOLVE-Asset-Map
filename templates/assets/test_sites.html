@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Test-site search | COSOLVE{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/test-sites.css' %}">{% endblock %}
+{% block content %}
+<main id="main-content" class="test-sites-page">
+  <header class="test-sites-heading">
+    <div><a href="{% url 'core:map' %}">Asset map</a><h1>Find a test site</h1><p>Compare aircraft requirements with documented site specifications.</p></div>
+    <a href="{% url 'core:directory' %}?purpose=testing">Browse all testing assets</a>
+  </header>
+  <p class="test-sites-caution">Planning reference only. A documented criteria match does not confirm aircraft acceptance, site availability, airspace approval or flight authorization. Missing information remains unknown; confirm all requirements with the operator.</p>
+  <div class="test-sites-workspace">
+    <form method="get" class="test-site-form" id="test-requirements">
+      <h2>Requirements</h2>
+      {% if form.errors %}<div role="alert" tabindex="-1" class="test-search-errors">Check the highlighted requirements. No comparison has been made.</div>{% endif %}
+      {% for field in form %}<div class="test-site-field"><label for="{{ field.id_for_label }}">{{ field.label }}</label>{% if field.field.widget.input_type == 'select' %}<span class="filter-select">{{ field }}</span>{% else %}{{ field }}{% endif %}{{ field.errors }}</div>{% endfor %}
+      <div class="test-site-actions"><button class="button primary" type="submit">Compare sites</button><a class="button" href="{% url 'core:test-sites' %}">Clear</a></div>
+    </form>
+    <section aria-labelledby="test-results-heading" class="test-site-results">
+      <header class="test-results-heading"><h2 id="test-results-heading">{{ result_count }} site{{ result_count|pluralize }}</h2><div class="test-results-links"><a class="test-edit" href="#test-requirements">Edit requirements</a>{% if result_count %}<a href="?{{ download_query }}">Export comparison CSV</a>{% endif %}</div></header>
+      {% for row in page_obj %}
+      <article class="test-site-result">
+        <header><div><h3><a href="{{ row.asset.get_absolute_url }}">{{ row.asset.public_name }}</a></h3><p>{% if row.asset.city %}{{ row.asset.city }}, {{ row.asset.state }}{% elif row.asset.region %}{{ row.asset.region.name }}{% else %}Virginia{% endif %}{% if not row.asset.has_public_coordinates %} &middot; No confirmed map point{% endif %}</p></div><span class="test-outcome outcome-{{ row.state }}">{{ row.label }}</span></header>
+        <p class="test-site-access">{% for label in row.access_labels %}{{ label }}{% if not forloop.last %} &middot; {% endif %}{% empty %}Access conditions not documented{% endfor %}</p>
+        {% if row.checks %}<dl class="test-site-checks">{% for check in row.checks %}<div class="check-{{ check.status }}"><dt>{{ check.label }}</dt><dd><strong>{% if check.status == 'match' %}Documented{% elif check.status == 'conflict' %}Conflict{% else %}Unknown{% endif %}</strong><span>{{ check.text }}</span></dd></div>{% endfor %}</dl>{% else %}<p>{{ row.asset.short_description }}</p>{% endif %}
+        {% if row.asset.test_access %}<details class="test-operator-notes"><summary>Operator conditions</summary><p>{{ row.asset.test_access }}</p></details>{% endif %}
+        <footer><a href="{{ row.asset.get_absolute_url }}#contact-location-heading">Contact and full profile</a>{% if row.evidence_usable %}<span><a href="{{ row.asset.test_suitability_source_url }}" target="_blank" rel="noopener noreferrer">Criteria source</a> &middot; Checked {{ row.asset.test_suitability_reviewed_at|date:"M j, Y" }}</span>{% elif row.asset.test_source_url %}<a href="{{ row.asset.test_source_url }}" target="_blank" rel="noopener noreferrer">Published specifications</a>{% endif %}</footer>
+      </article>
+      {% empty %}<div class="empty-state"><h3>No sites shown</h3><p>{% if form.errors %}Correct the requirements to compare sites.{% else %}Change the access or outcome filter. Unknown specifications are not treated as confirmed matches.{% endif %}</p></div>{% endfor %}
+      {% if page_obj.paginator.num_pages > 1 %}<nav class="pagination" aria-label="Test-site pages">{% if page_obj.has_previous %}<a href="{% querystring page=page_obj.previous_page_number %}">Previous</a>{% endif %}<span>Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}</span>{% if page_obj.has_next %}<a href="{% querystring page=page_obj.next_page_number %}">Next</a>{% endif %}</nav>{% endif %}
+    </section>
+  </div>
+</main>
+<script type="module" src="{% static 'js/test-sites.js' %}?v=20261103-1"></script>
+{% endblock %}

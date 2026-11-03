@@ -28,7 +28,8 @@ test("active programs and published specifications are visible", async ({ page }
   await page.goto("/assets/virginia-tech-drone-park/");
   await expect(page.locator(".test-specifications")).toContainText("300 x 120 x 85");
   await expect(page.locator(".test-specifications")).toContainText("Not documented");
-  await expect(page.locator(".test-specifications a")).toHaveAttribute("href", /ictas\.vt\.edu/);
+  await expect(page.getByRole("link", {name:"Operator specification source", exact:true}))
+    .toHaveAttribute("href", /ictas\.vt\.edu/);
 });
 
 test("new resource controls and connection routes fit the standard design", async ({ page }, testInfo) => {

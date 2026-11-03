@@ -39,14 +39,25 @@
         {% if asset.has_test_details %}
         <div class="test-specifications profile-subsection">
           <h3>Testing and access</h3>
-          <dl class="test-spec-list">
+          {% if test_access_labels %}<p class="section-note">{% for label in test_access_labels %}{{ label }}{% if not forloop.last %} &middot; {% endif %}{% endfor %}</p>{% endif %}
+          {% if asset.test_source_url %}<dl class="test-spec-list">
             <div><dt>Platforms and testing scope</dt><dd>{{ asset.test_aircraft|default:"Not documented" }}</dd></div>
             <div><dt>Site and launch / recovery dimensions</dt><dd>{{ asset.test_dimensions|default:"Not documented" }}</dd></div>
             <div><dt>Published runway length</dt><dd>{% if asset.test_runway_length_ft %}{{ asset.test_runway_length_ft }} ft{% else %}Not documented{% endif %}</dd></div>
             <div><dt>Access and constraints</dt><dd>{{ asset.test_access|default:"Confirm directly with the operator" }}</dd></div>
-          </dl>
+          </dl>{% endif %}
           {% if asset.test_source_url %}<p class="section-note"><a href="{{ asset.test_source_url }}" target="_blank" rel="noopener noreferrer">Operator specification source</a>{% if asset.test_last_verified_at %} &middot; Source reviewed {{ asset.test_last_verified_at|date:"M j, Y" }}{% endif %}</p>{% endif %}
           <p class="field-note">Published specifications are not flight authorization or confirmation that a particular aircraft can operate here. Confirm suitability, availability, and approvals with the operator.</p>
+          {% if test_criteria_supported %}<details class="detail-disclosure"><summary>Searchable site criteria</summary>
+            <dl class="test-spec-list">
+              {% if asset.test_max_weight_lb %}<div><dt>Published weight limit</dt><dd>{% if asset.test_max_weight_exclusive %}Under{% else %}Maximum{% endif %} {{ asset.test_max_weight_lb|floatformat:"-2" }} lb</dd></div>{% endif %}
+              {% if asset.test_max_span_ft %}<div><dt>Published span / width limit</dt><dd>{{ asset.test_max_span_ft|floatformat:"-2" }} ft</dd></div>{% endif %}
+              {% if test_launch_labels %}<div><dt>Launch / recovery</dt><dd>{{ test_launch_labels|join:", " }}</dd></div>{% endif %}
+              {% if test_activity_labels %}<div><dt>Testing activities</dt><dd>{{ test_activity_labels|join:", " }}</dd></div>{% endif %}
+            </dl>
+            <p class="section-note"><a href="{{ asset.test_suitability_source_url }}" target="_blank" rel="noopener noreferrer">Criteria source</a> &middot; Checked {{ asset.test_suitability_reviewed_at|date:"M j, Y" }}</p>
+            <a href="{% url 'core:test-sites' %}">Compare aircraft requirements</a>
+          </details>{% endif %}
         </div>
         {% endif %}
         {% if asset.owner_operator or asset.available_acreage or asset.development_status or asset.development_notes or asset.infrastructure_access %}

@@ -1,6 +1,7 @@
 import csv
 from datetime import timedelta
 
+from django import forms
 from django.contrib import admin, messages
 from django.contrib.auth import get_user_model
 from django.contrib.auth.admin import UserAdmin as DjangoUserAdmin
@@ -21,6 +22,26 @@ from .models import (
     Relationship,
     UpdateSubmission,
 )
+from .testing import ACCESS_CHOICES, ACTIVITY_CHOICES, LAUNCH_CHOICES
+
+
+class AssetAdminForm(forms.ModelForm):
+    test_access_types = forms.MultipleChoiceField(
+        label="Documented access", choices=ACCESS_CHOICES, required=False,
+        widget=forms.CheckboxSelectMultiple,
+    )
+    test_launch_methods = forms.MultipleChoiceField(
+        label="Documented launch / recovery", choices=LAUNCH_CHOICES, required=False,
+        widget=forms.CheckboxSelectMultiple,
+    )
+    test_activities = forms.MultipleChoiceField(
+        label="Documented testing activities", choices=ACTIVITY_CHOICES, required=False,
+        widget=forms.CheckboxSelectMultiple,
+    )
+
+    class Meta:
+        model = Asset
+        fields = ()
 
 
 class SourceInline(admin.TabularInline):
@@ -220,6 +241,7 @@ def export_selected(modeladmin, request, queryset):
 
 @admin.register(Asset)
 class AssetAdmin(SimpleHistoryAdmin):
+    form = AssetAdminForm
     list_display = (
         "asset_name",
         "record_type",
@@ -322,6 +344,17 @@ class AssetAdmin(SimpleHistoryAdmin):
                     "Do not imply flight authorization or aircraft suitability."
                 ),
             },
+        ),
+        (
+            "Structured test-site criteria",
+            {"fields": ("test_max_weight_lb", "test_max_weight_exclusive", "test_max_span_ft",
+                        "test_launch_methods",
+                        "test_activities", "test_access_types", "test_suitability_source_url",
+                        "test_suitability_reviewed_at"),
+             "description": "Transcribe explicit operator statements only. Do not infer aircraft "
+                            "limits from acreage, runway dimensions, or a COA. "
+                            "Leave unknowns blank. "
+                            "Link the source as a public source record to enable matching."},
         ),
         (
             "Economic development and site readiness",

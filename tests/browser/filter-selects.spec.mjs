@@ -57,7 +57,8 @@ test("directory filters and sorting preserve native form submissions", async ({ 
   const form = page.locator(".directory-filters form");
   const resource = form.getByRole("combobox", { name: "Find resources", exact: true });
   await expect(face(resource)).toHaveText("Business support and partnerships");
-  await expect(form.locator(".filter-select.is-enhanced")).toHaveCount(5);
+  await expect(form.locator(".filter-select.is-enhanced")).toHaveCount(6);
+  await expect(form.locator('select[name="access"]')).toHaveValue("");
   await resource.selectOption("workforce");
   await form.getByRole("button", { name: "Apply filters", exact: true }).click();
   await expect(resource).toHaveValue("workforce");

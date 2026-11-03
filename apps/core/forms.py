@@ -1,9 +1,35 @@
+from decimal import Decimal
+
 from allauth.account.forms import ResetPasswordForm
 from django import forms
 from django.conf import settings
 from django.core.exceptions import ValidationError
 
 from apps.assets.models import SavedView, UpdateSubmission
+from apps.assets.testing import ACCESS_CHOICES, ACTIVITY_CHOICES, LAUNCH_CHOICES
+
+
+class TestSiteSearchForm(forms.Form):
+    weight = forms.DecimalField(label="Aircraft weight (lb)", required=False,
+                                min_value=Decimal("0.01"), max_value=Decimal("1000000"),
+                                max_digits=10, decimal_places=2)
+    span = forms.DecimalField(label="Aircraft span / width (ft)", required=False,
+                              min_value=Decimal("0.01"), max_value=Decimal("10000"),
+                              max_digits=8, decimal_places=2)
+    launch = forms.ChoiceField(label="Launch / recovery", required=False,
+                               choices=[("", "Any launch method"), *LAUNCH_CHOICES])
+    runway = forms.IntegerField(label="Required runway (ft)", required=False,
+                                min_value=1, max_value=100000)
+    activity = forms.ChoiceField(label="Testing activity", required=False,
+                                 choices=[("", "Any testing activity"), *ACTIVITY_CHOICES])
+    access = forms.ChoiceField(label="Documented access", required=False,
+                               choices=[("", "All access conditions"), *ACCESS_CHOICES,
+                                        ("undocumented", "Not documented")])
+    outcome = forms.ChoiceField(label="Results", required=False,
+                                choices=[("", "All outcomes"),
+                                         ("match", "Documented criteria match"),
+                                         ("unknown", "Needs confirmation"),
+                                         ("conflict", "Published limit conflict")])
 
 
 class SiteResetPasswordForm(ResetPasswordForm):

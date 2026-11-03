@@ -3,6 +3,7 @@ from django.db.models import Q
 from apps.assets.discovery import RESOURCE_QUERIES
 from apps.assets.models import Asset
 from apps.assets.scoping import public_region_slug
+from apps.assets.testing import filter_access
 
 from .search import PUBLIC_NAME_ORDER, apply_search
 
@@ -56,6 +57,8 @@ def filter_public_assets(params, include_related=True):
             queryset = queryset.filter(test_runway_length_ft__gte=int(runway))
         else:
             return queryset.none()
+    if params.get("access"):
+        queryset = filter_access(queryset, params["access"])
     query = params.get("q", "").strip()
     if query:
         queryset = apply_search(queryset, query)
@@ -74,7 +77,7 @@ def active_filters(params):
         filters["q"] = params["q"]
     if params.get("portfolio") == "vipc":
         filters["portfolio"] = "vipc"
-    for key in ("purpose", "test_specs", "min_runway"):
+    for key in ("purpose", "test_specs", "min_runway", "access"):
         if params.get(key):
             filters[key] = params[key]
     return {key: value for key, value in filters.items() if value}

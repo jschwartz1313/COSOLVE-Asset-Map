@@ -1,5 +1,6 @@
 from apps.assets.discovery import TEST_SPEC_FIELDS
 from apps.assets.models import Asset
+from apps.assets.testing import STRUCTURED_TEST_FIELDS, evidence_usable
 
 
 def location_context(asset):
@@ -16,8 +17,11 @@ def location_context(asset):
 
 
 def test_specifications(asset):
+    supported = evidence_usable(asset, asset.test_suitability_source_url,
+                                asset.test_suitability_reviewed_at)
     return {
-        field: (value.isoformat() if hasattr(value, "isoformat") else value)
+        field: (None if field in STRUCTURED_TEST_FIELDS and not supported
+                else value.isoformat() if hasattr(value, "isoformat") else value)
         for field in TEST_SPEC_FIELDS
         for value in [getattr(asset, field)]
     }

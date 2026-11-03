@@ -1,5 +1,6 @@
 import csv
 import io
+import json
 from datetime import date
 from decimal import Decimal, InvalidOperation
 
@@ -8,6 +9,7 @@ from django.core.validators import EmailValidator, URLValidator
 
 from apps.assets.discovery import IDENTITY_FIELDS, LOCATION_EVIDENCE_FIELDS, TEST_SPEC_FIELDS
 from apps.assets.models import Asset
+from apps.assets.testing import STRUCTURED_TEST_FIELDS, evidence_usable
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 from apps.sources.models import Source
 
@@ -88,6 +90,13 @@ def prepare_import_asset(data, asset=None):
         value = data[name]
         if not value:
             value = None if field.null else field.get_default() if field.has_default() else ""
+        if field.get_internal_type() == "JSONField" and isinstance(value, str):
+            try:
+                value = json.loads(value)
+            except ValueError as error:
+                raise ValidationError({
+                    name: "Use a JSON list of documented option codes.",
+                }) from error
         setattr(asset, name, value)
     if is_new and data.get("slug"):
         asset.slug = data["slug"]
@@ -119,9 +128,19 @@ def joined_slugs(items):
 
 def asset_csv_row(asset, include_internal=False):
     sources = [source for source in asset.sources.all() if include_internal or source.is_public]
+    supported = include_internal or evidence_usable(
+        asset, asset.test_suitability_source_url, asset.test_suitability_reviewed_at,
+    )
+
+    def specification_value(name):
+        value = getattr(asset, name)
+        if name in STRUCTURED_TEST_FIELDS and not supported:
+            value = asset._meta.get_field(name).get_default()
+        return json.dumps(value) if isinstance(value, list) else value if value is not None else ""
+
     return {
         **{
-            field: (getattr(asset, field) if getattr(asset, field) is not None else "")
+            field: specification_value(field)
             for field in (*TEST_SPEC_FIELDS, *IDENTITY_FIELDS, *LOCATION_EVIDENCE_FIELDS)
         },
         "slug": asset.slug,

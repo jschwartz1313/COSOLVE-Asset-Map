@@ -25,6 +25,7 @@ from scripts.build_real_asset_catalog import (
     OCTOBER_WEBSITE_CORRECTIONS_PATH,
     TEST_CAPABILITY_PROFILES_PATH,
     TEST_ENVIRONMENT_EXPANSION_PATH,
+    TEST_SITE_CRITERIA_PATH,
     apply_reviewed_corrections,
     finalize_record,
     validate,
@@ -79,9 +80,10 @@ class TestEnvironmentManifestTests(SimpleTestCase):
         for record in additions["records"]:
             with self.subTest(name=record["name"]):
                 expected = finalize_record(deepcopy(record))
-                followups = [c for c in json.loads(NOVEMBER_REFERENCE_PROFILES_PATH.read_text())[
-                    "corrections"
-                ] if c["name"] == record["name"]]
+                paths = (NOVEMBER_REFERENCE_PROFILES_PATH, TEST_SITE_CRITERIA_PATH)
+                followups = [c for path in paths
+                             for c in json.loads(path.read_text())["corrections"]
+                             if c["name"] == record["name"]]
                 apply_reviewed_corrections([expected], followups)
                 self.assertEqual(by_name[record["name"]], expected)
                 self.assertIsNone(record["test_runway_length_ft"])

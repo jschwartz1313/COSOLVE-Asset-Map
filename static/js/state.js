@@ -1,4 +1,4 @@
-export const FILTER_KEYS = ["q", "purpose", "record_type", "region", "category", "domain", "capability", "mission", "activity", "test_specs", "min_runway", "portfolio"];
+export const FILTER_KEYS = ["q", "purpose", "record_type", "region", "category", "domain", "capability", "mission", "activity", "test_specs", "min_runway", "access", "portfolio"];
 
 export function paramsFromEntries(entries) {
   const params = new URLSearchParams();

@@ -9,6 +9,7 @@ from django.db.models import Q
 
 from apps.assets.discovery import IDENTITY_FIELDS, LOCATION_EVIDENCE_FIELDS
 from apps.assets.models import Asset, Relationship
+from apps.assets.testing import STRUCTURED_TEST_FIELDS
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 from apps.sources.models import Source
 
@@ -195,6 +196,9 @@ class Command(BaseCommand):
                 date.fromisoformat(record["test_last_verified_at"])
                 if record.get("test_last_verified_at") else None
             )
+            for name in STRUCTURED_TEST_FIELDS:
+                field = asset._meta.get_field(name)
+                setattr(asset, name, field.to_python(record.get(name, field.get_default())))
             asset.development_last_verified_at = (
                 date.fromisoformat(record["development_last_verified_at"])
                 if record.get("development_last_verified_at")

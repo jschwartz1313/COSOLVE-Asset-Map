@@ -9,6 +9,7 @@ from django.db import transaction
 
 from apps.assets.discovery import TEST_SPEC_FIELDS
 from apps.assets.models import Asset
+from apps.assets.testing import STRUCTURED_TEST_FIELDS
 from apps.catalog.models import Capability, PlatformDomain, Region, StrategicCategory
 from apps.sources.models import Source
 
@@ -37,7 +38,10 @@ PROFILE_FIELDS = (
     "development_source_url",
     "development_last_verified_at",
 )
-DATE_FIELDS = {"activity_last_verified_at", "development_last_verified_at", "test_last_verified_at"}
+DATE_FIELDS = {"activity_last_verified_at", "development_last_verified_at", "test_last_verified_at",
+               "test_suitability_reviewed_at"}
+LEGACY_TEST_SPEC_FIELDS = tuple(field for field in TEST_SPEC_FIELDS
+                                if field not in STRUCTURED_TEST_FIELDS)
 LOCATION_CONTEXT_FIELDS = (
     "location_role", "location_method", "location_notes", "location_source_url",
     "location_last_verified_at",
@@ -417,9 +421,9 @@ class Command(BaseCommand):
                 )
             )
             if test_source_url and not test_source_blocked and not any(
-                getattr(asset, field) not in (None, "") for field in TEST_SPEC_FIELDS
+                getattr(asset, field) not in (None, "") for field in LEGACY_TEST_SPEC_FIELDS
             ):
-                for field in TEST_SPEC_FIELDS:
+                for field in LEGACY_TEST_SPEC_FIELDS:
                     if record.get(field) not in (None, ""):
                         value = record[field]
                         if field in DATE_FIELDS:

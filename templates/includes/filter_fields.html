@@ -11,7 +11,7 @@
   <input type="search" name="q" value="{{ request.GET.q }}" placeholder="Name, capability, city">
 </label>
 
-<details class="project-site-filters" {% if request.GET.activity or request.GET.test_specs or request.GET.min_runway %}open{% endif %}>
+<details class="project-site-filters" {% if request.GET.activity or request.GET.test_specs or request.GET.min_runway or request.GET.access %}open{% endif %}>
   <summary>Project and site details</summary>
   <div class="project-site-fields">
     <label><span>Activity status</span><span class="filter-select"><select name="activity">
@@ -21,6 +21,12 @@
     </select></span></label>
     <label class="check-row"><input type="checkbox" name="test_specs" value="1" {% if request.GET.test_specs == "1" %}checked{% endif %}><span>Published test-site specifications</span></label>
     <label><span>Minimum published runway (ft)</span><input type="number" name="min_runway" min="1" max="100000" step="1" value="{{ request.GET.min_runway }}" placeholder="No minimum"></label>
+    <label><span>Documented test-site access</span><span class="filter-select"><select name="access">
+      <option value="">All access conditions</option>
+      {% for value, label in test_access_choices %}<option value="{{ value }}" {% if request.GET.access == value %}selected{% endif %}>{{ label }}</option>{% endfor %}
+      <option value="undocumented" {% if request.GET.access == 'undocumented' %}selected{% endif %}>Not documented</option>
+    </select></span></label>
+    <a href="{% url 'core:test-sites' %}">Compare aircraft requirements</a>
   </div>
 </details>
 

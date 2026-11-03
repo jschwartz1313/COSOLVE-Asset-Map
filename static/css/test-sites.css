@@ -1,0 +1,54 @@
+.test-sites-page { max-width: 1380px; margin: 0 auto; padding: 28px 24px 48px; }
+.test-sites-heading { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.test-sites-heading h1 { font-size: 28px; margin: 10px 0; }
+.test-sites-heading p { color: var(--ink-muted); margin: 0; }
+.test-sites-heading > a { font-size: 13px; }
+.test-sites-caution { border-left: 3px solid var(--line); padding: 10px 14px; margin: 22px 0; font-size: 13px; line-height: 1.6; color: var(--ink-muted); background: var(--paper); }
+.test-sites-workspace { display: grid; grid-template-columns: minmax(220px, 280px) minmax(0, 1fr); gap: 30px; align-items: start; }
+.test-site-form { border-right: 1px solid var(--line); padding-right: 24px; min-width: 0; }
+.test-site-form h2, .test-site-results h2 { font-size: 18px; margin: 0 0 18px; }
+.test-site-field { display: grid; gap: 5px; margin-bottom: 12px; min-width: 0; }
+.test-site-form label { font-size: 13px; font-weight: 600; }
+.test-site-form input { width: 100%; min-width: 0; padding: 10px; border: 1px solid var(--line); border-radius: 4px; background: var(--paper); color: var(--ink); }
+.test-site-form .errorlist, .test-search-errors { color: #a32d24; font-size: 13px; padding-left: 0; list-style: none; }
+.test-site-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.test-results-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--line); }
+.test-results-heading a { font-size: 13px; }
+.test-results-links { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.test-edit { display: none; }
+.test-site-result { padding: 22px 0; border-bottom: 1px solid var(--line); }
+.test-site-result > header { display: flex; justify-content: space-between; align-items: start; gap: 16px; }
+.test-site-result > header > div { min-width: 0; }
+.test-site-result h3 { font-size: 17px; line-height: 1.4; margin: 0 0 6px; }
+.test-site-result h3 a { text-decoration: none; }
+.test-site-result h3 a:hover { text-decoration: underline; }
+.test-site-result p { font-size: 13px; line-height: 1.6; margin: 4px 0 12px; }
+.test-site-result header p, .test-site-access { color: var(--ink-muted); }
+.test-outcome { flex-shrink: 0; max-width: 190px; font-size: 12px; font-weight: 700; border-left: 3px solid var(--line); padding: 4px 8px; line-height: 1.5; }
+.outcome-match { border-color: #327560; color: #245442; }
+.outcome-unknown { border-color: #a87a26; color: #78551b; }
+.outcome-conflict { border-color: #b54132; color: #9c3024; }
+.test-site-checks { margin: 14px 0; }
+.test-site-checks > div { display: grid; grid-template-columns: minmax(100px, 160px) minmax(0, 1fr); gap: 12px; padding: 7px 0; font-size: 13px; border-bottom: 1px solid var(--line); }
+.test-site-checks dt { font-weight: 600; }
+.test-site-checks > div:last-child { border-bottom: 0; }
+.test-site-checks dd { display: flex; flex-wrap: wrap; gap: 4px 12px; margin: 0; }
+.test-site-checks dd strong { min-width: 85px; font-size: 12px; }
+.test-site-checks .check-match strong { color: #245442; }
+.test-site-checks .check-unknown strong { color: #78551b; }
+.test-site-checks .check-conflict strong { color: #9c3024; }
+.test-operator-notes { font-size: 13px; margin: 12px 0; border: 0; padding: 0; }
+.test-site-result footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px 20px; font-size: 12px; }
+.test-sites-page :is(h1,h2,h3,p,span,dd,a) { overflow-wrap: anywhere; }
+@media (max-width: 700px) {
+  .test-sites-page { padding: 22px 16px 40px; }
+  .test-sites-heading { display: block; }
+  .test-sites-heading > a { display: inline-block; margin-top: 14px; }
+  .test-sites-workspace { grid-template-columns: minmax(0, 1fr); gap: 26px; }
+  .test-site-form { border-right: 0; border-bottom: 1px solid var(--line); padding: 0 0 22px; }
+  .test-site-result > header { flex-direction: column; gap: 4px; }
+  .test-site-checks > div { grid-template-columns: minmax(0, 1fr); gap: 5px; }
+  .test-outcome { max-width: 100%; }
+  .test-edit { display: inline; }
+  .test-results-heading { align-items: start; }
+}

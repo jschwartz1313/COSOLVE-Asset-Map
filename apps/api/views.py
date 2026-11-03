@@ -5,6 +5,7 @@ from django.views.decorators.http import require_GET
 
 from apps.assets.discovery import RESOURCE_CHOICES
 from apps.assets.models import Asset
+from apps.assets.testing import ACCESS_CHOICES
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 
 from .query import active_filters, filter_public_assets
@@ -86,6 +87,7 @@ def filter_values(request):
                 {"slug": value, "name": label} for value, label in Asset.RecordType.choices
             ],
             "resources": [{"slug": value, "name": label} for value, label in RESOURCE_CHOICES],
+            "access_types": [{"slug": value, "name": label} for value, label in ACCESS_CHOICES],
             "activity_statuses": [
                 {"slug": value, "name": label} for value, label in Asset.ActivityStatus.choices
             ] + [{"slug": "undocumented", "name": "Not documented"}],
