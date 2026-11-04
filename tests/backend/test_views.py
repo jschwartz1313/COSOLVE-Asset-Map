@@ -67,6 +67,69 @@ class CoreViewTests(TestCase):
     def test_health_endpoint(self):
         self.assertEqual(self.client.get(reverse("core:health")).json(), {"status": "ok"})
 
+    def test_public_maintenance_dates_are_hidden_but_evidence_is_preserved(self):
+        reviewed_on = date(2026, 8, 6)
+        checked_at = timezone.now()
+        evidence_url = "https://operator.example/specifications"
+        asset = Asset.objects.create(
+            name="Dated public test site",
+            record_type=Asset.RecordType.FACILITY,
+            short_description="A documented aircraft testing site.",
+            unmanned_systems_relevance="Supports UAS research.",
+            current_activity="Documented aircraft testing.",
+            activity_source_url=evidence_url,
+            activity_last_verified_at=reviewed_on,
+            development_notes="An existing research facility.",
+            development_source_url=evidence_url,
+            development_last_verified_at=reviewed_on,
+            location_source_url=evidence_url,
+            location_last_verified_at=reviewed_on,
+            test_aircraft="Unmanned aircraft.",
+            test_source_url=evidence_url,
+            test_last_verified_at=reviewed_on,
+            test_max_weight_lb=55,
+            test_suitability_source_url=evidence_url,
+            test_suitability_reviewed_at=reviewed_on,
+            status=Asset.Status.SOURCE_BACKED,
+            visibility=Asset.Visibility.PUBLIC,
+        )
+        source = Source.objects.create(
+            asset=asset,
+            title="Operator specifications",
+            url=evidence_url,
+            is_public=True,
+            source_date=date(2024, 1, 2),
+            last_checked_at=checked_at,
+        )
+        for name in (
+            "core:map", "core:directory", "core:about-data", "core:connect",
+            "core:test-sites", "core:asset-detail",
+        ):
+            with self.subTest(page=name):
+                url = reverse(name, args=[asset.slug] if name == "core:asset-detail" else [])
+                response = self.client.get(url)
+                for label in (
+                    "Catalog updated", "Record updated", "Latest source-link check",
+                    "Source reviewed", "Reviewed Aug 6, 2026", "Checked Aug 6, 2026",
+                    "Link checked", "Public routes reviewed",
+                ):
+                    self.assertNotContains(response, label)
+
+        profile = self.client.get(asset.get_absolute_url())
+        self.assertContains(profile, "Published Jan 2, 2024")
+        self.assertContains(profile, 'href="https://operator.example/specifications"')
+        self.assertContains(profile, "Operator specification source")
+        self.assertContains(profile, "Criteria source")
+        asset.refresh_from_db()
+        for field in (
+            "activity_last_verified_at", "development_last_verified_at",
+            "location_last_verified_at", "test_last_verified_at",
+            "test_suitability_reviewed_at",
+        ):
+            self.assertEqual(getattr(asset, field), reviewed_on)
+        source.refresh_from_db()
+        self.assertEqual(source.last_checked_at, checked_at)
+
     def test_directory_renders_without_javascript(self):
         response = self.client.get(reverse("core:directory"), {"q": "test"})
         self.assertContains(response, "Asset directory")

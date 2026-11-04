@@ -65,7 +65,6 @@
         {% if user.is_authenticated %}<a href="{% url 'mfa_index' %}">Account security</a>{% endif %}
       </nav>
       <div class="footer-meta">
-        {% if catalog_last_updated %}<span>Catalog updated {{ catalog_last_updated|date:"M j, Y" }}</span>{% endif %}
         <details class="footer-disclaimer">
           <summary>Data disclaimer</summary>
           <p>This public-source inventory supports ecosystem research and planning. Records may be incomplete, generalized, or change over time. Counts, rates, and percentages reflect the current documented inventory and its review state; a low or zero count may indicate a catalog coverage gap or a smaller documented footprint and does not establish that a real-world capability is absent. Do not use this inventory for navigation, flight authorization, security planning, facility access, or operational decisions.</p>

@@ -33,7 +33,7 @@
           {% if asset.activity_status %}<p class="section-kicker">{{ asset.get_activity_status_display }}</p>{% endif %}
           {% if asset.current_activity %}<p>{{ asset.current_activity }}</p>{% endif %}
           {% if asset.partnership_opportunities %}<p class="collaboration-note"><strong>Collaboration</strong> {{ asset.partnership_opportunities }}</p>{% endif %}
-          {% if asset.activity_source_url %}<p class="section-note"><a href="{{ asset.activity_source_url }}" target="_blank" rel="noopener noreferrer">Activity source</a>{% if asset.activity_last_verified_at %} &middot; Reviewed {{ asset.activity_last_verified_at|date:"M j, Y" }}{% endif %}</p>{% endif %}
+          {% if asset.activity_source_url %}<p class="section-note"><a href="{{ asset.activity_source_url }}" target="_blank" rel="noopener noreferrer">Activity source</a></p>{% endif %}
         </div>
         {% endif %}
         {% if asset.has_test_details %}
@@ -46,7 +46,7 @@
             <div><dt>Published runway length</dt><dd>{% if asset.test_runway_length_ft %}{{ asset.test_runway_length_ft }} ft{% else %}Not documented{% endif %}</dd></div>
             <div><dt>Access and constraints</dt><dd>{{ asset.test_access|default:"Confirm directly with the operator" }}</dd></div>
           </dl>{% endif %}
-          {% if asset.test_source_url %}<p class="section-note"><a href="{{ asset.test_source_url }}" target="_blank" rel="noopener noreferrer">Operator specification source</a>{% if asset.test_last_verified_at %} &middot; Source reviewed {{ asset.test_last_verified_at|date:"M j, Y" }}{% endif %}</p>{% endif %}
+          {% if asset.test_source_url %}<p class="section-note"><a href="{{ asset.test_source_url }}" target="_blank" rel="noopener noreferrer">Operator specification source</a></p>{% endif %}
           <p class="field-note">Published specifications are not flight authorization or confirmation that a particular aircraft can operate here. Confirm suitability, availability, and approvals with the operator.</p>
           {% if test_criteria_supported %}<details class="detail-disclosure"><summary>Searchable site criteria</summary>
             <dl class="test-spec-list">
@@ -55,7 +55,7 @@
               {% if test_launch_labels %}<div><dt>Launch / recovery</dt><dd>{{ test_launch_labels|join:", " }}</dd></div>{% endif %}
               {% if test_activity_labels %}<div><dt>Testing activities</dt><dd>{{ test_activity_labels|join:", " }}</dd></div>{% endif %}
             </dl>
-            <p class="section-note"><a href="{{ asset.test_suitability_source_url }}" target="_blank" rel="noopener noreferrer">Criteria source</a> &middot; Checked {{ asset.test_suitability_reviewed_at|date:"M j, Y" }}</p>
+            <p class="section-note"><a href="{{ asset.test_suitability_source_url }}" target="_blank" rel="noopener noreferrer">Criteria source</a></p>
             <a href="{% url 'core:test-sites' %}">Compare aircraft requirements</a>
           </details>{% endif %}
         </div>
@@ -70,7 +70,7 @@
             {% if asset.infrastructure_access %}<div><dt>Access and infrastructure</dt><dd>{{ asset.infrastructure_access }}</dd></div>{% endif %}
             {% if asset.development_notes %}<div><dt>Development notes</dt><dd>{{ asset.development_notes }}</dd></div>{% endif %}
           </dl>
-          {% if asset.development_source_url %}<p class="section-note"><a href="{{ asset.development_source_url }}" target="_blank" rel="noopener noreferrer">Development source</a>{% if asset.development_last_verified_at %} &middot; Reviewed {{ asset.development_last_verified_at|date:"M j, Y" }}{% endif %}</p>{% endif %}
+          {% if asset.development_source_url %}<p class="section-note"><a href="{{ asset.development_source_url }}" target="_blank" rel="noopener noreferrer">Development source</a></p>{% endif %}
           <p class="field-note">Published acreage and plans do not guarantee current availability. Confirm directly with the owner or operator.</p>
         </div>
         {% endif %}
@@ -108,12 +108,12 @@
           {% if asset.location_method or asset.location_source_url %}
           <section class="location-evidence">
             <h3>Location evidence</h3>
-            <dl>{% if asset.location_method %}<dt>Coordinate basis</dt><dd>{{ asset.get_location_method_display }}</dd>{% endif %}{% if asset.location_source_url %}<dt>Public source</dt><dd><a href="{{ asset.location_source_url }}" target="_blank" rel="noopener noreferrer">View location source</a>{% if asset.location_last_verified_at %}<span>Reviewed {{ asset.location_last_verified_at|date:"M j, Y" }}</span>{% endif %}</dd>{% endif %}</dl>
+            <dl>{% if asset.location_method %}<dt>Coordinate basis</dt><dd>{{ asset.get_location_method_display }}</dd>{% endif %}{% if asset.location_source_url %}<dt>Public source</dt><dd><a href="{{ asset.location_source_url }}" target="_blank" rel="noopener noreferrer">View location source</a></dd>{% endif %}</dl>
           </section>
           {% endif %}
           <section class="sources-section">
             <h3>Sources <small>{{ public_sources|length }} public source{{ public_sources|length|pluralize }}</small></h3>
-            <div class="source-list">{% for source in public_sources %}<div><strong>{% if source.url %}<a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.title }}</a>{% else %}{{ source.title }}{% endif %}</strong><span>{{ source.get_verification_status_display }}{% if source.source_date %} &middot; Published {{ source.source_date|date:"M j, Y" }}{% endif %}{% if source.last_checked_at %} &middot; Link checked {{ source.last_checked_at|date:"M j, Y" }}{% endif %}</span></div>{% empty %}<p>No public sources are listed.</p>{% endfor %}</div>
+            <div class="source-list">{% for source in public_sources %}<div><strong>{% if source.url %}<a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.title }}</a>{% else %}{{ source.title }}{% endif %}</strong><span>{{ source.get_verification_status_display }}{% if source.source_date %} &middot; Published {{ source.source_date|date:"M j, Y" }}{% endif %}</span></div>{% empty %}<p>No public sources are listed.</p>{% endfor %}</div>
           </section>
           {% if relationships %}<section class="connections-section"><h3>Related assets</h3><div class="relationship-list">{% for relationship in relationships|slice:":12" %}<a href="{{ relationship.to_asset.get_absolute_url }}"><span>{{ relationship.get_relationship_type_display }}</span><strong>{{ relationship.to_asset.public_name }}</strong></a>{% endfor %}</div>{% if relationship_count > 12 %}<p class="section-note">Showing 12 of {{ relationship_count }} documented connections.</p>{% endif %}</section>{% endif %}
           {% if incoming_relationships %}<section class="connections-section"><h3>Connected organizations and programs</h3><div class="relationship-list">{% for relationship in incoming_relationships|slice:":12" %}<a href="{{ relationship.from_asset.get_absolute_url }}"><span>{{ relationship.incoming_label }}</span><strong>{{ relationship.from_asset.public_name }}</strong></a>{% endfor %}</div>{% if incoming_relationship_count > 12 %}<p class="section-note">Showing 12 of {{ incoming_relationship_count }} documented connections.</p>{% endif %}</section>{% endif %}

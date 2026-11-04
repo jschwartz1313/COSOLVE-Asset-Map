@@ -809,7 +809,8 @@ test("update workflow and institutional footer remain within the viewport", asyn
   await page.goto("/suggest-update/");
   await expect(page.getByRole("heading", { name: "Suggest an update" })).toBeVisible();
   await expect(page.getByLabel("Request type")).toBeVisible();
-  await expect(page.getByRole("contentinfo")).toContainText("Catalog updated");
+  await expect(page.getByRole("contentinfo")).not.toContainText("Catalog updated");
+  await expect(page.getByRole("contentinfo").getByText("Data disclaimer", {exact:true})).toBeVisible();
   expect(
     await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth),
   ).toBe(true);
