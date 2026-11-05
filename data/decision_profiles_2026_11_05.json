@@ -503,6 +503,17 @@
     {
       "name": "Heven AeroTech Headquarters",
       "provenance": "curated-public-source",
+      "accepted_baselines": [
+        {
+          "overview": "Virginia headquarters for a developer of hydrogen-powered and other unmanned aerial systems. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+          "contact_email": "info@hevenaerotech.com",
+          "contact_phone": "877-726-6269",
+          "contact_text": "Organization public information and inquiries",
+          "partnership_opportunities": "",
+          "activity_source_url": "",
+          "activity_last_verified_at": null
+        }
+      ],
       "before": {
         "overview": "Virginia headquarters for a developer of hydrogen-powered and other unmanned aerial systems. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
         "contact_email": "info@hevenaerotech.com",
@@ -569,6 +580,19 @@
     {
       "name": "Commonwealth Center for Advanced Manufacturing",
       "provenance": "curated-public-source",
+      "accepted_baselines": [
+        {
+          "overview": "Applied research center for advanced manufacturing, automation, materials, and production systems. Public sources support its classification as a Virginia organization. Documented capabilities include Manufacturing, materials, and prototyping and Systems engineering and integration. Relevant mission areas include Training and experimentation.",
+          "city": "Disputanta",
+          "postal_code": "23842",
+          "contact_url": "https://www.vedp.org/industry/unmanned-systems",
+          "contact_phone": "",
+          "contact_text": "Public information route; a direct asset contact is not published in the catalog",
+          "partnership_opportunities": "",
+          "activity_source_url": "",
+          "activity_last_verified_at": null
+        }
+      ],
       "before": {
         "overview": "Applied research center for advanced manufacturing, automation, materials, and production systems. Public sources support its classification as a Virginia organization. Documented capabilities include Manufacturing, materials, and prototyping and Systems engineering and integration. Relevant mission areas include Training and experimentation.",
         "city": "Disputanta",

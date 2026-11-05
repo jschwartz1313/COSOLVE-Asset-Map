@@ -41,6 +41,8 @@ class DecisionProfileEvidenceTests(SimpleTestCase):
         for change in changes:
             with self.subTest(asset=change["name"]):
                 self.assertEqual(set(change["before"]), set(change["after"]))
+                for baseline in change.get("accepted_baselines", []):
+                    self.assertEqual(set(baseline), set(change["before"]))
                 self.assertTrue(set(change["after"]) <= ALLOWED_FIELDS)
                 self.assertFalse(
                     {"status", "reviewed_at", "last_verified_at"} & change["after"].keys()
@@ -181,4 +183,27 @@ class DecisionProfileCorrectionTests(TestCase):
             ctrc.sources.get(
                 url="https://nationalsecurity.vt.edu/about/centers-facilities.html"
             ).is_public
+        )
+
+    def test_two_known_generated_legacy_variants_update_without_relaxing_guards(self):
+        legacy_names = []
+        for change in manifest()["corrections"]:
+            for baseline in change.get("accepted_baselines", []):
+                asset = Asset.objects.get(name=change["name"])
+                for field, value in baseline.items():
+                    setattr(asset, field, Asset._meta.get_field(field).to_python(value))
+                asset.save()
+                legacy_names.append(asset.name)
+        self.assertEqual(
+            set(legacy_names),
+            {
+                "Heven AeroTech Headquarters",
+                "Commonwealth Center for Advanced Manufacturing",
+            },
+        )
+        self.assertIn("Applied 25 catalog corrections; preserved 0 conflicts", self.apply())
+        self.assertFalse(
+            Asset.objects.filter(
+                review_comments__body__startswith="Catalog correction conflict:"
+            ).exists()
         )
