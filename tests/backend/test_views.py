@@ -20,6 +20,7 @@ class CoreViewTests(TestCase):
         self.assertContains(response, 'id="directory-link"', count=1)
         self.assertNotContains(response, ">Directory view</a>")
         self.assertContains(response, 'data-legend-toggle="asset-layer-toggle"', count=6)
+        self.assertContains(response, '<details class="map-legend" open>')
         self.assertContains(response, 'data-legend-toggle="county-layer-toggle" hidden')
         self.assertContains(response, 'id="map"')
         self.assertContains(response, 'class="basemap-picker"')

@@ -42,10 +42,12 @@ test('criteria and long labels fit narrow and wide screens', async ({page}, test
 
 test('map access filter survives URL reload and clearing', async ({page}) => {
   await page.goto('/map/?access=partnership');
-  await expect(page.locator('#asset-results-title')).toContainText('1 asset');
-  await expect(page.locator('.result-list')).toContainText('MITRE National Range');
+  await expect(page.locator('#asset-results-title')).toContainText('4 assets');
+  for (const name of ['MITRE National Range','Kentland Experimental Aerial Systems Laboratory','Virginia Tech Counter UAS Research and Testing Center','NASA Langley CERTAIN']) {
+    await expect(page.locator('.result-list')).toContainText(name);
+  }
   await page.reload();
-  await expect(page.locator('#asset-results-title')).toContainText('1 asset');
+  await expect(page.locator('#asset-results-title')).toContainText('4 assets');
   await page.locator('[data-clear-active-filters]').click();
   await expect(page.locator('#asset-results-title')).toContainText('574 assets');
 });

@@ -7,7 +7,7 @@ test("map headings stay concise and the legend follows visible overlays", async 
   await expect(page.getByRole("link", { name: "Directory", exact: true })).toHaveCount(1);
   await expect(page.locator("#asset-results-view #directory-link")).toHaveCount(0);
 
-  await page.locator(".map-legend summary").click();
+  await expect(page.locator(".map-legend")).toHaveAttribute("open", "");
   await expect(page.locator("[data-legend-toggle]:visible")).toHaveCount(7);
   await expect(page.locator('[data-legend-toggle="state-boundary-toggle"]')).toBeVisible();
   await page.locator(".map-layers summary").click();
@@ -56,7 +56,7 @@ for (const [id, file, pane, label] of referenceLayers) {
     await page.route(pattern, (route) => route.fulfill({ status: 503, body: "Unavailable" }));
     await page.goto("/map/");
     await expect(page.locator("[data-map-app]")).toHaveAttribute("aria-busy", "false");
-    await page.locator(".map-legend summary").click();
+    await expect(page.locator(".map-legend")).toHaveAttribute("open", "");
     await page.locator(".map-layers summary").click();
     const toggle = page.locator(`#${id}`);
     const legend = page.locator(`[data-legend-toggle="${id}"]`);
@@ -151,7 +151,7 @@ test("a recovered layer preserves an asset loading failure", async ({ page }) =>
 test("saved layer selections and printed legends omit inactive overlays", async ({ page }) => {
   await page.goto("/map/?map_layers=counties&map_layers_v=5");
   await expect(page.locator(".leaflet-county-boundaries-pane path")).not.toHaveCount(0);
-  await page.locator(".map-legend summary").click();
+  await expect(page.locator(".map-legend")).toHaveAttribute("open", "");
   await expect(page.locator("[data-legend-toggle]:visible")).toHaveCount(1);
   await expect(page.locator(".legend-line.county-boundary")).toBeVisible();
   await expect(page.locator(".legend-line.state-boundary")).toBeHidden();
@@ -165,7 +165,7 @@ test("simplified headings and unboxed profile sections fit the standard design",
   test.setTimeout(120_000);
   await page.goto("/map/");
   await expect(page.locator(".result-row").first()).toBeVisible();
-  await page.locator(".map-legend summary").click();
+  await expect(page.locator(".map-legend")).toHaveAttribute("open", "");
   await page.screenshot({ path: testInfo.outputPath("map-light.png"), fullPage: true, animations: "disabled" });
 
   await page.goto("/directory/");

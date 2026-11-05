@@ -23,7 +23,7 @@ test("expanded legend does not cover toolbar controls", async ({ page }) => {
     await page.setViewportSize({ width, height: 900 });
     await page.goto("/map/");
     await expect(page.locator(".result-row").first()).toBeVisible();
-    await page.locator(".map-legend > summary").click();
+    await expect(page.locator(".map-legend")).toHaveAttribute("open", "");
     const covered = await page.locator(".map-toolbar").evaluate((toolbar) => {
       const legend = toolbar.querySelector(".map-legend").getBoundingClientRect();
       return [...toolbar.querySelectorAll(

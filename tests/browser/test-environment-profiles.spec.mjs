@@ -33,7 +33,9 @@ test("new testing profiles fit desktop and mobile", async ({ page }, testInfo) =
   for (const [slug, use] of profiles) {
     await page.goto(`/assets/${slug}/`);
     await expect(page.locator(".overview-section")).toContainText(use);
-    await expect(page.locator(".test-specifications")).toContainText("2026");
+    await expect(page.locator(".test-specifications")).toContainText("Testing and access");
+    await expect(page.getByRole("link", {name:"Operator specification source", exact:true}))
+      .toHaveAttribute("href", /^https:\/\//);
     const overflow = await page
       .locator("h1, .detail-main p, .test-spec-list dd, .detail-sidebar dd")
       .evaluateAll(elements => elements

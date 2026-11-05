@@ -20,6 +20,7 @@ from apps.assets.models import Asset
 from apps.catalog.models import Region
 from apps.sources.models import Source
 from scripts.build_real_asset_catalog import (
+    DECISION_PROFILES_PATH,
     MAAP_CORRECTIONS_PATH,
     NOVEMBER_REFERENCE_PROFILES_PATH,
     OCTOBER_WEBSITE_CORRECTIONS_PATH,
@@ -43,6 +44,7 @@ class TestEnvironmentManifestTests(SimpleTestCase):
         for path in (
             MAAP_CORRECTIONS_PATH, OCTOBER_WEBSITE_CORRECTIONS_PATH,
             NOVEMBER_REFERENCE_PROFILES_PATH,
+            DECISION_PROFILES_PATH,
         ):
             for change in json.loads(path.read_text())["corrections"]:
                 followups.setdefault(change["name"], {}).update(change["after"])
@@ -80,7 +82,10 @@ class TestEnvironmentManifestTests(SimpleTestCase):
         for record in additions["records"]:
             with self.subTest(name=record["name"]):
                 expected = finalize_record(deepcopy(record))
-                paths = (NOVEMBER_REFERENCE_PROFILES_PATH, TEST_SITE_CRITERIA_PATH)
+                paths = (
+                    NOVEMBER_REFERENCE_PROFILES_PATH, TEST_SITE_CRITERIA_PATH,
+                    DECISION_PROFILES_PATH,
+                )
                 followups = [c for path in paths
                              for c in json.loads(path.read_text())["corrections"]
                              if c["name"] == record["name"]]
@@ -124,8 +129,10 @@ class TestEnvironmentDeploymentTests(TestCase):
         cls.changes = json.loads(TEST_CAPABILITY_PROFILES_PATH.read_text())["corrections"]
         records = {r["name"]: r for r in json.loads(CATALOG.read_text())["records"]}
         # Reconstruct this release's fixtures before applying its older partial baselines.
-        for followup in json.loads(NOVEMBER_REFERENCE_PROFILES_PATH.read_text())["corrections"]:
-            records[followup["name"]].update(followup["before"])
+        for path in (DECISION_PROFILES_PATH, TEST_SITE_CRITERIA_PATH,
+                     NOVEMBER_REFERENCE_PROFILES_PATH):
+            for followup in json.loads(path.read_text())["corrections"]:
+                records[followup["name"]].update(followup["before"])
         for change in cls.changes:
             record = records[change["name"]]
             region, _ = Region.objects.get_or_create(name=record["region"])

@@ -13,6 +13,7 @@ from apps.assets.models import Asset
 from apps.catalog.models import Capability
 from apps.sources.models import Source
 from scripts.build_real_asset_catalog import (
+    DECISION_PROFILES_PATH,
     FAA_BAA_CORRECTION_PATH,
     MAAP_CORRECTIONS_PATH,
     NOVEMBER_REFERENCE_PROFILES_PATH,
@@ -32,6 +33,7 @@ class CapabilityManifestTests(SimpleTestCase):
         for path in (
             MAAP_CORRECTIONS_PATH, OCTOBER_WEBSITE_CORRECTIONS_PATH, FAA_BAA_CORRECTION_PATH,
             NOVEMBER_REFERENCE_PROFILES_PATH,
+            DECISION_PROFILES_PATH,
         ):
             for change in json.loads(path.read_text())["corrections"]:
                 followups.setdefault(change["name"], {}).update(change["after"])
@@ -243,4 +245,5 @@ class CapabilityDeploymentTests(TestCase):
             self.assertContains(response, escape(asset.overview))
             self.assertContains(response, escape(asset.partnership_opportunities))
             self.assertContains(response, asset.activity_source_url)
-            self.assertContains(response, "Sep 7, 2026")
+            self.assertEqual(asset.activity_last_verified_at, date(2026, 9, 7))
+            self.assertNotContains(response, "Sep 7, 2026")

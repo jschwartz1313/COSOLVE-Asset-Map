@@ -36,8 +36,10 @@ def catalog():
 class ReferenceProfileEvidenceTests(SimpleTestCase):
     def test_scoped_manifest_matches_catalog_and_rebuild_is_repeatable(self):
         payload = catalog()
-        by_name = {record["name"]: record for record in payload["records"]}
         changes = manifest()["corrections"]
+        # Later reviews may supersede these fields; validate this dated pass in isolation.
+        dated_records = apply_reviewed_corrections(deepcopy(payload["records"]), changes)
+        dated_by_name = {record["name"]: record for record in dated_records}
         self.assertEqual(len(changes), 15)
         self.assertEqual(len({change["name"] for change in changes}), 15)
         for change in changes:
@@ -48,7 +50,7 @@ class ReferenceProfileEvidenceTests(SimpleTestCase):
                     {"status", "reviewed_at", "last_verified_at"} & change["after"].keys()
                 )
                 self.assertTrue(change["add_sources"])
-                record = by_name[change["name"]]
+                record = dated_by_name[change["name"]]
                 for field, value in change["after"].items():
                     self.assertEqual(record[field], value, field)
                 urls = {source["url"] for source in record["sources"]}

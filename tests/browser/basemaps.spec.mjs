@@ -127,7 +127,7 @@ test("expanded legends leave all basemap choices accessible on small screens", a
     await page.setViewportSize(viewport);
     await page.goto("/map/");
     await expect(page.locator("[data-map-app]")).toHaveAttribute("aria-busy", "false");
-    await page.locator(".map-legend > summary").click();
+    await expect(page.locator(".map-legend")).toHaveAttribute("open", "");
     const clear = await page.locator(".basemap-picker label").evaluateAll(labels => labels.every(label => {
       const rect = label.getBoundingClientRect();
       return label.contains(document.elementFromPoint(rect.left + rect.width / 2, rect.top + rect.height / 2));

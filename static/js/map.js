@@ -129,6 +129,17 @@ export function createMap(root) {
   map.attributionControl.setPrefix(false);
   window.L.control.zoom({ position: "bottomright" }).addTo(map);
 
+  map.on("popupopen", ({ popup }) => {
+    const mapBounds = map.getContainer().getBoundingClientRect();
+    const legend = root.querySelector(".map-legend[open]");
+    const legendBottom = legend ? legend.getBoundingClientRect().bottom - mapBounds.top : 0;
+    const topPadding = Math.max(110, legendBottom + 12);
+    popup.options.autoPanPaddingTopLeft = [12, topPadding];
+    popup.options.autoPanPaddingBottomRight = [12, 12];
+    popup.options.maxHeight = Math.max(80, Math.min(420, map.getSize().y - topPadding - 64));
+    popup.update();
+  });
+
   const basemaps = {
     street: {
       url: root.dataset.basemapStreetUrl,

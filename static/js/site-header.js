@@ -19,6 +19,7 @@ document.addEventListener("keydown", (event) => {
   if (event.key !== "Escape") return;
   const menu = menus.find((item) => item.open);
   if (menu) {
+    event.preventDefault();
     menu.open = false;
     menu.querySelector("summary")?.focus();
   }

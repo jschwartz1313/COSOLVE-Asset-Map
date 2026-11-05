@@ -1,0 +1,834 @@
+{
+  "reviewed_at": "2026-11-05",
+  "scope": "Practical services, project fit, public contacts and evidence-backed test criteria; unknown limits and operational approvals remain unknown.",
+  "corrections": [
+    {
+      "name": "Virginia Tech Drone Park",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Virginia Tech facility for drone research, instruction, and technology testing in a netted enclosure, with adjacent laboratory and classroom space. It supports contained experimentation and pilot learning rather than an open-air long-range flight corridor.",
+        "contact_email": "VTDronePark@vt.edu",
+        "contact_phone": "540-231-7303",
+        "contact_text": "Virginia Tech Drone Park scheduling and orientation",
+        "test_dimensions": "300 x 120 x 85 ft netted enclosure, approximately three million cubic feet of flight space; adjacent laboratory and classroom space. This is not an open-air runway.",
+        "test_access": "Check the operator's calendar, request flight time at VTDronePark@vt.edu with organization and group size, and complete the one-time orientation. Commercial and third-party use has additional requirements; the enclosure does not authorize outdoor flights elsewhere.",
+        "test_activities": [],
+        "test_last_verified_at": "2026-11-02",
+        "test_suitability_reviewed_at": "2026-11-03"
+      },
+      "after": {
+        "overview": "Virginia Tech's netted flight facility provides a contained environment for prototype-aircraft trials, pilot practice, instruction, and research that does not require an open-air corridor. MAAP publishes enclosure dimensions of 300 by 120 by 85 ft and an adjacent WeatherSTEM station. These are enclosure dimensions, not an allowable aircraft span or weight.\n\nTo arrange a session, check the Drone Park calendar and email the requested time, organization, and participant count to the park team. A one-time orientation is required. Commercial and third-party projects have additional requirements; agree on aircraft suitability and the proposed experiment before visiting.",
+        "contact_email": "VTDronePark@vt.edu",
+        "contact_phone": "540-231-7303",
+        "contact_text": "Drone Park scheduling and orientation. Include organization, participant count, and requested date/time.",
+        "test_dimensions": "Netted enclosure: 300 x 120 ft, 85 ft tall, with adjacent weather monitoring. Enclosure dimensions are not maximum aircraft dimensions.",
+        "test_access": "Check the calendar, request a reservation by email, and complete the one-time orientation. Commercial and third-party work requires additional approval. Confirm aircraft and experiment acceptance with park staff.",
+        "test_activities": [
+          "enclosed"
+        ],
+        "test_last_verified_at": "2026-11-05",
+        "test_suitability_reviewed_at": "2026-11-05"
+      },
+      "add_sources": [
+        {
+          "title": "Virginia Tech Drone Park reservations, orientation, address and contact",
+          "url": "https://drones.ictas.vt.edu/dronepark.html"
+        },
+        {
+          "title": "MAAP published Drone Park enclosure dimensions and experimental uses",
+          "url": "https://maap.ictas.vt.edu/capabilities/facilities.html"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "Kentland Experimental Aerial Systems Laboratory",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Virginia Tech's Kentland laboratory supports fixed-wing and rotary-wing UAS research, instruction and prototype evaluation. Published infrastructure includes a 300-by-70-ft paved runway and approximately 2,000-sq-ft hangar. Research examples include wind sensing, infrastructure inspection, flight dynamics and controls. MAAP's supplied materials separately describe a Kentland flight-area outline and an up-to-700-ft-AGL limit under its test-site approval. The lab runway, the roughly 1,800-acre research farm and a flight-approval boundary are different things; none implies unrestricted public access.",
+        "contact_email": "",
+        "contact_phone": "",
+        "contact_url": "https://autonomyandrobotics.centers.vt.edu/groups/keas.html",
+        "contact_text": "Public information route; a direct asset contact is not published in the catalog",
+        "test_aircraft": "Small fixed-wing and rotary-wing aircraft for university research and instruction. MAAP's separate Kentland-area briefing describes an approval envelope up to 1,320 lb; that does not establish compatibility with the laboratory runway or availability to all users.",
+        "test_access": "Coordinate a research project with Virginia Tech/MAAP and confirm aircraft, launch/recovery arrangements and current approvals. The supplied reference outline does not establish public range booking or blanket flight permission.",
+        "test_source_url": "https://cosolve-asset-map.onrender.com/references/maap/#kentland",
+        "test_last_verified_at": "2026-10-02",
+        "test_launch_methods": [],
+        "test_activities": [],
+        "test_access_types": [],
+        "test_suitability_source_url": "",
+        "test_suitability_reviewed_at": null
+      },
+      "after": {
+        "overview": "Kentland is a university field laboratory for small fixed-wing and rotary-wing UAS research, flight dynamics, controls, and education. Published resources include a 300-by-70-ft paved runway, nearly 2,000 sq ft of hangar workspace, wireless internet, weather instrumentation, and small research aircraft. University examples include wind sensing and infrastructure inspection.\n\nIt is a practical starting point for local prototype, controls, and sensor experiments needing a runway and engineering workspace. Arrange the project and site access through MAAP or the laboratory team. Farm acreage is not an authorized flight boundary, and the supplied flight-area briefing does not establish a current universal aircraft-weight limit.",
+        "contact_email": "maapinfo@vt.edu",
+        "contact_phone": "540-231-9416",
+        "contact_url": "https://maap.ictas.vt.edu/Contact.html",
+        "contact_text": "MAAP project enquiries for Kentland site selection and flight-test coordination; not a public walk-in reservation.",
+        "test_aircraft": "Small fixed-wing and rotary-wing UAS research and education. Current aircraft weight and span acceptance must be agreed with the operator.",
+        "test_access": "Arrange a university or partner research project and coordinate flight time, site permission, aircraft acceptance, and current approvals with the laboratory/MAAP. Published farm acreage and historical COA summaries are not flight permission.",
+        "test_source_url": "https://autonomyandrobotics.centers.vt.edu/groups/keas.html",
+        "test_last_verified_at": "2026-11-05",
+        "test_launch_methods": [
+          "runway",
+          "vertical"
+        ],
+        "test_activities": [
+          "flight",
+          "autonomy"
+        ],
+        "test_access_types": [
+          "research",
+          "partnership"
+        ],
+        "test_suitability_source_url": "https://autonomyandrobotics.centers.vt.edu/groups/keas.html",
+        "test_suitability_reviewed_at": "2026-11-05"
+      },
+      "add_sources": [
+        {
+          "title": "Virginia Tech KEAS runway, hangar, instrumentation and research scope",
+          "url": "https://autonomyandrobotics.centers.vt.edu/groups/keas.html"
+        },
+        {
+          "title": "Virginia Tech KEAS fixed-wing and quadrotor research examples",
+          "url": "https://www.aoe.vt.edu/research/facilities/keaslab.html"
+        },
+        {
+          "title": "MAAP mission-specific facilities and approvals",
+          "url": "https://maap.ictas.vt.edu/capabilities/facilities.html"
+        },
+        {
+          "title": "MAAP project contact",
+          "url": "https://maap.ictas.vt.edu/Contact.html"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "Virginia Tech Counter UAS Research and Testing Center",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Virginia Tech's Counter-UAS Testing and Research Center combines instrumented outdoor trials at Kentland with laboratory and engineering work. MAAP's supplied briefing describes a 14-by-50-ft test management building, a 20-by-25-ft equipment platform elevated 20 ft with power and internet, storage and mobile-system hookups. A diverse drone library supports repeatable radar, RF, electro-optical/infrared and acoustic detection trials. Teams compare sensor tracks against aircraft truth data to study detection probability, range, accuracy, latency, alerting, data quality and human factors under terrain and day/night scenarios. Site access, aircraft eligibility and any counter-UAS mitigation authority are project-specific.",
+        "contact_url": "https://nationalsecurity.vt.edu/about/centers-facilities.html",
+        "contact_email": "",
+        "contact_phone": "",
+        "contact_text": "CTRC research inquiries: published center contact Austin Phoenix, Mission Systems Division.",
+        "test_activities": [],
+        "test_access_types": [],
+        "test_suitability_source_url": "",
+        "test_suitability_reviewed_at": null
+      },
+      "after": {
+        "overview": "CTRC offers government and industry partners an instrumented setting to evaluate counter-drone sensing and system performance, combining controlled laboratories with outdoor research at Kentland. The supplied MAAP briefing describes a test-management building, elevated powered equipment platform, storage, mobile-system hookups, and a varied drone library.\n\nA useful project can compare sensor tracks with aircraft truth data and measure detection probability, tracking accuracy, latency, false alerts, or operator workload. Discuss the target aircraft, sensor interfaces, test metrics, data deliverables, and safety process with the center before selecting a campaign. Testing or research access does not itself authorize jamming, interception, or other countermeasures.",
+        "contact_url": "https://nationalsecurity.vt.edu/personnel-directory/phoenix-austin.html",
+        "contact_email": "aphoenix@vt.edu",
+        "contact_phone": "919-616-3723",
+        "contact_text": "Austin Phoenix, Mission Systems Division director and published CTRC point of contact. The listed office is not the Kentland test location.",
+        "test_activities": [
+          "counter-uas",
+          "autonomy"
+        ],
+        "test_access_types": [
+          "research",
+          "partnership"
+        ],
+        "test_suitability_source_url": "https://nationalsecurity.vt.edu/about/centers-facilities.html",
+        "test_suitability_reviewed_at": "2026-11-05"
+      },
+      "add_sources": [
+        {
+          "title": "VTNSI CTRC facilities and partner-facing research scope",
+          "url": "https://nationalsecurity.vt.edu/about/centers-facilities.html"
+        },
+        {
+          "title": "CTRC published point-of-contact details",
+          "url": "https://nationalsecurity.vt.edu/personnel-directory/phoenix-austin.html"
+        },
+        {
+          "title": "MAAP supplied CTRC equipment and evaluation methods",
+          "url": "https://cosolve-asset-map.onrender.com/references/maap/#ctrc"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "MITRE National Range",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "MITRE's Orange County range gives government, academic, and industry partners a controlled setting to compare drone, counter-UAS, ground-robot, and communications technologies. Published resources include a powered operations center, 5G connectivity, a standardized drone training course, telemetry capture, and command-and-control integration. Practical uses include independent prototype evaluation, network and sensor-fusion tests, operator training, and emergency-response demonstrations. Range use is arranged with MITRE; the locality-level marker does not identify a gate or an authorized operating boundary.",
+        "contact_email": "Culsh@MITRE.org",
+        "contact_url": "https://www.mitre.org/sites/default/files/2024-07/PR-24-2208-MITRE-National-Range.pdf",
+        "contact_text": "Range discussions and reservations: Craig Ulsh; contact published in the 2024 fact sheet",
+        "test_activities": [
+          "flight",
+          "counter-uas"
+        ],
+        "test_suitability_reviewed_at": "2026-11-03"
+      },
+      "after": {
+        "overview": "MITRE's Orange County range supports partner evaluation of UAS, counter-UAS, ground robotics, communications, and sensor integration. Published resources include a powered operations center, work areas and storage, 5G connectivity, a standardized drone-training course, telemetry capture, and command-and-control integration.\n\nManufacturers and buyers can discuss independent prototype comparisons, sensor-fusion trials, communications experiments, or repeatable public-safety scenarios. Agree with MITRE on evaluation metrics, instrumentation, data products, aircraft acceptance, and access arrangements. The locality marker is not a gate or flight boundary; published research capabilities do not grant countermeasure or radio-transmission authority.",
+        "contact_email": "culsh@mitre.org",
+        "contact_url": "https://www.mitre.org/resources/edge-lab",
+        "contact_text": "Craig Ulsh, published MITRE Range contact; preliminary discussions for a partner test or evaluation project.",
+        "test_activities": [
+          "flight",
+          "autonomy",
+          "counter-uas"
+        ],
+        "test_suitability_reviewed_at": "2026-11-05"
+      },
+      "add_sources": [
+        {
+          "title": "MITRE National Range equipment and partner test services",
+          "url": "https://www.mitre.org/news-insights/fact-sheet/mitre-national-range"
+        },
+        {
+          "title": "MITRE EDGE Lab range contact and research activities",
+          "url": "https://www.mitre.org/resources/edge-lab"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "NASA Langley CERTAIN",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "CERTAIN is NASA Langley's urban and rural UAS research environment, linked to remote operations and simulated traffic. NASA's May 2024 material describes roughly 800 acres, instrumented monitoring, and experiments in inspection, emergency response, delivery, and multi-aircraft supervision. The original UAS Test Range record documents its earlier development, not a second independently bookable range. Projects require NASA coordination; published research conditions are not permissions for outside operators.",
+        "contact_url": "https://lmse.larc.nasa.gov/admin/public_docs/LPR-8715.5B_Final.pdf",
+        "contact_text": "NASA Langley UAS Operations Office; public coordination address in the May 2024 range procedures.",
+        "test_activities": [
+          "flight",
+          "autonomy"
+        ],
+        "test_access_types": [
+          "research"
+        ],
+        "test_suitability_source_url": "https://lmse.larc.nasa.gov/admin/public_docs/LPR-8715.5B_Final.pdf",
+        "test_suitability_reviewed_at": "2026-11-03"
+      },
+      "after": {
+        "overview": "CERTAIN is NASA Langley's designated UAS flight range, linked to the ROAM remote-operations center. NASA describes live, virtual, and constructive experiments in onboard autonomy, air-ground integration, and human supervision of multiple vehicles. Published use cases include delivery and emergency-response research.\n\nThe resource is relevant to teams investigating remote operations, human-autonomy teaming, and multi-aircraft supervision rather than seeking a general hireable drone field. Start a facility or collaboration enquiry through Langley's Front Door. Project requirements, NASA safety processes, agreements, and current flight approvals determine participation; older research aircraft limits are not universal acceptance specifications.",
+        "contact_url": "https://www.nasa.gov/langley/frontdoor/",
+        "contact_text": "NASA Langley Front Door: facility, research collaboration and partnership enquiries. This is an intake route, not confirmation of a range booking.",
+        "test_activities": [
+          "flight",
+          "autonomy",
+          "multi-aircraft"
+        ],
+        "test_access_types": [
+          "research",
+          "partnership"
+        ],
+        "test_suitability_source_url": "https://csaob.larc.nasa.gov/roam/",
+        "test_suitability_reviewed_at": "2026-11-05"
+      },
+      "add_sources": [
+        {
+          "title": "NASA ROAM and CERTAIN multi-vehicle research capabilities",
+          "url": "https://csaob.larc.nasa.gov/roam/"
+        },
+        {
+          "title": "NASA Langley facility and partnership intake",
+          "url": "https://www.nasa.gov/langley/frontdoor/"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "MARS Unmanned Aircraft Systems Airfield",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Virginia Spaceport Authority airfield at Wallops supporting government and commercial uncrewed-system training, testing, demonstrations, and exercises. The operator publishes a runway, vertical-takeoff-and-landing pad, hangar, and access to restricted airspace. Its staff provide UAS integration and airfield-management support. This is an operator-coordinated facility within a secure federal environment, not an unrestricted launch area.",
+        "contact_text": "Virginia Spaceport Authority external relations; request UAS airfield coordination",
+        "partnership_opportunities": "Start with Virginia Spaceport Authority's public inquiry route for mission integration and airfield coordination.",
+        "activity_source_url": "https://www.vaspace.org/our-facilities",
+        "activity_last_verified_at": "2026-09-07"
+      },
+      "after": {
+        "overview": "Virginia Spaceport Authority's UAS airfield at Wallops combines a 3,000-by-75-ft runway, VTOL pad, hangar, and staff-supported access to a secure federal testing environment. The operator describes government and commercial training, testing, demonstrations, exercises, UAS integration, and airfield management.\n\nThis is an option for teams needing dedicated unmanned-aircraft infrastructure and coordinated range support. Discuss aircraft geometry and weight, launch/recovery needs, hangar clearance, ground support, scheduling, and mission approvals with the operator. The operator's 90-by-50-ft hangar figure differs from another published listing; confirm usable dimensions. Restricted-airspace acreage is not a standing permission for outside operators.",
+        "contact_text": "Virginia Spaceport Authority external relations: request UAS-airfield integration, facilities and scheduling coordination, rather than using the Norfolk office as the airfield address.",
+        "partnership_opportunities": "Scope an operator-supported UAS test, training or demonstration project; request an aircraft-acceptance and facilities review before committing to the site.",
+        "activity_source_url": "https://www.vaspace.org/our-facilities",
+        "activity_last_verified_at": "2026-11-05"
+      },
+      "add_sources": [
+        {
+          "title": "Virginia Spaceport Authority UAS airfield services and specifications",
+          "url": "https://www.vaspace.org/our-facilities"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "Virginia Tech Stability Wind Tunnel",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Virginia Tech's Stability Wind Tunnel offers aerodynamic and aeroacoustic experiments for university and industrial projects. Its interchangeable acoustic test section and published rotor-measurement work make it an enabling resource for investigating airfoil behavior, rotor noise, and computational predictions relevant to drones and AAM. It is not a UAS flight range. The university publishes a major-upgrade and construction plan, so prospective users should confirm the current configuration and schedule.",
+        "test_access_types": [],
+        "test_suitability_source_url": "",
+        "test_suitability_reviewed_at": null
+      },
+      "after": {
+        "overview": "Virginia Tech's Stability Wind Tunnel provides aerodynamic and aeroacoustic experiments for academic and industrial projects. Published specifications include a 1.85-by-1.85-m test section, speeds up to 80 m/s, and a removable anechoic test section. These are tunnel specifications, not a maximum aircraft span or flight envelope.\n\nAirfoil, rotor-noise, and computational-validation work can help refine an air-vehicle design before outdoor testing. Contact the tunnel team with the model geometry, mounting and load requirements, desired speeds, instrumentation, and acoustic measurements. The university publishes a major-upgrade plan, so confirm the available configuration and schedule. This laboratory is not an open-air UAS range.",
+        "test_access_types": [
+          "commercial",
+          "research"
+        ],
+        "test_suitability_source_url": "https://www.aoe.vt.edu/research/facilities/stabilitytunnel.html",
+        "test_suitability_reviewed_at": "2026-11-05"
+      },
+      "add_sources": [
+        {
+          "title": "Virginia Tech wind-tunnel specifications and prospective-customer scheduling",
+          "url": "https://www.aoe.vt.edu/research/facilities/stabilitytunnel.html"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "Mid-Atlantic Aviation Partnership",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Virginia Tech's FAA-designated UAS test-site team helps organizations design flight trials, evaluate aircraft and sensors, develop safety cases, and train operators. Its supplied briefing describes airworthiness review, custom UAS design/build/fly work, technology selection and repeatable testing. Projects can use mobile command, surveillance and weather resources at an appropriate site. MAAP describes Kentland, Central Virginia, Blackstone and Eastern Shore operating areas; these are separate from its Blacksburg office, and the supplied summaries are not current flight authorizations.",
+        "partnership_opportunities": "Contact MAAP to match a proposed aircraft or sensor test with facilities, research staff, and an appropriate operating environment.",
+        "activity_last_verified_at": "2026-09-07",
+        "activity_source_url": "https://maap.ictas.vt.edu/capabilities/test-evaluation.html"
+      },
+      "after": {
+        "overview": "MAAP helps UAS developers turn an aircraft, sensor, or operational concept into a test program. Its published services include aircraft modification and airworthiness evaluation, support for type-certification programs, impact/injury testing, parachute and communications standards testing, and detect-and-avoid sensor characterization. Airspace-encounter simulation supports assessment of collision risk and well-clear performance.\n\nA project can combine engineering evaluation, safety-case development, and flights at an appropriate location. Mobile command resources include three UAS workstations, surveillance integration, ADS-B reception, weather monitoring, and airborne-data handling. Start by describing the aircraft, desired evidence, mission, and environment; MAAP then scopes the site, resources, approvals, and deliverables. Its office pin is not a flight location.",
+        "partnership_opportunities": "Discuss a test plan, safety case, aircraft or sensor evaluation, or standards-evidence project; request a defined scope, data deliverables, schedule, and quote.",
+        "activity_last_verified_at": "2026-11-05",
+        "activity_source_url": "https://maap.ictas.vt.edu/capabilities/test-evaluation.html"
+      },
+      "add_sources": [
+        {
+          "title": "MAAP aircraft, impact, standards and sensor evaluation services",
+          "url": "https://maap.ictas.vt.edu/capabilities/test-evaluation.html"
+        },
+        {
+          "title": "MAAP mobile command resources and mission-specific site selection",
+          "url": "https://maap.ictas.vt.edu/capabilities/facilities.html"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "MAAP Kentland Farm Flight Area",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "MAAP's supplied briefing describes a Kentland research flight area near Blacksburg, with aircraft up to 1,320 lb and a ceiling up to 700 ft AGL under its test-site approval. The team supplied a geographic outline for ecosystem reference. The approximately 2.5-sq-mi flight-area figure and 1,800-acre farm describe different resources. This operating-area entry is distinct from the Kentland laboratory runway and CTRC equipment; the outline is not permission for independent public flights.",
+        "contact_email": "maapinfo@vt.edu",
+        "contact_phone": "540-231-9416",
+        "contact_text": "MAAP project and flight-operations coordination; confirm current approvals, aircraft eligibility and site access."
+      },
+      "after": {
+        "overview": "MAAP's supplied briefing describes a Kentland research flight area near Blacksburg, a reported ceiling up to 700 ft AGL, and aircraft up to 1,320 lb under its described approval. These are attributed briefing figures; current COA validity and aircraft eligibility are not established by the source package. The supplied outline is not permission for independent flights.\n\nFor a local field-test project, ask MAAP how the proposed aircraft and experiment could use the nearby KEAS runway, hangar, and mobile support. The farm, laboratory, CTRC equipment, and flight-area boundary are distinct resources and require separate project coordination.",
+        "contact_email": "maapinfo@vt.edu",
+        "contact_phone": "540-231-9416",
+        "contact_text": "MAAP: request the current Kentland approval conditions and project-specific aircraft/site acceptance."
+      },
+      "add_sources": [
+        {
+          "title": "MAAP project contact for supplied flight-area follow-up",
+          "url": "https://maap.ictas.vt.edu/Contact.html"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "MAAP Central Virginia Flight Area",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "MAAP's supplied briefing describes an approximately 4,500-sq-mi Central Virginia test environment, aircraft up to 1,320 lb and flights up to 7,000 ft MSL under its approval. The corridor supports longer-distance research with Crewe Airport runway/hangar resources and borders the separate Blackstone Class D area. The geographic file's internal folder is explicitly labeled COA DRAFT 108625. Its outline is displayed as provisional reference data, not a verified current approval boundary. The briefing acreage/area claim is not a measurement of that polygon.",
+        "contact_email": "maapinfo@vt.edu",
+        "contact_phone": "540-231-9416",
+        "contact_text": "MAAP project and flight-operations coordination; confirm current approvals, aircraft eligibility and site access."
+      },
+      "after": {
+        "overview": "The supplied MAAP briefing describes an approximately 4,500-sq-mi Central Virginia research environment, aircraft up to 1,320 lb, and flights up to 7,000 ft MSL under its described approval. The supplied geographic file is explicitly labeled COA DRAFT 108625; those figures and the outline do not establish a current operating permission.\n\nA team considering a longer-distance research campaign can ask MAAP about corridor suitability, Crewe Airport ground support, communications coverage, observation/chase arrangements, and data collection. Resolve the draft boundary and obtain current mission-specific conditions before relying on the area for a proposal or schedule.",
+        "contact_email": "maapinfo@vt.edu",
+        "contact_phone": "540-231-9416",
+        "contact_text": "MAAP: resolve the supplied draft outline and confirm the current approval, airport arrangements and mission requirements."
+      },
+      "add_sources": [
+        {
+          "title": "MAAP project contact for supplied flight-area follow-up",
+          "url": "https://maap.ictas.vt.edu/Contact.html"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "MAAP Blackstone Class D Flight Area",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "MAAP's supplied briefing describes a test-site operating area in Blackstone Class D airspace, a 4.2-nm airport radius, approximately 73 sq mi, flights up to 2,500 ft MSL and aircraft up to 1,320 lb. R-6602A is explicitly excluded. No Blackstone boundary file was supplied, so no approximate circle or airport-centered asset pin is used for this operating-area record. It is distinct from the airport and Smart Airspace vertiport. The actual current approval and civil/military coordination govern any proposed research flight.",
+        "contact_email": "maapinfo@vt.edu",
+        "contact_phone": "540-231-9416",
+        "contact_text": "MAAP project and flight-operations coordination; confirm current approvals, aircraft eligibility and site access."
+      },
+      "after": {
+        "overview": "MAAP's supplied briefing describes research in Blackstone Class D airspace: a 4.2-nm airport radius, approximately 73 sq mi, flights up to 2,500 ft MSL, and aircraft up to 1,320 lb under its described approval. It explicitly excludes R-6602A. No Blackstone boundary file was supplied, so this record has no invented airport-centered polygon or pin.\n\nThe environment is relevant to discussion of UAS research involving civil/military airport coordination. Ask MAAP to confirm the current area, aircraft acceptance, air-traffic coordination, and operating windows. The flight-area record, airport, and Smart Airspace vertiport do not represent interchangeable access permissions.",
+        "contact_email": "maapinfo@vt.edu",
+        "contact_phone": "540-231-9416",
+        "contact_text": "MAAP: confirm current Blackstone conditions and civil/military coordination; no usable boundary file is held in this map."
+      },
+      "add_sources": [
+        {
+          "title": "MAAP project contact for supplied flight-area follow-up",
+          "url": "https://maap.ictas.vt.edu/Contact.html"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "MAAP Eastern Shore Offshore Flight Area",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "MAAP's supplied Accomack offshore briefing describes an over-water test environment based at Accomack County Airport, aircraft up to 1,320 lb and flights up to 3,000 ft MSL under its approval. The one-page overview reports approximately 990 sq mi and a 5,000-ft supporting runway. The team supplied a geographic outline, which is retained without clipping away the water areas. The briefing discusses warning-area provisions and adjoining R-6609; it is not the full COA, and area figures are not computed from the supplied outline. Confirm chase-aircraft arrangements, current approval and airport access with MAAP.",
+        "contact_email": "maapinfo@vt.edu",
+        "contact_phone": "540-231-9416",
+        "contact_text": "MAAP project and flight-operations coordination; confirm current approvals, aircraft eligibility and site access."
+      },
+      "after": {
+        "overview": "The supplied MAAP briefing describes an over-water research environment based at Accomack County Airport, aircraft up to 1,320 lb, and flights up to 3,000 ft MSL under its described approval. Its approximately 990-sq-mi figure is an attributed briefing claim, not a calculation from the supplied outline or a confirmation of current approval.\n\nFor a coastal or over-water UAS study, ask MAAP about the proposed flight geometry, supporting airport resources, communications, recovery planning, and required observation or chase arrangements. Warning-area provisions and adjoining R-6609 require mission-specific review; the outline does not authorize public BVLOS operations.",
+        "contact_email": "maapinfo@vt.edu",
+        "contact_phone": "540-231-9416",
+        "contact_text": "MAAP: confirm current offshore approval conditions, airport support, and mission-specific coordination."
+      },
+      "add_sources": [
+        {
+          "title": "MAAP project contact for supplied flight-area follow-up",
+          "url": "https://maap.ictas.vt.edu/Contact.html"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "Advanced Aircraft Company",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Hampton company designing and manufacturing HAMR hybrid-electric multirotor aircraft. HAMR combines fuel-powered generation with electric propulsion and modular payload bays for cameras and other mission equipment. The manufacturer lists inspection, search and rescue, maritime operations, and logistics among its applications. Published maximum endurance and payload figures describe different configurations, not a guarantee that maximum payload can be carried for the maximum flight duration. This record represents the company; confirm the production or demonstration location when arranging a visit.",
+        "website_url": "https://advancedaircraftcompany.com/",
+        "contact_url": "https://advancedaircraftcompany.com/",
+        "contact_email": "info@flyaac.com",
+        "contact_phone": "757-325-6712",
+        "contact_text": "AAC aircraft, payload, and support inquiries",
+        "address_line": "1100 Exploration Way"
+      },
+      "after": {
+        "overview": "AAC's HAMR is a hybrid-electric multirotor aimed at inspection, surveillance, maritime work, search and rescue, and small-item logistics. The manufacturer publishes a 55-lb maximum takeoff weight, up to 11 lb payload, modular payload bays, and up to 3.5-plus hours endurance. Maximum payload and endurance are alternative configuration-dependent figures, not simultaneous guaranteed performance.\n\nA buyer or payload integrator can start with the payload's mass, dimensions, power needs, required endurance, and operating environment. Request the appropriate configuration, current flight-envelope limitations, demonstration and quote from AAC. The Hampton address is a company contact point; arrange any production visit or flight demonstration separately.",
+        "website_url": "https://advancedaircraftcompany.com/hamr/",
+        "contact_url": "https://advancedaircraftcompany.com/",
+        "contact_email": "info@flyaac.com",
+        "contact_phone": "757-325-6712",
+        "contact_text": "AAC product and payload-integration enquiries; request a current HAMR configuration, demonstration or quote.",
+        "address_line": "1100 Exploration Way, Suite 316M"
+      },
+      "add_sources": [
+        {
+          "title": "AAC HAMR manufacturer specifications, payload interfaces and contact",
+          "url": "https://advancedaircraftcompany.com/hamr/"
+        },
+        {
+          "title": "AAC published Hampton business contact",
+          "url": "https://advancedaircraftcompany.com/"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "Eagle Aviation Technologies",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Newport News engineering and manufacturing facility supporting crewed and uncrewed aircraft, rotorcraft, and eVTOL programs. Eagle combines aerospace design, precision CNC machining, composite fabrication, rotor and propeller development, wind-tunnel models, and prototype airframe components. The operator describes composite clean rooms, assembly space, and in-house ground and whirl testing. Customers can discuss individual test articles or integrated development work; published material does not establish a public flight range.",
+        "contact_email": "",
+        "contact_text": "Eagle engineering, manufacturing, and testing inquiries",
+        "partnership_opportunities": "Submit engineering, component, prototyping, or test inquiries through Eagle's contact form.",
+        "activity_source_url": "https://eagleaviationtech.com/about-us-1",
+        "activity_last_verified_at": "2026-09-07"
+      },
+      "after": {
+        "overview": "Eagle combines aerospace design, CNC machining, composites, rotor/propeller development, wind-tunnel models, and prototype airframe components at its Newport News facility. The company describes composite clean rooms, assembly space, ground and whirl testing, and AS9100 Rev D certification. Published examples include rotor and propeller work for crewed, eVTOL, and uncrewed aircraft.\n\nAn aircraft developer can discuss a one-off test article, prototype component, or larger assembly with design-to-test support. Bring drawings, material and tolerance requirements, intended loads, inspection/traceability needs, and the proposed test scope to the enquiry. Confirm certification scope, equipment availability and lead times directly; this manufacturing and ground-test site is not a public flight range.",
+        "contact_email": "info@eagleaviationtech.com",
+        "contact_text": "Eagle aerospace engineering and manufacturing enquiries; scope prototype, composite, machining or ground-test requirements.",
+        "partnership_opportunities": "Request a design/manufacturing review or quotation for a component, test article or integrated aerospace assembly.",
+        "activity_source_url": "https://eagleaviationtech.com/about-us-1",
+        "activity_last_verified_at": "2026-11-05"
+      },
+      "add_sources": [
+        {
+          "title": "Eagle official facility capabilities, certification claim and project contact",
+          "url": "https://eagleaviationtech.com/about-us-1"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "P1 Technologies Keltech Division",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Roanoke electronics-manufacturing resource within P1 Technologies. Current company materials describe printed-circuit-board assembly, box builds, cable assemblies, tooling, prototyping, and inspection. Its electronics page lists surface-mount and through-hole assembly, automated optical inspection, and customer-defined functional testing. Earlier VEDP reporting linked Keltech to Blue Vigil tethered-drone production; that historical customer example does not establish a current contract or assign all P1 equipment to the mapped Keltech site.",
+        "website_url": "https://www.p1tec.com/",
+        "contact_url": "https://www.p1tec.com/",
+        "contact_email": "info@p1tec.com",
+        "contact_phone": "540-772-7950",
+        "contact_text": "P1 corporate manufacturing and electronics inquiries"
+      },
+      "after": {
+        "overview": "P1's electronics services cover surface-mount and through-hole PCB assembly, box builds, integration, inspection, rework, and customer-defined functional testing. Its published equipment includes two SMT lines, 3D automated optical inspection, BGA rework, conformal coating, in-circuit testing, and JTAG boundary scan. These are company-described resources; confirm which are assigned to the proposed Roanoke project.\n\nA UxS hardware team can discuss prototype-to-production electronics, harness or enclosure integration, and assembly test requirements. Provide the bill of materials, drawings, quantities, acceptance tests, traceability needs and schedule. Request a capability review and quote rather than assuming capacity, minimum order quantity, or a continuing historical drone-customer contract.",
+        "website_url": "https://www.p1tec.com/keltech",
+        "contact_url": "https://www.p1tec.com/contact-us",
+        "contact_email": "info@p1tec.com",
+        "contact_phone": "540-772-7950",
+        "contact_text": "P1 technical/project intake for former Keltech programmes, electronics assembly and manufacturing quotations."
+      },
+      "add_sources": [
+        {
+          "title": "P1 electronics assembly, inspection and test equipment",
+          "url": "https://www.p1tec.com/capabilities/pcba-box-builds-electronics-integration"
+        },
+        {
+          "title": "P1 current Keltech enquiry route",
+          "url": "https://www.p1tec.com/keltech"
+        },
+        {
+          "title": "P1 published Roanoke address and project contact",
+          "url": "https://www.p1tec.com/contact-us"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "Heven AeroTech Headquarters",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Virginia headquarters for a developer of hydrogen-powered and other unmanned aerial systems. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+        "contact_email": "info@hevenaerotech.com",
+        "contact_phone": "877-726-6269",
+        "contact_text": "Organization public information and inquiries",
+        "partnership_opportunities": "",
+        "activity_source_url": "",
+        "activity_last_verified_at": null
+      },
+      "after": {
+        "overview": "Heven develops hydrogen-powered UAS and related propulsion/refuelling products for defense, national security, public safety, and commercial operators. Its published range includes Z1, H2D55, Raider and ATLAS aircraft, plus hydrogen refuellers. The Dulles address is its listed East Coast headquarters, not a public flight range or proof that every product is manufactured there.\n\nFor a mission-fit discussion, request a platform-specific datasheet and demonstration through the solutions team. Key questions are payload and power needs, endurance at that payload, fuel supply and refuelling logistics, training, support, and the intended operating environment. Do not substitute a portfolio-wide performance claim for a quoted aircraft configuration.",
+        "contact_email": "info@hevenaerotech.com",
+        "contact_phone": "877-726-6269",
+        "contact_text": "Heven solutions team: platform specifications, mission-fit discussion and demonstration requests.",
+        "partnership_opportunities": "Request a platform-specific specification sheet and discuss a demonstration, payload integration or operating concept with the solutions team.",
+        "activity_source_url": "https://hevenaerotech.com/",
+        "activity_last_verified_at": "2026-11-05"
+      },
+      "add_sources": [
+        {
+          "title": "Heven aircraft, propulsion and refuelling product portfolio",
+          "url": "https://hevenaerotech.com/"
+        },
+        {
+          "title": "Heven mission-fit, demonstrations and current headquarters contact",
+          "url": "https://hevenaerotech.com/contact-us/"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "Heven AeroTech Winchester Innovation and Manufacturing Campus",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Heven AeroTech identifies its Winchester facility as an innovation and manufacturing campus combining engineering, high-volume manufacturing, flight testing, payload integration, and training. Current job listings document drone assembly, production, integration, and hydrogen-systems work in Winchester.",
+        "contact_url": "https://hevenaerotech.com/company/",
+        "contact_email": "info@hevenaerotech.com",
+        "contact_phone": "877-726-6269",
+        "contact_text": "Heven AeroTech company inquiries"
+      },
+      "after": {
+        "overview": "Heven identifies Winchester as an engineering, manufacturing, test, payload-integration, and training campus. Current Winchester job descriptions document drone assembly, structural integration, mechanical engineering, and hydrogen-production-system work. The operator describes USNIC as a future campus role, not an already available public innovation centre.\n\nA potential partner can ask about production or payload-integration work, technical collaboration, and training relevant to its aircraft programme. Obtain the precise visiting address, applicable facility clearances, equipment scope, current capacity and access arrangements directly. A published Winchester street address and general third-party flight-testing service are not established by the reviewed pages, so the map location remains locality-level.",
+        "contact_url": "https://hevenaerotech.com/contact-us/",
+        "contact_email": "info@hevenaerotech.com",
+        "contact_phone": "877-726-6269",
+        "contact_text": "Heven solutions intake; ask specifically for the Winchester manufacturing or payload-integration team and visiting instructions."
+      },
+      "add_sources": [
+        {
+          "title": "Heven Winchester campus scope and future USNIC statement",
+          "url": "https://hevenaerotech.com/company/"
+        },
+        {
+          "title": "Heven published Winchester manufacturing and engineering work",
+          "url": "https://hevenaerotech.com/work-with-us/"
+        },
+        {
+          "title": "Heven project enquiry route",
+          "url": "https://hevenaerotech.com/contact-us/"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "Commonwealth Center for Advanced Manufacturing",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Applied research center for advanced manufacturing, automation, materials, and production systems. Public sources support its classification as a Virginia organization. Documented capabilities include Manufacturing, materials, and prototyping and Systems engineering and integration. Relevant mission areas include Training and experimentation.",
+        "city": "Disputanta",
+        "postal_code": "23842",
+        "contact_url": "https://ccam-va.com/",
+        "contact_phone": "",
+        "contact_text": "Organization public information and inquiries",
+        "partnership_opportunities": "",
+        "activity_source_url": "",
+        "activity_last_verified_at": null
+      },
+      "after": {
+        "overview": "CCAM is a membership-based applied-research centre helping industry evaluate and adopt manufacturing processes. Published work covers automation, coatings, manufacturing data and digital twins, process monitoring, and digitally supported qualification of additive manufacturing. Its Disputanta address is an applied-research resource, not an aircraft factory or open flight range.\n\nA UxS supplier can discuss a production-process bottleneck, new material/coating process, inspection method, or manufacturing-data project before investing in equipment. Engagement terms matter: CCAM describes different membership tiers with different directed-research, intellectual-property, equipment and funding arrangements. Ask which project route, equipment, deliverables, IP terms and costs apply; membership does not guarantee funding or production capacity.",
+        "city": "Disputanta",
+        "postal_code": "23842",
+        "contact_url": "https://ccam-va.com/become-a-member/",
+        "contact_phone": "804-722-3700",
+        "contact_text": "CCAM membership and applied-research intake. Describe the manufacturing challenge and the type of collaboration sought.",
+        "partnership_opportunities": "Discuss a directed research, manufacturing technology or equipment-test-bed project and confirm the relevant membership and intellectual-property terms.",
+        "activity_source_url": "https://ccam-va.com/discover-ccam/",
+        "activity_last_verified_at": "2026-11-05"
+      },
+      "add_sources": [
+        {
+          "title": "CCAM applied manufacturing research and test-bed capabilities",
+          "url": "https://ccam-va.com/discover-ccam/"
+        },
+        {
+          "title": "CCAM membership routes, IP distinctions and published address",
+          "url": "https://ccam-va.com/become-a-member/"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "Applied Impact Robotics",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Applied Impact Robotics develops robotic inspection technology designed to operate inside in-service crude-oil tanks, including sludge-filled conditions. Its official site describes closed-tank inspection and lists a Sterling business address.",
+        "contact_text": "Published company inquiry route; confirm current scope and availability directly.",
+        "partnership_opportunities": "",
+        "activity_source_url": "",
+        "activity_last_verified_at": null
+      },
+      "after": {
+        "overview": "Applied Impact Robotics develops robotic inspection systems for in-service crude-oil tanks, including sludge-filled environments. The company describes closed-tank inspection intended to reduce shutdowns and human entry into hazardous confined spaces. It identifies API 653-related inspection as an application; this profile does not independently certify a particular robot or inspection result.\n\nTank owners and inspection partners can use the company as a starting point for assessing whether an in-service robotic survey fits a specific asset. Discuss tank geometry, contents and sludge conditions, required measurements, inspection deliverables, hazardous-area acceptance, and the governing inspection plan. Request a technical scope and quote rather than assuming the advertised cost reductions will apply to every tank.",
+        "contact_text": "Applied Impact Robotics: scope an in-service tank inspection or discuss a technical/inspection partnership.",
+        "partnership_opportunities": "Discuss a tank-specific inspection scope, data deliverables and acceptance requirements with the engineering team.",
+        "activity_source_url": "https://www.appliedimpactrobotics.com/",
+        "activity_last_verified_at": "2026-11-05"
+      },
+      "add_sources": [
+        {
+          "title": "Applied Impact Robotics inspection application, service claims and Sterling contact",
+          "url": "https://www.appliedimpactrobotics.com/"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "ViDARR Virginia Beach Manufacturing Facility",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "ViDARR operates a 16,410-square-foot Virginia Beach manufacturing facility for advanced defense technologies, including autonomous systems, modular REAVERS uncrewed aircraft, thermal and night-vision payloads, and edge-manufactured components.",
+        "website_url": "https://vidarrinc.com/pages/about-us",
+        "contact_url": "https://vidarrinc.com/pages/about-us",
+        "contact_email": "peter@vidarrinc.com",
+        "contact_text": "ViDARR Virginia Beach facility",
+        "current_activity": "ViDARR identifies the Virginia Beach address as its manufacturing facility and currently markets the modular REAVERS UAS and distributed-manufacturing approach.",
+        "activity_source_url": "https://vidarrinc.com/pages/reavers-home",
+        "activity_last_verified_at": "2026-08-24"
+      },
+      "after": {
+        "overview": "ViDARR identifies 2656 Lishelle Place as its Virginia Beach manufacturing site, distinct from headquarters and engineering in Portsmouth, New Hampshire. Its portfolio includes modular REAVERS UAS, deployable manufacturing, build-to-print work, reverse engineering, kitting, and logistics. The operator now describes a 19,000-sq-ft facility; an earlier state announcement used 16,410 sq ft, so usable floor area should be confirmed where it affects a project.\n\nA customer can request a programme-specific aircraft, component or manufacturing quote. The current product site is a capability presentation with datasheets available on request, not a live priced catalogue. Confirm configuration, payload, endurance, interfaces, quantities and delivery schedule through sales; visits are by appointment.",
+        "website_url": "https://vidarrinc.com/about/",
+        "contact_url": "https://vidarrinc.com/contact/",
+        "contact_email": "sales@vidarrinc.com",
+        "contact_text": "ViDARR sales for quotes and programme scope; Virginia Beach manufacturing visits are by appointment, not at the New Hampshire headquarters.",
+        "current_activity": "The operator publishes Virginia Beach production, modular UAS and manufacturing services; configuration, pricing and datasheets require a direct enquiry.",
+        "activity_source_url": "https://vidarrinc.com/about/",
+        "activity_last_verified_at": "2026-11-05"
+      },
+      "add_sources": [
+        {
+          "title": "ViDARR current Virginia Beach production-site description",
+          "url": "https://vidarrinc.com/about/"
+        },
+        {
+          "title": "ViDARR REAVERS architecture and quote/datasheet availability",
+          "url": "https://vidarrinc.com/robotics/reavers/"
+        },
+        {
+          "title": "ViDARR manufacturing address, sales route and appointment condition",
+          "url": "https://vidarrinc.com/contact/"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "WR Systems Norfolk Operations Center",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "WR Systems maintains a documented Norfolk operations center and publishes direct unmanned-systems engineering for USV integration, navigation, payloads, command and control, testing, and lifecycle support.",
+        "contact_text": "WR Systems Norfolk operations inquiries",
+        "partnership_opportunities": "",
+        "activity_source_url": "https://wrsystems.com/unmanned-systems/",
+        "activity_last_verified_at": "2026-08-25"
+      },
+      "after": {
+        "overview": "WR Systems' Norfolk operations centre supports engineering and integration for uncrewed surface vessels. Its published unmanned-systems scope includes autonomous navigation, vessel control, sensors, communications, payload integration, cybersecurity support, and test planning through factory-acceptance and underway testing. WR also describes support for the Unmanned Maritime Autonomy Architecture.\n\nA vessel builder or operator can discuss integrating navigation, control and mission equipment into an existing platform, or supporting it through its lifecycle. Bring the vessel/interface baseline, payload requirements, desired autonomy functions and acceptance tests. The Norfolk office is distinct from Fairfax headquarters; confirm where fabrication, shore testing and on-water activities would occur for the actual contract.",
+        "contact_text": "WR Norfolk operations/project enquiries: USV integration, navigation, payloads, C2 and acceptance-test support.",
+        "partnership_opportunities": "Scope a vessel-integration or lifecycle-support task, including interfaces, test evidence and the location of any fabrication or on-water work.",
+        "activity_source_url": "https://wrsystems.com/unmanned-systems/",
+        "activity_last_verified_at": "2026-11-05"
+      },
+      "add_sources": [
+        {
+          "title": "WR USV integration, navigation, payload and testing services",
+          "url": "https://wrsystems.com/unmanned-systems/"
+        },
+        {
+          "title": "WR Norfolk operations-centre address and contact",
+          "url": "https://wrsystems.com/contact/"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "SimIS Autonomous Solutions",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "SimIS develops autonomous solutions from its Suffolk corporate base, including the RiverScout unmanned surface vessel, AI-enabled sensors and decision support, modeling and simulation, rapid prototyping, and test and evaluation services.",
+        "contact_text": "SimIS autonomous-solutions and project inquiries",
+        "partnership_opportunities": "",
+        "activity_source_url": "https://www.simisinc.com/autonomous-solutions",
+        "activity_last_verified_at": "2026-08-25"
+      },
+      "after": {
+        "overview": "SimIS develops autonomous training systems and maritime autonomy. RiverScout is described as a portable surface-vehicle testbed for rivers, harbours and inshore waters; SAMS is a perception, navigation and command-and-control package intended for integration with existing surface platforms. Its robotic training products support repeatable human-interaction and range scenarios.\n\nA research team can discuss a small-vessel or payload testbed, while an owner of an existing hull can ask about autonomy integration instead of replacing the platform. Request the specific product's payload/interface limits, control arrangements, demonstration, test evidence and procurement route. The Suffolk corporate office is an enquiry point, not confirmation of a publicly accessible waterfront test site.",
+        "contact_text": "SimIS project intake: platform demonstrations, maritime autonomy integration and technical/procurement enquiries.",
+        "partnership_opportunities": "Discuss a RiverScout research testbed, an existing-hull autonomy integration, or a repeatable robotic training scenario.",
+        "activity_source_url": "https://www.simisinc.com/autonomous-solutions",
+        "activity_last_verified_at": "2026-11-05"
+      },
+      "add_sources": [
+        {
+          "title": "SimIS RiverScout, SAMS and autonomous training applications",
+          "url": "https://www.simisinc.com/autonomous-solutions"
+        },
+        {
+          "title": "SimIS published Suffolk office and enquiry route",
+          "url": "https://www.simisinc.com/contact-us"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "Marine Sonic Technology",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Marine Sonic Technology operates from Yorktown as a TKMS ATLAS North America brand. It develops and supplies side-scan sonar, synthetic-aperture sonar, collision-avoidance sonar, depth sounders, and embedded systems for AUV, ROV, and towed use.",
+        "contact_text": "Marine Sonic Technology sales and support",
+        "partnership_opportunities": "",
+        "activity_source_url": "https://www.marinesonic.com/",
+        "activity_last_verified_at": "2026-08-24"
+      },
+      "after": {
+        "overview": "Marine Sonic supplies sonar for search, survey, recovery and autonomous underwater platforms from its Yorktown business location. Its product range separates towed systems such as ARC Explorer and SeaScan Hunter from embedded AUV systems such as ARC Scout and SeaScan Ranger synthetic-aperture sonar. A towed survey system and an embedded vehicle payload are not interchangeable purchases.\n\nAn AUV/ROV integrator or survey team can discuss the target-imaging task, platform interfaces, mounting, depth, frequency/range trade-offs, power and data requirements, and training. Request a product-specific datasheet and integration review. The Yorktown contact does not identify a public launch site or imply that every sonar configuration fits a particular uncrewed vehicle.",
+        "contact_text": "Marine Sonic sales: product selection, AUV/ROV integration, side-scan/SAS specifications and training enquiries.",
+        "partnership_opportunities": "Request a product-specific sonar configuration and interface review for a survey vessel, tow body or autonomous underwater vehicle.",
+        "activity_source_url": "https://www.marinesonic.com/",
+        "activity_last_verified_at": "2026-11-05"
+      },
+      "add_sources": [
+        {
+          "title": "Marine Sonic published sonar families, applications and Yorktown contact",
+          "url": "https://www.marinesonic.com/"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "Liquid Robotics Herndon Headquarters and Production",
+      "provenance": "curated-public-source",
+      "before": {
+        "short_description": "Herndon Wave Glider headquarters and production site, with a move to Jessup, Maryland announced for the end of 2026.",
+        "overview": "Liquid Robotics manufactures Wave Glider uncrewed surface vessels. Its current contact page still lists Herndon; a May 2026 announcement schedules headquarters and manufacturing relocation to Jessup, Maryland by year end.",
+        "activity_status": "active",
+        "current_activity": "Current published contact remains Herndon. On May 7, 2026 the company announced plans to relocate headquarters and manufacturing to Jessup, Maryland by the end of 2026; completion was not confirmed in the reviewed sources.",
+        "activity_source_url": "https://www.liquid-robotics.com/resource/liquid-robotics-relocation-jessup-maryland/",
+        "activity_last_verified_at": "2026-09-04",
+        "website_url": "https://www.liquid-robotics.com/blog/liquid-robotics-headquarters-relocation-herndon/",
+        "contact_email": "info@liquid-robotics.com",
+        "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area."
+      },
+      "after": {
+        "short_description": "Documented former Herndon headquarters/production footprint; the company now lists Jessup, Maryland, and current Virginia production is unconfirmed.",
+        "overview": "Liquid Robotics' 2022 announcement documented headquarters and Wave Glider production in Herndon. Its current contact page instead lists headquarters at 8280 Stayton Drive in Jessup, Maryland; a May 2026 announcement described relocation of both headquarters and manufacturing by year end. The reviewed sources do not establish whether all Herndon production has ceased or whether any Virginia work remains.\n\nThis entry preserves the documented Virginia footprint, not a confirmed currently available Virginia factory. For a new Wave Glider or maritime-data project, use the company's current sales route and confirm the relevant delivery, integration and test location. The company separately identifies its marine operations centre in Hawaii.",
+        "activity_status": "",
+        "current_activity": "Current headquarters is listed in Jessup, Maryland. Remaining Herndon manufacturing or research activity requires company confirmation.",
+        "activity_source_url": "https://www.liquid-robotics.com/contact-us/",
+        "activity_last_verified_at": "2026-11-05",
+        "website_url": "https://www.liquid-robotics.com/contact-us/",
+        "contact_email": "sales@liquid-robotics.com",
+        "contact_text": "Current Liquid Robotics business-development route; confirm whether any work remains at the former Herndon location before planning a Virginia visit."
+      },
+      "add_sources": [
+        {
+          "title": "Liquid Robotics current Maryland headquarters and business-development contact",
+          "url": "https://www.liquid-robotics.com/contact-us/"
+        },
+        {
+          "title": "Liquid Robotics announced headquarters/manufacturing relocation to Maryland",
+          "url": "https://www.liquid-robotics.com/resource/liquid-robotics-relocation-jessup-maryland/"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    },
+    {
+      "name": "Virginia Tech Center for Marine Autonomy and Robotics",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Virginia Tech's marine robotics center develops autonomous underwater vehicles and the algorithms that let them navigate, communicate, and work in teams. Its VT690 research vehicles carry bathymetric sonar and use acoustic communications and aided inertial navigation. Published work covers cooperative feature mapping, underwater communication prediction, hydrodynamic design, and vehicle control. A partner can engage the research team on marine autonomy or prototype development; the Blacksburg university address does not identify an ocean launch site or a publicly bookable maritime range.",
+        "contact_url": "https://marinerobotics.centers.vt.edu/index.html",
+        "contact_email": "",
+        "contact_phone": "",
+        "contact_text": "Public information route; a direct asset contact is not published in the catalog",
+        "address_line": "210 Burruss Hall, 800 Drillfield Dr.",
+        "postal_code": "24061-0131",
+        "location_precision": "site",
+        "location_method": "",
+        "location_source_url": "",
+        "location_last_verified_at": null,
+        "location_notes": ""
+      },
+      "after": {
+        "overview": "Virginia Tech's marine robotics centre researches underwater vehicle design, autonomy, navigation, control and cooperative sensing. Its published VT690 work includes bathymetric-sonar mapping, acoustic communication, and aided inertial navigation, making the centre relevant to research partnerships on underwater surveys, communications and multi-vehicle missions.\n\nA prospective collaborator can discuss a research question, prototype platform, experiment or validation dataset with the appropriate co-director. Dan Stilwell is the published systems-and-autonomy contact. The existing map point is a university-campus reference, not a confirmed laboratory entrance, ocean launch point or commercial test range; agree on the actual work and meeting location with the team.",
+        "contact_url": "https://marinerobotics.centers.vt.edu/people/stilwell.html",
+        "contact_email": "stilwell@vt.edu",
+        "contact_phone": "540-231-3204",
+        "contact_text": "Dan Stilwell, co-director for systems and autonomy. His published faculty office is separate from field-test and marine launch arrangements.",
+        "address_line": "",
+        "postal_code": "",
+        "location_precision": "locality",
+        "location_method": "locality",
+        "location_source_url": "https://marinerobotics.centers.vt.edu/people/stilwell.html",
+        "location_last_verified_at": "2026-11-05",
+        "location_notes": "General Blacksburg/university reference retained from the existing institution record, not a confirmed centre-specific laboratory. The generic university mailing address was removed. Contact the centre for the actual laboratory, meeting or field-test location; this is not an ocean launch site."
+      },
+      "add_sources": [
+        {
+          "title": "Virginia Tech marine robotics research overview",
+          "url": "https://marinerobotics.centers.vt.edu/index.html"
+        },
+        {
+          "title": "Marine robotics co-director and public project contact",
+          "url": "https://marinerobotics.centers.vt.edu/people/stilwell.html"
+        }
+      ],
+      "reason": "Decision-support profile review using published operator/institutional sources. No aircraft acceptance, current COA validity, booking availability, capacity or editorial verification is inferred."
+    }
+  ]
+}

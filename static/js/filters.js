@@ -34,7 +34,10 @@ export function bindFilterDrawer(root) {
   openButton?.addEventListener("click", openDrawer);
   closeButton?.addEventListener("click", () => closeDrawer({ restoreFocus: true }));
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && isOpen) closeDrawer({ restoreFocus: true });
+    if (event.key === "Escape" && isOpen) {
+      event.preventDefault();
+      closeDrawer({ restoreFocus: true });
+    }
   });
   compactLayout.addEventListener("change", syncAccessibility);
   syncAccessibility();

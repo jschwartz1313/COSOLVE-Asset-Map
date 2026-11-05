@@ -12,7 +12,10 @@ test("map layers toggle without moving the reset control", async ({ page }) => {
 
   const reset = page.locator("#reset-view");
   const initialTop = (await reset.boundingBox()).y;
+  await expect(page.locator(".map-legend")).toHaveAttribute("open", "");
+  await expect(page.locator(".legend-content")).toBeVisible();
   await page.locator(".map-legend summary").click();
+  await expect(page.locator(".legend-content")).toBeHidden();
   expect((await reset.boundingBox()).y).toBe(initialTop);
   await expect(page.locator(".legend-line.county-boundary")).toBeHidden();
   await expect(page.locator(".legend-content")).toContainText("County boundary");
@@ -83,7 +86,6 @@ test("map layers toggle without moving the reset control", async ({ page }) => {
   await controlledAirspaceToggle.check();
   await expect(page.locator(".leaflet-controlled-airspace-pane path")).toHaveCount(33);
   await expect(page.locator("[data-controlled-airspace-legend]")).not.toHaveAttribute("hidden");
-  await page.locator(".map-legend summary").click();
   await expect(page.locator("[data-controlled-airspace-legend]")).toBeVisible();
   await page.locator(".leaflet-controlled-airspace-pane path").first().dispatchEvent("click");
   await expect(page.locator(".drone-reference-popup")).toContainText("FAA flying near airports");
@@ -133,7 +135,6 @@ test("expanded map tools replace the results panel without covering the map", as
   expect(layersBox.width).toBeCloseTo(resultsBox.width, 0);
   expect(layersBox.x).toBeGreaterThanOrEqual(mapBox.x + mapBox.width);
 
-  await page.locator(".map-legend summary").click();
   await expect(page.locator(".map-layers")).toHaveAttribute("open", "");
   await expect(page.locator(".map-legend")).toHaveAttribute("open", "");
   const legendBox = await page.locator(".map-legend").boundingBox();
@@ -536,7 +537,6 @@ test("analytical map tools expose quality, summaries, and saved basemaps", async
   await page.locator(".map-layers summary").click();
   await page.locator("#verification-layer-toggle").check();
   await page.locator("#precision-layer-toggle").check();
-  await page.locator(".map-legend summary").click();
   await expect(page.locator("[data-verification-legend]")).toBeVisible();
   await expect(page.locator("[data-precision-legend]")).toBeVisible();
 
@@ -831,4 +831,5 @@ test("mobile filter drawer exposes an accessible open and close state", async ({
   await page.keyboard.press("Escape");
   await expect(openButton).toHaveAttribute("aria-expanded", "false");
   await expect(openButton).toBeFocused();
+  await expect(page.locator(".map-legend")).toHaveAttribute("open", "");
 });

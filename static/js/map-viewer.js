@@ -3,7 +3,7 @@ import {
   bindFilterDrawer,
   bindFilterIndicators,
   withoutFilterValue,
-} from "./filters.js?v=20261021-2";
+} from "./filters.js?v=20261105-1";
 import {
   downloadFeatureCsv,
   featuresWithinBounds,
@@ -11,7 +11,7 @@ import {
   featuresWithinRadius,
   summarizeRegion,
 } from "./map-analysis.js?v=20261028-1";
-import { createMap } from "./map.js?v=20261028-1";
+import { createMap } from "./map.js?v=20261105-1";
 import {
   analysisStateFromParams,
   filterParamsFromMapUrl,
@@ -749,7 +749,7 @@ closeInsightButton.addEventListener("click", () => {
 });
 
 document.addEventListener("keydown", (event) => {
-  if (event.key !== "Escape") return;
+  if (event.key !== "Escape" || event.defaultPrevented) return;
   if (polygonDrawing) {
     mapController.cancelSelection();
     clearAnalysis();
