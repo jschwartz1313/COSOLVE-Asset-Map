@@ -83,7 +83,7 @@ test("operator details and location evidence fit the standard design", async ({ 
   test.setTimeout(120_000);
   await page.goto("/assets/xelevate-leesburg-unmanned-systems-facility/");
   await expect(page.locator(".test-specifications")).toContainText("66-acre");
-  await expect(page.locator(".test-specifications")).toContainText("different site");
+  await expect(page.locator(".test-specifications")).toContainText("not additional Leesburg acreage");
   await expect(page.locator('a[href="mailto:jburkel@xelevateus.com"]')).toBeVisible();
   const overflow = await page.locator("h1, .test-spec-list dd, .detail-sidebar dd")
     .evaluateAll((els) => els.filter((el) => el.scrollWidth > el.clientWidth + 1)

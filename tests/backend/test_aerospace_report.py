@@ -15,6 +15,7 @@ from apps.assets.management.commands.apply_catalog_corrections import ALLOWED_FI
 from apps.assets.models import Asset
 from scripts.build_real_asset_catalog import (
     AEROSPACE_REPORT_CORRECTIONS_PATH,
+    FACILITY_PROFILES_PATH,
     apply_reviewed_corrections,
     validate,
 )
@@ -28,7 +29,11 @@ class AerospaceReportCatalogTests(SimpleTestCase):
         self.assertEqual(len(manifest["corrections"]), 1)
         change = manifest["corrections"][0]
         catalog = json.loads(CATALOG.read_text())
-        record = next(r for r in catalog["records"] if r["name"] == change["name"])
+        record = deepcopy(next(r for r in catalog["records"] if r["name"] == change["name"]))
+        # Check the historical correction before the later practical-use expansion.
+        for later in json.loads(FACILITY_PROFILES_PATH.read_text())["corrections"]:
+            if later["name"] == record["name"]:
+                record.update(later["before"])
         self.assertEqual(set(change["before"]), set(change["after"]))
         self.assertTrue(set(change["after"]) <= ALLOWED_FIELDS)
         self.assertTrue(change["review_required"])

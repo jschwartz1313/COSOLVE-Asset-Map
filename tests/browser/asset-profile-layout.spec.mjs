@@ -79,7 +79,7 @@ test("contact and location share a row below the description instead of a long s
 test("testing and site-readiness information remain visible inside capabilities", async ({ page }) => {
   await page.goto("/assets/xelevate-leesburg-unmanned-systems-facility/");
   await expect(page.locator(".focus-section .test-specifications")).toContainText("66-acre");
-  await expect(page.locator(".focus-section .test-specifications")).toContainText("different site");
+  await expect(page.locator(".focus-section .test-specifications")).toContainText("not additional Leesburg acreage");
   await expect(page.locator(".supporting-disclosure")).not.toHaveAttribute("open");
   await expect(page.getByRole("link", { name: "Operator specification source", exact: true })).toBeVisible();
   await page.goto("/assets/shenandoah-valley-aviation-technology-park/");

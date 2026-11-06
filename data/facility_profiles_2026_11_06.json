@@ -1,0 +1,976 @@
+{
+  "reviewed_at": "2026-11-06",
+  "scope": "Twenty-four existing test/research and manufacturing profiles; no new assets, operating approvals or public review badges.",
+  "corrections": [
+    {
+      "name": "Fulcrum Concepts Newport News Machine Shop",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Fulcrum's 7,490-square-foot Newport News machine shop centralizes the company's in-house machining. Published equipment includes five-axis and three-axis CNC machines and lathes for aerospace components, with much of the work involving aluminum alloys. Model-based machining and configuration-controlled component data connect engineering to production. This record represents machining capacity; Fulcrum's Mattaponi hangar and West Point manufacturing/avionics spaces are separate facilities.",
+        "contact_url": "https://fulcrumconceptsllc.com/contact/",
+        "contact_email": "fulcrummachineshop@fulcrumconceptsllc.com",
+        "contact_phone": "804-466-2762",
+        "contact_text": "Fulcrum Newport News machine shop inquiries",
+        "partnership_opportunities": "Contact the Newport News machine shop about part specifications, materials, quantities, and lead times; public sources do not state spare capacity.",
+        "activity_source_url": "https://fulcrumconceptsllc.com/about/manufacturing-and-production/",
+        "activity_last_verified_at": "2026-09-07"
+      },
+      "after": {
+        "overview": "Fulcrum's Newport News shop makes project-specific aerospace components for commercial and government customers. Its January 2026 opening announcement identifies a 7,490-square-foot facility with three five-axis CNC machines, one three-axis machine, and a CNC lathe. The company subsequently described pallet-pool automation for repeat production. This is the machining location, distinct from its Mattaponi headquarters and West Point warehouse.\n\nAn airframe or payload developer can discuss a prototype bracket, precision component, fixture, or production machining requirement. Supply the drawing or model, material, tolerances, quantity, inspection requirements, and delivery target through the machine-shop contact. Confirm material acceptance, machine envelope, certification scope, and current capacity before selecting a supplier.",
+        "contact_url": "https://fulcrumconceptsllc.com/contact/",
+        "contact_email": "fulcrummachineshop@fulcrumconceptsllc.com",
+        "contact_phone": "804-466-2762",
+        "contact_text": "Published Newport News machine-shop contact, rather than the corporate headquarters or warehouse receiving desk.",
+        "partnership_opportunities": "Discuss prototype or production machining against a defined drawing, material, inspection plan, quantity, and delivery requirement. Request secure instructions before transmitting controlled technical data.",
+        "activity_source_url": "https://fulcrumconceptsllc.com/about/manufacturing-and-production/",
+        "activity_last_verified_at": "2026-09-07"
+      },
+      "add_sources": [
+        {
+          "title": "Fulcrum Newport News equipment and commercial/government customer scope",
+          "url": "https://fulcrumconceptsllc.com/news/fulcrum-concepts-opens-new-machine-shop-in-newport-news-expanding-manufacturing-capabilities/"
+        },
+        {
+          "title": "Fulcrum direct machine-shop email, phone and location",
+          "url": "https://fulcrumconceptsllc.com/contact/"
+        },
+        {
+          "title": "Fulcrum 2026 shop opening and pallet-pool automation",
+          "url": "https://fulcrumconceptsllc.com/wp-content/uploads/PR_Machine_Shop_Ribbon_Cutting.pdf"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "Radian Forge Portsmouth Manufacturing Facility",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Radian Forge operates a Portsmouth wire-arc additive manufacturing facility focused on large metal components for naval, maritime, and defense customers. Its process combines robotic welding, digital design, and in-process monitoring.",
+        "website_url": "https://radianforge.com/",
+        "contact_url": "https://radianforge.com/",
+        "contact_email": "kait@radianforge.com",
+        "contact_text": "Radian Forge public and manufacturing inquiries",
+        "partnership_opportunities": "",
+        "activity_source_url": "https://radianforge.com/",
+        "activity_last_verified_at": "2026-08-30"
+      },
+      "after": {
+        "overview": "Radian Forge uses wire-arc additive manufacturing and industrial robotics for metal components serving maritime, defense, and industrial customers. Published material examples include copper-nickel, nickel-aluminum bronze, steels, and selected nickel alloys; titanium is excluded from the stated capability. Potential applications include replacement fittings, brackets, fixtures, and other parts affected by obsolete supply chains.\n\nBegin with a drawing, model, scan, or existing component and the required material, quantity, service conditions, and delivery date. The company evaluates geometry, manufacturing approach, finishing, inspection, and customer acceptance; printing a part is not itself qualification for service. Its public intake says not to upload controlled data and instead to request a secure submission route.",
+        "website_url": "https://radianforge.com/capabilities/",
+        "contact_url": "https://radianforge.com/contact/",
+        "contact_email": "sales@radianforge.com",
+        "contact_text": "Component-manufacturing intake. Describe the part and acceptance requirements; request the operator's secure route for controlled drawings.",
+        "partnership_opportunities": "Evaluate additive manufacturing or reverse engineering for a specific replacement or new component. Confirm material qualification, inspection, finishing, price, and lead time.",
+        "activity_source_url": "https://radianforge.com/",
+        "activity_last_verified_at": "2026-08-30"
+      },
+      "add_sources": [
+        {
+          "title": "Radian Forge materials, reverse engineering and acceptance workflow",
+          "url": "https://radianforge.com/capabilities/"
+        },
+        {
+          "title": "Radian Forge project intake and controlled-data submission instructions",
+          "url": "https://radianforge.com/contact/"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "Defense Maritime Solutions Chesapeake Manufacturing Facility",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Defense Maritime Solutions operates a marine repair, assembly and systems-integration facility in Chesapeake. Its public company history describes propeller and thruster work and equipment assembly and testing. An August 2026 announcement proposes expanded domestic manufacturing and testing of Wartsila medium-speed marine engines; it does not establish that the new engine-production capacity is already operational.",
+        "contact_url": "https://dmsamerica.com/contact/",
+        "contact_email": "info@DMSAmerica.com",
+        "contact_phone": "757-558-3625",
+        "contact_text": "Defense Maritime Solutions Chesapeake facility",
+        "partnership_opportunities": "",
+        "activity_source_url": "https://www.governor.virginia.gov/newsroom/news-releases/2026/august-releases/name-1122358-en.html",
+        "activity_last_verified_at": "2026-08-30"
+      },
+      "after": {
+        "overview": "Defense Maritime Solutions provides assembly, integration, testing, and lifecycle support for marine propulsion and pump equipment. Its published scope includes thruster gearboxes, shaft lines, thrust bearings, tunnel thrusters, propellers, and pumps, with project planning, assembly procedures, testing, and quality reports. The Chesapeake facility is a potential supply-chain and integration resource for maritime platforms, not an open-water autonomy range.\n\nA vessel developer can ask about matching propulsion components, commissioning an integrated assembly, or supporting overhaul and sustainment. Define the vessel application, interfaces, acceptance tests, documentation, and schedule with DMS. The separately announced Virginia engine-manufacturing expansion should not be treated as proof that every proposed new production capability is already available.",
+        "contact_url": "https://dmsamerica.com/contact/",
+        "contact_email": "info@DMSAmerica.com",
+        "contact_phone": "757-558-3625",
+        "contact_text": "Published Chesapeake office contact. Request the assembly, propulsion-integration, or lifecycle-support team for the proposed project.",
+        "partnership_opportunities": "Discuss maritime propulsion or pump assembly, integration, testing, commissioning, or overhaul against a vessel-specific technical scope.",
+        "activity_source_url": "https://www.governor.virginia.gov/newsroom/news-releases/2026/august-releases/name-1122358-en.html",
+        "activity_last_verified_at": "2026-08-30"
+      },
+      "add_sources": [
+        {
+          "title": "DMS maritime assembly, integration, testing and quality-report services",
+          "url": "https://dmsamerica.com/assembly-integration-testing/"
+        },
+        {
+          "title": "DMS Chesapeake contact and address",
+          "url": "https://dmsamerica.com/contact/"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "Fairlead Maritime Systems",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Portsmouth-headquartered maritime manufacturer and systems integrator with several Virginia facilities. Its services include power and control systems, modular ship construction, vessel overhaul, outfitting, and systems integration. The reported waterfront acreage and pier frontage describe a combined industrial footprint, not the headquarters parcel. Fairlead and SNC announced an AEGIR unmanned-surface-vessel production partnership in May 2026; the announcement does not identify a specific Virginia production address or confirm delivered quantities.",
+        "contact_url": "https://fairlead.com/",
+        "contact_phone": "757-384-1957",
+        "contact_text": "Fairlead corporate routing for maritime project inquiries",
+        "partnership_opportunities": "Use Fairlead's corporate contact route to identify the appropriate facility for fabrication, integration, vessel work, or supplier inquiries.",
+        "activity_source_url": "https://fairlead.com/about/press-releases/snc-and-fairlead/",
+        "activity_last_verified_at": "2026-09-07"
+      },
+      "after": {
+        "overview": "Fairlead offers maritime control-system engineering, power and energy-system integration, build-to-print manufacturing, modular structures, and vessel sustainment across several Hampton Roads facilities. Its integration services cover system architecture, testing, and validation, which can be relevant when a maritime autonomy developer needs the supporting electrical, control, or fabricated systems around a platform.\n\nStart with the system interfaces, operating environment, applicable requirements, production quantity, and acceptance plan, then ask Fairlead to identify the appropriate technical team and location. Corporate waterfront acreage and pier frontage describe a combined industrial footprint, not the headquarters parcel or space available to a particular customer. Arrange any site visit and confirm equipment, project eligibility, schedule, and commercial terms directly.",
+        "contact_url": "https://fairlead.com/contact/",
+        "contact_phone": "757-384-1957",
+        "contact_text": "Corporate project intake; ask for maritime systems engineering/integration and the facility appropriate to the requirement.",
+        "partnership_opportunities": "Request a capability discussion for maritime controls, power integration, build-to-print components, modular structures, or sustainment. Confirm the work location rather than assuming all services occur at headquarters.",
+        "activity_source_url": "https://fairlead.com/about/press-releases/snc-and-fairlead/",
+        "activity_last_verified_at": "2026-09-07"
+      },
+      "add_sources": [
+        {
+          "title": "Fairlead maritime control, power and build-to-print services",
+          "url": "https://fairlead.com/capabilities/maritime-systems-engineering-and-integration/"
+        },
+        {
+          "title": "Fairlead corporate contact and project enquiry route",
+          "url": "https://fairlead.com/contact/"
+        },
+        {
+          "title": "Fairlead multi-site industrial footprint",
+          "url": "https://fairlead.com/"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "HUSH Aerospace",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Virginia company providing UAS product design, prototyping, analysis, and manufacturing. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+        "contact_url": "https://www.hush.aero/contact-hush",
+        "contact_email": "info@hush.aero",
+        "contact_phone": "",
+        "contact_text": "Organization public information and inquiries",
+        "test_aircraft": "",
+        "test_dimensions": "",
+        "test_access": "",
+        "test_source_url": "",
+        "test_last_verified_at": null
+      },
+      "after": {
+        "overview": "HUSH describes a Virginia Beach UAV design and manufacturing operation combining product design, analysis, prototyping, manufacturing, and an indoor flight-test area. Its operator page identifies an 88,000-square-foot overall facility and a focus on air/water mission concepts, payload flexibility, endurance, and reduced acoustic signature. Total building area is not the size of the indoor flight envelope.\n\nA developer can discuss a custom platform, payload integration, prototype build, or indoor evaluation as part of a supplier project. Bring mission, payload, acoustic, and production requirements to the company. Confirm the test area's usable dimensions, aircraft acceptance, instrumentation, third-party access, safety arrangements, and commercial terms; the published indoor capability does not establish an independently bookable public range.",
+        "contact_url": "https://www.hush.aero/contact-hush",
+        "contact_email": "info@hush.aero",
+        "contact_phone": "757-202-8668",
+        "contact_text": "HUSH general project enquiries. The operator separately publishes a partnerships contact on its contact page.",
+        "test_aircraft": "Company UAS design, prototype, and indoor evaluation work. Current third-party aircraft acceptance and test envelope are not published.",
+        "test_dimensions": "Operator states 88,000 sq ft for the overall design/manufacturing facility. Indoor flight-test area dimensions and allowable aircraft size are not established by that figure.",
+        "test_access": "Discuss a defined company or partner project. Confirm whether third-party indoor testing is offered and obtain the applicable safety, aircraft-acceptance, scheduling, and commercial arrangements.",
+        "test_source_url": "https://www.hush.aero/what-we-do",
+        "test_last_verified_at": "2026-11-06"
+      },
+      "accepted_baselines": [
+        {
+          "overview": "Virginia company providing UAS product design, prototyping, analysis, and manufacturing. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+          "contact_url": "https://www.hush.aero/contact-hush",
+          "contact_email": "info@hush.aero",
+          "contact_phone": "",
+          "contact_text": "Organization public information and inquiries",
+          "test_aircraft": "",
+          "test_dimensions": "",
+          "test_access": "",
+          "test_source_url": "",
+          "test_last_verified_at": null
+        }
+      ],
+      "add_sources": [
+        {
+          "title": "HUSH Virginia Beach manufacturing and indoor flight-test capability",
+          "url": "https://www.hush.aero/what-we-do"
+        },
+        {
+          "title": "HUSH published project contacts, phone and address",
+          "url": "https://www.hush.aero/contact-hush"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "Aeroprobe",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Aeroprobe supplies air-data computers, pressure and flow probes, calibration services, and data-analysis tools for aircraft and research. Its UAS offering provides onboard flow information to pilots and autopilots, while its measurement products support aerodynamic experiments and instrument validation. An aircraft developer can use these resources to integrate air-data sensing or calibrate a probe before flight testing. Published on-site calibration wind tunnels are instrumentation resources, not evidence that the company operates a public outdoor UAS range.",
+        "contact_url": "https://www.aeroprobe.com/contact/",
+        "contact_email": "",
+        "contact_text": "Organization public information and inquiries",
+        "partnership_opportunities": "",
+        "activity_source_url": "",
+        "activity_last_verified_at": null
+      },
+      "after": {
+        "overview": "Aeroprobe supplies air-data computers, pressure/flow probes, and associated data-reduction tools, plus on-site aerodynamic probe calibration. Its calibration page describes free-jet testing, custom calibration grids, and traceable certificates, with published calibration speeds from 10 m/s to Mach 1.8. These are instrumentation calibration conditions, not an aircraft's approved operating envelope or a public flight-range capability.\n\nAn aircraft developer can evaluate air-data integration for an autopilot or commission probe calibration before a wind-tunnel or flight campaign. Specify the probe, expected speed/angle conditions, acquisition hardware, software, required uncertainty, and certificate needs. Use the quote form for product enquiries or the published calibration address for recalibration; confirm configuration-specific performance and turnaround directly.",
+        "contact_url": "https://www.aeroprobe.com/contact/",
+        "contact_email": "calibration@aeroprobe.com",
+        "contact_text": "The listed email is specifically for calibration/recalibration. Use the operator's quote form for air-data products and other sales enquiries.",
+        "partnership_opportunities": "Scope air-data sensing integration, a custom calibration grid, or probe recalibration against the project's measurement and uncertainty requirements.",
+        "activity_source_url": "https://www.aeroprobe.com/aerodynamic-probe-calibration/",
+        "activity_last_verified_at": "2026-11-06"
+      },
+      "accepted_baselines": [
+        {
+          "overview": "Aeroprobe supplies air-data computers, pressure and flow probes, calibration services, and data-analysis tools for aircraft and research. Its UAS offering provides onboard flow information to pilots and autopilots, while its measurement products support aerodynamic experiments and instrument validation. An aircraft developer can use these resources to integrate air-data sensing or calibrate a probe before flight testing. Published on-site calibration wind tunnels are instrumentation resources, not evidence that the company operates a public outdoor UAS range.",
+          "contact_url": "https://www.vedp.org/industry/unmanned-systems",
+          "contact_email": "",
+          "contact_text": "Public information route; a direct asset contact is not published in the catalog",
+          "partnership_opportunities": "",
+          "activity_source_url": "",
+          "activity_last_verified_at": null
+        }
+      ],
+      "add_sources": [
+        {
+          "title": "Aeroprobe calibration workflow, speed range, certificates and calibration email",
+          "url": "https://www.aeroprobe.com/aerodynamic-probe-calibration/"
+        },
+        {
+          "title": "Aeroprobe product sales/quote form and Christiansburg address",
+          "url": "https://www.aeroprobe.com/contact/"
+        },
+        {
+          "title": "Aeroprobe air-data and UAS instrumentation products",
+          "url": "https://www.aeroprobe.com/"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "Inertial Labs",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Inertial Labs designs and manufactures inertial measurement, navigation, and sensor-fusion systems in Virginia. The company identifies a Leesburg production facility, and a federal inspection record classifies the mapped Paeonian Springs establishment as a navigation and guidance instrument manufacturing site.",
+        "contact_url": "https://inertiallabs.com/inertial-labs-inc/contact-inertial-labs-team/",
+        "contact_email": "il.info@viavisolutions.com",
+        "contact_phone": "",
+        "contact_text": "Organization public information and inquiries",
+        "partnership_opportunities": "",
+        "activity_source_url": "https://inertiallabs.com/inertial-labs-inc/",
+        "activity_last_verified_at": "2026-08-21"
+      },
+      "after": {
+        "overview": "Inertial Labs, a VIAVI Solutions company, develops inertial measurement units, GPS-aided navigation systems, attitude/heading systems, and sensor-fusion products. Published applications include UAV navigation, platform stabilization, LiDAR payloads, and operation with degraded satellite-navigation inputs. The company distinguishes its Paeonian Springs headquarters/R&D location from a Leesburg production facility; a headquarters marker should not imply that every listed product is manufactured on that parcel.\n\nA platform integrator can discuss navigation accuracy, environmental conditions, external aiding sensors, interfaces, size/power constraints, and calibration or integration support. Compare a specific product datasheet against the intended mission rather than treating the corporate portfolio as a single specification. Confirm the production location, configuration, delivery schedule, and any visit directly.",
+        "contact_url": "https://inertiallabs.com/inertial-labs-inc/contact-inertial-labs-team/",
+        "contact_email": "il.info@viavisolutions.com",
+        "contact_phone": "703-880-4222",
+        "contact_text": "Published Virginia headquarters and sales/technical-support intake for Inertial Labs, a VIAVI Solutions company.",
+        "partnership_opportunities": "Discuss product selection or integration for inertial navigation, stabilization, sensor fusion, or remote-sensing payloads. Request a configuration-specific specification and production quotation.",
+        "activity_source_url": "https://inertiallabs.com/inertial-labs-inc/",
+        "activity_last_verified_at": "2026-08-21"
+      },
+      "accepted_baselines": [
+        {
+          "overview": "Virginia headquarters and R&D operation developing inertial navigation, positioning, and sensor-fusion systems for UAV, UGV, and marine platforms. Public sources support its classification as a Virginia organization. Documented capabilities include Manufacturing, materials, and prototyping and Systems engineering and integration. Relevant mission areas include Training and experimentation.",
+          "contact_url": "https://inertiallabs.com/inertial-labs-inc/contact-inertial-labs-team/",
+          "contact_email": "il.info@viavisolutions.com",
+          "contact_phone": "",
+          "contact_text": "Organization public information and inquiries",
+          "partnership_opportunities": "",
+          "activity_source_url": "https://inertiallabs.com/inertial-labs-inc/",
+          "activity_last_verified_at": "2026-08-21"
+        }
+      ],
+      "add_sources": [
+        {
+          "title": "Inertial Labs products, VIAVI ownership and separate Virginia production/HQ locations",
+          "url": "https://inertiallabs.com/inertial-labs-inc/"
+        },
+        {
+          "title": "Inertial Labs current Virginia contact information",
+          "url": "https://inertiallabs.com/inertial-labs-inc/contact-inertial-labs-team/"
+        },
+        {
+          "title": "Inertial Labs 2026 navigation applications and sales contact",
+          "url": "https://inertiallabs.com/inertial-labs-mspo-2026-kielce-poland/"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "Textron Systems Aerosonde UAS Center of Excellence",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Textron Systems operates an Aerosonde UAS Center of Excellence in Blackstone. The company describes the 38,000-square-foot site as supporting production, assembly, flight testing, training, operations, logistics, and life-cycle support for its Aerosonde uncrewed aircraft family.",
+        "website_url": "",
+        "contact_url": "https://www.textronsystems.com/sites/default/files/_documents/Aerosonde%20UAS%20Family%20Brochure.pdf",
+        "contact_email": "unmannedsystems@textronsystems.com",
+        "contact_phone": "800-655-2616",
+        "contact_text": "Textron unmanned systems business inquiries; corporate contact for Aerosonde and Blackstone training, not a direct site booking number",
+        "partnership_opportunities": "",
+        "activity_source_url": "https://www.textronsystems.com/our-company/operational-footprint",
+        "activity_last_verified_at": "2026-08-24"
+      },
+      "after": {
+        "overview": "Textron's Blackstone Aerosonde Center of Excellence combines production and assembly with system testing, training, logistics, and quality inspection in a published 38,000-square-foot facility. The operator describes classroom and flight-line instruction covering Aerosonde familiarization, crewmember qualification, and maintenance certification. It is a manufacturer-specific support and training resource rather than a general-purpose public drone range.\n\nAn Aerosonde customer or potential integration partner can discuss aircraft/payload configuration, crew and maintenance training, sustainment, or contracted operational support. Confirm course prerequisites, eligibility, aircraft configuration, current flight approvals, and scheduling with Textron. The company's dated 2023 experimental airworthiness announcement applies to the stated Textron operation; it does not grant permission to unrelated users or aircraft.",
+        "website_url": "https://www.textronsystems.com/products/aerosonde-uas",
+        "contact_url": "https://www.textronsystems.com/products/aerosonde-uas",
+        "contact_email": "unmannedsystems@textronsystems.com",
+        "contact_phone": "800-655-2616",
+        "contact_text": "Published Unmanned Systems product/training enquiry route. Ask specifically for Blackstone Aerosonde support rather than assuming public range rental.",
+        "partnership_opportunities": "Discuss Aerosonde customer training, maintenance support, payload integration, or contracted operations. Request current programme-specific eligibility and commercial terms.",
+        "activity_source_url": "https://www.textronsystems.com/our-company/operational-footprint",
+        "activity_last_verified_at": "2026-08-24"
+      },
+      "add_sources": [
+        {
+          "title": "Textron Aerosonde Blackstone production, training and support scope",
+          "url": "https://www.textronsystems.com/our-company/news-events/articles/inside-ts/aerosonde-uas-center-excellence"
+        },
+        {
+          "title": "Textron Aerosonde product and current training/support offering",
+          "url": "https://www.textronsystems.com/products/aerosonde-uas"
+        },
+        {
+          "title": "Textron Aerosonde family brochure and published enquiries contact",
+          "url": "https://www.textronsystems.com/sites/default/files/_documents/Aerosonde%20UAS%20Family%20Brochure.pdf"
+        },
+        {
+          "title": "Textron 2023 Blackstone experimental airworthiness announcement",
+          "url": "https://www.textronsystems.com/our-company/news-events/articles/press-release/faa-grants-textron-systems-special-airworthiness"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "Wrap Technologies Norton Manufacturing Headquarters",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Wrap Technologies opened this 20,000-square-foot manufacturing headquarters in September 2025. The company performs final assembly, testing, quality verification, and shipping in Norton and identifies the site for development and future assembly of its 1KC counter-drone cassette and autonomous products.",
+        "website_url": "",
+        "contact_text": "Wrap Technologies investor and public information",
+        "partnership_opportunities": "",
+        "activity_source_url": "https://ir.wrap.com/node/12121/html",
+        "activity_last_verified_at": "2026-08-30"
+      },
+      "after": {
+        "overview": "Wrap's Norton manufacturing headquarters performs final assembly, testing, quality verification, and shipping, according to its FY2025 annual report filed in March 2026. The company's 2025 opening announcement also describes engineering/R&D and demonstration/training space. Norton is distinct from Wrap's corporate headquarters in Miami and from third-party component suppliers.\n\nFor an agency or potential partner, the useful question is which current product, demonstration, training, or supply-chain requirement the Norton team can support. Ask for the relevant technical or procurement contact, product status, acceptance evidence, and delivery terms. Announced capacity and the counter-UAS development roadmap are not evidence of present output, completed qualification, or availability of every proposed product. A factory visit requires an arrangement with the operator.",
+        "website_url": "https://www.wrap.com/",
+        "contact_text": "Published corporate investor-relations route, not a site booking or engineering contact. Request routing to the appropriate product/manufacturing team.",
+        "partnership_opportunities": "Confirm the current product scope and request the appropriate manufacturing, demonstration/training, or supplier contact. The Norton facility is not presented as a public drone test range.",
+        "activity_source_url": "https://ir.wrap.com/node/12121/html",
+        "activity_last_verified_at": "2026-08-30"
+      },
+      "add_sources": [
+        {
+          "title": "Wrap FY2025 Form 10-K: Norton assembly, testing and supplier roles",
+          "url": "https://ir.wrap.com/node/12121/html"
+        },
+        {
+          "title": "Wrap Norton manufacturing opening and proposed capabilities",
+          "url": "https://ir.wrap.com/news-releases/news-release-details/wrap-technologies-opens-new-virginia-facility-scale-bolawrapr"
+        },
+        {
+          "title": "Wrap current corporate and Norton manufacturing addresses/contact route",
+          "url": "https://ir.wrap.com/ir-resources/investor-faqs"
+        },
+        {
+          "title": "Wrap operator website",
+          "url": "https://www.wrap.com/"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "L3Harris Orange County Propulsion Manufacturing Site",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "L3Harris's Orange County campus researches propellants, manufactures small and medium solid rocket motors, and tests propulsion components. The existing plant has 256,000 square feet of manufacturing space. Its Stinger propulsion work supports counter-UAS supply chains rather than drone production. The operator identifies three propulsion-test facilities on the campus; these are not public drone flight ranges.",
+        "contact_url": "https://arsuppliernet.l3harris.com/sites/default/files/documents/SupplierNet/sites/ar-suppliernet-logistics-site-visits.pdf",
+        "contact_text": "L3Harris Orange County supplier and site logistics",
+        "partnership_opportunities": "",
+        "activity_source_url": "https://www.l3harris.com/newsroom/press-release/2026/04/l3harris-announces-billion-dollar-expansion-orange-county-virginia",
+        "activity_last_verified_at": "2026-09-29"
+      },
+      "after": {
+        "overview": "L3Harris identifies Orange County as a centre for propellant research and small-to-medium solid rocket motor production, with a propellant laboratory and 256,000 square feet of existing manufacturing space. Its operator page also identifies static, aerothermal, and altitude propulsion-test facilities on the campus. These are specialized defense/space propulsion resources, not a public UAS flight field or general drone assembly service.\n\nA qualified customer or supplier can use this entry to route a propulsion, component, or supply-chain discussion through L3Harris's capability or supplier enquiry channels. Confirm programme fit, access and information-handling requirements, and the scope of any proposed work directly. The April 2026 Virginia Advanced Propulsion Facilities expansion is announced future capacity, not a confirmed doubling of today's usable manufacturing space.",
+        "contact_url": "https://www.l3harris.com/contact-us",
+        "contact_text": "Use capability enquiries for propulsion projects or the prospective-supplier route for supply-chain discussions. This is not a public range reservation contact.",
+        "partnership_opportunities": "Request routing to Orange County propulsion programmes or supply-chain personnel through the operator's capability/supplier channels. Establish programme eligibility and acceptance requirements before pursuing a site visit.",
+        "activity_source_url": "https://www.l3harris.com/newsroom/press-release/2026/04/l3harris-announces-billion-dollar-expansion-orange-county-virginia",
+        "activity_last_verified_at": "2026-09-29"
+      },
+      "add_sources": [
+        {
+          "title": "L3Harris Orange County existing manufacturing and propulsion-test facilities",
+          "url": "https://www.l3harris.com/all-capabilities/solid-rocket-motors"
+        },
+        {
+          "title": "L3Harris April 2026 Virginia expansion: existing versus planned capacity",
+          "url": "https://www.l3harris.com/newsroom/press-release/2026/04/l3harris-announces-billion-dollar-expansion-orange-county-virginia"
+        },
+        {
+          "title": "L3Harris capability and prospective-supplier enquiry channels",
+          "url": "https://www.l3harris.com/contact-us"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "UVision USA Stafford Production and Training Center",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "UVision USA operates a 25,000-square-foot production and training center at the Quantico Corporate Center in Stafford. The company states that the facility produces the HERO family of loitering unmanned aircraft systems for U.S. and international customers.",
+        "website_url": "https://uvisionuav.com/uvision-usa/",
+        "contact_url": "https://uvisionuav.com/uvision-usa/",
+        "contact_email": "jim.truxel@uvisionusa.com",
+        "contact_phone": "540-303-3354",
+        "contact_text": "UVision USA public contact",
+        "partnership_opportunities": "",
+        "activity_source_url": "https://uvisionuav.com/uvision-usa/",
+        "activity_last_verified_at": "2026-08-24"
+      },
+      "after": {
+        "overview": "UVision's Stafford operation is a U.S. production, integration, training, and sustainment resource for its loitering-munition systems. The company's facility announcement identifies a 25,000-square-foot centre at Quantico Corporate Center, while its current U.S. website lists the Stafford headquarters and a broader two-facility U.S. manufacturing footprint. That wider portfolio should not be assumed to be produced entirely at one Virginia address.\n\nEligible government customers and industry partners can discuss programme support, platform integration, training, sustainment, or supply-chain opportunities through the U.S. office. Confirm which work is performed in Stafford, applicable procurement/export eligibility, approved information-sharing arrangements, and current availability. This entry does not imply public range access, permission to conduct live operations, or a general consumer-drone manufacturing service.",
+        "website_url": "https://uvisionusa.com/",
+        "contact_url": "https://uvisionusa.com/",
+        "contact_email": "",
+        "contact_phone": "540-627-6106",
+        "contact_text": "Current published U.S. Stafford office number for programme, integration, training, and sustainment enquiries. An older named contact has not been carried forward as a current technical contact.",
+        "partnership_opportunities": "Discuss eligible U.S. programme, integration, training, sustainment, or supplier requirements with the Stafford office and confirm the work location and programme-specific terms.",
+        "activity_source_url": "https://uvisionuav.com/uvision-usa/",
+        "activity_last_verified_at": "2026-08-24"
+      },
+      "add_sources": [
+        {
+          "title": "UVision current U.S. production/integration/training scope and Stafford contact",
+          "url": "https://uvisionusa.com/"
+        },
+        {
+          "title": "UVision Stafford production facility opening and published building area",
+          "url": "https://uvisionuav.com/uvision-usa/"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "Volvo Trucks New River Valley Plant",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Truck manufacturing facility connected to Volvo autonomous-truck development documented by VEDP. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence, Systems engineering and integration, and Manufacturing, materials, and prototyping. Relevant mission areas include Logistics and contested logistics.",
+        "contact_text": "Facility or operator public information",
+        "partnership_opportunities": "",
+        "activity_source_url": "",
+        "activity_last_verified_at": null
+      },
+      "after": {
+        "overview": "Volvo's Dublin plant provides industrial-scale cab and vehicle assembly for its North American truck range. The operator identifies 2.3 million square feet of manufacturing space, automated cab/paint operations, and a body-in-white/global pilot plant. Volvo's autonomous-truck announcement identifies New River Valley as the intended assembly location for the Volvo VNL Autonomous; that statement should not be read as a public autonomous-driving test service.\n\nThe site is relevant to heavy-vehicle supply chains, production engineering, and scaling autonomous-truck platforms into an established manufacturing system. Potential suppliers should use Volvo Group's supplier process, while fleets should pursue vehicle/autonomous-service discussions through the appropriate commercial team. Confirm the specific programme, current production arrangement, qualification requirements, and site access rather than assuming spare factory capacity is available for unrelated projects.",
+        "contact_text": "Operator's New River Valley information page; use Volvo Group supplier channels for manufacturing supply-chain enquiries and the commercial/autonomous-solutions team for vehicle programmes.",
+        "partnership_opportunities": "Explore programme-specific heavy-vehicle supply-chain or manufacturing requirements through Volvo Group's supplier process. Factory capacity and autonomous operations are not offered as public range rental.",
+        "activity_source_url": "https://www.volvogroup.com/en/about-us/organization/our-production-facilities/new-river-valley-plant.html",
+        "activity_last_verified_at": "2026-11-06"
+      },
+      "accepted_baselines": [
+        {
+          "overview": "Truck manufacturing facility connected to Volvo autonomous-truck development documented by VEDP. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence and Systems engineering and integration. Relevant mission areas include Logistics and contested logistics.",
+          "contact_text": "Public information route; a direct asset contact is not published in the catalog",
+          "partnership_opportunities": "",
+          "activity_source_url": "",
+          "activity_last_verified_at": null
+        }
+      ],
+      "add_sources": [
+        {
+          "title": "Volvo New River Valley assembly operations, scale and plant facilities",
+          "url": "https://www.volvogroup.com/en/about-us/organization/our-production-facilities/new-river-valley-plant.html"
+        },
+        {
+          "title": "Volvo VNL Autonomous programme and stated New River Valley assembly location",
+          "url": "https://www.volvogroup.com/en/news-and-media/news/2024/may/the-volvo-vnl-autonomous-proving-the-way-forward.html"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "NASA Autonomy Lab for Intelligent Flight Systems",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "The Autonomy Lab for Intelligent Flight Systems brings together NASA Langley researchers, UAS pilots, safety personnel, and technicians to advance autonomous operations. Its focus includes aerial navigation in dynamic, data-degraded environments, multimodal navigation, payload delivery, and machine learning.",
+        "contact_url": "https://www.nasa.gov/contact/",
+        "contact_text": "NASA Langley public inquiries",
+        "test_aircraft": "",
+        "test_dimensions": "",
+        "test_access": "",
+        "test_source_url": "",
+        "test_last_verified_at": null
+      },
+      "after": {
+        "overview": "NASA's 2024 ISAM State of Play describes A-LIFT as a Langley autonomy/robotics laboratory with a 1,680-square-foot indoor flight space and an outdoor area measuring 60 by 60 ft and 50 ft tall. Its published research focus includes navigation, sensing, autonomous operations, and preparation for aeronautics and space-robotics problems. These dated facility dimensions are not a current aircraft-acceptance specification.\n\nA research team can discuss a contained autonomy, navigation, or sensing experiment before progressing to a larger outdoor campaign. Start through NASA Langley's partnership intake and ask which A-LIFT resources remain available, what data/instrumentation can be supplied, and which agreements and safety reviews apply. Current booking availability, permitted aircraft, and operational approvals have not been established by the historical facility description.",
+        "contact_url": "https://www.nasa.gov/langley/frontdoor/",
+        "contact_text": "NASA Langley partnership/facility intake. Ask for the A-LIFT research team and confirmation of the currently available experimental environment.",
+        "test_aircraft": "Published autonomy and robotics research environment. Aircraft acceptance, weight/span limits, and current operating approvals require operator confirmation.",
+        "test_dimensions": "NASA's 2024 ISAM inventory lists 1,680 sq ft of indoor flight space and an outdoor 60 x 60 x 50 ft area. These are dated facility descriptions, not current allowable aircraft dimensions.",
+        "test_access": "Seek a NASA-coordinated research project through Langley's partnership intake; confirm current facility configuration, project agreements, aircraft acceptance, instrumentation, and safety approval.",
+        "test_source_url": "https://ntrs.nasa.gov/api/citations/20240012414/downloads/ISAM_State_of_Play_2024_final.pdf",
+        "test_last_verified_at": "2026-11-06"
+      },
+      "add_sources": [
+        {
+          "title": "NASA 2024 ISAM State of Play: A-LIFT research scope and facility dimensions",
+          "url": "https://ntrs.nasa.gov/api/citations/20240012414/downloads/ISAM_State_of_Play_2024_final.pdf"
+        },
+        {
+          "title": "NASA Langley facility and partnership intake",
+          "url": "https://www.nasa.gov/langley/frontdoor/"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "NASA Flight Dynamics Research Facility",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "NASA Langley's Flight Dynamics Research Facility is a vertical, subsonic wind tunnel for studying stability, controllability, free fall, spin behavior, and recovery. It supports free-flight and captive experiments on atmospheric vehicles, including autonomous aircraft and drones. This can help a development team investigate difficult flight-dynamics behavior before outdoor flight testing. The published 25,000-square-foot figure is building area, not an outdoor flight envelope or a permitted aircraft size.",
+        "contact_url": "https://www.nasa.gov/directorates/armd/flight-dynamics-research-facility/",
+        "contact_email": "Corey.diebler@nasa.gov",
+        "contact_phone": "757-864-8447",
+        "contact_text": "FDRF technical inquiries: Corey G. Diebler; confirm commissioning and test availability with NASA",
+        "test_dimensions": "25,000-square-foot facility with a vertical subsonic test section. Building floor area does not define usable test-section dimensions.",
+        "test_access": "Discuss model requirements, test conditions, scheduling, and facility access with NASA's published facility manager.",
+        "test_source_url": "https://www.nasa.gov/directorates/armd/flight-dynamics-research-facility/",
+        "test_last_verified_at": "2026-09-29"
+      },
+      "after": {
+        "overview": "NASA Langley's Flight Dynamics Research Facility is a vertical subsonic wind tunnel for stability, controllability, free-fall, spin, and recovery research using captive and free-flight techniques. NASA publishes a 20-ft-diameter, 24-ft-high test section and air speeds up to 172 ft/s. The 25,000-square-foot building area is not a flight envelope, and test-section dimensions do not define an acceptable aircraft size.\n\nA developer can discuss characterizing difficult flight dynamics or validating a model/control approach before outdoor testing. Bring the proposed model geometry, scaling, mounting or free-flight method, required measurements, and intended conditions to the facility manager. Confirm available configuration, schedule, model acceptance, instrumentation, cost and project agreement; the published characteristics are not a general flight authorization.",
+        "contact_url": "https://www.nasa.gov/directorates/armd/flight-dynamics-research-facility/",
+        "contact_email": "thomas.g.ivanco@nasa.gov",
+        "contact_phone": "757-864-5092",
+        "contact_text": "Tom Ivanco, facility manager listed on NASA's current FDRF page. Discuss model/test requirements and the appropriate project agreement.",
+        "test_dimensions": "NASA's June 2026 characteristics: vertical test section 20 ft diameter x 24 ft high; air speed 0-172 ft/s. These are tunnel conditions, not maximum aircraft dimensions or a runway.",
+        "test_access": "Coordinate a defined captive or free-flight wind-tunnel experiment with the facility manager. Confirm model scaling, equipment/configuration, instrumentation, safety, schedule and agreement terms.",
+        "test_source_url": "https://www.nasa.gov/directorates/armd/aetc/fdrf-characteristics/",
+        "test_last_verified_at": "2026-11-06"
+      },
+      "add_sources": [
+        {
+          "title": "NASA FDRF research scope and current facility-manager contact",
+          "url": "https://www.nasa.gov/directorates/armd/flight-dynamics-research-facility/"
+        },
+        {
+          "title": "NASA June 2026 FDRF test-section and flow characteristics",
+          "url": "https://www.nasa.gov/directorates/armd/aetc/fdrf-characteristics/"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "NASA Langley Landing and Impact Research Facility",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Langley's Landing and Impact Research Facility (LandIR) supports controlled impact experiments on aircraft and spacecraft structures. NASA used it to crash-test an experimental eVTOL cabin, examining occupant protection and energy absorption and comparing results with computer predictions. For AAM developers, the practical use is structural safety research before flight deployment, not outdoor flying. Projects and equipment suitability must be agreed with NASA.",
+        "contact_url": "https://www.nasa.gov/langley/frontdoor/",
+        "contact_text": "NASA Langley Front Door partnership inquiry; specify LandIR and the proposed impact-test problem.",
+        "test_dimensions": "NASA describes a gantry approximately 240 feet high, 400 feet long, and 265 feet wide. Test-article and impact limits depend on the agreed experiment.",
+        "test_access": "Use NASA Langley's Front Door to discuss a partnership and relevant research team; access is controlled and project-specific.",
+        "test_source_url": "https://www.nasa.gov/reference/management-roles-and-facilities/",
+        "test_last_verified_at": "2026-09-29"
+      },
+      "after": {
+        "overview": "LandIR supports landing and crash-test experiments for structural-impact and crashworthiness research rather than routine aircraft flight training. NASA's Orion documentation describes a gantry approximately 240 ft high, 400 ft long and 265 ft wide, plus a 115-by-90-ft, 20-ft-deep Hydro Impact Basin. Test articles can be oriented for controlled water-impact experiments; historical spacecraft tests illustrate a method, not a universal acceptance limit.\n\nAn air-vehicle developer can explore whether an agreed drop, impact, or structural experiment would answer a design/safety question. Define the test article, loads, instrumentation, target conditions, data products, and model correlation needed. Start through NASA Langley's Front Door and confirm experiment feasibility, safety review, article acceptance, availability, and costs before relying on the facility in a development schedule.",
+        "contact_url": "https://www.nasa.gov/langley/frontdoor/",
+        "contact_text": "NASA Langley research/facility intake. Request the LandIR team for a defined structural-impact or landing experiment.",
+        "test_dimensions": "NASA documents a 240-ft-high, 400-ft-long, 265-ft-wide gantry and a 115 x 90 ft Hydro Impact Basin, 20 ft deep. Structure and basin dimensions do not establish test-article acceptance limits.",
+        "test_access": "Use NASA Langley Front Door to scope an experiment and the necessary agreement. Confirm test-article mass/geometry, target conditions, instrumentation, safety and scheduling directly.",
+        "test_source_url": "https://www.nasa.gov/reference/management-roles-and-facilities/",
+        "test_last_verified_at": "2026-11-06"
+      },
+      "add_sources": [
+        {
+          "title": "NASA LandIR gantry, Hydro Impact Basin and controlled-impact use",
+          "url": "https://www.nasa.gov/reference/management-roles-and-facilities/"
+        },
+        {
+          "title": "NASA landing-test data and structural-design use case",
+          "url": "https://www.nasa.gov/reference/testing/"
+        },
+        {
+          "title": "NASA Langley facility and partnership intake",
+          "url": "https://www.nasa.gov/langley/frontdoor/"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "NASA Wallops UAS Test and Integration Facility",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "NASA's 2024 Wallops Range User's Handbook identifies a UAS Test and Integration Facility using hangars N-159 and D-1. The hangar-accessible, electrostatic-discharge-protected integration laboratory has test benches, power, communications, and nearby project office and conference space. This supports aircraft and payload integration and bench checkout before a coordinated flight campaign. It is a distinct preparation resource within Wallops, not another runway or an independent flight authorization. Confirm the current configuration and project access with NASA.",
+        "contact_url": "https://www.nasa.gov/wallopsrange/",
+        "contact_text": "Wallops Range and Mission Management Office project-coordination information; specify UAS integration requirements.",
+        "test_access": "Arrange preparation and any subsequent flight activity with the Wallops range team; airworthiness, safety, and flight clearances remain project-specific.",
+        "test_source_url": "https://www.nasa.gov/wp-content/uploads/2023/09/wallopsrangeusershandbook-2024.pdf",
+        "test_last_verified_at": "2026-09-29"
+      },
+      "after": {
+        "overview": "The 2024 Wallops Range User's Handbook places the UAS Test and Integration Facility in hangars N-159 and D-1 and describes an electrostatic-discharge-certified integration laboratory, test benches, power and communications services, and adjacent project offices/conference space. These resources support aircraft-system integration and bench checkout before a coordinated range campaign. They are distinct from the MARS UAS airfield and from the wider inventory of Wallops environmental-test facilities.\n\nA project team can start by specifying aircraft configuration, ground-support needs, electrical/communications interfaces, bench work, and the flight or range support it may later require. Wallops' Spaceport Development Office provides partner entry and agreement coordination. Confirm current hangar/laboratory availability, aircraft acceptance, safety documentation, security/access arrangements, schedule and costs; no exact lab pin or blanket operating permission is inferred.",
+        "contact_url": "https://www.nasa.gov/wallops/doing-business/",
+        "contact_text": "Wallops Spaceport Development Office partner entry. Ask for UAS integration/laboratory and range coordination rather than general visitor access.",
+        "test_access": "Scope the mission with the Wallops Spaceport Development Office, including the required project agreement, integration needs, safety/range coordination, access controls and institutional support.",
+        "test_source_url": "https://www.nasa.gov/wp-content/uploads/2023/09/wallopsrangeusershandbook-2024.pdf?emrc=6653c794daf15",
+        "test_last_verified_at": "2026-11-06"
+      },
+      "add_sources": [
+        {
+          "title": "Wallops 2024 Range User's Handbook: UAS integration laboratories and support spaces",
+          "url": "https://www.nasa.gov/wp-content/uploads/2023/09/wallopsrangeusershandbook-2024.pdf?emrc=6653c794daf15"
+        },
+        {
+          "title": "Wallops current partner entry, agreements and UAS/range coordination",
+          "url": "https://www.nasa.gov/wallops/doing-business/"
+        },
+        {
+          "title": "NASA Wallops broader engineering and integration capability catalogue",
+          "url": "https://www.nasa.gov/goddard/frontdoor/wallops/"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "ODU Maritime Autonomous Systems Test Site",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "ODU's MASTS waterfront site at Norfolk's Willoughby Boat Ramp supports surface and underwater robot testing, calibration, and research data collection. The documented setup includes a floating dock, covered work area, power and water, a 1,000-pound jib crane, and an 18-foot research chase boat. Researchers can prepare and launch prototypes, evaluate sensing and autonomy, and collect repeatable field data for uses such as environmental monitoring, surveying, and infrastructure inspection. The crane rating is not an approved vessel-size limit, and access must be arranged with ODU.",
+        "contact_url": "https://visaatodu.org/masts/",
+        "contact_text": "MASTS research and test-site inquiries: Yiannis Papelis; additional contacts on the site page",
+        "test_dimensions": "Willoughby Boat Ramp waterfront research site. ODU describes a floating dock, covered work area, power and water, and a 1,000 lb jib crane. This crane rating is not a maximum permitted vessel size.",
+        "test_access": "Coordinate research and site use through ODU VISA/MASTS. Published materials do not establish unrestricted access or a vessel-size envelope.",
+        "test_source_url": "https://www.odu.edu/article/beyond-boats-and-submarines-odu-city-of-norfolk-celebrate-the-opening-of-the-maritime",
+        "test_last_verified_at": "2026-09-06"
+      },
+      "after": {
+        "overview": "ODU's Maritime Autonomous Systems Test Site at Willoughby in Norfolk supports research with unmanned surface and underwater vehicles and maritime sensing. Published infrastructure includes a covered work area, electricity/water service, a floating dock and a 1,000-lb jib crane. ODU's 2026 presentation also identifies a chase boat. These are useful launch/recovery and fieldwork resources, not a guarantee that every vehicle or operating area is approved.\n\nA research partner can discuss sensor trials, vehicle integration, autonomous navigation or repeatable on-water data collection. Establish vehicle dimensions/mass, lifting and launch arrangements, communications, safety/support-boat needs, instrumentation and data deliverables with ODU. Confirm site access, waterway permissions, weather limits, available staff and scheduling before choosing a campaign; crane rating is not a published maximum vehicle weight.",
+        "contact_url": "https://www.odu.edu/national-security/facilities-test-environments",
+        "contact_text": "ODU National Security Institute facility/research entry; ask for the MASTS operating team and project access arrangements.",
+        "test_dimensions": "Published covered work area, floating dock, electrical/water service and 1,000-lb jib crane. ODU's 2026 briefing also lists a chase boat. Usable dock geometry and vehicle-acceptance limits require confirmation.",
+        "test_access": "Arrange an ODU-coordinated research/test project. Agree vehicle acceptance, lifting/launch arrangements, safety/support craft, operating-area permissions, staff support, data needs and schedule.",
+        "test_source_url": "https://www.odu.edu/article/beyond-boats-and-submarines-odu-city-of-norfolk-celebrate-the-opening-of-the-maritime",
+        "test_last_verified_at": "2026-11-06"
+      },
+      "add_sources": [
+        {
+          "title": "ODU MASTS waterfront infrastructure and water-access setting",
+          "url": "https://www.odu.edu/article/beyond-boats-and-submarines-odu-city-of-norfolk-celebrate-the-opening-of-the-maritime"
+        },
+        {
+          "title": "ODU MASTS research/testing scope and institutional facility entry",
+          "url": "https://www.odu.edu/national-security/facilities-test-environments"
+        },
+        {
+          "title": "ODU 2026 maritime presentation: MASTS dock, crane and chase boat",
+          "url": "https://www.odu.edu/sites/default/files/2026/documents/maritime-conference.pdf"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "UVA Coastal Research Center UAS Operations",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "UVA's Anheuser-Busch Coastal Research Center supports drone-based coastal data collection from its property and research vessels. Operator-listed equipment includes Phantom 4, RTK and multispectral drones, GNSS reference equipment, and imagery-processing resources. Researchers can discuss photogrammetry, coastal mapping and environmental observations with station staff. Research and land-access permissions must be arranged before fieldwork; this is not a general-access commercial drone range.",
+        "contact_url": "https://abcrc.virginia.edu/contact-us",
+        "contact_email": "pnj9ud@virginia.edu",
+        "contact_phone": "757-331-1246",
+        "contact_text": "ABCRC station; Tom Burkett is the published research/drone guidance contact.",
+        "test_access": "Complete the station's drone compliance checklist and acknowledgement before research begins. Coordinate with staff and obtain relevant land-manager permits; seasonal wildlife restrictions can apply to nearby islands.",
+        "test_last_verified_at": "2026-11-02"
+      },
+      "after": {
+        "overview": "UVA's Coastal Research Center provides a coastal fieldwork base and access coordination for Eastern Shore research. Its operator policy requires drone-pilot compliance documents before drone-based work from centre property or vessels. Research on nearby islands and shorelines also depends on the relevant land manager's access, collection, and deployment permissions, with seasonal wildlife restrictions in some areas.\n\nThe resource can support a proposed coastal mapping, habitat-monitoring, or other drone-based research campaign when the centre agrees the project. Discuss the location, aircraft, payload, takeoff/recovery arrangements, vessel needs, people and data plan with staff. Campus acreage is not an authorized flight boundary, and permission to use a centre boat or property does not establish unrestricted access to the surrounding protected lands.",
+        "contact_url": "https://abcrc.virginia.edu/people",
+        "contact_email": "pnj9ud@virginia.edu",
+        "contact_phone": "757-607-6277",
+        "contact_text": "Tom Burkett, research specialist named by the centre for drone-policy guidance; current contact details are on its People page.",
+        "test_access": "Contact centre staff before drone research from its property or vessels and complete the required compliance documents. Obtain separate land-manager and research permits where needed; confirm seasonal access, launch/recovery and aircraft approvals.",
+        "test_last_verified_at": "2026-11-06"
+      },
+      "accepted_baselines": [
+        {
+          "overview": "UVA's Anheuser-Busch Coastal Research Center supports drone-based coastal data collection from its property and research vessels. Operator-listed equipment includes Phantom 4, RTK and multispectral drones, GNSS reference equipment, and imagery-processing resources. Researchers can discuss photogrammetry, coastal mapping and environmental observations with station staff. Research and land-access permissions must be arranged before fieldwork; this is not a general-access commercial drone range.",
+          "contact_url": "https://abcrc.virginia.edu/files/abcrc/files/coastal_research_center___drone_pilot_compliance_checklist.pdf",
+          "contact_email": "pnj9ud@virginia.edu",
+          "contact_phone": "757-331-1246",
+          "contact_text": "ABCRC station; Tom Burkett is the published research/drone guidance contact.",
+          "test_access": "Complete the station's drone compliance checklist and acknowledgement before research begins. Coordinate with staff and obtain relevant land-manager permits; seasonal wildlife restrictions can apply to nearby islands.",
+          "test_last_verified_at": "2026-11-02"
+        }
+      ],
+      "add_sources": [
+        {
+          "title": "UVA Coastal Research Center drone, protected-land and fieldwork requirements",
+          "url": "https://abcrc.virginia.edu/permits-access-drones"
+        },
+        {
+          "title": "UVA Coastal Research Center current named research contacts",
+          "url": "https://abcrc.virginia.edu/people"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "Global Center for Automotive Performance Simulation",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "GCAPS is a Virginia Tech Transportation Institute research center for vehicle performance and automated-driving validation. Teams can turn naturalistic-driving events into test scenarios, evaluate perception sensors and sensor degradation, and examine sensor fusion, connected-vehicle communications, planning, and decision-making. Physical tire testing and modeling help relate simulation to real vehicle behavior. These are ground-vehicle engineering services, distinct from booking an outdoor track or flying drones; agree a project and validation scope with the center.",
+        "contact_url": "https://www.gcaps.net/contact-us/",
+        "contact_email": "",
+        "contact_text": "GCAPS project inquiries; public Alton research-center contact.",
+        "partnership_opportunities": "",
+        "test_access": "Contact GCAPS about the required data, simulation, sensing, or vehicle-performance project. Site access and deliverables are arranged with the operator.",
+        "test_source_url": "https://www.gcaps.net/",
+        "test_last_verified_at": "2026-09-29",
+        "activity_source_url": "",
+        "activity_last_verified_at": null
+      },
+      "after": {
+        "overview": "GCAPS provides vehicle/tire modeling, scenario development, sensor characterization, sensor fusion and simulation support for automated-driving development. VTTI describes converting real events into parameterized simulation inputs and combining physical measurements with virtual performance assessments. A completed 2021-22 sensor-degradation project provides a documented example of LiDAR/radar modeling and algorithm evaluation; it is not proof of an ongoing project or a production-ready safety system.\n\nAn ADS developer can discuss reproducing difficult scenarios, varying sensor conditions, validating a model, or connecting physical tire data to simulation. Define the simulation tools, data rights, operating conditions, comparison metrics and required deliverables. GCAPS' modeling and indoor tire-testing resources are distinct from independently reserving the adjacent raceway or VTTI's Blacksburg Smart Roads; coordinate any physical testing separately.",
+        "contact_url": "https://www.vtti.vt.edu/projects/sensor-degradation.html",
+        "contact_email": "jdarab@gcaps.net",
+        "contact_text": "Jonathan Darab, GCAPS contact published by VTTI for sensor-degradation research. Request current project routing; this does not establish the contact's present role or a track reservation.",
+        "partnership_opportunities": "Discuss scenario replication/variation, sensor characterization, model validation or simulation-framework support. Agree the source data, software interfaces, validation metrics and deliverables.",
+        "test_access": "Arrange a scoped engineering/research service with GCAPS. Define data and software access, intended validation evidence, physical-test needs, deliverables and commercial terms; a simulation project does not itself reserve an outdoor track.",
+        "test_source_url": "https://www.vtti.vt.edu/PDFs/one-pagers/GCAPS.pdf",
+        "test_last_verified_at": "2026-11-06",
+        "activity_source_url": "https://www.vtti.vt.edu/PDFs/one-pagers/GCAPS.pdf",
+        "activity_last_verified_at": "2026-11-06"
+      },
+      "add_sources": [
+        {
+          "title": "VTTI GCAPS services: scenarios, sensing and predictive modeling",
+          "url": "https://www.vtti.vt.edu/PDFs/one-pagers/GCAPS.pdf"
+        },
+        {
+          "title": "VTTI collaborative ADS project: GCAPS simulation and characterization services",
+          "url": "https://soads.vtti.vt.edu/partners"
+        },
+        {
+          "title": "Completed 2021-22 GCAPS/VTTI/ODU sensor-degradation project and limitations",
+          "url": "https://safed.vtti.vt.edu/projects/sensor-degradation-detection-algorithm-for-automated-driving-systems/"
+        },
+        {
+          "title": "VTTI published GCAPS sensor-research contact",
+          "url": "https://www.vtti.vt.edu/projects/sensor-degradation.html"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "Virginia Smart Community Testbed",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Stafford living laboratory for emerging technologies with a documented 5G public-safety drone pilot and autonomous-equipment demonstrations. Public sources support its classification as a Virginia operating environment. Documented capabilities include Testing, evaluation, verification, and validation and Systems engineering and integration. Relevant mission areas include Training and experimentation.",
+        "website_url": "https://vatestbed.com/projects",
+        "contact_url": "https://vatestbed.com/",
+        "contact_text": "Site operator or program information",
+        "partnership_opportunities": "",
+        "test_access": "",
+        "test_source_url": "",
+        "test_last_verified_at": null,
+        "activity_source_url": "",
+        "activity_last_verified_at": null
+      },
+      "after": {
+        "overview": "The Stafford testbed is a partnership environment for proposing and demonstrating smart-community technologies with local-government use cases. Its published examples include autonomous lawn-mower demonstrations and connected sensing, communications, and infrastructure projects. The intake asks applicants to identify technology maturity, the use case, the proposed capability, and how it would be validated. These examples are not a blanket approval for autonomous operation on public roads or in local airspace.\n\nA startup can use the pilot-project route to discuss a defined community problem, trial setting, partner roles and evaluation plan. Specify the intended user, data collection, success measures, safety/privacy needs, equipment and funding. The operator distinguishes demonstration projects from shared core infrastructure; confirm the appropriate programme, approvals, cost allocation and available location rather than assuming grant funding or unrestricted access.",
+        "website_url": "https://vatestbed.com/projects",
+        "contact_url": "https://vatestbed.com/projects",
+        "contact_text": "Use the operator's Submit Your Pilot Project intake and request the testbed team. It asks for technology maturity, use case and a validation approach.",
+        "partnership_opportunities": "Propose a smart-community pilot with a specific public-sector use case and measurable evaluation plan. Confirm participating partners, the site, approvals, data responsibilities and project funding.",
+        "test_access": "Submit a proposed pilot/demonstration to the testbed team. Approval, partner participation, operating permissions, privacy/data requirements and funding are project-specific; published demonstrations do not create general public test-range access.",
+        "test_source_url": "https://vatestbed.com/projects",
+        "test_last_verified_at": "2026-11-06",
+        "activity_source_url": "https://vatestbed.com/projects",
+        "activity_last_verified_at": "2026-11-06"
+      },
+      "add_sources": [
+        {
+          "title": "Virginia Smart Community Testbed project examples, pilot intake and demonstration terms",
+          "url": "https://vatestbed.com/projects"
+        },
+        {
+          "title": "Virginia Smart Community Testbed founding partners and headquarters",
+          "url": "https://vatestbed.com/"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "Xelevate Leesburg Unmanned Systems Facility",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Xelevate's 66-acre fenced Leesburg campus supports air and ground unmanned-systems testing, training, and customer demonstrations. The operator lists Group 1-2 UAS under 55 pounds, broadband connectivity, workspaces, and storage. Teams can use it to integrate equipment, rehearse operations, and show prototypes to government or industry stakeholders. The separately described Luray mountain range is not part of this campus. Aircraft suitability, bookings, and mission approvals must be agreed with Xelevate.",
+        "contact_url": "https://xelevateus.com/leesburg-virginia/",
+        "contact_email": "jburkel@xelevateus.com",
+        "contact_phone": "571-919-1948",
+        "contact_text": "Xelevate range inquiries; specify the Leesburg campus and proposed aircraft/mission.",
+        "test_dimensions": "66-acre fenced campus with powered, climate-controlled innovation workspaces and storage. The operator's 300-acre mountainous Luray range is a different site, not part of Leesburg. No runway length or public flight boundary is established here.",
+        "test_access": "Reserve with Xelevate and confirm aircraft suitability, operating limits and required approvals. Site access is not automatic airspace authorization.",
+        "test_last_verified_at": "2026-11-02",
+        "test_suitability_reviewed_at": "2026-11-03"
+      },
+      "after": {
+        "overview": "Xelevate's Leesburg site is a 66-acre fenced campus for unmanned air/ground testing, training, and technology demonstrations. The operator lists Group 1-2 UAS under 55 lb, dedicated fiber connectivity, storage, and configurable innovation suites with power, HVAC, and lighting. Those resources can support prototype integration, controlled demonstrations, data work and operational preparation near Northern Virginia stakeholders.\n\nDiscuss the aircraft, payload, proposed test scenarios, communications needs, required workspace and observer/customer arrangements when requesting a booking. Verify which facilities and approvals the specific mission requires and agree staffing, schedule and pricing. The separately advertised 300-acre mountain range is in Luray, not part of this campus; neither acreage figure is a universal flight authorization.",
+        "contact_url": "https://xelevateus.com/leesburg-virginia/",
+        "contact_email": "jburkel@xelevateus.com",
+        "contact_phone": "571-919-1948",
+        "contact_text": "Published Xelevate range contact. Identify the Leesburg campus and the aircraft, scenario, dates and workspace needed.",
+        "test_dimensions": "Leesburg: 66-acre fenced campus with configurable powered/HVAC innovation suites and storage. The operator separately lists a 300-acre mountain range in Luray; it is not additional Leesburg acreage.",
+        "test_access": "Request a mission-specific range booking with aircraft/payload details, test scenarios, communications and workspace needs. Agree current approvals, safety/staffing, facilities, schedule and price with the operator.",
+        "test_last_verified_at": "2026-11-06",
+        "test_suitability_reviewed_at": "2026-11-06"
+      },
+      "add_sources": [
+        {
+          "title": "Xelevate Leesburg published aircraft scope, workspace, separate Luray range and contact",
+          "url": "https://xelevateus.com/leesburg-virginia/"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "Xelevate Luray Mountain Range",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Xelevate identifies a separate Luray range for testing Group 1-3 UAS in mountainous terrain. It gives teams a different evaluation environment from the operator's fenced Leesburg campus, particularly for terrain-dependent flight experiments. The operator publishes acreage and aircraft-group scope, but not a site point or detailed operating envelope. Coordinate the proposed aircraft, mission, approvals, and booking directly with Xelevate.",
+        "contact_url": "https://xelevateus.com/leesburg-virginia/",
+        "contact_email": "jburkel@xelevateus.com",
+        "contact_phone": "571-919-1948",
+        "contact_text": "Xelevate range inquiries; specify the distinct Luray mountain range. No site point or public operating boundary is published.",
+        "test_dimensions": "Operator reports 300 acres of mountainous terrain. Acreage is not a mapped flight-permission boundary; runway and launch-pad dimensions are not published.",
+        "test_access": "Arrange use with Xelevate; do not assume that Leesburg's aircraft restrictions or permissions apply to this distinct site.",
+        "test_last_verified_at": "2026-11-02",
+        "test_suitability_reviewed_at": "2026-11-03"
+      },
+      "after": {
+        "overview": "Xelevate's Virginia range page separately identifies a 300-acre mountainous range in Luray for Group 1-3 UAS. This offers a different terrain context from the company's 66-acre Leesburg campus and can be discussed for terrain-dependent aircraft, sensor, or communications evaluation. The published aircraft-group label is not a confirmed maximum mass/span or a complete operating envelope.\n\nAsk Xelevate to assess the exact aircraft and scenario, launch/recovery plan, communications coverage, instrumentation, support facilities and safety case. Confirm range boundaries, permissions, current access, staffing, costs and dates directly. A precise publicly supported site address and launch point remain unestablished, so the record stays unmapped rather than borrowing Leesburg's address or publishing a guessed mountain-range pin.",
+        "contact_url": "https://xelevateus.com/leesburg-virginia/",
+        "contact_email": "jburkel@xelevateus.com",
+        "contact_phone": "571-919-1948",
+        "contact_text": "Published Xelevate range contact. Specify the separate Luray mountain range; do not use Leesburg's address as the test location.",
+        "test_dimensions": "Operator's Virginia range page lists a separate 300-acre mountain range in Luray. Usable flight boundaries, launch/recovery dimensions and site support specifications are not published here.",
+        "test_access": "Scope the aircraft and terrain-dependent experiment directly with Xelevate. Confirm the Luray operating boundary, launch/recovery location, current permissions, support resources and booking terms.",
+        "test_last_verified_at": "2026-11-06",
+        "test_suitability_reviewed_at": "2026-11-06"
+      },
+      "add_sources": [
+        {
+          "title": "Xelevate published distinction between Leesburg campus and Luray mountain range",
+          "url": "https://xelevateus.com/leesburg-virginia/"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "NSWC Carderock Combatant Craft Division",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Navy center for combatant-craft and unmanned-surface-vehicle engineering, design, integration, and evaluation. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence, Systems engineering and integration, and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation and Force protection and installation security.",
+        "contact_url": "https://cnrma.cnic.navy.mil/Installations/JEB-Little-Creek-Fort-Story/Contact-Us/",
+        "contact_text": "Organization public information and inquiries",
+        "test_access": "",
+        "test_source_url": "",
+        "test_last_verified_at": null
+      },
+      "after": {
+        "overview": "Carderock's Combatant Craft Division provides boat/craft systems engineering, integration, and laboratory/waterborne evaluation for Navy requirements. Its published Norfolk detachment description identifies rapid development, testing and fielding of autonomous surface craft and safe-navigation solutions. The Navy distinguishes administrative/engineering offices at Joint Expeditionary Base Little Creek-Fort Story from waterfront operations at Naval Station Norfolk, V47.\n\nA government customer or appropriately sponsored partner can discuss a craft-system, navigation, integration or evaluation problem through the command. Define the craft configuration, technical interfaces, intended environment, measurements and acceptance questions. Confirm the correct work location, sponsorship, agreements, security/access and schedule with the Navy. Do not attribute Carderock's Maryland model basins or out-of-state specialist facilities to this Virginia entry, or interpret the waterfront as a public rental range.",
+        "contact_url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Carderock/Who-We-Are/Norfolk-Virginia/",
+        "contact_text": "Official Norfolk Combatant Craft Division information route; request command routing for a government/sponsored engineering or evaluation project.",
+        "test_access": "Coordinate through the Navy for a government or sponsored project. Confirm the appropriate Little Creek versus Norfolk waterfront work location, agreements, security/access, craft acceptance and test support; no public booking is established.",
+        "test_source_url": "https://www.navsea.navy.mil/Portals/103/Documents/NSWC_Carderock/NSWCCarderockDivision_250908_rs.pdf",
+        "test_last_verified_at": "2026-11-06"
+      },
+      "add_sources": [
+        {
+          "title": "Navy Norfolk Combatant Craft Division offices versus waterfront operations",
+          "url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Carderock/Who-We-Are/Norfolk-Virginia/"
+        },
+        {
+          "title": "Carderock 2025 detachment capability guide: autonomous craft and waterborne evaluation",
+          "url": "https://www.navsea.navy.mil/Portals/103/Documents/NSWC_Carderock/NSWCCarderockDivision_250908_rs.pdf"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    },
+    {
+      "name": "Virginia Tech Transportation Institute",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Transportation research institute operating connected and automated vehicle research programs. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence and Perception, sensing, and sensor fusion. Relevant mission areas include Training and experimentation.",
+        "contact_url": "https://www.vtti.vt.edu/contact/index.html",
+        "contact_email": "",
+        "contact_phone": "",
+        "contact_text": "Organization public information and inquiries",
+        "partnership_opportunities": "",
+        "test_aircraft": "",
+        "test_dimensions": "",
+        "test_access": "",
+        "test_source_url": "",
+        "test_last_verified_at": null,
+        "activity_source_url": "",
+        "activity_last_verified_at": null
+      },
+      "after": {
+        "overview": "VTTI provides controlled-road, vehicle-instrumentation, modeling and human-factors research resources for connected and automated transport. Its Smart Roads combine highway, reconfigurable surface-street, rural and unimproved environments with controllable lighting, weather-making, sensors and communications. The institute also describes garages, machine/electronics shops and instrumented vehicles for developing and collecting test data. These are distinct resources, not one universally available equipment package.\n\nAn ADS or sensor developer can discuss repeatable scenarios, degraded-weather evaluation, vehicle instrumentation, driver interaction or simulation-to-road validation. Define the vehicle, scenario, measures, data rights and required physical support before requesting a project. Coordinate any transition to public roads or aerial testing separately, with the relevant approvals; the institute's published capabilities are not permission for an unrelated vehicle or drone to operate there.",
+        "contact_url": "https://www.vtti.vt.edu/contact/index.html",
+        "contact_email": "inquiries@vtti.vt.edu",
+        "contact_phone": "540-231-1500",
+        "contact_text": "Published VTTI project-enquiry route. Identify Smart Roads, instrumentation, weather, simulation or another specific resource needed.",
+        "partnership_opportunities": "Scope a controlled-road or vehicle/sensor research project, including repeatable scenarios, instrumentation, weather/lighting, data deliverables and any separate public-road or aerial approvals.",
+        "test_aircraft": "Primarily connected/automated road-vehicle and sensor research. Any aerial test project requires separately confirmed aircraft acceptance and current approvals.",
+        "test_dimensions": "Separate highway, surface-street, rural and unimproved test environments; configurable lighting/weather and instrumented-vehicle support. Road length and lane-miles are different measures and are not presented as a UAS flight boundary.",
+        "test_access": "Arrange a VTTI-coordinated project. Confirm track configuration, weather/lighting conditions, vehicle/instrumentation support, data handling, staffing, schedule and commercial terms; public-road or aerial operations require separate approval.",
+        "test_source_url": "https://www.vtti.vt.edu/facilities/virginia-smart-roads.html",
+        "test_last_verified_at": "2026-11-06",
+        "activity_source_url": "https://www.vtti.vt.edu/facilities/virginia-smart-roads.html",
+        "activity_last_verified_at": "2026-11-06"
+      },
+      "accepted_baselines": [
+        {
+          "overview": "Transportation research institute operating connected and automated vehicle research programs. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence and Perception, sensing, and sensor fusion. Relevant mission areas include Training and experimentation.",
+          "contact_url": "https://www.vedp.org/industry/unmanned-systems",
+          "contact_email": "",
+          "contact_phone": "",
+          "contact_text": "Public information route; a direct asset contact is not published in the catalog",
+          "partnership_opportunities": "",
+          "test_aircraft": "",
+          "test_dimensions": "",
+          "test_access": "",
+          "test_source_url": "",
+          "test_last_verified_at": null,
+          "activity_source_url": "",
+          "activity_last_verified_at": null
+        }
+      ],
+      "add_sources": [
+        {
+          "title": "VTTI Smart Roads environments, control room and test-project scope",
+          "url": "https://www.vtti.vt.edu/facilities/virginia-smart-roads.html"
+        },
+        {
+          "title": "VTTI vehicle instrumentation, garages and machine/electronics support",
+          "url": "https://www.vtti.vt.edu/facilities/garages-vehicles.html"
+        },
+        {
+          "title": "VTTI weather-testing capabilities and published project contacts",
+          "url": "https://www.vtti.vt.edu/PDFs/one-pagers/Weather.pdf"
+        },
+        {
+          "title": "VTTI public enquiry contact route",
+          "url": "https://www.vtti.vt.edu/contact/index.html"
+        }
+      ],
+      "reason": "Public operator/institutional evidence for practical facility use, project intake and published contacts. No booking availability, unlisted capacity, aircraft acceptance, current flight authority or editorial verification is inferred."
+    }
+  ]
+}

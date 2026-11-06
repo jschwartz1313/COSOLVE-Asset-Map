@@ -27,7 +27,7 @@ test("new testing profiles fit desktop and mobile", async ({ page }, testInfo) =
     ["nasa-langley-landing-and-impact-research-facility", "crash-test"],
     ["virginia-tech-stability-wind-tunnel", "aeroacoustic"],
     ["global-center-for-automotive-performance-simulation", "sensor fusion"],
-    ["xelevate-luray-mountain-range", "mountainous terrain"],
+    ["xelevate-luray-mountain-range", "mountainous range"],
     ["nasa-wallops-uas-test-and-integration-facility", "bench checkout"],
   ];
   for (const [slug, use] of profiles) {
