@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / "data" / "virginia_real_assets.json"
 CATALOG_DATE = "2026-08-21"
-BUILD_DATE = "2026-11-06"
+BUILD_DATE = "2026-11-10"
 RELATIONSHIP_TYPES = frozenset({
     "operates", "located-at", "partners-with", "funds", "supports", "participates-in",
     "hosts", "manufactures-for",
@@ -68,6 +68,7 @@ NOVEMBER_REFERENCE_PROFILES_PATH = ROOT / "data" / "asset_reference_profiles_202
 TEST_SITE_CRITERIA_PATH = ROOT / "data" / "test_site_criteria_2026_11_03.json"
 DECISION_PROFILES_PATH = ROOT / "data" / "decision_profiles_2026_11_05.json"
 FACILITY_PROFILES_PATH = ROOT / "data" / "facility_profiles_2026_11_06.json"
+FACILITY_DETAIL_PROFILES_PATH = ROOT / "data" / "facility_profiles_2026_11_10.json"
 AIRPORT_DISPLAY_NAMES_PATH = ROOT / "data" / "airport_display_names_2026_09_07.json"
 
 IPEDS_NAME_ALIASES = {
@@ -11582,6 +11583,7 @@ def apply_reviewed_corrections(records, corrections=None):
         corrections += json.loads(TEST_SITE_CRITERIA_PATH.read_text())["corrections"]
         corrections += json.loads(DECISION_PROFILES_PATH.read_text())["corrections"]
         corrections += json.loads(FACILITY_PROFILES_PATH.read_text())["corrections"]
+        corrections += json.loads(FACILITY_DETAIL_PROFILES_PATH.read_text())["corrections"]
     for correction in corrections:
         record = records_by_name[correction["name"]]
         record.update(correction["after"])

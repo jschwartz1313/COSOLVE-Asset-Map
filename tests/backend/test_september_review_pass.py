@@ -12,6 +12,7 @@ from apps.assets.management.commands.apply_catalog_corrections import ALLOWED_FI
 from apps.assets.models import Asset
 from scripts.build_real_asset_catalog import (
     DECISION_PROFILES_PATH,
+    FACILITY_DETAIL_PROFILES_PATH,
     FACILITY_PROFILES_PATH,
     NOVEMBER_REFERENCE_PROFILES_PATH,
     TEST_SITE_CRITERIA_PATH,
@@ -24,7 +25,8 @@ from scripts.build_real_asset_catalog import (
 def before_november(records):
     records = copy.deepcopy(records)
     by_name = {record["name"]: record for record in records}
-    for path in (FACILITY_PROFILES_PATH, DECISION_PROFILES_PATH, TEST_SITE_CRITERIA_PATH,
+    for path in (FACILITY_DETAIL_PROFILES_PATH, FACILITY_PROFILES_PATH,
+                 DECISION_PROFILES_PATH, TEST_SITE_CRITERIA_PATH,
                  NOVEMBER_REFERENCE_PROFILES_PATH):
         for change in json.loads(path.read_text())["corrections"]:
             if change["name"] in by_name:
@@ -134,7 +136,8 @@ class SeptemberReviewPassTests(SimpleTestCase):
         apply_reviewed_corrections(
             records, json.loads(NOVEMBER_REFERENCE_PROFILES_PATH.read_text())["corrections"]
         )
-        for path in (TEST_SITE_CRITERIA_PATH, DECISION_PROFILES_PATH, FACILITY_PROFILES_PATH):
+        for path in (TEST_SITE_CRITERIA_PATH, DECISION_PROFILES_PATH, FACILITY_PROFILES_PATH,
+                     FACILITY_DETAIL_PROFILES_PATH):
             apply_reviewed_corrections(records, json.loads(path.read_text())["corrections"])
         for name, record in by_name.items():
             self.assertEqual(record, self.by_name[name])

@@ -21,6 +21,7 @@ from apps.catalog.models import Region
 from apps.sources.models import Source
 from scripts.build_real_asset_catalog import (
     DECISION_PROFILES_PATH,
+    FACILITY_DETAIL_PROFILES_PATH,
     FACILITY_PROFILES_PATH,
     MAAP_CORRECTIONS_PATH,
     NOVEMBER_REFERENCE_PROFILES_PATH,
@@ -47,6 +48,7 @@ class TestEnvironmentManifestTests(SimpleTestCase):
             NOVEMBER_REFERENCE_PROFILES_PATH,
             DECISION_PROFILES_PATH,
             FACILITY_PROFILES_PATH,
+            FACILITY_DETAIL_PROFILES_PATH,
         ):
             for change in json.loads(path.read_text())["corrections"]:
                 followups.setdefault(change["name"], {}).update(change["after"])
@@ -88,6 +90,7 @@ class TestEnvironmentManifestTests(SimpleTestCase):
                     NOVEMBER_REFERENCE_PROFILES_PATH, TEST_SITE_CRITERIA_PATH,
                     DECISION_PROFILES_PATH,
                     FACILITY_PROFILES_PATH,
+                    FACILITY_DETAIL_PROFILES_PATH,
                 )
                 followups = [c for path in paths
                              for c in json.loads(path.read_text())["corrections"]
@@ -132,7 +135,8 @@ class TestEnvironmentDeploymentTests(TestCase):
         cls.changes = json.loads(TEST_CAPABILITY_PROFILES_PATH.read_text())["corrections"]
         records = {r["name"]: r for r in json.loads(CATALOG.read_text())["records"]}
         # Reconstruct this release's fixtures before applying its older partial baselines.
-        for path in (FACILITY_PROFILES_PATH, DECISION_PROFILES_PATH, TEST_SITE_CRITERIA_PATH,
+        for path in (FACILITY_DETAIL_PROFILES_PATH, FACILITY_PROFILES_PATH,
+                     DECISION_PROFILES_PATH, TEST_SITE_CRITERIA_PATH,
                      NOVEMBER_REFERENCE_PROFILES_PATH):
             for followup in json.loads(path.read_text())["corrections"]:
                 records[followup["name"]].update(followup["before"])

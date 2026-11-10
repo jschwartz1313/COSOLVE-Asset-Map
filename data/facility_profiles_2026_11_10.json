@@ -1,0 +1,1049 @@
+{
+  "reviewed_at": "2026-11-10",
+  "scope": "Thirty-six existing manufacturing/integration and testing/research profiles; no new assets or public maintenance badges.",
+  "groups": {
+    "manufacturing-and-integration": [
+      "Agricision",
+      "Aurora Flight Sciences",
+      "HII Unmanned Systems Center of Excellence",
+      "Micron Manassas Semiconductor Fabrication Plant",
+      "Newport News Shipbuilding",
+      "RapidFlight UAS Manufacturing Headquarters",
+      "HDT Robotics BLADE Fredericksburg Facility",
+      "THRYVE Automation Richmond",
+      "Ryzing Technologies",
+      "Adaptive Aerospace Group",
+      "Analytical Mechanics Associates",
+      "Austal USA Advanced Technologies and Solutions",
+      "Phoenix International Chesapeake Operations",
+      "Tidal Flight Chesapeake Development Hangar",
+      "Virginia Tech MADE"
+    ],
+    "testing-and-research": [
+      "VIMS Autonomous Systems Laboratory",
+      "VIMS Collaboratory for Physical Oceanography",
+      "UVA Bio-Inspired Engineering Research Laboratory",
+      "George Mason Autonomous Robotics Laboratory",
+      "George Mason MICO Laboratory",
+      "George Mason RobotiXX Laboratory",
+      "Virginia Tech Advanced Control Systems Lab",
+      "Virginia Tech SpaceDrones Laboratory",
+      "Virginia Tech Uncrewed Systems Laboratory",
+      "CNU Autonomous Systems and Drone Lab",
+      "Marine Corps Warfighting Laboratory",
+      "Naval Surface Warfare Center Dahlgren Division",
+      "NSWC Dahlgren UAV Test Runway",
+      "NSWCDD Dam Neck Activity",
+      "Virginia Modeling, Analysis and Simulation Center",
+      "ODU Unmanned and Autonomous Vehicle Laboratory",
+      "VCU Autonomous Robots and Vehicles Laboratory",
+      "Virginia Institute for Spaceflight and Autonomy",
+      "NOVA Fab Lab Manassas",
+      "George Mason Center for Air Transportation Systems Research",
+      "Virginia Tech Mission Systems Division"
+    ]
+  },
+  "corrections": [
+    {
+      "name": "Agricision",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Farmer-led Sedley company developing agricultural drones and pest-detection software. Its scouting technology uses imagery from uncrewed platforms to help growers identify weeds and pests and make treatment decisions. The company describes Scout-series scouting aircraft and the BUBBA-18G agricultural spray drone as Virginia-manufactured products. At review, its website still described Scout as forthcoming and BUBBA-18G as in testing. A listed product is therefore not evidence of commercial availability or a completed customer deployment.",
+        "contact_text": "Agricision product and grower inquiries"
+      },
+      "after": {
+        "overview": "Agricision develops crop-scouting software and agricultural aircraft in Sedley. Its technology uses imagery collected by drones or other uncrewed platforms to identify crop pests and disease and inform spray/no-spray decisions. The company also publishes the BUBBA-18G spray-drone concept, with two pumps, eight nozzles and an eight-foot boom. Its homepage still describes the spray aircraft as being tested and Scout as forthcoming; product specifications are not evidence of a delivered commercial service.\n\nA grower or agronomy partner can discuss a particular crop, pest, field size and decision window, or request a demonstration. Ask about supported sensors, image collection, analysis outputs, validation on the intended crop, aircraft availability and operating responsibilities. Confirm any application permissions and commercial terms separately; the Sedley company address is not a public flight-test range.",
+        "contact_text": "Published grower and product inquiry contact. Use the company's demonstration-request route to discuss a defined crop or pest problem."
+      },
+      "add_sources": [
+        {
+          "title": "Agricision crop-scouting and spray/no-spray decision workflow",
+          "url": "https://www.agricisioninc.com/drone-technology"
+        },
+        {
+          "title": "Agricision published spray-drone configuration and Scout development status",
+          "url": "https://www.agricisioninc.com/drones"
+        },
+        {
+          "title": "Agricision current homepage: products still forthcoming or in testing",
+          "url": "https://www.agricisioninc.com/"
+        },
+        {
+          "title": "Agricision public grower and product contact",
+          "url": "https://www.agricisioninc.com/contact"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "Aurora Flight Sciences",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Aurora's Manassas headquarters at Manassas Regional Airport includes three aircraft hangars, engineering development and build spaces, test laboratories, and remote flight-operations centers. The company develops aircraft configurations, autonomy, propulsion, and manufacturing technologies. Its published Manassas certification scope includes design, fabrication, assembly, testing, and operation of aircraft components and structures. Aurora separately identifies major advanced-manufacturing sites in Mississippi and West Virginia; their equipment and production capacity should not be attributed to the Virginia location.",
+        "contact_text": "Aurora Manassas headquarters and engineering inquiries"
+      },
+      "after": {
+        "overview": "Aurora's Manassas airport campus combines engineering and build spaces, test laboratories, three hangars and remote flight-operations centers. Its flight-operations offering includes system integration, test crews, hardware-in-the-loop simulation and operator training. These resources can help a developer evaluate a sensor, autonomous behavior or operating procedure in simulation before a coordinated flight campaign. Aurora's aircraft and mobile operations resources are a company-wide offering, not a promise that every aircraft or test takes place in Manassas.\n\nBring the payload interfaces, intended behavior, data requirements and proposed operating conditions to the flight-operations team. Agree the test location, aircraft configuration, safety and authorization responsibilities, crew support, deliverables and commercial scope. Mississippi and West Virginia composite-manufacturing equipment should not be attributed to this Virginia campus, and published hangars are not an open-access range reservation.",
+        "contact_text": "Manassas headquarters intake for flight-operations, integration, simulation and training inquiries; request the technical team and work location appropriate to the project."
+      },
+      "add_sources": [
+        {
+          "title": "Aurora Manassas campus resources and separate manufacturing locations",
+          "url": "https://www.aurora.aero/about/"
+        },
+        {
+          "title": "Aurora flight testing, Manassas remote operations, hardware-in-the-loop simulation and training",
+          "url": "https://www.aurora.aero/flight-operations/"
+        },
+        {
+          "title": "Aurora published project inquiry route",
+          "url": "https://www.aurora.aero/contact-us/"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "HII Unmanned Systems Center of Excellence",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Hampton campus established for unmanned maritime systems prototyping, production, and testing. HII's 2020 announcement described planned digital manufacturing, machining, surface finishing, and welding resources. Its 2021 results confirm completion of an initial 22,000-square-foot building. Those dated sources do not establish that every proposed building or production capability is currently available. HII's wider UUV, USV, and autonomy portfolio should not be treated as a list of products manufactured at this particular campus.",
+        "contact_phone": "877-871-2058",
+        "contact_text": "HII corporate routing for unmanned-systems inquiries"
+      },
+      "after": {
+        "overview": "HII established the Hampton campus for unmanned-maritime prototyping, production and testing. Its January 2021 completion announcement identifies a first 22,000-square-foot building for assembling hull structures for Boeing's Orca extra-large unmanned undersea vehicle program. The release also described a larger follow-on building as planned; it does not establish today's completed footprint or available equipment.\n\nThis is a route to a manufacturing or integration discussion with HII, rather than a general-purpose laboratory for hire. A prospective program partner or supplier should identify the structure, process, interfaces, qualification evidence and work package involved, then ask HII to confirm the current campus role and appropriate business team. Confirm contracting eligibility, information handling, site access, capacity and schedule directly. Do not assume HII's entire UUV and USV portfolio is built at this campus.",
+        "contact_phone": "",
+        "contact_text": "Use HII's general inquiry form and request routing to the unmanned-systems business team. No direct Hampton campus booking contact is established."
+      },
+      "add_sources": [
+        {
+          "title": "HII January 2021 company release: completed first building and Orca hull-assembly role",
+          "url": "https://www.globenewswire.com/news-release/2021/01/11/2156355/0/en/Huntington-Ingalls-Industries-Completes-First-Phase-of-Unmanned-Systems-Center-of-Excellence-Campus.html"
+        },
+        {
+          "title": "HII general inquiry form; toll-free number is an employee information line, not sales",
+          "url": "https://www.hii.com/contact"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "Micron Manassas Semiconductor Fabrication Plant",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Micron's Fab 6 is an active 300-millimeter semiconductor manufacturing and testing site. Micron identifies the Manassas plant's long-lifecycle memory as supporting automotive, defense, aerospace, industrial, networking, drone, and autonomous-vehicle applications.",
+        "contact_text": "Micron Manassas facility information"
+      },
+      "after": {
+        "overview": "Micron's Manassas Fab 6 manufactures memory for long-lifecycle automotive, aerospace/defense, industrial and networking applications. Its Virginia page identifies 300-millimeter NAND, DRAM and NOR manufacturing and reports the start of 1-alpha DRAM production in May 2026, including DDR4 and LP4 products. The plant is a component supply-chain resource for embedded computing and vehicle electronics, not a drone-assembly facility or a publicly bookable semiconductor foundry.\n\nA hardware team can use Micron's sales and technical-support channels to evaluate a specific memory part, lifecycle support, temperature range, quality documentation and purchasing route. Confirm product-to-fab traceability and supply commitments rather than assuming every Micron part is produced in Virginia. The published Manassas number is facility information; engineering support, sample orders and any plant visit require the appropriate company arrangements.",
+        "contact_text": "Published Manassas facility number. Use Micron Sales and Support for part selection, samples and purchasing; this is not an open foundry or test-space booking line."
+      },
+      "add_sources": [
+        {
+          "title": "Micron Manassas memory manufacturing, markets and May 2026 production milestone",
+          "url": "https://www.micron.com/us-expansion/va"
+        },
+        {
+          "title": "Micron official Manassas address and facility telephone",
+          "url": "https://www.micron.com/about/locations"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "Newport News Shipbuilding",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Major Virginia shipyard providing naval engineering, digital shipbuilding, manufacturing, and integration capacity. Public sources support its classification as a Virginia facility. Documented capabilities include Systems engineering and integration and Manufacturing, materials, and prototyping. Relevant mission areas include Maritime domain awareness.",
+        "contact_email": "smallbusiness@hii-nns.com",
+        "contact_text": "Newport News Shipbuilding Small Business Office: supplier and small-business inquiries, not general visitor access"
+      },
+      "after": {
+        "overview": "Newport News Shipbuilding designs, builds, overhauls and maintains nuclear-powered aircraft carriers and submarines, with integrated digital-shipbuilding and fleet-support capabilities. For an autonomy supplier, the practical connection is the naval industrial base: qualified components, fabrication processes, engineering services, manufacturing technology and production support. This shipyard should not be presented as a general USV factory or an unrestricted marine test basin.\n\nProspective suppliers can use HII's published supplier route to describe their capabilities, machinery, welding qualifications and quality certifications. The Small Business Office provides assistance and advocacy; registration or an inquiry does not establish a contract award. Visits require coordination with an NNS representative and compliance with site security and safety instructions, including the applicable industrial protective equipment. Define the actual shipbuilding work package before seeking access or sharing controlled technical material.",
+        "contact_email": "smallbusiness@us.hii.com",
+        "contact_text": "Current published NNS Small Business Program Office contact for supplier assistance and advocacy, not general visitor or range access."
+      },
+      "add_sources": [
+        {
+          "title": "HII Newport News Shipbuilding division and naval manufacturing scope",
+          "url": "https://www.hii.com/newport-news-shipbuilding"
+        },
+        {
+          "title": "NNS supplier qualification, current Small Business Office email, visitor and safety requirements",
+          "url": "https://www.hii.com/suppliers/newport-news-suppliers/nns-existing-suppliers-resources"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "RapidFlight UAS Manufacturing Headquarters",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Manassas headquarters and digital manufacturing facility for rapidly produced unmanned aircraft systems. Public sources support its classification as a Virginia facility. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+        "short_description": "Manassas headquarters and digital manufacturing facility for rapidly produced unmanned aircraft systems.",
+        "contact_url": "https://www.prnewswire.com/news-releases/rapidflight-celebrates-grand-opening-of-uas-3d-manufacturing-headquarters-in-manassas-virginia-301884344.html",
+        "contact_text": "Public information route; a direct asset contact is not published in the catalog"
+      },
+      "after": {
+        "overview": "RapidFlight's July 2023 company announcement documented a renovated, over-25,000-square-foot Manassas facility for UAS design and additive manufacturing. Its practical contribution was rapid iteration from aircraft design to printed airframe hardware and integrated aircraft. This is retained as a historical Virginia manufacturing footprint: AEVEX announced acquisition of selected RapidFlight assets and intellectual property in September 2025, not confirmation that the former standalone Manassas operation remains available.\n\nFor a new project involving the acquired technology, contact AEVEX to identify the current team, product scope and work location. Discuss airframe and payload requirements, qualification evidence, production approach, delivery and support. Do not treat the former facility's floor area, historical flights or original press contact as evidence of current Manassas capacity, an accessible local production line or a current flight-test authorization.",
+        "short_description": "Historical Manassas UAS design and additive-manufacturing facility; selected technology and assets were acquired by AEVEX in 2025.",
+        "contact_url": "https://aevex.com/contact-us/",
+        "contact_text": "AEVEX inquiry form for routing questions about acquired RapidFlight assets and technology. This is not confirmation of current access to the former Manassas facility."
+      },
+      "accepted_baselines": [
+        {
+          "overview": "Manassas headquarters and digital manufacturing facility for rapidly produced unmanned aircraft systems. Public sources support its classification as a Virginia facility. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+          "short_description": "Manassas headquarters and digital manufacturing facility for rapidly produced unmanned aircraft systems.",
+          "contact_url": "https://www.prnewswire.com/news-releases/rapidflight-celebrates-grand-opening-of-uas-3d-manufacturing-headquarters-in-manassas-virginia-301884344.html",
+          "contact_text": "Public information route; a direct asset contact is not published in the catalog"
+        }
+      ],
+      "add_sources": [
+        {
+          "title": "RapidFlight's July 2023 company announcement of Manassas facility and additive-manufacturing work",
+          "url": "https://www.prnewswire.com/news-releases/rapidflight-celebrates-grand-opening-of-uas-3d-manufacturing-headquarters-in-manassas-virginia-301884344.html"
+        },
+        {
+          "title": "AEVEX September 2025 acquisition of selected RapidFlight assets and intellectual property",
+          "url": "https://aevex.com/aevex-launches-drone-factory-of-the-future-and-expands-its-robust-uas-portfolio-through-the-acquisition-of-select-assets-from-rapidflight/"
+        },
+        {
+          "title": "AEVEX current business and project inquiry form",
+          "url": "https://aevex.com/contact-us/"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "HDT Robotics BLADE Fredericksburg Facility",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Fredericksburg HDT Robotics facility producing robotic arms and Hunter WOLF unmanned ground vehicles under the BLADE brand. The operator publishes its Fredericksburg address and current ground-robot products. HDT announced its BLADE branding in March 2026; the legal operating entity remains HDT Robotics, LLC.",
+        "contact_phone": "800-969-8527",
+        "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area."
+      },
+      "after": {
+        "overview": "HDT Robotics, operating as BLADE, develops robotic manipulators and unmanned ground vehicles from its Fredericksburg operation. Published Hunter WOLF applications include equipment and supply transport, communications support, casualty evacuation, sensing and exported electrical power. Its modular interfaces allow different autonomy and mission-payload configurations; the appropriate capability depends on the vehicle version and integration package rather than a single company-wide performance figure.\n\nA platform customer or technology partner can request a demonstration, evaluation or custom solution and discuss payload interfaces, control modes, terrain, power needs and maintenance support. Agree the exact configuration, acceptance evidence, delivery, training and test location with the team. The operator lists a direct Fredericksburg facility number; a manufacturing address and company demonstrations do not establish a public off-road proving ground.",
+        "contact_phone": "540-479-8100",
+        "contact_text": "Published Fredericksburg Battle Lab and Advanced Development Engineering Center number. The robotics website also accepts demo, evaluation and custom-solution requests."
+      },
+      "add_sources": [
+        {
+          "title": "HDT/BLADE official Fredericksburg facility address and direct telephone",
+          "url": "https://www.hdtglobal.com/about/office-locations/"
+        },
+        {
+          "title": "HDT robotics portfolio and custom applications",
+          "url": "https://www.hdtglobal.com/series/robotics/"
+        },
+        {
+          "title": "HDT Hunter WOLF published applications and demonstration intake",
+          "url": "https://www.hdtrobotics.com/products/unmanned-ground-vehicles/"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "THRYVE Automation Richmond",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Richmond industrial robotics and machine-vision integrator formerly known as Jewett Automation. The company builds automated assembly and material-handling systems. It provides supporting robotic integration, fabrication and production expertise; the reviewed source does not establish an unmanned-vehicle product line.",
+        "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area."
+      },
+      "after": {
+        "overview": "THRYVE, formerly Jewett Automation, engineers and builds automated production systems using robotics, machine vision, material handling and inspection. Published processes include robot-guided assembly, part feeding, machine tending, adhesive dispensing, joining, leak testing, barcode reading and traceability. A manufacturer of uncrewed-system components could discuss automating repeatable assembly or inspection work; the company is supporting industrial capacity, not a documented aircraft or marine-drone production line.\n\nStart with the process sequence, part samples or drawings, required throughput, tolerances, inspection criteria and factory interfaces. The company offers assessments, proof-of-principle work, simulation, integration, installation, training and lifecycle support. Ask the Richmond sales team which facility and equipment would perform the work. Its published combined footprint spans Virginia and Indiana and is not the size of the Richmond site or capacity available to a particular project.",
+        "contact_text": "Published Richmond sales number for production-line and automation projects. The website lists a separate support number for existing systems."
+      },
+      "add_sources": [
+        {
+          "title": "THRYVE official automation processes, project workflow, Richmond sales contact and separate sites",
+          "url": "https://thryve.co/"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "Ryzing Technologies",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Ryzing Technologies publishes engineering, prototyping, fabrication and testing capabilities for textile-based structures. Its project descriptions include inflatable sensor arrays and deployable support structures. The company lists a Staunton contact address.",
+        "contact_text": "Published company inquiry route; confirm current scope and availability directly."
+      },
+      "after": {
+        "overview": "Ryzing develops engineered textiles, rigid inflatable structures and soft-robotics concepts, combining design, prototyping, fabrication and in-house manufacturing. Published projects include an inflatable Navy sensor array and a NASA deployable support structure. It also offers environmental testing with controlled airflow and wind-driven sand, snow, ice or other media, supported by sensor placement, data capture and reporting. These are component and structure-development resources rather than an aircraft flight range.\n\nA payload or platform team can discuss a deployable sensor support, protective structure, textile mechanism or environmental-test article. Define geometry, materials, loads, exposure conditions, instrumentation and acceptance criteria with the Staunton team. The advertised airflow capability is a test condition, not an aircraft speed limit. Confirm test-volume dimensions, article compatibility, facilities, cost, scheduling and qualification scope before committing to a campaign.",
+        "contact_text": "Published Staunton company contact for product design, testing, prototyping and manufacturing inquiries; agree a defined article and test or production scope."
+      },
+      "add_sources": [
+        {
+          "title": "Ryzing engineered textiles, project examples and published company contacts",
+          "url": "https://ryzingtech.com/"
+        },
+        {
+          "title": "Ryzing environmental-test media, instrumentation and reporting",
+          "url": "https://ryzingtech.com/research-development/"
+        },
+        {
+          "title": "Ryzing in-house manufacturing and customer production projects",
+          "url": "https://ryzingtech.com/manufacturing/"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "Adaptive Aerospace Group",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Hampton aerospace engineering company providing uncrewed-aircraft-system design and technical services. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration, Operations, maintenance, and sustainment, and Manufacturing, materials, and prototyping. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+        "contact_phone": "",
+        "contact_text": "Organization public information and inquiries"
+      },
+      "after": {
+        "overview": "Adaptive Aerospace Group provides aircraft and airspace research and engineering, including small-UAS design, integration, flight testing and operations. Its published UAS work covers detect-and-avoid, assured autonomy, air-traffic-control procedures and separation standards. Flight-dynamics modeling, handling qualities and human-in-the-loop evaluation provide additional ways to examine how an aircraft or operator interface performs before an operational demonstration.\n\nA developer can discuss a detect-and-avoid evaluation, simulation model, integration study or test-support work package. Bring the proposed aircraft, sensors, operating concept, interfaces, evaluation metrics and required evidence to the Hampton team. Confirm the facilities, aircraft, flight location, approvals, data ownership and commercial scope separately. The office is an engineering contact point; the published service list does not establish a publicly reservable range at that address.",
+        "contact_phone": "757-941-4921",
+        "contact_text": "Published Hampton engineering and project intake. Ask for the UAS, detect-and-avoid, flight-dynamics or human-systems team appropriate to the proposed work."
+      },
+      "accepted_baselines": [
+        {
+          "overview": "Hampton aerospace engineering company providing uncrewed-aircraft-system design and technical services. Public sources support its classification as a Virginia organization. Documented capabilities include Systems engineering and integration and Operations, maintenance, and sustainment. Relevant mission areas include Infrastructure inspection and Logistics and contested logistics.",
+          "contact_phone": "",
+          "contact_text": "Organization public information and inquiries"
+        }
+      ],
+      "add_sources": [
+        {
+          "title": "Adaptive Aerospace published UAS engineering, simulation, human-systems work and Hampton contacts",
+          "url": "https://adaptiveaero.com/"
+        },
+        {
+          "title": "Adaptive Aerospace official inquiry route",
+          "url": "https://adaptiveaero.com/contact/"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "Analytical Mechanics Associates",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Analytical Mechanics Associates (AMA) is a Hampton-headquartered engineering company supporting government and industry missions. Its public engineering profile specifically lists autonomous vehicles and UAVs alongside guidance, navigation and control, flight hardware, modeling and simulation, additive manufacturing, and 3D prototyping.",
+        "contact_text": "AMA general inquiries"
+      },
+      "after": {
+        "overview": "AMA's engineering portfolio includes autonomous vehicles and UAVs, flight hardware, guidance/navigation/control, aerodynamics, structural analysis, modeling and simulation, additive manufacturing and 3D prototyping. It describes support from conceptual design through fabrication drawings and test assistance. This can help a platform developer refine a design, analyze loads or performance, prepare an integration package or plan verification before committing to hardware.\n\nUse the Hampton inquiry route to define the engineering deliverables, assumptions, interfaces, validation data and intended manufacturing or test location. Confirm the applicable quality and certification scope: AMA's engineering page explicitly excludes design and development activities from its posted AS9100 scope at Hampton and Edwards. A corporate list of services is not proof that every machine is in Hampton, that a public range is available, or that a particular design is certified.",
+        "contact_text": "Published Hampton general-inquiry contact for routing to engineering, analysis, prototyping or test-support personnel. Confirm project location and certification scope directly."
+      },
+      "add_sources": [
+        {
+          "title": "AMA engineering services, UAV applications, fabrication/test support and location-specific certification caveat",
+          "url": "https://www.ama-inc.com/engineering/ENG_MissionAnalysisDesign.shtml"
+        },
+        {
+          "title": "AMA Hampton headquarters and general project contacts",
+          "url": "https://www.ama-inc.com/contact"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "Austal USA Advanced Technologies and Solutions",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Austal USA's Charlottesville-based Advanced Technologies and Solutions division develops and integrates autonomous maritime platforms and mission technologies. The company identifies unmanned surface vehicles as an active portfolio and undersea vehicles as a growth area.",
+        "contact_text": "Austal USA public inquiry form"
+      },
+      "after": {
+        "overview": "Austal USA's Charlottesville Solutions division develops and integrates autonomous-maritime platforms and mission technologies. Its published scope includes unmanned surface vessels, modular payload architectures, machinery health monitoring and lifecycle support; underwater vehicles are described as a growth area rather than an established local product line. These capabilities can support a discussion about vessel autonomy, mission-system interfaces or sustainment data.\n\nA customer or technology partner should identify the platform, payload, integration boundaries, reliability needs and proposed program, then request the appropriate Solutions team through Austal's inquiry form. Confirm current engineering scope, production site, demonstrations, eligibility and contractual arrangements. The Charlottesville office is not the company's Mobile shipyard, and its listing does not establish a Virginia waterfront test site, local vessel-construction capacity or permission to conduct autonomous operations.",
+        "contact_text": "Austal USA inquiry form; request the Charlottesville Advanced Technologies and Solutions team for autonomous-maritime integration or lifecycle-support discussions."
+      },
+      "add_sources": [
+        {
+          "title": "Austal Charlottesville Solutions division, autonomy integration and lifecycle-support scope",
+          "url": "https://www.austalusa.com/solutions"
+        },
+        {
+          "title": "Austal official Charlottesville office listing and inquiry form",
+          "url": "https://www.austalusa.com/contact-us"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "Phoenix International Chesapeake Operations",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Phoenix International's Chesapeake operation supports government and commercial underwater ship repair, inspection, welding, and rapid-response work. Phoenix also publishes a mission-ready fleet of inspection- through work-class ROVs and an AUV capability for subsea operations.",
+        "contact_text": "Phoenix Chesapeake operations and service inquiries"
+      },
+      "after": {
+        "overview": "Phoenix's Chesapeake operation provides underwater inspection, ship repair, welding, nondestructive testing and engineering for government and commercial clients. Its local facility page identifies a 20-foot-deep, 10-foot-wide, 11,750-gallon dive tank with an observation window and dive station. Published uses include underwater-welding training, certification work and electrode testing; that does not establish a universal acceptance envelope for third-party underwater vehicles.\n\nA maritime developer can ask the Chesapeake team about a component, underwater tooling, inspection or support requirement and whether the tank is suitable for a proposed evaluation. Supply the article dimensions, materials, power and buoyancy considerations, test method and data needs. Confirm third-party access, vehicle acceptance, water conditions, staffing and commercial terms directly. Phoenix's wider ROV/AUV fleet is not assumed to be stored at or independently available from this Virginia office.",
+        "contact_text": "Published Chesapeake operations number; the location page names Michael Sonnenberg as General Manager. Discuss local repair, inspection, tooling or tank-evaluation requirements."
+      },
+      "add_sources": [
+        {
+          "title": "Phoenix Chesapeake services, local dive-tank dimensions and uses, office phone and manager",
+          "url": "https://www.phnx-international.com/phoenix-office-locations/phoenix-chesapeake-va-office/"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "Tidal Flight Chesapeake Development Hangar",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Tidal Flight is a Hampton Roads startup developing a hybrid-electric amphibious aircraft. In 2026 the company announced an expansion into 13,000 square feet of hangar space at Chesapeake Regional Airport for engineering, prototype development, and testing.",
+        "contact_text": "Tidal Flight company and partnership inquiries"
+      },
+      "after": {
+        "overview": "Tidal Flight's Chesapeake Regional Airport hangar supports development of hybrid-electric amphibious aircraft. The company describes subscale flight testing and full-scale powertrain hardware, and its 2026 expansion announcement identifies engineering, prototype development and testing in 13,000 square feet of hangar space. This is an aircraft-development resource in the broader AAM ecosystem, not a documented autonomous aircraft production line or a public UAS test facility.\n\nPotential suppliers and research partners can discuss propulsion, structures, systems integration or a defined prototype work package through the company's published contact. Confirm whether external collaboration is offered, the relevant hardware configuration, development stage, work location, safety arrangements and schedule. Marketed aircraft performance and future operating concepts should not be read as present certification, customer service availability or permission for third-party flights from the hangar.",
+        "contact_text": "Published Tidal Flight company and partnership email. Ask about a specific engineering, supplier or prototype collaboration; no general hangar or range rental is established."
+      },
+      "add_sources": [
+        {
+          "title": "Tidal Flight subscale testing, full-scale hardware and current company contact",
+          "url": "https://tidalflight.com/"
+        },
+        {
+          "title": "Tidal Flight official Chesapeake development-hangar expansion announcement",
+          "url": "https://www.tidalflight.com/news/governor-spanberger-announces-hybrid-electric-seaplane-startup-expands-with-more-than-500000-investment-in-chesapeake"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "Virginia Tech MADE",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "University advanced-manufacturing initiative including robotics, autonomous assembly, and field robotics. Public sources support its classification as a Virginia organization. Documented capabilities include Manufacturing, materials, and prototyping and Systems engineering and integration. Relevant mission areas include Training and experimentation.",
+        "contact_url": "https://made.vt.edu/robotics-autonomy.html",
+        "contact_email": "",
+        "contact_phone": "",
+        "contact_text": "Public information route; a direct asset contact is not published in the catalog"
+      },
+      "after": {
+        "overview": "Virginia Tech MADE connects advanced-manufacturing research across robotics, autonomous assembly, materials, additive processes and production systems. Its lab directory links resources such as DREAMS, Field and Space Experimental Robotics, the Advanced Control Systems Lab and the Learning Factory. It is a network for finding an appropriate research or manufacturing-development collaborator, not one factory with a common inventory of bookable equipment.\n\nAn industrial partner can describe a part, assembly process, inspection problem or workforce need and identify the relevant faculty and lab. The published industrial-engagement route includes Kelsey Coleman, who coordinates faculty consulting, external design projects and continuing education. Confirm technical fit, equipment location, project sponsorship, intellectual property, safety training, costs and dates with the responsible unit. A university contact point does not establish that all linked facilities occupy the mapped campus address.",
+        "contact_url": "https://www.ise.vt.edu/people/faculty/coleman.html",
+        "contact_email": "kelseycoleman@vt.edu",
+        "contact_phone": "540-231-4651",
+        "contact_text": "Published MADE industrial-engagement faculty contact, Kelsey Coleman: client outreach, faculty consulting, external design projects and workforce development; not a reservation desk for every linked lab."
+      },
+      "add_sources": [
+        {
+          "title": "Virginia Tech MADE robotics, autonomous assembly and faculty expertise",
+          "url": "https://made.vt.edu/robotics-autonomy.html"
+        },
+        {
+          "title": "MADE directory of distinct laboratories and equipment",
+          "url": "https://made.vt.edu/labs-equipment.html"
+        },
+        {
+          "title": "MADE industrial engagement and faculty project-routing roles",
+          "url": "https://made.vt.edu/workforce-development.html"
+        },
+        {
+          "title": "Kelsey Coleman official faculty contact and industrial client-outreach responsibilities",
+          "url": "https://www.ise.vt.edu/people/faculty/coleman.html"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "VIMS Autonomous Systems Laboratory",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Laboratory designing and building free-swimming autonomous underwater vehicles for oceanographic sensing and field research. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence, Navigation and positioning, and Perception, sensing, and sensor fusion. Relevant mission areas include Maritime domain awareness and Environmental monitoring.",
+        "contact_text": "Mark R. Patterson, Director, Autonomous Systems Laboratory"
+      },
+      "after": {
+        "overview": "The VIMS Autonomous Systems Laboratory designs and builds free-swimming robots for oceanographic research. Mark Patterson's published research profile describes AUV sampling of the seabed and water column, sonar-based recognition of fish and krill, and measurements associated with oxygen conditions and coral-reef health. These examples connect vehicle autonomy to a defined scientific measurement problem rather than simply listing generic marine-robotics capabilities.\n\nA research partner can discuss a sensing question, sampling strategy, recognition algorithm or vehicle behavior with the laboratory's published faculty contact. Identify the sensors, environmental conditions, survey scale and data products needed. Confirm which platforms and personnel are currently available, project sponsorship, deployment arrangements and applicable permissions. Research objectives such as long-duration swarms should not be treated as a commercially available vehicle specification or guaranteed endurance.",
+        "contact_text": "Mark R. Patterson's published VIMS faculty contact; his profile identifies him as directing the Autonomous Systems Laboratory. Confirm current project and platform availability directly."
+      },
+      "accepted_baselines": [
+        {
+          "overview": "Laboratory designing and building free-swimming autonomous underwater vehicles for oceanographic sensing and field research. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence, Navigation and positioning, and Perception, sensing, and sensor fusion. Relevant mission areas include Maritime domain awareness and Environmental monitoring.",
+          "contact_text": "Organization public information and inquiries"
+        }
+      ],
+      "add_sources": [
+        {
+          "title": "VIMS Mark Patterson profile: laboratory role, AUV sensing and environmental research applications",
+          "url": "https://www.vims.edu/people/patterson_mr/"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "VIMS Collaboratory for Physical Oceanography",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Marine research group using autonomous underwater gliders, floats, drifters, radar, satellites, moorings, and ships for coastal observations. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence, Navigation and positioning, and Perception, sensing, and sensor fusion. Relevant mission areas include Maritime domain awareness and Environmental monitoring.",
+        "contact_url": "https://www.vims.edu/contactus/index.php",
+        "contact_phone": "",
+        "contact_text": "Organization public information and inquiries"
+      },
+      "after": {
+        "overview": "This VIMS group studies coastal and polar circulation, transport and mixing using AUVs and gliders, floats, drifters, radar, moorings and ships. Published glider work describes temperature/salinity, oxygen, fluorescence and optical-backscatter sensing, providing examples of how autonomous sampling can characterize water masses and ecosystem conditions. The glider page contains historical missions; it is not a current inventory or a promise that the described vehicles are available for hire.\n\nA partner can approach lab director Donglai Gong with a survey area, scientific question, desired depth and sampling resolution, sensor requirements and data-delivery needs. Discuss platform selection, integration, deployment/recovery support, project funding and permissions before planning fieldwork. The Gloucester Point research contact is distinct from an approved deployment location or a general-purpose maritime test range.",
+        "contact_url": "https://www.vims.edu/people/gong_d/",
+        "contact_phone": "804-684-7529",
+        "contact_text": "Published faculty contact for Donglai Gong, identified by VIMS as the lab director; discuss an ocean-observation or autonomous-sampling research project."
+      },
+      "add_sources": [
+        {
+          "title": "VIMS Collaboratory for Physical Oceanography and laboratory director",
+          "url": "https://www.vims.edu/research/units/labgroups/c4po/"
+        },
+        {
+          "title": "VIMS glider instrumentation and historical research missions",
+          "url": "https://www.vims.edu/research/units/labgroups/c4po/gliders/"
+        },
+        {
+          "title": "Donglai Gong official faculty contact and ocean-sampling research scope",
+          "url": "https://www.vims.edu/people/gong_d/"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "UVA Bio-Inspired Engineering Research Laboratory",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Research laboratory developing bio-inspired structures, controls, and aquatic robotic concepts. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence, Navigation and positioning, and Perception, sensing, and sensor fusion. Relevant mission areas include Maritime domain awareness and Environmental monitoring.",
+        "contact_url": "https://engineering.virginia.edu/department/mechanical-and-aerospace-engineering/people/mae-staff",
+        "contact_phone": "",
+        "contact_text": "Facility or operator public information"
+      },
+      "after": {
+        "overview": "UVA's Bio-Inspired Engineering Research Laboratory investigates structures and actuation inspired by biological movement. Founder Hilary Bart-Smith's university profile describes manta-ray-like morphing foils, lightweight lattice structures, electro-active polymers and applications to morphing aircraft wings and micro air vehicles. These capabilities are relevant to early-stage studies of underwater propulsion, adaptable structures and unconventional robotic mechanisms, not off-the-shelf AUV sales.\n\nA collaborator can discuss a proposed fin or wing mechanism, material behavior, actuation concept, structural model or experimental validation question. Approach the faculty team with geometry, load and motion requirements, intended measurements and a proposed research scope. Confirm current equipment, project support, intellectual-property arrangements and laboratory access; no public tank-rental service, vehicle acceptance envelope or unrestricted field-testing permission is established by the faculty description.",
+        "contact_url": "https://engineering.virginia.edu/faculty/hilary-bart-smith",
+        "contact_phone": "434-924-0701",
+        "contact_text": "Published UVA faculty office contact for Hilary Bart-Smith, founder of the Bio-Inspired Engineering Research Laboratory; use for research collaboration inquiries."
+      },
+      "add_sources": [
+        {
+          "title": "UVA Hilary Bart-Smith faculty profile: laboratory, bio-inspired mechanisms and office contact",
+          "url": "https://engineering.virginia.edu/faculty/hilary-bart-smith"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "George Mason Autonomous Robotics Laboratory",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Collaborative robotics research laboratory spanning computer vision, networks, and autonomous systems. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence and Perception, sensing, and sensor fusion. Relevant mission areas include Training and experimentation.",
+        "website_url": "https://people.cs.gmu.edu/~robotics/pmwiki.php/Main/People",
+        "contact_url": "https://www.vedp.org/industry/unmanned-systems",
+        "contact_phone": "",
+        "contact_text": "Public information route; a direct asset contact is not published in the catalog"
+      },
+      "after": {
+        "overview": "George Mason's Autonomous Robotics Laboratory brings together faculty and students working on robot teams, swarm simulation, multi-agent learning, optimization, distributed sensing and computer vision. It offers a research connection for problems such as coordinating several robots, evaluating a distributed sensing strategy or comparing planning and learning methods. The shared laboratory spans multiple research groups rather than providing one standardized commercial testing package.\n\nContact the lab with the robot platforms, environment, coordination problem and evaluation metrics involved, then identify the appropriate investigator and collaboration route. Its published visitor instructions explicitly ask visitors to call or email ahead so someone can meet them. Confirm the current laboratory location, personnel, equipment, safety and project arrangements before travelling; a campus marker does not define an outdoor robot or aircraft operating area.",
+        "website_url": "https://people.cs.gmu.edu/~robotics/pmwiki.php",
+        "contact_url": "https://people.cs.gmu.edu/~robotics/pmwiki.php/Main/Contact",
+        "contact_phone": "703-993-9281",
+        "contact_text": "Published Autonomous Robotics Laboratory phone and visitor-contact page. Arrange a visit in advance and ask which investigator fits the proposed robot-team or sensing project."
+      },
+      "add_sources": [
+        {
+          "title": "George Mason Autonomous Robotics Laboratory research areas",
+          "url": "https://people.cs.gmu.edu/~robotics/pmwiki.php"
+        },
+        {
+          "title": "George Mason robotics laboratory telephone and advance-visit instructions",
+          "url": "https://people.cs.gmu.edu/~robotics/pmwiki.php/Main/Contact"
+        },
+        {
+          "title": "George Mason current Autonomous Robotics Laboratory faculty directory",
+          "url": "https://people.cs.gmu.edu/~robotics/pmwiki.php/Main/People"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "George Mason MICO Laboratory",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Laboratory researching control, optimization, and learning for multi-robot systems, autonomous driving, and human-robot teams. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence and Perception, sensing, and sensor fusion. Relevant mission areas include Training and experimentation.",
+        "contact_url": "https://mason.gmu.edu/~xwang64/team.html",
+        "contact_email": "",
+        "contact_phone": "",
+        "contact_text": "Facility or operator public information"
+      },
+      "after": {
+        "overview": "MICO develops control, learning and optimization algorithms for robotic and multi-robot systems. Its published research includes reinforcement learning and knowledge transfer, resource-constrained foundation models, multi-robot planning and SLAM, legged mobile manipulation, and human-robot cooperative decisions. This is a research resource for coordination, localization, transferable robot learning or shared-control problems rather than a general-purpose aircraft range.\n\nA prospective collaborator can approach director Xuan Wang with the robot configuration, computing and communications constraints, operating scenarios and success metrics. Discuss the research question, data and software interfaces, available platforms, project sponsorship and intended publications or intellectual property. Laboratory visits and hardware use need an arrangement with the team; the faculty contact and office location do not establish public access, commercial test capacity or permission for outdoor autonomous operations.",
+        "contact_url": "https://mason.gmu.edu/~xwang64/",
+        "contact_email": "xwang64@gmu.edu",
+        "contact_phone": "703-993-1592",
+        "contact_text": "Published research contact for MICO director Xuan Wang. Discuss control, learning, optimization or multi-robot collaboration and arrange any laboratory visit."
+      },
+      "add_sources": [
+        {
+          "title": "George Mason MICO current research areas, director and direct contact details",
+          "url": "https://mason.gmu.edu/~xwang64/"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "George Mason RobotiXX Laboratory",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Field-robotics laboratory developing motion-planning and machine-learning methods for robust mobile autonomy. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence and Perception, sensing, and sensor fusion. Relevant mission areas include Training and experimentation.",
+        "website_url": "https://people.cs.gmu.edu/~xxiao2/index.html",
+        "contact_url": "https://people.cs.gmu.edu/~xxiao2/index.html",
+        "contact_email": "",
+        "contact_text": "Public information route; a direct asset contact is not published in the catalog"
+      },
+      "after": {
+        "overview": "RobotiXX combines motion planning and machine learning for mobile robots in difficult real-world environments. Its published platforms include off-road wheeled vehicles, Jackal and Husky robots, mobile manipulators and legged robots. Examples include navigation through constrained obstacles, mobility over uneven terrain, passive night perception and human-aware navigation. Public benchmarks, datasets and robot-platform descriptions provide concrete starting points for evaluating an autonomy method.\n\nA developer or research sponsor can discuss a navigation failure mode, sensing configuration, terrain scenario, benchmark or field-evaluation collaboration with director Xuesu Xiao. Agree which hardware, data, metrics and site would be used, plus safety, project funding and intellectual-property terms. Listed robots are research assets, not a rental inventory; manufacturer performance figures do not define a universal test-site envelope or public access to field locations.",
+        "website_url": "https://robotixx.cs.gmu.edu/index.html",
+        "contact_url": "https://people.cs.gmu.edu/~xxiao2/index.html",
+        "contact_email": "xiao@gmu.edu",
+        "contact_text": "Published faculty contact for RobotiXX director Xuesu Xiao; ask about a defined navigation, perception, mobility or benchmarking research collaboration."
+      },
+      "accepted_baselines": [
+        {
+          "overview": "Field-robotics laboratory developing motion-planning and machine-learning methods for robust mobile autonomy. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence and Perception, sensing, and sensor fusion. Relevant mission areas include Training and experimentation.",
+          "website_url": "https://robotixx.cs.gmu.edu/index.html",
+          "contact_url": "https://people.cs.gmu.edu/~xxiao2/index.html",
+          "contact_email": "",
+          "contact_text": "Public information route; a direct asset contact is not published in the catalog"
+        }
+      ],
+      "add_sources": [
+        {
+          "title": "RobotiXX official laboratory research and field-robotics scope",
+          "url": "https://robotixx.cs.gmu.edu/index.html"
+        },
+        {
+          "title": "RobotiXX published robot platforms and example evaluation uses",
+          "url": "https://robotixx.cs.gmu.edu/xx-bots.html"
+        },
+        {
+          "title": "Xuesu Xiao current George Mason faculty and laboratory contact",
+          "url": "https://people.cs.gmu.edu/~xxiao2/index.html"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "Virginia Tech Advanced Control Systems Lab",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Indoor research hangar for autonomous aerial and ground robot control experiments. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+        "contact_email": "",
+        "contact_text": "Public information route; a direct asset contact is not published in the catalog"
+      },
+      "after": {
+        "overview": "Virginia Tech's Advanced Control Systems Lab tests control-theory results on autonomous aircraft and lightweight ground robots. The university describes a 6,400-square-foot hangar for indoor robot operations with a Vicon motion-capture system measuring vehicle position, attitude and velocity. This can support repeatable controller, state-estimation and trajectory-tracking experiments with measured motion rather than relying only on simulation.\n\nA research partner can discuss a robust-control or estimation problem with Andrea L'Afflitto and identify the required robot, sensors, maneuver and comparison metrics. Confirm the usable enclosed test volume, vehicle acceptance, safety procedures, equipment, supervision, project agreement and availability directly. Hangar floor area is not a maximum aircraft size or a guaranteed clear flight volume, and the published facility description is not an offer of unsupervised public flight access.",
+        "contact_email": "a.lafflitto@vt.edu",
+        "contact_text": "Published faculty contact for Andrea L'Afflitto on the ACSL facility page; discuss a supervised control, estimation or indoor robotics research project."
+      },
+      "add_sources": [
+        {
+          "title": "Virginia Tech ACSL indoor hangar, motion capture, control research and faculty contact",
+          "url": "https://www.ise.vt.edu/research/labs/advanced-control-systems-lab.html"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "Virginia Tech SpaceDrones Laboratory",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Collaborative hardware and software laboratory for autonomous space applications, distributed UAS, and vision-based tracking. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+        "website_url": "https://spacedrones.aoe.vt.edu/",
+        "contact_url": "https://spacedrones.aoe.vt.edu/",
+        "contact_email": "",
+        "contact_phone": "",
+        "contact_text": "Public information route; a direct asset contact is not published in the catalog"
+      },
+      "after": {
+        "overview": "SpaceDrones uses hardware and software testbeds, spacecraft simulation and surrogate aerial platforms to study autonomous space applications. Virginia Tech's ICAT profile describes hardware-in-the-loop work using multirotor drones, camera/LiDAR sensing and projected optical scenes to simulate aspects of free-flying spacecraft. It also documents multi-agent coordination experiments using lighter-than-air vehicles as surrogates for harder-to-deploy systems. These are laboratory simulations, not orbital qualification or a substitute for vacuum, thermal or launch testing.\n\nA collaborator can ask Kevin Schroeder about relative-navigation, perception, cooperative-control or proximity-operations experiments. Define the scene, sensors, dynamics to be represented, algorithm and ground-truth measurements, then confirm current configuration, space, vehicle acceptance, project terms and safety procedures. The ICAT examples include dated 2022-24 projects and do not guarantee that every demonstrated configuration is presently available.",
+        "website_url": "https://icat.vt.edu/studios/mac/experience-a-b/spacedrones-lab.html",
+        "contact_url": "https://nationalsecurity.vt.edu/personnel-directory/schroeder-kevin.html",
+        "contact_email": "schroeder@vt.edu",
+        "contact_phone": "540-231-7626",
+        "contact_text": "Kevin Schroeder, identified by ICAT as the SpaceDrones lab director; direct email and phone are published in Virginia Tech's National Security Institute directory."
+      },
+      "add_sources": [
+        {
+          "title": "Virginia Tech ICAT SpaceDrones testbeds, surrogate experiments and dated project examples",
+          "url": "https://icat.vt.edu/studios/mac/experience-a-b/spacedrones-lab.html"
+        },
+        {
+          "title": "Kevin Schroeder official faculty/research directory and direct contact",
+          "url": "https://nationalsecurity.vt.edu/personnel-directory/schroeder-kevin.html"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "Virginia Tech Uncrewed Systems Laboratory",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "University laboratory conducting uncrewed-system research, including autonomous aerial search applications. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+        "website_url": "https://usl.me.vt.edu/projects.html",
+        "contact_url": "https://usl.me.vt.edu/projects.html",
+        "contact_email": "",
+        "contact_text": "Public information route; a direct asset contact is not published in the catalog"
+      },
+      "after": {
+        "overview": "Virginia Tech's Uncrewed Systems Laboratory combines autonomy algorithms, hardware design and fabrication, and flight-test experience for air and ground vehicles. Its project list documents autonomous search/classification, flood and disaster assessment, visual tracking and cooperative UAV/UGV work. Many listed projects have completed timelines; they demonstrate relevant experience, not continuing funded services or guaranteed access to an operational aircraft.\n\nA research sponsor or student team can contact Kevin Kochersberger to discuss an autonomous-search concept, sensor integration, prototype aircraft or field-data project. Specify the mission, sensors, software interfaces, operating conditions and evaluation outputs, then agree the research arrangement, staff support and test venue. Laboratory facilities, the separately listed Kentland field resource and any approved flight area have different roles; access and flight permissions must be established for the actual proposed activity.",
+        "website_url": "https://usl.me.vt.edu/",
+        "contact_url": "https://usl.me.vt.edu/",
+        "contact_email": "kbk@vt.edu",
+        "contact_text": "Published laboratory contact for Kevin Kochersberger, primary investigator; discuss a defined air/ground robotics, hardware integration or flight-research project."
+      },
+      "add_sources": [
+        {
+          "title": "Virginia Tech Uncrewed Systems Laboratory scope and principal-investigator contact",
+          "url": "https://usl.me.vt.edu/"
+        },
+        {
+          "title": "Virginia Tech USL project examples, sponsors and completion timelines",
+          "url": "https://usl.me.vt.edu/projects.html"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "CNU Autonomous Systems and Drone Lab",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Christopher Newport University lab researching safe control and planning for aerial and ground vehicles. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+        "contact_url": "https://cnu.edu/people/abhishekphadke/",
+        "contact_text": "Abhishek Phadke, Assistant Professor, School of Engineering and Computing"
+      },
+      "after": {
+        "overview": "Christopher Newport's Science and Engineering Research Center houses a two-story drone laboratory with high-bay space and motion-capture/tracking equipment. The university's February 2026 account describes hands-on UAV programming, simulation, indoor flying and instruction related to the FAA Part 107 exam, with intended industry-partner involvement. The combination is useful for early control/programming experiments and student projects needing measured indoor motion.\n\nA potential collaborator can approach Abhishek Phadke with the aircraft, software, sensing, trajectory or teaching objective and the measurements required. Confirm usable flight dimensions, aircraft acceptance, supervision, safety and scheduling before planning work. The description of high ceilings and larger drones is not a published weight/span limit or a public booking policy. Classroom exam preparation also does not itself confer a pilot certificate or outdoor flight authorization.",
+        "contact_url": "https://cnu.edu/academics/departments/sec/people/",
+        "contact_text": "Published School of Engineering and Computing contact for Abhishek Phadke, the faculty lead named in CNU's drone-lab account; discuss research, teaching or partner access."
+      },
+      "accepted_baselines": [
+        {
+          "overview": "Christopher Newport University lab researching safe control and planning for aerial and ground vehicles. Public sources support its classification as a Virginia facility. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+          "contact_url": "https://www.vedp.org/industry/unmanned-systems",
+          "contact_text": "Public information route; a direct asset contact is not published in the catalog"
+        }
+      ],
+      "add_sources": [
+        {
+          "title": "CNU February 2026 drone lab, motion capture, course and industry-partner context",
+          "url": "https://cnu.edu/news/2026/02/19-cnu-serc-drone-lab/"
+        },
+        {
+          "title": "CNU current faculty directory: Abhishek Phadke email and office number",
+          "url": "https://cnu.edu/academics/departments/sec/people/"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "Marine Corps Warfighting Laboratory",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Marine Corps experimentation organization with documented autonomous reconnaissance and unmanned-systems activities. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence, Systems engineering and integration, and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation and Force protection and installation security.",
+        "contact_url": "https://www.mcwl.marines.mil/Welcome-to-MCWL/About-Us/",
+        "contact_email": "",
+        "contact_text": "Organization public information and inquiries"
+      },
+      "after": {
+        "overview": "The Marine Corps Warfighting Laboratory develops and assesses concepts and technologies through demonstrations and experimentation. Its Future Technology Office describes screening commercial technology for relevance, maturity and feasibility before considering it for experimentation. This is a potential government engagement route for an autonomy, sensing or operational-support concept, not a public range rental or a general equipment-purchasing office.\n\nProspective performers should follow the current technology-screening and applicable white-paper instructions and explain the military problem, technical maturity, evidence, integration needs and proposed evaluation. The laboratory considers mission priorities, timing, lifecycle cost and related work before selecting projects; submitting material does not guarantee funding, a contract or inclusion in an event. Confirm the responsible office, solicitation, information-handling requirements, sponsor and site-access arrangements before sending technical material or planning a demonstration.",
+        "contact_url": "https://www.mcwl.marines.mil/Divisions/SnT/FTO/",
+        "contact_email": "mcwl_osti@usmc.mil",
+        "contact_text": "Published Office of Science and Technology Integration email for coordination. Follow Future Technology Office screening instructions for proposed technologies; not a public range reservation contact."
+      },
+      "accepted_baselines": [
+        {
+          "overview": "Marine Corps experimentation organization with documented autonomous reconnaissance and unmanned-systems activities. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence, Systems engineering and integration, and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation and Force protection and installation security.",
+          "contact_url": "https://www.marines.mil/News/News-Display/Article/746745/marine-corps-warfighting-lab-tests-autonomous-reconnaissance/",
+          "contact_email": "",
+          "contact_text": "Public information route; a direct asset contact is not published in the catalog"
+        }
+      ],
+      "add_sources": [
+        {
+          "title": "MCWL Future Technology Office: screening, white papers, project selection and experimentation role",
+          "url": "https://www.mcwl.marines.mil/Divisions/SnT/FTO/"
+        },
+        {
+          "title": "MCWL Office of Science and Technology Integration role and published email",
+          "url": "https://www.mcwl.marines.mil/Divisions/SnT/OSTI/"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "Naval Surface Warfare Center Dahlgren Division",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Navy warfare center with publicly documented unmanned-systems research, engineering, ranges, and test facilities. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence, Systems engineering and integration, and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation and Force protection and installation security.",
+        "contact_url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Contact/",
+        "contact_text": "Public information route; a direct asset contact is not published in the catalog"
+      },
+      "after": {
+        "overview": "NSWC Dahlgren brings together digital engineering, modeling, systems integration and physical test resources for naval and expeditionary systems. Its Intelligent Automation program addresses autonomy, AI and unmanned systems, with published objectives for instrumented testing, data processing, verification and system safety. The division is a potential research and evaluation partner for government-relevant integration problems, not a single open-access drone range.\n\nA business or university should identify the proposed capability, maturity, interfaces and evaluation evidence and ask which government project team and engagement mechanism apply. The published Small Business Office is a procurement-engagement route; it is not flight control or a guarantee of range access. Confirm sponsorship, agreements, security and information handling, test resources and current approvals for the specific activity. The separately listed runway, outdoor lab and Dam Neck activity should not be treated as interchangeable facilities.",
+        "contact_url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/NSWCDD_Small_Business_Office/",
+        "contact_text": "Official NSWCDD Small Business Office for business and procurement engagement; request routing to the relevant government technical team. Not range control or a test booking desk."
+      },
+      "add_sources": [
+        {
+          "title": "NSWCDD official mission, intelligent automation and integrated proving-ground role",
+          "url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Who-We-Are/"
+        },
+        {
+          "title": "NSWCDD 2024 Intelligent Automation test, data, verification and safety objectives",
+          "url": "https://www.navsea.navy.mil/Portals/103/Documents/NSWC_Dahlgren/Fact%20Sheets%202024/FNL_IA%20Fact%20Sheet.pdf"
+        },
+        {
+          "title": "NSWCDD official Small Business Office engagement route",
+          "url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/NSWCDD_Small_Business_Office/"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "NSWC Dahlgren UAV Test Runway",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "The Navy identifies a Dahlgren UAV runway as an in-house resource for researching and testing unmanned-aircraft sensors, payloads, weapons, and engagement systems. It can support military-sponsored aircraft and combat-system evaluation rather than ordinary airport operations. A Navy report describes a specially coordinated fixed-wing flight from the runway, illustrating that aircraft and airspace approvals are part of the test project. This listing does not establish open commercial access, current aircraft limits, or permission to operate in nearby restricted airspace.",
+        "contact_url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/What-We-Do/",
+        "contact_text": "Public information route; a direct asset contact is not published in the catalog"
+      },
+      "after": {
+        "overview": "Dahlgren's UAV runway is a naval research and test resource associated with aircraft, sensor and combat-system integration work. A Navy account of a June 2014 fixed-wing flight describes months of coordination among Dahlgren commands, NAVAIR, the aircraft test organization and the FAA. It is a documented example of using an aircraft within a wider evaluation, not a current blanket authorization or proof of unrestricted aircraft acceptance.\n\nA government-linked test team can ask about a defined aircraft, sensor/payload integration, data interface or operational evaluation and identify the responsible program and range organization. Confirm current runway condition, usable dimensions, aircraft acceptance, airspace, approvals, instrumentation and site access directly. The public business-engagement route can help identify the appropriate team; it cannot reserve flight operations. Neither the runway marker nor the historical example permits an unrelated operator to launch an aircraft.",
+        "contact_url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/NSWCDD_Small_Business_Office/",
+        "contact_text": "NSWCDD business-engagement route for identifying the appropriate government program. Current runway access and flight coordination require the responsible test/range organization."
+      },
+      "add_sources": [
+        {
+          "title": "Navy June 2014 Dahlgren runway example and interagency test coordination",
+          "url": "https://www.navsea.navy.mil/Media/News/Article/610875/first-uav-flight-over-national-airspace-at-dahlgren-supports-navy-combat-system/"
+        },
+        {
+          "title": "NSWCDD official Small Business Office engagement route, not range control",
+          "url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/NSWCDD_Small_Business_Office/"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "NSWCDD Dam Neck Activity",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Dahlgren Division activity developing warfare-system capabilities that include intelligent automation, autonomy, AI, and unmanned systems. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence, Systems engineering and integration, and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation and Force protection and installation security.",
+        "contact_text": "Public information route; a direct asset contact is not published in the catalog"
+      },
+      "after": {
+        "overview": "Dahlgren's Dam Neck Activity in Virginia Beach develops and sustains surface-Navy combat-system capabilities, including training technology, distributed testing and digital engineering. Its published technical thrusts include adaptive learning, AI/ML, augmented and virtual reality, cyber defense and readiness measurement. For an autonomy team, the useful connection is system integration, human/operator training and evaluation within a naval program, not an outdoor vehicle test field at the office address.\n\nDefine the software, interface, training scenario or readiness question and ask the government team which laboratory, agreement and program fit the work. Establish information-handling, security, test-data and visitor arrangements before a visit. The division-wide business-engagement office can route procurement questions, but neither that contact nor the parent Dahlgren range listing establishes access to Dam Neck facilities or permission to test aircraft or maritime vehicles there.",
+        "contact_text": "Official Dam Neck Activity information page; coordinate technical work and visits with the responsible government program. Division-wide small-business routing does not grant facility access."
+      },
+      "add_sources": [
+        {
+          "title": "NSWCDD Dam Neck Activity official technical thrusts, distributed testing and training technologies",
+          "url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/Dam-Neck/"
+        },
+        {
+          "title": "NSWCDD business and procurement engagement route",
+          "url": "https://www.navsea.navy.mil/Home/Warfare-Centers/NSWC-Dahlgren/NSWCDD_Small_Business_Office/"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "Virginia Modeling, Analysis and Simulation Center",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "ODU research center with virtual-environment, robotics, and unmanned-surface-vehicle work. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence, Navigation and positioning, and Perception, sensing, and sensor fusion. Relevant mission areas include Maritime domain awareness and Environmental monitoring.",
+        "contact_url": "https://vmasc.org/about-vmasc/contact/",
+        "contact_email": "",
+        "contact_text": "VMASC research inquiries; public institute contact and ODU research directory"
+      },
+      "after": {
+        "overview": "ODU's VMASC offers simulation, analytics, robotics and virtual-environment research resources in Suffolk. Its Simulation Experience and Analytics Lab provides configurable R&D space with simulators, sensors, 3D scanning/printing and laser cutting. The published facility portfolio also includes a 5G laboratory and robotics/virtual-environment work, supporting projects that combine physical measurements, simulated scenarios and human interaction.\n\nA partner can discuss a robot or connected-system evaluation, operator-training scenario, prototype or data-analysis problem and identify the right research team. Specify the hardware, communications, environment, metrics and data-handling needs before agreeing sponsorship, deliverables, intellectual property and facility access. Published research-computing and regulated-data resources do not mean every project or uploaded dataset is approved automatically. Confirm equipment availability and the actual test area rather than treating whole-building floor space as a vehicle envelope.",
+        "contact_url": "https://vmasc.org/staff-profiles/",
+        "contact_email": "bezell@odu.edu",
+        "contact_text": "Barry Ezell, listed in VMASC's directory as Interim Executive Director; published research-routing email and phone. Ask which lab and investigator fit the project."
+      },
+      "add_sources": [
+        {
+          "title": "VMASC simulation, robotics, 5G and research-computing facilities",
+          "url": "https://vmasc.org/about-vmasc/facilities-and-equipment/"
+        },
+        {
+          "title": "VMASC current directory: Barry Ezell role, direct email and phone",
+          "url": "https://vmasc.org/staff-profiles/"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "ODU Unmanned and Autonomous Vehicle Laboratory",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "ODU's laboratory in Kaufman Hall supports student aircraft design, fabrication, integration, and sponsored research on aerial and surface vehicles. Published projects include the AeroVironment-sponsored Gryphon flying wing for search-and-rescue and reconnaissance concepts, with work on modular payloads, autopilots, launch, navigation, and recovery. The lab also teaches students to build and fly small aircraft. Project targets and flight demonstrations describe particular prototypes, not guaranteed commercial performance or an authorized flight area at the laboratory address.",
+        "contact_text": "Laboratory research, student-project, and use inquiries: Dr. Drew Landman."
+      },
+      "after": {
+        "overview": "ODU's Kaufman Hall laboratory supports small-aircraft design, fabrication, integration and sponsored air/surface-vehicle research. Published student work includes aerodynamic and structural analysis, CAD and molds, autopilot installation, launch/recovery development and the AeroVironment-sponsored 2022-23 Gryphon flying-wing project. Its examples connect payload, power, navigation and recovery requirements to an actual prototype-development workflow. Project targets and historical flights are not guaranteed performance of a current commercial aircraft.\n\nA sponsor or student collaborator can contact Drew Landman about a design study, prototype, integration experiment or educational project. Discuss the technical question, team responsibilities, equipment, funding, intellectual property and deliverables before committing. Arrange supervised laboratory access and a separate suitable flight venue with the team. A campus lab address, a past 21-foot-span competition aircraft or a historical flight distance does not define today's acceptance limits or flight permissions.",
+        "contact_text": "Drew Landman, named laboratory director and published contact for users interested in the lab; discuss a sponsored research, prototype or student project and arrange access."
+      },
+      "add_sources": [
+        {
+          "title": "ODU UAV laboratory, director contact, sponsored projects, fabrication and flight-development examples",
+          "url": "https://www.odu.edu/mechanical-aerospace-engineering/instructional-laboratories/uav-lab"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "VCU Autonomous Robots and Vehicles Laboratory",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "VCU's ARVL combines mobile robots, scaled traffic environments, networked driving simulators, an autonomous car, and indoor nano drones. Researchers can compare lane keeping, collision avoidance, platooning, intersection control, teleoperation, and cooperative perception before more expensive field trials. Full-cabin and desktop simulators support shared scenarios and human-in-the-loop work, while indoor positioning supports experiments across aerial and ground robots. These are laboratory and research platforms, not evidence of a public road-test corridor or unrestricted outdoor drone range.",
+        "contact_url": "https://arvl.lab.vcu.edu/",
+        "contact_email": "",
+        "contact_phone": "",
+        "contact_text": "Public information route; a direct asset contact is not published in the catalog"
+      },
+      "after": {
+        "overview": "VCU's ARVL evaluates autonomy using three complementary settings: scaled indoor traffic with mobile robots, networked driving simulators and an in-house autonomous vehicle. The published equipment supports lane keeping, collision avoidance, platooning, intersection control, cooperative perception and teleoperation, with indoor nano drones and human/driver-monitoring resources extending the research scope. A team can compare an algorithm in simulation and on a controlled small-scale platform before proposing a larger experiment.\n\nDiscuss the scenario, sensors, software interfaces, communications, human involvement and evaluation metrics with lab director Azim Eskandarian. Confirm which platform, data and staff are available and agree a supervised research arrangement, safety review, intellectual property and schedule. A vehicle's advertised speed or simulator scenario is not a site operating limit. The laboratory is not an unrestricted public-road corridor, commercial drone range or automatic equipment-rental service.",
+        "contact_url": "https://egr.vcu.edu/directory/azim.eskandarian/",
+        "contact_email": "eskandariana@vcu.edu",
+        "contact_phone": "804-827-0865",
+        "contact_text": "Published faculty contact for ARVL director Azim Eskandarian, also Dean of Engineering; use for research routing and confirmation of the appropriate lab team, not a rental desk."
+      },
+      "add_sources": [
+        {
+          "title": "VCU ARVL published testing paradigms, platforms and evaluation tasks",
+          "url": "https://arvl.lab.vcu.edu/capabilities-and-equipment/"
+        },
+        {
+          "title": "VCU ARVL people page identifies Azim Eskandarian as lab director",
+          "url": "https://arvl.lab.vcu.edu/people/"
+        },
+        {
+          "title": "VCU current Azim Eskandarian faculty email and office telephone",
+          "url": "https://egr.vcu.edu/directory/azim.eskandarian/"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "Virginia Institute for Spaceflight and Autonomy",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "ODU institute coordinating spaceflight, autonomous-systems research, education, and commercialization. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+        "contact_text": "VISA research and partnership inquiries: Yiannis Papelis"
+      },
+      "after": {
+        "overview": "ODU's VISA connects research, workforce development and commercialization for spaceflight and autonomous systems. Its documented projects include the Hydrone surface-vehicle work for shoreline and bathymetric data collection and a Hampton Roads AAM service-enablement assessment. These examples show a route for combining platforms, sensing, geospatial analysis and local operational needs; the 2021 Hydrone account is a dated project example, not a standing survey-service guarantee.\n\nA company, public agency or research partner can bring a use case, required data product, proposed operating environment and collaboration need through VISA's partnership contact. Ask which investigator, program or separate site, such as MASTS, is appropriate and agree responsibilities, access, funding and deliverables. VISA coordinates an ecosystem of people and projects; it does not itself grant airspace approval, reserve every ODU facility or guarantee commercial deployment readiness.",
+        "contact_text": "VISA partnership inquiry form and published institute contact for Yiannis Papelis; ask for the program, investigator or test-site team appropriate to the proposed use case."
+      },
+      "add_sources": [
+        {
+          "title": "VISA official research, entrepreneurship and partner-coordination role",
+          "url": "https://visaatodu.org/"
+        },
+        {
+          "title": "VISA 2021 Hydrone coastal mapping and sensing project example",
+          "url": "https://visaatodu.org/hydrone-update/"
+        },
+        {
+          "title": "VISA Hampton Roads AAM service-enablement study scope",
+          "url": "https://visaatodu.org/projects/hampton-roads-aam-service-enablement-assessment/"
+        },
+        {
+          "title": "VISA partnership inquiry form and named institute contact",
+          "url": "https://visaatodu.org/contact/"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "NOVA Fab Lab Manassas",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Northern Virginia Community College fabrication lab supporting robotics, electronics, and additive-manufacturing education. The Trailside Building lab provides fabrication equipment and robotics expertise to NOVA students, faculty, and staff. It is supporting workforce and prototyping capacity; open access for outside businesses is not assumed.",
+        "contact_text": "Public organization or facility contact; mapped address is a contact site, not an operating area."
+      },
+      "after": {
+        "overview": "NOVA's Trailside Building Fab Lab supports digital fabrication, 3D modeling, electronics/coding, robotics and additive manufacturing. It can help students prototype an enclosure, bracket, sensor interface or simple robotic mechanism and develop practical fabrication skills. Published programs include workshops, class collaborations, design challenges and open-lab personal projects; this is education and prototyping capacity rather than an established outside contract-manufacturing service.\n\nThe NOVA Makers open-lab route is for NOVA students, faculty and staff. The college requires enrollment in its Canvas course, completion of the online safety-orientation certification and a release form before open-lab participation; individual equipment and workshops can require further certifications. Contact the Fab Lab to discuss eligibility, a tour, class partnership, materials, equipment and current hours. Do not assume commercial access, unsupervised machine use or that a robotics-capable makerspace permits drone flights.",
+        "contact_text": "Published Fab Lab team email and phone for tours, eligibility, equipment, class collaborations and required safety or machine certifications."
+      },
+      "add_sources": [
+        {
+          "title": "NOVA Fab Lab capabilities, membership eligibility, safety orientation, release and equipment training",
+          "url": "https://www.nvcc.edu/academics/divisions/iet/systemic/fablab.html"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "George Mason Center for Air Transportation Systems Research",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "Research center focused on air transportation systems, operations, modeling, and analysis. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+        "contact_url": "https://www.vedp.org/industry/unmanned-systems",
+        "contact_email": "",
+        "contact_phone": "",
+        "contact_text": "Public information route; a direct asset contact is not published in the catalog"
+      },
+      "after": {
+        "overview": "CATSR studies air-transportation systems through simulation, optimization, safety analysis and operational performance assessment. Its published work covers airport and airspace modeling, rare-event risk, flight-deck human factors, noise/emissions and cost-benefit analysis, with resources on drones and autonomy. This is a connection for evaluating an operating concept or airspace/system tradeoff, not a physical test range that can authorize an aircraft to fly.\n\nA sponsor can approach Lance Sherry with the proposed service or aircraft concept, routes and demand assumptions, operational constraints, available data and decision criteria. Define the model, scenarios, validation evidence, uncertainty and deliverables with the research team. Confirm the current project, staff, software/data rights and collaboration arrangements directly; historical studies and a university office do not establish regulator approval, current operating permission or open-access flight facilities.",
+        "contact_url": "https://catsr.vse.gmu.edu/contact.html",
+        "contact_email": "lsherry@gmu.edu",
+        "contact_phone": "703-993-1711",
+        "contact_text": "Published CATSR contact for Lance Sherry and the center's office; discuss an airspace, safety, simulation or operational-analysis research project."
+      },
+      "add_sources": [
+        {
+          "title": "George Mason CATSR research mission, analysis methods and Lance Sherry contact",
+          "url": "https://catsr.vse.gmu.edu/"
+        },
+        {
+          "title": "CATSR office contact details and visit location",
+          "url": "https://catsr.vse.gmu.edu/contact.html"
+        },
+        {
+          "title": "CATSR published airspace, safety, environmental and economic analysis capabilities",
+          "url": "https://catsr.vse.gmu.edu/research.html"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    },
+    {
+      "name": "Virginia Tech Mission Systems Division",
+      "provenance": "curated-public-source",
+      "before": {
+        "overview": "National-security research division developing autonomous platforms, resilient control, maritime sensing, and airborne and spaceborne systems. Public sources support its classification as a Virginia organization. Documented capabilities include Autonomy and artificial intelligence and Testing, evaluation, verification, and validation. Relevant mission areas include Training and experimentation.",
+        "contact_url": "https://nationalsecurity.vt.edu/research/msd.html",
+        "contact_email": "",
+        "contact_phone": "",
+        "contact_text": "Public information route; a direct asset contact is not published in the catalog"
+      },
+      "after": {
+        "overview": "Virginia Tech's Mission Systems Division develops platforms, sensing and autonomy from maritime environments to space. Its current institutional description connects multi-agent autonomy, counter-drone evaluation, maritime remote sensing and small satellites with experiments using ground stations, thermal-vacuum chambers, vibration resources, wind tunnels and separate specialist centers. This offers a way to pair a mission problem with a research team and suitable evaluation infrastructure, not a single facility with one access policy.\n\nA sponsor can describe the platform, environment, sensor/control problem, maturity and evidence needed through the NSI partnership route. Ask which investigator and site should own the work, then confirm equipment configuration, project eligibility, agreements, data handling and safety requirements. Associate director Kevin Schroeder's published contact provides technical routing; the university reference point does not identify every laboratory entrance, flight area or maritime operating boundary.",
+        "contact_url": "https://nationalsecurity.vt.edu/join/contact.html",
+        "contact_email": "schroeder@vt.edu",
+        "contact_phone": "540-231-7626",
+        "contact_text": "NSI partnership inquiry form; Kevin Schroeder's published associate-director contact for technical routing. Confirm the investigator and facility appropriate to the proposed mission-system project."
+      },
+      "add_sources": [
+        {
+          "title": "Virginia Tech Mission Systems Division current research, experimental resources and distinct centers",
+          "url": "https://nationalsecurity.vt.edu/research/msd.html"
+        },
+        {
+          "title": "Virginia Tech NSI formal partnership and contact route",
+          "url": "https://nationalsecurity.vt.edu/join/contact.html"
+        },
+        {
+          "title": "Kevin Schroeder official Mission Systems role and published direct contact",
+          "url": "https://nationalsecurity.vt.edu/personnel-directory/schroeder-kevin.html"
+        }
+      ],
+      "reason": "Replace generic or incomplete prose with primary-source practical uses, published access routes and correctly scoped contacts. No current availability, unlisted equipment, flight permission, aircraft limit or editorial verification is inferred."
+    }
+  ]
+}
