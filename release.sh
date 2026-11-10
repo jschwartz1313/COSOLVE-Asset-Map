@@ -30,6 +30,7 @@ python manage.py apply_catalog_corrections --corrections data/test_site_criteria
 python manage.py apply_catalog_corrections --corrections data/decision_profiles_2026_11_05.json
 python manage.py apply_catalog_corrections --corrections data/facility_profiles_2026_11_06.json
 python manage.py apply_catalog_corrections --corrections data/facility_profiles_2026_11_10.json
+python manage.py apply_catalog_corrections --corrections data/facility_profiles_2026_11_10_followup.json
 python manage.py enrich_asset_profiles --guarded-corrections data/faa_baa_corrections_2026_10_09.json
 python manage.py apply_catalog_reviews
 python manage.py apply_catalog_reviews --reviews data/asset_editorial_reviews_2026_08_24.json

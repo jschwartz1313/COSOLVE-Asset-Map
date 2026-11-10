@@ -69,6 +69,7 @@ TEST_SITE_CRITERIA_PATH = ROOT / "data" / "test_site_criteria_2026_11_03.json"
 DECISION_PROFILES_PATH = ROOT / "data" / "decision_profiles_2026_11_05.json"
 FACILITY_PROFILES_PATH = ROOT / "data" / "facility_profiles_2026_11_06.json"
 FACILITY_DETAIL_PROFILES_PATH = ROOT / "data" / "facility_profiles_2026_11_10.json"
+FACILITY_FOLLOWUP_PROFILES_PATH = ROOT / "data" / "facility_profiles_2026_11_10_followup.json"
 AIRPORT_DISPLAY_NAMES_PATH = ROOT / "data" / "airport_display_names_2026_09_07.json"
 
 IPEDS_NAME_ALIASES = {
@@ -11584,6 +11585,7 @@ def apply_reviewed_corrections(records, corrections=None):
         corrections += json.loads(DECISION_PROFILES_PATH.read_text())["corrections"]
         corrections += json.loads(FACILITY_PROFILES_PATH.read_text())["corrections"]
         corrections += json.loads(FACILITY_DETAIL_PROFILES_PATH.read_text())["corrections"]
+        corrections += json.loads(FACILITY_FOLLOWUP_PROFILES_PATH.read_text())["corrections"]
     for correction in corrections:
         record = records_by_name[correction["name"]]
         record.update(correction["after"])

@@ -36,6 +36,9 @@ class DecisionProfileEvidenceTests(SimpleTestCase):
     def test_review_is_scoped_reproducible_and_does_not_publish_editorial_verification(self):
         changes = manifest()["corrections"]
         catalog = records()
+        dated = {r["name"]: r for r in apply_reviewed_corrections(
+            deepcopy(list(catalog.values())), changes
+        )}
         self.assertEqual(len(changes), 25)
         self.assertEqual(len({change["name"] for change in changes}), 25)
         for change in changes:
@@ -47,7 +50,7 @@ class DecisionProfileEvidenceTests(SimpleTestCase):
                 self.assertFalse(
                     {"status", "reviewed_at", "last_verified_at"} & change["after"].keys()
                 )
-                record = catalog[change["name"]]
+                record = dated[change["name"]]
                 self.assertGreaterEqual(len(record["overview"].split()), 70)
                 self.assertTrue(record["contact_url"])
                 urls = {source["url"] for source in record["sources"]}

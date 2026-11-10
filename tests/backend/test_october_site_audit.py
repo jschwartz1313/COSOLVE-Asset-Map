@@ -14,7 +14,11 @@ from apps.assets.models import Asset
 from apps.catalog.models import Region
 from apps.core.views import region_metrics
 from scripts.audit_catalog_sources import classify_response
-from scripts.build_real_asset_catalog import FACILITY_DETAIL_PROFILES_PATH, FACILITY_PROFILES_PATH
+from scripts.build_real_asset_catalog import (
+    FACILITY_DETAIL_PROFILES_PATH,
+    FACILITY_FOLLOWUP_PROFILES_PATH,
+    FACILITY_PROFILES_PATH,
+)
 
 CORRECTIONS = settings.BASE_DIR / "data/asset_website_corrections_2026_10_06.json"
 
@@ -80,7 +84,8 @@ class OctoberWebsiteCorrectionTests(TestCase):
         names = {c["name"] for c in self.changes}
         records = deepcopy([r for r in catalog["records"] if r["name"] in names])
         by_name = {r["name"]: r for r in records}
-        for path in (FACILITY_DETAIL_PROFILES_PATH, FACILITY_PROFILES_PATH):
+        for path in (FACILITY_FOLLOWUP_PROFILES_PATH, FACILITY_DETAIL_PROFILES_PATH,
+                     FACILITY_PROFILES_PATH):
             for later in json.loads(path.read_text())["corrections"]:
                 if later["name"] in by_name:
                     by_name[later["name"]].update(later["before"])
