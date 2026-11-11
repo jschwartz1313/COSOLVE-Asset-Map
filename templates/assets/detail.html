@@ -3,6 +3,7 @@
 {% block body_class %}asset-detail-page{% endblock %}
 {% block title %}{{ asset.public_name }} | COSOLVE{% endblock %}
 {% block meta_description %}{{ asset.short_description }}{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/decision-tools.css' %}">{% endblock %}
 {% block content %}
 <main id="main-content" class="detail-page">
   <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="{% url 'core:directory' %}">Directory</a><span>/</span><span>Asset profile</span></nav>
@@ -22,9 +23,11 @@
         {% for paragraph in about_paragraphs %}<p>{{ paragraph|linebreaksbr }}</p>{% endfor %}
       </section>
       {% endif %}
-      {% if asset.capabilities.exists or asset.missions.exists or asset.activity_status or asset.current_activity or asset.partnership_opportunities or asset.has_test_details or asset.owner_operator or asset.available_acreage or asset.development_status or asset.development_notes or asset.infrastructure_access %}
+      {% if asset.capabilities.exists or asset.missions.exists or asset.activity_status or asset.current_activity or asset.partnership_opportunities or asset.has_test_details or asset.owner_operator or asset.available_acreage or asset.development_status or asset.development_notes or asset.infrastructure_access or operator_details or manufacturing_details.evidence_usable %}
       <section class="focus-section">
         <h2>Capabilities and uses</h2>
+        {% if operator_details.use_cases or operator_details.access_notes %}<div class="profile-subsection operator-details"><h3>Operator-provided details</h3>{% if operator_details.use_cases %}<p>{{ operator_details.use_cases|linebreaksbr }}</p>{% endif %}{% if operator_details.access_notes %}<p><strong>Access</strong> {{ operator_details.access_notes|linebreaksbr }}</p>{% endif %}</div>{% endif %}
+        {% if manufacturing_details.evidence_usable %}<div class="profile-subsection manufacturing-details"><h3>Manufacturing capabilities</h3><dl class="test-spec-list">{% if manufacturing_details.process_labels %}<div><dt>Processes</dt><dd>{{ manufacturing_details.process_labels|join:"; " }}</dd></div>{% endif %}{% if manufacturing_details.material_labels %}<div><dt>Materials</dt><dd>{{ manufacturing_details.material_labels|join:"; " }}</dd></div>{% endif %}{% if manufacturing_details.service_mode_labels %}<div><dt>Service modes</dt><dd>{{ manufacturing_details.service_mode_labels|join:"; " }}</dd></div>{% endif %}{% if manufacturing_details.access_labels %}<div><dt>Access</dt><dd>{{ manufacturing_details.access_labels|join:"; " }}</dd></div>{% endif %}</dl><p class="field-note">{{ manufacturing_details.notes }}</p><p class="section-note"><a href="{{ manufacturing_details.source_url }}" target="_blank" rel="noopener noreferrer">Manufacturing source</a> &middot; <a href="{% url 'core:manufacturing-search' %}">Compare manufacturing requirements</a></p></div>{% endif %}
         {% if asset.capabilities.exists %}<div class="focus-row"><h3>Capabilities</h3><ul class="detail-taxonomy-list">{% for item in asset.capabilities.all %}<li>{{ item.name }}</li>{% endfor %}</ul></div>{% endif %}
         {% if asset.missions.exists %}<div class="focus-row"><h3>Mission areas</h3><ul class="detail-taxonomy-list">{% for item in asset.missions.all %}<li>{{ item.name }}</li>{% endfor %}</ul></div>{% endif %}
         {% if asset.activity_status or asset.current_activity or asset.partnership_opportunities %}
@@ -79,15 +82,15 @@
     </article>
     <section class="detail-sidebar" aria-labelledby="contact-location-heading">
       <h2 id="contact-location-heading">Contact and location</h2>
-      {% if asset.website_url or asset.contact_text or asset.contact_phone or asset.contact_email or asset.contact_url %}
+      {% if asset.website_url or public_contact.text or public_contact.phone or public_contact.email or public_contact.url %}
       <div class="contact-section">
-        <h3>Contact</h3>
+        <h3>{% if public_contact.operator_provided %}Operator-provided contact{% else %}Contact{% endif %}</h3>
         {% if asset.website_url %}<a class="button primary full" href="{{ asset.website_url }}" target="_blank" rel="noopener noreferrer">Visit website</a>{% endif %}
-        <dl>{% if asset.contact_phone %}<dt>Phone</dt><dd><a href="tel:{{ asset.contact_phone }}">{{ asset.contact_phone }}</a></dd>{% endif %}{% if asset.contact_email %}<dt>Email</dt><dd><a href="mailto:{{ asset.contact_email }}">{{ asset.contact_email }}</a></dd>{% endif %}{% if asset.contact_url %}<dt>Public contact route</dt><dd><a href="{{ asset.contact_url }}" target="_blank" rel="noopener noreferrer">Open contact information</a></dd>{% endif %}</dl>
-        {% if asset.contact_text %}<p class="field-note contact-scope">{{ asset.contact_text }}</p>{% endif %}
+        <dl>{% if public_contact.phone %}<dt>Phone</dt><dd><a href="tel:{{ public_contact.phone }}">{{ public_contact.phone }}</a></dd>{% endif %}{% if public_contact.email %}<dt>Email</dt><dd><a href="mailto:{{ public_contact.email }}">{{ public_contact.email }}</a></dd>{% endif %}{% if public_contact.url %}<dt>Public contact route</dt><dd><a href="{{ public_contact.url }}" target="_blank" rel="noopener noreferrer">Open contact information</a></dd>{% endif %}</dl>
+        {% if public_contact.text %}<p class="field-note contact-scope">{{ public_contact.text }}</p>{% endif %}
       </div>
       {% endif %}
-      <div class="location-section{% if not asset.website_url and not asset.contact_text and not asset.contact_phone and not asset.contact_email and not asset.contact_url %} location-only{% endif %}">
+      <div class="location-section{% if not asset.website_url and not public_contact.text and not public_contact.phone and not public_contact.email and not public_contact.url %} location-only{% endif %}">
         <h3>Location</h3>
         <dl>
           {% if asset.location_role %}<dt>Location represents</dt><dd>{{ asset.get_location_role_display }}</dd>{% endif %}
@@ -101,6 +104,7 @@
       <details class="detail-disclosure supporting-disclosure">
         <summary><span>Supporting details</span></summary>
         <div class="supporting-content">
+          {% for diagram in site_diagrams %}<section class="site-diagram-section"><h3>{{ diagram.title }}</h3><figure class="site-diagram"><img src="{{ diagram.image_url }}" alt="{{ diagram.alt_text }}" loading="lazy" referrerpolicy="no-referrer"><figcaption>{% if diagram.caption %}{{ diagram.caption }}<br>{% endif %}{{ diagram.credit }} &middot; <a href="{{ diagram.source_url }}" target="_blank" rel="noopener noreferrer">Diagram source</a></figcaption></figure></section>{% endfor %}
           <section class="classification-section">
             <h3>Classification</h3>
             <dl><dt>Strategic categories</dt><dd>{% for item in asset.strategic_categories.all %}<span>{{ item.name }}</span>{% endfor %}</dd><dt>Platform domains</dt><dd>{% for item in asset.platform_domains.all %}<span>{{ item.name }}</span>{% endfor %}</dd><dt>Region</dt><dd>{{ asset.region.name|default:"Not assigned" }}</dd></dl>
@@ -122,7 +126,9 @@
       </details>
     </div>
   </div>
-  <footer class="profile-actions"><a class="profile-update-link" href="{% url 'core:asset-suggest-update' asset.slug %}">Suggest an update</a></footer>
+  <footer class="profile-actions"><button class="shortlist-toggle" data-compare-asset="{{ asset.slug }}" aria-pressed="false" type="button">Add to comparison</button><a href="{% url 'core:asset-inquiry' asset.slug %}">Prepare an inquiry</a><a class="profile-update-link" href="{% url 'core:asset-suggest-update' asset.slug %}">Suggest an update</a></footer>
+  {% include "includes/comparison_tray.html" %}
 </main>
 <script type="module" src="{% static 'js/asset-detail.js' %}?v=20261021-1"></script>
+<script type="module" src="{% static 'js/asset-shortlist.js' %}"></script>
 {% endblock %}

@@ -12,6 +12,7 @@ class OptionalSiteLoginMiddleware:
         "/admin/login/",
         "/static/",
         "/health/",
+        "/operator-review/",
     )
 
     def __init__(self, get_response):

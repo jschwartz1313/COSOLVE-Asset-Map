@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Prepare an inquiry | {{ asset.public_name }}{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/decision-tools.css' %}">{% endblock %}
+{% block content %}
+<main id="main-content" class="content-page decision-page">
+  <header class="decision-heading"><div><a href="{{ asset.get_absolute_url }}">{{ asset.public_name }}</a><h1>Prepare an inquiry</h1><p>Draft only. Nothing is sent or saved to the asset database.</p></div></header>
+  <div class="inquiry-layout"><form method="post" class="decision-form">{% csrf_token %}{{ form.non_field_errors }}{% for field in form %}<div><label for="{{ field.id_for_label }}">{{ field.label }}</label>{{ field }}{{ field.errors }}</div>{% endfor %}<div class="decision-actions"><button class="button primary" type="submit">Prepare draft</button><button class="button secondary" type="submit" name="download" value="text">Download draft</button></div></form>
+    <section aria-labelledby="inquiry-contact"><h2 id="inquiry-contact">Public contact route</h2>{% if public_contact.text %}<p>{{ public_contact.text }}</p>{% endif %}<ul class="inquiry-contact">{% if public_contact.email %}<li><a href="mailto:{{ public_contact.email }}">{{ public_contact.email }}</a></li>{% endif %}{% if public_contact.phone %}<li><a href="tel:{{ public_contact.phone }}">{{ public_contact.phone }}</a></li>{% endif %}{% if public_contact.url %}<li><a href="{{ public_contact.url }}" target="_blank" rel="noopener noreferrer">Contact information</a></li>{% elif asset.website_url %}<li><a href="{{ asset.website_url }}" target="_blank" rel="noopener noreferrer">Organization website</a></li>{% endif %}{% if not public_contact.email and not public_contact.phone and not public_contact.url and not asset.website_url %}<li>No public contact route documented.</li>{% endif %}</ul></section>
+  </div>
+  {% if draft %}<section class="inquiry-draft"><h2>Inquiry draft</h2><label for="inquiry-draft">Message</label><textarea id="inquiry-draft" rows="18" spellcheck="true">{{ draft }}</textarea></section>{% endif %}
+</main>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Compare assets | COSOLVE{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/decision-tools.css' %}">{% endblock %}
+{% block content %}
+<main id="main-content" class="content-page decision-page">
+  <header class="decision-heading"><div><a href="{% url 'core:directory' %}">Asset directory</a><h1>Compare assets</h1></div>{% if assets %}<a href="?{{ download_query }}">Export comparison CSV</a>{% endif %}</header>
+  <div class="compare-selection" aria-label="Selected assets">{% for asset, remove_query in selection %}<a href="?{{ remove_query }}" aria-label="Remove {{ asset.public_name }} from comparison">{{ asset.public_name }} <span aria-hidden="true">&times;</span></a>{% endfor %}</div>
+  {% if assets|length < 5 %}<form method="get" class="compare-search">{% for asset in assets %}<input type="hidden" name="asset" value="{{ asset.slug }}">{% endfor %}<label for="compare-query">Find an asset to compare</label><div><input id="compare-query" name="q" value="{{ query }}" maxlength="200" type="search"><button class="button primary" type="submit">Search</button></div></form>{% endif %}
+  {% if query and assets|length < 5 %}<ul class="comparison-candidates">{% for result in candidates %}<li><a href="?{{ result.query }}">Add {{ result.asset.public_name }}</a><span>{{ result.asset.city }}</span></li>{% empty %}<li>No additional matching assets.</li>{% endfor %}</ul>{% endif %}
+  {% if assets %}
+  <div class="comparison-scroll" role="region" aria-label="Asset comparison table" tabindex="0">
+    <table class="asset-comparison"><caption>{{ assets|length }} selected asset{{ assets|length|pluralize }}</caption><thead><tr><th scope="col">Field</th>{% for asset in assets %}<th scope="col"><a href="{{ asset.get_absolute_url }}">{{ asset.public_name }}</a></th>{% endfor %}</tr></thead><tbody>{% for row in rows %}<tr><th scope="row">{{ row.label }}</th>{% for value in row.values %}<td>{% if row.label == "Website" and value != "Not documented" %}<a href="{{ value }}" target="_blank" rel="noopener noreferrer">Visit website</a>{% else %}{{ value|linebreaksbr }}{% endif %}</td>{% endfor %}</tr>{% endfor %}<tr><th scope="row">Next step</th>{% for asset in assets %}<td><a href="{% url 'core:asset-inquiry' asset.slug %}">Prepare an inquiry</a></td>{% endfor %}</tr></tbody></table>
+  </div>
+  {% else %}<p class="empty-state">No assets selected.</p>{% endif %}
+  <p class="field-note">Unknown specifications are not confirmed capabilities. Contact the operator to establish project fit, access and availability.</p>
+</main>
+{{ browser_selection|json_script:"comparison-selection" }}
+<script type="module" src="{% static 'js/asset-shortlist.js' %}"></script>
+{% endblock %}

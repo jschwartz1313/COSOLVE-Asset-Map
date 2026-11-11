@@ -16,7 +16,10 @@ from django.views.decorators.http import require_POST
 from apps.api.query import filter_public_assets
 from apps.api.search import PUBLIC_NAME_ORDER
 from apps.assets.discovery import RESOURCE_CHOICES
+from apps.assets.manufacturing import compare_manufacturing
 from apps.assets.models import Asset, SavedView
+from apps.assets.operator_review import get_public_operator_details
+from apps.assets.public_details import public_contact_details
 from apps.assets.testing import (
     ACCESS_CHOICES,
     ACTIVITY_CHOICES,
@@ -193,6 +196,7 @@ def asset_detail(request, slug):
     for paragraph in (overview, asset.unmanned_systems_relevance.strip()):
         if paragraph and paragraph != summary and paragraph not in about_paragraphs:
             about_paragraphs.append(paragraph)
+    operator_details = get_public_operator_details(asset)
     return render(
         request,
         "assets/detail.html",
@@ -205,6 +209,10 @@ def asset_detail(request, slug):
             "incoming_relationship_count": incoming_relationships.count(),
             "similar_assets": similar_assets,
             "public_sources": public_sources,
+            "site_diagrams": asset.site_diagrams.filter(publication_approved=True),
+            "manufacturing_details": compare_manufacturing(asset, {}),
+            "operator_details": operator_details,
+            "public_contact": public_contact_details(asset, operator_details),
             "test_access_labels": access_labels(asset),
             "test_criteria_supported": evidence_usable(
                 asset, asset.test_suitability_source_url, asset.test_suitability_reviewed_at,

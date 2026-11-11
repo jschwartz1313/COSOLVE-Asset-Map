@@ -78,6 +78,7 @@ jobs:
         run: |
           python manage.py migrate
           python manage.py seed_real_data --replace-demo --prune
+          python manage.py seed_manufacturing_fit --apply --add-missing-sources
 
       - name: Run browser tests
         run: npx playwright test

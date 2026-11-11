@@ -785,3 +785,8 @@ class SavedView(models.Model):
 
     def destination_url_name(self):
         return "core:map" if self.view_type == self.ViewType.MAP else "core:directory"
+
+
+from .diagrams import SiteDiagram  # noqa: E402,F401
+from .manufacturing import ManufacturingProfile  # noqa: E402,F401
+from .operator_review import OperatorReview  # noqa: E402,F401

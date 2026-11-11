@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block title %}Operator details | COSOLVE{% endblock %}
+{% block meta_description %}Submit operator details for editorial consideration.{% endblock %}
+{% block extra_css %}
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="referrer" content="strict-origin">
+<style>
+  .operator-review-page { max-width: 720px; }
+  .operator-review-page h1 { font-size: 28px; overflow-wrap: anywhere; }
+  .operator-review-page fieldset { border: 0; padding: 0; margin: 0; min-width: 0; display: grid; gap: 16px; }
+  .operator-review-page legend { font-size: 18px; font-weight: 700; margin-bottom: 14px; }
+  .operator-review-page input:not([type="checkbox"]), .operator-review-page textarea { width: 100%; min-width: 0; box-sizing: border-box; }
+  .operator-review-page input[type="tel"] { height: 42px; padding: 0 11px; border: 1px solid var(--line-strong); border-radius: 4px; background: var(--paper); color: var(--ink); }
+  .operator-review-page .consent-label { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; line-height: 1.5; }
+  .operator-review-page .consent-label input { flex: 0 0 auto; margin-top: 4px; }
+  .operator-review-page .consent-label span { font: inherit; color: inherit; margin: 0; }
+</style>
+{% endblock %}
+{% block content %}
+<main id="main-content" class="update-page operator-review-page">
+  {% if unavailable %}
+    <h1>Invitation unavailable</h1>
+    <p>This invitation is invalid or no longer available. Contact the person who invited you for a new link.</p>
+  {% elif submitted %}
+    <h1>Thank you</h1>
+    <p>Your proposal has been submitted for staff consideration. Your private name and email will not be published.</p>
+  {% else %}
+    <header class="page-heading">
+      <h1>{{ asset_name }}</h1>
+      <p>Operator details for staff consideration. Submission does not guarantee publication.</p>
+    </header>
+    <form method="post" class="update-form">
+      {% csrf_token %}
+      {% if form.non_field_errors %}<div class="form-alert" role="alert">{{ form.non_field_errors }}</div>{% endif %}
+      <fieldset>
+        <legend>Public details</legend>
+        {% for field in form %}
+          {% if field.name != 'submitter_name' and field.name != 'submitter_email' and field.name != 'publication_consent' and field.name != 'confirmation' %}
+            <label for="{{ field.id_for_label }}"><span>{{ field.label }}</span>{{ field }}{% for error in field.errors %}<small class="field-error">{{ error }}</small>{% endfor %}</label>
+          {% endif %}
+        {% endfor %}
+      </fieldset>
+      <fieldset>
+        <legend>Private follow-up</legend>
+        <label for="{{ form.submitter_name.id_for_label }}"><span>{{ form.submitter_name.label }}</span>{{ form.submitter_name }}{% for error in form.submitter_name.errors %}<small class="field-error">{{ error }}</small>{% endfor %}</label>
+        <label for="{{ form.submitter_email.id_for_label }}"><span>{{ form.submitter_email.label }}</span>{{ form.submitter_email }}{% for error in form.submitter_email.errors %}<small class="field-error">{{ error }}</small>{% endfor %}</label>
+      </fieldset>
+      <div>
+        <label class="consent-label" for="{{ form.publication_consent.id_for_label }}">{{ form.publication_consent }}<span>{{ form.publication_consent.label }}</span></label>
+        {% for error in form.publication_consent.errors %}<small class="field-error">{{ error }}</small>{% endfor %}
+      </div>
+      <div class="form-trap" aria-hidden="true">{{ form.confirmation.label_tag }}{{ form.confirmation }}</div>
+      {% for error in form.confirmation.errors %}<div class="form-alert" role="alert">{{ error }}</div>{% endfor %}
+      <div class="update-actions"><button class="button primary" type="submit">Submit for consideration</button></div>
+    </form>
+  {% endif %}
+</main>
+{% endblock %}

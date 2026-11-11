@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "asset": {
+        "name": "Institute for Advanced Learning and Research",
+        "city": "Danville",
+        "state": "VA",
+        "record_type": "organization",
+        "provenance": "curated-public-source"
+      },
+      "profile": {
+        "processes": ["cnc-machining", "metrology", "reverse-engineering"],
+        "materials": [],
+        "service_modes": ["process-development", "inspection-services"],
+        "access_types": ["commercial"],
+        "source_url": "https://www.ialr.org/cma/facilities-and-capabilities/",
+        "reviewed_at": "2026-11-11",
+        "notes": "The Danville Center for Manufacturing Advancement documents CNC process trials, dimensional inspection, CMM programming, scanning and reverse engineering. Manufacturers can engage the labs for process development and contract inspection. This is not a claim of general production job-shop capacity. Materials and part envelopes remain undocumented here."
+      },
+      "source": {
+        "title": "IALR CMA: Danville machining and precision metrology labs",
+        "url": "https://www.ialr.org/cma/facilities-and-capabilities/",
+        "notes": "Official CMA facilities page identifies its on-campus labs, manufacturer project route, process-development work and contract inspection. Only those local capabilities are structured."
+      }
+    },
+    {
+      "asset": {
+        "name": "Allocortech",
+        "city": "Waynesboro",
+        "state": "VA",
+        "record_type": "organization",
+        "provenance": "curated-public-source"
+      },
+      "profile": {
+        "processes": ["electronics-assembly"],
+        "materials": [],
+        "service_modes": ["custom-products", "product-manufacturing"],
+        "access_types": ["commercial"],
+        "source_url": "https://www.allocor.tech/capabilities",
+        "reviewed_at": "2026-11-11",
+        "notes": "Allocortech states that final assembly and testing occur in Virginia. Its customer offerings include existing products, modified products and custom electronics, with work-for-hire arrangements. US-assembled printed circuit boards are mentioned, but their assembly is not assigned to the Virginia site; PCB assembly is therefore not tagged. No general contract-board-assembly service, material coverage or dimensional limit is claimed."
+      },
+      "source": {
+        "title": "Allocortech: Virginia final assembly and customer-specific electronics",
+        "url": "https://www.allocor.tech/capabilities",
+        "notes": "Official capabilities FAQ explicitly locates final assembly and testing in Virginia and distinguishes US-assembled boards from final assembly. Customer work-for-hire and custom product offerings support commercial inquiries, not an inferred PCB fabrication service."
+      }
+    },
+    {
+      "asset": {
+        "name": "Kollmorgen Radford Motion Systems",
+        "city": "Radford",
+        "state": "VA",
+        "record_type": "organization",
+        "provenance": "curated-public-source"
+      },
+      "profile": {
+        "processes": ["motor-manufacturing"],
+        "materials": [],
+        "service_modes": ["product-manufacturing"],
+        "access_types": [],
+        "source_url": "https://www.kollmorgen.com/en-us/company/careers/kollmorgen-north-america",
+        "reviewed_at": "2026-11-11",
+        "notes": "Kollmorgen explicitly assigns motor design and manufacturing to Radford, Virginia, and software and electronics design to Santa Barbara, California. Only Radford motor manufacturing is tagged. This company factory is not represented as offering contract manufacturing, external facility access, electronics production or documented material coverage."
+      },
+      "source": {
+        "title": "Kollmorgen: Radford motor design and manufacturing",
+        "url": "https://www.kollmorgen.com/en-us/company/careers/kollmorgen-north-america",
+        "notes": "Official location-specific page separates Radford motor manufacturing from Santa Barbara electronics/software. It does not establish an external job-shop service or access arrangement."
+      }
+    },
+    {
+      "asset": {
+        "name": "Ryzing Technologies",
+        "city": "Staunton",
+        "state": "VA",
+        "record_type": "organization",
+        "provenance": "curated-public-source"
+      },
+      "profile": {
+        "processes": ["textile-fabrication"],
+        "materials": ["textiles"],
+        "service_modes": ["prototyping", "custom-products"],
+        "access_types": ["commercial"],
+        "source_url": "https://ryzingtech.com/",
+        "reviewed_at": "2026-11-11",
+        "notes": "The official Staunton page describes engineered textiles, inflatable structures, fabrication and rapid prototyping, including work with private-sector clients and a customer project contact. Tags are limited to that documented scope; no textile joining method, polymer formulation, production envelope or general contract factory capacity is inferred."
+      },
+      "source": {
+        "title": "Ryzing Technologies: Staunton engineered textiles and prototyping",
+        "url": "https://ryzingtech.com/",
+        "notes": "Official company page co-locates textile engineering, fabrication and customer prototyping with its Staunton address. It also documents private-sector projects. Specific sewing or welding processes are not assigned."
+      }
+    },
+    {
+      "asset": {
+        "name": "P1 Technologies Keltech Division",
+        "city": "Roanoke",
+        "state": "VA",
+        "record_type": "organization",
+        "provenance": "curated-public-source"
+      },
+      "profile": {
+        "processes": ["pcb-assembly", "electronics-assembly"],
+        "materials": [],
+        "service_modes": ["contract-manufacturing", "prototyping"],
+        "access_types": ["commercial"],
+        "source_url": "https://www.p1tec.com/capabilities/pcba-box-builds-electronics-integration",
+        "reviewed_at": "2026-11-11",
+        "notes": "P1's Roanoke PCBA page documents surface-mount, through-hole and mixed-technology board assembly, box builds, customer-defined testing, and prototype-to-production services with a quote route. The official Keltech page links directly to this PCBA operation. No bare-board fabrication, laminate grade or dimensional tolerance is inferred."
+      },
+      "source": {
+        "title": "P1 Technologies: Roanoke PCBA and box-build manufacturing services",
+        "url": "https://www.p1tec.com/capabilities/pcba-box-builds-electronics-integration",
+        "notes": "Official PCBA service page lists assembly operations, customer specifications, prototype support and the Roanoke address. Identity cross-check: https://www.p1tec.com/keltech directs Keltech visitors to this PCBA page. No other corporate capabilities are transferred to this profile."
+      }
+    },
+    {
+      "asset": {
+        "name": "Fulcrum Concepts Newport News Machine Shop",
+        "city": "Newport News",
+        "state": "VA",
+        "record_type": "facility",
+        "provenance": "curated-public-source"
+      },
+      "profile": {
+        "processes": ["cnc-machining"],
+        "materials": [],
+        "service_modes": ["custom-products"],
+        "access_types": ["commercial"],
+        "source_url": "https://fulcrumconceptsllc.com/news/fulcrum-concepts-opens-new-machine-shop-in-newport-news-expanding-manufacturing-capabilities/",
+        "reviewed_at": "2026-11-11",
+        "notes": "The Newport News shop announcement documents multi-axis CNC machines and a CNC lathe for project-specific aerospace components, serving commercial and government customers. These are Newport News capabilities, not capabilities transferred from Mattaponi headquarters. Materials, part envelopes and unrestricted standalone job-shop service are not established."
+      },
+      "source": {
+        "title": "Fulcrum Concepts: Newport News machine shop capabilities",
+        "url": "https://fulcrumconceptsllc.com/news/fulcrum-concepts-opens-new-machine-shop-in-newport-news-expanding-manufacturing-capabilities/",
+        "notes": "Official facility-specific announcement names 737 Industrial Park Drive, Newport News, CNC machining and commercial/government customers. Other corporate inspection, wiring and integration capabilities are not assigned to this site."
+      }
+    },
+    {
+      "asset": {
+        "name": "Radian Forge Portsmouth Manufacturing Facility",
+        "city": "Portsmouth",
+        "state": "VA",
+        "record_type": "facility",
+        "provenance": "curated-public-source"
+      },
+      "profile": {
+        "processes": ["additive-manufacturing", "reverse-engineering"],
+        "materials": ["copper-nickel", "nickel-aluminum-bronze", "steel", "stainless-steel", "nickel-alloys"],
+        "service_modes": ["contract-manufacturing", "custom-products"],
+        "access_types": ["commercial"],
+        "source_url": "https://radianforge.com/capabilities/",
+        "reviewed_at": "2026-11-11",
+        "notes": "The Portsmouth capabilities page documents robotic wire-arc additive manufacturing and evaluation of existing parts for reverse engineering. It lists copper-nickel, nickel-aluminum bronze, carbon/alloy steels, stainless steels and nickel alloys, subject to application and acceptance review. Post-processing and machining may use qualified partners, so on-site CNC machining is not tagged. No tolerance or build envelope is inferred."
+      },
+      "source": {
+        "title": "Radian Forge: Portsmouth wire-arc additive manufacturing and materials",
+        "url": "https://radianforge.com/capabilities/",
+        "notes": "Official capabilities page identifies the Portsmouth shop and address, named material families, drawing-to-delivery workflow and conditional reverse-engineering evaluation. Not all downstream machining is internal. Titanium is not a positive capability tag; an unlisted requested material remains unknown in this search."
+      }
+    },
+    {
+      "asset": {
+        "name": "Moog Blacksburg Power and Data Division",
+        "city": "Blacksburg",
+        "state": "VA",
+        "record_type": "organization",
+        "provenance": "curated-public-source"
+      },
+      "profile": {
+        "processes": ["actuator-manufacturing"],
+        "materials": [],
+        "service_modes": ["product-manufacturing"],
+        "access_types": [],
+        "source_url": "https://www.moog.com/products/actuators-servoactuators/multi-purpose.html",
+        "reviewed_at": "2026-11-11",
+        "notes": "Moog's actuator page explicitly states that actuator manufacturing relocated from Springfield, Pennsylvania, to Blacksburg, Virginia. The profile records only that local actuator manufacturing. Corporate product descriptions do not establish material-processing capability or an external contract manufacturing/access service at Blacksburg."
+      },
+      "source": {
+        "title": "Moog: actuator manufacturing relocation to Blacksburg",
+        "url": "https://www.moog.com/products/actuators-servoactuators/multi-purpose.html",
+        "notes": "Official actuator page includes a specific product-relocation announcement to Blacksburg. No corporate slip-ring, motor, electronics or material-processing operations are assumed to occur at this site."
+      }
+    }
+  ]
+}

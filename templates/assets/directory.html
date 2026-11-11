@@ -3,6 +3,7 @@
 {% block body_class %}directory-page{% endblock %}
 {% block title %}{{ public_scope_name }} Directory | COSOLVE{% endblock %}
 {% block meta_description %}Browse and filter COSOLVE's public directory of {{ public_scope_name }} unmanned and autonomous systems assets.{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/decision-tools.css' %}">{% endblock %}
 {% block content %}
 <main id="main-content" class="directory-layout">
   <aside class="directory-filters">
@@ -32,6 +33,7 @@
           <div class="directory-row-main">
             <h3><a href="{{ asset.get_absolute_url }}">{{ asset.public_name }}</a></h3>
             <p>{{ asset.short_description }}</p>
+            <button class="shortlist-toggle" data-compare-asset="{{ asset.slug }}" aria-label="Compare {{ asset.public_name }}" aria-pressed="false" type="button">Add to comparison</button>
           </div>
           <div class="directory-classification">
             <span class="type-pill type-{{ asset.record_type }}">{{ asset.get_record_type_display }}</span>
@@ -52,7 +54,9 @@
         {% if page_obj.has_next %}<a href="{% querystring page=page_obj.next_page_number %}">Next</a>{% endif %}
       </nav>
     {% endif %}
+    {% include "includes/comparison_tray.html" %}
   </section>
 </main>
 <script type="module" src="{% static 'js/directory-filters.js' %}?v=20261021-2"></script>
+<script type="module" src="{% static 'js/asset-shortlist.js' %}"></script>
 {% endblock %}

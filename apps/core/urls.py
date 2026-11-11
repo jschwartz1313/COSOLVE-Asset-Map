@@ -1,6 +1,6 @@
 from django.urls import path
 
-from . import views
+from . import decision_tools, manufacturing_views, operator_views, views
 
 app_name = "core"
 urlpatterns = [
@@ -8,6 +8,10 @@ urlpatterns = [
     path("map/", views.map_view, name="map"),
     path("directory/", views.directory_view, name="directory"),
     path("test-sites/", views.test_sites, name="test-sites"),
+    path("manufacturing/", manufacturing_views.manufacturing_search, name="manufacturing-search"),
+    path("operator-review/<str:token>/", operator_views.operator_review, name="operator-review"),
+    path("compare/", decision_tools.compare_assets, name="asset-compare"),
+    path("assets/<slug:slug>/inquiry/", decision_tools.prepare_inquiry, name="asset-inquiry"),
     path("connect/", views.connect, name="connect"),
     path("saved-views/", views.saved_views, name="saved-views"),
     path("saved-views/<uuid:token>/", views.open_saved_view, name="open-saved-view"),

@@ -15,14 +15,20 @@ from apps.core.forms import SiteResetPasswordForm
 from apps.imports.services import CSV_COLUMNS, asset_csv_row
 from apps.sources.models import Source
 
+from .manufacturing import PROFILE_CHOICES, ManufacturingProfile
 from .models import (
     Asset,
     AssetReviewComment,
     DuplicateCandidate,
     Relationship,
+    SiteDiagram,
     UpdateSubmission,
 )
+from .operator_admin import OperatorReviewAdmin, create_operator_review_invitation
+from .operator_review import OperatorReview, can_manage_operator_reviews
 from .testing import ACCESS_CHOICES, ACTIVITY_CHOICES, LAUNCH_CHOICES
+
+admin.site.register(OperatorReview, OperatorReviewAdmin)
 
 
 class AssetAdminForm(forms.ModelForm):
@@ -239,6 +245,35 @@ def export_selected(modeladmin, request, queryset):
     return response
 
 
+class SiteDiagramInline(admin.StackedInline):
+    model = SiteDiagram
+    extra = 0
+    fields = ("title", "image_url", "alt_text", "caption", "credit", "source_url",
+              "publication_approved")
+
+
+class ManufacturingProfileForm(forms.ModelForm):
+    class Meta:
+        model = ManufacturingProfile
+        fields = ("processes", "materials", "service_modes", "access_types",
+                  "source_url", "reviewed_at", "notes")
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for name, choices in PROFILE_CHOICES.items():
+            self.fields[name] = forms.MultipleChoiceField(
+                choices=choices, required=False, widget=forms.CheckboxSelectMultiple,
+                initial=getattr(self.instance, name, []),
+            )
+
+
+class ManufacturingProfileInline(admin.StackedInline):
+    model = ManufacturingProfile
+    form = ManufacturingProfileForm
+    extra = 0
+    max_num = 1
+
+
 @admin.register(Asset)
 class AssetAdmin(SimpleHistoryAdmin):
     form = AssetAdminForm
@@ -299,7 +334,8 @@ class AssetAdmin(SimpleHistoryAdmin):
         "created_at",
         "updated_at",
     )
-    inlines = (AssetReviewCommentInline, SourceInline, OutgoingRelationshipInline)
+    inlines = (AssetReviewCommentInline, SourceInline, OutgoingRelationshipInline,
+               ManufacturingProfileInline, SiteDiagramInline)
     actions = (
         assign_to_me,
         set_review_due,
@@ -310,6 +346,7 @@ class AssetAdmin(SimpleHistoryAdmin):
         publish_eligible,
         archive_records,
         export_selected,
+        create_operator_review_invitation,
     )
     fieldsets = (
         (
@@ -450,9 +487,14 @@ class AssetAdmin(SimpleHistoryAdmin):
     def has_export_permission(self, request):
         return request.user.has_perm("assets.can_export_asset")
 
+    def has_operator_review_permission(self, request):
+        return can_manage_operator_reviews(request.user)
+
     def save_formset(self, request, form, formset, change):
         instances = formset.save(commit=False)
         for instance in instances:
+            if isinstance(instance, SiteDiagram):
+                instance.approved_by = request.user if instance.publication_approved else None
             if isinstance(instance, AssetReviewComment) and instance.author_id is None:
                 instance.author = request.user
                 instance._history_user = request.user

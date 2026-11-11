@@ -31,6 +31,8 @@
         <summary {% if request.resolver_match.url_name == 'about-data' or request.resolver_match.url_name == 'connect' or request.resolver_match.url_name == 'test-sites' %}class="is-current"{% endif %}>More</summary>
         <div class="header-menu-panel">
       <a href="{% url 'core:test-sites' %}" {% if request.resolver_match.url_name == 'test-sites' %}aria-current="page"{% endif %}>Test-site search</a>
+      <a href="{% url 'core:asset-compare' %}" {% if request.resolver_match.url_name == 'asset-compare' %}aria-current="page"{% endif %}>Compare assets</a>
+      <a href="{% url 'core:manufacturing-search' %}" {% if request.resolver_match.url_name == 'manufacturing-search' %}aria-current="page"{% endif %}>Manufacturing search</a>
       <a href="{% url 'core:about-data' %}" {% if request.resolver_match.url_name == 'about-data' %}aria-current="page"{% endif %}>About data</a>
       <a href="{% url 'core:connect' %}" {% if request.resolver_match.url_name == 'connect' %}aria-current="page"{% endif %}>Get connected</a>
       {% if user.is_staff %}<a href="{% url 'admin:index' %}">Admin</a>{% endif %}

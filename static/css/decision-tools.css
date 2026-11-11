@@ -1,0 +1,54 @@
+.decision-page { max-width: 1300px; }
+.decision-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; }
+.decision-heading h1 { font-size: 28px; margin: 12px 0; }
+.decision-heading p { margin: 0; color: var(--ink-muted); }
+.decision-page h2 { font-size: 18px; }
+.compare-selection { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.compare-selection a { display: inline-flex; align-items: center; gap: 12px; padding: 7px 10px; border: 1px solid var(--line); border-radius: 4px; max-width: 100%; overflow-wrap: anywhere; }
+.compare-search { max-width: 560px; margin-bottom: 20px; }
+.compare-search label, .decision-form label, .inquiry-draft label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 6px; }
+.compare-search > div { display: flex; gap: 8px; }
+.compare-search input { min-width: 0; flex: 1; }
+.comparison-candidates { list-style: none; padding: 0; margin-bottom: 24px; max-width: 800px; }
+.comparison-candidates li { display: flex; justify-content: space-between; gap: 16px; border-bottom: 1px solid var(--line); padding: 10px 0; }
+.comparison-candidates span { color: var(--ink-muted); }
+.comparison-scroll { max-width: 100%; overflow: auto; border: 1px solid var(--line); }
+.asset-comparison { width: 100%; border-collapse: collapse; font-size: 14px; table-layout: fixed; min-width: 680px; }
+.asset-comparison caption { text-align: left; padding: 12px; font-weight: 600; }
+.asset-comparison th, .asset-comparison td { padding: 14px; text-align: left; vertical-align: top; border: 1px solid var(--line); line-height: 1.55; overflow-wrap: anywhere; min-width: 220px; }
+.asset-comparison th { background: var(--surface-muted, #f1f4f3); }
+.asset-comparison th:first-child { width: 150px; }
+.asset-comparison:has(thead th:nth-child(5)) { min-width: 1150px; }
+.inquiry-layout { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 40px; }
+.decision-form { display: grid; gap: 20px; }
+.decision-form input, .decision-form textarea, .inquiry-draft textarea { width: 100%; max-width: 100%; font: inherit; padding: 10px 12px; border: 1px solid var(--line); border-radius: 4px; box-sizing: border-box; }
+.decision-form textarea, .inquiry-draft textarea { resize: vertical; }
+.decision-form input[type="checkbox"] { width: auto; }
+.decision-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.inquiry-contact { list-style: none; padding: 0; }
+.inquiry-contact li { margin: 12px 0; overflow-wrap: anywhere; }
+.inquiry-draft { margin-top: 32px; border-top: 1px solid var(--line); padding-top: 20px; }
+.profile-actions { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+.shortlist-toggle { font: inherit; font-size: 13px; border: 0; padding: 0; color: var(--brand-dark, #9c3023); background: none; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.directory-row-main .shortlist-toggle { margin-top: 8px; }
+.shortlist-tray { position: sticky; bottom: 12px; z-index: 15; background: #fff; border: 1px solid var(--line); padding: 12px 16px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; box-shadow: 0 2px 8px #0001; border-radius: 4px; }
+.shortlist-tray[hidden] { display: none; }
+.shortlist-tray button { background: none; border: 0; text-decoration: underline; cursor: pointer; font: inherit; }
+.site-diagram { margin: 0; }
+.site-diagram img { width: 100%; max-height: 480px; object-fit: contain; background: #f4f6f5; }
+.site-diagram figcaption { margin-top: 8px; font-size: 13px; overflow-wrap: anywhere; }
+@media (max-width: 700px) {
+  .decision-heading h1 { font-size: 24px; }
+  .inquiry-layout { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .asset-comparison th, .asset-comparison td { padding: 10px; }
+  .comparison-candidates li { display: block; }
+  .comparison-candidates span { display: block; margin-top: 4px; }
+}
+@media print {
+  .decision-heading > a, .compare-selection, .compare-search, .comparison-candidates { display: none; }
+  .comparison-scroll { overflow: visible; border: 0; }
+  .asset-comparison, .asset-comparison:has(thead th:nth-child(5)) { min-width: 0; font-size: 9px; }
+  .asset-comparison th:first-child { width: 85px; }
+  .asset-comparison th, .asset-comparison td { padding: 5px; min-width: 0; }
+  .shortlist-tray { display: none; }
+}
