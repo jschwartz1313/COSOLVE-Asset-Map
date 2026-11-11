@@ -3,7 +3,7 @@
 {% block body_class %}asset-detail-page{% endblock %}
 {% block title %}{{ asset.public_name }} | COSOLVE{% endblock %}
 {% block meta_description %}{{ asset.short_description }}{% endblock %}
-{% block extra_css %}<link rel="stylesheet" href="{% static 'css/decision-tools.css' %}?v=20261111-2">{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/decision-tools.css' %}?v=20261111-3">{% endblock %}
 {% block content %}
 <main id="main-content" class="detail-page">
   <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="{% url 'core:directory' %}">Directory</a><span>/</span><span>Asset profile</span></nav>
@@ -126,9 +126,9 @@
       </details>
     </div>
   </div>
-  <footer class="profile-actions"><button class="shortlist-toggle" data-compare-asset="{{ asset.slug }}" aria-pressed="false" type="button">Add to comparison</button><a href="{% url 'core:asset-inquiry' asset.slug %}">Prepare an inquiry</a><a class="profile-update-link" href="{% url 'core:asset-suggest-update' asset.slug %}">Suggest an update</a></footer>
+  <footer class="profile-actions"><button class="shortlist-toggle" data-compare-asset="{{ asset.slug }}" data-compare-name="{{ asset.public_name }}" aria-pressed="false" type="button">Add to comparison</button><a href="{% url 'core:asset-inquiry' asset.slug %}">Prepare an inquiry</a><a class="profile-update-link" href="{% url 'core:asset-suggest-update' asset.slug %}">Suggest an update</a></footer>
   {% include "includes/comparison_tray.html" with hide_empty=True %}
 </main>
 <script type="module" src="{% static 'js/asset-detail.js' %}?v=20261021-1"></script>
-<script type="module" src="{% static 'js/asset-shortlist.js' %}?v=20261111-2"></script>
+<script type="module" src="{% static 'js/asset-shortlist.js' %}?v=20261111-3"></script>
 {% endblock %}

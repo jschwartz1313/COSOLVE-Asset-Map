@@ -8,6 +8,10 @@
 
 Directory presentation follow-up: comparison now occupies a normal-flow row directly below the result heading and above the records. Compact checkboxes replace the repeated add/remove links. The count and clear action stay together at the top; no floating selection bar covers records. Five selections disable unselected controls until one is removed. Existing browser selections and comparison URLs are unchanged. Eleven focused backend and 28 desktop/mobile regression tests passed for this adjustment.
 
+Selected-name follow-up: the comparison section now lists every selected public display name, with profile links and individually labeled remove buttons. Names remain visible across filters, pagination, profiles, reloads and browser tabs. Full names wrap rather than truncate at 320, 390, 768 and 1440 pixels. The browser still stores only slugs; missing names resolve in one bounded public-scoped query, never a per-asset request. Hidden or retired records are dropped without revealing their names. A failed lookup preserves the selection and offers Retry. Delayed responses cannot restore removed selections; keyboard focus is maintained after removal or clearing. Legacy saved selections remain compatible. The full UI pass covered 271 passing browser tests with one existing skip; all 34 frontend tests passed.
+
+The selected-name follow-up also passed all 545 backend tests, configuration and migration checks, CI lint, and production-mode static-file collection.
+
 ## Operator review
 
 Staff with asset-edit and operator-review permissions can select one public asset in Admin > Assets and choose Create operator review invitation. The resulting record displays a private, two-week link on the current site's domain. Staff manually shares the link with the operator; the application sends no email.

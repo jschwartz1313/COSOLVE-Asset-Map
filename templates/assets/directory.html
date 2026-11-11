@@ -3,7 +3,7 @@
 {% block body_class %}directory-page{% endblock %}
 {% block title %}{{ public_scope_name }} Directory | COSOLVE{% endblock %}
 {% block meta_description %}Browse and filter COSOLVE's public directory of {{ public_scope_name }} unmanned and autonomous systems assets.{% endblock %}
-{% block extra_css %}<link rel="stylesheet" href="{% static 'css/decision-tools.css' %}?v=20261111-2">{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/decision-tools.css' %}?v=20261111-3">{% endblock %}
 {% block content %}
 <main id="main-content" class="directory-layout">
   <aside class="directory-filters">
@@ -33,7 +33,7 @@
         <article class="directory-row">
           <div class="directory-row-main">
             <div class="directory-asset-heading">
-              <label class="directory-compare-control"><input type="checkbox" data-compare-asset="{{ asset.slug }}" aria-label="Compare {{ asset.public_name }}" title="Select for comparison"></label>
+              <label class="directory-compare-control"><input type="checkbox" data-compare-asset="{{ asset.slug }}" data-compare-name="{{ asset.public_name }}" aria-label="Compare {{ asset.public_name }}" title="Select for comparison"></label>
               <h3><a href="{{ asset.get_absolute_url }}">{{ asset.public_name }}</a></h3>
             </div>
             <p>{{ asset.short_description }}</p>
@@ -60,5 +60,5 @@
   </section>
 </main>
 <script type="module" src="{% static 'js/directory-filters.js' %}?v=20261021-2"></script>
-<script type="module" src="{% static 'js/asset-shortlist.js' %}?v=20261111-2"></script>
+<script type="module" src="{% static 'js/asset-shortlist.js' %}?v=20261111-3"></script>
 {% endblock %}

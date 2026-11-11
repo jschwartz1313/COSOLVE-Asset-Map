@@ -5,7 +5,7 @@ from urllib.parse import urlencode
 
 from django import forms
 from django.core.exceptions import SuspiciousOperation
-from django.http import HttpResponse, QueryDict
+from django.http import HttpResponse, JsonResponse, QueryDict
 from django.shortcuts import get_object_or_404, render
 from django.views.decorators.http import require_http_methods
 
@@ -59,11 +59,32 @@ def comparison_rows(assets):
             or any(value != "Not documented" for value in row["values"])]
 
 
-@require_http_methods(["GET"])
-def compare_assets(request):
+def _comparison_slugs(request):
     selected = list(dict.fromkeys(request.GET.getlist("asset")))
     if len(selected) > 5 or any(len(value) > 240 for value in selected):
         raise SuspiciousOperation("Select no more than five assets.")
+    return selected
+
+
+def _selection_label(asset):
+    return {"slug": asset.slug, "name": asset.public_name, "url": asset.get_absolute_url()}
+
+
+@require_http_methods(["GET"])
+def comparison_selection(request):
+    selected = _comparison_slugs(request)
+    found = {asset.slug: asset for asset in Asset.public.filter(slug__in=selected).only(
+        "name", "display_name", "slug"
+    )}
+    response = JsonResponse({"assets": [_selection_label(found[slug]) for slug in selected
+                                        if slug in found]})
+    response["Cache-Control"] = "private, no-store"
+    return response
+
+
+@require_http_methods(["GET"])
+def compare_assets(request):
+    selected = _comparison_slugs(request)
     found = {a.slug: a for a in Asset.public.filter(slug__in=selected).prefetch_related(
         "sources", "capabilities")}
     assets = [found[slug] for slug in selected if slug in found]
@@ -98,6 +119,7 @@ def compare_assets(request):
                       for a in assets],
         "browser_selection": {
             "slugs": selected,
+            "assets": [_selection_label(asset) for asset in assets],
             "explicit": "asset" in request.GET or request.GET.get("clear") == "1",
         },
         "download_query": urlencode([("asset", s) for s in selected] + [("download", "csv")]),

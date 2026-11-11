@@ -1,6 +1,6 @@
 from django.contrib.auth import get_user_model
 from django.core.exceptions import ValidationError
-from django.test import TestCase, override_settings
+from django.test import RequestFactory, TestCase, override_settings
 from django.utils import timezone
 
 from apps.assets.diagrams import SiteDiagram
@@ -53,6 +53,36 @@ class DecisionToolTests(TestCase):
         response = self.client.get("/compare/", {"q": "Manufacturing", "asset": self.other.slug})
         self.assertEqual(response.context["candidates"][0]["asset"], self.asset)
         self.assertIn(self.other.slug, response.context["candidates"][0]["query"])
+
+    def test_selection_names_are_public_ordered_and_lightweight(self):
+        from apps.core.decision_tools import comparison_selection
+
+        self.asset.display_name = "Readable factory name"
+        self.asset.save()
+        request = RequestFactory().get("/compare/selection/", {
+            "asset": [self.other.slug, self.asset.slug, self.private.slug,
+                      "missing", self.other.slug],
+        })
+        with self.assertNumQueries(1):
+            response = comparison_selection(request)
+        self.assertJSONEqual(response.content, {"assets": [
+            {"slug": self.other.slug, "name": self.other.public_name,
+             "url": self.other.get_absolute_url()},
+            {"slug": self.asset.slug, "name": "Readable factory name",
+             "url": self.asset.get_absolute_url()},
+        ]})
+        self.assertEqual(response.headers["Cache-Control"], "private, no-store")
+        self.assertNotIn(self.asset.contact_email, response.content.decode())
+        with override_settings(PUBLIC_REGION_SLUG="hampton-roads"):
+            self.assertEqual(self.client.get("/compare/selection/", {
+                "asset": self.asset.slug,
+            }).json(), {"assets": []})
+
+    def test_selection_names_reject_oversized_requests_and_writes(self):
+        for values in (list("abcdef"), ["x" * 241]):
+            self.assertEqual(self.client.get("/compare/selection/", {"asset": values}).status_code,
+                             400)
+        self.assertEqual(self.client.post("/compare/selection/").status_code, 405)
 
     def test_csv_escapes_spreadsheet_formula_and_excludes_private_fields(self):
         self.asset.display_name = "=SUM(1,2)"
@@ -142,7 +172,7 @@ class DecisionToolTests(TestCase):
 
     @override_settings(REQUIRE_SITE_LOGIN=True)
     def test_planning_tools_remain_behind_existing_login(self):
-        for url in ("/compare/", f"/assets/{self.asset.slug}/inquiry/"):
+        for url in ("/compare/", "/compare/selection/", f"/assets/{self.asset.slug}/inquiry/"):
             self.assertEqual(self.client.get(url).status_code, 302)
         user = get_user_model().objects.create_user("viewer", password="test-unique-password")
         self.client.force_login(user)

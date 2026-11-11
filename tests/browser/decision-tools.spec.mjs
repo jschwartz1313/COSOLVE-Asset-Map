@@ -43,7 +43,7 @@ test('directory comparison stays above records and selection uses compact checkb
   await controls.getByRole('button',{name:'Clear selection',exact:true}).click();
   await expect(selectors.first()).not.toBeChecked();
   await expect(controls).toContainText('0 selected');
-  await expect(controls.getByRole('button')).toBeHidden();
+  await expect(controls.locator('[data-comparison-clear]')).toBeHidden();
   await selectors.nth(0).check();
   await selectors.nth(1).check();
   await assertPageFits(page);

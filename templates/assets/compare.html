@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% block title %}Compare assets | COSOLVE{% endblock %}
-{% block extra_css %}<link rel="stylesheet" href="{% static 'css/decision-tools.css' %}?v=20261111-2">{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/decision-tools.css' %}?v=20261111-3">{% endblock %}
 {% block content %}
 <main id="main-content" class="content-page decision-page">
   <header class="decision-heading"><div><a href="{% url 'core:directory' %}">Asset directory</a><h1>Compare assets</h1></div>{% if assets %}<a href="?{{ download_query }}">Export comparison CSV</a>{% endif %}</header>
@@ -16,5 +16,5 @@
   <p class="field-note">Unknown specifications are not confirmed capabilities. Contact the operator to establish project fit, access and availability.</p>
 </main>
 {{ browser_selection|json_script:"comparison-selection" }}
-<script type="module" src="{% static 'js/asset-shortlist.js' %}?v=20261111-2"></script>
+<script type="module" src="{% static 'js/asset-shortlist.js' %}?v=20261111-3"></script>
 {% endblock %}
