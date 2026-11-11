@@ -33,7 +33,7 @@
         <article class="directory-row">
           <div class="directory-row-main">
             <div class="directory-asset-heading">
-              <label class="directory-compare-control"><input type="checkbox" data-compare-asset="{{ asset.slug }}" data-compare-name="{{ asset.public_name }}" aria-label="Compare {{ asset.public_name }}" title="Select for comparison"></label>
+              <label class="directory-compare-control"><input type="checkbox" data-compare-asset="{{ asset.slug }}" data-compare-name="{{ asset.public_name }}" aria-label="Compare {{ asset.public_name }}" title="Select for comparison" disabled></label>
               <h3><a href="{{ asset.get_absolute_url }}">{{ asset.public_name }}</a></h3>
             </div>
             <p>{{ asset.short_description }}</p>

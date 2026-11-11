@@ -156,3 +156,23 @@ test('selection names and checkboxes stay synchronized between browser tabs',asy
     await expect(names(page)).toHaveText(['Kollmorgen Radford Motion Systems']);
   }finally{await other.close();}
 });
+
+test('slow script loading keeps selection controls inactive until ready',async({page})=>{
+  let release;
+  const held=new Promise(resolve=>{release=resolve;});
+  await page.route('**/asset-comparison-state.js*',async route=>{
+    await held;
+    await route.continue();
+  });
+  try{
+    await page.goto('/directory/?q=Allocortech',{waitUntil:'commit'});
+    const input=page.getByRole('checkbox',{name:'Compare Allocortech',exact:true});
+    await expect(input).toBeVisible();
+    await expect(input).toBeDisabled();
+    release();
+    await expect(input).toBeEnabled();
+    await input.check();
+    await expect(names(page)).toHaveText(['Allocortech']);
+    expect(await selection(page)).toEqual(['allocortech']);
+  }finally{release();}
+});

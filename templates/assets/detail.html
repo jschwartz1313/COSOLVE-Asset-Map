@@ -126,7 +126,7 @@
       </details>
     </div>
   </div>
-  <footer class="profile-actions"><button class="shortlist-toggle" data-compare-asset="{{ asset.slug }}" data-compare-name="{{ asset.public_name }}" aria-pressed="false" type="button">Add to comparison</button><a href="{% url 'core:asset-inquiry' asset.slug %}">Prepare an inquiry</a><a class="profile-update-link" href="{% url 'core:asset-suggest-update' asset.slug %}">Suggest an update</a></footer>
+  <footer class="profile-actions"><button class="shortlist-toggle" data-compare-asset="{{ asset.slug }}" data-compare-name="{{ asset.public_name }}" aria-pressed="false" type="button" disabled>Add to comparison</button><a href="{% url 'core:asset-inquiry' asset.slug %}">Prepare an inquiry</a><a class="profile-update-link" href="{% url 'core:asset-suggest-update' asset.slug %}">Suggest an update</a></footer>
   {% include "includes/comparison_tray.html" with hide_empty=True %}
 </main>
 <script type="module" src="{% static 'js/asset-detail.js' %}?v=20261021-1"></script>

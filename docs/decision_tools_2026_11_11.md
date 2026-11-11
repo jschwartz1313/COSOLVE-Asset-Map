@@ -12,6 +12,8 @@ Selected-name follow-up: the comparison section now lists every selected public 
 
 The selected-name follow-up also passed all 545 backend tests, configuration and migration checks, CI lint, and production-mode static-file collection.
 
+The hosted browser check exposed an early-click race on a slow initial script load: a native checkbox could be clicked before the selection handler initialized and then reset. Directory checkboxes and profile selection buttons now stay disabled until their handlers are ready. The slow-module regression failed before the fix and passed afterward. The final full UI run passed 273 tests with the same one existing skip.
+
 ## Operator review
 
 Staff with asset-edit and operator-review permissions can select one public asset in Admin > Assets and choose Create operator review invitation. The resulting record displays a private, two-week link on the current site's domain. Staff manually shares the link with the operator; the application sends no email.
