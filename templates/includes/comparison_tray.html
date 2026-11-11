@@ -1,3 +1,6 @@
-<aside class="shortlist-tray" data-comparison-tray hidden aria-label="Asset comparison">
-  <span data-comparison-count role="status" aria-live="polite"></span><a href="{% url 'core:asset-compare' %}">Compare selected assets</a><button type="button">Clear selection</button>
-</aside>
+<div class="comparison-controls" data-comparison-tray aria-label="Asset comparison"{% if hide_empty %} data-hide-empty hidden{% endif %}>
+  <strong>Comparison</strong><span data-comparison-count>0 selected</span>
+  <a class="button secondary" href="{% url 'core:asset-compare' %}">Compare assets</a>
+  <button type="button" data-comparison-clear hidden>Clear selection</button>
+  <span class="visually-hidden" data-comparison-status role="status" aria-live="polite"></span>
+</div>

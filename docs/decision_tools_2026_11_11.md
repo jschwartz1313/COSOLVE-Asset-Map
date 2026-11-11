@@ -6,6 +6,8 @@
 - More > Manufacturing search: process, material, service mode and documented access. Only usable matching public sources enable positive matches. Missing specifications remain unknown, not confirmed incompatibility or capability. Current capacity and acceptance require an operator conversation.
 - Profile > Prepare an inquiry: creates a text draft from the user's project requirements. It does not send email or store project information in the asset database. The user can edit or download the draft.
 
+Directory presentation follow-up: comparison now occupies a normal-flow row directly below the result heading and above the records. Compact checkboxes replace the repeated add/remove links. The count and clear action stay together at the top; no floating selection bar covers records. Five selections disable unselected controls until one is removed. Existing browser selections and comparison URLs are unchanged. Eleven focused backend and 28 desktop/mobile regression tests passed for this adjustment.
+
 ## Operator review
 
 Staff with asset-edit and operator-review permissions can select one public asset in Admin > Assets and choose Create operator review invitation. The resulting record displays a private, two-week link on the current site's domain. Staff manually shares the link with the operator; the application sends no email.

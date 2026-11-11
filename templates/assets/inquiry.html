@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
 {% block title %}Prepare an inquiry | {{ asset.public_name }}{% endblock %}
-{% block extra_css %}<link rel="stylesheet" href="{% static 'css/decision-tools.css' %}">{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/decision-tools.css' %}?v=20261111-2">{% endblock %}
 {% block content %}
 <main id="main-content" class="content-page decision-page">
   <header class="decision-heading"><div><a href="{{ asset.get_absolute_url }}">{{ asset.public_name }}</a><h1>Prepare an inquiry</h1><p>Draft only. Nothing is sent or saved to the asset database.</p></div></header>

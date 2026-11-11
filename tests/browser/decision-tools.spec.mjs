@@ -9,7 +9,7 @@ async function assertPageFits(page) {
 
 test('select assets from directory and compare without leaving the inventory',async({page},testInfo)=>{
   await page.goto('/directory/?q=Allocortech');
-  await page.getByRole('button',{name:'Compare Allocortech',exact:true}).click();
+  await page.getByRole('checkbox',{name:'Compare Allocortech',exact:true}).check();
   await expect(page.locator('[data-comparison-tray]')).toContainText('1 selected');
   await page.goto('/directory/?q=Kollmorgen');
   await page.locator('[data-compare-asset]').first().click();
@@ -24,7 +24,31 @@ test('select assets from directory and compare without leaving the inventory',as
   await page.getByRole('link',{name:'Remove Allocortech from comparison',exact:true}).click();
   await page.goto('/directory/?q=Allocortech');
   await expect(page.locator('[data-comparison-tray]')).toContainText('1 selected');
-  await expect(page.locator('[data-compare-asset="allocortech"]')).toHaveAttribute('aria-pressed','false');
+  await expect(page.locator('[data-compare-asset="allocortech"]')).not.toBeChecked();
+});
+
+test('directory comparison stays above records and selection uses compact checkboxes',async({page},testInfo)=>{
+  await page.goto('/directory/');
+  const controls=page.locator('[data-comparison-tray]');
+  const firstRow=page.locator('.directory-row').first();
+  expect((await controls.boundingBox()).y+(await controls.boundingBox()).height).toBeLessThan((await firstRow.boundingBox()).y);
+  expect(await controls.evaluate(el=>getComputedStyle(el).position)).toBe('static');
+  await expect(page.locator('.directory-row .shortlist-toggle')).toHaveCount(0);
+  const selectors=page.locator('.directory-row input[data-compare-asset]');
+  for(let i=0;i<5;i++) await selectors.nth(i).check();
+  await expect(controls).toContainText('5 selected');
+  await expect(selectors.nth(5)).toBeDisabled();
+  await selectors.nth(0).uncheck();
+  await expect(selectors.nth(5)).toBeEnabled();
+  await controls.getByRole('button',{name:'Clear selection',exact:true}).click();
+  await expect(selectors.first()).not.toBeChecked();
+  await expect(controls).toContainText('0 selected');
+  await expect(controls.getByRole('button')).toBeHidden();
+  await selectors.nth(0).check();
+  await selectors.nth(1).check();
+  await assertPageFits(page);
+  await page.evaluate(()=>window.scrollTo(0,0));
+  await page.screenshot({path:testInfo.outputPath('directory-comparison-header.png'),fullPage:true});
 });
 
 test('inquiry creates a private draft and download, with contact details and no automatic email',async({page},testInfo)=>{

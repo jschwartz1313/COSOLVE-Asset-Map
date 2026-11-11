@@ -24,15 +24,26 @@ if (serverSelection) {
 function update() {
   buttons.forEach(button => {
     const added = selected.includes(button.dataset.compareAsset);
-    button.setAttribute("aria-pressed", String(added));
-    button.textContent = added ? "Remove from comparison" : "Add to comparison";
+    if (button.matches('input[type="checkbox"]')) {
+      button.checked = added;
+      button.closest(".directory-row")?.classList.toggle("is-comparison-selected", added);
+    } else {
+      button.setAttribute("aria-pressed", String(added));
+      button.textContent = added ? "Remove from comparison" : "Add to comparison";
+    }
+    button.disabled = !added && selected.length === 5;
+    button.title = button.disabled ? "Five assets selected; remove one to select another"
+      : added ? "Remove from comparison" : "Select for comparison";
   });
   if (tray) {
-    tray.hidden = selected.length === 0;
+    if (tray.hasAttribute("data-hide-empty")) tray.hidden = selected.length === 0;
     tray.querySelector("[data-comparison-count]").textContent = `${selected.length} selected`;
+    tray.querySelector("[data-comparison-status]").textContent = `${selected.length} of 5 assets selected for comparison`;
+    tray.querySelector("[data-comparison-clear]").hidden = selected.length === 0;
     const query = new URLSearchParams();
     selected.forEach(slug => query.append("asset", slug));
     tray.querySelector("a").href = `/compare/?${query}`;
+    tray.querySelector("a").textContent = selected.length ? "Compare selected assets" : "Compare assets";
   }
 }
 buttons.forEach(button => button.addEventListener("click", () => {
@@ -40,7 +51,7 @@ buttons.forEach(button => button.addEventListener("click", () => {
   if (selected.includes(slug)) selected = selected.filter(value => value !== slug);
   else if (selected.length < 5) selected.push(slug);
   else {
-    if (tray) tray.querySelector("[data-comparison-count]").textContent = "Five selected. Remove one to add another.";
+    if (tray) tray.querySelector("[data-comparison-status]").textContent = "Five assets selected. Remove one to add another.";
     return;
   }
   try { localStorage.setItem(KEY, JSON.stringify(selected)); } catch { /* Storage is optional. */ }
