@@ -12,6 +12,7 @@ urlpatterns = [
     path("operator-review/<str:token>/", operator_views.operator_review, name="operator-review"),
     path("compare/", decision_tools.compare_assets, name="asset-compare"),
     path("compare/selection/", decision_tools.comparison_selection, name="comparison-selection"),
+    path("compare/options/", decision_tools.comparison_options, name="comparison-options"),
     path("assets/<slug:slug>/inquiry/", decision_tools.prepare_inquiry, name="asset-inquiry"),
     path("connect/", views.connect, name="connect"),
     path("saved-views/", views.saved_views, name="saved-views"),

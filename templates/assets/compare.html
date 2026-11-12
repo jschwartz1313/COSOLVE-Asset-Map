@@ -1,13 +1,14 @@
 {% extends "base.html" %}
 {% load static %}
 {% block title %}Compare assets | COSOLVE{% endblock %}
-{% block extra_css %}<link rel="stylesheet" href="{% static 'css/decision-tools.css' %}?v=20261111-3">{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/decision-tools.css' %}?v=20261111-3"><link rel="stylesheet" href="{% static 'css/asset-picker.css' %}?v=20261112-1">{% endblock %}
 {% block content %}
 <main id="main-content" class="content-page decision-page">
   <header class="decision-heading"><div><a href="{% url 'core:directory' %}">Asset directory</a><h1>Compare assets</h1></div>{% if assets %}<a href="?{{ download_query }}">Export comparison CSV</a>{% endif %}</header>
   <div class="compare-selection" aria-label="Selected assets">{% for asset, remove_query in selection %}<a href="?{{ remove_query }}" aria-label="Remove {{ asset.public_name }} from comparison">{{ asset.public_name }} <span aria-hidden="true">&times;</span></a>{% endfor %}</div>
-  {% if assets|length < 5 %}<form method="get" class="compare-search">{% for asset in assets %}<input type="hidden" name="asset" value="{{ asset.slug }}">{% endfor %}<label for="compare-query">Find an asset to compare</label><div><input id="compare-query" name="q" value="{{ query }}" maxlength="200" type="search"><button class="button primary" type="submit">Search</button></div></form>{% endif %}
-  {% if query and assets|length < 5 %}<ul class="comparison-candidates">{% for result in candidates %}<li><a href="?{{ result.query }}">Add {{ result.asset.public_name }}</a><span>{{ result.asset.city }}</span></li>{% empty %}<li>No additional matching assets.</li>{% endfor %}</ul>{% endif %}
+  <div class="asset-picker-launch"><button class="button primary" type="button" data-open-asset-picker disabled hidden>Add assets</button></div>
+  {% if assets|length < 5 %}<form method="get" class="compare-search" data-picker-fallback>{% for asset in assets %}<input type="hidden" name="asset" value="{{ asset.slug }}">{% endfor %}<label for="compare-query">Find an asset to compare</label><div><input id="compare-query" name="q" value="{{ query }}" maxlength="200" type="search"><button class="button primary" type="submit">Search</button></div></form>{% endif %}
+  {% if query and assets|length < 5 %}<ul class="comparison-candidates" data-picker-fallback>{% for result in candidates %}<li><a href="?{{ result.query }}">Add {{ result.asset.public_name }}</a><span>{{ result.asset.city }}</span></li>{% empty %}<li>No additional matching assets.</li>{% endfor %}</ul>{% endif %}
   {% if assets %}
   <div class="comparison-scroll" role="region" aria-label="Asset comparison table" tabindex="0">
     <table class="asset-comparison"><caption>{{ assets|length }} selected asset{{ assets|length|pluralize }}</caption><thead><tr><th scope="col">Field</th>{% for asset in assets %}<th scope="col"><a href="{{ asset.get_absolute_url }}">{{ asset.public_name }}</a></th>{% endfor %}</tr></thead><tbody>{% for row in rows %}<tr><th scope="row">{{ row.label }}</th>{% for value in row.values %}<td>{% if row.label == "Website" and value != "Not documented" %}<a href="{{ value }}" target="_blank" rel="noopener noreferrer">Visit website</a>{% else %}{{ value|linebreaksbr }}{% endif %}</td>{% endfor %}</tr>{% endfor %}<tr><th scope="row">Next step</th>{% for asset in assets %}<td><a href="{% url 'core:asset-inquiry' asset.slug %}">Prepare an inquiry</a></td>{% endfor %}</tr></tbody></table>
@@ -15,6 +16,26 @@
   {% else %}<p class="empty-state">No assets selected.</p>{% endif %}
   <p class="field-note">Unknown specifications are not confirmed capabilities. Contact the operator to establish project fit, access and availability.</p>
 </main>
+<dialog class="asset-picker" aria-labelledby="asset-picker-title" data-asset-picker>
+  <header class="asset-picker-heading"><h2 id="asset-picker-title">Add assets</h2><button type="button" class="asset-picker-close" aria-label="Close asset picker" title="Close asset picker" data-picker-cancel>&times;</button></header>
+  <div class="asset-picker-content">
+  <form class="asset-picker-filters" data-picker-form>
+    <div class="asset-picker-search"><label for="picker-search">Search assets</label><div><input id="picker-search" name="q" type="search" maxlength="200" value="{{ query }}" autocomplete="off" autofocus><button class="button secondary" type="submit">Search</button></div></div>
+    <div class="asset-picker-select"><label for="picker-type">Asset type</label><span class="filter-select"><select id="picker-type" name="record_type"><option value="">All asset types</option>{% for value, label in picker_record_types %}<option value="{{ value }}">{{ label }}</option>{% endfor %}</select></span></div>
+    <div class="asset-picker-select"><label for="picker-region">Region</label><span class="filter-select"><select id="picker-region" name="region"><option value="">All regions</option>{% for region in picker_regions %}<option value="{{ region.slug }}">{{ region.name }}</option>{% endfor %}</select></span></div>
+    <button class="asset-picker-clear" type="reset">Clear filters</button>
+  </form>
+  <div class="asset-picker-body">
+    <div class="asset-picker-draft" data-picker-draft hidden><h3>Selected to add</h3><ul></ul></div>
+    <p class="asset-picker-status" data-picker-status role="status" aria-live="polite"></p>
+    <div class="asset-picker-error" data-picker-error hidden><p>The asset list could not be loaded.</p><button class="button secondary" type="button" data-picker-retry>Retry</button></div>
+    <div class="asset-picker-options" data-picker-options aria-label="Available assets"></div>
+    <nav class="asset-picker-pagination" aria-label="Asset picker pages"><button type="button" data-picker-previous disabled>Previous page</button><span data-picker-page></span><button type="button" data-picker-next disabled>Next page</button></nav>
+  </div>
+  </div>
+  <footer class="asset-picker-footer"><span data-picker-count>0 of 5 selected</span><div><button class="button secondary" type="button" data-picker-cancel>Cancel</button><button class="button primary" type="button" data-picker-confirm disabled>Add selected assets</button></div></footer>
+</dialog>
 {{ browser_selection|json_script:"comparison-selection" }}
 <script type="module" src="{% static 'js/asset-shortlist.js' %}?v=20261111-3"></script>
+<script type="module" src="{% static 'js/asset-picker.js' %}?v=20261112-1"></script>
 {% endblock %}

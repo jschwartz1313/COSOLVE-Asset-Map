@@ -5,6 +5,7 @@ from urllib.parse import urlencode
 
 from django import forms
 from django.core.exceptions import SuspiciousOperation
+from django.core.paginator import Paginator
 from django.http import HttpResponse, JsonResponse, QueryDict
 from django.shortcuts import get_object_or_404, render
 from django.views.decorators.http import require_http_methods
@@ -82,6 +83,39 @@ def comparison_selection(request):
     return response
 
 
+class AssetPickerForm(forms.Form):
+    q = forms.CharField(required=False, max_length=200)
+    record_type = forms.ChoiceField(required=False, choices=[("", "All asset types"),
+                                                            *Asset.RecordType.choices])
+    region = forms.SlugField(required=False, max_length=80)
+
+
+@require_http_methods(["GET"])
+def comparison_options(request):
+    form = AssetPickerForm(request.GET)
+    if not form.is_valid():
+        response = JsonResponse({"errors": form.errors.get_json_data()}, status=400)
+    else:
+        params = QueryDict(mutable=True)
+        for key, value in form.cleaned_data.items():
+            if value:
+                params[key] = value
+        page = Paginator(filter_public_assets(params, include_related=False), 24).get_page(
+            request.GET.get("page")
+        )
+        response = JsonResponse({
+            "assets": [{**_selection_label(asset), "record_type": asset.record_type,
+                        "record_type_label": asset.get_record_type_display(),
+                        "location": ", ".join(filter(None, (asset.city, asset.state)))
+                        if asset.city else asset.region.name if asset.region else "Virginia"}
+                       for asset in page],
+            "count": page.paginator.count, "page": page.number,
+            "pages": page.paginator.num_pages,
+        })
+    response["Cache-Control"] = "private, no-store"
+    return response
+
+
 @require_http_methods(["GET"])
 def compare_assets(request):
     selected = _comparison_slugs(request)
@@ -122,6 +156,11 @@ def compare_assets(request):
             "assets": [_selection_label(asset) for asset in assets],
             "explicit": "asset" in request.GET or request.GET.get("clear") == "1",
         },
+        "picker_record_types": Asset.RecordType.choices,
+        "picker_regions": [{"slug": region["region__slug"], "name": region["region__name"]}
+                           for region in Asset.public.exclude(region__isnull=True).values(
+                               "region__slug", "region__name"
+                           ).order_by("region__name").distinct()],
         "download_query": urlencode([("asset", s) for s in selected] + [("download", "csv")]),
     })
 

@@ -67,11 +67,13 @@ test('inquiry creates a private draft and download, with contact details and no 
   await page.screenshot({path:testInfo.outputPath('inquiry-draft.png'),fullPage:true});
 });
 
-test('comparison chooser works without browser storage',async({page})=>{
+test('comparison picker adds an asset without an existing browser selection',async({page})=>{
   await page.goto('/compare/');
-  await page.getByLabel('Find an asset to compare').fill('Allocortech');
-  await page.getByRole('button',{name:'Search',exact:true}).click();
-  await page.getByRole('link',{name:'Add Allocortech',exact:true}).click();
+  await page.getByRole('button',{name:'Add assets',exact:true}).click();
+  const picker=page.getByRole('dialog',{name:'Add assets',exact:true});
+  await picker.getByLabel('Search assets',{exact:true}).fill('Allocortech');
+  await picker.getByRole('checkbox',{name:'Allocortech',exact:true}).check();
+  await picker.getByRole('button',{name:/^Add selected assets/}).click();
   await expect(page.locator('.asset-comparison')).toContainText('Allocortech');
   await page.getByRole('link',{name:'Remove Allocortech from comparison',exact:true}).click();
   await expect(page.locator('main')).toContainText('No assets selected.');
