@@ -1,10 +1,11 @@
-from django.conf import settings
 from django.http import Http404, JsonResponse
 from django.shortcuts import get_object_or_404
 from django.views.decorators.http import require_GET
 
 from apps.assets.discovery import RESOURCE_CHOICES
+from apps.assets.geography import scoped_regions
 from apps.assets.models import Asset
+from apps.assets.scoping import public_region_slug
 from apps.assets.testing import ACCESS_CHOICES
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 
@@ -14,8 +15,10 @@ from .serializers import asset_feature, public_asset_dict
 
 def taxonomy_values(model):
     queryset = model.objects.filter(is_active=True)
-    if model is Region and settings.PUBLIC_REGION_SLUG:
-        queryset = queryset.filter(slug=settings.PUBLIC_REGION_SLUG)
+    if model is Region:
+        queryset = scoped_regions()
+        if public_region_slug():
+            queryset = queryset.filter(slug=public_region_slug())
     return list(queryset.values("name", "slug"))
 
 
@@ -102,9 +105,9 @@ def filter_values(request):
 
 @require_GET
 def region_summary(request, slug):
-    if settings.PUBLIC_REGION_SLUG and slug != settings.PUBLIC_REGION_SLUG:
+    if public_region_slug() and slug != public_region_slug():
         raise Http404
-    region = get_object_or_404(Region, slug=slug, is_active=True)
+    region = get_object_or_404(scoped_regions(), slug=slug)
     params = request.GET.copy()
     params.pop("region", None)
     queryset = filter_public_assets(params).filter(region=region)

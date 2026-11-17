@@ -27,19 +27,19 @@
         {% for item in saved_views %}
           <article class="saved-view-row">
             <div>
-              <span class="type-pill">{{ item.get_view_type_display }}</span>
+              <span class="type-pill">{{ item.get_view_type_display }} · {{ item.state }}</span>
               <h3>{{ item.name }}</h3>
               <p>
                 {% if item.view_type == "map" %}Map position, zoom, filters, and layers saved. {% endif %}
                 {% if item.is_shared %}Sharing enabled.{% else %}Private to your account.{% endif %}
               </p>
               <div class="share-link">
-                <input type="text" readonly value="{{ request.scheme }}://{{ request.get_host }}{% url 'core:open-saved-view' item.share_token %}" aria-label="Link for {{ item.name }}">
+                <input type="text" readonly value="{{ request.scheme }}://{{ request.get_host }}{{ item.get_absolute_url }}" aria-label="Link for {{ item.name }}">
                 <button class="button secondary" type="button" data-copy-link>Copy link</button>
               </div>
             </div>
             <div class="row-actions">
-              <a class="button secondary" href="{% url 'core:open-saved-view' item.share_token %}">Open {{ item.view_type }}</a>
+              <a class="button secondary" href="{{ item.get_absolute_url }}">Open {{ item.view_type }}</a>
               <form method="post" action="{% url 'core:delete-saved-view' item.pk %}">
                 {% csrf_token %}<button class="button text-danger" type="submit">Delete</button>
               </form>

@@ -139,7 +139,7 @@ class Command(BaseCommand):
                 for baseline in accepted_baselines
             ):
                 raise CommandError(f"Invalid accepted baselines for {item['name']}")
-            matches = list(Asset.objects.select_for_update().filter(name=item["name"]))
+            matches = list(Asset.objects.select_for_update().filter(name=item["name"], state="VA"))
             if len(matches) != 1:
                 skipped += 1
                 continue

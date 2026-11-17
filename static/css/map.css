@@ -40,7 +40,8 @@ body.is-resizing-map-panels, body.is-resizing-map-panels * { cursor: col-resize 
 .map-tool-details[open] > summary::after { content: "\00d7"; width: 34px; height: 34px; flex: 0 0 34px; display: grid; place-items: center; border: 1px solid var(--line); color: var(--ink); background: var(--paper); font-size: 21px; font-weight: 500; line-height: 1; }
 .map-tool-details[open] > div { min-height: 0; max-height: calc(100dvh - var(--header-height) - 70px); overflow-y: auto; overscroll-behavior: contain; }
 .map-layer-options { display: grid; padding: 10px 18px 18px; }
-.map-layer-options > strong { padding: 12px 0 4px; border-top: 1px solid var(--line); color: var(--ink-muted); font-size: 10px; text-transform: uppercase; }
+.map-layer-options [data-virginia-layers]:not([hidden]) { display: contents; }
+.map-layer-options strong { padding: 12px 0 4px; border-top: 1px solid var(--line); color: var(--ink-muted); font-size: 10px; text-transform: uppercase; }
 .map-layer-options > strong:first-child { padding-top: 2px; border-top: 0; }
 .map-layer-options label { min-height: 38px; display: grid; grid-template-columns: 16px minmax(0, 1fr); align-items: center; gap: 9px; color: var(--ink); cursor: pointer; font-size: 12px; font-weight: 700; }
 .map-layer-options input { width: 16px; height: 16px; margin: 0; accent-color: var(--brand); }

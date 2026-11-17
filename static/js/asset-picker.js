@@ -1,4 +1,5 @@
-import { assetPickerPage, assetPickerQuery } from "./asset-picker-state.js?v=20261112-1";
+import { assetPickerPage, assetPickerQuery } from "./asset-picker-state.js?v=20261117-1";
+import { inventoryPrefix, sitePath } from "./geography.js?v=20261117-1";
 
 const dialog = document.querySelector("[data-asset-picker]");
 const opener = document.querySelector("[data-open-asset-picker]");
@@ -128,11 +129,11 @@ function initializePicker() {
     let timedOut = false;
     const timeout = setTimeout(() => { timedOut = true; controller.abort(); }, 15000);
     try {
-      const response = await fetch(`/compare/options/?${query}`, {
+      const response = await fetch(sitePath(`/compare/options/?${query}`), {
         signal: controller.signal, cache: "no-store", headers: { Accept: "application/json" },
       });
       if (!response.ok) throw new Error("Asset list unavailable");
-      const result = assetPickerPage(await response.json());
+      const result = assetPickerPage(await response.json(), inventoryPrefix());
       if (version !== requestVersion || !dialog.open) return;
       currentPage = result.page;
       pages = result.pages;
@@ -222,7 +223,7 @@ function initializePicker() {
   confirm.addEventListener("click", () => {
     if (!draft.size) return;
     confirm.disabled = true;
-    location.assign(`/compare/?${assetPickerQuery([...existing], [...draft.keys()])}`);
+    location.assign(sitePath(`/compare/?${assetPickerQuery([...existing], [...draft.keys()])}`));
   });
   document.querySelectorAll("[data-picker-fallback]").forEach(element => { element.hidden = true; });
   opener.disabled = existing.size >= 5;

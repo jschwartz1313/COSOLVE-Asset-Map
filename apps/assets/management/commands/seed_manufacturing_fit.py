@@ -88,7 +88,9 @@ class Command(BaseCommand):
         records = load_seed(options["seed"])
         created = skipped = 0
         for identity, values, source_values in records:
-            matches = list(Asset.objects.select_for_update().filter(name=identity["name"]))
+            matches = list(
+                Asset.objects.select_for_update().filter(name=identity["name"], state="VA")
+            )
             reason = "asset missing or ambiguous"
             if len(matches) == 1:
                 asset = matches[0]

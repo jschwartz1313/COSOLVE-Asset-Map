@@ -28,7 +28,9 @@ class Command(BaseCommand):
             label = record.get("display_name", "").strip()
             if record.get("provenance") != "faa-public-airport" or not label:
                 continue
-            matches = list(Asset.objects.select_for_update().filter(name=record["name"]))
+            matches = list(
+                Asset.objects.select_for_update().filter(name=record["name"], state="VA")
+            )
             if len(matches) != 1:
                 skipped += 1
                 continue

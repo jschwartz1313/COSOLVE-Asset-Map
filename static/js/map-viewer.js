@@ -1,4 +1,5 @@
-import { fetchAssets } from "./api.js?v=20260928-1";
+import { fetchAssets } from "./api.js?v=20261117-1";
+import { sitePath } from "./geography.js?v=20261117-1";
 import {
   bindFilterDrawer,
   bindFilterIndicators,
@@ -11,7 +12,7 @@ import {
   featuresWithinRadius,
   summarizeRegion,
 } from "./map-analysis.js?v=20261028-1";
-import { createMap } from "./map.js?v=20261105-1";
+import { createMap } from "./map.js?v=20261117-1";
 import {
   analysisStateFromParams,
   filterParamsFromMapUrl,
@@ -111,6 +112,7 @@ function applyLayerToggleState(state) {
   maapFlightAreasToggle.checked = layers.includes("maap-flight-areas");
   verificationLayerToggle.checked = layers.includes("verification");
   precisionLayerToggle.checked = layers.includes("precision");
+  for (const input of root.querySelectorAll("input[data-unavailable-layer]")) input.checked = false;
   const basemap = state?.basemap || "street";
   for (const input of basemapInputs) input.checked = input.value === basemap;
 }
@@ -798,8 +800,8 @@ async function load(
   activeFilterParams = requestedFilterParams;
   setAssetDataReady(false);
   directoryLink.href = requestedFilterParams.toString()
-    ? `/directory/?${requestedFilterParams}`
-    : "/directory/";
+    ? sitePath(`/directory/?${requestedFilterParams}`)
+    : sitePath("/directory/");
   renderActiveFilters();
   clearAnalysis({ render: false });
   showAssetResults();

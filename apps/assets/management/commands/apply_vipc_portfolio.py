@@ -40,7 +40,7 @@ class Command(BaseCommand):
             names.add(item["name"])
         tagged = attached = skipped = 0
         for item in members:
-            asset = Asset.objects.select_for_update().filter(name=item["name"]).first()
+            asset = Asset.objects.select_for_update().filter(name=item["name"], state="VA").first()
             if (
                 asset is None
                 or asset.visibility != Asset.Visibility.PUBLIC

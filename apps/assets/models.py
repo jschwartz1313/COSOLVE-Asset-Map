@@ -15,6 +15,7 @@ from simple_history.models import HistoricalRecords
 
 from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 
+from .geography import BY_CODE, internal_preview
 from .scoping import apply_public_scope
 from .testing import (
     ACCESS_CHOICES,
@@ -43,10 +44,16 @@ SPECIALIZED_HIGHER_ED_EXCLUSIONS = frozenset(
 
 class PublicAssetManager(models.Manager):
     def get_queryset(self):
+        visibility = models.Q(visibility=Asset.Visibility.PUBLIC)
+        if internal_preview.get():
+            visibility |= models.Q(
+                visibility=Asset.Visibility.INTERNAL,
+                benchmark_starter=True,
+            )
         queryset = (
             super()
             .get_queryset()
-            .filter(status__in=Asset.public_status_values(), visibility=Asset.Visibility.PUBLIC)
+            .filter(visibility, status__in=Asset.public_status_values())
             .exclude(
                 record_type=Asset.RecordType.UNIVERSITY,
                 name__in=SPECIALIZED_HIGHER_ED_EXCLUSIONS,
@@ -213,6 +220,7 @@ class Asset(models.Model):
     address_line = models.CharField(max_length=240, blank=True)
     city = models.CharField(max_length=120, blank=True)
     state = models.CharField(max_length=2, default="VA")
+    benchmark_starter = models.BooleanField(default=False, editable=False)
     postal_code = models.CharField(max_length=12, blank=True)
     latitude = models.DecimalField(
         max_digits=9,
@@ -295,11 +303,14 @@ class Asset(models.Model):
             ("can_export_asset", "Can export asset records"),
         ]
         constraints = [
-            models.UniqueConstraint(fields=("name", "city"), name="unique_asset_name_city")
+            models.UniqueConstraint(
+                fields=("name", "city", "state"), name="unique_asset_name_city_state"
+            )
         ]
         indexes = [
             models.Index(fields=("status", "visibility")),
             models.Index(fields=("record_type", "region")),
+            models.Index(fields=("state", "status", "visibility")),
         ]
 
     def __str__(self):
@@ -311,6 +322,13 @@ class Asset(models.Model):
 
     def clean(self):
         errors = {}
+        self.state = (self.state or "").strip().upper()
+        if self.region_id:
+            try:
+                if self.region.state != self.state:
+                    errors["region"] = "Select a region in the asset's state."
+            except Region.DoesNotExist:
+                pass  # Foreign-key validation reports a missing region.
         if bool(self.latitude is None) != bool(self.longitude is None):
             errors["latitude"] = "Latitude and longitude must be provided together."
         if (
@@ -633,6 +651,7 @@ class UpdateSubmission(models.Model):
     )
     kind = models.CharField(max_length=16, choices=Kind.choices)
     subject = models.CharField(max_length=220)
+    state = models.CharField(max_length=2, default="VA")
     details = models.TextField(max_length=5000)
     source_url = models.URLField(blank=True)
     submitter_name = models.CharField(max_length=120)
@@ -663,6 +682,7 @@ class SavedView(models.Model):
     name = models.CharField(max_length=120)
     view_type = models.CharField(max_length=12, choices=ViewType.choices)
     query_string = models.CharField(max_length=4000, blank=True)
+    state = models.CharField(max_length=2, default="VA")
     is_shared = models.BooleanField(default=False)
     share_token = models.UUIDField(default=uuid.uuid4, unique=True, editable=False)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -673,7 +693,7 @@ class SavedView(models.Model):
         ordering = ("-updated_at", "name")
         constraints = [
             models.UniqueConstraint(
-                fields=("owner", "name", "view_type"), name="unique_saved_view_name"
+                fields=("owner", "name", "view_type", "state"), name="unique_saved_view_name"
             )
         ]
 
@@ -700,6 +720,8 @@ class SavedView(models.Model):
             "map_basemap",
             "map_analysis",
         }
+        if self.state not in BY_CODE:
+            raise ValidationError({"state": "Choose a supported inventory state."})
         pairs = parse_qsl(self.query_string, keep_blank_values=True)
         unexpected = {key for key, _value in pairs} - allowed
         if unexpected:
@@ -785,6 +807,9 @@ class SavedView(models.Model):
 
     def destination_url_name(self):
         return "core:map" if self.view_type == self.ViewType.MAP else "core:directory"
+
+    def get_absolute_url(self):
+        return reverse("core:open-saved-view", args=[self.share_token], urlconf="config.urls")
 
 
 from .diagrams import SiteDiagram  # noqa: E402,F401

@@ -102,6 +102,7 @@ class Command(BaseCommand):
 
         catalog = json.loads(options["catalog"].read_text())
         records = catalog["records"]
+        record_states = {record["name"]: record.get("state", "VA") for record in records}
 
         deleted = 0
         if options["replace_demo"]:
@@ -116,11 +117,13 @@ class Command(BaseCommand):
         held_identities = set()
         catalog_names = {record["name"] for record in records}
         for record in records:
-            asset = Asset.objects.filter(name=record["name"]).first()
+            state = record.get("state", "VA")
+            asset = Asset.objects.filter(name=record["name"], state=state).first()
             legacy_name = LEGACY_CATALOG_NAMES.get(record["name"])
             if asset is None and legacy_name:
                 asset = Asset.objects.filter(
                     name=legacy_name,
+                    state=state,
                     internal_notes__startswith="Catalog provenance:",
                 ).first()
                 if asset is not None:
@@ -139,8 +142,8 @@ class Command(BaseCommand):
                         | Q(search_aliases__icontains=term)
                     )
                 if (
-                    Asset.objects.filter(matches).exists()
-                    or Asset.history.filter(matches).exists()
+                    Asset.objects.filter(matches, state=state).exists()
+                    or Asset.history.filter(matches, state=state).exists()
                 ):
                     held_identities.add(record["name"])
                     skipped += 1
@@ -267,8 +270,14 @@ class Command(BaseCommand):
         for relationship_data in catalog.get("relationships", []):
             if {relationship_data["from"], relationship_data["to"]} & held_identities:
                 continue
-            from_asset = Asset.objects.get(name=relationship_data["from"])
-            to_asset = Asset.objects.get(name=relationship_data["to"])
+            from_asset = Asset.objects.get(
+                name=relationship_data["from"],
+                state=record_states.get(relationship_data["from"], "VA"),
+            )
+            to_asset = Asset.objects.get(
+                name=relationship_data["to"],
+                state=record_states.get(relationship_data["to"], "VA"),
+            )
             if options["add_missing"]:
                 identity = {
                     "from_asset_id": from_asset.pk,
@@ -300,7 +309,10 @@ class Command(BaseCommand):
         if options["prune"]:
             stale_ids = [
                 asset.pk
-                for asset in Asset.objects.filter(internal_notes__startswith="Catalog provenance:")
+                for asset in Asset.objects.filter(
+                    state__in=set(record_states.values()),
+                    internal_notes__startswith="Catalog provenance:",
+                )
                 if asset.name not in catalog_names
             ]
             if stale_ids:

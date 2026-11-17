@@ -280,6 +280,7 @@ class AssetAdmin(SimpleHistoryAdmin):
     list_display = (
         "asset_name",
         "record_type",
+        "state",
         "region",
         "activity_status",
         "development_status",
@@ -292,6 +293,7 @@ class AssetAdmin(SimpleHistoryAdmin):
         "updated_at",
     )
     list_filter = (
+        "state",
         "record_type",
         "vipc_portfolio_sector",
         "region",
@@ -594,11 +596,12 @@ class UpdateSubmissionAdmin(SimpleHistoryAdmin):
         "created_at",
         "subject",
         "asset",
+        "state",
         "kind",
         "status",
         "submitter_organization",
     )
-    list_filter = ("status", "kind", "created_at")
+    list_filter = ("state", "status", "kind", "created_at")
     search_fields = (
         "subject",
         "details",
@@ -607,12 +610,14 @@ class UpdateSubmissionAdmin(SimpleHistoryAdmin):
         "submitter_email",
     )
     autocomplete_fields = ("asset",)
-    readonly_fields = ("created_at", "updated_at")
+    readonly_fields = ("state", "created_at", "updated_at")
     list_select_related = ("asset",)
     date_hierarchy = "created_at"
     actions = ("mark_in_review", "mark_resolved")
     fieldsets = (
-        ("Request", {"fields": ("status", "kind", "asset", "subject", "details", "source_url")}),
+        ("Request", {"fields": (
+            "status", "kind", "state", "asset", "subject", "details", "source_url",
+        )}),
         (
             "Submitter",
             {

@@ -42,6 +42,7 @@ MIDDLEWARE = [
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "apps.core.state_scope.StateScopeMiddleware",
     "allauth.account.middleware.AccountMiddleware",
     "simple_history.middleware.HistoryRequestMiddleware",
     "apps.core.middleware.OptionalSiteLoginMiddleware",
@@ -137,6 +138,7 @@ TOPO_BASEMAP_ATTRIBUTION = os.getenv(
 DEFAULT_MAP_LAT = float(os.getenv("DEFAULT_MAP_LAT", "37.5"))
 DEFAULT_MAP_LON = float(os.getenv("DEFAULT_MAP_LON", "-78.7"))
 DEFAULT_MAP_ZOOM = int(os.getenv("DEFAULT_MAP_ZOOM", "7"))
+MULTISTATE_PUBLIC = os.getenv("MULTISTATE_PUBLIC", "false").lower() == "true"
 PUBLIC_SITE_URL = os.getenv("PUBLIC_SITE_URL", "http://127.0.0.1:8000")
 STALE_VERIFICATION_DAYS = int(os.getenv("STALE_VERIFICATION_DAYS", "180"))
 REQUIRE_SITE_LOGIN = os.getenv("REQUIRE_SITE_LOGIN", "false").lower() == "true"

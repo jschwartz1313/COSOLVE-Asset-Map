@@ -10,11 +10,11 @@
   <link rel="icon" type="image/png" href="{% static 'img/cosolve-logo-black.png' %}">
   <link rel="apple-touch-icon" href="{% static 'img/cosolve-logo-black.png' %}">
   <link rel="stylesheet" href="{% static 'css/tokens.css' %}?v=20260717">
-  <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20261029-3">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20261117-1">
   {% block extra_css %}{% endblock %}
-  <script type="module" src="{% static 'js/site-header.js' %}?v=20261105-1"></script>
+  <script type="module" src="{% static 'js/site-header.js' %}?v=20261117-1"></script>
 </head>
-<body class="{% block body_class %}{% endblock %}">
+<body class="{% block body_class %}{% endblock %}" data-inventory-state="{{ inventory_state.code }}" data-site-prefix="{{ inventory_prefix }}">
   <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="{% url 'core:map' %}" aria-label="COSOLVE asset map home">
@@ -23,10 +23,20 @@
       </span>
       <small>{{ public_scope_name }} Asset Map</small>
     </a>
+    {% if inventory_states|length > 1 %}
+    <form class="state-switcher" method="get" action="{% url 'core:select-state' %}" data-state-switcher>
+      <label for="inventory-state">State{% if inventory_preview %}<small>Internal preview</small>{% endif %}</label>
+      <select id="inventory-state" name="state" aria-label="State inventory">
+        {% for state in inventory_states %}<option value="{{ state.slug }}"{% if state.code == inventory_state.code %} selected{% endif %}>{{ state.name }}</option>{% endfor %}
+      </select>
+      <input type="hidden" name="view" value="{{ state_switch_view }}">
+      <button type="submit" class="state-switch-go" aria-label="Open selected state">Go</button>
+    </form>
+    {% endif %}
     <nav class="primary-nav" aria-label="Primary navigation">
       <a href="{% url 'core:map' %}" {% if request.resolver_match.url_name == 'map' or request.resolver_match.url_name == 'home' %}aria-current="page"{% endif %}>Map</a>
       <a id="directory-link" href="{% url 'core:directory' %}" {% if request.resolver_match.url_name == 'directory' or request.resolver_match.url_name == 'asset-detail' or request.resolver_match.url_name == 'asset-suggest-update' %}aria-current="page"{% endif %}>Directory</a>
-      {% if not public_scope_is_regional %}<a href="{% url 'core:region-compare' %}" {% if request.resolver_match.url_name == 'region-compare' %}aria-current="page"{% endif %}>Regions</a>{% endif %}
+      {% if not public_scope_is_regional and inventory_has_regions %}<a href="{% url 'core:region-compare' %}" {% if request.resolver_match.url_name == 'region-compare' %}aria-current="page"{% endif %}>Regions</a>{% endif %}
       <details class="navigation-menu header-menu" data-header-menu>
         <summary {% if request.resolver_match.url_name == 'about-data' or request.resolver_match.url_name == 'connect' or request.resolver_match.url_name == 'test-sites' %}class="is-current"{% endif %}>More</summary>
         <div class="header-menu-panel">

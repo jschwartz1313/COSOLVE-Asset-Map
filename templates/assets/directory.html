@@ -44,7 +44,7 @@
             {% with category=asset.strategic_categories.all|first %}{% if category %}<small>{{ category.name }}</small>{% endif %}{% endwith %}
             {% if asset.is_vipc_portfolio %}<span class="affiliation-tag" title="VIPC portfolio: {{ asset.get_vipc_portfolio_sector_display }}">VIPC portfolio organization</span>{% endif %}
           </div>
-          <div class="directory-location"><strong>{{ asset.city|default:"Virginia" }}</strong>{% if asset.city and asset.state %}<span>{{ asset.state }}</span>{% endif %}{% if asset.location_role %}<small>{{ asset.get_location_role_display }}</small>{% endif %}</div>
+          <div class="directory-location"><strong>{{ asset.city|default:inventory_state.name }}</strong>{% if asset.city and asset.state %}<span>{{ asset.state }}</span>{% endif %}{% if asset.location_role %}<small>{{ asset.get_location_role_display }}</small>{% endif %}</div>
         </article>
       {% empty %}
         <div class="empty-state"><h3>No matching assets</h3><p>Adjust the active filters or search terms.</p></div>
@@ -60,5 +60,5 @@
   </section>
 </main>
 <script type="module" src="{% static 'js/directory-filters.js' %}?v=20261021-2"></script>
-<script type="module" src="{% static 'js/asset-shortlist.js' %}?v=20261111-3"></script>
+<script type="module" src="{% static 'js/asset-shortlist.js' %}?v=20261117-1"></script>
 {% endblock %}

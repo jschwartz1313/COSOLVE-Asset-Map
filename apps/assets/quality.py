@@ -37,6 +37,8 @@ def _distance_miles(first, second):
 
 
 def _candidate_details(first, second):
+    if first.state != second.state:
+        return None
     first_name = _normalized_text(first.name)
     second_name = _normalized_text(second.name)
     name_similarity = SequenceMatcher(None, first_name, second_name).ratio()
@@ -82,6 +84,7 @@ def discover_duplicate_candidates(queryset=None):
             "id",
             "name",
             "city",
+            "state",
             "address_line",
             "website_url",
             "latitude",

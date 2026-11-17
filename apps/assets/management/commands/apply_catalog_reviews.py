@@ -60,7 +60,7 @@ class Command(BaseCommand):
         skipped = 0
 
         for asset_name, source_urls in manifest.get("reviewed_assets", {}).items():
-            asset = Asset.objects.filter(name=asset_name).first()
+            asset = Asset.objects.filter(name=asset_name, state="VA").first()
             if asset is None or not asset.internal_notes.startswith("Catalog provenance:"):
                 skipped += 1
                 continue
@@ -170,7 +170,7 @@ class Command(BaseCommand):
             )
 
         for asset_name, reason in manifest.get("follow_up_assets", {}).items():
-            asset = Asset.objects.filter(name=asset_name).first()
+            asset = Asset.objects.filter(name=asset_name, state="VA").first()
             if asset is None or not asset.internal_notes.startswith("Catalog provenance:"):
                 skipped += 1
                 continue

@@ -40,13 +40,13 @@
   </select></span>
 </label>
 
-<label class="check-row portfolio-filter"><input type="checkbox" name="portfolio" value="vipc" {% if request.GET.portfolio == "vipc" %}checked{% endif %}><span>VIPC portfolio organizations only</span></label>
+{% if inventory_is_virginia %}<label class="check-row portfolio-filter"><input type="checkbox" name="portfolio" value="vipc" {% if request.GET.portfolio == "vipc" %}checked{% endif %}><span>VIPC portfolio organizations only</span></label>{% endif %}
 
-{% if not public_scope_is_regional %}
+{% if not public_scope_is_regional and regions %}
   <label>
     <span>Region</span>
     <span class="filter-select"><select name="region">
-      <option value="">All Virginia regions</option>
+      <option value="">All {{ inventory_state.name }} regions</option>
       {% for region in regions %}
         <option value="{{ region.slug }}" {% if request.GET.region == region.slug %}selected{% endif %}>{{ region.name }}</option>
       {% endfor %}

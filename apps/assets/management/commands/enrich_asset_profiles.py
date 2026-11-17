@@ -311,7 +311,9 @@ class Command(BaseCommand):
         removed_stale_sources = 0
         skipped_invalid = 0
         for record in records:
-            matches = list(Asset.objects.select_for_update().filter(name=record["name"]))
+            matches = list(
+                Asset.objects.select_for_update().filter(name=record["name"], state="VA")
+            )
             if len(matches) != 1:
                 continue
             asset = matches[0]

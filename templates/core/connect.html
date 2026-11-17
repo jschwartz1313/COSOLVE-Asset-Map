@@ -4,11 +4,12 @@
 {% block content %}
 <main id="main-content" class="about-page">
   <header class="page-heading">
-    <span class="eyebrow">Virginia ecosystem</span>
+    <span class="eyebrow">{{ public_scope_name }} ecosystem</span>
     <h1>Get connected</h1>
     <p>Public starting points for testing, workforce, business support, and research partnerships.</p>
   </header>
   <div class="connection-list">
+    {% if inventory_is_virginia %}
     <section class="connection-row">
       <div><span class="eyebrow">Ecosystem and commercialization</span><h2>Virginia Unmanned Systems Center at VIPC</h2></div>
       <div><p>UxS partnerships, startup resources, grants, and early-stage funding information across air, land, sea, and space.</p><a href="https://vipc.org/initiatives/virginia-unmanned-systems-center/" rel="noopener noreferrer">Visit the center and its resources</a></div>
@@ -29,6 +30,14 @@
       <div><span class="eyebrow">Research and technology transfer</span><h2>NASA Langley Research Center</h2></div>
       <div><p>Langley's Front Door connects prospective partners with research capabilities, facilities, technology transfer, small-business programs, and the partnerships team.</p><a href="https://www.nasa.gov/langley/frontdoor/" rel="noopener noreferrer">Explore NASA Langley partnerships</a></div>
     </section>
+    {% else %}
+      {% for asset in contact_assets %}
+      <section class="connection-row">
+        <div><span class="eyebrow">{{ asset.get_record_type_display }}</span><h2><a href="{{ asset.get_absolute_url }}">{{ asset.public_name }}</a></h2></div>
+        <div><p>{{ asset.short_description }}</p><a href="{{ asset.contact_url }}" target="_blank" rel="noopener noreferrer">Public contact information</a></div>
+      </section>
+      {% empty %}<p>No direct public contacts have been documented for this state yet.</p>{% endfor %}
+    {% endif %}
   </div>
   <section class="connection-next">
     <h2>Testing and operational resources</h2>

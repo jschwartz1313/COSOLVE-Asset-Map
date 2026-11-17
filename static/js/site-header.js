@@ -1,4 +1,9 @@
 const menus = [...document.querySelectorAll("[data-header-menu]")];
+const stateSwitcher = document.querySelector("[data-state-switcher]");
+if (stateSwitcher) {
+  stateSwitcher.querySelector("select").addEventListener("change", () => stateSwitcher.requestSubmit());
+  stateSwitcher.querySelector("button").hidden = true;
+}
 
 for (const menu of menus) {
   menu.addEventListener("toggle", () => {

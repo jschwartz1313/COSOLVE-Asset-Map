@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 {% block body_class %}regions-page{% endblock %}
 {% block title %}Regional comparison | COSOLVE{% endblock %}
-{% block meta_description %}Compare the documented asset mix, technical domains, and strategic strengths of Virginia's unmanned-systems regions.{% endblock %}
+{% block meta_description %}Compare the documented asset mix and technical domains of {{ public_scope_name }} regions.{% endblock %}
 {% block content %}
 <main id="main-content" class="compare-page">
   <header class="page-heading">
-    <span class="eyebrow">Virginia ecosystem</span>
+    <span class="eyebrow">{{ public_scope_name }} ecosystem</span>
     <h1>Regional comparison</h1>
-    <p>Compare documented inventory coverage, asset mix, technical domains, and data confidence for two Virginia regions.</p>
+    <p>Compare documented inventory coverage, asset mix, technical domains, and data confidence for two {{ public_scope_name }} regions.</p>
   </header>
-  <form class="compare-controls" method="get">
+  {% if regions %}<form class="compare-controls" method="get">
     <label><span>First region</span><select name="region_a">{% for region in regions %}<option value="{{ region.slug }}" {% if region == first.region %}selected{% endif %}>{{ region.name }}</option>{% endfor %}</select></label>
     <label><span>Second region</span><select name="region_b">{% for region in regions %}<option value="{{ region.slug }}" {% if region == second.region %}selected{% endif %}>{{ region.name }}</option>{% endfor %}</select></label>
     <button class="button primary" type="submit">Compare regions</button>
@@ -26,6 +26,6 @@
         <a class="button secondary full" href="{% url 'core:map' %}?region={{ item.region.slug }}">Explore on map</a>
       </section>
     {% endfor %}
-  </div>
+  </div>{% else %}<div class="empty-state"><h2>Regional coverage not yet defined</h2><p>The starter inventory has not been grouped into comparable regions.</p><a href="{% url 'core:directory' %}">Browse {{ public_scope_name }} assets</a></div>{% endif %}
 </main>
 {% endblock %}

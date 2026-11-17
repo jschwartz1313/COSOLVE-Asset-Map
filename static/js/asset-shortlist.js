@@ -1,11 +1,13 @@
-import { comparisonLabels, comparisonSlugs } from "./asset-comparison-state.js?v=20261111-3";
+import { comparisonLabels, comparisonSlugs } from "./asset-comparison-state.js?v=20261117-1";
+import { inventoryPrefix, sitePath } from "./geography.js?v=20261117-1";
 
-const KEY = "cosolve-asset-comparison-v1";
+const prefix = inventoryPrefix();
+const KEY = `cosolve-asset-comparison-v1${prefix}`;
 const controls = [...document.querySelectorAll("[data-compare-asset]")];
 const tray = document.querySelector("[data-comparison-tray]");
 const labels = new Map(controls.filter(control => control.dataset.compareName).map(control => [
   control.dataset.compareAsset,
-  { name: control.dataset.compareName, url: `/assets/${control.dataset.compareAsset}/` },
+  { name: control.dataset.compareName, url: sitePath(`/assets/${control.dataset.compareAsset}/`) },
 ]));
 let selected = [];
 let namesFailed = false;
@@ -25,13 +27,13 @@ if (serverSelection) {
   if (state.explicit) {
     selected = comparisonSlugs(state.slugs);
     if (Array.isArray(state.assets)) {
-      for (const [slug, label] of comparisonLabels(state, selected)) labels.set(slug, label);
+      for (const [slug, label] of comparisonLabels(state, selected, prefix)) labels.set(slug, label);
     }
     saveSelection();
   } else if (selected.length && !new URLSearchParams(location.search).has("q")) {
     const query = new URLSearchParams();
     selected.forEach(slug => query.append("asset", slug));
-    location.replace(`/compare/?${query}`);
+    location.replace(sitePath(`/compare/?${query}`));
   }
 }
 
@@ -99,7 +101,7 @@ function update() {
   const query = new URLSearchParams();
   selected.forEach(slug => query.append("asset", slug));
   const open = tray.querySelector("[data-comparison-open]");
-  open.href = `/compare/?${query}`;
+  open.href = sitePath(`/compare/?${query}`);
   open.textContent = selected.length ? "Compare selected assets" : "Compare assets";
   renderNames();
 }
@@ -121,11 +123,11 @@ async function resolveNames() {
   const query = new URLSearchParams();
   missing.forEach(slug => query.append("asset", slug));
   try {
-    const response = await fetch(`/compare/selection/?${query}`, {
+    const response = await fetch(sitePath(`/compare/selection/?${query}`), {
       signal: controller.signal, headers: { Accept: "application/json" }, cache: "no-store",
     });
     if (!response.ok) throw new Error("Selected asset names unavailable");
-    const found = comparisonLabels(await response.json(), missing);
+    const found = comparisonLabels(await response.json(), missing, prefix);
     if (version !== requestVersion) return;
     for (const [slug, label] of found) labels.set(slug, label);
     const removed = missing.filter(slug => !found.has(slug));

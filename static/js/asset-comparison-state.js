@@ -6,7 +6,7 @@ export function comparisonSlugs(value) {
     : [];
 }
 
-export function comparisonLabels(payload, requested) {
+export function comparisonLabels(payload, requested, prefix = "") {
   if (!payload || !Array.isArray(payload.assets) || payload.assets.length > 5) {
     throw new Error("Invalid comparison names response");
   }
@@ -14,7 +14,7 @@ export function comparisonLabels(payload, requested) {
   for (const asset of payload.assets) {
     if (!asset || !requested.includes(asset.slug) || labels.has(asset.slug)
       || typeof asset.name !== "string" || !asset.name.trim() || asset.name.length > 220
-      || asset.url !== `/assets/${asset.slug}/`) {
+      || asset.url !== `${prefix}/assets/${asset.slug}/`) {
       throw new Error("Invalid comparison asset label");
     }
     labels.set(asset.slug, { name: asset.name, url: asset.url });

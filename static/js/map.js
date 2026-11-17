@@ -172,11 +172,15 @@ export function createMap(root) {
   root.dataset.basemap = activeBasemap;
   let basemapLayer = window.L.tileLayer(basemaps.street.url, basemaps.street).addTo(map);
 
-  // The same Virginia sample tile makes the four map styles easy to compare.
+  const previewZoom = 8;
+  const previewScale = 2 ** previewZoom;
+  const previewLatitude = defaultView[0] * Math.PI / 180;
+  const previewX = Math.floor((defaultView[1] + 180) / 360 * previewScale);
+  const previewY = Math.floor((1 - Math.asinh(Math.tan(previewLatitude)) / Math.PI) / 2 * previewScale);
   for (const preview of root.querySelectorAll("[data-basemap-preview]")) {
     const provider = basemaps[preview.dataset.basemapPreview];
     preview.src = window.L.Util.template(provider.url, {
-      s: "a", z: 12, x: 1132, y: 1590, r: "",
+      s: "a", z: previewZoom, x: previewX, y: previewY, r: "",
     });
     preview.addEventListener("error", () => { preview.hidden = true; });
   }
@@ -583,7 +587,7 @@ export function createMap(root) {
     const heading = document.createElement("h3");
     heading.textContent = properties.name;
     const location = document.createElement("p");
-    location.textContent = [properties.service_city, "Virginia"].filter(Boolean).join(", ");
+    location.textContent = [properties.service_city, properties.state || root.dataset.stateName].filter(Boolean).join(", ");
     const identifier = document.createElement("p");
     identifier.textContent = properties.identifier
       ? `FAA identifier ${properties.identifier}`
@@ -655,7 +659,7 @@ export function createMap(root) {
           status: properties.site_type,
           title: properties.name,
           entries: [
-            ["Location", `${properties.city}, Virginia · ${properties.location_precision}`],
+            ["Location", `${properties.city}, ${properties.state || root.dataset.stateName} · ${properties.location_precision}`],
             ["Published size", properties.published_size],
             ["Takeoff and landing", properties.launch_recovery],
             ["Support infrastructure", properties.support_infrastructure],

@@ -1,0 +1,137 @@
+{
+  "retrieved": "2026-11-17",
+  "source": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer",
+  "note": "Simplified display boundaries only; not survey or operational geometry.",
+  "states": {
+    "AZ": {
+      "boundary": {
+        "features": 1,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/0/query?where=STATE%3D%2704%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      },
+      "counties": {
+        "features": 15,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1/query?where=STATE%3D%2704%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      }
+    },
+    "CA": {
+      "boundary": {
+        "features": 1,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/0/query?where=STATE%3D%2706%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      },
+      "counties": {
+        "features": 58,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1/query?where=STATE%3D%2706%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      }
+    },
+    "CO": {
+      "boundary": {
+        "features": 1,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/0/query?where=STATE%3D%2708%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      },
+      "counties": {
+        "features": 64,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1/query?where=STATE%3D%2708%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      }
+    },
+    "FL": {
+      "boundary": {
+        "features": 1,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/0/query?where=STATE%3D%2712%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      },
+      "counties": {
+        "features": 67,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1/query?where=STATE%3D%2712%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      }
+    },
+    "MI": {
+      "boundary": {
+        "features": 1,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/0/query?where=STATE%3D%2726%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      },
+      "counties": {
+        "features": 83,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1/query?where=STATE%3D%2726%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      }
+    },
+    "NY": {
+      "boundary": {
+        "features": 1,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/0/query?where=STATE%3D%2736%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      },
+      "counties": {
+        "features": 62,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1/query?where=STATE%3D%2736%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      }
+    },
+    "NC": {
+      "boundary": {
+        "features": 1,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/0/query?where=STATE%3D%2737%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      },
+      "counties": {
+        "features": 100,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1/query?where=STATE%3D%2737%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      }
+    },
+    "ND": {
+      "boundary": {
+        "features": 1,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/0/query?where=STATE%3D%2738%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      },
+      "counties": {
+        "features": 53,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1/query?where=STATE%3D%2738%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      }
+    },
+    "OH": {
+      "boundary": {
+        "features": 1,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/0/query?where=STATE%3D%2739%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      },
+      "counties": {
+        "features": 88,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1/query?where=STATE%3D%2739%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      }
+    },
+    "OK": {
+      "boundary": {
+        "features": 1,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/0/query?where=STATE%3D%2740%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      },
+      "counties": {
+        "features": 77,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1/query?where=STATE%3D%2740%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      }
+    },
+    "PA": {
+      "boundary": {
+        "features": 1,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/0/query?where=STATE%3D%2742%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      },
+      "counties": {
+        "features": 67,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1/query?where=STATE%3D%2742%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      }
+    },
+    "TX": {
+      "boundary": {
+        "features": 1,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/0/query?where=STATE%3D%2748%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      },
+      "counties": {
+        "features": 254,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1/query?where=STATE%3D%2748%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      }
+    },
+    "UT": {
+      "boundary": {
+        "features": 1,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/0/query?where=STATE%3D%2749%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      },
+      "counties": {
+        "features": 29,
+        "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/1/query?where=STATE%3D%2749%27&outFields=STATE%2CNAME%2CGEOID&outSR=4326&f=geojson&returnGeometry=true&maxAllowableOffset=0.005&geometryPrecision=5"
+      }
+    }
+  }
+}

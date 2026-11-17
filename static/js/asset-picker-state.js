@@ -1,6 +1,6 @@
-import { comparisonSlugs } from "./asset-comparison-state.js?v=20261111-3";
+import { comparisonSlugs } from "./asset-comparison-state.js?v=20261117-1";
 
-export function assetPickerPage(payload) {
+export function assetPickerPage(payload, prefix = "") {
   if (!payload || !Array.isArray(payload.assets) || payload.assets.length > 24
     || !Number.isSafeInteger(payload.count) || payload.count < payload.assets.length
     || !Number.isSafeInteger(payload.page) || !Number.isSafeInteger(payload.pages)
@@ -10,7 +10,7 @@ export function assetPickerPage(payload) {
   for (const asset of payload.assets) {
     if (!asset || !comparisonSlugs([asset.slug]).length || seen.has(asset.slug)
       || typeof asset.name !== "string" || !asset.name.trim() || asset.name.length > 220
-      || asset.url !== `/assets/${asset.slug}/`
+      || asset.url !== `${prefix}/assets/${asset.slug}/`
       || typeof asset.record_type !== "string" || asset.record_type.length > 30
       || typeof asset.record_type_label !== "string" || asset.record_type_label.length > 80
       || typeof asset.location !== "string" || asset.location.length > 260) {

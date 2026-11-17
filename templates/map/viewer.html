@@ -7,16 +7,17 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20261021-1">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20261117-1">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
+      data-state-name="{{ inventory_state.name }}"
       data-lat="{{ default_map_lat }}" data-lon="{{ default_map_lon }}" data-zoom="{{ default_map_zoom }}"
       data-basemap-street-url="{{ basemap_tile_url }}" data-basemap-street-attribution="{{ basemap_attribution }}"
       data-basemap-light-url="{{ light_basemap_tile_url }}" data-basemap-light-attribution="{{ light_basemap_attribution }}"
       data-basemap-imagery-url="{{ imagery_basemap_tile_url }}" data-basemap-imagery-attribution="{{ imagery_basemap_attribution }}"
       data-basemap-topo-url="{{ topo_basemap_tile_url }}" data-basemap-topo-attribution="{{ topo_basemap_attribution }}"
-      data-counties-url="{% static 'data/virginia-counties.geojson' %}?v=2025"
+      data-counties-url="{% static county_boundary_path %}?v={{ boundary_version }}"
       data-regions-url="{% static 'data/virginia-regions.geojson' %}?v=20260728"
       data-mpz-candidates-url="{% static 'data/virginia-maritime-prosperity-candidates.geojson' %}?v=20260729"
       data-heliports-url="{% static 'data/virginia-heliports.geojson' %}?v={{ layer_freshness.heliports.version }}"
@@ -29,7 +30,7 @@
       data-faa-airspace-info-url="https://www.faa.gov/uas/getting_started/where_can_i_fly/airspace_restrictions/flying_near_airports"
       data-faa-data-info-url="https://udds-faa.opendata.arcgis.com/"
       data-faa-security-info-url="https://faa.maps.arcgis.com/apps/webappviewer/index.html?id=9c2e4406710048e19806ebf6a06754ad"
-      data-state-boundary-url="{% static 'data/virginia-state-boundary.geojson' %}?v=2025"
+      data-state-boundary-url="{% static state_boundary_path %}?v={{ boundary_version }}"
       data-icon-base-url="{% static 'img/icons/legend/' %}">
   <aside class="filters-panel" id="asset-filters-panel" aria-label="Asset filters">
     <div class="panel-heading">
@@ -85,15 +86,18 @@
       <summary>Sources &amp; notes</summary>
       <div class="map-source-content">
         <p class="map-use-disclaimer"><strong>Use limitations:</strong> This map supports ecosystem research and planning. Counts and percentages describe the current documented inventory, so a low or zero count does not establish that a real-world capability is absent. The map is not navigation, flight authorization, facility-access, security, or operational guidance. Check current FAA sources, NOTAMs, TFRs, charts, site owners, and applicable rules before making operational decisions. Locations may be generalized, records may change, and potential MPZ tracts are not federal designations.</p>
-        <p><strong>Boundaries:</strong> U.S. Census Bureau TIGERweb (2025).</p>
-        <p><strong>Ecosystem regions:</strong> COSOLVE working analytical groupings derived from Virginia regional organizations.</p>
+        <p><strong>Boundaries:</strong> U.S. Census Bureau TIGERweb{% if inventory_is_virginia %} (2025){% endif %}.</p>
+        {% if inventory_is_virginia %}<p><strong>Ecosystem regions:</strong> COSOLVE working analytical groupings derived from Virginia regional organizations.</p>
         <p><strong>Potential MPZ tracts:</strong> U.S. Census Bureau geography cross-referenced with public information from MARAD, the Port of Virginia, and the U.S. Navy.</p>
+        {% endif %}
         <p><strong>Asset points:</strong> Public institutional and government sources listed on each asset profile. Locations may be exact, approximate, or generalized.</p>
+        {% if inventory_is_virginia %}
         <p><strong>Heliports:</strong> FAA Airports Feature Service records for operational private-use heliports.</p>
         <p><strong>Drone airspace:</strong> FAA UAS Facility Map, Class Airspace, Special Use Airspace, and National Security UAS Flight Restrictions feature services. Snapshot dates appear beside each layer. These are downloaded reference snapshots, not live restrictions or flight permissions.</p>
         <p><strong>Refresh reviews:</strong> Airspace weekly, heliports every 28 days, and test-facility specifications every 90 days. A snapshot date records retrieval, not operational verification. Updated datasets are checked before publication.</p>
         <p><strong>UAS test facilities:</strong> Published specifications from the Virginia Spaceport Authority, NASA Langley Research Center, and Virginia Tech.</p>
         <p><strong>MAAP flight areas:</strong> Three operator-supplied reference outlines imported October 2, 2026. Central Virginia is labeled draft; no Blackstone outline was supplied. <a href="{% url 'core:maap-reference' %}">Sources and reported conditions</a>. These outlines are not current flight authorization.</p>
+        {% else %}<p><strong>State inventory:</strong> A curated starter set, not an exhaustive inventory or a state ranking. Locality-level pins indicate the named locality, not a confirmed facility position. Virginia-specific overlays are not available for this state.</p>{% endif %}
       </div>
     </details>
     <section class="print-analysis-report" aria-label="Printable asset register">
@@ -135,7 +139,7 @@
                 <button class="button secondary" id="cancel-polygon" type="button">Cancel</button>
               </div>
             </fieldset>
-            <fieldset>
+            <fieldset{% if not regions %} hidden{% endif %}>
               <legend>Regional summary</legend>
               <label><span>Region</span><select id="summary-region">{% for region in regions %}<option value="{{ region.slug }}">{{ region.name }}</option>{% endfor %}</select></label>
               <button id="show-region-summary" type="button">Open summary</button>
@@ -149,19 +153,23 @@
           <div class="map-layer-options">
             <strong>Map data</strong>
             <label title="Show mapped asset points"><input id="asset-layer-toggle" type="checkbox" checked><span>Asset points</span></label>
-            <label title="Show the Virginia state boundary"><input id="state-boundary-toggle" type="checkbox" checked><span>Virginia boundary</span></label>
-            <label title="Shade COSOLVE's working Virginia ecosystem regions"><input id="region-layer-toggle" type="checkbox"><span>Ecosystem regions</span></label>
-            <label title="Show planning-candidate census tracts for the proposed federal Maritime Prosperity Zone program"><input id="mpz-layer-toggle" type="checkbox"><span>Potential MPZ tracts</span></label>
-            <label title="Show Virginia county and independent-city boundaries"><input id="county-layer-toggle" type="checkbox"><span>County boundaries</span></label>
-            <label title="Show FAA-recorded operational private-use heliports for reference"><input id="heliport-layer-toggle" type="checkbox"><span>FAA heliports{% include "includes/layer_freshness.html" with layer=layer_freshness.heliports %}</span></label>
+            <label title="Show the {{ inventory_state.name }} state boundary"><input id="state-boundary-toggle" type="checkbox" checked><span>{{ inventory_state.name }} boundary</span></label>
+            <div{% if not inventory_is_virginia %} hidden{% endif %} data-virginia-layers>
+            <label title="Shade COSOLVE's working Virginia ecosystem regions"><input id="region-layer-toggle" type="checkbox"{% if not inventory_is_virginia %} disabled data-unavailable-layer{% endif %}><span>Ecosystem regions</span></label>
+            <label title="Show planning-candidate census tracts for the proposed federal Maritime Prosperity Zone program"><input id="mpz-layer-toggle" type="checkbox"{% if not inventory_is_virginia %} disabled data-unavailable-layer{% endif %}><span>Potential MPZ tracts</span></label>
+            </div>
+            <label title="Show {{ inventory_state.name }} county boundaries"><input id="county-layer-toggle" type="checkbox"><span>County boundaries</span></label>
+            <div{% if not inventory_is_virginia %} hidden{% endif %} data-virginia-layers>
+            <label title="Show FAA-recorded operational private-use heliports for reference"><input id="heliport-layer-toggle" type="checkbox"{% if not inventory_is_virginia %} disabled data-unavailable-layer{% endif %}><span>FAA heliports{% include "includes/layer_freshness.html" with layer=layer_freshness.heliports %}</span></label>
             <strong>Drone airspace</strong>
-            <label title="Show FAA Class B, C, D, and surface Class E airspace"><input id="controlled-airspace-toggle" type="checkbox"><span>Surface controlled airspace{% include "includes/layer_freshness.html" with layer=layer_freshness.controlled_airspace %}</span></label>
-            <label title="Show FAA grid altitudes used to evaluate Part 107 airspace authorization requests"><input id="uas-facility-map-toggle" type="checkbox"><span>FAA authorization ceilings{% include "includes/layer_freshness.html" with layer=layer_freshness.uas_facility_map %}</span></label>
-            <label title="Show FAA national-security UAS restrictions and special-use airspace"><input id="flight-constraints-toggle" type="checkbox"><span>Flight constraints{% include "includes/layer_freshness.html" with layer=layer_freshness.flight_constraints %}</span></label>
+            <label title="Show FAA Class B, C, D, and surface Class E airspace"><input id="controlled-airspace-toggle" type="checkbox"{% if not inventory_is_virginia %} disabled data-unavailable-layer{% endif %}><span>Surface controlled airspace{% include "includes/layer_freshness.html" with layer=layer_freshness.controlled_airspace %}</span></label>
+            <label title="Show FAA grid altitudes used to evaluate Part 107 airspace authorization requests"><input id="uas-facility-map-toggle" type="checkbox"{% if not inventory_is_virginia %} disabled data-unavailable-layer{% endif %}><span>FAA authorization ceilings{% include "includes/layer_freshness.html" with layer=layer_freshness.uas_facility_map %}</span></label>
+            <label title="Show FAA national-security UAS restrictions and special-use airspace"><input id="flight-constraints-toggle" type="checkbox"{% if not inventory_is_virginia %} disabled data-unavailable-layer{% endif %}><span>Flight constraints{% include "includes/layer_freshness.html" with layer=layer_freshness.flight_constraints %}</span></label>
             <p class="layer-reference-note">Reference snapshots, not live flight permissions. <a href="https://www.faa.gov/uas/getting_started/where_can_i_fly" target="_blank" rel="noopener">Check current FAA guidance</a>.</p>
             <strong>Test infrastructure</strong>
-            <label title="Show Virginia UAS test facilities with published dimensions and operating constraints"><input id="uas-test-sites-toggle" type="checkbox"><span>UAS test facilities{% include "includes/layer_freshness.html" with layer=layer_freshness.uas_test_sites %}</span></label>
-            <label title="Show three MAAP-supplied reference outlines; Central Virginia is draft, not current flight authorization"><input id="maap-flight-areas-toggle" type="checkbox"><span>MAAP flight-area outlines{% include "includes/layer_freshness.html" with layer=layer_freshness.maap_flight_areas %}</span></label>
+            <label title="Show Virginia UAS test facilities with published dimensions and operating constraints"><input id="uas-test-sites-toggle" type="checkbox"{% if not inventory_is_virginia %} disabled data-unavailable-layer{% endif %}><span>UAS test facilities{% include "includes/layer_freshness.html" with layer=layer_freshness.uas_test_sites %}</span></label>
+            <label title="Show three MAAP-supplied reference outlines; Central Virginia is draft, not current flight authorization"><input id="maap-flight-areas-toggle" type="checkbox"{% if not inventory_is_virginia %} disabled data-unavailable-layer{% endif %}><span>MAAP flight-area outlines{% include "includes/layer_freshness.html" with layer=layer_freshness.maap_flight_areas %}</span></label>
+            </div>
             <strong>Point analysis</strong>
             <label title="Outline points by editorial review state"><input id="verification-layer-toggle" type="checkbox"><span>Verification status</span></label>
             <label title="Differentiate points by coordinate precision"><input id="precision-layer-toggle" type="checkbox"><span>Location precision</span></label>
@@ -177,7 +185,7 @@
             <span data-legend-toggle="asset-layer-toggle"><i class="legend-dot program" aria-hidden="true"><img src="{% static 'img/icons/legend/clipboard-list.svg' %}" alt=""></i>Program</span>
             <span data-legend-toggle="asset-layer-toggle"><i class="legend-dot infrastructure" aria-hidden="true"><img src="{% static 'img/icons/legend/construction.svg' %}" alt=""></i>Infrastructure</span>
             <span data-legend-toggle="asset-layer-toggle"><i class="legend-dot operating-environment" aria-hidden="true"><img src="{% static 'img/icons/legend/radar.svg' %}" alt=""></i>Operating environment</span>
-            <span data-legend-toggle="state-boundary-toggle"><i class="legend-line state-boundary"></i>Virginia boundary</span>
+            <span data-legend-toggle="state-boundary-toggle"><i class="legend-line state-boundary"></i>{{ inventory_state.name }} boundary</span>
             <span data-legend-toggle="county-layer-toggle" hidden><i class="legend-line county-boundary"></i>County boundary</span>
             <span data-legend-toggle="region-layer-toggle" hidden><i class="legend-region-fill"></i>Ecosystem region</span>
             <span data-legend-toggle="mpz-layer-toggle" hidden><i class="legend-mpz-fill"></i>Potential MPZ tract</span>
@@ -254,6 +262,6 @@
 </main>
 <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
 <script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
-  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20261105-1"></script>
+  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20261117-1"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}

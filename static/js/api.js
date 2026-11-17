@@ -1,5 +1,7 @@
+import { sitePath } from "./geography.js?v=20261117-1";
+
 export async function fetchAssets(searchParams, { signal } = {}) {
-  const response = await fetch(`/api/assets.geojson?${searchParams.toString()}`, {
+  const response = await fetch(sitePath(`/api/assets.geojson?${searchParams.toString()}`), {
     headers: { Accept: "application/geo+json" },
     cache: "no-store",
     signal,

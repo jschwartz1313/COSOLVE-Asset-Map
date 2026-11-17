@@ -14,6 +14,7 @@ from django.utils import timezone
 from django.views.decorators.http import require_http_methods, require_POST
 
 from apps.api.query import filter_public_assets
+from apps.assets.geography import current_state
 from apps.assets.models import Asset, AssetReviewComment, DuplicateCandidate
 from apps.assets.quality import sync_duplicate_candidates
 from apps.catalog.models import Region
@@ -125,6 +126,9 @@ def export_assets(request):
         )
     else:
         queryset = filter_public_assets(request.GET)
+    state = current_state.get()
+    if include_internal and state and state.code != "VA":
+        queryset = queryset.filter(state=state.code)
     for asset in queryset:
         writer.writerow(asset_csv_row(asset, include_internal=include_internal))
     return response
@@ -243,7 +247,7 @@ def data_quality(request):
         outgoing_count=Count("outgoing_relationships", distinct=True),
         incoming_count=Count("incoming_relationships", distinct=True),
     ).filter(outgoing_count=0, incoming_count=0)
-    outside_virginia = active_assets.filter(
+    outside_virginia = active_assets.filter(state="VA").filter(
         Q(latitude__lt=36.45)
         | Q(latitude__gt=39.65)
         | Q(longitude__lt=-83.75)

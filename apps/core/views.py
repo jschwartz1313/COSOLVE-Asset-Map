@@ -16,10 +16,12 @@ from django.views.decorators.http import require_POST
 from apps.api.query import filter_public_assets
 from apps.api.search import PUBLIC_NAME_ORDER
 from apps.assets.discovery import RESOURCE_CHOICES
+from apps.assets.geography import BY_CODE, BY_SLUG, current_state, scoped_regions
 from apps.assets.manufacturing import compare_manufacturing
 from apps.assets.models import Asset, SavedView
 from apps.assets.operator_review import get_public_operator_details
 from apps.assets.public_details import public_contact_details
+from apps.assets.scoping import public_region_slug
 from apps.assets.testing import (
     ACCESS_CHOICES,
     ACTIVITY_CHOICES,
@@ -49,9 +51,9 @@ DIRECTORY_ORDERING = {
 
 
 def filter_context():
-    regions = Region.objects.filter(is_active=True)
-    if settings.PUBLIC_REGION_SLUG:
-        regions = regions.filter(slug=settings.PUBLIC_REGION_SLUG)
+    regions = scoped_regions()
+    if public_region_slug():
+        regions = regions.filter(slug=public_region_slug())
     return {
         "record_types": Asset.RecordType.choices,
         "resource_choices": RESOURCE_CHOICES,
@@ -66,7 +68,32 @@ def filter_context():
 
 
 def connect(request):
-    return render(request, "core/connect.html")
+    return render(request, "core/connect.html", {"contact_assets": Asset.public.exclude(
+        contact_url=""
+    ).order_by(PUBLIC_NAME_ORDER)[:12]})
+
+
+def select_state(request):
+    state = BY_SLUG.get(request.GET.get("state", ""))
+    if not state:
+        raise Http404
+    if state.code != "VA" and not settings.MULTISTATE_PUBLIC and not (
+        request.user.is_active and request.user.is_staff
+        and request.user.has_perm("assets.view_asset")
+    ):
+        raise Http404
+    view = request.GET.get("view", "map")
+    if view not in {
+        "map", "directory", "test-sites", "manufacturing-search",
+        "asset-compare", "about-data", "region-compare",
+    }:
+        view = "map"
+    if (view == "region-compare" and state.code != "VA"
+            and not Region.objects.filter(state=state.code, is_active=True).exists()):
+        view = "map"
+    response = redirect(state.prefix + reverse(f"core:{view}", urlconf="config.urls"))
+    response["Cache-Control"] = "private, no-store"
+    return response
 
 
 def test_sites(request):
@@ -234,13 +261,15 @@ def saved_views(request):
     form = SavedViewForm(request.POST or None, initial=initial)
     if request.method == "POST" and form.is_valid():
         duplicate = request.user.saved_asset_views.filter(
-            name=form.cleaned_data["name"], view_type=form.cleaned_data["view_type"]
+            name=form.cleaned_data["name"], view_type=form.cleaned_data["view_type"],
+            state=getattr(request, "inventory_state", BY_CODE["VA"]).code,
         ).exists()
         if duplicate:
             form.add_error("name", "You already have a saved view with this name and type.")
         else:
             saved_view = form.save(commit=False)
             saved_view.owner = request.user
+            saved_view.state = getattr(request, "inventory_state", BY_CODE["VA"]).code
             saved_view.save()
             messages.success(request, f'Saved "{saved_view.name}".')
             return redirect("core:saved-views")
@@ -257,7 +286,8 @@ def open_saved_view(request, token):
         if not request.user.is_authenticated:
             return redirect(f"{reverse('account_login')}?{urlencode({'next': request.path})}")
         return render(request, "403.html", status=403)
-    destination = reverse(saved_view.destination_url_name())
+    state = BY_CODE.get(saved_view.state, BY_CODE["VA"])
+    destination = state.prefix + reverse(saved_view.destination_url_name(), urlconf="config.urls")
     if saved_view.query_string:
         destination = f"{destination}?{saved_view.query_string}"
     return redirect(destination)
@@ -332,9 +362,9 @@ def region_metrics(region):
 
 
 def region_compare(request):
-    if settings.PUBLIC_REGION_SLUG:
+    if public_region_slug():
         raise Http404
-    regions = list(Region.objects.filter(is_active=True))
+    regions = list(scoped_regions())
     if not regions:
         return render(
             request,
@@ -384,6 +414,9 @@ def about_data(request):
 
 
 def maap_reference(request):
+    state = current_state.get()
+    if state and state.code != "VA":
+        raise Http404
     reference = json.loads((settings.BASE_DIR / "data/maap_reference_2026_10_02.json").read_text())
     return render(request, "core/maap_reference.html", {"reference": reference})
 
@@ -393,6 +426,7 @@ def suggest_update(request, slug=None):
     form = UpdateSubmissionForm(request.POST or None, asset=asset)
     if request.method == "POST" and form.is_valid():
         submission = form.save(commit=False)
+        submission.state = getattr(request, "inventory_state", BY_CODE["VA"]).code
         if asset:
             submission.asset = asset
             submission.kind = submission.Kind.CORRECTION

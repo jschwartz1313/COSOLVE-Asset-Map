@@ -1,3 +1,4 @@
+from django.core.exceptions import ValidationError
 from django.db import models
 from django.utils.text import slugify
 
@@ -42,3 +43,13 @@ class MissionArea(TaxonomyBase):
 
 class Region(TaxonomyBase):
     region_type = models.CharField(max_length=80, blank=True)
+    state = models.CharField(max_length=2, default="VA", db_index=True)
+
+    def clean(self):
+        self.state = (self.state or "").strip().upper()
+        if self.pk and self.assets.exclude(state=self.state).exists():
+            raise ValidationError({"state": "This region has assets from another state."})
+
+    def save(self, *args, **kwargs):
+        self.state = self.state.strip().upper()
+        super().save(*args, **kwargs)

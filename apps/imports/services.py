@@ -294,6 +294,8 @@ def parse_csv(upload):
     valid_development_statuses = {value for value, _label in Asset.DevelopmentStatus.choices}
     for number, raw in enumerate(reader, start=2):
         row = {key: (value or "").strip() for key, value in raw.items() if key is not None}
+        if row.get("state"):
+            row["state"] = row["state"].upper()
         errors = []
         if None in raw:
             errors.append(
@@ -368,10 +370,13 @@ def parse_csv(upload):
             asset = Asset.objects.filter(slug=row["slug"]).first()
         if asset is None:
             asset = Asset.objects.filter(
-                name__iexact=row["name"], city__iexact=row.get("city", "")
+                name__iexact=row["name"], city__iexact=row.get("city", ""),
+                state__iexact=row.get("state") or "VA",
             ).first()
         asset_id = str(asset.pk) if asset else ""
-        identity = asset_id or (row["name"].casefold(), row.get("city", "").casefold())
+        identity = asset_id or (
+            row["name"].casefold(), row.get("city", "").casefold(), row.get("state") or "VA",
+        )
         if identity in seen_assets:
             errors.append("This asset occurs more than once in the CSV.")
         seen_assets.add(identity)

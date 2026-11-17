@@ -12,7 +12,7 @@
   <section class="data-stats" aria-label="Catalog summary">
     <div><strong>{{ asset_count }}</strong><span>listed assets</span></div>
     <div><strong>{{ source_count }}</strong><span>distinct public sources</span></div>
-    <div><strong>{{ region_count }}</strong><span>{% if public_scope_is_regional %}covered region{% else %}Virginia regions{% endif %}</span></div>
+    <div><strong>{{ region_count }}</strong><span>{% if public_scope_is_regional %}covered region{% else %}{{ inventory_state.name }} regions{% endif %}</span></div>
   </section>
   <div class="about-grid">
     <article>
