@@ -103,6 +103,8 @@ for review. Source-backed capability descriptions are not flight approval,
 facility availability or permission to enter a site.
 The release process runs the same guarded importer automatically; repeat releases
 preserve staff changes rather than resetting the inventories to the starter files.
+It adds only the predefined vocabulary terms needed by the new records when a
+Virginia-only database does not already contain them; existing terms are unchanged.
 
 `MULTISTATE_PUBLIC=false` is the default. Competitor routes require an active
 staff account with asset-view permission. Separately, starter records have internal

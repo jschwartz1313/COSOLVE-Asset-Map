@@ -1,6 +1,7 @@
 import os
 import re
 import subprocess
+import sys
 
 from django.conf import settings
 from django.core.management.base import BaseCommand, CommandError
@@ -38,7 +39,11 @@ class Command(BaseCommand):
                 )
                 return
             try:
-                subprocess.run(["bash", "release.sh"], cwd=settings.BASE_DIR, check=True)
+                subprocess.run(
+                    [sys.executable, "manage.py", "apply_release_steps"],
+                    cwd=settings.BASE_DIR,
+                    check=True,
+                )
             except subprocess.CalledProcessError as exc:
                 raise CommandError(
                     "Database release failed; completion was not recorded "

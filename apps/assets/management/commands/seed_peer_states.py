@@ -21,6 +21,12 @@ TAXONOMIES = {
     "capabilities": Capability,
     "missions": MissionArea,
 }
+# Existing vocabulary not used by the Virginia seed, so absent on a clean live database.
+ADDITIONAL_TAXONOMIES = {
+    "strategic_categories": ("Digital, data, energy, and communications infrastructure",),
+    "capabilities": ("Cybersecurity and resilient systems",),
+    "missions": ("Intelligence, surveillance, and reconnaissance", "Mine countermeasures"),
+}
 TEXT_FIELDS = (
     "name",
     "record_type",
@@ -91,6 +97,9 @@ class Command(BaseCommand):
             field: {item.name: item for item in model.objects.all()}
             for field, model in TAXONOMIES.items()
         }
+        for field, names in ADDITIONAL_TAXONOMIES.items():
+            for name in names:
+                taxonomies[field].setdefault(name, TAXONOMIES[field](name=name))
         references = json.loads((root / "locality_references.json").read_text())
         geocode_path = root / "address_geocodes.json"
         geocodes = {
@@ -226,9 +235,14 @@ class Command(BaseCommand):
             if options["apply"]:
                 asset.save()
                 for field in TAXONOMIES:
-                    getattr(asset, field).set(
-                        taxonomies[field][name] for name in record.get(field, [])
-                    )
+                    selected = []
+                    for name in record.get(field, []):
+                        item = taxonomies[field][name]
+                        if item.pk is None:
+                            item, _created = TAXONOMIES[field].objects.get_or_create(name=name)
+                            taxonomies[field][name] = item
+                        selected.append(item)
+                    getattr(asset, field).set(selected)
                 for source in source_rows:
                     source.asset = asset
                     source.save()

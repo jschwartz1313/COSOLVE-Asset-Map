@@ -12,7 +12,7 @@ from django.urls import reverse
 from apps.assets.geography import STATES, current_state, internal_preview
 from apps.assets.models import Asset, SavedView, UpdateSubmission
 from apps.assets.quality import discover_duplicate_candidates
-from apps.catalog.models import Region
+from apps.catalog.models import Capability, MissionArea, Region, StrategicCategory
 from apps.imports.services import parse_csv
 
 
@@ -208,6 +208,33 @@ class MultiStateTests(TestCase):
 
 
 class PeerImportTests(TestCase):
+    def test_missing_predefined_peer_vocabulary_is_created_only_when_applying(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "peer.json"
+            record = {
+                "state": "OH", "name": "Peer vocabulary fixture", "record_type": "facility",
+                "short_description": "Research fixture", "unmanned_systems_relevance": "Testing",
+                "strategic_categories": [
+                    "Digital, data, energy, and communications infrastructure",
+                ],
+                "capabilities": ["Cybersecurity and resilient systems"],
+                "missions": ["Intelligence, surveillance, and reconnaissance",
+                             "Mine countermeasures"],
+                "sources": [{"title": "Research", "url": "https://example.edu/research/",
+                             "supports": "Identity and research capability"}],
+            }
+            path.write_text(json.dumps({"research_date": "2026-11-17", "records": [record]}))
+            call_command("seed_peer_states", catalog=[path], stdout=io.StringIO())
+            for model in (StrategicCategory, Capability, MissionArea):
+                self.assertFalse(model.objects.exists())
+            call_command("seed_peer_states", catalog=[path], apply=True, stdout=io.StringIO())
+            asset = Asset.objects.get()
+            self.assertEqual(list(asset.strategic_categories.values_list("name", flat=True)),
+                             record["strategic_categories"])
+            self.assertEqual(list(asset.capabilities.values_list("name", flat=True)),
+                             record["capabilities"])
+            self.assertCountEqual(asset.missions.values_list("name", flat=True), record["missions"])
+
     def test_virginia_catalog_does_not_match_another_states_identity(self):
         peer = Asset.objects.create(
             name="Shared research name", city="Springfield", state="OH", record_type="facility",

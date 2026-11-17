@@ -2,6 +2,7 @@
 set -euo pipefail
 
 # Run only after the build succeeds, before serving the new application.
+# Production reads these simple commands with apply_release_steps to reuse one Django process.
 python manage.py migrate --noinput
 python manage.py setup_staff_roles
 python manage.py seed_real_data --add-missing
