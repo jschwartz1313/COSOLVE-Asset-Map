@@ -26,8 +26,12 @@ class Command(BaseCommand):
         # The lock survives child processes and is released even if a release fails.
         postgres = connection.vendor == "postgresql"
         if postgres:
+            self.stdout.write("Waiting for the database release lock.")
+            self.stdout.flush()
             with connection.cursor() as cursor:
                 cursor.execute("SELECT pg_advisory_lock(%s)", [RELEASE_LOCK])
+            self.stdout.write("Database release lock acquired.")
+            self.stdout.flush()
         try:
             table_exists = CompletedRelease._meta.db_table in connection.introspection.table_names()
             if (
@@ -40,7 +44,7 @@ class Command(BaseCommand):
                 return
             try:
                 subprocess.run(
-                    [sys.executable, "manage.py", "apply_release_steps"],
+                    [sys.executable, "-u", "manage.py", "apply_release_steps"],
                     cwd=settings.BASE_DIR,
                     check=True,
                 )

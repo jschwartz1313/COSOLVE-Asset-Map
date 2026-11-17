@@ -86,6 +86,8 @@ class Command(BaseCommand):
         if not paths:
             raise CommandError("No peer starter catalogs were found.")
         records = load_records(paths)
+        self.stdout.write(f"Checking {len(records)} peer starter records.")
+        self.stdout.flush()
         states = {record["state"] for record, _checked in records}
         identities = {
             (state, name.strip().casefold())
@@ -248,6 +250,11 @@ class Command(BaseCommand):
                     source.save()
             slugs.add(slug)
             created += 1
+            if options["apply"] and created % 50 == 0:
+                self.stdout.write(
+                    f"Peer import progress: {created} records prepared in transaction."
+                )
+                self.stdout.flush()
         mode = "Inserted" if options["apply"] else "Would insert"
         self.stdout.write(
             f"{mode} {created} internal peer assets; preserved {skipped}; "

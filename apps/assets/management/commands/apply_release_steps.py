@@ -31,4 +31,5 @@ class Command(BaseCommand):
         steps = release_steps(settings.BASE_DIR / "release.sh")
         for command, *arguments in steps:
             self.stdout.write(f"Release step: {command}")
+            self.stdout.flush()
             call_command(command, *arguments, stdout=self.stdout, stderr=self.stderr)
