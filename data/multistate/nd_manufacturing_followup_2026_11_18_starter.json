@@ -1,0 +1,1378 @@
+{
+  "research_date": "2026-11-18",
+  "states": [
+    "ND"
+  ],
+  "records": [
+    {
+      "state": "ND",
+      "name": "Appareo Aviation - Fargo avionics engineering and manufacturing",
+      "record_type": "facility",
+      "city": "Fargo",
+      "address_line": "1810 NDSU Research Circle North",
+      "postal_code": "58102",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://appareo.com/contact/",
+      "location_notes": "Current Appareo Aviation contact address. The company's certificate also identifies 1810/1830 NDSU Research Circle N as its main site; retained as one operation, not two assets.",
+      "website_url": "https://appareo.com/",
+      "short_description": "Fargo avionics engineering and manufacturing operation offering flight-data monitoring, aircraft communications and ADS-B products; currently an Ontic division.",
+      "overview": "Appareo Aviation designs and manufactures aviation electronics from Fargo. Its current contact page identifies the business as a division of Ontic Engineering and Manufacturing, Inc.",
+      "unmanned_systems_relevance": "Supporting aviation-electronics engineering and production capability. The sources establish avionics products, not a fielded unmanned aircraft or an autonomous-aircraft production line at this site.",
+      "contact_url": "https://appareo.com/contact/",
+      "contact_email": "",
+      "contact_phone": "701-356-2200",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration",
+        "Command, control, and communications"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Appareo Aviation contact and ownership",
+          "url": "https://appareo.com/contact/",
+          "supports": "Current Fargo address, business telephone, aviation product navigation and Ontic division identity."
+        },
+        {
+          "title": "Appareo company capabilities",
+          "url": "https://appareo.com/about/",
+          "supports": "Electronics design, engineering and manufacturing business."
+        },
+        {
+          "title": "Appareo main-site certificate, issued 2024",
+          "url": "https://appareo.com/wp-content/uploads/2024/05/0076926-04-Appareo-Systems_RR-TW-1.pdf",
+          "supports": "Fargo main-site addresses and electronics/software design, testing and manufacturing scope; document expires June 2027."
+        }
+      ],
+      "research_notes": "Current aviation operation only. Historical Appareo Systems and AGCO acquisition references are not treated as additional companies or proof of a distinct current agricultural-autonomy factory. Certificate is location/scope evidence, not a new editorial verification stamp."
+    },
+    {
+      "state": "ND",
+      "name": "Cirrus - Grand Forks composite aircraft-parts manufacturing",
+      "record_type": "facility",
+      "city": "Grand Forks",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "manufacturing",
+      "location_source_url": "https://cirrusaircraft.com/nl/story/cirrus-expands-grand-forks/",
+      "location_notes": "Company's August 2026 opening announcement establishes an operating Grand Forks composites facility. No street address or coordinates assigned from unconfirmed directory leads.",
+      "website_url": "https://cirrusaircraft.com/",
+      "short_description": "Grand Forks plant producing composite aircraft parts, with an expanded manufacturing facility opened in August 2026.",
+      "overview": "Cirrus documents composite-parts production, engineering and CNC machining at its Grand Forks operation. Its August 2026 announcement distinguishes existing SR Series/Vision Jet support from planned TRAC10 composites work.",
+      "unmanned_systems_relevance": "Supporting aerospace-composites production and engineering workforce. No UAS airframe production, third-party fabrication access or autonomous-aircraft capability is established.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Cirrus expands Grand Forks manufacturing facility, August 14 2026",
+          "url": "https://cirrusaircraft.com/nl/story/cirrus-expands-grand-forks/",
+          "supports": "Expanded facility opened in Grand Forks; current composite-parts production, engineering and CNC machining; TRAC10 composite manufacturing described prospectively."
+        }
+      ],
+      "research_notes": "One manufacturing operation including its expansion, not an additional asset for the expanded floor area. Supporting manned-aircraft manufacturing; future TRAC10 work not represented as current output."
+    },
+    {
+      "state": "ND",
+      "name": "CNH / Case IH - Fargo tractor and wheel-loader plant",
+      "record_type": "facility",
+      "city": "Fargo",
+      "address_line": "3401 1st Avenue",
+      "postal_code": "58102",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.caseih.com/en-us/unitedstates/connect-with-us/plant-tours",
+      "location_notes": "Manufacturer publishes this Fargo plant address. No unstated street-direction suffix added.",
+      "website_url": "https://www.caseih.com/en-us/unitedstates/connect-with-us/plant-tours",
+      "short_description": "Fargo manufacturing operation producing Case IH Steiger wheeled and Quadtrac tractors and Case G Series wheel loaders.",
+      "overview": "Case IH's current plant information identifies Fargo production of Steiger tractors and Case wheel loaders at a physical manufacturing site.",
+      "unmanned_systems_relevance": "Supporting heavy ground-vehicle manufacturing ecosystem. These product and location sources do not establish that the plant produces autonomous versions or unmanned vehicles.",
+      "contact_url": "https://www.caseih.com/en-us/unitedstates/connect-with-us/plant-tours",
+      "contact_email": "",
+      "contact_phone": "877-422-7344",
+      "test_access": "Company lists plant tours by advance request and confirmation. A tour is not permission to conduct vehicle or autonomy tests.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [
+        "Agriculture and natural resources"
+      ],
+      "sources": [
+        {
+          "title": "Case IH Fargo manufacturing plant and visit information",
+          "url": "https://www.caseih.com/en-us/unitedstates/connect-with-us/plant-tours",
+          "supports": "Fargo production mix, plant street address, customer-relations number and advance-confirmation requirements for tours."
+        }
+      ],
+      "research_notes": "Internal public-source staff preview. Supporting technical or manufacturing capability only; no unreported unmanned customers, autonomous production allocation, external access rights or operating authorization inferred."
+    },
+    {
+      "state": "ND",
+      "name": "Bobcat - Gwinner manufacturing facility",
+      "record_type": "facility",
+      "city": "Gwinner",
+      "address_line": "210 1st Ave NE",
+      "postal_code": "58040",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.bobcat.com/na/en/company/locations",
+      "location_notes": "Published industrial site or business address, not an operating boundary or public test-access offer.",
+      "website_url": "https://www.bobcat.com/na/en/company/locations",
+      "short_description": "Gwinner production complex for loaders, utility work machines and attachments.",
+      "overview": "Physical Bobcat production site, distinct from the existing West Fargo headquarters asset.",
+      "unmanned_systems_relevance": "Supporting ground-equipment production capability; autonomous-model production is not established for this plant.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "701-678-6363",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Bobcat locations - Gwinner",
+          "url": "https://www.bobcat.com/na/en/company/locations",
+          "supports": "Distinct plant, production function, address and telephone."
+        },
+        {
+          "title": "Bobcat Bismarck and Gwinner manufacturing-site investment, May 2024",
+          "url": "https://www.bobcat.com/na/en/company/news-media/press-releases/bobcat-facilities-install-hyaxiom-stationary-fuel-cells",
+          "supports": "Separate operating manufacturing facilities in Gwinner and Bismarck, distinct from the West Fargo headquarters."
+        }
+      ],
+      "research_notes": "Internal public-source staff preview. Supporting technical or manufacturing capability only; no unreported unmanned customers, autonomous production allocation, external access rights or operating authorization inferred."
+    },
+    {
+      "state": "ND",
+      "name": "Bobcat - Wahpeton hydraulic-component manufacturing",
+      "record_type": "facility",
+      "city": "Wahpeton",
+      "address_line": "2101 11th St N",
+      "postal_code": "58075",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.bobcat.com/na/en/company/locations",
+      "location_notes": "Published industrial site or business address, not an operating boundary or public test-access offer.",
+      "website_url": "https://www.bobcat.com/na/en/company/locations",
+      "short_description": "Wahpeton hydraulic-component plant serving compact equipment.",
+      "overview": "Documented component-production site, not the West Fargo headquarters or Gwinner assembly site.",
+      "unmanned_systems_relevance": "Supporting ground-vehicle component supply; no autonomy-specific production claimed.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Bobcat locations - Wahpeton",
+          "url": "https://www.bobcat.com/na/en/company/locations",
+          "supports": "Hydraulic-component manufacturing and distinct address."
+        }
+      ],
+      "research_notes": "Internal public-source staff preview. Supporting technical or manufacturing capability only; no unreported unmanned customers, autonomous production allocation, external access rights or operating authorization inferred."
+    },
+    {
+      "state": "ND",
+      "name": "Bobcat - Bismarck manufacturing facility",
+      "record_type": "facility",
+      "city": "Bismarck",
+      "address_line": "521 S 22nd St",
+      "postal_code": "58504",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.bobcat.com/na/en/company/locations",
+      "location_notes": "Published industrial site or business address, not an operating boundary or public test-access offer.",
+      "website_url": "https://www.bobcat.com/na/en/company/locations",
+      "short_description": "Bismarck excavator manufacturing and aftermarket-parts site.",
+      "overview": "Factory separately documented from the Bismarck Acceleration Center and West Fargo headquarters.",
+      "unmanned_systems_relevance": "Supporting ground-equipment production; no autonomous excavator line inferred.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Bobcat locations - Bismarck factory",
+          "url": "https://www.bobcat.com/na/en/company/locations",
+          "supports": "Factory function and distinct address."
+        },
+        {
+          "title": "Bobcat North Dakota factory investments, May 2024",
+          "url": "https://www.bobcat.com/na/en/company/news-media/press-releases/bobcat-facilities-install-hyaxiom-stationary-fuel-cells",
+          "supports": "Bismarck production facility and paint-line operations; separate from Gwinner and headquarters."
+        }
+      ],
+      "research_notes": "Internal public-source staff preview. Supporting technical or manufacturing capability only; no unreported unmanned customers, autonomous production allocation, external access rights or operating authorization inferred."
+    },
+    {
+      "state": "ND",
+      "name": "Bobcat - Bismarck Acceleration Center",
+      "record_type": "facility",
+      "city": "Bismarck",
+      "address_line": "3901 Morrison Ave",
+      "postal_code": "58504",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "research",
+      "location_source_url": "https://www.bobcat.com/na/en/company/locations",
+      "location_notes": "Published industrial site or business address, not an operating boundary or public test-access offer.",
+      "website_url": "https://www.bobcat.com/na/en/company/locations",
+      "short_description": "Compact-equipment development, prototype engineering, software and product-testing center.",
+      "overview": "Distinct engineering and test location, rather than a second record for the nearby factory.",
+      "unmanned_systems_relevance": "Supporting vehicle R&D; no particular autonomous program assigned to this site.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Research and technical depth"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Testing, evaluation, verification, and validation",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Bobcat locations - Acceleration Center",
+          "url": "https://www.bobcat.com/na/en/company/locations",
+          "supports": "Engineering/test functions and address."
+        }
+      ],
+      "research_notes": "Internal public-source staff preview. Supporting technical or manufacturing capability only; no unreported unmanned customers, autonomous production allocation, external access rights or operating authorization inferred."
+    },
+    {
+      "state": "ND",
+      "name": "Elinor Coatings - Fargo protective-materials research",
+      "record_type": "organization",
+      "city": "Fargo",
+      "address_line": "1805 NDSU Research Park Dr N",
+      "postal_code": "58102",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "research",
+      "location_source_url": "https://www.elinorcoatings.com/contact",
+      "location_notes": "Published industrial site or business address, not an operating boundary or public test-access offer.",
+      "website_url": "https://www.elinorcoatings.com/aerospace",
+      "short_description": "Fargo coatings developer researching corrosion protection and extreme-environment materials for aerospace, maritime and ground applications.",
+      "overview": "Elinor documents Fargo research operations and aerospace coatings development, including alternatives to chromate-based corrosion protection.",
+      "unmanned_systems_relevance": "Supporting protective-materials R&D relevant to durable airframes and equipment. No specific UAS coating qualification, unmanned customer or production throughput is inferred.",
+      "contact_url": "https://www.elinorcoatings.com/contact",
+      "contact_email": "",
+      "contact_phone": "701-499-3635",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers",
+        "Research and technical depth",
+        "Manufacturing and supply chain"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Elinor aerospace coatings",
+          "url": "https://www.elinorcoatings.com/aerospace",
+          "supports": "Fargo-based protective-coatings development and aerospace application rationale."
+        },
+        {
+          "title": "Elinor contact",
+          "url": "https://www.elinorcoatings.com/contact",
+          "supports": "Published Fargo research-park address and business telephone."
+        },
+        {
+          "title": "Elinor company testimony, January 2025",
+          "url": "https://ndlegis.gov/assembly/69-2025/testimony/SWKF-2256-20250131-33087-F-ANDERSON_HOLLY.pdf",
+          "supports": "Company's original account of North Dakota materials research and aerospace, maritime and ground-vehicle applications."
+        }
+      ],
+      "research_notes": "Aurora Center branding is not split into a separate physical asset. Potential robotics/AI collaboration described in testimony is not treated as an installed production system."
+    },
+    {
+      "state": "ND",
+      "name": "Applied Engineering - Fargo embedded-control and automation engineering",
+      "record_type": "organization",
+      "city": "Fargo",
+      "address_line": "3300 Fiechtner Drive South",
+      "postal_code": "58103",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_source_url": "https://www.go-applied.com/contact-us/",
+      "location_notes": "Published industrial site or business address, not an operating boundary or public test-access offer.",
+      "website_url": "https://www.go-applied.com/solutions/engineering-services/electrical-design/",
+      "short_description": "Fargo engineering provider offering embedded controllers, vehicle electronics, PLC automation, sensor integration and hardware-in-loop development services.",
+      "overview": "Applied's current electrical-design services cover firmware, CAN-bus integration, controls, power electronics and manufacturing automation. Its contact directory publishes a Fargo office.",
+      "unmanned_systems_relevance": "Supporting embedded-control and systems-integration provider. Capabilities are company service offerings, not proof of a dedicated Fargo UAS product, flight site or particular customer project.",
+      "contact_url": "https://www.go-applied.com/contact-us/engineering-services/",
+      "contact_email": "",
+      "contact_phone": "701-281-1884",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers",
+        "Research and technical depth"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Testing, evaluation, verification, and validation",
+        "Perception, sensing, and sensor fusion",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Applied Engineering electrical design",
+          "url": "https://www.go-applied.com/solutions/engineering-services/electrical-design/",
+          "supports": "Vehicle electronics, PLC/control-panel engineering, embedded firmware, sensor integration and hardware-in-loop testing."
+        },
+        {
+          "title": "Applied Engineering current office directory",
+          "url": "https://www.go-applied.com/contact-us/",
+          "supports": "Fargo office street address, postal code and telephone."
+        },
+        {
+          "title": "Applied Engineering forty-year company account, February 2026",
+          "url": "https://www.go-applied.com/2026/02/19/40-years-of-applied-engineering-a-legacy-of-service-dependability-and-adaptability/",
+          "supports": "Current engineering-services business and Fargo presence; historical resale division sold in 2022."
+        }
+      ],
+      "research_notes": "One provider record anchored to Fargo, not separate records for every regional office or service discipline. Current services distinguished from historical software resale."
+    },
+    {
+      "state": "ND",
+      "name": "ComDel Innovation - Wahpeton automated assembly and machine building",
+      "record_type": "facility",
+      "city": "Wahpeton",
+      "address_line": "2100 15th Street North",
+      "postal_code": "58075",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://comdelinnovation.com/contact-us/",
+      "location_notes": "Published industrial site or business address, not an operating boundary or public test-access offer.",
+      "website_url": "https://comdelinnovation.com/",
+      "short_description": "Wahpeton contract manufacturer combining precision machining, molding, automated assembly, tooling and custom machine-building capabilities.",
+      "overview": "ComDel identifies a Wahpeton production operation. NIST's manufacturing-extension case documents automated assembly, robotics and machine builds alongside conventional manufacturing services.",
+      "unmanned_systems_relevance": "Supporting robotic-production and contract-manufacturing capability. This is not evidence of an unmanned-vehicle product line or an installed autonomous mobile robot from a grant announcement.",
+      "contact_url": "https://comdelinnovation.com/contact-us/",
+      "contact_email": "",
+      "contact_phone": "701-671-6060",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "ComDel company and production operation",
+          "url": "https://comdelinnovation.com/who-we-are/",
+          "supports": "Wahpeton manufacturing operation, engineering and production resources."
+        },
+        {
+          "title": "ComDel contact",
+          "url": "https://comdelinnovation.com/contact-us/",
+          "supports": "Published production-operation address and telephone."
+        },
+        {
+          "title": "NIST MEP ComDel manufacturing case",
+          "url": "https://ws680.nist.gov/mepmeis/ss.ashx?SSID=6298",
+          "supports": "Wahpeton machining, molding, automated assembly, robotics and machine-building capabilities."
+        }
+      ],
+      "research_notes": "Combined manufacturing operation retained as one asset rather than splitting buildings or processes. Subsequent automation grant awards are not treated as proof that funded equipment is commissioned."
+    },
+    {
+      "state": "ND",
+      "name": "Dakota Micro - Cayuga rugged-camera and cable manufacturing",
+      "record_type": "facility",
+      "city": "Cayuga",
+      "address_line": "8659 148 1/2 Ave SE",
+      "postal_code": "58013",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://dakotamicro.com/contact-us/",
+      "location_notes": "Current contact/returns address; the company's product manual identifies shipments to the same factory. Fractional avenue retained in ASCII, not rounded to 148th Avenue.",
+      "website_url": "https://dakotamicro.com/oem-capabilities/",
+      "short_description": "Cayuga manufacturer of rugged vehicle-camera systems, custom cable assemblies and related OEM electronics.",
+      "overview": "Dakota Micro describes North Dakota production of its camera and cable products and OEM work for demanding agricultural, construction and other vehicle environments.",
+      "unmanned_systems_relevance": "Supporting rugged sensing-hardware and electrical-interconnect production. Vehicle-viewing cameras are not represented as autonomous perception software or UAS-qualified payloads.",
+      "contact_url": "https://dakotamicro.com/contact-us/",
+      "contact_email": "",
+      "contact_phone": "701-538-4403",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Dakota Micro OEM manufacturing capabilities",
+          "url": "https://dakotamicro.com/oem-capabilities/",
+          "supports": "North Dakota camera/cable manufacturing, electronics assembly and custom OEM capabilities."
+        },
+        {
+          "title": "Dakota Micro contact",
+          "url": "https://dakotamicro.com/contact-us/",
+          "supports": "Current Cayuga address and business telephone."
+        },
+        {
+          "title": "Dakota Micro AG-H9QR2 manual, March 2024 revision",
+          "url": "https://dakotamicro.com/agco/wp-content/uploads/2024/08/UserMan-AG-H9QR2-V3.3-03_19_24.pdf",
+          "supports": "Same physical factory address in product service/repair instructions."
+        }
+      ],
+      "research_notes": "Internal public-source staff preview. Supporting technical or manufacturing capability only; no unreported unmanned customers, autonomous production allocation, external access rights or operating authorization inferred."
+    },
+    {
+      "state": "ND",
+      "name": "Killdeer Mountain Manufacturing - Dickinson aerospace harness plant",
+      "record_type": "facility",
+      "city": "Dickinson",
+      "address_line": "1700 I-94 Business Loop East",
+      "postal_code": "58601",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.kmmnorthdakota.com/locations/",
+      "location_notes": "Street address and site function come from the company's retained 2016 location page. The state's September 2026 transparency report separately lists the Dickinson operation; no newer street-address source found.",
+      "website_url": "https://www.kmmnorthdakota.com/locations/",
+      "short_description": "Dickinson aerospace electrical-harness and fiber-optic production operation, distinct from KMM's Killdeer circuit-card site.",
+      "overview": "KMM identifies Dickinson with commercial/military aerospace harnesses, fiber optics and R&D. A recent state primary-sector report separately lists its Dickinson and Killdeer operations.",
+      "unmanned_systems_relevance": "Supporting aerospace interconnect manufacturing. Sources do not identify a particular unmanned platform, current unmanned contract or external test-access offer.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "701-483-5623",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "KMM company locations and production functions",
+          "url": "https://www.kmmnorthdakota.com/locations/",
+          "supports": "Dickinson street address, telephone, aerospace harness/fiber-optic manufacturing and R&D; page dated January 2016."
+        },
+        {
+          "title": "North Dakota primary-sector transparency report, September 2026 generation date",
+          "url": "https://www.commerce.nd.gov/sites/default/files/documents/Services%20and%20Assistance/Transparency/2025/Transparency%20Primary%20Sector%20Certifications.pdf",
+          "supports": "Separate Dickinson and Killdeer entries with April 2028 expiration; corroborates recent local business presence, not flight or product approval."
+        }
+      ],
+      "research_notes": "Dated company address disclosed rather than silently presented as newly published. Separate manufacturing functions and cities justify two KMM site records; no legacy out-of-state sites included."
+    },
+    {
+      "state": "ND",
+      "name": "Killdeer Mountain Manufacturing - Killdeer circuit-card plant",
+      "record_type": "facility",
+      "city": "Killdeer",
+      "address_line": "233 Rodeo Drive",
+      "postal_code": "58640",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.kmmnorthdakota.com/locations/",
+      "location_notes": "Company's retained 2016 location page supplies this plant address. Current city-level presence is corroborated by the September 2026 state report; no newer company street-address publication found.",
+      "website_url": "https://www.kmmnorthdakota.com/locations/",
+      "short_description": "Killdeer commercial/military aerospace and defense circuit-card assembly site, separately documented from KMM Dickinson.",
+      "overview": "The company assigns aerospace and defense circuit-card assembly to Killdeer. The recent state primary-sector report lists Killdeer separately from Dickinson.",
+      "unmanned_systems_relevance": "Supporting aerospace electronics production. No unmanned-system customer, product qualification or autonomous assembly capability is inferred.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "701-764-5651",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "KMM company locations - Killdeer",
+          "url": "https://www.kmmnorthdakota.com/locations/",
+          "supports": "Killdeer address, telephone and circuit-card assembly function; company page dated January 2016."
+        },
+        {
+          "title": "North Dakota primary-sector transparency report",
+          "url": "https://www.commerce.nd.gov/sites/default/files/documents/Services%20and%20Assistance/Transparency/2025/Transparency%20Primary%20Sector%20Certifications.pdf",
+          "supports": "Recent separate Killdeer/Dunn County business entry; administrative certification is not an operating or flight authorization."
+        }
+      ],
+      "research_notes": "Dated street-address evidence explicitly retained. This is the Killdeer factory, not a second organization or a renamed acquisition."
+    },
+    {
+      "state": "ND",
+      "name": "Collins Aerospace - Jamestown cargo-systems MRO operation",
+      "record_type": "facility",
+      "city": "Jamestown",
+      "address_line": "2604 Hwy 20 N",
+      "postal_code": "58401",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "",
+      "location_source_url": "https://prd-sc102-cdn.rtx.com/-/media/ca/support/interiors/collins-aerospace-interiors-mro-capability-list.pdf?hash=29529EE28E5C52C0EA15039B5C071167&rev=a65aa3422af44782adae7c3da4564d1e",
+      "location_notes": "Company capability directory combines 2604 Hwy 20 N and 1807 13th St NE under Jamestown cargo systems. Retained as one local technical operation, not two plants. Location role left blank because the evidence establishes component MRO rather than a particular manufacturing, office or research function.",
+      "website_url": "https://www.collinsaerospace.com/",
+      "short_description": "Jamestown aerospace cargo-systems maintenance, repair and overhaul operation identified in Collins' current Interiors capability directory.",
+      "overview": "Collins' own MRO capability list identifies its Jamestown cargo-systems operation, physical addresses and a dedicated business inquiry email.",
+      "unmanned_systems_relevance": "Supporting aerospace component-maintenance expertise. This record does not establish unmanned cargo-aircraft integration or manufacture of autonomous products at the listed site.",
+      "contact_url": "",
+      "contact_email": "Jmstown.MRO@collins.com",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers",
+        "Manufacturing and supply chain"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Collins Aerospace Interiors MRO capability list",
+          "url": "https://prd-sc102-cdn.rtx.com/-/media/ca/support/interiors/collins-aerospace-interiors-mro-capability-list.pdf?hash=29529EE28E5C52C0EA15039B5C071167&rev=a65aa3422af44782adae7c3da4564d1e",
+          "supports": "Jamestown cargo-systems MRO capability, published physical addresses and dedicated public business email."
+        }
+      ],
+      "research_notes": "Conservative MRO-only description based on current company evidence. No independent certification assessment or assumed production allocation from regional promotional descriptions."
+    },
+    {
+      "state": "ND",
+      "name": "Korber Pharma - Fargo handling and packaging automation manufacturing",
+      "record_type": "facility",
+      "city": "Fargo",
+      "address_line": "969 34th Street North",
+      "postal_code": "58102",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.koerber.com/en/contact/global-contacts",
+      "location_notes": "Published industrial site or business address, not an operating boundary or public test-access offer.",
+      "website_url": "https://www.koerber-pharma.com/",
+      "short_description": "Fargo custom handling and packaging machine builder, the current Korber operation rather than a separate legacy Fargo Automation listing.",
+      "overview": "Korber publishes a Fargo handling-and-packaging operation and address. Its own expansion account and NIST manufacturing case document local machinery engineering and production.",
+      "unmanned_systems_relevance": "Supporting industrial-automation machinery and integration expertise. The documented packaging systems are not unmanned aircraft or autonomous ground vehicles.",
+      "contact_url": "https://www.koerber.com/en/contact/global-contacts",
+      "contact_email": "info.handling@koerber-pharma.com",
+      "contact_phone": "701-232-1780",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Korber current global contacts - Fargo",
+          "url": "https://www.koerber.com/en/contact/global-contacts",
+          "supports": "Fargo Handling & Packaging address, telephone and public business email."
+        },
+        {
+          "title": "Korber Fargo production expansion",
+          "url": "https://www.koerber-pharma.com/en/about-us/press/on-course-for-growth-koerber-expands-production-area-for-handling-and-packaging-solutions-in-north-america",
+          "supports": "Fargo handling/packaging machinery manufacturing and engineering operation; 2021 expansion context."
+        },
+        {
+          "title": "NIST MEP Korber manufacturing case, 2022",
+          "url": "https://www.nist.gov/mep/successstories/2022/iso9001-certification-korber-breaks-barriers-entry-new-customers",
+          "supports": "Fargo manufacturing and automation-machinery business."
+        }
+      ],
+      "research_notes": "Korber spelling normalized to ASCII. Fargo Automation/AFAST history not counted as separate assets. Historical multi-building expansion and future consolidation plans do not establish three current distinct sites."
+    },
+    {
+      "state": "ND",
+      "name": "PharmaMed - Fargo custom automation engineering and machine building",
+      "record_type": "facility",
+      "city": "Fargo",
+      "address_line": "2402 8th Ave N",
+      "postal_code": "58102",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://pharmamedinc.com/facility/",
+      "location_notes": "Published industrial site or business address, not an operating boundary or public test-access offer.",
+      "website_url": "https://pharmamedinc.com/",
+      "short_description": "Fargo engineering and machine-building facility developing custom factory automation, including robotic packaging equipment.",
+      "overview": "PharmaMed documents a Fargo facility for engineering, equipment assembly and testing. Its product catalog includes a robotic syringe de-nester, establishing actual robotics rather than a generic medical-business connection.",
+      "unmanned_systems_relevance": "Supporting factory-robotics engineering and integration capability. Medical packaging machinery is not represented as a mobile autonomous system or evidence of unmanned-vehicle production.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "PharmaMed Fargo facility",
+          "url": "https://pharmamedinc.com/facility/",
+          "supports": "Physical Fargo address, engineering, assembly and equipment-testing facility."
+        },
+        {
+          "title": "PharmaMed company",
+          "url": "https://pharmamedinc.com/about/",
+          "supports": "Custom automation equipment engineering and manufacturing business."
+        },
+        {
+          "title": "PharmaMed robotic syringe de-nester",
+          "url": "https://pharmamedinc.com/products/robotic-syringe-de-nester/",
+          "supports": "Current company robotic-packaging equipment offering; no unverified payload, autonomy or throughput claims retained."
+        }
+      ],
+      "research_notes": "Actual automation machine builder, not a medical-only research institution. Vektor Designs partner references do not establish another separately located North Dakota provider."
+    },
+    {
+      "state": "ND",
+      "name": "Industrial Automation & Communication Systems - Williston panel shop",
+      "record_type": "facility",
+      "city": "Williston",
+      "address_line": "2644 1st Ave E",
+      "postal_code": "58801",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://ind-acs.com/about-us/",
+      "location_notes": "Published industrial site or business address, not an operating boundary or public test-access offer.",
+      "website_url": "https://ind-acs.com/",
+      "short_description": "Williston control-system and panel-building operation within Triangle Electric's Industrial Automation & Communication Systems division.",
+      "overview": "The division documents an expanded Williston panel shop staffed for automation engineering, variable-frequency-drive systems and industrial communications.",
+      "unmanned_systems_relevance": "Supporting industrial-control fabrication and integration. PLC/SCADA capability is not evidence of unmanned flight or mobile-robot autonomy.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "701-572-6783",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Command, control, and communications",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Industrial Automation division - Williston and Minot shops",
+          "url": "https://ind-acs.com/about-us/",
+          "supports": "Williston physical address, expanded panel shop, control engineering, drive systems and shared business telephone."
+        }
+      ],
+      "research_notes": "One physical shop. Triangle Electric parent is not separately counted; the Minot record is justified by a separately documented panel-production location."
+    },
+    {
+      "state": "ND",
+      "name": "Industrial Automation & Communication Systems - Minot drive and panel shop",
+      "record_type": "facility",
+      "city": "Minot",
+      "address_line": "5224 S Broadway",
+      "postal_code": "58701",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://ind-acs.com/about-us/",
+      "location_notes": "Published industrial site or business address, not an operating boundary or public test-access offer.",
+      "website_url": "https://ind-acs.com/",
+      "short_description": "Minot industrial panel shop opened in 2023, specializing in high-horsepower drives and related automation field work.",
+      "overview": "The company's current account identifies a separate Minot panel shop with its own physical address and drive-system specialization, not merely regional service coverage.",
+      "unmanned_systems_relevance": "Supporting motor-control and automation integration capability. No claim that this site builds autonomous vehicles or UAS components.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "701-572-6783",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Industrial Automation division - Minot shop",
+          "url": "https://ind-acs.com/about-us/",
+          "supports": "Separate Minot panel shop, 2023 opening, high-horsepower-drive specialty and current street address; telephone is shared company inquiry number."
+        }
+      ],
+      "research_notes": "Distinct manufacturing shop, not a duplicated headquarters or an unsupported branch listing."
+    },
+    {
+      "state": "ND",
+      "name": "SoloTek - Bismarck industrial controls and panel fabrication",
+      "record_type": "organization",
+      "city": "Bismarck",
+      "address_line": "",
+      "postal_code": "58504",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.solotekinc.com/",
+      "location_notes": "Company confirms Bismarck operations but publishes conflicting addresses: 3240 Rock Island Pl, Suite 5 in the contact section and 3508 Meridian Dr in the footer. Street address deliberately blank pending clarification.",
+      "website_url": "https://www.solotekinc.com/",
+      "short_description": "Bismarck automation contractor offering in-house control-panel fabrication, PLC/HMI/SCADA programming, telemetry and motor-control services.",
+      "overview": "SoloTek's current company page describes controls design, construction and commissioning for North Dakota industrial operations, including panels built in-house.",
+      "unmanned_systems_relevance": "Supporting industrial-control and telemetry expertise. No unmanned-system product or mobile-autonomy project documented; the physical business is retained only at locality precision because its street addresses conflict.",
+      "contact_url": "https://www.solotekinc.com/",
+      "contact_email": "tmoch@solotekinc.com",
+      "contact_phone": "701-934-5159",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers",
+        "Manufacturing and supply chain"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Command, control, and communications",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "SoloTek industrial automation services and contacts",
+          "url": "https://www.solotekinc.com/",
+          "supports": "Bismarck base, in-house custom panels, PLC/HMI/SCADA, telemetry and motor-control services; directly published business contact and conflicting street addresses."
+        }
+      ],
+      "research_notes": "Address uncertainty is retained explicitly, not resolved by third-party geocoding. Company's UL-listing claim is not independently assessed or used as a verification stamp."
+    },
+    {
+      "state": "ND",
+      "name": "Electrical Components International / Fargo Assembly - Fargo plant",
+      "record_type": "facility",
+      "city": "Fargo",
+      "address_line": "3300 7th Ave N",
+      "postal_code": "58102",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.ecintl.com/global-locations/",
+      "location_notes": "Published industrial site or business address, not an operating boundary or public test-access offer.",
+      "website_url": "https://www.ecintl.com/",
+      "short_description": "Current ECI manufacturing location operating as Fargo Assembly's Fargo plant, within an electrical-interconnect and control-assembly supplier.",
+      "overview": "ECI explicitly labels this Fargo location as manufacturing. The company supplies electrical distribution, harness and control assemblies to agriculture, construction and other equipment markets.",
+      "unmanned_systems_relevance": "Supporting ground-equipment electrical supply chain. Group-wide portfolio is not assigned wholesale to this plant, and no particular UAS customer or autonomous-model component is claimed.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "701-298-3803",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "ECI current locations - Fargo Assembly Fargo plant",
+          "url": "https://www.ecintl.com/global-locations/",
+          "supports": "Explicit manufacturing designation, current Fargo address and plant telephone."
+        },
+        {
+          "title": "ECI agriculture and construction electrical systems",
+          "url": "https://www.ecintl.com/markets-electrification-and-industrial/agriculture-and-construction/",
+          "supports": "Company-level electrical-distribution/control assemblies for mobile equipment and increasingly connected/electrified machines; not plant-specific production allocation."
+        }
+      ],
+      "research_notes": "Current owner and operating brand combined in one record. No separate legacy Fargo Assembly organization and no historical plants absent from the current directory."
+    },
+    {
+      "state": "ND",
+      "name": "Electrical Components International / Fargo Assembly - Lisbon plant",
+      "record_type": "facility",
+      "city": "Lisbon",
+      "address_line": "1301 S Main St",
+      "postal_code": "58054",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.ecintl.com/global-locations/",
+      "location_notes": "Published industrial site or business address, not an operating boundary or public test-access offer.",
+      "website_url": "https://www.ecintl.com/",
+      "short_description": "Lisbon electrical-component manufacturing plant listed separately from ECI's Fargo site in the current company directory.",
+      "overview": "ECI identifies Fargo Assembly - Lisbon as a manufacturing location. ECI's equipment-market offering includes electrical interconnect and control assemblies.",
+      "unmanned_systems_relevance": "Supporting electrical-component production capacity for the ground-equipment ecosystem. A specific Lisbon product mix, autonomous-platform customer or UAS supply relationship is not established.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "701-683-5141",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "ECI current locations - Fargo Assembly Lisbon",
+          "url": "https://www.ecintl.com/global-locations/",
+          "supports": "Separate Lisbon manufacturing plant, street address and plant telephone."
+        },
+        {
+          "title": "ECI equipment-market electrical systems",
+          "url": "https://www.ecintl.com/markets-electrification-and-industrial/agriculture-and-construction/",
+          "supports": "Company-level relevance to connected agricultural/construction equipment; no unsupported local product allocation."
+        }
+      ],
+      "research_notes": "Separate documented production site, not a second company generated from the acquisition or a duplicated Fargo headquarters."
+    },
+    {
+      "state": "ND",
+      "name": "Border States - Fargo industrial-automation technical supply provider",
+      "record_type": "organization",
+      "city": "Fargo",
+      "address_line": "2400 38th St S",
+      "postal_code": "58104",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "headquarters",
+      "location_source_url": "https://solutions.borderstates.com/locations/corporate/",
+      "location_notes": "Published Fargo corporate/branch-support office. Not represented as a factory, robotics test lab or the Grand Forks university automation lab it supports.",
+      "website_url": "https://www.borderstates.com/",
+      "short_description": "Fargo-based industrial products and services supplier with documented participation in North Dakota industrial-automation equipment and training.",
+      "overview": "Border States' Fargo headquarters is independently documented in its own office directory and 2025 account of its equipment collaboration with UND and ECN Automation.",
+      "unmanned_systems_relevance": "Supporting industrial-automation technical supply and workforce ecosystem, not a generic economic-development organization. The Fargo office is not claimed to manufacture unmanned systems or host the university's lab.",
+      "contact_url": "https://solutions.borderstates.com/locations/corporate/",
+      "contact_email": "",
+      "contact_phone": "701-293-5834",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Workforce and talent"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Border States Fargo branch support center",
+          "url": "https://solutions.borderstates.com/locations/corporate/",
+          "supports": "Current corporate office address and published business telephone; office/support function."
+        },
+        {
+          "title": "Border States industrial-automation collaboration, October 2025",
+          "url": "https://solutions.borderstates.com/news/border-states-teams-up-with-und-and-ecn/",
+          "supports": "Industrial equipment/services supplier, Fargo headquarters and concrete automation-equipment/training collaboration; university lab opened fall 2025 in Grand Forks."
+        }
+      ],
+      "research_notes": "One actual technical supplier headquartered in-state. The separately located UND laboratory is not duplicated here, nor is the corporate office labeled a production facility."
+    },
+    {
+      "state": "ND",
+      "name": "ECN Automation - Fargo industrial controls engineering office",
+      "record_type": "organization",
+      "city": "Fargo",
+      "address_line": "1630 1st Avenue North, Suite B",
+      "postal_code": "58102",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_source_url": "https://www.ecnautomation.com/offices",
+      "location_notes": "Published industrial site or business address, not an operating boundary or public test-access offer.",
+      "website_url": "https://www.ecnautomation.com/",
+      "short_description": "Fargo office of a process-control and instrumentation integrator offering industrial networks, digital operations and automation engineering.",
+      "overview": "ECN's own office directory publishes a physical Fargo office. Its company services cover control systems, instrumentation, industrial information and process automation.",
+      "unmanned_systems_relevance": "Supporting industrial-control integration and engineering. Company-wide vision and digital-system capabilities do not establish a Fargo unmanned-platform product or a flight site.",
+      "contact_url": "https://www.ecnautomation.com/offices",
+      "contact_email": "info@ecnautomation.com",
+      "contact_phone": "701-831-1552",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers",
+        "Research and technical depth"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Command, control, and communications",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "ECN current office directory",
+          "url": "https://www.ecnautomation.com/offices",
+          "supports": "Fargo office physical address, local telephone and public company inquiry email."
+        },
+        {
+          "title": "ECN automation and industrial information services",
+          "url": "https://www.ecnautomation.com/",
+          "supports": "Company process-automation, instrumentation, control-system and industrial-information capabilities."
+        },
+        {
+          "title": "ECN and Border States North Dakota automation collaboration",
+          "url": "https://solutions.borderstates.com/news/border-states-teams-up-with-und-and-ecn/",
+          "supports": "First-party collaborator account of ECN North Dakota operations and hands-on automation equipment contribution."
+        }
+      ],
+      "research_notes": "Current company office is Fargo, not Grand Forks; participation in the UND lab is not evidence of a separate ECN Grand Forks office."
+    },
+    {
+      "state": "ND",
+      "name": "John Deere - Valley City air-seeding equipment manufacturing",
+      "record_type": "facility",
+      "city": "Valley City",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.deere.com/assets/pdfs/common/our-company/about/jd-world-locations.pdf",
+      "location_notes": "Deere's December 2025 worldwide-locations publication identifies Valley City production. No street address or coordinates assigned without a direct current company address source.",
+      "website_url": "https://www.deere.com/",
+      "short_description": "Valley City production operation for air-seeding equipment, commodity carts and tillage equipment, distinct from Deere's existing Fargo electronics listing.",
+      "overview": "Deere's company locations publication assigns agricultural-equipment production to Valley City. Company testimony to the North Dakota Legislature also describes the local manufacturing operation.",
+      "unmanned_systems_relevance": "Supporting agricultural ground-equipment manufacturing ecosystem. This record does not claim the Valley City plant builds autonomous tractors or assign Deere's company-wide autonomy technology to its local output.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [
+        "Agriculture and natural resources"
+      ],
+      "sources": [
+        {
+          "title": "John Deere worldwide locations, December 2025",
+          "url": "https://www.deere.com/assets/pdfs/common/our-company/about/jd-world-locations.pdf",
+          "supports": "Valley City air-seeding, commodity-cart and tillage-equipment location, separately identified from Fargo electronics."
+        },
+        {
+          "title": "John Deere company testimony to North Dakota Legislature, 2023",
+          "url": "https://ndlegis.gov/files/resource/68-2023/library/hb1168.pdf",
+          "supports": "Company's original account of Valley City agricultural-equipment manufacturing."
+        }
+      ],
+      "research_notes": "Distinct manufacturing city and function, not another Fargo Electronics record. Air seeding is agricultural machinery, not an aviation capability."
+    },
+    {
+      "state": "ND",
+      "name": "Sweeney Controls - Fargo control-panel manufacturing and integration",
+      "record_type": "facility",
+      "city": "Fargo",
+      "address_line": "234 28th Street S",
+      "postal_code": "58103",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://sweeneycontrols.com/contact-us/",
+      "location_notes": "Published industrial site or business address, not an operating boundary or public test-access offer.",
+      "website_url": "https://sweeneycontrols.com/capabilities/",
+      "short_description": "Fargo controls provider designing and manufacturing industrial panels with PLC, HMI, SCADA and remote-access integration services.",
+      "overview": "The company's current capability page identifies control-panel design/manufacturing and programmable industrial controls. Its contact page supplies a physical Fargo business location.",
+      "unmanned_systems_relevance": "Supporting industrial-control fabrication and systems-integration provider. Fixed infrastructure automation is not represented as unmanned vehicle production or autonomous navigation expertise.",
+      "contact_url": "https://sweeneycontrols.com/contact-us/",
+      "contact_email": "",
+      "contact_phone": "701-232-3644",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration",
+        "Command, control, and communications"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Sweeney Controls capabilities",
+          "url": "https://sweeneycontrols.com/capabilities/",
+          "supports": "Control-panel design/manufacturing, PLC programming, HMI/SCADA and remote-access integration."
+        },
+        {
+          "title": "Sweeney Controls contact",
+          "url": "https://sweeneycontrols.com/contact-us/",
+          "supports": "Fargo physical address and business telephone."
+        }
+      ],
+      "research_notes": "Internal public-source staff preview. Supporting technical or manufacturing capability only; no unreported unmanned customers, autonomous production allocation, external access rights or operating authorization inferred."
+    },
+    {
+      "state": "ND",
+      "name": "LulzBot / FAME 3D - Fargo additive-manufacturing equipment production",
+      "record_type": "facility",
+      "city": "Fargo",
+      "address_line": "1001 25th St N",
+      "postal_code": "58102",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://lulzbot.com/contact-us",
+      "location_notes": "Published industrial site or business address, not an operating boundary or public test-access offer.",
+      "website_url": "https://lulzbot.com/",
+      "short_description": "Fargo design, assembly and testing operation for LulzBot 3D printers under FAME 3D ownership.",
+      "overview": "LulzBot's company and FAQ pages identify Fargo manufacturing, assembly, testing and packaging of its printers. The current contact page gives a physical Fargo address.",
+      "unmanned_systems_relevance": "Supporting additive-manufacturing equipment and prototyping ecosystem. No UAS customer, flight-qualified part or unmanned production contract is inferred from general-purpose printer manufacturing.",
+      "contact_url": "https://lulzbot.com/contact-us",
+      "contact_email": "sales@lulzbot.com",
+      "contact_phone": "701-809-0800",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "LulzBot company and Fargo manufacturing",
+          "url": "https://lulzbot.com/about",
+          "supports": "Fargo printer design/manufacturing operation and FAME 3D ownership, distinct from historical Colorado operations."
+        },
+        {
+          "title": "LulzBot FAQ",
+          "url": "https://lulzbot.com/content/faq",
+          "supports": "Company states printers are assembled, tested and packaged in Fargo."
+        },
+        {
+          "title": "LulzBot current contact",
+          "url": "https://lulzbot.com/contact-us",
+          "supports": "Physical Fargo address and directly published sales email and telephone."
+        }
+      ],
+      "research_notes": "Single current manufacturing operation; FAME 3D, LulzBot and legacy Aleph Objects not counted as multiple assets."
+    },
+    {
+      "state": "ND",
+      "name": "Mid-America Aerotech - West Fargo component repair and cold-spray manufacturing",
+      "record_type": "facility",
+      "city": "West Fargo",
+      "address_line": "159 8th Ave NW",
+      "postal_code": "58078",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.maaero.com/contact/",
+      "location_notes": "Published industrial site or business address, not an operating boundary or public test-access offer.",
+      "website_url": "https://www.maaero.com/",
+      "short_description": "West Fargo aerospace-component engineering, machining and repair operation offering cold-spray additive manufacturing and hydraulic/electromechanical component support.",
+      "overview": "Mid-America Aerotech documents design, manufacturing and support of aircraft hardware from West Fargo, including valves, actuators, servo cylinders and cold-spray component repair/fabrication.",
+      "unmanned_systems_relevance": "Supporting aerospace component fabrication, repair and sustainment expertise. No specific UAS platform, drone airframe production or unmanned-system approval is established.",
+      "contact_url": "https://www.maaero.com/contact/",
+      "contact_email": "",
+      "contact_phone": "701-282-7782",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Mid-America Aerotech current operations and capabilities",
+          "url": "https://www.maaero.com/",
+          "supports": "West Fargo component engineering/manufacturing, hydraulic/pneumatic/electromechanical support, machining and cold-spray repair/fabrication."
+        },
+        {
+          "title": "Mid-America Aerotech contact",
+          "url": "https://www.maaero.com/contact/",
+          "supports": "Current West Fargo physical facility address and public company telephone."
+        }
+      ],
+      "research_notes": "Included for documented physical aerospace-component production and technical services, not generic aerospace affiliation. Company certification claims are not converted to independent verification or a UAS approval claim."
+    },
+    {
+      "state": "ND",
+      "name": "Microlap Technologies - Rolla precision-component manufacturing",
+      "record_type": "facility",
+      "city": "Rolla",
+      "address_line": "213 1st Street NW",
+      "postal_code": "58367",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.microlap.com/contact/",
+      "location_notes": "Company publishes both a physical street address and PO Box 280; only the street address is mapped as the site reference.",
+      "website_url": "https://www.microlap.com/",
+      "short_description": "Rolla manufacturer of high-precision hard-material components, including optical windows, ferrules, jewel bearings, nozzles and custom parts.",
+      "overview": "Microlap manufactures custom industrial components from synthetic ruby, sapphire, ceramics, carbide and related hard materials at its Rolla operation.",
+      "unmanned_systems_relevance": "Supporting precision-component production relevant to optical, sensing, bearing and interconnect assemblies. This is an ecosystem capability inference, not a documented UAS customer or flight-qualified component claim.",
+      "contact_url": "https://www.microlap.com/contact/",
+      "contact_email": "info@microlap.com",
+      "contact_phone": "701-477-3193",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Microlap current product and manufacturing page",
+          "url": "https://www.microlap.com/",
+          "supports": "Manufacturer of precision ferrules, optical windows/lenses, jewel bearings and other custom hard-material components; Rolla address."
+        },
+        {
+          "title": "Microlap custom manufacturing",
+          "url": "https://www.microlap.com/about-us/",
+          "supports": "Synthetic ruby, sapphire, ceramic and carbide manufacturing capability; historical plant names are predecessors, not additional assets."
+        },
+        {
+          "title": "Microlap physical address and contacts",
+          "url": "https://www.microlap.com/contact/",
+          "supports": "Current Rolla street address, postal code, public business email and telephone."
+        }
+      ],
+      "research_notes": "Current company only; historical Turtle Mountain Ordnance Plant and William Langer Jewel Bearing Plant names not separately counted. Specific unmanned-system supply relationships remain unconfirmed."
+    }
+  ],
+  "held_candidates": [
+    {
+      "state": "ND",
+      "name": "Partners in Productivity - Dickinson",
+      "reason": "State member profile gives a Dickinson physical address and historical robotics/automation work, but the company's own site could not be retrieved to independently establish its current technical offering. Not counted from the directory lead alone."
+    },
+    {
+      "state": "ND",
+      "name": "Divcon Controls - proposed West Fargo panel shop",
+      "reason": "Third-party employment leads suggest West Fargo panel assembly; accessible company pages and current recruitment directory did not independently establish the physical North Dakota operation. No address or asset inferred."
+    },
+    {
+      "state": "ND",
+      "name": "Federal Machine - Fargo robotic fabrication",
+      "reason": "Indexed robotics/fabrication descriptions could not be reconciled with the company's current minimal/coming-soon website. Current physical production and technical capability not sufficiently confirmed."
+    },
+    {
+      "state": "ND",
+      "name": "Vektor Designs - North Dakota location",
+      "reason": "PharmaMed documents an automation partnership and robot integration case, but a distinct current North Dakota physical site was not established. Partnership is not a location source."
+    },
+    {
+      "state": "ND",
+      "name": "ECI / Fargo Assembly - historical Edgeley and Ellendale plants",
+      "reason": "Historical plant references are absent from the current owner's manufacturing directory. Current operation at these locations not independently established; not extrapolated from Fargo/Lisbon listings."
+    },
+    {
+      "state": "ND",
+      "name": "Appareo agricultural electronics / AGCO legacy operation",
+      "reason": "Historical ownership and agricultural-autonomy references do not establish a separate present physical operation from the current Ontic Appareo Aviation listing. Held to avoid acquisition/brand double counting."
+    },
+    {
+      "state": "ND",
+      "name": "Mechatronic Solutions - North Dakota physical office",
+      "reason": "Regional North Dakota service coverage does not establish an actual in-state office or production facility. No asset created from a service-area claim."
+    }
+  ]
+}

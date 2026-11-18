@@ -86,14 +86,18 @@ use `/states/<state-slug>/`, including their APIs, exports and asset comparisons
 Saved views retain their state; browser comparison selections are separate by state.
 
 The state list was confirmed with the UXS Benchmark chat against the shared
-November 10, 2026 workbook. Starter inventories are curated research selections,
-with 50 records per competitor state (650 total), not measured rankings or
-exhaustive state inventories. Research evidence and
+November 10, 2026 workbook. Inventories started with 50 records per competitor
+state and have expanded toward 300-500 using the approved mix of core UxS and
+relevant supporting assets. They are source-backed research selections, not
+measured rankings or exhaustive state inventories. Current combined counts are
+in `data/multistate/supporting_federal_2026_11_18_starter_manifest.json`.
+Research evidence and
 held candidates are recorded in `data/multistate/*_starter.json`.
 
 ```sh
 python manage.py seed_peer_states          # validate and preview
 python manage.py seed_peer_states --apply  # insert internal records only
+python manage.py correct_peer_websites --apply  # guarded repairs to known imported links
 ```
 
 This importer is insert-only. Existing edits, archived records and deleted
@@ -105,6 +109,38 @@ The release process runs the same guarded importer automatically; repeat release
 preserve staff changes rather than resetting the inventories to the starter files.
 It adds only the predefined vocabulary terms needed by the new records when a
 Virginia-only database does not already contain them; existing terms are unchanged.
+Batch inserts retain initial asset, taxonomy and source history. Invalid batches
+roll back rather than leaving a partially imported inventory. Website repairs
+require the exact old URL on an untouched internal imported record and preserve
+staff-managed records and retired evidence.
+
+The November 18 expansion combines individually researched organizations,
+programs and facilities with bounded official datasets:
+
+- FAA/BTS operational public-use airports, from the October 29 NASR snapshot.
+  These are supporting aviation infrastructure, not confirmed drone test sites.
+  Total airport acreage is not available testing or development land.
+- FAA-recognized identification areas (FRIAs), with recognition dates checked
+  against the research date. Nearby polygons at the same named flying site are
+  consolidated. A pin is derived from a published polygon, not a surveyed entrance.
+  Recognition concerns Remote ID; it does not establish public access, commercial
+  testing services, aircraft acceptance, BVLOS permission or general flight approval.
+- NCES IPEDS technical-education providers with relevant engineering, computing,
+  manufacturing or aviation qualifications. Directory vintage is 2024 and program
+  completions cover 2023-24, not current UxS-program availability. Online-only,
+  unrelated specialist and unresolved closed-school records are excluded.
+
+Virginia and the peer states do not yet have uniform catalog coverage. Raw record
+counts must not be used to rank states or infer absent real-world capabilities.
+
+Published entity websites are distinct from evidence links. Where no defensible
+direct website or contact was found, that field remains blank. Automated HTTP
+screens are not editorial verification; blocked/inconclusive requests do not prove
+an organization is absent. Source dates and limits remain in the research notes.
+Builders and auditing tools are `scripts/build_peer_fria_catalog.py`,
+`scripts/build_peer_supporting_catalog.py`, `scripts/audit_peer_catalog.py` and
+`scripts/check_peer_institution_websites.py`. Raw federal downloads are cached
+under ignored `tmp/`; checked-in manifests retain their source URLs and hashes.
 
 `MULTISTATE_PUBLIC=false` is the default. Competitor routes require an active
 staff account with asset-view permission. Separately, starter records have internal

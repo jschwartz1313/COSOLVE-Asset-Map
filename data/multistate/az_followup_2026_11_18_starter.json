@@ -1,0 +1,2534 @@
+{
+  "research_date": "2026-11-18",
+  "states": [
+    "AZ"
+  ],
+  "records": [
+    {
+      "state": "AZ",
+      "name": "Southwest AgNet - Arizona agricultural drone mapping",
+      "record_type": "organization",
+      "city": "Phoenix",
+      "address_line": "111 E. Dunlap Ave. Suite 1-107",
+      "postal_code": "85020",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_source_url": "https://southwestagnet.com/",
+      "location_notes": "Published business contact address; not represented as a hangar or flight site.",
+      "website_url": "https://southwestagnet.com/",
+      "short_description": "Agricultural UAS operator offering crop-health analysis, field mapping and multispectral data services in southern and central Arizona.",
+      "overview": "Southwest AgNet describes drone-based field scouting, irrigation assessment and crop monitoring, coordinated with agricultural advisers.",
+      "unmanned_systems_relevance": "Direct commercial agricultural drone operation and aerial-data analysis.",
+      "contact_url": "https://southwestagnet.com/",
+      "contact_email": "",
+      "contact_phone": "602-432-5507",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Agriculture and natural resources",
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "Southwest AgNet services and contact",
+          "url": "https://southwestagnet.com/",
+          "supports": "Arizona service area, published Phoenix contact address, crop monitoring and drone mapping."
+        }
+      ],
+      "research_notes": "Licensing and insurance statements are company assertions, not independently audited approvals. No chemical-application authority inferred from mapping services."
+    },
+    {
+      "state": "AZ",
+      "name": "Darling Geomatics - Tucson drone surveying practice",
+      "record_type": "organization",
+      "city": "Tucson",
+      "address_line": "9040 S Rita Rd, Suite 2350, 2nd Floor",
+      "postal_code": "85747",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "headquarters",
+      "location_source_url": "https://www.darlingltd.com/locations/tucson/",
+      "location_notes": "Published office, room or facility address; no coordinates, flight boundary or external access assigned.",
+      "website_url": "https://www.darlingltd.com/locations/tucson/",
+      "short_description": "Tucson-headquartered survey firm with local drone pilots, drone topography and LiDAR workflows for engineering, construction and mining.",
+      "overview": "The Tucson office explicitly combines registered surveyors, drone pilots, scanning technicians and CAD/BIM specialists for Southern Arizona projects.",
+      "unmanned_systems_relevance": "Documented local UAS capture and geospatial processing, rather than a generic engineering listing.",
+      "contact_url": "https://www.darlingltd.com/locations/tucson/",
+      "contact_email": "",
+      "contact_phone": "520-298-2725",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Darling Geomatics Tucson office and services",
+          "url": "https://www.darlingltd.com/locations/tucson/",
+          "supports": "Current headquarters address, local drone pilots and Southern Arizona drone mapping services."
+        }
+      ],
+      "research_notes": "Public-source internal staff preview. No independent performance assessment, external access rights or flight authorization implied."
+    },
+    {
+      "state": "AZ",
+      "name": "EPS Group - Arizona aerial mapping and geospatial practice",
+      "record_type": "organization",
+      "city": "Mesa",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "headquarters",
+      "location_source_url": "https://www.epsgroupinc.com/locations/",
+      "location_notes": "Published locality or office reference only; no coordinates, flight boundary or site access assigned.",
+      "website_url": "https://www.epsgroupinc.com/service/aerial-mapping-geospatial/",
+      "short_description": "Mesa-headquartered engineering and surveying firm explicitly offering drone mapping, photogrammetry, LiDAR and geospatial deliverables.",
+      "overview": "EPS Group combines aerial and ground survey technologies for infrastructure and land-development work. Its own directory identifies Mesa as headquarters and additional Arizona offices.",
+      "unmanned_systems_relevance": "Specific company UAS mapping capability supporting civil engineering and infrastructure projects.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Data engineering, analytics, and edge computing",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "EPS aerial mapping and geospatial services",
+          "url": "https://www.epsgroupinc.com/service/aerial-mapping-geospatial/",
+          "supports": "Explicit drone mapping, LiDAR and photogrammetry services."
+        },
+        {
+          "title": "EPS office directory",
+          "url": "https://www.epsgroupinc.com/locations/",
+          "supports": "Mesa headquarters and current Arizona office presence."
+        }
+      ],
+      "research_notes": "One company-level Arizona practice, not separate quota records for each branch. Does not identify a dedicated Mesa flight base or locally assigned aircraft."
+    },
+    {
+      "state": "AZ",
+      "name": "Arizona Surveying / Alta Environmental and Infrastructure - Flagstaff UAS mapping",
+      "record_type": "organization",
+      "city": "Flagstaff",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://arizonasurveying.com/aerial-mapping-services/",
+      "location_notes": "Published locality or office reference only; no coordinates, flight boundary or site access assigned.",
+      "website_url": "https://arizonasurveying.com/aerial-mapping-services/",
+      "short_description": "Flagstaff surveying business, now part of Alta Environmental and Infrastructure, with documented UAS mapping and construction-monitoring services.",
+      "overview": "The current company page retains its drone mapping service and identifies the business's integration into Alta EI and continued Flagstaff/Northern Arizona work.",
+      "unmanned_systems_relevance": "Uses aerial UAS data for terrain models, orthophotos, mining volumes and site monitoring.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Arizona Surveying aerial mapping and Alta EI notice",
+          "url": "https://arizonasurveying.com/aerial-mapping-services/",
+          "supports": "UAS service details, Flagstaff service presence and acquisition/brand distinction."
+        }
+      ],
+      "research_notes": "Single record for the acquired business, not separate assets for Arizona Surveying and Alta EI. Service page originated in 2017; current acquisition notice establishes continuing identity, not a new fleet certification."
+    },
+    {
+      "state": "AZ",
+      "name": "SITECH Southwest - Mesa commercial UAV solutions",
+      "record_type": "organization",
+      "city": "Mesa",
+      "address_line": "555 W. Iron Ave.",
+      "postal_code": "85210",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_source_url": "https://www.sitechsw.com/our-solutions/uav-solutions/",
+      "location_notes": "Published office, room or facility address; no coordinates, flight boundary or external access assigned.",
+      "website_url": "https://www.sitechsw.com/our-solutions/uav-solutions/",
+      "short_description": "Mesa technology supplier offering commercial UAVs, aerial-data processing, pilot training and support for surveying and inspection workflows.",
+      "overview": "SITECH Southwest lists Arizona offices and commercial drone product lines alongside ground-control, processing and customized UAS training services.",
+      "unmanned_systems_relevance": "Direct UAS equipment and workflow support, rather than general construction-equipment supply.",
+      "contact_url": "https://www.sitechsw.com/our-solutions/uav-solutions/",
+      "contact_email": "",
+      "contact_phone": "602-437-0410",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers",
+        "Workforce and talent"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection",
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "SITECH Southwest UAV solutions and Arizona locations",
+          "url": "https://www.sitechsw.com/our-solutions/uav-solutions/",
+          "supports": "Mesa address, UAV sales, processing, UAS staff training and service offerings."
+        }
+      ],
+      "research_notes": "Mesa business-office reference, not a flight field. Product endurance and acreage claims omitted; product availability and training arrangements require direct inquiry."
+    },
+    {
+      "state": "AZ",
+      "name": "RICK Engineering - Arizona UAS reality-capture services",
+      "record_type": "organization",
+      "city": "Phoenix",
+      "address_line": "2401 W. Peoria Avenue, Suite 120",
+      "postal_code": "85029",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_source_url": "https://rickengineering.com/about/locations/phoenix/",
+      "location_notes": "Published office, room or facility address; no coordinates, flight boundary or external access assigned.",
+      "website_url": "https://rickengineering.com/services/reality-capture/",
+      "short_description": "Engineering firm with a current Phoenix office and an explicit UAS photogrammetry and reality-capture practice.",
+      "overview": "RICK lists drone surveys and aerial photogrammetry within its survey and reality-capture services. Its office directory documents Phoenix operations.",
+      "unmanned_systems_relevance": "Specific unmanned data-acquisition services supporting infrastructure and digital models.",
+      "contact_url": "https://rickengineering.com/about/locations/phoenix/",
+      "contact_email": "",
+      "contact_phone": "602-957-3350",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Simulation, digital twins, and synthetic environments"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "RICK reality capture",
+          "url": "https://rickengineering.com/services/reality-capture/",
+          "supports": "Company UAS photogrammetry and reality-capture capability."
+        },
+        {
+          "title": "RICK Phoenix office",
+          "url": "https://rickengineering.com/about/locations/phoenix/",
+          "supports": "Current Arizona office, address and business phone."
+        }
+      ],
+      "research_notes": "Company capability plus documented local office; not proof all equipment is based in Phoenix. Company-wide unmanned hydrographic boat capability is not attributed to this Arizona office."
+    },
+    {
+      "state": "AZ",
+      "name": "WestLand Resources - Arizona UAV geomatics practice",
+      "record_type": "organization",
+      "city": "Tucson",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://westlandresources.com/services/geomatics/",
+      "location_notes": "Published locality or office reference only; no coordinates, flight boundary or site access assigned.",
+      "website_url": "https://westlandresources.com/services/geomatics/",
+      "short_description": "Environmental and engineering consultant with Tucson, Phoenix and Flagstaff offices and explicit UAV imaging, mapping and LiDAR services.",
+      "overview": "WestLand describes drone-supported multispectral imagery, terrain models, orthomosaics, asset inspection and construction monitoring.",
+      "unmanned_systems_relevance": "Documented aerial sensing and data processing for environmental and infrastructure work.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "520-206-9585",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Environmental monitoring",
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "WestLand GIS and UAV geomatics services",
+          "url": "https://westlandresources.com/services/geomatics/",
+          "supports": "Explicit sUAS capabilities and current Arizona office listings."
+        }
+      ],
+      "research_notes": "One Arizona company practice; no separate branch assets or assumed aircraft base."
+    },
+    {
+      "state": "AZ",
+      "name": "Psomas - Tucson UAS survey and geospatial practice",
+      "record_type": "organization",
+      "city": "Tucson",
+      "address_line": "1745 E River Road, Suite 245",
+      "postal_code": "85718",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_source_url": "https://psomas.com/contact/tucson-az/",
+      "location_notes": "Published office, room or facility address; no coordinates, flight boundary or external access assigned.",
+      "website_url": "https://psomas.com/contact/tucson-az/",
+      "short_description": "Tucson engineering and survey office of a firm with documented UAS mapping services and a local drone-imaging project.",
+      "overview": "Psomas lists UAV imagery among survey work at the Pima County Historic Courthouse and maintains a current Tucson office and broader sUAS mapping practice.",
+      "unmanned_systems_relevance": "Local project evidence connects the company's UAS capability to Arizona survey work.",
+      "contact_url": "https://psomas.com/contact/tucson-az/",
+      "contact_email": "",
+      "contact_phone": "520-292-2300",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "Psomas Tucson office",
+          "url": "https://psomas.com/contact/tucson-az/",
+          "supports": "Current Tucson address and contact."
+        },
+        {
+          "title": "Pima County Historic Courthouse survey",
+          "url": "https://psomas.com/projects/pima-county-historic-courthouse/",
+          "supports": "Company's own account of UAV aerial photography on an Arizona project."
+        },
+        {
+          "title": "Psomas sUAS mapping and modeling",
+          "url": "https://psomas.com/projects/suas-mapping-modeling-services/",
+          "supports": "Company UAS survey and modeling services."
+        }
+      ],
+      "research_notes": "Project portfolio is evidence of completed work, not a current flight authorization or permanently assigned Tucson fleet."
+    },
+    {
+      "state": "AZ",
+      "name": "Entellus - Phoenix drone-survey practice",
+      "record_type": "organization",
+      "city": "Phoenix",
+      "address_line": "3033 N. 44th St., Suite 250",
+      "postal_code": "85018",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "headquarters",
+      "location_source_url": "https://www.entellus.com/contact-us/",
+      "location_notes": "Published office, room or facility address; no coordinates, flight boundary or external access assigned.",
+      "website_url": "https://www.entellus.com/specialty/drone-surveys/",
+      "short_description": "Phoenix-headquartered engineering firm with an explicit drone-survey team and aerial imagery, topographic mapping and inspection services.",
+      "overview": "Entellus documents drone pilots, aircraft maintenance and flight workflows supporting aerial surveys and repeat site capture.",
+      "unmanned_systems_relevance": "Direct documented drone operations within a broader engineering and survey business.",
+      "contact_url": "https://www.entellus.com/contact-us/",
+      "contact_email": "engineers@entellus.com",
+      "contact_phone": "602-244-2566",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Entellus drone surveys",
+          "url": "https://www.entellus.com/specialty/drone-surveys/",
+          "supports": "Company drone survey, inspection and pilot capabilities."
+        },
+        {
+          "title": "Entellus contact and Arizona headquarters",
+          "url": "https://www.entellus.com/contact-us/",
+          "supports": "Current Phoenix headquarters and business contact."
+        }
+      ],
+      "research_notes": "Published accuracy and compliance claims are not independently audited; no universal airspace permission inferred."
+    },
+    {
+      "state": "AZ",
+      "name": "Falken Drone Services - Cochise County agricultural UAS",
+      "record_type": "organization",
+      "city": "",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://falkendroneservices.com/",
+      "location_notes": "Company identifies Cochise County as its base; no specific operating address or launch site assigned.",
+      "website_url": "https://falkendroneservices.com/",
+      "short_description": "Cochise County-based drone operator advertising agricultural spraying, imaging and precision analysis for vineyards, orchards, ranches and solar operators.",
+      "overview": "The company describes a local southeastern Arizona operation serving the Sulphur Springs and San Pedro valleys and surrounding agricultural communities.",
+      "unmanned_systems_relevance": "Direct agricultural UAS service provider with explicit local operating presence.",
+      "contact_url": "https://falkendroneservices.com/",
+      "contact_email": "falkndroneservices@gmail.com",
+      "contact_phone": "602-688-9401",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Payloads and mission systems",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Agriculture and natural resources",
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Falken local agricultural drone services",
+          "url": "https://falkendroneservices.com/",
+          "supports": "Cochise County base, advertised services, regional coverage and business contact."
+        }
+      ],
+      "research_notes": "Part 107/137 and insurance statements are provider assertions. Specific pesticide permissions, aircraft status and performance not independently established."
+    },
+    {
+      "state": "AZ",
+      "name": "CACG Inspections and Drones - Tucson inspection and agriculture services",
+      "record_type": "organization",
+      "city": "Tucson",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "service-area",
+      "location_source_url": "https://www.cacginspections.com/",
+      "location_notes": "Tucson business mailing locality published; PO box is not represented as a physical facility.",
+      "website_url": "https://www.cacginspections.com/",
+      "short_description": "Tucson business describing drone-assisted construction inspections and agricultural spraying and dry-spreading services.",
+      "overview": "Carter and Associates Consulting Group describes its transition from construction inspection into specialized agricultural drone work.",
+      "unmanned_systems_relevance": "Specific UAS inspection and agricultural service offering, not a generic building inspector.",
+      "contact_url": "https://www.cacginspections.com/",
+      "contact_email": "cacgdrones@gmail.com",
+      "contact_phone": "520-971-1444",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Payloads and mission systems",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Agriculture and natural resources",
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "CACG company services and Tucson contact",
+          "url": "https://www.cacginspections.com/",
+          "supports": "Company's own description of drone inspections, spraying, dry spreading and Tucson mailing presence."
+        }
+      ],
+      "research_notes": "Advertised services only; application licensing and individual aircraft approvals not independently confirmed."
+    },
+    {
+      "state": "AZ",
+      "name": "Dragonfly Agronautics - Arizona drone application services",
+      "record_type": "organization",
+      "city": "",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://www.dragonflyagronautics.com/",
+      "location_notes": "Explicit Arizona operating/service area; the company does not publish a specific base address on the cited page.",
+      "website_url": "https://www.dragonflyagronautics.com/",
+      "short_description": "Agricultural drone application operator explicitly serving Arizona with spraying, seed and granule spreading, and field-support delivery offerings.",
+      "overview": "The company's own site advertises statewide Arizona agricultural operations and lists relevant aviation and agricultural licensing credentials.",
+      "unmanned_systems_relevance": "Direct UAS application and payload service offering within Arizona.",
+      "contact_url": "https://www.dragonflyagronautics.com/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Payloads and mission systems",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Agriculture and natural resources"
+      ],
+      "sources": [
+        {
+          "title": "Dragonfly Agronautics services and Arizona coverage",
+          "url": "https://www.dragonflyagronautics.com/",
+          "supports": "Arizona service presence and specific drone spraying/spreading offerings."
+        }
+      ],
+      "research_notes": "Mapped as a service-area asset, not a plant or flight site. Provider licensing assertions and numerical performance claims are not independently validated; no unrestricted spraying authority implied."
+    },
+    {
+      "state": "AZ",
+      "name": "Luumar - Arizona unmanned agricultural services",
+      "record_type": "organization",
+      "city": "Mesa",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "service-area",
+      "location_source_url": "https://downloads.regulations.gov/FAA-2024-1348-0003/attachment_1.pdf",
+      "location_notes": "Mesa locality comes from the 2024 FAA applicant record; current Arizona agricultural activity is described in the 2026 county Farm Bureau account. No current physical street address asserted.",
+      "website_url": "https://www.luumar.com/",
+      "short_description": "Unmanned aerial application and imagery business with documented Arizona agricultural work and a Mesa-linked FAA applicant record.",
+      "overview": "Luumar advertises aerial application and imagery. A 2026 Maricopa County Farm Bureau account describes its Arizona spraying, spreading, imaging and mapping work.",
+      "unmanned_systems_relevance": "Commercial unmanned agricultural services; future delivery ambitions are not treated as fielded services.",
+      "contact_url": "https://www.luumar.com/",
+      "contact_email": "contact@luumar.com",
+      "contact_phone": "970-237-1243",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Payloads and mission systems",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Agriculture and natural resources",
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "Luumar current unmanned services",
+          "url": "https://www.luumar.com/",
+          "supports": "Current company identity, aerial services and public business contact."
+        },
+        {
+          "title": "Maricopa County Farm Bureau account of Arizona drone agriculture",
+          "url": "https://www.maricopacountyfb.org/post/from-the-sky-to-the-soil-how-drone-technology-is-transforming-agriculture",
+          "supports": "Original county agricultural stakeholder account of Luumar's Arizona agricultural work in 2026."
+        },
+        {
+          "title": "FAA 2024 Luumar exemption letter",
+          "url": "https://downloads.regulations.gov/FAA-2024-1348-0003/attachment_1.pdf",
+          "supports": "Dated Mesa applicant locality and agricultural UAS regulatory history, not blanket current authorization."
+        }
+      ],
+      "research_notes": "FAA letter is dated 2024; its exemptions are conditional and are not used to assert current permission, limits or unrestricted operation."
+    },
+    {
+      "state": "AZ",
+      "name": "Corporate Capture - Phoenix industrial drone data services",
+      "record_type": "organization",
+      "city": "Phoenix",
+      "address_line": "11225 N 28th Dr, Suite D209",
+      "postal_code": "85029",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_source_url": "https://corpcapture.com/contact/",
+      "location_notes": "Published office, room or facility address; no coordinates, flight boundary or external access assigned.",
+      "website_url": "https://corpcapture.com/",
+      "short_description": "Phoenix aerial-services company with explicit drone mapping, inspection and construction-progress documentation offerings.",
+      "overview": "Corporate Capture's business includes media production, but the cited service catalog separately documents mapping, aerial inspections and recurring jobsite capture.",
+      "unmanned_systems_relevance": "Included for technical inspection and mapping work, not wedding or real-estate photography.",
+      "contact_url": "https://corpcapture.com/contact/",
+      "contact_email": "info@corpcapture.com",
+      "contact_phone": "623-624-7726",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Corporate Capture aerial services",
+          "url": "https://corpcapture.com/",
+          "supports": "Explicit drone mapping, inspection and construction documentation services."
+        },
+        {
+          "title": "Corporate Capture Phoenix office contact",
+          "url": "https://corpcapture.com/contact/",
+          "supports": "Current Phoenix office address and public business contact."
+        }
+      ],
+      "research_notes": "Public-source internal staff preview. No independent performance assessment, external access rights or flight authorization implied."
+    },
+    {
+      "state": "AZ",
+      "name": "Ballard Aerial - Phoenix-area drone mapping and inspections",
+      "record_type": "organization",
+      "city": "",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://ballardaerial.com/about-ballard-aerial-drone-service/",
+      "location_notes": "Own page uses both Phoenix-based and Scottsdale-based descriptions. Metro Phoenix presence supported; municipality/base address left unresolved.",
+      "website_url": "https://ballardaerial.com/",
+      "short_description": "Phoenix-area drone operator providing mapping, construction monitoring, stockpile analysis and infrastructure inspections across Arizona.",
+      "overview": "Ballard Aerial describes RTK-supported aerial capture for construction, engineering, utilities and municipal work.",
+      "unmanned_systems_relevance": "Direct commercial UAS data collection and geospatial deliverables.",
+      "contact_url": "https://ballardaerial.com/contact-ballard-aerial/",
+      "contact_email": "info@ballardaerial.com",
+      "contact_phone": "480-399-6685",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Navigation and positioning",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Ballard Aerial company and Arizona services",
+          "url": "https://ballardaerial.com/about-ballard-aerial-drone-service/",
+          "supports": "Metro Phoenix base and explicit technical drone offerings."
+        },
+        {
+          "title": "Ballard Aerial contact",
+          "url": "https://ballardaerial.com/contact-ballard-aerial/",
+          "supports": "Published business email, phone and current service inquiry channel."
+        }
+      ],
+      "research_notes": "City-level inconsistency retained explicitly. Accuracy and licensing claims are company statements, not independently assessed."
+    },
+    {
+      "state": "AZ",
+      "name": "FireFlight - Flagstaff wildfire-risk drone analysis",
+      "record_type": "organization",
+      "city": "Flagstaff",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://www.linkedin.com/company/fireflightllc",
+      "location_notes": "Published locality or office reference only; no coordinates, flight boundary or site access assigned.",
+      "website_url": "https://www.fireflight.pro/",
+      "short_description": "Flagstaff business using drone imagery and spatial analysis for wildfire-risk assessment and mitigation planning.",
+      "overview": "FireFlight's own company profile identifies a Flagstaff base. The city's May 2025 economic report documents its Moonshot-campus opening and forest-health drone work.",
+      "unmanned_systems_relevance": "Specific drone sensing and environmental-risk analytics service.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Environmental monitoring",
+        "Agriculture and natural resources"
+      ],
+      "sources": [
+        {
+          "title": "FireFlight first-party company profile",
+          "url": "https://www.linkedin.com/company/fireflightllc",
+          "supports": "Company's own Flagstaff location, own website and wildfire-risk drone services."
+        },
+        {
+          "title": "Flagstaff Economic Vitality May 2025 report",
+          "url": "https://www.flagstaff.az.gov/DocumentCenter/View/89643/Economic-Vitality-Division-MAY-2025-Report",
+          "supports": "City's original account of FireFlight opening at Moonshot and drone-based environmental work."
+        }
+      ],
+      "research_notes": "Own website is the address published by the company; direct page fetch was unavailable during research. No active-fire incident response authority inferred from wildfire-risk consulting."
+    },
+    {
+      "state": "AZ",
+      "name": "Pro Key Concept - Prescott UAS design and operator services",
+      "record_type": "organization",
+      "city": "Prescott",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://prokeyconcept.com/",
+      "location_notes": "Published locality or office reference only; no coordinates, flight boundary or site access assigned.",
+      "website_url": "https://prokeyconcept.com/",
+      "short_description": "Prescott UAS business advertising custom design and drone operator services for mapping, inspections and other technical missions.",
+      "overview": "Pro Key Concept's current site identifies Prescott and presents design work and operator-supported UAS services.",
+      "unmanned_systems_relevance": "Specific unmanned aircraft engineering and operational service offering.",
+      "contact_url": "https://prokeyconcept.com/",
+      "contact_email": "",
+      "contact_phone": "714-321-1979",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Pro Key Concept UAS services and Prescott location",
+          "url": "https://prokeyconcept.com/",
+          "supports": "Current company location, design work and inspection/mapping operator services."
+        }
+      ],
+      "research_notes": "No operating fleet, manufacturing plant, public-safety contract or claimed search-and-rescue deployment independently established."
+    },
+    {
+      "state": "AZ",
+      "name": "VISP Group - Phoenix school-facility UAV services",
+      "record_type": "organization",
+      "city": "Phoenix",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://www.vispgroup.com/classroom.html",
+      "location_notes": "Published Phoenix address is explicitly mailing-only; no physical operating facility assigned.",
+      "website_url": "https://www.vispgroup.com/classroom.html",
+      "short_description": "Phoenix school-services business explicitly offering UAV site mapping and maintenance/security inspection services for school facilities.",
+      "overview": "VISP describes K-12-focused services and lists drone building-site mapping and maintenance inspection alongside aerial imagery.",
+      "unmanned_systems_relevance": "Specific supporting facilities-inspection UAV service rather than an undifferentiated education vendor.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "602-288-8816",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Infrastructure inspection",
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "VISP K-12 UAV services and Phoenix mailing contact",
+          "url": "https://www.vispgroup.com/classroom.html",
+          "supports": "Explicit building mapping/maintenance UAV services and Phoenix business locality."
+        }
+      ],
+      "research_notes": "No aircraft fleet or physical Phoenix flight base confirmed. Published mailing address is intentionally not promoted to a site location."
+    },
+    {
+      "state": "AZ",
+      "name": "Axis Fields - Buckeye drone mapping and site documentation",
+      "record_type": "organization",
+      "city": "Buckeye",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://axisfields.com/",
+      "location_notes": "Published locality or office reference only; no coordinates, flight boundary or site access assigned.",
+      "website_url": "https://axisfields.com/",
+      "short_description": "Buckeye-based drone mapping business providing orthomosaics, elevation products, 3D asset documentation and construction monitoring.",
+      "overview": "Axis Fields documents Arizona project examples and explicitly identifies Buckeye as its base for Metro Phoenix and West Valley operations.",
+      "unmanned_systems_relevance": "Direct UAS capture and geospatial analysis for construction and infrastructure.",
+      "contact_url": "https://axisfields.com/",
+      "contact_email": "info@axisfields.com",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Simulation, digital twins, and synthetic environments",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Axis Fields company, services and Arizona examples",
+          "url": "https://axisfields.com/",
+          "supports": "Buckeye base, drone data collection and mapping/infrastructure deliverables."
+        }
+      ],
+      "research_notes": "Public-source internal staff preview. No independent performance assessment, external access rights or flight authorization implied."
+    },
+    {
+      "state": "AZ",
+      "name": "SprayTech - Phoenix drone inspection and aerial cleaning",
+      "record_type": "organization",
+      "city": "Phoenix",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://spraytech.io/contact-us/",
+      "location_notes": "Published locality or office reference only; no coordinates, flight boundary or site access assigned.",
+      "website_url": "https://spraytech.io/",
+      "short_description": "Drone-enabled cleaning and inspection provider with a published Phoenix office presence and thermal imaging and 3D mapping offerings.",
+      "overview": "SprayTech combines aerial cleaning and inspection with ground LiDAR and digital-twin services. Its current contact page identifies Phoenix among its office markets.",
+      "unmanned_systems_relevance": "Specific drone operations for facilities maintenance and infrastructure assessment.",
+      "contact_url": "https://spraytech.io/contact-us/",
+      "contact_email": "Info@spraytech.io",
+      "contact_phone": "844-777-2983",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Payloads and mission systems",
+        "Perception, sensing, and sensor fusion",
+        "Simulation, digital twins, and synthetic environments"
+      ],
+      "missions": [
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "SprayTech drone and ground technology services",
+          "url": "https://spraytech.io/",
+          "supports": "Aerial cleaning, thermal inspection and 3D mapping service capability."
+        },
+        {
+          "title": "SprayTech contact and office markets",
+          "url": "https://spraytech.io/contact-us/",
+          "supports": "Current Phoenix office listing and public business contact."
+        }
+      ],
+      "research_notes": "No street address or permanently assigned Arizona aircraft established. Ground SLAM/LiDAR is distinguished from drone capture; marketing performance percentages omitted."
+    },
+    {
+      "state": "AZ",
+      "name": "Phoenix Precision Drones - commercial mapping and inspection",
+      "record_type": "organization",
+      "city": "Phoenix",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://www.phoenixprecisiondrones.com/",
+      "location_notes": "Published locality or office reference only; no coordinates, flight boundary or site access assigned.",
+      "website_url": "https://www.phoenixprecisiondrones.com/",
+      "short_description": "Phoenix drone-services company advertising construction mapping, thermal imaging, infrastructure inspection and agricultural data collection.",
+      "overview": "The current company site identifies Phoenix and presents technical aerial service workflows and deliverables.",
+      "unmanned_systems_relevance": "Direct UAS mapping and inspection service offering with first-party Arizona presence.",
+      "contact_url": "https://www.phoenixprecisiondrones.com/",
+      "contact_email": "sales@phoenixprecisiondrones.com",
+      "contact_phone": "602-780-2980",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection",
+        "Agriculture and natural resources"
+      ],
+      "sources": [
+        {
+          "title": "Phoenix Precision Drones company services and contact",
+          "url": "https://www.phoenixprecisiondrones.com/",
+          "supports": "Phoenix location, commercial technical drone service catalog and business contact."
+        }
+      ],
+      "research_notes": "No physical street address, fielded AI autonomy or pesticide application authority inferred from advertised workflow descriptions."
+    },
+    {
+      "state": "AZ",
+      "name": "Lyon Engineering and Surveying - Prescott drone-services practice",
+      "record_type": "organization",
+      "city": "Prescott",
+      "address_line": "2971 Willow Creek Road, Building 2",
+      "postal_code": "86301",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_source_url": "https://lyonengineering.com/drone-services/",
+      "location_notes": "Published office, room or facility address; no coordinates, flight boundary or external access assigned.",
+      "website_url": "https://lyonengineering.com/drone-services/",
+      "short_description": "Prescott engineering and surveying business with an in-house sUAS team for orthographic imagery, terrain models and municipal project documentation.",
+      "overview": "Lyon documents commercial drone pilots and photogrammetric survey processing. Its current service page publishes a Prescott office address.",
+      "unmanned_systems_relevance": "Explicit local commercial UAS operation supporting survey and infrastructure work.",
+      "contact_url": "https://lyonengineering.com/drone-services/",
+      "contact_email": "info@lyonengineering.com",
+      "contact_phone": "928-776-1750",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Data engineering, analytics, and edge computing",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Lyon drone services and current Prescott contact",
+          "url": "https://lyonengineering.com/drone-services/",
+          "supports": "In-house UAS capability, photogrammetry deliverables and current office address."
+        }
+      ],
+      "research_notes": "Current company address used instead of older 1650 Willow Creek proposal address. Claimed mapping accuracy and airspace authorization are not treated as universal or independently validated."
+    },
+    {
+      "state": "AZ",
+      "name": "Westwood Professional Services - Scottsdale aerial mapping support",
+      "record_type": "organization",
+      "city": "Scottsdale",
+      "address_line": "6909 East Greenway Parkway, Suite 250",
+      "postal_code": "85254",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_source_url": "https://westwoodps.com/about-us/offices",
+      "location_notes": "Published office, room or facility address; no coordinates, flight boundary or external access assigned.",
+      "website_url": "https://westwoodps.com/services/aerial-mapping-lidar",
+      "short_description": "Scottsdale office of an engineering firm with explicit drone-based LiDAR, inspection imagery, thermography and aerial mapping services.",
+      "overview": "Westwood's current office directory documents its Arizona presence, while its aerial-mapping practice describes UAS data collection for energy, infrastructure and development.",
+      "unmanned_systems_relevance": "Specific drone geospatial and inspection capability in a firm with a documented Arizona office.",
+      "contact_url": "https://westwoodps.com/about-us/offices",
+      "contact_email": "",
+      "contact_phone": "480-747-6558",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Westwood current office directory",
+          "url": "https://westwoodps.com/about-us/offices",
+          "supports": "Scottsdale office address and phone; company labels the metro office Phoenix."
+        },
+        {
+          "title": "Westwood aerial mapping and LiDAR practice",
+          "url": "https://westwoodps.com/services/aerial-mapping-lidar",
+          "supports": "Company UAS collection, LiDAR, thermography and inspection capability."
+        }
+      ],
+      "research_notes": "Company-wide service capability; no specific aircraft or pilot based at the Scottsdale office asserted."
+    },
+    {
+      "state": "AZ",
+      "name": "Dronesmith USA - Arizona UAV motor development",
+      "record_type": "organization",
+      "city": "Gilbert",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://qu4trolabs.com/companies/dronesmith",
+      "location_notes": "Company site identifies Arizona; its affiliated venture-studio portfolio identifies Gilbert headquarters. No factory street address assigned.",
+      "website_url": "https://dronesmithusa.com/",
+      "short_description": "Arizona UAV propulsion developer presenting pre-production brushless motor designs for industrial, ISR and defense multirotors.",
+      "overview": "Dronesmith USA's own site explicitly labels its motor lineup and specifications as pre-production. Its affiliated studio describes the Arizona development and planned manufacturing scale-up.",
+      "unmanned_systems_relevance": "Purpose-built UAV motor development and domestic propulsion supply-chain activity.",
+      "contact_url": "https://dronesmithusa.com/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Manufacturing and supply chain",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Propulsion, batteries, fuels, and energy systems",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Dronesmith USA current pre-production motor lineup",
+          "url": "https://dronesmithusa.com/",
+          "supports": "Arizona presence, UAV motor development and explicit preliminary/pre-production status."
+        },
+        {
+          "title": "Affiliated Qu4tro Labs Dronesmith portfolio",
+          "url": "https://qu4trolabs.com/companies/dronesmith",
+          "supports": "Gilbert headquarters and manufacturing scale-up plans; not proof of volume production."
+        }
+      ],
+      "research_notes": "Not listed as a confirmed production plant. No fielded product, order fulfillment, NDAA compliance verification, production capacity or technical limits asserted."
+    },
+    {
+      "state": "AZ",
+      "name": "Bent River Machine - Clarkdale robotic automation manufacturing",
+      "record_type": "facility",
+      "city": "Clarkdale",
+      "address_line": "951 Rio Torcido",
+      "postal_code": "86324",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.bent-river.com/custom-manufacturing-services",
+      "location_notes": "Published office, room or facility address; no coordinates, flight boundary or external access assigned.",
+      "website_url": "https://www.bent-river.com/",
+      "short_description": "Clarkdale manufacturer designing and integrating robotic production cells, controls, sensors and custom automation equipment.",
+      "overview": "Bent River describes in-house engineering, machining, assembly and controls integration for purpose-built manufacturing systems.",
+      "unmanned_systems_relevance": "Specific robotics integration and fabrication capacity supporting the wider autonomy and manufacturing ecosystem.",
+      "contact_url": "https://www.bent-river.com/",
+      "contact_email": "info@bent-river.com",
+      "contact_phone": "928-634-7568",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing facilities",
+        "Manufacturing and supply chain"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Bent River custom manufacturing and robotics integration",
+          "url": "https://www.bent-river.com/custom-manufacturing-services",
+          "supports": "Explicit integrated robotics, controls, manufacturing capabilities and Clarkdale facility address."
+        }
+      ],
+      "research_notes": "Industrial robotics supplier, not claimed to produce aircraft or autonomous mobile vehicles. No specific UAS customer or external test access inferred."
+    },
+    {
+      "state": "AZ",
+      "name": "Futura Automation - Scottsdale robotics components and engineering",
+      "record_type": "organization",
+      "city": "Scottsdale",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://futura-automation.com/contact-us/",
+      "location_notes": "Published locality or office reference only; no coordinates, flight boundary or site access assigned.",
+      "website_url": "https://futura-automation.com/",
+      "short_description": "Scottsdale automation supplier offering robot arms, end-of-arm tooling, machine vision, motion controls and application engineering.",
+      "overview": "Futura's current site documents robotics components and technical selection support, and its contact page identifies Scottsdale.",
+      "unmanned_systems_relevance": "Specific robotic integration and sensing supply-chain support.",
+      "contact_url": "https://futura-automation.com/contact-us/",
+      "contact_email": "",
+      "contact_phone": "855-938-8872",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers",
+        "Manufacturing and supply chain"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Perception, sensing, and sensor fusion",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Futura Automation current robotics catalog",
+          "url": "https://futura-automation.com/",
+          "supports": "Robotics, end-of-arm tools, vision and motion-control offerings."
+        },
+        {
+          "title": "Futura Scottsdale contact",
+          "url": "https://futura-automation.com/contact-us/",
+          "supports": "Current Scottsdale business presence and public phone."
+        }
+      ],
+      "research_notes": "Arizona office, not a claimed robot factory. A company-described demonstration facility in Southern California is not attributed to Scottsdale."
+    },
+    {
+      "state": "AZ",
+      "name": "Hadrian Factory 3 - Mesa autonomous manufacturing facility",
+      "record_type": "facility",
+      "city": "Mesa",
+      "address_line": "10101 E. Pecos Road",
+      "postal_code": "85212",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.hadrian.co/contact",
+      "location_notes": "Published office, room or facility address; no coordinates, flight boundary or external access assigned.",
+      "website_url": "https://www.hadrian.co/about",
+      "short_description": "Mesa precision-manufacturing facility using Hadrian's software-driven factory-autonomy and automated inspection model.",
+      "overview": "Hadrian's current factory directory identifies F3 in Mesa; its own technology description covers production autonomy, manufacturing and inspection automation.",
+      "unmanned_systems_relevance": "Supporting robotic and autonomous production capacity, not an assumed Arizona drone assembly line.",
+      "contact_url": "https://www.hadrian.co/contact",
+      "contact_email": "rfq@hadrian.co",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing facilities",
+        "Manufacturing and supply chain"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Hadrian factory directory and autonomy model",
+          "url": "https://www.hadrian.co/about",
+          "supports": "Current F3 Mesa facility and factory-autonomy/automated inspection model."
+        },
+        {
+          "title": "Hadrian F3 contact",
+          "url": "https://www.hadrian.co/contact",
+          "supports": "Published Mesa manufacturing address and business RFQ channel."
+        },
+        {
+          "title": "Hadrian Arizona expansion announcement",
+          "url": "https://www.hadrian.co/blog/series-c",
+          "supports": "2025 development history, robotics-enabled production model and explicitly prospective UAS initiatives."
+        }
+      ],
+      "research_notes": "2025 plans are distinguished from current factory listing. No specific UAS product, defense customer production authorization or capacity at Mesa asserted."
+    },
+    {
+      "state": "AZ",
+      "name": "DroneDaddy - Cordes Lakes robotic rover and UAS development",
+      "record_type": "organization",
+      "city": "Cordes Lakes",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://dronedaddy.net/",
+      "location_notes": "Company publishes Cordes Lakes presence and appointment-only visits. No street location or public-access facility assigned.",
+      "website_url": "https://dronedaddy.net/",
+      "short_description": "Cordes Lakes business describing custom autonomous rovers, drones and thermal-imaging inspection services.",
+      "overview": "DroneDaddy advertises custom robotic builds and thermal data capture and interpretation from its Arizona business location.",
+      "unmanned_systems_relevance": "Direct ground and aerial robotic development and inspection offering.",
+      "contact_url": "https://dronedaddy.net/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Perception, sensing, and sensor fusion",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [
+        "Infrastructure inspection",
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "DroneDaddy robotics and thermal imaging",
+          "url": "https://dronedaddy.net/",
+          "supports": "Cordes Lakes presence, custom rover/drone builds and thermal inspection offering."
+        }
+      ],
+      "research_notes": "Company-described capability, not independently tested autonomy or proven delivery deployment. Visits require appointment; no open test access inferred."
+    },
+    {
+      "state": "AZ",
+      "name": "MSI TEC - Phoenix robotics and autonomous mobile-robot support",
+      "record_type": "organization",
+      "city": "Phoenix",
+      "address_line": "4050 E. Cotton Center Blvd, Suite 14",
+      "postal_code": "85040",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_source_url": "https://msitec.com/contact-us/",
+      "location_notes": "Published office, room or facility address; no coordinates, flight boundary or external access assigned.",
+      "website_url": "https://msitec.com/",
+      "short_description": "Phoenix office of a robotics and controls supplier with autonomous mobile robots, cobots, machine vision and engineered integration services.",
+      "overview": "MSI TEC documents robotics products and engineered solutions and maintains a current Phoenix office listing.",
+      "unmanned_systems_relevance": "Specific robotic and self-navigating vehicle supply and engineering support.",
+      "contact_url": "https://msitec.com/contact-us/",
+      "contact_email": "",
+      "contact_phone": "602-426-1333",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers",
+        "Manufacturing and supply chain"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Navigation and positioning",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Logistics and contested logistics",
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "MSI TEC automation and robotics services",
+          "url": "https://msitec.com/",
+          "supports": "Robotics and engineered automation solutions."
+        },
+        {
+          "title": "MSI TEC contact and robotics catalog navigation",
+          "url": "https://msitec.com/contact-us/",
+          "supports": "Current Phoenix office and explicit autonomous mobile robot/cobot product categories."
+        }
+      ],
+      "research_notes": "Company-wide catalog plus Arizona office; no claim of Phoenix robot manufacturing or a specific local deployed customer. Logistics taxonomy denotes industrial material transport, not a defense deployment."
+    },
+    {
+      "state": "AZ",
+      "name": "Salt River Project - Arizona utility UAS inspection operations",
+      "record_type": "program",
+      "city": "",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://www.srpnet.com/assets/srpnet/pdf/about/governance-leadership/district-meetings/20250107_DC_packet.pdf",
+      "location_notes": "Greater Phoenix utility operations, not a claimed single UAS base or public test range.",
+      "website_url": "https://www.srpnet.com/",
+      "short_description": "Utility drone inspection program for overhead distribution equipment, supported by Flight Services and continuing UAS budget planning.",
+      "overview": "SRP's grid-performance report documents coordinated pilot/lineworker drone inspections using visual and infrared imagery. Its FY2027 proposed budget includes Flight Services UAS equipment.",
+      "unmanned_systems_relevance": "Documented industrial UAS operator and utility inspection customer.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Programs and initiatives",
+        "Digital, data, energy, and communications infrastructure"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "SRP 2024 Grid Performance Report in January 2025 district packet",
+          "url": "https://www.srpnet.com/assets/srpnet/pdf/about/governance-leadership/district-meetings/20250107_DC_packet.pdf",
+          "supports": "SRP's own account of urban power-line drone inspection operations."
+        },
+        {
+          "title": "SRP FY2027 organizational budget proposal",
+          "url": "https://www.srpnet.com/v3/assets/bltefc1fc708dcc94e7/blte4bb2ae61776b82b/20260310_FB_Budgets_packet.pdf",
+          "supports": "2026 documentation of Flight Services UAS equipment budgeting; proposal is not procurement completion."
+        }
+      ],
+      "research_notes": "No access to live power assets or permission to fly near utility infrastructure implied. Proposed expenditure is not a confirmed aircraft purchase."
+    },
+    {
+      "state": "AZ",
+      "name": "Tucson Electric Power - drone-supported grid and vegetation inspections",
+      "record_type": "program",
+      "city": "Tucson",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://www.tep.com/wildfire-safety-prevention/",
+      "location_notes": "Program/service-area reference; no single operating base, coordinates or boundary assigned.",
+      "website_url": "https://www.tep.com/wildfire-safety-prevention/",
+      "short_description": "Tucson utility using drones with asset-maintenance inspections to identify vegetation encroachment and hard-to-reach grid concerns.",
+      "overview": "TEP's current wildfire-prevention page explicitly describes drone use as part of transmission and vegetation inspection efforts.",
+      "unmanned_systems_relevance": "Documented local industrial use of UAS sensing for utility maintenance.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Programs and initiatives",
+        "Digital, data, energy, and communications infrastructure"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Infrastructure inspection",
+        "Environmental monitoring"
+      ],
+      "sources": [
+        {
+          "title": "TEP wildfire safety and prevention",
+          "url": "https://www.tep.com/wildfire-safety-prevention/",
+          "supports": "Current Arizona grid context and explicit drone-supported maintenance/vegetation inspections."
+        }
+      ],
+      "research_notes": "No dedicated drone base, fleet ownership or public test access established. TEP's New Mexico wind-farm drone work is not mapped as an Arizona physical asset."
+    },
+    {
+      "state": "AZ",
+      "name": "Arizona Forestry and Fire Management - agency drone program",
+      "record_type": "program",
+      "city": "",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://dffm.az.gov/fire/suppression/aviation",
+      "location_notes": "Program/service-area reference; no single operating base, coordinates or boundary assigned.",
+      "website_url": "https://dffm.az.gov/fire/suppression/aviation",
+      "short_description": "Arizona wildland-fire agency drone program for reconnaissance, mapping, heat sensing and prescribed-burn planning.",
+      "overview": "DFFM's current aviation program page describes an agency drone program begun in 2019 and its role in wildfire situational awareness and data gathering.",
+      "unmanned_systems_relevance": "Direct public-agency UAS program with documented wildfire and land-management missions.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Programs and initiatives"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Public safety and emergency response",
+        "Environmental monitoring",
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "DFFM Aviation - Agency Drones",
+          "url": "https://dffm.az.gov/fire/suppression/aviation",
+          "supports": "Agency drone program, Arizona operational context and specific fire/planning uses."
+        }
+      ],
+      "research_notes": "Program listing is not permission for third-party drone flights on incidents. No operational limits, live incident status or external access asserted."
+    },
+    {
+      "state": "AZ",
+      "name": "Avondale Police - public-safety drone program",
+      "record_type": "program",
+      "city": "Avondale",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "service-area",
+      "location_source_url": "https://avondaleaz.gov/app/uploads/2026/04/FY2027-City-Managers-Recommended-Budget-FINAL-v2.pdf",
+      "location_notes": "Published locality or office reference only; no coordinates, flight boundary or site access assigned.",
+      "website_url": "",
+      "short_description": "Police drone program documented in Avondale's FY2027 budget material; an automated first-responder expansion is separately proposed.",
+      "overview": "The 2026 budget narrative describes an existing officer-deployed drone program and trained pilots, then proposes dock-based Drone as First Responder capability.",
+      "unmanned_systems_relevance": "Established local public-safety UAS operation; proposed DFR capability is not counted as a separate asset.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Programs and initiatives"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "Avondale FY2027 recommended budget - Public Safety Drone Program",
+          "url": "https://avondaleaz.gov/app/uploads/2026/04/FY2027-City-Managers-Recommended-Budget-FINAL-v2.pdf",
+          "supports": "2026 first-party account of existing officer-deployed drone operations and separately proposed DFR expansion."
+        }
+      ],
+      "research_notes": "Budget proposal does not establish operational launch of DFR. Aircraft counts, speeds, heights and service radii intentionally omitted. No direct standalone program website found."
+    },
+    {
+      "state": "AZ",
+      "name": "Gilbert Police - patrol UAS program",
+      "record_type": "program",
+      "city": "Gilbert",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "service-area",
+      "location_source_url": "https://www.gilbertaz.gov/home/showpublisheddocument/49822/638609575096170000",
+      "location_notes": "Published locality or office reference only; no coordinates, flight boundary or site access assigned.",
+      "website_url": "https://www.gilbertaz.gov/departments/police/",
+      "short_description": "Gilbert police patrol UAS program documented in departmental budget objectives and aircraft funding records.",
+      "overview": "The town's police budget describes expansion of an existing patrol-based unmanned aircraft program. The current department page confirms the continuing Gilbert agency.",
+      "unmanned_systems_relevance": "Documented municipal public-safety drone program, distinct from Gilbert Fire and Rescue.",
+      "contact_url": "https://www.gilbertaz.gov/departments/police/",
+      "contact_email": "",
+      "contact_phone": "480-503-6500",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Programs and initiatives"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "Gilbert Police FY2025 departmental budget",
+          "url": "https://www.gilbertaz.gov/home/showpublisheddocument/49822/638609575096170000",
+          "supports": "Explicit patrol UAS program and expansion objective."
+        },
+        {
+          "title": "Gilbert Police current department page",
+          "url": "https://www.gilbertaz.gov/departments/police/",
+          "supports": "Current local agency and non-emergency public contact."
+        }
+      ],
+      "research_notes": "Program scope grounded in FY2025 budget; no current fleet size, DFR capability or aircraft acquisition completion inferred."
+    },
+    {
+      "state": "AZ",
+      "name": "Gilbert Fire and Rescue - drone operations specialty",
+      "record_type": "program",
+      "city": "Gilbert",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "service-area",
+      "location_source_url": "https://www.gilbertaz.gov/Home/Components/News/News/6653/17?npage=5",
+      "location_notes": "Published locality or office reference only; no coordinates, flight boundary or site access assigned.",
+      "website_url": "https://www.gilbertaz.gov/departments/fire-and-rescue",
+      "short_description": "Gilbert Fire and Rescue specialty assignment explicitly identifying drone operations in its 2026 workforce recruitment.",
+      "overview": "The department's February 2026 recruitment announcement lists drone operations alongside its other specialized career assignments.",
+      "unmanned_systems_relevance": "Department-specific fire-service UAS workforce and operational specialty, distinct from the police patrol program.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Programs and initiatives",
+        "Workforce and talent"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Public safety and emergency response",
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Gilbert Fire and Rescue 2026 recruitment announcement",
+          "url": "https://www.gilbertaz.gov/Home/Components/News/News/6653/17?npage=5",
+          "supports": "Current department-specific drone operations specialty."
+        },
+        {
+          "title": "Gilbert Fire and Rescue department",
+          "url": "https://www.gilbertaz.gov/departments/fire-and-rescue",
+          "supports": "Direct current department website and Gilbert presence."
+        }
+      ],
+      "research_notes": "Only the drone specialty is established, not fleet size, sensor configuration or DFR deployment. Recruitment does not establish particular incident operations."
+    },
+    {
+      "state": "AZ",
+      "name": "Tempe Police - public-safety drone program",
+      "record_type": "program",
+      "city": "Tempe",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "service-area",
+      "location_source_url": "https://www.tempe.gov/home/showpublisheddocument/102595/638288312949070000",
+      "location_notes": "Published locality or office reference only; no coordinates, flight boundary or site access assigned.",
+      "website_url": "",
+      "short_description": "Police UAS program described in Tempe's official safety planning for special events and appropriate calls for service.",
+      "overview": "The city's safety element specifically identifies a Tempe Police drone program, separate from the fire department's tethered-UAS capability already listed elsewhere.",
+      "unmanned_systems_relevance": "Documented municipal police use of UAS for event and incident awareness.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Programs and initiatives"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "Tempe official safety element",
+          "url": "https://www.tempe.gov/home/showpublisheddocument/102595/638288312949070000",
+          "supports": "Explicit Tempe Police drone program for special events and calls for service."
+        }
+      ],
+      "research_notes": "Program evidence is the city's 2023 safety planning document; no current fleet, DFR status or later expansion asserted. No direct standalone program website found."
+    },
+    {
+      "state": "AZ",
+      "name": "Yavapai County Sheriff - UAV and search-and-rescue support",
+      "record_type": "program",
+      "city": "",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://www.ycsoaz.gov/News-Articles/TWO-YCSO-EMPLOYEES-HONORED-FOR-25-YEARS-OF-SERVICE",
+      "location_notes": "Program/service-area reference; no single operating base, coordinates or boundary assigned.",
+      "website_url": "",
+      "short_description": "County sheriff UAV capability documented for critical incidents, accident reconstruction and search-and-rescue support.",
+      "overview": "YCSO's September 2025 account identifies an agency drone pilot and specific critical-incident, crash reconstruction and rescue assignments.",
+      "unmanned_systems_relevance": "Direct county public-safety UAS capability and documented rescue-team participation.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Programs and initiatives"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Search and rescue",
+        "Public safety and emergency response",
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "YCSO agency UAV pilot and missions",
+          "url": "https://www.ycsoaz.gov/News-Articles/TWO-YCSO-EMPLOYEES-HONORED-FOR-25-YEARS-OF-SERVICE",
+          "supports": "Agency's original 2025 description of UAV critical incident, crash reconstruction and SAR assignments."
+        }
+      ],
+      "research_notes": "County service-area reference only. No separate records for individual pilots, volunteer units or temporary incident launch sites."
+    },
+    {
+      "state": "AZ",
+      "name": "Oro Valley Police - UAV operations capability",
+      "record_type": "program",
+      "city": "Oro Valley",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "service-area",
+      "location_source_url": "https://www.orovalleyaz.gov/files/assets/public/v/4/documents/police/policies-and-procedures/2023-annual-report-compressed.pdf",
+      "location_notes": "Published locality or office reference only; no coordinates, flight boundary or site access assigned.",
+      "website_url": "https://www.orovalleyaz.gov/police/chief-police",
+      "short_description": "Oro Valley police UAV capability with documented indoor-capable systems and regional tactical support.",
+      "overview": "OVPD's annual report describes expanded UAV platforms and training. A 2024 town report documents a drone used in a local incident.",
+      "unmanned_systems_relevance": "Specific agency drone systems and operational use, not merely a generic policy template.",
+      "contact_url": "https://www.orovalleyaz.gov/police/chief-police",
+      "contact_email": "",
+      "contact_phone": "520-229-4900",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Programs and initiatives"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "OVPD 2023 annual report - UAV capability",
+          "url": "https://www.orovalleyaz.gov/files/assets/public/v/4/documents/police/policies-and-procedures/2023-annual-report-compressed.pdf",
+          "supports": "Fielded indoor-capable UAV and regional collaboration."
+        },
+        {
+          "title": "Oro Valley September 2024 town manager report",
+          "url": "https://www.orovalleyaz.gov/files/assets/public/v/1/documents/town-manager/executive-reports/2024_sept_tm-report-to-council.pdf",
+          "supports": "Local police drone incident use."
+        },
+        {
+          "title": "OVPD current department page",
+          "url": "https://www.orovalleyaz.gov/police/chief-police",
+          "supports": "Current Arizona agency and public contact."
+        }
+      ],
+      "research_notes": "Dated deployment evidence retained; no current fleet count, technical limits or DFR capability inferred."
+    },
+    {
+      "state": "AZ",
+      "name": "Buckeye Fire Medical Rescue - preparedness drone program",
+      "record_type": "program",
+      "city": "Buckeye",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "service-area",
+      "location_source_url": "https://www.buckeyeaz.gov/residents/fire-medical-rescue-department/preparedness-division/buckeye-is-prepared-are-you",
+      "location_notes": "Published locality or office reference only; no coordinates, flight boundary or site access assigned.",
+      "website_url": "https://www.buckeyeaz.gov/residents/fire-medical-rescue-department/preparedness-division/buckeye-is-prepared-are-you",
+      "short_description": "Fire-department preparedness drone program supporting threat and vulnerability assessment before and during local events.",
+      "overview": "Buckeye's current emergency-preparedness page explicitly lists an implemented drone program for event threat/vulnerability assessment.",
+      "unmanned_systems_relevance": "Specific municipal public-safety UAS program documented by its operator.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Programs and initiatives"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "Buckeye preparedness division - implemented drone program",
+          "url": "https://www.buckeyeaz.gov/residents/fire-medical-rescue-department/preparedness-division/buckeye-is-prepared-are-you",
+          "supports": "Local department, implemented program and event assessment purpose."
+        }
+      ],
+      "research_notes": "No police drone expansion, permanent docking network or unrestricted event surveillance authority inferred."
+    },
+    {
+      "state": "AZ",
+      "name": "Paradise Valley Police - patrol drone program",
+      "record_type": "program",
+      "city": "Paradise Valley",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "service-area",
+      "location_source_url": "https://www.paradisevalleyaz.gov/DocumentCenter/View/11564/2024-PVPD-Annual-Report",
+      "location_notes": "Published locality or office reference only; no coordinates, flight boundary or site access assigned.",
+      "website_url": "https://www.paradisevalleyaz.gov/408/Patrol",
+      "short_description": "Municipal police drone program documented with trained shift operators and subsequent patrol expansion.",
+      "overview": "PVPD's 2023 report describes certified operators on each shift; its 2024 annual report describes expansion of the patrol drone program.",
+      "unmanned_systems_relevance": "Documented local public-safety UAS operation.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Programs and initiatives"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "PVPD 2024 annual report",
+          "url": "https://www.paradisevalleyaz.gov/DocumentCenter/View/11564/2024-PVPD-Annual-Report",
+          "supports": "Agency's own account of patrol drone program expansion."
+        },
+        {
+          "title": "PVPD 2023 annual report",
+          "url": "https://www.paradisevalleyaz.gov/DocumentCenter/View/11151/2023-PVPD-Annual-Report",
+          "supports": "Shift operator training and established drone program."
+        }
+      ],
+      "research_notes": "Dated reports establish capability, not a November 2026 fleet inventory, DFR network or flight authorization."
+    },
+    {
+      "state": "AZ",
+      "name": "Casa Grande Police - Safe City Drone as First Responder",
+      "record_type": "program",
+      "city": "Casa Grande",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "service-area",
+      "location_source_url": "https://casagrandeaz.gov/698/Safe-City-Initiative",
+      "location_notes": "Published locality or office reference only; no coordinates, flight boundary or site access assigned.",
+      "website_url": "https://casagrandeaz.gov/698/Safe-City-Initiative",
+      "short_description": "City police Drone as First Responder program using rooftop docking stations for aerial support during selected calls for service.",
+      "overview": "Casa Grande's current Safe City page describes DFR deployment, oversight and public transparency resources. It distinguishes call-based response from routine patrol.",
+      "unmanned_systems_relevance": "Documented dock-based public-safety UAS operation.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Programs and initiatives"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Command, control, and communications",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "Casa Grande Safe City Initiative - DFR",
+          "url": "https://casagrandeaz.gov/698/Safe-City-Initiative",
+          "supports": "Agency's current description of rooftop drone docking and selected incident response."
+        }
+      ],
+      "research_notes": "No rooftop addresses, response-time guarantee, service radius or external operating permission asserted."
+    },
+    {
+      "state": "AZ",
+      "name": "Yuma Police - tactical and tethered drone capability",
+      "record_type": "program",
+      "city": "Yuma",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "service-area",
+      "location_source_url": "https://www.yumaaz.gov/home/showpublisheddocument/10518/638833556436400000",
+      "location_notes": "Published locality or office reference only; no coordinates, flight boundary or site access assigned.",
+      "website_url": "https://www.yumaaz.gov/drone",
+      "short_description": "Yuma police drone capability documented for calls for service, including earlier deployment of tactical and tethered systems.",
+      "overview": "The city's FY2026 budget records implemented police drone response. Its 2023 department report names forensic tethered-drone and tactical-drone deployments.",
+      "unmanned_systems_relevance": "Agency-specific operational UAS program, distinct from Yuma Fire's separately documented team.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Programs and initiatives"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "Yuma FY2026 budget - Police accomplishments",
+          "url": "https://www.yumaaz.gov/home/showpublisheddocument/10518/638833556436400000",
+          "supports": "Implemented drone technology for calls for service."
+        },
+        {
+          "title": "Yuma Police 2023 department report",
+          "url": "https://www.yumaaz.gov/home/showpublisheddocument/8480/638551932445400000",
+          "supports": "Documented forensic Fotokite and tactical LOKI deployments."
+        },
+        {
+          "title": "City of Yuma drone transparency announcement",
+          "url": "https://www.yumaaz.gov/Home/Components/News/News/2037/308",
+          "supports": "Official program URL, city drone policy context and flight transparency resource."
+        }
+      ],
+      "research_notes": "Named systems are dated deployments, not a verified current fleet. No separate umbrella City of Yuma program asset added."
+    },
+    {
+      "state": "AZ",
+      "name": "Yuma Fire Department - Unmanned Aircraft Systems program",
+      "record_type": "program",
+      "city": "Yuma",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "service-area",
+      "location_source_url": "https://www.yumaaz.gov/home/showpublisheddocument/12200/639105518067970000",
+      "location_notes": "Published locality or office reference only; no coordinates, flight boundary or site access assigned.",
+      "website_url": "https://www.yumaaz.gov/drone",
+      "short_description": "Fire-department UAS program supporting suppression, search and rescue, hazardous-materials incidents and scene assessment.",
+      "overview": "Yuma Fire's 2025 annual report, published in 2026, identifies a dedicated UAS program among its special operations capabilities.",
+      "unmanned_systems_relevance": "Specific current fire-service UAS capability, not inferred from the city's general drone policy.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Programs and initiatives"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue"
+      ],
+      "sources": [
+        {
+          "title": "Yuma Fire 2025 annual report - special operations UAS",
+          "url": "https://www.yumaaz.gov/home/showpublisheddocument/12200/639105518067970000",
+          "supports": "Department-specific UAS program and documented mission scope."
+        },
+        {
+          "title": "City of Yuma drone transparency program",
+          "url": "https://www.yumaaz.gov/Home/Components/News/News/2037/308",
+          "supports": "Published official city drone program URL used as website."
+        }
+      ],
+      "research_notes": "Separate fire team supported by its own report. No station coordinates, fleet size or unrestricted incident flight authority asserted."
+    },
+    {
+      "state": "AZ",
+      "name": "Cochise County Sheriff Search and Rescue - drone-supported training",
+      "record_type": "program",
+      "city": "",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://www.cochise.az.gov/Archive/ViewFile/Item/831",
+      "location_notes": "Program/service-area reference; no single operating base, coordinates or boundary assigned.",
+      "website_url": "",
+      "short_description": "Sheriff search-and-rescue program documenting drone imagery during technical rescue training in Cochise County.",
+      "overview": "The April 2025 SAR newsletter records drone capture of technical rope-rescue training at West Stronghold.",
+      "unmanned_systems_relevance": "Documented local rescue-team use of UAS for training and scene documentation.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Programs and initiatives"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Training and experimentation",
+        "Search and rescue"
+      ],
+      "sources": [
+        {
+          "title": "Cochise County Sheriff SAR April 2025 newsletter",
+          "url": "https://www.cochise.az.gov/Archive/ViewFile/Item/831",
+          "supports": "First-party account of drone imaging at technical rescue training in Cochise County."
+        }
+      ],
+      "research_notes": "Narrow training-use evidence only. Does not establish a dedicated SAR fleet, border-patrol drone capability, current deployment inventory or externally accessible test site."
+    },
+    {
+      "state": "AZ",
+      "name": "ASU Active Perception Group",
+      "record_type": "program",
+      "city": "Tempe",
+      "address_line": "Brickyard Engineering 562, 699 S Mill Ave",
+      "postal_code": "85281",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "research",
+      "location_source_url": "https://faculty.engineering.asu.edu/yezhouyang/",
+      "location_notes": "Published office, room or facility address; no coordinates, flight boundary or external access assigned.",
+      "website_url": "https://faculty.engineering.asu.edu/yezhouyang/",
+      "short_description": "Tempe research group studying robot vision, cognitive robotics and visual learning for intelligent agents.",
+      "overview": "Yezhou Yang directs the group, whose current faculty site documents robot perception and autonomous-vehicle situation-awareness research.",
+      "unmanned_systems_relevance": "Direct perception and AI research relevant to autonomous robots and vehicles.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Research and technical depth"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Autonomy and artificial intelligence"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "ASU Active Perception Group and faculty contact",
+          "url": "https://faculty.engineering.asu.edu/yezhouyang/",
+          "supports": "Current group, cognitive/robot vision research and Tempe office location."
+        }
+      ],
+      "research_notes": "Office contact reference, not a separately documented flight field. Group is distinct from the existing ASU ACS, DREAMS and RISE labs."
+    },
+    {
+      "state": "AZ",
+      "name": "ASU Autonomous Agents and Intelligent Robots Lab",
+      "record_type": "program",
+      "city": "Tempe",
+      "address_line": "Brickyard Engineering 501, 699 S Mill Ave",
+      "postal_code": "85281",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "research",
+      "location_source_url": "https://aair-lab.github.io/index.html",
+      "location_notes": "Published office, room or facility address; no coordinates, flight boundary or external access assigned.",
+      "website_url": "https://aair-lab.github.io/index.html",
+      "short_description": "Tempe AAIR research lab developing planning and reasoning methods for autonomous agents and intelligent robots.",
+      "overview": "The lab studies reliable and generalizable behavior under uncertainty and lists physical mobile-manipulator and tabletop research robots.",
+      "unmanned_systems_relevance": "Direct robotic autonomy, task planning and experimental robot research.",
+      "contact_url": "https://aair-lab.github.io/index.html",
+      "contact_email": "aair.lab@asu.edu",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Research and technical depth"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "AAIR Lab research, robots and Tempe contact",
+          "url": "https://aair-lab.github.io/index.html",
+          "supports": "Lab's own current team, physical robot platforms and Tempe address."
+        },
+        {
+          "title": "ASU official research lab directory",
+          "url": "https://scai.engineering.asu.edu/research-labs/",
+          "supports": "University recognition of AAIR and its autonomous planning/mobile-manipulation research."
+        }
+      ],
+      "research_notes": "Specific lab, not a duplicate whole-university listing. No public robot or flight-site access inferred."
+    },
+    {
+      "state": "AZ",
+      "name": "ASU Self-Organizing Particle Systems Lab",
+      "record_type": "program",
+      "city": "",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "research",
+      "location_source_url": "https://scai.engineering.asu.edu/research-labs/",
+      "location_notes": "ASU research-group reference within a multi-university collaboration; no specific room or physical experiment site assigned.",
+      "website_url": "https://labs.engineering.asu.edu/sops/",
+      "short_description": "ASU research group studying distributed algorithms, programmable matter and collective behavior in simple robotic systems.",
+      "overview": "The SOPS collaboration combines theory, simulation and physical experiments on self-organizing systems and analog robots.",
+      "unmanned_systems_relevance": "Specific collective-robotics research rather than a generic computing laboratory.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Research and technical depth"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Simulation, digital twins, and synthetic environments"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "ASU SOPS Lab",
+          "url": "https://labs.engineering.asu.edu/sops/",
+          "supports": "Programmable-matter research, robotics and physical/simulated experiments."
+        },
+        {
+          "title": "ASU research laboratory directory - SOPS",
+          "url": "https://scai.engineering.asu.edu/research-labs/",
+          "supports": "ASU group affiliation and simple robotic systems research."
+        }
+      ],
+      "research_notes": "Only the ASU component is represented. Collaborative experiments at other universities are not assumed to be located in Arizona."
+    },
+    {
+      "state": "AZ",
+      "name": "ASU Cooperative Robotic Systems Lab - Yu Zhang research group",
+      "record_type": "program",
+      "city": "Tempe",
+      "address_line": "Brickyard Engineering 594, 699 S Mill Ave",
+      "postal_code": "85281",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "research",
+      "location_source_url": "https://crslabasu.github.io/",
+      "location_notes": "Published office, room or facility address; no coordinates, flight boundary or external access assigned.",
+      "website_url": "https://crslabasu.github.io/",
+      "short_description": "Tempe research group studying human-robot teaming, distributed robotic systems, multi-agent planning and automated reasoning.",
+      "overview": "Yu Zhang's current ASU research-group site identifies his Tempe office and a research focus on AI methods enabling heterogeneous humans and robots to cooperate.",
+      "unmanned_systems_relevance": "Specific cooperative robotics and autonomous multi-agent reasoning research.",
+      "contact_url": "https://crslabasu.github.io/",
+      "contact_email": "yzhan442@asu.edu",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Research and technical depth"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Yu Zhang ASU Cooperative Robotic Systems research group",
+          "url": "https://crslabasu.github.io/",
+          "supports": "Current ASU research role, cooperative/distributed robotics focus and Tempe contact."
+        }
+      ],
+      "research_notes": "Specific faculty research group; not a second entry for ASU's broader CHART center. Physical office is a contact reference, not a robot test field."
+    },
+    {
+      "state": "AZ",
+      "name": "ASU Robotic Systems Instructional Lab - ISTB 12",
+      "record_type": "facility",
+      "city": "Mesa",
+      "address_line": "ISTB 12, Room 231, ASU Polytechnic campus",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "research",
+      "location_source_url": "https://msn.engineering.asu.edu/istb12/",
+      "location_notes": "Published office, room or facility address; no coordinates, flight boundary or external access assigned.",
+      "website_url": "https://robotics-lab-msn.github.io/index.html",
+      "short_description": "Mesa instructional laboratory for industrial robotics and automation integration.",
+      "overview": "ISTB 12 Room 231 provides hands-on robotic systems instruction.",
+      "unmanned_systems_relevance": "Specific robotics workforce facility, not a whole institution.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Workforce and talent",
+        "Research and technical depth"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "ASU ISTB 12 laboratory directory",
+          "url": "https://msn.engineering.asu.edu/istb12/",
+          "supports": "Distinct named robotics instructional lab and Room 231."
+        },
+        {
+          "title": "Robotics Systems Instructional Lab",
+          "url": "https://robotics-lab-msn.github.io/index.html",
+          "supports": "Lab-specific site and instructional activity."
+        },
+        {
+          "title": "ASU February 2026 ISTB 12 report",
+          "url": "https://news.engineering.asu.edu/2026/02/a-building-for-the-future/",
+          "supports": "Current physical lab use by students and 2025 building opening."
+        }
+      ],
+      "research_notes": "Separate physical teaching lab, not another record for the existing university-wide robotics MS. No public access inferred."
+    },
+    {
+      "state": "AZ",
+      "name": "ASU Hybrid and Multi-Material Manufacturing Lab - ISTB 12",
+      "record_type": "facility",
+      "city": "Mesa",
+      "address_line": "ISTB 12, Room 129, ASU Polytechnic campus",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "research",
+      "location_source_url": "https://msn.engineering.asu.edu/istb12/",
+      "location_notes": "Published office, room or facility address; no coordinates, flight boundary or external access assigned.",
+      "website_url": "https://msn.engineering.asu.edu/istb12/",
+      "short_description": "Mesa research laboratory for multi-robot collaboration and robot-integrated manufacturing.",
+      "overview": "Room 129 studies robotic hybrid manufacturing and smart machining.",
+      "unmanned_systems_relevance": "Documented industrial robotics research facility.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Research and technical depth",
+        "Manufacturing and supply chain"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "ASU ISTB 12 named laboratory directory",
+          "url": "https://msn.engineering.asu.edu/istb12/",
+          "supports": "Room 129 and explicit multi-robot manufacturing research."
+        }
+      ],
+      "research_notes": "Distinct named lab and room, not a second record for ISTB 12 as a whole. No UAS production or external access asserted."
+    },
+    {
+      "state": "AZ",
+      "name": "ASU High Bay Collaborative Space - automated vehicle research",
+      "record_type": "facility",
+      "city": "Mesa",
+      "address_line": "ISTB 12, Room 125, ASU Polytechnic campus",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "research",
+      "location_source_url": "https://msn.engineering.asu.edu/istb12/",
+      "location_notes": "Published office, room or facility address; no coordinates, flight boundary or external access assigned.",
+      "website_url": "https://msn.engineering.asu.edu/istb12/",
+      "short_description": "Mesa high-bay research space for electric and automated vehicles.",
+      "overview": "Room 125 supports automated-vehicle safety control and digital-twin work.",
+      "unmanned_systems_relevance": "Specific ground-vehicle autonomy research space.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Research and technical depth"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Simulation, digital twins, and synthetic environments"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "ASU ISTB 12 laboratory directory",
+          "url": "https://msn.engineering.asu.edu/istb12/",
+          "supports": "Room 125, automated vehicles and safety-control research."
+        },
+        {
+          "title": "ASU ISTB 12 current research activity",
+          "url": "https://news.engineering.asu.edu/2026/02/a-building-for-the-future/",
+          "supports": "2026 description of robotic vehicle research activity in the high bay."
+        }
+      ],
+      "research_notes": "Distinct documented room; no external proving-ground access or autonomous-road operation approval inferred."
+    }
+  ],
+  "held_candidates": [
+    {
+      "state": "AZ",
+      "name": "Daedalean / Icarean - Chandler autonomy lead",
+      "reason": "Recent SBIR and FAA records identify Chandler, but the Daedalean website now redirects to Destinus. Current Arizona operation and post-acquisition identity need direct confirmation; no duplicate or legacy company asset added."
+    },
+    {
+      "state": "AZ",
+      "name": "Biotronic Innovations - Flagstaff SBIR lead",
+      "reason": "2023 robotics path-planning award is a candidate lead only. Current first-party company website and continuing Arizona operation not established."
+    },
+    {
+      "state": "AZ",
+      "name": "Fieldmark agricultural drone spraying",
+      "reason": "Own site says Part 137/commercial application and Arizona agricultural licensing are pending. Not promoted to an operating spray-service asset without clearer current status and Arizona base evidence."
+    },
+    {
+      "state": "AZ",
+      "name": "Phoenix Land Surveying",
+      "reason": "Own service page documents UAS LiDAR and a pilot network, but contact routes to another surveying network. A distinct current Arizona business office or local operator identity was not established."
+    },
+    {
+      "state": "AZ",
+      "name": "Volare LiDAR - Tucson",
+      "reason": "Tucson office and aerial mapping are documented, but evidence reviewed did not resolve unmanned versus crewed aircraft acquisition. No generic aerial-survey entry added."
+    },
+    {
+      "state": "AZ",
+      "name": "Synergy Geomatics and Yavapai test range",
+      "reason": "Phoenix presence and past drone development documented; current text emphasizes a different aerial acquisition method. Test range evidence is a 2015 establishment account, not confirmation of a currently operating UAS test site."
+    },
+    {
+      "state": "AZ",
+      "name": "Cooper Aerial Surveys - Phoenix",
+      "reason": "Own company profile and dated municipal proposal support Phoenix UAV work, but a current directly accessible own service website and business continuity were not resolved in this bounded pass."
+    },
+    {
+      "state": "AZ",
+      "name": "Dibble - drone topography support",
+      "reason": "2025 company proposal supports ground control and processing of drone topography, but did not establish whether Dibble operates UAS or uses a subcontractor. Held rather than implying a local UAS operating practice."
+    },
+    {
+      "state": "AZ",
+      "name": "Tucson Embedded Systems - unmanned robotics",
+      "reason": "Current Tucson embedded engineering/manufacturing presence found, but direct unmanned-ground-vehicle evidence reviewed dates to a 2010 university project. No current UAS/robotics product or program confirmed."
+    },
+    {
+      "state": "AZ",
+      "name": "ForwardX Robotics - historical Phoenix base",
+      "reason": "Association profile mentions Phoenix but lists a California address. Current first-party Arizona office presence was not independently resolved; no stale office record added."
+    },
+    {
+      "state": "AZ",
+      "name": "Flagstaff proposed Drone as First Responder program",
+      "reason": "Current official engagement page says proposal will go to council on November 24, 2026, after the research date. Not represented as operational; existing police drone policies alone do not establish this new DFR network."
+    },
+    {
+      "state": "AZ",
+      "name": "Maricopa Police indoor drone grant equipment",
+      "reason": "October 22, 2026 official notice describes grant-funded intended purchases and an open comment period through November 20. Purchase completion and operational deployment not established."
+    },
+    {
+      "state": "AZ",
+      "name": "AZ AgFlyers",
+      "reason": "A collaborating agricultural business documents Arizona drone spraying and a business contact, but current independent own website and operating-base identity were not established in this pass."
+    },
+    {
+      "state": "AZ",
+      "name": "NAU Intelligent Control Systems Laboratory",
+      "reason": "University capstone records establish historical drone-swarm and autonomous-racing research, but current direct lab website, Arizona staff continuity and active platform program were not resolved. No dated student project promoted to a current lab asset."
+    },
+    {
+      "state": "AZ",
+      "name": "ADOT legacy agency drone fleet",
+      "reason": "Official 2018 implementation and current infrastructure partnership evidence found. January 2026 restrictions bulletin creates uncertainty around the continuing eligible fleet and operations; no present fleet or operational status inferred."
+    }
+  ]
+}

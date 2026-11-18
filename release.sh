@@ -46,6 +46,7 @@ python manage.py apply_source_audit --path data/source_audit_2026_10_06.json
 python manage.py apply_source_audit --path data/source_audit_2026_10_13.json
 python manage.py seed_manufacturing_fit --apply --add-missing-sources
 python manage.py seed_peer_states --apply
+python manage.py correct_peer_websites --apply
 python manage.py scan_asset_duplicates
 python manage.py populate_history --auto --batchsize 500
 python manage.py ensure_admin_user --skip-recovery

@@ -9,6 +9,7 @@ from django.core.exceptions import ValidationError
 from django.core.management.base import BaseCommand, CommandError
 from django.db import transaction
 from django.utils.text import slugify
+from simple_history.utils import bulk_create_with_history
 
 from apps.assets.geography import BY_CODE
 from apps.assets.models import Asset
@@ -43,6 +44,7 @@ TEXT_FIELDS = (
     "test_access",
     "location_source_url",
     "location_role",
+    "search_aliases",
 )
 
 
@@ -70,6 +72,47 @@ def load_records(paths):
             seen.add(identity)
             records.append((record, research_date))
     return records
+
+
+def insert_prepared_records(prepared, taxonomies):
+    """Insert validated values in batches, including initial taxonomy history."""
+    assets = Asset.objects.bulk_create([item[0] for item in prepared], batch_size=250)
+    histories = Asset.history.bulk_history_create(
+        assets, batch_size=250, default_change_reason="Public-source peer inventory import"
+    )
+    history_ids = {row.id: row.history_id for row in histories}
+    for field_name, model in TAXONOMIES.items():
+        requested = {name for _asset, record, _sources in prepared
+                     for name in record.get(field_name, [])}
+        for name in requested:
+            if taxonomies[field_name][name].pk is None:
+                item, _created = model.objects.get_or_create(name=name)
+                taxonomies[field_name][name] = item
+        field = Asset._meta.get_field(field_name)
+        through = field.remote_field.through
+        target_field = field.m2m_reverse_field_name() + "_id"
+        links = []
+        for asset, record, _sources in prepared:
+            links.extend(through(asset_id=asset.pk, **{
+                target_field: taxonomies[field_name][name].pk,
+            }) for name in record.get(field_name, []))
+        through.objects.bulk_create(links, batch_size=500)
+        historical_through = getattr(Asset.history.model, field_name).model
+        historical_through.objects.bulk_create([
+            historical_through(
+                history_id=history_ids[link.asset_id],
+                **{item.attname: getattr(link, item.attname) for item in through._meta.fields},
+            ) for link in links
+        ], batch_size=500)
+    sources = []
+    for asset, _record, source_rows in prepared:
+        for source in source_rows:
+            source.asset = asset
+            sources.append(source)
+    bulk_create_with_history(
+        sources, Source, batch_size=250,
+        default_change_reason="Public-source peer inventory import",
+    )
 
 
 class Command(BaseCommand):
@@ -114,6 +157,7 @@ class Command(BaseCommand):
         for place in references["places"]:
             places.setdefault((place["state"], locality_name(place["name"])), []).append(place)
         created = skipped = unmapped = 0
+        prepared = []
         for record, research_date in records:
             state = record["state"]
             slug = slugify(f"{state}-{record['name']}")[:240]
@@ -213,7 +257,8 @@ class Command(BaseCommand):
             )
             asset = Asset(**values)
             try:
-                asset.full_clean()
+                # Cached identity checks and database constraints protect insert-only identities.
+                asset.full_clean(validate_unique=False, validate_constraints=False)
                 source_rows = [
                     Source(
                         asset=asset,
@@ -226,7 +271,8 @@ class Command(BaseCommand):
                     for source in record["sources"]
                 ]
                 for source in source_rows:
-                    source.full_clean(exclude=["asset"])
+                    source.full_clean(exclude=["asset"], validate_unique=False,
+                                      validate_constraints=False)
             except ValidationError as exc:
                 raise CommandError(f"Invalid peer asset {record['name']}: {exc}") from exc
             for field in TAXONOMIES:
@@ -234,20 +280,9 @@ class Command(BaseCommand):
                 missing = set(names) - taxonomies[field].keys()
                 if missing:
                     raise CommandError(f"Unknown {field} for {record['name']}: {sorted(missing)}")
-            if options["apply"]:
-                asset.save()
-                for field in TAXONOMIES:
-                    selected = []
-                    for name in record.get(field, []):
-                        item = taxonomies[field][name]
-                        if item.pk is None:
-                            item, _created = TAXONOMIES[field].objects.get_or_create(name=name)
-                            taxonomies[field][name] = item
-                        selected.append(item)
-                    getattr(asset, field).set(selected)
-                for source in source_rows:
-                    source.asset = asset
-                    source.save()
+                if len(names) != len(set(names)):
+                    raise CommandError(f"Repeated {field} for {record['name']}")
+            prepared.append((asset, record, source_rows))
             slugs.add(slug)
             created += 1
             if options["apply"] and created % 50 == 0:
@@ -255,6 +290,12 @@ class Command(BaseCommand):
                     f"Peer import progress: {created} records prepared in transaction."
                 )
                 self.stdout.flush()
+        if options["apply"] and prepared:
+            self.stdout.write(
+                f"Writing {len(prepared)} validated records and their initial history."
+            )
+            self.stdout.flush()
+            insert_prepared_records(prepared, taxonomies)
         mode = "Inserted" if options["apply"] else "Would insert"
         self.stdout.write(
             f"{mode} {created} internal peer assets; preserved {skipped}; "

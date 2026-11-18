@@ -5,6 +5,7 @@ import csv
 import io
 import json
 import re
+from datetime import date
 from pathlib import Path
 
 import requests
@@ -27,6 +28,17 @@ def build():
         and record.get("latitude") is None
         and record.get("location_precision") != "regional"
     ]
+    output_path = ROOT / "data/multistate/address_geocodes.json"
+    existing = json.loads(output_path.read_text()) if output_path.exists() else {}
+
+    def key(record):
+        return tuple(record.get(field, "") for field in
+                     ("state", "name", "address_line", "city", "postal_code"))
+
+    valid = {key(record) for record in candidates}
+    previous = [row for row in existing.get("matches", []) if key(row) in valid]
+    cached = {key(row) for row in previous}
+    candidates = [record for record in candidates if key(record) not in cached]
     stream = io.StringIO()
     writer = csv.writer(stream)
     for index, record in enumerate(candidates):
@@ -49,7 +61,7 @@ def build():
         timeout=240,
     )
     response.raise_for_status()
-    matches = []
+    matches = previous[:]
     held = []
     for row in csv.reader(io.StringIO(response.text)):
         if len(row) < 3 or not row[0].isdigit():
@@ -78,7 +90,7 @@ def build():
             }
         )
     output = {
-        "retrieved": "2026-11-17",
+        "retrieved": date.today().isoformat(),
         "source": DOCUMENTATION,
         "endpoint": ENDPOINT,
         "benchmark": "Public_AR_Current",
@@ -87,7 +99,7 @@ def build():
         "matches": matches,
         "held": held,
     }
-    (ROOT / "data/multistate/address_geocodes.json").write_text(json.dumps(output, indent=2) + "\n")
+    output_path.write_text(json.dumps(output, indent=2) + "\n")
     print(
         f"Accepted {len(matches)} address matches; held {len(held)} non-exact/unmatched addresses."
     )

@@ -5,14 +5,16 @@ from pathlib import Path
 
 from django.contrib.auth import get_user_model
 from django.core.exceptions import ValidationError
-from django.core.management import call_command
+from django.core.management import CommandError, call_command
+from django.db import connection
 from django.test import TestCase, override_settings
+from django.test.utils import CaptureQueriesContext
 from django.urls import reverse
 
 from apps.assets.geography import STATES, current_state, internal_preview
 from apps.assets.models import Asset, SavedView, UpdateSubmission
 from apps.assets.quality import discover_duplicate_candidates
-from apps.catalog.models import Capability, MissionArea, Region, StrategicCategory
+from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region, StrategicCategory
 from apps.imports.services import parse_csv
 
 
@@ -208,6 +210,67 @@ class MultiStateTests(TestCase):
 
 
 class PeerImportTests(TestCase):
+    def test_bulk_import_keeps_initial_taxonomy_and_source_history_with_bounded_queries(self):
+        taxonomy = {
+            "strategic_categories": StrategicCategory.objects.create(
+                name="Test and operational environments"
+            ),
+            "platform_domains": PlatformDomain.objects.create(name="Unmanned aircraft systems"),
+            "capabilities": Capability.objects.create(
+                name="Testing, evaluation, verification, and validation"
+            ),
+            "missions": MissionArea.objects.create(name="Training and experimentation"),
+        }
+        records = [{
+            "state": "OH", "name": f"Batch research site {number}", "record_type": "facility",
+            "city": "Columbus", "short_description": "Published testing resource",
+            "unmanned_systems_relevance": "UAS testing", "search_aliases": f"TEST-{number}",
+            **{field: [item.name] for field, item in taxonomy.items()},
+            "sources": [{"title": "Official research resource", "url": "https://example.edu/site/",
+                         "supports": "Published identity and testing capability"}],
+        } for number in range(50)]
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "batch.json"
+            path.write_text(json.dumps({"research_date": "2026-11-18", "records": records}))
+            with CaptureQueriesContext(connection) as queries:
+                call_command("seed_peer_states", catalog=[path], apply=True, stdout=io.StringIO())
+        self.assertLess(len(queries), 150)
+        self.assertEqual(Asset.objects.count(), 50)
+        self.assertEqual(Asset.history.count(), 50)
+        self.assertEqual(Asset.public.count(), 0)
+        asset = Asset.objects.get(name="Batch research site 0")
+        self.assertEqual(asset.search_aliases, "TEST-0")
+        self.assertIsNotNone(asset.created_at)
+        self.assertIsNotNone(asset.updated_at)
+        history = asset.history.get()
+        for field_name, item in taxonomy.items():
+            relation = Asset._meta.get_field(field_name).m2m_reverse_field_name()
+            self.assertEqual(
+                list(getattr(history, field_name).values_list(relation + "__name", flat=True)),
+                [item.name],
+            )
+        source = asset.sources.get()
+        self.assertEqual(source.verification_status, "unreviewed")
+        self.assertEqual(source.history.count(), 1)
+        self.assertIsNone(source.last_verified_at)
+
+    def test_invalid_record_prevents_all_batch_inserts_and_history(self):
+        records = [{
+            "state": "OH", "name": "Valid batch record", "record_type": "facility",
+            "short_description": "Published resource", "unmanned_systems_relevance": "Testing",
+            "sources": [{"title": "Official source", "url": "https://example.edu/site/",
+                         "supports": "Identity"}],
+        }]
+        records.append({**records[0], "name": "Invalid batch record",
+                        "website_url": "not-a-valid-url"})
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "invalid.json"
+            path.write_text(json.dumps({"research_date": "2026-11-18", "records": records}))
+            with self.assertRaisesMessage(CommandError, "Invalid peer asset"):
+                call_command("seed_peer_states", catalog=[path], apply=True, stdout=io.StringIO())
+        self.assertEqual(Asset.objects.count(), 0)
+        self.assertEqual(Asset.history.count(), 0)
+
     def test_missing_predefined_peer_vocabulary_is_created_only_when_applying(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "peer.json"

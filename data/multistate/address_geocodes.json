@@ -1,5 +1,5 @@
 {
-  "retrieved": "2026-11-17",
+  "retrieved": "2026-11-18",
   "source": "https://geocoding.geo.census.gov/geocoder/Geocoding_Services_API.html",
   "endpoint": "https://geocoding.geo.census.gov/geocoder/locations/addressbatch",
   "benchmark": "Public_AR_Current",
@@ -1852,9 +1852,1910 @@
       "longitude": -97.033551,
       "matched_address": "375 2ND AVE N, GRAND FORKS, ND, 58203",
       "match_type": "Exact"
+    },
+    {
+      "state": "NC",
+      "name": "Blue Ridge Research and Consulting Asheville UAS Acoustics",
+      "address_line": "29 N Market St, Suite 700",
+      "city": "Asheville",
+      "postal_code": "28801",
+      "latitude": 35.596695,
+      "longitude": -82.55121,
+      "matched_address": "29 N MARKET ST, ASHEVILLE, NC, 28801",
+      "match_type": "Exact"
+    },
+    {
+      "state": "NC",
+      "name": "Secmation Cary Autonomous-System Security R&D",
+      "address_line": "15200 Weston Parkway, Suite 103",
+      "city": "Cary",
+      "postal_code": "27513",
+      "latitude": 35.815126,
+      "longitude": -78.815129,
+      "matched_address": "15200 WESTON PKWY, CARY, NC, 27513",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "UND Project Rural Reach",
+      "address_line": "4200 James Ray Drive",
+      "city": "Grand Forks",
+      "postal_code": "58202",
+      "latitude": 47.920295,
+      "longitude": -97.088217,
+      "matched_address": "4200 JAMES RAY DR, GRAND FORKS, ND, 58202",
+      "match_type": "Exact"
+    },
+    {
+      "state": "OK",
+      "name": "Tulsa Land Surveying Drone Flight Services",
+      "address_line": "1501 E 6th St",
+      "city": "Tulsa",
+      "postal_code": "74120",
+      "latitude": 36.152213,
+      "longitude": -95.971551,
+      "matched_address": "1501 E 6TH ST, TULSA, OK, 74120",
+      "match_type": "Exact"
+    },
+    {
+      "state": "OK",
+      "name": "Reagan Smith Oklahoma City Drone Mapping and Data Services",
+      "address_line": "3909 N. Classen Blvd, Suite 100",
+      "city": "Oklahoma City",
+      "postal_code": "73118",
+      "latitude": 35.510814,
+      "longitude": -97.534514,
+      "matched_address": "3909 N CLASSEN BLVD, OKLAHOMA CITY, OK, 73118",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "Caliola - Colorado Springs autonomous communications engineering",
+      "address_line": "5465 Mark Dabling Blvd",
+      "city": "Colorado Springs",
+      "postal_code": "80918",
+      "latitude": 38.909969,
+      "longitude": -104.823072,
+      "matched_address": "5465 MARK DABLING BLVD, COLORADO SPRINGS, CO, 80918",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "FIRST RF - Boulder UAS antennas and RF systems",
+      "address_line": "6150 Lookout Road",
+      "city": "Boulder",
+      "postal_code": "80301",
+      "latitude": 40.068773,
+      "longitude": -105.209702,
+      "matched_address": "6150 LOOKOUT RD, BOULDER, CO, 80301",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "H3X - Louisville unmanned-system motor manufacturing",
+      "address_line": "410 S Arthur Ave",
+      "city": "Louisville",
+      "postal_code": "80027",
+      "latitude": 39.964802,
+      "longitude": -105.124544,
+      "matched_address": "410 S ARTHUR AVE, LOUISVILLE, CO, 80027",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "Heitek Automation - Golden robotics supply branch",
+      "address_line": "17301 West Colfax Ave., Suite 250",
+      "city": "Golden",
+      "postal_code": "80401",
+      "latitude": 39.723839,
+      "longitude": -105.192337,
+      "matched_address": "17301 W COLFAX AVE, GOLDEN, CO, 80401",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "Vita Inclinata - Denver autonomous load-stabilization systems",
+      "address_line": "5050 Osage St., Suite 400",
+      "city": "Denver",
+      "postal_code": "80221",
+      "latitude": 39.787907,
+      "longitude": -105.005063,
+      "matched_address": "5050 OSAGE ST, DENVER, CO, 80221",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "Wolf Robotics - Fort Collins robotic fabrication",
+      "address_line": "4600 Innovation Drive",
+      "city": "Fort Collins",
+      "postal_code": "80525",
+      "latitude": 40.52436,
+      "longitude": -105.046175,
+      "matched_address": "4600 INNOVATION DR, FORT COLLINS, CO, 80525",
+      "match_type": "Exact"
+    },
+    {
+      "state": "AZ",
+      "name": "Apex Microtechnology - Tucson drone power electronics",
+      "address_line": "5980 N. Shannon Rd.",
+      "city": "Tucson",
+      "postal_code": "85741",
+      "latitude": 32.315659,
+      "longitude": -111.028651,
+      "matched_address": "5980 N SHANNON RD, TUCSON, AZ, 85741",
+      "match_type": "Exact"
+    },
+    {
+      "state": "AZ",
+      "name": "Athenoln Automation - Tucson robotics integration office",
+      "address_line": "6760 N Oracle Rd, Suite 130",
+      "city": "Tucson",
+      "postal_code": "85704",
+      "latitude": 32.329374,
+      "longitude": -110.976216,
+      "matched_address": "6760 N ORACLE RD, TUCSON, AZ, 85704",
+      "match_type": "Exact"
+    },
+    {
+      "state": "AZ",
+      "name": "Axon Air - Scottsdale public-safety drone systems",
+      "address_line": "17800 N 85th St",
+      "city": "Scottsdale",
+      "postal_code": "85255",
+      "latitude": 33.648528,
+      "longitude": -111.897596,
+      "matched_address": "17800 N 85TH ST, SCOTTSDALE, AZ, 85255",
+      "match_type": "Exact"
+    },
+    {
+      "state": "AZ",
+      "name": "Bugzeye Drone Mapping and Photography",
+      "address_line": "2122 W Lone Cactus Dr, Ste 9",
+      "city": "Phoenix",
+      "postal_code": "85027",
+      "latitude": 33.680199,
+      "longitude": -112.104809,
+      "matched_address": "2122 W LONE CACTUS DR, PHOENIX, AZ, 85027",
+      "match_type": "Exact"
+    },
+    {
+      "state": "AZ",
+      "name": "Desert Aircraft - Tucson UAV engine factory",
+      "address_line": "1815 S. Research Loop",
+      "city": "Tucson",
+      "postal_code": "85710",
+      "latitude": 32.199521,
+      "longitude": -110.820987,
+      "matched_address": "1815 S RESEARCH LOOP, TUCSON, AZ, 85710",
+      "match_type": "Exact"
+    },
+    {
+      "state": "AZ",
+      "name": "Heitek Automation - Phoenix robotics supply headquarters",
+      "address_line": "24435 North 20th Drive",
+      "city": "Phoenix",
+      "postal_code": "85085",
+      "latitude": 33.70655,
+      "longitude": -112.102645,
+      "matched_address": "24435 N 20TH DR, PHOENIX, AZ, 85085",
+      "match_type": "Exact"
+    },
+    {
+      "state": "AZ",
+      "name": "Mil Geospatial - Gilbert drone mapping",
+      "address_line": "313 North Gilbert Road, Suite 300",
+      "city": "Gilbert",
+      "postal_code": "85234",
+      "latitude": 33.355071,
+      "longitude": -111.789592,
+      "matched_address": "313 N GILBERT RD, GILBERT, AZ, 85234",
+      "match_type": "Exact"
+    },
+    {
+      "state": "AZ",
+      "name": "Sion Power - Tucson UAS battery manufacturing",
+      "address_line": "2900 E. Elvira Rd.",
+      "city": "Tucson",
+      "postal_code": "85756",
+      "latitude": 32.12678,
+      "longitude": -110.928909,
+      "matched_address": "2900 E ELVIRA RD, TUCSON, AZ, 85756",
+      "match_type": "Exact"
+    },
+    {
+      "state": "AZ",
+      "name": "Zonge International - Tucson geophysical instrument manufacturing",
+      "address_line": "3475 N Dodge Blvd",
+      "city": "Tucson",
+      "postal_code": "85716",
+      "latitude": 32.270328,
+      "longitude": -110.914386,
+      "matched_address": "3475 N DODGE BLVD, TUCSON, AZ, 85716",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "DroneX Industries - Nibley aerial and underwater inspection",
+      "address_line": "2491 S 800 W",
+      "city": "Nibley",
+      "postal_code": "84321",
+      "latitude": 41.687072,
+      "longitude": -111.852484,
+      "matched_address": "2491 S 800 W, NIBLEY, UT, 84321",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Heitek Automation - Sandy robotics supply branch",
+      "address_line": "9653 South 500 West",
+      "city": "Sandy",
+      "postal_code": "84070",
+      "latitude": 40.576037,
+      "longitude": -111.905404,
+      "matched_address": "9653 S 500 W, SANDY, UT, 84070",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Pikus 3D - West Jordan robotic concrete-printing ecosystem",
+      "address_line": "9573 S. 6400 W.",
+      "city": "West Jordan",
+      "postal_code": "84081",
+      "latitude": 40.581188,
+      "longitude": -112.043889,
+      "matched_address": "9573 S 6400 W, WEST JORDAN, UT, 84081",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "SPI Automation - North Salt Lake robotics manufacturing",
+      "address_line": "650 Taylor Way",
+      "city": "North Salt Lake",
+      "postal_code": "84054",
+      "latitude": 40.85367,
+      "longitude": -111.915785,
+      "matched_address": "650 TAYLOR WAY, NORTH SALT LAKE, UT, 84054",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CA",
+      "name": "Built Robotics San Francisco Headquarters",
+      "address_line": "225 7th Street",
+      "city": "San Francisco",
+      "postal_code": "94103",
+      "latitude": 37.777695,
+      "longitude": -122.408931,
+      "matched_address": "225 7TH ST, SAN FRANCISCO, CA, 94103",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CA",
+      "name": "Civ Robotics San Francisco Construction Robotics",
+      "address_line": "638 4th Street",
+      "city": "San Francisco",
+      "postal_code": "94107",
+      "latitude": 37.777813,
+      "longitude": -122.395989,
+      "matched_address": "638 4TH ST, SAN FRANCISCO, CA, 94107",
+      "match_type": "Exact"
+    },
+    {
+      "state": "OH",
+      "name": "Aries Science and Technology - Columbus UAS battery-materials R&D",
+      "address_line": "1381 Kinnear Road",
+      "city": "Columbus",
+      "postal_code": "43212",
+      "latitude": 39.99861,
+      "longitude": -83.046947,
+      "matched_address": "1381 KINNEAR RD, COLUMBUS, OH, 43212",
+      "match_type": "Exact"
+    },
+    {
+      "state": "OH",
+      "name": "Crown Equipment - New Bremen automated lift-truck engineering",
+      "address_line": "44 South Washington Street",
+      "city": "New Bremen",
+      "postal_code": "45869",
+      "latitude": 40.436244,
+      "longitude": -84.380038,
+      "matched_address": "44 S WASHINGTON ST, NEW BREMEN, OH, 45869",
+      "match_type": "Exact"
+    },
+    {
+      "state": "OH",
+      "name": "GIRD Systems - Cincinnati resilient communications engineering",
+      "address_line": "11260 Chester Rd, Suite 600",
+      "city": "Cincinnati",
+      "postal_code": "45246",
+      "latitude": 39.278193,
+      "longitude": -84.443639,
+      "matched_address": "11260 CHESTER RD, CINCINNATI, OH, 45246",
+      "match_type": "Exact"
+    },
+    {
+      "state": "OH",
+      "name": "Immobileyes - Kent counter-UAS optical-disruption R&D",
+      "address_line": "1950 State Rte. 59",
+      "city": "Kent",
+      "postal_code": "44240",
+      "latitude": 41.15552,
+      "longitude": -81.322118,
+      "matched_address": "1950 STATE RTE 59, KENT, OH, 44240",
+      "match_type": "Exact"
+    },
+    {
+      "state": "OH",
+      "name": "Journey Drones - Cincinnati infrastructure inspection",
+      "address_line": "7660 Production Drive",
+      "city": "Cincinnati",
+      "postal_code": "45237",
+      "latitude": 39.199344,
+      "longitude": -84.454995,
+      "matched_address": "7660 PRODUCTION DR, CINCINNATI, OH, 45237",
+      "match_type": "Exact"
+    },
+    {
+      "state": "OH",
+      "name": "necoTECH - Delaware autonomous flightline-maintenance R&D",
+      "address_line": "70 S Sandusky St, Suite 210",
+      "city": "Delaware",
+      "postal_code": "43015",
+      "latitude": 40.296632,
+      "longitude": -83.068028,
+      "matched_address": "70 S SANDUSKY ST, DELAWARE, OH, 43015",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CA",
+      "name": "GrayMatter Robotics Carson AI Robotics",
+      "address_line": "2226 E 223rd St.",
+      "city": "Carson",
+      "postal_code": "90810",
+      "latitude": 33.824235,
+      "longitude": -118.23557,
+      "matched_address": "2226 E 223RD ST, CARSON, CA, 90810",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CA",
+      "name": "Oceanbotics Irvine ROV Production Headquarters",
+      "address_line": "9805 Research Drive",
+      "city": "Irvine",
+      "postal_code": "92618",
+      "latitude": 33.632134,
+      "longitude": -117.727636,
+      "matched_address": "9805 RESEARCH DR, IRVINE, CA, 92618",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CA",
+      "name": "Quantum Systems Moorpark Production and Integration Facility",
+      "address_line": "609 Science Drive",
+      "city": "Moorpark",
+      "postal_code": "93021",
+      "latitude": 34.282946,
+      "longitude": -118.868381,
+      "matched_address": "609 SCIENCE DR, MOORPARK, CA, 93021",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CA",
+      "name": "Rocket Lab Robotics / Motiv Pasadena",
+      "address_line": "350 N Halstead St",
+      "city": "Pasadena",
+      "postal_code": "91107",
+      "latitude": 34.152476,
+      "longitude": -118.07963,
+      "matched_address": "350 N HALSTEAD ST, PASADENA, CA, 91107",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CA",
+      "name": "Seafloor Systems El Dorado Hills Uncrewed Survey Vessels",
+      "address_line": "4475 Golden Foothill Parkway",
+      "city": "El Dorado Hills",
+      "postal_code": "95762",
+      "latitude": 38.627353,
+      "longitude": -121.061264,
+      "matched_address": "4475 GOLDEN FOOTHILL PKWY, EL DORADO HILLS, CA, 95762",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CA",
+      "name": "Skyfront Redwood City Hybrid UAS Production",
+      "address_line": "500 Howland ST STE 5",
+      "city": "Redwood City",
+      "postal_code": "94063",
+      "latitude": 37.493137,
+      "longitude": -122.234932,
+      "matched_address": "500 HOWLAND ST, REDWOOD CITY, CA, 94063",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CA",
+      "name": "Swarm Aero Oxnard Uncrewed Aircraft Development",
+      "address_line": "2889 W. 5th St., Ste 111",
+      "city": "Oxnard",
+      "postal_code": "93030",
+      "latitude": 34.197549,
+      "longitude": -119.208963,
+      "matched_address": "2889 W 5TH ST, OXNARD, CA, 93030",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CA",
+      "name": "Teleo Palo Alto Supervised Autonomy",
+      "address_line": "292 Lambert Ave",
+      "city": "Palo Alto",
+      "postal_code": "94306",
+      "latitude": 37.422627,
+      "longitude": -122.135354,
+      "matched_address": "292 LAMBERT AVE, PALO ALTO, CA, 94306",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CA",
+      "name": "Zone 5 Technologies San Luis Obispo UAS Development",
+      "address_line": "827 Buckley Rd",
+      "city": "San Luis Obispo",
+      "postal_code": "93401",
+      "latitude": 35.234976,
+      "longitude": -120.639228,
+      "matched_address": "827 BUCKLEY RD, SAN LUIS OBISPO, CA, 93401",
+      "match_type": "Exact"
+    },
+    {
+      "state": "PA",
+      "name": "Daniel H. Wagner Associates - Exton autonomous-platform analytics",
+      "address_line": "559 West Uwchlan Avenue, Suite 140",
+      "city": "Exton",
+      "postal_code": "19341",
+      "latitude": 40.05062,
+      "longitude": -75.661366,
+      "matched_address": "559 W UWCHLAN AVE, EXTON, PA, 19341",
+      "match_type": "Exact"
+    },
+    {
+      "state": "PA",
+      "name": "ESTAT Actuation - Pittsburgh robotic clutch and brake systems",
+      "address_line": "91 43rd Street, Suite 260",
+      "city": "Pittsburgh",
+      "postal_code": "15201",
+      "latitude": 40.472806,
+      "longitude": -79.963262,
+      "matched_address": "91 43RD ST, PITTSBURGH, PA, 15201",
+      "match_type": "Exact"
+    },
+    {
+      "state": "PA",
+      "name": "Nokomis - Charleroi UAS electronic-detection engineering",
+      "address_line": "310 5th St.",
+      "city": "Charleroi",
+      "postal_code": "15022",
+      "latitude": 40.137938,
+      "longitude": -79.898394,
+      "matched_address": "310 5TH ST, CHARLEROI, PA, 15022",
+      "match_type": "Exact"
+    },
+    {
+      "state": "PA",
+      "name": "Wavefront Research - Northampton UAS hyperspectral-sensor manufacturing",
+      "address_line": "1540 Main Street",
+      "city": "Northampton",
+      "postal_code": "18067",
+      "latitude": 40.684345,
+      "longitude": -75.49503,
+      "matched_address": "1540 MAIN ST, NORTHAMPTON, PA, 18067",
+      "match_type": "Exact"
+    },
+    {
+      "state": "MI",
+      "name": "Applied Manufacturing Technologies - Orion AMR integration",
+      "address_line": "219 Kay Industrial Drive",
+      "city": "Orion",
+      "postal_code": "48359",
+      "latitude": 42.715689,
+      "longitude": -83.237416,
+      "matched_address": "219 KAY INDUSTRIAL DR, ORION, MI, 48359",
+      "match_type": "Exact"
+    },
+    {
+      "state": "MI",
+      "name": "AVL - Plymouth automated-driving engineering and test systems",
+      "address_line": "47519 Halyard Drive",
+      "city": "Plymouth",
+      "postal_code": "48170",
+      "latitude": 42.383995,
+      "longitude": -83.513888,
+      "matched_address": "47519 HALYARD DR, PLYMOUTH, MI, 48170",
+      "match_type": "Exact"
+    },
+    {
+      "state": "TX",
+      "name": "Aerones Denton U.S. Headquarters",
+      "address_line": "1800 Shady Oaks Dr",
+      "city": "Denton",
+      "postal_code": "76205",
+      "latitude": 33.201818,
+      "longitude": -97.114262,
+      "matched_address": "1800 SHADY OAKS DR, DENTON, TX, 76205",
+      "match_type": "Exact"
+    },
+    {
+      "state": "TX",
+      "name": "Fox Robotics Austin Autonomous Forklifts",
+      "address_line": "4101 Smith School Rd Building 2 #100",
+      "city": "Austin",
+      "postal_code": "78744",
+      "latitude": 30.199161,
+      "longitude": -97.711306,
+      "matched_address": "4101 SMITH SCHOOL RD, AUSTIN, TX, 78744",
+      "match_type": "Exact"
+    },
+    {
+      "state": "TX",
+      "name": "Galaxy Unmanned Systems Fort Worth Headquarters",
+      "address_line": "5001 North Fwy, Suite 119",
+      "city": "Fort Worth",
+      "postal_code": "76106",
+      "latitude": 32.834106,
+      "longitude": -97.313447,
+      "matched_address": "5001 NORTH FWY, FORT WORTH, TX, 76106",
+      "match_type": "Exact"
+    },
+    {
+      "state": "TX",
+      "name": "Lantern UAS Austin Counter-Drone Development",
+      "address_line": "1823 Fort View Road, Suite 209",
+      "city": "Austin",
+      "postal_code": "78704",
+      "latitude": 30.230026,
+      "longitude": -97.785758,
+      "matched_address": "1823 FORT VIEW RD, AUSTIN, TX, 78704",
+      "match_type": "Exact"
+    },
+    {
+      "state": "TX",
+      "name": "REV Robotics Carrollton Headquarters",
+      "address_line": "2941 Commodore Dr, Suite 110",
+      "city": "Carrollton",
+      "postal_code": "75007",
+      "latitude": 32.994909,
+      "longitude": -96.929076,
+      "matched_address": "2941 COMMODORE DR, CARROLLTON, TX, 75007",
+      "match_type": "Exact"
+    },
+    {
+      "state": "TX",
+      "name": "Square Robot Houston Sales and Operations",
+      "address_line": "12302 FM 529, Suite 1",
+      "city": "Houston",
+      "postal_code": "77041",
+      "latitude": 29.880128,
+      "longitude": -95.588965,
+      "matched_address": "12302 FM 529, HOUSTON, TX, 77041",
+      "match_type": "Exact"
+    },
+    {
+      "state": "TX",
+      "name": "Tempest Droneworx Houston Autonomy Development Systems",
+      "address_line": "14701 Saint Marys Ln, Ste 315",
+      "city": "Houston",
+      "postal_code": "77079",
+      "latitude": 29.782103,
+      "longitude": -95.606525,
+      "matched_address": "14701 ST MARYS LN, HOUSTON, TX, 77079",
+      "match_type": "Exact"
+    },
+    {
+      "state": "MI",
+      "name": "Baker Engineering - Nunica Power and Propulsion Center",
+      "address_line": "17165 Power Drive",
+      "city": "Nunica",
+      "postal_code": "49448",
+      "latitude": 43.07711,
+      "longitude": -86.101092,
+      "matched_address": "17165 POWER DR, NUNICA, MI, 49448",
+      "match_type": "Exact"
+    },
+    {
+      "state": "MI",
+      "name": "CREFORM - Novi AGV sales and engineering office",
+      "address_line": "29795 Hudson Drive",
+      "city": "Novi",
+      "postal_code": "48377",
+      "latitude": 42.514523,
+      "longitude": -83.510423,
+      "matched_address": "29795 HUDSON DR, NOVI, MI, 48377",
+      "match_type": "Exact"
+    },
+    {
+      "state": "MI",
+      "name": "Cybernet Systems - Ann Arbor autonomous logistics engineering",
+      "address_line": "3741 Plaza Drive",
+      "city": "Ann Arbor",
+      "postal_code": "48108",
+      "latitude": 42.232818,
+      "longitude": -83.74661,
+      "matched_address": "3741 PLAZA DR, ANN ARBOR, MI, 48108",
+      "match_type": "Exact"
+    },
+    {
+      "state": "MI",
+      "name": "DornerWorks - Grand Rapids secure robotics software engineering",
+      "address_line": "3445 Lake Eastbrook Blvd SE",
+      "city": "Grand Rapids",
+      "postal_code": "49546",
+      "latitude": 42.919011,
+      "longitude": -85.582796,
+      "matched_address": "3445 LAKE EASTBROOK BLVD SE, GRAND RAPIDS, MI, 49546",
+      "match_type": "Exact"
+    },
+    {
+      "state": "MI",
+      "name": "DS Automotion - Auburn Hills mobile-robotics office",
+      "address_line": "691 N. Squirrel Road, Suite 119",
+      "city": "Auburn Hills",
+      "postal_code": "48326",
+      "latitude": 42.648662,
+      "longitude": -83.220244,
+      "matched_address": "691 N SQUIRREL RD, AUBURN HILLS, MI, 48326",
+      "match_type": "Exact"
+    },
+    {
+      "state": "MI",
+      "name": "Element Innovation - Flint AMR integration equipment manufacturing",
+      "address_line": "4450 Linden Creek Parkway",
+      "city": "Flint",
+      "postal_code": "48507",
+      "latitude": 42.964707,
+      "longitude": -83.768749,
+      "matched_address": "4450 LINDEN CREEK PKWY, FLINT, MI, 48507",
+      "match_type": "Exact"
+    },
+    {
+      "state": "MI",
+      "name": "FEV North America - Auburn Hills automated-driving engineering",
+      "address_line": "4554 Glenmeade Lane",
+      "city": "Auburn Hills",
+      "postal_code": "48326",
+      "latitude": 42.705322,
+      "longitude": -83.254227,
+      "matched_address": "4554 GLENMEADE LN, AUBURN HILLS, MI, 48326",
+      "match_type": "Exact"
+    },
+    {
+      "state": "MI",
+      "name": "Fori Automation - Shelby Township automated guided vehicles",
+      "address_line": "13231 23 Mile Road",
+      "city": "Shelby Township",
+      "postal_code": "48315",
+      "latitude": 42.670222,
+      "longitude": -82.997202,
+      "matched_address": "13231 23 MILE RD, SHELBY TOWNSHIP, MI, 48315",
+      "match_type": "Exact"
+    },
+    {
+      "state": "MI",
+      "name": "Kall Morris - Marquette orbital robotics and spacecraft development",
+      "address_line": "130 W Washington St",
+      "city": "Marquette",
+      "postal_code": "49855",
+      "latitude": 46.543387,
+      "longitude": -87.393629,
+      "matched_address": "130 W WASHINGTON ST, MARQUETTE, MI, 49855",
+      "match_type": "Exact"
+    },
+    {
+      "state": "MI",
+      "name": "RedViking - Plymouth automated guided vehicle engineering",
+      "address_line": "46247 Five Mile Rd.",
+      "city": "Plymouth",
+      "postal_code": "48170",
+      "latitude": 42.394842,
+      "longitude": -83.49893,
+      "matched_address": "46247 5 MILE RD, PLYMOUTH, MI, 48170",
+      "match_type": "Exact"
+    },
+    {
+      "state": "MI",
+      "name": "Robotize - Troy Americas office",
+      "address_line": "1904 Woodslee Drive",
+      "city": "Troy",
+      "postal_code": "48083",
+      "latitude": 42.55231,
+      "longitude": -83.110046,
+      "matched_address": "1904 WOODSLEE DR, TROY, MI, 48083",
+      "match_type": "Exact"
+    },
+    {
+      "state": "FL",
+      "name": "Apellix Jacksonville Industrial Drone Manufacturing",
+      "address_line": "2624 Phyllis Street",
+      "city": "Jacksonville",
+      "postal_code": "32204",
+      "latitude": 30.320109,
+      "longitude": -81.69406,
+      "matched_address": "2624 PHYLLIS ST, JACKSONVILLE, FL, 32204",
+      "match_type": "Exact"
+    },
+    {
+      "state": "FL",
+      "name": "Mythos AI West Palm Beach Maritime Autonomy",
+      "address_line": "516 Northwood Road, Unit 8096",
+      "city": "West Palm Beach",
+      "postal_code": "33407",
+      "latitude": 26.734941,
+      "longitude": -80.055239,
+      "matched_address": "516 NORTHWOOD RD, WEST PALM BEACH, FL, 33407",
+      "match_type": "Exact"
+    },
+    {
+      "state": "FL",
+      "name": "VOTIX Weston Drone Operations Software Office",
+      "address_line": "1825 Main Street",
+      "city": "Weston",
+      "postal_code": "33326",
+      "latitude": 26.096756,
+      "longitude": -80.381442,
+      "matched_address": "1825 MAIN ST, WESTON, FL, 33326",
+      "match_type": "Exact"
+    },
+    {
+      "state": "FL",
+      "name": "MyDefence Clearwater Counter-UAS Office",
+      "address_line": "14055 46th Street N, Suite 1101",
+      "city": "Clearwater",
+      "postal_code": "33762",
+      "latitude": 27.906845,
+      "longitude": -82.695351,
+      "matched_address": "14055 46TH ST N, CLEARWATER, FL, 33762",
+      "match_type": "Exact"
+    },
+    {
+      "state": "FL",
+      "name": "FIU Applied Robotics and Remote Systems Laboratory",
+      "address_line": "10555 W Flagler Street, Suite 2100",
+      "city": "Miami",
+      "postal_code": "33174",
+      "latitude": 25.768561,
+      "longitude": -80.368033,
+      "matched_address": "10555 W FLAGLER ST, MIAMI, FL, 33174",
+      "match_type": "Exact"
+    },
+    {
+      "state": "FL",
+      "name": "OWT Global Tampa Unmanned Systems Support",
+      "address_line": "3710 Corporex Park Drive, Suite 320",
+      "city": "Tampa",
+      "postal_code": "33619",
+      "latitude": 27.975248,
+      "longitude": -82.38246,
+      "matched_address": "3710 CORPOREX PARK DR, TAMPA, FL, 33619",
+      "match_type": "Exact"
+    },
+    {
+      "state": "NY",
+      "name": "Owl Autonomous Imaging Fairport Headquarters",
+      "address_line": "470 Willowbrook Office Park",
+      "city": "Fairport",
+      "postal_code": "14450",
+      "latitude": 43.037307,
+      "longitude": -77.457371,
+      "matched_address": "470 WILLOWBROOK OFFICE PARK, FAIRPORT, NY, 14450",
+      "match_type": "Exact"
+    },
+    {
+      "state": "NY",
+      "name": "Effecto Glenville Robotic End-of-Arm Tooling",
+      "address_line": "648 Saratoga Road",
+      "city": "Glenville",
+      "postal_code": "12302",
+      "latitude": 42.897994,
+      "longitude": -73.909968,
+      "matched_address": "648 SARATOGA RD, GLENVILLE, NY, 12302",
+      "match_type": "Exact"
+    },
+    {
+      "state": "NY",
+      "name": "Invio Automation Webster Robotics Integration Site",
+      "address_line": "855 Publishers Parkway",
+      "city": "Webster",
+      "postal_code": "14580",
+      "latitude": 43.218349,
+      "longitude": -77.472064,
+      "matched_address": "855 PUBLISHERS PKWY, WEBSTER, NY, 14580",
+      "match_type": "Exact"
+    },
+    {
+      "state": "NY",
+      "name": "Black River Systems Utica Counter-UAS Engineering",
+      "address_line": "162 Genesee Street",
+      "city": "Utica",
+      "postal_code": "13502",
+      "latitude": 43.101905,
+      "longitude": -75.230378,
+      "matched_address": "162 GENESEE ST, UTICA, NY, 13502",
+      "match_type": "Exact"
+    },
+    {
+      "state": "NY",
+      "name": "Poseidon Systems Victor Autonomous-System Condition Monitoring Research",
+      "address_line": "830 Canning Parkway",
+      "city": "Victor",
+      "postal_code": "14564",
+      "latitude": 42.998804,
+      "longitude": -77.474613,
+      "matched_address": "830 CANNING PKWY, VICTOR, NY, 14564",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "NDeavor Barry D. Batcheller Tech Park",
+      "address_line": "1854 NDSU Research Circle North",
+      "city": "Fargo",
+      "postal_code": "58102",
+      "latitude": 46.9037,
+      "longitude": -96.809668,
+      "matched_address": "1854 NDSU RESEARCH CIR N, FARGO, ND, 58102",
+      "match_type": "Exact"
+    },
+    {
+      "state": "OK",
+      "name": "SmartDrone Oklahoma City Mapping Office",
+      "address_line": "629 W Main St, #1005",
+      "city": "Oklahoma City",
+      "postal_code": "73102",
+      "latitude": 35.467928,
+      "longitude": -97.523167,
+      "matched_address": "629 W MAIN ST, OKLAHOMA CITY, OK, 73102",
+      "match_type": "Exact"
+    },
+    {
+      "state": "NC",
+      "name": "FANUC America Huntersville Robotics Regional Office",
+      "address_line": "13245 Reese Blvd W",
+      "city": "Huntersville",
+      "postal_code": "28078",
+      "latitude": 35.391987,
+      "longitude": -80.86375,
+      "matched_address": "13245 REESE BLVD W, HUNTERSVILLE, NC, 28078",
+      "match_type": "Exact"
+    },
+    {
+      "state": "NC",
+      "name": "SCHUNK Morrisville Robotics Tooling Production Facility",
+      "address_line": "211 Kitty Hawk Drive",
+      "city": "Morrisville",
+      "postal_code": "27560",
+      "latitude": 35.886617,
+      "longitude": -78.803716,
+      "matched_address": "211 KITTY HAWK DR, MORRISVILLE, NC, 27560",
+      "match_type": "Exact"
+    },
+    {
+      "state": "NC",
+      "name": "Schmalz Raleigh Robotic Gripping Manufacturing Facility",
+      "address_line": "5850 Oak Forest Drive",
+      "city": "Raleigh",
+      "postal_code": "27616",
+      "latitude": 35.861573,
+      "longitude": -78.588039,
+      "matched_address": "5850 OAK FOREST DR, RALEIGH, NC, 27616",
+      "match_type": "Exact"
+    },
+    {
+      "state": "NC",
+      "name": "Skye Link Charlotte Managed Drone Data Services",
+      "address_line": "520 Elliot Street, Suite 500",
+      "city": "Charlotte",
+      "postal_code": "28202",
+      "latitude": 35.230414,
+      "longitude": -80.857307,
+      "matched_address": "520 ELLIOT ST, CHARLOTTE, NC, 28202",
+      "match_type": "Exact"
+    },
+    {
+      "state": "NC",
+      "name": "Lavarient USA Mooresville Agricultural Drone Integration",
+      "address_line": "500 S Main St, Suite 409",
+      "city": "Mooresville",
+      "postal_code": "28115",
+      "latitude": 35.577716,
+      "longitude": -80.81868,
+      "matched_address": "500 S MAIN ST, MOORESVILLE, NC, 28115",
+      "match_type": "Exact"
+    },
+    {
+      "state": "NC",
+      "name": "Corvid Technologies Mooresville Autonomy R&D",
+      "address_line": "153 Langtree Campus Drive",
+      "city": "Mooresville",
+      "postal_code": "28117",
+      "latitude": 35.51921,
+      "longitude": -80.861406,
+      "matched_address": "153 LANGTREE CAMPUS DR, MOORESVILLE, NC, 28117",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "Minot Area Chamber EDC economic development",
+      "address_line": "1020 20th Ave SW",
+      "city": "Minot",
+      "postal_code": "58701",
+      "latitude": 48.210807,
+      "longitude": -101.311676,
+      "matched_address": "1020 20TH AVE SW, MINOT, ND, 58701",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "Traill County Economic Development Commission",
+      "address_line": "102 1st St SW",
+      "city": "Hillsboro",
+      "postal_code": "58045",
+      "latitude": 47.402092,
+      "longitude": -97.062525,
+      "matched_address": "102 1ST ST SW, HILLSBORO, ND, 58045",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "North Central Planning Council",
+      "address_line": "425 College Drive S, Suite 13",
+      "city": "Devils Lake",
+      "postal_code": "58301",
+      "latitude": 48.105464,
+      "longitude": -98.864872,
+      "matched_address": "425 COLLEGE DR S, DEVILS LAKE, ND, 58301",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "Ideal Aerosmith Grand Forks headquarters and manufacturing",
+      "address_line": "3001 South Washington Street",
+      "city": "Grand Forks",
+      "postal_code": "58201",
+      "latitude": 47.891319,
+      "longitude": -97.044685,
+      "matched_address": "3001 S WASHINGTON ST, GRAND FORKS, ND, 58201",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "Bifrost Manufacturing Grand Forks UAV-component production",
+      "address_line": "2100 Library Circle",
+      "city": "Grand Forks",
+      "postal_code": "58201",
+      "latitude": 47.898755,
+      "longitude": -97.04756,
+      "matched_address": "2100 LIBRARY CIR, GRAND FORKS, ND, 58201",
+      "match_type": "Exact"
+    },
+    {
+      "state": "AZ",
+      "name": "SITECH Southwest - Mesa commercial UAV solutions",
+      "address_line": "555 W. Iron Ave.",
+      "city": "Mesa",
+      "postal_code": "85210",
+      "latitude": 33.38453,
+      "longitude": -111.843814,
+      "matched_address": "555 W IRON AVE, MESA, AZ, 85210",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "Tri-County Regional Development Council",
+      "address_line": "113 4th Street East, Suite 101",
+      "city": "Williston",
+      "postal_code": "58801",
+      "latitude": 48.147795,
+      "longitude": -103.619571,
+      "matched_address": "113 4TH ST E, WILLISTON, ND, 58801",
+      "match_type": "Exact"
+    },
+    {
+      "state": "AZ",
+      "name": "RICK Engineering - Arizona UAS reality-capture services",
+      "address_line": "2401 W. Peoria Avenue, Suite 120",
+      "city": "Phoenix",
+      "postal_code": "85029",
+      "latitude": 33.581927,
+      "longitude": -112.109527,
+      "matched_address": "2401 W PEORIA AVE, PHOENIX, AZ, 85029",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "Dakota Business Lending Fargo office",
+      "address_line": "5630 36th Ave S",
+      "city": "Fargo",
+      "postal_code": "58104",
+      "latitude": 46.825741,
+      "longitude": -96.880899,
+      "matched_address": "5630 36 AVE S, FARGO, ND, 58104",
+      "match_type": "Exact"
+    },
+    {
+      "state": "AZ",
+      "name": "Psomas - Tucson UAS survey and geospatial practice",
+      "address_line": "1745 E River Road, Suite 245",
+      "city": "Tucson",
+      "postal_code": "85718",
+      "latitude": 32.288501,
+      "longitude": -110.946516,
+      "matched_address": "1745 E RIVER RD, TUCSON, AZ, 85718",
+      "match_type": "Exact"
+    },
+    {
+      "state": "AZ",
+      "name": "Entellus - Phoenix drone-survey practice",
+      "address_line": "3033 N. 44th St., Suite 250",
+      "city": "Phoenix",
+      "postal_code": "85018",
+      "latitude": 33.48336,
+      "longitude": -111.986903,
+      "matched_address": "3033 N 44TH ST, PHOENIX, AZ, 85018",
+      "match_type": "Exact"
+    },
+    {
+      "state": "AZ",
+      "name": "Corporate Capture - Phoenix industrial drone data services",
+      "address_line": "11225 N 28th Dr, Suite D209",
+      "city": "Phoenix",
+      "postal_code": "85029",
+      "latitude": 33.588148,
+      "longitude": -112.121349,
+      "matched_address": "11225 N 28TH DR, PHOENIX, AZ, 85029",
+      "match_type": "Exact"
+    },
+    {
+      "state": "AZ",
+      "name": "Lyon Engineering and Surveying - Prescott drone-services practice",
+      "address_line": "2971 Willow Creek Road, Building 2",
+      "city": "Prescott",
+      "postal_code": "86301",
+      "latitude": 34.593711,
+      "longitude": -112.469233,
+      "matched_address": "2971 WILLOW CREEK RD, PRESCOTT, AZ, 86301",
+      "match_type": "Exact"
+    },
+    {
+      "state": "AZ",
+      "name": "Westwood Professional Services - Scottsdale aerial mapping support",
+      "address_line": "6909 East Greenway Parkway, Suite 250",
+      "city": "Scottsdale",
+      "postal_code": "85254",
+      "latitude": 33.622787,
+      "longitude": -111.935353,
+      "matched_address": "6909 E GREENWAY PKWY, SCOTTSDALE, AZ, 85254",
+      "match_type": "Exact"
+    },
+    {
+      "state": "AZ",
+      "name": "MSI TEC - Phoenix robotics and autonomous mobile-robot support",
+      "address_line": "4050 E. Cotton Center Blvd, Suite 14",
+      "city": "Phoenix",
+      "postal_code": "85040",
+      "latitude": 33.403354,
+      "longitude": -111.992572,
+      "matched_address": "4050 E COTTON CENTER BLVD, PHOENIX, AZ, 85040",
+      "match_type": "Exact"
+    },
+    {
+      "state": "AZ",
+      "name": "Southwest AgNet - Arizona agricultural drone mapping",
+      "address_line": "111 E. Dunlap Ave. Suite 1-107",
+      "city": "Phoenix",
+      "postal_code": "85020",
+      "latitude": 33.567689,
+      "longitude": -112.07273,
+      "matched_address": "111 E DUNLAP AVE, PHOENIX, AZ, 85020",
+      "match_type": "Exact"
+    },
+    {
+      "state": "AZ",
+      "name": "Darling Geomatics - Tucson drone surveying practice",
+      "address_line": "9040 S Rita Rd, Suite 2350, 2nd Floor",
+      "city": "Tucson",
+      "postal_code": "85747",
+      "latitude": 32.091529,
+      "longitude": -110.804294,
+      "matched_address": "9040 S RITA RD, TUCSON, AZ, 85747",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CA",
+      "name": "Machina Labs MACH-EAST Robotics Factory",
+      "address_line": "20559 Prairie St",
+      "city": "Chatsworth",
+      "postal_code": "91311",
+      "latitude": 34.239406,
+      "longitude": -118.581085,
+      "matched_address": "20559 PRAIRIE ST, CHATSWORTH, CA, 91311",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CA",
+      "name": "Machina Labs MACH-ONE Robotics Factory",
+      "address_line": "9410 Owensmouth Ave",
+      "city": "Chatsworth",
+      "postal_code": "91311",
+      "latitude": 34.2411,
+      "longitude": -118.601772,
+      "matched_address": "9410 OWENSMOUTH AVE, CHATSWORTH, CA, 91311",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "AeroVizion LLC - construction and inspection services",
+      "address_line": "3325 E 31st Ave",
+      "city": "Denver",
+      "postal_code": "80205",
+      "latitude": 39.761105,
+      "longitude": -104.948435,
+      "matched_address": "3325 E 31ST AVE, DENVER, CO, 80205",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "Baseline Engineering - drone survey and GIS services",
+      "address_line": "112 N. Rubey Drive, #210",
+      "city": "Golden",
+      "postal_code": "80403",
+      "latitude": 39.764733,
+      "longitude": -105.232718,
+      "matched_address": "112 N RUBEY DR, GOLDEN, CO, 80403",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "Cleartopia Solutions",
+      "address_line": "387 Corona St Suite 585",
+      "city": "Denver",
+      "postal_code": "80218",
+      "latitude": 39.72182,
+      "longitude": -104.974137,
+      "matched_address": "387 CORONA ST, DENVER, CO, 80218",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "Cyberhawk - Colorado US headquarters",
+      "address_line": "1111 Washington Ave Suite 40",
+      "city": "Golden",
+      "postal_code": "80401",
+      "latitude": 39.75614,
+      "longitude": -105.221928,
+      "matched_address": "1111 WASHINGTON AVE, GOLDEN, CO, 80401",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "Frontier Precision - Brighton UAS sales and support",
+      "address_line": "108 West Walnut Street",
+      "city": "Brighton",
+      "postal_code": "80601",
+      "latitude": 39.988751,
+      "longitude": -104.825857,
+      "matched_address": "108 W WALNUT ST, BRIGHTON, CO, 80601",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "FulcrumAir - Wellington robotic linework operations",
+      "address_line": "8924 Pieper Road",
+      "city": "Wellington",
+      "postal_code": "80549",
+      "latitude": 40.715,
+      "longitude": -105.0085,
+      "matched_address": "8924 PIEPER RD, WELLINGTON, CO, 80549",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "Infleqtion - Colorado precision timing for autonomous systems",
+      "address_line": "1315 West Century Drive",
+      "city": "Louisville",
+      "postal_code": "80027",
+      "latitude": 39.973193,
+      "longitude": -105.168681,
+      "matched_address": "1315 W CENTURY DR, LOUISVILLE, CO, 80027",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "Inspection Specialties Inc - drone inspections",
+      "address_line": "12445 E 39th Ave. Suite 303",
+      "city": "Denver",
+      "postal_code": "80239",
+      "latitude": 39.771115,
+      "longitude": -104.843904,
+      "matched_address": "12445 E 39TH AVE, DENVER, CO, 80239",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "Kraken Robotics Colorado - subsea lidar operations",
+      "address_line": "1900 South Sunset Street, Suite 1-D",
+      "city": "Longmont",
+      "postal_code": "80501",
+      "latitude": 40.135878,
+      "longitude": -105.121353,
+      "matched_address": "1900 S SUNSET ST, LONGMONT, CO, 80501",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "Littlehorn Engineering - drone surveying",
+      "address_line": "205 Fourth Street",
+      "city": "Silver Cliff",
+      "postal_code": "81252",
+      "latitude": 38.131052,
+      "longitude": -105.451902,
+      "matched_address": "205 FOURTH ST, SILVER CLIFF, CO, 81252",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "Martin/Martin - drone thermal building observations",
+      "address_line": "12499 West Colfax Avenue",
+      "city": "Lakewood",
+      "postal_code": "80215",
+      "latitude": 39.740098,
+      "longitude": -105.138609,
+      "matched_address": "12499 W COLFAX AVE, LAKEWOOD, CO, 80215",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "Merrick & Company - sUAS geospatial services",
+      "address_line": "8051 E. Maplewood Avenue, Suite 300",
+      "city": "Greenwood Village",
+      "postal_code": "80111",
+      "latitude": 39.60503,
+      "longitude": -104.895459,
+      "matched_address": "8051 E MAPLEWOOD AVE, GREENWOOD VILLAGE, CO, 80111",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "Mile High Drones",
+      "address_line": "67 W Floyd Ave #107",
+      "city": "Englewood",
+      "postal_code": "80110",
+      "latitude": 39.656442,
+      "longitude": -104.988645,
+      "matched_address": "67 W FLOYD AVE, ENGLEWOOD, CO, 80110",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "Productivity - Littleton robotics and automation facility",
+      "address_line": "4925 South Santa Fe Drive",
+      "city": "Littleton",
+      "postal_code": "80120",
+      "latitude": 39.627686,
+      "longitude": -105.011114,
+      "matched_address": "4925 S SANTA FE DR, LITTLETON, CO, 80120",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "SGM - UAV surveying practice",
+      "address_line": "118 W. 6th Street, Suite 200",
+      "city": "Glenwood Springs",
+      "postal_code": "81601",
+      "latitude": 39.551858,
+      "longitude": -107.32851,
+      "matched_address": "118 W 6TH ST, GLENWOOD SPRINGS, CO, 81601",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "SurvWest - robotic sewer inspection practice",
+      "address_line": "8400 East Crescent Pkwy, Suite 410",
+      "city": "Greenwood Village",
+      "postal_code": "80111",
+      "latitude": 39.622628,
+      "longitude": -104.889716,
+      "matched_address": "8400 E CRESCENT PKWY, GREENWOOD VILLAGE, CO, 80111",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "True North Colorado - unmanned aerial mapping",
+      "address_line": "386 Main Street Unit 3",
+      "city": "New Castle",
+      "postal_code": "81647",
+      "latitude": 39.571527,
+      "longitude": -107.53432,
+      "matched_address": "386 MAIN ST, NEW CASTLE, CO, 81647",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "Jamestown/Stutsman Development Corporation",
+      "address_line": "120 2nd St SE",
+      "city": "Jamestown",
+      "postal_code": "58401",
+      "latitude": 46.907582,
+      "longitude": -98.708246,
+      "matched_address": "120 2ND ST SE, JAMESTOWN, ND, 58401",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Complete Automation Design - Park City robotic cells",
+      "address_line": "3100 Pinebrook Rd Ste 2250",
+      "city": "Park City",
+      "postal_code": "84098",
+      "latitude": 40.748691,
+      "longitude": -111.569663,
+      "matched_address": "3100 PINEBROOK RD, PARK CITY, UT, 84098",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Ground Solutions - Park City drone weed abatement",
+      "address_line": "4046 Saddleback Rd",
+      "city": "Park City",
+      "postal_code": "84098",
+      "latitude": 40.760731,
+      "longitude": -111.588624,
+      "matched_address": "4046 SADDLEBACK RD, PARK CITY, UT, 84098",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Safe Chem Ag - Bountiful drone application services",
+      "address_line": "385 W 500 S",
+      "city": "Bountiful",
+      "postal_code": "84010",
+      "latitude": 40.884189,
+      "longitude": -111.889674,
+      "matched_address": "385 W 500 S, BOUNTIFUL, UT, 84010",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Uintah Engineering & Land Surveying - Vernal UAS survey operations",
+      "address_line": "85 South 200 East",
+      "city": "Vernal",
+      "postal_code": "84078",
+      "latitude": 40.454587,
+      "longitude": -109.524736,
+      "matched_address": "85 S 200 E, VERNAL, UT, 84078",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Sunrise Engineering - Utah UAV mapping services",
+      "address_line": "6875 South 900 East",
+      "city": "Midvale",
+      "postal_code": "84047",
+      "latitude": 40.6259,
+      "longitude": -111.865874,
+      "matched_address": "6875 S 900 E, MIDVALE, UT, 84047",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Region Engineering & Surveying - Orem UAV survey services",
+      "address_line": "1776 North State St #110",
+      "city": "Orem",
+      "postal_code": "84057",
+      "latitude": 40.329748,
+      "longitude": -111.710136,
+      "matched_address": "1776 N STATE ST, OREM, UT, 84057",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Ensign Engineering - Sandy aerial survey operations",
+      "address_line": "45 West Sego Lily Dr., Suite 500",
+      "city": "Sandy",
+      "postal_code": "84070",
+      "latitude": 40.569636,
+      "longitude": -111.892218,
+      "matched_address": "45 W SEGO LILY DR, SANDY, UT, 84070",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Jones & DeMille Engineering - Richfield aerial and robotic hydrography",
+      "address_line": "1535 South 100 West",
+      "city": "Richfield",
+      "postal_code": "84701",
+      "latitude": 38.746632,
+      "longitude": -112.085927,
+      "matched_address": "1535 S 100 W, RICHFIELD, UT, 84701",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "McNeil Engineering - Sandy drone-enabled surveying",
+      "address_line": "8610 Sandy Parkway, Suite 200",
+      "city": "Sandy",
+      "postal_code": "84070",
+      "latitude": 40.594715,
+      "longitude": -111.905144,
+      "matched_address": "8610 SANDY PKWY, SANDY, UT, 84070",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Productivity - Salt Lake City RoboFlex robotics support",
+      "address_line": "4205 West 1980 South",
+      "city": "Salt Lake City",
+      "postal_code": "84104",
+      "latitude": 40.728077,
+      "longitude": -111.991774,
+      "matched_address": "4205 W 1980 S, SALT LAKE CITY, UT, 84104",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Rosenberg Associates - St. George drone surveying",
+      "address_line": "352 East Riverside Dr., Suite A2",
+      "city": "St. George",
+      "postal_code": "84790",
+      "latitude": 37.082768,
+      "longitude": -113.575361,
+      "matched_address": "352 E RIVERSIDE DR, ST GEORGE, UT, 84790",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Diamond Land Surveying - Midvale UAV survey services",
+      "address_line": "6891 S 700 W Suite 100",
+      "city": "Midvale",
+      "postal_code": "84047",
+      "latitude": 40.625818,
+      "longitude": -111.910111,
+      "matched_address": "6891 S 700 W, MIDVALE, UT, 84047",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Meridian Engineering - South Jordan UAV geomatics",
+      "address_line": "1628 W 11010 S",
+      "city": "South Jordan",
+      "postal_code": "84095",
+      "latitude": 40.551335,
+      "longitude": -111.938091,
+      "matched_address": "1628 W 11010 S, SOUTH JORDAN, UT, 84095",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "FireFly Robotics - Salt Lake City autonomous turf-equipment facility",
+      "address_line": "1130 South 3800 West, Suite 100",
+      "city": "Salt Lake City",
+      "postal_code": "84104",
+      "latitude": 40.744968,
+      "longitude": -111.982298,
+      "matched_address": "1130 S 3800 W, SALT LAKE CITY, UT, 84104",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Savage Automation - Farmington robot end-of-arm tooling",
+      "address_line": "261 Quail Flight",
+      "city": "Farmington",
+      "postal_code": "84025",
+      "latitude": 40.998282,
+      "longitude": -111.892943,
+      "matched_address": "261 QUAIL FLIGHT, FARMINGTON, UT, 84025",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Geneva Rock Products - Utah construction drone data use",
+      "address_line": "4393 Riverboat Road Suite 400",
+      "city": "Taylorsville",
+      "postal_code": "84123",
+      "latitude": 40.67531,
+      "longitude": -111.914331,
+      "matched_address": "4393 RIVERBOAT RD, TAYLORSVILLE, UT, 84123",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Advance Manufacturing Technology Salt Lake City Facility",
+      "address_line": "839 S 3600 W",
+      "city": "Salt Lake City",
+      "postal_code": "84104",
+      "latitude": 40.75074,
+      "longitude": -111.977155,
+      "matched_address": "839 S 3600 W, SALT LAKE CITY, UT, 84104",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Aero-Space Tooling and Machining Salt Lake City Facility",
+      "address_line": "2190 West 1700 South",
+      "city": "Salt Lake City",
+      "postal_code": "84104",
+      "latitude": 40.733222,
+      "longitude": -111.951318,
+      "matched_address": "2190 W 1700 S, SALT LAKE CITY, UT, 84104",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Apex Precision CNC and Central Utah Tool Orem Shop",
+      "address_line": "1374 W 400 S",
+      "city": "Orem",
+      "postal_code": "84058",
+      "latitude": 40.289932,
+      "longitude": -111.726991,
+      "matched_address": "1374 W 400 S, OREM, UT, 84058",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Baxter Aerospace St. George Manufacturing Facility",
+      "address_line": "3260 Deseret Dr",
+      "city": "St. George",
+      "postal_code": "84790",
+      "latitude": 37.116775,
+      "longitude": -113.518069,
+      "matched_address": "3260 DESERET DR, ST GEORGE, UT, 84790",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Frontier Swiss Provo Aerospace Component Manufacturing",
+      "address_line": "91 East 780 South",
+      "city": "Provo",
+      "postal_code": "84606",
+      "latitude": 40.223409,
+      "longitude": -111.657145,
+      "matched_address": "91 E 780 S, PROVO, UT, 84606",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "GMRE Ogden Aerospace Manufacturing Facility",
+      "address_line": "1728 W 2550 S, Suite 100",
+      "city": "Ogden",
+      "postal_code": "84401",
+      "latitude": 41.2197,
+      "longitude": -112.021781,
+      "matched_address": "1728 W 2550 S, OGDEN, UT, 84401",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Implementing Ideas Orem Electronics Assembly Facility",
+      "address_line": "1201 N 800 E",
+      "city": "Orem",
+      "postal_code": "84097",
+      "latitude": 40.319357,
+      "longitude": -111.676882,
+      "matched_address": "1201 N 800 E, OREM, UT, 84097",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "InnoSys Salt Lake City Microelectronics Manufacturing Facility",
+      "address_line": "2900 S. Main Street",
+      "city": "Salt Lake City",
+      "postal_code": "84115",
+      "latitude": 40.708161,
+      "longitude": -111.891194,
+      "matched_address": "2900 S MAIN ST, SALT LAKE CITY, UT, 84115",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "JR Automation Ogden 2550 South Production Facility",
+      "address_line": "1483 W 2550 S",
+      "city": "Ogden",
+      "postal_code": "84401",
+      "latitude": 41.219519,
+      "longitude": -112.015436,
+      "matched_address": "1483 W 2550 S, OGDEN, UT, 84401",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "LeanWerks Ogden Aerospace Machining Facility",
+      "address_line": "2767 Industrial Drive",
+      "city": "Ogden",
+      "postal_code": "84401",
+      "latitude": 41.215654,
+      "longitude": -112.014684,
+      "matched_address": "2767 INDUSTRIAL DR, OGDEN, UT, 84401",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Nammo Salt Lake City Composite Solutions Facility",
+      "address_line": "1020 South 500 West",
+      "city": "Salt Lake City",
+      "postal_code": "84101",
+      "latitude": 40.7476,
+      "longitude": -111.905456,
+      "matched_address": "1020 S 500 W, SALT LAKE CITY, UT, 84101",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "PCC Structurals Ogden Casting and Machining Facility",
+      "address_line": "2738 Commerce Way",
+      "city": "Ogden",
+      "postal_code": "84401",
+      "latitude": 41.215874,
+      "longitude": -112.018222,
+      "matched_address": "2738 COMMERCE WAY, OGDEN, UT, 84401",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Rock West Composites West Jordan Manufacturing Facility",
+      "address_line": "3392 West 8600 South",
+      "city": "West Jordan",
+      "postal_code": "84088",
+      "latitude": 40.595197,
+      "longitude": -111.96879,
+      "matched_address": "3392 W 8600 S, WEST JORDAN, UT, 84088",
+      "match_type": "Exact"
+    },
+    {
+      "state": "UT",
+      "name": "Spartronics North Logan Electronics Manufacturing Facility",
+      "address_line": "750 East 1600 North",
+      "city": "North Logan",
+      "postal_code": "84341",
+      "latitude": 41.761119,
+      "longitude": -111.816442,
+      "matched_address": "750 E 1600 N, NORTH LOGAN, UT, 84341",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "Appareo Aviation - Fargo avionics engineering and manufacturing",
+      "address_line": "1810 NDSU Research Circle North",
+      "city": "Fargo",
+      "postal_code": "58102",
+      "latitude": 46.903689,
+      "longitude": -96.809037,
+      "matched_address": "1810 NDSU RESEARCH CIR N, FARGO, ND, 58102",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "Bobcat - Gwinner manufacturing facility",
+      "address_line": "210 1st Ave NE",
+      "city": "Gwinner",
+      "postal_code": "58040",
+      "latitude": 46.226701,
+      "longitude": -97.659343,
+      "matched_address": "210 1ST AVE NE, GWINNER, ND, 58040",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "Bobcat - Wahpeton hydraulic-component manufacturing",
+      "address_line": "2101 11th St N",
+      "city": "Wahpeton",
+      "postal_code": "58075",
+      "latitude": 46.289346,
+      "longitude": -96.615557,
+      "matched_address": "2101 11TH ST N, WAHPETON, ND, 58075",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "Bobcat - Bismarck manufacturing facility",
+      "address_line": "521 S 22nd St",
+      "city": "Bismarck",
+      "postal_code": "58504",
+      "latitude": 46.800439,
+      "longitude": -100.758372,
+      "matched_address": "521 S 22ND ST, BISMARCK, ND, 58504",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "Bobcat - Bismarck Acceleration Center",
+      "address_line": "3901 Morrison Ave",
+      "city": "Bismarck",
+      "postal_code": "58504",
+      "latitude": 46.790142,
+      "longitude": -100.740167,
+      "matched_address": "3901 MORRISON AVE, BISMARCK, ND, 58504",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "Elinor Coatings - Fargo protective-materials research",
+      "address_line": "1805 NDSU Research Park Dr N",
+      "city": "Fargo",
+      "postal_code": "58102",
+      "latitude": 46.902251,
+      "longitude": -96.80654,
+      "matched_address": "1805 NDSU RESEARCH PARK DR N, FARGO, ND, 58102",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "Applied Engineering - Fargo embedded-control and automation engineering",
+      "address_line": "3300 Fiechtner Drive South",
+      "city": "Fargo",
+      "postal_code": "58103",
+      "latitude": 46.864602,
+      "longitude": -96.831724,
+      "matched_address": "3300 FIECHTNER DR S, FARGO, ND, 58103",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "ComDel Innovation - Wahpeton automated assembly and machine building",
+      "address_line": "2100 15th Street North",
+      "city": "Wahpeton",
+      "postal_code": "58075",
+      "latitude": 46.289095,
+      "longitude": -96.621142,
+      "matched_address": "2100 15TH ST N, WAHPETON, ND, 58075",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "Dakota Micro - Cayuga rugged-camera and cable manufacturing",
+      "address_line": "8659 148 1/2 Ave SE",
+      "city": "Cayuga",
+      "postal_code": "58013",
+      "latitude": 46.158522,
+      "longitude": -97.290767,
+      "matched_address": "8659 148 1/2 AVE SE, CAYUGA, ND, 58013",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "Korber Pharma - Fargo handling and packaging automation manufacturing",
+      "address_line": "969 34th Street North",
+      "city": "Fargo",
+      "postal_code": "58102",
+      "latitude": 46.903776,
+      "longitude": -96.832432,
+      "matched_address": "969 34TH ST N, FARGO, ND, 58102",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "PharmaMed - Fargo custom automation engineering and machine building",
+      "address_line": "2402 8th Ave N",
+      "city": "Fargo",
+      "postal_code": "58102",
+      "latitude": 46.885063,
+      "longitude": -96.818195,
+      "matched_address": "2402 8TH AVE N, FARGO, ND, 58102",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "Industrial Automation & Communication Systems - Williston panel shop",
+      "address_line": "2644 1st Ave E",
+      "city": "Williston",
+      "postal_code": "58801",
+      "latitude": 48.169876,
+      "longitude": -103.621302,
+      "matched_address": "2644 1ST AVE E, WILLISTON, ND, 58801",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "Electrical Components International / Fargo Assembly - Fargo plant",
+      "address_line": "3300 7th Ave N",
+      "city": "Fargo",
+      "postal_code": "58102",
+      "latitude": 46.883199,
+      "longitude": -96.830238,
+      "matched_address": "3300 7TH AVE N, FARGO, ND, 58102",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "Sweeney Controls - Fargo control-panel manufacturing and integration",
+      "address_line": "234 28th Street S",
+      "city": "Fargo",
+      "postal_code": "58103",
+      "latitude": 46.87387,
+      "longitude": -96.823527,
+      "matched_address": "234 28TH ST S, FARGO, ND, 58103",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "LulzBot / FAME 3D - Fargo additive-manufacturing equipment production",
+      "address_line": "1001 25th St N",
+      "city": "Fargo",
+      "postal_code": "58102",
+      "latitude": 46.886902,
+      "longitude": -96.819644,
+      "matched_address": "1001 25TH ST N, FARGO, ND, 58102",
+      "match_type": "Exact"
+    },
+    {
+      "state": "ND",
+      "name": "Mid-America Aerotech - West Fargo component repair and cold-spray manufacturing",
+      "address_line": "159 8th Ave NW",
+      "city": "West Fargo",
+      "postal_code": "58078",
+      "latitude": 46.887313,
+      "longitude": -96.90201,
+      "matched_address": "159 8TH AVE NW, WEST FARGO, ND, 58078",
+      "match_type": "Exact"
     }
   ],
   "held": [
+    {
+      "state": "OH",
+      "name": "WREKD FPV components and built-drone supply",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "2835 CINCINNATI DAYTON RD, MIDDLETOWN, OH, 45044"
+      ]
+    },
+    {
+      "state": "OH",
+      "name": "Spectral Energies - unmanned sensing, navigation and UUV development",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "OH",
+      "name": "Hartzell Piqua propeller manufacturing and AAM engineering campus",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "MI",
+      "name": "University of Michigan Perceptual Robotics Laboratory",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "2600 DRAPER DR, ANN ARBOR, MI, 48109"
+      ]
+    },
+    {
+      "state": "MI",
+      "name": "University of Michigan Ford Robotics Building",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "2505 HAYWARD ST, ANN ARBOR, MI, 48109"
+      ]
+    },
+    {
+      "state": "MI",
+      "name": "Michigan Tech Marine Research Assets Shared Facility",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "MI",
+      "name": "Michigan Tech Keweenaw Research Center proving grounds",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "MI",
+      "name": "Lake Superior State Center for Advanced Robotics and Engineering",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "650 W EASTERDAY AVE, SAULT SAINTE MARIE, MI, 49783"
+      ]
+    },
     {
       "state": "MI",
       "name": "SeaLandAire Technologies - Jackson marine autonomy",
@@ -1874,26 +3775,89 @@
       ]
     },
     {
-      "state": "NY",
-      "name": "Cornell Ag Robotics Lab",
+      "state": "UT",
+      "name": "Norse Drone Operations - Spanish Fork thermal and survey services",
       "result": [
         "No_Match"
       ]
     },
     {
-      "state": "ND",
-      "name": "NDDOT Uncrewed Aircraft Systems program",
+      "state": "UT",
+      "name": "Cook Surveying & Associates - Salt Lake City drone mapping",
       "result": [
         "Match",
         "Non_Exact",
-        "608 E BOULEVARD AVE, BISMARCK, ND, 58505"
+        "1785 S 4130 W, SALT LAKE CITY, UT, 84104"
       ]
     },
     {
-      "state": "NY",
-      "name": "University at Buffalo OPTIMATOR Laboratory",
+      "state": "UT",
+      "name": "ProValue Engineering - Hurricane drone topography",
       "result": [
-        "No_Match"
+        "Match",
+        "Non_Exact",
+        "850 N 20 W, HURRICANE, UT, 84737"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "SynerTech Automation - Ogden robotic-system engineering",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "2520 RULON WHITE BLVD, OGDEN, UT, 84404"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "Robo Pro - Provo commercial mobile-robot support",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "757 N 1890 W, PROVO, UT, 84601"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "REDCON - Centerville UAV survey and asset inspection",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "25 MAIN ST, CENTERVILLE, UT, 84014"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "Civil Solutions Group - Providence UAV surveying",
+      "result": [
+        "Tie"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "Monsen Engineering - Salt Lake City UAS and mobile robotics equipment",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "4899 2100 S, SALT LAKE CITY, UT, 84120"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "SITECH Intermountain - Utah UAS mapping equipment and support",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "4899 2100 S, SALT LAKE CITY, UT, 84120"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "FOCUS Engineering & Surveying - Utah drone survey operations",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "6949 HIGH TECH DR, MIDVALE, UT, 84047"
       ]
     },
     {
@@ -1904,24 +3868,12 @@
       ]
     },
     {
-      "state": "TX",
-      "name": "Kodiak AI Lancaster Autonomous Trucking Operations",
+      "state": "AZ",
+      "name": "Microchip Technology - Chandler UAV electronics ecosystem",
       "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "ND",
-      "name": "TrainND Northwest ASCENT UAS training - Williston",
-      "result": [
-        "Tie"
-      ]
-    },
-    {
-      "state": "CA",
-      "name": "AeroVironment Simi Valley UAS Assembly and Test",
-      "result": [
-        "No_Match"
+        "Match",
+        "Non_Exact",
+        "2355 W CHANDLER BLVD, CHANDLER, AZ, 85224"
       ]
     },
     {
@@ -1934,15 +3886,311 @@
       ]
     },
     {
-      "state": "UT",
-      "name": "ElectraFly - Woods Cross VTOL and composite prototyping",
+      "state": "CO",
+      "name": "Artimus Robotics - Boulder soft actuators",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "2985 STERLING CT, BOULDER, CO, 80301"
+      ]
+    },
+    {
+      "state": "OH",
+      "name": "University of Cincinnati Advanced Mobility Propulsion Lab",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "CO",
+      "name": "Orbital Mining Corporation - Golden lunar robotic R&D",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "1700 WASHINGTON AVE, GOLDEN, CO, 80401"
+      ]
+    },
+    {
+      "state": "OH",
+      "name": "University of Cincinnati Digital Futures High-bay Drone Testing Lab",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "CO",
+      "name": "Summit LiDAR - Aurora aerial mapping",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "15690 E 33RD AVE, AURORA, CO, 80011"
+      ]
+    },
+    {
+      "state": "OH",
+      "name": "University of Cincinnati Intelligent Robotics and Autonomous Systems Lab",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "CO",
+      "name": "TDA Research - Golden UAS sensing R&D",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "4680 TABLE MOUNTAIN DR, GOLDEN, CO, 80403"
+      ]
+    },
+    {
+      "state": "PA",
+      "name": "QorTek - Linden underwater-systems power electronics",
       "result": [
         "No_Match"
       ]
     },
     {
       "state": "UT",
-      "name": "BYU Robotics and Dynamics Laboratory",
+      "name": "Altaport - Lehi vertiport automation software",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "2901 BLUEGRASS BLVD, LEHI, UT, 84048"
+      ]
+    },
+    {
+      "state": "PA",
+      "name": "Wedeven Associates - Edgemont UAV-engine lubrication research",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "Storagenergy - Salt Lake City unmanned-vehicle battery R&D",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "1990 MILESTONE DR, SALT LAKE CITY, UT, 84104"
+      ]
+    },
+    {
+      "state": "MI",
+      "name": "SeaView Systems - Dexter ROV integration and subsea electronics",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "7275 W JOY RD, DEXTER, MI, 48130"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "USABotics - Midvale industrial robot manufacturing",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "7023 S 700 W, MIDVALE, UT, 84047"
+      ]
+    },
+    {
+      "state": "OK",
+      "name": "OU CIWRO UAS and CopterSonde Research",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "Foresight Land Surveying - Logan drone LiDAR services",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "2005 N 600 W, LOGAN, UT, 84321"
+      ]
+    },
+    {
+      "state": "OK",
+      "name": "OU Radar Innovations Laboratory",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "3190 MONITOR AVE, NORMAN, OK, 73072"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "Adapta Controls - Midvale robotics integration",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "Kuker-Ranken - Salt Lake City drone and geospatial equipment branch",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "2712 S 3600 W, SALT LAKE CITY, UT, 84119"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "Greater Salt Lake Municipal Services District - Drone and GIS Services",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "860 LEVOY DR, TAYLORSVILLE, UT, 84123"
+      ]
+    },
+    {
+      "state": "AZ",
+      "name": "Bent River Machine - Clarkdale robotic automation manufacturing",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "AZ",
+      "name": "Hadrian Factory 3 - Mesa autonomous manufacturing facility",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "CA",
+      "name": "Deep Ocean Engineering San Jose ROV and USV Systems",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "2261 FORTUNE DR, SAN JOSE, CA, 95131"
+      ]
+    },
+    {
+      "state": "CA",
+      "name": "OKSI Torrance Autonomy and Optical Sensing",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "19805 HAMILTON AVE, TORRANCE, CA, 90502"
+      ]
+    },
+    {
+      "state": "TX",
+      "name": "Lynntech College Station Autonomy Research",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "TX",
+      "name": "Novium Webster Robotic Mechanisms and Motion Control",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "12554 GALVESTON RD, WEBSTER, TX, 77598"
+      ]
+    },
+    {
+      "state": "TX",
+      "name": "Plus One Robotics San Antonio Robot Vision",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "639 BILLY MITCHELL RD, SAN ANTONIO, TX, 78226"
+      ]
+    },
+    {
+      "state": "TX",
+      "name": "VEX Robotics Greenville Headquarters",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "6725 FM 1570, GREENVILLE, TX, 75402"
+      ]
+    },
+    {
+      "state": "OK",
+      "name": "Tanner Consulting Tulsa Drone Survey Services",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "5323 S LEWIS AVE, TULSA, OK, 74105"
+      ]
+    },
+    {
+      "state": "NC",
+      "name": "Duke Marine Robotics and Remote Sensing Laboratory",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "NC",
+      "name": "Duke Zavlanos Robotics Learning and Control Lab",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "534 RESEARCH DR, DURHAM, NC, 27705"
+      ]
+    },
+    {
+      "state": "NC",
+      "name": "Elizabeth City State University UAS Degree and Flight Training",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "NC",
+      "name": "NCDOT Unmanned Aircraft Systems Program",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "NC",
+      "name": "TCOM Elizabeth City Manufacturing and Flight Test Facility",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "190 TCOM DR, ELIZABETH CITY, NC, 27909"
+      ]
+    },
+    {
+      "state": "PA",
+      "name": "Near Earth Autonomy - Pittsburgh aircraft autonomy",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "150 N LEXINGTON AVE, PITTSBURGH, PA, 15208"
+      ]
+    },
+    {
+      "state": "PA",
+      "name": "Gecko Robotics - Pittsburgh inspection robotics",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "100 S CMNS, PITTSBURGH, PA, 15212"
+      ]
+    },
+    {
+      "state": "PA",
+      "name": "Thoro.ai - Pittsburgh industrial autonomy",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "PA",
+      "name": "Titan Robotics - Coraopolis adaptive automation",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "CA",
+      "name": "AeroVironment Simi Valley UAS Assembly and Test",
       "result": [
         "No_Match"
       ]
@@ -1955,13 +4203,6 @@
       ]
     },
     {
-      "state": "NY",
-      "name": "Clarkson SOAR-AAM research laboratory",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
       "state": "CA",
       "name": "Naval Postgraduate School SLAMR Facility",
       "result": [
@@ -1971,31 +4212,8 @@
       ]
     },
     {
-      "state": "ND",
-      "name": "Frontier Precision - Bismarck unmanned-systems supply and support",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "ND",
-      "name": "KLJ - Bismarck UAS aviation services",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "400 E BROADWAY AVE, BISMARCK, ND, 58501"
-      ]
-    },
-    {
       "state": "CA",
       "name": "Pyka Alameda Aircraft Development and Production",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "OK",
-      "name": "OU CIWRO UAS and CopterSonde Research",
       "result": [
         "No_Match"
       ]
@@ -2007,6 +4225,13 @@
         "Match",
         "Non_Exact",
         "8880 REHCO RD, SAN DIEGO, CA, 92121"
+      ]
+    },
+    {
+      "state": "TX",
+      "name": "Kodiak AI Lancaster Autonomous Trucking Operations",
+      "result": [
+        "No_Match"
       ]
     },
     {
@@ -2042,266 +4267,6 @@
       ]
     },
     {
-      "state": "TX",
-      "name": "SkyGrid Austin Airspace Integration Services",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "12708 RIATA VISTA CIR, AUSTIN, TX, 78727"
-      ]
-    },
-    {
-      "state": "NY",
-      "name": "NYU Machines in Motion Laboratory",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "6 METROTECH CENTER, BROOKLYN, NY, 11201"
-      ]
-    },
-    {
-      "state": "OK",
-      "name": "OU Radar Innovations Laboratory",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "3190 MONITOR AVE, NORMAN, OK, 73072"
-      ]
-    },
-    {
-      "state": "OK",
-      "name": "Tanner Consulting Tulsa Drone Survey Services",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "5323 S LEWIS AVE, TULSA, OK, 74105"
-      ]
-    },
-    {
-      "state": "UT",
-      "name": "USU ASPIRE Electric Vehicle and Roadway test facility",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "TX",
-      "name": "CesiumAstro Austin Communications Manufacturing",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "13418 GALLERIA CIR, AUSTIN, TX, 78738"
-      ]
-    },
-    {
-      "state": "FL",
-      "name": "Beep Lake Nona Autonomous Mobility Operations",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "FL",
-      "name": "Censys Technologies Daytona Beach UAS",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "1808 CONCEPT CT, DAYTONA BEACH, FL, 32114"
-      ]
-    },
-    {
-      "state": "FL",
-      "name": "DeTect Panama City Radar and Counter-UAS Systems",
-      "result": [
-        "Tie"
-      ]
-    },
-    {
-      "state": "FL",
-      "name": "Drone Nerds Dania Beach Enterprise UAS Support",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "FL",
-      "name": "Embry-Riddle Daytona Beach Uncrewed Systems Degree",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "FL",
-      "name": "FAMU-FSU Center for Intelligent Systems Control and Robotics",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "2525 POTTSDAMER ST, TALLAHASSEE, FL, 32310"
-      ]
-    },
-    {
-      "state": "FL",
-      "name": "FAU Center for Connected Autonomy and Artificial Intelligence",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "777 GLADES RD, BOCA RATON, FL, 33431"
-      ]
-    },
-    {
-      "state": "ND",
-      "name": "NDSU Carrington Research Extension Center spray-drone program",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "UT",
-      "name": "Coda Octopus Engineering - Murray unmanned-systems electronics",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "6526 COTTONWOOD ST, MURRAY, UT, 84107"
-      ]
-    },
-    {
-      "state": "NC",
-      "name": "Duke Marine Robotics and Remote Sensing Laboratory",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "NC",
-      "name": "Duke Zavlanos Robotics Learning and Control Lab",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "534 RESEARCH DR, DURHAM, NC, 27705"
-      ]
-    },
-    {
-      "state": "NC",
-      "name": "Elizabeth City State University UAS Degree and Flight Training",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "NC",
-      "name": "NCDOT Unmanned Aircraft Systems Program",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "ND",
-      "name": "Bismarck State College UAS certificate",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "1500 EDWARDS AVE, BISMARCK, ND, 58501"
-      ]
-    },
-    {
-      "state": "NC",
-      "name": "TCOM Elizabeth City Manufacturing and Flight Test Facility",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "190 TCOM DR, ELIZABETH CITY, NC, 27909"
-      ]
-    },
-    {
-      "state": "FL",
-      "name": "FAU Harbor Branch Ocean Engineering and Unmanned Research",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "5600 US HWY 1, FORT PIERCE, FL, 34982"
-      ]
-    },
-    {
-      "state": "FL",
-      "name": "Florida Drone Supply Bonita Springs Operations",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "24311 WALDEN CENTER AVE, BONITA SPRINGS, FL, 34134"
-      ]
-    },
-    {
-      "state": "PA",
-      "name": "Near Earth Autonomy - Pittsburgh aircraft autonomy",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "150 N LEXINGTON AVE, PITTSBURGH, PA, 15208"
-      ]
-    },
-    {
-      "state": "PA",
-      "name": "Gecko Robotics - Pittsburgh inspection robotics",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "100 S CMNS, PITTSBURGH, PA, 15212"
-      ]
-    },
-    {
-      "state": "FL",
-      "name": "SunTrax Air Advanced Air Mobility Test Campus",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "FL",
-      "name": "SunTrax Ground Connected and Autonomous Vehicle Testing",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "FL",
-      "name": "UCF Center for Research in Computer Vision",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "4328 SCORPIUS ST, ORLANDO, FL, 32816"
-      ]
-    },
-    {
-      "state": "FL",
-      "name": "UF Machine Intelligence Laboratory",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "FL",
-      "name": "UF REEF Autonomous Vehicles Lab",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "1350 POQUITO RD N, SHALIMAR, FL, 32579"
-      ]
-    },
-    {
-      "state": "PA",
-      "name": "Thoro.ai - Pittsburgh industrial autonomy",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "PA",
-      "name": "Titan Robotics - Coraopolis adaptive automation",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
       "state": "PA",
       "name": "Advanced Construction Robotics - Allison Park field robots",
       "result": [
@@ -2327,38 +4292,6 @@
       ]
     },
     {
-      "state": "AZ",
-      "name": "ASU Autonomous Collective Systems Laboratory",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "AZ",
-      "name": "ASU Drone Studio",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "611 E ORANGE ST, TEMPE, AZ, 85287"
-      ]
-    },
-    {
-      "state": "AZ",
-      "name": "ASU RISE Robotics and Intelligent Systems Laboratory",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "AZ",
-      "name": "Embry-Riddle Prescott Uncrewed Systems Degree",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "3700 WILLOW CREEK RD, PRESCOTT, AZ, 86301"
-      ]
-    },
-    {
       "state": "PA",
       "name": "Pittsburgh International Airport xBridge",
       "result": [
@@ -2368,43 +4301,6 @@
     {
       "state": "PA",
       "name": "PennDOT Advanced Air Mobility and airport electrification planning",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "AZ",
-      "name": "L3Harris Tucson Unmanned Systems FVR Business",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "744 S EUCLID AVE, TUCSON, AZ, 85719"
-      ]
-    },
-    {
-      "state": "AZ",
-      "name": "NAU Dynamic and Active Systems Lab",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "AZ",
-      "name": "SpektreWorks Phoenix Unmanned Systems",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "AZ",
-      "name": "ZenaDrone Mesa UAS Development and Assembly",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "OH",
-      "name": "Transportation Research Center SMARTCenter",
       "result": [
         "No_Match"
       ]
@@ -2455,28 +4351,85 @@
       ]
     },
     {
-      "state": "OH",
-      "name": "Case Western Reserve Quinn Biorobotics Lab",
+      "state": "TX",
+      "name": "SkyGrid Austin Airspace Integration Services",
       "result": [
         "Match",
         "Non_Exact",
-        "10900 EUCLID AVE, CLEVELAND, OH, 44106"
+        "12708 RIATA VISTA CIR, AUSTIN, TX, 78727"
       ]
     },
     {
-      "state": "OH",
-      "name": "Wright State Autonomous Robots research area",
+      "state": "TX",
+      "name": "CesiumAstro Austin Communications Manufacturing",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "13418 GALLERIA CIR, AUSTIN, TX, 78738"
+      ]
+    },
+    {
+      "state": "CO",
+      "name": "Allied Technology - Broomfield robotic automation systems",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "2150 W 6TH AVE, BROOMFIELD, CO, 80020"
+      ]
+    },
+    {
+      "state": "CO",
+      "name": "Colorado School of Mines - Dynamic Automata Lab",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "1610 ILLINOIS ST, GOLDEN, CO, 80401"
+      ]
+    },
+    {
+      "state": "CO",
+      "name": "Colorado School of Mines - Intelligent Robotics and Systems Lab",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "1610 ILLINOIS ST, GOLDEN, CO, 80401"
+      ]
+    },
+    {
+      "state": "CO",
+      "name": "Wohnrade Civil Engineers - UAS mapping",
       "result": [
         "No_Match"
       ]
     },
     {
-      "state": "OH",
-      "name": "Event 38 Unmanned Systems - Richfield",
+      "state": "FL",
+      "name": "Beep Lake Nona Autonomous Mobility Operations",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "FL",
+      "name": "Censys Technologies Daytona Beach UAS",
       "result": [
         "Match",
         "Non_Exact",
-        "3647 BRECKSVILLE RD, RICHFIELD, OH, 44286"
+        "1808 CONCEPT CT, DAYTONA BEACH, FL, 32114"
+      ]
+    },
+    {
+      "state": "FL",
+      "name": "DeTect Panama City Radar and Counter-UAS Systems",
+      "result": [
+        "Tie"
+      ]
+    },
+    {
+      "state": "FL",
+      "name": "Drone Nerds Dania Beach Enterprise UAS Support",
+      "result": [
+        "No_Match"
       ]
     },
     {
@@ -2484,6 +4437,204 @@
       "name": "Navflex - Broomfield autonomous loading robots",
       "result": [
         "No_Match"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "ACT Aerospace Gunnison Composite Structures Facility",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "ALIGN PRECISION Cedar City Plant I",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "ALIGN PRECISION Cedar City Plant II",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "AMCo Automation North Salt Lake Machine-Build Shop",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "230 CUTLER DR, NORTH SALT LAKE, UT, 84054"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "Automation Products Group Logan Sensor Manufacturing",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "1025 1700 N, LOGAN, UT, 84321"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "Barnes Aerospace Ogden Fabrication Facility",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "1025 S DEPOT ST W, OGDEN, UT, 84404"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "JD Machine Ogden Precision Manufacturing Facility",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "2744 PARKLAND BLVD, OGDEN, UT, 84404"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "JR Automation Ogden 1050 South Production Facility",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "Kaddas Enterprises Salt Lake City Aviation Plastics Facility",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "255 APOLLO RD, SALT LAKE CITY, UT, 84116"
+      ]
+    },
+    {
+      "state": "FL",
+      "name": "Embry-Riddle Daytona Beach Uncrewed Systems Degree",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "FL",
+      "name": "FAMU-FSU Center for Intelligent Systems Control and Robotics",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "2525 POTTSDAMER ST, TALLAHASSEE, FL, 32310"
+      ]
+    },
+    {
+      "state": "FL",
+      "name": "FAU Center for Connected Autonomy and Artificial Intelligence",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "777 GLADES RD, BOCA RATON, FL, 33431"
+      ]
+    },
+    {
+      "state": "FL",
+      "name": "FAU Harbor Branch Ocean Engineering and Unmanned Research",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "5600 US HWY 1, FORT PIERCE, FL, 34982"
+      ]
+    },
+    {
+      "state": "FL",
+      "name": "Florida Drone Supply Bonita Springs Operations",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "24311 WALDEN CENTER AVE, BONITA SPRINGS, FL, 34134"
+      ]
+    },
+    {
+      "state": "FL",
+      "name": "SunTrax Air Advanced Air Mobility Test Campus",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "FL",
+      "name": "SunTrax Ground Connected and Autonomous Vehicle Testing",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "FL",
+      "name": "UCF Center for Research in Computer Vision",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "4328 SCORPIUS ST, ORLANDO, FL, 32816"
+      ]
+    },
+    {
+      "state": "FL",
+      "name": "UF Machine Intelligence Laboratory",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "FL",
+      "name": "UF REEF Autonomous Vehicles Lab",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "1350 POQUITO RD N, SHALIMAR, FL, 32579"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "Paramount Machine Salt Lake City Production Facility",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "1120 PIONEER RD, SALT LAKE CITY, UT, 84104"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "Precision Hermetic Technology Ogden Factory",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "801 S DEPOT DR W, OGDEN, UT, 84404"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "Production Assembly Factory Wise Hildale Facility",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "RAM Aviation Space and Defense St. George Factory",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "3172 DESERET DR, ST GEORGE, UT, 84790"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "Summit Machining Orem Production Shop",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "1182 N 1565 W, OREM, UT, 84057"
       ]
     },
     {
@@ -2498,29 +4649,6 @@
     {
       "state": "UT",
       "name": "Electric Power Systems - North Logan battery systems",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "OH",
-      "name": "WREKD FPV components and built-drone supply",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "2835 CINCINNATI DAYTON RD, MIDDLETOWN, OH, 45044"
-      ]
-    },
-    {
-      "state": "OH",
-      "name": "Spectral Energies - unmanned sensing, navigation and UUV development",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
-      "state": "OH",
-      "name": "Hartzell Piqua propeller manufacturing and AAM engineering campus",
       "result": [
         "No_Match"
       ]
@@ -2546,6 +4674,84 @@
       "name": "Utah Valley University - UAS aviation coursework",
       "result": [
         "No_Match"
+      ]
+    },
+    {
+      "state": "AZ",
+      "name": "ASU Autonomous Collective Systems Laboratory",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "AZ",
+      "name": "ASU Drone Studio",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "611 E ORANGE ST, TEMPE, AZ, 85287"
+      ]
+    },
+    {
+      "state": "AZ",
+      "name": "ASU RISE Robotics and Intelligent Systems Laboratory",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "AZ",
+      "name": "Embry-Riddle Prescott Uncrewed Systems Degree",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "3700 WILLOW CREEK RD, PRESCOTT, AZ, 86301"
+      ]
+    },
+    {
+      "state": "AZ",
+      "name": "L3Harris Tucson Unmanned Systems FVR Business",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "744 S EUCLID AVE, TUCSON, AZ, 85719"
+      ]
+    },
+    {
+      "state": "AZ",
+      "name": "NAU Dynamic and Active Systems Lab",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "AZ",
+      "name": "SpektreWorks Phoenix Unmanned Systems",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "AZ",
+      "name": "ZenaDrone Mesa UAS Development and Assembly",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "FL",
+      "name": "UF Informatics Cobots and Intelligent Construction Laboratory",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "FL",
+      "name": "UF Autonomy Park Outdoor Robotics Test Facility",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "2610 SW 23RD TER, GAINESVILLE, FL, 32607"
       ]
     },
     {
@@ -2619,44 +4825,12 @@
       ]
     },
     {
-      "state": "MI",
-      "name": "University of Michigan Perceptual Robotics Laboratory",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "2600 DRAPER DR, ANN ARBOR, MI, 48109"
-      ]
-    },
-    {
-      "state": "MI",
-      "name": "University of Michigan Ford Robotics Building",
-      "result": [
-        "Match",
-        "Non_Exact",
-        "2505 HAYWARD ST, ANN ARBOR, MI, 48109"
-      ]
-    },
-    {
-      "state": "MI",
-      "name": "Michigan Tech Marine Research Assets Shared Facility",
-      "result": [
-        "No_Match"
-      ]
-    },
-    {
       "state": "NY",
       "name": "Manifold Robotics - Brooklyn EM/Nav payload",
       "result": [
         "Match",
         "Non_Exact",
         "19 MORRIS AVE, BROOKLYN, NY, 11205"
-      ]
-    },
-    {
-      "state": "MI",
-      "name": "Michigan Tech Keweenaw Research Center proving grounds",
-      "result": [
-        "No_Match"
       ]
     },
     {
@@ -2669,12 +4843,309 @@
       ]
     },
     {
-      "state": "MI",
-      "name": "Lake Superior State Center for Advanced Robotics and Engineering",
+      "state": "FL",
+      "name": "University of Miami Robotics and Mechatronics Laboratory",
       "result": [
         "Match",
         "Non_Exact",
-        "650 W EASTERDAY AVE, SAULT SAINTE MARIE, MI, 49783"
+        "1251 MEMORIAL DR, CORAL GABLES, FL, 33146"
+      ]
+    },
+    {
+      "state": "NY",
+      "name": "Standard Bots Glen Cove Robot Production Facility",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "UND Center for Innovation entrepreneurial incubator",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "4200 JAMES RAY DR, GRAND FORKS, ND, 58202"
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "Roosevelt Custer Regional Council",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "13 E DIVIDE ST, BOWMAN, ND, 58623"
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "South Central Dakota Regional Council",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "429 2ND ST SW, JAMESTOWN, ND, 58401"
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "Impact Dakota Manufacturing Extension Partnership",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "4349 JAMES RAY DR, GRAND FORKS, ND, 58203"
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "North Dakota Trade Office",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "CNH / Case IH - Fargo tractor and wheel-loader plant",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "3401 1ST AVE N, FARGO, ND, 58102"
+      ]
+    },
+    {
+      "state": "NY",
+      "name": "Cornell Ag Robotics Lab",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "NDDOT Uncrewed Aircraft Systems program",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "608 E BOULEVARD AVE, BISMARCK, ND, 58505"
+      ]
+    },
+    {
+      "state": "NY",
+      "name": "University at Buffalo OPTIMATOR Laboratory",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "TrainND Northwest ASCENT UAS training - Williston",
+      "result": [
+        "Tie"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "ElectraFly - Woods Cross VTOL and composite prototyping",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "BYU Robotics and Dynamics Laboratory",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "NY",
+      "name": "Clarkson SOAR-AAM research laboratory",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "Frontier Precision - Bismarck unmanned-systems supply and support",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "KLJ - Bismarck UAS aviation services",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "400 E BROADWAY AVE, BISMARCK, ND, 58501"
+      ]
+    },
+    {
+      "state": "NY",
+      "name": "NYU Machines in Motion Laboratory",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "6 METROTECH CENTER, BROOKLYN, NY, 11201"
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "Killdeer Mountain Manufacturing - Dickinson aerospace harness plant",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "Killdeer Mountain Manufacturing - Killdeer circuit-card plant",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "Collins Aerospace - Jamestown cargo-systems MRO operation",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "2604 STATE HWY 20, JAMESTOWN, ND, 58401"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "USU ASPIRE Electric Vehicle and Roadway test facility",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "NDSU Carrington Research Extension Center spray-drone program",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "Coda Octopus Engineering - Murray unmanned-systems electronics",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "6526 COTTONWOOD ST, MURRAY, UT, 84107"
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "Bismarck State College UAS certificate",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "1500 EDWARDS AVE, BISMARCK, ND, 58501"
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "Industrial Automation & Communication Systems - Minot drive and panel shop",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "5224 S BROADWAY ST, MINOT, ND, 58701"
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "Electrical Components International / Fargo Assembly - Lisbon plant",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "1301 MAIN ST, LISBON, ND, 58054"
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "Border States - Fargo industrial-automation technical supply provider",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "ECN Automation - Fargo industrial controls engineering office",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "1630 1ST AVE N, FARGO, ND, 58102"
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "Microlap Technologies - Rolla precision-component manufacturing",
+      "result": [
+        "Tie"
+      ]
+    },
+    {
+      "state": "OK",
+      "name": "Comanche Construction Purcell Drone and Scanning Services",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "1022 W GRANT ST, PURCELL, OK, 73080"
+      ]
+    },
+    {
+      "state": "OK",
+      "name": "American Drones Moore Flight Operations",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "1000 SW 4TH PL, MOORE, OK, 73160"
+      ]
+    },
+    {
+      "state": "NC",
+      "name": "United Protective Technologies Locust Coating and R&D Facility",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "UND Tech Accelerator Engineering Laboratory Facility",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "4201 JAMES RAY DR, GRAND FORKS, ND, 58203"
+      ]
+    },
+    {
+      "state": "OH",
+      "name": "Transportation Research Center SMARTCenter",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "OH",
+      "name": "Case Western Reserve Quinn Biorobotics Lab",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "10900 EUCLID AVE, CLEVELAND, OH, 44106"
+      ]
+    },
+    {
+      "state": "OH",
+      "name": "Wright State Autonomous Robots research area",
+      "result": [
+        "No_Match"
+      ]
+    },
+    {
+      "state": "OH",
+      "name": "Event 38 Unmanned Systems - Richfield",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "3647 BRECKSVILLE RD, RICHFIELD, OH, 44286"
       ]
     }
   ]

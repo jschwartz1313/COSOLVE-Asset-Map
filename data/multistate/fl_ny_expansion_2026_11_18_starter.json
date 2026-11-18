@@ -1,0 +1,3845 @@
+{
+  "research_date": "2026-11-18",
+  "states": [
+    "FL",
+    "NY"
+  ],
+  "records": [
+    {
+      "state": "FL",
+      "name": "Apellix Jacksonville Industrial Drone Manufacturing",
+      "record_type": "facility",
+      "city": "Jacksonville",
+      "address_line": "2624 Phyllis Street",
+      "postal_code": "32204",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.apellix.com/contact/",
+      "location_notes": "Published site address only; coordinates and operating boundaries not assigned.",
+      "website_url": "https://www.apellix.com/",
+      "short_description": "Jacksonville design and manufacturing operation for industrial work drones.",
+      "overview": "Apellix develops aerial robotic systems for industrial surface work, including cleaning, coating and inspection applications. Its current contact page identifies the Jacksonville headquarters and states that systems are designed and manufactured there.",
+      "unmanned_systems_relevance": "Core industrial UAS engineering and manufacturing; not a public flight-test facility.",
+      "contact_url": "https://www.apellix.com/contact/",
+      "contact_email": "sales@apellix.com",
+      "contact_phone": "904-647-4511",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing facilities",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Apellix industrial drones",
+          "url": "https://www.apellix.com/",
+          "supports": "Industrial aerial robotic systems and applications."
+        },
+        {
+          "title": "Apellix contact",
+          "url": "https://www.apellix.com/contact/",
+          "supports": "Jacksonville address, public sales contact, and local design/manufacturing."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "MOBY Robotics Miami Subsea Vehicle Development",
+      "record_type": "organization",
+      "city": "Miami",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.mobyrobotics.com/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://www.mobyrobotics.com/",
+      "short_description": "Miami developer of autonomous subsea robotic systems for ocean intelligence and inspection.",
+      "overview": "MOBY describes autonomous marine systems for survey, inspection, resource assessment and defense applications, and explicitly identifies Miami as its design and build location. A current Miami engineering recruitment page describes vehicle development through sea trials.",
+      "unmanned_systems_relevance": "Core undersea robotics development. Advertised applications are not evidence of a deployed fleet or a public test range.",
+      "contact_url": "",
+      "contact_email": "hello@mobyrobotics.com",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Undersea systems"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Maritime domain awareness"
+      ],
+      "sources": [
+        {
+          "title": "MOBY Robotics",
+          "url": "https://www.mobyrobotics.com/",
+          "supports": "Autonomous marine capability and designed-and-built-in-Miami statement; public inquiry email."
+        },
+        {
+          "title": "MOBY subsea vehicle engineering position",
+          "url": "https://mobyrobotics.zohorecruit.com/jobs/Careers/840340000001118062",
+          "supports": "October 2026 Miami-based mechatronic vehicle development and sea-trial work."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "Mythos AI West Palm Beach Maritime Autonomy",
+      "record_type": "organization",
+      "city": "West Palm Beach",
+      "address_line": "516 Northwood Road, Unit 8096",
+      "postal_code": "33407",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://mythos-ai.com/",
+      "location_notes": "Published business contact address only; no waterfront facility or vessel operating boundary inferred.",
+      "website_url": "https://mythos-ai.com/",
+      "short_description": "Maritime navigation, pilot-assistance and autonomous survey technology developer.",
+      "overview": "Mythos AI presents its APAS, MNAV and MHydro systems for assisted navigation, vessel autonomy and automated hydrographic survey. The company publishes a West Palm Beach business contact address.",
+      "unmanned_systems_relevance": "Core maritime autonomy supplier. Business address is not established as a waterfront operating or manufacturing site.",
+      "contact_url": "",
+      "contact_email": "info@mythos-ai.com",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Maritime surface systems"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Navigation and positioning"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "Mythos AI maritime autonomy systems",
+          "url": "https://mythos-ai.com/",
+          "supports": "Named maritime products, West Palm Beach address and business email."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "Hextronics Miami Drone Docking and Automation",
+      "record_type": "organization",
+      "city": "Miami",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://hextronics.com/contact-us/intern",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://hextronics.com/contact",
+      "short_description": "Miami drone-system developer with documented drone docking and battery-service technology.",
+      "overview": "Hextronics develops automated drone stations and now presents the Eclipse open drone system. Its published company contact material identifies Miami; Florida's current business registry corroborates the in-state principal office.",
+      "unmanned_systems_relevance": "Core UAS automation and ground-support supplier. A principal-office registration does not establish a flight site.",
+      "contact_url": "https://hextronics.com/contact",
+      "contact_email": "hello@hextronics.com",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Hextronics current contact",
+          "url": "https://hextronics.com/contact",
+          "supports": "Current Eclipse offering and public inquiry email."
+        },
+        {
+          "title": "Hextronics published Miami company contact",
+          "url": "https://hextronics.com/contact-us/intern",
+          "supports": "Miami company location and drone-station context."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "VOTIX Weston Drone Operations Software Office",
+      "record_type": "organization",
+      "city": "Weston",
+      "address_line": "1825 Main Street",
+      "postal_code": "33326",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://votix.com/company",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://votix.com/company",
+      "short_description": "Weston office of a drone automation and operations-management software provider.",
+      "overview": "VOTIX publishes Weston and Syracuse offices and describes a drone operating platform for public safety, critical-site security and scaled operations. This entry represents its documented Florida office, not a drone base.",
+      "unmanned_systems_relevance": "Core UAS orchestration and operational software.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "786-706-0751",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Command, control, and communications",
+        "Autonomy and artificial intelligence"
+      ],
+      "missions": [
+        "Public safety and emergency response",
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "VOTIX company and offices",
+          "url": "https://votix.com/company",
+          "supports": "Drone operating platform, Weston office address and public business phone."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "MyDefence Clearwater Counter-UAS Office",
+      "record_type": "organization",
+      "city": "Clearwater",
+      "address_line": "14055 46th Street N, Suite 1101",
+      "postal_code": "33762",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://mydefence.com/contact/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://mydefence.com/contact/",
+      "short_description": "Documented Clearwater office of a counter-drone detection and protection systems supplier.",
+      "overview": "MyDefence's current contact directory lists Clearwater separately from its Reston US headquarters and Oklahoma City operation. Its 2026 catalog documents counter-drone products; the Florida listing is an office, not an attributed production line.",
+      "unmanned_systems_relevance": "Core counter-UAS supplier presence. No authority to use mitigation equipment is implied.",
+      "contact_url": "https://mydefence.com/contact/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Counter-UAS"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Counter-UAS"
+      ],
+      "sources": [
+        {
+          "title": "MyDefence current locations",
+          "url": "https://mydefence.com/contact/",
+          "supports": "Clearwater office and distinction from Reston headquarters."
+        },
+        {
+          "title": "MyDefence 2026 product catalog",
+          "url": "https://mydefence.com/wp-content/uploads/2026/02/MyDefence_Catalogue_2026-Q1.pdf",
+          "supports": "Counter-drone technology portfolio."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "Mainstream Engineering Rockledge UUV Support Research",
+      "record_type": "organization",
+      "city": "Rockledge",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "headquarters",
+      "location_source_url": "https://mainstream-engr.com/career-at-mainstream-engineering/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://mainstream-engr.com/",
+      "short_description": "Rockledge engineering manufacturer with documented Navy UUV handling-system research.",
+      "overview": "Mainstream currently identifies Rockledge as its headquarters and research/manufacturing base. Its 2022 Navy announcement documents development of a flexible UUV stowage, launch and recovery support device.",
+      "unmanned_systems_relevance": "Supporting engineering and manufacturing asset tied to a specific undersea-vehicle support project, not generic aerospace inclusion.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing and supply chain",
+        "Companies and solution providers",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Undersea systems"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Mainstream current headquarters",
+          "url": "https://mainstream-engr.com/career-at-mainstream-engineering/",
+          "supports": "Current Rockledge headquarters."
+        },
+        {
+          "title": "Navy UUV storage, launch and recovery research",
+          "url": "https://mainstream-engr.com/wp-content/uploads/Mainstream-Press-Release-UUV-Storage-and-Handling-System.pdf",
+          "supports": "2022 UUV-support development scope; not proof of delivered capability."
+        }
+      ],
+      "research_notes": "The UUV project is a dated R&D award announcement. Completion, production availability and current contract status were not established."
+    },
+    {
+      "state": "FL",
+      "name": "Boardwalk Robotics Pensacola Humanoid Development",
+      "record_type": "organization",
+      "city": "Pensacola",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://boardwalkrobotics.com/Contact",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://boardwalkrobotics.com/",
+      "short_description": "Pensacola robotics developer working on humanoid manipulation and autonomous sustainment.",
+      "overview": "Boardwalk currently presents its Alex robotic platform and engineering services. Its current contact page confirms Pensacola, while the federal SBIR portfolio documents a 2025 HEFESTUS project for humanoid maintenance and sustainment autonomy.",
+      "unmanned_systems_relevance": "Core ground robotics and manipulation development; award objectives are not fielded-product performance.",
+      "contact_url": "https://boardwalkrobotics.com/Contact",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Boardwalk Robotics",
+          "url": "https://boardwalkrobotics.com/",
+          "supports": "Current robotics platform and services."
+        },
+        {
+          "title": "Boardwalk current contact",
+          "url": "https://boardwalkrobotics.com/Contact",
+          "supports": "Current first-party Pensacola location; postal discrepancy not resolved."
+        },
+        {
+          "title": "Boardwalk federal SBIR portfolio",
+          "url": "https://www.sbir.gov/portfolio/1518045",
+          "supports": "Pensacola company location and 2025 HEFESTUS development award."
+        }
+      ],
+      "research_notes": "Company and federal records disagree on postal code, so no street/postal assignment is made. HEFESTUS is documented R&D, not a completed deployment claim."
+    },
+    {
+      "state": "FL",
+      "name": "UF Trustworthy Engineered Autonomy Laboratory",
+      "record_type": "facility",
+      "city": "Gainesville",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://tea.ece.ufl.edu/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://tea.ece.ufl.edu/",
+      "short_description": "Autonomous-systems safety and formal-methods lab using small robotic race cars.",
+      "overview": "TEA Lab researches verification, monitoring, prediction and control for robotic and autonomous systems. Its current page identifies Malachowsky Hall 4100 and reports 2026 research activity.",
+      "unmanned_systems_relevance": "Core autonomous ground-vehicle research with documented physical platforms.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Testing, evaluation, verification, and validation",
+        "Autonomy and artificial intelligence"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "UF TEA Laboratory",
+          "url": "https://tea.ece.ufl.edu/",
+          "supports": "Research scope, autonomous race-car platforms, physical lab reference and 2026 updates."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "UF Informatics Cobots and Intelligent Construction Laboratory",
+      "record_type": "facility",
+      "city": "Gainesville",
+      "address_line": "1949 Stadium Road, Weil Hall 360",
+      "postal_code": "32611",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "research",
+      "location_source_url": "https://faculty.eng.ufl.edu/ericdu/contact/",
+      "location_notes": "Published site address only; coordinates and operating boundaries not assigned.",
+      "website_url": "https://faculty.eng.ufl.edu/ericdu/contact/",
+      "short_description": "Construction robotics and human-robot collaboration lab at UF.",
+      "overview": "The ICIC Lab works on human-robot collaboration and built-environment informatics. Its published research recruitment specifically includes autonomous drones, AI and robotics for construction-related research.",
+      "unmanned_systems_relevance": "Core applied robotics research program, distinct from UF's marine and machine-intelligence labs.",
+      "contact_url": "",
+      "contact_email": "eric.du@essie.ufl.edu",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Simulation, digital twins, and synthetic environments"
+      ],
+      "missions": [
+        "Infrastructure inspection",
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "ICIC Lab location and scope",
+          "url": "https://faculty.eng.ufl.edu/ericdu/contact/",
+          "supports": "Named lab, Gainesville address and research contact."
+        },
+        {
+          "title": "ICIC 2026 research recruitment",
+          "url": "https://faculty.eng.ufl.edu/ericdu/wp-content/uploads/sites/134/2025/07/ICIC-lab-PhD-RA-2026-Spring.pdf",
+          "supports": "Explicit AI and autonomous-drone research."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "UF Smart Autonomy Laboratory",
+      "record_type": "facility",
+      "city": "Gainesville",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://www.transportation.institute.ufl.edu/2024/03/15/a-lab-on-the-university-of-florida-campus-offers-a-collaborative-space-for-autonomous-vehicle-research/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://faculty.eng.ufl.edu/smart-autonomy-lab/",
+      "short_description": "Controlled autonomous-vehicle research environment using small-scale robotic vehicles.",
+      "overview": "UF documents Yu Wang's Smart Autonomy Lab as an AV experimentation space using F1Tenth vehicles, motion capture and a reconfigurable street environment. UF's AI research institute also identifies the lab's self-driving and collaborative-robotics focus.",
+      "unmanned_systems_relevance": "Core ground-autonomy laboratory; small-scale experiments do not imply road deployment approval.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Testing, evaluation, verification, and validation",
+        "Autonomy and artificial intelligence"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "UF Smart Autonomy Lab test environment",
+          "url": "https://www.transportation.institute.ufl.edu/2024/03/15/a-lab-on-the-university-of-florida-campus-offers-a-collaborative-space-for-autonomous-vehicle-research/",
+          "supports": "Campus laboratory, robotic vehicles and experimental environment."
+        },
+        {
+          "title": "UF AI research institute researcher profile",
+          "url": "https://ai.research.ufl.edu/ai-in-biodiversity/",
+          "supports": "Current lab identity and autonomous-vehicle/robotics focus."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "UF Nonlinear Controls and Robotics Laboratory",
+      "record_type": "facility",
+      "city": "Gainesville",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://mae.ufl.edu/research/areas/robotics-autonomy-controls-and-optimization/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://ncr.mae.ufl.edu/index.php?id=research%2Frobotics",
+      "short_description": "Robotics control research spanning wheeled, marine and VTOL platforms.",
+      "overview": "NCR develops adaptive and robust control, visual feedback and fault-detection methods. Its research page explicitly addresses mobile robots, marine vehicles and VTOL systems, including navigation with intermittent feedback.",
+      "unmanned_systems_relevance": "Core autonomy and controls lab, distinct from the already-listed Machine Intelligence Laboratory.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Maritime surface systems",
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Navigation and positioning"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "NCR robotics research",
+          "url": "https://ncr.mae.ufl.edu/index.php?id=research%2Frobotics",
+          "supports": "Documented robotics control applications and current project list."
+        },
+        {
+          "title": "UF robotics research area",
+          "url": "https://mae.ufl.edu/research/areas/robotics-autonomy-controls-and-optimization/",
+          "supports": "UF research context and current faculty/campus association."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "UF Autonomy Park Outdoor Robotics Test Facility",
+      "record_type": "facility",
+      "city": "Gainesville",
+      "address_line": "2610 SW 23rd Terrace",
+      "postal_code": "32611",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "test-site",
+      "location_source_url": "https://www.eng.ufl.edu/facilities/hwcoe-buildings-information/hwcoe-building-directory/name/autonomy-park/",
+      "location_notes": "Published site address only; coordinates and operating boundaries not assigned.",
+      "website_url": "https://mae.ufl.edu/research/facilities/autonomy-park/",
+      "short_description": "Netted outdoor facility for networked aerial and ground robotics research.",
+      "overview": "UF's Autonomy Park supports experimentation with multi-agent autonomous systems and contested communications. The facility page documents ground robots, quadrupeds and quadrotors; the building directory identifies the physical site.",
+      "unmanned_systems_relevance": "Core physical autonomy test environment.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "University research facility. External booking, flight permissions and operating limits are not established by this listing.",
+      "strategic_categories": [
+        "Test and operational environments",
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Testing, evaluation, verification, and validation",
+        "Command, control, and communications"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "UF Autonomy Park",
+          "url": "https://mae.ufl.edu/research/facilities/autonomy-park/",
+          "supports": "Purpose-built outdoor multi-agent robotics facility and platform types."
+        },
+        {
+          "title": "UF building directory: Autonomy Park",
+          "url": "https://www.eng.ufl.edu/facilities/hwcoe-buildings-information/hwcoe-building-directory/name/autonomy-park/",
+          "supports": "Published physical facility address."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "USF Laboratory for Autonomy Control Information and Systems",
+      "record_type": "facility",
+      "city": "Tampa",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://www.usf.edu/engineering/mae/research/index.aspx",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://lacis.eng.usf.edu/",
+      "short_description": "USF lab developing control and decision architectures for autonomous vehicles and robot swarms.",
+      "overview": "USF's current research directory identifies LACIS under Tansel Yucelen and describes control, information and decision architectures for next-generation autonomous vehicles and robotic swarms.",
+      "unmanned_systems_relevance": "Core autonomous-systems research program.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "USF MAE research labs: LACIS",
+          "url": "https://www.usf.edu/engineering/mae/research/index.aspx",
+          "supports": "Named laboratory, university association and explicit vehicle/swarm research scope."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "USF Resilient Autonomous Networked Control Systems Laboratory",
+      "record_type": "facility",
+      "city": "Tampa",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://www.usf.edu/engineering/mae/research/index.aspx",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://rancs-lab.com/",
+      "short_description": "Ground and aerial autonomous-system control research with hardware-in-the-loop experimentation.",
+      "overview": "USF lists the RANCS Lab under Arman Sargolzaei. The documented scope includes testing and verification of autonomous-vehicle control and communications under uncertainty, cyber-physical threats and communication constraints.",
+      "unmanned_systems_relevance": "Core autonomous ground/aerial research, distinct from LACIS.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Cybersecurity and resilient systems",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "USF MAE research labs: RANCS",
+          "url": "https://www.usf.edu/engineering/mae/research/index.aspx",
+          "supports": "Named lab, ground and aerial platforms, simulation and real experimentation."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "FIU Applied Robotics and Remote Systems Laboratory",
+      "record_type": "facility",
+      "city": "Miami",
+      "address_line": "10555 W Flagler Street, Suite 2100",
+      "postal_code": "33174",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "research",
+      "location_source_url": "https://eicdev.fiu.edu/phparc/research/aerospace-defense/robotics/",
+      "location_notes": "Published site address only; coordinates and operating boundaries not assigned.",
+      "website_url": "https://eicdev.fiu.edu/phparc/research/aerospace-defense/robotics/",
+      "short_description": "Applied robotics lab for hazardous-site inspection, surveying and environmental remediation.",
+      "overview": "FIU's Applied Research Center documents pipe crawlers, inspection rovers, underwater remote systems, drones and autonomous vehicles for DOE facility remediation. The named lab has a machine shop and prototyping resources.",
+      "unmanned_systems_relevance": "Core applied robotic inspection laboratory, distinct from FIU's marine robotics lab already listed.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Federal and defense customer access",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Undersea systems",
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Payloads and mission systems"
+      ],
+      "missions": [
+        "Infrastructure inspection",
+        "Environmental monitoring"
+      ],
+      "sources": [
+        {
+          "title": "FIU ARC Applied Robotics and Remote Systems Lab",
+          "url": "https://eicdev.fiu.edu/phparc/research/aerospace-defense/robotics/",
+          "supports": "Named lab, robotic systems, remediation mission and research-center address."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "FIU Motion Robotics and Automation Laboratory",
+      "record_type": "program",
+      "city": "Miami",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "research",
+      "location_source_url": "https://robotics.cs.fiu.edu/robotics/contact/",
+      "location_notes": "Program spans two FIU campuses; Miami is an affiliation anchor, not a single laboratory address.",
+      "website_url": "https://robotics.cs.fiu.edu/robotics/",
+      "short_description": "Robotics navigation and multi-robot planning research with facilities at FIU's two Miami-area campuses.",
+      "overview": "MoRA researches robot navigation, underwater localization in GPS-denied environments and ocean monitoring. Its contact page identifies experimental facilities at Modesto A. Maidique and Biscayne Bay campuses.",
+      "unmanned_systems_relevance": "Core robotics research program. One multi-campus program record avoids splitting shared research into artificial site records.",
+      "contact_url": "https://robotics.cs.fiu.edu/robotics/contact/",
+      "contact_email": "bobadilla@cs.fiu.edu",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Undersea systems",
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Navigation and positioning"
+      ],
+      "missions": [
+        "Environmental monitoring"
+      ],
+      "sources": [
+        {
+          "title": "FIU MoRA Laboratory",
+          "url": "https://robotics.cs.fiu.edu/robotics/",
+          "supports": "Underwater navigation and autonomous-systems research."
+        },
+        {
+          "title": "MoRA contact and facilities",
+          "url": "https://robotics.cs.fiu.edu/robotics/contact/",
+          "supports": "Two campus facilities and public research inquiry contact."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "Florida Tech Autonomy Laboratory",
+      "record_type": "facility",
+      "city": "Melbourne",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://www.fit.edu/aerospace-physics-and-space-sciences/research/the-autonomy-lab/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://www.fit.edu/aerospace-physics-and-space-sciences/research/the-autonomy-lab/",
+      "short_description": "Aerospace autonomy lab developing data-driven decision, perception and control methods.",
+      "overview": "Florida Tech's Autonomy Lab develops data-driven methods for autonomous aerospace systems. The university's 2026 design showcase documents use of its testing environment for a drone-based autonomous rendezvous and inspection testbed.",
+      "unmanned_systems_relevance": "Core autonomy research with a documented physical robotic test environment.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Space-enabled services"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Florida Tech Autonomy Lab",
+          "url": "https://www.fit.edu/aerospace-physics-and-space-sciences/research/the-autonomy-lab/",
+          "supports": "Named research lab, scope and Melbourne campus."
+        },
+        {
+          "title": "Florida Tech 2026 aerospace design showcase",
+          "url": "https://www.fit.edu/student-design-showcase/showcase-2026/aerospace-physics-and-space-sciences/",
+          "supports": "AERIS use of the lab's physical testing environment in 2026."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "Florida Tech Space Vehicles and Robotics Laboratory",
+      "record_type": "facility",
+      "city": "Melbourne",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://research.fit.edu/space-vehicles-and-robotics-svr-lab/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://research.fit.edu/space-vehicles-and-robotics-svr-lab/",
+      "short_description": "Robot and spacecraft guidance, navigation and control lab with ground-testbed development.",
+      "overview": "The SVR Lab develops robust guidance, navigation and control using adaptive control and machine learning. Its facilities page distinguishes existing computing and embedded equipment from a satellite simulator still in development.",
+      "unmanned_systems_relevance": "Core robotics and uncrewed-spacecraft autonomy research; distinct from Florida Tech's Autonomy Lab.",
+      "contact_url": "",
+      "contact_email": "crianorios@fit.edu",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Space-enabled services",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Navigation and positioning",
+        "Simulation, digital twins, and synthetic environments"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Florida Tech SVR Laboratory",
+          "url": "https://research.fit.edu/space-vehicles-and-robotics-svr-lab/",
+          "supports": "Named lab, robotic GNC focus, campus facility and contact."
+        },
+        {
+          "title": "SVR facilities and equipment",
+          "url": "https://research.fit.edu/space-vehicles-and-robotics-svr-lab/facilities-and-equipment/",
+          "supports": "Physical research equipment and in-development simulator distinction."
+        }
+      ],
+      "research_notes": "Simulator and attitude-testbed development are described as work in progress, not completed operational capabilities."
+    },
+    {
+      "state": "FL",
+      "name": "University of Miami Robotics and Mechatronics Laboratory",
+      "record_type": "facility",
+      "city": "Coral Gables",
+      "address_line": "1251 Memorial Drive, McArthur Engineering Building, Room 505",
+      "postal_code": "33146",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "research",
+      "location_source_url": "https://rmlab.miami.edu/index.html",
+      "location_notes": "Published site address only; coordinates and operating boundaries not assigned.",
+      "website_url": "https://rmlab.miami.edu/index.html",
+      "short_description": "Mobile robotics, robotic manipulation and human-machine interaction laboratory.",
+      "overview": "RML's official Miami site documents autonomous mobile manipulation, reconfigurable robots and hazardous-environment sensing. The lab publishes a Coral Gables laboratory address and identifies its director's Miami appointment.",
+      "unmanned_systems_relevance": "Core ground-robotics research, including search-and-rescue applications.",
+      "contact_url": "",
+      "contact_email": "pbentzvi@miami.edu",
+      "contact_phone": "305-284-7888",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Search and rescue",
+        "Environmental monitoring"
+      ],
+      "sources": [
+        {
+          "title": "Miami Robotics and Mechatronics Lab",
+          "url": "https://rmlab.miami.edu/index.html",
+          "supports": "Research focus and published Coral Gables laboratory address/contact."
+        },
+        {
+          "title": "RML director profile",
+          "url": "https://rmlab.miami.edu/bt.html",
+          "supports": "Current Miami department chair and laboratory-director identity."
+        }
+      ],
+      "research_notes": "The site retains older research/news material and some legacy affiliation text. No equipment inventory or project completion is inferred from those older sections."
+    },
+    {
+      "state": "FL",
+      "name": "FAMU-FSU STRIDe Robotics Laboratory",
+      "record_type": "facility",
+      "city": "Tallahassee",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://ame.fsu.edu/facilities/robotics-and-mechatronics/stride-sensorial-and-terrestrial-robotic-and-integrated-design/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://ame.fsu.edu/facilities/robotics-and-mechatronics/stride-sensorial-and-terrestrial-robotic-and-integrated-design/",
+      "short_description": "Distinct CISCOR-affiliated lab for terrestrial robot design, motion planning and difficult-terrain control.",
+      "overview": "The AME facility directory identifies STRIDe as a named laboratory with documented ground-robot platforms, sensing, multi-robot coordination and terrain-control research. It is a specific child lab of the already-listed CISCOR center.",
+      "unmanned_systems_relevance": "Core ground robotics laboratory; not a second record for the whole CISCOR organization.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "FAMU-FSU STRIDe facility profile",
+          "url": "https://ame.fsu.edu/facilities/robotics-and-mechatronics/stride-sensorial-and-terrestrial-robotic-and-integrated-design/",
+          "supports": "Named physical lab, distinct research scope and equipment within AME/CISCOR."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "FAMU-FSU Optimal Robotics Laboratory",
+      "record_type": "facility",
+      "city": "Tallahassee",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://www.optimalroboticslab.com/about",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://www.optimalroboticslab.com/about",
+      "short_description": "Legged robotics and optimal-control laboratory at the FAMU-FSU College of Engineering.",
+      "overview": "The Optimal Robotics Lab develops algorithms for real-world locomotion and motion planning. FSU's February 2026 profile confirms the lab operates at the AME Center in Innovation Park and works with bipedal and quadrupedal robots.",
+      "unmanned_systems_relevance": "Core ground-robotics lab, documented separately from STRIDe and the parent CISCOR center.",
+      "contact_url": "",
+      "contact_email": "hubicki@eng.famu.fsu.edu",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Optimal Robotics Lab about",
+          "url": "https://www.optimalroboticslab.com/about",
+          "supports": "Tallahassee laboratory identity and robotics scope."
+        },
+        {
+          "title": "FSU 2026 laboratory profile",
+          "url": "https://news.fsu.edu/news/science-technology/2026/02/24/faculty-spotlight-christian-hubickis-path-from-robots-to-reality-tv/",
+          "supports": "Current AME/Innovation Park location and physical robot work."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "UCF Connected and Autonomous Vehicle Research Laboratory",
+      "record_type": "facility",
+      "city": "Orlando",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://cavrel.ece.ucf.edu/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://cavrel.ece.ucf.edu/",
+      "short_description": "Connected-vehicle communications and cooperative-driving research lab.",
+      "overview": "CAVREL documents V2X networking, cooperative driving and small-scale autonomous-vehicle platforms. Its direct lab page identifies HEC 338 at UCF in Orlando; UCF's current robotics directory continues to identify the lab and its testbeds.",
+      "unmanned_systems_relevance": "Core ground autonomy and vehicular networking research.",
+      "contact_url": "",
+      "contact_email": "Yaser.Fallah@ucf.edu",
+      "contact_phone": "407-823-4182",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Command, control, and communications",
+        "Autonomy and artificial intelligence"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "UCF CAVREL",
+          "url": "https://cavrel.ece.ucf.edu/",
+          "supports": "Named lab, Orlando location, autonomous vehicles, communications research and contact."
+        },
+        {
+          "title": "UCF current robotics directory",
+          "url": "https://www.ucf.edu/robotics/",
+          "supports": "Continuing CAVREL research and testbed association."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "UCF Astrodynamics Space and Robotics Laboratory",
+      "record_type": "facility",
+      "city": "Orlando",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://mae.ucf.edu/person/tarek-elgohary/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://mae.ucf.edu/ASRL/",
+      "short_description": "Space robotics and autonomous guidance research using robotic ground-test platforms.",
+      "overview": "UCF identifies ASRL as a distinct lab directed by Tarek Elgohary. Its documented work includes a holonomic ground vehicle with a robotic arm for space-proximity experimentation; recent university reporting confirms ongoing lab affiliation.",
+      "unmanned_systems_relevance": "Core robotic autonomy research, not a whole-institution listing.",
+      "contact_url": "",
+      "contact_email": "elgohary@ucf.edu",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Space-enabled services"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Navigation and positioning"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "UCF ASRL current laboratory page",
+          "url": "https://mae.ucf.edu/ASRL/",
+          "supports": "Named lab, physical laboratory room and 2026 activity; direct research contact."
+        },
+        {
+          "title": "ASRL director and campus reference",
+          "url": "https://mae.ucf.edu/person/tarek-elgohary/",
+          "supports": "Named lab, research contact and Orlando campus location."
+        },
+        {
+          "title": "ASRL robotic ground test platform",
+          "url": "https://mae.ucf.edu/designing-a-trajectory-for-success-keanu-brayman/",
+          "supports": "Documented ROME holonomic vehicle and robotic arm."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "FAU BioRobotics Laboratory",
+      "record_type": "facility",
+      "city": "Boca Raton",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://www.fau.edu/engineering/research/biorobotics/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://www.fau.edu/engineering/research/biorobotics/",
+      "short_description": "Soft robotics, tactile sensing and robotic-control laboratory with underwater applications.",
+      "overview": "FAU's current laboratory page documents bioinspired robotic systems, adaptive grasping, tactile sensing and soft robots for underwater applications. The lab is identified at the Boca Raton campus.",
+      "unmanned_systems_relevance": "Supporting robotic manipulation, sensing and control expertise; much of the portfolio is assistive/prosthetic rather than unmanned field systems.",
+      "contact_url": "",
+      "contact_email": "eengeberg@fau.edu",
+      "contact_phone": "561-297-0530",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Undersea systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "FAU BioRobotics Lab",
+          "url": "https://www.fau.edu/engineering/research/biorobotics/",
+          "supports": "Current research scope, underwater application, Boca Raton campus and public research contact."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "NASA Kennedy Swamp Works Robotics Development Facility",
+      "record_type": "facility",
+      "city": "Kennedy Space Center",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://www.nasa.gov/kennedy/partnerships/swampworks/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://www.nasa.gov/kennedy/partnerships/swampworks/",
+      "short_description": "Exploration robotics development and regolith-interaction testing facility at Kennedy Space Center.",
+      "overview": "Swamp Works combines robotics integration, prototype development and regolith operations research. NASA documents planetary rover mobility testing and robotic excavation work at the Kennedy facility.",
+      "unmanned_systems_relevance": "Core planetary ground-robotics R&D and test environment.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "NASA research facility; collaboration and any site access require agency arrangements. No open public testing entitlement established.",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Test and operational environments",
+        "Federal and defense customer access",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Space-enabled services"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "NASA Kennedy Swamp Works",
+          "url": "https://www.nasa.gov/kennedy/partnerships/swampworks/",
+          "supports": "Kennedy facility, robotics development and documented rover/regolith testing."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "NOAA AOML Hurricane Glider Research Program",
+      "record_type": "program",
+      "city": "Miami",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://www.aoml.noaa.gov/wp-content/uploads/2022/07/Glider-One-Page_July2022.pdf",
+      "location_notes": "Miami research/coordination anchor. Caribbean and Atlantic deployment areas are not mapped as Florida facilities.",
+      "website_url": "https://www.aoml.noaa.gov/proj/hurricane-gliders/",
+      "short_description": "Miami-led autonomous underwater glider observations supporting hurricane science.",
+      "overview": "NOAA AOML maintains a hurricane glider project and deployment records for upper-ocean observations. Its official project factsheet identifies the Miami laboratory. Vehicles operate across partner regions, not exclusively Florida waters.",
+      "unmanned_systems_relevance": "Core undersea autonomous observing program, distinct from the already-listed USF glider fleet.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Undersea systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Environmental monitoring"
+      ],
+      "sources": [
+        {
+          "title": "NOAA AOML hurricane gliders",
+          "url": "https://www.aoml.noaa.gov/proj/hurricane-gliders/",
+          "supports": "Documented glider program, research purpose and dated deployment-status records."
+        },
+        {
+          "title": "NOAA AOML glider factsheet",
+          "url": "https://www.aoml.noaa.gov/wp-content/uploads/2022/07/Glider-One-Page_July2022.pdf",
+          "supports": "Miami laboratory and autonomous glider observing role."
+        }
+      ],
+      "research_notes": "Project page's visible vehicle-status table is dated 2025; no particular glider is asserted to be deployed on the research date."
+    },
+    {
+      "state": "FL",
+      "name": "Orlando Police Drone as First Responder Program",
+      "record_type": "program",
+      "city": "Orlando",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://www.orlando.gov/Our-Government/Departments-Offices/Orlando-Police-Department/OPD-Tools-and-Technology",
+      "location_notes": "Program/service-area reference; no single operating base, coordinates or boundary assigned.",
+      "website_url": "https://www.orlando.gov/Our-Government/Departments-Offices/Orlando-Police-Department/OPD-Tools-and-Technology",
+      "short_description": "Police program dispatching dock-based drones to selected emergency calls.",
+      "overview": "Orlando's current technology page documents the DFR program, remote monitoring at its crime center and dock-based aircraft responding to calls. This record represents the city program, not individual undisclosed docks.",
+      "unmanned_systems_relevance": "Core public-safety UAS operator program.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Command, control, and communications"
+      ],
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue"
+      ],
+      "sources": [
+        {
+          "title": "Orlando Police tools and technology",
+          "url": "https://www.orlando.gov/Our-Government/Departments-Offices/Orlando-Police-Department/OPD-Tools-and-Technology",
+          "supports": "Current DFR program, city service area and documented operational model."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "Tampa Police Drone as First Responder Program",
+      "record_type": "program",
+      "city": "Tampa",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://www.tampa.gov/police/transparency/dfr",
+      "location_notes": "Program/service-area reference; no single operating base, coordinates or boundary assigned.",
+      "website_url": "https://www.tampa.gov/police/transparency/dfr",
+      "short_description": "Emergency-response drone pilot serving Tampa's Ybor and downtown areas.",
+      "overview": "Tampa Police publishes a dedicated DFR program page describing reactive dispatch to priority incidents. It identifies Ybor and downtown as the pilot area; the listing does not assume the proposed citywide expansion is complete.",
+      "unmanned_systems_relevance": "Core public-safety UAS operating program.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue"
+      ],
+      "sources": [
+        {
+          "title": "Tampa Police DFR program",
+          "url": "https://www.tampa.gov/police/transparency/dfr",
+          "supports": "Current program, public-safety use and bounded pilot coverage."
+        }
+      ],
+      "research_notes": "Pilot coverage retained as published. No citywide coverage or external flight rights inferred."
+    },
+    {
+      "state": "FL",
+      "name": "City of Miami Police Drone First Responder Program",
+      "record_type": "program",
+      "city": "Miami",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://www.miami-police.org/docs/MPD_Annual_Report_2025.pdf",
+      "location_notes": "Program/service-area reference; no single operating base, coordinates or boundary assigned.",
+      "website_url": "",
+      "short_description": "City police drone response program supporting incident assessment and search missions.",
+      "overview": "Miami Police's 2025 annual report documents its DFR launch and initial calls supported. A department release describes remote launch from headquarters for incident assessment, traffic response and missing-person or water-rescue support.",
+      "unmanned_systems_relevance": "Core city public-safety UAS program; not a Miami-Dade County police record.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue"
+      ],
+      "sources": [
+        {
+          "title": "Miami Police 2025 annual report",
+          "url": "https://www.miami-police.org/docs/MPD_Annual_Report_2025.pdf",
+          "supports": "DFR implementation and documented operational role."
+        },
+        {
+          "title": "Miami Police DFR announcement",
+          "url": "https://www.miami-police.org/news/News%20Release%20-%20City%20of%20Miami%20Police%20Drone%20First%20Responder%20Program.pdf",
+          "supports": "City program identity and remote-response mission scope."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "Orange County Sheriff Drone Aviation Program",
+      "record_type": "program",
+      "city": "Orlando",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://www.ocso.com/operational-services/sod/",
+      "location_notes": "Program/service-area reference; no single operating base, coordinates or boundary assigned.",
+      "website_url": "https://www.ocso.com/operational-services/sod/",
+      "short_description": "County sheriff aviation program using drones for incident, search and disaster support.",
+      "overview": "The Orange County Sheriff's Special Operations Division explicitly documents a drone program alongside crewed aircraft in its aviation section. The section supports county and partner agencies across search, incident and disaster-assessment missions.",
+      "unmanned_systems_relevance": "Core UAS operator program distinct from Orlando city police.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue"
+      ],
+      "sources": [
+        {
+          "title": "Orange County Sheriff Special Operations",
+          "url": "https://www.ocso.com/operational-services/sod/",
+          "supports": "Explicit drone program in county aviation operations and mission context."
+        }
+      ],
+      "research_notes": "Source lists combined aviation-section missions; not every mission or sensor is attributed exclusively to drones."
+    },
+    {
+      "state": "FL",
+      "name": "Florida Fish and Wildlife Conservation Commission UAS Program",
+      "record_type": "program",
+      "city": "",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://impp.myfwc.com/Drone%20Manual.pdf",
+      "location_notes": "Statewide agency program with no single operating site assigned.",
+      "website_url": "https://impp.myfwc.com/",
+      "short_description": "Agency-operated drone program supporting Florida conservation research and field operations.",
+      "overview": "FWC publishes an agency UAS use and safety manual, pilot requirements and fleet-management procedures. Its 2026 research internship material explicitly includes drone-based habitat data collection.",
+      "unmanned_systems_relevance": "Core statewide UAS operating program; the manual does not grant access to agency drones or land.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Safety, policy, regulatory, and airspace integration"
+      ],
+      "missions": [
+        "Environmental monitoring",
+        "Agriculture and natural resources"
+      ],
+      "sources": [
+        {
+          "title": "FWC UAS use and safety manual",
+          "url": "https://impp.myfwc.com/Drone%20Manual.pdf",
+          "supports": "Agency UAS personnel, fleet-management and operating program."
+        },
+        {
+          "title": "FWC 2026 research internships",
+          "url": "https://myfwc.com/research/about/careers/internships/steidinger/",
+          "supports": "Current habitat-monitoring UAS research applications in Florida."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "Embry-Riddle MicaPlex Technology Incubator",
+      "record_type": "facility",
+      "city": "Daytona Beach",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "campus",
+      "location_source_url": "https://erau.edu/research-and-innovation/research-park/micaplex",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://erau.edu/research-and-innovation/research-park/micaplex",
+      "short_description": "Research-park incubator with documented autonomous-systems labs and drone-company support.",
+      "overview": "The MicaPlex provides incubation, shared equipment and access to Embry-Riddle research laboratories. Its documented UxS connection includes hosted robotics/autonomy labs and the university's account of Censys drone development at the facility.",
+      "unmanned_systems_relevance": "Supporting commercialization facility, distinct from its individual tenant companies and named research laboratories.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "Incubation and equipment use depend on facility agreements and competence requirements; no open flight access is implied.",
+      "strategic_categories": [
+        "Commercialization and capital",
+        "Physical infrastructure and logistics",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Embry-Riddle MicaPlex",
+          "url": "https://erau.edu/research-and-innovation/research-park/micaplex",
+          "supports": "Daytona Beach incubator, shared resources and named autonomy laboratories."
+        },
+        {
+          "title": "Embry-Riddle drone research-park tenant example",
+          "url": "https://erau.edu/about/news-and-stories/news/above-the-flooding-high-tech-drones-capture-storm-damage-and-data",
+          "supports": "Specific documented Censys/MicaPlex UAS connection."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "OWT Global Tampa Unmanned Systems Support",
+      "record_type": "organization",
+      "city": "Tampa",
+      "address_line": "3710 Corporex Park Drive, Suite 320",
+      "postal_code": "33619",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://www.owtglobal.com/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://www.owtglobal.com/uxs",
+      "short_description": "Tampa-based unmanned-aircraft and maritime-system operator, integration and training services provider.",
+      "overview": "OWT's dedicated UxS page documents operator, maintenance, payload-integration and test-team services for air and maritime unmanned systems. The current company site publishes a Tampa business location.",
+      "unmanned_systems_relevance": "Core UxS services provider. The Tampa office is not treated as a launch site or as the location of every customer operation.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "813-832-3290",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Maritime surface systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "ISR",
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "OWT Global UxS services",
+          "url": "https://www.owtglobal.com/uxs",
+          "supports": "Air/maritime unmanned operating, integration, maintenance and training services."
+        },
+        {
+          "title": "OWT Global current company location",
+          "url": "https://www.owtglobal.com/",
+          "supports": "Tampa address and public phone."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "FL",
+      "name": "TOG Duette Testing and Training Center",
+      "record_type": "facility",
+      "city": "Duette",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "test-site",
+      "location_source_url": "https://www.owtglobal.com/tog-range",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://www.owtglobal.com/tog-range",
+      "short_description": "Operator-advertised Duette training range with unmanned-systems testing relevance.",
+      "overview": "OWT and Tnara Operations Group advertise the Duette range as a controlled training and development environment supporting UxS and air-ground integration. It is geographically distinct from OWT's Tampa office.",
+      "unmanned_systems_relevance": "Core test/training environment with operator-documented UxS relevance.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "Operator-arranged access for government, military and vetted commercial partners. Obtain current site and mission-specific permissions directly; no airspace or spectrum authorization is conveyed.",
+      "strategic_categories": [
+        "Test and operational environments",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Counter-UAS"
+      ],
+      "capabilities": [
+        "Testing, evaluation, verification, and validation"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "OWT/TOG Duette range",
+          "url": "https://www.owtglobal.com/tog-range",
+          "supports": "Named Duette physical range, UxS testing context and operator-arranged access model; no independent authorization evidence."
+        }
+      ],
+      "research_notes": "Operator page contains unfinished template text. Numeric acreage, altitude, spectrum and live-fire approval claims are deliberately not imported without underlying authorizations."
+    },
+    {
+      "state": "FL",
+      "name": "Overhead Intelligence Lake Wales UAS Engineering",
+      "record_type": "organization",
+      "city": "Lake Wales",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://www.overheadintelligence.com/contact-us",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://www.overheadintelligence.com/",
+      "short_description": "Open-source UAS engineering and geospatial survey company in Lake Wales.",
+      "overview": "Overhead Intelligence describes designing and deploying open-source UAS for surveying and mineral exploration. Its company contact identifies Lake Wales. A 2025 federal award separately documents drone-swarm research, without establishing a fielded swarm product.",
+      "unmanned_systems_relevance": "Core drone platforms, integration and survey services.",
+      "contact_url": "https://www.overheadintelligence.com/contact-us",
+      "contact_email": "info@overheadintel.com",
+      "contact_phone": "863-350-3126",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Agriculture and natural resources"
+      ],
+      "sources": [
+        {
+          "title": "Overhead Intelligence",
+          "url": "https://www.overheadintelligence.com/",
+          "supports": "Open-source UAS design, deployment and survey capability."
+        },
+        {
+          "title": "Overhead Intelligence contact",
+          "url": "https://www.overheadintelligence.com/contact-us",
+          "supports": "Current Lake Wales location and business contact."
+        },
+        {
+          "title": "Overhead Intelligence 2025 drone-swarm research award",
+          "url": "https://www.sbir.gov/awards/216108",
+          "supports": "Documented development objective only, not completed product or operational permission."
+        }
+      ],
+      "research_notes": "SBIR source uses the earlier LLC name; current public company presentation is Overhead Intelligence. No separate record created for the legal-name variation."
+    },
+    {
+      "state": "FL",
+      "name": "Loggerhead Instruments Florida Drone Acoustic Payload Development",
+      "record_type": "organization",
+      "city": "Sarasota",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://www.loggerhead.com/",
+      "location_notes": "Sarasota published business contact is used as the locality anchor. Earlier award material lists St. Petersburg; no second office or manufacturing site inferred.",
+      "website_url": "https://www.loggerhead.com/",
+      "short_description": "Marine acoustic instrumentation supplier with a documented drone-deployed sound-and-video project.",
+      "overview": "Loggerhead develops underwater passive acoustic instruments. Its current site describes Little Dipper, a drone-deployed audio/video research system for marine-mammal observation, and publishes a Sarasota business contact location.",
+      "unmanned_systems_relevance": "Supporting mission-payload supplier with a specific UAS application; not all passive recorders are autonomous vehicles.",
+      "contact_url": "https://www.loggerhead.com/contact",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Undersea systems"
+      ],
+      "capabilities": [
+        "Payloads and mission systems",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Environmental monitoring"
+      ],
+      "sources": [
+        {
+          "title": "Loggerhead Instruments products and projects",
+          "url": "https://www.loggerhead.com/",
+          "supports": "Little Dipper drone-deployed audio/video project and current Sarasota business location."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "Viam New York Robotics Software Headquarters",
+      "record_type": "organization",
+      "city": "New York",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "headquarters",
+      "location_source_url": "https://www.viam.com/about",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://www.viam.com/about",
+      "short_description": "New York headquarters and robotics lab of a programmable robotics software provider.",
+      "overview": "Viam's current company page identifies its headquarters and robotics lab in New York City. Its platform supports robot integration, sensing, data and fleet operations across industrial and marine applications.",
+      "unmanned_systems_relevance": "Core robotics software and integration company; headquarters and lab are combined rather than split into duplicate assets.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Viam company profile",
+          "url": "https://www.viam.com/about",
+          "supports": "Current NYC headquarters/lab and robotics platform scope."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "Standard Bots Glen Cove Robot Production Facility",
+      "record_type": "facility",
+      "city": "Glen Cove",
+      "address_line": "35 Garvies Point Road",
+      "postal_code": "11542",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://events.standardbots.com/standard-bots-new-factory-open-house-2025",
+      "location_notes": "Published site address only; coordinates and operating boundaries not assigned.",
+      "website_url": "https://standardbots.com/",
+      "short_description": "Glen Cove manufacturing facility for AI-enabled industrial collaborative robots.",
+      "overview": "Standard Bots documents its expanded Glen Cove production facility, robot demonstrations and training/engineering spaces. Its current factory recruitment corroborates continuing local robot-manufacturing operations.",
+      "unmanned_systems_relevance": "Core robot manufacturing site, not separate records for each arm model or production department.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "The 2025 open-house invitation was a dated event, not standing public access or a current tour booking.",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Standard Bots Glen Cove factory opening",
+          "url": "https://events.standardbots.com/standard-bots-new-factory-open-house-2025",
+          "supports": "Physical production facility, address and robotic manufacturing scope."
+        },
+        {
+          "title": "Standard Bots factory plant manager recruitment",
+          "url": "https://jobs.ashbyhq.com/standardbots/110df2f6-84a2-43ce-a7db-1257fc4b94d2",
+          "supports": "Continuing Glen Cove factory operations and robot production."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "Icarus Robotics Brooklyn Orbital Robot Development",
+      "record_type": "organization",
+      "city": "Brooklyn",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://icarusrobotics.com/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://icarusrobotics.com/",
+      "short_description": "Brooklyn developer of orbital manipulation robots for spacecraft logistics and maintenance.",
+      "overview": "Icarus identifies Newlab at the Brooklyn Navy Yard as its location. Its Joy robot is described as initially remotely operated, with autonomy in development and ISS deployment scheduled for 2027.",
+      "unmanned_systems_relevance": "Core space-robotics development; planned orbital deployment is not a current operational claim.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Space-enabled services",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Autonomy and artificial intelligence"
+      ],
+      "missions": [
+        "Logistics and contested logistics",
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Icarus Robotics",
+          "url": "https://icarusrobotics.com/",
+          "supports": "Brooklyn location, Joy development, near-term teleoperation and future deployment/autonomy distinction."
+        }
+      ],
+      "research_notes": "Future-tense deployment and autonomy milestones retained. Decorative fleet-status graphics are not treated as evidence of deployed robots."
+    },
+    {
+      "state": "NY",
+      "name": "Ultra Robotics Brooklyn Warehouse Robot Development",
+      "record_type": "organization",
+      "city": "Brooklyn",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "manufacturing",
+      "location_source_url": "https://ultra.tech/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://ultra.tech/",
+      "short_description": "Brooklyn robotics company developing AI-enabled warehouse packing, sorting and kitting systems.",
+      "overview": "Ultra's current site identifies Brooklyn and states its robots are built in NYC. Its OP1 is a stationary manipulation system for warehouse workflows, rather than a mobile delivery robot.",
+      "unmanned_systems_relevance": "Core robotic manipulation and AI development. Stationary design is retained to avoid implying autonomous vehicle mobility.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Logistics and contested logistics"
+      ],
+      "sources": [
+        {
+          "title": "Ultra Robotics",
+          "url": "https://ultra.tech/",
+          "supports": "Brooklyn/NYC build location, OP1 warehouse applications and stationary manipulation design."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "Vermeer Brooklyn Vision-Based Navigation",
+      "record_type": "organization",
+      "city": "Brooklyn",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://rosap.ntl.bts.gov/view/dot/84973/dot_84973_DS1.pdf",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://www.getvermeer.com/",
+      "short_description": "Vision-based navigation technology for unmanned platforms in GPS-denied environments.",
+      "overview": "Vermeer presents onboard vision-based positioning for unmanned aircraft in contested navigation environments. A US DOT technical report identifies the company as Brooklyn-based and describes its visual positioning approach.",
+      "unmanned_systems_relevance": "Core autonomy and alternative-navigation supplier; local business presence does not establish a flight-test site.",
+      "contact_url": "",
+      "contact_email": "info@getvermeer.com",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Navigation and positioning",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "ISR"
+      ],
+      "sources": [
+        {
+          "title": "Vermeer current navigation products",
+          "url": "https://www.getvermeer.com/",
+          "supports": "Vision-based unmanned navigation offering and published inquiry email."
+        },
+        {
+          "title": "US DOT PNT resiliency report",
+          "url": "https://rosap.ntl.bts.gov/view/dot/84973/dot_84973_DS1.pdf",
+          "supports": "Brooklyn company location and technical description of visual positioning."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "Circle Optics Rochester Autonomous-System Imaging",
+      "record_type": "organization",
+      "city": "Rochester",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "headquarters",
+      "location_source_url": "https://circleoptics.com/contact/",
+      "location_notes": "Rochester locality only. The contact page gives inconsistent suite numbers, so no street/suite is imported.",
+      "website_url": "https://circleoptics.com/circle-technology/",
+      "short_description": "Rochester panoramic-imaging company serving autonomous systems and counter-UAS sensing.",
+      "overview": "Circle Optics documents panoramic imaging for ground/aerial autonomy and counter-UAS situational awareness. Its contact page identifies Rochester headquarters and a separate Syracuse office; these are combined into one company record.",
+      "unmanned_systems_relevance": "Core robotic perception and counter-UAS payload supplier.",
+      "contact_url": "https://circleoptics.com/contact/",
+      "contact_email": "info@circleoptics.com",
+      "contact_phone": "585-441-0090",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Counter-UAS"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Payloads and mission systems"
+      ],
+      "missions": [
+        "Counter-UAS"
+      ],
+      "sources": [
+        {
+          "title": "Circle Optics technology",
+          "url": "https://circleoptics.com/circle-technology/",
+          "supports": "Explicit ground/aerial autonomy and counter-UAS imaging applications."
+        },
+        {
+          "title": "Circle Optics contacts",
+          "url": "https://circleoptics.com/contact/",
+          "supports": "Rochester headquarters, Syracuse office and published business contact."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "Owl Autonomous Imaging Fairport Headquarters",
+      "record_type": "organization",
+      "city": "Fairport",
+      "address_line": "470 Willowbrook Office Park",
+      "postal_code": "14450",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "headquarters",
+      "location_source_url": "https://www.owlai.us/about-owl-ai/contact/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://www.owlai.us/about-owl-ai/",
+      "short_description": "Thermal computer-vision and ranging supplier for autonomous vehicles and industrial mobility.",
+      "overview": "Owl's current contact page identifies Fairport corporate headquarters. It describes AI-based thermal ranging, object classification and depth perception for autonomous and industrial mobility systems.",
+      "unmanned_systems_relevance": "Core autonomy-perception supplier; no vehicle approval or sensor performance validation inferred.",
+      "contact_url": "https://www.owlai.us/about-owl-ai/contact/",
+      "contact_email": "info@owlai.us",
+      "contact_phone": "855-695-7337",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Autonomy and artificial intelligence"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Owl Autonomous Imaging contact and capability",
+          "url": "https://www.owlai.us/about-owl-ai/contact/",
+          "supports": "Current Fairport headquarters, business contact and autonomous-vehicle sensing application."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "Effecto Glenville Robotic End-of-Arm Tooling",
+      "record_type": "organization",
+      "city": "Glenville",
+      "address_line": "648 Saratoga Road",
+      "postal_code": "12302",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://effecto.com/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://effecto.com/",
+      "short_description": "Glenville robotic tooling supplier formerly known as Applied Robotics.",
+      "overview": "Effecto's current site identifies the US company at Glenville and explicitly records the former Applied Robotics name. Products include robotic tool changers, grippers and collision-protection devices.",
+      "unmanned_systems_relevance": "Supporting robotic manipulation supply-chain asset. No additional record is created for the former company name.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing and supply chain",
+        "Companies and solution providers",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Effecto current products and US location",
+          "url": "https://effecto.com/",
+          "supports": "Glenville address, Applied Robotics rebrand, robotic grippers and tool changers."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "Invio Automation Webster Robotics Integration Site",
+      "record_type": "facility",
+      "city": "Webster",
+      "address_line": "855 Publishers Parkway",
+      "postal_code": "14580",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://invioautomation.com/contact/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://invioautomation.com/",
+      "short_description": "Webster location of an industrial robotics and automation integration company.",
+      "overview": "Invio currently lists a Webster location; the former Calvary Robotics website redirects to Invio. The company documents robotic automation, machine vision and automated material-handling integration.",
+      "unmanned_systems_relevance": "Supporting robotics integration and manufacturing ecosystem site; company-wide AGV products are not asserted to be manufactured at Webster.",
+      "contact_url": "https://invioautomation.com/contact/",
+      "contact_email": "connect@invioautomation.com",
+      "contact_phone": "888-388-2234",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Invio automation capabilities",
+          "url": "https://invioautomation.com/",
+          "supports": "Current robotics, machine-vision and integration services; former Calvary domain redirects here."
+        },
+        {
+          "title": "Invio current locations",
+          "url": "https://invioautomation.com/contact/",
+          "supports": "Webster site and public corporate inquiry contact."
+        }
+      ],
+      "research_notes": "Current operator identity used instead of creating separate Calvary and Invio records. Site-specific production scope not established."
+    },
+    {
+      "state": "NY",
+      "name": "Akrobotix Syracuse Autonomous Mission Planning",
+      "record_type": "organization",
+      "city": "Syracuse",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://www.sbir.gov/portfolio/1317583",
+      "location_notes": "Syracuse locality only; published sources differ on suite, so no street/suite is assigned.",
+      "website_url": "https://agcs.akrobotix.com/",
+      "short_description": "Syracuse robotics software business offering autonomous UAS mission planning and simulation.",
+      "overview": "Akrobotix's AGCS page documents terrain-aware mission planning, simulation and multi-vehicle path generation. The federal company portfolio identifies Syracuse; the company also publishes a current Syracuse business profile.",
+      "unmanned_systems_relevance": "Core robotic mission-planning software. Planning tools do not confer BVLOS permission.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Simulation, digital twins, and synthetic environments"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Akrobotix AGCS",
+          "url": "https://agcs.akrobotix.com/",
+          "supports": "Current UAS mission planning, simulation and multi-vehicle capability."
+        },
+        {
+          "title": "Akrobotix federal company record",
+          "url": "https://www.sbir.gov/portfolio/1317583",
+          "supports": "Syracuse company and documented UAS control research."
+        },
+        {
+          "title": "Akrobotix company profile",
+          "url": "https://www.linkedin.com/company/akrobotix",
+          "supports": "First-party current Syracuse identity and robotics focus."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "SkyOp Canandaigua Drone Workforce Training",
+      "record_type": "organization",
+      "city": "Canandaigua",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://www.linkedin.com/company/skyop-llc",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://www.skyop.com/",
+      "short_description": "Drone-training courseware and instructor-development provider based in Canandaigua.",
+      "overview": "SkyOp's company profile identifies Canandaigua and describes commercial/public-safety drone instruction and licensed courseware. New York's published contractor information corroborates the local business location.",
+      "unmanned_systems_relevance": "Supporting UAS workforce provider, not a whole-college record or a blanket flight-training site.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Workforce and talent",
+        "Companies and solution providers",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Safety, policy, regulatory, and airspace integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "SkyOp first-party company profile",
+          "url": "https://www.linkedin.com/company/skyop-llc",
+          "supports": "Current Canandaigua company identity, drone training and courseware."
+        },
+        {
+          "title": "New York OGS SkyOp contractor information",
+          "url": "https://online.ogs.ny.gov/purchase/snt/awardnotes/7360022802CI_SkyOp.pdf",
+          "supports": "Named contractor and Canandaigua business location; procurement listing is not flight approval."
+        }
+      ],
+      "research_notes": "Direct domain could not be fetched during this batch; current first-party company profile and state contractor publication provide evidence. Training-site availability requires inquiry."
+    },
+    {
+      "state": "NY",
+      "name": "Black River Systems Utica Counter-UAS Engineering",
+      "record_type": "organization",
+      "city": "Utica",
+      "address_line": "162 Genesee Street",
+      "postal_code": "13502",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://www.blackriversystems.com/c-uas-systems-handheld/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://www.blackriversystems.com/c-uas/",
+      "short_description": "Utica engineering company developing RF counter-drone sensing and protection systems.",
+      "overview": "Black River documents Ninja counter-UAS systems, integration and sustainment services. Its current product pages publish the Utica contact location; the 2025 Navy SBIR record documents a further UAS-detection payload research effort.",
+      "unmanned_systems_relevance": "Core counter-UAS business. Mitigation products are not evidence that any map user has legal operating authority.",
+      "contact_url": "",
+      "contact_email": "info@brsc.com",
+      "contact_phone": "315-732-7385",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Counter-UAS"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Counter-UAS"
+      ],
+      "sources": [
+        {
+          "title": "Black River counter-UAS systems",
+          "url": "https://www.blackriversystems.com/c-uas/",
+          "supports": "Current counter-UAS engineering, production and support offering."
+        },
+        {
+          "title": "Black River current product/contact page",
+          "url": "https://www.blackriversystems.com/c-uas-systems-handheld/",
+          "supports": "Utica address and published business contact."
+        },
+        {
+          "title": "2025 Navy UAS payload R&D award",
+          "url": "https://www.sbir.gov/awards/218231",
+          "supports": "Specific ongoing-period counter-UAS payload development, not completed performance."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "Graphenix Development Rochester Drone Battery Materials",
+      "record_type": "organization",
+      "city": "Rochester",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://www.gdinrg.com/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://www.gdinrg.com/",
+      "short_description": "Rochester silicon-anode technology company explicitly targeting drone batteries.",
+      "overview": "GDI's current site identifies the company as Rochester-based and lists drones among its application markets. It develops silicon anode materials for lithium-ion batteries and collaborates with battery manufacturers.",
+      "unmanned_systems_relevance": "Supporting UAS energy and materials supplier, not a drone manufacturer.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing and supply chain",
+        "Companies and solution providers",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Propulsion, batteries, fuels, and energy systems",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Graphenix Development current technology and company profile",
+          "url": "https://www.gdinrg.com/",
+          "supports": "Rochester company presence, silicon-anode technology and explicit drone applications."
+        }
+      ],
+      "research_notes": "Earlier award location was Williamsville; current first-party Rochester description is used. No local high-volume factory or advertised performance metric is inferred."
+    },
+    {
+      "state": "NY",
+      "name": "TruWeather Albany Technology and Operations Center",
+      "record_type": "facility",
+      "city": "Albany",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://truweathersolutions.com/contact/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://truweathersolutions.com/",
+      "short_description": "Albany technology and operations center for low-altitude aviation weather services.",
+      "overview": "TruWeather's current contact page explicitly distinguishes its Albany technology/operations center from its Reston headquarters. Its service portfolio provides weather data, infrastructure and forecasting support for autonomous aerial and AAM operations.",
+      "unmanned_systems_relevance": "Supporting UAS/AAM weather-information infrastructure and services. Weather information is not flight authorization.",
+      "contact_url": "https://truweathersolutions.com/contact/",
+      "contact_email": "info@truweathersolutions.com",
+      "contact_phone": "877-633-9911",
+      "test_access": "",
+      "strategic_categories": [
+        "Digital, data, energy, and communications infrastructure",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Advanced Air Mobility"
+      ],
+      "capabilities": [
+        "Data engineering, analytics, and edge computing",
+        "Safety, policy, regulatory, and airspace integration"
+      ],
+      "missions": [
+        "Environmental monitoring"
+      ],
+      "sources": [
+        {
+          "title": "TruWeather services",
+          "url": "https://truweathersolutions.com/",
+          "supports": "Weather services for autonomous aerial and AAM operations."
+        },
+        {
+          "title": "TruWeather locations",
+          "url": "https://truweathersolutions.com/contact/",
+          "supports": "Current Albany technology/operations center and public contact."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "XAnalytix Systems Clarence Center Navigation Research",
+      "record_type": "organization",
+      "city": "Clarence Center",
+      "address_line": "",
+      "postal_code": "14032",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://www.xanalytix-systems.com/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://www.xanalytix-systems.com/",
+      "short_description": "Clarence Center analytics firm with documented autonomous-navigation and collaborative-spacecraft research.",
+      "overview": "The company's current site publishes its Clarence Center business location and contact. The federal award dataset documents 2024 work on autonomous navigation and distributed-satellite autonomy, establishing a specific supporting research connection.",
+      "unmanned_systems_relevance": "Supporting navigation and resilience R&D company; award titles are not evidence of deployed systems or a local test facility.",
+      "contact_url": "",
+      "contact_email": "info@xanalytixsystems.com",
+      "contact_phone": "716-741-6395",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Companies and solution providers",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Cross-domain autonomy",
+        "Space-enabled services"
+      ],
+      "capabilities": [
+        "Navigation and positioning",
+        "Cybersecurity and resilient systems"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "XAnalytix current company website",
+          "url": "https://www.xanalytix-systems.com/",
+          "supports": "Current Clarence Center locality and public company contact."
+        },
+        {
+          "title": "Federal SBIR/STTR monthly award dataset",
+          "url": "https://data.www.sbir.gov/mod_awarddatapublic_no_abstract/award_data_no_abstract.csv",
+          "supports": "2024 contracts 80NSSC24CA082, Improved Autonomous Navigation Through Optimal Sensor Outliers, and FA9453-24-C-X027, Collaborative Autonomy and Resilience of Distributed Satellites; dated R&D titles only."
+        }
+      ],
+      "research_notes": "Research scope is from dated federal award titles, not a verified commercial product. Current local presence is independently supported by the company website."
+    },
+    {
+      "state": "NY",
+      "name": "Poseidon Systems Victor Autonomous-System Condition Monitoring Research",
+      "record_type": "organization",
+      "city": "Victor",
+      "address_line": "830 Canning Parkway",
+      "postal_code": "14564",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://www.poseidonsys.com/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://www.poseidonsys.com/",
+      "short_description": "Victor sensor manufacturer with documented R&D on condition monitoring for autonomous systems.",
+      "overview": "Poseidon develops oil-condition and wear-debris monitoring sensors and currently publishes a Victor location. The federal dataset identifies a 2024 Army research award applying online oil monitoring to autonomous systems.",
+      "unmanned_systems_relevance": "Supporting autonomous-platform health and sustainment technology; inclusion is tied to a specific research project rather than general industrial sensing.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "585-239-6025",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Poseidon Systems current products and contact",
+          "url": "https://www.poseidonsys.com/",
+          "supports": "Current Victor company location and condition-monitoring sensor development/manufacturing."
+        },
+        {
+          "title": "Federal SBIR/STTR monthly award dataset",
+          "url": "https://data.www.sbir.gov/mod_awarddatapublic_no_abstract/award_data_no_abstract.csv",
+          "supports": "2024 contract W51701-24-C-0059, Fully Realizing Benefits of Autonomous Systems via Online Oil Condition Monitoring; dated R&D title only."
+        }
+      ],
+      "research_notes": "Contract W51701-24-C-0059 establishes dated R&D, not a fielded unmanned-platform product or an operating facility."
+    },
+    {
+      "state": "NY",
+      "name": "Cornell EmPRISE Robotics Laboratory",
+      "record_type": "facility",
+      "city": "Ithaca",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://emprise.cs.cornell.edu/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://emprise.cs.cornell.edu/",
+      "short_description": "Full-stack robotics laboratory researching autonomous manipulation and human-robot interaction.",
+      "overview": "EmPRISE develops robotic assistance using perception, planning, learning and control. Its current lab page reports 2026 activity and emphasizes physical robot systems evaluated with users.",
+      "unmanned_systems_relevance": "Core robotic autonomy and manipulation research, with assistive applications rather than a flight operation.",
+      "contact_url": "",
+      "contact_email": "empriselab21@gmail.com",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Cornell EmPRISE Lab",
+          "url": "https://emprise.cs.cornell.edu/",
+          "supports": "Named Cornell robotics lab, physical systems, research scope and 2026 activity."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "Cornell GeoDesiC Robotics and Control Laboratory",
+      "record_type": "facility",
+      "city": "Ithaca",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://geodesic.mae.cornell.edu/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://geodesic.mae.cornell.edu/",
+      "short_description": "Robotics and geometric-control lab researching aerial manipulation and autonomous tracking.",
+      "overview": "GeoDesiC is a named robotics group in Cornell's Sibley School of Mechanical and Aerospace Engineering. Its research includes agile aerial manipulators, onboard target tracking and trajectory planning.",
+      "unmanned_systems_relevance": "Core aerial robotics and control research, distinct from Cornell's agricultural labs.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Navigation and positioning"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Cornell GeoDesiC Laboratory",
+          "url": "https://geodesic.mae.cornell.edu/",
+          "supports": "Named engineering lab, aerial manipulation, autonomous tracking and robotic control research."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "Cornell Organic Robotics Laboratory",
+      "record_type": "facility",
+      "city": "Ithaca",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://orl.mae.cornell.edu/people.html",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://orl.mae.cornell.edu/",
+      "short_description": "Biohybrid and soft robotics lab developing field, agricultural and marine robotic technologies.",
+      "overview": "The Organic Robotics Lab connects materials, sensing and actuation for agricultural and ocean applications. Its current page reports 2026 work; its university-hosted people page identifies the Ithaca lab affiliation.",
+      "unmanned_systems_relevance": "Core physical robotics R&D, distinct from Cornell AgRobotics and CAIR already in the starter file.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Undersea systems"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Agriculture and natural resources",
+        "Environmental monitoring"
+      ],
+      "sources": [
+        {
+          "title": "Cornell Organic Robotics Laboratory",
+          "url": "https://orl.mae.cornell.edu/",
+          "supports": "Current lab identity, marine/agricultural robotic research and 2026 activity."
+        },
+        {
+          "title": "Organic Robotics university people page",
+          "url": "https://orl.mae.cornell.edu/people.html",
+          "supports": "Ithaca/Upson Hall institutional location; archived personnel details not treated as current inventory."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "Cornell Autonomous Systems Laboratory",
+      "record_type": "facility",
+      "city": "Ithaca",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://cornell-asl.org/main/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://cornell-asl.org/main/",
+      "short_description": "Shared robotics laboratory for perception, estimation, control and verifiable autonomous behavior.",
+      "overview": "ASL documents physical robotic platforms and work by the Campbell and Verifiable Robotics groups. Its published location is Upson Hall in Ithaca; Cornell's current robotics impact page continues to list ASL as a specific facility.",
+      "unmanned_systems_relevance": "Core robotics facility. Shared lab and research groups are represented together rather than split for volume.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Cornell Autonomous Systems Lab",
+          "url": "https://cornell-asl.org/main/",
+          "supports": "Named lab, Ithaca location and shared-group autonomy research."
+        },
+        {
+          "title": "Cornell robotics facilities",
+          "url": "https://www.duffield.cornell.edu/impact-areas/robotics-and-autonomous-systems/",
+          "supports": "Current university listing of ASL as a specific research facility."
+        }
+      ],
+      "research_notes": "Older vehicle and equipment examples provide research context only, not a current operational fleet inventory."
+    },
+    {
+      "state": "NY",
+      "name": "NYU Agile Robotics and Perception Laboratory",
+      "record_type": "facility",
+      "city": "New York",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://wp.nyu.edu/arpl/home/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://wp.nyu.edu/arpl/home/",
+      "short_description": "Robotics autonomy laboratory developing onboard perception and infrastructure-independent navigation.",
+      "overview": "ARPL's official NYU page identifies New York and describes agile autonomous machines navigating unstructured environments using onboard sensing without reliance on external positioning infrastructure.",
+      "unmanned_systems_relevance": "Core robot perception and autonomous navigation research.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Navigation and positioning",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "NYU ARPL research mission",
+          "url": "https://wp.nyu.edu/arpl/home/",
+          "supports": "Named New York laboratory and onboard robotic autonomy scope."
+        },
+        {
+          "title": "NYU robotics and embodied intelligence",
+          "url": "https://engineering.nyu.edu/impact/embodied-intelligence",
+          "supports": "University research context and robotics laboratory portfolio."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "NYU AI4CE Robotics Laboratory",
+      "record_type": "facility",
+      "city": "Brooklyn",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://robotics.engineering.nyu.edu/group/ai4ce/",
+      "location_notes": "Brooklyn university-center affiliation anchor only; no individual lab room or street address assigned.",
+      "website_url": "https://robotics.engineering.nyu.edu/group/ai4ce/",
+      "short_description": "Robot localization, mapping and mobile-manipulation research for infrastructure applications.",
+      "overview": "NYU identifies AI4CE as a distinct lab led by Chen Feng. It develops robot sensing, navigation and scene understanding for construction, manufacturing and autonomous vehicles.",
+      "unmanned_systems_relevance": "Core applied robotics lab, separate from NYU Machines in Motion already listed.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Navigation and positioning",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Infrastructure inspection",
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "NYU AI4CE laboratory profile",
+          "url": "https://robotics.engineering.nyu.edu/group/ai4ce/",
+          "supports": "Distinct lab, research scope and Brooklyn-affiliated robotics center."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "NYU General-Purpose Robotics and AI Laboratory",
+      "record_type": "facility",
+      "city": "New York",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://robotics.engineering.nyu.edu/group/grail/",
+      "location_notes": "New York university research affiliation only; center mailing address is not assumed to be the lab's precise room or facility.",
+      "website_url": "https://robotics.engineering.nyu.edu/group/grail/",
+      "short_description": "Robot-learning and decision-making laboratory focused on adaptation and generalization.",
+      "overview": "GRAIL studies robot learning, sensory representation, reinforcement learning and affordable physical robots. NYU's current center directory documents it as a distinct research group led by Lerrel Pinto.",
+      "unmanned_systems_relevance": "Core physical robot autonomy research.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "NYU GRAIL laboratory profile",
+          "url": "https://robotics.engineering.nyu.edu/group/grail/",
+          "supports": "Named lab, robot learning and physical robot development."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "NYU Laboratory for Autonomous and Intelligent Robotics",
+      "record_type": "facility",
+      "city": "Brooklyn",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://robotics.engineering.nyu.edu/group/lair/",
+      "location_notes": "Brooklyn university-center affiliation anchor; no marine deployment site assigned.",
+      "website_url": "https://robotics.engineering.nyu.edu/group/lair/",
+      "short_description": "Multi-robot planning and field-robotics lab with marine and oceanographic applications.",
+      "overview": "NYU's current lab profile identifies LAIR under Christopher Clark and explicitly distinguishes its present NYU home from previous institutions. Work spans multi-robot planning, marine biology, archaeology and autonomous driving.",
+      "unmanned_systems_relevance": "Core field and marine robotics program; former out-of-state lab locations are not imported.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Undersea systems",
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Navigation and positioning"
+      ],
+      "missions": [
+        "Environmental monitoring",
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "NYU LAIR laboratory profile",
+          "url": "https://robotics.engineering.nyu.edu/group/lair/",
+          "supports": "Present NYU identity, distinct lab and marine/field robotics research."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "NYU Riviere Robot Laboratory",
+      "record_type": "facility",
+      "city": "Brooklyn",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://robotics.engineering.nyu.edu/group/rrl/",
+      "location_notes": "Brooklyn NYU research-center affiliation anchor; no precise laboratory address inferred.",
+      "website_url": "https://robotics.engineering.nyu.edu/group/rrl/",
+      "short_description": "Autonomous robotics research spanning aerial swarms, manipulation and self-driving systems.",
+      "overview": "RRL combines learning, optimization, dynamical systems and hardware experimentation. Its NYU profile documents applications in aerial swarms, space robotics, manipulation and autonomous driving.",
+      "unmanned_systems_relevance": "Core multi-domain autonomy research with a distinct named lab.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Space-enabled services"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "NYU Riviere Robot Lab",
+          "url": "https://robotics.engineering.nyu.edu/group/rrl/",
+          "supports": "Named current NYU lab, research methods and autonomous-system applications."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "Columbia Creative Machines Laboratory",
+      "record_type": "facility",
+      "city": "New York",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://robotics.columbia.edu/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://www.creativemachineslab.com/",
+      "short_description": "Physical robotics lab investigating robot self-modeling, adaptive machines and automated fabrication.",
+      "overview": "Columbia's robotics directory identifies Creative Machines as a distinct research lab in New York City. The lab's current site documents self-modeling, particle robotics, soft actuators and robot design research.",
+      "unmanned_systems_relevance": "Core embodied robotics research, distinct from Columbia ROAM already in the starter file.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Columbia Creative Machines Lab",
+          "url": "https://www.creativemachineslab.com/",
+          "supports": "Physical robotics research and distinct lab identity."
+        },
+        {
+          "title": "Columbia official robotics directory",
+          "url": "https://robotics.columbia.edu/",
+          "supports": "Current NYC university affiliation and lab directory listing."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "Stony Brook Soft Flyers Group",
+      "record_type": "facility",
+      "city": "Stony Brook",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://www.stonybrook.edu/commcms/soft-flyers/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://www.stonybrook.edu/commcms/soft-flyers/",
+      "short_description": "Aerial and air-water robotics research group developing morphing UAV structures and control.",
+      "overview": "The Soft Flyers Group identifies its Stony Brook engineering location and describes research on shape-changing UAVs, outdoor demonstrations and an air-water mobile-robotics experimental environment.",
+      "unmanned_systems_relevance": "Core aerial robotics R&D; in-development experimental environments are not represented as public test facilities.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Autonomy and artificial intelligence"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Stony Brook Soft Flyers Group",
+          "url": "https://www.stonybrook.edu/commcms/soft-flyers/",
+          "supports": "Named laboratory and Stony Brook engineering location."
+        },
+        {
+          "title": "Soft Flyers current research recruitment",
+          "url": "https://www.stonybrook.edu/commcms/soft-flyers/open_positions/",
+          "supports": "Morphing UAV and developing air-water robotics research scope."
+        }
+      ],
+      "research_notes": "The recruiting page describes an air-water environment being established; completion and external availability are not established."
+    },
+    {
+      "state": "NY",
+      "name": "Stony Brook CROSS Collaborative Robotics Laboratory",
+      "record_type": "facility",
+      "city": "Stony Brook",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://you.stonybrook.edu/crosslab/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://you.stonybrook.edu/crosslab/",
+      "short_description": "Learning-based collaborative robotics for construction, manufacturing and warehouse workspaces.",
+      "overview": "CROSS develops human-robot collaboration, imitation learning, computer vision and sensor fusion for occupational applications. The university-hosted page identifies the Stony Brook civil-engineering lab and research contact.",
+      "unmanned_systems_relevance": "Supporting human-robot integration and field-workspace autonomy research.",
+      "contact_url": "",
+      "contact_email": "ci-jyun.liang@stonybrook.edu",
+      "contact_phone": "631-632-8718",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Simulation, digital twins, and synthetic environments"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Stony Brook CROSS Lab",
+          "url": "https://you.stonybrook.edu/crosslab/",
+          "supports": "Named local lab, occupational robotic applications and public research contact."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "Binghamton Automated Control Systems and Robotics Laboratory",
+      "record_type": "facility",
+      "city": "Binghamton",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://www.binghamton.edu/labs/acsrl/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://www.binghamton.edu/labs/acsrl/",
+      "short_description": "Robotic planning and control lab spanning physical manipulation and automated systems.",
+      "overview": "ACSR is a distinct Mechanical Engineering lab led by Kaiyan Yu. It develops planning and robust control for robotic systems, including interactions with people, infrastructure and manufacturing environments.",
+      "unmanned_systems_relevance": "Supporting robotic control and manipulation expertise; includes micro-scale and manufacturing work rather than a claimed UAS operation.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Binghamton ACSR Lab",
+          "url": "https://www.binghamton.edu/labs/acsrl/",
+          "supports": "Named current lab, university affiliation and robotic planning/control scope."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "University of Rochester Robotics and Artificial Intelligence Laboratory",
+      "record_type": "facility",
+      "city": "Rochester",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://www.hajim.rochester.edu/tours/robotics-and-artificial-intelligence-laboratory.html",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://www.hajim.rochester.edu/tours/robotics-and-artificial-intelligence-laboratory.html",
+      "short_description": "Robot-intelligence lab with mobile, unmanned-ground and manipulation research platforms.",
+      "overview": "RAIL is documented in Gavett Hall and researches robotic decision-making, off-road navigation and human-robot teaming. Rochester's October 2026 profile confirms the lab's continuing activity under Thomas Howard.",
+      "unmanned_systems_relevance": "Core ground robotics and autonomy laboratory, not a whole-institution record.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Navigation and positioning"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Rochester RAIL facility tour",
+          "url": "https://www.hajim.rochester.edu/tours/robotics-and-artificial-intelligence-laboratory.html",
+          "supports": "Named Gavett Hall laboratory and physical robotics research."
+        },
+        {
+          "title": "Rochester 2026 faculty/lab profile",
+          "url": "https://www.rochester.edu/newscenter/thomas-howard-find-big-problems-keep-you-challenged-723592/",
+          "supports": "Continuing current laboratory and robotics research activity."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "Syracuse Autonomous Unmanned Systems Laboratory",
+      "record_type": "facility",
+      "city": "Syracuse",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://aksanyal.expressions.syr.edu/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://aksanyal.expressions.syr.edu/",
+      "short_description": "Guidance, navigation and control lab for autonomous unmanned aerial and ground systems.",
+      "overview": "AUSL's June 2026 university-hosted page documents robust autonomy, control and estimation research. SyracuseCoE's facility profile separately documents indoor robotic testing and hardware/software development.",
+      "unmanned_systems_relevance": "Core UAS/UGV autonomy research and lab-scale experimentation.",
+      "contact_url": "",
+      "contact_email": "aksanyal@syr.edu",
+      "contact_phone": "",
+      "test_access": "University research arrangements required; published lab equipment does not establish open access or flight approval.",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Test and operational environments",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Navigation and positioning",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Syracuse AUSL current lab page",
+          "url": "https://aksanyal.expressions.syr.edu/",
+          "supports": "June 2026 laboratory identity and autonomy/control research."
+        },
+        {
+          "title": "AUSL director research/contact",
+          "url": "https://aksanyal.expressions.syr.edu/ausl_lab/amit-sanyal/",
+          "supports": "Specific unmanned vehicle research and public research email."
+        },
+        {
+          "title": "SyracuseCoE AUSL facility profile",
+          "url": "https://centerofexcellence.syracuse.edu/wp-content/uploads/2023/04/UAV-Lab-A.Sanyal.pdf",
+          "supports": "Documented physical experimentation scope; older specifications not imported."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "Syracuse Laurent Fluid Dynamics UAV Test Facilities",
+      "record_type": "facility",
+      "city": "Syracuse",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "test-site",
+      "location_source_url": "https://klaurent.syr.edu/facilities/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://klaurent.syr.edu/facilities/",
+      "short_description": "Research flow-generation facilities used to test UAV control under wind disturbances.",
+      "overview": "The Laurent Fluid Dynamics Lab documents an outdoor flow laboratory with a UAS mount and a fan-array Windshaper used to test UAV control schemes. These are grouped into one laboratory facility asset.",
+      "unmanned_systems_relevance": "Supporting physical aerodynamic test infrastructure with explicit unmanned-aircraft research use.",
+      "contact_url": "",
+      "contact_email": "klaurent@syr.edu",
+      "contact_phone": "",
+      "test_access": "University laboratory; external test services, booking conditions and current operating limits require direct inquiry.",
+      "strategic_categories": [
+        "Test and operational environments",
+        "Research and technical depth",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Testing, evaluation, verification, and validation"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Laurent lab facilities",
+          "url": "https://klaurent.syr.edu/facilities/",
+          "supports": "Outdoor UAS experiment hardware, Windshaper and documented UAV-control testing."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "RPI Reliable Intelligent Systems Laboratory",
+      "record_type": "facility",
+      "city": "Troy",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://risl-rpi.github.io/",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://risl-rpi.github.io/",
+      "short_description": "Robotics safety and verification lab studying navigation and autonomous decision-making.",
+      "overview": "RISL researches reachability, runtime monitoring, uncertainty and transfer learning for aerial robotics, mobile robots and autonomous driving. The lab's current page includes 2026 student research activity at RPI.",
+      "unmanned_systems_relevance": "Core autonomous-system safety research, distinct from whole RPI and general manufacturing centers.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Testing, evaluation, verification, and validation",
+        "Autonomy and artificial intelligence"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "RPI RISL current laboratory website",
+          "url": "https://risl-rpi.github.io/",
+          "supports": "Named RPI research group, physical robotics applications and 2026 activity."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "FDNY Robotics Unit UAS Assessment and Operations",
+      "record_type": "program",
+      "city": "New York",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://www.nyc.gov/site/fdny/news/39-25/fdny-commissioner-robert-s-tucker-first-responders-host-drone-assessment",
+      "location_notes": "Citywide program. The event venue is not used as a permanent laboratory, launch site or unit headquarters.",
+      "website_url": "",
+      "short_description": "Fire-department robotics unit using and assessing drones for first-responder missions.",
+      "overview": "FDNY documents its Robotics Unit's drone use since 2017 and participation in a 2025 comparative UAS assessment in New York City with DHS and other agencies. This is the unit program, not the temporary assessment venue.",
+      "unmanned_systems_relevance": "Core public-safety UAS operating and evaluation program.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "missions": [
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "FDNY drone assessment and Robotics Unit",
+          "url": "https://www.nyc.gov/site/fdny/news/39-25/fdny-commissioner-robert-s-tucker-first-responders-host-drone-assessment",
+          "supports": "Established FDNY drone program and documented UAS evaluation role in NYC."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "New York DEC Unmanned Aircraft Program",
+      "record_type": "program",
+      "city": "",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://dec.ny.gov/about/employment/explore-career-descriptions/environmental-conservation-police-officer",
+      "location_notes": "Statewide program; no single base or operating boundary assigned.",
+      "website_url": "https://dec.ny.gov/regulatory/guidance-and-policy-documents/drone-use-on-dec-managed-lands",
+      "short_description": "State environmental agency drone program supporting field programs and conservation enforcement.",
+      "overview": "DEC's current career description identifies a statewide UAS team operating with the department's UAS program and supporting its divisions. Published policy governs agency pilots, equipment and data.",
+      "unmanned_systems_relevance": "Core statewide UAS operator program. Agency activity is separate from public drone permissions on DEC land.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Safety, policy, regulatory, and airspace integration"
+      ],
+      "missions": [
+        "Environmental monitoring",
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "DEC UAS team description",
+          "url": "https://dec.ny.gov/about/employment/explore-career-descriptions/environmental-conservation-police-officer",
+          "supports": "Current statewide team, interdivision UAS program and operational scope."
+        },
+        {
+          "title": "DEC acquisition and use policy CP-71",
+          "url": "https://extapps.dec.ny.gov/docs/legal_protection_pdf/cp71.pdf",
+          "supports": "Documented agency program structure and operating controls."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "New York State Police Bomb Disposal Robotics Program",
+      "record_type": "program",
+      "city": "",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://troopers.ny.gov/2024-annual-report",
+      "location_notes": "Distributed statewide operational program; no individual launch, storage or response location assigned.",
+      "website_url": "",
+      "short_description": "State police bomb-disposal program using ground robots and small UAS for remote assessment.",
+      "overview": "The state police annual report documents bomb-disposal teams using large and small robotic systems and unmanned aircraft for hazardous-object examination. Teams are described across Albany, Batavia, Montgomery and Oneida.",
+      "unmanned_systems_relevance": "Core public-safety ground/aerial robotics program. Teams are combined into one program rather than individual quota-driven site records.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Payloads and mission systems"
+      ],
+      "missions": [
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "New York State Police annual report",
+          "url": "https://troopers.ny.gov/2024-annual-report",
+          "supports": "Bomb-disposal ground robots, UAS and distributed teams."
+        }
+      ],
+      "research_notes": "The source is the agency's published 2024 report, not a claim about its exact 2026 inventory or staffing."
+    },
+    {
+      "state": "NY",
+      "name": "Erie County Emergency Services UAS Program",
+      "record_type": "program",
+      "city": "",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://www3.erie.gov/dhses/unmanned-aerial-system-uas-program-policy",
+      "location_notes": "County/regional response program; no single base assigned.",
+      "website_url": "https://www3.erie.gov/dhses/unmanned-aerial-system-uas-program-policy",
+      "short_description": "County emergency-services drone program for infrastructure and incident assessment.",
+      "overview": "Erie County DHSES publishes a specific UAS program policy covering trained operators, critical-infrastructure assessment, emergency situational awareness and regional mutual aid.",
+      "unmanned_systems_relevance": "Core public-safety UAS program, not a sheriff's office record or public flight area.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Public safety and emergency response",
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Erie County UAS program policy",
+          "url": "https://www3.erie.gov/dhses/unmanned-aerial-system-uas-program-policy",
+          "supports": "Named county program, documented mission scope and agency oversight."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "Monroe County Sheriff Drone First Responder Pilot",
+      "record_type": "program",
+      "city": "",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://www.monroecounty.gov/files/finance/2026%20Adopted%20Budget.pdf?a=",
+      "location_notes": "County program only; the strategic pilot site is not assigned a guessed location.",
+      "website_url": "",
+      "short_description": "Sheriff's DFR pilot linked to the county investigative operations and emergency communications centers.",
+      "overview": "Monroe County's budget records document procurement of a DFR pilot and a 2026 objective to measure its effectiveness. This listing preserves its pilot/evaluation character and does not assert countywide service.",
+      "unmanned_systems_relevance": "Core public-safety UAS pilot program.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "Monroe County 2026 adopted budget",
+          "url": "https://www.monroecounty.gov/files/finance/2026%20Adopted%20Budget.pdf?a=",
+          "supports": "Specific DFR program and evaluation objectives."
+        },
+        {
+          "title": "Monroe County 2026 proposed budget",
+          "url": "https://www.monroecounty.gov/files/finance/2026%20Proposed%20Budget.pdf",
+          "supports": "Reported 2025 procurement and integration with RIOC/emergency communications."
+        }
+      ],
+      "research_notes": "Budget documentation is evidence of a specific pilot, not proof of continuous coverage or current deployment readiness."
+    },
+    {
+      "state": "NY",
+      "name": "Suffolk County Police Drone First Responder Program",
+      "record_type": "program",
+      "city": "",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/ArtMID/4452/ArticleID/13958/County-Executive-Romaine-SCPD-Announce-New-Counterterrorism-Efforts-in-Suffolk-County",
+      "location_notes": "County service program; no undisclosed dock or headquarters point assigned.",
+      "website_url": "",
+      "short_description": "County police remotely dispatched drone program connected to real-time crime-center response.",
+      "overview": "Suffolk County documents the launch of its police DFR program. Its 2026 budget identifies the Criminal Intelligence Section as responsible and describes remotely launched drones supplying video to the real-time crime center.",
+      "unmanned_systems_relevance": "Core public-safety UAS program; county police program is distinct from FRES emergency management.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Command, control, and communications"
+      ],
+      "missions": [
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "Suffolk County police DFR announcement",
+          "url": "https://suffolkcountyny.gov/Departments/Health-Services/Health-Bulletins/Novel-Coronavirus/ArtMID/4452/ArticleID/13958/County-Executive-Romaine-SCPD-Announce-New-Counterterrorism-Efforts-in-Suffolk-County",
+          "supports": "Official police DFR launch statement."
+        },
+        {
+          "title": "Suffolk County 2026 police budget program description",
+          "url": "https://suffolkcountyny.gov/Portals/0/formsdocs/countyexecutive/Budgets/2026%20Recommended%20Operating%20Budget%20Volume%201.pdf",
+          "supports": "Specific responsible section and remote video-response architecture."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    },
+    {
+      "state": "NY",
+      "name": "New York City Cargo Drone Pilot",
+      "record_type": "program",
+      "city": "New York",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://portal.311.nyc.gov/article/?kanumber=KA-03719",
+      "location_notes": "Two-endpoint pilot corridor, not a headquarters or general operating area available to other operators.",
+      "website_url": "https://portal.311.nyc.gov/article/?kanumber=KA-03719",
+      "short_description": "Port Authority and NYCEDC cargo-drone pilot between Manhattan and Brooklyn waterfront facilities.",
+      "overview": "NYC311 documents a Skyports-operated cargo-drone pilot linking the Downtown Skyport and Brooklyn Marine Terminal. The published program runs through April 2027 and tests non-hazardous cargo movement.",
+      "unmanned_systems_relevance": "Core drone logistics pilot. One corridor program record, not duplicate airport or terminal records.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "Named operator's pilot only; listing provides no permission for other drone flights.",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Physical infrastructure and logistics",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "missions": [
+        "Logistics and contested logistics"
+      ],
+      "sources": [
+        {
+          "title": "NYC cargo drone pilot public information",
+          "url": "https://portal.311.nyc.gov/article/?kanumber=KA-03719",
+          "supports": "Named pilot partners, Manhattan/Brooklyn endpoints, cargo scope and planned pilot period."
+        }
+      ],
+      "research_notes": "Pilot status retained. The public information page's operator spelling is not used to infer any separate local corporate office."
+    },
+    {
+      "state": "NY",
+      "name": "DHS National Urban Security Technology Laboratory UAS Evaluation",
+      "record_type": "program",
+      "city": "New York",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_source_url": "https://www.dhs.gov/sites/default/files/2024-03/2024_0308_science_and_technology.pdf",
+      "location_notes": "Locality or campus reference only; no coordinates or operating boundary assigned.",
+      "website_url": "https://www.dhs.gov/science-and-technology/national-urban-security-technology-laboratory",
+      "short_description": "Manhattan-based federal laboratory work on first-responder UAS evaluation and acquisition support.",
+      "overview": "NUSTL develops UAS assessment and program-planning resources and collaborates with first responders. DHS documents its Manhattan laboratory location; FDNY documents its participation in a New York City drone assessment.",
+      "unmanned_systems_relevance": "Supporting federal UAS evaluation and integration expertise, not an open flight-test range or approval authority.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "Federal partner-arranged evaluations. No public facility access or operating authorization established.",
+      "strategic_categories": [
+        "Federal and defense customer access",
+        "Research and technical depth",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Counter-UAS"
+      ],
+      "capabilities": [
+        "Testing, evaluation, verification, and validation",
+        "Safety, policy, regulatory, and airspace integration"
+      ],
+      "missions": [
+        "Public safety and emergency response",
+        "Counter-UAS"
+      ],
+      "sources": [
+        {
+          "title": "DHS laboratory facilities budget description",
+          "url": "https://www.dhs.gov/sites/default/files/2024-03/2024_0308_science_and_technology.pdf",
+          "supports": "NUSTL Manhattan location and first-responder test/evaluation role."
+        },
+        {
+          "title": "NUSTL DFR TechNote",
+          "url": "https://www.dhs.gov/sites/default/files/2025-07/25_0708_st_dfrtn.pdf",
+          "supports": "Specific first-responder UAS evaluation/integration knowledge product."
+        },
+        {
+          "title": "FDNY and NUSTL NYC drone assessment",
+          "url": "https://www.nyc.gov/site/fdny/news/39-25/fdny-commissioner-robert-s-tucker-first-responders-host-drone-assessment",
+          "supports": "Documented in-state UAS evaluation collaboration."
+        }
+      ],
+      "research_notes": "Public-source staff preview. No independent performance testing, external access rights or flight authorization implied."
+    }
+  ],
+  "held_candidates": [
+    {
+      "state": "FL",
+      "name": "UF CORE Laboratory",
+      "reason": "Old UF lab pages remain live, but the director's current Georgia Tech profile and employment history identify the lab leadership out of state since January 2024. Current Florida continuity not established. https://ece.gatech.edu/directory/matthew-hale"
+    },
+    {
+      "state": "FL",
+      "name": "UF Active Perception and Robot Intelligence Laboratory",
+      "reason": "Old UF pages remain online, but Seoul National University's official February 2026 notice announces the director's August 2026 appointment there. Florida continuity requires confirmation. https://naoe.snu.ac.kr/news/notice?bbsidx=21212&md=v"
+    },
+    {
+      "state": "FL",
+      "name": "FAU Maritime Systems Laboratory legacy page",
+      "reason": "Available lab page is dated 2009; current Florida lab continuity was not established independently of the existing SeaTech listing. https://faculty.eng.fau.edu/ellenrik/"
+    },
+    {
+      "state": "FL",
+      "name": "Watts Innovations Florida operation",
+      "reason": "Founding history identifies Orlando, but does not establish a current in-state office or manufacturing facility. https://wattsinnovations.com/about"
+    },
+    {
+      "state": "FL",
+      "name": "EdgeTech Boca Raton operation",
+      "reason": "Current first-party contact page did not corroborate the historical Boca Raton location. Marine product relevance alone is insufficient for a Florida asset. https://www.edgetech.com/contact/"
+    },
+    {
+      "state": "FL",
+      "name": "Mefferdi St. Petersburg",
+      "reason": "Self-described local marine-autonomy business found, but product pages show placeholder telemetry and no corroborating physical activity evidence was established in this batch. https://mefferdi.com/"
+    },
+    {
+      "state": "FL",
+      "name": "AirShare Systems",
+      "reason": "Recent SBIR lead identified; current first-party website/presence could not be accessed and independently corroborated in this batch."
+    },
+    {
+      "state": "FL",
+      "name": "Novel Engineering autonomous vegetation research",
+      "reason": "Recent award lead found but supplied first-party website currently returns a directory index, not current capability/presence evidence. https://www.noveltechservices.com/"
+    },
+    {
+      "state": "NY",
+      "name": "Easy Aerial",
+      "reason": "Current first-party domain redirects to EZ Aerial, already present in the original NY starter records; not a new asset. https://www.easyaerial.com/"
+    },
+    {
+      "state": "NY",
+      "name": "Fotokite Syracuse office",
+      "reason": "Older company material lists Syracuse, while current contact material lists Boulder only for North America. Current NY presence not established. https://fotokite.com/contact/contact-form-api/"
+    },
+    {
+      "state": "NY",
+      "name": "blueflite Syracuse operation",
+      "reason": "GENIUS NY participation and regional manufacturing partnership found, but current distinct in-state company facility/presence was not established beyond accelerator history. https://www.blueflite.com/blueflite-is-a-genius-ny-cohort-7-finalist/"
+    },
+    {
+      "state": "NY",
+      "name": "Hydroacoustics underwater ROV business",
+      "reason": "Current Henrietta acoustic technology company confirmed, but ROV claims located were historical and current UxS-specific scope was not established. https://www.hydroacousticsinc.com/"
+    },
+    {
+      "state": "NY",
+      "name": "Voltela New York office",
+      "reason": "Current drone communications offering confirmed; current first-party site did not establish a New York operating presence independently of the dated award location. https://voltela.com/contact"
+    },
+    {
+      "state": "NY",
+      "name": "Sphere Optics Jamesville",
+      "reason": "Current optical product website exists, but current in-state operating location was not corroborated independently of award-location history. https://www.sphereoptics.io/contact"
+    },
+    {
+      "state": "NY",
+      "name": "Eduras Autonomy",
+      "reason": "Recent federal navigation R&D records identify Livingston Manor, but a current first-party company website and current local operating presence were not independently established. https://www.sbir.gov/portfolio/2453865"
+    }
+  ]
+}

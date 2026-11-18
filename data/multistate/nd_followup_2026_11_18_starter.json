@@ -1,0 +1,2243 @@
+{
+  "research_date": "2026-11-18",
+  "states": [
+    "ND"
+  ],
+  "records": [
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_notes": "Published local business or research presence; no flight-site boundary or access authorization inferred.",
+      "contact_url": "https://gfmedc.com/contact-us/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "Greater Fargo Moorhead Economic Development Corporation",
+      "record_type": "organization",
+      "city": "Fargo",
+      "location_source_url": "https://gfmedc.com/contact-us/",
+      "website_url": "https://gfmedc.com/",
+      "short_description": "Regional business-development organization offering location, financing, workforce and expansion assistance, with manufacturing and autonomous systems among its target sectors.",
+      "overview": "Regional business-development organization offering location, financing, workforce and expansion assistance, with manufacturing and autonomous systems among its target sectors.",
+      "unmanned_systems_relevance": "Supporting business-development resource: provides the stated financing, site, advisory or workforce help to eligible businesses. This listing does not establish UAS operations, autonomy engineering or flight permission.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Greater Fargo Moorhead Economic Development Corporation - primary source",
+          "url": "https://gfmedc.com/",
+          "supports": "Fargo-Moorhead service area; business retention, site selection, incentives and talent assistance."
+        },
+        {
+          "title": "Greater Fargo Moorhead Economic Development Corporation - public contact",
+          "url": "https://gfmedc.com/contact-us/",
+          "supports": "Published in-state location and business inquiry route."
+        },
+        {
+          "title": "GFMEDC manufacturing industry services",
+          "url": "https://gfmedc.com/industries/manufacturing/",
+          "supports": "Manufacturing-sector focus and resources for business investment and expansion."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_notes": "Published local business or research presence; no flight-site boundary or access authorization inferred.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "Grand Forks Region Economic Development Corporation",
+      "record_type": "organization",
+      "city": "Grand Forks",
+      "location_source_url": "https://grandforks.org/grand-forks-industries/manufacturing/",
+      "website_url": "https://grandforks.org/",
+      "short_description": "Regional economic-development organization supporting manufacturing investment, business intelligence, incentive navigation and workforce connections.",
+      "overview": "Regional economic-development organization supporting manufacturing investment, business intelligence, incentive navigation and workforce connections.",
+      "unmanned_systems_relevance": "Supporting business-development resource: provides the stated financing, site, advisory or workforce help to eligible businesses. This listing does not establish UAS operations, autonomy engineering or flight permission.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital",
+        "Manufacturing and supply chain"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Grand Forks Region Economic Development Corporation - primary source",
+          "url": "https://grandforks.org/grand-forks-industries/manufacturing/",
+          "supports": "Grand Forks, North Dakota manufacturing focus, business intelligence and incentive resources."
+        }
+      ]
+    },
+    {
+      "address_line": "120 2nd St SE",
+      "postal_code": "58401",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_notes": "Published business-development office, not a test or flight site.",
+      "contact_url": "",
+      "contact_email": "info@growingjamestown.com",
+      "contact_phone": "701-252-6861",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "Jamestown/Stutsman Development Corporation",
+      "record_type": "organization",
+      "city": "Jamestown",
+      "location_source_url": "https://www.growingjamestown.com/inside-jsdc",
+      "website_url": "https://www.growingjamestown.com/",
+      "short_description": "Primary-sector development corporation helping businesses expand or relocate through economic-development financing and industrial-site development.",
+      "overview": "Primary-sector development corporation helping businesses expand or relocate through economic-development financing and industrial-site development.",
+      "unmanned_systems_relevance": "Supporting business-development resource: provides the stated financing, site, advisory or workforce help to eligible businesses. This listing does not establish UAS operations, autonomy engineering or flight permission.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Jamestown/Stutsman Development Corporation - primary source",
+          "url": "https://www.growingjamestown.com/inside-jsdc",
+          "supports": "Current mission, primary-sector focus, financing assistance, industrial park development and published office address."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_notes": "Published local business or research presence; no flight-site boundary or access authorization inferred.",
+      "contact_url": "https://www.bismarckmandanedc.com/about/contact-us/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "Bismarck-Mandan Chamber EDC business development",
+      "record_type": "organization",
+      "city": "Bismarck",
+      "location_source_url": "https://www.bismarckmandanedc.com/about/contact-us/",
+      "website_url": "https://www.bismarckmandanedc.com/",
+      "short_description": "Regional development team connecting expanding businesses with site, financing, entrepreneurship and talent resources in Bismarck-Mandan.",
+      "overview": "Regional development team connecting expanding businesses with site, financing, entrepreneurship and talent resources in Bismarck-Mandan.",
+      "unmanned_systems_relevance": "Supporting business-development resource: provides the stated financing, site, advisory or workforce help to eligible businesses. This listing does not establish UAS operations, autonomy engineering or flight permission.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Bismarck-Mandan Chamber EDC business development - primary source",
+          "url": "https://www.bismarckmandanedc.com/business/financing-assistance",
+          "supports": "Published business-financing assistance and local development-fund guidance."
+        },
+        {
+          "title": "Bismarck-Mandan Chamber EDC business development - public contact",
+          "url": "https://www.bismarckmandanedc.com/about/contact-us/",
+          "supports": "Published in-state location and business inquiry route."
+        }
+      ]
+    },
+    {
+      "address_line": "1020 20th Ave SW",
+      "postal_code": "58701",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_notes": "Published local business or research presence; no flight-site boundary or access authorization inferred.",
+      "contact_url": "https://minotchamberedc.com/contact/",
+      "contact_email": "",
+      "contact_phone": "701-852-6000",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "Minot Area Chamber EDC economic development",
+      "record_type": "organization",
+      "city": "Minot",
+      "location_source_url": "https://minotchamberedc.com/contact/",
+      "website_url": "https://minotchamberedc.com/",
+      "short_description": "Minot-area economic-development organization assisting business investment, industrial locations, growth and workforce connections.",
+      "overview": "Minot-area economic-development organization assisting business investment, industrial locations, growth and workforce connections.",
+      "unmanned_systems_relevance": "Supporting business-development resource: provides the stated financing, site, advisory or workforce help to eligible businesses. This listing does not establish UAS operations, autonomy engineering or flight permission.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Minot Area Chamber EDC economic development - primary source",
+          "url": "https://minotchamberedc.com/doing-business/",
+          "supports": "Minot business-development service offering and regional presence."
+        },
+        {
+          "title": "Minot Area Chamber EDC economic development - public contact",
+          "url": "https://minotchamberedc.com/contact/",
+          "supports": "Published in-state location and business inquiry route."
+        },
+        {
+          "title": "Minot business retention and expansion",
+          "url": "https://minotchamberedc.com/doing-business/business-retention-and-expansion/",
+          "supports": "Specific business retention and expansion assistance."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_notes": "Published local business or research presence; no flight-site boundary or access authorization inferred.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "Stark Development Corporation",
+      "record_type": "organization",
+      "city": "Dickinson",
+      "location_source_url": "https://www.starkdev.com/business-development/financial-incentives/",
+      "website_url": "https://www.starkdev.com/",
+      "short_description": "Development corporation assisting primary-sector business starts, expansion and relocation through financing and incentive coordination.",
+      "overview": "Development corporation assisting primary-sector business starts, expansion and relocation through financing and incentive coordination.",
+      "unmanned_systems_relevance": "Supporting business-development resource: provides the stated financing, site, advisory or workforce help to eligible businesses. This listing does not establish UAS operations, autonomy engineering or flight permission.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Stark Development Corporation - primary source",
+          "url": "https://www.starkdev.com/business-development/financial-incentives/",
+          "supports": "Published primary-sector financial assistance and Dickinson-area business-development function."
+        },
+        {
+          "title": "Stark Development small-business assistance",
+          "url": "https://www.starkdev.com/business-development/small-business-development/",
+          "supports": "Business assessment, training and advisory resources."
+        }
+      ]
+    },
+    {
+      "address_line": "102 1st St SW",
+      "postal_code": "58045",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_notes": "Published local business or research presence; no flight-site boundary or access authorization inferred.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "701-636-4746",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "Traill County Economic Development Commission",
+      "record_type": "organization",
+      "city": "Hillsboro",
+      "location_source_url": "https://www.traillcountyedc.com/",
+      "website_url": "https://www.traillcountyedc.com/",
+      "short_description": "County development organization providing business financing, recruitment assistance and help acquiring land or buildings.",
+      "overview": "County development organization providing business financing, recruitment assistance and help acquiring land or buildings.",
+      "unmanned_systems_relevance": "Supporting business-development resource: provides the stated financing, site, advisory or workforce help to eligible businesses. This listing does not establish UAS operations, autonomy engineering or flight permission.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Traill County Economic Development Commission - primary source",
+          "url": "https://www.traillcountyedc.com/",
+          "supports": "Traill County business assistance, Hillsboro office and published contact information."
+        },
+        {
+          "title": "TCEDC business assistance policy and application",
+          "url": "https://www.traillcountyedc.com/wp-content/uploads/2023/06/Business-Assistance-Policy-Application-2023.pdf",
+          "supports": "Documented business assistance for investment, equipment and feasibility work."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_notes": "Published local business or research presence; no flight-site boundary or access authorization inferred.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "701-577-8110",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "Williston Economic Development",
+      "record_type": "organization",
+      "city": "Williston",
+      "location_source_url": "https://www.willistondevelopment.com/",
+      "website_url": "https://www.willistondevelopment.com/",
+      "short_description": "City economic-development office providing business-start resources, property information and STAR Fund incentive assistance.",
+      "overview": "City economic-development office providing business-start resources, property information and STAR Fund incentive assistance.",
+      "unmanned_systems_relevance": "Supporting business-development resource: provides the stated financing, site, advisory or workforce help to eligible businesses. This listing does not establish UAS operations, autonomy engineering or flight permission.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Williston Economic Development - primary source",
+          "url": "https://www.willistondevelopment.com/",
+          "supports": "Williston office, business resources, available properties and STAR Fund assistance."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_notes": "Published local business or research presence; no flight-site boundary or access authorization inferred.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "Valley City-Barnes County Development Corporation",
+      "record_type": "organization",
+      "city": "Valley City",
+      "location_source_url": "https://www.developvcbc.com/business",
+      "website_url": "https://www.developvcbc.com/",
+      "short_description": "Regional development corporation helping businesses finance real estate, equipment and working capital for local investment and expansion.",
+      "overview": "Regional development corporation helping businesses finance real estate, equipment and working capital for local investment and expansion.",
+      "unmanned_systems_relevance": "Supporting business-development resource: provides the stated financing, site, advisory or workforce help to eligible businesses. This listing does not establish UAS operations, autonomy engineering or flight permission.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Valley City-Barnes County Development Corporation - primary source",
+          "url": "https://www.developvcbc.com/business",
+          "supports": "Valley City-Barnes County business financing and primary-sector development services."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_notes": "Current organization presence supplemented by a 2024 city record of an actual manufacturing-support project. No autonomous manufacturing capability or currently open grant inferred.",
+      "contact_url": "",
+      "contact_email": "director@forwarddevilslakend.com",
+      "contact_phone": "701-662-4933",
+      "test_access": "",
+      "research_notes": "Current organization presence supplemented by a 2024 city record of an actual manufacturing-support project. No autonomous manufacturing capability or currently open grant inferred.",
+      "state": "ND",
+      "name": "Forward Devils Lake economic development",
+      "record_type": "organization",
+      "city": "Devils Lake",
+      "location_source_url": "https://www.forwardevilslakend.com/workforce/major-employers/",
+      "website_url": "https://www.forwardevilslakend.com/",
+      "short_description": "Devils Lake and Ramsey County development organization supporting local industry, manufacturing employers and business expansion.",
+      "overview": "Devils Lake and Ramsey County development organization supporting local industry, manufacturing employers and business expansion.",
+      "unmanned_systems_relevance": "Supporting business-development resource: provides the stated financing, site, advisory or workforce help to eligible businesses. This listing does not establish UAS operations, autonomy engineering or flight permission.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Forward Devils Lake economic development - primary source",
+          "url": "https://www.forwardevilslakend.com/workforce/major-employers/",
+          "supports": "Current Devils Lake business-development identity, manufacturing-employer coverage and contact information."
+        },
+        {
+          "title": "City of Devils Lake manufacturing-assistance cost share",
+          "url": "https://www.dvlnd.com/media/userfiles/subsite_207/files/city-commission/agendas/2024/2024-01-16%20CC%20Agenda.pdf",
+          "supports": "Documented Forward Devils Lake cost share for manufacturing business-improvement assistance; historical example, not a new open grant."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_notes": "Statewide North Dakota business-support organization; no single training or flight site assigned.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "Center for Technology & Business",
+      "record_type": "organization",
+      "city": "",
+      "location_source_url": "https://ctbnd.com/",
+      "website_url": "https://ctbnd.com/",
+      "short_description": "North Dakota nonprofit delivering entrepreneurship education, technical assistance, business coaching and innovation-support programs.",
+      "overview": "North Dakota nonprofit delivering entrepreneurship education, technical assistance, business coaching and innovation-support programs.",
+      "unmanned_systems_relevance": "Supporting business-development resource: provides the stated financing, site, advisory or workforce help to eligible businesses. This listing does not establish UAS operations, autonomy engineering or flight permission.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Center for Technology & Business - primary source",
+          "url": "https://ctbnd.com/",
+          "supports": "North Dakota entrepreneurship and innovation mission, Women's Business Centers and Innovate ND support."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_notes": "Statewide advising network, recorded once rather than splitting branch offices.",
+      "contact_url": "https://ndsbdc.org/contact.html",
+      "contact_email": "leadcenter@ndsbdc.org",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "North Dakota Small Business Development Centers",
+      "record_type": "organization",
+      "city": "",
+      "location_source_url": "https://ndsbdc.org/contact.html",
+      "website_url": "https://ndsbdc.org/",
+      "short_description": "Statewide small-business advising network supporting planning, financing and growth, with published resources for North Dakota manufacturers.",
+      "overview": "Statewide small-business advising network supporting planning, financing and growth, with published resources for North Dakota manufacturers.",
+      "unmanned_systems_relevance": "Supporting business-development resource: provides the stated financing, site, advisory or workforce help to eligible businesses. This listing does not establish UAS operations, autonomy engineering or flight permission.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "North Dakota Small Business Development Centers - primary source",
+          "url": "https://ndsbdc.org/",
+          "supports": "North Dakota business-advising network and current contact route."
+        },
+        {
+          "title": "North Dakota Small Business Development Centers - public contact",
+          "url": "https://ndsbdc.org/contact.html",
+          "supports": "Published in-state location and business inquiry route."
+        },
+        {
+          "title": "ND SBDC manufacturing resources",
+          "url": "https://ndsbdc.org/ndsbdc/_files/docs/nd-manufacturing-resources.pdf",
+          "supports": "Manufacturing-specific business assistance resources, updated June 2025."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_notes": "Statewide program with published North Dakota offices; not the host university as a whole.",
+      "contact_url": "https://und.edu/ndapex/contact.html",
+      "contact_email": "ndapex@und.edu",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "North Dakota APEX Accelerator",
+      "record_type": "program",
+      "city": "",
+      "location_source_url": "https://und.edu/ndapex/contact.html",
+      "website_url": "https://und.edu/ndapex/",
+      "short_description": "North Dakota procurement-assistance program helping businesses pursue government contracts through advising, registration assistance and training.",
+      "overview": "North Dakota procurement-assistance program helping businesses pursue government contracts through advising, registration assistance and training.",
+      "unmanned_systems_relevance": "Supporting business-development resource: provides the stated financing, site, advisory or workforce help to eligible businesses. This listing does not establish UAS operations, autonomy engineering or flight permission.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital",
+        "Federal and defense customer access"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "North Dakota APEX Accelerator - primary source",
+          "url": "https://und.edu/ndapex/client-experience.html",
+          "supports": "Manufacturing-client procurement assistance example; government contracting support."
+        },
+        {
+          "title": "North Dakota APEX Accelerator - public contact",
+          "url": "https://und.edu/ndapex/contact.html",
+          "supports": "Published in-state location and business inquiry route."
+        }
+      ]
+    },
+    {
+      "address_line": "4200 James Ray Drive",
+      "postal_code": "58202-8372",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_notes": "Named entrepreneurial incubator, distinct from RIAS and the Tech Accelerator laboratory building. Not a whole-institution listing.",
+      "contact_url": "https://und.edu/innovation/about.html",
+      "contact_email": "info@innovators.net",
+      "contact_phone": "701-777-3132",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "UND Center for Innovation entrepreneurial incubator",
+      "record_type": "facility",
+      "city": "Grand Forks",
+      "location_source_url": "https://und.edu/innovation/about.html",
+      "website_url": "https://und.edu/innovation/index.html",
+      "short_description": "Entrepreneurial incubator providing commercialization guidance, industry connections, business coaching and startup support from the Ina Mae Rude Entrepreneur Center.",
+      "overview": "Entrepreneurial incubator providing commercialization guidance, industry connections, business coaching and startup support from the Ina Mae Rude Entrepreneur Center.",
+      "unmanned_systems_relevance": "Supporting business-development resource: provides the stated financing, site, advisory or workforce help to eligible businesses. This listing does not establish UAS operations, autonomy engineering or flight permission.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "UND Center for Innovation entrepreneurial incubator - primary source",
+          "url": "https://und.edu/innovation/about.html",
+          "supports": "Incubator function, commercialization support, local staff and published Grand Forks address."
+        },
+        {
+          "title": "EDA University Center award - University of North Dakota",
+          "url": "https://www.eda.gov/funding/programs/university-centers/states/nd/university-north-dakota",
+          "supports": "Documented autonomous-technology commercialization and workforce objectives of the 2023 University Center award."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_notes": "One listing for the shared development group and regional-council service platform; individual loan products and affiliated names are not split into assets.",
+      "contact_url": "",
+      "contact_email": "info@lakeagassiz.com",
+      "contact_phone": "701-235-1197",
+      "test_access": "",
+      "research_notes": "One listing for the shared development group and regional-council service platform; individual loan products and affiliated names are not split into assets.",
+      "state": "ND",
+      "name": "Lake Agassiz Development Group",
+      "record_type": "organization",
+      "city": "Fargo",
+      "location_source_url": "https://lakeagassiz.com/",
+      "website_url": "https://lakeagassiz.com/",
+      "short_description": "Development group providing small-business lending, fixed-asset financing, entrepreneurial resources and community-development assistance.",
+      "overview": "Development group providing small-business lending, fixed-asset financing, entrepreneurial resources and community-development assistance.",
+      "unmanned_systems_relevance": "Supporting business-development resource: provides the stated financing, site, advisory or workforce help to eligible businesses. This listing does not establish UAS operations, autonomy engineering or flight permission.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Lake Agassiz Development Group - primary source",
+          "url": "https://lakeagassiz.com/",
+          "supports": "North Dakota business lending, SBA fixed-asset financing and development services."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_notes": "The three collaborating nonprofits share staff and resources; counted once, not as three duplicate business-support offices.",
+      "contact_url": "",
+      "contact_email": "info@lcdgroup.org",
+      "contact_phone": "701-667-7600",
+      "test_access": "",
+      "research_notes": "The three collaborating nonprofits share staff and resources; counted once, not as three duplicate business-support offices.",
+      "state": "ND",
+      "name": "Lewis & Clark Development Group",
+      "record_type": "organization",
+      "city": "Mandan",
+      "location_source_url": "https://lcdgroup.org/",
+      "website_url": "https://lcdgroup.org/",
+      "short_description": "North Dakota development group offering business loans and economic-development financing through a shared nonprofit service platform.",
+      "overview": "North Dakota development group offering business loans and economic-development financing through a shared nonprofit service platform.",
+      "unmanned_systems_relevance": "Supporting business-development resource: provides the stated financing, site, advisory or workforce help to eligible businesses. This listing does not establish UAS operations, autonomy engineering or flight permission.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Lewis & Clark Development Group - primary source",
+          "url": "https://lcdgroup.org/",
+          "supports": "North Dakota development function, shared nonprofit structure, business funding and published contact."
+        }
+      ]
+    },
+    {
+      "address_line": "425 College Drive S, Suite 13",
+      "postal_code": "58301",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_notes": "Published local business or research presence; no flight-site boundary or access authorization inferred.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "701-662-8131",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "North Central Planning Council",
+      "record_type": "organization",
+      "city": "Devils Lake",
+      "location_source_url": "https://northcentralplanningcouncil.com/",
+      "website_url": "https://northcentralplanningcouncil.com/",
+      "short_description": "Region III development council coordinating business financing and planning resources across six north-central North Dakota counties.",
+      "overview": "Region III development council coordinating business financing and planning resources across six north-central North Dakota counties.",
+      "unmanned_systems_relevance": "Supporting business-development resource: provides the stated financing, site, advisory or workforce help to eligible businesses. This listing does not establish UAS operations, autonomy engineering or flight permission.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "North Central Planning Council - primary source",
+          "url": "https://northcentralplanningcouncil.com/",
+          "supports": "Region III service area, financial and planning resources, published Devils Lake office."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_notes": "Regional service area includes Grand Forks, Nelson, Pembina and Walsh counties. Affiliated county JDAs are not separately counted here.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "Red River Regional Council",
+      "record_type": "organization",
+      "city": "",
+      "location_source_url": "https://redriverrc.com/",
+      "website_url": "https://redriverrc.com/",
+      "short_description": "Northeastern North Dakota regional council providing business consulting, project development, grant management and finance packaging.",
+      "overview": "Northeastern North Dakota regional council providing business consulting, project development, grant management and finance packaging.",
+      "unmanned_systems_relevance": "Supporting business-development resource: provides the stated financing, site, advisory or workforce help to eligible businesses. This listing does not establish UAS operations, autonomy engineering or flight permission.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Red River Regional Council - primary source",
+          "url": "https://redriverrc.com/",
+          "supports": "Region IV North Dakota service area and specific business consulting, financing and project-development services."
+        }
+      ]
+    },
+    {
+      "address_line": "13 E Divide",
+      "postal_code": "58623",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_notes": "Uses the currently published Bowman office rather than an older Dickinson location.",
+      "contact_url": "",
+      "contact_email": "info@rooseveltcuster.com",
+      "contact_phone": "701-483-1241",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "Roosevelt Custer Regional Council",
+      "record_type": "organization",
+      "city": "Bowman",
+      "location_source_url": "https://rooseveltcuster.com/",
+      "website_url": "https://rooseveltcuster.com/",
+      "short_description": "Southwestern North Dakota development council offering business lending, technical assistance and workforce-development resources.",
+      "overview": "Southwestern North Dakota development council offering business lending, technical assistance and workforce-development resources.",
+      "unmanned_systems_relevance": "Supporting business-development resource: provides the stated financing, site, advisory or workforce help to eligible businesses. This listing does not establish UAS operations, autonomy engineering or flight permission.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Roosevelt Custer Regional Council - primary source",
+          "url": "https://rooseveltcuster.com/",
+          "supports": "Eight-county Region 8 coverage, business services and current Bowman office."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_notes": "Published local business or research presence; no flight-site boundary or access authorization inferred.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "Souris Basin Planning Council",
+      "record_type": "organization",
+      "city": "",
+      "location_source_url": "https://www.sourisbasin.org/",
+      "website_url": "https://www.sourisbasin.org/",
+      "short_description": "Region 2 development council offering business financing, technical assistance and regional economic-development resources.",
+      "overview": "Region 2 development council offering business financing, technical assistance and regional economic-development resources.",
+      "unmanned_systems_relevance": "Supporting business-development resource: provides the stated financing, site, advisory or workforce help to eligible businesses. This listing does not establish UAS operations, autonomy engineering or flight permission.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Souris Basin Planning Council - primary source",
+          "url": "https://www.sourisbasin.org/",
+          "supports": "North Dakota Region 2 service area and current entrepreneur financing and technical-assistance functions."
+        }
+      ]
+    },
+    {
+      "address_line": "429 2nd St SW, Suite 209",
+      "postal_code": "58402",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_notes": "Published local business or research presence; no flight-site boundary or access authorization inferred.",
+      "contact_url": "",
+      "contact_email": "director@scdrc.org",
+      "contact_phone": "701-952-8050",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "South Central Dakota Regional Council",
+      "record_type": "organization",
+      "city": "Jamestown",
+      "location_source_url": "https://scdrc.org/loan-programs/",
+      "website_url": "https://scdrc.org/",
+      "short_description": "Region VI council administering business gap-financing programs for startups and expanding businesses across nine North Dakota counties.",
+      "overview": "Region VI council administering business gap-financing programs for startups and expanding businesses across nine North Dakota counties.",
+      "unmanned_systems_relevance": "Supporting business-development resource: provides the stated financing, site, advisory or workforce help to eligible businesses. This listing does not establish UAS operations, autonomy engineering or flight permission.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "South Central Dakota Regional Council - primary source",
+          "url": "https://scdrc.org/loan-programs/",
+          "supports": "Current loan programs, business application process, nine-county coverage and published Jamestown office."
+        }
+      ]
+    },
+    {
+      "address_line": "4349 James Ray Drive, Stop 8367",
+      "postal_code": "58202-8367",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_notes": "Current NIST program-owner listing used for identity and location; older Bismarck contact information and the legacy website are not used.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "701-330-0526",
+      "test_access": "",
+      "research_notes": "Current NIST program-owner listing used for identity and location; older Bismarck contact information and the legacy website are not used.",
+      "state": "ND",
+      "name": "Impact Dakota Manufacturing Extension Partnership",
+      "record_type": "program",
+      "city": "Grand Forks",
+      "location_source_url": "https://www.nist.gov/mep/centers/impact-dakota",
+      "website_url": "https://www.nist.gov/mep/centers/impact-dakota",
+      "short_description": "North Dakota MEP resource helping manufacturers improve productivity, processes, leadership and workforce skills.",
+      "overview": "North Dakota MEP resource helping manufacturers improve productivity, processes, leadership and workforce skills.",
+      "unmanned_systems_relevance": "Supporting manufacturing-assistance resource for process improvement and skilled-workforce development. It is not presented as a UAS operator or manufacturing plant.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain",
+        "Workforce and talent"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Impact Dakota Manufacturing Extension Partnership - primary source",
+          "url": "https://www.nist.gov/mep/centers/impact-dakota",
+          "supports": "NIST's current center listing, manufacturing-assistance function and Grand Forks address, updated June 2026."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_notes": "One center-level research-facilities record spanning several documented spaces; individual rooms are not split into assets.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "UND Advanced Transportation Infrastructure Center research facilities",
+      "record_type": "facility",
+      "city": "Grand Forks",
+      "location_source_url": "https://engineering.und.edu/research/advanced-transportation-infrastructure-center/facilities.html",
+      "website_url": "https://engineering.und.edu/research/advanced-transportation-infrastructure-center/facilities.html",
+      "short_description": "Transportation research facilities supporting drone-based infrastructure inspection, hyperspectral sensing, material testing and roadway-condition research.",
+      "overview": "Transportation research facilities supporting drone-based infrastructure inspection, hyperspectral sensing, material testing and roadway-condition research.",
+      "unmanned_systems_relevance": "Core unmanned-systems or robotics asset with a specifically documented capability.",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Research and technical depth"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "missions": [
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "UND Advanced Transportation Infrastructure Center research facilities - primary source",
+          "url": "https://engineering.und.edu/research/advanced-transportation-infrastructure-center/facilities.html",
+          "supports": "Explicit UAS inspection research and named UND campus/off-campus facilities in Grand Forks."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_notes": "Grand Forks research presence established by UND profile; the scientist's office is not treated as a separately verified laboratory room.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Named lab documented by its lead's official UND profile, not an additional RIAS institution or Tech Accelerator building. The external lab page is directly linked by UND; no separate room, equipment inventory or flight access inferred.",
+      "state": "ND",
+      "name": "UND Applied Human Performance Lab",
+      "record_type": "program",
+      "city": "Grand Forks",
+      "location_source_url": "https://campus.und.edu/directory/jessica.vanbree",
+      "website_url": "https://vanbreelab.my.canva.site/",
+      "short_description": "Named human-performance research lab linked by UND, studying workload, attention and human-autonomy teaming for aviation and aerospace safety.",
+      "overview": "Named human-performance research lab linked by UND, studying workload, attention and human-autonomy teaming for aviation and aerospace safety.",
+      "unmanned_systems_relevance": "Core unmanned-systems or robotics asset with a specifically documented capability.",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Research and technical depth"
+      ],
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "UND Applied Human Performance Lab - primary source",
+          "url": "https://campus.und.edu/directory/jessica.vanbree",
+          "supports": "UND identifies the lab, its research scientist, human-autonomy research focus and Grand Forks professional presence."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "research",
+      "location_notes": "Published local business or research presence; no flight-site boundary or access authorization inferred.",
+      "contact_url": "",
+      "contact_email": "ndsu.imse@ndsu.edu",
+      "contact_phone": "701-231-9818",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "NDSU Automated Manufacturing Systems Lab",
+      "record_type": "facility",
+      "city": "Fargo",
+      "location_source_url": "https://www.ndsu.edu/industrial-manufacturing-systems-engineering/research/automated-manufacturing-systems",
+      "website_url": "https://www.ndsu.edu/industrial-manufacturing-systems-engineering/research/automated-manufacturing-systems",
+      "short_description": "Hands-on automation laboratory teaching industrial robot and PLC programming, machine vision and integrated small-scale manufacturing systems.",
+      "overview": "Hands-on automation laboratory teaching industrial robot and PLC programming, machine vision and integrated small-scale manufacturing systems.",
+      "unmanned_systems_relevance": "Supporting industrial-robotics and automation training facility; not a drone flight site or autonomous-vehicle proving ground.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Research and technical depth",
+        "Workforce and talent",
+        "Manufacturing and supply chain"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "NDSU Automated Manufacturing Systems Lab - primary source",
+          "url": "https://www.ndsu.edu/industrial-manufacturing-systems-engineering/research/automated-manufacturing-systems",
+          "supports": "Named laboratory, industrial robots, PLCs, conveyors, machine vision equipment and Fargo university location."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "campus",
+      "location_notes": "Published local business or research presence; no flight-site boundary or access authorization inferred.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "Bismarck State College Industrial Automation & Robotics program",
+      "record_type": "program",
+      "city": "Bismarck",
+      "location_source_url": "https://bismarckstate.edu/academics/programs/Industrial%20Automation/",
+      "website_url": "https://bismarckstate.edu/academics/programs/Industrial%20Automation/",
+      "short_description": "On-campus technical program teaching robotic systems, industrial controls and the installation, maintenance and integration of automated equipment.",
+      "overview": "On-campus technical program teaching robotic systems, industrial controls and the installation, maintenance and integration of automated equipment.",
+      "unmanned_systems_relevance": "Supporting workforce program for industrial robotics and automation, distinct from BSC's existing UAS certificate.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Workforce and talent",
+        "Manufacturing and supply chain"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Bismarck State College Industrial Automation & Robotics program - primary source",
+          "url": "https://bismarckstate.edu/academics/programs/Industrial%20Automation/",
+          "supports": "Current named program, campus delivery, robotics and control-system integration curriculum."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "campus",
+      "location_notes": "Older catalogs mentioned UAS coursework, but no current dedicated UAS credential is inferred. Listed only as the currently published precision-agriculture program.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Older catalogs mentioned UAS coursework, but no current dedicated UAS credential is inferred. Listed only as the currently published precision-agriculture program.",
+      "state": "ND",
+      "name": "Lake Region State College Precision Agriculture Certificate",
+      "record_type": "program",
+      "city": "Devils Lake",
+      "location_source_url": "https://www.lrsc.edu/programs/agriculture",
+      "website_url": "https://www.lrsc.edu/programs/agriculture",
+      "short_description": "Precision-agriculture training covering agricultural electronics, data systems and seasonal precision-field operations.",
+      "overview": "Precision-agriculture training covering agricultural electronics, data systems and seasonal precision-field operations.",
+      "unmanned_systems_relevance": "Supporting technical workforce in agricultural electronic and precision-data systems. The current program is not represented as a UAS degree or drone-pilot certificate.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Workforce and talent"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Agriculture and natural resources",
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Lake Region State College Precision Agriculture Certificate - primary source",
+          "url": "https://www.lrsc.edu/programs/agriculture",
+          "supports": "Current named 15-credit certificate and agricultural electronics/precision-systems curriculum."
+        }
+      ]
+    },
+    {
+      "address_line": "3001 South Washington Street",
+      "postal_code": "58201",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_notes": "One combined local company/facility record. Corporate unmanned portfolio is documented; specific products are not assigned to individual assembly lines. The separately advertised Inertial Test Laboratory is in Arizona and is not listed as a North Dakota test facility.",
+      "contact_url": "https://www.ideal-aerosmith.com/contact/",
+      "contact_email": "sales@idealaero.com",
+      "contact_phone": "701-757-3400",
+      "test_access": "",
+      "research_notes": "One combined local company/facility record. Corporate unmanned portfolio is documented; specific products are not assigned to individual assembly lines. The separately advertised Inertial Test Laboratory is in Arizona and is not listed as a North Dakota test facility.",
+      "state": "ND",
+      "name": "Ideal Aerosmith Grand Forks headquarters and manufacturing",
+      "record_type": "facility",
+      "city": "Grand Forks",
+      "location_source_url": "https://www.ideal-aerosmith.com/privacy-policy/",
+      "website_url": "https://www.ideal-aerosmith.com/",
+      "short_description": "Grand Forks engineering and manufacturing headquarters of a supplier of unmanned-system technology and precision motion-simulation equipment.",
+      "overview": "Grand Forks engineering and manufacturing headquarters of a supplier of unmanned-system technology and precision motion-simulation equipment.",
+      "unmanned_systems_relevance": "Core unmanned-systems or robotics asset with a specifically documented capability.",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Maritime surface systems"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration",
+        "Simulation, digital twins, and synthetic environments"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Ideal Aerosmith Grand Forks headquarters and manufacturing - primary source",
+          "url": "https://www.ideal-aerosmith.com/govsys/",
+          "supports": "Current autonomous aircraft, surface-vessel, mission-management and prototyping portfolio."
+        },
+        {
+          "title": "Ideal Aerosmith Grand Forks headquarters and manufacturing - public contact",
+          "url": "https://www.ideal-aerosmith.com/contact/",
+          "supports": "Published in-state location and business inquiry route."
+        },
+        {
+          "title": "Ideal Aerosmith Grand Forks headquarters safety recognition",
+          "url": "https://www.ideal-aerosmith.com/ideal-aerosmith-sharpcertification/",
+          "supports": "First-party 2025 confirmation of the Grand Forks headquarters and production teams."
+        },
+        {
+          "title": "Ideal Aerosmith privacy and postal contact",
+          "url": "https://www.ideal-aerosmith.com/privacy-policy/",
+          "supports": "Published 3001 South Washington Street business address."
+        }
+      ]
+    },
+    {
+      "address_line": "2100 Library Circle",
+      "postal_code": "58201",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_notes": "One site record; individual printers, production orders and products are not split. No customer identities, flight approval or unreported production limits inferred.",
+      "contact_url": "https://bifrostmfg.com/contact/",
+      "contact_email": "sales@bifrostmanufacturing.com",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "One site record; individual printers, production orders and products are not split. No customer identities, flight approval or unreported production limits inferred.",
+      "state": "ND",
+      "name": "Bifrost Manufacturing Grand Forks UAV-component production",
+      "record_type": "facility",
+      "city": "Grand Forks",
+      "location_source_url": "https://bifrostmfg.com/contact/",
+      "website_url": "https://bifrostmfg.com/",
+      "short_description": "Grand Forks contract-manufacturing site producing UAV components using industrial additive manufacturing alongside machining and custom fabrication.",
+      "overview": "Grand Forks contract-manufacturing site producing UAV components using industrial additive manufacturing alongside machining and custom fabrication.",
+      "unmanned_systems_relevance": "Core unmanned-systems or robotics asset with a specifically documented capability.",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Bifrost Manufacturing Grand Forks UAV-component production - primary source",
+          "url": "https://bifrostmfg.com/",
+          "supports": "Current manufacturing function, automation focus and published Grand Forks site address."
+        },
+        {
+          "title": "Bifrost Manufacturing Grand Forks UAV-component production - public contact",
+          "url": "https://bifrostmfg.com/contact/",
+          "supports": "Published in-state location and business inquiry route."
+        },
+        {
+          "title": "Stratasys Bifrost UAV production case study",
+          "url": "https://www.stratasys.com/en/resources/case-studies/bifrost-uav-saf-production/",
+          "supports": "Equipment supplier's direct customer case documents UAV component production in Grand Forks and deployment of its H350 printing system."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "manufacturing",
+      "location_notes": "Locality only: expired historical certificates are not used to assign current plant addresses or certifications. Company-level product relevance is kept separate from exact local production allocation.",
+      "contact_url": "",
+      "contact_email": "Electronics@JohnDeere.com",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Locality only: expired historical certificates are not used to assign current plant addresses or certifications. Company-level product relevance is kept separate from exact local production allocation.",
+      "state": "ND",
+      "name": "John Deere Electronics Fargo design and manufacturing",
+      "record_type": "facility",
+      "city": "Fargo",
+      "location_source_url": "https://www.deere.com/en-us/industries/electronics",
+      "website_url": "https://www.deere.com/en-us/industries/electronics",
+      "short_description": "Fargo electronics design and manufacturing operation within Deere's rugged-electronics business, whose portfolio includes vision-processing hardware for robotics and autonomous navigation.",
+      "overview": "Fargo electronics design and manufacturing operation within Deere's rugged-electronics business, whose portfolio includes vision-processing hardware for robotics and autonomous navigation.",
+      "unmanned_systems_relevance": "Supporting autonomy-electronics supplier with documented Fargo design/manufacturing presence. Corporate VPU capabilities are not proof that a specific model is assembled at a particular Fargo address.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Perception, sensing, and sensor fusion",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "John Deere Electronics Fargo design and manufacturing - primary source",
+          "url": "https://www.deere.com/en-us/industries/electronics",
+          "supports": "Current electronics business and engineering/manufacturing capability."
+        },
+        {
+          "title": "John Deere worldwide locations",
+          "url": "https://www.deere.com/assets/pdfs/common/our-company/about/jd-world-locations.pdf",
+          "supports": "Fargo, North Dakota electronics design and manufacturing presence."
+        },
+        {
+          "title": "John Deere Electronics autonomy hardware",
+          "url": "https://www.deere.com/en-us/industries/electronics/autonomy",
+          "supports": "Vision-processing hardware offering for OEM autonomous navigation, robotics and computer vision."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_notes": "County service-area program; no launch location or general public flight access assigned.",
+      "contact_url": "https://www.burleigh.gov/contacts/categories/sheriffs-department/",
+      "contact_email": "",
+      "contact_phone": "701-222-6651",
+      "test_access": "",
+      "research_notes": "Distinct county sheriff program, not a duplicate of the City of Bismarck Police UAS team. Funding approval is not represented as completion of any particular aircraft purchase.",
+      "state": "ND",
+      "name": "Burleigh County Sheriff's Department UAS unit",
+      "record_type": "program",
+      "city": "Bismarck",
+      "location_source_url": "https://www.burleigh.gov/contacts/categories/sheriffs-department/",
+      "website_url": "https://burleigh.gov/departments/sheriffs-department/",
+      "short_description": "Sheriff's drone unit supporting aerial observation, missing-person searches, disaster response and incident documentation under published departmental policy.",
+      "overview": "Sheriff's drone unit supporting aerial observation, missing-person searches, disaster response and incident documentation under published departmental policy.",
+      "unmanned_systems_relevance": "Core unmanned-systems or robotics asset with a specifically documented capability.",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Programs and initiatives"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue"
+      ],
+      "sources": [
+        {
+          "title": "Burleigh County Sheriff's Department UAS unit - primary source",
+          "url": "https://www.burleigh.gov/media/nwcnjkf1/bcsd-policy-manual-2-23-2026.pdf",
+          "supports": "Current departmental UAS policy and authorized public-safety mission types."
+        },
+        {
+          "title": "Burleigh County Sheriff's Department UAS unit - public contact",
+          "url": "https://www.burleigh.gov/contacts/categories/sheriffs-department/",
+          "supports": "Published in-state location and business inquiry route."
+        },
+        {
+          "title": "Burleigh County 2026 commission minutes",
+          "url": "https://www.burleigh.gov/media/q0phcjl0/2026-meeting-minutes.pdf",
+          "supports": "2026 acceptance of a grant explicitly for the Sheriff's existing drone program."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_notes": "Regional water-rescue service area; no particular water body, dive site or launch point inferred.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Distinct named water-rescue/ROV program, not an extra record for the sheriff's aerial drone fleet. Individual dive, airboat and ice-rescue components are not split.",
+      "state": "ND",
+      "name": "Burleigh County Water Rescue Recovery Team ROV capability",
+      "record_type": "program",
+      "city": "Bismarck",
+      "location_source_url": "https://www.burleigh.gov/departments/sheriffs-department/special-teams/dive-rescue-recovery/",
+      "website_url": "https://www.burleigh.gov/departments/sheriffs-department/special-teams/dive-rescue-recovery/",
+      "short_description": "Regional water-rescue team with a documented ROV component, remotely operated vehicles and side-scan sonar for rescue and recovery support.",
+      "overview": "Regional water-rescue team with a documented ROV component, remotely operated vehicles and side-scan sonar for rescue and recovery support.",
+      "unmanned_systems_relevance": "Core unmanned-systems or robotics asset with a specifically documented capability.",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Programs and initiatives"
+      ],
+      "platform_domains": [
+        "Undersea systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Search and rescue",
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "Burleigh County Water Rescue Recovery Team ROV capability - primary source",
+          "url": "https://www.burleigh.gov/departments/sheriffs-department/special-teams/dive-rescue-recovery/",
+          "supports": "Current regional team structure, ROV team and equipment, jointly staffed by sheriff and rural fire personnel."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_notes": "Devils Lake/Lake Region service area. Funding sources do not establish separate flight facilities.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "One regional team record, not separate assets for its police and emergency-management participants. No independent program website or open-access test service located.",
+      "state": "ND",
+      "name": "Lake Region Unmanned Aerial System Team",
+      "record_type": "program",
+      "city": "Devils Lake",
+      "location_source_url": "https://www.dvlnd.com/media/userfiles/subsite_207/files/city-commission/minutes/2024%20Minutes/2024-12-02%20Minutes.pdf",
+      "website_url": "",
+      "short_description": "Multiagency Lake Region drone team documented conducting missing-person missions, with continued public demonstration activity reported by USDA.",
+      "overview": "Multiagency Lake Region drone team documented conducting missing-person missions, with continued public demonstration activity reported by USDA.",
+      "unmanned_systems_relevance": "Core unmanned-systems or robotics asset with a specifically documented capability.",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Programs and initiatives"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Search and rescue",
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "Lake Region Unmanned Aerial System Team - primary source",
+          "url": "https://www.dvlnd.com/media/userfiles/subsite_207/files/city-commission/minutes/2024%20Minutes/2024-12-02%20Minutes.pdf",
+          "supports": "City commission report of actual missions, flight activity, missing-person assistance and regional funding."
+        },
+        {
+          "title": "USDA account of Lake Region UAS outreach",
+          "url": "https://www.nrcs.usda.gov/state-offices/north-dakota/news/spirit-lake-nation-revives-annual-conservation-camp-for-youth",
+          "supports": "More recent first-party federal account identifies Ramsey County emergency management and Lake Region UAS team pilots demonstrating aircraft."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_notes": "Statewide fieldwork program rather than a publicly accessible flight test site.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Existing field applications distinguished from additional work planned as needed in 2026; no blanket statement that every published landslide map was created by drone.",
+      "state": "ND",
+      "name": "North Dakota Geological Survey drone geologic-fieldwork program",
+      "record_type": "program",
+      "city": "",
+      "location_source_url": "https://www.dmr.nd.gov/dmr/sites/www/files/documents/Survey/Geo-News/JAN_2025_Geo_News.pdf",
+      "website_url": "https://www.dmr.nd.gov/dmr/ndgs/landslides",
+      "short_description": "Geological Survey drone use for landslide photography, difficult-terrain reconnaissance and geologic field studies across North Dakota.",
+      "overview": "Geological Survey drone use for landslide photography, difficult-terrain reconnaissance and geologic field studies across North Dakota.",
+      "unmanned_systems_relevance": "Core unmanned-systems or robotics asset with a specifically documented capability.",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Research and technical depth",
+        "Programs and initiatives"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "North Dakota Geological Survey drone geologic-fieldwork program - primary source",
+          "url": "https://www.dmr.nd.gov/dmr/sites/www/files/documents/Survey/Geo-News/JAN_2025_Geo_News.pdf",
+          "supports": "Survey's January 2025 publication documents its drone inventory and actual geologic field applications."
+        },
+        {
+          "title": "NDGS 2026 work-plan presentation",
+          "url": "https://www.ndic.nd.gov/sites/default/files/documents/NDIC-Home/Agendas/2026/IC-Agenda-Packet-2-24-2026.pdf",
+          "supports": "2026 work plan includes drone-assisted landslide mapping and assistance to other agencies."
+        }
+      ]
+    },
+    {
+      "address_line": "1300 18th St N",
+      "postal_code": "58102",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_notes": "Current office contact page used instead of the older address retained in the site's privacy notice.",
+      "contact_url": "https://ndto.com/about-us/contact-us/",
+      "contact_email": "info@ndto.com",
+      "contact_phone": "701-231-4323",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "North Dakota Trade Office",
+      "record_type": "organization",
+      "city": "Fargo",
+      "location_source_url": "https://ndto.com/about-us/contact-us/",
+      "website_url": "https://ndto.com/",
+      "short_description": "Public-private export-support organization providing education, research, market connections and trade-service assistance to North Dakota businesses, including aviation and UAS exporters.",
+      "overview": "Public-private export-support organization providing education, research, market connections and trade-service assistance to North Dakota businesses, including aviation and UAS exporters.",
+      "unmanned_systems_relevance": "Supporting business resource providing the documented financing, advice or market-development service. No UAS operating, engineering or flight-access capability is inferred.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "North Dakota Trade Office - primary source",
+          "url": "https://ndto.com/membership/exporter/",
+          "supports": "Exporter services and explicitly identified aviation-equipment, engineering and unmanned-aircraft member sectors."
+        },
+        {
+          "title": "North Dakota Trade Office - public contact",
+          "url": "https://ndto.com/about-us/contact-us/",
+          "supports": "Published in-state location and business inquiry route."
+        },
+        {
+          "title": "NDTO export assistance grants",
+          "url": "https://ndto.com/grants/",
+          "supports": "Published cost-barrier assistance for export development, subject to program availability."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_notes": "Named assistance center, not a whole University of Jamestown listing. Search-accessible primary pages document services; some direct fetches returned an access restriction.",
+      "contact_url": "",
+      "contact_email": "Katherine.Roth@uj.edu",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Named assistance center, not a whole University of Jamestown listing. Search-accessible primary pages document services; some direct fetches returned an access restriction.",
+      "state": "ND",
+      "name": "Jamestown Regional Entrepreneur Center",
+      "record_type": "organization",
+      "city": "Jamestown",
+      "location_source_url": "https://jrecenter.com/",
+      "website_url": "https://jrecenter.com/",
+      "short_description": "Entrepreneur-support center delivering individualized business technical assistance, training and startup-growth events in south-central North Dakota.",
+      "overview": "Entrepreneur-support center delivering individualized business technical assistance, training and startup-growth events in south-central North Dakota.",
+      "unmanned_systems_relevance": "Supporting business resource providing the documented financing, advice or market-development service. No UAS operating, engineering or flight-access capability is inferred.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Jamestown Regional Entrepreneur Center - primary source",
+          "url": "https://jrecenter.com/",
+          "supports": "Current first-party description of business assistance, training and direct contact."
+        },
+        {
+          "title": "2026 ND Commerce entrepreneur-center funding report",
+          "url": "https://ndlegis.gov/sites/default/files/pdf/committees/69-2025/27.5118.02000-110pm-grant-reporting.pdf",
+          "supports": "Current state reporting identifies the Jamestown center as an entrepreneur-center grantee."
+        }
+      ]
+    },
+    {
+      "address_line": "113 4th Street East, Suite 101",
+      "postal_code": "58801",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_notes": "Published local business or research presence; no flight-site boundary or access authorization inferred.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "701-577-1358",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "Tri-County Regional Development Council",
+      "record_type": "organization",
+      "city": "Williston",
+      "location_source_url": "https://tricountyrdc.com/our-services/",
+      "website_url": "https://tricountyrdc.com/",
+      "short_description": "Northwestern North Dakota council providing business gap financing for equipment, sites and expansion, plus grant-preparation assistance.",
+      "overview": "Northwestern North Dakota council providing business gap financing for equipment, sites and expansion, plus grant-preparation assistance.",
+      "unmanned_systems_relevance": "Supporting business resource providing the documented financing, advice or market-development service. No UAS operating, engineering or flight-access capability is inferred.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Tri-County Regional Development Council - primary source",
+          "url": "https://tricountyrdc.com/our-services/",
+          "supports": "Actual revolving-loan uses, Divide/McKenzie/Williams county service area and published Williston office."
+        },
+        {
+          "title": "Tri-County entrepreneur support",
+          "url": "https://tricountyrdc.com/entrepreneur-support/",
+          "supports": "Partnership with BND and local lenders for business-start and growth finance."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_notes": "Statewide education-access program; participating institutions are not duplicated as whole-institution assets.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "Dakota Digital Academy",
+      "record_type": "program",
+      "city": "",
+      "location_source_url": "https://dda.ndus.edu/mission/",
+      "website_url": "https://dda.ndus.edu/",
+      "short_description": "North Dakota University System initiative coordinating access to computing, cybersecurity and digital-skills training through its participating institutions.",
+      "overview": "North Dakota University System initiative coordinating access to computing, cybersecurity and digital-skills training through its participating institutions.",
+      "unmanned_systems_relevance": "Supporting digital workforce infrastructure for software, data and secure systems. It is not an autonomy test facility, a separate university or evidence of UAS instruction in every listed course.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Workforce and talent",
+        "Programs and initiatives"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Data engineering, analytics, and edge computing",
+        "Cybersecurity and resilient systems"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Dakota Digital Academy - primary source",
+          "url": "https://dda.ndus.edu/mission/",
+          "supports": "Named statewide initiative, NDUS sponsorship and digital-cyber education/training function."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_notes": "Program network spans North Dakota; no single test location or general access right assigned.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "One statewide funded coalition program, distinct from the Grand Farm Innovation Campus physical test asset and NDSU's Peltier Institute. No partner membership is treated as flight authorization.",
+      "state": "ND",
+      "name": "NSF AgTech Engine in North Dakota - FARMS",
+      "record_type": "program",
+      "city": "",
+      "location_source_url": "https://www.nsf.gov/funding/initiatives/regional-innovation-engines/portfolio/agtech-engine-north-dakota",
+      "website_url": "https://farmsfeedstheworld.com/",
+      "short_description": "NDSU-led statewide innovation engine advancing agricultural technology, including drone data collection, sensing, AI and commercialization partnerships.",
+      "overview": "NDSU-led statewide innovation engine advancing agricultural technology, including drone data collection, sensing, AI and commercialization partnerships.",
+      "unmanned_systems_relevance": "Core unmanned-systems or robotics asset with a specifically documented capability.",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Research and technical depth",
+        "Commercialization and capital",
+        "Workforce and talent",
+        "Programs and initiatives"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Autonomy and artificial intelligence",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Agriculture and natural resources"
+      ],
+      "sources": [
+        {
+          "title": "NSF AgTech Engine in North Dakota - FARMS - primary source",
+          "url": "https://www.nsf.gov/funding/initiatives/regional-innovation-engines/portfolio/agtech-engine-north-dakota",
+          "supports": "Funded North Dakota regional innovation engine, explicit UAV technology focus and current workforce/commercialization activity."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "campus",
+      "location_notes": "Degree, diploma and certificate options grouped under one technical program rather than counted as separate assets.",
+      "contact_url": "",
+      "contact_email": "Richard.D.Drury@lrsc.edu",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Degree, diploma and certificate options grouped under one technical program rather than counted as separate assets.",
+      "state": "ND",
+      "name": "Lake Region State College Simulation Technology program",
+      "record_type": "program",
+      "city": "Devils Lake",
+      "location_source_url": "https://www.lrsc.edu/programs/simulation-technology",
+      "website_url": "https://www.lrsc.edu/programs/simulation-technology",
+      "short_description": "Simulator-technician program teaching digital electronics, visual systems, computer systems and fault diagnosis for advanced simulation equipment.",
+      "overview": "Simulator-technician program teaching digital electronics, visual systems, computer systems and fault diagnosis for advanced simulation equipment.",
+      "unmanned_systems_relevance": "Supporting simulation-maintenance workforce program. The published curriculum does not establish a dedicated UAS simulator or public drone-testing service.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Workforce and talent"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Simulation, digital twins, and synthetic environments",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Lake Region State College Simulation Technology program - primary source",
+          "url": "https://www.lrsc.edu/programs/simulation-technology",
+          "supports": "Current named simulation program, hands-on technical curriculum and program contact."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_notes": "Recorded as a current portfolio-administration and economic-development entity, not as an open funding offer. Current temporary pause is explicit. Individual subordinate funds are not separately split.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Recorded as a current portfolio-administration and economic-development entity, not as an open funding offer. Current temporary pause is explicit. Individual subordinate funds are not separately split.",
+      "state": "ND",
+      "name": "North Dakota Development Fund",
+      "record_type": "organization",
+      "city": "",
+      "location_source_url": "https://www.commerce.nd.gov/economic-development-finance/development-fund",
+      "website_url": "https://www.commerce.nd.gov/economic-development-finance/development-fund",
+      "short_description": "State primary-sector business-finance agency administering gap financing and investment portfolios. New financing transactions were temporarily paused November 13, 2026.",
+      "overview": "State primary-sector business-finance agency administering gap financing and investment portfolios. New financing transactions were temporarily paused November 13, 2026.",
+      "unmanned_systems_relevance": "Supporting business resource providing the documented financing, advice or market-development service. No UAS operating, engineering or flight-access capability is inferred.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "North Dakota Development Fund - primary source",
+          "url": "https://www.commerce.nd.gov/economic-development-finance/development-fund",
+          "supports": "Development finance agency, primary-sector business support and named financing/investment programs."
+        },
+        {
+          "title": "NDDF temporary pause announced November 13, 2026",
+          "url": "https://www.commerce.nd.gov/news/commerce-announces-temporary-pause-new-north-dakota-development-fund-transactions",
+          "supports": "New transactions paused while existing portfolio and contractual obligations continue to be administered."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_notes": "November 9, 2026 application deadline has passed; future dated rounds are published, but no funding award or applicant eligibility is promised.",
+      "contact_url": "",
+      "contact_email": "LIFT@nd.gov",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "November 9, 2026 application deadline has passed; future dated rounds are published, but no funding award or applicant eligibility is promised.",
+      "state": "ND",
+      "name": "Legacy Investment for Technology Loan Fund",
+      "record_type": "program",
+      "city": "",
+      "location_source_url": "https://www.commerce.nd.gov/economic-development-finance/finance-and-incentives/finance-programs/legacy-investment-technology",
+      "website_url": "https://www.commerce.nd.gov/economic-development-finance/finance-and-incentives/finance-programs/legacy-investment-technology",
+      "short_description": "Technology-commercialization loan program explicitly covering autonomous and uncrewed vehicles, agricultural technology and advanced computing. The current application round is closed.",
+      "overview": "Technology-commercialization loan program explicitly covering autonomous and uncrewed vehicles, agricultural technology and advanced computing. The current application round is closed.",
+      "unmanned_systems_relevance": "Supporting commercialization capital program explicitly relevant to autonomy businesses, not a technical operator or test facility.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Legacy Investment for Technology Loan Fund - primary source",
+          "url": "https://www.commerce.nd.gov/economic-development-finance/finance-and-incentives/finance-programs/legacy-investment-technology",
+          "supports": "Current program, named eligible technology sectors, North Dakota commercialization purpose and closed current application period."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_notes": "Distinct state reimbursement program, not an additional physical incubator. Application closure is retained; no currently available voucher or applicant approval is implied.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Distinct state reimbursement program, not an additional physical incubator. Application closure is retained; no currently available voucher or applicant approval is implied.",
+      "state": "ND",
+      "name": "Innovate ND entrepreneur reimbursement program",
+      "record_type": "program",
+      "city": "",
+      "location_source_url": "https://www.commerce.nd.gov/economic-development-finance/finance-and-incentives/finance-programs/innovate-nd",
+      "website_url": "https://www.commerce.nd.gov/economic-development-finance/finance-and-incentives/finance-programs/innovate-nd",
+      "short_description": "Entrepreneur reimbursement program supporting customer discovery and market validation through designated entrepreneur centers. Applications for the 2025-2027 biennium are closed.",
+      "overview": "Entrepreneur reimbursement program supporting customer discovery and market validation through designated entrepreneur centers. Applications for the 2025-2027 biennium are closed.",
+      "unmanned_systems_relevance": "Supporting business resource providing the documented financing, advice or market-development service. No UAS operating, engineering or flight-access capability is inferred.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Innovate ND entrepreneur reimbursement program - primary source",
+          "url": "https://www.commerce.nd.gov/economic-development-finance/finance-and-incentives/finance-programs/innovate-nd",
+          "supports": "Current reimbursement program, market/customer-research purpose, entrepreneur-center delivery and closed application status."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_notes": "Specific incentive program distinct from LIFT commercialization loans and Innovate ND market-research reimbursement. No tax advice or award entitlement inferred.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Specific incentive program distinct from LIFT commercialization loans and Innovate ND market-research reimbursement. No tax advice or award entitlement inferred.",
+      "state": "ND",
+      "name": "North Dakota Automation Tax Credit Program",
+      "record_type": "program",
+      "city": "",
+      "location_source_url": "https://www.commerce.nd.gov/news/north-dakota-department-commerce-opens-2026-automation-tax-credit-program",
+      "website_url": "https://commerceportal.nd.gov/Automation-Tax-Credit-New/",
+      "short_description": "State incentive program for qualifying investments in automation and robotic equipment used in North Dakota manufacturing or animal-agriculture processes.",
+      "overview": "State incentive program for qualifying investments in automation and robotic equipment used in North Dakota manufacturing or animal-agriculture processes.",
+      "unmanned_systems_relevance": "Supporting manufacturing-automation investment incentive. A listing is not a determination of tax eligibility, an award or technical certification.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital",
+        "Manufacturing and supply chain"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "North Dakota Automation Tax Credit Program - primary source",
+          "url": "https://www.commerce.nd.gov/news/north-dakota-department-commerce-opens-2026-automation-tax-credit-program",
+          "supports": "October 2026 announcement of the current program, manufacturing/robotics investment focus and official application portal."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "campus",
+      "location_notes": "Closely related AI graduate pathways grouped into one training record, not separate records for each credential.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Closely related AI graduate pathways grouped into one training record, not separate records for each credential.",
+      "state": "ND",
+      "name": "UND artificial intelligence and machine-learning graduate training",
+      "record_type": "program",
+      "city": "Grand Forks",
+      "location_source_url": "https://und.edu/programs/artificial-intelligence-machine-learning-certificate/index.html",
+      "website_url": "https://und.edu/programs/artificial-intelligence-machine-learning-certificate/index.html",
+      "short_description": "Graduate AI and machine-learning training covering algorithms, computational intelligence and automated decisions, with further doctoral study including machine vision and robotics.",
+      "overview": "Graduate AI and machine-learning training covering algorithms, computational intelligence and automated decisions, with further doctoral study including machine vision and robotics.",
+      "unmanned_systems_relevance": "Supporting technical workforce and research training in algorithms relevant to autonomy. It is not a distinct flight facility or proof of deployment.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Workforce and talent",
+        "Research and technical depth"
+      ],
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "UND artificial intelligence and machine-learning graduate training - primary source",
+          "url": "https://und.edu/programs/artificial-intelligence-machine-learning-certificate/index.html",
+          "supports": "Named graduate certificate, campus/online delivery and computing/algorithm curriculum."
+        },
+        {
+          "title": "UND Artificial Intelligence doctorate",
+          "url": "https://und.edu/programs/artificial-intelligence-phd/index.html",
+          "supports": "Current on-campus doctoral program includes autonomous systems, machine vision and robotics specialization."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "campus",
+      "location_notes": "One program listing covering its machining pathway; stackable introductory, intermediate and degree credentials are not split.",
+      "contact_url": "",
+      "contact_email": "Steve.Johnson@ndscs.edu",
+      "contact_phone": "701-671-2478",
+      "test_access": "",
+      "research_notes": "One program listing covering its machining pathway; stackable introductory, intermediate and degree credentials are not split.",
+      "state": "ND",
+      "name": "NDSCS Precision Machining Technology program",
+      "record_type": "program",
+      "city": "Wahpeton",
+      "location_source_url": "https://catalog.ndscs.edu/precision-machining-technology/associate-in-applied-science/precision-machining-technology",
+      "website_url": "https://catalog.ndscs.edu/precision-machining-technology/associate-in-applied-science/precision-machining-technology",
+      "short_description": "Wahpeton technical program teaching CNC programming, machining, CAD/CAM, tooling and automated manufacturing through practical production work.",
+      "overview": "Wahpeton technical program teaching CNC programming, machining, CAD/CAM, tooling and automated manufacturing through practical production work.",
+      "unmanned_systems_relevance": "Supporting precision-production workforce for technology manufacturing. No dedicated UAS production contract or drone-flight instruction is claimed.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Workforce and talent",
+        "Manufacturing and supply chain"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "NDSCS Precision Machining Technology program - primary source",
+          "url": "https://catalog.ndscs.edu/precision-machining-technology/associate-in-applied-science/precision-machining-technology",
+          "supports": "Current program, explicit Wahpeton delivery, CNC/automated manufacturing curriculum and public program contact."
+        }
+      ]
+    },
+    {
+      "address_line": "5630 36th Ave S",
+      "postal_code": "58104",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_notes": "One North Dakota business-support office. Historical borrower project is evidence of manufacturing assistance, not a separate robotics factory or currently open credit allocation.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "701-293-8892",
+      "test_access": "",
+      "research_notes": "One North Dakota business-support office. Historical borrower project is evidence of manufacturing assistance, not a separate robotics factory or currently open credit allocation.",
+      "state": "ND",
+      "name": "Dakota Business Lending Fargo office",
+      "record_type": "organization",
+      "city": "Fargo",
+      "location_source_url": "https://dakotabusinesslending.com/",
+      "website_url": "https://dakotabusinesslending.com/",
+      "short_description": "North Dakota business-finance organization providing growth capital and business support, with documented financing of Fargo manufacturing expansion.",
+      "overview": "North Dakota business-finance organization providing growth capital and business support, with documented financing of Fargo manufacturing expansion.",
+      "unmanned_systems_relevance": "Supporting business resource providing the documented financing, advice or market-development service. No UAS operating, engineering or flight-access capability is inferred.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Dakota Business Lending Fargo office - primary source",
+          "url": "https://dakotabusinesslending.com/",
+          "supports": "Current business-lending services and Fargo office address."
+        },
+        {
+          "title": "Dakota Business Lending manufacturing expansion financing",
+          "url": "https://dakotabusinesslending.com/new-markets-tax-credit-tecton/",
+          "supports": "Direct account of financing equipment, tooling and manufacturing-facility expansion in Fargo; historical project example."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "campus",
+      "location_notes": "Published local business or research presence; no flight-site boundary or access authorization inferred.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "NDSU Precision Agriculture minor",
+      "record_type": "program",
+      "city": "Fargo",
+      "location_source_url": "https://catalog.ndsu.edu/curriculum/undergraduate/precision-agriculture-minor/",
+      "website_url": "https://catalog.ndsu.edu/curriculum/undergraduate/precision-agriculture-minor/",
+      "short_description": "Precision-agriculture academic program combining field-data mapping, precision applications, GIS and agricultural electronic-system electives.",
+      "overview": "Precision-agriculture academic program combining field-data mapping, precision applications, GIS and agricultural electronic-system electives.",
+      "unmanned_systems_relevance": "Supporting agricultural data, positioning and electronics workforce. Distinct curriculum, not an additional research institute, robot team or claimed UAS-pilot credential.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Workforce and talent"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Data engineering, analytics, and edge computing",
+        "Navigation and positioning"
+      ],
+      "missions": [
+        "Agriculture and natural resources",
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "NDSU Precision Agriculture minor - primary source",
+          "url": "https://catalog.ndsu.edu/curriculum/undergraduate/precision-agriculture-minor/",
+          "supports": "2026-2027 named minor and published technical curriculum."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "campus",
+      "location_notes": "Published local business or research presence; no flight-site boundary or access authorization inferred.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Internal public-source research preview. No open-access test capacity, operational permission or unpublished technical limits inferred.",
+      "state": "ND",
+      "name": "NDSU Human Factors in Artificial Intelligence Certificate",
+      "record_type": "program",
+      "city": "Fargo",
+      "location_source_url": "https://catalog.ndsu.edu/curriculum/undergraduate/human-factor-artificial-intelligence-cert/",
+      "website_url": "https://catalog.ndsu.edu/curriculum/undergraduate/human-factor-artificial-intelligence-cert/",
+      "short_description": "Undergraduate certificate studying human factors, user-experience research and language modeling in artificial intelligence.",
+      "overview": "Undergraduate certificate studying human factors, user-experience research and language modeling in artificial intelligence.",
+      "unmanned_systems_relevance": "Supporting human-centered AI education, relevant to the design and evaluation of operator-facing intelligent systems. No physical robot, UAS lab or deployed autonomy system is asserted.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Workforce and talent"
+      ],
+      "platform_domains": [
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "NDSU Human Factors in Artificial Intelligence Certificate - primary source",
+          "url": "https://catalog.ndsu.edu/curriculum/undergraduate/human-factor-artificial-intelligence-cert/",
+          "supports": "2026-2027 certificate and specifically listed human-factors and AI courses."
+        }
+      ]
+    },
+    {
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_notes": "Specific technology-company growth-finance program; not an extra record for each BND loan product. No loan availability, terms or approval is promised.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "research_notes": "Specific technology-company growth-finance program; not an extra record for each BND loan product. No loan availability, terms or approval is promised.",
+      "state": "ND",
+      "name": "Bank of North Dakota Accelerated Growth Loan Program",
+      "record_type": "program",
+      "city": "",
+      "location_source_url": "https://bnd.nd.gov/loans/business/accelerated-growth-loan-program/",
+      "website_url": "https://bnd.nd.gov/loans/business/accelerated-growth-loan-program/",
+      "short_description": "State-bank financing program for North Dakota technology companies positioned for growth but with limited assets for conventional bank financing.",
+      "overview": "State-bank financing program for North Dakota technology companies positioned for growth but with limited assets for conventional bank financing.",
+      "unmanned_systems_relevance": "Supporting business resource providing the documented financing, advice or market-development service. No UAS operating, engineering or flight-access capability is inferred.",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital"
+      ],
+      "platform_domains": [],
+      "capabilities": [],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Bank of North Dakota Accelerated Growth Loan Program - primary source",
+          "url": "https://bnd.nd.gov/loans/business/accelerated-growth-loan-program/",
+          "supports": "Current program, North Dakota technology-company focus and growth-financing function."
+        }
+      ]
+    }
+  ],
+  "held_candidates": [
+    {
+      "state": "ND",
+      "name": "Stutsman County shared public-safety drone capability",
+      "reason": "Official 2026-2030 capital-budget search text documents drones purchased in 2020 and 2024 and a planned replacement, but the direct county PDF currently returns 404. Held for a working primary document and current program contact; replacement completion is not inferred."
+    },
+    {
+      "state": "ND",
+      "name": "Minot Police drone-first-response proposal",
+      "reason": "Recent reporting describes a future contract period, but the underlying current city approval and deployment status were not independently established from a first-party record. Do not label proposed 2027 service as operational."
+    },
+    {
+      "state": "ND",
+      "name": "Golden Valley County Sheriff's drone program",
+      "reason": "Recent secondary reporting was located, but a current county-owned source confirming the North Dakota program and its function was not established. Golden Valley County, Montana results were excluded."
+    },
+    {
+      "state": "ND",
+      "name": "McKenzie County Sheriff's drone purchase",
+      "reason": "2024 county minutes describe purchase approval, but a current first-party program or deployment account was not established. Authorization to buy is not treated as current operating capability."
+    },
+    {
+      "state": "ND",
+      "name": "North Dakota Game and Fish UAS program",
+      "reason": "Older drone-pilot references and current imagery resources were insufficient to establish a current, distinct agency-owned UAS program. Aerial imagery alone does not establish drone operations."
+    },
+    {
+      "state": "ND",
+      "name": "North Dakota Forest Service UAS program",
+      "reason": "Located historical demonstrations/workshops, not sufficiently current evidence of a continuing distinct agency UAS program."
+    },
+    {
+      "state": "ND",
+      "name": "NDSU Social Robotics Lab",
+      "reason": "The named page was found, but available material emphasized communication/chatbot studies; a distinct physical-robotics or autonomy research capability was not established strongly enough for this batch."
+    },
+    {
+      "state": "ND",
+      "name": "Fargo Automation / Korber Fargo robotics manufacturing",
+      "reason": "Historical robotics and acquisition evidence was found, but a current first-party page tying the local manufacturing site to the specific robotics capability was not established."
+    },
+    {
+      "state": "ND",
+      "name": "Appareo / PTx Fargo autonomy manufacturing",
+      "reason": "Current local allocation of a specific autonomy product or supplier capability was not established from the first-party evidence reviewed. Generic avionics and precision-agriculture identity are insufficient."
+    },
+    {
+      "state": "ND",
+      "name": "Killdeer Mountain Manufacturing UAS supply capability",
+      "reason": "North Dakota aerospace-manufacturing lead, but a current direct source establishing specific robotics/autonomy supplier work was not located. Generic aerospace manufacturing was not added."
+    },
+    {
+      "state": "ND",
+      "name": "ComDel Innovation robotics/autonomy manufacturing",
+      "reason": "Manufacturing services and process-improvement participation are documented, but a specific current robotics/autonomy supplier capability was not established. Not added as a generic contract manufacturer."
+    },
+    {
+      "state": "ND",
+      "name": "UND NFASE autonomous-systems regional engine",
+      "reason": "Partnership material was located, but active funded-program status and distinct current delivery were not established. An engine proposal is not treated as an operating facility."
+    },
+    {
+      "state": "ND",
+      "name": "IDEA Center as a separate Bismarck incubator",
+      "reason": "Historical evidence associates the IDEA Center with Center for Technology & Business. A distinct current entity/site beyond the CTB record was not established, so it was not split into another asset."
+    },
+    {
+      "state": "ND",
+      "name": "Emerging Digital Academy next-cohort training",
+      "reason": "Current operator and curriculum pages were found, but the program page says it is in transition and does not publish a next cohort. Held rather than treating an undated admissions listing as a currently scheduled course."
+    },
+    {
+      "state": "ND",
+      "name": "NDSCS Career Innovation Center standalone robotics facility",
+      "reason": "The physical learning location is current, but a distinct robotics program or facility beyond the existing RAMT record was not established. Whole-institution/campus duplication is outside this followup."
+    },
+    {
+      "state": "ND",
+      "name": "Strom Center for Entrepreneurship and Innovation",
+      "reason": "Historical Dickinson incubator references were found, but current first-party operation and services were not established."
+    },
+    {
+      "state": "ND",
+      "name": "Grand Forks water-rescue ROV program",
+      "reason": "A distinct current ROV capability was not confirmed from a primary source during this bounded pass; no equipment ownership or operational status inferred."
+    },
+    {
+      "state": "ND",
+      "name": "Minot AFB standing counter-UAS facility",
+      "reason": "Temporary exercise or flyaway-team activity does not establish a separately documented permanent North Dakota counter-UAS facility. Not added without current local ownership/program evidence."
+    }
+  ]
+}

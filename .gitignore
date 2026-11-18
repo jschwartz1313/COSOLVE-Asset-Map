@@ -11,6 +11,7 @@ staticfiles/
 node_modules/
 playwright-report/
 test-results/
+/tmp/
 backups/
 *.dump
 *.backup

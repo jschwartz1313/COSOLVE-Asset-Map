@@ -128,3 +128,23 @@ test("every benchmark state renders its own real starter inventory", async ({ pa
   }
   expect(errors).toEqual([]);
 });
+
+test("expanded inventories keep long profiles and targeted operating-area searches usable", async ({ page }, info) => {
+  test.skip(process.env.COSOLVE_QA_ALL_STATES !== "1", "Requires the expanded source catalog.");
+  const response = await page.request.get("/states/california/api/assets.geojson");
+  const data = await response.json();
+  const longest = [...data.features].sort((a, b) => b.properties.name.length - a.properties.name.length)[0];
+  await page.goto(longest.properties.detail_url);
+  await expect(page.locator("h1")).toContainText(longest.properties.name);
+  await fits(page);
+  await page.screenshot({ path: info.outputPath("long-peer-profile.png"), fullPage: true });
+  await page.goto("/states/california/map/?q=FAA-recognized");
+  await expect(page.locator("#map-status")).toBeHidden();
+  await expect(page.locator("#result-list")).toContainText("FAA-recognized flying area");
+  await fits(page);
+  const filtered = await page.request.get("/states/california/api/assets.geojson?q=FAA-recognized");
+  const matching = await filtered.json();
+  expect(matching.result_count).toBeGreaterThan(0);
+  expect(matching.result_count).toBeLessThan(data.result_count);
+  expect(matching.features.every(feature => feature.properties.location.state === "CA")).toBe(true);
+});

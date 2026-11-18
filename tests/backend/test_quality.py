@@ -1,10 +1,20 @@
+from decimal import Decimal
+from difflib import SequenceMatcher
+from itertools import combinations
+
 from django.contrib.auth import get_user_model
 from django.test import TestCase
 from django.urls import reverse
 from django.utils import timezone
 
 from apps.assets.models import Asset, AssetReviewComment, DuplicateCandidate
-from apps.assets.quality import sync_duplicate_candidates
+from apps.assets.quality import (
+    _candidate_details,
+    _distance_miles,
+    _normalized_text,
+    _normalized_url,
+    sync_duplicate_candidates,
+)
 from apps.sources.models import Source
 
 
@@ -133,3 +143,70 @@ class ReviewQualityWorkflowTests(TestCase):
         self.assertContains(response, "Source monitor")
         self.assertContains(response, "Healthy checks in the last 7 days")
         self.assertEqual(response.context["healthy_source_count"], 1)
+
+    def test_faster_duplicate_matching_preserves_original_scores_and_reasons(self):
+        def reference(first, second):
+            if first.state != second.state:
+                return None
+            first_name, second_name = _normalized_text(first.name), _normalized_text(second.name)
+            ratio = SequenceMatcher(None, first_name, second_name).ratio()
+            city = bool(
+                first.city and _normalized_text(first.city) == _normalized_text(second.city)
+            )
+            address = _normalized_text(first.address_line)
+            website = _normalized_url(first.website_url)
+            distance = _distance_miles(first, second)
+            reasons, scores = [], []
+            if first_name == second_name:
+                reasons.append("Same normalized name")
+                scores.append(100)
+            if (
+                website
+                and website == _normalized_url(second.website_url)
+                and city
+                and ratio >= 0.75
+            ):
+                reasons.append(f"Same website URL with related names ({ratio:.0%})")
+                scores.append(round(90 + ratio * 8))
+            if (
+                address
+                and address == _normalized_text(second.address_line)
+                and city
+                and ratio >= 0.9
+            ):
+                reasons.append(f"Same street address and related names ({ratio:.0%})")
+                scores.append(round(88 + ratio * 8))
+            if city and ratio >= 0.9:
+                reasons.append(f"Similar names in the same city ({ratio:.0%})")
+                scores.append(round(86 + ratio * 10))
+            if distance is not None and distance <= 0.05 and ratio >= 0.9:
+                reasons.append(f"Locations within {distance:.2f} miles with related names")
+                scores.append(round(82 + ratio * 10))
+            return {"score": min(max(scores), 100), "match_reasons": reasons} if reasons else None
+
+        fixtures = []
+        for name in (
+            "Autonomy Laboratory",
+            "Autonomy Laboratories",
+            "Different Campus",
+            "AUTONOMY-LABORATORY",
+        ):
+            for city, offset in (("Norfolk", "0"), ("Hampton", "0.0001"), ("", "0.0011")):
+                for state in ("VA", "NC"):
+                    fixtures.append(
+                        Asset(
+                            name=name,
+                            city=city,
+                            state=state,
+                            address_line="1 Research Way",
+                            website_url="https://lab.example.edu/",
+                            latitude=Decimal("36.85") + Decimal(offset),
+                            longitude=Decimal("-76.29"),
+                        )
+                    )
+        fixtures.append(Asset(name="Autonomy Laboratory", city="", state="VA"))
+        for first, second in combinations(fixtures, 2):
+            with self.subTest(
+                first=first.name, second=second.name, cities=(first.city, second.city)
+            ):
+                self.assertEqual(_candidate_details(first, second), reference(first, second))

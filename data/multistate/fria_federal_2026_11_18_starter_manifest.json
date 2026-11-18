@@ -1,0 +1,24 @@
+{
+  "retrieved": "2026-11-18",
+  "source": "https://services6.arcgis.com/ssFJjBXIUyZDrSYZ/arcgis/rest/services/FAA_Recognized_Identification_Areas/FeatureServer/0",
+  "guidance": "https://www.faa.gov/uas/getting_started/remote_id/fria",
+  "raw_sha256": "76c7a278efe8242f431679aabe779cbeab606b82598495e362aeac148b027bd6",
+  "added": {
+    "OH": 140,
+    "MI": 91,
+    "TX": 146,
+    "NY": 143,
+    "NC": 123,
+    "OK": 39,
+    "UT": 48,
+    "CA": 170,
+    "CO": 45,
+    "PA": 156,
+    "FL": 162,
+    "AZ": 75,
+    "ND": 13
+  },
+  "held": 1,
+  "nearby_recognitions_consolidated": 19,
+  "position_method": "Point on surface of published FAA polygon, not surveyed site entrance."
+}

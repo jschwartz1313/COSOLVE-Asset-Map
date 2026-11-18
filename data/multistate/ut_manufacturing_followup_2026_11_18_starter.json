@@ -1,0 +1,2025 @@
+{
+  "research_date": "2026-11-18",
+  "states": [
+    "UT"
+  ],
+  "records": [
+    {
+      "state": "UT",
+      "name": "ACT Aerospace Gunnison Composite Structures Facility",
+      "record_type": "facility",
+      "city": "Gunnison",
+      "address_line": "425 East 400 North",
+      "postal_code": "84634",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://actaero.com/contact-us/",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. ",
+      "website_url": "https://actaero.com/capabilities/",
+      "short_description": "Aerospace composite structures, machining, tooling and assembly production.",
+      "overview": "Aerospace composite structures, machining, tooling and assembly production.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Aerospace composite structures, machining, tooling and assembly production. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "https://actaero.com/contact-us/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "ACT Aerospace Gunnison Composite Structures Facility - production capability",
+          "url": "https://actaero.com/capabilities/",
+          "supports": "Aerospace composite structures, machining, tooling and assembly production."
+        },
+        {
+          "title": "ACT Aerospace Gunnison Composite Structures Facility - location and site evidence",
+          "url": "https://actaero.com/contact-us/",
+          "supports": "Company identifies Gunnison, Utah, at 425 East 400 North, 84634. Published locality and physical production presence; no coordinates inferred."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Advance Manufacturing Technology Salt Lake City Facility",
+      "record_type": "facility",
+      "city": "Salt Lake City",
+      "address_line": "839 S 3600 W",
+      "postal_code": "84104",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.advancemfgtech.com/",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. Predator work is documented program experience; no current aircraft-specific production contract is inferred.",
+      "website_url": "https://www.advancemfgtech.com/",
+      "short_description": "Aerospace precision machining with documented Predator drone component program work.",
+      "overview": "Aerospace precision machining with documented Predator drone component program work. Predator work is documented program experience; no current aircraft-specific production contract is inferred.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Aerospace precision machining with documented Predator drone component program work. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Advance Manufacturing Technology Salt Lake City Facility - production capability",
+          "url": "https://www.advancemfgtech.com/",
+          "supports": "Aerospace precision machining with documented Predator drone component program work. Published site address: 839 S 3600 W, Salt Lake City, UT 84104."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Aero-Space Tooling and Machining Salt Lake City Facility",
+      "record_type": "facility",
+      "city": "Salt Lake City",
+      "address_line": "2190 West 1700 South",
+      "postal_code": "84104",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://aerospacetooling.com/contact-us/",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. ",
+      "website_url": "https://aerospacetooling.com/",
+      "short_description": "Aerospace and robotics component machining, tooling, production runs and assembly.",
+      "overview": "Aerospace and robotics component machining, tooling, production runs and assembly.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Aerospace and robotics component machining, tooling, production runs and assembly. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "https://aerospacetooling.com/contact-us/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Aero-Space Tooling and Machining Salt Lake City Facility - production capability",
+          "url": "https://aerospacetooling.com/",
+          "supports": "Aerospace and robotics component machining, tooling, production runs and assembly."
+        },
+        {
+          "title": "Aero-Space Tooling and Machining Salt Lake City Facility - location and site evidence",
+          "url": "https://aerospacetooling.com/contact-us/",
+          "supports": "Company identifies Salt Lake City, Utah, at 2190 West 1700 South, 84104. Published locality and physical production presence; no coordinates inferred."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Albany Engineered Composites Amelia Earhart Drive Facility",
+      "record_type": "facility",
+      "city": "Salt Lake City",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "manufacturing",
+      "location_source_url": "https://investors.albint.com/news-releases/news-release-details/albany-international-announces-successful-completion-its",
+      "location_notes": "Documented production locality only; no street address, coordinates or facility boundary inferred. A September 2026 company announcement explicitly retains the Amelia Earhart Drive manufacturing facility after strategic review. A second unnamed Salt Lake facility is not split into an extra record.",
+      "website_url": "https://www.albint.com/engineered-composites/capabilities/",
+      "short_description": "Composite aerospace components and structures assembly at the retained Utah production facility.",
+      "overview": "Composite aerospace components and structures assembly at the retained Utah production facility. A September 2026 company announcement explicitly retains the Amelia Earhart Drive manufacturing facility after strategic review. A second unnamed Salt Lake facility is not split into an extra record.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Composite aerospace components and structures assembly at the retained Utah production facility. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Albany Engineered Composites Amelia Earhart Drive Facility - production capability",
+          "url": "https://www.albint.com/engineered-composites/capabilities/",
+          "supports": "Composite aerospace components and structures assembly at the retained Utah production facility."
+        },
+        {
+          "title": "Albany Engineered Composites Amelia Earhart Drive Facility - location and site evidence",
+          "url": "https://investors.albint.com/news-releases/news-release-details/albany-international-announces-successful-completion-its",
+          "supports": "Company identifies Salt Lake City, Utah. A September 2026 company announcement explicitly retains the Amelia Earhart Drive manufacturing facility after strategic review. A second unnamed Salt Lake facility is not split into an extra record."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "ALIGN PRECISION Cedar City Plant I",
+      "record_type": "facility",
+      "city": "Cedar City",
+      "address_line": "526 Aviation Way",
+      "postal_code": "84721",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://alignprecision.com/about/cedar_city-utah.html",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. ",
+      "website_url": "https://alignprecision.com/about/cedar_city-utah.html",
+      "short_description": "Aerospace sheet-metal, machining and structural-assembly production plant.",
+      "overview": "Aerospace sheet-metal, machining and structural-assembly production plant.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Aerospace sheet-metal, machining and structural-assembly production plant. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "ALIGN PRECISION Cedar City Plant I - production capability",
+          "url": "https://alignprecision.com/about/cedar_city-utah.html",
+          "supports": "Aerospace sheet-metal, machining and structural-assembly production plant. Published site address: 526 Aviation Way, Cedar City, UT 84721."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "ALIGN PRECISION Cedar City Plant II",
+      "record_type": "facility",
+      "city": "Cedar City",
+      "address_line": "597 N. 1500 W.",
+      "postal_code": "84721",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://alignprecision.com/about/cedar_city-utah.html",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. ",
+      "website_url": "https://alignprecision.com/about/cedar_city-utah.html",
+      "short_description": "Second documented aerospace fabrication and machining plant.",
+      "overview": "Second documented aerospace fabrication and machining plant.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Second documented aerospace fabrication and machining plant. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "ALIGN PRECISION Cedar City Plant II - production capability",
+          "url": "https://alignprecision.com/about/cedar_city-utah.html",
+          "supports": "Second documented aerospace fabrication and machining plant. Published site address: 597 N. 1500 W., Cedar City, UT 84721."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "AMCo Automation North Salt Lake Machine-Build Shop",
+      "record_type": "facility",
+      "city": "North Salt Lake",
+      "address_line": "230 N Cutler Dr., Suite 5",
+      "postal_code": "84054",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.amcoautomation.com/contact-us",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. ",
+      "website_url": "https://www.amcoautomation.com/",
+      "short_description": "Custom industrial automation machinery, robotic cells and turnkey system construction.",
+      "overview": "Custom industrial automation machinery, robotic cells and turnkey system construction.",
+      "unmanned_systems_relevance": "Core robotics or autonomy production capability: Custom industrial automation machinery, robotic cells and turnkey system construction.",
+      "contact_url": "https://www.amcoautomation.com/contact-us",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "AMCo Automation North Salt Lake Machine-Build Shop - production capability",
+          "url": "https://www.amcoautomation.com/",
+          "supports": "Custom industrial automation machinery, robotic cells and turnkey system construction."
+        },
+        {
+          "title": "AMCo Automation North Salt Lake Machine-Build Shop - location and site evidence",
+          "url": "https://www.amcoautomation.com/contact-us",
+          "supports": "Company identifies North Salt Lake, Utah, at 230 N Cutler Dr., Suite 5, 84054. Published locality and physical production presence; no coordinates inferred."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "American Pacific Cedar City Aerospace Propellant Materials Plant",
+      "record_type": "facility",
+      "city": "Cedar City",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.ampac.us/",
+      "location_notes": "Documented production locality only; no street address, coordinates or facility boundary inferred. Only the existing plant is counted. A production-line expansion anticipated for 2026 is not assumed complete or counted as a second site.",
+      "website_url": "https://www.ampac.us/",
+      "short_description": "Specialty material production supplying solid rocket motor and space-launch programs.",
+      "overview": "Specialty material production supplying solid rocket motor and space-launch programs. Only the existing plant is counted. A production-line expansion anticipated for 2026 is not assumed complete or counted as a second site.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Specialty material production supplying solid rocket motor and space-launch programs. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Propulsion, batteries, fuels, and energy systems"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "American Pacific Cedar City Aerospace Propellant Materials Plant - production capability",
+          "url": "https://www.ampac.us/",
+          "supports": "Specialty material production supplying solid rocket motor and space-launch programs. Documented production locality: Cedar City, Utah."
+        },
+        {
+          "title": "American Pacific manufacturing and expansion scope",
+          "url": "https://www.ampac.us/press-release-100-million-capacity-expansion/",
+          "supports": "Existing Cedar City oxidizer production and specifically announced new-line expansion."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Apex Precision CNC and Central Utah Tool Orem Shop",
+      "record_type": "facility",
+      "city": "Orem",
+      "address_line": "1374 W 400 S",
+      "postal_code": "84058",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://apexpcnc.com/about/",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. Apex and Central Utah Tool joined under one roof in 2025 and are counted as one physical production site.",
+      "website_url": "https://apexpcnc.com/",
+      "short_description": "In-house machining, EDM, fixture and assembly production for aerospace and robotics.",
+      "overview": "In-house machining, EDM, fixture and assembly production for aerospace and robotics. Apex and Central Utah Tool joined under one roof in 2025 and are counted as one physical production site.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: In-house machining, EDM, fixture and assembly production for aerospace and robotics. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Apex Precision CNC and Central Utah Tool Orem Shop - production capability",
+          "url": "https://apexpcnc.com/",
+          "supports": "In-house machining, EDM, fixture and assembly production for aerospace and robotics."
+        },
+        {
+          "title": "Apex Precision CNC and Central Utah Tool Orem Shop - location and site evidence",
+          "url": "https://apexpcnc.com/about/",
+          "supports": "Company identifies Orem, Utah, at 1374 W 400 S, 84058. Apex and Central Utah Tool joined under one roof in 2025 and are counted as one physical production site."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Automation Products Group Logan Sensor Manufacturing",
+      "record_type": "facility",
+      "city": "Logan",
+      "address_line": "1025 W 1700 N",
+      "postal_code": "84321",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://apgsensors.com/about-us/",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. Supporting industrial-automation sensing supplier. Company states most products, with exceptions, are manufactured here; not every catalog item is attributed to this site.",
+      "website_url": "https://apgsensors.com/about-us/",
+      "short_description": "Industrial measurement equipment, sensor assembly and machining at the Logan factory.",
+      "overview": "Industrial measurement equipment, sensor assembly and machining at the Logan factory. Supporting industrial-automation sensing supplier. Company states most products, with exceptions, are manufactured here; not every catalog item is attributed to this site.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Industrial measurement equipment, sensor assembly and machining at the Logan factory. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Automation Products Group Logan Sensor Manufacturing - production capability",
+          "url": "https://apgsensors.com/about-us/",
+          "supports": "Industrial measurement equipment, sensor assembly and machining at the Logan factory. Published site address: 1025 W 1700 N, Logan, UT 84321."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Barnes Aerospace Ogden Fabrication Facility",
+      "record_type": "facility",
+      "city": "Ogden",
+      "address_line": "1025 South Depot Dr",
+      "postal_code": "84404",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://barnesaero.com/ogden/",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. ",
+      "website_url": "https://barnesaero.com/ogden/",
+      "short_description": "Engine, nacelle and airframe precision-component fabrication and assembly.",
+      "overview": "Engine, nacelle and airframe precision-component fabrication and assembly.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Engine, nacelle and airframe precision-component fabrication and assembly. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Barnes Aerospace Ogden Fabrication Facility - production capability",
+          "url": "https://barnesaero.com/ogden/",
+          "supports": "Engine, nacelle and airframe precision-component fabrication and assembly. Published site address: 1025 South Depot Dr, Ogden, UT 84404."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Baxter Aerospace St. George Manufacturing Facility",
+      "record_type": "facility",
+      "city": "St. George",
+      "address_line": "3260 Deseret Dr",
+      "postal_code": "84790",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.baxteraerospace.com/contact-baxter/",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. Autonomous firefighting is described as development, not an established flight service or unrestricted test site.",
+      "website_url": "https://www.baxteraerospace.com/",
+      "short_description": "Aerospace systems design, fabrication and testing, including autonomous aerial-firefighting development.",
+      "overview": "Aerospace systems design, fabrication and testing, including autonomous aerial-firefighting development. Autonomous firefighting is described as development, not an established flight service or unrestricted test site.",
+      "unmanned_systems_relevance": "Core robotics or autonomy production capability: Aerospace systems design, fabrication and testing, including autonomous aerial-firefighting development.",
+      "contact_url": "https://www.baxteraerospace.com/contact-baxter/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Baxter Aerospace St. George Manufacturing Facility - production capability",
+          "url": "https://www.baxteraerospace.com/",
+          "supports": "Aerospace systems design, fabrication and testing, including autonomous aerial-firefighting development."
+        },
+        {
+          "title": "Baxter Aerospace St. George Manufacturing Facility - location and site evidence",
+          "url": "https://www.baxteraerospace.com/contact-baxter/",
+          "supports": "Company identifies St. George, Utah, at 3260 Deseret Dr, 84790. Autonomous firefighting is described as development, not an established flight service or unrestricted test site."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Boeing Layton Defense Manufacturing Assembly",
+      "record_type": "facility",
+      "city": "Layton",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "manufacturing",
+      "location_source_url": "https://jobs.boeing.com/job/layton/manufacturing-assembler/185/101586449664",
+      "location_notes": "Documented production locality only; no street address, coordinates or facility boundary inferred. The October 2026 onsite assembler posting identifies Layton and actual production assembly. It is a distinct locality from Boeing's West Jordan facility.",
+      "website_url": "",
+      "short_description": "Structural, mechanical and electrical production assembly for Boeing Defense Space and Security.",
+      "overview": "Structural, mechanical and electrical production assembly for Boeing Defense Space and Security. The October 2026 onsite assembler posting identifies Layton and actual production assembly. It is a distinct locality from Boeing's West Jordan facility.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Structural, mechanical and electrical production assembly for Boeing Defense Space and Security. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Boeing Layton Defense Manufacturing Assembly - production capability",
+          "url": "https://jobs.boeing.com/job/layton/manufacturing-assembler/185/101586449664",
+          "supports": "Structural, mechanical and electrical production assembly for Boeing Defense Space and Security. Documented production locality: Layton, Utah."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Boeing West Jordan Metals Assembly Manufacturing",
+      "record_type": "facility",
+      "city": "West Jordan",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "manufacturing",
+      "location_source_url": "https://jobs.boeing.com/employment/west-jordan-manufacturing-jobs/185/2635/6252001-5549030-5781004-5784549/4",
+      "location_notes": "Documented production locality only; no street address, coordinates or facility boundary inferred. First-party June 2026 manufacturing and NDT recruiting establishes production work in West Jordan. No street address or facility boundary is inferred.",
+      "website_url": "",
+      "short_description": "Aircraft fabrication and metals-assembly production with onsite manufacturing roles.",
+      "overview": "Aircraft fabrication and metals-assembly production with onsite manufacturing roles. First-party June 2026 manufacturing and NDT recruiting establishes production work in West Jordan. No street address or facility boundary is inferred.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Aircraft fabrication and metals-assembly production with onsite manufacturing roles. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Boeing West Jordan Metals Assembly Manufacturing - production capability",
+          "url": "https://jobs.boeing.com/employment/west-jordan-manufacturing-jobs/185/2635/6252001-5549030-5781004-5784549/4",
+          "supports": "Aircraft fabrication and metals-assembly production with onsite manufacturing roles. Documented production locality: West Jordan, Utah."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "ControlByWeb Nibley Industrial Controller Manufacturing",
+      "record_type": "facility",
+      "city": "Nibley",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "manufacturing",
+      "location_source_url": "https://controlbyweb.com/about",
+      "location_notes": "Documented production locality only; no street address, coordinates or facility boundary inferred. Supporting industrial-automation controls supplier; no autonomous vehicle or aircraft product is claimed.",
+      "website_url": "https://controlbyweb.com/",
+      "short_description": "In-house production of industrial I/O controllers, edge PLCs and automation hardware.",
+      "overview": "In-house production of industrial I/O controllers, edge PLCs and automation hardware. Supporting industrial-automation controls supplier; no autonomous vehicle or aircraft product is claimed.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: In-house production of industrial I/O controllers, edge PLCs and automation hardware. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Command, control, and communications"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "ControlByWeb Nibley Industrial Controller Manufacturing - production capability",
+          "url": "https://controlbyweb.com/",
+          "supports": "In-house production of industrial I/O controllers, edge PLCs and automation hardware."
+        },
+        {
+          "title": "ControlByWeb Nibley Industrial Controller Manufacturing - location and site evidence",
+          "url": "https://controlbyweb.com/about",
+          "supports": "Company identifies Nibley, Utah. Supporting industrial-automation controls supplier; no autonomous vehicle or aircraft product is claimed."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "ES3 Clearfield F-5 Fabrication Facility",
+      "record_type": "facility",
+      "city": "Clearfield",
+      "address_line": "Freeport West Industrial Park, Building F-5",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.es3inc.com/facilities/f-5-fab/",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. ",
+      "website_url": "https://www.es3inc.com/facilities/f-5-fab/",
+      "short_description": "Robotic composite additive manufacturing, aerospace equipment fabrication and avionics assembly.",
+      "overview": "Robotic composite additive manufacturing, aerospace equipment fabrication and avionics assembly.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Robotic composite additive manufacturing, aerospace equipment fabrication and avionics assembly. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "ES3 Clearfield F-5 Fabrication Facility - production capability",
+          "url": "https://www.es3inc.com/facilities/f-5-fab/",
+          "supports": "Robotic composite additive manufacturing, aerospace equipment fabrication and avionics assembly. Published site address: Freeport West Industrial Park, Building F-5, Clearfield, UT ."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Frontier Swiss Provo Aerospace Component Manufacturing",
+      "record_type": "facility",
+      "city": "Provo",
+      "address_line": "91 East 780 South",
+      "postal_code": "84606",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.frontierswiss.com/contact-us",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. ",
+      "website_url": "https://www.frontierswiss.com/aerospace-defense",
+      "short_description": "Swiss screw-machining and CNC component manufacturing for aerospace and defense.",
+      "overview": "Swiss screw-machining and CNC component manufacturing for aerospace and defense.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Swiss screw-machining and CNC component manufacturing for aerospace and defense. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "https://www.frontierswiss.com/contact-us",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Frontier Swiss Provo Aerospace Component Manufacturing - production capability",
+          "url": "https://www.frontierswiss.com/aerospace-defense",
+          "supports": "Swiss screw-machining and CNC component manufacturing for aerospace and defense."
+        },
+        {
+          "title": "Frontier Swiss Provo Aerospace Component Manufacturing - location and site evidence",
+          "url": "https://www.frontierswiss.com/contact-us",
+          "supports": "Company identifies Provo, Utah, at 91 East 780 South, 84606. Published locality and physical production presence; no coordinates inferred."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "GMRE Ogden Aerospace Manufacturing Facility",
+      "record_type": "facility",
+      "city": "Ogden",
+      "address_line": "1728 W 2550 S, Suite 100",
+      "postal_code": "84401",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://gmre-inc.com/wp-content/uploads/2026/02/AS9100-Cert.pdf",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. The published 2025-28 site certificate identifies the manufacturing address. A newly announced North Ogden warehouse is not treated as an already operating second factory.",
+      "website_url": "https://gmre-inc.com/capabilities/production-manufacturing/",
+      "short_description": "Aircraft-modernization kits, wire harnesses and electrical/mechanical component assembly.",
+      "overview": "Aircraft-modernization kits, wire harnesses and electrical/mechanical component assembly. The published 2025-28 site certificate identifies the manufacturing address. A newly announced North Ogden warehouse is not treated as an already operating second factory.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Aircraft-modernization kits, wire harnesses and electrical/mechanical component assembly. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "GMRE Ogden Aerospace Manufacturing Facility - production capability",
+          "url": "https://gmre-inc.com/capabilities/production-manufacturing/",
+          "supports": "Aircraft-modernization kits, wire harnesses and electrical/mechanical component assembly."
+        },
+        {
+          "title": "GMRE Ogden Aerospace Manufacturing Facility - location and site evidence",
+          "url": "https://gmre-inc.com/wp-content/uploads/2026/02/AS9100-Cert.pdf",
+          "supports": "Company identifies Ogden, Utah, at 1728 W 2550 S, Suite 100, 84401. The published 2025-28 site certificate identifies the manufacturing address. A newly announced North Ogden warehouse is not treated as an already operating second factory."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Implementing Ideas Orem Electronics Assembly Facility",
+      "record_type": "facility",
+      "city": "Orem",
+      "address_line": "1201 N 800 E",
+      "postal_code": "84097",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://implementingideas.com/contact/",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. ",
+      "website_url": "https://implementingideas.com/faq/",
+      "short_description": "Printed-circuit, wire-harness and electromechanical assembly with documented aerial-drone applications.",
+      "overview": "Printed-circuit, wire-harness and electromechanical assembly with documented aerial-drone applications.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Printed-circuit, wire-harness and electromechanical assembly with documented aerial-drone applications. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "https://implementingideas.com/contact/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Implementing Ideas Orem Electronics Assembly Facility - production capability",
+          "url": "https://implementingideas.com/faq/",
+          "supports": "Printed-circuit, wire-harness and electromechanical assembly with documented aerial-drone applications."
+        },
+        {
+          "title": "Implementing Ideas Orem Electronics Assembly Facility - location and site evidence",
+          "url": "https://implementingideas.com/contact/",
+          "supports": "Company identifies Orem, Utah, at 1201 N 800 E, 84097. Published locality and physical production presence; no coordinates inferred."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "InnoSys Salt Lake City Microelectronics Manufacturing Facility",
+      "record_type": "facility",
+      "city": "Salt Lake City",
+      "address_line": "2900 S. Main Street",
+      "postal_code": "84115",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://innosystech.com/",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. ",
+      "website_url": "https://innosystech.com/",
+      "short_description": "Advanced electronic devices, RF subsystems, packaging and specialized power-supply manufacturing.",
+      "overview": "Advanced electronic devices, RF subsystems, packaging and specialized power-supply manufacturing.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Advanced electronic devices, RF subsystems, packaging and specialized power-supply manufacturing. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "InnoSys Salt Lake City Microelectronics Manufacturing Facility - production capability",
+          "url": "https://innosystech.com/",
+          "supports": "Advanced electronic devices, RF subsystems, packaging and specialized power-supply manufacturing. Published site address: 2900 S. Main Street, Salt Lake City, UT 84115."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "JD Machine Ogden Precision Manufacturing Facility",
+      "record_type": "facility",
+      "city": "Ogden",
+      "address_line": "2744 North Parkland Blvd",
+      "postal_code": "84404",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.jdmachine.com/contact",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. ",
+      "website_url": "https://www.jdmachine.com/",
+      "short_description": "Precision CNC machining, sheet-metal fabrication and assembly for aerospace and space programs.",
+      "overview": "Precision CNC machining, sheet-metal fabrication and assembly for aerospace and space programs.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Precision CNC machining, sheet-metal fabrication and assembly for aerospace and space programs. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "https://www.jdmachine.com/contact",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "JD Machine Ogden Precision Manufacturing Facility - production capability",
+          "url": "https://www.jdmachine.com/",
+          "supports": "Precision CNC machining, sheet-metal fabrication and assembly for aerospace and space programs."
+        },
+        {
+          "title": "JD Machine Ogden Precision Manufacturing Facility - location and site evidence",
+          "url": "https://www.jdmachine.com/contact",
+          "supports": "Company identifies Ogden, Utah, at 2744 North Parkland Blvd, 84404. Published locality and physical production presence; no coordinates inferred."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "JR Automation Ogden 1050 South Production Facility",
+      "record_type": "facility",
+      "city": "Ogden",
+      "address_line": "859 W 1050 S",
+      "postal_code": "84404",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.jrautomation.com/about/locations",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. Setpoint is now part of JR Automation. Current company locations confirm the production campus continues; no separate legacy-company record is created.",
+      "website_url": "https://www.jrautomation.com/about/locations",
+      "short_description": "Custom industrial automation and robotic system construction at the consolidated Ogden production facility.",
+      "overview": "Custom industrial automation and robotic system construction at the consolidated Ogden production facility. Setpoint is now part of JR Automation. Current company locations confirm the production campus continues; no separate legacy-company record is created.",
+      "unmanned_systems_relevance": "Core robotics or autonomy production capability: Custom industrial automation and robotic system construction at the consolidated Ogden production facility.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "JR Automation Ogden 1050 South Production Facility - production capability",
+          "url": "https://www.jrautomation.com/about/locations",
+          "supports": "Custom industrial automation and robotic system construction at the consolidated Ogden production facility. Published site address: 859 W 1050 S, Ogden, UT 84404."
+        },
+        {
+          "title": "Ogden production-facility opening and retained second site",
+          "url": "https://www.jrautomation.com/news/setpoint-llc-a-jr-automation-company-opens-new-facility-to-centralize-operations",
+          "supports": "Opened production facility and distinct continuing second Ogden site, linked with current locations listing."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "JR Automation Ogden 2550 South Production Facility",
+      "record_type": "facility",
+      "city": "Ogden",
+      "address_line": "1483 W 2550 S",
+      "postal_code": "84401",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.jrautomation.com/about/locations",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. Counted separately because the company explicitly identifies a continuing second facility at a different address, not an invented subdivision of one shop.",
+      "website_url": "https://www.jrautomation.com/about/locations",
+      "short_description": "Second documented Ogden industrial automation equipment facility.",
+      "overview": "Second documented Ogden industrial automation equipment facility. Counted separately because the company explicitly identifies a continuing second facility at a different address, not an invented subdivision of one shop.",
+      "unmanned_systems_relevance": "Core robotics or autonomy production capability: Second documented Ogden industrial automation equipment facility.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "JR Automation Ogden 2550 South Production Facility - production capability",
+          "url": "https://www.jrautomation.com/about/locations",
+          "supports": "Second documented Ogden industrial automation equipment facility. Published site address: 1483 W 2550 S, Ogden, UT 84401."
+        },
+        {
+          "title": "Distinct second Ogden facility",
+          "url": "https://www.jrautomation.com/news/setpoint-llc-a-jr-automation-company-opens-new-facility-to-centralize-operations",
+          "supports": "Company explicitly continued this separate facility when consolidating other production buildings; current listing retains both locations."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Kaddas Enterprises Salt Lake City Aviation Plastics Facility",
+      "record_type": "facility",
+      "city": "Salt Lake City",
+      "address_line": "255 N. Apollo Road, Suite 500",
+      "postal_code": "84116",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.kaddas.com/contact",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. ",
+      "website_url": "https://www.kaddas.com/transportation",
+      "short_description": "Thermoformed plastic aerospace components and custom aviation-part fabrication.",
+      "overview": "Thermoformed plastic aerospace components and custom aviation-part fabrication.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Thermoformed plastic aerospace components and custom aviation-part fabrication. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "https://www.kaddas.com/contact",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Kaddas Enterprises Salt Lake City Aviation Plastics Facility - production capability",
+          "url": "https://www.kaddas.com/transportation",
+          "supports": "Thermoformed plastic aerospace components and custom aviation-part fabrication."
+        },
+        {
+          "title": "Kaddas Enterprises Salt Lake City Aviation Plastics Facility - location and site evidence",
+          "url": "https://www.kaddas.com/contact",
+          "supports": "Company identifies Salt Lake City, Utah, at 255 N. Apollo Road, Suite 500, 84116. Published locality and physical production presence; no coordinates inferred."
+        },
+        {
+          "title": "Kaddas production roles and processes",
+          "url": "https://www.kaddas.com/careers",
+          "supports": "Aviation-market thermoforming, CNC work cells and production assembly."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "LeanWerks Ogden Aerospace Machining Facility",
+      "record_type": "facility",
+      "city": "Ogden",
+      "address_line": "2767 Industrial Drive",
+      "postal_code": "84401",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://leanwerks.com/industries/aerospace/",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. ",
+      "website_url": "https://leanwerks.com/industries/aerospace/",
+      "short_description": "Aerospace precision CNC machining, component production and dimensional inspection.",
+      "overview": "Aerospace precision CNC machining, component production and dimensional inspection.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Aerospace precision CNC machining, component production and dimensional inspection. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "LeanWerks Ogden Aerospace Machining Facility - production capability",
+          "url": "https://leanwerks.com/industries/aerospace/",
+          "supports": "Aerospace precision CNC machining, component production and dimensional inspection. Published site address: 2767 Industrial Drive, Ogden, UT 84401."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Nammo Salt Lake City Composite Solutions Facility",
+      "record_type": "facility",
+      "city": "Salt Lake City",
+      "address_line": "1020 South 500 West",
+      "postal_code": "84101",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.nammo.com/locations/salt-lake-city/",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. ",
+      "website_url": "https://www.nammo.com/locations/salt-lake-city/",
+      "short_description": "Composite structures and assemblies using filament winding, molding and autoclave processes.",
+      "overview": "Composite structures and assemblies using filament winding, molding and autoclave processes.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Composite structures and assemblies using filament winding, molding and autoclave processes. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Nammo Salt Lake City Composite Solutions Facility - production capability",
+          "url": "https://www.nammo.com/locations/salt-lake-city/",
+          "supports": "Composite structures and assemblies using filament winding, molding and autoclave processes. Published site address: 1020 South 500 West, Salt Lake City, UT 84101."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Northrop Grumman Bacchus Solid Rocket Motor Facility",
+      "record_type": "facility",
+      "city": "Bacchus",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.northropgrumman.com/who-we-are/the-facts/solid-rocket-motors-propulsion",
+      "location_notes": "Documented production locality only; no street address, coordinates or facility boundary inferred. ",
+      "website_url": "https://www.northropgrumman.com/who-we-are/the-facts/solid-rocket-motors-propulsion",
+      "short_description": "Solid rocket motor and propulsion manufacturing campus.",
+      "overview": "Solid rocket motor and propulsion manufacturing campus.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Solid rocket motor and propulsion manufacturing campus. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Propulsion, batteries, fuels, and energy systems"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Northrop Grumman Bacchus Solid Rocket Motor Facility - production capability",
+          "url": "https://www.northropgrumman.com/who-we-are/the-facts/solid-rocket-motors-propulsion",
+          "supports": "Solid rocket motor and propulsion manufacturing campus. Documented production locality: Bacchus, Utah."
+        },
+        {
+          "title": "Current propulsion production infrastructure",
+          "url": "https://www.northropgrumman.com/who-we-are/the-facts/solid-rocket-motors-propulsion/boosting-production?Code=SNS-13467&source=SNS-13467",
+          "supports": "Active Utah motor production and Bacchus manufacturing campus; not split into individual plants."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Northrop Grumman Clearfield Aerospace Structures Plant",
+      "record_type": "facility",
+      "city": "Clearfield",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.northropgrumman.com/life-at-northrop-grumman/thermal-vision",
+      "location_notes": "Documented production locality only; no street address, coordinates or facility boundary inferred. Counted as one documented Clearfield production site, not subdivided into individual processes or autoclaves.",
+      "website_url": "",
+      "short_description": "Composite aerospace structure fabrication and autoclave processing at the Clearfield plant.",
+      "overview": "Composite aerospace structure fabrication and autoclave processing at the Clearfield plant. Counted as one documented Clearfield production site, not subdivided into individual processes or autoclaves.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Composite aerospace structure fabrication and autoclave processing at the Clearfield plant. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Northrop Grumman Clearfield Aerospace Structures Plant - production capability",
+          "url": "https://www.northropgrumman.com/life-at-northrop-grumman/thermal-vision",
+          "supports": "Composite aerospace structure fabrication and autoclave processing at the Clearfield plant. Documented production locality: Clearfield, Utah."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Northrop Grumman Layton East Gate 3 Manufacturing Facility",
+      "record_type": "facility",
+      "city": "Layton",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.northropgrumman.com/what-we-do/events/b-21-east-gate-3-grand-opening",
+      "location_notes": "Documented production locality only; no street address, coordinates or facility boundary inferred. The company reports a September 9, 2026 opening. Later campus-wide capacity and staffing targets are not treated as completed expansion.",
+      "website_url": "",
+      "short_description": "Newly opened aircraft manufacturing facility supporting B-21 production.",
+      "overview": "Newly opened aircraft manufacturing facility supporting B-21 production. The company reports a September 9, 2026 opening. Later campus-wide capacity and staffing targets are not treated as completed expansion.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Newly opened aircraft manufacturing facility supporting B-21 production. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Northrop Grumman Layton East Gate 3 Manufacturing Facility - production capability",
+          "url": "https://www.northropgrumman.com/what-we-do/events/b-21-east-gate-3-grand-opening",
+          "supports": "Newly opened aircraft manufacturing facility supporting B-21 production. Documented production locality: Layton, Utah."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Northrop Grumman Promontory Propulsion Manufacturing Facility",
+      "record_type": "facility",
+      "city": "Promontory",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.northropgrumman.com/what-we-do/missile-defense/target-vehicles/putting-critical-defense-systems-to-the-test",
+      "location_notes": "Documented production locality only; no street address, coordinates or facility boundary inferred. The named Promontory facility is documented by current company propulsion material. Announced additional buildings are not counted separately.",
+      "website_url": "https://www.northropgrumman.com/who-we-are/the-facts/solid-rocket-motors-propulsion",
+      "short_description": "Large solid rocket motor, composite-case and aerospace propulsion production.",
+      "overview": "Large solid rocket motor, composite-case and aerospace propulsion production. The named Promontory facility is documented by current company propulsion material. Announced additional buildings are not counted separately.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Large solid rocket motor, composite-case and aerospace propulsion production. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Propulsion, batteries, fuels, and energy systems"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Northrop Grumman Promontory Propulsion Manufacturing Facility - production capability",
+          "url": "https://www.northropgrumman.com/who-we-are/the-facts/solid-rocket-motors-propulsion",
+          "supports": "Large solid rocket motor, composite-case and aerospace propulsion production."
+        },
+        {
+          "title": "Northrop Grumman Promontory Propulsion Manufacturing Facility - location and site evidence",
+          "url": "https://www.northropgrumman.com/what-we-do/missile-defense/target-vehicles/putting-critical-defense-systems-to-the-test",
+          "supports": "Company identifies Promontory, Utah. The named Promontory facility is documented by current company propulsion material. Announced additional buildings are not counted separately."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Paramount Machine Salt Lake City Production Facility",
+      "record_type": "facility",
+      "city": "Salt Lake City",
+      "address_line": "1120 S. Pioneer Rd",
+      "postal_code": "84104",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://paramount-machine.com/contact/",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. ",
+      "website_url": "https://paramount-machine.com/",
+      "short_description": "Precision CNC components, assemblies and production machining for aerospace and defense.",
+      "overview": "Precision CNC components, assemblies and production machining for aerospace and defense.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Precision CNC components, assemblies and production machining for aerospace and defense. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "https://paramount-machine.com/contact/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Paramount Machine Salt Lake City Production Facility - production capability",
+          "url": "https://paramount-machine.com/",
+          "supports": "Precision CNC components, assemblies and production machining for aerospace and defense."
+        },
+        {
+          "title": "Paramount Machine Salt Lake City Production Facility - location and site evidence",
+          "url": "https://paramount-machine.com/contact/",
+          "supports": "Company identifies Salt Lake City, Utah, at 1120 S. Pioneer Rd, 84104. Published locality and physical production presence; no coordinates inferred."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "PCC Klune Spanish Fork Aerostructures Manufacturing",
+      "record_type": "facility",
+      "city": "Spanish Fork",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "manufacturing",
+      "location_source_url": "https://pcctalentacquisitionportal.tal.net/vx/lang-en-GB/mobile-1/appcentre-1/brand-7/xf-f79a1b6fccf9/candidate/so/pm/1/pl/3/opp/23919-CNC-Machinist-Spanish-Fork-UT/en-GB",
+      "location_notes": "Documented production locality only; no street address, coordinates or facility boundary inferred. Current PCC recruiting identifies the Klune/PCC Spanish Fork factory. No separate asset is created for the two operating names.",
+      "website_url": "https://pcctalentacquisitionportal.tal.net/vx/lang-en-GB/mobile-1/appcentre-1/brand-7/xf-f79a1b6fccf9/candidate/so/pm/1/pl/3/opp/23919-CNC-Machinist-Spanish-Fork-UT/en-GB",
+      "short_description": "Aerospace hard-metal component production and multi-axis CNC machining.",
+      "overview": "Aerospace hard-metal component production and multi-axis CNC machining. Current PCC recruiting identifies the Klune/PCC Spanish Fork factory. No separate asset is created for the two operating names.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Aerospace hard-metal component production and multi-axis CNC machining. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "PCC Klune Spanish Fork Aerostructures Manufacturing - production capability",
+          "url": "https://pcctalentacquisitionportal.tal.net/vx/lang-en-GB/mobile-1/appcentre-1/brand-7/xf-f79a1b6fccf9/candidate/so/pm/1/pl/3/opp/23919-CNC-Machinist-Spanish-Fork-UT/en-GB",
+          "supports": "Aerospace hard-metal component production and multi-axis CNC machining. Documented production locality: Spanish Fork, Utah."
+        },
+        {
+          "title": "PCC Spanish Fork location and manufacturing profile",
+          "url": "https://pcctalentacquisitionportal.tal.net/vx/lang-en-GB/mobile-0/appcentre-1/brand-7/xf-c3f76028b4d2/candidate/so/pm/1/pl/3/opp/23686-Human-Resources-Manager/en-GB",
+          "supports": "First-party Spanish Fork factory profile and hard-metal aerospace production."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "PCC Structurals Ogden Casting and Machining Facility",
+      "record_type": "facility",
+      "city": "Ogden",
+      "address_line": "2738 Commerce Way",
+      "postal_code": "84401",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.pccstructurals.com/locations/",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. ",
+      "website_url": "https://www.pccstructurals.com/locations/pcc-ogden.html",
+      "short_description": "Aerospace investment casting, CNC machining and assembly production.",
+      "overview": "Aerospace investment casting, CNC machining and assembly production.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Aerospace investment casting, CNC machining and assembly production. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "PCC Structurals Ogden Casting and Machining Facility - production capability",
+          "url": "https://www.pccstructurals.com/locations/pcc-ogden.html",
+          "supports": "Aerospace investment casting, CNC machining and assembly production."
+        },
+        {
+          "title": "PCC Structurals Ogden Casting and Machining Facility - location and site evidence",
+          "url": "https://www.pccstructurals.com/locations/",
+          "supports": "Company identifies Ogden, Utah, at 2738 Commerce Way, 84401. Published locality and physical production presence; no coordinates inferred."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Precision Hermetic Technology Ogden Factory",
+      "record_type": "facility",
+      "city": "Ogden",
+      "address_line": "801 S. Depot Drive",
+      "postal_code": "84404",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://precisionhermetic.com/contact",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. The company identifies an existing Utah factory; a new machining shop is advertised as opening and is not treated as a separate operating plant.",
+      "website_url": "https://precisionhermetic.com/industry",
+      "short_description": "Hermetic interconnect and glass-to-metal-seal component manufacturing for aerospace and unmanned systems.",
+      "overview": "Hermetic interconnect and glass-to-metal-seal component manufacturing for aerospace and unmanned systems. The company identifies an existing Utah factory; a new machining shop is advertised as opening and is not treated as a separate operating plant.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Hermetic interconnect and glass-to-metal-seal component manufacturing for aerospace and unmanned systems. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "https://precisionhermetic.com/contact",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Undersea systems"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Precision Hermetic Technology Ogden Factory - production capability",
+          "url": "https://precisionhermetic.com/industry",
+          "supports": "Hermetic interconnect and glass-to-metal-seal component manufacturing for aerospace and unmanned systems."
+        },
+        {
+          "title": "Precision Hermetic Technology Ogden Factory - location and site evidence",
+          "url": "https://precisionhermetic.com/contact",
+          "supports": "Company identifies Ogden, Utah, at 801 S. Depot Drive, 84404. The company identifies an existing Utah factory; a new machining shop is advertised as opening and is not treated as a separate operating plant."
+        },
+        {
+          "title": "Ogden production recruiting",
+          "url": "https://precisionhermetic.com/careers",
+          "supports": "Current Ogden manufacturing activity; additional machining-shop opening is distinguished from existing factory operations."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Prime Machine Salt Lake City Aerospace Fabrication Facility",
+      "record_type": "facility",
+      "city": "Salt Lake City",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "manufacturing",
+      "location_source_url": "https://primemachine.com/wp-content/uploads/2024/02/Prime-Machine-AS9100-Cert-2027.pdf",
+      "location_notes": "Documented production locality only; no street address, coordinates or facility boundary inferred. The company-published certificate lists Salt Lake City facilities at 575 W. 800 South and 619 West 800 South with design and production scopes. They are retained as one production record; no building-by-building activity allocation is inferred.",
+      "website_url": "https://primemachine.com/",
+      "short_description": "Aerospace fabrication, machining, inspection and assembly at the documented production site.",
+      "overview": "Aerospace fabrication, machining, inspection and assembly at the documented production site. The company-published certificate lists Salt Lake City facilities at 575 W. 800 South and 619 West 800 South with design and production scopes. They are retained as one production record; no building-by-building activity allocation is inferred.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Aerospace fabrication, machining, inspection and assembly at the documented production site. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Prime Machine Salt Lake City Aerospace Fabrication Facility - production capability",
+          "url": "https://primemachine.com/",
+          "supports": "Aerospace fabrication, machining, inspection and assembly at the documented production site."
+        },
+        {
+          "title": "Prime Machine Salt Lake City Aerospace Fabrication Facility - location and site evidence",
+          "url": "https://primemachine.com/wp-content/uploads/2024/02/Prime-Machine-AS9100-Cert-2027.pdf",
+          "supports": "Company identifies Salt Lake City, Utah. The company-published certificate lists Salt Lake City facilities at 575 W. 800 South and 619 West 800 South with design and production scopes. They are retained as one production record; no building-by-building activity allocation is inferred."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Production Assembly Factory Wise Hildale Facility",
+      "record_type": "facility",
+      "city": "Hildale",
+      "address_line": "1020 W. Uzona Ave",
+      "postal_code": "84784",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.factorywise.com/",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. Supporting factory-automation equipment and control-system manufacturer. Specific unmanned aircraft, mobile robot or autonomous vehicle production is not claimed.",
+      "website_url": "https://www.factorywise.com/",
+      "short_description": "Custom factory-automation equipment, in-house machining, fabrication and control-system assembly.",
+      "overview": "Custom factory-automation equipment, in-house machining, fabrication and control-system assembly. Supporting factory-automation equipment and control-system manufacturer. Specific unmanned aircraft, mobile robot or autonomous vehicle production is not claimed.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Custom factory-automation equipment, in-house machining, fabrication and control-system assembly. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Production Assembly Factory Wise Hildale Facility - production capability",
+          "url": "https://www.factorywise.com/",
+          "supports": "Custom factory-automation equipment, in-house machining, fabrication and control-system assembly. Published site address: 1020 W. Uzona Ave, Hildale, UT 84784."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Quality Machine and Automation Centerville Production Shop",
+      "record_type": "facility",
+      "city": "Centerville",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "manufacturing",
+      "location_source_url": "https://gowithquality.com/contact-us/",
+      "location_notes": "Documented production locality only; no street address, coordinates or facility boundary inferred. The first-party contact page locates the shop in Centerville. No unconfirmed street address is included.",
+      "website_url": "https://gowithquality.com/",
+      "short_description": "Aerospace precision-component production, tooling, fixturing and CNC machining.",
+      "overview": "Aerospace precision-component production, tooling, fixturing and CNC machining. The first-party contact page locates the shop in Centerville. No unconfirmed street address is included.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Aerospace precision-component production, tooling, fixturing and CNC machining. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "https://gowithquality.com/contact-us/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Quality Machine and Automation Centerville Production Shop - production capability",
+          "url": "https://gowithquality.com/",
+          "supports": "Aerospace precision-component production, tooling, fixturing and CNC machining."
+        },
+        {
+          "title": "Quality Machine and Automation Centerville Production Shop - location and site evidence",
+          "url": "https://gowithquality.com/contact-us/",
+          "supports": "Company identifies Centerville, Utah. The first-party contact page locates the shop in Centerville. No unconfirmed street address is included."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "RAM Aviation Space and Defense St. George Factory",
+      "record_type": "facility",
+      "city": "St. George",
+      "address_line": "3172 East Deseret Drive South",
+      "postal_code": "84790",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://ramasd.com/contact/",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. ",
+      "website_url": "https://ramasd.com/about-us/",
+      "short_description": "Aerospace solenoids, valves, actuation and fluid-control component manufacturing.",
+      "overview": "Aerospace solenoids, valves, actuation and fluid-control component manufacturing.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Aerospace solenoids, valves, actuation and fluid-control component manufacturing. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "https://ramasd.com/contact/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "RAM Aviation Space and Defense St. George Factory - production capability",
+          "url": "https://ramasd.com/about-us/",
+          "supports": "Aerospace solenoids, valves, actuation and fluid-control component manufacturing."
+        },
+        {
+          "title": "RAM Aviation Space and Defense St. George Factory - location and site evidence",
+          "url": "https://ramasd.com/contact/",
+          "supports": "Company identifies St. George, Utah, at 3172 East Deseret Drive South, 84790. Published locality and physical production presence; no coordinates inferred."
+        },
+        {
+          "title": "RAM site manufacturing scope",
+          "url": "https://ramasd.com/wp-content/uploads/2025/03/19487-RAM-Aviation-Space-Defense-11FEB2025.pdf",
+          "supports": "Published factory address and electromechanical solenoid and valve manufacturing scope."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Richard Manufacturing Ogden Aerospace Interconnect Facility",
+      "record_type": "facility",
+      "city": "Ogden",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.richardmfg.com/about/",
+      "location_notes": "Documented production locality only; no street address, coordinates or facility boundary inferred. ",
+      "website_url": "https://www.richardmfg.com/about/",
+      "short_description": "Military and aerospace wire harness, cable, printed-circuit and electromechanical assembly production.",
+      "overview": "Military and aerospace wire harness, cable, printed-circuit and electromechanical assembly production.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Military and aerospace wire harness, cable, printed-circuit and electromechanical assembly production. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Richard Manufacturing Ogden Aerospace Interconnect Facility - production capability",
+          "url": "https://www.richardmfg.com/about/",
+          "supports": "Military and aerospace wire harness, cable, printed-circuit and electromechanical assembly production. Documented production locality: Ogden, Utah."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Rock West Composites West Jordan Manufacturing Facility",
+      "record_type": "facility",
+      "city": "West Jordan",
+      "address_line": "3392 West 8600 South",
+      "postal_code": "84088",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.rockwestcomposites.com/about-us.html",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. ",
+      "website_url": "https://www.rockwestcomposites.com/about-us.html",
+      "short_description": "Composite tubing, filament winding and bladder-molded component production serving aerospace and space.",
+      "overview": "Composite tubing, filament winding and bladder-molded component production serving aerospace and space.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Composite tubing, filament winding and bladder-molded component production serving aerospace and space. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Rock West Composites West Jordan Manufacturing Facility - production capability",
+          "url": "https://www.rockwestcomposites.com/about-us.html",
+          "supports": "Composite tubing, filament winding and bladder-molded component production serving aerospace and space. Published site address: 3392 West 8600 South, West Jordan, UT 84088."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Spartronics North Logan Electronics Manufacturing Facility",
+      "record_type": "facility",
+      "city": "North Logan",
+      "address_line": "750 East 1600 North",
+      "postal_code": "84341",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.spartronics.com/locations/complex-electronics-contract-manufacturing-logan-utah/",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. ",
+      "website_url": "https://www.spartronics.com/locations/complex-electronics-contract-manufacturing-logan-utah/",
+      "short_description": "UAV, aerospace and space electronics, circuit-card assembly, box builds and system integration.",
+      "overview": "UAV, aerospace and space electronics, circuit-card assembly, box builds and system integration.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: UAV, aerospace and space electronics, circuit-card assembly, box builds and system integration. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Spartronics North Logan Electronics Manufacturing Facility - production capability",
+          "url": "https://www.spartronics.com/locations/complex-electronics-contract-manufacturing-logan-utah/",
+          "supports": "UAV, aerospace and space electronics, circuit-card assembly, box builds and system integration. Published site address: 750 East 1600 North, North Logan, UT 84341."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Summit Machining Orem Production Shop",
+      "record_type": "facility",
+      "city": "Orem",
+      "address_line": "1182 N 1565 W St",
+      "postal_code": "84057",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://summitmachining07.com/contact/",
+      "location_notes": "Company-published site address; no coordinates, site boundary or separate launch area inferred. ",
+      "website_url": "https://summitmachining07.com/",
+      "short_description": "CNC component production, prototyping and inspection for aerospace and drone-technology applications.",
+      "overview": "CNC component production, prototyping and inspection for aerospace and drone-technology applications.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: CNC component production, prototyping and inspection for aerospace and drone-technology applications. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "https://summitmachining07.com/contact/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Summit Machining Orem Production Shop - production capability",
+          "url": "https://summitmachining07.com/",
+          "supports": "CNC component production, prototyping and inspection for aerospace and drone-technology applications."
+        },
+        {
+          "title": "Summit Machining Orem Production Shop - location and site evidence",
+          "url": "https://summitmachining07.com/contact/",
+          "supports": "Company identifies Orem, Utah, at 1182 N 1565 W St, 84057. Published locality and physical production presence; no coordinates inferred."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "TRIUMPH Geared Solutions Park City Manufacturing",
+      "record_type": "facility",
+      "city": "Park City",
+      "address_line": "",
+      "postal_code": "84098",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "manufacturing",
+      "location_source_url": "https://careers.triumphgroup.com/go/Operations-and-Production/8083200/",
+      "location_notes": "Documented production locality only; no street address, coordinates or facility boundary inferred. ",
+      "website_url": "https://www.triumphgroup.com/companies/triumph-geared-solutions",
+      "short_description": "Aerospace gear, accessory-drive and integrated gearbox manufacturing.",
+      "overview": "Aerospace gear, accessory-drive and integrated gearbox manufacturing.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Aerospace gear, accessory-drive and integrated gearbox manufacturing. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "TRIUMPH Geared Solutions Park City Manufacturing - production capability",
+          "url": "https://www.triumphgroup.com/companies/triumph-geared-solutions",
+          "supports": "Aerospace gear, accessory-drive and integrated gearbox manufacturing."
+        },
+        {
+          "title": "TRIUMPH Geared Solutions Park City Manufacturing - location and site evidence",
+          "url": "https://careers.triumphgroup.com/go/Operations-and-Production/8083200/",
+          "supports": "Company identifies Park City, Utah, 84098. Published locality and physical production presence; no coordinates inferred."
+        },
+        {
+          "title": "Park City engine-mounted gearbox manufacturing",
+          "url": "https://www.triumphgroup.com/products/gear-solutions/emads",
+          "supports": "Site-specific aerospace gearbox manufacturing capability and Park City location."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    },
+    {
+      "state": "UT",
+      "name": "Williams International Ogden Turbine Manufacturing",
+      "record_type": "facility",
+      "city": "Ogden",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.williams-int.com/cnc-ogden-utah/",
+      "location_notes": "Documented production locality only; no street address, coordinates or facility boundary inferred. Current 2026 Ogden CNC manufacturing recruiting supports local production; the Pontiac corporate address is not substituted for the Utah site.",
+      "website_url": "https://www.williams-int.com/careers/",
+      "short_description": "Gas-turbine engine manufacturing and CNC machining operations.",
+      "overview": "Gas-turbine engine manufacturing and CNC machining operations. Current 2026 Ogden CNC manufacturing recruiting supports local production; the Pontiac corporate address is not substituted for the Utah site.",
+      "unmanned_systems_relevance": "Supporting aerospace or industrial-automation production ecosystem: Gas-turbine engine manufacturing and CNC machining operations. No aircraft-specific unmanned production contract is inferred unless explicitly stated in the cited material.",
+      "contact_url": "",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Manufacturing facilities",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Propulsion, batteries, fuels, and energy systems"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Williams International Ogden Turbine Manufacturing - production capability",
+          "url": "https://www.williams-int.com/careers/",
+          "supports": "Gas-turbine engine manufacturing and CNC machining operations."
+        },
+        {
+          "title": "Williams International Ogden Turbine Manufacturing - location and site evidence",
+          "url": "https://www.williams-int.com/cnc-ogden-utah/",
+          "supports": "Company identifies Ogden, Utah. Current 2026 Ogden CNC manufacturing recruiting supports local production; the Pontiac corporate address is not substituted for the Utah site."
+        }
+      ],
+      "research_notes": "Public-source research for internal staff preview. Site capability and presence reflect the cited company material. No independent certification, current production volume, operational permission or public test access is asserted."
+    }
+  ],
+  "held_candidates": [
+    {
+      "state": "UT",
+      "name": "RTC Aerospace Ogden legacy facility",
+      "reason": "An older first-party Ogden production page remains available, but the current company manufacturing network omits Ogden. Continuing operation was not reconciled; not counted."
+    },
+    {
+      "state": "UT",
+      "name": "Parker Aerospace Ogden new-production scope",
+      "reason": "An older company recruiting page calls the site a manufacturing facility; current facility material emphasizes repair and overhaul. Continuing new-production scope was not established strongly enough for this manufacturing-only batch."
+    },
+    {
+      "state": "UT",
+      "name": "Newonics Utah factory",
+      "reason": "Current electronics production is documented, but a specific current aerospace, autonomy, robotics or industrial-automation product connection was not established in this bounded pass."
+    },
+    {
+      "state": "UT",
+      "name": "Katana Electronics Utah factory",
+      "reason": "Current circuit and harness assembly is documented, but the specific target-sector production connection and differing first-party addresses were not reconciled. Not inferred from a directory classification alone."
+    },
+    {
+      "state": "UT",
+      "name": "Complete Automation Design separate production facility",
+      "reason": "Robotic cells and a Park City business address are documented and already appear in the other expansion file. A separate physical production shop at a distinct documented site was not established."
+    },
+    {
+      "state": "UT",
+      "name": "Adapta Controls separate production facility",
+      "reason": "The Midvale address and robotics/machine-build scope duplicate the current az_co_ut_expansion file. No separate production site was documented, so no second asset is added."
+    },
+    {
+      "state": "UT",
+      "name": "Northrop Grumman Roy announced expansion",
+      "reason": "The July 2026 first-party announcement describes groundbreaking. This is not counted as a completed additional production facility."
+    },
+    {
+      "state": "UT",
+      "name": "Karman West Valley announced facility",
+      "reason": "The identified material describes a future facility project. Current first-party evidence of an opened production site was not established."
+    },
+    {
+      "state": "UT",
+      "name": "Lunar Resources HELIX-1 Utah facility",
+      "reason": "The identified announcement describes a planned Camp Williams manufacturing facility. No current operating Utah production site is counted."
+    },
+    {
+      "state": "UT",
+      "name": "Chromalox Utah aerospace-production scope",
+      "reason": "Company history establishes aerospace experience, but current Utah site-specific aerospace or autonomy production was not sufficiently established."
+    },
+    {
+      "state": "UT",
+      "name": "Hycomp Hyde Park",
+      "reason": "Current compressor manufacturing is documented, but a sufficiently specific aerospace, robotics or industrial-automation production connection was not established for this bounded batch."
+    },
+    {
+      "state": "UT",
+      "name": "Monnit Utah manufacturing site",
+      "reason": "Industrial monitoring products are documented, but the strongest Utah manufacturing statement found was dated 2017. Current factory-specific production and location evidence remained incomplete."
+    }
+  ]
+}

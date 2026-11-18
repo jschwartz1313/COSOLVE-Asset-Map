@@ -1,5 +1,7 @@
 import re
+from collections import defaultdict
 from difflib import SequenceMatcher
+from functools import lru_cache
 from itertools import combinations
 from math import asin, cos, radians, sin, sqrt
 from urllib.parse import urlsplit
@@ -9,10 +11,12 @@ from django.db import transaction
 from .models import Asset, DuplicateCandidate
 
 
+@lru_cache(maxsize=16384)
 def _normalized_text(value):
     return re.sub(r"[^a-z0-9]+", " ", value.lower()).strip()
 
 
+@lru_cache(maxsize=16384)
 def _normalized_url(value):
     if not value:
         return ""
@@ -41,13 +45,25 @@ def _candidate_details(first, second):
         return None
     first_name = _normalized_text(first.name)
     second_name = _normalized_text(second.name)
-    name_similarity = SequenceMatcher(None, first_name, second_name).ratio()
     same_city = bool(first.city and _normalized_text(first.city) == _normalized_text(second.city))
+    distance = None
+    if first_name != second_name and not same_city:
+        if None in (first.latitude, first.longitude, second.latitude, second.longitude):
+            return None
+        if abs(first.latitude - second.latitude) > 0.001:
+            return None
+        distance = _distance_miles(first, second)
+        if distance is None or distance > 0.05:
+            return None
+    name_similarity = SequenceMatcher(None, first_name, second_name).ratio()
+    if name_similarity < 0.75:
+        return None
     first_address = _normalized_text(first.address_line)
     second_address = _normalized_text(second.address_line)
     first_url = _normalized_url(first.website_url)
     second_url = _normalized_url(second.website_url)
-    distance = _distance_miles(first, second)
+    if distance is None and name_similarity >= 0.9:
+        distance = _distance_miles(first, second)
 
     reasons = []
     scores = []
@@ -93,10 +109,14 @@ def discover_duplicate_candidates(queryset=None):
         .order_by("name")
     )
     candidates = []
-    for first, second in combinations(assets, 2):
-        details = _candidate_details(first, second)
-        if details:
-            candidates.append({"left_asset": first, "right_asset": second, **details})
+    by_state = defaultdict(list)
+    for asset in assets:
+        by_state[asset.state].append(asset)
+    for state_assets in by_state.values():
+        for first, second in combinations(state_assets, 2):
+            details = _candidate_details(first, second)
+            if details:
+                candidates.append({"left_asset": first, "right_asset": second, **details})
     return candidates
 
 

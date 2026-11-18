@@ -1,0 +1,2905 @@
+{
+  "research_date": "2026-11-18",
+  "states": [
+    "CO"
+  ],
+  "records": [
+    {
+      "state": "CO",
+      "name": "Aerial Professional Services - construction and roof documentation",
+      "record_type": "organization",
+      "city": "Colorado Springs",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://aerialprofessionalservices.com/",
+      "website_url": "https://aerialprofessionalservices.com/",
+      "short_description": "Colorado Springs drone operator offering construction progress orthomosaics and visual roof-condition documentation.",
+      "overview": "Colorado Springs drone operator offering construction progress orthomosaics and visual roof-condition documentation.",
+      "unmanned_systems_relevance": "Commercial UAS data collection and geospatial processing; no independent certification of mapping accuracy or survey licensure is implied.",
+      "contact_url": "https://aerialprofessionalservices.com/",
+      "contact_email": "info@aerialprofessionalservices.com",
+      "contact_phone": "719-308-0513",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "Aerial Professional Services - construction and roof documentation - capability evidence",
+          "url": "https://aerialprofessionalservices.com/",
+          "supports": "Documents the specific capability summarized in this record. Live company homepage explicitly identifies a Colorado Springs base and construction mapping and roof-documentation services."
+        }
+      ],
+      "research_notes": "Live company homepage explicitly identifies a Colorado Springs base and construction mapping and roof-documentation services. Provider explicitly distinguishes roof imagery/documentation from licensed structural or home inspection. Real-estate marketing is not the basis for inclusion. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "AeroVizion LLC - construction and inspection services",
+      "record_type": "organization",
+      "city": "Denver",
+      "address_line": "3325 E 31st Ave",
+      "postal_code": "80205",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_source_url": "https://www.aerovizionllc.com/construction",
+      "website_url": "https://www.aerovizionllc.com/",
+      "short_description": "Denver drone service provider documenting construction progress, site surveys and as-built models.",
+      "overview": "Denver drone service provider documenting construction progress, site surveys and as-built models.",
+      "unmanned_systems_relevance": "Commercial UAS data collection and geospatial processing; no independent certification of mapping accuracy or survey licensure is implied.",
+      "contact_url": "https://www.aerovizionllc.com/",
+      "contact_email": "aerovizioncontact@gmail.com",
+      "contact_phone": "732-908-0252",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "AeroVizion LLC - construction and inspection services - capability evidence",
+          "url": "https://www.aerovizionllc.com/construction",
+          "supports": "Documents the specific capability summarized in this record. First-party construction service page describes drone mapping workflows and publishes the Denver contact address."
+        }
+      ],
+      "research_notes": "First-party construction service page describes drone mapping workflows and publishes the Denver contact address.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published business or laboratory address; not a launch/test-site designation. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "AgriFlyt - Grand Junction aerial application and mapping",
+      "record_type": "organization",
+      "city": "Grand Junction",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://agriflyt.com/",
+      "website_url": "https://agriflyt.com/",
+      "short_description": "Grand Junction and Richfield-based drone operator offering aerial application and multispectral land mapping.",
+      "overview": "Grand Junction and Richfield-based drone operator offering aerial application and multispectral land mapping.",
+      "unmanned_systems_relevance": "Explicit drone-based agricultural or land-management application and/or mapping services; licensing and permitted application scope require separate confirmation.",
+      "contact_url": "https://agriflyt.com/",
+      "contact_email": "paul@agriflyt.com",
+      "contact_phone": "801-633-4323",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Agriculture and natural resources"
+      ],
+      "sources": [
+        {
+          "title": "AgriFlyt - Grand Junction aerial application and mapping - capability evidence",
+          "url": "https://agriflyt.com/",
+          "supports": "Documents the specific capability summarized in this record. Company homepage names Grand Junction as a base and describes its Agras application and Mavic multispectral equipment."
+        }
+      ],
+      "research_notes": "Company homepage names Grand Junction as a base and describes its Agras application and Mavic multispectral equipment. Provider states Colorado licensing is in progress for 2026. Inclusion establishes a stated Colorado base and advertised technical capability, not completed Colorado applicator licensing or permission to spray. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Agro Drone Services LLC",
+      "record_type": "organization",
+      "city": "Windsor",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://www.agrodroneservices.com/",
+      "website_url": "https://www.agrodroneservices.com/",
+      "short_description": "Windsor operator advertising UAV and ground spraying, seeding and custom land services.",
+      "overview": "Windsor operator advertising UAV and ground spraying, seeding and custom land services.",
+      "unmanned_systems_relevance": "Explicit drone-based agricultural or land-management application and/or mapping services; licensing and permitted application scope require separate confirmation.",
+      "contact_url": "https://www.agrodroneservices.com/",
+      "contact_email": "said@agrodroneservices.com",
+      "contact_phone": "970-302-6793",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Agriculture and natural resources"
+      ],
+      "sources": [
+        {
+          "title": "Agro Drone Services LLC - capability evidence",
+          "url": "https://www.agrodroneservices.com/",
+          "supports": "Documents the specific capability summarized in this record. Company homepage explicitly lists Windsor, Colorado and UAV spraying and seeding services."
+        }
+      ],
+      "research_notes": "Company homepage explicitly lists Windsor, Colorado and UAV spraying and seeding services.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Allied Technology - Broomfield robotic automation systems",
+      "record_type": "facility",
+      "city": "Broomfield",
+      "address_line": "2150 W 6th Ave L",
+      "postal_code": "80020",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_source_url": "https://allied-technology.com/about/",
+      "website_url": "https://allied-technology.com/about/",
+      "short_description": "Broomfield manufacturer and integrator designing and building robotic packaging, assembly and machine-tending systems in-house.",
+      "overview": "Broomfield manufacturer and integrator designing and building robotic packaging, assembly and machine-tending systems in-house.",
+      "unmanned_systems_relevance": "Supporting industrial robotic automation, integration and manufacturing capability. Stationary industrial robots and cobots are not represented as autonomous mobile vehicles.",
+      "contact_url": "https://allied-technology.com/about/",
+      "contact_email": "sales@allied-technology.com",
+      "contact_phone": "303-931-0277",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Allied Technology - Broomfield robotic automation systems - capability evidence",
+          "url": "https://allied-technology.com/about/",
+          "supports": "Documents the specific capability summarized in this record. Company about page describes in-house engineering, robot programming, machining and automation equipment made in Colorado and publishes its Broomfield address."
+        }
+      ],
+      "research_notes": "Company about page describes in-house engineering, robot programming, machining and automation equipment made in Colorado and publishes its Broomfield address. Supporting industrial robotics/manufacturing capability, not a mobile unmanned vehicle manufacturer. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "manufacturing",
+      "location_notes": "Published business or laboratory address; not a launch/test-site designation. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Apex Aerial Engineering LLC",
+      "record_type": "organization",
+      "city": "Aurora",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://apex-aerial.com/",
+      "website_url": "https://apex-aerial.com/",
+      "short_description": "Aurora engineering and drone service provider offering construction topographic mapping, site analysis and progress tracking.",
+      "overview": "Aurora engineering and drone service provider offering construction topographic mapping, site analysis and progress tracking.",
+      "unmanned_systems_relevance": "Commercial UAS data collection and geospatial processing; no independent certification of mapping accuracy or survey licensure is implied.",
+      "contact_url": "https://apex-aerial.com/",
+      "contact_email": "TMarsh@Apex-Aerial.com",
+      "contact_phone": "480-735-1154",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "Apex Aerial Engineering LLC - capability evidence",
+          "url": "https://apex-aerial.com/",
+          "supports": "Documents the specific capability summarized in this record. Company homepage publishes Aurora, Colorado as its contact locality and describes its drone-based construction services."
+        }
+      ],
+      "research_notes": "Company homepage publishes Aurora, Colorado as its contact locality and describes its drone-based construction services.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Aurora Police Department - Drone as First Responder program",
+      "record_type": "program",
+      "city": "Aurora",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_source_url": "https://www.auroragov.org/residents/public_safety/police/public_safety_technology/d_f_r",
+      "website_url": "https://www.auroragov.org/residents/public_safety/police/public_safety_technology/d_f_r",
+      "short_description": "Aurora Police program using remotely operated drones to support emergency calls and situational awareness.",
+      "overview": "Aurora Police program using remotely operated drones to support emergency calls and situational awareness.",
+      "unmanned_systems_relevance": "Specific public-safety UAS capability or joint program, not the entire agency. External access, flight permissions and operational readiness are not inferred.",
+      "contact_url": "https://www.auroragov.org/residents/public_safety/police/public_safety_technology/d_f_r",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "Aurora Police Department - Drone as First Responder program - capability evidence",
+          "url": "https://www.auroragov.org/residents/public_safety/police/public_safety_technology/d_f_r",
+          "supports": "Documents the specific capability summarized in this record. Current official DFR page describes the program's operating aircraft, certified remote operators and flight logging."
+        }
+      ],
+      "research_notes": "Current official DFR page describes the program's operating aircraft, certified remote operators and flight logging.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "service-area",
+      "location_notes": "Published program service area or Colorado base only; no launch locations or exact facility position inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Baseline Engineering - drone survey and GIS services",
+      "record_type": "organization",
+      "city": "Golden",
+      "address_line": "112 N. Rubey Drive, #210",
+      "postal_code": "80403",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_source_url": "https://baselinecorp.com/contact-us/regional-offices/",
+      "website_url": "https://baselinecorp.com/expertise/gis/",
+      "short_description": "Golden-headquartered engineering firm whose survey and GIS team uses drones for mapping and stockpile data collection.",
+      "overview": "Golden-headquartered engineering firm whose survey and GIS team uses drones for mapping and stockpile data collection.",
+      "unmanned_systems_relevance": "Commercial UAS data collection and geospatial processing; no independent certification of mapping accuracy or survey licensure is implied.",
+      "contact_url": "https://baselinecorp.com/contact-us/regional-offices/",
+      "contact_email": "",
+      "contact_phone": "303-940-9966",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "Baseline Engineering - drone survey and GIS services - capability evidence",
+          "url": "https://baselinecorp.com/expertise/gis/",
+          "supports": "Documents the specific capability summarized in this record. "
+        },
+        {
+          "title": "Baseline Engineering - drone survey and GIS services - Colorado location evidence",
+          "url": "https://baselinecorp.com/contact-us/regional-offices/",
+          "supports": "Confirms Colorado business presence or the named laboratory host and campus; no unlisted local fleet, staff or production activity inferred."
+        }
+      ],
+      "research_notes": "Live GIS service page states the survey team has drone capabilities; current office directory confirms Golden headquarters. Current service page used rather than relying solely on the company's 2020 drone acquisition announcement. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "headquarters",
+      "location_notes": "Published business or laboratory address; not a launch/test-site designation. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "City of Loveland Utilities - drone inspection program",
+      "record_type": "program",
+      "city": "Loveland",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_source_url": "https://www.lovgov.org/Home/Components/News/News/8050/30",
+      "website_url": "https://www.lovgov.org/services/utilities",
+      "short_description": "Loveland municipal utility program using in-house drone operators for visual and thermal electric-pole inspections.",
+      "overview": "Loveland municipal utility program using in-house drone operators for visual and thermal electric-pole inspections.",
+      "unmanned_systems_relevance": "Specific government UAS infrastructure-inspection program or pilot; not a public-access drone site.",
+      "contact_url": "https://www.lovgov.org/services/utilities",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "City of Loveland Utilities - drone inspection program - capability evidence",
+          "url": "https://www.lovgov.org/Home/Components/News/News/8050/30",
+          "supports": "Documents the specific capability summarized in this record. Official July 2025 program report documents completed inspections; the utility's 2025 year-in-review published in 2026 confirms in-house certified drone operators."
+        },
+        {
+          "title": "City of Loveland Utilities - drone inspection program - additional first-party evidence",
+          "url": "https://www.lovgov.org/Home/Components/News/News/8248/45424?arch=1&npage=2-7423&seldept=21&widgetId=7423",
+          "supports": "Official July 2025 program report documents completed inspections; the utility's 2025 year-in-review published in 2026 confirms in-house certified drone operators."
+        }
+      ],
+      "research_notes": "Official July 2025 program report documents completed inspections; the utility's 2025 year-in-review published in 2026 confirms in-house certified drone operators.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "service-area",
+      "location_notes": "Published program service area or Colorado base only; no launch locations or exact facility position inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Cleartopia Solutions",
+      "record_type": "organization",
+      "city": "Denver",
+      "address_line": "387 Corona St Suite 585",
+      "postal_code": "80218",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_source_url": "https://cleartopia.io/contact/",
+      "website_url": "https://cleartopia.io/",
+      "short_description": "Denver UAS solutions company supplying drone platforms, aerial acquisition, mapping data and drone-program support.",
+      "overview": "Denver UAS solutions company supplying drone platforms, aerial acquisition, mapping data and drone-program support.",
+      "unmanned_systems_relevance": "Dedicated UAS equipment, integration, data or program-support capability at a published Colorado business location; not an aircraft production or public flight-test site.",
+      "contact_url": "https://cleartopia.io/contact/",
+      "contact_email": "info@cleartopia.io",
+      "contact_phone": "720-917-9381",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Cleartopia Solutions - capability evidence",
+          "url": "https://cleartopia.io/",
+          "supports": "Documents the specific capability summarized in this record. "
+        },
+        {
+          "title": "Cleartopia Solutions - Colorado location evidence",
+          "url": "https://cleartopia.io/contact/",
+          "supports": "Confirms Colorado business presence or the named laboratory host and campus; no unlisted local fleet, staff or production activity inferred."
+        },
+        {
+          "title": "Cleartopia Solutions - additional first-party evidence",
+          "url": "https://cleartopia.io/about/",
+          "supports": "Current company pages identify Denver headquarters and explicitly offer drone hardware, acquisition, lidar data products and program support."
+        }
+      ],
+      "research_notes": "Current company pages identify Denver headquarters and explicitly offer drone hardware, acquisition, lidar data products and program support.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "headquarters",
+      "location_notes": "Published business or laboratory address; not a launch/test-site designation. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Colorado Drone Works LLC",
+      "record_type": "organization",
+      "city": "Silt",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://www.coloradodw.com/services-8",
+      "website_url": "https://www.coloradodw.com/",
+      "short_description": "Silt drone operator offering powerline rope pulling, infrastructure inspection and agricultural aerial application.",
+      "overview": "Silt drone operator offering powerline rope pulling, infrastructure inspection and agricultural aerial application.",
+      "unmanned_systems_relevance": "Explicit drone application and utility-field services; no operating permission is inferred from advertised capability.",
+      "contact_url": "https://www.coloradodw.com/",
+      "contact_email": "Trjole@Coloradodw.com",
+      "contact_phone": "970-987-0711",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Agriculture and natural resources",
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Colorado Drone Works LLC - capability evidence",
+          "url": "https://www.coloradodw.com/services-8",
+          "supports": "Documents the specific capability summarized in this record. First-party rope pulling page names Silt, Colorado; homepage and agriculture pages document the operating drone team and application services."
+        }
+      ],
+      "research_notes": "First-party rope pulling page names Silt, Colorado; homepage and agriculture pages document the operating drone team and application services.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Colorado School of Mines - ARIA Lab",
+      "record_type": "facility",
+      "city": "Golden",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://robotics.mines.edu/research/",
+      "website_url": "https://www.ariarobotics.com/",
+      "short_description": "Autonomy, Robotics, and Intelligent Algorithms lab developing robotic mapping, perception and autonomous navigation.",
+      "overview": "Autonomy, Robotics, and Intelligent Algorithms lab developing robotic mapping, perception and autonomous navigation.",
+      "unmanned_systems_relevance": "Specific research laboratory studying robotic systems and autonomous behavior, distinct from whole-institution or generic degree-program records.",
+      "contact_url": "https://robotics.mines.edu/research/",
+      "contact_email": "kaveh.fathian@mines.edu",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Colorado School of Mines - ARIA Lab - capability evidence",
+          "url": "https://www.ariarobotics.com/",
+          "supports": "Documents the specific capability summarized in this record. "
+        },
+        {
+          "title": "Colorado School of Mines - ARIA Lab - Colorado location evidence",
+          "url": "https://robotics.mines.edu/research/",
+          "supports": "Confirms Colorado business presence or the named laboratory host and campus; no unlisted local fleet, staff or production activity inferred."
+        }
+      ],
+      "research_notes": "Lab page documents hardware, SLAM and ROS autonomy teams; university directory confirms affiliation and Golden campus. Lab publishes Brown Hall W325 but no precise coordinates are inferred. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "research",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Colorado School of Mines - Dynamic Automata Lab",
+      "record_type": "facility",
+      "city": "Golden",
+      "address_line": "1610 Illinois St., Brown Hall 340",
+      "postal_code": "80401",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_source_url": "https://dyalab.mines.edu/",
+      "website_url": "https://dyalab.mines.edu/",
+      "short_description": "Golden robotics lab developing autonomous task execution and adaptive robot programming through planning and geometric reasoning.",
+      "overview": "Golden robotics lab developing autonomous task execution and adaptive robot programming through planning and geometric reasoning.",
+      "unmanned_systems_relevance": "Specific research laboratory studying robotic systems and autonomous behavior, distinct from whole-institution or generic degree-program records.",
+      "contact_url": "https://dyalab.mines.edu/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Colorado School of Mines - Dynamic Automata Lab - capability evidence",
+          "url": "https://dyalab.mines.edu/",
+          "supports": "Documents the specific capability summarized in this record. Lab's current first-party homepage describes autonomous robotics research and publishes its Brown Hall address in Golden."
+        }
+      ],
+      "research_notes": "Lab's current first-party homepage describes autonomous robotics research and publishes its Brown Hall address in Golden.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "research",
+      "location_notes": "Published business or laboratory address; not a launch/test-site designation. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Colorado School of Mines - Intelligent Robotics and Systems Lab",
+      "record_type": "facility",
+      "city": "Golden",
+      "address_line": "1610 Illinois St., Brown Hall W310A",
+      "postal_code": "80401",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_source_url": "https://xzhanglab.mines.edu/facilities/",
+      "website_url": "https://xzhanglab.mines.edu/",
+      "short_description": "Golden robotics lab with mobile and manipulation platforms for adaptable robotic systems research.",
+      "overview": "Golden robotics lab with mobile and manipulation platforms for adaptable robotic systems research.",
+      "unmanned_systems_relevance": "Specific research laboratory studying robotic systems and autonomous behavior, distinct from whole-institution or generic degree-program records.",
+      "contact_url": "https://xzhanglab.mines.edu/",
+      "contact_email": "xlzhang@mines.edu",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Colorado School of Mines - Intelligent Robotics and Systems Lab - capability evidence",
+          "url": "https://xzhanglab.mines.edu/facilities/",
+          "supports": "Documents the specific capability summarized in this record. Lab's facilities page identifies TurtleBot, Rosbot and Magni platforms and publishes the Golden lab contact address."
+        }
+      ],
+      "research_notes": "Lab's facilities page identifies TurtleBot, Rosbot and Magni platforms and publishes the Golden lab contact address. Specific lab, distinct from the university's general Robotics degree program. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "research",
+      "location_notes": "Published business or laboratory address; not a launch/test-site designation. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Colorado School of Mines - M3 Robotics field autonomy research",
+      "record_type": "facility",
+      "city": "Golden",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://robotics.mines.edu/research/",
+      "website_url": "https://m3robotics.mines.edu/research/",
+      "short_description": "M3 Robotics lab researching autonomous air and ground navigation in underground and harsh environments.",
+      "overview": "M3 Robotics lab researching autonomous air and ground navigation in underground and harsh environments.",
+      "unmanned_systems_relevance": "Specific research laboratory developing robotic autonomy, perception or embodied platforms. Research affiliation does not establish public facility access or flight authorization.",
+      "contact_url": "https://robotics.mines.edu/research/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Perception, sensing, and sensor fusion",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Colorado School of Mines - M3 Robotics field autonomy research - capability evidence",
+          "url": "https://m3robotics.mines.edu/research/",
+          "supports": "Documents the specific capability summarized in this record. "
+        },
+        {
+          "title": "Colorado School of Mines - M3 Robotics field autonomy research - Colorado location evidence",
+          "url": "https://robotics.mines.edu/research/",
+          "supports": "Confirms Colorado business presence or the named laboratory host and campus; no unlisted local fleet, staff or production activity inferred."
+        }
+      ],
+      "research_notes": "First-party research page describes autonomous air/ground projects; university directory confirms named lab and Golden campus. Indexed first-party research text and the browser-readable current university directory support inclusion; direct retrieval of the lab page returned 403 in this research environment. No recent underground flight demonstration or access availability inferred. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "research",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Colorado School of Mines - MPALA Lab",
+      "record_type": "facility",
+      "city": "Golden",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://robotics.mines.edu/research/",
+      "website_url": "https://www.georgekontoudis.com/lab/",
+      "short_description": "Motion Planning, Active Learning, and Autonomy lab researching multi-robot planning/control, navigation and aerial grasping.",
+      "overview": "Motion Planning, Active Learning, and Autonomy lab researching multi-robot planning/control, navigation and aerial grasping.",
+      "unmanned_systems_relevance": "Specific research laboratory developing robotic autonomy, perception or embodied platforms. Research affiliation does not establish public facility access or flight authorization.",
+      "contact_url": "https://robotics.mines.edu/research/",
+      "contact_email": "george.kontoudis@mines.edu",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Perception, sensing, and sensor fusion",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Colorado School of Mines - MPALA Lab - capability evidence",
+          "url": "https://www.georgekontoudis.com/lab/",
+          "supports": "Documents the specific capability summarized in this record. "
+        },
+        {
+          "title": "Colorado School of Mines - MPALA Lab - Colorado location evidence",
+          "url": "https://robotics.mines.edu/research/",
+          "supports": "Confirms Colorado business presence or the named laboratory host and campus; no unlisted local fleet, staff or production activity inferred."
+        }
+      ],
+      "research_notes": "PI's lab page lists current Mines team and autonomy projects; university directory confirms affiliation and Golden campus. Specific laboratory, not general engineering enrollment. Contact coordination required for visits as stated by the lab. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "research",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Colorado School of Mines - Navigation, Aerial-robots, and Perception Planning Lab",
+      "record_type": "facility",
+      "city": "Golden",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://robotics.mines.edu/research/",
+      "website_url": "https://www.napplab.org/",
+      "short_description": "Named Mines lab researching aerial robotics, multi-robot perception planning and mobile-robot inspection/reconstruction.",
+      "overview": "Named Mines lab researching aerial robotics, multi-robot perception planning and mobile-robot inspection/reconstruction.",
+      "unmanned_systems_relevance": "Specific research laboratory developing robotic autonomy, perception or embodied platforms. Research affiliation does not establish public facility access or flight authorization.",
+      "contact_url": "https://robotics.mines.edu/research/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Perception, sensing, and sensor fusion",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Colorado School of Mines - Navigation, Aerial-robots, and Perception Planning Lab - capability evidence",
+          "url": "https://www.napplab.org/",
+          "supports": "Documents the specific capability summarized in this record. "
+        },
+        {
+          "title": "Colorado School of Mines - Navigation, Aerial-robots, and Perception Planning Lab - Colorado location evidence",
+          "url": "https://robotics.mines.edu/research/",
+          "supports": "Confirms Colorado business presence or the named laboratory host and campus; no unlisted local fleet, staff or production activity inferred."
+        }
+      ],
+      "research_notes": "Lab site documents aerial and mobile-robot research; university directory confirms affiliation and Golden campus. Separate named research unit from Mines degree program; no flight-test access inferred. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "research",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Colorado School of Mines - Robotic Space Exploration Lab",
+      "record_type": "facility",
+      "city": "Golden",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://robotics.mines.edu/research/",
+      "website_url": "https://franceszhu.space/",
+      "short_description": "Named research lab developing autonomous robotic exploration methods for rovers and other extreme-environment platforms.",
+      "overview": "Named research lab developing autonomous robotic exploration methods for rovers and other extreme-environment platforms.",
+      "unmanned_systems_relevance": "Specific research laboratory studying robotic systems and autonomous behavior, distinct from whole-institution or generic degree-program records.",
+      "contact_url": "https://robotics.mines.edu/research/",
+      "contact_email": "frankie.zhu@mines.edu",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Colorado School of Mines - Robotic Space Exploration Lab - capability evidence",
+          "url": "https://franceszhu.space/",
+          "supports": "Documents the specific capability summarized in this record. "
+        },
+        {
+          "title": "Colorado School of Mines - Robotic Space Exploration Lab - Colorado location evidence",
+          "url": "https://robotics.mines.edu/research/",
+          "supports": "Confirms Colorado business presence or the named laboratory host and campus; no unlisted local fleet, staff or production activity inferred."
+        }
+      ],
+      "research_notes": "PI website confirms current Mines appointment and space robotics work; university directory identifies RoSE lab and Golden campus. Research in robotic exploration, not a whole-institution or generic space-industry listing. Does not duplicate Mines' existing Planetary Robotics Laboratory facility record. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "research",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Colorado State University - Adaptive Robotics Laboratory",
+      "record_type": "facility",
+      "city": "Fort Collins",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://www.engr.colostate.edu/laboratories/adaptive-robotics-laboratory/",
+      "website_url": "https://www.engr.colostate.edu/laboratories/adaptive-robotics-laboratory/",
+      "short_description": "Powerhouse Energy Campus lab developing reconfigurable, flying and soft robots for changing environments.",
+      "overview": "Powerhouse Energy Campus lab developing reconfigurable, flying and soft robots for changing environments.",
+      "unmanned_systems_relevance": "Specific research laboratory developing robotic autonomy, perception or embodied platforms. Research affiliation does not establish public facility access or flight authorization.",
+      "contact_url": "https://www.engr.colostate.edu/laboratories/adaptive-robotics-laboratory/",
+      "contact_email": "Jianguo.Zhao@colostate.edu",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Research and technical depth",
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Perception, sensing, and sensor fusion",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Colorado State University - Adaptive Robotics Laboratory - capability evidence",
+          "url": "https://www.engr.colostate.edu/laboratories/adaptive-robotics-laboratory/",
+          "supports": "Documents the specific capability summarized in this record. Current lab homepage identifies the named laboratory at the Powerhouse Energy Campus in Fort Collins and its flying/reconfigurable robot research."
+        },
+        {
+          "title": "Colorado State University - Adaptive Robotics Laboratory - additional first-party evidence",
+          "url": "https://www.engr.colostate.edu/me/faculty/dr-jianguo-zhao/",
+          "supports": "Current lab homepage identifies the named laboratory at the Powerhouse Energy Campus in Fort Collins and its flying/reconfigurable robot research."
+        }
+      ],
+      "research_notes": "Current lab homepage identifies the named laboratory at the Powerhouse Energy Campus in Fort Collins and its flying/reconfigurable robot research. Specific research laboratory rather than a whole-university record. Faculty page independently confirms the active laboratory director. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "research",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "CORE Electric Cooperative - aerial drone inspection program",
+      "record_type": "program",
+      "city": "Sedalia",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_source_url": "https://core.coop/contact/",
+      "website_url": "https://core.coop/why-you-may-see-drone-activity-in-your-area-2/",
+      "short_description": "Sedalia-based cooperative program commissioning drone inspections of overhead electric equipment for reliability and wildfire mitigation.",
+      "overview": "Sedalia-based cooperative program commissioning drone inspections of overhead electric equipment for reliability and wildfire mitigation.",
+      "unmanned_systems_relevance": "Operational infrastructure customer commissioning drone inspections. Contractor participation is documented; do not infer an owned fleet, in-house pilots or services offered to outside customers.",
+      "contact_url": "https://core.coop/contact/",
+      "contact_email": "",
+      "contact_phone": "303-688-3100",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Physical infrastructure and logistics",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Data engineering, analytics, and edge computing",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "CORE Electric Cooperative - aerial drone inspection program - capability evidence",
+          "url": "https://core.coop/why-you-may-see-drone-activity-in-your-area-2/",
+          "supports": "Documents the specific capability summarized in this record. "
+        },
+        {
+          "title": "CORE Electric Cooperative - aerial drone inspection program - Colorado location evidence",
+          "url": "https://core.coop/contact/",
+          "supports": "Confirms Colorado business presence or the named laboratory host and campus; no unlisted local fleet, staff or production activity inferred."
+        }
+      ],
+      "research_notes": "Official July 2026 notice says CORE regularly uses drones and identifies credentialed contractors; current contacts confirm Sedalia location. Supporting customer/program; contractor-operated inspections are not represented as an in-house drone service company. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "service-area",
+      "location_notes": "Published program service area or Colorado base only; no launch locations or exact facility position inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Cunicaero",
+      "record_type": "organization",
+      "city": "",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_source_url": "https://www.cunicaero.com/",
+      "website_url": "https://www.cunicaero.com/",
+      "short_description": "Grand County-based drone operator offering utility inspection, construction monitoring and environmental aerial services.",
+      "overview": "Grand County-based drone operator offering utility inspection, construction monitoring and environmental aerial services.",
+      "unmanned_systems_relevance": "Commercial UAS data collection and geospatial processing; no independent certification of mapping accuracy or survey licensure is implied.",
+      "contact_url": "https://www.cunicaero.com/",
+      "contact_email": "info@cunicaero.com",
+      "contact_phone": "719-394-3481",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "Cunicaero - capability evidence",
+          "url": "https://www.cunicaero.com/",
+          "supports": "Documents the specific capability summarized in this record. Company homepage explicitly says based in Grand County, Colorado, describes its drone fleet and lists inspection/construction services."
+        }
+      ],
+      "research_notes": "Company homepage explicitly says based in Grand County, Colorado, describes its drone fleet and lists inspection/construction services. Only Grand County is published as the base; no city, street location or coordinates inferred. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published program service area or Colorado base only; no launch locations or exact facility position inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Cyberhawk - Colorado US headquarters",
+      "record_type": "organization",
+      "city": "Golden",
+      "address_line": "1111 Washington Ave Suite 40",
+      "postal_code": "80401",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_source_url": "https://thecyberhawk.com/contact",
+      "website_url": "https://thecyberhawk.com/",
+      "short_description": "Colorado US headquarters of a drone inspection and aerial asset-data provider serving critical infrastructure operators.",
+      "overview": "Colorado US headquarters of a drone inspection and aerial asset-data provider serving critical infrastructure operators.",
+      "unmanned_systems_relevance": "Explicit commercial drone inspection capability; project permissions and inspection scope must be agreed with the provider.",
+      "contact_url": "https://thecyberhawk.com/",
+      "contact_email": "",
+      "contact_phone": "303-358-2625",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Cyberhawk - Colorado US headquarters - capability evidence",
+          "url": "https://thecyberhawk.com/contact",
+          "supports": "Documents the specific capability summarized in this record. Current contact page lists USA HQ at Golden, Colorado and offers drone inspections, aerial data management and UAS program support."
+        }
+      ],
+      "research_notes": "Current contact page lists USA HQ at Golden, Colorado and offers drone inspections, aerial data management and UAS program support. Page labels this the Denver US headquarters but publishes a Golden mailing locality; Golden is retained. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "headquarters",
+      "location_notes": "Published business or laboratory address; not a launch/test-site designation. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Denver Water - remote UAV infrastructure inspection pilot",
+      "record_type": "program",
+      "city": "",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_source_url": "https://www.denverwater.org/sites/default/files/board-agenda-11-12-2025.pdf",
+      "website_url": "https://www.denverwater.org/",
+      "short_description": "Named Denver Water pilot applying remotely operated UAVs to spillway and diversion-structure inspection near Antero Reservoir.",
+      "overview": "Named Denver Water pilot applying remotely operated UAVs to spillway and diversion-structure inspection near Antero Reservoir.",
+      "unmanned_systems_relevance": "Specific government UAS infrastructure-inspection program or pilot; not a public-access drone site.",
+      "contact_url": "https://www.denverwater.org/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Denver Water - remote UAV infrastructure inspection pilot - capability evidence",
+          "url": "https://www.denverwater.org/sites/default/files/board-agenda-11-12-2025.pdf",
+          "supports": "Documents the specific capability summarized in this record. Official November 2025 board update documents the Source of Supply UAV pilot; the approved 2026 budget, printed page 56 (PDF page 58), confirms the Antero Reservoir drone-inspection pilot in the 2026 operations work plan."
+        },
+        {
+          "title": "Denver Water - remote UAV infrastructure inspection pilot - additional first-party evidence",
+          "url": "https://www.denverwater.org/sites/default/files/2026-budget.pdf",
+          "supports": "Official November 2025 board update documents the Source of Supply UAV pilot; the approved 2026 budget, printed page 56 (PDF page 58), confirms the Antero Reservoir drone-inspection pilot in the 2026 operations work plan."
+        }
+      ],
+      "research_notes": "Official November 2025 board update documents the Source of Supply UAV pilot; the approved 2026 budget, printed page 56 (PDF page 58), confirms the Antero Reservoir drone-inspection pilot in the 2026 operations work plan. Specific inspection pilot rather than the whole utility or a reservoir flying-area listing. Full official 2026 budget was downloaded and text-checked. Public drone access and completed expansion are not implied. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "service-area",
+      "location_notes": "Published program service area or Colorado base only; no launch locations or exact facility position inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "EcoLogic Design - drone imaging and mapping",
+      "record_type": "organization",
+      "city": "Colorado Springs",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://ecologic-design.com/",
+      "website_url": "https://ecologic-design.com/",
+      "short_description": "Colorado Springs ecological design business offering drone imaging and mapping for property and landscape planning.",
+      "overview": "Colorado Springs ecological design business offering drone imaging and mapping for property and landscape planning.",
+      "unmanned_systems_relevance": "Commercial UAS data collection and geospatial processing; no independent certification of mapping accuracy or survey licensure is implied.",
+      "contact_url": "https://ecologic-design.com/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "EcoLogic Design - drone imaging and mapping - capability evidence",
+          "url": "https://ecologic-design.com/drone-mapping-and-imaging/",
+          "supports": "Documents the specific capability summarized in this record. "
+        },
+        {
+          "title": "EcoLogic Design - drone imaging and mapping - Colorado location evidence",
+          "url": "https://ecologic-design.com/",
+          "supports": "Confirms Colorado business presence or the named laboratory host and campus; no unlisted local fleet, staff or production activity inferred."
+        }
+      ],
+      "research_notes": "Company homepage explicitly identifies a Colorado Springs base and a drone imaging and mapping practice. Included for the explicit mapping practice, not general landscaping. Published accuracy claims are not independently certified here. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "EDM International - utility UAS services",
+      "record_type": "organization",
+      "city": "Fort Collins",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://www.edmlink.com/",
+      "website_url": "https://www.edmlink.com/drones-uas",
+      "short_description": "Fort Collins-headquartered utility engineering firm with UAS pilots providing thermal inspections, lidar, vegetation mapping and line-marker installation.",
+      "overview": "Fort Collins-headquartered utility engineering firm with UAS pilots providing thermal inspections, lidar, vegetation mapping and line-marker installation.",
+      "unmanned_systems_relevance": "Commercial UAS data collection and geospatial processing; no independent certification of mapping accuracy or survey licensure is implied.",
+      "contact_url": "https://www.edmlink.com/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "EDM International - utility UAS services - capability evidence",
+          "url": "https://www.edmlink.com/drones-uas",
+          "supports": "Documents the specific capability summarized in this record. "
+        },
+        {
+          "title": "EDM International - utility UAS services - Colorado location evidence",
+          "url": "https://www.edmlink.com/",
+          "supports": "Confirms Colorado business presence or the named laboratory host and campus; no unlisted local fleet, staff or production activity inferred."
+        }
+      ],
+      "research_notes": "Live corporate page identifies Fort Collins headquarters; current UAS practice page describes pilots, utility inspections and lidar collection.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "headquarters",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "El Paso County Sheriff's Office - IBOC drone first response",
+      "record_type": "program",
+      "city": "Colorado Springs",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_source_url": "https://epcsheriffsoffice.com/first-responder-drone-assistance-leads-to-an-arrest/",
+      "website_url": "https://epcsheriffsoffice.com/",
+      "short_description": "Sheriff's Intelligence Based Operations Center drone first-response capability serving El Paso County.",
+      "overview": "Sheriff's Intelligence Based Operations Center drone first-response capability serving El Paso County.",
+      "unmanned_systems_relevance": "Specific public-safety UAS capability or joint program, not the entire agency. External access, flight permissions and operational readiness are not inferred.",
+      "contact_url": "https://epcsheriffsoffice.com/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "El Paso County Sheriff's Office - IBOC drone first response - capability evidence",
+          "url": "https://epcsheriffsoffice.com/first-responder-drone-assistance-leads-to-an-arrest/",
+          "supports": "Documents the specific capability summarized in this record. Official June 30, 2026 release documents actual IBOC drone deployment during a June 26 incident in unincorporated El Paso County."
+        }
+      ],
+      "research_notes": "Official June 30, 2026 release documents actual IBOC drone deployment during a June 26 incident in unincorporated El Paso County.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "service-area",
+      "location_notes": "Published program service area or Colorado base only; no launch locations or exact facility position inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Firestone Police Department - UAS program",
+      "record_type": "program",
+      "city": "Firestone",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_source_url": "https://www.firestoneco.gov/797/Police-Recruit-Program",
+      "website_url": "https://www.firestoneco.gov/797/Police-Recruit-Program",
+      "short_description": "Firestone Police specialized UAS drone program identified among current officer assignments.",
+      "overview": "Firestone Police specialized UAS drone program identified among current officer assignments.",
+      "unmanned_systems_relevance": "Specific public-safety UAS capability or joint program, not the entire agency. External access, flight permissions and operational readiness are not inferred.",
+      "contact_url": "https://www.firestoneco.gov/797/Police-Recruit-Program",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "Firestone Police Department - UAS program - capability evidence",
+          "url": "https://www.firestoneco.gov/797/Police-Recruit-Program",
+          "supports": "Documents the specific capability summarized in this record. Current official police recruitment page explicitly lists the UAS Drone Program among department assignments."
+        }
+      ],
+      "research_notes": "Current official police recruitment page explicitly lists the UAS Drone Program among department assignments. Program existence is documented; aircraft count, deployment frequency and beyond-visual-line-of-sight authority are not established. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "service-area",
+      "location_notes": "Published program service area or Colorado base only; no launch locations or exact facility position inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Fort Collins - Drone as a City Resource partnership",
+      "record_type": "program",
+      "city": "Fort Collins",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_source_url": "https://www.fortcollins.gov/News-Articles/News/2026-Q1/Drone-as-a-City-Resource-Program-Launches-in-Fort-Collins",
+      "website_url": "https://www.fortcollins.gov/News-Articles/News/2026-Q1/Drone-as-a-City-Resource-Program-Launches-in-Fort-Collins",
+      "short_description": "Shared police, utilities and Poudre Fire Authority drone program launched in February 2026 for emergency response and municipal asset awareness.",
+      "overview": "Shared police, utilities and Poudre Fire Authority drone program launched in February 2026 for emergency response and municipal asset awareness.",
+      "unmanned_systems_relevance": "Specific public-safety UAS capability or joint program, not the entire agency. External access, flight permissions and operational readiness are not inferred.",
+      "contact_url": "https://www.fortcollins.gov/News-Articles/News/2026-Q1/Drone-as-a-City-Resource-Program-Launches-in-Fort-Collins",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "Fort Collins - Drone as a City Resource partnership - capability evidence",
+          "url": "https://www.fortcollins.gov/News-Articles/News/2026-Q1/Drone-as-a-City-Resource-Program-Launches-in-Fort-Collins",
+          "supports": "Documents the specific capability summarized in this record. Official March 2026 city release confirms program launch and shared use by police, utilities and Poudre Fire Authority."
+        }
+      ],
+      "research_notes": "Official March 2026 city release confirms program launch and shared use by police, utilities and Poudre Fire Authority. One joint program record avoids counting its police, fire and utility partners as separate drone programs. No dock or launch locations included. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "service-area",
+      "location_notes": "Published program service area or Colorado base only; no launch locations or exact facility position inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Frontier Precision - Brighton UAS sales and support",
+      "record_type": "organization",
+      "city": "Brighton",
+      "address_line": "108 West Walnut Street",
+      "postal_code": "80601",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_source_url": "https://frontierprecision.com/contact-us/brighton-co/",
+      "website_url": "https://frontierprecision.com/contact-us/brighton-co/",
+      "short_description": "Brighton retail and field-service location with a named UAS sales/support specialist and precision-agriculture staff.",
+      "overview": "Brighton retail and field-service location with a named UAS sales/support specialist and precision-agriculture staff.",
+      "unmanned_systems_relevance": "Dedicated UAS equipment, integration, data or program-support capability at a published Colorado business location; not an aircraft production or public flight-test site.",
+      "contact_url": "https://frontierprecision.com/contact-us/brighton-co/",
+      "contact_email": "",
+      "contact_phone": "720-951-6609",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Surveying and mapping",
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Frontier Precision - Brighton UAS sales and support - capability evidence",
+          "url": "https://frontierprecision.com/solutions/unmanned/",
+          "supports": "Documents the specific capability summarized in this record. "
+        },
+        {
+          "title": "Frontier Precision - Brighton UAS sales and support - Colorado location evidence",
+          "url": "https://frontierprecision.com/contact-us/brighton-co/",
+          "supports": "Confirms Colorado business presence or the named laboratory host and campus; no unlisted local fleet, staff or production activity inferred."
+        }
+      ],
+      "research_notes": "Current first-party Brighton office page lists physical address and UAS Sales and Support Specialist; unmanned solutions page documents drone products and services. One Colorado company entry; Arvada, Denver and historical training-event locations are not separate records. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published business or laboratory address; not a launch/test-site designation. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "FulcrumAir - Wellington robotic linework operations",
+      "record_type": "organization",
+      "city": "Wellington",
+      "address_line": "8924 Pieper Road",
+      "postal_code": "80549",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_source_url": "https://fulcrumair.com/contact/",
+      "website_url": "https://fulcrumair.com/",
+      "short_description": "Wellington US operations base for UAV-deployed robotic tools used on overhead power infrastructure.",
+      "overview": "Wellington US operations base for UAV-deployed robotic tools used on overhead power infrastructure.",
+      "unmanned_systems_relevance": "Provider explicitly combines uncrewed aircraft and robotic tools or robotic inspection systems for infrastructure work.",
+      "contact_url": "https://fulcrumair.com/",
+      "contact_email": "sales@fulcrumair.com",
+      "contact_phone": "970-440-8475",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "FulcrumAir - Wellington robotic linework operations - capability evidence",
+          "url": "https://fulcrumair.com/contact/",
+          "supports": "Documents the specific capability summarized in this record. Current company contact page publishes Wellington address, UAV pilots and robotic line technician roles, and its drone-deployed linework tools."
+        }
+      ],
+      "research_notes": "Current company contact page publishes Wellington address, UAV pilots and robotic line technician roles, and its drone-deployed linework tools.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published business or laboratory address; not a launch/test-site designation. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Fusion Inspections and Consultants LLC - Colorado operations",
+      "record_type": "organization",
+      "city": "Grand Junction",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://fusioninspections.com/",
+      "website_url": "https://fusioninspections.com/",
+      "short_description": "Inspection company listing Grand Junction and Denver operations and offering aerial drone and underwater ROV inspections.",
+      "overview": "Inspection company listing Grand Junction and Denver operations and offering aerial drone and underwater ROV inspections.",
+      "unmanned_systems_relevance": "Explicit aerial drone and underwater remotely operated inspection services.",
+      "contact_url": "https://fusioninspections.com/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Undersea systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Fusion Inspections and Consultants LLC - Colorado operations - capability evidence",
+          "url": "https://fusioninspections.com/",
+          "supports": "Documents the specific capability summarized in this record. Current company homepage lists Colorado locations and explicitly offers ROV underwater drone and aerial drone inspection."
+        }
+      ],
+      "research_notes": "Current company homepage lists Colorado locations and explicitly offers ROV underwater drone and aerial drone inspection. One company record covers its two published Colorado localities; Grand Junction used as the map locality. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "GEOuplift LLC",
+      "record_type": "organization",
+      "city": "Del Norte",
+      "address_line": "",
+      "postal_code": "81132",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://www.geouplift.com/",
+      "website_url": "https://www.geouplift.com/",
+      "short_description": "Del Norte-based operator offering drone lidar, photogrammetry, volumetric analysis and site monitoring.",
+      "overview": "Del Norte-based operator offering drone lidar, photogrammetry, volumetric analysis and site monitoring.",
+      "unmanned_systems_relevance": "Commercial UAS data collection and geospatial processing; no independent certification of mapping accuracy or survey licensure is implied.",
+      "contact_url": "https://www.geouplift.com/",
+      "contact_email": "",
+      "contact_phone": "719-203-2540",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "GEOuplift LLC - capability evidence",
+          "url": "https://www.geouplift.com/",
+          "supports": "Documents the specific capability summarized in this record. Company homepage identifies its Del Norte base, named drone pilot and offered lidar/mapping/inspection workflows."
+        }
+      ],
+      "research_notes": "Company homepage identifies its Del Norte base, named drone pilot and offered lidar/mapping/inspection workflows.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Goff Engineering and Surveying - drone mapping",
+      "record_type": "organization",
+      "city": "Durango",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://www.goffengineering.com/land-surveying/",
+      "website_url": "https://www.goffengineering.com/",
+      "short_description": "Durango surveying firm whose crews use drone aerial technology for topographic mapping.",
+      "overview": "Durango surveying firm whose crews use drone aerial technology for topographic mapping.",
+      "unmanned_systems_relevance": "Commercial UAS data collection and geospatial processing; no independent certification of mapping accuracy or survey licensure is implied.",
+      "contact_url": "https://www.goffengineering.com/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "Goff Engineering and Surveying - drone mapping - capability evidence",
+          "url": "https://www.goffengineering.com/land-surveying/",
+          "supports": "Documents the specific capability summarized in this record. Company land-surveying page explicitly identifies a Durango-based firm, drone-equipped crews and topographic mapping with drone flights."
+        }
+      ],
+      "research_notes": "Company land-surveying page explicitly identifies a Durango-based firm, drone-equipped crews and topographic mapping with drone flights.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Holy Cross Energy - sUAS asset inspection program",
+      "record_type": "program",
+      "city": "Glenwood Springs",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_source_url": "https://www.holycross.com/our-system/service-area",
+      "website_url": "https://www.holycross.com/community/safety/wildfire-mitigation",
+      "short_description": "Western Colorado cooperative program using unmanned aircraft and thermal imagery for inspection of difficult-to-access electric assets.",
+      "overview": "Western Colorado cooperative program using unmanned aircraft and thermal imagery for inspection of difficult-to-access electric assets.",
+      "unmanned_systems_relevance": "Operational infrastructure customer commissioning drone inspections. Contractor participation is documented; do not infer an owned fleet, in-house pilots or services offered to outside customers.",
+      "contact_url": "https://www.holycross.com/our-system/service-area",
+      "contact_email": "",
+      "contact_phone": "970-945-5491",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Physical infrastructure and logistics",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Data engineering, analytics, and edge computing",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Holy Cross Energy - sUAS asset inspection program - capability evidence",
+          "url": "https://www.holycross.com/community/safety/wildfire-mitigation",
+          "supports": "Documents the specific capability summarized in this record. "
+        },
+        {
+          "title": "Holy Cross Energy - sUAS asset inspection program - Colorado location evidence",
+          "url": "https://www.holycross.com/our-system/service-area",
+          "supports": "Confirms Colorado business presence or the named laboratory host and campus; no unlisted local fleet, staff or production activity inferred."
+        }
+      ],
+      "research_notes": "Current wildfire page documents aerial/drone inspections; current service-area page identifies western Colorado counties and Glenwood Springs office. Supporting operational customer/program; official project page indicates contractor participation, not necessarily an owned fleet. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "service-area",
+      "location_notes": "Published program service area or Colorado base only; no launch locations or exact facility position inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Infleqtion - Colorado precision timing for autonomous systems",
+      "record_type": "organization",
+      "city": "Louisville",
+      "address_line": "1315 West Century Drive",
+      "postal_code": "80027",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_source_url": "https://infleqtion.com/about/",
+      "website_url": "https://infleqtion.com/tiqker/",
+      "short_description": "Colorado-headquartered quantum technology supplier with optical timing demonstrated aboard an autonomous underwater vehicle.",
+      "overview": "Colorado-headquartered quantum technology supplier with optical timing demonstrated aboard an autonomous underwater vehicle.",
+      "unmanned_systems_relevance": "Supporting precision timing for autonomous platforms; documented underwater trial supports relevance, not a Colorado deployment or complete replacement for satellite navigation.",
+      "contact_url": "https://infleqtion.com/about/",
+      "contact_email": "",
+      "contact_phone": "303-440-1284",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Undersea systems",
+        "Cross-domain autonomy"
+      ],
+      "capabilities": [
+        "Navigation and positioning",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Infleqtion - Colorado precision timing for autonomous systems - capability evidence",
+          "url": "https://infleqtion.com/case-studies/quantum-clock-underwater-navigation/",
+          "supports": "Documents the specific capability summarized in this record. "
+        },
+        {
+          "title": "Infleqtion - Colorado precision timing for autonomous systems - Colorado location evidence",
+          "url": "https://infleqtion.com/about/",
+          "supports": "Confirms Colorado business presence or the named laboratory host and campus; no unlisted local fleet, staff or production activity inferred."
+        }
+      ],
+      "research_notes": "Current company location page publishes Louisville headquarters; first-party case study documents Tiqker integration on the Excalibur autonomous submarine. Supporting timing/PNT technology. Trial occurred outside Colorado; Colorado headquarters is not described as the test site. Precision timing alone is not a complete GPS replacement. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "headquarters",
+      "location_notes": "Published business or laboratory address; not a launch/test-site designation. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Inspection Specialties Inc - drone inspections",
+      "record_type": "organization",
+      "city": "Denver",
+      "address_line": "12445 E 39th Ave. Suite 303",
+      "postal_code": "80239",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_source_url": "https://www.isidenver.net/services/",
+      "website_url": "https://www.isidenver.net/",
+      "short_description": "Denver inspection firm with an explicitly offered drone inspection service alongside structural nondestructive testing.",
+      "overview": "Denver inspection firm with an explicitly offered drone inspection service alongside structural nondestructive testing.",
+      "unmanned_systems_relevance": "Explicit commercial drone inspection capability; project permissions and inspection scope must be agreed with the provider.",
+      "contact_url": "https://www.isidenver.net/",
+      "contact_email": "",
+      "contact_phone": "303-373-5234",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Inspection Specialties Inc - drone inspections - capability evidence",
+          "url": "https://www.isidenver.net/services/",
+          "supports": "Documents the specific capability summarized in this record. Company service page lists Drone Inspections and a Denver CO 80239 contact location."
+        }
+      ],
+      "research_notes": "Company service page lists Drone Inspections and a Denver CO 80239 contact location.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published business or laboratory address; not a launch/test-site designation. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Jefferson County Transportation and Engineering - UAS surveying",
+      "record_type": "program",
+      "city": "Golden",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_source_url": "https://www.jeffco.us/2860/Surveying-Information-and-Drones",
+      "website_url": "https://www.jeffco.us/2860/Surveying-Information-and-Drones",
+      "short_description": "County engineering drone program supporting project design and inspection with high-resolution aerial imagery.",
+      "overview": "County engineering drone program supporting project design and inspection with high-resolution aerial imagery.",
+      "unmanned_systems_relevance": "Specific government drone mapping function; not a public flying area or an offer of commercial survey services.",
+      "contact_url": "https://www.jeffco.us/2860/Surveying-Information-and-Drones",
+      "contact_email": "",
+      "contact_phone": "303-271-8495",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "Jefferson County Transportation and Engineering - UAS surveying - capability evidence",
+          "url": "https://www.jeffco.us/2860/Surveying-Information-and-Drones",
+          "supports": "Documents the specific capability summarized in this record. Official county surveying/UAS page updated April 2, 2026 describes drone use in county engineering and links scheduled drone flights; it identifies the Golden-based division."
+        }
+      ],
+      "research_notes": "Official county surveying/UAS page updated April 2, 2026 describes drone use in county engineering and links scheduled drone flights; it identifies the Golden-based division.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "service-area",
+      "location_notes": "Published program service area or Colorado base only; no launch locations or exact facility position inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Kavon Metrics",
+      "record_type": "organization",
+      "city": "Craig",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://www.kavonmetrics.com/",
+      "website_url": "https://www.kavonmetrics.com/",
+      "short_description": "Craig-based drone mapping provider offering RTK imagery, construction progress documentation and thermal inspections.",
+      "overview": "Craig-based drone mapping provider offering RTK imagery, construction progress documentation and thermal inspections.",
+      "unmanned_systems_relevance": "Commercial UAS data collection and geospatial processing; no independent certification of mapping accuracy or survey licensure is implied.",
+      "contact_url": "https://www.kavonmetrics.com/",
+      "contact_email": "kavonmetrics@gmail.com",
+      "contact_phone": "970-826-0143",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "Kavon Metrics - capability evidence",
+          "url": "https://www.kavonmetrics.com/",
+          "supports": "Documents the specific capability summarized in this record. Company homepage explicitly says based in Craig and describes mapping, aerial inspections and thermal imaging."
+        }
+      ],
+      "research_notes": "Company homepage explicitly says based in Craig and describes mapping, aerial inspections and thermal imaging.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Kraken Robotics Colorado - subsea lidar operations",
+      "record_type": "organization",
+      "city": "Longmont",
+      "address_line": "1900 South Sunset Street, Suite 1-D",
+      "postal_code": "80501",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_source_url": "https://www.krakenrobotics.com/contact/",
+      "website_url": "https://www.krakenrobotics.com/services/lidar-solutions/",
+      "short_description": "Longmont operation formerly known as 3D at Depth, associated with subsea lidar sensing deployable on ROVs and AUVs.",
+      "overview": "Longmont operation formerly known as 3D at Depth, associated with subsea lidar sensing deployable on ROVs and AUVs.",
+      "unmanned_systems_relevance": "Supporting subsea sensing payload technology with explicitly documented ROV/AUV deployment. Colorado corporate presence is distinct from the location of customer missions.",
+      "contact_url": "https://www.krakenrobotics.com/contact/",
+      "contact_email": "",
+      "contact_phone": "303-892-8900",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Undersea systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Payloads and mission systems"
+      ],
+      "missions": [
+        "Infrastructure inspection",
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "Kraken Robotics Colorado - subsea lidar operations - capability evidence",
+          "url": "https://www.krakenrobotics.com/services/lidar-solutions/",
+          "supports": "Documents the specific capability summarized in this record. "
+        },
+        {
+          "title": "Kraken Robotics Colorado - subsea lidar operations - Colorado location evidence",
+          "url": "https://www.krakenrobotics.com/contact/",
+          "supports": "Confirms Colorado business presence or the named laboratory host and campus; no unlisted local fleet, staff or production activity inferred."
+        }
+      ],
+      "research_notes": "Current corporate contact directory identifies Kraken Colorado/former 3D at Depth in Longmont. Lidar specifications explicitly list ROV and AUV deployment. Supporting robotic payload and survey technology. No claim that all Kraken products are manufactured at this Colorado office. Browser-readable first-party pages were used; a separate automated request received a security block. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published business or laboratory address; not a launch/test-site designation. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Lakewood Police and West Metro Fire - joint drone first response",
+      "record_type": "program",
+      "city": "Lakewood",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_source_url": "https://www.westmetrofire.org/files/bdb748c2f/Minutes_09222026.pdf",
+      "website_url": "https://www.westmetrofire.org/",
+      "short_description": "Joint Lakewood Police and West Metro Fire first-responder drone capability with documented 2026 flights.",
+      "overview": "Joint Lakewood Police and West Metro Fire first-responder drone capability with documented 2026 flights.",
+      "unmanned_systems_relevance": "Specific public-safety UAS capability or joint program, not the entire agency. External access, flight permissions and operational readiness are not inferred.",
+      "contact_url": "https://www.westmetrofire.org/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "Lakewood Police and West Metro Fire - joint drone first response - capability evidence",
+          "url": "https://www.westmetrofire.org/files/bdb748c2f/Minutes_09222026.pdf",
+          "supports": "Documents the specific capability summarized in this record. West Metro's September 22, 2026 minutes report completed flights and combined police/fire response; Lakewood's 2026 budget discusses continuing and expanding the drone program."
+        },
+        {
+          "title": "Lakewood Police and West Metro Fire - joint drone first response - additional first-party evidence",
+          "url": "https://www.lakewood.org/files/assets/public/v/2/finance/pdfs/2025r-2026b-proposed-budget_website.pdf",
+          "supports": "West Metro's September 22, 2026 minutes report completed flights and combined police/fire response; Lakewood's 2026 budget discusses continuing and expanding the drone program."
+        }
+      ],
+      "research_notes": "West Metro's September 22, 2026 minutes report completed flights and combined police/fire response; Lakewood's 2026 budget discusses continuing and expanding the drone program. Consolidated joint program, not duplicate department or launch-site records. Published flight totals are historical reporting, not a current fleet or readiness guarantee. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "service-area",
+      "location_notes": "Published program service area or Colorado base only; no launch locations or exact facility position inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Lamp Rynearson - Colorado drone photogrammetry practice",
+      "record_type": "organization",
+      "city": "Fort Collins",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://lamprynearson.com/about-us/meet-our-team/",
+      "website_url": "https://lamprynearson.com/markets/oil-gas/",
+      "short_description": "Fort Collins engineering and surveying office associated with drone photogrammetry and aerial mapping of Colorado energy and infrastructure projects.",
+      "overview": "Fort Collins engineering and surveying office associated with drone photogrammetry and aerial mapping of Colorado energy and infrastructure projects.",
+      "unmanned_systems_relevance": "Commercial UAS data collection and geospatial processing; no independent certification of mapping accuracy or survey licensure is implied.",
+      "contact_url": "https://lamprynearson.com/about-us/meet-our-team/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "Lamp Rynearson - Colorado drone photogrammetry practice - capability evidence",
+          "url": "https://lamprynearson.com/markets/oil-gas/",
+          "supports": "Documents the specific capability summarized in this record. "
+        },
+        {
+          "title": "Lamp Rynearson - Colorado drone photogrammetry practice - Colorado location evidence",
+          "url": "https://lamprynearson.com/about-us/meet-our-team/",
+          "supports": "Confirms Colorado business presence or the named laboratory host and campus; no unlisted local fleet, staff or production activity inferred."
+        },
+        {
+          "title": "Lamp Rynearson - Colorado drone photogrammetry practice - additional first-party evidence",
+          "url": "https://lamprynearson.com/project/wake-oil-and-gas-pad-complex/",
+          "supports": "Current team page confirms Fort Collins office; current energy practice describes quadcopter/fixed-wing drone operation and Colorado project mapping."
+        }
+      ],
+      "research_notes": "Current team page confirms Fort Collins office; current energy practice describes quadcopter/fixed-wing drone operation and Colorado project mapping. Company documents completed Colorado drone photogrammetry work; current office presence and service capability are separately confirmed. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Littlehorn Engineering - drone surveying",
+      "record_type": "organization",
+      "city": "Silver Cliff",
+      "address_line": "205 Fourth Street",
+      "postal_code": "81252",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_source_url": "https://littlehornengineering.com/contact.html",
+      "website_url": "https://littlehornengineering.com/",
+      "short_description": "Colorado engineering and surveying firm with a named drone pilot/surveyor and an offered drone survey practice.",
+      "overview": "Colorado engineering and surveying firm with a named drone pilot/surveyor and an offered drone survey practice.",
+      "unmanned_systems_relevance": "Commercial UAS data collection and geospatial processing; no independent certification of mapping accuracy or survey licensure is implied.",
+      "contact_url": "https://littlehornengineering.com/contact.html",
+      "contact_email": "",
+      "contact_phone": "719-836-7120",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "Littlehorn Engineering - drone surveying - capability evidence",
+          "url": "https://littlehornengineering.com/survey.html",
+          "supports": "Documents the specific capability summarized in this record. "
+        },
+        {
+          "title": "Littlehorn Engineering - drone surveying - Colorado location evidence",
+          "url": "https://littlehornengineering.com/contact.html",
+          "supports": "Confirms Colorado business presence or the named laboratory host and campus; no unlisted local fleet, staff or production activity inferred."
+        }
+      ],
+      "research_notes": "Live survey page explicitly offers drone surveys; current contact page publishes Silver Cliff and Fairplay offices and names a drone pilot/surveyor. One company record. Silver Cliff office is by appointment; Fairplay is a second published office. Salida mailing address is not used as an operating site. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published business or laboratory address; not a launch/test-site designation. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "MapWorx Aerial Solutions",
+      "record_type": "organization",
+      "city": "Castle Rock",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://www.mapworxaerial.com/",
+      "website_url": "https://www.mapworxaerial.com/",
+      "short_description": "Castle Rock home-based operator offering drone mapping, inspections and construction progress data.",
+      "overview": "Castle Rock home-based operator offering drone mapping, inspections and construction progress data.",
+      "unmanned_systems_relevance": "Commercial UAS data collection and geospatial processing; no independent certification of mapping accuracy or survey licensure is implied.",
+      "contact_url": "https://www.mapworxaerial.com/",
+      "contact_email": "info@mapworxaerial.com",
+      "contact_phone": "303-416-6445",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "MapWorx Aerial Solutions - capability evidence",
+          "url": "https://www.mapworxaerial.com/",
+          "supports": "Documents the specific capability summarized in this record. Homepage explicitly states Home-based in Castle Rock CO and details drone data collection, thermal imaging and geospatial processing."
+        }
+      ],
+      "research_notes": "Homepage explicitly states Home-based in Castle Rock CO and details drone data collection, thermal imaging and geospatial processing. Denver legal/mailing address is not treated as an operating office; Castle Rock home locality only. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Martin/Martin - drone thermal building observations",
+      "record_type": "organization",
+      "city": "Lakewood",
+      "address_line": "12499 West Colfax Avenue",
+      "postal_code": "80215",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_source_url": "https://www.martinmartin.com/offices/denver/",
+      "website_url": "https://www.martinmartin.com/services/existing-building-services/non-destructive-testing/",
+      "short_description": "Colorado consulting engineering practice offering visual and thermal drone observations of existing structures.",
+      "overview": "Colorado consulting engineering practice offering visual and thermal drone observations of existing structures.",
+      "unmanned_systems_relevance": "Explicit commercial drone inspection capability; project permissions and inspection scope must be agreed with the provider.",
+      "contact_url": "https://www.martinmartin.com/offices/denver/",
+      "contact_email": "info@martinmartin.com",
+      "contact_phone": "303-431-6100",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Martin/Martin - drone thermal building observations - capability evidence",
+          "url": "https://www.martinmartin.com/services/existing-building-services/non-destructive-testing/",
+          "supports": "Documents the specific capability summarized in this record. "
+        },
+        {
+          "title": "Martin/Martin - drone thermal building observations - Colorado location evidence",
+          "url": "https://www.martinmartin.com/offices/denver/",
+          "supports": "Confirms Colorado business presence or the named laboratory host and campus; no unlisted local fleet, staff or production activity inferred."
+        }
+      ],
+      "research_notes": "Current nondestructive-testing page offers drone thermal observations; the Denver headquarters page publishes its actual Lakewood street address.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "headquarters",
+      "location_notes": "Published business or laboratory address; not a launch/test-site designation. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Merrick & Company - sUAS geospatial services",
+      "record_type": "organization",
+      "city": "Greenwood Village",
+      "address_line": "8051 E. Maplewood Avenue, Suite 300",
+      "postal_code": "80111",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_source_url": "https://www.merrick.com/what-we-do/geospatial/aerial-lidar-imagery/",
+      "website_url": "https://www.merrick.com/what-we-do/geospatial/aerial-lidar-imagery/",
+      "short_description": "Colorado-headquartered geospatial provider using small UAS alongside fixed-wing and helicopter platforms for lidar and imagery collection.",
+      "overview": "Colorado-headquartered geospatial provider using small UAS alongside fixed-wing and helicopter platforms for lidar and imagery collection.",
+      "unmanned_systems_relevance": "Commercial UAS data collection and geospatial processing; no independent certification of mapping accuracy or survey licensure is implied.",
+      "contact_url": "https://www.merrick.com/what-we-do/geospatial/aerial-lidar-imagery/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "Merrick & Company - sUAS geospatial services - capability evidence",
+          "url": "https://www.merrick.com/what-we-do/geospatial/aerial-lidar-imagery/",
+          "supports": "Documents the specific capability summarized in this record. Current aerial lidar page lists sUAS collection platforms and publishes the Greenwood Village corporate address."
+        }
+      ],
+      "research_notes": "Current aerial lidar page lists sUAS collection platforms and publishes the Greenwood Village corporate address. Company-level capability; this is the published headquarters, not a claim that every aircraft or aerial collection crew is based there. A future-dated November 20, 2026 job posting was not used. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "headquarters",
+      "location_notes": "Published business or laboratory address; not a launch/test-site designation. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Mile High Drones",
+      "record_type": "organization",
+      "city": "Englewood",
+      "address_line": "67 W Floyd Ave #107",
+      "postal_code": "80110",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_source_url": "https://www.milehighdrones.com/why-us/",
+      "website_url": "https://www.milehighdrones.com/",
+      "short_description": "Englewood-based drone inspection and analytics company serving electric utilities, energy and construction assets.",
+      "overview": "Englewood-based drone inspection and analytics company serving electric utilities, energy and construction assets.",
+      "unmanned_systems_relevance": "Explicit commercial drone inspection capability; project permissions and inspection scope must be agreed with the provider.",
+      "contact_url": "https://www.milehighdrones.com/",
+      "contact_email": "hello@milehighdrones.com",
+      "contact_phone": "720-605-1414",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Mile High Drones - capability evidence",
+          "url": "https://www.milehighdrones.com/why-us/",
+          "supports": "Documents the specific capability summarized in this record. Company services and team page describes thermal/multispectral drone fleets and publishes its Englewood base."
+        }
+      ],
+      "research_notes": "Company services and team page describes thermal/multispectral drone fleets and publishes its Englewood base.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "headquarters",
+      "location_notes": "Published business or laboratory address; not a launch/test-site designation. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Nadar Drone - Denver pilot base",
+      "record_type": "organization",
+      "city": "Denver",
+      "address_line": "",
+      "postal_code": "80202",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://www.nadardrone.com/contact-denver-co/",
+      "website_url": "https://www.nadardrone.com/contact-denver-co/",
+      "short_description": "Published Denver pilot base providing drone inspection, construction management and surveying/mapping services.",
+      "overview": "Published Denver pilot base providing drone inspection, construction management and surveying/mapping services.",
+      "unmanned_systems_relevance": "Commercial UAS data collection and geospatial processing; no independent certification of mapping accuracy or survey licensure is implied.",
+      "contact_url": "https://www.nadardrone.com/contact-denver-co/",
+      "contact_email": "",
+      "contact_phone": "720-316-1790",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "Nadar Drone - Denver pilot base - capability evidence",
+          "url": "https://www.nadardrone.com/contact-denver-co/",
+          "supports": "Documents the specific capability summarized in this record. Provider's Denver contact page explicitly identifies a Local Pilot Base City of Denver CO 80202 and inspection/mapping services."
+        }
+      ],
+      "research_notes": "Provider's Denver contact page explicitly identifies a Local Pilot Base City of Denver CO 80202 and inspection/mapping services. Included for an explicitly published pilot base, not merely nationwide service coverage. No dedicated storefront inferred. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Osprey Integrity - Denver inspection operations",
+      "record_type": "organization",
+      "city": "Denver",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://ospreyintegrity.com/contact/",
+      "website_url": "https://ospreyintegrity.com/",
+      "short_description": "Denver location of an inspection provider offering drone and robotic nondestructive testing and autonomous inspection systems.",
+      "overview": "Denver location of an inspection provider offering drone and robotic nondestructive testing and autonomous inspection systems.",
+      "unmanned_systems_relevance": "Provider explicitly combines uncrewed aircraft and robotic tools or robotic inspection systems for infrastructure work.",
+      "contact_url": "https://ospreyintegrity.com/",
+      "contact_email": "",
+      "contact_phone": "719-759-9114",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "Osprey Integrity - Denver inspection operations - capability evidence",
+          "url": "https://ospreyintegrity.com/contact/",
+          "supports": "Documents the specific capability summarized in this record. Company contact page lists Denver among its locations and offers drone/robotic NDT and RIFT autonomous systems inquiries."
+        }
+      ],
+      "research_notes": "Company contact page lists Denver among its locations and offers drone/robotic NDT and RIFT autonomous systems inquiries. City-level location only; no street address or local fleet size inferred. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Productivity - Littleton robotics and automation facility",
+      "record_type": "facility",
+      "city": "Littleton",
+      "address_line": "4925 South Santa Fe Drive",
+      "postal_code": "80120",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_source_url": "https://productivity.com/company/locations/colorado/",
+      "website_url": "https://productivity.com/company/locations/colorado/",
+      "short_description": "Littleton regional facility and showroom supporting industrial and collaborative robot automation for manufacturing.",
+      "overview": "Littleton regional facility and showroom supporting industrial and collaborative robot automation for manufacturing.",
+      "unmanned_systems_relevance": "Supporting industrial robotic automation, integration and manufacturing capability. Stationary industrial robots and cobots are not represented as autonomous mobile vehicles.",
+      "contact_url": "https://productivity.com/company/locations/colorado/",
+      "contact_email": "",
+      "contact_phone": "303-571-4933",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Manufacturing and supply chain",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Productivity - Littleton robotics and automation facility - capability evidence",
+          "url": "https://productivity.com/company/locations/colorado/",
+          "supports": "Documents the specific capability summarized in this record. Current company Colorado facility page publishes Littleton address and explicitly lists industrial robot and cobot offerings."
+        }
+      ],
+      "research_notes": "Current company Colorado facility page publishes Littleton address and explicitly lists industrial robot and cobot offerings. Supporting industrial automation integration/distribution; not represented as a mobile autonomous vehicle manufacturer or a claim of robot manufacture in Littleton. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published business or laboratory address; not a launch/test-site designation. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Pueblo Police Department - drone first response and UAS unit",
+      "record_type": "program",
+      "city": "Pueblo",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_source_url": "https://www.pueblo.us/m/newsflash/home/detail/4953",
+      "website_url": "https://www.pueblo.us/2899/Police-Department",
+      "short_description": "Pueblo Police drone first-response capability integrated with its Real Time Crime Center.",
+      "overview": "Pueblo Police drone first-response capability integrated with its Real Time Crime Center.",
+      "unmanned_systems_relevance": "Specific public-safety UAS capability or joint program, not the entire agency. External access, flight permissions and operational readiness are not inferred.",
+      "contact_url": "https://www.pueblo.us/2899/Police-Department",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "Pueblo Police Department - drone first response and UAS unit - capability evidence",
+          "url": "https://www.pueblo.us/m/newsflash/home/detail/4953",
+          "supports": "Documents the specific capability summarized in this record. Official May 28, 2026 release documents actual assistance from the Real Time Crime Center and First Responder Drone program."
+        }
+      ],
+      "research_notes": "Official May 28, 2026 release documents actual assistance from the Real Time Crime Center and First Responder Drone program.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "service-area",
+      "location_notes": "Published program service area or Colorado base only; no launch locations or exact facility position inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "SGM - UAV surveying practice",
+      "record_type": "organization",
+      "city": "Glenwood Springs",
+      "address_line": "118 W. 6th Street, Suite 200",
+      "postal_code": "81601",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_source_url": "https://sgm-inc.com/what-we-do/surveying/",
+      "website_url": "https://sgm-inc.com/what-we-do/surveying/",
+      "short_description": "Western Colorado engineering and survey firm explicitly offering high-resolution UAV and drone services.",
+      "overview": "Western Colorado engineering and survey firm explicitly offering high-resolution UAV and drone services.",
+      "unmanned_systems_relevance": "Commercial UAS data collection and geospatial processing; no independent certification of mapping accuracy or survey licensure is implied.",
+      "contact_url": "https://sgm-inc.com/what-we-do/surveying/",
+      "contact_email": "marketing@sgm-inc.com",
+      "contact_phone": "970-945-1004",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "SGM - UAV surveying practice - capability evidence",
+          "url": "https://sgm-inc.com/what-we-do/surveying/",
+          "supports": "Documents the specific capability summarized in this record. Current survey practice page lists UAV/drone services and publishes the Glenwood Springs office address."
+        }
+      ],
+      "research_notes": "Current survey practice page lists UAV/drone services and publishes the Glenwood Springs office address.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published business or laboratory address; not a launch/test-site designation. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "South Metro Fire Rescue - Incident Dispatch Team UAV capability",
+      "record_type": "program",
+      "city": "Centennial",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_source_url": "https://www.southmetro.org/files/d3d3e05ea/View%2Band%2Bdownload%2Bthe%2BSMFR%2BStandards%2Bof%2BCover.pdf",
+      "website_url": "https://www.southmetro.org/incident-dispatch-team",
+      "short_description": "South Metro Incident Dispatch Team field-support capability incorporating UAVs for major emergency incidents.",
+      "overview": "South Metro Incident Dispatch Team field-support capability incorporating UAVs for major emergency incidents.",
+      "unmanned_systems_relevance": "Specific public-safety UAS capability or joint program, not the entire agency. External access, flight permissions and operational readiness are not inferred.",
+      "contact_url": "https://www.southmetro.org/incident-dispatch-team",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "South Metro Fire Rescue - Incident Dispatch Team UAV capability - capability evidence",
+          "url": "https://www.southmetro.org/files/d3d3e05ea/View%2Band%2Bdownload%2Bthe%2BSMFR%2BStandards%2Bof%2BCover.pdf",
+          "supports": "Documents the specific capability summarized in this record. Current official IDT page shows drone-equipped response resources. The published 2021-2025 Standards of Cover explicitly lists a UAV Incident Team and UAV equipment in the IDT communications vehicle; full document text was checked."
+        }
+      ],
+      "research_notes": "Current official IDT page shows drone-equipped response resources. The published 2021-2025 Standards of Cover explicitly lists a UAV Incident Team and UAV equipment in the IDT communications vehicle; full document text was checked. One named incident-support capability, not each fire station or a general department record. The Standards of Cover period is 2021-2025, not an asserted 2026 publication date; it is corroborated by the current IDT page. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "service-area",
+      "location_notes": "Published program service area or Colorado base only; no launch locations or exact facility position inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Summit County Sheriff's Office - Special Operations drones",
+      "record_type": "program",
+      "city": "Breckenridge",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_source_url": "https://www.summitcountyco.gov/services/sheriff/index.php",
+      "website_url": "https://www.summitsheriffcolorado.gov/",
+      "short_description": "Summit County Special Operations drone capability supporting public safety and backcountry response.",
+      "overview": "Summit County Special Operations drone capability supporting public safety and backcountry response.",
+      "unmanned_systems_relevance": "Specific public-safety UAS capability or joint program, not the entire agency. External access, flight permissions and operational readiness are not inferred.",
+      "contact_url": "https://www.summitcountyco.gov/services/sheriff/index.php",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Operations, maintenance, and sustainment",
+        "Perception, sensing, and sensor fusion"
+      ],
+      "missions": [
+        "Public safety and emergency response"
+      ],
+      "sources": [
+        {
+          "title": "Summit County Sheriff's Office - Special Operations drones - capability evidence",
+          "url": "https://cms2.revize.com/revize/summitcounty/Documents/About%20Us/SCSO-AnnualReport-2025.pdf?t=202607201900300",
+          "supports": "Documents the specific capability summarized in this record. "
+        },
+        {
+          "title": "Summit County Sheriff's Office - Special Operations drones - Colorado location evidence",
+          "url": "https://www.summitcountyco.gov/services/sheriff/index.php",
+          "supports": "Confirms Colorado business presence or the named laboratory host and campus; no unlisted local fleet, staff or production activity inferred."
+        }
+      ],
+      "research_notes": "Official 2025 annual report, downloaded and text-checked, identifies Breckenridge CO on its contact page and documents 75 Special Operations drone deployments. The county official website links the sheriff domain. Report identity and Colorado address checked against the report contact page; not the similarly named Ohio or Utah agencies. Sheriff homepage retrieval was blocked, but official county linkage and the full first-party report were accessible. No launch positions included. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "service-area",
+      "location_notes": "Published program service area or Colorado base only; no launch locations or exact facility position inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "SurvWest - robotic sewer inspection practice",
+      "record_type": "organization",
+      "city": "Greenwood Village",
+      "address_line": "8400 East Crescent Pkwy, Suite 410",
+      "postal_code": "80111",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_source_url": "https://www.survwest.com/",
+      "website_url": "https://www.survwest.com/",
+      "short_description": "Colorado surveying and utility-engineering firm offering robotic-camera inspections of storm and sanitary systems.",
+      "overview": "Colorado surveying and utility-engineering firm offering robotic-camera inspections of storm and sanitary systems.",
+      "unmanned_systems_relevance": "Explicit robotic-camera inspection of utility infrastructure; not an inferred UAS capability.",
+      "contact_url": "https://www.survwest.com/",
+      "contact_email": "info@survwest.com",
+      "contact_phone": "720-462-1223",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "SurvWest - robotic sewer inspection practice - capability evidence",
+          "url": "https://www.survwest.com/",
+          "supports": "Documents the specific capability summarized in this record. Live company homepage advertises robotic sewer-camera inspection and publishes current Greenwood Village headquarters address."
+        }
+      ],
+      "research_notes": "Live company homepage advertises robotic sewer-camera inspection and publishes current Greenwood Village headquarters address. Ground robotic inspection is the documented capability; drone use is not inferred from lidar processing jobs. Page narrative says Englewood but published headquarters address uses Greenwood Village, retained here. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "headquarters",
+      "location_notes": "Published business or laboratory address; not a launch/test-site designation. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Tom Richardson LLC - drone mapping services",
+      "record_type": "organization",
+      "city": "Parker",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://tomrichardsonllc.com/",
+      "website_url": "https://tomrichardsonllc.com/",
+      "short_description": "Parker utility engineering and locating firm offering drone mapping with Part 107 pilots.",
+      "overview": "Parker utility engineering and locating firm offering drone mapping with Part 107 pilots.",
+      "unmanned_systems_relevance": "Commercial UAS data collection and geospatial processing; no independent certification of mapping accuracy or survey licensure is implied.",
+      "contact_url": "https://tomrichardsonllc.com/",
+      "contact_email": "",
+      "contact_phone": "303-699-3524",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "Tom Richardson LLC - drone mapping services - capability evidence",
+          "url": "https://tomrichardsonllc.com/",
+          "supports": "Documents the specific capability summarized in this record. Current company homepage explicitly says located in Parker, Colorado and lists drone mapping services and UAS pilots."
+        }
+      ],
+      "research_notes": "Current company homepage explicitly says located in Parker, Colorado and lists drone mapping services and UAS pilots.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Town of Firestone - GIS drone mapping",
+      "record_type": "program",
+      "city": "Firestone",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_source_url": "https://www.firestoneco.gov/721/GIS",
+      "website_url": "https://www.firestoneco.gov/721/GIS",
+      "short_description": "Municipal GIS operation using licensed drone pilots to collect aerial imagery for mapping and data analysis.",
+      "overview": "Municipal GIS operation using licensed drone pilots to collect aerial imagery for mapping and data analysis.",
+      "unmanned_systems_relevance": "Specific government drone mapping function; not a public flying area or an offer of commercial survey services.",
+      "contact_url": "https://www.firestoneco.gov/721/GIS",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "Town of Firestone - GIS drone mapping - capability evidence",
+          "url": "https://www.firestoneco.gov/721/GIS",
+          "supports": "Documents the specific capability summarized in this record. Current official GIS page states the Town uses drones within its boundaries and that its licensed pilots collect imagery for analysis."
+        }
+      ],
+      "research_notes": "Current official GIS page states the Town uses drones within its boundaries and that its licensed pilots collect imagery for analysis. Distinct civil GIS mapping function, not a second record for the police UAS program. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "service-area",
+      "location_notes": "Published program service area or Colorado base only; no launch locations or exact facility position inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "True North Colorado - unmanned aerial mapping",
+      "record_type": "organization",
+      "city": "New Castle",
+      "address_line": "386 Main Street Unit 3",
+      "postal_code": "81647",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_source_url": "https://www.truenorthcolorado.com/",
+      "website_url": "https://www.truenorthcolorado.com/",
+      "short_description": "New Castle surveying firm offering unmanned aerial mapping with a DJI Matrice M300 RTK.",
+      "overview": "New Castle surveying firm offering unmanned aerial mapping with a DJI Matrice M300 RTK.",
+      "unmanned_systems_relevance": "Commercial UAS data collection and geospatial processing; no independent certification of mapping accuracy or survey licensure is implied.",
+      "contact_url": "https://www.truenorthcolorado.com/",
+      "contact_email": "",
+      "contact_phone": "970-984-0474",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "True North Colorado - unmanned aerial mapping - capability evidence",
+          "url": "https://www.truenorthcolorado.com/",
+          "supports": "Documents the specific capability summarized in this record. Live company services and contact page identifies its New Castle base, street address and drone mapping equipment."
+        }
+      ],
+      "research_notes": "Live company services and contact page identifies its New Castle base, street address and drone mapping equipment.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published business or laboratory address; not a launch/test-site designation. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "United Power - drone asset inspection program",
+      "record_type": "program",
+      "city": "Brighton",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_source_url": "https://www.unitedpower.com/contact-us",
+      "website_url": "https://unitedpower.com/wildfire-mitigation",
+      "short_description": "Colorado electric cooperative program using drone imagery and lidar to inspect distribution assets and map wildfire risk.",
+      "overview": "Colorado electric cooperative program using drone imagery and lidar to inspect distribution assets and map wildfire risk.",
+      "unmanned_systems_relevance": "Operational infrastructure customer commissioning drone inspections. Contractor participation is documented; do not infer an owned fleet, in-house pilots or services offered to outside customers.",
+      "contact_url": "https://www.unitedpower.com/contact-us",
+      "contact_email": "",
+      "contact_phone": "303-637-1300",
+      "test_access": "",
+      "strategic_categories": [
+        "Programs and initiatives",
+        "Physical infrastructure and logistics",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Data engineering, analytics, and edge computing",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "United Power - drone asset inspection program - capability evidence",
+          "url": "https://unitedpower.com/wildfire-mitigation",
+          "supports": "Documents the specific capability summarized in this record. "
+        },
+        {
+          "title": "United Power - drone asset inspection program - Colorado location evidence",
+          "url": "https://www.unitedpower.com/contact-us",
+          "supports": "Confirms Colorado business presence or the named laboratory host and campus; no unlisted local fleet, staff or production activity inferred."
+        },
+        {
+          "title": "United Power - drone asset inspection program - additional first-party evidence",
+          "url": "https://unitedpower.com/mitigating-wildfire-risk-proactive-strategies-protect-members-communities",
+          "supports": "Current wildfire-mitigation page identifies existing drone inspections; corporate contact page confirms Brighton headquarters and Colorado operations."
+        }
+      ],
+      "research_notes": "Current wildfire-mitigation page identifies existing drone inspections; corporate contact page confirms Brighton headquarters and Colorado operations. Supporting operational customer/program. Some inspections are contracted; no in-house drone fleet ownership or pilot staffing inferred. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "service-area",
+      "location_notes": "Published program service area or Colorado base only; no launch locations or exact facility position inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Vantor - Colorado Raptor autonomy software presence",
+      "record_type": "organization",
+      "city": "Westminster",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_source_url": "https://vantor.com/contact-us/",
+      "website_url": "https://vantor.com/product/mission-solutions/raptor/",
+      "short_description": "Colorado spatial-intelligence company offering Raptor vision-based positioning and georegistration software for autonomous drones.",
+      "overview": "Colorado spatial-intelligence company offering Raptor vision-based positioning and georegistration software for autonomous drones.",
+      "unmanned_systems_relevance": "Supporting vision-based software for autonomous UAS navigation and spatial registration. A Colorado office is documented, not a local flight-test program.",
+      "contact_url": "https://vantor.com/contact-us/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Research and technical depth",
+        "Supporting ecosystem asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Navigation and positioning",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Vantor - Colorado Raptor autonomy software presence - capability evidence",
+          "url": "https://vantor.com/product/mission-solutions/raptor/",
+          "supports": "Documents the specific capability summarized in this record. "
+        },
+        {
+          "title": "Vantor - Colorado Raptor autonomy software presence - Colorado location evidence",
+          "url": "https://vantor.com/contact-us/",
+          "supports": "Confirms Colorado business presence or the named laboratory host and campus; no unlisted local fleet, staff or production activity inferred."
+        }
+      ],
+      "research_notes": "Current corporate directory lists Westminster, Colorado Springs and Longmont offices; Raptor product page explicitly documents drone-camera-based positioning without GPS. One Colorado company record. Corporate Colorado presence and companywide product capability are established; the public pages do not assign a specific Raptor development team to Westminster. Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "office",
+      "location_notes": "Published city-level business or host-campus location only; no street location inferred. Coordinates intentionally null; no geocoding performed."
+    },
+    {
+      "state": "CO",
+      "name": "Wohnrade Civil Engineers - UAS mapping",
+      "record_type": "organization",
+      "city": "Castle Pines",
+      "address_line": "6574 Still Pine Circle",
+      "postal_code": "80108",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_source_url": "https://www.wcecivil.com/",
+      "website_url": "https://www.wcecivil.com/",
+      "short_description": "Castle Pines civil engineering firm documenting its mapping-drone operations and specialized UAS projects.",
+      "overview": "Castle Pines civil engineering firm documenting its mapping-drone operations and specialized UAS projects.",
+      "unmanned_systems_relevance": "Commercial UAS data collection and geospatial processing; no independent certification of mapping accuracy or survey licensure is implied.",
+      "contact_url": "https://www.wcecivil.com/",
+      "contact_email": "general@wcecivil.com",
+      "contact_phone": "720-259-0965",
+      "test_access": "",
+      "strategic_categories": [
+        "Companies and solution providers",
+        "Core unmanned-systems asset"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing"
+      ],
+      "missions": [
+        "Surveying and mapping"
+      ],
+      "sources": [
+        {
+          "title": "Wohnrade Civil Engineers - UAS mapping - capability evidence",
+          "url": "https://www.wcecivil.com/",
+          "supports": "Documents the specific capability summarized in this record. Company homepage discusses its UAS project work and mapping drones and publishes a Castle Pines head office address."
+        }
+      ],
+      "research_notes": "Company homepage discusses its UAS project work and mapping drones and publishes a Castle Pines head office address.  Public-source sidecar research as of 2026-11-18, not a complete editorial or operational audit. Advertised capabilities and credentials are attributed to the source; performance, licensure and project permissions were not independently certified.",
+      "location_role": "headquarters",
+      "location_notes": "Published business or laboratory address; not a launch/test-site designation. Coordinates intentionally null; no geocoding performed."
+    }
+  ],
+  "held_candidates": [
+    {
+      "state": "CO",
+      "name": "Eagle Eye Agronomy",
+      "reason": "Own site documents crop-health drone mapping and Colorado service coverage, but no explicit Colorado business base or physical office was established in this pass. https://www.eagleeyeagronomy.com/uav-services"
+    },
+    {
+      "state": "CO",
+      "name": "Grand County Sheriff's Office - StickBot grant",
+      "reason": "September 2026 official notice says the office will receive a tactical ground robot; delivery and operational deployment were not confirmed. Do not equate award with an operating program. https://www.co.grand.co.us/m/newsflash?cat=5%2C13%2C11%2C1%2C10%2C12%2C16%2C7%2C9%2C15"
+    },
+    {
+      "state": "CO",
+      "name": "CU Boulder Correll Lab",
+      "reason": "Own CU lab page explicitly says the investigator has moved to Notre Dame and is not accepting new CU students. Do not use historical Boulder robotics work as a current Colorado lab. https://www.colorado.edu/lab/correll/"
+    },
+    {
+      "state": "CO",
+      "name": "New Horizons Drone Solutions LLC",
+      "reason": "Agricultural application lead, but own-site retrieval returned 404 and a current first-party Colorado operating base was not independently established. https://www.newhorizonsdronesolutions.com/"
+    },
+    {
+      "state": "CO",
+      "name": "Rize Drone Services LLC",
+      "reason": "Listed as UAV applicator in county materials, but own website and current Colorado operating base/capability were not confirmed in this bounded pass."
+    },
+    {
+      "state": "CO",
+      "name": "Inspectorbots",
+      "reason": "Own site documents current mobile inspection robots but current Colorado physical location was found only in third-party directories, not its current contact page. https://www.inspectorbots.com/contact"
+    },
+    {
+      "state": "CO",
+      "name": "Altiora Drone Services",
+      "reason": "First-party indexed FAQ describes a western Colorado base and mapping work, but direct website resolution failed; insufficient direct validation for this bounded batch. https://www.altioradrone.com/faq"
+    },
+    {
+      "state": "CO",
+      "name": "Halkin Inc",
+      "reason": "2025 company brochure locates one executive in Colorado and describes drone mapping, but a current Colorado operating office or facility was not confirmed. https://halkininc.com/wp-content/uploads/2025/07/Halkin-Introduction.pdf"
+    },
+    {
+      "state": "CO",
+      "name": "Mesa County Sheriff's Office UAS team",
+      "reason": "Official indexed FAQ contains pre-Part-107 regulatory language despite recent search crawl date. Current first-party operation not independently established; crawler date is not evidence of current program status. https://www.mesacounty.us/sites/default/files/2022-12/specialized-teams-uav-frequently-asked-questions.pdf"
+    },
+    {
+      "state": "CO",
+      "name": "SecondShift Robotics",
+      "reason": "Own site documents robotic machine tending and deployments across Denver metro but does not clearly publish a Colorado business base or facility. Not promoted solely from service geography. https://secondshiftrobotics.com/"
+    },
+    {
+      "state": "CO",
+      "name": "Mines Project EOS drone aeromagnetic well detection",
+      "reason": "Specific 2024 research poster supports drone testing, but current program continuation was not established independently. Not added from historical poster alone. https://www.mines.edu/undergraduate-research/wp-content/uploads/sites/130/2024/09/jimena.pdf"
+    },
+    {
+      "state": "CO",
+      "name": "Paratex Colorado Inc",
+      "reason": "County applicator list supplies a UAS lead, but current own-site Colorado presence plus documented drone capability was not established. No record from a license-list mention alone."
+    },
+    {
+      "state": "CO",
+      "name": "ResourceLogic LLC",
+      "reason": "County applicator list supplies a UAS lead, but current own-site Colorado presence plus documented drone capability was not established. No record from a license-list mention alone."
+    },
+    {
+      "state": "CO",
+      "name": "Scanga Brothers LLC",
+      "reason": "County applicator list supplies a UAS lead, but current own-site Colorado presence plus documented drone capability was not established. No record from a license-list mention alone."
+    },
+    {
+      "state": "CO",
+      "name": "Running R LLC",
+      "reason": "County applicator list supplies a UAS lead, but current own-site Colorado presence plus documented drone capability was not established. No record from a license-list mention alone."
+    },
+    {
+      "state": "CO",
+      "name": "Verdant Environmental LLC",
+      "reason": "County applicator list supplies a UAS lead, but current own-site Colorado presence plus documented drone capability was not established. No record from a license-list mention alone."
+    },
+    {
+      "state": "CO",
+      "name": "Routescene Inc",
+      "reason": "Staging/older sources identify Durango and the about page retains a Colorado reference, but the current official contact page publishes Farmington, New Mexico. Current Colorado operating presence is not established. https://www.routescene.com/contact-routescene/"
+    }
+  ]
+}

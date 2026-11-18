@@ -1,0 +1,73 @@
+{
+  "retrieved": "2026-11-18",
+  "targets_not_rankings": {
+    "AZ": 350,
+    "CA": 500,
+    "CO": 350,
+    "FL": 450,
+    "MI": 400,
+    "NY": 450,
+    "NC": 350,
+    "ND": 300,
+    "OH": 400,
+    "OK": 300,
+    "PA": 400,
+    "TX": 500,
+    "UT": 300
+  },
+  "dataset_note": "Supporting infrastructure/workforce only; no UAS activity inferred.",
+  "airport_source": "https://services.arcgis.com/xOi1kZaI0eWDREZv/ArcGIS/rest/services/NTAD_Aviation_Facilities/FeatureServer/0",
+  "ipeds_directory": "https://nces.ed.gov/ipeds/datacenter/data/HD2024.zip",
+  "ipeds_programs": "https://nces.ed.gov/ipeds/datacenter/data/C2024_A.zip",
+  "ipeds_characteristics": "https://nces.ed.gov/ipeds/datacenter/data/IC2024.zip",
+  "ipeds_documentation": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx?year=2024",
+  "source_sha256": {
+    "hd2024.zip": "d98425c123d7c0e872aec6e83960dfb501884818bf17385c340790f3d1f28345",
+    "c2024_a.zip": "03234cc27fe4e7eb835a66d4f37aaec11bdac8dfa278f971584e1b20d03e1159",
+    "ic2024.zip": "924f04f0afd953633a34bbc2ad1beaa65fdbf2a7ba25ebe364bac7469a976288",
+    "faa_public_airports.json": "4c3d74c8e8d324812ff567f04a204c13821044b02ce760eafb3144913e355919"
+  },
+  "supporting_added": {
+    "AZ": 107,
+    "CA": 179,
+    "CO": 110,
+    "FL": 201,
+    "MI": 230,
+    "NY": 216,
+    "NC": 140,
+    "ND": 100,
+    "OH": 183,
+    "OK": 179,
+    "PA": 163,
+    "TX": 205,
+    "UT": 45
+  },
+  "combined_inventory": {
+    "AZ": 321,
+    "CO": 303,
+    "UT": 300,
+    "CA": 500,
+    "TX": 500,
+    "FL": 450,
+    "NY": 450,
+    "OH": 400,
+    "MI": 400,
+    "NC": 350,
+    "OK": 300,
+    "PA": 400,
+    "ND": 300
+  },
+  "combined_types": {
+    "organization": 694,
+    "program": 364,
+    "facility": 478,
+    "operating-environment": 1371,
+    "infrastructure": 1224,
+    "university": 843
+  },
+  "core_records": 1103,
+  "supporting_records": 3871,
+  "claim_level_source_references": 9625,
+  "visibility": "Staff preview only; no editorial verification or public release implied.",
+  "held_count": 18
+}

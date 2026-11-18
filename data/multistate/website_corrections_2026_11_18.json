@@ -1,0 +1,97 @@
+{
+  "research_date": "2026-11-18",
+  "corrections": [
+    {
+      "state": "OH",
+      "name": "DriveOhio Advanced Air Mobility Action Plan",
+      "old_url": "https://drive.ohio.gov/programs/advanced-aviation/advanced-air-mobility/aam-plan",
+      "new_url": "",
+      "source_title": "Unresolved direct program website",
+      "supports": "The published program page returns HTTP 404 and no working direct replacement was confirmed. Suppress the broken website button rather than substitute a news mention. Preserve the historical evidence links and existing program description for editorial review; this is not a finding that the program is absent."
+    },
+    {
+      "state": "OH",
+      "name": "SkyVision detect-and-avoid research environment",
+      "old_url": "https://drive.ohio.gov/programs/advanced-aviation/advanced-air-mobility/uncrewed-aircraft-research-planning",
+      "new_url": "",
+      "source_title": "Unresolved direct environment website",
+      "supports": "The published research-planning page returns HTTP 404 and no working direct program replacement was confirmed. Suppress the broken website button while retaining the separately sourced UAS Center contact and historical source evidence. No change to location, capability or operating-approval claims."
+    },
+    {
+      "state": "OH",
+      "name": "Ohio Drones for First Responders Pilot Program",
+      "old_url": "https://drive.ohio.gov/programs/advanced-aviation/drones-for-first-responders-pilot-program",
+      "new_url": "",
+      "source_title": "Unresolved direct program website",
+      "supports": "The published program landing page returns HTTP 404 and a working direct replacement was not verified. Suppress the broken website button, preserving historical evidence and the separately published UAS Center contact route. This does not declare that the program has ended."
+    },
+    {
+      "state": "NY",
+      "name": "New York Naval Militia UAS program",
+      "old_url": "https://dmna.ny.gov/naval/",
+      "new_url": "https://dmna.ny.gov/nynm/",
+      "source_title": "New York Naval Militia - Official Entity Homepage",
+      "supports": "The DMNA unit directory links this as the Naval Militia's official website. The page identifies the same New York State organization and links its forms, instructions and training materials. HTTP GET returned 200 on 2026-11-18; the obsolete /naval/ URL returned 404. Website-only replacement; no program capability or location changes proposed."
+    },
+    {
+      "state": "CA",
+      "name": "NPS JIFX Camp Roberts Field Laboratory",
+      "old_url": "https://nps.don.edu/-/joint-interagency-field-experimentation-27-1",
+      "new_url": "https://nps.edu/web/fx/",
+      "source_title": "Home - Field Experimentation - Naval Postgraduate School",
+      "supports": "NPS's direct JIFX program homepage describes its field-experimentation mission and lists the next quarterly events. This replaces a broken, event-specific page with the continuing program page. HTTP GET returned 200 on 2026-11-18 and the original event URL returned 404 using Node's HTTP client. The system curl client had a TLS handshake failure, not an application-level status; no access permissions or site specifications inferred."
+    },
+    {
+      "state": "AZ",
+      "name": "Sion Power - Tucson UAS battery manufacturing",
+      "old_url": "https://sionpower.com/product/",
+      "new_url": "https://sionpower.com/solutions",
+      "source_title": "Sion Power | Solutions",
+      "supports": "The current official site navigation leads to this Licerion battery-solutions page, which explicitly addresses defense UAV applications and identifies Tucson manufacturing. HTTP GET returned 200 on 2026-11-18; /product/ returned 404. This is a website replacement only; performance figures, product availability and facility specifications are not updated here."
+    },
+    {
+      "state": "AZ",
+      "name": "Waymo Metro Phoenix Autonomous Ride-Hailing",
+      "old_url": "https://waymo.com/waymo-one/phoenix/",
+      "new_url": "https://waymo.com/rides/phoenix/",
+      "source_title": "Self-Driving Car Service - Ride-Hailing in Phoenix, AZ - Waymo",
+      "supports": "Waymo's current city-specific service page describes its Phoenix autonomous ride-hailing service. The www version redirects to this canonical URL. HTTP GET returned 200 on 2026-11-18; the old /waymo-one/phoenix/ URL returned 404. No service-area boundaries, operating permissions or vehicle specifications changed."
+    },
+    {
+      "state": "NC",
+      "name": "Cloud 9 Imagery Zebulon Thermal and Inspection UAS Services",
+      "old_url": "https://www.cloud9imageryllc.com/about",
+      "new_url": "https://www.cloud9imageryllc.com/",
+      "source_title": "Cloud 9 Imagery, LLC - Official Homepage",
+      "supports": "The company's current homepage identifies its Zebulon, North Carolina base and describes drone aerial-imagery and inspection services. HTTP GET returned 200 on 2026-11-18; /about returned 404. Website-only correction: the homepage is not used to add or reconfirm a particular thermal sensor or technical capability."
+    },
+    {
+      "state": "AZ",
+      "name": "Arizona Surveying / Alta Environmental and Infrastructure - Flagstaff UAS mapping",
+      "old_url": "https://arizonasurveying.com/aerial-mapping-services/",
+      "new_url": "https://altaei.com/services/surveying/",
+      "source_title": "Land Surveying Services | Alta EI",
+      "supports": "Arizona Surveying's homepage redirects to Alta EI's official domain. Alta's current direct surveying-service page explicitly lists UAV/UAS Drone Surveys. HTTP GET returned 200 on 2026-11-18, while the old aerial-mapping page returned 404. This replaces only the website with the successor company's relevant service page; no location, contact, operational status or technical specifications changed."
+    }
+  ],
+  "held": [
+    {
+      "state": "OH",
+      "name": "DriveOhio Advanced Air Mobility Action Plan",
+      "old_url": "https://drive.ohio.gov/programs/advanced-aviation/advanced-air-mobility/aam-plan",
+      "reason": "The supplied page, its AAM parent page and the DriveOhio homepage returned HTTP 404 on 2026-11-18. Search results retain the plan's text, but that cached content does not establish a working website replacement. No current direct official plan/program landing page was verified; no correction proposed."
+    },
+    {
+      "state": "OH",
+      "name": "SkyVision detect-and-avoid research environment",
+      "old_url": "https://drive.ohio.gov/programs/advanced-aviation/advanced-air-mobility/uncrewed-aircraft-research-planning",
+      "reason": "The supplied page and DriveOhio homepage returned HTTP 404 on 2026-11-18. Historical AFRL news articles were found, but no working current direct program/environment page was verified. A news mention or historical operating authorization is not substituted for the requested website."
+    },
+    {
+      "state": "OH",
+      "name": "Ohio Drones for First Responders Pilot Program",
+      "old_url": "https://drive.ohio.gov/programs/advanced-aviation/drones-for-first-responders-pilot-program",
+      "reason": "The supplied program page and DriveOhio homepage returned HTTP 404 on 2026-11-18, despite indexed program text. Official application guidance and agency announcements identify the program, but no working current direct program landing page was verified. Those documents are not substituted as the website."
+    }
+  ]
+}

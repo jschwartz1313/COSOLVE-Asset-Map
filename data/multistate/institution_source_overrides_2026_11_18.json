@@ -1,0 +1,30 @@
+{
+  "research_date": "2026-11-18",
+  "institutions": {
+    "479956": {
+      "hold": true,
+      "source_url": "https://www.worldcampus.psu.edu/about-us",
+      "reason": "Penn State describes World Campus as its online education offering, not a separate physical technical campus. Main Penn State campus remains represented."
+    },
+    "203845": {
+      "website_url": "https://www.marietta.edu/",
+      "source_url": "https://www.marietta.edu/program/computer-science",
+      "supports": "The college's official computer-science program page confirms the institution and its own marietta.edu website. Corrects a malformed NCES website field that contained an email-style username."
+    },
+    "132976": {
+      "website_url": "https://ctc.yourcharlotteschools.net/highschoolprogramshome",
+      "source_url": "https://ctc.yourcharlotteschools.net/highschoolprogramshome",
+      "supports": "Official Charlotte Technical College page confirms the named college, Port Charlotte address, general phone and aviation airframe mechanics program. Replaces the obsolete /ctc directory URL."
+    },
+    "409591": {
+      "website_url": "https://acc.lcjvs.com/career-pathways-home",
+      "source_url": "https://acc.lcjvs.com/career-pathways-home",
+      "supports": "Official Lorain County JVS Adult Career Center page confirms current advanced-manufacturing and technical career pathways; replaces the obsolete AboutACC link."
+    },
+    "447847": {
+      "hold": true,
+      "source_url": "https://www.accsc.org/wp-content/uploads/2025/10/072629-SAL-08-2025_Redacted.pdf",
+      "reason": "Hold the old Aviator College identity: published homepage fails, the accreditor documented withdrawal in 2025 and current successor/ownership identity requires separate confirmation. Do not assume current availability from 2023-24 award data."
+    }
+  }
+}
