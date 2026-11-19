@@ -1,5 +1,17 @@
 import { expect, test } from "@playwright/test";
 
+test("Reset stays regular weight and fits its button", async ({ page }, testInfo) => {
+  for (const width of [320, 390, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    await page.goto("/map/?q=Adaptive%20Aerospace%20Group");
+    const reset = page.getByRole("button", { name: "Reset map view", exact: true });
+    await expect(reset).toHaveCSS("font-weight", "400");
+    expect(await reset.evaluate(el => el.scrollWidth <= el.clientWidth
+      && el.scrollHeight <= el.clientHeight)).toBe(true);
+    await reset.screenshot({ path: testInfo.outputPath(`reset-${width}.png`) });
+  }
+});
+
 test("map and list share one clear selection, including keyboard selection", async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 });
   await page.goto("/map/?q=Hampton");
