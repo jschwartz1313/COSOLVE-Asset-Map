@@ -14,6 +14,7 @@ function resultRow(feature, container, onSelect) {
   button.type = "button";
   button.className = "result-row";
   button.dataset.assetId = feature.id;
+  button.setAttribute("aria-pressed", "false");
   button.append(textElement("span", `type-pill type-${props.record_type}`, props.record_type_label));
   if (props.activity_status_label) button.append(textElement("span", "activity-label", props.activity_status_label));
   if (props.vipc_portfolio_sector) button.append(textElement("span", "affiliation-tag", "VIPC portfolio organization"));
@@ -27,10 +28,7 @@ function resultRow(feature, container, onSelect) {
   footer.append(textElement("span", "", props.location.precision_label || ""));
   button.append(footer);
   button.addEventListener("click", () => {
-    for (const row of container.querySelectorAll(".result-row")) {
-      row.classList.remove("is-selected");
-    }
-    button.classList.add("is-selected");
+    selectResult(container, feature.id, { scroll: false });
     onSelect(feature.id);
   });
   return button;
@@ -74,7 +72,7 @@ export function renderResults(container, features, onSelect) {
   appendPage(container);
 }
 
-export function selectResult(container, id) {
+export function selectResult(container, id, { scroll = true } = {}) {
   let row = container.querySelector(`[data-asset-id="${CSS.escape(id)}"]`);
   const state = states.get(container);
   if (!row && state) {
@@ -87,7 +85,12 @@ export function selectResult(container, id) {
   if (!row) return;
   for (const item of container.querySelectorAll(".result-row")) {
     item.classList.remove("is-selected");
+    item.setAttribute("aria-pressed", "false");
   }
   row.classList.add("is-selected");
-  row.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  row.setAttribute("aria-pressed", "true");
+  if (scroll) {
+    const reducedMotion = globalThis.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+    row.scrollIntoView({ block: "nearest", behavior: reducedMotion ? "auto" : "smooth" });
+  }
 }

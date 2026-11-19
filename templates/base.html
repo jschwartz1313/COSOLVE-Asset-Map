@@ -9,8 +9,8 @@
   <title>{% block title %}COSOLVE Asset Map{% endblock %}</title>
   <link rel="icon" type="image/png" href="{% static 'img/cosolve-logo-black.png' %}">
   <link rel="apple-touch-icon" href="{% static 'img/cosolve-logo-black.png' %}">
-  <link rel="stylesheet" href="{% static 'css/tokens.css' %}?v=20260717">
-  <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20261117-1">
+  <link rel="stylesheet" href="{% static 'css/tokens.css' %}?v=20261119-1">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20261119-1">
   {% block extra_css %}{% endblock %}
   <script type="module" src="{% static 'js/site-header.js' %}?v=20261117-1"></script>
 </head>
@@ -26,9 +26,9 @@
     {% if inventory_states|length > 1 %}
     <form class="state-switcher" method="get" action="{% url 'core:select-state' %}" data-state-switcher>
       <label for="inventory-state">State{% if inventory_preview %}<small>Internal preview</small>{% endif %}</label>
-      <select id="inventory-state" name="state" aria-label="State inventory">
+      <span class="filter-select"><select id="inventory-state" name="state" aria-label="State inventory">
         {% for state in inventory_states %}<option value="{{ state.slug }}"{% if state.code == inventory_state.code %} selected{% endif %}>{{ state.name }}</option>{% endfor %}
-      </select>
+      </select></span>
       <input type="hidden" name="view" value="{{ state_switch_view }}">
       <button type="submit" class="state-switch-go" aria-label="Open selected state">Go</button>
     </form>

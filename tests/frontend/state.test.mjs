@@ -177,6 +177,18 @@ test("legacy saved map layers retain asset points", () => {
   assert.equal(state.basemap, "street");
 });
 
+test("configured default basemaps never override a saved choice", () => {
+  const layers = new URLSearchParams("map_layers=assets,state&map_layers_v=5");
+  assert.equal(mapStateFromParams(layers, "light").basemap, "light");
+  assert.equal(mapStateFromParams(layers, "invalid").basemap, "street");
+  layers.set("map_basemap", "street");
+  assert.equal(mapStateFromParams(layers, "light").basemap, "street");
+  layers.set("map_basemap", "topo");
+  assert.equal(mapStateFromParams(layers, "light").basemap, "topo");
+  layers.set("map_basemap", "unknown");
+  assert.equal(mapStateFromParams(layers, "light").basemap, "light");
+});
+
 test("invalid saved map coordinates are ignored safely", () => {
   const state = mapStateFromParams(
     new URLSearchParams(

@@ -34,7 +34,7 @@ export function filterParamsFromMapUrl(params) {
   return filters;
 }
 
-export function mapStateFromParams(params) {
+export function mapStateFromParams(params, defaultBasemap = "street") {
   const hasCenter = ["map_lat", "map_lon", "map_zoom"].every((key) => params.has(key));
   const hasLayers = params.has("map_layers");
   const hasBasemap = params.has("map_basemap");
@@ -54,7 +54,8 @@ export function mapStateFromParams(params) {
     layers = ["assets", ...layers];
   }
   const requestedBasemap = params.get("map_basemap");
-  const basemap = MAP_BASEMAPS.includes(requestedBasemap) ? requestedBasemap : "street";
+  const fallback = MAP_BASEMAPS.includes(defaultBasemap) ? defaultBasemap : "street";
+  const basemap = MAP_BASEMAPS.includes(requestedBasemap) ? requestedBasemap : fallback;
 
   return {
     latitude,

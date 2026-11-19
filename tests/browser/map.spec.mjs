@@ -441,7 +441,7 @@ test("desktop filter panel uses comfortable spacing without overflow", async ({ 
   await expect(page.locator(".filters-panel")).toHaveCSS("width", "276px");
   await expect(page.locator(".filter-fields-scroll")).toHaveCSS("align-content", "start");
   await expect(page.locator(".filter-fields-scroll")).toHaveCSS("gap", "13px");
-  await expect(page.locator("#asset-filters input[type=search]")).toHaveCSS("height", "40px");
+  await expect(page.locator("#asset-filters input[type=search]")).toHaveCSS("height", "42px");
   await expect(page.locator("#asset-filters button[type=submit]")).toBeVisible();
 });
 

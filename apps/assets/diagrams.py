@@ -32,8 +32,17 @@ def validate_public_image_url(value):
 
 
 class SiteDiagram(models.Model):
+    class ImageKind(models.TextChoices):
+        DIAGRAM = "diagram", "Diagram"
+        PHOTO = "photo", "Profile photograph"
+
     asset = models.ForeignKey("assets.Asset", on_delete=models.CASCADE,
                               related_name="site_diagrams")
+    image_kind = models.CharField(max_length=12, choices=ImageKind.choices,
+                                  default=ImageKind.DIAGRAM, help_text=(
+        "The first approved photograph appears beside the asset overview. "
+        "Diagrams stay in Supporting details."
+    ))
     title = models.CharField(max_length=180)
     image_url = models.URLField(max_length=1000, validators=[validate_public_image_url])
     alt_text = models.CharField(max_length=400)

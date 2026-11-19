@@ -1,0 +1,36 @@
+{
+  "research_date": "2026-11-19",
+  "permission_basis": "Factual editorial use under NASA's published media guidelines, with credit and no implied endorsement. Not individual NASA approval or a facility-access claim.",
+  "permission_url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "photos": [
+    {
+      "state": "VA",
+      "asset_name": "NASA Flight Dynamics Research Facility",
+      "title": "Flight Dynamics Research Facility exterior",
+      "image_url": "https://www.nasa.gov/wp-content/uploads/2026/04/fdrf-larc-3-5-2026.jpg",
+      "static_path": "img/assets/nasa-langley-flight-dynamics-research-facility-exterior.jpg",
+      "width": 1024,
+      "height": 683,
+      "alt_text": "Exterior of NASA Langley's Flight Dynamics Research Facility, showing the building and its central wind-tunnel section.",
+      "caption": "Flight Dynamics Research Facility, NASA Langley Research Center, Hampton, Virginia.",
+      "credit": "NASA",
+      "source_url": "https://www.nasa.gov/directorates/armd/flight-dynamics-research-facility/",
+      "display_download_url": "https://www.nasa.gov/wp-content/uploads/2026/04/fdrf-larc-3-5-2026.jpg",
+      "sha256": "2cadb2abe4ba3a480559ee478612731f8fc871a40329e65e616329c943904414"
+    },
+    {
+      "state": "VA",
+      "asset_name": "NASA Langley ROAM UAS Operations Center",
+      "title": "ROAM UAS Operations Center interior",
+      "image_url": "https://www.nasa.gov/wp-content/uploads/2023/12/lrc-2023-h1-p-high-densityvertiplex-00454.jpg",
+      "static_path": "img/assets/nasa-langley-roam-uas-operations-center-1024.jpg",
+      "width": 1024,
+      "height": 683,
+      "alt_text": "Researchers at consoles facing shared flight-monitoring displays in NASA Langley's ROAM UAS Operations Center.",
+      "caption": "ROAM UAS Operations Center, Hampton, Virginia. NASA research photograph published in 2023.",
+      "credit": "NASA / David Bowman",
+      "source_url": "https://www.nasa.gov/aeronautics/nasa-flies-autonomous-drones/",
+      "display_download_url": "https://www.nasa.gov/wp-content/uploads/2023/12/lrc-2023-h1-p-high-densityvertiplex-00454.jpg?resize=1024,683"
+    }
+  ]
+}

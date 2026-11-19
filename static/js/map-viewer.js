@@ -12,7 +12,7 @@ import {
   featuresWithinRadius,
   summarizeRegion,
 } from "./map-analysis.js?v=20261028-1";
-import { createMap } from "./map.js?v=20261117-1";
+import { createMap } from "./map.js?v=20261119-1";
 import {
   analysisStateFromParams,
   filterParamsFromMapUrl,
@@ -21,9 +21,9 @@ import {
   serializePolygonAnalysis,
   serializeRadiusAnalysis,
   serializeRectangleAnalysis,
-} from "./map-state.js?v=20261103-1";
+} from "./map-state.js?v=20261119-1";
 import { bindPanelResizers } from "./panel-resize.js?v=20260821-1";
-import { renderResults, selectResult } from "./results.js?v=20261028-1";
+import { renderResults, selectResult } from "./results.js?v=20261119-1";
 import { hydrateForm, paramsFromForm, updateUrl } from "./state.js?v=20261103-1";
 
 const root = document.querySelector("[data-map-app]");
@@ -88,13 +88,14 @@ const insightTitle = document.querySelector("#map-insight-title");
 const insightContent = document.querySelector("#map-insight-content");
 const closeInsightButton = document.querySelector("#close-map-insight");
 const initialPageParams = new URLSearchParams(window.location.search);
-const initialMapState = mapStateFromParams(initialPageParams);
+const defaultBasemap = root.dataset.basemapDefault || "street";
+const initialMapState = mapStateFromParams(initialPageParams, defaultBasemap);
 const initialAnalysisState = analysisStateFromParams(initialPageParams);
 const initialFilterParams = filterParamsFromMapUrl(initialPageParams);
 const defaultVisibleLayers = ["assets", "state"];
 
 function selectedBasemap() {
-  return basemapInputs.find((input) => input.checked)?.value || "street";
+  return basemapInputs.find((input) => input.checked)?.value || defaultBasemap;
 }
 
 function applyLayerToggleState(state) {
@@ -113,7 +114,7 @@ function applyLayerToggleState(state) {
   verificationLayerToggle.checked = layers.includes("verification");
   precisionLayerToggle.checked = layers.includes("precision");
   for (const input of root.querySelectorAll("input[data-unavailable-layer]")) input.checked = false;
-  const basemap = state?.basemap || "street";
+  const basemap = state?.basemap || defaultBasemap;
   for (const input of basemapInputs) input.checked = input.value === basemap;
 }
 
@@ -563,6 +564,10 @@ for (const input of basemapInputs) {
     updateViewActions();
   });
 }
+root.addEventListener("cosolve:basemap-fallback", () => {
+  for (const input of basemapInputs) input.checked = input.value === root.dataset.basemap;
+  updateViewActions();
+});
 
 function bindReferenceLayer({ toggle, setVisible, failureMessage }) {
   async function updateLayer() {
@@ -871,7 +876,7 @@ clearActiveFiltersButton.addEventListener("click", () => {
 window.addEventListener("popstate", () => {
   const pageParams = new URLSearchParams(window.location.search);
   const filters = filterParamsFromMapUrl(pageParams);
-  const viewState = mapStateFromParams(pageParams);
+  const viewState = mapStateFromParams(pageParams, defaultBasemap);
   const analysisState = analysisStateFromParams(pageParams);
   applyLayerToggleState(viewState);
   syncLayerVisibility();

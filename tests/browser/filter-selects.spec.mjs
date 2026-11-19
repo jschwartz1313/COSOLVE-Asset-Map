@@ -9,7 +9,7 @@ test("long filter selections fit a narrow panel", async ({ page }, testInfo) => 
   await expect(page.locator(".filters-panel")).toHaveCSS("width", "220px");
   const resource = page.getByRole("combobox", { name: "Find resources", exact: true });
   await expect(face(resource)).toHaveText("Business support and partnerships");
-  await expect(face(resource)).toHaveCSS("font-size", "13px");
+  await expect(face(resource)).toHaveCSS("font-size", "14px");
   await expect(face(resource)).toHaveAttribute("aria-hidden", "true");
   for (const select of await page.locator("#asset-filters select").all()) {
     const options = await select.locator("option").evaluateAll((options) =>

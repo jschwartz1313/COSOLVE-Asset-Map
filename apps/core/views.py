@@ -20,6 +20,7 @@ from apps.assets.geography import BY_CODE, BY_SLUG, current_state, scoped_region
 from apps.assets.manufacturing import compare_manufacturing
 from apps.assets.models import Asset, SavedView
 from apps.assets.operator_review import get_public_operator_details
+from apps.assets.profile_media import public_profile_photo
 from apps.assets.public_details import public_contact_details
 from apps.assets.scoping import public_region_slug
 from apps.assets.testing import (
@@ -236,7 +237,10 @@ def asset_detail(request, slug):
             "incoming_relationship_count": incoming_relationships.count(),
             "similar_assets": similar_assets,
             "public_sources": public_sources,
-            "site_diagrams": asset.site_diagrams.filter(publication_approved=True),
+            "site_diagrams": asset.site_diagrams.filter(
+                publication_approved=True, image_kind="diagram",
+            ),
+            "profile_photo": public_profile_photo(asset),
             "manufacturing_details": compare_manufacturing(asset, {}),
             "operator_details": operator_details,
             "public_contact": public_contact_details(asset, operator_details),

@@ -17,10 +17,15 @@
   </header>
   <div class="detail-grid">
     <article class="detail-main">
-      {% if about_paragraphs %}
-      <section class="overview-section">
-        <h2>About this asset</h2>
+      {% if about_paragraphs or profile_photo %}
+      <section class="overview-section{% if profile_photo %} has-profile-photo{% endif %}">
+        <div class="overview-copy"><h2>About this asset</h2>
         {% for paragraph in about_paragraphs %}<p>{{ paragraph|linebreaksbr }}</p>{% endfor %}
+        </div>
+        {% if profile_photo %}<figure class="profile-photo">
+          <img src="{{ profile_photo.image_url }}" alt="{{ profile_photo.alt_text }}"{% if profile_photo.width %} width="{{ profile_photo.width }}" height="{{ profile_photo.height }}"{% endif %} loading="lazy" decoding="async" referrerpolicy="no-referrer">
+          <figcaption>{{ profile_photo.caption }} <span>{{ profile_photo.credit }} &middot; <a href="{{ profile_photo.source_url }}" target="_blank" rel="noopener noreferrer">Photo source</a></span></figcaption>
+        </figure>{% endif %}
       </section>
       {% endif %}
       {% if asset.capabilities.exists or asset.missions.exists or asset.activity_status or asset.current_activity or asset.partnership_opportunities or asset.has_test_details or asset.owner_operator or asset.available_acreage or asset.development_status or asset.development_notes or asset.infrastructure_access or operator_details or manufacturing_details.evidence_usable %}

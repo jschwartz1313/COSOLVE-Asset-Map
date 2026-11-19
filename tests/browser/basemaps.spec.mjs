@@ -4,6 +4,38 @@ const radio = (page, value) => page.locator(`input[name="map-basemap"][value="${
 const statefulMap = "/map/?q=airport&map_lat=37.2&map_lon=-80.4&map_zoom=9"
   + "&map_layers=assets,state&map_layers_v=5&map_basemap=topo";
 
+test.beforeEach(async ({ page }) => {
+  // Provider availability must not change these control and saved-view tests.
+  await page.route("**/*basemaps.cartocdn.com/**", route => route.fulfill({
+    contentType: "image/png",
+    body: Buffer.from("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=", "base64"),
+  }));
+});
+
+async function expectDefault(page) {
+  const value = await page.locator("[data-map-app]").getAttribute("data-basemap-default");
+  await expect(radio(page, value)).toBeChecked();
+}
+
+test("grey remains the default after browser history restores an older link", async ({ page }) => {
+  await page.route(/\/map\/(?:\?.*)?$/, async route => {
+    const response = await route.fetch();
+    const body = (await response.text()).replace(/data-basemap-default="[^"]*"/, 'data-basemap-default="light"');
+    await route.fulfill({ response, body });
+  });
+  await page.goto("/map/?map_lat=37&map_lon=-77&map_zoom=8");
+  await expect(page.locator("[data-map-app]")).toHaveAttribute("aria-busy", "false");
+  await expect(radio(page, "light")).toBeChecked();
+  await page.evaluate(() => {
+    history.pushState(null, "", "?map_basemap=street");
+    dispatchEvent(new PopStateEvent("popstate"));
+  });
+  await expect(radio(page, "street")).toBeChecked();
+  await page.goBack();
+  await expect(radio(page, "light")).toBeChecked();
+  await expect(page.locator("[data-map-app]")).toHaveAttribute("data-basemap", "light");
+});
+
 test("four thumbnail basemaps are available directly on the map", async ({ page }) => {
   await page.goto("/map/");
   await expect(page.locator(".result-row").first()).toBeVisible();
@@ -12,7 +44,7 @@ test("four thumbnail basemaps are available directly on the map", async ({ page 
   await expect(picker).toBeVisible();
   await expect(picker.getByRole("radio")).toHaveCount(4);
   await expect(page.locator(".map-layers input[name='map-basemap']")).toHaveCount(0);
-  await expect(radio(page, "street")).toBeChecked();
+  await expectDefault(page);
 
   for (const [value, provider, attribution] of [
     ["light", "basemaps.cartocdn.com", "CARTO"],
@@ -69,7 +101,7 @@ test("the picker yields to asset popups and returns when they close", async ({ p
   await expect(page.locator(".basemap-picker")).toBeHidden();
   await page.locator(".leaflet-popup-close-button").click();
   await expect(page.locator(".basemap-picker")).toBeVisible();
-  await expect(radio(page, "street")).toBeChecked();
+  await expectDefault(page);
 });
 
 test("thumbnail controls fit without covering zoom or source controls", async ({ page }, testInfo) => {

@@ -125,7 +125,11 @@ function clusterTooltip(cluster) {
 export function createMap(root) {
   const defaultView = [Number(root.dataset.lat), Number(root.dataset.lon)];
   const defaultZoom = Number(root.dataset.zoom);
-  const map = window.L.map("map", { zoomControl: false }).setView(defaultView, defaultZoom);
+  const reducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches ?? false;
+  const map = window.L.map("map", {
+    zoomControl: false, zoomAnimation: !reducedMotion,
+    fadeAnimation: !reducedMotion, markerZoomAnimation: !reducedMotion,
+  }).setView(defaultView, defaultZoom);
   map.attributionControl.setPrefix(false);
   window.L.control.zoom({ position: "bottomright" }).addTo(map);
 
@@ -168,9 +172,25 @@ export function createMap(root) {
       referrerPolicy: "strict-origin",
     },
   };
-  let activeBasemap = "street";
+  let activeBasemap = basemaps[root.dataset.basemapDefault] ? root.dataset.basemapDefault : "street";
   root.dataset.basemap = activeBasemap;
-  let basemapLayer = window.L.tileLayer(basemaps.street.url, basemaps.street).addTo(map);
+  let basemapLayer = null;
+
+  function createBasemapLayer(name) {
+    const candidate = window.L.tileLayer(basemaps[name].url, basemaps[name]);
+    if (name === "light") {
+      let loaded = false;
+      let failures = 0;
+      candidate.on("tileload", () => { loaded = true; });
+      candidate.on("tileerror", () => {
+        if (loaded || basemapLayer !== candidate || ++failures < 3) return;
+        setBasemap("street");
+        root.dispatchEvent(new CustomEvent("cosolve:basemap-fallback"));
+      });
+    }
+    return candidate;
+  }
+  basemapLayer = createBasemapLayer(activeBasemap).addTo(map);
 
   const previewZoom = 8;
   const previewScale = 2 ** previewZoom;
@@ -188,7 +208,7 @@ export function createMap(root) {
   function setBasemap(name) {
     if (!basemaps[name] || name === activeBasemap) return;
     basemapLayer.removeFrom(map);
-    basemapLayer = window.L.tileLayer(basemaps[name].url, basemaps[name]).addTo(map);
+    basemapLayer = createBasemapLayer(name).addTo(map);
     basemapLayer.bringToBack();
     activeBasemap = name;
     root.dataset.basemap = name;
@@ -684,6 +704,7 @@ export function createMap(root) {
   const layer = window.L.markerClusterGroup
     ? window.L.markerClusterGroup({
         showCoverageOnHover: false,
+        animate: !reducedMotion,
         maxClusterRadius: 48,
         iconCreateFunction: buildClusterIcon,
       })
@@ -705,6 +726,30 @@ export function createMap(root) {
   let verificationLayerVisible = false;
   let precisionLayerVisible = false;
   const markers = new Map();
+  let selectedAssetId = null;
+
+  function updateMarkerSelection(marker, id) {
+    const element = marker.getElement();
+    if (!element) return;
+    const selected = id === selectedAssetId;
+    element.dataset.assetId = id;
+    element.classList.toggle("is-selected", selected);
+    element.setAttribute("aria-pressed", String(selected));
+  }
+
+  function selectMarker(id) {
+    const previous = markers.get(selectedAssetId);
+    selectedAssetId = markers.has(id) ? id : null;
+    if (previous) {
+      previous.setZIndexOffset(0);
+      updateMarkerSelection(previous, previous.options.assetFeature.id);
+    }
+    const selected = markers.get(selectedAssetId);
+    if (selected) {
+      selected.setZIndexOffset(1000);
+      updateMarkerSelection(selected, selectedAssetId);
+    }
+  }
 
   function buildMarkerIcon(feature) {
     const properties = feature.properties;
@@ -737,6 +782,7 @@ export function createMap(root) {
   function refreshMarkerIcons() {
     for (const [id, marker] of markers) {
       marker.setIcon(buildMarkerIcon(marker.options.assetFeature));
+      updateMarkerSelection(marker, id);
       markers.set(id, marker);
     }
     if (layer.refreshClusters) layer.refreshClusters();
@@ -747,6 +793,7 @@ export function createMap(root) {
     layer.removeFrom(map);
     layer.clearLayers();
     markers.clear();
+    selectedAssetId = null;
     const bounds = [];
     for (const feature of features) {
       if (!feature.geometry) continue;
@@ -777,7 +824,11 @@ export function createMap(root) {
           permanent: true,
         });
       }
-      marker.on("click", () => onSelect(feature.id));
+      marker.on("add", () => updateMarkerSelection(marker, feature.id));
+      marker.on("popupopen", () => {
+        selectMarker(feature.id);
+        onSelect(feature.id);
+      });
       layer.addLayer(marker);
       markers.set(feature.id, marker);
       bounds.push([latitude, longitude]);
@@ -791,10 +842,17 @@ export function createMap(root) {
   }
 
   function select(id) {
+    selectMarker(id);
     const marker = markers.get(id);
-    if (!marker || !assetLayerVisible) return;
-    if (layer.zoomToShowLayer) layer.zoomToShowLayer(marker, () => marker.openPopup());
-    else marker.openPopup();
+    if (!marker || !assetLayerVisible) {
+      map.closePopup();
+      return;
+    }
+    const openSelected = () => {
+      if (selectedAssetId === id && assetLayerVisible) marker.openPopup();
+    };
+    if (layer.zoomToShowLayer) layer.zoomToShowLayer(marker, openSelected);
+    else openSelected();
   }
 
   function reset() {

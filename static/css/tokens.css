@@ -2,9 +2,12 @@
   --ink: #192126;
   --ink-muted: #5c686f;
   --paper: #ffffff;
-  --surface: #f3f5f4;
-  --line: #d8deda;
-  --line-strong: #bbc6c0;
+  --surface: #f4f6f7;
+  --surface-alt: #fafbfc;
+  --surface-hover: #eef2f4;
+  --surface-selected: #fff3ef;
+  --line: #dce2e5;
+  --line-strong: #bcc6cc;
   --brand: #c63f2b;
   --brand-dark: #8f2c1f;
   --teal: #147d78;
@@ -14,5 +17,7 @@
   --shadow: 0 12px 30px rgb(25 33 38 / 12%);
   --header-height: 68px;
   --radius: 6px;
+  --control-height: 42px;
+  --motion-fast: 140ms;
 }
 

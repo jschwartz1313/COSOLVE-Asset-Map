@@ -247,8 +247,10 @@ def export_selected(modeladmin, request, queryset):
 
 class SiteDiagramInline(admin.StackedInline):
     model = SiteDiagram
+    verbose_name = "Site image"
+    verbose_name_plural = "Site images"
     extra = 0
-    fields = ("title", "image_url", "alt_text", "caption", "credit", "source_url",
+    fields = ("image_kind", "title", "image_url", "alt_text", "caption", "credit", "source_url",
               "publication_approved")
 
 

@@ -23,6 +23,7 @@ def map_settings(request):
             } else "map"
         ),
         "basemap_tile_url": settings.BASEMAP_TILE_URL,
+        "default_basemap": settings.DEFAULT_BASEMAP,
         "basemap_attribution": settings.BASEMAP_ATTRIBUTION,
         "light_basemap_tile_url": settings.LIGHT_BASEMAP_TILE_URL,
         "light_basemap_attribution": settings.LIGHT_BASEMAP_ATTRIBUTION,
