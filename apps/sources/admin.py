@@ -2,6 +2,8 @@ from django.contrib import admin, messages
 from django.utils import timezone
 from simple_history.admin import SimpleHistoryAdmin
 
+from apps.assets.admin_access import InventoryHistoryAdminMixin
+
 from .models import Source
 
 
@@ -35,7 +37,7 @@ def mark_sources_stale(modeladmin, request, queryset):
 
 
 @admin.register(Source)
-class SourceAdmin(SimpleHistoryAdmin):
+class SourceAdmin(InventoryHistoryAdminMixin, SimpleHistoryAdmin):
     list_display = (
         "title",
         "asset",

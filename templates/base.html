@@ -10,7 +10,7 @@
   <link rel="icon" type="image/png" href="{% static 'img/cosolve-logo-black.png' %}">
   <link rel="apple-touch-icon" href="{% static 'img/cosolve-logo-black.png' %}">
   <link rel="stylesheet" href="{% static 'css/tokens.css' %}?v=20261119-1">
-  <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20261119-1">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20261119-3">
   {% block extra_css %}{% endblock %}
   <script type="module" src="{% static 'js/site-header.js' %}?v=20261117-1"></script>
 </head>
@@ -23,16 +23,6 @@
       </span>
       <small>{{ public_scope_name }} Asset Map</small>
     </a>
-    {% if inventory_states|length > 1 %}
-    <form class="state-switcher" method="get" action="{% url 'core:select-state' %}" data-state-switcher>
-      <label for="inventory-state">State{% if inventory_preview %}<small>Internal preview</small>{% endif %}</label>
-      <span class="filter-select"><select id="inventory-state" name="state" aria-label="State inventory">
-        {% for state in inventory_states %}<option value="{{ state.slug }}"{% if state.code == inventory_state.code %} selected{% endif %}>{{ state.name }}</option>{% endfor %}
-      </select></span>
-      <input type="hidden" name="view" value="{{ state_switch_view }}">
-      <button type="submit" class="state-switch-go" aria-label="Open selected state">Go</button>
-    </form>
-    {% endif %}
     <nav class="primary-nav" aria-label="Primary navigation">
       <a href="{% url 'core:map' %}" {% if request.resolver_match.url_name == 'map' or request.resolver_match.url_name == 'home' %}aria-current="page"{% endif %}>Map</a>
       <a id="directory-link" href="{% url 'core:directory' %}" {% if request.resolver_match.url_name == 'directory' or request.resolver_match.url_name == 'asset-detail' or request.resolver_match.url_name == 'asset-suggest-update' %}aria-current="page"{% endif %}>Directory</a>
@@ -40,6 +30,7 @@
       <details class="navigation-menu header-menu" data-header-menu>
         <summary {% if request.resolver_match.url_name == 'about-data' or request.resolver_match.url_name == 'connect' or request.resolver_match.url_name == 'test-sites' %}class="is-current"{% endif %}>More</summary>
         <div class="header-menu-panel">
+      {% if not state_switch_in_filters %}{% include "includes/state_switcher.html" %}{% endif %}
       <a href="{% url 'core:test-sites' %}" {% if request.resolver_match.url_name == 'test-sites' %}aria-current="page"{% endif %}>Test-site search</a>
       <a href="{% url 'core:asset-compare' %}" {% if request.resolver_match.url_name == 'asset-compare' %}aria-current="page"{% endif %}>Compare assets</a>
       <a href="{% url 'core:manufacturing-search' %}" {% if request.resolver_match.url_name == 'manufacturing-search' %}aria-current="page"{% endif %}>Manufacturing search</a>

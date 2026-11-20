@@ -18,7 +18,10 @@ from apps.catalog.models import Capability, MissionArea, PlatformDomain, Region,
 from apps.imports.services import parse_csv
 
 
-@override_settings(REQUIRE_SITE_LOGIN=False, PUBLIC_REGION_SLUG="", MULTISTATE_PUBLIC=False)
+@override_settings(
+    REQUIRE_SITE_LOGIN=False, PUBLIC_REGION_SLUG="", MULTISTATE_PUBLIC=False,
+    MULTISTATE_PREVIEW_USERS=("researcher",),
+)
 class MultiStateTests(TestCase):
     @classmethod
     def setUpTestData(cls):
@@ -123,6 +126,7 @@ class MultiStateTests(TestCase):
         response = self.client.get("/states/ohio/map/")
         self.assertContains(response, "Ohio Asset Map")
         self.assertContains(response, "states/ohio-boundary.geojson")
+
         self.assertContains(response, "states/ohio-counties.geojson")
         self.assertContains(response, 'data-site-prefix="/states/ohio"')
         self.assertContains(response, "disabled data-unavailable-layer", count=8)
@@ -133,6 +137,16 @@ class MultiStateTests(TestCase):
         self.assertEqual(
             self.client.get("/states/ohio/api/regions/hampton-roads/summary/").status_code, 404
         )
+
+    @override_settings(DEFAULT_BASEMAP="light")
+    def test_peer_maps_default_to_street_without_changing_virginia_default(self):
+        self.client.force_login(self.staff)
+        virginia = self.client.get("/map/")
+        self.assertEqual(virginia.context["default_basemap"], "light")
+        for state in STATES[1:]:
+            response = self.client.get(state.prefix + "/map/")
+            self.assertEqual(response.context["default_basemap"], "street")
+            self.assertContains(response, 'data-basemap-default="street"')
 
     def test_region_definitions_are_state_specific(self):
         region = Region.objects.create(name="Central Ohio", state="oh")

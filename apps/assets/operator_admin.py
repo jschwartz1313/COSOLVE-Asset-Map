@@ -10,6 +10,8 @@ from django.utils import timezone
 from django.utils.cache import add_never_cache_headers
 from django.utils.html import format_html
 
+from .access import inventory_object_allowed
+from .admin_access import InventoryAdminAccessMixin
 from .models import Asset
 from .operator_review import (
     OperatorReview,
@@ -42,7 +44,7 @@ class OperatorInvitationForm(forms.ModelForm):
         return expires_at
 
 
-class OperatorReviewAdmin(admin.ModelAdmin):
+class OperatorReviewAdmin(InventoryAdminAccessMixin, admin.ModelAdmin):
     form = OperatorInvitationForm
     list_display = (
         "asset", "created_at", "expires_at", "submitted_at", "approved_at", "revoked_at",
@@ -56,13 +58,15 @@ class OperatorReviewAdmin(admin.ModelAdmin):
         return can_manage_operator_reviews(request.user)
 
     def has_view_permission(self, request, obj=None):
-        return can_manage_operator_reviews(request.user)
+        return (inventory_object_allowed(obj, request.user)
+                and can_manage_operator_reviews(request.user))
 
     def has_add_permission(self, request):
         return can_manage_operator_reviews(request.user)
 
     def has_change_permission(self, request, obj=None):
-        return can_manage_operator_reviews(request.user)
+        return (inventory_object_allowed(obj, request.user)
+                and can_manage_operator_reviews(request.user))
 
     def has_delete_permission(self, request, obj=None):
         return False

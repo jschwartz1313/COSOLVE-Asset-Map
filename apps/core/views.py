@@ -15,6 +15,7 @@ from django.views.decorators.http import require_POST
 
 from apps.api.query import filter_public_assets
 from apps.api.search import PUBLIC_NAME_ORDER
+from apps.assets.access import can_preview_peer_states, restrict_peer_assets
 from apps.assets.discovery import RESOURCE_CHOICES
 from apps.assets.geography import BY_CODE, BY_SLUG, current_state, scoped_regions
 from apps.assets.manufacturing import compare_manufacturing
@@ -78,10 +79,8 @@ def select_state(request):
     state = BY_SLUG.get(request.GET.get("state", ""))
     if not state:
         raise Http404
-    if state.code != "VA" and not settings.MULTISTATE_PUBLIC and not (
-        request.user.is_active and request.user.is_staff
-        and request.user.has_perm("assets.view_asset")
-    ):
+    if (state.code != "VA" and not settings.MULTISTATE_PUBLIC
+            and not can_preview_peer_states(request.user)):
         raise Http404
     view = request.GET.get("view", "map")
     if view not in {
@@ -280,12 +279,16 @@ def saved_views(request):
     return render(
         request,
         "saved_views/list.html",
-        {"form": form, "saved_views": request.user.saved_asset_views.all()},
+        {"form": form, "saved_views": restrict_peer_assets(
+            request.user.saved_asset_views.all(), request.user,
+        )},
     )
 
 
 def open_saved_view(request, token):
-    saved_view = get_object_or_404(SavedView, share_token=token)
+    saved_view = get_object_or_404(
+        restrict_peer_assets(SavedView.objects.all(), request.user), share_token=token,
+    )
     if saved_view.owner_id != request.user.pk and not saved_view.is_shared:
         if not request.user.is_authenticated:
             return redirect(f"{reverse('account_login')}?{urlencode({'next': request.path})}")
@@ -300,7 +303,9 @@ def open_saved_view(request, token):
 @login_required
 @require_POST
 def delete_saved_view(request, pk):
-    saved_view = get_object_or_404(SavedView, pk=pk, owner=request.user)
+    saved_view = get_object_or_404(
+        restrict_peer_assets(SavedView.objects.all(), request.user), pk=pk, owner=request.user,
+    )
     name = saved_view.name
     saved_view.delete()
     messages.success(request, f'Deleted "{name}".')

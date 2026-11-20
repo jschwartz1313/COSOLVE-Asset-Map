@@ -2,6 +2,7 @@ from django.conf import settings
 from django.db.models import Max
 from django.db.utils import OperationalError, ProgrammingError
 
+from apps.assets.access import can_preview_peer_states
 from apps.assets.geography import BY_CODE, STATES, scoped_regions
 from apps.assets.models import Asset
 from apps.assets.scoping import public_region_slug
@@ -12,8 +13,8 @@ def map_settings(request):
     virginia = state.code == "VA"
     public_scope_is_regional = bool(public_region_slug())
     scope_name = settings.PUBLIC_SCOPE_NAME if virginia else state.name
-    can_preview = (request.user.is_active and request.user.is_staff
-                   and request.user.has_perm("assets.view_asset"))
+    can_preview = can_preview_peer_states(request.user)
+    page_name = request.resolver_match.url_name if request.resolver_match else ""
     context = {
         "state_switch_view": (
             request.resolver_match.url_name
@@ -23,7 +24,7 @@ def map_settings(request):
             } else "map"
         ),
         "basemap_tile_url": settings.BASEMAP_TILE_URL,
-        "default_basemap": settings.DEFAULT_BASEMAP,
+        "default_basemap": settings.DEFAULT_BASEMAP if virginia else "street",
         "basemap_attribution": settings.BASEMAP_ATTRIBUTION,
         "light_basemap_tile_url": settings.LIGHT_BASEMAP_TILE_URL,
         "light_basemap_attribution": settings.LIGHT_BASEMAP_ATTRIBUTION,
@@ -39,8 +40,10 @@ def map_settings(request):
         "inventory_is_virginia": virginia,
         "inventory_has_regions": virginia or scoped_regions().exists(),
         "inventory_preview": getattr(request, "inventory_preview", False),
+        "can_access_all_states": settings.MULTISTATE_PUBLIC or can_preview,
         "boundary_version": "2025" if virginia else "20261117",
         "inventory_states": STATES if can_preview or settings.MULTISTATE_PUBLIC else STATES[:1],
+        "state_switch_in_filters": page_name in {"home", "map", "directory"},
         "state_boundary_path": (
             "data/virginia-state-boundary.geojson" if virginia
             else f"data/states/{state.slug}-boundary.geojson"

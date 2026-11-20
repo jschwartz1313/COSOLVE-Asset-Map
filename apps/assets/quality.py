@@ -95,7 +95,7 @@ def _candidate_details(first, second):
 
 def discover_duplicate_candidates(queryset=None):
     assets = list(
-        (queryset or Asset.objects.exclude(status=Asset.Status.ARCHIVED))
+        (queryset if queryset is not None else Asset.objects.exclude(status=Asset.Status.ARCHIVED))
         .only(
             "id",
             "name",
@@ -155,6 +155,8 @@ def sync_duplicate_candidates(queryset=None):
             updated += 1
 
     stale_open = DuplicateCandidate.objects.filter(status=DuplicateCandidate.Status.OPEN)
+    if queryset is not None:
+        stale_open = stale_open.filter(left_asset__in=queryset, right_asset__in=queryset)
     stale_ids = [
         candidate.pk
         for candidate in stale_open.only("pk", "left_asset_id", "right_asset_id")

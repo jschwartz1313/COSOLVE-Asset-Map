@@ -1,6 +1,7 @@
 .map-workspace { --filter-panel-width: 276px; --results-panel-width: 320px; --panel-resizer-width: 1px; height: calc(100vh - var(--header-height)); display: grid; grid-template-columns: var(--filter-panel-width) var(--panel-resizer-width) minmax(360px, 1fr) var(--panel-resizer-width) var(--results-panel-width); overflow: hidden; background: var(--surface); }
 .filters-panel, .results-panel { min-height: 0; background: var(--paper); position: relative; z-index: 501; }
 .filters-panel { grid-column: 1; padding: 18px 16px; display: grid; grid-template-rows: auto minmax(0, 1fr); overflow: hidden; }
+.filters-panel:has(> .state-switcher) { grid-template-rows: auto auto minmax(0, 1fr); }
 .map-stage { grid-column: 3; min-width: 0; min-height: 0; position: relative; }
 .results-panel { grid-column: 5; }
 .panel-resizer { position: relative; z-index: 700; min-width: 0; background: transparent; cursor: col-resize; touch-action: none; user-select: none; }

@@ -54,7 +54,7 @@ test("native keyboard selection and filter resets keep the displayed value synch
 
 test("directory filters and sorting preserve native form submissions", async ({ page }, testInfo) => {
   await page.goto("/directory/?purpose=business&sort=type");
-  const form = page.locator(".directory-filters form");
+  const form = page.locator("#directory-filters");
   const resource = form.getByRole("combobox", { name: "Find resources", exact: true });
   await expect(face(resource)).toHaveText("Business support and partnerships");
   await expect(form.locator(".filter-select.is-enhanced")).toHaveCount(6);

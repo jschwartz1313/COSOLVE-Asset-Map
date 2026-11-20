@@ -1,0 +1,10 @@
+{% if inventory_states|length > 1 %}
+<form class="state-switcher" method="get" action="{% url 'core:select-state' %}" data-state-switcher>
+  <label for="inventory-state">State{% if inventory_preview %}<small>Internal preview</small>{% endif %}</label>
+  <span class="filter-select"><select id="inventory-state" name="state" aria-label="State inventory">
+    {% for state in inventory_states %}<option value="{{ state.slug }}"{% if state.code == inventory_state.code %} selected{% endif %}>{{ state.name }}</option>{% endfor %}
+  </select></span>
+  <input type="hidden" name="view" value="{{ state_switch_view }}">
+  <button type="submit" class="state-switch-go" aria-label="Open selected state">Go</button>
+</form>
+{% endif %}

@@ -8,7 +8,8 @@
 <main id="main-content" class="directory-layout">
   <aside class="directory-filters">
     <h1>Asset directory</h1>
-    <form method="get">
+    {% include "includes/state_switcher.html" %}
+    <form id="directory-filters" method="get">
       {% include "includes/filter_fields.html" %}
       <label><span>Sort results</span><span class="filter-select"><select name="sort">{% for value, label in sort_options %}<option value="{{ value }}" {% if sort_key == value %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></span></label>
       <div class="filter-actions">
@@ -59,6 +60,6 @@
     {% endif %}
   </section>
 </main>
-<script type="module" src="{% static 'js/directory-filters.js' %}?v=20261021-2"></script>
+<script type="module" src="{% static 'js/directory-filters.js' %}?v=20261119-3"></script>
 <script type="module" src="{% static 'js/asset-shortlist.js' %}?v=20261117-1"></script>
 {% endblock %}

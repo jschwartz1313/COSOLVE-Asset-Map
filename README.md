@@ -143,7 +143,13 @@ Builders and auditing tools are `scripts/build_peer_fria_catalog.py`,
 under ignored `tmp/`; checked-in manifests retain their source URLs and hashes.
 
 `MULTISTATE_PUBLIC=false` is the default. Competitor routes require an active
-staff account with asset-view permission. Separately, starter records have internal
+staff account with asset-view permission whose exact username is listed in
+`MULTISTATE_PREVIEW_USERS` (currently `jschwartz,Ale,Chelsea`). Other staff and
+superusers remain Virginia-only in the site, admin, histories, working exports,
+review queues and saved views. Their existing Virginia editing permissions remain
+in place. The selector appears above map and directory filters, with a More-menu
+fallback on pages without a filter column. New peer-state maps default to Street;
+saved views retain their explicitly chosen basemap. Separately, starter records have internal
 visibility; changing the setting alone does not publish them. Publication requires
 an explicit decision on both route availability and individual record visibility.
 No private contact data belongs in the committed public-source research files.

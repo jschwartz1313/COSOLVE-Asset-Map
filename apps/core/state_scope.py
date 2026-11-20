@@ -5,6 +5,7 @@ from django.conf import settings
 from django.http import HttpResponseNotFound
 from django.urls import get_urlconf, include, path, set_urlconf
 
+from apps.assets.access import can_preview_peer_states
 from apps.assets.geography import BY_SLUG, current_state, internal_preview
 
 
@@ -43,14 +44,16 @@ class StateScopeMiddleware:
             state = BY_SLUG.get(request.path_info.split("/")[2])
             if not state or state.code == "VA":
                 return self.unavailable()
-            preview = (request.user.is_active and request.user.is_staff
-                       and request.user.has_perm("assets.view_asset"))
+            preview = can_preview_peer_states(request.user)
             if not settings.MULTISTATE_PUBLIC and not preview:
                 return self.unavailable()
             request.urlconf = state_urlconf(state.slug)
         # Administrative work remains cross-state; public endpoints are always scoped.
         administrative = request.path_info.startswith(("/admin/", "/auth/"))
-        scope = None if administrative and request.path_info != "/admin/imports/export/" else state
+        cross_state_admin = administrative and can_preview_peer_states(request.user)
+        scope = (
+            None if cross_state_admin and request.path_info != "/admin/imports/export/" else state
+        )
         request.inventory_state = state
         request.inventory_preview = bool(is_scoped and preview)
         old_urlconf = get_urlconf()

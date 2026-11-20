@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20261119-2">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20261119-3">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
@@ -38,6 +38,7 @@
       <h1>Find assets</h1>
       <button class="icon-button filter-close" type="button" aria-label="Close filters" title="Close filters">&times;</button>
     </div>
+    {% include "includes/state_switcher.html" %}
     <form id="asset-filters" autocomplete="off">
       <div class="filter-fields-scroll">
         {% include "includes/filter_fields.html" %}

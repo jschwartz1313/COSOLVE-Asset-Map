@@ -14,24 +14,40 @@ async function fits(page) {
   expect(overflow).toEqual([]);
 }
 
+async function statePicker(page) {
+  const picker = page.getByLabel("State inventory");
+  if (!await picker.isVisible()) {
+    if (await page.locator(".filter-open").isVisible()) {
+      await page.locator(".filter-open").click();
+    } else {
+      await page.locator(".navigation-menu > summary").click();
+    }
+  }
+  return picker;
+}
+
 test.beforeEach(async ({ page }) => {
   await page.goto("/login/");
   await page.locator('input[name="login"]').fill(process.env.COSOLVE_MULTISTATE_QA_USERNAME);
   await page.locator('input[name="password"]').fill(process.env.COSOLVE_MULTISTATE_QA_PASSWORD);
   await page.getByRole("button", { name: "Sign in", exact: true }).click();
-  await expect(page.locator("[data-state-switcher]")).toBeVisible();
+  await statePicker(page);
+  await expect(page.locator(".filters-panel > [data-state-switcher]")).toBeVisible();
+  await expect(page.locator(".site-header [data-state-switcher]")).toHaveCount(0);
 });
 
 test("switch states, search the map, inspect layers and keep directory scope", async ({ page }, info) => {
   const errors = [];
   page.on("pageerror", error => errors.push(error.message));
-  await page.getByLabel("State inventory").selectOption("ohio");
+  await (await statePicker(page)).selectOption("ohio");
   await expect(page).toHaveURL(/\/states\/ohio\/map\//);
   const response = await page.request.get("/states/ohio/api/assets.geojson");
   const data = await response.json();
   expect(data.features.length).toBeGreaterThan(0);
   expect(data.features.every(feature => feature.properties.location.state === "OH")).toBe(true);
   await expect(page.locator("#result-count")).toHaveText(String(data.result_count));
+  await expect(page.locator("[data-map-app]")).toHaveAttribute("aria-busy", "false");
+  await expect(page.locator('input[name="map-basemap"][value="street"]')).toBeChecked();
   await expect(page.locator(".leaflet-tile-loaded").first()).toBeVisible();
   await expect(page.locator(".map-legend")).toHaveAttribute("open", "");
   await page.locator('.map-layers > summary').click();
@@ -87,7 +103,7 @@ test("comparison, profile links, export and saved views retain the chosen state"
   await page.getByRole("button", { name: "Save view", exact: true }).click();
   await page.locator(".saved-view-row").first().getByRole("link", { name: "Open map", exact: true }).click();
   await expect(page).toHaveURL(/\/states\/ohio\/map\/\?q=autonomy/);
-  await page.getByLabel("State inventory").selectOption("virginia");
+  await (await statePicker(page)).selectOption("virginia");
   await expect(page).toHaveURL(/\/map\/$/);
   await page.goto("/directory/");
   await expect(page.locator("[data-comparison-count]")).toHaveText("0 selected");
@@ -120,6 +136,8 @@ test("every benchmark state renders its own real starter inventory", async ({ pa
     await fits(page);
     await page.goto(prefix + "/map/");
     await expect(page.locator("#result-count")).toHaveText(String(data.result_count));
+    await expect(page.locator("[data-map-app]")).toHaveAttribute("data-basemap-default", "street");
+    await expect(page.locator('input[name="map-basemap"][value="street"]')).toBeChecked();
     await expect(page.locator("#map-status")).toBeHidden();
     await expect(page.locator(".leaflet-marker-icon").first()).toBeVisible();
     await expect(page.locator(".leaflet-tile-loaded").first()).toBeVisible();

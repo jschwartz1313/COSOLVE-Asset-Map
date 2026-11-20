@@ -28,6 +28,10 @@ services:
         value: "true"
       - key: PUBLIC_REGION_SLUG
         value: ""
+      - key: MULTISTATE_PUBLIC
+        value: "false"
+      - key: MULTISTATE_PREVIEW_USERS
+        value: "jschwartz,Ale,Chelsea"
       - key: PUBLIC_SCOPE_NAME
         value: Virginia
       - key: DEFAULT_MAP_LAT

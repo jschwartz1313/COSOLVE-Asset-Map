@@ -142,6 +142,11 @@ DEFAULT_MAP_LAT = float(os.getenv("DEFAULT_MAP_LAT", "37.5"))
 DEFAULT_MAP_LON = float(os.getenv("DEFAULT_MAP_LON", "-78.7"))
 DEFAULT_MAP_ZOOM = int(os.getenv("DEFAULT_MAP_ZOOM", "7"))
 MULTISTATE_PUBLIC = os.getenv("MULTISTATE_PUBLIC", "false").lower() == "true"
+MULTISTATE_PREVIEW_USERS = tuple(
+    name.strip()
+    for name in os.getenv("MULTISTATE_PREVIEW_USERS", "jschwartz,Ale,Chelsea").split(",")
+    if name.strip()
+)
 PUBLIC_SITE_URL = os.getenv("PUBLIC_SITE_URL", "http://127.0.0.1:8000")
 STALE_VERIFICATION_DAYS = int(os.getenv("STALE_VERIFICATION_DAYS", "180"))
 REQUIRE_SITE_LOGIN = os.getenv("REQUIRE_SITE_LOGIN", "false").lower() == "true"

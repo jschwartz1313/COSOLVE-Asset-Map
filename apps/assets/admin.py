@@ -15,6 +15,7 @@ from apps.core.forms import SiteResetPasswordForm
 from apps.imports.services import CSV_COLUMNS, asset_csv_row
 from apps.sources.models import Source
 
+from .admin_access import InventoryAdminAccessMixin, InventoryHistoryAdminMixin
 from .manufacturing import PROFILE_CHOICES, ManufacturingProfile
 from .models import (
     Asset,
@@ -50,7 +51,7 @@ class AssetAdminForm(forms.ModelForm):
         fields = ()
 
 
-class SourceInline(admin.TabularInline):
+class SourceInline(InventoryAdminAccessMixin, admin.TabularInline):
     model = Source
     extra = 0
     fields = (
@@ -66,13 +67,13 @@ class SourceInline(admin.TabularInline):
     )
 
 
-class OutgoingRelationshipInline(admin.TabularInline):
+class OutgoingRelationshipInline(InventoryAdminAccessMixin, admin.TabularInline):
     model = Relationship
     fk_name = "from_asset"
     extra = 0
 
 
-class AssetReviewCommentInline(admin.TabularInline):
+class AssetReviewCommentInline(InventoryAdminAccessMixin, admin.TabularInline):
     model = AssetReviewComment
     extra = 1
     fields = ("body", "author", "created_at")
@@ -245,7 +246,7 @@ def export_selected(modeladmin, request, queryset):
     return response
 
 
-class SiteDiagramInline(admin.StackedInline):
+class SiteDiagramInline(InventoryAdminAccessMixin, admin.StackedInline):
     model = SiteDiagram
     verbose_name = "Site image"
     verbose_name_plural = "Site images"
@@ -269,7 +270,7 @@ class ManufacturingProfileForm(forms.ModelForm):
             )
 
 
-class ManufacturingProfileInline(admin.StackedInline):
+class ManufacturingProfileInline(InventoryAdminAccessMixin, admin.StackedInline):
     model = ManufacturingProfile
     form = ManufacturingProfileForm
     extra = 0
@@ -277,7 +278,7 @@ class ManufacturingProfileInline(admin.StackedInline):
 
 
 @admin.register(Asset)
-class AssetAdmin(SimpleHistoryAdmin):
+class AssetAdmin(InventoryHistoryAdminMixin, SimpleHistoryAdmin):
     form = AssetAdminForm
     list_display = (
         "asset_name",
@@ -298,7 +299,7 @@ class AssetAdmin(SimpleHistoryAdmin):
         "state",
         "record_type",
         "vipc_portfolio_sector",
-        "region",
+        ("region", admin.RelatedOnlyFieldListFilter),
         "status",
         "visibility",
         "review_priority",
@@ -511,7 +512,7 @@ class AssetAdmin(SimpleHistoryAdmin):
 
 
 @admin.register(Relationship)
-class RelationshipAdmin(SimpleHistoryAdmin):
+class RelationshipAdmin(InventoryHistoryAdminMixin, SimpleHistoryAdmin):
     list_display = ("from_asset", "relationship_type", "to_asset", "is_public")
     list_filter = ("relationship_type", "is_public")
     search_fields = ("from_asset__name", "to_asset__name", "description")
@@ -519,7 +520,7 @@ class RelationshipAdmin(SimpleHistoryAdmin):
 
 
 @admin.register(AssetReviewComment)
-class AssetReviewCommentAdmin(SimpleHistoryAdmin):
+class AssetReviewCommentAdmin(InventoryHistoryAdminMixin, SimpleHistoryAdmin):
     list_display = ("asset", "author", "created_at", "comment_preview")
     list_filter = ("created_at", "author")
     search_fields = ("asset__name", "body", "author__username", "author__email")
@@ -538,7 +539,7 @@ class AssetReviewCommentAdmin(SimpleHistoryAdmin):
 
 
 @admin.register(DuplicateCandidate)
-class DuplicateCandidateAdmin(SimpleHistoryAdmin):
+class DuplicateCandidateAdmin(InventoryHistoryAdminMixin, SimpleHistoryAdmin):
     list_display = (
         "left_asset",
         "right_asset",
@@ -593,7 +594,7 @@ class DuplicateCandidateAdmin(SimpleHistoryAdmin):
 
 
 @admin.register(UpdateSubmission)
-class UpdateSubmissionAdmin(SimpleHistoryAdmin):
+class UpdateSubmissionAdmin(InventoryHistoryAdminMixin, SimpleHistoryAdmin):
     list_display = (
         "created_at",
         "subject",

@@ -276,7 +276,7 @@ def save_import_source(asset, data):
     source.save()
 
 
-def parse_csv(upload):
+def parse_csv(upload, *, allowed_states=None):
     text = upload.read().decode("utf-8-sig")
     reader = csv.DictReader(io.StringIO(text), strict=True)
     missing = REQUIRED_COLUMNS - set(reader.fieldnames or [])
@@ -296,6 +296,12 @@ def parse_csv(upload):
         row = {key: (value or "").strip() for key, value in raw.items() if key is not None}
         if row.get("state"):
             row["state"] = row["state"].upper()
+        if allowed_states is not None and (row.get("state") or "VA") not in allowed_states:
+            rows.append({
+                "number": number, "data": row, "sources": [], "duplicate": False,
+                "asset_id": "", "errors": ["This state is outside your inventory access."],
+            })
+            continue
         errors = []
         if None in raw:
             errors.append(
@@ -365,11 +371,14 @@ def parse_csv(upload):
         if region_slug and not Region.objects.filter(slug=region_slug).exists():
             errors.append(f"Unknown region: {region_slug}")
         sources = source_values(row, errors)
+        candidates = Asset.objects.all()
+        if allowed_states is not None:
+            candidates = candidates.filter(state__in=allowed_states)
         asset = None
         if row.get("slug"):
-            asset = Asset.objects.filter(slug=row["slug"]).first()
+            asset = candidates.filter(slug=row["slug"]).first()
         if asset is None:
-            asset = Asset.objects.filter(
+            asset = candidates.filter(
                 name__iexact=row["name"], city__iexact=row.get("city", ""),
                 state__iexact=row.get("state") or "VA",
             ).first()

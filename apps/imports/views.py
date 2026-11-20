@@ -14,6 +14,7 @@ from django.utils import timezone
 from django.views.decorators.http import require_http_methods, require_POST
 
 from apps.api.query import filter_public_assets
+from apps.assets.access import can_access_all_states, inventory_object_allowed, restrict_peer_assets
 from apps.assets.geography import current_state
 from apps.assets.models import Asset, AssetReviewComment, DuplicateCandidate
 from apps.assets.quality import sync_duplicate_candidates
@@ -45,7 +46,9 @@ def preview(request):
             context["file_errors"] = ["CSV files are limited to 2 MB."]
         else:
             try:
-                rows, file_errors = parse_csv(upload)
+                rows, file_errors = parse_csv(
+                    upload, allowed_states=None if can_access_all_states(request.user) else ("VA",),
+                )
             except UnicodeDecodeError:
                 rows, file_errors = [], ["The file must use UTF-8 encoding."]
             except csv.Error:
@@ -74,13 +77,21 @@ def commit(request):
     skipped = 0
     for row in rows:
         data = row["data"]
-        asset = Asset.objects.filter(pk=row["asset_id"]).first() if row["asset_id"] else None
+        asset = (
+            restrict_peer_assets(Asset.objects.all(), request.user)
+            .filter(pk=row["asset_id"]).first()
+        ) if row["asset_id"] else None
+        if row["asset_id"] and asset is None:
+            raise PermissionDenied("This import record is not available.")
         was_created = asset is None
         if asset and not update_existing:
             skipped += 1
             continue
         try:
             asset = prepare_import_asset(data, asset)
+            if (not inventory_object_allowed(asset, request.user)
+                    or not inventory_object_allowed(asset.region, request.user)):
+                raise PermissionDenied("This import is outside your inventory access.")
             asset.save()
         except ValidationError as error:
             transaction.set_rollback(True)
@@ -126,6 +137,7 @@ def export_assets(request):
         )
     else:
         queryset = filter_public_assets(request.GET)
+    queryset = restrict_peer_assets(queryset, request.user)
     state = current_state.get()
     if include_internal and state and state.code != "VA":
         queryset = queryset.filter(state=state.code)
@@ -137,7 +149,10 @@ def export_assets(request):
 @staff_member_required
 @permission_required("assets.view_asset", raise_exception=True)
 def data_quality(request):
-    active_assets = Asset.objects.exclude(status=Asset.Status.ARCHIVED)
+    active_assets = restrict_peer_assets(
+        Asset.objects.exclude(status=Asset.Status.ARCHIVED), request.user,
+    )
+    sources = restrict_peer_assets(Source.objects.all(), request.user)
     stale_cutoff = timezone.localdate() - timedelta(days=settings.STALE_VERIFICATION_DAYS)
     stale = active_assets.filter(
         Q(last_verified_at__lt=stale_cutoff) | Q(last_verified_at__isnull=True)
@@ -208,7 +223,7 @@ def data_quality(request):
         Q(reviewed_at__isnull=True) | Q(status__in=[Asset.Status.DRAFT, Asset.Status.NEEDS_REVIEW])
     ).order_by("status", "name")
     source_issues = (
-        Source.objects.filter(
+        sources.filter(
             Q(verification_status__in=["unreviewed", "stale", "rejected"])
             | Q(last_verified_at__lt=stale_cutoff)
             | Q(last_verified_at__isnull=True)
@@ -217,7 +232,7 @@ def data_quality(request):
         .order_by("verification_status", "asset__name")
     )
     broken_sources = (
-        Source.objects.filter(is_public=True)
+        sources.filter(is_public=True)
         .exclude(link_review_status=Source.LinkReviewStatus.ACCEPTED)
         .filter(
             Q(link_review_status=Source.LinkReviewStatus.NEEDS_REPLACEMENT)
@@ -228,7 +243,7 @@ def data_quality(request):
         .order_by("asset__name", "title")
     )
     undated_sources = (
-        Source.objects.filter(is_public=True, source_date__isnull=True)
+        sources.filter(is_public=True, source_date__isnull=True)
         .select_related("asset")
         .order_by("asset__name", "title")
     )
@@ -337,7 +352,7 @@ def data_quality(request):
     record_type_labels = dict(Asset.RecordType.choices)
     for row in type_coverage:
         row["label"] = record_type_labels.get(row["record_type"], row["record_type"])
-    last_source_check = Source.objects.filter(is_public=True).aggregate(
+    last_source_check = sources.filter(is_public=True).aggregate(
         latest=Max("last_checked_at")
     )["latest"]
     coverage_counts = {
@@ -347,7 +362,7 @@ def data_quality(request):
         )
     }
     gap_rows = []
-    for region in Region.objects.filter(is_active=True):
+    for region in restrict_peer_assets(Region.objects.filter(is_active=True), request.user):
         cells = []
         for record_type, label in Asset.RecordType.choices:
             count = coverage_counts.get((region.pk, record_type), 0)
@@ -367,10 +382,10 @@ def data_quality(request):
                 "gap_count": sum(cell["status"] != "documented" for cell in cells),
             }
         )
-    open_duplicates = DuplicateCandidate.objects.filter(
+    open_duplicates = restrict_peer_assets(DuplicateCandidate.objects.all(), request.user).filter(
         status=DuplicateCandidate.Status.OPEN
     ).select_related("left_asset", "right_asset")
-    public_sources = Source.objects.filter(is_public=True)
+    public_sources = sources.filter(is_public=True)
     source_check_cutoff = timezone.now() - timedelta(days=7)
     recently_checked_sources = public_sources.filter(last_checked_at__gte=source_check_cutoff)
     healthy_sources = (
@@ -439,7 +454,9 @@ def data_quality(request):
 @permission_required("assets.change_duplicatecandidate", raise_exception=True)
 @require_POST
 def scan_duplicates(request):
-    result = sync_duplicate_candidates()
+    result = sync_duplicate_candidates(restrict_peer_assets(
+        Asset.objects.exclude(status=Asset.Status.ARCHIVED), request.user,
+    ))
     messages.success(
         request,
         "Duplicate scan complete: "
@@ -491,7 +508,9 @@ def _history_events(
 @staff_member_required
 @permission_required("assets.view_asset", raise_exception=True)
 def audit_log(request):
-    duplicate_decisions = DuplicateCandidate.history.exclude(
+    duplicate_decisions = restrict_peer_assets(
+        DuplicateCandidate.history.all(), request.user,
+    ).exclude(
         history_user__isnull=True,
         status=DuplicateCandidate.Status.OPEN,
     )
@@ -502,9 +521,14 @@ def audit_log(request):
         return f"{left} / {right}"
 
     events = [
-        *_history_events(Asset.history, "Asset", "name"),
-        *_history_events(Source.history, "Source", "title"),
-        *_history_events(AssetReviewComment.history, "Review comment", "body", limit=40),
+        *_history_events(restrict_peer_assets(Asset.history.all(), request.user), "Asset", "name"),
+        *_history_events(
+            restrict_peer_assets(Source.history.all(), request.user), "Source", "title",
+        ),
+        *_history_events(
+            restrict_peer_assets(AssetReviewComment.history.all(), request.user),
+            "Review comment", "body", limit=40,
+        ),
         *_history_events(
             duplicate_decisions,
             "Duplicate review",
