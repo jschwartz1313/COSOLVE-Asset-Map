@@ -30,6 +30,8 @@ const root = document.querySelector("[data-map-app]");
 const form = document.querySelector("#asset-filters");
 const list = document.querySelector("#result-list");
 const count = document.querySelector("#result-count");
+const countSummary = document.querySelector("[data-result-count-summary]");
+const assetsLoadingLabel = document.querySelector("[data-assets-loading]");
 const status = document.querySelector("#map-status");
 const directoryLink = document.querySelector("#directory-link");
 const exportLink = document.querySelector("#export-link");
@@ -146,6 +148,12 @@ function setAssetDataReady(ready) {
     selectExtentButton, showRegionSummaryButton,
   ]) button.disabled = !ready;
   updateViewActions();
+}
+
+function setAssetsLoading(active) {
+  countSummary.hidden = active;
+  assetsLoadingLabel.textContent = active ? "Loading assets..." : "";
+  assetsLoadingLabel.hidden = !active;
 }
 
 function showStatus(message) {
@@ -803,6 +811,7 @@ async function load(
   assetRequestController = new AbortController();
   const requestedFilterParams = filterParamsFromMapUrl(params);
   activeFilterParams = requestedFilterParams;
+  setAssetsLoading(true);
   setAssetDataReady(false);
   directoryLink.href = requestedFilterParams.toString()
     ? sitePath(`/directory/?${requestedFilterParams}`)
@@ -842,6 +851,9 @@ async function load(
     root.setAttribute("aria-busy", "false");
     showStatus("The map data could not be loaded. The directory remains available.");
     console.error(error);
+  } finally {
+    // A canceled older search must not clear the current request's indicator.
+    if (requestId === loadRequestId) setAssetsLoading(false);
   }
 }
 

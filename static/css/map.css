@@ -19,6 +19,7 @@ body.is-resizing-map-panels, body.is-resizing-map-panels * { cursor: col-resize 
 .filter-close { display: none; }
 #asset-filters { min-height: 0; display: flex; flex-direction: column; }
 .filter-fields-scroll { min-height: 0; display: grid; align-content: start; gap: 13px; overflow-y: auto; padding-right: 5px; flex: 1 1 auto; }
+.filter-fields-scroll :is(input[type="search"], input[type="text"], input[type="number"], textarea):focus-visible { outline: 2px solid var(--focus); outline-offset: -2px; }
 #asset-filters input[type="search"], #asset-filters select { height: var(--control-height); }
 #asset-filters details { padding-top: 9px; }
 #asset-filters details summary { margin-bottom: 0; }
@@ -197,6 +198,8 @@ body.is-resizing-map-panels, body.is-resizing-map-panels * { cursor: col-resize 
 .asset-results-view { grid-template-rows: auto auto minmax(0, 1fr); }
 .results-heading { padding: 18px 18px 14px; border-bottom: 1px solid var(--line); }
 .results-heading h2 { margin: 0; font-size: 20px; line-height: 1.3; font-weight: 700; }
+.results-heading #asset-results-title { min-height: 32px; }
+.assets-loading-label { font-size: 17px; line-height: 1.5; font-weight: 600; }
 .results-heading .text-link { color: var(--ink-muted); font-size: 12px; }
 .results-actions { display: grid; gap: 5px; text-align: right; }
 .result-list { min-height: 0; overflow-y: auto; }

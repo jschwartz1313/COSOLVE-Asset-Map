@@ -90,7 +90,7 @@ summary { margin-bottom: 8px; cursor: pointer; font-size: 14px; font-weight: 650
 .filter-select option { font: inherit; color: var(--ink); background: var(--paper); }
 .filter-select.is-enhanced { min-height: var(--control-height); border: 1px solid var(--line-strong); border-radius: 4px; background: var(--paper); }
 .filter-select.is-enhanced:hover { border-color: var(--ink-muted); }
-.filter-select.is-enhanced:has(select:focus-visible) { outline: 3px solid color-mix(in srgb, var(--focus), transparent 20%); outline-offset: 2px; }
+.filter-select select:focus-visible, .filter-select.is-enhanced:has(select:focus-visible) { outline: 2px solid var(--focus); outline-offset: -2px; }
 .filter-select.is-enhanced select { position: absolute; z-index: 1; inset: 0; height: 100%; opacity: 0; }
 .filter-select-value { display: flex; align-items: center; min-height: calc(var(--control-height) - 2px); padding: 4px 30px 4px 10px; color: var(--ink); font-size: 14px; font-weight: 500; line-height: 16px; white-space: normal; overflow-wrap: anywhere; pointer-events: none; }
 .filter-select:has(select:disabled) { opacity: .6; }
