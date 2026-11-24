@@ -31,7 +31,7 @@ services:
       - key: MULTISTATE_PUBLIC
         value: "false"
       - key: MULTISTATE_PREVIEW_USERS
-        value: "jschwartz,Ale,Chelsea"
+        value: "jschwartz"
       - key: PUBLIC_SCOPE_NAME
         value: Virginia
       - key: DEFAULT_MAP_LAT

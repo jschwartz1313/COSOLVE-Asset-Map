@@ -144,7 +144,7 @@ DEFAULT_MAP_ZOOM = int(os.getenv("DEFAULT_MAP_ZOOM", "7"))
 MULTISTATE_PUBLIC = os.getenv("MULTISTATE_PUBLIC", "false").lower() == "true"
 MULTISTATE_PREVIEW_USERS = tuple(
     name.strip()
-    for name in os.getenv("MULTISTATE_PREVIEW_USERS", "jschwartz,Ale,Chelsea").split(",")
+    for name in os.getenv("MULTISTATE_PREVIEW_USERS", "jschwartz").split(",")
     if name.strip()
 )
 PUBLIC_SITE_URL = os.getenv("PUBLIC_SITE_URL", "http://127.0.0.1:8000")

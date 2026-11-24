@@ -1,7 +1,7 @@
 # Peer-State Preview Access
 
-The current private preview is limited to the exact COSOLVE usernames `jschwartz`,
-`Ale`, and `Chelsea`. No passwords belong in this configuration. Accounts must also
+The current private preview is limited to the exact COSOLVE username `jschwartz`.
+Ale and Chelsea retain Virginia access only. No passwords belong in this configuration. Accounts must also
 be active staff with the existing asset-view permission; listing a username does
 not grant any editing or administrator permissions.
 

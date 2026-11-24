@@ -144,7 +144,7 @@ under ignored `tmp/`; checked-in manifests retain their source URLs and hashes.
 
 `MULTISTATE_PUBLIC=false` is the default. Competitor routes require an active
 staff account with asset-view permission whose exact username is listed in
-`MULTISTATE_PREVIEW_USERS` (currently `jschwartz,Ale,Chelsea`). Other staff and
+`MULTISTATE_PREVIEW_USERS` (currently `jschwartz`). Other staff and
 superusers remain Virginia-only in the site, admin, histories, working exports,
 review queues and saved views. Their existing Virginia editing permissions remain
 in place. The selector appears above map and directory filters, with a More-menu

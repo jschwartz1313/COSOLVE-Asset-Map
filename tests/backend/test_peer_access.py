@@ -24,18 +24,19 @@ from apps.sources.models import Source
 
 @override_settings(
     REQUIRE_SITE_LOGIN=False, PUBLIC_REGION_SLUG="", MULTISTATE_PUBLIC=False,
-    MULTISTATE_PREVIEW_USERS=("jschwartz", "Ale", "Chelsea"),
+    MULTISTATE_PREVIEW_USERS=("jschwartz",),
 )
 class PeerAccessTests(TestCase):
     @classmethod
     def setUpTestData(cls):
         users = get_user_model()
         cls.allowed = [users.objects.create_superuser("jschwartz", "", None)]
+        cls.denied_named = []
         view_asset = Permission.objects.get(content_type__app_label="assets", codename="view_asset")
         for name in ("Ale", "Chelsea"):
             user = users.objects.create_user(name, is_staff=True)
             user.user_permissions.add(view_asset)
-            cls.allowed.append(user)
+            cls.denied_named.append(user)
         cls.denied = users.objects.create_superuser("OtherAdmin", "", None)
         cls.denied_staff = users.objects.create_user("OtherEditor", is_staff=True)
         cls.denied_staff.user_permissions.add(view_asset)
@@ -80,14 +81,14 @@ class PeerAccessTests(TestCase):
             self.assertFalse(can_preview_peer_states(self.allowed[0]))
 
     def test_inactive_or_unprivileged_named_account_does_not_gain_asset_permissions(self):
-        user = self.allowed[1]
+        user = self.allowed[0]
         user.is_active = False
         self.assertFalse(can_preview_peer_states(user))
         user.is_active, user.is_staff = True, False
         self.assertFalse(can_preview_peer_states(user))
 
     def test_other_staff_and_guests_get_virginia_only_and_no_selector(self):
-        for user in (self.denied, self.denied_staff, self.guest):
+        for user in (self.denied, self.denied_staff, self.guest, *self.denied_named):
             self.client.force_login(user)
             for path in ("/map/", "/directory/", "/assets/" + self.va.slug + "/"):
                 response = self.client.get(path)
