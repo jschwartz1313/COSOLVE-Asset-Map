@@ -8,9 +8,10 @@ from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
 from django.db import connection
 from django.db.models import Count, Max
-from django.http import Http404, HttpResponse, JsonResponse
+from django.http import Http404, HttpResponse, HttpResponseBadRequest, JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
+from django.utils.http import url_has_allowed_host_and_scheme
 from django.views.decorators.http import require_POST
 
 from apps.api.query import filter_public_assets
@@ -92,6 +93,25 @@ def select_state(request):
             and not Region.objects.filter(state=state.code, is_active=True).exists()):
         view = "map"
     response = redirect(state.prefix + reverse(f"core:{view}", urlconf="config.urls"))
+    response["Cache-Control"] = "private, no-store"
+    return response
+
+
+@login_required
+@require_POST
+def design_preview(request):
+    if not can_preview_peer_states(request.user):
+        raise Http404
+    experience = request.POST.get("experience")
+    if experience not in {"standard", "2.0"}:
+        return HttpResponseBadRequest("Unknown experience.")
+    request.session["design_preview"] = experience
+    destination = request.POST.get("next", "")
+    if not url_has_allowed_host_and_scheme(
+        destination, allowed_hosts={request.get_host()}, require_https=request.is_secure(),
+    ):
+        destination = reverse("core:map")
+    response = redirect(destination)
     response["Cache-Control"] = "private, no-store"
     return response
 

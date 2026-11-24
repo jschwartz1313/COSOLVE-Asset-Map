@@ -41,6 +41,8 @@ def map_settings(request):
         "inventory_has_regions": virginia or scoped_regions().exists(),
         "inventory_preview": getattr(request, "inventory_preview", False),
         "can_access_all_states": settings.MULTISTATE_PUBLIC or can_preview,
+        "can_preview_design": can_preview,
+        "design_v2": can_preview and request.session.get("design_preview") == "2.0",
         "boundary_version": "2025" if virginia else "20261117",
         "inventory_states": STATES if can_preview or settings.MULTISTATE_PUBLIC else STATES[:1],
         "state_switch_in_filters": page_name in {"home", "map", "directory"},

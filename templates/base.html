@@ -10,25 +10,32 @@
   <link rel="icon" type="image/png" href="{% static 'img/cosolve-logo-black.png' %}">
   <link rel="apple-touch-icon" href="{% static 'img/cosolve-logo-black.png' %}">
   <link rel="stylesheet" href="{% static 'css/tokens.css' %}?v=20261119-1">
-  <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20261119-3">
+  <link rel="stylesheet" href="{% static 'css/base.css' %}?v=20261124-1">
   {% block extra_css %}{% endblock %}
+  {% if design_v2 %}<link rel="stylesheet" href="{% static 'css/experience-v2.css' %}?v=20261124-1">{% endif %}
   <script type="module" src="{% static 'js/site-header.js' %}?v=20261117-1"></script>
 </head>
-<body class="{% block body_class %}{% endblock %}" data-inventory-state="{{ inventory_state.code }}" data-site-prefix="{{ inventory_prefix }}">
+<body class="{% if design_v2 %}is-v2 {% endif %}{% block body_class %}{% endblock %}" data-inventory-state="{{ inventory_state.code }}" data-site-prefix="{{ inventory_prefix }}">
   <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <a class="brand" href="{% url 'core:map' %}" aria-label="COSOLVE asset map home">
       <span class="brand-logo" aria-hidden="true">
         <img src="{% static 'img/cosolve-logo-black.png' %}" alt="">
       </span>
-      <small>{{ public_scope_name }} Asset Map</small>
+      <small>{{ public_scope_name }}{% if design_v2 %}<span>Autonomy asset intelligence</span>{% else %} Asset Map{% endif %}</small>
     </a>
+    {% if design_v2 %}<div class="v2-workspace-heading"><span>Workspace</span><strong>{% if request.resolver_match.url_name == 'map' or request.resolver_match.url_name == 'home' %}Ecosystem explorer{% elif request.resolver_match.url_name == 'directory' %}Asset directory{% elif request.resolver_match.url_name == 'asset-detail' %}Asset profile{% elif request.resolver_match.url_name == 'test-sites' %}Test-site search{% elif request.resolver_match.url_name == 'manufacturing-search' %}Manufacturing search{% elif request.resolver_match.url_name == 'asset-compare' %}Asset comparison{% else %}{{ public_scope_name }} ecosystem{% endif %}</strong></div>{% endif %}
     <nav class="primary-nav" aria-label="Primary navigation">
-      <a href="{% url 'core:map' %}" {% if request.resolver_match.url_name == 'map' or request.resolver_match.url_name == 'home' %}aria-current="page"{% endif %}>Map</a>
-      <a id="directory-link" href="{% url 'core:directory' %}" {% if request.resolver_match.url_name == 'directory' or request.resolver_match.url_name == 'asset-detail' or request.resolver_match.url_name == 'asset-suggest-update' %}aria-current="page"{% endif %}>Directory</a>
-      {% if not public_scope_is_regional and inventory_has_regions %}<a href="{% url 'core:region-compare' %}" {% if request.resolver_match.url_name == 'region-compare' %}aria-current="page"{% endif %}>Regions</a>{% endif %}
+      <a href="{% url 'core:map' %}" title="Map" {% if request.resolver_match.url_name == 'map' or request.resolver_match.url_name == 'home' %}aria-current="page"{% endif %}>{% if design_v2 %}<img class="v2-icon" src="{% static 'img/icons/interface/map.svg' %}" alt="">{% endif %}Map</a>
+      <a id="directory-link" href="{% url 'core:directory' %}" title="Directory" {% if request.resolver_match.url_name == 'directory' or request.resolver_match.url_name == 'asset-detail' or request.resolver_match.url_name == 'asset-suggest-update' %}aria-current="page"{% endif %}>{% if design_v2 %}<img class="v2-icon" src="{% static 'img/icons/interface/rows-3.svg' %}" alt="">{% endif %}Directory</a>
+      {% if not public_scope_is_regional and inventory_has_regions %}<a href="{% url 'core:region-compare' %}" title="Regional comparison" {% if request.resolver_match.url_name == 'region-compare' %}aria-current="page"{% endif %}>{% if design_v2 %}<img class="v2-icon" src="{% static 'img/icons/interface/layers.svg' %}" alt="">{% endif %}Regions</a>{% endif %}
+      {% if design_v2 %}
+      <a class="v2-nav-extra" href="{% url 'core:test-sites' %}" title="Test-site search" {% if request.resolver_match.url_name == 'test-sites' %}aria-current="page"{% endif %}><img class="v2-icon" src="{% static 'img/icons/legend/radar.svg' %}" alt="">Test sites</a>
+      <a class="v2-nav-extra" href="{% url 'core:manufacturing-search' %}" title="Manufacturing search" {% if request.resolver_match.url_name == 'manufacturing-search' %}aria-current="page"{% endif %}><img class="v2-icon" src="{% static 'img/icons/legend/factory.svg' %}" alt="">Industry</a>
+      <a class="v2-nav-extra" href="{% url 'core:asset-compare' %}" title="Compare assets" {% if request.resolver_match.url_name == 'asset-compare' %}aria-current="page"{% endif %}><img class="v2-icon" src="{% static 'img/icons/interface/columns-3.svg' %}" alt="">Compare</a>
+      {% endif %}
       <details class="navigation-menu header-menu" data-header-menu>
-        <summary {% if request.resolver_match.url_name == 'about-data' or request.resolver_match.url_name == 'connect' or request.resolver_match.url_name == 'test-sites' %}class="is-current"{% endif %}>More</summary>
+        <summary {% if request.resolver_match.url_name == 'about-data' or request.resolver_match.url_name == 'connect' or request.resolver_match.url_name == 'test-sites' %}class="is-current"{% endif %}>{% if design_v2 %}<img class="v2-icon" src="{% static 'img/icons/interface/ellipsis.svg' %}" alt="">{% endif %}More</summary>
         <div class="header-menu-panel">
       {% if not state_switch_in_filters %}{% include "includes/state_switcher.html" %}{% endif %}
       <a href="{% url 'core:test-sites' %}" {% if request.resolver_match.url_name == 'test-sites' %}aria-current="page"{% endif %}>Test-site search</a>
@@ -36,6 +43,7 @@
       <a href="{% url 'core:manufacturing-search' %}" {% if request.resolver_match.url_name == 'manufacturing-search' %}aria-current="page"{% endif %}>Manufacturing search</a>
       <a href="{% url 'core:about-data' %}" {% if request.resolver_match.url_name == 'about-data' %}aria-current="page"{% endif %}>About data</a>
       <a href="{% url 'core:connect' %}" {% if request.resolver_match.url_name == 'connect' %}aria-current="page"{% endif %}>Get connected</a>
+      {% if design_v2 %}<a href="{% url 'core:saved-views' %}">Saved views</a>{% endif %}
       {% if user.is_staff %}<a href="{% url 'admin:index' %}">Admin</a>{% endif %}
       {% if user.is_authenticated %}
         <form method="post" action="{% url 'logout' %}" class="nav-logout">
@@ -46,6 +54,13 @@
         </div>
       </details>
     </nav>
+    {% if can_preview_design %}
+    <form class="experience-switch" action="{% url 'core:design-preview' %}" method="post" aria-label="Site version">
+      {% csrf_token %}<input type="hidden" name="next" value="{{ request.get_full_path }}">
+      {% if design_v2 %}<button type="submit" name="experience" value="standard">Current</button>{% endif %}
+      <button type="submit" name="experience" value="2.0"{% if design_v2 %} aria-pressed="true"{% endif %} title="2.0 design preview">2.0</button>
+    </form>
+    {% endif %}
   </header>
   {% if messages %}
     <div class="messages" aria-live="polite">

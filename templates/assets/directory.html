@@ -20,6 +20,7 @@
   </aside>
   <section class="directory-results">
     <div class="directory-heading">
+      {% if design_v2 %}<span class="v2-results-kicker">{{ public_scope_name }} / Inventory</span>{% endif %}
       <h2>{{ result_count }} matching asset{{ result_count|pluralize }}</h2>
       <div class="heading-actions">
         {% if user.is_staff %}<a class="button secondary" href="{% url 'imports:export' %}?{{ request.GET.urlencode }}">Export CSV</a>{% endif %}

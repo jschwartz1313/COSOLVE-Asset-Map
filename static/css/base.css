@@ -4,6 +4,16 @@ body { margin: 0; min-width: 320px; }
 a { color: inherit; }
 button, input, select, textarea { font: inherit; }
 button, a { -webkit-tap-highlight-color: transparent; }
+.experience-switch { display: flex; flex: 0 0 auto; align-items: center; gap: 2px; margin-left: 18px; padding: 3px; border: 1px solid var(--line-strong); border-radius: 6px; background: var(--paper); }
+.experience-switch button { min-width: 42px; min-height: 32px; padding: 5px 10px; border: 0; border-radius: 3px; background: transparent; color: var(--ink); font: inherit; font-size: 13px; font-weight: 600; cursor: pointer; }
+.experience-switch button:hover { background: var(--surface-hover); }
+.experience-switch button[aria-pressed="true"] { background: var(--ink); color: white; }
+@media (max-width: 650px) {
+  .site-header:has(.experience-switch) { grid-template-columns: minmax(0, 1fr) auto; }
+  .site-header:has(.experience-switch) .primary-nav { grid-column: 1 / -1; }
+  .experience-switch { grid-row: 1; grid-column: 2; margin-left: 8px; }
+}
+@media print { .experience-switch { display: none !important; } }
 :focus-visible { outline: 3px solid color-mix(in srgb, var(--focus), transparent 20%); outline-offset: 2px; }
 .visually-hidden { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0, 0, 0, 0) !important; white-space: nowrap !important; border: 0 !important; }
 .skip-link { position: fixed; left: 12px; top: -60px; z-index: 2000; background: var(--paper); padding: 10px 14px; }

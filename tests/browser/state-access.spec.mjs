@@ -38,6 +38,7 @@ test("approved selector sits above filters and starts new states on Street", asy
   await expect(page.locator(".site-header [data-state-switcher]")).toHaveCount(0);
   await page.getByLabel("State inventory").selectOption("california");
   await expect(page).toHaveURL(/\/states\/california\/directory\//);
+  await expect(page.locator('.directory-row').first()).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   await page.screenshot({ path: info.outputPath("state-picker-directory.png"), animations: "disabled" });
   await page.goto("/states/ohio/map/?map_basemap=topo");

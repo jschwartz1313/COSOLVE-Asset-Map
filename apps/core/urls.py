@@ -5,6 +5,7 @@ from . import decision_tools, manufacturing_views, operator_views, views
 app_name = "core"
 urlpatterns = [
     path("select-state/", views.select_state, name="select-state"),
+    path("design-preview/", views.design_preview, name="design-preview"),
     path("", views.map_view, name="home"),
     path("map/", views.map_view, name="map"),
     path("directory/", views.directory_view, name="directory"),
