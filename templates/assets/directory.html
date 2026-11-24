@@ -29,9 +29,12 @@
       </div>
     </div>
     {% include "includes/comparison_tray.html" %}
-    <div class="directory-columns" aria-hidden="true"><span>Asset</span><span>Classification</span><span>Location</span></div>
+    <div class="directory-columns" aria-hidden="true">{% if design_v2 %}<span>Asset and location</span><span>Purpose and focus</span><span></span>{% else %}<span>Asset</span><span>Classification</span><span>Location</span>{% endif %}</div>
     <div class="directory-list">
       {% for asset in page_obj %}
+        {% if design_v2 %}
+          {% include "assets/includes/directory_record_v2.html" %}
+        {% else %}
         <article class="directory-row">
           <div class="directory-row-main">
             <div class="directory-asset-heading">
@@ -48,6 +51,7 @@
           </div>
           <div class="directory-location"><strong>{{ asset.city|default:inventory_state.name }}</strong>{% if asset.city and asset.state %}<span>{{ asset.state }}</span>{% endif %}{% if asset.location_role %}<small>{{ asset.get_location_role_display }}</small>{% endif %}</div>
         </article>
+        {% endif %}
       {% empty %}
         <div class="empty-state"><h3>No matching assets</h3><p>Adjust the active filters or search terms.</p></div>
       {% endfor %}

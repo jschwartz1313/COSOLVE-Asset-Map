@@ -15,6 +15,7 @@
       <p class="lead">{{ asset.short_description }}</p>
     </div>
   </header>
+  {% if design_v2 %}{% include "assets/includes/contact_location.html" %}{% endif %}
   <div class="detail-grid">
     <article class="detail-main">
       {% if about_paragraphs or profile_photo %}
@@ -85,26 +86,7 @@
       </section>
       {% endif %}
     </article>
-    <section class="detail-sidebar" aria-labelledby="contact-location-heading">
-      <h2 id="contact-location-heading">Contact and location</h2>
-      {% if asset.website_url or public_contact.text or public_contact.phone or public_contact.email or public_contact.url %}
-      <div class="contact-section">
-        <h3>{% if public_contact.operator_provided %}Operator-provided contact{% else %}Contact{% endif %}</h3>
-        {% if asset.website_url %}<a class="button primary full" href="{{ asset.website_url }}" target="_blank" rel="noopener noreferrer">Visit website</a>{% endif %}
-        <dl>{% if public_contact.phone %}<dt>Phone</dt><dd><a href="tel:{{ public_contact.phone }}">{{ public_contact.phone }}</a></dd>{% endif %}{% if public_contact.email %}<dt>Email</dt><dd><a href="mailto:{{ public_contact.email }}">{{ public_contact.email }}</a></dd>{% endif %}{% if public_contact.url %}<dt>Public contact route</dt><dd><a href="{{ public_contact.url }}" target="_blank" rel="noopener noreferrer">Open contact information</a></dd>{% endif %}</dl>
-        {% if public_contact.text %}<p class="field-note contact-scope">{{ public_contact.text }}</p>{% endif %}
-      </div>
-      {% endif %}
-      <div class="location-section{% if not asset.website_url and not public_contact.text and not public_contact.phone and not public_contact.email and not public_contact.url %} location-only{% endif %}">
-        <h3>Location</h3>
-        <dl>
-          {% if asset.location_role %}<dt>Location represents</dt><dd>{{ asset.get_location_role_display }}</dd>{% endif %}
-          {% if asset.address_line %}<dt>Public site address</dt><dd>{{ asset.address_line }}<br>{{ asset.city }}{% if asset.state %}, {{ asset.state }}{% endif %} {{ asset.postal_code }}</dd>{% endif %}
-          <dt>Map precision</dt><dd>{{ asset.public_location_label }}</dd>
-        </dl>
-        {% if asset.location_notes %}<p class="field-note">{{ asset.location_notes }}</p>{% elif asset.location_precision == "regional" %}<p class="field-note">This asset serves the region and has no single documented public site, so no map pin is shown.</p>{% elif not asset.has_public_coordinates %}<p class="field-note">No map point has been established for this documented location.</p>{% elif asset.location_precision == "site" %}<p class="field-note">The pin identifies the documented site or campus, not a room, building entrance, or operational position.</p>{% elif asset.location_precision == "locality" or asset.location_precision == "approximate" %}<p class="field-note">The pin identifies the locality, not a confirmed facility or operating address.</p>{% endif %}
-      </div>
-    </section>
+    {% if not design_v2 %}{% include "assets/includes/contact_location.html" %}{% endif %}
     <div class="detail-supporting">
       <details class="detail-disclosure supporting-disclosure">
         <summary><span>Supporting details</span></summary>

@@ -23,3 +23,21 @@ owner's explicit decision; website restrictions do not conceal repository files.
 
 All preview CSS is isolated in `static/css/experience-v2.css`. Removing the opt-in
 flag restores the standard styles. No schema migration or hosting change is needed.
+
+## Information Layout Trial, November 24
+
+The first 2.0 version is preserved at Git tag
+`design-v2-before-data-layout-20261124`, commit `3137210ce0207a894372bd808393422283dfaa70`.
+A source ZIP and before screenshots are also stored on the owner's Desktop in
+`COSOLVE Design History/2026-11-24 Before data layout`.
+
+The trial retains the navigation rail and existing controls. Directory rows group
+identity and location together, give descriptions a wider column, and keep focus
+and portfolio information visible. Map result names lead each record. Profiles
+promote contact/location to a horizontal section and use one reading column for
+the substantive asset information. No asset fields, sources, permissions or
+exports are changed. The standard interface retains its original layout.
+
+To undo the trial, restore only its changed presentation files from the baseline
+and remove the two trial-only partials. Do not reset the repository or restore a
+database: later asset edits and unrelated work must be preserved.

@@ -104,6 +104,42 @@ test('other accounts have neither state selection nor the 2.0 button',async({pag
   expect((await page.request.get('/states/ohio/map/')).status()).toBe(404);
 });
 
+test('information layout retains complete profile content, links and filtered exports',async({page})=>{
+  await login(page);
+  const profile='/assets/nasa-langley-roam-uas-operations-center/';
+  const csvPath='/admin/imports/export/?q=NASA%20Langley%20ROAM';
+  const originalCsv=await (await page.request.get(csvPath)).text();
+  await page.goto(profile);
+  const sections=['.detail-sidebar','.overview-copy','.focus-section','.supporting-content'];
+  async function content() {
+    const result=[];
+    for(const selector of sections) {
+      const block=page.locator(selector);
+      result.push({text:(await block.textContent()).replace(/\s+/g,' ').trim(),
+        links:await block.locator('a').evaluateAll(links=>links.map(link=>link.getAttribute('href')))});
+    }
+    return result;
+  }
+  const original=await content();
+  const description=await page.locator('.detail-header .lead').innerText();
+  await page.getByRole('button',{name:'2.0',exact:true}).click();
+  expect(await content()).toEqual(original);
+  const contact=await page.locator('.detail-sidebar').boundingBox();
+  const overview=await page.locator('.overview-section').boundingBox();
+  expect(contact.y+contact.height).toBeLessThanOrEqual(overview.y);
+  expect(await (await page.request.get(csvPath)).text()).toBe(originalCsv);
+  await page.goto('/directory/?q=NASA%20Langley%20ROAM');
+  const record=page.locator('.v2-directory-record').filter({hasText:'NASA Langley ROAM UAS Operations Center'}).first();
+  await expect(record.locator('.v2-record-purpose > p')).toHaveText(description);
+  await expect(record.locator('.v2-record-place')).toContainText('Hampton, VA');
+  const name=record.locator('h3 a');
+  expect(await record.locator('.v2-profile-link').getAttribute('href')).toBe(await name.getAttribute('href'));
+  await name.click();
+  expect(await content()).toEqual(original);
+  await page.getByRole('button',{name:'Current',exact:true}).click();
+  expect(await content()).toEqual(original);
+});
+
 test('2.0 print and presentation retain the map without the navigation rail',async({page},info)=>{
   await login(page);
   await page.getByRole('button',{name:'2.0',exact:true}).click();

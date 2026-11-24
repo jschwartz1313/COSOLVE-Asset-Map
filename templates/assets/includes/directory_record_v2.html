@@ -1,0 +1,19 @@
+{% load static %}
+<article class="directory-row v2-directory-record">
+  <div class="directory-row-main">
+    <div class="directory-asset-heading">
+      <label class="directory-compare-control"><input type="checkbox" data-compare-asset="{{ asset.slug }}" data-compare-name="{{ asset.public_name }}" aria-label="Compare {{ asset.public_name }}" title="Select for comparison" disabled></label>
+      <h3><a href="{{ asset.get_absolute_url }}">{{ asset.public_name }}</a></h3>
+    </div>
+    <div class="v2-record-identity">
+      <div class="v2-record-place"><strong>{{ asset.city|default:inventory_state.name }}{% if asset.city and asset.state %}, {{ asset.state }}{% endif %}</strong>{% if asset.location_role %}<span>{{ asset.get_location_role_display }}</span>{% endif %}</div>
+      <div class="v2-record-labels"><span class="type-pill type-{{ asset.record_type }}">{{ asset.get_record_type_display }}</span>{% if asset.activity_status %}<span class="activity-label">{{ asset.get_activity_status_display }}</span>{% endif %}</div>
+      {% if asset.is_vipc_portfolio %}<span class="affiliation-tag" title="VIPC portfolio: {{ asset.get_vipc_portfolio_sector_display }}">VIPC portfolio organization</span>{% endif %}
+    </div>
+  </div>
+  <div class="v2-record-purpose">
+    <p>{{ asset.short_description }}</p>
+    {% with category=asset.strategic_categories.all|first %}{% if category %}<div class="v2-record-focus"><span>Focus</span>{{ category.name }}</div>{% endif %}{% endwith %}
+  </div>
+  <a class="v2-profile-link" href="{{ asset.get_absolute_url }}" aria-label="Open profile for {{ asset.public_name }}" title="View asset profile"><img src="{% static 'img/icons/legend/clipboard-list.svg' %}" alt="" width="18" height="18"></a>
+</article>
