@@ -96,7 +96,6 @@ export function summarizeRegion(features, regionSlug) {
   );
   const typeCounts = new Map();
   const capabilityCounts = new Map();
-  let reviewed = 0;
   let siteLevel = 0;
   for (const feature of regional) {
     const properties = feature.properties;
@@ -108,14 +107,12 @@ export function summarizeRegion(features, regionSlug) {
         (capabilityCounts.get(capability.name) || 0) + 1,
       );
     }
-    if (properties.verification_state === "reviewed") reviewed += 1;
     if (["exact", "site"].includes(properties.location.precision)) siteLevel += 1;
   }
   const descending = (entries) =>
     [...entries].sort((first, second) => second[1] - first[1] || first[0].localeCompare(second[0]));
   return {
     total: regional.length,
-    reviewed,
     siteLevel,
     types: descending(typeCounts.entries()),
     capabilities: descending(capabilityCounts.entries()).slice(0, 5),
@@ -139,8 +136,6 @@ export function featureCsv(features) {
     ["coordinate_basis", (feature) => feature.properties.location.method_label],
     ["location_notes", (feature) => feature.properties.location.notes],
     ["location_source", (feature) => feature.properties.location.source_url],
-    ["location_evidence_reviewed", (feature) => feature.properties.location.reviewed_at],
-    ["verification", (feature) => feature.properties.verification_state_label],
     ["latitude", (feature) => feature.geometry?.coordinates[1] ?? ""],
     ["longitude", (feature) => feature.geometry?.coordinates[0] ?? ""],
     ["detail_url", (feature) => feature.properties.detail_url],

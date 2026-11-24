@@ -207,7 +207,7 @@ test("versioned saved map state can hide asset points", () => {
   assert.deepEqual(state.layers, ["state"]);
 });
 
-test("saved map state restores imagery and analytical layers", () => {
+test("saved map state restores imagery and precision but ignores retired verification layers", () => {
   const state = mapStateFromParams(
     new URLSearchParams(
       "map_layers=assets,verification,precision,relationships&map_layers_v=3&map_basemap=imagery",
@@ -215,7 +215,6 @@ test("saved map state restores imagery and analytical layers", () => {
   );
   assert.deepEqual(state.layers, [
     "assets",
-    "verification",
     "precision",
   ]);
   assert.equal(state.basemap, "imagery");

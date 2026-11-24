@@ -1,7 +1,9 @@
 from datetime import date
 
+from django.contrib.auth import get_user_model
 from django.test import TestCase, override_settings
 from django.urls import reverse
+from django.utils import timezone
 
 from apps.assets.models import Asset, Relationship
 from apps.catalog.models import MissionArea, PlatformDomain, Region, StrategicCategory
@@ -107,10 +109,7 @@ class PublicApiTests(TestCase):
             public_feature["properties"]["location"]["precision_label"],
             "Site or campus",
         )
-        self.assertEqual(
-            public_feature["properties"]["verification_state"],
-            "source-backed",
-        )
+        self.assertNotIn("verification_state", public_feature["properties"])
         self.assertEqual(
             public_feature["properties"]["capabilities"],
             [],
@@ -185,6 +184,60 @@ class PublicApiTests(TestCase):
         related = response.json()["related_entities"]
         self.assertIn(self.partner.name, [item["name"] for item in related])
         self.assertEqual(related[0]["direction"], "incoming")
+
+    def test_review_metadata_is_internal_without_losing_staff_recheck_tracking(self):
+        old_date = date(2000, 1, 2)
+        Asset.objects.filter(pk=self.public.pk).update(
+            last_verified_at=old_date, reviewed_at=timezone.now(),
+            review_due_at=old_date, location_last_verified_at=old_date,
+            test_source_url="https://example.org/source", test_last_verified_at=old_date,
+            test_aircraft="Unmanned aircraft", test_max_weight_lb=55,
+            test_suitability_source_url="https://example.org/source",
+            test_suitability_reviewed_at=old_date,
+        )
+        source = self.public.sources.get()
+        source.verification_status = "verified"
+        source.last_verified_at = old_date
+        source.save()
+        private_keys = {
+            "last_verified_at", "reviewed_at", "review_due_at", "verification_status",
+            "verification_state", "verification_state_label", "review_status",
+            "review_status_label", "test_last_verified_at", "test_suitability_reviewed_at",
+        }
+
+        def check_keys(value):
+            if isinstance(value, dict):
+                self.assertFalse(private_keys & value.keys())
+                for child in value.values():
+                    check_keys(child)
+            elif isinstance(value, list):
+                for child in value:
+                    check_keys(child)
+
+        for name, args in (
+            ("api:asset-list", []), ("api:asset-geojson", []),
+            ("api:asset-detail", [self.public.slug]),
+        ):
+            response = self.client.get(reverse(name, args=args))
+            self.assertEqual(response.status_code, 200)
+            check_keys(response.json())
+        page = self.client.get(self.public.get_absolute_url())
+        self.assertNotContains(page, "Last verified")
+        self.assertNotContains(page, "Verified")
+        self.assertContains(page, "https://example.org/source")
+        self.public.refresh_from_db()
+        source.refresh_from_db()
+        self.assertEqual(self.public.last_verified_at, old_date)
+        self.assertEqual(self.public.review_due_at, old_date)
+        self.assertEqual(source.last_verified_at, old_date)
+        self.assertEqual(source.verification_status, "verified")
+        self.client.force_login(get_user_model().objects.create_superuser(
+            "review-owner", "owner@example.org", "TestOnlyPassword19!",
+        ))
+        queue = self.client.get(reverse("imports:data-quality"))
+        self.assertContains(queue, "Last verified")
+        self.assertContains(queue, "Jan 2, 2000")
+        self.assertIn(self.public, queue.context["stale"])
 
     def test_repeated_values_within_facet_use_or_logic(self):
         response = self.client.get(

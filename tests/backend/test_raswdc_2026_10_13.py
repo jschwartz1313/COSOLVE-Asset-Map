@@ -65,9 +65,9 @@ class RaswdcReleaseTests(TestCase):
         self.assertContains(response, "phased implementation")
         self.assertContains(response, self.base.get_absolute_url())
         payload = self.client.get(f"/api/assets/{command.slug}/").json()
-        self.assertEqual(payload["review_status"], "source-backed")
-        self.assertEqual(payload["review_status_label"], "Source-backed; editorial review pending")
-        self.assertIsNone(payload["last_verified_at"])
+        self.assertNotIn("review_status", payload)
+        self.assertNotIn("review_status_label", payload)
+        self.assertNotIn("last_verified_at", payload)
         self.assertEqual(payload["location"]["precision"], "site")
         self.assertEqual(payload["activity"]["status"], "developing")
 

@@ -32,7 +32,7 @@ class CoreViewTests(TestCase):
         self.assertContains(response, 'id="region-layer-toggle"')
         self.assertContains(response, 'id="heliport-layer-toggle"')
         self.assertContains(response, 'id="state-boundary-toggle"')
-        self.assertContains(response, 'id="verification-layer-toggle"')
+        self.assertNotContains(response, 'id="verification-layer-toggle"')
         self.assertContains(response, 'id="precision-layer-toggle"')
         self.assertContains(response, 'id="nearby-search"')
         self.assertContains(response, 'id="presentation-view"')
@@ -226,7 +226,7 @@ class CoreViewTests(TestCase):
     def test_about_data_renders(self):
         response = self.client.get(reverse("core:about-data"))
         self.assertContains(response, "About the data")
-        self.assertContains(response, "Editorial review")
+        self.assertNotContains(response, "Editorial review")
         self.assertContains(response, "Suggest an update")
         self.assertNotContains(response, "Verification range")
 
@@ -252,14 +252,14 @@ class CoreViewTests(TestCase):
         response = self.client.get(reverse("core:about-data"))
 
         self.assertEqual(response.context["asset_count"], 2)
-        self.assertEqual(response.context["reviewed_count"], 1)
-        self.assertEqual(response.context["pending_review_count"], 1)
+        self.assertNotIn("reviewed_count", response.context)
+        self.assertNotIn("pending_review_count", response.context)
         self.assertContains(
             response,
             "<div><strong>2</strong><span>listed assets</span></div>",
             html=True,
         )
-        self.assertContains(response, "<dd>1 records pending</dd>", html=True)
+        self.assertNotContains(response, "records pending")
         self.assertNotContains(response, "<span>published assets</span>", html=True)
 
     def test_asset_detail_preserves_profile_without_public_review_metadata(self):

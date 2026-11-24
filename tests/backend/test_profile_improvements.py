@@ -99,7 +99,7 @@ class PublicProfileTests(TestCase):
         detail = self.client.get(reverse("api:asset-detail", args=[self.asset.slug])).json()
         self.assertEqual(detail["name"], self.asset.public_name)
         self.assertEqual(detail["location"]["role"], "airport")
-        self.assertEqual(detail["location"]["reviewed_at"], "2026-09-04")
+        self.assertNotIn("reviewed_at", detail["location"])
         geo = self.client.get(reverse("api:asset-geojson"), {"q": "ORF"}).json()
         self.assertEqual(geo["features"][0]["properties"]["name"], self.asset.public_name)
         self.assertEqual(geo["features"][0]["properties"]["location"]["method"], "published")

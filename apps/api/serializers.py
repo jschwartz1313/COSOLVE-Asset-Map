@@ -11,8 +11,6 @@ def location_context(asset):
         "method_label": asset.get_location_method_display() if asset.location_method else "",
         "notes": asset.location_notes,
         "source_url": asset.location_source_url,
-        "reviewed_at": (asset.location_last_verified_at.isoformat()
-                        if asset.location_last_verified_at else None),
     }
 
 
@@ -23,6 +21,7 @@ def test_specifications(asset):
         field: (None if field in STRUCTURED_TEST_FIELDS and not supported
                 else value.isoformat() if hasattr(value, "isoformat") else value)
         for field in TEST_SPEC_FIELDS
+        if field not in {"test_last_verified_at", "test_suitability_reviewed_at"}
         for value in [getattr(asset, field)]
     }
 
@@ -84,11 +83,6 @@ def public_asset_dict(asset, include_detail=True):
         "platform_domains": names(asset.platform_domains),
         "capabilities": names(asset.capabilities),
         "missions": names(asset.missions),
-        "last_verified_at": asset.last_verified_at.isoformat() if asset.last_verified_at else None,
-        "review_status": "editorially-reviewed"
-        if asset.is_editorially_reviewed
-        else "source-backed",
-        "review_status_label": asset.verification_label,
         "detail_url": asset.get_absolute_url(),
     }
     if include_detail:
@@ -108,9 +102,6 @@ def public_asset_dict(asset, include_detail=True):
                     "current_activity": asset.current_activity,
                     "partnership_opportunities": asset.partnership_opportunities,
                     "source_url": asset.activity_source_url,
-                    "last_verified_at": asset.activity_last_verified_at.isoformat()
-                    if asset.activity_last_verified_at
-                    else None,
                 },
                 "development_readiness": {
                     "owner_operator": asset.owner_operator,
@@ -124,9 +115,6 @@ def public_asset_dict(asset, include_detail=True):
                     "notes": asset.development_notes,
                     "infrastructure_access": asset.infrastructure_access,
                     "source_url": asset.development_source_url,
-                    "last_verified_at": asset.development_last_verified_at.isoformat()
-                    if asset.development_last_verified_at
-                    else None,
                 },
                 "sources": [
                     {
@@ -135,10 +123,6 @@ def public_asset_dict(asset, include_detail=True):
                         "source_date": source.source_date.isoformat()
                         if source.source_date
                         else None,
-                        "last_verified_at": (
-                            source.last_verified_at.isoformat() if source.last_verified_at else None
-                        ),
-                        "verification_status": source.verification_status,
                     }
                     for source in asset.sources.all()
                     if source.is_public
@@ -169,11 +153,6 @@ def asset_feature(asset):
         "vipc_portfolio_sector": asset.vipc_portfolio_sector,
         "vipc_portfolio_sector_label": asset.get_vipc_portfolio_sector_display(),
         "short_description": asset.short_description,
-        "verification_state": asset.verification_state,
-        "verification_state_label": asset.verification_state_label,
-        "last_verified_at": asset.last_verified_at.isoformat()
-        if asset.last_verified_at
-        else None,
         "location": {
             **location_context(asset),
             "address_line": asset.address_line,

@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="{% static 'vendor/leaflet/leaflet.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.css' %}">
   <link rel="stylesheet" href="{% static 'vendor/leaflet-markercluster/MarkerCluster.Default.css' %}">
-  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20261124-3">
+  <link rel="stylesheet" href="{% static 'css/map.css' %}?v=20261124-4">
 {% endblock %}
 {% block content %}
 <main id="main-content" class="map-workspace" data-map-app
@@ -104,7 +104,7 @@
     </details>
     <section class="print-analysis-report" aria-label="Printable asset register">
       <header><span class="eyebrow">COSOLVE geographic asset intelligence</span><h2 id="print-report-title">Current map asset report</h2><p id="print-report-context"></p></header>
-      <table><thead><tr><th>Asset</th><th>Type</th><th>Region</th><th>Location precision</th><th>Review status</th></tr></thead><tbody id="print-report-rows"></tbody></table>
+      <table><thead><tr><th>Asset</th><th>Type</th><th>Region</th><th>Location precision</th></tr></thead><tbody id="print-report-rows"></tbody></table>
       <p class="print-methodology">This report represents the documented public-source inventory and map selection as of the generated date. Counts indicate catalog coverage and should not be interpreted as proof that an undocumented capability is absent.</p>
     </section>
     <button class="button compact presentation-exit" id="exit-presentation" type="button" hidden>Exit presentation</button>
@@ -173,7 +173,6 @@
             <label title="Show three MAAP-supplied reference outlines; Central Virginia is draft, not current flight authorization"><input id="maap-flight-areas-toggle" type="checkbox"{% if not inventory_is_virginia %} disabled data-unavailable-layer{% endif %}><span>MAAP flight-area outlines{% include "includes/layer_freshness.html" with layer=layer_freshness.maap_flight_areas %}</span></label>
             </div>
             <strong>Point analysis</strong>
-            <label title="Outline points by editorial review state"><input id="verification-layer-toggle" type="checkbox"><span>Verification status</span></label>
             <label title="Differentiate points by coordinate precision"><input id="precision-layer-toggle" type="checkbox"><span>Location precision</span></label>
           </div>
         </details>
@@ -219,12 +218,6 @@
               <span><i class="legend-maap-area"></i>Supplied outline</span>
               <span><i class="legend-maap-area draft"></i>Draft source outline</span>
             </div>
-            <div class="legend-analysis-group" data-legend-toggle="verification-layer-toggle" data-legend-requires-assets data-verification-legend hidden>
-              <strong>Verification</strong>
-              <span><i class="legend-ring reviewed"></i>Reviewed</span>
-              <span><i class="legend-ring source-backed"></i>Review pending</span>
-              <span><i class="legend-ring stale"></i>Review out of date</span>
-            </div>
             <div class="legend-analysis-group" data-legend-toggle="precision-layer-toggle" data-legend-requires-assets data-precision-legend hidden>
               <strong>Location precision</strong>
               <span><i class="legend-precision site"></i>Exact or site-level</span>
@@ -265,6 +258,6 @@
 </main>
 <script src="{% static 'vendor/leaflet/leaflet.js' %}"></script>
 <script src="{% static 'vendor/leaflet-markercluster/leaflet.markercluster.js' %}"></script>
-  <script type="module" src="{% static 'js/map-viewer.js' %}?v=20261124-3"></script>
+<script type="module" src="{% static 'js/map-viewer.js' %}?v=20261124-4"></script>
 {% endblock %}
 {% block site_footer %}{% endblock %}

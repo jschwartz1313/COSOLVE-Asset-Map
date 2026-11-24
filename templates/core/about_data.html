@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block body_class %}about-data-page{% endblock %}
 {% block title %}About the data | COSOLVE{% endblock %}
-{% block meta_description %}Learn what the COSOLVE {{ public_scope_name }} unmanned-systems asset map includes, how records are sourced, and how location and review status are represented.{% endblock %}
+{% block meta_description %}Learn what the COSOLVE {{ public_scope_name }} unmanned-systems asset map includes, how records are sourced, and how locations are represented.{% endblock %}
 {% block content %}
 <main id="main-content" class="about-page">
   <header class="page-heading">
@@ -17,14 +17,13 @@
   <div class="about-grid">
     <article>
       <section><h2>What is included</h2><p>Records cover companies, research groups, facilities, infrastructure, workforce programs, public initiatives, operating environments, and generalized defense assets with documented relevance to unmanned or autonomous systems.</p></section>
-      <section><h2>Evidence standard</h2><p>Every published record includes at least one public source and an explanation of its unmanned-systems relevance. Source-backed records remain clearly marked as pending until a publisher completes editorial review.</p></section>
+      <section><h2>Evidence standard</h2><p>Every published record includes at least one public source and an explanation of its unmanned-systems relevance. Sources are retained on asset profiles so readers can consult the original information.</p></section>
       <section><h2>Location precision</h2><p>Published airport coordinates are labeled exact. Other pins identify a documented public street address, campus, terminal, installation entry, or administrative point and are labeled site or campus. Region-wide entities without a single public site are listed without a map pin. A point does not represent permission to operate an unmanned system.</p></section>
       <section><h2>Corrections and additions</h2><p>Organizations and community members can flag an inaccurate record or suggest a missing asset. Submissions are held for staff review and do not change published records automatically.</p><a class="text-link" href="{% url 'core:suggest-update' %}">Suggest an update</a></section>
     </article>
     <aside class="methodology-panel">
       <h2>Current snapshot</h2>
       <dl>
-        <dt>Editorial review</dt><dd>{% if not asset_count %}No published records{% elif pending_review_count %}{{ pending_review_count }} records pending{% else %}All {{ reviewed_count }} records reviewed{% endif %}</dd>
         <dt>Geographic focus</dt><dd>{{ public_scope_geographic_focus }}</dd>
         <dt>Publication boundary</dt><dd>Publicly releasable information only</dd>
       </dl>

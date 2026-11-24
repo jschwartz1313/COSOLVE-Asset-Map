@@ -723,7 +723,6 @@ export function createMap(root) {
   }
   layer.addTo(map);
   let assetLayerVisible = true;
-  let verificationLayerVisible = false;
   let precisionLayerVisible = false;
   const markers = new Map();
   let selectedAssetId = null;
@@ -755,9 +754,6 @@ export function createMap(root) {
     const properties = feature.properties;
     const visual = document.createElement("span");
     const classes = ["asset-marker", properties.record_type];
-    if (verificationLayerVisible) {
-      classes.push("show-verification", `verification-${properties.verification_state}`);
-    }
     if (precisionLayerVisible) {
       classes.push("show-precision", `precision-${properties.location.precision}`);
     }
@@ -896,11 +892,6 @@ export function createMap(root) {
     assetLayerVisible = visible;
     if (visible) layer.addTo(map);
     else layer.removeFrom(map);
-  }
-
-  function setVerificationLayerVisible(visible) {
-    verificationLayerVisible = visible;
-    refreshMarkerIcons();
   }
 
   function setPrecisionLayerVisible(visible) {
@@ -1343,7 +1334,6 @@ export function createMap(root) {
     setUasFacilityMapVisible,
     setUasTestSitesVisible,
     setMaapFlightAreasVisible,
-    setVerificationLayerVisible,
     setViewState,
     showAreaSelection,
     showNearbyRadius,

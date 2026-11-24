@@ -11,8 +11,8 @@ import {
   featuresWithinPolygon,
   featuresWithinRadius,
   summarizeRegion,
-} from "./map-analysis.js?v=20261028-1";
-import { createMap } from "./map.js?v=20261119-1";
+} from "./map-analysis.js?v=20261124-4";
+import { createMap } from "./map.js?v=20261124-4";
 import {
   analysisStateFromParams,
   filterParamsFromMapUrl,
@@ -21,7 +21,7 @@ import {
   serializePolygonAnalysis,
   serializeRadiusAnalysis,
   serializeRectangleAnalysis,
-} from "./map-state.js?v=20261119-1";
+} from "./map-state.js?v=20261124-4";
 import { bindPanelResizers } from "./panel-resize.js?v=20260821-1";
 import { renderResults, selectResult } from "./results.js?v=20261119-1";
 import { hydrateForm, paramsFromForm, updateUrl } from "./state.js?v=20261103-1";
@@ -56,7 +56,6 @@ const flightConstraintsToggle = document.querySelector("#flight-constraints-togg
 const uasTestSitesToggle = document.querySelector("#uas-test-sites-toggle");
 const maapFlightAreasToggle = document.querySelector("#maap-flight-areas-toggle");
 const stateBoundaryToggle = document.querySelector("#state-boundary-toggle");
-const verificationLayerToggle = document.querySelector("#verification-layer-toggle");
 const precisionLayerToggle = document.querySelector("#precision-layer-toggle");
 const basemapInputs = [...document.querySelectorAll('input[name="map-basemap"]')];
 const legendItems = [...document.querySelectorAll("[data-legend-toggle]")];
@@ -113,7 +112,6 @@ function applyLayerToggleState(state) {
   flightConstraintsToggle.checked = layers.includes("flight-constraints");
   uasTestSitesToggle.checked = layers.includes("uas-test-sites");
   maapFlightAreasToggle.checked = layers.includes("maap-flight-areas");
-  verificationLayerToggle.checked = layers.includes("verification");
   precisionLayerToggle.checked = layers.includes("precision");
   for (const input of root.querySelectorAll("input[data-unavailable-layer]")) input.checked = false;
   const basemap = state?.basemap || defaultBasemap;
@@ -199,7 +197,6 @@ function currentLayers() {
   if (flightConstraintsToggle.checked) layers.push("flight-constraints");
   if (uasTestSitesToggle.checked) layers.push("uas-test-sites");
   if (maapFlightAreasToggle.checked) layers.push("maap-flight-areas");
-  if (verificationLayerToggle.checked) layers.push("verification");
   if (precisionLayerToggle.checked) layers.push("precision");
   return layers;
 }
@@ -486,7 +483,6 @@ function populatePrintReport() {
       feature.properties.record_type_label,
       feature.properties.location.region || "Unassigned",
       feature.properties.location.precision_label,
-      feature.properties.verification_state_label,
     ]) {
       const cell = document.createElement("td");
       cell.textContent = value;
@@ -507,7 +503,6 @@ function renderRegionSummary(regionSlug, regionName) {
   for (const [value, label] of [
     [summary.total, "Assets"],
     [summary.siteLevel, "Site-level pins"],
-    [summary.reviewed, "Reviewed"],
   ]) {
     const item = document.createElement("span");
     const strong = document.createElement("strong");
@@ -555,10 +550,6 @@ assetLayerToggle.addEventListener("change", () => {
 });
 stateBoundaryToggle.addEventListener("change", () => {
   mapController.setStateBoundaryVisible(stateBoundaryToggle.checked);
-  updateViewActions();
-});
-verificationLayerToggle.addEventListener("change", () => {
-  mapController.setVerificationLayerVisible(verificationLayerToggle.checked);
   updateViewActions();
 });
 precisionLayerToggle.addEventListener("change", () => {
@@ -785,7 +776,6 @@ document.addEventListener("keydown", (event) => {
 async function syncLayerVisibility() {
   mapController.setAssetLayerVisible(assetLayerToggle.checked);
   mapController.setStateBoundaryVisible(stateBoundaryToggle.checked);
-  mapController.setVerificationLayerVisible(verificationLayerToggle.checked);
   mapController.setPrecisionLayerVisible(precisionLayerToggle.checked);
   updateLegendVisibility();
   mapController.setBasemap(selectedBasemap());

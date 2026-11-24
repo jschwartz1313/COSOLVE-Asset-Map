@@ -535,9 +535,9 @@ test("analytical map tools expose quality, summaries, and saved basemaps", async
     .toContain("basemap.nationalmap.gov");
 
   await page.locator(".map-layers summary").click();
-  await page.locator("#verification-layer-toggle").check();
+  await expect(page.locator("#verification-layer-toggle")).toHaveCount(0);
   await page.locator("#precision-layer-toggle").check();
-  await expect(page.locator("[data-verification-legend]")).toBeVisible();
+  await expect(page.locator("[data-verification-legend]")).toHaveCount(0);
   await expect(page.locator("[data-precision-legend]")).toBeVisible();
 
   await page.locator(".map-analysis summary").click();
@@ -786,9 +786,9 @@ test("source-backed activity and site-readiness details are visible", async ({ p
   await expect(page.getByRole("link", { name: "Development source" })).toHaveAttribute("href", /^https:/);
 });
 
-test("about page reports review status without an empty date range", async ({ page }) => {
+test("about page keeps review status private and preserves publication-note spacing", async ({ page }) => {
   await page.goto("/about-data/");
-  await expect(page.getByText("Editorial review", { exact: true })).toBeVisible();
+  await expect(page.getByText("Editorial review", { exact: true })).toHaveCount(0);
   await expect(page.getByText("Verification range", { exact: true })).toHaveCount(0);
   const publicationNote = page.getByText("Publicly releasable information only", { exact: true });
   const directoryButton = page.getByRole("link", { name: "Browse the directory" });

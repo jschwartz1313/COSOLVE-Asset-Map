@@ -13,7 +13,6 @@ export const MAP_LAYER_ORDER = [
   "flight-constraints",
   "uas-test-sites",
   "maap-flight-areas",
-  "verification",
   "precision",
 ];
 export const MAP_BASEMAPS = ["street", "light", "topo", "imagery"];

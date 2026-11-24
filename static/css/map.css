@@ -185,7 +185,7 @@ body.is-resizing-map-panels, body.is-resizing-map-panels * { cursor: col-resize 
 .map-insight-content { min-height: 0; padding: 18px; overflow-y: auto; }
 .map-insight-panel h2 { margin: 4px 0 0; font-size: 18px; }
 .map-insight-panel h3 { margin: 18px 0 8px; color: var(--ink-muted); font-size: 10px; text-transform: uppercase; }
-.insight-metrics { display: grid; grid-template-columns: repeat(3, 1fr); border-block: 1px solid var(--line); }
+.insight-metrics { display: grid; grid-template-columns: repeat(2, 1fr); border-block: 1px solid var(--line); }
 .insight-metrics span { padding: 14px 5px; color: var(--ink-muted); font-size: 9px; line-height: 1.35; text-align: center; }
 .insight-metrics strong { display: block; margin-bottom: 3px; color: var(--ink); font-size: 20px; }
 .map-insight-panel dl { margin: 0; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 10px; font-size: 10px; }

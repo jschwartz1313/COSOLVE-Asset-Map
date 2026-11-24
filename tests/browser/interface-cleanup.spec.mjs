@@ -22,19 +22,18 @@ test("map headings stay concise and the legend follows visible overlays", async 
     await expect(entry).toBeHidden();
   }
 
-  await page.locator("#verification-layer-toggle").check();
+  await expect(page.locator("#verification-layer-toggle")).toHaveCount(0);
   await page.locator("#precision-layer-toggle").check();
-  await expect(page.locator("[data-verification-legend]")).toBeVisible();
+  await expect(page.locator("[data-verification-legend]")).toHaveCount(0);
   await expect(page.locator("[data-precision-legend]")).toBeVisible();
   await page.locator("#asset-layer-toggle").uncheck();
   await expect(page.locator(".legend-dot.university")).toBeHidden();
-  await expect(page.locator("[data-verification-legend]")).toBeHidden();
   await expect(page.locator("[data-precision-legend]")).toBeHidden();
   await page.locator("#state-boundary-toggle").uncheck();
   await expect(page.locator("[data-legend-toggle]:visible")).toHaveCount(0);
   await expect(page.locator("[data-legend-empty]")).toBeVisible();
   await page.locator("#asset-layer-toggle").check();
-  await expect(page.locator("[data-verification-legend]")).toBeVisible();
+  await expect(page.locator("[data-precision-legend]")).toBeVisible();
   await expect(page.locator("[data-legend-empty]")).toBeHidden();
 });
 

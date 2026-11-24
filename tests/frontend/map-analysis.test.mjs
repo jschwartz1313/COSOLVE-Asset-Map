@@ -86,7 +86,7 @@ test("polygon filtering includes interior and boundary points", () => {
   assert.deepEqual(featuresWithinPolygon(features, vertices.slice(0, 2)), []);
 });
 
-test("regional summaries report mix, precision, review, and capabilities", () => {
+test("regional summaries report mix, precision, and capabilities without internal review metadata", () => {
   const features = [
     feature("one", 36.86, -76.29, {
       verification_state: "reviewed",
@@ -107,7 +107,7 @@ test("regional summaries report mix, precision, review, and capabilities", () =>
   ];
   const summary = summarizeRegion(features, "hampton-roads");
   assert.equal(summary.total, 2);
-  assert.equal(summary.reviewed, 1);
+  assert.equal(Object.hasOwn(summary, "reviewed"), false);
   assert.equal(summary.siteLevel, 1);
   assert.deepEqual(summary.capabilities[0], ["Autonomy and AI", 2]);
 });
@@ -125,7 +125,7 @@ test("CSV export preserves names and public map metadata", () => {
   const csv = featureCsv([feature("quoted", 36.86, -76.29, { name: 'Asset "One"' })]);
   assert.match(csv, /name,asset_type,address/);
   assert.match(csv, /"Asset ""One"""/);
-  assert.match(csv, /Source-backed; review pending/);
+  assert.doesNotMatch(csv, /review pending|verification|location_evidence_reviewed/);
 });
 
 test("CSV export includes the portfolio tag without shifting existing columns", () => {
@@ -146,5 +146,6 @@ test("CSV export preserves the distinction between a pin and an operating site",
   const csv = featureCsv([asset]);
   assert.match(csv, /location_represents,coordinate_basis,location_notes,location_source/);
   assert.match(csv, /"Office locality, not the test range"/);
-  assert.match(csv, /https:\/\/example.org\/location,2026-09-06/);
+  assert.match(csv, /https:\/\/example.org\/location/);
+  assert.doesNotMatch(csv, /2026-09-06/);
 });

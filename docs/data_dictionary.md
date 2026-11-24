@@ -16,7 +16,18 @@ Location uses WGS84 decimal latitude and longitude. `location_precision` is `exa
 
 Internal-only fields such as `internal_notes` and source notes are never emitted by public serializers.
 
-Catalog-loaded records include an internal provenance marker. The public source list provides the evidence URL and verification date; it does not expose internal curation notes.
+Catalog-loaded records include an internal provenance marker. The public source list provides the evidence URL and original publication date when available; it does not expose internal curation notes or verification metadata.
+
+### Internal review tracking
+
+Asset and source verification dates, editorial status, field-specific review dates,
+review assignments, and review due dates remain in the database and staff tools.
+The staff data-quality queue still uses `STALE_VERIFICATION_DAYS` and explicit due
+dates to identify records for another check. Public profiles, map layers and
+summaries, API responses, and public planning downloads omit this maintenance
+metadata in both Current and 2.0. Staff-only catalog exports retain it. Original
+source publication dates and reference-layer snapshot dates remain public because
+they describe the underlying evidence, not an internal verification decision.
 
 ## Taxonomy
 

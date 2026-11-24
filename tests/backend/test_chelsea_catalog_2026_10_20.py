@@ -140,7 +140,7 @@ class ChelseaCatalogReleaseTests(TestCase):
                     self.assertIsNone(source.last_checked_at)
                 response = self.client.get(f"/api/assets/{asset.slug}/")
                 self.assertEqual(response.status_code, 200)
-                self.assertEqual(response.json()["review_status"], "source-backed")
+                self.assertNotIn("review_status", response.json())
         for before in existing:
             self.assertEqual(Asset.objects.filter(pk=before["id"]).values().get(), before)
         self.assertEqual(

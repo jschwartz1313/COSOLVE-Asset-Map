@@ -7,7 +7,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
 from django.db import connection
-from django.db.models import Count, Max
+from django.db.models import Count
 from django.http import Http404, HttpResponse, HttpResponseBadRequest, JsonResponse
 from django.shortcuts import get_object_or_404, redirect, render
 from django.urls import reverse
@@ -146,8 +146,7 @@ def test_sites(request):
                 writer.writerow([field.label, form.cleaned_data.get(field.name) or "Not specified"])
         writer.writerow([])
         writer.writerow(["Asset", "Outcome", "Documented access", "Comparison", "Profile",
-                         "Criteria source", "Source checked", "Runway source",
-                         "Runway source checked"])
+                         "Criteria source", "Runway source"])
         for row in rows:
             asset = row["asset"]
             values = [asset.public_name, row["label"], "; ".join(row["access_labels"]),
@@ -155,10 +154,7 @@ def test_sites(request):
                                 for c in row["checks"]),
                       request.build_absolute_uri(asset.get_absolute_url()),
                       asset.test_suitability_source_url if row["evidence_usable"] else "",
-                      asset.test_suitability_reviewed_at if row["evidence_usable"] else "",
                       asset.test_source_url if criteria.get("runway") and evidence_usable(
-                          asset, asset.test_source_url, asset.test_last_verified_at) else "",
-                      asset.test_last_verified_at if criteria.get("runway") and evidence_usable(
                           asset, asset.test_source_url, asset.test_last_verified_at) else ""]
             writer.writerow(["'" + value if isinstance(value, str)
                              and value.lstrip().startswith(("=", "+", "-", "@")) else value
@@ -335,18 +331,6 @@ def delete_saved_view(request, pk):
 def region_metrics(region):
     queryset = Asset.public.filter(region=region)
     total = queryset.count()
-    reviewed = queryset.filter(
-        reviewed_at__isnull=False, last_verified_at__isnull=False
-    ).count()
-    verified_source = (
-        queryset.filter(
-            sources__is_public=True,
-            sources__verification_status="verified",
-            sources__last_verified_at__isnull=False,
-        )
-        .distinct()
-        .count()
-    )
     site_level = queryset.filter(
         latitude__isnull=False,
         longitude__isnull=False,
@@ -363,12 +347,6 @@ def region_metrics(region):
         "region": region,
         "total": total,
         "quality_metrics": [
-            {"name": "Editorially reviewed", "count": reviewed, "rate": rate(reviewed)},
-            {
-                "name": "Verified public source",
-                "count": verified_source,
-                "rate": rate(verified_source),
-            },
             {"name": "Exact or site-level location", "count": site_level, "rate": rate(site_level)},
         ],
         "record_types": [
@@ -420,9 +398,6 @@ def region_compare(request):
 
 def about_data(request):
     public_assets = Asset.public.all()
-    reviewed_count = public_assets.filter(
-        reviewed_at__isnull=False, last_verified_at__isnull=False
-    ).count()
     return render(
         request,
         "core/about_data.html",
@@ -433,11 +408,6 @@ def about_data(request):
             .distinct()
             .count(),
             "region_count": Region.objects.filter(assets__in=public_assets).distinct().count(),
-            "reviewed_count": reviewed_count,
-            "pending_review_count": public_assets.count() - reviewed_count,
-            "latest_source_check": Source.objects.filter(
-                asset__in=public_assets, is_public=True
-            ).aggregate(latest=Max("last_checked_at"))["latest"],
         },
     )
 
