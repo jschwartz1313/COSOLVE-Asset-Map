@@ -112,9 +112,7 @@ if CARTO_BASEMAP_API_KEY:
     _carto_light_url += "?" + urlencode({"key": CARTO_BASEMAP_API_KEY})
 # A custom provider overrides CARTO; never send the CARTO key to that provider.
 LIGHT_BASEMAP_TILE_URL = os.getenv("LIGHT_BASEMAP_TILE_URL") or _carto_light_url
-DEFAULT_BASEMAP = (
-    "light" if CARTO_BASEMAP_API_KEY or os.getenv("LIGHT_BASEMAP_TILE_URL") else "street"
-)
+DEFAULT_BASEMAP = "street"
 LIGHT_BASEMAP_ATTRIBUTION = os.getenv(
     "LIGHT_BASEMAP_ATTRIBUTION",
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, '

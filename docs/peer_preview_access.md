@@ -19,8 +19,8 @@ may contain peer record names. Hosting/database administrators remain trusted
 operators of the system.
 
 The selector is above the map and directory filters. Other pages keep it in More.
-New peer-state maps start on Street. Explicitly saved basemap choices still win;
-Virginia retains its existing configured default.
+All new maps, including Virginia, start on Street. Explicitly saved basemap
+choices still win; Grey, Topographic and Aerial remain available.
 
 Website permissions do not make source files in a public GitHub repository private.
 Repository visibility must be managed separately before calling the research files

@@ -1,0 +1,668 @@
+{
+  "research_date": "2026-11-24",
+  "scope": "Official-source additions to owner-only benchmark-state preview. No changes to Virginia public assets or editorial verification.",
+  "records": [
+    {
+      "state": "AZ",
+      "name": "PADT Tempe Engineering and Additive Manufacturing",
+      "record_type": "facility",
+      "city": "Tempe",
+      "address_line": "7755 S Research Drive, Suite 110",
+      "postal_code": "85284",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.padtinc.com/contact/",
+      "website_url": "https://www.padtinc.com/",
+      "short_description": "Tempe engineering, simulation and additive-manufacturing resource for aerospace product development and prototype production.",
+      "overview": "PADT combines mechanical, controls and thermal engineering with simulation, prototype fabrication, assembly and inspection at its Tempe headquarters. Published in-house equipment includes CNC machining, an environmental chamber and several polymer additive-manufacturing processes.\n\nUse the engineering inquiry route for a scoped development project or the separate 3D-printing service for parts. Provide geometry, material, loads, tolerances and intended quantity; confirm qualification requirements and which work is performed in-house. This is a supplier engagement, not open access to its laboratories.",
+      "unmanned_systems_relevance": "Supporting aerospace engineering and prototyping capacity for autonomy hardware; no dedicated UAS production line or aircraft acceptance is established.",
+      "contact_url": "https://www.padtinc.com/contact/",
+      "contact_email": "3dprint@padtinc.com",
+      "contact_phone": "480-813-4884",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration",
+        "Simulation, digital twins, and synthetic environments"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "PADT Tempe development, manufacturing and test capabilities",
+          "url": "https://www.padtinc.com/product-development/capabilities/",
+          "supports": "In-house engineering, simulation, additive manufacturing, CNC machining, test facilities and Tempe location; customer engagement not shared lab access."
+        },
+        {
+          "title": "PADT contact routes and published Tempe address",
+          "url": "https://www.padtinc.com/contact/",
+          "supports": "Tempe headquarters address, business phone and distinct project-consulting/3D-printing inquiry routes."
+        }
+      ]
+    },
+    {
+      "state": "CA",
+      "name": "Parallel Systems Los Angeles Autonomous Rail Engineering",
+      "record_type": "organization",
+      "city": "Los Angeles",
+      "address_line": "1245 Factory Place",
+      "postal_code": "90013",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "headquarters",
+      "location_source_url": "https://www.moveparallel.com/careers",
+      "website_url": "https://www.moveparallel.com/",
+      "short_description": "Los Angeles developer of autonomous battery-electric freight rail vehicles and fleet-control software.",
+      "overview": "Parallel develops automated rail vehicles and software for container movements, shorter freight routes and port-to-terminal shuttles. Its system connects onboard vehicle sensing and fleet information with railroad train-control and business systems.\n\nRailroad and logistics partners can discuss route and terminal geometry, container handling, charging, operating rules and software integration with the company. Its Los Angeles address is an engineering/business contact, not a published test track. Product descriptions are not route-specific regulatory approval or confirmation that a deployment is available at any requested port.",
+      "unmanned_systems_relevance": "Direct ground-autonomy and logistics technology, including automated freight movements and fleet integration.",
+      "contact_url": "https://www.moveparallel.com/",
+      "contact_email": "",
+      "contact_phone": "213-295-4800",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Systems engineering and integration",
+        "Propulsion, batteries, fuels, and energy systems"
+      ],
+      "missions": [
+        "Logistics and contested logistics"
+      ],
+      "sources": [
+        {
+          "title": "Parallel autonomous rail system and integration use cases",
+          "url": "https://www.moveparallel.com/product",
+          "supports": "Autonomous battery-electric rail vehicles, port shuttles, freight services, sensing and integration with railroad systems."
+        },
+        {
+          "title": "Parallel official Los Angeles contact location",
+          "url": "https://www.moveparallel.com/careers",
+          "supports": "1245 Factory Place, Los Angeles address and business telephone; no public test site inferred."
+        }
+      ]
+    },
+    {
+      "state": "CA",
+      "name": "ADVANCED Motion Controls Camarillo Servo-Drive Manufacturing",
+      "record_type": "facility",
+      "city": "Camarillo",
+      "address_line": "3805 Calle Tecate",
+      "postal_code": "93012",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.a-m-c.com/locations/",
+      "website_url": "https://www.a-m-c.com/",
+      "short_description": "Camarillo factory designing, manufacturing and testing servo drives for robotics, electric mobility and industrial automation.",
+      "overview": "ADVANCED Motion Controls brings drive engineering, manufacturing, testing and support together at its Camarillo headquarters. It supplies standard, modified and custom servo-drive products, with published applications including mobile robotics, factory automation, inspection and material handling.\n\nA robot developer can use this supplier for motor-drive selection and OEM integration. Discuss supply voltage, peak/continuous current, feedback, controller interfaces, thermal limits and production volume with application support. Factory access and custom development require agreement; a drive component does not itself provide vehicle autonomy or a certified flight controller.",
+      "unmanned_systems_relevance": "Supporting motion-control component production for ground robotics and automated manufacturing, not a complete unmanned-vehicle production line.",
+      "contact_url": "https://www.a-m-c.com/locations/",
+      "contact_email": "",
+      "contact_phone": "805-389-1935",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "AMC integrated manufacturing and robotics applications",
+          "url": "https://www.a-m-c.com/about/",
+          "supports": "Camarillo manufacturing/test facility; standard/custom servo drives and electric-mobility/mobile-robotics applications."
+        },
+        {
+          "title": "AMC Camarillo location and phone",
+          "url": "https://www.a-m-c.com/locations/",
+          "supports": "Published street address and application-inquiry business phone."
+        }
+      ]
+    },
+    {
+      "state": "CO",
+      "name": "Fotokite Boulder Tethered UAS Systems",
+      "record_type": "organization",
+      "city": "Boulder",
+      "address_line": "3125 Sterling Circle, Suite 107",
+      "postal_code": "80301",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_source_url": "https://fotokite.com/contact/",
+      "website_url": "https://fotokite.com/",
+      "short_description": "Boulder North American office for actively tethered aerial camera systems used by public-safety teams.",
+      "overview": "Fotokite supplies actively tethered UAS with visible-light and thermal imaging for incident command, fire response and search support. Vehicle-mounted and transport-case configurations provide elevated situational awareness and video-sharing options.\n\nAgencies can request a demonstration through the official sales form and discuss vehicle integration, scene conditions, imagery handling and operator training. The current North American contact is in Boulder; an older Syracuse office is not treated as the current location. This office is not a public flight range, and the catalog does not independently certify the operator's regulatory exemption or operational approvals.",
+      "unmanned_systems_relevance": "Direct UAS product and integration resource for public safety and persistent aerial observation.",
+      "contact_url": "https://fotokite.com/contact/",
+      "contact_email": "",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Public safety and emergency response",
+        "Search and rescue"
+      ],
+      "sources": [
+        {
+          "title": "Fotokite tethered UAS products and response uses",
+          "url": "https://fotokite.com/",
+          "supports": "Tethered visible/thermal aerial observation, deployment configurations and incident-response applications; no independent regulatory endorsement."
+        },
+        {
+          "title": "Fotokite current North American contact",
+          "url": "https://fotokite.com/contact/",
+          "supports": "Current Boulder street address and sales demonstration request route. Published US support phone is customer support, not represented as a sales line."
+        }
+      ]
+    },
+    {
+      "state": "FL",
+      "name": "FLYMOTION Tampa UAS and Robotics Integration and Training",
+      "record_type": "organization",
+      "city": "Tampa",
+      "address_line": "4416 Eagle Falls Place",
+      "postal_code": "33619",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "headquarters",
+      "location_source_url": "https://www.flymotionus.com/contact",
+      "website_url": "https://www.flymotionus.com/",
+      "short_description": "Tampa provider of UAS and ground-robot integration, public-safety training and technical support.",
+      "overview": "FLYMOTION supplies and integrates drones, ground robots and related technology for public-safety, government, defense and enterprise teams. Its training catalog includes program development, mapping, search and rescue, multi-robot teaming and counter-UAS instruction.\n\nUse sales for system selection and training@flymotionus.com for course scope, prerequisites and pricing. Confirm where a course takes place, required equipment and instructor support; the Tampa headquarters is a contact and integration site, not a blanket flight authorization or proof of a dedicated open test range. Counter-UAS training does not grant legal mitigation authority.",
+      "unmanned_systems_relevance": "Direct multi-domain unmanned-system integration, procurement and operator-training resource.",
+      "contact_url": "https://www.flymotionus.com/contact",
+      "contact_email": "sales@flymotionus.com",
+      "contact_phone": "800-548-5844",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Companies and solution providers",
+        "Workforce and talent"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems",
+        "Ground vehicles and robotics",
+        "Counter-UAS"
+      ],
+      "capabilities": [
+        "Systems engineering and integration",
+        "Operations, maintenance, and sustainment"
+      ],
+      "missions": [
+        "Public safety and emergency response",
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "FLYMOTION integration, support and company remit",
+          "url": "https://www.flymotionus.com/company/about",
+          "supports": "Company integration, training, maintenance and support work; Tampa headquarters."
+        },
+        {
+          "title": "FLYMOTION course catalog and prerequisites",
+          "url": "https://www.flymotionus.com/training/courses",
+          "supports": "Public-safety UAS courses, robotics teaming, counter-UAS instruction and published training inquiry email."
+        },
+        {
+          "title": "FLYMOTION Tampa contact",
+          "url": "https://www.flymotionus.com/contact",
+          "supports": "Tampa headquarters street address, sales email and phone."
+        }
+      ]
+    },
+    {
+      "state": "MI",
+      "name": "Michigan Aerospace Ypsilanti Sensing and Autonomy Engineering",
+      "record_type": "organization",
+      "city": "Ypsilanti",
+      "address_line": "301 W Michigan Avenue, Suite A60",
+      "postal_code": "48197",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "office",
+      "location_source_url": "https://www.michiganaerospace.com/contact/",
+      "website_url": "https://www.michiganaerospace.com/",
+      "short_description": "Ypsilanti engineering company developing optical sensing, intelligent systems and software for aerial and other platforms.",
+      "overview": "Michigan Aerospace develops sensors, data-analysis methods and engineered systems for aviation, space and terrestrial applications. Its airborne portfolio includes optical air data, atmospheric hazard sensing, multispectral imaging and autonomous operations, with UAVs explicitly among the intended platforms.\n\nDiscuss the measurement objective, platform environment, mounting, power, data interfaces and maturity requirements with sales or the engineering team. Older project examples on the site are evidence of experience, not confirmation that an old demonstration is an active 2026 program. The current contact page lists Ypsilanti, replacing older Ann Arbor addresses in historical brochures.",
+      "unmanned_systems_relevance": "Direct UAV sensing and autonomy-enabling engineering; the record does not imply a complete aircraft manufacturer or an open flight-test site.",
+      "contact_url": "https://www.michiganaerospace.com/contact/",
+      "contact_email": "sales@michiganaerospace.com",
+      "contact_phone": "734-975-8777",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Perception, sensing, and sensor fusion",
+        "Data engineering, analytics, and edge computing",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Michigan Aerospace airborne sensors and UAV applications",
+          "url": "https://www.michiganaerospace.com/experience/air/",
+          "supports": "Optical air-data and hazard-sensing capabilities, intelligent systems and UAV application scope; historical program milestones not recast as current deployments."
+        },
+        {
+          "title": "Michigan Aerospace current contact",
+          "url": "https://www.michiganaerospace.com/contact/",
+          "supports": "Current Ypsilanti address, sales email and phone."
+        }
+      ]
+    },
+    {
+      "state": "NY",
+      "name": "ULC Technologies Hauppauge Utility Robotics Engineering",
+      "record_type": "organization",
+      "city": "Hauppauge",
+      "address_line": "88 Arkay Drive",
+      "postal_code": "11788",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "headquarters",
+      "location_source_url": "https://ulctechnologies.com/contact-us/",
+      "website_url": "https://ulctechnologies.com/",
+      "short_description": "Hauppauge developer of inspection, excavation and infrastructure robots with custom engineering and field services.",
+      "overview": "ULC develops robotic systems and inspection technology for utilities, energy, construction and infrastructure. Its published projects include robotic roadworks and excavation, autonomous ground-penetrating-radar mapping, confined-space inspection and utility-asset data processing.\n\nCustomers can discuss a scoped R&D project, field-service engagement or technology deployment through the company's inquiry form. Bring the asset geometry, access restrictions, inspection objective and expected data output; agree the development, field trial and commercialization arrangements. The Hauppauge office is not a generally bookable test range, and equipment access depends on the project.",
+      "unmanned_systems_relevance": "Direct ground-robotics and sensing capability for utility maintenance, inspection and hazardous or confined environments.",
+      "contact_url": "https://ulctechnologies.com/contact-us/",
+      "contact_email": "",
+      "contact_phone": "631-667-9200",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Autonomy and artificial intelligence",
+        "Perception, sensing, and sensor fusion",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Infrastructure inspection"
+      ],
+      "sources": [
+        {
+          "title": "ULC robotics R&D and project examples",
+          "url": "https://ulctechnologies.com/partner-in-innovation/",
+          "supports": "Robotic excavation, autonomous ground mapping, inspection, custom engineering and commercialization/field-service engagement."
+        },
+        {
+          "title": "ULC Hauppauge address and customer inquiry",
+          "url": "https://ulctechnologies.com/contact-us/",
+          "supports": "Current Hauppauge headquarters address, phone and partnership/customer form."
+        }
+      ]
+    },
+    {
+      "state": "NC",
+      "name": "CRP USA Mooresville Additive-Manufacturing Facility",
+      "record_type": "facility",
+      "city": "Mooresville",
+      "address_line": "127 Goodwin Circle",
+      "postal_code": "28115",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.crp-usa.net/contact-us/",
+      "website_url": "https://www.crp-usa.net/",
+      "short_description": "Mooresville manufacturer of reinforced-polymer additive parts for aerospace, defense and drone applications.",
+      "overview": "CRP USA produces prototype and end-use parts with powder-bed-fusion processes and reinforced Windform composite materials. Its Mooresville operation supports material selection, manufacturability advice, finishing and production-oriented part development.\n\nAn airframe or payload team can request a review of CAD geometry, loading, environment, tolerances, inserts and quantities. Ask for part-specific material and qualification evidence, finishing options and lead times; a material's use in aerospace does not certify every resulting drone part. Customer work is a quoted manufacturing service, not unsupervised access to printers.",
+      "unmanned_systems_relevance": "Direct drone/aerospace component and prototyping supplier with a documented North Carolina physical operation.",
+      "contact_url": "https://www.crp-usa.net/contact-us/",
+      "contact_email": "",
+      "contact_phone": "704-660-0258",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "CRP USA additive production and customer services",
+          "url": "https://www.crp-usa.net/3d-printing-services-usa/",
+          "supports": "Prototype/end-use Windform production, material/manufacturability consultation and PBF manufacturing; company links direct defense/drone applications."
+        },
+        {
+          "title": "CRP USA Mooresville facility contact",
+          "url": "https://www.crp-usa.net/contact-us/",
+          "supports": "Street address, inquiry form and company telephone."
+        }
+      ]
+    },
+    {
+      "state": "NC",
+      "name": "Eclipse Composites Mooresville Composite Structures",
+      "record_type": "facility",
+      "city": "Mooresville",
+      "address_line": "138 Cedar Pointe Drive",
+      "postal_code": "28117",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://eclipsecomposites.com/contact-us/",
+      "website_url": "https://eclipsecomposites.com/",
+      "short_description": "Mooresville composite-structure engineering and manufacturing operation serving aerospace, defense and other markets.",
+      "overview": "Eclipse engineers and manufactures composite structures from prototype development through production. It publishes resin-transfer, compression, bladder and vacuum-assisted molding capabilities and applications in aerospace, defense, industrial and satellite-communications equipment.\n\nUse the project inquiry route with a drawing or concept, loading and temperature environment, tolerances and quantity. Confirm the proposed manufacturing site and part qualification before procurement. The current official contact is Mooresville, North Carolina; an older Utah association is not used as evidence of an additional operating plant.",
+      "unmanned_systems_relevance": "Supporting lightweight-structure and enclosure supplier for autonomy-related hardware; no particular UAS contract or complete vehicle production line is established.",
+      "contact_url": "https://eclipsecomposites.com/contact-us/",
+      "contact_email": "info@eclipsecomposites.com",
+      "contact_phone": "801-601-8559",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Eclipse composite manufacturing processes and markets",
+          "url": "https://eclipsecomposites.com/",
+          "supports": "Composite structure design/prototyping/production, molding processes and aerospace/defense/satcom markets."
+        },
+        {
+          "title": "Eclipse current Mooresville contact",
+          "url": "https://eclipsecomposites.com/contact-us/",
+          "supports": "Current North Carolina office address, inquiry email and published phone; no separate Utah factory inferred."
+        }
+      ]
+    },
+    {
+      "state": "OH",
+      "name": "Parallax Mobile Test and Evaluation Center",
+      "record_type": "facility",
+      "city": "Beavercreek",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "regional",
+      "location_role": "service-area",
+      "location_source_url": "https://parallaxresearch.org/contact",
+      "website_url": "https://parallaxresearch.org/news/blog/parallaxs-mobile-testing-evaluation-center-enables-uas-flight-testing-national-missions",
+      "short_description": "Deployable Parallax laboratory supporting simulated and live UAS testing, instrumentation and multi-aircraft command-and-control research.",
+      "overview": "Parallax's Mobile Test and Evaluation Center combines a transportable computer-equipped laboratory with operator workstations, networks, data storage and simulation capability. Published uses include UAS control, flight integration, operator-in-the-loop testing, sensors and data links.\n\nA project can use the team for test plans, equipment selection, scenario development, logistics and coordination with a host range and local aviation authorities. This is a mobile capability coordinated from Ohio, not a fixed flight boundary at the headquarters. The source describes prior work and commercial engagement intentions; confirm present configuration, availability, cost and deployment location directly.",
+      "unmanned_systems_relevance": "Distinct deployable unmanned-flight test capability, separate from Parallax's organization-level record.",
+      "contact_url": "https://parallaxresearch.org/contact",
+      "contact_email": "",
+      "contact_phone": "937-705-1000",
+      "test_access": "Project-scoped mobile test support. Coordinate the host range, personnel, safety and aviation approvals with Parallax; no fixed operational area or automatic airspace access is implied.",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Test and operational environments"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Testing, evaluation, verification, and validation",
+        "Command, control, and communications",
+        "Simulation, digital twins, and synthetic environments"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "Parallax MTEC configuration and flight-test support",
+          "url": "https://parallaxresearch.org/news/blog/parallaxs-mobile-testing-evaluation-center-enables-uas-flight-testing-national-missions",
+          "supports": "Mobile lab, operator stations, simulations, test planning, logistics and range/airspace coordination; historical experience not a live booking guarantee."
+        },
+        {
+          "title": "Parallax Ohio coordination contact",
+          "url": "https://parallaxresearch.org/contact",
+          "supports": "Beavercreek headquarters business phone; not a permanent position for the mobile laboratory."
+        }
+      ]
+    },
+    {
+      "state": "OK",
+      "name": "OU Sooner Advanced Manufacturing Lab",
+      "record_type": "facility",
+      "city": "Norman",
+      "address_line": "2101 W Tecumseh Road, Suite C",
+      "postal_code": "73069",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "research",
+      "location_source_url": "https://www.ou.edu/research-norman/sooner-advanced-manufacturing-lab/contact",
+      "website_url": "https://www.ou.edu/research-norman/sooner-advanced-manufacturing-lab",
+      "short_description": "Norman university laboratory researching additive manufacturing, materials qualification and digital manufacturing workflows.",
+      "overview": "The Sooner Advanced Manufacturing Lab researches additive processes for metals, polymers, fiber-reinforced composites and avionics-related structures. Its program combines materials work, digital workflows, monitoring and AI-supported qualification methods for aerospace and defense applications.\n\nIndustry and government partners can discuss research collaboration and access through the lab. Describe the material/process question, geometry, inspection or qualification objective and project schedule. Facility infrastructure is being expanded, so confirm installed equipment, available capacity, agreements and rates before treating a planned capability as bookable production.",
+      "unmanned_systems_relevance": "Supporting manufacturing-process research for autonomy hardware; not evidence that every process is presently available as a commercial service.",
+      "contact_url": "https://www.ou.edu/research-norman/sooner-advanced-manufacturing-lab/contact",
+      "contact_email": "saml@ou.edu",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Research and technical depth",
+        "Manufacturing and supply chain"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Testing, evaluation, verification, and validation"
+      ],
+      "missions": [
+        "Training and experimentation"
+      ],
+      "sources": [
+        {
+          "title": "OU SAML materials, qualification and infrastructure scope",
+          "url": "https://www.ou.edu/research-norman/sooner-advanced-manufacturing-lab",
+          "supports": "Research in additive processes, metals/polymers/composites, avionics structures and digital/AI-supported qualification; infrastructure expansion distinguished from current service availability."
+        },
+        {
+          "title": "OU SAML collaboration and physical address",
+          "url": "https://www.ou.edu/research-norman/sooner-advanced-manufacturing-lab/contact",
+          "supports": "Norman laboratory address, collaboration/access invitation and functional lab email."
+        }
+      ]
+    },
+    {
+      "state": "OK",
+      "name": "OU Tom Love Innovation Hub Fabrication Facilities",
+      "record_type": "facility",
+      "city": "Norman",
+      "address_line": "201 David L Boren Boulevard",
+      "postal_code": "73072",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "research",
+      "location_source_url": "https://www.ou.edu/innovationhub/contact",
+      "website_url": "https://www.ou.edu/innovationhub",
+      "short_description": "Norman university prototyping resource with digital fabrication, electronics and machine-shop equipment.",
+      "overview": "The Tom Love Innovation Hub provides fabrication resources for turning early concepts into physical prototypes, including additive manufacturing, laser cutting, electronics and woodworking/metalworking facilities. It is a potential supporting resource for early robot housings, fixtures and student or venture prototypes, not an industrial UAS production plant.\n\nContact the fabrication team to scope a project before bringing materials or equipment. Confirm current eligibility, equipment training, material restrictions, tool availability and charges with staff; do not infer unrestricted public access from the presence of a maker laboratory.",
+      "unmanned_systems_relevance": "Supporting prototype development, student engineering and commercialization infrastructure, not an established unmanned-systems operator.",
+      "contact_url": "https://www.ou.edu/innovationhub/contact",
+      "contact_email": "fablab@ou.edu",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Commercialization and capital",
+        "Workforce and talent"
+      ],
+      "platform_domains": [],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "OU fabrication resources and project guidance",
+          "url": "https://www.ou.edu/research-norman/centers-institutes/cross-cutting-foundations/art-translational-research/commercialization-ouresources",
+          "supports": "Fabrication tools and technical guidance for physical prototyping; no specialized UAS production claim."
+        },
+        {
+          "title": "OU Innovation Hub functional contacts and address",
+          "url": "https://www.ou.edu/innovationhub/contact",
+          "supports": "Fab-lab email and Norman physical address."
+        }
+      ]
+    },
+    {
+      "state": "PA",
+      "name": "Aerotech Pittsburgh Precision-Motion Manufacturing",
+      "record_type": "facility",
+      "city": "Pittsburgh",
+      "address_line": "101 Zeta Drive",
+      "postal_code": "15238",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "site",
+      "location_role": "manufacturing",
+      "location_source_url": "https://www.aerotech.com/contact/",
+      "website_url": "https://www.aerotech.com/",
+      "short_description": "Pittsburgh manufacturing campus producing precision motion-control components, electronics and integrated automation systems.",
+      "overview": "Aerotech designs and builds motion and positioning systems, drives, stages, actuators and automated machines. Its published quality-scope document identifies design/manufacturing at 101 Zeta Drive and machining/electronics production at 610 Epsilon Drive; these related operations are represented as one campus asset.\n\nA component producer or robotics team can request application engineering for precise assembly, metrology, motion simulation or process automation. Provide load, travel, accuracy, throughput, environment and control-interface requirements. The company offers scoped consultation and support, not open access to manufacturing equipment; confirm the selected configuration and site-specific process before procurement.",
+      "unmanned_systems_relevance": "Supporting precision manufacturing, sensing alignment and robotic motion supply chain, not a complete UAS manufacturer.",
+      "contact_url": "https://www.aerotech.com/contact/",
+      "contact_email": "",
+      "contact_phone": "412-963-7470",
+      "test_access": "",
+      "strategic_categories": [
+        "Supporting ecosystem asset",
+        "Manufacturing and supply chain",
+        "Manufacturing facilities"
+      ],
+      "platform_domains": [
+        "Ground vehicles and robotics"
+      ],
+      "capabilities": [
+        "Manufacturing, materials, and prototyping",
+        "Systems engineering and integration"
+      ],
+      "missions": [],
+      "sources": [
+        {
+          "title": "Aerotech engineering, motion and manufacturing portfolio",
+          "url": "https://www.aerotech.com/about/",
+          "supports": "Precision motion, automation and Pittsburgh manufacturing operation."
+        },
+        {
+          "title": "Aerotech Pittsburgh production-site scope",
+          "url": "https://www.aerotech.com/wp-content/uploads/2024/09/2024-ISO-9001-certificate-of-registration.pdf",
+          "supports": "Published scope differentiates Zeta Drive design/manufacturing and Epsilon Drive machining/electronics; no new claim that certification remains current without revalidation."
+        },
+        {
+          "title": "Aerotech current Pittsburgh addresses and inquiry phone",
+          "url": "https://www.aerotech.com/contact/",
+          "supports": "Current campus addresses and business phone."
+        }
+      ]
+    },
+    {
+      "state": "TX",
+      "name": "FusionFlight Dallas Turbine-Powered UAS Development",
+      "record_type": "organization",
+      "city": "Dallas",
+      "address_line": "",
+      "postal_code": "",
+      "latitude": null,
+      "longitude": null,
+      "location_precision": "locality",
+      "location_role": "office",
+      "location_source_url": "https://fusionflight.com/",
+      "website_url": "https://fusionflight.com/",
+      "short_description": "Dallas developer of turbine-powered VTOL drones, propulsion generators and heavy-lift aircraft concepts.",
+      "overview": "FusionFlight develops the JetQuad unmanned VTOL platform and ARC microturbine generator, while describing Axion as a heavy-lift aircraft still in development. These are distinct products and maturity levels, not evidence of certified autonomous operation or a generally available heavy-lift service.\n\nUse the published inquiry email to discuss payload, propulsion integration, duty cycle, operating environment and delivery schedule. The company's terms describe primarily built-to-order products and some experimental/beta units, so confirm the current configuration and suitability before ordering. Only Dallas is publicly established as the business locality here; no factory address or flight-test boundary is inferred.",
+      "unmanned_systems_relevance": "Direct unmanned aircraft and propulsion-development company with source-supported Texas presence.",
+      "contact_url": "https://fusionflight.com/",
+      "contact_email": "info@fusionflight.com",
+      "contact_phone": "",
+      "test_access": "",
+      "strategic_categories": [
+        "Core unmanned-systems asset",
+        "Companies and solution providers"
+      ],
+      "platform_domains": [
+        "Unmanned aircraft systems"
+      ],
+      "capabilities": [
+        "Propulsion, batteries, fuels, and energy systems",
+        "Systems engineering and integration"
+      ],
+      "missions": [
+        "Logistics and contested logistics"
+      ],
+      "sources": [
+        {
+          "title": "FusionFlight current products and Dallas locality",
+          "url": "https://fusionflight.com/",
+          "supports": "Dallas business locality, JetQuad UAS, ARC generator, development-stage Axion and public inquiry email."
+        },
+        {
+          "title": "FusionFlight ordering and experimental-product conditions",
+          "url": "https://fusionflight.com/terms-and-conditions/",
+          "supports": "Built-to-order model, variable lead times and possible experimental/beta configuration; no independent certification claim."
+        }
+      ]
+    }
+  ]
+}

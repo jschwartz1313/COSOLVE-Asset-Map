@@ -138,11 +138,10 @@ class MultiStateTests(TestCase):
             self.client.get("/states/ohio/api/regions/hampton-roads/summary/").status_code, 404
         )
 
-    @override_settings(DEFAULT_BASEMAP="light")
-    def test_peer_maps_default_to_street_without_changing_virginia_default(self):
+    def test_all_states_default_to_street(self):
         self.client.force_login(self.staff)
         virginia = self.client.get("/map/")
-        self.assertEqual(virginia.context["default_basemap"], "light")
+        self.assertEqual(virginia.context["default_basemap"], "street")
         for state in STATES[1:]:
             response = self.client.get(state.prefix + "/map/")
             self.assertEqual(response.context["default_basemap"], "street")

@@ -1,0 +1,545 @@
+{
+  "research_date": "2026-11-24",
+  "scope": "Decision-useful test and manufacturing profiles across all 13 private benchmark states. Exact-baseline updates; no staff edits, coordinates, public visibility or editorial verification changed.",
+  "profiles": [
+    {
+      "state": "AZ",
+      "name": "Yuma Test Center UAS and Counter-UAS Testing",
+      "before": {
+        "overview": "Yuma Test Center hosts developmental UAS and counter-UAS testing, including 2026 multi-vendor exercises and permanent evaluation lanes. Army reporting identifies private customers paying test costs and a West Cibola initiative intended to accelerate industry testing. Users should pursue the named Army customer process; this is not an unrestricted public range.",
+        "contact_text": "",
+        "contact_url": "",
+        "test_aircraft": "",
+        "test_dimensions": "",
+        "test_access": "",
+        "test_source_url": "",
+        "test_last_verified_at": null
+      },
+      "after": {
+        "overview": "Yuma Test Center supports developmental UAS and counter-UAS evaluation in a military range environment. Army reporting describes dedicated evaluation lanes for sensing, electronic effects and kinetic engagement, with instrumentation and test methods for comparing performance under realistic conditions.\n\nPrivate companies can enter through the Army range-reservation concierge for the West Cibola initiative. Customers pay the costs of their testing, and submitting a request does not guarantee the preferred site or schedule. Bring a test objective, system description and safety requirements; confirm permitted effects, airspace, sponsorship or contractual conditions and current availability with the range. This record is not permission to fly or conduct mitigation.",
+        "contact_text": "Army test-range concierge for commercial test requests; scope, range assignment, safety approvals, costs and schedule are agreed with Army staff.",
+        "contact_url": "https://testrange.army.mil/ArmyRangeReservation/s/",
+        "test_aircraft": "Uncrewed aircraft and counter-UAS evaluation; specific aircraft, emitters and effects require range approval.",
+        "test_dimensions": "Military range environment with instrumented evaluation lanes. No customer-specific operating boundary or aircraft limit is established by this profile.",
+        "test_access": "Apply through the Army test-range concierge. Private customers fund their tests; access, safety requirements, permitted effects and scheduling require approval and are not guaranteed.",
+        "test_source_url": "https://www.army.mil/article/294582/new_u_s_army_yuma_proving_ground_range_open_to_private_industry_for_rapid_innovation",
+        "test_last_verified_at": "2026-11-24"
+      },
+      "sources": [
+        {
+          "title": "Army Yuma commercial range-access process",
+          "url": "https://www.army.mil/article/294582/new_u_s_army_yuma_proving_ground_range_open_to_private_industry_for_rapid_innovation",
+          "supports": "Commercial concierge route, customer-funded testing, private-industry access initiative and no guarantee of location or timeline."
+        },
+        {
+          "title": "Yuma instrumented counter-UAS evaluation lanes",
+          "url": "https://www.army.mil/article/295865/u_s_army_yuma_proving_ground_hosts_major_counter_uas_test_event",
+          "supports": "Permanent C-UAS evaluation lanes and multi-vendor sensing/electronic/kinetic testing, not general civilian mitigation authority."
+        }
+      ]
+    },
+    {
+      "state": "CO",
+      "name": "CSU Christman Airfield UAS Facility",
+      "before": {
+        "overview": "Christman Airfield is CSU's named flight facility in Fort Collins. The university describes UAS testing and training alongside crewed aviation and research use, with collaborations involving educational, industry and government users.",
+        "contact_text": "",
+        "contact_url": "",
+        "test_aircraft": "",
+        "test_dimensions": "",
+        "test_runway_length_ft": null,
+        "test_access": "CSU states that all UAS and general-aviation activity requires prior Drone Center approval and all users must complete annual safety training.",
+        "test_source_url": "https://dronecenter.colostate.edu/christman-airfield-use/",
+        "test_last_verified_at": "2026-11-17"
+      },
+      "after": {
+        "overview": "CSU's Christman Airfield supports UAS testing, flight operations, training and research, with a published 4,000-foot asphalt runway suited to fixed-wing work. The operator also lists weather reporting, Remote ID/ADS-B monitoring and research collaborations with educational, industry and government users.\n\nAll UAS and general-aviation activity requires CSU Drone Center approval. Reservations need at least 48 hours' notice and users complete annual airfield safety training; additional insurance, radio and other requirements depend on the activity. Submit the aircraft and proposed mission before arranging a visit. Site waivers and FRIA status are operator-described reference information, not transferable permission for a customer's flight.",
+        "contact_text": "CSU Drone Center for aircraft testing, partner research and advance airfield reservations; annual safety training and operator approval apply.",
+        "contact_url": "https://dronecenter.colostate.edu/contact/",
+        "test_aircraft": "UAS and crewed general aviation; published runway supports fixed-wing activity subject to operator acceptance.",
+        "test_dimensions": "4,000-foot asphalt runway with runway lighting; weather reporting and aircraft/UAS monitoring.",
+        "test_runway_length_ft": 4000,
+        "test_access": "Prior CSU Drone Center approval for all operations; at least 48 hours' reservation notice and annual airfield safety training. Confirm activity-specific insurance, equipment and aviation approvals.",
+        "test_source_url": "https://dronecenter.colostate.edu/christman-airfield-use/",
+        "test_last_verified_at": "2026-11-24"
+      },
+      "sources": [
+        {
+          "title": "CSU Christman runway, safety and reservation requirements",
+          "url": "https://dronecenter.colostate.edu/christman-airfield-use/",
+          "supports": "4,000-foot runway, supporting systems, prior approval, annual safety training and minimum 48-hour reservation notice."
+        },
+        {
+          "title": "CSU Drone Center professional services",
+          "url": "https://dronecenter.colostate.edu/services/",
+          "supports": "Piloting, sensor integration, aircraft development/testing, research collaboration and separately scoped professional services."
+        },
+        {
+          "title": "CSU Drone Center contact",
+          "url": "https://dronecenter.colostate.edu/contact/",
+          "supports": "Official route for airfield/project coordination."
+        }
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "ACT Aerospace Gunnison Composite Structures Facility",
+      "before": {
+        "overview": "Aerospace composite structures, machining, tooling and assembly production.",
+        "contact_text": "",
+        "contact_email": "",
+        "contact_phone": "",
+        "contact_url": "https://actaero.com/contact-us/",
+        "website_url": "https://actaero.com/capabilities/"
+      },
+      "after": {
+        "overview": "ACT's Gunnison operation supports composite aerospace structures from part/tool design and analysis through fabrication, machining, assembly and inspection. Published services include mechanical material testing, environmental testing and ultrasonic/non-destructive inspection, making this a potential resource for prototype structures and production components rather than only a general company listing.\n\nBring drawings or CAD, materials, load cases, tolerances, quantities and qualification requirements to the sales/project team. Agree the manufacturing and inspection plan, current capacity, evidence required for the part and any export/customer restrictions. The manufacturer's published equipment list does not by itself establish a qualification for a particular unmanned aircraft or open access to its factory.",
+        "contact_text": "ACT published company inquiry email and Gunnison phone for composite part design, tooling, fabrication, assembly and inspection quotations.",
+        "contact_email": "info@actaero.com",
+        "contact_phone": "435-528-7199",
+        "contact_url": "https://actaero.com/contact-us/",
+        "website_url": "https://actaero.com/"
+      },
+      "sources": [
+        {
+          "title": "ACT manufacturing, material testing and inspection services",
+          "url": "https://actaero.com/services/",
+          "supports": "Part/tool/assembly design, composites processing, mechanical/environmental testing, metrology and non-destructive inspection."
+        },
+        {
+          "title": "ACT integrated Gunnison manufacturing operation",
+          "url": "https://actaero.com/about-us/",
+          "supports": "Tool design through final assembly at Gunnison; supplier capability, not a dedicated UAS product claim."
+        },
+        {
+          "title": "ACT current functional contact and address",
+          "url": "https://actaero.com/contact-us/",
+          "supports": "Gunnison business address, phone and info email."
+        }
+      ]
+    },
+    {
+      "state": "TX",
+      "name": "Bush Combat Development Complex Innovation Proving Grounds",
+      "before": {
+        "overview": "BCDC's IPG page describes mobility courses, off-road areas, urban/subterranean settings and integrated communications for scenario-driven assessments. It supports testing of autonomous ground vehicles, air-ground teaming and resilient networks with government, industry and academic partners.",
+        "contact_text": "",
+        "contact_url": "",
+        "test_aircraft": "",
+        "test_dimensions": "",
+        "test_access": "",
+        "test_source_url": "",
+        "test_last_verified_at": null
+      },
+      "after": {
+        "overview": "The Innovation Proving Grounds at Texas A&M-RELLIS combines a one-mile mobility challenge course, off-road terrain, configurable urban buildings and subterranean environments for scenario-based evaluation. The operator describes air-ground teaming, communications/cyber testing, instrumentation, live/virtual integration and test-planning support.\n\nA government, industry or academic team can scope mobility, perception, teaming or resilient-network experiments with BCDC. Define vehicle dimensions, terrain, communications, hazards, instrumentation and data needs before requesting access. The published BVLOS corridor and other facilities are project-planning leads, not blanket aircraft acceptance or permission to fly. Confirm the exact available areas, agreements and aviation approvals for the proposed test.",
+        "contact_text": "BCDC published leadership/project-coordination route for scoped test planning; site and aviation access require agreement.",
+        "contact_url": "https://bcdc.tamus.edu/about/leadership/",
+        "test_aircraft": "Autonomous and crewed ground platforms, air-ground teaming and communications experiments; aircraft acceptance is project-specific.",
+        "test_dimensions": "One-mile mobility challenge course, off-road areas, configurable urban structures and subterranean test environments.",
+        "test_access": "Scope the experiment with BCDC, including platform, hazards, instrumentation, data and site requirements. Confirm agreement, scheduling and any airspace authorization; published corridors do not grant flight permission.",
+        "test_source_url": "https://bcdc.tamus.edu/facilities/ipg/",
+        "test_last_verified_at": "2026-11-24"
+      },
+      "sources": [
+        {
+          "title": "BCDC IPG facilities and project-support scope",
+          "url": "https://bcdc.tamus.edu/facilities/ipg/",
+          "supports": "One-mile mobility course; off-road, urban/subterranean, network, instrumentation and test-planning capabilities."
+        },
+        {
+          "title": "BCDC official leadership contact route",
+          "url": "https://bcdc.tamus.edu/about/leadership/",
+          "supports": "Operator project-coordination route; no unverified direct engineer or booking contact added."
+        }
+      ]
+    },
+    {
+      "state": "CA",
+      "name": "ModalAI San Diego Autonomy Electronics",
+      "before": {
+        "overview": "ModalAI provides integrated perception and communications hardware for aerial and ground autonomy. Its contact page publishes a San Diego address and separates technical-support forums from sales inquiries. It is useful as an onboard autonomy electronics and integration supplier.",
+        "contact_text": ""
+      },
+      "after": {
+        "overview": "ModalAI supplies compact onboard computing, flight-control and perception hardware for autonomous drones and ground robots. Its VOXL 2 platform combines edge compute and an autopilot with a software/tooling ecosystem for visual-inertial navigation, mapping, obstacle avoidance and object recognition; sensors and communications modules are selected as part of the configuration.\n\nDevelopers can start with documentation and development kits, then take interface, camera, compute, power, radio and software requirements to sales/application support. The published product page distinguishes hardware and software lifecycle versions. A listed Blue UAS component does not certify every finished aircraft, software build or mission; confirm the complete configuration, availability and integration scope.",
+        "contact_text": "ModalAI sales/application inquiry for autonomy hardware and integration; use the linked technical forum/documentation for support rather than treating the office as a shared flight-test lab."
+      },
+      "sources": [
+        {
+          "title": "ModalAI VOXL 2 hardware, SDK and integration scope",
+          "url": "https://www.modalai.com/products/voxl-2",
+          "supports": "Onboard computer/autopilot, visual navigation and perception SDK, sensor/radio expansion and version-specific hardware/software status."
+        },
+        {
+          "title": "ModalAI functional sales and technical-support routes",
+          "url": "https://www.modalai.com/en-il/pages/contact-us",
+          "supports": "Sales contact and distinct technical-support resources; supplier engagement not external lab access."
+        }
+      ]
+    },
+    {
+      "state": "FL",
+      "name": "DeTect Panama City Radar and Counter-UAS Systems",
+      "before": {
+        "overview": "DeTect develops radar and related surveillance products for detecting and tracking small UAS and other targets. Its Panama City operation is a specific supplier contact for airspace-awareness and detect-and-avoid integration. Product detection claims do not establish permission to fly BVLOS or employ counter-UAS effects.",
+        "contact_text": ""
+      },
+      "after": {
+        "overview": "DeTect develops radar and surveillance systems for airspace and maritime awareness, including small-UAS detection and tracking. Its HARRIER and DroneWatcher portfolios are relevant to site surveillance, airport awareness and integration of drone activity with other detected targets; these are product/system capabilities, not a declared open-access evaluation range.\n\nA facility operator should discuss the detection problem, terrain and coverage, target characteristics, alerting, network integration and installation/support needs with the company. Confirm a site survey, actual performance assumptions and permitted equipment before procurement. Detection capability or a counter-UAS product label does not confer authorization to jam, intercept or destroy aircraft.",
+        "contact_text": "DeTect's published company contact route for surveillance-system requirements and site integration; no countermeasure-use authority is implied."
+      },
+      "sources": [
+        {
+          "title": "DeTect radar and air/marine surveillance products",
+          "url": "https://detect-inc.com/security-surveillance-systems/",
+          "supports": "Small-target detection/tracking, HARRIER air/marine surveillance and DroneWatcher product scope."
+        },
+        {
+          "title": "DeTect official company contact",
+          "url": "https://detect-inc.com/contact/",
+          "supports": "Company inquiry and Panama City business contact route."
+        }
+      ]
+    },
+    {
+      "state": "MI",
+      "name": "University of Michigan Mcity Test Facility",
+      "before": {
+        "overview": "UMTRI identifies Mcity as an early-stage development facility with roads, intersections, connected infrastructure and remote as well as on-site testing. Its current description also mentions expanded electric/uncrewed aerial testing with M-Air. Teams can investigate repeatable connected/automated-vehicle research and testing; this is not a general public-road operating permission.",
+        "website_url": "https://www.umtri.umich.edu/facilities-capabilities/mcity-test-facility/",
+        "contact_url": "https://mcity.umich.edu/",
+        "contact_text": "",
+        "contact_phone": "",
+        "test_aircraft": "",
+        "test_dimensions": "",
+        "test_access": "",
+        "test_source_url": "",
+        "test_last_verified_at": null,
+        "contact_email": ""
+      },
+      "after": {
+        "overview": "Mcity is a controlled early-stage mobility test facility with a 32-acre site and more than 16 acres of roads and traffic infrastructure. Published features include urban/suburban road scenarios, a 1,000-foot straightaway, connected infrastructure, mixed-reality testing and remotely accessible research tools. The current operator page also describes low-altitude UAS support, which must be scoped separately from ground-vehicle tests.\n\nExternal users execute the track agreement and provide liability-insurance evidence before booking. Safety orientation applies to participants, and access is restricted to approved testing/research teams. Discuss vehicles, scenarios, support equipment, data and any aircraft needs with the facility manager; a track booking does not provide public-road or flight authorization.",
+        "website_url": "https://mcity.umich.edu/what-we-do/mcity-test-facility/",
+        "contact_url": "https://mcity.umich.edu/contact/",
+        "contact_text": "Published Mcity Test Facilities Manager Jim Lollar for track/research inquiries. The office phone is general coordination; agreements, insurance and safety orientation still apply.",
+        "contact_phone": "734-764-2886",
+        "test_aircraft": "Connected/automated ground vehicles; UAS and low-altitude test support are described by the operator and require project-specific confirmation.",
+        "test_dimensions": "32-acre facility with over 16 acres of roads/traffic infrastructure and a 1,000-foot straightaway. Ground-track dimensions are not runway specifications.",
+        "test_access": "Closed research/test facility. External users need a track agreement, approved liability-insurance evidence and booking; participant safety orientation is required. Confirm separate UAS and support-service arrangements.",
+        "test_source_url": "https://mcity.umich.edu/what-we-do/mcity-test-facility/",
+        "test_last_verified_at": "2026-11-24",
+        "contact_email": "jlollar@umich.edu"
+      },
+      "sources": [
+        {
+          "title": "Mcity facility, equipment and access requirements",
+          "url": "https://mcity.umich.edu/what-we-do/mcity-test-facility/",
+          "supports": "Facility/road dimensions, connected/remote testing, low-altitude UAS support, track agreement, insurance and safety orientation. The live page names facility manager Jim Lollar and publishes his project-inquiry email."
+        },
+        {
+          "title": "Mcity booking",
+          "url": "https://mcity.umich.edu/what-we-do/mcity-test-facility/book/",
+          "supports": "Approved reservation process and rate inquiries."
+        },
+        {
+          "title": "Mcity facility and office contact",
+          "url": "https://mcity.umich.edu/contact/",
+          "supports": "Appointment-only facility and general office phone; facility address distinct from offices."
+        }
+      ]
+    },
+    {
+      "state": "NY",
+      "name": "NUAIR Central New York airspace-awareness network",
+      "before": {
+        "overview": "NUAIR describes airspace-awareness and validation services and reports in March 2026 that its original corridor has expanded into a broader Central New York network. This record covers regional digital/operational infrastructure, separate from Oneida County's Rome facility. Historical coverage figures vary by approval and date.",
+        "contact_text": "",
+        "contact_url": ""
+      },
+      "after": {
+        "overview": "NUAIR provides regional UAS testing, validation and airspace-integration services, including operator readiness, mission planning, waiver support, UTM integration and infrastructure-inspection use cases. Its network combines airspace-awareness systems and operational expertise rather than representing one open field or a guaranteed statewide permission.\n\nA partner can scope a test or deployment by describing the aircraft, mission, desired area, data interfaces and safety case. NUAIR's public pages use different historical coverage figures; do not treat a published square-mile total as an approved customer boundary. Ask for the current authorization conditions, site availability, operator responsibilities, agreement and cost for the proposed mission.",
+        "contact_text": "NUAIR official partner inquiry form for test planning, network/UTM integration and operational readiness; request current mission-specific airspace conditions.",
+        "contact_url": "https://www.nuair.org/contactus"
+      },
+      "sources": [
+        {
+          "title": "NUAIR capability portfolio",
+          "url": "https://www.nuair.org/capabilities",
+          "supports": "UAS validation, commercialization and operational support."
+        },
+        {
+          "title": "NUAIR mission planning and regulatory support",
+          "url": "https://www.nuair.org/core-services/consultative-services",
+          "supports": "Operator readiness, mission planning, waivers and safety-management support."
+        },
+        {
+          "title": "NUAIR network and operational integration",
+          "url": "https://www.nuair.org/core-services/network-integration-%26-operational-enablement",
+          "supports": "UTM integration, infrastructure inspection and mission-specific BVLOS/operational support."
+        },
+        {
+          "title": "NUAIR official contact",
+          "url": "https://www.nuair.org/contactus",
+          "supports": "Partner intake route."
+        }
+      ]
+    },
+    {
+      "state": "NC",
+      "name": "ATI Industrial Automation Apex Robotic Sensing and Tooling",
+      "before": {
+        "overview": "ATI develops robotic sensing and tooling that lets robots measure and respond to physical contact. Its Apex engineering team and published radiation-tolerant sensor offering are relevant to manipulation and remote operations in hazardous environments. This is a component and integration supplier, not a mobile-unmanned-system manufacturer.",
+        "contact_text": "",
+        "contact_email": "",
+        "contact_phone": "919-772-0115"
+      },
+      "after": {
+        "overview": "ATI supplies robotic force/torque sensing, tool changing and end-of-arm tooling for controlled contact and automated production tasks. Its radiation-tolerant sensor offering is relevant to manipulation and inspection in hazardous environments, while its material-removal application guidance supports defining robot processes such as finishing and machining.\n\nA robotics or manufacturing team can request component/application support with robot payload, tool loads, required sensing range, mounting, environment and process details. Confirm the selected sensor/tool's qualification and integration, rather than assuming every product is radiation-tolerant. This is a component supplier, not a complete autonomous vehicle or a bookable robot test cell.",
+        "contact_text": "ATI/Novanta application engineering for robot tooling and material-removal process scoping; the official application sheet publishes an engineer inquiry email.",
+        "contact_email": "Applications.Engineers@novanta.com",
+        "contact_phone": "919-772-0115"
+      },
+      "sources": [
+        {
+          "title": "ATI radiation-tolerant force/torque sensing",
+          "url": "https://www.ati-ia.com/Library/Documents/ATI_Radiation-Tolerant_FT_Sensors_Flyer.pdf",
+          "supports": "Product-specific hazardous-environment sensing; not all ATI products share this qualification."
+        },
+        {
+          "title": "ATI material-removal requirements and application contact",
+          "url": "https://www.ati-ia.com/Library/documents/ATI%20Material%20Removal%20Application%20Sheet.pdf",
+          "supports": "Application-scoping form and published Novanta application-engineering email/ATI phone."
+        }
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "Northern Plains UAS Test Site",
+      "before": {
+        "overview": "NPUASTS describes flight-test support, waiver/authorization work, training and third-party validation. Its official site publishes a Grand Forks administrative address. It is the appropriate technical intake for North Dakota test projects; FAA test-site designation does not itself authorize a customer's flight or guarantee free access.",
+        "contact_text": "",
+        "contact_url": "",
+        "contact_email": "info@npuasts.com",
+        "contact_phone": "701-777-6100"
+      },
+      "after": {
+        "overview": "Northern Plains UAS Test Site offers aircraft and mission intake, safety/risk work, flight-test support, operational-approval assistance and independent evaluation. Its current capability page describes partner testing under location-specific approvals, parachute-recovery testing and sponsored counter-UAS evaluation.\n\nStart with the intended aircraft, weight, operating area, mission, communications and safety case through the test-site team. The operator publishes possible approval envelopes, but the actual aircraft acceptance, altitude, BVLOS arrangements, location and permitted activity depend on the specific authorization and agreement. Confirm costs, staff/equipment support and schedule. The Grand Forks address is an administrative intake point, not the boundary of a flight range.",
+        "contact_text": "NPUASTS functional project-intake email and phone for flight-test planning, approval support and independent evaluation; not a blanket flight permission.",
+        "contact_url": "https://www.npuasts.com/",
+        "contact_email": "info@npuasts.com",
+        "contact_phone": "701-777-6100"
+      },
+      "sources": [
+        {
+          "title": "NPUASTS current UAS capability and intake process",
+          "url": "https://www.npuasts.com/uas-capabilities",
+          "supports": "Safety/approval support, location-specific operational envelopes, aircraft acceptance and independent/sponsored testing."
+        },
+        {
+          "title": "NPUASTS official project contacts",
+          "url": "https://www.npuasts.com/",
+          "supports": "Functional intake email/phone and Grand Forks administrative location."
+        }
+      ]
+    },
+    {
+      "state": "ND",
+      "name": "Appareo Aviation - Fargo avionics engineering and manufacturing",
+      "before": {
+        "overview": "Appareo Aviation designs and manufactures aviation electronics from Fargo. Its current contact page identifies the business as a division of Ontic Engineering and Manufacturing, Inc.",
+        "contact_text": ""
+      },
+      "after": {
+        "overview": "Appareo Aviation's Fargo operation designs, engineers and manufactures aviation electronics, including flight-data monitoring, aircraft communications, recoverable data modules and Stratus avionics. Its in-house engineering, manufacturing and testing support both its own products and avionics-development partnerships; the current site identifies the business as an Ontic division.\n\nAn air-vehicle developer can discuss data acquisition, communications, environmental requirements, interfaces and integration with the company. Clarify whether a standard product, custom work or a partner project is available and which approvals apply to the selected installation. The evidence establishes an aviation-electronics supplier, not a complete unmanned-aircraft line or an open-access certification laboratory.",
+        "contact_text": "Appareo's published Fargo business phone and contact page for avionics products and potential engineering partnerships; confirm the product/install-specific approval scope."
+      },
+      "sources": [
+        {
+          "title": "Appareo engineering, manufacturing and partnership scope",
+          "url": "https://appareo.com/aviation/",
+          "supports": "In-house avionics engineering, manufacture/testing and partnership opportunities across communications/data/electronics products."
+        },
+        {
+          "title": "Appareo current company identity and product scope",
+          "url": "https://appareo.com/about/",
+          "supports": "Current Ontic division identity, flight-data and avionics products, Fargo business location."
+        }
+      ]
+    },
+    {
+      "state": "OH",
+      "name": "Parallax Advanced Research - autonomy and operations",
+      "before": {
+        "overview": "Parallax's current technical portfolio explicitly describes autonomy and operations work for unmanned systems and highlights trusted reasoning for autonomous decisions and drone research. Its headquarters contact page confirms Beavercreek. Users can explore applied R&D and integration partnerships; its separate administration of OFRN grants is distinguished from this technical-research role.",
+        "contact_text": "",
+        "contact_phone": "937-705-1000"
+      },
+      "after": {
+        "overview": "Parallax conducts applied autonomy and unmanned-system R&D, including command/control concepts, operator interfaces, human-machine teaming, simulation and live flight integration. Its mobile test capability supports experiments at external ranges, while its 2026 Springfield-Beckley tenancy provides an additional flight-test and partner-integration presence alongside the Beavercreek organization.\n\nDiscuss the technical objective, aircraft/sensors, data links, operator tasking and intended environment with the project team. Scope simulation, hardware-in-the-loop, field testing, range coordination and safety responsibilities separately. A headquarters contact or tenancy does not establish unrestricted access to an airfield, a standing airspace authorization or current availability of every test resource.",
+        "contact_text": "Parallax Beavercreek business phone and project inquiry route for autonomy, operator-interface and test/integration partnerships.",
+        "contact_phone": "937-705-1000"
+      },
+      "sources": [
+        {
+          "title": "Parallax mobile test planning and integration experience",
+          "url": "https://parallaxresearch.org/news/blog/parallaxs-mobile-testing-evaluation-center-enables-uas-flight-testing-national-missions",
+          "supports": "Multi-UAS controls, simulation, test planning, equipment/logistics and flight-range coordination."
+        },
+        {
+          "title": "Parallax Springfield flight-test tenancy",
+          "url": "https://parallaxresearch.org/news/blog/parallax-expands-springfield-beckley-airfield-building-testbed-next-era-uncrewed-flight",
+          "supports": "2026 NAAMCE/Springfield-Beckley presence for flight-test and Vigilant Spirit integration; not independent airport-access authority."
+        },
+        {
+          "title": "Parallax current Ohio contact",
+          "url": "https://parallaxresearch.org/contact",
+          "supports": "Business phone and project coordination route."
+        }
+      ]
+    },
+    {
+      "state": "OK",
+      "name": "WindShape Tulsa Drone Test Center",
+      "before": {
+        "overview": "WindShape describes an operating Tulsa test center for repeatable drone flight and subsystem evaluation. Manufacturers can inquire about environmental robustness, performance and safety-test services, rather than treating it as unrestricted outdoor airspace.",
+        "contact_text": "",
+        "test_aircraft": "",
+        "test_dimensions": "",
+        "test_access": "",
+        "test_source_url": "",
+        "test_last_verified_at": null
+      },
+      "after": {
+        "overview": "WindShape's Tulsa test center lists eight laboratories and a dedicated outdoor drone flight range. Published services cover wind/gust/turbulence response, repeatable controlled flight, rain/wet testing, environmental robustness and subsystem characterization. Its service catalog also offers performance, safety and reliability-assessment work.\n\nA drone developer can scope an experiment around the aircraft envelope, test condition, instrumentation, data and acceptance criteria. Request the available lab geometry and limits, equipment configuration, operator responsibilities, pricing and schedule before shipping hardware. A test package is not by itself a regulatory approval or a guarantee that every aircraft fits the facility.",
+        "contact_text": "WindShape's official services inquiry route for quoted Tulsa lab, environmental, subsystem and flight-test work.",
+        "test_aircraft": "Drone/aircraft and subsystem testing, with configuration and acceptance agreed for the project.",
+        "test_dimensions": "Operator lists eight Tulsa laboratories and a dedicated outdoor drone flight range; exact usable geometry and aircraft limits require confirmation.",
+        "test_access": "Request a scoped test service through WindShape. Agree aircraft configuration, hazards, test conditions, instrumentation/data, operator responsibilities, available geometry and schedule; no independent flight approval is implied.",
+        "test_source_url": "https://www.windshape.com/services/",
+        "test_last_verified_at": "2026-11-24"
+      },
+      "sources": [
+        {
+          "title": "WindShape Tulsa laboratory and test-service scope",
+          "url": "https://www.windshape.com/services/",
+          "supports": "Eight labs, rain/environmental/wind/controlled-flight/subsystem work, outdoor range and project inquiry route; no unsupported aircraft-size or chamber-temperature limits."
+        }
+      ]
+    },
+    {
+      "state": "OK",
+      "name": "OSU CENFEX Unmanned Test Range",
+      "before": {
+        "overview": "CENFEX is a separate Skyway node for experiments involving controlled fires and explosives as well as UAS flight work. Its specialist ground-test environment distinguishes it from ordinary flight stations.",
+        "website_url": "https://www.skywayrange.com/",
+        "contact_url": "https://www.skywayrange.com/",
+        "contact_text": "",
+        "contact_email": "",
+        "contact_phone": "",
+        "test_aircraft": "",
+        "test_dimensions": "",
+        "test_access": "Operator describes controlled access; OSU states specialized testing requires waiver coordination.",
+        "test_source_url": "https://www.skywayrange.com/",
+        "test_last_verified_at": "2026-11-17"
+      },
+      "after": {
+        "overview": "OSU identifies the Center for Forensic Explosives as Node 2 of Skyway Range, with ordnance and explosives capabilities alongside the network's unmanned-system testing role. The university describes Nodes 1, 2 and 4 as open for Part 107 activity, with specialized operations and connecting flight activity requiring separate coordination and waivers.\n\nUse OAIRE/Skyway project intake to scope any UAS, payload or controlled-hazard experiment. Confirm the actual node, personnel, safety review, permitted materials/effects, aviation approvals, support and scheduling; the proposed full range map is not a completed operational boundary. A historical high-altitude test or a capability elsewhere in Skyway is not automatically available at CENFEX.",
+        "website_url": "https://go.okstate.edu/aerospace/centers/skyway-range",
+        "contact_url": "https://go.okstate.edu/aerospace/centers/skyway-range",
+        "contact_text": "OAIRE central project-routing contact for Skyway/CENFEX inquiries; ask for the responsible range team and test-specific approvals.",
+        "contact_email": "oaire@okstate.edu",
+        "contact_phone": "405-744-5000",
+        "test_aircraft": "UAS research within the Skyway network; Node 2 provides controlled ordnance/explosives capabilities, subject to separate safety and operational acceptance.",
+        "test_dimensions": "CENFEX is Skyway Node 2. A proposed network map is not treated as an approved flight boundary; no runway or aircraft envelope is inferred for this node.",
+        "test_access": "Coordinate with OAIRE/Skyway and the node operator. Part 107 operations, specialized waivers, controlled hazards and connecting flight activity have distinct approval requirements; confirm the specific test and safety agreement.",
+        "test_source_url": "https://go.okstate.edu/aerospace/centers/skyway-range",
+        "test_last_verified_at": "2026-11-24"
+      },
+      "sources": [
+        {
+          "title": "OSU Skyway nodes, proposed map and operational conditions",
+          "url": "https://go.okstate.edu/aerospace/centers/skyway-range",
+          "supports": "CENFEX Node 2 ordnance/explosives capability; which nodes are open under Part 107; waiver/flight coordination; OAIRE functional contact. Proposed range perimeter not treated as fully operational."
+        }
+      ]
+    },
+    {
+      "state": "PA",
+      "name": "CMU National Robotics Engineering Center",
+      "before": {
+        "overview": "NREC develops custom robotics for industry and government sponsors. Its engagement page describes staged feasibility, engineering and technology-transition work and provides a partnership contact. Users can discuss a scoped development project and obtain an estimate.",
+        "contact_text": "",
+        "contact_email": "partnerships@nrec.ri.cmu.edu",
+        "contact_phone": ""
+      },
+      "after": {
+        "overview": "NREC develops custom robotics for commercial and government partners, beginning with technical/business problem assessment and progressing through concept studies, prototypes, testing, engineering and technology transfer. Its process is useful when a team needs to automate a difficult field or industrial task rather than buy a standard off-the-shelf robot.\n\nContact partnerships with the operating problem, environment, desired outcome, constraints and deployment economics. NREC publishes indicative project stages and durations, but cost and schedule need a current project-specific estimate. Agree data, intellectual-property licensing and commercialization arrangements; the partnership process is not general public access to laboratory equipment.",
+        "contact_text": "NREC partnerships team for scoped concept studies, development, validation and technology-transfer projects.",
+        "contact_email": "partnerships@nrec.ri.cmu.edu",
+        "contact_phone": "412-681-6900"
+      },
+      "sources": [
+        {
+          "title": "NREC project stages, requirements and partnership contact",
+          "url": "https://www.nrec.ri.cmu.edu/partnerships/engage-with-nrec/",
+          "supports": "Concept-to-prototype-to-validation/licensing process, project estimate requirement and functional partnership email."
+        }
+      ]
+    },
+    {
+      "state": "CA",
+      "name": "NASA Armstrong Flight Research Center",
+      "before": {
+        "overview": "NASA identifies Armstrong at Edwards as its center for high-risk atmospheric flight research and test projects. Its work includes autonomous and electrified aircraft, making it a potential research and integration counterpart rather than a general-purpose commercial drone range.",
+        "contact_text": "",
+        "contact_url": ""
+      },
+      "after": {
+        "overview": "NASA Armstrong at Edwards provides flight-research and test capabilities, engineering expertise, project management and safety-assurance processes for experimental aerospace work, including unmanned systems. It is a federal research partner, not a general-purpose commercial drone field.\n\nProspective partners work with the center to define requirements and negotiate an agreement for the needed equipment, facilities and expertise. Bring the research objective, aircraft/system, technical maturity, data needs and hazards; confirm the applicable partnership route, resources, cost, schedule and on-site safety/aviation clearance. Public contacts for media or patent licensing should not be mistaken for flight-test booking authority.",
+        "contact_text": "NASA Armstrong Advanced Planning and Partnerships route for research/facility agreements; request the current project contact and access process.",
+        "contact_url": "https://www.nasa.gov/doing-business/armstrong-partnerships/"
+      },
+      "sources": [
+        {
+          "title": "NASA Armstrong partnership and test-access process",
+          "url": "https://www.nasa.gov/doing-business/armstrong-partnerships/",
+          "supports": "Project scoping, negotiated facility/equipment agreements, technical expertise and project-specific safety assurance; not unrestricted range hire."
+        },
+        {
+          "title": "NASA current center partnership directory",
+          "url": "https://www.nasa.gov/partnerships/nasa-contacts-opportunties/",
+          "supports": "Armstrong's Edwards flight-test role and center-specific partnership routes."
+        }
+      ]
+    },
+    {
+      "state": "UT",
+      "name": "ElectraFly - Woods Cross VTOL and composite prototyping",
+      "before": {
+        "overview": "ElectraFly publishes a Woods Cross address and describes development of VTOL aircraft for supply delivery and personal flight. It also offers UAV consulting/mapping and composite/CNC fabrication, including drone-frame parts. Development aircraft are marked as forthcoming, while fabrication and consulting are presented as services. One record combines these related activities rather than inventing a separate factory asset.",
+        "contact_text": "",
+        "contact_email": "info@electrafly.com",
+        "contact_url": ""
+      },
+      "after": {
+        "overview": "ElectraFly in Woods Cross develops VTOL aircraft concepts for supply delivery and personal flight while offering custom manufacturing, CNC work, carbon-fiber cutting and UAV consulting. The commercially described fabrication services are useful for prototype structures and parts; the aircraft-development program is a separate maturity claim, not evidence of a certified delivery service.\n\nSend a part drawing or concept, material, tolerances, quantity and intended use through the company inquiry or quotation route. Confirm the offered process, current capacity, technical deliverables and any qualification or export requirements. Factory visits, flight trials and aircraft integration need a specific agreement rather than being assumed from the business address.",
+        "contact_text": "ElectraFly published company email for CNC/composite part quotations and UAV engineering inquiries; scope manufacturing and aircraft-development work separately.",
+        "contact_email": "info@electrafly.com",
+        "contact_url": "https://electrafly.com/about"
+      },
+      "sources": [
+        {
+          "title": "ElectraFly services, development scope and Woods Cross contact",
+          "url": "https://electrafly.com/about",
+          "supports": "VTOL aircraft development distinct from offered CNC/carbon-fiber/custom-manufacturing and consulting services; current location and functional email."
+        },
+        {
+          "title": "ElectraFly part-quotation route",
+          "url": "https://electrafly.com/",
+          "supports": "Published carbon-fiber part quotation and custom manufacturing inquiry routes."
+        }
+      ]
+    }
+  ]
+}

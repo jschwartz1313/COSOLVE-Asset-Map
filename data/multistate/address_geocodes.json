@@ -1,5 +1,7 @@
 {
   "retrieved": "2026-11-18",
+  "last_incremental_update": "2026-11-24",
+  "incremental_update_note": "Ten new exact address matches appended on 2026-11-24; existing cached matches were retained, not rechecked. Exact describes the address match, not surveyed positional accuracy.",
   "source": "https://geocoding.geo.census.gov/geocoder/Geocoding_Services_API.html",
   "endpoint": "https://geocoding.geo.census.gov/geocoder/locations/addressbatch",
   "benchmark": "Public_AR_Current",
@@ -3689,6 +3691,116 @@
       "longitude": -96.90201,
       "matched_address": "159 8TH AVE NW, WEST FARGO, ND, 58078",
       "match_type": "Exact"
+    },
+    {
+      "state": "PA",
+      "name": "Aerotech Pittsburgh Precision-Motion Manufacturing",
+      "address_line": "101 Zeta Drive",
+      "city": "Pittsburgh",
+      "postal_code": "15238",
+      "latitude": 40.500295,
+      "longitude": -79.865636,
+      "matched_address": "101 ZETA DR, PITTSBURGH, PA, 15238",
+      "match_type": "Exact"
+    },
+    {
+      "state": "AZ",
+      "name": "PADT Tempe Engineering and Additive Manufacturing",
+      "address_line": "7755 S Research Drive, Suite 110",
+      "city": "Tempe",
+      "postal_code": "85284",
+      "latitude": 33.347617,
+      "longitude": -111.895945,
+      "matched_address": "7755 S RESEARCH DR, TEMPE, AZ, 85284",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CA",
+      "name": "Parallel Systems Los Angeles Autonomous Rail Engineering",
+      "address_line": "1245 Factory Place",
+      "city": "Los Angeles",
+      "postal_code": "90013",
+      "latitude": 34.03919,
+      "longitude": -118.237393,
+      "matched_address": "1245 FACTORY PL, LOS ANGELES, CA, 90013",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CA",
+      "name": "ADVANCED Motion Controls Camarillo Servo-Drive Manufacturing",
+      "address_line": "3805 Calle Tecate",
+      "city": "Camarillo",
+      "postal_code": "93012",
+      "latitude": 34.221559,
+      "longitude": -119.020029,
+      "matched_address": "3805 CLL TECATE, CAMARILLO, CA, 93012",
+      "match_type": "Exact"
+    },
+    {
+      "state": "CO",
+      "name": "Fotokite Boulder Tethered UAS Systems",
+      "address_line": "3125 Sterling Circle, Suite 107",
+      "city": "Boulder",
+      "postal_code": "80301",
+      "latitude": 40.032145,
+      "longitude": -105.227392,
+      "matched_address": "3125 STERLING CIR, BOULDER, CO, 80301",
+      "match_type": "Exact"
+    },
+    {
+      "state": "FL",
+      "name": "FLYMOTION Tampa UAS and Robotics Integration and Training",
+      "address_line": "4416 Eagle Falls Place",
+      "city": "Tampa",
+      "postal_code": "33619",
+      "latitude": 27.905426,
+      "longitude": -82.388692,
+      "matched_address": "4416 EAGLE FALLS PL, TAMPA, FL, 33619",
+      "match_type": "Exact"
+    },
+    {
+      "state": "MI",
+      "name": "Michigan Aerospace Ypsilanti Sensing and Autonomy Engineering",
+      "address_line": "301 W Michigan Avenue, Suite A60",
+      "city": "Ypsilanti",
+      "postal_code": "48197",
+      "latitude": 42.240962,
+      "longitude": -83.616105,
+      "matched_address": "301 W MICHIGAN AVE, YPSILANTI, MI, 48197",
+      "match_type": "Exact"
+    },
+    {
+      "state": "NY",
+      "name": "ULC Technologies Hauppauge Utility Robotics Engineering",
+      "address_line": "88 Arkay Drive",
+      "city": "Hauppauge",
+      "postal_code": "11788",
+      "latitude": 40.812519,
+      "longitude": -73.251052,
+      "matched_address": "88 ARKAY DR, HAUPPAUGE, NY, 11788",
+      "match_type": "Exact"
+    },
+    {
+      "state": "NC",
+      "name": "CRP USA Mooresville Additive-Manufacturing Facility",
+      "address_line": "127 Goodwin Circle",
+      "city": "Mooresville",
+      "postal_code": "28115",
+      "latitude": 35.605406,
+      "longitude": -80.811754,
+      "matched_address": "127 GOODWIN CIR, MOORESVILLE, NC, 28115",
+      "match_type": "Exact"
+    },
+    {
+      "state": "NC",
+      "name": "Eclipse Composites Mooresville Composite Structures",
+      "address_line": "138 Cedar Pointe Drive",
+      "city": "Mooresville",
+      "postal_code": "28117",
+      "latitude": 35.606888,
+      "longitude": -80.852826,
+      "matched_address": "138 CEDAR POINTE DR, MOORESVILLE, NC, 28117",
+      "match_type": "Exact"
     }
   ],
   "held": [
@@ -5146,6 +5258,22 @@
         "Match",
         "Non_Exact",
         "3647 BRECKSVILLE RD, RICHFIELD, OH, 44286"
+      ]
+    },
+    {
+      "state": "OK",
+      "name": "OU Sooner Advanced Manufacturing Lab",
+      "result": [
+        "Match",
+        "Non_Exact",
+        "2101 W TECUMSEH RD, NORMAN, OK, 73069"
+      ]
+    },
+    {
+      "state": "OK",
+      "name": "OU Tom Love Innovation Hub Fabrication Facilities",
+      "result": [
+        "No_Match"
       ]
     }
   ]
